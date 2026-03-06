@@ -1132,7 +1132,11 @@ def split_sidebar_tag(tag: str) -> Tuple[str, str]:
         ("cite:", "paper"),
     ):
         if raw.startswith(prefix):
-            return (kind, raw[len(prefix) :].strip())
+            label = raw[len(prefix) :].strip()
+            # composite 是 llm refine 的内部 requirement 后缀，不对前端展示。
+            if kind == "query" and label.endswith(":composite"):
+                label = label[: -len(":composite")].strip()
+            return (kind, label)
     return ("other", raw)
 
 

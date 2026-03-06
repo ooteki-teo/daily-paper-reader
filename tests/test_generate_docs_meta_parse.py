@@ -70,6 +70,22 @@ class GenerateDocsMetaParseTest(unittest.TestCase):
             self.assertEqual(item["tldr"], "legacy tldr text")
             self.assertEqual(item["selection_source"], "cache_hint")
 
+    def test_extract_sidebar_tags_hides_composite_suffix(self):
+        paper = {
+            "llm_score": 8.0,
+            "llm_tags": [
+                "query:sr:composite",
+                "query:sr",
+                "keyword:equation-discovery",
+            ],
+        }
+        tags = self.mod.extract_sidebar_tags(paper)
+        self.assertEqual(tags[0], ("score", "8.0"))
+        self.assertIn(("query", "sr"), tags)
+        self.assertIn(("query", "equation-discovery"), tags)
+        self.assertNotIn(("query", "sr:composite"), tags)
+        self.assertEqual(tags.count(("query", "sr")), 1)
+
 
 if __name__ == "__main__":
     unittest.main()
