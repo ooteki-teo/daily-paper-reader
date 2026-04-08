@@ -1,0 +1,224 @@
+Title: Linear Magnetoresistance as a Probe of the Neel Vector in Altermagnets with Vanishing Anomalous Hall Effect
+
+URL Source: https://arxiv.org/pdf/2603.12692v1
+
+Published Time: Mon, 16 Mar 2026 00:33:10 GMT
+
+Number of Pages: 6
+
+Markdown Content:
+# Linear Magnetoresistance as a Probe of the N´ eel Vector in Altermagnets with Vanishing Anomalous Hall Effect 
+
+Kamal Das and Binghai Yan 
+
+Department of Condensed Matter Physics, Weizmann Institute of Science, Rehovot 7610001, Israel and Department of Physics, The Pennsylvania State University, University Park, Pennsylvania 16802, United States 
+
+Despite time-reversal breaking in momentum space, several altermagnets remain electrically silent to the primary characterization tool anomalous Hall effect, due to crystalline symmetries, jeopar-dizing their experimental identification. Here, we show that time-reversal odd magnetoresistance exhibiting butterfly-like hysteresis with linear magnetic field dependence near the zero field provides a robust transport signature of altermagnetism even when the anomalous Hall effect vanishes. Using semiclassical theory and symmetry analysis, we demonstrate that this effect is generic across alter-magnets and validate it through first-principles calculations in CrSb. Our results establish linear magnetoresistance as an alternative detection of the Berry curvature and N´ eel order in unconven-tional antiferromagnets. 
+
+Introduction— Altermagnets (AMs) are a newly iden-tified class of compensated collinear magnets that host momentum-dependent spin splitting despite vanishing net magnetization [1–9]. This unusual combination of antiferromagnetic order and spin-split electronic bands makes them promising for future spintronics applica-tions [10–12]. The anomalous Hall effect (AHE) is widely regarded as a signature of time reversal ( T )-symmetry breaking in AMs [1, 13–16] along with the spin split revealed by angle-resolved photoemission spectroscopy (ARPES) [9]. However, AHE vanishes in many AM materials, includ-ing RuO 2 [17–20], CrSb [21–24], KV 2Se 2O [25] and Ca 3Ru 2O7 [26, 27], because of related crystal symme-tries. As a result, these systems are electrically “silent” to this primary characterization tool, obscuring the de-tection of their underlying AM order. In this work, we propose to use a linear magnetoresis-tance (MR) to detect the AM order even when AHE van-ishes. In known ferromagnetic materials, the AHE comes together with a linear MR characterized by the butterfly-like hysteresis [28–34], as illustrated by Fig. 1(a). Thus, this linear MR is commonly presumed to be a relevant feature of AHE. Here, we point out that the linear MR generally exist for AMs, distinguishing them from con-ventional antiferromagnets (AFMs) which have either parity-time reversal ( PT ) or translation-time reversal (tT ) symmetry, regardless whether AHE appears or not. Because it is odd to time-reversal, this linear MR changes sign upon reversing the N´ eel vector of AM. Through symmetry analysis and first-principles calculations, we demonstrate the linear MR in recent experimentally re-alized AMs, which exhibit both longitudinal (e.g., Rxx )and transverse (e.g., Rxy ) components. For example, we predict a linear MR of ∼ 0.1% in CrSb at B = 3 T. Our results provide an alternative way to identify the alter-mangetism in AHE-absent materials. 
+
+Symmetry and phenomenology of T -odd linear MR— 
+
+In ordinary materials, the Onsager’s relation requires 
+
+Rxx (B) = Rxx (−B) and therefore the leading term of MR is B2. In magnetic materials, however, the On-sager’s relation has the modified form Rij (B, M ) =
+
+Rji (−B, −M ) in the linear-response regime, in which we denote the ferromagnetic or antiferromagnetic order pa-rameter by M . In this case, the B-odd terms are allowed in MR. In the perturbative regime with a small B field, when M is independent of B, the resistance has a linear-
+
+B correction, Rij (B, M ) = R0 
+
+> ij
+
+(M ) + Rlij (M )Bl + · · · 
+
+and satisfies [29, 30] 
+
+Rlij (M ) = −Rlji (−M ) . (1) This sign change under the magnetic order reversal man-ifests in the butterfly-like loop of resistance, as shown in Fig. 1(a). The sign reversal of linear MR is reminiscent of the AHE, but with an important distinction. While AHE is described by a second-rank tensor ( Rij ), the linear MR arises from a third-rank tensor ( Rlij (M )) that couples the electric field and the axial magnetic field. As a result, this effect is less symmetry-constrained and can exist even when AHE vanishes [30, 32] as highlighted in Fig. 1(b). For example, in mirror-symmetric AMs such as RuO 2,Ca 3Ru 2O7, or MnTe (spins ∥ 2¯ 1¯ 10) [35, 36], mirrors sup-press AHE, yet linear MR remains allowed. Likewise, in thin-film Mn 5Si 3 [14, 37], C2z T symmetry forbids AHE for in-plane spin orientations, a linear MR is still permit-ted. Other such cases are listed in Table I, and discussed in Supplementary Material (SM) [38]. Interestingly, due to its T -odd nature, Rlij vanishes in magnets that pre-serve the tT -symmetry, as in many conventional AFM or recently proposed p-wave magnets [39, 40]. Moreover, because the magnetic field is even under P, the Rlij is also forbidden in the PT -symmetric AFMs as highlighted in Fig. 1(c). 
+
+Various measurement geometries of linear MR— Due to the (third-rank) tensorial nature, the linear MR can manifest in various measurement setups. In the standard resistivity measurement, with V ∥ I, one may probe (i) 
+
+> arXiv:2603.12692v1 [cond-mat.mes-hall] 13 Mar 2026
+
+2           
+
+> FIG. 1. (a) Typical anomalous Hall effect (AHE) and linear MR in butterfly-like hysteresis loop observed in ferromagnet and in some altermagnets (AMs). (b) When crystal symmetry forbids the AHE, the linear MR can still appear in the hysteresis loop, reflecting the N´ eel order orientation. (c) In the conventional AFMs with PT and tTsymmetry, the linear response measurement shows no hysteresis and hence can not detect N´ eel order. (d)-(g) The different linear MR measurements set up for the various AM candidates. (d) The longitudinal MR set up when all the fields are in the same direction. (e) The transverse MR set up when the magnetic field is perpendicular to the current. (f) The planar Hall set up, where the magnetic field is confined in the 2D plane of measurement. (g) The ordinary Hall set up where all the fields are perpendicular. The corresponding AM materials are indicated below each configuration. For Mn 5Si 3and MnTe, spins in the hexagonal plane and along 2¯ 1¯ 10 axes are considered, respectively.
+
+a longitudinal configuration with I ∥ B and (ii) a trans-verse configuration with I ⊥ B [see Fig. 1(d-e)]. These measurement geometries are relevant for CrSb, Mn 5Si 3,and KV 2Se 2O, where linear MR are expected in the chan-nel parallel to the current. Complementarily, in Hall-bar–type setups with V ⊥ I,the linear MR signal we discuss is encoded in the sym-metric perpendicular resistivity ˜Rij = [ Rij + Rji ]/2 and is therefore distinct from the ordinary Hall effect or AHE, which arises from the anti-symmetric part. Within this perpendicular geometry, one can further distinguish (i) an in-plane field (“planar”) configuration [41], and (ii) an out-of-plane field configuration [see Fig. 1(f-g)]. While several AMs are expected to show the planar response (see Table I), AM candidates RuO 2, Ca 3Ru 2O7, and MnTe (spins ∥ 2¯ 1¯ 10) only permit out-of-plane symmetric linear MR responses. 
+
+Microscopic theory of linear MR— Now, we discuss the microscopic origin of the theoretically relevant quantity for linear MR, σlij , defined as 
+
+Ji = σlij Ej Bl , (2) with Ji and Ej as the current density and electric field, respectively. An intuitive understanding of linear con-ductivity, Eq. (2), emerges from the steady-state force balance equation [31] 
+
+dp
+
+dt = −eE − ep × B + αM × E − p
+
+τ . (3) The first two terms are the usual Lorentz force, and the last one is momentum relaxation with relaxation time 
+
+τ . The third term is the Magnus force, which has been used to heuristically explain AHE. It appears in magnetic media and originates from the self-rotating motion, i.e., 
+
+M represents the orbital magnetization. The solution leads to a velocity of the form ( M × E) × B = ( M ·
+
+B)E − (E · B)M , which causes the linear MR. A closely related form emerges in the semiclassical wave-packet theory [42, 43], where Berry curvature ( Ω)plays the role of M in the momentum space. Within the Boltzmann transport theory, T -odd magnetoconductiv-ity (MC) is given by [30, 38] 
+
+σlij, Ω = − e3τ
+
+ℏ
+
+Z
+
+[dk] [( viδjl + vj δil )v · Ω − vivj Ωl] f ′.
+
+(4) 3
+
+TABLE I. Spin orientations, magnetic space groups (MSG), and allowed conductivities responsible for linear magnetoresistivity (MR) in experimentally realized metallic altermagnets (AMs). The conductivity tensor are defined as Ji = σlij Ej Bl. We have defined ¯Mz ≡ {M z |(0 , 0, 12 )}, ¯My ≡ {M y |(0 , 0, 12 )} for CrSb, α-MnTe, and Mn 5Si 3. The symmetry relating the opposite spin sublattices are highlighted by the column “AM symmetry” in the presence of spin-orbit coupling, while the symmetries that determine the magnetoconductivity are tabulated in the column “crucial symmetry”. Material Spin axis MSG AHE AM symmetry Crucial symmetry T -odd linear MR RuO 2 [d-wave] 001 P 4′
+
+> 2
+
+/mnm ′ × {C 4z |( 12 , 12 , 12 )}T Mz , {M x,y |( 12 , 12 , 12 )} σzxy , σ xyz , σ yxz 
+
+CrSb [ g-wave] 0001 P 6′
+
+> 3
+
+/m ′m′c × {C 6z |(0 , 0, 12 )}T ¯Mz T , MxT , ¯My , C3z σyxx , σ yyy , σ xxy 
+
+α-MnTe [ g-wave] 2¯ 1¯ 10 Cmcm × {C 2y |(0 , 0, 12 )} ¯Mz , ¯My , Mx σzxy , σ xyz , σ yxz 
+
+Ca 3Ru 2O7 [d-wave] 010 P n 21a × {M x|( 12 , 12 , 12 )} {M x|( 12 , 12 , 12 )}, {M z |( 12 , 0, 12 )} σzxy , σ xyz , σ yxz 
+
+Mn 5Si 3 thin film [ d-wave] 1¯ 100 Cm ′cm ′ × {C 2z |(0 , 0, 12 )}T ¯Mz T , My , MxT σyyy , σyxx , σxxy 
+
+KV 2Se 2O [ d-wave] 001 P 4′/mm ′m × C4z T MxT , My T , Mz , C4z T σzxx , σ zyy , σ yzy , σ xzx 
+
+Here, −e is the electronic charge, f ′ is the first deriva-tive of the Fermi function with respect to energy, [ dk] ≡
+
+dD k/(2 π)D , and v = 1 /ℏ∇kϵ is the velocity. The first term in Eq. (4) is non-zero only for 3D systems because 
+
+v · Ω = 0 in a 2D system. Furthermore, the first term 
+
+viδjl in parentheses originates from the non-orthogonal orientation of fields ( E · B), which may play a signifi-cant role in enhancing the effect in the presence of chiral anomaly in Weyl AMs [44]. In addition to the Berry curvature, the orbital mag-netic moment ( m) also contributes through the Zeeman coupling. It generates a contribution given by [30, 38] 
+
+σlij, m = − e2τ
+
+ℏ
+
+Z
+
+[dk]ml
+
+2  ∂kj vi
+
+ f ′ + ℏvivj f ′′  . (5) The total contribution can then be obtained from the sum 
+
+σlij = σlij, Ω + σlij, m. Importantly, the conductivities are linear in the scattering time, resulting in a τ -independent MR, parametrized by MR = σlij Bl
+
+σij (0) ∝ e
+
+ℏ BΩF , (6) where F subscript represents the quantities at the Fermi level. This behaviour is fundamentally different from the usual MR that are τ -dependent. 
+
+Linear MR in CrSb— Now, we present the first-principle results of this work focusing on the g-wave AM CrSb as a primary case study. CrSb offers an ideal testbed due to its giant non-relativistic spin splitting ( ∼
+
+1 eV) [21, 22], and metallic character [45, 46]. In its nonmagnetic phase, CrSb belongs to the hexagonal crystal system with the space group (SG) 
+
+P 63/mmc (#194). Below the transition temperature 710 K, the magnetocrystalline anisotropy forces the spins to align along the 0001 axes, reducing the symmetry to the magnetic SG P6 ′
+
+> 3
+
+/m ′m′c (#194 .268) [15, 22]. We have shown the in-plane crystalline symmetry in Fig. 2(a). We define the spin axes as z, in-plane nearest-neighbor (NN) Cr-Cr bonds as x-axes. In this convention, the system has six-fold screw symmetry {C 6z |(0 , 0, 12 )}T , z-axes mir-ror symmetry ¯Mz ≡ {M z |(0 , 0, 12 )}T , and y-axes glide mirror symmetry ¯My ≡ {M y |(0 , 0, 12 )}. In addition, the crystal has MxT and C3z symmetry. These symmetries constraint the transport coefficient tensors, based on the tranformation properties of cur-rent J (polar, T -odd), electric field E (polar, T -even), and magnetic field B (axial, T -odd). For example, un-der a mirror ¯My , polar components perpendicular to the mirror flip sign ( Jy , E y → − Jy , −Ey ), while axial compo-nents parallel to the mirror flip sign ( Bx,z → − Bx,z ). On the other hand, under the anti-unitary symmetry MxT ,spatial reflection flips the x components, while time re-versal reverses J, B, but leaves E invariant. This yields 
+
+Jx, B y/z even and Ex odd. Consequently, the σA 
+
+> xy
+
+and 
+
+σA 
+
+> yz
+
+components of the anomalous Hall conductivity sup-pressed by ¯My symmetry. Combined with this, C3z sym-metry further enforces σA 
+
+> xz
+
+= σA 
+
+> yz
+
+= 0. Applying these rules in Eq. (2), we find that the T -odd linear MR is allowed only for a magnetic field in the hexagonal plane. A planar MC defined by σxxy is allowed when the magnetic field is parallel to the NN Cr-Cr bonds. When the magnetic field is along the y-axes, transverse MC σyxx and longitudinal MC σyyy are allowed. The rest are suppressed. The non-zero components are further related by 
+
+σyxx = σxxy = −σyyy , (7) owing to the C3z symmetry. Therefore, the standard and planar resistivity will exhibit a B sin ϕ and B cos ϕ de-pendence, respectively. This is highlighted in Fig. 2(c). We computed the transport coefficients using a Wan-nier tight-binding Hamiltonian obtained from density functional theory based on experimental lattice param-eters [21]. See SM [38] for details. In Fig. 2(d), we 4
+
+FIG. 2. Linear magnetoresistance (MR) in CrSb : (a) The in-plane crystal structure of CrSb with the MxT , ¯My ≡{M y |(0 , 0, 12 )} and C3z symmetry highlighted. (b) The corresponding hexagonal Brillouin zone (BZ). (c) The expected angular variation of the longitudinal (cyan and orange) and perpendicular (magenta and turquoise) voltage with the magnetic field orientation. (d) The product of Berry curvature and velocity, Ky ≡ Ωy vy vy , weighted band structure along the high symmetry line shown in (b). (e) The Berry curvature satisfies P 
+
+> n∈occ
+
+Ωnz (ky ) = − P 
+
+> n∈occ
+
+Ωnz (−ky ) respecting the ¯My symmetry leading to vanishing AHE. (f) The product of Berry curvature and velocity in the BZ satisfies P 
+
+> n
+
+Kny (ky )δ(ϵn −ϵF ) = P 
+
+> n
+
+Kny (−ky )δ(ϵn −
+
+ϵF ), resulting in a finite value of linear MR. (g) The MR percentage at B = 3 T with the magnetic field along the y-axes. 
+
+project the product of Berry curvature and velocity, 
+
+Ky ≡ Ωy vy vy , which appears in σyyy , onto the bands, revealing substantial concentration from the band anti-crossing along the Γ-K path near the Fermi level. A cru-cial distinction emerges when comparing this to the AHE. As shown in Fig. 2(e), the Berry curvature P 
+
+> n∈occu
+
+Ωnz is odd with respect to ky (enforced by ¯My symmetry), re-sulting in exact cancellation upon integration leading to a vanishing σA 
+
+> xy
+
+. In contrast, P 
+
+> n
+
+Kny δ(ϵn − ϵF ) is ky sym-metric in momentum space [Fig. 2(f)]. Consequently, it survives Brillouin zone integration to yield a finite linear MR shown in Fig. 2(g). 
+
+Other AM materials— Beyond the well-established AM candidates like CrSb, the linear MR may offer a res-olution for materials where the AM phase is currently disputed. For instance, there is an ongoing debate re-garding the AM phase in RuO 2 [19, 20]. Since linear MR is allowed in RuO 2 in the as-grown samples (spin paral-lel to 001), our approach can directly detect T -breaking without reorienting the N´ eel order [1, 47] and remain-ing within the linear transport regime [48, 49]. Similarly, our approach can help to establish the proposed hidden-order AM state in Ca 3Ru 2O7 [27], avoiding the need for higher order transport [26]. Furthermore, recent neu-tron diffraction measurements in KV 2Se 2O [50] suggest a trivial g-type AFM ground state, in contrast to earlier reports of a metallic AM phase [25, 51]. Because AHE vanishes when spins align along the easy axes in this sys-tem [52], the linear MR response predicted here offers a decisive and symmetry-sensitive means of resolving this discrepancy. 
+
+Discussions— Before concluding, several remarks re-garding experimental observation and theoretical scope are in order. i) A N´ eel-vector–dependent resistance based on the interplay of the spin Hall effect and spin splitting effect has been recently proposed [53]. However, this ef-fect does not involve an external magnetic field. In con-trast, the linear MR proposed in our work requires a fi-nite magnetic field. ii) The linear MR can be strongly enhanced in Weyl AMs [27, 54, 55] due to the chiral 5anomaly [56]. For E ∥ B, the anomaly pumps charge between Weyl nodes of opposite chirality and generates an additional current along the field direction. This con-tribution is governed by the inter-node scattering time 
+
+τχ. When inter-node relaxation is slow, i.e., τχ ≫ τ ,the anomaly-induced contribution can dominate the MR response. iii) While we focus on orbital coupling of the magnetic field, inclusion of spin-Zeeman coupling [57–59] is a natural future direction of our work. iv) Experi-mental care is required regarding magnetic domains, as the predicted linear MR is observable only in the single-domain regime. Domains with opposite N´ eel orientations cancel the response. 
+
+Conclusions— Our strategy of detecting T -symmetry breaking in AMs via linear MR naturally extends beyond charge transport. The same symmetry principles ap-ply to thermoelectric and thermal responses, where field-linear magneto-thermoelectric effects can probe N´ eel or-der [29, 60, 61]. In insulating AMs, heat transport mediated by phonons or magnons may provide an ad-ditional avenue for accessing symmetry-sensitive signa-tures. Likewise, optical probes can exploit magnetic-field–dependent optical conductivity to reveal hidden AM order in insulating systems [62] when the MOKE [63] is forbidden. More broadly, this work establishes field-linear transport responses as a versatile symmetry-based diagnostic of unconventional AFMs, complemen-tary to anomalous Hall [64] and nonlinear magneto-transport [26, 48, 65]-based probes. 
+
+Acknowledgment— We thank Yufei Zhao for insight-ful discussions. B.Y. acknowledge the National Science Foundation through the Penn State Materials Research Science and Engineering Center (MRSEC) DMR 2011839 and the Israel Science Foundation (ISF No. 2974/23). 
+
+[1] L. ˇSmejkal, R. Gonz´ alez-Hern´ andez, T. Jungwirth, and J. Sinova, Science Advances 6, eaaz8809 (2020). [2] L.-D. Yuan, Z. Wang, J.-W. Luo, E. I. Rashba, and A. Zunger, Phys. Rev. B 102 , 014422 (2020). [3] H.-Y. Ma, M. Hu, N. Li, J. Liu, W. Yao, J.-F. Jia, and J. Liu, Nature communications 12 , 2846 (2021). [4] S. Hayami, Y. Yanagi, and H. Kusunose, Jour-nal of the Physical Society of Japan 88 (2019), 10.7566/jpsj.88.123702. [5] L. ˇSmejkal, J. Sinova, and T. Jungwirth, Phys. Rev. X 
+
+12 , 031042 (2022). [6] L. ˇSmejkal, J. Sinova, and T. Jungwirth, Phys. Rev. X 
+
+12 , 040501 (2022). [7] I. Mazin (The PRX Editors), Phys. Rev. X 12 , 040002 (2022). [8] L. Bai, W. Feng, S. Liu, L. ˇSmejkal, Y. Mokrousov, and Y. Yao, Advanced Functional Materials 34 , 2409327 (2024). [9] C. Song, H. Bai, Z. Zhou, L. Han, H. Reichlova, J. H. Dil, J. Liu, X. Chen, and F. Pan, Nature Reviews Materials 
+
+10 , 473–485 (2025). [10] M. Naka, S. Hayami, H. Kusunose, Y. Yanagi, Y. Mo-tome, and H. Seo, Nature Communications 10 (2019), 10.1038/s41467-019-12229-y. [11] D.-F. Shao, S.-H. Zhang, M. Li, C.-B. Eom, and E. Y. Tsymbal, Nature Communications 12 (2021), 10.1038/s41467-021-26915-3. [12] L. ˇSmejkal, A. B. Hellenes, R. Gonz´ alez-Hern´ andez, J. Sinova, and T. Jungwirth, Phys. Rev. X 12 , 011028 (2022). [13] R. D. Gonzalez Betancourt, J. Zub´ aˇ c, R. Gonzalez-Hernandez, K. Geishendorf, Z. ˇSob´ aˇ n, G. Springholz, K. Olejn´ ık, L. ˇSmejkal, J. Sinova, T. Jungwirth, S. T. B. Goennenwein, A. Thomas, H. Reichlov´ a, J. ˇZelezn´ y, and D. Kriegner, Phys. Rev. Lett. 130 , 036702 (2023). [14] H. Reichlova, R. Lopes Seeger, R. Gonz´ alez-Hern´ andez, I. Kounta, R. Schlitz, D. Kriegner, P. Ritzinger, M. Lammel, M. Leivisk¨ a, A. Birk Hellenes, K. Olejn´ ık, V. Petˇ riˇ cek, P. Doleˇ zal, L. Horak, E. Schmoranze-rova, A. Badura, S. Bertaina, A. Thomas, V. Baltz, L. Michez, J. Sinova, S. T. B. Goennenwein, T. Jung-wirth, and L. ˇSmejkal, Nature Communications 15 
+
+(2024), 10.1038/s41467-024-48493-w. [15] Z. Zhou, X. Cheng, M. Hu, R. Chu, H. Bai, L. Han, J. Liu, F. Pan, and C. Song, Nature 638 , 645 (2025). [16] L.-J. Zhou, Z.-J. Yan, H. Rong, Y. Zhao, P. Xiao, L.-K. Lai, Z. Xi, K. Wang, T. Adhikari, G. P. Tiwari, Z. Lin, P. Manue, F. Orlandi, D. Khalyavin, A. J. Grut-ter, C.-X. Liu, B. Yan, and C.-Z. Chang, “Surface-state-driven anomalous hall effect in altermagnetic mnte films,” (2026), arXiv:2602.09363 [cond-mat.mtrl-sci]. [17] T. Berlijn, P. C. Snijders, O. Delaire, H.-D. Zhou, T. A. Maier, H.-B. Cao, S.-X. Chi, M. Matsuda, Y. Wang, M. R. Koehler, P. R. C. Kent, and H. H. Weitering, Phys. Rev. Lett. 118 , 077201 (2017). [18] Z. H. Zhu, J. Strempfer, R. R. Rao, C. A. Occhialini, J. Pelliciari, Y. Choi, T. Kawaguchi, H. You, J. F. Mitchell, Y. Shao-Horn, and R. Comin, Phys. Rev. Lett. 
+
+122 , 017202 (2019). [19] M. Hiraishi, H. Okabe, A. Koda, R. Kadono, T. Muroi, D. Hirai, and Z. Hiroi, Phys. Rev. Lett. 132 , 166702 (2024). [20] P. Keßler, L. Garcia-Gassull, A. Suter, T. Prokscha, Z. Salman, D. Khalyavin, P. Manuel, F. Orlandi, I. I. Mazin, R. Valent´ ı, and S. Moser, npj Spintronics 2
+
+(2024), 10.1038/s44306-024-00055-y. [21] S. Reimers, L. Odenbreit, L. ˇSmejkal, V. N. Strocov, P. Constantinou, A. B. Hellenes, R. Jaeschke Ubiergo, W. H. Campos, V. K. Bharadwaj, A. Chakraborty, T. Denneulin, W. Shi, R. E. Dunin-Borkowski, S. Das, M. Kl¨ aui, J. Sinova, and M. Jourdan, Nature Commu-nications 15 , 2116 (2024). [22] G. Yang, Z. Li, S. Yang, J. Li, H. Zheng, W. Zhu, Z. Pan, Y. Xu, S. Cao, W. Zhao, A. Jana, J. Zhang, M. Ye, Y. Song, L.-H. Hu, L. Yang, J. Fujii, I. Vobornik, M. Shi, H. Yuan, Y. Zhang, Y. Xu, and Y. Liu, Nature Commu-nications 16 (2025), 10.1038/s41467-025-56647-7. [23] J. Ding, Z. Jiang, X. Chen, Z. Tao, Z. Liu, T. Li, J. Liu, J. Sun, J. Cheng, J. Liu, Y. Yang, R. Zhang, L. Deng, W. Jing, Y. Huang, Y. Shi, M. Ye, S. Qiao, Y. Wang, Y. Guo, D. Feng, and D. Shen, Phys. Rev. Lett. 133 ,206401 (2024). [24] M. Zeng, M. Zhu, Y. Zhu, X. Liu, X. Ma, Y. Hao, P. Liu, G. Qu, Y. Yang, Z. Jiang, K. Yamagami, M. Arita, X. Zhang, T. Shao, Y. Dai, K. Shimada, Z. Liu, M. Ye, 6
+
+Y. Huang, Q. Liu, and C. Liu, Advanced Science 11 
+
+(2024), 10.1002/advs.202406529. [25] B. Jiang, M. Hu, J. Bai, Z. Song, C. Mu, G. Qu, W. Li, W. Zhu, H. Pi, Z. Wei, Y.-J. Sun, Y. Huang, X. Zheng, Y. Peng, L. He, S. Li, J. Luo, Z. Li, G. Chen, H. Li, H. Weng, and T. Qian, Nature Physics 21 , 754 (2025). [26] S. Mali, Y. Zhao, Y. Wang, S. Sarker, Y. Chen, Z. Li, J. Zhu, Y. Liu, V. Gopalan, B. Yan, and Z. Mao, Nature Communications (2026), 10.1038/s41467-026-69739-9. [27] Y. Zhao, Z. Mao, and B. Yan, Phys. Rev. B 112 , 165127 (2025). [28] F. G. West, Journal of Applied Physics 32 , S290–S292 (1961). [29] S. Shtrikman and H. Thomas, Solid State Communica-tions 3, 147–150 (1965). [30] C. Xiao, H. Chen, Y. Gao, D. Xiao, A. H. MacDon-ald, and Q. Niu, Phys. Rev. B 101 , 201410 (2020), arXiv:1511.02557 [cond-mat.mtrl-sci]. [31] Y. Wang, P. A. Lee, D. M. Silevitch, F. Gomez, S. E. Cooper, Y. Ren, J.-Q. Yan, D. Mandrus, T. F. Rosen-baum, and Y. Feng, Nature Communications 11 (2020), 10.1038/s41467-019-14057-6. [32] V. Sunko, C. Liu, M. Vila, I. Na, Y. Tang, V. Kozii, S. M. Griffin, J. E. Moore, and J. Orenstein, Phys. Rev. B 112 , 134407 (2025). [33] D. L. Vorobev and V. A. Zyuzin, Physical Review B 109 ,L180411 (2024). [34] T. Farajollahpour, R. Ganesh, and K. Samokhin, npj Quantum Materials 10 , 77 (2025). [35] O. Amin, A. Dal Din, E. Golias, Y. Niu, A. Zakharov, S. Fromage, C. Fields, S. Heywood, R. Cousins, F. Mac-cherozzi, et al. , Nature 636 , 348 (2024). [36] S. R¨ oßler, V. Ginga, M. Schmidt, Y. Prots, H. Ros-ner, U. Burkhardt, U. K. R¨ oßler, and A. A. Tsirlin, “Low-field magnetization processes of hexagonal easy-plane altermagnet α-mnte,” (2025), arXiv:2511.01388 [cond-mat.mtrl-sci]. [37] A. Badura, W. H. Campos, V. K. Bharadwaj, I. Kounta, L. Michez, M. Petit, J. Rial, M. Leivisk¨ a, V. Baltz, F. Krizek, D. Kriegner, J. ˇZelezn´ y, J. Zemen, S. Telkamp, S. Sailler, M. Lammel, R. Jaeschke-Ubiergo, A. B. Hel-lenes, R. Gonz´ alez-Hern´ andez, J. Sinova, T. Jungwirth, S. T. B. Goennenwein, L. ˇSmejkal, and H. Reichlova, Nature Communications 16 (2025), 10.1038/s41467-025-62331-7. [38] “Supplemental material,” Includes detailed derivations of the linear-MR conductivity tensor, additional symmetry proofs, and computational parameters. [39] R. Yamada, M. T. Birch, P. R. Baral, S. Okumura, R. Nakano, S. Gao, M. Ezawa, T. Nomoto, J. Masell, Y. Ishihara, K. K. Kolincio, I. Belopolski, H. Sagayama, H. Nakao, K. Ohishi, T. Ohhara, R. Kiyanagi, T. Naka-jima, Y. Tokura, T.-h. Arima, Y. Motome, M. M. Hirschmann, and M. Hirschberger, Nature 646 , 837–842 (2025). [40] Q. Song, S. Stavri´ c, P. Barone, A. Droghetti, D. S. An-tonenko, J. W. F. Venderbos, C. A. Occhialini, B. Ilyas, E. Erge¸ cen, N. Gedik, S.-W. Cheong, R. M. Fernandes, S. Picozzi, and R. Comin, Nature 642 , 64–70 (2025). [41] C. Goldberg and R. E. Davis, Phys. Rev. 94 , 1121 (1954). [42] D. Xiao, M.-C. Chang, and Q. Niu, Rev. Mod. Phys. 82 ,1959 (2010). [43] Y. Gao, S. A. Yang, and Q. Niu, Phys. Rev. Lett. 112 ,166601 (2014). [44] D. T. Son and B. Z. Spivak, Phys. Rev. B 88 , 104412 (2013). [45] T. Urata, W. Hattori, and H. Ikuta, Phys. Rev. Mater. 
+
+8, 084412 (2024). [46] X. Peng, Y. Wang, S. Zhang, Y. Zhou, Y. Sun, Y. Su, C. Wu, T. Zhou, L. Liu, H. Wang, J. Yang, B. Chen, Z. Fang, J. Du, Z. Jiao, Q. Wu, and M. Fang, Phys. Rev. B 111 , 144402 (2025). [47] Z. Feng, X. Zhou, L. ˇSmejkal, L. Wu, Z. Zhu, H. Guo, R. Gonz´ alez-Hern´ andez, X. Wang, H. Yan, P. Qin, X. Zhang, H. Wu, H. Chen, Z. Meng, L. Liu, Z. Xia, J. Sinova, T. Jungwirth, and Z. Liu, Nature Electronics 
+
+5, 735 (2022). [48] Y. Fang, J. Cano, and S. A. A. Ghorashi, Phys. Rev. Lett. 133 , 106701 (2024). [49] R. Y. Chu, L. Han, Z. H. Gong, X. Z. Fu, H. Bai, S. X. Liang, C. Chen, S.-W. Cheong, Y. Y. Zhang, J. W. Liu, Y. Y. Wang, F. Pan, H. Z. Lu, and C. Song, Phys. Rev. Lett. 135 , 216703 (2025). [50] Y. Sun, Y. Huang, J. Cheng, S. Zhang, Z. Li, H. Luo, X. Ma, W. Yang, J. Yang, D. Chen, K. Sun, M. Gut-mann, S. C. Capelli, F. Shen, J. Hao, L. He, G. Chen, and S. Li, Phys. Rev. B 112 , 184416 (2025). [51] J. Bai, B. Ruan, Q. Dong, L. Zhang, Q. Liu, J. Cheng, P. Liu, C. Li, Y. Sun, Y. Huang, Z. Ren, and G. Chen, Phys. Rev. B 110 , 165151 (2024). [52] X. Yang, X. Zhou, J. Shi, S. Qian, X. Wang, W. Wang, and Y. Li, Phys. Rev. B 112 , 214418 (2025). [53] X.-P. Zhang, W. Feng, R.-W. Zhang, X. Fan, X. Wang, and Y. Yao, Phys. Rev. Lett. 135 , 266706 (2025). [54] D. S. Antonenko, R. M. Fernandes, and J. W. F. Vender-bos, Phys. Rev. Lett. 134 , 096703 (2025). [55] C. Li, M. Hu, Z. Li, Y. Wang, W. Chen, B. Thia-garajan, M. Leandersson, C. Polley, T. Kim, H. Liu, C. Fulga, M. G. Vergniory, O. Janson, O. Tjernberg, and J. van den Brink, Communications Physics 8 (2025), 10.1038/s42005-025-02232-9. [56] V. A. Zyuzin, Phys. Rev. B 95 , 245128 (2017). [57] T.-X. Liu, F.-Y. Chen, X. Xiao, H.-J. Duan, R.-Q. Wang, and M.-X. Deng, Phys. Rev. B 111 , 155124 (2025). [58] S. Korrapati, S. Nandy, and S. Tewari, Phys. Rev. B 
+
+112 , 195429 (2025). [59] Z. Ouyang, W.-J. Dai, Z.-T. Sun, J.-X. Hu, and K. T. Law, “Quantum geometric planar magnetotransport: aprobe for magnetic geometry in altermagnets,” (2025), arXiv:2512.03814 [cond-mat.mes-hall]. [60] G. Yang, L. Sang, C. Zhang, N. Ye, A. Hamilton, M. S. Fuhrer, and X. Wang, Nature Reviews Physics 
+
+5, 466–482 (2023). [61] K. Behnia and H. Aubin, Reports on Progress in Physics 
+
+79 , 046502 (2016). [62] V. Sunko and J. Orenstein, “Linear magneto-birefringence as a probe of altermagnetism,” (2025), arXiv:2511.16421 [cond-mat.mtrl-sci]. [63] H. Pan, R.-C. Xiao, J. Han, H. Zhu, J. Li, Q. Niu, Y. Gao, and D. Hou, Phys. Rev. Lett. 136 , 036701 (2026). [64] L. ˇSmejkal, A. H. MacDonald, J. Sinova, S. Nakatsuji, and T. Jungwirth, Nature Reviews Materials 7, 482–496 (2022). [65] X. Jiang, U. Jeong, S. Sato, D. Shin, K. Yabana, B. Yan, and N. Park, ACS nano 19 , 23620 (2025).

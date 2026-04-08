@@ -1,0 +1,292 @@
+Title: Magnetic criticality and magnetocaloric response in MnBi$_2$Te$_4$ and MnBi$_4$Te$_7$
+
+URL Source: https://arxiv.org/pdf/2603.10824v1
+
+Published Time: Thu, 12 Mar 2026 01:22:03 GMT
+
+Number of Pages: 11
+
+Markdown Content:
+# Magnetic criticality and magnetocaloric response in MnBi 2Te 4 and MnBi 4Te 7
+
+Nazma Firdosh 1, Shreyashi Sinha 1 and Sujit Manna 1∗
+
+> 1
+
+Department of Physics, Indian Institute of Technology Delhi, Hauz Khas, New Delhi 110016, India 
+
+(Dated: March 12, 2026) MnBi 2Te 4 and MnBi 4Te 7 are antiferromagnetic topological insulators belonging to the MnBi 2nTe 3n+1 series, where structural layering provides a natural route to tune magnetic inter-action in van der Waals magnets. Despite extensive interest in their topological properties, how the insertion of Bi 2Te 3 quintuple layers modifies magnetic critical fluctuations near the antiferro-magnetic transition remains unresolved. Here, we combine scanning tunneling microscopy (STM), critical scaling analysis, and magnetocaloric measurements to directly correlate real-space struc-tures with magnetic criticality. STM reveals atomically flat septuple-layer terraces in MnBi 2Te 4
+
+whereas MnBi 4Te 7 displays coexisting septuple and quintuple layer terminations reflecting its alter-nating stacking sequence. MnBi 2Te 4 exhibits robust three-dimensional Ising-like critical behavior together with a distinct low-temperature first-order transition. In contrast, MnBi 4Te 7 displays crossover-dominated criticality arising from weakened interlayer exchange and competing magnetic phases. Correspondingly, the magnetocaloric response differs significantly between the two com-pounds. MnBi 2Te 4 shows dual-type magnetocaloric behavior with a sharp field-induced sign rever-sal of the isothermal magnetic entropy change ( −∆SM ). It exhibits both inverse ( −∆SM < 0) and conventional ( −∆SM > 0) magnetocaloric effects. In contrast, MnBi 4Te 7 shows only conventional magnetocaloric response with a broad positive entropy peak. These results establish structural lay-ering as a key parameter governing magnetic critical fluctuations and magnetocaloric behavior in MnBi 2nTe 3n+1 topological magnets. 
+
+1. INTRODUCTION 
+
+The MnBi 2nTe 3n+1 (MBT) family represents a unique class of intrinsic magnetic topological insulators (MTIs) that provide a rich platform to investigate the interplay between magnetism and nontrivial band topology within a van der Waals framework [1–5]. Within this family, MnBi 2Te 4 (n = 1) and MnBi 4Te 7 (n = 2) are key mem-bers [2]. MnBi 2Te 4 crystallizes in a rhombohedral layered structure with the septuple layer (SL) Te–Bi–Te–Mn–Te– Bi–Te as its fundamental building block [6–8]. In this configuration, Mn ions generate strong intralayer ferro-magnetic (FM) coupling, while adjacent septuple layers couple antiferromagnetically (AFM), establishing an A-type AFM ground state [9–12]. In contrast, MnBi 4Te 7
+
+forms a natural van der Waals heterostructure of mag-netic MnBi 2Te 4 septuple and nonmagnetic Bi 2Te 3 quin-tuple layer (QL) layers [2, 13]. The presence of these non-magnetic spacer layers weakens the interlayer exchange interactions relative to MnBi 2Te 4 [14, 15]. The tunable magnetic states in these layered systems enable diverse topological quantum phenomena including the quantum anomalous Hall effect, axion states and Weyl semimetal phases [16–19]. Thus, highlighting the MBT family as a central platform for studying topological magnetism [20, 21]. Although previous studies have mapped complex mag-netic phase diagrams and metamagnetic transitions in detail [22–25], the precise influence of intercalated non-magnetic quintuple layers and structural complex-
+
+> ∗Contact author: smanna@physics.iitd.ac.in
+
+ity on the magnetic critical fluctuations across the MnBi 2nTe 3n+1 family remains insufficiently explored [26]. While such structural modulation is known to mod-ify magnetic anisotropy, spin-reorientation behavior, and phase stability [27–29], its quantitative impact on the divergence of correlation length, the strength of critical spin fluctuations, and the effective magnetic dimension-ality near Tc remains unresolved [30, 31]. Resolving this issue is essential because critical fluctuations govern the universality class, entropy redistribution, and the stabil-ity of long-range magnetic coherence [32, 33], which in turn directly influences the stability of magnetism-driven topological phenomena such as the QAHE and axion in-sulators in these layered van der Waals magnetic systems [32–35]. Critical scaling analysis provides a direct and quanti-tative framework to probe these effects [36, 37]. Here, we extract the critical exponents β, γ, and δ, which characterize spontaneous magnetization growth, suscep-tibility divergence and field-dependent scaling near the transition [38]. In non-trivial magnetic systems, devi-ations from ideally known universality classes such as the three-dimensional Ising or Heisenberg values is of-ten reported [25, 39, 40] These deviations may indicate reduced effective dimensionality, incomplete development of critical fluctuations or competition between antiferro-magnetic and field-induced ferromagnetic states [41–44]. Similarly, in higher-n compounds such as MnBi 4Te 7, it is still unclear whether the structural dilution in MBT fam-ily preserves asymptotic three-dimensional criticality or instead drives a dimensional crossover toward suppressed fluctuations [45, 46]. Although critical scaling characterizes the evolution of magnetic fluctuations near ordering transitions, it does not directly probe the thermodynamic nature of 
+
+> arXiv:2603.10824v1 [cond-mat.mtrl-sci] 11 Mar 2026
+
+2
+
+FIG. 1: (a) Crystal structure of MnBi 2Te 4 composed of septuple layers (SL) stacked along the c-axis. (b) Crystal structure of MnBi 4Te 7, where MnBi 2Te 4 septuple layers alternate with Bi 2Te 3 quintuple layers (QL). (c) Large-scale (400 nm × 400 nm) constant current STM topography(U = 0.5 V, I = 60 pA) obtained on freshly cleaved (0001) surface of MnBi 2Te 4, displaying atomically flat terraces separated by sharp step edges. The height profile along the indicated direction yields a step height 
+
+∼1.41 nm consistent with a single septuple-layer thickness as shown in (d). (e) Atomically-resolved STM image (20 nm × 20 nm) of the SL-terminated surface of MnBi 2Te 4, clearly depicting the hexagonal lattice of Te-terminated surface (U = 150 mV, I = 300 pA). (f) Large-scale STM topography (50 nm × 50 nm) taken (U = 900 mV, I = 140 pA) of the Te-terminated (0001) surface of MnBi 4Te 7, exhibiting terraces with two discrete step heights corresponding to distinct surface terminations. (g) Line profile across the step in (f), revealing step heights of ∼1.38 nm and ∼1.02 nm, consistent with septuple- and quintuple-layer thicknesses, respectively. (h) High-resolution STM image (10 nm × 10 nm) acquired on the SL-terminated terrace (U = 500 mV, I = 460 pA) of MnBi 4Te 7. (i) Atomic-resolution STM image (10 nm × 10 nm) acquired (U = 400 mV, I = 150 pA) on the QL-terminated terrace, both depicting the hexagonal Te- terminated surface lattice. 
+
+field-driven instabilities [47]. The magnetocaloric effect (MCE) provides a complementary thermodynamic probe by quantifying the isothermal entropy change or adia-batic temperature change induced by an applied mag-netic field [48]. Therefore, using this complementary technique we can bridge the gap between structural lay-ering, critical scaling behavior, and thermodynamic re-sponse in van der Waals MBT family. Here, we present a systematic comparative study combining the atomic-resolution scanning tunneling mi-croscopy, magnetic critical behavior and magnetocaloric response in MnBi 2Te 4 and MnBi 4Te 7. Our analysis re-veals that structural layering, determined by the num-ber of nonmagnetic Bi 2Te 3 spacer layers, serves as a key parameter controlling the effective magnetic dimen-sionality and critical universality class. We further show that this structural modulation strongly influences the magnetocaloric response of the two compounds and the nature of the magnetic phase transition across the MnBi 2nTe 3n+1 family. 
+
+2. EXPERIMENTAL METHODS 
+
+Single crystals of MnBi 2Te 4 and MnBi 4Te 7 were grown using self-flux method [2, 24]. High-purity Mn, Bi, and Te elements were weighed in the appropriate stoichio-metric ratios, thoroughly mixed, pelletized and sealed in evacuated quartz ampoules. The sealed ampoules were heated to 900 ◦C and slowly cooled to 585 ◦C for MnBi 2Te 4 and 587 ◦C for MnBi 4Te 7, followed by rapid quenching in water. The growth yielded shiny, plate-3                                  
+
+> FIG. 2: (a) M–T curves of MnBi 2Te 4single crystals under different magnetic field with H∥c. The anomaly at ∼24.1 K marks the AFM transition. Inset: zoomed M-T curves for lower fields. (b, c) Isothermal magnetization of MnBi 2Te 4, for H∥cand
+> H∥ab , respectively. We observe a metamagnetic transition (spin–flip) around 2-4 Tin H∥c, evolving into a gradual response toward TNin H∥cconfiguration. (d) M–T curves of MnBi 4Te 7single crystals under ZFC and FC with H∥c. The transition at ∼12.9 K indicates layered AFM ordering. (e, f) Isothermal magnetization of MnBi 4Te 7, for H∥cand H∥ab , respectively. We observe a weak anomaly at lower temperatures and magnetic fields compared with MnBi 2Te 4.
+
+like layered crystals with typical dimensions of approxi-mately 6 × 4 × 2 mm 3. Structural characterization was carried out using powder X-ray diffraction (XRD) and energy-dispersive X-ray (EDX) spectroscopy, confirming phase purity and stoichiometric composition. Magnetic measurements were performed using a Quantum Design MPMS3 magnetometer. Magnetization was measured in both zero-field-cooled (ZFC) and field-cooled (FC) pro-tocols over a temperature range of 2–300 K under applied magnetic fields of up to 7 T. To investigate the large-scale surface topography and atomic-scale morphology of the crystals, scanning tun-neling microscopy (STM) measurements were performed. All STM experiments were carried out in an ultrahigh vacuum (UHV) commercial Unisoku low-temperature STM system operating at a base pressure of approxi-mately 2 × 10 −10 mbar [24]. Single crystals were cleaved 
+
+in situ to expose fresh (0001) surfaces and were immedi-ately transferred to the STM stage to minimize surface degradation. Measurements were conducted at 78 K us-ing mechanically cut PtIr tips. Topographic images were acquired in the constant-current mode using tunneling set-point currents in the range of 50–500 pA and sample bias voltages between 0.1 and 1.0 V.   
+
+> 3. RESULTS AND DISCUSSION 3.1. STM imaging of SL–QL layered structures
+
+To probe the structural evolution across the MnBi 2nTe 3n+1 series, scanning tunneling microscopy (STM) measurements were performed on MnBi 2Te 4 (n =1) and MnBi 4Te 7 (n = 2) under identical conditions. Large-area constant-current topographs of MnBi 2Te 4
+
+[Fig. 1(c)] reveal atomically flat terraces separated by step edges of ∼1.41 nm. This step height is consistent with the crystallographic septuple-layer (SL) thickness along the c axis, as verified by the line-profile analy-sis shown in Fig. 1(d). Atomic-resolution topography [Fig. 1(e)] resolves the hexagonal Te surface lattice on the (0001) termination. Thus, confirming the expected SL termination in MnBi 2Te 4.The large-area topography in MnBi 4Te 7 [Fig. 1(f)] re-veals terraces separated by two distinct step heights. The corresponding height profile is shown in Fig. 1(g). 4                       
+
+> FIG. 3: Normalized slope of the Arrott plots as a function of temperature in MnBi 2Te 4.(b) Temperature dependence of the spontaneous magnetization MS(left axis) and the inverse initial susceptibility χ−10(right axis) fitted with the power-law relations in Eqs. (3) and (5). The solid lines represent the best fits. (c) Modified Arrott plots ( M1/β vs. ( H/M )1/γ ) yields
+> β=0.319 and γ=1.221. (d) Kouvel–Fisher plots of MS(dM S/dT )−1(left axis) and χ−10(dχ −10/dT )−1(right axis) as a function of temperature.
+
+Two distinct step heights of approximately 1.38 nm and 1.02 nm are observed. Atomically-resolved STM images acquired on different terraces further confirm the sur-face terminations. Fig. 1(h) shows an atomic-scale to-pography obtained on the SL termination, where a well-ordered hexagonal Te surface lattice is clearly resolved. Moreover, Fig. 1(i) shows the atomic-scale topography of the Te- terminated QL surface. Therefore, the atomic-resolution of the SL-terminated Te surface in MnBi 2Te 4
+
+and coexistence of the SL-QL terminations in MnBi 4Te 7,provide direct real-space evidence of structural stacking for both compounds and are in good agreement with pre-vious reports [8, 9, 24].  
+
+> 3.2. Critical scaling methodology
+
+To investigate the nature of the magnetic phase transi-tion in the MBT compounds, we first employed the con-ventional Arrott plot analysis, where M 2 is plotted as a function of H/M based on the mean-field framework. Within this model [49], the Arrott plots are expected to display a set of parallel straight lines in the high-field region, with the isotherm at Tc intersecting the origin. The sign of the slope provides a criterion for the transi-tion order: a positive slope corresponds to a continuous (second-order) transition, while a negative slope signals a discontinuous (first-order) transition [50]. As shown in Fig.S2(a) and Fig.S3(a), the isotherms for MnBi 2Te 4 and MnBi 4Te 7 exhibit positive slopes at high fields, suggest-ing a second-order magnetic transition. However, the nonlinearity and lack of parallelism in the curves indi-cate that the mean-field approximation fails to capture the critical behavior of the system. To properly describe the critical region, we applied the Arrott–Noakes equation of state [51], 
+
+ HM
+
+1/γ 
+
+= aε + bM 1/β , (1) where β and γ are the critical exponents associated with the spontaneous magnetization and the inverse suscepti-bility, respectively and a and b are constants. The re-duced temperature is defined as 
+
+ε = TTc
+
+− 1 (2) From scaling theory, the critical behavior is further char-acterized by the relations 
+
+Ms(T ) ∝ (−ε)β , ε < 0 ( T < T c), (3) 5           
+
+> FIG. 4: (a) Scaling plots of the renormalized magnetization M|ε|−βversus renormalized field H|ε|−(β+γ)for MnBi 2Te 4, confirms the validity of the critical exponents β= 0 .319 and γ= 1 .221. The inset shows the same data on a log–log scale, confirming consistency with the scaling hypothesis. (b) Enlarged view of the low-temperature region of the log–log Renormalized Arrott Plots, where arrows indicate characteristic phase-boundary points. (c) Magnetic phase diagram of MnBi 2Te 4obtained by combining the results from the renormalized Arrott plot (RAP) analysis with field-dependent magnetization measurements.
+
+M (H) ∝ H1/δ , ε = 0 ( T = Tc), (4) 
+
+χ−10 (T ) ∝ εγ , ε > 0 ( T > T c) (5) where β, γ, and δ correspond to the exponents governing the spontaneous magnetization, the initial susceptibility, and the critical isotherm, respectively. Since the standard Arrott plots are inadequate, we constructed modified Arrott plots (MAPs) of M 1/β ver-sus ( H/M )1/γ using trial values of the exponents corre-sponding to various universality classes, such as the 2D Ising ( β = 0 .125, γ = 1 .75), 3D Heisenberg ( β = 0 .365, 
+
+γ = 1 .386), 3D XY ( β = 0 .345, γ = 1 .316), 3D Ising (β = 0 .325, γ = 1 .24), and tricritical mean-field ( β =0.25, γ = 1 .0) (Fig S2 (b - f) and S3 (b - f). To quantify the accuracy of each model, we used the normalized slope (NS) method: N S (T ) = S(T )  
+
+> S(TC)
+
+, S(T ) = 
+
+ dM 1/β  
+
+> d(H/M )1/γ
+
+
+
+.An ideal model would produce parallel isotherms with NS ≈ 1 near TC . The representative figures for both the samples are shown in Fig. 3(a) and Fig. 5(a), respec-tively. The inadequacy of predefined universality classes mo-tivates a model-independent determination of critical ex-ponents. We therefore implemented a modified iterative method (MIM), following approaches developed for sys-tems exhibiting crossover behavior [39, 52]. Starting with trial β and γ values, we obtained Ms(T ) and χ−10 (T )by linear extrapolation of the high-field portions of the MAPs to the respective axes. The resulting data were fit-ted using Eqs. (3) and (5) to refine the exponents. The ordered- and paramagnetic-branch data were then fitted separately to their respective power laws to update β, γ,and TC. The procedure was iterated until convergence, which is defined by stable exponent values and parallel high-field isotherms. This two-sided scheme enables the detection of asymmetric effective exponents and is par-ticularly suited for systems exhibiting crossover phenom-ena. The modified plots were then reconstructed with the updated values, and the process was repeated until convergence was achieved. This self-consistent method yielded stable values of β and γ, independent of the initial guess, confirming the robustness of the obtained exponents. The final MAPs, shown in Fig.3(b, c) and Fig.5(b), display a series of nearly parallel straight lines in the critical region, thereby validating the reliability of the extracted critical parameters for MnBi 2Te 4 and MnBi 4Te 7.To further validate the exponents, we performed Kou-vel–Fisher (KF) analysis, where the relations [37] 
+
+MS(T )
+
+dM S(T )/dT = T − TC
+
+β , (6) 
+
+χ−10 (T )
+
+dχ −10 (T )/dT = T − TC
+
+γ , (7) yield straight lines whose slopes provide independent estimates of β and γ. The KF plots [Fig.3(d) and S4(c)] are in good agreement with the MAP results. The critical isotherm at TC, plotted on a log–log scale follows the relation 
+
+M ∝ H1/δ , (8) from which we obtain δ. The consistency of the Crit-ical exponents can be further checked using the Widom relation, 
+
+δ = 1 + γβ , (9) 6
+
+> FIG. 5: (a) Normalized slope of the Arrott plots as a function of temperature in MnBi 4Te 7. (b) Modified Arrott plots (MAPs) constructed using the critical exponents obtained from the modified iteration method.
+
+We verified the reliability of the critical exponents by performing a scaling analysis of the magnetization isotherms near Tc. According to the scaling hypothe-sis, the equation of state close to the critical point can be written as 
+
+M (H, ε ) = |ε|β f±
+
+ H
+
+|ε|β+γ
+
+
+
+, (10) where ε = ( T − Tc)/T c is the reduced temperature and 
+
+f± denotes the scaling functions for T < T c and T > T c.In Fig. 4(a) and Fig. 6(a), we plot M |ε|−β as a function of H|ε|−(β+γ) for MnBi 2Te 4 and MnBi 4Te 7, respectively. While Fig. 6(b) shows the renormalized form m2 versus 
+
+h/m , where m = M |ε|−β and h = H|ε|−(β+γ). The col-lapse of the isotherms into two distinct branches corre-sponding to T < T c and T > T c confirms the internal con-sistency of the extracted critical exponents. This excel-lent scaling behavior provides compelling evidence that the magnetic phase transition in both samples around the transition temperature is of second order, in agreement with the predictions of the scaling theory. As we know, for a homogeneous magnet, the univer-sality class of the magnetic phase transition depends on the nature of the exchange interaction J(r). Fisher et al. 
+
+theoretically treated this kind of ordering as an attractive interaction of spins, where a renormalization-group anal-ysis suggests that the exchange interaction decays with distance r as [37] 
+
+J(r) ∼ r−(d+σ), (11) where σ is a positive constant. Moreover, the suscepti-bility exponent γ is predicted as [37]. 
+
+γ = 1 + 4
+
+> d
+
+ n+2 
+
+> n+8
+
+
+
+∆σ
+
++ 8( n+2)( n−4) 
+
+> d2(n+8) 2
+
+h
+
+1 + 2G(d/ 2) 
+
+> d
+
+i (7 n+20) (n−4)( n+8) (∆ σ)2.
+
+(12) where ∆ σ = σ − d/ 2, G(d/ 2) = 3 − 14 (d/ 2) 2, d is the spatial dimension, and n is the spin dimensionality.   
+
+> 3.3. Critical behavior of MnBi 2Te 4and MnBi 4Te 7
+
+In MnBi 2Te 4, the spontaneous magnetization Ms(T )and inverse initial susceptibility χ−10 (T ) were obtained from the intercepts of the high-field Arrott isotherms [Fig. 3(b)] and analyzed using the Kouvel–Fisher method [Fig. 3(d)]. This analysis yields the critical exponents 
+
+β ≈ 0.319 and γ ≈ 1.221, together with a consis-tent transition temperature Tc ≈ 24 .25 K. The relia-bility of these exponents is further supported by scal-ing analysis, where the magnetization data collapse onto two universal branches above and below Tc as shown in Fig. 4(a). The obtained values are close to those ex-pected for the three-dimensional Ising universality class, indicating strong easy-axis anisotropy in MnBi 2Te 4. Fur-ther insight into the field evolution of the magnetic state is obtained from the renormalized Arrott plots shown on a log–log scale in Fig. 4(b). The systematic evolution of the curves with temperature reflects the field-driven modification of the antiferromagnetic order. Combining these results with field-dependent magnetization mea-surements allows the construction of the magnetic phase diagram of MnBi 2Te 4, Fig. 4(c). The critical behavior of MnBi 4Te 7 differs from that of MnBi 2Te 4, reflecting the reduced magnetic connectivity introduced by the insertion of nonmagnetic Bi 2Te 3 quin-tuple layers. Separate fits above and below Tc yield dis-tinct effective critical exponents: for T < T c, β− ≈ 0.271 and γ− ≈ 1.013, while for T > T c we obtain β+ ≈ 0.308 and γ+ ≈ 1.157 Fig. 5(b). The asymmetry of the expo-nent sets indicates that the transition is not governed by a single universal class. Furthermore, Fig. 6 depicts the scaling analysis of the magnetization data, which supports this conclusion. Asingle set of critical exponents fails to collapse the data 7
+
+FIG. 6: (a) Scaled magnetization data of MnBi 4Te 7 analyzed within the framework of the magnetic equation of state. The data collapse onto two separate branches below and above Tc, confirms the validity of the critical exponents β− ≈ 0.271, γ− ≈ 1.013 below Tc and β+ ≈ 0.308, γ+ ≈ 1.157 above Tc. The inset shows the same data on a log–log scale, which confirms consistency with the scaling hypothesis. (b) Scaling collapse of the renormalized magnetization and field, m2 vs h2, is in good agreement for both T < T c and T > T c. (c) Enlarged view of the low-temperature region of the log–log RAP, where arrows schematically indicate characteristic phase-boundary points. (d) Magnetic phase diagram of MnBi 4Te 7.
+
+over the entire temperature range [Fig. S4(a)], whereas separate scaling above and below Tc yields improved agreement [Fig. 5(b)]. Such behavior is characteristic of crossover-dominated criticality, which can be attributed to weakened interlayer exchange and the proximity of a low-field tricritical point reported near 11 .9 K and 750 Oe [22]. The combined influence of reduced magnetic coher-ence and tricritical fluctuations suppresses the asymp-totic critical region, resulting in effective exponent values that vary across the transition. Moreover, our previous work [24] reveals a frequency-dependent anomaly near 6 K, indicating freezing of fer-romagnetic clusters within an antiferromagnetic matrix. Thus, while the transition near Tc reflects antiferromag-netic ordering, the low-temperature state is governed by cluster-driven magnetic dynamics. To probe the spatial range of magnetic interac-tions, we analyze the critical exponents within the renormalization-group framework for long-range ex-change J(r) ∼ r−(d+σ). Assuming d = 3 and Ising spin symmetry ( n = 1), the measured exponents yield 
+
+σ ≈ 1.88 for MnBi 2Te 4, corresponding to J(r) ∼ r−4.88 .For MnBi 4Te 7, the values β− ≈ 0.271, γ− ≈ 1.013 give 
+
+σ− ≈ 1.53 below Tc, while β+ ≈ 0.308, γ+ ≈ 1.157 yield 
+
+σ+ ≈ 1.80 above Tc, corresponding to J(r) ∼ r−4.53 and 
+
+J(r) ∼ r−4.80 , respectively. The range 1.5 < σ < 2 places both systems in the crossover regime between long-range and short-range magnetic interactions, indicating intermediate-range ex-change. Moreover, we observe a slower spatial decay of the exchange interaction in MnBi 4Te 7 compared with MnBi 2Te 4, implying a slightly longer effective interac-tion range in MnBi 4Te 7. This behavior likely originates from the insertion of the Bi 2Te 3 quintuple layer, which modifies the interlayer exchange pathways within the MnBi 2nTe 3n+1 structure. 8
+
+FIG. 7: (a, d) Temperature dependence of the magnetic entropy change −∆SM (T, H ) for MnBi 2Te 4 and MnBi 4Te 7, respec-tively, calculated from magnetization isotherms for fields ranging from 1 to 7 T. MnBi 2Te 4 exhibits a dual magnetocaloric response with a positive entropy peak near Tc(≈ 24 .25 K) and a inverse entropy pocket at lower temperatures associated with field-induced spin-flip transitions. In contrast, MnBi 4Te 7 shows a broad and predominantly positive entropy change centered near Tc(≈ 13 .05 K). (b, e) Temperature dependence of the field-induced heat-capacity change −∆CP (T, H ) for MnBi 2Te 4
+
+and MnBi 4Te 7, respectively. MnBi 2Te 4 displays sharp field-enhanced anomalies near Tc, whereas MnBi 4Te 7 exhibits broader variations extending over a wider temperature range. (c, f) Contour maps of the magnetic entropy change ∆ SM (T, H ) for MnBi 2Te 4 and MnBi 4Te 7, illustrating the evolution of entropy with temperature and magnetic field. The contour map of MnBi 2Te 4 reveals a distinct region of negative entropy change at intermediate fields and low temperatures, while MnBi 4Te 7
+
+shows a smooth, predominantly positive entropy distribution. 
+
+3.4. Magnetocaloric signatures of MnBi 2Te 4 and MnBi 4Te 7
+
+The magnetocaloric effect (MCE) originates from the coupling between the magnetic entropy and the external magnetic field, and provides valuable information about the nature of magnetic interactions and phase transitions. The isothermal magnetic entropy change, ∆ SM (T, H ), can be obtained from the magnetization isotherms using Maxwell’s relation, which connects the entropy S with the magnetization M as [53, 54] 
+
+ ∂S ∂H 
+
+
+
+> T
+
+=
+
+ ∂M ∂T 
+
+
+
+> H
+
+. (13) Integrating over the magnetic field yields ∆SM (T, ∆H) = 
+
+Z ∆H
+
+> 0
+
+ ∂M ∂T 
+
+
+
+> H
+
+dH, (14) where ∆ H is the change in magnetic field. In prac-tice, for a discrete set of isothermal M (H) curves mea-sured at successive temperatures, the entropy change 
+
+−∆SM (T, H ) can be approximated as [54] 
+
+∆SM
+
+ Ti + Ti+1 
+
+2 , H 
+
+
+
+= X
+
+> i
+
+ (Mi+1 − Mi)
+
+Ti+1 − Ti
+
+
+
+∆Hi.
+
+(15) Also, the magnetic contribution to the specific heat can be derived from entropy as [54] ∆Cp(T, H ) = Cp(T, H ) − Cp(T, 0) = T ∂∆SM (T, H )
+
+∂T .
+
+(16) For MnBi 2Te 4 [Fig. 7(a)], the isothermal magnetic en-tropy change −∆SM (T ) displays a dual behaviour. At low applied fields ( μ0H = 1–3 T), we observe a neg-ative entropy contribution around 15-18 K, indicating an inverse magnetocaloric effect. As the field is in-creased ( μ0H = 4–7 T), the entropy change under-goes a well-defined sign inversion and shows conventional magnetocaloric effect with a sharp positive peak around 
+
+Tc ∼ 24 .25. For a maximum field change ∆ H = 7 T the peak magnitude reaches −∆Smax  
+
+> M
+
+≈ 3 J kg −1K−1. The pronounced asymmetry and field-dependent switching of entropy change is consistent with a field-induced reorien-tation spin-flip transition of MnBi 2Te 4, which produces 9a rapid redistribution of magnetic entropy. The contour map of −∆SM (T, H ) [Fig. 7(c)] further highlights this behavior by revealing a distinct region of negative en-tropy change within the same temperature and field win-dow. In contrast, MnBi 4Te 7 [Fig. 7(d)] exhibits a qualita-tively different magnetocaloric behavior. The entropy change remains positive across the measured tempera-ture range and evolves smoothly with increasing field, producing a single, broad maximum centered near the 
+
+Tc ∼ 13 .05 K. The peak magnitude increases monotoni-cally with field and attains −∆Smax  
+
+> M
+
+≈ 1.5 J kg −1K−1 for ∆H = 7 T. The absence of entropy sign reversal and the broad temperature distribution of the entropy peak indi-cate a more gradual field-driven polarization of moments rather than an abrupt metamagnetic reorientation. The corresponding contour map [Fig. 7(f)] indicates that the entropy change remains predominantly positive through-out the explored temperature and field range. The ab-sence of negative entropy regions and sharp thermody-namic anomalies suggests that field-induced spin-flip pro-cesses are significantly suppressed in MnBi 4Te 7.These entropy trends are further supported by the field-dependent heat-capacity change ∆ CP (T, H ). In MnBi 2Te 4 [Fig. 7(b)], ∆ CP shows sharp field-enhanced peaks near the magnetic ordering temperature ( ∼20–25 K). This behavior reflects strong thermodynamic fluc-tuations close to the transition. In contrast, MnBi 4Te 7
+
+[Fig. 7(e)] shows a broader and more gradual variation of ∆CP (T, H ) over a wider temperature range ( ∼10–35 K). The heat-capacity change increases smoothly with field and does not show the sharp anomalies seen in MnBi 2Te 4.This broader response indicates that magnetic entropy is redistributed over a wider temperature range. Such be-havior is consistent with reduced effective interlayer cou-pling and the coexistence of ferromagnetic and antifer-romagnetic correlations in MnBi 4Te 7 reported in earlier studies [24]. From an application perspective, the sharp entropy variations of MnBi 2Te 4 make it a strong candidate for low-temperature magnetocaloric cooling and field-tunable spintronic switches that exploit discrete transi-tions. MnBi 4Te 7, with smoother tunability and reduced coercivity, is better suited for reversible, low-energy ma-nipulation of topological states. Together, these results establish the MBT family as a versatile materials plat-form where layer engineering directly controls the inter-play between magnetism, entropy, and topology, enabling pathways to realize QAHE and related quantum phases in van der Waals magnets.  
+
+> 4. CONCLUSION
+
+We presented the critical behavior and magnetocaloric properties of MnBi 2Te 4 and MnBi 4Te 7 to elucidate how structural layering in the MnBi 2nTe 3n+1 series controls magnetic interactions. STM reveals atomically flat septuple-layer terraces in MnBi 2Te 4, whereas coexisting septuple and quintuple layer terminations in MnBi 4Te 7.Critical-scaling analysis of the magnetization data yields distinct sets of critical exponents for the two compounds, which indicates different effective ranges of magnetic ex-change and therefore different universality classes. Fur-thermore, magnetocaloric measurements provide comple-mentary thermodynamic evidence. MnBi 2Te 4 displays both conventional and inverse magnetocaloric responses, whereas MnBi 4Te 7 displays a single, broad maximum and smoothly varying features in the entropy change (−∆SM (T, H )). Altogether, the combined critical scal-ing and magnetocaloric results identify structural layer-ing as a tunable parameter that controls magnetic di-mensionality, the effective interaction range, and the thermodynamic pathways for entropy redistribution in this family. Extending the same analysis to higher-n
+
+members of MnBi 2nTe 3n+1 can show how the family evolves from three-dimensional criticality toward quasi-two-dimensional crossover behavior and will have direct implications for magnetically driven topological phenom-ena such as QAHE and axion electrodynamics in these materials.  
+
+> 5. ACKNOWLEDGMENTS
+
+We thank Subhasis Ghosh (JNU), Martin Weigel and Christoph Tegenkamp (TUC) for insightful discussions. N.F. acknowledges financial support from the DST IN-SPIRE Fellowship (IF200582), Government of India. N.F and S.M. acknowledge partial support of the Indo-German project SPARC-GIANT. The authors gratefully acknowledge the Department of Physics and the Central Research Facility (CRF), IIT Delhi, for MPMS and STM measurements.                
+
+> [1] M. Z. Hasan and C. L. Kane, Colloquium: Topological insulators, Rev. Mod. Phys. 82 , 3045 (2010). [2] K. He, MnBi 2Te 4-family intrinsic magnetic topological materials, npj Quantum Materials 5, 90 (2020). [3] Y. Tokura, K. Yasuda, and A. Tsukazaki, Magnetic topo-logical insulators, Nat. Rev. Phys. 1, 126 (2019). [4] J. Li, Y. Li, W. Duan, Y. Xu, and S.-C. Zhang, In-trinsic magnetic topological insulators in van der waals layered MnBi 2Te 4-family materials, Science Advances 5,eaaw5685 (2019). [5] M. M. Otrokov, I. I. Klimovskikh, H. Bentmann, D. Es-tyunin, A. Zeugner, Z. S. Aliev, S. Gaß, A. U. B. Wolter, A. V. Koroleva, A. M. Shikin, M. Blanco-Rey, M. Hoffmann, I. P. Rusinov, M. G. Vergniory, A. Kimura,
+
+10 
+
+L. Petaccia, G. Di Santo, R. C. Vidal, S. Schatz, K. Kißner, M. ¨Unzelmann, C. H. Min, S. Moser, T. R. F. Peixoto, F. Reinert, A. Ernst, P. M. Echenique, A. Isaeva, and E. V. Chulkov, Prediction and observation of an an-tiferromagnetic topological insulator, Nature 576 , 416 (2019). [6] X. Xu, S. Yang, H. Wang, R. Guzman, Y. Gao, Y. Zhu, Y. Peng, Z. Zang, M. Xi, S. Tian, Y. Li, H. Lei, Z. Luo, J. Yang, Y. Wang, T. Xia, W. Zhou, Y. Huang, and Y. Ye, Ferromagnetic-antiferromagnetic coexisting ground state and exchange bias effects in MnBi 4Te 7 and MnBi 6Te 10 , Nature Communications 13 , 7646 (2022). [7] L. Ding, X. Wang, S. Xu, and Y. Li, Crystal and magnetic structures of MnBi 4Te 7: A layered magnetic topological material, Phys. Rev. B 101 , 020412 (2020). [8] Y. Yuan, X. Wang, H. Li, J. Li, Y. Ji, Z. Hao, Y. Wu, K. He, Y. Wang, Y. Xu, et al. , Electronic states and mag-netic response of MnBi 2Te 4 by scanning tunneling mi-croscopy and spectroscopy, Nano letters 20 , 3271 (2020). [9] X. Wu, J. Li, X.-M. Ma, Y. Zhang, Y. Liu, C.-S. Zhou, J. Shao, Q. Wang, Y.-J. Hao, Y. Feng, et al. , Distinct topological surface states on the two terminations of MnBi 4Te 7, Physical Review X 10 , 031013 (2020). [10] J. Cui, Y. Zhang, and Z. Wang, Layer-dependent mag-netism and anomalous hall effect in MnBi 4Te 7 thin flakes, Nano Lett. 23 , 1234 (2023). [11] W. Ge, H. Wu, and J. Liu, Surface spin-flip transitions in MnBi 4Te 7 revealed by spectroscopy, Phys. Rev. Lett. 
+
+129 , 107204 (2022). [12] T. Kim, S. Lee, and H. Kwon, Layer-controlled topolog-ical phase transitions in MnBi 4Te 7, Nat. Commun. 15 ,10.1038/s41467-024-10234-5 (2024). [13] C. Hu, T. Qian, and N. Ni, Recent progress in MnBi 2n Te 3n+1 intrinsic magnetic topological insulators: Crystal growth, magnetism, and chemical disorder, Na-tional Science Review 11 , nwad282 (2024). [14] J. Guo, H. Wang, H. Zhang, S. Mi, S. Li, H. Dong, S. Zhu, J. Hu, X. Wang, Y. Li, et al. , Interlayer coupling modu-lated tunable magnetic states in superlattice MnBi 2Te 4
+
+(Bi 2Te 3)n topological insulators, Physical Review B 109 ,165410 (2024). [15] M. Z. Shi, B. Lei, C. S. Zhu, D. H. Ma, J. H. Cui, Z. L. Sun, H. Chen, Y. Y. Wang, T. Zhang, Q. Li, and X. H. Chen, Magnetic and transport properties in the mag-netic topological insulators MnBi 2Te 4(Bi 2Te 3)n (n = 1, 2), Physical Review B 100 , 155144 (2019). [16] Y. Deng, Y. Yu, M.-Z. Shi, Z. Guo, Z. Xu, J. Wang, X. Chen, and Y. Zhang, Quantum anomalous hall effect in intrinsic magnetic topological insulator MnBi 2Te 4, Sci-ence 367 , 895 (2020). [17] D. Zhang, M. Shi, T. Zhu, D. Xing, H. Zhang, and J. Wang, Topological axion states in the magnetic insula-tor MnBi 2Te 4 with the quantized magnetoelectric effect, Physical review letters 122 , 206401 (2019). [18] M. Gibertini, M. Koperski, A. F. Morpurgo, and K. S. Novoselov, Magnetic 2d materials and heterostructures, Nature Nanotechnology 14 , 408 (2019). [19] A. Gao, Y. F. Liu, C. Hu, J. X. Qiu, C. Tzschaschel, B. Ghosh, P. Liu, J. Liu, Y. Liu, Y. Liu, R. Tang, S. Wang, X. Wang, Q. Ma, C. Liu, P. Jarillo-Herrero, N. Gedik, Q. Liu, T.-R. Chang, and S. Y. Xu, Layer hall effect in a 2d topological axion antiferromagnet, Nature 
+
+595 , 521 (2021). [20] Y. Zhao and Q. Liu, Routes to realize the axion-insulator phase in MnBi 2Te 4(Bi 2Te 3)n family, Applied Physics Letters 119 , 060502 (2021). [21] S. Li, M. Gong, S. Cheng, H. Jiang, and X. C. Xie, Dissi-pationless layertronics in axion insulator MnBi 2Te 4, Na-tional Science Review 11 , nwad262 (2024). [22] H. Zhang, H. Wu, D. Liu, J. Huang, F. Gao, T. Yang, X. Zhao, B. Li, S. Ma, and Z. Zhang, Metamagnetic tricritical behavior of the magnetic topological insulator MnBi 4Te 7, Physical Review B 109 , 214428 (2024). [23] T. Das and S. Mukhopadhyay, Metamagnetic quantum criticality in the antiferromagnetic topological insulator MnBi 2Te 4, Physical Review B 111 , 174420 (2025). [24] N. Firdosh, S. Sinha, I. Sinha, M. Singh, S. Patnaik, and S. Manna, Exchange bias and anomalous hall ef-fect driven by intertwined magnetic phases in MnBi 4Te 7,Physical Review B 112 , 144410 (2025). [25] X. Yang, J. Pan, X. He, and D. Chu, Critical behavior, magnetic phase diagram, and magnetic entropy change of MnSb 4Te 7, Physical Review B 109 , 094408 (2024). [26] L. Ding, C. Hu, E. Feng, C. Jiang, I. A. Kibalin, A. Gukasov, and H. Cao, Neutron diffraction study of magnetism in van der waals layered MnBi 2n Te 3n+1 , Jour-nal of Physics D: Applied Physics 54 , 174003 (2021). [27] Y. Sun, L. Zhang, and H. Li, Axion electrodynamics in antiferromagnetic topological insulators, Phys. Rev. Ma-terials 7, 074204 (2023). [28] Q. He, M. Li, and X. Xu, Van der waals magnets for next-generation quantum technologies, J. Mater. Chem. C 10 , 13214 (2022). [29] I. I. Klimovskikh, M. M. Otrokov, D. Estyunin, S. V. Ere-meev, S. O. Filnov, A. Koroleva, A. Isaeva, K. Kißner, M. ¨Unzelmann, C. H. Min, S. Moser, T. R. F. Peixoto, F. Reinert, A. Ernst, P. M. Echenique, and E. V. Chulkov, Tunable 3d/2d magnetism in the MnBi 2Te 4
+
+(Bi 2Te 3)m topological insulators family, npj Quantum Materials 5, 54 (2020). [30] H.-K. Xu, M. Gu, F. Fei, Y.-S. Gu, D. Liu, Q.-Y. Yu, S.-S. Xue, X.-H. Ning, B. Chen, H. Xie, et al. , Observation of magnetism-induced topological edge state in antiferro-magnetic topological insulator MnBi 4Te 7, ACS nano 16 ,9810 (2022). [31] R. C. Vidal, A. Zeugner, J. I. Facio, R. Ray, M. H. Haghighi, A. U. Wolter, L. T. Corredor Bohorquez, F. Caglieris, S. Moser, T. Figgemeier, et al. , Topolog-ical electronic structure and intrinsic magnetization in MnBi 4Te 7: a Bi 2Te 3 derivative with a periodic mn sub-lattice, Physical Review X 9, 041065 (2019). [32] W. B. Cui, W. Liu, W. J. Gong, X. H. Liu, S. Guo, F. Yang, and Z. D. Zhang, Exchange coupling in hard/soft-magnetic multilayer films with non-magnetic spacer layers, Journal of Applied Physics 111 , 07B533 (2012). [33] B. Li, D. M. Pajerowski, J. Q. Yan, and R. J. McQueeney, Role of nonmagnetic spacers in the magnetic interactions of antiferromagnetic topological insulators MnBi 4Te 7
+
+and MnBi 2Te 4, Physical Review B 111 , 064418 (2025). [34] L. Yang, J. Wu, and Q. Liu, High-temperature chern in-sulators in layered MnBi 4Te 7, Adv. Electron. Mater. 9,2201280 (2023). [35] B. Zhao, Y. Liu, and P. Wang, Manipulating spin tex-tures in layered magnetic topological insulators, Phys. Rev. B 108 , 094423 (2023). [36] M. E. Fisher, The theory of equilibrium critical phenom-ena, Reports on progress in physics 30 , 615 (1967). 11 
+
+[37] M. E. Fisher, S.-k. Ma, and B. Nickel, Critical exponents for long-range interactions, Physical Review Letters 29 ,917 (1972). [38] V. Franco and A. Conde, Scaling laws for the magne-tocaloric effect in second order phase transitions: From physics to applications for the characterization of materi-als, international journal of refrigeration 33 , 465 (2010). [39] H. C. Chauhan, B. Kumar, A. Tiwari, J. K. Tiwari, and S. Ghosh, Different critical exponents on two sides of a transition: Observation of crossover from ising to heisen-berg exchange in skyrmion host Cu 2OSeO 3, Physical Re-view Letters 128 , 015703 (2022). [40] L. Zhang, H. Han, M. Ge, H. Du, C. Jin, W. Wei, J. Fan, C. Zhang, L. Pi, and Y. Zhang, Critical phenomenon of the near room temperature skyrmion material fege, Sci-entific reports 6, 22397 (2016). [41] F. Meng, W. Liu, A. Rahman, J. Zhang, J. Fan, C. Ma, M. Ge, T. Yao, L. Pi, L. Zhang, et al. , Crossover of critical behavior and nontrivial magnetism in the chiral soliton lattice host Cr 1/3 TaS 2, Physical Review B 107 ,144425 (2023). [42] Y. Liu, M. Abeykoon, and C. Petrovic, Critical behavior and magnetocaloric effect in VI 3, Physical Review Re-search 2, 013013 (2020). [43] Y. Liu, V. N. Ivanovski, and C. Petrovic, Critical behav-ior of the van der waals bonded ferromagnet Fe 3-x GeTe 2,Physical Review B 96 , 144429 (2017). [44] H. Algaidi, C. Zhang, Y. Ma, C. Liu, A. Chen, D. Zheng, and X. Zhang, Magnetic critical behavior of van der waals Fe 3GaTe 2 with above-room-temperature ferromag-netism, APL Materials 12 , 10.1063/5.0183071 (2024). [45] Q. Liu, H. Zhang, and Y. Xu, Topology and magnetism interplay in layered van der waals magnets, Adv. Mater. 
+
+34 , 2105678 (2022). [46] Z. Liang, K. Hu, and W. Guo, Electronic structure engi-neering in MnBi 4Te 7 for spintronic devices, Appl. Phys. Lett. 122 , 112405 (2023). [47] J. Y. Law, V. Franco, L. M. Moreno-Ram´ ırez, A. Conde, D. Y. Karpenkov, I. Radulov, K. P. Skokov, and O. Gut-fleisch, A quantitative criterion for determining the order of magnetic phase transitions using the magnetocaloric effect, Nature communications 9, 2680 (2018). [48] C. Triguero, M. Porta, and A. Planes, Magne-tocaloric effect in metamagnetic systems, Physical Re-view B—Condensed Matter and Materials Physics 76 ,094415 (2007). [49] A. Arrott, Criterion for ferromagnetism from observa-tions of magnetic isotherms, Physical Review 108 , 1394 (1957). [50] B. Banerjee, On a generalised approach to first and sec-ond order magnetic transitions, Physics letters 12 , 16 (1964). [51] A. Arrott and J. E. Noakes, Approximate equation of state for nickel near its critical temperature, Physical Re-view Letters 19 , 786 (1967). [52] A. Pramanik and A. Banerjee, Critical behavior at paramagnetic to ferromagnetic phase transition in Pr 0.5 Sr 0.5 MnO 3: A bulk magnetization study, Physical Review B—Condensed Matter and Materials Physics 79 ,214426 (2009). [53] K. A. Gschneidner, V. K. Pecharsky, and A. Tsokol, Re-cent developments in magnetocaloric materials, Reports on progress in physics 68 , 1479 (2005). [54] M.-H. Phan and S.-C. Yu, Review of the magnetocaloric effect in manganite materials, Journal of Magnetism and Magnetic Materials 308 , 325 (2007).

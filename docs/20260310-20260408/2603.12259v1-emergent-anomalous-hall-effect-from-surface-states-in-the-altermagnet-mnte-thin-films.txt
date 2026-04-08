@@ -1,0 +1,473 @@
+Title: Emergent Anomalous Hall Effect from Surface States in the Altermagnet MnTe Thin Films
+
+URL Source: https://arxiv.org/pdf/2603.12259v1
+
+Published Time: Fri, 13 Mar 2026 01:22:00 GMT
+
+Number of Pages: 11
+
+Markdown Content:
+# Emergent Anomalous Hall Effect from Surface States in the Altermagnet MnTe Thin Films 
+
+Yufei Zhao, 1, 2 Saswata Mandal, 2 Chao-Xing Liu, 2 and Binghai Yan 1, 2, ∗
+
+> 1
+
+Department of Condensed Matter Physics, Weizmann Institute of Science, Rehovot 7610001, Israel 
+
+> 2
+
+Department of Physics, The Pennsylvania State University, University Park, Pennsylvania 16802, USA 
+
+(Dated: March 13, 2026) Transport measurements on thin films of the prototypical altermagnet MnTe have reported conflicting phenomena of anomalous Hall effects (AHE), including opposite signs and thickness-independent resistivity. Here we resolve these discrepancies by separating bulk and surface contributions to the AHE for different crystal terminations. Using first-principles calculations and symmetry-based effective models, we show that although the bulk hosts a characteristic g-wave Fermi surface, surface states within the bulk gap acquire a ferromagnet-like spin polarization and dominate the AHE at experimentally relevant Fermi energies. While the surface magnetization follows the surface spin sublattice, the resulting AHE is uniquely determined by the bulk N´ eel order for a given termination. Both bulk and surface contributions are closely linked to a small but finite out-of-plane orbital magnetization. Incorporating realistic interfacial chemistry further reveals that a Te capping layer can reverse the surface AHE sign relative to that on an InP substrate. Our results establish a microscopic framework for interpreting and engineering AHE responses in altermagnetic thin films through interface design. 
+
+I. INTRODUCTION 
+
+Altermagnetism refers to an unconventional collinear antiferromagnetic phase [1–8]. Despite vanishing net magnetization, it exhibits nonrelativistic band split and spin current [4, 9], and usually shows anomalous Hall effect (AHE) with spin-orbit coupling (SOC) [10], which is similar to another known Mn 3(Sn/Ge) family of noncollinear antiferromagnets [11–14]. In experiments, spin-split bands are typically observed as evidence of altermagnets via angle-resolved photoemission spec-troscopy (ARPES) [15–20], and the AHE serves as a transport probe of Berry curvature [21–23]. MnTe emerges as one of the most extensively studied altermagnet materials, owing to its high N´ eel temperature (310 K) and compatibility with molecular beam epitaxy thin film growth, as a promising candidate for semiconductor spintronics applications. MnTe thin films and single crystals were reported to exhibit a variety of AHE behaviors [21, 24–29]. Amajor puzzle is that the AHE sign sensitively depends on thin film samples grown on different substrates and interface conditions. For instance, MnTe films grown on InP substrate typically exhibit a positive anomalous Hall conductivity (AHC) among 50–300 K in early reports [21, 25] and show an AHC sign reversal from positive to negative when cooling down with the critical temperature near 175 K in a more recent work [29]. In contrast, bulk crystals show similar AHC sign reversal around 230 K where strain was believed to modify AHE [27, 28]. Furthermore, Zhou et al. [29] found that both the AHE and longitudinal resistance are insensitive to film thickness, raising the question whether surface or  
+
+> ∗binghai.yan@psu.edu
+
+interface states govern the magneto-transport properties in these thin films, distinct from bulk crystals. Zhou et al. [29] also revealed the existence of surface states at the Fermi energy by ARPES, in addition to bulk valence bands [15, 17, 25, 30, 31] lying 30 ∼60 meV below the Fermi level. Although surface states are known to profoundly influence the electronic and transport properties of low-dimensional systems, their role in altermagnets remains largely unexplored. If surface states dominate the AHE observed in experiments, can we still gain useful insights about the bulk altermagnetism? Therefore, we are motivated to investigate surface states and focus on their interplay with the bulk altermagnetism in MnTe thin films by combining first-principles calculations and effective models in this work. Our results reveal that surface states emerge within the bulk band gap. These states harbor large Berry curvature, thereby generating much stronger AHE than bulk states in the thin film, even when the bulk is p-doped and the film has more than 200 atomic layers. Because surface band dispersions are sensitive to the surface/interface atomic structures, the AHC sign is surface-termination-dependent, rationalizing different AHC signs in reports [21, 29]. For a fixed surface termination, we find that the surface AHE is determined by the bulk altermagnetic order, regardless of which spin sublattice is exposed on the surface. Both first-principles calculations and the effective surface state model analysis reveal that, the out-of-plane component of orbital magnetization—the source of AHE—remains unchanged for opposite spin sublattices on the surface as long as the bulk altermagnetic order remains the same. Our findings establish a unique surface-probe of bulk altermagnetism and pave the way for controlling magnetotransport of altermagnetic devices by surface and interface engineering. The paper is organized as follows. After introducing 
+
+> arXiv:2603.12259v1 [cond-mat.mtrl-sci] 12 Mar 2026
+
+2the methodology in Section II, we present the surface states at Fermi energy in Section III and analyze their contribution to the AHE in Section IV. In Section V, we show that the polarity of the surface AHE is dictated by the bulk N´ eel order and remains robust against variations in the surface magnetization direction for a given termination. In Section VI, we introduce a symmetry-based effective model for the surface states to elucidate the mechanism of AHE induced by the out-of-plane orbital moment and orbital texture, instead of surface magnetization. Section VII incorporates realistic interfacial chemistry to examine its impact on the AHE, revealing how different surface terminations (such as Te capping or a MnTe–InP interface) can significantly modify or even invert the AHC. Finally, Section VIII summarizes our findings.  
+
+> II. METHOD
+
+Density-functional theory (DFT) calculations were performed using the Vienna ab initio simulation package (vasp ) with the projector-augmented-wave (PAW) method [32, 33]. The exchange-correlation functional was treated within the generalized gradi-ent approximation (GGA) using the Perdew–Burke– Ernzerhof (PBE) parametrization [34]. To account for electronic correlations in Mn-3 d states, we employed the DFT+ U method [35] with on-site Coulomb interaction 
+
+U = 4.8 eV and exchange interaction J = 0.8 eV. Maximally localized Wannier functions for Mn-s, d , Te-
+
+p, In-s, p , P-p, and H-s orbitals were constructed using the wannier90 package [36]. For the magnetic-moment calculations, we used a 20 × 20 × 20 k-mesh. To demonstrate the interfacial effect in MnTe films that are usually grown on the InP substrate, we constructed a slab model consisting of 14 MnTe layers (7 unit cells) and 8 InP layers. Atomic positions were fully relaxed at fixed until the force norm on each ion was below 0.01 eV/˚ A. To isolate surface layers from bulk, we projected the Berry curvature onto each atomic layer ( l) [37, 38]: 
+
+σxy (l) = e2
+
+ℏ
+
+X
+
+> n
+
+Z d2k
+
+(2 π)2 f (εn)Ω xy n (k, l ), (1) where Ω xy n (k, l ) is the layer-projected Berry curvature of band n,Ωxy n (k, l ) = −2 Im X
+
+> m̸=n
+
+⟨n| ˆPl∂kx H|m⟩ ⟨ m|∂ky H|n⟩
+
+(εn − εm)2 . (2) Here ˆPl = |l⟩ ⟨ l| is the projector onto the l-th atomic layer. To tame numerical fluctuations in the bulk region caused by the reduced symmetry of Wannier functions, we applied a sliding-average smoothing procedure along the layer index. Specifically, for the internal bulk layers, each smoothed value is computed as the average over four consecutive layers (one unit cell): σxy (l) = 
+
+> 14
+
+P3 
+
+> k=0
+
+σxy (l + k). Layers outside this range, including the top surface and interface regions, are not smoothed.  
+
+> III. SURFACE STATES
+
+Because altermagnetism is fundamentally rooted in symmetry, we first use symmetry analysis to understand the distinction between bulk and surface states. In bulk, magnetic moments oriented along y alternate along the z direction. Two spin sublattices are related by a nonsymmorphic sixfold screw-axis rotation or a mirror reflection, forcing the net spin moment to vanish (in the absence of SOC) with a characteristic g-wave-type spin distribution on the Fermi surface [see Fig. 1(a,b)] [39– 42]. However, these symmetries do not hold on the xy 
+
+surface and thus, surface states do not necessarily follow the g-wave feature, and net surface spin polarization can emerge. We indeed observe fully spin-polarized surface bands that are contributed mainly by surface Te-px,y orbitals. Figure 1(a) shows the surface states calculated on a slab model with both top and bottom surfaces terminated by Te. Because the single surface Mn layer is spin polarized along y, surface states are also spin polarized along the same direction as the surface Mn. Here, we construct the slab model from a tight-binding Hamiltonian using Wannier functions, and fully DFT calculations that consider the surface charge and atomic reconstruction give qualitatively similar results (see details in Section VII). The surface has a symmetry MxT which transforms spin: 
+
+Sx(kx, k y ) → − Sx(kx, −ky ),Sy (kx, k y ) → Sy (kx, −ky ),Sz (kx, k y ) → Sz (kx, −ky ).
+
+(3) Therefore, Sx vanishes while Sy and Sz are allowed. Since surface Mn atoms exhibit dominant Sy polarization, surface states exhibit the same Sy but a small but nonnegligible Sz as we will discuss in Sections V and VI. In addition, the surface band dispersion is asymmetric regarding ±k when including SOC (see Fig. 1a) because both inversion and time-reversal symmetries are broken here. Such asymmetry can lead to nonlinear surface transport as discussed in van der Waals antiferromagnets recently [43]. In ARPES, however, the spectrum appears symmetric, which may arise from spatial averaging over in-plane magnetic domains. We note that recent ARPES measurement is consistent with calculated surface bands [29]. Given that α-MnTe is a hole-doped semiconductor, our analysis focuses on the valence bands region. For consistency with experimental observations, we align the Fermi level using the ARPES spectrum along Γ–K as a reference [17, 31]. Because the bulk valence top lies at 
+
+E∗ = −0.03 eV, we expect surface-dominant transport 3(b)  (c) (a) 
+
+# E    
+
+> AHE
+> Energy (eV)
+> FIG. 1. (a) Surface band structure with SOC. Red color represents the top surface projection (Te-termination) and gray color indicates the bulk bands in a slab model. (b) Schematics of the spin texture in bulk and surfaces. While bulk bands have a
+> g-wave feature, top and bottom surface states are fully spin polarized along + yand −y, respectively. The red and blue arrows depict the altermagnetic order. (c) Top and bottom surface states induce the same AHE due to the Berry curvature, though they exhibit opposite spin polarization ( ±Sy).
+
+for chemical potential above E∗. Notably, the calculated carrier density (2 × 10 14 cm −2) at E∗ is much larger than the experimental Hall density of thin films, e.g., 3 × 10 13 cm −2 in Ref. [21] or 5 × 10 13 cm −2 in Ref. [29], indicating that the Fermi level in the experiment is higher than bulk bands. Therefore, it is not surprising that film resistivity is insensitive to thickness in this case. Furthermore, the three-dimensional carrier density was reported to be around 10 19 cm −3 at 300 K in some bulk samples [27], which corresponds to a Fermi level 0.02 eV below the bulk edge E∗. We note that the two-dimensional carrier density at E∗ is equivalent to 200 nm thick bulk, which is larger than the typical thin film thickness (1 ∼ 150 nm) reported in literature.  
+
+> IV. SURFACE ANOMALOUS HALL EFFECT
+
+After establishing the surface band structure and spin polarization, we will demonstrate that they generate pronounced AHE in this section. We calculate the AHC by integrating the Berry curvature for slabs with different surface terminations and thickness. Our analysis spans the energy window [−0.1, 0.15] eV, covering regimes relevant to diverse experimental samples. Figure 2(a-c) presents the results for three combinations of surface terminations with film thicknesses ranging from 4 to 17 nm. We considered three combinations of surface terminations: top surface terminated by Mn and bottom surface by Te (Te–MnTe–Mn), both top and bottom surfaces by Te (Te–MnTe–Te), and both top and bottom surfaces by Mn (Mn–MnTe–Mn). We first take the Te–MnTe–Te slab as an example. Though top and bottom surface bands exhibit opposite polarization in Sy , they exhibit the same AHC as summarized by Figs. 1(b-c). Surface states have two branches distinguished by opposite orbital ( Lz ) textures (see Fig. 6). Two surface branches cross at Γ in the absence of SOC and open an anti-crossing gap due to SOC. Therefore, two bands exhibit opposite Berry curvature, as shown by the inset of Fig. 2(a). Consequently, the AHC ( σxy ) is negative when Fermi energy crosses only the upper branch (near 0.1 eV and above) and turns to a nearly positive constant ( ∼ 1 μS) after a sign change when shifting to the Fermi level (zero). The nearly constant region indicates that AHC is mainly contributed by the anti-crossing gap. It is natural that AHC is thickness-independent when the Fermi energy is above the bulk valence top. In addition, given that bulk samples exhibit AHC in the order of magnitude 10 −2
+
+S/cm [27], the surface AHC ( ∼ 1 μS) discussed here is equivalent to a 1000 nm sample if only bulk AHE exists, which is far thicker than those films reported in literature. In the asymmetric Te–MnTe–Mn slab [Fig. 2(b)], we find a similar trend of the thickness-independent AHC above EF . Notably, since the Mn-terminated surface state is submerged within the bulk state rather than crossing EF [(See supplementary materials (SM) Fig. S1 [44]], the magnitude of AHC ( ∼ 0.5 μS) is half of that in the Te–MnTe–Te slab. This quantitative halving demonstrates that the Te-terminated surfaces act as decoupled parallel transport channels, each contributing equally to the macroscopic AHC, as depicted in Fig. 1(c). Consistent with this picture, the Mn–MnTe–Mn slab yields a vanishing AHC above bulk bands at EF
+
+[Fig. 2(c)]. Next, we investigate the layer distribution of AHE by constructing a sufficiently thick Te–MnTe–Mn slab to decouple top and bottom surfaces and then projecting AHC onto each atomic layer at EF = 0 eV, as shown in Fig. 3(a). The total AHC originates predominantly from the bottom two unit cells (8 atomic layers) of the Te-terminated surface, while contributions from bulk and the Mn-terminated surface are negligible, consistent with our previous analysis. 4Te − MnTe − Te Te − MnTe − Mn Mn − MnTe − Mn 
+
+(a) (c) (b) 
+
+> 3.5 nm
+> 16.9 nm
+
+FIG. 2. Thickness and energy dependence of the intrinsic anomalous Hall conductance in MnTe slabs with different terminations. (a–c) σ2D  
+
+> xy
+
+(E) for slabs with (a) Te/Te, (b) Te/Mn, and (c) Mn/Mn terminations (top/bottom), for several thicknesses. The inset of (a) plots the surface band structure with projected Berry curvature Ω xy near Γ. ……   
+
+> ……
+> Top
+> (Mn−)
+> Bot
+> (Te−)
+> Layer index
+> (a) (b) (c)
+
+FIG. 3. (a) Layer-resolved AHC at EF in a Te–MnTe–Mn slab (Mn 19 Te 19 ). Purple and khaki points represent Mn and Te atomic layers, respectively. (b,c) Corresponding slab structures, N´ eel-order configuration and corresponding Berry curvature represented by the self-rotating wavepackets. In the dashed boxes, the Mn atoms with the same spin direction share the same local environment. Hence, (b) and (c) share the same bulk N´ eel order. Because they are symmetric to each other by a C2z rotation, two slabs exhibit the same AHE (σxy ). 
+
+V. SURFACE AHE AND BULK ALTERMAGNETIC ORDER 
+
+Despite the opposite Sy polarization, top and bottom surface bands exhibit the same AHE as discussed in Fig. 2a. Furthermore, we observed the same AHE sign between even and odd numbers of layers, different from the even-odd oscillation of AHE in topological antiferromagnets such as MnBi 2Te 4 [45]. It is intriguing to ask what determines the AHE polarity for a fixed surface condition in an altermagnet. The answer is the bulk altermagetic order. We will reveal a weak but crucial out-of-plane magnetization ( mz ) in both bulk and surface, and AHE ( σxy ) manifests this net magnetization. We can gain helpful insights by analyzing the bulk magnetic moments. Despite MnTe being nominally considered to have zero magnetization, it actually has a weak but nonvanishing out-of-plane magnetization, which is essential to generate AHE for both bulk and surface. Such a net magnetization is critical for magnetic switching of the Neel vector, similar to the case of Mn 3Sn-type chiral antiferromagnets. In bulk α-MnTe with major spin along the ±y axis, the magnetic moment exhibits an extra component along 
+
+z, which has both spin and orbital contributions, as schematically illustrated in Fig. 4. For the Mn atom, related spin moment Sz = 1 .1 × 10 −4 μB with a canting angle of 0.001371 ° and orbital moment Lz = 1.2 ×
+
+10 −6 μB with an canting angle 0.004143 °. Further, we identify a finite moment at Te atoms, which aligns purely along −z with Sz = −1.8 × 10 −4 μB and an orbital moment of Lz = −1.8 × 10 −5 μB , due to hybridization with Mn. It is rigorous for the Te moment to align to the z direction because a z → − z mirror plane crosses the Te atom in the crystal. The total magnetization (7 × 10 −5 μB per formula unit) agrees with the net magnetization ( ∼ 5 × 10 −5 μB ) reported in experiments [24, 27]. We highlight that the net mz is identical between the two spin sublattices, because the two sublattices are related by {C2z |τc/ 2} symmetry that preserves mz .Because of the intimate relation between AHC ( σxy ) and 5y
+
+x
+
+z
+
+# spin orbital 
+
+Mn 
+
+Te 
+
+FIG. 4. Illustration of the finite out-of-plane ( z) spin moment and orbital moment in the bulk calculated by DFT. Both Mn sublattices are canting along the same + z direction while all Te atoms exhibit net moments along −z. Dashed lines depict two cleaving planes to form Te-terminated surfaces with opposite surface spin sublattices. 
+
+mz , two sublattices also exhibit the same σxy . This behavior differs from conventional PT or τ T -symmetric antiferromagnets, where spin sublattices related by PT 
+
+or τ T symmetry carry opposite Berry curvature. When forming a Te-terminated surface, e.g., by cleaving the bulk from the dashed lines in Fig. 4, surfaces Te may inherit the bulk Te mz and exhibit the same AHE polarity regardless of the cleaving plane, i.e., different Mn polarization. In addition, our DFT calculations verify that surface Mn and Te exhibit nonzero mz , which is actually larger than the magnetization inside the bulk. We can further rationalize the surface AHE polarity from the surface symmetry. We conceive two slabs with opposite surface spin but the same bulk altermagnetic order [Fig. 3(b,c)]. These two slabs can be transformed into each other by a two-fold rotation ( C2z ), which forces two systems to exhibit the same σxy . Therefore, the bulk N´ eel order in MnTe determines surface AHE polarity for a fixed surface termination. 
+
+VI. EFFECTIVE MODEL FOR SURFACE STATES 
+
+To gain a deeper understanding of surface states and surface AHE, we construct an effective k · p model of MnTe surface states by fitting the energy dispersion and spin and orbital textures of DFT calculations. The symmetry construction of the effective model consists of two steps. In the first step, we neglect the effect of SOC and consider the constraints from the spin space group (SSG) [39–42], which allows for the spin and spatial symmetry operations to be considered independently. In the second step, we introduce SOC into the effective model. Without SOC, the bulk MnTe is described by the SSG P 63/−1m−1m−1c∞m1, generated by the symmetry operators, [ E∥C3z ], [ E∥Mx], [ E∥I ], [ T ∥ C2z τc/ 2], [ My ∥E], [C∞y ∥E], [C2z T ∥ E] and translational symmetry [44]. M Γ K M Γ K   
+
+> Energy (eV)
+> 0
+> −0.1
+> 0.1
+> (a) (b)
+> (c) (d)
+> <Lz>
+> <S y>2×<Sz>
+> 1
+> −1
+> 0
+> <p x>− <py>
+> Energy (eV)
+> 0
+> −0.1
+> 0.1
+
+FIG. 5. Comparison between band structures along 0 .15M– Γ–0.15K path for DFT calculated (solid) and effective model (dashed) bands, with the projection of (a) orbital hybridization ⟨px⟩−⟨ py ⟩ without SOC, (b) orbital polarization 
+
+⟨Lz ⟩, (c) spin polarization ⟨Sy ⟩ and (d) twice ⟨Sz ⟩. (b)-(d) are calculated with SOC. Grey background denotes bulk-like states. 
+
+Here we use the notation [ ˆA∥ ˆB] to label the symmetry operator in SSG with ˆA denoting a spin symmetry operation and ˆB denoting a spatial symmetry operation (here “spatial” refers to both the orbital and momentum 
+
+k). Time reversal T is an anti-unitary operator and includes a complex conjugate that flips both spin and momentum. ˆA can be different from ˆB for SSG operator. We note that the spin-only operations ( ˆB = E), exist due to the collinear magnetic order along the y direction. On the top surface, the symmetry group is reduced since any symmetry operators related to z-directional operation no longer exist, and we find the MnTe surface should be described by spin point group p131m∞m1, with the gen-erators [ E∥C3z ], [E∥Mx], [My ∥E], [C∞y ∥E], [C2z T ∥ E], in addition to in-plane translation symmetry. Using these symmetry operators, the effective Hamiltonian can be constructed as 
+
+HAF (k) = ( a0 + a2k2 + a4k4)τ0σ0 + a3(k3+ + k3
+
+> −
+
+)τz σ0
+
++ b2[( k2+ + k2
+
+> −
+
+)τx + i(k2 
+
+> −
+
+− k2+) τy ]σ0
+
++ b4[( k4+ + k4
+
+> −
+
+)τx + i(k4+ − k4
+
+> −
+
+) τy ]σ0 + mτ 0σy ,
+
+(4) where k± = kx + ik y , and τ and σ are for the orbital and spin degrees of freedom, respectively. The orbital basis for τ is chosen to be p± = px ± ip y . a0,2,3,4
+
+and b2,4 are material parameters independent of spin and m describes the exchange coupling strength between two spin sublattices. We have dropped spin-dependent kinetic terms (See SM [44] for more details). We consider the eigen-equation 
+
+HAF (k)Ψ( k) = EΨ( k) (5) 6and note that the y direction spin is a good quantum number as HAF (k) commutes with σy . Consequently, we can choose the eigen wavefunction as Ψs(k) = ϕs(k) ⊗ χs, (6) where s = ± labels spin up and down, χs is the spin eigenstate of σy , σy χs = sχ s, and ϕs is the orbital eigen wavefunction form for spin-χs sector, namely 
+
+HAF ,s (k)ϕs(k) = Eϕ s(k) (7) with 
+
+HAF ,s (k) = ( a0 + sm + a2k2 + a4k4) τ0
+
++ a3(k3+ + k3
+
+> −
+
+)τz + b2[( k2+ + k2
+
+> −
+
+)τx + i(k2 
+
+> −
+
+− k2+) τy ]+ b4[( k4+ + k4
+
+> −
+
+)τx + i(k4+ − k4
+
+> −
+
+) τy ].
+
+(8) The eigen-energies of HAF ,s (k) are given by 
+
+Es, ±(k) = a0 + sm + a2k2 + a4k4
+
+± √2
+
+q
+
+a23k6 + 2 b22k4 + 2 b24k8 + ( a23 + 4 b2b4)k6 cos(6 θ),
+
+(9) where we label two surface bands as ±. The two bands with higher energies (the spin-χ+ bands when choosing 
+
+m > 0 or the spin-χ− bands when choosing m < 0) can fit well with the surface band dispersion from the DFT calculations around Γ point ( k = 0) with the parameters listed in SM Table V [44], as shown in Fig. 5(a) and (b) (also see SM Fig. S2 for more details [44]). The other two branches of low-energy bands are buried in the bulk energy bands and cannot be resolved. In Eq.(9), we note that both the a3 term and the combination of the b2 and b4 terms break the full rotation and give rise to anisotropy in energy dispersion, as shown by the plot of constant energy contour in SM Fig. S2 [44]. The cos (6 θ) form in Eq.(9) indicates a six-fold rotational symmetry in the energy dispersion due to the combination of [ E∥C3z ] and [ C2z T ∥ E] in the SSG of MnTe surface. We note the a3 term involves τz while the b2 and b4 terms couple to τx and τy . Consequently, we would expect the a3 term to introduce the p± orbital polarization in the k space, which can be characterized by z-component of the orbital angular momentum 
+
+L(λ) 
+
+> z
+
+= ⟨τz ⟩λ = X
+
+> s=±
+
+|ϕ(λ)
+
+> p+,s
+
+|2 − | ϕ(λ)
+
+> p−,s
+
+|2 (10) with ϕ(λ) 
+
+> s
+
+= ( ϕ(λ)
+
+> p+,s
+
+, ϕ (λ)
+
+> p−,s
+
+)T and λ = ± labelling two surface bands, while the b2 and b4 terms introduce non-zero px,y orbital polarization, defined by 
+
+⟨px⟩λ = 12
+
+X
+
+> s=±
+
+|ϕ(λ) 
+
+> p+,s
+
++ ϕ(λ)
+
+> p−,s
+
+|2, (11) 
+
+⟨py ⟩λ = 12
+
+X
+
+> s=±
+
+|ϕ(λ) 
+
+> p+,s
+
+− ϕ(λ)
+
+> p−,s
+
+|2 = 1 − ⟨ px⟩λ. (12) A comparison of energy dispersion and p-orbital projection between the effective model and the DFT calculations is shown in Fig. 5(a) for px,y orbital projection. Next, we introduce SOC into the effective model. As SOC couples spin and orbitals, it reduces the symmetry group in bulk from SSG to magentic space group (MSG) 
+
+Cm ′c′m, with generators C2z τc/ 2, M xT , M y τc/ 2T , in which the symmetry operations act on both the spin and spatial degrees of freedom. At the surface, the absence of any out-of-plane crystal transformation further reduces the MSG to the group with a single MxT symmetry operator. In SM Sec.II.C.2, we list all possible symmetry-allowed momentum-independent terms, from which we can identify the relevant SOC terms as 
+
+HSOC = lz τz σz + ly τz σy , (13) by comparing the orbital and spin textures as discussed below. We note that the lz term only shifts the two spin-
+
+s = + bands and cannot open a gap, while the ly term opens a small gap ∼ 2 meV, as shown in SM Fig. S3. The ly term is substantial in inducing Berry curvature around Γ point. To see that, we also project HSOC into the spin-χs basis and up to the first order perturbation, we have 
+
+H(1) SOC ,s = sl y τz , (14) and the full Hamiltonian for the spin-χs band is given by 
+
+Hs = HAF ,s + H(1) SOC ,s 
+
+≈ (a0 + sm + a2k2)τ0 + a3(k3+ + k3
+
+> −
+
+)τz
+
++ b2[( k2+ + k2
+
+> −
+
+)τx + i(k2 
+
+> −
+
+− k2+) τy ] + sl y τz ,
+
+(15) up to k3 order. When choosing m > 0, the spin-χ+ bands have higher energy, so the surface state is determined by the effective model Hs=+ in Eq. (15). In contrast, for 
+
+m < 0, the spin-χ− bands describe the surface state with the effective model Hs=−. Thus, the surface bands can be generally described by 
+
+Hsurf = sign( m)ly τz + b2[( k2+ + k2
+
+> −
+
+)τx + i(k2 
+
+> −
+
+− k2+)τy ]+a3(k3+ + k3
+
+> −
+
+)τz + ( a0 + |m| + a2k2)τ0. (16) The Hamiltonian in Eq. (16) elucidates the connection between Berry curvature and orbital texture for surface states in MnTe. Consider two surface terminations within a single bulk magnetic domain, characterized by opposite magnetization directions, as shown schematically in Fig. 6(a). These two surface terminations are related by a two-fold rotation along the 
+
+z axis ( C2z ), which flips the momentum, k → − k. As discussed in SM Sec.II.E. [44], the representation matrix for C2z operator is given by DC2z = −iτ 0σz on the spin-orbital basis. By acting the C2z operator on the full Hamiltonian Eqs. (4) and (13) together (See SM Sec.II.E [44]), we find that the parameters m, l y , a 3 reverse their 7(c) w/o SOC (e) w/ SOC (d) w/ SOC   
+
+> 1
+> −1
+> 0
+> 0.1
+> −0.1
+> 0.0
+> 0.1
+> −0.1
+> 0.0
+> Lz
+> 𝜎 !" ,𝑆 #,𝐿 #
+> kx
+> ky
+> ky
+> kx
+> ky
+> ky
+> (a) Sublattice
+
++
+
++
+
+## C2z  
+
+> ≈
+> (b) w/ oSOC
+> 0.1
+> −0.1
+> 0.0
+> 0.1
+> −0.1
+> 0.0
+
+FIG. 6. Band structures and skyrmion-type orbital texture of surface states by the effective model. (a) The magnetic surface sublattice, its out-of-plane moment (spin Sz and orbital Lz ) and induced AHC σxy . (b) Band structure with the Lz projection in the absence of SOC. (c) Distribution of Lz in k-space without SOC where net Lz vanishes. (d) Band structure with Lz
+
+projection after introducing SOC. (e) Distribution of Lz with SOC where net Lz is positive. Bottom panels are the same as the top ones after transforming the system by C2z . The net Lz and σxy appear only after including SOC. Two opposite surface spin sublattices exhibit the same Lz and σxy because of the C2z symmetry. 
+
+signs whereas the parameters a0, a 2, a 4, b 4, b 4, l z remain invariant for two surface terminations in Fig. 6(a). Fig. 6(c) and 6(e) show the Lz orbital texture for the case without SOC ( ly = 0) and with SOC ( ly̸ = 0), respectively. The resultant dispersion with orbital p±
+
+polarization from the effective model in Fig. 6(b,d) is compared with DFT analysis in Fig. 5(b). Without SOC, the orbital polarization exhibits a three-fold angular dependence with alternating positive (red) and negative (blue) lobes in Fig. 6(c), reflecting the underlying C3z
+
+rotation symmetry. This Lz texture originates from the 
+
+a3 term in Eq. (16); because a3 flips its sign for two surface terminations, the resulting Lz orbital textures are inverted, as seen by comparing the top and bottom panels in Fig. 6(b,c). With SOC, the Lz orbital texture remains the same for a large k, whereas a strong Lz -polarization peak appears around Γ in Fig. 6(e), as compared to Fig. 6(c) for the no-SOC case. Two surface bands in Fig. 6(d) open a small gap at Γ, as shown in SM Fig. S3. Both the small gap and the strong Lz polarization come from the sign( m)ly τz term in Eq. (16). Although both m and 
+
+ly exhibit opposite signs for two surface terminations in Fig. 6(a), their product sign( m)ly remains the same, thus giving rise to the same sign of Lz polarization around Γ in the top and bottom panels of Fig. 6(e). Based on the above understanding of the Lz
+
+orbital texture, we next evaluate the Berry curvature distribution, which governs the intrinsic AHE observed in experiments [29]. In Hsurf , the b2 term defines a quadratic-band-touching dispersion [46], while the τz
+
+term opens a gap at Γ, whose magnitude depends on the parameter sign( m)lz . If we only keep the terms up to k2 order, the Berry curvature of Hsurf in Eq. (16) can be computed as Ωλ=± 
+
+> xy
+
+= sign( m)λ 16 ly b22k2
+
+(4 b22k4 + l2 
+
+> y
+
+)3/2 . (17) where the λ = ± denotes the two surface bands of 
+
+Hsurf . We note that the p-orbitals form a skyrmion-like texture around Γ, which is the origin of Berry curvature distribution (See SM Fig. S4 [44]). In this model, sign( m)lz determines the AHE polarity. We highlight that sign( m) refers to surface spin polarization ( ±Sy ) while ly , which couples the in-plane spin ( σy ) to the out-of-plane orbital ( τz ), is determined by the local crystal structure. Two surfaces that have opposite surface spin polarization but the same bulk N´ eel order [e.g., Fig. 3(b,c) or Fig. 6] will show opposite signs in both sign( m) and ly and thus present the same Berry curvature. This invariance explains why the sign of AHC is robust against which spin sublattice is exposed on the surface. On the other hand, two surfaces that have the same surface spin polarization but opposite bulk N´ eel order will show the same sign( m) but opposite ly and thus display opposite AHE. Therefore, the surface AHE polarity is determined by the bulk altermagnetic order rather than the surface polarization. Although the additional SOC term lz in Eq. (13) is not substantial for the energy gap between two surface bands and the corresponding AHE (one can confirm the AHC remains non-zero for lz = 0), it induces z-directional spin texture in the momentum space, as shown in Fig. 5(d) and SM Figs. S4(g,h) [44]. Since the y-directional exchange coupling |m| ∼ 0.77 eV is more than three times 
+
+lz ∼ 0.2 eV, the SOC lz term only induces z-directional spin texture perturbatively, while the y-directional spin due to magnetization dominates the surface bands, as 8shown in Fig. 5(c). As Lz polarization remains the same sign for both surface terminations, the spin polarization 
+
+Sz is also the same, as schematically illustrated in Fig. 4.  
+
+> VII. MORE REALISTIC SURFACES AND INTERFACES
+
+In the previous sections, our calculations relied on a Wannier-based tight-binding Hamiltonian, which assumes an idealized slab geometry. To capture the complexity of realistic experimental samples, we now incorporate the effects of the local chemical environment, including atomic relaxation, charge redistribution, and surface passivation, by constructing four distinct inter-face configurations. In bulk MnTe, each Mn (Te) atom forms chemical bonds with six neighboring Te (Mn) atoms, resulting in Mn 2+ and Te 2− charge states. The cleavage of the xy 
+
+surface creates dangling bonds that host metallic surface states with unpaired electrons, as illustrated in Fig. 7(a). Such polar surfaces are usually unstable and typically stabilize through mechanisms like surface reconstruction or passivation [47, 48]. Consistent with recent ARPES observations of unoccupied surface states [29], we focus on the Te-terminated top surface. In experimental transport devices, this surface is either exposed to air (likely oxidized) or protected by a capping layer. To model the uncapped/oxidized scenario, we in-troduce H atoms to saturate dangling bonds. This passivation pushes the surface state into the bulk bands [Fig. 7(b)], mimicking the suppression of metallic surface states by oxidation. By contrast, protective capping layers often employ chemically compatible tellurides [29]. These capping layers typically consist of polycrystalline Te chiral chains held together by weak van der Waals forces, minimizing structural disruption to the underlying MnTe. In our simulations, we model this interface by absorbing an additional Te atom (denoted Te ′) onto the Te-terminated surface. We compare two high-symmetry, (0,0) and (2/3,1/3), and adopt the energetically favored configuration (∆ E ∼ 0.085 eV) for subsequent calculations. In Fig. 7(c), the tellurium capping layer significantly modifies the surface band structure, which can result in a drastically different Berry curvature. For the bottom surface, we consider an InP(111) substrate. Experimentally, the InP surface is treated with a Te flux prior to MnTe growth, ensuring that Te atoms bond with the topmost In layer. This termination suppresses P-derived surface states and stabilizes the MnTe/InP heterostructure. We analyze the electronic structure of this interface using a local electron-counting rule: each Mn atom donates two electrons to the adjacent Te layers (sharing 13 electron per bond with 6 neighbors), while each In atom in bulk InP donates three electrons to four nearest-neighbor P atoms (sharing 34 electron per ……                         
+
+> ……
+> ……
+> ……
+> Te’
+> H
+> In
+> P
+> 0𝜇𝑆
+> 0.7 𝜇𝑆
+> −8.4 𝜇𝑆
+> 2.2 𝜇𝑆
+> (a)
+> (b)
+> (c)
+> (d)
+> (e)
+> (f)
+> (g)
+> (h)
+> FIG. 7. Interface chemistry and its impact on the AHE. (a– d) Band structures for (a) truncated-bulk Te termination, (b) H-passivated Te termination, (c) Te-capped Te termination, and (d) MnTe/InP interface. The projected surface/interface wavefunction weight is highlighted; the grey background indicates bulk-like states. The grey horizontal line marks the Fermi level used for the AHC calculations. (e–h) Corresponding atomic structures (left) and layer-projected AHC contribution σxy (l) (right). The ellipsis denotes interior layers not shown. Red/blue arrows indicate the N´ eel-order configuration, and the annotated value indicates the summed surface/interface contribution σSxy .
+
+9bond with 4 neighbors). At the Te–In interface, the charge mismatch results in an excess of approximately 1/4 electron per interfacial unit. This charge imbalance manifests as a partially filled, hole-like interfacial band, as shown in Fig. 7(d). Next, we calculate the layer-resolved AHC for the four interface models, as presented in Fig. 7(e-h), where the Fermi level (grey line) is aligned following the analysis in Section III. Consistent with the idealized slab results in Fig. 3, AHC is strongly localized within the first few atomic layers near the surface or interface, while the deep interior region contributes only negligible signals. This confirms that σSxy is a well-defined interfacial property, tunable through modification of the local chemical environment. For the truncated-bulk Te-termination [Fig. 7(e)], the metallic dangling-bond states produce σSxy = 2.2 μS, with the dominant contribution from the outermost MnTe bilayer. In contrast, H passivation eliminates the dangling-bond state by pushing them into the bulk bands [Fig. 7(b)], thereby suppressing the surface Berry curvature and resulting in a near-zero σSxy [Fig. 7(f)]. This comparison highlights that a metallic surface/interface band near the Fermi level is essential for generating an appreciable surface AHE in MnTe. The Te-capped termination exhibits the most pro-nounced modification [Fig. 7(g)]. Hybridization between the top Te layer and the MnTe surface reconstructs the electronic structure near EF , redistributing the Berry curvature over the outermost layers. This leads to a large and sign-reversed surface contribution σSxy =
+
+−8.4 μS. This sensitivity to capping chemistry provides a microscopic explanation for the experimental observation that nominally similar films can exhibit opposite Hall hysteresis loops when protected by a telluride layer. At the MnTe/InP interface [Fig. 7(h)], the hole-like interfacial band discussed above gives rise to a positive 
+
+σSxy , again predominantly localized within the first few layers of MnTe. These results indicate that the measured Hall signal in MnTe heterostructures can be understood as asuperposition of two surface/interface contributions, whose signs and magnitudes are set by termination and local chemistry. Specifically, in an uncapped thin film grown on an InP substrate, the net AHC is dominated by the positive contribution from the bottom interface. When the top surface is Te-capped, the two interfaces contribute with opposite signs, leading to complicated hysteresis loops. Depending on their relative magnitudes, the net AHC can be significantly reduced or even reversed, reconciling the diverse transport behaviors reported in the literature. In addition, we focus on the intrinsic AHE from the clean surface band structure in this present work. Extrinsic effects like skew scattering or side jump due to disorders [49] may coexist with intrinsic AHE in experiments. Nevertheless, extrinsic AHE will also respect the same surface symmetry as the intrinsic effect and thus follow the same influence from the bulk magnetic order.  
+
+> VIII. SUMMARY
+
+In summary, we demonstrate that emergent surface states generate a large AHE driven by their strong Berry curvature near the Fermi level, rationalizing the unusual AHE and resistivity observed in MnTe thin films. Though it is sensitive to the local surface chemistry condition, the surface AHE has a deep bulk origin. Building upon the deterministic relationship between the surface AHC and the bulk altermagnetic order, we propose utilizing the sign of the surface AHE as an unambiguous electrical probe for the bulk N´ eel order. These findings not only provide a microscopic resolution to the transport signals reported experimentally but also establish surface and interface engineering as a critical avenue for tailoring altermagnetic transport phenomena in future spintronic devices.  
+
+> IX. ACKNOWLEDGMENTS
+
+We thank the fruitful discussion with Cuizu Chang, Lingjie Zhou, Chunhui Du, Zijie Yan, Hongtao Rong, Pu Xiao, Kamal Das, and Diana Golovanova. B.Y. and C.X.L. acknowledge the National Science Foundation through the Penn State Materials Research Science and Engineering Center (MRSEC) DMR 2011839. B.Y. acknowledges the financial support by the Israel Science Foundation (ISF No. 2974/23).                            
+
+> [1] L. ˇSmejkal, R. Gonz´ alez-Hern´ andez, T. Jungwirth, and J. Sinova, Crystal time-reversal symmetry breaking and spontaneous hall effect in collinear antiferromagnets, Science advances 6, eaaz8809 (2020). [2] L.-D. Yuan, Z. Wang, J.-W. Luo, E. I. Rashba, and A. Zunger, Giant momentum-dependent spin splitting in centrosymmetric low-zantiferromagnets, Phys. Rev. B
+> 102 , 014422 (2020). [3] H.-Y. Ma, M. Hu, N. Li, J. Liu, W. Yao, J.-F. Jia, and J. Liu, Multifunctional antiferromagnetic materials with giant piezomagnetism and noncollinear spin current, Nature communications 12 , 2846 (2021). [4] L. ˇSmejkal, J. Sinova, and T. Jungwirth, Beyond conventional ferromagnetism and antiferromagnetism: A phase with nonrelativistic spin and crystal rotation symmetry, Physical Review X 12 , 031042 (2022).
+
+10 
+
+[5] L. ˇSmejkal, J. Sinova, and T. Jungwirth, Emerging research landscape of altermagnetism, Physical Review X 12 , 040501 (2022). [6] C. Song, H. Bai, Z. Zhou, L. Han, H. Reichlova, J. H. Dil, J. Liu, X. Chen, and F. Pan, Altermagnets as a new class of functional materials, Nature Reviews Materials , 1 (2025). [7] O. Amin, A. Dal Din, E. Golias, Y. Niu, A. Zakharov, S. Fromage, C. Fields, S. Heywood, R. Cousins, F. Maccherozzi, et al. , Nanoscale imaging and control of altermagnetism in mnte, Nature 636 , 348 (2024). [8] I. Mazin (The PRX Editors), Editorial: Altermagnetism—a new punch line of fundamental magnetism, Phys. Rev. X 12 , 040002 (2022). [9] C. Wu, K. Sun, E. Fradkin, and S.-C. Zhang, Fermi liquid instabilities in the spin channel, Phys. Rev. B 75 , 115103 (2007). [10] Q. Liu, X. Dai, and S. Bl¨ ugel, Different facets of unconventional magnetism, Nature Physics 21 , 329 (2025). [11] S. Nakatsuji, N. Kiyohara, and T. Higo, Large anomalous hall effect in a non-collinear antiferromagnet at room temperature, Nature 527 , 212 (2015). [12] A. K. Nayak, J. E. Fischer, Y. Sun, B. Yan, J. Karel, A. C. Komarek, C. Shekhar, N. Kumar, W. Schnelle, J. K¨ ubler, et al. , Large anomalous hall effect driven by a nonvanishing berry curvature in the noncolinear antiferromagnet mn3ge, Science advances 2, e1501870 (2016). [13] J. Zelezny, Y. Zhang, C. Felser, and B. Yan, Spin-polarized current in noncollinear antiferromagnets, Phys. Rev. Lett. 119 , 187204 (2017). [14] Y. Zhang, Y. Sun, H. Yang, J. ˇZelezn´ y, S. P. P. Parkin, C. Felser, and B. Yan, Strong anisotropic anomalous hall effect and spin hall effect in the chiral antiferromagnetic compounds mn 3x (x = Ge, sn, ga, ir, rh, and pt), Phys. Rev. B 95 , 075128 (2017). [15] S. Lee, S. Lee, S. Jung, J. Jung, D. Kim, Y. Lee, B. Seok, J. Kim, B. G. Park, L. ˇSmejkal, C.-J. Kang, and C. Kim, Broken kramers degeneracy in altermagnetic mnte, Phys. Rev. Lett. 132 , 036702 (2024). [16] O. Fedchenko, J. Min´ ar, A. Akashdeep, S. W. D’Souza, D. Vasilyev, O. Tkach, L. Odenbreit, Q. Nguyen, D. Kutnyakhov, N. Wind, et al. , Observation of time-reversal symmetry breaking in the band structure of altermagnetic ruo2, Science advances 10 , eadj4883 (2024). [17] J. Krempask` y, L. ˇSmejkal, S. D’souza, M. Hajlaoui, G. Springholz, K. Uhl´ ıˇ rov´ a, F. Alarab, P. Constantinou, V. Strocov, D. Usanov, et al. , Altermagnetic lifting of kramers spin degeneracy, Nature 626 , 517 (2024). [18] Y.-P. Zhu, X. Chen, X.-R. Liu, Y. Liu, P. Liu, H. Zha, G. Qu, C. Hong, J. Li, Z. Jiang, et al. ,Observation of plaid-like spin splitting in a noncoplanar antiferromagnet, Nature 626 , 523 (2024). [19] S. Reimers, L. Odenbreit, L. ˇSmejkal, V. N. Strocov, P. Constantinou, A. B. Hellenes, R. Jaeschke Ubiergo, W. H. Campos, V. K. Bharadwaj, A. Chakraborty, et al. ,Direct observation of altermagnetic band splitting in crsb thin films, Nature Communications 15 , 2116 (2024). [20] F. Zhang, X. Cheng, Z. Yin, C. Liu, L. Deng, Y. Qiao, Z. Shi, S. Zhang, J. Lin, Z. Liu, et al. , Crystal-symmetry-paired spin–valley locking in a layered room-temperature metallic altermagnet candidate, Nature Physics , 1(2025). [21] R. Gonzalez Betancourt, J. Zub´ aˇ c, R. Gonzalez-Hernandez, K. Geishendorf, Z. ˇSob´ aˇ n, G. Springholz, K. Olejn´ ık, L. ˇSmejkal, J. Sinova, T. Jungwirth, 
+
+et al. , Spontaneous anomalous hall effect arising from an unconventional compensated magnetic phase in asemiconductor, Physical Review Letters 130 , 036702 (2023). [22] Y. Zhao, Z. Mao, and B. Yan, Nonlinear transport signatures of hidden symmetry breaking in a weyl altermagnet, Phys. Rev. B 112 , 165127 (2025). [23] S. Mali, Y. Zhao, Y. Wang, S. Sarker, Y. Chen, Z. Li, J. Zhu, Y. Liu, V. Gopalan, B. Yan, and Z. Mao, Probing hidden symmetry and altermagnetism with sub-picometer sensitivity via nonlinear transport, arXiv:2510.18144 (2025). [24] K. Kluczyk, K. Gas, M. Grzybowski, P. Skupinski, M. Borysiewicz, T. Fas, J. Suffczyski, J. Domagala, K. Grasza, A. Mycielski, et al. , Coexistence of anomalous hall effect and weak magnetization in a nominally collinear antiferromagnet mnte, Physical Review B 110 ,155201 (2024). [25] M. Chilcote, A. R. Mazza, Q. Lu, I. Gray, Q. Tian, Q. Deng, D. Moseley, A.-H. Chen, J. Lapano, J. S. Gardner, et al. , Stoichiometry-induced ferromagnetism in altermagnetic candidate mnte, Advanced Functional Materials 34 , 2405829 (2024). [26] S. Bey, S. S. Fields, N. G. Combs, B. G. Markus, D. Beke, J. Wang, A. V. Ievlev, M. Zhukovskyi, T. Orlova, L. Forro, et al. , Unexpected tuning of the anomalous hall effect in altermagnetic mnte thin films, arXiv preprint arXiv:2409.04567 (2024). [27] Z. Liu, S. Xu, J. M. DeStefano, E. Rosenberg, T. Zhang, J. Li, M. B. Stone, F. Ye, R. Cong, S. Pan, et al. , Strain-tunable anomalous hall effect in hexagonal mnte, arXiv preprint arXiv:2509.19582 (2025). [28] S. Smolenski, N. Mao, D. Zhang, Y. Guo, A. Shawon, M. Xu, E. Downey, T. Musall, M. Yi, W. Xie, 
+
+et al. , Strain-tunability of the multipolar berry curvature in altermagnet mnte, arXiv preprint arXiv:2509.21481 (2025). [29] L.-J. Zhou, Z.-J. Yan, H. Rong, Y. Zhao, P. Xiao, L.-K. Lai, Z. Xi, K. Wang, T. Adhikari, G. P. Tiwari, Z. Lin, P. Manue, F. Orlandi, D. Khalyavin, A. J. Grutter, C.-X. Liu, B. Yan, and C.-Z. Chang, Surface-state-driven anomalous hall effect in altermagnetic mnte films, arXiv:2602.09363 . [30] T. Osumi, S. Souma, T. Aoyama, K. Yamauchi, A. Honma, K. Nakayama, T. Takahashi, K. Ohgushi, and T. Sato, Observation of a giant band splitting in altermagnetic mnte, Phys. Rev. B 109 , 115102 (2024). [31] M. Hajlaoui, S. Wilfred D’Souza, L. ˇSmejkal, D. Krieg-ner, G. Krizman, T. Zakusylo, N. Olszowska, O. Caha, J. Michaliˇ cka, J. S´ anchez-Barriga, et al. , Temperature dependence of relativistic valence band splitting induced by an altermagnetic phase transition, Advanced Materi-als 36 , 2314076 (2024). [32] G. Kresse and J. Furthm¨ uller, Efficient iterative schemes for ab initio total-energy calculations using a plane-wave basis set, Physical review B 54 , 11169 (1996). [33] G. Kresse and D. Joubert, From ultrasoft pseudopoten-tials to the projector augmented-wave method, Physical review b 59 , 1758 (1999). 11 
+
+[34] J. P. Perdew, K. Burke, and M. Ernzerhof, Generalized gradient approximation made simple, Physical review letters 77 , 3865 (1996). [35] S. L. Dudarev, G. A. Botton, S. Y. Savrasov, C. Humphreys, and A. P. Sutton, Electron-energy-loss spectra and the structural stability of nickel oxide: An lsda+ u study, Physical Review B 57 , 1505 (1998). [36] I. Souza, N. Marzari, and D. Vanderbilt, Maximally localized wannier functions for entangled energy bands, Physical Review B 65 , 035109 (2001). [37] N. Varnava and D. Vanderbilt, Surfaces of axion insulators, Phys. Rev. B 98 , 245117 (2018). [38] Y. Zhao, Y. Jiang, H. Bae, K. Das, Y. Li, C.-X. Liu, and B. Yan, Hybrid-order topology in unconventional magnets of eu-based zintl compounds with surface-dependent quantum geometry, Phys. Rev. B 110 , 205111 (2024). [39] D. B. Litvin, Spin point groups, Foundations of Crystallography 33 , 279 (1977). [40] X. Chen, J. Ren, Y. Zhu, Y. Yu, A. Zhang, P. Liu, J. Li, Y. Liu, C. Li, and Q. Liu, Enumeration and representation theory of spin space groups, Physical Review X 14 , 031038 (2024). [41] Y. Jiang, Z. Song, T. Zhu, Z. Fang, H. Weng, Z.-X. Liu, J. Yang, and C. Fang, Enumeration of spin-space groups: Toward a complete description of symmetries of magnetic orders, Physical Review X 14 , 031039 (2024). [42] Z. Xiao, J. Zhao, Y. Li, R. Shindou, and Z.-D. Song, Spin space groups: Full classification and applications, Physical Review X 14 , 031037 (2024). [43] K. Das, Y. Zhao, and B. Yan, Surface-dominated quantum-metric-induced nonlinear transport in the layered antiferromagnet crsbr, Nano letters 25 , 9189 (2025). [44] Supplementary materials, including model hamiltonian and additional calculation results, arXiv. [45] J. Li, Y. Li, S. Du, Z. Wang, B.-L. Gu, S.-C. Zhang, K. He, W. Duan, and Y. Xu, Intrinsic magnetic topological insulators in van der waals layered mnbi2te4-family materials, Science advances 5, eaaw5685 (2019). [46] K. Sun, H. Yao, E. Fradkin, and S. A. Kivelson, Topo-logical insulators and nematic phases from spontaneous symmetry breaking¡? format?¿ in 2d fermi systems with a quadratic band crossing, Physical review letters 103 ,046811 (2009). [47] P. Tasker, The stability of ionic crystal surfaces, Journal of Physics C: Solid State Physics 12 , 4977 (1979). [48] C. Noguera, Polar oxide surfaces, Journal of Physics: Condensed Matter 12 , R367 (2000). [49] N. Nagaosa, J. Sinova, S. Onoda, A. H. MacDonald, and N. P. Ong, Anomalous hall effect, Rev. Mod. Phys. 82 ,1539 (2010).

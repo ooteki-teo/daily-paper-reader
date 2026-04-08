@@ -1,0 +1,22 @@
+{
+  "version": 2,
+  "extractor": "pdffigures2",
+  "figures": [
+    {
+      "url": "assets/figures/arxiv/2603.15225v1/fig-001.webp",
+      "caption": "FIG. 2. Long-range electronic variation. (a,b) Constant-current STM topographs acquired in the same field of view at negative and positive sample bias, respectively. Setpoints: (a) Vs = −0.8 V, Is = 400 pA; (b) Vs = +1.5 V, Is = 200 pA. (c) dI/dV map at −0.5 V from a 64 × 64 spectroscopy grid acquired over the same region as (a,b). (d) Spatially averaged dI/dV spectra for the 10 bins defined by their value at sample bias −0.5 V. Spectra are smoothed along the energy axis using a 32 mV moving-average (boxcar) filter. (e) Zoom-in of (d) over the range in the dashed brown box, showing a small in-gap state between 0 and 0.6 V. Spectra were slightly shifted upward to account for a small negative dI/dV contribution. (f) Angle-averaged cross-correlation coefficient α(r) between the dI/dV map at −0.5 V [panel (c)] and the low-pass-filtered topographs at Vs = −0.8 V (blue) and Vs = +1.5 V (orange), as well as between the two low-pass-filtered topographs (green). Spectroscopy grid setpoint: Vs = −1.3 V, Is = 200 pA, with lock-in modulation (zero-to-peak) Vexc = 6 mV.",
+      "page": 3,
+      "index": 1,
+      "width": 1058,
+      "height": 699
+    },
+    {
+      "url": "assets/figures/arxiv/2603.15225v1/fig-002.webp",
+      "caption": "FIG. 3. Incommensurate charge modulation. (a,b) FT of the topographs shown in Fig. 2(a,b), respectively. At negative bias Vs = −0.8 V, we observe only the Bragg peaks (green circles). At positive bias Vs = +1.5 V, additional broad peaks (QCM, denoted by the dashed blue circle) appear along the Bragg-peak directions q1, q2 and q3, consistent with a disordered charge modulation. We apply a Hanning window before the FT to reduce edge artifacts. (c) Left: linecut along q2 of (a) with Vs = −0.8 V. Right: linecut along q2 of (b) with Vs = +1.5 V. Both are averaged over a 10-pixel-wide strip. Shaded areas show the fits to a sum of Lorentzians for the central q = 0 peak (gray) and the QCM peak (blue) that appears only for the positive-bias linecut. Green boxes show a zoomed-in view around the Bragg peak positions, which were determined by additional Lorentzian components. The horizontal axis is normalized by |G| = QBragg. (d) High-pass-filtered topograph of Fig. 2(b) with long-range variation removed to enhance the visibility of the charge modulation at Vs = 1.5 V. (e) 2D autocorrelation of the filtered topograph in (d). (f) Linecuts of the autocorrelation function α along the three directions marked by the dashed lines in (e), averaged over a 10-pixel-wide strip. The profiles illustrate the rapid decay of α from the center, indicating a short correlation length of the charge modulation.",
+      "page": 4,
+      "index": 2,
+      "width": 1040,
+      "height": 731
+    }
+  ]
+}

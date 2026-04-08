@@ -1,0 +1,883 @@
+Title: Non-Collinear and Non-Coplanar Magnetic Orders in 1/1 Periodic Approximant to the Icosahedral Quasicrystal
+
+URL Source: https://arxiv.org/pdf/2603.10716v1
+
+Published Time: Thu, 12 Mar 2026 01:09:52 GMT
+
+Number of Pages: 15
+
+Markdown Content:
+> Journal of the Physical Society of Japan FULL PAPERS
+
+## Non-Collinear and Non-Coplanar Magnetic Orders in 1 /1 Periodic Approximant to the Icosahedral Quasicrystal 
+
+Shinji Watanabe ∗ and Tatsuya Iwasaki 
+
+Department of Basic Sciences, Kyushu Institute of Technology, Kitakyushu, Fukuoka 804-8550, Japan 
+
+Ground-state properties of rare-earth based 1 /1 periodic approximants of icosahedral quasicrystal are clarified the-oretically on the basis of an e ff ective model for magnetism taking into account uniaxial anisotropy arising from crys-talline electric field. By performing numerically-exact calculation on the 1 /1 approximant crystal with a lattice constant 
+
+a = 14 .725 Å, we have determined the ground-state phase diagram for ferromagnetic interactions. The result shows that eight kinds of noncollinear and noncoplanar magnetic structures are stabilized, whose magnetic space groups are identified as IPm′ ¯3′, C2′/m′ and R¯3. We have clarified the degeneracy of each ground state, which is expected to be reflected in the numbers of the domains. By analyzing each state, the magnetic as well as topological properties are revealed. Our results are shown to explain the measured magnetic structures in the 1 /1 approximants and the e ff ective model is discussed to be useful for understanding the magnetic structures and their topological properties in broad range of rare-earth based 1 /1 approximants. 
+
+1. Introduction 
+
+Quasicrystals (QCs) have no lattice periodicity but possess long-range structural order. Since the discovery of QC, 1) un-derstanding of lattice structures has proceeded. 2, 3) However, the electronic property is far from complete understanding be-cause Bloch theorem based on translational invariance can no longer be applied. One of the unresolved issues on QCs has been whether magnetic long-range order is realized in three-dimensional QCs. To explore magnetic long-range order in QCs, exper-imental e ff orts have been devoted. 4–7) There exist periodic crystals with local atomic configuration common to that in QC, which is referred to as approximant crystal (AC). Rare-earth based QCs and ACs have attracted much interest as a new research field of the strongly correlated electron system, 8) 
+
+which o ff er promising platform to search for the magnetic long-range order. A class of the rare-earth based QCs and ACs is composed of the Tsai-type cluster, which consists of concentric shell structures of atoms as the cluster center [Fig. 1(a)], the do-decahedron [Fig. 1(b)], the icosahedron [Fig. 1(c)], the icosi-dodecahedron [Fig. 1(d)], and the defect rhombic triaconta-hedron [Fig. 1(e)]. The rare-earth atoms are located at 12 ver-tices of the icosahedron [see Fig. 1(c)]. The 4f electrons at the rare-earth atoms are responsible for the magnetism. In the 1 /1AC, there are two icosahedrons in the (expanded) unit cell of the body-center-cubic (bcc) lattice which is illustrated as the frame box in Figs. 1(a)-1(e). In the rare-earth based 1 /1 ACs, magnetic long-range or-ders have been observed by bulk measurements such as the specific heat and the magnetic susceptibility. 9) The antiferro-magnetic (AFM) order has been observed in the 1 /1 AC Cd 6R(R =Tb, Y, Pr, Nd, Sm, Gd, Tb, Dy, Ho, Er, Tm, Yb, and Lu)  
+
+> 10, 11)
+
+and in the 1 /1 AC Au-Al-R (R =Gd and Tb). 12, 13) The ferromagnetic (FM) order has been observed in the 1 /1 AC Au-SM-R (SM =Si, Ge, and Al; R =Gd, Tb, Dy, and Ho). 14–17) 
+
+Recently, ferromagnetic (FM) long-rage order has been discovered in QC Au 65 Ga 20 R15 (R =Gd and Tb) 18) and Au xGa 85 −xDy 15 (x = 62-68). 19) Very recently, AFM long-range order has been discovered in QC Au 56 In 28 .5Eu 15 .5.20) 
+
+These findings have attracted great interest. Among the rare-earth-based ACs, magnetic structures have recently been identified by neutron measurements in 1 /1 ACs Au 72 Al 14 Tb 14 ,21) Au 70 Si 17 Tb 13 ,22) Au-Si-R (R =Tb, Ho), 23) 
+
+and Au 65 Ga 21 Tb 14 ,24) where the non-collinear and non-coplanar magnetic structures have been revealed. In the 1 /1ACs Au 72 Al 14 Tb 14 21) and Au 65 Ga 21 Tb 14 ,24) the antiferromag-netic distribution of the magnetic states on the icosahedrons at the center and the corner of the unit cell is realized, while in the 1 /1 ACs Au 70 Si 17 Tb 13 22) and Au-Si-R (R =Tb, Ho) 23) 
+
+the ferrimagnetic distribution is realized. In the former, the total magnetization per the icosahedron is zero while in the latter, the total magnetization per the icosahedron is not zero. In these materials, the positive Curie-Weiss temperature was observed in the temperature dependence of the inverse of the magnetic susceptibility. This indicates the FM interaction works between the magnetic moments between the Tb (Ho) 
+
+(b) (c) (d) (e) (a) (f) 
+
+xyz
+
+q J      
+
+> Fig. 1. (Color online) Tsai-type cluster of the Au-SM-Tb consists of (a) cluster center, (b) dodecahedron, (c) icosahedron, (d) icosidodecahedron, and (e) defect rhombic triacontahedron with Au (yellow), Au /SM (green), and Tb (gray). The frame box is the unit cell of the (expanded) unit cell of the 1 /1 AC Au-SM-Tb. (f) The local configuration of atoms surrounding the Tb atom in the Tsai-type cluster. The angle θis defined between the magnetic easy axis
+> Jfor the CEF ground state and the pseudo 5-fold axis ( zaxis). 1
+> arXiv:2603.10716v1 [cond-mat.str-el] 11 Mar 2026 J. Phys. Soc. Jpn. FULL PAPERS
+
+sites. Theoretical studies on magnetism of QCs and ACs have been stimulated by these experimental observations. 25–44) 
+
+To understand the magnetism in Gd- and Eu-based ACs where the e ff ect of the crystalline electric field (CEF) is considered to be irrelevant, the model calculations were performed. 35, 42, 43) Recently, Monte Carlo simulation of the ferromagnetic transition in icosahedral QC has been per-formed, 44) which has attracted much attention. As for the rare-earth-based ACs except for Gd and Eu where the CEF is e ff ective, to explain the measured magnetic structures as well as to predict new magnetic structures for future measurements, theoretical study is highly desired. As a first step of analysis of the strongly correlated electron state, magnetic anisotropy arising from the CEF at the rare-earth site is necessary to be clarified. However, the CEF in the rare-earth based icosahedral QCs and ACs has remained obscure because the well established CEF theory based on the crys-tallographic point group cannot be applied to the QC and AC owing to the five-fold symmetry around the rare-earth atom [see Fig. 1(f)]. Recently, the experimental analyses on the CEF in the rare-earth based 1 /1 ACs have been reported on Zn 85 .5Sc 11 Tm 3.5,45) Cd 6Tb, 46) and Au 70 Si 17 Tb 13 .21) 
+
+Theoretically, lack of the CEF theory under the five-fold rotation symmetry has prevented us from understanding the magnetism in the rare-earth based QCs and ACs, so far. A phenomenological model calculation for the magnetism was performed by assuming the magnetic anisotropy arising from the CEF at the rare-earth site in the 1 /1 AC. 32) 
+
+Recently, the theory of the CEF in the QC and AC has been developed on the basis of the point charge model. 37) This has made it possible to analyze the CEF in the rare-earth based QC and AC microscopically. Then, the CEF in the Au-SM-Tb QC and AC has been analyzed theoretically. 38, 39) Interest-ingly, it has been shown that the magnetic easy axis for the CEF ground state at the Tb site is lying in the mirror plane, as illustrated in Fig 1(f). Namely, in the local coordinate, the 
+
+yz plane is the mirror plane, where the angle θ is defined between the magnetic easy axis J for the CEF ground state and the pseudo 5-fold axis ( z axis). It has been theoretically shown that as the ratio of the valences of the screened ligand ions α ≡ ZSM /ZAu increases, the magnetic easy axis, i.e., J
+
+in Fig 1(f), rotates to the clockwise direction in the yz plane and finally approaches the z axis, i.e., the pseudo five-fold axis. 38, 39) Here, ZSM and ZAu are the valences of the SM and Au ions respectively. It is noted that the analysis of the CEF in the Tb-based 1 /1AC 38) was performed on the basis of the atomic coordinate of the 1 /1 AC Au 70 Si 17 Tb 13 ,22) where the existence ratio of the atoms at the cluster center shown in Fig. 1(a) is low (less than 23% 22) ). Hence, the atoms at the cluster center were ignored as a first step of analysis in Ref. 38, as shown in Fig. 1(f). By taking into account the uniaxial anisotropy arising from the CEF, the e ff ective model was constructed, which will be explicitly explained in the following section II as Eq. (1). Then, by numerical calculations, the ground state phase di-agram of the e ff ective model (1) on the icosahedron was de-termined for the FM interaction 38) and the antiferromagnetic (AF) interaction. 39) 
+
+In refs. 38 and 39, the e ff ective model was applied to the 1/1 AC and the ground states were also discussed. Namely, the magnetic ground state on single icosahedron was obtained by performing the numerically-exact calculation for the FM in-teraction 38) and the AFM interaction. 39) Then, by comparing which energy is lower, the uniform distribution of the mag-netic states on the icosahedrons located at the center and cor-ner of the bcc unit cell of the 1 /1 AC, or the antiferromagnetic distribution, the ground state phase diagram was discussed in refs. 38 and 39. In this study, we determine the ground-state phase diagram of the e ff ective model in the 1 /1 AC with the uniaxial mag-netic anisotropy arising from the CEF reported in Refs. 38 and 39 by performing the numerically-exact calculation with-out assuming the magnetic state on the icosahedron. We show that eight kinds of noncollinear and noncoplanar magnetic structures are stabilized in the ground-state phase diagram for the FM interactions, for each of which we identify magnetic space group and degeneracy. The results explain the whirling-anti-whirling order observed in the 1 /1 AC Au 72 Al 14 Tb 14 21) 
+
+and the uniform non-collinear ferrimagnetic order observed in the 1 /1 AC Au 70 Si 17 Tb 13 .22) Moreover, we also find the other types of the non-collinear and non-coplanar magnetic structures. We clarify the property of each magnetic ground state by revealing not only the magnetic structure but also the topological character. The organization of this paper is as follows. In section II, we introduce the e ff ective model for magnetism in the rare-earth based 1 /1 AC. In section III, the results of the numeri-cal calculation are presented. In section IV, the discussion is given. In section V, we summarize the paper. 
+
+2. Eff ective model 
+
+We consider the e ff ective model taking into account the magnetic anisotropy arising from the CEF 39) as 
+
+H = −
+
+∑ 
+
+> 〈i,j〉
+
+Ji j ˆJi · ˆJ j, (1) where ˆ Ji is the unit vector operator parallel or anti-parallel to the magnetic easy axis. 21) The interaction Ji j is taken as the nearest-neighbor (N.N.) interaction J1 and the next-nearest neighbor (N.N.N.) interaction J2 not only for the intra icosa-hedron but also for the inter icosahedron. In this study, we employ the lattice structure of the rare-earth atom in the 1 /1AC identified experimentally in Au 70 Si 17 Tb 13 .22) The crystal structure is cubic (space group No. 204, Im ¯3, T 5 
+
+> h
+
+). The interaction Ji j set in this study is explained in Fig. 2 where the bonds for J1 are illustrated as bold solid lines and the bonds for J2 are illustrated as bold dashed lines each color of which is noted in ( ) below. As for the intra icosahedron interaction, J1 is set for the 5 bonds for each Tb site with the bond length 0 .374 a (1 bond denoted by yellow line) and 0.378 a (4 bonds denoted by blue lines) and J2 is set for the 5 bonds for each Tb site with the bond length 0 .610 a (4 bonds denoted by yellow dashed lines) and 0 .612 a (1 bond denoted by purple dashed line). Here, a is the lattice constant of the 1 /1AC [see Fig. 2(a)]. As for the inter icosahedron interaction, 
+
+J1 is set for the 5 bonds for each Tb site with the bond length 0.368 a (4 bonds denoted by light blue lines) and 0 .388 a (1 bond denoted by light blue lines) and J2 is set for the 7 bonds with the bond length 0 .528 a (2 bonds denoted by black dashed lines), 0 .530 a (4 bonds denoted by orange dashed lines), and 0.539 a (1 bond denoted by green dashed line) [see Fig. 2(b)].         
+
+> 2J. Phys. Soc. Jpn. FULL PAPERS
+> a
+> J1
+> J2
+> J1
+> J2
+> xyz
+> (a) (b)
+> Fig. 2. (Color online) The nearest-neighbor (N.N.) interactions J1(solid line) and next-nearest-neighbor (N.N.N.) interactions J2(dashed line) for (a) the intra icosahedron and (b) the inter icosahedron are illustrated. In (b), the frame box represents the unit cell of the bcc lattice of the 1 /1 AC with the lattice constant a.
+
+In this study, we analyze the case for the FM interaction in the model (1) on the 1 /1 AC. We consider the unit cell denoted as the frame box in Fig. 2 with the two icosahedrons which contains 24 Tb sites under the periodic boundary condition. We have performed the numerically-exact calculation for the model (1) to obtain the ground state. Namely, we have calcu-lated the expectation values of the energy of the model (1) by all the eigenstates and have obtained the ground state with the lowest energy. It is noted that our method is equivalent to the exact diagonalization calculation to obtain numerically exact ground state. We calculate the topological charge of the magnetic texture defined on the icosahedron which was introduced in ref. 38. The topological charge is defined as the solid angle divided by the surface area of the unit sphere: 
+
+n = Ω
+
+4π , (2) where Ω is the solid angle subtended by the 12 magnetic mo-ments on the icosahedron 
+
+Ω = 
+
+∑ 
+
+> i,j,k∈IC
+
+Ωi jk . (3) Here, Ωi jk is the solid angle subtended by the three magnetic moments at each triangular surface of the icosahedron, i, j,and k sites 
+
+Ωi jk = 2 tan −1
+
+[ χi jk 
+
+1 + Ji · J j + J j · Jk + Jk · Ji
+
+]
+
+(4) ,47) where χi jk is the scalar chirality defined by 
+
+χi jk = Ji · (J j × Jk). (5) The total chirality is defined as 
+
+χT =
+
+∑ 
+
+> 〈i,j,k〉
+
+χi jk ˆni jk , (6) where the summation is taken over all the three sites on the icosahedron and ˆ ni jk denotes the surface normal. 48) The total chirality plays a role as the emergent fictious magnetic field, which gives rise to the topological Hall e ff ect via the rela-tion 49) 
+
+σT 
+
+> μν
+
+∝ ǫμνρ χT 
+
+> ρ
+
+, (7) where ǫμνρ is the Levi-Civita symbol 
+
+ǫμνρ =
+
+
+
+1, (μ, ν, ρ ) = (1 , 2, 3) , (2 , 3, 1) , (3 , 1, 2) 
+
+−1, (μ, ν, ρ ) = (2 , 1, 3) , (1 , 3, 2) , (3 , 2, 1) 0, otherwise .
+
+(8) The total magnetic moment per the icosahedron is defined by 
+
+JIC =
+
+> 12
+
+∑
+
+> i=1
+
+Ji. (9) We have performed the numerical calculation by inputting various J2(> 0) and J1(> 0) with the anisotropy angle θ. For the obtained ground state, we have calculated the topological charge n in Eq. (2), total chirality χT in Eq. (6), and the total magnetic moment per the icosahedron JIC in Eq. (9). 
+
+3. Results 
+
+3.1 Ground state phase diagram and ordering property at zero field 
+
+The results are summarized as the ground-state phase dia-gram in Fig. 3. In Fig. 3(a), the phase diagram for J1 = 0 is shown at the top panel. In the lower panel, the phase diagram in the plane of J2/J1 and the anisotropy angle θ is shown. The enlargement for 0 ≤ J2/J1 ≤ 1 is presented in Fig. 3(b). We obtained the eight kinds of non-collinear magnetic ground states in Fig. 4, whose magnetic space groups are identified as IPm′ ¯3′, C2′/m′ and R¯3. From a symmetry view point, on the lattice characterized by the space group Im ¯3, the magnetic phases with the magnetic space groups C2′/m′
+
+and R¯3 can appear with the magnetic propagation vector (000) while the magnetic phase with the magnetic space group 
+
+IPm′ ¯3′ can also appear with the magnetic propagation vec-tor (111). Then, the former and the latter phases are referred to as the ferrimagnetic phase and the antiferromagnetic phase, respectively. The filled symbols represent that the antiferromagnetic states on the icosahedrons located at the center and corner of the bcc unit cell of the 1 /1 AC are stabilized as the ground state (see Fig. 4), while the open symbols represent the fer-rimagnetic state stabilized as the ground state (see Fig. 5). Here, both figures are the views from the three-fold axis, i.e., the (111) direction. In Fig. 3(a), the antiferromagnetic orders are realized in the regions for large J2/J1 near θ = 90 ◦ and for small J2/J1 near θ = 0◦ and θ = 180 ◦.In the previous study of the CEF in the Au-SM-Tb systems, it was shown theoretically that the parameter region 0 ≤ α ≤ 4corresponds to the magnetic anisotropy angle 15 ◦ <∼ θ < ∼ 90 ◦
+
+at each Tb site. 39) Here, we determine the phase diagram for 0 ≤ θ ≤ 180 ◦ to get insight into the general feature of the model (1). For each magnetic ground state, the magnetic-moment inverted state is energetically degenerate to the orig-inal state. Hence, each magnetic ground state for θ = 0◦ is the magnetic-moment inverted state of each ground state for 
+
+θ = 180 ◦. Hence, the same symbols appear at θ = 0◦ and 180 ◦
+
+in Fig. 3. First, let us focus on the two limiting cases in the model Eq. (1), i.e., the case with the N.N. interaction and the case with the N.N.N. interactions. The former phase diagram is presented as the basal line of Fig. 3(b) where the antiferro-magnetic orders are realized around θ = 0◦ and 180 ◦ while  
+
+> 3J. Phys. Soc. Jpn. FULL PAPERS
+
+0 45 90 135 180 
+
+10 -1 
+
+10 0
+
+10 1
+
+10 2
+
+> J2/J1
+
+0 45 90 135 180 
+
+q ( )
+
+q ( )(a) 
+
+J1= 0 
+
+0 45 90 135 180 
+
+0.0 
+
+0.2 
+
+0.4 
+
+0.6 
+
+0.8 
+
+1.0 
+
+> J2/J1
+
+(b) 
+
+q ( )                       
+
+> Fig. 3. (Color online) (a) The ground-state phase diagram in the 1 /1 AC (a) for J1=0 (top) and in the plane of J2/J1and the magnetic anisotropy angle θ(◦) (lower panel). The open symbol denotes the ferrimagnetic order where the magnetic states on the icosahedrons located at the center and the corner of the bcc unit cell are distributed uniformly. The filled symbol denotes the antiferromagnetic order where the magnetic states on the icosahedrons located at the center and the corner of the bcc unit cell are distributed in the antiferromagnetic alignment. The vertical dashed lines at θ=0◦, 90 ◦, and 180 ◦are guides for the eyes. (b) The enlargement for 0 ≤J2/J1≤1. In (a) and (b), the pink regions denote the ordered states with the topological charge
+> |n|=1 on the icosahedron. In (a), the blue region denotes the ordered state with the topological charge |n|=3 on the icosahedron.
+
+the ferrimagnetic orders are realized in between. The latter phase diagram is displayed as the top line of Fig. 3(a) where the antiferromagnetic order is realized around θ = 90 ◦ while the ferrimagnetic orders are realized around θ = 0◦ and 180 ◦.Figure 3(b) and the lower panel of Fig. 3(a) display the J2/J1
+
+variation of the phases stabilized between the two limits. In the following subsections, the property of each phase in the antiferromagnetic orders and the ferrimagnetic orders will be explained. 
+
+3.1.1 Antiferromagnetic states 
+
+In Fig. 3, the filled symbols represent the ordered states where the antiferromagnetic distribution of the magnetic state on the icosahedron is realized at the center and corner of the unit cell. In this subsection, the property of each ordered state is discussed. The red-filled-square symbol in Fig. 3 represents the 
+
+# (a) (b) 
+
+# q=0 
+
+# q=90 
+
+# xyz
+
+# xyz       
+
+> Fig. 4. (Color online) The antiferromagnetic orders on the icosahedrons located at the center and the corner of the bcc unit cell in the 1 /1 AC. (a) The anti-hedgehog state at the center icosahedron and the hedgehog state at the corner icosahedron with the anisotropy angle θ=0◦. (b) The anti-whirling state at the center icosahedron and the whirling state at the corner icosahedron with the anisotropy angle θ=90 ◦.
+
+hedgehog-anti-hedgehog order as shown in Fig. 4(a). In the hedgehog state, all the magnetic moments at the 12 vertices of the icosahedron are directed outward from the icosahe-dron, while in the anti-hedgehog state, all the magnetic mo-ments are directed inward from the icosahedron. For the mag-netic anisotropy angle θ = 0◦ at each site, the hedgehog-anti-hedgehog order is realized for J2/J1 < 0.284. Namely, the strong FM N.N. interaction stabilizes this order. We con-firmed that for 0 ≤ θ ≤ 45 ◦ and for 162 ◦ ≤ θ ≤ 180 ◦ the hedgehog-anti-hedgehog order is realized in the small-J2/J1
+
+region [see Fig. 3(b)]. As seen in Fig. 4(a), the 3-fold symmetry holds along the (111) direction with the inversion center with respect to the atomic positions with opposite magnetic-moment directions. The four 3 fold axes cross at the inversion center which is located at the center of the bcc unit cell, which implies the cubic-lattice symmetry. Moreover, the mirror symmetry with time reversal operation holds with respect to the mirror plane perpendicular to the 2-fold axis. The magnetic state at the cor-ner icosahedron is obtained by the (1 /2, 1/2, 1/2) translation  
+
+> 4J. Phys. Soc. Jpn. FULL PAPERS
+
+# (d) 
+
+# q=10 
+
+# q=80 
+
+# (c) q=70 (a) (b) q=40 
+
+# (f) q=120 (g) q=150 
+
+# x yz 
+
+> Fig. 5. (Color online) The ferrimagnetic orders on the icosahedrons located at the center and the corner of the bcc unit cell in the 1 /1 AC. The alignment of the magnetic moments on the central icosahedron is viewed from the (111) direction.
+
+of the magnetic state at the center icosahedron in the bcc unit cell with time reversal operation. These symmetry operations conclude that the magnetic space group of the hedgehog-anti-hedgehog state is IPm′3′ (No. 204.5.1534 in the OG notation and No. 201.21 PIn ¯3 in the BNS notation). 50, 51) 
+
+The total magnetic moment per the icosahedron is zero 
+
+JIC = 0 for the hedgehog state and the anti-hedgehog state. The total chirality χT = 0 for the hedgehog state and also for the anti-hedgehog state. The magnetic-moment inverted state in Fig. 4(a), i.e., anti-hedgehog-hedgehog state, is ener-getically degenerate. The hedgehog state on the icosahedron located at the corner of the bcc unit cell is characterized by the topological charge n = + 1 and the anti-hedgehog state on the icosahedron located at the center of the unit cell is char-acterized by the topological charge n = −1. The magnetic ground state on the icosahedron with the topological charge 
+
+|n| = 1 is shown as the filled-pink region in Figs. 3(a) and 3(b). These characteristics are summarized in Table I. It is noted that near the phase boundary the degeneracy increases because of the competition with the other ordered states. For example, at θ = 45 ◦ for J2/J1 = 0, the degeneracy of the ground states is 66 where the whiling-anti-whirling ordered states with degeneracy 2 are included. The orange-filled-square symbol in Fig. 3 represents the whirling-anti-whirling order as shown in Fig. 4(b). As seen from the 3-fold axis e.g., the (111) direction in Fig. 4(b), the whirling magnetic moments are formed, which was ac-tually identified by the neutron measurement in the 1 /1 AC Au 72 Al 14 Tb 14 .21) In the vicinity of θ = 90 ◦ for the large N.N.N. J2/J1 region in Fig. 3, the whirling-anti-whirling or-der is stabilized in the 1 /1 AC. The total magnetic moment per the icosahedron is zero JIC = 0 for the whirling-moment state and the anti-whirling-moment state. The total chirality is zero χT = 0 for the whirling-moment state and also for the anti-whirling-moment state. The whirling-moment state at the corner of the bcc unit cell is characterized by the topological charge n = + 3 and anti-whirling moment state at the center of the bcc unit cell is characterized by n = −3. 38) The magnetic ground state on the icosahedron with the topological charge 
+
+|n| = 3 is shown as the blue region in Fig. 3(a). The magnetic-moment inverted state in Fig. 4(b), i.e., the ordered state of the anti-whirling-moment state at the corner icosahedron and the whirling-moment state at the center icosahedron is ener-getically degenerate (see Table I). The magnetic space group of the whiling-anti-whirling state is IPm′3′ (No. 204.5.1534 in the OG notation and No. 201.21 PIn ¯3 in the BNS notation). 53) The magnetic space group of the hedgehog-anti-hedgehog state shown in Fig. 4(a) and the whiling-anti-whirling state shown in Fig. 4(b) is the same. 
+
+3.1.2 Ferrimagnetic states 
+
+In Fig. 3, the open symbols represent the ordered states where the magnetic state on the icosahedron is uniformly dis-tributed at the center and corner of the unit cell. In this sub-section, the property of each ordered state is discussed. The brown-diamond symbol in Fig. 3 represents the fer-rimagnetic order of the non-collinear ferrimagnetic states shown in Fig. 5(a). Figure 6 illustrates the magnetic structure on the icosahedron for θ = 10 ◦. This state can be obtained by                 
+
+> 5J. Phys. Soc. Jpn. FULL PAPERS
+> Table I. Characteristics of each magnetic order realized in the 1 /1 AC. The symbol in the 1st column denotes the magnetic state shown in Fig. 4 or Fig. 5. The magnetic propagation vector q=2π
+> a(hkl ), the magnetic space group in the OG notation, the independent magnetic position, degeneracy, the total magnetic moment vector per icosahedron JIC , the total chirality χT, and topological charge On the 6th and 7th columns, the states with all the components of JIC and
+> χThaving opposite sign are energetically degenerate. The IC1 (IC2) is the icosahedron located at the corner (center) of the unit cell in Fig. 4 and Fig. 5. The lattice constant ais a=14 .725 Å for cubic unit cell (i.e., the side length of a cube in Fig. 4 and Fig. 5). 22)
+
+states (hkl ) mag. position deg. JIC χT n
+
+sp. gr. IC1 IC2 
+
+red square Fig. 4(a) (111) IPm′ ¯3′ (0 .187 , 0.306 , 0) 2 0 0 1 -1 
+
+brown (000) C2′/m′ (0 .187 , 0.306 , 0.187) 12 (2 .99 , 5.65 , 0.00) (2 .72 , 5.93 , 0.00) a 0 0diamond (0 , 0.187 , 0.306) (0 .00 , 2.99 , 5.65) (0 .00 , 2.72 , 5.93) 0 0Fig. 5(a) (0 .306 , 0, 0.119) (−2.99 , 5.65 , 0.00) (−2.72 , 5.93 , 0.00) 0 0(0 .306 , 0, 0.493) (0 .00 , 2.99 , −5.65) (0 .00 , 2.72 , −5.93) 0 0(5 .65 , 0.00 , 2.99) (5 .93 , 0.00 , 2.72) 0 0(5 .65 , 0.00 , −2.99) (5 .93 , 0.00 , −2.72) 0 0
+
+blue (000) C2′/m′ (0 .187 , 0.306 , 0.187) 12 (0 .00 , 5.05 , 3.80) (0 .00 , 0.00 , 6.35) b 0 0square (0 , 0.187 , 0.306) (0 .00 , 5.05 , −3.80) (0 .00 , 0.00 , −6.35) 0 0Fig. 5(b) (0 .306 , 0, 0.119) (5 .05 , 3.80 , 0.00) (0 .00 , 6.35 , 0.00) 0 0(0 .306 , 0, 0.493) (3 .80 , 0.00 , 5.05) (6 .35 , 0.00 , 0.00) 0 0(5 .05 , −3.80 , 0.00) (0 .00 , −6.35 , 0.00) 0 0(3 .80 , 0.00 , −5.05) (6 .35 , 0.00 , 0.00) 0 0
+
+pink (000) R¯3 (−0.170 , 0.103 , 0.265) 8 (3 .92 , 3.92 , 3.92) (−0.32 , −0.32 , −0.32) c 0 0inverted (−0.427 , −0.265 , −0.162) (3 .92 , 3.92 , −3.92) (−0.32 , −0.32 , 0.32) 0 0triangle (3 .92 , −3.92 , 3.92) (−0.32 , 0.32 , −0.32) 0 0Fig. 5(c) (−3.92 , 3.92 , 3.92) (0 .32 , −0.32 , −0.32) 0 0
+
+black (000) C2′/m′ (0 .187 , 0.306 , 0.187) 12 (0 .00 , −5.51 , 3.40) (0 .00 , −2.04 , −7.03) d 0 0square (0 , 0.187 , 0.306) (0 .00 , −5.51 , −3.40) (0 .00 , −2.04 , 7.03) 0 0Fig. 5(d) (0 .306 , 0, 0.119) (3 .40 , 0.00 , −5.51) (−7.03 , 0.00 , −2.04) 0 0(0 .306 , 0, 0.493) (5 .51 , 3.40 , 0.00) (2 .04 , −7.03 , 0.00) 0 0(3 .40 , 0.00 , 5.51) (−7.03 , 0.00 , 2.04) 0 0(5 .51 , −3.40 , 0.00) (2 .04 , 7.03 , 0.00) 0 0
+
+green (000) C2′/m′ (0 .187 , 0.306 , 0.187) 12 (0 .00 , −3.52 , −5.42) (0 .00 , 1.67 , 0.00) e 0 0circle (0 , 0.137 , 0.306) (−3.52 , −5.42 , 0.00) (1 .67 , 0.00 , 0.00) 0 0Fig. 5(e) (0306 , 0, 0.119) (0 .00 , −3.52 , 5.42) (0 .00 , 1.67 , 0.00) 0 0(0 .306 , 0, 0.493) (3 .52 , −5.42 , 0.00) (−1.67 , 0.00 , 0.00) 0 0(5 .42 , 0.00 , −3.52) (0 .00 , 0.00 , 1.67) 0 0(5 .42 , 0.00 , 3.52) (0 .00 , 0.00 , −1.67) 0 0
+
+light blue (000) R¯3 (−0.170 , 0.103 , 0.265) 8 (−4.00 , −4.00 , −4.00) (−0.24 , −0.24 , −0.24) f 0 0triangle (−0.427 , −0.265 , −0.162) (4 .00 , −4.00 , −4.00) (0 .24 , −0.24 , −0.24) 0 0Fig. 5(f) (−4.00 , −4.00 , 4.00) (−0.24 , −0.24 , 0.24) 0 0(−4.00 , 4.00 , −4.00) (−0.24 , 0.24 , −0.24) 0 0
+
+orange square Fig. 4(b) (111) IPm′ ¯3′ (0 .187 , 0.306 , 0) 2 0 0 3 -3                                      
+
+> aθ=10 ◦case. For the θdependence, see Fig. 7.
+> bθ=40 ◦case. For the θdependence, see Fig. 9.
+> cθ=70 ◦case. For the θdependence, see Fig. 11.
+> dθ=90 ◦case. For the θdependence, see Fig. 13.
+> eθ=120 ◦case. For the θdependence, see Fig. 15.
+> fθ=150 ◦case. For the θdependence, see Fig. 17. 6J. Phys. Soc. Jpn. FULL PAPERS
+
+# x yz     
+
+> Fig. 6. (Color online) The non-collinear ferrimagnetic state for θ=10 ◦on the icosahedron denoted by the brown-diamond symbol in Fig. 5(a).
+
+inverting the 6 magnetic moments of the hedgehog state for 
+
+θ = 10 ◦.The magnetic space group of this state is C2′/m′ (No. 12.5.70 in the OG notation and No. 12.62 C2′/m′ in the BNS notation) [50,51]. Namely, the alignment of the magnetic mo-ments of this state is invariant under the 180 ◦ rotation around the z axis with inversion of the magnetic moment. This state is also invariant under the mirror operation with respect to the mirror plane perpendicular to the z axis. From the space group Im ¯3, one axis is singled out as a unique axis in monoclinic C2′/m′ and it turns out that the resulting magnetic moment is zero along this axis. The mag-netic state shown in Fig. 6 has the net magnetic moment of the icosahedron JIC = (2 .99 , 5.65 , 0.00) and the total chirality 
+
+χT = (2 .72 , 5.93 , 0.00). From Im ¯3 to the monoclinic C2′/m′,the way of choosing the unique axis among ±x, ±y, ±z direc-tions is six, which gives the six domain structures. Our ex-act numerical calculation gives the twelve degeneracy of the ground state, which corresponds to the above six degree with time reversal one (see Table I). On the 4th column of Table I, we list the independent magnetic position in unit of the lat-tice constant of the unit cell. On the 6th and 7th columns of Table I, we also list JIC and χT for each degenerate state, re-spectively. The first line of JIC and χT is the result of the mag-netic structure shown in Fig. 6 [same for other states shown in Figs. 8, 10(a), 12, 14, and 16(a) below]. The anisotropy-angle θ dependences of the absolute values of |χT| and the total magnetic moment of the icosahedron |JIC |
+
+are shown in Fig. 7. As θ increases, |χT| and |JIC | decreases monotonically. The topological charge of this state is zero n =
+
+0. These characteristics are summarized in Table I. The blue-square symbol shown in Fig. 3 represents the ferrimagnetic order of the non-collinear ferrimagnetic state shown in Fig. 5(b). Figure 8 shows the magnetic structure on the icosahedron for θ = 40 ◦.The magnetic space group of this state is C2′/m′ (No. 12.5.70 in the OG notation and No. 12.62 C2′/m′ in the BNS notation) [50,51]. Namely, the alignment of the magnetic mo-ments of this state is invariant under the 180 ◦ rotation around the x axis with inversion of the magnetic moment. This state is also invariant under the mirror operation with respect to the 
+
+0 5 10 
+
+6.5 
+
+6.6 
+
+6.7 
+
+6.8 
+
+6.9 
+
+6.3 
+
+6.4 
+
+6.5 
+
+q
+
+> |cT|
+> |J |IC
+
+( )       
+
+> Fig. 7. (Color online) The anisotropy-angle θdependence of |χT|(left axis) and |JIC |(right axis) in the magnetic state shown in Fig. 5(a).
+
+mirror plane perpendicular to the x axis. 
+
+# x yz     
+
+> Fig. 8. (Color online) The non-collinear ferrimagnetic state for θ=40 ◦on the icosahedron denoted by the blue-square symbol in Fig. 5(b).
+
+The magnetic state shown in Fig. 8 has the net magnetic moment of the icosahedron JIC = (0 .00 , 5.05 , 3.80) and the total chirality χT = (0 .00 , 0.00 , 6.35). The characteristics of this state are listed in Table I. The anisotropy-angle dependence of χT 
+
+> z
+
+and the absolute value of the total magnetic moment of the icosahedron |JIC | is shown in Fig. 9. As θ increases, χT 
+
+> z
+
+increases monotonically while the magnitude of the total magnetic moment has a max-imum around θ = 27 ◦. The topological charge of this state is zero n = 0. The pink-inverted-triangle symbol in Fig. 3 represents the ferrimagnetic order of the non-collinear ferrimagnetic state shown in Fig. 5(c). Figure 10(a) illustrates the magnetic struc-ture on the icosahedron for θ = 70 ◦.The magnetic space group of this state is R¯3 (No. 148.1.1247 in OG notation and 148.17 R¯3 in BNS notation) [50,51]. Namely, the alignment of the magnetic moments of this state satisfies the 3-fold rotation symmetry along the (111) direction, which is invariant under inversion, as seen in Fig.5(c). From the space group Im ¯3, one 3-fold axis is sin-gled out as a unique axis in rhombohedral R¯3 among four diagonal directions of the cubic ant it turns out that the re- 
+
+> 7J. Phys. Soc. Jpn. FULL PAPERS
+
+20 25 30 35 40 
+
+0
+
+2
+
+4
+
+6
+
+6.3 
+
+6.4 
+
+6.5 
+
+q
+
+> cT
+> z (cT
+> x =cT
+> y =0)
+> | J IC |
+
+( )       
+
+> Fig. 9. (Color online) The anisotropy-angle θdependence of χT
+> z(left axis) and |JIC |(right axis) in the magnetic state shown in Fig. 5(b).
+
+sultant magnetic moment vector per icosahedron is along the unique 3-fold axis. For instance, the unique axis of the mag-netic state shown in Fig.10(a) is the (111) direction, where the net magnetization per icosahedron is JIC = (3 .92 , 3.92 , 3.92). The way of choosing the one 3-fold axis for rhombohedral lattice from cubic Im ¯3 is 4, i.e., four diagonal directions of cubic. This four degree and time reversal one yield 4 × 2 = 8gives eight types of domain structures. Our exact numerical calculation showed the eight degeneracy of the ground state, which confirms this. This ferrimagnetic order appears in the region for 40 ◦ ≤
+
+θ ≤ 80 ◦ of the ground state phase diagram shown in Figs. 3(a) and 3(b). The rectangles colored in pink, yellow, and purple in Fig. 10(a) includes the mirror plane located at each ver-tex whose local coordinate is shown in Fig. 1(f). The total magnetic-moment vector at the four vertices of the purple, yellow, and pink rectangles are directed to the x, y, and z di-rections, respectively. 22) Namely, this state has the net mag-netic moment along the (111) direction per the icosahedron. It is also noted that at J2/J1 = 0, we confirmed that the degeneracy is 64 for 50 ◦ ≤ θ ≤ 80 ◦ where the magnetic states with the degeneracy 8 listed in Table I are included. The magnetic state shown in Fig. 5(c) gives the total scalar chirality χT = (−0.323 , −0.323 , −0.323). The absolute value of each component of χT is the same as |χT 
+
+> x
+
+| = |χT 
+
+> y
+
+| = |χT 
+
+> z
+
+|
+
+for this state irrespective of the anisotropy angle θ. The 
+
+# x yz(a) (b) 
+
+# x yz        
+
+> Fig. 10. (Color online) The non-collinear ferrimagnetic states for (a) θ=
+> 70 ◦(b) θ=58 .28254 ◦on the icosahedron denoted by the pink-inverted-triangle symbol in Fig. 5(c).
+
+anisotropy-angle θ dependence of |χT 
+
+> μ
+
+| (μ = x, y, z) is shown in Fig. 11. We see the non-monotonic θ dependence where the magnitude vanishes at θ0 ≡ tan −1(τ) = 58 .28254 . . . ◦ where τ
+
+is the golden mean τ = (1 + √5) /2. When θ = θ0, the magnetic moments on the N.N. sites are aligned parallelly as shown in Fig. 10(b) so that the scalar chirality χi jk defined in Eq. (5) at the triangle i jk sites on the icosahedron becomes zero, giving rise to χT = 0. In Fig. 11, the θ dependence of the absolute value of each component of the total magnetic moment of the icosahedron |JIC ,μ | is shown (right axis). As θ increases, |JIC ,μ |
+
+increases and has a maximum at θ = θ0. Then |JIC ,μ | decreases as θ increases from θ0. The topological charge of this state is zero n = 0. These characteristics are summarized in Table I. 
+
+50 55 60 65 70 
+
+0
+
+0.1 
+
+0.2 
+
+0.3 
+
+3.90 
+
+3.92 
+
+3.94 
+
+3.96 
+
+3.98 
+
+4.00 
+
+q ( )                  
+
+> |cT
+> x | (=| cT
+> y |=| cT
+> z |)
+> |J |x
+> IC  |J |z
+> IC
+> |J |y
+> IC
+> (=  = )
+> Fig. 11. (Color online) The anisotropy-angle θdependence of |χT
+> μ|(μ=
+> x,y,z) (left axis) and the component of |JIC ,μ |(μ=x,y,z) (right axis) in the non-collinear ferrimagnetic state. The vertical dashed line indicates θ=θ0
+> (see text).
+
+The black-square symbol in Fig. 3 represents the ferrimag-netic order of the non-collinear ferrimagnetic state shown in Fig. 5(d). Figure 12 illustrates the magnetic structure on the icosahedron for θ = 80 ◦.The magnetic space group of this state is C2′/m′ (No. 12.5.70 in the OG notation and No. 12.62 C2′/m′ in the BNS notation) [50,51]. Namely, the alignment of the magnetic mo-ments of this state is invariant under the 180 ◦ rotation around the x axis with inversion of the magnetic moment. This state is also invariant under the mirror operation with respect to the mirror plane perpendicular to the x axis. The magnetic state shown in Fig. 12 has the net magnetic moment of the icosahedron JIC = (0 .00 , −5.29 , 3.72) and the total chirality χT = (0 .00 , −2.04 , −7.03). The anisotropy-angle θ dependence of |χT| and |JIC | is shown in Fig. 13. As θ
+
+increases, |χT| decreases monotonically while |JIC | has a max-imum at θ = 90 ◦. The topological charge of this state is zero 
+
+n = 0. There exist the 12 degenerated states with this state which have the same energy. These features are summarized in Table I. The green-circle symbol in Fig. 3 represents the non-collinear ferrimagnetic state shown in Fig. 5(f). Figure 14 shows the magnetic structure on the icosahedron for θ = 120 ◦.The magnetic space group of this state is C2′/m′ (No. 12.5.70 in the OG notation and No. 12.62 C2′/m′ in the BNS notation) [50,51]. Namely, the alignment of the magnetic mo-ments of this state is invariant under the 180 ◦ rotation around the x axis with inversion of the magnetic moment. This state  
+
+> 8J. Phys. Soc. Jpn. FULL PAPERS
+
+## x yz    
+
+> Fig. 12. (Color online) The non-collinear ferrimagnetic state for θ=80 ◦
+> on the icosahedron denoted by the black-square symbol in Fig. 5(d).
+
+80 85 90 95 100 
+
+6.4 
+
+6.6 
+
+6.8 
+
+7.0 
+
+7.2 
+
+7.4 
+
+6.3 
+
+6.4 
+
+6.5 
+
+q
+
+> |cT|
+> |J IC |
+
+( )      
+
+> Fig. 13. The anisotropy-angle θdependence of |χT|(left axis) and |JIC |
+> (right axis) in the magnetic state shown in Fig. 5(d).
+
+is also invariant under the mirror operation with respect to the mirror plane perpendicular to the x axis. The magnetic state shown in Fig. 14 has the net magnetic moment of the icosahedron JIC = (0 .00 , −3.52 , −5.42) and the total chirality χT = (0 .00 , 1.67 , 0.00). The topological charge of this state is zero n = 0. These features are sum-marized in Table I. The anisotropy-angle θ dependence of χT 
+
+> y
+
+and |JIC | is shown in Fig. 15. As θ increases, χT 
+
+> y
+
+increases monotonically with sign change at θ = 114 ◦. The vanishment of χT 
+
+> y
+
+occurs at 
+
+θ = 114 ◦. This is caused by the cancellation of the positive and negative contributions as the result of the summation of the finite scalar chirality χi jk at each trianglar surface of the icosahedron in Eq. (6). This is in sharp cotrast to the θ = θ0
+
+case shown in Fig. 11 where each scalar chirality vanishes be-cause of the parallel alignment of the N.N. magnetic moments [see Fig. 10(b)]. The light-blue-triangle symbol in Fig. 3 represents the ferri-magnetic order of the non-collinear ferrimagnetic state shown in Fig. 5(g). The 3-fold symmetry with the inversion cen-ter with respect to the atomic position holds along the (111) direction. Hence, similarly to the state denoted by the pink-inverted-triangle symbol, the magnetic space group of this state is R¯3 (No. 148.1.1247 in OG notation and 148.17 R¯3in BNS notation) [50,51]. 
+
+## x yz    
+
+> Fig. 14. (Color online) The non-collinear ferrimagnetic state for θ=120 ◦
+> on the icosahedron denoted by the green-circle symbol in Fig. 5(e).
+
+110 115 120 125 130 
+
+-1 
+
+0
+
+1
+
+2
+
+3
+
+4
+
+6.3 
+
+6.4 
+
+6.5 
+
+q
+
+> cT
+> y (cT
+> x =cT
+> z =0)
+> |J IC |
+
+( )              
+
+> Fig. 15. (Color online) The anisotropy-angle θdependence of χT
+> y(left axis) and |JIC |(right axis) in the magnetic state shown in Fig. 5(f). The horizontal dashed line indicates χT
+> μ=0 ( μ=x,y,z).
+
+# x yz
+
+# x yz
+
+(a) (b)         
+
+> Fig. 16. (Color online) The non-collinear ferrimagnetic states for (a) θ=
+> 150 ◦and (b) θ=148 .28254 ◦on the icosahedron denoted by the light-blue-triangle symbol in Fig. 5(e).
+
+Figure 16(a) illustrates the magnetic structure on the icosa-hedron for θ = 150 ◦. The net magnetic moment of the icosa-hedron is directed as JIC = (−4.00 , −4.00 , −4.00) and the total chirality is given by χT = (−0.24 , −0.24 , −0.24). The anisotropy-angle θ dependence of each component of the total chirality |χT 
+
+> x
+
+|(= |χT 
+
+> y
+
+| = |χT 
+
+> z
+
+|) is shown in Fig. 17. The magnitude of each component of the total chirality  
+
+> 9J. Phys. Soc. Jpn. FULL PAPERS
+
+shows non-monotonic θ dependence. At θ = θ0 + 90 ◦ =
+
+148 .28254 . . . ◦, |χT 
+
+> μ
+
+| (μ = x, y, z) becomes zero. When θ =
+
+θ0 + 90 ◦, the magnetic moments at the N.N. sites are aligned parallelly, which are perpendicular to the N.N. bond direction as shown in Fig. 16(b). Then the scalar chirality χi jk defined by Eq. (5) at the triangle i jk sites on the icosahedron becomes zero, giving rise to χT = 0. The topological charge of this state is zero n = 0. There exist 8 degenerated states with this state which have the same energy. These characteristics are summarized in Table I. It is noted that at J2/J1 = 0, we con-firmed that the degeneracy is 192 for θ = 110 ◦ and 120 ◦, and 64 for θ = 130 ◦ and 140 ◦ where the magnetic states with the degeneracy 8 listed in Table I are included. 
+
+140 145 150 155 160 
+
+0
+
+0.5 
+
+1
+
+1.5 
+
+3.90 
+
+3.92 
+
+3.94 
+
+3.96 
+
+3.98 
+
+4.00 
+
+q
+
+> |cT
+> x | (=| cT
+> y |=| cT
+> z |)
+
+( )                     
+
+> |J |x
+> IC  |J |z
+> IC
+> |J |y
+> IC
+> (=  = )
+> Fig. 17. (Color online) The anisotropy-angle θdependence of |χT
+> μ|(μ=
+> x,y,z) (left axis) and the component of |JIC ,μ |(μ=x,y,z) in the magnetic state shown in Fig. 5(g). The vertical dashed line indicates θ=θ0+90 ◦(see text).
+
+3.2 Eff ect of a magnetic field 
+
+In this section, we discuss the e ff ect of a magnetic field. We consider the e ff ective model under a magnetic field H
+
+H = −
+
+∑ 
+
+> 〈i,j〉
+
+Ji j ˆJi · ˆJ j −
+
+∑
+
+> i
+
+ˆJi · H, (10) where the first term is the e ff ective model Eq. (1) and the sec-ond term is the Zeeman term. The total magnetization in the unit cell of the bcc lattice, which is defined as the quantity per icosahedron, is given by 
+
+JAC = 1
+
+2 (Jcenter IC + Jcorner IC ) , (11) where the summation of the total magnetization defined by Eq. (9) at the center icosahedron Jcenter IC and the corner icosahedron Jcorner IC in the unit cell of the bcc lattice are taken. The total chirality in the unit cell which is defined as the quantity per icosahedron is given by 
+
+χT = 1
+
+2
+
+(χTcenter IC + χTcorner IC 
+
+) , (12) where the summation of the total chirality defined by Eq. (6) at the center icosahedron χTcenter IC and the corner icosahedron 
+
+χTcorner IC in the unit cell of the bcc lattice are taken. We have analyzed the e ff ects of the magnetic field on the hedgehog-anti-hedgehog order and the whirling-anti-whirling order. It is noted that the main result was reported in ref. 38) and here the detailed analyzes are given. 
+
+3.2.1 Hedgehog-anti-hedgehog state 
+
+We apply the magnetic field H = (0 , 0, H) to the hedgehog-anti-hedgehog order shown in Fig. 4(a). We show the result for J1 = 1 and J2 = 0.1 at the anisotropy angle θ = 0◦ as a representative case. The field dependence of the magnetiza-tion per the rare-earth atom 
+
+m = JAC ,z
+
+12 (13) is shown in Fig. 18(a) (left axis). The magnetization suddenly shows a jump at H = HM ≡ 1.48. This metamagnetic transi-tion occurs by the flip of the half magnetic moments among the 12 moments of the hedgehog state and the anti-hedgehog state on each icosahedron in the unit cell, which results in the magnetic state shown in Fig. 18(b). This state is uniformly distributed at the center and corner icosahedrons in the unit cell for H > HM. For H ≥ HM, the magnetic state shown in Fig. 18(c) is also energetically degenerate to the state shown in Fig. 18(b). Both the states are created by inverting the mag-netic moments at the i = 4, 5, 9, 10 site from the hedgehog state or the magnetic moments at the i = 2, 6, 7, 8 site from the anti-hedgehog state. Among the 4 magnetic moments at each vertex of the purple plane which is perpendicular to the magnetic field, the magnetic moments at the i = 11 and 12 (i = 1 and 3) sites are flipped in Fig. 18(b) and the magnetic moments at the i = 1 and 3 ( i = 11 and 12) sites are flipped in Fig. 18(c) from the hedgehog state (anti-hedgehog state). The topological charge of both the states on the icosahedron is zero n = 0. The characteristics are summarized in Table II. For H < HM, the hedgehog state with n = + 1 and the anti-hedgehog state with n = −1 are realized on each icosa-hedron in the unit cell. At H = HM, the metamagnetic tran-sition takes place simultaneously with the topological transi-tion from |n| = 1 to n = 0 [see Fig. 18(a) (left axis)]. For 
+
+H > HM, both the states shown in Figs.18(b) and 18(c) have the common z component of the magnetization and the to-tal chirality with the x component being zero and have the y
+
+component with opposite sign (see Table II). This implies that the topological Hall e ff ect can be observed after the metam-agnetic transition for H > HM by measuring the Hall conduc-tivity σxy via Eq. (7). Figure 18(a) shows the magnetic-field dependence of χT 
+
+> z
+
+(right axis). We see that χT 
+
+> z
+
+changes from 0 to finite at the metamagnetic transition H = HM.
+
+3.2.2 Whirling-anti-whirling state 
+
+We apply the magnetic field H = (0 , 0, H) to the whirling-anti-whirling order illustrated in Fig. 4(b). We show the result for J1 = 1 and J2 = 8 at the anisotropy angle θ = 90 ◦ as a representative case. The magnetic-field dependence of the magnetization m defined by Eq. (13) is shown in Fig. 19(a) (left axis). The magnetization m exhibits an abrupt jump at 
+
+H = HM = 0.44, which indicates the metamagnetic tran-sition. For H > HM, the half of the 12 magnetic moments of the whirling-moment state and anti-whirling-moment state on each icosahedron is inverted by the magnetic field, which gives rise to the magnetic state shown in Fig. 19(b). This state is uniformly distributed at the center icosahedron and the corner icosahedron in the bcc unit cell. The magnetic state 
+
+> 10
+
+J. Phys. Soc. Jpn. FULL PAPERS 
+
+Table II. Characteristics of the magnetic state for H > HM in the 1 /1 AC. As for the distribution, u indicates the uniform distribution of the magnetic states on the center icosahedron and the corner icosahedron in the bcc unit cell of the 1 /1 AC. 
+
+magnetic states distribution degeneracy JAC χT topological charge 
+
+Fig. 18(b) u 2 (0 .00 , 3.40 , 5.51) (0 .00 , 3.04 , 6.09) a 0Fig. 18(c) (0 .00 , −3.40 , 5.51) (0 .00 , −3.04 , 6.09) 0
+
+Fig. 19(b) u 2 (3 .40 , 0.00 , 5.51) (−5.64 , 0.00 , 3.76) b 0Fig. 19(c) (−3.40 , 0.00 , 5.51) (5 .64 , 0.00 , 3.76) 0 
+
+> a
+
+θ = 0◦ case.  
+
+> b
+
+θ = 90 ◦ case. 11 J. Phys. Soc. Jpn. FULL PAPERS 
+
+(b) (c) 
+
+x yzx yzx yz
+
+123456 7 8910 11 12 123456 7 8910 11 12 
+
+0 1 2 3
+
+0
+
+1
+
+2
+
+0
+
+2
+
+4
+
+6
+
+Hm, | n|
+
+> cT
+> z
+
+|n|
+
+m
+
+cT
+
+> z
+
+(a)                     
+
+> Fig. 18. (Color online) (a) The magnetic field dependence of the magneti-zation m, the topological charge |n|, and the total chirality χT
+> zfor J1=1 and
+> J2=0.1 at θ=0◦. (b) Magnetic states at the center and corner icosahedrons in the unit cell of the bcc lattice for H>HM. (c) The energetically degenerate state with the magnetic state in (b) for H>HM. In (b) and (c), the number labels the rare-earth site on the icosahedron.
+
+shown in Fig. 19(c) is also energetically degenerate to the state shown in Fig. 19(b). Both the states can be created by inverting the magnetic moments at the i = 2, 5, 7, 9 site from the anti-whirling-moment state or the magnetic moments at the i = 4, 6, 8, 10 site from the whirling-moment state. Among the 4 magnetic moments at each vertex of the purple plane in Figs. 19(b) and 19(c) which is perpendicular to the magnetic field, the magnetic moments at the i = 3 and 12 ( i = 1 and 11) sites are flipped in Fig. 19(b) and the magnetic moments at the 
+
+i = 1 and 11 ( i = 3 and 12) sites are flipped in Fig. 19(c) from the whirling-moment state (anti-whirling-moment state). The topological charge of both the states on the icosahedron is zero n = 0. The characteristics are summarized in Table II. For H < HM, the whirling-moment state with n = + 3 and the anti-whirling-moment state with n = −3 are realized on each icosahedron in the unit cell. At H = HM, the metam-agnetic transition takes place simultaneously with the topo-logical transition from |n| = 3 to n = 0 [see Fig. 19(a) (left axis)]. For H > HM, both the states shown in Figs. 4(b) and 4(c) have the common z component of the magnetization and total chirality with the y component being zero and have the x
+
+component with opposite sign. This implies that the topologi-cal Hall e ff ect can be observed after the metamagnetic transi-tion for H > HM by measuring the Hall conductivity σxy via Eq. (7). Figure 19(a) shows the magnetic-field dependence of 
+
+χT 
+
+> z
+
+(right axis). We see that χT 
+
+> z
+
+changes from 0 to finite at the metamagnetic transition H = HM.Recently, theoretical calculation for the angle dependence from the (001) to the (111) directions for applied mag-netic field on the whirling-anti-whirling state has been per-formed. 54) By applying a magnetic field along the direction between (001) and (111) for H > HM, the degeneracy shown 
+
+(b) (c) 
+
+x yzx yzx yz
+
+123456 78910 11 12 123456 78910 11 12 
+
+0 0.2 0.4 0.6 0.8 1
+
+0
+
+1
+
+2
+
+3
+
+0
+
+2
+
+4
+
+6
+
+Hm , | n|
+
+> cT
+> z
+
+m
+
+|n|
+
+cT
+
+> z
+
+(a)                     
+
+> Fig. 19. (Color online) (a) The magnetic field dependence of the magneti-zation m, the topological charge |n|, and the total chirality χT
+> zfor J1=1 and
+> J2=8 at θ=90 ◦. (b) Magnetic state at the center and corner icosahedrons in the unit cell of the bcc lattice for H>HM. (c) The energetically degenerate state with the magnetic state in (b) for H>HM. In (b) and (c), the number labels the rare-earth site on the icosahedron.
+
+as Figs. 19(b) and 19(c) is lifted due to the low symmetry, which enables us to achieve a single domain. 
+
+4. Discussion 
+
+On the basis of the e ff ective model (1), the ground-state phase diagram has been determined as Fig. 3 by numerical calculations. The hedgehog-anti-hedgehog state is realized in the vicinity of θ = 0◦ for small J2/J1 and the whirling-anti-whirling state is realized in the vicinity of θ = 90 ◦ for large 
+
+J2/J1. The uniform order of the non-collinear ferrimagnetic state denoted by the pink-inverted-triangle symbol is real-ized in the region of 40 ◦ ≤ θ ≤ 80 ◦ for the wide range of 
+
+J2/J1. The emergence of these states were shown to appear in the ground-state phase diagram of the 1 /1 AC determined in ref. 38) Hence, these states were correctly pointed out as the ground state in the 1 /1 AC in the previous study by the energy comparison based on the magnetic ground state on the icosahedron. 38) In ref. 21, it was reported that the mag-netic moment of the whirling-anti-whirling ordered state in the 1 /1 AC Au 72 Al 14 Tb 14 is lying in the mirror plane [i.e., the 
+
+yz plane in the local coordinate shown in Fig. 1(f)] with the anisotropy angle θ = 86 ◦ from the pseudo five-fold axis. The measured temperature dependence of the magnetic suscepti-bility and the magnetic-field dependence of the magnetization are well reproduced by the e ff ective model (1) applied to the single icosahedron for large J2/J1.21, 55) 
+
+Recently, the similar magnetic structure has been observed in the 1 /1 AC Au 65 Ga 21 Tb 14 .24) The measured magnetiza-tion curve is shown to be well reproduced by the e ff ective model (1) applied to the single icosahedron for J2/J1 = 5.982. In Fig. 3(a), the whirling-anti-whirling order is realized for 
+
+J2/J1 ≥ 8.7 at θ = 85 ◦. The slightly larger J2/J1 than that  
+
+> 12 J. Phys. Soc. Jpn. FULL PAPERS
+
+reported in ref. 24 is considered to be due to the di ff erence between the single icosahedron analysis in ref. 24 and the analysis in the 1 /1 AC in the present study. Recently, the whirling-anti-whirling state in the 1 /1 AC Au 64 Ga 22 Tb 14 has been identified by the neutron measure-ment. 53) The magnetic space group has been reported to be 
+
+IPm′ ¯3′ (No. 204.5.1534 in the OG notation and No. 201.21 in the BNS notation). 53) 
+
+The non-collinear ferrimagnetic state denoted by the pink-inverted-triangle symbol was actually observed by the neutron measurement in the 1 /1 AC Au 70 Si 17 Tb 13 .22) In ref. 22, it was reported that the magnetic moment in the non-collinear ferri-magnetic state in the 1 /1 AC Au 70 Si 17 Tb 13 is lying in the mir-ror plane [i.e., the yz plane in Fig. 1(f)] with the anisotropy angle θ = 80 ◦. As shown in Fig. 3(a), this state appears for 40 ◦ ≤ θ ≤ 80 ◦, which is in accordance with the measurement. The magnetization was observed under small magnetic field in the 1 /1 AC Au 70 Si 17 Tb 13 ,22) which is about 3 μB. Since the saturated moment for an isolated Tb 3+ ion is gJ μB J = 9μB,about 1 /3 of saturate moment is estimated to be the ordered moment per Tb. Our result shown in Fig. 11 shows that 
+
+JIC  
+
+> z
+
+≈ 4 for θ = 70 ◦, which gives about 1 /3 of full polarization per site. Hence, if θ is close to 70 ◦ in the 1 /1 AC Au 70 Si 17 Tb 13 ,the value of the magnetization is consistent with the observa-tions. The similar magnetic structure was observed in the 1 /1 AC Au 68 .6Si 17 .8Tb 13 .6 which was referred to as the TAS(0) state in ref. 23. The magnetic space group R¯3 was identified by an-alyzing the neutron data. 23) In ref. 23, the magnetic structure in the 1 /1 AC Au-Si-Ho is refereed to as HAS(52) and that in Au-Si-Tb is referred to as TAS(14). The former magnetic structure is similar to that in TAS(0). On the other hand, the latter magnetic structure is slightly modulated from that in TAS(0). This was pointed out to be due to the e ff ect of the Tb atom located at the center of the icosahedron [see Fig. 1(a)]. In the present study, we have analyzed the e ff ective model in the 1 /1 AC with the icosahedron in the primitive unit cell where there exists no Tb atom at the cluster center as shown in Fig. 1(a). The theoretical analysis of the e ff ective model on the rare-earth sites not only on the 12 vertices of the icosahe-dron but also at the cluster center is interesting future subject. Experimentally, the whirling-anti-whirling state and the ferrimagnetic state were observed in the 1/1 AC Au 70 Si 17 Tb 13 22) and Au 72 Al 14 Tb 14 21) , respectively. The number of valence electrons per atom, which is referred to as e /a ratio, of each material is 1.77 and 1.56, respectively. As theoretically shown in Ref. 38, the key parameter for controlling the CEF is the ratio of the e ff ective valences of ligand ions α = ZSM /ZAu (SM =Si, Al). The nominal valences of Si and Al in metallic compounds are +4 and +1, respectively. Hence, the α value is expected to be larger in Au 70 Si 17 Tb 13 than Au 72 Al 14 Tb 14 although we should keep in mind that the e ff ect of screening by conduction electrons causes deviation from the nominal valence. As shown in Ref. 38, the anisotropy angle θ decreases as α increases. Namely, as shown in Fig. 3(a), the whirling-anti-whirling state changes to the ferrimagnetic state as θ decreases from θ = 90 ◦. This tendency is consistent with the above experimental observations. The same tendency was also observed in the 1 /1 AC Au 68 −xGa 18 +xTb 14 .53) The nominal valence of Ga is +3. As e/a increases by increasing the Ga composition i.e., x increases with the Au composition decreasing, α = ZGa /ZAu is expected to increase. As α increases, the anisotropy angle θ decreases, as shown in Ref. 38. Hence, the whirling-anti-whirling state changes to the ferrimagnetic state as shown in Fig. 3(a). This tendency is consistent with the temperature-e /a phase diagram [Fig. 13(a)] reported in Ref. 53. As summarized in Table I, the total chirality χT , 0 for the ferrimagnetic orders denoted by the open symbols in Fig. 3. This implies that the emergent fictious magnetic field exists in these states. In the non-collinear ferrimagnetic state de-noted by the pink-inverted-triangle symbol, there exists the total chirality with finite component along each 2-fold-axis direction except for the anisotropy angle θ = θ0 (see Fig. 11). Although as θ deviates from θ0, the magnitude of each compo-nent |χT 
+
+> μ
+
+| (μ = x, y, z) increases, the value is relatively smaller than those of the other ferrimagnetic ordered states denoted by the open symbols in Fig. 3. In the magnetic states denoted by the blue-square symbol and the green-circle symbol in Fig. 3, there exists the total chirality χT along the 2-fold-axis direc-tion. In particular, the former state exhibits relatively large magnitude |χT| (see Fig. 9). The magnetic state denoted by the black-square symbol has not been identified experimentally to date. The magnet-ically ordered states identified so far are the whirling-anti-whirling state (orange square) and the uniform order of the non-collinear ferrimagnetic state (pink-inverted triangle) in Fig. 3 with the anisotropy angle θ close to θ = 90 ◦ as re-ported in refs. 21–24. Since the magnetic state denoted by the black-square symbol appears in the region around θ = 90 ◦ in Fig. 3, there exists the possibility that this state is realized in the rare-earth based 1 /1 AC. As shown in Fig. 13, this state exhibits large magnitude of the total chirality |χT|.The total chirality |χT| , 0 in the ferrimagnetic ordered states denoted by the open symbol in Fig. 3 is expected to give rise to the topological Hall conductivity as Eq. (7). For example, in the non-collinear ferrimagnetic state denoted by the pink-inverted triangle in Fig. 3, there is the 8 degeneracy as shown in Table I. When the magnetic field is applied to the (111) direction, the degeneracy is lifted so that the unique ground state with JIC ‖ (111) and χT ‖ (-1-1-1) is realized. Hence, the topological Hall e ff ect is expected to appear in the Hall conductivity σxy , σyz , and σzx by Eq. (7). In this way, by applying the magnetic filed, the degeneracy of the ground state can be lifted. Then, by measuring the Hall conductiv-ity in the single domain, the topological Hall e ff ect can be detected. Hence, Table I is useful to perform such a measure-ment. Recently, the CEF in the QC Au-SM-Dy and the AC has been analyzed theoretically on the basis of the point charge model. 52) Since the Dy 3+ ion has the 4 f 9 electron configura-tion, the CEF ground state has the Kramers degeneracy. This is in sharp contrast to the Tb-based systems since the Tb 3+
+
+ion with the 4 f 8 electron configuration has in principle no Kramers degeneracy. However, the magnetic easy axis for the CEF ground state in the Au-SM-Dy systems has been revealed to lie in the mirror plane [i.e., the yz plane in Fig. 1(f)] and the 
+
+α = ZSM /ZAu dependence of the magnetic easy axis behaves similarly to that in the Au-SM-Tb systems. 52) This suggests that the model (1) can be applied to the broad range of the rare-earth based QCs and ACs with the uniaxial anisotropy 
+
+> 13
+
+J. Phys. Soc. Jpn. FULL PAPERS 
+
+arising from the CEF not only for the Tb-based systems but also the other rare-earth-based systems. 
+
+5. Conclusion 
+
+On the basis of the e ff ective model taking into account the uniaxial anisotropy arising from the CEF, we have determined the ground-state phase diagram in the 1 /1 AC by performing numerically-exact calculation. The hedgehog-anti-hedgehog state is shown to be stabilized near θ = 0◦ and θ = 180 ◦
+
+for small J2/J1 and the whirling-anti-whirling state is real-ized in the vicinity of θ = 90 ◦ for large J2/J1 in the phase diagram. These antiferromagnetic ordered states have no net magnetic moment on the icosahedron which is shown to be characterized by the topological charge as the hedgehog-anti-hedgehog order with |n| = 1 and the whirling-anti-whirling order with |n| = 3. Although the total chirality in these states is zero, by applying a magnetic field, the metamagnetic tran-sition occurs at H = HM simultaneously with the topological transition where the finite total chirality emerges for H > HM.Hence, the topological Hall e ff ect is expected to appear after the metamagnetic transition. In the uniform orders of the non-collinear ferrimagnetic state, the net magnetization on the icosahedron is not zero with topological charge being zero n = 0 and the total chiral-ity is finite. At zero field, the non-collinear ferrimagnetic state is energetically degenerate. By applying a magnetic field, the degeneracy can be lifted where the topological Hall e ff ect can be observed. Our results are shown to explain the magnetic structures observed in the 1 /1 AC Au 72 Al 14 Tb 14 ,21) Au 65 Ga 21 Tb 14 24) 
+
+and Au 70 Si 17 Tb 13 22) as well as Au 68 .6Si 17 .8Tb 13 .6 and Au-Si-Ho referred to as HAS(52) in ref. 23. Namely, we have succeeded in explaining the whilirling-antiwhirling state and noncollinear ferrimagnetic state identified experimentally to date. This indicates that our minimum model (1) captures the essence of magnetism in the rare-earth based 1 /1 ACs, which is regarded as the e ff ective model. The magnetic states re-vealed in the present study are expected to be useful to under-stand the 1 /1 AC Au-SM-R and Cd 6R systems whose mag-netic structures have not been identified experimentally. We have clarified the degeneracy of the ground state and reveled each property. This is considered to be important in under-standing the domain structures of the magnetically ordered states, which inevitably exist in real materials. The e ff ective model is expected to be applied to the broad range of the rare-earth based ACs and QCs with the uniaxial anisotropy arising from the CEF. The author acknowledges K. Momma for expanding func-tionality of the software VESTA 56) which helps to analyze the magnetic structure in the 1 /1 AC as well as kind instruc-tions. The author thanks valuable discussions about the mag-netic space group with K. Momma, K. Nawa, F. Labib, and R. Tamura, H. Takakura and M. de Boissieu. This work was supported by JSPS KAKENHI Grant Numbers JP18K03542, JP19H00648, JP22H04597, JP22H01170, JP23K17672, and JP24H01675. * swata@mns.kyutech.ac.jp 
+
+1) D. Shechtman, I. Blech, D. Gratias, and J. W. Cahn, Phys. Rev. Lett. 53 ,1951 (1984). 2) A. P. Tsai, J. Q. Guo, E. Abe, H. Takakura, and T. J. Sato, Nature 408 ,537 (2000). 3) H. Takakura, C. P. G´ omez, A. Yamamoto, M. De Boissieu, and A. P. Tsai, Nat. Mater. 6, 58 (2007). 4) I. R. Fisher, K. O. Cheon, A. F. Panchula, P. C. Canfield, M. Chernikov, H. R. Ott, and K. Dennis, Phys. Rev. B 59 , 308 (1999). 5) T. J. Sato, H. Takakura, A. P. Tsai, K. Shibata, K. Ohoyama, and K. H. Andersen, Phys. Rev. B 61 , 476 (2000). 6) A. I. Goldman, T. Kong, A. Kreyssig, A. Jesche, M. Ramazanoglu, K. W. Dennis, S. L. Bud’ko, P. C. Canfield, Nat. Mater. 12 , 714 (2013). 7) P. Das, A. Kreyssig, G. S. Tucker, A. Podlesnyak, F. Ye, M. Matsuda, T. Kong, S. L. Bud’ko, P. C. Canfield, R. Flint, P. P. Orth, T. Yamada, R. J. McQueeney, and A. I. Goldman, Phys. Rev. B 108 , 134421 (2023). 8) N. K. Sato, T. Ishimasa, K. Deguchi, and K. Imura, J. Phys. Soc. Jpn. 
+
+91 , 072001 (2022). 9) S. Suzuki, A. Ishikawa, T. Yamada, T. Sugimoto, A. Sakurai, and R. Tamura, Mater. Trans. 62 , 298 (2021). 10) R. Tamura, Y. Muro, T. Hiroto, K. Nishimoto, and T. Takabatake, Phys. Rev. B 82 , 220201(R) (2010). 11) A. Mori, H Ota, S. Yoshiuchi, K. Iwakawa, Y. Taga, Y. Hirose, T. Takeuchi, E. Yamamoto, Y. Haga, F. Honda, R. Settai, and Y. ¯ Onuki, J. Phys. Soc. Jpn. 81 , 024720 (2012). 12) A. Ishikawa, T. Fujii, T. Takeuchi, T. Yamada, Y. Matsushita, and R. Tamura Phys. Rev. B 98 , 220403(R) (2018). 13) F. Labib, T. Sugimoto, H. Takakura, A. Ishikawa, and R. Tamura, Phys. Rev. B 111 , 174409 (2025). 14) T Hiroto, G. H. Gebresenbut, C. P. G´ omez, Y. Muro, M. Isobe, Y. Ueda, K. Tokiwa, and R. Tamura, J. Phys.: Condens. Matter 25 , 216004 (2013). 15) T Hiroto, K. Tokiwa, and R Tamura, J. Phys.: Condens. Matter 26 ,216004 (2014). 16) T. Shiino, G. H. Gebresenbut, C. P. G´ omez2, U. H´ ’ussermann, P. Nord-blad, A. Rydh, and R. Mathieu, Phys. Rev. B 106 , 174405. 17) A. Ishikawa, T. Hiroto, K. Tokiwa, T. Fujii, and R. Tamura, Phys. Rev. B 93 , 024416 (2016). 18) R. Tamura, A. Ishikawa, S. Suzuki, T. Kotajima, Y. Tanaka, T. Seki, N. Shibata, T. Yamada, T. Fujii, C.-W. Wang, M. Avdeev, K. Nawa, D. Okuyama, and T. J. Sato, J. Am. Chem. Soc. 143(47) , 19938 (2021). 19) R. Takeuchi, F. Labib, T. Tsugawa, Y. Akai, A. Ishikawa, S. Suzuki, T. Fujii, and R. Tamura, Phys. Rev. Lett. 130 , 176701 (2023). 20) R. Tamura, T. Abe, S. Yoshida, Y. Shimozaki, S. Suzuki, A. Ishikawa, F. Labib, M. Avdeev, K. Kinjo, K. Nawa, and T. J. Sato, Nat. Phys. (2025). https: // doi.org /10.1038 /s41567-025-02858-0. 21) T. J. Sato, A. Ishikawa, A. Sakurai, M. Hattori, M. Avdeev, and R. Tamura, Phys. Rev. B 100 , 054417 (2019). 22) T. Hiroto, T. J . Sato, H. Cao, T. Hawai, T. Yokoo, S. Itoh, and R. Tamura, J. Phys.: Condens. Matter 32 , 415802 (2020). 23) G. H. Gebresenbut, T. Shiino, M. S. Andersson, N. Qureshi, O. Fabelo, P. Beran, D. Qvarngard, P. Henelius, A. Rydh, R. Mathieu, P. Nordblad, and C. P. G´ omez, Phys. Rev. B 106 , 184413 (2022). 24) K. Nawa, M. Avdeev, A. Ishikawa, H. Takakura, C.-W. Wang, D. Okuyama, R. Murasaki, R. Tamura, and T. J. Sato, Phys. Rev. Mater. 
+
+7, 054412 (2023). 25) M. Axenovich and M. Luban, Phys. Rev. B 63 , 100407(R) (2001). 26) S. Wessel, A. Jagannathan, and S. Haas, Phys. Rev. Lett. 90 , 177205 (2003). 27) N. P. Konstantinidis, Phys. Rev. B 72 , 064453 (2005). 28) A. Jagannathan, A. Szallas, S. Wessel, and M. Duneau, Phys. Rev. B 75 ,212407 (2007). 29) A. Hucht, S. Sahoo, S. Sil, and P. Entel, Phys. Rev. B 84 , 104438 (2011). 30) S. Thiem and J. T. Chalker, Phys. Rev. B 92 , 224409 (2015). 31) Y. Komura and Y. Okabe, J. Phys. Soc. Jpn. 85 , 044004 (2016). 32) T. Sugimoto, T. Tohyama, T. Hiroto, and R. Tamura, J. Phys. Soc. Jpn. 
+
+85 , 053701 (2016). 33) A. Koga and H. Tsunetsugu, Phys. Rev. B 96 , 214402 (2017). 34) A. Koga, Phys. Rev. B 102 , 115125 (2020). 35) H. Miyazaki, T. Sugimoto, K. Morita, and T. Tohyama., Phys. Rev. R 4,024417 (2020). 36) S. Suzuki, R. Tamura, and T. Sugimoto, Mater. Trans. 62 , 367 (2021). 37) S. Watanabe and M. Kawamoto, J. Phys. Soc. Jpn. 90 , 063701 (2021). 38) S. Watanabe, Proc. Natl. Acad. Sci. USA. 118(43) , e2112202118 (2021). 39) S. Watanabe, Sci. Rep. 11 , 17679 (2021). 14 J. Phys. Soc. Jpn. FULL PAPERS 
+
+40) A. Koga, Mater. Trans. 62 , 380 (2021). 41) A. Koga and S. Coates, Phys. Rev. B 105 , 104410 (2022). 42) T. Sugimoto, S. Suzuki, R. Tamura, and T. Tohyama, J. Phys. Soc. Jpn. 
+
+93 , 045001 (2024). 43) D. Qvarngard and P. Henelius, Phys. Rev. B 110 , 104414 (2024). 44) S. Watanabe, T. Yamada, H. Takakura, and N. Fujita, Phys. Rev. Re-search 7, 043113 (2025). 45) S. Jazbec, S. Kashimoto, P. Koˇ zelj, S. Vrtnik, M. Jagodiˇ c, Z. Jagliˇ ci´ c, and J. Dolinˇ sek, Phys. Rev. B 93 , 054208 (2016). 46) P. Das, P.-F. Lory, R. Flint, T. Kong, T. Hiroto, S. L. Bud’ko, P. C. Can-field, M. de Boissieu, A. Kreyssig, and A. I. Goldman, Phys. Rev. B 95 ,054408 (2017). 47) F. Eriksson, Math. Mag. 63 , 184 (1990). 48) K. Aoyama and H. Kawamura, Phys. Rev. B 103 , 014406 (2021). 49) G. Tatara and H. Kawamura, J. Phys. Soc. Jpn. 71 , 2613 (2002). 50) W. Opechowski and R. Guccione, Magnetism , edited by G. T. Rado and H. Suhl, Vol. 2A (Academic Press, New York, 1965), Chap. 3. P.105. 51) N. V. Belov, N. N. Neronova and T. S. Smirnova, Shubnikov Groups, Kristallografiya, 2, 315 (1957); Soviet Phys.-Cryst 2, 311 (1957). 52) S. Watanabe and T. Iwasaki, Phys. Rev. B 108 , 045110 (2023). 53) F. Labib, K. Nawa, S. Suzuki, H.-C. Wu, A. Ishikawa, K. Inagaki, T. Fu-jii, K. Kinjo, T. J. Sato, and R. Tamura, Mater. Today Phys. 40 , 101321 (2023). 54) S. Watanabe and T. Iwasaki, accepted for publication in J. Phys. Conf. Ser. 55) T. J. Sato, private communications. 56) K. Momma and F. Izumi, J. Appl. Crystallogr. 44 , 1272 (2011). 15

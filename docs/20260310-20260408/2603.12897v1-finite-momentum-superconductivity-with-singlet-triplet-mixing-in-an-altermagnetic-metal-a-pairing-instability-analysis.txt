@@ -1,0 +1,1271 @@
+Title: Finite-momentum superconductivity with singlet-triplet mixing in an altermagnetic metal: A pairing instability analysis
+
+URL Source: https://arxiv.org/pdf/2603.12897v1
+
+Published Time: Mon, 16 Mar 2026 00:52:17 GMT
+
+Number of Pages: 15
+
+Markdown Content:
+Finite-momentum superconductivity with singlet-triplet mixing in an altermagnetic metal: A pairing instability analysis 
+
+Hui Hu, 1, ∗ Zhao Liu, 1 Jia Wang, 1 Xia-Ji Liu, 1 and Yoji Ohashi 2, †
+
+> 1
+
+Centre for Quantum Technology Theory, Swinburne University of Technology, Melbourne 3122, Australia 
+
+> 2
+
+Department of Physics, Keio University, Yokohama, Kanagawa 223-8522, Japan 
+
+(Dated: March 16, 2026) We analyze the pairing instability of an altermagnetic metal on a square lattice driven by an at-tractive nearest-neighbor interaction. This interaction enables multiple pairing channels, including even-parity extended s-wave and d-wave states, as well as two odd-parity p-wave channels. We ver-ify that altermagnetic spin-splitting in the single-particle dispersion gives rise to finite-momentum pairing between electrons with unlike spins, in agreement with earlier predictions. Quite unexpect-edly, this pairing typically emerges across multiple channels with mixed parity. Consequently, the resulting finite-momentum Fulde–Ferrell–Larkin–Ovchinnikov (FFLO) superconducting phase is ex-pected to exhibit a multi-component order parameter featuring singlet-triplet mixing. We examine several forms of altermagnetism, specifically dxy -wave and dx2−y2 -wave altermagnetic couplings, and present the corresponding phase diagrams. Additionally, we investigate the triplet pairing between electrons with identical spins, and find that it consistently occurs at zero center-of-mass momentum and is unfavorable at weak altermagnetic coupling and low electron filling. The influence of on-site attractive interactions on mixed-parity pairing is also explored. 
+
+I. INTRODUCTION 
+
+A newly identified magnetic order, altermagnetism, has rapidly emerged as a subject of intense interest 1–4 . It transcends the conventional classification into ferromag-netic and antiferromagnetic phase by combining zero net magnetization with a momentum-dependent spin split-ting of electronic bands 5–14 . This spin polarization is enforced by crystalline symmetries rather than relativis-tic spin-orbit coupling 1,15–17 , leading to spin-resolved Fermi surfaces in the absence of macroscopic magnetic fields. As a result, altermagnets occupy a unique position among magnetically ordered quantum materials 1–4 . Ex-perimental signatures of altermagnetism have now been reported in an increasing number of compounds 18–21 , un-derscoring its relevance as a generic and robust form of magnetic order. Spin-split Fermi surfaces in the absence of net magnetization have profound implications for quantum many-body phenomena 3,4,22,23 , including superconductivity 24–49 . The intrinsic spin imbalance im-posed by altermagnetic order strongly constrains Cooper pairing and favors unconventional superconducting states 22 . Unlike ferromagnetic superconductors, where uniform spin splitting tends to suppress singlet pairing, the momentum-dependent spin polarization in alter-magnets permits symmetry-compatible pairing channels that remain robust over a wide parameter range. Anatural consequence of this spin-resolved electronic structure is the emergence of finite-momentum Cooper pairing 25,30,31,35–38,40–45 , closely analogous to the Fulde-Ferrell-Larkin-Ovchinnikov (FFLO) state originally proposed for Zeeman-field-driven superconductors 50–63 ,where pairing at finite center-of-mass momentum leads to a spatially modulated order parameter. Despite extensive efforts, such FFLO states remain fragile in conventional settings due to orbital depairing and competing instabilities 64–66 .Altermagnets provide a qualitatively different route to FFLO superconductivity, in which finite-momentum pairing is stabilized by symmetry-enforced spin splitting rather than external magnetic fields 67 . This eliminates orbital pair breaking and directly ties the modulation wave vector to crystal symmetry, rendering FFLO-like states intrinsic and potentially robust. The resulting interplay between altermagnetism and finite-momentum pairing establishes altermagnetic superconductors as a promising platform for realizing spatially modulated su-perconductivity and for exploring the role of magnetic symmetry in unconventional pairing 4.To date, altermagnetism-induced FFLO superconduc-tivity has been explored primarily through theoretical studies based on two-dimensional lattice Hamiltonians with either on-site 36,38,40,47 or nearest-neighbor 31,35,38,45 
+
+attractive interactions. The on-site attraction case is comparatively straightforward, as it supports a sin-gle s-wave pairing channel. In this setting, the phys-ical mechanism underlying FFLO formation is most transparently revealed within a low-filling continuum description 30,41,43,47 : sufficiently strong altermagnetic coupling induces a continuous transition from conven-tional Bardeen–Cooper–Schrieffer (BCS) pairing to an inhomogeneous FFLO state, giving rise to rich phase di-agrams under magnetic field featuring quantum Lifshitz multi-critical points separating polarized BCS, FFLO, and normal phases. By contrast, nearest-neighbor attraction presents a more intricate situation, since it supports multiple com-peting pairing channels 27,38,48 , including extended s-wave, two p-wave, and d-wave pairings. In the absence of spin-orbit coupling, most mean-field studies restrict attention to a single dominant channel, assuming either spin-singlet ( s- or d-wave) or spin-triplet ( p-wave) pair-
+
+> arXiv:2603.12897v1 [cond-mat.supr-con] 13 Mar 2026
+
+2ing. Early works focused on topological p-wave super-conductivity and its competition with s-wave order 27 ,followed by investigations of d-wave FFLO superconduc-tivity with and without external magnetic fields 31 . A no-table exception is the recent work by Jasiewicz et al. 45 ,who demonstrated singlet-triplet mixing with coexisting 
+
+d-wave and p-wave FFLO pairings induced by dx2−y2 -type altermagnetism at relatively high electron filling. This result is further corroborated by an exact two-electron analysis 48 , showing that altermagnetism stabi-lizes bound pairs with finite center-of-mass momentum, whose ground state consists of a coherent superposition of spin-singlet and spin-triplet components. In this work, we present a systematic study of singlet-triplet mixing in Cooper pairing within altermagnetic metals over a wide range of electron fillings and for different altermagnetic symmetries. To circumvent the numerical complexity associated with solving for multi-component superconducting order parameters, we em-ploy a pairing-instability analysis for two electrons near the spin-split Fermi surfaces based on the Thouless criterion 68,69 . This approach naturally extends the earlier exact two-body calculations 48 by incorporating many-body effects arising from the presence of a Fermi sea 70 . We find that the leading pairing instability gener-ically occurs at finite center-of-mass momentum and si-multaneously involves spin-singlet and spin-triplet chan-nels with mixed parity. Consequently, the supercon-ducting phase is anticipated to host an FFLO state de-scribed by a multicomponent order parameter with in-trinsic singlet-triplet mixing 45 . We determine the su-perconducting phase diagrams and quantify the relative weights of the distinct pairing channels at the supercon-ducting transition, as functions of electron filling and in-teraction strength for various types of altermagnetism. The rest of this paper is organized as follows. In Sec. II, we introduce the model Hamiltonian. Section III formulates the many-body T -matrix approximation for the two-particle vertex function in the Cooper pairing channel and describes the procedure for identifying the leading pairing instability from the matrix structure of the vertex function. In Sec. IV, we examine the insta-bility of opposite-spin Cooper pairing as a function of electron filling, considering separately the dxy -wave and 
+
+dx2−y2 -wave altermagnetic couplings. Section V presents a comparison of our results with previous predictions of altermagnetism-induced FFLO states driven by nearest-neighbor attractive interactions. In Sec. VI, we discuss the p-wave pairing instability for same-spin electrons, which always occurs at zero center-of-mass momentum, and contrast it with the opposite-spin pairing case. Fi-nally, Sec. VII summarizes our findings and outlines pos-sible directions for future investigation. Appendix A de-tails the spectral broadening procedure employed in the numerical evaluation of the pair propagators, and Ap-pendix B summarizes the results obtained upon inclusion of an on-site attractive interaction.  
+
+> II. MODEL HAMILTONIAN
+
+We consider a degenerate electron gas on a square lattice subject to d-wave altermagnetism. In the ab-sence of an external magnetic field, the system can be modeled by a low-energy single-band Hamiltonian 31,38,47 ,
+
+H = H0 + Hint , of the form, 
+
+H0 = X
+
+> k
+
+h
+
+(ξk + Jk) c†
+
+> k↑
+
+ck↑ + ( ξk − Jk) c†
+
+> k↓
+
+ck↓
+
+i
+
+, (1) 
+
+Hint = 1
+
+S
+
+X
+
+> k,k′,q
+
+V↑↓ (k, k′) c†  
+
+> k+q
+> 2↑
+
+c†−k+ q 
+
+> 2↓
+
+c−k′+ q 
+
+> 2↓
+
+ck′+ q  
+
+> 2↑
+
++ 1
+
+S
+
+X
+
+> k,k′,q;σ
+
+Vσ (k, k′) c†   
+
+> k+q
+> 2σ
+
+c†−k+ q  
+
+> 2σ
+
+c−k′+ q  
+
+> 2σ
+
+ck′+ q  
+
+> 2σ
+
+, (2) where c† 
+
+> kσ
+
+and ckσ represent the creation and annihilation operators, respectively, for electrons with momentum k
+
+and spin σ =↑, ↓, and S = L2 is the total number of the lattice sites for a L × L square lattice with periodic boundary conditions. In the non-interacting kinetic Hamiltonian H0, the single-particle dispersion is given by 
+
+ξk ≡ − 2t (cos kx + cos ky ) − μ, (3) which describes nearest-neighbor hopping with ampli-tude t; the chemical potential μ is determined by the electron filling factor ν. The momentum-dependent spin-splitting Jk originates from altermagnetism. We focus on the two cases: (i) dxy -wave altermagnetism 38 , for which 
+
+Jk = λ sin ( kx) sin ( ky ) , (4) and (ii) dx2−y2 -wave altermagnetism 31 , where 
+
+Jk = λ
+
+2 [cos kx − cos ky ] . (5) For notational simplicity, throughout the paper we define 
+
+ξk↑ = ξk + Jk and ξk↓ = εk − Jk.In the interaction Hamiltonian Hint , we assume ashort-range interaction potential and adopt the extended attractive Hubbard U -V model, which incorporates both on-site ( U ) and nearest-neighbor ( V and Vσ ) pairing in-teraction terms 38 :3
+
+Hint = U X
+
+> i
+
+ni↑ni↓ + V X
+
+> iδ
+
+ni↑ni+δ, ↓
+
++ Vσ
+
+2
+
+X
+
+> iδ
+
+X
+
+> σ
+
+niσ ni+δ,σ , (6) where δ = ±ˆx, ±ˆy labels the four nearest neighbors, and 
+
+niσ = c† 
+
+> iσ
+
+ciσ denotes the electron number operator at lattice site i. The on-site interaction acts only between spin-up and spin-down electrons due to the Pauli ex-clusion principle. In contrast, the nearest-neighbor in-teraction can occur between electrons with either oppo-site spins or identical spins, characterized by coupling strengths Vσ and V , respectively, which are generally distinct. This happens when the nearest-neighbor inter-action effectively emerges from spin fluctuations in the limit of strong on-site electron-electron repulsion 71,72 .By expressing the interaction Hamiltonian in momen-tum space using the standard Fourier transform, we ob-tain the momentum-dependent nearest-neighbor interac-tion strengths 27,31,38 :
+
+V↑↓ (k, k′) = U + 2 V cos ( kx − k′
+
+> x
+
+) + cos  ky − k′
+
+> y
+
+ ,(7) 
+
+Vσ (k, k′) = Vσ
+
+cos ( kx − k′
+
+> x
+
+) + cos  ky − k′
+
+> y
+
+ . (8) The on-site interaction U is purely s-wave and momentum-independent, while the nearest-neighbor in-teractions ( V and Vσ ) display pronounced momentum dependence. These nearest-neighbor interactions can be decomposed into different symmetry channels - namely, extended s-wave, two p-wave, and d-wave channels - each of which can be expressed in a separable form 27,38 . For instance, in the case of opposite spins, we can rewrite, 
+
+V↑↓ (k, k′) = X
+
+> η=s,es, p+, p−,d
+
+Vη fη (k) f ∗ 
+
+> η
+
+(k′) , (9) where Vs = U , Ves = Vp+ = Vp− = Vd = V , and the form factors of different channels are given by, 
+
+fs (k) = 1, (10) 
+
+fes (k) = cos kx + cos ky , (11) 
+
+fp+ (k) = sin kx + sin ky , (12) 
+
+fp− (k) = sin kx − sin ky , (13) 
+
+fd (k) = cos kx − cos ky . (14) We can clearly distinguish between the parity-even chan-nel ( η = s , es , d) corresponding to spin-singlet pairing, and the parity-odd channel ( η = p+, p −) corresponding to spin-triplet pairing. For the spin-triplet case, the form factors can alternatively be expressed in the more famil-iar chiral forms 27,38 , i.e., fp+ip (k) = sin kx + i sin ky and 
+
+fp−ip (k) = sin kx − i sin ky . These forms are not consid-ered in the present study in order to avoid introducing complex numbers into the numerical calculations.    
+
+> III. NON-SELF-CONSISTENT T-MATRIX THEORY AND THOULESS CRITERION
+
+We seek to determine the pairing instability of the nor-mal state for a given set of parameters, including the electron filling ν, the interaction strengths U , V and Vσ ,and the altermagnetic coupling λ. This can be conve-niently analyzed using the Thouless criterion applied to the inverse two-particle vertex function Γ −1(Q, ω = 0). In the normal state, the inverse vertex function is nega-tive, while in the superconducting phase it becomes pos-itive. The superconducting phase transition occurs when it crosses zero 68,69 ,max  
+
+> {Q}
+
+Γ−1 (Q, ω = 0) = 0 . (15) If the maximum of the inverse vertex function takes place at a nonzero momentum Q̸ = 0, the normal state be-comes unstable toward the formation of an inhomoge-neous FFLO superconducting state. We note that the vertex function is not necessarily a scalar quantity. When multiple pairing channels are present, it generally takes a matrix form. In such cases, one should consider the largest eigenvalue γ1(Q) of the inverse vertex function matrix at zero frequency. Accord-ingly, in the Thouless criterion, Γ −1(Q, ω = 0) is replaced by γ1(Q). In the following, we employ the standard non-self-consistent many-body T -matrix approach to evaluate the two-particle vertex function 73 . 
+
+> A. Pairing between electrons with opposite spins
+
+Restricting our attention first to pairing between elec-trons with opposite spins, we formally derive the equa-tion for the vertex function Γ( k, k′; Q, ω ) in the Cooperon channel within the ladder approximation. By summing the diagrams shown in Fig. 1, we obtain, Γ ( k, k′; Q, ω ) = V↑↓ (k, k′) − X
+
+> k′′
+
+V↑↓ (k, k′′ ) G0↑
+
+
+
+k′′ + q
+
+2
+
+
+
+G0↓
+
+
+
+−k′′ + q
+
+2
+
+
+
+Γ ( k′′ , k′; Q, ω ) , (16) where G0↑ and G0↓ denote the non-interacting single-particle Green’s functions, which depend on the four momenta 
+
+k′′ ≡ { k′′ , iω m} and q ≡ { Q, iν n → ω+ ≡ ω + i0+}. The summation P 
+
+> k′′
+
+≡ (kB T / S) P
+
+> iω m
+
+P 
+
+> k′′
+
+runs over both the spatial momentum and the (fermionic) Matsubara frequency ωm = (2 m + 1) πk B T , with integer m ∈ Z. The 4
+
+FIG. 1. Diagrammatic representation of the two-particle vertex function Γ( k, k′; Q, ω ), within the standard ladder approxima-tion, for a general non-separable inter-particle interaction V↑↓ (k, k′). 
+
+summation over ωm can be performed straightforwardly 73 , yielding the expression, Γ ( k, k′; Q, ω ) = V↑↓ (k, k′) − 1
+
+S
+
+X
+
+> k′′
+
+V↑↓ (k, k′′ )
+
+h
+
+nF
+
+
+
+ξ Q 
+
+> 2+k′′ ↑
+
+
+
++ nF
+
+
+
+ξ Q 
+
+> 2−k′′ ↓
+
+
+
+− 1
+
+i
+
+ω+ −
+
+
+
+ξ Q  
+
+> 2+k′′ ↑
+
++ ξ Q 
+
+> 2−k′′ ↓
+
+ Γ ( k′′ , k′; Q, ω ) , (17) where nF (x) ≡ 1/(ex/k B T + 1) is the Fermi-Dirac distribution function. In general, this equation is challenging to solve. However, by decomposing the interaction potential as in Eq. (9) into a total of N channels (with N = 5 in the present case, corresponding to η = s,es, p+, p−,d, or equivalently η = 1 , ..., 5), 
+
+V↑↓ (k, k′) =  f1 (k) , · · · , fη (k) , · · · , f N (k) 
+
+V1
+
+. . .
+
+Vη
+
+. . .
+
+VN
+
+
+
+f ∗ 
+
+> 1
+
+(k′)...
+
+f ∗ 
+
+> η
+
+(k′)...
+
+f ∗ 
+
+> N
+
+(k′)
+
+
+
+, (18) we may rewrite the vertex function in the form of, Γ ( k, k′; Q, ω ) =  f1 (k) , · · · , f η (k) , · · · , f N (k)  Γ (Q, ω )
+
+
+
+f ∗ 
+
+> 1
+
+(k′)...
+
+f ∗ 
+
+> η
+
+(k′)...
+
+f ∗ 
+
+> N
+
+(k′)
+
+
+
+,
+
+where Γ(Q, ω ) is a N ×N matrix. Thus, by introducing a N ×N pair propagator matrix χ(Q, ω ), whose matrix elements are given by 
+
+χηη ′ (Q, ω ) ≡ 1
+
+S
+
+X
+
+> k′′
+
+f ∗ 
+
+> η
+
+(k′′ )
+
+h
+
+nF
+
+
+
+ξ Q 
+
+> 2+k′′ ↑
+
+
+
++ nF
+
+
+
+ξ Q 
+
+> 2−k′′ ↓
+
+
+
+− 1
+
+i
+
+ω+ −
+
+
+
+ξ Q  
+
+> 2+k′′ ↑
+
++ ξ Q 
+
+> 2−k′′ ↓
+
+ fη′ (k′′ ) , (19) we can recast the vertex equation, Eq. (17), in matrix form for Γ(Q, ω ), 
+
+Γ (Q, ω ) = V − Vχ (Q, ω ) Γ (Q, ω ) , (20) 5where the interaction matrix V ≡ diag {V1, · · · , V η , · · · , V N } is diagonal. It is readily seen that we can formally solve for the matrix of the inverse vertex function, 
+
+Γ−1 (Q, ω ) = V−1 + χ (Q, ω ) = 
+
+
+
+V −11 + χ11 (Q, ω ) · · · χ1η (Q, ω ) · · · χ1N (Q, ω )... . . . · · · · · · ...
+
+χη1 (Q, ω ) · · · V −1 
+
+> η
+
++ χηη (Q, ω ) · · · χηN (Q, ω )... · · · ... . . . ...
+
+χN 1 (Q, ω ) · · · χN η (Q, ω ) · · · V −1 
+
+> N
+
++ χN N (Q, ω )
+
+
+
+. (21) If the off-diagonal elements χη̸ =η′ (Q, ω = 0) are negli-gible, the different channels effectively decouple, and it suffices to select the channel with the largest diagonal element. In general, however, for each center-of-mass pairing momentum Q, one must diagonalize the full ma-trix Γ−1(Q, ω = 0) to determine its largest eigenvalue, i.e., γ1(Q), which identifies the leading pairing insta-bility in the Thouless criterion Eq. (15). The associ-ated eigenvector [ M1, · · · , M η , · · · , M N ]T then specifies the structure of the superconducting order parameter once the instability develops. The remaining eigenval-ues of Γ−1(Q, ω = 0) are denoted by γn(Q), ordered in decreasing magnitude for n = 2 , · · · , N . 
+
+> B. Two-electron limit
+
+At this stage, it is instructive to consider the two-electron limit, where the two Fermi surfaces are absent. This corresponds to omitting the two Fermi–Dirac distri-bution functions in the pair propagators of Eq. (19). By absorbing the chemical potential into the frequency and defining the energy E = ω + 2 μ, we introduce 
+
+Lηη ′ ≡ − χηη ′ = 1
+
+S
+
+X
+
+> k
+
+f ∗ 
+
+> η
+
+(k) fη′ (k)
+
+E −
+
+
+
+ε Q  
+
+> 2+k↑
+
++ ε Q 
+
+> 2−k↓
+
+ , (22) where εkσ = ξkσ + μ. The inverse vertex matrix can then be written as, Γ−1 
+
+> ηη ′
+
+(Q, E ) = −Lηη ′ (E) + V −1 
+
+> η
+
+δηη ′ . Physi-cally, Γηη ′ (Q, ω ) may be interpreted as the Green’s func-tion of a Cooper pair, whose poles correspond to quasi-bound states with energies measured relative to the Fermi surfaces. Therefore, in the two-electron limit, the zeros of Γ−1 
+
+> ηη ′
+
+(Q, E ), determined by the condition, det 
+
+
+
+Lηη ′ (E) − δηη ′
+
+Vη
+
+
+
+= 0 , (23) give rise to the energies of tightly bound Cooper pairs. This reproduces the central equation previously derived for the two-electron bound-state problem 48 .Returning to the many-body case, condensation of these bound pairs occurs when the pair energy E ap-proaches the pair chemical potential 2 μ, i.e., when ω = 0, provided that residual interactions between bound pairs are neglected and Γηη ′ (Q, ω ) is regarded as the Green’s function of noninteracting composite bosons 73 . In this way, the Thouless criterion naturally emerges, following the standard picture of Bose–Einstein condensation in an ideal Bose gas.  
+
+> C. Pairing with parallel spins
+
+We now consider pairing between electrons with iden-tical spins. In this situation, the symmetric spin-triplet structure in spin space requires the real-space wave func-tion to have odd parity. Consequently, only the two p-wave channels in the interaction potential Vσ (k, k′) con-tribute. Following an analogous many-body T -matrix procedure, we obtain the 2 × 2 inverse vertex matrix, 
+
+Γ−1 
+
+> σ
+
+(Q, ω ) = 
+
+ V −1 
+
+> σ
+
++ χσ 
+
+> 11
+
+χσ
+
+> 12
+
+χσ 
+
+> 21
+
+V −1 
+
+> σ
+
++ χσ
+
+> 22
+
+
+
+, (24) where the indices η, η ′ = 1 , 2 now label the p+ and p−
+
+channels, respectively. The pair propagator χσηη ′ can again be evaluated using Eq. (19), but with the identical single-particle dispersion for the two electrons, namely either ξQ/2±k′′ ,↑ or ξQ/2±k′′ ,↓. 
+
+> IV. LEADING PAIRING INSTABILITY
+
+The numerical procedure for identifying the leading pairing instability from the vertex matrices, Eq. (21) and Eq. (24), is straightforward. The primary numerical difficulty arises when evaluating the pair propagator in Eq. (19). Specifically, when the denominator approaches zero, the integrand develops a sharp peak at low temper-ature. To regularize this feature, a small spectral broad-ening factor η is introduced. The final results are then extrapolated to the limit η = 0 + using a cubic fit. As ex-amined in detail in Appendix A, this strategy is efficient and introduces only negligible numerical errors. Unless otherwise specified, we perform our calculations at an effectively zero temperature, T = 0 .01 t, in order to smooth the sharp Fermi surfaces. We assume a negligi-ble on-site attraction, U = −0.01 t, along with nearest-neighbor attractions V = −1.5t and Vσ = −1.5t. The impact of varying the on-site attraction U on the pairing instability is discussed in Appendix B. 60.2 0.4 0.6 0.8 -0.2 0.0 0.2 0.4 0.6 0.8 1.0  
+
+> pairing
+> pairing
+> 1
+> (Q=0)
+> =0
+
+FIG. 2. The largest eigenvalue of the inverse vertex function matrix, γ1(Q = 0), is plotted as a function of the lattice filling factor ν, in the case without altermagnetism (i.e., λ = 0). The curves represent the results for pairing between electrons with unlike spins, while the red crosses indicate the triplet pairing results for spin-up electrons. Here and in the following figures, we adopt the interaction parameters U = −0.01 t and V =
+
+Vσ = −1.5t, and temperature T = 0 .01 t, unless otherwise stated. 
+
+A. The case without altermagnetism 
+
+We begin by analyzing the pairing instability in the absence of altermagnetism, where it consistently occurs at Q = 0. In Fig. 2, we present the leading eigenvalue, 
+
+γ1(Q = 0), of the inverse vertex matrix Γ−1 for antipar-allel spins (black solid line) and Γ−1 
+
+> σ
+
+for parallel spins (red crosses), plotted as a function of the electron filling factor ν.For antiparallel-spin pairing, the leading eigenvalue ini-tially decreases with increasing ν, then gradually rises around ν ≃ 0.3, and eventually grows more steeply once 
+
+ν ? 0.6. This non-monotonic behavior reflects changes in the dominant pairing channel 75 . At low electron fill-ing, the leading instability corresponds to an extended 
+
+s-wave state. In the intermediate regime, 0 .3 ≲ ν ≲ 0.6, it transitions to a p-wave state. Finally, for ν ? 0.6, the pairing symmetry switches to d-wave. This inter-pretation is supported by the behavior of the leading eigenvalue for triplet p-wave pairing among spin-up elec-trons, which coincides in the intermediate filling range 0.3 ≲ ν ≲ 0.6, owing to the identical nearest-neighbor interaction strengths V = Vσ .Notably, in the absence of altermagnetism, the lead-ing eigenvalue for antiparallel-spin pairing is always at least as large as that for parallel-spin pairing. This in-dicates that parallel-spin pairing does not constitute the dominant instability for sufficiently small altermagnetic couplings when |V | ≥ | Vσ |. Accordingly, in this section and the next, we focus on antiparallel-spin pairing. In the following, we separately discuss the two cases of the 0.0 0.1 0.2 0.3 -0.4 -0.2 0.0      
+
+> 0.0 0.1 0.2 0.3 0.2 0.4 0.6 0.8 1.0
+> Q// e
+
+x
+
+> Q
+
+x=Q
+
+y  
+
+> n(Q)
+> Q/
+> (a) =0.2
+> es
+> d
+> p
+> p
+> M
+> Q/
+> (b)
+
+FIG. 3. (a) The curves represent the four eigenvalues of the inverse vertex function matrix, γn(Q), at the filling factor 
+
+ν = 0 .2, as a function of the center-of-mass momentum Q
+
+when it lies along the x-axis. The crosses show γ1(Q) for Q
+
+directed along the diagonal ( Qx = Qy ). In both orientations, introducing a dxy -wave altermagnetic coupling with strength 
+
+λ = 0 .5t causes γ1(Q) to peak at a nonzero Q. (b) The eigenvectors associated with γ1(Q) are shown for Q along the 
+
+x-axis. 
+
+dxy - and dx2−y2 -wave altermagnetism. 
+
+B. dxy -wave altermagnetism 
+
+In Fig. 3(a), we report the eigenvalues of the inverse vertex matrix γn(Q) for a dxy -wave altermagnetic cou-pling λ = 0 .5t at low electron filling ν = 0 .2, plotted as a function of the center-of-mass momentum Q = |Q|
+
+with Q oriented along the x-direction. Only four eigen-values are visible, since the fifth one - associated with the s-wave channel - lies far below the others due to the very weak on-site attraction U = −0.01 t. The leading eigenvalue γ1(Q) exhibits a pronounced maximum at a finite momentum Q ≃ 0.12 π. For other directions of 
+
+Q, γ1(Q) likewise develops a local maximum at nonzero 
+
+Q. The case where Q points along the diagonal direc-tion (i.e., Qx = Qy ) is explicitly indicated in the figure by purple crosses. Nevertheless, in the presence of dxy -70.0 0.1 0.2 0.3 -0.4 -0.2 0.0 0.2      
+
+> 0.0 0.1 0.2 0.3 0.2 0.4 0.6 0.8 1.0
+> Q// e
+
+x
+
+> Q
+
+x=Q
+
+y  
+
+> n(Q)
+> Q/
+> (a) =0.7
+> es
+> d
+> p
+> p
+> M
+> Q/
+> (b)
+
+FIG. 4. The results are identical to that presented in Fig. 3, with the exception that they are calculated at a larger lattice filling factor of ν = 0 .7. 
+
+wave altermagnetism, the global maximum of the leading eigenvalue consistently occurs when Q is aligned with the 
+
+x-direction. In general, the leading eigenvalue is associated with an eigenvector whose components Mη characterize the rela-tive weight of different pairing channels in the dominant pairing instability. Figure 3(b) shows these components as a function of Q. At the peak momentum Q ≃ 0.12 π,the extended s-wave channel clearly dominates, accompa-nied by two weaker degenerate p-wave contributions and only a negligible component from the d-wave channel. At higher electron fillings, illustrated in Fig. 4 for the representative case ν = 0 .7, the leading eigenvalue of the inverse vertex matrix γ1(Q) displays behavior qualita-tively similar to that at low filling, but with two impor-tant differences. On the one hand, although the global maximum still happens at nonzero momentum when Q
+
+directs along the x-direction, the point Q = 0 now be-comes a local maximum. This feature is especially evi-dent when Q lies along the diagonal: in that case, the finite-momentum peak disappears entirely (see purple crosses). On the other hand, as the electron filling in-creases, the structure of the eigenvector associated with the leading eigenvalue changes dramatically. At the peak momentum Q ≃ 0.15 π, the pairing instability is domi-0.0 0.5 1.0 1.5 2.0 -0.1 0.0 0.1 0.2 0.3 0.4      
+
+> 0.5 1.0 1.5 2.0 0.0 0.2 0.4
+> =0.2
+> =0.7
+> Q
+> x, max  /
+> /t
+> 1
+> (Q
+> max
+> )
+> /t
+
+FIG. 5. The peak value of the dominant eigenvalue of the inverse vertex function matrix, γ1(Qmax ), is shown as a func-tion of the dxy -wave altermagnetic coupling strength λ for two lattice filling factors: ν = 0 .2 (black solid line) and ν = 0 .7(red dashed line). The arrows highlight the critical altermag-netic coupling at which γ1(Qmax ) vanishes. The inset shows the magnitude of the Q vector at which this peak occurs. 
+
+nated by a d-wave component, followed by two degener-ate p-wave channels, while the extended s-wave contribu-tion becomes negligible. This evolution of the dominant pairing channel with increasing filling is consistent with the trend observed in the absence of altermagnetism, as previously shown in Fig. 2. We have systematically repeated the numerical calcu-lations for various values of altermagnetic couplings λ
+
+and electron fillings ν, in order to determine the global maximum of the leading eigenvalue of the inverse ver-tex matrix γ1(Qmax ), the corresponding peak momentum 
+
+Qmax , and the weights of the different pairing channels, 
+
+Wη = |Mη |2, obtained from the associated eigenvector at 
+
+Qmax . In Fig. 5, we plot the global maximum as a func-tion of λ for two representative filling factors: ν = 0 .2(black solid line) and ν = 0 .7 (red dashed line), together with the corresponding peak momentum shown in the inset. As λ increases, γ1(Qmax ) generally decreases. This behavior can be understood from the fact that altermag-netism acts as a momentum-dependent effective magnetic field, which tends to suppress Cooper pairing. As a con-sequence, with increasing λ, the maximum may eventu-ally reach zero at a critical altermagnetic coupling λc.According to the Thouless criterion Eq. (15), this criti-cal point marks the boundary between the superconduct-ing phase and the normal state. In the main panel, the critical couplings λc for ν = 0 .2 and ν = 0 .7 are indi-cated by black and red arrows, respectively. The inset further shows that the superconducting phase transition is always associated with a nonzero peak momentum, 
+
+Qmax ̸ = 0. This demonstrates that the emergent su-perconducting phase corresponds to a finite-momentum 80.2 0.4 0.6 0.8 0.0 0.1 0.2 0.3      
+
+> Q
+> x,max /
+> Superconducting state
+> c
+> /t
+> Normal
+> (a) 0.2 0.4 0.6 0.8 0.0 0.2 0.4 0.6 0.8 1.0 1.2
+> extended s-wave
+> p-wave
+> d-wave
+> W
+> (b)
+
+FIG. 6. (a) Phase diagram in the presence of dxy -wave alter-magnetism: the critical altermagnetic coupling strength λc
+
+is plotted as a function of the lattice filling factor ν. The inset shows the center-of-mass momentum Q = Qex at the superconducting phase boundary. (b) Contribution of vari-ous partial-wave components to the leading pairing channel, 
+
+Wη = |Mη |2, is shown as a function of ν at the superconduct-ing transition. 
+
+FFLO state. In Fig. 6(a), we present the critical altermagnetic cou-pling λc as a function of electron filling ν, thereby estab-lishing the corresponding phase diagram. The associated peak momentum Qmax is displayed in the inset. Both λc
+
+and Qmax show a similar non-monotonic dependence on 
+
+ν, closely resembling the behavior observed previously in Fig. 2 in the absence of altermagnetism. For instance, as 
+
+ν increases, the initially decreasing trend of λc reverses around ν ≃ 0.3. Remarkably, this is precisely the fill-ing at which - without altermagnetism - the dominant pairing channel switches from extended s-wave to p-wave symmetry. Furthermore, λc exhibits another change in slope and develops a plateau near ν ≃ 0.6, where Fig. 2 indicates a transition of the dominant pairing channel from p-wave to d-wave character. Motivated by this correspondence, it is natural to re-late the non-monotonic ν-dependence of λc to changes 0 1 2 3 4-0.2 0.0 0.2                   
+
+> Q// e
+> x
+> Q
+> x
+> =Q
+> y
+> 1
+> (Q
+> max
+> )
+> /t
+> (a) =0.2 0.0 0.5 1.0 1.5 2.0 2.5 -0.2 0.0 0.2 0.4
+> 0.0 0.2 0.4 0.6 0.8 -0.4 -0.2 0.0 0.2
+> Q// e
+> x
+> Q
+> x=Q
+> y
+> 1(Q)
+> Q/
+> =0.4 t
+> 1
+> (Q
+> max
+> )
+> /t
+> (b) =0.7
+
+FIG. 7. The peak value of the leading eigenvalue of the inverse vertex function matrix, γ1(Qmax ), is plotted as a function of the dx2−y2 -wave altermagnetic coupling strength λ for two lattice filling factors: ν = 0 .2 (top panel) and ν = 0 .7 (bot-tom panel). In each panel, the black curve corresponds to the center-of-mass momentum Q aligned along the x-axis, while the violet crosses represent Q oriented along the x-axis or the diagonal ( Qx = Qy ). The inset in (b) shows γ1(Q) for differ-ent orientations of Q, emphasizing that at small dx2−y2 -wave altermagnetic couplings γ1(Qmax ) occurs when Q is directed along the x-axis. 
+
+in the nature of the leading pairing instability. To ex-amine this connection, Fig. 6(b) shows the weights of the various pairing channels evaluated precisely at the superfluid-normal phase boundary. Indeed, with increas-ing ν the dominant pairing symmetry evolves from ex-tended s-wave to p-wave at ν ≃ 0.3, and subsequently to 
+
+d-wave at ν ≃ 0.6. We emphasize, however, that in the presence of altermagnetism the sub-leading pairing chan-nels remain substantial, particularly near the crossover points at ν ≃ 0.3 and ν ≃ 0.6. Consequently, once the superconducting phase emerges, the pairing order param-eter is generally multi-component in nature, incorporat-ing contributions from both spin-singlet and spin-triplet channels. 90.0 0.5 1.0 1.5 2.0 0.0 0.5 1.0     
+
+> W
+> /t
+> extended s-wave
+> p-wave
+> V
+> c
+> /t
+> /t
+> =0.2 Superconducting state Normal
+
+FIG. 8. Phase diagram with dx2−y2 -wave altermagnetism: the critical nearest-neighbor interaction strength Vc is shown as a function of the altermagnetic coupling strength λ, at the lattice filling factor ν = 0 .2. The inset displays the contri-butions of different partial-wave components to the dominant pairing channel, Wη = |Mη |2, at the superconducting transi-tion. Here, we take the on-site attraction U = −0.01 t.
+
+C. dx2−y2 -wave altermagnetism 
+
+We now proceed to analyze the case of dx2−y2 -wave altermagnetism. Fig. 7(a) and Fig. 7(b) report γ1(Qmax )as a function of the altermagnetic coupling λ, at two electron fillings ν = 0 .2 and ν = 0 .7, respectively. As in the previous analysis, we consider two orientations of the center-of-mass momentum Q: aligned either along the x-axis (black curves) or along the diagonal direction (purple crosses). For low electron filling ( ν = 0 .2), we observe that 
+
+γ1(Qmax ) occurs when Q points along the diagonal direc-tion, in clear contrast to the behavior found for dxy -wave altermagnetism. At higher filling ( ν = 0 .7), the same tendency persists when the altermagnetic coupling is suf-ficiently strong. However, for weaker couplings, specifi-cally λ ≤ 0.55 t, the maximum of γ1(Q) instead appears 
+
+Q lies along the x-axis, resembling the behavior charac-teristic of the dxy -wave case. This re-orientation of the optimal momentum Q is most clearly illustrated by ex-amining the Q-dependence of γ1(Q) at a relatively small coupling λ = 0 .4t, as shown in the inset of Fig. 7(b). In this regime, we typically find a single peak when Q is di-rected along the x-axis, whereas a double-peak structure emerges when Q lies along the diagonal. In general, the single peak in the former configuration competes with the outer peak of the doublet in the latter, and becomes energetically favorable at weaker altermagnetic coupling. In contrast to the dxy -wave altermagnetism, a notable feature of dx2−y2 -wave altermagnetism is that γ1(Qmax )does not decrease monotonically as the altermagnetic coupling λ increases. Instead, we typically observe the emergence of a local maximum at relatively large λ,whose position depends sensitively on the electron filling. 0.0 0.5 1.0 1.5 2.0 2.5 -0.3 -0.2 -0.1 0.0 0.1 0.2 0.3        
+
+> 0.2 0.4 0.6 0.0 0.5 1.0
+> p-wave
+> W
+> /t
+> d-wave
+> Q// e
+> x
+> Q// e
+> x
+> Q
+> x
+> =Q
+> y
+> 1
+> (Q
+> max
+> )
+> /t
+> =0.64
+
+FIG. 9. Analysis of the pairing instability under the high-electron density conditions of Ref. 45 . At a large electron filling factor ν = 0 .64 and nearest-neighbor interaction V = −1.6t,the maximum of the leading eigenvalue of the inverse vertex function matrix γ1(Q) at small dx2−y2 -wave altermagnetic couplings occurs when the center-of-mass momentum Q is aligned along the x-axis. The inset shows how the weights of the different partial-wave components Wη = |Mη |2 vary with the altermagnetic coupling strength λ.
+
+This unexpected enhancement can likely be attributed to a nesting effect when Q lies along the diagonal direction. In general, the optimal magnitude of Q scales approx-imately with the altermagnetic coupling strength λ, re-maining small for small λ and becoming large for large λ.However, because of band nesting, both Q = ( q, q ) and 
+
+˜Q = ( π − q, π − q) can be equally favorable as optimal momenta. This indicates that the pairing tendency may persist even at strong altermagnetic coupling. As a con-sequence, in the very low-filling limit, a local maximum of γ1(Q) appears around λ = 4 t. As the filling increases, this maximum shifts progressively toward smaller values of λ.In Fig. 8, we present the phase diagram obtained by varying the altermagnetic coupling strength at a fixed low electron filling ν = 0 .2. The critical nearest-neighbor attraction Vc, required to drive the system into the super-conducting phase, generally decreases as the altermag-netic coupling increases. As illustrated in the inset, the dominant pairing channel at weak altermagnetic coupling is the extended s-wave, consistent with the low filling regime. However, as the coupling strength increases up to λ = 2 t, the sub-leading p-wave channel gradually be-comes more prominent and eventually reaches a magni-tude comparable to that of the extended s-wave compo-nent. As in the case of dxy -wave altermagnetism, the su-perconducting order parameter in this regime is therefore also multi-component in character, comprising contribu-tions from both spin-singlet and spin-triplet channels. 10 0.0 0.5 1.0 1.5 2.0 2.5 3.0 -0.2 -0.1 0.0 0.1 0.2 0.3 0.4     
+
+> 0.5 1.0 1.5 0.0 0.5 1.0
+> W
+> /t
+> d-wave
+> p-wave
+> 1
+> (Q
+> max
+> )
+> /t
+> =0.60
+> d-wave only
+
+FIG. 10. Analysis of the pairing instability under the con-ditions of Ref. 31 , for a filling factor ν = 0 .6 and nearest-neighbor interaction V = −2.0t. γ1(Qmax ) is plotted against the dx2−y2 -wave altermagnetic coupling strength λ, alongside the result obtained by considering only the d-wave pairing channel (green dashed line) as assumed in Ref. 31 . The inset illustrates how the weights of the various partial-wave com-ponents Wη = |Mη |2 change with λ.
+
+V. POTENTIAL CONNECTIONS TO PREVIOUS WORK 
+
+Most recently, Jasiewicz et al. carried out a mean-field study of the FFLO superconducting state with a nearest-neighbor attraction V = −1.6t in the presence of dx2−y2 -wave altermagnetism 45 . At a relatively high electron filling, ν = 0 .64, they identified a singlet-triplet mixed Fulde-Ferrell (FF) order parameter characterized by a dominant d-wave component and a sub-leading p-wave component, emerging when the altermagnetic cou-pling strength satisfies λ ≳ 0.24 t and the center-of-mass 
+
+Q is aligned along the x-axis 45 . Under identical condi-tions, we have performed an analysis of the leading pair-ing instability. As shown in Fig. 9, the superconducting transition indeed sets in for λ < 0.55 t and Q oriented along the x-axis, and the resulting state contains both 
+
+d-wave and p-wave pairing components (see inset). Fur-thermore, the ratio between these two components (ap-proximately 2 : 1) is consistent with the relative magni-tudes of the pairing amplitudes reported by Jasiewicz et al. (see Fig. 10(d) of Ref. 45 ). In another theoretical work 31 , Chakraborty and Black-Schaffer investigated the FFLO state at the nearest-neighbor attraction V = −2t, again with dx2−y2 -wave altermagnetism. Restricting their analysis to the sin-glet pairing channel and considering an electron filling of ν = 0 .6, they found an altermagnetism-driven FF state within the window 0 .44 t ≤ λ ≤ 0.56 t31 . In Fig. 10, we have revisited this singlet channel approximation, by benchmarking it against our full channel calculations. When only the d-wave channel is retained, we obtain 0.0 0.5 1.0 1.5 -0.1 0.0 0.1 0.2 0.3             
+
+> Q// e
+> x
+> pairing
+> 1
+> (Q
+> max
+> )
+> /t
+> (a) d
+> xy
+> -wave, =0.2 0.0 0.5 1.0 1.5 -0.1 0.0 0.1 0.2 0.3
+> Q
+> x
+> =Q
+> y
+> pairing
+> 1
+> (Q
+> max
+> )
+> /t
+> (b) d
+> x
+> 2y
+> 2-wave, =0.2
+
+FIG. 11. The peak value of the leading eigenvalue of the inverse vertex function matrix γ1(Qmax ) at the lattice filling factor ν = 0 .2 is shown for (a) dxy -wave and (b) dx2−y2 -wave altermagnetism. Results for the ↑↓ pairing (black curve in (a) or the line with crosses in (b)) are compared with those for the triplet ↑↑ pairing (red dot-dashed line). Here, we set 
+
+V = Vσ = −1.5t.
+
+a critical altermagnetic coupling λc ≃ 0.56 t, consistent with the finding by Chakraborty et al. 31 . However, this value is substantially smaller than the critical coupling 
+
+λc ≃ 1.63 t obtained from the full channel calculation. Actually, as indicated in the inset, the p-wave pairing channel remains significant throughout. For λ ? 0.5t, it becomes nearly the sole dominant pairing channel. 
+
+VI. CONSIDERATIONS ON PARALLEL-SPIN PAIRING 
+
+Up to this point, we have concentrated on pairing be-tween two electrons with opposite spins, motivated by the argument illustrated in Fig. 2 that parallel-spin pairing is not the dominant instability when |Vσ | ≤ | V | in the regime of sufficiently weak altermagnetism. We now ex-11 0.0 0.5 1.0 1.5 2.0 -0.2 0.0 0.2 0.4   
+
+> 1
+> (Q
+> max
+> )
+> /t
+> =0.60
+> d
+> x
+> 2y
+> 2-wave
+
+FIG. 12. The same as in Fig. 11(b), except evaluated for a lattice filling factor of ν = 0 .6. 
+
+amine more carefully the specific conditions that arise when the nearest-neighbor attractive interactions have equal strength, Vσ = V .In Fig. 11, for low electron filling ν = 0 .2, we compare the λ-dependence of γ1(Qmax ) for both anti-parallel-spin pairing and parallel-spin pairing, in the presence of ei-ther dxy -wave (a) or dx2−y2 -wave (b) altermagnetism. For parallel-spin pairing, the instability always occurs at Q = 0 (not shown), regardless of whether altermag-netism is present. Moreover, as the altermagnetic cou-pling λ increases, the leading eigenvalue γ1(Qmax ) tends to increases rather than decreases. Consequently, at suf-ficiently large altermagnetic coupling, the dominant pair-ing instability eventually shifts from anti-parallel-spin pairing to parallel-spin pairing. However, for altermag-netic coupling below the critical value λc, the leading pairing instability consistently arises from electrons with anti-parallel spins. Therefore, the phase diagrams shown in Fig. 6(a) and Fig. 8 remain valid in the regime of weak altermagnetic coupling. This behavior changes at higher electron fillings. As il-lustrated in Fig. 12, taking dx2−y2 -wave altermagnetism as a representative example, at electron filling ν = 0 .6the leading pairing instability now occurs among elec-trons with same spins at all altermagnetic couplings. This parallel-spin, triplet pairing state has recently been explored in the literature, both in the presence 27 and absence 38 of spin–orbit coupling. 
+
+VII. CONCLUSIONS AND OUTLOOKS 
+
+In summary, we have investigated the pairing instabil-ity in an altermagnetic metal subject to a finite-range at-tractive interaction that accommodates multiple pairing channels with distinct parity and symmetry. The system is described by an altermagnetic Hubbard U V model in-corporating both on-site ( U ) and nearest-neighbor ( V )attractive interactions. Within the standard non-self-consistent many-body T -matrix approximation 73 , we have determined the two-particle vertex function by pro-jecting it onto the different pairing channels. By subse-quently diagonalizing the resulting inverse vertex matrix, we have identified the leading pairing instability accord-ing to the well-established Thouless criterion 68,69 .In this way, we have confirmed the emergence of altermagnetism-driven FFLO superconducting states, which have already been examined in some detail in earlier works 25,30,31,38,40,41,44 . Our systematic analy-sis of the pairing instability, however, goes beyond the commonly adopted single-pairing-channel approximation and demonstrates that finite-momentum pairing natu-rally leads to the admixture of multiple pairing chan-nels with different parity. Consequently, altermagnetic FFLO states generally exhibit a multi-component or-der parameter containing both spin-singlet and spin-triplet contributions 45 . At low electron filling, this re-sult is consistent with the previous exact two-electron calculation 48 , which predicts finite-momentum bound pairs with mixed singlet-triplet character. It would be of considerable interest to examine our pre-dictions in altermagnetic superconductors, which have not yet been experimentally realized. In such prospec-tive systems, effective nearest-neighbor attractive inter-actions may emerge from strong on-site Coulomb re-pulsion through altermagnetic spin fluctuations 72,74–77 .More realistic theoretical analyses, incorporating spin-fluctuation-mediated pairing mechanisms, will be pur-sued in future work. In the mixed singlet-triplet superconducnting phase, it is also important to investigate the role of relative phases between different components of the order parameter. The breaking of time-reversal symmetry can give rise to spontaneous surface currents, similar to those found in topological insulators, and this effect has already been discussed for the s + id xy spin-singlet state 78 . Extending the analysis from multi-component singlet-singlet pair-ing to the singlet-triplet case presents an interesting and worthwhile direction for further study. 
+
+ACKNOWLEDGMENTS 
+
+This research was supported by the Australian Re-search Council’s (ARC) Discovery Program, Grants Nos. DP240101590 (H.H.), FT230100229 (J.W.) and DP240100248 (X.-J.L.). 
+
+Appendix A: Numerical calculation of the pair propagator matrix 
+
+In evaluating the pair propagator matrix Eq. (19), it is necessary to eliminate the sharp structure in the in-tegrand that arises when the energy ω lies within the two-electron continuum. To address this issue, we intro-12 0.0 0.1 0.2 0.3 0.4 0.5 -0.5 -0.4 -0.3 -0.2 -0.1       
+
+> 0.20 0.25 0.30 -0.14 -0.12 -0.10
+> 1(Q)
+> Q/
+> =0.005 t
+> =0.02 t
+> =0.05 t
+> =0.10 t
+> 1
+> (Q)
+> Q/
+
+FIG. 13. The dependence of the largest eigenvalue of the inverse vertex function matrix γ1(Q) on the spectral broad-ening factor η: η = 0 .005 t (circles), η = 0 .02 t (black solid line), η = 0 .05 t (red dashed line) and η = 0 .10 t (blue dot-dashed line). The inset zooms in on the region near the peak. Results are shown for dxy -wave altermagnetism with coupling strength λ = 1 .0t and filling factor ν = 0 .2. Other parameters are U = −0.01 t and V = −1.5t.
+
+duce a small spectral broadening factor η > 0 by shifting the energy as, ω → ω + iη . We then extrapolate to the zero-broadening limit η = 0 + by using a cubic polynomial fitting. Fig. 13 presents an example for dxy -wave altermag-netism with coupling strength λ = 1 .0t and low electron filling ν = 0 .2. The leading eigenvalue of the inverse ver-tex function matrix, γ1(Q = Qex), is shown for several values of the spectral broadening factor η, as indicated. Although the cubic fitting procedure does not completely eliminate the η-dependence, the remaining dependence becomes negligible for sufficiently small η. Throughout this work, we typically take η = 0 .02 t. The estimated absolute error in the leading eigenvalue is on the order of 10 −3t−1, which is barely discernible in the figure. 
+
+Appendix B: The effect of on-site attractive interactions 
+
+Here, we briefly discuss how the pairing instability is modified by incorporating an on-site attractive interac-tion. In Fig. 14, we report γ1(Qmax ) both in the ab-sence and presence of on-site attraction, under dxy -wave altermagnetism. As shown in the inset, the peak center-of-mass momentum Q remains nearly independent of the strength of the on-site attraction. In contrast, the criti-cal altermagnetic coupling strength λc increases substan-tially when the on-site attraction is included, as indicated by the red arrow in the figure. In Fig. 15(a), we present the resulting critical alter-magnetic coupling λc as a function of the on-site at-traction, which defines the corresponding phase diagram. 0 1 2 3 4-0.1 0.0 0.1 0.2 0.3 0.4      
+
+> 120.0 0.5
+> U=0.01 t
+> U=2.00 t
+> Q
+> x, max  /
+> /t
+> 1
+> (Q
+> max
+> )
+> /t
+
+FIG. 14. The maximum value of the leading eigenvalue of the inverse vertex function matrix γ1(Qmax ) is shown as a function of the dxy -wave altermagnetic coupling strength λ
+
+for two different on-site attractive interactions: U = −0.01 t
+
+(black curve) and U = −2.0t (red dashed line). The inset shows the magnitude of the center-of-mass momentum Q at which this maximum occurs, with Q oriented along the x-axis. The nearest-neighbor interaction strength is V = −1.5t
+
+and the electron filling is ν = 0 .2. 
+
+Fig. 15(b) further displays the contributions of differ-ent partial-wave components to the emerging supercon-ducting order parameter at the phase transition. As the on-site attraction becomes stronger, the purely s-wave component is progressively enhanced. At about 
+
+U ≃ − 1.75 t ∼ V , it exceeds the extended s-wave con-tribution and eventually becomes the dominant pairing channel, as expected.  
+
+> ∗
+
+hhu@swin.edu.au  
+
+> †
+
+yohashi@keio.jp  
+
+> 1
+
+L. ˇSmejkal, J. Sinova, and T. Jungwirth, Emerging Re-search Landscape of Altermagnetism, Phys. Rev. X 12 ,040501 (2022).  
+
+> 2
+
+L. Bai, W. Feng, S. Liu, L. ˇSmejkal, Y. Mokrousov, and Y. Yao, Altermagnetism: exploring new frontiers in mag-netism and spintronics, Adv. Func. Mater. 34 , 2409327 (2024).  
+
+> 3
+
+T. Jungwirth, R. M. Fernandes, E. Fradkin, A. H. Mac-Donald, J. Sinova, and L. ˇSmejkal, Altermagnetism: an unconventional spin-ordered phase of matter, Newton 1,100162 (2025).  
+
+> 4
+
+Z. Liu, H. Hu, and X.-J. Liu, Altermagnetism and super-13 -2 -1 00.0 0.2 0.4 0.6       
+
+> Q
+> x,max /
+> U/t
+> Superconducting state
+> c
+> /t
+> U/t
+> Normal
+> (a) -2.0 -1.5 -1.0 -0.5 0.0 0.0 0.2 0.4 0.6 0.8
+> p-wave
+> d-wave
+> extended s-wave
+> W
+> U/t
+> (b)
+> s-wave
+
+FIG. 15. (a) Phase diagram for dxy -wave altermagnetism as a function of on-site attraction: the critical altermagnetic cou-pling strength λc is plotted against the on-site attractive in-teraction strength U . The inset depicts the center-of-mass momentum Q = Qex at the superconducting phase bound-ary. (b) The contributions of different partial-wave compo-nents to the dominant pairing channel Wη = |Mη |2 at the superconducting transition. The nearest-neighbor interaction strength is V = −1.5t and the electron filling is ν = 0 .2. conductivity: A short historical review, arXiv:2510.09170 (2025).  
+
+> 5
+
+Y. Noda, K. Ohno, and S. Nakamura, Momentum-dependent band spin splitting in semiconducting MnO 2: a density functional calculation, Phys. Chem. Chem. Phys. 
+
+18 , 13294 (2016).  
+
+> 6
+
+M. Naka, S. Hayami, H. Kusunose, Y. Yanagi, Y. Motome, and H. Seo, Spin current generation in organic antiferro-magnets, Nat. Commun. 10 , 4305 (2019).  
+
+> 7
+
+S. Hayami, Y. Yanagi, and H. Kusunose, Momentum-Dependent Spin Splitting by Collinear Antiferromagnetic Ordering, J. Phys. Soc. Jpn. 88 , 123702 (2019).  
+
+> 8
+
+K.-H. Ahn, A. Hariki, K.-W. Lee, and J. Kuneˇ s, Antifer-romagnetism in RuO 2 as d-wave Pomeranchuk instability, Phys. Rev. B 99 , 184432 (2019).  
+
+> 9
+
+S. Hayami, Y. Yanagi, and H. Kusunose, Bottom-up design of spin-split and reshaped electronic band structures in antiferromagnets without spin-orbit coupling: Procedure on the basis of augmented multipoles, Phys. Rev. B 102 ,144441 (2020).  
+
+> 10
+
+L. ˇSmejkal, R. Gonz´ alez-Hern´ andez, T. Jungwirth, and J. Sinova, Crystal time-reversal symmetry breaking and spontaneous Hall effect in collinear antiferromagnets, Sci. Adv. 6, eaaz8809 (2020).  
+
+> 11
+
+I. I. Mazin, K. Koepernik, M. D. Johannes, R. Gonz´ alez-Hern´ andez, and L. ˇSmejkal, Preduction of unconventional magnetism in doped FeSb 2, Proc. Natl. Acad. Sci. U.S.A. 
+
+118 , e2108924118 (2021).  
+
+> 12
+
+I. I. Mazin, Altermagnetism in MnTe: Origin, predicted manifestations, and routes to detwinning, Phys. Rev. B 
+
+107 , L100418 (2023).  
+
+> 13
+
+P. A. McClarty and J. G. Rau, Landau Theory of Alter-magnetism, Phys. Rev. Lett. 132 , 176702 (2024).  
+
+> 14
+
+M. Roig, A. Kreisel, Y. Yu, B. M. Andersen, and D. F. Agterberg, Minmal models for altermagnetism, Phys. Rev. B 110 , 144412 (2024).  
+
+> 15
+
+Z. Xiao, J. Zhao, Y. Li, R. Shindou, and Z.-D. Song, Spin space groups: full classification and applications, Phys. Rev. X 14 , 031037 (2024).  
+
+> 16
+
+X. Chen, J. Ren, Y. Zhu, Y. Yu, A. Zhang, P. Liu, J. Li, Y. Liu, C. Li, and Q. Liu, Enumeration and representa-tion theory of spin space groups, Phys. Rev. X 14 , 031038 (2024).  
+
+> 17
+
+Y. Jiang, Z. Song, T. Zhu, Z. Fang, H. Weng, Z.-X. Liu, J. Yang, and C. Fang, Enumeration of spin-space groups: towards a complete description of symmetries of magnetic orders, Phys. Rev. X 14 , 031039 (2024).  
+
+> 18
+
+J. Krempask´ y, L. ˇSmejkal, S. W. D’Souza, M. Hajlaoui, G. Springholz, K. Uhl´ ıˇ rov´ a, F. Alarab, P. C. Constanti-nou, V. Strocov, D. Usanov, W. R. Pudelko, R. Gonz´ alez-Hern´ andez, A. Birk Hellenes, Z. Jansa, H. Reichlov´ a, Z. ˇSob´ aˇ n, R. D. Gonzalez Betancourt, P. Wadley, J. Sinova, D. Kriegner, J. Min´ ar, J. H. Dil, and T. Jungwirth, Alter-magnetic lifting of Kramers spin degeneracy, Nature (Lon-don) 626 , 517 (2024).  
+
+> 19
+
+O. J. Amin, A. Dal Din, E. Golias, Y. Niu, A. Zakharov, S. C. Fromage, C. J. B. Fields, S. L. Heywood, R. B. Cousins, F. Maccherozzi, J. Krempask´ y, J. H. Dil, D. Kriegner, B. Kiraly, R. P. Campion, A. W. Rushforth, K. W. Edmonds, S. S. Dhesi, L. ˇSmejkal, T. Jungwirth, and P. Wadley, Nanoscale imaging and control of altermagnetism in MnTe, Nature (London) 636 , 348 (2024).  
+
+> 20
+
+B. Jiang, M. Hu, J. Bai, Z. Song, C. Mu, G. Qu, W. Li, W. Zhu, H. Pi, Z. Wei, Y. Sun, Y. Huang, X. Zheng, Y. Peng, L. He, S. Li, J. Luo, Z. Li, G. Chen, H. Li, H. Weng, and T. Qian, A metallic room-temperature d-wave altermagnet. Nat. Phys. 21 , 754 (2025).  
+
+> 21
+
+F. Zhang, X. Cheng, Z. Yin, C. Liu, L. Deng, Y. Qiao, Z. Shi, S. Zhang, J. Lin, Z. Liu, M. Ye, Y. Huang, X. Meng, C. Zhang, T. Okuda, K. Shimada, S. Cui, Y. Zhao, G.-H. Cao, S. Qiao, J. Liu, and C. Chen, Crystal-symmetry-paired spin–valley locking in a layered room-temperature metallic altermagnet candidate. Nat. Phys. 21 , 760 (2025).  
+
+> 22
+
+I. I. Mazin, Notes on altermagnetism and superconductiv-ity, AAPPS Bull. 35 , 8 (2025).  
+
+> 23
+
+Y. Fukaya, B. Lu, K. Yada, Y. Tanaka, and J. Cayao, Su-perconducting phenomena in systems with unconventional magnets, J. Phys.: Condens. Matter 37 , 313003 (2025).  
+
+> 24
+
+J. A. Ouassou, A. Brataas, and J. Linder, dc Josephson ef-fect in altermagnets, Phys. Rev. Lett. 131 , 076003 (2023).  
+
+> 25
+
+S. Sumita, M. Naka, and H. Seo, Fulde-Ferrell-Larkin-Ovchinnikov state induced by antiferromagnetic order in κ-14 
+
+type organic conductors, Phys. Rev. Res. 5, 043171 (2023).  
+
+> 26
+
+C. Sun, A. Brataas, and J. Linder, Andreev reflection in altermagnets, Phys. Rev. B 108 , 054511 (2023).  
+
+> 27
+
+D. Zhu, Z.-Y. Zhuang, Z. Wu, and Z. Yan, Topological su-perconductivity in two-dimensional altermagnetic metals, Phys. Rev. B 108 , 184505 (2023).  
+
+> 28
+
+B. Brekke, A. Brataas, and A. Sudb , Two-dimensional altermagnets: superconductivity in a minimal microscopic model, Phys. Rev. B 108 , 224421 (2023).  
+
+> 29
+
+B. Lu, K. Maeda, H. Ito, K. Yada, and Y. Tanaka, φ
+
+Josephson Junction Induced by Altermagnetism, Phys. Rev. Lett. 133 , 226002 (2024).  
+
+> 30
+
+S.-B. Zhang, L.-H. Hu, and T. Neupert, Finite-momentum Cooper pairing in proximitized altermagnets, Nat. Com-mun. 15 , 1801 (2024).  
+
+> 31
+
+D. Chakraborty and A. M. Black-Schaffer, Zero-field finite-momentum and field-induced superconductivity in alter-magnets, Phys. Rev. B 110 , L060508 (2024).  
+
+> 32
+
+A. Mæland, B. Brekke, and A. Sudb , Many-body effects on superconductivity mediated by double-magnon pro-cesses in altermagnets, Phys. Rev. B 109 , 134515 (2024).  
+
+> 33
+
+A. Bose, S. Vadnais, and A. Paramekanti, Altermagnetism and superconductivity in a multiorbital t − J model, Phys. Rev. B 110 , 205120 (2024).  
+
+> 34
+
+V. S. de Carvalho and H. Freire, Unconventional supercon-ductivity in altermagnets with spin-orbit coupling, Phys. Rev. B 110 , L220503 (2024).  
+
+> 35
+
+D. Chakraborty and A. M. Black-Schaffer, Perfect super-conducting diode effect in altermagnets, Phys. Rev. Lett. 
+
+135 , 026001 (2025).  
+
+> 36
+
+K. Mukasa and Y. Masaki, Finite-momentum Super-conductivity in Two-dimensional Altermagnets with aRashba-type Spin-Orbit Coupling, J. Phys. Soc. Jpn. 94 ,064705 (2025).  
+
+> 37
+
+G. Sim and J. Knolle, Pair Density Waves and Super-current Diode Effect in Altermagnets, Phys. Rev. B 112 ,L020502 (2025).  
+
+> 38
+
+S. Hong, M. J. Park, and K.-M. Kim, Unconventional 
+
+p-wave and finite-momentum superconductivity induced by altermagnetism through the formation of Bogoliubov Fermi surface, Phys. Rev. B 111 , 054501 (2025).  
+
+> 39
+
+Y. Fukaya, K. Maeda, K. Yada, J. Cayao, Y. Tanaka, and B. Lu, Josephson effect and odd-frequency pairing in superconducting junctions with unconventional magnets, Phys. Rev. B 111 , 064502 (2025).  
+
+> 40
+
+S. Sumita, M. Naka, and H. Seo, Phase-modulated su-perconductivity via altermagnetism, Phys. Rev. B 112 ,144510 (2025).  
+
+> 41
+
+H. Hu, Z. Liu, and X.-J. Liu, Unconventional supercon-ductivity of an altermagnetic metal: Polarized BCS and inhomogeneous FFLO states, Phys. Rev. B 112 , 184501 (2025).  
+
+> 42
+
+I. V. Iorsh, Electron pairing by dispersive phonons in altermagnets: Reentrant superconductivity and continu-ous transition to finite momentum superconducting state, Phys. Rev. B 111 , L220503 (2025).  
+
+> 43
+
+H. Hu and X.-J. Liu, Quantum Lifshitz points in an alter-magnetic superconductor, AAPPS Bull. 35 , 35 (2025).  
+
+> 44
+
+Z. Liu, H. Hu, and X.-J. Liu, Fulde-Ferrell-Larkin-Ovchinnikov states and topological Bogoliubov Fermi sur-faces in altermagnets: an analytical study, Phys. Rev. B 
+
+113 , 024518 (2026).  
+
+> 45
+
+K. Jasiewicz, P. W´ ojcik, M. Nowak, and M. Zegrodnik, Interplay between altermagnetism and superconductivity in two dimensions: intertwined symmetries and singlet-triplet mixing, arXiv:2511.05190.  
+
+> 46
+
+P.-H. Fu, S. Mondal, J.-F. Liu, Y. Tanaka, and J. Cayao, Floquet Engineering Spin Triplet States in Unconventional Magnets, Phys. Rev. Lett. 136 , 066703 (2026).  
+
+> 47
+
+X.-J. Liu and H. Hu, Altermagnetism-driven FFLO super-conductivity in finite-filling 2D lattices, arXiv:2601.06735.  
+
+> 48
+
+H. Hu, Z. Liu, J. Wang, and X.-J. Liu, Finite-momentum bound pairs of two electrons in an altermagnetic metal, arXiv:2601.12905.  
+
+> 49
+
+K. Monkman, J. Weng, N. Heinsdorf, A. Nocera, and M. Franz, Persistent spin currents in superconducting alter-magnets, arXiv:2507.22139.  
+
+> 50
+
+P. Fulde and R. A. Ferrell, Superconductivity in a Strong Spin-Exchange Field, Phys. Rev. 135 , A550 (1964).  
+
+> 51
+
+A. I. Larkin and Yu. N. Ovchinnikov, Nonuniform state of superconductors, Zh. Eksp. Teor. Fiz. 47 , 1136 (1964) [Sov. Phys. JETP 20 , 762 (1965)].  
+
+> 52
+
+R. Casalbuoni and G. Nardulli, Inhomogeneous supercon-ductivity in condensed matter and QCD, Rev. Mod. Phys. 
+
+76 , 263 (2004).  
+
+> 53
+
+H. Hu and X.-J. Liu, Mean-field phase diagrams of imbal-anced Fermi gases near a Feshbach resonance, Phys. Rev. A 73 , 051603(R) (2006).  
+
+> 54
+
+H. Hu, X.-J. Liu, and P. D. Drummond, Phase Diagram of a Strongly Interacting Polarized Fermi Gas in One Di-mension, Phys. Rev. Lett. 98 , 070403 (2007).  
+
+> 55
+
+X.-J. Liu, H. Hu, and P. D. Drummond, Fulde-Ferrell-Larkin-Ovchinnikov states in one-dimensional spin-polarized ultracold atomic Fermi gases, Phys. Rev. A 76 ,043605 (2007).  
+
+> 56
+
+L. Radzihovsky and D. E. Sheehy, Imbalanced Feshbach-resonant Fermi gases, Rep. Prog. Phys. 73 , 076501 (2010).  
+
+> 57
+
+K. B. Gubbels and H. T. C. Stoof, Imbalanced Fermi gases at unitarity, Phys. Rep. 525 , 255 (2013).  
+
+> 58
+
+X.-J. Liu and H Hu, Inhomogeneous Fulde-Ferrell superflu-idity in spin-orbit-coupled atomic Fermi gases, Phys. Rev. A 87 , 051608(R) (2013).  
+
+> 59
+
+Y. Cao, S.-H. Zou, X.-J. Liu, S. Yi, G.-L. Long, and H. Hu, Gapless Topological Fulde-Ferrell Superfluidity in Spin-Orbit Coupled Fermi Gases, Phys. Rev. Lett. 113 , 115302 (2014).  
+
+> 60
+
+D. E. Sheehy, Fulde-Ferrell-Larkin-Ovchinnikov state of two-dimensional imbalanced Fermi gases, Phys. Rev. A 92 ,053631 (2015).  
+
+> 61
+
+J. Wang, Y. Che, L. Zhang, and Q. Chen, Instability of Fulde-Ferrell-Larkin-Ovchinnikov states in atomic Fermi gases in three and two dimensions, Phys. Rev. B 97 ,134513 (2018).  
+
+> 62
+
+T. Kawamura and Y. Ohashi, Feasibility of a Fulde-Ferrell-Larkin-Ovchinnikov superfluid Fermi atomic gas, Phys. Rev. A 106 , 033320 (2022).  
+
+> 63
+
+T. Kawamura and Y. Ohashi, Non-equilibrium BCS-BEC crossover and unconventional FFLO superfluid in a strongly interacting driven-dissipative Fermi gas, AAPPS Bull. 34 , 31 (2024).  
+
+> 64
+
+S. Uji, T. Terashima, M. Nishimura, Y. Takahide, T. Konoike, K. Enomoto, H. Cui, H. Kobayashi, A. Kobayashi, H. Tanaka, M. Tokumoto, E. S. Choi, T. Toku-moto, D. Graf, and J. S. Brooks, Vortex Dynamics and the Fulde-Ferrell-Larkin-Ovchinnikov State in a Magnetic-Field-Induced Organic Superconductor, Phys. Rev. Lett. 
+
+97 , 157001 (2006).  
+
+> 65
+
+Y.-A. Liao, A. S. C. Rittner, T. Paprotta, W. Li, G. B. 15 
+
+Partridge, R. G. Hulet, S. K. Baur, and E. J. Mueller, Nature (London) 467 , 567 (2010).  
+
+> 66
+
+D. Zhao, L. Debbeler, M. K¨ uhne, S. Fecher, N. Gross, and J. Smet, Evidence of finite-momentum pairing in a cen-trosymmetric bilayer, Nature Phys. 19 , 1599 (2023).  
+
+> 67
+
+R. Soto-Garrido and E. Fradkin, Pair-density-wave su-perconducting states and electronic liquid-crystal phases, Phys. Rev. B 89 , 165126 (2014).  
+
+> 68
+
+D. J. Thouless, Perturbation theory in statistical mechan-ics and the theory of superconductivity, Ann. Phys. (N. Y.) 10 , 553 (1960).  
+
+> 69
+
+X.-J. Liu and H. Hu, BCS-BEC crossover in an asymmetric two-component Fermi gas, Europhys. Lett. 75 , 364 (2006).  
+
+> 70
+
+L. N. Cooper, Bound Electron Pairs in a Degenerate Fermi Gas, Phys. Rev. 104 , 1189 (1956).  
+
+> 71
+
+J. E. Hirsch, Attractive Interaction and Pairing in Fermion Systems with Strong On-Site Repulsion, Phys. Rev. Lett. 
+
+54 , 1317 (1985).  
+
+> 72
+
+D. J. Scalapino, E. Loh, Jr., and J. E. Hirsch, d-wave pair-ing near a spin-density-wave instability, Phys. Rev. B 34 ,8190(R) (1986).  
+
+> 73
+
+G. D. Mahan, Many-Particle Physics , 3rd ed. (Springer, New York, 2000).  
+
+> 74
+
+Y. Ohashi and H. Shiba, Pairing and Depairing Effects of Antiferromagnetic Spin Fluctuations in High-Tc Supercon-ductivity, J. Phys. Soc. Jpn. 62 , 2783 (1993).  
+
+> 75
+
+A. T. Rømer, A. Kreisel, I. Eremin, M. A. Malakhov, T. A. Maier, P. J. Hirschfeld, and B. M. Andersen, Pairing sym-metry of the one-band Hubbard model in the paramagnetic weak-coupling limit: A numerical RPA study, Phys. Rev. B 92 , 104505 (2015).  
+
+> 76
+
+Y.-M. Wu, Y. Wang, and R. M. Fernandes, Intra-unit-cell singlet pairing mediated by altermagnetic fluctuations, Phys. Rev. Lett. 135 , 156001 (2025).  
+
+> 77
+
+N. Parthenios, P. M. Bonetti, R. Gonz´ alez-Hern´ andez, W. H. Campos, L. ˇSmejkal, and L. Classen, Spin and pair den-sity waves in two-dimensional altermagnetic metals, Phys. Rev. B 112 , 214410 (2025).  
+
+> 78
+
+Y. Kusama and Y. Ohashi, Effect of the BCS supercurrent on the spontaneous surface flow in unconventional super-conductivity with broken time-reversal-symmetry, J. Phys. Soc. Jpn. 68 , 987 (1999).

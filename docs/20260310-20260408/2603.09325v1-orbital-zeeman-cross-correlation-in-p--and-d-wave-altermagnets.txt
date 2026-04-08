@@ -1,0 +1,1500 @@
+Title: Orbital-Zeeman cross correlation in $p$- and $d$-wave altermagnets
+
+URL Source: https://arxiv.org/pdf/2603.09325v1
+
+Published Time: Wed, 11 Mar 2026 00:44:02 GMT
+
+Number of Pages: 10
+
+Markdown Content:
+Orbital-Zeeman cross correlation in p- and d-wave altermagnets 
+
+Tomonari Mizoguchi 1 and Soshun Ozaki 2
+
+> 1
+
+Department of Physics, University of Tsukuba, 1-1-1 Tennodai, Tsukuba, Ibaraki 305-8571, Japan ∗
+
+> 2
+
+Max Planck Institute for Solid State Research, Heisenbergstrasse 1, D-70569 Stuttgart, Germany 
+
+(Dated: March 11, 2026) Altermagnets are a novel class of magnets that exhibit a large spin splitting but the total mag-netic moment is vanishing. This unconventional spin splitting gives rise to various characteristic phenomena, such as spin current generation. In this paper, we study the orbital-Zeeman (OZ) cross term in altermagnets. Specifically, we consider the Rashba metal and the surface Dirac cones of three-dimensional topological insulators (TIs) in the presence of the altermagnetic order parameters. For the Rashba metals, the p-wave order parameter exerts only a limited influence on the OZ term, whereas the d-wave one causes the sign change of it when the order parameter becomes sufficiently large. For the TI surface, the p-wave order parameter retains the step-function-type dependence of the OZ term as a function of the chemical potential ( μ) associated with the jump at μ = 0, observed in the TI surface without magnetism, but its magnitude is reduced. For the d-wave case, the magnitude of jump at μ = 0 is preserved but the OZ term decreases as increasing |μ|.
+
+I. INTRODUCTION 
+
+Itinerant electron systems with magnetic order exhibit a variety of intriguing physical phenomena. Such systems host a delicate interplay between electronic band struc-tures, exchange interactions, and spin-orbit coupling, giv-ing rise to unconventional transport responses and mag-netoelectric effects. Examples include the topological and anomalous Hall effects in skyrmion systems [1–4] and kagome magnets [5–7]. Magnetism is also known to enrich the topological electronic structures; antifer-romagnetic topological insulators (TIs) [8] and magneti-cally doped TIs [9, 10] are prominent examples. In recent years, a novel type of magnetic order, dubbed altermagnets [11–15], has attracted considerable atten-tion. Altermagnets possess properties that are distinct from those of conventional ferromagnets and antiferro-magnets. Specifically, altermagnets exhibit spin split-ting even in the absence of spin-orbit coupling, despite having zero net magnetization. Such a situation typi-cally realizes when the opposite-spin sublattices are con-nected by rotation but not by translation or inversion. Spin splitting in altermagnets has attracted growing in-terest for its potential in spintronic applications, notably spin current generation [11–13, 16, 17].Their character-istic optical responses [18, 19], nonlinear responses [20– 22], the Edelstein effect [23, 24], the peizomagnetic ef-fect [25, 26], as well as their impacts on other phases of matter such as topological phases [27, 28] and super-conductivity [29–34], have also been actively studied. In parallel with theoretical investigations of the characteris-tic phenomena of altermagnets, considerable efforts have been devoted to finding the candidate materials by ab initio calculations [35–39] and group-theoretical consid-erations [40, 41], and to experimental detection in those materials [42–46].  
+
+> ∗mizoguchi@rhodia.ph.tsukuba.ac.jp
+
+In addition to the transport phenomena and optical responses, the response to the static magnetic field also reflects characteristics of the Bloch electrons. In fact, the orbital magnetic susceptibility comprises several contri-butions, including interband processes, a part of which encodes the topology and quantum geometry of the Bloch bands [47–53]. Additionally, when spin degrees of free-dom and orbital motion are coupled, the magnetic sus-ceptibility acquires additional terms originating from this coupling, which are referred to as the orbital-Zeeman (OZ) cross term [54–63]. This cross term also reflects the topological and geometrical aspects of Bloch elec-trons. In altermagnets, the magnetic order parameters possess a characteristic momentum dependence, so it is important to clarify how it affects the OZ cross response. In this paper, we study the OZ term of the mag-netic susceptibility for the two-dimensional altermagnetic Rashba metal [Fig. 1(a)] and the surface Dirac cones of the three-dimensional TI coupled to the altermagnet [Fig. 1(b)] [64]. We first point out that the altermag-netic order parameter alone cannot induce the OZ term; rather, the finite non-relativistic effect is necessary. In this sense, the altermagnetic order plays only a secondary role for the OZ term. For the Rashba metals, we numer-ically calculate χOZ in the low-temperature regime, fo-cusing on its chemical potential ( μ) dependence. We find that it can modify the OZ term both qualitatively and 3D TI  
+
+> Altermagnet
+> Altermagnet
+> (a) (b)
+
+FIG. 1. Schematic figures of (a) the two-dimensional altermagnet and (b) the altermagnet placed on the three-dimensional TI. 
+
+> arXiv:2603.09325v1 [cond-mat.mes-hall] 10 Mar 2026
+
+2(a)  (b) 
+
+(c)  (d) 
+
+(e)  (f)                    
+
+> FIG. 2. Band structures for the s-wave case with (a) J= 0 .3and (b) J= 0 .6, the p-wave case with (c) J= 0 .3 and (d)
+> J= 0 .6, and the d-wave case with (e) J= 0 .3 and (f) J= 0 .6. We set ℏ2
+> m= 1 and λ= 0 .3.
+
+quantitatively. To be specific, we find that the p-wave order parameter exerts a rather limited influence on the OZ term, whereas the d-wave one causes a sign change of it when the order parameter becomes sufficiently large. For the TI surface, we obtain the analytical expressions for χOZ at T = 0, and find that the p-wave order pa-rameter retains the step-function-type dependence of the OZ term as a function of the chemical potential associ-ated with the jump at μ = 0, observed in the TI surface without magnetism, but its magnitude is reduced. For the d-wave case, the magnitude of jump at μ = 0 is pre-served but the OZ term decreases as increasing |μ|. In addition, we also remark on the quantization of the jump with respect to the Berry curvature. The rest of this paper is structured as follows. In Sec. II, we introduce the model. In Sec. III, we present the theoretical formulation to calculate χOZ . Our main results are presented in Sec. IV, where we show the nu-merical results on the Rashba metal, and the analytic result for the TI surface. Finally, we summarize this pa-per in Sec. V. In what follows, ℏ represents the reduced Planck con-stant, e (< 0) represents the electron charge, m repre-sents the electron mass, μB represents the Bohr magne-ton, and kB stands for the Boltzmann constant.  
+
+> II. MODEL
+
+We consider the Rashba metal and the surface Dirac cones of TIs in the presence of the altermagnetic order pa-rameters with the out-of-plane N´ eel vector. The Hamil-tonian in the momentum space reads 
+
+Hk = h0
+
+> k
+
+σ0 + hk · σ, (1) where hk = ( h1
+
+> k
+
+, h 2
+
+> k
+
+, h 3
+
+> k
+
+) with h1 
+
+> k
+
+= −λk y , h2 
+
+> k
+
+= λk x,and h3 
+
+> k
+
+= JX ℓ
+
+> k
+
+. Here, σ0 stands for the 2 × 2 identity matrix and σ = ( σx, σ y , σ z ) are the Pauli matrices that represent the spin degrees of freedom. Xℓ 
+
+> k
+
+describes the symmetry of the altermagnet with the ℓ-wave: 
+
+Xℓ 
+
+> k
+
+=
+
+
+
+1 ℓ = s,
+
+kx ℓ = p,2kxky ℓ = d. 
+
+(2) 
+
+J (≥ 0) is the strength of the (alter)magnetic order pa-rameter. Note that the s-wave corresponds to the con-ventional ferromagnet, which we consider for the pur-pose of comparison with the altermagnet. As for h0
+
+> k
+
+,when considering the Rashba metal, we set h0 
+
+> k
+
+= ℏ2k2
+
+> 2m
+
+(k =
+
+q
+
+k2 
+
+> x
+
++ k2 
+
+> y
+
+). In that case, λ stands for the coupling constant of the Rashba spin-orbit coupling. For the TI surface, we set h0 
+
+> k
+
+= 0, and in that case λ corresponds to λ = ℏvF where vF is the Fermi velocity of the Dirac cone. In what follows, the band structure plays an impor-tant role in discussing χOZ of Rashba metals. In Fig. 2, we plot the band structures for the s-, p-, and d-wave cases. We see two key features. First, the upper and the lower bands are gapped for the s-wave case, whereas the gap closes at k = 0 for p- and d-wave cases, which is attributed to the nodal structure of the order parame-ters. Second, only in the d-wave case, the lower band has no lower bound when J is sufficiently large. Specifically, we find that a band structure unbounded from below is realized when J > ℏ2 
+
+> 2m
+
+. 
+
+> III. ORBITAL-ZEEMAN CROSS CORRELATION
+
+We calculate the magnetic susceptibility for the cross correlation between the orbital and Zeeman effects, χOZ ,whose microscopic derivation has been given in Refs. [56, 58, 60, 63]. We consider the case where the magnetic field is in the z-direction, which is perpendicular to the 3two-dimensional plane and is parallel to the N´ eel vector. In this case, χOZ is given as 
+
+χOZ = i|e|μB
+
+ℏ
+
+kBTV
+
+X
+
+> n, k
+
+Tr σ3GγxGγy G − (x ↔ y) , (3) where 
+
+G =( iω n + μ − Hk)−1 = 1(iω n − ξk,+)( iω n − ξk,−)
+
+×
+
+iω n + μ − h0 
+
+> k
+
++ h3 
+
+> k
+
+h1 
+
+> k
+
+− ih 2
+
+> k
+
+h1 
+
+> k
+
++ ih 2 
+
+> k
+
+iω n + μ − h0 
+
+> k
+
+− h3
+
+> k
+
+
+
+(4) is the Matsubara Green’s function with ωn = (2 n +1) πk BT , γν = ∂kν Hk is the velocity operator in ν-direction multiplied by ℏ, and V is the area of the two dimensional system. In Eq. (4), we have used ξk,± =
+
+h0 
+
+> k
+
+± hk − μ, with hk := |hk|. For later use, we fur-ther define Ω k(iω n) := iω n + μ − h0 
+
+> k
+
+= iω n − ξ0
+
+> k
+
+, with 
+
+ξ0 
+
+> k
+
+:= h0 
+
+> k
+
+− μ.Taking the trace in Eq. (3), we have Tr σ3GγxGγy G − (x ↔ y)
+
+= 4iλ 2
+
+(iω n − ξk,+)3(iω n − ξk,−)33X
+
+> j=0
+
+P ℓ 
+
+> k,j
+
+Ωj , (5) where P ℓ 
+
+> k,j
+
+’s are given as 
+
+P ℓ 
+
+> k,0
+
+= Y · − ℏ2k2
+
+m h2
+
+> k
+
+, (6a) 
+
+P ℓ 
+
+> k,1
+
+= −h2 
+
+> k
+
+(6b) 
+
+P ℓ 
+
+> k,2
+
+= Y · ℏ2 k2
+
+m (6c) and 
+
+P ℓ 
+
+> k,3
+
+= 1 , (6d) where Y = 1(0) for the Rashba metal (the TI surface). Note that P ℓ 
+
+> k,2
+
+and P ℓ 
+
+> k,3
+
+do not depend on ℓ. In Eq. (5), we see χOZ = 0 if λ = 0, which means that the altermag-net alone cannot induce the OZ cross response. In fact, the spin is the good quantum number for λ = 0, meaning that G and γj are the diagonal matrices. Therefore, we have σ3GγxGγy G = σ3Gγy GγxG as all the matrices com-mute with each other, resulting in the vanishing of χOZ .To proceed further, we need to perform the summation over the Matsubara frequency. After some algebras (see Appendix A), we have the following expression: 
+
+χOZ 
+
+= −4λ2|e|μB
+
+ℏ
+
+Z d2k
+
+(2 π)2
+
+" X
+
+> α=±
+
+Gℓ, (0)  
+
+> k,α
+
+f (ξk,α ) + Gℓ, (1)  
+
+> k,α
+
+f ′(ξk,α )
+
+#
+
+,
+
+(7) where 
+
+Gℓ, (0)  
+
+> k,α
+
+= α
+
+ 316 h5
+
+> k
+
+P ℓ 
+
+> k,0
+
+− 116 h3
+
+> k
+
+P ℓ
+
+> k,2
+
+
+
+= − Y α 
+
+4h3
+
+> k
+
+ℏ2k2
+
+m , (8a) and 
+
+Gℓ, (1) 
+
+> k,α
+
+= − 316 h4
+
+> k
+
+P ℓ 
+
+> k,0
+
+− α 116 h3
+
+> k
+
+P ℓ 
+
+> k,1
+
++ 116 h2
+
+> k
+
+P ℓ 
+
+> k,2
+
++ α 316 hk
+
+P ℓ
+
+> k,3
+
+= α
+
+4hk
+
++ Y
+
+4h2
+
+> k
+
+ℏ2k2
+
+m , (8b) where f (x) = 1  
+
+> ex/k BT+1
+
+is the Fermi-Dirac distribution function and f ′(x) is its derivative. It is to be noted that the term proportional to f vanishes for the TI surface. Without the altermagnet, (i.e., J = 0), analytic results are obtained for several cases, which correspond to the results of the previous works [55, 56]. We summarize those results in Appendices B and C. Note also that, for the TI surface, we derive the explicit forms of χOZ at any temperature for the s- and p-wave cases, and at T = 0 for the d-wave case. These results are also presented in Appendix C. 
+
+IV. RESULTS A. Rashba metal 
+
+For the Rashba metal, we perform the integration over 
+
+k numerically. We set kBT = 0 .01 and ℏ2 
+
+> m
+
+= 1. For the integration over k, we employ the radial coordi-nate R d2k 
+
+> (2 π)2
+
+→ 1(2 π)2
+
+R kc 
+
+> 0
+
+kdk R 2π 
+
+> 0
+
+dθ , where ( kx, k y ) = (k cos θ, k sin θ) and kc is the momentum cut-off. Here we set kc = 6 π, which is far away from the Fermi surface except for the case of the d-wave with large J.Figure 3 shows the μ dependence of χOZ for the Rashba metal with λ = 0 .3. For comparison, we also plot the case of J = 0, which exhibits the diamagnetic susceptibility around μ = 0. For the s-wave, which opens the band gap at k = 0, χOZ is suppressed when μ lies in that gap [i.e., the case where only one Fermi surface remains as shown in Figs. 2(a) and 2(b)], and it has minima at the edge of that gap. In the p-wave case, the diamagnetic suscepti-bility is monotonically suppressed as J increases, which indicates that the p-wave order parameter affects the OZ term only in a quantitative manner. In contrast to the 
+
+p-wave, we see a prominent change for d-wave. Namely, for sufficiently large J [i.e., J = 0 .6 in Fig. 3(c)], we see that χOZ becomes positive for μ ≲ −0.069. This param-agnetic χOZ may be attributed to the unbounded lower band [Fig. 2(f)]. It then turns negative, and the diamag-netic susceptibility at the minimum of χOZ is enhanced compared with the J = 0 case. 4-0.3 -0.2 -0.1 0.0 0.1 0.2 0.3 
+
+-1.5 
+
+-1.0 
+
+-0.5 
+
+0.0 
+
+0.5 
+
+-0.3 -0.2 -0.1 0.0 0.1 0.2 0.3 
+
+-1.2 
+
+-1.0 
+
+-0.8 
+
+-0.6 
+
+-0.4 
+
+-0.2 
+
+0.0 
+
+-0.3 -0.2 -0.1 0.0 0.1 0.2 0.3 
+
+-1.2 
+
+-1.0 
+
+-0.8 
+
+-0.6 
+
+-0.4 
+
+-0.2 
+
+0.0 
+
+(a) 
+
+(b) 
+
+(c) 
+
+<latexit sha1_base64="teHbf0rCzt3x2E5cxp12KyN1Q7M=">AAACsnichVE9S8NQFD2NX7V+tOoiuBRLxam8SlFxKro4Vmur2BZJ4rOG5ovkpaDFPyC42sFJwUH8GS4ujg79CeJYwcXBmzQgKtYbknfeeefcvHuvYuuaKxjrRKSBwaHhkehobGx8YjKemJouu5bnqLykWrrl7Cmyy3XN5CWhCZ3v2Q6XDUXnu0pjwz/fbXLH1SxzR5zYvGbIdVM70lRZEFWsGt5BIsUyLIjkb5ANQQphFKzEE6o4hAUVHgxwmBCEdchw6akgCwabuBpaxDmEtOCc4wwx8nqk4qSQiW3Qt067SsiatPdzuoFbpb/o9DrkTCLNntkd67JHds9e2MefuVpBDv8uJ7QqPS+3D+Lns8X3f10GrQLHX64+DoXUvq5fVQJHWA2q0ag6O2D8OtU+3fAzO4QbhEWgo7s0T9vd4tp2urXAbtgr9eKaddgDdcNsvqm3W3z7CjEaZvbn6H6D8lImu5xZ3sql8uvhWKOYwzwWaXYryGMTBZToPnVc4BJtKSftS7Kk9qRSJPTM4FtI+idvGZng</latexit> 
+
+μ <latexit sha1_base64="teHbf0rCzt3x2E5cxp12KyN1Q7M=">AAACsnichVE9S8NQFD2NX7V+tOoiuBRLxam8SlFxKro4Vmur2BZJ4rOG5ovkpaDFPyC42sFJwUH8GS4ujg79CeJYwcXBmzQgKtYbknfeeefcvHuvYuuaKxjrRKSBwaHhkehobGx8YjKemJouu5bnqLykWrrl7Cmyy3XN5CWhCZ3v2Q6XDUXnu0pjwz/fbXLH1SxzR5zYvGbIdVM70lRZEFWsGt5BIsUyLIjkb5ANQQphFKzEE6o4hAUVHgxwmBCEdchw6akgCwabuBpaxDmEtOCc4wwx8nqk4qSQiW3Qt067SsiatPdzuoFbpb/o9DrkTCLNntkd67JHds9e2MefuVpBDv8uJ7QqPS+3D+Lns8X3f10GrQLHX64+DoXUvq5fVQJHWA2q0ag6O2D8OtU+3fAzO4QbhEWgo7s0T9vd4tp2urXAbtgr9eKaddgDdcNsvqm3W3z7CjEaZvbn6H6D8lImu5xZ3sql8uvhWKOYwzwWaXYryGMTBZToPnVc4BJtKSftS7Kk9qRSJPTM4FtI+idvGZng</latexit> 
+
+μ <latexit sha1_base64="teHbf0rCzt3x2E5cxp12KyN1Q7M=">AAACsnichVE9S8NQFD2NX7V+tOoiuBRLxam8SlFxKro4Vmur2BZJ4rOG5ovkpaDFPyC42sFJwUH8GS4ujg79CeJYwcXBmzQgKtYbknfeeefcvHuvYuuaKxjrRKSBwaHhkehobGx8YjKemJouu5bnqLykWrrl7Cmyy3XN5CWhCZ3v2Q6XDUXnu0pjwz/fbXLH1SxzR5zYvGbIdVM70lRZEFWsGt5BIsUyLIjkb5ANQQphFKzEE6o4hAUVHgxwmBCEdchw6akgCwabuBpaxDmEtOCc4wwx8nqk4qSQiW3Qt067SsiatPdzuoFbpb/o9DrkTCLNntkd67JHds9e2MefuVpBDv8uJ7QqPS+3D+Lns8X3f10GrQLHX64+DoXUvq5fVQJHWA2q0ag6O2D8OtU+3fAzO4QbhEWgo7s0T9vd4tp2urXAbtgr9eKaddgDdcNsvqm3W3z7CjEaZvbn6H6D8lImu5xZ3sql8uvhWKOYwzwWaXYryGMTBZToPnVc4BJtKSftS7Kk9qRSJPTM4FtI+idvGZng</latexit> 
+
+μ
+
+> <latexit  sha1_base64="YjM79/yIH/Fi/BF8Kb7IFlFeOUg=">AAACvHichVG7SgNBFD1Z3/EVtRFsgkGxChMRFQsJ2tipiVExCWF3M9Eh+3J3EtCQH/AHLGxUsBA/w8bG0iKfIJYKNhbeXRdEg/Euu3PmzDl3596rOYbwJGOtiNLV3dPb1z8QHRwaHhmNjY3venbN1XlOtw3b3ddUjxvC4jkppMH3HZerpmbwPa267p/v1bnrCdvakScOL5rqoSUqQlclUcWCfiRKjYJrxjcPmqVYgiVZEPF2kApBAmFs2bFHFFCGDR01mOCwIAkbUOHRk0cKDA5xRTSIcwmJ4JyjiSh5a6TipFCJrdL3kHb5kLVo7+f0ArdOfzHodckZxwx7YrfslT2wO/bMPv7M1Qhy+Hc5oVX78nKnNHo2mX3/12XSKnH07erg0Ejt6zpVJVHBclCNoOqcgPHr1Dt0w8/sEq4SloGO7lI/PX/NrmRmGrPsmr1QL65Yi91TN6z6m36zzTMXiNIwU79H1w5255OpxeTi9kIivRaOtR9TmMYczW4JaWxgCzm6zzHOcYkrZVUpK1XF/JIqkdAzgR+h1D8BdzWd8Q==</latexit>
+> ωOZ
+> <latexit  sha1_base64="YjM79/yIH/Fi/BF8Kb7IFlFeOUg=">AAACvHichVG7SgNBFD1Z3/EVtRFsgkGxChMRFQsJ2tipiVExCWF3M9Eh+3J3EtCQH/AHLGxUsBA/w8bG0iKfIJYKNhbeXRdEg/Euu3PmzDl3596rOYbwJGOtiNLV3dPb1z8QHRwaHhmNjY3venbN1XlOtw3b3ddUjxvC4jkppMH3HZerpmbwPa267p/v1bnrCdvakScOL5rqoSUqQlclUcWCfiRKjYJrxjcPmqVYgiVZEPF2kApBAmFs2bFHFFCGDR01mOCwIAkbUOHRk0cKDA5xRTSIcwmJ4JyjiSh5a6TipFCJrdL3kHb5kLVo7+f0ArdOfzHodckZxwx7YrfslT2wO/bMPv7M1Qhy+Hc5oVX78nKnNHo2mX3/12XSKnH07erg0Ejt6zpVJVHBclCNoOqcgPHr1Dt0w8/sEq4SloGO7lI/PX/NrmRmGrPsmr1QL65Yi91TN6z6m36zzTMXiNIwU79H1w5255OpxeTi9kIivRaOtR9TmMYczW4JaWxgCzm6zzHOcYkrZVUpK1XF/JIqkdAzgR+h1D8BdzWd8Q==</latexit>
+> ωOZ
+> <latexit  sha1_base64="YjM79/yIH/Fi/BF8Kb7IFlFeOUg=">AAACvHichVG7SgNBFD1Z3/EVtRFsgkGxChMRFQsJ2tipiVExCWF3M9Eh+3J3EtCQH/AHLGxUsBA/w8bG0iKfIJYKNhbeXRdEg/Euu3PmzDl3596rOYbwJGOtiNLV3dPb1z8QHRwaHhmNjY3venbN1XlOtw3b3ddUjxvC4jkppMH3HZerpmbwPa267p/v1bnrCdvakScOL5rqoSUqQlclUcWCfiRKjYJrxjcPmqVYgiVZEPF2kApBAmFs2bFHFFCGDR01mOCwIAkbUOHRk0cKDA5xRTSIcwmJ4JyjiSh5a6TipFCJrdL3kHb5kLVo7+f0ArdOfzHodckZxwx7YrfslT2wO/bMPv7M1Qhy+Hc5oVX78nKnNHo2mX3/12XSKnH07erg0Ejt6zpVJVHBclCNoOqcgPHr1Dt0w8/sEq4SloGO7lI/PX/NrmRmGrPsmr1QL65Yi91TN6z6m36zzTMXiNIwU79H1w5255OpxeTi9kIivRaOtR9TmMYczW4JaWxgCzm6zzHOcYkrZVUpK1XF/JIqkdAzgR+h1D8BdzWd8Q==</latexit>
+> ωOZ
+
+s-wave 
+
+J = 0 
+
+p-wave 
+
+d-wave 
+
+FIG. 3. μ dependence of χOZ for the Rashba metal for λ = 0 .3 and (a) J = 0 .1, (b) J = 0 .3, and (c) J = 0 .6. The unit of the vertical axis is |e|μB
+
+2πℏ .
+
+B. Topological insulator surface 
+
+As we have mentioned in the previous section, for the TI surface, we can perform the integration over k ana-lytically. The detailed derivation is given in Appendix C; here we summarize the results for T = 0. For the s-wave magnet, we have 
+
+χOZ = |e|μB
+
+2πℏ [Θ( μ − J) + Θ( J + μ) − 1] , (9) for the p-wave magnet, we have 
+
+χOZ = sgn( μ) |e|μB
+
+2πℏ
+
+λ
+
+√λ2 + J2 , (10) and for the d-wave magnet, we have 
+
+χOZ = sgn( μ) |e|μB
+
+ℏ
+
+K(w)
+
+π2√1 + w , (11) where Θ( x) represents the step function, w = 4J2μ2
+
+λ4 , and 
+
+K(x) is the complete elliptic integral of the first kind. Note that for J = 0, i.e., the TI surface without mag-netism, we have 
+
+χOZ = sgn( μ) |e|μB
+
+2πℏ . (12) Note also that the results for the s-wave magnet as well as J = 0 as a limit of that were obtained by Ref. 55. -1.0 -0.5 0.0 0.5 1.0 
+
+-1.0 
+
+-0.5 
+
+0.0 
+
+0.5 
+
+1.0 
+
+<latexit sha1_base64="teHbf0rCzt3x2E5cxp12KyN1Q7M=">AAACsnichVE9S8NQFD2NX7V+tOoiuBRLxam8SlFxKro4Vmur2BZJ4rOG5ovkpaDFPyC42sFJwUH8GS4ujg79CeJYwcXBmzQgKtYbknfeeefcvHuvYuuaKxjrRKSBwaHhkehobGx8YjKemJouu5bnqLykWrrl7Cmyy3XN5CWhCZ3v2Q6XDUXnu0pjwz/fbXLH1SxzR5zYvGbIdVM70lRZEFWsGt5BIsUyLIjkb5ANQQphFKzEE6o4hAUVHgxwmBCEdchw6akgCwabuBpaxDmEtOCc4wwx8nqk4qSQiW3Qt067SsiatPdzuoFbpb/o9DrkTCLNntkd67JHds9e2MefuVpBDv8uJ7QqPS+3D+Lns8X3f10GrQLHX64+DoXUvq5fVQJHWA2q0ag6O2D8OtU+3fAzO4QbhEWgo7s0T9vd4tp2urXAbtgr9eKaddgDdcNsvqm3W3z7CjEaZvbn6H6D8lImu5xZ3sql8uvhWKOYwzwWaXYryGMTBZToPnVc4BJtKSftS7Kk9qRSJPTM4FtI+idvGZng</latexit> 
+
+## μ
+
+> <latexit  sha1_base64="YjM79/yIH/Fi/BF8Kb7IFlFeOUg=">AAACvHichVG7SgNBFD1Z3/EVtRFsgkGxChMRFQsJ2tipiVExCWF3M9Eh+3J3EtCQH/AHLGxUsBA/w8bG0iKfIJYKNhbeXRdEg/Euu3PmzDl3596rOYbwJGOtiNLV3dPb1z8QHRwaHhmNjY3venbN1XlOtw3b3ddUjxvC4jkppMH3HZerpmbwPa267p/v1bnrCdvakScOL5rqoSUqQlclUcWCfiRKjYJrxjcPmqVYgiVZEPF2kApBAmFs2bFHFFCGDR01mOCwIAkbUOHRk0cKDA5xRTSIcwmJ4JyjiSh5a6TipFCJrdL3kHb5kLVo7+f0ArdOfzHodckZxwx7YrfslT2wO/bMPv7M1Qhy+Hc5oVX78nKnNHo2mX3/12XSKnH07erg0Ejt6zpVJVHBclCNoOqcgPHr1Dt0w8/sEq4SloGO7lI/PX/NrmRmGrPsmr1QL65Yi91TN6z6m36zzTMXiNIwU79H1w5255OpxeTi9kIivRaOtR9TmMYczW4JaWxgCzm6zzHOcYkrZVUpK1XF/JIqkdAzgR+h1D8BdzWd8Q==</latexit>
+> ωOZ
+
+s-wave 
+
+J = 0 
+
+p-wave 
+
+d-wave 
+
+FIG. 4. μ dependence of χOZ for the TI surface with λ = 1 and T = 0. The unit of the vertical axis is |e|μB
+
+2πℏ .
+
+In Fig. 4, we plot the μ dependence of χOZ at T = 0 with λ = 1 and J = 0 .5; for comparison, we also plot the case of J = 0. We see a jump of χOZ at μ = 0 for J = 0, the p-wave, and the d-wave cases, and μ = ±J for the 
+
+s-wave case. As for the magnitude of the jump, we see that ∆ χOZ := |e|μB
+
+πℏ for J = 0 and the d-wave case, which is the universal value, whereas ∆ χOZ := λ√λ2+J2
+
+|e|μB
+
+πℏ for the p-wave, which is parameter dependent. For the s-wave, we see two jumps each of which has half of the magnitude of the J = 0 value. In addition to the jump, we also find that, except for the d-wave case, χOZ exhibits the step-function μ depen-dence, namley, χOZ ∝ sgn( μ) for J = 0 and the p-wave, and χOZ ∝ [Θ( μ − J) + Θ( J + μ) − 1] for the s-wave. For the d-wave, on the other hand, |χOZ | decreases as increasing |μ|.Finally, we address the origin of the quantized jump width in χOZ observed for the J = 0 and s-wave order parameters, both of which have particle-hole symmetry. Half of the contribution is interpreted as the orbital mag-netization induced by the Zeeman field [54, 58, 60, 63]: For our two-band systems with particle-hole symmetry, the orbital magnetization at zero temperature is ex-pressed as [65–69] 
+
+Mz (B) = |e|μ
+
+ℏ
+
+X
+
+k,±
+
+Ω±
+
+z (k)Θ( μ − E±
+
+k (B)) , (13) where E±
+
+k (B) and Ω ±
+
+z (k) represent the energy dispersion of the conduction/valence band and its Berry curvature, respectively. These expressions indicate that the Berry-curvature ef-fect leads to the quantization of the jump, which is robust against spin-orbit coupling. We expect that the same mechanism is responsible for the d-wave order parameter case, which also possesses particle-hole symmetry. 
+
+V. SUMMARY 
+
+We have studied the orbital-Zeeman cross correlation of the altermagnets. We have considered the two cases, namely, the altermagnet in the presence of the Rashba spin-orbit coupling and the altermagnet coupled to the 5surface Dirac cone of the three-dimensional TI. Although the effect of the altermagnetic order parameter is limited to be secondary, we find several characteristic features. For the Rashba metal, we find that the p-wave order pa-rameter causes only quantitative changes in χOZ , whereas the d-wave can cause the qualitative change, such as the sign change, if the order parameter is large enough. For the TI surface, we obtain the analytical expressions for 
+
+χOZ . To be precise, we obtain the full chemical poten-tial and temperature dependence for the p-wave case, whereas for the d-wave case the analytic form is limited to the zero temperature. Focusing on the chemical potential dependence at the zero temperature, we find that the p-wave order parameter retains the step-function-type de-pendence of the OZ term as a function of the chemical potential associated with the jump at μ = 0, observed in the TI surface without magnetism, but its magnitude becomes parameter dependent rather than the universal value. For the d-wave case, the jump at μ = 0 is the universal value as is the case with J = 0, but the OZ term decreases as increasing |μ|, which is dictated by the complete elliptic integral of the first kind. We have also elucidated that the quantization of the jump for the s-wave case originates from the Berry curvature effect. 
+
+ACKNOWLEDGMENTS 
+
+We thank Masao Ogata, Nobuyuki Okuma, and Ikuma Tateishi for fruitful discussions. This work is supported by JSPS KAKENHI, Grant No. JP23K03243 (TM). 
+
+Appendix A: Derivation of Eq. (7) 
+
+Here we describe the details of the summation over Matsubara frequency in Eq. (5). As is the standard method using the residue integral, we have 
+
+kBT X
+
+> n
+
+Ωj
+
+(iω n − ξk,+)3(iω n − ξk,−)3
+
+= 12 [Qj (ξ+; ξ−) + Qj (ξ−; ξ+)] , (A1) where 
+
+Qj (x; y) = d2
+
+dx 2
+
+ f (x)(Ω k(x)) j
+
+(x − y)3
+
+
+
+. (A2) The explicit forms of Qj (x; y) are 
+
+Q0(x; y) = f ′′ (x)(x − y)3 − 6f ′(x)(x − y)4 + 12 f (x)(x − y)5 , (A3a) 
+
+Q1(x; y) = (x − ξ0)(x − y)3 f ′′ (x) + 
+
+ 2(x − y)3 − 6( x − ξ0)(x − y)4
+
+
+
+f ′(x)+
+
+ 12( x − ξ0)(x − y)5 − 6(x − y)4
+
+
+
+f (x), (A3b) 
+
+Q2(x; y) = (x − ξ0)2
+
+(x − y)3 f ′′ (x) + 
+
+ 4( x − ξ0)(x − y)3 − 6( x − ξ0)2
+
+(x − y)4
+
+
+
+f ′(x)+
+
+ 12( x − ξ0)2
+
+(x − y)5 − 12( x − ξ0)(x − y)4 + 2(x − y)3
+
+
+
+f (x),
+
+(A3c) and 
+
+Q3(x; y) = (x − ξ0)3
+
+(x − y)3 f ′′ (x) + 
+
+ 6( x − ξ0)2
+
+(x − y)3 − 6( x − ξ0)3
+
+(x − y)4
+
+
+
+f ′(x)+
+
+ 12( x − ξ0)3
+
+(x − y)5 − 18( x − ξ0)2
+
+(x − y)4 + 6( x − ξ0)(x − y)3
+
+
+
+f (x).
+
+(A3d) Using these, we have 
+
+kBT X
+
+> n
+
+1(iω n − ξk,+)3(iω n − ξk,−)3
+
+= 3[ f (ξ+) − f (ξ−)] 16 h5 − 3[ f ′(ξ+) + f ′(ξ−)] 16 h4 + f ′′ (ξ+) − f ′′ (ξ−)16 h3 ,
+
+(A4a) 
+
+kBT X
+
+> n
+
+Ω(iω n − ξk,+)3(iω n − ξk,−)3
+
+= − f ′(ξ+) − f ′(ξ−)16 h3 + f ′′ (ξ+) + f ′′ (ξ−)16 h2 , (A4b) 
+
+kBT X
+
+> n
+
+Ω2
+
+(iω n − ξk,+)3(iω n − ξk,−)3
+
+= − [f (ξ+) − f (ξ−)] 16 h3 + f ′(ξ+) + f ′(ξ−)16 h2 + f ′′ (ξ+) − f ′′ (ξ−)16 h ,
+
+(A4c) and 
+
+kBT X
+
+> n
+
+Ω3
+
+(iω n − ξk,+)3(iω n − ξk,−)3
+
+= 3[ f ′(ξ+) − f ′(ξ−)] 16 h + f ′′ (ξ+) + f ′′ (ξ−)16 . (A4d) Here, we use the shorthand h to denote hk. Substituting these into Eq. (5), we obtain the form of Eq. (7). Notice that the term proportional to f ′′ vanishes for both the Rashba metal and the TI surface. 
+
+Appendix B: Analytic results for Rashba metal 
+
+In this appendix, we show the analytic result on the Rashba metal without the altermagnetic order parame-ter, which was obtained by Ref. 56. In this case, we have 
+
+G(0)  
+
+> α
+
+= − αℏ2
+
+4mλ 3k , (B1) and 
+
+G(1)  
+
+> α
+
+= ℏ2
+
+4mλ 2 + α
+
+4λk . (B2) Thus, we have 6-0.3 -0.2 -0.1 0.0 0.1 0.2 0.3 
+
+-2.0 
+
+-1.5 
+
+-1.0 
+
+-0.5 
+
+0.0 
+
+εmin  
+
+> <latexit sha1_base64="teHbf0rCzt3x2E5cxp12KyN1Q7M=">AAACsnichVE9S8NQFD2NX7V+tOoiuBRLxam8SlFxKro4Vmur2BZJ4rOG5ovkpaDFPyC42sFJwUH8GS4ujg79CeJYwcXBmzQgKtYbknfeeefcvHuvYuuaKxjrRKSBwaHhkehobGx8YjKemJouu5bnqLykWrrl7Cmyy3XN5CWhCZ3v2Q6XDUXnu0pjwz/fbXLH1SxzR5zYvGbIdVM70lRZEFWsGt5BIsUyLIjkb5ANQQphFKzEE6o4hAUVHgxwmBCEdchw6akgCwabuBpaxDmEtOCc4wwx8nqk4qSQiW3Qt067SsiatPdzuoFbpb/o9DrkTCLNntkd67JHds9e2MefuVpBDv8uJ7QqPS+3D+Lns8X3f10GrQLHX64+DoXUvq5fVQJHWA2q0ag6O2D8OtU+3fAzO4QbhEWgo7s0T9vd4tp2urXAbtgr9eKaddgDdcNsvqm3W3z7CjEaZvbn6H6D8lImu5xZ3sql8uvhWKOYwzwWaXYryGMTBZToPnVc4BJtKSftS7Kk9qRSJPTM4FtI+idvGZng</latexit>
+
+μ
+
+> <latexit  sha1_base64="YjM79/yIH/Fi/BF8Kb7IFlFeOUg=">AAACvHichVG7SgNBFD1Z3/EVtRFsgkGxChMRFQsJ2tipiVExCWF3M9Eh+3J3EtCQH/AHLGxUsBA/w8bG0iKfIJYKNhbeXRdEg/Euu3PmzDl3596rOYbwJGOtiNLV3dPb1z8QHRwaHhmNjY3venbN1XlOtw3b3ddUjxvC4jkppMH3HZerpmbwPa267p/v1bnrCdvakScOL5rqoSUqQlclUcWCfiRKjYJrxjcPmqVYgiVZEPF2kApBAmFs2bFHFFCGDR01mOCwIAkbUOHRk0cKDA5xRTSIcwmJ4JyjiSh5a6TipFCJrdL3kHb5kLVo7+f0ArdOfzHodckZxwx7YrfslT2wO/bMPv7M1Qhy+Hc5oVX78nKnNHo2mX3/12XSKnH07erg0Ejt6zpVJVHBclCNoOqcgPHr1Dt0w8/sEq4SloGO7lI/PX/NrmRmGrPsmr1QL65Yi91TN6z6m36zzTMXiNIwU79H1w5255OpxeTi9kIivRaOtR9TmMYczW4JaWxgCzm6zzHOcYkrZVUpK1XF/JIqkdAzgR+h1D8BdzWd8Q==</latexit>
+> ωOZ
+
+kBT = 0.01 
+
+kBT = 0
+
+FIG. 5. μ dependence of χOZ for the Rashba metal with 
+
+λ = 0 .3. The black dots represent the numerical result with 
+
+kBT = 0 .01 and the magenta line represent the result for 
+
+kBT = 0 [Eq. (B13)]. The unit of the vertical axis is |e|μB
+
+2πℏ .
+
+χOZ = − λ2|e|μB
+
+2πℏ
+
+X
+
+α=±
+
+Z ∞
+
+0
+
+dk 
+
+
+
+− αℏ2
+
+mλ 3 f (ξα) + 
+
+ αλ + ℏ2kmλ 2
+
+
+
+f ′(ξα)
+
+
+
+= − λ2|e|μB
+
+2πℏ
+
+X
+
+α=±
+
+Z ∞
+
+0
+
+dk 
+
+
+
+− αℏ2
+
+mλ 3 f (ξα) + 1
+
+λ2
+
+df (ξα)
+
+dk 
+
+
+
+.
+
+(B3) Note that we have used 
+
+dξ α
+
+dk = ℏ2km + αλ = λ2
+
+ αλ + ℏ2kmλ 2
+
+
+
+. (B4) To proceed further, we consider the case of T = 0. We first consider the case of μ > 0. In this case, we have 
+
+Z ∞
+
+0
+
+dkf (ξα) = kF,α , (B5) where kF,α satisfies ξkF,α ,α = 0. To be specific, they are given as 
+
+kF,α = m
+
+ℏ2 −αλ +
+
+r
+
+λ2 + 2 μ ℏ2
+
+m
+
+!
+
+. (B6) We also have 
+
+Z ∞
+
+0
+
+dk df (ξα)
+
+dk = [Θ( −ξk,α )] ∞
+
+0 = −1. (B7) Substituting these, we have 
+
+χOZ (T = 0 , μ > 0) = − λ2|e|μB
+
+2πℏ
+
+ ℏ2
+
+mλ 3 (kF,− − kF,+) − 2
+
+λ2
+
+
+
+=0 . (B8) Note that we have used kF,− − kF,+ = 2mλ 
+
+ℏ2 .For μ < 0, only the band α = − gives the finite con-tribution. In this case, we have 
+
+Z ∞
+
+0
+
+dkf (ξ−) = 
+
+
+
+k(1) F,− − k(2) F,−
+
+
+
+Θ( μ − εmin ), (B9) where εmin = − λ2m
+
+2ℏ2 is the bottom of the lower band, and 
+
+k(1) F,− = m
+
+ℏ2 λ +
+
+r
+
+λ2 + 2 μ ℏ2
+
+m
+
+!
+
+,k(2) F,− = m
+
+ℏ2 λ −
+
+r
+
+λ2 + 2 μ ℏ2
+
+m
+
+!
+
+. (B10) We also have 
+
+Z ∞
+
+0
+
+dk df (ξ−)
+
+dk = [Θ( −ξk, −)] ∞
+
+0 = 0 . (B11) Then, we have 
+
+χOZ (T = 0 , μ < 0) = −Θ( μ − εmin ) |e|μB
+
+2πℏ
+
+ 2
+
+q
+
+λ2 + 2 μ ℏ2
+
+m
+
+λ
+
+ .
+
+(B12) Combining these, we have 
+
+χOZ (T = 0) = − |e|μB
+
+2πℏ
+
+ 2
+
+q
+
+λ2 + 2 μ ℏ2
+
+m
+
+λ
+
+ Θ( −μ)Θ( μ − εmin ).
+
+(B13) Note that χOZ exhibits a jump at μ = 0, where χOZ is minimized, of magnitude |e|μB
+
+πℏ , which is independent of the parameters. In Fig. 5, we plot χOZ of Eq. (B13) for λ = 0 .3, to-gether with the numerical result for kBT = 0 .01. Com-paring these two cases, we see that the minimum of χOZ 
+
+is shifted to the finite μ (< 0) and the value of the mini-mum is largely reduced for kBT = 0 .01. 7
+
+Appendix C: Analytic results for topological insulator surface 
+
+In this appendix, we show the derivations of Eqs. (9)-(12), that are, the analytic results on the TI surface. Note again that the results for J = 0 and the s-wave magnet are consistent with Ref. 55. 
+
+1. J = 0 
+
+For the TI surface without magnetism (i.e., J = 0), we have ξ± = ±λk − μ, h = λk , P1 = −λ2k2, P3 = 1, and 
+
+P0 = P2 = 0, which leads to 
+
+G(0)  
+
+> α
+
+= 0 , (C1) and 
+
+G(1)  
+
+> α
+
+= α
+
+4λk . (C2) Therefore, we have 
+
+χOZ = − 4λ2|e|μB
+
+ℏ
+
+Z d2k
+
+(2 π)2
+
+" X
+
+> α=±
+
+α
+
+4λk f ′(αλk − μ)
+
+#
+
+= |e|μB
+
+2πℏ [2 f (−μ) − 1] . (C3) For T → 0, we have f (−μ) → 1+sgn( μ)2 (if |μ|̸ = 0), thus 
+
+χOZ → sgn( μ) |e|μB 
+
+> 2πℏ
+
+.
+
+2. s-wave magnet 
+
+For the s-wave magnet (i.e., the ordinary ferromag-net), where X = 1, we have h = √λ2k2 + J2 and 
+
+ξ± = ±√λ2k2 + J2 − μ. We then have 
+
+χOZ = − 4λ2|e|μB
+
+ℏ
+
+×
+
+Z d2k
+
+(2 π)2
+
+" X
+
+> α=±
+
+α
+
+4√λ2k2 + J2 f ′(αpλ2k2 + J2 − μ)
+
+#
+
+= |e|μB
+
+2πℏ [f (J − μ) + f (−J − μ) − 1] . (C4) For T → 0, we have χOZ → |e|μB 
+
+> 2πℏ
+
+[Θ( μ−J)+Θ( J +μ)−1]. 
+
+3. p-wave magnet 
+
+For the p-wave magnet, where X = k cos θ, we have 
+
+hk = k√λ2 + J2 cos 2 θ and ξ± = ±k√λ2 + J2 cos 2 θ − μ.We then have 
+
+χOZ = − 4λ2|e|μB
+
+ℏ
+
+Z d2k
+
+(2 π)2
+
+" X
+
+> α=±
+
+α
+
+4hk
+
+f ′(αh k − μ)
+
+#
+
+= − λ2|e|μB
+
+(2 π)2ℏ
+
+Z 2π
+
+> 0
+
+dθ 
+
+ 1
+
+λ2 + J2 cos 2 θ
+
+Z ∞
+
+> 0
+
+dk 
+
+ ∂f (hk − μ)
+
+∂k 
+
+
+
++
+
+ ∂f (−hk − μ)
+
+∂k 
+
+ 
+
+= |e|μB
+
+2πℏ
+
+λ
+
+√λ2 + J2 [2 f (−μ) − 1] . (C5) Note that we have used 
+
+ ∂f (αh k − μ)
+
+∂k 
+
+
+
+=α ∂h k
+
+∂k f ′(αh k − μ)=αpλ2 + J2 cos 2 θf ′(αh k − μ), (C6) and Z 2π
+
+> 0
+
+dθ λ2 + J2 cos 2 θ = 2πλ√λ2 + J2 . (C7) For T → 0, we have χOZ → sgn( μ) |e|μB 
+
+> 2πℏ
+> λ√λ2+J2
+
+.
+
+4. d-wave magnet 
+
+For the d-wave magnet, where X = k2 sin 2 θ,we have hk = pλ2k2 + J2k4 sin 2 2θ and ξ± =
+
+±pλ2k2 + J2k4 sin 2 2θ − μ. In this case, the analyti-cal expression is obtained only when T = 0, so we focus on this case. Before proceeding further, we introduce the Fermi wave number that satisfies hk = |μ|,
+
+kF(θ) = 
+
+vuutq
+
+λ4 + 4 μ2(J2 sin 2 2θ) − λ2
+
+2( J2 sin 2 2θ) . (C8) Note that kF(θ) → |μ| 
+
+> λ
+
+for sin 2 θ → 0. Turning to χOZ at T = 0, we have 
+
+χOZ = − 4λ2|e|μB
+
+ℏ
+
+Z d2k
+
+(2 π)2
+
+" X
+
+> α=±
+
+α
+
+4hk
+
+f ′(αh k − μ)
+
+#
+
+=sgn( μ) λ2|e|μB
+
+(2 π)2ℏ
+
+Z 2π
+
+> 0
+
+dθ 
+
+Z ∞
+
+> 0
+
+dk khk
+
+δ(hk − | μ|)=sgn( μ) λ2|e|μB
+
+(2 π)2ℏ
+
+Z 2π
+
+> 0
+
+dθ 
+
+"
+
+khk
+
+ ∂h k
+
+∂k 
+
+−1#
+
+> k=kF(θ)
+
+=sgn( μ) λ2|e|μB
+
+(2 π)2ℏ
+
+Z 2π
+
+> 0
+
+dθ 1
+
+q
+
+1 + 4 J2μ2 
+
+> λ4
+
+sin 2 2θ
+
+= |e|μB
+
+ℏ sgn( μ) K(w)
+
+π2√1 + w , (C9) where w and K(x) are given as defined in the main text. Note that the jump at μ = 0 is the same value as that of 
+
+J = 0, since K(0) = π 
+
+> 2
+
+.8
+
+Appendix D: Detailed calculations of χOZ using the orbital magnetization 
+
+In this section, we present the detailed calculation of 
+
+χOZ using the orbital magnetization. First, we consider 
+
+s-wave order parameter case. Next, we discuss J = 0 case by taking J → 0 limit. 
+
+1. Basic properties of Hamiltonian 
+
+The Hamiltonian in the momentum space under a Zee-man field reads 
+
+Hk =
+
+ ∆ λ(−ky − ik x)
+
+λ(−ky + ik x) −∆
+
+
+
+, (D1) with ∆ = J + μBB (∆ > 0). This Hamiltonian has particle-hole symmetry: 
+
+CH kC−1 = −H−k, (D2) with C = σxK, where K is the complex conjugation oper-ator. The wave functions for the valence and conduction bands are given as 
+
+|ψ− 
+
+> k
+
+⟩ =
+
+ ηk
+
+> 2
+
+−ie iθ k ηk
+
+> 2
+
+
+
+, for E− 
+
+> k
+
+= −Ek (D3) and 
+
+|ψ+ 
+
+> k
+
+⟩ =
+
+−ie −iθ k ηk
+
+> 2
+> ηk
+> 2
+
+
+
+, for E+ 
+
+> k
+
+= Ek, (D4) where Ek = √λ2k2 + ∆ 2, tan ηk = λk  
+
+> ∆
+
+(0 ≤ ηk < π 
+
+> 2
+
+), and 
+
+θk is the polar angle corresponding to ( kx, k y ) (0 ≤ θk <
+
+2π). We confirm C |ψ+ 
+
+> k
+
+⟩ = |ψ−−k⟩ and C |ψ− 
+
+> k
+
+⟩ = |ψ+
+
+> −k
+
+⟩.The Berry curvatures for the valence and conduction bands are Ω± 
+
+> z
+
+(k) = i
+
+ ∂ψ ±
+
+> k
+
+∂k x
+
+∂ψ ±
+
+> k
+
+∂k y
+
+
+
+− c.c. 
+
+
+
+= ∓ 12
+
+λ2∆
+
+E3
+
+> k
+
+. (D5) We note that the d-wave case is also particle-hole sym-metric but p-wave case is not. 
+
+2. Calculation of χOZ 
+
+The integral of (13) is performed as follows. 
+
+Mz = |e|μV 
+
+2πℏ
+
+X
+
+> ±
+
+Z ∞
+
+> 0
+
+dk k Ω± 
+
+> z
+
+(k)Θ( μ − E± 
+
+> k
+
+). (D6) (i) μ < −| ∆| case: 
+
+Mz = |e|μV 
+
+2πℏ
+
+Z ∞
+
+√μ2−∆2/λ 
+
+kλ 2∆2( λ2k2 + ∆ 2)3/2 dk = − |e|∆V
+
+4πℏ .
+
+(D7) Substituting ∆ → J + μBB and expanding with respect to B, we obtain 12 χOZ = 1
+
+V∂M z
+
+∂B = − |e|μB
+
+4πℏ . (D8) (ii) −| ∆| < μ < |∆| case: 
+
+Mz = |e|μV 
+
+2πℏ
+
+Z ∞
+
+> 0
+
+k · λ2∆2( λ2k2 + ∆ 2)3/2 dk = |e|μV 
+
+4πℏ . (D9) Therefore, 12 χOZ = 1
+
+V∂M z
+
+∂B = 0 . (D10) (iii) |∆| < μ case: 
+
+Mz = |e|μV 
+
+2πℏ
+
+ 12 +
+
+Z √μ2−∆2/λ 
+
+> 0
+
+−k · λ2∆2( λ2k2 + ∆ 2)3/2 dk 
+
+
+
+= |e|∆V
+
+4πℏ . (D11) Substituting ∆ → J + μBB and expanding with respect to B, we obtain 12 χOZ = 1
+
+V∂M z
+
+∂B = |e|μB
+
+4πℏ . (D12) In summary, χOZ is given as 
+
+χOZ = |e|μB
+
+2πℏ sgn( μ)Θ( |μ| − J), (D13) which is exactly the same as the value obtained in the main text at T = 0. Finally, taking the J → 0 limit, the 
+
+J = 0 case is reproduced. These results show that the Berry curvature is responsible for the quantization of the jump observed in the J = 0 and s-wave order parameter cases. 
+
+[1] M. Lee, W. Kang, Y. Onose, Y. Tokura, and N. P. Ong, Unusual Hall Effect Anomaly in MnSi under Pressure, Phys. Rev. Lett. 102 , 186601 (2009). [2] A. Neubauer, C. Pfleiderer, B. Binz, A. Rosch, R. Ritz, 9
+
+P. G. Niklowitz, and P. B¨ oni, Topological Hall Effect in the A Phase of MnSi, Phys. Rev. Lett. 102 , 186602 (2009). [3] N. Nagaosa and Y. Tokura, Topological properties and dynamics of magnetic skyrmions, Nature Nanotechnol-ogy 8, 899 (2013). [4] T. Kurumaji, T. Nakajima, M. Hirschberger, A. Kikkawa, Y. Yamasaki, H. Sagayama, H. Nakao, Y. Taguchi, T. hisa Arima, and Y. Tokura, Skyrmion lattice with a giant topological Hall effect in a frustrated triangular-lattice magnet, Science 365 , 914 (2019). [5] S. Nakatsuji, N. Kiyohara, and T. Higo, Large anomalous Hall effect in a non-collinear antiferromagnet at room temperature, Nature 527 , 212 (2015). [6] M. Ikhlas, T. Tomita, T. Koretsune, M.-T. Suzuki, D. Nishio-Hamane, R. Arita, Y. Otani, and S. Nakatsuji, Large anomalous Nernst effect at room temperature in a chiral antiferromagnet, Nature Physics 13 , 1085 (2017). [7] S.-Y. Yang, Y. Wang, B. R. Ortiz, D. Liu, J. Gayles, E. Derunova, R. Gonzalez-Hernandez, L. ˇSmejkal, Y. Chen, S. S. P. Parkin, S. D. Wilson, E. S. To-berer, T. McQueen, and M. N. Ali, Giant, unconventional anomalous Hall effect in the metallic frustrated mag-net candidate, KV 3Sb 5, Science Advances 6, eabb6003 (2020). [8] R. S. K. Mong, A. M. Essin, and J. E. Moore, Antiferro-magnetic topological insulators, Phys. Rev. B 81 , 245209 (2010). [9] C.-Z. Chang, J. Zhang, X. Feng, J. Shen, Z. Zhang, M. Guo, K. Li, Y. Ou, P. Wei, L.-L. Wang, Z.-Q. Ji, Y. Feng, S. Ji, X. Chen, J. Jia, X. Dai, Z. Fang, S.-C. Zhang, K. He, Y. Wang, L. Lu, X.-C. Ma, and Q.-K. Xue, Experimental Observation of the Quantum Anomalous Hall Effect in a Magnetic Topological Insulator, Science 
+
+340 , 167 (2013). [10] R. Yoshimi, K. Yasuda, A. Tsukazaki, K. S. Takahashi, N. Nagaosa, M. Kawasaki, and Y. Tokura, Quantum Hall states stabilized in semi-magnetic bilayers of topological insulators, Nat. Commun. 6, 8530 (2015). [11] M. Naka, S. Hayami, H. Kusunose, Y. Yanagi, Y. Mo-tome, and H. Seo, Spin current generation in organic an-tiferromagnets, Nat. Commun. 10 , 4305 (2019). [12] L. ˇSmejkal, J. Sinova, and T. Jungwirth, Beyond Con-ventional Ferromagnetism and Antiferromagnetism: APhase with Nonrelativistic Spin and Crystal Rotation Symmetry, Phys. Rev. X 12 , 031042 (2022). [13] L. ˇSmejkal, J. Sinova, and T. Jungwirth, Emerging Re-search Landscape of Altermagnetism, Phys. Rev. X 12 ,040501 (2022). [14] A. B. Hellenes, T. Jungwirth, R. Jaeschke-Ubiergo, A. Chakraborty, J. Sinova, and L. ˇSmejkal, “P-wave mag-nets”, arXiv:2309.01607. [15] P. A. McClarty and J. G. Rau, Landau Theory of Alter-magnetism, Phys. Rev. Lett. 132 , 176702 (2024). [16] M. Naka, Y. Motome, and H. Seo, Perovskite as a spin current generator, Phys. Rev. B 103 , 125114 (2021). [17] M. Naka, Y. Motome, and H. Seo, Altermagnetic per-ovskites, npj Spintronics 3, 1 (2025). [18] M. Ezawa, Bulk photovoltaic effects in altermagnets, Phys. Rev. B 111 , L201405 (2025). [19] M. Ezawa, Quantum geometry and elliptic optical dichro-ism in p-wave magnets, Phys. Rev. B 112 , 045302 (2025). [20] Y. Fang, J. Cano, and S. A. A. Ghorashi, Quantum Ge-ometry Induced Nonlinear Transport in Altermagnets, Phys. Rev. Lett. 133 , 106701 (2024). [21] M. Ezawa, Intrinsic nonlinear conductivity induced by quantum geometry in altermagnets and measurement of the in-plane N´ eel vector, Phys. Rev. B 110 , L241405 (2024). [22] M. Ezawa, Third-order and fifth-order nonlinear spin-current generation in g-wave and i-wave altermagnets and perfectly nonreciprocal spin current in f -wave mag-nets, Phys. Rev. B 111 , 125420 (2025). [23] M. Ezawa, Out-of-plane Edelstein effects: Electric field induced magnetization in p-wave magnets, Phys. Rev. B 
+
+111 , L161301 (2025). [24] A. Chakraborty, A. Birk Hellenes, R. Jaeschke-Ubiergo, T. Jungwirth, L. ˇSmejkal, and J. Sinova, Highly efficient non-relativistic Edelstein effect in nodal p-wave magnets, Nat. Commun. 16 , 7270 (2025). [25] M. Naka, Y. Motome, T. Miyazaki, and H. Seo, Nonrela-tivistic Piezomagnetic Effect in an Organic Altermagnet, J. Phys. Soc. Jpn. 94 , 083702 (2025). [26] Y. Ogawa and S. Hayami, Nonlinear Piezomagnetic Ef-fects in g-wave Altermagnets, J. Phys. Soc. Jpn. 94 ,063704 (2025). [27] M. Ezawa, Detecting the N´ eel vector of altermagnets in heterostructures with a topological insulator and a crys-talline valley-edge insulator, Phys. Rev. B 109 , 245306 (2024). [28] M. Ezawa, Topological insulators and superconductors based on p-wave magnets: Electrical control and detec-tion of a domain wall, Phys. Rev. B 110 , 165429 (2024). [29] S. Sumita, M. Naka, and H. Seo, Fulde-Ferrell-Larkin-Ovchinnikov state induced by antiferromagnetic order in 
+
+κ-type organic conductors, Phys. Rev. Res. 5, 043171 (2023). [30] D. Chakraborty and A. M. Black-Schaffer, Zero-field finite-momentum and field-induced superconductivity in altermagnets, Phys. Rev. B 110 , L060508 (2024). [31] P. Sukhachov, H. G. Giil, B. Brekke, and J. Linder, Co-existence of p-wave magnetism and superconductivity, Phys. Rev. B 111 , L220403 (2025). [32] K. Mukasa and Y. Masaki, Finite-momentum Super-conductivity in Two-dimensional Altermagnets with a Rashba-type Spin–Orbit Coupling, J. Phys. Soc. Jpn. 94 ,064705 (2025). [33] D. Chakraborty and A. M. Black-Schaffer, Perfect Su-perconducting Diode Effect in Altermagnets, Phys. Rev. Lett. 135 , 026001 (2025). [34] S. Sumita, M. Naka, and H. Seo, Phase-modulated su-perconductivity via altermagnetism, Phys. Rev. B 112 ,144510 (2025). [35] Y. Noda, K. Ohno, and S. Nakamura, Momentum-dependent band spin splitting in semiconducting MnO2: a density functional calculation, Phys. Chem. Chem. Phys. 18 , 13294 (2016). [36] K.-H. Ahn, A. Hariki, K.-W. Lee, and J. Kuneˇ s, Antifer-romagnetism in RuO 2 as d-wave Pomeranchuk instabil-ity, Phys. Rev. B 99 , 184432 (2019). [37] L.-D. Yuan, Z. Wang, J.-W. Luo, E. I. Rashba, and A. Zunger, Giant momentum-dependent spin splitting in centrosymmetric low-Z antiferromagnets, Phys. Rev. B 
+
+102 , 014422 (2020). [38] I. I. Mazin, K. Koepernik, M. D. Johannes, R. Gonz´ alez-Hern´ andez, and L. ˇSmejkal, Prediction of unconventional magnetism in doped FeSb 2, Proc. Nat. Acad. Sci. 118 ,e2108924118 (2021). 10 
+
+[39] H.-Y. Ma, M. Hu, N. Li, J. Liu, W. Yao, J.-F. Jia, and J. Liu, Multifunctional antiferromagnetic materials with giant piezomagnetism and noncollinear spin current, Nat. Commun. 12 , 2846 (2021). [40] S. Hayami, Y. Yanagi, and H. Kusunose, Momentum-Dependent Spin Splitting by Collinear Antiferromagnetic Ordering, J. Phys. Soc. Jpn. 88 , 123702 (2019). [41] S. Hayami, Y. Yanagi, and H. Kusunose, Bottom-up de-sign of spin-split and reshaped electronic band structures in antiferromagnets without spin-orbit coupling: Proce-dure on the basis of augmented multipoles, Phys. Rev. B 
+
+102 , 144441 (2020). [42] R. Gonz´ alez-Hern´ andez, L. ˇSmejkal, K. V´ yborn´ y, Y. Ya-hagi, J. Sinova, T. c. v. Jungwirth, and J. ˇZelezn´ y, Ef-ficient Electrical Spin Splitter Based on Nonrelativis-tic Collinear Antiferromagnetism, Phys. Rev. Lett. 126 ,127701 (2021). [43] Z. Feng, X. Zhou, L. ˇSmejkal, L. Wu, Z. Zhu, H. Guo, R. Gonz´ alez-Hern´ andez, X. Wang, H. Yan, P. Qin, X. Zhang, H. Wu, H. Chen, Z. Meng, L. Liu, Z. Xia, J. Sinova, T. Jungwirth, and Z. Liu, An anomalous Hall effect in altermagnetic ruthenium dioxide, Nature Elec-tronics 5, 735 (2022). [44] R. D. Gonzalez Betancourt, J. Zub´ aˇ c, R. Gonzalez-Hernandez, K. Geishendorf, Z. ˇSob´ aˇ n, G. Springholz, K. Olejn´ ık, L. ˇSmejkal, J. Sinova, T. Jungwirth, S. T. B. Goennenwein, A. Thomas, H. Reichlov´ a, J. ˇZelezn´ y, and D. Kriegner, Spontaneous Anomalous Hall Effect Arising from an Unconventional Compensated Magnetic Phase in a Semiconductor, Phys. Rev. Lett. 130 , 036702 (2023). [45] S. Iguchi, H. Kobayashi, Y. Ikemoto, T. Furukawa, H. Itoh, S. Iwai, T. Moriwaki, and T. Sasaki, Magneto-optical spectra of an organic antiferromagnet as a can-didate for an altermagnet, Phys. Rev. Res. 7, 033026 (2025). [46] R. Yamada, M. T. Birch, P. R. Baral, S. Okumura, R. Nakano, S. Gao, M. Ezawa, T. Nomoto, J. Masell, Y. Ishihara, K. K. Kolincio, I. Belopolski, H. Sagayama, H. Nakao, K. Ohishi, T. Ohhara, R. Kiyanagi, T. Naka-jima, Y. Tokura, T.-h. Arima, Y. Motome, M. M. Hirschmann, and M. Hirschberger, A metallic p-wave magnet with commensurate spin helix, Nature 646 , 837 (2025). [47] H. Fukuyama and R. Kubo, Interband Effect on Magnetic Susceptibility. I. A Simple Two-Band Model, J. Phys. Soc. Jpn. 27 , 604 (1969). [48] H. Fukuyama, Theory of Orbital Magnetism of Bloch Electrons: Coulomb Interactions, Prog. Theor. Phys. 45 ,704 (1971). [49] M. Koshino and T. Ando, Diamagnetism in disordered graphene, Phys. Rev. B 75 , 235333 (2007). [50] G. G´ omez-Santos and T. Stauber, Measurable Lattice Ef-fects on the Charge and Magnetic Response in Graphene, Phys. Rev. Lett. 106 , 045504 (2011). [51] M. Ogata and H. Fukuyama, Orbital Magnetism of Bloch Electrons I. General Formula, J. Phys. Soc. Jpn. 84 ,124708 (2015). [52] Y. Gao, S. A. Yang, and Q. Niu, Geometrical effects in orbital magnetic susceptibility, Phys. Rev. B 91 , 214405 (2015). [53] F. Pi´ echon, A. Raoux, J.-N. Fuchs, and G. Montambaux, Geometric orbital susceptibility: Quantum metric with-out Berry curvature, Phys. Rev. B 94 , 134423 (2016). [54] S. Murakami, Quantum Spin Hall Effect and Enhanced Magnetic Response by Spin-Orbit Coupling, Phys. Rev. Lett. 97 , 236805 (2006). [55] Y. Tserkovnyak, D. A. Pesin, and D. Loss, Spin and or-bital magnetic response on the surface of a topological insulator, Phys. Rev. B 91 , 041121 (2015). [56] H. Suzuura and T. Ando, Theory of magnetic response in two-dimensional giant Rashba system, Phys. Rev. B 
+
+94 , 085303 (2016). [57] M. Koshino and I. F. Hizbullah, Magnetic susceptibility in three-dimensional nodal semimetals, Phys. Rev. B 93 ,045201 (2016). [58] R. Nakai and K. Nomura, Crossed responses of spin and orbital magnetism in topological insulators, Phys. Rev. B 93 , 214434 (2016). [59] Y. Ominato, S. Tatsumi, and K. Nomura, Spin-orbit crossed susceptibility in topological Dirac semimetals, Phys. Rev. B 99 , 085205 (2019). [60] S. Ozaki and M. Ogata, Universal quantization of the magnetic susceptibility jump at a topological phase tran-sition, Phys. Rev. Res. 3, 013058 (2021). [61] Y. Araki, D. Suenaga, K. Suzuki, and S. Yasui, Spin-orbital magnetic response of relativistic fermions with band hybridization, Phys. Rev. Res. 3, 023098 (2021). [62] A. Shitade and G. Tatara, Spin accumulation without spin current, Phys. Rev. B 105 , L201202 (2022). [63] S. Ozaki and M. Ogata, Topological contribution to magnetism in the Kane-Mele model: An explicit wave-function approach, Phys. Rev. B 107 , 085201 (2023). [64] F. Qin and R. Chen, “Layer Hall effect induced by alter-magnetism”, arXiv:2601.03937. [65] D. Xiao, J. Shi, and Q. Niu, Berry Phase Correction to Electron Density of States in Solids, Phys. Rev. Lett. 95 ,137204 (2005). [66] T. Thonhauser, D. Ceresoli, D. Vanderbilt, and R. Resta, Orbital Magnetization in Periodic Insulators, Phys. Rev. Lett. 95 , 137205 (2005). [67] D. Xiao, W. Yao, and Q. Niu, Valley-Contrasting Physics in Graphene: Magnetic Moment and Topological Trans-port, Phys. Rev. Lett. 99 , 236809 (2007). [68] I. Souza and D. Vanderbilt, Dichroic f -sum rule and the orbital magnetization of crystals, Phys. Rev. B 77 ,054438 (2008). [69] M. Ogata, Theory of Magnetization in Bloch Electron Systems, J. Phys. Soc. Jpn. 86 , 044713 (2017).

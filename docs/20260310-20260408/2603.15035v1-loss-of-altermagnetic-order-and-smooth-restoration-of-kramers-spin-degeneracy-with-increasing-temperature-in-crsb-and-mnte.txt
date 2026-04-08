@@ -1,0 +1,611 @@
+Title: Loss of altermagnetic order and smooth restoration of Kramers' spin degeneracy with increasing temperature in CrSb and MnTe
+
+URL Source: https://arxiv.org/pdf/2603.15035v1
+
+Published Time: Tue, 17 Mar 2026 07:09:15 GMT
+
+Number of Pages: 18
+
+Markdown Content:
+## Loss of altermagnetic order and smooth restoration of Kramers’ spin degeneracy with increasing temperature in CrSb and MnTe 
+
+Christopher D. Woodgate, 1, 2, ∗ Nabil Menai, 1 Arthur Ernst, 3, 4, 5 and Julie B. Staunton 2, †
+
+> 1
+
+H.H. Wills Physics Laboratory, University of Bristol, Royal Fort, Bristol, BS8 1TL, United Kingdom 
+
+> 2
+
+Department of Physics, University of Warwick, Coventry, CV4 7AL, United Kingdom 
+
+> 3
+
+Institute for Theoretical Physics, Johannes Keppler University Linz, Altenberger Strasse 69, A-4040 Linz, Austria 
+
+> 4
+
+Donostia International Physics Center, Donostia-San Sebastian 20018 Gipuzkoa, Spain 
+
+> 5
+
+Max-Planck-Institut f¨ ur Mikrostrukturphysik, Weinberg 2, D-06120 Halle, Germany 
+
+(Dated: March 16, 2026) We describe how thermally induced spin fluctuations modify the electronic structures of two pro-totypical altermagnets, CrSb and MnTe, via application of the disordered local moment picture. For both materials, our self-consistent, ab initio calculations demonstrate that local magnetic moments persist on Cr and Mn atoms in their paramagnetic states, necessitating a spin-polarised description of the electronic structure even above the N´ eel temperature, TN. Moreover, Kramers’ spin degener-acy, which is broken for both materials in their altermagnetic ground states, is shown to be smoothly restored—on the average—as the local moments thermally disorder. In metallic CrSb, this occurs at temperatures well below TN and the signature effects of its altermagnetism are lost as the magnetic disorder induces heavy smearing of strongly dispersive electronic states around the Fermi energy. By contrast, in semiconducting MnTe, with its band gap largely unaffected by magnetic disorder, the spin degeneracy only returns at temperatures close to and above TN. We quantify the temperature dependence of the altermagnetic order parameter and the underlying electronic structures of both materials, with significant implications for their spin transport properties. 
+
+Altermagnetism has emerged as a new class of collinear magnetic order—distinct from all three of ferromag-netism, antiferromagnetism, and ferrimagnetism. Alter-magnets are materials in which there is a net-zero spin polarisation, akin to antiferromagnets, but in which there is spin-splitting of electronic bands across large portions of the Brillouin zone, similar to ferromagnets and fer-rimagnets [1]. In the absence of spin-orbit coupling, this broken Kramers’ spin degeneracy has its origins in the underlying symmetries of the crystal structure, par-ticularly as enforced by the presence of non-magnetic atoms [2, 3]. Altermagnetic materials are of interest both from a fundamental physical perspective, as well as for their potential application as functional materials in fields such as spintronics [4, 5]. A growing number of materials have now been experimentally verified to be al-termagnets. Experimental signatures of the phenomenon include those found spectroscopically [6–15], those found in electronic transport measurements [14, 16–21], and also those found in magnetic excitation spectra [22–24]. Within the framework of theoretical calculations, when seeking to demonstrate how altermagnetic ordering re-sults in non-relativistic spin splitting of bands in a ma-terial, it is tempting to compare the band structure of a material calculated in a non-magnetic state with a spin-polarised band structure calculated in the altermag-netic ground state. However, in many magnetic mate-rials, particularly those containing mid- to late-3 d ele-ments [25], the description of the paramagnetic state as being a state which is completely non-magnetic is un-physical since it yields estimates of magnetic transition temperatures which are much too high [26]. In such a scenario the magnetic order can only vanish via Stoner electron-hole excitations so that the magnetic moments associated with each sub-lattice disappear in the param-agnetic state. Instead, appropriate ‘spins’—degrees of freedom of the interacting electrons of the material— which fluctuate thermally need to be identified. The picture of these as local moments stems from the real-isation that collective electron spin effects emerge on es-sentially two different time scales. On a fast time scale, the electrons cooperate to form atomic-scale regions of spin polarised density and, on a longer time scale, these local moments slowly vary their orientations [27]. The disordered local moment (DLM) picture of mag-netism at finite temperature [27–30] is based on this in-sight and considers the statistical physics of the thermally fluctuating, atomically localised magnetic moments. The orientation of such a local moment at site i with combined lattice ( I) and basis ( s) index i = ( I, s ) can be described by a unit vector, ˆ ei, defined via ˆei = μi
+
+∥μi∥ , μi =
+
+Z
+
+> Vi
+
+dr M (r). (1) where μi is a vector specifying the size and orienta-tion of a magnetic moment at a particular site, ob-tained by integrating the usual spin density M(r) over the Wigner-Seitz volume, Vi, around said site. In the magnetic ground state of a magnetic material, in the zero-temperature limit, the set {ˆei} defines the relative arrangement of these local moments with respect to one another ( i.e. the magnetic order), and their orientation with respect to the underlying crystal lattice. However, at finite temperature, thermally induced spin fluctuations 
+
+> arXiv:2603.15035v1 [cond-mat.mtrl-sci] 16 Mar 2026
+
+20.5                                        
+
+> 0.0 0.5
+> ky (2  /a)
+> MKkz= 0
+> 0.5 0.0 0.5
+> kx(2 /a)
+> 0.5
+> 0.0 0.5
+> k y (2  /a)
+> 0
+> M0
+> K0
+> kz=/2 c
+> MKALHA
+> 12.5
+> 10.0
+> 7.5
+> 5.0
+> 2.5
+> 0.0 2.5 5.0
+> E E F (eV)
+> M00M0010 DOS (eV 1)
+> Cr Sb Tot.
+> MKALHA
+> 12.5
+> 10.0
+> 7.5
+> 5.0
+> 2.5
+> 0.0 2.5 5.0
+> E E F (eV)
+> M00M0025 DOS (eV 1)
+> Mn Te Tot. (a) Altermagnetic CrSb (b) Altermagnetic MnTe Spin Spin Spin Spin
+
+FIG. 1. Comparison of the electronic structure of (a) CrSb and (b) MnTe in their altermagnetic ground states at T = 0 K. We show both the band structure and total electronic density of states. For CrSb, which is metallic, we also show two slices of the Fermi surface. In both materials, the altermagnetic band splitting is visible along the −M ′-Γ ′-M ′ path in reciprocal space. 
+
+cause the {ˆei} to deviate from this ground-state arrange-ment, and local moment orientations are determined by a probability distribution, P ({ˆei}), which is unknown 
+
+a priori . However, above a material’s magnetic criti-cal temperature, in the high-temperature limit, magnetic moments are decorrelated from one another and have no preferred direction. In this case, the probability distri-bution for a given local moment ˆ ei is simply 
+
+P (ˆ ei) = 14π , (2) 
+
+i.e. it is uniform on the sphere. Here, while it may be the case that ∥μi∥ remains finite, the net magneti-sation of the material is zero once the average is taken over the ensemble of all possible local moment orienta-tions. For the archetypal metallic ferromagnet, bcc Fe, the DLM picture produces an electronic structure above the Curie temperature, TC, where there is local exchange-splitting which is wavevector- and energy-dependent [25]. This is in agreement with seminal spectroscopic experi-ments [31, 32], where it is found that in some regions of the Brillouin zone a local spin polarisation is well-defined and distinct, whereas in other places it is not evident at all or there is strong disorder broadening of the states. We assert that there will be analogous temperature-dependent features in the paramagnetic state of some altermagnets, because our self-consistent calculations on CrSb and MnTe predict that sizeable local moments per-sist on magnetic atoms even above the N´ eel temperature, 
+
+TN. While the electronic structure of such a paramag-netic state, when thermally averaged over all the local moment configurations, has zero overall spin polarisa-tion, it differs qualitatively from the electronic structure of a non-magnetic state owing to the spin disorder [25]. In this Letter, we apply the DLM picture to the study of two prototypical altermagnets: CrSb, which is metal-lic, and MnTe, which is semiconducting, to elucidate how thermally induced spin fluctuations modify the electronic structures of these intriguing materials and affect their signature properties. We describe the two limiting cases of (i) perfect altermagnetic order and (ii) complete mag-netic disorder, and also track how the Kramers’ spin de-generacy is restored as the long-range altermagnetic or-der diminishes with rising temperature. Our results have significant implications for the temperature dependence of these materials’ spin transport properties. We begin by modelling the electronic structure of both materials in their altermagnetic T = 0 K ground states. We use the all-electron Hutsepot code [33] to construct the self-consistent potentials of the Korringa– Kohn–Rostoker (KKR) formulation [34] of density func-tional theory (DFT) [35], which uses multiple scattering theory to construct the single-particle Green’s function for a given system [36]. For both materials, we use experi-mentally determined lattice constants and perform scalar relativistic calculations to focus on the defining feature of ‘strong’ altermagnetism: exchange-splitting of elec-tronic bands in the absence of spin-orbit coupling [37]. For CrSb, which is metallic, we use the local spin-density approximation (LSDA) to the DFT exchange-correlation functional [38]. For MnTe, which is semiconducting, we employ the local self-interaction correction (LSIC) [39] to the LSDA to capture the stronger electronic correlations present in this material. Full details of our calculations can be found in the Supplemental Material [40]. Fig. 1 shows the Bloch spectral function (BSF) and electronic density of states (DOS) for both CrSb and MnTe in their altermagnetic ground states. The BSF, which reduces to the conventional band structure in a pristine material at T = 0 K [34], is shown along the con-ventional high-symmetry path, as well as along the −M ′-Γ′-M ′ path to evidence the altermagnetic band splitting. Definitions of these reciprocal space paths can be found in the Supplemental Material [40]. For CrSb, which is metallic in our calculations, we also plot the two slices of the Fermi surface in the kz = 0 and kz = π/ 2c planes. In both materials, along the low-symmetry path, there is clear spin-splitting of the electronic band structure. In CrSb, this spin splitting can also be seen in the mate-rial’s Fermi surface, with the slice in the kz = 0 plane 30.5                                        
+
+> 0.0 0.5
+> ky (2  /a)
+> MKkz= 0
+> 0.5 0.0 0.5
+> kx(2 /a)
+> 0.5
+> 0.0 0.5
+> k y (2  /a)
+> 0M0
+> K0
+> kz=/2 c
+> MKALHA
+> 12.5
+> 10.0
+> 7.5
+> 5.0
+> 2.5
+> 0.0 2.5 5.0
+> E E F (eV)
+> M00M0010 DOS (eV 1)
+> Cr Sb Tot.
+> MKALHA
+> 12.5
+> 10.0
+> 7.5
+> 5.0
+> 2.5
+> 0.0 2.5 5.0
+> E E F (eV)
+> M00M0025 DOS (eV 1)
+> Mn Te Tot. (b) Paramagnetic (DLM) MnTe (a) Paramagnetic (DLM) CrSb
+
+FIG. 2. Comparison of the electronic structure of CrSb (a) and MnTe (b) in their paramagnetic states, as described within the DLM picture. We show both the BSF and total electronic density of states, both of which are heavily smeared at certain points by the magnetic disorder. For CrSb, which is metallic, we also show two slices of the Fermi surface. Because the Fermi surface is washed out by the magnetic disorder, we plot a contour of constant spectral weight, evidencing the six-fold degeneracy in both planes. In MnTe, which is semiconducting, the bandgap is largely unaffected by the magnetic disorder. Where band splitting was evidenced in Fig. 1, we show the BSF in purple to indicate that it is now fully spin-degenerate. 
+
+being spin-degenerate and exhibiting six-fold rotational symmetry, while the slice in the kz = π/ 2c plane shows spin splitting and three-fold rotational symmetry (with six-fold rotational symmetry relating spin-up and spin-down electrons). In MnTe, which is semiconducting, the LSIC–LSDA recovers the bandgap of the material—the indirect gap is 0.6 eV, while the direct gap at the Γ point is 1.2 eV. These calculated band gap values are in fair agreement with literature [41–43]. The magnitude of the local magnetic moments on Cr atoms in CrSb is 2.70 μB,while for Mn atoms in MnTe this value is 4.62 μB.Proceeding, we now consider the influence of magnetic disorder, and present the results of calculations for both materials in the paramagnetic regime, i.e. above TN.Practically, the average over all possible orientations of magnetic moment for each lattice site, Eq. (2), is achieved via application of the coherent potential approximation (CPA) [44, 45], which facilitates recovery of the average Green’s function for a disordered system within a single-site approximation. With the same DFT settings as for the altermagnetic calculations outlined above, we per-form self-consistent calculations on CrSb and MnTe in their paramagnetic (DLM) states. For both materials, we find that the magnetic atoms support substantial lo-cal magnetic moments in this paramagnetic regime, with the magnitude of the local magnetic moment on Cr atoms in CrSb calculated to be 2.58 μB, and for Mn atoms in MnTe calculated to be 4.63 μB. That the magnitude of magnetic moments are largely unchanged between alter-magnetic and paramagnetic states confirms that these are ‘good’ local moments [46, 47]. We calculate TN to be 920 K and 160 K for CrSb and MnTe respectively, in fair agreement with the values 705 K [48] and 306 K [49] determined experimentally. For MnTe, we attribute the underestimation of TN to the strong localisation of 3 d
+
+states within the LSIC-LSDA. If we use the LSDA alone, MnTe is found to be metallic, and TN is instead overesti-mated to be 709 K. Full details of these calculations are given in the Supplemental Material [40]. Plots of the BSF and electronic DOS for both mate-rials simulated in this paramagnetic state are shown in Fig. 2. Again, we also show a slice of the Fermi surface of metallic CrSb. In this state in which all orientations of magnetic moment are equally probable, the spin split-ting of the band structure along the low-symmetry path seen in Fig. 1 completely disappears for both materials, and a six-fold symmetry in the kz = π/ 2c cut of the Fermi surface of CrSb is restored. For MnTe the mag-netic disorder does not substantially affect the bandgap predicted in this model, with the indirect gap now be-ing 0.6 eV. That the band gap of MnTe is largely unaf-fected by the magnetic disorder is consistent with pre-vious calculations simulating the paramagnetic states of 3d transition metal oxides, including MnO [30]. Though the collapse of relativistic spin-splitting—so-called ‘weak’ altermagnetism—due to magnetic disorder has been de-scribed previously [10], here we are able to extend this result to the case of non-relativistic spin-splitting, i.e. 
+
+‘strong’ altermagnetism. Additionally, the magnetic dis-order induces changes and heavy smearing of the band structure at certain energies and in portions of the Bril-louin zone. Indeed, some fine details in the band struc-tures of both materials are no longer resolvable. A more complete band structure symmetry analysis is provided in the Supplemental Material [40]. We now focus on our key result: how these altermag-nets’ respective electronic structures evolve as they are heated up towards their N´ eel temperatures, and how Kramers’ spin degeneracy is smoothly restored as the lo-cal moments thermally disorder. We define a magnetic order parameter, m, to interpolate linearly between the two limiting cases of altermagnetism and paramagnetism. Panels (a) and (b) of Fig. 3 compare the spin- and species-resolved DOS projected onto a single Cr or Mn 4202DOS (eV  1 ) Majority Minority (a) Spin-resolved, Cr-projected DOS Altermagnetic: m = 1 Paramagnetic: m = 0 10 5 0 5                               
+
+> EEF(eV)
+> 10 010 DOS (eV  1 ) Majority Minority (b) Spin-resolved, Mn-projected DOS Altermagnetic: m= 1 Paramagnetic: m= 0 Exchange-split 3 dstates around Fermi energy Filled, localised 3d states Un fi lled 3d states
+> 0.0 0.5 1.0
+> m
+> (e) BSF for CrSb at k=kfor varying m
+> 42024
+> EEF(eV)
+> 0.0 0.5 1.0
+> m
+> (f) BSF for MnTe at k=kfor varying m
+> Spin
+> Spin
+> 0.0 0.5 1.0
+> m
+> (c) CrSb m(T)0.00 0.25 0.50 0.75 1.00
+> T/TN0.0 0.5 1.0
+> m
+> (d) MnTe m(T)
+
+FIG. 3. Evolving electronic structure of CrSb and MnTe as a function of temperature, T and magnetic order, m. Panels (a) and (b) show the spin-resolved DOS of Cr and Mn in the limiting cases of m = 0 and m = 1. For m = 0 this is a projection onto a single Cr/Mn atom embedded in the DLM-CPA effective medium. Panels (c) and (d) show calculated m(T ) for both materials. Finally, panels (e) and (f) show a spin-resolved, constant-k slice of the BSF for both materials as a function of magnetic order parameter around EF at ˜k = ( 2π√33a , 0, π 
+
+> 2c
+
+), halfway between the points Γ ′ and M ′. Though local exchange-splitting around atoms persists even in the paramagnetic state, the altermagnetic band splitting rapidly diminishes with decreasing m.
+
+atom in the limit m = 1 (altermagnetism) and the limit 
+
+m = 0 (paramagnetism). These plots are spin-resolved, with the local orientation of a given magnetic moment defining the axis of quantisation. Associated with the local magnetic moments obtained in these self-consistent calculations, there is substantial local exchange-splitting of electronic states, which persists in the paramagnetic state for both materials. Panels (c) and (d) of Fig. 3 then display the temperature evolution m as a function of temperature, T , as predicted within the DLM pic-ture [40, 47, 50], while panels (e) and (f) display key aspects of how the electronic structure of the selected materials evolves during this transition via a cut of the spin-resolved BSF around the Fermi energy, EF, at the point ˜k = ( 2π√33a , 0, π 
+
+> 2c
+
+). This point is halfway between Γ′ and M ′, where we find that there is substantial spin splitting of bands for both materials in the T = 0 K altermagnetic ground state. Here, two key observations should be made. First is that, for both materials, even a small degree of magnetic disorder induces significant smearing of electronic bands at some energies, as well as changes to the band structure group velocity and reduction in the degree of band split-ting. Second is that this process progresses more rapidly in metallic CrSb, where 3 d states are found at energies around EF, as compared to semiconducting MnTe, where 3d states are found split away to energies far above/below 
+
+EF in our LSIC-LSDA calculations. Moreover, our calcu-lations suggest that the altermagnetic order parameter, 
+
+m, tails off more rapidly initially with increasing temper-ature (as a fraction of TN) for CrSb than it does for MnTe. The smearing of electronic bands is directly related to a reduced electronic mean free path in a material, and favourable spin transport properties are conferred when band splitting in a material is large. We suggest, there-fore, that such thermally induced spin fluctuations will have a profound effect on the temperature dependence of these altermagnets’ attractive electronic transport prop-erties for spintronic applications. In summary, we have considered the application of the disordered local moment picture to the study of two pro-totypical altermagnets, CrSb and MnTe, describing how thermally induced spin fluctuations modify their elec-tronic structures. We predict that, for both materials above TN, localised magnetic moments persist on mag-netic atoms, but that the spin-degeneracy of the ma-terials’ respective band structures is restored—on the average—by thermally induced spin fluctuations and as-sociated site-diagonal spin disorder. This magnetic dis-order also induces marked changes to, and heavy smear-ing of, the band structure of both materials, with the Fermi surface of CrSb experiencing significant qualitative changes and disorder broadening. However, in MnTe, the bandgap of the material remains largely unaffected. We have then used our ab initio modelling framework to predict TN for both materials, as well as the tempera-ture dependence of both materials’ altermagnetic order parameter, m. Most significantly, we have described the evolution of both materials’ electronic structures with in-creasing temperature. We assert that the inclusion of the thermally induced spin fluctuations which we describe will be essential when seeking to accurately model the spin transport properties of these materials, as well as for robust interpretation of experimental spectroscopy data. Our results also lay the foundations for future, fully rela-tivistic studies (see, e.g. Ref. 51) examining the effect of spin fluctuations on the electronic, magnetic, and trans-port properties of these intriguing materials. 5C.D.W. acknowledges support from EPSRC Grant EP/W524414/1. J.B.S. acknowledges support from EP-SRC Grant EP/W021331/1. Computing resources were provided by the Advanced Computing Research Centre of the University of Bristol, and by the Scientific Com-puting Research Technology Platform of the University of Warwick.  
+
+> ∗
+
+christopher.woodgate@bristol.ac.uk  
+
+> †
+
+J.B.Staunton@warwick.ac.uk [1] L. ˇSmejkal, J. Sinova, and T. Jungwirth, Emerging Re-search Landscape of Altermagnetism, Phys. Rev. X 12 ,040501 (2022). [2] L. ˇSmejkal, J. Sinova, and T. Jungwirth, Beyond Con-ventional Ferromagnetism and Antiferromagnetism: APhase with Nonrelativistic Spin and Crystal Rotation Symmetry, Phys. Rev. X 12 , 031042 (2022). [3] K.-H. Ahn, A. Hariki, K.-W. Lee, and J. Kuneˇ s, Antifer-romagnetism in RuO 2 as d-wave Pomeranchuk instabil-ity, Phys. Rev. B 99 , 184432 (2019). [4] L. Bai, W. Feng, S. Liu, L. ˇSmejkal, Y. Mokrousov, and Y. Yao, Altermagnetism: Exploring New Frontiers in Magnetism and Spintronics, Adv. Funct. Mater. 34 ,2409327 (2024). [5] C. Song, H. Bai, Z. Zhou, L. Han, H. Reichlova, J. H. Dil, J. Liu, X. Chen, and F. Pan, Altermagnets as a new class of functional materials, Nat. Rev. Mater. 10 , 473 (2025). [6] J. Krempask´ y, L. ˇSmejkal, S. W. D’Souza, M. Ha-jlaoui, G. Springholz, K. Uhl´ ıˇ rov´ a, F. Alarab, P. C. Constantinou, V. Strocov, D. Usanov, W. R. Pudelko, R. Gonz´ alez-Hern´ andez, A. Birk Hellenes, Z. Jansa, H. Reichlov´ a, Z. ˇSob´ aˇ n, R. D. Gonzalez Betancourt, P. Wadley, J. Sinova, D. Kriegner, J. Min´ ar, J. H. Dil, and T. Jungwirth, Altermagnetic lifting of Kramers spin degeneracy, Nature 626 , 517 (2024). [7] S. Reimers, L. Odenbreit, L. ˇSmejkal, V. N. Strocov, P. Constantinou, A. B. Hellenes, R. Jaeschke Ubiergo, W. H. Campos, V. K. Bharadwaj, A. Chakraborty, T. Denneulin, W. Shi, R. E. Dunin-Borkowski, S. Das, M. Kl¨ aui, J. Sinova, and M. Jourdan, Direct observation of altermagnetic band splitting in CrSb thin films, Nat. Commun. 15 , 2116 (2024). [8] T. Osumi, S. Souma, T. Aoyama, K. Yamauchi, A. Honma, K. Nakayama, T. Takahashi, K. Ohgushi, and T. Sato, Observation of a giant band splitting in alter-magnetic MnTe, Phys. Rev. B 109 , 115102 (2024). [9] J. Ding, Z. Jiang, X. Chen, Z. Tao, Z. Liu, T. Li, J. Liu, J. Sun, J. Cheng, J. Liu, Y. Yang, R. Zhang, L. Deng, W. Jing, Y. Huang, Y. Shi, M. Ye, S. Qiao, Y. Wang, Y. Guo, D. Feng, and D. Shen, Large Band Splitting in 
+
+g-Wave Altermagnet CrSb, Phys. Rev. Lett. 133 , 206401 (2024). [10] M. Hajlaoui, S. Wilfred D’Souza, L. ˇSmejkal, D. Krieg-ner, G. Krizman, T. Zakusylo, N. Olszowska, O. Caha, J. Michaliˇ cka, J. S´ anchez-Barriga, A. Marmodoro, K. V´ yborn´ y, A. Ernst, M. Cinchetti, J. Minar, T. Jung-wirth, and G. Springholz, Temperature Dependence of Relativistic Valence Band Splitting Induced by an Al-termagnetic Phase Transition, Adv. Mater. 36 , 2314076 (2024). [11] O. J. Amin, A. Dal Din, E. Golias, Y. Niu, A. Za-kharov, S. C. Fromage, C. J. B. Fields, S. L. Heywood, R. B. Cousins, F. Maccherozzi, J. Krempask´ y, J. H. Dil, D. Kriegner, B. Kiraly, R. P. Campion, A. W. Rushforth, K. W. Edmonds, S. S. Dhesi, L. ˇSmejkal, T. Jungwirth, and P. Wadley, Nanoscale imaging and control of alter-magnetism in MnTe, Nature 636 , 348 (2024). [12] G. Yang, Z. Li, S. Yang, J. Li, H. Zheng, W. Zhu, Z. Pan, Y. Xu, S. Cao, W. Zhao, A. Jana, J. Zhang, M. Ye, Y. Song, L.-H. Hu, L. Yang, J. Fujii, I. Vobornik, M. Shi, H. Yuan, Y. Zhang, Y. Xu, and Y. Liu, Three-dimensional mapping of the altermagnetic spin splitting in CrSb, Nat. Commun. 16 , 1442 (2025). [13] S. Santhosh, P. Corbae, W. J. Y´ anez-Parre˜ no, S. Ghosh, C. J. Jensen, A. V. Fedorov, M. Hashimoto, D. Lu, J. A. Borchers, A. J. Grutter, T. R. Charlton, S. Is-lam, D. Golovanova, Y. Zhao, A. Tauraso, A. Richardella, B. Yan, K. A. Mkhoyan, C. J. Palmstrøm, Y. Ou, and N. Samarth, Altermagnetic Band Splitting in 10 nm Epi-taxial CrSb Thin Films, Adv. Mater. 37 , e08977 (2025). [14] E. Galindez-Ruales, R. Gonzalez-Hernandez, C. Schmitt, S. Das, F. Fuhrmann, A. Ross, E. Golias, A. Akashdeep, L. L¨ unenb¨ urger, E. Baek, W. Yang, L. ˇSmejkal, V. Kr-ishna, R. Jaeschke-Ubiergo, J. Sinova, A. Rothschild, C. You, G. Jakob, and M. Kl¨ aui, Revealing the Alter-magnetism in Hematite via XMCD Imaging and Anoma-lous Hall Electrical Transport, Adv. Mater. 37 , e05019 (2025). [15] H. Pan, R.-C. Xiao, J. Han, H. Zhu, J. Li, Q. Niu, Y. Gao, and D. Hou, Experimental Evidence of N´ eel-Order-Driven Magneto-optical Kerr Effect in an Alter-magnetic Insulator, Phys. Rev. Lett. 136 , 036701 (2026). [16] Z. Feng, X. Zhou, L. ˇSmejkal, L. Wu, Z. Zhu, H. Guo, R. Gonz´ alez-Hern´ andez, X. Wang, H. Yan, P. Qin, X. Zhang, H. Wu, H. Chen, Z. Meng, L. Liu, Z. Xia, J. Sinova, T. Jungwirth, and Z. Liu, An anomalous Hall effect in altermagnetic ruthenium dioxide, Nat. Electron. 
+
+5, 735 (2022). [17] H. Bai, L. Han, X. Y. Feng, Y. J. Zhou, R. X. Su, Q. Wang, L. Y. Liao, W. X. Zhu, X. Z. Chen, F. Pan, X. L. Fan, and C. Song, Observation of Spin Splitting Torque in a Collinear Antiferromagnet RuO 2, Phys. Rev. Lett. 128 , 197202 (2022). [18] S. Karube, T. Tanaka, D. Sugawara, N. Kadoguchi, M. Kohda, and J. Nitta, Observation of Spin-Splitter Torque in Collinear Antiferromagnetic RuO 2, Phys. Rev. Lett. 129 , 137201 (2022). [19] H. Bai, Y. C. Zhang, Y. J. Zhou, P. Chen, C. H. Wan, L. Han, W. X. Zhu, S. X. Liang, Y. C. Su, X. F. Han, F. Pan, and C. Song, Efficient Spin-to-Charge Conversion via Altermagnetic Spin Splitting Effect in Antiferromag-net RuO 2, Phys. Rev. Lett. 130 , 216701 (2023). [20] R. D. Gonzalez Betancourt, J. Zub´ aˇ c, R. Gonzalez-Hernandez, K. Geishendorf, Z. ˇSob´ aˇ n, G. Springholz, K. Olejn´ ık, L. ˇSmejkal, J. Sinova, T. Jungwirth, S. T. B. Goennenwein, A. Thomas, H. Reichlov´ a, J. ˇZelezn´ y, and D. Kriegner, Spontaneous Anomalous Hall Effect Arising from an Unconventional Compensated Magnetic Phase in a Semiconductor, Phys. Rev. Lett. 130 , 036702 (2023). [21] H. Reichlova, R. Lopes Seeger, R. Gonz´ alez-Hern´ andez, I. Kounta, R. Schlitz, D. Kriegner, P. Ritzinger, M. Lammel, M. Leivisk¨ a, A. Birk Hellenes, K. Olejn´ ık, 6
+
+V. Petˇ riˇ cek, P. Doleˇ zal, L. Horak, E. Schmoranzerova, A. Badura, S. Bertaina, A. Thomas, V. Baltz, L. Michez, J. Sinova, S. T. B. Goennenwein, T. Jungwirth, and L. ˇSmejkal, Observation of a spontaneous anomalous Hall response in the Mn 5Si 3 d-wave altermagnet candidate, Nat. Commun. 15 , 4961 (2024). [22] Z. Liu, M. Ozeki, S. Asai, S. Itoh, and T. Masuda, Chiral Split Magnon in Altermagnetic MnTe, Phys. Rev. Lett. 
+
+133 , 156702 (2024). [23] Q. Sun, J. Guo, D. Wang, D. L. Abernathy, W. Tian, and C. Li, Observation of Chiral Magnon Band Splitting in Altermagnetic Hematite, Phys. Rev. Lett. 135 , 186703 (2025). [24] A. K. Singh, N. Heinsdorf, A. A. Mancilla, J. Ban-nies, A. Maity, A. I. Kolesnikov, M. Matsuda, M. B. Stone, M. Franz, J. Gaudet, and A. M. Hallas, Chiral Spin-Split Magnons in the Metallic Altermagnet CrSb, arXiv:2511.16086 . [25] J. Staunton, B. L. Gy˝ orffy, A. J. Pindor, G. M. Stocks, and H. Winter, Electronic structure of metallic ferromag-nets above the Curie temperature, J. Phys. F: Met. Phys. 
+
+15 , 1387 (1985). [26] O. Gunnarsson, Band model for magnetism of transition metals in the spin-density-functional formalism, J. Phys. F: Met. Phys. 6, 587 (1976). [27] B. L. Gy˝ orffy, A. J. Pindor, J. Staunton, G. M. Stocks, and H. Winter, A first-principles theory of ferromagnetic phase transitions in metals, J. Phys. F: Met. Phys. 15 ,1337 (1985). [28] A. J. Pindor, J. Staunton, G. M. Stocks, and H. Win-ter, Disordered local moment state of magnetic transition metals: a self-consistent KKR-CPA calculation, J. Phys. F: Met. Phys. 13 , 979 (1983). [29] J. Staunton, B. Gy˝ orffy, A. Pindor, G. Stocks, and H. Winter, The “disordered local moment” picture of itinerant magnetism at finite temperatures, J. Magn. Magn. Mater. 45 , 15 (1984). [30] I. D. Hughes, M. D¨ ane, A. Ernst, W. Hergert, M. L¨ uders, J. B. Staunton, Z. Szotek, and W. M. Temmerman, On-set of magnetic order in strongly-correlated systems from 
+
+ab initio electronic structure calculations: application to transition metal oxides, New J. Phys. 10 , 063010 (2008). [31] J. Kirschner, M. Gl¨ obl, V. Dose, and H. Scheidt, Wave-Vector-Dependent Temperature Behavior of Empty Bands in Ferromagnetic Iron, Phys. Rev. Lett. 53 , 612 (1984). [32] E. Kisker, K. Schr¨ oder, M. Campagna, and W. Gudat, Temperature Dependence of the Exchange Splitting of Fe by Spin-Resolved Photoemission Spectroscopy with Synchrotron Radiation, Phys. Rev. Lett. 52 , 2285 (1984). [33] M. Hoffmann, A. Ernst, W. Hergert, V. N. Antonov, W. A. Adeagbo, R. M. Geilhufe, and H. Ben Hamed, Magnetic and Electronic Properties of Complex Oxides from First-Principles, Phys. Status Solidi B 257 , 1900671 (2020). [34] H. Ebert, D. K¨ odderitzsch, and J. Min´ ar, Calculat-ing condensed matter properties using the KKR-Green’s function method—recent developments and applications, Rep. Prog. Phys. 74 , 096501 (2011). [35] R. Jones, Density functional theory: Its origins, rise to prominence, and future, Rev. Mod. Phys. 87 , 897 (2015). [36] J. S. Faulkner, G. M. Stocks, and Y. Wang, Multiple Scattering Theory: Electronic Structure of Solids , 1st ed. (IOP Publishing, Bristol, UK, 2018). [37] S.-W. Cheong and F.-T. Huang, Altermagnetism classi-fication, npj Quantum Mater. 10 , 38 (2025). [38] J. P. Perdew and Y. Wang, Accurate and simple ana-lytic representation of the electron-gas correlation energy, Phys. Rev. B 45 , 13244 (1992). [39] M. L¨ uders, A. Ernst, M. D¨ ane, Z. Szotek, A. Svane, D. K¨ odderitzsch, W. Hergert, B. L. Gy˝ orffy, and W. M. Temmerman, Self-interaction correction in multiple scat-tering theory, Phys. Rev. B 71 , 205109 (2005). [40] See Supplemental Material at URL will be inserted by publisher for a depiction of the NiAs crystal structure and its Brillouin zone, full computational details of our calculations, discussions of symmetries and degeneracies in the computed band structures, discussions of calcu-lations of TN and m(T ), and for results associated with MnTe modelled within the LSDA. See also Refs. [52–67] therein. [41] J. Allen, G. Lucovsky, and J. Mikkelsen, Optical proper-ties and electronic structure of crossroads material MnTe, Solid State Commun. 24 , 367 (1977). [42] M. Podgorny and J. Oleszkiewicz, Electronic structure of antiferromagnetic MnTe, J. Phys. C: Solid State Phys. 
+
+16 , 2547 (1983). [43] C. Ferrer-Roca, A. Segura, C. Reig, and V. Mu˜ noz, Tem-perature and pressure dependence of the optical absorp-tion in hexagonal MnTe, Phys. Rev. B 61 , 13679 (2000). [44] P. Soven, Coherent-Potential Model of Substitutional Disordered Alloys, Phys. Rev. 156 , 809 (1967). [45] G. M. Stocks, W. M. Temmerman, and B. L. Gy˝ orffy, Complete Solution of the Korringa-Kohn-Rostoker Coherent-Potential-Approximation Equations: Cu-Ni Alloys, Phys. Rev. Lett. 41 , 339 (1978). [46] J. B. Staunton, A. Marmodoro, and A. Ernst, Using den-sity functional theory to describe slowly varying fluctu-ations at finite temperatures: local magnetic moments in Gd and the ‘not so local’ moments of Ni, J. Phys.: Condens. Matter 26 , 274210 (2014). [47] C. E. Patrick and J. B. Staunton, MARMOT: mag-netism, anisotropy, and more, using the relativistic disor-dered local moment picture at finite temperature, Elec-tron. Struct. 4, 017001 (2022). [48] W. J. Takei, D. E. Cox, and G. Shirane, Magnetic Struc-tures in the MnSb-CrSb System, Phys. Rev. 129 , 2008 (1963). [49] C. Reig, V. Mu˜ noz, C. G´ omez, C. Ferrer, and A. Segura, Growth and characterisation of MnTe crystals, J. Cryst. Growth 223 , 349 (2001). [50] J. B. Staunton, L. Szunyogh, A. Buruzs, B. L. Gy˝ orffy, S. Ostanin, and L. Udvardi, Temperature dependence of magnetic anisotropy: An ab initio approach, Phys. Rev. B 74 , 144411 (2006). [51] H. Ebert, S. Mankovsky, K. Chadova, S. Polesya, J. Min´ ar, and D. K¨ odderitzsch, Calculating linear-response functions for finite temperatures on the basis of the alloy analogy model, Phys. Rev. B 91 , 165132 (2015). [52] K. Momma and F. Izumi, VESTA 3 for three-dimensional visualization of crystal, volumetric and mor-phology data, J. Appl. Crystallogr. 44 , 1272 (2011). [53] E. Mendive-Tapia and J. B. Staunton, Ab initio theory of the Gibbs free energy and a hierarchy of local moment correlation functions in itinerant electron systems: The magnetism of the Mn 3A materials class, Phys. Rev. B 
+
+99 , 144424 (2019). [54] B. A. Frandsen, M. Brunelli, K. Page, Y. J. Uemura, 7
+
+J. B. Staunton, and S. J. Billinge, Verification of Ander-son Superexchange in MnO via Magnetic Pair Distribu-tion Function Analysis and Ab Initio Theory, Phys. Rev. Lett. 116 , 197204 (2016). [55] R. Baral, J. A. Christensen, P. K. Hamilton, F. Ye, K. Chesnel, T. D. Sparks, R. Ward, J. Yan, M. A. McGuire, M. E. Manley, J. B. Staunton, R. P. Hermann, and B. A. Frandsen, Real-space visualization of short-range antiferromagnetic correlations in a magnetically enhanced thermoelectric, Matter 5, 1853 (2022). [56] J. B. Staunton and B. L. Gy˝ orffy, Onsager cavity fields in itinerant-electron paramagnets, Phys. Rev. Lett. 69 ,371 (1992). [57] E. Mendive-Tapia, M. Dos Santos Dias, S. Grytsiuk, J. B. Staunton, S. Bl¨ ugel, and S. Lounis, Short period magneti-zation texture of B20-MnGe explained by thermally fluc-tuating local moments, Phys. Rev. B 103 , 024410 (2021). [58] O. K. Andersen, Linear methods in band theory, Phys. Rev. B 12 , 3060 (1975). [59] O. Jepsen and O. K. Andersen, Calculated electronic structure of the sandwich d 1 metals LaI 2 and CeI 2: Ap-plication of new LMTO techniques, Z. Phys. B: Condens. Matter 97 , 35 (1995). [60] E. Bruno and B. Ginatempo, Algorithms for Korringa-Kohn-Rostoker electronic structure calculations in any Bravais lattice, Phys. Rev. B 55 , 12946 (1997). [61] R. Zeller, An elementary derivation of Lloyd s for-mula valid for full-potential multiple-scattering theory, J. Phys.: Condens. Matter 16 , 6453 (2004). [62] M. D¨ ane, M. L¨ uders, A. Ernst, D. K¨ odderitzsch, W. M. Temmerman, Z. Szotek, and W. Hergert, Self-interaction correction in multiple scattering theory: application to transition metal oxides, J. Phys.: Condens. Matter 21 ,045604 (2009). [63] J. P. Perdew, Density functional theory and the band gap problem, Int. J. Quantum Chem. 28 , 497 (2009). [64] A. D. Becke, A new mixing of Hartree–Fock and lo-cal density-functional theories, J. Chem. Phys. 98 , 1372 (1993). [65] B. Himmetoglu, A. Floris, S. De Gironcoli, and M. Cococ-cioni, Hubbard-corrected DFT energy functionals: The LDA+U description of correlated systems, Int. J. Quan-tum Chem. 114 , 14 (2014). [66] G. Kotliar, S. Y. Savrasov, K. Haule, V. S. Oudovenko, O. Parcollet, and C. A. Marianetti, Electronic struc-ture calculations with dynamical mean-field theory, Rev. Mod. Phys. 78 , 865 (2006). [67] J. P. Perdew and A. Zunger, Self-interaction correction to density-functional approximations for many-electron systems, Phys. Rev. B 23 , 5048 (1981). Loss of altermagnetic order and smooth restoration of Kramers’ spin degeneracy with increasing temperature in CrSb and MnTe Supplemental Material 
+
+Christopher D. Woodgate, 1, 2, ∗ Nabil Menai, 1 Arthur Ernst, 3, 4, 5 and Julie B. Staunton 2, †
+
+> 1
+
+H.H. Wills Physics Laboratory, University of Bristol, Royal Fort, Bristol, BS8 1TL, United Kingdom 
+
+> 2
+
+Department of Physics, University of Warwick, Coventry, CV4 7AL, United Kingdom 
+
+> 3
+
+Institute for Theoretical Physics, Johannes Keppler University Linz, Altenberger Strasse 69, A-4040 Linz, Austria 
+
+> 4
+
+Donostia International Physics Center, Donostia-San Sebastian 20018 Gipuzkoa, Spain 
+
+> 5
+
+Max-Planck-Institut f¨ ur Mikrostrukturphysik, Weinberg 2, D-06120 Halle, Germany 
+
+This is the Supplemental Material accompanying the main text. Here, we present additional results and analyses to aid interpretation of our data, and also report the technical details of our calculations. 
+
+S1. THE NiAs CRYSTAL STRUCTURE AND ITS BRILLOUIN ZONE 
+
+In Fig. S1, we illustrate the NiAs crystal structure, space group P 63/mmc (No. 194), and its associated irreducible Brillouin zone. (The NiAs structure is the structure in which CrSb and MnTe both crystallise.) We explicitly show the low-symmetry Γ ′-M ′ path, used to evidence the altermagnetic band splitting (or lack thereof) in our calculations. We also show the location of K′. Γ′ is positioned halfway between Γ and A, M ′ is positioned halfway between M
+
+and L, and K′ is positioned halfway between K and H. For Figure 3 of the main text, a constant-k slice of the BSF for varying altermagnetic order parameter, m, is shown at k = ( 2π√33a , 0, π 
+
+> 2c
+
+). This point lies half way between Γ ′ and 
+
+M ′, and we label it ˜k for notational convenience. 
+
+FIG. S1. Illustration of the real-space crystal structure (left) and irreducible wedge of the Brillouin zone (right) of the hexagonal NiAs structure, space group P6 3/mmc (No. 194) in which both CrSb and MnTe crystallise. We label the special points of the Brillouin zone, including selected lower-symmetry points where the altermagnetic band splitting is evidenced. The point ˜k is chosen to lie half way between Γ ′ and M ′. The image on the left is generated using VESTA [S1]. 
+
+Explicitly, the real-space lattice vectors of the NiAs structure (with hexagonal lattice parameters a and c) are 
+
+a1 = a · (
+
+√32 , − 12 , 0) , a2 = a · (0 , 1, 0) , and a3 = c · (0 , 0, 1) , (S1) while the basis vectors (specifying fractional atomic coordinates) and their respective Wyckoff labels are 
+
+B1 = 0 (2a), B2 = 12 a3 (2a), B3 = 13 a1 + 23 a2 + 14 a3 (2c), and B4 = 23 a1 + 13 a2 + 34 a3 (2c). (S2) In CrSb (MnTe), Cr (Mn) atoms occupy the 2a sites, while Sb (Te) atoms occupy the 2c sites. The reciprocal-space lattice vectors for the structure are then 
+
+b1 = 2πa · ( 2√33 , 0, 0) , b2 = 2πa · (
+
+√33 , 1, 0) , and b3 = 2πc · (0 , 0, 1) . (S3)   
+
+> ∗christopher.woodgate@bristol.ac.uk
+> †J.B.Staunton@warwick.ac.uk
+
+2 
+
+> S2. ELECTRONIC BAND DEGENERACIES IN PARAMAGNETIC AND ALTERMAGNETIC STATES
+
+In Figs. 1 and 2 of the main text, we compare the scalar-relativistic electronic structures of CrSb and MnTe in the altermagnetic ground states and in their paramagnetic states, with the latter described within the disordered local moment (DLM) picture. Although the site-diagonal spin disorder in the paramagnetic state leads to significant broadening of some electronic bands, it can still clearly be seen that, when going from the altermagnetic to the paramagnetic state, the plane kz = π/c gains an additional twofold degeneracy compared to the kz = 0 plane. This behaviour can be understood from the different symmetries of the two magnetic states (altermagnetic versus 
+
+paramagnetic). CrSb and MnTe both crystallize in the NiAs structure, hexagonal space group P 63/mmc (No. 194), pictured in Fig. S1. In the altermagnetic phase, the symmetry is described by the corresponding magnetic space group, i.e. ,the subset of operations derived from P 63/mmc in which certain space–group elements may be combined with time reversal, T , so as to leave the magnetic structure invariant. By contrast, in the paramagnetic state, due to the equivalence of the two magnetic sublattices, the symmetry reduces to the magnetic grey group P 63/mmc 1′, where global time reversal is a symmetry and each space–group operation appears both with and without T . The generators of the non-magnetic space group P 63/mmc can be chosen to be: 
+
+P 63/mmc : E, P, C+3z , S2z ≡ { C2z | 0, 0, 12 }, Cx+y . (S4) We then define the z-glide mirror, which is also a symmetry of the space group, as 
+
+fMz ≡ { mz | 0, 0, 12 } = P S2z . (S5) Proceeding, the action of each operation in momentum space is then 
+
+C2z :( kx, k y , k z ) 7 → (−kx, −ky , k z ),mz :( kx, k y , k z ) 7 → (kx, k y , −kz ),
+
+T :( kx, k y , k z ) 7 → (−kx, −ky , −kz ),S2z :( kx, k y , k z ) 7 → (−kx, −ky , k z ),
+
+(S6) with ( fMz )2 = e−ik z c, Θ2z ≡ S2z T : Θ22z = − e−ik z c. (S7) We note here that both symmetries Θ 2z and fMz map ( kx, k y , k z ) → (kx, k y , −kz ), so they leave both planes kz = 0 and kz = π/c invariant. Since Θ 2z is a non-symmorphic symmetry (combined with fractional translation), it acts differently on the planes 
+
+kz = 0 or kz = π/c ,
+
+(kz = 0 : Θ22z = −1 ⇒ twofold degeneracy across the whole plane ,kz = π/c : Θ22z = +1 ⇒ no pairing from Θ 2z . (S8) The same can be said about the glide mirror fMz where we obtain that, 
+
+(kz = 0 : fM 2 
+
+> z
+
+= +1 ⇒ no enforced twofold from fMz alone ,kz = π/c : fM 2 
+
+> z
+
+= −1 ⇒ twofold band sticking across the whole plane . (S9) In the altermagnetic state, both of these non-symmorphic symmetries, namely Θ 2z and fMz , are present. This means that both planes kz = 0 and kz = π/c are two-fold degenerate. In the case of kz = 0, it is Θ 2z that enforces it, whereas for kz = π/c plane, the degeneracy is protected by the glide mirror fMz . However, in the paramagnetic state all orientations of magnetic moments at each lattice site are equally probable. Thus, global PT is a symmetry with (PT )2 = −1, which implies twofold degeneracy everywhere (conventional Kramers degeneracy). On kz = π/c , the glide-induced sticking due to fMz remains which gives an additional independent factor of 2, leading to an overall four-fold degeneracy on that plane. On kz = 0, the Θ 2z symmetry is broken and is no longer a symmetry leading to only two-fold degeneracy along this plane. For convenience, we summarise our degeneracy results regarding the planes kz = 0 and kz = π/c in Table I. 3                             
+
+> TABLE I. Summary of the band structure degeneracy results obtained for altermagnetic and paramagnetic states in the kz= 0 and kz=π/c planes as derived in the text. Magnetic state kz= 0 plane kz=π/c plane Altermagnetic 2×degenerate from Θ 2z=S2zT2×degenerate from fMz
+> Paramagnetic 2×degenerate from PT 4×degenerate from PT and fMz
+> S3. INFERRING MAGNETIC ORDER: EVALUATION OF THE STATIC, PARAMAGNETIC SPIN SUSCEPTIBILITY
+
+In general, when seeking to infer magnetic ordering in a material, it is desirable to use approaches which are agnostic to the final magnetic ground state. As the DLM picture describes a paramagnetic state in which there is total magnetic disorder, it is a well-placed starting point for such an agnostic theory. The theory we use in this work has its foundations in the seminal paper by Gy˝ orffy et al. [S2] on ferromagnetic phase transitions in transition metals, and has subsequently been generalised to strongly-correlated materials such as transition metal oxides [S3], as well as to systems with multiple magnetic atoms in the unit cell [S4]. The key concepts of the approach are discussed extensively elsewhere [S2–S4], while the formal mathematical definitions of key quantities can be found in Ref. S5, so here we provide only the key details. In brief, the approach begins with consideration of the grand potential, Ω, of a system of interacting electrons where the local moment configuration is constrained to be {ˆei}, i.e. Ω( {ˆei}). An ab initio expression for the internal energy of a magnetic material [S2–S4] is then given by the average of this quantity over the local moment configurations, Ω( {mi}), where {mi} = ⟨ˆei⟩ are spatially inhomogeneous magnetic order parameters (vectors) describing deviations from the ideal paramagnetic state in which ⟨ˆei⟩ = 0. Proceeding, an estimate of the magnetic two-point correlation function [S6, S7] and, consequently, the inverse spin susceptibility (Eq. 23 of Ref. [S4]), is given by 
+
+ζPM  
+
+> ij
+
+= 3 kBT δ ij + ∂2Ω
+
+∂mi∂mj {mi}={0}
+
+= 3 kBT δ ij − S(2)  
+
+> ij
+
+= χ−1 
+
+> ij
+
+, (S10) where −S(2)  
+
+> ij
+
+is shorthand for the second partial derivatives of the DFT-DLM internal energy with respect to the variables {mi}. Due to the crystal symmetry, it is convenient to work with the lattice Fourier transform of this quantity, ˜ζPM  
+
+> ss ′
+
+(q), defined in Eq. 26 of Ref. [S4]. When searching for a magnetic phase transition, we consider gradually decreasing temperature from the high-T limit and seeking the temperature at which the magnetic susceptibility diverges. Within the present framework, this will be the temperature at which the lowest-lying eigenvalue of ˜ζPM  
+
+> ss ′
+
+(q)passes through zero for some qord . The wavevector qord is the magnetic propagation vector and defines the nature of ordering between unit cells, while the associated eigenvector defines how the different unit cells in the structure align with one another. Shown in Fig. S2 are plots of the eigenvalues of ˜ζPM  
+
+> ss ′
+
+(q) around the irreducible Brillouin zone of the NiAs structure for both CrSb and MnTe. We note the differing y-scales on the two plots; in metallic CrSb, magnetic moments are able to interact strongly with one another via the sea of itinerant electrons, while in semiconducting MnTe, localised magnetic moments interact more weakly. For both CrSb and MnTe, the minimum eigenvalue occurs at the Γ point, implying a magnetic propagation vector of q = 0 and indicating all unit cells are predicted to have the same sublattice magnetisations. The associated (normalised) eigenvector, defining the sublattice magnetisations is then ( 1√2 , − 1√2 ) = (0 .707 , −0.707) = ( ↑↓ ), i.e. an altermagnetic ordering. Within this mean-field theory, magnetic ordering is inferred for CrSb and MnTe at temperatures of 1117 K and 160 K, respectively. For CrSb, if an Onsager correction to the mean-field theory [S8] is included, the predicted transition temperature is 920 K, in fair agreement with the experimentally-determined value of 705 K [S9]. For MnTe, we attribute the underestimate of TN compared to the experimental value of 306 K [S10] to strong localisation of Mn 3 d states within the LSIC-LSDA. (Further discussion of this can be found in Sec. S6.) Additionally, the magnetisation derivatives of Eq. (S10) can be shown to be related to effective exchange interactions, 
+
+Jij , between magnetic atoms [S4] for the Heisenberg model, which has a Hamiltoninan of the form 
+
+H({ˆei}) = 12
+
+X
+
+> i,j
+
+Jij ˆei · ˆej . (S11) For both CrSb, we find that our calculated spin susceptibility data is well-captured by interactions up to fourth-nearest neighbours, with J1 = 39 .9 meV, J2 = −30 .0 meV, J3 = 6 .5 meV, and J4 = 7 .2 meV. For MnTe, a fit to 4M M K A L H A 0 M 0 K 0 0
+
+> 0.0 0.2 0.4 0.6 Eigenvalue (eV)
+
+(a) Eigenvalues of PM  
+
+> ij
+
+for CrSb at T = 1.2 T N              
+
+> Eigenvector: ( )
+> Eigenvector: ( )
+> MMKALHA0M0K00
+> 0.00 0.02 0.04 0.06 0.08 Eigenvalue (eV)
+
+(b) Eigenvalues of PM  
+
+> ij
+
+for MnTe at T = 1.2 T N      
+
+> Eigenvector: ( )
+> Eigenvector: ( )Minimum eigenvalue at Γ,eigenvector (0.707, –0.707),
+> ⇒altermagnetic ordering Minimum eigenvalue at Γ,eigenvector (0.707, –0.707),
+> ⇒altermagnetic ordering
+
+FIG. S2. Eigenvalues of ˜ζPM  
+
+> ss ′
+
+(q) at T = 1 .2TN around high-symmetry lines of the irreducible Brillouin zone for both CrSb (a) and MnTe (b). The quantity ˜ζPM  
+
+> ss ′
+
+(q) is related to an estimate of the static, paramagnetic spin susceptiblity of a material. That the minimum occurs at Γ with eigenvector ( ↑↓ ) indicates that altermagnetic order is predicted for both materials. 
+
+third-nearest neighbours is sufficient, with J1 = 5 .0 meV, J2 = −1.8 meV, and J3 = 1 .8 meV. (Here, Ji denotes the exchange interaction between two magnetic atoms which are ith -nearest neighbours.) The signs and relative strengths of the dominant interactions compare acceptably with exchange interactions fitted to neutron scattering data for both CrSb [S11] and MnTe [S12], though our calculated values are consistently somewhat larger than those reported experimentally for both materials. We note here, though, that our exchange interactions are recovered from a spin-susceptibility calculation in the paramagnetic regime, and cannot necessarily be expected to be the same as those recovered in the low-temperature altermagnetic regime. (See, e.g. Ref. S13 for a discussion of how DFT-calculated magnetic exchange interactions can vary depending on the choice of magnetic state in a calculation.) 
+
+A. Degeneracy of spin susceptibilities in the kz = π/c plane 
+
+In Fig. S2 above, it is notable that, along the path A–L–H–A, i.e. in the plane kz = π/c , the two eigenvalues of the inverse spin susceptibility matrix are degenerate. These two eigenvalues have corresponding (normalised) eigenvectors ( 1√2 , − 1√2 ) = (0 .707 , −0.707) = ( ↑↓ ) and ( 1√2 , 1√2 ) = (0 .707 , 0.707) = ( ↑↑ ). They therefore correspond to the cases where both sublattices spontaneously magnetise in opposite directions (‘altermagnetic’) and where both sublattices spontaneously magnetise in the same direction (‘ferromagnetic’). In the plane kz = π/c , we understand the degeneracy of the two eigenvalues as follows. A spin fluctuation with kz = π/c describes a magnetic ordering which is alternating with a periodicity of one unit cell in the ˆ z direction. For the NiAs structure considered in this work, ‘grouping’ the atoms between unit cells differently shows that both ferromagnetic and altermagnetic orderings within a single unit cell describe the same overall magnetic structure once the total system is considered. An example of this situation is illustrated conceptually in Fig. S3. Formally, we consider the non-symmorphic glide mirror 
+
+fMz ≡ { mz | 0, 0, 12 } = P S2z , (S12) where mz is a mirror through the z = 0 plane, P is spatial inversion, and S2z ≡ { C2z | 0, 0, 12 } is a twofold screw rotation about z. In the conventional, primitive unit cell of CrSb and MnTe, the two magnetic sublattices A and B5(a) (b) 
+
+FIG. S3. Illustration of how the eigenvectors ( ↑, ↓) and ( ↑, ↑), describing possible antiparallel (a) and parallel (b) spin orderings, respectively, of ˜ζPM  
+
+> ss ′
+
+(q) much have identical eigenvalues when the magnetic propagation vector has kz = π/ 2c. Spins from adjacent cells can be ‘grouped’ to produce the same magnetic structure. 
+
+are exchanged by fMz . Let |A, k⟩ denote the Bloch state on sublattice A,
+
+|A, k⟩ = 1
+
+√N
+
+X
+
+> R
+
+eik·(R+rA) |R + rA⟩, (S13) with rA the basis vector of A within the primitive cell. Applying fMz yields 
+
+fMz |A, k⟩ = eik z c/ 2 |B, m z k⟩, (S14) and similarly 
+
+fMz |B, k⟩ = eik z c/ 2 |A, m z k⟩. (S15) On planes invariant under mz (e.g., kz = 0 and kz = π/c ), the Bloch momentum is unchanged ( mz k = k) and fMz
+
+has the following 2 × 2 representation in the ( A, B ) sublattice basis: 
+
+D( fMz ) = 0 eik z c/ 2
+
+eik z c/ 2 0
+
+!
+
+. (S16) In particular 
+
+D( fMz ) = 
+
+
+
+0 1 1 0 
+
+!
+
+= σx, kz = 0 ,
+
+0 ii 0
+
+!
+
+= iσ x, kz = π/c. 
+
+(S17) To connect this glide to the paramagnetic susceptibility, we introduce the symmetric ( ↑↑ , FM-like) and antisym-metric ( ↑↓ , AFM-like) sublattice combinations expressed in the ( A, B ) sublattice basis: 
+
+v↑↑ = 1
+
+√2
+
+11
+
+!
+
+, v↑↓ = 1
+
+√2
+
+1
+
+−1
+
+!
+
+, (S18) and the unitary change of basis 
+
+H = 1
+
+√2
+
+1 11 −1
+
+!
+
+. (S19) 6In the basis ( v↑↑ , v ↑↓ ) the glide is diagonal: 
+
+D′( fMz ) ≡ H†D( fMz ) H =
+
+(σz , kz = 0 ,i σ z , kz = π/c, (S20) Hence the explicit action is 
+
+kz = 0 : D′( fMz ) v↑↑ = v↑↑ , D′( fMz ) v↑↓ = − v↑↓ , (S21) 
+
+kz = π/c : D′( fMz ) v↑↑ = i v ↑↑ , D′( fMz ) v↑↓ = − i v ↑↓ . (S22) The glide invariance D( fMz ) ˜ζPM  
+
+> ss ′
+
+(q) D( fMz )−1 = ˜ζPM  
+
+> ss ′
+
+(q) implies that, in the {v↑↑ , v ↑↓ } basis, the paramagnetic inverse susceptibility is diagonal for any glide-invariant q:˜ζPM  
+
+> ss ′
+
+(q) = λ↑↑ (q) 00 λ↑↓ (q)
+
+!
+
+. (S23) On the plane kz = 0, and since the glide labels are real (+1 , −1), symmetry imposes diagonality but does not relate 
+
+λ↑↑ and λ↑↓ . In general λ↑↑ (q)̸ = λ↑↓ (q). On the kz = π/c plane, the only q-dependence of D( fMz ; q) is the Bloch phase eiq z c/ 2 from the half-translation, so 
+
+D′( fMz ; −q) = D′( fMz ; q)∗. (S24) Thus 
+
+D′( fMz ; q) = iσ z , D′( fMz ; −q) = −iσ z . (S25) Hence 
+
+D′( fMz ; q) v↑↑ = i v ↑↑ , D′( fMz ; q) v↑↓ = −i v ↑↓ , (S26) while 
+
+D′( fMz ; −q) v↑↑ = −i v ↑↑ , D′( fMz ; −q) v↑↓ = i v ↑↓ . (S27) Thus the + i glide sector is spanned by v↑↑ at q and by v↑↓ at −q. Since ˜ζPM  
+
+> ss ′
+
+(q) = ˜ζPM  
+
+> ss ′
+
+(−q) by time-reversal symmetry in the paramagnetic state, we get that T ˜ζPM  
+
+> ss ′
+
+(q) T −1 = ˜ζPM  
+
+> ss ′
+
+(−q) = ˜ζPM  
+
+> ss ′
+
+(q)), and the labels swap under 
+
+q → − q, one has 
+
+λ↑↑ (−q) = λ↑↓ (q), λ↑↓ (−q) = λ↑↑ (q). (S28) Together with λ↑↑ (q) = λ↑↑ (−q) (see Fig. S2 for evidence of this behaviour along the line −M -Γ-M ), this gives 
+
+λ↑↑ (q) = λ↑↓ (q) (qz = π/c ). (S29) We note that this result follows from the fourfold degeneracy enforced on the kz = π/c plane in the paramagnetic state by the combined PT symmetry and the nonsymmorphic glide fMz , as established in the previous section. 
+
+S4. TEMPERATURE-DEPENDENCE OF THE MAGNETIC ORDER PARAMETER 
+
+In this work, temperature dependence of the magnetic order parameter is described within the DLM picture using the formalism outlined in Ref. S14 for describing the temperature dependence of various magnetic quantities ab initio . (For description of non-relativistic band splittings, as is the focus of this work, it is sufficient to consider scalar-relativistic calculations and to neglect the calculation of magnetocrystalline anisotropy energies, etc. ) Concise, accessible summaries of the approach can be found in Sec. 2.3 of Ref. S15, or Sec.II.B of Ref. S13. 7As before, the approach considers the statistical physics of thermally fluctuating local magnetic moments. An approximate form of the true grand potential, Ω, is introduced, labelled Ω 0, and defined via Ω0 ({ˆei}) = − X
+
+> i
+
+hi · ˆei, (S30) where hi are the so-called Weiss fields , describing the average magnetic field felt locally at a given site i. It is then convenient to introduce ‘beta-h’ quantities, λi = βhi, and also the directional unit vectors, ˆ ni via λi = λi ˆni.The form of Eq. (S30) means that the probability distribution P0({ˆei}) can be written as a product of independent probabilities at each lattice site, P0({ˆei}) = Q 
+
+> i
+
+P0,i (ˆ ei). These independent probabilities at each lattice site can be written analytically as 
+
+P0,i (ˆ ei) = exp ( λi · ˆei)(4 π/λ i) sinh( λi) . (S31) The magnetic order parameter at each site, mi = ⟨ˆei⟩0,T , where 0 < ∥mi∥ < 1 and ⟨·⟩ 0,T denotes the ensemble average taken with respect to the free energy of Eq. (S30), is then expressed as 
+
+mi =
+
+Z
+
+dˆ ei P0,i (ˆ ei)ˆ ei
+
+Y 
+
+> j̸=i
+
+Z
+
+dˆ ei P0,j (ˆ ej ) (S32) = L(λi)ˆ ni, (S33) where L(x) = coth x − 1/x is the usual Langevin function. Naturally, in the case of a two-sublattice, collinear magnetically ordered structure where both sublattices have equal and opposite magnetisation vectors—such as the two altermagnets considered in this work—the magnetic order can be quantified by a single number, m = ∥mi∥.The temperature dependence of the magnetic order is determined via free energy considerations [S13, S15]. The Weiss fields are written as 
+
+hi = −∇ mi ⟨Ω⟩0,T = − 34π
+
+Z
+
+dˆ ei⟨Ω⟩ˆei 
+
+> 0,T
+
+ˆei, (S34) where ⟨·⟩ ˆei 
+
+> 0,T
+
+denotes a partial average over all possible local moment configurations where ˆ ei is held fixed. Eq. (S34) includes an implicit self-consistency condition [S13] and, in general, a consistent set {hi} must be found at each desired temperature to determine the temperature-dependent sublattice magnetisation. (See, e.g. Sec. 3.6 of Ref. [S15] for further discussion of this aspect.) In general, Eq. (S34) will only admit non-zero solutions below the magnetic critical temperature, the N´ eel temperature in the case of this work. It is perhaps helpful to think of the above as complementary to the approach outlined in Sec. S3 for inferring the transition via direct evaluation of the static, paramagnetic spin susceptibility. There, the transition is inferred by considering T > T N approaching the N´ eel temperature from ‘above’, while the approach outlined in this section is primarily used (in this work) to consider intermediate temperatures (0 < T < T N) and infer how the well-defined magnetic ground state disorders with increasing temperature, thus approaching TN from ‘below’.   
+
+> S5. COMPUTATIONAL DETAILS A. The ASA prescription: Insertion of empty spheres and control of sphere radii
+
+In the Korringa–Kohn–Rostoker (KKR) [S16] formulation of density functional theory (DFT) [S17], which uses the framework of multiple scattering theory to construct the single-particle Green’s function, the one-electron Kohn-Sham effective potential is written as a sum of localised, atom-centred potentials [S18]. For the calculations presented here, using the local self-interaction correction (LSIC) [S19] to the local spin-density approximation (LSDA), we use spherically-symmetric potentials within the atomic-sphere approximation (ASA) as described by Andersen [S20]. The ASA prescription stipulates that the total volume of the spheres within the unit cell on which the potential is defined is set equal to the volume of the Wigner-Seitz cell of the considered structure. However, for a multi-atom unit cell, such as the NiAs crystal structure considered here, this leaves a level of freedom when it comes to determination of the ‘optimal’ set of sphere radii to use in a given calculation. Additionally, in a comparatively open structure, such as in the NiAs structure, it is commonplace to insert so-called ‘empty spheres’ into the structure where the potential is defined but where there is no associated ionic charge, to improve the space filling and thus the description of DFT potential [S21]. The optimal combination of spheres to use will generally be the (physically reasonable) combination 8which minimises the total energy of the system as obtained within a self-consistent calculation while at the same time avoiding excessive sphere overlap. For CrSb, we insert two empty spheres into the NiAs structure with fractional coordinates ( 13 , 23 , 34 ) and ( 23 , 13 , 14 ). The sphere radii for spheres associated with Cr, Sb, and ‘empty’ sites are then set to be 1.486, 1.695, and 1.132 ˚ A, respectively. (So-called ‘metalloid’ elements such as Sb and Te have larger atomic radii than transition metals such as Cr and Mn, and hence larger sphere radii in these calculations.) For MnTe, with its increased c/a ratio, we find that the best choice is the insertion of four smaller empty spheres with fractional coordinates ( 13 , 23 , 58 ), ( 13 , 23 , 78 ), ( 23 , 13 , 18 ), and ( 23 , 13 , 38 ). The sphere radii for spheres associated with Mn, Te, and ‘empty’ lattice sites are then set to be 1.614, 1.773, and 1.020 ˚ A, respectively. We find that this setup with four empty spheres results in a lower calculated total energy for MnTe than a setup with two empty spheres, which serves as evidence that this is a more appropriate description of the geometry.  
+
+> B. Self-consistent DFT calculations
+
+As was outlined in the main text, we use the all-electron Hutsepot code [S22] to construct the self-consistent potentials of the Korringa–Kohn–Rostoker (KKR) formulation [S16] of density functional theory (DFT) [S17]. For both materials, experimentally-determined lattice constants are used, which for CrSb are a = 4 .121 ˚ A and c =5.467 ˚ A [S9], while for MnTe are a = 4 .142 ˚ A and c = 6 .711 ˚ A [S10]. We perform scalar-relativistic calculations within the atomic sphere approximation (ASA) [S20], employing an angular momentum cutoff of lmax = 3 for basis set expansions, and a 24-point semi-circular contour in the complex plane to integrate over valence energies. For CrSb and MnTe respectively, we use dense 30 × 30 × 24 and 30 × 30 × 20 k-point meshes for Brillouin zone integrations. For CrSb, which is metallic, we use a local spin-density (LSDA) exchange correlation functional, specifically the parametrisation of Perdew and Wang [S23]. For MnTe, which is semiconducting, we employ the local self-interaction correction (LSIC) [S19] to the LSDA as implemented in Hutsepot [S22] to capture the stronger electronic cor-relations present in this material, with the LSIC configuration specified below, in Sec. S5 B i. For both materials, the altermagnetic ground state is described using a conventional, collinear-spin calculation, while the paramagnetic state is described via application of the DLM picture [S24, S25], which uses the coherent potential approximation (CPA) [S26, S27] to average over all possible spin orientations, including those which are non-collinear. Lloyd’s formula [S28] is used for accurate determination of the Fermi energy, EF. 
+
+> i. LSIC configuration for MnTe
+
+In MnTe, for a single atom, we apply the LSIC to all eg and t2g states in a single spin channel, which follows the prescription of Ref. [S29] and minimises the total energy of the system. In the altermagnetic state, these spin channels are selected to be alternate on the two sublattices, which facilitates convergence to the altermagnetic ground state. In the paramagnetic state, we use the equivalence (in the absence of spin-orbit effects) within the CPA of the angular average over spin orientations with that of the CPA condition of a so-called ‘Ising’ alloy of ‘up’ and ‘down’ magnetic moments [S3]. The ‘up’ moments have all eg and t2g states corrected in the majority spin channel, while the ‘down’ moments have all eg and t2g states corrected in the minority spin channel. In the altermagnetic ground state, the LSIC–LSDA yields a calculated total energy which is lower than that calculated in the LSDA, with the difference being 4.298 eV/f.u. A similar result holds in the DLM calculations describing the paramagnetic state, where the LSIC–LSDA energy is again lower than the LSDA energy, with the difference this time being 4.226 eV/f.u.  
+
+> C. Density of states and Bloch spectral function calculations
+
+For calculations of the electronic density of states (DOS) and the Bloch spectral function (BSF), we use a dense 
+
+k-point mesh of 90 × 90 × 72 points (90 × 90 × 60 points) for CrSb (MnTe). All calculations are performed with a consistent small imaginary component of the energy to avoid divergences along the real axis, as is standard practice in the KKR method. Where spin polarisation of the BSF is evidenced, e.g. in Fig. 1 of the main text, we explicitly plot the difference between the spin-up BSF and the spin-down BSF. 9 
+
+> D. Evaluation of the static, paramagnetic spin susceptibility
+
+The static, paramagnetic spin susceptibility, Eq. (S10), of both CrSb and MnTe is evaluated within a computational implementation of the framework outlined in Refs. [S2–S5], with the inclusion of an adaptive meshing scheme for Brillouin zone integrations [S30]. We sample the derivatives of Eq. S10 at a total of 84 points of the irreducible Brillouin zone, including high-symmetry points. From these reciprocal-space data, a least-squares fit is used to recover the effective Heisenberg interactions presented in Sec. S3.  
+
+> E. Temperature dependence of the magnetic order parameter
+
+The temperature dependence of the magnetic order parameter is described using the formalism of Sec. S4 as implemented in the Marmot package [S15]. This code takes self-consistent Hutsepot potentials as inputs and subsequently applies the relevant DLM physics. An adaptive meshing scheme for Brillouin zone integrations is used [S30], and angular sampling of magnetic moment orientations uses a 240 × 40 mesh of θ and ϕ values. We sample a mesh of input ‘beta-h’ Weiss field values, βhi, (with a denser mesh of points at small betah-h values) and compute their effective temperatures (Eq. 23 of Ref. S15) to obtain the m(T ) data shown in Fig. 3 of the main text. As above, here we restate that, by symmetry, the magnetisations of the two sublattices are equal in magnitude and antiparallel for both of our considered materials, so the degree of magnetic order can be quantified by a single number, our altermagnetic order parameter, m. 
+
+> S6. MnTe WITHIN THE LOCAL SPIN-DENSITY APPROXIMATION (LSDA)
+
+It is well-known that the local spin-density approximation (LSDA) to the exchange-correlation (XC) functional within density funtional theory (DFT) underestimates band gaps in many semiconductors and insulators [S31]. In semiconductors and insulators containing mid- to late-3 d elements, this failure is primarily due to the unphysical de-localisation of 3 d orbitals. Such problems can frequently be rectified via use of hybrid DFT XC functionals [S32], via application of a Hubbard correction (DFT+ U ) [S33], via application of dynamical mean-field theory (DMFT) [S34], or via employment of some form of self-interaction correction (SIC) [S35]. In this work, we use the local self-interaction correction (LSIC) [S29] to the LSDA in the context of the KKR formulation of DFT. In the main text, it was demonstrated that these LSIC–LSDA calculations recover the band gap of MnTe, producing results in broad agreement with experimentally-determined values. Moreover, it was shown that the bandgap is largely unaffected by magnetic disorder within this model. Here, we present results for MnTe modelled within the LSDA without use of any form of self-interaction correction, and demonstrate that the LSDA fails to correctly describe the semiconducting nature of this material. First, in Fig. S4 we show the electronic structure of MnTe modelled within the LSDA in both altermagnetic and paramagnetic states. In the altermagnetic state, the magnitude of the magnetic moment on Mn atoms is now 4.090 
+
+μB, while in the paramagnetic (DLM) state this value is 4.122 μB. These values are slightly reduced compared to the LSIC-LDA values of 4.62 and 4.63 μB for altermagnetic and paramagnetic (DLM) states, respectively. Proceeding, we show the contribution to the total electronic density of states made by a single Mn atom within the LSDA in both altermagnetic and paramagnetic (DLM) states. It can now be seen that, contrary to the LSIC-LSDA results presented in the main text, the 3 d states of Mn exhibit reduced exchange splitting and occupy an energy range around EF, resulting in the system being predicted metallic. Finally, we consider the magnetic ordering temperature. Here, the metallic nature of MnTe within the LSDA results in strengthened magnetic interactions. Although the ordering is still predicted to be altermagnetic, with the magnetic propagation vector being k = 0 and the eigenvector describing the magnetic ordering being ( ↑↓ ), this now occurs at a temperature of 709 K, much higher than the experimental value of 306 K [S10]. Fitting the real-space interactions for the Heisenberg model to the LSDA spin susceptibility data yields J1 = 41 .5 meV, J2 = 3 .3 meV, and J3 = 11 .7, much larger than values determined from our earlier LSIC-LSDA calculations or from experimental neutron scattering data [S12]. 10 M K A L H A                     
+
+> 15
+> 10
+> 5
+> 05
+> E E F (eV)
+> M00M0025 DOS (eV 1)
+> Mn Te Tot.
+> MKALHA
+> 15
+> 10
+> 5
+> 05
+> E E F (eV)
+> M00M0025 DOS (eV 1)
+> Mn Te Tot.
+
+(a) Altermagnetic MnTe (LSDA) (b) Paramagnetic (DLM) MnTe (LSDA) 
+
+FIG. S4. Electronic structure of MnTe in (a) its altermagnetic ground state and (b) its paramagnetic state described using the DLM picture. Notably, MnTe is metallic in these calculations, at odds with experimental calculations and demonstrating the failure of the LSDA to describe the physics of this material. [S1] K. Momma and F. Izumi, VESTA 3 for three-dimensional visualization of crystal, volumetric and morphology data, J. Appl. Crystallogr. 44 , 1272 (2011). [S2] B. L. Gy˝ orffy, A. J. Pindor, J. Staunton, G. M. Stocks, and H. Winter, A first-principles theory of ferromagnetic phase transitions in metals, J. Phys. F: Met. Phys. 15 , 1337 (1985). [S3] I. D. Hughes, M. D¨ ane, A. Ernst, W. Hergert, M. L¨ uders, J. B. Staunton, Z. Szotek, and W. M. Temmerman, Onset of magnetic order in strongly-correlated systems from ab initio electronic structure calculations: application to transition metal oxides, New J. Phys. 10 , 063010 (2008). [S4] E. Mendive-Tapia and J. B. Staunton, Ab initio theory of the Gibbs free energy and a hierarchy of local moment correlation functions in itinerant electron systems: The magnetism of the Mn 3A materials class, Phys. Rev. B 99 , 144424 (2019). [S5] J. Staunton, B. L. Gy˝ orffy, G. M. Stocks, and J. Wadsworth, The static, paramagnetic, spin susceptibility of metals at finite temperatures, J. Phys. F: Met. Phys. 16 , 1761 (1986). [S6] B. A. Frandsen, M. Brunelli, K. Page, Y. J. Uemura, J. B. Staunton, and S. J. Billinge, Verification of Anderson Superexchange in MnO via Magnetic Pair Distribution Function Analysis and Ab Initio Theory, Phys. Rev. Lett. 116 ,197204 (2016). [S7] R. Baral, J. A. Christensen, P. K. Hamilton, F. Ye, K. Chesnel, T. D. Sparks, R. Ward, J. Yan, M. A. McGuire, M. E. Manley, J. B. Staunton, R. P. Hermann, and B. A. Frandsen, Real-space visualization of short-range antiferromagnetic correlations in a magnetically enhanced thermoelectric, Matter 5, 1853 (2022). [S8] J. B. Staunton and B. L. Gy˝ orffy, Onsager cavity fields in itinerant-electron paramagnets, Phys. Rev. Lett. 69 , 371 (1992). [S9] W. J. Takei, D. E. Cox, and G. Shirane, Magnetic Structures in the MnSb-CrSb System, Phys. Rev. 129 , 2008 (1963). [S10] C. Reig, V. Mu˜ noz, C. G´ omez, C. Ferrer, and A. Segura, Growth and characterisation of MnTe crystals, J. Cryst. Growth 
+
+223 , 349 (2001). [S11] A. K. Singh, N. Heinsdorf, A. A. Mancilla, J. Bannies, A. Maity, A. I. Kolesnikov, M. Matsuda, M. B. Stone, M. Franz, J. Gaudet, and A. M. Hallas, Chiral Spin-Split Magnons in the Metallic Altermagnet CrSb, arXiv:2511.16086 . [S12] Z. Liu, M. Ozeki, S. Asai, S. Itoh, and T. Masuda, Chiral Split Magnon in Altermagnetic MnTe, Phys. Rev. Lett. 133 ,156702 (2024). [S13] E. Mendive-Tapia, M. Dos Santos Dias, S. Grytsiuk, J. B. Staunton, S. Bl¨ ugel, and S. Lounis, Short period magnetization texture of B20-MnGe explained by thermally fluctuating local moments, Phys. Rev. B 103 , 024410 (2021). [S14] J. B. Staunton, L. Szunyogh, A. Buruzs, B. L. Gy˝ orffy, S. Ostanin, and L. Udvardi, Temperature dependence of magnetic anisotropy: An ab initio approach, Phys. Rev. B 74 , 144411 (2006). [S15] C. E. Patrick and J. B. Staunton, MARMOT: magnetism, anisotropy, and more, using the relativistic disordered local moment picture at finite temperature, Electron. Struct. 4, 017001 (2022). [S16] H. Ebert, D. K¨ odderitzsch, and J. Min´ ar, Calculating condensed matter properties using the KKR-Green’s function method—recent developments and applications, Rep. Prog. Phys. 74 , 096501 (2011). [S17] R. Jones, Density functional theory: Its origins, rise to prominence, and future, Rev. Mod. Phys. 87 , 897 (2015). [S18] J. S. Faulkner, G. M. Stocks, and Y. Wang, Multiple Scattering Theory: Electronic Structure of Solids , 1st ed. (IOP Publishing, Bristol, UK, 2018). [S19] M. L¨ uders, A. Ernst, M. D¨ ane, Z. Szotek, A. Svane, D. K¨ odderitzsch, W. Hergert, B. L. Gy˝ orffy, and W. M. Temmerman, Self-interaction correction in multiple scattering theory, Phys. Rev. B 71 , 205109 (2005). [S20] O. K. Andersen, Linear methods in band theory, Phys. Rev. B 12 , 3060 (1975). 11 
+
+[S21] O. Jepsen and O. K. Andersen, Calculated electronic structure of the sandwich d 1 metals LaI 2 and CeI 2: Application of new LMTO techniques, Z. Phys. B: Condens. Matter 97 , 35 (1995). [S22] M. Hoffmann, A. Ernst, W. Hergert, V. N. Antonov, W. A. Adeagbo, R. M. Geilhufe, and H. Ben Hamed, Magnetic and Electronic Properties of Complex Oxides from First-Principles, Phys. Status Solidi B 257 , 1900671 (2020). [S23] J. P. Perdew and Y. Wang, Accurate and simple analytic representation of the electron-gas correlation energy, Phys. Rev. B 45 , 13244 (1992). [S24] A. J. Pindor, J. Staunton, G. M. Stocks, and H. Winter, Disordered local moment state of magnetic transition metals: a self-consistent KKR-CPA calculation, J. Phys. F: Met. Phys. 13 , 979 (1983). [S25] J. Staunton, B. Gy˝ orffy, A. Pindor, G. Stocks, and H. Winter, The “disordered local moment” picture of itinerant magnetism at finite temperatures, J. Magn. Magn. Mater. 45 , 15 (1984). [S26] P. Soven, Coherent-Potential Model of Substitutional Disordered Alloys, Phys. Rev. 156 , 809 (1967). [S27] G. M. Stocks, W. M. Temmerman, and B. L. Gy˝ orffy, Complete Solution of the Korringa-Kohn-Rostoker Coherent-Potential-Approximation Equations: Cu-Ni Alloys, Phys. Rev. Lett. 41 , 339 (1978). [S28] R. Zeller, An elementary derivation of Lloyd s formula valid for full-potential multiple-scattering theory, J. Phys.: Condens. Matter 16 , 6453 (2004). [S29] M. D¨ ane, M. L¨ uders, A. Ernst, D. K¨ odderitzsch, W. M. Temmerman, Z. Szotek, and W. Hergert, Self-interaction correction in multiple scattering theory: application to transition metal oxides, J. Phys.: Condens. Matter 21 , 045604 (2009). [S30] E. Bruno and B. Ginatempo, Algorithms for Korringa-Kohn-Rostoker electronic structure calculations in any Bravais lattice, Phys. Rev. B 55 , 12946 (1997). [S31] J. P. Perdew, Density functional theory and the band gap problem, Int. J. Quantum Chem. 28 , 497 (2009). [S32] A. D. Becke, A new mixing of Hartree–Fock and local density-functional theories, J. Chem. Phys. 98 , 1372 (1993). [S33] B. Himmetoglu, A. Floris, S. De Gironcoli, and M. Cococcioni, Hubbard-corrected DFT energy functionals: The LDA+U description of correlated systems, Int. J. Quantum Chem. 114 , 14 (2014). [S34] G. Kotliar, S. Y. Savrasov, K. Haule, V. S. Oudovenko, O. Parcollet, and C. A. Marianetti, Electronic structure calcula-tions with dynamical mean-field theory, Rev. Mod. Phys. 78 , 865 (2006). [S35] J. P. Perdew and A. Zunger, Self-interaction correction to density-functional approximations for many-electron systems, Phys. Rev. B 23 , 5048 (1981).

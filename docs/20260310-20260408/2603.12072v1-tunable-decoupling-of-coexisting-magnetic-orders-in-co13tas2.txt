@@ -1,0 +1,444 @@
+Title: Tunable decoupling of coexisting magnetic orders in Co$_{1/3}$TaS$_2$
+
+URL Source: https://arxiv.org/pdf/2603.12072v1
+
+Published Time: Fri, 13 Mar 2026 01:21:50 GMT
+
+Number of Pages: 25
+
+Markdown Content:
+# Tunable decoupling of coexisting magnetic orders in Co 1/3TaS 2
+
+## Yining Hu 1* , Zili Feng 2,3 , Takashi Kurumaji 2,3 , Linda Ye 2,3* ,Chunyu Mark Guo 1* , Philip J. W. Moll 1* 
+
+> 1
+
+Max Planck Institute for the Structure and Dynamics of Matter, Hamburg, Germany. 
+
+> 2
+
+Division of Physics, Mathematics and Astronomy, California Institute of Technology, Pasadena, CA 91125, USA.  
+
+> 3
+
+Institute of Quantum Information and Matter, California Institute of Technology, Pasadena, CA 91125, USA. *Corresponding author(s). E-mail(s): yining.hu@mpsd.mpg.de; lindaye@caltech.edu; chunyu.guo@mpsd.mpg.de; philip.moll@mpsd.mpg.de; Contributing authors: zlfeng@caltech.edu; kurumaji@caltech.edu; 
+
+Abstract 
+
+In multiferroics, new physical responses and functionalities emerge when symmetry-distinct order parameters couple. This conventionally occurs when lat-tice and magnetic degrees of freedom order independently in a material. Here, we report an all-magnetic analogue of multiferroic behavior in the antiferromag-net Co 1/3TaS 2, where topological scalar spin chirality and nematicity coexist on the same spin lattice. While the chiral spin texture generates an anomalous Hall effect (AHE), the nematic order breaks threefold rotational symmetry and dominates longitudinal transport. Crucially, in zero field these symmetry-distinct orders merely coexist yet magnetic fields induce strong coupling between them, thus realizing a new type of multiferroic bebhavior via tuning of the coupling itself instead of direct manipulation of secondary orders. In sub-domain sized devices with achiral geometry, we demonstrate that nonreciprocal transport serves as a symmetry-based probe of the global spin chirality, co-aligned with the strong topological AHE of the system. In Co 1/3TaS 2 the topological Hall state inherits a large resistance anomaly via chiral-nematic coupling, thus our results show-case how hybrid magnetic orders can achieve advanced functionalities by merging symmetry-forbidden material responses. 
+
+1
+
+> arXiv:2603.12072v1 [cond-mat.mtrl-sci] 12 Mar 2026
+
+# Main ab
+
+# 10 μm
+
+# ab’
+
+# a
+
+# c
+
+Phase chiral Phase nematic 
+
+Sk
+
+Sj
+
+Si
+
+# 𝒯 C3 𝒯 C3 𝒯 C3
+
+PM 
+
+Phase chiral +nematic chiral +nematic nematic 
+
+# b
+
+Fig. 1 a The real-space and reciprocal-space sketch of chiral phse, nematic phase and their combina-tion. The volume spanned by Si, Sj and Sk is propotional to the chirality. The time-reversal symmetry and the C 3z rotational symmetry of the three phases are indicated. b SEM image of the device for transport measurement the b′ axis denotes the crystallographic b axis rotated by 30 ◦ clockwise in device plane. The current is applied along a direction. Scale bar 10 μm. c Temperature dependence of longitudinal resistivity. 
+
+When magnetic materials order below a transition temperature, macroscopic numbers of microscopic degrees of freedom condense into a collective state described by an order parameter with only a few components. This reduction both poses the conceptual challenge of identifying and classifying often complex magnetic orders and creates opportunities for applications, as the discrete states of an order parameter can be used to store or process information. 2The crux of exploiting ordered states is always a balance between mutually incom-patible requirements. On the one hand, the order should be robust against external perturbations to ensure stability and low noise; on the other hand, it must remain susceptible to controlled manipulation by weak stimuli, such as low-power electrical currents. Identifying physical mechanisms that satisfy both requirements remains a central challenge. One successful paradigm is provided by multiferroics [1, 2], in which multiple coupled order parameters coexist, allowing one form of order to be manip-ulated indirectly by stimulating another. Representative examples span the type-I multiferroics such as BiFeO 3 [3] where electric fields control magnetic domains via fer-roelectric switching [4, 5], and type-II multiferroics such as TbMnO 3 [6] and MnWO 4
+
+[7] where electric fields select the handness of spiral magnetic order. In such sys-tems, symmetry-allowed coupling terms between distinct orders are set by the crystal structure. Here we report an all-magnetic analogue in the antiferromagnet Co 1/3TaS 2 [8–11]. At low temperatures, the Co moments participate in two distinct and symmetry-incompatible antiferromagnetic (AFM) orders [12], associated with the breaking of time-reversal and threefold rotational symmetries, respectively (Fig. 1a). Each order produces a qualitatively different signature in electronic transport. One corresponds to a chiral, topological AFM state with a pronounced anomalous Hall response, which arises from a finite scalar spin chirality [12, 13] set by the volume spanned by a non-coplanar spin texture (Fig. 1a). Meanwhile, the other is a nematic AFM state that strongly affects the longitudinal resistance [14, 15]. These orders coexist at low tem-peratures yielding a both chiral and nematic state, yet their incompatible symmetries prevent a direct coupling between them. We demonstrate, however, that out-of-plane magnetic fields induce and control their coupling, driving a transition between decou-pled coexisting towards strongly intertwined orders by the application of a magnetic field. It presents two main advances in our understanding and control of complex mag-nets. First, it demonstrates how inducing symmetry-forbidden coupling between orders allows to dress and undress magnetic states endowing them with new functionalities and properties in a controlled way. For example, orders may be selectively coupled for efficient write operations, and then decoupled to protect the information from pertur-bations. Here specifically the topological chiral order, which by itself has little influence on the resistance, stabilizes the coexisting nematic state and endows its repolariza-tion with a substantial change in resistance. As a result, the sign of the chiral order can be read out through a simple high-resistance/low-resistance measurement, while removing the magnetic field decouples the states again. Second, the chiral magnetic texture gives rise to a pronounced second-harmonic signal in longitudinal transport currents that is directly proportional to the spin chirality, a phenomenon known as electromagnetic chiral anisotropy (eMChA) [16– 22]. This unambiguously confirms the connection between the anomalous Hall effect and the scalar spin chirality, as has been theoretically predicted [23]. Together, our results demonstrate a new control paradigm for complex magnets, in which external fields tune not only order parameters but their mutual coupling, enabling switchable topological–nematic states with directly accessible transport functionality. 3Co 1/3TaS 2 is a Co-intercalated transition-metal dichalcogenide (TMD) in which magnetic Co 2+ ions ( S ∽ 1.35 from Curie-Weiss result [12]) form triangular lay-ers in the van der Waals gaps, and the remarkably rich sequence of ordered states in this metallic frustrated AFM has been studied intensely [8–11] . More recently, Co 1/3TaS 2 attracted broad interest for its large anomalous Hall response below the transition temperature ( TN 2 ≈ 26 .5 K) despite its negligible net magnetization (10 −3μB /Co ), placing it among the key experimental platforms for topological anoma-lous Hall physics in non-collinear AFM [12, 13]. While its complex magnetic structure remains under debate [12–15, 24–26], the central microscopic ingredient generally invoked in this low-temperature regime is a non-coplanar spin texture (often discussed as a multi-Q state) that generates an emergent real-space Berry curvature (Fig.1). Time-reversal symmetry is broken by a finite scalar spin chirality on spin plaquettes (χ = Si · (Sj × Sk)). Akin to a Z2 Ising magnet, the effective gauge field of the spin chirality can point in two directions, up or down. The threefold rotational symmetry 
+
+C3 in the pure chiral AFM phase (white region in Fig. 2a), however, is preserved as evidenced by the absence of linear dichroism [15] and in-plane resistivity anisotropy [14]. In addition to the chiral AFM low-temperature phase, experiments establish a second ordered state emerging below TN1 ≈ 38 K that is distinct in both symmetry and transport response. This phase is a collinear, single-Q antiferromagnetic stripe order that breaks the underlying threefold rotational symmetry and is therefore commonly discussed as a nematic antiferromagnetic order. For brevity, we refer to this single-Q
+
+order as nematic despite it breaking translational symmetry. The rotational symmetry breaking is directly observed via linear dichroism [15] and a strong in-plane resistivity anisotropy [14], while the absence of an anomalous Hall effect and circular dichroism establishes that this state preserves time-reversal symmetry. The nematic and chiral phases thus belong to symmetry-incompatible channels. These recent studies of dichroism further substantiate the absence of coupling between the two orders [15]. Circular and linear dichroism simultaneously image the rich domain patterns of both orders, yet without domain correlation confirming their independent coexistence in zero field. To access these orders and their coupling in transport experiments, the material should be probed at a single domain length scale. Hence micron-sized bars aligned along the crystallographic a-direction were fabricated by focused ion beam machining (Fig. 1b) with device dimensions comparable to the typical size of chiral AFM domains and substantially smaller than that of nematic domains in bulk crystals [15]. The microstructures further support large current densities facilitating non-linear measurements compared to macroscopic bulk crystals. Both the temperature- and field-dependent resistivity measured in all five microstructures reproduces the key features reported previously in bulk samples [14, 24] with no substantive microstructure-induced differences. The consistent behaviour across devices indicates good reproducibility (see supplement Fig. S1-S3). The tem-perature dependence of the longitudinal resistivity ρaa (T ) shows a sharp cusp at TN 1,signaling the nematic transition, whereas the onset of the chiral phase below TN 2 pro-duces only a broad rollover, demonstrating that longitudinal transport is dominated by nematic order. 4TN1 
+
+> TN2
+> TH
+
+# a b
+
+chiral +nematic chiral PM nematic achiral non-nematic Fig. 2 a The phase diagram of Co 1/3TaS 2. The area with blue stripes is the new phase defined by our experiment, which is pure chiral phase or chiral+nematic phase. b Magnetoresistance at different temperatures. The orange circles denote the metamagnetic transition for nematicity, and the green squares denote the chirality reversal transitions. 
+
+Applying an out-of-plane magnetic field reveals a rich phase diagram (Fig. 2). In the paramagnetic (PM) regime, a weak negative magnetoresistance reflects dominant spin-disorder scattering. For the purely nematic phase below TN 1 above TN 2, a pro-nounced inflection point (orange circles in Fig. 2b) appears in the magnetoresistivity, signaling a metamagnetic transition into a field-stabilized state that is both rotation-ally and time-reversal symmetric as suggested from dichroism. This feature persists smoothly across TN 2 , indicating that the emergence of chiral order does not alter the field evolution of the nematic state. Just below TN 2, the high-field phase is a purely chi-ral state with strong anomalous Hall and circular dichroism signals but no nematicity, while only a very weak hysteretic anomaly is visible in the longitudinal resistance. Upon further cooling, the coercive field of the chiral state increases and exceeds the metamagnetic transition field at an intermediate temperature TH . Below TH ,a wide hysteretic region opens in the phase diagram, accompanied by a qualitative change in the hysteresis loop shape. While upon lowering the field strength the meta-magnetic transition occurs unimpeded (Fig. 2b, orange circle), its signature on the upsweep is fully absent. Instead, the system remains in a high resistance state up to the coercitive field (green square), at which a remarkably large resistance drop back into a low resistance state is observed. As the nematic transition yields the strong resistive anomaly and the chirality reversal causes the large coercivity, the fact that both occur simultaneously directly evidences their strong coupling. 53 K 20 K b
+
+> AHE eMChA AHE eMChA
+
+# aFig. 3 Longitudinal voltage and its second harmonics (eMChA) and the Hall voltage measured at       
+
+> a3 K and b20 K respectively. The 20 K eMChA is calibrated by subtracting a constant background induced by heating (see supplement Thermal effect on V2ω).
+
+While these states appear intertwined in linear transport, they are readily dis-entangled at the non-linear level (Fig. 3). At 3K, the resistive hysteresis loop is accompanied by a large AHE as reported previously [12, 13], indicative of the artificial gauge field emerging from the topological spin texture. While commonly associated to a finite scalar spin chirality, the role of finite chirality in low-frequency transport was unclear. In the microbars, large enough current densities can be reached to detect second-harmonic conversion, allowing finite eMChA ( V2ω ) to be resolved as a first direct transport signature of spin chirality. At a given temperature, all three transport signals measured simultaneously undergo an abrupt change at the same magnetic field upon sweeping from zero to high field, indicating a coincident reversal of spin chirality, time reversal, and collapse of nematic order. While the longitudinal resistance reflects the nematic component of the spin texture, the eMChA and the AHE are governed by the breaking of time-reversal symmetry. The transition corresponds to a switch between two noncoplanar spin textures of opposite scalar chirality, related by a time-reversal operation, which inverts the emergent Berry curvature and hence both eMChA and the AHE. Initially, after a zero-field cooldown the system is in a multidomain state, as evidenced by the absence of AHE and eMChA as well as the excess linear resistance. Field polarizing to about 5T induces a mono-domain state, followed by bi-stable hard-magnet behaviour in subsequent field sweeps. Upon increasing the temperature across TH up to 20 K, the magnetoresistance undergoes a pronounced change in shape, whereas both the eMChA and the AHE 6retain a simple hysteretic field dependence, with only a reduced coercive field due to the elevated temperature. As a consequence, the chirality reversal shifts to fields lower than the metamagnetic transition, rendering the associated nematic transition non-hysteretic. Consistent with this picture, the magnetoresistance exhibits only a weak response to the chirality reversal, with the corresponding jump reduced by an order of magnitude compared to that at 3 K. Viewing the magnetic state evolution through these three distinct transport sig-nals allows to disentangle the role of the different orders. Although the eMChA and the AHE follow the same overall field dependence, a clear deviation between the two responses appears at the nematic transition. The AHE senses both the emergent gauge field of the topological order as well as the ferromagnetic net moment, and hence the nematic transition is clearly visible in the data. eMChA, on the contrary, senses purely the chiral part of the magnetic order. This provides direct evidence that the chiral topological order persists unimpeded by and independent of the nematic one. This counterintuitive robustness of the scalar spin chirality can be motivated by spin-model calculations, with the main physics sketched in Fig. 4a. Out-of-plane magnetic fields tilt the spins towards the field, which well reduces the solid angle spanned by the three spins of a plaquette. However, the same spins contribute to the neighboring plaquette on the Kagome lattice, and this compensation keeps the average scalar spin chirality constant to first order in applied field. -0.80 0
+
+> -0.2 00.2 0.4 0.6 0.8 1
+> -0.2 00.2 0.4 0.6 0.8 1
+
+-0.65   
+
+> -0.17 +0.06 +0.06 +0.06 +0.06 +0.06 +0.06 -0.17 +0.06 -0.14 +0.07 +0.07 +0.07 +0.07 +0.07 +0.07 -0.14
+> Sz Sz
+
+0
+
+-0.77  
+
+> B
+
+Sz/Co 2+ = 0.04|S| Sz/Co 2+ = 0.00|S| χ = -0.77 
+
+χ = -0.77  
+
+> B = 0
+
+χ0
+
+χ0
+
+χ0
+
+χ0+∆χ χ0 -∆χ χ0 +∆χ 
+
+# ba
+
+Fig. 4 a 2D analogue of the spin texture and the chirality defined by it. b Net magnetization and scalar spin chirality with and without an external magnetic field. In the spin model for net magnetization, the arrows represent the in-plane component of the spins and the color in circles represents the out-of-plane component of the spins. The local out-of-plane magnetization Sz 
+
+> local
+
+and the local scalar chirality χlocal are indicated by the values and colors on each triangular plaquette, respectively. The parameters used in the simulation are J1 = 1, J2 = 0 .5, D = 0 .05, B = 0 .25 and 
+
+K = 0 .01. For simulations with an external field, we choose H = 0 .3, corresponding to a similar energy scale as in the experiment, estimated using data from Ref. [12] 
+
+7A more rigorous simulation (Fig. 4b, see supplement) shows that in the absence of an external field, the four spins adopt polar angles of 0 ◦ or approximately 109 ◦,forming a configuration close to an ideal equilateral tetrahedron. In this geometry, the net magnetization is nearly compensated, as cos(109 ◦) is close to −1/3, balancing the contribution from the upright spin. Because the angles between any pair of spins are identical, the scalar spin chirality is homogeneous across all triangular plaquettes. When an external magnetic field is applied along the z direction, the three canted spins tilt upward simultaneously to reduce the Zeeman energy which increases net magnetization, while the spin aligned along z remains essentially unchanged. The scalar spin chirality, however, evolves differently. The triangular plaquettes formed by the three canted spins exhibit a reduced chirality (in amplitude), as the volume spanned by these spins decreases. In contrast, plaquettes formed by two canted spins and one upright spin show an enhanced chirality. As a result, these opposing changes largely compensate, and the average chirality remains nearly unchanged. This contrast naturally explains why the eMChA and the AHE can deviate from each other under applied magnetic fields. 0 5 10 15 20 25 30 35 40 Temperature (K) 02468
+
+> Hnem  (T)
+> ≠
+> = 0 experiment 0
+
+-8 -6 -4 -2 0 2 4 6 8 
+
+> Bz(T)
+
+0510 15 20 25 30 35 40 (arb. unit) 
+
+# a b          
+
+> 2 K 5 K 8 K 11 K 14 K 17 K 20 K 23 K 26 K 29 K 32 K 35 K 38 K 41 K
+> Fig. 5 aCalculated nematic order parameter ϕwith the field-induced coupling ( κ̸= 0) to the chiral order parameter χ. The nematic transitions are marked by empty orange circles and the chirality reversal transitions are marked by empty green squares. bTemperature dependence of the nematic transition field Hnem extracted from experiment (solid circles) and calculations (open circles).
+
+# Discussions 
+
+These experiments clearly demonstrate the coexistence and field-induced coupling of two symmetry-inequivalent magnetic order parameters. The physics of such coupled chiral ( χ) and nematic ( ϕ) orders can be further elucidated by a phenomenological 8Landau model (see supplement). The essence is found in the lowest order symmetry-allowed coupling ∝ Hz χϕ 2. Crucially, χ may enter linearly only in a bilinear form with the out-of-plane magnetic field Hz due to time-reversal symmetry of the free energy. This term, however, allows the nematic order to sense the sign of the chirality given the polarity of an applied field, and is key to reproduce discontinuous switching behav-ior. In contrast, the rotational symmetry breaking of the nematic order allows only 
+
+ϕ2 as minimal coupling. As a result, the existence or absence of nematicity at a given field depends on the chirality of the magnetic texture. When the chiral order reverses at its coercive field, the sign change of Hχ can abruptly collapse the nematic order. Interestingly, the same coupling coefficient has been found to be crucial to under-stand the coupling between a rotational-symmetry breaking bond charge order and a time-reversal symmetry breaking loop-current order in the Kagome superconduc-tor CsV 3Sb 5 [27–32]. This coefficient is uniquely allowed for C3 symmetry breaking planar models and appears to be a universal root of coupled orders in kagome materi-als. This toy model thus illustrates how a symmetry-allowed Landau coupling enables indirect electrical readout of a topological antiferromagnetic order through its impact on a coexisting nematic phase. Indeed, this simple Landau model for ϕ (Fig. 5a) reproduces the main trends in the magnetoresistance strikingly well (Fig. 2b). The field suppressing nematicity (ϕ(Hnem ) = 0) initially increases upon cooling, but is subsequently reduced once the chiral order develops. This reduction indicates that a finite spin-chiral order parameter 
+
+χ suppresses ϕ (and thus lowers Hnem ) without eliminating the nematic order. These observations establish an interesting paradigm in the manipulation of mag-netic orders. Instead of manipulating directly or indirectly through rigidly coupled systems as in multiferroics, symmetry-breaking stimuli can instead control the cou-pling between them. It would be interesting to spatially image this coupling. For instance, after zero-field cooling, the two orders are expected to form independent domain patterns, whereas repeated field-training cycles would induce a spatial cor-relation between their domain distributions. Further studies on the combined role of electric and magnetic field in the coupling are required, especially in light of recent reversible switching of the scalar spin chirality in Co 1/3TaS 2 nanoflakes [33]. In practical memory, it is desirable to combine two functionalities: a state that is easily tunable (for writing) and a state that is robust against perturbations (for retention). These requirements correspond to opposing energy-landscape criteria: fast switching favours a low barrier between states, whereas long-term stability requires a high barrier. Here, symmetry-incompatible orders connected by a tunable coupling provide an elegant solution. 
+
+# References 
+
+[1] Spaldin, N.A., Fiebig, M.: The renaissance of magnetoelectric multiferroics. Science 309 (5733), 391–392 (2005) https://doi.org/10.1126/science.1113357 [2] Spaldin, N.A., Cheong, S.-W., Ramesh, R.: Multiferroics: Past, present, and future. Physics Today 63 (10), 38–43 (2010) https://doi.org/10.1063/1.3502547 9[3] Wang, J., Neaton, J.B., Zheng, H., Nagarajan, V., Ogale, S.B., Liu, B., Viehland, D., Vaithyanathan, V., Schlom, D.G., Waghmare, U.V., Spaldin, N.A., Rabe, K.M., Wuttig, M., Ramesh, R.: Epitaxial BiFeO 3 multiferroic thin film het-erostructures. Science 299 (5613), 1719–1722 (2003) https://doi.org/10.1126/ science.1080615 [4] Heron, J.T., Bosse, J.L., He, Q., Gao, Y., Trassin, M., Ye, L., Clarkson, J.D., Wang, C., Liu, J., Salahuddin, S., Ralph, D.C., Schlom, D.G., Iniguez, J., Huey, B.D., Ramesh, R.: Deterministic switching of ferromagnetism at room tempera-ture using an electric field. Nature 516 , 370–373 (2014) https://doi.org/10.1038/ nature14004 [5] Zhao, T., Scholl, A., Zavaliche, F., Lee, K., Barry, M., Doran, A., Cruz, M.P., Chu, Y.H., Ederer, C., Spaldin, N.A., Das, R.R., Kim, D.M., Baek, S.H., Eom, C.B., Ramesh, R.: Electrical control of antiferromagnetic domains in multiferroic BiFeO3 films at room temperature. Nature Materials 5(10), 823–829 (2006) https: //doi.org/10.1038/nmat1731 [6] Yamasaki, Y., Sagayama, H., Goto, T., Matsuura, M., Hirota, K., Arima, T., Tokura, Y.: Electric control of spin helicity in a magnetic ferroelectric. Phys. Rev. Lett. 98 , 147204 (2007) https://doi.org/10.1103/PhysRevLett.98.147204 [7] Finger, T., Senff, D., Schmalzl, K., Schmidt, W., Regnault, L.P., Becker, P., Bohat` y, L., Braden, M.: Electric-field control of the chiral magnetism of multi-ferroic mnwo 4 as seen via polarized neutron diffraction. Phys. Rev. B 81 , 054430 (2010) https://doi.org/10.1103/PhysRevB.81.054430 [8] Parkin, S.S.P., Friend, R.H.: 3d transition-metal intercalates of the niobium and tantalum dichalcogenides. i. magnetic properties. Philosophical Magazine B 41 ,65–93 (1980) https://doi.org/10.1080/13642818008245370 [9] Parkin, S.S.P., Friend, R.H.: 3d transition-metal intercalates of the niobium and tantalum dichalcogenides. ii. transport properties. Philosophical Magazine B 41 ,95–112 (1980) https://doi.org/10.1080/13642818008245371 [10] Parkin, S.S.P., Marseglia, E.A., Brown, P.J.: Magnetic structure of co 1/3nbs 2
+
+and co 1/3tas 2. Journal of Physics C: Solid State Physics 16 , 2765–2778 (1983) https://doi.org/10.1088/0022-3719/16/14/016 [11] Parkin, S.S.P., Friend, R.H.: Magnetic and transport properties of 3d transition metal intercalates of some group va transition metal dichalcogenides. Physica B+C 99 , 219–223 (1980) https://doi.org/10.1016/0378-4363(80)90236-3 [12] Park, P., Cho, W., Kim, C., An, Y., Kang, Y.-G., Avdeev, M., Sibille, R., Iida, K., Kajimoto, R., Lee, K.H., Ju, W., Cho, E.-J., Noh, H.-J., Han, M.J., Zhang, S.-S., Batista, C.D., Park, J.-G.: Tetrahedral triple-q magnetic ordering 10 and large spontaneous hall conductivity in the metallic triangular antiferromag-net co1/3tas2. Nature Communications 14 (1) (2023) https://doi.org/10.1038/ s41467-023-43853-4 [13] Takagi, H., Takagi, R., Minami, S., Nomoto, T., Ohishi, K., Suzuki, M.-T., Yanagi, Y., Hirayama, M., Khanh, N., Karube, K., et al. : Spontaneous topological hall effect induced by non-coplanar antiferromagnetic order in intercalated van der waals materials. Nature Physics 19 (7), 961–968 (2023) [14] Feng, Z., Lu, W., Lu, T., Liu, F., Sheeran, J.R., Ye, M., Xia, J., Kurumaji, T., Ye, L.: Nonvolatile Nematic Order Manipulated by Strain and Magnetic Field in a Layered Antiferromagnet (2025). https://arxiv.org/abs/2507.05486 [15] Kirstein, E., Park, P., Cho, W., Batista, C.D., Park, J.-G., Crooker, S.A.: Tunable chiral and nematic states in the triple-Q antiferromagnet Co 1/3TaS 2 (2025). https: //arxiv.org/abs/2507.08148 [16] Rikken, G.L.J.A., Avarvari, N.: Strong electrical magnetochiral anisotropy in tel-lurium. Phys. Rev. B 99 , 245153 (2019) https://doi.org/10.1103/PhysRevB.99. 245153 [17] Rikken, G.L.J.A., F¨ olling, J., Wyder, P.: Electrical magnetochiral anisotropy. Phys. Rev. Lett. 87 , 236602 (2001) https://doi.org/10.1103/PhysRevLett.87. 236602 [18] Wei, J., Shimogawa, M., Wang, Z., Radu, I., Dormaier, R., Cobden, D.H.: Magnetic-field asymmetry of nonlinear transport in carbon nanotubes. Phys. Rev. Lett. 95 , 256601 (2005) https://doi.org/10.1103/PhysRevLett.95.256601 [19] Aoki, R., Kousaka, Y., Togawa, Y.: Anomalous nonreciprocal electrical transport on chiral magnetic order. Phys. Rev. Lett. 122 , 057206 (2019) https://doi.org/ 10.1103/PhysRevLett.122.057206 [20] Yokouchi, T., Kanazawa, N., Kikkawa, A., Morikawa, D., Shibata, K., Arima, T., Taguchi, Y., Kagawa, F., Tokura, Y.: Electrical magnetochiral effect induced by chiral spin fluctuations. Nature Communications 8, 866 (2017) https://doi.org/ 10.1038/s41467-017-01094-2 [21] Pop, F., Auban-Senzier, P., Canadell, E., Rikken, G.L.J.A., Avarvari, N.: Elec-trical magnetochiral anisotropy in a bulk chiral molecular conductor. Nature Communications 5, 3757 (2014) https://doi.org/10.1038/ncomms4757 [22] Guo, C., Putzke, C., Konyzheva, S., Huang, X., Gutierrez-Amigo, M., Errea, I., Chen, D., Vergniory, M.G., Felser, C., Fischer, M.H., Neupert, T., Moll, P.J.W.: Switchable chiral transport in charge-ordered kagome metal csv 3sb 5. Nature 611 ,461–466 (2022) https://doi.org/10.1038/s41586-022-05127-9 11 [23] Nagaosa, N., Sinova, J., Onoda, S., MacDonald, A.H., Ong, N.P.: Anomalous hall effect. Rev. Mod. Phys. 82 , 1539–1592 (2010) https://doi.org/10.1103/ RevModPhys.82.1539 [24] Park, P., Kang, Y.-G., Kim, J., Lee, K.H., Noh, H.-J., Han, M.J., Park, J.-G.: Field-tunable toroidal moment and anomalous hall effect in noncollinear anti-ferromagnetic weyl semimetal co1/3tas2. npj Quantum Materials 7(1) (2022) https://doi.org/10.1038/s41535-022-00449-3 [25] Park, P., Cho, W., Kim, C., An, Y., Avdeev, M., Iida, K., Kajimoto, R., Park, J.-G.: Composition dependence of bulk properties in the co-intercalated transition metal dichalcogenide co 1/3Tas 2. Phys. Rev. B 109 , 060403 (2024) https://doi. org/10.1103/PhysRevB.109.L060403 [26] Park, P., Cho, W., Kim, C., An, Y., Iida, K., Kajimoto, R., Matin, S., Zhang, S.-S., Batista, C.D., Park, J.-G.: Spin dynamics of triple-Q magnetic orderings in a triangular lattice: Implications for multi-Q orderings in general two-dimensional lattices. Phys. Rev. X 15 , 031032 (2025) https://doi.org/10.1103/y9ly-4kld [27] Guo, C., Wagner, G., Putzke, C., Chen, D., Wang, K., Zhang, L., Gutierrez-Amigo, M., Errea, I., Vergniory, M.G., Felser, C., Fischer, M.H., Neupert, T., Moll, P.J.W.: Correlated order at the tipping point in the kagome metal csv 3sb 5. Nature Physics 20 (4), 579–584 (2024) https://doi.org/10.1038/ s41567-023-02374-z [28] Wagner, G., Guo, C., Moll, P.J.W., Neupert, T., Fischer, M.H.: Phenomenology of bond and flux orders in kagome metals. Phys. Rev. B 108 , 125136 (2023) https://doi.org/10.1103/PhysRevB.108.125136 [29] Scammell, H.D., Ingham, J., Li, T., Sushkov, O.P.: Chiral excitonic order from twofold van hove singularities in kagome metals. Nature Communications 14 , 605 (2023) https://doi.org/10.1038/s41467-023-35987-2 [30] Christensen, M.H., Birol, T., Andersen, B.M., Fernandes, R.M.: Loop currents in av3sb 5 kagome metals: Multipolar and toroidal magnetic orders. Phys. Rev. B 
+
+106 , 144504 (2022) https://doi.org/10.1103/PhysRevB.106.144504 [31] Fernandes, R.M., Birol, T., Ye, M., Vanderbilt, D.: Loop-current order through the kagome looking glass (2025). https://arxiv.org/abs/2502.16657 [32] Ingham, J., Thomale, R., Scammell, H.D.: Vestigial Order from an Excitonic Mother State in Kagome Superconductors AV3Sb 5 (2025). https://arxiv.org/abs/ 2503.02929 [33] Xiong, J., Jiang, J., Cui, Y., Gao, H., Zhou, J., Liu, Z., Zhang, K., Cheng, S., Wu, K., Cheong, S.-W., Chang, K., Liu, Z., Yang, H., Liang, S.-J., Cheng, B., Miao, F.: All-Electrical Self-Switching of van der Waals Chiral Antiferromagnet 12 (2025). https://arxiv.org/abs/2510.18272 [34] Heinonen, O., Heinonen, R.A., Park, H.: Magnetic ground states of a model for 
+
+mnb 3s6 (m = Co , Fe , Ni). Phys. Rev. Mater. 6, 024405 (2022) https://doi.org/ 10.1103/PhysRevMaterials.6.024405 
+
+# Methods 
+
+Crystal synthesis 
+
+Single crystals of Co 1/3TaS 2 were grown using a two-step procedure detailed in Ref. [14]. Polycrystalline Co 1/3TaS 2 was first synthesized via solid-state reaction from stoichiometric mixtures of high-purity Co (99.99%, Strem Chemicals), Ta (99.98%, Strem Chemicals), and S (99.9995%, Alfa Aesar) powders. The mixed powders were placed in an alumina crucible, sealed in an evacuated quartz ampoule, heated slowly to 900 ◦C, and held at that temperature for 24 hours. Single crystals were subse-quently obtained through chemical vapor transport using I 2 as the transport agent. The source and sink temperatures were maintained at 950 ◦C and 850 ◦C, respectively. After approximately one week, plate-like crystals with lateral dimensions up to 2 mm were harvested. Phase purity was confirmed by powder X-ray diffraction. 
+
+Device fabrication 
+
+Co 1/3TaS 2 microstructures were prepared using a Thermo Fisher Helios Ga FIB. Lamella for the five devices studied were extracted from the bulk crystal and trans-ferred onto an araldite AB glue droplet on a prepatterned sapphire chip. To form good electrical contact between the lamella and the electrodes on the sapphire chip, the lamellae together with the sapphire chip were treated with radio-frequency (RF) Ar plasma etching for removing the native surface oxide, followed by high-power Au sputtering in the same chamber. After Au deposition, the lamella were patterned into the desired device geometries. 
+
+Electrical measurements 
+
+Electrical resistance was measured in a DynaCool PPMS using a multichannel Synk-Tek lock-in amplifier, with magnetic fields up to 9 T. For all devices, an AC excitation current from 400 μA to 1470 μA was applied by Keithley 6221 current source. Phase lock loop (PLL) is used to lock the demodulator to the excitation reference, so that it can track the frequency/phase precisely. The resistivity is read out by the first-order harmonic channel and the eMChA is read out by the second-order harmonic channel. Across the full device set, clear MR and eMChA were consistently observed, indicating that the FIB-fabricated microstructures retain their intrinsic transport properties. The FIB-induced amorphous surface layer, typically around 20 nm thick, therefore represents a negligible fraction of the device cross-section (except for device S4) and does not affect the reported measurements. 13 Data availability 
+
+The data supporting the findings of this study will be deposited on Zenodo. 
+
+# Code availability 
+
+The code supporting the findings of this study will be deposited on Zenodo. 
+
+# Acknowledgements 
+
+C. M. G. acknowledges financial support by the European Research Council (ERC) under grant Free-Kagome (Grant Agreement No. 101164280). The material synthesis efforts carried out at Caltech are supported by Gordon and Betty Moore Foundation through Moore Materials Synthesis Fellowship to L.Y. (GBMF12765). Z.F. acknowledges support from Quantum Information and Matter (IQIM) Postdoc-toral Fellowship at Caltech. We thank K. Wang for discussions related to the spin model calculations. 
+
+# Author contribution 
+
+Z.F., T.K. and L.Y. synthesized and characterized the crystals. Y.H., C.M.G. and P.J.W.M. designed the experiments, performed FIB microstructuring and conducted the transport measurements. Y.H., C.M.G. and P.J.W.M. developed the theoretical framework and performed simulations of the spin and Landau models. All authors were involved in writing the paper. 
+
+# Competing interests 
+
+The authors declare no competing interests. 14 Supplementary information 1 Scanning electron microscope images of all Co 1/3TaS 2 devices 
+
+Five microstructured devices were fabricated for transport measurements using the procedure described in the Methods, with a bar cross-section of approximately 3 × 3 μm2. Device S1 was patterned in the ab plane; the current was applied along a
+
+and the magnetic field along c, enabling measurements of the longitudinal response as well as the Hall voltage Vba . Devices S2-S5 were patterned in the ac plane; the current was applied along a and the magnetic field along c, and only longitudinal voltages were measured. Device S4 corresponds to device S3 after further thinning of the bar cross-section. In device S5, Pt film is to secure the electrical contact between the sample and the Au leads, by FIB-assisted deposition. Unless stated otherwise, the data in the main text ar from device S1, data from the other devices are provided below.   
+
+> Fig. S1 False-color SEM image of the devices. Au-coated contact pads are shown in yellow, the exposed Co 1/3TaS 2region in purple, and FIB-deposited Pt (blue) was used to secure the electrical contact. All microstructures were mounted on glue droplets to mitigate thermal-contraction mismatch and the resulting thermal differential strain at low temperature.
+
+# 2 Temperature and field dependence of resistivity, eMChA and AHE in all devices 
+
+The resistivity of the five microstructures shows similar temperature dependence, with anomalies at TN1 ≈ 38 K and TN2 ≈ 26 .5 K, consistent with bulk Co 1/3TaS 2 mea-surements [24]. Microstructure S4 is an exception: the slope changes at TN1 and TN2 
+
+15 are weaker, likely due to its reduced bar thickness, since it was fabricated by thinning S3, decreasing the bar thickness from 3 .6 μm to 1 .4 μm. This geometric confinement can suppress long-range magnetic order and round the resistive kinks. Aside from this, the overall ρ(T ) dependence is consistent across devices, with differences mainly in the residual resistivity. This reproducibility indicates that the observed behaviour is intrinsically inherited from bulk.   
+
+> Fig. S2 Temperature dependence of resistivity in all devices. Device S1 from crystal #1, device S2-S4 from crystal #2, device S5 from crystal #3.
+
+All five devices show similar field dependence under the same measurement geometry (current along the crystalline a axis; magnetic field applied along the c axis). For TN1 > T > T N2 , the magnetoresistance exhibits only the metamagnetic (nematicity) transition: the resistivity decreases smoothly as the C3 rotational sym-metry is restored. Below TN2 , the transition shifts to lower fields due to coupling to the chiral order, and the magnetoresistance becomes hysteretic. The coercive field Hc
+
+corresponds to the chirality-reversal field. At a fixed temperature (e.g., 12 K), the nematic transition field Hnem is consistent across microstructures, lying slightly below 3 T. By contrast, Hc varies substantially: at 12 K, Hc ≈ 4.5 T in S1-S3, whereas it is already below 3 T in S5. Device S4 shows a strongly rounded chirality transition, consistent with geometric confinement. The spread in Hc likely reflects crystal-to-crystal differences, residual strain, and Joule heating. S5 was fabricated from a different single crystal, while S2 and S3 (from the same crystal) exhibit similar Hc, suggesting a crystal-dependent contribution. In addition, because the microstructures are mounted on glue rather than fully free-standing, differential thermal contraction between the glue and the microstructure can generate residual strain that shifts Hc. A later experiment of microstructured Co 1/3TaS 2 mounted on free-standing membranes is worth to try for better under-standing the strain effect on Hc. Finally, Joule heating reduces the apparent Hc: for S5, increasing the excitation current from 0.3 mA (Fig. S3) to 1.0 mA (Fig. S4) lowers 
+
+Hc by ∼ 1 T. In all five devices, the non-nematic state exhibits a lower resistance than the nematic state. This trend is consistent with a preferential alignment of the stripes in 16 the nematic domain along the long axis of the microbar ( Q oriented predominantly perpendicular to the bar)[14]. Two effects may contribute to this preference. First, although the Z 3 nematic domains are degenerate in an ideal bulk crystal, this degener-acy can be lifted in a sufficiently confined microbar, as a difference in the surface energy between the Z 3 nematic domains acts as an effective symmetry-breaking field that biases nematic domain selection. Second, a potential strain arising from differential thermal contraction between the microbar and the underlying glue during cooldown can also couple to the nematic order parameter. S5 S4 S3 S2 S1             
+
+> Fig. S3 Reproducibility of the magnetoresistance in all devices. Data at different tem-peratures are vertically offset by 0.2 mV (S1), 0.15 mV (S2, S3) and 0.1 mV (S4, S5) for clarity. Current (density) for each measuremtn: 1 .4 mA (2 ×10 8A/m2) for S1, 1 .0 mA (1 ×10 8A/m2) for S2, 1 .0 mA (9 ×10 7A/m2) for S3, 0 .4 mA (9 ×10 7A/m2) for S4, 0 .3 mA (3 ×10 7A/m2) for S5.
+
+The second-harmonic signals measured in all five devices reproduce the key sig-nature of eMChA: a hysteretic loop emerges below TN2 as chiral order develops and widens upon cooling. The loop in S4 is again strongly rounded, consistent with geo-metric confinement. Device S5 exhibits an additional pair of non-antisymmetric kinks within the hysteretic loop, reducing the loop amplitude on the left side and enhancing it on the right. Because this feature lacks antisymmetry, we attribute it to an extrinsic origin, most likely the asymmetric device geometry of S5: the current enters along the 
+
+c axis, flows along the a axis, and exits along c again. This current path differs from that in S1–S4, for which the current path and associated heating profile are symmetric with respect to the measured bar. 17 S2 S3 S4 S5 S1 Fig. S4 Reproducibility of the eMChA in all devices. Data at different temperatures are vertically offset by 0.5 μV (S1), 0.25 μV (S2, S4), 0.3 μV (S3) and 0.9 μV (S5) for clarity. Cur-rent (density) for each measuremtn: 1 .4 mA (2 × 10 8A/m2) for S1, 1 .0 mA (1 × 10 8A/m2) for S2, 1.0 mA (9 × 10 7A/m2) for S3, 0 .4 mA (9 × 10 7A/m2) for S4, 1 .0 mA (9 × 10 7A/m2) for S5. 
+
+Vba could be measured only in device S1. It also onsets at TN2 and increases gradually upon cooling. S1    
+
+> Fig. S5 AHE of device S1 at different temperatures. Data at different temperatures are vertically offset by 50 μV for clarity.
+
+# 3 Thermal effect on V2ω
+
+Joule heating is a common extrinsic source of higher-harmonic voltage generation. It directly results in an oscillating temperature at a frequency of 2 ω when applying an a.c. electric current I ω . In cases where the contact resistances of the device electrodes are not perfectly balanced, an extrinsic V 2ω can be generated. This is exactly the source of the background subtracted in Fig. 3b. Unlike the intrinsic eMChA signal, the sign of which is flipped by the direction of the magnetic field applied, the extrinsic signal stays nearly field-independent as the thermal imbalance depends mainly on the device geometry rather than the switch of scalar spin chirality. This constant offset was defined as the mean of the two opposite-polarity values measured at zero magnetic field. The corresponding uncorrected data are shown in Fig. S4. To quantify the temperature evolution of the offset, we performed zero-field cool-ing and warming up after training in a ± 9T magnetic field. As shown in Fig. S6a, the offset remains positive over the measured temperature range. Consistent with a thermal origin, the third-harmonic signal follows a trend proportional to R · dR/dT ,18 indicating that Joule heating is non-negligible. The close agreement among the three third-harmonic traces indicates that Joule-heating-related artefacts do not produce hysteresis under our measurement conditions. Therefore, the hysteresis loop observed in the second-harmonic channel cannot be attributed to heating, and therefore reflects a nontrivial eMChA response. ca b
+
+first-order second-order third-order        
+
+> Fig. S6 Temperature dependence of the asecond harmonics of longitudinal response, bfirst har-monics of longitudinal response and cthird harmonics longitudinal response (from device S1).
+
+# S1 Raw Asymmetric Symmetric 
+
+# S5  
+
+> Fig. S7 Decomposition of field-asymmetric and symmetric components of the second-harmonics at 12 K in device S1 and S5.
+
+This is further elaborated in the analysis of the field-asymmetric/symmetric component of V2ω signal across different devices. To keep the loop feature in the asymmetric composition, we need to separate the data measured during the up-sweeping and down-sweeping of the field into VsweepUP (B) and VsweepDOWN (B), and 19 do calculation as below: 
+
+Vasymm (B) = ( VsweepUP (B) − VsweepDOWN (−B)) /2; (1) 
+
+Vsymm (B) = ( VsweepUP (B) + VsweepDOWN (−B)) /2. (2) While the asymmetric component is nearly identical across devices, the symmet-ric component differs distinctively between devices S1 and S5. In device S1, it remains vanishingly small across the entire field range; the two sharp peaks at the critical field are most likely attributable to the symmetrizing analysis process rather than to intrinsic behavior. In device S5, however, the symmetric component is clearly observed and exhibits a distinct field dependence. This clear difference between these devices originates directly from their different geometry. The hall-bar-like structure in device S1 ensured a well-defined thermal boundary condition, thereby strongly reducing the thermal gradient across the microstructure. Comparatively, device S5 is shaped into an ”L”-like geometry, in which thermal gradient is readily expected due to the asym-metry of the device itself and therefore generates a non-negligible field-symmetric V2ω
+
+component. 
+
+# 4 Spin model calculations 
+
+To understand how the non-coplanar spin texture evolves under a magnetic field and how this evolution affects the scalar spin chirality and the net magnetization, we construct a spin Hamiltonian and determine the lowest-energy spin configurations using a variational Ansatz for different magnetic fields. The Hamiltonian is 
+
+H = J1
+
+2
+
+X
+
+> ⟨i,j ⟩
+
+S(ri) · S(rj ) + J2
+
+2
+
+X
+
+> ⟨⟨ i,j ⟩⟩
+
+S(ri) · S(rj ) + X
+
+> ⟨i,j ⟩
+
+Dij · [S(ri) × S(rj )] + B
+
+2
+
+X
+
+> ⟨i,j ⟩
+
+[S(ri) · S(rj )] 2 + K X
+
+> i
+
+(Szi )2 − X
+
+> i
+
+Hext · S(ri).
+
+(3) where J1 denotes the nearest-neighbor in-plane exchange interaction and sets the overall energy scale, J2 is the next-nearest-neighbor in-plane exchange interac-tion, D characterizes the strength of the Dzyaloshinskii–Moriya interaction, B is the biquadratic exchange strength, K represents the uniaxial single-ion anisotropy, and 
+
+Hext is the applied external magnetic field. Because of the translational symmetry of the spin texture, the total energy can be obtained by evaluating the four inequivalent spins within a single magnetic unit cell.[34] In the energy minimization, the spin amplitudes are fixed, while the polar angles are treated as free variables. The azimuthal angles of the four spins are fixed to 0, π, −π/ 3, and π/ 3, respectively, revealing the fundamental features of the scalar spin chirality. At zero external field, the energy landscape exhibits two degenerate local minima. One corresponds to the spin configuration shown in the figure, while the other corre-sponds to its time-reversed counterpart. Upon applying a finite external field, the two 20 minima become non-degenerate, resulting in an energetic preference for one of the two polarities. To characterize the net magnetization and scalar spin chirality, we evaluate their local distributions on each triangular plaquette formed by three nearest-neighbor spins. The local scalar spin chirality is defined as 
+
+χlocal = Si · (Sj × Sk) (4) The local net magnetization of each plaquette is defined as 
+
+Sz 
+
+> local
+
+= Szi + Szj + Szk
+
+6 (5) We find that eight such plaquettes form the basic unit of the local chirality and magnetization distribution pattern. Since transport measurements probe the global state of the device, we calculate the average chirality over the eight plaquettes as ¯χ = 18
+
+X χlocal (6) The net magnetization per Co 2+ ion within this eight-plaquette unit is obtained as 
+
+Sz /Co 2+ = 14
+
+X Sz 
+
+> local
+
+(7) 
+
+# 5 Phenomenological Landau model 
+
+The calculation highlights the role of the coupling κ between two symmetry-incompatible magnetic orders. For κ̸ = 0, the ϕ(Bz ) response reproduces the key experimental trends in the magnetoresistance: a negative magnetoresistance below TN1 and hysteresis emerging below TN2 . In this regime, switching the spin chirality simultaneously suppresses the nematic order, leading to an abrupt reduction in the magnetoresistive signal. The zero-field resistivity is identical for opposite chiralities. For κ = 0, χ(Bz ) is unchanged, whereas ϕ(Bz ) differs qualitatively below TN2 .Because the nematic AFM and chiral AFM orders are decoupled, the nematic switch-ing field Hmeta is not reduced by the presence of chiral order χ and can continue to increase on cooling as Hmeta ∝ (TN 1 − T ). Consequently, the chirality can no longer be inferred from the resistance. 21 -8 -6 -4 -2 0 2 4 6 8Bz (T) 010 20 30 40 (arb. unit) -8 -6 -4 -2 0 2 4 6 8Bz (T) 010 20 30 40 (arb. unit) -8 -6 -4 -2 0 2 4 6 8Bz (T) -6 -4 -2 0246(arb. unit) -8 -6 -4 -2 0 2 4 6 8Bz (T) -6 -4 -2 0246(arb. unit) 
+
+# κ= 0 
+
+# κ ≠ 0 
+
+TN1 
+
+TN2 
+
+TN1 
+
+TN2 Fig. S8 Calculated nematic order parameter ϕ and chiral order parameter χ with and without the field induced coupling term κ, as functions of magnetic field for temperatures between 2 K and 41 K, with step of 3 K. Parameters used: Hc, 0 = 7 , α = 1 , b ϕ = 30 , a χ/b χ = 1 .3, H m = 1 .15 , a ϕ = 2 .3, β ϕ =0.95 and κ = 5 .5 or 0. 
+
+The details of the Landau model are as belows. A phenomenological Landau model captures some of the essential physics of coupling a nematic and a chiral order parameter. A salient assumption is the coex-istence of both order parameters within the spin-texture of Co 1/3TaS 2, which may be achieved via asymmetric multi-Q orders. Like any Landau model, it serves as a controlled sandbox illustrating how two symmetry-incompatible magnetic orders, when coupled, can exchange their experimental signatures and generate qualitatively new switching phenomena. As such, the model should be understood as a lowest-order effective description that isolates the essential ingredients required to reproduce 22 the experimentally observed sequence of phase stabilization, collapse, and hysteretic readout. A full model must treat both order parameters, the nematic order ϕ and the chiral order χ, on equal footing and self-consistently solve a coupled model for both. How-ever, the pronounced hysteresis and important strong first-order nature suggest that dynamical effects are key for any chirality switching behavior, such as domain motion and unpinning. This problem may be addressed by time-dependent Ginzburg-Landau model, provided in-depth knowledge about the nature of the coupled domains and their energetics. To gain insights into the essential physics, instead we focus on a static model. The order parameter χ will be introduced as a phenomenological field based on the data, in particular endowed with manual hysteresis based on the experimental observations. Its two enantiomeric states χ = ±χ0 correspond to opposite scalar spin chiralities. Importantly, χ is treated as a discrete order parameter with a fixed magni-tude χ0(T ) below the chiral ordering temperature TN 2, reflecting the experimentally observed abrupt switching behavior: 
+
+χ0 =
+
+q
+
+(TN 2 − T )aχ/b χ (8) This allows to formulate a static Landau model for the nematic order ϕ, and to evaluate its modifications based on the coupling and sign-change of the chiral order. Following this spirit, one may write the following Free energy expansion: 
+
+F = aχ
+
+2 (T − TN 2) χ2 + bχ
+
+4 χ4 + aϕ
+
+2 (T − TN 1) ϕ2 + bϕ
+
+4 ϕ4 + βϕ
+
+2
+
+ Hz
+
+Hm
+
+2
+
+ϕ2 − κ
+
+2 Hz χ ϕ 2.
+
+(9) This model describes two distinct magnetic orders that coexist at low temper-atures, where ai and bi denote the Landau parameters yielding separate transitions of the chiral order χ at TN 2 as well as the nematic ϕ at TN 1 in the absence of cou-pling. The nematic order parameter ϕ is suppressed by out-of-plane magnetic fields 
+
+Hz , which is captured via a metamagnetic field scale Hm and the associated Lan-dau parameter βϕ. In the absence of coupling, this term suppresses nematicity at a metamagnetic field self-consistently as 
+
+Hmeta (T ) = Hm
+
+s
+
+aϕ (TN 1 − T )
+
+βϕ
+
+. (10) By construction, the two order parameters belong to different symmetry channels. In zero magnetic field they are symmetry-incompatible and may emerge independently at distinct transition temperatures. A magnetic field applied along the c axis intro-duces a time-reversal-odd axial vector, which allows additional couplings between χ
+
+and N that are otherwise forbidden. These are encoded in the last term, κ 
+
+> 2
+
+Hz χ ϕ 2,which encodes a field-induced coupling between the chiral and nematic orders, tuned by a Landau parameter κ. Critically, the product Hz χ is even under time-reversal symmetry, yet still sensitive to the sign of χ.23 Given that only ϕ will be solved for, the effect of finite χ can be considered a renormalization of the Landau parameters. This allows to simplify the Landau free energy for the nematic order, 
+
+Fϕ(ϕ) = 12 aeff  
+
+> ϕ
+
+(T, H, χ ) ϕ2 + bϕ
+
+4 ϕ4, (11) with bϕ > 0 ensuring stability. The effective quadratic coefficient is simply given by 
+
+aeff  
+
+> ϕ
+
+(T, H, χ ) = aϕ(T − TN 1) + βϕ(Hz /H m)2 − κ H z χ (12) This form of coupling is central to the physics captured by the model. Unlike a linear coupling proportional to ϕ, which would merely select the orientation of nematic domains, the quadratic coupling modifies the stability of the nematic phase itself. Depending on the sign of κ and the chirality χ, the effective coefficient aeff  
+
+> ϕ
+
+can be either reduced or enhanced. As a result, one chiral enantiomer stabilizes nematic order to higher fields than expected from aϕ alone, while the opposite enantiomer destabilizes it. This mechanism allows the nematic phase to persist metastably beyond its nominal critical field and to collapse abruptly when χ reverses. Minimization of Fϕ yields a simple amplitude response, 
+
+ϕ =
+
+
+
+0, aeff  
+
+> ϕ
+
+≥ 0,
+
+q
+
+−aeff  
+
+> ϕ
+
+/b ϕ, aeff  
+
+> ϕ
+
+< 0, (13) which is continuous in aeff  
+
+> ϕ
+
+but can nevertheless display a sharp drop when aeff  
+
+> ϕ
+
+jumps discontinuously due to a reversal of χ at fixed field. The hysteretic behavior of the chiral order χ is incorporated phenomenologically through a pinned-Ising switching rule. The sign of χ is allowed to change only when the applied magnetic field exceeds a temperature-dependent coercive field Hc(T ). This coercive field encodes domain pinning and slow dynamics that are not treated explicitly in the static free-energy functional. Hc(T ) is chosen to match the experimentally observed hysteresis, and accordingly to vanish continuously at the chiral ordering temperature TN 2,
+
+Hc(T ) = Hc, 0
+
+ TN 2 − TTN 2
+
+α
+
+, T < T N 2 (14) where Hc, 0 is the zero-temperature limit coercive field and α controls the func-tional form. This choice ensures that the hysteresis loop in χ(H) closes continuously at TN 2. The precise functional form is not essential but merely provides a smooth interpolation between experimentally established limits. Within this framework, the coupled switching behavior follows directly by con-struction. At a fixed temperature below TN 2, the magnetic field Hz is swept over the entire field range, completing a hysteresis cycle. For one chirality, the quadratic coupling reduces aeff  
+
+> ϕ
+
+, allowing nematic order to survive well beyond the field scale 
+
+Hmeta (T ) at which it would otherwise disappear. When the coercive field is reached and χ reverses, the sign of the coupling term changes abruptly. If the parameters are 24 such that aeff  
+
+> ϕ
+
+becomes positive after the flip, the nematic order collapses immediately to N = 0. Upon further increase of the field, nematicity remains absent. On the reverse field sweep, the nematic phase reappears only once aeff  
+
+> ϕ
+
+becomes negative again despite the destabilizing chirality of χ at a given field polarity, typically near the metamag-netic scale. Importantly, as the coupling coefficient is proportional to Hz , once the field is swept through zero into the negative quadrant, its sign change reverses the role of stabilizing/destabilizing chirality, thus completing a copy of the hysteretic cycle at negative polarity. The present poor-mans model intentionally omits many aspects that would be required for a quantitative or microscopic theory. In particular, it does not describe the internal structure of magnetic domains, the dynamics of domain-wall motion, or the microscopic origin of the coupling between chirality and nematicity. It also treats the nematic transition as continuous in the Landau sense, while in fact ϕ may itself display genuine first-order behavior and metastability at low temperature. the inclusion of higher-order terms or explicit pinning rules for the nematic order itself. Nevertheless, the model captures, at the lowest effective level, how symmetry-allowed coupling between two magnetic orders can qualitatively reshape their phase diagram and experimental signatures. In this sense, it provides a transparent frame-work for understanding how information stored in a topological antiferromagnetic state can be transferred to, and read out through, a coexisting nematic order. 25

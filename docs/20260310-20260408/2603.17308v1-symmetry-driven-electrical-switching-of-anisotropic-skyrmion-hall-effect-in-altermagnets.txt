@@ -1,0 +1,1049 @@
+Title: 2603.17308v1.pdf
+
+URL Source: https://arxiv.org/pdf/2603.17308v1
+
+Published Time: Thu, 19 Mar 2026 00:40:36 GMT
+
+Number of Pages: 17
+
+Markdown Content:
+1
+
+# Symmetry -Driven Electrical Switching of Anisotropic Skyrmion Hall 
+
+# Effect in Altermagnets 
+
+Wenhui Du, Kai ying Dou, Ying Dai*, Zeyan Wang, Baibiao Huang, Yandong Ma* 
+
+School of Physics, State Key Laboratory of Crystal Materials, Shandong University, S handa nan Str eet 
+
+27, Jinan 250100, China 
+
+*Corresponding author: daiy60@sina.com (Y.D.); yandong.ma@sdu.edu.cn (Y.M.) 
+
+Abstract 
+
+Controlling the skyrmion Hall effect (SkHE) is pivotal for developing topological spintronics but 
+
+typically relies on magnetic field reversal. Here , we demonstrate a general strategy for the purely 
+
+electrical switching of the SkHE in two -dimensional alterm agnets. Through symmetry and model 
+
+analysis, we reveal that the intrinsic altermagnetic symmetry imposes sublattice -dependent 
+
+anisotropic exchange and Dzyaloshinskii -Moriya interactions. These interactions induce a highly 
+
+anisotropic SkHE, where the transv erse velocity is strictly dictated by the current direction relative to 
+
+the crystal axes. Crucially, we show that an external electric field can strongly modulate these 
+
+interaction parameters by inversing the altermagnetic symmetry, allowing for the revers ible inversion 
+
+of the anisotropic SkHE. Using first -principles and atomistic spin model simulations , this mechanism 
+
+is further demonstrated in monolayer CaMnS n. Our study establishes a unique strategy for realizing 
+
+precise, electrically tunable skyrmion tr ansport without magnetic fields. 2
+
+Introduction 
+
+Magnetic skyrmions —topologically protected spin textures characterized by a quantized winding 
+
+number Q —have emerged as compelling candidates for next -generation information carriers [ 1-5]. 
+
+Their localized particle -like nature, combined with robust topological stability, offers a fertile ground 
+
+for exploring emergent electrodynamic s in condensed matter [ 6-10 ]. Recently, the experimental 
+
+realization of long -range magnetic order in two -dimensional (2D) van der Waals lattices [ 11-13] has 
+
+reinvigorated this field, providing an ideal platform to engineer skyrmions with unprecedented 
+
+tuna bility and density [ 14-30 ]. In this 2D limit, understanding and manipulating the current -driven 
+
+dynamics of skyrmions becomes paramount for translating their exotic topological properties into 
+
+functional spintronic logic and memory devices. 
+
+A hallmark of t his dynamics is the skyrmion Hall effect (SkHE), where the topology -dependent 
+
+Magnus force  drives the spin texture transversely to the current direction [31 ,32 ]. While harnessing 
+
+this transverse motion is crucial for topological spintronics, establishing a mechanism to reversibly 
+
+switch this effect remains a formidable hurdle. In conventional ferromagnets (FMs), the SkHE is 
+
+intrinsically tied to the fixed topological charge and is predominantly switched via external magnetic 
+
+fields [32,33]—an approach inher ently plagued by high power consumption and severe bottlenecks 
+
+in local device integration [ 34]. Conversely, in antiferromagnetic (AFM) systems, the topological 
+
+charge cancellation suppresses the Magnus force entirely, constraining skyrmions to linear 
+
+traj ectories and effectively extinguishing the SkHE [ 35,36]. Therefore, realizing a mechanism that 
+
+permits efficient, purely electrical control of the SkHE —thereby breaking this FM -AFM 
+
+dichotomy —stands as a critical imperative for the advancement of topological spintronics. 
+
+In this letter, we address this challenge by establishing a general mechanism for the reversible 
+
+electrical switching of the SkHE in 2D altermagnets. Through symmetry and model analysis, we 
+
+identify that the intrinsic crystal symme try imposes sublattice -dependent anisotropic exchange and 
+
+Dzyaloshinskii -Moriya interactions (DMI). These interactions give rise to a highly anisotropic SkHE, 
+
+where the transverse velocity is strictly dictated by the current direction relative to the cryst al axes. 
+
+Crucially, we demonstrate that an external electric field can significantly modulate  these anisotropic 
+
+parameters through coupling to the altermagnetic symmetry, triggering a sign reversal of SkHE. 
+
+Furthermore, we also validate this non -magnetic s witching mechanism in monolayer CaMnSn via 
+
+first -principles calculations and atomistic spin model simulations. Our findings not only demonstrate 
+
+the feasibility of electrical control but also establish altermagnets as a promising platform for 
+
+topological s pintronics. 3
+
+Results and Discussion 
+
+We begin by clarifying the symmetry constraints on skyrmion properties in conventional 2D 
+
+antiferromagnets. In these systems, the two FM sublattices ( denoted as A and B) are typically related 
+
+by combined time -reversal and spatial symmetries (e.g., [C 2║P] and [C 2║t]), which forc es the 
+
+constituent skyrmions to carry opposite topological charges (𝑄 𝐴 = −𝑄 𝐵 ) [20 ]. The current -driven 
+
+motion is governed by the Thiele equation 𝐆 × (𝝂 − 𝒖 ) + 𝒟 (𝛼 𝝂 − 𝛽 𝒖 ) + ∇𝑉 (𝐫 ) = 0 [35 ], where 
+
+𝐺 = (0, 0, 𝑔 ) is the gyrovector with 𝑔 = −4𝜋𝑄 . Here, the topological charge 𝑄 is described as 
+
+𝑄 = 1 
+
+> 4π
+
+∫ 𝒎 ∙ (∂𝒎  
+
+> ∂𝑥
+
+× ∂𝒎  
+
+> ∂𝑦
+
+) d𝑥 d𝑦 [6,37 ]. 𝝂 denotes the drift velocity, while 𝒖 = (𝑢 𝑥 , 𝑢 𝑥 ) =
+
+(𝑢 cos 𝜃 , 𝑢 sin 𝜃 ) represents the current -induced velocity with 𝜃 defin ing current angle relative to 
+
+the x-axis. 𝒟 characterizes the dissipative tensor , with 𝛼 and 𝛽 being the Gilbert damping 
+
+constant and non -adiabatic torque strength, respectively. 𝑉 (𝐫 ) is the confining potential arising from 
+
+the sample boundaries. Solving for the velocity 𝝂 , the general solution depends explicitly on the 
+
+dissipative tensor components: 
+
+𝒗 = {𝑣 𝑥 
+
+𝑣 𝑦 = {𝑉 0[(𝑔 2 + 𝛼𝛽 𝒟 𝑥𝑥 𝒟 𝑦𝑦 ) cos 𝜃 + (𝛽 − 𝛼 )𝑔 𝒟 𝑦𝑦 sin 𝜃 ]
+
+𝑉 0[(𝛼 − 𝛽 )𝑔 𝒟 𝑥𝑥 cos 𝜃 + (𝑔 2 + 𝛼𝛽 𝒟 𝑥𝑥 𝒟 𝑦𝑦 ) sin 𝜃 ] (1) 
+
+where 𝑉 0 = 𝑢 (𝛼 2𝒟 𝑥𝑥 𝒟 𝑦𝑦 + 𝑔 2)⁄ .
+
+Figure 1 Symmetry -driven electrical switching of the anisotropic SkHE . (Center) The pristine AFM 4
+
+state is protected by [C 2║P] or [C 2║t] symmetry (green star), where the isotropic magnetic 
+
+environment enforces an exact cancellation of transverse forces, confining skyrmions to linear 
+
+trajectories ( 𝑣 ⊥ = 0). (Left, Right) Application of an external electric field ( ∓E𝑧 ) breaks the inversion 
+
+symmetry, driving the system into ATM states. This induces sublattice -dependent anisotropy 
+
+(depicted by the orthogonal red and blue ellipses), generating a finite, reversible transverse velocity 
+
+(𝑣 ⊥ ≠ 0). The red and blue arrows indicate the transverse driving forces acting on sublattices A and 
+
+B, respectively. Note that reversing the E𝑧 -field direction inverts the transport anisotropy and the 
+
+resulting anisotropic SkHE. 
+
+Crucially, the [C 2|| P] or [C 2|| t] symmetry enforces an isotropic magnetic environment ( Figure 1 ,
+
+middle panel ), strictly constraining the dissipative tensor for each sublattice to be diagonal and 
+
+uniform ( 𝒟 𝑥𝑥 = 𝒟 𝑦𝑦 = 𝒟 ). Consequently, the transverse velocity for a single sublattice simplifies t o
+
+𝑣 ⊥ = 𝑢𝑔𝒟 (𝛽 − 𝛼 ) (𝛼 2𝒟 2 + 𝑔 2)⁄ (detailed in Note 1 of Supporting Information ). However, since 
+
+𝑔 𝐴 = −𝑔 𝐵 , the transverse velocities of the coupled sublattices cancel exactly ( 𝑣 ⊥ 
+
+> 𝐴
+
+= −𝑣 ⊥ 
+
+> 𝐵
+
+). This 
+
+symmetry -protected cancellation confines skyrmions to linear trajectories along the current direction, 
+
+establishing a fundamental barrier to transverse control that necessitates symmetry breaking. 
+
+To dismantle this symmetry barrier, the strict cancellation of the transverse velocities between 
+
+sublattices must be li fted . We propose that an out -of -plane electric field (E𝑧 ) serves as the ideal 
+
+symmetry breaker. It eliminates the global [C 2║P] or [C 2║t] symmetry but retains a joint rotational 
+
+symmetry (e.g., [C 2║C4z t]), effectively transforming the isotropic AFM into an electric -field -induced 
+
+ATM state . In this sense, the isotropic interactions on each sublattice are transformed into anisotropic 
+
+one s. 
+
+We here consider a model 2D tetragonal lattice with D4h symmetry. The application of E𝑧 
+
+induces a coordination in equivalence between sublattices A and B ( Fig ure 1, side panels), rendering 
+
+the magnetic texture on each sublattice anisotropic (elliptical) rather than isotropic. Crucially, due to 
+
+the 90 ° relative rotation connecting the sublattices, their dissipative tensors satisfy an orthogonal 
+
+relationship: 𝒟 𝑥𝑥  
+
+> 𝐴
+
+= 𝒟 𝑦𝑦  
+
+> 𝐵
+
+= 𝒟 1 and 𝒟 𝑦𝑦  
+
+> 𝐴
+
+= 𝒟 𝑥𝑥  
+
+> 𝐵
+
+= 𝒟 2 [38 -40 ]. Solving the Thiele equation under 
+
+these anisotropic constraints yields the longitudinal ( 𝑣 ∥ ) and transverse ( 𝑣 ⊥ ) velocities of the 
+
+composite skyrmion: 5
+
+𝑣 ∥ = 𝑉 0[2(𝑔 2 + 𝛼𝛽 𝒟 1𝒟 2) + 𝑔 (𝛼 − 𝛽 )(𝒟 1 − 𝒟 2) sin 2𝜃 ] (2) 
+
+𝑣 ⊥ = −𝑉 0[𝑔 (𝛼 − 𝛽 )(𝒟 1 − 𝒟 2) cos 2𝜃 ] (3 )
+
+These expressions clearly indicate that a n anisotropic transverse velocity is instantaneously generated 
+
+(i.e., realizing the anisotropic SkHE ), driven explicitly by the anisotropy difference ( 𝒟 1 − 𝒟 2). 
+
+The hallmark of this mechanism is its electrical reversibility. Reversing the electric field direction 
+
+(E𝑧 to −E𝑧 ) interchanges the local crystal environments of the two sublattices (Fig ure 1, side panels) .
+
+This operation effectively swaps the dissipative components ( 𝒟 1←→ 𝒟 2 ), which imposes a sign 
+
+reversal on the anisotropy term [(𝒟 1 − 𝒟 2)→(𝒟 2 − 𝒟 1) ]. Consequently, the transverse velocity 
+
+undergoes an immediate inversion: 
+
+𝑣 ⊥(−Ez) = −𝑣 ⊥(+Ez) (4)
+
+This result rigorously demonstrates that the anisotropic SkHE in such field -induced altermagnets is 
+
+not only non -zero but also electrically switchable. 
+
+To validate this symmetry -derived mechanism in a realistic material system, we perform first -
+
+principles calculations  and atomistic spin model simulations on monolayer CaMnSn [ 41 ]. As 
+
+illustrated in Figure 2(a) , the system crystallizes in a tetragonal lattice (space group P4/nmm , point 
+
+group D4h ), consisting of five atomic layers stacked in a Ca -Sn -Mn -Sn -Ca sequence. The unit cell 
+
+contains two Mn atoms (Mn A and Mn B) residing within the same atomic plane, which belon g to 
+
+mag netic sublattices A and B. These two sublattices are related by the spatial inversion symmetry ( P), 
+
+which ensures that the two nearest -neighbor Mn atoms experience equivalent and isotropic 
+
+coordination environments. The optimized lattice parameter is 4.47 Å. Furthermore, the dynamic 
+
+stability of the monolayer is confirmed by the absence of imaginary f requencies in the phonon 
+
+spectrum (see Fig ure S2 in Supplemental Material). 
+
+The macroscopic magnetic properties of this monolayer are strictly governed by the local 
+
+electronic environment of Mn atoms. Formally, charge transfer establishes a nominal Mn 2+ ox idation 
+
+state with 3d 54s 0 configuration. Subject to the local tetrahedral crystal field exerted by the neighboring 
+
+Sn atoms , the Mn -3d orbitals split into two manifolds: the lower -energy doublet eg orbitals and the 
+
+higher -energy  triplet t2g orbitals. Drive n by strong intra -atomic Hund's exchange, these five valence 
+
+electrons adopt a high -spin configuration , theoretically yielding a magnetic moment of 5 μB per Mn 6
+
+atom . Consistent with this localized physical picture, o ur first -principles calculations reveal a total 
+
+magnetic moment of 8.95 μB per unit cell . This value aligns well with the expected high -spin state, 
+
+where the slight reduction from the ideal 10 μB (for two Mn atoms) reflects the characteristic p-d
+
+hybridization between the Mn and adjacent Sn atoms, leaving the magnetization predominantly 
+
+localized at the coplanar Mn sites. 
+
+To determine the magnetic ground state, we compare the total energies of spin -parallel and spin -
+
+antiparallel configurations, fi nding that AFM coupling is energetically favorable. As shown in Figure 
+
+S3(a) , the band structure of monolayer CaMnSn exhibits complete spin degeneracy due to the 
+
+preserved [C 2║P] symmetry relating the two sublattices. Application of an out -of -plane electric field 
+
+(Ez) explicitly breaks this symmetry. While the zero net magnetization  is strictly preserved , Ez lifts 
+
+the sublattice degeneracy , inducing a pronounced spin -polarized band splitting that is the hallmark of 
+
+altermagnetism [ 42 -44 ] [see Figure 2(d) ]. Specifically, the bands along M-Y-Γ and Γ-X-M paths 
+
+remain degenerate in energy but are completely segregated into opposite spin channels . This 
+
+distinctive behavior stems from the breaking of [C 2║P] symmetry while preserving diagonal mirror 
+
+symmetry ( MΦ), which enforces spin -momentum locking [ 42 -44 ]. Remarkably, reversing the electric 
+
+field direction ( −Ez) interchanges the local environments of the sublattices, effectively inverting the 
+
+sign of the m omentum -dependent spin splitting [Figure S3(b) ]. 
+
+Figure 2 Crystal structure, symmetry, and field -induced altermagnetic properties of monolayer 
+
+CaMnSn. (a)  Crystal structure of monolayer CaMnSn from top and side views. (b) Equatorial plane 7
+
+projection of the point group for monolayer CaMnSn under an out -of -plane electric field (left panel )
+
+and the corresponding 2D Brillouin zone with high -symmetry paths (right panel) . (c) Schematic of 
+
+the magnetic interactions ( 𝐼 represents 𝐽 or 𝐷 ) in the field -induced altermagnetic state . The 
+
+interactions 𝐼 , 𝐼 1, and 𝐼 2 are indicated by dotted, solid, and dashed lines, respectively. (d) Spin -
+
+resolved b and structure of mon olayer CaMnSn under Ez = 0.5 V/ Å. (e) SOC energy projected on 
+
+atoms ( ∆𝐸 SOC ) for monolayer CaMnSn under Ez = 0.6 V/ Å. 
+
+To investigate the magnetic interactions in monolayer CaMnSn, we construct the following 
+
+Heisenberg spin Hamiltonian: 
+
+𝐻 = − ∑ 𝐽 𝐒 i ∙
+
+> <i,j>
+
+𝐒 j − ∑ ∑ 𝐽 𝑛 𝐒 i ∙
+
+> <i,j>𝑛 𝑛
+
+𝐒 j − ∑ 𝐃 ∙ (𝐒 i
+
+> <i,j>
+
+× 𝐒 j)
+
+− ∑ ∑ 𝐃 𝑛 ∙ (𝐒 i<i,j>𝑛 ×𝑛 𝐒 j) − 𝐾 ∑ (𝐒 i
+
+> z
+
+)2 
+
+> i
+
+(5)
+
+Here, 𝐒 𝑖 indicate s the unit vector representing the local spin at the 𝑖 -th Mn site. 〈𝑖 , 𝑗 〉 and 〈𝑖 , 𝑗 〉𝑛 
+
+run over all inter -sublattice Mn atomic pairs and intra -sublattice Mn atomic pairs, respectively. 𝐽 
+
+and 𝐽 𝑛 (n = 1, 2) denote the Heisenberg exchange interaction s between the inter -sublattice and intra -
+
+sublattice sites, respectively. 𝐃 and 𝐃 𝑛 (n = 1, 2 ) represent the inter -sublattice and intra -sublattice 
+
+DMI , respectively. The index n is introduced to differentiate the sublattice -specific intra -sublattice 
+
+interactions stemming from the coordination inequivalence between the two sublattices, as illustrated 
+
+in Figure 2(c) . The last term is the single -ion anisotropy (SIA). 
+
+As illustrated in Figure S4 , we consider four different magnetic configurations to obtain the 
+
+exchange interactions in monolayer CaMnSn. The derived exchange parameters are 𝐽 = −47 .55 
+
+meV and 𝐽 1 = 𝐽 2 = 7.34 meV, respectively. These values indicate that the inter -sublattice exchange 
+
+interaction favors AFM coupling , while FM coupling dominates the intra -sublattice interaction s. 
+
+Regarding the DMI, the D4h (P4/nmm ) symmetry of tetragonal lattice dictates that 𝐃 𝑖𝑗 vector 
+
+between neighboring intra -sublattice Mn atoms is perpendicular to their connecting bond [ 45 ]. It can 
+
+be expressed as 𝐃 𝑖𝑗 = 𝑑 ∥(𝐳 × 𝐮 𝑖𝑗 ) + 𝑑 ⊥𝐳 , where 𝐳 is the unit vector along the z-axis and 𝐮 𝑖𝑗 is 
+
+the unit vector pointing from site i to site j; see Figure S5 . Since the Ca -Mn -Sn bond lies within a 
+
+mirror plane, the out -of -plane component 𝑑 ⊥ can be neglected , leaving only the in -plane component 
+
+𝑑 ∥ to be considered. Moreover, the crystal symmetry further mandates that the in -plane components 
+
+𝑑 ∥ 
+
+> 1
+
+and 𝑑 ∥ 
+
+> 2
+
+possess opposite signs. Our calculations yield 𝑑 ∥ 
+
+> 1
+
+= −𝑑 ∥ 
+
+> 2
+
+= −0.42 meV, where the 8
+
+negative sign corresponds to clockwise chirality. The inter -sublattice DMI is found to be zero, whic h
+
+is forbidden by the space -inversion symmetry. Regarding the SIA, the calculat ed parameter 𝐾 is -
+
+0.11 meV, indicating an in -plane magnetic anisotropy for monolayer CaMnSn. 
+
+We further investigate the evolution of these magnetic interactions under an electric field Ez
+
+ranging from 0.1 to 0.6 V/Å. The application of Ez explicitly breaks the inversion symmetry ,
+
+reducing the crystal symmetry from D4h to C4v . As detailed in Table S1 , the inter -sublattice exchange 
+
+interaction 𝐽 exhibits negligible variation , maintaining a robust AFM coupling. In stark contrast, the 
+
+degeneracy of the intra -sublattice exchange interactions is lifted; 𝐽 1 and 𝐽 2 become non -equivalent 
+
+but remain posit ive, preserving the FM ordering for intra -sublattice coupling. Similarly, the intra -
+
+sublattice DMI components 𝑑 ∥ 
+
+> 1
+
+and 𝑑 ∥ 
+
+> 2
+
+split in magnitude while retaining opposite signs. Crucially ,
+
+as illustrated in Figure 2(c) , sublattices A and B are no longer relat ed by the [C 2║P] symmetry 
+
+operation, but are instead interconnected via [C 2║C4z t]. This symmetry reduction naturally gives rise 
+
+to sublattice -specific anisotropic interactions —a definitive hallmark of the electric -field -induced 
+
+altermagnetic state. 
+
+A profound consequence of the electric -field -induced inversion -symmetry breaking is the 
+
+emergence of a non -zero inter -sublattice DMI oriented perpendicular to the bond connecting two 
+
+adjacent Mn atoms. We focus on the in -plane component 𝑑 ∥, as the out -of -pl ane component does not 
+
+contribute to the formation of non -coplanar spin textures. As summarized in Table S1 , 𝑑 ∥ increases 
+
+monotonically with Ez. To elucidate its microscopic origin, we plot the atomically resolved spin -
+
+orbit coupling (SOC) energy difference 𝛥 𝐸 SOC [extracted from spin -spiral configurations, see 
+
+Fig ure s S 6 and S7] in Figure 2(e) . It can be seen that the DMI is not primarily contributed by the 
+
+Mn atoms , but is predominantly driven by the strong SOC of the neighboring Sn atoms. This firmly 
+
+confirms that the system follows a Fert –Levy type mechanism [ 46 ,47 ], where the heavy ligand 
+
+mediates the DMI between magnetic sites. Concurrently, the single -ion anisotropy parameter 𝐾 
+
+decreases in magnitude with increasing Ez (Table S1 ), indicating a gradual weakening of the in -
+
+plane magnetic confinement. 
+
+Upon reversing the electric field direction ( −Ez), the system exhibits a mathematically elegant, 
+
+symmetry -dictated response . While the inter -sublattice exchange 𝐽 and single -ion anisotropy 𝐾 
+
+remain invariant, the intra -sublattice terms undergo a complete spatial redistribution . Specifically, the 9
+
+values of 𝐽 1 and 𝐽 2 are precisely exchanged ( 𝐽 1←→ 𝐽 2), as are the magnitudes of 𝑑 ∥ 
+
+> 1
+
+and 𝑑 ∥ 
+
+> 2
+
+(with 
+
+their signs unchanged). Furthermore , the inter -sublattice DMI 𝑑 ∥ undergoes a sign reversal while 
+
+maintaining its magnitude, signifying a switch in the chirality, as illustrated in Figure S5 .
+
+Consequently, reversing the electric field effectively swaps the strengths of the sublattice -specific 
+
+anisotropic interactions . This computational result directly validates our phenomenological model 
+
+(𝒟 1 ←→ 𝒟 2 ), firmly cementing an electrically reversible pathway for controlling the anisotropic 
+
+SkHE. 
+
+To investigate the spin textures of monolayer CaMnSn, atomistic spin model simulations are 
+
+performed using the Landau -Lifshitz -Gilbert (LLG) equation [ 48 ,49 ], with the spin Hamiltonian 
+
+parameterized by first -principles calculations. In the absence of an external electric field ( Ez = 0), 
+
+the system exhibits a conventional AFM order. The application of an out -of -plane electric field 
+
+gradually suppresses the in -plane magnetic anisotropy, the reby promoting the emergence of non -
+
+coplanar spin textures. As illustrated in Figure 3(a) , isolated ATM bimerons are stabilized when Ez
+
+reaches 0.5 V/Å. Upon further increasing the field to 0.6 V/Å, these bimerons undergo a topological 
+
+transition and evolv e into skyrmions [ Figure 3(b) ]. 
+
+Figure 3 Field -driven topological transitions and electrical control of altermagnetic skyrmions. Spin 
+
+textures of monolayer CaMnSn under out -of -plane electric field Ez of (a) 0.5 V/ Å and (b) 0.6 V/ Å. 
+
+(c) Enlarged sublattice -resolved views of spin textures of monolayer CaMnSn under Ez = ±0.6 V/ 
+
+Å. In (a -c), the color map encodes the out -of -plane spin components , while the arrows indicate the 
+
+in -plane spin components. (d) Schem atic illustrating the electrical control of altermagnetic skyrmions. 
+
+These non -coplanar ATM quasiparticles comprise two coupled FM sub -textures with opposite 10 
+
+polarities. Taking the ATM skyrmion at Ez = 0.6 V/Å as an example, the FM skyrmion in sublattice 
+
+A exhibits an upward polarity with a topological charge of 𝑄 = 1 . whereas the skyrmion in 
+
+sublattice B possesses a downward polarity with 𝑄 = −1, as shown in Figure 3(c) . Notably, despite 
+
+their oppo site topological charges, both sub -textures share an anticlockwise whirling chirality. This 
+
+behavior is primarily dictated by the dominant intra -sublattice DMI 𝑑 ∥ 
+
+> 1
+
+and inter -sublattice DMI 𝑑 ∥.
+
+As illustrated in Figure S5(a) , while the intra -sublattice DMIs 𝑑 ∥ 
+
+> 1
+
+and 𝑑 ∥ 
+
+> 2
+
+in both sublattices favor 
+
+anticlockwise and clockwise spin spiralings, respectively, the magnitude of 𝑑 ∥ 
+
+> 1
+
+is markedly 
+
+dominant. Combined with the inter -sublattice DMI 𝑑 ∥ , which further promotes an anticloc kwise spin 
+
+arrangement in two sublattices, the resulting chirality is uniquely determined. It is worth noting that 
+
+while ATM skyrmions exhibit a structural resemblance to their AFM counterparts, their stability is 
+
+originated from a distinct mechanism. Spec ifically, rather than relying on  perfectly compensated 
+
+isotropic interactions, ATM skyrmions are uniquely sustained by sublattice -specific anisotropic 
+
+interactions, a direct consequence of the broken equivalence between the two magnetic sublattices in 
+
+the ATM lattice. 
+
+Upon reversing the electric field to −Ez , the ATM skyrmion system exhibits a profound 
+
+reconfiguration. As shown in Figure 3(c) , while the core polarities and topological charges ( 𝑄 =
+
+±1) of t he FM sub -textures remain invariant, their spiral helicity undergoes a complete reversal from 
+
+anticlockwise to clockwise. This helicity inversion is fundamentally rooted in the field -induced 
+
+redistribution of the intra -sublattice DMI and the sign reversal of inter -sublattice DMI. Specifically, 
+
+as illustrated in Figure S5(b) , the reversal of Ez effectively swaps the magnitudes of 𝑑 ∥ 
+
+> 1
+
+and 𝑑 ∥
+
+> 2
+
+without changing their signs, thereby flipping the chirality of the dominant intra -sublattice DMI 
+
+component. Concurrently, the sign of the inter -sublattice DMI 𝑑 ∥ is reversed, leading to a direct 
+
+reversal of its associated chirality. These two factors ac t in concert to drive the complete reversal of 
+
+the spiral helicity across both sub -textures . More importantly , this field reversal simultaneously 
+
+interchanges the localized anisotropic effective fields experienced by the skyrmions on the two 
+
+sublattices. T his precise spatial swapping of the anisotropic landscape firmly paves the way for the 
+
+purely electrical control of skyrmion transport, including the deterministic switching of the SkHE. 
+
+To verify the electrical control of the SkHE in monolayer CaMnSn, we next investigate the 
+
+current -driven dynamics of ATM skyrmions under Ez = ±0.6 V/Å. A s illustrated in Figure 4(a) ,11 
+
+injecting a current along the + x direction under Ez = 0.6 V/Å triggers a pronounced transverse 
+
+deflection. The skyrmion trajectory deviates toward the -y direction, reaching a net transverse 
+
+displacement of 1.6 nm over 800 ps. This observation of a non -zero skyrmion Hall angle originates 
+
+directly from the uncompensated transverse velocities of the two magnetic sublattices. Driven by the 
+
+sublattice -specific anisotropic fields, the FM sub -texture on sublattice B acquires a greater transverse 
+
+velocity magnitude than that on sublattice A, culminating in a net m acroscopic deflection along the -
+
+y axis, perfectly consistent with our phenomenological model (recall Fig ure 1). 
+
+Remarkably, r eversing the applied electric field to Ez = −0.6 V/Å induces a complete reversal 
+
+of the SkHE . As demonstrated in Figure 4(a) , under the same +x axis injection, the ATM skyrmion 
+
+deflects toward the + y direction, manifesting a mirror -symmetric reflection of the trajectory across 
+
+the longitudinal axis. The transverse displacement magnitude is perfectly conserved (reaching an 
+
+identic al absolute value at corresponding time steps), yet its spatial direction is exactly inverted. This 
+
+deterministic switching of the SkHE is a direct dynamical consequence of the electric -field -induced 
+
+swapping of the sublattice -specific anisotropic fields. To further validate this mechanism, we modeled 
+
+a conventional AFM skyrmion by replacing the sublattice -specific anisotropic fields with isotropic 
+
+interactions, which are preserved by the [C 2║P] symmetry in the absence of an electric field. As 
+
+shown in Figu re 4(a) , when driven by a current along the + x direction, the skyrmion merely oscillates 
+
+near its equilibrium without any transverse deflection. Together, these dynamical simulations 
+
+unequivocally demonstrate that the field -induced, sublattice -resolved ani sotropy is the fundamental 
+
+physical origin for both the emergence and the precise electrical switching of the SkHE in two -
+
+dimensional altermagnets. 12 
+
+Figure 4 Electrically switchable anisotropic SkHE. (a)  Time evolution of the transverse displacement 
+
+of skyrmion in monolayer CaMnSn without and with considering the effective sublattice -specific 
+
+anisotropic field. (b) The relationship between ATM skyrmion transverse displacement and current 
+
+injection angle θ under Ez > 0 and Ez < 0 state s.
+
+To systematically map this anisotropic transport, we evaluate the skyrmion transverse 
+
+displacement as a function of the current injection angle ( 𝜃 ) under Ez = ±0.6 V/Å . As shown in 
+
+Figure 4(b) , the simulated angular dependence perfectly matches the analytical functional form 
+
+predicted by Eqs. (3) and (4) —being proportional to cos 2θ—thereby corroborating the intrinsic 
+
+anisotropic SkHE  inherent to the field -induced ATM state . Remarkably, reversing the electric field 
+
+direction syst ematically inverts the transverse velocity across all current directions. This ubiquitous 
+
+sign reversal provides robust, omnidirectional electrical control over the SkHE trajectory, a feature 
+
+highly promising for topological spintronics. Furthermore, Figure 4(b) shows that the SkHE  strictly 
+
+vanishes, with the transverse displacement dropping to zero, when the current injection angle satisfies 
+
+𝜃 = (2𝑛 + 1)π/4 (𝑛 ∈ ℤ). At these specific symmetry -dictated orientations, the transverse velocity 
+
+components of the two sublattices become exactly equal in magnitude but opposite in sign, leading 
+
+to a perfect cancellation of the macroscopic Magnus -like force. 
+
+# Conclusion 
+
+In summary, we demonstrate a symmetry -driven mechanism for the reversible electrical switching of 13 
+
+the SkHE in 2D altermagnets. An external electric field breaks the spatial equivalence of the magnetic 
+
+sublattices, inducing anisotropic interactions that circumvent the strict topological charge cancellation 
+
+of conventional antiferromagnets. Crucially, reversing the electric field deterministically swaps these 
+
+sublattice -specific anisotropies, triggering a complete inversion of the transverse skyrmion trajectory. 
+
+Validated in monolayer CaMnSn, this field -controlled dynamics bridges the gap between 
+
+ferro magnetic and antiferromagnetic spintronics, offering a highly promising platform for energy -
+
+efficient, trajectory -encoded logic devices. 
+
+Methods 
+
+Our first -principles calculations are  carried out using density functional theory (DFT) as implemented 
+
+in the Vienna ab initio Simulation Package (VASP) [ 50 ,51 ]. The exchange -correlation interaction is 
+
+treated within generalized gradient approximation (GGA) [ 52 ] using Perdew –Burke –Ernzerhof (PBE) 
+
+functional. A plane -wave cutoff energy of 520 eV is employed, and th e convergence criteria for 
+
+energy and force are set to 10 -6 eV and 0.01 eV/Å, respectively. The Monkhorst -Pack k -point mesh 
+
+of 25 × 25 × 1 is adopted to sample the 2D Brillouin zone.  To account for strong correlation 
+
+effects, following the previous works [ 41 ], the GGA + U approach is employed, with a Hubbard U 
+
+value of 2 eV applied to the 3 d electrons of the Mn atoms. The vacuum space of 2 0 Å along z -direction 
+
+is included to eliminate interactions between periodic images. DFT -D3 method is applied to account 
+
+for vdW interaction [ 53 ]. 
+
+Atomistic spin model simulations are conducted using the VAMPIRE package [ 54 ] based on the 
+
+spin Hamiltonian and Landau -Lifshitz -Gilbert (LLG) equation:  
+
+> 𝜕 𝑆 𝑖
+> 𝜕𝑡
+
+= − 𝛾  
+
+> (1+𝜆 2)
+
+[𝑆 𝑖 × 𝐵 𝑒𝑓𝑓  
+
+> 𝑖
+
++ 𝜆 𝑆 𝑖 × (𝑆 𝑖 × 𝐵 𝑒𝑓𝑓  
+
+> 𝑖
+
+)] (6 )
+
+where 𝑆 𝑖 is the unit vector representing the spin moment at site 𝑖 , and 𝐵 𝑒𝑓𝑓  
+
+> 𝑖
+
+is the on -site effective 
+
+magnetic field, given by 𝐵 𝑒𝑓𝑓  
+
+> 𝑖
+
+= − 1
+
+> 𝑢 𝑠
+> 𝜕𝐻
+> 𝜕 𝑆 𝑖
+
+, which governs the time evolution of spin structures. Here, 
+
+𝛾 is the gyromagnetic ratio , and 𝜆 is the damping constant. In the simulations, the system is 
+
+gradually cooled from a high -temperature disordered state ( 𝑇 ≫ 𝑇 C ) to the investigated low 
+
+temperature. Stable spin textures are obtained using a 50 0 × 50 0 × 1 supercell with periodic conditions. 
+
+The total simulation time is 3 ns, with a time step of 0.1 fs. The values of 𝛾 and 𝜆 are set to 
+
+1.76 × 10 11 T−1𝑠 −1 and 1.0, res pectively. 
+
+Spin dynamics simulations are performed using the MuMax3 package [55] . The s imulation cell, 
+
+with a size of 60 0 × 60 0 × 1 nm 3, is discretized using a mesh size of 1 × 1 × 1 nm 3. The parameters 
+
+for anisotropic effective field are mapped from the magnetic parameters in 2D atomic spin 14 
+
+Hamiltonian model [56] . Notably, the inter -sublattice interactions are scaled down fivefold to 
+
+accentuate the transverse displacement of ATM skyrmions for improved visibility. This adjustment 
+
+serves to highlight the underlying physical mechanism without altering the qualitative nature of the 
+
+SkHE. 
+
+Acknowledgements 
+
+This work is supported by the National Natural Science Foundation of China (No. 12274261), Taishan 
+
+Young Scholar Program of Shandong Province, and Shandong Provincial Natural Science Foundation 
+
+of China (No. ZR2024QA01 6). 
+
+Conflict of Interest 
+
+The authors declare no competing interests. 
+
+References 
+
+[1]  Roessler, U. K.; Bogdanov, A.; Pfleiderer, C. Spontaneous skyrmion ground states in magnetic 
+
+metals. Nature 2006 , 442 , 797. 
+
+[2]  Mühlbauer, S. , Binz, B. , Jonietz, F. , Pfleiderer, C. , Rosch, A. , Neubauer, A. , Georgii, R. , Böni, P. 
+
+Skyrmion lattice in a chiral magnet. Science 2009 , 323 , 915. 
+
+[3]  Tokura , Y. , Kanazawa, N. Magnetic skyrmion materials, Chem. Rev . 2021 , 121 , 2857. 
+
+[4]  Jiang, J.; Mi, W. Two -dimensional magnetic Janus monolayers and their van der Waals 
+
+heterostructures: a review on recent progress. Mater. Horiz. 2023 , 10 , 788. 
+
+[5]  Bogdanov, A. N. , Panagopoulos, C. Physical foundations and basic properties of magnetic 
+
+skyrmion s. Nat. Rev. Phys. 2020 , 2, 492. 
+
+[6]  Nagaosa, N.; Tokura, Y. Topological properties and dynamics of magnetic skyrmions. Nat. 
+
+Nanotechnol. 2013 , 8, 899. 
+
+[7]  Fert, A.; Reyren, N.; Cros, V. Magnetic skyrmions: Advances in physics and potential 
+
+applications. Nat. Rev. Mater. 2017 , 2, 17031. 
+
+[8] Li, S., Kang, W., Zhang, X., Nie, T., Zhou,Y., Wang, K. L. , Zhao, W. Magnetic skyrmions for 
+
+unconventional computing. Mater. Horiz. 2021 , 8, 854. 
+
+[9] Kang, W., Huang, Y., Zheng, C., Lv, W., Lei, N., Zhang, Y., Zhang, X., Zhou, Y. , Zhao, W. Voltage 
+
+controlled magnetic skyrmion motion for racetrack memory. Sci. Rep. 2016 , 6, 23164. 
+
+[10] Wang, H., Dai, Y., Chow, G. -M., Chen, J. Topological hall transport: Materials, mechanisms and 
+
+potential applications. Prog. Mater. Sci. 2022 , 130 , 100971. 
+
+[11] Huang, B., Clark, G., Navarro -Moratalla, E., Klein, D., Cheng, R., Seyler, K., Zhong, D., 
+
+Schmidgall, E., McGuire, M., Cobden, D., Yao, W., Xiao, D., Jarillo -Herrero, P. , Xu, X. Layer -
+
+dependent ferromagnetism in a van der Waals crystal down to the monola yer limit. Nature 2017 ,
+
+546 , 270. 
+
+[12] Bonilla, M., Kolekar, S., Ma, Y., Diaz, H. C., Kalappattil, V., Das, R., Eggers,T., Gutierrez, H. R., 
+
+Phan, M. -H. , Batzill, M. Strong room -temperature ferromagnetism in VSe 2 monolayers on van 15 
+
+der Waals substrates. Nat. Nanotechnol. 2018 , 13 , 289. 
+
+[13] Deng, Y., Yu, Y., Song,Y., Zhang, J., Wang, N. Z., Sun, Z., Yi, Y., Wu, Y. Z., Wu, S., Zhu, J., Wang, 
+
+J., Chen, X. H. , Zhang, Y. Gate -tunable room -temperature ferromagnetism in two -dimensional 
+
+Fe 3GeTe 2. Nature 2018 , 563 , 94. 
+
+[14]  Yuan, J. , Yang, Y. , Cai, Y. , Wu, Y. , Chen, Y. , Yan, X. , Shen, L. Intrinsic skyrmions in monolayer 
+
+Janus magnets. Phys. Rev. B 2020 , 101 , 094420. 
+
+[15]  Lu, X. , Fei, R. , Zhu, L. , Yang, L. Meron -like topological spin defects in monolayer CrCl 3. Nat. 
+
+Commun. 2020 , 11 , 4724. 
+
+[16]  Amoroso D. , Barone, P. , Picozzi, S. Spontaneous skyrmionic lattice from anisotropic symmetric 
+
+exchange in a Ni -halide monolayer. Nat. Commun. 2020 , 11 , 5784. 
+
+[17]  Xu, C. , Chen, P. , Tan, H. , Yang, Y. , Xiang, H. , Bellaiche, L. Electric -field switching o f magnetic 
+
+topological charge in type -I multiferroics. Phys. Rev. Lett. 2020 , 125 , 037203. 
+
+[18]  Chen, D. , Wang, J. , Cheng, Z. Controlling bimerons as skyrmion analogues by ferroelectric 
+
+polarization in 2D van der Waals multiferroic heterostructures. Nat. Commun . 2020 , 11 , 5930. 
+
+[19]  He, Z. , Dou, K. ,Du, W. , Dai, Y. , Huang, B. , Ma, Y. Multiple topological magnetism in van der 
+
+Waals heterostructure of MnTe 2/ZrS 2. Nano Lett. 2023 , 23 , 312. 
+
+[20]  Cui, Q. , Zhu, Y. , Ga, Y. , Liang, J. , Li, P. , Yu, D. , Cui, P. , Yang, H. Anisotropic Dzyaloshinskii –
+
+Moriya interaction and topological magnetism in two -dimensional magnets protected by P4̅m2 
+
+crystal symmetry. Nano Lett. 2022, 22 , 2334. 
+
+[21]  Dou, K. , He, Z. , Du, W. , Dai, Y. , Huang, B. , Ma, Y. d0 magnetic skyrmions in two -dimensional 
+
+lattice. Adv. Funct. Mater. 2023 , 33 , 2301817. 
+
+[22]  Du, W. , Dou, K. , He, Z. , Dai, Y. , Huang, B. , Ma, Y. Bloch -type magnetic skyrmions in two -
+
+dimensional lattices. Mater. Horiz. 2023 , 10 , 5017. 
+
+[23]  Dou, K. , Du, W. , He, Z. , Dai, Y. , Huang, B. , Ma, Y. Theoretical prediction of antiferromagnetic 
+
+skyrmion crystal in Janus monolayer CrSi 2N2As 2. ACS Nano 2023 , 17 , 1144. 
+
+[24]  Sun, W. et al. LaBr 2 bilayer multiferroic moiré superlattice with robust magnetoelectric coupling 
+
+and magnetic bimer ons. npj Comput. Mater. 2022 , 8, 159. 
+
+[25]  Liu, W. , He, Xue , Zhang, J. , Zheng, F. , Zhao, Y. -J. , Wu, Rui , Yang, J. , Kläui, M. , Hou, Y. Two -
+
+dimensional rare -earth -based half -metals with topological bimerons. Nano Lett . 2024 , 24 , 15473. 
+
+[26]  Zhang, X. , Wan, G. , Zhang, J. , Zhang, Y. -F. , Pan, J. , Du, S. Eliminating skyrmion Hall effect in 
+
+ferromagnetic skyrmions. Nano Lett. 2024 , 24 , 10796. 
+
+[27]  Du, W., Dou, K., Li, X., Dai, Y., Wang, Z., Huang, B., Ma, Y. Topological layer Hall effect in 
+
+two -dimensional type -I multife rroic heterostructure. Nature Commun. 2025 , 16 , 6141. 
+
+[28]  Liu, W., Yang, J., Zheng, F., Yang, J., Hou, Y., Wu, R. Nonvolatile manipulation of topological 
+
+spin textures in 2D Spin frustrated multiferroic heterostructures. Adv. Funct. Mater. 2025 , 35 ,
+
+2504772. 
+
+[29]  Shen, Z., Yao, X., Dong, S. Magnetoelectric imprint of skyrmions in van der Waals bilayers. Phys. 
+
+Rev. B 2020 , 101 , 094420. 
+
+[30]  Du, W., Dou, K., He, Z., Dai, Y., Wang, Z., Huang, B., Ma Y . Ferroelectric switchable topological 
+
+antiferromagnetism. Nano Lett . 2026 , 26 , 1083. 16 
+
+[31]  Litzius, K., et al . Skyrmion Hall effect revealed by direct time -resolved X -ray microscopy. Nat. 
+
+Phys. 2017 , 13 , 170. 
+
+[32]  Jiang, W. , Zhang, X. , Yu, G. Zhang, W. , Wang, X. Jungfleisch, M. B. , Pearson, J. E. , Cheng, X. ,
+
+Heinonen, O. , Wang, K. L. , Zhou, Y. , Hoffmann, A. , Velthuis, S. G. E. Direct observation of the 
+
+skyrmion Hall effect, Nat. Phys. 2017 , 13 , 162. 
+
+[33]  Zhang, S., Wang, W., Burn, D., Peng, H., Berger, H., Bauer, A., Pfleiderer, C., van der Laan, G., 
+
+Hesjedal, T. Manipulation of skyrmion mo tion by magnetic field gradients. Nature Commun. 
+
+2018 , 9, 2115. 
+
+[34]  Song, C., Cui, B., Li, F., Zhou, X., Pan, F. Recent progress in voltage control of magnetism: 
+
+Materials, mechanisms, and performance. Prog. Mater. Sci. 2017 , 87 , 33. 
+
+[35]  Zhang, X., Zhou, Y., Ezawa, M. Magnetic bilayer -skyrmions without skyrmion Hall effect . Nat. 
+
+Commun. 2016 , 7, 10293. 
+
+[36]  Li, X., et al. , Bimeron clusters in chiral antiferromagnets . npj Comput. Mater. 2020 , 6, 169. 
+
+[37]  Berg , B. , Lüscher, M. Definition and statistical distributions of a topological number in the lattice 
+
+O(3) σ-model . Nucl. Phys. B 1981 , 190 , 412. 
+
+[38] Cheng, C., Yan, Z., Dong, J., Liu, Y., Xia, Z., Li, L., Han, X., Elliptical skyrmion moving along 
+
+a track without transverse speed, Phys. Rev. B 2021 , 104 , 174409 .
+
+[39] Xia, J., Zhang, X., Ezawa, M., Shao, Q., Liu, X., Zhou, Y. Dynamics of an elliptical ferromagnetic 
+
+skyrmion driven by the spin -orbit torque, Appl. Phys. Lett. 2020 , 116 , 022407 .
+
+[40] Dou, K., He, Z., Du,W., Dai Y., Huang, B., Ma, Y. Altermagnetic skyrmions in t wo -dimensional 
+
+lattices exhibiting the anisotropic skyrmion Hall effect. Phys. Rev. B 2026 , 113 , 104402. 
+
+[41]  Wang, D., Wang, H., Liu, L., Zhang, J., Zhang, H. Electric -field -induced switchable two -
+
+dimensional altermagnets. Nano Lett . 2025 , 25 , 1, 498. 
+
+[42]  Guo, S., Guo, X., Cheng, K., Wang, K., Ang, Y. Piezoelectric altermagnetism and spin -valley 
+
+polarization in Janus monolayer Cr 2SO, Appl. Phys. Lett. 2023 , 123 , 082401 .
+
+[43] Zhang, R., Cui, C., Li, R., Duan, J., Li, L., Yu, Z., Yao, Y. Predictable gate -field control of spin 
+
+in altermagnets with spin -layer coupling, Phys. Rev. Lett. 2024 , 133 , 056401 .
+
+[44] Wu, Y., Deng, L., Yin, X., Tong, J., Tian, F., Zhang, X. Valley -related multi piezo effect and 
+
+noncollinear spin current in an altermagnet, Nano Lett. 2024 , 24 , 10534 .
+
+[45]  Moriya, T. Anisotropic superexchange interaction and weak ferromagnetism . Phys. Rev. 1960 ,
+
+120 , 91. 
+
+[46]  Fert , A. , Levy, P. M. Role of anisotropic exchange interactions in determining the properties of 
+
+spin -glasses . Phys. Rev. Lett. 1980 , 44 , 1538. 
+
+[47]  Levy , P. M. , Fert, A. Anisotropy induced by nonmagnetic impurities in Cu Mn spin -glass alloys .
+
+Phys. Rev. B 1981 , 23 , 4667. 
+
+[48] Zhang, S., Li, Z. Roles of nonequilibrium conduction e lectrons on the magnetization dynamics 17 
+
+of ferromagnets, Phys. Rev. Lett. 2024 , 93 , 127204 .
+
+[49] Tomasello, R., Martinez, E., Zivieri, R., Torres, L.,  Carpentieri , M.,  Finocchio , G. A strategy for 
+
+the design of skyrmion racetrack memories, Sci. Rep. 2014 , 4, 6784 .
+
+[50]  Kohn , W. , Sham, L. J. Self -consistent equations including exchange and correlation effects. Phys. 
+
+Rev. 1965 , 140 , A1133. 
+
+[51]  Kresse , G. , Furthmüller, J. Efficient iterative schemes for ab initio total -energy calculations using 
+
+a plane -wave basis set . Phys. Rev. B 1996 , 54 , 11169. 
+
+[52]  Perdew, J. P. , Burke, K. , Ernzerhof, M. Generalized gradient approximation made simple . Phys. 
+
+Rev. Lett. 1996 , 77 , 3865. 
+
+[53]  Grimmea, S. , Antony, J. , Ehrlich, S. , Krieg, H. A consistent and accurate ab initio parametrization 
+
+of density functional disper sion correction (DFT -D) for the 94 elements H -Pu . J. Chem. Phys. 
+
+2010 , 132 , 154104. 
+
+[54]  Evans, R. , Fan, W. , Chureemart, P. , Ostler, T. , Ellis, M., Chantrell, R. Atomistic spin model 
+
+simulations of magnetic nanomaterials . J. Phys.: Condens. Matter 2014 , 26 , 103202. 
+
+[55]  Vansteenkiste, A. , Leliaert, J. , Dvornik, M. , Helsen, M. , Garcia -Sanchez, F. , Waeyenberge, B.
+
+The design and verification of MuMax3. AIP Advances 2014 , 4, 107133. 
+
+[56] He, Z., Dou, K., Du, W., Dai, Y., Huang, B., Ma, Y. Mixed Bloch -Néel type skyrmions in a two -
+
+dimensional lattice. Phys. Rev. B 20 24 , 109 , 0 244 20 .

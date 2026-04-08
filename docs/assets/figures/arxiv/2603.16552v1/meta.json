@@ -1,0 +1,30 @@
+{
+  "version": 2,
+  "extractor": "pdffigures2",
+  "figures": [
+    {
+      "url": "assets/figures/arxiv/2603.16552v1/fig-001.webp",
+      "caption": "FIG. 1. Energy-resolved spectral functions Aαβ ↑ (ε, ω) entering the dc conductivity kernel for the four regimes discussed in the main text. Each block corresponds to one column of Fig. 1 of the main text: (top left) h = 0, δ = 0; (top right) h = 0, δ ̸= 0; (bottom left) h ̸= 0, δ = 0; (bottom right) h ̸= 0, δ ̸= 0. Within each block, the panels display the diagonal (AAA, ABB) and off-diagonal (AAB) spectral functions resolved in band energy ε and frequency ω. For h = 0 and δ = 0, both particle–hole symmetry and antiferromagnetic sublattice equivalence are preserved, enforcing reflection symmetry with respect to ω = 0 and exact compensation between spin channels in the Kubo kernel. At zero field but finite doping (h = 0, δ ̸= 0), particle–hole symmetry is broken and the spectral functions lose their reflection symmetry in ω, yet the equivalence between antiferromagnetic sublattices remains intact, ensuring spin-degenerate dc transport. For finite magnetic field at half filling (h ̸= 0, δ = 0), sublattice equivalence is lifted, but the generalized particle–hole (PHsp) symmetry enforces the relations Aαβ ↑ (ε, ω) = ηαηβA αβ ↓ (ε,−ω), which, together with the even parity of −∂ωf(ω), again leads to exact cancellation between spin channels. Only when both finite doping and magnetic field are present (h ̸= 0, δ ̸= 0) are all symmetry constraints removed, resulting in uncompensated contributions to the dc conductivity kernel and a finite spin polarization of the charge current.",
+      "page": 8,
+      "index": 1,
+      "width": 1053,
+      "height": 755
+    },
+    {
+      "url": "assets/figures/arxiv/2603.16552v1/fig-002.webp",
+      "caption": "FIG. 2. Spin-resolved dc conductivity (left) and current polarization, P = (σ↑ − σ↓)/(σ↑ + σ↓) (right), as a function of doping within the antiferromagnetic regime, δ < δc, with δc the critical doping above which Néel order collapses. The left panel shows the spin-resolved dc conductivities for zero field (h = 0) and for a representative finite field (h = 0.03). The right panel shows the corresponding current polarization for several magnetic fields, highlighting the tunability of P with doping and field strength. A finite spin polarization of the charge current emerges only when both particle–hole symmetry and antiferromagnetic sublattice equivalence are simultaneously broken.",
+      "page": 3,
+      "index": 2,
+      "width": 1060,
+      "height": 427
+    },
+    {
+      "url": "assets/figures/arxiv/2603.16552v1/fig-003.webp",
+      "caption": "FIG. 3. Spin polarization of the dc charge current, P = (σ↑ − σ↓)/(σ↑ + σ↓), as a function of normalized doping δ/δc for different values of the magnetic field h. At zero field, the polarization vanishes identically for all dopings due to exact spin compensation in the Kubo kernel. Finite magnetic fields progressively lift this compensation, producing a sizable and tunable spin polarization. The non-monotonic dependence on doping reflects the interplay between spin-dependent scattering and spectral weight redistribution, demonstrating the field-controlled character of the correlated spintronic response.",
+      "page": 9,
+      "index": 3,
+      "width": 796,
+      "height": 565
+    }
+  ]
+}

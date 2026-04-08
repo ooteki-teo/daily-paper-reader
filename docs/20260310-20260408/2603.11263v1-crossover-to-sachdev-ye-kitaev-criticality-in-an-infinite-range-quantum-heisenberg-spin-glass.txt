@@ -1,0 +1,1064 @@
+Title: Crossover to Sachdev-Ye-Kitaev criticality in an infinite-range quantum Heisenberg spin glass
+
+URL Source: https://arxiv.org/pdf/2603.11263v1
+
+Published Time: Fri, 13 Mar 2026 00:10:35 GMT
+
+Number of Pages: 14
+
+Markdown Content:
+## Crossover to Sachdev-Ye-Kitaev criticality in an infinite-range quantum Heisenberg spin glass 
+
+Hossein Hosseinabadi, 1, ∗ Subir Sachdev, 2, 3 and Jamir Marino 4
+
+> 1
+
+Institute of Physics, Johannes Gutenberg University Mainz, 55099 Mainz, Germany 
+
+> 2
+
+Department of Physics, Harvard University, Cambridge, MA 02138, USA 
+
+> 3
+
+Center for Computational Quantum Physics, Flatiron Institute, New York, NY 10010, USA 
+
+> 4
+
+Department of Physics, State University of New York at Bu ff alo, Bu ff alo, NY 14260, USA 
+
+We study the equilibrium dynamics of an infinite-range quantum Heisenberg model with random couplings, in which local magnetic moments arise from Nf flavors of spinful fermions. We employ an expansion in 
+
+Nf , which controls the strength of quantum fluctuations, and self-consistently include 1 /Nf corrections to the Luttinger–Ward functional. In the large-Nf limit, where quantum fluctuations are weak, the high- and low-temperature phases are respectively paramagnetic and spin glass ordered, with a transition temperature independent of Nf . For small numbers of fermionic flavors, however, quantum fluctuations substantially suppress the ordering temperature. We show that this behavior reflects the proximity of the system to a Sachdev–Ye–Kitaev (SYK) phase, where both fermionic and spin spectral densities display critical behavior over a broad range of finite frequencies, with the latter exhibiting the scale-invariant form χ′′ (ω) ∼ sgn( ω). At the lowest energies and temperatures, spin-glass dynamics ultimately take over, producing a universal sub-Ohmic dynamical spin susceptibility χ′′ (ω) ∼ sgn( ω) √|ω|. Our results establish a minimal framework for understanding dynamical crossovers between SYK criticality and spin-glass ordering. 
+
+Introduction.— The interplay of frustration and fluctuations gives rise to a variety of phases in interacting quantum many-body systems [1, 2]. Among the most prominent examples are spin glasses (SG) and quantum spin liquids (QSL). SG are ordered phases in which magnetic moments freeze into a disordered configuration at low temperatures; consequently, both thermal and quantum fluctuations tend to destabilize them [3, 4]. In contrast, QSL remain paramagnetic without a local order parameter, but exhibit strong entanglement and unconventional low-energy excitations with distinct properties such as fractionalization [5–7]. A potential theoretical route toward realizing a QSL is to start from a SG and enhance fluctuations so as to suppress the freezing of spins. In this picture, su ffi ciently strong thermal or quantum fluctuations can melt SG order and give rise to a strongly fluctuating paramagnetic state. Evidence for such behavior has emerged in studies of long-range quantum Heisenberg spin glasses and related models, including extensions to SU( M) spins [8–12], and systems with mobile spins [13, 14], which point to the appearance of QSL regimes either as ground states or over finite ranges of temperature or frequency. In this work we introduce a minimal model that enables a controlled exploration of this mechanism. We study a fully connected quantum Heisenberg model in which the spins are represented by N f flavors of fermions, with the strength of quantum fluctuations tuned by the flavor number. Using a Luttinger-Ward functional approach [15], we evaluate the behavior of the model across temperature and N f . As shown in the phase diagram in Fig. 1, for large numbers of flavors quantum fluctuations are suppressed, resulting in a trivial PM phase at high temperatures with a transition temperature to the SG phase that saturates as a function of 
+
+N f . In contrast, at small N f quantum fluctuations strongly weaken the SG order, leading to an exponential suppression of the transition temperature with decreasing N f . We Paramagnet 
+
+SYK 
+
+Spin Glass 
+
+FIG. 1. The phase diagram of the system in terms temperature (T ) and number of fermionic flavors ( Nf ). The latter controls the strength of quantum fluctuations. 
+
+attribute this behavior to the proximity of the system to Sachdev–Ye–Kitaev (SYK) criticality [12], which is also reflected in the structure of the low-energy fermionic and magnetic spectra. Notably, the latter exhibits a plateau over a wide range of frequencies, suggesting the emergence of a finite-frequency QSL phase [8, 11, 12]. At lower temperatures, critical fermions eventually freeze into a SG phase, where we observe a crossover of the spin spectral density to sub-Ohmic behavior at small frequencies. 
+
+Model.— We consider a fully connected network of fermions with random exchange interactions. The fundamental degrees of freedom are N f flavors of spin-1 /2fermions ψiλs on each of the N sites, with λ = 1, . . . , N f and 
+
+s =↑, ↓. The Hamiltonian describes random SU(2)-invariant 
+
+> arXiv:2603.11263v1 [cond-mat.str-el] 11 Mar 2026
+
+2exchange between collective spin densities, 
+
+H = 1
+
+N f
+
+√N
+
+X 
+
+> i<j
+
+Ji j Si · S j, (1) where the exchange couplings Ji j are independent Gaussian variables with Ji j = 0 and J2 
+
+> i j
+
+= J2. The 1/ √N
+
+scaling ensures a well-defined thermodynamic limit, while the prefactor 1 /N f renders the interaction energy extensive in the number of fermionic flavors, allowing for a controlled large-
+
+N f expansion [16]. The local spin operators are collective fermion bilinears, 
+
+Si = 12 
+
+> Nf
+
+X
+
+> λ=1
+
+X
+
+> s,s′=↑,↓
+
+ψ† 
+
+> iλs
+
+σss ′ ψiλs′ , (2) which obey the SU(2) algebra. Throughout this work, we focus on the half-filled regime, ⟨ψ†
+
+> iλs
+
+ψiλs⟩ = 1/2, which minimizes the density of empty or doubly-occupied sites and thereby enhances magnetic fluctuations. The operators Si obey the su(2) algebra. The model is therefore structurally similar to the Heisenberg spin glass [17]. However, in contrast to conventional Heisenberg models where spins are restricted to a fixed SU(2) representation, here the magnitude of spins is not fixed, and the local moment 
+
+⟨S2 
+
+> i
+
+⟩ can fluctuate. As a result, the dependence of phase boundaries on N f di ff ers from that of the Heisenberg spin glass with fixed-length spins [8–10, 17]. As we show later, the present model also share some of its features with metallic spin glasses [18–21]. The quantities of interest are the disorder-averaged fermionic and spin response functions, defined respectively as 
+
+GR(t)δi j δλλ ′ δss ′ = −iΘ(t)D ψiλs(t), ψ † 
+
+> jλs′
+
+(0) +
+
+E, (3) 
+
+χ(t)δi j δαβ = − i
+
+N f
+
+Θ(t)D S α 
+
+> i
+
+(t), S β 
+
+> j
+
+(0) −
+
+E, (4) as well as the symmetric spin correlation function 
+
+C(t)δi j δαβ = 1
+
+N f
+
+D S α 
+
+> i
+
+(t), S β 
+
+> j
+
+(0) +
+
+E, (5) where [ A, B]± = AB ± BA . Throughout, expectation values are taken with respect to both the quantum state and the disorder ensemble. We have also used the fact that, in the thermodynamic limit, these correlators become diagonal in all indices due to the infinite-range nature of the interactions [17]. 
+
+Method.— We employ the Keldysh formalism, which provides direct access to the two-point functions defined in Eqs. (3)–(5) and facilitates the averaging over quenched disorder [22–24]. As detailed in the Supplemental Material [16], we derive the Luttinger-Ward (LW) functional 
+
+Γ[G] for the system to next-to-leading order in an expansion in powers of N f [16, 23–26]. Even at this finite order, the LW functional contains an infinite number of contributions, which   
+
+> FIG. 2. Diagrammatic contributions to the fermionic self-energy, at leading non-vanishing order in the 1 /Nfexpansion, include an infinite series which is resummed in this work.
+
+can be re-summed via a Hubbard-Stratonovich transformation in terms of collective spin fields. We work in the frequency domain, where the fermionic response function takes the form GR(ω) = (ω − ΣR(ω)) −1,with ΣR(ω) the self-energy. Figure 2 shows the diagrammatic expansion of the self-energy within our approximation scheme. Upon evaluating the diagrams, one obtains 
+
+ΣR(ω) = 3i
+
+8N f
+
+Z +∞−∞ 
+
+WK (ν)GR(ω − ν) + WR(ν)GK (ω − ν) dν
+
+2π ,
+
+(6) where GK (ω) is the fermionic Keldysh Green’s function. It is related to GR(ω) via the fluctuation-dissipation theorem (FDT) according to GK (ω) = 2i Im GR(ω) tanh( ω/ 2T ) [22]. In Eq. (6), WR/K (ω) denote the retarded and Keldysh components of the correlation function of the field experienced by the spins, given by 
+
+WR(ω) = J2χ(ω)1 − J2ΠR(ω)χ(ω) , (7) 
+
+WK (ω) = −iJ 2C(ω)
+
+1 − J2ΠR(ω)χ(ω) 2 + |χ(ω)|2ΠK (ω). (8) Here, ΠR(ω) is the polarization function, 
+
+ΠR(ω) = − i
+
+4
+
+Z +∞−∞ 
+
+GK (ν)GA(ν − ω) + GR(ν)GK (ν − ω) dν
+
+2π ,
+
+(9) where GA = (GR)⋆, and ΠK (ω) = 2i Im ΠR(ω) coth( ω/ 2T ). This set of equations is closed by the expressions for the spin response and correlation functions, 
+
+χ(ω) = ΠR(ω)1 − J2ΠR(ω)χ(ω) , (10) and 
+
+1 − J2|χ(ω)|2 C(ω) = iΠK (ω)
+
+|1 − J2ΠR(ω)χ(ω)|2 . (11) The structure of the diagrams in Fig. 2 closely resembles that of the GW approximation [27], with the key di ff erence that disorder averaging permits multiple ways of drawing disorder lines, changing the combinatorial prefactors. In the following, we analyze the self-consistent solution of the above equations in di ff erent parameter regimes, using a combination of analytical arguments at low energies and 310 −2 10 −1 10 0               
+
+> T /J
+> 10 −1
+> 10 0
+> J|χ(0) |
+> Analytic (Nf→ ∞ )
+> (c)
+> Nf
+> 0.20.513510 0.00.10.20.3
+> T /J
+> 0.00.20.40.60.81.0
+> q/q max
+> (d) Nf
+> 20 10 5310.5 0.2
+> −1.0−0.50.00.51.0
+> ω/J
+> 0246810
+> −J Im  GR(ω)
+> Nf= 5 (a) T /J
+> 2.0 1.0 0.5 0.25 0.21 10 −210 −110 0
+> ω/J
+> 10 −4
+> 10 −3
+> 10 −2
+> 10 −1
+> −J Im  χ(ω)
+> ∼ω
+> ∼ √ω
+> (b)
+> Nf= 5
+> T /J
+> 2.0 1.0 0.5 0.25 0.21
+
+FIG. 3. Numerical solutions of the self-consistent equations. (a) Fermionic spectral density for Nf = 5 in the spin glass ( T/J = 0.21) and paramagnetic (rest of the curves) phases. (b) Spin spectral density for Nf = 5 limit, showing Ohmic (black dashed) and sub-Ohmic (red dash-dotted) low-energy behavior in the paramagnetic and spin-glass phases, respectively. (c) Temperature dependence of the static magnetic susceptibility for di ff erent values of Nf . The red curve shows the analytical result obtained for Nf → ∞ . For large values of Nf , the results overlap, with a plateau at J|χ(0) | = 1 appearing below the critical temperature Tc = J/4 (dotted line). For small values of Nf , the transition is shifted to lower temperatures due to quantum fluctuations. (d) Spin-glass order parameter as a function of temperature for di ff erent values of 
+
+Nf . We observe the saturation and suppression of q at large and small values of Nf , respectively. 
+
+numerically exact solutions over the full frequency domain. The resulting behavior is summarized in the phase diagram shown in Fig. 1. We start from the paramagnetic phase as the simplest phase of the model, and then discuss its transition into a spin glass. This is followed by the discussion of the SYK phase and its corresponding spin glass transition. 
+
+Paramagnet.— We begin with the thermally dominated paramagnetic phase, corresponding to the regime in which the temperature T exceeds all local energy scales, including the coupling J and the fermionic spectral broadening. In this limit, the static magnetic susceptibility can be obtained from elementary statistical-mechanics considerations, yielding 
+
+χ(0) = −1/8T , consistent with Curie’s law [28]. This observation suggests that Jχ(ω) ∼ J/T can serve as a small parameter for a perturbative expansion in the high-temperature regime. To leading order, this expansion yields 
+
+χ(ω) ≈ ΠR(ω) and WR(ω) ≈ J2ΠR(ω), corresponding to retaining only the first term in the self-energy expansion shown in Fig. 2. Even with this simplification, a full analytical solution of the equations in the entire frequency domain remains inaccessible. At low-frequencies an ansatz of the form 
+
+GR(ω) ≈ (ω − iγ)−1 correctly reproduces the static susceptibility and self-consistently yields [16] 
+
+γ =
+
+√3J
+
+8N1/2
+
+> f
+
+, Im χ(ω) ≈ − ω
+
+16 γT . (12) We see that at high temperatures, the fermionic broadening γ
+
+is insensitive to T and is instead set by an emergent energy scale proportional to JN−1/2 
+
+> f
+
+. The spin excitations exhibit an Ohmic low-energy spectrum, whose magnitude increases with N f due to the enlarged phase space for spin-exchange processes as the number of fermion flavors grows. Up to numerical prefactors, Eq. (12) is in good agreement with the numerical results in Figs. 3(a) and 3(b) at high temperatures. 
+
+Spin glass.— Upon lowering the temperature from the paramagnetic phase, the spin susceptibility becomes enhanced. As a result, J|χ(0) | is no longer small, and the system becomes unstable toward the formation of spin glass order. The latter is characterized by finite spin correlations (Eq. (5)) at long times, such that lim t→∞ C(t) > 0 [3, 29]. In the frequency domain, this behavior corresponds to a singular contribution of the form 
+
+C(ω) = 4πN f qδ(ω) + ˜C(ω), (13) where q is the Edwards-Anderson order parameter [3, 29], which is finite in the spin glass phase, and ˜C(ω) denotes the regular part of C(ω). ˜C(ω) = −2 Im χ(ω) coth( ω/ 2T ). Substituting Eq. (13) into Eq. (11) and integrating over an infinitesimal frequency window around ω = 0, we obtain 
+
+q(1 − J2χ2(0)) = 0. For q > 0, this implies 
+
+J|χ(0) | = 1, (14) which is formally analogous to the Stoner criterion [28]. In contrast to the conventional case, however, |χ(0) | remains pinned to J−1 throughout the entire spin glass phase, acondition known as marginal stability [18, 30]. To determine the critical temperature, we use the fact that 
+
+ΠR(0) is still given by ΠR(0) = −1/8T as long as γ ≲ T , which is valid for su ffi ciently large N f . Substituting this expression into Eq. (10), we obtain 
+
+χ(0) /4T = p1 − (J/4T )2 − 1 → Tc = J/4. (15) The numerical solution for χ(0), shown in Fig. 3(c) for di ff erent values of N f , is in good agreement with Eq. (15). The value of the order parameter is determined by imposing Eq. (14), whose numerical solution is shown in Fig. 3(d), demonstrating that spin glass order emerges continuously below Tc.4Spin-glass order gives rise to an e ff ective contribution to the fermionic self-energy [16], 
+
+ΣR
+
+> SG
+
+(ω) ≈ 3J2q G R(ω). (16) This expression is formally analogous to the self-energy of fermions subject to static disorder of e ff ective strength W =
+
+(3 q)1/2 J [12, 31], reflecting the presence of a randomly frozen background in the spin-glass phase. Consequently, deep in the spin-glass regime, where T ≪ W , Fermi statistics become important [18–20]. The spin spectral density in the ordered phase can be obtained from Eqs. (10) and (14), yielding Im χ(ω) ∼
+
+J−1/2| Im ΠR(ω)|1/2 at low frequencies. A general argument, relying only on the regularity of the fermionic spectral density [16], implies that ΠR(ω) ≈ − αω at low frequencies throughout the spin-glass phase. This leads to a sub-Ohmic spin spectral density of the form Im χ(ω) = − 2α
+
+J
+
+1/2
+
+|ω|1/2sgn( ω), T ≤ Tc, (17) in agreement with the numerical results shown in Fig. 3(b). Despite the universal sub-Ohmic profile, the coe ffi cient α
+
+behaves di ff erently near the transition and deep in the ordered phase. Close to the transition, ΠR(ω) is dominated by thermal fluctuations, similar to Eq. (12). In contrast, deep in the ordered phase, ΠR(ω) arises from particle-hole excitations near the Fermi surface, and α is controlled solely by the fermionic density of states at the Fermi level and 
+
+α ≈ 1/4πW2 [16]. This implies that upon lowering the temperature, α initially increases and reaches a maximum around T ∼ W . Below this temperature α decreases as SG order grows since α ∼ W −2 ∼ q−1, and α.In the discussion above, we focused on the large-N f
+
+limit, where the critical temperature Tc is independent of 
+
+N f . For smaller values of N f , however, spin glass order is progressively weakened due to enhanced quantum fluctuations, as evidenced by the reduced transition temperature and the smaller values of q shown in Figs. 3(c) and 3(d). In the following, we show that this suppression can be understood as a consequence of the proximity of the system to an SYK phase at small N f .
+
+SYK paramagnet.— Upon decreasing N f in the paramagnetic phase, we reach a regime in which the fermionic spectral broadening (denoted by γ in Eq. (12)) is no longer much smaller than T . In this limit, thermal fluctuations no longer dominate and Fermi statistics become important. Provided that magnetic fluctuations associated with spin glass ordering remain weak, such that J|χ(0) | is small, higher-order diagrams in Fig. 2 can still be neglected. The resulting self-energy then becomes formally analogous to that of the complex SYK model, with Σ(t) ≈ J2SYK 
+
+G(t)2G(−t) [12, 32], where 
+
+JSYK =
+
+√32
+
+J
+
+pN f
+
+, (18) −0.50 −0.25 0.00 0.25 0.50      
+
+> ω/J
+> 12345
+> −Im  GR(ω) ∼ω−1/2
+> (a) T /J
+> 0.16 0.08 0.04 0.02 0.01 0.00.10.2
+> ω/J
+> 0.00 0.05 0.10 0.15 0.20 0.25
+> −Im  χ(ω)
+> ∼ω
+> ∼ √ω
+> SYK plateau
+> (b)
+> T /J
+> 0.16 0.08 0.04 0.02 0.01
+
+FIG. 4. Emergence of SYK physics in the small-Nf limit. (a) Fermionic spectral density, showing the emergence of power-law behavior at low temperatures. (b) Spin spectral density, exhibiting a crossover from an SYK-like plateau at finite ω to linear and square-root behavior at low frequencies in the paramagnetic and spin-glass phases, respectively. In both panels, Nf = 1/10. 
+
+is the e ff ective SYK coupling. One may therefore anticipate the emergence of SYK physics for T ≲ JSYK . However, as discussed above, the system should remain in the PM phase such that J|χ(0) | is small. This requires the existence of a finite temperature window satisfying Tc ≲ T ≲ JSYK . Using the large-N f
+
+expression for Tc given by Eq. (15), we obtain an approximate upper bound on N f ,
+
+Tc ≲ JSYK → N f ≲ 10 . (19) Consistent with this estimate, our numerical results in Figs. 3(c) and 3(d) show a suppression of the spin glass transition in the same range of N f . We therefore hypothesize that the reduction of Tc at small N f originates from the breakdown of the quasiparticle picture. The presence of the SYK phase becomes manifest upon examining the fermionic spectral density at small N f , shown in Fig. 4(a), where Im GR(ω) ∼ | ω|−1/2 over a finite frequency window. 
+
+SYK to spin glass transition.— The SYK phase ultimately undergoes a transition to a spin glass state at su ffi ciently low temperatures. However, the onset of ordering is strongly suppressed by quantum fluctuations. To demonstrate this analytically, we invoke the Stoner criterion (Eq. (14)), which remains applicable in the SYK phase. In this regime, the static polarization ΠR(0) acquires a logarithmic temperature dependence as ΠR(0) ∼ J−1SYK ln ( T/JSYK ) [12, 32]. Combining this result with Eqs. (10) and (14), we obtain the following scaling form for the critical temperature in the SYK regime, 
+
+Tc ∼ J
+
+pN f
+
+e−C/ √N f , (20) where C is a numerical constant. This result explicitly demonstrates the exponential suppression of spin glass ordering in the SYK phase. This is also in agreement with Figs. 3(c) and 3(d), where both Tc and q decrease as N f
+
+is lowered. This behavior closely parallels the exponential 5dependence of the superconducting transition temperature on the fermionic density of states in BCS theory [31], where 
+
+Tc ∼ exp( −1/Uρ0), with U the pairing interaction and ρ0 the density of states at the Fermi surface. In the present case, the fermions possess a broad spectral density whose low-energy peak scales as N1/2 
+
+> f
+
+.Beyond the suppression of ordering, the spin glass phases at large and small values of N f also di ff er qualitatively in the structure of their collective low-energy excitations. As shown in Fig. 4(b), in the SYK spin glass phase the spin spectral density exhibits a plateau extending down to low frequencies, a hallmark of SYK physics [12]. Below a characteristic frequency scale ω⋆, we observe a crossover to sub-Ohmic behavior, Im χ(ω) ∼ | ω|1/2, similar to that found in the large-
+
+N f limit. The crossover scale can be estimated in the zero-temperature limit by comparing the fermionic broadening induced by the spin glass order (Eq. (16)) with the SYK self-energy, ΣR
+
+> SYK
+
+(ω) ∼ (JSYK |ω|)1/2 [12], yielding 
+
+ΣR
+
+> SG
+
+(ω⋆) ∼ ΣR
+
+> SYK
+
+(ω⋆) → ω⋆ ∼ JN1/2 
+
+> f
+
+q. (21) The dependence on q qualitatively agrees with the results of Ref. [11] for the Heisenberg model with SU( M) spins. The crossover from SYK at intermediate frequencies to spin glass at low frequencies has also been suggested by a numerically-exact solution in Ref. [14] for a random t-J
+
+model. We emphasize, however, that in other works the spin spectrum is Ohmic below the crossover, in contrast to the sub-Ohmic behavior found here. This appears to be consistent with the results of Ref. [33] for the Heisenberg spin glass with full replica symmetry breaking, which was shown to exhibit a sub-Ohmic spectrum persisting down to very low temperatures, although they speculated that the spectrum becomes Ohmic as T → 0. 
+
+Perspective.— While we discussed various physical characteristics of the model in both paramagnetic and spin glass phases, an interesting direction for future work concerns the replica structure of the theory in the spin-glass phase using the imaginary-time formalism [4, 34, 35]. Moving beyond equilibrium, the conserving Keldysh–LW framework employed here provides a natural route to investigate far-from-equilibrium dynamics of the model [23, 24, 36–39]. In particular, it would allow the study of aging phenomena in the glass phase, as well as the relaxation dynamics of both fermionic and spin degrees of freedom. The interplay between slow glassy and fast-thermalizing SYK dynamics give rise to regimes characterized by distinct short- and long-time behavior, providing a rich setting for exploring non-equilibrium dynamics in strongly interacting quantum systems, both isolated or coupled to an external phononic bath [12, 40–43]. 
+
+Acknowledgments— SS and JM acknowledge the hospitality of ICTP-SAIFR (S˜ ao Paulo), where this work was initiated. SS was supported by NSF Grant DMR-2245246 and by the Simons Collaboration on Ultra-Quantum Matter which is a grant from the Simons Foundation (651440). JM acknowledges support from the CAS Dean’s o ffi ce at SUNY Bu ff alo.  
+
+> ∗
+
+hhossein@uni-mainz.de [1] S. Sachdev, Quantum Phase Transitions , 2nd ed. (Cambridge University Press, 2011). [2] S. Sachdev, Quantum Phases of Matter (Cambridge University Press, 2023). [3] K. Binder and A. P. Young, Spin glasses: Experimental facts, theoretical concepts, and open questions, Reviews of Modern Physics 58 , 801–976 (1986). [4] M. M´ ezard, G. Parisi, M. A. Virasoro, and D. J. Thouless, Spin glass theory and beyond (1988). [5] L. Savary and L. Balents, Quantum spin liquids: a review, Reports on Progress in Physics 80 , 016502 (2017). [6] Y. Zhou, K. Kanoda, and T.-K. Ng, Quantum spin liquid states, Reviews of Modern Physics 89 , 025003 (2017). [7] J. Knolle and R. Moessner, A field guide to spin liquids, Annual Review of Condensed Matter Physics 10 , 451–472 (2019). [8] S. Sachdev and J. Ye, Gapless spin-fluid ground state in a random quantum Heisenberg magnet, Physical Review Letters 
+
+70 , 3339–3342 (1993). [9] A. Georges, O. Parcollet, and S. Sachdev, Mean Field Theory of a Quantum Heisenberg Spin Glass, Physical Review Letters 
+
+85 , 840–843 (2000). [10] A. Georges, O. Parcollet, and S. Sachdev, Quantum fluctuations of a nearly critical Heisenberg spin glass, Physical Review B 63 ,134406 (2001). [11] M. Christos, F. M. Haehl, and S. Sachdev, Spin liquid to spin glass crossover in the random quantum Heisenberg magnet, Physical Review B 105 , 085120 (2022). [12] D. Chowdhury, A. Georges, O. Parcollet, and S. Sachdev, Sachdev-Ye-Kitaev models and beyond: Window into non-Fermi liquids, Reviews of Modern Physics 94 , 035004 (2022). [13] D. G. Joshi, C. Li, G. Tarnopolsky, A. Georges, and S. Sachdev, Deconfined Critical Point in a Doped Random Quantum Heisenberg Magnet, Physical Review X 10 , 021033 (2020). [14] L. Shackleton, A. Wietek, A. Georges, and S. Sachdev, Quantum Phase Transition at Nonzero Doping in a Random t−J
+
+Model, Phys. Rev. Lett. 126 , 136602 (2021). [15] J. Rammer, Quantum Field Theory of Non-equilibrium States 
+
+(Cambridge University Press, 2007). [16] See supplemental material for the derivation of the lw functional, the resulting equations of motion, and their numerical solution. [17] A. J. Bray and M. A. Moore, Replica theory of quantum spin glasses, Journal of Physics C: Solid State Physics 13 ,L655–L660 (1980). [18] S. Sachdev, N. Read, and R. Oppermann, Quantum field theory of metallic spin glasses, Physical Review B 52 , 10286–10294 (1995). [19] A. M. Sengupta and A. Georges, Non-Fermi-liquid behavior near a T =0 spin-glass transition, Physical Review B 52 ,10295–10302 (1995). [20] A. A. Pastor and V. Dobrosavljevi´ c, Melting of the Electron Glass, Physical Review Letters 83 , 4642–4645 (1999). [21] M. M¨ uller, P. Strack, and S. Sachdev, Quantum charge glasses of itinerant fermions with cavity-mediated long-range 6
+
+interactions, Physical Review A 86 , 023604 (2012). [22] A. Kamenev, Field theory of non-equilibrium systems 
+
+(Cambridge University Press, 2023). [23] H. Hosseinabadi, D. E. Chang, and J. Marino, Quantum-to-classical crossover in the spin glass dynamics of cavity QED simulators, Physical Review Research 6, 043313 (2024). [24] H. Hosseinabadi, D. E. Chang, and J. Marino, Far from equilibrium field theory for strongly coupled light and matter: Dynamics of frustrated multimode cavity QED, Physical Review Research 6, 043314 (2024). [25] M. Babadi, E. Demler, and M. Knap, Far-from-equilibrium field theory of many-body quantum spin systems: Prethermalization and relaxation of spin spiral states in three dimensions, Physical Review X 5, 041005 (2015), arXiv:1504.05956 [cond-mat, physics:quant-ph]. [26] A. N. Mikheev, H. Hosseinabadi, and J. Marino, Prethermalization of Light and Matter in Cavity-Coupled Rydberg Arrays, Physical Review Letters 135 , 210402 (2025). [27] F. Aryasetiawan and O. Gunnarsson, The GW method, Reports on Progress in Physics 61 , 237 (1998). [28] S. Blundell, Magnetism in condensed matter (OUP Oxford, 2001). [29] H. Sompolinsky and A. Zippelius, Dynamic Theory of the Spin-Glass Phase, Physical Review Letters 47 , 359–362 (1981). [30] J. Miller and D. A. Huse, Zero-temperature critical behavior of the infinite-range quantum Ising spin glass, Physical Review Letters 70 , 3147–3150 (1993). [31] A. Altland and B. Simons, in Condensed Matter Field Theory 
+
+(Cambridge University Press, 2023) p. i–iv. [32] Y. Gu, A. Kitaev, S. Sachdev, and G. Tarnopolsky, Notes on the complex Sachdev-Ye-Kitaev model, Journal of High Energy Physics 2020 , 157 (2020). [33] N. Kavokine, M. M¨ uller, A. Georges, and O. Parcollet, Exact Numerical Solution of the Fully Connected Classical and Quantum Heisenberg Spin Glass, Physical Review Letters 133 ,016501 (2024). [34] N. Read, S. Sachdev, and J. Ye, Landau theory of quantum spin glasses of rotors and Ising spins, Physical Review B 52 ,384–410 (1995). [35] J. Lang, S. Sachdev, and S. Diehl, Replica symmetry breaking in spin glasses in the replica-free Keldysh formalism, SciPost Phys. 17 , 160 (2024). [36] L. F. Cugliandolo and G. Lozano, Real-time nonequilibrium dynamics of quantum glassy systems, Physical Review B 59 ,915–942 (1999). [37] G. Biroli and O. Parcollet, Out-of-equilibrium dynamics of a quantum Heisenberg spin glass, Physical Review B 65 , 094414 (2002). [38] S. Bera, J. Kurchan, and M. Schiro, Sachdev-Ye-Kitaev Model in a Quantum Glassy Landscape, arXiv preprint arXiv:2509.22977 (2025). [39] J. F. Rodriguez-Nieva, A. Pi˜ neiro Orioli, and J. Marino, Far-from-equilibrium universality in the two-dimensional heisenberg model, Proceedings of the National Academy of Sciences 119 , e2122599119 (2022). [40] A. Eberlein, V. Kasper, S. Sachdev, and J. Steinberg, Quantum quench of the Sachdev-Ye-Kitaev model, Physical Review B 
+
+96 , 205123 (2017). [41] A. Haldar, P. Haldar, S. Bera, I. Mandal, and S. Banerjee, Quench, thermalization, and residual entropy across a non-Fermi liquid to Fermi liquid transition, Physical Review Research 2, 013307 (2020). [42] H. Hosseinabadi, S. P. Kelly, J. Schmalian, and J. Marino, Thermalization of non-Fermi-liquid electron-phonon systems: Hydrodynamic relaxation of the Yukawa-Sachdev-Ye-Kitaev model, Physical Review B 108 , 104319 (2023). [43] S. P. Kelly, A. M. Rey, and J. Marino, E ff ect of active photons on dynamical frustration in cavity qed, Physical Review Letters 
+
+126 , 133603 (2021). Supplemental Material: Crossover to Sachdev-Ye-Kitaev criticality in an infinite-range quantum Heisenberg spin glass 
+
+Hossein Hosseinabadi, 1, ∗ Subir Sachdev, 2, 3 and Jamir Marino 4
+
+> 1
+
+Institute of Physics, Johannes Gutenberg University Mainz, 55099 Mainz, Germany 
+
+> 2
+
+Department of Physics, Harvard University, Cambridge, MA 02138, USA 
+
+> 3
+
+Center for Computational Quantum Physics, Flatiron Institute, New York, NY 10010, USA 
+
+> 4
+
+Department of Physics, State University of New York at Bu ff alo, Bu ff alo, NY 14260, USA 
+
+I. KELDYSH PATH INTEGRAL 
+
+We use the Keldysh path-integral representation of the problem, which takes the following form after disorder averaging 
+
+S = S free + S int , (1) where 
+
+S free =
+
+X
+
+> i,s,λ
+
+I
+
+dt ¯ψiλsi∂tψiλs, (2) is the free fermion action and 
+
+S int = iJ 2
+
+4NN2
+
+> f
+
+X 
+
+> i>j
+
+X
+
+> αβ
+
+X
+
+> {λi}
+
+X 
+
+> {si,s′
+> i}
+
+I I
+
+dtdt ′
+
+ ψ†  
+
+> iλ1s1
+
+(t)σα 
+
+> s1s′
+> 1
+
+ψiλ1 s′ 
+
+> 1
+
+(t) ψ†  
+
+> jλ2s2
+
+(t)σα 
+
+> s2s′
+> 2
+
+ψ jλ2 s′ 
+
+> 2
+
+(t) 
+
+×
+
+ ψ†  
+
+> iλ3s3
+
+(t′)σβ 
+
+> s3s′
+> 3
+
+ψiλ3 s′ 
+
+> 3
+
+(t′) ψ†  
+
+> jλ4s4
+
+(t′)σβ 
+
+> s4s′
+> 4
+
+ψ jλ4 s′ 
+
+> 4
+
+(t′) 
+
+(3) is the interaction part, shown diagrammatically in Fig. 1. 
+
+II. DERIVATION OF THE LUTTINGER-WARD FUNCTIONAL FOR THE MODEL 
+
+To proceed, we obtain the Luttinger-Ward functional, also known as the two-particle irreducible (2PI) e ff ective action using a power expansion in N f [1]. In the first step, and before doing any approximations, we introduce bi-local source fields coupled to fermion bilinears as 
+
+S source =
+
+"
+
+dt dt ′ Tr Ψ†(t) · K(t, t′) · Ψ(t′), (4) where the trace is over site, flavor and spin indices. We then define the partition functional 
+
+Z[K] =
+
+Z
+
+D[Ψ, Ψ†] eiS +iS source , (5) 
+
+FIG. 1. The elementary vertex for the disorder-averaged interaction.  
+
+> ∗hhossein@uni-mainz.de
+
+2
+
+FIG. 2. The first seven NLO diagrams of the LW functional. 
+
+and the generating functional 
+
+F[K] = −i ln Z[K]. (6) We define the fermionic Green’s function on the Keldysh contour 
+
+G(t, t′) = −i⟨TcΨ(t)Ψ†(t′)⟩, (7) where Tc is the contour-ordering operator. One can show that 
+
+G(t, t′) = −i δF
+
+δKT(t′, t) . (8) Eq. (8) allows us to perform a Legendre transform 
+
+Γ[G] = F[K] − i
+
+"
+
+dtdt ′ Tr GT(t, t′) · K(t′, t), (9) which yields 
+
+δΓ
+
+δG(t, t′) = −iKT(t′, t). (10) In the absence of sources K = 0 we get 
+
+δΓ
+
+δG(t, t′) = 0, (11) which is the Euler-Lagrange equation for the Green’s function. The LW can always be written in the following form [1]: 
+
+Γ = Γ free + Γ int , (12) where the free part originates from the quadratic part of the action and is given by 
+
+Γfree = i Tr ln G − i Tr ( G−10 G), (13) where 
+
+G−10
+
+   
+
+> iλs,jλ′s′
+
+(t, t′) = δi j δλλ ′ δss ′ δc(t, t′)i∂t′ . (14) It is clear that Γfree ∝ NN f . The interacting part ( Γint ) is given by the sum of all 2-particle-irreducible (2PI) diagrams made from the interaction vertex in Eq. (3). We show below that it can be expanded in powers of N and N f . Ignoring sub-extensive terms in the system size, since we work in the thermodynamics limit, we can expand Γint as 
+
+Γint = Γ NLO 
+
+|{z}  
+
+> O(NN0
+> f)
+
++ Γ NNLO 
+
+|{z}  
+
+> O(NN−1
+> f)
+
++O(N−2 
+
+> f
+
+), (15) Symmetries of the problem require G to be diagonal in the site and flavor basis. As a result, interaction terms scale as ΓNLO ∼ N,and ΓNNLO ∼ NN−1 
+
+> f
+
+.3
+
+> FIG. 3. (Left and middle) Two of the NNLO diagrams for the LW functional. (Right) A diagram that vanishes in the thermodynamic limit.
+
+It is clear from Eq. (13) that the leading-order approximation generates free fermion dynamics. Therefore, if we aim to capture anything non-trivial, it is necessary to include some of the higher order contributions, which can be represented in terms of 2PI Feynman diagrams. The NLO contribution is given by ring diagrams with non-crossing disorder lines, as shown in Fig. 2. We note that there are an infinite number of NLO diagrams, at increasingly higher orders of the interaction strength, as specified by the number disorder lines in each term. Accordingly, our treatment is non-perturbative in J , a necessary condition to capture glassy physics where interactions dominate. One can attempt to sum all of the NLO diagrams as a geometric series in powers of the loops. However, such procedure is not as straightforward as in scalar field theories, due to di ff erent possible configurations of disorder lines for the same number of loops. The latter leads to di ff erent combinatorial factors that complicate the summation. Despite these di ffi culties, it is possible to perform a full summation of NLO diagrams using a Hubbard-Stratonovich transformation, as we show later. We have also shown some of the NNLO and sub-extensive diagrams in Fig. 3. We will not take NNLO and higher order diagrams into account, as we expect them to only quantitatively modify the results. Having the LW functional, we can obtain the equation of motion for the renormalized Green’s function using 
+
+δΓ
+
+δGT = 0 → G−1 = G−10 − Σ, (16) where Σ is the self-energy, which, at NLO, is given by 
+
+Σ = −i δΓNLO 
+
+δGT . (17) The self-energy diagrams corresponding the first few terms of ΓNLO are shown in Fig.2 of the main text.  
+
+> III. HUBBARD-STRATONOVICH TRANSFORMATION
+
+The starting point is to write the action in Eq. (1) in terms of spin fields using a Lagrange-multiplier field as 
+
+S =
+
+X
+
+> i,s,λ
+
+I
+
+dt ¯ψiλsi∂tψiλs − 1
+
+√N
+
+X 
+
+> i>j
+
+I
+
+dt J i j SiS j −
+
+X
+
+> i
+
+I
+
+dt Φi ·
+
+Si − 12 pN f
+
+X
+
+> λ
+
+X
+
+> ss ′
+
+¯ψiλsσss ′ ψiλs′
+
+. (18) Where S and Φ are respectively the spin and Lagrange-multiplier fields, and the disorder average is now given by 
+
+J2 
+
+> i j
+
+= J2. (19) Again, we can perform the disorder averaging to get the following e ff ective interaction 
+
+S J = iJ 2
+
+2N
+
+X 
+
+> i>j
+
+I I
+
+dt dt ′ Si(t)S j(t)  Si(t′)S j(t′). (20) Due to the linear coupling between S and Φ, it is natural to express them as the components of a larger vector field 
+
+Θi = Si
+
+Φi,
+
+!
+
+(21) which the following Green’s functio matrix 
+
+Λ(t, t′) = −i⟨Θ(t)ΘT(t′)⟩ = D(t, t′) U (t, t′)
+
+V (t, t′) W (t, t′),
+
+!
+
+(22) 4where 
+
+D(t, t′) = −i⟨S(t)ST (t′)⟩, (23) 
+
+W (t, t′) = −i⟨Φ(t)ΦT (t′)⟩, (24) 
+
+U (t, t′) = −i⟨S(t)ΦT (t′)⟩, (25) 
+
+V (t, t′) = −i⟨Φ(t)ST (t′)⟩, (26) which are shown by wavy lines. The vertices corresponding to the interactions in Eqs. (18) and (20) are shown respectively in the left and right panels of Fig. 4. 
+
+A. Eff ective action after Hubbard-Stratonovich Transformation 
+
+We are now in the position to write down the e ff ective action, using the same approach as before, but now we also add sources coupled to bosonic bilinears, and take the Legendre transformation with respect to both fermionic and bosonic sectors. The eff ective action has the same structure as in Eq. (15), with Γfree given by Eq.(13). The NLO part now includes the free part for bosonic fields, which scales as NN0 
+
+> f
+
+since the number of boson flavors does not scale with N f :
+
+ΓNLO [G, Λ] = − i
+
+2 Tr ln Λ + i
+
+2 Tr ( Λ−10 Λ) + ˜ΓNLO , (27) where 
+
+Λ0(t, t′) = 0 II 0
+
+!
+
+δc(t, t′). (28) ˜ΓNLO contains two contributions shown in Fig. 5, which are given by ˜ΓNLO ,1 = − iJ 2
+
+2N
+
+X 
+
+> i>j
+
+X
+
+> αβγδ
+
+I I
+
+dt dt ′ Dαγ  
+
+> i
+
+(t, t′)Dβδ  
+
+> j
+
+(t, t′), (29) ˜ΓNLO ,2 = 18N f
+
+X
+
+> i
+
+X
+
+> λ
+
+X
+
+> αβ
+
+I I
+
+dt dt ′Wαβ  
+
+> i
+
+(t, t′) Tr σαGi,λ (t, t′)σβGi,λ (t′, t), (30) where we have used the fact that all Green’s functions are diagonal in the site basis (in the thermodynamic limit) and in the fermion flavor space. 
+
+B. Equations of motion 
+
+With the NLO e ff ective action at hand, we can proceed to find the equations of motion by taking functional derivatives of Γ
+
+with respect to Green’s functions. For fermions, we get Eq. (16) with the self-energy given by 
+
+Σ(t, t′) = i
+
+4N f
+
+X
+
+> αβ
+
+Wαβ (t, t′) σαG(t, t′)σβ. (31) 
+
+FIG. 4. Two interactions vertices after the Hubbard-Stratonovich transformation. 5
+
+> FIG. 5. NLO diagrams in terms of spin Green’s functions.
+
+For bosons, we obtain 
+
+Λ−1 − Λ−10 = −Ω(t, t′) 00 −Π(t, t′)
+
+!
+
+, (32) where 
+
+Ω(t, t′) = J2D(t, t′). (33) and 
+
+Παβ (t, t′) = − i
+
+4 Tr σαG(t, t′)σβG(t′, t), (34) is the polarization function. In the following, we safely assume SU(2) symmetry, which makes all Green’s functions and self-energies diagonal in the spin basis. Therefore we get 
+
+Σ(t, t′) = 3i
+
+4N f
+
+W(t, t′)G(t, t′), (35) 
+
+Π(t, t′) = − i
+
+4G(t, t′)G(t′, t), (36) 
+
+Ω(t, t′) = J2 D(t, t′). (37)  
+
+> C. Equations in R /A/K Basis
+
+To proceed, we expand the equations of motion in the R /A/K basis in terms of the Green’s functions of classical and quantum fields [2] 
+
+ψc = 1
+
+√2 (ψ+ + ψ−), ψq = 1
+
+√2 (ψ+ − ψ−), (38) with similar definitions for ( S , ϕ ). Then, and after going to frequency domain, the retarded fermion Green’s function satisfy 
+
+GR(ω) = 1
+
+ω − ΣR(ω) , (39) with 
+
+ΣR(ω) = 3i
+
+8N f
+
+Z +∞−∞ 
+
+ WK (ν)GR(ω − ν) + WR(ν)GK (ω − ν) dν
+
+2π . (40) 
+
+GK (ω) is found via the fluctuation-dissipation theorem 
+
+GK (ω) = 2i Im GR(ω) tanh 
+
+ ω − μ
+
+2T
+
+
+
+, (41) 6where at half-filling we have μ = 0. For retarded boson Green’s functions we have 
+
+DR(ω) UR(ω)
+
+VR(ω) WR(ω)
+
+!
+
+= − ΩR(ω) −1
+
+−1 ΠR(ω)
+
+!−1
+
+, (42) which gives 
+
+DR(ω) = ΠR(ω)1 − J2ΠR(ω)DR(ω) , (43) 
+
+WR(ω) = J2 DR(ω)1 − J2ΠR(ω)DR(ω) , (44) in terms of the retarded boson self-energy 
+
+ΠR(ω) = − i
+
+4
+
+Z +∞−∞ 
+
+ GK (ν)GA(ν − ω) + GR(ν)GK (ν − ω) dν
+
+2π . (45) The Keldysh components of bosonic Green’s functions can be obtained from 
+
+DK UK
+
+VK WK
+
+!
+
+= DR UR
+
+VR WR
+
+! ΩK 00 ΠK
+
+! DA UA
+
+VA WA
+
+!
+
+, (46) leading to 
+
+DK (ω) = J2|DR(ω)|2 DK (ω) + ΠK (ω)
+
+|1 − J2 DR(ω)ΠR(ω)|2 , (47) 
+
+WK (ω) = |χ(ω)|2ΠK (ω) − iJ 2 DK (ω)
+
+1 − J2ΠR(ω)χ(ω) 2 . (48) At thermal equilibrium, the ΠK is found using the fluctuation-dissipation thoerem 
+
+ΠK (ω) = 2i Im ΠR(ω) coth 
+
+ ω
+
+2T
+
+
+
+. (49) Identifying DR(ω) = χ(ω) and DK (ω) = −iC (ω), we get the equations of motion given in the main text.  
+
+> IV. FERMION AND SPIN SPECTRAL DENSITIES IN THE PARAMAGNETIC PHASE
+
+The imaginary part of Eq. (45), after using Eq. (41) is given by Im ΠR(ω) = − 12
+
+Z +∞−∞ 
+
+Im GR(ν) Im GR(ν − ω)
+
+
+
+tanh 
+
+ ν
+
+2T
+
+
+
+− tanh 
+
+ ν − ω
+
+2T
+
+ dν
+
+2π . (50) As long as Im GR(ω) is a su ffi ciently well-behaving function, the leading order contribution for small ω comes from the expansion of the thermal part in the square brackets Im ΠR(ω) = − ω
+
+4T
+
+Z +∞−∞ 
+
+Im GR(ν)cosh( ν/ 2T )
+
+!2 dν
+
+2π . (51) In the classical paramagnetic regime, we assume that T is much larger than the fermionic broadening. Therefore, we can approximately take cosh( ν/ 2T ) ≈ 1. Using the following ansatz for the fermionic Green’s function 
+
+GR(ω) = 1
+
+ω − iγ , (52) we obtain Im ΠR(ω) = − ω 
+
+> 16 γT
+
+which is Eq. (12) of the main text. The real part of ΠR(ω) can be obtained from Re ΠR(ω) =
+
+Z +∞−∞ 
+
+Re GR(ν) Im GR(ν − ω) tanh 
+
+ ν − ω
+
+2T
+
+ dν
+
+2π . (53) 7Using Eq. (52) and expanding to the leading order in T −1 we get Re ΠR(0) = −1/8T . Together, we have the following low-frequency behavior for ΠR(ω)
+
+ΠR(ω) ≈ − 18T 1 + iω
+
+2γ
+
+!
+
+. (54) We see that ΠR(ω) is suppressed at high-temperatures and therefore, the factor of JΠR(ω) in the denominator of Eqs. (43) and (44) is small and we can approximately take WR(ω) ≈ J2ΠR(ω). In order to determine γ, we use Eq. (40) for the imaginary part of ΣR(ω) for ω = 0Im ΣR(0) = − 34N f
+
+Z +∞−∞ 
+
+Im GR(ν) Im ΠR(ν)
+
+
+
+coth 
+
+ ν
+
+2T
+
+
+
+− tanh 
+
+ ν
+
+2T
+
+ dν
+
+2π . (55) At high temperatures we can use tanh( ν/ 2T ) ≪ coth( ν/ 2T ) ≈ 2T/ν . After substituting Eqs. (52) and (54) we obtain Im ΣR(0) = − 364 N f γ . (56) Using Im ΣR(0) = −γ we get γ = 31/2 J/8N1/2 
+
+> f
+
+which is Eq. (12) of the main text.   
+
+> V. SPIN GLASS PHASE A. Fermionic broadening due to spin glass order
+
+The singular contribution of spin glass order to the spin correlation function given by 
+
+CSG (ω) = 4πN f qδ(ω), (57) leads to a singular term in WK (ω) which, according to Eq. (48) is given by 
+
+iW SG (ω) = 16 πN f J2qδ(ω), (58) where we have used 1 − J2ΠR(0) χ(0) = 1/2 which holds in the spin glass phase. Substituting this into Eq. (40) gives ΣR
+
+> SG
+
+(ω) =
+
+W2GR(ω), where W = (3 q)1/2 J, in agreement with Eq. (16) of the main text. For N f ≫ 1 and T → 0, we expect fluctuations to be weak and this static contribution to be dominant. Therefore, we neglect the rest of ΣR(ω). This leads to the following semi-circular fermionic spectral density Im GR(ω) = − 12W2
+
+p
+
+4W2 − ω2 (59)  
+
+> B. Spin spectral density in the spin glass phase
+
+To find Im χ(ω), we need to evaluate Im ΠR(ω) in the spin glass phase. We use Eq. (50), but take the limit T → 0, which leads to Im ΠR(ω) = − 12
+
+Z ω
+
+> 0
+
+Im GR(ν) Im GR(ν − ω) dν
+
+2π ≈ − 12
+
+Z ω
+
+> 0
+
+Im GR(ν)2 dν
+
+2π ≈ − ω
+
+4πW2 , (60) giving Im ΠR(ω) = −αω where α = 1/4πW2. The real part of ΠR(0) is known from the Stoner criterion 
+
+J|χ(0) | = 1 → χ(0) = − 1
+
+J → Re ΠR(0) = − 12J . (61) Using Eq. (43) (after taking DR(ω) ≡ χ(ω)) we have 
+
+χ(ω) − 12J2ΠR(ω)
+
+!2
+
+= 2J2ΠR(ω)−2
+
+− J−2. (62) Using ΠR(ω) ≈ − 1/2J − iαω and χ(ω) ≈ − 1/J + δχ (ω), we find (δχ (ω)) 2 ≈ − 4iα
+
+J ω → Im δχ (ω) ≈ − 2α
+
+J
+
+!1/2
+
+sgn( ω) p|ω|. (63) 8 
+
+> VI. NUMERICAL SOLUTION OF SELF-CONSISTENT EQUATIONS
+
+Eqs. (39)-(41), (43)-(45) and (47)-(49) can be solved on a discrete frequency axis, by iteration starting from an initial ansatz for GR(ω) and χ(ω) at high temperatures. The access lower temperatures, one can use the solution for higher temperatures as the starting point of the iteration. Above the spin glass transition, all Keldysh functions, including WK and C, can be obtained from the response functions using FDT. However, in the spin glass phase, only the regular parts of WK and C satisfy FDT. Therefore, one must explicitly use Eqs. (48) and (47) and instead use Eq. (49). Notably, there is not need to explicitly separate the singular part of WK and C in this approach; the zero frequency components of WK and C display linear scaling with the inverse of the discrete frequency spacing ( ∆ω) such that 
+
+C(0) = 4πN f q
+
+∆ω + ˜C(0) , (64) where we have identified ∆ω−1 → δ(0) as the zero frequency value of the Dirac delta functions in the discrete limit. Then, the order parameter can be obtained by solving the equation for di ff erent frequency spacings and obtaining the best linear fit for 
+
+C(0) as a function of ∆ω−1.

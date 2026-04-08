@@ -1,0 +1,229 @@
+Title: Tailoring Corner States and Exceptional Points in Altermagnets
+
+URL Source: https://arxiv.org/pdf/2603.19378v1
+
+Published Time: Mon, 23 Mar 2026 00:05:26 GMT
+
+Number of Pages: 8
+
+Markdown Content:
+# Tailoring Corner States and Exceptional Points in Altermagnets 
+
+Xiao-Ming Zhao, 1, 2, ∗ Cui-Xian Guo, 3, 4 Xin-Ran Ma, 5 Xiao-Ran Wang, 6 and Su-Peng Kou 5, †
+
+> 1
+
+Department of Physics and Institute of Theoretical Physics, University of Science and Technology Beijing, Beijing 100083, China 
+
+> 2
+
+Key Laboratory of Multiscale Spin Physics (Ministry of Education), Beijing Normal University, Beijing 100875, China 
+
+> 3
+
+Beijing Key Laboratory of Optical Detection Technology for Oil and Gas, China University of Petroleum-Beijing, Beijing 102249, China 
+
+> 4
+
+Basic Research Center for Energy Inter disciplinary, College of Science, China University of Petroleum-Beijing, Beijing 102249, China 
+
+> 5
+
+Center for Advanced Quantum Studies, Department of Physics, Beijing Normal University, Beijing 100875, China 
+
+> 6
+
+College of Teacher Education, Hebei Normal University, Shijiazhuang 050024, China 
+
+Altermagnets (AMs) exhibit vanishing net magnetization but strong momentum-dependent spin splitting enforced by crystal symmetry. Here, we explore the non-Hermitian effects in dissipative two-dimensional AMs. We show that symmetry-compliant dissipation naturally induces an imag-inary staggered exchange field, driving a NH topological phase transition absent in conventional antiferromagnets. In the topologically nontrivial phase, hybrid skin-topological modes driven by altermagnetic d-wave anisotropy emerge, as captured by the chiral skin effect framework. In the gapless phase, we elucidate the creation and annihilation dynamics of exceptional points. Cru-cially, we analytically prove via the transfer matrix method that corner states are deterministically controlled by the boundary sublattice termination. Owing to the symmetry constraints and the robustness of chiral states, these findings hold universally across all topological AMs. A general framework is established for controlling topological corner states, offering a new strategy for design-ing magnetic materials with tailored non-Hermitian properties. 
+
+Introduction. —Altermagnetism has recently emerged as a third fundamental magnetic phase, distinct from conventional ferromagnetism and antifer-romagnetism [1–14]. Characterized by vanishing net magnetization yet exhibiting strong, symmetry-enforced momentum-dependent spin splitting, altermagnets (AMs) host nonrelativistic d-wave nodal structures in momentum space originating from crystal-symmetry-mediated exchange coupling rather than relativistic spin-orbit coupling (SOC) [3, 10]. This unique electronic structure gives rise to a range of distinctive phenomena, including the anomalous Hall and Nernst effects [15–19], the magneto-optical Kerr effect [20–22], magnetoresis-tance [23–26], nonrelativistic spin–charge conversion [27–32], and unconventional piezomagnetism [33–36]. These properties not only differentiate AMs from other magnetic phases but also underscore their potential for applications in spintronics [37–41] and nonvolatile memory devices [42, 43]. However, realistic magnetic systems are inevitably cou-pled to their environments, leading to intrinsic dynamical damping, magnon decay, or finite quasiparticle lifetimes, which endow these systems with a natural predisposition toward non-Hermitian (NH) physics [15, 44–47]. While the NH effects have been extensively explored in various platforms, its interplay with the unique symmetry land-scape of AMs remains an open frontier. A fundamen-tal question arises: How does the momentum-dependent   
+
+> ∗xmzhao@ustb.edu.cn
+> †spkou@bnu.edu.cn
+
+spin texture of AMs imprint itself onto dissipative pro-cesses? In conventional antiferromagnets (AFMs), dis-sipation typically results in isotropic broadening, yield-ing only trivial complex energy shifts. In stark contrast, the symmetry-enforced nodal structure of AMs suggests that dissipation must also be highly anisotropic, poten-tially driving novel NH topological phases that have no counterpart in standard magnetic systems. In this work, we address this challenge by investigat-ing the NH topology of two-dimensional (2D) AMs sub-ject to symmetry-compliant dissipation. We derive a mi-croscopic effective model demonstrating that the imag-inary staggered exchange field arises naturally from a dissipation-induced self-energy, which is ‘locked’ to the altermagnetic spin texture. We show that this interplay drives a NH topological phase transition, distinct from the AFM limit. In the topologically nontrivial phase, we report the emergence of hybrid topological-skin ef-fect. These robust boundary modes are driven by the al-termagnetic d-wave anisotropy, which induces direction-dependent decay rates and dissipative refraction at the corners. Furthermore, we elucidate the creation and an-nihilation dynamics of exceptional points (EPs) in the gapless regime. Crucially, employing a transfer matrix approach, we derive an analytical criterion proving that the spatial localization of corner states is deterministi-cally controlled by the boundary sublattice termination, mechanistically driven by the NH chiral skin effect. Our findings establish a general framework for tailoring ro-bust corner states in magnetic materials through bound-ary engineering. 
+
+> arXiv:2603.19378v1 [cond-mat.mes-hall] 19 Mar 2026
+
+2                  
+
+> FIG. 1. Non-Hermitian altermagnet model and band struc-ture. (a) Lattice schematic where staggered dissipation ( ±iγ )is strictly locked to magnetic sublattices A (red) and B (blue) with opposite N´ eel vectors. Altermagnetic anisotropy is en-forced by unequal nearest-neighbor hoppings t1̸=t2.(b) Typical complex band structure showing characteristic spin-splitting, which solely from the anisotropy and vanishes in the isotropic AFM limit ( t1=t2). Parameters used: t1= 0 .5,
+> t2= 2, J= 1, λ= 1 .2, γ= 1.
+
+Model and symmetry analysis. —To investigate the NH effects in dissipative AMs, we consider a 2D dxy 
+
+AM on a lieb-type lattice, as depicted in Fig. 1(a), which comprises two magnetic sublattices and one nonmagnetic ligand site. Rather than introducing non-Hermiticity phenomenologically, we derive our effective model from a microscopic open quantum system [97]. We consider itinerant electrons coupled to the local N´ eel order Sμ
+
+(μ ∈ { A, B }) via sd -hybridization, while simultaneously interacting with a dissipative bath. Integrating out the bath degrees of freedom yields a spin-dependent self-energy correction: Σμ ≈ − iγ (Sμ · σ), (1) where γ characterizes the effective coupling strength to the bath. This relation is pivotal: it demonstrates that the dissipation is not a uniform background but is strictly ‘locked’ to the local magnetic texture. By projecting out the nonmagnetic ligand sites [48– 51], we obtain the effective Hamiltonian for the itinerant electrons : 
+
+H(k) = H0 + HSOC + HAM (2) where H0 = ( h0τ0 + h1τx + h3τz )σ0 describes the hop-ping kinetics with h0(k) = −ta(cos kx + cos ky ), h 1(k) = 
+
+−4t0 cos( kx 
+
+> 2
+
+) cos( ky 
+
+> 2
+
+), h 2(k) = 4 λ sin( kx 
+
+> 2
+
+) sin( ky 
+
+> 2
+
+), h 3(k) = 
+
+−tb(cos kx − cos ky ), with nearest-neighbor hopping t0 =1 between the A and B sublattices, and anisotropic second-nearest-neighbor hoppings t1 = ( ta + tb)/2 and 
+
+t2 = ( ta − tb)/2. HSOC = h2τy σz represents the spin-orbit coupling. Here τ and σ are Pauli matrices in the sublattice and spin spaces, respectively. The hallmark of our model is the complex altermagnetic term: 
+
+HAM = ( J + iγ )τz σz (3) Here, the real part J arises from the conventional sd -exchange interaction, while the imaginary part iγ rep-           
+
+> FIG. 2. Phase diagram induced by the complex exchange field. White regions distinguish the central topological Chern insulator (point M) from the outer trivial phase. Colored regions denote gapless phases with exceptional points. Pa-rameters: t1= 0 .5, t2= 2, λ= 1 .2, γ= 2. This rich topology vanishes completely in the conventional AFM limit, where the entire diagram is trivial.
+
+resents the dissipation-induced lifetime correction. Cru-cially, this NH term is strictly proportional to the stag-gered magnetization operator τz σz . This reflects a ‘lock-ing’ mechanism: since the system–bath coupling is me-diated by the local magnetic moments, the resulting dis-sipation inherits the staggered spatial symmetry of the N´ eel order [97]. The spectral properties and topological features of the system can be systematically elucidated through a symmetry-based analysis. Initially, the Dirac points in 
+
+H0 are protected by mirror symmetries Mx/y , yet the in-troduction of SOC breaks these symmetries by altering the spin texture, thereby opening a band gap and facili-tating band inversion—a crucial step toward the forma-tion of topological boundary states. Meanwhile, the sys-tem maintains a horizontal mirror symmetry Mz (z→− z). This allows the Hamiltonian matrix to be decoupled into two independent blocks, each corresponding to a distinct spin channel. As a result, the full Hamiltonian can then be written as H(k) = [ H↑
+
+> k
+
+, 0; 0 , H ↓
+
+> k
+
+]. The energy spec-trum is 
+
+E± = h0 ±
+
+q
+
+h21 + h22 + [ h3 + ϵ(J + iγ )] 2 (4) with ϵ = ±1 for spin ↑/↓. In the AFM limit ( tb = 0), h3
+
+vanishes, reducing the system to a conventional square-lattice AFM with spin degeneracy. In contrast, a finite 
+
+tb enforces a d-wave modulation, lifting the degeneracy almost universally except along the diagonal kx = ±ky
+
+(line Γ-M in Brillouin zone (BZ)), yielding a dx2−y2 sym-metric Zeeman splitting. A rigorous analytical compari-son between the AM phase and the AFM limit is provided in Supplemental Material Sec. IV. As we demonstrate below, this symmetry-enforced anisotropy is the funda-mental resource that enables both the bulk NH topol-ogy and the direction-dependent decay rates essential for the chiral skin effect. Finally, the combined fourfold rotation symmetry C4z and time-reversal symmetry T
+
+—often termed symmetry-enforced spin-momentum lock-ing—permitting momentum-dependent alternating spin 3                   
+
+> FIG. 3. Energy spectra and boundary modes in topological and gapless phase. (a–c) Results for the gapped topological phase (point M in Fig. 2): (a) Real part of the complex en-ergy spectrum under x, y -PBC, indicating a clear bulk gap. (b) Complex energy spectrum under x-PBC/ y-OBC, where darker color denote in-gap helical edge modes. (c) Spatial distribution of the edge modes corresponding to points E,G,
+> Fand Hin (b). (d–f ) Analogous results for the gapless phase (point N), where each spin sector hosts four EPs. States near points Pand Qin (e) exhibit boundary localization at y= 1, as illustrated in (f). Crucially, these modes are topologically unprotected.
+
+splitting as clearly visible in Fig. 1(b). Crucially, this splitting stems from the collinear magnetic order rather than relativistic SOC. 
+
+NH topological phase transition —The interplay between the altermagnetic anisotropy and the symmetry-compliant dissipation drives a rich topological phase dia-gram, as mapped in Fig. 2. The parameter space is parti-tioned into gapped topological phases (white regions con-taining point M), trivial insulating phases (outer white regions), and gapless phases hosting EPs (colored re-gions), where eigenvalues and eigenstates coalesce [52– 55]. It is essential to highlight the unique role of altermag-netism here. In the AFM limit ( tb = 0), the dispersive mass term h3(k) vanishes, leaving only a momentum-independent effective mass ϵJ + iγ . Consequently, the band inversion required for topological transitions is precluded [97], rendering the system topologically triv-ial regardless of the dissipation strength. Thus, the                  
+
+> FIG. 4. Symmetry-protected evolution of EPs in momentum space with increasing NH strength γ.(a)Continuous trajec-tories of spin-up (red) and spin-down (blue) EPs in the kx–ky
+> plane as a function of γ, their projections onto the basal plane of the basal plane are indicated by pink and green curves. Crucially, the two sets of trajectories are distinct by a π/ 2rotation, directly reflecting the altermagnetic C4zsymmetry. (b)–(e) Snapshots of precise EP positions at γ=3, 3.5, 4, 4.5. Panels (b) and (e) correspond to points A and C in the phase diagram of Fig. 2, respectively. The EP locations correspond to intersections between the light-green horizontal plane and the trajectories in (a). Arrows indicate the direction of EP emergence and annihilation dynamics. Parameters: λ= 1 .2,
+> t1= 0 .5, t2= 2, J= 1.
+
+momentum-dependent spin splitting intrinsic to AMs is not merely a background but the fundamental prerequi-site for the realization of the NH topological phases. To characterize the topology in the NH regime, the Chern number must be formulated within the biorthogo-nal basis to properly account for the non-orthogonality of right ( |uR⟩) and left ( |uL⟩) eigenstates. The spin-resolved Chern numbers are defined as: 
+
+Cσ = i
+
+2π
+
+Z
+
+> BZ
+
+ϵij ⟨∂ki uσL|∂kj uσR⟩d2k, (5) where ϵij is the antisymmetric Levi-Civita tensor ( i, j ∈{x, y }) [56] and summation over repeated indices is im-plied. A non-zero Cσ dictates the emergence of chiral edge states under open boundary conditions (OBC), gov-erned by the NH bulk-boundary correspondence. Within the topological phase (e.g., at Point M), the real part of the spectrum exhibits a clear bulk gap, as shown in Fig. 3(a). Under strip geometry ( x-PBC, y-OBC), gapless chiral boundary modes emerge within the gap. These modes are spatially localized at the edges, as visualized by the Inverse Participation Ratio (IPR) in Fig. 3(b), defined as IPR( kx) = P 
+
+> y
+
+|uR|4/(P 
+
+> y
+
+|uR|2)2.While darker shades in Fig. 3(b) indicate strong local-ization, the wave-function profiles in Fig. 3(c) explicitly confirm that these states are spatially confined to the system ends. In the gapless regions (e.g., Point N), the interplay be-tween the dispersive altermagnetic term h3(k) and dissi-pation iγ generates EPs satisfying the coalescence condi-41 80 nx                     
+
+> 180
+> ny
+> spin-
+> spin-
+> -10 10 Re(E)
+> -1 1Im(E)  M1 P1
+> 00.01
+> 180 nx
+> 180
+> ny
+> spin-
+> spin-
+> -10 10 Re(E)
+> -2 2Im(E)
+> M2
+> P2
+> 00.01
+> 180 nx
+> 180
+> ny
+> spin-
+> spin-
+> -10 10 Re(E)
+> -2 2Im(E)  M3
+> P3
+> 00.1
+> 180 nx
+> 180
+> ny
+> spin-
+> spin-
+> -10 10 Re(E)
+> -2 2Im(E)  M4
+> P4
+> 00.1
+> 180 nx
+> 180
+> ny
+> spin-
+> spin-
+> -10 10 Re(E)
+> -2 2Im(E)  M5
+> P5
+> 00.1 IPR IPR IPR IPR IPR
+> (a) (b) (c) (d) (e) (f) (g) (h) (i) (j)
+
+FIG. 5. Deterministic control of hybrid skin-topological corner modes via edge terminations. (a) Schematic showing helical edge states on edges I–IV. (b–e) Four distinct edge configurations (BBBB, BABA, ABAB, AABB) defined by the outermost sublattice (red A/blue B), illustrating the direction-dependent effective dissipation with γ1 ≃ 0.4γσ z and γ2 ≃ 0.7γσ z . (f–j) Spatial profiles under x, y -OBC; insets show IPR-colored spectra. (f) The Hermitian limit ( γ = 0), exhibiting uniform edge states that are independent of boundary configuration. (g–j) The non-Hermitian case ( γ = 2, point M in Fig. 2(b)). The corner localization shifts deterministically due to altermagnetic anisotropy-induced dissipative potentials. Crucially, this effect vanishes completely in the conventional AFM limit ( tb = 0). Parameters: λ = 1 .2, J = 1. 
+
+tions 
+
+h3 + ϵJ = 0 , h21 + h22 = γ2. (6) Furthermore, the emergence of these robust EPs relies fundamentally on the altermagnetic symmetry; In the isotropic AFM limit, the requisite momentum-dependent mass term vanishes, strictly precluding the formation of EPs [97]. We trace their dynamic evolution along the path A →B→C in Fig. 2: initially, eight EPs emerge per spin sector, which subsequently annihilate in pairs upon increasing γ, as detailed in Fig. 4. This evolution is strictly constrained by symmetry, with C4z dictating a 
+
+π/ 2 rotation between spin-↑ and spin-↓ EP distributions. Notably, while boundary states still form in this regime [Fig. 3(e,f)], they lack topological protection, contrasting sharply with the robust chiral corner modes observed in the gapped phase. 
+
+Hybrid skin-topological effect —Driven by the al-termagnetic crystal symmetry, the spatial localization of chiral boundary modes manifests as a unique boundary phenomenon, while the bulk states remain extended. We identify this as the hybrid skin-topological effect [57–87], characterized by corner modes that scale linearly with system size [ O(L)] (see Fig. 3(b)). This scaling behav-ior fundamentally distinguishes them from conventional second-order topological corner modes [ O(1)] and first-order NH skin modes [ O(L2)], representing a distinct interplay between topological protection and NH local-ization [88–93]. A distinct feature of our approach is the derivation of an exact analytical solution for the NH edge spectra, a capability often absent in standard effective Hamiltonian methods. Using the transfer-matrix method [94], we ob-tain the complex dispersion relation [97]: 
+
+Eedge (ki) = α(ki) + iγβ (ki), (7) where the real part α(k) recovers the Hermitian edge dispersion, while the imaginary part iγβ (k) acts as an effective NH potential. This analytical form allows us to rigorously apply the chiral skin effect (CSE) theory to predict corner localization [95]. According to the CSE framework, the accumulation of boundary states is de-termined by the interplay between the group velocity 
+
+v = ∂kα(k) and the spatial gradient of the global dis-sipation potential Γ g (r) (see section II.B of Ref. [97]). Specifically, states localize at a position r0 (e.g., a cor-ner) if and only if the potential creates a ‘trap’ satisfying the criterion: Γg (r0 − 0+) > 0, Γg (r0 + 0 +) < 0. (8) This condition (derived as Eq. (S29) in Ref. [97]) corre-sponds to a domain wall where the effective dissipation shifts from gain-like to loss-like along the direction of chi-ral propagation. Applying this criterion explains the deterministic con-trol observed in Fig. 5. Even with fixed bulk parameters, the edge termination (A or B sublattice) modulates the potential Γ( r) [97]. For instance, in the ‘BBBB’ con-figuration [Fig. 5(b)], the anisotropy-induced mismatch 
+
+|¯Γ1 − ¯Γ2| creates dissipative refraction points, trapping states at the Bottom-Right and Top-Left corners. Con-versely, alternating configurations like ‘ABAB’ [Fig. 5(d)] shift these domain walls, relocating the corner modes. 5This behavior challenges previous theoretical frame-works relying on spectral point gaps [96] or non-zero winding numbers. As evidenced in Fig. 5, corner lo-calization varies distinctly with sublattice termination even when the winding numbers vanish [( νx, ν y ) = (0 , 0)]. This confirms that the observed corner modes are not ar-tifacts of isolated boundary sites but originate from the global chiral skin effect, a mechanism that intrinsically transcends local boundary descriptions [83]. 
+
+Conclusion. —In summary, we have established amicroscopic framework for NH altermagnetism, demon-strating that symmetry-compliant dissipation inherently drives a topological phase transition distinct from con-ventional antiferromagnetism. By deriving the effective model from an open quantum system, we showed that the dissipation is ‘locked’ to the magnetic texture. This interplay gives rise to two distinctive phenomena: the emergence of hybrid skin-topological corner modes at the boundaries, and the symmetry-protected creation and annihilation dynamics of EPs in the bulk. These phenomena serve as unique fingerprints of NH altermagnetism, rooted in the symmetry-enforced d-wave anisotropy that is strictly absent in conventional AFMs. By inducing direction-dependent dissipative potentials, this anisotropy—combined with staggered boundary ter-minations—deterministically governs the spatial localiza-tion of corner modes. Our results identify both the corner skin effect and the unique EP dynamics as defining fingerprints of NH altermagnetism, strictly absent in conventional AFMs. This work establishes a general roadmap for engineer-ing robust corner states in synthetic platforms, such as superconducting circuits, cold-atom lattices, and acous-tic metamaterials, opening new avenues for exploring dissipation-tailored spintronics. 
+
+DATA AVAILABILITY 
+
+The data and source code that support the findings of this study are openly available in the GitHub repository at Ref. [98]. 
+
+ACKNOWLEDGMENTS 
+
+This work is supported by Guangdong Basic and Applied Basic Research Foundation (Grant No. 2023A1515110081), Open Fund of Key Laboratory of Multiscale Spin Physics (Ministry of Education), Beijing Normal University (Grant No. SPIN2024K01) and Fun-damental Research Funds for the Central Universities, China (Grant No. FRF-TP-22-098A1), National Key R&D Program of China (Grant No. 2023YFA1406704), National Natural ScienceFoundation of China (Grant Nos. 12174030,12405030). 
+
+[1] L. ˇSmejkal, R. Gonz´ alez-Hern´ andez, T. Jungwirth, and J. Sinova, Crystal time-reversal symmetry breaking and spontaneous Hall effect in collinear antiferromagnets, Sci. Adv. 6, eaaz8809 (2020). [2] L. ˇSmejkal, J. Sinova, and T. Jungwirth, Beyond Con-ventional Ferromagnetism and Antiferromagnetism: APhase with Nonrelativistic Spin Splitting, Phys. Rev. X 12, 031042 (2022). [3] L. ˇSmejkal, J. Sinova, and T. Jungwirth, Emerging re-search landscape of altermagnetism, Phys. Rev. X 12, 040501 (2022). [4] S. Hayami, Yu. Yanagi, and H. Kusunose, Momentumde-pendent spin splitting by collinear antiferromagnetic or-dering, J. Phys. Soc. Jpn. 88, 123702 (2019). [5] K. H. Ahn, A. Hariki, K. W. Lee, and J. Kuneˇ s, Antifer-romagnetism in RuO 2 as d-wave Pomeranchuk instabil-ity, Phys. Rev. B 99, 184432 (2019). [6] L. D. Yuan, Zh. Wang, J. W. Luo, E. I. Rashba, and A. Zunger, Giant momentum-dependent spin splitting in centrosymmetric low-z antiferromagnets, Phys. Rev. B 102, 014422 (2020). [7] S. Hayami, Yu. Yanagi, and H. Kusunose, Bottom-up de-sign of spin-split and reshaped electronic band structures in antiferromagnets without spin-orbit coupling: Proce-dure on the basis of augmented multipoles, Phys. Rev. B 102, 144441 (2020). [8] I. Turek, Altermagnetism and magnetic groups with pseudoscalar electron spin, Phys. Rev. B 106, 094432 (2022). [9] S. Bhowal and N. A. Spaldin, Magnetic octupoles as the order parameter for unconventional antiferromagnetism, Phys. Rev. X 14, 011019 (2024). [10] Ya. Guo, H. Liu, O. Janson, I. C. Fulga, J. van den Brink, and J. I. Facio, Spin-split collinear antiferromag-nets: A large-scale ab-initio study, Mater. Today Phys. 32, 100991 (2023) [11] I. I. Mazin, Altermagnetism in MnTe: Origin, predicted manifestations, and routes to detwinning, Phys. Rev. B 107, L100418 (2023). [12] T. Aoyama and K. Ohgushi, Piezomagnetic properties in altermagnetic MnTe, Phys. Rev. Mater. 8, L041402 (2024) [13] D. Zhu, Zh.-Ya. Zhuang, Zh. Wu, and Zh. Yan, Topolog-icalsuperconductivity in two-dimensional altermagnetic metals, Phys. Rev. B 108, 184505 (2023) [14] Z. F. Gao, S. Qu, B. Zeng, J. R. Wen, H. Sun, P. Guo, and Z. Y Lu, AI-accelerated discovery of altermagnetic materials, Natl. Sci. Rev, 12, 4, nwaf066 (2025) [15] L. Han, X. Fu, R. Peng, X. Cheng, J. Dai, L. Liu, Y. Li, Y. Zhang, W. Zhu, H. Bai, et al., Electrical 180 ° switch-ing of N´ eel vector in spin-splitting antiferromagnet. Sci. Adv. 10, eadn0479 (2024). [16] M. Chilcote, A. R. Mazza, Q. Lu, I. Gray, Q. Tian, Q. Deng, D. Moseley, A.-H. Chen, J. Lapano, J. S. Gard-ner, et al., Stoichiometry-induced ferromagnetism in al-termagnetic candidate MnTe. Adv. Funct. Mater. 34, 6
+
+2405829 (2024). [17] R. D. Gonzalez Betancourt, J. Zub´ aˇ c, R. Gonzalez-Hernandez, K. Geishendorf, Z. ˇSob´ aˇ n, G. Springholz, K. Olejn´ ık, L. ˇSmejkal, J. Sinova, T. Jungwirth, et al., Spon-taneous anomalous Hall effect arising from an unconven-tional compensated magnetic phase in a semiconductor. Phys. Rev. Lett. 130, 036702 (2023). [18] M. Wang, K. Tanaka, S. Sakai, Z. Wang, K. Deng, Y. Lyu, C. Li, D. Tian, S. Shen, N. Ogawa, et al., Emergent zero-field anomalous Hall effect in a reconstructed rutile antiferromagnetic metal. Nat. Commun. 14, 8240 (2023). [19] T. Sato, S.Haddad, I. C. Fulga, F. F. Assaad and J. Van Den Brink, Altermagnetic anomalous Hall effect emerg-ing from electronic correlations. Phys. Rev. Lett. 133, 086503 (2024). [20] J. Hugo Dil, Spin- and angle-resolved photoemission on topological materials. Electron. Struct. 1, 023001 (2019). [21] K. Samanta, M. Leˇ zai´ c, M. Merte, F. Freimuth, S. Bl¨ ugel, and Y. Mokrousov, Crystal Hall and crystal magneto-optical effect in thin films of SrRuO 3.J. Appl. Phys. 127, 213904 (2020). [22] X. Zhou, W. Feng, X. Yang, G. Y. Guo and Y. Yao, Crystal chirality magneto-optical effects in collinear an-tiferromagnets. Phys. Rev. B 104, 024401 (2021) [23] D. F. Shao, S. H. Zhang, M. Li, C. B. Eom and E. Y. Tsymbal, Spin-neutral currents for spintronics. Nat. Commun. 12, 7061 (2021). [24] D. F. Shao and E. Y. symbal, Antiferromagnetic tunnel junctions for spintronics. npj Spintron. 2, 13 (2024). [25] Y. Y. Jiang, Z. A. Wang, K. Samanta, S.-H. Zhang, R. C. Xiao, W. J. Lu, Y. P. Sun, E. Y. Tsymbal, and D. F. Shao, Prediction of giant tunneling magnetoresistance in 
+
+RuO 2/T iO 2/RuO 2(110) antiferromagnetic tunnel junc-tions. Phys. Rev. B 108, 174439 (2023). [26] K. Samanta, Y. Y. Jiang, T. R. Paudel, D. F. Shao and E. Y. symbal, Tunneling magnetoresistance in magnetic tunnel junctions with a single ferromagnetic electrode. Phys. Rev. B 109, 174407 (2024). [27] M. Naka, S. Hayami, H. Kusunose, Y. Yanagi, Y. Mo-tome, and H. Seo, Spin current generation in organic an-tiferromagnets. Nat. Commun. 10, 4305 (2019). [28] R. Gonz´ alez-Hern´ andez, L. ˇSmejkal, K. V´ yborn´ y, Y. Ya-hagi, J. Sinova, T. Jungwirth, and J. ˇZelezn´ y, Efficient electrical spin splitter based on nonrelativistic collinear antiferromagnetism. Phys. Rev. Lett. 126, 127701 (2021). [29] A. Bose, N. J. Schreiber, R. Jain, D.-F. Shao, H. P. Nair, J. Sun, X. S. Zhang, D. A. Muller, E. Y. Tsymbal, D. G. Schlom, et al., Tilted spin current generated by the collinear antiferromagnet ruthenium dioxide. Nat. Elec-tron. 5, 267–274 (2022). [30] S. Karube, T. Tanaka, D. Sugawara, N. Kadoguchi, M. Kohda, and J. Nitta, Observation of spin-splitter torque in collinear antiferromagnetic RuO 2. Phys. Rev. Lett. 129, 137201 (2022). [31] Y. Guo, J. Zhang, Z. Zhu, Y.-Y. Jiang, L. Jiang, C. Wu, J. Dong, X. Xu, W. He, B. He, et al., Direct and inverse spin splitting effects in altermagnetic RuO2. Adv. Sci. 11, 2400967 (2024). [32] C. Te. Liao, Y. C. Wang, Y. C. Tien, S. Y. Huang and D. Qu, Separation of inverse altermagnetic spin-splitting effect from inverse spin Hall effect in RuO 2. Phys. Rev. Lett. 133, 056701 (2024). [33] T. Aoyama and K. Ohgushi, Piezomagnetic properties in altermagnetic MnTe, Phys. Rev. Mater. 8, L041402 (2024). [34] Y. Wu, L. Deng, X. Yin, J. Tong, F. Tian, and X. Zhang, Valley-related multipiezo effect and noncollinear spin cur-rent in an altermagnet F e 2Se 2O monolayer. Nano Lett. 24, 10534–10539 (2024). [35] Y. Zhu, T. Chen, Y. Li, L. Qiao, X. Ma, T. Hu, H. Gao, and W. Ren, Multipiezo effect in altermagnetic V2SeT eO 
+
+monolayer. Nano Lett. 24, 472–478 (2024). [36] N. Devaraj, A. Bose and A. Narayan, Interplay of alter-magnetism and pressure in hexagonal and orthorhombic MnTe. Phys. Rev. Mater. 8, 104407 (2024). [37] H. Bai, Y. C. Zhang, Y. J. Zhou, P. Chen, C. H. Wan, L. Han, W. X. Zhu, S. X. Liang, Y. C. Su, X. F. Han, F. Pan, and C. Song, Efficient spin-to-charge conversion via altermagnetic spin splitting effect in antiferromagnet 
+
+RuO 2, Phys. Rev. Lett. 130, 216701 (2023). [38] R. W. Zhang, Ch. Cui, R. Li, J. Duan, L. Li, Z. M. Yu, and Y. Yao, Predictable gate-field control of spin in altermagnets with spin-layer coupling, Phys. Rev. Lett. 133, 056401 (2024). [39] B. Chi, L. Jiang, Yu Zhu, G. Yu, C. Wan, J. Zhang, and X. Han, Crystal-facet-oriented altermagnets for detect-ing ferromagnetic and antiferromagnetic states by giant tunneling magnetoresistance effect, Phys. Rev. Appl. 21, 034038 (2023). [40] Ch. Sun and J. Linder, Spin pumping from a ferromag-netic insulator into an altermagnet, Phys. Rev. B 108, L140408 (2023). [41] E. W. Hodt and J. Linder, Spin pumping in an alter-magnet/normal metal bilayer, Phys. Rev. B 109, 174438 (2024). [42] V. Baltz, A. Manchon, M. Tsoi, T. Moriyama, T. Ono, and Y. Tserkovnyak, Rev. Mod. Phys. 90, 015005 (2018). [43] T. Jungwirth, X. Marti, P. Wadley, and J. Wunderlich, Nat. Nanotechnol. 11, 231 (2016). [44] C. Xiao, B. Xiong, and Q. Niu, Electric driving of mag-netization dynamics in a hybrid insulator, Phys. Rev. B 104, 064433 (2021). [45] J. F. Scott, Data storage. Multiferroic memories, Nat. Mater. 6, 256 (2007). [46] E. Y. Tsymbal, Spintronics: Electric toggling of magnets, Nat. Mater. 11, 12–13 (2011). [47] K. L. Wang, J. G. Alzate, and P. Khalili Amiri, Low-power non-volatile spintronic memory: STT-RAM and beyond, J. Phys. D: Appl. Phys. 46, 074003 (2013). [48] D. S. Antonenko, R. M. Fernandes, and J. W. F. Vender-bos, Mirror Chern Bands and Weyl Nodal Loops in Al-termagnets, Phys. Rev. Lett. 134, 096703 (2025). [49] B. Brekke, A. Brataas, and A. Sudbø, Two-dimensional altermagnets: A minimal microscopic model, Phys. Rev. B 108, 224421 (2023). [50] H. Schiff, A. Corticelli, A. Guerreiro, J. Romh´ anyi, and P. McClarty, The spin point groups and their represen-tations, SciPost Phys. 18, 109 (2025) [51] T. A. Maier and S. Okamoto, Weak-coupling theory of neutron scattering as a probe of altermagnetism, Phys. Rev. B 108, L100402 (2023). [52] P. A. McClarty and J. G. Rau, Non-Hermitian topol-ogy of spontaneous magnon decay, Phys. Rev. B 100, 100405(R) (2019). [53] T. Yoshida, R. Peters, and N. Kawakami, Non-Hermitian perspective of the band structure in heavy-fermion sys-tems, Phys. Rev. B 98, 035141 (2018). 7
+
+[54] K. Monkman and M. Berciu, Limits of the Lind-blad and non-Hermitian description of open systems, arXiv:2411.14599 (2024). [55] R. Okugawa and T. Yokoyama, Topological excep-tional surfaces in non-Hermitian systems with parity-time and parity-particle-hole symmetries, Phys. Rev. B 99, 041202(R) (2019). [56] T. oshida, K. Kudo, and Y. Hatsugai, Non-Hermitian fractional quantum Hall states, Sci. Rep. 9:16895 (2019). [57] T. Liu, Y. R. Zhang, Q. Ai, Z. Gong, K. Kawabata, M. Ueda, and F. Nori, Second-order topological phases in non-Hermitian systems, Phys. Rev. Lett. 122, 076801 (2019). [58] T. E. Lee, Anomalous edge state in a non-Hermitian lat-tice, Phys. Rev. Lett. 116, 133903 (2016). [59] Y. Xiong, Why does bulk boundary correspondence fail in some non-Hermitian topological models, J. Phys. Com-mun. 2, 035043 (2018). [60] V. M. Martinez Alvarez, J. E. Barrios Vargas, and L. E. F. FoaTorres, Non-Hermitian robust edge states in one dimension: anomalous localization and eigenspace condensation at exceptional points, Phys. Rev. B 97, 121401(R) (2018). [61] A. Ghatak and T. Das, New topological invariants in nonHermitian systems, J. Phys.: Condens. Matter 31, 263001 (2019). [62] S. Yao and Z. Wang, Edge states and topological in-variants of non-Hermitian systems, Phys. Rev. Lett. 121, 086803 (2018). [63] C. H. Lee and R. Thomale, Anatomy of skin modes and topology in non-Hermitian systems, Phys. Rev. B 99, 201103(R)(2019). [64] K. Yokomizo and S. Murakami, Non-Bloch band theory of nonHermitian systems, Phys. Rev. Lett. 123, 066404 (2019). [65] C. X. Guo, C. H. Liu, X. M. Zhao, Y. Liu, and S. Chen, Exact solution of non-Hermitian systems with general-ized boundary conditions: Size-dependent boundary ef-fect and fragility of the skin effect, Phys. Rev. Lett. 127, 116801 (2021). [66] F. K. Kunst, E. Edvardsson, J. C. Budich, and E. J. Bergholtz, Biorthogonal bulk-boundary correspondence in non-Hermitian systems, Phys. Rev. Lett. 121, 026808 (2018). [67] C. Yin, H. Jiang, L. Li, R. L¨ u, and S. Chen, Geomet-rical meaning of winding number and its characteriza-tion of topological phases in one-dimensional chiral non-Hermitian systems, Phys. Rev. A 97, 052115 (2018). [68] F. Song, S. Yao, and Z. Wang, Non-Hermitian skin effect and chiral damping in open quantum systems, Phys. Rev. Lett. 123, 170401 (2019). [69] S. Longhi, Probing non-Hermitian skin effect and non-Bloch phase transitions, Phys. Rev. Res. 1, 023013 (2019). [70] D. S. Borgnia, A. J. Kruchkov, and R. J. Slager, Non-Hermitian boundary modes and topology, Phys. Rev. Lett. 124, 056802 (2020). [71] Y. Yi and Z. Yang, Non-Hermitian skin modes induced by on-site dissipations and chiral tunneling effect, Phys. Rev. Lett. 125, 186802 (2020). [72] N. Okuma and M. Sato, Non-Hermitian skin effects in hermitian correlated or disordered systems: Quantities sensitive or insensitive to boundary effects and pseudo-quantum-number, Phys. Rev. Lett. 126, 176601 (2021). [73] F. Roccati, Non-Hermitian skin effect as an impurity problem, Phys. Rev. A 104, 022215 (2021). [74] H. Zhang, T. Chen, L. Li, C. H. Lee, and X. Zhang, Electrical circuit realization of topological switching for the non-Hermitian skin effect, Phys. Rev. B 107, 085426 (2023). [75] R. Lin, Tommy Tai, L. Li and C. H. Lee, Topological nonHermitian skin effect, Front. Phys. 18, 53605 (2023). [76] K. Yokomizo and S. Murakami, Non-Bloch bands in twodimensional non-Hermitian systems, Phys. Rev. B 107, 195112 (2023). [77] Z. Ou, Y. Wang, and L. Li, Non-Hermitian boundary spectral winding, Phys. Rev. B 107, L161404 (2023). [78] Z. Zhang, M. Rosendo L´ opez, Y. Cheng, X. Liu, and J. Christensen, Non-Hermitian sonic second-order topolog-ical insulator, Phys. Rev. Lett. 122, 195501 (2019). [79] E. Edvardsson, F. K. Kunst, and E. J. Bergholtz, Non-Hermitian extensions of higher-order topological phases and their biorthogonal bulk-boundary correspondence, Phys. Rev. B 99, 081302(R) (2019). [80] K. Kawabata, M. Sato, and K. Shiozaki, Higher-order nonHermitian skin effect, Phys. Rev. B 102, 205118 (2020). [81] X. Zhang, Y. Tian, J.-H. Jiang, M.-H. Lu, and Y.-F. Chen, Observation of higher-order non-Hermitian skin effect, Nat. Commun. 12, 5377 (2021). [82] L. Li, C. H. Lee, and J. Gong, Topological switch for nonHermitian skin effect in cold-atom systems with loss, Phys. Rev. Lett. 124, 250402 (2020). [83] Y. H. Li, C. Liang, C. Wang, C. Lu, and Y. C. Liu, Gain-Loss-Induced Hybrid Skin-Topological Effect, Phys. Rev. Lett. 128, 223903 (2022). [84] R. Okugawa, R. Takahashi, and K. Yokomizo, Second-order topological non-Hermitian skin effects, Phys. Rev. B 102, 241202(R) (2020). [85] C. H. Lee, L. Li, and J. Gong, Hybrid higher-order skin-topological modes in nonreciprocal systems, Phys. Rev. Lett. 123, 016805 (2019). [86] Y. Fu and S. Wan, Hybrid skin-topological effect in non-Hermitian systems, Phys. Rev. B 106, 075105 (2022). [87] L. Li, C. H. Lee, S. Mu, and J. Gong, Critical non-Hermitian skin effect, Nat. Commun. 11, 5491 (2020). [88] S. Yao, F. Song, and Z. Wang, Non-Hermitian chern bands, Phys. Rev. Lett. 121, 136802 (2018). [89] K. Kawabata, K. Shiozaki, and M. Ueda, Anomalous helical edge states in a non-Hermitian chern insulator, Phys. Rev. B 98, 165148 (2018). [90] Y. Chen and H. Zhai, Hall conductance of a non-Hermitian Chern insulator, Phys. Rev. B 98, 245130 (2018). [91] M. R. Hirsbrunner, T. M. Philip, and M. J. Gilbert, Topology and observables of the non-Hermitian Chern insulator, Phys. Rev. B 100, 081104(R) (2019). [92] H. C. Wu, L. Jin, and Z. Song, Inversion symmetric non-Hermitian Chern insulator, Phys. Rev. B 100, 155117 (2019). [93] Y. Xiao and C. T. Chan, Topology in non-Hermitian Chern insulators with skin effect, Phys. Rev. B 105, 075128 (2022). [94] T. Mizoguchi and T. Koma, Bulk-edge correspondence in two-dimensional topological semimetals: A transfer matrix study of antichiral edge modes, Phys. Rev. B 103, 195310 (2021). 8
+
+[95] X. R. Ma, K. Cao, X. R. Wang, Z. Wei, Q. Du, and S. P. Kou, Non-Hermitian chiral skin effect, Phys. Rev. Research. 6. 013213 (2024). [96] G. G. Liu, S. Mandal, P. Zhou, X. Xi, R. Banerjee, Y. H. Hu, M. Wei, M. Wang, Q. Wang, Z. Gao, H. Chen, Y. Yang, Y. Chong, and B. Zhang, Localization of Chi-ral Edge States by the Non-Hermitian Skin Effect, Phys. Rev. Lett. 132. 113802 (2024). [97] See Supplemental Material at for detailed derivations of the microscopic model, the analytical transfer-matrix cal-culations, the corner state analysis, and the comparison with the antiferromagnetic limit. [98] X. M. Zhao, C. X. Guo, X. R. Ma, X. R. Wang, and S. P. Kou, Data and source code for ”Tailoring corner states and exceptional points in altermagnets”, GitHub repository, https://github.com/ZXM522/AM (2026).

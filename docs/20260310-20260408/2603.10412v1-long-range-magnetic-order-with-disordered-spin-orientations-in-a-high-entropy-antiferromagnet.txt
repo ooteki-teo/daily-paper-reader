@@ -1,0 +1,950 @@
+Title: Long-range magnetic order with disordered spin orientations in a high-entropy antiferromagnet
+
+URL Source: https://arxiv.org/pdf/2603.10412v1
+
+Published Time: Thu, 12 Mar 2026 00:36:40 GMT
+
+Number of Pages: 31
+
+Markdown Content:
+## Long-range magnetic order with disordered spin orientations in a high-entropy antiferromagnet 
+
+Yao Shen ,1, 2, ∗ Guangkai Zhang, 1, 3 Qinghua Zhang, 1 Xuejuan Gui, 4, 5 Yu Zhang, 1 Heemin Lee, 6 Cheng-Tai Kuo ,6 Jun-Sik Lee ,6 Ronny Sutarto ,7 Feng Ye ,8 Zhao Pan, 1
+
+Xiaomei Qin, 3 Jinchen Wang ,4, 5, 9, 10, † Tianping Ying ,1, ‡ and Youwen Long 1, 2 
+
+> 1
+
+Beijing National Laboratory for Condensed Matter Physics, Institute of Physics, Chinese Academy of Sciences, Beijing 100190, China 
+
+> 2
+
+School of Physical Sciences, University of Chinese Academy of Sciences, Beijing 100049, China 
+
+> 3
+
+Department of Physics, Shanghai Normal University, Shanghai 200234, China 
+
+> 4
+
+Laboratory for Neutron Scattering, School of Physics, Renmin University of China, Beijing 100872, China 
+
+> 5
+
+Key Laboratory of Quantum State Construction and Manipulation (Ministry of Education), Renmin University of China, Beijing, 100872, China 
+
+> 6
+
+Stanford Synchrotron Radiation Lightsource, SLAC National Accelerator Laboratory, Menlo Park, California 94025, USA 
+
+> 7
+
+Canadian Light Source, Saskatoon, Saskatchewan S7N 2V3, Canada 
+
+> 8
+
+Neutron Scattering Division, Oak Ridge National Laboratory, Oak Ridge, Tennessee 37831, USA 
+
+> 9
+
+PSI Center for Neutron and Muon Sciences, 5232 Villigen PSI, Switzerland 
+
+> 10
+
+Laboratory for Quantum Magnetism, Institute of Physics, ´Ecole Polytechnique F´ ed´ erale de Lausanne (EPFL), 1015 Lausanne, Switzerland 
+
+Disorder in magnetic systems typically suppresses long-range order, promoting short-range states such as spin glasses and magnetic clusters. This is particularly prominent in high-entropy materi-als, characterized by the random distributions of local magnetic entities and exchange interactions. However, in rare exceptions, long-range magnetic order can persist in high-entropy systems, while the microscopic characters and underlying mechanisms remain elusive, especially the magnetic be-haviors of individual elements. Here, combining neutron diffraction and resonant soft x-ray scatter-ing, we have conducted an element-specific investigation into the magnetic order of a high-entropy  
+
+> ∗
+
+yshen@iphy.ac.cn  
+
+> †
+
+jcwang phys@ruc.edu.cn  
+
+> ‡
+
+ying@iphy.ac.cn 
+
+> arXiv:2603.10412v1 [cond-mat.str-el] 11 Mar 2026
+
+2
+
+honeycomb-lattice van der Waals material (Mn 1/4Fe 1/4Co 1/4Ni 1/4)PS 3. Despite significant atomic dis-order, long-range zigzag antiferromagnetic order is observed below 72 K, with all four transition-metal elements participating in a unified phase transition. However, the spin orientations of various elements are distinct, attributed to the competition between single-ion anisotropies and exchange interactions. Our findings showcase a novel form of long-range magnetic order with disordered spin orientations, which is synergically stabilized by distinct magnetic elements in a high entropy magnet, offering a new paradigm for understanding complex magnetic systems. 
+
+> INTRODUCTION
+
+Conventionally, magnetism is characterized by order parameters indicative of symmetry breaking and features a repeating pattern of magnetic moments. Disorder can be introduced through chemical substitution, which is commonly treated as local perturbations when its effects are weak. However, when disorder becomes significant — such as when dopant concentrations approach those of the host material — the periodic spin arrangement can be entirely disrupted, leading to dramatically weakened magnetic correlations. In classical magnetic systems, such disordered states with short-range order are generally understood within the framework of spin glass theory [1, 2]. Such is the case for the magnetism in high-entropy (HE) materials — such as alloys [3–7], ceramics [8], oxides [9, 10], and van der Waals compounds [11–13]. These materials feature multiple principal elements randomly distributed at comparable concentrations, yielding exceptionally high configurational entropy. They can exhibit highly tunable properties, novel topological electronic structures [14], and outstanding performance in applications [15–17]. Regarding magnetic properties, the substantial disorder arising from randomly distributed magnetic moments and exchange interactions is expected to suppress long-range magnetic order. Indeed, glass-like magnetic behaviors are commonly observed in HE magnets [18, 19], where spin moments are frozen in random directions, pinned by local lattice distortions. Yet, in some rare cases, long-range magnetic order can persist [20–23], presenting a fundamental paradox given the inherent disorder of the system, and the nature of such ordering remains unresolved. For instance, it is often presumed that once magnetic order is established in HE magnets, it uniformly affects all constituent elements with identical transition temperatures and spin orientations, even though each element, with its distinct orbital filling, could contribute its unique magnetic characteristics such as spin magnitudes and single-ion anisotropies. In fact, the magnetic behaviors of individual magnetic elements have never been thoroughly explored in HE materials. The lack of HE single crystals poses an additional barrier for detailed studies of their magnetic properties. 3In this regard, HEPS 3, short for (Mn 1/4Fe 1/4Co 1/4Ni 1/4)PS 3, emerges as a pivotal candidate to address this gap [11]. As a newly discovered HE van der Waals material, it features a slightly distorted two-dimensional (2D) honeycomb lattice with the monoclinic space group C2/m and lattice constants of a = 5 .9321 ˚ A, b = 10 .2737 ˚ A, c = 6 .7061 ˚ A, α =
+
+γ = 90 ◦ and β ≈ 107 ◦ (Supplementary Note 1), belonging to the TMPX 3 family (TM: transition metal, X: S/Se) [24– 30]. For the non-HE individual TMPX 3 members, as shown in Fig. 1a–d, MnPS 3 exhibits N´ eel-type magnetic order with a propagation vector k = (0 , 0, 0), while FePS 3, CoPS 3, and NiPS 3 display zigzag antiferromagnetic (AFM) order with a propagation vector k = (0 , 1, L ) where L varies with the specific TM element (Table I). The magnetic moments in these materials are confined to the ac ∗ plane (Fig. 1e), and their precise orientations are also element-dependent (Table I). Here, a, b, and c represent the real-space vectors, while a∗ b∗, and c∗ denote reciprocal vectors. Note that 
+
+c∗ is orthogonal to a, and b∗ is parallel to b. For HEPS 3, which incorporates four different TM elements in equal concentrations, long-range magnetic order is hinted by magnetic susceptibility measurements at low temperatures [11], presenting a unique instance of magnetic order within a highly disordered system. Furthermore, the availability of HEPS 3 single crystals enables detailed exploration of its magnetic properties. Here, combining neutron diffraction and resonant soft x-ray scattering (RSXS) techniques, we have comprehensively investigated the magnetic ordering in HEPS 3 single crystals. Neutron diffraction is a powerful tool for detecting various forms of magnetic order, including long-range and short-range types, with greater access to reciprocal space. In contrast, resonant soft x-ray scattering (RSXS), despite its limited reciprocal space coverage, achieves element-specific resolution by tuning the incident photon energy to the resonant edge of the target element. Our neutron diffraction experiments reveal the presence of three-dimensional (3D) long-range magnetic order, with a N´ eel temperature of 
+
+TN ≈ 72 K, coexisting with 2D magnetic signals. RSXS measurements further confirm that all four TM elements participate in the magnetic ordering through a unified phase transition. The resulting magnetic structure features element-dependent spin orientations, attributed to the competition between single-ion anisotropies and exchange interactions. 
+
+> RESULTS Sample characterization
+
+First, we verify the random distribution of TM elements in HEPS 3 through atomic-resolved elemental mapping using scanning transmission electron microscopy (STEM) on an exfoliated HEPS 3 thin flake. The sample, with a 4thickness of dozens of unit cells, enables the STEM mapping to be interpreted as spatial averages across multiple stacked honeycomb layers. As shown in Fig. 1f, the images reveal a homogeneous intensity distribution for each element, indicating that all elements are randomly distributed throughout the lattice. While a high-entropy scenario is well established, an anomaly indicative of magnetic phase transition is observed in the magnetic susceptibility measurements of HEPS 3 at TN = T1 ≈ 72 K, followed by another transition taking place at T2 ≈ 40 K, below which the zero-field-cooling (ZFC) and field-cooling (FC) profiles split (Fig. 1g). This second transition likely originates from glassy behaviors or spin reorientations (Supplementary Note 2). Note that TN observed in HEPS 3 is very close to that of non-HE MnPS 3 (TN ≈ 78 K, see Table I). Above 80 K, the susceptibility follows Curie-Weiss behavior with a Curie-Weiss temperature of -43 K and an effective moment of 3.03 μB/site, corresponding to a saturated moment of 2.19 μB/site assuming a g-factor of 2 (Supplementary Note 2). Intriguingly, in binary or ternary TMPX 3 compounds, where disorder is expected to be less significant than in HEPS 3, the anomaly related to T1 is more rounded, suggesting reduced correlation lengths (Fig. 1g). This observation underscores the importance of high configurational entropy in stabilizing the long-range magnetic order in HEPS 3.
+
+> Neutron diffraction
+
+To elucidate the origin of the magnetic susceptibility anomaly at T1, we conducted neutron diffraction measurements on HEPS 3 single crystals. At 6 K, additional Bragg peaks can be observed in the diffraction patterns alongside structural nuclear peaks that are also available at 250 K, demonstrating the emergence of magnetic order (Fig. 2a– d). These magnetic reflections can be described by a single propagation vector k = (0 , 1, 0), with three equivalent domains arising from the honeycomb lattice within each van der Waals layer [31]. Detailed examination of the H
+
+and K dependence reveals that the in-plane magnetic peak widths are comparable to those of the nuclear reflections, confirming the establishment of long-range order (Fig. 2e, f). In contrast, along the L direction, in addition to the sharp peaks corresponding to 3D magnetic order, diffuse scattering is also observed (Fig. 2d, g), suggesting the simultaneous presence of 2D magnetic order. Note that the in-plane k vector is identical for both 3D and 2D magnetic signals, implying that the 2D signals maintain the same in-plane spin configuration and correlation characteristics as the 3D ones. The primary distinction between the 2D and 3D magnetic order is the reduced inter-layer correlations. For the 3D magnetic order, adjacent layers are strongly coupled with parallel alignment of magnetic moments between neighboring planes. In contrast, the 2D magnetic order exhibits reduced or essentially decoupled layers, where the spin arrangement in one layer weakly affects neighboring layers. While stacking faults may play a role here, they 5cannot completely explain the observed 2D signals (Supplementary Note 3). Regarding the temperature dependence, the intensity of the 3D magnetic signals decreases with increasing temper-ature, and a phase transition takes place at TN≈ 72 K (Fig. 2h), consistent with the susceptibility measurements. The temperature dependence was fitted using I − BG ∝ (TN − T )2β (BG: background), yielding a critical exponent 
+
+β =0.40(5). Meanwhile, the 2D magnetic signals remain detectable above TN, persisting weakly at 90 K (Fig. 2g) before vanishing around that temperature (Fig. 2h). Through a global magnetic refinement of the 3D signals (Sup-plementary Note 4), we determined the preliminary spin structure of HEPS 3, which exhibits zigzag magnetic order with Θ =49 ◦, where Θ denotes the angle between spin moment and lattice a direction (Fig. 2i). The refined moment magnitude is 1.51(1) μB/site, much smaller than the average value of the non-HE individual counterparts (Table I). The reduced moment is partially attributed to the presence of 2D magnetic signals, which account for a substantial portion of the spectral weight. To make a quantitative estimation of the total static moment, we integrated the intensity of Q = (0 , 1, 0) over L between -0.5 and 0.5, capturing both the 2D and 3D contributions (Fig. 2g). We find that the 3D signal spectral weight, obtained by fitting with a Gaussian profile, accounts for 67% of the total spectral weight. Since neutron diffraction intensity is proportional to the squared static moment, we estimate the total static moment to be around 1.85 μB/site, slightly smaller than that derived from the magnetic susceptibility (2.19 μB/site). The discrepancy may arise from fluctuating moments or element-specific spin orientations, which will be discussed subsequently. Overall, these analyses suggest that the long-range order is mostly homogeneous across the sample. 
+
+> Resonant soft x-ray scattering
+
+While the long-range magnetic order in HEPS 3 is confirmed by neutron diffraction, the microscopic properties, particularly the behaviors of individual TM elements, remain unclear. Note that neutron diffraction averages con-tributions from disordered elements, masking element-specific magnetic properties. To overcome this limitation, we employed RSXS measurements at the TM L edges, during which process 2 p core electrons are resonantly excited to 3d valence orbitals and then de-excite [32]. By tuning incident photon energy to the resonance edge of the target element, we can selectively probe the magnetic signals of a specific element in the samples. This is evident in the x-ray absorption spectrum (XAS) data, which also reveals that all TM elements in HEPS 3 adopt a divalent state (Supplementary Fig. 11). Moreover, as the HEPS 3 sample is very thin with an ab cleavage surface, 3D magnetic signals at Q = (0 , 1, 0) were inaccessible. However, we successfully resolved 2D magnetic signals at Q = (0 , 1, L ) with finite L (Fig. 3a). 6Figure 3b–e depict the RSXS scans across the 2D magnetic signals for each TM element in HEPS 3. These scans reveal well-defined peak-like structures centered around K = 1 at low temperatures, which disappear as the tem-perature increases, consistent with the magnetic phase transition. The magnetic signals of Ni exhibit sharper peak profiles (Fig. 3e, see also Supplementary Fig. 10). However, it should be noted that Q resolution varies for different elements due to the various incident energy, penetration depth, and beam footprint. A detailed investigation of the temperature-dependent RSXS signals shows a unified magnetic phase transition, whose behaviors are in good agree-ment with the neutron diffraction measurements on the 2D signals (Fig. 3f). This suggests that all TM elements in HEPS 3 undergo a simultaneous magnetic phase transition at the same temperature. Note that the amplitudes of the magnetic signals are affected by multiple factors, including the azimuthal angle, incident photon energy, number of electrons in the valence band, and self-absorption effects, making direct intensity comparisons between elements unreliable. While XAS data exhibit negligible linear dichroism for all four TM elements (Supplementary Fig. 11), their magnetic signals show distinct polarization-dependent energy profiles (Fig. 3g–j). Given the strong RSXS cross-section dependence on spin orientation, these distinct behaviors imply different spin orientations for each element. To verify these observations and quantitatively determine the spin orientations of each TM element in HEPS 3,we examined the azimuthal dependence of the 2D magnetic signals by rotating the sample about the Q vector (Fig. 3a). Upon rotation, the cross-sectional profile of the magnetic RSXS signals changes for both polarization channels [33, 34]. As shown in Fig. 4, each TM element displays unique azimuthal intensity modulations, directly indicating distinct spin orientations even without theoretical modeling. Although the azimuthal scan range is restricted by hardware limitations, we can model the intensity modulation by assuming that the spin moments rotate within the 
+
+ac ∗ plane. This assumption is validated by the observed spin structures in the non-HE TMPX 3 counterparts and the aforementioned neutron diffraction measurements on HEPS 3. By simultaneously fitting the azimuthal dependence in both polarization channels (Methods), we derived the best fit for each TM element, the results of which are presented in Fig. 4. The resulting inclined angles, Θ, vary among elements and deviate from those observed in the non-HE TMPX 3 materials (Table I). Notably, the average Θ across the four TM elements (47 ◦) closely matches the neutron refinement result (49 ◦), highlighting the consistency between neutron and RSXS measurements. Furthermore, the element-specific spin orientation may contribute to the reduced net spin moment derived from neutron diffraction refinement, an analysis that is based on an average spin structure. 7
+
+> DISCUSSION
+
+Combining neutron diffraction and RSXS results, we establish a comprehensive picture of the magnetic order in HEPS 3, as schematically illustrated in Fig. 1h. On a large scale, long-range zigzag AFM order is stabilized at low temperatures, resembling FePS 3, CoPS 3, and NiPS 3, but contrasting with MnPS 3, which exhibits N´ eel-type magnetic order. Given that the exchange interactions of MnPS 3 are the weakest among the four non-HE individual TMPX 3
+
+compounds [28, 35–40], it is very likely that the N´ eel-type magnetic order is disrupted and the Mn atoms in HEPS 3
+
+are compelled to adopt a zigzag spin arrangement due to stronger exchange interactions with other transition metals. At the local level, each TM element in HEPS 3 adopts a preferential spin orientation governed by single-ion anisotropy, which is shaped by the ionic environment, electronic hoppings, and potentially spin-orbit coupling. Based on the magnetic structure and spin dynamics of TMPX 3 probed by neutron scattering, it is concluded that Fe 2+ 
+
+and Co 2+ ions exhibit robust easy-axis and easy-plane anisotropy, respectively, while Mn 2+ and Ni 2+ ions are mostly isotropic [28, 31, 36, 37, 39, 41–43]. This is due to their different d-orbital occupations. For Mn 2+ and Ni 2+ ions, which have half-filled 3 d and eg shells, respectively, orbital degrees of freedom are mostly quenched, leading to negligible anisotropy, whereas Fe 2+ and Co 2+ ions tend to exhibit robust but distinct anisotropy due to combined spin-orbit coupling and trigonal distortion (Supplementary Note 5). Exchange interactions, however, promote parallel spin alignment to minimize the total energy, creating a strong competition with single-ion anisotropy. This interplay generates a novel frustration mechanism, distinct from the more commonly discussed geometric frustration [44]. If exchange interactions were negligible, various elements would retain their intrinsic anisotropy, whereas dominant exchange interactions would impose a uniform spin orientation (Fig. 1i). In HEPS 3, an intermediate scenario prevails, giving rise to a synergic magnetic order where each TM element adopts a spin orientation that reflects a compromise between local anisotropy and exchange interactions, deviating from the ones observed in the non-HE TMPX 3 analogs (Table I). This competition can be illustrated by a toy model, which demonstrates how spin orientations are tuned by the anisotropy-to-interaction ratio (Supplementary Note 6). Note that the single-ion anisotropy is least profound for Mn 2+ and Ni 2+ , making their spin orientations less resistant to competition with exchange interactions. The observed spin structure represents an exotic, new type of magnetic ordering that is synergically established by different TM elements in a highly disordered system. It features a long-range coherent magnetic pattern, where spin moments from various TM elements are arranged in a zigzag AFM fashion and collectively participate in a unified magnetic phase transition. While the order parameter might have a form deviated from conventional ones, 8it remains detectable through neutron diffraction and RSXS measurements. It would also be insightful to see how it responds to local probes such as nuclear magnetic resonance (NMR) or muon spin rotation/relaxation/resonance (μSR). Nevertheless, due to the random distribution of different elements, local properties — such as spin size, exchange interactions, and spin orientations — vary from site to site without a repeating pattern. Consequently, explicit periodicity is absent, precluding the definition of a conventional magnetic unit cell. Notably, RSXS can still resolve the element-specific magnetic signatures. This is supported by a toy model simulation, in which a quarter of the sites are randomly selected and occupied, and the magnetic peak at Q = (0 , 1) is preserved, but with significantly reduced amplitude (Supplementary Note 7). In conclusion, combining neutron diffraction and RSXS measurements, we have identified long-range magnetic order in a HE antiferromagnet HEPS 3, despite significant atomic disorder. The magnetic order is synergically established by four different magnetic elements — each with distinct magnetic characteristics and randomly distributed across the lattice — via a unified phase transition. This observation showcases a novel type of synergic magnetic order, devoid of periodic spin patterns, which challenges conventional understanding of magnetism and opens new avenues for engineering materials with tailored magnetic properties. Our findings highlight the complexity of HE magnets and the importance of element-specific magnetic behavior analysis in future studies. However, several questions remain unresolved. For instance, the microscopic mechanism underlying the long-range order in such a highly disordered system, as well as the reasons behind the suppression of spin glass behaviors by high entropy, remain to be fully understood. Whether this arises from enhanced quantum fluctuations, emergent collective modes, or other funda-mental processes, and what role kinetic constraints or entropic barriers play in stabilizing or destabilizing the spin glass phases, are questions that warrant further exploration. These open challenges highlight the need for advanced theoretical and experimental efforts to unravel the physics of this exotic magnetic state. 
+
+> METHODS Sample synthesis and characterization
+
+Single-crystalline (Mn 1/4Fe 1/4Co 1/4Ni 1/4)PS 3 (HEPS 3) samples, as well as the binary and ternary TMPX 3 com-pounds, were grown using the chemical vapor transport (CVT) method as detailed in the previous report [11]. Atomic-resolved EDS mapping was performed using an aberration-corrected STEM (JEM NEOARM), operated at 200 kV. As mentioned in the main text, the STEM mapping is interpreted as an average result of multiple stacked 9honeycomb layers, leading to a triangular arrangement considering ABC stacking. Consequently, elements that are randomly distributed throughout the lattice will display uniform intensity at each site. 
+
+> Neutron diffraction experiment
+
+All neutron diffraction measurements were conducted using the CORELLI instrument at Spallation Neutron Source (SNS), Oak Ridge National Laboratory (ORNL) [45, 46]. One piece of single crystal (27 mg in weight; 6 ×3 mm in size) was aligned first in the H0L scattering plane and subsequently in the 0 KL scattering plane, utilizing monoclinic notation. Diffraction patterns were collected at 6 K, 90 K, and 250 K by rotating the sample with a fixed tilting angle. For the temperature dependence measurements, the sample position and orientations were unchanged; data were acquired with a 5 min counting time per temperature point with a step of 2 K. 
+
+> RSXS experiments
+
+The RSXS experiments were performed at the REIXS (10ID-2) beamline of the Canadian Light Source (CLS) [47] and 13-3 beamline of the Stanford Synchrotron Radiation Lightsource (SSRL) at the SLAC National Accelerator Laboratory [48]. Both have an in-vacuum 4-circle diffractometer to access the magnetic signals. For the REIXS experiment, XAS data were collected using a silicon drift detector (SDD) at a fixed position, while RSXS signals were measured with another SDD equipped at the goniometer arm at the peak position of the L3 edge for each transition-metal element in HEPS 3 (Supplementary Fig. 11). RSXS scans were conducted by rotating the sample at a fixed scattering angle 2 θ, considering that the signal is independent of L within a small range. The x-ray energies were chosen to be 639.3 eV, 706.9 eV, 777.7 eV, and 851.9 eV for the Mn, Fe, Co, and Ni L3 edges, respectively. The intensity was normalized to the incoming x-ray flux. Background subtraction was performed using high-temperature data for all RSXS scans (Supplementary Fig. 12). In the 13-3 experiment, a 2D CCD detector was employed, covering a finite range of Q. The collected signals were normalized by electron current. In Fig. 4, the data were further normalized by fluorescence to account for variations in measurement efficiency, particularly due to self-absorption effects and changes in the x-ray footprint on the sample, which is not relevant in the energy dependence presented in Fig. 3g–j. Furthermore, for the energy-dependent measurements, all diffraction angles, including the scattering angle 2 θ, were fixed. Although Q varies slightly with energy, the large area of the CCD detector ensured that magnetic signals were still captured, enabling 10 equivalent fix-Q energy scans. The azimuthal-dependent measurements shown in Fig. 4 were conducted at the peak position of the L3 edge (Supplementary Fig. 13). To be more specific, the x-ray energies are 638.4 eV, 707 eV, 779 eV, and 853.9 eV for the Mn, Fe, Co, and Ni L3 edges, respectively. For each azimuthal angle, a RSXS scan was performed by rotating the sample. The magnetic signals in the HK plane were fitted with a 2D Lorentzian function to determine the peak height. The signals along the L direction were averaged as they exhibited no significant dependence on L
+
+within the small L range investigated. 
+
+> Simulation of the azimuthal dependence
+
+Considering that the linear dichroism is negligible in HEPS 3, we use a simplified model based on spherical symmetry to simulate the azimuthal dependence of the magnetic signals: 
+
+F = κ · ϵ × ϵ′ · M (1) where κ is a scale factor, ϵ and ϵ′ are the incident and emission photon polarization, respectively, and M is the spin moment. The magnetic RSXS cross-section can be obtained as I = F2. M is confined within the ac ∗ plane and the fitting results are presented in Fig. 4. Note that for each element, a unified scale factor κ is used for different polarizations. The outgoing photon polarization is not distinguished. Thus, the simulated signals are summed over two polarization channels, σ′ and π′, for the outgoing photons. Note that magnetic signals will contribute to the 
+
+σ-π′, π-π′, and π-σ′ channels but not σ-σ′ channel. The full-range calculation results for the azimuthal dependence are presented in Supplementary Fig. 14, which are simulated based on calculated motor positions, while for Fig. 4, experimental motor positions are used. The discrepancy is negligible. 
+
+> DATA AVAILABILITY
+
+All data that support the findings of this study have been deposited in the Zenodo database with the access code 17636716 [49].  
+
+> [1] K. Binder and A. P. Young, Spin glasses: Experimental facts, theoretical concepts, and open questions, Reviews of Modern Physics 58 , 801 (1986).
+
+11 
+
+[2] J. A. Mydosh, Spin glasses: redux: an updated experimental/materials survey, Reports on Progress in Physics 78 , 052501 (2015). [3] J.-W. Yeh, S.-K. Chen, S.-J. Lin, J.-Y. Gan, T.-S. Chin, T.-T. Shun, C.-H. Tsau, and S.-Y. Chang, Nanostructured high-entropy alloys with multiple principal elements: Novel alloy design concepts and outcomes, Advanced Engineering Materials 6, 299 (2004). [4] D. B. Miracle and O. N. Senkov, A critical review of high entropy alloys and related concepts, Acta Materialia 122 , 448 (2017). [5] Q. Ding, Y. Zhang, X. Chen, X. Fu, D. Chen, S. Chen, L. Gu, F. Wei, H. Bei, Y. Gao, M. Wen, J. Li, Z. Zhang, T. Zhu, R. O. Ritchie, and Q. Yu, Tuning element distribution, structure and properties by composition in high-entropy alloys, Nature 574 , 223 (2019). [6] E. P. George, D. Raabe, and R. O. Ritchie, High-entropy alloys, Nature Reviews Materials 4, 515 (2019). [7] L. Sun and R. J. Cava, High-entropy alloy superconductors: Status, opportunities, and challenges, Physical Review Materials 3, 090301 (2019). [8] C. Oses, C. Toher, and S. Curtarolo, High-entropy ceramics, Nature Reviews Materials 5, 295 (2020). [9] C. M. Rost, E. Sachet, T. Borman, A. Moballegh, E. C. Dickey, D. Hou, J. L. Jones, S. Curtarolo, and J.-P. Maria, Entropy-stabilized oxides, Nature Communications 6, 8485 (2015). [10] R. Witte, A. Sarkar, R. Kruk, B. Eggert, R. A. Brand, H. Wende, and H. Hahn, High-entropy oxides: An emerging prospect for magnetic rare-earth transition metal perovskites, Physical Review Materials 3, 034406 (2019). [11] T. Ying, T. Yu, Y.-S. Shiah, C. Li, J. Li, Y. Qi, and H. Hosono, High-entropy van der Waals materials formed from mixed metal dichalcogenides, halides, and phosphorus trisulfides, Journal of the American Chemical Society 143 , 7042 (2021). [12] T. Ying, T. Yu, Y. Qi, X. Chen, and H. Hosono, High entropy van der Waals materials, Advanced Science 9, 2203219 (2022). [13] X. Chen, J. Wang, T. Ying, D. Huang, H. Gou, Q. Zhang, Y. Li, H. Hosono, J.-g. Guo, and X. Chen, Insulator-metal-superconductor transition in the medium-entropy van der Waals compound M PSe 3 (M =Fe, Mn, Cd, and In) under high pressure, Physical Review B 106 , 184502 (2022). [14] A. Laha, S. Yoshida, F. Marques dos Santos Vieira, H. Yi, S. H. Lee, S. V. G. Ayyagari, Y. Guan, L. Min, J. Gonza-lez Jimenez, L. Miao, D. Graf, S. Sarker, W. Xie, N. Alem, V. Gopalan, C.-Z. Chang, I. Dabo, and Z. Mao, High-entropy engineering of the crystal and electronic structures in a Dirac material, Nature Communications 15 , 3532 (2024). [15] A. Sarkar, L. Velasco, D. Wang, Q. Wang, G. Talasila, L. de Biasi, C. K¨ ubel, T. Brezesinski, S. S. Bhattacharya, H. Hahn, and B. Breitung, High entropy oxides for reversible energy storage, Nature Communications 9, 3400 (2018). [16] S. Schweidler, M. Botros, F. Strauss, Q. Wang, Y. Ma, L. Velasco, G. Cadilha Marques, A. Sarkar, C. K¨ ubel, H. Hahn, J. Aghassi-Hagmann, T. Brezesinski, and B. Breitung, High-entropy materials for energy and electronic applications, 12 
+
+Nature Reviews Materials 9, 266 (2024). [17] L. Han, S. Zhu, Z. Rao, C. Scheu, D. Ponge, A. Ludwig, H. Zhang, O. Gutfleisch, H. Hahn, Z. Li, and D. Raabe, Multifunctional high-entropy materials, Nature Reviews Materials 9, 846 (2024). [18] Y. Yin, F. Shi, G.-Q. Liu, X. Tan, J. Jiang, A. Tiwari, and B. Li, Spin-glass behavior and magnetocaloric properties of high-entropy perovskite oxides, Applied Physics Letters 120 , 082404 (2022). [19] G. Angelo, L. Klivansky, J. G. Philbrick, T. Kong, J. Zhang, and X. Gui, Absence of long-range magnetic ordering in a trirutile high-entropy oxide (Mn 0.2Fe 0.2Co 0.2Ni 0.2Cu 0.2)Ta 1.92 O6−δ , Inorganic Chemistry 64 , 3196 (2025). [20] G. H. J. Johnstone, M. U. Gonz´ alez-Rivas, K. M. Taddei, R. Sutarto, G. A. Sawatzky, R. J. Green, M. Oudah, and A. M. Hallas, Entropy engineering and tunable magnetic order in the spinel high-entropy oxide, Journal of the American Chemical Society 144 , 20590 (2022). [21] L. Zhu, H. He, M. Naeem, X. Sun, J. Qi, P. Liu, S. Harjo, K. Nakajima, B. Li, and X.-L. Wang, Antiferromagnetism and phase stability of CrMnFeCoNi high-entropy alloy, Physical Review Letters 133 , 126701 (2024). [22] L. Min, J. P. Barber, Y. Wang, S. V. Gayathri Ayyagari, G. E. Niculescu, E. Krysko, G. R. Bejger, L. Miao, S. H. Lee, Q. Zhang, N. Alem, C. M. Rost, and Z. Mao, High entropy protected sharp magnetic transitions in highly disordered spinel ferrites, Journal of the American Chemical Society 146 , 24320 (2024). [23] V. B. Nalbandyan, K. V. Zakharov, M. A. Evstigneeva, A. N. Vasiliev, I. G. Sheptun, L. V. Shvanskaya, and T. M. Vasilchikova, Preparation and characterization of a high-entropy magnet, (Mg, Mn, Co, Ni, Cu) 3TeO 6, Inorganic Chemistry 
+
+63 , 22372 (2024). [24] F. Zhou, K. Hwangbo, Q. Zhang, C. Wang, L. Shen, J. Zhang, Q. Jiang, A. Zong, Y. Su, M. Zajac, Y. Ahn, D. A. Walko, R. D. Schaller, J.-H. Chu, N. Gedik, X. Xu, D. Xiao, and H. Wen, Dynamical criticality of spin-shear coupling in van der Waals antiferromagnets, Nature Communications 13 , 6598 (2022). [25] M. Matthiesen, J. R. Hortensius, S. Ma˜ nas-Valero, I. Kapon, D. Dumcenco, E. Giannini, M. ˇSiˇ skins, B. A. Ivanov, H. S. J. van der Zant, E. Coronado, A. B. Kuzmenko, D. Afanasiev, and A. D. Caviglia, Controlling magnetism with light in a zero orbital angular momentum antiferromagnet, Physical Review Letters 130 , 076702 (2023). [26] A. Zong, Q. Zhang, F. Zhou, Y. Su, K. Hwangbo, X. Shen, Q. Jiang, H. Liu, T. E. Gage, D. A. Walko, M. E. Kozina, D. Luo, A. H. Reid, J. Yang, S. Park, S. H. Lapidus, J.-H. Chu, I. Arslan, X. Wang, D. Xiao, X. Xu, N. Gedik, and H. Wen, Spin-mediated shear oscillators in a van der Waals antiferromagnet, Nature 620 , 988 (2023). [27] B. Ilyas, T. Luo, A. von Hoegen, E. Vi˜ nas Bostr¨ om, Z. Zhang, J. Park, J. Kim, J.-G. Park, K. A. Nelson, A. Rubio, and N. Gedik, Terahertz field-induced metastable magnetization near criticality in FePS 3, Nature 636 , 609 (2024). [28] A. R. Wildes, B. F˚ ak, U. B. Hansen, M. Enderle, J. R. Stewart, L. Testa, H. M. Rønnow, C. Kim, and J.-G. Park, Spin wave spectra of single crystal CoPS 3, Physical Review B 107 , 054438 (2023). 13 
+
+[29] S. Kang, K. Kim, B. H. Kim, J. Kim, K. I. Sim, J.-U. Lee, S. Lee, K. Park, S. Yun, T. Kim, A. Nag, A. Walters, M. Garcia-Fernandez, J. Li, L. Chapon, K.-J. Zhou, Y.-W. Son, J. H. Kim, H. Cheong, and J.-G. Park, Coherent many-body exciton in van der Waals antiferromagnet NiPS 3, Nature 583 , 785 (2020). [30] W. He, Y. Shen, K. Wohlfeld, J. Sears, J. Li, J. Pelliciari, M. Walicki, S. Johnston, E. Baldini, V. Bisogni, M. Mitrano, and M. P. M. Dean, Magnetically propagating hund’s exciton in van der Waals antiferromagnet NiPS 3, Nature Communications 
+
+15 , 3496 (2024). [31] D. Lan¸ con, H. C. Walker, E. Ressouche, B. Ouladdiaf, K. C. Rule, G. J. McIntyre, T. J. Hicks, H. M. Rønnow, and A. R. Wildes, Magnetic structure and magnon dynamics of the quasi-two-dimensional antiferromagnet FePS 3, Physical Review B 94 , 214407 (2016). [32] J. Fink, E. Schierle, E. Weschke, and J. Geck, Resonant elastic soft x-ray scattering, Reports on Progress in Physics 76 ,056502 (2013). [33] S. Grenier and Y. Joly, Basics of resonant elastic x-ray scattering theory, Journal of Physics: Conference Series 519 , 012001 (2014). [34] J. A. Sears, L. E. Chern, S. Kim, P. J. Bereciartua, S. Francoual, Y. B. Kim, and Y.-J. Kim, Ferromagnetic Kitaev interaction and the origin of large magnetic anisotropy in α-RuCl 3, Nature Physics 16 , 837 (2020). [35] K. Kurosawa, S. Saito, and Y. Yamaguchi, Neutron diffraction study on MnPS 3 and FePS 3, Journal of the Physical Society of Japan 52 , 3919 (1983). [36] J. Liao, Z. Huang, Y. Shangguan, B. Zhang, S. Cheng, H. Xu, R. Kajimoto, K. Kamazawa, S. Bao, and J. Wen, Spin and lattice dynamics in the van der Waals antiferromagnet MnPSe 3, Physical Review B 109 , 224411 (2024). [37] L. Chen, X. Teng, D. Hu, F. Ye, G. E. Granroth, M. Yi, J.-H. Chung, R. J. Birgeneau, and P. Dai, Thermal evolution of spin excitations in honeycomb Ising antiferromagnetic FePSe 3, npj Quantum Materials 9, 40 (2024). [38] C. Kim, J. Jeong, P. Park, T. Masuda, S. Asai, S. Itoh, H.-S. Kim, A. Wildes, and J.-G. Park, Spin waves in the two-dimensional honeycomb lattice XXZ-type van der Waals antiferromagnet CoPS 3, Physical Review B 102 , 184429 (2020). [39] A. R. Wildes, J. R. Stewart, M. D. Le, R. A. Ewings, K. C. Rule, G. Deng, and K. Anand, Magnetic dynamics of NiPS 3,Physical Review B 106 , 174422 (2022). [40] A. Scheie, P. Park, J. W. Villanova, G. E. Granroth, C. L. Sarkis, H. Zhang, M. B. Stone, J.-G. Park, S. Okamoto, T. Berlijn, and D. A. Tennant, Spin wave Hamiltonian and anomalous scattering in NiPS 3, Physical Review B 108 , 104402 (2023). [41] E. Ressouche, M. Loire, V. Simonet, R. Ballou, A. Stunault, and A. Wildes, Magnetoelectric MnPS 3 as a candidate for ferrotoroidicity, Physical Review B 82 , 100408 (2010). [42] A. R. Wildes, V. Simonet, E. Ressouche, R. Ballou, and G. J. McIntyre, The magnetic properties and structure of the quasi-two-dimensional antiferromagnet CoPS 3, Journal of Physics: Condensed Matter 29 , 455801 (2017). 14 
+
+[43] A. R. Wildes, V. Simonet, E. Ressouche, G. J. McIntyre, M. Avdeev, E. Suard, S. A. J. Kimber, D. Lan¸ con, G. Pepe, B. Moubaraki, and T. J. Hicks, Magnetic structure of the quasi-two-dimensional antiferromagnet NiPS 3, Physical Review B 92 , 224408 (2015). [44] L. Balents, Spin liquids in frustrated magnets, Nature 464 , 199 (2010). [45] S. Rosenkranz and R. Osborn, Corelli: Efficient single crystal diffraction with elastic discrimination, Pramana Journal of Physics 71 , 705 (2008). [46] F. Ye, Y. Liu, R. Whitfield, R. Osborn, and S. Rosenkranz, Implementation of cross correlation for energy discrimination on the time-of-flight spectrometer CORELLI, Journal of Applied Crystallography 51 , 315 (2018). [47] D. G. Hawthorn, F. He, L. Venema, H. Davis, A. J. Achkar, J. Zhang, R. Sutarto, H. Wadati, A. Radi, T. Wilson, G. Wright, K. M. Shen, J. Geck, H. Zhang, V. Nov´ ak, and G. A. Sawatzky, An in-vacuum diffractometer for resonant elastic soft x-ray scattering, Review of Scientific Instruments 82 , 073104 (2011). [48] C.-T. Kuo, M. Hashimoto, H. Lee, T. T. Huynh, A. Maciel, Z. Zhang, D. Zhang, B. Edwards, F. Kazemifar, C.-C. Kao, D. Lu, and J.-S. Lee, Introducing new resonant soft x-ray scattering capability in SSRL, Review of Scientific Instruments 
+
+96 , 063902 (2025). [49] Y. Shen, G. Zhang, Q. Zhang, X. Gui, Y. Zhang, H. Lee, C.-T. Kuo, J.-S. Lee, R. Sutarto, F. Ye, Z. Pan, X. Qin, J. Wang, T. Ying, and Y. Long, Long-range magnetic order with disordered spin orientations in a high-entropy antiferromagnet (2025), https://doi.org/10.5281/zenodo.17636716. 
+
+ACKNOWLEDGEMENTS 
+
+We thank Gang Chen for inspiring discussions. This work was supported by the National Key R&D Program of China (Grant No. 2024YFA1408301 (Y.S.), 2023YFA1406500 (J.W.), 2021YFA1400300 (Y.L.)) and the National Natural Science Foundation of China (Grant No. 12574139 (Y.S.), 12425403 (Y.L.), 52272267 (T.Y.), 52522201 (T.Y.), 12261131499(Y.L.)). Neutron diffraction measurements of this research used resources at the Spallation Neutron Source (SNS), a US Department of Energy Office of Science User Facility operated by the Oak Ridge National Laboratory (ORNL). The beam time was allocated to CORELLI on Proposal No. IPTS-30179.1. RSXS measurements were carried out at the Stanford Synchrotron Radiation Lightsource (SSRL), SLAC National Accelerator Laboratory, which is supported by the US Department of Energy, Office of Science, Office of Basic Energy Sciences (contract No. DE-AC02-76SF00515), and the Canadian Light Source (CLS), a national research facility of the University of Saskatchewan, which is supported by the Canada Foundation for Innovation (CFI), the Natural Sciences and Engineering Research Council (NSERC), the Canadian Institutes of Health Research (CIHR), the Government of 15 Saskatchewan, and the University of Saskatchewan. Notice: This manuscript has been authored by UT-Battelle, LLC, under contract DE-AC05-00OR22725 with the US Department of Energy (DOE). The US government retains and the publisher, by accepting the article for publication, acknowledges that the US government retains a nonexclusive, paid-up, irrevocable, worldwide license to publish or reproduce the published form of this manuscript or allow others to do so, for US government purposes. DOE will provide public access to these results of federally sponsored research in accordance with the DOE Public Access Plan (https://www.energy.gov/doe-public-access-plan). 
+
+> AUTHOR CONTRIBUTIONS
+
+Y.S., J.W., and T.Y. conceived the project. Q.Z., Y.Z., and T.Y. synthesized and characterized the samples. X.G., F.Y., and J.W. performed the neutron measurements. Y.S., G.Z., H.L., C.T.K., J.S.L., and R.S. performed the X-ray measurements. Y.S., Z.P., X.Q., J.W., T.Y., and Y.L. interpreted the data. The paper was written by Y.S., J.W., and T.Y. with input from all co-authors. Correspondence and requests for materials should be addressed to Yao Shen, Jinchen Wang, or Tianping Ying. 
+
+> COMPETING INTERESTS
+
+The authors declare no competing interests. 16 
+
+TABLE I. Magnetic order properties of the Mn, Fe, Co, and Ni ions in HEPS 3 and non-HE individual TMPX 3 compounds. Here, Θ is the angle between the magnetic moment and lattice a direction (Fig. 1e), M is the moment magnitude determined by neutron diffraction, and k is the propagation vector. Element Mn Fe Co Ni Θ (deg) in TMPX 3 82 90 10 0
+
+M (μB) in TMPX 3 4.43 4.52 3.36 1.05 
+
+k in TMPX 3 (0, 0, 0) (0, 1, 0.5) (0, 1, 0) (0, 1, 0) 
+
+TN (K) in TMPX 3 78 118 120 155 Ref. [41] Ref. [31] Ref. [42] Ref. [43] Θ (deg) in HEPS 3 35 72 32 50 
+
+M (μB) in HEPS 3 1.51(1) 
+
+k in HEPS 3 (0, 1, 0) 
+
+TN (K) in HEPS 3 72 17 MnPS 3 : Θ ≈ 82º FePS 3 : Θ ≈ 90º CoPS 3 : Θ ≈ 10º NiPS 3 : Θ ≈ 0º a b c d
+
+h HEPS 3 : (Mn 1/4 Fe 1/4 Co 1/4 Ni 1/4 )PS 3             
+
+> ΘMn ≈35º, ΘFe ≈72º, ΘCo ≈32º, ΘNi ≈50º
+> ac* plane
+> M
+> Θac* b/b*
+
+e  
+
+> 2 nm Mn Fe Co Ni
+
+f  
+
+> ab
+> STEM
+> J/∆
+
+i             
+
+> ∆dominating compromised Jvs. ∆Jdominating
+> ac*
+> Mn Fe Co Ni
+> 0100 200 300 Temperature (K) 510 15 20 25
+> χ (×10 -3  emu · Oe -1  · mol -1  )
+> T1
+> T1
+> T1
+> T2
+> T2
+> T2
+
+g                   
+
+> (Mn 1/4 Fe 1/4 Co 1/4 Ni 1/4 )PS 3(Mn 1/3 Fe 1/3 Ni 1/3 )PS 3(Mn 1/2 Fe 1/2 )PS 3ZFC FC ZFC FC ZFC FC
+> H⊥ab
+
+FIG. 1. Magnetic properties of TMPX 3 and HEPS 3. a–d, Schematics of the magnetic structure of MnPS 3, FePS 3,CoPS 3, and NiPS 3, respectively. All spin moments lie within the ac ∗ plane. e, We define Θ as the angle between the spin moment M and lattice a direction. f, Atomic-resolved elemental scanning transmission electron microscopy (STEM) mapping of HEPS 3, demonstrating the random distributions of various elements. g, Magnetic susceptibility of HEPS 3 and other derivatives of TMPX 3 measured in the zero-field-cooling (ZFC) and field-cooling (FC) modes, respectively. For each material, the susceptibility exhibits an anomaly at T1, and the ZFC and FC profiles split below T2. h, Schematic of the magnetic structure of HEPS 3 determined from neutron diffraction and RSXS measurements. i, Schematic diagram showing the evolution of spin orientations with different exchange interaction ( J) to single-ion anisotropy (∆) ratio. When J is negligible, the spin moments tend to preserve their anisotropy as in the non-HE materials, e.g., Mn 2+ /Fe 2+ and Co 2+ /Ni 2+ being almost perpendicular and parallel to the ab plane, respectively (left panel). In another aspect, dominant J would enforce a universal parallel alignment (right panel). A compromised case is realized in HEPS 3 (middle panel, see also Supplementary Note 6). 18 ac* b/b* 
+
+i         
+
+> 020 40 60 80 100 Temperature (K) 0246Intensity (arb. units) 3D: Q= (0, 1, 1) 2D: Q= (1/2, 1/2, 0), x1/2
+
+h  
+
+> TN≈72 K
+
+g                       
+
+> -0.5 00.5 11.5 (0, 1, L) (r.l.u.) 10 -1 10 010 110 2Intensity (arb. units) 3D signals 2D signals 90 K 6 K 250 K
+> 10 -1 10 010 110.7 0.8 0.9 1.1 1.2 1.3
+> K(r.l.u.) 21.7 1.8 1.9 2.1 2.2 2.3
+> Q=(0, 1, 0) 250 K 6 K
+> Q=(0, 2, 0) 6 K
+
+f         
+
+> 0-0.3 -0.2 -0.1 0.1 0.2 0.3
+> H(r.l.u.) 10 -1 10 010 1Intensity (arb. units)
+> Q=(0, 1, 0) 250 K 6 K
+> Q=(0, 2, 0) 6 K
+
+e  
+
+> 10Intensity (arb. units)
+> -1 01(0, 0,  L) (r.l.u.) 0-1 1(0, K, 0) (r.l.u.)
+
+d T = 6 K 
+
+> -1 01(0, 0,  L) (r.l.u.)
+
+c T = 250 K nuclear    
+
+> -1 01(H, 0, 0) (r.l.u.) -2 -1 012(0,  K, 0) (r.l.u.)
+> T= 6 K
+
+b
+
+> -2 -1 012(0,  K, 0) (r.l.u.)
+
+a T = 250 K nuclear 
+
+FIG. 2. Neutron diffraction measurements on HEPS 3 single crystals. a, b, Neutron diffraction patterns in the HK 0plane collected at 250 K and 6 K, respectively, with L integrated in the range of [-0.2, 0.2]. c, d, Neutron diffraction patterns in the 0 KL plane. The black circles highlight the nuclear peaks. e, f, One-dimensional Q cuts along H and K directions, respectively, across the nuclear [ Q = (0 , 2, 0)] and magnetic reflections [ Q = (0 , 1, 0)] at the indicated temperatures. The solid lines are fits with Gaussian profiles, yielding FWHM (in unit of r.l.u.) of 0.0539(6) (nuclear) and 0.0496(5) (magnetic) along H,and 0.070(1) (nuclear) and 0.068(1) (magnetic) along K. g, Q cuts along L direction across the magnetic signals. The shaded area denotes the 3D magnetic signals, which exhibit different peak widths due to different contributions of sample mosaicity. The 250 K data are treated as a background reference. Note that the intensities are presented on a log scale. h, Temperature dependence of the integrated intensities of 3D magnetic signals at Q = (0 , 1, 1) and 2D magnetic signals at Q = (0 .5, 0.5, 0), which corresponds to Q = (0 , −1, 1/6) in another domain [31]. The solid line is a fit to I − BG ∝ (TN − T )2β (BG: background), and the dashed line is a guide for the eye. i, Schematic of the spin structure derived from the neutron diffraction refinements with Θ =49 ◦, which can be regarded as an average result over all the TM elements. All the data were collected at CORELLI, including the temperature dependence. r.l.u., reciprocal lattice units. 19 j       
+
+> 852 854 856 858 860 Incident energy (eV) 036912
+> Q≈(0, 1, 0.57) Ni
+> σ-pol.
+> π-pol.
+
+i       
+
+> 776 778 780 782 784 Incident energy (eV) 01234
+> Q≈(0, -1, 0.49) Co
+> σ-pol.
+> π-pol.
+
+h        
+
+> 704 706 708 710 712 Incident energy (eV) 010 20 30 Q≈(0, -1, 0.32) Fe
+> σ-pol.
+> π-pol.
+
+g        
+
+> 636 638 640 642 644 Incident energy (eV) 0612 18 Q≈(0, -1, 0.19) Mn
+> σ-pol.
+> π-pol. Intensity (arb. units)
+
+f  
+
+> 20 60 100 Temperature (K) Neutron 2D signals Mn Fe Co Ni
+
+e     
+
+> 0.8 11.2 Ni, L≈0.61 21 K 100 K
+
+d      
+
+> 0.8 11.2 Co, L≈0.40 21 K 100 K (0, K) (r.l.u.)
+
+c     
+
+> 0.8 11.2 Fe, L≈0.37 21 K 100 K
+
+b           
+
+> 0.8 11.2 Mn, L≈0.21 21 K 100 K 00.1 0.2 0.3 0.4 Intensity (arb. units)
+> HEPS 3sample Scattering plane 3D signals 2D signals
+> TM Ledge
+> σπ
+> ψ
+> θ
+> Q
+> ab/b* c*
+
+a
+
+FIG. 3. Resonant soft x-ray scattering (RSXS) measurements on HEPS 3. a, Schematic diagram of the RSXS experiment setup. Note that θ is the sample angle and ψ is the azimuthal angle. Negative K is defined for grazing-incidence conditions. The polarization of the outgoing photons is not distinguished. b–e, Background subtracted RSXS scans across the 2D magnetic signals at the indicated temperatures for each TM element. The solid curves are fits using pseudo-Voigt profiles. f, 
+
+Temperature dependence of the fitted peak heights of different elements, indicating a unified magnetic transition. The neutron 2D signals are the same as in Fig. 2 h. All error bars represent 1 standard deviation. g–j, Background subtracted fix-Q energy dependence of the 2D magnetic signals for each TM element in HEPS 3 with different incident photon polarizations. Data presented in b–f were collected at REIXS beamline with π polarization, and data in g–j were collected at 13-3 beamline at 12 K with ψ ≈ 0◦.20 d
+
+Fit: σ-pol. 
+
+Q ≈ (0, 1, 0.57) Ni, Θ ≈ 50 °Fit: π-pol. Data: σ-pol. Data: π-pol. 
+
+00.05 0.1 0.15 0.2 0.25 Intensity (arb. units) -80 -60 -40 -20 0 20 40 
+
+ψ (deg) 
+
+c
+
+Fit: σ-pol. 
+
+Q ≈ (0, -1, 0.49) Co, Θ ≈ 32 °Fit: π-pol. Data: σ-pol. Data: π-pol. 
+
+0.02 0.04 0.06 0.08 Intensity (arb. units) -90 -60 -30 0 30 
+
+b
+
+Fit: σ-pol. 
+
+Q ≈ (0, -1, 0.32) Fe, Θ ≈ 72 °Fit: π-pol. Data: σ-pol. Data: π-pol. 
+
+00.3 0.6 0.9 1.2 Intensity (arb. units) -60 -40 -20 0 20 
+
+a
+
+Fit: σ-pol. 
+
+Q ≈ (0, -1, 0.19) Mn, Θ ≈ 35 °Fit: π-pol. Data: σ-pol. Data: π-pol. 
+
+30 60 90 120 Intensity (arb. units) -60 -40 -20 0 20 
+
+FIG. 4. Azimuthal dependence of the 2D magnetic signals in HEPS 3 for each element. ψ = 0 corresponds to the position with Q = (0 , 1, 0) lying in the scattering plane. All the data were collected at 13-3 beamline at 12 K. Note that we use a different data processing protocol here so that the intensities are not directly comparable to Fig. 3g–j (Methods). Supplementary information: Long-range magnetic order with disordered spin orientations in a high-entropy antiferromagnet 
+
+> (Dated: March 12, 2026)
+> CONTENTS
+
+Supplementary Note 1. Transformation between hexagonal and monoclinic notations 1Supplementary Note 2. More sample characterization 1Supplementary Note 3. Structural disorder 3Supplementary Note 4. Refinement of the neutron diffraction data 3Supplementary Note 5. Single-ion anisotropy 4Supplementary Note 6. Competition between single-ion anisotropy and exchange interactions 6Supplementary Note 7. Structure factor simulation 7References 11 
+
+> SUPPLEMENTARY NOTE 1. TRANSFORMATION BETWEEN HEXAGONAL AND MONOCLINIC NOTATIONS
+
+HEPS 3 adopts a monoclinic crystal structure with a slightly distorted honeycomb lattice (Fig. S1). While the monoclinic notation is used throughout the main text, it is essential to clarify its relationship to the hexagonal unit cell notation — the latter typically used for non-distorted honeycomb lattices. Figure S2 illustrates the transformation between monoclinic and hexagonal notations in both real and reciprocal space. The 3D magnetic peak Q = (0 , 1, 0) (zone center) in monoclinic notation corresponds to Q = ( −1/2, 1/2, 0) (zone boundary) in hexagonal notation. 
+
+> SUPPLEMENTARY NOTE 2. MORE SAMPLE CHARACTERIZATION
+
+To confirm the reproducibility of the phase transitions, we repeat the magnetic susceptibility measurements on several HEPS 3 single crystals, obtaining consistent results (Fig. S3). Above 80 K, the magnetic susceptibility follows Curie-Weiss behavior (Fig. S4), with a Curie-Weiss temperature of -43 K and a Curie constant of 1.147 emu ·K/mol. abc 
+
+> Mn/Fe/Co/Ni SP
+> FIG. S1. Lattice structure of HEPS 3.
+
+2Ni L3
+
+FIG. S2. Schematics illustrating hexagonal and monoclinic unit cells. a, Sketch of the real space of a honeycomb lattice. The dashed lines indicate the unit cells for the hexagonal and monoclinic lattices. b, Reciprocal space projected onto the ab plane. The dashed lines outline the Brillouin zones for the hexagonal and monoclinic notations. The diamond marker denotes a 3D magnetic peak. The green circle illustrates the reciprocal space that can be accessed by Ni L3-edge RSXS. TM, transition metal. 0 100 200       
+
+> Temperature (K)
+> 6
+> 8
+> 10
+> 12
+> 14
+> 16
+> M (emu  mol  1)
+> Sample 2
+> FC
+> ZFC
+> 0100 200
+> Temperature (K)
+> 6
+> 8
+> 10
+> 12
+> 14
+> 16 Sample 3
+> FC
+> ZFC
+> 0100 200
+> Temperature (K)
+> 6
+> 8
+> 10
+> 12
+> 14
+> 16 Sample 4
+> FC
+> ZFC
+
+FIG. S3. Magnetic susceptibility measurements of multiple different HEPS 3 single crystals. 
+
+This corresponds to an effective moment of 3.03 μB/site, implying a saturated moment of 2.19 μB/site assuming a 
+
+g-factor of 2. This value is slightly higher than that derived from neutron diffraction measurements. Our neutron diffraction and resonant soft x-ray scattering (RSXS) measurements unambiguously demonstrate that the transition at 72 K originates from the long-range magnetic order. By contrast, the nature of the 40 K transition remains uncertain, but we can formulate some tentative expectations. Below 40 K, the zero-field-cooling (ZFC) and field-cooling (FC) curves split, indicating spin-glass behaviors or spin reorientations. However, magnetic susceptibility and neutron diffraction (as well RSXS) probe the magnetic responses on different length and time scales. Thus, it is possible that the process corresponding to the 40 K transition happens on scales beyond the momentum and temporal resolution of conventional neutron and x-ray scattering techniques, making the investigation of this transition fall beyond the scope of the present work. 30 50 100 150 200 250 300       
+
+> Temperature (K)
+> 2
+> 4
+> 6
+> 8
+> 10
+> 12
+> (×10  3 emu  Oe  1 mol  1)
+> (Mn 1/4 Fe 1/4 Co 1/4 Ni 1/4 )PS 3, FC
+> Data
+> Fit
+> CW = -43 K
+> eff = 3.03 B
+> M= 2.19 B
+> FIG. S4. Curie-Weiss fit of the magnetic susceptibility above 80 K. SUPPLEMENTARY NOTE 3. STRUCTURAL DISORDER
+
+Here we examine structural disorder in HEPS 3, particularly stacking faults within its layered architecture. In an ideal TMPX 3 structure, honeycomb layers exhibit perfect A-B-C stacking along the out-of-plane direction. However, local deviations such as A-A or A-B-A-B stacking can occur, leading to stacking fault disorder that manifests as diffuse scattering along the L direction in diffraction patterns. Figure S5a&b present the neutron diffraction and x-ray diffraction (XRD) patterns in the 0 KL plane. While structural reflections satisfying H + K = 6 n, where n
+
+is an integer, exhibit no indication of diffuse scattering, diffusive signals appear along L for Q = (0 , −4, L ) and 
+
+Q = (0 , −2, L ), a hallmark of stacking faults. This can be seen more clearly in the L cuts presented in Fig. S5c&d. Note that stacking fault effects cancel out for H + K = 6 n reflections [1]. Additionally, the honeycomb lattice symmetry naturally gives rise to three equivalent structural domains [2]. In our neutron diffraction data collected from a large single crystal (several millimeters in size), this multidomain configuration produces nuclear signals at non-integer L positions (Fig. S5c). Conversely, XRD measurements performed on a smaller crystal ( ≈ 100 μm) using a laboratory diffractometer revealed single-domain characteristics, as indicated by the absence of non-integer L signals (Fig. S5d). Notably, the magnetic diffuse scattering exhibits slightly broader features compared to the stacking-fault-induced nuclear diffuse signals (Fig. S5c), suggesting contributions from other sources for the two-dimensional (2D) magnetic signals, such as reduced out-of-plane magnetic correlations. 
+
+> SUPPLEMENTARY NOTE 4. REFINEMENT OF THE NEUTRON DIFFRACTION DATA
+
+For HEPS 3, when transitioning from the high-symmetry hexagonal notation to the lower-symmetry monoclinic notation, the system generates three equivalent domains, each oriented at 120 ◦ intervals relative to one another via rotations about the c∗-axis [2]. In the neutron diffraction data, peaks from all three monoclinic domains were observed, as evident from the six-fold magnetic peaks shown in Fig. 2b of the main text. We integrated the peaks from the most populated monoclinic domain and refined the structures via Fullprof software [3]. It was noticed that nuclear peaks with indices satisfying the condition 3 H ± K = 6 n, where n is an integer, are overlapped by all three domains. Two different protocols were implemented: (1) excluding them from the refinement or (2) accounting for their intensities as contributions from all three domains. Both approaches yielded essentially identical refinement results. Figure S6a shows the refinement of the nuclear peaks at 6 K. With the overlapped peaks included in the refinement, we achieved agreement factors of RF = 3 .78 and RF 2 = 7 .35. The refinement results support the conclusion that Mn, Fe, Co, and Ni are randomly distributed on the same site with a 25% occupancy for each. For the magnetic peaks, there are no peak-overlapping issues as peaks from different domains are well separated in the reciprocal space. For the refinement, we integrated the sharp intensity regions of the 3D magnetic signals. The data can be well refined using a zigzag magnetic structure with moments confined to the ac ∗ plane, resulting in agreement factors of RF =4.49 and RF 2 =8.37 (Fig S6b). During the refinement, we examined form factors of Mn 2+ ,Fe 2+ , Co 2+ , and Ni 2+ , respectively, and the resulting parameters showed no significant differences. Employing the Fe 2+ form factor, the refined magnetic moment exhibits components of 1.14(1) μB along the c∗-axis and -0.99(1) μB
+
+along the a-axis. This yields a total magnetic moment of 1.51(1) μB tilted 49 ◦ away from the honeycomb plane. 43 2 1 0 1 
+
+> (0, K, 0) (r.l.u.)
+> 1
+> 0
+> 1
+> (0, 0,  L) (r.l.u.)
+
+a Neutron diffraction, 6 K     
+
+> 6420
+> (0, K, 0) (r.l.u.)
+> 0
+> 2
+> 4
+> (0, 0,  L) (r.l.u.)
+
+b XRD, 300 K       
+
+> 21012
+> L(r.l.u.)
+> 10 1
+> 10 0
+> 10 1
+> 10 2
+> 10 3
+> Intensity (arb. units)
+
+c Neutron diffraction, 6 K         
+
+> Nuclear: Q=(0, -2, L)
+> Magnetic: Q=(0, -1, L)
+> 1234
+> L(r.l.u.)
+> 10 2
+> 4 × 10 1
+> 6 × 10 1
+> Intensity (arb. units)
+
+d XRD, 300 K   
+
+> Structrual: Q=(0, -2, L)
+> 0.0
+> 0.5
+> 1.0
+> Intensity (arb. units)
+> 30
+> 60
+> 90
+> Intensity (arb. units)
+
+FIG. S5. Stacking fault characterization in HEPS 3. a, b, Neutron diffraction and XRD patterns in the 0 KL plane, respectively. Magnetic signals appear at Q = (0 , ±1, L ), while all other reflections correspond to nuclear (structural) contribu-tions. c, d, One-dimensional Q cuts along the L direction. The blue, red, and green vertical ticks denote nuclear reflections originating from three distinct crystallographic domains. 0 20 40 60 80 100  
+
+> Observed intensity (arb. units)
+> 0
+> 20
+> 40
+> 60
+> 80
+> 100
+> Calculated intensity (arb. units)  Nuclear peaks
+> T= 6 K
+
+a      
+
+> 0.0 0.5 1.0 1.5 2.0
+> Observed intensity (arb. units)
+> 0.0
+> 0.5
+> 1.0
+> 1.5
+> 2.0 Magnetic peaks
+> T= 6 K
+
+b
+
+FIG. S6. Refinement of neutron diffraction data. Comparison between measured and calculated intensities for a, nuclear peaks, and b, 3D magnetic signals. The latter are simulated based on a zigzag magnetic structure as discussed in the text. 
+
+SUPPLEMENTARY NOTE 5. SINGLE-ION ANISOTROPY 
+
+Single-ion anisotropy arises from the combined effects of electronic filling, crystal electric field (CEF) splitting, and spin-orbit coupling (SOC). Here, supplemented with exact diagonalization (ED) calculations of atomic models, we demonstrate how these parameters, particularly electronic filling and trigonal distortion, influence the single-ion anisotropy. For a TMO 6 octahedron, the cubic CEF splits the ten 3 d orbitals into a high-energy eg manifold and a low-energy 
+
+t2g manifold, separated by an energy difference of 10 Dq . Trigonal distortion, which is relevant for HEPS 3, further splits the t2g states while leaving the eg manifold unaffected. Since the TMO 6 octahedra in HEPS 3 are elongated, the corresponding trigonal field is positive ( δ > 0), splitting the t2g manifold into a low-energy singlet and a high-energy doublet. In contrast, the neighboring magnetic cations induce a negative trigonal field ( δ < 0) [4]. Based on the single-ion anisotropy observed in TMPX 3, we conclude that in HEPS 3, the overall trigonal field is negative. Here, 50 -8 -16 0 0.4 0.8 010 20 30 40 50 Ni 
+
+d            
+
+> H// c*
+> H⊥c*Energy (meV)
+> δ(meV) H(meV)
+> n=3
+> Isotropic
+> 0-8 -16 00.4 0.8 010 20 30 40 50 Co
+
+c             
+
+> H// c*H⊥c*Energy (meV)
+> δ(meV) H(meV)
+> n=2
+> n=2 Easy-plane
+> 0-8 -16 00.4 0.8 010 20 30 40 50 Fe
+
+b         
+
+> H// c*H⊥c*Energy (meV)
+> n=2
+> n=1 Easy-axis
+> 0-8 -16 00.4 0.8 010 20 30 40 50 Mn
+
+a    
+
+> H⊥c*
+> H// c*Energy (meV)
+> n=6 Isotropic
+
+FIG. S7. Exact diagonalization calculations of atomic models. a, Left panel: energy level diagram for a Mn 2+ (d5) ion as a function of trigonal distortion δ. Here, the cubic crystal field splitting 10 Dq is fixed to 1 eV, and the spin-orbit coupling is fixed to the atomic value. Note that n is the degree of degeneracy. Right panel: Zeeman splitting as a function of external magnetic fields applied parallel and perpendicular to the c∗ direction, respectively, with trigonal distortion δ = −20 meV. b-d, 
+
+Same as a but for Fe 2+ (d6), Co 2+ (d7), and Ni 2+ (d8), respectively. 
+
+only the orbital degree of freedom is considered. Incorporating SOC, which is weak but finite for 3 d elements, further reduces the symmetry. We now focus on the ED calculations, performed using an atomic model that includes all ten spin-resolved 3 d
+
+orbitals. The Hund’s coupling is set to 1 eV, and the cubic CEF splitting is fixed at 10 Dq = 1 eV. The SOC strength is varied according to the atomic values of the respective ions. For the Mn 2+ ion (3 d5) in the high-spin state, the half-filled 3 d shell leads to a ground state with S = 5 /2 ( n = 6, n is the degeneracy degree) and quenched orbital momentum, rendering it insensitive to trigonal distortion (Fig. S7a). The ground state exhibits isotropic Zeeman splitting under magnetic fields applied along different directions, indicating negligible single-ion anisotropy. For the Fe 2+ ion (3 d6), in the absence of trigonal distortion, the combination of cubic CEF and SOC yields a triplet ground state ( n = 3) and a nearly degenerate quintuplet excited state ( n = 5). Note that finite SOC breaks down the 
+
+S = 2 state here. Applying trigonal distortion, the triplet ground state splits into a singlet and a doublet (Fig. S7b). If exchange interactions are sufficiently strong, these states recombine into a triplet, and the intrinsic energy gap can be mapped into the single-ion anisotropy. Upon applying a magnetic field, the energy change is more pronounced along the c∗ direction, indicating easy-axis anisotropy, consistent with the spin orientation observed in FePS 3.In contrast, since SOC plays a more important role for Co 2+ ion (3 d7), its ground state is a well-defined doublet, which remains robust with trigonal distortion but develops distinct anisotropy (Fig. S7c). The Zeeman splitting is less pronounced when the magnetic field is applied along the c∗ direction, indicating easy-plane anisotropy, in line with the spin orientation observed in CoPS 3. Notably, with the same trigonal distortion, Fe 2+ exhibits easy-axis anisotropy, whereas Co 2+ prefers easy-plane anisotropy due to their distinct electronic filling. Similar to Mn 2+ , the Ni 2+ ion (3 d8) with a half-filled eg manifold exhibits quenched orbital degrees of freedom, leading to a triplet ground state, which is inert to trigonal distortion and shows isotropic Zeeman splitting (Fig. S7d). It is worth noting that thus far, we have only considered high-energy parameters, such as cubic CEF, SOC, and 60 0.5 1 1.5 2           
+
+> J
+> 020 40 60 80 100
+> Θ (deg)
+> Θ1Θ2
+> Θ2Θ1
+> J
+> Spin 1
+> ∆1= -1 Spin 2
+> ∆2= 0.5
+> xyz
+> FIG. S8. Calculated exchange interaction dependent spin orientations. We adopt an antiferromagnetic spin chain composed of two types of atoms arranged alternatively, with distinct single-ion anisotropies. The spin orientations are then determined by tuning the intra-chain exchange interaction J.
+
+the trigonal field. These parameters cause Fe 2+ and Co 2+ ions to exhibit robust single-ion anisotropy, whereas Mn 2+ 
+
+and Ni 2+ ions behave nearly isotropic. Other low-energy parameters, such as lattice distortion beyond the trigonal field, can introduce further anisotropy and determine the spin orientation for Mn 2+ and Ni 2+ . Order-by-disorder and anisotropic exchange interactions, such as Kitaev terms, may also play a role [5]. Nevertheless, we can conclude that the spin orientations for Fe 2+ and Co 2+ ions are more resistant to competition with exchange interactions due to their substantial single-ion anisotropy. Furthermore, we would like to emphasize that the determined spin orientation for each element is an average effect. For ions of the same element, local distortion varies from site to site due to atomic disorder intrinsic to high-entropy materials. As an example, the detailed CEF for Mn 2+ ions depends on whether neighboring ions are Mn 2+ , Fe 2+ ,Co 2+ , or Ni 2+ . Consequently, single-ion anisotropies may vary across the lattice for each element. Nonetheless, the variation is subtle, and our data unambiguously demonstrate that the average spin orientations for different elements are distinct. 
+
+> SUPPLEMENTARY NOTE 6. COMPETITION BETWEEN SINGLE-ION ANISOTROPY AND EXCHANGE INTERACTIONS
+
+To demonstrate the competition between single-ion anisotropy and exchange interactions, we construct a toy model: an antiferromagnetic spin chain composed of two types of atoms arranged alternatively, labeled as Spin 1 and Spin 2. We adopt the Hamiltonian: 
+
+H = J X
+
+> ⟨ij ⟩
+
+SiSj + ∆ 1
+
+X
+
+> i
+
+(Sz 
+
+> 1
+
+)2 + ∆ 2
+
+X
+
+> j
+
+(Sz 
+
+> 2
+
+)2 (1) where J is the intra-chain exchange interaction, ⟨ij ⟩ denotes bond sums along the chain, and ∆ 1 and ∆ 2 are single-ion anisotropies for Spin 1 and Spin 2, respectively. To reflect the co-existence and competition of easy-plane and easy-axis anisotropies in HEPS 3, here, spin 1 is set to present strong easy-axis anisotropy (∆ 1 = −1) and Spin 2 intermediate easy-plane anisotropy (∆ 2 = 1 /2). The Hamiltonian is solved within the mean-field framework. When J = 0, Spin 1 and Spin 2 align along the z and x directions, respectively, following their single-ion anisotropy (Fig. S8). We define Θ as the angle between the spin and the x direction, following the definition in the main text. Thus, Θ 1 = 90 ◦ for Spin 1 and Θ 2 = 0 ◦ for Spin 2. When J is non-zero, it favors antiparallel alignment for the Spin 1 and Spin 2 sublattices, which competes with the single-ion anisotropy. Consequently, Spin 1 starts to rotate toward the x axis (Θ 1 < 90 ◦) and Spin 2 rotates toward the z axis (Θ 2 > 0◦). As ∆ 1 is larger than ∆ 2, Θ 1 is more robust than Θ 2.When J is sufficiently large, it enforces an antiparallel alignment for both Spin 1 and Spin 2, making them aligned along the z direction due to the stronger single-ion anisotropy of Spin 1. The situation is much more complex in real materials. There are multiple types of exchange interactions and single-ion anisotropies, making effective modeling difficult. Nevertheless, our toy model here qualitatively demonstrates that 7a non-HE b HE      
+
+> 0.6 0.8 1.0 1.2 1.4
+> (0, K) (r.l.u.)
+> 0
+> 200
+> 400
+> 600
+> 800
+> 1000
+> Intensity (arb. units)
+
+c
+
+> non-HE
+> ×16 HE
+
+FIG. S9. Simulation of the structure factor of HEPS 3. a, b, Honeycomb lattice for the non-HE and HE scenarios, respectively. For the HE case, only a quarter of the sites are retained randomly. The red and blue dots indicate the spin-up and spin-down sites, respectively. c, Calculated squared magnetic structure factor across the magnetic peak of zigzag magnetic order. 
+
+the competition between single-ion anisotropy and exchange interactions can indeed trigger the element-specific spin orientations illustrated in the main text. 
+
+SUPPLEMENTARY NOTE 7. STRUCTURE FACTOR SIMULATION 
+
+To better understand the magnetic signals observed via RSXS, we developed a simple toy model to simulate the magnetic order in HEPS 3. Consider a 2D honeycomb lattice where each site is occupied by a single type of magnetic atom (Fig. S9a). A zigzag spin arrangement results in a magnetic peak at Q= (0 , 1), which is also the propagation vector (Fig. S9c). To mimic the HE scenario in HEPS 3, we randomly remove three-quarters of the atoms while maintaining the zigzag spin arrangement (Fig. S9b). Interestingly, the magnetic signals at Q= (0 , 1) persist, with the same peak width determined by the system size. However, the peak amplitude was reduced by a factor of 16, as only a quarter of the atoms contribute to the magnetic signals (Fig. S9c). In real materials, the situation becomes more complex. To stabilize long-range magnetic order, it is necessary to account for exchange interactions, which play a crucial role in determining the magnetic structure. 80.3 0.2 0.1 0.0 0.1 0.2 0.3 
+
+> (H, 1) (r.l.u.)
+> L=0.0
+> L=0.1
+> L=0.2
+> L=0.3
+> L=0.4
+> L=0.5
+> L=0.6
+> L=0.7
+> L=0.8
+> L=0.9
+> L=1.0
+> ×0.15
+> ×0.15
+
+a       
+
+> 0.7 0.8 0.9 1.0 1.1 1.2 1.3
+> (0, K) (r.l.u.)
+> ×0.15
+> ×0.15
+
+b      
+
+> 0.0 0.2 0.4 0.6 0.8 1.0
+> L(r.l.u.)
+> 0.00
+> 0.05
+> 0.10
+> 0.15
+> 0.20
+> 0.25
+> FWHM (r.l.u.)
+
+c     
+
+> FWHM of Q= (0, 1, L)
+> along Kdirection
+> RSXS: Mn
+> RSXS: Fe
+> RSXS: Co
+> RSXS: Ni
+> Neutron
+
+FIG. S10. Magnetic peak widths obtained from neutron diffraction and RSXS. a, One-dimensional Q cuts along 
+
+H direction across Q = (0 , 1, L ) with various L. The dots represent neutron diffraction data, and the solid lines are fits with Gaussian profiles. b, Q cuts along K direction. c, L dependent peak widths obtained from fitting. In the neutron diffraction data, the 2D magnetic peak width decreases when approaching the 3D signals at L = 0 and L = 1. This behavior is not observed in RSXS data since RSXS probes element-specific magnetic correlations. Furthermore, the Q resolution in RSXS varies across different elements due to differences in incident energy, penetration depth, and beam footprint, complicating direct comparisons of peak widths between elements and with neutron diffraction results. 630 635 640 645 650 655 660                     
+
+> 0.0
+> 0.2
+> 0.4
+> 0.6
+> XAS (arb. units)
+> Mn
+> -pol.
+> -pol.
+> 700 705 710 715 720 725 730
+> 0.0
+> 0.2
+> 0.4
+> 0.6
+> 0.8
+> Fe
+> -pol.
+> -pol.
+> 770 775 780 785 790 795 800
+> Incident energy (eV)
+> 0.0
+> 0.2
+> 0.4
+> 0.6
+> 0.8
+> XAS (arb. units)
+> Co
+> -pol.
+> -pol.
+> 845 850 855 860 865 870 875 880
+> Incident energy (eV)
+> 0.00
+> 0.25
+> 0.50
+> 0.75
+> 1.00 Ni
+> -pol.
+> -pol.
+
+FIG. S11. X-ray absorption spectrum (XAS) at the TM L edge measured at REIXS beamline for various elements and photon polarizations. All measurements were performed in total fluorescence yield (TFY) mode at θ = 20 ◦
+
+and T = 21 K. The black triangles mark the photon energies at which Q scans were conducted in Fig. S12 and Fig. 3b–f of the main text. These patterns are consistent with previously reported XAS results for divalent transition metals. 90.8 0.9 1.0 1.1 1.2                 
+
+> (0, K) (r.l.u.)
+> 21 K
+> 30 K
+> 40 K
+> 50 K
+> 60 K
+> 65 K
+> 70 K
+> 75 K
+> 80 K
+> 90 K
+> 100 K
+> Mn
+> 0.8 0.9 1.0 1.1 1.2
+> (0, K) (r.l.u.)
+> 21 K
+> 30 K
+> 40 K
+> 50 K
+> 60 K
+> 65 K
+> 70 K
+> 75 K
+> 80 K
+> 90 K
+> 100 K
+> Fe
+> 0.8 0.9 1.0 1.1 1.2
+> (0, K) (r.l.u.)
+> 21 K
+> 30 K
+> 40 K
+> 50 K
+> 60 K
+> 65 K
+> 70 K
+> 75 K
+> 80 K
+> 90 K
+> Co
+> 0.8 0.9 1.0 1.1 1.2
+> (0, K) (r.l.u.)
+> 21 K
+> 30 K
+> 40 K
+> 50 K
+> 60 K
+> 65 K
+> 70 K
+> 75 K
+> 80 K
+> 90 K
+> Ni
+
+FIG. S12. Background subtracted RSXS scans across the 2D magnetic signals at the indicated temperatures for different elements. The solid lines are fitting results using pseudo-Voigt profiles. Note that the accessible Q range is limited, as the photons are blocked by the sample at large Q. The fitted peak heights are summarized in Fig. 3f of the main text. 634 635 636 637 638 639 640 641 642 643                                
+
+> 0
+> 30
+> 60
+> 90
+> 120
+> XAS (arb. units)
+> Mn
+> = 3.0 20.0
+> -pol.
+> -pol.
+> 703 704 705 706 707 708 709 710 711
+> 0
+> 30
+> 60
+> 90
+> 120 Fe
+> = 4.0 24.0
+> -pol.
+> -pol.
+> 775 776 777 778 779 780 781 782 783 784
+> Incident energy (eV)
+> 0
+> 30
+> 60
+> 90
+> 120
+> XAS (arb. units)
+> Co
+> = 23.3 42.3
+> -pol.
+> -pol.
+> 851 852 853 854 855 856 857 858 859 860
+> Incident energy (eV)
+> 0
+> 40
+> 80
+> 120
+> 160
+> Ni
+> = 110.5 123.5
+> -pol.
+> -pol.
+
+FIG. S13. XAS measured at 13-3 beamline. The data were collected using a two-dimensional (2D) detector with a rotation of the sample. Thus, counts from a range of θ are summarized, which are indicated in the plots. The black triangles indicate the photon energies where the RSXS scans were taken in Fig. 4 of the main text. The features are overall consistent with the REIXS results. 10 0
+
+60 
+
+120 
+
+180 
+
+> Intensity (arb. units)
+
+=0 =15 =35 =60 =82 Mn 
+
+Q (0, -1, 0.19) 
+
+Fit: -pol. 
+
+Fit: -pol. 
+
+Data: -pol. 
+
+Data: -pol. 
+
+0.0 
+
+0.4 
+
+0.8 
+
+1.2 
+
+1.6 
+
+> Intensity (arb. units)
+
+=0 =50 =72 =80 =90 Fe 
+
+Q (0, -1, 0.32) 
+
+Fit: -pol. 
+
+Fit: -pol. 
+
+Data: -pol. 
+
+Data: -pol. 
+
+0.00 
+
+0.04 
+
+0.08 
+
+0.12 
+
+0.16 
+
+> Intensity (arb. units)
+
+=0 =12 =32 =50 =90 Co 
+
+Q (0, -1, 0.49) 
+
+Fit: -pol. 
+
+Fit: -pol. 
+
+Data: -pol. 
+
+Data: -pol. 
+
+100 0 100 
+
+(deg) 
+
+0.00 
+
+0.08 
+
+0.16 
+
+0.24 
+
+0.32 
+
+> Intensity (arb. units)
+
+=0 
+
+100 0 100 
+
+(deg) 
+
+=25 
+
+100 0 100 
+
+(deg) 
+
+=50 
+
+100 0 100 
+
+(deg) 
+
+=72 
+
+100 0 100 
+
+(deg) 
+
+=90 Ni 
+
+Q (0, 1, 0.57) 
+
+Fit: -pol. 
+
+Fit: -pol. 
+
+Data: -pol. 
+
+Data: -pol. 
+
+FIG. S14. Azimuthal dependence of the magnetic signals calculated in the full range with different spin canting angles. Note that the data at the Ni L edge were collected at positive K while others were measured at negative K due to background considerations. Additionally, ψ for Q with positive K corresponds to ψ + 180 ◦ for symmetric Q with negative K.11 
+
+[1] S. K. Choi, R. Coldea, A. N. Kolmogorov, T. Lancaster, I. I. Mazin, S. J. Blundell, P. G. Radaelli, Y. Singh, P. Gegenwart, K. R. Choi, S. W. Cheong, P. J. Baker, C. Stock, and J. Taylor, Spin waves and revised crystal structure of honeycomb iridate Na 2IrO 3, Physical Review Letters 108 , 127204 (2012). [2] D. Lan¸ con, H. C. Walker, E. Ressouche, B. Ouladdiaf, K. C. Rule, G. J. McIntyre, T. J. Hicks, H. M. Rønnow, and A. R. Wildes, Magnetic structure and magnon dynamics of the quasi-two-dimensional antiferromagnet FePS 3, Physical Review B 
+
+94 , 214407 (2016). [3] J. Rodr´ ıguez-Carvajal, Recent advances in magnetic structure determination by neutron powder diffraction, Physica B: Condensed Matter 192 , 55 (1993). [4] K. I. Kugel, D. I. Khomskii, A. O. Sboychakov, and S. V. Streltsov, Spin-orbital interaction for face-sharing octahedra: Realization of a highly symmetric SU(4) model, Physical Review B 91 , 155125 (2015). [5] J. A. Sears, L. E. Chern, S. Kim, P. J. Bereciartua, S. Francoual, Y. B. Kim, and Y.-J. Kim, Ferromagnetic Kitaev interaction and the origin of large magnetic anisotropy in α-RuCl 3, Nature Physics 16 , 837 (2020).

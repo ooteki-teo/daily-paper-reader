@@ -1,0 +1,410 @@
+Title: Thermal stability of pair density wave in a $d$-wave altermagnetic superconductor
+
+URL Source: https://arxiv.org/pdf/2603.25314v1
+
+Published Time: Fri, 27 Mar 2026 00:53:49 GMT
+
+Number of Pages: 10
+
+Markdown Content:
+# Thermal stability of pair density wave in a d-wave altermagnetic superconductor 
+
+Amrutha N Madhusuthanan 1 and Madhuparna Karmakar 1, ∗
+
+> 1
+
+Department of Physics and Nanotechnology, SRM Institute of Science and Technology, Kattankulathur, Chennai 603203, India 
+
+(Dated: March 27, 2026) We study finite-momentum superconductivity in a two-dimensional d-wave altermagnetic superconductor us-ing a non-perturbative Monte Carlo approach beyond mean-field theory. We show that altermagnetism stabilizes a pair density wave (PDW) state without external magnetic fields and enables its survival at finite temperatures with robust phase coherence. Our results establish altermagnetism as a promising route to realizing thermally stable PDW superconductivity and identify clear thermodynamic and spectroscopic signatures. 
+
+Introduction: Altermagnetism (ALM), arising purely out of the magnetic space group symmetry and considered to be the magnetic counterpart of unconventional superconductivity promises to bring in the best of both ferromagnetism and an-tiferromagnetism [1–3]. Characterized by a net zero magnetic polarization and non-relativistic momentum-dependent spin-splitting arising out of the PT symmetry breaking ALM is considered to be important not just for its potential application in spintronics but rather in its promise to bring forth esoteric quantum systems, phases and phase transitions [1–41]. One such promising quantum system is the altermagnetic super-conductor (ALM-SC) with finite momentum superconducting (SC) pairing viz. the pair density wave (PDW) [42–50]. Finite momentum pairing has been largely explored in the context of Pauli limited superconductors and Fulde-Ferell-Larkin-Ovchinnikov (FFLO) phase wherein an applied Zee-man field induced imbalance in the fermionic population pro-motes the pairing instability at finite momentum [51, 52]. FFLO and Pauli limited superconductors have been exten-sively investigated both for continuum and lattice fermion based models using a host of analytic and numerical ap-proaches [53–66]. Further, experimental realization of such a SC state has been reported in the context of ultracold atomic gases [67–70] and solid state materials such as, heavy fermion superconductors [71–80], layered organic materials [81–88] and iron arsenide superconductors [89–91]. The finite momentum paired PDW phase, though has been theoretically explored time and again [92–99] and experi-mentally observed in materials such as, La-based underdoped high-Tc cuprates [100], Kagome metals [101, 102], UTe 2
+
+[103, 104], EuRbFe 4As 4 [105] etc. are found to be extremely fragile against thermal fluctuations and other perturbations. Unlike FFLO, the finite momentum pairing in a PDW state is dictated purely by the Fermi surface topology and doesn’t require an external magnetic field [92, 99]. The recently discovered ALM have put forward the pre-cise platform which fulfils the required criteria for realizing the PDW state and expectedly there has been a flurry of the-oretical and computational research both on the bulk and SC-ALM heterostructures to investigate a prospective PDW state [42–50, 106–110]. The studies have however remained con-fined to the premises of the mean field theory (MFT) and phe-nomenological Ginzburg-Landau formalism, investigating the role of ALM towards a stable PDW ground state and its re-lated phenomena [42–50, 106–110]. It is noteworthy that the actualization of the PDW phase in real materials is crucially dependent on its stability against thermal fluctuations and per-turbation; an issue that can’t be addressed within the purview of the MFT. In this letter we attempt to discourse on this issue within the framework of the non perturbative static path approxi-mated (SPA) Monte Carlo technique that takes into account the spatial fluctuations of the fermionic correlators at all or-ders and bring forth quantitative signatures of the finite tem-perature PDW phase in two-dimensional (2D) d-wave ALM-SC. Based on the thermodynamic and spectroscopic signa-tures of this system we for the first time exhibit the stability and provide the estimate of the thermal scales for a PDW state. Our primary results from this work entails: (i) we map out the ground state phase diagram of a d-wave ALM-SC com-prising of a uniform Bardeen-Cooper-Schrie ff er (BCS), a pair density wave (PDW), a quantum breached pair (QBP), am-plitude modulated Larkin-Ovchnnikov (LO) and a polarized Fermi liquid (PFL) phases, (ii) based on our analysis of the thermodynamic and spectroscopic signatures we provide the first evidence of the stability of the PDW phase against ther-mal fluctuations and provide sharp quantitative estimates of the thermal scales. 
+
+Theoretical model: We model the system based on the 2D attractive Hubbard Hamiltonian with inter-site interaction and spin-dependent anisotropic hopping on a square lattice (see supplementary materials (SM) for the details), that reads as, ˆH =
+
+X
+
+> ⟨i j ⟩,σ
+
+(−ti j + σtam ηi j )(ˆ c† 
+
+> i,σ
+
+ˆc j,σ + h.c.)
+
+−
+
+X
+
+> i,σ
+
+(μ + σzi h)ˆ ni,σ − | U|
+
+X
+
+> ⟨i j ⟩
+
+ˆni ˆn j (1) where, ti j = t = 0.5 is the nearest neighbor hopping and sets the reference energy scale of the system. The second term depicts the dx2−y2 ALM interaction such that, tam quantifies the strength of the interaction and ηi j is the d-wave form fac-tor, leading to tˆx = t − σtam  
+
+> 2
+
+and tˆy = t + σtam  
+
+> 2
+
+; σ = + (−)for the ↑(↓) spin species. SC pairing is brought in via the attractive interaction |U| > 0, the chemical potential μ dic-tates the fermionic number density in the system and the Zee-man field h allows for a population imbalance between the fermionic species, leading to a finite magnetic polarization, 
+
+m. The model is made numerically tractable via Hubbard-    
+
+> arXiv:2603.25314v1 [cond-mat.supr-con] 26 Mar 2026 FIG. 1. Ground state phase diagram of d-wave altermagnetic super-conductor in the tam −h-plane showing the BCS, QBP, PDW, LO and PFL phases along with the corresponding transition scales (solid lines with points).
+
+Stratonovich (HS) [111, 112] decomposition of the interaction term, introducing the randomly fluctuating complex bosonic auxiliary field ∆i j = |∆i j |eϕi j which couples to the d-wave pair-ing singlet, ( ci↑c j↓ + c j↑ci↓). The SC pairing amplitude is de-fined as, ∆i j ∝ | ∆i j | cos( q.ri) where q ∈ { qx, qy} is the pairing momentum and the anisotropic SC phase is ϕi j ∈ { ϕxi j , ϕ yi j } with the relative phase being ϕrel i j = ϕxi j − ϕyi j .
+
+Numerical methods: Our primary numerical approach is SPA, based on the adiabatic approximation of the slow (ther-mal) bosonic fields serving as a random, static disordered, fluctuating background to the fast moving fermions [113– 116]. The approximation allows one to treat the bosonic field as classical variable and provide access to real frequency de-pendent quantities without requiring an analytic continuation (see SM for details). In addition, for accessing the ground state of the system we use an alternate approach of the varia-tional MFT. As T → 0, the thermal fluctuations die o ff , ∆i j and {qx, qy}
+
+can thence be used as variational parameters to minimize the energy. In the spirit of MFT we treat ∆i j = |∆| as a real number and fix ϕrel i j = ϕxi j − ϕyi j = π. To capture the spatially modulated SC phases periodic configurations of the order parameter as, (i) ∆i j ∼ | ∆| cos( qx i), (ii) ∆i j ∼ | ∆|(cos( qx i) + cos( qy i)) are optimized over the tam − h plane. The thermodynamic phases and transition scales are quan-tified in terms of: (i) real space maps of the pairing field am-plitude ( |∆i j |) and phase correlation (cos ϕx 
+
+> 0
+
+− ϕxi j 
+
+), (ii) sin-gle particle density of states (DOS) ( N(ω)), (iii) spin-resolved Fermi surface topology ( Aσ(k, 0)) and (iv) magnetic polariza-tion ( m) (see SM for details). The results presented in this letter corresponds to a system size of L = 24 unless specified otherwise and are found to be robust against finite system size eff ects. The calculations are carried out in the grand canonical ensemble at |U| = 4t and μ = −0.2t, tantamount to a fermionic number density of n ≈ 0.9. The ground state variational re-sults are computed at a temperature of T = 10 −3t.
+
+Ground state: Fig.1 sums up the ground state of the system in the tam − h plane, typified in terms of the thermodynamic and spectroscopic signatures shown in Fig.2. The thermody-namic phases are mapped out based on the variational MFT calculation and are classified in terms of the pairing field am-plitude ( |∆|), pairing momentum ( q) and magnetic polarization (m) as: (i) BCS ( |∆| , 0, q = 0, m = 0), (ii) PDW ( |∆| , 0, 
+
+q , 0, m = 0), (iii) LO (1D) ( |∆| , 0, qx = 0, qy , 0, m , 0), (iv) LO (2D) ( |∆| , 0, qx , 0, qy , 0, m , 0) and (v) PFL (|∆| = 0, q = 0, m , 0). Note that at tam = 0 the regime 0 < h ≲ hc1 can further be sub-divided into an uniform (BCS) 
+
+d-wave superconductor (0 < h ≲ hQBP ) and a QBP phase (hQBP < h ≲ hc1). The later is a gapless SC phase quantified in terms of |∆| , 0, q = 0, m , 0 and characterized by a finite spectral weight at the Fermi level in the single particle DOS [65, 66]. It is a phase cohered, spatially inhomogeneous SC state with complimentary magnetic polarization and is ex-pected to survive over the regime 0 < tam ≲ tam 1, as shown in Fig.1. Since the focus of this work is on the q , 0 SC states in the tam − h − T space we don’t analyze the QBP phase any further in this manuscript and refer to all the q = 0 phases as BCS. In Fig.2(a)-(c) we show the optimized |∆|, q and m, respec-tively, across the tam − h cross sections. While the tam = 0limit essentially corresponds to a BCS superconductor, ALM (tam , 0) weakly suppresses |∆| (Fig.2(a)) and simultaneously promotes a q , 0 pairing (Fig.2(b)); leading to a collinear (q = {0, π }) paired state at h = 0. The finite momentum paired state at h = 0, tam , 0 represents the illusive PDW, which un-like the standard FFLO state is devoid of any magnetic polar-ization, as observed from Fig.2(c). Based on the pairing field amplitude and momentum we define the critical ALM scales at the ground state as, (i) tam 1 ∼ 0.6t and (ii) tam 2 ∼ 2.4t, de-marcating the second order transitions between the BCS-PDW and PDW-PFL phases, respectively. In a similar spirit, the ap-plied Zeeman field regime 0 < h ≲ hc1 ∼ 0.8t corresponds to the BCS state for tam ≲ tam 1, with q = 0 and to a 1D modu-lated LO phase with q , 0 and m , 0 for tam 1 < tam ≲ tam 2.The Zeeman field promotes the FFLO pairing, such that, a first order transition takes place across hc1 and a non-collinear (q, q) 2D modulated LO state with m , 0 is realized over the regime hc1 < h ≲ hc2, as is evident from Fig.2(a-c). The LO phase via a second order transition gives way to the PFL at 
+
+h ≳ hc2, which lacks any superconducting correlations. The real space maps for the pairing field amplitude at the selected tam − h cross sections, representative of the various phases are shown in Fig.2(d), while the corresponding spin resolved Fermi surface topology as determined from the low energy spectral weight distribution A(k, 0) are presented in Fig.2(e) and Fig.2(f). In Fig.2(g) we show the associated sin-gle particle DOS. The BCS state at tam = 0.0, h = 0.0 is an uni-form, long range phase cohered dx2−y2 state with a nodal Fermi surface comprising of hot spots along the diagonals of the Brillouin zone (Fig.2(e)-(f)). The corresponding single par-ticle DOS with the characteristic “V”-shape at the Fermi level FIG. 2. Mean field estimates of the thermodynamic and spectro-scopic quantities at selected tam − h cross sections. (a) Pairing field amplitude ( |∆|), (b) pairing momentum ( q =
+
+q
+
+q2 
+
+> x
+
++ q2 
+
+> y
+
+), (c) magnetic polarization ( m), (d) real space maps of the pairing field amplitude at representative fields corresponding to BCS, PDW, 1D-LO and 2D-LO phases, (e)-(f) spin resolved low energy spectral weight distribu-tion ( Aσ(k, 0)) mapping out the underlying Fermi surface, (g) single particle DOS ( N(ω)) at the representative tam − h cross sections. 
+
+is shown in Fig.2(g). At tam = 0.6t, h = 0.0 the system hosts a finite momentum (0 , π ) PDW phase, which though maps out a nearly uniform, phase cohered SC phase in real space, signif-icantly alters the nodal Fermi surface topology of the dx2−y2
+
+uniform superconductor (Fig.2(e)-(f)). Note that such seg-mentation of the Fermi surface is reported over a large class of SC systems such as, magnetic superconductor, magnet-superconductor hybrid, helical superconductor etc. and arises due to the finite momentum scattering of the quasiparticles. Unlike the standard BCS pairing which couples the |k↑⟩ to the |− k↓⟩ states, a finite momentum pairing connects the |k↑⟩
+
+state to |− k + q↓⟩ and |− k − q↓⟩ states as well, giving rise to a dispersion spectra with multiple branches and non trivial van Hove singularities. Applied Zeeman field leads to spin de-pendent splitting of the dispersion spectra bringing forth ad-ditional dispersion branches. Real space modulated paired states are realized at h = 0.9t and h = 1.2t, representative of the 1D and 2D LO phases, respectively. The Zeeman field induced imbalance in the population of the fermionic species (and therefore m , 0) shows up in the form of the Fermi sur-face mismatch, as depicted in Fig.2(e) and Fig.2(f). The spec-
+
+FIG. 3. Thermodynamic and spectroscopic signatures in the BCS and PDW phases at representative tam − T cross sections and h = 0. (a), (c), (e) real space maps corresponding to the thermal evolution of the pairing field amplitude |∆i j | at the selected values of tam = 0, tam = 1t
+
+and tam = 1.4t, respectively. (b), (d), (f) thermal evolution of the phase correlation (cos ϕx 
+
+> 0
+
+− ϕxi j 
+
+) at tam = 0, tam = 1t and tam = 1.4t,respectively. (g)-(i) corresponding single particle DOS as a function of temperature. (j)-(k) real space maps for the thermal evolution of 
+
+|∆i j | and cos ϕx 
+
+> 0
+
+− ϕxi j 
+
+ at a Zeeman field of h = 1.0t and tam = 1.0t.
+
+troscopic signature of q , 0 pairing is in the form of gapless single particle DOS with finite spectral weight at the Fermi level, as shown in Fig.2(g) for the PDW and LO phases. 
+
+Finite temperature q , 0 phases: In Fig.3 we present the main result of this work highlighting the thermal stability of the PDW phase. While the possible ground state realizations of the PDW phase have been discussed in significant detail across literature even in the context of ALM-SC, the phase is known to be extremely fragile to thermal fluctuations, thereby evading its finite temperature actualization [92]. We provide unambiguous evidence of the finite temperature PDW in Fig.3 as determined using SPA in terms of the stability of the pair-ing field amplitude and (quasi) long range phase coherence against thermal fluctuations, at selected tam and h = 0. In agreement with the real space signatures the underlying Fermi surface is segmented and exhibit hot spots for quasiparticle scattering at isolated points of the Brillouin zone which un-dergoes thermal broadening with temperature (see SM). The uniform, phase cohered BCS state at tam = 0.0 under-goes thermal fluctuation induced spatial fragmentation with temperature, such that the global phase coherence is lost at 
+
+Tc ∼ 0.05 t conforming to the standard dx2−y2 paired supercon-ductor [65]. The loss of the global phase coherence is spa-tially quantified in terms of short range correlated isolated is-lands separated by non SC regimes as shown in Fig.3(a) and Fig.3(b). The PDW phase at tam = 1.0t is typified by real space modulation in pairing field amplitude and phase corre-lation, as shown in Fig.3(c)-(d). The regime of stability of the PDW phase at low temperatures as obtained via SPA is in agreement with the MFT estimates shown in Fig.1. Thermal fluctuations lead to rapid disordering of the PDW state with the corresponding Tc ∼ 0.03 t. At tam = 1.4t the PDW phase is fragile and is destroyed for T ≳ 0, see Fig.3(e)-(f). The spectroscopic fingerprint of the finite temperature PDW phase is analyzed in terms of the thermal evolution of the single particle DOS shown in Fig.3(g)-(i), at selected tam .At tam = 0.0 the single particle DOS at low temperatures be-haves as N(ω) ∝ ω as ω → 0, characteristic to the dx2−y2 pair-ing symmetry. Thermal fluctuations close the gap and broaden the spectra via large transfer of spectral weight away from the Fermi level. At tam = 1.0t the single particle spectra is gap-less and undergoes progressive temperature induced broad-ening. The tam = 1.4t cross section is largely devoid of SC pair correlations and the corresponding single particle spectra maps out the underlying non interacting band structure which undergoes thermal fluctuations induced broadening. Finally, Fig.3(j)-(k) shows the thermal fluctuation induced melting of the LO phase in terms of the pairing field amplitude and phase coherence at tam = 1.0t and h = 1.0t.
+
+Discussion and conclusions: The d-wave superconductiv-ity is prone to thermal fluctuations induced disordering ow-ing to the nodal order parameter and low energy excitations [65, 66]. The phase coherence decay sharply with tempera-ture, making the thermal transition scales non trivial to access, particularly in case of q , 0 pairing which tends to suppress the phase correlation even further. In the above sections we have shown that ALM can stabilize a finite temperature PDW against thermal fluctuations and have provided the ballpark es-timates of the corresponding Tc. These estimates can further be concretized in terms of the temperature dependence of the superfluid sti ff ness by determining the current-current correla-tor which is beyond the scope of the present work. A thermal phase diagram can however be mapped out based on the vari-ational MFT calculations as shown in Fig.4 which provides a        
+
+> FIG. 4. Thermal phase diagram as obtained from the variational mean field theory, showing the BCS and PDW phases and the corre-sponding thermal scales TBCS cand TPDW c. Note that while the thermo-dynamic phases and the order of phase transitions are well captured by MFT, the thermal scales are overestimated.
+
+qualitative estimate of the transitions in the tam − T plane at 
+
+h = 0. It must however be noted that MFT though captures the thermodynamic phases with reasonable accuracy, grossly over estimates the transition scales owing to its neglect of the phase fluctuations. Nevertheless, Fig.4 provides the estimate of the regimes over which the various SC correlations domi-nate. Over the regime 0 < tam ≲ tam 1 the uniform d-wave SC state is realized which gives way to the PDW phase over the regime tam 1 < tam ≲ tam 2. Thermal transitions to the PFL from both these phases are of second order. The experimental evidence of the Pauli limited supercon-ductivity and FFLO phase in solid state materials largely stems from the specific heat, magnetic torque, muon spin rota-tion ( μSR), nuclear magnetic resonance (NMR) and magnetic neutron scattering measurements [71–91]. Among the candi-date materials, heavy fermion superconductor CeCoIn 5 with its large e ff ective mass [71–80], 2D layered organic super-conductor κ-BEDT [81–88], iron pnictide KFe 2As 2 [89–91] and iron chalcogenide FeSe [117, 118], stands out. The low temperature, high magnetic field regime of these systems are reported to host finite momentum paired states. On the other hand, inspite of the several theoretical proposals so far there has not been an experimental evidence either for an ALM-SC or for the PDW phase therein. However, there are promis-ing candidates which can potentially host such a state. For example, spatially modulated superconducting gap has been observed in Kagome superconductors AV 3Sb 5 through spec-troscopic imaging [101]. Similarly, scanning tunnelling mi-croscopy and spectroscopy (STM /STS) and Josephson STS revealed a state akin to PDW in CsV 3Sb 5 [102, 119], inter-twined with a charge density wave (CDW) order and exhibit-ing pseudogap like features [102, 119]. Owing to the absence of the depairing magnetic field ALM provides a highly plau-sible route to actualize the PDW state in real materials. The results presented in this manuscript are determined using SPA Monte Carlo simulation based on the adiabatic approximation of the slow bosonic fields [113–116]. The method is well suited to address quantum phases and has been suitably used to study a wide class of many body systems such as, unconventional superconductivity [53, 54], geometrically frustrated lattices and Mott insulator-metal transitions (MIT) [120, 121], flat and multiband systems [122, 123] and most re-cently MIT in altermagnetic metals [124]. While the method is accurate to capture the finite temperature physics of the sys-tem, it doesn’t take into account the quantum fluctuations at 
+
+T → 0 and e ff ectively boils down to the MFT. The T , 0results discussed in this work are however accurate within the purview of SPA for T > TFL where, TFL is the Fermi liquid coherence temperature. 
+
+Acknowledgment: M.K. would like to acknowledge the use of the high performance computing facility (AQUA) at the In-dian Institute of Technology, Madras, India. 
+
+> SUPPLEMENTARY INFORMATION
+
+Model Hamiltonian and d-wave pairing: An attractive fermionic interaction doesn’t lead to an inter-site pairing by itself. If we start with a repulsive Hubbard model the s-wave pairing is inhibited by the formation of the local moments. In the strong coupling regime a t − J model obtains from the re-pulsive Hubbard model if the double occupancy is projected out as, ˆH = P[
+
+X
+
+> ⟨i j ⟩,σ
+
+ti j (ˆ c† 
+
+> i,σ
+
+ˆc j,σ + h.c.) +
+
+X
+
+> i j
+
+Ji j (⃗ σi.⃗σ j − 14 ˆni ˆn j)
+
+−μN]P (2) where, P is the projection operator that eliminates the double occupancy, Ji j = 4t2
+
+> i j
+
+/U and ⃗ σ is the electron spin operator. The Hamiltonian now contains spin-spin and density-density coupling but the projection needs to be retained for further cal-culation. An alternate approach can be implemented wherein both the Hubbard and the inter-site interactions are retained. The resulting t−J−V model doesn’t require explicit projection and the corresponding Hamiltonian reads as, ˆH =
+
+X
+
+> ⟨i j ⟩,σ
+
+(−ti j + σtam ηi j )(ˆ c† 
+
+> i,σ
+
+ˆc j,σ − U
+
+X
+
+> ⟨i j ⟩
+
+ˆni ˆn j
+
++V
+
+X
+
+> i
+
+ˆni↑ ˆni↓ − μN) (3) where, we have taken into account the spin-dependent ALM interaction such that, tam quantifies the strength of the interac-tion and ηi j is the d-wave form factor, leading to tˆx = t − σtam 
+
+> 2
+
+and tˆy = t + σtam  
+
+> 2
+
+; σ = + (−) for the ↑(↓) spin species. We treat 
+
+U and V independently and consider the V = 0 limit such that, the local moment formation is completely suppressed. The re-sulting Hamiltonian includes density-density coupling which can be decomposed into bosonic auxiliary pairing field ∆i j as follows: The partition function of the system is written in the func-tional integral form in terms of the Grassmann fields ψiσ(τ)and ¯ ψiσ(τ), 
+
+Z =
+
+Z
+
+DψD ¯ψ exp 
+
+(
+
+−
+
+Z β
+
+> 0
+
+dτL(τ)
+
+)
+
+(4) 
+
+L(τ) = L0(τ) + LU(τ) (5) 
+
+L0(τ) =
+
+X
+
+> ⟨i j ⟩,σ
+
+{ ¯ψiσ(( ∂τ − μ − σzi h)δi j + ti j − σtam ηi j )ψ jσ}(6) 
+
+LU(τ) = −U
+
+X
+
+> ⟨i j ⟩,σσ ′
+
+¯ψiσψiσ ¯ψ jσ′ ψ jσ′ (7) where, ti j = t = 0.5 is the nearest neighbor hopping and sets the reference energy scale of the system. Superconducting pairing is brought in via the attractive interaction |U| > 0, the chemical potential μ dictates the fermionic number density in the system and the Zeeman field h allows for a population imbalance between the fermionic species, leading to a finite magnetic polarization, m. β is the inverse temperature. We decompose the interaction term using Hubbard Stratonovich (HS) decomposition [111, 112] introducing the bosonic auxiliary d-wave pairing singlet ∆i j (τ). Here i j and 
+
+τ refers to the spatial and imaginary time dependence of the pairing field, respectively. In terms of the Matsubara fre-quency Ωn = 2πnT the pairing field reads as, ∆i jn , where T
+
+is temperature. The resulting partition function is given as, 
+
+Z =
+
+Z
+
+DψD ¯ψD∆D∆∗e− R β  
+
+> 0dτL(τ)
+
+(8) 
+
+L(τ) = L0(τ) + LU(τ) + Lcl (τ) (9) 
+
+L0(τ) =
+
+X
+
+> ⟨i j ⟩,σ
+
+{ ¯ψiσ(( ∂τ − μ − σzi h)δi j + ti j − σtam ηi j )ψ jσ}(10) 
+
+LU(τ) = −
+
+X 
+
+> i,j
+
+∆i j ( ¯ ψi↑ ¯ψ j↓ + ¯ψ j↑ ¯ψi↓) + h.c. (11) 
+
+Lcl(τ) = 4
+
+X 
+
+> i,j
+
+|∆i j |2
+
+|U| (12) The fermions are now quadratic but at the cost of an ex-tra integral over ∆ and ∆∗. The R DψD ¯ψ integral can now be performed to generate the e ff ective action for the random background fields {∆},
+
+Z =
+
+Z
+
+D∆D∆∗e−S e f f {∆,∆∗} (13) 
+
+S e f f = lnDet[ G−1{∆, ∆∗}] +
+
+Z β
+
+> 0
+
+dτLcl(τ) (14) here, G is the electronic Green’s function in the {∆} back-ground. 
+
+SPA Monte Carlo: Within the framework of SPA, the auxil-iary field retains the spatial fluctuations at all orders but retains only the Ωn = 0 mode of the Matsubara frequency, such that, 
+
+∆i j (τ) → ∆i j . The system can be thought of as fermions mov-ing on a random correlated background of classical ∆i j . The resulting e ff ective Hamiltonian reads as, FIG. 5. The thermal evolution of the PDW state at tam = 1.0t and h =
+
+0.0. Top row: Spatial maps corresponding to the pairing amplitude 
+
+|∆i j |. Bottom row: Zero-energy spectral weight distributions A(k, 0) that demonstrate the reconstruction of the Fermi surface. 
+
+He f f =
+
+X
+
+> ⟨i j ⟩,σ
+
+(−ti j + σtam ηi j )( c†
+
+> iσ
+
+c jσ + h.c.)
+
++
+
+X 
+
+> i,j
+
+∆i j (c†
+
+> i↑
+
+c† 
+
+> j↓
+
++ c†
+
+> j↑
+
+c†
+
+> i↓
+
+) + h.c. − μ
+
+X
+
+> i,σ
+
+ˆni,σ 
+
+−h
+
+X
+
+> i,σ
+
+σzi ˆni,σ + 4
+
+X 
+
+> i,j
+
+|∆i j |2
+
+|U| (15) where, the last term corresponds to the sti ff ness cost associ-ated with the now classical auxiliary field. The {∆i j } background obeys the Boltzmann distribution, 
+
+P{∆i j } ∝ T r c,c† e−βHe f f , related to the free energy of the system. For large, random background the trace is taken numerically. The background configurations are generated by Monte Carlo simulation, diagonalizing He f f for each attempted update of 
+
+∆i j . The computation cost is brought down by implementing traveling cluster approximation (TCA) scheme [65, 66]. The required fermionic correlators are then computed on the opti-mized background configurations. 
+
+Observables: The ground state and finite temperature phases are characterized based on the following thermody-namic and spectroscopic signatures, 
+
+• Magnetic polarization, 
+
+m = 1
+
+N ⟨n↑ − n↓⟩ (16) 
+
+• Single particle DOS, 
+
+N(ω) = 1
+
+N ⟨
+
+X
+
+> i
+
+(|uin|2δ(ω − En) + |vin|2δ(ω + En)⟩ (17) 
+
+• Spin resolved low energy spectral weight distribution, 
+
+Aσ(k, 0) = −(1 /π ) Im Gσ(k, ω → 0) (18) where, i and j correspond to two di ff erent sites on the lat-tice. ⟨·⟩ correspond to thermal average and σ is the spin la-bel. niσ are the number of the individual fermionic species, while uin and vin are Bogoliubov eigenfunctions correspond-ing to the eigenvalue En. The single particle Green’s function reads as, G(k, ω ) = lim δ→0 G(k, iωn)|iωn→ω+iδ, where G(k, ω )is the imaginary frequency transform of ⟨ck(τ)c†
+
+> k
+
+(0) ⟩.
+
+Thermal evolution of the Fermi surface: We show the tem-perature dependence of the Fermi surface in conjugation with the corresponding real space signatures in the PDW phase in Fig.5 at tam = 1.0t and h = 0. The low temperature phase exhibit 1D modulations in the pairing field amplitude with the underlying Fermi surface being nodal. Thermal fluctuations lead to progressive fragmentation of the SC phase and the as-sociated segmented Fermi surface undergoes broadening.  
+
+> ∗
+
+madhuparna.k@gmail.com [1] Libor ˇ Smejkal, Jairo Sinova, and Tomas Jungwirth, “Be-yond conventional ferromagnetism and antiferromagnetism: A phase with nonrelativistic spin and crystal rotation symme-try,” Phys. Rev. X 12 , 031042 (2022). [2] Cheng Song, Hua Bai, Zhiyuan Zhou, Lei Han, Helena Re-ichlova, J. Hugo Dil, Junwei Liu, Xianzhe Chen, and Feng Pan, “Altermagnets as a new class of functional materials,” Nature Reviews Materials 10 , 473 (2025). [3] Soho Shim, M. Mehraeen, Joseph Sklenar, Steven S.-L. Zhang, Axel Ho ff mann, and Nadya Mason, “Spin-polarized antiferromagnetic metals,” Annual Review of Condensed Mat-ter Physics 16 , 103 (2025). [4] Rafael M. Fernandes, Vanuildo S. de Carvalho, Turan Birol, and Rodrigo G. Pereira, “Topological transition from nodal to nodeless zeeman splitting in altermagnets,” Phys. Rev. B 109 ,024404 (2024). [5] Igor I. Mazin, Klaus Koepernik, Michelle D. Johannes, Rafael Gonz´ alez-Hern´ andez, and Libor ˇ Smejkal, “Prediction of un-conventional magnetism in doped fesb¡sub¿2¡ /sub¿,” Proceed-ings of the National Academy of Sciences 118 , e2108924118 (2021). [6] “Spin-split collinear antiferromagnets: A large-scale ab-initio study,” Materials Today Physics 32 , 100991 (2023). [7] Ze-Feng Gao, Shuai Qu, Bocheng Zeng, Yang Liu, Ji-Rong Wen, Hao Sun, Peng-Jie Guo, and Zhong-Yi Lu, “Ai-accelerated discovery of altermagnetic materials,” National Science Review 12 , nwaf066 (2025). [8] Igor Mazin, Rafael Gonz´ alez-Hern´ andez, and Libor ˇ Smejkal, “Induced monolayer altermagnetism in mnp(s,se) 3 and fese,” (2023), arXiv:2309.02355 [cond-mat.mes-hall]. [9] Rodrigo Jaeschke-Ubiergo, Venkata Krishna Bharadwaj, Tomas Jungwirth, Libor ˇ Smejkal, and Jairo Sinova, “Super-cell altermagnets,” Phys. Rev. B 109 , 094425 (2024). [10] Xuhao Wan, Subhasish Mandal, Yuzheng Guo, and Kristjan Haule, “High-throughput search for metallic altermagnets by embedded dynamical mean field theory,” Phys. Rev. Lett. 135 ,106501 (2025). [11] Joachim Sødequist and Thomas Olsen, “Two-dimensional al-termagnets from high throughput computational screening: Symmetry requirements, chiral magnons, and spin-orbit ef-fects,” Applied Physics Letters 124 , 182409. [12] Andriy Smolyanyuk, Libor ˇSmejkal, and Igor I. Mazin, “A tool to check whether a symmetry-compensated collinear magnetic material is antiferro- or altermagnetic,” (2024), arXiv:2401.08784 [cond-mat.mtrl-sci]. [13] Yixuan Che, Haifeng Lv, Xiaojun Wu, and Jin-long Yang, “Realizing altermagnetism in two-dimensional metal–organic framework semiconductors with electric-field-controlled anisotropic spin current,” Chem. Sci. 15 ,10.1039 /D4SC04125A. [14] Yixuan Che, Haifeng Lv, Xiaojun Wu, and Jinlong Yang, “Bi-layer metal–organic framework altermagnets with electrically tunable spin-split valleys,” Journal of the American Chemical Society 147 , 14806 (2025). [15] Romakanta Bhattarai, Peter Minch, and Trevor David Rhone, “High-throughput screening of altermagnetic materials,” Phys. Rev. Mater. 9, 064403 (2025). [16] Mingqiang Gu, Yuntian Liu, Haiyuan Zhu, Kunihiro Yananose, Xiaobing Chen, Yongkang Hu, Alessandro Stroppa, and Qihang Liu, “Ferroelectric switchable altermag-netism,” Phys. Rev. Lett. 134 , 106802 (2025). [17] Xunkai Duan, Jiayong Zhang, Ziye Zhu, Yuntian Liu, Zhenyu Zhang, Igor ˇ Zuti´ c, and Tong Zhou, “Antiferroelectric alter-magnets: Antiferroelectricity alters magnets,” Phys. Rev. Lett. 
+
+134 , 106801 (2025). [18] Libor ˇ Smejkal, “Altermagnetic multiferroics and altermagne-toelectric e ff ect,” (2024), arXiv:2411.19928 [cond-mat.mtrl-sci]. [19] Cong Li, Mengli Hu, Zhilin Li, Yang Wang, Wanyu Chen, Balasubramanian Thiagarajan, Mats Leandersson, Craig Pol-ley, Timur Kim, Hui Liu, Cosma Fulga, Maia G. Vergniory, Oleg Janson, Oscar Tjernberg, and Jeroen van den Brink, “Topological weyl altermagnetism in crsb,” Communications Physics 8, 311 (2025). [20] Jianyang Ding, Zhicheng Jiang, Xiuhua Chen, Zicheng Tao, Zhengtai Liu, Tongrui Li, Jishan Liu, Jianping Sun, Jinguang Cheng, Jiayu Liu, Yichen Yang, Runfeng Zhang, Liwei Deng, Wenchuan Jing, Yu Huang, Yuming Shi, Mao Ye, Shan Qiao, Yilin Wang, Yanfeng Guo, Donglai Feng, and Dawei Shen, “Large band splitting in g-wave altermagnet crsb,” Phys. Rev. Lett. 133 , 206401 (2024). [21] Guowei Yang, Zhanghuan Li, Sai Yang, Jiyuan Li, Hao Zheng, Weifan Zhu, Ze Pan, Yifu Xu, Saizheng Cao, Wenxuan Zhao, Anupam Jana, Jiawen Zhang, Mao Ye, Yu Song, Lun-Hui Hu, Lexian Yang, Jun Fujii, Ivana Vobornik, Ming Shi, Huiqiu Yuan, Yongjun Zhang, Yuanfeng Xu, and Yang Liu, “Three-dimensional mapping of the altermagnetic spin splitting in crsb,” Nature Communications 16 , 1442 (2025). [22] Wenlong Lu, Shiyu Feng, Yuzhi Wang, Dong Chen, Zihan Lin, Xin Liang, Siyuan Liu, Wanxiang Feng, Kohei Yam-agami, Junwei Liu, Claudia Felser, Quansheng Wu, and Jun-zhang Ma, “Signature of topological surface bands in alter-magnetic weyl semimetal crsb,” Nano Letters 25 , 7343 (2025). [23] Bei iang, Mingzhe Hu, Jianli Bai, Ziyin Song, Chao Mu, Gex-ing Qu, Wan Li, Wenliang Zhu, Hanqi Pi, Zhongxu Wei, Yu-Jie Sun, Yaobo Huang, Xiquan Zheng, Yingying Peng, Lun-hua He, Shiliang Li, Jianlin Luo, Zheng Li, Genfu Chen, Hang Li, Hongming Weng, and Tian Qian, “A metallic room-temperature d-wave altermagnet,” Nature Physics 21 ,754 (2025). [24] Fayuan Zhang, Xingkai Cheng, Zhouyi Yin, Changchao Liu, Liwei Deng, Yuxi Qiao, Zheng Shi, Shuxuan Zhang, Junhao Lin, Zhengtai Liu, Mao Ye, Yaobo Huang, Xiangyu Meng, Cheng Zhang, Taichi Okuda, Kenya Shimada, Shengtao Cui, Yue Zhao, Guang-Han Cao, Shan Qiao, Junwei Liu, and Chaoyu Chen, “Crystal-symmetry-paired spin–valley locking in a layered room-temperature metallic altermagnet candi-date,” Nature Physics 21 , 760 (2025). [25] I. I. Mazin, “Altermagnetism in mnte: Origin, predicted man-ifestations, and routes to detwinning,” Phys. Rev. B 107 ,L100418 (2023). [26] Suyoung Lee, Sangjae Lee, Saegyeol Jung, Jiwon Jung, Dong-han Kim, Yeonjae Lee, Byeongjun Seok, Jaeyoung Kim, Byeong Gyu Park, Libor ˇ Smejkal, Chang-Jong Kang, and Changyoung Kim, “Broken kramers degeneracy in altermag-netic mnte,” Phys. Rev. Lett. 132 , 036702 (2024). [27] T. Osumi, S. Souma, T. Aoyama, K. Yamauchi, A. Honma, K. Nakayama, T. Takahashi, K. Ohgushi, and T. Sato, “Obser-vation of a giant band splitting in altermagnetic mnte,” Phys. Rev. B 109 , 115102 (2024). [28] J. Krempask´ y, L. ˇSmejkal, S. W. D’Souza, M. Hajlaoui, G. Springholz, K. Uhl´ ıˇ rov´ a, F. Alarab, P. C. Constanti-nou, V. Strocov, D. Usanov, W. R. Pudelko, R. Gonz´ alez-Hern´ andez, A. Birk Hellenes, Z. Jansa, H. Reichlov´ a, Z. ˇ Sob´ aˇ n, R. D. Gonzalez Betancourt, P. Wadley, J. Sinova, D. Kriegner, J. Min´ ar, J. H. Dil, and T. Jungwirth, “Alter-magnetic lifting of kramers spin degeneracy,” Nature 626 , 517 (2024). [29] Chao-Chun Wei, Xiaoyin Li, Sabrina Hatt, Xudong Huai, Jue Liu, Birender Singh, Kyung-Mo Kim, Rafael M. Fernan-des, Paul Cardon, Liuyan Zhao, Thao T. Tran, Benjamin A. Frandsen, Kenneth S. Burch, Feng Liu, and Huiwen Ji, “la 2o3mn 2se 2: A correlated insulating layered d-wave alter-magnet,” Phys. Rev. Mater. 9, 024402 (2025). [30] Laura Garcia-Gassull, Aleksandar Razpopov, Panagiotis Pe-ter Stavropoulos, Igor I Mazin, and Roser Valent´ ı, “Mi-croscopic origin of the magnetic interactions and their ex-perimental signatures in altermagnetic la 2o3mn 2se 2,” (2025), arXiv:2506.21661 [cond-mat.str-el]. [31] Satoshi Iguchi, Hiroki Kobayashi, Yuka Ikemoto, Tetsuya Fu-rukawa, Hirotake Itoh, Shinichiro Iwai, Taro Moriwaki, and Takahiko Sasaki, “Magneto-optical spectra of an organic an-tiferromagnet as a candidate for an altermagnet,” Phys. Rev. Res. 7, 033026 (2025). [32] Fabio Bernardini, Manfred Fiebig, and Andr´ es Cano, “Rud-dlesden–popper and perovskite phases as a material platform for altermagnetism,” Journal of Applied Physics 137 , 103903 (2025). [33] Makoto Naka, Yukitoshi Motome, and Hitoshi Seo, “Alter-magnetic perovskites,” npj Spintronics 3, 1 (2025). [34] Francesco Ferrari and Roser Valent´ ı, “Altermagnetism on the shastry-sutherland lattice,” Phys. Rev. B 110 , 205140 (2024). [35] Jo˜ ao Augusto Sobral, Subrata Mandal, and Mathias S. Scheurer, “Fractionalized altermagnets: From neighboring and altermagnetic spin liquids to spin-symmetric band split-ting,” Phys. Rev. Res. 7, 023152 (2025). [36] Samuele Giuli, Carlos Mejuto-Zaera, and Massimo Capone, “Altermagnetism from interaction-driven itinerant mag-netism,” Phys. Rev. B 111 , L020401 (2025). [37] Zhenfeng Ouyang, Peng-Jie Guo, Rong-Qiang He, and Zhong-Yi Lu, “Strongly correlated altermagnet cacro 3,” (2025), arXiv:2507.14081 [cond-mat.str-el]. [38] Tomas Jungwirth, Jairo Sinova, Rafael M. Fernandes, Qihang Liu, Hikaru Watanabe, Shuichi Murakami, Satoru Nakatsuji, and Libor Smejkal, “Symmetry, microscopy and spectroscopy signatures of altermagnetism,” (2025), arXiv:2506.22860 [cond-mat.mtrl-sci]. [39] Ina Park, Turan Birol, Antoine Georges, and Rafael M. Fer-nandes, “Impact of strong electronic correlations on altermag-nets: the case of nis2,” (2025), arXiv:2512.17059 [cond-mat.str-el]. [40] Nitin Kaushal and Marcel Franz, “Altermagnetism in modified lieb lattice hubbard model,” (2025). [41] Matteo D¨ urrnagel, Hendrik Hohmann, Atanu Maity, Jannis Seufert, Michael Klett, Lennart Klebl, and Ronny Thomale, “Altermagnetic phase transition in a lieb metal,” Phys. Rev. Lett. 135 , 036502 (2025). [42] Shuntaro Sumita, Makoto Naka, and Hitoshi Seo, “Phase-modulated superconductivity via altermagnetism,” Phys. Rev. B 112 , 144510 (2025). [43] Song-Bo Zhang, Lun-Hui Hu, and Titus Neupert, “Finite-momentum cooper pairing in proximitized altermagnets,” Na-ture Communications 15 , 1801 (2024). [44] Hui Hu, Zhao Liu, Jia Wang, Xia-Ji Liu, and Yoji Ohashi, “Finite-momentum superconductivity with singlet-triplet mix-ing in an altermagnetic metal: A pairing instability analysis,” (2026), arXiv:2603.12897 [cond-mat.supr-con]. [45] GiBaik Sim and Johannes Knolle, “Pair density waves and supercurrent diode e ff ect in altermagnets,” Phys. Rev. B 112 ,L020502 (2025). [46] Debmalya Chakraborty and Annica M. Black-Scha ff er, “Zero-field finite-momentum and field-induced superconductivity in altermagnets,” Phys. Rev. B 110 , L060508 (2024). [47] Debmalya Chakraborty and Annica M. Black-Scha ff er, “Per-fect superconducting diode e ff ect in altermagnets,” Phys. Rev. Lett. 135 , 026001 (2025). [48] Anjishnu Bose, Samuel Vadnais, and Arun Paramekanti, “Al-termagnetism and superconductivity in a multiorbital t − j
+
+model,” Phys. Rev. B 110 , 205120 (2024). [49] Xuan Zou, Rafael M. Fernandes, and Eduardo Fradkin, “Su-perconducting states and intertwined orders in metallic alter-magnets,” (2026), arXiv:2603.04503 [cond-mat.supr-con]. [50] Kinga Jasiewicz, Paweł W´ ojcik, Michał P. Nowak, and Michał Zegrodnik, “Interplay between altermagnetism and su-perconductivity in two dimensions: intertwined symmetries and singlet-triplet mixing,” npj Quantum Materials (2025), 10.1038 /s41535-025-00840-w. [51] Peter Fulde and Richard A. Ferrell, “Superconductivity in a strong spin-exchange field,” Phys. Rev. 135 , A550–A563 (1964). [52] A I Larkin and Yu N Ovchinnikov, “Nonuniform state of su-perconductors,” Zh. Eksp. Teor. Fiz. 47 , 1136 (1964). [53] Madhuparna Karmakar and Pinaki Majumdar, “Population-imbalanced lattice fermions near the bcs-bec crossover: Ther-mal physics of the breached pair and fulde-ferrell-larkin-ovchinnikov phases,” Phys. Rev. A 93 , 053609 (2016). [54] Madhuparna Karmakar, “Thermal transitions, pseudogap be-havior, and bcs-bec crossover in fermi-fermi mixtures,” Phys. Rev. A 97 , 033617 (2018). [55] T. K. Koponen, T. Paananen, J.-P. Martikainen, and P. T¨ orm¨ a, “Finite-temperature phase diagram of a polarized fermi gas in an optical lattice,” Phys. Rev. Lett. 99 , 120403 (2007). [56] P. G. De Gennes and G. Sarma, “Some Relations Between Su-perconducting and Magnetic Properties,” Journal of Applied Physics 34 , 1380–1385 (1963). [57] W. Vincent Liu, Frank Wilczek, and Peter Zoller, “Spin-dependent hubbard model and a quantum phase transition in cold atoms,” Phys. Rev. A 70 , 033603 (2004). [58] A. B. Vorontsov, J. A. Sauls, and M. J. Graf, “Phase diagram and spectroscopy of fulde-ferrell-larkin-ovchinnikov states of two-dimensional d-wave superconductors,” Phys. Rev. B 72 ,184501 (2005). [59] Anton B. Vorontsov and Matthias J. Graf, “Fermi-liquid eff ects in the fulde-ferrell-larkin-ovchinnikov state of two-dimensional d-wave superconductors,” Phys. Rev. B 74 ,172504 (2006). [60] Jan Kaczmarczyk, Mariusz Sadzikowski, and Jozef Spałek, “Conductance spectroscopy of a correlated superconductor in a magnetic field in the pauli limit: Evidence for strong corre-lations,” Phys. Rev. B 84 , 094525 (2011). [61] Robert Beaird, Anton B. Vorontsov, and Ilya Vekhter, “Pauli-limited superconductivity with classical magnetic fluctua-tions,” Phys. Rev. B 81 , 224501 (2010). [62] Youichi Yanase, “Fflo superconductivity near the antiferro-magnetic quantum critical point,” Journal of the Physical So-ciety of Japan 77 , 063705 (2008). [63] Tao Zhou and C. S. Ting, “Phase diagram and local tunnel-ing spectroscopy of the fulde-ferrell-larkin-ovchinnikov states of a two-dimensional square-lattice d-wave superconductor,” Phys. Rev. B 80 , 224515 (2009). [64] Qinghong Cui, C.-R. Hu, J. Y. T. Wei, and Kun Yang, “Spec-troscopic signatures of the larkin-ovchinnikov state in the conductance characteristics of a normal-metal /superconductor junction,” Phys. Rev. B 85 , 014503 (2012). [65] Madhuparna Karmakar, “Pauli limited d-wave superconduc-tors: quantum breached pair phase and thermal transitions,” Journal of Physics: Condensed Matter 32 , 405604 (2020). [66] Madhuparna Karmakar, “Magnetotransport and fermi surface segmentation in pauli limited superconductors,” Journal of Physics: Condensed Matter 36 , 165601 (2024). [67] Yong-il Shin, Christian H. Schunck, Andr´ e Schirotzek, and Wolfgang Ketterle, “Phase diagram of a two-component fermi gas with resonant interactions,” Nature 451 , 689 (2008). [68] C. H. Schunck, Y. Shin, A. Schirotzek, M. W. Zwierlein, and W. Ketterle, “Pairing without superfluidity: The ground state of an imbalanced fermi mixture,” Science 316 , 867–870 (2007). [69] Y. Shin, M. W. Zwierlein, C. H. Schunck, A. Schirotzek, and W. Ketterle, “Observation of phase separation in a strongly interacting imbalanced fermi gas,” Phys. Rev. Lett. 97 , 030401 (2006). [70] Yean-an Liao, Ann Sophie C. Rittner, Tobias Paprotta, Wenhui Li, Guthrie B. Partridge, Randall G. Hulet, Stefan K. Baur, and Erich J. Mueller, “Spin-imbalance in a one-dimensional fermi gas,” Nature 467 , 567 (2010). [71] A. Bianchi, R. Movshovich, C. Capan, P. G. Pagliuso, and J. L. Sarrao, “Possible fulde-ferrell-larkin-ovchinnikov super-conducting state in cecoin 5,” Phys. Rev. Lett. 91 , 187004 (2003). [72] T. Tayama, A. Harita, T. Sakakibara, Y. Haga, H. Shishido, R. Settai, and Y. Onuki, “Unconventional heavy-fermion su-perconductor cecoin 5 : dc magnetization study at temperatures down to 50 mk,” Phys. Rev. B 65 , 180504 (2002). [73] G. Koutroulakis, M. D. Stewart, V. F. Mitrovi´ c, M. Horvati´ c, C. Berthier, G. Lapertot, and J. Flouquet, “Field evolution of coexisting superconducting and magnetic orders in cecoin 5,” Phys. Rev. Lett. 104 , 087001 (2010). [74] M. Kenzelmann, Th. Str¨ assle, C. Niedermayer, M. Sigrist, B. Padmanabhan, M. Zolliker, A. D. Bianchi, R. Movshovich, E. D. Bauer, J. L. Sarrao, and J. D. Thompson, “Coupled su-perconducting and magnetic order in cecoin 5,” Science 321 ,1652 (2008). [75] C. Capan, A. Bianchi, R. Movshovich, A. D. Christianson, A. Malinowski, M. F. Hundley, A. Lacerda, P. G. Pagliuso, and J. L. Sarrao, “Anisotropy of thermal conductivity and pos-sible signature of the fulde-ferrell-larkin-ovchinnikov state in CeCoin 5,” Phys. Rev. B 70 , 134513 (2004). [76] C. Martin, C. C. Agosta, S. W. Tozer, H. A. Radovan, E. C. Palm, T. P. Murphy, and J. L. Sarrao, “Evidence for the fulde-ferrell-larkin-ovchinnikov state in cecoin 5 from penetration depth measurements,” Phys. Rev. B 71 , 020503 (2005). [77] Simon Gerber, Marek Bartkowiak, Jorge L. Gavilano, Eric Ressouche, Nikola Egetenmeyer, Christof Niedermayer, An-drea D. Bianchi, Roman Movshovich, Eric D. Bauer, Joe D. Thompson, and Michel Kenzelmann, “Switching of magnetic domains reveals spatially inhomogeneous superconductivity,” Nature Physics 10 , 126 (2014). [78] K. Kumagai, M. Saitoh, T. Oyaizu, Y. Furukawa, S. Takashima, M. Nohara, H. Takagi, and Y. Matsuda, “Fulde-ferrell-larkin-ovchinnikov state in a perpendicular field of quasi-two-dimensional cecoin 5,” Phys. Rev. Lett. 97 ,227002 (2006). [79] Duk Y. Kim, Shi-Zeng Lin, Franziska Weickert, Michel Ken-zelmann, Eric D. Bauer, Filip Ronning, J. D. Thompson, and Roman Movshovich, “Intertwined orders in heavy-fermion su-perconductor cecoin 5,” Phys. Rev. X 6, 041059 (2016). [80] Shi-Zeng Lin, Duk Y. Kim, Eric D. Bauer, Filip Ronning, J. D. Thompson, and Roman Movshovich, “Interplay of the spin density wave and a possible fulde-ferrell-larkin-ovchinnikov state in cecoin 5 in rotating magnetic field,” Phys. Rev. Lett. 
+
+124 , 217001 (2020). [81] R. Beyer and J. Wosnitza, “Emerging evidence for ffl o states in layered organic superconductors,” Low Temperature Physics 
+
+39 , 225–231 (2013). [82] R. Lortz, Y. Wang, A. Demuer, P. H. M. B¨ ottger, B. Bergk, G. Zwicknagl, Y. Nakazawa, and J. Wosnitza, “Calori-metric evidence for a fulde-ferrell-larkin-ovchinnikov su-perconducting state in the layered organic superconductor 
+
+κ−(BEDT −TTF) 2Cu(NCS) 2,” Phys. Rev. Lett. 99 , 187002 (2007). [83] H. Maya ff re, S. Kr¨ amer, M. Horvati´ c, C. Berthier, K. Miya-gawa, K. Kanoda, and V. F. Mitrovi´ c, “Evidence of an-dreev bound states as a hallmark of the ffl o phase in κ-(bedt-ttf) 2cu(ncs) 2,” Nature Physics 10 , 928 (2014). [84] J. A. Wright, E. Green, P. Kuhns, A. Reyes, J. Brooks, J. Schlueter, R. Kato, H. Yamamoto, M. Kobayashi, and S. E. Brown, “Zeeman-driven phase transition within the supercon-ducting state of κ−(BEDT −TTF) 2Cu(NCS) 2,” Phys. Rev. Lett. 
+
+107 , 087002 (2011). [85] William A. Coniglio, Laurel E. Winter, Kyuil Cho, C. C. Agosta, B. Fravel, and L. K. Montgomery, “Superconduct-ing phase diagram and ffl o signature in λ-(bets) 2gacl 4 from rf penetration depth measurements,” Phys. Rev. B 83 , 224507 (2011). [86] B. Bergk, A. Demuer, I. Sheikin, Y. Wang, J. Wosnitza, Y. Nakazawa, and R. Lortz, “Magnetic torque evidence for the fulde-ferrell-larkin-ovchinnikov state in the layered organic superconductor κ − (BEDT − TTF) 2Cu(NCS) 2,” Phys. Rev. B 
+
+83 , 064506 (2011). [87] C. C. Agosta, Jing Jin, W. A. Coniglio, B. E. Smith, K. Cho, I. Stroe, C. Martin, S. W. Tozer, T. P. Murphy, E. C. Palm, J. A. Schlueter, and M. Kurmoo, “Experimental and semiempirical method to determine the pauli-limiting field in quasi-two-dimensional superconductors as applied to κ-(bedt-ttf) 2cu(ncs) 2: Strong evidence of a ffl o state,” Phys. Rev. B 85 ,214514 (2012). [88] K. Cho, B. E. Smith, W. A. Coniglio, L. E. Winter, C. C. Agosta, and J. A. Schlueter, “Upper critical field in the organic superconductor β′′ 
+
+−(ET) 2sf 5ch 2cf 2so 3: Possibility of fulde-ferrell-larkin-ovchinnikov state,” Phys. Rev. B 79 , 220507 (2009). [89] D. A. Zocco, K. Grube, F. Eilers, T. Wolf, and H. v. L¨ ohneysen, “Pauli-limited multiband superconductivity in kfe 2as 2,” Phys. Rev. Lett. 111 , 057007 (2013). [90] K. Cho, H. Kim, M. A. Tanatar, Y. J. Song, Y. S. Kwon, W. A. Coniglio, C. C. Agosta, A. Gurevich, and R. 2Pro-zorov, “Anisotropic upper critical field and possible fulde-ferrel-larkin-ovchinnikov state in the stoichiometric pnictide superconductor lifeas,” Phys. Rev. B 83 , 060502 (2011). [91] Seunghyun Khim, Bumsung Lee, Jae Wook Kim, Eun Sang Choi, G. R. Stewart, and Kee Hoon Kim, “Pauli-limiting ef-fects in the upper critical fields of a clean lifeas single crystal,” Phys. Rev. B 84 , 104502 (2011). [92] Daniel F. Agterberg, J.C. S´ eamus Davis, Stephen D. Edkins, Eduardo Fradkin, Dale J. Van Harlingen, Steven A. Kivelson, Patrick A. Lee, Leo Radzihovsky, John M. Tranquada, and Yuxuan Wang, “The physics of pair-density waves: Cuprate superconductors and beyond,” Annual Review of Condensed Matter Physics 11 , 231–270 (2020). [93] Erez Berg, Eduardo Fradkin, Steven A Kivelson, and John M Tranquada, “Striped superconductors: how spin, charge and superconducting orders intertwine in the cuprates,” New Jour-nal of Physics 11 , 115004 (2009). [94] Erez Berg, Eduardo Fradkin, and Steven A. Kivelson, “Pair-density-wave correlations in the kondo-heisenberg model,” Phys. Rev. Lett. 105 , 146403 (2010). [95] Tilman Schwemmer, Hendrik Hohmann, Matteo D¨ urrnagel, Janik Potten, Jacob Beyer, Stephan Rachel, Yi-Ming Wu, Srinivas Raghu, Tobias M¨ uller, Werner Hanke, and Ronny Thomale, “Sublattice modulated superconductivity in the kagome hubbard model,” Phys. Rev. B 110 , 024501 (2024). [96] D. F. Agterberg and H. Tsunetsugu, “Dislocations and vortices in pair-density-wave superconductors,” Nature Physics 4, 639 (2008). [97] Erez Berg, Eduardo Fradkin, and Steven A. Kivelson, “Charge-4e superconductivity from pair-density-wave order in certain high-temperature superconductors,” Nature Physics 5,830 (2009). [98] Eduardo Fradkin, Steven A. Kivelson, and John M. Tran-quada, “Colloquium: Theory of intertwined orders in high temperature superconductors,” Rev. Mod. Phys. 87 , 457–482 (2015). [99] Florian Loder, Arno P. Kampf, and Thilo Kopp, “Supercon-ducting state with a finite-momentum pairing mechanism in zero external magnetic field,” Phys. Rev. B 81 , 020511 (2010). [100] J. M. Tranquada, G. D. Gu, M. H¨ ucker, Q. Jie, H.-J. Kang, R. Klingeler, Q. Li, N. Tristan, J. S. Wen, G. Y. Xu, Z. J. Xu, J. Zhou, and M. v. Zimmermann, “Evidence for unusual superconducting correlations coexisting with stripe order in la 1.875 ba 0.125 cuo 4,” Phys. Rev. B 78 , 174529 (2008). [101] Yu-Xiao Jiang, Jia-Xin Yin, M. Michael Denner, Nana Shu-miya, Brenden R. Ortiz, Gang Xu, Zurab Guguchia, Junyi He, Md Shafayat Hossain, Xiaoxiong Liu, Jacob Ru ff , Li-nus Kautzsch, Songtian S. Zhang, Guoqing Chang, Ilya Be-lopolski, Qi Zhang, Tyler A. Cochran, Daniel Multer, Maksim Litskevich, Zi-Jia Cheng, Xian P. Yang, Ziqiang Wang, Ronny Thomale, Titus Neupert, Stephen D. Wilson, and M. Zahid Hasan, “Unconventional chiral charge order in kagome super-conductor kv3sb5,” Nature Materials 20 , 1353 (2021). [102] Hui Chen, Haitao Yang, Bin Hu, Zhen Zhao, Jie Yuan, Yuqing Xing, Guojian Qian, Zihao Huang, Geng Li, Yuhan Ye, Sheng Ma, Shunli Ni, Hua Zhang, Qiangwei Yin, Chunsheng Gong, Zhijun Tu, Hechang Lei, Hengxin Tan, Sen Zhou, Cheng-min Shen, Xiaoli Dong, Binghai Yan, Ziqiang Wang, and Hong-Jun Gao, “Roton pair density wave in a strong-coupling kagome superconductor,” Nature 599 , 222 (2021). [103] Qiangqiang Gu, Joseph P. Carroll, Shuqiu Wang, Sheng Ran, Christopher Broyles, Hasan Siddiquee, Nicholas P. Butch, Shanta R. Saha, Johnpierre Paglione, J. C. S´ eamus Davis, and Xiaolong Liu, “Detection of a pair density wave state in ute2,” Nature 618 , 921 (2023). [104] Anuva Aishwarya, Julian May-Mann, Arjun Raghavan, Laimei Nie, Marisa Romanelli, Sheng Ran, Shanta R. Saha, Johnpierre Paglione, Nicholas P. Butch, Eduardo Fradkin, and Vidya Madhavan, “Magnetic-field-sensitive charge den-sity waves in the superconductor ute2,” Nature 618 , 928 (2023). [105] He Zhao, Raymond Blackwell, Morgan Thinel, Taketo Handa, Shigeyuki Ishida, Xiaoyang Zhu, Akira Iyo, Hiroshi Eisaki, Abhay N. Pasupathy, and Kazuhiro Fujita, “Smectic pair-density-wave order in eurbfe4as4,” Nature 618 , 940 (2023). [106] Hui Hu, Zhao Liu, and Xia-Ji Liu, “Unconventional super-conductivity of an altermagnetic metal: Polarized bcs and in-homogeneous ffl o states,” Phys. Rev. B 112 , 184501 (2025). [107] SeungBeom Hong, Moon Jip Park, and Kyoung-Min Kim, “Unconventional p-wave and finite-momentum superconduc-tivity induced by altermagnetism through the formation of bo-goliubov fermi surface,” Phys. Rev. B 111 , 054501 (2025). [108] Miaomiao Wei, Longjun Xiang, Fuming Xu, Lei Zhang, Gaomin Tang, and Jian Wang, “Gapless superconducting state and mirage gap in altermagnets,” Phys. Rev. B 109 , L201404 (2024). [109] Jabir Ali Ouassou, Arne Brataas, and Jacob Linder, “dc josephson eff ect in altermagnets,” Phys. Rev. Lett. 131 ,076003 (2023). [110] Michał Papaj, “Andreev reflection at the altermagnet-superconductor interface,” Phys. Rev. B 108 , L060508 (2023). [111] J. Hubbard, “Calculation of partition functions,” Phys. Rev. Lett. 3, 77–78 (1959). [112] H. J. Schulz, “E ff ective action for strongly correlated fermions from functional integrals,” Phys. Rev. Lett. 65 , 2462–2465 (1990). [113] Simone Fratini and Sergio Ciuchi, “Displaced drude peak and bad metal from the interaction with slow fluctuations.” SciPost Phys. 11 , 039 (2021). [114] Sergio Ciuchi and Simone Fratini, “Strange metal behavior from incoherent carriers scattered by local moments,” Phys. Rev. B 108 , 235173 (2023). [115] Chaitanya Murthy, Akshat Pandey, Ilya Esterlis, and Steven A. Kivelson, “A stability bound on the t-linear resis-tivity of conventional metals,” Proceedings of the National Academy of Sciences 120 , e2216241120 (2023). [116] Shashikant Singh Kunwar and Madhuparna Karmakar, “Straintronics across lieb-kagome interconversion and vari-able transport scaling exponents,” Phys. Rev. Mater. 10 ,L011002 (2026). [117] Jong Mok Ok, Chang Il Kwon, Yoshimitsu Kohama, Jung Sang You, Sun Kyu Park, Ji-hye Kim, Y. J. Jo, E. S. Choi, Koichi Kindo, Woun Kang, Ki-Seok Kim, E. G. Moon, A. Gurevich, and Jun Sung Kim, “Observation of in-plane magnetic field induced phase transitions in fese,” Phys. Rev. B 
+
+101 , 224509 (2020). [118] S. Kasahara, H. Suzuki, T. Machida, Y. Sato, Y. Ukai, H. Mu-rayama, S. Suetsugu, Y. Kasahara, T. Shibauchi, T. Hanaguri, and Y. Matsuda, “Quasiparticle nodal plane in the fulde-ferrell-larkin-ovchinnikov state of fese,” Phys. Rev. Lett. 127 ,257001 (2021). [119] Wei Zhang, Xinyou Liu, Lingfei Wang, Chun Wai Tsang, Zheyu Wang, Siu Tung Lam, Wenyan Wang, Jianyu Xie, Xuefeng Zhou, Yusheng Zhao, Shanmin Wang, Je ff Tallon, Kwing To Lai, and Swee K. Goh, “Nodeless superconductiv-ity in kagome metal csv3sb5 with and without time reversal symmetry breaking,” Nano Letters 23 , 872 (2023). [120] Nyayabanta Swain, Madhuparna Karmakar, and Pinaki Ma-jumdar, “Spin-orbital liquids and insulator-metal transitions on the pyrochlore lattice,” Phys. Rev. B 106 , 245114 (2022). [121] Madhuparna Karmakar and Nyayabanta Swain, “Transport and spectroscopic signatures of a disorder-stabilized metal in two-dimensional frustrated mott insulators,” Phys. Rev. B 105 ,195146 (2022). [122] Nyayabanta Swain and Madhuparna Karmakar, “Strain-induced superconductor-insulator transition on a lieb lattice,” Phys. Rev. Res. 2, 023136 (2020). [123] Shashikant Singh Kunwar and Madhuparna Karmakar, “Kagome hubbard model away from the strong coupling limit: Flat band localization and non fermi liquid signatures,” (2024), arXiv:2404.05787 [cond-mat.str-el]. [124] Santhosh Kannan, Jainam Savla, and Madhuparna Karmakar, “Metal-insulator transition and thermal scales in d-wave alter-magnet,” (2026), arXiv:2603.02707 [cond-mat.str-el].

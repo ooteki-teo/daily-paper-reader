@@ -1,0 +1,484 @@
+Title: Suppression of local magnetic moment formation and paramagnetic exchange interactions in monolayer Fe$_3$GeTe$_2$
+
+URL Source: https://arxiv.org/pdf/2603.11555v1
+
+Published Time: Fri, 13 Mar 2026 00:29:14 GMT
+
+Number of Pages: 9
+
+Markdown Content:
+.
+
+# Suppression of local magnetic moment formation and paramagnetic exchange interactions in monolayer Fe 3GeTe 2
+
+A. A. Katanin, 1, 2 A. N. Rudenko, 3 D. I. Badrtdinov, 3 and M. I. Katsnelson 3
+
+> 1
+
+Center for Photonics and 2D Materials, Moscow Institute of Physics and Technology, Institutsky lane 9, Dolgoprudny, 141700, Moscow Region, Russia 
+
+> 2
+
+M. N. Mikheev Institute of Metal Physics of Ural Branch of Russian Academy of Sciences, S. Kovalevskaya Street 18, 620990 Yekaterinburg, Russia 
+
+> 3
+
+Radboud University, Institute for Molecules and Materials, Heijendaalseweg 135, 6525AJ Nijmegen, The Netherlands 
+
+We study the electronic and magnetic properties of monolayer Fe 3GeTe 2 within the DFT+DMFT approach in the paramagnetic phase. We argue that this compound is sufficiently far from the local magnetic moment limit, demonstrating non-linear temperature dependencies of the partial inverse local and uniform magnetic susceptibilities in a broad temperature range. We find that in the regime of moderate Coulomb interactions ( U = 3 − 4 eV), the iron atoms located above and below the Ge plane carry a substantial local magnetic moment ( μ ≳ 4.5μB ), while the iron atom located within the Ge plane does not exhibit any pronounced magnetic moment. At the same time, the RKKY-type exchange interactions between these two symmetry-nonequivalent types of atoms turn out to be crucial to stabilize long-range ferromagnetic order in Fe 3GeTe 2. The estimated spin-wave stiffness and Curie temperature are in a good agreement with the experimental data, indicating that a dynamical treatment of electron correlations in Fe 3GeTe 2 is essential to properly describe its partially itinerant magnetic behavior. 
+
+I. INTRODUCTION 
+
+The interest to two-dimensional (2D) materials is driven by the progress in the development of novel tech-nologies involving miniaturization of electronic devices and low-energy consumption. The discovery of 2D mag-netic materials [1–6] has further enhanced the interest to the field of 2D materials, opening new ways to control magnetism in 2D, which is prospective for applications as well as for fundamental research. Fe 3GeTe 2 is a typical representative of 2D easy-axis ferromagnets with relatively high Curie temperature, reaching 130 K in the monolayer limit [7, 8]. Unlike many other 2D magnets, Fe 3GeTe 2 is metallic, which gives rise to a variety of conventional transport phenomena [9– 11] as well as to more exotic phenomena, such as the Kondo effect [12, 13]. On the other hand, the presence of charge carriers challenges the description of magnetic properties in terms of spin models, which hinders under-standing of physical mechanisms behind ferromagnetism in Fe 3GeTe 2. Although the electron-magnon interaction is not expected to be large in Fe 3GeTe 2 [14], electronic correlations have been shown to play a considerable role in Fe 3GeTe 2. This conclusion was based on density func-tional plus dynamical mean-field theory (DFT+DMFT) [15–17] calculations performed in the works [9, 18–21]. Most of these works are focused on quasiparticle spectra probed by photoemission, but Ref. [20] also studies ex-change interactions by combining DFT+DMFT with the magnetic force theorem [22–24]. In some of the abovementioned DFT+DMFT studies, the signs of Hund metal behavior in Fe 3GeTe 2 were ob-tained [19, 21]. In particular, the enhancement of quasi-particle mass and electron damping, Curie behavior of local magnetic susceptibility, and spin-orbital separation were discussed. At the same time, Fe 3GeTe 2 is quite far from the fully localized limit. Indeed, the local magnetic moment μC ≃ 4.6μB /Fe extracted from the Curie-Weiss law and the saturation moment μs ≃ 1.6μB /Fe (see, e.g., Refs. [18, 25]) yield the ratio of the moment pC ≃ 1.9extracted from the Curie-Weiss law μ2 
+
+> C
+
+= 4 pC (pC + 1) μ2
+
+> B
+
+to the ordering moment ps = μs/(2 μB ) ≃ 0.8, equal to pC /p s ≃ 2.4, which for the Curie temperature TC ≃
+
+220 K corresponds to more or less the same position on the Rhodes-Wohlfarth curve [26–28] as Pd-Cu and Pd-Fe alloys which are substantially far from the localized limit. Therefore, Fe 3GeTe 2 combines both, the local magnetic moment and itinerant behavior. This is partly due to site-differentiated behavior, discussed earlier in Ref. [19], but as we argue in the present paper, we expect much stronger site differentiation, than considered previously. To describe correlation effects within DMFT in the previous study of Ref. [20], the perturbation solver SPTF (spin-polarized T-matrix plus FLEX) [29, 30] was used. It seems to be reasonable at semi-quantitative level for elemental 3 d metals [31–33] but its applicability for Fe 3GeTe 2 is not obvious. There are also other issues to be clarified. The value U ≈ 5 eV used in the previous calculations [9, 18–21] may be unrealistically large. This value is based solely on a method applied to an iron com-pound BaFe 2As 2 within the self-consistent GW scheme [34]. At the same time, this result appears to be much larger than that obtained within a non-self-consistent 
+
+GW calculation [34], as well as from the constrained ran-dom phase approximation (cRPA) [35]. Apart from the weak Coulomb screening, some earlier DMFT studies on 
+
+> arXiv:2603.11555v1 [cond-mat.str-el] 12 Mar 2026
+
+2Fe 3GeTe 2 used a nominal form of double counting (see, e.g., Refs. [18, 19]), which fixes the d-electron concen-tration at iron atoms to be close to nd = 6. As will be shown below, this approximation is not fully justified for Fe 3GeTe 2.In the present paper, we perform a systematic DFT+DMFT study of magnetic interactions and finite-temperature magnetic properties of monolayer Fe 3GeTe 2
+
+focusing on its itinerant magnetic behavior. A common way to describe magnetic interactions in correlated sys-tems is to make use of an adapted version of the magnetic force approach [22–24], which starts from a magnetically ordered state, but may be limited in a situation with par-tially formed local magnetic moments [36–38]. Therefore here we use an alternative formalism based on nonuni-form magnetic susceptibility, which is also applicable in the paramagnetic phase [39, 40]. Earlier, we used this for-malism to describe the magnetic properties of iron, nickel [39, 40], cobalt [41], CrO 2 [42], and CrTe 2 [43, 44]. In con-trast to the magnetic force approach, this method does not require the assumption of a certain magnetic state; therefore, it provides an unbiased calculation of exchange interactions. Even more importantly for our case, it does not require the existence of well-defined local magnetic moments and should be applicable for itinerant systems far from the localized limit. This method can also trace the temperature evolution of exchange interactions, in-cluding self-energy and vertex corrections. Based on our DMFT study in the paramagnetic phase, we provide strong evidence on the itinerant nature of magnetism in Fe 3GeTe 2. In particular, we find the iron atoms located above and below the Ge plane to be more strongly correlated than the iron atoms located within the Ge plane, in agreement with previous considerations [19]. The temperature dependencies of both local and partial uniform inverse susceptibilities are non-linear over a wide temperature range, in contrast to the elemental iron [39, 40]. The obtained local magnetic moment, ex-tracted from the Curie-Weiss law for the uniform mag-netic susceptibility, and extrapolated to low tempera-tures, is found to be in agreement with the experimental data for the moderate Coulomb interactions U = 3 −4 eV. From our study in the paramagnetic phase, we find all dominant exchange interactions to be ferromagnetic, ex-cept for the interactions between stronger correlated Fe 1-Fe 1 and Fe 2-Fe 2 atoms, i.e., those located above and be-low the Ge plane. Although the magnitudes of the ex-change interactions are, to a large extent, consistent with previous results in the ferromagnetic phase [20], they re-fer to the state with only partly formed local magnetic moments. The estimated spin stiffness and Curie tem-perature are in good agreement with the experimental data. This agreement highlights the importance of itin-erant magnetic behavior in Fe 3GeTe 2, leading to partial suppression of its ferromagnetism. The paper is organized as follows. In Sec. II, we briefly discuss the methods of our study. In Sec. III, we present the results for the electronic properties (Sec. III A), mag-netic susceptibilities (Sec. III B), exchange interactions (Sec. III C), and the Curie temperature (Sec. III D). In Sec. IV, we conclude our paper.   
+
+> II. METHODS A. DFT details
+
+Density-functional (DFT) band-structure calculations were performed within the Perdew-Burke-Ernzerhof (PBE) exchange-correlation functional [45] as imple-mented in Vienna ab initio simulation package ( vasp )[46, 47]. In all DFT calculations, we use a (18 × 18 × 1) Γ centered grid for the Brillouin zone integration and set the energy cutoff of the plane-wave basis to 400 eV, the energy convergence criteria to 10 −8 eV. The experimen-tal crystal structure of bulk Fe 3GeTe 2 was used [48] with the lattice constant a = 4 ˚ A, in which a vacuum space about 20 ˚ A between the monolayer replicas in the vertical direction was introduced. The positions of atoms were relaxed until all the residual force components on each atom were less than 10 −3 eV/˚ A. From the nonmagnetic electronic structure, maximally localized Wannier func-tions [49] were constructed using the wannier90 pack-age [50] projecting onto the 3 d and 5 p states of iron and tellurium, respectively. The obtained Wannier functions served as a basis for the tight-binding Hamiltonian, sub-sequently used in DMFT calculations.  
+
+> B. DMFT
+
+In DMFT calculations, we consider the density-density interaction matrix, parameterized by Slater parameters 
+
+F 0, F 2, and F 4, expressed through Hubbard U and Hund JH interaction parameters according to F 0 ≡ U
+
+and ( F 2 + F 4)/14 ≡ JH, F2/F 4 ≃ 0.63 (see Ref. 51). Since our Hamiltonian does not contain high-energy s,
+
+p states of iron, we consider moderate U = 2 to 4 eV, assuming that it is partly screened by the high-energy states. We also use Hund exchange JH = 0 .9 eV. We use a double-counting correction HDC = MDC 
+
+P 
+
+> ir
+
+nird in the around mean-field form [52], MDC = ⟨nird ⟩[U (2 norb −1) −
+
+JH(norb −1)] /(2 norb ), where nird is the operator of the number of d electrons at the site ( i, r ), where i is the unit cell index and r is the site index within the unit cell. We perform the Hamiltonian rotation in the d-orbital space to diagonalize the crystal field, which considerably re-duces the off-diagonal components of the local Green’s functions with respect to the orbital indexes and im-proves applicability of the density-density interaction. To determine the exchange interactions we consider the effective Heisenberg model with the Hamiltonian 
+
+H = −(1 /2) P 
+
+> q,rr ′
+
+Jrr ′ 
+
+> q
+
+Sr
+
+> q
+
+Sr′
+
+> −q
+
+, Sr 
+
+> q
+
+is the Fourier trans-form of static operators Sir , where the orbital-summed on-site static spin operators Sir = P 
+
+> m
+
+Sirm and Sirm =(1 /2) P 
+
+> σσ ′ν
+
+c+ 
+
+> irmσν
+
+σσσ ′ cirmσ ′ν is the electron spin oper-3ator, ν are the Matsubara frequencies, c+ 
+
+> irmσν
+
+and cirmσν 
+
+are the frequency components of the electron creation and destruction operators at the site ( i, r ), d-orbital m,and spin projection σ, and σσσ ′ are the Pauli matrices. To extract the exchange parameters Jq, we relate them to the orbital-summed non-local static longitudinal sus-ceptibility χrr ′ 
+
+> q
+
+= −⟨⟨ Sz,r  
+
+> q
+
+|Sz,r ′ 
+
+> −q
+
+⟩⟩ ω=0 = P 
+
+> mm ′
+
+ˆχmr,m ′r′
+
+> q
+
+(the hats stand for matrices with respect to orbital and site indexes; ⟨⟨ .. |.. ⟩⟩ ω is the retarded Green’s function), considering the generalization of the approach of Ref. 53 to several atoms in the unit cell, and express exchange interactions as 
+
+Jq = χ−1loc − χ−1 
+
+> q
+
+, (1) the matrix inverse in Eq. (1) is taken with respect to the site indexes in the unit cell. The matrix of local suscep-tibilities χrr ′ 
+
+> loc
+
+= −⟨⟨ Szir |Szir ⟩⟩ ω=0 δrr ′ = P 
+
+> mm ′
+
+ˆχmm ′,r  
+
+> loc
+
+δrr ′
+
+is diagonal with respect to the site indices. The non-local susceptibility is determined from the Bethe-Salpeter equation using the local particle-hole irreducible vertices. The latter vertices are extracted from the inverse Bethe-Salpeter equation applied to the particle-hole vertex ob-tained within the DMFT solution (cf. Refs. [39, 54]). The DMFT calculations of the self-energies, non-uniform susceptibilities, and exchange interactions were performed within the Wan2mb software package [39, 41– 43], based on the continuous-time hybridization expan-sion Quantum Monte Carlo (CT-QMC) method for solv-ing the impurity problem [55], implemented in the iQIST software package [56]. 
+
+III. RESULTS A. Electronic properties 
+
+In Fig. 1, we present the partial densities of states of iron and tellurium atoms in DFT and DFT+DMFT ap-proaches (within the paper, we denote Fe 1,2 atoms which are located above (below) the plane, and Fe 3 denote the atoms, located in the plane). One can see that corre-lations yield a shift of the peak of the density of states of iron atoms to larger energies (in particular, pushing the peak from the Fermi level to a position above the Fermi level), while the profile of the density of states of tellurium atoms shifts to lower energies. This leads to the decrease of the occupation numbers of iron atoms by correlations (yielding their occupation closer to half fill-ing), while the occupation numbers of tellurium atoms increase. The occupation of non-equivalent Fe atoms is quite different. In particular, at β = 10 eV −1 and 
+
+U = 2 eV (4 eV), we find the occupation n = 6 .87 (6.54) at Fe 1,2 and n = 7 .91 (7.81) at Fe 3, compared to the DFT result n = 7 .48 and n = 7 .65, which are larger than those obtained in Ref. [19] because of using different Wannier basis.   
+
+H9 
+
+$  VWDWHVH9 
+
+> ')7)H 
+> ')7)H 
+> ')77H
+> 8 )H 
+> 8 )H 
+> 8 7H
+> 8 )H 
+> 8 )H 
+> 8 7H
+
+FIG. 1. Frequency dependence of partial densities of d
+
+states of iron and p states of tellurium calculated within the DFT+DMFT approach at β = 10 eV −1 and U = 2 eV and 4 eV. The inset shows the crystal structure of Fe 3GeTe 2, num-bers r = 1 .. 3 correspond to Fe r atoms in the unit cell. 
+
+In Fig. 2, we present the electronic self-energies. One can see that in accordance with different oc-cupations the self-energies of atoms Fe 1,2, which are closer to half-filling, have a non-quasiparticle form with 
+
+∂ImΣ( iν n)/∂ν n > 0 (which is related to the local mag-netic moment formation, discussed below), while the self-energies of the atoms Fe 3 have a quasiparticle form.    ,P  L Q H9       
+
+> 
+> QH9
+>     ,P  L Q H9
+
+D8  E8  )H  
+
+)H 
+
+)H  
+
+)H 
+
+FIG. 2. Frequency dependence of the imaginary parts of the electronic self-energies, corresponding to various d-orbital states at Fe 1,2 atoms (circles) and Fe 3 atoms (diamonds) cal-culated within the DFT+DMFT approach at β = 10 eV −1
+
+and U = 2 eV (a), U = 4 eV (b). 4 
+
+> B. Local and uniform susceptibilities
+
+Fig. 3 shows the temperature dependence of the local susceptibilities. In accordance with the self-energies ob-tained, the local susceptibilities at the Fe 1,2 atoms show Curie-like behavior, corresponding to the formation of local magnetic moments, while Fe 3 atoms exhibit Pauli-like susceptibilities. However, we note that the inverse susceptibilities corresponding to the Fe 1,2 atoms are not perfectly linear, indicating that the formation of local moments is only partial. Moreover, the size of the local magnetic moment, determined by the slope of χ−1loc (T ) de-pendencies, increases with the interaction due to closer proximity to half filling of Fe 1,2 atoms at larger U . At 
+
+U = 3 − 4 eV and the relatively high temperature consid-ered, we obtain a magnetic moment μ2loc ≃ 20 μ2 
+
+> B
+
+/Fe 1,2.The experimental magnetic moment, extracted from the Curie-Weiss law for the uniform susceptibility, consti-tutes μ2 ≃ 21 μ2 
+
+> B
+
+/Fe [18]. However, one has to take into account the difference of the slopes of uniform and lo-cal susceptibilities and that the experimental magnetic moment is ascribed to the three magnetic atoms in the unit cell, which translates to μ2 ≃ 32 μ2 
+
+> B
+
+/Fe 1,2, assum-ing that the third atom does not carry a pronounced local magnetic moment. The difference between the cal-culated μ2loc and the experimental value can be partially attributed to the relatively high temperatures considered. By performing an extrapolation with a polynomial fit to 
+
+T ∼ T exp  
+
+> C
+
+≃ 200 K, we find a larger magnetic moment of 
+
+μ2loc ≃ 40 μ2 
+
+> B
+
+/Fe 1,2.The abovementioned theoretical values of magnetic moments, obtained from local magnetic susceptibility, are further somewhat suppressed in the uniform sus-ceptibility measured experimentally. Fig. 4 shows the temperature dependencies of the inverse uniform par-    7 . 
+
+>   
+> ORF  H9
+>     
+
+)H  
+
+)H            
+
+>  %
+>  %
+> FIG. 3. Temperature dependence of the inverse local suscep-tibilities of Fe 1,2(left axis) and Fe 3(right axis) atoms calcu-lated within the DFT+DMFT approach. Dashed lines show the result of extrapolation.      7 .
+>    
+>  H9 
+>     
+
+)H )H 
+
+)H )H )H )H 
+
+)H)H            
+
+> FIG. 4. Temperature dependence of the inverse partial (open and closed symbols) and total (crossed symbols) uni-form spin susceptibilities of Fe atoms calcualted within the DFT+DMFT approach with U= 2 eV (squares) and U=4 eV (circles). Solid lines show the result of interpolation.
+
+tial ( χmm 
+
+> q=0
+
+)−1 (corresponding to Fe m atom) and total (P 
+
+> mn
+
+χmn 
+
+> q=0
+
+)−1 susceptibilities. The inverse susceptibili-ties corresponding to the atoms Fe 1,2 show a Curie-Weiss-like behavior, with moderate non-linearity corresponding to the partial formation of local magnetic moments, while the inverse susceptibilities corresponding to Fe 3 atoms show linear behavior only at sufficiently high temper-atures, which changes to non-linear behavior at lower temperatures. Interestingly, the total inverse suscepti-bilities show a more linear behavior, which is due to the important contribution of the off-diagonal susceptibility elements χmn  
+
+> q=0
+
+with m̸ = n. The Curie temperature ob-tained within DMFT is T DMFT  
+
+> C
+
+≃ 1300 K for U = 2 eV and T DMFT  
+
+> C
+
+≃ 1450 K for U = 4 eV. The total square of the magnetic moment estimated in the vicinity of T DMFT 
+
+> C
+
+is μ2 ≃ 13 μ2 
+
+> B
+
+/Fe (9 μ2 
+
+> B
+
+/Fe) for U = 4 eV (2 eV). We note that due to the mean-field nature of the ap-proach, DMFT violates the Mermin-Wagner theorem and yields a finite Curie temperature T DMFT  
+
+> C
+
+, which physi-cally corresponds to the crossover to the regime of strong magnetic correlations. Therefore, the actual Curie tem-perature is much smaller than those obtained from the DMFT and is estimated below in Sect. III D. Extrap-olating the obtained temperature dependencies of mag-netic moments to the low-temperature region, we find at 
+
+T ∼ T exp  
+
+> C
+
+the estimate μ2 ≃ 17 μ2 
+
+> B
+
+/Fe (21 μ2 
+
+> B
+
+/Fe), respec-tively. The latter value agrees with that obtained ex-perimentally. Therefore, despite the presence of weakly magnetic Fe 3 atoms, which do not possess well formed local magnetic moments, the considered magnetic state of the atoms is sufficient to explain the experimentally measured local magnetic moment. 5
+
+C. Exchange interactions and spin-wave dispersions 
+
+Our method of calculating the exchange interactions from the inverse susceptibilities allows us to consider the situation with no well defined local magnetic moment on Fe 3 atoms. In Fig. 5, we show the momentum depen-dence of exchange interactions obtained for U = 3 eV and 
+
+U = 4 eV. While the exchange interaction J33  
+
+> q
+
+between Fe 3 atoms increases with increasing U , the off-diagonal components J12  
+
+> q
+
+and J13  
+
+> q
+
+decrease with increasing U ,which may be related to the redistribution of electronic density towards the Te atoms, discussed in Sec. III A, and, therefore, weaker hybridization between the iron atoms. Notably, the exchange interactions J11 ,22 have a minimum at the Γ point, which corresponds to anti-ferromagnetic exchange between the respective atoms, in agreement with previous DFT and DFT+DMFT analy-sis in the ordered phase [20]. Importantly, these exchange interactions are compensated by other types of interac-tions, which are all ferromagnetic (with the largest Jr3
+
+interaction, r = 1 , 2). Although this compensation was considered previously within the ordered state (see, e.g., Ref. [20]), here it is obtained for the paramagnetic state, in which one of the three atoms (Fe 3) does not possess a well defined local magnetic moment. As we argue in Appendix, Jr3 interactions play a role of the RKKY ex-. 0T
+
+    (T H9 
+
+(
+
+(
+
+(
+
+    -T H9 
+
+- 
+
+- 
+
+- 
+
+- 
+
+DE
+
+FIG. 5. (a) Momentum dependence of inequivalent exchange interactions Jrr ′ 
+
+> q
+
+between various iron atoms r, r ′ = 1 .. 3 and (b) magnon dispersions Ei(q) at β = 10 eV −1 and various values of the on-site Coulomb interaction U .Fe 1
+
+Fe 2
+
+Fe 3     
+
+> 246810 12
+
+0
+
+10 
+
+20 
+
+30 
+
+> J(r) ( meV )
+
+## Fe 1
+
+Fe 1,Fe 2
+
+Fe 3
+
+2 4 6 8 10 12 
+
+0
+
+10 
+
+20 
+
+30 
+
+40 
+
+r (Angstrom )
+
+> J(r) ( meV )
+
+## Fe 3
+
+FIG. 6. Exchange interactions Jrr ′
+
+(r) of Fe 1 (r = 1, top) and Fe 3 (r = 3, bottom) atoms with various neighbors at 
+
+U = 4 eV, β = 10 eV −1.
+
+change interactions between local magnetic moments at Fe 1,2 and more itinerant Fe 3 sites. The radial Jrr ′
+
+(r) distribution of exchange interac-tions, obtained by performing the Fourier transform of Eq. (1), is shown for U = 4 eV in Fig. 6. The exchange interactions are to a large extent similar to those determined in the ferromagnetic phase within the DFT+DMFT approach [20]. In particular, we find 
+
+J11 ,22 < 0 at the nearest neighbor sites in line with the above consideration. The J33 interaction at the near-est neighbor sites appears to be ferromagnetic in the present approach, in contrast to the study in the fer-romagnetic phase. Also, the J12 interaction at the next nearest neighbor sites appears to be ferromagnetic, while it was found to be negligibly small in the ferromagnetic phase. Therefore, the present study shows a strong ten-dency towards ferromagnetism, with the only antiferro-magnetic interaction J11 at the nearest neighbor sites, the magnitude of which is close to that obtained in Ref. [20]. To obtain the spin-wave dispersions in the ferromag-netic phase (assuming that the exchange interactions do not change strongly), we use the linear spin-wave ap-proach to the effective Heisenberg model, which yields the spin-wave dispersions as eigenvalues of the Hamilto-6    7 .     
+
+>    ' PH9$ 
+> FIG. 7. Temperature dependence of the spin wave stiffness within the DFT+DMFT approach for various U.Dashed lines show the result of extrapolation.
+
+nian matrix (see, e.g., Ref. [57]) 
+
+Hrr ′ 
+
+> q
+
+= δrr ′
+
+> 3
+
+X
+
+> r′′ =1
+
+pr′′ Jrr ′′  
+
+> 0
+
+− √pr pr′ Jrr ′ 
+
+> q
+
+(2) where pr is the ordering moment of site r (in units of 2μB ). Following the experimental study of Ref. [58], we assume p1,2 = 1 .1, p3 = 0 .75. The resulting spin wave dispersions and stiffnesses are shown in Figs. 5(b) and 7, respectively. One can see that the acoustic branch is positively defined. Because of a decrease of the off-diagonal components of exchange interactions with increasing U , both the spin-wave dis-persions and the spin stiffnesses decrease with increasing the interaction. The resulting spin-wave stiffness D ≃
+
+235 meV ·˚A2 at U = 4 eV is in a reasonable agree-ment with the experimental data D ≃ 200 meV ·˚A2,obtained from the inelastic neutron scattering [59], and much smaller than the DFT estimate D ≃ 400 meV ·˚A2
+
+[60]. Note that the overestimate of the spin-wave stiffness may be in particular related to the overestimate of the magnetic moments in Ref. [58] which yield the average saturation moment μs ≃ 2μB /Fe larger than the experi-mental value μs ≃ 1.6μB /Fe [25]. Rescaling the moments to the values p1,2 = 0 .9, p3 = 0 .6 to obtain the total sat-uration moment μs = 1 .6μB /Fe, we achieve even better agreement with the experimental data, D = 190 meV ·
+
+˚A2. 
+
+> D. Curie temperature
+
+According to the Mermin-Wagner theorem, in an isotropic two-dimensional system, there cannot be long-range magnetic ordering at finite temperatures, that is, the Curie temperature TC = 0. Thus, the finite Curie temperature appears solely due to the magnetic anisotropy, which can be approximated by the easy-axis term in the spin Hamiltonian E P 
+
+> i,r
+
+(Szir )2. The corre-sponding Curie temperature of a two-dimensional mag-net can be estimated from the exchange interactions us-ing the equation [61, 62] 
+
+TC = 4πρ s
+
+ln ( TC /∆) + 4 ln(4 πρ s/T C ) (3) where ∆ = (2 S − 1) E is the gap in the spin-wave spec-trum, ρs = DS/A is the spin stiffness, A is the cell area. For E = 0 .35 meV (Ref. 14), S = 1, A = 13 .85 ˚ A2, and 
+
+D = 235 meV · ˚A2 (190 meV · ˚A2), we find TC =170 K (140 K), in a reasonable (good) agreement with the ex-perimental data available for monolayer samples (130 K) [8], and well below the experimental values for bulk Fe 3GeTe 2 (220 K) [25].  
+
+> IV. CONCLUSIONS
+
+In conclusion, we have studied the electronic and mag-netic properties of Fe 3GeTe 2 within the DFT+DMFT approach in the paramagnetic phase. The obtained tem-perature dependencies of local and uniform susceptibil-ities are non-linear, showing only partial formation of local magnetic moments. This can be related to the fact that the d-states in Fe 3GeTe 2 are farther away from half filling than in elemental iron. Yet, the iron atoms located above (below) the Ge plane exhibit a non-quasiparticle form of the electronic self-energy. The partial inverse local and uniform susceptibilities show non-linear temperature behavior, suggesting par-tially formed magnetic moments. The local magnetic moments extracted from the temperature dependence of the local and uniform susceptibilities and extrapolated to the low-temperature region are in reasonable agree-ment with the experimental data. The exchange interac-tions overall agree with the values obtained earlier within the DFT+DMFT approach in the ferromagnetic phase, but show a lesser degree of frustration. The spin-wave stiffness ( D ≃ 235 meV ·˚A2) and the respective Curie temperature ( TC = 170 K) are found to be in reasonable agreement with the experimental data. The overestimate of spin stiffness and Curie temperature is possibly related to the overestimate of saturated magnetic moments; for the total magnetic moment μs = 1 .6μB /Fe we obtain 
+
+D = 190 meV ·˚A2 and TC = 140 K in even better agree-ment with the experimental data. Our results highlight the important relationship be-tween the itinerant behavior of Fe 3GeTe 2 and the sup-pression of the local magnetic moment at iron atoms located within the Ge plane (Fe 3), leading to a strong differentiation of magnetic sites, much larger than previ-ously proposed [19]. Therefore, the approach used here to treat electron correlations allows us to gain further in-sight into the nature of magnetism of Fe 3GeTe 2, while its validity is justified by a good agreement of the obtained results with the experimental data. 7
+
+ACKNOWLEDGEMENTS 
+
+The work of A.K. (performing DMFT calculations) was supported by the RSF project 24-12-00186. The authors declare that this work has been published as a result of peer-to-peer scientific collaboration between re-searchers. The provided affiliations represent the actual addresses of the authors, in agreement with their digital identifier (ORCID), and cannot be considered as a for-mal collaboration between Radboud University and the other aforementioned institutions. 
+
+APPENDIX 
+
+To emphasize the physical meaning of exchange inter-actions with Fe 3 atoms, we consider effective exchange interactions between Fe 1,2 atoms, for which a partly formed local magnetic moment is obtained by perform-ing 2 × 2 matrix inversion in Eq. (1), correspond-ing to the atoms Fe 1,2. Using the identity ( χ2,2)−1 =(χ−1)2,2 − (χ−1)2,3(χ−1)3,2/(χ−1)3,3 where the index 2 corresponds to the Fe 1,2 atoms, represented by the ele-ments 1,2 of the matrix, and 3 corresponds to Fe 3 atom, represented by the third element, we obtain ˜Jq = ( Jq)2,2 + ( Jq)2,3(χloc )3,3(Jq)3,2 (4) where we have approximated the weakly momentum de-pendent matrix element ( χq)3,3 by its local value. There-fore, the resulting exchange interaction ˜Jq can be viewed as the interaction that includes the local RKKY ex-change with the third atom, and the interactions Jr3
+
+with r = 1 , 2 play the role of RKKY exchange inter-actions. We have verified that the spin-wave stiffness, obtained with exchange interactions ˜Jq, is close to that obtained with the full set of exchange interactions, pro-vided that the magnetic moments are renormalized as ˜p1,2 = p1,2 + p3/2 to include the magnetic moment of the third atom. 
+
+[1] S. Jiang, J. Shan, and K. F. Mak, Electric-field switch-ing of two-dimensional van der Waals magnets, Nature Materials 17 , 406 (2018). [2] M. Bonilla, S. Kolekar, Y. Ma, H. C. Diaz, V. Kalappat-til, R. Das, T. Eggers, H. R. Gutierrez, M.-H. Phan, and M. Batzill, Strong room-temperature ferromagnetism in VSe 2 monolayers on van der Waals substrates, Nature Nanotechnology 13 , 289 (2018). [3] K.-Z. Du, X.-Z. Wang, Y. Liu, P. Hu, M. I. B. Utama, C. K. Gan, Q. Xiong, and C. Kloc, Weak van der Waals stacking, wide-range band gap, and Raman study on ul-trathin layers of metal phosphorus trichalcogenides, ACS Nano 10 , 1738 (2016). [4] B. Huang, G. Clark, E. Navarro-Moratalla, D. R. Klein, R. Cheng, K. L. Seyler, D. Zhong, E. Schmidgall, M. A. McGuire, D. H. Cobden, W. Yao, D. Xiao, P. Jarillo-Herrero, and X. Xu, Layer-dependent ferromagnetism in a van der Waals crystal down to the monolayer limit, Nature 546 , 270 (2017). [5] M. Gibertini, M. Koperski, A. F. Morpurgo, and K. S. Novoselov, Magnetic 2D materials and heterostructures, Nature Nanotech. 14 , 408 (2019). [6] D. Soriano, M. I. Katsnelson, and J. Fern´ andez-Rossier, Magnetic two-dimensional chromium trihalides: A theo-retical perspective, Nano Lett. 204 , 6225 (2020). [7] Y. Deng, Y. Yu, Y. Song, J. Zhang, N. Z. Wang, Z. Sun, Y. Yi, Y. Z. Wu, S. Wu, J. Zhu, J. Wang, X. H. Chen, and Y. Zhang, Gate-tunable room-temperature ferro-magnetism in two-dimensional Fe 3GeTe 2, Nature 563 ,94 (2018). [8] Z. Fei, B. Huang, P. Malinowski, W. Wang, T. Song, J. Sanchez, W. Yao, D. Xiao, X. Zhu, A. F. May, W. Wu, D. H. Cobden, J.-H. Chu, and X. Xu, Two-dimensional itinerant ferromagnetism in atomically thin Fe 3GeTe 2,Nature Materials 17 , 778 (2018). [9] K. Kim et al. , Large anomalous hall current induced by topological nodal lines in a ferromagnetic van der Waals semimetal, Nat. Mater. 17 , 794 (2018). [10] J. Xu, W. A. Phelan, and C.-L. Chien, Large anomalous Nernst effect in a van der Waals ferromagnet Fe 3GeTe 2,Nano Letters 19 , 8250 (2019). [11] R. Roemer, C. Liu, and K. Zou, Robust ferromagnetism in wafer-scale monolayer and multilayer Fe 3GeTe 2, npj 2D Mater. Appl. 4, 33 (2020). [12] Y. Zhang et al. , Emergence of Kondo lattice behavior in a van der Waals itinerant ferromagnet Fe 3GeTe 2, Sci. Adv. 
+
+4, 6791 (2018). [13] M. Zhao et al. , Kondo holes in the two-dimensional itin-erant Ising ferromagnet Fe 3GeTe 2, Nano Lett. 21 , 6117 (2021). [14] D. I. Badrtdinov, G. V. Pushkarev, M. I. Katsnelson, and A. N. Rudenko, Electron transport and scattering mechanisms in ferromagnetic monolayer Fe 3GeTe 2, npj 2D Materials and Applications 7, 52 (2023). [15] V. I. Anisimov, A. I. Poteryaev, M. A. Korotin, A. O. Anokhin, and G. Kotliar, First-principles calculations of the electronic structure and spectra of strongly corre-lated systems: dynamical mean-field theory, Journal of Physics: Condensed Matter 9, 7359 (1997). [16] A. I. Lichtenstein and M. I. Katsnelson, Ab initio calcu-lations of quasiparticle band structure in correlated sys-tems: LDA++ approach, Phys. Rev. B 57 , 6884 (1998). [17] G. Kotliar, S. Y. Savrasov, K. Haule, V. S. Oudovenko, O. Parcollet, and C. A. Marianetti, Electronic struc-ture calculations with dynamical mean-field theory, Rev. Mod. Phys. 78 , 865 (2006). [18] J.-X. Zhu, M. Janoschek, D. S. Chaves, J. C. Cezar, T. Durakiewicz, F. Ronning, Y. Sassa, M. Mansson, B. L. Scott, N. Wakeham, E. D. Bauer, and J. D. Thompson, Electronic correlation and magnetism in the ferromag-netic metal Fe 3GeTe 2, Phys. Rev. B 93 , 144404 (2016). 8
+
+[19] T. J. Kim, S. Ryee, and M. J. Han, Fe 3GeTe 2: a site-differentiated Hund metal, npj Computational Materials 
+
+8, 245 (2022). [20] S. Ghosh, S. Ershadrad, V. Borisov, and B. Sanyal, Un-raveling effects of electron correlation in two-dimensional Fe nGeTe 2 (n = 3, 4, 5) by dynamical mean field theory, npj Computational Materials 9, 86 (2023). [21] D. Sharma, A. Ali, N. Bhatt, R. R. Chowdhury, C. Patra, R. P. Singh, and R. S. Singh, Manifestation of incoher-ent–coherent crossover and non-Stoner magnetism in the electronic structure of Fe 3GeTe 2, Physical Review B 110 ,125119 (2024). [22] M. I. Katsnelson and A. I. Lichtenstein, First-principles calculations of magnetic interactions in correlated sys-tems, Phys. Rev. B 61 , 8906 (2000). [23] Y. O. Kvashnin, O. Gr˚ an¨ as, I. Di Marco, M. I. Kat-snelson, A. I. Lichtenstein, and O. Eriksson, Exchange parameters of strongly correlated materials: Extraction from spin-polarized density functional theory plus dy-namical mean-field theory, Phys. Rev. B 91 , 125133 (2015). [24] A. Szilva, Y. Kvashnin, E. A. Stepanov, L. Nordstr¨ om, O. Eriksson, A. I. Lichtenstein, and M. I. Katsnelson, Quantitative theory of magnetic interactions in solids, Rev. Mod. Phys. 95 , 035004 (2023). [25] B. Chen, J. Yang, H. Wang, M. Imai, H. Ohta, C. Mi-chioka, K. Yoshimura, and M. Fang, Magnetic proper-ties of layered itinerant electron ferromagnet Fe 3GeTe 2,Journ. Phys. Soc. Jpn 82 , 124711 (2013). [26] P. Rhodes and E. P. Wohlfarth, The effective curie–weiss constant of ferromagnetic metals and alloys, Proceedings of the Royal Society of London. Series A, Mathematical and Physical Sciences 273 , 247 (1963). [27] T. Moriya, Spin Fluctuations in Itinerant Electron Mag-netism , Springer Series in Solid-State Sciences, Vol. 56 (Springer-Verlag, Berlin, Heidelberg, 1985). [28] J. M. Santiago, C.-L. Huang, and E. Morosan, Itinerant magnetic metals, Journal of Physics: Condensed Matter 
+
+29 , 373002 (2017). [29] M. I. Katsnelson and A. I. Lichtenstein, Electronic struc-ture and magnetic properties of correlated metals, Eur. Phys. J. B 30 , 9 (2002). [30] L. V. Pourovskii, M. I. Katsnelson, and A. I. Lichtenstein, Correlation effects in electronic structure of actinide monochalcogenides, Phys. Rev. B 72 , 115106 (2005). [31] J. Braun, J. Min´ ar, H. Ebert, M. I. Katsnelson, and A. I. Lichtenstein, Spectral function of ferromagnetic 3 d met-als: A self-consistent LSDA + DMFT approach combined with the one-step model of photoemission, Phys. Rev. Lett. 97 , 227601 (2006). [32] I. Di Marco, J. Min´ ar, S. Chadov, M. I. Katsnelson, H. Ebert, and A. I. Lichtenstein, Correlation effects in the total energy, the bulk modulus, and the lattice con-stant of a transition metal: Combined local-density ap-proximation and dynamical mean-field theory applied to Ni and Mn, Phys. Rev. B 79 , 115111 (2009). [33] J. S´ anchez-Barriga, J. Min´ ar, J. Braun, A. Varykhalov, V. Boni, I. Di Marco, O. Rader, V. Bellini, F. Manghi, H. Ebert, M. I. Katsnelson, A. I. Lichtenstein, O. Eriks-son, W. Eberhardt, H. A. D¨ urr, and J. Fink, Quantitative determination of spin-dependent quasiparticle lifetimes and electronic correlations in hcp cobalt, Phys. Rev. B 
+
+82 , 104414 (2010). [34] A. Kutepov, K. Haule, S. Y. Savrasov, and G. Kotliar, Self-consistent GW determination of the interaction strength: Application to the iron arsenide superconduc-tors, Phys. Rev. B 82 , 045105 (2010). [35] P. Werner, M. Casula, T. Miyake, F. Aryasetiawan, A. J. Millis, and S. Biermann, Satellites and large doping and temperature dependence of electronic properties in hole-doped BaFe 2As 2, Nature Physics 8, 331 (2012). [36] M. I. Katsnelson and A. I. Lichtenstein, Magnetic suscep-tibility, exchange interactions and spin-wave spectra in the local spin density approximation, Journal of Physics: Condensed Matter 16 , 7439 (2004). [37] I. V. Solovyev, Exchange interactions and magnetic force theorem, Phys. Rev. B 103 , 104428 (2021). [38] I. V. Solovyev, Linear response theories for interatomic exchange interactions, J. Phys.: Condens. Matter 36 ,223001 (2024). [39] A. A. Katanin, A. S. Belozerov, A. I. Lichtenstein, and M. I. Katsnelson, Exchange interactions in iron and nickel: DFT+DMFT study in paramagnetic phase, Phys-ical Review B 107 , 235118 (2023). [40] A. A. Katanin, Exchange interactions in itinerant mag-nets: the effects of local particle-hole irreducible vertex corrections and SU(2) symmetry of Hund interaction, Physical Review B 112 , 085141 (2025). [41] A. A. Katanin, DFT+DMFT study of exchange interac-tions in cobalt and their implications for the competition of hcp and fcc phases, Physical Review B 108 , 235170 (2023). [42] A. A. Katanin, Magnetic properties of half metal from the paramagnetic phase: DFT+DMFT study of exchange interactions in CrO 2, Physical Review B 110 , 155115 (2024). [43] A. A. Katanin and E. M. Agapov, Magnetic properties of monolayer, multilayer, and bulk CrTe 2, Physical Review B 111 , 035118 (2025). [44] A. A. Katanin and E. M. Agapov, Erratum: Magnetic properties of monolayer, multilayer, and bulk CrTe 2,Physical Review B 113 , 119901 (2026). [45] J. P. Perdew, K. Burke, and M. Ernzerhof, Generalized gradient approximation made simple, Phys. Rev. Lett. 
+
+77 , 3865 (1996). [46] G. Kresse and J. Furthm¨ uller, Efficient iterative schemes for ab initio total-energy calculations using a plane-wave basis set, Phys. Rev. B 54 , 11169 (1996). [47] G. Kresse and J. Hafner, Ab initio molecular dynamics for liquid metals, Phys. Rev. B 47 , 558 (1993). [48] H.-J. Deiseroth, K. Aleksandrov, C. Reiner, L. Kienle, and R. K. Kremer, Fe 3GeTe 2 and Ni 3GeTe 2 – two new layered transition-metal compounds: Crystal structures, hrtem investigations, and magnetic and electrical prop-erties, European Journal of Inorganic Chemistry 2006 ,1561 (2006). [49] N. Marzari and D. Vanderbilt, Maximally localized gen-eralized Wannier functions for composite energy bands, Phys. Rev. B 56 , 12847 (1997). [50] G. Pizzi, V. Vitale, R. Arita, S. Bl¨ ugel, F. Freimuth, G. G´ eranton, M. Gibertini, D. Gresch, C. Johnson, T. Koretsune, J. Iba˜ nez-Azpiroz, H. Lee, J.-M. Lihm, D. Marchand, A. Marrazzo, Y. Mokrousov, J. I. Mustafa, Y. Nohara, Y. Nomura, L. Paulatto, S. Ponc´ e, T. Pon-weiser, J. Qiao, F. Th¨ ole, S. S. Tsirkin, M. Wierzbowska, N. Marzari, D. Vanderbilt, I. Souza, A. A. Mostofi, and J. R. Yates, Wannier90 as a community code: new fea-9
+
+tures and applications, Journal of Physics: Condensed Matter 32 , 165902 (2020). [51] V. I. Anisimov, F. Aryasetiawan, and A. I. Lichtenstein, First-principles calculations of the electronic structure and spectra of strongly correlated systems: the LDA+U method, Journal of Physics: Condensed Matter 9, 767 (1997). [52] M. T. Czy˙ zyk and G. A. Sawatzky, Local-density func-tional and on-site correlations: The electronic structure of La 2CuO 4 and LaCuO 3, Physical Review B 49 , 14211 (1994). [53] A. A. Katanin, A. S. Belozerov, A. I. Lichtenstein, and M. I. Katsnelson, Exchange interactions in iron and nickel: DFT+DMFT study in paramagnetic phase, Phys. Rev. B 107 , 235118 (2023). [54] G. Rohringer, H. Hafermann, A. Toschi, A. A. Katanin, A. E. Antipov, M. I. Katsnelson, A. I. Lichtenstein, A. N. Rubtsov, and K. Held, Diagrammatic routes to nonlocal correlations beyond dynamical mean field theory, Rev. Mod. Phys. 90 , 025003 (2018). [55] P. Werner, A. Comanac, L. de’ Medici, M. Troyer, and A. J. Millis, Continuous-time solver for quantum impu-rity models, Physical Review Letters 97 , 076405 (2006). [56] L. Huang, Y. Wang, Z. Y. Meng, L. Du, P. Werner, and X. Dai, iQIST: An open source continuous-time quan-tum Monte Carlo impurity solver toolkit, Comp. Phys. Commun. 195 , 140 (2015). [57] S. V. Tyablikov, Methods in the Quantum Theory of Mag-netism (Plenum Press, New York, 1967). [58] A. F. May, S. Calder, C. Cantoni, H. Cao, and M. A. McGuire, Magnetic structure and phase stability of the van der Waals bonded ferromagnet Fe 3−xGeTe 2, Physical Review B 93 , 014411 (2016). [59] C. R. Trainer, I. T. Rosen, A. V. Fedorov, M. Graham, R. J. McQueeney, and V. Madhavan, Nanoscale mag-netic texture in the van der waals ferromagnet Fe 3GeTe 2,Physical Review B 106 , L081405 (2022). [60] G. V. Pushkarev, D. I. Badrtdinov, I. A. Iakovlev, V. V. Mazurenko, and A. N. Rudenko, An effective spin model on the honeycomb lattice for the description of magnetic properties in two-dimensional Fe 3GeTe 2, Journal of Mag-netism and Magnetic Materials 588 , 171456 (2023). [61] V. Y. Irkhin and A. A. Katanin, Thermodynamics of isotropic and anisotropic layered magnets: renormaliza-tion group approach and 1/N expansion, Phys. Rev. B 
+
+57 , 379 (1998). [62] V. Y. Irkhin, A. A. Katanin, and M. I. Katsnelson, Self-consistent spin-wave theory of layered Heisenberg mag-nets, Phys. Rev. B 60 , 1082 (1999).

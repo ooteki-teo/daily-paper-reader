@@ -1,0 +1,456 @@
+Title: A Correlated Route to Antiferromagnetic Spintronics
+
+URL Source: https://arxiv.org/pdf/2603.16552v1
+
+Published Time: Wed, 18 Mar 2026 01:18:48 GMT
+
+Number of Pages: 9
+
+Markdown Content:
+# A Correlated Route to Antiferromagnetic Spintronics 
+
+Joel Bobadilla 1 and Alberto Camjayi 2, 3, ∗
+
+> 1
+
+Universidad de Buenos Aires, Facultad de Ciencias Exactas y Naturales, Departamento de F´ ısica, Buenos Aires, Argentina 
+
+> 2
+
+Universidad de Buenos Aires, Ciclo B´ asico Com´ un, Buenos Aires, Argentina 
+
+> 3
+
+CONICET–Universidad de Buenos Aires, Instituto de F´ ısica de Buenos Aires (IFIBA), Buenos Aires, Argentina 
+
+(Dated: March 18, 2026) Antiferromagnets offer an attractive platform for spintronics due to their absence of net magne-tization and ultrafast spin dynamics, yet their intrinsically spin-compensated electronic structure has traditionally limited their active role in spin transport. Here we identify a minimal, correlation-driven route to spin-polarized charge transport in collinear antiferromagnets. Using the doped antiferromagnetic Hubbard model within dynamical mean-field theory, we show that electronic cor-relations generate strong spin-dependent scattering upon doping away from half filling, while a uniform magnetic field lifts the residual symmetries that enforce spin-degenerate transport. Only the combined breaking of particle–hole symmetry by doping and of the antiferromagnetic sublattice equivalence by the applied magnetic field converts these dynamical asymmetries into a finite spin polarization of the charge current. Our results establish electronic correlations as an active ingre-dient for antiferromagnetic spintronics and reveal a correlated analogue of the symmetry-breaking mechanism underlying altermagnetic spin-polarized transport in structurally conventional, collinear antiferromagnets. 
+
+Introduction Spintronics, also known as spin-based or spin-transport electronics, exploits the active control of the electron spin in addition to its charge in solid-state systems [1, 2]. This additional degree of freedom enables the manipulation of electrical currents at lower operating voltages. As a result, spintronic devices offer reduced power consumption, faster operation speeds, and higher data-storage density compared with conventional charge-based electronic devices [2]. Ferromagnets (FMs) have played a central role in the development of spintronics. Early break-throughs—such as spin-polarized tunneling in ferromag-netic (FM) junctions and the realization of half-metallic FMs—established them as the cornerstone of spintronic devices [1, 2]. Owing to broken time-reversal symmetry, FMs exhibit spin-split electronic bands and spontaneous magnetization, which make the manipulation and detec-tion of magnetic order relatively straightforward. How-ever, this spontaneous net magnetization also imposes intrinsic limitations, including restricted integration den-sity due to stray magnetic fields, susceptibility to external magnetic perturbations, and speed limits associated with GHz-range magnetization dynamics [3, 4]. Conventional antiferromagnets (AFMs), characterized by fully compensated magnetic sublattices, naturally avoid many of these drawbacks. Their intrinsic advan-tages over FM systems include insensitivity to external magnetic fields, ultrafast spin dynamics, and the poten-tial for higher device integration density [3, 4]. Moreover, AFM materials are abundant and diverse, spanning in-sulators, semiconductors, metals, and even superconduc-tors [3]. Despite these appealing properties, conventional AFMs—composed of two magnetic sublattices with an-tiparallel moments and no additional local symmetry breaking—exhibit spin-degenerate electronic bands as a consequence of combined parity–time-reversal ( P T ) sym-metry. As a result, they lack an intrinsic spin polarization of the electronic structure [3]. This symmetry constraint suppresses anomalous and spin-polarized transport phe-nomena, relegating AFMs to passive roles in early spin-tronic architectures [4]. This paradigm has been overturned by the recent dis-covery of spin-polarized AFMs, which can be classified into three broad families according to their distinct mech-anisms for breaking parity–time-reversal ( P T ) symme-try: altermagnets (AMs), noncollinear antiferromagnets (ncl-AFMs), and two-dimensional layer-polarized antifer-romagnets (LP-AFMs) [3, 4]. In AMs, antiparallel spin sublattices are connected by crystal-rotation symmetries rather than by lattice translations or inversion, as in con-ventional AFMs [3, 4]. Noncollinear AFMs typically host triangular or kagome spin arrangements, generating chi-ral spin textures that break P T symmetry and induce Berry-curvature-driven anomalous Hall effects [3, 4]. Fi-nally, LP-AFMs exploit interlayer potential gradients in two-dimensional materials or heterostructures to break 
+
+P T symmetry, enabling layer-selective spin polarization tunable via external electric fields, stacking configura-tions, or sliding ferroelectricity. As the variety of spin-polarized AFMs continues to expand, developing a unified theoretical understand-ing of their transport properties becomes increasingly important. In this work, we theoretically investi-gate the Mott–Hubbard antiferromagnet—a paradig-matic correlated-electron model—subject to an exter-nally applied magnetic field [5, 6]. When the system is doped away from half filling, particle–hole ( P H ) symme-try is broken. Combined with the magnetic-field-induced lifting of the AFM sublattice equivalence protected by 
+
+> arXiv:2603.16552v1 [cond-mat.str-el] 17 Mar 2026
+
+2         
+
+> FIG. 1. Sublattice- and spin-resolved local spectral functions Aαα σ(ω) for the four relevant regimes. From left to right: half filling without magnetic field, doped system at zero field, half-filled system under a magnetic field, and doped system under a magnetic field. Only the combined action of doping and magnetic field fully removes the spectral symmetries enforcing spin-degenerate transport. Unless otherwise stated, the plots correspond to h= 0 .07 and δ= 0 .028.
+
+P T symmetry, these effects lead to a nontrivial spin po-larization of the electronic bands. 
+
+Model and Methods We study the one-band Hubbard model on a bipartite lattice in the presence of a uniform Zeeman-like field h,
+
+H = −t X
+
+> ⟨ij ⟩,σ
+
+
+
+a† 
+
+> iσ
+
+bjσ + b† 
+
+> iσ
+
+ajσ 
+
+
+
++ U X
+
+> i
+
+ni↑ni↓
+
+− μ X
+
+> i,σ
+
+niσ − h X
+
+> i
+
+Szi , (1) where a† (b†) creates an electron on sublattice A (B), U is the local Coulomb repulsion, and μ controls the electronic filling. We focus on the electron-doped regime, quantified by δ = n−1 > 0, with n the total filling per site, obtained by tuning μ > U/ 2 away from half filling. We consider the infinite-dimensional bipartite hypercubic lattice, for which the noninteracting density of states is Gaussian and DMFT becomes exact. To capture collinear antiferromagnetism on the bi-partite structure, we solve the model within single-site DMFT by introducing two coupled impurity problems, one for each sublattice [6]. The impurity problems are solved using the continuous-time quantum Monte Carlo (CT-QMC) method [7], yielding sublattice- and spin-resolved self-energies Σ ασ (iω n), where α = A, B labels the sublattice and σ =↑, ↓ the spin projection. Real-frequency spectral functions Aαβ σ (ω) are obtained by ana-lytic continuation using the maximum entropy (MaxEnt) method [8]. Throughout this work we fix the hopping amplitude to t = 0 .5, which sets the unit of energy, and choose 
+
+U = 1 .7, placing the system in the intermediate-coupling regime. To avoid metamagnetic effects [6, 9], we work at a temperature T = 0 .05, corresponding to approximately 50% of the N´ eel temperature ( TN = 0 .092), and vary the strength of the applied magnetic field h.The spin-resolved dc conductivity σσ is computed from the Kubo formula [6, 10], 
+
+σσ = σ0
+
+Z dω 
+
+2π
+
+Z
+
+dε 
+
+
+
+− ∂f (ω)
+
+∂ω 
+
+
+
+ρ(ε)
+
+×
+
+h
+
+AAA σ (ε, ω )ABB σ (ε, ω ) +  AAB σ (ε, ω )2i
+
+, (2) where σ0 is a dimensional constant, f (ω) is the Fermi– Dirac distribution, ρ(ε) is the noninteracting density of states, and Aαβ σ (ε, ω ) are the interacting spectral func-tions resolved in spin and sublattice. 
+
+Results and Discussion Figure 1 summarizes the sublattice- and spin-resolved local spectral functions in the four relevant regimes [11]. At half filling and zero field, the AFM state is characterized by the combined 
+
+P H and P T symmetries, which enforce the relations 
+
+AAA  
+
+> ↑
+
+(ω) = ABB  
+
+> ↓
+
+(ω) = AAA  
+
+> ↓
+
+(−ω) = ABB  
+
+> ↑
+
+(−ω). These lo-cal spectra, obtained by integrating the energy-resolved spectral functions Aαβ σ (ε, ω ) over the noninteracting den-3              
+
+> FIG. 2. Spin-resolved dc conductivity (left) and current polarization, P= ( σ↑−σ↓)/(σ↑+σ↓) (right), as a function of doping within the antiferromagnetic regime, δ < δ c, with δcthe critical doping above which N´ eel order collapses. The left panel shows the spin-resolved dc conductivities for zero field ( h= 0) and for a representative finite field ( h= 0 .03). The right panel shows the corresponding current polarization for several magnetic fields, highlighting the tunability of Pwith doping and field strength. A finite spin polarization of the charge current emerges only when both particle–hole symmetry and antiferromagnetic sublattice equivalence are simultaneously broken.
+
+sity of states, therefore encode the symmetry constraints of the full interacting bands. As a consequence, the spin-resolved contributions to the Kubo kernel in Eq. (2) re-main strictly equal after integration over energy, resulting in spin-degenerate dc transport. Doping the system at zero field breaks P H symme-try and generates strongly spin-dependent scattering pro-cesses, reflected in the asymmetric redistribution of spec-tral weight around the Fermi level. However, the equiva-lence between the two AFM sublattices, protected by P T 
+
+symmetry, remains intact, implying AAA  
+
+> ↑
+
+(ω) = ABB  
+
+> ↓
+
+(ω)and AAA  
+
+> ↓
+
+(ω) = ABB  
+
+> ↑
+
+(ω) . This residual symmetry still enforces an exact compensation between spin chan-nels in the conductivity kernel (Eq. (2)), yielding spin-degenerate charge transport and preventing any net spin polarization of the current. Conversely, applying a magnetic field at half filling lifts the dynamical equivalence between the AFM sub-lattices and produces sublattice-dependent spectra. Nev-ertheless, P H symmetry imposes the spectral relations 
+
+Aαα  
+
+> ↑
+
+(ω) = Aαα  
+
+> ↓
+
+(−ω) on each sublattice α = A, B . Since the derivative of the Fermi–Dirac distribution entering the Kubo kernel, −∂ω f (ω), is an even function of fre-quency, the spin-resolved contributions to the dc con-ductivity remain exactly identical. As a result, the dc transport response remains spin-degenerate despite the explicit breaking of P T symmetry. Only when doping and magnetic field are simultane-ously present are both P H symmetry and the AFM sub-lattice equivalence, associated with P T symmetry, re-moved. In this regime, all spectral constraints linking opposite spins and sublattices are lifted, yielding fully spin- and sublattice-asymmetric spectral functions. As a result, the spin-resolved contributions to the Kubo kernel no longer compensate, giving rise to a finite spin polar-ization of the charge current. Figure 2 illustrates how these symmetry considerations are directly reflected in the dc transport response within the AFM regime. The left panel shows the spin-resolved dc conductivities as a function of doping for zero field and for a representative finite magnetic field, h = 0 .03. At zero field, the conductivities remain strictly spin-degenerate for all dopings shown, σ↑ = σ↓, despite the presence of strong spin-dependent scattering processes induced by doping. This confirms that P H symmetry breaking alone is insufficient to generate a spin-polarized charge current. Upon applying a magnetic field, the spin-resolved con-ductivities split and acquire a pronounced dependence on doping. The resulting current polarization, P =(σ↑ − σ↓)/(σ↑ + σ↓), shown in the right panel, becomes finite only when both doping and magnetic field are present, i.e., when P H symmetry and the P T -protected AFM sublattice equivalence are simultaneously broken. Remarkably, the current spin polarization reaches its maximum at low dopings, where long-range AFM order remains robust, and already for relatively small magnetic fields. This behavior highlights that the spin-polarized transport reported here is an intrinsic property of the correlated AFM state, rather than a consequence of prox-imity to a paramagnetic metal. 
+
+Analogy with Altermagnets From a broader perspec-tive, the mechanism uncovered here is similar, at the level of symmetry and transport response, to that re-cently identified in altermagnetic (AM) materials. In AMs, spin-polarized electronic bands and currents arise 4in collinear antiferromagnets without net magnetiza-tion due to crystal-symmetry-induced breaking of com-bined parity–time-reversal ( P T ) symmetry. Likewise, the spin-polarized transport reported in this work origi-nates from the combined breaking of P H symmetry and time-reversal symmetry. Electronic correlations generate spin-dependent scattering upon doping away from half filling, while an external magnetic field lifts the residual time-reversal–related constraints that otherwise enforce spin-degenerate transport. In this sense, the doped AFM Hubbard model provides a correlated analogue of AM spintronics, demonstrating that spin-polarized charge transport can emerge from universal symmetry-breaking principles even in structurally conventional, collinear an-tiferromagnets. 
+
+Conclusions In conclusion, we have shown that the doped AFM Hubbard model provides a minimal and generic platform for spin-polarized charge transport in collinear antiferromagnets. A finite spin polarization of the charge current emerges only from the combined breaking of P H symmetry by doping and of the AFM sublattice equivalence by the application of a magnetic field. Remarkably, the current spin polarization is max-imal at low dopings, where long-range AFM order re-mains robust, and already for relatively small magnetic fields. Our results establish electronic correlations as an active ingredient for AFM spintronics and suggest that a broad class of strongly correlated materials may host field-controllable spin-polarized transport.  
+
+> ∗
+
+alberto@df.uba.ar [1] A. V. Vedyaev, Physics-Uspekhi 45 , 1296 (2002). [2] K. Inomata, N. Ikeda, N. Tezuka, R. Goto, S. Sugimoto, M. Wojcik, and E. Jedryka, Science and Technology of Advanced Materials 9, 014101 (2008), pMID: 27877927, https://doi.org/10.1088/1468-6996/9/1/014101. [3] S. Shim, M. Mehraeen, J. Sklenar, S. S.-L. Zhang, A. Hoffmann, and N. Mason, Annual Review of Con-densed Matter Physics 16 , 103 (2025). [4] Z. Guo, X. Wang, W. Wang, G. Zhang, X. Zhou, and Z. Cheng, Advanced Materials 37 , 2505779 (2025). [5] A. Georges, G. Kotliar, W. Krauth, and M. J. Rozenberg, Reviews of Modern Physics 68 , 13 (1996). [6] J. Bobadilla, M. J. Rozenberg, and A. Camjayi, Phys. Rev. B 112 , 125144 (2025). [7] K. Haule, Phys. Rev. B 75 , 155113 (2007). [8] R. Levy, J. P. F. LeBlanc, and E. Gull, Computer Physics Communications 215 , 149 (2017). [9] K. Held, M. Ulmke, and D. Vollhardt, Physical Review B 56 , 14469 (1997). [10] T. Pruschke and R. Zitzler, Journal of Physics: Con-densed Matter 15 , 7867 (2003). [11] Within single-site DMFT on a bipartite lattice, the energy-resolved inter-sublattice spectral function 
+
+AAB σ (ε, ω ) is fully determined by the local self-energies ΣA/B σ (ω) and therefore inherits the same symmetry con-straints. As a result, it does not introduce any additional spin asymmetry beyond that already encoded in the lo-cal spectral functions AAA σ (ω) and ABB σ (ω). A detailed discussion is provided in the Supplemental Material. Supplemental Material for A Correlated Route to Antiferromagnetic Spintronics 
+
+Joel Bobadilla and Alberto Camjayi 
+
+> SYMMETRY ANALYSIS OF THE BIPARTITE HUBBARD MODEL UNDER A UNIFORM MAGNETIC FIELD
+
+In this section we analyze the symmetries of the bipartite Hubbard model in the presence of a uniform magnetic field, given by Eq. (1) of the main text, 
+
+H = −t X
+
+> ⟨ij ⟩,σ
+
+
+
+a† 
+
+> iσ
+
+bjσ + b† 
+
+> iσ
+
+ajσ 
+
+
+
++ U X
+
+> i
+
+ni↑ni↓ − μ X
+
+> i,σ
+
+niσ − h X
+
+> i
+
+Szi , (1) where a† 
+
+> iσ
+
+(b† 
+
+> iσ
+
+) creates an electron with spin σ on sublattice A (B), U is the local Coulomb repulsion, μ controls the filling, and h denotes a uniform Zeeman-like magnetic field. 
+
+> Particle–hole symmetry on a bipartite lattice
+
+On a bipartite lattice composed of two sublattices A and B, the particle–hole (PH) transformation is defined as, 
+
+ciσ −→ ηi c† 
+
+> iσ
+
+, ηi =
+
+(
+
++1 , i ∈ A, 
+
+−1, i ∈ B. (2) At half filling ( μ = U/ 2), the Hubbard model in the absence of external fields is invariant under this transformation [1]. The inclusion of a uniform magnetic field via the Zeeman term, 
+
+−h X
+
+> i
+
+Szi = − h
+
+2
+
+X
+
+> i
+
+(ni↑ − ni↓), (3) however, explicitly breaks PH symmetry. Under the transformation (2), the local density operators transform as, 
+
+niσ −→ 1 − niσ , (4) which implies that the local spin operator transforms as, 
+
+Szi = 12 (ni↑ − ni↓) −→ − Szi . (5) As a result, the Zeeman term changes sign under PH, and the Hubbard Hamiltonian in the presence of a uniform magnetic field does not possess particle–hole symmetry, even at half filling. 
+
+> Combined particle–hole and spin-flip symmetry
+
+Although pure particle–hole symmetry is broken by the Zeeman term, the bipartite Hubbard Hamiltonian at half filling remains invariant under a combined transformation consisting of particle–hole conjugation and a spin flip, even in the presence of a uniform magnetic field. We denote this symmetry as PHsp. The PHsp transformation acts on the fermionic operators as, 
+
+ci↑ −→ ηi c†
+
+> i↓
+
+,ci↓ −→ − ηi c†
+
+> i↑
+
+, (6) where ηi = +1 ( −1) for sites belonging to sublattice A (B). The relative minus sign ensures that the transformation is canonical and preserves fermionic anticommutation relations. 2Under PHsp, the local density operators transform as, 
+
+ni↑ −→ 1 − ni↓, ni↓ −→ 1 − ni↑, (7) which implies that the local spin polarization remains invariant, 
+
+Szi = 12 (ni↑ − ni↓) −→ Szi . (8) As a consequence, the Zeeman term is invariant under PHsp. Together with the condition μ = U/ 2, this establishes PHsp as an exact symmetry of the half-filled Hubbard model in the presence of a uniform magnetic field. 
+
+> Consequences for Green functions and spectral functions
+
+We now derive the implications of PHsp symmetry for single-particle Green functions and spectral functions. We consider the retarded Green function resolved in sublattice, spin, and band energy, 
+
+Gαβ σ (ε, t ) = −iθ (t)
+
+Dn 
+
+cασ (ε, t ), c † 
+
+> βσ
+
+(ε, 0) 
+
+oE 
+
+, (9) where α, β = A, B label the sublattices and σ =↑, ↓.At half filling, the thermal average is invariant under the PHsp transformation. Applying Eq. (6) to the fermionic operators and using the symmetry properties of the anticommutator, we obtain, 
+
+Gαβ σ (ε, t ) = − ηαηβ
+
+h
+
+Gαβ  
+
+> ¯σ
+
+(ε, t )
+
+i∗
+
+, (10) where ¯ σ denotes the opposite spin projection. Fourier transforming to frequency space yields, 
+
+Gαβ σ (ε, ω ) = − ηαηβ
+
+h
+
+Gαβ  
+
+> ¯σ
+
+(ε, −ω)
+
+i∗
+
+. (11) The interacting spectral functions are defined as, 
+
+Aαβ σ (ε, ω ) = − 1
+
+π Im Gαβ σ (ε, ω ). (12) Using Eq. (11), we obtain the central symmetry relation, 
+
+Aαβ σ (ε, ω ) = ηαηβ Aαβ  
+
+> ¯σ
+
+(ε, −ω). (13) In particular, this implies the following relations for the diagonal and off-diagonal components, 
+
+AAA  
+
+> ↑
+
+(ε, ω ) = AAA  
+
+> ↓
+
+(ε, −ω), ABB  
+
+> ↑
+
+(ε, ω ) = ABB  
+
+> ↓
+
+(ε, −ω), AAB  
+
+> ↑
+
+(ε, ω ) = −AAB  
+
+> ↓
+
+(ε, −ω). (14) These relations hold exactly at half filling in the presence of a uniform magnetic field and form the basis for the spin-degenerate dc transport response discussed in the main text. We now use these exact symmetry relations to analyze their consequences for the dc conductivity kernel entering the Kubo formula. In particular, we show how the symmetry properties of the energy-resolved spectral functions lead to an exact compensation between spin channels in the dc transport response whenever generalized particle–hole symmetry (pure PH at zero magnetic field or PHsp in the presence of a magnetic field) or antiferromagnetic sublattice equivalence is preserved.[2] 
+
+> IMPLICATIONS FOR THE DC CONDUCTIVITY KERNEL
+
+We now analyze how the symmetry relations derived in the previous section translate into constraints on the dc conductivity computed from the Kubo formula. The spin-resolved dc conductivity reads, 
+
+σσ = σ0
+
+Z dω 
+
+2π
+
+Z
+
+dε 
+
+
+
+− ∂f (ω)
+
+∂ω 
+
+
+
+ρ(ε)
+
+h
+
+AAA σ (ε, ω )ABB σ (ε, ω ) +  AAB σ (ε, ω )2i
+
+, (15) 3where ρ(ε) is the noninteracting density of states and f (ω) is the Fermi–Dirac distribution. The symmetry properties of the kernel in Eq. (15) play a central role. In particular, the derivative −∂ω f (ω) is an even function of frequency, so that any relation between spectral functions at opposite frequencies directly constrains the spin-resolved contributions to the conductivity. These constraints are illustrated explicitly in Fig. 1 through the energy-resolved spectral functions entering the Kubo kernel in the four regimes discussed in the main text. At half filling, generalized particle–hole symmetry implies the relations, 
+
+Aαβ  
+
+> ↑
+
+(ε, ω ) = ηαηβ Aαβ  
+
+> ↓
+
+(ε, −ω). (16) Inserting these relations into the kernel of Eq. (15) and using the even parity of −∂ω f (ω), one finds that the spin-resolved contributions to the dc conductivity are exactly equal, 
+
+σ↑ = σ↓, (17) despite the presence of a finite magnetic field and sublattice-dependent spectral functions. Away from half filling, particle–hole symmetry is broken and the spectral functions generally lose their reflection symmetry with respect to ω = 0. Nevertheless, when the antiferromagnetic sublattice equivalence protected by P T 
+
+symmetry is preserved (i.e., at zero magnetic field), the relations 
+
+AAA  
+
+> ↑
+
+(ε, ω ) = ABB  
+
+> ↓
+
+(ε, ω ), AAA  
+
+> ↓
+
+(ε, ω ) = ABB  
+
+> ↑
+
+(ε, ω ), AAB  
+
+> ↑
+
+(ε, ω ) = AAB  
+
+> ↓
+
+(ε, ω ). (18) ensure an exact compensation between spin channels in the conductivity kernel, again yielding spin-degenerate dc transport. Only when both generalized particle–hole symmetry and antiferromagnetic sublattice equivalence are simultaneously broken—namely, at finite doping and in the presence of a magnetic field—do the spin-resolved contributions to the Kubo kernel fail to compensate. In this regime, the dc conductivity becomes spin dependent, giving rise to a finite spin polarization of the charge current, as discussed in the main text. To further elucidate the microscopic mechanism, we analyze the evolution of the spin- and sublattice-resolved scattering rates as a function of doping. As shown in Fig. 2, doping alone already induces a pronounced spin asymmetry in the scattering rates, even in the absence of a magnetic field. However, because sublattice equivalence remains intact at h = 0, the Kubo kernel still enforces exact spin compensation. When a finite magnetic field is applied, sublattice symmetry is lifted and the resulting hierarchy of τ −1 
+
+> ασ
+
+removes this compensation, allowing spin-dependent transport to emerge. The impact of this hierarchy of scattering rates on transport is directly reflected in the spin polarization of the dc current. Figure 3 highlights the strong field tunability of the correlated spintronic response. The polarization magnitude can be continuously controlled by the external magnetic field. The non-monotonic doping dependence reflects the competition between enhanced spin-dependent scattering at low doping and the progressive spectral broadening at larger δ.The analysis above establishes that the emergence of spin-polarized charge transport in the doped antiferromagnetic Hubbard model is entirely dictated by symmetry principles. Whenever generalized particle–hole symmetry or antifer-romagnetic sublattice equivalence is preserved, exact compensation between spin channels is enforced at the level of the Kubo kernel. Spin polarization arises only when both constraints are lifted, revealing a universal, correlation-driven mechanism for generating tunable spin-polarized currents in structurally conventional collinear antiferromagnets.  
+
+> [1] D. P. Arovas, E. Berg, S. A. Kivelson, and S. Raghu, Annual Review of Condensed Matter Physics 13 , 239 (2022). [2] In the following, we use the shorthand “PH symmetry” to collectively refer to pure particle–hole symmetry at zero magnetic field and to the combined particle–hole and spin-flip (PHsp) symmetry at half filling in the presence of a magnetic field. This notational simplification is adopted for clarity and does not affect the generality of the arguments.
+
+4h = 0 , δ = 0 h = 0 , δ 6 = 0 
+
+h 6 = 0 , δ = 0 h 6 = 0 , δ 6 = 0 
+
+FIG. 1. Energy-resolved spectral functions Aαβ  
+
+> ↑
+
+(ε, ω ) entering the dc conductivity kernel for the four regimes discussed in the main text. Each block corresponds to one column of Fig. 1 of the main text: (top left) h = 0, δ = 0; (top right) h = 0, 
+
+δ̸ = 0; (bottom left) h̸ = 0, δ = 0; (bottom right) h̸ = 0, δ̸ = 0. Within each block, the panels display the diagonal ( AAA ,
+
+ABB ) and off-diagonal ( AAB ) spectral functions resolved in band energy ε and frequency ω. For h = 0 and δ = 0, both particle–hole symmetry and antiferromagnetic sublattice equivalence are preserved, enforcing reflection symmetry with respect to ω = 0 and exact compensation between spin channels in the Kubo kernel. At zero field but finite doping ( h = 0, δ̸ = 0), particle–hole symmetry is broken and the spectral functions lose their reflection symmetry in ω, yet the equivalence between antiferromagnetic sublattices remains intact, ensuring spin-degenerate dc transport. For finite magnetic field at half filling (h̸ = 0, δ = 0), sublattice equivalence is lifted, but the generalized particle–hole (PHsp) symmetry enforces the relations 
+
+Aαβ  
+
+> ↑
+
+(ε, ω ) = ηαηβ Aαβ  
+
+> ↓
+
+(ε, −ω), which, together with the even parity of −∂ω f (ω), again leads to exact cancellation between spin channels. Only when both finite doping and magnetic field are present ( h̸ = 0, δ̸ = 0) are all symmetry constraints removed, resulting in uncompensated contributions to the dc conductivity kernel and a finite spin polarization of the charge current. 5
+
+FIG. 2. Spin- and sublattice-resolved scattering rates τ −1 
+
+> ασ
+
+as a function of normalized doping δ/δ c. Left panel: zero magnetic field ( h = 0). Doping alone induces a clear spin-dependent splitting of the scattering rates, reflecting the breaking of particle– hole symmetry while preserving antiferromagnetic sublattice equivalence. Right panel: finite magnetic field ( h = 0 .07). In this regime, both spin and sublattice splittings are present, leading to a hierarchy of scattering rates that directly feeds into the uncompensated contributions of the Kubo kernel and ultimately produces a finite spin polarization of the charge current. 
+
+FIG. 3. Spin polarization of the dc charge current, P = ( σ↑ − σ↓)/(σ↑ + σ↓), as a function of normalized doping δ/δ c for different values of the magnetic field h. At zero field, the polarization vanishes identically for all dopings due to exact spin compensation in the Kubo kernel. Finite magnetic fields progressively lift this compensation, producing a sizable and tunable spin polarization. The non-monotonic dependence on doping reflects the interplay between spin-dependent scattering and spectral weight redistribution, demonstrating the field-controlled character of the correlated spintronic response.

@@ -1,0 +1,335 @@
+Title: 2604.03183v1.pdf
+
+URL Source: https://arxiv.org/pdf/2604.03183v1
+
+Published Time: Mon, 06 Apr 2026 00:58:11 GMT
+
+Number of Pages: 22
+
+Markdown Content:
+Observation of anomalous thermal Hall effect in altermagnets 
+
+Wenbo Wan 1,2* , Xu Zhang 1* ✉, Yixuan Luo 3, Yanfeng Guo 3,4 ✉ and Shiyan Li 1,2,5,6 ✉
+
+> 1
+
+State Key Laboratory of Surface Physics, and Department of Physics, Fudan University, Shanghai 200438, China 
+
+> 2
+
+Shanghai Research Center for Quantum Sciences, Shanghai 201315, China 
+
+> 3
+
+State Key Laboratory of Quantum Functional Materials, School of Physical Science and Technology, ShanghaiTech University, Shanghai 201210, China 
+
+> 4
+
+ShanghaiTech Laboratory for Topological Physics, ShanghaiTech University, Shanghai 201210, China 
+
+> 5
+
+Shanghai Branch, Hefei National Laboratory, Shanghai 201315, China 
+
+> 6
+
+Collaborative Innovation Center of Advanced Microstructures, Nanjing 210093, China 
+
+Corresponding author. Email: shiyan_li@fudan.edu.cn (S.Y.L.); guoyf@shanghaitech.edu.cn (Y.F.G.); xuzhang_fd@fudan.edu.cn (X.Z.) 
+
+# Abstract 
+
+Altermagnets, recently proposed as a third category of collinear magnets, combine the features of zero net magnetization in antiferromagnets and the spin splitting in ferromagnets. While abundant spectroscopic evidence for altermagnetism has been reported, experimental observation of the anomalous Hall effect, a hallmark of ferromagnetism, remains scarce. Here, we present systematic measurements of the thermal Hall effect in two representative altermagnet candidates, MnTe and CrSb. In both materials, we observe a pronounced anomalous phonon thermal Hall signal, with no electrical counterpart observed, attributed to the coupling of this distinctive magnetic structure with phonons. Our findings establish the anomalous phonon thermal Hall effect as an intrinsic feature of altermagnets, and provide a sensitive probe to identify this new kind of quantum magnets. Introduction 
+
+Collinear magnets are conventionally categorized into two main types: ferromagnets (FMs), where parallel spin alignment generates momentum-space band splitting and breaks time-reversal symmetry (TRS), and antiferromagnets (AFMs), in which antiparallel spin sublattices yield zero net magnetization. Recently, altermagnets (AMs) have been proposed as a third distinct form of collinear magnets, defined by alternating spin orientations in both real and reciprocal space, which combine characteristics of FMs and AFMs 1–4 . In altermagnets, long-neglected nonmagnetic lattice atoms, e.g., Te in MnTe and Sb in CrSb (see Fig. 1a and Fig. 3a), play a crucial role: the spin space group symmetries allow magnetic sublattices to be connected solely through rotation or mirror operations, enabling spin splitting even in the absence of spin–orbit coupling (SOC) and a finite net magnetization 1,2,5,6 .
+
+Since the introduction of altermagnetism, several materials have been identified as potential altermagnets, with RuO 2 recognized as the first candidate predicted to exhibit the anomalous Hall effect (AHE) that arises from crystal TRS breaking 7 .Although nonlinear Hall signals have been observed in RuO 2 /TiO 2 (110) films 8 , spin-and angle-resolved photoemission spectroscopy (ARPES) has not given any evidence for the expected spin splitting 9 , leaving the validity of the proposed altermagnetic order in rutile RuO 2 under scrutiny. More recently, spin splitting has been observed in CrSb 10– 13 and MnTe 14–18 , yet clear detection of anomalous Hall responses remains elusive 19–25 .In CrSb, nonlinear Hall signals are attributed to multi-band effects 19–21 , whereas in MnTe, AHE hysteresis loops are not only very weak but also exhibit strong sample dependence 22–25 . Note that for RuO 2 , saturation of the AHE is observed without zero-field AHE becuase of limitation by symmetry 26,27 . Therefore, identifying genuine altermagnetic materials using multiple experimental techniques has become a key focus of current research. 
+
+Over past two decades, the thermal Hall effect (THE) in insulators has gained significant attention as a novel phenomenon 28–44 . According to these works, despite the absence of charge carriers, insulators subjected to a longitudinal temperature gradient can still generate a transverse temperature difference in the presence of magnetic field. Distinct origins of the THE have been proposed, including magnons, various exotic excitations, and phonons. Most strikingly, such a THE has been observed in various trivial nonmagnetic insulators (including SiO 2 , MgO and MgAlO 2 ) and semiconductors (including Si and Ge) with a scaling law of | κxy | ~ κxx 2 , demonstrating a universal phonon THE (pTHE) in single crystals 45 . In this context, many previous exotic interpretations may not be needed, but the underlying physics of this universal pTHE is still under investigation 46,47 .
+
+In magnetic materials, spin degree of freedom can significantly influence the pTHE, causing deviation from the quadratic scaling behavior 45 . In collinear AFMs, the thermal Hall conductivity varies approximately linearly with magnetic field 34–36,39,44 ,similar to pTHE in nonmagnetic materials. By contrast, an anomalous THE has been observed in FMs 29,32,38 , indicating spontaneous TRS breaking, while its origin— whether from magnons or phonons—remains unclear. Given the TRS breaking nature of AMs, it is of particular interest to examine whether the thermal Hall conductivity is anomalous in these materials. 
+
+In this Letter, we report systematic measurements of the THE in two representative altermagnet candidates, MnTe and CrSb. In semiconducting MnTe, where phonons dominate heat transport, we observe a pronounced anomalous thermal Hall response that far exceeds the electronic contribution estimated from the Wiedemann–Franz (WF) law. In metallic CrSb, after subtracting the electronic contribution, the remaining thermal Hall conductivity—primarily attributed to phonons—displays strong anomalous behavior. These results demonstrate the anomalous pTHE as a fundamental hallmark of altermagnetism, thus establishing phonon-mediated thermal transport as a superior probe to identify a new altermagnet—outperforming established electrical probing paradigms. 
+
+# Results 
+
+The 𝛼𝛼 -MnTe crystallizes in a NiAs-type structure ( P6 3 /mmc #194; Fig. 1a) and exhibits a compensated magnetic structure below the magnetic transition temperature 
+
+T AM ≈ 307 K. The spins of Mn 2+ ions are aligned parallel within the ab plane and anti-parallel along the c axis. The two sublattices with opposite spin orientations are interconnected by a sixfold rotation or a mirror operation, defining the symmetry of this altermagnetic phase. Figure 1b shows the temperature-dependent magnetic susceptibility of a MnTe single crystal (photo in the inset) measured from 2.1 to 350 K under zero-field cooling (ZFC) condition, revealing clear magnetic anisotropy below 
+
+T AM , consistent with the in-plane Néel vector. Furthermore, the isothermal magnetization M(H) curves for B || c, presented in Fig. 1c, are approximately linear at various temperatures, exhibiting typical antiferromagnetic behavior without any canted component. 
+
+Before measuring the thermal Hall effect, we have characterized the electrical transport properties of MnTe single crystal, as shown in Figs. 2a,b. The resistivity ρxx 
+
+displays two distinct features: a sharp drop at T AM , followed by an upturn below 60 K. The Hall conductivity σxy is positive, indicating that MnTe behaves as a p-type semiconductor. However, σxy varies linearly across the measured range, with no apparent anomalies, similar to some samples of Dai’s group in Ref. 25. Figure 2c presents the thermal conductivity κxx which exhibits a pronounced phonon peak around 20 K. Notably, a thermal Hall signal has been observed in this material. The temperature-dependent total thermal Hall conductivity κxy follows the phonon peak in 
+
+κxx , suggesting that phonons dominate heat transport in MnTe, as in various other materials 37,41,43,45 . Unlike nonmagnetic and antiferromagnetic materials, κxy in MnTe exhibits a peculiar magnetic field dependence (Fig. 2d). As the magnetic field increases, 
+
+κxy shows a hump around 1 T, followed by a sign reversal from positive to negative. This behavior is reminiscent of the electric anomalous Hall effect observed in many topological materials. The phonon thermal Hall conductivity κph xy is extracted by subtracting the carrier contribution using the WF Law, as shown in Fig. 2e. Due to the relatively small contribution of hole carriers in MnTe (from –0.9% at 10 K to –17.3% at 60 K), κph xy has a similar field dependence to the total thermal Hall conductivity. The phonon thermal Hall conductivity consists of two components: one is the conventional part, which is linear in magnetic field, akin to that previously observed in nonmagnetic or collinear antiferromagnetic materials, and the other is the anomalous part. We fit the data using the following function 48 :
+
+κph xy = kB + κAtanh( B/B0). (1) 
+
+The former linear term represents the conventional part, while the latter indicates the anomalous behavior, where k is the slope of the linear term, κA is the saturation value of the anomalous term, and 1/ B0 is the differential permeability at B = 0 T. After subtracting the linear term, the anomalous pTHE is extracted and presented in Fig. 2f, analogous to the THE in FMs 29,32,38 .
+
+To examine whether the anomalous pTHE is a general feature of AMs, we turn to another altermagnetic candidate CrSb, which has a magnetic structure similar to that of 
+
+α-MnTe and a transition temperature T AM above 700 K. However, the spins of Cr 2+ ions are aligned along the c axis (see Fig. 3a). Figure 3b presents the temperature-dependent magnetic susceptibility of a CrSb single crystal, measured from 1.8 to 300 K under ZFC condition. These data reveal distinct magnetic anisotropy, consistent with the out-of-plane Néel vector. The isothermal magnetization curves M(H) for B || c, shown in Fig. 3c, exhibit a small hysteresis and a weak ferromagnetic component with a saturation field near B = 0.1 T. This behavior differs from the out-of-plane response of MnTe but resembles its in-plane response, as shown in the Supplementary Fig. S2. 
+
+Similarly, we measured the electrical and thermal transport properties of the CrSb single crystal. As shown in Figs. 4a,b, ρxx exhibits clear metallic behavior with a residual resistivity ratio ( RRR ) of 4.41, indicating high sample quality. The negative Hall conductivity σxy confirms electron-dominated transport. In addition, σxy exhibits nonlinear field dependence across the entire temperature range, previously attributed to multiband effects 19–21 . The longitudinal thermal conductivity κxx of CrSb is plotted in Fig. 4c. After subtracting the electronic contribution calculated from the WF law, the phonon thermal conductivity reveals a broad peak around 40 K. This indicates a substantial electronic contribution to heat transport in metallic CrSb, in contrast to the phonon-dominated transport in MnTe. Figure 4d shows the total thermal Hall conductivity κxy of CrSb, which is sizable and exhibits a field dependence qualitatively mirroring the electrical Hall behavior. To extract the phonon contribution and examine any anomalous component, we first subtract the electronic thermal Hall conductivity. At T = 10 K and B = 9 T, the total, electronic and phonon thermal Hall conductivities are –66.30, –56.51 and –9.79 mW/(K m), respectively. The resulting phonon thermal Hall conductivity κph xy displays a robust signal. Furthermore, by subtracting the conventional linear-in-field part, as done for MnTe, the anomalous phonon thermal Hall conductivity is plotted in Fig. 4f. This anomalous κph xy of CrSb is remarkably similar to that observed in MnTe, including a saturation field and a magnitude that both increase with temperature. These findings provide compelling evidence for an intrinsic anomalous THE in CrSb, further supporting the presence of time-reversal symmetry breaking in AMs. 
+
+# Discussion 
+
+The phonon thermal Hall effect has been widely observed in both magnetic and nonmagnetic materials. Except when the lattice thermal conductivity exhibits a strong magnetic-field dependence, the thermal Hall conductivity in the majority of materials is linear in magnetic field. This conventional linear-in-field thermal Hall response is also evident in MnTe and CrSb. Under a 9 T magnetic field, the temperature dependence of the extracted conventional phonon thermal Hall conductivity follows that of the lattice thermal conductivity, thereby providing strong support for this interpretation and underscoring the ubiquity of the conventional phonon thermal Hall effect. More importantly, once the electronic contribution is removed using the WF law, both materials exhibit a nonlinear phonon thermal Hall response, along with a field-induced sign reversal of the thermal Hall conductivity. To our knowledge, such behavior has not been reported previously in AMs. In fact, this anomalous phonon thermal Hall component has been observed only in ferromagnetic systems, such as Lu2 V2 O7 ,Fe 2 Mo 3 O8 and VI 329,32,38 .
+
+The linear-in-field contribution to κxy in MnTe and CrSb is consistent with the conventional pTHE, as widely reported in both magnetic and nonmagnetic materials 34– 37,39,41,44,45 . In materials where the lattice thermal conductivity shows little field dependence, the phonon-derived κxy is expected to be strictly linear in B45 , and in our data the conventional phonon κxy extracted at 9 T closely follows the temperature dependence of the lattice thermal conductivity, supporting its assignment to the conventional pTHE. 
+
+After subtracting this conventional phonon background, a sizable residual anomalous κph xy remains, the filed dependence of which is reminiscent of anomalous thermal Hall responses previously observed in ferromagnets 29,32,38 . Small ferromagnetic signals have been reported for these altermagnet candidates 22,49–51 (MnTe: in-plane; CrSb: out-of-plane) and are also present in our magnetization data. However, the saturation field of these weak ferromagnetic components (~ 0.1 T) is an order of magnitude smaller than the field scale required to saturate the anomalous κph xy (≥ 1 T). Because anomalous thermal Hall responses in ferromagnets typically track M(H)29,32,38 ,this strong mismatch argues against weak net magnetization as the primary origin of the anomalous signal in MnTe and CrSb. 
+
+Mechanisms tied to the Néel vector and crystalline symmetry therefore provide a more natural explanation. In altermagnets, direction-dependent superexchange originating from the specific arrangement of nonmagnetic ligands breaks the combined time-reversal/spatial-translation protections that otherwise suppress Berry curvature. The same Berry-curvature physics that governs anomalous electrical Hall responses can couple to lattice degrees of freedom, producing an intrinsic  “crystal ” thermal Hall effect 52,53 in which the magnitude and sign of the thermal Hall conductivity κxy are determined by the Néel vector rather than by any small net magnetization. 
+
+A closely related and plausible route is magnon–phonon hybridization. Hybridization between magnons and phonons in collinear ordered magnets can generate chiral phonon modes 54–56 , thereby transferring magnetic Berry curvature to the phonon sector. Even when phonons dominate heat transport, the large thermal Hall signal has been attributed to phonon–magnon hybridization 44,57 . A  “magnon thermal Hall effect ” has been proposed, in which the magnitude and sign of κxy are governed by the Néel vector rather than by the net magnetization 53 . Moreover, magnon–phonon hybridization has been observed experimentally in altermagnetic CoF 258 . Against the expected background of spin–phonon interactions that renormalize phonon spectra at the Néel temperature, an additional strong coupling between a one-magnon excitation and the lowest-frequency Raman-active phonon of B1g symmetry was reported 58 . These hybrid quasiparticles possess finite phonon angular momentum opening the possibility of phononic counterparts to the electronic response effects in altermagnets 59 . These findings provide a prerequisite for establishment the hybridization mechanism of THE, namely that phonon–magnon hybridization can imprint and substantially amplify an anomalous phonon κxy in altermagnets. In this scenario, a Néel-vector-driven crystal thermal Hall effect need not produce a large anomalous electrical Hall effect, and thus naturally accounts for the absence of AHE in CrSb 19–21 , and for the sample-dependent AHE (very weak even if it presents) in MnTe 22–25 .
+
+To test this interpretation, we suggest more experiments: controlled rotation of the Néel vector (via magnetic field or strain) to track the symmetry and sign changes of κxy ,
+
+high‑resolution inelastic neutron or Raman/THz spectroscopy to resolve magnon –
+
+phonon anticrossings. Together, these probes can discriminate intrinsic Berry‑curvature 
+
+imprints on phonons from alternative extrinsic mechanisms and establish whether magnon–phonon hybridization is the dominant source of the anomalous thermal Hall response. 
+
+In summary, we have measured THE of two altermagnet candidates, semiconducting α-MnTe and metallic CrSb, and report the observation of a robust anomalous phonon κxy in both materials after subtracting the carrier and conventional phonon background. The observed field scales and magnetization behavior rule out weak ferromagnetism as the primary cause and point toward a Néel-vector- and lattice-symmetry-driven origin, possibly mediated or amplified by magnon–phonon coupling. Our results extend THE studies into altermagnets, highlight the important role phonons can play, and motivate further theoretical and experimental work to identify the microscopic mechanism. Methods 
+
+Samples growth. MnTe single crystals were grown using an Sb-flux-assisted method. Starting materials, including Mn plates (99.9%, Macklin), Te powder (99.99%, Macklin), and Sb blocks (99.999%, Macklin), were placed in an alumina crucible with a molar ratio of Mn:Te:Sb = 1:1:20. To prevent oxidation, the crucible was sealed in a quartz ampoule under vacuum. The ampoule was then heated to 1050 °C over 15 h, held at that temperature for 10 h to ensure complete dissolution and homogenization, and subsequently cooled slowly at 2 °C/h to 700 °C. At this point, the excess Sb flux was efficiently removed by rapid centrifugation. The resulting black MnTe crystals exhibited shiny surfaces and typical dimensions of approximately 5 × 4 × 1 mm 3 .
+
+Single crystals of CrSb were grown using a chemical vapor transport method. Stoichiometric amounts of chromium powder (Cr, 99.5%, Macklin) and antimony blocks (Sb, 99.999%, Macklin) were mixed in a 1:1 molar ratio, with 0.1 g of iodine granules (I 2 , 99.99%, Macklin) added as the transport agent. The mixture was loaded into a 14-cm-long quartz ampoule, which was then evacuated and sealed under vacuum. The sealed ampoule was placed horizontally in a two-zone tube furnace, with the source zone heated to 850 °C and the growth zone to 750 °C over 10 h. This temperature gradient was maintained for 150 h to facilitate crystal growth, after which the furnace was turned off and allowed to cool to room temperature. The resulting CrSb crystals were carefully extracted from the ampoule and rinsed with ethanol to remove residual iodine from their surfaces. Lustrous black plate-like crystals with typical dimensions of approximately 9 × 7 × 1 mm 3 were obtained. 
+
+Measurements. The VSM magnetization measurement was performed down to 2.1 K using a magnetic property measurement system (MPMS, Quantum Design). Samples for resistivity and thermal conductivity measurements were cut and polished into nearly rectangular shapes. The dimensions were 3.57 × 1.43 × 0.15 mm 3 for MnTe and 1.52 × 1.14 × 0.11 mm 3 for CrSb, respectively. The electrical and thermal transport measurements were conducted in a Physical Property Measurement system (PPMS, Quantum Design) under high-vacuum environment. The heater and thermometers were connected to the sample by silver wires. The contacts were made of silver paint for MnTe and silver epoxy annealed at 120 °C for CrSb, respectively. Three-thermometers (Cernox 1050) method was employed to simultaneously measure the longitudinal and transverse thermal gradients. A constant heat current Q was applied along the x axis lying in the basal plane of the single crystal, using a resistive heater connected to one end of the sample, generating a longitudinal temperature difference ΔT x = T1 – T2(Supplementary Fig. S1). The other end of the sample was attached to a heat sink with silver paint. The copper block is used as heat sink. The thermal conductivity along the 
+
+x axis was calculated as κxx = ( Q/ΔT x)( L/wt ). By applying a magnetic field B along the 
+
+z directions, a transverse gradient ΔT y = T3 – T2 was generated. The thermal Hall conductivity was defined as κxy = κyy (ΔT y/ΔTx)( L/w), where κyy is the longitudinal thermal conductivity along the y axis. We assumed κyy = κxx for crystals with high symmetry. The contamination from κxx in κxy due to contact misalignment is removed by performing field anti-symmetrization of the transverse temperature difference ΔT y,i.e. ΔT y = [ ΔT y(H) − Δ T y(− H)]/2. The positive direction of magnetic field is illustrated by blue arrows in Supplementary Fig. S1. 
+
+# Data availability 
+
+The data that support the findings of this study are available from the corresponding author upon reasonable request. References 
+
+1. Šmejkal, L., Sinova, J. & Jungwirth, T. Beyond Conventional Ferromagnetism and Antiferromagnetism: A Phase with Nonrelativistic Spin and Crystal Rotation Symmetry. Phys. Rev. X 12 , 031042 (2022). 
+
+2. Šmejkal, L., Sinova, J. & Jungwirth, T. Emerging Research Landscape of Altermagnetism. Phys. Rev. X 12 , 040501 (2022). 
+
+3. Song, C. et al. Altermagnets as a new class of functional materials. Nat. Rev. Mater. 
+
+10 , 473 (2025). 
+
+4. Jungwirth, T. et al. Symmetry, microscopy and spectroscopy signatures of altermagnetism. Nature 649 , 837 (2026). 
+
+5. Ma, H.-Y. et al. Multifunctional antiferromagnetic materials with giant piezomagnetism and noncollinear spin current. Nat. Commun. 12 , 2846 (2021). 
+
+6. Liu, P., Li, J., Han, J., Wan, X. & Liu, Q. Spin-Group Symmetry in Magnetic Materials with Negligible Spin-Orbit Coupling. Phys. Rev. X 12 , 021016 (2022). 
+
+7. Šmejkal, L., González-Hernández, R., Jungwirth, T. & Sinova, J. Crystal time-reversal symmetry breaking and spontaneous Hall effect in collinear antiferromagnets. Sci. Adv. 6, eaaz8809 (2020). 
+
+8. Feng, Z. et al . An anomalous Hall effect in altermagnetic ruthenium dioxide. Nat. Electron. 5, 735 (2022). 
+
+9. Liu, J. et al . Absence of Altermagnetic Spin Splitting Character in Rutile Oxide RuO 2.
+
+Phys. Rev. Lett. 133 , 176401 (2024). 
+
+10. Ding, J. et al . Large Band Splitting in g-Wave Altermagnet CrSb. Phys. Rev. Lett. 
+
+133 , 206401 (2024). 
+
+11. Reimers, S. et al . Direct observation of altermagnetic band splitting in CrSb thin films. Nat. Commun. 15 , 2116 (2024). 
+
+12. Li, C. et al . Topological Weyl altermagnetism in CrSb. Commun. Phys. 8, 311 (2024). 
+
+13. Liao, S. et al ., Direct Observation of Large Altermagnetic Splitting in CrSb (100) Thin Film. Chin. Phys. Lett. 42 , 067503 (2025). 
+
+14. Krempaský, J. et al . Altermagnetic lifting of Kramers spin degeneracy. Nature 626 ,517 (2024). 
+
+15. Lee, S. et al . Broken Kramers Degeneracy in Altermagnetic MnTe. Phys. Rev. Lett. 
+
+132 , 036702 (2024). 
+
+16. Liu, Z., Ozeki, M., Asai, S., Itoh, S. & Masuda, T. Chiral Split Magnon in Altermagnetic MnTe. Phys. Rev. Lett. 133 , 156702 (2024). 
+
+17. Osumi, T. et al. Observation of a giant band splitting in altermagnetic MnTe. Phys. Rev. B 109 , 115102 (2024). 
+
+18. Zhang, T. et al . Evidence for Itinerant Electron-Local Moment Interaction in Li-Doped α-MnTe. arXiv : 2512.00747 (2025). 
+
+19. Urata, T., Hattori, W. & Ikuta, H. High mobility charge transport in a multicarrier altermagnet CrSb. Phys. Rev. Mater. 8, 084412 (2024). 
+
+20. Bai, Y. et al . Nonlinear field dependence of Hall effect and high-mobility multi-carrier transport in an altermagnet CrSb. Appl. Phys. Lett. 126 , 042402 (2025). 21. Peng, X. et al . Scaling behavior of magnetoresistance and Hall resistivity in the altermagnet CrSb. Phys. Rev. B 111 , 144402 (2025). 
+
+22. Wasscher, J. D. Evidence of weak ferromagnetism in MnTe from galvanomagnetic measurements. Solid State Commun. 3, 169 (1965). 
+
+23. Gonzalez Betancourt, R. D. et al . Spontaneous Anomalous Hall Effect Arising from an Unconventional Compensated Magnetic Phase in a Semiconductor. Phys. Rev. Lett. 130 , 036702 (2023). 
+
+24. Kluczyk, K. P. et al . Coexistence of anomalous Hall effect and weak magnetization in a nominally collinear antiferromagnet MnTe. Phys. Rev. B 110 , 155201 (2024). 
+
+25. Liu, Z. et al . Strain-Tunable Anomalous Hall Effect in Hexagonal MnTe. arXiv :2509.19582 (2025). 
+
+26. Tschirner, T. et al . Saturation of the anomalous Hall effect at high magnetic fields in altermagnetic RuO 2. APL Mater. 11 , 101103 (2023). 
+
+27. Jeong, S. G. et al . Metallicity and anomalous Hall effect in epitaxially strained, atomically thin RuO 2 films. Proc. Natl. Acad. Sci. U.S.A. 122 , e2500831122 (2025). 
+
+28. Strohm, C., Rikken, G. L. J. A. & Wyder, P. Phenomenological Evidence for the Phonon Hall Effect. Phys. Rev. Lett. 95 , 155901 (2005). 
+
+29. Onose, Y. et al . Observation of the Magnon Hall Effect. Science 329 , 297 (2010). 
+
+30. Hirschberger, M., Chisnell, R., Lee, Y. S. & Ong, N. P. Thermal Hall Effect of Spin Excitations in a Kagome Magnet. Phys. Rev. Lett. 115 , 106603 (2015). 
+
+31. Hirschberger, M., Krizan, J. W., Cava, R. J. & Ong, N. P. Large thermal Hall conductivity of neutral spin excitations in a frustrated quantum magnet. Science 348 ,106 (2015). 
+
+32. Ideue, T., Kurumaji, T., Ishiwata, S. & Tokura, Y. Giant thermal Hall effect in multiferroics. Nat. Mater. 16 , 797 (2017). 
+
+33. Kasahara, Y. et al . Majorana quantization and half-integer thermal quantum Hall effect in a Kitaev spin liquid. Nature 559 , 227 (2018). 
+
+34. Grissonnanche, G. et al . Giant thermal Hall conductivity in the pseudogap phase of cuprate superconductors. Nature 571 , 376 (2019). 
+
+35. Grissonnanche, G. et al . Chiral phonons in the pseudogap phase of cuprates. Nat. Phys. 16 , 1108 (2020). 
+
+36. Boulanger, M.-E. et al . Thermal Hall conductivity in the cuprate Mott insulators Nd 2CuO 4 and Sr 2 CuO 2Cl 2 . Nat. Commun. 11 , 5325 (2020). 
+
+37. Li, X., Fauqué, B., Zhu, Z. & Behnia, K. Phonon Thermal Hall Effect in Strontium Titanate. Phys. Rev. Lett. 124 , 105901 (2020). 
+
+38. Zhang, H. et al . Anomalous Thermal Hall Effect in an Insulating van der Waals Magnet. Phys. Rev. Lett. 127 , 247202 (2021). 
+
+39. Chen, L., Boulanger, M.-E., Wang, Z.-C., Tafti, F. & Taillefer, L. Large phonon thermal Hall conductivity in the antiferromagnetic insulator Cu 3TeO 6. Proc. Natl. Acad. Sci. U.S.A. 119 , e2208016119 (2022). 
+
+40. Gillig, M. et al . Phononic-magnetic dichotomy of the thermal Hall effect in the Kitaev material Na 2 Co 2TeO 6. Phys. Rev. Res. 5, 043110 (2023). 
+
+41. Li, X. et al . The phonon thermal Hall angle in black phosphorus. Nat. Commun. 14 ,1027 (2023). 42. Ataei, A. et al . Phonon chirality from impurity scattering in the antiferromagnetic phase of Sr 2IrO 4. Nat. Phys. 20 , 585–588 (2024). 
+
+43. Sharma, R., Valldor, M. & Lorenz, T. Phonon thermal Hall effect in nonmagnetic Y2 Ti 2 O7. Phys. Rev. B 110 , L100301 (2024). 
+
+44. Meng, Q. et al . Thermodynamic Origin of the Phonon Hall Effect in a Honeycomb Antiferromagnet. arXiv :2403.13306 (2024). 
+
+45. Jin, X. B. et al . Discovery of Universal Phonon Thermal Hall Effect in Crystals. Phys. Rev. Lett. 135 , 196302 (2025). 
+
+46. Behnia, K. Phonon thermal Hall as a lattice Aharonov-Bohm effect. SciPost Phys. Core 8, 061 (2025). 
+
+47. Oh, T. Thermal Hall Effect Induced by Phonon Skew-Scattering via Orbital Magnetization. arXiv :2507.22436 (2025). 
+
+48. Chen, X., Xie, H., Shen, H. & Wu, Y. Vector Magnetometer Based on a Single Spin-Orbit-Torque Anomalous-Hall Device. Phys. Rev. Appl. 18 , 024010 (2022). 
+
+49. Kim, W. et al . Room-Temperature Ferromagnetic Property in MnTe Semiconductor Thin Film Grown by Molecular Beam Epitaxy. IEEE Trans. Magn. 45 , 2424 (2009). 
+
+50. Zhou, Z. et al . Manipulation of the altermagnetic order in CrSb via crystal symmetry. 
+
+Nature 638 , 645 (2025). 
+
+51. Tseng, C.-H. et al . Epitaxial Growth of Altermagnet CrSb via Magnetron Sputtering. 
+
+Cryst. Growth Des. 25 , 9171 (2025). 
+
+52. Zhou, X. et al . Crystal Thermal Transport in Altermagnetic RuO 2, Phys. Rev. Lett. 
+
+132 , 056701 (2024). 
+
+53. Hoyer, R., Jaeschke-Ubiergo, R., Ahn, K.-H., Šmejkal, L. & Mook, A. Spontaneous crystal thermal Hall effect in insulating altermagnets. Phys. Rev. B 111 , L020412 (2025). 
+
+54. Nomura, T. et al. Phonon Magnetochiral Effect. Phys. Rev. Lett. 122 , 145901 (2019). 
+
+55. Thingstad, E., Kamra, A., Brataas, A. & Sudbø, A. Chiral Phonon Transport Induced by Topological Magnons. Phys. Rev. Lett. 122 , 107201 (2019). 
+
+56. Cui, J. et al. Chirality selective magnon-phonon hybridization and magnon-induced chiral phonons in a layered zigzag antiferromagnet. Nat. Commun. 14 , 3396 (2023). 
+
+57. Yang, H., Go, G., Park, J., Kim, S. K. & Park, J.-G. Exchange striction induced thermal Hall effect in the van der Waals antiferromagnet MnPS 3. Phys. Rev. B 110 ,165147 (2024). 
+
+58. Prosnikov, M. A., Bal, M., Pisarev, R. V., Christianen, P. C. M. & Kalashnikova, A. M. Giant Intrinsic Nonlinear Phonon-Magnon Coupling in the Antiferromagnet CoF 2.
+
+arXiv :2405.07304 (2024). 
+
+59. Bendin, H., Mook, A., Mertig, I. & Neumann, R. R. D-Wave Phonon Angular Momentum Texture in Altermagnets by Magnon-Phonon-Hybridization. 
+
+arXiv :2511.08357 (2026). Acknowledgements 
+
+This work is supported by the Natural Science Foundation of China (Grant No. 12534004), the Shanghai Municipal Science and Technology Major Project (Grant No. 2019SHZDZX01), and Quantum Science and Technology-National Science and Technology Major Project (Grant No. 2024ZD0300104). Y.F.G. acknowledges the National Key R&D Program of China (Grants No. 2024YFA1408400 and 2023YFA140610) and the open research fund of Beijing National Laboratory for Condensed Matter Physics (2023BNLCMPKF002). 
+
+# Author Contributions 
+
+S.Y.L. and X.Z. conceived the idea and designed the experiments. Y.X.L and Y.F.G. grew the MnTe and CrSb samples. W.B.W. and X.Z. performed the measurements. W.B.W., X.Z. and S.Y.L. analyzed the data. W.B.W, X.Z. and S.Y.L. wrote the paper with assistance from all the authors. W.B.W, X.Z. contributed equally to this work. 
+
+# Competing interests 
+
+The authors declare no competing interests. 
+
+# Additional Information 
+
+Supplementary information is available for this paper at URL inserted when published. 
+
+Correspondence and requests for materials should be addressed to S.Y.L. (shiyan_li@fudan.edu.cn) and X.Z. (xuzhang_fd@fudan.edu.cn). Figure 1 
+
+## Mn 
+
+## Te 
+
+# a
+
+# b
+
+# cFigure 2     
+
+> abc
+> def
+
+# Figure 3 
+
+> Cr
+> Sb
+
+# a
+
+# b
+
+# cFigure 4     
+
+> abc
+> def
+
+# Figure captions 
+
+Figure 1 | Crystal structure and magnetization of α-MnTe. a , The crystal structure of α-MnTe with opposite-spin sublattices. b, Temperature-dependent magnetic susceptibility measured under ZFC conditions for different magnetic-field directions. The inset shows an optical image of the MnTe crystal used for the measurements. c,Field-dependent magnetization at different temperatures for B || c.
+
+Figure 2 | Electrical and thermal transport in α-MnTe. a , In-plane longitudinal resistivity of a α-MnTe single crystal in zero field. The left inset shows an enlarged view of the low-temperature region. The right inset defines specific crystalline orientations in the hexagonal crystal. b, Field-dependent Hall conductivity at different temperatures for B || c. The inset presents the temperature-dependence of Hall conductivity at B = 9 T. c, Temperature-dependent longitudinal ( B = 0 T) and transverse (B = 9 T) thermal conductivities. d, e, f Field-dependent total, phonon and anomalous thermal Hall conductivities at different temperatures for B || c.
+
+Figure 3 | Crystal structure and magnetization of CrSb. a , The crystal structure of hexagonal CrSb with opposite-spin sublattices. b, Temperature-dependent magnetic susceptibility under ZFC conditions for different magnetic-field directions. The inset shows an optical image of the CrSb crystal used for experiments. c, Field-dependent magnetization at various temperatures for B || c. The inset presents an enlarged view of the low-field region. 
+
+Figure 4 | Electrical and thermal transport in CrSb. a , In-plane longitudinal resistivity of a CrSb single crystal in zero field. The inset defines specific crystalline orientations in the hexagonal crystal. (b) Field-dependent Hall conductivity at different temperatures for B || c. (c) Temperature-dependent total and phonon-only longitudinal thermal conductivities at B = 0 T. d, e, f Field-dependent total, phonon and anomalous thermal Hall conductivities at different temperatures for B || c.Supplementary Information for 
+
+# “Observation of anomalous thermal Hall effect in altermagnets ”
+
+Wenbo Wan 1,2* , Xu Zhang 1* ✉, Yixuan Luo 3, Yanfeng Guo 3,4 ✉ and Shiyan Li 1,2,5,6 ✉
+
+> 1
+
+State Key Laboratory of Surface Physics, and Department of Physics, Fudan University, Shanghai 200438, China 
+
+> 2
+
+Shanghai Research Center for Quantum Sciences, Shanghai 201315, China 
+
+> 3
+
+State Key Laboratory of Quantum Functional Materials, School of Physical Science and Technology, ShanghaiTech University, Shanghai 201210, China 
+
+> 4
+
+ShanghaiTech Laboratory for Topological Physics, ShanghaiTech University, Shanghai 201210, China 
+
+> 5
+
+Shanghai Branch, Hefei National Laboratory, Shanghai 201315, China 
+
+> 6
+
+Collaborative Innovation Center of Advanced Microstructures, Nanjing 210093, China 
+
+Corresponding author. Email: shiyan_li@fudan.edu.cn (S.Y.L.); guoyf@shanghaitech.edu.cn (Y.F.G.); xuzhang_fd@fudan.edu.cn (X.Z.) Supplementary Note 1: Setup of thermal transport measurement. 
+
+> Figure S1 | Setup of thermal transport measurement.
+
+# Supplementary Note 2: In-plane M(H) curves of MnTe. 
+
+Figure S2 | In-plane M(H) curves of MnTe. Field-dependent magnetization of MnTe at different temperatures for B || ab . The inset presents an enlarged view of the low-field region.

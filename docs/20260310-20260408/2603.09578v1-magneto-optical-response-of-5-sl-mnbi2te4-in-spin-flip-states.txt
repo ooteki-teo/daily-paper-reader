@@ -1,0 +1,338 @@
+Title: Magneto-optical Response of 5-SL MnBi$_2$Te$_4$ in Spin-Flip States
+
+URL Source: https://arxiv.org/pdf/2603.09578v1
+
+Published Time: Wed, 11 Mar 2026 01:01:41 GMT
+
+Number of Pages: 10
+
+Markdown Content:
+# Magneto-optical Response of 5-SL MnBi 2Te 4 in Spin-Flip States 
+
+Shahid Sattar, 1, ∗ Roman Stepanov, 1 A. H. MacDonald, 2 and C. M. Canali 1
+
+> 1
+
+Department of Mathematics and Physics, Linnaeus University, SE-39231 Kalmar, Sweden 
+
+> 2
+
+Department of Physics, University of Texas at Austin, Texas 78712, USA 
+
+(Dated: March 11, 2026) Magneto-optical effects like Kerr and Faraday rotations provide a direct probe of topological order in thin films of the magnetic topological insulator MnBi 2Te 4 (MBT). Motivated by recent experi-mental studies of spin-flip/flop transitions in MBT thin films, we investigate the interplay between interlayer spin configurations, topological order, and magneto-optical response in five septuple-layer (5-SL) MBT using first-principles calculations and a simplified coupled-Dirac-cone model. Our re-sults reveal that, despite possessing a non-zero out-of-plane magnetization, 5-SL MBT thin films can be either C = +1 topological insulators or C = 0 topologically trivial insulators depending on the relative spin orientations of the top and bottom SLs. We evaluate the Faraday and Kerr rotation angles using tight-binding models derived from ab-initio calculations and by comparing our results with those of a simplified coupled Dirac-cone model clarify the macroscopic mechanisms underlying the magneto-optical response of spin-flip states. These theoretical findings highlight the tunability of topological and magneto-optical properties in MBT thin films and provide microscopic insight into the emergence of complex topological order in layered antiferromagnetic materials. 
+
+I. INTRODUCTION 
+
+Time-reversal symmetry breaking can be induced in topological insulators by external magnetic fields [1, 2], magnetic doping [3, 4] or proximity effects [5, 6] and detected by measuring their Faraday and Kerr rota-tion magneto-optical responses. In intrinsic magnetic TIs such as MnBi 2Te 4 (MBT), magnetization survives down to the few-layer limit in thin films and couples to the topological surface states [7–9]. In their ground state MBT thin films, composed of van der Waals (vdW) gapped and antiferromagnetically (AFM) coupled neigh-boring septuple layers (SLs), are Chern insulators ex-hibiting the quantum anomalous Hall effect (QAHE) for odd SLs [10, 11], while for even SLs they realize the axion insulating phase expected to display the topological mag-netoelectric effect [11–13]. Other distinctive even–odd-layer-dependent quantum effects have also been actively investigated [14–18]. While transport measurements are commonly used to identify these topological phases [17], magneto-optical re-sponse provide a powerful complementary tool for topo-logical characterization of MBT thin films. For example, Qiu et al. have confirmed the existence of dynamical axion quasiparticles in 6-SL MBT using ultrafast opti-cal pump–probe experiments [19]. Quantized magneto-terahertz effects (Faraday and Kerr rotations) were re-ported in 6-SL and 7-SL MBT thin films in Ref. [20] and helicity-dependent optical control of AFM order has been demonstrated in 6-SL MBT films [21]. Real-time ob-servation of magnetization and magnon dynamics across different thicknesses are opening new routes for ultrafast manipulation of topological and magnetic order in MBT samples [22].  
+
+> ∗shahid.sattar@lnu.se
+
+While A-type AFM order with out-of-plane spins is the ground state in MBT [7, 9], under an applied external magnetic field thin films exhibit rich and complex spin configurations. The MBT phase diagram includes field-induced spin-flip/flop transitions that modify the spin-wave excitations (magnons) of the AFM-ordered SLs [22– 24]. For example, Lian et al. have studied the QAHE under spin flips/flops in 7-SL MBT by tuning the gate voltage and the perpendicular magnetic field and have uncovered a cascade of quantum phase transitions [25]. Experimental work by Han et al. discussed abrupt mag-nitude changes in magneto-optical response during these transitions, suggesting the possible existence of a Chern insulator state even in 6-SL MBT films under external magnetic field [20]. Existing theoretical studies of TIs [26] and magnetic TIs [27], however, mostly focus on the ground state and discuss layer-dependent Faraday and Kerr rotations and their electric field dependence. It is unclear how the topological order, relative energies and bandgaps change in moving from the AFM ground state (alter-nating spin-alignment in the out-of-plane direction) to spin-flip states, and eventually to the ferromagnetic (FM) spin-alignment state. Here, we focus specifically on these alternative micro-scopic spin flip configurations of 5-SL MBT thin films, and map out the corresponding energy landscape. The interplay between different interlayer spin-arrangements, bandgaps, and frequency-dependent transverse and lon-gitudinal conductance and magneto-optical responses are discussed using first-principles calculations and com-pared with a simplified coupled-Dirac-cone toy model [27]. We argue that despite possessing a non-zero out-of-plane magnetization, a 5-SL thin film can exhibit either non-vanishing ( C = +1) or vanishing ( C = 0) Chern in-sulating phases. The Chern number of the ground state instead depends mainly on the relative spin orientations of the top and bottom SLs. We clarify the merits and 
+
+> arXiv:2603.09578v1 [cond-mat.mes-hall] 10 Mar 2026
+
+2
+
+FIG. 1: (left) Schematic of a 5-SL MnBi 2Te 4 in the AFM ground state configuration. (right) Alternate spin-flip configurations with the same net magnetic moment of 5 μB . Energy difference per unit cell (in meV) compared to the AFM ground state and band gaps (in meV) are given at the bottom of degenerate cases in magenta and black colors, respectively. the limitations of the coupled-Dirac-cone model [27] in describing the salient transport and magneto-optical fea-tures of these magnetic TIs.  
+
+> II. COMPUTATIONAL DETAILS
+
+First-principles calculations were performed using den-sity functional theory (DFT) and the projector aug-mented wave method [28, 29] as implemented in the Vi-enna Ab-initio Simulation Package (VASP) [30]. The generalized gradient approximation in the Perdew-Burke-Ernzerhof parametrization was employed for the exchange-correlation potential. The plane wave cutoff energy was set to a large value of 430 eV. We use a Γ-centered Monkhorst-Pack 9 × 9 × 1 (12 × 12 × 1) k-mesh for the Brillouin zone integration for structural relaxation (self-consistent calculations). In the iterative solution of Kohn-Sham equations, we ensured a force convergence of 10 −3 eV/˚ A and an energy convergence of 10 −7 eV. DFT-D3 van der Waals dispersion corrections were employed in all calculations to capture long range van der Waals in-teractions [31]. A vacuum layer of 15 ˚ A was added in the out-of-plane direction to create two-dimensional struc-tures free from artifacts of the three-dimensional periodic boundary conditions. To correctly describe strong on-site Coulomb interactions of localized Mn d−electrons, we used a Hubbard U correction (GGA+U method) follow-ing Dudarev’s scheme [32] and fixed the onsite Coulomb (U) and exchange (J) parameters 3.9 eV and 0.0 eV, re-spectively. A real-space tight binding (TB) model Hamiltonian was obtained by parameterizing the self-consistent Kohn-Sham Hamiltonian using the Wannier90 package [33–35]. For this purpose, we used the VASP2WANNIER90 in-terface and included Mn −d, Bi −p and Te −p orbitals in generating the Wannier functions. Topological charac-teristics were computed using the WannierTools [36] and WannierBerri packages [37]. For the computation of the optical conductivity, we used the Kubo-Greenwood formula [38, 39]: 
+
+σαβ (ℏω) = ie 2
+
+ℏ
+
+Z d2k
+
+(2 π)2
+
+X
+
+> nm
+
+fnk − fmk
+
+Enk − Emk
+
+× ⟨mk|∂kx Hk|nk⟩ ⟨mk|∂ky Hk|nk⟩
+
+Enk − Emk − (ℏω + iη ) ,
+
+(1) where fnk is Fermi-Dirac distribution function giving band occupation probability, ω is the optical frequency, ℏ
+
+is the reduced Planck’s constant, n, m are band indices, 
+
+|nk⟩ and |mk⟩ are Bloch states and Enk and Emk are the corresponding band energies, and η is a disorder broad-ening parameter.   
+
+> III. RESULTS AND DISCUSSION A. Spin configurations in five-septuple-layer (5-SL) MBT thin films
+
+Bulk MnBi 2Te 4 (MBT) combines intrinsic magnetism, due to Mn magnetic moments ( ∼ 5 μB ), and non-trivial band topology characterized by the topological Z 2 in-variant [8]. MBT thin films consist of ferromagnetic SL (Te-Bi-Te-Mn-Te-Bi-Te) blocks stacked along the c axis. The ground state of a 5-SL thin film has adjacent SLs coupled antiferromagnetically, with spins pointing along the out-of-plane easy axis, as shown in the left panel of Fig. 1. For this spin configuration, the topological sur-face states (TSSs) display an exchange gap of 54 meV at the Dirac point. From now on, we will consider this value of the energy gap as a zero-energy reference. Spin configurations involving spin flips between adja-cent SLs and thus deviating from the AFM ground-state configuration are possible, regardless of the mechanism responsible for their formation. Figure 1 (right) illus-trates all possible spin alignments for the 5-SL film that preserve a net magnetic moment of 5 μB . This value cor-responds to the typical magnetic moment of a single Mn atom in each SL and therefore provides a natural ref-erence for describing spin-flip states in 5-SL MBT. The relative energies of these configurations, calculated per unit cell with respect to the AFM ground state energy, are indicated below each alignment in magenta color. The higher energy spin-configurations in Fig. 1 are all metastable and can be realized by cycling applied exter-nal magnetic fields and temperatures [25, 40–43]. To ex-amine whether our conclusions depend on the magnitude of total magnetization, we also investigated a configura-tion with a higher net moment of 15 μB , which will be discussed later in the text. Spin-reversal processes are energetically costly but be-come increasingly relevant when the exchange energies between adjacent SLs are comparable to the anisotropy energy [44] or when external perturbations, such as mag-netic field, strain, or proximity effects dominate and lower the barriers separating different magnetic stacking states 3[45]. Importantly, these deviations from the GS spin con-figurations have the crucial effect of modifying the TSS gap magnitude and even the topological symmetry of the system. Considerable attention has been paid to how na-tive point and surface defects [46–49] and surface recon-structions [50] affect the TSS energy gap. Our results suggest that the role of domain structures containing lo-cal spin flip magnetic configurations, which has been less investigated, also deserves a careful investigation. The right panel of Fig. 1 shows all spin configurations with the same net magnetization as the ground state together with their relative energies and TSS energy gaps (black numbers in parentheses at the very bottom). We do not address the cases of canting, whose topological response has already been discussed in Ref. [51]. We classify all the spin-flip configurations that pre-serve the same total magnetic moment of the 5-SL MBT ground state into two physically distinct categories: (1) configurations in which the spins of the top or the bot-tom SLs are aligned parallel to their adjacent layer(s), thereby modifying the surface magnetization; and (2) configurations in which the parallel spin alignment oc-curs only within the interior SLs of the 5-SL stack, leav-ing the surface magnetization comparatively unchanged. Within each category, we identify energetically degener-ate configuration pairs, such as the first case when either top or the bottom two SLs spins are aligned in parallel (shown as orange arrows). Here, the energy relative to the AFM ground state is only 1.1 meV per unit cell. In-terestingly, we observe a flattening of the topmost valence band around the gamma point owing to this change, as shown in Fig. 2(b). Moreover, the TSS energy gap is enhanced to 60 meV in comparison to 54 meV observed for the AFM ground state (see also Fig. 2(a)). In con-trast, when the SL spin alignment moves inside the film, the TSS gap decreases to 26 meV, even though the ener-gies of this configuration (1.2 meV) and the previous one (1.1 meV) are essentially the same. Hence, we conclude that the distinction between the two classes is consequen-tial, as the TSS gap is predominantly governed by the spin alignments of the surface and adjacent interior SLs. Contiguous SLs at the surface with parallel spin config-urations are more effective in increasing the TSS energy gap than contiguous SLs with parallel spin configurations located inside the film. Extending this analysis to the last two cases (2.6 meV and 3.5 meV energy difference relative to AFM ground state) when three inner (outer) SLs are aligned parallel, we observe a TSS gap of 1 meV (72 meV), respectively. These findings are in-line with the recent experimental work of Ref. [25]. Since the Dirac-like surface states are spatially localized largely in the top and bottom SLs only, we notice that parallel-spin SLs on the surfaces increase the local surface magnetization which, in turn, produces a larger exchange field and is responsible for an increase in the TSS gap. On the other hand, parallel spin SL pairs in the interior reduce the effective surface exchange field thus yielding a smaller TSS gap. This behavior demon-
+
+FIG. 2: (a) Band structure of a 5-SL MnBi 2Te 4 in the AFM ground state (GS) configuration. (b) Band structure of degenerate spin-flip alignments having 1.1 meV higher energy than the GS. strates that the TSS gap in MBT thin films is controlled primarily by the local top and bottom SL spin alignments rather than by the global magnetization of the sample.  
+
+> B. Topological properties of MBT 5-SL thin films
+
+Next we examine the topological character of the spin flip states in a 5-SL MBT thin film. Since we have already established that the relative spin orientations of the top and bottom surface SLs play a crucial role in determining the TSS gap, it is natural to classify all cases into two groups: (1) configurations in which the surface SL spins are parallel, and (2) those in which they are anti-parallel. This distinction proves to be decisive in determining the topological nature of spin flip states by computing Chern number for each case. Interestingly, when the top-most 
+
+FIG. 3: (a) Topological nature of different spin flip alignments. Blue columns represent |C| = +1 and red columns show C = 0 cases, depending on the spin alignment of the top-most and bottom-most SLs. (b) Quasi-1D left and right side-wall edge states of 110 surface, shown for the two representative |C| = +1 and 
+
+C = 0 cases, respectively. 4and bottom-most SL spins are aligned in the same di-rection, we obtain a nontrivial Chern insulating phase with C = 1 as shown in blue color in Fig. 3a. In con-trast, when the surface SL spins are oppositely oriented, we find that that Chern number vanishes ( C = 0), as shown in the panels with red color in Fig. 3(a). In other words, the topological response mirrors our earlier con-clusion that a global magnetization of the sample (5 μB
+
+for 5-SL MBT) does not necessarily implies a non-zero Chern number characterizing a Chern insulating state; rather, it is the relative orientation of the top and bot-tom SLs which dictates the topology of MBT thin films. We further confirm this by looking at a higher net mag-netization of 15 μB as shown in Supplementary Figure. S1. Additionally, we compute quasi one-dimensional (1D) side-wall edge states of the 110 surface for two represen-tatives cases, with C = 1 and C = 0 respectively, as shown in Fig. 3(b) (left). For the C = 1 case, we observe spin-polarized counter-propagating chiral edge states on the left and right side-walls (orange), as expected for a quan-tized Chern insulating state. On the other side, the C = 0 case shows gapped side-wall edge states (red), which is typical of an axion insulating state. It should be men-tioned that a recent experiment by Han et al. points to the presence of a possible Chern insulator state in an even 6-SL MBT film under an external magnetic field [20]. According to our theoretical results. this finding can be explained by a magnetic-field induced spin flip transition, where the SL spins on the top and bottom surfaces are parallel. Finally, the coexistence of C = 0 and C = 1 spin-flip states at fixed nonzero magnetization provides insight into the existence of complex topological order present in MBT thin films.  
+
+> C. Magneto-optical properties
+
+Experimentally, quantum transport and magneto-optical measurements are the two most convenient ways of studying the topological properties. To elucidate the underlying mechanisms of the quantized response in char-acterizing a specific topological state, we first analyze the longitudinal and transverse optical conductivities. Using the expression of the optical conductivity tensor given in Eq. 1 calculated with a TB model obtained from ab-initio 
+
+methods, we present results for the two cases ( C = 0 and C = 1). In Fig. 4, we plot the real ( ℜ, blue line) and imaginary ( ℑ, red line) parts of the transverse (a,c) and longitudinal (b,d) optical conductivity for C = 1 and 
+
+C = 0, respectively. In this figure, the dashed vertical line marks the position the TSS gap. At photon energies much smaller than the TSS gap value ( ℏω << E gap ), we find ℜσxy to be quantized in units of e2/h (Hall plateau) which is a characteristic of the Chern insulating ( C = 1) state (see Fig. 4a). On the other hand, ℑσxy remains zero throughout the gapped region. As the frequency in-creases and approaches the threshold of ℏω ≈ Egap , pho-
+
+FIG. 4: Frequency-dependent optical conductivity (in units of e2/h ) for the two representative spin-flipped 5-SL MnBi 2Te 4 cases. (a,c) transverse (Hall) conductivity ( σxy ) and (b,d) longitudinal conductivity (σxx ) for the representative C = +1 and C = 0. In each case, real and imaginary part is shown in blue and red colors, respectively. The TSS gap is shown as black dotted line. tons have enough energy to excite electrons across the gap. In the region of ℏω > E gap , ℜσxy increases beyond the quantized value, and ℑσxy becomes greater than zero. As shown in Fig. 4b for the C = 1 case, the real part of the longitudinal conductivity ( ℜσxx ) remains zero inside the gapped region due to the absence of interband tran-sitions, signaling absence of dissipation, whereas in the the same region ℑσxx decreases linearly. These findings are in qualitative agreement with the results of Ref. [27] based on a simplified coupled Dirac-cone model. It is pertinent to mention that a non-zero Berry cur-vature acts as an effective magnetic field in momentum space, generating an anomalous transverse velocity and thus a Hall response in the gapped TSS. The quantization of ℜσxy in the parallel spin alignment configuration of the top and bottom SL layers, where each surface contributes to half-quantized Hall conductance, is a signature of the QAHE in the zero frequency limit. In the C = 0 state, i.e. when the surface SL spins are aligned in the anti-parallel direction, both ℜσxy and ℑσxy are zero in the TSS gap region leading to the so-called zero-Hall plateau of the zero-frequency Hall conductance in the axion in-sulating phase [52]. Alternatively, a non-zero ℜσxy re-flects the asymmetric optical response of the material to right- and left-circularly polarized light in systems where time-reversal symmetry is broken, thereby producing a rotation of the plane of light polarization. Since MBT thin films intrinsically break time-reversal symmetry through their internal magnetic order, magneto-optical (MO) measurements provide an indirect probe to confirm these transport features. Indeed, the coupling between circularly polarized incident light and 5spin-flip states should lead to a distinct MO response in the two phases, in the form of Faraday rotation ( θF )and Kerr rotation ( θK ) angles, corresponding to the rota-tion of the polarization plane of transmitted and reflected light from MBT samples. This behavior can be described using a simple electrodynamic model. If a thin film of thickness d (d ≪ λ, with λ being the wavelength of inci-dent light) is placed between two dielectrics with refrac-tive indices n1 = √ε1 (top) and n2 = √ε2 (bottom), the MO response is characterized by two-dimensional con-ductive layers with surface conductivity σ (measured in units of e2/h ). Imposing the boundary conditions allows us to determine the transmission field ( Etx/y ) and reflec-tion field ( Erx/y ). We then express these fields in a linear polarization basis: 
+
+Etx
+
+Ety
+
+
+
+= 1
+
+N
+
+ 2n1(n1 + n2 + 2 α σ xx )
+
+− 4αn 1 σxy 
+
+
+
+, (2) 
+
+Erx
+
+Ery
+
+
+
+= 1
+
+N
+
+ n21 −(n2 + 2 α σ xx )2 −  2α σ xy 
+
+2
+
+− 4αn 1 σxy 
+
+
+
+, (3) where, N = ( n1 + n2 + 2 α σ xx )2 +  2α σ xy 
+
+2.Using Eq. (2) and (3) together with the optical conduc-tivity tensor computed via the Kubo-Greenwood formula of Eq. (1), we finally obtain expressions for the angles θF
+
+and θK as follows: 
+
+θF = 12
+
+ arg Et 
+
+> +
+
+− arg Et
+
+> −
+
+ , θ K = 12
+
+ arg Er 
+
+> +
+
+− arg Er
+
+> −
+
+ ,
+
+(4) where E t,r  
+
+> ±
+
+= E t,r x ± i E t,r y .We use these expressions to calculate the MO response of spin flip states, focusing on the θF and θK angles for 
+
+C = +1 and C = 0 cases, as shown in Fig. 5. In the limit 
+
+ℏω << E gap (dotted black line), θF acquires the “quan-tized” value of θF = C tan −1α (α is the fine structure constant) for C = +1 case, whereas it vanishes for C = 0 case, as shown in Fig. 5(a) and (c). These observations can be explained by the specifics of the measurements to underlying physical processes, as depicted schemati-cally in the inset of Fig. 5a. For the C = +1 case, the spins on the top and bottom SLs are parallel. Since θF is proportional to the sum of the Hall conductivities along the light propagation direction, the contributions of both surfaces to the Faraday angle add up, resulting in a fi-nite rotation of the polarization plane. Conversely, for the C = 0, the spins on the top and bottom surfaces are oppositely oriented. As a consequence, the polarization-plane rotation induced at the top surface is compensated by an opposite rotation at the bottom surface, leading to a vanishing net θF in the gapped region, as shown in Fig. 5c. On the other hand, light reflection from MBT spin-flip states can be studied using the Kerr angle dynamics, as displayed in Fig. 5(b) and (d). For spin flip states leading to C = 0 (panels with red color in Fig. 3(a)), 
+
+θK is identically zero as shown in Fig. 5(d), just like the even-numbered MBT films studied in Ref. [27]. Along-side, Fig. 5(b) shows that systems with spin flip states leading to C = 1 (panels with blue color in Fig. 3(a)) are characterized by non-zero value of θK . In the DC limit (ω → 0), neglecting dissipation terms ( ℑσxy and ℜσxx ), we can estimate θK ≃ − π/ 2, in agreement with the re-sults for odd-numbered MBT films in Ref. [27]. Notice that the value of θK remains constant - generating the flat plateau visible in Fig. 5(b), but drops sharply to zero at a finite frequency. Importantly, the θK sudden jump to zero obtained from the realistic TB model does not correlate to the TSS energy gap but occurs at a consid-erably smaller threshold of ℏ ω ≈ 10 meV. This behavior of the θK differs from the results of Ref. [27] where the size of the flat plateau is controlled by TSS energy gap. In other words, in the description of the Kerr dynamics (θK (ω)) we find a discrepancy between the microscopic TB model used here and the coupled Dirac-cone model, although both models capture correctly the topological phase of the system. The reason of this discrepancy is explained below. We first address the sharp change from −π/ 2 to 0 of 
+
+θK (presented in Fig. 5b) and the decrease in the width of the plateau below the TSS gap found in the micro-scopic TB model. For this, it is necessary to start from Eq. (4) that gives the Kerr angle θK in as the difference of arg z = (arg Er 
+
+> +
+
+− arg Er
+
+> −
+
+). Here arg z is the phase of the complex number z in radians in the interval ( −π, π ). The phase of a complex number z can in principle be expressed as the inverse tangent of the ratio ( ℑz/ ℜz). Note however that a naive calculation of arctan( ℑz/ ℜz)would only yield an angle in the interval ( −π/ 2, π/ 2). In order to get the full range of the phase, it is nec-essary to take into account the signs of ( ℜz) and ( ℑz)separately, which allows us to determine the quadrant on which the complex number resides. As shown in detail 
+
+FIG. 5: Magneto-optical response of two representative spin-flipped 5-SL MnBi 2Te 4 cases. (a,c) Faraday rotation angle, and (b,d) Kerr rotation angle (in radian (rad)) against optical frequency ( ω) for the representative C = +1 and C = 0 cases. 6in the Supplementary Information (see Eq. S4-S7), this is conveniently done by means of the two-argument func-tion atan2 (ℑz, ℜz)[53]. This algorithm uniquely speci-fies the argument of z in the interval −π to π and thereby correctly reproduces branch switches caused by the sign changes of ( ℜz) and ( ℑz), which are ultimately respon-sible for the sharp change in θK .By writing θK in terms of the atan2 function, we fi-nally obtain the following expression: 
+
+θK = 12 atan2 ℑ(Er
+
+> +
+
+(Er
+
+> −
+
+)∗), ℜ(Er
+
+> +
+
+(Er
+
+> −
+
+)∗) (5) Calculating ℑ(Er
+
+> +
+
+(Er
+
+> −
+
+)∗) and ℜ(Er
+
+> +
+
+(Er
+
+> −
+
+)∗) in the TSS-gapped region ( ℜσxx = 0 and ℑσxy = 0) and using the piecewise definition of the atan2 function (see Supple-mentary Eqs. S9-S10), one can directly track how the conductivity components control the behavior of θK . In-side the gap, ℜσxy remains constant, whereas |ℑ σxx | in-creases monotonically with ω. As a result, the complex quantity z(ω) = Er
+
+> +
+
+(Er
+
+> −
+
+)∗(ω) evolves continuously in the complex plane, and the Kerr angle θK (ω) = 12 arg z(ω)decreases toward zero as the relative phase between the reflected circular components Er 
+
+> +
+
+and Er 
+
+> −
+
+is reduced by the growing longitudinal reactive response. The sharp step-like crossover toward θK ≃ 0 occurs at the point where the reactive longitudinal contribution becomes comparable to the Hall term, causing ℜz(ω) = 0 to van-ish and change sign. This produces a rapid phase shift of the corresponding reflected circular component, i.e., a rapid change of the relative phase arg Er
+
+> +
+
+(Er
+
+> −
+
+)∗ by approximately ±π, which translates into a change of θK
+
+by ±π/ 2. In the atan2 representation, this phase shift appears as the branch switching discussed in Figs. S2-S3 of the Supplementary. The apparent abruptness of the step is set by how quickly this compensation is reached, which we discuss in more detail in the next section.  
+
+> D. Comparison with the coupled Dirac-cone model
+
+To interpret the characteristic features of the MO re-sponse in different regimes, we use a coupled Dirac-cone model introduced in Ref. [43] and based on the theoreti-cal formalism developed earlier in Ref. [26]. Therein, the properties of MBT thin films are modeled by coupled Dirac cones originating from the top and bottom SLs, and are described by the following Hamiltonian: 
+
+H = X
+
+> k⊥,i,j
+
+h (−1) i ℏvD (ˆ z×σ)·k⊥ + mi σz
+
+ δij +∆ij (1 − δij )
+
+i
+
+c† 
+
+> k⊥i
+
+ck⊥j (6) Here, k⊥ is the in-plane two-dimensional quasi-momentum, c† 
+
+> k⊥i
+
+and ck⊥j are the electron creation and annihilation operators in the i-th and j-th Dirac cones, respectively. Indexes i and j are numbered for each SL, odd index corresponds to the upper surface and the even index to the lower surface. The Dirac kinetic term 
+
+ℏvD (ˆ z×σ)·k⊥ describes the linear dispersion of surface states and the factor ( −1) i takes into account the op-posite sign of the Dirac term for the upper and lower surfaces. The mass term mi σz determines the exchange splitting of the corresponding Dirac cone, where mi is formed as the sum of contributions from nearby Mn mag-netic layers within the same SL ( JS parameter) and from neighboring SL ( JD parameter). The off-diagonal ele-ments ∆ ij describe the hybridization between different Dirac cones. Specifically, we use ∆ S to indicate the cou-pling between upper and lower cones within a SL and a ∆D the coupling between cones across the gap between adjacent SL. Thus, a N-layer film is reduced to a quasi-2D system with 4N bands. The following set of parameters are used in our model calculations: vD = 5 × 10 5 m/s, ∆S = 84 meV, ∆ D = −127 meV, JS = 36 meV, JD = 29 meV. We employed the Kubo-Greenwood formula (Eq. (1)) to obtain the components of conductivity tensor. Fi-nally, Eq. (2)-(5), used above for the DFT TB model, are also used here to calculate the Kerr and Faraday rotation angles. The conductivity plots for this model are shown in Fig. 6(a,b,e,f). We notice that the coupled Dirac-cone model captures qualitatively the behavior of the TB model, with two main differences: i. The main peaks appear exactly at the threshold set by energy gap TSS Egap , whereas in the TB model they appear at frequencies exceeding Egap /ℏ;ii. The imaginary part of the conductivity ℑσxx is ap-proximately constant and small inside the TSS gap region (Fig. 6(b,f), red line) before developing a sharp cusp at 
+
+ω = Egap /ℏ, in contrast to the linear decrease with a rel-ative large negative slope displayed by the TB model (see Fig. 4(b,d)). This is observed to occur for both C = 1 and 
+
+C = 0. It turns out that this qualitative and quantita-tive difference between the two models is responsible for the remarkably different behavior of their corresponding Kerr angles, for the C = 1, displayed in Fig. 6(b) and Fig. 6(c)(blue line), respectively. For both models θK
+
+starts at −π/ 2 for ω = 0 forming a flat plateau, whose width, however, is different for two cases. Using the cou-pled Dirac cone model, the threshold is exactly equal to the TSS gap, while for the TB model the value is consid-erable smaller than the gap. Beyond this threshold, θK
+
+for the TB model is just a step function sharply dropping to zero and remaining so until the ℏω ≈ TSS gap. For the coupled Dirac-cone model, θK smoothly tends to zero after a small sharp step up. Point (ii) is essentially the result of the more complex electronic structure of the microscopic TB model with respect to the one of the coupled Dirac-cone model. In-deed, the band structure of the former, shown in Fig. 2, contains many more bands than the latter, which for a 5-SL MBT film consists of only 20 bands. (Remember that in this model a N-SL thin film is reduced to a quasi 2D-system with 4N bands). Indeed, the considerably more 7
+
+FIG. 6: Frequency-dependent optical and magneto-optical response of the coupled Dirac cone model for our representative (a-d) C = +1 and (e-h) C = 0 cases. (a, e) Transverse (Hall) conductivity ( σxy ) and (b, f) Longitudinal conductivity ( σxx ) (in units of e2/h ); real and imaginary parts are distinguished by different colors as indicated in the legends. Solid lines correspond to the coupled Dirac cone model (toy model), while dashed lines show the extended model including a phenomenological reactive correction −iκω . (c, g) Kerr rotation θK (ω) and (d, h) Faraday rotation θF (ω) angles obtained from ( σxy ) and ( σxx ). Vertical dotted lines mark the TSS energy gap value. complex band structure of the TB model allows many more transitions when calculating ℑσxx (the reactive re-sponse term of σxx given by the principal value), leading to a linear behavior with a large slope within the TSS gap region [54]. To demonstrate this point, we plot the conductivity tensor components ( σxx and σxy ) together with the cor-responding Kerr and Faraday rotation angles in Fig. 7, calculated for a 31-SL coupled Dirac-cone model and whose electronic structure now consists of 124 energy bands that account for an increased number of transi-tions. We can see that the transverse component ( σxy )shows good agreement with the results of the TB model (see Fig. 4(a)). Hence, θF remains unchanged and retains its quantized value as shown in Fig. 7(c). In addition to it, the imaginary part of the longitudinal conductivity (ℑσxx ) now exhibits a steeper slope in contrast to the model calculation shown in red color in Fig. 6(b). A steeper (more negative) slope of ℑσxx (ω) implies a faster growth of the reactive longitudinal response in-side the gap. This accelerates the evolution of the com-plex quantity z(ω) = Er
+
+> +
+
+(Er
+
+> −
+
+)∗ in the complex plane and brings it to the branch-switching condition ℜz(ω) = 0 at a lower frequency (see Supplemental Eq. S10 and Figs. S2-S3). This corresponds to reaching the point where the longitudinal reactive contribution becomes compara-ble to the Hall term, so that the relative phase between the reflected circular components changes rapidly. As a result, the value of the phase extracted via atan2 belong-ing to the first branch switches branch earlier, and θK (ω)exhibits an earlier and sharper step-like crossover toward values close to zero (see Supplementary Fig. S3(b–d)). This reduces the width of the ( θK = −π/ 2)-plateau em-anating from ω = 0 and accounts for the step-like feature observed in the microscopic TB results. To elucidate further these results, we introduce an ex-tended coupled Dirac-cone model in which a phenomeno-logical, ad-hoc linear imaginary term is included in the longitudinal component of the conductivity ( σxx ), in or-der to capture the observed frequency dependence: 
+
+σextd  
+
+> xx
+
+(ω) = σxx (ω) − iκω (7) where κ is a phenomenological parameter. This modified expression mimics the linear dependence of ℑ σxx found 8
+
+FIG. 7: Optical conductivity and MO response of the coupled Dirac-cone model for an increased number of layers (N=31). (a) Transverse (Hall) conductivity ( σxy ), (b) Longitudinal conductivity ( σxx ) (in the units of 
+
+e2/h ). Real and imaginary parts are shown in blue and red colors, respectively. (c) Faraday rotation θF (ω) and (d) Kerr rotation θK (ω) angles. in the TB model. As a result, it can be seen that for the conductivity component ℑσextd  
+
+> xx
+
+, the slope of the graph increases significantly ((Fig. 6(b, f)(purple line). Using this extended model, the Kerr and Faraday angles were obtained for both cases C = 0 (Fig. 6(g,h)) and C = 1 (Fig. 6(c,d)). In this case, we can see that the plateau’s width exactly matches the value of the energy gap, and the switch to zero is smoother than in the TB model. This difference is directly related to how fast the com-plex quantity z(ω) = Er
+
+> +
+
+(Er
+
+> −
+
+)∗ reaches the branch-switching condition ℜz(ω) = 0 (see Supplementary Figs. S2-S3). For finite κ, the crossing occurs within a narrow frequency interval and the resulting step in θK appears almost discontinuous. In contrast, for κ = 0 the tra-jectory may first approach the real axis (i.e., |ℑ z(ω)| be-comes small), leading to a smooth decay of θK before the final rapid collapse when the sign change of ℜz(ω) is com-pleted. Accordingly, increasing κ sharpens the crossover and reproduces the more abrupt step-like behavior seen in the TB results by effectively accelerating the evolution of ℑσxx .In contrast, our linear addition eliminates this differ-ence by modifying the ℑσxx component, resulting in the behavior of the extended model matching that of the TB model. For the case C = 0, both models show good agreement with the TB model. In real materials, the conductivity can be influenced by bulk charge carriers, an electric field, a substrate, and a dielectric background. All these effects act in a similar way by increasing in the number of interband transitions. Our additional term in the model reflects the functional trend of such effects.  
+
+> IV. CONCLUSIONS
+
+In summary, we have studied the topology and magneto-optical (MO) response of various spin-flip states of a 5-SL MBT thin film by means of TB models obtained from first-principles calculations and a coupled Dirac-cone model. We have shown that a non-zero net magneti-zation ( ∼ 5 μB ) does not guarantee the topological phase of 5-SL MBT. Instead, depending on the relative spin-orientation of the top and bottom SLs, a 5-SL can realize both a Chern insulating phase with C = +1 and C = 0. The magnitude of the TSS gap is likewise controlled pri-marily by the local surface spin alignments rather than by a global magnetic order. We further demonstrated that these distant topological phases are directly reflected in the MO response. In the low frequency limit and within the TSS gap, the Faraday rotation exhibits a quantized response for C = +1 phase and vanishes for C = 0, pro-viding a robust probe of topology. In contrast, the Kerr rotation is found to be highly sensitive to the detailed fre-quency dependence of the longitudinal optical conductiv-ity ( σxx ). By comparing realistic TB results with a cou-pled Dirac-cone model, we clarified the limitations of the latter in describing Kerr rotation dynamics in spin-flip states and discuss the underlying mechanism responsi-ble for rapid collapse of the Kerr plateau. Our results highlight the crucial role of surface-resolved magnetism in magnetic TIs and provide guidance for interpreting MO measurements on MBT thin films under different spin-flip configurations.  
+
+> V. ACKNOWLEDGMENT
+
+The work is financially supported by the Swedish Re-search Council (grant no: VR 2021-04622). The compu-tations were enabled by resources provided by the Na-tional Academic Infrastructure for Supercomputing in Sweden (NAISS) partially funded by the Swedish Re-search Council through grant agreement no. 2022-06725 and the Centre for Scientific and Technical Computing at Lund University (LUNARC). Work in Austin was supported by the W. M. Keck Foundation under grant 996588.   
+
+> [1] R. Vald´ es Aguilar, A. Stier, W. Liu, L. Bilbro, D. George, N. Bansal, L. Wu, J. Cerne, A. Markelz, S. Oh, et al. ,Terahertz response and colossal kerr rotation from the surface states of the topological insulator bi 2se 3, Phys. Rev. Lett. 108 , 087403 (2012). [2] L. Wu, M. Salehi, N. Koirala, J. Moon, S. Oh, and N. Ar-mitage, Quantized faraday and kerr rotation and axion electrodynamics of a 3d topological insulator, Science
+
+9
+
+354 , 1124 (2016). [3] K. N. Okada, Y. Takahashi, M. Mogi, R. Yoshimi, A. Tsukazaki, K. S. Takahashi, N. Ogawa, M. Kawasaki, and Y. Tokura, Terahertz spectroscopy on faraday and kerr rotations in a quantum anomalous hall state, Nat. Commun. 7, 12245 (2016). [4] M. Mogi, Y. Okamura, M. Kawamura, R. Yoshimi, K. Ya-suda, A. Tsukazaki, K. Takahashi, T. Morimoto, N. Na-gaosa, M. Kawasaki, et al. , Experimental signature of the parity anomaly in a semi-magnetic topological insulator, Nat. Phys. 18 , 390 (2022). [5] M. Lang, M. Montazeri, M. C. Onbasli, X. Kou, Y. Fan, P. Upadhyaya, K. Yao, F. Liu, Y. Jiang, W. Jiang, et al. ,Proximity induced high-temperature magnetic order in topological insulator-ferrimagnetic insulator heterostruc-ture, Nano Lett. 14 , 3459 (2014). [6] X. Che, K. Murata, L. Pan, Q. L. He, G. Yu, Q. Shao, G. Yin, P. Deng, Y. Fan, B. Ma, et al. , Proximity-induced magnetic order in a transferred topological insulator thin film on a magnetic insulator, ACS Nano 12 , 5042 (2018). [7] D. Zhang, M. Shi, T. Zhu, D. Xing, H. Zhang, and J. Wang, Topological axion states in the magnetic insu-lator mnbi 2te 4 with the quantized magnetoelectric effect, Phys. Rev. Lett. 122 , 206401 (2019). [8] J. Li, Y. Li, S. Du, Z. Wang, B.-L. Gu, S.-C. Zhang, K. He, W. Duan, and Y. Xu, Intrinsic magnetic topolog-ical insulators in van der waals layered mnbi 2te 4-family materials, Sci. Adv. 5, eaaw5685 (2019). [9] M. Otrokov, I. P. Rusinov, M. Blanco-Rey, M. Hoff-mann, A. Y. Vyazovskaya, S. Eremeev, A. Ernst, P. M. Echenique, A. Arnau, and E. V. Chulkov, Unique thickness-dependent properties of the van der waals in-terlayer antiferromagnet mnbi 2te 4 films, Phys. Rev. Lett. 
+
+122 , 107202 (2019). [10] Y. Deng, Y. Yu, M. Z. Shi, Z. Guo, Z. Xu, J. Wang, X. H. Chen, and Y. Zhang, Quantum anomalous hall effect in intrinsic magnetic topological insulator mnbi 2te 4, Science 
+
+367 , 895 (2020). [11] C. Liu, Y. Wang, H. Li, Y. Wu, Y. Li, J. Li, K. He, Y. Xu, J. Zhang, and Y. Wang, Robust axion insulator and chern insulator phases in a two-dimensional antiferromagnetic topological insulator, Nat. Mater. 19 , 522 (2020). [12] C. Liu, Y. Wang, M. Yang, J. Mao, H. Li, Y. Li, J. Li, H. Zhu, J. Wang, L. Li, et al. , Magnetic-field-induced robust zero hall plateau state in mnbi 2te 4 chern insulator, Nat. Commun. 12 , 4647 (2021). [13] W. Lin, Y. Feng, Y. Wang, J. Zhu, Z. Lian, H. Zhang, H. Li, Y. Wu, C. Liu, Y. Wang, et al. , Direct visualization of edge state in even-layer mnbi 2te 4 at zero magnetic field, Nat. Commun. 13 , 7714 (2022). [14] Y.-F. Zhao, L.-J. Zhou, F. Wang, G. Wang, T. Song, D. Ovchinnikov, H. Yi, R. Mei, K. Wang, M. H. Chan, 
+
+et al. , Even–odd layer-dependent anomalous hall effect in topological magnet mnbi 2te 4 thin films, Nano Lett. 21 ,7691 (2021). [15] D. Ovchinnikov, X. Huang, Z. Lin, Z. Fei, J. Cai, T. Song, M. He, Q. Jiang, C. Wang, H. Li, et al. , Intertwined topological and magnetic orders in atomically thin chern insulator mnbi 2te 4, Nano Lett. 21 , 2544 (2021). [16] F. L¨ upke, A. D. Pham, Y.-F. Zhao, L.-J. Zhou, W. Lu, E. Briggs, J. Bernholc, M. Kolmer, J. Teeter, W. Ko, 
+
+et al. , Local manifestations of thickness-dependent topol-ogy and edge states in the topological magnet mnbi 2te 4,Phys. Rev. B 105 , 035423 (2022). [17] Y. Li, Y. Wang, Z. Lian, H. Li, Z. Gao, L. Xu, H. Wang, R. Lu, L. Li, Y. Feng, et al. , Fabrication-induced even-odd discrepancy of magnetotransport in few-layer mnbi 2te 4, Nat. Commun. 15 , 3399 (2024). [18] B. Chen, X. Liu, Y. Li, H. Tay, T. Taniguchi, K. Watan-abe, M. H. Chan, J. Yan, F. Song, R. Cheng, et al. , Even– odd layer-dependent exchange bias effect in mnbi 2te 4
+
+chern insulator devices, Nano Lett. 24 , 8320 (2024). [19] J.-X. Qiu, B. Ghosh, J. Sch¨ utte-Engel, T. Qian, M. Smith, Y.-T. Yao, J. Ahn, Y.-F. Liu, A. Gao, C. Tzschaschel, et al. , Observation of the axion quasi-particle in 2d mnbi 2te 4, Nature 641 , 62 (2025). [20] X. Han, A.-H. Chen, M. Brahlek, and L. Wu, Quantized magneto-terahertz effects in the an-tiferromagnetic topological insulator mnbi 2te 4
+
+thin films, arXiv preprint arXiv:2503.13651 https://doi.org/10.48550/arXiv.2503.13651 (2025). [21] J.-X. Qiu, C. Tzschaschel, J. Ahn, A. Gao, H. Li, X.-Y. Zhang, B. Ghosh, C. Hu, Y.-X. Wang, Y.-F. Liu, et al. ,Axion optical induction of antiferromagnetic order, Nat. Mater. 22 , 583 (2023). [22] F. M. Bartram, M. Li, L. Liu, Z. Xu, Y. Wang, M. Che, H. Li, Y. Wu, Y. Xu, J. Zhang, et al. , Real-time obser-vation of magnetization and magnon dynamics in a two-dimensional topological antiferromagnet mnbi 2te 4, Sci-ence Bulletin 68 , 2734 (2023). [23] P. M. Sass, J. Kim, D. Vanderbilt, J. Yan, and W. Wu, Robust a-type order and spin-flop transition on the surface of the antiferromagnetic topological insulator mnbi 2te 4, Phys. Rev. Lett. 125 , 037201 (2020). [24] G. Qian, M. Shi, H. Chen, S. Zhu, J. Hu, Z. Huang, Y. Huang, X.-H. Chen, and H.-J. Gao, Spin-flop transi-tion and zeeman effect of defect-localized bound states in the antiferromagnetic topological insulator mnbi 2te 4,Nano Research 16 , 1101 (2023). [25] Z. Lian, Y. Wang, Y. Wang, W.-H. Dong, Y. Feng, Z. Dong, M. Ma, S. Yang, L. Xu, Y. Li, et al. , Anti-ferromagnetic quantum anomalous hall effect under spin flips and flops, Nature 641 , 70 (2025). [26] W.-K. Tse and A. MacDonald, Magneto-optical fara-day and kerr effects in topological insulator films and in other layered quantized hall systems, Physical Review B—Condensed Matter and Materials Physics 84 , 205327 (2011). [27] C. Lei and A. H. MacDonald, Kerr, faraday, and magne-toelectric effects in mnbi 2te 4 thin films, Physical Review B 108 , 125424 (2023). [28] P. E. Bl¨ ochl, Projector augmented-wave method, Phys. Rev. B 50 , 17953 (1994). [29] G. Kresse and J. Furthm¨ uller, Efficient iterative schemes for ab initio total-energy calculations using a plane-wave basis set, Phys. Rev. B 54 , 11169 (1996). [30] G. Kresse and D. Joubert, From ultrasoft pseudopoten-tials to the projector augmented-wave method, Phys. Rev. B 59 , 1758 (1999). [31] S. Grimme, J. Antony, S. Ehrlich, and H. Krieg, A con-sistent and accurate ab initio parametrization of density functional dispersion correction (dft-d) for the 94 ele-ments h-pu, J. Chem. Phys. 132 , 154104 (2010). [32] S. L. Dudarev, G. A. Botton, S. Y. Savrasov, C. Humphreys, and A. P. Sutton, Electron-energy-loss spectra and the structural stability of nickel oxide: An lsda+ u study, Phys. Rev. B 57 , 1505 (1998). 10 
+
+[33] N. Marzari and D. Vanderbilt, Maximally localized gen-eralized wannier functions for composite energy bands, Phys. Rev. B 56 , 12847 (1997). [34] A. A. Mostofi, J. R. Yates, G. Pizzi, Y.-S. Lee, I. Souza, D. Vanderbilt, and N. Marzari, An updated version of wannier90: A tool for obtaining maximally-localised wannier functions, Computer Physics Communications 
+
+185 , 2309 (2014). [35] G. Pizzi, V. Vitale, R. Arita, S. Bl¨ ugel, F. Freimuth, G. G´ eranton, M. Gibertini, D. Gresch, C. Johnson, T. Koretsune, et al. , Wannier90 as a community code: new features and applications, Journal of Physics: Con-densed Matter 32 , 165902 (2020). [36] Q. Wu, S. Zhang, H.-F. Song, M. Troyer, and A. A. Soluyanov, Wanniertools: An open-source software pack-age for novel topological materials, Computer Physics Communications 224 , 405 (2018). [37] S. S. Tsirkin, High performance wannier interpolation of berry curvature and related quantities with wannierberri code, npj Computational Materials 7, 33 (2021). [38] R. Kubo, Statistical-mechanical theory of irreversible processes. i. general theory and simple applications to magnetic and conduction problems, Journal of the phys-ical society of Japan 12 , 570 (1957). [39] D. Greenwood, The boltzmann equation in the theory of electrical conduction in metals, Proceedings of the Phys-ical Society 71 , 585 (1958). [40] H. Padmanabhan, M. Poore, P. K. Kim, N. Z. Koocher, V. A. Stoica, D. Puggioni, H. Wang, X. Shen, A. H. Reid, M. Gu, et al. , Interlayer magnetophononic coupling in mnbi2te4, Nat. Commun. 13 , 1929 (2022). [41] J.-Q. Yan, S. Okamoto, M. A. McGuire, A. F. May, R. J. McQueeney, and B. C. Sales, Evolution of structural, magnetic, and transport properties in mnbi 2- x sb x te 4, Physical Review B 100 , 104409 (2019). [42] Y. Jie, X. Cai, Y. Lin, K. Watanabe, T. Taniguchi, J. Yan, D. Ovchinnikov, and A. Avsar, Reconfigurable magnetotransport in mnbi2te4 via gate and magnetic field tuning, Advanced Materials , e10734 (2025). [43] C. Lei, S. Chen, and A. H. MacDonald, Magnetized topo-logical insulator multilayers, Proceedings of the National Academy of Sciences 117 , 27224 (2020). [44] A. Alfonsov, K. Mehlawat, A. Zeugner, A. Isaeva, B. B¨ uchner, and V. Kataev, Magnetic-field tuning of the spin dynamics in the magnetic topological insulators (mnbi 2 te 4)(bi 2 te 3) n, Physical Review B 104 , 195139 (2021). [45] W. Qi, F. Fei, Z. Zhang, B. Chen, H. Xie, B. Wei, S. Zhang, and F. Song, Exchange bias in heterostruc-tures combining magnetic topological insulator mnbi2te4 and metallic ferromagnet fe3gete2, App. Phys. Lett. 125 ,https://doi.org/10.1063/5.0201558 (2024). [46] Y. Lai, L. Ke, J. Yan, R. D. McDonald, and R. J. Mc-Queeney, Defect-driven ferrimagnetism and hidden mag-netization in mnbi 2te 4, Physical Review B 103 , 184429 (2021). [47] M. Garnica, M. M. Otrokov, P. C. Aguilar, I. I. Klimovskikh, D. Estyunin, Z. S. Aliev, I. R. Amiraslanov, N. A. Abdullayev, V. N. Zverev, M. B. Babanly, et al. ,Native point defects and their implications for the dirac point gap at mnbi 2te 4 (0001), npj Quantum Materials 7,7 (2022). [48] M. Liu, C. Lei, H. Kim, Y. Li, L. Frammolino, J. Yan, A. H. Macdonald, and C.-K. Shih, Visualizing the in-terplay of dirac mass gap and magnetism at nanoscale in intrinsic magnetic topological insulators, Proceedings of the National Academy of Sciences 119 , e2207681119 (2022). [49] H. Tan and B. Yan, Distinct magnetic gaps between anti-ferromagnetic and ferromagnetic orders driven by surface defects in the topological magnet mnbi 2te 4, Physical re-view letters 130 , 126702 (2023). [50] S. Sattar and D. Hedman, Surface reconstructions in thin films of magnetic topological insulator mnbi 2te 4, Physical Review Research 7, 023024 (2025). [51] S.-K. Bac, K. Koller, F. Lux, J. Wang, L. Riney, K. Borisiak, W. Powers, M. Zhukovskyi, T. Orlova, M. Dobrowolska, et al. , Topological response of the anomalous hall effect in mnbi2te4 due to magnetic cant-ing, npj quantum materials 7, 46 (2022). [52] M. Mogi, M. Kawamura, A. Tsukazaki, R. Yoshimi, K. S. Takahashi, M. Kawasaki, and Y. Tokura, Tailor-ing tricolor structure of magnetic topological insulator for robust axion insulator, Science advances 3, eaao1669 (2017). [53] E. I. Organick, A FORTRAN primer (Addison-Wesley series in computer science and information processing) 
+
+(Addison Wesley Longman Publishing Co., Inc., 1963). [54] This can be understood by looking at the analytical ex-pressions of the conductivity tensor derived from the coupled Dirac-cone model, see (See Eqs. S10 −S13 in the Supplementary Information). Indeed, both ℑσxx (ω)and ℜσxy (ω) contain logarithmic and inverse tangential terms, generating sharp peaks and steps. Furthermore, the mass term ( m) in these expressions defines the depth of the peak, followed by a smooth logarithmic tail. The logarithmic function itself tends to zero, but as the num-ber of transitions increases, the logarithmic tail is trun-cated. Each transition introduces a more negative value into ℑσxx , leading to an overall linear decrease of the function, the slope of which becomes steeper by adding transitions.

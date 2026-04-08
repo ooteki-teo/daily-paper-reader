@@ -1,0 +1,316 @@
+Title: Optically Driven Orbital Hall Transport in Floquet Odd-Parity Collinear Altermagnets with High Chern Numbers
+
+URL Source: https://arxiv.org/pdf/2603.11483v1
+
+Published Time: Fri, 13 Mar 2026 00:25:08 GMT
+
+Number of Pages: 9
+
+Markdown Content:
+# Optically Driven Orbital Hall Transport in Floquet Odd-Parity Collinear Altermagnets with High Chern Numbers 
+
+Yuping Tian 1, Chen-Hao Zhao 1, Chao-Bo Wang 1, Binyuan Zhang 1, Xiangru Kong 1,∗ and Wei-Jiang Gong 1†
+
+College of Sciences, Northeastern University, Shenyang 110819, China 
+
+(Dated: March 13, 2026) Recent studies have attracted increasing interest in nonrelativistic odd-parity magnetism and its associated topology in collinear altermagnets. Here, based on symmetry analysis and an effective model, we demonstrate that Floquet engineering can induce f -wave odd-parity altermagnetism in two-dimensional collinear antiferromagnetic multilayers via the coupling between circularly polarized light (CPL) and layer degrees of freedom. Furthermore, modifying the CPL induces nonequilibrium quantum anomalous Hall effect (QAHE) with tunable Chern numbers up to C = ±8, arising from layer- and valley-dependent band inversions. The induced topological phase transitions provide an efficient means to manipulate the orbital Hall effect (OHE) by redistributing orbital angular momen-tum. First-principles calculations reveal that experimentally accessible VSi 2N4 serves as a viable platform for topological phase diagram of the QAHE and OHE, featuring pronounced trigonal warp-ing. Our findings establish a versatile route toward optically controllable topological phenomena, opening new opportunities for future developments in topological spintronics and orbitronics. 
+
+> Keywords: Altermagnetism, Orbital Hall effect, Quantum anomalous Hall effect, Floquet-engineering
+
+Introduction-Altermagnets provide a unique and significant platform for spin-polarized phenomena [1–12], distinguished by their nonrelativistic spin splitting in k -space protected by crystalline symme-tries [13–25]. Typically, Altermagnets exhibit even-parity spin splitting, giving rise to Fermi surfaces with d-, g-, and i-wave symmetries [26, 27]. In con-trast, magnets hosting unconventional odd-parity spin splitting (e.g., p- and f-wave types) are of par-ticular significance due to their intimate connection with unconventional superfluidity [28–30]. How-ever, odd-parity spin splitting has been largely lim-ited to noncollinear magnets [31–35], whose complex magnetic textures are often fragile against external perturbations, restricting their practical applicabil-ity. Realizing odd-parity altermagnetism (AM) in collinear magnetic systems is therefore highly desir-able, yet remains a fundamental challenge. Floquet engineering via periodic driving provides a versatile paradigm for dynamically reshaping electronic land-scapes and inducing exotic nonequilibrium quantum phases [36–52]. While periodic light can effectively modify magnetic symmetries, the dynamical manip-ulation of spin-space-group symmetries to engineer higher-order odd-parity AM remains a pivotal and formidable frontier. In this Letter, we demonstrate that Floquet en-gineering induces f-wave odd-parity AM in two-dimensional (2D) collinear antiferromagnetic (AFM) multilayers based on symmetry arguments and ef-fective model analysis. In the parity-time ( PT )-symmetric bilayer characterized by layer-locked spin polarization, circularly polarized light (CPL) cou-ples to the hidden layer- and valley-dependent or-bital textures. Through spin-layer locking, this cou-pling converts the orbital Floquet response into an   
+
+> ∗kongxiangru@mail.neu.edu.cn
+> †gwj@mail.neu.edu.cn
+
+odd-parity AM state. Furthermore, the formation of photon-dressed Floquet-Bloch states drives layer-selective band inversion, enabling distinct quantum anomalous Hall (QAH) phases with Chern numbers tunable by the CPL intensity or frequency. The ac-companying variation of orbital angular momentum (OAM) plays a key role in controlling the magnitude of the orbital Hall effect (OHE). The OHE which is the orbital counterpart to the spin Hall effect, en-ables the electrical generation of transverse OAM flow [53–56]. Recent experimental milestones in light metals [57–59] have solidified the OHE as a pivotal orbitronic mechanism, offering a robust pathway to control orbital degrees of freedom in magnetic mul-tilayers [60–66]. Building on the link between orbital textures and the OHE [67–72], we reveal a light-driven mechanism for sub-picosecond OAM modulation. While the driving frequency selects resonant photo-hybridizations, the field strength dictates band renormalization and symmetry breaking, which bridges static topological invariants with Floquet-engineered states and enables deterministic OAM manipulation in the petahertz regime. To sub-stantiate these findings, we construct a d-orbital tight-binding (TB) model that reproduces the light-induced f -wave AM and the topological phase dia-gram with topology-engineered OHE. Remarkably, high Chern numbers of C = ±8 are achieved, facili-tated by triple warping effects. Finally, we propose VSi 2N4 as a realistic platform to host the predicted ultrafast phenomena. Our approach, rooted in CPL-induced T -symmetry breaking, is broadly applica-ble to both PT -symmetric and non-PT -symmetric magnetic multilayers. 
+
+Symmetry - We consider a 2D collinear AFM bi-layer where the magnetic sublattices are related by 
+
+PT symmetry. Due to negligible spin-orbital cou-pling (SOC), the system is governed by spin-group symmetries [ Ri|| Rj ], where Ri and Rj act in spin 
+
+> arXiv:2603.11483v1 [cond-mat.mes-hall] 12 Mar 2026
+
+2
+
+FIG. 1. (a) and (b) Illustration of light-induced odd-parity AM in vdW AFM bilayes composed of FM mono-layers with in-plane magnetization. The two sublattices with opposite spin polarization are depicted by antipar-allel red and blue spin arrows. (c) Schematic illustration of the light-induced QAHE and light-modulated OHE. Red and blue spheres: sublattices with opposite spins. Orbiting orange and purple spheres: distinct OAM. Red and blue lines: direction and spin polarization of edge currents. (d) Spin-degenerate H0(k ) (black lines) and spin-resolved Heff (k ) (red and blue circles) band struc-tures. 
+
+and real spaces, respectively [26, 27, 73–75]. The spin structure is primarily dictated by two oper-ations: [C2||P ], where a spin-space twofold rota-tion C2 is coupled with spatial inversion P exchang-ing the sublattices, and [ C2T || E], a generic sym-metry for collinear magnets that combines time re-versal T with C2 [74]. These symmetries enforce the constraints ε(s, k ) = ε(−s, −k ) and ε(s, k ) = 
+
+ε(s, −k ) (where s =↑, ↓), respectively, thereby en-suring global spin degeneracy. Crucially, CPL breaks the T -related symmetry [ C2T || E] while pre-serving the spin-rotation-related inversion [ C2||P ], as the light field does not directly couple to spin degrees of freedom in the absence of SOC. This se-lective symmetry breaking lifts the spin degener-acy, leaving only the odd-parity constraint ε(s, k ) = 
+
+ε(−s, −k ), which characterizes an odd-parity Fermi surface. When an additional C3 symmetry is intro-duced, an f -wave AM state can emerge [Fig.1(a)], protected by the [ C2|| S6z ] symmetry (whose cubic operation corresponds to [ C2||P ]). Building on the f -wave AM state, on-resonant CPL driving with photon energies spanning half to the full band gap reshapes the electronic landscape. Through the optical Stark effect, photon-dressed Floquet-Bloch bands are shifted toward the Fermi level [76–79], lifting spin degeneracies and trigger-ing spin-layer-resolved TPTs characterized by band gap closing and reopening. The associated inver-sion of orbital characters provides an efficient means to redistribute the OAM and thereby modulate the OHE [80]. The OAM current generated by the OHE exerts an orbital torque upon injection into a ferro-magnet. As illustrated in Fig.1(c), the Floquet AM manifests spin-layer locking, which generates layer-polarized torques and consequently drives counter-propagating electronic OAM currents under an ex-ternal electric field. When the system is in a topo-logically nontrivial phase, the resulting dissipation-less edge currents exhibit layer-locked orbital torque characteristics. 
+
+Model -We consider a hexagonal AFM bilayer com-posed of d orbitals to demonstrate the emergence of light-induced f -wave AM. The lattice geometry is illustrated in Fig.1(b), and the corresponding TB Hamiltonian is given by [81–83]: 
+
+H0(k )= X
+
+> ⟨i,j ⟩
+
+X
+
+> m,n
+
+Λij (k )σ0tmn ij c†
+
+> m
+
+cn
+
++ X
+
+> m
+
+τz σ · mξ c†
+
+> m
+
+cm + t⊥τxσ0I3
+
+(1) where Λ ij (k ) = P 
+
+> L=1 ,2
+
+PLei(−1) L−1k ·(Ri−Rj ) is the layer-dependent phase operator incorporating the 180 ◦ relative rotation via phase conjugation in the lower layer. The layer projection operators are 
+
+P1,2 = 1±τz 
+
+> 2
+
+, where τi and σi (i = x, y, z ) denote Pauli matrices acting on the layer and spin degrees of freedom, respectively. The Hilbert space is spanned by the d-orbital basis Ψ = ( dz2 , d xy , d x2−y2 ). Here, 
+
+tmn ij denotes the nearest-neighbor hopping ampli-tudes between orbital n at site j and orbital m at site i, with c† 
+
+> m
+
+(cn) being the electron creation (an-nihilation) operators. The AFM exchange interac-tion is characterized by an in-plane magnetization 
+
+mξ=mξ (sin θ, 0, cos θ) with θ=90 ◦. Due to the weak vdW interaction, the interlayer coupling t⊥ is signif-icantly smaller than the intralayer hopping ampli-tudes tmn ij . At equilibrium, the preserved PT sym-metry of H0(k ) enforces spin degeneracy through-out the Brillouin zone [Fig.1(d)]. The valence band maximum and conduction band minimum are dom-inated by dxy /d x2−y2 and dz2 orbitals, respectively [Fig.S1] [84], where inter-orbital hybridization en-codes a nontrivial momentum-space orbital texture. This texture generates a finite orbital Berry cur-vature (OBC), underpinning an intrinsic OHE that persists even in the absence of SOC. To quantify the intrinsic orbital response, we eval-uate the OHC by employing the Fermi-sea term of the Kubo formula within linear response the-ory [85, 86] σLz 
+
+> xy
+
+= −eR
+
+> BZ d2k
+> (2 π)2
+
+P 
+
+> ν
+
+fν (k )Ω O,L z 
+
+> ν,xy
+
+(k )where Ω O,L z 
+
+> ν,xy
+
+(k ) is the OBC, given by Ω O,L z 
+
+> ν,xy
+
+(k ) = 2ℏIm P   
+
+> μ̸=ν
+> ⟨uν
+> k|J Lz o,x
+
+|uμ 
+
+> k
+
+⟩⟨ uμ 
+
+> k
+
+|ˆvy |uν    
+
+> k⟩
+> (εν
+> k−εμ
+> k)2
+
+, with uν 
+
+> k
+
+represent-ing the periodic part of the Bloch state associated with the energy εν 
+
+> k
+
+. fν (k ) is the equilibrium Fermi distribution function and the velocity operator is de-noted as ˆ vy = 1  
+
+> ℏ
+> ∂H k
+> ∂ky
+
+. The OAM current operator is expressed as J Lz 
+
+> o,x
+
+= {ˆvx, ˆLz } 
+
+> 2
+
+, and for the Berry curvature (BC) calculations, this operator is substi-3tuted by the velocity operator ˆ vx. The OBC rep-resents the geometric response of the momentum-space texture of OAM ⟨Lz (k )⟩ = ⟨uk |Lz (k )|uk ⟩. In the equilibrium bilayer, the OHC exhibits a plateau of −3.94 e/ 2π within the band gap [Fig.2(c)], with the OBC showing positive peaks at the K and K′
+
+valleys. Under the coexistence of inversion P and time-reversal T symmetries, the OAM vanishes at the K and K′ points [Figs.S10-11] [84]. Further-more, the emergence of floating edge states, in-gap modes, and localized charge distributions evidences the second-order topological insulator nature of the equilibrium system [Fig.S1] [84, 87–90]. We now explore the dynamical response of the AFM bilayer under normally incident CPL. The driving field, with frequency ω and chirality η =
+
+±1, is described by the vector potential A(t) = 
+
+A(ηsin( ωt ), cos( ωt ), 0). The time-dependent hop-pings are governed by the Peierls substitution 
+
+tmn ij (t) = tmn ij ei e   
+
+> ℏA(t)·dmn ij
+
+[91, 92], where d mn ij is the displacement vector between orbitals. The light-driven operator can be expressed as cm(t) = P∞
+
+> α=−∞
+
+cαm eiαωt , where cαm denotes the Floquet component. According to the Floquet–Bloch theory [37, 46, 48], an effective static Hamiltonian HF (k, ω )is constructed in the extended Hilbert space spanned by multiphoton replicas [Section I [84]]. To qualita-tively characterize the spin splitting in this period-ically driven AFM bilayer, we employ the Magnus expansion [36] to derive the effective Floquet Hamil-tonian from HF (k, ω ). While rigorous only in the high-frequency limit, this expansion remains a valu-able tool for identifying symmetry origins of odd-parity AM. The effective Floquet Hamiltonian reads 
+
+Heff (k ) = H0(k , J 0(Aa )tmn ij )+ X
+
+> n≥1
+
+[H−1, H 1]
+
+nℏω +O( 1
+
+ω2 )= X
+
+> ⟨i,j ⟩
+
+X
+
+> m,n
+
+Λij (k )σ0˜tmn ij c†
+
+> m
+
+cn
+
++X
+
+> ⟨⟨ i,j ⟩⟩
+
+X
+
+> m,n
+
+Λij (k )σ0T mn ij c†
+
+> m
+
+cn
+
+(2) where H±1 = 1
+
+> T
+
+R To H(t)e±iωt dt is the first Fourier component in the frequency space. The commuta-tor term manifests as a high-frequency correction that lifts the band degeneracy [Fig.1(d)]. Here, the effective intralayer hopping amplitudes ˜ tmn ij and 
+
+T mn ij acquire complex phases, directly encoding the CPL-imparted chirality and the consequent break-ing of T symmetry. Critically, these second-order virtual processes expand the TB connectivity be-yond the nearest-neighbor limit of H0, generating ef-fective next-nearest-neighbor transitions via photon-assisted pathways. These emergent couplings act as synthetic Peierls phases, effectively threading the lattice with a non-zero magnetic flux. This mech-anism enables the ultrafast reconfiguration of the band structure and provides a viable route to en-gineering nonequilibrium topological states. The renormalization of the band edges under CPL can be analytically captured by the effective eigenvalues at the K point [Eqs.S9-12] [84]: 
+
+EFv = Ev ± ηJ 21 (Aa )[3( t11 −t22 )2−2( t1 +t2)2]
+
+ℏω ,EFc = Ec ±8ηJ 21 (Aa )t1t2/ℏω, 
+
+(3) where the positive (negative) sign distinguishes the lower (upper) layer, and Ec/v are the eigenvalues of 
+
+H0(k , J 0(Aa )tmn ij ). Crucially, these splitting signs invert at the K′ valley ( k→− k ) , resulting in an odd-parity layer splitting [Figs.S2-S3] [84]. Interplaying with the intrinsic spin-layer locking, this effect in-duces an odd parity spin-splitting texture satisfy-ing Es(k ) = E−s(−k ). The emerging f -wave odd-parity AM is governed by the symmetry constraint 
+
+Es(k ) = E−s(O−1k ), where O represents the spa-tial component of the [ C2|| S6z ]2. Fig.2(a) shows the spin-resolved 3D band structure of Heff (k ), which demonstrates this light-induced higher-order odd-parity AM. Importantly, since AM originates en-tirely from light-induced symmetry breaking, time-periodic driving provides a general route to realize engineer AM states.                       
+
+> FIG. 2. (a) Spin-resolved 3D band structures for the
+> f-wave odd-parity AM state described by Heff (k). (b) Spin-layer-resolved band structure near the Kand K′
+> valley under RCPL with ℏω= 0 .10 eV at light intensity
+> eA/ ℏ= 0 .20 ˚ A−1.(c) OHC as a function of energy for the equilibrium system and the nonequilibrium system driven by RCPL with different photon energies ℏωat
+> eA/ ℏ= 0 .20 ˚ A−1. (d) The orbital-resolved band struc-tures near the Kvalley under different photon energies
+> ℏω= 0 .1,0.4,0.5 eV at eA/ ℏ= 0 .20 ˚ A−1.
+
+Notably, the photon-mediated processes encapsu-lated in HF (k, ω ) induce Floquet-Bloch sidebands that replicate the equilibrium electronic structure. Increasing the photon energy ℏω shifts these side-bands toward the Fermi level [Fig.S4] [84], pro-viding a spectral signature for experimental detec-tion via time-resolved angle-resolved photoemission spectroscopy (Tr-ARPES) [93]. In the sub-resonant regime where the driving energy remains well be-low the band-touching threshold (e.g., ℏω = 0 .10 eV), the OHC is markedly amplified to nearly triple its equilibrium value, forming a robust plateau of 4
+
+−12 .00 e/ 2π. This surge originates from the coher-ent dressing of states, which triples the positive OBC peaks at the K and K′ valleys without necessitat-ing a band gap closing [Fig.S10] [84]. Meanwhile, a zero anomalous Hall conductivity (AHC) plateau appears near the Fermi level [Figs.3(a) and (d)], de-termined by the momentum-space integration of the BC. Crucially, with increasing light intensity eA/ ℏ,the spin degeneracy is further lifted, resulting in a significantly enhanced odd-parity spin splitting at the K and K′ valleys [Fig.2(b)]. Our findings re-veal that coherent Floquet-dressing induces a mas-sive amplification of pure orbital Hall transport and a field-tunable enhancement of odd-parity spin split-ting even in the sub-resonance regime, establishing altermagnets as a reliable platform for petahertz-scale orbitronics.             
+
+> FIG. 3. BC (left panel) and OBC (right panel) of the TB model in the Kvalley under the RCPL with photon energy ℏω(a) = 0 .10 eV, (b) = 0 .40 eV and (c) = 0 .50 eV. Total and layer-resolved AHC under the RCPL with photon energy ℏω(d) = 0 .10 eV, (e) = 0 .40 eV and (f) = 0 .50 eV. The light intensity is eA/ ℏ= 0 .20 ˚ A−1. (g) OHC of the TB model under RCPL with ℏω= 0 .10 eV and 0.50 eV as a function of light intensity eA/ ℏ.
+
+As the photon energy advances through the half-gap resonance, the system enters a topological regime where the emergence and subsequent gap-ping of spin-degenerate type-I nodal rings trigger a nontrivial orbital inversion [Fig.2(d)]. This evo-lution initiates a sequence of intricate topological phase transitions (TPTs) that fundamentally recon-figure the electronic landscape [Figs.S4–S11] [84]. Specifically, at ℏω ≥ 0.20 eV, orbital character ex-change between the E1 
+
+> v
+
+and E−1 
+
+> c
+
+bands coincides with the first reopening of the global gap. This doubly degenerate band inversion generates posi-tive OBC peaks at the K and K′ valleys, encir-cled by negative contributions, whereas the BC ex-hibits positive valley-centered peaks surrounded by positive rings [Fig.3(c)]. The resulting TPT estab-lishes a quantized AHC plateau with a Chern num-ber C = −8 and an OHC of −8.05 e/ 2π [Figs.2(c) and 3(f)], with each layer contributing an equal 
+
+−4 e2/h to the anomalous Hall transport [94]. Sig-nificantly, the light-induced f -wave AM determines a valley-contrasting band inversion as light inten-sity further increases. A secondary inversion involv-ing spin-polarized states (e.g., spin-up in the lower layer at K valleys) reverses the valley-centered pos-itive OBC peaks while leaving the surrounding neg-ative rings intact [Fig.3(b)]. This evolution mod-ifies the OHC to −6.07 e/ 2π and reconfigures the topological invariant to C = −6. The quantized AHC reemerges with symmetric layer contributions of −3 e2/h , hallmarked by a BC landscape where negative valley peaks are enclosed by positive spec-tral rings [Fig.3(e)]. Collectively, light-induced AM underpins the co-evolution of discrete topological in-variants and the orbital Hall response. Evidently, the topology-related band inversion ex-ert modulation on orbital transport. From Eq.(3), it is the phase perturbation of the manifold induced by the OAM that gives rise to the nontrivial behav-ior of the OBC describing geometric rotations. In the topologically trivial phase, where T symmetry is broken while P is preserved, the OAM is no longer pinned to zero at K and K′ but instead acquires identical positive values at both valleys [Fig.S11] [84]. The OHC remains relatively stable in this regime, with a marginal increase driven by light-induced band-gap narrowing [Fig.3(g)]. However, traversing the TPT from C = −8 to C = −6 trig-gers a pronounced drop in the OHC. This transition is marked by a reconfiguration of the OAM texture: two sign reversals from the valley center to the outer region for C = −8 phase reduce to a single reversal for QAH phase with C = −6 phase. This correspon-dence establishes the OHC plateau as a macroscopic fingerprint of the microscopic topological restructur-ing of orbital degrees of freedom. 
+
+Material Realization-To validate the theoretical analysis presented above, we identify bilayer VSi 2N4
+
+as a promising platform to host the predicted ultra-fast phenomena [95, 96]. Our first-principles cal-culations reveal that the bilayer favors a van der Waals AFM ground state with opposite magnetic moments on the two V sublattices, characterized by an in-plane magnetization and a magnetocrystalline anisotropy energy (MAE = Ex − Ez ) of -70 μeV. Following our theoretical model, the bilayer is con-structed by rotating the upper layer by 180 ◦ around the C2z axis relative to the lower layer [Figs.4(a) and S13-S14] [84, 97–100]. Near the Fermi level, the equilibrium electronic structure features degenerate spin-up (lower layer) and spin-down (upper layer) bands, with a direct gap of 0.3544 eV. The bilayer OHC reaches 2 .34 e/ 2π, nearly twice the monolayer value (1 .16 e/ 2π), which confirms that weak inter-layer coupling allows the system to act as a coherent superposition of individual layers, consistent with observations in transition-metal dichalcogenide bi-layers [101]. Belonging to the p¯3m1 space group, the bilayer preserves the [ C2|| ¯3001 ] spin-group sym-metry while breaking [ C2|| Mz ]. This specific sym-metry configuration dictates that the light-induced 5odd-parity AM exhibits a characteristic f -wave an-gular dependence [Fig.4(b)].         
+
+> FIG. 4. (a) Crystal structure of the VSi 2N4bilayer. The gray region denotes the primitive cell. (b) The spin-resolved 3D band structures under RCPL. (c) Distribu-tion of BC corresponding to the C=−8 QAH phase. (d) Phase diagram of band gap as functions of photon energy ℏωand light intensity eA/ ℏ.
+
+Guided by symmetry considerations, we reveal that the interplay between photon energy and light intensity drives the VSi 2N4 bilayer through a rich sequence of TPTs [Figs.4(d) and S15-S19] [84]. The phase diagram, mapped by the band gap in the (ℏω, eA/ ℏ) parameter space, exhibits four distinct regimes: a trivial insulator (I, Cl = 0, Cu =0, Ctot = 0), a globally gapless phase (II), and two QAH phases with high Chern numbers (III, 
+
+Cl = −4, Cu = −4, Ctot = −8; IV, Cl = −3, 
+
+Cu = −3, Ctot = −6) [102], where Cl(u) is the layer-resolved Chern number for the lower (upper) layer. In the trivial region I, the OHC is ampli-fied to 7 .01 e/ 2π, approximately triple its equilib-rium value. Upon entering the topological regime III, the OHC drops to 3 .15 e/ 2π, and further dimin-ishes to 1 .1 e/ 2π in region IV as valley-contrasting band inversions reshape the OBC distribution. Re-markably, the large topological invariants in these phases are underpinned by trigonal warping at the 
+
+K and K′ valleys [103–106], which manifests as three distinct BC peaks in the valence bands [Fig.4(c)]. Notably, this warping-induced proliferation of BC hot spots provides a geometric mechanism to ele-vate the Chern numbers. While P symmetry en-sures mirror-symmetric BC distributions at K and 
+
+K′, the light-driven warping expands the Floquet QAH phase space, facilitating the engineering of high-Chern-number states. The above mechanism can be observed in both trilayer TB models and VSi 2N4 trilayer, where CPL can induce QAH phases with Chern numbers C = ±12 and C = ±9, and the OHC can reach up to 10 .5 e/ 2π in VSi 2N4. More-over, reversing the CPL handedness flips the chiral-ity of QAH phase while leaving the overall trend and sign of the OHC unchanged [Figs.S12 and S21-22] [84]. 
+
+Conclusion-In this work, we have demonstrated that Floquet engineering can induce odd-parity AM in collinear antiferromagnets by coupling CPL and layer degree of freedom. This mechanism tran-scends conventional paradigms, enabling the sub-picosecond manipulation of the OHE and the re-alization of nonequilibrium topological states with high Chern numbers through the hybridization of Floquet-Bloch bands. First-principles calculations substantiate VSi 2N4 as a robust platform for hosting light-induced QAH phases and topology-engineered orbital transport, characterized by mz = ±2. Given its crystal-field origin and resilience to realistic per-turbations, the OHE offers a scalable and energy-efficient alternative to the spin Hall effect, partic-ularly for orbitronic applications based on abun-dant light elements. Considering that the required light parameters are already accessible in current ex-perimental setups [39–42] and that several MSi 2Z4
+
+monolayers have been successfully synthesized, our findings provide a timely encouragement for the experimental exploration of light-driven topological phenomena and petahertz-scale orbitronics. 
+
+> ACKNOWLEDGEMENTS
+
+This work was financially supported by the LiaoN-ing Revitalization Talents Program (Grant No. XLYC1907033) and the Natural Science Foundation of Liaoning province (Grant No. 2023-MS-072). X. K. acknowledges the start up funding from North-eastern University, China. This work is supported by the Fundamental Research Funds for the Central Universities (No. N25LPY025).                              
+
+> I. REFERENCE
+> [1] X. Zhou, W. Feng, X. Yang, G.-Y. Guo, and Y. Yao, Crystal chirality magneto-optical effects in collinear antiferromagnets, Phys. Rev. B 104 ,024401 (2021). [2] H.-Y. Ma, M. Hu, N. Li, J. Liu, W. Yao, J.-F. Jia, and J. Liu, Multifunctional antiferromag-netic materials with giant piezomagnetism and noncollinear spin current, Nature Communications
+> 12 , 10.1038/s41467-021-23127-7 (2021). [3] H. Reichlova, R. Lopes Seeger, R. Gonz´ alez-Hern´ andez, I. Kounta, R. Schlitz, D. Kriegner, P. Ritzinger, M. Lammel, M. Leivisk¨ a, A. Birk Hel-
+
+6
+
+lenes, K. Olejn´ ık, V. Petˇ riˇ cek, P. Doleˇ zal, L. Ho-rak, E. Schmoranzerova, A. Badura, S. Bertaina, A. Thomas, V. Baltz, L. Michez, J. Sinova, S. T. B. Goennenwein, T. Jungwirth, and L. ˇSmejkal, Ob-servation of a spontaneous anomalous Hall re-sponse in the Mn 5Si 3 d-wave altermagnet, Nature Communications 15 (2024). [4] R. He, D. Wang, N. Luo, J. Zeng, K.-Q. Chen, and L.-M. Tang, Nonrelativistic Spin-Momentum Coupling in Antiferromagnetic Twisted Bilayers, Phys. Rev. Lett. 130 , 046401 (2023). [5] B. Pan, P. Zhou, P. Lyu, H. Xiao, X. Yang, and L. Sun, General Stacking Theory for Altermag-netism in Bilayer Systems, Phys. Rev. Lett. 133 ,166701 (2024). [6] Y. Liu, J. Yu, and C.-C. Liu, Twisted Magnetic Van der Waals Bilayers: An Ideal Platform for Altermagnetism, Phys. Rev. Lett. 133 , 206702 (2024). [7] X. Zhu, X. Huo, S. Feng, S.-B. Zhang, S. A. Yang, and H. Guo, Design of Altermagnetic Models from Spin Clusters, Phys. Rev. Lett. 134 , 166701 (2025). [8] J. A. Ouassou, A. Brataas, and J. Linder, dc Josephson Effect in Altermagnets, Phys. Rev. Lett. 
+
+131 , 076003 (2023). [9] M. Gu, Y. Liu, H. Zhu, K. Yananose, X. Chen, Y. Hu, A. Stroppa, and Q. Liu, Ferroelectric Switchable Altermagnetism, Phys. Rev. Lett. 134 ,106802 (2025). [10] Y. Chen, X. Liu, H.-Z. Lu, and X. C. Xie, Electri-cal Switching of Altermagnetism, Phys. Rev. Lett. 
+
+135 , 016701 (2025). [11] X. Duan, J. Zhang, Z. Zhu, Y. Liu, Z. Zhang, I. ˇZuti´ c, and T. Zhou, Antiferroelectric Altermag-nets: Antiferroelectricity Alters Magnets, Phys. Rev. Lett. 134 , 106801 (2025). [12] Z.-F. Gao, S. Qu, B. Zeng, Y. Liu, J.-R. Wen, H. Sun, P.-J. Guo, and Z.-Y. Lu, AI-accelerated discovery of altermagnetic materials, National Sci-ence Review 12 , nwaf066 (2025). [13] S. Hayami, Y. Yanagi, and H. Kusunose, Bottom-up design of spin-split and reshaped electronic band structures in antiferromagnets without spin-orbit coupling: Procedure on the basis of aug-mented multipoles, Phys. Rev. B 102 , 144441 (2020). [14] H. Bai, L. Han, X. Y. Feng, Y. J. Zhou, R. X. Su, Q. Wang, L. Y. Liao, W. X. Zhu, X. Z. Chen, F. Pan, X. L. Fan, and C. Song, Observation of Spin Splitting Torque in a Collinear Antiferromag-net RuO 2, Phys. Rev. Lett. 128 , 197202 (2022). [15] I. Mazin (The PRX Editors), Editorial: Altermagnetism—A New Punch Line of Fun-damental Magnetism, Phys. Rev. X 12 , 040002 (2022). [16] C. Wu, K. Sun, E. Fradkin, and S.-C. Zhang, Fermi liquid instabilities in the spin channel, Phys. Rev. B 75 , 115103 (2007). [17] R. D. Gonzalez Betancourt, J. Zub´ aˇ c, R. Gonzalez-Hernandez, K. Geishendorf, Z. ˇSob´ aˇ n, G. Springholz, K. Olejn´ ık, L. ˇSmejkal, J. Sinova, T. Jungwirth, S. T. B. Goennenwein, A. Thomas, H. Reichlov´ a, J. ˇZelezn´ y, and D. Kriegner, Spon-taneous Anomalous Hall Effect Arising from an Unconventional Compensated Magnetic Phase in a Semiconductor, Phys. Rev. Lett. 130 , 036702 (2023). [18] S. Hayami, Y. Yanagi, and H. Kusunose, Momentum-Dependent Spin Splitting by Collinear Antiferromagnetic Ordering, Journal of the Physi-cal Society of Japan 88 , 123702 (2019). [19] P. A. McClarty and J. G. Rau, Landau Theory of Altermagnetism, Phys. Rev. Lett. 132 , 176702 (2024). [20] J. Krempask´ y, L. ˇSmejkal, S. W. D’Souza, M. Ha-jlaoui, G. Springholz, K. Uhl´ ıˇ rov´ a, F. Alarab, P. C. Constantinou, V. Strocov, D. Usanov, W. R. Pudelko, R. Gonz´ alez-Hern´ andez, A. B. Hellenes, Z. Jansa, H. Reichlov´ a, Z. ˇSob´ aˇ n, R. D. Gonza-lez Betancourt, P. Wadley, J. Sinova, D. Kriegner, J. Min´ ar, J. H. Dil, and T. Jungwirth, Altermag-netic lifting of Kramers spin degeneracy, Nature 
+
+626 , 517 (2024). [21] C. Song, H. Bai, Z. Zhou, L. Han, H. Reichlova, J. H. Dil, J. Liu, X. Chen, and F. Pan, Altermag-nets as a new class of functional materials, Nature Reviews Materials 10 , 473 (2025). [22] L. Bai, W. Feng, S. Liu, L. ˇSmejkal, Y. Mokrousov, and Y. Yao, Altermagnetism: Exploring New Fron-tiers in Magnetism and Spintronics, Advanced Functional Materials 34 , 2409327 (2024). [23] S.-W. Cheong and F.-T. Huang, Altermagnetism classification, npj Quantum Materials 10 (2025). [24] F. Zhang, X. Cheng, Z. Yin, C. Liu, L. Deng, Y. Qiao, Z. Shi, S. Zhang, J. Lin, Z. Liu, M. Ye, Y. Huang, X. Meng, C. Zhang, T. Okuda, K. Shi-mada, S. Cui, Y. Zhao, G.-H. Cao, S. Qiao, J. Liu, and C. Chen, Crystal-symmetry-paired spin–valley locking in a layered room-temperature metallic altermagnet candidate, Nature Physics 21 , 760 (2025). [25] M. Hu, X. Cheng, Z. Huang, and J. Liu, Cata-log of C-Paired Spin-Momentum Locking in Anti-ferromagnetic Systems, Phys. Rev. X 15 , 021083 (2025). [26] L. ˇSmejkal, J. Sinova, and T. Jungwirth, Emerg-ing Research Landscape of Altermagnetism, Phys. Rev. X 12 , 040501 (2022). [27] L. ˇSmejkal, J. Sinova, and T. Jungwirth, Beyond Conventional Ferromagnetism and Antiferromag-netism: A Phase with Nonrelativistic Spin and Crystal Rotation Symmetry, Phys. Rev. X 12 ,031042 (2022). [28] I. ˇZuti´ c, J. Fabian, and S. Das Sarma, Spintronics: Fundamentals and applications, Rev. Mod. Phys. 
+
+76 , 323 (2004). [29] H. C. Koo, S. B. Kim, H. Kim, T.-E. Park, J. W. Choi, K.-W. Kim, G. Go, J. H. Oh, D.-K. Lee, E.-S. Park, I.-S. Hong, and K.-J. Lee, Rashba Effect in Functional Spintronic Devices, Advanced Mate-rials 32 , 2002117 (2020). [30] A. Manchon, H. C. Koo, J. Nitta, S. M. Frolov, and R. A. Duine, New perspectives for Rashba spin–orbit coupling, Nature Materials 14 , 871 (2015). [31] Q. Song, S. Stavri´ c, P. Barone, A. Droghetti, D. S. Antonenko, J. W. F. Venderbos, C. A. Occhialini, B. Ilyas, E. Erge¸ cen, N. Gedik, S.-W. Cheong, R. M. Fernandes, S. Picozzi, and R. Comin, Elec-trical switching of a p-wave magnet, Nature 642 ,64 (2025). 7
+
+[32] A. B. Hellenes, T. Jungwirth, R. Jaeschke-Ubiergo, A. Chakraborty, J. Sinova, and L. ˇSmejkal, P-wave magnets (2023). [33] Y. Yu, M. B. Lyngby, T. Shishidou, M. Roig, A. Kreisel, M. Weinert, B. M. Andersen, and D. F. Agterberg, Odd-Parity Magnetism Driven by An-tiferromagnetic Exchange, Phys. Rev. Lett. 135 ,046701 (2025). [34] S. Hayami, Y. Yanagi, and H. Kusunose, Spon-taneous antisymmetric spin splitting in non-collinear antiferromagnets without spin-orbit cou-pling, Phys. Rev. B 101 , 220403 (2020). [35] B. Brekke, P. Sukhachov, H. G. Giil, A. Brataas, and J. Linder, Minimal Models and Transport Properties of Unconventional p-Wave Magnets, Phys. Rev. Lett. 133 , 236703 (2024). [36] M. Bukov, L. D’Alessio, and A. Polkovnikov, Universal high-frequency behavior of periodically driven systems: from dynamical stabilization to Floquet engineering, Advances in Physics 64 , 139 (2015). [37] F. Zhan, R. Chen, Z. Ning, D.-S. Ma, Z. Wang, D.-H. Xu, and R. Wang, Perspective: Floquet engi-neering topological states from effective models to-wards realistic materials, Quantum Front 3 (2024). [38] J.-Y. Shan, H. C. M. Ye, S. Lee, J.-G. Park, L. Ba-lents, and D. Hsieh, Giant modulation of optical nonlinearity by Floquet engineering, Nature 600 ,235–239 (2021). [39] N. Bielinski, R. Chari, J. May-Mann, S. Kim, J. Zwettler, Y. Deng, A. Aishwarya, S. Roychowd-hury, C. Shekhar, M. Hashimoto, D. Lu, J. Yan, C. Felser, V. Madhavan, Z.-X. Shen, T. L. Hughes, and F. Mahmood, Floquet–Bloch manipulation of the Dirac gap in a topological antiferromagnet, Na-ture Physics 21 , 458 (2025). [40] J. W. McIver, B. Schulte, F.-U. Stein, T. Mat-suyama, G. Jotzu, G. Meier, and A. Cavalleri, Light-induced anomalous Hall effect in graphene, Nature Physics 16 , 38 (2020). [41] M. Merboldt, M. Sch¨ uler, D. Schmitt, J. P. Bange, W. Bennecke, K. Gadge, K. Pierz, H. W. Schu-macher, D. Momeni, D. Steil, S. R. Manmana, M. A. Sentef, M. Reutzel, and S. Mathias, Observa-tion of Floquet states in graphene, Nature Physics 
+
+21 , 1093 (2025). [42] D. Choi, M. Mogi, U. De Giovannini, D. Azoury, B. Lv, Y. Su, H. H¨ ubener, A. Rubio, and N. Gedik, Observation of Floquet–Bloch states in monolayer graphene, Nature Physics 21 , 1100 (2025). [43] F. Wang, W. Chen, C. Bao, T. Lin, H. Zhong, H. Zhang, and S. Zhou, Light-Field Dressing of Transient Photoexcited States above the Fermi En-ergy, Phys. Rev. Lett. 134 , 146401 (2025). [44] X. Kong, B. Zhang, W.-j. Gong, and L. Li, Tun-able light-induced topological edge states in strain engineering of bismuthene monolayers, J. Mater. Chem. C 12 , 13325 (2024). [45] S. Fragkos, B. Fabre, O. Tkach, S. Petit, D. Descamps, G. Sch¨ onhense, Y. Mairesse, M. Sch¨ uler, and S. Beaulieu, Floquet-Bloch val-leytronics, Nature Communications 16 (2025). [46] X. Kong, W. Luo, L. Li, M. Yoon, T. Berlijn, and L. Liang, Floquet band engineering and topological phase transitions in 1T ′ transition metal dichalco-genides, 2D Materials 9, 025005 (2022). [47] X. Kong, L. Li, L. Liang, F. M. Peeters, and X.-J. Liu, The magnetic, electronic, and light-induced topological properties in two-dimensional hexagonal FeX 2 (X=Cl, Br, I) monolayers, Applied Physics Letters 116 , 192404 (2020). [48] F. Zhan, J. Zeng, Z. Chen, X. Jin, J. Fan, T. Chen, and R. Wang, Floquet Engineering of Nonequilib-rium Valley-Polarized Quantum Anomalous Hall Effect with Tunable Chern Number, Nano Letters 
+
+23 , 2166 (2023). [49] X. Feng, Y. Bai, Z. Chen, Y. Dai, B. Huang, and C. Niu, Engineering Quantum Anomalous Hall Effect with a High Chern Number in Non-magnetic Second-Order Topological Insulator, Ad-vanced Functional Materials 35 , 2501934 (2025). [50] X. Zou, X. Feng, Y. Dai, B. Huang, and C. Niu, Floquet Quantum Anomalous Hall Effect with In-Plane Magnetization in Two-Dimensional Alter-magnets, ACS Nano 19 , 35575 (2025). [51] R. Li, X. Zou, Z. Chen, X. Feng, B. Huang, Y. Dai, and C. Niu, Floquet engineering of the orbital Hall effect and valleytronics in two-dimensional topo-logical magnets, Mater. Horiz. 11 , 3819 (2024). [52] Z. Ning, D.-S. Ma, J. Zeng, D.-H. Xu, and R. Wang, Flexible Control of Chiral Superconduc-tivity in Optically Driven Nodal Point Supercon-ductors with Antiferromagnetism, Phys. Rev. Lett. 
+
+133 , 246606 (2024). [53] B. A. Bernevig, T. L. Hughes, and S.-C. Zhang, Orbitronics: The Intrinsic Orbital Current in p-Doped Silicon, Phys. Rev. Lett. 95 , 066601 (2005). [54] D. Go, D. Jo, H.-W. Lee, M. Kl¨ aui, and Y. Mokrousov, Orbitronics: Orbital currents in solids, Europhysics Letters 135 , 37001 (2021). [55] D. Go, D. Jo, C. Kim, and H.-W. Lee, Intrinsic Spin and Orbital Hall Effects from Orbital Texture, Phys. Rev. Lett. 121 , 086602 (2018). [56] D. Jo, D. Go, and H.-W. Lee, Gigantic intrinsic or-bital Hall effects in weakly spin-orbit coupled met-als, Phys. Rev. B 98 , 214405 (2018). [57] Y.-G. Choi, D. Jo, K.-H. Ko, D. Go, K.-H. Kim, H. G. Park, C. Kim, B.-C. Min, G.-M. Choi, and H.-W. Lee, Observation of the orbital Hall effect in a light metal Ti, Nature 619 , 52 (2023). [58] I. Lyalin, S. Alikhah, M. Berritta, P. M. Oppeneer, and R. K. Kawakami, Magneto-Optical Detection of the Orbital Hall Effect in Chromium, Phys. Rev. Lett. 131 , 156702 (2023). [59] G. Sala, H. Wang, W. Legrand, and P. Gam-bardella, Orbital Hanle Magnetoresistance in a 3 d
+
+Transition Metal, Phys. Rev. Lett. 131 , 156703 (2023). [60] S. Ding, A. Ross, D. Go, L. Baldrati, Z. Ren, F. Freimuth, S. Becker, F. Kammerbauer, J. Yang, G. Jakob, Y. Mokrousov, and M. Kl¨ aui, Harnessing Orbital-to-Spin Conversion of Interfacial Orbital Currents for Efficient Spin-Orbit Torques, Phys. Rev. Lett. 125 , 177201 (2020). [61] G. Sala and P. Gambardella, Giant orbital Hall effect and orbital-to-spin conversion in 3 d, 5 d, and 4f metallic heterostructures, Phys. Rev. Res. 4,033037 (2022). [62] H. Liu, J. H. Cullen, D. P. Arovas, and D. Cul-cer, Quantum Correction to the Orbital Hall Ef-fect, Phys. Rev. Lett. 134 , 036304 (2025). 8
+
+[63] H. Kontani, T. Tanaka, D. S. Hirashima, K. Ya-mada, and J. Inoue, Giant Intrinsic Spin and Or-bital Hall Effects in Sr 2M O4 (M = Ru, Rh, Mo), Phys. Rev. Lett. 100 , 096601 (2008). [64] A. Veneri, T. G. Rappoport, and A. Ferreira, Ex-trinsic Orbital Hall Effect: Orbital Skew Scatter-ing and Crossover between Diffusive and Intrinsic Orbital Transport, Phys. Rev. Lett. 134 , 136201 (2025). [65] S. Kumar and S. Kumar, Ultrafast THz probing of nonlocal orbital current in transverse multilayer metallic heterostructures, Nature Communications 
+
+14 (2023). [66] S. S. Mishra, J. Lourembam, D. J. X. Lin, and R. Singh, Active ballistic orbital transport in Ni/Pt heterostructure, Nature Communications 
+
+15 (2024). [67] S. Beaulieu, J. Schusser, S. Dong, M. Sch¨ uler, T. Pincelli, M. Dendzik, J. Maklar, A. Neef, H. Ebert, K. Hricovini, M. Wolf, J. Braun, L. Ret-tig, J. Min´ ar, and R. Ernstorfer, Revealing Hidden Orbital Pseudospin Texture with Time-Reversal Dichroism in Photoelectron Angular Distributions, Phys. Rev. Lett. 125 , 216404 (2020). [68] L. M. Canonico, T. P. Cysne, A. Molina-Sanchez, R. B. Muniz, and T. G. Rappoport, Orbital Hall insulating phase in transition metal dichalcogenide monolayers, Phys. Rev. B 101 , 161409 (2020). [69] F. Crasto de Lima, G. J. Ferreira, and R. H. Miwa, Orbital Pseudospin-Momentum Locking in Two-Dimensional Chiral Borophene, Nano Letters 19 ,6564 (2019). [70] Y. Chen, W. Ruan, M. Wu, S. Tang, H. Ryu, H.-Z. Tsai, R. L. Lee, S. Kahn, F. Liou, C. Jia, O. R. Albertini, H. Xiong, T. Jia, Z. Liu, J. A. Sobota, A. Y. Liu, J. E. Moore, Z.-X. Shen, S. G. Louie, S.-K. Mo, and M. F. Crommie, Strong correlations and orbital texture in single-layer 1T-TaSe 2, Na-ture Physics 16 , 218 (2020). [71] H. Liu and D. Culcer, Dominance of Extrinsic Scattering Mechanisms in the Orbital Hall Effect: Graphene, Transition Metal Dichalcogenides, and Topological Antiferromagnets, Phys. Rev. Lett. 
+
+132 , 186302 (2024). [72] J.-P. Hanke, F. Freimuth, A. K. Nandy, H. Zhang, S. Bl¨ ugel, and Y. Mokrousov, Role of Berry phase theory for describing orbital magnetism: From magnetic heterostructures to topological orbital ferromagnets, Phys. Rev. B 94 , 121114 (2016). [73] Y. Jiang, Z. Song, T. Zhu, Z. Fang, H. Weng, Z.-X. Liu, J. Yang, and C. Fang, Enumeration of Spin-Space Groups: Toward a Complete Description of Symmetries of Magnetic Orders, Phys. Rev. X 14 ,031039 (2024). [74] X. Chen, J. Ren, Y. Zhu, Y. Yu, A. Zhang, P. Liu, J. Li, Y. Liu, C. Li, and Q. Liu, Enumeration and Representation Theory of Spin Space Groups, Phys. Rev. X 14 , 031038 (2024). [75] Z. Xiao, J. Zhao, Y. Li, R. Shindou, and Z.-D. Song, Spin Space Groups: Full Classification and Applications, Phys. Rev. X 14 , 031037 (2024). [76] T. LaMountain, H. Bergeron, I. Balla, T. K. Stanev, M. C. Hersam, and N. P. Stern, Valley-selective optical Stark effect probed by Kerr rota-tion, Phys. Rev. B 97 , 045307 (2018). [77] E. J. Sie, J. W. McIver, Y.-H. Lee, L. Fu, J. Kong, and N. Gedik, Valley-selective optical Stark ef-fect in monolayer WS 2, Nature Materials 14 , 290 (2015). [78] E. J. Sie, C. H. Lui, Y.-H. Lee, L. Fu, J. Kong, and N. Gedik, Large, valley-exclusive Bloch-Siegert shift in monolayer WS 2, Science 355 , 1066 (2017). [79] U. De Giovannini, H. H¨ ubener, and A. Rubio, Monitoring Electron-Photon Dressing in WSe 2,Nano Letters 16 , 7993 (2016). [80] Z. Chen, R. Li, Y. Bai, N. Mao, M. Zeer, D. Go, Y. Dai, B. Huang, Y. Mokrousov, and C. Niu, Topology-Engineered Orbital Hall Effect in Two-Dimensional Ferromagnets, Nano Letters 24 , 4826 (2024). [81] S.-D. Guo, P. Li, and G. Wang, First-principles calculations study of valley polarization in anti-ferromagnetic bilayer systems, Phys. Rev. B 111 ,L140404 (2025). [82] C. Wu, H. Sun, P. Dong, Y.-Z. Wu, and P. Li, Coexisting Triferroic and Multiple Types of Val-ley Polarization by Structural Phase Transition in 2D Materials, Advanced Functional Materials 35 ,2501506 (2025). [83] T. Zhang, M. Wang, X. Xu, Y. Dai, and Y. Ma, Gate-controllable quadri-layertronics in a 2D mul-tiferroic antiferromagnet, Mater. Horiz. 12 , 6919 (2025). [84] See Supplemental Material at http://link.aps. org/supplemental/xxx , which includes refs.[36, 95, 107–121], for more details about TB model; first-principles calculation method; full crystal structures; full band structures; phase diagram of TB trilayer and VSi 2N4 trilayer under RCPL; phase diagram of VSi 2N4 bilayer under LCPL. [85] V. o. T. Phong, Z. Addison, S. Ahn, H. Min, R. Agarwal, and E. J. Mele, Optically Controlled Orbitronics on a Triangular Lattice, Phys. Rev. Lett. 123 , 236403 (2019). [86] Y. Shi and J. Zhou, Coherence control of direc-tional nonlinear photocurrent in spatially symmet-ric systems, Phys. Rev. B 104 , 155146 (2021). [87] R. Chen, C.-Z. Chen, J.-H. Gao, B. Zhou, and D.-H. Xu, Higher-Order Topological Insulators in Quasicrystals, Phys. Rev. Lett. 124 , 036803 (2020). [88] Y.-X. Li, Y. Liu, and C.-C. Liu, Creation and ma-nipulation of higher-order topological states by al-termagnets, Phys. Rev. B 109 , L201109 (2024). [89] Y.-B. Choi, Y. Xie, C.-Z. Chen, J. Park, S.-B. Song, J. Yoon, B. J. Kim, T. Taniguchi, K. Watan-abe, J. Kim, K. C. Fong, M. N. Ali, K. T. Law, and G.-H. Lee, Evidence of higher-order topology in multilayer WTe 2 from Josephson coupling through anisotropic hinge states, Nature Materials 19 , 974 (2020). [90] Y.-X. Li and C.-C. Liu, Majorana corner modes and tunable patterns in an altermagnet het-erostructure, Phys. Rev. B 108 , 205410 (2023). [91] K. F. Milfeld and R. E. Wyatt, Study, exten-sion, and application of Floquet theory for quan-tum molecular systems in an oscillating field, Phys. Rev. A 27 , 72 (1983). [92] A. G´ omez-Le´ on and G. Platero, Floquet-Bloch Theory and Topology in Periodically Driven Lat-tices, Phys. Rev. Lett. 110 , 200403 (2013). 9
+
+[93] S. Zhou, C. Bao, B. Fan, H. Zhou, Q. Gao, H. Zhong, T. Lin, H. Liu, P. Yu, P. Tang, S. Meng, W. Duan, and S. Zhou, Pseudospin-selective Flo-quet band engineering in black phosphorus, Nature 
+
+614 , 75 (2023). [94] L. Sun, Y. Du, and M. Zhao, Giant Berry curva-ture dipole in monolayer MoS 2 in a periodic electric field, Phys. Rev. B 111 , 155404 (2025). [95] Y.-L. Hong, Z. Liu, L. Wang, T. Zhou, W. Ma, C. Xu, S. Feng, L. Chen, M.-L. Chen, D.-M. Sun, X.-Q. Chen, H.-M. Cheng, and W. Ren, Chem-ical vapor deposition of layered two-dimensional MoSi 2N4 materials, Science 369 , 670 (2020). [96] L. Wang, Y. Shi, M. Liu, A. Zhang, Y.-L. Hong, R. Li, Q. Gao, M. Chen, W. Ren, H.-M. Cheng, Y. Li, and X.-Q. Chen, Intercalated architecture of MA 2Z4 family layered van der Waals materi-als with emerging topological, magnetic and super-conducting properties, Nature Communications 12 
+
+(2021). [97] K. Liu, X. Ma, Y. Li, and M. Zhao, Tailoring the quantum anomalous layer Hall effect in multifer-roic bilayers through sliding, npj Computational Materials 10 (2024). [98] W. Xun, C. Wu, H. Sun, W. Zhang, Y.-Z. Wu, and P. Li, Coexisting Magnetism, Ferro-electric, and Ferrovalley Multiferroic in Stacking-Dependent Two-Dimensional Materials, Nano Let-ters 24 , 3541 (2024). [99] T. Zhang, X. Xu, J. Guo, Y. Dai, and Y. Ma, Layer-Polarized Anomalous Hall Effects from Inversion-Symmetric Single-Layer Lattices, Nano Letters 24 , 1009 (2024). [100] T. Zhang, X. Xu, B. Huang, Y. Dai, L. Kou, and Y. Ma, Layer-polarized anomalous Hall effects in valleytronic van der Waals bilayers, Mater. Horiz. 
+
+10 , 483 (2023). [101] T. P. Cysne, M. Costa, L. M. Canonico, M. B. Nardelli, R. B. Muniz, and T. G. Rappoport, Dis-entangling Orbital and Valley Hall Effects in Bi-layers of Transition Metal Dichalcogenides, Phys. Rev. Lett. 126 , 056601 (2021). [102] H. Li, C.-Z. Chen, H. Jiang, and X. C. Xie, Coex-istence of Quantum Hall and Quantum Anomalous Hall Phases in Disordered MnBi 2Te 4, Phys. Rev. Lett. 127 , 236402 (2021). [103] K. Kechedzhi, V. I. Fal’ko, E. McCann, and B. L. Altshuler, Influence of Trigonal Warping on Inter-ference Effects in Bilayer Graphene, Phys. Rev. Lett. 98 , 176806 (2007). [104] P. Rakyta, A. Korm´ anyos, and J. Cserti, Trigonal warping and anisotropic band splitting in mono-layer graphene due to Rashba spin-orbit coupling, Phys. Rev. B 82 , 113405 (2010). [105] J. Zeng, Y. Ren, K. Zhang, and Z. Qiao, Topolog-ical phase transition from trigonal warping in van der Waals multilayers, Phys. Rev. B 95 , 045424 (2017). [106] Y.-L. Wu, G.-H. Zhu, and X.-Q. Yu, Nonlinear anomalous Nernst effect in strained graphene in-duced by trigonal warping, Phys. Rev. B 104 ,195427 (2021). [107] G. Kresse and J. Furthm¨ uller, Efficient iterative schemes for ab initio total-energy calculations us-ing a plane-wave basis set, Phys. Rev. B 54 , 11169 (1996). [108] G. Kresse and J. Furthm¨ uller, Efficiency of ab-initio total energy calculations for metals and semi-conductors using a plane-wave basis set, Compu-tational Materials Science 6, 15 (1996). [109] J. P. Perdew, K. Burke, and M. Ernzerhof, Gen-eralized Gradient Approximation Made Simple, Phys. Rev. Lett. 77 , 3865 (1996). [110] J. P. Perdew, A. Ruzsinszky, G. I. Csonka, O. A. Vydrov, G. E. Scuseria, L. A. Constantin, X. Zhou, and K. Burke, Restoring the Density-Gradient Ex-pansion for Exchange in Solids and Surfaces, Phys. Rev. Lett. 100 , 136406 (2008). [111] P. E. Bl¨ ochl, Projector augmented-wave method, Phys. Rev. B 50 , 17953 (1994). [112] G. Kresse and D. Joubert, From ultrasoft pseu-dopotentials to the projector augmented-wave method, Phys. Rev. B 59 , 1758 (1999). [113] H. J. Monkhorst and J. D. Pack, Special points for Brillouin-zone integrations, Phys. Rev. B 13 , 5188 (1976). [114] F. Aryasetiawan, K. Karlsson, O. Jepsen, and U. Sch¨ onberger, Calculations of Hubbard U from first-principles, Phys. Rev. B 74 , 125106 (2006). [115] S. Grimme, J. Antony, S. Ehrlich, and H. Krieg, A consistent and accurate ab initio parametrization of density functional dispersion correction (DFT-D) for the 94 elements H-Pu, The Journal of Chem-ical Physics 132 , 154104 (2010). [116] V. Wang, N. Xu, J.-C. Liu, G. Tang, and W.-T. Geng, VASPKIT: A user-friendly interface fa-cilitating high-throughput computing and analysis using VASP code, Computer Physics Communica-tions 267 , 108033 (2021). [117] A. A. Mostofi, J. R. Yates, Y.-S. Lee, I. Souza, D. Vanderbilt, and N. Marzari, wannier90: A tool for obtaining maximally-localised Wannier func-tions, Computer Physics Communications 178 ,685 (2008). [118] Q. Wu, S. Zhang, H.-F. Song, M. Troyer, and A. A. Soluyanov, WannierTools: An open-source soft-ware package for novel topological materials, Com-puter Physics Communications 224 , 405 (2018). [119] G. Henkelman, B. P. Uberuaga, and H. J´ onsson, A climbing image nudged elastic band method for finding saddle points and minimum energy paths, The Journal of Chemical Physics 113 , 9901 (2000). [120] L. Wang, Y. Shi, M. Liu, A. Zhang, Y.-L. Hong, R. Li, G. Qiang, M. Chen, W. Ren, H.-M. Cheng, Y. Li, and C. Xing-Qiu, Intercalated architecture of MA2Z4 family layered van der Waals materials with emerging topological, magnetic and supercon-ducting properties, Nat Commun 12 , 2361 (2021). [121] P. Li, X. Yang, Q.-S. Jiang, Y.-Z. Wu, and W. Xun, Built-in electric field and strain tunable valley-related multiple topological phase transitions in VSi XN4(X = C , Si , Ge , Sn , Pb) monolayers, Phys. Rev. Mater. 7, 064002 (2023).

@@ -1,0 +1,38 @@
+{
+  "version": 2,
+  "extractor": "pdffigures2",
+  "figures": [
+    {
+      "url": "assets/figures/arxiv/2603.12309v1/fig-001.webp",
+      "caption": "FIG. 1. Ground-state phases of the doped extended-Hubbard model at U/t = 8. (a) Phase diagram versus nearestneighbor repulsion V/U and hole doping δ up to δ ∼ 1/4. Crosses indicate parameter points where AFQMC calculations were performed. Representative spin and charge configurations are shown in (b)–(d). For V/U ≲ 0.25, the ground state exhibits conventional AFM spin stripes (b), similar to the t–U Hubbard model. For V/U ≳ 0.25, the system develops a modulated ferrimagnetic order intertwined with a checkerboard CDW. In the spin-balanced sector (N↑ = N↓), positive–near-zero and negative–near-zero domains alternate in space (c); when spin polarization is unconstrained, the system selects a uniform positive–near-zero (or negative–near-zero) pattern with finite magnetization (d). The dashed orange curve in (a) indicates the critical doping at V = 0 below which stripe order vanishes in the thermodynamic limit [30].",
+      "page": 2,
+      "index": 1,
+      "width": 1027,
+      "height": 208
+    },
+    {
+      "url": "assets/figures/arxiv/2603.12309v1/fig-002.webp",
+      "caption": "FIG. 2. Schematic illustration of the self-consistent CP AFQMC approach, and benchmark against DMRG. The top panel is a diagram of the self-consistent AFQMC procedure, in which an effective HF trial wave function is used as the constraint. The middle and bottom panels show the computed spin and charge densities, with four colors for the first four iterations of AFQMC and the solid line for DMRG. The calculation is at U = 8, V/U = 0.4, and δ = 1/4, on a 16×4 rectangular lattice. In the middle panel, the convention for site label i (horizontal axis) is depicted in the inset, and the pink and blue shaded regions highlight domains of alternating spin polarization. In the bottom panel, the purple shading indicates the nodes of the spin modulation from the middle panel; enhanced charge density is observed at these locations. Sites are indexed by (ix, iy) → iy + Ly (ix − 1).",
+      "page": 3,
+      "index": 2,
+      "width": 514,
+      "height": 387
+    },
+    {
+      "url": "assets/figures/arxiv/2603.12309v1/fig-003.webp",
+      "caption": "FIG. 3. Characterization of the magnetic and charge properties in the different phases. The left, middle, and right panels correspond to the three phases shown in Fig. 1b, Fig. 1c, and Fig. 1d, respectively, following the same color schemes. The top two rows show spin and hole density line cuts, with the shades of color in the different curves in each indicating different values of V/U . In the botton panel, the spin and charge structure factors are plotted in momentumspace for the three phases, each at a selected value of V/U (shown in the legends in the spin plots). All simulations are performed on a 24× 8 lattice with U = 8.",
+      "page": 4,
+      "index": 3,
+      "width": 514,
+      "height": 335
+    },
+    {
+      "url": "assets/figures/arxiv/2603.12309v1/fig-004.webp",
+      "caption": "FIG. 4. Effect of next-nearest-neighbor hopping t′ on spin and charge order. Spin and charge density profiles are shown for two values of V/U (0.1 in the lower half and 0.3 in the upper half), for three values of next-near-neighbor hopping t′/t, representing t′ = 0 as studied above and hole- and electron-doped cases, respectively. Partially filled stripes appear in the hole-doped case, while overfilled stripes are seen under electron doping when t′ = −0.2. The transition from pure spin stripes to the coexistence of charge density waves (CDW) and alternating polarized spin stripes occurs near V/U ∼ 0.25, independent of the sign of doping or the value of t′. All calculations are performed at doping δ = 1/6 and U/t = 8.",
+      "page": 5,
+      "index": 4,
+      "width": 1027,
+      "height": 369
+    }
+  ]
+}

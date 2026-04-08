@@ -1,0 +1,280 @@
+Title: Collective Spin Excitations in Correlated Moir\'e Chern Ferromagnets
+
+URL Source: https://arxiv.org/pdf/2603.20370v1
+
+Published Time: Tue, 24 Mar 2026 00:10:50 GMT
+
+Number of Pages: 7
+
+Markdown Content:
+# Collective Spin Excitations in Correlated Moir´ e Chern Ferromagnets 
+
+Ming Xie 1, 2 and Sankar Das Sarma 1
+
+> 1
+
+Condensed Matter Theory Center, Department of Physics, University of Maryland, College Park, Maryland 20742, USA 
+
+> 2
+
+Department of Physics, The University of Texas at Dallas, Richardson, TX 75080, USA 
+
+(Dated: March 24, 2026) Moir´ e-induced narrow electronic bands in transition metal dichalcogenide superlattices support many correlated quantum phases characterized by novel charge, flavor, and topological orders. Among these, magnetic ordering emerges as the most ubiquitous, often serving as the parent state for other correlated phases, including quantum anomalous Hall states, as well as chiral supercon-ducting state. Because of electron-electron correlation, the stability of magnetic order is critically influenced by low-energy collective spin fluctuations, or magnon excitations. We investigate the nature of magnon excitations and their impact on the stability and transition temperature of the magnetic state at integer filling factor ν = −1. We find that the magnon spectrum exhibits isolated low-energy bands whose topological character undergoes a transition upon tuning the interlayer displacement field. The magnon gap is found to depend sensitively on the topology of the magnetic ground state, resulting in an order-of-magnitude enhancement of the transition temperature Tc in the quantum anomalous Hall phase compared to the topologically trivial correlated insulator. Our findings provide insight into the interplay between electron and magnon topology and suggest new routes for controlling magnetism and topology via moir´ e engineering. 
+
+Introduction —Twisted bilayer transition metal dichalcogenide (TMD) superlattices host narrow moir´ ebands with strong electronic correlations, giving rise to a diverse array of emergent quantum phenomena, including correlated insulating states, integer and fractional quantum anomalous Hall effects, and chiral superconductivity [1–34]. Many of these quantum phases exhibit hysteretic behavior under magnetic field sweeps and nonzero Hall resistivity at zero magnetic field as a consequence of spontaneous spin ordering [13–28, 30, 33]. The magnetic behavior persists to temperatures higher than the transition temperature of these quantum phenomena, suggesting that magnetic ordering underlies these phases and is the energetically stable parental state from which they emerge. The stability of magnetic order is therefore critical to the existence of these emergent phases, whose transition temperatures are ultimately bounded from above by that of the magnetic transition. The stability of magnetic order in two-dimensional sys-tems is strongly influenced by low-energy collective spin fluctuations. In particular, gapless magnon modes can inhibit the formation of true long-range order, allowing only quasi-long-range orders in systems with easy-plane anisotropy. By contrast, when magnon excitations are gapped, such as in systems with easy-axis anisotropy, long-range magnetic order persists at finite temperatures. In moir´ e superlattices formed from TMD layers, the com-bination of spin–valley locking and anisotropy in the valley degree of freedom gives rise to a range of mag-netic ground states, including out-of-plane ferromagnetic phases (or valley-polarized states) and in-plane antiferro-magnetic (or intervalley coherent) phases. While mean-field theory has been instrumental in predicting candi-date magnetic ground states, it fails to accurately de-scribe systems where spin fluctuations beyond the mean-field approximation are significant. This is particularly true in two-dimensional TMD moir´ e systems where spin fluctuations are strongly enhanced due to the lack of in-trinsic strong valley anisotropy. It is therefore crucial to understand the nature of the spin fluctuations beyond mean field and their impact on magnetic ordering. In this work, we report on a study of the collective spin excitations, or magnons, in twisted TMD homobilayers, focusing at one hole per moir´ e unit cell, corresponding to filling factor ν = −1. We use time-dependent Hartree-Fock calculations performed in both the full continuum model basis and projected moir´ e band basis to accurately assess the nature of the magnon excitations around the mean-field ground states. We find that the magnon spec-trum features two low-energy bands isolated from the continuum of the spin-flip excitations. Upon varying the interlayer displacement field, the two magnon bands undergo a gap closing topological transition while the ground state remain in the QAH phase. The magnon gap drops drastically at the ground state phase tran-sition from the QAH insulator to the trivial correlated FM insulator. We calculate the Curie temperature by incorporating the effect of magnon thermal fluctuations and find an order of magnitude decrease in the transition temperature across the QAHE transition. 
+
+Mean-field ground states —We first employ self-consistent Hartree-Fock calculations to obtain the mean-field ground states of twisted TMD homobilayers, using twisted MoTe 2 as a representative example. Our anal-ysis focuses on filling factor ν = −1, where magnetism is most prominent and mean-field theory is more reliable than at partial filling factors. The non-interacting elec-tronic structure can be effectively captured by the moir´ econtinuum Hamiltonian H0, which is constructed from 
+
+> arXiv:2603.20370v1 [cond-mat.str-el] 20 Mar 2026
+
+2∞ ∑ m ∑0 ∞        
+
+> °60
+> °40
+> °20
+> 0
+> 20
+> 40
+> 60
+> 80
+> Energy (meV)
+> +K, "°K, #
+> t
+> b
+> 010 20 30
+> D(meV)
+> 0
+> 10
+> 20
+> 30
+> MF gap (meV)  Eg¢spin
+
+FIG. 1. (a) Band structure of the FM ground state at twist angle θ = 3 .5◦ and zero interlayer displacement field obtained from the full self-consistent mean-field calculation. Solid (dashed) lines represet + K(−K) valley and color indi-cates the wavefunction weight on the top (t) and bottom (b) layers. (b) Global charge gap ( Eg) and spin gap (∆ spin ) of the mean-field ground state as a function of displacement field. The orange and blue shading indicate regions with QAH and trivial FM insulating ground states, respectively, and the gray shading suggests the region where FM is unstable towards an IVC ground state. (c) Schematic diagram of spin-flip excita-tions from occupied spin down (-K) bands to the empty spin up (+K) bands. 
+
+the low-energy k · p model for the highest valence bands near the + K and −K valleys of the isolated monolayers [35]. The non-interacting Hamiltonian takes the form 
+
+Hs 
+
+> 0
+
+=
+
+H0 
+
+> t
+
+(k)+ Vt(r)+ D/ 2 Ts(r)
+
+T † 
+
+> s
+
+(r) H0 
+
+> b
+
+(k)+ Vb(r)−D/ 2
+
+
+
+, (1) ∆t(b)(r) = 2 V X
+
+> i=1 ,3,5
+
+cos( gi · r ∓ ϕ), (2) 
+
+Ts(r) = t(1 + ωseig2·r + ω2seig3·r ), (3) where s = ±1 for spin ↑/↓, which is locked with the valley index {+K, −K} due to spin-orbit interaction. 
+
+H0
+
+> t(b)
+
+(k) = −ℏ2(k − κ(κ′)) 2/2m∗ is the effective Hamil-tonian for the top (bottom) layer with effective mass m∗,and D is the displacement field between the two lay-ers. V and ϕ are the amplitude and phase of the in-tralayer moir´ e potential Vl. g1 = 4 π/ √3aM (1 , 0) and 
+
+gi = ( ˆRπ/ 3)i−1g1 are moir´ e reciprocal lattice vectors where ˆRπ/ 3 is counter-clockwise rotation around z axis by π/ 3. Ts(r) is the interlayer tunneling term for spin 
+
+s electrons with tunneling strength t and phase factor 
+
+ω = ei2π/ 3. The electron-electron interaction takes the form V (q) = 2 πe 2/(ϵq ) tanh( qd ) corresponding to the dual-gate screened Coulomb interaction. We perform self-consistent Hartree-Fock calculations in both the con-tinuum basis, with a large momentum-space cutoff, and the band-projected basis, where the number of included bands is treated as a tunable parameter. The details of °º 0 º        
+
+> QxaM
+> °º
+> 0
+> º
+> Qy aM
+> 3.0
+> 3.2
+> 3.4
+> 3.6
+> E(Q) (meV)
+> 210 20
+> Nv
+> 2
+> 4
+> 6
+> 8
+> E(Q) (meV)  Q=∑
+> Q=∞
+> Q=m
+
+m ∑ ∞ ∑0 m ∞
+
+> 0
+> 5
+> 10
+> 15
+> 20
+> 25
+> 30
+> 35
+> Energy (meV)
+
+FIG. 2. (a) Magnon bandstructure in the FM state at 
+
+D = 0. The black dashed line marks the minimum energy of the spin-flip inter-band continuum. (b) Color plot of the lowest magnon band energy with band maximum (minimum) at the γ (m). (c) Convergence of the magnon energy at high symmetry momentum, κ, γ, m as a function of the number of filled spin-down bands, Nv , in the TDHF calculation (as illustrated in Fig. 1(c)). 
+
+the calculation is presented in the Supplemental Material (SM) [37]. At filling factor ν = 1, our self-consistent mean-field calculation reveals a strong tendency toward spontaneous spin-valley ordering, leads to various insulating ground states. At D = 0, the ground state is a ferromagnetic (i.e. spin-valley polarized) quantum anomalous Hall insulator (QAHI) with Chern number C = ±1, corresponding to spin up or spin down polarization. Figure 1(a) plots the mean-field band structure at D = 0 for the case of a spin-up polarization. As D increases, the ground state undergoes a topological transition from the QAHI phase to a trivial FM insulator state with C = 0. Figure 1(b) shows the ground state phase diagram as a function of displacement field at twist angle θ = 3 .5◦, where the blue (red) line plots the charge (spin) gap, which is the energy gap for an independent charge (spin-flip) excitation. The phase diagram also exhibits a region at large displace-ment field where the FM phase becomes unstable toward an intervalley coherent order. This instability is signaled in our calculation by the magnon energy becoming neg-ative, as discussed in detail below, and is consistent with the onset of an intervalley coherent phase obtained in mean-field calculations including the intervalley channel [38–47]. Here, we focus on the FM phases that are most relevant experimentally for homobilayers at small to in-termediate twist angles. 
+
+Collective spin excitations —Spin fluctuations around the FM ground state consist of spin-flip excitations from the filled spin-down bands to the topmost empty spin-up band, as illustrated in Fig. 1(c). These excitations are coupled via the Coulomb interaction, giving rise to col-30 5 10 15 20                           
+
+> D(meV)
+> 0
+> 5
+> 10
+> 15
+> 20
+> E(Q = ∑) (meV)
+> m∑∞∑0m
+> 0
+> 10
+> 20
+> Energy (meV)
+> m∑∞∑0m
+> 0
+> 10
+> 20
+> Energy (meV)
+> m∑∞∑0m
+> 0.0
+> 0.5
+> 1.0
+> Energy (meV)
+> m∑∞∑0m
+> 0
+> 10
+> 20
+> Energy (meV)
+> FIG. 3. Isolated low-energy magnon bands at representative displacement fields across the topological transition: (a) D=7.0 meV, (b) D= 10 .5 meV, (c) D= 12 .0 meV, and (d)
+> D= 20 .0 meV. (e) Displacement-field dependence of the two lowest magnon energies at κ, where the magnon band gap closes. The vertical dashed lines mark the displacement fields corresponding to panels (a)–(c).
+
+lective eigenmodes of spin fluctuations, i.e., magnons. We adopt the time-dependent Hartree-Fock (TDHF) method to calculate the magnon spectrum on top of the mean-field ground state[48]. It involves solving the equation of motion of the spin-flip excitation operator, ˆ c† 
+
+> 1,↑,k′
+
+ˆcn, ↓,k,in momentum and energy representation. Here ˆ c†
+
+> 1,↑,k′
+
+is the creation operator for the empty topmost spin-up band, and ˆ cn, ↓,k is the annihilation operator for the filled spin-down bands with n = 1 , ..., N v labeling the band index. By defining the spin-flip excitation basis |n, k, Q⟩ =ˆc† 
+
+> 1,↑,k+Q
+
+ˆcn, ↓,k|ΩF M ⟩, the TDHF equation can be con-verted into an eigenvalue problem: 
+
+AX = ωX (4) where Ann ′ 
+
+> k,k′;Q
+
+= −⟨ n, ↓, k; 1 , ↑, k′ + Q|V |n′, ↓, k′; 1 , ↑, k +
+
+Q⟩ is Coulomb matrix elements in the exchange channel and Xn, k,Q is a vector in the |n, k, Q⟩ basis. We set ℏ = 1 throughout this work. Q is the center-of-mass mass mo-mentum and different momentum sectors do not couple with each other due to momentum conservation, so A
+
+is diagonal in Q. (See more details in the SM[37]) Di-agonalizing the eigenvalue problem leads to the magnon eigenstate 
+
+|Ψm, Q⟩ = X
+
+> n, k
+
+Zmn, k,Q|n, k, Q⟩ (5) with energy ωm, Q , where Zmn, k,Q is the complex coeffi-cient and m = 1 , 2, . . . , N kNv the magnon band index. 
+
+Nk is the number of momentum points in moir´ e Brillouin zone (mBZ) and Nv is the number of spin down bands included in the calculation. The magnon band structure at D = 0 features two iso-lated low-energy bands that emerge as collective modes of Coulomb-coupled spin-flip excitations, as shown in Fig. 2(a). The two magnon bands lie well below the interband spin-flip excitation continuum, marked by the black dashed line. Fig. 2(b) plots the colormap of the en-ergy dispersion of the lowest magnon band over the mBZ, where the magnon gap, defined as the minimum magnon energy, ∆ mag = 2 .3 meV, is located at finite momentum 
+
+Q = m. The two magnon bands carry Chern numbers 
+
+C = ±1, with the signs reversed for the opposite valley-polarized ferromagnetic state [50, 51]. Our numerical results reveal that the convergence of the magnon energy depends on the number of filled spin-down bands Nv in-cluded in the calculation. Fig. 2 (c) shows the magnon energy at high-symmetry momentum as a function of Nv
+
+for the un-projected calculation (see SM [37] for results from the band-projected case), which shows that at least 
+
+Nv ≥ 4 is required to reach near convergence. 
+
+Field-induced topological transition —The presence of two isolated low-energy magnon bands at D = 0 is not accidental, but hints at a nontrivial internal structure of the magnon excitation. To understand this, we exam-ine the evolution of the magnon spectrum with displace-ment field. Figure 3(a)–(d) shows the low-energy magnon bands at displacement fields D = 7 .0 meV, 10 .5 meV, 12 .0 meV, and 20 .0 meV, respectively. As D increases, the gap between the two magnon bands decreases and closes at D∗ = 10 .5 meV, where the bands undergo a topological quantum phase transition. The Chern num-ber of the lowest magnon band changes from C = 1 to 
+
+C = 0. The gap closing occurs at Q = κ (κ′) for posi-tive (negative) displacement field. Notably, this magnon topological transition does not coincide with the ground-state topological transition, which occurs at a higher dis-placement field. Instead, it takes place within the QAHI phase, where the ground-state Chern number remains unchanged, as shown in Fig. 3(e). At the QAHI–trivial insulator transition, the magnon bands remain topolog-ically trivial. As D increases beyond the transition, the second magnon band shifts to higher energy and merges into the interband spin-flip continuum, leaving only a single low-energy magnon band. For spins localized on a lattice, magnons correspond to collective precession of spins around the ordered moment direction. In TMD moir´ e homobilayers, the low-energy electron bands can be mapped onto an effective Kane-Mele model on a honeycomb lattice. While a ferromag-net on a honeycomb spin lattice supports two magnon bands, it consists of two localized spins per unit cell, i.e., filling factor ν = 2. However, for filling factor ν = 1 con-sidered here, having two magnon bands implies that the magnetization within each moir´ e unit cell cannot be de-40 5 10 15 20 25 30              
+
+> D(meV)
+> 0
+> 1
+> 2
+> ¢mag  (meV)
+> Magnon Energy
+> Momentum Q020 40
+> T(K)
+> 10 °2
+> 10 °1
+> 10 0
+> M (T )/M 0
+> 024
+> T(K)
+> 10 °2
+> 10 °1
+> 10 0
+> M (T )/M 0
+> m∑∞∑0m
+> °0.05
+> 0.00
+> 0.05
+> Energy (meV)
+
+FIG. 4. (a) Magnon gap (∆ mag ) as a function of displace-ment field across different FM phases indicated by the shaded color. At D > 27 .2 meV, an instability develops toward an intervalley coherent density wave order (gray shaded region). (b) The lowest magnon band at D = 28 meV showing the instability at finite momentum Q = κ. (c) Schematic il-lustration of magnon thermal population at finite tempera-ture. Temperature dependence of the magnetization in (d) the QAH phase and (e) trivial insulator phase. 
+
+scribed by a single average spin. Instead, the two magnon branches emerge as different excitation modes with or-thogonal internal spin textures within each unit cell. At 
+
+D = 0, the electron density in each moir´ e unit cell is equally distributed between top and bottom layers, with maxima localized near the MX and XM high-symmetry sites. The two magnon bands correspond to collective precession of the partial spin magnetizations on the two layers, either in phase (symmetric mode) or out of phase (antisymmetric mode). As D increases, the electrons be-come polarized in one layer, and the system approaches a triangular spin lattice configuration supporting only a single, topologically trivial magnon band. 
+
+Magnon gap and transition temperature —The pres-ence of a finite magnon gap is essential for stabilizing long-range magnetic order at finite temperature in two-dimensional systems, where proliferation of thermal exci-tations of gapless magnon modes would otherwise desta-bilize the ordered phase. The magnon gap arises as a consequence of magnetic anisotropy. In monolayer TMDs, the spin-valley locked low-energy states |+K, ↑⟩ 
+
+and |− K, ↓⟩ define a pseudospin doublet within an ap-proximate SU(2) symmetry under simultaneous rotation of spin and valley. Magnetic anisotropy is therefore al-most absent, and indeed long-range magnetic order is not observed in pristine monolayers. For TMD moir´ e su-perlattices, the interlayer coupling Ts(r) explicitly breaks this symmetry, enabling the emergence of a finite magnon gap. In the ferromagnetic phase, the magnon gap depends on the interlayer displacement field D, as shown in Fig. 4(a), which controls the layer polarization and interaction-induced interlayer coherence. Overall, the magnon gap decreases as D increases, reflecting the sup-pressed effect of the symmetry-breaking interlayer hy-bridization. Most notably, the magnon gap drops dras-tically across the transition from the QAHI to the triv-ial ferromagnetic phase, decreasing by nearly an order of magnitude—from ∼ 1–2 meV in the QAHI phase to ∼ 0.2meV in the trivial phase. This suggests a qualitative dif-ference in the stability of magnetic order due to the dif-ference in the ground state topology. It is consistent with the microscopic picture that the nontrivial band topol-ogy originates from the interlayer hybridization which in turn gives rise to the magnetic anisotropy. In the triv-ial phase, the interlayer hybridization is suppressed due to the strong layer polarization, thereby suppressing the magnetic anisotropy. As D varies, the magnon minimum shifts in momen-tum space, so a low-energy expansion in terms of a gap and spin stiffness around the minimum depends sensi-tively on its location. Both quantities admit a geometric interpretation in terms of the underlying electron bands [52–56]. Here, we remark that the relevance of such an expansion is determined in the first place by the overall magnon band structure, which is itself sensitive to mi-croscopic details. This is particularly evident across the topological transition, beyond which the lowest magnon band becomes very flat in the trivial FM phase, with a bandwidth below 0 .5 meV. Upon further increasing D, the magnon gap becomes negative near D = 28 meV, signaling an instability of the ferromagnetic phase. As shown in Fig. 4(b), the softening occurs at finite momentum Q = κ, suggesting a transition to a translational symmetry-breaking spin-density wave, likely an intervalley coherent (IVC) state, as typically found in Hartree-Fock calculations at large displacement field. At finite temperature, thermal occupation of magnon bands reduces the spin magnetization, as schematically illustrated in Fig. 4(c). Since each magnon corresponds to a reduction by one μB per moir´ e unit cell relative to the ferromagnetic ground state, the spin magnetization 
+
+M (T ) at finite temperature is given by 
+
+M (T )
+
+M0
+
+= 1 − 1
+
+NQ
+
+X
+
+> m, Q
+
+nB (Em, Q, T ) (6) where nB (Em, Q, T ) is the Bose–Einstein distribution for magnons with energy Em, Q and m the magnon band in-dex. M0 = μB /A moir´ e is the zero-temperature spin mag-netization where μB is the Bohr magneton and Amoir´ e is the moir´ e unit cell area. NQ is the number of magnon momentum which equals to Nk. Figure 4(c) and (d) shows the temperature dependence of the magnetization for states in the QAHI phase ( D = 0 meV) and trivial phase ( D = 20 meV), respectively. The FM Curie tem-perature Tc can be determined by the temperature at 5which the magnetization approaches zero, M (TC ) = 0. In the QAHI phase [Fig. 4(c)], we find Tc = 37 K. By contrast, in the trivial phase [Fig. 4(d)], the Curie tem-perature drops to Tc = 2 K, more than an order of mag-nitude smaller. Experimentally, the Curie temperature measured in the D = 0 meV QAHI phase is approxi-mately 14 K, whereas clear signatures of ferromagnetic ordering in the trivial phase remain elusive. This ob-servation is consistent with our finding of a significantly suppressed Tc in the trivial regime. We note that our approach for obtaining Tc ignores magnon-magnon inter-actions, which renormalize the magnon band energy and can lead to an overestimation of the transition tempera-ture. 
+
+Discussions —We have investigated the nature of col-lective spin excitations and their influence on the stabil-ity of ferromagnetic order in twisted TMD homobilayers at filling factor ν = −1. In the QAHI phase, the non-trivial topology of the ground state endows the magnon excitations with a topological character that undergoes a transition as the interlayer displacement field is varied. The two isolated low-energy magnon bands observed in this regime cannot be described by conventional spin-lattice models and therefore do not correspond to simple spin precession modes. Instead, they reflect a nontriv-ial internal spin texture distributed between two high-symmetry sites within the moir´ e unit cell. In contrast, the trivial ferromagnetic phase hosts a single low-energy magnon band consistent with spin precession on a trian-gular lattice. Most notably, the magnon gap exhibits a pronounced suppression across the QAHI-to-trivial insu-lator transition. This behavior is attributed to the mag-netic anisotropy originating from spin-dependent inter-layer hybridization and is continuously tunable by the displacement field. The ferromagnetic Curie tempera-ture is significantly enhanced in the QAHI phase due to the combined effects of interlayer hybridization and interaction-induced interlayer coherence. In the trivial ferromagnetic phase, the Curie temperature is more than one order of magnitude smaller, in agreement with the absence of observed trivial ferromagnetism in twisted MoTe 2 at large displacement fields, which has hitherto remained unexplained. Our findings highlight the potential of twisted TMD moir´ e homobilayers as a versatile platform for exploring tunable magnetism in two dimensions. Recent experi-mental progress on propagating neutral modes and opti-cal control or switching of magnetism in TMD moir´ e sys-tems further underscores the importance of understand-ing collective magnetic excitations in these materials [57– 60]. More broadly, the ability to control the magnetic anisotropy and Curie temperature through an external electric field suggests a promising route for engineering high-temperature two-dimensional magnets, even in ma-terials that are intrinsically nonmagnetic. 
+
+Acknowledgments —The authors acknowledge helpful discussions with Chenhao Jin and Allan H. MacDonald. This work was supported by the Laboratory for Physical Sciences through its support of the Condensed Matter Theory Center.                      
+
+> [1] Y. Tang, L. Li, T. Li, Y. Xu, S. Liu, K. Barmak, K. Watanabe, T. Taniguchi, A. H. MacDonald, J. Shan, and K. F. Mak, Simulation of Hubbard model physics in WSe 2/WS 2moir´ e superlattices, Nature (London) 579 ,353 (2020). [2] E. C. Regan, D. Wang, C. Jin, M. I. B. Utama, B. Gao, X. Wei, S. Zhao, W. Zhao, Z. Zhang, K. Yumigeta, M. Blei, J. D. Carlstr¨ om, K. Watanabe, T. Taniguchi, S. Tongay, M. Crommie, A. Zettl, and F. Wang, Mott and generalized Wigner crystal states in WSe 2/WS 2moir´ esuperlattices, Nature (London) 579 , 359 (2020). [3] Y. Xu, S. Liu, D. A. Rhodes, K. Watanabe, T. Taniguchi, J. Hone, V. Elser, K. F. Mak, and J. Shan, Correlated in-sulating states at fractional fillings of moir´ e superlattices, Nature (London) 587 , 214 (2020). [4] L. Wang, E.-M. Shih, A. Ghiotto, L. Xian, D. A. Rhodes, C. Tan, M. Claassen, D. M. Kennes, Y. Bai, B. Kim, K. Watanabe, T. Taniguchi, X. Zhu, J. Hone, A. Ru-bio, A. N. Pasupathy, and C. R. Dean, Correlated elec-tronic phases in twisted bilayer transition metal dichalco-genides, Nat. Mater. 19 , 861 (2020). [5] Z. Zhang, Y. Wang, K. Watanabe, T. Taniguchi, K. Ueno, E. Tutuc, and B. J. LeRoy, Flat bands in twisted bilayer transition metal dichalcogenides, Nat. Phys. 16 ,1093 (2020). [6] C. Jin, Z. Tao, T. Li, Y. Xu, Y. Tang, J. Zhu, S. Liu, K. Watanabe, T. Taniguchi, J. C. Hone, L. Fu, J. Shan, and K. F. Mak, Stripe phases in WSe2/WS2 moir´ e superlat-tices, Nat. Mater. 20 , 940 (2021). [7] T. Li, S. Jiang, L. Li, Y. Zhang, K. Kang, J. Zhu, K. Watanabe, T. Taniguchi, D. Chowdhury, L. Fu, J. Shan, and K. F. Mak, Continuous Mott transition in semicon-ductor moir´ e superlattices, Nature (London) 597 , 350 (2021). [8] S. Shabani, D. Halbertal, W. Wu, M. Chen, S. Liu, J. Hone, W. Yao, D. N. Basov, X. Zhu, and A. N. Pasu-pathy, Deep moir´ e potentials in twisted transition metal dichalcogenide bilayers, Nat. Phys. 17 , 720 (2021). [9] X. Huang, T. Wang, S. Miao, C. Wang, Z. Li, Z. Lian, T. Taniguchi, K. Watanabe, S. Okamoto, D. Xiao, S.-F. Shi, and Y.-T. Cui, Correlated insulating states at fractional fillings of the WS 2/WSe 2moir´ e lattice, Nat. Phys. 17 ,715 (2021). [10] Y. Tang, J. Gu, S. Liu, K. Watanabe, T. Taniguchi, J. C. Hone, K. F. Mak, and J. Shan, Dielectric catastrophe at the Mott and Wigner transitions in a moir´ e superlattice, Nat. Commun. 13 , 4271 (2022). [11] A. Ghiotto, E.-M. Shih, G. S. S. G. Pereira, D. A. Rhodes, B. Kim, J. Zang, A. J. Millis, K. Watanabe, T. Taniguchi, J. C. Hone, L. Wang, C. R. Dean, and A. N. Pasupathy, Quantum criticality in twisted transition metal dichalcogenides, Nature (London) 597 , 345 (2021). [12] W. Zhao, B. Shen, Z. Tao, Z. Han, K. Kang, K. Watan-abe, T. Taniguchi, K. F. Mak, and J. Shan, Gate-tunable heavy fermions in a moir´ e Kondo lattice, Nature (Lon-
+
+6
+
+don) 616 , 61 (2023). [13] T. Li, S. Jiang, B. Shen, Y. Zhang, L. Li, T. Devakul, K. Watanabe, T. Taniguchi, L. Fu, J. Shan, and K. F. Mak, Quantum anomalous Hall effect from intertwined moir´ ebands, Nature (London) 600 , 641 (2021). [14] J. Cai, E. Anderson, C. Wang, X. Zhang, X. Liu, W. Holtzmann, Y. Zhang, F. Fan, T. Taniguchi, K. Watan-abe, Y. Ran, T. Cao, L. Fu, D. Xiao, W. Yao, and X. Xu, Signatures of fractional quantum anomalous Hall states in twisted MoTe 2, Nature (London) 622 , 63 (2023). [15] Y. Zeng, Z. Xia, K. Kang, J. Zhu, P. Kn¨ uppel, C. Vaswani, K. Watanabe, T. Taniguchi, K. Fai Mak, and J. Shan, Thermodynamic evidence of fractional Chern insu-lator in moir´ e MoTe 2, Nature (London) 622 , 69 (2023). [16] H. Park, J. Cai, E. Anderson, Y. Zhang, J. Zhu, X. Liu, C. Wang, W. Holtzmann, C. Hu, Z. Liu, T. Taniguchi, K. Watanabe, J.-H. Chu, T. Cao, L. Fu, W. Yao, C.-Z. Chang, D. Cobden, D. Xiao, and X. Xu, Observation of fractionally quantized anomalous Hall effect, Nature (London) 622 , 74 (2023). [17] F. Xu, Z. Sun, T. Jia, C. Liu, C. Xu, C. Li, Y. Gu, K. Watanabe, T. Taniguchi, B. Tong, J. Jia, Z. Shi, S. Jiang, Y. Zhang, X. Liu, and T. Li, Observation of integer and fractional quantum anomalous Hall effects in twisted bilayer MoTe 2, Phys. Rev. X 13 , 031037 (2023). [18] B. A. Foutty, C. R. Kometter, T. Devakul, A. P. Reddy, K. Watanabe, T. Taniguchi, L. Fu, and B. E. Feld-man, Mapping twist-tuned multi-band topology in bi-layer WSe 2, Science 384 , 343 (2024). [19] Z. Tao, B. Shen, S. Jiang, T. Li, L. Li, L. Ma, W. Zhao, J. Hu, K. Pistunova, K. Watanabe, T. Taniguchi, T. F. Heinz, K. Fai Mak, and J. Shan, Valley-coherent quan-tum anomalous Hall state in AB-stacked MoTe 2/WSe 2
+
+bilayers, Phys. Rev. X 14 , 011004 (2024). [20] K. Kang, B. Shen, Y. Qiu, Y. Zeng, Z. Xia, K. Watan-abe, T. Taniguchi, J. Shan, and K. F. Mak, Evidence of the fractional quantum spin Hall effect in moir´ e MoTe 2,Nature (London) 628 , 522 (2024). [21] K. Kang, Y. Qiu, K. Watanabe, T. Taniguchi, J. Shan, and K. F. Mak, Double quantum spin Hall phase in moir´ eWSe 2, Nano Lett. 24 , 14901 (2024). [22] H. Park, W. Li, C. Hu, C. Beach, M. Gon¸ calves, J. F. Mendez-Valderrama, J. Herzog-Arbeitman, T. Taniguchi, K. Watanabe, D. Cobden, L. Fu, B. A. Bernevig, N. Regnault, J.-H. Chu, D. Xiao, and X. Xu, Observation of dissipationless fractional Chern insulator, Nat. Phys. (2026). [23] X. Cai, H. Pan, Y. Wang, A. Rasmita, S. Yang, Y. Zhao, W. Wang, R. Duan, R. He, K. Watanabe, T. Taniguchi, Z. Liu, J. Z´ u˜ niga P´ erez, B. Yang, and W. Gao, Optical switching of moir´ e Chern ferromagnet, Nature (London) (2025). [24] P. Kn¨ uppel, J. Zhu, Y. Xia, Z. Xia, Z. Han, Y. Zeng, K. Watanabe, T. Taniguchi, J. Shan, and K. F. Mak, Corre-lated states controlled by a tunable van Hove singularity in moir´ e WSe 2 bilayers, Nat. Commun. 16 , 1959 (2025). [25] E. Thompson, K. T. Chu, F. Mesple, X.-W. Zhang, C. Hu, Y. Zhao, H. Park, J. Cai, E. Anderson, K. Watanabe, T. Taniguchi, J. Yang, J.-H. Chu, X. Xu, T. Cao, D. Xiao, and M. Yankowitz, Microscopic signatures of topology in twisted MoTe 2, Nat. Phys. 21 , 1224 (2025). [26] L. An, H. Pan, W.-X. Qiu, N. Wang, S. Ru, Q. Tan, X. Dai, X. Cai, Q. Shang, X. Lu, H. Jiang, X. Lyu, S. Yang, K. Watanabe, T. Taniguchi, F. Wu, and W.-B. Gao, Observation of ferromagnetic phase in the second moir´ e band of twisted MoTe 2, Nat. Commun. 16 , 5131 (2025). [27] H. Park, J. Cai, E. Anderson, X.-W. Zhang, X. Liu, W. Holtzmann, W. Li, C. Wang, C. Hu, Y. Zhao, T. Taniguchi, K. Watanabe, J. Yang, D. Cobden, J.-H. Chu, N. Regnault, B. A. Bernevig, L. Fu, T. Cao, D. Xiao, and X. Xu, Ferromagnetism and topology of the higher flat band in a fractional Chern insulator, Nat. Phys. 21 , 549 (2025). [28] F. Xu, X. Chang, J. Xiao, Y. Zhang, F. Liu, Z. Sun, N. Mao, N. Peshcherenko, J. Li, K. Watanabe, T. Taniguchi, B. Tong, L. Lu, J. Jia, D. Qian, Z. Shi, Y. Zhang, X. Liu, S. Jiang, and T. Li, Interplay between topology and correlations in the second moir´ e band of twisted bilayer MoTe 2, Nat. Phys. 21 , 542 (2025). [29] E. Redekop, C. Zhang, H. Park, J. Cai, E. Anderson, O. Sheekey, T. Arp, G. Babikyan, S. Salters, K. Watanabe, T. Taniguchi, M. E. Huber, X. Xu, and A. F. Young, Direct magnetic imaging of fractional Chern insulators in twisted MoTe 2, Nature(London) 635 , 584 (2024). [30] W. Li, E. Redekop, C. W. Beach, C. Zhang, X. Zhang, X. Liu, W. Holtzmann, C. Hu, E. Anderson, H. Park, T. Taniguchi, K. Watanabe, J.-H. Chu, L. Fu, T. Cao, D. Xiao, A. F. Young, and X. Xu, Universal magnetic phases in twisted bilayer MoTe 2, arXiv:2507.22354. [31] Y. Xia, Z. Han, K. Watanabe, T. Taniguchi, J. Shan, and K. F. Mak, Superconductivity in twisted bilayer WSe 2,Nature (London) 637 , 833 (2025). [32] Y. Guo, J. Pack, J. Swann, L. Holtzman, M. Cothrine, K. Watanabe, T. Taniguchi, D. G. Mandrus, K. Barmak, J. Hone, A. J. Millis, A. N. Pasupathy, and C. R. Dean, Superconductivity in 5.0 ° twisted bilayer WSe 2, Nature (London) 637 , 839 (2025). [33] F. Xu, Z. Sun, J. Li, C. Zheng, C. Xu, J. Gao, T. Jia, K. Watanabe, T. Taniguchi, B. Tong, L. Lu, J. Jia, Z. Shi, S. Jiang, Y. Zhang, Y. Zhang, S. Lei, X. Liu, and T. Li, Signatures of unconventional superconductivity near reentrant and fractional quantum anomalous Hall insu-lators, arXiv:2504.06972 (2025). [34] Y. Guo, J. Cenker, A. Fischer, D. Mu˜ noz-Segovia, J. Pack, L. Holtzman, L. Klebl, K. Watanabe, T. Taniguchi, K. Barmak, J. Hone, A. Rubio, D. M. Kennes, A. J. Mil-lis, A. Pasupathy, and C. R. Dean, Angle evolution of the superconducting phase diagram in twisted bilayer WSe 2,arXiv:2512.06265. [35] F. Wu, T. Lovorn, E. Tutuc, I. Martin, and A. H. Mac-Donald, Phys. Rev. Lett. 122 , 086402 (2019). [36] T. Devakul, V. Cr´ epel, Y. Zhang, and L. Fu, Nat. Com-mun. 12 , 6730 (2021). [37] See Supplemental Material for details of the full and band-projected Hartree-Fock mean-field calculations and the time-dependent Hartree-Fock formalism. [38] H. Pan, F. Wu, and S. Das Sarma, Phys. Rev. Res. 2,033087 (2020) [39] W.-X. Qiu, B. Li, X.-J. Luo, and F. Wu, Interaction-driven topological phase diagram of twisted bilayer MoTe 2, Phys. Rev. X 13 , 041026 (2023). [40] B. Li, W.-X. Qiu, and F. Wu, Electrically tuned topology and magnetism in twisted bilayer MoTe 2 at νh = 1, Phys. Rev. B 109 , L041106 (2024). [41] J. Zang, J. Wang, J. Cano, and A. J. Millis, Hartree-Fock study of the moir´ e Hubbard model for twisted bi-layer transition metal dichalcogenides, Phys. Rev. B 104 ,7
+
+075150 (2021). [42] L. Klebl, A. Fischer, L. Classen, M. M. Scherer, and D. M. Kennes, Competition of density waves and supercon-ductivity in twisted tungsten diselenide, Phys. Rev. Res. 
+
+5, L012034 (2023). [43] A. Fischer, L. Klebl, V. Cr´ epel, S. Ryee, A. Rubio, L. Xian, T. O. Wehling, A. Georges, D. M. Kennes, and A. J. Millis, Theory of intervalley-coherent AFM order and topological superconductivity in twisted bilayer WSe 2,arXiv:2412.14296 (2024). [44] J. Yu, J. Herzog-Arbeitman, M. Wang, O. Vafek, B. A. Bernevig, and N. Regnault, Fractional Chern insula-tors versus nonmagnetic states in twisted bilayer MoTe 2,Phys. Rev. B 109 , 045147 (2024). [45] X. Liu, Y. He, C. Wang, X.-W. Zhang, T. Cao, and D. Xiao, Gate-tunable antiferromagnetic Chern insulator in twisted bilayer transition metal dichalcogenides, Phys. Rev. Lett. 132 , 146401 (2024). [46] L. Peng, C. D. Beule, D. Li, L. Yang, E. J. Mele, and S. Adam, Magnetism in twisted bilayer WSe 2,arXiv:2503.09689 (2025). [47] D. Mu˜ noz-Segovia, V. Cr´ epel, R. Queiroz, and A. J. Mil-lis, Twist-angle evolution of the intervalley-coherent anti-ferromagnet in twisted WSe 2, Phys. Rev. B 112 , 085111 (2025). [48] A. Kumar, M. Xie, and A. H. MacDonald, Lattice col-lective modes from a continuum model of magic-angle twisted bilayer graphene, Phys. Rev. B 104 , 035119 (2021). [49] J. W. Negele, The mean-field theory of nuclear structure and dynamics, Rev. Mod. Phys. 54 , 913 (1982). [50] W.-X. Qiu and F. Wu, Topological magnons and domain walls in twisted bilayer MoTe 2, Phys. Rev. B 112 , 085132 (2025). [51] W.-T. Zhou, Z.-Y. Dong, Z.-L. Gu, and J.-X. Li, Itinerant topological magnons and spin excitons in twisted transi-tion metal dichalcogenides: mapping electron topology to its spin counterpart, Natl. Sci. Rev. 13 , nwaf354 (2026). [52] F. Wu and S. Das Sarma, Quantum geometry and stabil-ity of moir´ e flatband ferromagnetism, Phys. Rev. B 102 ,165118 (2020). [53] J. Yu, B. A. Bernevig, R. Queiroz, E. Rossi, P. T¨ orm¨ a, and B.-J. Yang, Quantum geometry in quantum materi-als, npj Quantum Mater. 10 , 101 (2025). [54] E. Rossi, Quantum metric and correlated states in two-dimensional systems, Curr. Opin. Solid State Mater. Sci. 
+
+25 , 100952 (2021). [55] L. Chen, S. A. A. Ghorashi, J. Cano, and V. Cr´ epel, Quantum-geometric dipole: a topological boost to flavor ferromagnetism in flat bands, arXiv:2506.22417 (2025). [56] T. Kitamura, H. Nakai, H. Katsura, and R. Arita, Quantum-geometry-driven exact ferromagnetic ground state in a nearly flat band, arXiv:2603.01922 (2026). [57] R. Xiong, Y. Guo, C. Qin, F. Yin, T. Wang, S. L. Brantly, J. Qi, J. Zhou, Z. Zhang, M. Erdi, K. Watanabe, T. Taniguchi, S. Zhang, S. A. Tongay, A. F. Young, L. Fu, and C. Jin, Propagating neutral modes in an intervalley coherent state, arXiv:2507.18770 (2025). [58] O. Huber, K. Kuhlbrodt, E. Anderson, W. Li, K. Watan-abe, T. Taniguchi, M. Kroner, X. Xu, A. Imamoglu, and T. Smolenski, Optical control over topological Chern number in moir´ e materials, arXiv:2508.19063 (2025). [59] W. Holtzmann, W. Li, E. Anderson, J. Cai, H. Park, C. Hu, T. Taniguchi, K. Watanabe, J.-H. Chu, D. Xiao, T. Cao, and X. Xu, Optical control of integer and fractional Chern insulators, arXiv:2508.18639 (2025). [60] X. Cai, H. Pan, Y. Wang, A. Rasmita, S. Yang, Y. Zhao, W. Wang, R. Duan, R. He, K. Watanabe, T. Taniguchi, Z. Liu, J. Z. P´ erez, B. Yang, and W. Gao, Optical switching of moir´ e Chern ferromagnet, arXiv:2508.19602 (2025).

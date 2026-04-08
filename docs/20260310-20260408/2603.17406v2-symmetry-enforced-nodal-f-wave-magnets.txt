@@ -1,0 +1,593 @@
+Title: Symmetry-Enforced Nodal $f$-Wave Magnets
+
+URL Source: https://arxiv.org/pdf/2603.17406v2
+
+Published Time: Fri, 20 Mar 2026 01:17:31 GMT
+
+Number of Pages: 8
+
+Markdown Content:
+## Symmetry-Enforced Nodal f -Wave Magnets 
+
+Moritz M. Hirschmann, 1, ∗ Akira Furusaki, 1 and Max Hirschberger 1, 2, †
+
+> 1
+
+RIKEN Center for Emergent Matter Science (CEMS), Wako, Saitama 351-0198, Japan 
+
+> 2
+
+Department of Applied Physics, The University of Tokyo, Bunkyo, Tokyo 113-8656, Japan 
+
+(Dated: March 20, 2026) Owing to their relevance for spintronics, electronic band splitting and spin-polarization textures in magnets are active areas of research. In non-collinear magnets, alternating spin textures can arise both for isolated bands and for intersecting band pairs with nodal splitting. This raises the question of whether p, f, . . . -wave magnets should be defined by their spin polarization or their band splitting. To resolve this ambiguity, we introduce spin-space symmetries that couple the spin polarization and splitting textures for all bands. Focusing on the nodal f -wave magnet, we construct a tight-binding model of itinerant electrons on a honeycomb bilayer coupled to a non-collinear magnetic texture. Analytic expressions for spin polarization and splitting reveal the dependence on hopping and exchange coupling. We predict a canting-induced spin conductivity arising from the nodal structure of the splitting. Furthermore, the f -wave magnet in the bulk can induce p-wave magnetism on the surface. This surface p-wave character leads to a bulk-forbidden Edelstein effect with f -wave anisotropy. 
+
+Introduction – Magnetic textures can induce an energy splitting of itinerant electrons. Even in ferromagnets, this splitting is inhomogeneous [1, 2] because spin-orbit coupling (SOC) and orbital polarization vary across the Brillouin zone. Likewise, a spatially inhomogeneous mag-netic texture may produce an anisotropic splitting and polarization textures in momentum space [3–5]. Momentum-dependent spin splitting can be classified by the presence of gapless points, lines, or planes. For ex-ample, collinear altermagnets at negligible SOC exhibit an anisotropic spin splitting that vanishes in nodal lines in two dimensions (2D) or planes in three dimensions (3D) [6–8]. A collinear magnetic texture implies that the spin sz along the collinear order is a good quantum number at every momentum and determines the split-ting structure. For example, in a d-wave altermagnet, a spin-up band (red) can be mapped to a spin-down band (blue) by a fourfold rotation, leading to lines of vanishing splitting, ∆ s(k) = 0, see Fig. 1(a). To describe the relation between spin polarization and band splitting, one may define a splitting |∆s,n (k)| ≡ 
+
+En+1 (k) − En(k) between energies of bands n + 1 and 
+
+n that would be degenerate without magnetic exchange. The spin polarization defines the sign of ∆ s,n (k). For altermagnets, we define ∆ s,n (k) > 0 if the spin sz
+
+expectation value of band n is negative, sz,n (k) ≡⟨ψn(k)|sz |ψn(k)⟩ < 0. The spin splitting ∆ s,n (k) can be expanded in real spherical harmonics labeled by l ∈ N0.Ferromagnets correspond to s-wave ( l = 0) and collinear altermagnets exhibit d, g, i, . . . -wave ( l even) [8]. The pa-rameter l corresponds to the number of nodal lines in 2D (dashed lines in Fig. 1(a)) or of nodal planes in 3D. To realize odd-parity magnets ( p, f, . . . ), two types of systems have been considered: (I) Collinear magnets with broken spinless time-reversal symmetry by Floquet driv-ing [9–11] or orbital magnetism [12–14]; and (II) non-collinear magnets [15]. For magnets (II), unlike altermag-nets, spin is not a good quantum number. Instead, their spin polarization varies with momentum even at non-zero splitting ∆ s,n (k). For example, the spin polarization tex-ture of a non-collinear magnet, Fig. 1(d), shows a con-tinuous change from Γ to M points. Nevertheless, non-collinear systems are used in experimental realizations of 
+
+p-wave magnets [16, 17] and theoretical studies of odd-parity magnets [15, 18–26]. Specifically, the splitting in p-wave magnets leads to anisotropic transport [15, 16], and if time-reversal symmetry is broken there is an anoma-lous Hall effect arising from the gapped nodes [16, 21]. Likewise, the p-wave Edelstein effect requires both spin polarization and band splitting [18, 27]. How can we integrate non-collinear magnets into the 
+
+s, p, d, . . . -wave classification scheme shown in Fig. 1(a), where ∆ s(k) describes spin polarization and splitting? To answer this question, we focus on f -wave magnets, as they have so far mostly been studied in collinear magnets with fully polarized bands [9, 10, 12, 28– 31]. Since the previously discussed non-collinear models [19, 20, 22, 25, 26] do not exhibit an f -wave splitting for all bands, we present symmetry arguments that en-force f -wave splitting and polarization. This symmetry-enforced low-energy description implies a characteristic bulk spin conductivity, if the order is canted, and an anisotropic surface Edelstein effect. 
+
+Symmetries of f-wave magnets – With a spin rota-tion Csz,n of order n ∈ N around the z axis, the sx
+
+and sy components of spin polarization vanish (Eq. (1)) [15, 16, 32, 33]. A non-collinear texture may only be invariant under the combination of Csz,n and a spatial operation, e.g., a translation in a magnetic spiral [34]. Here, we consider a bilayer (Fig. 1(b)) where the top and bottom layers are related by a mirror symmetry Mz ,which only acts on space, not on spin. We choose a magnetic texture that respects the composite symmetry 
+
+eCs ≡ Csz, 2Mz . The symmetry eCs implies that the spin 
+
+> arXiv:2603.17406v2 [cond-mat.mes-hall] 19 Mar 2026
+
+2M y
+
+C3z t 2  
+
+> t1
+> r1
+> r2
+
+J
+
+,Honeycomb bilayer t1,t2s-d coupling J to coplanar moments M K6420246Energy                   
+
+> kx ky
+> s-wave
+> Δs(k) = const. p-wave
+> ky
+> d-wave
+> kx−ky
+> f-wave g-wave
+> kxky(kx−ky)2ky(3 kx−ky)
+> Δs>0
+> Δs<0 22222
+
+(a) (b) (c) (d) (e) sz,2 (k)−sz,1 (k) Δs,1 (k)
+
+FIG. 1. Spin splitting, spin polarization for an f -wave mag-net. (a) Comparison s, p, d, f, g -wave spin splitting. (b) Min-imal f -wave magnetic texture with symmetries eCs, eT , and 
+
+C3z . Top/bottom layer with dark-/light-colored spheres. (c) Electronic band structure exhibiting spin-degenerate lines on M-K-Γ. (d) Difference of band-resolved spin sz polarization 
+
+sz,n (k) between the first and second bands. (e) Spin splitting ∆s, 1(k) between the first and second bands. t1 = 1, t2 = 1 /2, 
+
+J = 3. 
+
+polarization sx,n (k) of any band n and momenta k van-ishes, 
+
+sx,n (k) = ⟨ψn(k)| eCs† eCssx|ψn(k)⟩
+
+= −⟨ ψn(k)| eCs†sx eCs|ψn(k)⟩ = −sx,n (k) = 0 , (1) where we used the anticommutation { eCs, s x} = 0 and that all ψn(k) are also eigenstates of eCs. While Eq. (1) follows from the spin actions, eCs = iσ z and si = 12 σi with Pauli matrices σi and ℏ = 1, it holds for any n in Csz,n .Thus, eCs-symmetry implies sx,n (k) = sy,n (k) = 0 and only sz,n (k)̸ = 0 for all k, which enables us to define the sign of spin splitting ∆ s,n (k) between bands n and n + 1 as sgn(∆ s,n (k)) ≡ sgn( sz,n +1 (k) − sz,n (k)) in analogy to altermagnets. For the odd-parity spin splitting, ∆ s(k) = −∆s(−k), we consider symmetries including time reversal T =
+
+iσ y K with complex conjugation K. Coplanar textures normal to the z axis always exhibit Csz, 2T [8]. While this spin rotation with time reversal Csz, 2T implies odd-parity spin polarization sz,n (k) = −sz,n (−k), it does not enforce a band degeneracy at k = 0 [19] because (Csz, 2T )2 = 1. With a combined symmetry eT ≡ T Mz
+
+comprising time reversal and the mirror, level cross-ings occur at invariant momenta for every band due to Kramers theorem because ( T Mz )2 = −1. This en-sures an odd-parity spin splitting ∆ s,n (k) = −∆s,n (−k)(Fig. 1(e)). If the system is 3D, the mirror Mz in eT can be replaced by a translation in the z direction. In non-collinear magnets, sz is not a symmetry oper-ator, and thus a spin polarization texture sz,n (k) alone does not protect band crossings. Nevertheless, the sym-metries eCs and eT lead to lines (or surfaces in 3D) along which the spin splitting vanishes. These follow from the symmetry eigenvalues λsn(k) = ⟨ψn(k)| eCs|ψn(k)⟩ of band n. As eCs is momentum-independent, its eigenvalues 
+
+λsn(k) are piece-wise constant in k and generally complex-valued λsn(k) /∈ R. Time reversal eT (or Cs
+
+> ⊥,2
+
+T ) implies 
+
+λsn(k) = λsn(−k)∗. By an argument analogous to how time reversal-related mirror eigenvalues enforce almost movable nodal lines, any path connecting −k to k must cross at least one band degeneracy [35–38]. Thus, each Kramers degeneracy is part of a nodal line comprising the eigenvalues λsn(k) and λsn(k)∗.The simplest spin-splitting in 2D that is consistent with eCs and eT exhibits a single nodal line ( p-wave). To enforce f -wave splitting with three nodal lines, Fig. 1(a), we introduce a threefold rotation symmetry C3z that commutes with sz and eCs. Mirror symmetries are op-tional, but can enforce straight nodal lines. For exam-ple, the spinful mirror My in Fig. 1(b) pins a nodal plane to ky = 0 by enforcing ∆ s(ky ) = −∆s(−ky )and thus ∆ s(k) ∝ ky (3 k2 
+
+> x
+
+− k2 
+
+> y
+
+) around k = 0. Un-like the 2D case, in 3D it is possible that a threefold rotation maps a single nodal surface to itself, i.e., C3z
+
+is not sufficient to enforce f -wave splitting. Instead, three mirror operations that fix nodal surfaces are re-quired to enforce f -wave in 3D. Thus, four out of seven real f -wave spherical harmonics can be enforced, namely, 
+
+ky (3 k2 
+
+> x
+
+− k2 
+
+> y
+
+), k x(3 k2 
+
+> y
+
+− k2
+
+> x
+
+), k xky kz , and kz (k2 
+
+> x
+
+− k2 
+
+> y
+
+). In f -wave magnets, symmetries that enforce spin de-generacy at all k and even-parity spin polarization must be absent. 
+
+Tight-binding model – We construct a minimal 2D Hamiltonian H(k) for electrons in an f -wave magnet that is symmetric under eCs, eT , C3z , and My , see Fig. 1(b). The nearest-neighbor hopping t1 stays within each hon-eycomb layer and a long-range hopping t2 joins adjacent layers. If t1 = 0 or t2 = 0, the f -wave splitting van-ishes in our model. The magnetic unit cell comprises 4 sites, each with an s-d coupling J between the electron and a local magnetic moment. Once one of the copla-nar moments is chosen, symmetries eCs and My fix the remaining moments. To avoid a collinear magnetic tex-ture, the chosen moment may not be along the x or y
+
+axis; we choose the moment at r1 along ( −1, 1, 0). This model can be extended to 3D, see End Matter. 3The band structure, Fig. 1(c), exhibits the expected splitting with nodal lines along Γ-K and K-M, as well as Dirac points at K inherited from the honeycomb lattice [39]. In the radial direction of Fig. 1(d), a sign change in the spin polarization appears at the avoided crossing at energy E = ±3.5. Sign changes of polarization without a band degeneracy are common in odd-parity magnets [15, 19, 33]. While the splitting ∆ s(k) has f -wave char-acter for small k in Fig. 1(e), the sign change in spin polarization leads to a sign change of ∆ s(k) in the radial direction. 
+
+Quantifying f-wave splitting – In the eigenbasis of eCs
+
+the two-band continuum expansion HΓ(k) around the Γ point of the f -wave model H(k) is diagonal. The sym-metries eT and C3z restrict the lowest order terms to 
+
+HΓ(k) = E(1) 0 (k2 
+
+> x
+
++ k2 
+
+> y
+
+)˜ σ0 + ∆ (1)  
+
+> s
+
+ak y (3 k2 
+
+> x
+
+− k2 
+
+> y
+
+)˜ σz , (2) where E(1) 0 , ∆(1)  
+
+> s
+
+∈ R are the lowest-order expansion co-efficients corresponding to the non-magnetic band dis-persion and the size of the f -wave splitting, respectively. In the following, we set the lattice constant a = 1. The matrices ˜ σ0 and ˜ σi are the identity and Pauli matrices in the eigenbasis at Γ. In this basis, the spin operator sz is 
+
+|sz,n (k → 0)|˜σz .Such an expansion matches the tight-binding model, orange line in Fig. 2(a). The f -wave nodal line structure fixes the second term in Eq. (2) to ∝ ky (3 k2 
+
+> x
+
+− k2 
+
+> y
+
+). Thus, the symmetries are sufficient to enforce f -wave splitting by suppressing any p-wave terms. To understand the origin of f -wave splitting in terms of hopping and exchange coupling, for t1 = t2 = t > 0we expand the Hamiltonian H(k) around k = 0, see End Matter. The spin polarization sz for the basis states of Eq. (2) at Γ is independent of band index n
+
+|sn,z | = 3t
+
+2√J2 + 9 t2 . (3) The spin polarization increases with hopping t, and de-creases with the exchange coupling J. This J dependence follows from the orthogonality of electron polarization sz
+
+and the coplanar moments of the magnetic texture. The analytic expressions for the parabolic E(1) 0 and f -wave splitting ∆ (1)  
+
+> s
+
+are 
+
+E(1) 0 = 58 t (1 + 2 |sn,z |) , ∆(1)  
+
+> s
+
+= √38 t   12 − | sn,z | . (4) The parabolic term with E(1) 0 is nearly linear in t and weakly affected by J. Interestingly, the band splitting coefficient ∆ (1)  
+
+> s
+
+vanishes if either t = 0 or J = 0. As we will show, for the Edelstein effect, ∆ (1)  
+
+> s
+
+/E (1) 0 ≫
+
+1 and large sn,z ≈ 1/2 are favorable. Here, these quantities inversely correlate and ∆ (1)  
+
+> s
+
+/E (1) 0 < 1 for all 
+
+sn,z , Fig. 2(b). Conversely, for the upper band pair in Fig. 2(a) the hybridization between adjacent bands leads to E(1) 0 ≈ 0 implying ∆ (1)  
+
+> s
+
+/E (1) 0 ≫ 1, cf. Fig. 4. Eq.(4) Fit Eq.(2) (a) (b) f-wave quality      
+
+> t1=t2=1,J=3 t2=1
+
+(d) Spin conductivity 
+
+Jx Jx
+
+s∥ sLow-energy models      
+
+> E0=1,
+> EF= 0.2,
+> kBT=0.01 (1)
+
+t 1🡕 
+
+> ~2~
+
+J x Jx
+
+f-wave + B ∥
+
+# σxx 
+
+# σxx sFermi surface 
+
+B ∥   
+
+> s∥<0 s∥>0
+
+(c)  
+
+> s∥=0
+
+FIG. 2. Origin of f -wave splitting. (a) Comparison of nu-merical fit (orange) up to k5 and the analytical low-energy expansion (green). (b) f -wave splitting divided by size of parabolic part as function of spin polarization for the lower band pair. The black arrow highlights the effect of increas-ing hopping t1. The green dashed line is the analytical result for t1 = t2. (c) An in-plane field B∥ gaps the nodal points on the Fermi surfaces and creates a polarization s∥. (d) The spin conductivity σsxx divided by electric conductivity σxx and spin polarization |sn,k | depends qualitatively on the f -wave splitting ∆ (1)  
+
+> s
+
+.
+
+Spin conductivity – f -wave magnets exhibit no spin current response to linear order in the electric field Ej
+
+[19, 30, 40]. To study spin currents in the context of a canted f -wave texture, we add a small in-plane field 
+
+HB = −B∥ ˜σx to the low-energy model Eq. (2) (Fig. 2(c)). The result is a linear spin conductivity σsxx [41], defined for an in-plane-polarized spin current jsi = σsij Ej . When ∆(1)  
+
+> s
+
+is large, the B∥-induced polarization s∥ is concen-trated at the nodes where ∆ s(k) = 0. This reduces |σsxx |
+
+as expected. Furthermore, the splitting-induced asym-metry of Fermi surfaces enables a sign change relative to the response of a parabolic band (Fig. 2(d)), cf. p, d, f, g -wave in Fig. 5. 
+
+f -wave symmetry constrained Edelstein effect – The Edelstein effect refers to a non-zero net spin ( δs )i caused by an applied electric field Ej . Symmetry constraints on the Edelstein tensor χij , defined as ( δs )i = χij Ej , follow from Neumann’s principle: Symmetry transformations leave the tensor invariant [42, 43]. For p and f -wave magnets, the spin rotation eCs removes the rows of two spin components, χxj = χyj = 0 for any j ∈ { x, y, z }.4Non-vanishing χzj components were calculated for p-wave magnets [18, 27]. For f -wave magnets, the three-fold rotation C3z conserves the remaining spin compo-nent but rotates the spatial components, setting χzj = 0 for j = x, y , leaving only χzz . However, if additionally a mirror symmetry sends sz → − sz and z → z, as for ∆s(k) ∝ kx(3 k2 
+
+> y
+
+− k2
+
+> x
+
+) and ∝ ky (3 k2 
+
+> x
+
+− k2 
+
+> y
+
+), then χzz = 0. In conclusion, the Edelstein effect in our f -wave model is forbidden in the bulk. 
+
+p-wave from f -wave in finite systems – In a finite sys-tem, the crystal symmetries are reduced and two contri-butions to the Edelstein effect become allowed: (i) Finite-size effects prevent the cancellation due to C3z leading to bulk contributions, and (ii) surface effects that give a size-independent contribution. While any termination in the x-y-plane breaks three-fold rotation symmetry, eT
+
+and eCs are preserved and lead to Kramers pairs at mo-mentum k = 0 along the ribbon with a p-wave splitting for k̸ = 0. For a ribbon with x-termination, the effective model for any Kramers pair at Γ is given by 
+
+Hx(ky ) ≡ E0,x k2 
+
+> y
+
++ ∆ s,x ky ˜σz , (5) where E0,x , ∆s,x ∈ R, see Fig. 3(a). Note, the transverse momentum kx in Eq. (2) effectively takes only discrete values in a ribbon, bands overlap and hybridize. Thus, Eq. (5) describes only a small part of the ribbon bands. A y-terminated ribbon (and symmetry-equivalent ter-minations) differs because My sends kx → kx but sz →−sz implying sz (kx) = 0. Combined with eCs forcing 
+
+sx(kx) = sy (kx) = 0, the bands have no spin texture and thus cannot exhibit p-wave splitting or an Edelstein effect (Fig. 3(a)). 
+
+Surface Edelstein effect – To study the Edelstein effect [44], we use the Boltzmann equation in the relaxation time approximation [27, 30, 45]. For a single band in a ribbon, Eq. (5), the non-zero component of the Edelstein effect, ( δs )z = χzy Ey , can be analytically calculated at zero temperature. The low-energy model assumes a con-stant spin polarization ±sz for its basis states. As we have seen for the bulk in Fig. 1(d), the spin polarization changes with momentum, thus also the model Eq. (5) only applies in a finite range of ky . This leads to two qualitatively different limits as illustrated in Fig. 3(b): (I) Dominant spin splitting ∆ s,x ≫ E0,x with two Fermi surfaces, yielding χzy = eτ πℏ sz ; (II) Dominant parabolic dispersion ∆ s,x ≪ E0,x with four Fermi surfaces and pairwise cancellation, leading to χzy = 0. 
+
+Edelstein effect in the lattice model – We extend our discussion to full ribbon band structures using the tight-binding model H(k). As expected, for the y-terminated ribbon, the spin polarization sz (kx) vanishes at all kx.For x termination, there is an odd-parity spin polariza-tion, Fig. 3(c). Notably, the spin polarizations cancel where the bulk splitting is weak, at E ≈ − 6. We calculated the Edelstein susceptibility χzy numer-ically as function of the filling EF , Fig. 3(d). As in our (a) (b) (e) EF = −5.7 E F = −1.8 xy                        
+
+> Eybulk: f-wave (δs) z=0 x termination y termination No splitting
+> p-wave (Eq. 5) Ribbon Edelstein effect
+> EFEF(δs) z=0 (δs) z~ s z(d)
+> Δs≫E0(1) (1)
+> Δs≪E0(1) (1) x10 Ex(δs) z=0 sz >0 sz <0 sz >0 sz <0
+> Energy  Energy  Δs,x ≫E0,x Δs,x ≪E0,x (c) sz <0 sz >0
+> E F
+
+FIG. 3. Anisotropic Edelstein effect on f -wave magnet ribbons. (a) Ribbon geometry in x termination leads to p-wave splitting, whereas y termination does not. (b) Schematic Edelstein effect for different splitting, where filled circles de-note occupied states. (c) Band structure of an x-terminated ribbon, spin polarization shown in color. (d) Edelstein suscep-tibility χzy for the ribbon in (c); solid (dashed) lines denote the contribution from edge (bulk) sites at a filling EF. (e) Edelstein effect over position x on the ribbon at Fermi ener-gies marked in (d). t1 = 1 , t 2 = 0 .5, J = 3. Ribbon width: 40 unit cells 
+
+qualitative discussion, Fig. 3(b), the surface Edelstein effect is strongest where the bulk exhibits the largest f -wave splitting, i.e., at EF ≈ − 1.8. The spatially resolved contribution to the Edelstein effect (Fig. 3(e)) shows a finite-size effect in the bulk as well as a peaked surface contribution of comparable total magnitude (Fig. 3(d)). 
+
+Discussion – Since the surface Edelstein effect is a con-sequence of symmetry reduction, it can be generalized to 
+
+h- and j-wave magnets. Magneto-optical spectroscopy [46, 47], or spin-sensitive transport measurements [48– 51] may detect such a spin accumulation. In quasi-2D systems, an f -wave magnet can be realized even with SOC. A spinful mirror symmetry Mz sets the polarizations sx,n (k) = sy,n (k) = 0 at all momenta. For example, the magnetic layer group P ¯6m2 (or Pc¯6m2 with time reversal) leads to an f -wave magnet. While a non-collinear magnetic texture with this symmetry requires at least a sixfold Wyckoff position, with SOC, already Bernal bilayer graphene can exhibit f -wave spin polar-ization [52]. We have shown that symmetry-enforced p, f, . . . -wave splitting in non-collinear magnets matches the spherical harmonic classification of altermagnets [7, 30] (Fig. 1(a)). With linear spin conductivity and p-wave splitting on the edges, we identified characteristic properties that arise 5from nodal f -wave magnets. The surface Edelstein effect, on the other hand, is also symmetry-allowed for f -wave polarization sz,n (k) ∝ ky (3 k2 
+
+> x
+
+− k2 
+
+> y
+
+) without splitting. 
+
+Acknowledgements 
+
+The authors are grateful to Ryota Nakano, Max T. Birch, Rinsuke Yamada, Alexander Mook and Hitoshi Seo for insightful discussions. M. M. H. is funded by the RIKEN Special Postdoctoral Researcher Program.  
+
+> ∗
+
+moritz.hirschmann@riken.jp  
+
+> †
+
+hirschberger@ap.t.u-tokyo.ac.jp [1] M. M. Hirschmann, A. S. Gibbs, F. Orlandi, D. Khalyavin, P. Manuel, V. Abdolazimi, A. Yaresko, J. Nuss, H. Takagi, A. P. Schnyder, and A. W. Rost, Creating and controlling dirac fermions, weyl fermions, and nodal lines in the magnetic antiperovskite Eu 3PbO, Phys. Rev. Mater. 6, 114202 (2022). [2] R. Lou et al. , Orbital-selective effect of spin reorientation on the dirac fermions in a non-charge-ordered kagome ferromagnet Fe 3Ge, Nat. Commun. 15 , 9823 (2024). [3] S. H. Lee, Y. Qian, and B.-J. Yang, Fermi surface spin texture and topological superconductivity in spin-orbit free noncollinear antiferromagnets, Phys. Rev. Lett. 132 ,196602 (2024). [4] G. Gurung, M. Elekhtiar, Q.-Q. Luo, D.-F. Shao, and E. Y. Tsymbal, Nearly perfect spin polarization of non-collinear antiferromagnets, Nat. Commun. 15 , 10242 (2024). [5] Y. Liu, J. Li, P. Liu, and Q. Liu, Unconventional spin tex-tures emerging from a universal symmetry theory of spin-momentum locking, npj Quantum Mater. 9, 69 (2024). [6] M. Naka, S. Hayami, H. Kusunose, Y. Yanagi, Y. Mo-tome, and H. Seo, Spin current generation in organic an-tiferromagnets, Nat. Commun. 10 , 4305 (2019). [7] L. ˇSmejkal, J. Sinova, and T. Jungwirth, Beyond conven-tional ferromagnetism and antiferromagnetism: A phase with nonrelativistic spin and crystal rotation symmetry, Phys. Rev. X 12 , 031042 (2022). [8] L. ˇSmejkal, J. Sinova, and T. Jungwirth, Emerging re-search landscape of altermagnetism, Phys. Rev. X 12 ,040501 (2022). [9] S. Huang, Z. Qin, F. Zhan, D.-H. Xu, D.-S. Ma, and R. Wang, Light-induced odd-parity mag-netism in conventional collinear antiferromagnets (2025), arXiv:2507.20705. [10] T. Zhu, D. Zhou, H. Wang, and J. Ruan, Floquet odd-parity collinear magnets (2025), arXiv:2508.02542. [11] D. Liu, Z.-Y. Zhuang, D. Zhu, Z. Wu, and Z. Yan, Light-induced odd-parity altermagnets on dimerized lattices, Phys. Rev. B 113 , L060409 (2026). [12] R. Gonzalez-Hernandez and B. Uribe, Model hamil-tonian for altermagnetic topological insulators, arXiv:2507.23173. [13] Z.-Y. Zhuang, D. Zhu, D. Liu, Z. Wu, and Z. Yan, Odd-parity altermagnetism originated from orbital or-ders (2025), arXiv:2508.18361. [14] V. Leeb and J. Knolle, Collinear p-wave magnetism and hidden orbital ferrimagnetism (2026), arXiv:2601.07418. [15] A. B. Hellenes, T. Jungwirth, R. Jaeschke-Ubiergo, A. Chakraborty, J. Sinova, and L. ˇSmejkal, p-wave mag-nets (2023), arXiv:2309.01607. [16] R. Yamada et al. , A metallic p-wave magnet with com-mensurate spin helix, Nature 646 , 837 (2025). [17] Q. Song et al. , Electrical switching of a p-wave magnet, Nature 642 , 64 (2025). [18] A. Chakraborty, A. Birk Hellenes, R. Jaeschke-Ubiergo, T. Jungwirth, L. ˇSmejkal, and J. Sinova, Highly efficient non-relativistic edelstein effect in nodal p-wave magnets, Nat. Commun. 16 , 7270 (2025). [19] K. Uchino, Y. Ogawa, and S. Hayami, Analysis of spin current generation by elastic waves in f -wave altermag-nets (2025), arXiv:2508.06027. [20] Y. B. Kudasov, Topological bands in metals, arXiv:2510.14784. [21] S. Okumura, M. M. Hirschmann, and Y. Motome, Spiral-induced anomalous hall effect from odd-parity spin-nodal lines (2025), arXiv:2512.14071. [22] X.-J. Luo, J.-X. Hu, M.-L. Hu, and K. Law, Spin group symmetry criteria for odd-parity magnets (2025), arXiv:2510.05512. [23] C. Lee, N. A. Hackner, and P. M. R. Brydon, Incom-mensuration in odd-parity magnets, Phys. Rev. B 113 ,064420 (2026). [24] J. Mitscherling, J. Priessnitz, C. K. Geschner, and L. ˇSmejkal, Microscopic origin of p-wave magnetism (2026), arXiv:2603.09736. [25] Y. Yu, M. B. Lyngby, T. Shishidou, M. Roig, A. Kreisel, M. Weinert, B. M. Andersen, and D. F. Agterberg, Odd-parity magnetism driven by antiferromagnetic exchange, Phys. Rev. Lett. 135 , 046701 (2025). [26] R. R. Neumann, R. Jaeschke-Ubiergo, R. Zarzuela, L. ˇSmejkal, J. Sinova, and A. Mook, Antialtermag-netic magnons and nonrelativistic thermal edelstein ef-fect (2026), arXiv:2603.05415. [27] M. Ezawa, Out-of-plane edelstein effects: Electric field induced magnetization in p-wave magnets, Phys. Rev. B 
+
+111 , L161301 (2025). [28] M. Ezawa, Quantum geometry and X-wave magnets with 
+
+X = p, d, f, g, i , Appl. Phys. Express (2026). [29] M. Ezawa, Almost half-quantized planar hall effects in X-wave magnets with X = p, d, f, g, i , Phys. Rev. B 112 ,235307 (2025). [30] M. Ezawa, Third-order and fifth-order nonlinear spin-current generation in g-wave and i-wave altermagnets and perfectly nonreciprocal spin current in f -wave mag-nets, Phys. Rev. B 111 , 125420 (2025). [31] M. Zeng, Z. Qin, L. Qin, S. Feng, D.-H. Xu, and R. Wang, The odd-parity altermagnetism: A spin group study (2025), arXiv:2507.09906. [32] M. Calvo, Quantum theory of neutrons in helical mag-netic fields, Phys. Rev. B 18 , 5073 (1978). [33] B. Brekke, P. Sukhachov, H. G. Giil, A. Brataas, and J. Linder, Minimal models and transport properties of unconventional p-wave magnets, Phys. Rev. Lett. 133 ,236703 (2024). [34] L. M. Sandratskii, Symmetry analysis of electronic states for crystals with spiral magnetic order. i. general proper-ties, J. Phys.: Condens. Matter 3, 8565 (1991). [35] M. M. Hirschmann, A. Leonhardt, B. Kilic, D. H. Fabini, and A. P. Schnyder, Symmetry-enforced band crossings in tetragonal materials: Dirac and weyl degeneracies on points, lines, and planes, Phys. Rev. Mater. 5, 054202 6
+
+(2021). [36] B.-J. Yang, T. A. Bojesen, T. Morimoto, and A. Fu-rusaki, Topological semimetals protected by off-centered symmetries in nonsymmorphic crystals, Phys. Rev. B 95 ,075135 (2017). [37] T. Figgemeier et al. , Imaging orbital vortex lines in three-dimensional momentum space, Phys. Rev. X 15 , 011032 (2025). [38] Domaine et al. , Tunable octdong and spindle-torus fermi surfaces in kramers nodal line metals, Nat. Commun. 16 ,11128 (2025). [39] A. H. Castro Neto, F. Guinea, N. M. Peres, K. S. Novoselov, and A. K. Geim, The electronic properties of graphene, Rev. Mod. Phys. 81 , 109 (2009). [40] M. Ezawa, Nonlinear spin-seebeck diode in f -wave mag-nets, third-order spin-nernst effects in g-wave magnets and spin-nernst effects in i-wave altermagnets (2026), arXiv:2602.19034. [41] J. ˇZelezn´ y, Y. Zhang, C. Felser, and B. Yan, Spin-polarized current in noncollinear antiferromagnets, Phys. Rev. Lett. 119 , 187204 (2017). [42] H. Watanabe and Y. Yanase, Symmetry analysis of current-induced switching of antiferromagnets, Phys. Rev. B 98 , 220412 (2018). [43] A. Cracknell, Group theory and magnetic phenomena in solids, Rep. Prog. Phys. 32 , 633 (1969). [44] Y. Suzuki and Y. Kato, Spin relaxation, diffusion, and edelstein effect in chiral metal surface, Phys. Rev. B 107 ,115305 (2023). [45] A. Johansson, Theory of spin and orbital edelstein effects, J. Phys.: Condens. Matter 36 , 423002 (2024). [46] C. Stamm, C. Murer, M. Berritta, J. Feng, M. Gabureac, P. M. Oppeneer, and P. Gambardella, Magneto-optical detection of the spin hall effect in Pt and W thin films, Phys. Rev. Lett. 119 , 087203 (2017). [47] J. Puebla, F. Auvray, M. Xu, B. Rana, A. Albouy, H. Tsai, K. Kondou, G. Tatara, and Y. Otani, Direct optical observation of spin accumulation at nonmagnetic metal/oxide interface, Appl. Phys. Lett. 111 , 092402 (2017). [48] S. O. Valenzuela and M. Tinkham, Direct electronic mea-surement of the spin hall effect, Nature 442 , 176 (2006). [49] T. S. Ghiasi, A. A. Kaverzin, P. J. Blah, and B. J. Van Wees, Charge-to-spin conversion by the rashba– edelstein effect in two-dimensional van der waals het-erostructures up to room temperature, Nano Lett. 19 ,5959 (2019). [50] A. Nomura, T. Tashiro, H. Nakayama, and K. Ando, Temperature dependence of inverse rashba-edelstein ef-fect at metallic interface, Appl. Phys. Lett. 106 , 212403 (2015). [51] J. Kim, Y.-T. Chen, S. Karube, S. Takahashi, K. Kon-dou, G. Tatara, and Y. Otani, Evaluation of bulk-interface contributions to edelstein magnetoresistance at metal/oxide interfaces, Phys. Rev. B 96 , 140409 (2017). [52] J. M. Koh, J. Alicea, and E. Lantagne-Hurtubise, Corre-lated phases in spin-orbit-coupled rhombohedral trilayer graphene, Phys. Rev. B 109 , 035113 (2024). [53] Y. Fang, J. Cano, and S. A. A. Ghorashi, Quantum geom-etry induced nonlinear transport in altermagnets, Phys. Rev. Lett. 133 , 106701 (2024). 7
+
+END MATTER 
+
+Tight-binding model – The primitive basis vectors of the magnetic unit cell, see Fig. 1(b), are 
+
+a1 = (1 , 0, 0) T , a2 = 12 (−1, √3, 0) T , a3 = (0 , 0, 1) T ,
+
+(S1) where a3 becomes a translation vector in the 3D gener-alization of the discussed 2D model. Lattice sites of the paramagnetic Wyckoff position are given by 
+
+r1 = 13 a1 + 23 a2, and r2 = 23 a1 + 13 a2. (S2) The vector t1/2 = a3/2 relates the sublattices: r′ 
+
+> 1
+
+= r1 +
+
+t1/2 and r′ 
+
+> 2
+
+= r2 +t1/2, which corresponds to AA stacked honeycomb layers. Note, to create an f -wave model, any other stacking that preserves the three symmetries eCs, eT ,
+
+and C3z is also possible. We first define the non-zero entries of the spinless 4 × 4Hamiltonian H0(k). The basis is ( c1↑, c 2↑, c ′
+
+> 1↑
+
+, c ′
+
+> 2↑
+
+) cor-responding to the sites at r1, r2, r′
+
+> 1
+
+, r′
+
+> 2
+
+, respectively. We include the minimal number of terms to achieve f -wave splitting in 2D, (H0(k)) 12 = ( H0(k)) 34 
+
+= t1
+
+
+
+ei∆r·k + e i(∆ r+a1)·k + e i(∆ r−a2)·k
+
+(S3) (H0(k)) 14 = ( H0(−k)) 23 
+
+= t2
+
+
+
+ei(∆ r+a1−a2)·k + e i(∆ r−a1−a2)·k + e i(∆ r+a1+a2)·k
+
+(S4) where ∆ r = r1 − r2, t1, t 2 ∈ R, and the remaining matrix form the hermiticity. Note for the 2D model t1/2 and a3
+
+are not translation vectors. Next, we add the spin ↓ states to our basis, (c1↑, c 1↓, c 2↑, c 2↓, c ′
+
+> 1↑
+
+, c ′
+
+> 1↓
+
+, c ′
+
+> 2↑
+
+, c ′
+
+> 2↓
+
+). The full f -wave tight-binding model is the sum of the spinless Hamiltonian and the s-d exchange Hamiltonian Hspin ,
+
+H(k) = H0(k) ⊗ σ0 + Hspin , (S5) with the identity σ0 in spin-space. The spin texture is introduced as on-site spin splitting given by an 8 × 8matrix, (Hspin )nn = J ˆen · σ, (S6) ˆer1 = 1√2 (−1, 1, 0) T , (S7) ˆer2 = 1√2 (1 , 1, 0) T , (S8) ˆer′ 
+
+> 1
+
+= 1√2 (1 , −1, 0) T , (S9) ˆer′ 
+
+> 2
+
+= 1√2 (−1, −1, 0) T , (S10) f-wave splitting (a) (c) (b) Parabolic term f-wave quality t2=1     
+
+> ||
+> t2=1 t2=1 t1🡕
+> t1🡕
+
+FIG. 4. Parameter dependence of f -wave splitting for the upper band pair in Fig. 2(a). (a) Parabolic dispersion and (b) f -wave splitting as function of exchange coupling J. (c) Ratio of (a,b) over spin polarization. Black arrows qualita-tively highlight the effect of increasing hopping t1. The green dashed line is the analytical result for t1 = t2, which does not match the fitted parameters for small J where the two-band approximation fails. Due to the band hybridization, the curves (a-c) are non-monotonous, unlike Fig. 2(a). Vanishing 
+
+E(1) 0 leads to divergences in (c). 
+
+where J ∈ R defines the coupling strength. The explicit symmetry representations in the basis of Eq. (S5) are 
+
+My =
+
+
+
+0 1 0 0 1 0 0 0 0 0 0 1 0 0 1 0 
+
+ ⊗ iσ y (S11) 
+
+C3z =
+
+
+
+1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 
+
+ ⊗ σ0 (S12) 
+
+eT =
+
+
+
+0 0 1 0 0 0 0 1 1 0 0 0 0 1 0 0 
+
+ ⊗ iσ y K, and (S13) 
+
+eCs =
+
+
+
+0 0 1 0 0 0 0 1 1 0 0 0 0 1 0 0 
+
+ ⊗ iσ z . (S14) A 3D variant of the model can be obtained by replacing 
+
+t2 → 2t2 cos( a3 
+
+> 2
+
+·k). Hereby, the layer exchange operation in eCs and eT is replaced by a translation t1/2. The sym-metry representations for the 3D model are still given by Eqs. (S11) –(S14), except that eT and eCs are multiplied by e ik z /2 to account for the translation representation of t1/2. At kz = π, the Kramers theorem does not ap-ply to eT . Nevertheless, the anticommutation of My and 
+
+eCs enforces three intersecting nodal planes with f -wave splitting symmetry. 
+
+Low-energy model – The symmetry-allowed terms in the expansion of Eq. (2) up to O(k5 
+
+> i
+
+) are 
+
+E(1) 0 k2 ˜σ0, E (2) 0 k4 ˜σ0, (S15) ∆(1)  
+
+> s
+
+ky (3 k2 
+
+> x
+
+− k2 
+
+> y
+
+)˜ σz , ∆(2)  
+
+> s
+
+k2ky (3 k2 
+
+> x
+
+− k2 
+
+> y
+
+)˜ σz , (S16) 8(a) (d) (b) (c) p-wave d-wave f-wave g-wave               
+
+> FIG. 5. Normalized linear spin conductivity, Eqs. (S17) and (S18), as a function of splitting ∆ sand Fermi energy
+> Effor B∥= 0 .001 and kBT= 0 .01. The Hamiltonians are
+> k2
+> x+k2
+> y+ ∆ s(k)˜ σz, where the splitting ∆ s(k) is defined in Fig. 1(a) with ∆ sas additional prefactor.
+
+with k2 = k2 
+
+> x
+
++k2 
+
+> y
+
+. The prefactors E(1) 0 , E (2) 0 , ∆(1)  
+
+> s
+
+, ∆(2)  
+
+> s
+
+∈
+
+R were fitted to the tight-binding band structure, see Fig. 2(b). The first symmetry-allowed deviation from f -wave symmetry arises to order O(k9) with l = 9 nodal lines, which is of negligible size. To obtain the analytic expansion of the 8 × 8 model 
+
+H(k), we block-diagonalize the Hamiltonian using the eigenstates of eCs. For the resulting 4 × 4 blocks, we calculate the eigenstates setting t1 = t2 and k = 0. We project H(k) onto these eigenstates to obtain the final 2 × 2-block structure, assuming that the degenerate band pairs are well-separated. By expanding the 2 × 2 blocks in k, we recover the symmetry-derived low-energy model Eq. (2) with coefficients Eqs. (4). 
+
+Boltzmann transport – The introduced Hamiltonians exhibit no Berry curvature, and thus we focus our trans-port considerations on intraband effects captured quali-tatively by Boltzmann transport [41]. In the relaxation time approximation, the conductivity, spin conductivity, and Edelstein susceptibility are given by [30, 45, 53] 
+
+σxx = −e2τ X
+
+> n
+
+Z dk2
+
+(2 π)2
+
+∂f (0) (En)
+
+∂E vn,x (k)2, (S17) 
+
+σsxx = eτ X
+
+> n
+
+Z dk2
+
+(2 π)2
+
+∂f (0) (En)
+
+∂E jsn,x (k)vn,x (k), (S18) 
+
+χzy = eτ X
+
+> n
+
+Z dky
+
+2π∂f (0) (Exn)
+
+∂E sz,n (ky )vn,y (ky ), (S19) respectively, where e is the absolute value of the elemen-tary charge, τ is the scattering time, the lattice constant is omitted, ℏ = 1, f (0) (E) is the equilibrium Fermi-Dirac distribution, vn,i (k) = ∂E n 
+
+> ∂k i
+
+is the group velocity, sz,n is spin polarization of band n, and spin current expectation value is defined as jsn,x (k) = ⟨ψn(k)| 12 {sx, ∂H ∂k x }| ψn(k)⟩.Note, for the Edelstein susceptibility χzy , the expres-sion is given for the edge theory or ribbon tight-binding model, i.e., Exn is the nth energy band of the x-terminated ribbon, and the velocities and spin in Eq. (S19) are de-fined accordingly. For a low-energy model, sz,n (ky ) is piecewise constant in ky . At T = 0, the integration simplifies to a sum over the momenta k of the Fermi surface for band nχzy = − eτ 
+
+2πℏ
+
+X
+
+> n
+
+X
+
+> k∈FS
+
+sgn( vn,y (k)) sz,n (k). (S20) For a relaxation time with eτ  
+
+> ℏ
+
+= 100 /V and a lattice constant of 5 ˚ A the numerical values in Figs. 3(d,e) are comparable to the bulk Edelstein effect in p-wave mag-nets [18]. 
+
+Dirac points and edge states – The symmetries, C3z
+
+and spinful My , protect Dirac points at K and K’ with 
+
+π-Berry phase, which are equivalent to the Dirac points in graphene [39]. Here, the group structure related to C3z
+
+and My is identical with and without spin, thus the Dirac points persist in the magnetic structure. While such Dirac points also arise in the f -wave model of Ref. [19], they are not generally enforced in f -wave magnets [9, 10]. For the x termination, i.e, the armchair termination, there are no edge states as K and K’ are mapped onto the same momentum. In contrast to graphene, eCs pro-tects with open boundary conditions two linear crossings (Fig. 3(c)). These crossings exhibit p-wave splitting at 
+
+E = ±3.4 corresponding to a local maximum in Fig. 3(d). The Dirac points are well separated in energy from the dominant contribution to the f -wave Edelstein effect and are therefore not essential for it.

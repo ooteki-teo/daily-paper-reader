@@ -1,0 +1,1510 @@
+Title: Enhanced spin-current generation in Dirac altermagnets through Klein tunneling
+
+URL Source: https://arxiv.org/pdf/2603.23235v1
+
+Published Time: Wed, 25 Mar 2026 01:16:39 GMT
+
+Number of Pages: 16
+
+Markdown Content:
+## Enhanced spin-current generation in Dirac altermagnets through Klein tunneling 
+
+Tomas T. Osterholt, 1, ∗ Lumen Eek, 1, ∗ Cristiane Morais Smith, 1 and Rembert A. Duine 1, 2 
+
+> 1
+
+Institute for Theoretical Physics, Utrecht University, 3584CC Utrecht, The Netherlands 
+
+> 2
+
+Department of Applied Physics, Eindhoven University of Technology, P.O. Box 513, 5600 MB Eindhoven, The Netherlands 
+
+(Dated: March 25, 2026) Altermagnets have recently emerged as a new platform for spintronics applications, offering spin-split electronic bands despite vanishing net magnetization. Here, we investigate spin-current genera-tion in Dirac altermagnets and identify Klein tunneling as an efficient mechanism for enhancing spin transport. Using a low-energy Dirac model combined with scattering theory, we demonstrate that Klein tunneling in altermagnets is strongly spin-dependent and can be used to effectively control the electronic spin-current polarization by, for instance, adjusting the height, width and orientation of the potential barrier. Finally, we explore how the ℓ-wave symmetry of the Dirac altermagnet shapes the spin-current polarization and transmission, focusing especially on the d- and g-wave cases. Par-ticularly promising results are obtained for the g-wave Dirac altermagnet, as it is found that the presence of a potential barrier can significantly boost the spin-current polarization, even when the intrinsic polarization due to the spin-split band structure is vanishingly small. For a barrier imple-mented via electrostatic gating, such a mechanism would in turn allow the spin-current polarization to be switched on and off via a gate voltage. 
+
+I. INTRODUCTION 
+
+For decades, one of the core goals of the field of spin-tronics [1–3] has been to exploit the electron’s spin de-gree of freedom to realize information processing devices that are more energy-efficient compared to conventional electronics. Central goals of the field include efficient generation, manipulation, and detection of spin-polarized currents and spin waves, as well as control over their dis-persion and transport properties. From a microscopic perspective, spin transport and spin dynamics are gov-erned by the underlying electronic and magnonic band structures, which, respectively, determine spin polariza-tion, group velocities, and selection rules for scattering processes. Consequently, a central theme in contempo-rary spintronics is magnetic band structure engineering, which involves the deliberate design of spin-dependent electronic and magnonic dispersions. In recent years, several approaches to manipulate mag-netic band structures have been explored. These ap-proaches include, but are not limited to, twist engineering [4–8], electrostatic gating [9–11], optical control [12–14] and the exploitation of magneto-elastic coupling effects [15–18]. Following the foundational work by ˇSmejkal et al. [19], it was demonstrated that magnetic band struc-tures can also be addressed at the level of magnetic space-group symmetries, giving rise to the concept of alter-magnetism. One of the main benefits of altermagnets is that they combine key properties of ferromagnets, such as spin-polarized electronic bands, with the vanishing net magnetization of conventional antiferromagnets, which makes them particularly appealing for spintronics appli-cations.  
+
+> ∗These authors contributed equally.
+
+As a direct consequence of the spin-split band struc-ture, an electronic spin-polarized current intrinsically arises in an altermagnetic system. A natural question to ask then is whether this spin polarization can still be con-trolled efficiently by external means without destroying the altermagnetic order. One possible approach would be to exploit a spin-dependent tunneling phenomenon that allows significant control of the spin polarization while maintaining sizable spin currents. The above mentioned requirements immediately point towards Klein tunneling as a suitable mechanism. Klein tunneling was originally predicted [20] in relativistic quantum mechanics as a counterintuitive effect in which an electron can transmit perfectly through a step-like po-tential barrier whose height V0 is at least twice the elec-tron’s rest mass energy. This apparent paradox arises because, for a sufficiently strong potential, the barrier region supports antiparticle states, allowing the electron to traverse it via an intermediate antiparticle mode. Un-fortunately, detection of Klein tunneling with elementary particles has thus far proven to be experimentally unfea-sible, largely due to the enormous electric fields required to achieve a potential drop on the order of the particle’s rest mass energy over a length scale given by its Compton wavelength [21]. In condensed-matter systems, however, the existence of effectively massless quasiparticles leads to a physically observable analogue of this phenomenon in materials with linear band crossings, the most promi-nent example being graphene [21–25]. Beyond graphene, Klein tunneling has been explored in other fermionic sys-tems such as topological insulator surface states [26] and Weyl semimetals [27], as well as in bosonic systems [28], including photons [29] and magnons [30–32]. In this paper, we explore Klein tunneling in Dirac alter-magnets, i.e., altermagnets whose electronic band struc-ture hosts symmetry-protected Dirac fermions, and we demonstrate how this effect can be used to control the 
+
+> arXiv:2603.23235v1 [cond-mat.mes-hall] 24 Mar 2026
+
+2                          
+
+> FIG. 1. Schematic of Klein tunneling in a Dirac al-termagnet .(a) Orientation of the barrier with respect to the altermagnet dispersion. The coordinate system is always chosen in such a way that the barrier is along the y-direction. (b) Sketch of the proposed tunnel junction. An ℓ-wave Dirac altermagnet (here, ℓ=d) is subjected to a potential barrier of height V0between x= 0 and x=W, with Wdenoting the barrier width. The spin-split electronic bands of the alter-magnet are illustrated, with red corresponding to the spin-up (w.r.t. the z-axis) band and blue corresponding to the spin-down band. In this case, the angle θbetween the altermagnet and the barrier is chosen to be 0. For |V0| ≫ | E|, where E
+> is the electron energy, the system is in the Klein tunneling regime. Applying a voltage difference Vacross the altermag-net induces a spin-polarized current, whose polarization is strongly affected by Klein tunneling.
+
+spin-current polarization. An illustration of the setup is given in Figure 1. We consider a ℓ-wave Dirac alter-magnet, with an applied potential barrier of height V0
+
+present between x = 0 and x = W , where W denotes the barrier width. We then calculate the zero-bias transmis-sion coefficient, as well as the spin current through the barrier in the presence of an applied voltage difference 
+
+V between the two sides of the altermagnet. As a main result, we find that the net spin-current polarization can be significantly enhanced due to this potential barrier, while still maintaining a sizable total current. The im-plications of these findings are that Klein tunneling in Dirac altermagnets can serve as an efficient mechanism to control spin-current polarization, potentially enabling the construction of gate-voltage-controlled spin transport elements. The outline of the paper is as follows. In Section II, we introduce a minimal model for ℓ-wave Dirac alter-magnets, and we use this model in Section III to cal-culate the zero-bias transmission coefficients. In Section IV, we then use the Landauer–B¨ uttiker formalism to de-rive the electronic spin currents and show that, in the Klein tunneling limit, the spin-current polarization de-pends strongly on the barrier height, width, and orien-tation, thus enabling tunable control of the spin-current polarization through these parameters. Finally, further research directions and candidate materials are explored in Section V.  
+
+> II. MINIMAL MODELS FOR DIRAC ALTERMAGNETS
+
+Making use of the framework developed in Ref. [33], we begin by introducing minimal models for ℓ-wave Dirac altermagnets. Here, and throughout the remainder of this work, we choose the spin quantization axis to be the z-axis without loss of generality. We start from an ordinary Dirac Hamiltonian with continuous rotational (C∞) symmetry and we then add terms that break this symmetry. Correspondingly, the Hamiltonian describing the system is given by ˆH = vF σ0(p · τ ) + ξ f (ℓ) 
+
+> ↑
+
+(p) · τ 00 f (ℓ) 
+
+> ↓
+
+(p) · τ
+
+!
+
+, (1) where the first term is a linear isotropic Dirac dispersion with Fermi velocity vF and the second term represents a spin- and momentum-dependent modulation character-ized by the ℓ-wave form factor f (ℓ) 
+
+> σ
+
+(p) with strength ξ.We have introduced the momentum vector p = (ˆ px, ˆpy ), with ˆ px/y the momentum operators corresponding to, re-spectively, the x- and y-directions. The spin degree of freedom is indicated by σ, while the sublattice is de-noted by τ . We have also introduced the shorthand no-tation σiτj = σi ⊗ τj , where σj (τj ) with j ∈ { x, y, z }
+
+are the Pauli spin-1/2 matrices and where σ0 (τ0) cor-responds to the 2 × 2 identity matrix. We emphasize that only the even-parity modes ( ℓ = d, g, i ) correspond to altermagnets [19]. Below, we list one example of spin-dependent form factors f (ℓ) 
+
+> σ
+
+(p) that describe the momentum-dependent spin splitting for each mode: 
+
+f (d) 
+
+> ↑
+
+(p) = px ˆx − py ˆy, f (d) 
+
+> ↓
+
+(p) = −f (d) 
+
+> ↑
+
+(p), (2) 
+
+f (g) 
+
+> ↑
+
+(p) = ( p2 
+
+> x
+
+− p2 
+
+> y
+
+)2 ˆz, f (g) 
+
+> ↓
+
+(p) = 4 p2
+
+> x
+
+p2 
+
+> y
+
+ˆz, (3) 
+
+f (i) 
+
+> ↑
+
+(p) = pxpy (p2 
+
+> x
+
+− p2 
+
+> y
+
+) ˆ z, f (i) 
+
+> ↓
+
+(p) = −f (i) 
+
+> ↑
+
+(p). (4) The d-wave Dirac altermagnet is of particular interest, because it can be solved analytically. The corresponding Hamiltonian reads ˆH = vF σ0(p · τ ) + ξ σ z (ˆ pxτx − ˆpy τy )=
+
+vx ˆpxτx + vy ˆpy τy 00 vy ˆpxτx + vx ˆpy τy
+
+
+
+, (5) with vx = vF +ξ and vy = vF −ξ. The spectrum thus con-sists of two spin-split elliptic Dirac cones that are rotated by 90 degrees with respect to each other, as illustrated in Fig. 1.  
+
+> III. TRANSMISSION COEFFICIENTS
+
+Here, we derive the spin-dependent transmission co-efficients Tσ (p) for an ℓ-wave Dirac altermagnet, with 3
+
+ℓ = d, g . We first focus on the d-wave case, which can be solved analytically. A similar approach can be ap-plied for the g-wave case, although numerical methods are then needed to determine Tσ (p). Finally, we present plots of the spin-dependent transmission coefficients for both d- and g-wave Dirac altermagnets, and we demon-strate their strong dependence on parameters such as the barrier height, width and orientation.   
+
+> A. Analytical calculation for d-wave Dirac altermagnets
+
+First, we analytically solve for the zero-bias trans-mission coefficient of a Dirac d-wave altermagnet using quantum-mechanical scattering theory. As shown in Eq. (5), the Hamiltonian of the Dirac d-wave altermagnet is diagonal in spin-space, with the terms on the spin diagonal being given by vx ˆpxτx + vy ˆpy τy (σ =↑) and 
+
+vy ˆpxτx + vx ˆpy τy (σ =↓), respectively. We can therefore focus our attention on the calculation of the transmission coefficient T↑(k), since T↓(k) can be obtained directly from said result by making the substitutions vx → vy
+
+and vy → vx.For these reasons, we now tackle the problem of calcu-lating the transmission coefficient T↑(k) for the effective (sub-)Hamiltonian ˆH = vx ˆpxτx + vy ˆpy τy . Because of the anisotropy of the energy bands of this (sub-)Hamiltonian, the relative orientation of the potential barrier with re-spect to the bands is physically relevant, and we there-fore also study the more general case of a rotated elliptic Dirac cone. Finally, to keep the notation as concise and clear as possible, we will drop the reference to the spin label σ for the remainder of this subsection.  
+
+> 1. Elliptic Dirac cones
+
+The Hamiltonian ˆH giving rise to an elliptic Dirac cone band structure with its center at momentum ℏk = 0, and its major and minor axes along kx and ky , is given by ˆH = vx ˆpxτx + vy ˆpy τy . (6) Introducing rotated momentum operators ˆ px′,y ′ via 
+
+ˆpx′
+
+ˆpy′
+
+
+
+= R(θ)
+
+ˆpx
+
+ˆpy
+
+
+
+, (7) with R(θ) the 2 × 2 rotation matrix, 
+
+R(θ) = 
+
+cos θ − sin θ
+
+sin θ cos θ
+
+
+
+, (8) we can straightforwardly generalize to Hamiltonians cor-responding to elliptic Dirac cones rotated by an angle θ
+
+with respect to the kx-axis. Such Hamiltonians ˆH are given by ˆH = vx ˆpx′ τx + vy ˆpy′ τy . (9) The eigenstates of this Hamiltonian are 2-dimensional Dirac spinors of the form Ψ(x, y ) = eik xx+ik y y Ψ0, with 
+
+Ψ0 a two-component vector that does not depend on x
+
+and y, and their corresponding energies E are given by 
+
+E2(k) = ℏ2v2
+
+> x
+
+k2 
+
+> x′
+
+(θ) + ℏ2v2 
+
+> y
+
+k2 
+
+> y′
+
+(θ), (10) where we have introduced 
+
+kx′ (θ) = kx cos θ − ky sin θ, ky′ (θ) = kx sin θ + ky cos θ. (11)  
+
+> 2. Scattering wave solutions
+
+Introducing a rectangular potential barrier of height V0
+
+between x = 0 and x = W , we seek to find the scattering wave solutions for the Hamiltonian ˆH given by ˆH = vx ˆpx′ τx + vy ˆpy′ τy + V0(x)τ0, (12) with τ0 the 2 × 2 identity matrix and where V0(x) is defined as 
+
+V0(x) = 
+
+
+
+0, for x < 0.V0, for 0 ≤ x ≤ W. 
+
+0, for x > W. 
+
+(13) To find these solutions, we first solve the time-independent Schr¨ odinger equation, ˆHΨ = EΨ. Fo-cusing first on the regions outside the potential bar-rier, we try a solution of the earlier suggested form, 
+
+Ψk(x, y ) = eik xx+ik y y Ψ0(k). We then arrive at the following algebraic equation relating the components of 
+
+Ψ0(k), 
+
+ℏ
+
+
+
+vxkx′ (θ)τx + vy ky′ (θ)τy
+
+
+
+Ψ0 = EΨ0. (14) Recalling that the energy E is dependent on the wave vector k via Eq. (10), and writing 
+
+Ψ0(k) = 
+
+Ψ+(k)Ψ−(k)
+
+
+
+, (15) we find the following connection between the components of Ψ0(k), 
+
+E Ψ−(k) = |E|eiϕ (k)Ψ+(k). (16) Here, the angle ϕ(k) is defined as 
+
+ϕ(k) = arg 
+
+
+
+vxkx′ (θ) + iv y ky′ (θ)
+
+
+
+. (17) Given this connection, we then immediately find that the solutions to the time-independent Schr¨ odinger equation in the region outside the potential barrier are given by 
+
+Ψk(x, y ) = eik xx+ik y y
+
+ 1
+
+s e iϕ (k)
+
+
+
+, (18) 4with s = sgn( E). In a similar fashion, the solution inside the potential barrier is found to be 
+
+Ψq(x, y ) = eiq xx+iq y y
+
+ 1
+
+s′ eiϕ (q)
+
+
+
+, (19) with s′ = sgn( E − V0) and q = ( qx, q y ) any wave vector satisfying E(q) = E − V0, with E(q) given in Eq. (10). Having derived the energy eigenstates of ˆH, we now construct the appropriate scattering wave solutions 
+
+Ψ(x, y ) of the system. Due to the translational invariance of the system along the y-direction, the y-component of the electron momentum is a conserved quantity. Hence, we find that the scattering wave solution for an incoming electron with momentum ℏk and energy E is given by 
+
+Ψ(x, y ) = 
+
+
+
+eik xx+ik y y 1
+
+s e iϕ (k)
+
+!
+
++ r e ik r x+ik y y 1
+
+s e iϕ (kr )
+
+!
+
+, for x < 0,α e iq xx+ik y y 1
+
+s′ eiϕ (q)
+
+!
+
++ β e iq r x+ik y y 1
+
+s′ eiϕ (qr )
+
+!
+
+, for 0 ≤ x ≤ W, t e ik xx+ik y y 1
+
+s e iϕ (k)
+
+!
+
+, for x > 0.
+
+(20) Here, r, t ∈ C are the reflection and transmission am-plitudes, respectively, while α, β ∈ C are complex coeffi-cients defined in the barrier region. We have also intro-duced the reflected wave vector kr = ( kr , k y ) and the re-flected barrier wave vector qr = ( qr , k y ). Moreover, since 
+
+ky is a conserved quantity, we have q = ( qx, k y ). The components kr and qr of the reflected waves are found by solving the equations E(kr , k y ) = E and E(qr , k y ) = 
+
+E − V0, respectively. Defining η(ky ) as 
+
+η(ky ) =  
+
+> 12
+
+sin(2 θ)( v2 
+
+> x
+
+− v2 
+
+> y
+
+)ky
+
+v2 
+
+> x
+
+cos 2(θ) + v2 
+
+> y
+
+sin 2(θ) , (21) we have 
+
+kr = −kx + 2 η(ky ), (22) 
+
+qr = −qx + 2 η(ky ). (23) An expression for qx in terms of E and ky is obtained in a similar fashion, and we find 
+
+qx = η(ky ) + q(E, k y ), (24) where 
+
+q(E, k y ) = 
+
+s
+
+> E−V0
+> ℏ
+
+2
+
+v2 
+
+> x
+
+cos 2(θ) + v2 
+
+> y
+
+sin 2(θ)
+
+
+
+− v2
+
+> x
+
+v2 
+
+> y
+
+k2
+
+> y
+
+v2 
+
+> x
+
+cos 2(θ) + v2 
+
+> y
+
+sin 2(θ) .
+
+(25) 
+
+3. Transmission probability 
+
+Having derived the scattering wave solutions Ψ(x, y )in Eq. (20), we now seek to determine the transmission amplitude t and the transmission probability T = |t|2.This can be done by demanding continuity of the wave function at the boundaries of the potential barrier, lim  
+
+> x→0−
+
+Ψ(x, y ) = lim  
+
+> x→0+
+
+Ψ(x, y ), (26) lim   
+
+> x→W−
+
+Ψ(x, y ) = lim   
+
+> x→W+
+
+Ψ(x, y ), (27) which yields a system of linear equations from which the transmission amplitude can be calculated. The details of this calculation, as well as the most general result for t
+
+that is valid for arbitrary θ, are given in Appendix A. Here, to obtain an intuitive understanding regarding the fundamental properties of the transmission amplitude, we simply state the result valid for the Klein tunneling limit, |V0| ≫ | E|, with θ = 0. We have 
+
+t(k, E ) ≈ e−ik xW cos ϕ0(k)cos( q0W ) cos ϕ0(k) − iss ′ sin( q0W ) , (28) where ϕ0(k) and q0 are given by 
+
+ϕ0(k) = arg( vxkx + iv y ky ), (29) 
+
+q0 = 1
+
+vx
+
+s E − V0
+
+ℏ
+
+2
+
+− v2 
+
+> y
+
+k2 
+
+> y
+
+. (30) The corresponding transmission coefficient T is then im-mediately found to be equal to 
+
+T (k, E ) ≈ cos 2 ϕ0(k)1 − cos 2(q0W ) sin 2 ϕ0(k) . (31) As expected, taking vx = vy , we obtain the graphene transmission coefficient derived earlier by Katsnelson et al. [21]. Several of its important properties are retained 5                                   
+
+> FIG. 2. Transmission of a d-wave Dirac altermagnet. (a) Low-energy structure of a d-wave Dirac altermagnet. (b) Spin-and angle-resolved transmission, as a function of the group velocity angle φ= arctan  vgy,σ /v gx,σ
+> of the incident electron, for an angle θ= 0 ◦and (c) an angle θ= 18 ◦between the barrier and the altermagnet. Red (blue) denotes spin-up (spin-down) transmission. (d) Spin- and angle-resolved transmission as a function of the barrier width W; the upper (lower) part of the panel corresponds to spin-up (spin-down). (e) Transmission as a function of the velocity anisotropy ratio vx/v y. (f) Spin-up and (g) spin-down transmission as a function of the barrier-region orientation angle θ. Dashed lines in (d) and (e) indicate the parameters for which (b) and (c) are obtained. In all plots, results are shown for V0= 10 (arb. units), E= 0 .4V0,W= 7 (arb. units), vF= 1 (arb. units), ξ= 0 .25 vF, and θ= 0 ◦, unless stated otherwise.
+
+in the case where vx̸ = vy , the most prominent example being perfect transmission ( T = 1) at normal incidence, the defining characteristic of Klein tunneling. An im-portant difference, however, is that the angle governing the transmission is no longer the angle between k and the normal to the potential barrier, like in graphene, but rather the angle between vxkx ˆx + vy ky ˆy and said normal vector. Finally, while rotations by an angle θ do not af-fect Klein tunneling in graphene, they can significantly impact the transmission for elliptic Dirac cones.  
+
+> B. Results
+
+Plots of the spin-dependent transmission coefficient Tσ
+
+for the d-wave Dirac altermagnet are given in Fig. 2. Its low-energy structure is shown in Fig. 2(a), and it consists of two equivalent elliptic Dirac cones - one for each spin species - rotated by 90 ◦ relative to one an-other. In Figs. 2(b) and (c), we plot Tσ for θ = 0 ◦ and 
+
+θ = 18 ◦, respectively, as a function of the angle φ(k) = arctan vgy,σ (k)/v gx,σ (k), where vgj,σ (j = x, y ) is the j-component of the group velocity vgσ (k) = (1 /ℏ)∇kEσ (k). We observe a pronounced spin dependence of the trans-mission, both in the angular profile and in the position of the transmission maxima. Most notably, for θ = 0 ◦,we find that perfect transmission occurs at normal inci-dence ( φ = 0) for both spin species, while for θ = 18 ◦,the broadest perfect-transmission peak shifts away from 
+
+φ = 0, a clear signature of anomalous Klein tunneling [34–36], and occurs at different angles for the two spin species. The other peaks in the transmission correspond to Fabry-P´ erot resonances, and they signify the strong dependence of Tσ on the barrier width W and the ve-locity anisotropy ratio vx/v y , as illustrated in Figs. 2(d) and (e). While the latter is a material parameter that is typically challenging to alter, the barrier width can be modified rather easily. In fact, a closer inspection of Eq. (31) reveals that the transmission coefficient depends directly on q0W , and therefore we can also alter Tσ by changing the barrier height V0 while keeping W fixed. As a minor comment, we mention that for θ = 0 ◦, Tσ
+
+is symmetric under the transformation φ → − φ, which allows us to fully characterize T↑ (T↓) by focusing on pos-itive (negative) angles φ ranging from 0 ◦ to 90 ◦ (−90 ◦). Finally, in Figs. 2(f) and (g), we demonstrate the strong dependence of the transmission coefficient on the barrier orientation angle θ, thus introducing yet another tuning knob to control Klein tunneling in this system. We note that T↑ and T↓ in these two plots are related to each other 6                                      
+
+> FIG. 3. Transmission of a g-wave Dirac altermagnet. (a) Low-energy structure of a g-wave Dirac altermagnet. Spin-and angle-resolved transmission, as a function of the group velocity angle φ= arctan  vgy,σ /v gx,σ
+> of the incident electron, for an angle θ= 0 ◦and (c) an angle θ= 5 .8◦between the barrier and the altermagnet. Red (blue) denotes spin-up (spin-down) transmission. (d) Spin- and angle-resolved transmission as a function of the barrier width W; the upper (lower) part of the panel corresponds to spin-up (spin-down). (e) Transmission as a function of the form factor constant ξ.(f) Spin-up and (g) spin-down transmission as a function of the barrier-region orientation angle θ.Dashed lines in (d) and (e) indicate the parameters for which (b) and (c) are obtained. In all plots, results are shown for V0= 5 (arb. units), E= 0 .2V0,W= 5 (arb. units), vF= 1 (arb. units), ξ= 0 .05 vF, and θ= 0 ◦, unless stated otherwise.
+
+via a 90 ◦ rotation, as one would intuitively expect from the rotational symmetries of the d-wave altermagnet, and that the anomalous Klein tunneling effect is again visibly present. For the g-wave altermagnet, we consider the Hamilto-nian ˆH = vF σ0(p · τ ) + ξ
+
+(p2 
+
+> x
+
+− p2 
+
+> y
+
+)2 00 4p2
+
+> x
+
+p2
+
+> y
+
+
+
+τz . (32) While an analytical calculation of the transmission coef-ficient for the g-wave Dirac altermagnet is not feasible, a numerical approach along a similar line of reasoning is readily available. The main complications here are the fact that the time-independent Schr¨ odinger equation now becomes a fourth-order equation in kx and that we have to take into account evanescent modes as well. For a detailed discussion, we refer the reader to Appendix B. Plots of the spin-dependent transmission coefficient Tσ
+
+for the g-wave Dirac altermagnet are given in Figure 3. Its low-energy structure is presented in Fig. 3(a), while in Figs. 3(b) and (c), we plot Tσ for θ = 0◦
+
+and θ = 5 .8◦, respectively, as a function of the angle 
+
+φ(k) = arctan vgy,σ (k)/v gx,σ (k). Like before, a pro-nounced spin dependence is observed in the transmission. However, due to the presence of higher-order momentum terms in the Hamiltonian, we do not always find perfect transmission at normal incidence. In fact, in both fig-ures we see that the spin-up electrons are never perfectly transmitted for the chosen parameters, with the near-unity transmission at θ = 0 ◦ arising only because we are close to Fabry-P´ erot resonance values for the width 
+
+W and the form factor constant ξ, as can be seen from Figs. 3(d) and (e). In contrast, the spin-down electrons do exhibit Klein tunneling at both angles. As further shown in Figs. 3(f) and (g), the emergence of the Klein tunneling regime depends sensitively on the barrier ori-entation angle θ, with Klein tunneling occuring for spin-down electrons when θ is close to zero, whereas for spin-up electrons it appears when θ approaches to 45 ◦. Fi-nally, we notice that the rotational symmetries of the system allow us to fully characterize T↑ (T↓) by focusing on positive (negative) angles φ ranging from 0 ◦ to 45 ◦
+
+(−45 ◦).  
+
+> IV. SPIN CURRENTS
+
+Having determined the transmission coefficients for ℓ-wave Dirac altermagnets, we now proceed to calculate the electronic spin currents using the Landauer-B¨ uttiker 7formalism [37–39]. We first derive the resulting integral expressions valid for any ℓ-wave Dirac altermagnet, be-fore specializing to the case ℓ = d, which can again be tackled by considering a single elliptic Dirac band. Fi-nally, we present plots of the spin-current polarization as a function of parameters such as the barrier height and barrier orientation.   
+
+> A. Spin currents for ℓ-wave Dirac altermagnets
+
+Denoting the regions to the left and right of the po-tential barrier by L and R, respectively, we take them to be incoherent electron reservoirs with temperatures 
+
+TL and TR, and chemical potentials μL and μR, respec-tively. We note that the incoherent reservoir assumption in the Landauer-B¨ uttiker formalism allows one to ignore interference effects between electrons emitted from the reservoir L with electrons emitted from the reservoir R.Electron transport through the potential barrier is as-sumed to be phase-coherent, and the barrier width W
+
+is therefore required to be much smaller than the phase coherence length. On the other hand, in the direction transverse to the barrier normal, we take the system size to be much larger than the phase coherence length, so that transverse mode quantization can be neglected. Assuming that a small voltage difference V is applied between the reservoirs, a current I will flow through the barrier. In principle, this bias modifies the potential pro-file inside the barrier and could be modelled by a spatially varying (e.g., linear) potential. However, for sufficiently small V , these modifications can be neglected and the transport can be described using spin-dependent zero-bias transmission coefficients Tσ (k, E ) . Following the Landauer-B¨ uttiker formalism, we then find that the current density flowing from reservoir L to reservoir R is given by 
+
+JL→R,σ = e X
+
+> γ=±
+
+Z
+
+> Ω+σ
+
+d2k
+
+(2 π)2 vgσ (k, E γσ )Tσ (k, E γσ )
+
+× fL(Eγσ )[1 − fR(Eγσ )] , (33) while the current density flowing from reservoir R to reservoir L is given by 
+
+JR→L,σ = e X
+
+> γ=±
+
+Z
+
+> Ω−σ
+
+d2k
+
+(2 π)2 vgσ (k, E γσ )Tσ (k, E γσ )
+
+× fR(Eγσ )[1 − fL(Eγσ )] . (34) Here, vgσ = (1 /ℏ)∇kEσ denotes the spin-dependent group velocity, while Eγσ (k) (with γ = ±) corresponds to the positive and negative spin-dependent energies of the Dirac altermagnets, respectively. Furthermore, e is the electron charge, and we have introduced the Fermi-Dirac distributions fL/R of the reservoirs L and R, where 
+
+fL(E) = 11 + e(E−μL)/k B TL
+
+, (35) 
+
+fR(E) = 11 + e(E−μR)/k B TR
+
+. (36) In what follows, we take the reservoir temperatures to be the same, TL = TR = T , and the chemical poten-tials to be given by μL = eV and μR = 0. Finally, the total spin current is given by Jσ = JL→R,σ + JR→L,σ ,and the spin-dependent integration domain Ω +σ (Ω −σ )corresponds to all k for which vgx,σ (k, E σ ) is a positive (negative) number. Now, to be useful for spintronics applications, we re-quire that there is an imbalance between the spin cur-rents, meaning J↑̸ = J↓. As the voltage difference is applied along x, an appropriate quantitative measure for this imbalance is the spin-current polarization P of the 
+
+x-component of the current, which in our case is given by 
+
+P = Jx, ↑ − Jx, ↓
+
+Jx, ↑ + Jx, ↓
+
+. (37) The ability to control P is therefore of significant im-portance, and we will demonstrate in Section IV C that Klein tunneling can be used to both significantly enhance and diminish the spin-current polarization.  
+
+> B. Current for a single elliptic Dirac Hamiltonian
+
+To understand the properties of the spin currents in Dirac d-wave altermagnets, we can again focus our at-tention on a system described by the (sub-)Hamiltonian corresponding to σ =↑,ˆH↑ = vx ˆpx′ τx + vy ˆpy′ τy + V0(x)τ0. (38) The resulting transmission coefficient T↑(k) is calculated in Appendix A, and the group velocity vg 
+
+> ↑
+
+(k, E ↑), 
+
+vg 
+
+> ↑
+
+(k, E ↑) = vgx, ↑(k, E ↑)ˆ x + vgy, ↑(k, E ↑)ˆ y, (39) has components vgx, ↑ and vgy, ↑ that are given by 
+
+vgx, ↑(k, E ↑) = ℏ
+
+E↑
+
+h
+
+(v2 
+
+> x
+
+cos 2 θ + v2 
+
+> y
+
+sin 2 θ)kx
+
++ 12 sin(2 θ)( v2 
+
+> y
+
+− v2
+
+> x
+
+)ky
+
+i
+
+, (40) 
+
+vgy, ↑(k, E ↑) = ℏ
+
+E↑
+
+h
+
+(v2 
+
+> x
+
+sin 2 θ + v2 
+
+> y
+
+cos 2 θ)ky
+
++ 12 sin(2 θ)( v2 
+
+> y
+
+− v2
+
+> x
+
+)kx
+
+i
+
+. (41) Although we are now in principle able to calculate the total spin-up current density J↑ = JR→L, ↑ +JL→R, ↑, it is often convenient to change integration coordinates from 8
+
+FIG. 4. Spin-current polarization P in a d-wave Dirac altermagnet. Yellow curves show the spin-current polarization 
+
+P for different barrier parameters: (a) V0 = 20 (arb. units), eV = 0 .05 V0, W = 0 .1 (arb. units); (b) V0 = 20 (arb. units), 
+
+eV = 0 .05 V0, W = 0 .5 (arb. units); (c) V0 = 50 (arb. units), eV = 0 .02 V0, W = 0 .1 (arb. units); (d) V0 = 50 (arb. units), eV = 0 .02 V0, W = 0 .5 (arb. units), as a function of the velocity anisotropy ratio vx/v y . The gray line indicates the spin-current polarization in the absence of a barrier, i.e., the intrinsic polarization of the Dirac altermagnet. Insets show the spin-resolved current ratio between the barrier ( Jx,σ ) and no-barrier ( J(0)  
+
+> x,σ
+
+) cases, with red for spin-up electrons and blue for spin-down electrons, and we have used barrier angle θ = 0 ◦. (e) Spin-current polarization corresponding to the parameters of panel (c), shown as a function of the barrier angle θ ranging from 0 ◦ to 45 ◦. For clarity, the curves for different θ values are vertically offset. The spacing between the black horizontal lines corresponds to ∆ P = 0 .25, and each successive curve represents an increase of 5 ◦ in θ. In all plots, results are shown for vF = 1 (arb. units) and T = 0. 
+
+(kx, k y ) to ( E↑, ζ ). Here, ζ is the angle between k and the vector ˆ x′ = cos θ ˆx + sin θ ˆy. Introducing the Heaviside step function H, we then immediately have 
+
+JL→R, ↑ = e
+
+(2 π)2
+
+X
+
+> γ=±
+
+γ
+
+Z γ∞
+
+> 0
+
+dE ↑
+
+Z 2π
+
+> 0
+
+dζ ∂(kx, k y )
+
+∂(E↑, ζ )
+
+× vg 
+
+> ↑
+
+(ζ, E ↑) T↑(ζ, E ↑) fL(E↑)[1 − fR(E↑)] 
+
+× H
+
+
+
+vgx, ↑(E↑, ζ )
+
+
+
+, (42) 
+
+JR→L, ↑ = e
+
+(2 π)2
+
+X
+
+> γ=±
+
+γ
+
+Z γ∞
+
+> 0
+
+dE ↑
+
+Z 2π
+
+> 0
+
+dζ ∂(kx, k y )
+
+∂(E↑, ζ )
+
+× vg 
+
+> ↑
+
+(ζ, E ↑) T↑(ζ, E ↑) fR(E↑)[1 − fL(E↑)] 
+
+× H
+
+
+
+−vgx, ↑(E↑, ζ )
+
+
+
+. (43) Here, we have introduced the Jacobian, 
+
+ ∂k x, ∂k y
+
+∂E ↑, ∂ζ 
+
+
+
+= det 
+
+> ∂k x
+> ∂E ↑
+> ∂k x
+> ∂ζ ∂k y
+> ∂E ↑
+> ∂k y
+> ∂ζ
+
+!
+
+, (44) and we have also defined vg 
+
+> ↑
+
+(ζ, E ↑) = vg 
+
+> ↑
+
+(k, E ↑) and 
+
+T↑(ζ, E ↑) = T↑(k, E ↑), with k = k(E↑, ζ ). In the sim-ple case where θ = 0, one can immediately write down 
+
+k(E↑, ζ ) = E↑
+
+ℏvx
+
+cos ζ ˆx+ E↑
+
+ℏvy
+
+sin ζ ˆy, (45) and we then get 
+
+JL→R, ↑ = eh2|vy |
+
+Z ∞−∞ 
+
+dE 
+
+Z π 
+
+> 2
+> −π
+> 2
+
+dζ (46) 
+
+× |E| cos 3(ζ) ˆ x
+
+1 − cos 2(q0,↑(E)W ) sin 2(ζ) fL(E)[1 − fR(E)] ,
+
+JR→L, ↑ = −eh2|vy |
+
+Z ∞−∞ 
+
+dE 
+
+Z π 
+
+> 2
+> −π
+> 2
+
+dζ (47) 
+
+× |E| cos 3(ζ) ˆ x
+
+1 − cos 2(q0,↑(E)W ) sin 2(ζ) fR(E)[1 − fL(E)] .
+
+We note that there are no further analytical simplifica-tions possible, and one typically has to resort to numer-ical integration techniques to evaluate J↑.Finally, we observe that, regardless of the values of θ,we can directly use the above results to obtain the spin-down current J↓ for a d-wave Dirac altermagnet, since we only have to make the replacements vx → vy and 
+
+vy → vx.9                                                             
+
+> FIG. 5. Spin-current polarization Pin a g-wave Dirac altermagnet. Yellow curves show the spin-current polarization
+> Pfor different barrier parameters: (a) V0= 5 (arb. units), eV = 0 .2V0,W= 2 .5 (arb. units); (b) V0= 5 (arb. units),
+> eV = 0 .2V0,W= 5 (arb. units); (c) V0= 10 (arb. units), eV = 0 .1V0,W= 2 .5 (arb. units); (d) V0= 10 (arb. units),
+> eV = 0 .1V0,W= 5 (arb. units), as a function of the form factor constant ξ.The gray line indicates the spin-current polarization in the absence of a barrier, i.e., the intrinsic polarization of the Dirac altermagnet. Insets show the spin-resolved current ratio between the barrier ( Jx,σ ) and no-barrier ( J(0)
+> x,σ ) cases, with red for spin-up electrons and blue for spin-down electrons, and we have used barrier angle θ= 0 ◦. (e) Spin-current polarization corresponding to the parameters of panel (c), shown as a function of the barrier angle θranging from 0 ◦to 45 ◦. For clarity, the curves for different θvalues are vertically offset. The spacing between the black horizontal lines corresponds to ∆ P= 0 .25, and each successive curve represents an increase of 2 .5◦in θ. In all plots, results are shown for vF= 1 (arb. units) and T= 0.
+> C. Results
+
+Plots of the spin-current polarization, as defined in Eq. (37), for the d-wave Dirac altermagnet are given in Fig. 4. In Figs. 4(a)–(d), we show P as a function of the velocity anisotropy ratio vx/v y for different barrier heights and widths. The gray curve denotes the intrin-sic polarization in the absence of a barrier, while the yellow curves show the polarization in the presence of a finite barrier. We find that the barrier can substan-tially modify the spin-current polarization. Depending on the barrier parameters, P may either be enhanced or suppressed relative to the intrinsic value due to the altermagnet, demonstrating that the barrier acts as an effective tuning knob for the spin polarization. This behavior originates from the spin-dependent transmission probabilities associated with Klein tunnel-ing in the anisotropic Dirac spectrum. As illustrated in the insets of Figs. 4(a)–(d), the spin-resolved currents 
+
+Jx,σ remain sizable even in the presence of the barrier, indicating that the enhancement of P is not accompanied by a strong suppression of the overall current. Instead, the barrier selectively modifies the transmission of the two spin channels, leading to a redistribution of the spin-resolved currents. In Fig. 4(e) we further explore the role of the barrier orientation by plotting P as a function of vx/v y for differ-ent barrier angles θ. The curves are vertically offset for clarity. The results show that the barrier angle provides an additional degree of control over the spin polarization, allowing for continuous tuning of P. Finally, we observe that P vanishes at θ = 45 ◦ both with and without a bar-rier. This follows from the spinful mirror-x symmetry relation E↑(k) = E↓(k), which enforces identical disper-sions for the two spin channels at this orientation and therefore eliminates the net spin polarization. Plots of the spin-current polarization for the g-wave Dirac altermagnet are given in Fig. 5. In Figs. 5(a)-(d), we present plots of P as a function of the form factor constant ξ for different values of the barrier height and width. Compared to the d-wave case, the barrier pa-rameters used here are smaller, since a sufficiently large potential barrier would push the states inside the bar-rier far away from the Dirac point, thereby suppressing the Klein tunneling regime and leading instead to pre-dominantly evanescent transmission. The values of V0
+
+considered here therefore ensure that propagating Dirac states remain available inside the barrier, allowing Klein 10 tunneling to occur. Although we have already seen that Klein tunneling can lead to a significant enhancement of the spin-current polarization in the d-wave case, this effect is even more pronounced for the g-wave Dirac altermagnet. For the small values of ξ considered here, the intrinsic spin-current polarization is nearly zero, as indicated by the gray curves. However, the inclusion of a potential bar-rier can significantly enhance the modulus of P, with the polarization increasing by several orders of magnitude in certain parameter regimes. As shown in the insets of Figs. 5(a)-(d), sizable spin currents are still maintained, indicating that this enhancement is not accompanied by a strong suppression of the total transmitted current. This behavior can be understood by revisiting the transmission coefficient plots in Fig. 3, which show that for certain ranges of the barrier angle θ, only one spin species exhibits perfect transmission at normal incidence while the other spin channel is strongly suppressed. The barrier therefore acts as an efficient spin filter, leading to a large enhancement of the spin-current polarization. In Fig. 5(e), we present plots of P as a function of ξ for different values of the barrier angle. The curves are verti-cally offset for clarity. As before, we observe that P goes to zero as θ approaches 22 .5◦, which reflects the symme-try point where the dispersions of the two spin channels become identical and the net spin-current polarization therefore vanishes. Although we have here presented plots that were eval-uated at temperature T = 0, we have verified that the observed effects are retained in the case of finite tem-peratures. Despite the fact that we have mostly worked with arbitrary units, we can also straightforwardly pro-vide some estimated values for the relevant parameters. Using Klein tunneling in graphene [23, 24] as our refer-ence point, we expect typical experimental values to be 
+
+V0 = 20 − 200 meV, W = 50 − 500 nm and T = 5 − 80 K. These parameter ranges are well within reach of current experimental techniques and have been routinely realized in modern graphene devices.  
+
+> D. Resonance conditions
+
+In the previous section, we found that the spin-current polarization P in ℓ-wave Dirac altermagnets depends strongly on both the barrier height V0 and the barrier width W . Ideally, one would like to be able to tune these parameters in such a way that one can either maximize or minimize the absolute value of P. Although it is a challenging task to find the optimal parameters for the 
+
+g-wave Dirac altermagnet, an analytical calculation can readily be performed for the d-wave case with θ = 0, as we will demonstrate here. Assuming a potential difference V > 0 [40], it is easily seen that P is a monotonically increasing (decreasing) function of the positive ratio Jx, ↑/J x, ↓ (Jx, ↓/J x, ↑). Since the dependence of the current on the barrier width W is only contained within the transmission coefficients Tσ , a necessary requirement for P to be maximal is then 
+
+∂∂W 
+
+ T↑(k, E ↑)
+
+T↓(k′, E ↓)
+
+
+
+= 0 ⇒ sin(2 q0,↑W )sin(2 q0,↓W ) = 0 , (48) for all k, k′ ∈ R2, while the corresponding requirement for P to be minimal is given by 
+
+∂∂W 
+
+ T↓(k, E ↓)
+
+T↑(k′, E ↑)
+
+
+
+= 0 ⇒ sin(2 q0,↓W )sin(2 q0,↑W ) = 0 . (49) To obtain the equations on the right-hand side of the arrow, we have made use of Eq. (31), and we have intro-duced 
+
+q0,↑ = V0
+
+ℏvx
+
+and q0,↓ = V0
+
+ℏvy
+
+. (50) Now, taking n ∈ Z, we find that all solutions to Eq. (48) are of the form 
+
+Wn, r,↑ =
+
+ ℏvx
+
+V0
+
+
+
+nπ, (51) 
+
+Wn, a,↑ =
+
+ ℏvx
+
+V0
+
+ 2n + 1 2 π, (52) where it should be noted that a solution for a given n is formally valid only if nv x/v y /∈ Z. In a similar fashion, we find that all solutions to Eq. (49) are of the form 
+
+Wn, r,↓ =
+
+ ℏvy
+
+V0
+
+
+
+nπ, (53) 
+
+Wn, a,↓ =
+
+ ℏvy
+
+V0
+
+ 2n + 1 2 π, (54) where a solution for a given n is now valid only if 
+
+nv y /v x /∈ Z. The subscript r, σ is used to denote the res-onant barrier widths that maximize the absolute value of the spin-σ current, while the subscript a, σ refers to the anti-resonant barrier widths that minimize said ab-solute value. The largest values of |P| are then obtained by choosing W such that it is as close as possible to a resonant value for one spin-species, while simultaneously approaching an anti-resonant value for the other spin-species. In Figs. 6(a) and (b), we plot the spin-current polariza-tion as a function of the velocity anisotropy ratio for the 
+
+n = 1 resonance, Eq. (51), and anti-resonance widths, Eq. (52). For the resonance width, we observe a strong amplification of P compared to the situation without a potential barrier. For small values of vx/v y in particu-lar, the presence of the barrier can lead to increases of nearly 300% in the spin-current polarization. Similarly, for the anti-resonance width, we find that the value of 
+
+P is always lower compared to the situation without a potential barrier, and we even find that their signs can be opposite for small ratios vx/v y . Analogous results are obtained when considering the resonance and anti-resonance widths of Eqs. (53) and (54). 11 0
+
+> 0.2
+> 0.4
+> 0.6
+> 0.8
+> P
+
+(a) resonance : W = vx    
+
+> V0
+> nπ
+> 12345
+> vx/v y
+> 0
+> 0.2
+> 0.4
+> 0.6
+> 0.8
+> P
+
+(b) anti − resonance : W = vx      
+
+> V0
+> 2n+ 1 2π
+> 0
+> 0.05
+> 0.1
+> 0.15
+> W
+> 135
+> 0
+> 1
+> Jx, σ /J  (0)
+> x, σ
+> 0
+> 0.05
+> 0.1
+> 0.15
+> 0.2
+> W
+> 135
+> 0
+> 1
+> Jx, σ /J  (0)
+> x, σ
+
+FIG. 6. Spin-current polarization for (anti-)resonant barrier widths. (a) Polarization when spin-up tunneling is always resonant (yellow), compared to the polarization when the barrier is absent (grey). The width of the barrier changes as a function of vx according to Eq. (51) with n = 1, as depicted by the green line. We note that the ratio vx/v y =(vF + ξ)/(vF − ξ) is varied by increasing ξ. As vx and vy are separately changing, W does not follow a linear trend. The inset shows the spin-resolved current ratio between the barrier (Jx,σ ) and no-barrier ( J(0)  
+
+> x,σ
+
+) cases, with red for spin-up and blue for spin-down electrons. (b) Same as (a) but for spin-up tunneling always being anti-resonant, i.e. the width of the barrier is calculated from Eq. (52), with n = 1. In both cases, 
+
+V0 = 50 (arb. units), eV = 0 .02 V0, vF = 1 (arb. units) and 
+
+T = 0. 
+
+V. CONCLUSION 
+
+We have shown that Klein tunneling in Dirac alter-magnets can serve as an effective means to control and enhance spin-current polarization. For the d-wave Dirac altermagnet, we find that enhancements of up to a fac-tor of 3 are readily achievable by a suitable tuning of the potential barrier parameters. For the g-wave Dirac alter-magnet even more promising results are obtained, as it is seen that the presence of a potential barrier can signifi-cantly boost the spin-current polarization, even when the intrinsic polarization due to the spin-split band structure is vanishingly small. For a barrier implemented via elec-trostatic gating, such a mechanism would in turn allow the spin-current polarization to be switched on and off via a gate voltage. These results thus establish the po-tential of altermagnetic Klein tunneling for applications as a spin-current switch and amplifier. Previous theoretical work has shown that Dirac points and altermagnetism can coexist [41, 42], suggesting that materials behaving as ℓ-wave Dirac altermagnets are physically realizable. Building on this, first-principles calculations in Ref. [43] identified several 2D candidate materials, including V 2STeO and Zr 2Br 2S, that exhibit both properties. Alternatively, one could also explore ei-ther 3D materials, as these may host altermagnetic Dirac surface states, or synthetic altermagnets [44], for which a Dirac-like spectrum might be obtained via twist engi-neering. Although we have made use of a specific minimal model to describe a Dirac altermagnet, we stress that the key results of this paper, namely the Klein-tunneling-induced spin-dependent transmission and altered spin-current po-larization, are expected to be general characteristics of Dirac altermagnets. This is because these phenomena arise fundamentally from the interplay between a Dirac-like spectrum and ℓ-wave symmetric spin splitting, which constitute the two defining features of these systems. Beyond experimental realization, several interesting theoretical questions regarding this system remain open. For instance, while we have focused on electron trans-port, a similar framework could be applied to study magnon dynamics in Dirac altermagnets. Additionally, the impact of Klein tunneling on other magnetoelectric responses, such as the spin galvanic effect, has yet to be explored. A comprehensive study of these effects will be essential for identifying the distinct transport signatures emerging in Dirac altermagnets, potentially enabling highly efficient spin filtering and switching in next-generation spintronic devices. Finally, our work highlights Klein tunneling in Dirac altermagnets as a promising mechanism for manipulating spin transport in quantum materials. The strong tun-ability of the spin-current polarization through barrier parameters and symmetry considerations suggests new avenues for engineering controllable spintronic function-ality in systems where Dirac fermions and altermagnetic order coexist. 
+
+ACKNOWLEDGEMENTS 
+
+The work of T.T.O. and R.A.D. was supported by the Dutch Research Council (NWO) by the research pro-gramme OCENW.XL21.XL21.058. L.E. and C.M.S. ac-knowledge the research program Materials for the Quan-tum Age (QuMat) for financial support. This program (registration number 024.005.006) is part of the Gravita-tion program financed by the Dutch Ministry of Educa-tion, Culture and Science (OCW). 12 
+
+[1] I. ˇZuti´ c, J. Fabian, and S. Das Sarma, Spintronics: Fun-damentals and applications, Rev. Mod. Phys. 76 , 323 (2004). [2] S. D. Bader and S. S. P. Parkin, Spintronics, Annu. Rev. Condens. Matter Phys. 1, 71 (2010). [3] A. Hirohata, K. Yamada, Y. Nakatani, I.-L. Prejbeanu, B. Di´ eny, P. Pirro, and B. Hillebrands, Review on spin-tronics: Principles and device applications, J. Magn. Magn. Mater 509 , 166711 (2020). [4] Y.-H. Li and R. Cheng, Moir´ e magnons in twisted bilayer magnets with collinear order, Phys. Rev. B 102 , 094404 (2020). [5] T. Song, Q.-C. Sun, E. Anderson, C. Wang, J. Qian, T. Taniguchi, K. Watanabe, M. A. McGuire, R. St¨ ohr, D. Xiao, T. Cao, J. Wrachtrup, and X. Xu, Direct visu-alization of magnetic domains and moir´ e magnetism in twisted 2D magnets, Science 374 , 1140 (2021). [6] H. Xie, X. Luo, G. Ye, Z. Ye, H. Ge, S. H. Sung, E. Rennich, S. Yan, Y. Fu, S. Tian, H. Lei, R. Hovden, K. Sun, R. He, and L. Zhao, Twist engineering of the two-dimensional magnetism in double bilayer chromium triiodide homostructures, Nat. Phys. 18 , 30–36 (2021). [7] J. Liu, X. Zhang, and G. Lu, Moir´ e magnetism and moir´ e excitons in twisted CrSBr bilayers, PNAS 122 ,e2413326121 (2025). [8] T. T. Osterholt, D. O. Oriekhov, L. Eek, C. M. Smith, and R. A. Duine, Twist-modulated magnetic in-teractions in bilayer van der Waals materials (2025), arXiv:2509.14122 [cond-mat.mes-hall]. [9] S. Jiang, J. Shan, and K. F. Mak, Electric-field switching of two-dimensional van der Waals magnets, Nat. Mater. 
+
+17 , 406–410 (2018). [10] Y. Wu, D. Li, C.-L. Wu, H. Y. Hwang, and Y. Cui, Elec-trostatic gating and intercalation in 2D materials, Nat. Rev. Mater. 8, 41 (2023). [11] F. Hendriks, R. R. Rojas-Lopez, B. Koopmans, and M. H. D. Guimar˜ aes, Electric control of optically-induced magnetization dynamics in a van der Waals ferromag-netic semiconductor, Nat. Commun. 15 , 1298 (2024). [12] A. Kirilyuk, A. V. Kimel, and T. Rasing, Ultrafast optical manipulation of magnetic order, Rev. Mod. Phys. 82 ,2731 (2010). [13] P. Elliott, T. M¨ uller, J. K. Dewhurst, S. Sharma, and E. K. U. Gross, Ultrafast laser induced local magnetiza-tion dynamics in Heusler compounds, Sci. Rep. 6, 38911 (2016). [14] M. Dabrowski, S. Guo, M. Strungaru, P. S. Keatley, F. Withers, E. J. G. Santos, and R. J. Hicken, All-optical control of spin in a 2D van der Waals magnet, Nat. Com-mun. 13 , 5976 (2022). [15] N. Bazazzadeh, M. Hamdi, S. Park, A. Khavasi, S. M. Mohseni, and A. Sadeghi, Magnetoelastic coupling en-abled tunability of magnon spin current generation in two-dimensional antiferromagnets, Phys. Rev. B 104 ,L180402 (2021). [16] D.-Q. To, C. Y. Ameyaw, A. Suresh, S. Bhatt, M. J. H. Ku, M. B. Jungfleisch, J. Q. Xiao, J. M. O. Zide, B. K. Nikoli´ c, and M. F. Doty, Giant spin Nernst effect in a two-dimensional antiferromagnet due to magnetoelastic coupling induced gaps and interband transitions between magnonlike bands, Phys. Rev. B 108 , 085435 (2023). [17] D. J. Gillard, D. Wolverson, O. M. Hutchings, and A. I. Tartakovskii, Spin-order-dependent magneto-elastic coupling in two dimensional antiferromagnetic MnPSe3 observed through Raman spectroscopy, npj 2D Mater. Appl. 8, 6 (2024). [18] G. Go and S. K. Kim, Magnetoelastic coupling-driven chiral spin textures: A skyrmion-antiskyrmion-like array, Phys. Rev. Lett. , (2026). [19] L. ˇSmejkal, J. Sinova, and T. Jungwirth, Beyond conven-tional ferromagnetism and antiferromagnetism: A phase with nonrelativistic spin and crystal rotation symmetry, Phys. Rev. X 12 , 031042 (2022). [20] O. Klein, Die Reflexion von Elektronen an einem Poten-tialsprung nach der relativistischen Dynamik von Dirac, Z. Phys. 53 , 157 (1929). [21] M. I. Katsnelson, K. S. Novoselov, and A. K. Geim, Chi-ral tunnelling and the Klein paradox in graphene, Nat. Phys. 2, 620–625 (2006). [22] C. W. J. Beenakker, Colloquium: Andreev reflection and Klein tunneling in graphene, Rev. Mod. Phys. 80 , 1337 (2008). [23] N. Stander, B. Huard, and D. Goldhaber-Gordon, Ev-idence for Klein tunneling in graphene p−n junctions, Phys. Rev. Lett. 102 , 026807 (2009). [24] A. F. Young and P. Kim, Quantum interference and Klein tunnelling in graphene heterojunctions, Nat. Phys. 5, 222 (2009). [25] R. Du, M.-H. Liu, J. Mohrmann, F. Wu, R. Krupke, H. von L¨ ohneysen, K. Richter, and R. Danneau, Tuning anti-Klein to Klein tunneling in bilayer graphene, Phys. Rev. Lett. 121 , 127706 (2018). [26] S. Lee, V. Stanev, X. Zhang, D. Stasak, J. Flowers, J. S. Higgins, S. Dai, T. Blum, X. Pan, V. M. Yakovenko, J. Paglione, R. L. Greene, V. Galitski, and I. Takeuchi, Perfect Andreev reflection due to the Klein paradox in a topological superconducting state, Nature 570 , 344 (2019). [27] T. E. O’Brien, M. Diez, and C. W. J. Beenakker, Mag-netic breakdown and Klein tunneling in a type-ii Weyl semimetal, Phys. Rev. Lett. 116 , 236401 (2016). [28] R. E. Wagner, M. R. Ware, Q. Su, and R. Grobe, Bosonic analog of the Klein paradox, Phys. Rev. A 81 , 024101 (2010). [29] Z. Zhang, Y. Feng, F. Li, S. Koniakhin, C. Li, F. Liu, Y. Zhang, M. Xiao, G. Malpuech, and D. Sol-nyshkov, Angular-dependent Klein tunneling in photonic graphene, Phys. Rev. Lett. 129 , 233901 (2022). [30] J. Harms, H. Yuan, and R. A. Duine, Enhanced Magnon Spin Current Using the Bosonic Klein Paradox, Phys. Rev. Appl. 18 , 064026 (2022). [31] S. Yuan, C. Sui, Z. Fan, J. Berakdar, D. Xue, and C. Jia, Magnonic Klein and acausal tunneling enabled by break-ing the anti parity-time symmetry in antiferromagnets, Commun. Phys. 6, 95 (2023). [32] A. L. Bassant, M. F. van Willigen, and R. A. Duine, Phonon amplification via magnetoelastic Klein scatter-ing, J. Appl. Phys. 137 , 093908 (2025). [33] M. Roig, A. Kreisel, Y. Yu, B. M. Andersen, and D. F. Agterberg, Minimal models for altermagnetism, Phys. Rev. B 110 , 144412 (2024). 13 
+
+[34] Y. Betancur-Ocampo, Partial positive refraction in asym-metric Veselago lenses of uniaxially strained graphene, Phys. Rev. B 98 , 205421 (2018). [35] A. Iurov, L. Zhemchuzhna, P. Fekete, G. Gumbs, and D. Huang, Klein tunneling of optically tunable Dirac particles with elliptical dispersions, Phys. Rev. Res. 2,043245 (2020). [36] Y. Betancur-Ocampo, G. Monsivais, and V. Jakubsk´ y, Topical Review: The rise of Klein tunneling in low-dimensional materials and superlattices (2026), arXiv:2512.18026 [cond-mat.mtrl-sci]. [37] R. Landauer, Spatial variation of currents and fields due to localized scatterers in metallic conduction, IBM J. Res. Dev. 1, 223 (1957). [38] M. B¨ uttiker, Y. Imry, R. Landauer, and S. Pinhas, Gen-eralized many-channel conductance formula with appli-cation to small rings, Phys. Rev. B 31 , 6207 (1985). [39] M. B¨ uttiker, Four-terminal phase-coherent conductance, Phys. Rev. Lett. 57 , 1761 (1986). [40] A similar argument can be constructed for a potential difference V < 0. [41] K. Parshukov, R. Wiedmann, and A. P. Schnyder, Topo-logical crossings in two-dimensional altermagnets: Sym-metry classification and topological responses, Phys. Rev. B 111 , 224406 (2025). [42] L. Liu, Q.-F. Sun, and Y.-T. Zhang, Tunable two-dimensional dirac-weyl semimetal phase induced by al-termagnetism, Phys. Rev. B 112 , L161411 (2025). [43] R. Xu, Y. Gao, and J. Liu, Chemical design of monolayer altermagnets, Natl. Sci. Rev. 13 , nwaf528 (2025). [44] A. Asgharpour, B. Koopmans, and R. A. Duine, Syn-thetic altermagnets, Phys. Rev. B 111 , 094412 (2025). 
+
+Appendix A: Calculation of the transmission amplitude for a single elliptic Dirac Hamiltonian 
+
+Imposing continuity on the scattering wave solution, Eq. (20), at the boundaries x = 0 and x = W , we arrive at the following set of linear equations, 
+
+
+
+1 + r = α + β, α e iq xW + β e iq r W = t e ik xW ,s(eiϕ (k) + r e iϕ (kr )) = s′(α e iϕ (q) + β e iϕ (qr )),s′(α e iq xW +iϕ (q) + β e iq r W +iϕ (qr )) = st e ik xW +iϕ (k).
+
+(A1) Using the second and the fourth equation of this set, we solve for α and β in terms of t. We have 
+
+ eiq xW eiq r W
+
+eiq xW +iϕ (q) eiq r W +iϕ (qr )
+
+  αβ
+
+
+
+= te ik xW
+
+ 1
+
+ss ′eiϕ (k)
+
+
+
+. (A2) This 2 × 2 system can be solved by means of Cramer’s rule, which yields the following solution, 
+
+αβ
+
+
+
+= t e ik xW
+
+
+
+e−iq xW
+
+ 1 − ss ′ei(ϕ(k)−ϕ(qr )) 
+
+1 − ei(ϕ(q)−ϕ(qr )) 
+
+
+
+e−iq r W
+
+ 1 − ss ′ei(ϕ(k)−ϕ(q)) 
+
+1 − ei(ϕ(qr )−ϕ(q)) 
+
+ (A3) Plugging the solutions for α and β back into the first and third equation of our set, we obtain 
+
+
+
+−1 eik xW
+
+
+
+e−iq xW
+
+ 1 − ss ′ei(ϕ(k)−ϕ(qr )) 
+
+1 − ei(ϕ(q)−ϕ(qr )) 
+
+
+
++ e−iq r W
+
+ 1 − ss ′ei(ϕ(k)−ϕ(q)) 
+
+1 − ei(ϕ(qr )−ϕ(q)) 
+
+ 
+
+−eiϕ (kr ) ss ′eik xW
+
+
+
+e−iq xW +iϕ (q)
+
+ 1 − ss ′ei(ϕ(k)−ϕ(qr )) 
+
+1 − ei(ϕ(q)−ϕ(qr )) 
+
+
+
++ e−iq r W +iϕ (qr )
+
+ 1 − ss ′ei(ϕ(k)−ϕ(q)) 
+
+1 − ei(ϕ(qr )−ϕ(q)) 
+
+ rt
+
+
+
+=
+
+ 1
+
+eiϕ (k)
+
+
+
+.
+
+(A4) We directly solve for t by means of Cramer’s rule, from which we find 
+
+t =det 
+
+ −1 1
+
+−eiϕ (kr ) eiϕ (k)
+
+
+
+det 
+
+
+
+−1 eik xW
+
+
+
+e−iq xW
+
+ 1 − ss ′ei(ϕ(k)−ϕ(qr )) 
+
+1 − ei(ϕ(q)−ϕ(qr )) 
+
+
+
++ e−iq r W
+
+ 1 − ss ′ei(ϕ(k)−ϕ(q)) 
+
+1 − ei(ϕ(qr )−ϕ(q)) 
+
+ 
+
+−eiϕ (kr ) ss ′eik xW
+
+
+
+e−iq xW +iϕ (q)
+
+ 1 − ss ′ei(ϕ(k)−ϕ(qr )) 
+
+1 − ei(ϕ(q)−ϕ(qr )) 
+
+
+
++ e−iq r W +iϕ (qr )
+
+ 1 − ss ′ei(ϕ(k)−ϕ(q)) 
+
+1 − ei(ϕ(qr )−ϕ(q)) 
+
+ 
+
+. (A5) One can in principle proceed to work out the 2 × 2 determinants given above, but it is obvious that in general the formula for the transmission amplitude t will not be of a simple form. However, in the Klein tunneling limit where 14 
+
+|V0| ≫ | E|, a relatively simple formula for t can be obtained, and we therefore focus on this special case. Defining 
+
+χ = arg 
+
+
+
+vx cos( θ) + iv y sin( θ)
+
+
+
+, (A6) we find that in said limit we have 
+
+ϕ(q) ≈ χ, (A7) 
+
+ϕ(qr ) ≈ χ + π. (A8) Consequently, we find 
+
+t ≈ eiϕ (kr ) − eiϕ (k)
+
+det 
+
+
+
+−1 ei(kx−η)W
+
+
+
+e−iqW 
+
+ 1 + ss ′ei(ϕ(k)−χ)
+
+2
+
+
+
++ eiqW 
+
+ 1 − ss ′ei(ϕ(k)−χ)
+
+2
+
+ 
+
+−eiϕ (kr ) ss ′ei(kx−η)W
+
+
+
+e−iqW +iχ 
+
+ 1 + ss ′ei(ϕ(k)−χ)
+
+2
+
+
+
+− eiqW +iχ 
+
+ 1 − ss ′ei(ϕ(k)−χ)
+
+2
+
+ 
+
+.
+
+We can directly simplify the expressions inside the determinant, finding 
+
+t ≈
+
+
+
+eiϕ (kr ) − eiϕ (k)
+
+
+
+e−i(kx−η)W
+
+det 
+
+ −1 cos( qW ) − iss ′ei(ϕ(k)−χ) sin( qW )
+
+−eiϕ (kr ) ss ′eiχ 
+
+
+
+− i sin( qW ) + ss ′ei(ϕ(k)−χ) cos( qW )
+
+
+
+.
+
+Working out this determinant, we then arrive at the final expression 
+
+t ≈
+
+
+
+eiϕ (kr ) − eiϕ (k)
+
+
+
+e−i(kx−η)W
+
+cos( qW )
+
+
+
+eiϕ (kr ) − eiϕ (k)
+
+
+
++ iss ′ sin( qW )
+
+
+
+eiχ − e−iχ ei(ϕ(kr )+ ϕ(k)) 
+
+ . (A9) The transmission coefficient is given by T = |t|2.
+
+Appendix B: Implementation of the g-wave Dirac altermagnet 
+
+For the g-wave Dirac altermagnet, we consider the spin-up Hamiltonian ˆH = vF ˆpxτx + vF ˆpy τy + ξ(ˆ p2 
+
+> x
+
+− ˆp2 
+
+> y
+
+)2τz , (B1) where we note that the corresponding spin-down Hamiltonian is related to the above result by a rotation of 45 ◦.Following Eq. (7), we can generalize to the case of an arbitrary angle θ w.r.t. the normal of the potential barrier, thus finding ˆH = vF (ˆ px cos θ − ˆpy sin θ)τx + vF (ˆ py cos θ + ˆ px sin θ)τy + ξ (ˆ px cos θ − ˆpy sin θ)2 − (ˆ py cos θ + ˆ px sin θ)22 τz . (B2) The corresponding dispersion relation is readily obtained by diagonalizing, 
+
+E(k) = ±ℏ
+
+q
+
+v2 
+
+> F
+
+(kx cos θ − ky sin θ)2 + v2 
+
+> F
+
+(ky cos θ + kx sin θ)2 + ℏ2ξ2 [( kx cos θ − ky sin θ)2 − (ky cos θ + kx sin θ)2]4,
+
+(B3) with the corresponding group velocity components then given by 
+
+vgx(k) = ℏ
+
+E(k)
+
+v2 
+
+> F
+
+cos θ(kx cos θ − ky sin θ) + v2 
+
+> F
+
+sin θ(ky cos θ + kx sin θ)+ 2 ℏ2ξ2 (kx cos θ − ky sin θ)2 − (ky cos θ + kx sin θ)23 [2 cos θ(kx cos θ − ky sin θ) − 2 sin θ(ky cos θ + kx sin θ)] 
+
+o
+
+,15 and 
+
+vgy (k) = ℏ
+
+E(k)
+
+−v2 
+
+> F
+
+sin θ(kx cos θ − ky sin θ) + v2 
+
+> F
+
+cos θ(ky cos θ + kx sin θ)+ 2 ℏ2ξ2 (kx cos θ − ky sin θ)2 − (ky cos θ + kx sin θ)23 [−2 sin θ(kx cos θ − ky sin θ) − 2 cos θ(ky cos θ + kx sin θ)] 
+
+o
+
+.
+
+For the Schr¨ odinger equation, including potential, i.e. ˆHΨ = [ E − V (x)] Ψ, we now have 
+
+" 4X
+
+> n=0
+
+Cn ˆpnx
+
+#
+
+Ψ = 0 ⇔
+
+" 4X
+
+> n=0
+
+Cn(−iℏ∂x)n
+
+#
+
+Ψ = 0, (B4) where the coefficients Cn are given by 
+
+C0 = [ V (x) − E]I − ℏvF ky sin θ τ x + ℏvF ky cos θ τ y + ξ
+
+2 [cos(4 θ) + 1] ℏ4k4 
+
+> y
+
+τz ,C1 = vF cos θ τ x + vF sin θ τ y + 2 ξ sin(4 θ) ℏ3k3 
+
+> y
+
+τz ,C2 = −ξ [3 cos(4 θ) − 1] ℏ2k2 
+
+> y
+
+τz ,C3 = −2 sin(4 θ) ℏky τz ,C4 = ξ
+
+2 [cos(4 θ) + 1] τz .
+
+Equation (B4) constitutes a fourth-order ODE, and we therefore need four boundary conditions at the barrier interfaces. We will require the wavefunction, and its first three derivatives, to be continuous across the interface, i.e. lim 
+
+> x→x−
+> 0
+
+Ψ(x, y ) = lim 
+
+> x→x+0
+
+Ψ(x, y ),
+
+lim 
+
+> x→x−
+> 0
+
+Ψ′(x, y ) = lim 
+
+> x→x+0
+
+Ψ′(x, y ),
+
+lim 
+
+> x→x−
+> 0
+
+Ψ′′ (x, y ) = lim 
+
+> x→x+0
+
+Ψ′′ (x, y ),
+
+lim 
+
+> x→x−
+> 0
+
+Ψ′′′ (x, y ) = lim 
+
+> x→x+0
+
+Ψ′′′ (x, y ), (B5) for x0 ∈ { 0, W }. Upon defining Φ ≡ (Ψ, Ψ′, Ψ′′ , Ψ′′′ )T , we cast eq. (B4) in the following form 
+
+
+
+I 0 0 00 I 0 00 0 I 00 0 0 C4
+
+ Φ′ =
+
+
+
+0 I 0 00 0 I 00 0 0 I
+
+−C0 iC 1 C2 −iC 3
+
+ Φ ↔ AΦ′ = M Φ, (B6) with I the 2 × 2 identity matrix. For the special angles θ = (2 m + 1) π/ 4, with m ∈ Z, we have C4 = C3 = 0, in which case the Hamiltonian is only second order in kx;
+
+I 00 −C2
+
+  Ψ′
+
+Ψ′′ 
+
+
+
+=
+
+ 0 I
+
+−C0 iC 1
+
+  ΨΨ′
+
+
+
+. (B7) Now, Eq. (B6) admits solutions of the form 
+
+Φ =
+
+> 8
+
+X
+
+> i=1
+
+αieλixχi, (B8) where the coefficients αi are to be determined from the boundary conditions and λi, χi satisfy A−1M χi = λiχi. A solution for which Re( λi) = 0 is propagating while Re( λi)̸ = 0 corresponds to an evanescent wave. For sufficiently small ξ, there is only one incoming/outgoing propagating mode, such that we write 
+
+ΦI = eik in xχin + re ik ref xχref + X
+
+> Re
+> 
+> λ(I)
+> j
+> 
+> >0
+
+α(I)  
+
+> j
+
+eλ(I) 
+
+> jx
+
+χ(I)  
+
+> j
+
+, (B9) 16 where we only take evanescent modes with Re( λj ) > 0 because those with Re( λj ) < 0 are not normalizable. In region II, we consider all modes 
+
+ΦII =
+
+> 8
+
+X
+
+> j=1
+
+α(II)  
+
+> j
+
+eλ(II)  
+
+> jx
+
+χ(II)  
+
+> j
+
+. (B10) Finally, in region III, we consider one transmitted mode and the evanescent modes that are normalizable, i.e. Re 
+
+
+
+λ(III) 
+
+> i
+
+
+
+< 0; 
+
+ΦIII = te ik tr xχtr + X
+
+> Re
+> 
+> λ(III)
+> j
+> 
+> <0
+
+α(III)  
+
+> j
+
+eλ(III)  
+
+> jx
+
+χ(III)  
+
+> j
+
+. (B11) These equations, subject to the boundary conditions in eq. (B5), are solved numerically to obtain the transmission probability |t|2. The results for the spin-down transmission are readily obtained by taking θ → θ + 45 ◦.

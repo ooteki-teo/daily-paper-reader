@@ -1,0 +1,196 @@
+Title: Interaction-Driven Ferrimagnetic Stripes in the Extended Hubbard Model
+
+URL Source: https://arxiv.org/pdf/2603.12309v1
+
+Published Time: Mon, 16 Mar 2026 00:01:53 GMT
+
+Number of Pages: 7
+
+Markdown Content:
+# Interaction-Driven Ferrimagnetic Stripes in the Extended Hubbard Model 
+
+Chunhan Feng, 1, 2 Miguel A. Morales, 1 and Shiwei Zhang 1
+
+> 1
+
+Center for Computational Quantum Physics, Flatiron Institute, 162 5th Avenue, New York, New York, USA 
+
+> 2
+
+Max Planck Institute for the Physics of Complex Systems, N¨ othnitzer Straße 38, 01187 Dresden, Germany 
+
+(Dated: March 16, 2026) Long-range interactions can qualitatively reorganize correlated-electron ground states. In the square-lattice Hubbard model, on-site repulsion produces antiferromagnetic spin and charge stripes upon doping. We show that including a nearest-neighbor repulsion V can dramatically alter this behavior. Using auxiliary-field quantum Monte Carlo and density matrix renormalization group methods, we find that, above a critical ratio V /U (∼ 0.25), the system develops a modulated ferrimagnetic order intertwined with checkerboard charge-density-wave. Inside the ferrimagnetic domains, spin density alternates between positive (or negative) and nearly zero values. When the total spin is fixed to zero, positive and negative domains alternate in space; when spins are unconstrained, a ferrimagnetic state emerges with finite magnetization. Including a next-nearest-neighbor hopping t′ changes the modulation wavelength but leaves the order robust. Our results demonstrate that even short-range nonlocal interactions can stabilize qualitatively new magnetic textures, with implications for cuprate materials and programmable quantum simulators. 
+
+Introduction . The Hubbard model [1] occupies a central role in quantum physics, having long served as the min-imal framework for understanding strong electron corre-lations. Despite its simplicity, it captures emergent be-havior ranging from antiferromagnetism and stripe cor-relations to pseudogap physics and unconventional su-perconductivity [2–8]. In real materials, however, elec-trons interact via the long-range Coulomb force, suggest-ing that it is crucial to understand the role of nonlocal terms beyond the onsite repulsion U . Indeed, extensions of the simplest Hubbard model have shown that addi-tional terms can qualitatively reshape the ground-state landscape. For example, next-nearest-neighbor hopping 
+
+t′ induces pronounced particle–hole asymmetry in stripe and pairing tendencies [7], demonstrating the sensitivity of electronic order to nonlocal energy scales. A nearest-neighbor Coulomb repulsion V is the sim-plest and most physically relevant nonlocal interaction. While the local U promotes antiferromagnetic (AFM) spin-density-wave (SDW) correlations [9, 10], a V term favors checkerboard charge-density-wave (CDW) order by penalizing adjacent charge fluctuations [9, 11–14]. A central question is how this CDW tendency competes with the stripe manifold of the doped Hubbard model, and whether it can stabilize qualitatively new intertwined spin-charge order away from half filling. In one dimen-sion, this competition leads to a surprisingly rich phase diagram, including CDW, SDW, and non-trivial bond-ordered-wave phases [15] separated by continuous or first-order transitions [16]. These results highlight that even short-range nonlocal interactions can substantially reor-ganize collective behaviors. In two dimensions, the extended Hubbard model re-mains far less understood. Exact diagonalization on small clusters shows that sufficiently strong V (≳ U/ 4) stabilizes CDW order at half-filling [17], and vari-ous approximate methods have mapped aspects of the SDW–CDW competition[18–20]. While there have been some explorations in doped systems[21–24], they have been mostly restricted to the context of superconducting instabilities, using approximate treatments. A number of key questions are unresolved, among them the fate of the ubiquitous stripe phases with extended interactions. How does a finite V impact the robustness and possible evolution of the spin and charge order away from half filling? What is the interplay with longer-range hopping, e.g., t′? This regime is computationally very difficult. Even with only a U term, determining the ground state in the Hubbard model required both high accuracy and access to large lattice sizes, as the underlying stripe or-ders are long-wavelength collective modes which sepa-rated from other competing phases by very small energy scales. Adding a new competing scale V significantly increases the computational challenge. For example, in auxiliary-field quantum Monte Carlo (AFQMC) meth-ods [25, 26], the presence of V increases the number of auxiliary-fields and worsens the sign problem. In density matrix renormalization group (DMRG) [27–29] or ten-sor network methods, extending the range of interaction increases the entanglement. In this work, we address these questions, using two complementary computational methods: constrained-path (CP) AFQMC and DMRG. The combination of these two high-accuracy many-body methods, as we fur-ther discuss below, creates a synergy that allows us to reach better predictive power and higher confidence in determining the ground-state phases. We find that a modest repulsion V /U ≳ 0.25 can qualitatively reorga-nize the stripe physics of the Hubbard model, stabiliz-ing a modulated ferrimagnetic order intertwined with a checkerboard CDW. When overall spin is balanced, the order is modulated polarized spin stripes, while in the spin-unrestricted case the system selects a ferrimagnetic realization with finite magnetization. The same order-ing tendency persists in the presence of next-nearest-neighbor hopping t′, which tunes the modulation wave-length. These findings are important to understanding cuprate materials — and emergent phenomena in gen-
+
+> arXiv:2603.12309v1 [cond-mat.str-el] 12 Mar 2026
+
+2                          
+
+> FIG. 1. Ground-state phases of the doped extended-Hubbard model at U/t = 8 .(a) Phase diagram versus nearest-neighbor repulsion V /U and hole doping δup to δ∼1/4. Crosses indicate parameter points where AFQMC calculations were performed. Representative spin and charge configurations are shown in (b)–(d). For V /U ≲0.25, the ground state exhibits conventional AFM spin stripes (b), similar to the t–UHubbard model. For V /U ≳0.25, the system develops a modulated ferrimagnetic order intertwined with a checkerboard CDW. In the spin-balanced sector ( N↑=N↓), positive–near-zero and negative–near-zero domains alternate in space (c); when spin polarization is unconstrained, the system selects a uniform positive–near-zero (or negative–near-zero) pattern with finite magnetization (d). The dashed orange curve in (a) indicates the critical doping at V= 0 below which stripe order vanishes in the thermodynamic limit [30].
+
+eral. They also provide valuable guidance for quantum simulation platforms. The simplicity of the Hamiltonian and the robustness of the phases we uncover make this system an excellent candidate for testing and realization with programmable quantum simulators. 
+
+Hamiltonian and Methodology. The Extended Hubbard model with nearest neighbor interaction is defined by the Hamiltonian 
+
+H = −t X
+
+> ⟨i,j ⟩,σ
+
+
+
+ˆc† 
+
+> iσ
+
+ˆcjσ + h .c.
+
+
+
++U X
+
+> i
+
+ˆni↑ ˆni↓ +V X
+
+> ⟨i,j ⟩
+
+ˆni ˆnj ,
+
+(1) where ⟨i, j ⟩ denotes nearest-neighbors, ˆ c† 
+
+> iσ
+
+(ˆ ciσ ) creates (annihilates) an electron with spin σ on site i, ˆ niσ =ˆc† 
+
+> iσ
+
+ˆciσ is the number operator for spin σ. The first term describes electron hopping and t serves as the en-ergy unit. The onsite and nearest-neighbor interaction strength are U and V respectively. N = Lx × Ly is the number of lattice sites; typically we use open boundary condition for the long direction ( x) and periodic bound-ary condition (PBC) for the short direction ( y), although we have performed spot checks with PBC in both direc-tions to ensure our overall results are not affected. To visualize stripe patterns we apply a weak boundary pin-ning field ( vp = 0 .1), which selects among nearly degen-erate symmetry-related configurations without affecting bulk observables (see SM). To characterize the magnetic orders, we measure the spin ⟨ ˆSzi ⟩ = 12 ⟨ˆni↑ − ˆni↓⟩ and charge densities ⟨ˆni⟩ = ⟨ˆni↑ + ˆ ni↓⟩ in real space. The total density of the system is n = 1 /N P
+
+> i
+
+⟨ˆni↑ + ˆ ni↓⟩,hence the doping is δ = 1 − n or n − 1 for hole/electron-doped system, respectively. We also measure the spin and charge structure factor, S = 1
+
+> N
+
+P
+
+> i
+
+⟨ ˆSzi ⟩eik ·ri ,and 
+
+C = 1
+
+> N
+
+P
+
+> i
+
+⟨ˆni −n⟩eik ·ri in momentum space via a Fourier Transform of spin and charge densities. We investigate the ground state properties using a combination of the CP AFQMC and DMRG approaches. Both of these methods have been extensively bench-marked [5, 7, 31, 32], and their combined use has been especially fruitful in the context of Hubbard mod-els [5, 7, 31, 32]. DMRG is a variational technique based on matrix product states and is particularly accurate for systems with low entanglement, such as quasi-one-dimensional systems with stronger interactions. In con-trast, the CP AFQMC method is size-extensive, in that it can treat different boundary conditions and 2D (or higher) systems, with systematic errors (e.g., in ⟨H⟩/N )which are not sensitive to system size. It relies on the CP approximation to control the sign problem, and its ac-curacy can be systematically improved by incorporating self-consistency procedures [33, 34], as discussed below. In this work, we employ these two complementary meth-ods, using DMRG to benchmark CP AFQMC in smaller cylindrical systems, and then using AFQMC to access larger two-dimensional clusters and assess the stability of the ordering patterns. In addition to the two types of many-body calculations, we also perform unrestricted and generalized Hartree Fock (UHF and GHF) calcula-tions, details of which are given in SM. This serves several purposes: to suggest candidate orders in the system; to provide a reference for understanding correlation effects; to help gauge system size dependency; and to produce trial wave functions for AFQMC in our self-consistent CP scheme, as illustrated in the top panel of Fig. 2. In the self-consistent CP calculation, we couple the AFQMC calculation, which always uses the original many-body Hamiltonian H in Eq. (1), to a UHF or GHF calculation with an effective Hartree-Fock (HF) Hamil-tonian. A HF wave function with Ueff and Veff is used as the initial trial wave function at step s = 0. CP-AFQMC then generates a set of output spin densities n
+
+nQMC(s+1) 
+
+> iσ
+
+o
+
+, which are used as input for the next HF calculation. The parameters Ueff and Veff are tuned such that the resulting HF spin densities 
+
+n
+
+nHF(s+1) 
+
+> iσ
+
+o
+
+closely match the input ones 
+
+n
+
+nQMC(s+1) 
+
+> iσ
+
+o
+
+. This updated GHF 3                  
+
+> FIG. 2. Schematic illustration of the self-consistent CP AFQMC approach, and benchmark against DMRG.
+> The top panel is a diagram of the self-consistent AFQMC procedure, in which an effective HF trial wave function is used as the constraint. The middle and bottom panels show the computed spin and charge densities, with four colors for the first four iterations of AFQMC and the solid line for DMRG. The calculation is at U= 8 , V /U = 0 .4, and δ= 1 /4, on a 16 ×4 rectangular lattice. In the middle panel, the convention for site label i(horizontal axis) is depicted in the inset, and the pink and blue shaded regions highlight domains of alternating spin polarization. In the bottom panel, the purple shading indicates the nodes of the spin modulation from the middle panel; enhanced charge density is observed at these locations. Sites are indexed by ( ix, i y)→iy+Ly(ix−1).
+
+solution 
+
+n
+
+nHF(s+1) 
+
+> iσ
+
+o
+
+is then used as the trial wave func-tion for the next iteration of the QMC calculation. The process is iterated until convergence. Convergence to the same final state from different initial trial wave functions derived from different states provides a strong indicator of the robustness of the final solution(see SM). 
+
+Results. Figure 1 summarizes the ground-state behavior as a function of V /U and doping δ at U/t = 8. We study cylindrical lattices up to Lx = 36 and Ly = 12; finite-size effects on the reported ordering patterns are limited (see SM). A qualitative reorganization occurs near a threshold 
+
+Vc/U ∼ 0.25. Below it, we obtain the familiar AFM spin-stripe ground state of the doped Hubbard model. Above it, we find a modulated ferrimagnetic order intertwined with a checkerboard CDW. The realization of this intertwined order depends on the spin constraint. In the spin-balanced sector ( N↑ =
+
+N↓), domains with opposite net polarization alternate in space, producing an antiferromagnetic arrangement of positive–near-zero and negative–near-zero stripe do-mains. When spin polarization is unconstrained, the sys-tem selects a ferrimagnetic realization with finite magne-tization. These variants are close in energy and can be tuned experimentally, e.g., by controlling spin imbalance in cold-atom platforms [35–45]. Representative spin and charge density patterns for different dopings are illustrated in Fig. 1(b)-(d). Below a threshold of V /U ∼ 0.25, the system exhibits a spin stripe phase with wavelength λ = 2 /δ , accompanied by a dip in charge density (i.e., a peak in hole density) at the interfaces between different AFM domains, as de-picted in Fig. 1(b). This is the same state as seen in the usual Hubbard model when V = 0. In contrast, above the threshold, a novel type of magnetic order appears. As illustrated in Fig. 1(c) (and also Fig. 2), this state is characterized by a modulated ferrimagnetic stripe tex-ture intertwined with a checkerboard CDW. For fixed 
+
+N↑ = N↓, the global pattern displays an alternating se-quence of domains with positive and negative magneti-zations. We also find another nearly degenerate ground state in which domains of the same sign cluster together and are separated from the opposite domains. When the total magnetization is allowed to vary, a ferrimagnetic phase is nearly degenerate in energy for δ ≳ 1/6 and be-come slightly favored δ = 1 /4 (see SM for further details on the energetics and near degeneracies). In this state, shown in Fig. 1(d), n = δ/ 2 spins flip from down to up, yielding a spin-up density of 1 /2, the maximum allowed in a staggered pattern without incurring penalties due to nearest-neighbor repulsion V .Before characterizing these phases more quantitatively, we illustrate our computational approaches, with an out-line of the self-consistent CP AFQMC and a compar-ison between it and DMRG, in Fig. 2. The upper panel sketches the self-consistency procedure in the CP-AFQMC. In the lower panels, we plot the computed spin (Szi ) and charge ( ni) densities along site index i on a 16 × 4 lattice, from both DMRG and the first several it-erations of AFQMC. Convergence is reached within a few iterations, and excellent agreement is seen between the converged result and DMRG. This benchmark demon-strates that the intertwined order is not an artifact of the constraint or trial wave function, but a robust correlated ground-state feature. The ground state for this particular system is similar to that depicted in Fig. 1(c). Alternat-ing polarized spin stripes emerge: within each domain, spin densities alternate between positive and almost zero (pink regions) or negative and almost zero (blue regions). A robust CDW pattern develops across the entire lattice. Charge density oscillations are particularly enhanced at domain boundaries (indicated by purple shading). To further quantify these phases, Fig. 3 presents the spin and charge properties as a function of nearest neigh-bor interaction strength V /U . Spin densities linecuts and hole densities (average over all rows) are plotted along the site index ix in Fig. 3(a)(b). When V /U ≲ 0.25, the system exhibits spin stripes (left) with a wavelength 
+
+λ = 2 /δ , with hole accumulated at the node of the spin stripe. Consequently, the accompanying charge modula-tion has a wavelength λ = 1 /δ . As V /U increases, oscil-lations in spin densities and charge modulation remain nearly unchanged except near the boundaries. When 4           
+
+> FIG. 3. Characterization of the magnetic and charge properties in the different phases. The left, middle, and right panels correspond to the three phases shown in Fig. 1b, Fig. 1c, and Fig. 1d, respectively, following the same color schemes. The top two rows show spin and hole density line cuts, with the shades of color in the different curves in each indicating different values of V /U .In the botton panel, the spin and charge structure factors are plotted in momentum-space for the three phases, each at a selected value of V /U
+> (shown in the legends in the spin plots). All simulations are performed on a 24 ×8 lattice with U= 8.
+
+V /U exceeds ∼ 0.25, the new ferrimagnetic state is seen. There are several nearly-degenerate forms of this state which are energetically difficult to resolve, as we have dis-cussed. When the total magnetization m is constrained to zero, the most typical state seen, especially at smaller values of V and low doping, is the one in which the spin and charge modulations maintain the same wavelengths as in the spin stripe phase, but the holes now accumulate at the maxima of the spin amplitude instead of the nodes. A state in which the modulation wavelength is larger, i.e., with a smaller number of ferrimagnetic domains, is nearly degenerate.(see SM) When the total magnetization is al-lowed to vary, a global ferrimagnetic order emerges, with coexisting CDW. The right panels show spin and charge patterns with wavelength of λ = 1 /δ . Note that the stag-gered spin density does not cross the zero line, indicating the absence of a π phase shift between neighboring do-mains. In all these cases, the change in spin and charge amplitudes with V /U remains modest, as seen in the mid-dle and right panels in the top two rows. Panels (c) and (d) display spin and charge structure factors, i.e. the Fourier transforms of the corresponding real-space densities for the three phases. At V /U = 0, the system resides in the spin stripe phase with wavelength 
+
+λ = 2 /δ , giving rise to a peak at ((1 −δ)π, π ) = (5 π/ 6, π ). In the charge channel, holes accumulate at AFM domain boundaries, leading to a modulation with wavelength 
+
+λ = 1 /δ , and a corresponding peak at (2 δπ, 0) in the mo-mentum space. When V /U = 0 .4 and N↑ = N↓ are fixed, the peak at ((1 − δ)π, π ) persists, reflecting the alter-nating spin texture (positive/negative and zero) within domains. A new peak emerges at ( δπ, 0) = ( π/ 6, 0), sig-naling the periodic alternation between domains. Co-existing CDW order manifests as a dominant peak at (π, π ). Meanwhile, in real space, holes accumulate at the maxima of spin densities, which appears as a dip at ((1 −2δ)π, π ) in momentum space. When the spin degrees of freedom are released, a ferrimagnetic order emerges to-gether with CDW order. Thus a peak at (0 , 0) develops in the spin channel, indicating a finite total magnetiza-tion, while the peak at ( π, π ) corresponds to the overall staggered spin pattern without any π phase-shifted do-mains as seen in the other two phases. Additional peaks at ((1 − δ)π, π ) and ( δπ, 0) reflect the periodicity λ = 1 /δ 
+
+along the horizontal direction. In the charge channel, the peaks and dips appear at the same positions as in the middle panel. Finally we explore the effects of next-nearest-neighbor hopping term Ht′ = −t′ P
+
+> ⟨⟨ i,j ⟩⟩ ,σ
+
+
+
+ˆc† 
+
+> iσ
+
+ˆcjσ + h .c.
+
+
+
+in Fig. 4. Panels (a) and (b) show spin and charge con-figurations at t′ = 0 for V /U = 0 .1 and 0 .3, serving as a reference. As discussed earlier, the former exhibits spin stripes with charge modulations, while the latter shows alternating polarized spin stripes and CDW pat-terns. When t′ is introduced, electron- and hole-doped regimes behave differently due to the absence of particle-hole symmetry (panels c–f). In the hole-doped case, par-tially filled spin stripes show up for V /U ≲ 0.25, con-sistent with the pure Hubbard model with V = 0 at finite t′ = −0.2 [7]. Notably, t′ controls the number of stripes without altering the fundamental spin order. When V /U ≳ 0.25, alternating polarized spin stripes coexist with CDW patterns, with a shorter wavelength compared with the t′ = 0 case. The transition from spin stripes to alternating magnetic order still occurs near Vc/U ∼ 0.25, mirroring the t′ = 0 case. On the electron-doped side, the number of stripes decreases (i.e., the wavelength increases) compared to the t′ = 0 case, resulting in overfilled spin-stripe states. The longer wavelength makes the stripe order more difficult to ob-serve, and long-range antiferromagnetic (AFM) order is expected to dominate in experiments, especially at low doping [7]. For V /U ≲ 0.25, excess electrons accumulate near the stripe nodes. A similar transition occurs around 
+
+Vc/U ∼ 0.25, above which polarized spin stripes coexist with CDW order. 
+
+Conclusions. In this work, we have investigated the effects of nearest-neighbor interactions in the Hubbard model using two complementary high-precision many-body approaches. We uncover a new phase, a mod-ulated ferrimagnetic order intertwined with a checker-board CDW, when the strength V /U ≳ 0.25. This phase can manifest itself in several forms depending on the constraint on global spin polarization, details of the pa-rameters, and even finite-size effects. The next-nearest-neighbor hopping primarily tunes the stripe periodicity, while leaving the transition between conventional spin stripes and the new phase essentially unchanged. Our results uncover novel magnetic orders in the ex-5
+
+FIG. 4. Effect of next-nearest-neighbor hopping t′ on spin and charge order. Spin and charge density profiles are shown for two values of V /U (0 .1 in the lower half and 0 .3 in the upper half), for three values of next-near-neighbor hopping 
+
+t′/t , representing t′ = 0 as studied above and hole- and electron-doped cases, respectively. Partially filled stripes appear in the hole-doped case, while overfilled stripes are seen under electron doping when t′ = −0.2. The transition from pure spin stripes to the coexistence of charge density waves (CDW) and alternating polarized spin stripes occurs near V /U ∼ 0.25, independent of the sign of doping or the value of t′. All calculations are performed at doping δ = 1 /6 and U/t = 8. 
+
+tended Hubbard model and highlight the crucial role of longer-range interactions in shaping the collective behavior of strongly correlated systems. The emer-gence of polarized and ferrimagnetic stripe phases pro-vides a new platform for studying the interplay between spin, charge, and magnetization in correlated materi-als, and raises important questions about their potential impact on superconducting instabilities. Importantly, our findings are directly relevant to ongoing experimen-tal efforts in quantum simulation[46]. Modern cold-atom platforms, including dipolar gases and Rydberg-dressed systems[47–49], as well as weakly screened moir´ eheterostructures[50], offer realistic routes to realize the Hubbard model with tunable nearest-neighbor interac-tions on cylindrical geometries. Our work thus provides concrete guidance for the experimental exploration of interaction-driven stripe phases and correlated orders be-yond the conventional Hubbard paradigm. 
+
+Acknowledgements- We thank Ryan Levy, Yiqi Yang, and Kyle Eskridge for providing useful benchmark and help-ful discussion. We thank the Flatiron Institute Scien-tific Computing Center for computational resources. The Flatiron Institute is a division of the Simons Foundation. 
+
+[1] J. Hubbard and B. H. Flowers, Electron correlations in narrow energy bands, Proceedings of the Royal Society of London. Series A. Mathematical and Physical Sciences 
+
+276 , 238 (1963). [2] S. A. Kivelson, I. P. Bindloss, E. Fradkin, V. Oganesyan, J. M. Tranquada, A. Kapitulnik, and C. Howald, How to detect fluctuating stripes in the high-temperature super-conductors, Rev. Mod. Phys. 75 , 1201 (2003). [3] C. Proust and L. Taillefer, The remarkable underlying ground states of cuprate superconductors, Annual Re-view of Condensed Matter Physics 10 , 409 (2019). [4] D. P. Arovas, E. Berg, S. A. Kivelson, and S. Raghu, The Hubbard model, Annual Review of Condensed Matter Physics 13 , 239 (2022). [5] M. Qin, C.-M. Chung, H. Shi, E. Vitali, C. Hubig, U. Schollw¨ ock, S. R. White, and S. Zhang (Simons Col-laboration on the Many-Electron Problem), Absence of superconductivity in the pure two-dimensional Hubbard model, Phys. Rev. X 10 , 031016 (2020). [6] A. Wietek, Y.-Y. He, S. R. White, A. Georges, and E. M. Stoudenmire, Stripes, antiferromagnetism, and the pseu-dogap in the doped Hubbard model at finite temperature, Phys. Rev. X 11 , 031007 (2021). [7] H. Xu, C.-M. Chung, M. Qin, U. Schollw¨ ock, S. R. White, and S. Zhang, Coexistence of superconductivity with par-tially filled stripes in the Hubbard model, Science 384 ,eadh7691 (2024). [8] F. ˇSimkovic, R. Rossi, A. Georges, and M. Ferrero, Origin and fate of the pseudogap in the doped Hubbard model, Science 385 , eade9194 (2024). [9] J. E. Hirsch, Phase diagram of the one-dimensional molecular-crystal model with Coulomb interactions: Half-filled-band sector, Phys. Rev. B 31 , 6022 (1985). [10] S. R. White, D. J. Scalapino, R. L. Sugar, E. Y. Loh, J. E. Gubernatis, and R. T. Scalettar, Numerical study of the two-dimensional Hubbard model, Phys. Rev. B 40 ,506 (1989). [11] J. S´ olyom, The Fermi gas model of one-dimensional con-ductors, Advances in Physics 28 , 201 (1979). [12] R. A. Bari, Effects of short-range interactions on electron-6
+
+charge ordering and lattice distortions in the localized state, Phys. Rev. B 3, 2662 (1971). [13] J. E. Hirsch, Charge-density-wave to spin-density-wave transition in the extended Hubbard model, Phys. Rev. Lett. 53 , 2327 (1984). [14] M. Nakamura, Mechanism of CDW-SDW transition in one dimension, Journal of the Physical Society of Japan 
+
+68 , 3123 (1999). [15] M. Nakamura, Tricritical behavior in the extended Hub-bard chains, Phys. Rev. B 61 , 16377 (2000). [16] P. Sengupta, A. W. Sandvik, and D. K. Campbell, Bond-order-wave phase and quantum phase transitions in the one-dimensional extended Hubbard model, Phys. Rev. B 
+
+65 , 155113 (2002). [17] Y. Ohta, K. Tsutsui, W. Koshibae, and S. Maekawa, Exact-diagonalization study of the Hubbard model with nearest-neighbor repulsion, Phys. Rev. B 50 , 13594 (1994). [18] M. Aichhorn, H. G. Evertz, W. von der Linden, and M. Potthoff, Charge ordering in extended Hubbard mod-els: Variational cluster approach, Phys. Rev. B 70 ,235107 (2004). [19] B. Davoudi and A.-M. S. Tremblay, Nearest-neighbor re-pulsion and competing charge and spin order in the ex-tended Hubbard model, Phys. Rev. B 74 , 035113 (2006). [20] J. Paki, H. Terletska, S. Iskakov, and E. Gull, Charge order and antiferromagnetism in the extended Hubbard model, Phys. Rev. B 99 , 245146 (2019). [21] W.-M. Huang, C.-Y. Lai, C. Shi, and S.-W. Tsai, Unconventional superconducting phases for the two-dimensional extended Hubbard model on a square lattice, Phys. Rev. B 88 , 054504 (2013). [22] A. Reymbaut, M. Charlebois, M. F. Asiani, L. 1Fratino, P. S´ emon, G. Sordi, and A.-M. S. Tremblay, Antagonis-tic effects of nearest-neighbor repulsion on the supercon-ducting pairing dynamics in the doped Mott insulator regime, Phys. Rev. B 94 , 155146 (2016). [23] M. Jiang, U. R. H¨ ahner, T. C. Schulthess, and T. A. Maier, d-wave superconductivity in the presence of nearest-neighbor Coulomb repulsion, Phys. Rev. B 97 ,184507 (2018). [24] W.-C. Chen, Y. Wang, and C.-C. Chen, Superconducting phases of the square-lattice extended Hubbard model, Phys. Rev. B 108 , 064514 (2023). [25] S. Zhang, J. Carlson, and J. E. Gubernatis, Constrained path quantum Monte Carlo method for fermion ground states, Phys. Rev. Lett. 74 , 3652 (1995). [26] S. Zhang, J. Carlson, and J. E. Gubernatis, Constrained path Monte Carlo method for fermion ground states, Phys. Rev. B 55 , 7464 (1997). [27] S. R. White, Density matrix formulation for quantum renormalization groups, Phys. Rev. Lett. 69 , 2863 (1992). [28] S. R. White, Density-matrix algorithms for quantum renormalization groups, Phys. Rev. B 48 , 10345 (1993). [29] U. Schollw¨ ock, The density-matrix renormalization group, Rev. Mod. Phys. 77 , 259 (2005). [30] H. Xu, H. Shi, E. Vitali, M. Qin, and S. Zhang, Stripes and spin-density waves in the doped two-dimensional Hubbard model: Ground state phase diagram, Phys. Rev. Res. 4, 013239 (2022). [31] J. P. F. LeBlanc, A. E. Antipov, F. Becca, I. W. Bulik, G. K.-L. Chan, C.-M. Chung, Y. Deng, M. Ferrero, T. M. Henderson, C. A. Jim´ enez-Hoyos, E. Kozik, X.-W. Liu, A. J. Millis, N. V. Prokof’ev, M. Qin, G. E. Scuseria, H. Shi, B. V. Svistunov, L. F. Tocchio, I. S. Tupitsyn, S. R. White, S. Zhang, B.-X. Zheng, Z. Zhu, and E. Gull (Simons Collaboration on the Many-Electron Problem), Solutions of the two-dimensional Hubbard model: Bench-marks and results from a wide range of numerical algo-rithms, Phys. Rev. X 5, 041041 (2015). [32] B.-X. Zheng, C.-M. Chung, P. Corboz, G. Ehlers, M.-P. Qin, R. M. Noack, H. Shi, S. R. White, S. Zhang, and G. K.-L. Chan, Stripe order in the underdoped region of the two-dimensional Hubbard model, Science 358 , 1155 (2017). [33] M. Qin, H. Shi, and S. Zhang, Coupling quantum Monte Carlo and independent-particle calculations: Self-consistent constraint for the sign problem based on the density or the density matrix, Phys. Rev. B 94 , 235119 (2016). [34] C. Feng, E. Ibarra-Garc´ ıa-Padilla, K. R. A. Hazzard, R. Scalettar, S. Zhang, and E. Vitali, Metal-insulator transition and quantum magnetism in the SU(3) fermi-Hubbard model, Phys. Rev. Res. 5, 043267 (2023). [35] M. W. Zwierlein, A. Schirotzek, C. H. Schunck, and W. Ketterle, Fermionic superfluidity with imbalanced spin populations, Science 311 , 492 (2006). [36] G. B. Partridge, W. Li, R. I. Kamar, Y. Liao, and R. G. Hulet, Pairing and Phase Separation in a Polarized Fermi Gas, Science 311 , 503 (2006). [37] Y. Shin, M. W. Zwierlein, C. H. Schunck, A. Schirotzek, and W. Ketterle, Observation of Phase Separation in a Strongly Interacting Imbalanced Fermi Gas, Phys. Rev. Lett. 97 , 030401 (2006). [38] C. Schunck, Y. Shin, A. Schirotzek, M. Zwierlein, and W. Ketterle, Pairing without superfluidity: The ground state of an imbalanced fermi mixture, Science 316 ,10.1126/science.1140749 (2007). [39] Y.-i. Shin, C. H. Schunck, A. Schirotzek, and W. Ket-terle, Phase diagram of a two-component Fermi gas with resonant interactions, Nature 451 , 689 (2008). [40] D. Mitra, P. T. Brown, P. Schauß, S. S. Kondov, and W. S. Bakr, Phase Separation and Pair Condensation in a Spin-Imbalanced 2D Fermi Gas, Phys. Rev. Lett. 117 ,093601 (2016). [41] A. Schirotzek, C.-H. Wu, A. Sommer, and M. Zwier-lein, Observation of Fermi polarons in a tunable Fermi liquid of ultracold atoms, Physical Review Letters 102 ,10.1103/PhysRevLett.102.230402 (2009). [42] Y.-a. Liao, A. S. C. Rittner, T. Paprotta, W. Li, G. B. Partridge, R. G. Hulet, S. K. Baur, and E. J. Mueller, Spin-imbalance in a one-dimensional Fermi gas, Nature 
+
+467 , 567 (2010). [43] P. Massignan, R. Schmidt, G. E. Astrakharchik, A. ˙Imamoglu, M. Zwierlein, J. J. Arlt, and G. M. Bruun, Polarons in atomic gases and two-dimensional semicon-ductors (2025), arXiv:2501.09618 [cond-mat.quant-gas]. [44] C. Feng, T. Hartke, Y.-Y. He, B. Oreg, C. Turnbaugh, N. Jia, M. Zwierlein, and S. Zhang, In search of exotic pairing in the Hubbard model: many-body computation and quantum gas microscopy (2025), arXiv:2509.02688 [cond-mat.quant-gas]. [45] T. Hartke, B. Oreg, C. Feng, C. Turnbaugh, J. Hertkorn, Y.-Y. He, N. Jia, E. Khatami, S. Zhang, and M. Zwier-lein, Competition of fermion pairing, magnetism, and charge order in the spin-doped attractive Hubbard gas (2025), arXiv:2511.10605 [cond-mat.quant-gas]. 7
+
+[46] M. Xu, L. H. Kendrick, A. Kale, Y. Gang, C. Feng, S. Zhang, A. W. Young, M. Lebrat, and M. Greiner, A neutral-atom Hubbard quantum simulator in the cryo-genic regime, Nature 642 , 909 (2025). [47] E. Guardado-Sanchez, B. M. Spar, P. Schauss, R. Belyan-sky, J. T. Young, P. Bienias, A. V. Gorshkov, T. Iadecola, and W. S. Bakr, Quench dynamics of a Fermi gas with strong nonlocal interactions, Phys. Rev. X 11 , 021036 (2021). [48] T. Langen, G. Valtolina, D. Wang, and J. Ye, Quantum state manipulation and cooling of ultracold molecules, Nature Physics 20 , 702 (2024). [49] S. L. Cornish, M. R. Tarbutt, and K. R. A. Hazzard, Quantum computation and quantum simulation with ul-tracold molecules, Nature Physics 20 , 730 (2024). [50] Q. Xu, A. Fischer, N. Tancogne-Dejean, T. Zhang, E. V. n. Bostr¨ om, M. Claassen, D. M. Kennes, A. Ru-bio, and L. Xian, Engineering 2d square lattice Hubbard models in 90 ° twisted GeX /SnX (X = S, se) Moir´ e su-perlattices, Phys. Rev. X 15 , 041049 (2025).

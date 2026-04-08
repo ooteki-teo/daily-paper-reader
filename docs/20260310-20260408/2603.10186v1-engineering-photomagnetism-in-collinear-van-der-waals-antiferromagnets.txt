@@ -1,0 +1,439 @@
+Title: Engineering photomagnetism in collinear van der Waals antiferromagnets
+
+URL Source: https://arxiv.org/pdf/2603.10186v1
+
+Published Time: Thu, 12 Mar 2026 00:14:57 GMT
+
+Number of Pages: 14
+
+Markdown Content:
+# Engineering photomagnetism in collinear van der Waals antiferromagnets 
+
+M. Na ∗,1 V. Radovskaia ∗,1, a) D. Khusyainov, 2 P. Kim, 2 K. Mukhuti, 2, 3 P. C. M. Christianen, 2, 3 
+
+E. Kochetkova, 4 A. Isaeva, 4, 5, 6 A. de Visser, 4 D. Pashov, 7 M. V. Schilfgaarde, 8 E. H. T. Teo, 9, 10 
+
+A. Chaturvedi, 11 S. Acharya, 8 Th. Rasing, 2 A. V. Kimel, 2 and D. Afanasiev 2, b) 
+
+> 1)
+
+Radboud University, Institute for Molecules and Materials, 6525 AJ Nijmegen, The Netherlands 
+
+> 2)
+
+Radboud University, Institute for Molecules and Materials, 6525 AJ Nijmegen, The Netherlands 
+
+> 3)
+
+HFML-FELIX, Toernooiveld 7, 6525 ED Nijmegen, the Netherlands 
+
+> 4)
+
+Institute of Physics, University of Amsterdam, Science Park 904, Amsterdam 1098 XH, The Netherlands 
+
+> 5)
+
+Department of Physics, Technische Universit¨ at Dortmund, 44227 Dortmund, Germany 
+
+> 6)
+
+Research Center Future Energy Materials and Systems, 44227 Dortmund, Germany 
+
+> 7)
+
+King’s College London, Theory and Simulation of Condensed Matter, The Strand, WC2R 2LS London, UK 
+
+> 8)
+
+Materials, Chemical and Computational Science Directorate, National Laboratory of the Rockies, Golden, CO, 80401 USA 
+
+> 9)
+
+School of Electrical and Electronic Engineering, Nanyang Technological University, Singapore 639798, Singapore 
+
+> 10)
+
+School of Materials Science and Engineering, Nanyang Technological University, Singapore 639798, Singapore 
+
+> 11)
+
+Temasek Laboratories, Nanyang Technological University, 50 Nanyang Drive, 637553, Singapore 
+
+Achieving efficient ultrafast optical control of antiferromagnetic spin dynamics is a central goal for next-generation high-speed THz spintronic and magnonic devices. Resonant optical pump-ing of crystal-field–split d–d orbital multiplets in magnetic TM ions directly modulates exchange and spin–orbit interactions, inducing large-amplitude coherent spin precession. However, such effects are limited to a handful of systems and there is no general strategy to enhance d–d pho-tomagnetism in antiferromagnets. Here, we demonstrate the engineering of photomagnetism via TM-ion doping in collinear van der Waals antiferromagnets. In Mn 1−xNi xPS 3, small amounts of Ni 2+ activate a strong photomagnetic response while largely preserving the N´ eel ground state. Even 10% Ni boosts the response by more than an order of magnitude compared to pure MnPS 3,with resonant pumping of Ni 2+ d–d transitions driving large-amplitude coherent spin preces-sion and providing helicity-dependent phase control. Tuning the pump energy across the full Mn 1−xNi xPS 3 composition range shows that Ni excitations remain effective across competing N´ eel and zig-zag antiferromagnetic states while supporting tunable-frequency coherent spin pre-cession. These results establish TM-ion doping as a versatile strategy to harness orbital multiplet excitations for ultrafast, low-dissipation spin control in van der Waals antiferromagnets. 
+
+> *
+
+These authors contributed equally. 
+
+> a) Electronic mail: viktoriia.radovskaia@ru.nl
+> b) Electronic mail: d.afanasiev@science.ru.nl
+> arXiv:2603.10186v1 [cond-mat.mtrl-sci] 10 Mar 2026
+
+2 
+
+> I. INTRODUCTION
+
+Photomagnetism, the direct control of magnetic states through resonant light-matter interactions 1
+
+offers a route toward ultrafast and energy-efficient spin manipulation beyond the limits of magnetic-field-based approaches 2–4 . To date, photomagnetism has been observed across a wide range of material platforms, from single-molecule magnets 5,6 , to ferro- and antiferromagnetically (AFM) ordered solids 7–9 .Unlike optomagnetic effects, such as the inverse Faraday 10 or Cotton-Mouton effects 11 , which are non-dissipative and, in principle, do not require photon absorption, photomagnetic effects rely explicitly on absorption and are therefore expected to be highly efficient in controlling spins 12 . Photon absorption promotes specific electronic or phononic excitations that modify orbital occupations and, consequently, magnetic anisotropy and exchange interactions 9,13–17 . Such resonant control provides a fundamentally different paradigm from laser-induced heating, opening tantalizing prospects for coherent manipulation of spins. This capability is particularly critical in collinear antiferromagnets. Their vanishing net magnetiza-tion precludes conventional magnetic-field control, while their intrinsic terahertz spin dynamics demand optical-bandwidth excitation with spin-precession amplitudes sufficient for switching 4,18–20 . Among avail-able strategies, the resonant optical pumping of crystal-field split orbital multiplets, such as localized 
+
+d-d and f-f transitions in transition-metal (3 d) and rare-earth (4 f ) antiferromagnets, has emerged as a promising route 7,8,14,21,22 . In magnetic transition-metal (TM) ions, these transitions are nominally parity- (Laporte) and spin-forbidden in centrosymmetric environments and acquire oscillator strength only through symmetry breaking mechanisms 23,24 , for example via vibronic coupling, local lattice distor-tions, or hybridization with ligands. Nevertheless, recent progress has shown that resonant femtosecond pumping of these states can generate exceptionally strong photomagnetic responses, despite low absorp-tion. In particular, resonant d-d photoexcitation can drive large-amplitude spin precession in AFMs by transiently modifying exchange interactions 15 , anisotropy 8,14,25,26 , and has even enabled switching between metastable states in ferrimagnets 7,22 . Yet, a predictive framework for engineering a coherent photomagnetic response in collinear antiferromagnets remains lacking. Understanding why certain or-bital transitions drive giant coherent spin motion whereas others – even within the same magnetic ion – remain ineffective is therefore a central and unresolved challenge 14,15,27–29 .In this work, we aim to elucidate the fundamental principles governing the efficacy of d-d orbital multi-plet excitations by engineering the coherent response in alloys of NiPS 3 and MnPS 3. These isostructural compounds belong to the TM-thiophosphate family of van der Waals antiferromagnets 30,31 , renowned for their exceptionally strong light-matter interactions, pronounced excitonic correlations, and, most impor-tantly, their ability to launch large-amplitude coherent spin dynamics through resonant pumping of d-d 
+
+orbital transitions 8,14,26,28,32–34 . These two TM ions host different orbital manifolds, spin multiplicities, and spin-orbit couplings, which lead to different antiferromagnetic ground states 31,35–37 . By partially substituting Mn with Ni in the Mn 1−xNi xPS 3 series, we get an opportunity to tune the magnetic ground state between the N´ eel order of MnPS 3 and the zig-zag order of NiPS 3. This substitution also enables a direct comparison of the photomagnetic responses of Mn 2+ and Ni 2+ ions, achieved by scanning the pump photon energy across their respective d–d multiplet resonances and measuring the amplitude of the resulting collective spin dynamics. Strikingly, at 10% Ni – where the N´ eel ground state of MnPS 3 is preserved – the spin precession driven by Ni 2+ multiplets is nearly 15 × larger than that generated by Mn 2+ multiplets, while also providing helicity-dependent phase control, absent in pure MnPS 3. More-over, it is the 3A1g multiplet excitation – a minor feature in the absorption spectrum of NiPS 3 – that emerges as the most efficient driver of spin dynamics, surpassing all Mn 2+ multiplets and the more optically absorptive Ni 2+ multiplets. Supported by quasiparticle self-consistent G ˆW (QS G ˆW ) theory 38–40 – which allows direct visualization of the excited-state orbital wavefunctions – we identify the key factors that govern the photomagnetic response of different multiplet excitations: (i) although Mn 2+ transitions involve spin-flip and directly couple to spins, their weak oscillator strength makes them far less effective than the optically stronger, spin-conserving Ni 2+ resonances; (ii) the strongest drivers of spin precession are those excitations with highly localized wavefunctions that lie away from the fundamental bandgap and minimize hybridization with the surrounding sulfur ligand field; and (iii) the lowest-energy Ni 2+ 3 A1g state carries substantial orbital angular momentum, and couples more efficiently to the spin degree of freedom than other Ni 2+ 
+
+multiplet excitations. Optical pumping of this resonance, therefore, generates coherent spin-precessions with amplitudes more than an order of magnitude larger than those observed via Mn 2+ excitations. Altogether, our findings establish the orbital degree of freedom as a powerful driver of spin dynamics and demonstrate that strategic ion substitution offers a versatile route for shaping the photomagnetic response and controlling collective excitations in collinear antiferromagnets. 3
+
+Figure 1. Tuning the antiferromagnetic ground state and photomagnetic properties of Mn 1−xNi xPS 3. (a) The transition-metal (TM) ions form a hexagonal lattice and are surrounded by trigonally-distorted S 6 octahedral cages. The Tanabe-Sugano diagram of Mn 2+ and Ni 2+ ions in the octahedral ( Oh)crystal field with a trigonal ( D3d) distortion is shown in the center, along with spin-flip excited states. MnPS 3
+
+(left) favours a N´ eel (N)-type antiferromagnetic (AFM) order with the N´ eel vector out-of-plane. In contrast, the larger spin-orbit coupling leads to an in-plane anisotropy for NiPS 3 and zig-zag (ZZ) AFM order (right). In the pump-probe experiment, the laser fundamental (1.2 eV) is detuned from the multiplet resonances and is used as a probe. The pump pulse, with an incident fluence of 6 mJ/cm 2, is tuned from 0.8 to 2.4 eV across multiple multi-plet resonances. (b) The ground state magnetic phase diagram of Mn 1−xNi xPS 3 mapped by symmetry-selective magneto-optical probes. The spatial inversion symmetry breaking in the N-type AFM order gives magnetic second-harmonic generation (mSHG, green) and the ZZ-type order gives magnetic linear birefringence (mLB, red); these probes are used to determine the onset of the AFM order at the N´ eel temperature ( TN). The Mn (Ni)-rich compounds have an N (ZZ)-type AFM ground state reflective of the pure compound, while long-range magnetic order is not observed for x = 0 .5. (c) Optical absorbance of pure NiPS 3 and MnPS 3 compounds measured at 10 K, showing the below-bandgap multiplet resonances. 
+
+II. TUNING MAGNETISM IN THE MIXED-COMPOUNDS 
+
+The Mn 1−xNi xPS 3 samples were grown via chemical vapor transport 41 and characterized with energy-dispersive X-ray spectroscopy (EDS) to confirm a homogeneous elemental distribution (see Supplemen-tary Sec. 1). In their pure forms, MnPS 3 and NiPS 3 both adopt a monoclinic crystal structure that can be described as a hexagonal lattice of TM-S 6 distorted octahedra with a phosphorus dimer in the center. Despite their structural similarities, the magnetic properties of MnPS 3 and NiPS 3 differ due to the distinct orbital occupation of the TM ions and the resulting spin configuration 31,42,43 . MnPS 3
+
+adopts a N´ eel (N)-type order while NiPS 3 exhibits a zigzag (ZZ)-type order, as shown in the left and right schematics of Fig. 1a. The N-type AFM ground state breaks spatial inversion symmetry, resulting in a significant second-order susceptibility and the emergence of magnetic second-harmonic generation (mSHG) below TN = 78 K 44 . The ZZ-type AFM ground state in NiPS 3 preserves spatial inversion symmetry; however, the formation of extended ferromagnetic chains induces strong optical anisotropy, which manifests as magnetic linear birefringence (mLB) below TN = 155 K 45–47 . Furthermore, the N´ eel vector is out-of-plane in MnPS 3, which is known for the weakest single-ion anisotropy in the family 48 .In contrast, in NiPS 3 a significantly larger single-ion anisotropy aligns the N´ eel vector in-plane 49,50 .To characterize the AFM ground state of the mixed Mn 1−xNi xPS 3 compounds we employ the two symmetry-selective magneto-optical probes mSHG and mLB. In Fig. 1b, we combine the temperature-dependence of mSHG (green) and mLB (red) to generate an AFM ground state phase diagram for Mn 1−xNi xPS 3, as a function of temperature and the Ni fraction x. The experimental methods and examples of the mSHG and mLB temperature dependencies are shown in Supplementary Sec. 2. We observe that only Mn-rich samples ( x < 0.5) exhibit mSHG, while mLB only occurs in Ni-rich samples (x > 0.5). This trend suggests that the quantitatively dominant TM ion dictates the type of AFM order, with Mn-rich compositions favouring the N-type and Ni-rich compositions favour the ZZ-type ground state. Further, we observe a suppression of TN upon mixing. The suppression reflects the competition 4between AFM nearest-neighbour exchange preferred by Mn ions and the FM nearest-neighbour exchange preferred by Ni ions, which destabilizes long-range magnetic order and leads to the disappearance of both the mLB and mSHG signals at half-mixing ( x = 0 .5). This observation is in line with previous studies indicating that compositions near x = 0 .5 may host a spin-glass ground state 51 . 
+
+> III. OPTICALLY-INDUCED COLLECTIVE SPIN DYNAMICS
+
+Having established the AFM ground state, we turn to the photomagnetically-induced coherent spin dynamics. In the ground state of both MnPS 3 (6A1g ) and NiPS 3 (3A2g ), the orbital angular momentum is largely quenched by the octahedral crystal field. Even so, resonant excitation to higher-energy orbital multiplets – 3T2g (≈1 eV), 1A1g (≈1.5 eV) in Ni 2+ and 4T1g (≈1.9 eV) in Mn 2+ – has been shown to drive collective spin precession in their respective pure compounds 14,26,28,52 . These resonances, shown schematically in Fig. 1a appear as distinct absorption peaks in the below-bandgap optical absorption spectra (Fig. 1c) and can be accessed by tuning the pump photon energy hν . Importantly, the Mn and Ni multiplet excitations are well separated in energy and do not spectrally overlap, allowing for a direct and unambiguous comparison of their efficiency in driving coherent magnons. We begin with the Mn-rich sample Mn 0.65 Ni 0.35 PS 3 (x = 0 .35) where the Mn to Ni ratio is approx-imately 2:1. This ensures substantial contribution from both magnetic ions while preserving a robust N-type ground state. The incident pump fluence is fixed at 6 mJ/cm 2, and the pump photon energy is tuned from 0.8 to 2.5 eV to span the full range of Mn and Ni multiplet resonances. Spin dynamics are monitored using transient changes in the magnetic second-harmonic generation (∆mSHG) in a trans-mission geometry, with a linearly polarized probe at 1.2 eV – outside the multiplet resonance range of either ion. The pump-induced dynamics as a function of pump-probe delay is shown in Fig. 2a. Here we present only the coherent oscillatory component of the data; for the raw data and the analysis procedure, see Supplementary Sec. 3. The data show that the oscillation amplitude depends strongly on the pump photon energy, with the largest response observed at 0.94 eV (purple). The Fourier transform of the oscillations (Fig. 2b) reveals two modes with frequencies of 45 and 25 GHz. Their magnetic origin is evident from their temperature dependence (see Supplementary Sec. 4). As the temperature increases, a pronounced softening of the largest-amplitude 45 GHz mode towards 
+
+TN = 52 K is observed – characteristic of an antiferromagnetic magnon. To highlight the resonances that most effectively drive spin dynamics, we plot the Fourier spectra of the oscillations as a function of pump photon energy hν . Here, we extract the intensity of the 45 GHz mode by integrating the intensity between the two white lines in Fig. 2b. The spectral weight as a function of hν shown at the top of Fig. 2b is best fit with four Gaussian curves, which peak at Epk = [0 .925(10) , 0.98(4) , 1.498(10) , 1.71(5)] eV, closely matching the 3A1g , 3Eg , 1A1g and 3T1g optical absorption peaks of Ni 2+ ions (see Fig. 1c). The two lowest-energy peaks – 3A1g , 3Eg – derive from the doubly-degenerate 3T2g orbital multiplet in an ideal 
+
+Oh crystal field and are split here by the trigonal distortion of the S6 octahedra. Remarkably, despite Mn being the dominant magnetic species in the mixture, no indication of photoinduced spin precession is observed when the pump photon energy hν is tuned into resonance with the Mn 2+ 6 A1g to 4T1g transition at 1.9 eV. This absence is particularly striking because the Mn 2+ orbital excitation intrinsically involves a spin-flip process (∆ S = 1), and its’ optical excitation is therefore expected to couple directly to the spin sector, potentially launching a large-amplitude coherent spin-wave response. The lack of such a response indicates that in the considered mixture, the Ni 2+ crystal-field excitations provide the dominant pathway for driving coherent antiferromagnetic spin dynamics. To highlight the exceptional spin response to the Ni 2+ multiplet excitations, we performed the same measurements on Mn 0.9Ni 0.1PS 3 (x = 0 .1), see Fig. 2c. This composition is strongly Mn-rich with a 9:1 Mn:Ni ratio, nearly five times higher than in Mn 0.65 Ni 0.35 PS 3, and has a robust N-type antiferromagnetic ground state (see Fig.1b). Similarly to Mn 0.65 Ni 0.35 PS 3, the pump-photon-energy dependent Fourier spectrum in Fig. 2 also reveals two modes with frequency 92 GHz and 39 GHz. The higher-frequency mode is softened relative to the doubly degenerate zone-center magnon in pure MnPS 3 at 120 GHz 53 ,indicating a reduction of the effective exchange interactions induced by Ni substitution. The appearance of the lower-frequency mode points to a lifting of the magnon degeneracy, which we attribute to the progressive development of in-plane anisotropy promoted by Ni 2+ ions 43 . As described above, increasing the Ni fraction to x = 0 .35 results in a further renormalization of the two modes to 45 and 25 GHz, consistent with the progressive modification of exchange interactions and anisotropy. Figure 2d reveals that although the enhanced Mn fraction makes the contribution of the spin-flip Mn 2+ 4 T1g multiplet resonance to the excitation of spin precession discernible, its overall impact on the magnetic system remains weak. In contrast, photoexcitation of the minority Ni 2+ multiplets results in the unambiguous excitation of coherent spin dynamics. Even more unexpectedly, despite having the 5
+
+Figure 2. Launching coherent spin dynamics via resonant multiplet excitation in Mn 1−xNi xPS 3.(a, c) The pump-induced change of the magnetic second harmonic signal (∆mSHG) as a function of pump-probe delay measured for x = 0 .35 and x = 0 .1 at T = 10 K, respectively. The trace at 0.94 (0.95) eV is highlighted. 
+
+(b, d) The frequency spectrum of the coherent dynamics as a function of pump photon energy in the x = 0 .35 and x = 0 .1 samples. Colors indicate ∆mSHG intensity in linear scale. In panel b, clear resonances are observed at ENi = [0 .925 , 0.97 , 1.498 , 1.708] eV, corresponding to multiplet resonances in Ni 2+ in the trigonally distorted octahedra. In panel d, a clear resonance is observed at 0.95 eV, and smaller resonances at 1.55, and 1.98 eV, corresponding to multiplet excitations in Ni 2+ (purple) and Mn 2+ (turquoise). The intensity between the gray dashed lines is integrated and shown for the x = 0 .35 (left) and x = 0 .1 (right) samples and fit with four Gaussian peaks. 
+
+smallest absorption cross section, the 3A1g resonance drives the largest amplitude magnons, even in the 
+
+x = 0 .1. In contrast, the 1A1g and 3T1g resonances are only tentatively identified for the x = 0 .1 sample, reflecting the reduced Ni concentration. Altogether, these observations show that the spin oscillations are photomagnetically driven by the selective excitation of specific multiplet resonances. The absence of any scaling with optical absorption rules out a heat-driven mechanism and identifies the dynamics as fundamentally nonthermal. The large photomagnetic response of Mn 1−xNi xPS 3 to the weakly-absorbing 3A1g and 3Eg resonances could in principle be attributed to the increased pump penetration depth, as the transmitted second-6harmonic signal is most sensitive to the back surface of the sample. To ensure the observed photomag-netism is not due to a difference in pump fluence at the back surface, we complemented the ∆mSHG measurements in transmission for the x = 0 .1 sample with ∆mSHG in reflection and ∆mLB in trans-mission – probes that are significantly less sensitive to pump-probe penetration depth mismatch. These complementary probes – shown in the Supplementary Sec. 5 – consistently reveal that the Ni 2+ 3A1g
+
+resonance drives magnons with higher amplitude than other multiplet excitations. To account for the pronounced sensitivity of the collective spin precession to specific Mn 2+ and Ni 2+ 
+
+orbital transitions, it is essential to consider both how photoexcited orbital states couple to the spin system and how efficiently light drives the corresponding d-d transitions. We begin by comparing the orbital excitations of Mn 2+ and Ni 2+ ions, which exhibit radically different photomagnetic responses. All Mn 2+ excitations from the high-spin 6A1g ground state are spin-flip in character (∆ S = 1), whereas most Ni 2+ transitions are spin conserving (∆ S = 0). Although spin-flip processes might be expected to couple more directly to magnetic order, the experiments show the opposite: even at a Mn:Ni ratio of 9:1, the Mn 4T1g resonance drives magnons with amplitudes nearly 15 times smaller than those generated by the weak Ni 3A1g transition. The stark contrast therefore cannot be explained by the spin character of the transitions alone, but instead reflects how efficiently the optical field couples to the respective orbital excitations. The weak photomagnetic response of Mn is rather consistent with the suppression of oscillator strength in d–d transitions that involve a spin flip and are known to reduce optical coupling by up to two orders of magnitude 40,54 . Consequently, despite providing a formally direct magnetic pathway, pumping of the Mn excitations is far less effective than that of the optically stronger, spin-conserving Ni resonances, which dominate the observed coherent photomagnetic response. However, oscillator strength alone cannot account for the large photomagnetic response of the 3A1g
+
+excitation, which is a relatively weak absorption feature among Ni multiplet resonances. To highlight the relative efficiency of the photomagnetic orbital-to-spin coupling, we took the maximum amplitude of the driven spin precession in the Mn 0.7Ni 0.3PS 3 sample (from Fig. 2b) and normalized it by the corresponding maximum of the absorption spectrum, obtaining a value of orbital-to-spin coupling strength χso . Plotting these values as a histogram (see Fig. 3a) reveals a clear trend, showing that the 3A1g orbital state couples significantly more strongly to the spins compared with the 3Eg and 3T1g states, despite its weaker optical absorption. To understand the origin of these differences, we analyze the excited states using the ab-initio many-body perturbation theory (MBPT) framework, QS G ˆW 38 , which provides a detailed description of the electronic structure of Mn 1−xNi xPS 3 (details in Supplementary Sec. 6). Using this approach, we calcu-lated the single-particle electronic structure for x = 0 .25 compositions, approximating the experimental samples, modeled in a 40-atom supercell; see Extended Data Fig. 1. While the top of the valence bands shows strong hybridization between Mn-d and S-p states, the conduction bands are predominantly of Ni-d character. The occupied Ni-d states are located near −0.75 eV, as detailed in reference 54 , which provides a comprehensive analysis of the one- and two-particle properties of Ni and Mn compounds in-dividually. Importantly, the multiplet excitations observed in the material are excitonic in nature rather than single-particle transitions. Using these results, we first analyze the real-space excitonic wavefunctions of the closely spaced 3A1g
+
+and 3Eg states. Although both originate from the 3T2g level, split by the trigonal distortion of the 
+
+S6 octahedra in NiPS 355,56 , they exhibit very different photomagnetic orbital-to-spin coupling strength 
+
+χso . Figure 3b-c show that the hole wavefunctions of both states are localized on the Ni ion, with 3A1g
+
+lying primarly in the xy -plane and 3Eg extending along the z-axis. The projection of the single-particle valence wavefunctions onto the excitonic hole component, shown in Extended Data Fig. 1, demonstrates that both states have eg character, corresponding to orbital angular momenta ml = |2| and 0, largely associated with the dx2−y2 and dz2 orbitals, respectively. The 3A1g multiplet is more heavily weighted toward ml = |2|, resulting in stronger spin-orbit coupling, whereas 3Eg has smaller orbital angular momentum and weaker coupling. Consequently, the 3A1g excitation couples more effectively to the spin sector, consistent with the larger magnon amplitude it drives. We finally analyze the 3T1g excitation, which, despite having the strongest absorption, exhibits minimal orbital-to-spin coupling strength χso . Unlike the highly localized 3A1g and 3Eg states, 3T1g lies near the Ni band edge at 1.7 eV, indicating weaker excitonic binding and a delocalized wavefunction 54,57 . As shown in Fig. 3d, the 3T1g hole-wavefunction extends across several hexagon plaquettes. Momentum-space decomposition (Extended Data Fig. 1h) reveals that the excitonic wavefunction is dominated by S-p valence states, which do not produce a change in the Ni orbital angular momentum and therefore couples only weakly to the spin sector. Consequently, the 3T1g resonance is inefficient in driving coherent spin dynamics, consistent with previous reports on orbital pumping in NiPS 3, where this excitation produced no appreciable magnon response 14 .7
+
+Figure 3. Spin-orbit efficiency of Ni 2+ excitations in Mn 0.75 Ni 0.25 PS 3. (a) The orbital-to-spin coupling strength χso of the 3A1g , 3Eg and 3T1g multiplets, which is calculated as the intensity of the spin dynamics (the amplitude of the corresponding Gaussian peaks in Fig. 2b) divided by the absorption peaks (the values of absorption at corresponding photon energies in NiPS 3 presented in Fig. 1c) and normalized to 1. (b-d) The wavefunction of the excitonic-hole for the (b) 3A1g , (c) 3Eg and (d) 3T1g multiplets. The Ni and Mn ions are shown in purple and turquoise, respectively. S and P are shown in gray and brown. The 3A1g and 3Eg excitations are localized to the Ni-ion, while the 3T1g state is delocalized over multiple hexagonal plaquette. ml = |2|, (0) labels the Ni d states onto which the 3A1g (3Eg ) excitation is projected. 
+
+IV. PHASE CONTROL OF MAGNONS IN Mn 1−xNi xPS 3
+
+Having identified the Ni 3A1g excitation as the most efficient trigger of spin dynamics, even at low concentrations, we now examine how it can also be used to control these dynamics. In NiPS 3, the amplitude and phase of spin precession driven by the 3A1g multiplet can be controlled by both the helicity of a circularly-polarized pump and the orientation of a linearly-polarized pump 34 . In contrast, MnPS 3 shows no reported polarization-dependent control. To test whether the 3A1g multiplet excitation can impart similar control of spin waves in Mn 1−xNi xPS 3, we study the linear polarization and helicity dependence of the magnon phase as a function of the Ni fraction (0 .1 ≤ x ≤ 0.9). Spin dynamics are tracked through the pump-induced change in magneto-linear birefringence (∆mLB), which provides a composition-independent readout even in samples where the equilibrium mLB is absent. Fig. 4a shows the spin dynamics induced by circularly-polarized pump pulses for the x = 0 .1 and 
+
+x = 0 .35 samples. We observe no helicity-dependent response in the x = 0 .1 sample; however, with increasing Ni content, a π phase shift emerges between opposite helicities – consistent with reports on pure NiPS 314,34 . A similar trend is observed in the linear polarization dependence (Fig. 4b): The 
+
+x = 0 .1 sample shows no phase and amplitude variation, whereas both appear at x = 0 .2. More data are presented in Supplementary Sec. 7. This onset coincides with a change in the magnetic anisotropy seen in magnetometry (see Supplementary Sec. 8), in which the N´ eel vector orientation becomes fully in-plane. Figure 4c summarizes the magnon frequencies and helicity dependence across the Mn 1−xNi xPS 3 series, with black (pink) circles corresponding to the absence (presence) of helicity dependence. Except for 
+
+x = 0 .1, the 3A1g resonance enables both efficient magnon generation and optical control over magnon amplitude and phase – even in Mn-rich compositions where the antiferromagnetic ground state is N-type. 8                        
+
+> Figure 4. Phase control of spin dynamics in Mn 1−xNi xPS 3.(a) Helicity dependence of the magnon excitation for the x= 0 .1 (top) and x= 0 .35 (bottom) samples at 10 K. (b) Linear polarization dependence of the magnon excitation for the x= 0 .1, x= 0 .2 samples, respectively, at 10 K. The orange curve in the bottom panel is vertically scaled by a factor of 5 for visualization purposes. (c) Frequency of the magnons driven by the Ni 3A1gexcitation (0.95 eV) as a function of Ni fraction, measured with magnetic linear birefringence. Black (magenta) colors indicate the absence (presence) of phase-flip. The star markers for x= 0 and x= 1 are values reported in literature 14,26 .
+> V. CONCLUSION
+
+In this work, we have outlined a new strategy for engineering multiplet-driven photomagnetism in collinear AFMs. We demonstrate that substituting TM ions in isostructural compounds is effective for tuning the AFM ground state and enhancing photomagnetic response. In the TM-thiophosphates, we show that even introducing 10% of Ni ions into MnPS 3 – a material characterized by minimal orbital angular momentum and inherently weak anisotropy – dramatically enhances photomagnetism while leaving the ground state relatively untouched. Further tuning the chemical composition, we demonstrate precise control over the AFM ground state exchange and anisotropy, as well as the symmetry of the magnon mode. Control over these static and dynamic properties is essential from a device engineering perspective. While we sampled the full range of mixed compositions in this study, the TM-ion substitution fraction can be even more finely tuned to achieve desired parameters and performance. Understanding the microscopic mechanisms behind ultrafast photomagnetic processes remains a fun-damental challenge 58 . In light of this, mixing the compounds allows for a direct comparison of the photomagnetic response of Mn and Ni multiplet resonances within the same sample, which allows us to distill important considerations for the mechanisms of magnon generation. Our ab-initio calculations demonstrate how spin conservation, orbital angular momentum and the degree of localization of multiplet resonances affect the magnitude of excited magnons. The 3A1g resonance in Ni 2+ , in particular, drives the largest magnon response across the entire spectrum of mixed compounds due to its localized nature and the large unquenched orbital angular momentum of the excited state. The 3T1g multiplet, on the other hand, is delocalized across the ligands and may not be properly considered a d-d excitation. Our observations also highlight the advantages of working with a low-symmetry system, in which multiplet resonances are non-degenerate. For comparison, in a high symmetry system such as NiO, the perfect cubic crystal field ensures that there are no d-d excitonic transitions between 1 and 1.6 eV 59 .These results naturally point to the broader exploration of TM dopants. In the TM-thiophosphate family, Co and Fe are compelling candidates, with the former hosting a partially filled t2g manifold and significant unquenched orbital angular momentum in the ground state compared to Ni and Mn, and the latter having the largest single-ion anisotropy of the family 60 . Altogether, the mixed TM-thiophosphates constitute a rich platform for the exploration and engineering of antiferromagnetic ground states and photomagnetic effects 61,62 . Beyond this family of materials, the principles we outline in this work can be applied to any collinear AFM where TM ions may be chemically substituted with ions of varying 
+
+d-orbital occupation. As demonstrated here, intentional targeting of the multiplet resonances of dopants can significantly increase the efficacy and flexibility of photomagnetism in these materials. 9 
+
+> MATERIALS AND METHODS A. Sample growing and characterization
+
+Chemical vapor transport (CVT) technique is employed to grow bulk single crystals of (Mn xNi 1−x)PS 3
+
+series of compounds following the synthesis method reported by Susner et al. with slight modification 41 .Halogens (I 2 or Br 2) were employed as the transport agent in the synthetic process. Stoichiometric amounts of manganese (Mn) powder, nickel (Ni) powder, phosphorus (P) lump and sulfur (S) were sealed in an evacuated quartz tube (ampoule) with an inner pressure in the range of 10 −5 to 10 −6 Torr. In addition to the elemental constituents (Mn, Ni, P and S), a small amount (2 mg/cc) of iodine spheres were added inside the ampoule to act as the transport agent. The sealed ampoules were then subjected to a two-zone horizontal tube furnace. Initially, the source zone was kept at 650 ◦C and the growth zone at 750 ◦C for 48 hours. This ar-rangement was made to allow the constituents to react completely and prevent the back transport or formation of undesired additional phases. After that, the temperature of the source zone gradually in-creased to 750 ◦C and that of the growth zone was lowered to 700 ◦C. This arrangement lasted for another 120 hours. Finally, the temperatures of both the zones were lowered down, and the plate-like crystals were subsequently obtained from the ampoule for further characterizations and experiments. The characterization of the samples (composition, homogeneity) was performed by energy-dispersive X-ray spectroscopy (EDS). The EDS measurements were carried out on an Ultra-high Resolution Scanning Electron Microscope (SEM) SU8020 (Hitachi) equipped with a X-MaxN (Oxford) Silicon Drift Detector (SDD). Selected single crystals were glued to a carbon tape and analyzed by semiquantitative EDS at a 20 kV acceleration voltage. The details are presented in Supplementary Sec. 1.  
+
+> B. Magnetometry characterization
+
+The magnetometry measurements were performed using the Vibrating Sample Magnetometer (VSM) of a Physical Property Measurement System (PPMS) of Quantum Design. The pick-up coil was placed in the (vertical) constant magnetic field produced by the superconducting solenoid; one measures only the component of the magnetization M along the field H direction. For measuring parallel and perpendicular field configurations, the sample was taken out of the holder and remounted.  
+
+> C. Magneto-optical measurements
+
+Data shown in Fig. 1b, Fig. 4 of the main text are performed with a Spectra Physics Spitfire Ace system, operating at a repetition rate 1 kHz. The Spitfire Ace amplifies femtosecond pulses from a mode-locked MaiTai Ti:Sapphire seed laser (photon energy of 1.55 eV, pulse duration of 130 fs). Apart of the generated beam is sent to a TOPAS-Prime collinear OPA, which generates pulses with tunable wavelengths from 0.06 - 6.56 eV, and is used as a pump. The remaining power, separated by the beamsplitter, is used as a probe. The pump is chopped at 500 Hz and focused to a spot size of ≈ 200 μm; the probe pulse is focused to a spot size of ≈ 120 μm. The mixed compounds measured here were exfoliated to produce a smooth surface. The samples are bulk-like, with an estimated thickness between 100 μm to 1 mm. Data shown in Fig. 1c of the main text (optical absorbance) are performed by using a halogen light source (Ocean Optics HL-2000) with a spectrum from 400 nm to 1600 nm. Thin NiPS 3 (MnPS 3) flakes of thickness ≈10 μm and size ≈ 200 μm are prepared and put onto a CaF 2 substrate. The light is focused to a spot size of < 10 μm on the sample by an objective, and the transmitted light is collected by another objective, and focused onto a grating spectrometer, where an infrared (visible) camera is used to detect the transmitted intensity. Data shown in Fig. 2 of the main text are performed with the PHAROS BURST laser system, which is an oscillator operating at 76 MHz, with a Yb:KGW crystal acting as an active medium. A regenerative amplifier (RA) and pulse-picker then allows the user to change the repetition rate without affecting the internal operation. We operate the PHAROS BURST RA at 75 KHz with 267 μJ of pulse energy, which is further pulse-picked down to 5 kHz for experiments to avoid excessive average-power heating of the sample. The probe pulses have a pulse duration of 170 fs with a photon energy of 1.2 eV. A percentage of the power of PHAROS pulses are split and used to see the ORPHEUS-HP optical parametric amplifier 10 (OPA), which generates tunable pump wavelengths from 0.8 - 3 eV with a bandwidth of 20-30 meV, depending on the pump photon energy. The pump is chopped at 2.5 kHz, and focused to a spot size of (94 ± 15 × 78 ± 11) μm full-width-at-half-maximum (FWHM) on the sample surface. The remaining power is used for the probe. To maximize the second harmonic generation signal, the probe pulses are focused tightly to a spot size of ≈50 μm. The mixed compounds measured here were exfoliated to produce a smooth surface. The samples are bulk-like, with an estimated thickness ∼ 100 μm. 
+
+> ACKNOWLEDGMENTS
+
+The authors thank B. A. Ivanov for fruitful discussions, and K. Saeedi Ilkhchy and C. Berkhout for their technical support. We are grateful to Prof. Hari Shrikant for insightful discussions. This work is supported by ERC grant 101078206 ASTRAL; programme “Materials for the Quantum Age” (QuMat, registration number 024.005.006), which is part of the Gravitation programme financed by the Dutch Ministry of Education, Culture and Science (OCW); the European Union Horizon 2020 and innovation program under the European Research Council ERC grant agreement no. 856538 (3D-MAGiC), and the European Research Council ERC grant agreement no. 101054664 273 (SPARTACUS). M. Na acknowl-edges the support of the Natural Sciences and Engineering Research Council of Canada (NSERC) PDF fellowship. This work was authored in part by the National Laboratory of the Rockies for the U.S. Department of Energy (DOE) under Contract No. DE-AC36-08GO28308. Funding was provided by the Computational Chemical Sciences program within the Office of Basic Energy Sciences, U.S. Department of Energy. S.A. acknowledges the use of the National Energy Research Scientific Computing Center, under Contract No. DE-AC02-05CH11231 using NERSC award BES-ERCAP0021783 and S.A. also acknowledges that a portion of the research was performed using computational resources sponsored by the Department of Energy’s Office of Energy Efficiency and Renewable Energy and located at the National Laboratory of the Rockies. The views expressed in the article do not necessarily represent the views of the DOE or the U.S. Government. The U.S. Government retains and the publisher, by accepting the article for publication, acknowledges that the U.S. Government retains a nonexclusive, paid-up, irrevocable, worldwide license to publish or reproduce the published form of this work, or allow others to do so, for U.S. Government purposes. 
+
+> CONTRIBUTIONS
+
+D.A., A.C., and M.N conceived the project. D.A., Th.R. and A.V.K. supervised the study. V.R., M.N. and D.A. performed the static and pump-probe experiments. D.P., M.V.S. and S.A. provided the theoretical model. A.C. provided the samples. E.K. and A.I provided the EDS characterization, A.V. provided the magnetometry. K.M., V.R., M.N., and P.C. performed optical absorption experiments. D.K., P.K., contributed to discussion and treatment of the experimental results. M.N., V.R., S.A., and D.A. wrote original draft with feedback from all the co-authors. 
+
+> COMPETING INTERESTS
+
+The authors declare no competing interests. 
+
+> DATA AVAILABILITY
+
+All data supporting the findings of this paper are available from the corresponding authors upon request. 11 
+
+REFERENCES 
+
+> 1
+
+U Enz, W Lems, R Metselaar, P Rijnierse, and R Teale. Photomagnetic effects. IEEE Transactions on Magnetics, 5(3): 467–472, 1969. doi:10.1109/TMAG.1969.1066522. 
+
+> 2
+
+Tobias Kampfrath, Koichiro Tanaka, and Keith A Nelson. Resonant and nonresonant control over matter and light by intense terahertz transients. Nature Photonics, 7(9):680–690, 2013. 
+
+> 3
+
+N Tesaˇ rov´ a, P Nˇ emec, E Rozkotov´ a, J Zemen, T Janda, D Butkoviˇ cov´ a, F Troj´ anek, K Olejn´ ık, V Nov´ ak, P Mal` y, et al. Experimental observation of the optical spin–orbit torque. Nature Photonics, 7(6):492–498, 2013. 
+
+> 4
+
+Takuya Satoh, Yuki Terui, Rai Moriya, Boris A Ivanov, Kazuya Ando, Eiji Saitoh, Tsutomu Shimura, and Kazuo Kuroda. Directional control of spin-wave emission by spatially shaped light. Nature Photonics, 6(10):662–666, 2012. 
+
+> 5
+
+Anne Bleuzen, Val´ erie Marvaud, Corine Mathoniere, Barbara Sieklucka, and Michel Verdaguer. Photomagnetism in clusters and extended molecule-based magnets. Inorganic chemistry, 48(8):3453–3466, 2009. 
+
+> 6
+
+Jakub J Zakrzewski, Michal Liberka, Junhao Wang, Szymon Chorazy, and Shin-ichi Ohkoshi. Optical phenomena in molecule-based magnetic materials. Chemical Reviews, 124(9):5930–6050, 2024. 
+
+> 7
+
+A. Stupakiewicz, K. Szerenos, D. Afanasiev, A. Kirilyuk, and A. V. Kimel. Ultrafast nonthermal photo-magnetic recording in a transparent medium. Nature, 542(7639):71–74, 2017. ISSN 1476-4687. doi:10.1038/nature20807. 
+
+> 8
+
+S. Baierl, M. Hohenleutner, T. Kampfrath, A. K. Zvezdin, A. V. Kimel, R. Huber, and R. V. Mikhaylovskiy. Nonlinear spin control by terahertz-driven anisotropy fields. Nature Photonics, 10(11):715–718, 2016. ISSN 1749-4893. doi: 10.1038/nphoton.2016.181. 
+
+> 9
+
+AS Disa, J Curtis, M Fechner, A Liu, A Von Hoegen, M F¨ orst, TF Nova, P Narang, A Maljuk, AV Boris, et al. Photo-induced high-temperature ferromagnetism in ytio3. Nature, 617(7959):73–78, 2023. 
+
+> 10
+
+AV Kimel, A Kirilyuk, PA Usachev, RV Pisarev, AM Balbashov, and Th Rasing. Ultrafast non-thermal control of magnetization by instantaneous photomagnetic pulses. Nature, 435(7042):655–657, 2005. 
+
+> 11
+
+AM Kalashnikova, AV Kimel, RV Pisarev, VN Gridnev, Andrei Kirilyuk, and Th Rasing. Impulsive generation of coherent magnons by linearly polarized light¡? format?¿ in the easy-plane antiferromagnet febo 3. Physical review letters, 99(16): 167205, 2007. 
+
+> 12
+
+Andrei Kirilyuk, Alexey V. Kimel, and Theo Rasing. Ultrafast optical manipulation of magnetic order. Reviews of Modern Physics, 82(3):2731–2784, 2010. doi:10.1103/RevModPhys.82.2731. 
+
+> 13
+
+Dmytro Afanasiev, JR Hortensius, BA Ivanov, Alireza Sasani, Eric Bousquet, Yaroslav M Blanter, Rostislav VMikhaylovskiy, Alexey V Kimel, and AD Caviglia. Ultrafast control of magnetic interactions via light-driven phonons. Nature materials, 20(5):607–611, 2021. 
+
+> 14
+
+Dmytro Afanasiev, Jorrit R. Hortensius, Mattias Matthiesen, Samuel Ma˜ nas-Valero, Makars ˇSiˇ skins, Martin Lee, Edouard Lesne, Herre S. J. van der Zant, Peter G. Steeneken, Boris A. Ivanov, Eugenio Coronado, and Andrea D. Caviglia. Controlling the anisotropy of a van der Waals antiferromagnet with light. Science Advances, 7(23):eabf3096, 2021. doi:10.1126/sciadv.abf3096. 
+
+> 15
+
+R. V. Mikhaylovskiy, T. J. Huisman, V. A. Gavrichkov, S. I. Polukeev, S. G. Ovchinnikov, D. Afanasiev, R. V. Pis-arev, Th. Rasing, and A. V. Kimel. Resonant pumping of d-d crystal field electronic transitions as a mechanism of ultrafast optical control of the exchange interactions in iron oxides. Physical Review Letters, 125(15):157201, 2020. doi:10.1103/PhysRevLett.125.157201. 
+
+> 16
+
+A Ron, S Chaudhary, G Zhang, H Ning, E Zoghlin, SD Wilson, RD Averitt, G Refael, and D Hsieh. Ultrafast enhancement of ferromagnetic spin exchange induced by ligand-to-metal charge transfer. Physical Review Letters, 125(19):197203, 2020. 
+
+> 17
+
+Tobia F Nova, Andrea Cartella, Alice Cantaluppi, Michael F¨ orst, Davide Bossini, Rostislav V Mikhaylovskiy, Aleksei V Kimel, Roberto Merlin, and Andrea Cavalleri. An effective magnetic field from optically driven phonons. Nature Physics, 13(2):132–136, 2017. 
+
+> 18
+
+P. Nˇ emec, M. Fiebig, T. Kampfrath, and A. V. Kimel. Antiferromagnetic opto-spintronics. Nature Physics, 14(3): 229–241, 2018. ISSN 1745-2481. doi:10.1038/s41567-018-0051-x. 
+
+> 19
+
+Takuya Satoh, Ryugo Iida, Takuya Higuchi, Manfred Fiebig, and Tsutomu Shimura. Writing and reading of an arbitrary optical polarization state in an antiferromagnet. Nature Photonics, 9(1):25–29, 2015. 
+
+> 20
+
+Tobias Kampfrath, Alexander Sell, Gregor Klatt, Alexej Pashkin, Sebastian M¨ ahrlein, Thomas Dekorsy, Martin Wolf, Manfred Fiebig, Alfred Leitenstorfer, and Rupert Huber. Coherent terahertz control of antiferromagnetic spin waves. Nature Photonics, 5(1):31–34, 2011. 
+
+> 21
+
+S. Schlauderer, C. Lange, S. Baierl, T. Ebnet, C. P. Schmid, D. C. Valovcin, A. K. Zvezdin, A. V. Kimel, R. V. Mikhaylovskiy, and R. Huber. Temporal and spectral fingerprints of ultrafast all-coherent spin switching. Nature, 569 (7756):383–387, 2019. ISSN 1476-4687. doi:10.1038/s41586-019-1174-7. 
+
+> 22
+
+A. Stupakiewicz, K. Szerenos, M. D. Davydova, K. A. Zvezdin, A. K. Zvezdin, A. Kirilyuk, and A. V. Kimel. Selection rules for all-optical magnetic recording in iron garnet. Nature Communications, 10(1):612, 2019. ISSN 2041-1723. doi:10.1038/s41467-019-08458-w. 
+
+> 23
+
+Alexandre Marciniak, Stefano Marcantoni, Francesca Giusti, Filippo Glerean, Giorgia Sparapassi, Tobia Nova, Andrea Cartella, Simone Latini, Francesco Valiera, Angel Rubio, et al. Vibrational coherent control of localized d–d electronic excitation. Nature Physics, 17(3):368–373, 2021. 
+
+> 24
+
+Lawrence L Lohr Jr. Spin-forbidden electronic excitations in transition metal complexes. Coordination Chemistry Reviews, 8(3):241–259, 1972. 
+
+> 25
+
+Gabriel Fitzky, Makoto Nakajima, Yohei Koike, Alfred Leitenstorfer, and Takayuki Kurihara. Ultrafast control of magnetic anisotropy by resonant excitation of 4 f electrons and phonons in sm 0.7 er 0.3 feo 3. Physical Review Letters, 127(10):107401, 2021. 
+
+> 26
+
+Mattias Matthiesen, Jorrit R. Hortensius, Samuel Ma˜ nas-Valero, Itzik Kapon, Dumitru Dumcenco, Enrico Giannini, Makars ˇSiˇ skins, Boris A. Ivanov, Herre S. J. van der Zant, Eugenio Coronado, Alexey B. Kuzmenko, Dmytro Afanasiev, and Andrea D. Caviglia. Controlling magnetism with light in a zero orbital angular momentum antiferromagnet. Physical Review Letters, 130(7):076702, 2023. doi:10.1103/PhysRevLett.130.076702. 
+
+> 27
+
+Ryugo Iida, Takuya Satoh, Tsutomu Shimura, Kazuo Kuroda, BA Ivanov, Yusuke Tokunaga, and Yoshinori Tokura. Spectral dependence of photoinduced spin precession in dyfeo 3. Physical Review B—Condensed Matter and Materials Physics, 84(6):064402, 2011. 12 
+
+> 28
+
+Carina A. Belvin, Edoardo Baldini, Ilkem Ozge Ozel, Dan Mao, Hoi Chun Po, Clifford J. Allington, Suhan Son, Beom Hyun Kim, Jonghyeon Kim, Inho Hwang, Jae Hoon Kim, Je-Geun Park, T. Senthil, and Nuh Gedik. Exciton-driven antiferromagnetic metal in a correlated van der Waals insulator. Nature Communications, 12(1):4837, 2021. ISSN 2041-1723. doi:10.1038/s41467-021-25164-8. 
+
+> 29
+
+Fabian Mertens, David M¨ onkeb¨ uscher, Umut Parlak, Carla Boix-Constant, Samuel Ma˜ nas-Valero, Margherita Matzer, Rajdeep Adhikari, Alberta Bonanni, Eugenio Coronado, Alexandra M Kalashnikova, et al. Ultrafast coherent thz lattice dynamics coupled to spins in the van der waals antiferromagnet feps3. Advanced Materials, 35(6):2208355, 2023. 
+
+> 30
+
+Bheema Lingam Chittari, Youngju Park, Dongkyu Lee, Moonsup Han, Allan H. MacDonald, Euyheon Hwang, and Jeil Jung. Electronic and magnetic properties of single-layer MPX 3 metal phosphorous trichalcogenides. Physical Review B, 94(18):184428, 2016. doi:10.1103/PhysRevB.94.184428. 
+
+> 31
+
+Rabindra Basnet and Jin Hu. Understanding and tuning magnetism in van der Waals-type metal thiophosphates. Nanoscale, 2024. doi:10.1039/D4NR01577K. 
+
+> 32
+
+Jun-Yi Shan, M Ye, H Chu, Sungmin Lee, Je-Geun Park, L Balents, and D Hsieh. Giant modulation of optical nonlinearity by floquet engineering. Nature, 600(7888):235–239, 2021. 
+
+> 33
+
+Je-Ho Lee, Seungyeol Lee, Youngsu Choi, Lukas Gries, R¨ udiger Klingeler, Kalaivanan Raju, Rajesh Kumar Ulaganathan, Raman Sankar, Maeng-Je Seong, and Kwang-Yong Choi. Optical Probe of Magnetic Ordering Structure and Spin-Entangled Excitons in Mn-Substituted NiPS3. Advanced Functional Materials, 34(39):2405153, 2024. ISSN 1616-3028. doi:10.1002/adfm.202405153. 
+
+> 34
+
+Shingo Toyoda, Jonathon Kruppe, Kohtaro Yamakawa, James Analytis, and Joseph Orenstein. Phase control of spin waves in the van der Waals antiferromagnet ${\ mathrm {NiPS }} { 3}$. Physical Review B, 109(6):064408, 2024. doi: 10.1103/PhysRevB.109.064408. 
+
+> 35
+
+Florian Dirnberger, Rezlind Bushati, Biswajit Datta, Ajesh Kumar, Allan H MacDonald, Edoardo Baldini, and Vinod M Menon. Spin-correlated exciton–polaritons in a van der waals magnet. Nature Nanotechnology, 17(10):1060–1064, 2022. 
+
+> 36
+
+Dmitry Lebedev, J Tyler Gish, Ethan S Garvey, S Carin Gavin, Thomas W Song, Manuel R Tiscareno, Kenji Watanabe, Takashi Taniguchi, Jan Konecny, Zdenˇ ek Sofer, et al. Ultranarrow electroluminescence from magnetic excitons in the van der waals antiferromagnetic semiconductor nips3. Nature Communications, 16(1):10550, 2025. 
+
+> 37
+
+Soonmin Kang, Kangwon Kim, Beom Hyun Kim, Jonghyeon Kim, Kyung Ik Sim, Jae-Ung Lee, Sungmin Lee, Kisoo Park, Seokhwan Yun, Taehun Kim, Abhishek Nag, Andrew Walters, Mirian Garcia-Fernandez, Jiemin Li, Laurent Chapon, Ke-Jin Zhou, Young-Woo Son, Jae Hoon Kim, Hyeonsik Cheong, and Je-Geun Park. Coherent many-body exciton in van der Waals antiferromagnet NiPS 3. Nature, 583(7818):785–789, 2020. ISSN 1476-4687. doi:10.1038/s41586-020-2520-5. 
+
+> 38
+
+Brian Cunningham, Myrta Gr¨ uning, Dimitar Pashov, and Mark van Schilfgaarde. QS G ˆW : Quasiparticle Self Consistent 
+
+GW with Ladder Diagrams in W . Physical Review B, 108:165104, 2023. URL https://journals.aps.org/prb/abstract/ 10.1103/PhysRevB.108.165104 .
+
+> 39
+
+Dimitar Pashov, Swagata Acharya, Walter R. L. Lambrecht, Jerome Jackson, Kirill D. Belashchenko, Athanasios Chantis, Francois Jamet, and Mark van Schilfgaarde. Questaal: a package of electronic structure methods based on the linear muffin-tin orbital technique. Comp. Phys. Comm., 249:107065, 2020. URL https://www.sciencedirect.com/science/ article/pii/S0010465519303868?via%3Dihub .
+
+> 40
+
+Swagata Acharya, Dimitar Pashov, Cedric Weber, Mark van Schilfgaarde, Alexander I. Lichtenstein, and Mikhail I. Katsnelson. A theory for colors of strongly correlated electronic systems. Nature Communications, 14(1):5565, September 2023. ISSN 2041-1723. doi:10.1038/s41467-023-41314-6. URL https://doi.org/10.1038/s41467-023-41314-6 .
+
+> 41
+
+Michael A. Susner, Marius Chyasnavichyus, Michael A. McGuire, Panchapakesan Ganesh, and Petro Maksymovych. Metal thio- and selenophosphates as multifunctional van der waals layered materials. Advanced Materials, 29(38): 1602852, 2017. doi:https://doi.org/10.1002/adma.201602852. URL https://advanced.onlinelibrary.wiley.com/doi/ abs/10.1002/adma.201602852 .
+
+> 42
+
+P. A. Joy and S. Vasudevan. Magnetism in the layered transition-metal thiophosphates MPS 3 (M=Mn, Fe, and Ni). Physical Review B, 46(9):5425–5433, 1992. doi:10.1103/PhysRevB.46.5425. 
+
+> 43
+
+Rabindra Basnet, Aaron Wegner, Krishna Pandey, Stephen Storment, and Jin Hu. Highly sensitive spin-flop transition in antiferromagnetic van der Waals material MPS 3 (M = Ni and Mn). Physical Review Materials, 5(6):064413, 2021. ISSN 2475-9953. doi:10.1103/PhysRevMaterials.5.064413. 
+
+> 44
+
+Hao Chu, Chang Jae Roh, Joshua O. Island, Chen Li, Sungmin Lee, Jingjing Chen, Je-Geun Park, Andrea F. Young, Jong Seok Lee, and David Hsieh. Linear magnetoelectric phase in ultrathin MnPS 3 probed by optical second harmonic generation. Physical Review Letters, 124(2):027601, 2020. doi:10.1103/PhysRevLett.124.027601. 
+
+> 45
+
+Qi Zhang, Kyle Hwangbo, Chong Wang, Qianni Jiang, Jiun-Haw Chu, Haidan Wen, Di Xiao, and Xiaodong Xu. Obser-vation of giant optical linear dichroism in a zigzag antiferromagnet FePS 3. Nano Letters, 21(16):6938–6945, 2021. ISSN 1530-6984. doi:10.1021/acs.nanolett.1c02188. 
+
+> 46
+
+D. Khusyainov, T. Gareev, V. Radovskaia, K. Sampathkumar, S. Acharya, M. ˇSiˇ skins, S. Ma˜ nas-Valero, B. A. Ivanov, E. Coronado, Th. Rasing, A. V. Kimel, and D. Afanasiev. Ultrafast laser-induced spin–lattice dynamics in the van der Waals antiferromagnet CoPS 3. APL Materials, 11(7):071104, 2023. ISSN 2166-532X. doi:10.1063/5.0146128. 
+
+> 47
+
+Milosz Rybak, Paulo E. Faria Junior, Tomasz Wo´ zniak, Pawel Scharoch, Jaroslav Fabian, and Magdalena Birowska. Magneto-optical anisotropies of two-dimensional antiferromagnetic M P X 3 from first principles. Physical Review B, 109(5):054426, 2024. ISSN 2469-9950, 2469-9969. doi:10.1103/PhysRevB.109.054426. 
+
+> 48
+
+Kiichi Okuda, Ko Kurosawa, Shozo Saito, Makoto Honda, Zhihong Yu, and Muneyuki Date. Magnetic properties of layered compound mnps3. Journal of the Physical Society of Japan, 55(12):4456–4463, 1986. 
+
+> 49
+
+A. R. Wildes, H. M. Rønnow, B. Roessli, M. J. Harris, and K. W. Godfrey. Static and dynamic critical properties of the quasi-two-dimensional antiferromagnet ${\ mathrm {MnPS }} { 3}$. Physical Review B, 74(9):094422, 2006. doi: 10.1103/PhysRevB.74.094422. 
+
+> 50
+
+D Lan¸ con, R. A Ewings, T Guidi, F Formisano, and AR Wildes. Magnetic exchange parameters and anisotropy of the quasi-two-dimensional antiferromagnet nips 3. Physical Review B, 98(13):134414, 2018. 
+
+> 51
+
+Ziye Lu, Xinyu Yang, Lin Huang, Xiyu Chen, Meifeng Liu, Jin Peng, Shuai Dong, and Jun-Ming Liu. Evolution of magnetic phase in two-dimensional van der Waals Mn1-xNixPS3 single crystals. Journal of Physics: Condensed Matter, 34(35):354005, 2022. ISSN 0953-8984. doi:10.1088/1361-648X/ac7a80. 
+
+> 52
+
+Clifford J Allington, Carina A Belvin, Urban FP Seifert, Mengxing Ye, Tommy Tai, Edoardo Baldini, Suhan Son, Junghyun Kim, Jaena Park, Je-Geun Park, et al. Distinct optical excitation mechanisms of a coherent magnon in a van 13 
+
+der waals antiferromagnet. Physical Review Letters, 134(6):066903, 2025. 
+
+> 53
+
+A. R. Wildes, B. Roessli, B. Lebech, and K. W. Godfrey. Spin waves and the critical behaviour of the magnetization in MnPS 3. Journal of Physics: Condensed Matter, 10(28):6417, 1998. ISSN 0953-8984. doi:10.1088/0953-8984/10/28/020. 
+
+> 54
+
+Dipankar Jana, Swagata Acharya, Milan Orlita, Clement Faugeras, Dimitar Pashov, Mark Van Schilfgaarde, Marek Potemski, and Maciej Koperski. Deconstruction of the anisotropic magnetic interactions from spin-entangled optical excitations in van der waals antiferromagnets. Advanced Science, page e05834, 2025. 
+
+> 55
+
+E. J. K. B. Banda. Optical absorption of NiPS 3 in the near-infrared, visible and near-ultraviolet regions. Journal of Physics C: Solid State Physics, 19(36):7329, 1986. ISSN 0022-3719. doi:10.1088/0022-3719/19/36/023. 
+
+> 56
+
+Jonghyeon Kim, Junghyun Kim, Beom Hyun Kim, Je-Geun Park, and Jae Hoon Kim. Anisotropic optical band structure of van der Waals antiferromagnet NiPS 3. Physical Review B, 110(18):L180406, 2024. ISSN 2469-9950, 2469-9969. doi: 10.1103/PhysRevB.110.L180406. 
+
+> 57
+
+Maciej ´Smiertka, Michal Rygala, Katarzyna Posmyk, Paulina Peksa, Mateusz Dyksik, Dimitar Pashov, Kseniia Mosina, Zdenˇ ek Sofer, Mark van Schilfgaarde, Florian Dirnberger, et al. Distinct magneto-optical response of frenkel and wannier excitons in crsbr. Nature Communications, 2026. doi:https://doi.org/10.1038/s41467-026-68482-5. 
+
+> 58
+
+Thomas J. Penfold, J. Olof Johansson, and Julien Eng. Towards understanding and controlling ultrafast dy-namics in molecular photomagnets. Coordination Chemistry Reviews, 494:215346, 2023. ISSN 0010-8545. doi: 10.1016/j.ccr.2023.215346. 
+
+> 59
+
+V Propach and D Reinen. ¨Uber die farbe von ”nio”/the different colours of ”nio”. Zeitschrift f¨ ur Naturforschung B, 33 (6):619–621, 1978. 
+
+> 60
+
+Jae-Ung Lee, Sungmin Lee, Ji Hoon Ryoo, Soonmin Kang, Tae Yun Kim, Pilkwang Kim, Cheol-Hwan Park, Je-Geun Park, and Hyeonsik Cheong. Ising-type magnetic ordering in atomically thin FePS 3. Nano Letters, 16(12):7433–7438, 2016. ISSN 1530-6984. doi:10.1021/acs.nanolett.6b03052. 
+
+> 61
+
+Jiayu Li, Qiushi Yao, Lin Wu, Zongxiang Hu, Boya Gao, Xiangang Wan, and Qihang Liu. Designing light-element mate-rials with large effective spin-orbit coupling. Nature Communications, 13:919, 2022. ISSN 2041-1723. doi:10.1038/s41467-022-28534-y. URL https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8854432/ .
+
+> 62
+
+Songsong Yan, Yongping Du, Xiaoou Zhang, Xiangang Wan, and Di Wang. First-principles study of magnetic interactions and excitations in antiferromagnetic van der waals material mpx3 (m= mn, fe, co, ni; x= s, se). Journal of Physics: Condensed Matter, 36(6):065502, 2023. 14 
+
+EXTENDED DATA 
+
+Extended Data Fig. 1. Ab-initio calculation of Ni 2+ multiplets. Excitonic wavefunctions are computed in the framework of QS G ˆW 38 theory for the mixed compounds Mn 1−xNi xPS 3, with x = 0 .25 (details in Supple-mentary Sec. 6). (a) The in-plane distribution of Mn and Ni ions for the x = 0 .125 and x = 0 .25 alloys. (b) The electronic band structure of Mn 1−xNi xPS 3, for x = 0 .25. The colors of the markers indicate the weight of S-p,Mn-d, Ni-d orbitals, respectively. The Brillouin zone and high-symmetry points are shown in the inset, with the 
+
+k-path denoted in blue. (c,d,g) The wavefunction of the excitonic-hole for the 3A1g , 3Eg and 3T1g excitations. The Ni and Mn ions are shown in purple and turquoise, respectively. S and P are shown in gray and brown. The 
+
+> 3
+
+A1g and 3Eg excitations are localized to the Ni-ion, while the 3T1g state is delocalized over multiple hexagonal plaquette. (e,f,h) Electronic band structure plotted along k-path in the inset of b for the 3A1g , 3Eg and 3T1g
+
+excitations. Marker size indicates the weight of the excitonic hole cn, k, raised to the power of 4 for visualization purposes. Projection show that the 3A1g (3Eg ) excitation is projected onto the ml = |2| (0) Ni-d states, while the 3T1g excitation is delocalized over the S-p valence bands.

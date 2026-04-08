@@ -1,0 +1,808 @@
+Title: Engineering altermagnetic orders on the square-kagome lattice through sublattice interference
+
+URL Source: https://arxiv.org/pdf/2603.12022v1
+
+Published Time: Fri, 13 Mar 2026 01:16:20 GMT
+
+Number of Pages: 12
+
+Markdown Content:
+# Engineering altermagnetic orders on the square-kagome lattice through sublattice interference 
+
+Jonas Issing, 1, ∗ Jannis Seufert, 1 Michael Klett, 1 Sarbajit Mazumdar, 1 Yasir Iqbal, 2 Ronny Thomale, 1 and Atanu Maity 1, †
+
+> 1
+
+Institut f¨ ur Theoretische Physik und Astrophysik and W¨ urzburg-Dresden Cluster of Excellence ctd.qmat, Julius-Maximilians-Universit¨ at W¨ urzburg, Am Hubland, Campus S¨ ud, W¨ urzburg 97074, Germany 
+
+> 2
+
+Department of Physics and Quantum Centre of Excellence for Diamond and Emergent Materials (QuCenDiEM), Indian Institute of Technology Madras, Chennai 600036, India 
+
+(Dated: March 13, 2026) We investigate the emergence of altermagnetic (AM) phases on the square-kagome lattice. Our analysis reveals that matrix element effects due to an orthogonal sublattice weight decomposition of Fermi level eigenstates known as sublattice interference enable decoupled magnetic ordering ten-dencies on distinct sublattices. Depending on which sublattice undergoes a magnetic instability, we identify a dxy -type AM phase and a dx2−y2 -type AM phase originating from different sublat-tice polarization patterns. Using the Kotliar-Ruckenstein slave boson formalism we explore the stability of these AM phases as a function of interaction strength. Our findings demonstrate that sublattice-selective magnetic instabilities provide a versatile route to engineer the nature of AM order. 
+
+I. INTRODUCTION 
+
+Altermagnetism (AM) has recently emerged as a dis-tinct class of collinear magnetic order, complementing ferromagnetism (FM) and antiferromagnetism (AFM). In FMs, magnetic moments align parallel, producing a net magnetization, whereas in AFMs neighboring spins align antiparallel and fully compensate. AM combines the traits of both the FM and AFM. It hosts an an-tiparallel spin arrangement but exhibits spin-polarized electronic structures without any net magnetization in real space. This coexistence of compensated magnetic moments and uncompensated momentum-space spin po-larization is the defining character of AM and reflects a unique symmetry-breaking mechanism. From a symme-try point of view, AM arises when magnetic order breaks time-reversal symmetry in such a way that no anti-unitary symmetry combining time reversal with a spatial operation leaves crystal momentum invariant. In certain crystals, magnetic sublattices are related by point-group operations other than translations or inversions, prevent-ing cancellation of spin polarization in momentum space. Consequently, although the macroscopic magnetization vanishes, the electronic bands develop a nontrivial spin texture with spin splitting and related transport effects. Space group-theoretical symmetry analysis and density functional theory (DFT) calculations [1–4] establish this as the defining feature of the AM state. The identifica-tion of AM has renewed interest in compensated mag-netic materials due to their potential for spintronics and quantum technologies. Unlike FMs, AM materials gen-erate no stray fields, yet their spin-polarized bands can   
+
+> ∗jonas.issing@uni-wuerzburg.de
+> †atanu.maity@uni-wuerzburg.de
+
+produce sizable spin currents and magneto-transport re-sponses. This combination enables low-dissipation spin-tronic functionalities that merge compensated magnetic order with spin-polarized transport [5–7]. Building on mean field treatments of crystal fields and/or magnetic order, theoretical predictions of AM first appeared in collinear magnetic metals with spe-cific crystalline [1, 2] and later valley symmetries [8]. Subsequent ab initio studies [3, 9–12] proposed can-didate compounds such as MnTe, RuO 2, and CrSb, which display compensated antiferromagnetic configura-tions alongside pronounced spin splitting. Experimen-tal evidence [13–16] from angle-resolved photoemission spectroscopy (ARPES), magneto-optical Kerr effect, and anomalous Hall measurements have partially confirmed AM behavior, nurturing the hope for rendering AM a robust and decently ubiquitous type of unconventional magnetic order. Despite this promising activity in the field, however, substantiating the microscopic origin of AM in corre-lated electron systems beyond mean field theory has proven to be surprisingly challenging. Early proposals attempted to connect AM to orbital ordering [17, 18] or to structural distortions [19, 20], coupling spin and orbital degrees of freedom. In an attempt to go be-yond mean-field theory by proposing an orbital-order-driven mechanism for AM formation, [17] faced the cru-cial challenge of stabilizing staggered orbital order with-out inducing a net magnetization. This is because stag-gered two-orbital orders would tend to imply ferromag-netic spin exchange by the Goodenough Kanamori rules, and hence no staggered magnetic order. A multi-orbital ansatz might help to improve on this issue [21]. Tak-ing a different route, Ref. [22] proposed a microscopic model of itinerant electrons on a Lieb lattice that points to a qualitatively different microscopic mechanism: AM can arise from interacting electrons without any orbital 
+
+> arXiv:2603.12022v1 [cond-mat.str-el] 12 Mar 2026
+
+2or spin-orbit coupling, driven instead by sublattice in-terference [23]–a purely kinetic effect encoded in the lattice electronic structure. In that setting, the low-energy electronic states are strongly sublattice-polarized, so that the sublattice-resolved particle–hole excitations, and hence the magnetic fluctuation profile, attains a highly sublattice-dependent signature. Note that while this effect clearly has a strong bearing on sublattice-affected Fermi surface instabilities [23–28], the sublat-tice interference is not constrained to the Fermi level and hence can also feature strong impact on phases descend-ing from strongly correlated electron systems. This en-abled Ref. [22] to trigger a PT -breaking AM instability for the Hubbard model on the Lieb lattice, stabilizing AM without invoking incipient conventional orbital or structural order. Realizing that scattering channel selection through sublattice interference gives the most substantiated ac-cess to the spontaneous formation of AM in a correlated electron setting beyond mean field as shown for the Lieb lattice, it readily suggests a broader paradigm in which AM can emerge generically in multi-sublattice metals with strong sublattice polarization. If different sublat-tices play distinct roles at low energies—for instance, one sublattice hosts the magnetic instability, while another supplies the additional symmetry environment needed for spontaneous PT breaking—then their interplay can pro-duce an altermagnetic state with compensated net mo-ment and momentum-dependent spin polarization. Notably, sublattice polarization is quite generic in multi-sublattice metals [27]: at high-symmetry Brillouin zone points, point-group symmetry enforces destructive interference in Bloch states, suppressing wavefunction weight on select sublattices via cancellations of equiv-alent hopping paths. As filling is tuned, the Fermi level generically crosses these symmetry-organized bands, con-centrating low-energy states on remaining sublattices—a robust kinetic effect persisting under moderate perturba-tions and longer-range hoppings. Motivated by the attempt to elevate the sublattice fin-gerprint of correlated electron systems to a tuning knob for exotic electronic order, we investigate the realization of AM in the square–kagome lattice, a two-sublattice two-dimensional geometry with distinct coordination environ-ments and electronic connectivity. The square–kagome lattice offers a suitable platform to demonstrate the spon-taneous emergence of AM, as it contains two symmetry-inequivalent sublattices where AFM order on either one of these sublattices translates into AM order due to the appropriate symmetry relation between the sublat-tices [29]. The square–kagome lattice has previously been studied extensively in the localized-spin (Mott) regime — for instance in frustrated Heisenberg mod-els and candidate quantum spin-liquid compounds such as KCu 6AlBiO 4(SO 4)5Cl [30], KCu 7TeO 4(SO 4)5Cl [31], Na 6Cu 7BiO 4(PO 4)4Cl 3 [32] etc. In contrast, its real-ization in an itinerant-electron setting remains largely               
+
+> Figure 1. (a) Illustration of the square-kagome lattice. The unit cell [marked by gray square box] consists of six sites in-dicated by numbers 1 ,2, . . . , 6. Among these, sites 1 ,2,3,4belong to Wyckoff position 4 fwhile the sites 5 ,6 correspond to the Wyckoff position 2 c. The unit translational vectors are denoted by ˆ axand ˆ ay. Possible AM phases due to the mag-netization on (b) 2 csites and (c) 4 fsites. Here, yellow and green sites denote two different magnetic alignments, while blue sites denote nonmagnetic sites.
+
+unexplored. Here, we demonstrate that, in the itiner-ant regime, sublattice-dependent magnetic instabilities can generate multiple AM phases distinguished by their momentum-space spin polarization. Specifically, one sub-lattice predominantly drives a N´ eel-type instability, while the other facilitates the effective time-reversal symme-try breaking required for AM order to emerge. We further employ the spin-rotationally invariant Kotliar-Ruckenstein (SRIKR) slave boson (SB) [33, 34] formal-ism, which is particularly suited for multi-sublattice sys-tems. The inclusion of Gaussian fluctuations enables a controlled assessment of the stability of the altermagnetic phases against charge and spin instabilities beyond static mean-field theory in the presence of strong interactions. The paper is organized as follows. In Sec. II, we clas-sify the AM phases on the square–kagome lattice from symmetry standpoint and present corresponding mini-mal models. In Sec. III, we introduce a tight-binding Hubbard model on this lattice. In Sec. IV, we analyze the band structure of the tight-binding part of the model and discuss possible sublattice polarization scenarios. In Sec. V, we examine the AM instabilities that arise from sublattice polarization induced by the addition of on-site Hubbard terms. In Sec. VI, we investigate the stability of the observed AM orders using the slave boson formal-ism. Finally, in Sec. VII, we summarize our results and provide an outlook.   
+
+> II. SYMMETRY-ALLOWED AM PHASES A. Lattice structure and symmetry classification
+
+The square-kagome lattice shown in Fig. 1(a), be-longs to the two-dimensional plane group p4mm (no. 11), 3   
+
+> Figure 2. Hopping amplitudes associated with the minimal models for the AM orders on (a) 2 cand (b) 4 fsites respec-tively.
+
+whose point group symmetry is C4v . The lattice con-tains two inequivalent sublattices, denoted as A and B, occupying distinct Wyckoff positions within the unit cell. Sublattice A consists of sites 1, 2, 3, and 4 at the Wyck-off position 4 f (general positions like ( x, x ; x, ¯x; ¯ x, x ; ¯ x, ¯x)equivalents under p4mm ), each with local site symmetry 
+
+m. (mirror group 1 |m). These form the square corners of the lattice. Sublattice B consists of sites 5 and 6 at the Wyckoff position 2 c (special positions like (1 /2, 0; 0 , 1/2) equivalents under p4mm ), each with local site symme-try 2 mm . (mirror group 1 , C 2|m, m ). These occupy the kagome centers of the lattice. The inequivalence of these Wyckoff positions leads to distinct local coordination en-vironments, which play a central role in stabilizing dif-ferent sublattice-polarized electronic states giving rise to AM phases. Within the point-group symmetry C4v , AM order pa-rameters are classified according to their transformation properties. In particular, the dx2−y2 -type AM order transforms as the B1 irreducible representation, while the dxy -type AM order belongs to the B2 representa-tion. These two symmetry channels correspond to dis-tinct real-space patterns of sublattice magnetization and lead to different momentum-dependent spin polarizations in the electronic structure. In the square-kagome lattice, sublattice polarization selects the realized symmetry channel. When magnetic instability develops on sublattice B (Wyckoff 2 c), while sublattice A remains non-magnetic, as shown in Fig. 1(b), the resulting AM phase transforms as B1, corresponding to a dx2−y2 -type order. Conversely, when instability de-velops on sublattice A (Wyckoff 4 f ) as shown in Fig. 1(c), the system favors a dxy -type AM phase associated with the B2 representation.  
+
+> B. Spin group characterization and minimal models
+
+Collinear magnetic phases are characterized by a non-trivial spin group [2] denoted by Rs = [ Ri|| Rj ], where 
+
+Ri(Rj ) incorporates all the spin (crystallographic) space operations. For collinear AM phases the nontrivial spin group is given by RAM s = [ E|| H] + [ C2|| G − H = A]where H is a halving subgroup of the layer group G. We analyze the non-relativistic spin-split band structures of these AM phases using spin-group formalism.    
+
+> 1. AM sublattice order on 2cWyckoff Sites
+
+The nontrivial spin group in this AM phase is given by [ C2||A ] where A includes two diagonal mirrors σxy 
+
+(mirror line x = y) and σx¯y (mirror line x = −y), and a C4z axis ( C4) anchored at the center of the squares. This symmetry setting reshapes the spin-dependent band structure εσ (kx, k y ) as follows. [C2|| σxy ] : εσ (kx, k y ) → ε−σ (ky , k x) ,
+
+[C2|| σx¯y ] : εσ (kx, k y ) → ε−σ (−ky , −kx) ,
+
+[C2|| C4] : εσ (kx, k y ) → ε−σ (−ky , k x) .
+
+(1) The first two relations enforce symmetry-protected spin degeneracy along the lines kx = ±ky , i.e., along the seg-ment Γ-M in momentum space. The minimal model lead-ing to such an AM phase can be cast as: 
+
+HB 
+
+> eff
+
+= ε0(k) + dx(k)τ x + dz (k)τ z + MB σz τ z (2) where ˜ a = a + b with a (b) as intra (inter) square length in Fig. 1(a) and 
+
+ε0(k) = ˜ μB − t′ 
+
+> B
+
++ t′ 
+
+> B
+
+(cos 2 kx˜a
+
+2 + cos 2 ky ˜a
+
+2 )
+
+dz (k) = t′ 
+
+> B
+
+(cos 2 kx˜a
+
+2 − cos 2 ky ˜a
+
+2 )
+
+dx(k) = tB cos kx˜a
+
+2 cos ky ˜a
+
+2 .
+
+(3) The Pauli matrices τ γ (γ = x, y, z ) label the two oppo-sitely aligned magnetic sublattices, while σγ denote spin degrees of freedom. The hoppings in this minimal model has been shown in Fig. 2(a). Using a low-energy ex-pansion, the momentum-dependent spin splitting around Γ(0 , 0) point reads 
+
+fΓ(k) ∝ (k2 
+
+> x
+
+− k2 
+
+> y
+
+) . (4) It is worth noting that when this AM order arising from magnetization at the 2 c Wyckoff position with site sym-metry 2 mm is embedded in three dimensions, it corre-sponds to an AM order at the 2 e or 2 f Wyckoff positions with site symmetry D2h of space group No. 123, accord-ing to the classification table of AM orders in Ref. [4].    
+
+> 2. AM sublattice order on 4fWyckoff Sites
+
+The crystallographic operations A connecting ↑ and ↓
+
+sites include the horizontal ( σx) and vertical ( σy ) mirrors 4and the rotational axis C4 (C4z ) and yield the following constraints on the dispersion. [C2|| σx] : εσ (kx, k y ) → ε−σ (kx, −ky ) ,
+
+[C2|| σy ] : εσ (kx, k y ) → ε−σ (−kx, k y ) ,
+
+[C2|| C4] : εσ (kx, k y ) → ε−σ (−ky , k x) .
+
+(5) The first two relations ensure symmetry-protected spin degeneracy along the lines kx = 0 , π and ky = 0 , π . In this case, four sites per unit cell form two pairs of op-positely spin-polarized sites, requiring an additional set of Pauli matrices Σ γ to distinguish sites with identical polarization. The minimal model reads 
+
+HA 
+
+> eff
+
+= ε0(k) + dαβ (k)τ αΣβ + MAσz τ z (6) where, ε0(k) = ˜ μA and the non-vanishing dαβ (k) ele-ments are given by: 
+
+d0x = t′′ 
+
+> A
+
+(cos kxb cos ky a + cos ky b cos kxa)
+
+dzx = −t′′ 
+
+> A
+
+(sin kxb sin ky a + sin ky b sin kxa)
+
+d0y = t′′ 
+
+> A
+
+(sin kxb cos ky a − cos ky b sin kxa)
+
+dzy = t′′ 
+
+> A
+
+(cos kxb sin ky a − sin ky b cos kxa)
+
+dx0 = tA cos ky a + t′ 
+
+> A
+
+cos ky bdyz = tA sin ky a − t′ 
+
+> A
+
+sin ky bdxx = tA cos kxa + t′ 
+
+> A
+
+cos kxbdyx = −tA sin kxa + t′ 
+
+> A
+
+sin kxb . 
+
+(7) The hoppings in this minimal model are depicted in Fig. 2(b). The long-wavelength expansion yields 
+
+fΓ(k) ∝ kxky . (8) Unlike the B1 case (2c, minimal, mult. 2), this B2 order embeds in SG 123 at 4j/4k (mult. 4), beyond standard prototypes [4]. 
+
+III. MODEL 
+
+In order to realize the nontrivial spin–group character-ized AM phases discussed in the previous section, it is es-sential to identify a minimal microscopic model that cap-tures the underlying sublattice-polarization mechanism. To this end, we consider a single-orbital Hubbard model on the square–kagome lattice, ˆH = ˆH0 + ˆHint , (9) ˆH0 = − X 
+
+> ⟨i,j ⟩ss ′,σ
+
+tss ′
+
+> ij
+
+
+
+ˆc† 
+
+> i,s,σ
+
+ˆcj,s ′,σ + h.c. 
+
+
+
++ X
+
+> i,s,σ
+
+μi,s ˆni,s,σ ,
+
+(10) ˆHint = U X
+
+> i,s
+
+ˆni,s, ↑ ˆni,s, ↓, (11) where ˆ c† 
+
+> i,s,σ
+
+(ˆ ci,s,σ ) creates (annihilates) an electron with spin σ at the sublattice s within the unit cell i, and ˆni,s,σ = ˆ c† 
+
+> i,s,σ
+
+ˆci,s,σ . ˆH0 represents the non-interacting part where the first term describes electron hopping on the square–kagome network with three distinct hopping amplitudes t, t′, and t′′ as illustrated in Fig. 3(a) where we set t = 1 in the rest of our discussion. By introducing the second term in ˆH0, we include an intrinsic detuning (i.e., μi,s ∈A = μA̸ = μi,s ∈B = μB ) to incorporate the effect of different atomic species at Wyckoff positions 4 f
+
+(A sites) and 2 c (B sites). The remaining term denoted by Hint represents the on-site Hubbard interaction U .
+
+IV. ELECTRONIC SPECTRUM OF THE PARENT METAL AND SUBLATTICE POLARIZATION 
+
+In this section, we analyze the electronic band struc-ture of the noninteracting (parent) square–kagome metal and highlight the nontrivial behavior of its Bloch eigen-states, which arises despite the full space-group symme-try of the single-particle Hamiltonian. We first focus on the case with t′′ = 0. The tight-binding spectrum is obtained by Fourier transforming Eq. (10) and diagonal-izing the resulting Bloch Hamiltonian, yielding ˆH0 = X
+
+> k,n,σ
+
+εk,n ˆγ† 
+
+> k,n,σ
+
+ˆγk,n,σ , (12) where n labels the electronic bands and ˆ γk,n,σ denotes the fermionic eigenmode. The latter is related to the sublattice operator ˆ ck,s,σ through the unitary transfor-mation ˆck,s,σ = X
+
+> n
+
+Us,n  
+
+> k
+
+ˆγk,n,σ , (13) where Us,n  
+
+> k
+
+diagonalizes Eq. (10). Figure 3(d) displays the resulting band structure for t′ = 0 .5, along with the corresponding density of states (DOS). Multiple van Hove singularities (VHSs) are present; the second-lowest VHS, whose Fermi level is indicated by the red line, ex-hibits particularly interesting features in the Bloch eigen-modes. To analyze this behavior, we express the real-space operators as ˆci,s,σ = X
+
+> k,n
+
+Us,n  
+
+> k
+
+ˆγk,n,σ eik·Ri,s , (14) where Ri,s denotes the position of site ( i, s ). The es-sential information governing the nontrivial character of the Bloch states—and thereby the interacting instabili-ties—is encoded in the transformation coefficients Us,n  
+
+> k
+
+,which is referred to as the sublattice weights following Refs. [23, 26, 35]. At filling nf ≈ 0.35 (marked by the red line in Fig. 3(d)), the Fermi level intersects a flat band along the Brillouin zone (BZ) boundary, giving rise to a Fermi surface (FS) shown in Fig. 3(b). The sublattice-resolved spectral weights |U s,n  
+
+> k
+
+| are depicted in Fig. 3(f). The FS 5                                      
+
+> Figure 3. (a) Illustration of the tight-binding hopping parameters: t(A-B hopping), t′(intra-unit-cell A-A hopping), and
+> t′′ (inter-unit-cell A-A hopping). (b) and (c) show the Fermi surfaces for ( t, t ′, t ′′ ) = (1 ,0.5,0) and ( t, t ′, t ′′ ) = (1 ,0.5,0.5) at fillings nf≈0.35 and nf≈0.68, respectively. The corresponding band dispersions are presented in (d) and (e), where the red line indicates the Fermi level (filling). The density of states (DOS) associated with each dispersion is shown on the right. For these two fillings, (f) and (g) display the sublattice weights along the paths M→M1→M2→M3→Mand Γ→M3→Γ′→M→Γ, respectively.
+
+exhibits a pronounced sublattice polarization, with dom-inant contributions from the B-sublattice sites (5 and 6), whereas all A-sublattice sites (1–4) contribute relatively weaker, uniform, unpolarized weight. Here, it is worth noting that the aforementioned analysis assumes zero de-tuning, i.e., μA = μB = 0. A positive (negative) detuning applied to the 4 f sites decreases (increases) their sublat-tice contribution, and the corresponding weight vanishes in the limit μA → ∞ .A qualitatively different type of sublattice polarization emerges when t′ = t′′ = 0 .5. The corresponding band structure, shown in Fig. 3(e), contains three VHSs. For a filling nf ≈ 0.68, corresponding to the middle VHS (Fermi level shown by red line), the FS forms a square contour oriented along the BZ diagonals [see Fig. 3(c)]. The sublattice decomposition of the eigenstates, plotted in Fig. 3(g), reveals that this FS is dominated exclusively by contributions from the A-sublattice sites (1–4), while the B-sublattice sites are effectively absent. Moreover, the A-site contributions alternate along the sides of the square Fermi contour, producing an alternating pattern of sublattice polarization. Note that, unlike the previous scenario, the sublattice contributions are independent of the detuning parameters in this case. In summary, two distinct regimes of sublattice polar-ization emerge in the square–kagome metal: one domi-nated by the B sublattice and another characterized by alternating A-sublattice contributions. In the following section, we demonstrate how these two types of sublattice polarization drive the formation of distinct AM orders, as discussed in Sec. II.                
+
+> Figure 4. Non-relativistic lifting of Kramers degeneracy for U= 5: (a) ( t, t ′, t ′′ ) = (1 ,0.5,0) and (b) ( t, t ′, t ′′ ) = (1 ,0.5,0.5). The dashed square indicates the boundary of the first Brillouin zone.
+> V. AM ORDERS
+
+Our analysis of the parent square-kagome metallic state in the preceding section provides an itinerant frame-work for exploring symmetry-broken magnetic phases. To realize the AM orders emerging from this itinerant background, we now consider magnetic instabilities in-duced by the on-site Hubbard interaction introduced in Eq. (11). Within the mean-field approximation, the quar-tic term can be decoupled as ˆni,s, ↑ ˆni,s, ↓ ≈ (ˆ ni,s, ↓ − ˆni,s, ↑)Mi,s + M 2
+
+> i,s
+
+, (15) 6where the local spin-polarization mean field Mi,s is de-fined via 
+
+⟨ˆni,s, ↑ − ˆni,s, ↓⟩ = 2 Mi,s . (16) Depending on which sublattice (A or B) acquires a fi-nite Mi,s , distinct AM phases are stabilized. The corre-sponding saddle-point configurations of Mi,s are obtained self-consistently at finite U . The results are summarized below.    
+
+> A. Sublattice-polarized eigenstates on 2csites
+
+In the first case—corresponding to the sublattice-polarized eigenstates discussed in the previous section, where the dominant electronic weight resides on the B sites (5 and 6)—the saddle-point solution yields 
+
+Mi, 1 = Mi, 2 = Mi, 3 = Mi, 4 ≈ 0, Mi, 5 = −Mi, 6̸ = 0 .
+
+(17) This solution indicates a magnetic instability in which only the B sites develop finite spin polarization with AFM order as shown in Fig. 1(b), while the A sites re-main essentially nonmagnetic, despite their finite contri-bution to the electronic eigenstates. The resulting spin texture corresponds to a dx2−y2 -type AM order, as dis-cussed in Sec. II. Consequently, the spin degeneracy of the electronic bands [see Fig. 3(d)] is lifted, producing the non-relativistic spin-split band structure shown in Fig. 4(a). Notably, a residual degeneracy persists along the Brillouin-zone (BZ) diagonals (Γ M ), consistent with the symmetry analysis presented in Sec. II.    
+
+> B. Sublattice-polarized eigenstates on 4fsites
+
+In the second case—where the low-energy electronic eigenstates are polarized on the A sites (1–4) with neg-ligible contribution from the B sites—the saddle-point configuration reads 
+
+Mi, 1 = −Mi, 2 = Mi, 3 = −Mi, 4̸ = 0 , Mi, 5 = Mi, 6 ≈ 0.
+
+(18) Here, an alternating spin polarization emerges exclu-sively on the A sublattice, forming an antiferromagnetic (AFM) pattern [see Fig. 1(c)]. This configuration re-alizes a dxy -type AM order, as characterized in Sec. II. Compared to the spin-degenerate metallic band structure shown in Fig. 3(e), the AM phase exhibits a spin-split spectrum displayed in Fig. 4(b). The remaining degen-eracies along the BZ boundaries and axes (Γ X, Γ Y , M X ,and M Y ) align with the symmetry constraints derived in Sec. II. In summary, a sublattice polarization on the A sites gives rise to a dxy -type AM order, whereas polarization on the B sites stabilizes a dx2−y2 -type AM order. To further elucidate their low-energy properties, we derive effective models for the two AM phases by integrating out the nonmagnetic sites in each case. The effective model of AM for spin-polarization on the 2 c Wyckoff positions (i.e., B sites) takes the form of Eq. (2) with 
+
+tB = t2
+
+> 2t′−μA
+
+, t′ 
+
+> B
+
+= 2t2t′ 
+
+> μA(2 t′−μA)
+
+and ˜ μB = μB − 4t2
+
+> μA
+
+. Sim-ilarly, the low-energy effective Hamiltonian for the other AM phase, after integrating the nonmagnetic sites (B sites) out, can be cast as Eq. (6) with tA = − t2
+
+> μB
+
+−t′, t ′ 
+
+> A
+
+=
+
+t′′  
+
+> A
+
+= − t2
+
+> μB
+
+, ˜μA = μA − 2t2
+
+> μB
+
+. The detailed derivations are provided in Appendix A. Furthermore, we find that the 
+
+dx2−y2 -type AM phase appears robustly for any choice of 
+
+t′ when t′′ = 0, indicating that this order is a stable phase of the system. Moreover, the dxy -type AM order persists even for small deviations of t′′ from t′. Although such deviations slightly distort the square Fermi surface, the altermagnetic order remains stable within our mean-field analysis.  
+
+> VI. STABILITY ANALYSIS
+
+To perform a stability analysis of the two AM phases, we employ the SRIKR slave boson formalism [33, 34]. In this representation, the physical electron operator is mapped onto pseudofermions coupled to the auxiliary bosons via the SRIKR z-matrix 
+
+c† 
+
+> iσ
+
+= X
+
+> σ′
+
+z† 
+
+> i,σσ ′
+
+f † 
+
+> iσ ′
+
+. (19) Here f † 
+
+> iσ
+
+creates a coherent quasiparticle, while z† 
+
+> i,σσ ′
+
+is the spin-rotationally invariant quasiparticle-weight ma-trix encoding the local Hubbard physics through the fields ei, di, and pi,μ with μ ∈ { 0, 1, 2, 3}, describing empty, doubly and singly occupied local configurations. Since this mapping enlarges the Hilbert space, the orig-inal physical subspace has to be recovered by imposing local constraints, enforced in the path-integral formula-tion via the Lagrange multipliers αi, β0,i , and βi,a with 
+
+a ∈ { 1, 2, 3}. The main benefit of our method is that by applying a meanfield approximation the Hubbard in-teraction becomes quadratic, at the cost of a more com-plex hopping term, which is no longer purely fermionic. Within this approximation the ground state is given by the saddle point of the free energy [36]. To describe the altermagnetic states considered in this work, we extend the standard single-site slave boson mean-field formal-ism to a cluster mean-field approach. In this scheme, the lattice is decomposed into clusters containing multi-ple, potentially inequivalent sites. Each site within the cluster is associated with its own set of slave boson fields, allowing for sublattice-dependent quasiparticle renormal-ization and magnetic polarization [37]. To calculate response functions, we consider Gaussian fluctuations around our saddle point by expanding the path-integral action S up to second order in bosonic 7fields [38] 
+
+δS (2) = X
+
+> q,n
+
+δψ s,μ (−q, −iω n) Mss ′ 
+
+> μν
+
+(q, iω n) δψ s′,ν (q, iω n),
+
+(20) with the fluctuation matrix MMss ′ 
+
+> μν
+
+(q, iω n) = δ2Sδψ s,μ (−q, −iω n) δψ s′,ν (q, iω n) . (21) The fluctuation fields within the sublattice basis can be straightforwardly related to the basis of magnetic fluc-tuations ( δψ q+aQ) used in the previous publication [38] by Fourier-transform and an additional phase factor 
+
+δψ q+aQ = X
+
+> α
+
+δψ αei(q+aQ)rα . (22) However, there are some differences such as that the current basis choice also encompasses the charge SB de-grees of freedom in the numerical treatment of the re-sulting loop expansion. This goes beyond the scope of the current work and will be published in full detail in a follow-up paper [37]. From the Gaussian fluctuation action, linear response functions are obtained by evaluating correlation func-tions of the fluctuating bosonic fields. In frequency and momentum space, the generalized susceptibility is given by the inverse of the fluctuation matrix, 
+
+χss ′ 
+
+> μν
+
+(q, iω n) = ⟨δψ s,μ (−q, −iω n) δψ s′,ν (q, iω n)⟩
+
+= M−1(q, iω n)ss ′ 
+
+> μν
+
+. (23) Due to spin-rotation invariance, the fluctuation matrix 
+
+Mμν is block diagonal in charge and spin sectors. The charge susceptibility is defined as the density–density re-sponse, 
+
+χss ′ 
+
+> c
+
+(q, iω n) = ⟨δn s(−q, −iω n) δn s′ (q, iω n)⟩, (24) and is obtained from the charge block of M−1.Similarly, the spin susceptibility is defined as the spin– spin correlation function, 
+
+χss ′  
+
+> sαβ
+
+(q, iω n) = 
+
+D
+
+δS αs (−q, −iω n) δS βs′ (q, iω n)
+
+E
+
+, (25) where the spin density is expressed in terms of the slave boson fields as 
+
+Ss = ˜ psp0,s , ˜ps = ( px,s , −py,s , p z,s )T . (26) With the formalism set up, we can now calculate sus-ceptibilities for each AM phase and determine their sta-bility. In Fig. 5, the longitudinal spin susceptibility ( χzz s ), to-gether with the charge susceptibility ( χc), are shown for a.u.  
+
+> 0
+> 0.1
+> 1
+
+χZZ s χc      
+
+> a.u.
+> 0
+> 0.1
+> 1
+> instability
+> ΓXMΓ
+> a.u.
+> 0
+> 0.1
+> 1
+> ΓXMΓ
+> 1
+
+Figure 5. Stability analysis for both altermagnetic saddle points with momentum-resolved response functions in arbi-trary units (a.u.) calculated within the SRIKR Gaussian-fluctuation analysis. Shown along the high-symmetry path Γ–X–M–Γ are the longitudinal spin susceptibility χzz s (left), and charge susceptibility χc (right). The rows correspond to: (top) AFM order on B sites (Wyckoff 2 c) (stable, no in-stabilities), (middle) AFM order on A sites (Wyckoff 4 f ) at 
+
+V = 0 (divergent charge/longitudinal-spin response indicat-ing instability), and (bottom) AFM order on A sites with nearest-neighbor density interaction V = 2 (suppressed in-stabilities indicating stabilized homogeneous phase). 
+
+both altermagnetic configurations along the high sym-metry path. Since divergences in the corresponding re-sponse functions indicate an instability of the saddle-point solution towards charge- or spin-ordered states, the momentum-resolved structure of these susceptibilities al-lows us to assess the stability of the respective phases. In the following analysis, the transverse spin susceptibilities (χxx s , χyy s ) are neglected, as no instabilities are observed for either state. 
+
+AFM order on B sites (Wyckoff 2c): The susceptibil-ities corresponding to this configuration are displayed in the first row of Fig. 5. In the longitudinal spin channel 
+
+χzz s as well as in the charge channel χc, several smaller peaks are visible at certain momenta. These features sig-nal enhanced fluctuations and may indicate a tendency toward competing ordering phenomena. However, none of these resemble an instability, since the susceptibilities remain finite and positive over the entire Brillouin zone. We therefore conclude that, for the chosen parameter set this state is stable against both magnetic and charge fluc-tuations. 
+
+AFM order on A sites (Wyckoff 4f ): The stability analysis for this configuration is more subtle. The sec-ond row of Fig. 5 show the susceptibilities at the filling 
+
+n = 0 .68. In contrast to the previous case, pronounced negative divergences appear in the longitudinal spin sus-ceptibility χzz s and, even more prominently, in the charge susceptibility χc. The presence of these divergences in-8dicate that the saddle-point solution is unstable with re-spect to additional ordering tendencies. In particular, the negative peak of χc at the Γ point strongly suggests a ten-dency toward macroscopic phase separation [38]. To ver-ify this, we analyzed the behavior of the chemical poten-tial μ0 as a function of filling n. In the presence of phase separation, the electronic compressibility becomes nega-tive, which is reflected in a negative slope ∂μ 0/∂n < 0. Indeed, we find that the μ0(n) curve exhibits a region with negative derivative [see Fig. 6 of Appendix. B] which is consistent with the instability against phase separation indicated by the negative divergence in χc at Γ. In such a situation, the homogeneous solution is thermodynami-cally unstable and a Maxwell construction is required to determine the coexistence region of the phase separated state. In the present case, this suggests phase separation between the state with AFM order on the A sites and a paramagnetic state. To further verify this interpretation, we included an ad-ditional nearest-neighbor density interaction V between the A and B sites, which is known to counteract macro-scopic phase separation by penalizing charge inhomo-geneities [39]. As expected, this nonlocal interaction sup-presses the instability. In particular, for V = 2 (see last row of Fig. 5), all divergences in the charge and longitu-dinal spin susceptibility disappear entirely. Consistently, the region of negative compressibility is removed. This can be seen as additional evidence that the instability observed at V = 0 is indeed associated with phase sepa-ration since sufficiently strong nearest-neighbor interac-tions stabilize the homogeneous phase. Even for V = 0, the instability is only restricted to a narrow filling window as can be seen from the maxwell construction. The chemical potential μ0(n) ex-hibits a region of negative slope only in the interval 
+
+n ≈ 0.666-0 .694. Outside this range, the derivative 
+
+∂μ 0/∂n is positive again, indicating that the homoge-neous phase regains thermodynamic stability. Conse-quently, the tendency toward phase separation disap-pears around n ≈ 0.694. This is fully consistent with the behavior of the charge susceptibility where the di-vergence at Γ is confined to the same filling regime and vanishes for larger n. Thus, for sufficiently high fillings, the homogeneous AM state remains stable even without a nearest-neighbor density interaction. We also investigated the behavior of the system upon a slight variation of the hopping parameter to t′′ = −0.4. In this case, the region of phase separation is not removed but shifted to larger fillings, now extending over the in-terval n ≈ 0.685–0 .705. This indicates that the tendency toward phase separation is robust with respect to mod-erate changes of t′′ , while its precise location in filling is sensitive to the band-structure details. As in the pre-viously discussed case, the phase separation corresponds to coexistence between the AFM state with order on the A sites and a paramagnetic phase. Including a nearest-neighbor density interaction V again suppresses this in-stability and restores the stability of the homogeneous solution.  
+
+> VII. DISCUSSION AND OUTLOOK
+
+In this work, we investigate the emergence of AM phases in a two-sublattice itinerant system on the square–kagome lattice. Starting from two symmetry-allowed AM phases and their corresponding minimal models, we introduce a single-orbital Hubbard model and demonstrate that the interplay between lattice geome-try and sublattice-polarized electronic eigenstates drives these AM instabilities even in the absence of explicit spin–orbit coupling or orbital ordering. Our results show that the AM phases originate from a purely kinetic mech-anism: sublattice interference encoded in the Bloch wave functions produces an effective breaking of time-reversal symmetry in momentum space once magnetic order de-velops on a subset of sublattices. By analyzing the noninteracting band structure, we identified two regimes of sublattice polarization corre-sponding to different van Hove fillings. In one case, the low-energy eigenstates are dominated by the 2 c-Wyckoff sites, leading to a dx2−y2 -type AM phase once magnetic instability sets in. In the complementary regime, the 4 f -Wyckoff sites dominate the Fermi surface, giving rise to a dxy -type AM order characterized by alternating sublat-tice magnetizations. Both phases exhibit nonrelativistic spin splitting in the electronic spectrum while preserv-ing zero net magnetization, in accordance with the sym-metry classification discussed earlier. Importantly, our mean-field results establish that the dx2−y2 AM phase re-mains stable across a broad parameter range, while the 
+
+dxy AM order persists for small deviations between t′
+
+and t′′ , demonstrating the robustness of these symmetry-distinct altermagnetic states. Beyond the mean-field level, the stability of the AM phases is governed by their response to collective charge and spin fluctuations. Our Gaussian fluctuation analysis within the SB framework shows that the dx2−y2 -type AM phase, driven by magnetic order on the Wyckoff-2 c sites, is stable, as all charge and spin susceptibilities remain fi-nite throughout the Brillouin zone. By contrast, the dxy -type AM phase associated with order on the Wyckoff-4 f
+
+sites exhibits an instability in the charge and longitudinal spin channels, indicating a tendency toward phase sep-aration in a narrow filling regime. This instability can either be suppressed by moderate nonlocal interactions, restoring the stability of the homogeneous altermagnetic state or vanishes for larger filling n.The present study provides a concrete microscopic re-alization of the sublattice-interference–driven AM mech-anism recently proposed in the context of the Lieb lat-tice [22]. Our findings thus extend this paradigm to a new lattice geometry and confirm that sublattice polar-ization of itinerant electrons can act as a universal route 9to altermagnetism in multiband systems. Moreover, the coexistence and competition between multiple AM sym-metry channels, as found here, suggest the possibility of AM phase transitions tuned by band structure param-eters, electron filling, or external perturbations such as strain and pressure. Looking forward, several open directions naturally emerge from this work. Beyond the mean-field level, it will be important to study fluctuation effects and as-sess the possible coexistence or competition with other electronic instabilities, such as density-wave or uncon-ventional magnetic phases. Furthermore we can extend the present SB analysis to the calculation of dynamical susceptibilities, which would give access to the collective spin and charge excitation spectrum beyond the static Gaussian fluctuations. In particular, this would allow us to study the magnon bands of the AM states and to iden-tify characteristic features tied to the symmetry-distinct 
+
+dx2−y2 and dxy orders [40, 41]. The topological aspects of the spin-split altermagnetic bands [4, 42], including Berry curvature and anomalous transport signatures, also re-main to be explored. Although the material realization of the square-kagome lattice has been achieved primar-ily in the localized-spin (Mott) regime [30–32], explicit realizations in an itinerant-electron setting remain com-paratively scarce. Nevertheless, alternative routes may provide viable platforms. In particular, metal–organic frameworks [43] and cold-atom optical lattices [44] of-fer highly tunable lattice geometries and hopping ampli-tudes, potentially enabling experimental access to both the dx2−y2 and dxy AM regimes. Overall, our results establish the square–kagome lattice as a fertile ground for realizing and tuning symmetry-distinct AM phases, thereby broadening the scope of itinerant AM and paving the way toward engineered spin-polarized states without net magnetization. 
+
+ACKNOWLEDGMENTS 
+
+We thank Hendrik Hohmann, Matteo D¨ urrnagel and Lennart Klebl for useful discussions. This work is supported by the Deutsche Forschungsgemeinschaft (DFG, German Research Foundation) through Project-ID 258499086 – SFB 1170 and through the W¨ urzburg-Dresden Cluster of Excellence on Complexity, Topology and Dynamics in Quantum Matter – ctd.qmat, Project-ID 390858490 – EXC 2147. 
+
+Appendix A: EFFECTIVE MODELS 
+
+In this Appendix, we derive a low-energy effective Hamiltonian for the magnetically ordered sublattice s by integrating out the degrees of freedom associated with the nonmagnetic sublattice s′. Starting from the tight-binding Hamiltonian in sublattice space, we write 
+
+H =
+
+ Hss Hss ′
+
+H† 
+
+> ss ′
+
+Hs′s′
+
+
+
+, (A1) where Hss and Hs′s′ act within the s and s′ subspaces, respectively, and Hss ′ describes the hybridization be-tween them. The corresponding free Green’s functions are G0 
+
+> ss
+
+= ( iω − Hss )−1 and G0 
+
+> s′s′
+
+= ( iω − Hs′s′ )−1. We now construct an effective description for the s sublat-tices by integrating out the s′ sector. Using standard pro-jection / decimation techniques [45–47], the s-subspace Green’s function can be written as a continued fraction 
+
+Gss = 1
+
+ G0
+
+> ss
+
+−1 − Hss ′ 1
+
+ G0
+
+> s′s′
+
+−1  
+
+> −Hs′···· H†·s′
+
+H†
+
+> ss ′
+
+. (A2) In practice, we approximate this by resumming the lead-ing local process, which yields an effective Green’s func-tion 
+
+Gss (iω ) ≈ 1
+
+iω − Hss − Hss ′ G0 
+
+> s′s′
+
+(iω ) H†
+
+> ss ′
+
+≡ 1
+
+iω − Hss − Σss (iω ) . (A3) where Σ ss (iω ) = Hss ′ G0 
+
+> s′s′
+
+(iω ) H† 
+
+> ss ′
+
+is the hybridization or self-energy. By calculating this, an effective Hamilto-nian in the zero frequency limit, reads as: 
+
+Heff  
+
+> s
+
+= Hss + Σ ss (iω → 0) , (A4) In square-kagome lattice there are two sublattice, i.e., 
+
+s, s ′ = {A, B } and the Hamiltonian reads as 
+
+H =
+
+HAA HAB 
+
+H† 
+
+> AB
+
+HBB 
+
+
+
+(A5) where 
+
+HAA =
+
+
+
+μA −t′e−iak y 0 −t′eiak x
+
+−t′eiak y μA −t′eiak x 00 −t′e−iak x μA −t′eiak y
+
+−t′e−iak x 0 −t′e−iak y μA
+
+ ,
+
+(A6) 
+
+HBB = μB I2×2 (A7) and 
+
+HAB = −t
+
+
+
+e−i 12 (kxb+ky a) ei 12 (kxa+ky b)
+
+e−i 12 (kxb−ky a) ei 12 (kxa−ky b)
+
+ei 12 (kxb+ky a) e−i 12 (kxa+ky b)
+
+ei 12 (kxb−ky a) e−i 12 (kxa−ky b)
+
+ . (A8) In the following we calculate the low energy effective models for the two AM phases. 10 
+
+1. FOR THE A SITES 
+
+In this case s = A and s′ = B. Eq. (A4) gives the effective model for dxy AM phase. 
+
+Heff A =
+
+ Hd 
+
+> A
+
+Ho
+
+> A
+
+(Ho
+
+> A
+
+)† (Hd
+
+> A
+
+)T
+
+
+
+, (A9) where 
+
+Hd 
+
+> A
+
+=
+
+ ˜μA tAe−iak y + t′
+
+> A
+
+eibk y
+
+tAeiak y + t′
+
+> A
+
+e−ibk y ˜μA
+
+
+
+, t A = − t2
+
+μB
+
+− t′, t ′ 
+
+> A
+
+= − t2
+
+μB
+
+, ˜μA = μA − 2t2
+
+μB
+
+, (A10) and 
+
+Ho 
+
+> A
+
+=
+
+t′′ 
+
+> A
+
+
+
+e−i(kxb+ky a) + ei(kxa+ky b)
+
+
+
+tAeiak x + t′
+
+> A
+
+e−ibk x
+
+tAeiak x + t′
+
+> A
+
+e−ibk x t′′ 
+
+> A
+
+
+
+e−i(kxb−ky a) + ei(kxa−ky b)
+
+ , t ′′  
+
+> A
+
+= − t2
+
+μB
+
+. (A11) 
+
+2. FOR THE B SITES 
+
+In this case s = B and s′ = A. Eq. (A4) give the effective model for dx2−y2 AM phase. 
+
+Heff B =
+
+ ˜μB + t′ 
+
+> B
+
+cos( kx˜a) tB cos 
+
+ kx ˜a
+
+> 2
+
+
+
+cos 
+
+ ky ˜a
+
+> 2
+
+
+
+tB cos 
+
+ kx ˜a
+
+> 2
+
+
+
+cos 
+
+ ky ˜a
+
+> 2
+
+
+
+˜μB + t′ 
+
+> B
+
+cos( ky ˜a)
+
+
+
+(A12) where ˜ a = a + b, tB = t2
+
+> 2t′−μA
+
+, t′ 
+
+> B
+
+= 2t2t′ 
+
+> μA(2 t′−μA)
+
+and ˜μB = μB − 4t2
+
+> μA
+
+.0.67 0.68 0.69 
+
+n
+
+> μ0 [a.u. ]
+> Maxwell Construction
+> 1
+
+Figure 6. Chemical potential μ0 versus filling n in the unsta-ble regime of the A-site (Wyckoff 4 f ) altermagnetic phase at 
+
+V = 0. The region with negative slope ∂μ 0/∂n < 0 signals negative compressibility and a tendency toward macroscopic phase separation. The dashed line indicates the Maxwell con-struction used to determine the coexistence window. 
+
+Appendix B: MAXWELL CONSTRUCTION 
+
+To determine the filling interval in which a ho-mogeneous solution becomes thermodynamically unsta-ble, we perform a Maxwell construction on the chemi-cal–potential curve μ0(n). In the regime where the mean-field solution exhibits negative compressibility, ∂μ 0/∂n < 
+
+0, the system lowers its free energy by separating into two coexisting phases with fillings n1 and n2. These coexis-tence points are obtained by replacing the non-monotonic segment of μ0(n) with a horizontal line such that the en-closed areas above and below this line are equal. The Maxwell construction shown in Fig. 6 thereby identifies the boundaries of the phase-separated region and deter-mines the density range in which the homogeneous state is not energetically stable. 11 
+
+[1] L. ˇSmejkal, J. Sinova, and T. Jungwirth, Emerging re-search landscape of altermagnetism, Phys. Rev. X 12 ,040501 (2022). [2] S. Zeng and Y.-J. Zhao, Description of two-dimensional altermagnetism: Categorization using spin group theory, Phys. Rev. B 110 , 054406 (2024). [3] Y. Guo, H. Liu, O. Janson, I. C. Fulga, J. van den Brink, and J. I. Facio, Spin-split collinear antiferromagnets: A large-scale ab-initio study, Materials Today Physics 32 ,100991 (2023). [4] M. Roig, A. Kreisel, Y. Yu, B. M. Andersen, and D. F. Agterberg, Minimal models for altermagnetism, Phys. Rev. B 110 , 144412 (2024). [5] R. Zarzuela, R. Jaeschke-Ubiergo, O. Gomonay, L. ˇSmejkal, and J. Sinova, Transport theory and spin-transfer physics in d-wave altermagnets, Phys. Rev. B 
+
+111 , 064422 (2025). [6] Y. Shi, G. Zhan, L. Xu, K. Luo, J. Liu, Z. Wu, and H. Liu, Spin-dependent transport in altermagnet crsb-based magnetic tunnel junction, Applied Physics Letters 
+
+127 , 182409 (2025). [7] Z. Guo, X. Wang, W. Wang, G. Zhang, X. Zhou, and Z. Cheng, Spin-polarized antiferromagnets for spintron-ics, Advanced Materials 37 , 2505779 (2025). [8] M. D¨ urrnagel, L. Klebl, T. M¨ uller, R. Thomale, and M. Klett, Extended s-wave altermagnets (2026), arXiv:2508.20163 [cond-mat.str-el]. [9] L. ˇSmejkal, R. Gonz´ alez-Hern´ andez, T. Jungwirth, and J. Sinova, Crystal time-reversal symmetry breaking and spontaneous hall effect in collinear antiferromagnets, Sci-ence Advances 6, eaaz8809 (2020). [10] J. Krempask´ y, L. ˇSmejkal, S. W. D’Souza, M. Hajlaoui, G. Springholz, K. Uhl´ ıˇ rov´ a, F. Alarab, P. C. Constanti-nou, V. Strocov, D. Usanov, W. R. Pudelko, R. Gonz´ alez-Hern´ andez, A. B. Hellenes, Z. Jansa, H. Reichlov´ a, Z. ˇSob´ aˇ n, R. D. G. Betancourt, P. Wadley, J. Sinova, D. Kriegner, J. Min´ ar, J. H. Dil, and T. Jungwirth, Al-termagnetic lifting of kramers spin degeneracy, Nature 
+
+626 , 517 (2024), iD = Krempasky2024. [11] G. Yang, Z. Li, S. Yang, J. Li, H. Zheng, W. Zhu, Z. Pan, Y. Xu, S. Cao, W. Zhao, A. Jana, J. Zhang, M. Ye, Y. Song, L.-H. Hu, L. Yang, J. Fujii, I. Vobornik, M. Shi, H. Yuan, Y. Zhang, Y. Xu, and Y. Liu, Three-dimensional mapping of the altermagnetic spin splitting in crsb, Nature Communications 16 , 1442 (2025), iD = Yang2025. [12] X. Wan, S. Mandal, Y. Guo, and K. Haule, High-throughput search for metallic altermagnets by embed-ded dynamical mean field theory, Phys. Rev. Lett. 135 ,106501 (2025). [13] T. Osumi, S. Souma, T. Aoyama, K. Yamauchi, A. Honma, K. Nakayama, T. Takahashi, K. Ohgushi, and T. Sato, Observation of a giant band splitting in alter-magnetic MnTe, Phys. Rev. B 109 , 115102 (2024). [14] S. Reimers, L. Odenbreit, L. ˇSmejkal, V. N. Strocov, P. Constantinou, A. B. Hellenes, R. Jaeschke Ubiergo, W. H. Campos, V. K. Bharadwaj, A. Chakraborty, T. Denneulin, W. Shi, R. E. Dunin-Borkowski, S. Das, M. Kl¨ aui, J. Sinova, and M. Jourdan, Direct observation of altermagnetic band splitting in CrSb thin films, Nature Communications 15 , 2116 (2024), published 2024-03-08. [15] S. Iguchi, H. Kobayashi, Y. Ikemoto, T. Furukawa, H. Itoh, S. Iwai, T. Moriwaki, and T. Sasaki, Magneto-optical spectra of an organic antiferromagnet as a can-didate for an altermagnet, Phys. Rev. Res. 7, 033026 (2025). [16] Z. Feng, X. Zhou, L. ˇSmejkal, L. Wu, Z. Zhu, H. Guo, R. Gonz’alez-Hern’andez, X. Wang, H. Yan, P. Qin, X. Zhang, H. Wu, H. Chen, Z. Meng, L. Liu, Z. Xia, J. Sinova, T. Jungwirth, and Z. Liu, An anomalous hall effect in altermagnetic ruthenium dioxide, Nature Elec-tronics 5, 735 (2022), iD = Feng2022. [17] V. Leeb, A. Mook, L. ˇSmejkal, and J. Knolle, Sponta-neous formation of altermagnetism from orbital ordering, Phys. Rev. Lett. 132 , 236701 (2024). [18] Z.-M. Wang, Y. Zhang, S.-B. Zhang, J.-H. Sun, E. Dagotto, D.-H. Xu, and L.-H. Hu, Spin-orbital alter-magnetism, Phys. Rev. Lett. 135 , 176705 (2025). [19] L. Camerano, A. O. Fumega, J. L. Lado, A. Stroppa, and G. Profeta, Multiferroic nematic d-wave altermag-netism driven by orbital-order on the honeycomb lattice, npj 2D Materials and Applications 9, 75 (2025), iD = Camerano2025. [20] A. Le´ on, C. Autieri, T. Brumme, and J. W. Gonz´ alez, Hybrid d/p-wave altermagnetism in ca 3ru 2o7 and strain-controlled spin splitting, npj Quantum Materials 10 , 98 (2025), iD = Le´ on2025. [21] N. Kaushal, A. S. Patri, and M. Franz, Spontaneous al-termagnetism in multi-orbital correlated electron systems (2026), arXiv:2602.23522 [cond-mat.str-el]. [22] M. D¨ urrnagel, H. Hohmann, A. Maity, J. Seufert, M. Klett, L. Klebl, and R. Thomale, Altermagnetic phase transition in a lieb metal, Phys. Rev. Lett. 135 , 036502 (2025). [23] M. L. Kiesel and R. Thomale, Sublattice interference in the kagome hubbard model, Phys. Rev. B 86 , 121105 (2012). [24] M. L. Kiesel, C. Platt, and R. Thomale, Unconventional fermi surface instabilities in the kagome hubbard model, Phys. Rev. Lett. 110 , 126405 (2013). [25] X. Wu, T. Schwemmer, T. M¨ uller, A. Consiglio, G. San-giovanni, D. Di Sante, Y. Iqbal, W. Hanke, A. P. Schny-der, M. M. Denner, M. H. Fischer, T. Neupert, and R. Thomale, Nature of unconventional pairing in the kagome superconductors av3sb 5 (a = K , Rb , Cs), Phys. Rev. Lett. 127 , 177001 (2021). [26] Y.-M. Wu, R. Thomale, and S. Raghu, Sublattice inter-ference promotes pair density wave order in kagome met-als, Phys. Rev. B 108 , L081117 (2023). [27] Y.-P. Lin, Sublattice polarization from destructive in-terference on common lattices (2024), arXiv:2406.02671 [cond-mat.mes-hall]. [28] S. C. Holbæk, M. H. Christensen, A. Kreisel, and B. M. Andersen, Protection of unconventional supercon-ductivity from disorder (2026), arXiv:2601.20937 [cond-mat.supr-con]. [29] Y. Che, H. Lv, X. Wu, and J. Yang, Engineering alter-magnetic states in two-dimensional square tessellations, Phys. Rev. Lett. 135 , 036701 (2025). 12 
+
+[30] M. Fujihala, K. Morita, R. Mole, S. Mitsuda, T. To-hyama, S.-i. Yano, D. Yu, S. Sota, T. Kuwai, A. Koda, H. Okabe, H. Lee, S. Itoh, T. Hawai, T. Masuda, H. Sagayama, A. Matsuo, K. Kindo, S. Ohira-Kawamura, and K. Nakajima, Gapless spin liquid in a square-kagome lattice antiferromagnet, Nature Communications 
+
+11 , 3429 (2020). [31] M. G. Gonzalez, Y. Iqbal, J. Reuther, and H. O. Jeschke, Field-induced spin liquid in the decorated square-kagome antiferromagnet nabokoite kcu 7teo 4(so 4)5cl (2025), arXiv:2410.10385 [cond-mat.str-el]. [32] N. Niggemann, N. Astrakhantsev, A. Ralko, F. Ferrari, A. Maity, T. M¨ uller, J. Richter, R. Thomale, T. Neu-pert, J. Reuther, Y. Iqbal, and H. O. Jeschke, Quan-tum paramagnetism in the decorated square-kagome an-tiferromagnet na 6cu 7bio 4(PO 4)4cl 3, Phys. Rev. B 108 ,L241117 (2023). [33] G. Kotliar and A. E. Ruckenstein, New functional inte-gral approach to strongly correlated fermi systems: The gutzwiller approximation as a saddle point, Phys. Rev. Lett. 57 , 1362 (1986). [34] R. Fr´ esard and P. W¨ olfle, Unified slave boson represen-tation of spin and charge degrees of freedom for strongly correlated fermi systems, International Journal of Mod-ern Physics B 06 , 685 (1992). [35] T. Schwemmer, H. Hohmann, M. D¨ urrnagel, J. Potten, J. Beyer, S. Rachel, Y.-M. Wu, S. Raghu, T. M¨ uller, W. Hanke, and R. Thomale, Sublattice modulated super-conductivity in the kagome hubbard model, Phys. Rev. B 110 , 024501 (2024). [36] D. Riegler, M. Klett, T. Neupert, R. Thomale, and P. W¨ olfle, Slave-boson analysis of the two-dimensional hubbard model, Phys. Rev. B 101 , 235137 (2020). [37] J. Issing, J. Seufert, M. Klett, and R. Thomale, In-tertwined charge and spin order in strongly correlated hexagonal lattice systems, in preparation. [38] J. Seufert, D. Riegler, M. Klett, R. Thomale, and P. W¨ olfle, Breakdown of charge homogeneity in the two-dimensional hubbard model: Slave-boson study of mag-netic order, Phys. Rev. B 103 , 165117 (2021). [39] D. Riegler, J. Seufert, E. H. da Silva Neto, P. W¨ olfle, R. Thomale, and M. Klett, Interplay of spin and charge order in the electron-doped cuprates, Phys. Rev. B 108 ,195141 (2023). [40] O. Gomonay, V. P. Kravchuk, R. Jaeschke-Ubiergo, K. V. Yershov, T. Jungwirth, L. ˇSmejkal, J. v. d. Brink, and J. Sinova, Structure, control, and dynamics of altermag-netic textures, npj Spintronics 2, 35 (2024). [41] L. ˇSmejkal, A. Marmodoro, K.-H. Ahn, R. Gonz´ alez-Hern´ andez, I. Turek, S. Mankovsky, H. Ebert, S. W. D’Souza, O. ˇSipr, J. Sinova, et al. , Chiral magnons in al-termagnetic ruo 2, Physical Review Letters 131 , 256703 (2023). [42] R. Gonz´ alez-Hern´ andez and B. Uribe, Model hamilto-nian for altermagnetic topological insulators, Phys. Rev. B 112 , 184101 (2025). [43] Z. Huang and R. M. Geilhufe, Quantum metal-organic frameworks, Small Science 4, 2400161 (2024). [44] P. Das, V. Leeb, J. Knolle, and M. Knap, Realizing al-termagnetism in fermi-hubbard models with ultracold atoms, Phys. Rev. Lett. 132 , 263402 (2024). [45] C. Karrasch, The functional renormalization group for zero-dimensional quantum systems in and out of equi-librium , Ph.D. thesis, Aachen, Technische Hochschule (2010). [46] D. Kalkstein and P. Soven, A green’s function theory of surface states, Surface Science 26 , 85 (1971). [47] M. P. Lopez Sancho, J. M. Lopez Sancho, J. M. L. San-cho, and J. Rubio, Highly convergent schemes for the calculation of bulk and surface green functions, Journal of Physics F: Metal Physics 15 , 851 (1985).

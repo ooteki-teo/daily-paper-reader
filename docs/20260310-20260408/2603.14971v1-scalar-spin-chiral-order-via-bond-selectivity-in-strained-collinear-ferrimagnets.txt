@@ -1,0 +1,1371 @@
+Title: 2603.14971v1.pdf
+
+URL Source: https://arxiv.org/pdf/2603.14971v1
+
+Published Time: Tue, 17 Mar 2026 03:41:56 GMT
+
+Number of Pages: 25
+
+Markdown Content:
+Scalar Spin Chiral Order via Bond Selectivity in  Strained 
+
+# Collinear  Ferri magnets  
+
+> Xin Liu, Li Ma *,Mingyue Zhao, Shun Niu, Yu Liu, Yang Li, Jiayao Zhu, Yiwen Zhang
+> Fengxian Ma, Dewei Zhao, Guoke Li, Congmian Zhen, Denglu Hou
+> Hebei Key Laboratory of Photophysics Research and Application , College of Physics, Hebei
+> Normal University, Shijiazhuang, 050024, China.
+
+Abstract 
+
+Scalar spin chirality (SSC) drives a series of topological transports in noncoplanar 
+
+magnets.  However, the ordering temperature of magnet hosting intrinsic SSC order is 
+
+typically below 100 K.  Current approaches to achieve near -room -temperature SSC 
+
+order largely rely on external fields or chemical doping in  noncollinear  magnets. A 
+
+significant challenge persists in  generating and controlling SSC  order  in 
+
+high -temperature collinear magnet s. Here, using the collinear ferrimagnet Mn 4N with 
+
+Néel temperature  TN ~740 K as a platform, we demonstrate that isotropic strain acts as 
+
+a clean and continuous tuning parameter to induce long -range SSC order  by 
+
+first -principles calculations . As strain increases from 1.33% − to 2.66%  , the 
+
+magnetic ground state evolves continuously from a collinear to a noncoplanar 
+
+configuration, activating the SSC order and enhancing its magnitude from zero to  ~2.3 2.
+
+Our  quantitative orbital -resolved bonding analysis  reveals that strain selectively 
+
+suppresses the bond between Mn 3d orbitals  and N 2p orbitals, driving dual 
+
+prerequisites for  the  SSC  order . Specifically, t he d ecreased covalent spin -pairing 
+
+activates  Mn3c  moments within the (111)  plane,  simultaneously  the  suppressed  N-
+
+mediated ferromagnetic superexchange  interaction  shifts the balance  of the nearest -
+
+neighbor Mn3c sites  toward antiferromagnetic  exchange  interaction.  Our  findings 
+
+establish a powerful strain mediated route to  construct  the SSC order  in high 
+
+temperature collinear  magnets .Introduction 
+
+A series of  novel physical phenomena  in  noncoplanar magnets  ha s been observed ,
+
+including the topological Hall effect 1-4, anomalous Hall effect 5-7, topological Nernst 
+
+effect 8, thermal Hall effect 9,10 , higher -order harmonics of the planar  Hall effect 11  and 
+
+spin splitting 12 . To quantitatively characterize the degree of non -coplanarity,  scalar spin 
+
+chirality (SSC ) has been introduced, defined as ( )i j k S S S , where ( , , )i j k  
+
+> 
+
+=S
+
+represent the localized spins of three nearest  neighbor sites.  The origins of these 
+
+physical phenomena can be mainly attributed to the following mechanisms:  SSC 
+
+fluctuations 10,13,14 , SSC induced skew scattering 9,15,16 , and  intrinsic contributions by 
+
+SSC order 1,3,5 . Theoretical studies further predict that SSC  order  would  also  induce 
+
+phenomena such as the quantum anomalous Hall effect 17 -20 , quantum topological Hall 
+
+effect 20,21 , topological magneto -optical Kerr effect 22 , and quantum topological 
+
+magneto -optical Kerr effect 22 . Intrinsic  SSC order  is relatively rare in magnetic 
+
+materials, partly because it is canceled out by lattice symmetry. 23  Currently reported 
+
+systems with  SSC order  have mostly low ordering temperatures (below 100 K), as 
+
+shown in Table 1.  Currently,  largely  efforts are being directed toward the construction 
+
+and control of  SSC  order  near -room -temperature . Existing strategies involve using 
+
+external fields 7,14,24 -27  or chemical doping 28 -31  to modulate the ground -state magnetic 
+
+configuration in nonco lline ar antiferromagnets.  In this context, it is worth considering 
+
+whether the above strategy can be extended to collinear systems with  antiferromagnetic 
+
+(AFM) exchange interaction. To this end,  Mn 4N is  selected  as the research platform in 
+
+this work for the following re asons. AFM interaction  between  magnetic Mn atoms 
+
+exists in collinear  Mn 4N with  a high Né el temperature of ~740 K .32  Besides, Mn atoms form  a frustrated triangular lattice  supporting complex spin orders .33  Here, strain is used 
+
+as a control parameter, owing to its clean and highly tunable nature. 
+
+Table 1.  List  of material s hosting  scalar spin chirality (SSC) order . We group the 
+
+materials into  two  archetypes  based on the SSC origin : inherent and induced . We also 
+
+list  the  induced  approach of SSC . Next, we list the  magnetic materials  platform  and 
+
+temperature of the experiments ( T). Finally, we list the  magnetic lattice type .
+
+SSC Origin  Induced  Approach  Materials  T (K)  Magnetic  Lattice 
+
+inher ent  —
+
+CoNb 3S63 ~28  triangular 
+
+CoTa 3S63 ~24  triangular 
+
+MnTe 212  ~86.5  triangular 
+
+UCu 56 ~1.2  triangular 
+
+Nd 2Mo 2O71 ~40  pyrochlore 
+
+Pr 2Ir 2O75,34  ~40  pyrochlore 
+
+Nd 2Ir 2O711  ~30  pyrochlore 
+
+Mn 3Sn 35  ~50  kagome 
+
+induced 
+
+chemical doping 
+
+Mn 3-δFe δSn 28  ~300  kagome 
+
+Fe 1+ δSb 30  ~30  triangular 
+
+Mn 3+ δNi 1-δN29  ~228  kagome 
+
+(Y 1-x-yTb xCd y)2Mo 2O731  ~20  pyrochlore 
+
+magnetic field 
+
+PdCrO 22 ~20  triangular 
+
+Mn 3Sn 27  ~350  kagome 
+
+Mn 3Pt 7 ~340  kagome 
+
+pressure  Mn 3Ge 24  ~300  kagome 
+
+In this work, we demonstrate that isotropic strain serves as a clean and continuous 
+
+tuning parameter to induce SSC  order  in the high -temperature collinear ferrimagnet 
+
+Mn 4N. As strain varies from 1.33% − to 2.66%  , the magnetic ground state 
+
+continuously evolves from a collinear configuration to a noncoplanar state, thereby activating the SSC order and amplifying its magnitude from zero to approximately 2.32. 
+
+Through first -principles analysis, we reveal that this phase transition is governed by a 
+
+strain -modulated bond selectivity.  Rather than a simple geometric lattice expansion, 
+
+tensile strain selectively suppresses Mn -N covalent bonds while preserving Mn -Mn 
+
+covalent bonds . We demonstrate that this bond -selective  suppression  triggers a dual 
+
+modulation:  it activates the magnetic moments within the (111)  plane and suppresses 
+
+the ferromagnetic superexchange  interaction,  thereby stabilizing the SSC order. 
+
+Ultimately, our work establishes a powerful, clean route to design topological spin 
+
+structures directly within high -temperature collinear magnets. 
+
+A. Strain -induced  Scalar Spin Chiral  Order 
+
+The crystal structure of Mn 4N is illustrated in Fig. 1 a. This compound crystallizes 
+
+in the cubic space group 3Pm m  (No. 221). The Mn atoms at the corner sites are 
+
+denoted as Mn1a (corresponding to Mn1), those at the face -center sites as Mn3c 
+
+(corresponding to Mn2, Mn3, Mn4), and the body -center site is occupied by N atoms. 
+
+Based on experimental 36 -38  and theoretical calculations 37,39 -41 , both collinear and 
+
+noncoplanar ferrimagnetic configurations have been reported for the unstrained Mn 4N. 
+
+In the collinear ferrimagnetic configuration, the spins of the Mn1a and Mn3c intra -
+
+sublattices are parallel, while the spins of the Mn1a and Mn3c inter -sublattices are 
+
+antiparallel, which is the case in Fig. 1 b where 180 
+
+
+
+> 
+
+= . In the noncoplanar 
+
+ferrimagnetic configuration, the spins of the four Mn inter -sublattices are no longer 
+
+collinear but noncoplanar, the angle between them is 110  , as shown in Fig. 1 b where 110 
+
+
+
+> 
+
+=
+
+. To investigate the effect of strain on spin configuration, a zero -strain point 
+
+was first defined, which corresponds to the equilibrium lattice parameter 3. Å75 a b c= = =42  of Mn 4N obtained by DFT calculation. 
+
+Figure 1  Strain -induced magnetic phase transition and the emergence of scalar 
+
+spin chirality  order  in Mn 4N.  a Magnetic and c rystal structures of Mn 4N. There are 
+
+only two  type s of  magnetic  tetrahedr a in the lattice : red and blue . The green  and red 
+
+arrows represent  the  spin  direction  in the lattice and  the  direction of the  total  scalar spin 
+
+chirality  in each  tetrahedron , respectively . b Schematic of a single tetrahedron of 
+
+Mn atoms, which consists of four spin vectors ( 1, 2,3, 4)  
+
+> 
+
+=S . Here 1
+
+= and 2,3,4 
+
+=
+
+indicate  the corresponding spin orientation 
+
+S at  the Mn1a site and the 
+
+Mn3c site , respectively.  is the angle between the spins of the Mn1a site and the Mn3c site.  c Energy dependence on strain at 110 
+
+
+
+> 
+
+= and 180 
+
+
+
+> 
+
+= . d Dependence 
+
+of  and  on strain under the magnetic ground state.  e Schematic of the 
+
+distribution between adjacent (111)  lattice planes.  The gray planes represent the (111) 
+
+lattice planes. 
+
+Fig. 1 c shows t he energy dependence on strain  constraining the spin directions to 110 
+
+
+
+> 
+
+=
+
+and 180 
+
+
+
+> 
+
+= , respectively . Under compressive (negative) strain,  the energy 
+
+of the 180 
+
+
+
+> 
+
+= configuration is always lower than that of the 110 
+
+
+
+> 
+
+= configuration. 
+
+Thus,  system  remains  in a  collinear ferrimagnetic state.  When  tensile (positive) strain 
+
+is applied , the collinear ferrimagnetic state is still stable up to 0.53%  , after that the 
+
+energy difference be tween 110 
+
+
+
+> 
+
+= and 180 
+
+
+
+> 
+
+= becomes larger  and the 
+
+nonco plan ar ferrimagnetic state would be stable more and more . As a result,  the  system 
+
+would  undergo a transition from the collinear state  with 0= to a  nonco plan ar  state 
+
+with 2.32 = during the process of increasing tensile strain.  This unique strain -
+
+dependent magnetic switching enables on/off control of  . The above calculations 
+
+only consider the cases where  is 110  and 180  . Therefore, further self -consistent 
+
+calculations without imposing initial magnetic constraints to determine the magnetic 
+
+ground states under different strains are needed. The resulting strain dependence of both 
+
+the  and  for the magnetic ground state is summarized in Fig. 1 d. As the strain 
+
+decrease s from 2.66%  to 1.33% − , the  value continuously increase s from 110 
+
+to 180  , and the nonco plan ar ferrimagnetic state  is maintained until the compressive 
+
+strain  is greater than -0.80%  , after which the  value remain s in a 180  collinear 
+
+ferrimagnetic state. As a result, the corresponding  value  continuously decreased from 
+
+2.39 to 0.  This demonstrates that external strain provides  engineering that can not only effectively activate but also continuously regulate  .
+
+As shown i n Fig. 1 a, Mn 4N contains two types of magnetic tetrahedra: red and 
+
+blue. When the system adopts the nonco plana r ferrimagnetic state,  the  direction  of 
+
+both red and blue tetrahedra is along the [111]  crystal direction. Fig . 1e schematically 
+
+illustrates the tetrahedral  and  arrangement within  three  adjacent (111)  lattice 
+
+planes . It can be seen that the  formed by each magnetic tetrahedron is arranged 
+
+along the crystal direction [111]  as shown by the red arrows, thus establishing a  long -
+
+range ordered state of  similar to magnetic dipole ferromagnetic order. T his scalar 
+
+spin chirality order  may  give rise to a spontaneous Hall effect 5, spontaneous topological 
+
+Hall effect 3, and related physical phenomena. 
+
+B.  Dual  Prerequisites for  Scalar  Spin  Chiral  Order 
+
+To understand the formation mechanism of noncoplanar ferrimagnetic states in 
+
+Mn 4N, we analyzed spin -related Hamiltonians where only the Heisenberg exchange 
+
+interaction and the Dzyaloshinskii –Moriya interaction influences the  θ between spins. 
+
+In the centrosymmetric Mn 4N system, the Dzyaloshinskii –Moriya interaction is 
+
+symmetry‑forbidden, the  is governed predominantly by the Heisenberg exchange 
+
+interaction, which is described by ij i jJ S S . Here, ij J represents the exchange 
+
+coupling constant, and iS and jS denote the local spin at  i and  j sites. We calculated 
+
+the dependence of the Mn moments at the Mn1a and Mn3c sites and the nearest -
+
+neighbor Mn3c -Mn3c  exchange coupling constant  J on strain to quantify this 
+
+interaction, as shown in Figs. 2 a-c. The Mn moment at the Mn1a site remains nearly 
+
+constant at ~ B3.22 
+
+ under strain, whereas the Mn moment at the Mn3c site, which is highly sensitive to strain, increases from B0.6 
+
+ to B2.3 
+
+ as strain varies from 1.33% −
+
+to 2.66%  . Under zero strain, our calculated value is B1.06 / .f.u 
+
+ , which is 
+
+nearly the same as the neutron diffraction value ( B1.10 / .f.u 
+
+ )32 .
+
+Figure 2.  Explore the requirements for the formation of scalar spin chiral order on 
+
+local moments and exchange interactions.  a Strain dependence of the  Mn  moments 
+
+at Mn1a and Mn3c sites.  b Strain evolution of the Mn3c moment components: Mn3c [111] 
+
+(parallel to [111]  crystal direction) and Mn3c (111)  (lying within 
+
+the (111)  lattice planes ), corresponding to the blue and red  arrow  illustrated in the 
+
+inset of ( c), respectively.  c Strain variation of the nearest -neighbor exchange coupling 
+
+constant  J between Mn3c sites.  Projected density of states (PDOS) of the Mn3c 3 d
+
+orbitals onto the (111)  plane at strains of 1.33% − (d) and 3.00%  (e).
+
+We not e that the Mn3c moments exhibit a discontinuous change at the 0.80% −
+
+strain point where t he system underwent a  magnetic  transition from collinear to 
+
+noncollinear.  To further analyze the moment at Mn3c site, the total Mn moment at Mn3c site is decomposed along two directions: parallel to  the [111]  direction , denoted as Mn3c [111] 
+
+(blue arrow)  which is parallel to Mn1a moment ; and parallel to the (111) 
+
+plane , denoted as Mn3c (111)  (red arrow)  which is  vertical  to Mn1a moment ,
+
+as shown in the inset of Fig . 2c.
+
+Fig. 2 b shows the strain dependence of Mn3c [111]  and Mn3c (111)  . It is 
+
+interesting to observe  that  the Mn3c [111]  component  remains nearly constant at ~ B3.22 
+
+
+
+over the whole strain region,  as the case  of  the  Mn1a  moment ; whereas the Mn3c (111) 
+
+component  begins to obtain a nonzero value  just  at -0.80%  and 
+
+continues to increase with the increase of the strain, similar to the scenario of  in 
+
+Fig. 1 d. This indicates that the Mn3c (111)  moment  is a key element in constituting 
+
+the nonco plan ar ferrimagnetic state, i.e., the  order.  At 2.66%  strain, our 
+
+calculated  Mn3c  moment ( B2.31 
+
+ ) agree s well with  that ( B2.35 
+
+ ) of the reference 42 .
+
+Since the Mn3c (111)  and Mn1a moments are mutually orthogonal, the 
+
+formation of the  order is dictated exclusively by the exchange interactions among 
+
+the Mn3c sites within the Heisenberg model.  In this context,  the nearest -neighbor 
+
+Mn3c -Mn3c exchange coupling constant  J is  shown  in Fig . 2c at  three representative 
+
+strain points: the maximum compressive strain ( 1.33% − ), the maximum tensile strain 
+
+(2.66%  ), and  the strain corresponding to the energy crossover point in Fig.1 c (0.53%  ). 
+
+A clear evolution regarding  J can be  expected . As the strain changes from 1.33% − to 2.66% 
+
+, the net ferromagnetic exchange interaction between nearest -neighbor Mn3c 
+
+sites weakens and eventually undergoes a sign reversal, transitioning into a strong 
+
+antiferromagnetic exchange interaction.  The calculated exchange coupling  constant  J
+
+evolves from 0.9 Vme − at 1.33% − strain to 0.6 Vme − at 0.53%  , and finally reverses sign to 3.2 meV  at 2.66%  strain, confirming a strain‑induced suppression 
+
+of ferromagnetism and a transition toward antiferromagnetic coupling.  As indicated by 
+
+the cyan points in Fig. 2 c, this trend is in excellent agreement with previously reported 
+
+values at comparable lattice constants 43,44 .
+
+To understand the microscopic origin of this anomalous magnetic transition, we 
+
+present the projected density of states (PDOS) of the Mn3c 3 d orbitals onto the (111) 
+
+plane at the representative strains of 1.33% − and 2.66%  , as shown in Figs. 2 d, e. At 
+
+a compressive strain of 1.33% − , the in -plane PDOS contribution near the Fermi level 
+
+is virtually zero. In stark contrast, under a tensile strain of 3.00%, a pronounced spin -
+
+polarized contribution strongly emerges across the  d orbitals. This provides direct 
+
+energy -space evidence for the orbitally -driven activation of the Mn3c (111)  moment. 
+
+Consequently , the prerequisite for the formation of  order is the activation of 
+
+the Mn3c (111)  moment and  a sufficiently weak ferromagnetic exchange interaction 
+
+(or even a n antiferromagnetic exchange interaction ) between the nearest -neighbor 
+
+Mn3c  sites. 
+
+C.  Bond  Selectiv ity of Strain  and Mechanism of  Scalar Spin Chiral  Order 
+
+Since  J is governed by the electron -orbital overlap, while the Mn3c (111) 
+
+moment is modulated by the chemical bond of the Mn3c orbitals, it is imperative to 
+
+quantify the orbital responses to strain. Charge density difference (CDD) mapping 
+
+quantitatively delineates the spatial redistribution of electrons, providing a direct visu al 
+
+representation of these orbital responses. Figure 3.  Two key  orbital bonding  between nearest -neighbor Mn3c sites  in Mn 4N
+
+through  charge density difference (CDD)  analysis . CDD on the (001) lattice plane 
+
+(corresponding to the red plane in Fig. 1 a) under strains of 1.33% − (a),0.53%  (b),
+
+and 2.66%  (c). The red and blue areas represent electron accumulation and depletion, 
+
+respectively. The isosurface levels are set to  −0.028  e Å3⁄ (red , positive) and 
+
+−0.06  e Å3⁄ (blue , negative). Black dashed lines indicate charge contour levels.  The 
+
+red and blue dashed loops delineate the projections of the Mn3c and N orbitals onto the 
+
+(001) plane, serving as spatial references for  orbital  hybridization.  Schematic 
+
+representations of the two orbital  bonding  configurations deduced from the CDD maps. 
+
+Schematics of the p olar  covalent bond formed by the hybridization of the Mn3c 2 2 
+
+> 3xr
+
+d −
+
+(2 2  
+
+> 3−yr
+
+d ) orbital and the N xp (yp ) orbital  (d) and  the  nonpolar  covalent 
+
+bond between the xy d orbitals of nearest -neighbor Mn3c atoms  (e).
+
+In order to reflect the changes in the charge density of each component atom in 
+
+Mn 4N, we performed the following CDD calculation: 4 1 2 3 4Mn N Mn Mn Mn Mn NCDD 
+
+     = − − − − −(1)
+
+where 4Mn N 
+
+ represents the charge density of the complete unit cell, Mn 
+
+> 
+
+( 1,2,3,4) 
+
+=
+
+and N
+
+ correspond to the charge densities of isolated Mn α and N 
+
+atoms placed at their respective crystal positions, respectively. 
+
+Figs. 3a-c show the CDD distribution on the (001) lattice plane under 
+
+representative strains of 1.33% − ,0.53%  , and 2.66%  . In these maps, the red and 
+
+blue regions denote electron accumulation and depletion, respectively, while the dashed 
+
+loops delineate the projections of the Mn3c and N orbitals.  There are two characteristics 
+
+of the distribution of CDD.  First,  an obvious positive CDD along  x and  y axes suddenly 
+
+appears between Mn3c site and N and is very close to the N atoms as indicated by the 
+
+black  contour lines in the red area, and an obvious negative CDD of the Mn 3c  atom 
+
+only along  x or  y axis also appears at the same time as shown by the black contour line 
+
+in the blue area. Thus, the CDD distribution is strongly anisotropic, and meets the 
+
+characteristics of the 2 2  
+
+> 3−xr
+
+d and 2 2  
+
+> 3−yr
+
+d orbital s of Mn atoms and the xp and yp
+
+orbitals of N atoms. That is to say, the electrons in the 2 2  
+
+> 3−xr
+
+d (2 2  
+
+> 3−yr
+
+d ) orbital of Mn 3c 
+
+atoms form polar covalent bonds with the electrons in the xp (yp ) orbital of N atoms. 
+
+To intuitively illustrate this specific orbital overlap configuration, a corresponding 
+
+schematic is provided in Fig . 3d. Second , there is  also  a positive CDD  (yellow area) 
+
+between the nearest -neighbor  Mn 3c  atoms, and its direction is 45 degrees to the 
+
+coordinate axes, showing  the  anisotropy  of the Mn3c xy d orbitals . This is not a 
+
+characteristic of metallic bonds , but  rather  of covalent bonds . The nonpolar 
+
+covalent bond forming by the xy d orbitals of the Mn3c atoms is explicitly illustrated 
+
+in Fig. 3 e, which is allowed whether from the perspective of energy or orbital direction. As the tensile strain systematically increases from 1.33% − to 2.66%  , there are also 
+
+two characteristics on the value of CDD. First, the value of CDD at  the Mn3c 2 2  
+
+> 3−xr
+
+d
+
+orbital and the N xp orbital overlap  is significantly decreased,  reflect ing  a severe 
+
+attenuation of the polar  covalent bond. In stark contrast,  the value of CDD  between 
+
+the overlapping xy d orbitals of nearest -neighbor Mn3c sites remain virtually 
+
+unchanged, implying that the nonpolar  covalent bond is essentially insensitive to 
+
+the strain. 
+
+While the CDD analysis offers an intuitive spatial perspective, a rigorous 
+
+quantitative evaluation of the bonding interactions is urgently needed. To this end, we 
+
+employed the projected crystal orbital Hamiltonian population method (pCOHP). This 
+
+analytical  technique mathematically extracts the specific bonding and antibonding 
+
+contributions between selected atomic orbitals. A comprehensive analysis across all 36 
+
+conceivable orbital combinations confirms that the nearest -neighbor Mn3c interactions 
+
+are predomi nantly governed by two distinct bonding pathways: the hybridization 
+
+between the Mn3c 2 2  
+
+> 3−xr
+
+d orbital and the N xp orbital, and the direct overlap between 
+
+the Mn3c xy d orbital and the Mn3c xy d orbital. This dual -pathway bonding model is 
+
+perfectly consistent with the preceding CDD analysis. The corresponding energy -
+
+resolved profiles for these two dominant orbital interactions under different strains are 
+
+presented in Figs. 4 a-c. For both bonding mechanisms, the profiles remain positive 
+
+below the Fermi level, signifying robust bonding states. Figure 4.  Formation mechanism of the scalar spin chirality order  via the 
+
+quantitative orbital -resolved bonding analysis.  Projected crystal orbital Hamiltonian 
+
+population (pCOHP) profiles for the two principal orbital interactions: the Mn3c 2 2  
+
+> 3−xr
+
+d
+
+and N xp bond (red curves), and the Mn3c xy d and Mn3c xy d bond  (blue curves) 
+
+under strains of 1.33% − (a), 0.53%  (b), and 2.66%  (c). Positive and negative pCOHP −
+
+values denote bonding and antibonding characteristics, respectively.  The red 
+
+and blue text in each panel  give s the integrated pCOHP (IpCOHP) values  up to the 
+
+Fermi level  (measure of bond strength)  of the Mn3c -N bond  and the Mn3c -Mn3c bond, 
+
+respectively.  d Strain -dependent schematic of the dual modulation of the Mn3c (111) 
+
+moment and exchange interactions via bond -selective suppre ssion.  The left and right 
+
+panels correspond to the covalen t bond between  the Mn3c 2 2  
+
+> 3−xr
+
+d orbital and the N xporbital  and the magnetic configuration under the compressive and tensile strain 
+
+conditions, respectively. The green arrows denote the activated Mn3c (111) 
+
+moments.  JFM  represents  the nitrogen -mediated  ferromagnetic superexchange 
+
+interaction  of the  nearest -neighbor Mn3c  via  the Mn3c  (2 2  
+
+> 3−xr
+
+d )-N (xp ) covalent bond. 
+
+The integrated projected crystal orbital Hamilton population (IpCOHP ) parameter 
+
+provides a measure of the bonding strength between two atoms. 45,46  The more negative 
+
+the parameter, the stronger the bonding interaction.  We have calculated  th is  IpCOHP 
+
+up to the Fermi level  to understand how changes in strains affect the two distinct 
+
+bonding pathways.  Specifically, the  IpCOHP  value for the hybridized Mn3c 2 2  
+
+> 3−xr
+
+d
+
+orbital and N xp orbital  (the red text in each panel)  progressively diminishes from 0.979 eV −
+
+at 1.33% − strain to 0.925 eV − at 0.53%  , and ultimately drops to 0.868 eV −
+
+at 2.66%  strain , with a total bond strength reduction of 0.111 eV  . This 
+
+systematic numerical reduction unequivocally demonstrates the pronounced 
+
+suppression of this bonding channel, quantitatively confirming that the polar 
+
+covalent bond is severely compromised under tensile strain. Conversely,  the IpCOHP 
+
+values  for the overlapping xy d orbitals between nearest -neighbor Mn3c sites 
+
+decreased by only 0.024 eV  throughout the strain range, remaining essentially 
+
+unchanged. This quantitative stability is in perfect agreement with the strain 
+
+insensitivity intuitively inferred from the CDD analysis.  Quantitative IpCOHP analyses 
+
+unveils a striking  bond -selective response to the strain: strain strongly affects only the 2 2  
+
+> 3−xr
+
+d
+
+orbital of Mn3c, while the xy d orbital of Mn3c is largely unaffected. 
+
+Regarding the magnetic moment, the polar  covalent bond formed by the Mn3c 2 2  
+
+> 3−xr
+
+d
+
+orbital and N xp orbital induces covalent spin -pairing, thereby suppressing the local magnetic moment. 47  Under compressive strain in  the  left panel of Fig. 4 d, the 
+
+polar  bond suppresses the local magnetic moment. This state is corroborated by the 
+
+virtually zero in -plane density of states near the Fermi level shown in Fig. 2 d. As the 
+
+tensile strain increases, the strain exhibits  bond  selectivity. It selectively weakens the 
+
+polar  covalent bond, which mitigates covalent spin -pairing and activates the Mn3c (111) 
+
+moment indicated by the  green  arrows in the right panel of Fig. 4 d. This 
+
+activation corresponds to the spin polarization emerging in Fig. 2 e. This evolution 
+
+corresponds to Fig. 2 b.
+
+Regarding the exchange interaction, the nonpolar  covalent bond between the xy d
+
+orbitals of Mn3c sites establishes a direct exchange  interaction  pathway, favoring 
+
+an antiferromagnetic  exchange interaction  JAFM ,48 -50  while  the polar  bond between 
+
+the Mn3c 2 2  
+
+> 3−xr
+
+d orbital and N xp orbital establishes a 90° superexchange pathway ,
+
+generating  a ferromagnetic exchange interaction  JFM .48 -50  The stronger the Mn3c -N
+
+(Mn3c -Mn3c) bond, the stronger the  JFM  (JAFM ).  When the strain varies from 1.33% −
+
+to 2.66%  , the Mn3c -N bond is  selectiv ely  suppress ed,  resulting in the weakening of 
+
+JFM , as shown  in Fig. 4 d. During this process, the competition between the  JAFM  and 
+
+JFM  brings  a new balance, leading to  the exchange  interaction  J in Fig. 2 c to  change 
+
+from ferromagnetic (negative) to antiferromagnetic (positive). 
+
+Now we discuss the experimental realization of these results.  The  scalar spin 
+
+chirality order in Mn 4N can be introduced by epitaxially growing Mn 4N(111)  films 
+
+on tensile strain substrates such as MgO (111)  or SrTiO 3(111)  . Based on the 
+
+influence of scalar spin chirality order in real and reciprocal space as discussed in the 
+
+introduction, we expect unique transport features to emerge in such films, including topological Hall effect (THE), anomalous Hall effect (AHE), and even in -plane 
+
+anomalous Hall effect (IPAHE). 
+
+# Conclusion 
+
+In summary,  we investigated the strain -dependent magnetic responses of the 
+
+collinear ferrimagnet Mn 4N using  first -principles calculations.  We  find  that  the 
+
+isotropic tensile strain drives the magnetic ground state from a collinear to a
+
+noncoplanar configuration, inducing a scalar spin chirality  (SSC)  order.  The  formation 
+
+of the  SSC  order  requires two prerequisites.  One is  the activation of  Mn3c moment in 
+
+the (111)  plane Mn3c (111)  , and  the other is  a sufficiently weak ferromagnetic 
+
+exchange  interaction (or  even an  antiferromagnetic exchange  interaction)  between the 
+
+nearest -neighbor Mn3c  sites . Electronic structure analyses  including  charge density 
+
+difference and projected crystal orbital Hamiltonian populations reveal that  tensile 
+
+strain selectively suppresses the polar Mn3c -N covalent bond.  As a result,  covalent 
+
+spin -pairing  is  mitigate d to activate Mn3c (111)  moment  and  the ferromagnetic 
+
+superexchange  interaction is weakened , ultimately stabilizing the  SSC  order.  We 
+
+propose that this bond -centric computational framework  may also be applicable to 
+
+inducing  SSC  order  in other collinear  ferri magnets.  Our  findings  work provides a  new 
+
+route  for  constructing SSC  order .
+
+Calculation Method 
+
+All first -principles calculations were performed within the framework of density 
+
+functional theory (DFT) utilizing the Vienna Ab Initio Simulation Package (VASP) 51 -53 .
+
+The interactions between core electrons and valence ions were described using the 
+
+projector -augmented wave (PAW) method. For the exchange -correlation functional, the generalized gradient approximation (GGA) parameterized by the Perdew -Burke -
+
+Ernzerhof (PBE) formalism was adopted. A plane -wave energy cutoff of 520 eV and a 
+
+Γ-centered 12 12 12   k-point mesh for Brillouin zone sampling were used. The 
+
+convergence criteria for the electronic self -consistent field and ionic relaxation were 
+
+strictly set to 6
+
+10 eV/cell − and 3
+
+10 eV/cell − , respectively. Crucially, spin -orbit 
+
+coupling (SOC) was explicitly incorporated in all static electronic structure calculations 
+
+based on the fully relaxed crystal structures. To quantify the magnetic interactions, the 
+
+DFT energies were mapped onto a classi cal Heisenberg spin model. Considering the 
+
+exchange coupling constant  J12  between spin points 1 and 2, the spin Hamiltonian 54  can 
+
+be expressed as: spin 12 1 2 1 1 2 2 other E J E=  +  +  +S S S K S K
+
+(2)
+
+where 1 11,2  
+
+> iii
+
+J
+
+> 
+
+= K S ,2 21,2  
+
+> iii
+
+J
+
+> 
+
+= K S ,other , 1,2   
+
+> ij iji j
+
+E J
+
+> 
+
+=  S S where 1K ,2K and other E
+
+do not depend on the spin directions of positions 1 and 2. Four collinear spin 
+
+states are considered:  (1) 1 S=S ,2 S=S , (2) 1 S=S ,2 S= − S , (3) 1 S= − S ,2 S=S
+
+, (4) 1 S= − S ,2 S= − S . These four states have the following energy 
+
+expressions: 21 0 other 12 1 222 0 other 12 1 223 0 other 12 1 224 0 other 12 1 2
+
+E E E J S K S K S E E E J S K S K S E E E J S K S K S E E E J S K S K S 
+
+= + + + += + − + −= + − − += + + − −
+
+(3)
+
+Then  J12  can be written as: 1 4 2 312 1 24
+
+E E E EJ S S 
+
++ − −=
+
+(4)
+
+From this, the exchange coupling constant  J12 , which governs the interatomic 
+
+magnetic interactions, can be analytically extracted. The total scalar spin chirality  ( ) in the system can be calculated by the following 
+
+formula: ( )i j k ijk ijk  
+
+=  
+
+
+
+S S S n
+
+(5)
+
+where ( , , )i j k  
+
+> 
+
+=S is the spin at point  ,ijk n is the unit direction vector of 
+
+the triangle formed by sites  i, j, and  k, and the sum runs over all triangles ijk   in each 
+
+tetrahedron as shown in Fig. 1 a.
+
+We performed projected crystal orbital Hamiltonian population (pCOHP) analysis 
+
+using the LOBSTER 55  code. This method, applied to the VASP -calculated 
+
+wavefunctions with  spd  basis for Mn and  sp  basis for N, quantifies orbital -pair bonding 
+
+strength via the integrated pCOHP (IpCOHP). It allowed us to directly compare the 
+
+strain evolution of two competing interactions: the Mn3c -N orbital hybridization and 
+
+the direct Mn3c -Mn3c orbital overlap. 
+
+Data Availability 
+
+All data generated or analyzed during this study are included in this published 
+
+article. 
+
+Acknowledgement 
+
+The authors gratefully acknowledge the financial support provided by the National 
+
+Natural Science Foundation of China (Grant No.~51971087), the ``333 Talent Project'' 
+
+of Hebei Province (Grant No.~C20231105), the Basic Research Project of Shijiazhuang 
+
+Munic ipal Universities in Hebei Province (Grant No.~241790617A), the Central 
+
+Guidance on Local Science and Technology Development Fund of Hebei Province 
+
+(Grant No.~236Z7606G), and the Science Foundation of Hebei Normal University 
+
+(Grant No.~L2024B08). These fun ding sources have been instrumental in facilitating the completion of this research. 
+
+Author Contributions 
+
+X.L. performed the first -principles calculations, analyzed the data, and wrote the 
+
+original draft of the manuscript. L.M. conceived the idea, supervised the project, 
+
+acquired the funding, and substantially revised the manuscript. M.Z. and S.N. assisted 
+
+wit h the structural modeling and DFT calculations. Yu.L. and Ya.L. contributed to the 
+
+data visualization and the analysis of magnetic exchange interactions. J.Z., Y.Z., and 
+
+F.M. participated in the rigorous discussions regarding the bond -selective mechanism 
+
+and scalar spin chirality. D.Z., G.L., C.Z., and D.H. provided technical support for the 
+
+electronic structure analyses and contributed to the theoretical interpretation. All 
+
+authors have read and approved the final manuscript. 
+
+Competing interests 
+
+All authors declare no financial or non -financial competing interests. 
+
+Reference s
+
+1 Taguchi, Y., Oohara, Y., Yoshizawa, H., Nagaosa, N. & Tokura, Y. Spin Chirality, Berry 
+
+Phase, and Anomalous Hall Effect in a Frustrated Ferromagnet.  Science  291 , 2573 (2001). 
+
+2 Takatsu, H., Yonezawa, S., Fujimoto, S. & Maeno, Y. Unconventional anomalous hall 
+
+effect in the metallic triangular -lattice magnet PdCrO₂.  Phys. Rev. Lett.  105 , 137201 (2010). 
+
+3 Takagi, H.  et al.  Spontaneous topological Hall effect induced by non -coplanar 
+
+antiferromagnetic order in intercalated van der Waals materials.  Nat. Phys.  19 , 961 –968 
+
+(2023). 
+
+4 Sürgers, C., Fischer, G., Winkel, P. & Löhneysen, H. v. Large topological Hall effect in 
+
+the non -collinear phase of an antiferromagnet.  Nat. Commun.  5, 3400 (2014). 
+
+5 Machida, Y., Nakatsuji, S., Onoda, S., Tayama, T. & Sakakibara, T. Time -reversal 
+
+symmetry breaking and spontaneous Hall effect without magnetic dipole order.  Nature 
+
+463 , 210 -213 (2010). 
+
+6 Ueland, B. G.  et al.  Controllable chirality -induced geometrical Hall effect in a frustrated 
+
+highly correlated metal.  Nat. Commun.  3, 1067 (2012). 
+
+7 Xu, S.  et al.  Universal scaling law for chiral antiferromagnetism.  Nat. Commun.  15 , 3717 
+
+(2024). 
+
+8 Khanh, N. D.  et al.  Gapped nodal planes and large topological Nernst effect in the chiral 
+
+lattice antiferromagnet CoNb₃S₆.  Nat. Commun.  16 , 2654 (2025). 9 Oh, T. & Nagaosa, N. Phonon Thermal Hall Effect in Mott Insulators via Skew Scattering 
+
+by the Scalar Spin Chirality.  Phys. Rev. X  15 , 011036 (2025). 
+
+10  Kim, H. L.  et al.  Thermal Hall effects due to topological spin fluctuations in YMnO₃.  Nat. 
+
+Commun.  15 , 243 (2024). 
+
+11  Song, J.  et al.  Higher harmonics in planar Hall effect induced by cluster magnetic 
+
+multipoles.  Nat. Commun.  13 , 6501 (2022). 
+
+12  Zhu, Y. -P.  et al.  Observation of plaid -like spin splitting in a noncoplanar antiferromagnet. 
+
+Nature  626 , 523 -528 (2024). 
+
+13  Baral, P. R.  et al.  Fluctuation -driven topological Hall effect in room -temperature itinerant 
+
+helimagnet Fe₃Ga₄.  Nat. Commun.  16 , 3898 (2025). 
+
+14  Wang, W.  et al.  Spin chirality fluctuation in two -dimensional ferromagnets with 
+
+perpendicular magnetic anisotropy.  Nat. Mater.  18 , 1054 -1059 (2019). 
+
+15  Li, X.  et al.  Momentum -space and real -space Berry curvatures in Mn₃Sn.  SciPost Phys.  5,
+
+063 (2018). 
+
+16  Huang, D.  et al.  Multiple unconventional Hall effects induced by noncoplanar spin 
+
+textures in SmMn₂Ge₂.  Phys. Rev. B  109 , 144406 (2024). 
+
+17  Martin, I. & Batista, C. D. Itinerant Electron -Driven Chiral Magnetic Ordering and 
+
+Spontaneous Quantum Hall Effect in Triangular Lattice Models.  Phys. Rev. Lett.  101 ,
+
+156402 (2008). 
+
+18  Kato, Y., Martin, I. & Batista, C. D. Stability of the spontaneous quantum Hall state in the 
+
+triangular Kondo -lattice model.  Phys. Rev. Lett.  105 , 266405 (2010). 
+
+19  Chern, G. -W. & Batista, C. D. Spontaneous Quantum Hall Effect via a Thermally Induced 
+
+Quadratic Fermi Point.  Phys. Rev. Lett.  109 , 156801 (2012). 
+
+20  Zhou, X., Feng, W., Li, Y. & Yao, Y. Spin -Chirality -Driven Quantum Anomalous and 
+
+Quantum Topological Hall Effects in Chiral Magnets.  Nano Lett.  23 , 5680 -5687 (2023). 
+
+21  Zhou, J.  et al.  Predicted Quantum Topological Hall Effect and Noncoplanar 
+
+Antiferromagnetism in K₀.₅RhO₂.  Phys. Rev. Lett.  116 , 256601 (2016). 
+
+22  Feng, W.  et al.  Topological magneto -optical effects and their quantization in noncoplanar 
+
+antiferromagnets.  Nat. Commun.  11 , 118 (2020). 
+
+23  Shindou, R. & Nagaosa, N. Orbital Ferromagnetism and Anomalous Hall Effect in 
+
+Antiferromagnets on the Distorted fcc Lattice.  Phys. Rev. Lett.  87 , 116801 (2001). 
+
+24  Reis, R. D. d.  et al.  Pressure tuning of the anomalous Hall effect in the chiral 
+
+antiferromagnet Mn₃Ge.  Phys. Rev. Mater.  4, 051401(R) (2020). 
+
+25  Grohol, D.  et al.  Spin chirality on a two -dimensional frustrated lattice.  Nat. Mater.  4, 323 -
+
+328 (2005). 
+
+26  Fujishiro, Y.  et al.  Giant anomalous Hall effect from spin -chirality scattering in a chiral 
+
+magnet.  Nat. Commun.  12 , 317 (2021). 
+
+27  Li, X., Koo, J., Zhu, Z., Behnia, K. & Yan, B. Field -linear anomalous Hall effect and Berry 
+
+curvature induced by spin chirality in the kagome antiferromagnet Mn₃Sn.  Nat. Commun. 
+
+14 , 1642 (2023). 
+
+28  Singh, C.  et al.  Higher order exchange driven noncoplanar magnetic state and large 
+
+anomalous Hall effects in electron doped kagome magnet Mn₃Sn.  npj Quantum Mater.  9,
+
+43 (2024). 29  Deng, S.  et al.  Controlling Chiral Spin States of a Triangular‐Lattice Magnet by Cooling 
+
+in a Magnetic Field.  Adv. Funct. Mater.  29 , 1900947 (2019). 
+
+30  Shiomi, Y., Mochizuki, M., Kaneko, Y. & Tokura, Y. Hall effect of spin -chirality origin in 
+
+a triangular -lattice helimagnet Fe₁.₃Sb.  Phys. Rev. Lett.  108 , 056601 (2012). 
+
+31  Ueda, K.  et al.  Topological Hall Effect in Pyrochlore Lattice with Varying Density of Spin 
+
+Chirality.  Phys. Rev. Lett.  108 , 156601 (2012). 
+
+32  Takei, W. J., Heikes, R. R. & Shirane, G. Magnetic Structure of Mn₄N -Type Compounds. 
+
+Phys. Rev.  125 , 1893 -1897 (1962). 
+
+33  Akagi, Y. & Motome, Y. Spin Chirality Ordering and Anomalous Hall Effect in the 
+
+Ferromagnetic Kondo Lattice Model on a Triangular Lattice.  J. Phys. Soc. Jpn.  79 , 083711 
+
+(2010). 
+
+34  Machida, Y.  et al.  Unconventional Anomalous Hall Effect Enhanced by a Noncoplanar 
+
+Spin Texture in the Frustrated Kondo Lattice Pr₂Ir₂O₇.  Phys. Rev. Lett.  98 , 057203 (2007). 
+
+35  Li, X.  et al.  Chiral domain walls of Mn3Sn and their memory.  Nat. Commun.  10 , 3021 
+
+(2019). 
+
+36  Hirschberger, M.  et al.  Topological Nernst Effect of the Two -Dimensional Skyrmion 
+
+Lattice.  Phys. Rev. Lett.  125 , 076602 (2020). 
+
+37  Isogami, S., Masuda, K. & Miura, Y. Contributions of magnetic structure and nitrogen to 
+
+perpendicular magnetocrystalline anisotropy in antiperovskite  ɛ-Mn₄N.  Phys. Rev. Lett.  4,
+
+014406 (2020). 
+
+38  He, Y.  et al.  Noncollinear ferrimagnetism and anomalous Hall effects in Mn₄N thin films. 
+
+Phys. Rev. B  106 , L060409 (2022). 
+
+39  Bayaraa, T., Ivanov, V., Tan, L. Z. & Griffin, S. M. Intrinsic origin and enhancement of 
+
+topological responses in ferrimagnetic antiperovskite Mn₄N.  Phys. Rev. B  109 , 014430 
+
+(2024). 
+
+40  Tenasini, G.  et al.  Giant anomalous Hall effect in quasi -two -dimensional layered 
+
+antiferromagnet Co₁/₃NbS₂.  Phys. Rev. Res.  2, 023051 (2020). 
+
+41  Bayaraa, T., Xu, C. & Bellaiche, L. Magnetization Compensation Temperature and 
+
+Frustration -Induced Topological Defects in Ferrimagnetic Antiperovskite Mn₄N.  Phys. 
+
+Rev. Lett.  127 , 217204 (2021). 
+
+42  Zhang, R., He, Y., Fruchart, D., Coey, J. M. D. & Gercsi, Z. Rare -earth -free noncollinear 
+
+metallic ferrimagnets Mn₄₋ₓZₓN with compensation at room temperature.  Acta Mater.  234 ,
+
+118021 (2022). 
+
+43  Michael Uhl, S. F. M., and Peter Mohn. Ab initio analysis of magnetic properties in 
+
+noncollinearly ordered Mn₄N.  Phys. Rev. B  55 , 2995 (1997). 
+
+44  Adhikari, V.  et al.  First -principles study of mechanical and magnetic properties of 
+
+transition metal (M) nitrides in the cubic M4N structure.  J. Phys. Chem. Solids  120 , 197 -
+
+206 (2018). 
+
+45  Bloechl, R. D. a. P. E. Crystal orbital Hamilton populations (COHP): energy -resolved 
+
+visualization of chemical bonding in solids based on density -functional calculations.  J. 
+
+Phys. Chem.  97 , 8617 -8624 (7993). 
+
+46  Deringer, V. L., Tchougréeff, A. L. & Dronskowski, R. Crystal Orbital Hamilton 
+
+Population (COHP) Analysis As Projected from Plane -Wave Basis Sets.  J. Phys. Chem. A 
+
+115 , 5461 -5466 (2011). 47  Goodenough, J. B. Metals and Alloys in Magnetism and the Chemical Bond (ed. 
+
+Goodenough, J. B.) 321 (Interscience Publishers, 1963). 
+
+48  Cui, J.  et al.  Manipulation of magnetic structures and pressure -induced strong correlation 
+
+properties in the frustrated Mn 3GaN antiperovskite.  Phys. Rev. B  110 , 094438 (2024). 
+
+49  Kobayashi, M. & Mochizuki, M. Theory of magnetism -driven negative thermal expansion 
+
+in inverse perovskite antiferromagnets.  Phys. Rev. Mater.  3, 024407 (2019). 
+
+50  D Fruchart, D. G., P Convert, P l'Heritier and J P Senateur. The non -collinear component 
+
+in the magnetic structure of Mn₄N.  J. Phys. F: Met. Phys.  9, 2431 (1979). 
+
+51  Kresse, G. & Hafner, J. Ab initiomolecular dynamics for liquid metals.  Phys. Rev. B  47 ,
+
+558 -561 (1993). 
+
+52  Kresse, G. & Furthmuller, J. Efficiency of ab -initio total energy calculations for metals 
+
+and semiconductors using a plane -wave basis set.  Comput. Mater. Sci.  6, 15 -50 (1996). 
+
+53  Kresse, G. & Furthmuller, J. Efficient iterative schemes for ab initio total -energy 
+
+calculations using a plane -wave basis set.  Phys. Rev. B  54 , 11169 (1996). 
+
+54  Xiang, H. J., Kan, E. J., Wei, S. -H., Whangbo, M. H. & Gong, X. G. Predicting the spin -
+
+lattice order of frustrated systems from first principles.  Phys. Rev. B  84 , 224429 (2011). 
+
+55  Szasz, A., Motruk, J., Zaletel, M. P. & Moore, J. E. Chiral Spin Liquid Phase of the 
+
+Triangular Lattice Hubbard Model: A Density Matrix Renormalization Group Study.  Phys. 
+
+Rev. X  10 , 021042 (2020). 
+
+# Figure Legends 
+
+Figure 1  Strain -induced magnetic phase transition and the emergence of scalar 
+
+spin chirality order in Mn 4N.  a Magnetic and crystal structures of Mn 4N. There are 
+
+only two types of magnetic tetrahedra in the lattice: red and blue. The green and red 
+
+arrows represent the spin direction in the lattice and the direction of the total scalar spin 
+
+chirality  in each tetrahedron, respectively.  b Schematic of a single tetrahedron of 
+
+Mn atoms, which consists of four spin vectors ( 1, 2,3, 4)  
+
+> 
+
+=S . Here 1
+
+= and 2,3,4 
+
+=
+
+indicate  the corresponding spin orientation 
+
+S at  the Mn1a site and the 
+
+Mn3c site, respectively.  is the angle between the spins of the Mn1a site and the 
+
+Mn3c site.  c Energy dependence on strain at 110 
+
+
+
+> 
+
+= and 180 
+
+
+
+> 
+
+= . d Dependence 
+
+of  and  on strain under the magnetic ground state.  e Schematic of the 
+
+distribution between adjacent (111)  lattice planes. The gray planes represent the (111) lattice planes. 
+
+Figure 2.  Explore the requirements for the formation of scalar spin chiral order on 
+
+local moments and exchange interactions. a  Strain dependence of the Mn moments 
+
+at Mn1a and Mn3c sites.  b Strain evolution of the Mn3c moment components: Mn3c [111] 
+
+(parallel to [111]  crystal direction) and Mn3c (111)  (lying within 
+
+the (111)  lattice planes), corresponding to the blue and red arrow illustrated in the 
+
+inset of ( c), respectively.  c Strain variation of the nearest -neighbor exchange coupling 
+
+constant  J between Mn3c sites.  Projected density of states (PDOS) of the Mn3c 3 d
+
+orbitals onto the (111)  plane at strains of 1.33% − (d) and 3.00%  (e). 
+
+Figure 3.  Two key  orbital bonding  between nearest -neighbor Mn3c sites  in Mn 4N
+
+through charge  density  difference (CDD) analysis . CDD on the (001) lattice plane 
+
+(corresponding to the red plane in Fig. 1 a) under strains of 1.33% − (a),0.53%  (b),
+
+and 2.66%  (c). The red and blue areas represent electron accumulation and depletion, 
+
+respectively. The isosurface levels are set to  −0.028  e Å3⁄ (red , positive) and 
+
+−0.06  e Å3⁄ (blue , negative). Black dashed lines indicate charge contour levels.  The 
+
+red and blue dashed loops delineate the projections of the Mn3c and N orbitals onto the 
+
+(001) plane, serving as spatial references for  orbital  hybridization. Schematic 
+
+representations of the two orbital  bonding  configurations deduced from the CDD maps. 
+
+Schematics of the p olar  covalent bond formed by the hybridization of the Mn3c 2 2 
+
+> 3xr
+
+d −
+
+(2 2  
+
+> 3−yr
+
+d ) orbital  and  the  Nxp (yp ) orbital  (d) and  the  nonpolar  covalent 
+
+bond between the xy d orbitals of nearest -neighbor Mn3c atoms  (e). 
+
+Figure  4. Formation mechanism of the scalar spin chirality order  via the quantitative orbital -resolved bonding analysis.  Projected crystal orbital Hamiltonian 
+
+population (pCOHP) profiles for the two principal orbital interactions: the Mn3c 2 2  
+
+> 3−xr
+
+d
+
+and N xp bond ( red  curves), and the Mn3c xy d and  Mn3c xy d bond  (blue  curves) 
+
+under strains of 1.33% − (a),0.53%  (b), and 2.66%  (c). Positive and negative pCOHP −
+
+values denote bonding and antibonding characteristics, respectively.  The red 
+
+and blue text in each panel  gives  the integrated pCOHP (IpCOHP ) values up to the 
+
+Fermi level  (measure of bond strength) of the  Mn3c -N bond  and the  Mn3c -Mn3c  bond, 
+
+respectively.  d Strain -dependent schematic of the dual modulation of the Mn3c (111) 
+
+moment and exchange interactions via bond -selective suppression. The left and right 
+
+panels correspond to the covalent bond between  the Mn3c 2 2  
+
+> 3−xr
+
+d orbital  and  the  Nxp
+
+orbital  and the magnetic configuration under the compressive and tensile strain 
+
+conditions, respectively.  The  green  arrows denote the activated Mn3c (111) 
+
+moments.  JFM  represents  the nitrogen -mediated  ferromagnetic superexchange 
+
+interaction  of the  nearest -neighbor Mn3c via the  Mn3c  (2 2  
+
+> 3−xr
+
+d )-N (xp ) covalent  bond.

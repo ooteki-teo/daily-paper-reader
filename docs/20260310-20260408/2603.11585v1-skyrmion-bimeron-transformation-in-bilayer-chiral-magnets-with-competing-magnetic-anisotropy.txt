@@ -1,0 +1,1364 @@
+Title: Skyrmion-Bimeron Transformation in Bilayer Chiral Magnets with Competing Magnetic Anisotropy
+
+URL Source: https://arxiv.org/pdf/2603.11585v1
+
+Published Time: Fri, 13 Mar 2026 00:36:57 GMT
+
+Number of Pages: 18
+
+Markdown Content:
+Skyrmion–Bimeron Transformation in Bilayer Chiral Magnets with Competing Magnetic Anisotropy G¨ ul¸ sen Do˘ gan, ¨ Umit Akıncı 1
+
+The Graduate School of Natural and Applied Sciences, Dokuz Eyl¨ ul University, Tr-35160 .Izmir, Turkey Department of Physics, Dokuz Eyl¨ ul University, TR-35160 Izmir, Turkey 
+
+# 1 Abstract 
+
+In this work, we investigate the emergence of topological spin textures in a ferromagnetically coupled bilayer chiral magnet by means of Monte Carlo simulations of a classical spin model including exchange interaction, Dzyaloshinskii–Moriya interaction, magnetic anisotropy, and an external magnetic field. To characterize the topology of the system, we construct a scalar chirality map in the ( K/J, h/J ) parameter space. Our results reveal several magnetic configurations, including labyrinth structures, skyrmion lattices, ferromagnetic states, and meron–antimeron crystal phases. In particular, we show that the transition from easy-axis to easy-plane anisotropy drives a continuous transformation from skyrmion textures to bimeron-type configurations. The bilayer geometry introduces an additional stabilization mechanism, where interlayer exchange coupling correlates the topological cores in the two layers and increases the energetic cost of defect collapse. These findings provide a systematic topological texture map for bilayer chiral magnets and highlight coupled magnetic layers as a promising platform for stabilizing bimeron-type spin textures in nanoscale spintronic systems. Keywords: Skyrmion, Bilayer, Bimeron, Easy-Axis, Easy-Plane, Magnetic Anisotropy 
+
+# 2 Introduction 
+
+Skyrmions are topological entities that have long intrigued researchers in magnetism because they are associated with a range of physical phenomena. Magnetic skyrmions are compact, rotating topological defects within the magnetization configuration. A magnetic skyrmion is a local vortex of spin configurations in a magnetic material. The concept was first proposed in 1962 by the nuclear physicist Tony Hilton Royle Skyrme, who coined the term skyrmion [1]. Skyrmions were initially proposed in nuclear physics as specific solutions to a sigma model that represent baryons. Later, in 1989, Bogdanov extended the idea to magnetic materials through theoretical predic-tions [2]. Bogdanov and Hubert were among the first to theoretically investigate the role of the Dzyaloshinskii-Moriya interaction (DMI) [3, 4] in stabilizing skyrmion configurations in easy-axis magnetic systems and emphasized the importance of this term in such structures [5, 6]. Extend-ing earlier theories, Bogdanov and R¨ o¨ßler developed a phenomenological framework to describe chiral symmetry breaking in thin magnetic films and multilayers. Their work also predicted that skyrmions could arise from induced DMI in these systems [7]. Then, R¨ o¨ßler and collaborators extended these theoretical insights by showing that skyrmions could arise spontaneously as ground states in chiral magnetic metals, without the presence of external magnetic fields or structural defects [8]. After being theoretically predicted for a long time, the existence of skyrmions was experimentally confirmed for the first time in 2009 [9]. Romming et al. successfully detected individual nanoscale skyrmions using spin-polarized scanning tunneling microscopy (SP-STM) in a P dF e bilayer on a Ir (111) substrate at low temperature [10]. Leonov et al. conducted both experimental and theoretical studies to investigate the magnetic properties of isolated nanoscale skyrmions in P dF e/Ir bilayers [11, 12]. From an application standpoint, skyrmion-based technologies offer notable advantages over tra-ditional domain-wall-based concepts, such as racetrack memory. Although both approaches rely 
+
+> 1umit.akinci@deu.edu.tr
+
+1
+
+> arXiv:2603.11585v1 [cond-mat.stat-mech] 12 Mar 2026
+
+on electrically induced motion of magnetic textures, skyrmions can be displaced with substan-tially lower current densities (on the order of 10 5 − 10 7 A/m 2) than domain walls (approximately 10 11 − 10 12 A/m 2)[13, 14]. This dramatic reduction enables significantly lower power consumption and mitigates Joule heating effects. Moreover, their topological nature enhances resilience against structural imperfections, enabling faster, more reliable information transport at high storage densi-ties. These properties position skyrmions as strong candidates for next-generation, energy-efficient data storage and logic architectures. [15]. Due to these remarkable features, skyrmions have at-tracted significant interest in recent years, having been studied theoretically and experimentally [12, 13, 14, 16, 17]. In addition to skyrmions, a variety of other topological formations can also arise in magnetic materials, giving rise to a range of eccentric physical phenomena [18, 19] such as meron and antimeron [20]. For example, a skyrmion can be conceptually split into two parts, yielding a meron and an antimeron. Unlike a full skyrmion, a meron covers only half of the spin sphere, reaching to a fractional topological charge of Q = ± 1 
+
+> 2
+
+. In recent years, numerous theoretical studies have proposed the potential formation of merons and antimerons in chiral magnets exhibiting easy-plane magnetic anisotropy [21]. Yu and co-workers provided the first experimental evidence of merons and antimerons in a chiral magnetic film. They successfully stabilized a square lattice composed of alternating merons and antimerons by applying a 20 mT magnetic field perpendicular to the film at room temperature (295 K) [22]. In contrast to the typically observed hexagonal skyrmion lattices, this arrangement reveals an alternating magnetization model that aligns with the theoretical model of bimeron structures [23]. In particular, studies have identified three fundamental components for stabilizing the triangular meron–antimeron crystal (MAX): biquadratic interaction, DMI, and easy-plane single-ion anisotropy. Furthermore, by changing the direction of the magnetic field, they show how each magnetic field component affects the triangular M AX [24]. Understanding the magnetic phase behavior in bilayer systems is of great importance for the development of spintronic technologies. Traditionally stabilized by DMI, recent theoretical and experimental studies have shown that alternative mechanisms, such as magnetic frustration and anisotropy, can also support skyrmion phases. Previous studies on easy-axis anisotropy have focused on fundamental magnetic configurations, such as cycloidal structures and skyrmion lattices, and on the stability of individual skyrmions under varying magnetic fields [5, 6, 11]. Notably, the field-induced instability and collapse of individual skyrmions, as reported in [11], provide a theoretical basis for interpreting experimental observations in systems such as PdFe/Ir(111) bilayers. Banerjee et al. demonstrate that replacing uniaxial anisotropy with two-dimensional easy-plane anisotropy greatly improves the stability of skyrmions under applied magnetic fields [25]. Flacke et al. experimentally confirmed this phenomenon by showing that two-dimensional easy-plane anisotropy in magnetic multilayers plays a key role in stabilizing skyrmions [26]. In particular, magnetic systems with strong spin–orbit coupling (SOC) naturally exhibit easy-plane, or “compass,” anisotropy, which plays a key role in spin texture formation [27, 28]. Furthermore, researchers have shown that applying an in-plane magnetic field can stabilize skyrmion crystal (SkX) phases in easy-plane magnetic systems, which have traditionally been investigated in relation to the DMI [29]. Recent studies have shown that square-lattice skyrmion crystals can be stabilized in centrosymmetric bilayer systems via a staggered DMI. This effect, together with interlayer exchange coupling, can give rise to complex magnetic states and provide novel approaches for creating and manipulating topological patterns in centrosymmetric magnetic systems [30, 31]. Interlayer interaction occurs between adjacent atomic layers. It can override intralayer inter-action, which happens within a single atomic layer. This may result in exotic magnetic phases with nonlinear spin textures [32, 33]. While this single-layer approach predicts topological mag-netic phases in certain magnetic moir´ e systems, it does not fully capture the complexity of the moir´ e bilayer. In Ref [32], the complete spin dynamics of the bilayer reveal that the emergence of non-trivial interlayer moir´ e domains can stabilize various spin textures, such as skyrmions, anti-skyrmions, and higher-order spin textures, even without conventional sources like DMI, and dipole interactions. Experiments [34] have supported many theoretical predictions of nonlinear moir´ emagnetic states, especially in CrI 3 moir´ e superlattices. Building on these experimental observa-tions, theoretical studies of moir´ e magnets have further simplified the moir´ e bilayer by assuming that magnetic moments in a single layer remain stable [35, 36]. 2As can be understood from the brief literature given above, topological spin textures are one of the most active areas of research in recent times, both experimentally and theoretically, due to the revolutionary possibilities promised by technological applications. However, the mechanisms controlling the transformation and stability of these textures in coupled magnetic layers remain incompletely understood. Thus, the main aim of this work is to determine the effects of easy-axis and easy-plane anisotropy on the magnetic bilayer system. For this aim the paper is organized as follows: In Sec. 3, we briefly present the model and formulation. The results and discussions are presented in Sec. 4, and finally, Sec. 5 contains our conclusions. 
+
+# 3 Model and Formulation 
+
+The classical Heisenberg model Hamiltonian for the magnetic bilayer system on a square lattice is given by, 
+
+H = −Jintra 
+
+∑
+
+> α=μ,ν
+
+∑
+
+> <i,j>
+
+~Sαi · ~Sαj − Jinter 
+
+∑
+
+> i
+
+~Sμi · ~Sνi − ∑
+
+> α=μ,ν
+
+∑
+
+> <i,j>
+
+~Dαij ( ~Sαi × ~Sαj )
+
+− ∑
+
+> α=μ,ν
+
+∑
+
+> i
+
+hiSzα i − K ∑
+
+> α=μ,ν
+
+∑
+
+> i
+
+(Szα i )2, (1) where α = μ, ν are the layer indices that correspond to the top and bottom layers in the bilayer system. ~Si denotes the three-component unit spin vector on the ith lattice site. The first sum represents intralayer exchange interactions, whereas the second sum represents interlayer one. Here < i, j > denotes the sum over the nearest neighbors. The layers μ and ν are coupled by the inter-layer exchange interaction Jinter . The Hamiltonian involves ferromagnetic (FM) interaction strengths for both Jintra > 0 and Jinter > 0 as exchange interactions. The third term is the layer-dependent DMI vector and is indicated by ~Dij = D ~ rij /| ~rij |, where D is the magnitude of the DMI vector and ~rij is the radius vector between two neighboring sites i and j. Bloch and N´ eel type skyrmions can be obtained depending on the relationship between the DMI vector and the radius vector. If the DMI vector and the radius vector are parallel, Bloch-type skyrmions are observed; if they are perpendicular, N´ eel-type skyrmions are observed. We preferred a Bloch-type skyrmion to represent the case in which these vectors are aligned with each other. Skyrmions exhibit swirling motion in the right-handed or left-handed direction, depending on whether the DMI vector is positive or negative, respectively. The parameter hi in the next term is the external magnetic field applied longitudinally at the lattice site i. K is the crystal field parameter in the final term, which stands for an easy-axis K > 0 single-ion anisotropy that tends to align the spin vector in the z direction, and an easy-plane K < 0 anisotropy that favors the in-plane alignment of the spin vector. The calculations are performed by using the Monte Carlo simulation [37, 38] method based on the Metropolis algorithm to study the scalar chirality map of the magnetic bilayer system model we presented above. We consider each layer to consist of a two-dimensional square lattice ( L × L × 2) within periodic boundary conditions, where L = 50. After taking steps up to 5 × 10 5 Monte Carlo steps per spin (MCSs) for equilibrium, the first 10 5 MCSs have been discarded. Subsequently, the remaining data (MCSs) were used to perform numerical calculations for thermalization averaging. These values were determined by comparing the results obtained from simulations that have dif-ferent number of MCS for various Hamiltonian parameters. The temperature is gradually reduced to T = 0 .001 J/k B, which is approximately taken as the ground-state temperature of the system. Here, the Boltzmann constant kB = 1. To simplify the model, we set Jintra = Jinter = J = 1. This means we use scaled (dimensionless) quantities throughout this work, such as K/J , h/J , and 
+
+D/J .To identify the presence of swirling spin textures, we introduce the local chirality χαi at the lattice site i, at each layer, which is given by, 
+
+χαi = 1
+
+8π
+
+[ ~Sαi · (~Si + ˆ xα × ~Si + ˆ yα) + ~Si α · (~Si − ˆxα × ~Sαi−ˆy )
+
+]
+
+(2) 3If we take the summation of χαi over the whole lattice in each layer α = μ or ν, we get the total scalar chirality, the so-called topological winding number or skyrmion number, as follows: 
+
+χαT = ∑
+
+> i∈α
+
+χαi . (3) We investigate the static spin structure factor in the reciprocal lattice to analyze the magnetic spin Bragg peaks in detail. The perpendicular Sα
+
+> ⊥
+
+(~q) and parallel (to z) Sα 
+
+> ||
+
+(~q) components of the spin structure factor for each layer are defined by: 
+
+Sα
+
+> ⊥
+
+(~q) = 1
+
+N
+
+〈∣ ∣∣∣∑
+
+> r
+
+Sxα ~r · e−i~ q·~r
+
+∣∣∣∣
+
+> 2
+
++
+
+∣∣∣∣∑
+
+> r
+
+Syα ~r · e−i~ q·~r
+
+∣∣∣∣
+
+> 2
+
+〉
+
+(4) 
+
+Sα 
+
+> ||
+
+(~q) = 1
+
+N
+
+〈∣ ∣∣∣∑
+
+> r
+
+Szα ~r · e−i~ q·~r
+
+∣∣∣∣
+
+> 2
+
+〉
+
+(5) where < . . . > means the averaged MC configurations and N = L2 is the total number of spins. 
+
+# 4 Results and Discussion      
+
+> 0
+> 10
+> 20
+> 30
+> 40
+> 50
+> 010 20 30 40 50
+> yx
+
+−1 
+
+−0.8 
+
+−0.6 
+
+−0.4 
+
+−0.2 
+
+0
+
+0.2 
+
+0.4 
+
+0.6 
+
+0.8 
+
+1     
+
+> (a) Top Layer
+> 0
+> 10
+> 20
+> 30
+> 40
+> 50
+> 010 20 30 40 50
+> yx
+
+−1 
+
+−0.8 
+
+−0.6 
+
+−0.4 
+
+−0.2 
+
+0
+
+0.2 
+
+0.4 
+
+0.6 
+
+0.8 
+
+1
+
+> (b) Bottom Layer
+
+Figure 1: Bilayer system that consists of (a) the top and (b) bottom layer for selected parameters: 
+
+D/J = 1, h/J = 0 .5, and K/J = −0.3. 4We designed the magnetic bilayer system as shown in Fig. 1. Our system consists of two layers, (a) the top layer and (b) the bottom layer, each a square lattice. In the Fig. 1, SkX phases emerge in both layers for the following values: D/J = 1, h/J = 0 .5, and K/J = −0.3. Since the interaction between the layers is ferromagnetic Jinter 6 = 0, the system behaves synchronously, then we prefer to display the results of one monolayer. However, the bilayer system is physically relevant because it introduces stabilization mechanisms that are absent in a monolayer. The interlayer exchange interaction term modifies the topological energy landscape. This leads to a broader stability region of the observed topological spin textures. Another reason for framing the problem as a system consisting of two identical layers with ferromagnetic interaction is that subsequent studies will investigate the effects of changes in values such as interlayer interaction and intralayer interaction on spin textures. We performed simulations for several values of the Dzyaloshinskii–Moriya interaction parame-ter. Although the quantitative boundaries of the different spin textures shift with increasing D/J ,the overall topology of the scalar chirality map and the sequence of magnetic textures remain qualitatively unchanged. For clarity and to avoid redundancy, we present the detailed analysis for a representative value D/J = 1 .
+
+To investigate the spin textures in the system, we construct the scalar chirality map in ( K/J −
+
+h/J ) plane. After giving this map, we will provide spin snapshots, local chirality maps, and structure factors for selected values of the Hamiltonian parameters. Spin snapshots are shown as vector plots of the spins in the xy plane; the vector colors are determined by the z components of the spins, as shown in the colorbar for each snapshot. Similarly, local chirality maps are shown in 
+
+xy plane where one layer of the bilayer resides. Lastly, the spin structure factors are depicted in the qx, q y plane. After presenting the scalar chirality map, we first examine the effect of anisotropy in the zero-field case, h/J = 0 case. After this, we investigate the effect of the magnetic field on the spin textures by getting some representative spin snapshots for the isotropic case ( K/J = 0 .0), easy axis anisotropy case ( K/J = 1 .0), easy plane anisotropy case ( K/J = −1.2), and for choosing magnetic field values. 
+
+# 4.1 Ground-State scalar chirality map of Magnetic Bilayer Nanosystems 
+
+Since scalar chirality identifies topological phases, we examine the ground-state ( T = 0 .001 J/k B)scalar chirality map to explore these phases, given in Fig. 2. The color bar represents the total scalar chirality in the layer. A Bloch-type skyrmion with a negative center has topological charge 
+
+−1, which contributes negatively per unit sphere to the total scalar chirality. Thus, we obtain negative values in the color bar. Contour lines are closed curves formed by connecting points of the same chirality, starting from the initial level of the contour. We can address the area with the largest total chirality in scalar terms, the red region, as the region where skyrmions are most abundant. This map is obtained by calculating the scalar chirality from Eq. 3 by scanning the Hamiltonian parameter range of K/J and h/J by steps 0 .2. The scalar chirality map shown in Fig. 2 provides a global overview of the topological textures that emerge in the ( K/J, h/J ) parameter space. Since the total scalar chirality reflects the density of topological defects in the system, regions with large magnitude of chirality indicates the presence of skyrmion-rich configurations. In contrast, regions where the total chirality approaches zero may correspond either to topologically trivial states or to textures composed of meron–antimeron pairs whose local topological charges cancel each other. Therefore, the chirality map alone is not sufficient to uniquely determine the underlying spin configuration. To identify the corresponding magnetic textures, we analyze representative points in the parameter space by examining real-space spin configurations, local chirality distributions, and spin structure factors. These complementary diagnostics allow us to distinguish between labyrinth structures, skyrmion lattices, and MAX phase. We are starting at the horizontal line at h/J = 0 in this map, i.e., the dark blue region at the bottom in Fig. 2. 5Figure 2: The density plot of the total scalar chirality χT as a function of ( K/J − h/J ) plane for one layer for D/J = 1. 
+
+# 4.2 Zero magnetic field case 
+
+The effect of easy-plane anisotropy in the absence of a magnetic field is shown in Figs. 3 and 4. We depict the real-space spin configurations in the top row and local chirality maps in the middle row. The bottom rows contain spin structure factors. As seen in Figs. 3 and 4, rising easy-plane anisotropy energy transforms the spin-spiral/labyrinth texture into a square lattice of merons and antimerons (the MAX phase, compare Figs. 3 (b) with (a)). The structure contains several core-down (blue) meron χi = −1/2 and core-up (red) antimeron χi = 1 /2 sequences (see Figs. 3 (b) and 4 (a)). While the total chirality map in Fig. 2 has almost zero value at ( K/J, h/J ) = ( −1.15 , 0.0) or (−1.2, 0.0), as seen in Figs. 3 (b) and 4 (a) local chiralities have ordered structure. This shows that the total chirality map alone is not sufficient to identify the underlying topological spin texture. This state is also characterized by the double-Q (2 Q) Bragg peaks with equal intensities in both of the perpendicular S⊥(~q) and parallel S|| (~q) components of the static structure factor, as shown in the bottom lines of Figs. 3 (b) and 4 (a), while the intensities are unequal for the spin-spiral/labyrinth spin texture (see bottom rows of Fig. 3 (a)). If we further increase the strength of the easy plane anisotropy (i.e., increasing the magnitude of K/J in the negative direction) spins will try to orient themselves in the xy -plane. There will be a significant decrease in the z orientation of the spins. This manifests itself in the spin texture as a smaller number of merons and antimerons as seen in Fig. 4 (b). In the static structure factors, we can see that the S⊥(~q) Bragg peaks increase with the center peak, and the S|| (~q) component decreases (see bottom rows of Fig. 4 (b)). If we increase the easy-plane anisotropy sufficiently, components of the structure factor transform into 1 Q state and begin to concentrate in the central peak, while weak peaks in the z-component decrease visibly. 
+
+# 4.3 The absence of the single-ion anisotropy: Isotropic case 
+
+In the case of K/J = 0, the evolution of the spin textures with magnetic field-induced along the z-direction can be seen in Fig. 5. Real space spin configurations at zero magnetic field are presented in Fig. 5 (a). Almost zero local chirality in ( x, y ) plane and opposite blue and red regions, which cancel each other, is consistent with the total chirality given in Fig. 2 for ( K/J, h/J ) = (0 .0, 0.0). As seen in Fig. 5 (b), when we apply the magnetic field to the bilayer, we observe that the labyrinth phase transforms into rod-type domains, and skyrmions are observed together. The system has 60
+
+## 10 
+
+## 20 
+
+## 30 
+
+## 40 
+
+## 50 
+
+## 0 10 20 30 40 50 
+
+> y
+
+x
+
+## −1 
+
+## −0.8 
+
+## −0.6 
+
+## −0.4 
+
+## −0.2 
+
+## 0
+
+## 0.2 
+
+## 0.4 
+
+## 0.6 
+
+## 0.8 
+
+## 1
+
+(a) K/J=−0.85 
+
+## 0
+
+## 10 
+
+## 20 
+
+## 30 
+
+## 40 
+
+## 50 
+
+## 0 10 20 30 40 50 
+
+> y
+
+x
+
+## −1 
+
+## −0.8 
+
+## −0.6 
+
+## −0.4 
+
+## −0.2 
+
+## 0
+
+## 0.2 
+
+## 0.4 
+
+## 0.6 
+
+## 0.8 
+
+## 1
+
+(b) K/J=−1.15 
+
+0 10 20 30 40 50 x
+
+0
+
+10 
+
+20 
+
+30 
+
+40 
+
+50 
+
+> y
+> −1.5
+> −1
+> −0.5
+> 0
+> 0.5
+> 1
+> 1.5
+
+0 10 20 30 40 50 x
+
+0
+
+10 
+
+20 
+
+30 
+
+40 
+
+50 
+
+> y
+> −1.2
+> −1
+> −0.8
+> −0.6
+> −0.4
+> −0.2
+> 0
+> 0.2
+> 0.4
+> 0.6
+> 0.8
+> 1
+
+Figure 3: The real-space spin configurations (top panel) and real-space local chirality (middle panel) corresponding to that configuration D/J = 1 without magnetic field h/J = 0 for selected values of anisotropy (a) K/J = −0.85, (b) K/J = −1.15, respectively. The perpendicular S⊥(~q)and parallel S|| (~q) components of the static structure factor with the corresponding structure are shown in the two rows below panel. 70
+
+## 10 
+
+## 20 
+
+## 30 
+
+## 40 
+
+## 50 
+
+## 0 10 20 30 40 50 
+
+> y
+
+x
+
+## −1 
+
+## −0.8 
+
+## −0.6 
+
+## −0.4 
+
+## −0.2 
+
+## 0
+
+## 0.2 
+
+## 0.4 
+
+## 0.6 
+
+## 0.8 
+
+## 1
+
+(a) K/J=−1.2 
+
+## 0
+
+## 10 
+
+## 20 
+
+## 30 
+
+## 40 
+
+## 50 
+
+## 0 10 20 30 40 50 
+
+> y
+
+x
+
+## −1 
+
+## −0.8 
+
+## −0.6 
+
+## −0.4 
+
+## −0.2 
+
+## 0
+
+## 0.2 
+
+## 0.4 
+
+## 0.6 
+
+## 0.8 
+
+## 1
+
+(b) K/J=−1.4 
+
+0 10 20 30 40 50 x
+
+0
+
+10 
+
+20 
+
+30 
+
+40 
+
+50 
+
+> y
+> −1
+> −0.8
+> −0.6
+> −0.4
+> −0.2
+> 0
+> 0.2
+> 0.4
+> 0.6
+> 0.8
+> 1
+
+0 10 20 30 40 50 x
+
+0
+
+10 
+
+20 
+
+30 
+
+40 
+
+50 
+
+> y
+> −1.5
+> −1
+> −0.5
+> 0
+> 0.5
+> 1
+> 1.5
+
+Figure 4: The real-space spin configurations (top panel) and real-space local chirality (middle panel) corresponding to that configuration D/J = 1 without magnetic field h/J = 0 for selected values of anisotropy (a) K/J = −1.2, (b) K/J = −1.4, respectively. The perpendicular S⊥(~q)and parallel S|| (~q) components of the static structure factor with the corresponding structure are shown in the two rows below panel. 8exited the labyrinthine regime but has not yet fully entered the SkX, indicating an intermediate metastable phase. This state can be described as a helical-skyrmion mixed texture. Researchers explored asymmetric ( P t/Co/X ) multilayers with X = Ta or W in ref. [39]. Magnetic force microscopy (MFM) captured the W-based sample’s striking shift from rare rod-like domains to skyrmions, while the Ta-based structure transformed its intricate labyrinth domains into skyrmions. Fig. 5 (b) corresponds to the intermediate metastable regime where rod-like domains coexist with skyrmions, which is in agreement with the experimental MFM observations reported in [39]. It evolved into the SkX phase at h/J = 0 .41 as obtained in Fig. 5 (c). We observed that by increasing the magnetic field to h/J = 0 .71, the spin orientations are forced to move towards out-of-plane, resulting in the coexistence phase of ferromagnetic and skyrmion (F M + SkX ) spin texture as seen in Fig. 5 (d). The skyrmion patterns begin to distort and disappear when the field increases. 
+
+# 4.4 The presence of the single-ion anisotropy 
+
+The presence of the single-ion anisotropy can be investigated in two distinct cases: easy-axis anisotropy ( K/J > 0) and easy-plane anisotropy ( K/J < 0) cases. While in the first case the spins tend to align in the z direction, in-plane alignment is favored in the second case. In both cases, we investigate the effect of the changing field on the spin textures by displaying the representative results for chosen magnetic field values. 
+
+4.4.1 The easy-axis anisotropy case 
+
+In this case, we choose anisotropy as K/J = 1. The system exhibits a labyrinth of domains with more corrugated shapes at h/J = 0 .0 as seen in Fig. 6 (a). Even with a minimal magnetic field 
+
+h/J = 0 .06, that induces the labyrinth phase is broken into small and separate pieces, skyrmions and stripes are formed in Fig. 6 (b). When we set the magnetic field h = 0 .11 (Fig. 6 (c)) and h = 0 .21 (Fig. 6 (d)), the mixed domains were replaced by ferromagnetic and skyrmion phases ( F M + SkX ). We observe that the number of skyrmions decreases as the magnetic field strength, h/J , increases (compare Fig. 6 (d) with (c)). If we further increase the magnetic field, the field-polarized phase takes place. 
+
+4.4.2 The easy-plane anisotropy case 
+
+The real-space spin configurations (on the top panel) for easy-plane anisotropy K/J = −1.2 and 
+
+D/J = 1 can be seen in Figs. 7 for the selected magnetic field values (a) h/J = 0 .11, (b) h/J = 0 .51, and 8(a) h/J = 1 .51, (b) h/J = 1 .81. Local chirality maps ans spin structures factor maps added at columns. In Fig. 7(a) h/J = 0 .11, the spin texture is consists of a sequence of large-radius core-down (blue) merons and core-up (red) antimerons with high easy-plane anisotropy, which supports the easy-plane (yellow) spin orientations. Here, the color transition between core-up (red) and core-down (blue) represents the z-component magnetization transition from + Mz to −Mz. If these yellow arrows move clockwise towards each other, a square shape is formed surrounding the core-down (blue) merons, while for core-up (red) antimerons, they move counterclockwise, creating a square pattern. The local chirality maps for h = 0 .11 support the existence of meron-antimeron pairs. Note that this corresponds to the light blue region of Fig. 2 at ( K/J, h/J ) = ( −1.2, 0.11). When we look at the structure factor in the bottom rows of Fig. 7 (a), the perpendicular contri-bution is 2 Q peak, while the parallel S|| (~q) component has also a small peak in the center. Fig. 7 (b) is for the magnetic field value of h = 0 .51, and this corresponds to the yellow region of the scalar chirality map presented in Fig. 2. As seen in the local chirality plot, the contribution of the red regions rises, consistent with the rising total chirality. Spin configuration and the local chirality map are shown in Fig. 8(a) for the 3 Q state at 
+
+h = 1 .51. Only core-down merons remain in the lattice. This texture manifests as blue dots on a red background in the local chirality map. The upward-directed spins between these merons, induced by the high magnetic field, separate the large-radius merons. Examining the perpendicular and parallel contributions of the structure factor, a weak multiple-Q peak is observed near the 90
+
+10 
+
+20 
+
+30 
+
+40 
+
+50 
+
+0 10 20 30 40 50 
+
+> y
+> x
+
+−1 
+
+−0.8 
+
+−0.6 
+
+−0.4 
+
+−0.2 
+
+0
+
+0.2 
+
+0.4 
+
+0.6 
+
+0.8 
+
+1
+
+> (a) h/J=0
+
+0
+
+10 
+
+20 
+
+30 
+
+40 
+
+50 
+
+0 10 20 30 40 50 
+
+> y
+> x
+
+−1 
+
+−0.8 
+
+−0.6 
+
+−0.4 
+
+−0.2 
+
+0
+
+0.2 
+
+0.4 
+
+0.6 
+
+0.8 
+
+1
+
+> (b) h/J=0.21
+
+0 10 20 30 40 50 x
+
+0
+
+10 
+
+20 
+
+30 
+
+40 
+
+50 
+
+> y
+> −0.6
+> −0.4
+> −0.2
+> 0
+> 0.2
+> 0.4
+> 0.6
+
+0 10 20 30 40 50 x
+
+0
+
+10 
+
+20 
+
+30 
+
+40 
+
+50 
+
+> y
+> −1
+> −0.8
+> −0.6
+> −0.4
+> −0.2
+> 0
+> 0.2
+
+0
+
+10 
+
+20 
+
+30 
+
+40 
+
+50 
+
+0 10 20 30 40 50 
+
+> y
+> x
+
+−1 
+
+−0.8 
+
+−0.6 
+
+−0.4 
+
+−0.2 
+
+0
+
+0.2 
+
+0.4 
+
+0.6 
+
+0.8 
+
+1
+
+> (c) h/J=0.41
+
+0
+
+10 
+
+20 
+
+30 
+
+40 
+
+50 
+
+0 10 20 30 40 50 
+
+> y
+> x
+
+−1 
+
+−0.8 
+
+−0.6 
+
+−0.4 
+
+−0.2 
+
+0
+
+0.2 
+
+0.4 
+
+0.6 
+
+0.8 
+
+1
+
+> (d) h/J=0.71
+
+0 10 20 30 40 50 x
+
+0
+
+10 
+
+20 
+
+30 
+
+40 
+
+50 
+
+> y
+> −0.9
+> −0.8
+> −0.7
+> −0.6
+> −0.5
+> −0.4
+> −0.3
+> −0.2
+> −0.1
+> 0
+> 0.1
+
+0 10 20 30 40 50 x
+
+0
+
+10 
+
+20 
+
+30 
+
+40 
+
+50 
+
+> y
+> −1.4
+> −1.2
+> −1
+> −0.8
+> −0.6
+> −0.4
+> −0.2
+> 0
+> 0.2
+
+Figure 5: Real-space spin configurations (top panel) and real-space local chirality (bottom panel) corresponding to that configuration. Snapshots for K/J = 0 and D/J = 1 for selected magnetic field values (a) h/J = 0 .0, (b) h/J = 0 .21, (c) h/J = 0 .41, (d) h/J = 0 .71, respectively. 10 0
+
+10 
+
+20 
+
+30 
+
+40 
+
+50 
+
+0 10 20 30 40 50 
+
+> y
+
+x
+
+−1 
+
+−0.8 
+
+−0.6 
+
+−0.4 
+
+−0.2 
+
+0
+
+0.2 
+
+0.4 
+
+0.6 
+
+0.8 
+
+1
+
+(a) h/J=0 
+
+0
+
+10 
+
+20 
+
+30 
+
+40 
+
+50 
+
+0 10 20 30 40 50 
+
+> y
+
+x
+
+−1 
+
+−0.8 
+
+−0.6 
+
+−0.4 
+
+−0.2 
+
+0
+
+0.2 
+
+0.4 
+
+0.6 
+
+0.8 
+
+1
+
+(b) h/J=0.06 
+
+0 10 20 30 40 50 x
+
+0
+
+10 
+
+20 
+
+30 
+
+40 
+
+50 
+
+> y
+> −1
+> −0.8
+> −0.6
+> −0.4
+> −0.2
+> 0
+> 0.2
+> 0.4
+> 0.6
+> 0.8
+
+0 10 20 30 40 50 x
+
+0
+
+10 
+
+20 
+
+30 
+
+40 
+
+50 
+
+> y
+> −1
+> −0.8
+> −0.6
+> −0.4
+> −0.2
+> 0
+> 0.2
+
+0
+
+10 
+
+20 
+
+30 
+
+40 
+
+50 
+
+0 10 20 30 40 50 
+
+> y
+
+x
+
+−1 
+
+−0.8 
+
+−0.6 
+
+−0.4 
+
+−0.2 
+
+0
+
+0.2 
+
+0.4 
+
+0.6 
+
+0.8 
+
+1
+
+(c) h/J=0.11 
+
+0
+
+10 
+
+20 
+
+30 
+
+40 
+
+50 
+
+0 10 20 30 40 50 
+
+> y
+
+x
+
+−1 
+
+−0.8 
+
+−0.6 
+
+−0.4 
+
+−0.2 
+
+0
+
+0.2 
+
+0.4 
+
+0.6 
+
+0.8 
+
+1
+
+(d) h/J=0.21 
+
+0 10 20 30 40 50 x
+
+0
+
+10 
+
+20 
+
+30 
+
+40 
+
+50 
+
+> y
+> −1
+> −0.9
+> −0.8
+> −0.7
+> −0.6
+> −0.5
+> −0.4
+> −0.3
+> −0.2
+> −0.1
+> 0
+> 0.1
+
+0 10 20 30 40 50 x
+
+0
+
+10 
+
+20 
+
+30 
+
+40 
+
+50 
+
+> y
+> −1.6
+> −1.4
+> −1.2
+> −1
+> −0.8
+> −0.6
+> −0.4
+> −0.2
+> 0
+> 0.2
+
+Figure 6: Real-space spin configurations (top panel) and real-space local chirality (bottom panel) corresponding to that configuration. Snapshots for K/J = 1 (easy-axis) and D/J = 1 for selected (a) h/J = 0, (b) h/J = 0 .06, (c) h/J = 0 .11, (d) h/J = 0 .21 respectively. 11 center. The z-component of the structure factor has a 1 Q state with only a prominent peak at the center. As the diameters of the down-core merons increase and they approach each other, they cancel out the up-core antimerons between them. The real-space spin configurations for high easy-plane anisotropy K/J = −1.2 and D/J = 1 for higher magnetic field can be seen in Fig. 8(b) for h/J = 1 .81. This corresponds to the boundary between the light-blue and dark-blue regions in Fig. 2. The spin texture exhibits a vortex-like structure in some regions. Here, the xy components of the spins form vortices, while the z component is always positive. The xy S ⊥(~q) and parallel to z component S|| (~q) of the structure factor can have varying peak values. The two observed peaks arise from the dynamics of domain-wall merons. In a high magnetic field, there is no creation or annihilation of merons; instead, the bimeron cluster rotates clockwise. In contrast, in a low-field situation, merons and antimerons are continuously created and annihilated, consistent with the rotational motion of the domain boundaries. The MAX phase undergoes rotations, as expected for conventional skyrmions [40]. In the literature, several studies have investigated the magnetic phase behavior of chiral magnets with easy-plane anisotropy and reported the emergence of various topological spin textures [41, 42, 43]. In particular, theoretical studies have shown that strong easy-plane anisotropy can stabilize bimeron-type structures and related meron–antimeron configurations. These phases may emerge through transformations of conventional skyrmion lattices as the anisotropy strength increases, accompanied by the nucleation and recombination of merons and antimerons [43]. Isolated skyrmions and their transformation into bimeron-type textures have also been demon-strated in confined magnetic structures such as multilayer ferromagnetic disks [44]. Furthermore, previous micromagnetic studies reported that easy-plane magnetocrystalline anisotropy can stabi-lize non-axisymmetric skyrmionic textures in chiral magnetic thin films [46]. Our results are consistent with these findings. In our simulations, increasing easy-plane anisotropy drives the system from spiral textures toward ordered MAX phase, confirming that easy-plane anisotropy plays a key role in stabilizing bimeron-type topological textures in chiral magnetic systems. 12 0
+
+## 10 
+
+## 20 
+
+## 30 
+
+## 40 
+
+## 50 
+
+## 0 10 20 30 40 50 
+
+> y
+
+x
+
+## −1 
+
+## −0.8 
+
+## −0.6 
+
+## −0.4 
+
+## −0.2 
+
+## 0
+
+## 0.2 
+
+## 0.4 
+
+## 0.6 
+
+## 0.8 
+
+## 1
+
+(a) h/J=0.11 
+
+## 0
+
+## 10 
+
+## 20 
+
+## 30 
+
+## 40 
+
+## 50 
+
+## 0 10 20 30 40 50 
+
+> y
+
+x
+
+## −1 
+
+## −0.8 
+
+## −0.6 
+
+## −0.4 
+
+## −0.2 
+
+## 0
+
+## 0.2 
+
+## 0.4 
+
+## 0.6 
+
+## 0.8 
+
+## 1
+
+(b) h/J=0.51 
+
+0 10 20 30 40 50 x
+
+0
+
+10 
+
+20 
+
+30 
+
+40 
+
+50 
+
+> y
+> −1.2
+> −1
+> −0.8
+> −0.6
+> −0.4
+> −0.2
+> 0
+> 0.2
+> 0.4
+> 0.6
+> 0.8
+> 1
+
+0 10 20 30 40 50 x
+
+0
+
+10 
+
+20 
+
+30 
+
+40 
+
+50 
+
+> y
+> −1.4
+> −1.2
+> −1
+> −0.8
+> −0.6
+> −0.4
+> −0.2
+> 0
+> 0.2
+> 0.4
+> 0.6
+
+Figure 7: The real-space spin configurations for K/J = −1.2 and D/J = 1 for selected (a) 
+
+h/J = 0 .11, (b) h/J = 0 .51 from left to the right. The middle panel displays the real-space local chirality map corresponding to that configuration. The perpendicular S⊥(~q) and parallel 
+
+S|| (~q) components of the static structure factor with the corresponding structure are shown in the bottom panel. 13 0
+
+## 10 
+
+## 20 
+
+## 30 
+
+## 40 
+
+## 50 
+
+## 0 10 20 30 40 50 
+
+> y
+
+x
+
+## −1 
+
+## −0.8 
+
+## −0.6 
+
+## −0.4 
+
+## −0.2 
+
+## 0
+
+## 0.2 
+
+## 0.4 
+
+## 0.6 
+
+## 0.8 
+
+## 1
+
+(a) h/J=1.51 
+
+## 0
+
+## 10 
+
+## 20 
+
+## 30 
+
+## 40 
+
+## 50 
+
+## 0 10 20 30 40 50 
+
+> y
+
+x
+
+## −1 
+
+## −0.8 
+
+## −0.6 
+
+## −0.4 
+
+## −0.2 
+
+## 0
+
+## 0.2 
+
+## 0.4 
+
+## 0.6 
+
+## 0.8 
+
+## 1
+
+(b) h/J=1.81 
+
+0 10 20 30 40 50 x
+
+0
+
+10 
+
+20 
+
+30 
+
+40 
+
+50 
+
+> y
+> −1.6
+> −1.4
+> −1.2
+> −1
+> −0.8
+> −0.6
+> −0.4
+> −0.2
+> 0
+> 0.2
+
+0 10 20 30 40 50 x
+
+0
+
+10 
+
+20 
+
+30 
+
+40 
+
+50 
+
+> y
+> −1.6
+> −1.4
+> −1.2
+> −1
+> −0.8
+> −0.6
+> −0.4
+> −0.2
+> 0
+> 0.2
+
+Figure 8: The real-space spin configurations for K/J = −1.2 and D/J = 1 for selected (a) 
+
+h/J = 1 .51, (b) h/J = 1 .81 from left to the right. The middle panel displays the real-space local chirality map corresponding to that configuration. The perpendicular S⊥(~q) and parallel 
+
+S|| (~q) components of the static structure factor with the corresponding structure are shown in the bottom panel. 14 5 Conclusions 
+
+In this work, we investigated the formation of skyrmion and bimeron phases in square-lattice ferromagnetic bilayer nanostructures using Monte Carlo simulations. We identify bimerons as the primary topological agents mediating structural phase transitions in easy-plane bilayer magnets. These simulations account for the competition between interlayer exchange interaction, the DMI, an external magnetic field, and the easy-axis/easy-plane magnetic anisotropies. The total scalar chirality map is constructed in the ( K/J − h/J ) parameter space for the value of D/J = 1, based on both real-space spin configurations and the evaluation of total scalar chirality. From this map and detailed investigation at some selected representative points in ( K/J − h/J ) plane, distinct magnetic configurations including ferromagnetic states, skyrmion lattices, and MAX phase. Our results demonstrate that the transition from easy-axis to easy-plane anisotropy drives a continuous transformation from skyrmions to bimeron-type textures. An important finding of this study is that the bilayer geometry is not equivalent to a thicker monolayer. The interlayer exchange interaction correlates the topological cores in the two layers and increases the energetic cost of local collapse of topological defects. As a consequence, bimeron and MAX phases occupy a significantly wider region of the phase diagram compared to typical monolayer behavior. The single-layer model approximates the weak-coupling limit of the bilayer system. We further showed that the stability of these topological textures is governed by the combined effect of anisotropy and magnetic field: strong perpendicular anisotropy favors skyrmions, whereas reduced anisotropy stabilizes in-plane textures and promotes bimeron formation. This transfor-mation occurs through a narrow, bridge-like nanotrack junction connecting the easy-axis region to the easy-plane region, as shown in previous studies in [10, 23, 45]. These results indicate that coupled magnetic layers provide an additional stabilization mecha-nism for bimeron-type textures and may serve as a useful platform for realizing robust topological spin structures in magnetic heterostructures. These findings deepen understanding of anisotropy-driven topological phase transitions and provide design principles for controllable skyrmion-based nanodevices. 
+
+# Acknowledgment 
+
+One of the authors (G¨ ul¸ sen Do˘ gan) thanks to T ¨UB ˙ITAK’s Directorate of Scientist Support Pro-grams (B ˙IDEB) for receiving support from the 2211-C Priority Area Domestic Doctoral Scholar-ship Program and T ¨UB ˙ITAK for supervising her thesis within the subfield of ”Micro/Nano/Opto-Electromechanical Systems” and ”Information and Communication Technologies”. 15 References 
+
+[1] Skyrme, T. H. R. (1962). A unified field theory of mesons and baryons. Nuclear Physics, 31, 556-569. [2] Bogdanov, A. N., Yablonskii, D. A. (1989). Thermodynamically stable “vortices” in magnet-ically ordered crystals. The mixed state of magnets. Zh. Eksp. Teor. Fiz, 95(1), 178. [3] Dzyaloshinsky, I. (1958). A thermodynamic theory of “weak” ferromagnetism of antiferromag-netics. Journal of physics and chemistry of solids, 4(4), 241-255. [4] Moriya, T. (1960). Anisotropic superexchange interaction and weak ferromagnetism. Physical review, 120(1), 91. [5] Bogdanov, A., and Hubert, A. (1994). Thermodynamically stable magnetic vortex states in magnetic crystals. Journal of magnetism and magnetic materials, 138(3), 255-269. [6] Bocdanov, A., and Hubert, A. (1994). The properties of isolated magnetic vortices. physica status solidi (b), 186(2), 527-543. [7] Bogdanov, A. N., and R¨ oßler, U. K. (2001). Chiral symmetry breaking in magnetic thin films and multilayers. Physical Review Letters, 87(3), 037203. [8] Roessler, U. K., Bogdanov, A. N., and Pfleiderer, C. (2006). Spontaneous skyrmion ground states in magnetic metals. Nature, 442(7104), 797-801. [9] Muhlbauer, S., Binz, B., Jonietz, F., Pfleiderer, C., Rosch, A., Neubauer, A., and Boni, P. (2009). Skyrmion lattice in a chiral magnet. Science, 323(5916), 915-919. [10] Romming, N., Hanneken, C., Menzel, M., Bickel, J. E., Wolter, B., Von Bergmann, K., and Wiesendanger, R. (2013). Writing and deleting single magnetic skyrmions. Science, 341(6146), 636-639. [11] Leonov, A. O., Monchesky, T. L., Romming, N., Kubetzka, A., Bogdanov, A. N., and Wiesen-danger, R. (2016). The properties of isolated chiral skyrmions in thin magnetic films. New Journal of Physics, 18(6), 065003. [12] Romming, N., Kubetzka, A., Hanneken, C., von Bergmann, K., and Wiesendanger, R. (2015). Field-dependent size and shape of single magnetic skyrmions. Physical Review Letters, 114(17), 177203. [13] Bessarab, P. F., Muller, G. P., Lobanov, I. S., Rybakov, F. N., Kiselev, N. S., J´ onsson, H., and Delin, A. (2018). Lifetime of racetrack skyrmions. Scientific reports, 8(1), 3433. [14] Morshed, M. G., Vakili, H., and Ghosh, A. W. (2022). Positional stability of skyrmions in a racetrack memory with notched geometry. Physical Review Applied, 17(6), 064019. [15] Fert, A., Cros, V., and Sampaio, J. (2013). Skyrmions on the track. Nature nanotechnology, 8(3), 152-156. [16] Heinze, S., Von Bergmann, K., Menzel, M., Brede, J., Kubetzka, A., Wiesendanger, R., and Bl¨ ugel, S. (2011). Spontaneous atomic-scale magnetic skyrmion lattice in two dimensions. nature physics, 7(9), 713-718. [17] Koshibae, W., and Nagaosa, N. (2017). Theory of skyrmions in bilayer systems. Scientific reports, 7(1), 42645. [18] G¨ obel, B., Mertig, I., and Tretiakov, O. A. (2021). Beyond skyrmions: Review and perspectives of alternative magnetic quasiparticles. Physics Reports, 895, 1-28. [19] Bera, S., and Mandal, S. S. (2019). Theory of the skyrmion, meron, antiskyrmion, and an-timeron in chiral magnets. Physical Review Research, 1(3), 033109. 16 [20] Ezawa, M. (2011). Compact merons and skyrmions in thin chiral magnetic films. Physical Review B—Condensed Matter and Materials Physics, 83(10), 100408. [21] Lin, S. Z., Saxena, A., and Batista, C. D. (2015). Skyrmion fractionalization and merons in chiral magnets with easy-plane anisotropy. Physical Review B, 91(22), 224407. [22] Yu, X. Z., Koshibae, W., Tokunaga, Y., Shibata, K., Taguchi, Y., Nagaosa, N., and Tokura, Y. (2018). Transformation between meron and skyrmion topological spin textures in a chiral magnet. Nature, 564(7734), 95-98. [23] Zhang, X., Ezawa, M., and Zhou, Y. (2015). Magnetic skyrmion logic gates: conversion, duplication and merging of skyrmions. Scientific Reports, 5(1), 1-8. [24] Hayami, S., and Yambe, R. (2021). Meron-antimeron crystals in noncentrosymmetric itinerant magnets on a triangular lattice. Physical Review B, 104(9), 094425. [25] Banerjee, S., Rowland, J., Erten, O., and Randeria, M. (2014). Enhanced stability of skyrmions in two-dimensional chiral magnets with Rashba spin-orbit coupling. Physical Re-view X, 4(3), 031045. [26] Flacke, L., Ahrens, V., Mendisch, S., K¨ orber, L., B¨ ottcher, T., Meidinger, E., and Weiler, M. (2021). Robust formation of nanoscale magnetic skyrmions in easy-plane anisotropy thin film multilayers with low damping. Physical Review B, 104(10), L100417. [27] Chen, J. P., Zhang, D. W., and Liu, J. M. (2016). Exotic skyrmion crystals in chiral magnets with compass anisotropy. Scientific reports, 6(1), 29126. [28] Chen, J. P., Zhang, D. W., Chen, Y., Gao, X. S., and Liu, J. M. (2018). Compass-anisotropy-modulated helical states and skyrmion crystals in chiral magnets. Physics Letters A, 382(40), 2944-2951. [29] Hayami, S. (2021). In-plane magnetic field-induced skyrmion crystal in frustrated magnets with easy-plane anisotropy. Physical Review B, 103(22), 224418 [30] Hayami, S. (2022). Square skyrmion crystal in centrosymmetric systems with locally inversion-asymmetric layers. Journal of Physics: Condensed Matter, 34(36), 365802. [31] Hayami, S. (2024). Antiferro skyrmion crystals consisting of skyrmions and anti-skyrmions on a bilayer square lattice. Discover Applied Sciences, 6(10), 496. [32] Ghader, D., Jabakhanji, B., and Stroppa, A. (2022). Whirling interlayer fields as a source of stable topological order in moir´ e CrI3. Communications Physics, 5(1), 192. [33] Jabakhanji, B., and Ghader, D. (2024). Designing layered 2D skyrmion lattices in moir´ emagnetic heterostructures. Advanced Materials Interfaces, 11(2), 2300188. [34] Xu, Y., Ray, A., Shao, Y. T., Jiang, S., Lee, K., Weber, D., and Shan, J. (2022). Coexisting ferromagnetic–antiferromagnetic state in twisted bilayer CrI3. Nature nanotechnology, 17(2), 143-147. [35] Tong, Q., Liu, F., Xiao, J., and Yao, W. (2018). Skyrmions in the moir´ e of van der Waals 2D magnets. Nano Letters, 18(11), 7194-7199. [36] Xiao, F., Chen, K., and Tong, Q. (2021). Magnetization textures in twisted bilayer Cr X 3 (X= Br, I). Physical Review Research, 3(1), 013027. [37] M. E. J. Newman, G. T. Barkema (2001), Monte Carlo Methods in Statistical Physics, Claren-don Press (Oxford). [38] Binder, K. (2022). Monte Carlo simulations in statistical physics. In Statistical and nonlinear physics (pp. 85-97). New York, NY: Springer US. 17 [39] Shukaili, S. A., Berrai, I., Ma’Mari, F. A., Ramu, M., Bhatti, S., Zar Myint, M. T., and Sbiaa, R. (2024). Magnetic textures and perpendicular anisotropy in asymmetric multilayers with Ta and W. Applied Physics Letters, 125(22). [40] Leonov, A. O. (2024). Meron-mediated phase transitions in quasi-two-dimensional chiral mag-nets with easy-plane anisotropy: successive transformation of the hexagonal skyrmion lattice into the square lattice and into the tilted FM state. Nanomaterials, 14(18), 1524. [41] Murooka, R., Leonov, A. O., Inoue, K., and Ohe, J. I. (2020). Current-induced shuttlecock-like movement of non-axisymmetric chiral skyrmions. Scientific Reports, 10(1), 396. [42] Rowland, J., Banerjee, S., and Randeria, M. (2016). Skyrmions in chiral magnets with Rashba and Dresselhaus spin-orbit coupling. Physical Review B, 93(2), 020404. [43] Mukai, N., and Leonov, A. O. (2024). “Polymerization” of bimerons in quasi-two-dimensional chiral magnets with easy-plane anisotropy. Nanomaterials, 14(6), 504. [44] Ohara, K., Zhang, X., Chen, Y., Kato, S., Xia, J., Ezawa, M., and Liu, X. (2022). Reversible transformation between isolated skyrmions and bimerons. Nano Letters, 22(21), 8559-8566. [45] G¨ obel, B., and Mertig, I. (2021). Skyrmion ratchet propagation: utilizing the skyrmion Hall effect in AC racetrack storage devices. Scientific reports, 11(1), 3020. [46] Vousden, M., Albert, M., Beg, M., Bisotti, M. A., Carey, R., Chernyshenko, D., and Fangohr, H. (2016). Skyrmions in thin films with easy-plane magnetocrystalline anisotropy. Applied Physics Letters, 108(13). 18

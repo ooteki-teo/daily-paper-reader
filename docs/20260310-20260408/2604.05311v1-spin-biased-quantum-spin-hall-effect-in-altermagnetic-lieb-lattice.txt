@@ -1,0 +1,1270 @@
+Title: Lieb-QSHE-260127-new-Wu
+
+URL Source: https://arxiv.org/pdf/2604.05311v1
+
+Published Time: Wed, 08 Apr 2026 00:20:43 GMT
+
+Number of Pages: 17
+
+Markdown Content:
+> 1
+
+Spin -biased Quantum Spin Hall Effect in Altermagnetic Lieb Lattice              
+
+> Qianjun Wang a,b ,Ruqian Wu c, *Jun Hu b,†
+> aSchool of Physical Science and Technology, Soochow University, Suzhou 215006 , China
+> bInstitute of High Pressure Physics, School of Physical Science and Technology, Ningbo
+> University, Ningbo 315211 , China
+> cDepartment of Physics and Astronomy ,University of California, Irvine, California 92697, USA
+
+Altermagnetic (AM) order , a recently discovered magnetic state, has attracted intense 
+
+research i nterest for its potential applications in spintronic and quantum technologies .
+
+Here, we theoretical ly investigate the AM state in the Lieb lattice, a prototyp ical two -
+
+dimensional lattice , using the Hubbard model . We show that AM order emerges with 
+
+only moderate electronic correlations. Strikingly , spin -orbit coupling drives the system 
+
+into a topological phase exhibiting a new quantum spin Hall effect (QSHE) with spin -
+
+biased topological edge states in one -dimensional nanoribbons. These edge states 
+
+possess different localization s and velocities , and hence may produce spin and charge 
+
+currents , fundamental ly di stinc t from th at in conventional topological insulators with 
+
+spin degeneracy . This novel spin -biased QSHE in the AM Lieb lattice unveils exciting 
+
+opportunities for both fundamental studies and innovative device concepts, motivating 
+
+immediate experimental exploration .  
+
+> *Email: wur@uci.edu
+> †Email: hujun2@nbu.edu.cn 2
+
+Altermagnetism represent s a new symmetry distinct class of magnetic order, arising 
+
+from an expanded classification of antiferromagnetic (AFM) materials that we re 
+
+traditionally characterized solely by their compensated spin moments. In altermagnetic 
+
+(AM) order, however, the two opposite magnetic sublattices are connected by rotation 
+
+or mirror symmetries , rather than by inversion or translation symmetries as in 
+
+conventional collinear AFM material s. This key symmetry distinction gives rise to non -
+
+relativistic momentum -dependent spin splitting , a feature typically associated with 
+
+ferromagnetic (FM) materials 1,2. As a result, altermagnets simultaneously break time -
+
+reversal symmetry (TRS) and maintain zero net magnetization , combin ing advantage s
+
+of both FM and AFM state s in a single phase . This dual character has attracted great 
+
+fundamental interest in condensed matter physics and materials science , as it supports 
+
+robust spin polarization with out stray fields and opens pathways to low -dissipation and 
+
+high -coherence spin transport for next -generation spintronic applications 3,4,5,6.
+
+Consequently, extensive efforts have focused on explor ing realistic AM materials . So 
+
+far, several material s, including MnTe 7,8,9, CrSb 10 ,11 ,12 , and Mn 5Si 313 , have been 
+
+experimentally con firmed as altermagnets, while the proposed AM order in RuO 2
+
+remains under active debate 14 ,15 . More recently , the altermagnetism framework has 
+
+been generalized to include non -colinear AFM material s, further expanding the 
+
+landscape of candidate materials and broadening the range of accessible spintronic 
+
+functionalities 16 ,17 ,18 .
+
+In p arallel, researchers have also explored the possibility of realizing AM order in 
+
+two -dimensional (2D) systems through theoretical models and first -principles 
+
+calculations , motivated by the tunability and integrability of 2D materials for 
+
+development of nanoscale electronic and spintronic devices 19 ,20 . Although the pristine 
+
+honeycomb lattice is centrosymmetr ic and thus pr ohibi ts the existence of AM order, a
+
+modified honeycomb lattice with specific dimerization of nearest -neighboring spins 
+
+may host AM order and exhibit topological features , such as Dirac or Weyl states and 
+
+quantum spin or anomalous Hall effect s, as predicted via tight -binding model s21 ,22 .
+
+First -principles calculations have further demonstrated that MnPX 3 (X = S, Se) , which 
+
+hosts a honeycomb Mn sublattice , can be t ransform ed in to an altermagnet when 
+
+inversion symmetry is lifted, for example, through Janus structure s or by interfacing 
+
+with suitable substrate s23 ,24 ,25 . Additionally, twisted van der Waals ( vd W) bilayer s of 
+
+honeycomb -lattice -based materials may also develop AM order due to twist -induced 
+
+centrosymmetry breaking 26 ,27 ,28 ,29 , with certain systems predicted to exhibit the 3
+
+quantum spin Hall effect (QSHE) 28 .
+
+Furthermore , the pristine Lieb lattice provide s an ideal platform for realizing AM 
+
+order when its B and C sublattices carry opposite spins [ see Fig. 1(a)], as it naturally 
+
+satisfies the symmetr y criteria required for altermagnetism 30 ,31 ,32 ,33 . In deed , several 2D 
+
+vd W materials predicted to be altermagnets can be viewed as derivatives of the Lieb 
+
+lattice , m any of which also exhibit notable topological characteristic s33 ,34 ,35 ,36 ,37 ,38 ,39 .
+
+However, the experimental realization of genuinely 2D Lieb -lattice -based altermagnets 
+
+has remain ed elusive . Interestingly, the Lieb lattice serve s as the key structur al motif in 
+
+the quasi -2D altermagnets KV 2Se 2O40 , RbV 2Te 2O41 , Cs 1−δ V2Te 2O42 , and 
+
+La 2O3Mn 2Se 243 , suggesting its strong potential for realiz ing 2D AM phase s. Prior 
+
+theoretical work based on the Hubbard model primarily focused on the regime of strong 
+
+elec tr onic correlat ion s32 . The nature of AM order under weak and moderate electronic 
+
+correlations and the possible emergence of topological features remains largely 
+
+unexplored .
+
+In this Letter, we use the Hubbard model to investigate the electronic and magnetic 
+
+properties of the Lieb lattice in the regime of weak -to -moderate electronic correlations .
+
+By tuning the onsite chemical potentials and interaction strength, we identify three 
+
+distinct phases : a nonmagnetic (NM) metal, an AM metal and an AM insulator. 
+
+Intr igui ngly, the inclusion of spin -orbit coupling (SOC) drive s the AM metal into an 
+
+insulat ing state , opening a band gap that scale s linearly with the SOC strength. 
+
+Moreover , for AM insulators with small intrinsic gaps, SOC induces a band inversion. 
+
+Both categories of SOC -driven insulating states are topological insulators (TIs) that 
+
+host QSHE , representing a new class of topological AM materials .
+
+We start by analyzing the Hamiltonian of the Lieb -lattice Hubbard model , which 
+
+takes the form 
+
+𝐻 " = 𝐻 "$ + 𝐻 "& + 𝐻 "'( . (1)
+
+The first term 𝐻 "$ describes the nearest - and next -nearest -neighbor hopping as well as 
+
+the onsite energy :
+
+𝐻 "$ = 𝑡 / 0 𝑐 23 
+
+> 4
+> ⟨2,7⟩,3
+
+𝑐 73 + 𝑡 9 0 𝑐 23 
+
+> 4
+> ⟨⟨2,7⟩⟩,3
+
+𝑐 73 + Δ
+
+2 0 𝑛 23 
+
+> 2∈>,3
+
+− Δ
+
+2 0 𝑛 23 
+
+> 2∈@,A,3
+
+. (2)
+
+Here, 𝑐 23  
+
+> 4
+
+(𝑐 23 ) creates (a nni hilates) an electron with spin 𝜎 at site i, and 𝑛 23 denotes 
+
+the electron number operator . The parameters 𝑡 / and 𝑡 9 stand for the nearest - and 4
+
+next -nearest -neighbor hopping amplitude s, respectively . We set 𝑡 / = −𝑡 and 𝑡 9 =
+
+−0.1𝑡 , wh ere 𝑡 > 0 define s the magnitude of the nearest -neighbor hopping energy 
+
+and serves as the energy unit throughout this work . The parameter Δ measures the 
+
+onsite potential difference between the A and B/C sublattices , with Δ > 0 indicating 
+
+that electrons prefer entially occupy the B and C sites. In the AM order , the B and C 
+
+sublattices carry opposite spins, which naturally break s the fourfold symmetry of each 
+
+spin channel .
+
+The second term , 𝐻 "&, represent s the local onsite Coulomb repulsion U acting on the 
+
+B and C sublattices 32 :
+
+𝐻 "& = 𝑈 0 𝑛 2,↑𝑛 2,↓
+
+> 2∈@,A
+
+. (3)
+
+A s econd -order perturbation expansion in 𝑡 /𝑈 yields an effective Heisenberg 
+
+interaction with exchange 𝐽 = KL! 
+
+> &
+
+> 0. This superexchange interaction energetically 
+
+favors antiferromagnetic alignment between the B and C sublattices, which is essential 
+
+for establishing the altermagnetic order because these sites ar e related by rotation and 
+
+mirror symmetries of the Lieb lattice. 
+
+The third term , 𝐻 "'( , accounts for the SOC effect. In two -dimensional systems , SOC 
+
+can generally be decomposed into intrinsic and Rashba components 44 . For systems 
+
+possessing out -of -plane mirror symmetry with respect to the xy -plane, the Rashba term 
+
+vanishes. As a result, the z-component of spin (𝑆 N) is conserved, and 𝐻 "'( does not 
+
+induce spin -flip processes between the spin -up and spin -down channels. Moreover, 
+
+SOC arise s only between the B and C sublattices , because the A sites serve as centers 
+
+of the rotational C 4v symmetry . Under these symmetry constraints , 𝐻 "'( in the Lieb 
+
+lattice can therefore be expressed in the form of the Kane -Mele mode l44 :
+
+𝐻 "'( = 𝑖𝜆 0 (𝒅 2 × 𝒅 7 )N𝜎 ST  
+
+> N
+
+𝑐 2S  
+
+> 4
+
+𝑐 7T 
+
+> ⟨⟨2S ,7T ⟩⟩
+
+, (4)
+
+wh ere 𝜆 denotes the SOC strength, 𝜎 N is the Pauli matrix , and 𝒅 2 is the unit ve ctor 
+
+point ing from the A site t oward the B or C site. 
+
+Since the emergence of AM order does not rely on SOC, we first set 𝜆 = 0 and 5
+
+focus on electron filling factor 𝑛 = 2 under weak and moderate correlations with 𝑈 <
+
+5𝑡 . Figure 1(b) displays the phase diagram of the electronic and magnetic state s with 
+
+varying Δ and 𝑈 . Three distinct phases are identified : (I) an NM metal, (II) an AM 
+
+me tal, and (III) an AM insulator. For weak correlation with 𝑈 < 0.7𝑡 , the system 
+
+remain s an NM metal over the whole range of Δ. As 𝑈 increases, the AM order 
+
+gradually develop s, and smaller values of Δ are required to stabilize it . The phase 
+
+boundary between the NM metal and AM metal can be approximately fitted by 
+
+(Δ − 0.5)(𝑈 − 0.3) = 1.8 . The AM metal lic phase pers ist s up to the boundary 
+
+described by (Δ − 0.4)(𝑈 − 0.1) = 6.1, beyond which the system transit s in to the AM 
+
+insulat ing phase. Representative band structures of these phases are shown in Fig. 1(c). 
+
+In the AM phase s, the bands along the Γ-M direction preserve TRS , whereas 
+
+pronounced spin splitting appears along other paths in the Brillouin zone . Additionally, 
+
+the bands near the Fermi level ( 𝐸 \ ) along the Γ-X-M path belong to spin -up electrons, 
+
+while those along the Γ-Y-M path belong to spin -down electrons. 
+
+Both the local spin moment ( 𝑀 ^) and electron occupanc y (𝑛 _) depend on Δ and 𝑈 ,
+
+as shown in Fig. 1(d) . For all selected values of Δ, 𝑀 ^ on either the B or C sublattice 
+
+remains zero at small 𝑈 , corresponding to the NM metallic phase. Once 𝑈 exceed s a
+
+critical threshold , which is larger for smaller Δ, the magnitude of 𝑀 ^ rapidly increases 
+
+and then gradual ly saturate s, indicating the onset of the AM phases . In contrast, 𝑛 _ on 
+
+the B/C site initially decreases and then increases with increasing 𝑈 at fix ed Δ. This 
+
+behavior or iginate s from electron transfer from the B /C site to the A site driven by 
+
+onsite Cou lomb repulsion , which becomes more significant for small Δ. For example, 
+
+𝑛 _ on the A site reaches 0.65 for Δ = 2𝑡 and 𝑈 = 2.7𝑡 . In the AM regime , however, 
+
+spin polarization mitigat es the onsite Coulomb repulsion on the B and C sites, while 
+
+the onsite potential difference Δ promote s electron s hop ping from the A site back to 
+
+the B and C sites . These cooperative effects reduc e the total energy, leading to an 
+
+increase in 𝑛 _ on the B and C sites with increasing 𝑈 .
+
+We next examine the influence of SOC on electronic propert ies . The band structures 
+
+of the NM metallic and AM insulating phases are only weakly affect ed , whereas the 
+
+AM metallic phase experiences significant modifications . As shown in Fig. 2(a) , SOC 
+
+opens a clear band gap at the crossing points near 𝐸 \ along the X -M and Y -M
+
+directions, in contrast to the gapless dispersion in the absence of SOC [Fig. 1(c)] .
+
+More over , SOC generates a global band gap across the entire Brillouin zone , as 
+
+evidenced by the three -dimensional band structures of the spin -up and spin -down 6
+
+channels in Fig. 2(c) and 2(d) . Interestingly , SOC opens additional indirect gap s in 
+
+opposite momentum directions for both spin channels , effectively transform ing the AM 
+
+metal into an AM insulator . The valence -band maximum (VBM) is located at the M 
+
+point and the conduction -band minimum (CBM) is at the X ( or Y) point. The global 
+
+band gap increases mono tonically with SOC stre ngth , as illustrated by the blue curve 
+
+in Fig. 2(b). In addition , the local SOC -induced gaps are significantly larger and more 
+
+sensitiv e to 𝜆 , reach ing 0.29 t at 𝜆 = 0.05 𝑡 , as indica ted by the red curve in Fig. 2(b) .
+
+It is important to note that this SOC -driven AM insulat ing phase differs fundamentally 
+
+from phase (III) in Fig. 1(b), which corresponds to a normal band insulator. 
+
+This observation leads to an intriguing question: is the SOC -induced AM state a TI? 
+
+To answer this, we calculated the Berry curvature Ω(𝐤 ) and Chern number ( 𝐶 )45 ,46 :
+
+Ω(𝐤 ) = −2 Im 0 0 e𝜓 n𝐤 g𝑣 ig𝜓 m𝐤 je𝜓 m𝐤 g𝑣 kg𝜓 n𝐤 j
+
+(𝜀 m𝐤 − 𝜀 n𝐤 )2
+
+> l∈{n}p∈{q}
+
+, (5)
+
+and 
+
+𝐶 = 1 
+
+> 2𝜋
+
+r Ω(𝐤 )d𝐤 
+
+> @t
+
+, (6)
+
+Here, {o} and {u} denoting the sets of occupied and unoccupied states, respectively .
+
+𝜓 v𝐤 and 𝜀 v𝐤 are the Bloch wave function and eigenvalue of the n-th state at wave 
+
+vector k, and 𝑣 i(k) is the velocity operator . The anomalous Hall conductance is 
+
+expressed as 𝜎 ik = 𝐶 𝑒 9/ℎ. Because of the conservation of 𝑆 N in our model, the spin -
+
+up and spin -down channels are decoupled. Therefore, the integration in Eq. (6) can be 
+
+carried out separately for the two spin channels, resulting in spin -resolved Chern 
+
+numbers 𝐶 z for the spin -up channel and 𝐶 { for the spin -down channel , respectively. 
+
+Accordingly , the total Chern number can be written as the sum of the two spin -resolved 
+
+contributions , 𝐶 = 𝐶 z + 𝐶 { , and the same additive relation holds for the Hall 
+
+conductance 47.
+
+Figure 3(a) displays the spin -resolved anomalous Hall conductance 𝜎 ik ,± for Δ =
+
+2𝑡 , 𝑈 = 3𝑡 , and 𝜆 = 0.01 t, 0.03 t, and 0.05 t. Remarkab ly, q uantized plateaus with 
+
+𝐶 ± = ±1 appear near 𝐸 \ in both spin channels , signify ing the emergence of a
+
+topological phase. However, since 𝐶 = 0, this topological state di ffer s from the typical 
+
+quantum anomalous Hall effect (QAHE) . In stead , the system 
+
+exhibits a nonzero integer spin Chern number : 𝐶 ' = (𝐶 z − 𝐶 {)/2 = 1, corresponding 7
+
+to a quantized spin Hall conductance 𝜎 ik  
+
+> '
+
+= 𝐶 '𝑒 9/ℎ = (𝜎 ik ,z − 𝜎 ik ,{)/2 , which 
+
+manifests this phase as a QSHE state 44 ,48 . Notably , since the TRS is intrinsically br oken 
+
+is the AM order , the QSHE realized here represent s a n ovel topological phase, di stinc t
+
+from th at observed in nonmagnetic TIs , where TRS must be broken by moderate 
+
+external perturbation s such as magnetic field s or impurities 48 ,49 ,50 . Fu rthermore, the 
+
+quantized values of 𝐶 ± , and hence 𝜎 ik  
+
+> '
+
+, remain robust even when moderate 
+
+perturbation to the out -of -plane mirror symmetry induces a finite Rashba SOC , similar 
+
+to the behavior observed in graphene 51 . A systematic investigation of this robustness 
+
+will be reported elsewhere .
+
+Note that symmetry plays a cr uci al role in realiz ing quantized 𝜎 ik ,± in the Lieb 
+
+lattice . Structurally, the B and C sublattices are connected by C4v and mirror symmetr ies ,
+
+result ing in identical band dispersion s along the kx and ky directions, as shown in Fig. 
+
+2(c) and 2(d). However, opposite spins on the B and C sublattices reduce the symmetry 
+
+to C 2v in each spin channel and hence all bands are spin -polarized in the entire 
+
+momentum space except along the diagonal Γ-M direction s. The Berry curvature 
+
+distributions in Fig. 3(b) and 3(c) reflect the symmetry reduction and the origin of 
+
+opposite Hall conductivities from the two spin channels . Accordingly, topologically 
+
+protected edge states are expected in one -dimensional (1D) nano ribbons 44 , especially 
+
+by cutting the Lieb lattice along the A -B or A -C directions. To verify this , we 
+
+constructed a nanoribbon with a width of 20.5 unit cells , periodic direction along the 
+
+A-C chains, and both edges terminat ed by an A -C chain [see the inset of Fig. 3( e)]. The 
+
+corresponding band structure for Δ = 2𝑡 , 𝑈 = 3𝑡 , and 𝜆 = 0.05 𝑡 is shown in Fig. 
+
+3(d). Indeed, two band s cross 𝐸 \ around the Y point , and the spatial distributions of 
+
+the ir wavefunctions in Fig. 3(e) indicate that they are strongly localized on edge s.
+
+For the same direction of propagation, different spin state s take opposite edge s [Fig. 
+
+3(e)] , a characteri stic feature of the QSHE , even though the underlying mechanism is 
+
+different from that in nonmagnetic TIs. In conventional nonmagnetic TIs, spin -up and 
+
+spin -down edge states on the same edge are degenerate in energy and possess opposite 
+
+wave vectors , resul ting in spin -unbiased edge transport . In contrast, the AM Lieb lattice 
+
+hos ts spin -biased edge states. Firstly, the spin -up and spin -down edge states are 
+
+nondegenerate in energy. Secondly, the wave vectors of the spin -up and spin -down edge 
+
+states on the same edge differ both in amplitude and direction. Third ly, the spin -up edge 
+
+state is more strongly localized. As a result, this spin -biased QSHE generate s not only 
+
+spin current s but also charge current s along the edges of the corresponding 1D 8
+
+nanoribbons. Accordingly , the resulting topological phase can b e classifi ed as AM 
+
+QSHE , consistent with recent report on altermagnets with C4z T symmetry 52 . We 
+
+emphasize that the emergence of the QSHE does not rely on a particular crystal 
+
+structure; rather, it is governed by SOC -induced band inversion that opens a topological 
+
+gap. However, the characteristics of the edge states are closely tied to the underlying 
+
+lattice symmetry. For example, the AM QSHE reported in Lieb -lattice -like systems, 
+
+such as the Nb 2SeTeO monolayer and Fe 2Se 2O multilayers, exhibit s nondegenerate 
+
+edge -state bands in the c orresponding 1D nanoribbons 36 ,53 , consistent with the spin -
+
+biased QSHE predicted in our Lieb -lattice model. In contrast , quantum spin Hall phases 
+
+in honeycomb -lattice -based AM systems preserve symmetries that protect Kramers 
+
+degeneracy at the edges, resulting in degenerate and spin -unbiased edge states that 
+
+resemble th ose in nonmagnetic TIs 28 ,54 . These similarities and distinctions therefore 
+
+originate from the specific symmetry properties of the honeycomb and Lieb lattices .
+
+Another interesting phenomenon is observed as we further increase U across the 
+
+phase boundary between the AM metal and AM insulator . In the AM metal lic phase 
+
+without SOC, two bands cross 𝐸 \ between the M and X (or Y ) points , leaving a gap 
+
+between the X 2 and X 3 energy levels [Fig. 1(c) ]. As the value of 𝑈 increases, these 
+
+intersect ing points move toward the X or Y point, so that the X 2-X3 gap closes and 
+
+reopens , but the system stays in the topologically trivial state . To ex plore SOC effect 
+
+near this phase boundary, we examine the electronic properties at Δ = 2𝑡 and 𝑈 =
+
+3.91 𝑡 . As shown in Fig . 4(a) , small gap s of 0.02 t appear at the X and Y points for the 
+
+spin -up and spin -down channels, respectively. When SOC is in tro duced , th ese gap s first 
+
+decrease with increasing 𝜆 , then close near 𝜆 = 0.05 𝑡 , and reopen at larger values of 
+
+𝜆 , as depicted in Fig. 4(b). For 𝜆 > 0.05 𝑡 , the SOC -induced band inversion suggest s a
+
+topological transition 55 . This is confirmed by the spin -resolved anomalous Hall 
+
+conductance 𝜎 ik ,± as shown in Fig. 4(c). For 𝜆 = 0.02 𝑡 , 𝜎 ik ,± is zero at 𝐸 \ ,
+
+indica ting a trivial insulat ing state . In contrast , for 𝜆 = 0.08 𝑡 , quantized plateau s with 
+
+𝜎 ik ,± = ±e2/h appear at 𝐸 \ , confirming the emergence of the AM QSHE. The spin -
+
+resolved Berry curvature distributions in Fig. 4(d) and 4(e) show that large Ω(𝐤 )
+
+values are strongly localized near the X and Y points for the two spin channels . These 
+
+results indicate that the AM QSHE is rather robust in a large range of U [Fig. 1(b)] .
+
+Obviously , the Lieb lattice provide s an ideal platform for realiz ing 2D AM order a nd 
+
+associated topological phases. We noted that the experimental realization of a
+
+freestanding AM Lieb lattice can be challenging, even though several quasi -2D 9
+
+altermagnets contain Lieb -lattice -based layer s40 ,41 ,43 , and a number of theoretically 
+
+proposed 2D altermagnets are derivatives of the Lieb lattice 33 ,34 ,35 ,36 ,37 ,38 . Nevertheless, 
+
+appropriate substrates may sta bilize a Lieb -lattice structure while preserv ing its 
+
+magnetic and topological properties , as achieved in other systems 56 ,57 ,58 . Furthermore ,
+
+analogous AM states can be also engineered in ultracold -atom system s59 or photo nic 
+
+crystals 60 . Therefore, our predictions have practical significance for realiz ing the 
+
+unusual AM QSHE state and guiding the design of spintronic and quantum devices . It 
+
+is worth emphasiz ing that the C 4v and mirror symmetr ies are fundamental symmetry 
+
+requirement s for establishing AM order in the Lieb lattice. Consequently, any external 
+
+perturbation that breaks these symmetries, such as uniaxial strain, can suppress the AM 
+
+order 61 . However, the QSHE may still be preserved under moderate uniaxial strain, 
+
+provided that SOC maintains a global band gap near 𝐸 \ . Importantly , the AM order in 
+
+the Lieb lattice is intrinsically robust under equilibrium conditions , where the C 4v and 
+
+mirror symmetries are energetically favor ed .
+
+In summary, we have investigated the electronic and magnetic properties of the Lieb 
+
+lattice with the Hubbard model for weak and moderate electronic correlations . At an 
+
+electron filling factor of n = 2 , the Lieb lattice may hos t three distinct phases depending 
+
+on Δ and 𝑈 : (I) an NM metal, (II) an AM metal, and (III) an AM insulator . The AM 
+
+phases appear when 𝑈 exceeds approximately 0.7 t. Significantly, the AM phase s can 
+
+be transformed into an unusual AM QSHE state by SOC in a large parameter space .
+
+This new TI state is characterized by quantized spin Hall conductance 𝜎 ik  
+
+> '
+
+= 𝑒 9/ℎ
+
+and the presence of spin -biased edge states . Our findings suggest th at 2D AM order and 
+
+controllable topological phases can be realized in Lieb -lattice platforms through 
+
+appropriate structure engineering .
+
+Acknowledgements 
+
+This work is supported by National Key Research and Development Program of China 
+
+(Grant No. 2023YFA1406200) , the Program for Science and Technology Innovation 
+
+Team in Zhejiang (Grant No. 2021R01004) , the start -up funding of Ningbo University 
+
+and Yongjiang Recruitment Project (432200942). 10 
+
+Reference s
+
+1. L. Šmejkal, J. Sinova, and T. Jungwirth, Beyond conventional ferromagnetism and 
+
+antiferromagnetism: A phase with nonrelativistic spin and crystal rotation symmetry, Phys. Rev. 
+
+X 12, 031042 (2022). 
+
+2. L. Šmejkal, J. Sinova, and T. Jungwirth, Emerging research landscape of altermagnetism, Phys. 
+
+Rev. X 12, 040501 (2022). 
+
+3. L. Bai, W . Feng, S . Liu, L . Šmejkal, Y . Mokrousov, and Y . Yao , Altermagnetism: Exploring 
+
+new frontiers in magnetism and spintronics , Adv. Funct. Mater. 34 , 2409327 (2024 ). 
+
+4. C. Song, H. Bai, Z. Zhou, L. Han, H. Reichlova, J. H. Dil, J. Liu, X. Chen, and F. Pan, 
+
+Altermagnets a s a new class of functional materials , Nat . Rev . Mater . 10, 473 (2025) .
+
+5. R. Tamang, S. Gurung, D. P. Rai, S. Brahimi, and S. Lounis, Altermagnetism and altermagnets: 
+
+A brief review , Magnetism 5, 17 (2025 ). 
+
+6. T. Jungwirth, J. Sinova, P. Wadley, D. Kriegner, H. Reichlova, F. Krizek, H. Ohno, L. Smejkal ,
+
+Altermagnetic spintronics , arXiv:2508.09748 (2025). 
+
+7. S. W. Lovesey, D. D. Khalyavin1, and G. van der Laan, Templates for magnetic symmetry and 
+
+altermagnetism in hexagonal MnTe, Phys. Rev. B 108, 174437 (2023). 
+
+8. S. Lee, S.e Lee, S . Jung, J . Jung, D . Kim, Y . Lee, B . Seok, J . Kim, B . G. Park , L. Šmejkal, C. -
+
+J. Kang, and C. Kim, Broken Kramers degeneracy in altermagnetic MnTe , Phys. Rev. Lett. 132 ,
+
+036702 (2024). 
+
+9. J. Krempask ý, L. Šmejkal , S. W. D’Souza, M. Hajlaoui, G. Springholz, K. Uhlí řová, F. Alarab, 
+
+P. C. Constantinou, V. Strocov, D. Usanov, W. R. Pudelko, R. González -Hernández, A. Birk 
+
+Hellenes, Z. Jansa, H. Reichlová, Z. Šobá ň, R. D. Gonzalez Betancourt, P. Wadley, J. Sinova, 
+
+D. Kr iegner, J. Minár, J. H. Dil, and T. Jungwirth, Altermagnetic lifting of Kramers spin 
+
+degeneracy, Nature 626, 517 (2024). 
+
+10. J. Ding, Z. Jiang, X. Chen, Z. Tao, Z. Liu, T . Li, J . Liu, J . Sun, J . Cheng , J. Liu, Y. Yang, R. 
+
+Zhang, L. Deng, W. Jing, Y. Huang, Y. Shi, M. Ye, S. Qiao, Y. Wang, Y. Guo, D. Feng, and D. 
+
+Shen, Large band splitting in g -wave altermagnet CrSb , Phys. Rev. Lett. 133, 206401 (2024). 
+
+11. S. Reimers, L. Odenbreit, L. Šmejkal, V. N. Strocov, P. Constantinou, A. B. Hellenes, R. J. 
+
+Ubiergo, W. H. Ca mpos, V. K. Bharadwaj, A. Chakraborty, T. Denneulin, W. Shi, R. E. Dunin -
+
+Borkowski, S. Das, M. Kläui, J. Sinova, and M. Jourdan, Direct observation of altermagnetic 
+
+band splitting in CrSb thin films, Nat . Commun . 15, 2116 (2024). 
+
+12. Z. Zhou, X. Cheng, M. Hu, R. Chu, H. Bai, L. Han, J. Liu, F. Pan, and C. Song, Manipulation 
+
+of the altermagnetic order in CrSb via crystal symmetry, Nature 638, 645 (2025). 
+
+13. A. Badura, W. H. Campos, V. K. Bharadwaj, I. Kounta, L. Michez, M. Petit, J. Rial, M. Leiviskä, 
+
+V. Baltz, F. Krizek, D. Kriegner, J. Železn ý, J. Zemen, S. Telkamp, S. Sailler, M. Lammel, R. 
+
+Jaeschke -Ubiergo, A. B. Hellenes, R. González -Hernández, J. Sinova, T. Jungwirth, S. T. B. 
+
+Goennenwein, L. Šmejkal, and H. Reichlova , Observation of the anomalous Nernst effec t in 
+
+altermagnetic candidate Mn 5Si 3, Nat . Commun . 16, 7111 (2025) .11 
+
+14. O. Fedchenko, J. Minár, A. Akashdeep, S. W. D’Souza, D. Vasilyev, O. Tkach, Lukas Odenbreit, 
+
+Q. Nguyen, D. Kutnyakhov, N. Wind, L. Wenthaus , M. Scholz, K. Rossnagel, M. Hoesch, M. 
+
+Aeschlimann, B. Stadtmüller, M. Kläui, G. Schönhense, T. Jungwirth, A. Birk Hellenes, G. 
+
+Jakob, L. Šmejkal, J. Sinova, and HJ. Elmers, Observation of time -reversal symmetry breaking 
+
+in the band structure of altermag netic RuO 2, Sci. Adv. 10, eadj4883 (2024). 
+
+15. J. Liu, J. Zhan, T. Li, J. Liu, S. Cheng, Y. Shi, L. Deng, M. Zhang, C. Li, J. Ding, Q. Jiang, M. 
+
+Ye, Z. Liu, Z. Jiang, S. Wang, Q. Li, Y. Xie, Y. Wang, S. Qiao, J. Wen, Y. Sun, and D. Shen ,
+
+Absence of altermagnet ic spin splitting character in rutile oxide RuO 2, Phys. Rev. Lett. 133, 
+
+176401 (2024). 
+
+16. S.-W. Cheong and F .-T. Huang , Altermagnetism with non -collinear spins , npj Quantum Mater .
+
+9, 13 (2024) .
+
+17. B. H. Rimmler, B . Pal , and S. S. P. Parkin , Non -collinear antiferromagnetic spintronics , Nat .
+
+Rev . Mater . 10, 109 (2025) .
+
+18. D. K. Singh, S .g-W. Cheong, and J . Guo , Altermagnetism in NiSi and antiferromagnetic 
+
+candidate materials with non -collinear spins , Adv. Phys . Res. 4, 2400170 (2025 ). 
+
+19. Q. Liu , S. Cui , R. Bian , E. Pan , G. Cao , W. Li , and F. Liu , The integration of two -dimensional 
+
+materials and ferroelectrics for device application s, ACS Nano 18, 1778 (2024 ). 
+
+20. H. Tang, Y . Wang, X . Ni, K . Watanabe, T . Taniguchi, P . Jarillo -Herrero, S . Fan, E . Mazur, A .
+
+Yacoby , and Y. Cao , On -chip multi -degree -of -freedom control of two -dimensional materials ,
+
+Nature 632, 1038 (2024) .
+
+21. M.-H. Zhang, X . Guo, and D .-X. Yao , Dirac points and Weyl phase in a honeycomb altermagnet ,
+
+arXiv:2412.03657 (2024). 
+
+22. T. Sato, S . Haddad, I . C. Fulga, F . F. Assaad, and J . van den Brink , Altermagnetic anomalous 
+
+Hall effect emerging from electronic correlations , Phys. Rev. Lett. 133, 086503 (2024) .
+
+23. I. Mazin, R. Gonz ález -Hern ández, and L. Šmejkal, Induced monolayer altermagnetism in 
+
+MnP(S,Se) 3 and FeSe, arXiv:2309.02355 (2023) .
+
+24. S. Zeng and Y .-J. Zhao , Description of two -dimensional altermagnetism: Categorization using 
+
+spin group theory , Phys. Rev. B 110, 054406 (2024) .
+
+25. Y. Liu, Y . Liu, X . Wang, N . Xia, G . Xu, Y . Wang, H . Wang, W . Gao, and J. Zhao , Robust 
+
+altermagnetism and compensated ferrimagnetism in MnPX 3-based (X = S or Se) 
+
+heterostructures , arXiv:2412.17232 (2024). 
+
+26. S. Sheoran and S . Bhattacharya , Nonrelativistic spin splittings and altermagnetism in twisted 
+
+bilayers of centrosymmetric antiferromagnets , Phys. Rev. Mater. 8, L051401 (2024) .
+
+27. Y. Liu, J. Yu, and C. -C. Liu, Twisted magnetic van der Waals bilayers: An ideal platform for 
+
+altermagnetism, Phys. Rev. Lett. 133, 206702 (2024). 
+
+28. Z. Zhang, Y . Bai, X . Zou, B . Huang, Y . Dai, and C . Niu , Altermagnetic quantum spin Hall effect 
+
+in a Chern homobilayer , Phys. Rev. B 112, 085128 (2025) .
+
+29. J. W. González, T. Brumme, E. Suárez Morell, A. M. León , Engineering altermagnetism via 12 
+
+layer shifts and spin order in bilayer MnPS 3, arXiv:2505.17212 (2025). 
+
+30. B. Brekke, A. Brataas, and A. Sudbø , Two -dimensional altermagnets: Superconductivity in a 
+
+minimal microscopic model , Phys. Rev. B 108, 224421 (2023). 
+
+31. D. S. Antonenko, R. M. Fernandes, and J. W. F. Venderbos, Mirror Chern bands and Weyl nodal 
+
+loops in alter magnets, Phys. Rev. Lett. 134, 096703 (2025). 
+
+32. N. Kaushal and M . Franz , Altermagnetism in modified Lieb lattice Hubbard model , Phys. Rev. 
+
+Lett. 135, 156502 (202 5). 
+
+33. Y. Che , H. Lv , X. Wu, and J . Yang , Engineering altermagnetic states in two -dimensional square 
+
+tessellations , Phys. Rev. Lett. 135, 036701 (2025) .
+
+34. Y. Han, T . He, R .-W. Zhang, Z . Li, Z .-M. Yu, and Y . Yao , Real Chern insulator in monolayer 
+
+decorated transition metal nitrides , Adv. Funct. Mater., 2025 , 2505282 .
+
+35. S. Liu, Z . Zhang, L . Bai, and W . Feng , Anomalous transport properties in the two -dimensional 
+
+topological altermagnet V 2Te 2O, Phys. Rev. B 11 1, 184437 (2025) .
+
+36. P. Feng, C .-Y. Tan, M . Gao, X .-W. Yan, Z .-X. Liu, P .-J. Guo, F . Ma, and Z .-Y. Lu, Type -II 
+
+quantum spin Hall insulator, arXiv:2503.13397 (2025) .
+
+37. R. Xu, Y. Gao, and J . Liu , Chemical design of monolayer altermagnets , arxiv :2505.15484 
+
+(2025). 
+
+38. P.-Hao Chang, I . I. Mazin, and K . D. Belashchenko , Inverse Lieb materials: Altermagnetism 
+
+and more , arXiv:2508.04839 (2025). 
+
+39. S. -D. Guo, Hidden altermagnetism, Front. Phys. 21, 025201 (2026). 
+
+40. B. Jiang, M . Hu, J . Bai, Z . Song, C . Mu, G . Qu, W . Li, W . Zhu, H . Pi, Z . Wei, Y .-J. Sun, Y .
+
+Huang, X . Zheng, Y . Peng, L . He, S . Li, J . Luo, Z . Li, G . Chen, H . Li, H . Weng , and T. Qian , A
+
+metallic room -temperature d -wave altermagnet , Nat. Phys. 21, 754 (2025) .
+
+41. F. Zhang, X. Cheng, Z. Yin, C. Liu, L. Deng, Y. Qiao, Z. Shi, S. Zhang, J. Lin, Z. Liu, M. Ye, 
+
+Y. Huang, X. Meng, C. Zhang, T. Okuda, K. Shimada, S. Cui, Y. Zhao, G. -H. Cao, S. Qiao, J. 
+
+Liu, and C. Chen, Crystal -symmetry -paired spin -valley locking in a layered room -temperature 
+
+metallic altermagnet candidate, Nat. Phys. 21, 760 (2025). 
+
+42. G. Yang, R . Chen, C . Liu, J . Li, Z . Pan, L . Deng, N . Zheng, Y . Tang, H . Zheng, W . Zhu, Y . Xu, 
+
+X. Ma, X . Wang, S . Cui, Z . Sun, Z . Liu, M . Ye, C . Cao, M . Shi, L . Hu, Q . Liu, S . Qiao, G . Cao, 
+
+Y. Song, and Y. Liu, Observation of hidden altermagnetism in Cs 1−δ V2Te 2O, arXiv:2512.00972 
+
+(2025). 
+
+43. C. -C. Wei, X. Li, S. Hatt, X. Huai, J. Liu, B. Singh, K. -M. Kim, R. M. Fernandes, P. Cardon, L. 
+
+Zhao, T. T. Tran, B. A. Frandsen, K. S. Burch, F. Liu, and H. Ji, La 2O3Mn 2Se 2: A correlated 
+
+insulating layered d -wave altermagnet, Phys. Rev. Mater. 9, 024402 (2025). 
+
+44. C. L. Kane and E. J. Mele, Z 2 topological order and the quantum spin Hall effect , Phys. Rev. 
+
+Lett. 95, 146802 (2005). 
+
+45. D. J. Thouless, M. Kohmoto, M. P. Nightingale, and M. den Nijs , Quantized Hall conductance 
+
+in a two -dimensional periodic potential , Phys. Rev. Lett. 49 , 504 (1982). 13 
+
+46. D. X iao and Q. Niu, Berry phase effects on electronic properties , Rev. Mod. Phys. 82, 1959 
+
+(2010 ). 
+
+47. F. D. M. Haldane , Model for a quantum Hall effect without Landau levels: Condensed -matter 
+
+realization of the " parity anomaly" , Phys. Rev. Lett. 61 , 2015 (198 8). 
+
+48. E. Prodan, Robustness of the spin -Chern number , Phys. Rev. B 80, 125327 (2009 ). 
+
+49. Y. Yang, Z. Xu, L. Sheng, B . Wang, D. Y. Xing, and D. N. Sheng , Time -reversal -symmetry -
+
+broken quantum spin Hall effect , Phys. Rev. Lett. 107, 066602 (2011) .
+
+50. L. Sheng, H. -C. Li, Y. -Y. Yang, D. -N. Sheng, and D. -X. Xing, Spin Chern numbers and time -
+
+reversal -symmetry -broken quantum spin Hall effect , Chin. Phys. B 22, 067201 (2013). 
+
+51. C. L. Kane and E. J. Mele, Quantum spin Hall effect in graphene, Phys. Rev. Lett. 9 5, 226801 
+
+(2005). 
+
+52. R. Gonz ález -Hern ández , H. Serrano, and B . Uribe , Spin Chern number in altermagnets , Phys. 
+
+Rev. B 111, 085127 (2025) .
+
+53. Z. Chen, F. Zhan, Z. Qin, D .-S. Ma, D .-H. Xu, and R . Wang , Quantum spin Hall effect with 
+
+extended topologically protected features in altermagetic multilayers, arXiv:2508.03580 (2025). 
+
+54. M. -H. Zhang, X . Guo, and D .-X. Yao , Dirac points and Weyl phase in a honeycomb altermagnet, 
+
+arXiv:2412.03657 (2024). 
+
+55. H. Zhang, C .-X. Liu, X .-L. Qi, X . Dai, Z . Fang , and S .-C. Zhang , Topological insulators in 
+
+Bi 2Se 3, Bi 2Te 3 and Sb 2Te 3 with a single Dirac cone on the surface , Nat. Phys. 5, 438 (2009). 
+
+56. M. Zhou, Z . Liu, W . Ming, Z . Wang, and F . Liu , sd 2 graphene: Kagome band in a hexagonal 
+
+lattice , Phys. Rev. Lett. 113, 236802 (2014) .
+
+57. C. Qi, L. Ouyang, and J. Hu, Realizing robust large -gap quantum spin Hall state in 2D HgTe 
+
+monolayer on insulating substrate , 2D Mater. 5, 045012 (2018) .
+
+58. H. Feng, C. Liu, S . Zhou, N . Gao, Q . Gao, J . Zhuang, X . Xu, Z . Hu, J . Wang, L . Chen, J . Zhao, 
+
+S. X. Dou, and Y . Du , Experimental realization of two -dimensional buckled Lieb lattice , Nano 
+
+Lett. 20, 2537 (2020 ). 
+
+59. P. Das , V. Leeb , J. Knolle , and M . Knap , Realizing altermagnetism in Fermi -Hubbard models 
+
+with Ultracold Atoms , Phys. Rev. Lett. 132, 263402 (2024) .
+
+60. J. -Y. Zhu , Z. -R. Liu, R. Chen, and B . Zhou , Floquet -induced two -dimensional weak 
+
+topological insulator phase , Phys. Rev. B 112, 115436 (2025). 
+
+61. S. -D. Guo, Q. Luo, S. -H. Zhang, and P. Jiang, External -field -induced transition from 
+
+altermagnetic metal to fully -compensated ferrimagnetic metal in monolayer Cr 2O, arXiv: 
+
+2512.05352 (2025). 14 
+
+Fig. 1. (a) Structur al model of t wo -dimensional Lieb lattice . ‘A’ stands for nonmagnetic sites , while 
+
+‘B’ and ‘C’ for magnetic sites with opposite spins. The parameters t1 and t 2 indicate the hopping 
+
+amplitude s between nearest and next -nearest neighbor s. (b) The phase diagram of the electronic and 
+
+magnetic features with respect to the values of Δ and 𝑈 wit hout SOC. (c) Band structures with 
+
+re presentative values of Δ and 𝑈 wit hout SOC. The Fermi level is set to zero energy. (d) Number 
+
+of electrons (solid lines) and s pin moment (MS) (dashed -dotted lines) on B site as a function of 𝑈 
+
+with selected Δ.
+
+## A B
+
+## C
+
+# t1
+
+# t2
+
+(I) NM 
+
+Metal 
+
+(II) AM 
+
+Metal 
+
+(III) AM 
+
+Insulator 
+
+> U (t)
+
+Δ (t) 
+
+U (t)    
+
+> Number of Electrons (e)
+> Δ=3.5, U=3.5
+> Δ=1.5, U=1.5
+> Δ=2.5, U=2.5
+
+# Fig. 1 
+
+> Energy (t)
+
+## (a) (b) 
+
+## (d) (c) 
+
+0 1 2 3 4 5
+
+0.65 
+
+0.70 
+
+0.75 
+
+0.80 
+
+0.85 
+
+0.90 
+
+0.95 
+
+> 2t
+> 3t
+> 4t
+> 5t
+
+0.0 
+
+0.2 
+
+0.4 
+
+0.6 
+
+0.8 
+
+1.0 
+
+> 2t
+> 3t
+> 4t
+> 5t
+> MS (μB)
+
+0 1 2 3 4 5
+
+0.65 
+
+0.70 
+
+0.75 
+
+0.80 
+
+0.85 
+
+0.90 
+
+0.95 
+
+> 2t
+> 3t
+> 4t
+> 5t
+
+0.0 
+
+0.2 
+
+0.4 
+
+0.6 
+
+0.8 
+
+1.0 
+
+> 2t
+> 3t
+> 4t
+> 5t
+
+0 1 2 3 4 5
+
+0.65 
+
+0.70 
+
+0.75 
+
+0.80 
+
+0.85 
+
+0.90 
+
+0.95 
+
+> 2t
+> 3t
+> 4t
+> 5t
+
+0.0 
+
+0.2 
+
+0.4 
+
+0.6 
+
+0.8 
+
+1.0 
+
+> 2t
+> 3t
+> 4t
+> 5t
+> Δ=
+> 2
+> 3
+> 4
+> 5
+> X2
+> X3
+
+15 
+
+Fig. 2. (a) B and structure with Δ = 2, 𝑈 = 3, and 𝜆 = 0.05 . (b) Band gap s at 𝐸 \ as a function 
+
+of 𝜆 . (c) and (d) Three -dimensional valence band and conduction band in spin -up and spin -down 
+
+channel s with the same parameters as (a) .
+
+# Fig. 2 
+
+> Energy (t)
+> Energy (t)
+
+(a) (b) 
+
+0.0 
+
+1
+
+0
+
+-1
+
+-2
+
+0.5 1.0 
+
+0.0 
+
+0.5 
+
+1.0 
+
+ky/2 π
+
+kx/2 π
+
+λ (t/100) 
+
+1
+
+0
+
+-1
+
+-2
+
+0.0 0.5 1.0 
+
+0.0 
+
+0.5 
+
+1.0 
+
+ky/2 π
+
+kx/2 π
+
+> Energy (t)
+
+(c) (d) 
+
+# Δ = 2$ ,16 
+
+Fig. 3. (a) Spin -resolved a nomalous Hall conductance (𝜎 ik ,±) in spin -up (positive) and spin -down 
+
+(negative) channels as a function of hypothetical 𝐸 \ with rigid band assumption . The parameters 
+
+are Δ = 2, 𝑈 = 3, and 𝜆 = 0.01, 0.03, and 0.05 . (b) and (c) Distribution of Berry curvature (Ω)
+
+in spin -up and spin -down channels, respectively. (d) Band structure of a nanoribbon with width of 
+
+20.5 unit cells ended by A -C chains on t he edges [see the inset in (e)] . (e) Local orbital weight for 
+
+the states marked by the red and blue dots at 𝐸 \ of the inset band structure which zooms in the 
+
+region indicated by the dashed yellow rectangle in ( d). The parameters for (b) to (e) are: Δ = 2, 
+
+𝑈 = 3, and 𝜆 = 0.05 .  
+
+> 800
+> 0-800
+> 0
+> Energy (t)
+> Local Orbital Weight
+> ky/2 π
+> kx/2 π
+> kx/2 π
+> ky/2 π
+> (b)
+> (a) (d)
+> (c)
+> (e)
+> EF(t)
+> . . .
+> edge
+> edge
+> !!" ,$ ("%/h)Ω (a.u .)
+> Label of Lattice Strip
+
+Fig. 3 
+
+> . . .
+> edge
+> edge
+
+Δ = 2$ , & =
+
+Gap 
+
+0.075721 (up) 
+
+0.052733 ( dw )
+
+> width
+
+17 
+
+Fig.4 . Electronic properties with parameters of Δ = 2 and 𝑈 = 3.91. (a) Band structure with 𝜆 =
+
+0, i.e. without SOC . (b) Zoomed -in band structure indicated by the green rectangle in (a) with 
+
+selected 𝜆 of 0.02, 0.05 and 0.08. (c) Spin -resolved anomalous Hall conductance (𝜎 ik ,±) in spin -
+
+up (positive) and spin -down (negative) channels as a function of hypothetical 𝐸 \ with rigid band 
+
+assumption at 𝜆 = 0.02 and 0.08. (c) and (d) Distribution of Berry curvature ( Ω) in spin -up and 
+
+spin -down channels, respectively, with 𝜆 = 0.08. 
+
+> ky/2 π
+
+kx/2 π
+
+> ky/2 π
+
+kx/2 π
+
+## EF (t) 
+
+> Energy (t)
+
+(a) 
+
+(c) 
+
+(d) 
+
+(e) 
+
+> !"# ,% ( &' /h)
+> 1000
+> 0-1000
+> 0
+
+(b) 
+
+# Fig. 4 
+
+0.02 
+
+0.05 
+
+0.08 
+
+0.02 
+
+0.08 
+
+> Ω (a.u .) Ω (a.u .)
+
+# Gap 
+
+# 0.02 
+
+# 0.08 

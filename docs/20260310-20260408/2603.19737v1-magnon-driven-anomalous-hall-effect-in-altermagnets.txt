@@ -1,0 +1,384 @@
+Title: Magnon-Driven Anomalous Hall Effect in Altermagnets
+
+URL Source: https://arxiv.org/pdf/2603.19737v1
+
+Published Time: Mon, 23 Mar 2026 00:37:11 GMT
+
+Number of Pages: 7
+
+Markdown Content:
+# Magnon-Driven Anomalous Hall Effect in Altermagnets 
+
+Zheng Liu, 1 Yang Gao, 1, 2, 3, 4, ∗ and Qian Niu 1
+
+> 1
+
+CAS Key Laboratory of Strongly-Coupled Quantum Matter Physics, and Department of Physics, University of Science and Technology of China, Hefei, Anhui 230026, China 
+
+> 2
+
+ICQD, Hefei National Laboratory for Physical Sciences at Microscale, University of Science and Technology of China, Hefei, Anhui 230026, China 
+
+> 3
+
+Hefei National Laboratory, University of Science and Technology of China, Hefei, Anhui 230026, China 
+
+> 4
+
+Anhui Center for Fundamental Sciences in Theoretical Physics, University of Science and Technology of China, Hefei 230026, China 
+
+(Dated: March 23, 2026) We propose a magnon-driven anomalous Hall effect in altermagnets, arising from the coupling between coherently excited chiral magnons and chiral electronic motion. Using density-matrix per-turbation theory and symmetry analysis, we show that the resulting Hall conductivity is solely determined by the chiralithy of the N´ eel-order precession, in sharp contrast to the anomalous Hall effect from the equilibrium N´ eel order. It then has distinct symmetry requirements from the latter and can exist even when the latter is forbidden by symmetry. The magnon-driven anomalous Hall effect is exemplified in a minimal lattice model with the same symmetry of the altermagnet CrSb, which hosts no static anomalous Hall effect. Our results reveal a direct interplay between chiral magnons and chiral electronic motion, paving the way of probing magnon chirality and to control electronic chirality through magnons. 
+
+In solid state physics, chirality is a fundamental concept that characerizes the circular motion of vari-ous particles, such as electrons[ 1–3], phonons[ 4–9], and magnons[ 10 –13 ]. It can play important roles in awide range of quantum phenomena, such as exciton formation[ 14 –18 ], magnetic dynamics[ 19 –21 ], thermal Hall effect[ 22 –24 ], and hence can stimulate technologi-cal developments in spintronics[ 25 –28 ], phononics[ 29 , 30 ], magneto-optical functionalities[ 31 –33 ], and so on. In this regard, the coupling between different chiral modes is a central research theme relating to generation and detec-tion of chirality. Specifically, the chiral phonon-magnon coupling and the chiral phonon-electron coupling have been studied intensively[ 19 , 20 , 34 –36 ]. For example, the hybrid magnon-phonon mode can show distinct chiral behavior[ 19 ], and the valley exiton mode can be affected deeply by the chiral phonon mode[ 16 , 17 ]. In compari-son, a fundamental question remains largely untouched: can the chiral magnon mode couple to electrons and lead to distinct chiral transport behavior? The chiral motion of electrons is most prominently manifested in the anomalous Hall effect[ 37 ]. Microscop-ically, the chirality is captured by the Berry curvature of the equilibrium ground state, which is necesarily as-sociated with a macroscopic chiral direction in crystals, such as the ferromagnetic spin order[ 38 –40 ]. Reversing the spin order then reverses the anomalous Hall response. Beyond equilibrium, the spin precession or the magnon mode offers another chiral direction, i.e., the precession direction. Therefore, it is an interesting and important question whether the anomalous Hall effect can be di-rectly induced by such a dynamical chiral direction. In this work, we answer both questions in the affirma-tive, by showing that chiral magnon modes in altermag-nets can generate a distinct anomalous Hall response (as 
+
+FIG. 1. The magnon-driven anomalous Hall effect. (a) Hall-type response driven by N´ eel vector precession. (b) physical origin of the magnon-driven anomalous Hall effect: two chiral directions are present in altermagnets, the N´ eel order and its precession direction; the anomalous Hall effect can arise from either chiral direction but only in the later case, the opposite local spin orders contribute constructively. 
+
+shown in Fig. 1(a)), in sharp contrast to that due to the equilibrium altermagnetic spin order. We chose alter-magnets for two reasons: its low energy excitation con-tains magnon modes with both chiralities[ 13 , 21 , 41 –43 ], in sharp contrast to the magnon mode with single chiral-ity in collinear ferromagnets[ 44 ], and they are separated in energy, in sharp contrast to the degenerate magnon mode in P T - or T τ -symmetric antiferromagnets[ 45 , 46 ]. This magnon-driven anomalous Hall effect has a clear picture as shown in Fig. 1(b): at equilibrium, Berry cur-vatures associated with opposite local spin orders are also opposite, which contributes destructively to the anoma-lous Hall effect; however, opposite local spin orders pre-cess in the same manner and hence share the same pre-cession direction, which then contributes constructively to the anomlaous Hall effect. Symmetry-wise, the magnon-driven anomalous Hall ef-fect is also distinct from that due to the equlibrium spin 
+
+> arXiv:2603.19737v1 [cond-mat.mes-hall] 20 Mar 2026
+
+2order. It is linear in the preccession direction of the N´ eel vector as shown in Eq. ( 2) but the corresponding coeffi-cient is independent of the N´ eel vector. As a result, the flipping of the N´ eel order does not affect the response coefficient, consistent with the intuitive picture shown in Fig. 1(b). We offer systematic analysis to show such difference. Most strikingly, the magnon-driven anoma-lous Hall effect to exist even when the one due to the equilibrium spin order vanishes. As a concrete example, we consider a collinear antiferromagnetic model sharing the symmetry of altermagnetic CrSb[ 47 , 48 ]. Although being altermagnetic, its spin order does not support an anomalous Hall effect[ 48 , 49 ]. However, its magnon mode can driven a Hall response, which shows a dipolar angu-lar dependence with the rotation of spin order, in con-sistent with the spin-group analysis. Our results reveal the distinct interplay between chiral magnons and chiral electrons. 
+
+Microscopic theory.— To show the magnon-driven anomalous Hall effect, we first derive a steady current in response to both the electric field and spin precession, i.e., 
+
+ji = χijkℓ (0 , ω α, ω β )Ej ˆNk(ωα) ˆNℓ(ωβ ). (1) Here E is a static electric field, ˆN (t) = ˆN (ω)e−iωt +ˆN (−ω)eiωt which contains only the time-varying part of the N´ eel vector due to preccession, ˆN (−ω) = ˆN ∗(ω), and ωα,β = ±ω. We note that the momentum of the magnon mode does not directly affects the current. It can, however, affects the chirality of the magnon mode, which is different for opposite momentums. We are interested in the Hall-type response. Therefore, the ij indices shall be antisymmetrized. Moreover, the magnon mode is always circularly polarized. Therefore, the kℓ indices should also be antisymmetrized and we shall take ωα + ωβ = 0. With all these in mind, we can rewrite Eq. ( 1) as follows: 
+
+ji = εija ˜χab (ω)Ej
+
+[
+
+i ˆN (ω) × ˆN ∗(ω)
+
+] 
+
+> b
+
+, (2) where the rank-four tensorial coefficient χijkℓ essentially reduces to a rank-two tensorial coefficient ˜χab (ω) = i
+
+4 εija εkℓb [χijkℓ (0 , −ω, ω ) − χijkℓ (0 , ω, −ω)] .
+
+(3) The coefficient ˜χ can be drived using the density-matrix perturbation theory. We start from the electric Hamiltonian in the presence of both a static electric field and the dynamical N´ eel-vector variation, ˆH = ˆH0 + eE · ˆr + ˆFi ˆNi(t), (4) where ˆH0 is the unperturbed electronic Hamiltonian. The second and third terms represent perturbations from                                     
+
+> TABLE I. Symmetry constraints on the magnon-driven anomalous Hall conductivity tensor ˜ χρr under various symme-try operations. Here, n, n ′≥2. The symbols Xand ×denote symmetry-allowed and symmetry-forbidden components, re-spectively. ˜Cn′⊥indicates a rotation axis perpendicular to the zaxis. “None” signifies the absence of a generalized ro-tational operation in the parent point group of the magnetic point group.
+> ˜Cnz ˜Cnz and ˜Cn′⊥None
+> ˜χxx , ˜ χyy , ˜ χzz XXX
+> ˜χxy , ˜ χyx X×X
+> ˜χxz , ˜ χyz , ˜ χzx , ˜ χzy ××X
+
+the electric field and N´ eel-order precession, respectively. Here, ˆFi ≡ ∂ ˆH0/∂ ˆNi denotes the linear coupling to the N´ eel-vector deviation. Higher-order terms in ˆNi are ig-nored, as they are symmetric in ˆN and hence does not contribute to ˜ χab . Throughout this work, repeated in-dices imply summation. The density matrix can then be obtained from the total Hamiltonian through the following kinetic equation: 
+
+iℏ dˆρ
+
+dt = [ ˆ H, ˆρ] − iℏ
+
+τ0
+
+(
+
+ˆρ − ˆρ(0) )
+
+, (5) where ˆ ρ(0) is the equilibrium density matrix and τ0 de-notes the phenomenological relaxation time of the elec-tronic states. The last term implements relaxation within the standard relaxation-time approximation. We then solve Eq. ( 5) up to the third order to obtain δ ˆρ(3) , in ac-cordance with Eq. eq:response1. The detail can be found in the supplementary materials. Morever, we note that the last term in Eq. 4 arises from the exchange field, which commutes with ˆ r and hence does not modify the velocity operator. The induced current then reads as 
+
+ji = −eTr 
+
+(
+
+δ ˆρ(3) ˆvi
+
+)
+
+, (6) with ˆ vi = ∂ ˆH0/(ℏ∂k i) being the velocity operator. We can then obtain χijkℓ and, through Eq. 3, ˜ χab .The magnon-driven anomalous Hall effect corresponds to the part of the response function that is time-reversal even. It is then even with respect to the equilibrium N´ eel vector ˆN0, i.e., ˜ χab (− ˆN0) = ˜ χab ( ˆN0). Its epxression can be found in the supplementary materials. The resulting current only relies on the chiral precession direction so that the opposite spin orders shall contribute construc-tively as shown in Fig. 1(b). 
+
+Symmetry analysis.— The most striking feature of the magnon-driven anomalous Hall effect is that it has quite different symmetry requirements compared with the anomalous Hall effect from the equilibruim spin or-der, since the time reversal operation does not affect the former[ 50 –53 ]. Specifically, the response coefficient ˜ χab 
+
+is subjected to a derived group obtained from the mag-3netic point group by further identifying the time rever-sal operation with the identity. This derived group does not, in general, coincide with the crystallographic point group. Moreover, the inversion operation also leaves ˜ χab 
+
+unchanged. Therefore, for ˜ χab , Cn and IC n are equiva-lent and we will unify them by ˜Cn. In this notation, ˜C2
+
+contains the mirror operation. Without loss of generality, we choose the z axis as the principal rotation axis. The symmetry-allowed components of ˜ χab are summarized in Table I.Notably, the diagonal components ˜ χxx , ˜ χyy , and ˜ χzz 
+
+are allowed under arbitrary rotational symmetry. In other words, with the spin precession from the magnon mode in altermagnets, there should always a Hall-type re-sponse in the plane perpendicular to the precession direc-tion. This demonstrates the robustness of the magnon-driven anomalous Hall effect. If only a single rotation axis ˜Cnz with n ≥ 2 is present, additional off-diagonal components such as ˜ χxy and ˜ χyx are also allowed. Depending on whether the spin order lies perpendic-ular to or parallel with the Hall deflection plane, the anomlaous Hall effect has two versions: the out-of-plane anomalous Hall effect as consistent with the empirical law[ 54 –57 ] and the in-plane anomalous Hall effect when the crystalline symmetry is low or the Hall deflection plane has a high index[ 58 –61 ]. The anomalous Hall ef-fect induced by magnon and that by spin order have the same symmetry requirements for the later (i.e., no 
+
+C2 axis along the spin order and perpendicular to the Hall deflection plane) but they are different in symmetry for the former. In altermagnets, if the magnetic point group of a crystals contains CnT with n ≥ 2, the Hall deflection plane in the anomalous Hall effect from the spin order cannot be perpendicular to the rotation axis, which then forbids the out-of-plane configuration. How-ever, such configuration is still allowed for the magnon-driven anomalous Hall effect, in which case, the spin prec-cession direction, the spin order direction, and the Hall conducitvity vector are all along the rotation axis. For example, in FeSe 2, a d-wave altermagnet with N´ eel vector along y and symmetry T C 2y , the Hall conductivity vector σH cannot be along y-direction, whereas a finite 
+
+σHy can be induced when the spin order precesses about 
+
+y axis[ 61 , 62 ]. Similarly, in CrSb, a g-wave altermagnet with N´ eel vector along z and symmetry T C 6z , σH from spin order vanishes identically[ 48 , 49 ]. However, it can be induced by magnons. With the help of the spin group[ 61 , 63 –68 ], we can also identify the structure of the magnon-driven anomalous Hall effect in the N´ eel-vector space. For this purpose, we differentiate the spin frame from the lattice frame. The latter is determined by the crystal axis while the former rotates with the spin order. We further assume that the 
+
+z-axis in the spin frame is always parallel with the N´ eel order. We then treat the response coefficient with both the spin frame and the lattice frame, and re-label this ver-sion by ˜ χsep  
+
+> ab
+
+to differentiate it from ˜ χab in the lab frame as defined in Eq. ( 2). For ˜ χsep  
+
+> ab
+
+, the first index is related to the Hall-type deflection and should then transform with the lattice frame, while the second index is related to the spin precession and should then transform with the spin frame. Since the spin order always precesses about its equilibrium direction for low-energy excitations, we are only interested in the ˜ χsep  
+
+> az
+
+component. The anisotropy of ˜ χsep  
+
+> az
+
+in the N´ eel-vector space origi-nates from the spin-group symmetry breaking. To pro-ceed, we treat the spin–orbit coupling perturbatively and expand ˜χsep  
+
+> az
+
+with respect to the spin-orbit vector ℓmj
+
+which characterizes the relative orientation between the spin frame and the lattice frame. The expansion coef-ficient is then subject to the constraint of spin group. For altermagnets, the spin-only symmetry is generated by T C s 
+
+> 2x
+
+and Cs 
+
+> ∞z
+
+, where z and x are in the spin frame. Since Cs 
+
+> 2x
+
+flips the z direction in the spin frame, the re-sponse coefficient transforms as ˜χsep 
+
+> az T C s
+> 2x
+
+−−−→ − ˜χsep  
+
+> az
+
+, ˜χsep 
+
+> az Cs
+> ∞z
+
+−−−→ ˜χsep  
+
+> az
+
+. (7) The first constraint necessarily forbids the zeroth-order term in the expansion of ˜ χsep  
+
+> az
+
+. At first order, ˜ χaz should only depend on components of ℓmj with m = z due to the second constraint, yielding ˜χsep  
+
+> iz
+
+= αij ℓzj = αij ˆNj , (8) where αij is at first order of the strength of the spin-orbit coupling. The last equality holds since the z direction in the spin frame is parallel with the N´ eel vector. This immediately shows the role of the spin-orbit coupling in the magnon-driven anomalous Hall effect. The coefficient αij is further constrained by the non-trivial spin group. In collinear antiferromagnets, the nontrivial spin group element takes the form {Cs
+
+> 2⊥
+
+|GL}
+
+and {Es|GL}, where Cs 
+
+> 2⊥
+
+denotes a twofold spin rotation about an axis within the xy plane in the spin frame, Es is the identity in spin space, and GL represents a crystalline point-group operation. Because Cs 
+
+> 2⊥
+
+simultaneously flips the sign of ˜ χsep  
+
+> az
+
+and ℓzj , αij is only affected by GL.It is instructive to compare the expansion in Eq. ( 8)with that of the anomalous Hall conductivity in alter-magnets. The latter has a similar form[ 61 ]: 
+
+σHi = βij ℓzj . (9) 
+
+βij and αij transform in the same way under the spin-only group. However, for the nontrivial spin group, Cs
+
+> 2⊥
+
+affects βIj but not αij . This is the symmetry reason for the robustness of the magnon-driven anomalous Hall effect. Finally, we comment that the magnon-driven anoma-lous Hall effect can also be generated to PT -symmetric or T τ -symmetric collinear antiferromagnets. In both cases, the antiferromagnetic spin order cannot support 4
+
+FIG. 2. Magnon-driven anomalous Hall effect in an alter-magnetic minimal model. (a) The lattice structure. (b) Band structure of the minimal model in the absence of spin-orbit coupling. The k-path are −M ′ = ( −0.5, 0, 0.25), Γ′ = (0 , 0, 0.25), and M ′ = (0 .5, 0, 0.25). (c), (d) Spin-up and spin-down Fermi surfaces in kx − ky plane at kz = π/ 2 (with-out spin-orbit coupling), together with the Berry curvature Ωz (k) in (c) and the magnon-driven anomalous Hall response coefficient ˜ χzz (k) in (d) (arbitrary units). (e) Magnon-driven anomalous Hall coefficient ˜ χzz as a function of Fermi energy with the N´ eel vector along the z direction. (f) Angular de-pendence of ˜χsep  
+
+> xz
+
+and ˜χsep  
+
+> zz
+
+as the N´ eel vector rotates from the z to x axis, parameterized by the angle θ. The response coefficient is measured in units of c0S/cm, with c0 = τ0/ℏ.The inset shows the N´ eel-vector direction. Model parameters are t2/t 1 = 1 .0, t3/t 1 = 0 .5, μ/t 1 = 0 .5, λ/t 1 = 0 .004, and 
+
+J/t 1 = 0 .45. The magnon frequency is ω/t 1 = 0 .1. The Fermi energy is fixed at EF /t 1 = 0 in (f). 
+
+the anomalous Hall effect. However, if magnons with fixed chirality can be excited through, e.g., the spin current injection, a nonzero anomalous Hall effect can emerge from ˜ χab .
+
+Lattice Model.— To illustrate the magnon-driven anomalous Hall effect, we consider a minimal lattice model capturing the essential symmetry properties of the altermagnet CrSb (structure in Fig. 2(a)). The Hamilto-nian reads[ 69 , 70 ]
+
+H = ǫ0,k + tx,k τx + tz,k τz + τy λ · σ + τz J · σ, (10) where the Pauli matrices τ act on sublattices and σ on spin. The momentum-dependent coefficients are given by 
+
+ǫ0,k = t1(cos kx + 2 cos kx/2 cos √3ky /2) + t2 cos kz − μ,
+
+tx,k = t2 cos kz /2, tz,k = t3 sin kz fy(f 2 
+
+> y
+
+− 3f 2 
+
+> x
+
+), λx,k =
+
+λ cos kz /2( f 2 
+
+> x
+
+− f 2 
+
+> y
+
+), λy,k = −2λ cos kz /2fxfy , λz,k =
+
+λ sin kz /2fx(f 2 
+
+> x
+
+− 3f 2 
+
+> y
+
+), fx = sin kx + sin kx/2 cos √3ky /2, and fy = √3 cos kx/2 sin √3ky /2. We have set the lat-tice constant to be 1. The crystallographic point group for this model is D6h consistent with the hexagonal lat-tice structure. The spin point group is generated by 
+
+{Cs
+
+> 2⊥
+
+|CL 
+
+> 6z
+
+}, {Cs
+
+> 2⊥
+
+|σLxy }, and {Es|CL
+
+> 2x
+
+}, consistent with the spin structure of CrSb[ 47 , 48 ]. In Fig. 2(b), we plot the band structure in the absence of spin–orbit coupling. Although the magnetic moments are collinear and antiparallel, fully compensating each other, the bands are clearly spin-split, reflecting the char-acteristic nature of altermagnetism. Figures 2(c) and 
+
+2(d) show the spin-up (solid) and spin-down (dashed) Fermi surfaces in a Brillouin-zone slice. They are gen-erally separated in the momentum space and are consis-tent with the g-wave nature of CrSb[ 63 ]. In Fig. 2(c), the Berry curvature distribution is also shown by color. Its sign alternates in the azimuthal direction since the pos-itive and negative value are associated with the spin-up and spin-down bands, respectively, leading to an overall cancellation. By contrast, the k-resolved response coeffi-cient ˜ χ33 exhibits identical distributions for the spin-up and spin-down bands and does not change sign in the azimuthal direction (Fig. 2(d)). This behavior demon-strates that the magnon-driven anomalous Hall response is governed by the magnon chirality rather than by the local spin order, and confirms the physical picture in Fig. 1(b). As discussed previously, the magnetic point group of CrSb forbis the anomalous Hall effect[ 48 , 49 ], which is also true for our lattice model when the N´ eel order is along the z direction. However, ˜ χzz is nonzero as shown in Fig. 2(e), indicating the existence of the magnon-driven anomalous Hall effect. It also depends sensitively on the Fermi energy and can switch sign across the band crossing point. In Fig. 2(f), we show the dependence of the magnon-driven anomalous Hall effect on the direction of the equi-librium N´ eel vector. In CrSb, when the N´ eel vector de-viates from the z axis, the magnetic point group can be greatly supressed, which allows a nonzero anomalous Hall effect associated with the N´ eel order. However, a detailed analysis shows that the corresponding Hall con-ductivity vector shall start at the cubic order of the N´ eel vector (and equivalently the strength of the spin-orbit coupling). In contrast, the magnon-driven anomalous Hall effect can start at the linear order. Specifically, for the three generators of the nontrivial spin group, only the orbit part, i.e., CL 
+
+> 6z
+
+, σLxy , and CL 
+
+> 2x
+
+affect the coeffi-cient αij in Eq. ( 8). Therefore, the nonzero elements are 
+
+αxx = αyy and αzz . Rotating the N´ eel vector from the z5axis toward the x axis by an angle θ yields ˜χsep  
+
+> xz
+
+= αxx sin θ, 
+
+˜χsep  
+
+> zz
+
+= αzz cos θ. (11) These are in good agreement with the curve in Fig. 2(f), confirming the previous symmetry analysis. 
+
+Summary.— In this work, we identify and character-ize a novel transport phenomenon—the magnon-driven anomalous Hall effect. The resulting Hall conductivity vector only depends on the chirality of spin-order pre-cession instead of the N´ eel order. Therefore, it has dis-tinct symmetry requirements and can be nonzero even when the N´ eel order itselt cannot support an anoma-lous Hall effect. It generally has a dipolar structure in the N´ eel vector space. Our results reveals the close cou-pling between chiral magnon modes and chiral electronic motion and provide a route to converting magnonic sig-nals into electronic responses and enabling the detection of magnon chirality via transport measurements, which provides opportunities for exploiting chiral magnons in future spintronic applications. The authors are supported by the National Key R&D Program under grant Nos. 2022YFA1403502 and the Na-tional Natural Science Foundation of China (12234017). Y. G. is also supported by the National Natural Sci-ence Foundation of China (12374164). Z. L. is also supported by Postdoctoral Fellowship Program of CPSF (GZC20232562), fellowship from the China Postdoctoral Science Foundation (2024M753080), and National Nat-ural Science Foundation of China (12504066). Y. G. and Q. N. are also supported by the Innovation Program for Quantum Science and Technology (2021ZD0302802). The supercomputing service of USTC is gratefully ac-knowledged.  
+
+> ∗
+
+Correspondence author: ygao87@ustc.edu.cn 
+
+[1] X. Wan, A. M. Turner, A. Vishwanath, and S. Y. Savrasov, Topological semimetal and fermi-arc surface states in the electronic structure of pyrochlore iridates, 
+
+Phys. Rev. B 83 , 205101 (2011) .[2] S.-Y. Xu, I. Belopolski, N. Alidoust, M. Neupane, G. Bian, C. Zhang, R. Sankar, G. Chang, Z. Yuan, C.-C. Lee, S.-M. Huang, H. Zheng, J. Ma, D. S. Sanchez, B. Wang, A. Bansil, F. Chou, P. P. Shibayev, H. Lin, S. Jia, and M. Z. Hasan, Discovery of aWeyl fermion semimetal and topological Fermi arcs, 
+
+Science 349 , 613 (2015) .[3] G. Chang, B. J. Wieder, F. Schindler, D. S. Sanchez, I. Belopolski, S.-M. Huang, B. Singh, D. Wu, T.-R. Chang, T. Neupert, S.-Y. Xu, H. Lin, and M. Z. Hasan, Topological quantum properties of chiral crystals, 
+
+Nat. Mater. 17 , 978 (2018) .[4] L. Zhang and Q. Niu, Chiral Phonons at High-Symmetry Points in Monolayer Hexagonal Lattices, 
+
+Phys. Rev. Lett. 115 , 115502 (2015) .[5] H. Zhu, J. Yi, M.-Y. Li, J. Xiao, L. Zhang, C.-W. Yang, R. A. Kaindl, L.-J. Li, Y. Wang, and X. Zhang, Obser-vation of chiral phonons, Science 359 , 579 (2018) .[6] K. Ishito, H. Mao, Y. Kousaka, Y. Togawa, S. Iwasaki, T. Zhang, S. Murakami, J.-i. Kishine, and T. Satoh, Truly chiral phonons in α-HgS, Nat. Phys. 19 , 35 (2023) .[7] H. Ueda, M. Garc´ ıa-Fern´ andez, S. Agrestini, C. P. Ro-mao, J. van den Brink, N. A. Spaldin, K.-J. Zhou, and U. Staub, Chiral phonons in quartz probed by X-rays, 
+
+Nature 618 , 946 (2023) .[8] S.-W. Cheong and X. Xu, Magnetic chirality, 
+
+npj Quantum Mater. 7, 40 (2022) .[9] H. Chen, W. Wu, S. A. Yang, X. Li, and L. Zhang, Chiral phonons in kagome lattices, 
+
+Phys. Rev. B 100 , 094303 (2019) .[10] B. Roessli, P. B¨ oni, W. E. Fischer, and Y. Endoh, Chi-ral fluctuations in mnsi above the curie temperature, 
+
+Phys. Rev. Lett. 88 , 237204 (2002) .[11] Y. Nambu, J. Barker, Y. Okino, T. Kikkawa, Y. Sh-iomi, M. Enderle, T. Weber, B. Winn, M. Graves-Brook, J. M. Tranquada, T. Ziman, M. Fujita, G. E. W. Bauer, E. Saitoh, and K. Kakurai, Observation of magnon po-larization, Phys. Rev. Lett. 125 , 027201 (2020) .[12] Y. Liu, Z. Xu, L. Liu, K. Zhang, Y. Meng, Y. Sun, P. Gao, H.-W. Zhao, Q. Niu, and J. Li, Switching magnon chirality in artificial ferrimagnet, 
+
+Nat. Commun. 13 , 1264 (2022) .[13] L. ˇSmejkal, A. Marmodoro, K.-H. Ahn, R. Gonz´ alez-Hern´ andez, I. Turek, S. Mankovsky, H. Ebert, S. W. D’Souza, O. c. v. ˇSipr, J. Sinova, and T. c. v. Jungwirth, Chiral Magnons in Altermagnetic RuO 2,
+
+Phys. Rev. Lett. 131 , 256703 (2023) .[14] F. de Juan, A. G. Grushin, T. Morimoto, and J. E. Moore, Quantized circular photogalvanic effect in Weyl semimetals, Nat. Commun. 8, 15995 (2017) .[15] Q. Ma, S.-Y. Xu, C.-K. Chan, C.-L. Zhang, G. Chang, Y. Lin, W. Xie, T. Palacios, H. Lin, S. Jia, P. A. Lee, P. Jarillo-Herrero, and N. Gedik, Direct optical detec-tion of Weyl fermion chirality in a topological semimetal, 
+
+Nat. Phys. 13 , 842 (2017) .[16] E. Liu, J. van Baren, T. Taniguchi, K. Watanabe, Y.-C. Chang, and C. H. Lui, Valley-selective chiral phonon replicas of dark excitons and trions in monolayer WSe 2,
+
+Phys. Rev. Res. 1, 032007 (2019) .[17] M. He, P. Rivera, D. Van Tuan, N. P. Wilson, M. Yang, T. Taniguchi, K. Watanabe, J. Yan, D. G. Mandrus, H. Yu, H. Dery, W. Yao, and X. Xu, Valley phonons and exciton complexes in a monolayer semiconductor, 
+
+Nat. Commun. 11 , 618 (2020) .[18] S.-Y. Xu, Q. Ma, Y. Gao, A. Kogar, A. Zong, A. M. Mier Valdivia, T. H. Dinh, S.-M. Huang, B. Singh, C.-H. Hsu, T.-R. Chang, J. P. C. Ruff, K. Watan-abe, T. Taniguchi, H. Lin, G. Karapetrov, D. Xiao, P. Jarillo-Herrero, and N. Gedik, Spontaneous gyrotropic electronic order in a transition-metal dichalcogenide, 
+
+Nature 578 , 545 (2020) .[19] X. Zhang, Y. Zhang, S. Okamoto, and D. Xiao, Ther-mal Hall Effect Induced by Magnon-Phonon Interactions, 
+
+Phys. Rev. Lett. 123 , 167202 (2019) .[20] Q. Wang, M.-Q. Long, and Y.-P. Wang, Magnetic moments of chiral phonons induced by coupling with magnons, Phys. Rev. B 110 , 024423 (2024) .[21] Z. Jin, T. Gong, J. Liu, H. Yang, Z. Zeng, Y. Cao, and P. Yan, Strong Coupling of Chiral Magnons in Altermag-6
+
+nets, Phys. Rev. Lett. 135 , 126702 (2025) .[22] H. Katsura, N. Nagaosa, and P. A. Lee, Theory of the Thermal Hall Effect in Quantum Magnets, 
+
+Phys. Rev. Lett. 104 , 066403 (2010) .[23] S. Murakami and A. Okamoto, Thermal Hall Effect of Magnons, J. Phys. Soc. Jpn. 86 , 011010 (2017) .[24] D.-S. Tang and B.-Y. Cao, Phonon thermal trans-port and its tunability in GaN for near-junction thermal management of electronics: A review, 
+
+Int. J. Heat Mass Transf. 200 , 123497 (2023) .[25] I. ˇZuti´ c, J. Fabian, and S. Das Sarma, Spintronics: Fundamentals and applications, 
+
+Rev. Mod. Phys. 76 , 323 (2004) .[26] A. V. Chumak, V. Vasyuchka, A. Serga, and B. Hille-brands, Magnon spintronics, Nat. Phys. 11 , 453 (2015) .[27] H. Yuan, Y. Cao, A. Kamra, R. A. Duine, and P. Yan, Quantum magnonics: When magnon spintronics meets quantum information science, Phys. Rep. 965 , 1 (2022) ,quantum magnonics: When magnon spintronics meets quantum information science. [28] D. A. Bozhko, V. I. Vasyuchka, A. V. Chumak, and A. A. Serga, Magnon-phonon interactions in magnon spintron-ics (Review article), Low Temp. Phys. 46 , 383 (2020) .[29] M. Maldovan, Sound and heat revolutions in phononics, 
+
+Nature 503 , 209 (2013) .[30] Y. Liu, X. Chen, and Y. Xu, Topological Phonon-ics: From Fundamental Models to Real Materials, 
+
+Adv. Funct. Mater. 30 , 1904784 (2020) .[31] K. Buschow, P. van Engen, and R. Jongebreur, Magneto-optical properties of metallic ferromagnetic materials, 
+
+J. Magn. Magn. Mater. 38 , 1 (1983) .[32] Magneto-optical properties of d ferromagnetic materials, in 
+
+Electronic Structure and Magneto-Optical Properties of Solids 
+
+(Springer Netherlands, Dordrecht, 2004) pp. 71–228. [33] T. Haider, A review of magneto-optic effects and its ap-plication, Int. J. Electromagn. Appl 7, 17 (2017). [34] X.-H. Zhou, X. Ye, and T. Yu, Chiral locking of magnon flow and electron-spin accumulation in near-field radia-tive spin transfer, Phys. Rev. Appl. 24 , 034055 (2025) .[35] M. Weißenhofer, P. Rieger, M. S. Mrudul, L. Mikadze, U. Nowak, and P. M. Oppeneer, Chiral Phonons Aris-ing from Chirality-Selective Magnon-Phonon Coupling, 
+
+Phys. Rev. Lett. 135 , 216701 (2025) .[36] R. Xue, Z. Qiao, Y. Gao, and Q. Niu, Ex-trinsic mechanisms of phonon magnetic moment, 
+
+Phys. Rev. Lett. 135 , 106605 (2025) .[37] N. Nagaosa, J. Sinova, S. Onoda, A. H. Mac-Donald, and N. P. Ong, Anomalous Hall effect, 
+
+Rev. Mod. Phys. 82 , 1539 (2010) .[38] R. Karplus and J. M. Luttinger, Hall effect in ferromag-netics, Phys. Rev. 95 , 1154 (1954) .[39] R. R. Birss, Symmetry and magnetism, (No Title) (1964). [40] Y. Yao, L. Kleinman, A. H. MacDonald, J. Sinova, T. Jungwirth, D.-s. Wang, E. Wang, and Q. Niu, First Principles Calculation of Anoma-lous Hall Conductivity in Ferromagnetic bcc Fe, 
+
+Phys. Rev. Lett. 92 , 037204 (2004) .[41] Z. Liu, M. Ozeki, S. Asai, S. Itoh, and T. Ma-suda, Chiral Split Magnon in Altermagnetic MnTe, 
+
+Phys. Rev. Lett. 133 , 156702 (2024) .[42] M. Alaei, P. Sobieszczyk, A. Ptok, N. Rezaei, A. R. Oganov, and A. Qaiumzadeh, Origin of A-type antifer-romagnetism and chiral split magnons in altermagnetic 
+
+α-MnTe, Phys. Rev. B 111 , 104416 (2025) .[43] X. Chen, Y. Liu, P. Liu, Y. Yu, J. Ren, J. Li, A. Zhang, and Q. Liu, Unconventional magnons in collinear magnets dictated by spin space groups, 
+
+Nature 640 , 349 (2025) .[44] S. M. Rezende, Fundamentals of magnonics , Vol. 969 (Springer, 2020). [45] R. Cheng and Q. Niu, Dynamics of antiferromagnets driven by spin current, Phys. Rev. B 89 , 081105 (2014) .[46] J. Li, C. B. Wilson, R. Cheng, M. Lohmann, M. Kavand, W. Yuan, M. Aldosary, N. Agladze, P. Wei, M. S. Sherwin, and J. Shi, Spin cur-rent from sub-terahertz-generated antiferromagnetic magnons, Nature 578 , 70 (2020) .[47] S. Reimers, L. Odenbreit, L. ˇSmejkal, V. N. Strocov, P. Constantinou, A. B. Hellenes, R. Jaeschke Ubiergo, W. H. Campos, V. K. Bharadwaj, A. Chakraborty, T. Denneulin, W. Shi, R. E. Dunin-Borkowski, S. Das, M. Kl¨ aui, J. Sinova, and M. Jourdan, Direct observa-tion of altermagnetic band splitting in CrSb thin films, 
+
+Nat. Commun. 15 , 2116 (2024) .[48] J. Ding, Z. Jiang, X. Chen, Z. Tao, Z. Liu, T. Li, J. Liu, J. Sun, J. Cheng, J. Liu, Y. Yang, R. Zhang, L. Deng, W. Jing, Y. Huang, Y. Shi, M. Ye, S. Qiao, Y. Wang, Y. Guo, D. Feng, and D. Shen, Large Band Splitting in g-Wave Altermagnet CrSb, 
+
+Phys. Rev. Lett. 133 , 206401 (2024) .[49] T. Urata, W. Hattori, and H. Ikuta, High mobility charge transport in a multicarrier altermagnet CrSb, 
+
+Phys. Rev. Mater. 8, 084412 (2024) .[50] L. Onsager, Reciprocal relations in irreversible processes. i., Phys. Rev. 37 , 405 (1931) .[51] L. Onsager, Reciprocal relations in irreversible processes. ii., Phys. Rev. 38 , 2265 (1931) .[52] P. A. McClarty and J. G. Rau, Landau Theory of Alter-magnetism, Phys. Rev. Lett. 132 , 176702 (2024) .[53] R.-C. Xiao, H. Li, H. Han, W. Gan, M. Yang, D.-F. Shao, S.-H. Zhang, Y. Gao, M. Tian, and J. Zhou, Anomalous-Hall N´ eel textures in altermagnetic materials, 
+
+Science China Physics, Mechanics and Astronomy 69 , 217511 (2025) 
+
+[54] E. M. Pugh and N. Rostoker, Hall Effect in Ferromag-netic Materials, Rev. Mod. Phys. 25 , 151 (1953) .[55] A. Kundt, Das Hall’sche Ph¨ anomen in Eisen, Kobalt und Nickel, Annalen der Physik 285 , 257 (1893) .[56] E. M. Pugh, Hall effect and the magnetic properties of some ferromagnetic materials, 
+
+Phys. Rev. 36 , 1503 (1930) .[57] E. M. Pugh and T. W. Lippert, Hall e.m.f. and intensity of magnetization, Phys. Rev. 42 , 709 (1932) .[58] H. Tan, Y. Liu, and B. Yan, Unconventional anomalous Hall effect from magnetization parallel to the electric field, Phys. Rev. B 103 , 214438 (2021) .[59] J. Cao, W. Jiang, X.-P. Li, D. Tu, J. Zhou, J. Zhou, and Y. Yao, In-Plane Anomalous Hall Ef-fect in PT -Symmetric Antiferromagnetic Materials, 
+
+Phys. Rev. Lett. 130 , 166702 (2023) .[60] J. Zhou, W. Zhang, Y.-C. Lin, J. Cao, Y. Zhou, W. Jiang, H. Du, B. Tang, J. Shi, B. Jiang, X. Cao, B. Lin, Q. Fu, C. Zhu, W. Guo, Y. Huang, Y. Yao, S. S. P. Parkin, J. Zhou, Y. Gao, Y. Wang, Y. Hou, Y. Yao, K. Suenaga, X. Wu, and Z. Liu, Heterodimensional superlattice with in-plane anomalous Hall effect, Nature 609 , 46 (2022) .[61] Z. Liu, M. Wei, W. Peng, D. Hou, Y. Gao, 7
+
+and Q. Niu, Multipolar Anisotropy in Anomalous Hall Effect from Spin-Group Symmetry Breaking, 
+
+Phys. Rev. X 15 , 031006 (2025) .[62] L. Attias, A. Levchenko, and M. Khodas, In-trinsic anomalous Hall effect in altermagnets, 
+
+Phys. Rev. B 110 , 094425 (2024) .[63] L. ˇSmejkal, J. Sinova, and T. Jungwirth, Beyond Con-ventional Ferromagnetism and Antiferromagnetism: APhase with Nonrelativistic Spin and Crystal Rotation Symmetry, Phys. Rev. X 12 , 031042 (2022) .[64] P. Liu, J. Li, J. Han, X. Wan, and Q. Liu, Spin-Group Symmetry in Magnetic Materials with Negligible Spin-Orbit Coupling, Phys. Rev. X 12 , 021016 (2022) .[65] X. Chen, J. Ren, Y. Zhu, Y. Yu, A. Zhang, P. Liu, J. Li, Y. Liu, C. Li, and Q. Liu, Enumeration and Representation Theory of Spin Space Groups, 
+
+Phys. Rev. X 14 , 031038 (2024) .[66] Z. Xiao, J. Zhao, Y. Li, R. Shindou, and Z.-D. Song, Spin Space Groups: Full Classification and Applications, 
+
+Phys. Rev. X 14 , 031037 (2024) .[67] Y. Jiang, Z. Song, T. Zhu, Z. Fang, H. Weng, Z.-X. Liu, J. Yang, and C. Fang, Enumeration of Spin-Space Groups: Toward a Complete Description of Symmetries of Magnetic Orders, Phys. Rev. X 14 , 031039 (2024) .[68] Z. Liu, Y. Gao, and Q. Niu, Rigid-Body Anisotropy in Noncollinear Antiferromagnets, 
+
+Phys. Rev. Lett. 136 , 026703 (2026) .[69] M. Roig, A. Kreisel, Y. Yu, B. M. Andersen, and D. F. Agterberg, Minimal models for altermagnetism, 
+
+Phys. Rev. B 110 , 144412 (2024) .[70] R. Gonz´ alez-Hern´ andez and B. Uribe, Model Hamil-tonian for altermagnetic topological insulators, 
+
+Phys. Rev. B 112 , 184101 (2025) .

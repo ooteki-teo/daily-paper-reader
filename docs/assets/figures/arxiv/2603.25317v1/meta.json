@@ -1,0 +1,38 @@
+{
+  "version": 2,
+  "extractor": "pdffigures2",
+  "figures": [
+    {
+      "url": "assets/figures/arxiv/2603.25317v1/fig-001.webp",
+      "caption": "Figure 1. Crystal and magnetic structure of CrSb and DFT calculations. (A) Antiferromagnetic unit cell of CrSb, with alternating collinear magnetic moments on the Cr sites oriented along the c-axis. (B) Brillouin zone of CrSb in the space group P63/mmc, showing the high symmetry directions. (C-D) Temperature dependence of the lattice parameters. The temperature dependence of the volume is mostly determined by the c-axis expansion with increasing temperature. (E) Harmonic DFPT phonon dispersion of CrSb in the paramagnetic state (blue), overlaid with the magnetic calculations (red). (F-G) Electronic band structure of CrSb obtained from DFT in the non-magnetic (F) and antiferromagnetic phases (G) with the DOS in the side panels. The total DOS phonon DOS (black line) is projected into Cr 3d and Sb 5p states. The color code in the band structure indicates the strength of the real part of the static band resolved nesting function χn(k) =∑ m ∑ q(fn(k) − fm(k + q))/(ϵn(k) − ϵm(k + q) + iδ), being fn(k) the occupation of the state n at wavevector k, ϵn(k) its energy, and δ a finite infinitesimal real number. The scale bar is common for both plots.",
+      "page": 2,
+      "index": 1,
+      "width": 1060,
+      "height": 522
+    },
+    {
+      "url": "assets/figures/arxiv/2603.25317v1/fig-002.webp",
+      "caption": "Figure 2. Diffuse Scattering results. (A-F) Comparison of the DS maps measured at 300 K (bottom part) and above TN (upper part). Appropriate Laue symmetry was applied to the reconstructed layers to remove detector gaps and improve signal-to-noise ratio. (G-H) Temperature dependence of DS integral intensity and correlation length, respectively, obtained after peak fitting in the regions of interest (ROIs) shown in (A) and (E). The color scheme corresponds to the respective ROIs. The error bars represent the fit uncertainty.",
+      "page": 3,
+      "index": 2,
+      "width": 1052,
+      "height": 536
+    },
+    {
+      "url": "assets/figures/arxiv/2603.25317v1/fig-003.webp",
+      "caption": "Figure 3. Inelastic x-ray scattering and Kohn-like anomaly. (A-B) Top panels, energy-momentum IXS maps along the H03 direction at 293 K and 750 K, respectively, showing the soft phonon dispersion and enhancement of phonon intensity near the AFM transition temperature. Bottom panels, first-principles calculated IXS spectral functions including the structure-factor Sn(q+G). An arbitrary linewidth is chosen for visualization. The magnetic and non-magnetic phonons were obtained via DFPT at the harmonic level and considering non-perturbative anharmonicity within the SSCHA at 750 K, respectively. The SSCHA phonons are calculated from the Hessian of the SSCHA free energy (see Ref. [45] for more details). (C) Representative IXS spectra at the (0.5 0 3) M point measured between 200 K and 950 K. The elastic line (zero energy loss) and two individual phonon modes are shown as area plots, together with their total fit (solid line) for each spectrum. (D) Fitted ω1 phonon dispersion as a function of temperature, highlighting the Kohn-like anomaly at the M point at high temperature. (E) Temperature dependence of the ω1 phonon energy at the M point measured along the H03 and HH2 directions, together with the nearly unchanged higher-energy optic mode ω2. (F-G) Fitted ω1 phonon intensity and linewidth, respectively, as a function of momentum transfer at selected temperatures. The error bars represent the fit uncertainty.",
+      "page": 4,
+      "index": 3,
+      "width": 1055,
+      "height": 437
+    },
+    {
+      "url": "assets/figures/arxiv/2603.25317v1/fig-004.webp",
+      "caption": "Figure 4. Fermiology and linear response electron-phonon coupling in CrSb. (A) Fermi-surface of the non-magnetic phase. (B) Calculated nesting function χ′′ 0 (q) = ∑ nmk δ(ϵn(k) − EF )δ(ϵm(k + q) − EF ) for the non-magnetic (black) and magnetic (red) phases. (C) Spin-resolved Fermi surface of the magnetic phase. Red and blue tones denote spin-up and spindown bands, respectively. (D) Linear-response electron–phonon linewidths for the non-magnetic (black) and magnetic (red) phases. (E) Temperature dependence of the AFM neutron scattering intensity (blue diamonds, adapted from [55]), the nearestneighbour in-plane Cr–Cr distance (black filled circles), and the phonon intensity of the ω1 mode (open circles). (F) Candidate lattice distortions of the non-magnetic phase involving in-plane and out-of-plane displacements of Cr and Sb atoms.",
+      "page": 6,
+      "index": 4,
+      "width": 1058,
+      "height": 548
+    }
+  ]
+}

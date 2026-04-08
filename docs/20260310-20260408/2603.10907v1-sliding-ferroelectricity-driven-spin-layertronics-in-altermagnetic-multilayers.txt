@@ -1,0 +1,834 @@
+Title: 2603.10907v1.pdf
+
+URL Source: https://arxiv.org/pdf/2603.10907v1
+
+Published Time: Thu, 12 Mar 2026 01:11:58 GMT
+
+Number of Pages: 16
+
+Markdown Content:
+1
+
+# Sliding  Ferroelectric ity Driven  Spin -Layertronics 
+
+# in  Altermagnet ic  Multilayers 
+
+Rui Peng 1,* , Guangxu Su 1, Yangyang Fan 1, Jiaan Li 1, Fanxin Liu 1,†, Yee Sin Ang 2, ‡ 
+
+> 1
+
+School of Physics, Zhejiang University of Technology, Hangzhou 310023, China  
+
+> 2
+
+Science, Mathematics and Technology Cluster, Singapore University of Technology and Design, 
+
+Singapore 487372, Singapore. 
+
+Email:  *pengrui@zjut. edu.cn,  †liufanxin@zjut.edu.cn , ‡yeesin_ang@sutd.edu.sg 
+
+# Abstract 
+
+The synergy of ferroicity  with  altermagnet ism offers a novel platform for designing 
+
+multifunctional  altermagnetic -spintronic device  technology . In this work, we propose a 
+
+mechanism to achieve nonvolatile electrical  manipulation  of  spin and layer degrees of 
+
+freedom  in  an altermagnetic  bilayer  via  sliding ferroelectricity.  Using first -principles 
+
+calculations , w e show  that an interlayer translation  can  induce a switchable out -of -plane 
+
+ferroelectric polarization  in bilayer CuF 2, which  directly couples to and reverses the  d-wave 
+
+altermagnetic spin  splitting . Notably, the altermangetic spin splitting is layer -locked, the 
+
+sliding ferroelectricity -driven  switching thus  embodying  a nonvolatile  spin -layertronics 
+
+functionality that couples spin -polarized transport and  layer  degree of freedom  in a single 
+
+platform . We show that i n quadrilayer  CuF 2, four polarization states are identified  which may 
+
+offer  multi -state logic device  applications . These  findings establish sliding ferroelectricity as 
+
+a versatile  tool for designing voltage -controlled, high -speed and energy -efficient spin -
+
+layer tronic devices based on altermagnets. 2
+
+# 1.  Introduction 
+
+Altermagnetism represents an emerging frontier in collinear magnetism, uniquely combining 
+
+antiferromagnetic  (AFM)  symmetry with a momentum -dependent spin splitting reminiscent 
+
+of ferromagnets  [1-5]. This novel class exhibits zero net magnetization, ensuring robustness 
+
+against external fields and compatibility with high -speed operations, while simultaneously 
+
+hosting a non -relativistic spin -split electronic structure that is crucial for spin manipulat ion 
+
+[6-25 ]. Such a dichotomy unlocks a wealth of emergent phenomena —including the 
+
+generation of non -collinear spin currents  [1, 6,1 6], anomalous Hall effects  [4,10 ], and 
+
+substantial tunneling magnetoresistance  [7]—which collectively position altermagnets as a 
+
+highly promising platform for next -generation spintronics. The recent experimental 
+
+confirmation of various altermagnetic candidates has further amplified their potential for 
+
+ultra -compact device integration  [26-31 ]. However, a central challenge persists: achieving 
+
+efficient, purely electrical control over the altermagnetic order and its associated spin 
+
+polarization remains essential  for their seamless integration with modern electronics. 
+
+The pursuit of electrical control in altermagnets motivates their integration with ferroic 
+
+orders, leading to the emerging class of multiferroic altermagnets  [32 -42 ]. One prominent 
+
+example is the altermagnetoelectric effect, where ferroelectric  (FE)  polarization couples 
+
+directly to the altermagnetic spin texture, allowing electrical switching of the magnetic order 
+
+[32 -39 ]. This success invites the exploration of other ferroic couplings, such as with 
+
+ferroelasticity, to achieve mechanical or strain -based control  [40 -42 ]. A particularly promising 
+
+yet distinct avenue is the integration of altermagnetism  with  sliding  ferroelectricy —a
+
+phenomenon unique to van der Waals mult ilayers, in which a lateral interlayer translation 
+
+induces interfacial charge redistribution and generates a switchable out -of -plane 
+
+polarization  [43 -52 ]. While major efforts have been focused on harnessing sliding 
+
+ferroelectricy  to  manipulate  unconventional magnetism in bilayer heterostructure s [53 -55 ],
+
+how t he layer degree of freedom  (DOF) —inherent in  a multilayer ed system —couple 
+
+cooperatively with both altermagnetic and sliding -FE  orders  to tunable multifunctional 
+
+behavior  remains unexplored thus far . Critically, the  simultaneous  manipulation of  the layer 
+
+DOF and  altermagnetism via sliding ferroelectricity  shall substantially broaden the physics 
+
+and application  potential  of multiferroic altermagnets .3
+
+In this work, we  propose  the concept of  nonvolatile  switchable spin -layertronics in 
+
+two -dimensional  (2D)  multiferroic altermagnet  by integrating  sliding ferroelectricity  with 
+
+altermagnetism  and layer  DOF  in  a bilayer  setup . Using monolayer  CuF 2—a known 
+
+altermagnet exfoliable from its bulk phase  [56–57]—as a building block, we show that bilayer 
+
+CuF 2 in specific stacking configurations exhibits intrinsic sliding ferroelectricity  with  two 
+
+stable  FE  states, denoted FE -I and FE -II, and sizable out -of -plane polarization  (±1.23 pC/m) 
+
+that  enables efficient electrical control.  Notably, the  system exhibit layer -locked 
+
+altermagnetic spin -split bands , which are energetically shifted  in the opposite  fashion  by the 
+
+intrinsic out -of -plane  FE  polarization. S witching between FE -I and FE -II  thus  reverses the 
+
+energetic shifting of these layer -locked altermagnetic spin -split bands, resulting in 
+
+altermangetic spin reversal  (see  Fig. 1 ). By e xtending to quadrilayer CuF 2, we identify four 
+
+inequivalent  FE  polarization states,  in which the layer and  the  spin -polarized current  can be 
+
+separately controlled via sliding ferroelectricity , thus  offering  a spin -layertronic platform to 
+
+achieve multistate  device  functionalities.  Our  findings reveal  sliding -ferroelectricity -driven 
+
+altermagnetic  bilayer  as  a viable platform  for electrically controllable, multi -state spin -
+
+layer tronic  route towards advanced  memory and logic devices. 
+
+Fig. 1  Concept of sliding -ferroelectricity driven spin -layertronic  in an altermagnetic bilayer. 
+
+Upon switching of the  FE  states (FE -I and FE -II), the built -in electric polarization is reversed. 
+
+The reversal of the  FE  polarization causes the altermagnetic spin -split bands to energetically 
+
+shift in the opposite direction for the two sub -monolayers, thus leading to altermagnetic spin 
+
+switching. 4
+
+# 2.  Results  and Discussion 
+
+2.1  Sliding Ferroelectricicty in Bilayer CuF 2
+
+Among the  commonly reported  2D  altermagnetic materials, several prototypical structural 
+
+motifs prevail, including the  V2Se 2O type (space group  P4/mmm ; No. 123 ) [6,7,12 ], CrS 
+
+type (space group  P4/mmm ; No. 123 ) [8,1 6,17 ], and CuF 2 type (space group  P2 ₁/c; No. 14 )
+
+[9, 42 ]; see  Fig.  S1. For the first  two  structural families, their stable bilayer stacking 
+
+configurations crystallize in space group  P4/nmm  (No. 129) , which lacks  polarity  and 
+
+precludes the emergence of sliding ferroelectricity. In contrast, the  Cu F2-type structure 
+
+presents a distinct case.  To understand the origin of  the  polarity  in its  bilayer stacking 
+
+configuration , it is instructive to compare its monolayer structure with those of  an other  two 
+
+similar structures  with the MX 2 (M = metal, X = nonmetal)  stoichiometry . Fig . S1 compares 
+
+the crystal structures of monolayer s 1T  MoS 2 (space group  P𝟑 ̅ m1 ; No. 164 ), 1T’ WTe 2
+
+(space group  P2 1/m ; No. 11 ) and  CuF 2. In monolayer  1T  MoS 2, the  Mo  atom is octahedrally 
+
+coordinated by six  S atoms . In  monolayer  1T’ WTe 2, the  W atoms undergo spontaneous 
+
+dimerization due to Peierls distortion, resulting in a distorted octahedral coordination.  In 
+
+contrast, the octahedral coordination in monolayer  CuF 2 is distorted in a different manner, 
+
+driven by the Jahn –Teller effect.  Recent studies  demonstrated the out -of -plane  switchable 
+
+electric  polarization in  bi layer  1T’  systems  [44 ,45 ,4 7,4 8]. This polarization arises from 
+
+uncompensated interlayer vertical charge transfer, which can be switched through interlayer 
+
+sliding.  Inspired by these  findings , we stack monolayer s CuF 2 into  a bilayer  system  and 
+
+explore the potential of  sliding  ferroelectricity in bilayer CuF 2.
+
+The bilayer structure is constructed by stacking the top layer onto the bottom layer  under 
+
+the symmetry operation  {m z|(t x, t y, d)} , where t x and t y represent the translation distances 
+
+along the x - and y -directions, respectively, and d denotes the interlayer distance. The energy 
+
+landscapes of bilayer  CuF 2 as a function of  tx and t y are presented in  Fig. 2(a, b) . As shown, 
+
+the energy profile exhibits a double -well potential along the x -direction and a single -well 
+
+potential along the y -direction.  Energy minima occur at  tx = ±a0 and t y = b 0, where  a0 = 1/6 a
+
+and b 0 = 1/2 b (with a and b being the crystal constants of bilayer  CuF 2). Correspondingly, 
+
+bilayers governed by  {m z|( ±a0, b 0, d FE )}  correspond to two equivalent  FE  states, labeled FE -
+
+I and FE -II, while the configuration under  {m z|( 0, b 0, d IM )}  represents an intermediate (IM) 5
+
+state, with d FE  and d IM  referring to the interlayer distances of the FE and IM states, 
+
+respectively  [see  Fig. 2(c) ]. The energy barrier between the two FE states is  3.83  meV /atom .
+
+The two FE states can be reversibly switched via interlayer sliding. They can also be related 
+
+to each other by a glide operation with respect to the horizontal plane. 
+
+Fig. 2  Energy profiles  of  bilayer  CuF 2 along (a) x - and (b) y -directions . (c)  Crystal structures 
+
+of  FE -I, IM, and FE -II states  from  side  and  top  views .
+
+The space group of  FE -I (FE -II ) state  is  Pc  (No. 7), which lacks inversion symmetry. The 
+
+optimized lattice constants of  FE -I (FE -II ) state  are a = 5.32 Å and b = 3.72 Å. The asymmetry 
+
+in atomic positions between the top and bottom layers results in a corresponding shift of the 
+
+charge centers, which directly gives rise to the spontaneous  out -of -plane  electric polarization 
+
+in  FE -I (FE -II ) state . Using the Berry phase approach, the electric polarization is calculated 
+
+to be  +1.23 pC/m for FE -I state  and −1.23 pC/m for FE -II  state  (see  Fig. S 2).  This magnitude 
+
+exceeds that of several recently reported  2D  sliding  FE  bilayers, such as MnBi 2Te 4
+
+(0.45 pC/m)  [49] and MX 2 (M = Mo, W; X = S, Se; 0.59 –0.77 pC/m)  [51 ], and is comparable 
+
+to values found in B 2X3 (X = S, Se, Te; 1.23 pC/m)  [52 ] and BX (X = P, As, Sb; 0.965 –
+
+1.075 pC/m)  [50 ]. The presence of out -of -plane  electric  polarization is further corroborated 
+
+by differential charge density analysis. As shown in the insets of  Fig. S 2, a clear interlayer 6
+
+charge transfer in FE -I state  indicates an upward -oriented electric polarization. Conversely, 
+
+the direction of charge transfer is reversed in FE -II  state , confirming an oppositely oriented 
+
+polarization.  In contrast, the  IM  state crystallizes in the space group  Pca2 1 (No. 29).  The 
+
+specific gliding symmetry present in the IM  state  suppresses the out -of -plane component of 
+
+the electric polarization , leading to a net zero polarization along the stacking direction. 
+
+2.2  FE  Reversal  of  Layer -Locked  Altermagnetic  Spin -Split  Bands  in  Bilayer CuF 2
+
+In our previous work,  monolayer CuF 2 was  identified as  an altermagnet  [42 ]. To determine 
+
+the magnetic ground states of  bilayer  CuF 2, we calculated the energy difference s between 
+
+C-type and G -type  AFM  orders  for both the  FE  and IM  states  (see  Fig. S 3).  In  FE -I (FE -II) 
+
+state, t he  C-type AFM order is found to be 0.78 meV per unit cell higher in energy than the 
+
+G-type AFM order, indicating that the  G-type AFM order is energetically favorable.  The 
+
+computed magnetic moments on the Cu sites  of  FE -I (FE -II)  state  are 0.625 (0.624), −0.625 
+
+(−0.624),  −0.624 ( −0.625), and 0.624 (0.625)  μB for Cu1, Cu2, Cu3, and Cu4, respectively. 
+
+Due to symmetry breaking, the Cu atoms in the top (bottom) layer exhibit slightly smaller 
+
+magnetic moments than those in the bottom (top) layer, although the net magnetic moment 
+
+remains zero . Similarly, in the IM state, the C -type AFM order is  2.12  meV per unit cell higher 
+
+than the G -type AFM, confirming the G -type order as the magnetic ground state. 
+
+In order to examine whether the  synergistic switch of  electric and  spin /layer 
+
+polarizations  exist  in this system , we plot t he  layer -resolved  spin -polarized  band structures 
+
+and density of states  for  FE -I and FE -II  states  in  Fig. 3 , and those of IM  state  in  Fig. S 4. In 
+
+the IM state,  altermagnetic  spin splitting is preserved within each layer, with opposite spin 
+
+splitting between the two layers, forming a layer -locked  spin -momentum coupling.  The 
+
+energy bands are layer -degenerate due to the absence of  out -of -plane  electric polarization, 
+
+which leads to spin degeneracy across the entire system.  From a symmetry perspective, the 
+
+out -of -plane glide symmetry, when combined with the global spinor rotation  {m z | 0 1/2 0}U ,
+
+prohibits spin splitting. This is because the glide operation exchanges the two atoms with 
+
+opposite spin —Cu1 and C u3 (and similarly C u2 and C u4) —while leaving the 2D k -space 
+
+invariant, thereby enforcing spin degeneracy throughout the 2D Brillouin zone. 7
+
+Fig. 3  Layer -resolved  spin -polarized b and structure s of  (a) FE -I and (b) FE -II states with the 
+
+contribution from the top layer . Inset  in (a) is the  isoenergy contours  near the Fermi level of 
+
+FE -I state . Layer -resolved  spin -polarized b and structure s of  (c) FE -I and (d) FE -II states with 
+
+the contribution from the bottom layer . Inset  in (d) is the  isoenergy contours  near the Fermi 
+
+level of FE -II state . Density of states  of (e) FE -I and (f) FE -II states . Fermi level is set to zero 
+
+in ( a) to ( f). Longitudinal and transverse spin conductivities  in  (g) FE -I and (h)FE -II states. 
+
+Insets are s chematic diagram s of the  layer -polarized spin currents in FE -I and FE -II states. 
+
+In contrast, the layer degeneracy is broken in FE -I (FE -II)  state  due to the presence 
+
+of out -of -plane electric polarization. As shown in  Fig. 3 (a -f) , the  conduction band minimum 
+
+(CBM ) of FE -I (FE -II)  state  is mainly from the bottom (top) layer, while the  valence band 
+
+maximum  (VBM ) is domanited by the top (bottom) layer. T he layer polarization between the 
+
+top and bottom layers is measured as  0.13  (−0.13 ) eV  in FE -I (FE -II)  state . This results in a 
+
+net  altermagnetic  spin splitting in the band structures of both FE -I and FE -II  state s,
+
+resembling that of monolayer CuF 2. The spin -up and spin -down states remain degenerate 
+
+along M –X–Γ–Y–M, while  altermagnetic  spin splitting emerges along M′ –Γ–M.  Furthermore, 
+
+the spin -momentum  coupling  pattern is opposite between FE -I and FE -II  state s. Upon  FE 
+
+switching, the spin polarization is simultaneously reversed, enabling nonvolatile control of 
+
+the  altermagnetic  spin splitting. This spin reversal is also evident in the isoenergy contours 
+
+of FE -I and FE -II  state s, further  confirming the feasibility of manipulating  altermagnetic  spin 8
+
+splitting through  FE  polarization switching, as illustrated in the insets of  Fig. 3 (a) and (d) .
+
+2.3  Sliding Ferroelectricity Driven  Spin -Layertronics  in  Multilayer CuF 2
+
+The  reversal  of  altermagnetic  spin splitting leads to concomitant changes in other physical 
+
+properties. In altermagnets, an anisotropic spin splitting allows an external in -plane electric 
+
+field to generate a spin current  [1,6,1 6]. The spin conductivity of bilayer CuF 2 can be 
+
+calculated  using the  Boltzmann transport equation . As illustrated in  Fig.  3(g), the longitudinal 
+
+spin conductivity in FE -I state  is zero, while a sizable signal appears in the transverse 
+
+direction. Notably, upon  FE  switching, the conductivity reverses sign owing to the opposite 
+
+spin -momentum  coupling  patterns between FE -I and FE -II  states , as shown in  Fig.  3(h).
+
+These results demonstrate that  FE  polarization can effectively control spin currents in bilayer 
+
+CuF 2, enabling nonvolatile spin information encoding and electric -field -controllable 
+
+spintronic device applications. 
+
+It is noteworthy that the layer polarization is accompanied by spin polarization, which 
+
+in turn results in a layer -polarized  spin  current. Specifically, in the FE -I and FE -II  states , the 
+
+spin  current is predominantly localized in the top and bottom layers, respectively, thereby 
+
+endowing the  spin  current with an additional layer  DOF ; see the insets in  Fig. 3(g -h) .
+
+Consequently, the layer -spin polarization can alternatively be detected by examining the 
+
+layer localization of the  spin  current. We describe a state exhibiting coexisting spin and layer 
+
+polarization that is switchable via  FE  polarization as (P, S, L), where P =  ±1 corresponds to 
+
+upward and downward electric polarization, S =  ± 1 represents spin -up and spin -down 
+
+currents , and L =  ±1 denotes the top and bottom layers. Accordingly, the FE -I and FE -II 
+
+states can be expressed as ( +1, +1, +1) and (−1,−1,−1), respectively , implying t he synergistic 
+
+regulation of spin current and layer occupation  by ferroelectric  switching .
+
+The interplay between electric,  spin  and layer  polarization  can be further extended to 
+
+multilayer  systems. For instance, in quadrilayer CuF 2, interlayer sliding gives rise to four 
+
+inequivalent polarization states:  (+2,+1,+2) , ( +1, −1, −1),  (−1,+1, +1) , and  (−2, −1, −2) ; see  Fig. 
+
+S5 . The  (+2,+1,+2)  state, characterized by consecutive AA stacking across two FE -I
+
+configurations, naturally exhibits upward electric polarization. Applying a glide operation to 
+
+this state yields the  (−2, −1, −2)  state , which reverses the out -of -plane  electric  polarization 
+
+direction.  Similarly, the ( +1, −1, −1) state, formed by AA stacking across FE -I and FE -II 9
+
+configurations , also shows upward  electric  polarization, and its glide counterpart ( −1, +1,  +1) 
+
+state  reverses the  electric  polarization.  Owing to their distinct stacking sequences, the 
+
+absolute electric polarization values differ between the ( ±2, ±1, ±2) and ( ±1, ∓1, ∓1) states. 
+
+(±2, ±1, ±2)  states exhibit a larger electric polarization of  ±4.22 pC/m, whlie  (±1, ∓1, ∓1) 
+
+states have an electric polarization of  ±1.45 pC/m.  Fig . 4 displays the band structures of 
+
+these four states in quadrilayer CuF 2. In the  (±2, ±1, ±2)  states , the VBM originates from the 
+
+two outer layers, whereas in the  (±1, ∓1, ∓1) , the VBM arises from the two inner layers. This 
+
+layer -dependent band -edge localization enables selective manipulation of spin currents 
+
+within specific layers,  opening avenues  for  electric -controlled spin -layertronic functionality 
+
+across all four constituent layers. 
+
+Fig. 4  Layer -resolved  spin -polarized band structures and s chematic diagram s of layer -
+
+polarized spin current  in  (a) (+2,+1,+2), (b) (+1, −1, −1), (c) ( −2, −1, −2), and (d)  (−1,+1, +1) 
+
+states.  Fermi level is set to zero .
+
+# 3.  Conclusion 
+
+In summary, we have proposed and theoretically validated a strategy to achieve nonvolatile 
+
+FE -switchable  spin -layertronics  by integrating altermagnetism with sliding ferroelectricity  in 
+
+multilayer heterostructures . We  demonstrate d that interlayer sliding induces out -of -plane  FE 
+
+polarization  in bilayer  CuF 2 which  directly couples to and reverses the  layer -locked  d-wave 
+
+altermagnetic spin -splitting texture. Transport calculations reveal ed  that the corresponding 10 
+
+layer -locked  spin conductivities can be ferroelectrically encoded, highlighting the potential 
+
+of sliding  FE  altermagnets as nonvolatile nanomechanical spin -layer  switches.  Extending to 
+
+quadrilayer CuF 2, we identify four inequivalent polarization states,  thus revealing  a material 
+
+platform  for electrically controllable, multi -state  spin -layer logic and memory  devices.  Our 
+
+work not only addresses the key challenge of  multiferroic  switching in altermagnets, but also 
+
+establishes  FE  control  of spin -layertronic  that enriches the device application  landscape of 
+
+altermangets .
+
+# 4.  Methods 
+
+First -principles calculations are performed based on density functional theory (DFT)  [58] as 
+
+implemented in Vienna ab initio simulation package (VASP)  [59]. Exchange -correlation 
+
+interaction is described by the Perdew -Burke -Ernzerhof (PBE) parametrization of 
+
+generalized gradient approximation (GGA)  [60 ]. Structures are relaxed until the force on 
+
+each atom is less than 0.01 eV/Å. The cutoff energy and electronic iteration convergence 
+
+criterion are set to  500 eV and 10 −5 eV, respectively. To sample the 2D Brillouin zone,  a
+
+Monkhorst –Pack (MP)  k-grid mess  [61 ] of 5 × 9 × 1  is  used for  bilayer  CuF 2. To avoid the 
+
+interaction between adjacent layers, a vacuum space of 20 Å is added. F E switching barrier 
+
+is obtained by nudged elastic band (NEB) method  [62 ]. Berry phase approach is employed 
+
+to evaluate the  out -of -plane  electric polarization  [63 ]. The spin -resolved transport properties 
+
+are calculated using a housing -made code, in which the electron energy and electron group 
+
+velocity are evaluated from the Wannier -based tight binding Hamiltonian  [64 ].
+
+# Supporting Information 
+
+Supporting Information is available from the Wiley Online Library or from  the author .
+
+# Acknowledgement s
+
+This work is funded by the National Natural Science Foundation of China (Nos. 12304431), 
+
+and Natural Science Foundation of Zhejiang Province (Nos. LQ24A040015).  Y. S. A. 
+
+acknowledges the supports from the Kwan Im Thong Hood Cho Temple Early Career Chair 11 
+
+Professorship in Sustainability and the Singpaore Ministry of Education Academic Research 
+
+Fund Tier 2 ( MOE -T2EP50224 -0021 ). 
+
+# Conflict of Interest 
+
+The authors declare no conflict of interest .
+
+# Author Contributions 
+
+R.P. and  Y.S.A. conceived and designed the project. R.P. performed the calculations and 
+
+analysis.  R.P.  and  Y.S.A.  wrote the manuscript with inputs from all authors.  F.X.L. reviewed 
+
+and analysed the results.  All the authors discussed the contents and prepared the 
+
+manuscript. 
+
+# Data Availability Statement 
+
+The data that support the findings of this study are available from the corresponding author 
+
+upon reasonable request .
+
+# Keywords 
+
+Altermagnetism , Sliding ferroelectricity, Layer degree of freedom, First -principles 
+
+calculations, Nonvolatile switching 
+
+# Reference s
+
+1.  R. González -Hernández, L. Šmejkal, K. Výborný, Y. Yahagi, J. Sinova, T. Jungwirth, and 
+
+J. Železný, Efficient electrical spin splitter based on nonrelativistic collinear 
+
+antiferromagnetism, Phys. Rev. Lett. 126, 127701 (2021). 
+
+2.  L. Šmejkal, J. Sinova, and T. Jungwirth, Emerging research landscape of altermagnetism, 
+
+Phys. Rev. X 12, 040501 (2022). 
+
+3.  L. Šmejkal, J. Sinova, and T. Jungwirth, Beyond conventional ferromagnetism and 
+
+antiferromagnetism: a phase with nonrelativistic spin and crystal rotation symmetry, Phys. 
+
+Rev. X 12, 031042 (2022). 12 
+
+4.  L. Šmejkal, A. H. MacDonald, J. Sinova, S. Nakatsuji, and T. Jungwirth, Anomalous Hall 
+
+antiferromagnets, Nat. Rev. Mater. 7, 482 (2022). 
+
+5.  L. Bai, W. Feng, S. Liu, L. Šmejkal, Y. Mokrousov, and Y. Yao, Altermagnetism: Exploring 
+
+new frontiers in magnetism and spintronics, Adv. Funct. Mater. 34, 2409327 (2024). 
+
+6.  H. Y. Ma, M. Hu, N. Li, J. P. Liu, W. Yao, J. F. Jia, and J. W. Liu, Multifunctional 
+
+antiferromagnetic materials with giant piezomagnetism and noncollinear spin current, 
+
+Nat. Commun. 12, 2846 (2021). 
+
+7.  Q. Cui, Y. Zhu, X. Yao, P. Cui, and H. Yang, Giant spin -Hall and tunneling 
+
+magnetoresistance effects based on a two -dimensional nonrelativistic antiferromagnetic 
+
+metal, Phys. Rev. B 108, 024410 (2023). 
+
+8.  X. Chen, D. Wang, L. Li, and B. Sanyal, Giant spin -splitting and tunable spin -momentum 
+
+locked transport in room temperature collinear antiferromagnetic semimetallic CrO 
+
+monolayer, Appl. Phys. Lett. 123, 022402 (2023). 
+
+9.  J. Sødequist and T. Olsena, Two -dimensional altermagnets from high throughput 
+
+computational screening: Symmetry requirements, chiral magnons, and spin -orbit effects, 
+
+Appl. Phys. Lett. 124, 182409 (2024). 
+
+10.  H. Jin, Z. Tan, Z. Gong, and J. Wang, Anomalous Hall effect in two -dimensional vanadium 
+
+tetrahalogen with altermagnetic phase, Phys. Rev. B 110, 155125 (2024). 
+
+11.  R. -W. Zhang, C. Cui, R. Li, J. Duan, L. Li, Z. -M. Yu, and Y. Yao, Predictable gate -field 
+
+control of spin in altermagnets with spin -layer coupling, Phys. Rev. Lett. 133, 056401 
+
+(2024). 
+
+12.  J. Gong, Y. Wang, Y. Han, Z. Cheng, X. Wang, Z. -M. Yu, and Y. Yao, Hidden real topology 
+
+and unusual magnetoelectric responses in two -dimensional antiferromagnets, Adv. 
+
+Mater. 36, 2402232 (2024). 
+
+13.  S. Zeng and Y. Zhao, Description of two -dimensional altermagnetism: Categorization 
+
+using spin group theory, Phys. Rev. B 110, 054406 (2024). 
+
+14.  B. Pan, P. Zhou, P. Lyu, H. Xiao, X. Yang, and L. Sun, General stacking theory for 
+
+altermagnetism in bilayer systems,  Phys. Rev. Lett.  133,  166701  (2024) .
+
+15.  S. Zeng and Y . Zhao , Bilayer stacking A -type altermagnet: A general approach to 
+
+generating  two -dimensional altermagnetism , Phys. Rev.  B 110,  174410 (2024) .
+
+16.  R. Peng, J. Yang, L. Hu, W. -L. Ong, P. Ho, C. S. Lau, J. Liu, and Y. S. Ang, All -electrical 
+
+layer -spintronics in altermagnetic bilayer,  Mater. Horiz. 12, 2197  (2025) .
+
+17.  Y. Li, Y . Zhang, X . Lu, Y . Shao, Z . Bao, J . Zheng,  W. Tong,  and C . Duan , Ferrovalley 
+
+physics in  stacked  bilayer  altermagnetic  systems , Nano Lett.  25, 6032  (2025). 
+
+18.  X. Chen, J. Ren, J. Li, Y. Liu, Q. Liu,  Unconventional magnons in collinear magnets 
+
+dictated by spin space groups , Nature 640, 349 (2025) .13 
+
+19.  Y. Che, Y . Chen, X . Liu, H . Lv, X . Wu, and J . Yang , Inverse  design of 2D  altermagnetic 
+
+metal− organic  framework  monolayers from Hückel Theory of  nonbonding  molecular 
+
+orbitals , JACS Au  5, 381  (2025). 
+
+20.  D. Wang , A. K. Ghosh , Y. Tao , F. Ma , and  C. Song , Emerging of  anomalous  higher -order 
+
+topological  phases in  altermagnet/ topological  insulator  heterostructure by  floquet 
+
+engineering , Adv . Sci . 0:e22203  (2026). 
+
+21.  D. Bezzerga, I . Khan,  and  J. Hong , High  performance  room  temperature  multiferroic 
+
+properties of w -MnSe  altermagnet , Adv. Funct. Mater.  35,  2505813  (2025). 
+
+22.  D. Jeong, S .-H. Kang,  and  Y.-K. Kwon , Magnetic and  crystal  symmetry  control on  spin 
+
+Hall  conductivity in  altermagnets , Adv. Sci. e15002  (2025). 
+
+23.  C. Song, H . Bai, Z . Zhou, L . Han, H . Reichlova, J. H . Dil, J . Liu, X . Chen , and  F. Pan ,
+
+Altermagnets as a new class of functional materials , Nat . Rev . Mater . 10, 473 (2025) .
+
+24.  M. Hu, X . Cheng, Z . Huang, and J . Liu , Catalog of  C-paired  spin -momentum  locking in 
+
+antiferromagnetic  systems , Phys. Rev. X 15, 021083  (2025). 
+
+25.  F. Zhang , X. Cheng , Z. Yin , C. Liu , L. Deng, Y . Qiao, Z . Shi, S . Zhang, J . Lin, Z . Liu , et 
+
+al.,  Crystal -symmetry -paired spin -valley locking in a layered room -temperature metallic 
+
+altermagnet candidate , Nat . Phys . 21 , 760  (2025). 
+
+26.  M. Leiviskä, J. Rial, A. Bad’ura , R. L. Seeger, I. Kounta, S. Beckert, D. Kriegner, I. 
+
+Joumard, E. Schmoranzerová, J. Sinova,  et al.,  Anisotropy of the anomalous Hall effect 
+
+in thin films of the altermagnet candidate Mn 5Si 3, Phys. Rev. B 109, 224430  (2024). 
+
+27.  L. Han,  X. Fu, R . Peng, X . Cheng, J . Dai, L . Liu, Y . Li,  Y. Zhang, W . Zhu, H . Bai,  et al., 
+
+Electrical 180° switching of Néel vector in spin -splitting antiferromagnet, Sci. Adv. 10, 
+
+eadn0479 (2024). 
+
+28.  J. Krempaský,  L. Šmejkal, S. W. D’Souza, M. Hajlaoui, G. Springholz, K. Uhlířová, F. 
+
+Alarab, P. C. Constantinou, V. Strocov, D. Usanov,  et al., Altermagnetic lifting of Kramers 
+
+spin degeneracy, Nature 626, 517 (2024). 
+
+29.  S. Lee, S. Lee, S. Jung, J. Jung, D. Kim, Y. Lee, B. Seok, J. Kim, B. G. Park, L.  Šmejkal ,
+
+et al.,  Broken Kramers  degeneracy in  altermagnetic MnTe , Phys. Rev. Lett. 132,  036702 
+
+(2024) .
+
+30.  M. Hajlaoui, S. Wilfred D’Souza, L. Šmejkal, D. Kriegner, G. Krizman, T. Zakusylo, N. 
+
+Olszowska, O. Caha, J. Michalička, J. Sánchez -Barriga, et al., Temperature  dependence 
+
+of  relativistic  valence  band  splitting  ind uced by an  altermagnetic  phase  transitio n,  Adv. 
+
+Mater.  36,  2314076  (2024 ).
+
+31.  Z. Zhou, X. Cheng, M. Hu, R. Chu, H. Bai, L. Han, J. Liu, F. Pan, and C. Song, 
+
+Manipulation of the altermagnetic order in CrSb via crystal symmetry, Nature 638, 645 
+
+(2025). 14 
+
+32.  M. Gu, Y. Liu, H. Zhu, K. Yananose, X. Chen, Y. Hu, A. Stroppa, and Q. Liu, Ferroelectric 
+
+switchable altermagnetism, Phys. Rev. Lett. 134, 106802  (2025). 
+
+33.  X. Duan, J. Zhang, Z. Zhu, Y. Liu, Z. Zhang, I. Žutić, and T. Zhou, Antiferroelectric 
+
+altermagnets: antiferroelectricity alters magnets, Phys. Rev. Lett. 134, 106801 (2025). 
+
+34.  W. Sun, C. Yang, W. Wang, Y. Liu, X. Wang, S. Huang, and Z. Cheng, Proposing 
+
+altermagnetic -ferroelectric type -III multiferroics with robust magnetoelectric coupling, 
+
+Adv. Mater.  37,  2502575 (2025). 
+
+35.  Z. Zhu , X. Duan, J. Zhang, B. Hao, I. Žutić , and T. Zhou, Two -dimensional ferroelectric 
+
+altermagnets: from model to material realization, Nano Lett. 25, 9456 (2025). 
+
+36.  Z. Zhu, Y. Liu, X. Duan, J. Zhang, B. Hao, S. H. Wei, I. Žutić, and T. Zhou,  Emergent 
+
+multiferroic altermagnets and spin control via noncollinear molecular polarization,  Sci. 
+
+China -Phys. Mech. Astron.  68, 127562 (2025). 
+
+37.  Y. Yang,  Giant bulk spin photovoltaic effect in the two -dimensional altermagnetic 
+
+multiferroics VO X2, Phys. Rev. B  112 , 104427  (2025)  .
+
+38.  L. Šmejkal, Altermagnetic multiferroics and altermagnetoelectric effect, 
+
+arXiv:2411.19928v1. 
+
+39.  W, Guo , J. Xu , Y. Yang , H. Wang , and H , Zhang , Altermagnetic type -II  multiferroics with 
+
+Néel -order -locked  electric  polarization , arXiv:2505.01964v2 .
+
+40.  N. Ding, H. Ye, S. Wang, and S. Dong, Ferroelasticity tunable altermagnets,  Phys. Rev. 
+
+B 112 , L220410  (2025). 
+
+41.  Y. Huang, C . Hua, R . Xu, J . Liu , Y. Zheng , and Y . Lu , Spin  inversion  enforced by  crystal 
+
+symmetry in  ferroelastic  altermagnets , Phys. Rev. Lett.  135 , 266701  (2025). 
+
+42.  R. Peng, S . Fang, P . Ho, F . Liu, T . Zhou, J . Liu , Y. S. Ang , Ferroelastic altermagnetism ,
+
+npj Quantum Mate r.  11, 5 (2026) .
+
+43.  L. Li  and  M. Wu , Binary  compound  bilayer and  multilayer with  vertical  polarizations: Two -
+
+dimensional  ferroelectrics,  multiferroics, and  nanogenerators , ACS Nano 11, 6382 
+
+(2017). 
+
+44.  Z. Fei, W. Zhao, T. A. Palomaki, B. Sun, M. K. Miller, Z. Zhao, J. Yan, X. Xu, and D. H. 
+
+Cobden, Ferroelectric switching of a two -dimensional  metal. Nature  560, 336  (2018 ). 
+
+45.  Q. Yang, M . Wu , and J . Li , Origin of  two -dimensional  vertical  ferroelectricity in WTe 2
+
+bilayer  and  multilayer , J. Phys. Chem. Lett. 9, 7160  (2018 ). 
+
+46.  M. Wu and J . Li , Sliding  ferroelectricity in 2D van der Waals materials: Related physics 
+
+and future opportunities , PNAS  118 , e2115703118  (2021). 
+
+47.  Y. Wan, T . Hu , X. Mao , J. Fu , K. Yuan, Y . Song, X . Gan, X . Xu, M . Xue , Room -temperature 
+
+ferroelectricity in 1T′ -ReS 2 multilayers , Phys. Rev. Lett. 128, 067601  (2022 ). 15 
+
+48.  T. Zhang , X. Xu , Y. Dai , B. Huang , Y. Ma , Intrinsic ferromagnetic triferroicity in bilayer T′ -
+
+VTe 2, Appl. Phys. Lett.  120, 192903 (2022) .
+
+49.  R. Peng, T . Zhang, Z . He, Q . Wu, Y . Dai, B . Huang, and Y . Ma , Intrinsic layer -polarized 
+
+anomalous Hall effect in bilayer MnBi 2Te 4, Phys. Rev. B  107, 085411 (2023) .
+
+50.  Z. Wang, Z . Gui, and L . Huang , Sliding ferroelectricity in bilayer honeycomb structures: 
+
+A first -principles study , Phys. Rev. B 107, 035426  (2023). 
+
+51.  H. Jafari, E . Barts , P. Przybysz, K . Tenzin, P . J. Kowalczyk, P . Dabrowski, and J .
+
+Sławińska , Robust Zeeman -type band splitting in sliding ferroelectrics, Phys. Rev. Mater .
+
+8, 024005 (2024). 
+
+52.  Y. Guo , R. Meng , X. Hu , L. Lin , Y. Jiang , M. Yang , Y. You , L. Zhang , Y. Xu , and  X. Yan ,
+
+Sliding ferroelectricity in kagome -B2X3 (X = S, Se, Te) bilayers , Appl. Phys. Lett. 124, 
+
+152901 (2024) .
+
+53.  Y. Zhu, M . Gu,  Y.  Liu, X . Chen, Y . Li, S . Du, and Q . Liu , Sliding  ferroelectric  control of 
+
+unconventional  magnetism in  stacked  bilayers , Phys. Rev. Lett.  135,  056801  (2025 ). 
+
+54.  W. Sun , W. Wang , C. Yang , R. Hu , S. Yan , S. Huang , Z. Cheng , Altermagnetism  induced 
+
+by  sliding  ferroelectricity via  lattice  symmetry -mediated  magnetoelectric  coupling , Nano 
+
+Lett. 24, 11179  (2024). 
+
+55.  Z. Guo, S . Qian, X . Zhou, W . Wang, Z . Cheng , X. Wang , Sliding ferroelectric metal with 
+
+ferrimagnetism , Nat . Commun . 17, 549 (2026) .
+
+56.  C. Billy and H. M. Haendler, The crystal structure of copper(II) fluoride, J. Am. Chem. 
+
+Soc. 79, 1049 (1957). 
+
+57.  D. Jezierski  and W . Grochala , Polymorphism of two -dimensional antiferromagnets, AgF 2
+
+and CuF 2, Phys. Rev. Mater . 8, 034407 (2024) .
+
+58.  W. Kohn and L. J. Sham, Self -consistent equations including exchange and correlation 
+
+effects, Phys. Rev. 140, A1133 (1965). 
+
+59.  G. Kresse and J. Furthmüller, Efficient iterative schemes for ab initio total  -energy 
+
+calculations using a plane -wave basis set, Phys. Rev. B 54, 11169 (1996). 
+
+60.  J. P. Perdew, K. Burke, and M. Ernzerhof, Generalized gradient approximation made 
+
+simple, Phys. Rev. Lett. 77, 3865 (1996). 
+
+61.  H. J. Monkhorst and J. D. Pack, Special points for Brillouin -zone integrations, Phys. Rev. 
+
+B 13, 5188 (1976). 
+
+62.  R. N. Barnett and U. Landman, Born -Oppenheimer molecular -dynamics simulations of 
+
+finite systems: structure and dynamics of (H 2O) 2, Phys. Rev. B 48, 2081 (1993). 
+
+63.  R. D. King -Smith and D. Vanderbilt, Theory of polarization of crystalline solids, Phys. Rev. 
+
+B 47, 1651 (1993). 
+
+64.  A. A. Mostofi, J. R. Yates, G. Pizzi, Y. -S. Lee, I. Souza, D. Vanderbilt, and N. Marzari, An 16 
+
+updated version of wannier90: a tool for obtaining maximally -localised Wannier functions, 
+
+Comput. Phys. Commun. 185, 2309 (2014).

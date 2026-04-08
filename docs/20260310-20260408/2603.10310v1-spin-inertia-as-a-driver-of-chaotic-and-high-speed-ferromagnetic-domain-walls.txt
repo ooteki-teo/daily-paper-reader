@@ -1,0 +1,567 @@
+Title: Spin Inertia as a Driver of Chaotic and High-Speed Ferromagnetic Domain Walls
+
+URL Source: https://arxiv.org/pdf/2603.10310v1
+
+Published Time: Thu, 12 Mar 2026 00:21:22 GMT
+
+Number of Pages: 9
+
+Markdown Content:
+# Spin Inertia as a Driver of Chaotic and High-Speed Ferromagnetic Domain Walls 
+
+A.L. Bassant 1,∗ Y.M.J. Ohlsen 1, M. Cherkasskii 2, P. B. He 3, and R.A. Duine 1,4
+
+> 1
+
+Institute for Theoretical Physics, Utrecht University, Princetonplein 5, 3584CC Utrecht, The Netherlands 
+
+> 2
+
+Institute for Theoretical Solid State Physics, RWTH Aachen University, DE-52074 Aachen, Germany 
+
+> 3
+
+School of Physics and Electronics, Hunan University, Changsha 410082, China 
+
+> 4
+
+Department of Applied Physics, Eindhoven University of Technology, P.O. Box 513, 5600 MB Eindhoven, The Netherlands 
+
+(Dated: March 12, 2026) Ferromagnetic domain walls — transitional regions between magnetic domains — are an essential ingredient for racetrack memory, a device concept that promises to deliver faster and more compact memory storage compared to other non-volatile memory devices. Motivated by recent experiments that have found inertial effects in spin dynamics, we explore its consequences on domain wall motion. We find that the inertial dynamics of the individual magnetic moments induce massive dynamics of the domain wall. We investigate these massive dynamics driven by a magnetic field, spin-transfer torque, and spin-orbit torque. We show that, in the absence of Gilbert damping, the domain wall dynamics become chaotic, resembling that of an electron in a two-dimensional crystal. For finite damping, field-like driving of the inertial domain wall significantly increases its velocity compared to conventional massless dynamics, potentially enabling faster racetrack operations. Additionally, in the limit of low driving, we observe that the domain wall width contracts due to the spin inertia of the ferromagnet. 
+
+I. INTRODUCTION 
+
+Domain walls are magnetic textures in between mag-netic domains, and they are a key component in the development of future magnetic memory storage, such as magnetic racetrack memory [1–3]. To achieve opti-mal performance of racetrack memory, a thorough un-derstanding of domain wall (DW) dynamics in ferromag-nets is essential. Their dynamics are often reduced to a small set of collective coordinates, typically the wall po-sition and an internal angle describing the wall chirality [4]. While the Landau-Lifshitz-Gilbert (LLG) equation with spin-transfer torque yields coupled first-order equa-tions for these variables, an effective mass emerges once internal degrees of freedom are eliminated or when the wall must deform dynamically. In this sense, the DW mass is an effective parameter encoding the delayed re-sponse associated with internal modes, restoring torques, and pinning rather than a fundamental ingredient of the microscopic equations [5]. In particular, massive DWs can originate from coupling to conducting electrons [6, 7]. Also, strong perpendicular anisotropy causes massive dy-namics, where the internal angle of the DW acts as a slave variable to the DW position, in which case the mass is often discussed in terms of the D¨ oring mass [8, 9]. These examples of massive DW dynamics have also been shown to be chaotic. Chaotic DW motion has been achieved by radio-frequency magnetic driving in the presence of pinning [10, 11] or D¨ oring mass [12–14]. Additionally, chaotic DW motion can also be achieved using an alter-nating current [15, 16]. In planar nanostrips, the DW mass provides the chan- 
+
+> ∗a.l.bassant@uu.nl.
+
+nel underlying Walker breakdown, which acts as a dy-namical speed limit for steady high-velocity DW propa-gation. However, it was shown that this limitation can be removed in cylindrical nanowires. Owing to rotational symmetry, a transverse DW can rotate about the wire axis without a demagnetizing-energy cost, eliminating a Walker-type critical threshold [17, 18]. In this massless regime, the DW can propagate at velocities tracking the spin-drift scale up to very large current densities. An-other experimental evidence for negligible DW inertia under short pulses was demonstrated in perpendicularly magnetized nanostripes using time-resolved imaging [19]. These results support the view that massless DW dynam-ics can be achieved either by symmetry or by suppressing internal deformation and ensuring rapid relaxation of in-ternal modes. A distinct notion of inertia has also been introduced at the level of the magnetization dynamics itself. Recent experimental discoveries have been pushing magnetic dy-namics into high-frequency ranges where conventional approaches cannot be applied [20–23]. Already at sub-terahertz frequencies, the LLG equation becomes insuf-ficient because the alignment between the magnetization and the angular momentum is no longer instantaneous. The resulting finite response time induces a temporal lag that is captured by augmenting the LLG equation with an inertial term proportional to the second time deriva-tive of the magnetization equation [24–28]. The result-ing equation is called the inertial Landau-Lifshitz-Gilbert (ILLG) equation. Relativistic quantum derivations corroborate the ILLG equation by recovering, from first principles, the same magnetization second-time-derivative term [29–32]. Ab initio calculations show that both Gilbert damping and inertial terms emerge self-consistently from the electronic 
+
+> arXiv:2603.10310v1 [cond-mat.mes-hall] 11 Mar 2026
+
+2structure, with spin–orbit coupling providing the com-mon microscopic origin of dissipative and inertial magne-tization dynamics [30, 33, 34]. Another approach treats the localized spins as coupled to an environmental bath. This approach shows that a non-Markovian memory ker-nel in the bath response generates an effective inertial term in the magnetization equation of motion [35, 36]. Nonadiabatic coupling to environmental degrees of free-dom provides an alternative route to derive the inertial extension of the LLG equation [37]. The magnetic in-ertia introduces an additional nutational resonance, typ-ically in the sub-THz range, distinct from the conven-tional precessional resonance at GHz frequencies [38–42]. The clearest experimental signatures are high-frequency nutation responses observed in NiFe and CoFeB [20–22] and in Co [22, 23] films. Magnetic inertia has also been investigated in heavy-metal/ferromagnet heterostructures that generate spin– orbit torques. A framework for precessional and nuta-tional auto-oscillations in inertial ferromagnets has been developed [43], and auto-oscillations have been studied in both ferromagnets [43] and antiferromagnets [44]. The influence of inertia on self-oscillation has further been examined in spin–orbit-torque-driven tripartite antifer-romagnets with 120 ◦ rotational symmetry [45]. While spin inertia has thus been explored in a range of appli-cations, its potential impact on domain wall dynamics remains unexplored. In this paper, we theoretically show that spin iner-tia causes a ferromagnetic DW to be effectively massive. In contrast to previous approaches, we introduce the DW mass through inertial spin dynamics and study DW motion driven by magnetic fields, spin-transfer torque (STT), and spin-orbit torque (SOT). This approach al-lows us to analyze massive DW dynamics under both field-like and damping-like torque components. We find that the resulting torque balance can lead to nontrivial behavior, including chaotic trajectories and substantially enhanced DW velocities. In the absence of damping, the DW equations of mo-tion map onto those of a charged particle moving in a two-dimensional potential that is periodic in one direc-tion and subject to a perpendicular magnetic field. If the potential is periodic in both directions, the mapping becomes analogous to an electron in a two-dimensional crystal under a perpendicular magnetic field. This sys-tem displays chaotic dynamics and, upon quantization, yields the Hofstadter butterfly spectrum [46]. Within our classical model, we demonstrate chaos by evaluating the Lyapunov exponent. We also consider damped DW dynamics. In this case, dissipation regularizes the motion and suppresses chaos. For specific driving strengths, the DW velocity attains a maximum that is substantially larger than in the non-inertial case. Moreover, in the low-driving limit we find that spin inertia reduces the DW width. These features may be relevant for applications based on ferromagnetic DWs. In particular, racetrack memory 
+
+> ˆz
+> ˆx
+
+# I(t)
+
+> FM
+> HM
+> Charge current
+
+# ⃗B   
+
+> FIG. 1. The setup is given by a conducting ferromagnetic (FM) and heavy metal (HM) layer. The ferromagnet has a domain wall texture, which is driven by the spin transfer torque, spin orbit torque, and an external magnetic field ⃗B.
+
+could benefit from operating regimes in which inertial effects enhance DW velocities. In addition, chaotic mas-sive DW motion may serve as a controllable experimental analog of charged-particle dynamics in two-dimensional periodic potentials, providing insight into transport in such systems. The rest of this paper is organized as follows. Sec-tion II introduces the model and the equations of motion. In Section III, we derive the dissipationless Hamiltonian and prove that its dynamics are chaotic by calculating the Lyapunov exponent. Thereafter, in Section IV, we take into account dissipation and compute domain wall velocities for different types of driving and inertia. In the low driving limit we show that the DW width de-creases, which is shown in Section V. Finally, we discuss the results in Section VI.  
+
+> II. MODEL
+
+In this section, we derive the equations of motion for a DW in a ferromagnetic wire with large spin inertia. The ferromagnetic wire is influenced by an external magnetic field, STT, and SOT as seen in Fig. 1. We start with the ILLG equation, which follows from the effective fer-romagnetic action. Then we use the DW ansatz to derive its action, which yields the equations of motion for the DW’s position and internal angle. The dynamics of the ferromagnet’s magnetization, Ω,are governed by the LLG equation with STT and SOT. Inertial dynamics are known to enter as follows [47], (∂t + vs∂x) Ω = − γΩ × Hef f − στ (Ω × ˆz)
+
+− τ Ω × (Ω × ˆz) + ηΩ × ∂2 
+
+> t
+
+Ω
+
++ αΩ ×
+
+
+
+∂t + βα vs∂x
+
+
+
+Ω, (1) where Ω is the unit vector of magnetization, γ is the gy-romagnetic ratio, vs = gP μ BjF M /(2 |e|Ms) describes the strength of the STT, τ = ( γ/M s)jSHE s /t F denotes the strength of the SOT, α is the Gilbert damping, β denotes 3the relative strength of the dissipative STT to the reac-tive one, and σ is the ratio of the field-like to damping-like SOT. The inertial dynamics are governed by η, which is called the inertial relaxation time. The STT depends on the Land´ e factor g, current polarization P , Bohr magne-ton μB, charge current density in the ferromagnetic layer 
+
+jF M , and elementary charge e. The SOT is caused by the spin current density generated by the spin Hall effect in the heavy metal jHM s = ( ℏ/2e)ηef f θsh jHM with ηef f the spin-injection efficiency, θsh the spin Hall angle, and jHM 
+
+the charge current density in the heavy metal layer [48]. Additionally, the parameter τ is inversely proportional to the thickness of the ferromagnet tF . The conjunction of STT and SOT has been investigated before in Ref. [49]. The effective field is given by Hef f = δE/ (MsδΩ) where 
+
+E is the energy functional, 
+
+E[Ω] = 
+
+Z dx
+
+a3
+
+ Js
+
+2 (∇Ω)2 − MsBΩz + K⊥
+
+2 Ω2
+
+> y
+
+− Kz
+
+2 Ω2
+
+> z
+
+
+
+,
+
+=
+
+Z dx
+
+a3
+
+ Js
+
+2
+
+
+
+(∇θ)2 + sin 2 θ (∇ϕ)2
+
+− MsB cos θ
+
++ K⊥
+
+2 sin 2 θ sin 2 ϕ − Kz
+
+2 cos 2 θ
+
+
+
+. (2) Here the spin stiffness is given by Js, the lattice constant is given by a, the anisotropies are given by K⊥ and Kz ,and the external magnetic field in the z-direction is given by B. The energy functional is also expressed in spherical coordinates, which are related to the magnetization by 
+
+Ω = (cos( ϕ) sin( θ), sin( ϕ) sin( θ), cos( θ)). The spherical coordinates are used to describe the effective action for the magnetization, which is given by, 
+
+AF M [θ, ϕ ] = 
+
+Z
+
+dt 
+
+Z dx
+
+a3
+
+n
+
+ℏ(cos( θ) − 1)( ∂t + vs∂x)ϕ (3) + ℏη
+
+2
+
+h ˙θ2 + ˙ϕ2 sin 2(θ)
+
+i
+
++ ℏστ cos( θ) − E [θ, ϕ ]
+
+o
+
+.
+
+The action describes only conserving dynamics, and non-conserving dynamics are introduced through the Rayleigh dissipation functional, 
+
+RF M [θ, ϕ ] = 
+
+Z
+
+dt 
+
+Z dx
+
+a3
+
+n ℏα
+
+2
+
+ 
+
+∂t − βα vs∂x
+
+
+
+θ
+
+2
+
+(4) + ℏα
+
+2 sin 2(θ)
+
+ 
+
+∂t − βα vs∂x
+
+
+
+ϕ
+
+2
+
++ ℏτ ˙ϕ sin 2(θ)
+
+o
+
+.
+
+The ILLG equation with STT and SOT is recovered by computing δAF M [Ω]/δ Ω(x, t ) = δRF M [Ω]/δ∂ tΩ(x, t ). From the previous action and dissipation functional, we compute the action and dissipation functional for a DW. This is achieved by substituting the DW ansatz and integrating over spatial variables. We assume that the wire cross section is sufficiently small that the dy-namics of the magnetization is effectively homogeneous in the y and z direction. The DW ansatz is given by 
+
+ϕ(x, t ) = ϕ0(t) and θ(x, t ) = 2 arctan(exp(( x − r(t)) /λ )with λ = pJ/K z . In Section V, we show that for small driving, the DW width is slightly modified. The vari-ables of the DW angle and position are given by ϕ0(t), and r(t), respectively. After substituting the ansatz and integrating over the spatial variables, we find that 
+
+A[r, ϕ 0] = N
+
+Z
+
+dt 
+
+n  
+
+MsB + ℏστ − ℏ ˙ϕ0(t)
+
+ r(t)
+
+λ
+
+− ℏ vs
+
+λ ϕ0(t) − K⊥
+
+2 sin 2(ϕ0(t)) + ℏη
+
+2
+
+ ˙r2(t)
+
+λ2 + ˙ϕ20(t)
+
+ o
+
+, (5) with the Rayleigh’s dissipation functional, 
+
+R[r, ϕ 0] = N
+
+Z
+
+dt 
+
+(
+
+ℏα
+
+2λ2
+
+ βα vs − ˙r(t)
+
+2
+
++ ℏα
+
+2 ˙ϕ20(t) + ℏτ ˙ϕ0(t)
+
+)
+
+. (6) Here N = 2 λS/a 3 with S the cross section of the fer-romagnetic wire. The newly derived action and dissipa-tion functional govern the equations of motion of the DW variables, which are found by computing, 
+
+δA[r, ϕ 0]
+
+δr (t) = δR[r, ϕ 0]
+
+δ ˙r(t) , δA[r, ϕ 0]
+
+δϕ 0(t) = δR[r, ϕ 0]
+
+δ ˙ϕ0(t) . (7) The DW variables are made unitless through the defini-tion, ˙er ≡ derdt = ˙rK⊥λ/ (2 ℏ) , (8) which is composed of dimensionless position, er = r/λ ,differentiated with respect to dimensionless time, et =
+
+t/ (2 ℏ/K ⊥). The dimensionless variables are governed by the following equations of motion, 
+
+ηK ⊥
+
+2ℏ ¨er(t) = − α ˙er(t) − ˙ϕ0(t) + 2( MsB + ℏστ )
+
+K⊥
+
+(9a) + 2ℏβv s
+
+K⊥λ ,ηK ⊥
+
+2ℏ ¨ϕ0(t) = − α ˙ϕ0(t) + ˙er(t) − sin(2 ϕ0(t)) (9b) 
+
+− 2ℏvs
+
+K⊥λ − 2ℏτK⊥
+
+.4The DW variables are coupled, and current and field drive the DW position and angle. The position is di-rectly affected by field-like torques, which are caused by the magnetic field ( B), and field-like effects from STT and SOT ( βv s, and στ ). The angle of the DW is directly driven by damping-like torques from STT and SOT ( vs,and τ ). The appearance of second time-derivatives in Eqs. (9a-9b) directly stems from the spin inertia. This term will act like a mass, which we show in the following sections. First, we consider the case without damping, where chaotic dynamics dominate. Afterwards, we look at nonvanishing damping, which regularizes the DW mo-tion. In particular, we will see that there exist specific values of driving where the DW exceeds non-inertial DW velocities.  
+
+> III. CHAOTIC DYNAMICS
+
+In this section, we investigate the chaos that arises from inertia when damping is vanishingly small. First, we derive the Hamiltonian associated with the equations of motion, which allows us to derive the canonical mo-mentum of ˜ r and ϕ0. This leads to a set of four first order differential equations, from which we compute the Lyapunov exponent —a measure for chaos. The equations of motion given in Eqs. (9a-9b) are recast into the following form 
+
+m ¨R(t) = −α ˙R(t) − ˙R(t) × ˆzR − ∂V (er(t), ϕ 0(t)) 
+
+∂R , (10) where m = ηK ⊥/2ℏ, and 
+
+V (er, ϕ 0) = −
+
+ 2( MsB + ℏστ )
+
+K⊥
+
++ 2ℏβv s
+
+λK ⊥
+
+er(t)+
+
+ 2ℏvs
+
+λK ⊥
+
++ 2ℏτK⊥
+
+
+
+ϕ0(t) + sin 2(ϕ0(t)) ,
+
+= − μr ˜r + μϕϕ0 + sin 2 ϕ0, (11) and 
+
+R =
+
+ erϕ0
+
+0
+
+ , ˆzR =
+
+001
+
+ . (12) The potential V (er, ϕ 0) contains driving terms, which we define as field-like and damping-like driving, μr , and μϕ,respectively. The motion that is described by Eq. (10) is equivalent to that of a charged particle in a periodic potential, V (er, ϕ 0), and perpendicular magnetic field, ˆ zR,with linear friction, α. If the periodic potential were periodic in both directions, then these equations would be equivalent to an electron in a 2-dimensional lattice with a perpendicular magnetic field. It is known that the motion of these electrons is chaotic in the classical limit [50, 51]. In the following analysis, we show that the solutions of Eq. (10) are chaotic when there is no friction. We already established that this equation describes the mo-tion of a charged particle in a potential, which allows us to construct the corresponding Hamiltonian, 
+
+H = (P − A)2
+
+2m + V (˜ r, ϕ 0). (13) Herein, P = m ˙R + A = ( pr , p ϕ) and A = (0 , −˜r, 0) such that ˆ zR = −∇ × A. From Hamilton’s equation, we find four first order differential equations for ˜ r, ϕ0, and their conjugate momenta pr , pϕ.˙˜r = 1
+
+m pr , ˙pr =μr − 1
+
+m (pϕ + ˜ r), (14a) ˙ϕ0 = 1
+
+m (pϕ + ˜ r), ˙pϕ = − μϕ − sin 2 ϕ0. (14b) They describe a four-dimensional vector field, with tra-jectories that solve Eq. (10) without friction. Fig. 2 visu-alises 33 testing trajectories through a Poincar´ e section. The coordinates (˜ r, ϕ 0) of the trajectories are recorded when passing through the hyperplane pr = 0 and ˙ pr < 0, and each trajectory has randomly chosen initial condi-tions. The ϕ0 axes has been taken to allow only values between 0 and π radians, since the potential V (˜ r, ϕ 0) is periodic in its second argument over π radians. While the Poincar´ e section provides a geometric snapshot of a dy-namical system’s behavior, chaotic dynamics in classical Hamiltonian systems are characterized by sensitive de-pendence on initial conditions. A standard quantitative signature of chaos is a positive largest Lyapunov expo-nent (LLE), indicating that nearby trajectories diverge exponentially on average, leading to eventual loss of cor-relation between them. In contrast, regular motion yields an LLE of zero, implying stability. Therefore, we compute the LLE of the four-dimensional system given by Eq. (10). We represent the set of first order differential equations by ˙ x = f (x), with state vector x = ( r, ϕ, p r , p ϕ)T . This equation is non-linear and generally non-integrable for certain parameter choices, and it can exhibit chaos. To study the growth of small perturbations, we linearize the system about a reference trajectory. The Jacobian matrix J(x) = Df (x)that describes the linearization of the vector field f (x)reads 
+
+J(x) = 
+
+
+
+0 0 1 
+
+> m
+
+0 
+
+> 1
+> m
+
+0 0 1
+
+> m
+
+− 1 
+
+> m
+
+0 0 − 1
+
+> m
+
+0 −2 cos(2 ϕ) 0 0
+
+ . (15) Let x(t; x0) denote the solution trajectory starting from initial condition x(0) = x0. To examine how an in-5. ...... ................... ...... ................... ...... ................... ...... ................... ...... ......................... ......................... ......................... ......................... ...... ................... ...... ................... ...... ................... ...... ................... ...... ...... ..... . .... . ..... . .... . . .... . .... . . .... . .... . . .... . .... . . .... . .... . . .... . .... . . .... . ..... . .... . ..... . .... . . .... . .... . . .... . .... . . .... . .... . . .... . .... . . .... . .... . . .... . ..... . .... . ..... . .... . . .... . .... . . .... . .... . . .... . .... . . .... . .... . . .... . .... . . .... . .... . . .... . ..... . .... . ..... . .... . . .... . .... . . .... . .... . . .... . .... . . . ............ ................... ............. ................... ............. ................... ............. ................... ............. ................... ............. ................... ............. ................... ............. ................................ ................................ ................... ..... .. . ..... . .................. .................... ...................................... ....... ...... ......... .. .... ................. . .. . ..... . ..... .. .... ..... .. .... .... ...... .......... ........ ....................... ...... ......... .. ..... ..... .. ......... . .. . . .................... .. ..... ......... ........ ............. ..... . ..... ..... . ..... ...... ..... . ..... ...... ..... . ..... ..... . ..... ...... ..... . ..... ...... ..... . ..... ..... . ..... . ..... ..... . ..... ...... ..... . ..... ..... . ..... . ..... ..... . ..... ...... ..... . ..... ..... . ..... . ..... ..... . ..... ...... ..... . ..... ..... . ..... . ..... ..... . ..... ...... ..... . ..... ...... ..... . ..... ..... . ..... .................................. ...................... ............................. ............................. ............................. .................................... ............................. ............................. ............................. ...................... ............................. ....... ....... ...................... ...................... ............................. ...................... ...................... ...................... ...................... ............................. ...................... ...................... ...................... ...................... ......................................... ....... ....... ....... ....... ....... ....... ....... ....... ....... ....... ....... ....... ....... ....... ....... ....... ....... ....... ....... ....... ....... ....... ....... ....... ....... ....... ....... ....... ....... ....... ....... ....... ....... ....... ....... ....... ....... ....... ....... ....... ....... ....... ....... ....... .................... ...................... ................................................... ...................... ..................................... ...................... ...................... ................................................... ...................... ..................................... ................................................. ................. .............................................................................. ............................. ............... . .. . .............. ........................... .... ...... ......... .. .. .......... .............................. ...... ................ ............................................. ................. ............. ....................... ...... ..... ......... ....... ...... ..... ....... ...... ..... ................ ...... .... .... .. ............................................................... ................ ...... ................ ..... ..... ..... ..... ................ ............................... ...... ...... ...... ...... ...... ................................................ ...... ...... ...... ...... ...... ...... ...... .......................................... ...... ...... ...... ...... ...... ...... .......................................... ...... ...... ...... ...... ...... ...... ...... ........................................... ......... ....... ............ ...... ...... ............... ............................................ ......... ...... . .. . . ..... .... . .. ..... . ...... . .. . ..... . ..... .. .... .... . .. . ..... ................. . .. . . .. ................. ......................................... ................... .... .... ..... ............ ............. .................... .... .................... ....................................................................................................... .............. ............... ........... .... .... .. .................... ................................................................................................................................. ............... . .. . ........... . .. ......... .. . .................................................... . .. .... .... ...... ... ......... ...................................... .... . .. ..... . ..... . .. . ........................... ........................................... ............... ............. ......... .................................................... ............... ................. ...... ..... ................................................ ................ ............... ........................................ ............................................................................. ...... ... ..... . .. . .......... ..... .... ...... ......................... ............... ..... ...... ....... .......... ..................................... ................ .............................. ..................................................... ...... ..... ..... .. ......... ...... ..... .... .... ...... ... ..... .. ..... ..... .. ........................................ ........... ..... .. .................... .. ..... ................... .............. ......... ..... .. . ............... ..................... .. ..... ..... .. .......... ........................................ ..... . . .. . ............................................... . .. . ......... . . .. . ......... . .. . ................................................................................................................................................................................................................................................................................................................................. .................................... .. ......... ....................... ...... ..... .. ..... .. . .... ..... . .. . ........... . .. . ............... ........................................................... ... ..... .. . ...................................................... ................................................................................... ...... ......................... ...... ......................... ...... ...... ......................... ...... ......................... ...... ............................... ...... ......................... ...... ............................... ...... ......................... ...... ......................... ..... ...... ........... ...... ...... ...... ........... ...... ...... ...... ........... ...... ...... ...... ................. ...... ...... ................. ...... ...... ................. ...... ...... ................. ...... ...... ...... ........... ...... ...... ...... ........... ...... ...... ...... ........... ...... ...... ...... ........... . ............ ..... ..... ........... ...... ................ ............... ............................ ................. .............. ...... .... ...... . .. . ....... ............................ ...... . .. . ...... ....................................... . . .. . . ............... ................. ........................ .... ............... . .. ..... ....................................................... ......... ...... ........................ ........ ........................................... .............. ................... ............... ..... ..... ...... ............ ....................... .......... ..... .. ................................................. . ................... ............. ................... ................... ............. ................... ............. ................... ................... ............. ................... ................... ............. ................... ............. ................... ................... ............. .................. ................ ............. ....... ...... ..... ............... .................... ...... ............... ............... . ............... ..... ..... ..... ............................................................... ...... ...... ...... ...... ............................ ..................... ............. ................ ......... . ..... . .... . ..... . .... . ..... . .... . . .... . ..... . .... . ..... . .... . . .... . ..... . .... . ..... . .... . ..... . .... . . .... . ..... . .... . ..... . .... . . .... . ..... . .... . ..... . .... . ..... . .... . . .... . ..... . .... . ..... . .... . . .... . ..... . .... . ..... . .... . ..... . .... . . .... . ..... . .... . ..... . .... . . .... . ..... . .... . ..... . .... . ..... . .... . . .... . ..... . .............. ...... ................... ................... ......................... ................... ......................... ................... ......................... ................... ......................... ................... ......................... ................... ......................... ............................. .................... .................... .................... .................... .................... .................... .................... .................... .................... .................... .................... .................... ..................................................... .................... ..... .. ..... .......... .. ... .............................................. ......... ................ .......................... .... .. . ............................. . .. . .................. . .. . ................ ........... ................................................ ................ .. ............ ..... .............. .. ............................................................................................ ..................... .... . .. .... ...... ..... ................. ................................................ .................. ........................................ .................. ...... ...................... ..... .. . .................... ....... ................ ................ ....... ....................................... ..... ..... ............... ..... ................ ...... ..... ..... ...... ........................... ...... ...... ...... ............... ...... ...... ............... ...... ...... ..... ..... ...... ...... ..................... ...... ..... . ...0.0 0.5 1.0 1.5 2.0 2.5 3.0 0123456
+
+# ϕ
+
+# r
+
+FIG. 2. The Poincar´ e section shows 33 trajectories, each represented by a different colour. Every trajectory is gener-ated by Eqs. (14a-14a) using different initial conditions with 
+
+H ≈ 1 (Eq. 13). Each time the four-dimensional trajectory passes through a hyperplane defined by ˙ ˜r = 0 and satisfies ˙pr < 0, the coordinates ( r, ϕ 0) are recorded. We used the values m = 0 .5 and μr = 2 for the numerical evaluation. The dimensionless m parameter corresponds to the following values: η ≈ 1 ps and K⊥ ≈ 6.6 · 10 −22 J = 4 .1 meV. The field-like driving μr is achieved by using an external magnetic field that is similar to the in-plane anisotropy. If we assume that γ ≈ 2.8 · 10 11 Hz T −1, then this would imply B ≈ 0.3 T .
+
+FIG. 3. The correspondence between the largest Lyapunov exponent (LLE) and the Poincar´ e section. Parameters are identical to those used in Fig. 2. 
+
+finitesimal perturbation grows or decays along this tra-jectory, we define the deviation vector as δx (t) = x(t; x0+
+
+ε) − x(t; x0), which for small ε evolves according to the linearized dynamics ˙δx (t) ≈ J(x(t)) δx (t). Neglecting 
+
+O(|δx |2) terms, we obtain the system ˙δ˜r = 1 
+
+> m
+
+δp r , ˙δp r = − 1 
+
+> m
+
+δr − 1 
+
+> m
+
+δp ϕ, (16a) ˙δϕ = 1 
+
+> m
+
+δr + 1 
+
+> m
+
+δp ϕ, ˙δp ϕ = −2 cos  2ϕ(t)δϕ. (16b) The LLE, λ1, measures mean exponential separation of nearby trajectories: 1 2 3 4 μ r
+
+> 0.2 0.4 0.6 0.8 1.0 1.2
+
+# Re ( v 0 )
+
+> 0.
+> 0.5
+> 1.0
+> 1.5
+
+FIG. 4. The DW velocity in function of field-like driving, μr ,for different values of m = {0, 0.5, 1.0, 1.5}. The gray dashed lines are the analytically derived limits. 
+
+FIG. 5. The trajectories on the potential landscape are given by the time evolution of the DW variables, (˜ r, ϕ 0), at μr =1.35. The colors match the normalised inertial parameter m
+
+of Fig. 4. 
+
+∥δx (t)∥ ≈ ∥ δx (0) ∥eλ1t. (17) From the same trajectories that we generated the Poincar´ e section with, we compute the LLE using the Benettin–Wolf algorithm [52, 53]. The LLE is positive throughout the section (Fig. 3), the central island shows reduced values, whereas the surrounding speckled region exhibits irregular spatial fluctuations of the positive ex-ponent. The persistent positivity of the LLE indicates chaotic dynamics, i.e., sensitive dependence on initial conditions. 6 
+
+> IV. DOMAIN WALL VELOCITIES
+
+In this section, we consider the effects of damping, which makes the DW motion regular. We start by finding analytical bounds on the DW velocity and its behavior in the limit of small and large driving. Thereafter, we numerically compute DW velocities for different types of driving, field-like and damping-like. We show that for specific values of driving through field-like torques, the DW with inertial effects is faster than without. We recast Eq. (10) in a complex equation, 
+
+m¨s = ( i − α) ˙ s + μ − i sin(2Im( s)) , (18) where s = ˜ r + iϕ 0 and μ = μr − iμ ϕ, such that the field-like driving is the real part and the damping-like driving is the imaginary part. We separate s into a linear and an oscillating part, s = v0t + f (t) + c, where the following holds 
+
+v0 = α + i
+
+1 + α2 (μ − i⟨sin (2Im( v0t + f (t) + c)) ⟩), (19a) 
+
+m ¨f =( i − α) ˙f − i sin (2Im( v0t + f (t) + c)) (19b) + i⟨sin (2Im( v0t + f (t) + c)) ⟩.
+
+The brackets denote time averaging, ⟨. . . ⟩ = R T 
+
+> 0
+
+. . . dt T for a large time interval T . This ansatz effectively separates the linear movement from the (almost) periodic motion. From this ansatz, we find that the velocity of the DW is given by, Re( v0) = αμ r + μϕ + ⟨sin (2Im( v0t + f (t) + c)) ⟩
+
+1 + α2 . (20) The exact expression of Re( v0) requires the exact expres-sion of f (t). However, finding this is outside the scope of our analysis. Estimates can be made within the limits of large and small driving. For large driving, αμ r + μϕ ≫ 1, we have that Re( v0) ≈ (αμ r + μϕ)/(1 + α2). In contrast, the limit of small driving, |μr /α − μϕ| < 1, considers the case that the driving force is insufficient to overcome the potential barrier that is set by V (˜ r, ϕ 0) in the ϕ0 direc-tion. The critical driving that is necessary to overcome the potential barrier is known as Walker breakdown. Be-fore the Walker breakdown, we have that f (t) = 0, which allows us to derive the relation ⟨sin(2 ϕ0)⟩ = μr /α − μϕ
+
+from the definition of the brackets. This expression solves Eq. (20), from which we find the velocity before the Walker breakdown, given by Re( v0) = μr
+
+α . (21) These analytical limits correspond well with the numer-ical evaluation of Eq. (18), as shown by the gray dashed 1 2 3 4 5 6 7 μ ϕ
+
+> 123456
+
+# Re ( v 0 )       
+
+> 0.
+> 0.5
+> 1.0
+> 1.5
+> FIG. 6. The DW velocity in function of damping-like driving,
+> μϕ, for different values of m={0,0.5,1.0,1.5}.The gray dashed line is the analytically derived limit.
+
+lines in Figs. 4 and 6. In these figures, we numeri-cally compute the average velocity of a DW as a func-tion of μ for different normalised inertial parameter m.The dimensionless parameter is taken to be {0.5, 1.0, 1.5}
+
+and α = 0 .3. These values for m may correspond to an inertial relaxation time of 1 ps , which is close to experimental values of Ref. [54], and an anisotropy 
+
+K⊥ ≈ { 4.1, 8.2, 12 .3}meV. As the first case, we consider only field-like driving (Fig. 4). Herein, we observe that the inertial DW velocity exhibits a distinct maximum, which is almost twice the velocity of the non-inertial DW at the same driving. To investigate this further, we anal-yse the different trajectories of the DW parameters (Fig. 5). For the field-like driving μr = 1 .35, we find an ef-ficient trajectory from m = 1 .5, where its periodicity matches that of the potential. While other trajectories, 
+
+m = 0 .5 and m = 1 .0, do not coalesce with the potential. The resonance of the cyclotronic motion with the periodic potential gives the inertial DW a greater velocity. When considering damping-like driving, the potential does not allow for period coalescence. Therefore, we do not ob-serve maxima (Fig. 6), but rather decreased velocities compared to the non-inertial case. Lastly, we take μ = ρe −iθ and vary ρ for different θ
+
+(Fig. 7). This incorporates both field-like and damping-like driving, which is realistic for STT and SOT. We find that field-like driving, including inertia, outperforms the non-inertial case, and this trend is seen for most combi-nations of field-like and damping-like driving.  
+
+> V. SPIN INERTIA EFFECT ON THE DOMAIN WALL WIDTH
+
+We show that before the Walker breakdown, |μr /α −
+
+μϕ| ≤ 1, the DW width has an additional contribution from the inertia. In this limit, the velocity of the DW is given by ˙ ˜r = μr /α and ˙ϕ0 = 0. We substitute these results into the action of Eq. 5 and take λ arbitrary. The effective action is given by, 70.5 1.0 1.5 2.0 2.5 3.0 ρ
+
+> 0.5 1.0 1.5 2.0 2.5 3.0
+
+# Re ( v 0 )       
+
+> 0
+> π/6
+> π/3
+> π/2
+> FIG. 7. The DW velocity in function of total driving, μ=
+> ρe iθ . This is calculated for different combinations of field-like and damping-like driving parametrized by θ. The normalised inertial parameter is taken to be m= 1 .5. The dashed lines are the velocities of non-inertial DWs.
+
+Areduced = ˜N
+
+Z
+
+dt 
+
+n
+
+(B + στ ) μr tα + ℏϕ0(t) μr
+
+α − ℏvsϕ0
+
++ ℏη
+
+2α2
+
+μ2
+
+> r
+
+λ − Js
+
+λ − λK z − λ K⊥
+
+2 sin 2(ϕ0)
+
+o
+
+,
+
+(22) with ˜N = 2 S/a 3. This reduced action is minimized when 
+
+δAreduced /δϕ 0 = δAreduced /δλ = 0. The minimization leads to the following equations, 
+
+K⊥
+
+2ℏ sin(2 ϕ0) = μr − αv s
+
+αλ , (23a) 
+
+λ =
+
+s
+
+Js − ℏημ 2 
+
+> r
+
+/2α2
+
+Kz + K⊥ sin 2(ϕ0) . (23b) The last equality gives the modified DW width, which is decreased due to spin-inertia.  
+
+> VI. DISCUSSION AND CONCLUSION
+
+We have shown that incorporating spin inertia into the magnetization dynamics modifies the collective-coordinate dynamics of a ferromagnetic DW. In partic-ular, the coupled variables ( r(t), ϕ 0(t)) acquire second-order time derivatives, which endow the DW with an effective mass set by the inertial parameter η. Written in vector form, the equations map onto the dynamics of a charged particle moving in a two-dimensional po-tential under an effective perpendicular magnetic field and damping. In the dissipationless limit, this map-ping yields Hamiltonian dynamics and, for the param-eter regimes explored here, a positive largest Lyapunov exponent, demonstrating sensitive dependence on initial conditions and hence chaotic motion. For finite damping, the same structure persists but damping regularizes the trajectories and suppresses the chaotic response, causing the long-time dynamics responsible to averages such as the mean DW velocity. A main consequence of the inertial term is the emer-gence of resonant enhancements of the DW velocity under field-like driving. Numerically evaluating the dynamics shows pronounced maxima of the average velocity as a function of the real driving component μr , with peak ve-locities approaching nearly twice those of the non-inertial case for the representative parameters studied (Fig. 4). The study of the corresponding trajectories (Fig. 5) in-dicates that these maxima arise from a proportionality between the motion in ( er, ϕ 0) space and the periodic structure of the effective potential, which enables particu-larly efficient transport through phase space. In contrast, purely damping-like driving given by the imaginary com-ponent of μ does not permit such period matching and therefore does not generate analogous maxima. Instead, the inertial contribution tends to reduce the average ve-locity relative to the non-inertial case (Fig. 6). For mixed driving, as expected for STT and SOT, inertial DWs typically retain a velocity advantage over non-inertial DWs for most combinations of field-like and damping-like components (Fig. 7), with degradation primarily when damping-like torques dominate. Spin inertia also modifies the domain-wall width. Be-low the Walker-breakdown threshold, we obtained an ex-plicit expression for the inertial renormalization of the width and found a reduction compared to the stan-dard result. This provides a complementary and poten-tially practical signature of inertia, in parameter regimes where velocity-based signatures are masked by pinning or sample-dependent dissipation, a systematic dependence of the wall width on driving could offer an additional route to infer inertial effects. The present results are obtained within a minimal collective-coordinate model and therefore define a clear set of extensions. Disorder, pinning landscapes, ther-mal fluctuations, nonuniform wall deformations, and ad-ditional internal modes may alter the quantitative loca-tion and sharpness of velocity maxima, and they may further regularize dynamics that are chaotic in the ideal-ized, dissipationless limit. Nevertheless, the mechanisms identified here are robust at the level of equations of mo-tion: (i) the spin inertial term generates an effective DW mass; (ii) damping suppresses chaos and leads to regular long-time motion; and (iii) in the case of field-like driving, spin inertia enhances the average velocity in comparison to massless DW motion. These features motivate micromagnetic simulations and experimental verifications in materials or het-erostructures exhibiting relatively large inertial time. If such regimes can be realized, inertial DWs may provide an avenue for higher-speed operation at comparable drive strengths, which is relevant for DW based device concepts such as racetrack memory. 8
+
+ACKNOWLEDGMENTS 
+
+A.L.B and R.A.D. acknowledge financial support by the projects “Black holes on a chip” with project num-ber OCENW.KLEIN.502 and “Fluid Spintronics” with project number VI.C.182.069. Both are financed by the Dutch Research Council (NWO). M.C. acknowl-edges funding from the Deutsche Furschungsgemein-schaft (DFG, German Research Foundation) under the FOR 5844: ChiPS, Project-ID 541503763. P.-B.H. acknowledges financial support by the National Sci-ence Foundation (NSF) of Changsha City (Grant No. kq2208008) and the NSF of Hunan Province (Grant No. 2023JJ30116). 
+
+[1] S. Parkin and S.-H. Yang, Memory on the racetrack, Na-ture Nanotechnology 10 , 195–198 (2015). [2] S. S. P. Parkin, M. Hayashi, and L. Thomas, Magnetic domain-wall racetrack memory, Science 320 , 190–194 (2008). [3] R. Bl¨ asing, A. A. Khan, P. C. Filippou, C. Garg, F. Hameed, J. Castrillon, and S. S. P. Parkin, Magnetic racetrack memory: From physics to the cusp of appli-cations within a decade, Proceedings of the IEEE 108 ,1303–1321 (2020). [4] J. Shibata, G. Tatara, and H. Kohno, A brief review of field- and current-driven domain-wall motion, Journal of Physics D: Applied Physics 44 , 384004 (2011). [5] G. Tatara, H. Kohno, and J. Shibata, Microscopic ap-proach to current-driven domain wall dynamics, Physics Reports 468 , 213–301 (2008). [6] H. M. Hurst, V. Galitski, and T. T. Heikkil¨ a, Electron-induced massive dynamics of magnetic domain walls, Physical Review B 101 , 054407 (2020). [7] E. Saitoh, H. Miyajima, T. Yamaoka, and G. Tatara, Current-induced resonance and mass determination of a single magnetic domain wall, Nature 432 , 203–206 (2004). [8] W. D¨ oring, ¨Uber die tr¨ agheit der w¨ ande zwischen weißschen bezirken, Zeitschrift f¨ ur Naturforschung A 3,373 (1948). [9] J. F. Janak, Quantum theory of domain-wall motion, Physical Review 134 , A411–A422 (1964). [10] A. Pivano and V. O. Dolocan, Chaotic dynamics of mag-netic domain walls in nanowires, Physical Review B 93 ,144410 (2016). [11] H. Suhl and X. Y. Zhang, Chaotic motion of domain walls in soft magnetic materials, Journal of Applied Physics 
+
+61 , 4216–4218 (1987). [12] H. Okuno, K. Hirata, and T. Sakata, Chaos of magnetic domain wall motion: Lyapunov exponent and controlling, IEEE Transactions on Magnetics 31 , 3364–3366 (1995). [13] H. Okuno, Y. Sugitani, and K. Hirata, Bifurcation dia-gram and power spectrum of chaotic domain-wall motion, Journal of Magnetism and Magnetic Materials 140–144 ,1879–1880 (1995). [14] R. Kosi´ nski and A. Sukiennicki, Chaotic motion of a do-main wall in the time dependent drive fields, Journal of Magnetism and Magnetic Materials 104–107 , 331–332 (1992). [15] D. G. Hermann and J.-P. Nguenang, Chaos appear-ance during domain wall motion under electronic trans-fer in nanomagnets, World Journal of Condensed Matter Physics 03 , 136–143 (2013). [16] K. Matsushita, M. Sasaki, and T. Chawanya, Chaos in ac-driven motion of confined magnetic domain wall, Journal of the Physical Society of Japan 81 , 063801 (2012). [17] M. Yan, A. K´ akay, S. Gliga, and R. Hertel, Beating the walker limit with massless domain walls in cylindrical nanowires, Phys. Rev. Lett. 104 , 057201 (2010). [18] M. Yan, C. Andreas, A. K´ akay, F. Garc´ ıa-S´ anchez, and R. Hertel, Fast domain wall dynamics in magnetic nan-otubes: Suppression of walker breakdown and cherenkov-like spin wave emission, Applied Physics Letters 99 ,122505 (2011). [19] J. Vogel, M. Bonfim, N. Rougemaille, O. Boulle, I. M. Miron, S. Auffret, B. Rodmacq, G. Gaudin, J. C. Cezar, F. Sirotti, and S. Pizzini, Direct observation of massless domain wall dynamics in nanostripes with perpendicu-lar magnetic anisotropy, Phys. Rev. Lett. 108 , 247202 (2012). [20] K. Neeraj, N. Awari, S. Kovalev, D. Polley, N. Zhou Hagstr¨ om, S. S. P. K. Arekapudi, A. Semisalova, K. Lenz, B. Green, J.-C. Deinert, I. Ilyakov, M. Chen, M. Bawatna, V. Scalera, M. d’Aquino, C. Serpico, O. Hellwig, J.-E. Wegrowe, M. Gensch, and S. Bonetti, Inertial spin dynamics in ferromagnets, Nature Physics 
+
+17 , 245 (2021). [21] A. De, J. Schlegel, A. Lentfert, L. Scheuer, B. Stadtm¨ uller, P. Pirro, G. von Freymann, U. Nowak, and M. Aeschlimann, Magnetic nutation: Transient sep-aration of magnetization from its angular momentum, Phys. Rev. B 111 , 014432 (2025). [22] Y. Li, A.-L. Barra, S. Auffret, U. Ebels, and W. E. Bai-ley, Inertial terms to magnetization dynamics in ferro-magnetic thin films, Phys. Rev. B 92 , 140413 (2015). [23] V. Unikandanunni, R. Medapalli, M. Asa, E. Albisetti, D. Petti, R. Bertacco, E. E. Fullerton, and S. Bonetti, In-ertial spin dynamics in epitaxial cobalt films, Phys. Rev. Lett. 129 , 237201 (2022). [24] H. Suhl, Theory of the magnetic damping constant, IEEE Trans. Magn. 34 , 1834 (1998). [25] J.-E. Wegrowe, Thermokinetic approach of the gen-eralized Landau-Lifshitz-Gilbert equation with spin-polarized current, Phys. Rev. B 62 , 1067 (2000). [26] M.-C. Ciornei, J. M. Rub´ ı, and J.-E. Wegrowe, Magneti-zation dynamics in the inertial regime: Nutation pre-dicted at short time scales, Phys. Rev. B 83 , 020410 (2011). [27] J.-E. Wegrowe and M.-C. Ciornei, Magnetization dynam-ics, gyromagnetic relation, and inertial effects, Am. J. Phys. 80 , 607 (2012). [28] S. Giordano and P.-M. D´ ejardin, Derivation of magnetic inertial effects from the classical mechanics of a circular current loop, Phys. Rev. B 102 , 214406 (2020). [29] M. F¨ ahnle, D. Steiauf, and C. Illg, Generalized Gilbert equation including inertial damping: Derivation from an extended breathing Fermi surface model, Phys. Rev. B 
+
+84 , 172403 (2011). 9
+
+[30] S. Bhattacharjee, L. Nordstr¨ om, and J. Fransson, Atom-istic spin dynamic method with both damping and mo-ment of inertia effects included from first principles, Phys. Rev. Lett. 108 , 057204 (2012). [31] R. Mondal, M. Berritta, A. K. Nandy, and P. M. Oppe-neer, Relativistic theory of magnetic inertia in ultrafast spin dynamics, Phys. Rev. B 96 , 024425 (2017). [32] R. Mondal, M. Berritta, and P. M. Oppeneer, Generalisa-tion of Gilbert damping and magnetic inertia parameter as a series of higher-order relativistic terms, J. Phys.: Condens. Matter 30 , 265801 (2018). [33] R. Mondal, M. Berritta, and P. M. Oppeneer, Generalisa-tion of gilbert damping and magnetic inertia parameter as a series of higher-order relativistic terms, J. Phys.: Condens. Matter 30 , 265801 (2018). [34] R. Mondal, L. R´ ozsa, M. Farle, P. M. Oppeneer, U. Nowak, and M. Cherkasskii, Inertial effects in ultra-fast spin dynamics, J. Magn. Magn. Mater. 579 , 170830 (2023). [35] M. G. Quarenta, M. Tharmalingam, T. Ludwig, H. Yuan, L. Karwacki, R. C. Verstraten, and R. A. Duine, Bath-induced spin inertia, Phys. Rev. Lett. 133 , 136701 (2024). [36] J. Anders, C. R. J. Sait, and S. A. R. Horsley, Quantum brownian motion for magnets, New J. Phys. 24 , 033020 (2022). [37] T. Kikuchi and G. Tatara, Spin dynamics with inertia in metallic ferromagnets, Phys. Rev. B 92 , 184410 (2015). [38] E. Olive, Y. Lansac, and J.-E. Wegrowe, Beyond ferro-magnetic resonance: The inertial regime of the magneti-zation, Appl. Phys. Lett. 100 , 192407 (2012). [39] E. Olive, Y. Lansac, M. Meyer, M. Hayoun, and J.-E. We-growe, Deviation from the landau-lifshitz-gilbert equa-tion in the inertial regime of the magnetization, J. Appl. Phys. 117 , 213904 (2015). [40] S. V. Titov, Y. P. Kalmykov, K. D. Kazarinov, M. A. Cherkasskii, and A. S. Titov, Inertial magnetization dy-namics in ferromagnetic nanoparticles near saturation, J. Commun. Technol. Electron. 68 , 559 (2023). [41] M. Cherkasskii, M. Farle, and A. Semisalova, Nutation resonance in ferromagnets, Phys. Rev. B 102 , 184432 (2020). [42] M. Cherkasskii, I. Barsukov, R. Mondal, M. Farle, and A. Semisalova, Theory of inertial spin dynamics in anisotropic ferromagnets, Phys. Rev. B 106 , 054428 (2022). [43] R. Rodriguez, M. Cherkasskii, R. Jiang, R. Mondal, A. Etesamirad, A. Tossounian, B. A. Ivanov, and I. Bar-sukov, Spin inertia and auto-oscillations in ferromagnets, Phys. Rev. Lett. 132 , 246701 (2024). [44] P.-B. He, Large-amplitude and widely tunable self-oscillations enabled by the inertial effect in uniaxial an-tiferromagnets driven by spin-orbit torques, Phys. Rev. B 108 , 184418 (2023). [45] P.-B. He, Influence of the magnetic inertia on the self-oscillation in spin-orbit torque-driven tripartite antifer-romagnets with a 120 ◦ rotation symmetry, Phys. Rev. B 
+
+110 , 064411 (2024). [46] D. R. Hofstadter, Energy levels and wave functions of bloch electrons in rational and irrational magnetic fields, Phys. Rev. B 14 , 2239 (1976). [47] M.-C. Ciornei, J. M. Rub´ ı, and J.-E. Wegrowe, Magne-tization dynamics in the inertial regime: Nutation pre-dicted at short time scales, Physical Review B 83 , 020410 (2011). [48] K. Ando, Electric manipulation of spin relaxation us-ing the spin hall effect, Physical Review Letters 101 ,10.1103/PhysRevLett.101.036601 (2008). [49] S.-M. Seo, K.-W. Kim, J. Ryu, H.-W. Lee, and K.-J. Lee, Current-induced motion of a transverse magnetic domain wall in the presence of spin hall effect, Applied Physics Letters 101 , 022405 (2012). [50] G. Petschel and T. Geisel, Bloch electrons in magnetic fields: Classical chaos and hofstadter’s butterfly, Physical Review Letters 71 , 239–242 (1993). [51] J. Wagenhuber, T. Geisel, P. Niebauer, and G. Ober-mair, Chaos and anomalous diffusion of ballistic electrons in lateral surface superlattices, Physical Review B 45 ,4372–4383 (1992). [52] A. Wolf, J. B. Swift, H. L. Swinney, and J. A. Vas-tano, Determining lyapunov exponents from a time se-ries, Physica D: nonlinear phenomena 16 , 285 (1985). [53] G. Benettin, L. Galgani, A. Giorgilli, and J.-M. Strelcyn, Lyapunov characteristic exponents for smooth dynami-cal systems and for hamiltonian systems; a method for computing all of them. part 1: Theory, Meccanica 15 , 9 (1980). [54] K. Neeraj, N. Awari, S. Kovalev, D. Polley, N. Zhou Hagstr¨ om, S. S. P. K. Arekapudi, A. Semisalova, K. Lenz, B. Green, J.-C. Deinert, I. Ilyakov, M. Chen, M. Bawatna, V. Scalera, M. d’Aquino, C. Serpico, O. Hellwig, J.-E. Wegrowe, M. Gensch, and S. Bonetti, Inertial spin dynamics in ferromagnets, Nature Physics 
+
+17 , 245–250 (2021). [55] S. Bhattacharjee, L. Nordstr¨ om, and J. Fransson, Atom-istic spin dynamic method with both damping and mo-ment of inertia effects included from first principles, Phys. Rev. Lett. 108 , 057204 (2012). [56] L. Berger, Low-field magnetoresistance and domain drag in ferromagnets, Journal of Applied Physics 49 ,2156–2161 (1978). [57] N. L. Schryer and L. R. Walker, The motion of 180 ° do-main walls in uniform dc magnetic fields, Journal of Ap-plied Physics 45 , 5406–5421 (1974).
