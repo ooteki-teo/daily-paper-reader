@@ -25,3 +25,60 @@ subscriptions:
     stage: A
     diff_threshold_pct: 15
   keyword_recall_mode: or
+  intent_profiles:
+    - tag: 交错磁
+      description: 帮我查找交错磁的最新相关论文
+      enabled: true
+      paper_sources:
+        - arxiv
+      keywords:
+        - keyword: symmetry
+          keyword_cn: 对称性
+          query: m
+        - keyword: ferroelectric
+          keyword_cn: 铁电
+          query: t
+        - keyword: topological insulators
+          keyword_cn: 拓扑绝缘体
+          query: t
+        - keyword: altermagnet
+          keyword_cn: 交错磁
+          query: j
+        - keyword: spin textures
+          keyword_cn: 自旋织构
+          query: complex spin textures and magnetic structures
+        - keyword: spin dynamics
+          keyword_cn: 自旋动力学
+          query: spin dynamics in correlated systems
+      intent_queries:
+        - query: recent research on altermagnetic structures
+          query_cn: 交错磁结构的最新研究
+          enabled: true
+          source: manual
+          note: ''
+        - query: latest theoretical and experimental studies on altermagnetism
+          query_cn: 交错磁性的最新理论与实验研究
+          enabled: true
+          source: manual
+          note: ''
+        - query: current progress in understanding altermagnetic ordering
+          query_cn: 理解交错磁有序的当前进展
+          enabled: true
+          source: manual
+          note: ''
+      updated_at: '2026-04-08T07:02:11.770Z'
+source_backends:
+  arxiv:
+    papers_table: arxiv_papers
+    use_vector_rpc: true
+    vector_rpc: match_arxiv_papers
+    vector_rpc_exact: match_arxiv_papers_exact
+    use_bm25_rpc: true
+    bm25_rpc: match_arxiv_papers_bm25
+    sync_table: arxiv_sync_status
+    sync_success_value: success
+    schema: public
+    kind: supabase
+    enabled: true
+    url: https://lyucdwgefyfbmaiopjbk.supabase.co
+    anon_key: sb_publishable_lX-oi64Uxyd7SIVv3_w2Uw_MTOojeKq
