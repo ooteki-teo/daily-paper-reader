@@ -1,0 +1,38 @@
+{
+  "version": 2,
+  "extractor": "pdffigures2",
+  "figures": [
+    {
+      "url": "assets/figures/arxiv/2604.02959v1/fig-001.webp",
+      "caption": "FIG. 2. (a) Density of states of the Hofstadter butterfly for a triangular-lattice nanoribbon as a function of the chemical potential µ and normalised magnetic flux ϕ/ϕ0. (b) Conductance without a magnetic exchange proximity. (c)-(f) Exchange proximity-induced conductance change ∆G for different special values of q calculated using (4) for J = t and W = 0.2t.",
+      "page": 3,
+      "index": 1,
+      "width": 512,
+      "height": 691
+    },
+    {
+      "url": "assets/figures/arxiv/2604.02959v1/fig-002.webp",
+      "caption": "FIG. 4. (a)-(d) The dependence of the fidelity as a function of the noise strength ηtest in the conductance for different noise strengths used in the training ηtrain = 0.01, 0.05, 0.1. (e) The dependence of the fidelity vs exchange coupling Jtest in testing data for different exchange couplings used in the training Jtrain = 0.2t and t. (f) The fidelity vs noise dependence for different exchange couplings Jtrain = Jtest = 0.2t and t. Solid and dashed lines in (e)-(f) show the |q|-fidelity F|q| and angular fidelity Fθ, respectively.",
+      "page": 4,
+      "index": 2,
+      "width": 512,
+      "height": 689
+    },
+    {
+      "url": "assets/figures/arxiv/2604.02959v1/fig-003.webp",
+      "caption": "FIG. 6. (a) Cumulative variance as a function of the number of PCs. (b) The MSE loss as a function of the epoch for training (blue dashed curve) and validation datasets (orange solid curve).",
+      "page": 4,
+      "index": 3,
+      "width": 512,
+      "height": 250
+    },
+    {
+      "url": "assets/figures/arxiv/2604.02959v1/fig-004.webp",
+      "caption": "FIG. 1. (a) Schematic of an electrical gated device to probe noncollinear magnetic order in a twisted vdW structure (see the inset). Red arrows show local magnetic moments localized on the sites of the triangular moiré superlattice. b1,2 are reciprocal lattice basis vectors and B⃗ = Bez is a perpendicular external magnetic field. (b) Schematic representation of the Hamiltonian learning approach employed for the extraction of the q = (q1, q2) of the SSM by leveraging the conductance G(µ, ϕ, q1,2).",
+      "page": 1,
+      "index": 4,
+      "width": 512,
+      "height": 696
+    }
+  ]
+}

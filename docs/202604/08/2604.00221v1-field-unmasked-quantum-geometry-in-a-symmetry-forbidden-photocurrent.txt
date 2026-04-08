@@ -1,0 +1,942 @@
+Title: Field-unmasked quantum geometry in a symmetry-forbidden photocurrent
+
+URL Source: https://arxiv.org/pdf/2604.00221v1
+
+Published Time: Thu, 02 Apr 2026 00:17:26 GMT
+
+Number of Pages: 19
+
+Markdown Content:
+# Field-unmasked quantum geometry in a symmetry-forbidden photocurrent 
+
+Bumseop Kim, 1, ∗ Aaron M. Burger, 2, ∗ Zhenbang Dai, 3, 4 Sayed Ali Akbar Ghorashi, 1 Adam Abirou, 5
+
+Md Al Helal, 6 Vladimir M. Fridkin, 5, 7 Jonathan E. Spanier, 2, 5, 6 and Andrew M. Rappe 1, †
+
+> 1
+
+Department of Chemistry, University of Pennsylvania, Philadelphia, Pennsylvania 19104, USA 
+
+> 2
+
+Department of Electrical and Computer Engineering, Drexel University, Philadelphia, Pennsylvania 19104, USA 
+
+> 3
+
+Oden Institute for Computational Engineering and Sciences, The University of Texas at Austin, Austin, Texas 78712, USA 
+
+> 4
+
+Department of Physics, The University of Texas at Austin, Austin, Texas 78712, USA 
+
+> 5
+
+Department of Physics, Drexel University, Philadelphia, Pennsylvania 19104, USA 
+
+> 6
+
+Department of Materials Science and Engineering, Drexel University, Philadelphia, Pennsylvania 19104, USA 
+
+> 7
+
+Shubnikov Institute for Crystallography, Russian Academy of Sciences, Leninsky Prospect 59, Moscow 117333, Russia 
+
+(Dated: April 2, 2026) Frequency- and polarization-resolved photocurrents provide a sensitive probe of hidden symmetry and band geometry in quantum materials 1–9 . Here we study a chiral cubic sillenite, Bi 12 SiO 20 ,whose global crystal symmetry forbids a longitudinal odd-in-B magneto-photocurrent in the Voigt geometry 10 . Nevertheless, we observe a pronounced longitudinal response across the visible range that is predominantly linear in magnetic field, persists below the band gap, and exhibits strong helicity selectivity, with the circular channel exceeding the linear one and reversing sign upon switching light helicity. We resolve this apparent contradiction by identifying defect-enabled, field-selected spin ordering as the mechanism that lowers the effective magnetic symmetry without altering the global crystal structure. First-principles calculations show that oxygen vacancies generate in-gap bound states and localized magnetic moments on neighboring Bi-O units, stabilized by strong spin-orbit coupling. Although symmetry-related vacancy configurations remain energetically degenerate and preserve the macroscopic T symmetry at zero field, an applied magnetic field selects a time-reversal-broken sector of the defect ensemble and reduces the effective magnetic symmetry to the subgroup that leaves ˆB invariant, thereby lifting the longitudinal selection rule. Importantly, this field-selected symmetry reduction does more than activate a nominally forbidden photocurrent: it unmasks latent quantum-geometric responses encoded in the electronic structure. Momentum-resolved calculations show that the dominant circular and linear magneto-photocurrent channels spatially correlate with Berry-curvature-rich and quantum-metric-rich regions of the Brillouin zone, respectively. Our results establish field-selected defect symmetry lowering as a route to revealing hidden quantum geometry and activating forbidden nonlinear photocurrents in chiral quantum materials. 
+
+I. INTRODUCTION 
+
+Photocurrents provide a powerful probe of hidden sym-metries and related electronic structure in solids 1,2,11–13 .The direction of the current is dictated by the underlying spatial symmetries, whereas its magnitude is controlled by the band topology and quantum geometry, including the Berry curvature and quantum metric of Bloch states. It is therefore highly sensitive to the interplay among crystalline symmetry, band topology, and external pertur-bations such as electromagnetic fields 14–16 . In particular, the polarization dependence of photocurrents gives di-rect access to selection rules, enabling the separation of microscopic contributions from intrinsic band-geometry effects and extrinsic mechanisms 17–19 . Recent works have leveraged these features to probe Berry curvature and topological band structure via nonlinear optical responses, including the bulk photovoltaic effect (BPVE) and the circular photogalvanic effect 4,5,20,21 . These developments highlight photocurrent spectroscopy as both an exper-imental diagnostic of purely electronic states that are difficult to access with conventional spectroscopies 22–24 
+
+and a means to reveal hidden material properties 25,26 .Among nonlinear photocurrent phenomena, the BPVE, a second-order current under uniform illumination, is particularly sensitive to crystal symmetry and attrac-tive for next-generation optoelectronics 27–30 . In an exter-nal magnetic field, additional magneto-optical structure emerges and enables magnetic control over light–matter coupling 4,31–34 . Generically, the second-order current den-sity can be written in powers of the electric field E and the magnetic field B as, 
+
+Ji(E, B) = X
+
+> j≥0
+
+χ(2 ,j ) 
+
+> i; ( α1α2);( β1··· βj)
+
+Eα1 Eα2
+
+> j
+
+Y
+
+> l=1
+
+Bβl
+
+!
+
+,i, α r , β l ∈ { x, y, z }.
+
+(1) which makes symmetry constraints on the tensor coeffi-cients explicit 10 .In high-symmetry crystals such as chiral cubic point group T [Fig. 1(a)], these constraints can tightly restrict responses. In particular, a longitudinal odd-in-B magneto-photocurrent in the Voigt geometry, J ∥ k ⊥ B where 
+
+k is the light-propagation direction, is forbidden by T -symmetry selection rules [Fig. 1(b)] 10 . Thus, the response under odd powers of the magnetic field in Eq. 1 should 
+
+> arXiv:2604.00221v1 [cond-mat.mes-hall] 31 Mar 2026
+
+2vanish. Bismuth-containing sillenite crystals with point group T , such as Bi 12 SiO 20 (BSO), have long been studied for their strong photorefractive, electro-optic, and nonlin-ear optical responses 35,36 , but their application has been limited by their symmetry constraints. Contrary to this expectation, we observe significant longitudinal magneto-photovoltaic effect (MPVE) across the entire visible range (325-647 nm), including sub-band-gap excitation and pre-dominantly linear order in B. These observations point to an additional ingredient that modifies the effective sym-metry relevant to the magneto-optical response beyond that of the ideal crystal. In this work, we show that oxygen-vacancy defects en-able a field-selected spin-ordering mechanism that lowers the effective magnetic symmetry while preserving the global crystallographic point group T 37–40 . Structural de-fects, which are ubiquitous in chiral high-symmetry BSO, locally reduce rotational symmetry and create in-gap states and unpaired spin moments, while their symmetry-related configurations remain statistically uniform at 
+
+B = 0 and therefore preserve macroscopic T symmetry. Experimentally, we observe pronounced sub-band-gap lon-gitudinal photocurrents with clear polarization harmonics and strong helicity selectivity. We find that vacancies generate localized magnetic moments on neighboring Bi-O units stabilized by strong Bi spin-orbit coupling, and that an applied magnetic field selects among spin-orbit-coupled magnetocrystalline-anisotropy minima, introduc-ing a distinct axial direction and reducing the effective magnetic symmetry to the subgroup that leaves ˆB invari-ant, T → C2 ˆB . This field-selected symmetry lowering lifts the longitudinal selection rule and activates the odd-in-B
+
+magneto-photocurrent channel observed experimentally. More importantly, the activated response provides access to latent quantum geometry that is hidden by symmetry in the pristine crystal. By directly connecting the domi-nant circular and linear magneto-photocurrent channels to Berry-curvature-rich and quantum-metric-rich regions of momentum space, respectively, we show that defect-and field-selected symmetry lowering does not merely unlock a forbidden response, but also unmasks the under-lying band geometry. Together, these results establish a unified mechanism for field-unmasking hidden quantum geometry and activating symmetry-forbidden nonlinear photocurrents in chiral quantum materials.  
+
+> II. RESULTS Forbidden-to-allowed longitudinal magneto-photocurrent in chiral BSO.
+
+BSO is a chiral, non-centrosymmetric crystal in the cubic point group T and space group I23, comprising a central [SiO 4]4− tetrahedron surrounded by a cage-like [Bi 3O4]+ framework. The structure admits two-fold and three-fold rotations, which invert transverse Cartesian components and cyclically permute the axes, respectively as shown in Fig. 1(a). The second-order magneto-optical current can be written as, 
+
+Ja = Sabcd EbE∗ 
+
+> c
+
+Bd + i Q abc (E × E∗)b Bc, (2) where Sabcd and Qabc are the fourth and third-rank tensors characterizing the linear and circular MPVE responses, respectively 10,41,42 . They are allowed only when the light-propagation vector k, the photocurrent direction J, and the magnetic field direction B are orthogonal to each other in point group T ; any longitudinal component reverses sign under the crystal’s two-fold rotations while k remains invariant—a selection rule confirmed experimentally 43 .We probe magneto-photocurrent in the Voigt geometry with B ∥ ˆy and k ∥ ˆz [Fig. 1(b)]. Symmetry analysis (full tensor derivation is provided in the Supplementary Note S1 A and S1 B) shows that odd-in-B magneto-optical terms (i.e., odd-q terms in Eq. 1) are allowed only for Hall configurations ( J ⊥ k), whereas even-in-B terms (even-q terms in Eq. 1) are only allowed for longitudinal components ( J ∥ k). In our experiment, contrary to the symmetry analysis, we observe a longitudinal B-linear order magneto-photocurrent ( J ∥ k) in BSO across the visible range (325-647 nm) while rotating a quarter-wave plate (QWP) by an angle ψ [Fig. 1(c) and Fig. S1]. A ro-tating QWP transforms the light from linear xy -polarized (ψ = 0) to right- and left-circular polarization (RCP, 
+
+ψ = π/ 4; LCP, ψ = 3 π/ 4) 44 , thereby decomposing the re-sponse into helicity-odd and linear-polarization harmonics. The measured currents Jz (ψ) are well fitted by 20,40 
+
+Jz (ψ) = JL sin(4 ψ + ψ0) − JC sin(2 ψ) + J0 (3) where the magnetic-field dependence of JL and JC encode the linear and circular photocurrent tensor component, re-spectively. J0 denotes a polarization-independent current, which typically occurs near the electrodes and vanishes toward the midpoint. Four salient observations emerge. (i) The longitudinal differential signal ∆ Jz ≡ Jz (B) − Jz (0) exhibits a clear linear-in-B dependence in the Voigt geometry [Fig. 1(d) and Fig. S2], which we argued is forbidden by T symmetry in the longitudinal channel. The measured current change reverses sign when the B field is reversed, indicating the response is an odd function of the B field. We quantify magnetic sensitivity by extracting the slope ∂J/∂B for each ψ from linear fits to the traces in Fig. 1(d). The experimental sensitivity peaks for RCP ( ψ = π/ 4) and LCP ( ψ = 3 π/ 4) and reverses sign between the two across the visible range [Fig. 1(e) and Fig. S3]. (ii) Across the visible spectrum, the magnetophotovoltaic response un-der circularly-polarized light is approximately four times larger than the one with linear polarization [Fig. 1(f)]. (iii) Reversing helicity (RCP ↔ LCP) flips the sign of Jz
+
+at fixed B [Fig. 1(e) and 1(f)]. (iv) Strong signals persist well below the experimental band gap of ≈ 3.2 eV (blue dashed line in Fig. 1(f)) 45,46 . Taken together, these obser-vations imply that generating a second-order photocurrent 3at sub-band-gap photon energies requires a mechanism beyond the conventional symmetry arguments. 
+
+> Defect-enabled magneto-electric response in Bi 12 SiO 20 .
+
+Because we measure a second-order photocurrent at photon energies below the BSO band gap, the response necessarily involves in-gap states. Since BSO is also known to host a variety of defect-related optical phe-nomena 37,38,45–49 , the most parsimonious interpretation is that defect-induced properties enable the longitudinal, odd-in-B, helicity-selective magneto-photocurrent chan-nel observed here. To further examine this picture, we first measured room-temperature Raman spectra. As shown in Fig. 2(a), the observed Raman peaks match the character-istic phonon modes reported for sillenite BSO, supporting the phase purity of the measured crystals 50–52 . We then performed photoluminescence (PL) measurements, shown in Fig. 2(b). Under 457 nm circularly polarized excitation, BSO exhibits a PL band centered near 640 nm, in good agreement with earlier reports 53 . This PL response is consistent with defect-mediated recombination through optically active in-gap states. Taken together, these spec-troscopic results support the defect-based interpretation of the sub-band-gap photocurrent. Among the possible defect species, oxygen vacancies are widely considered to be among the most abundant under oxygen-poor condi-tions 37 .Our calculations show that the total energy of O vacan-cies under magnetic field across symmetry-related sites are degenerate for sites at the same Si proximity (N/N-N/NNN Si) [Fig. 2(c)], implying a statistically uniform occupation that preserves the global T symmetry. Hence, each individual vacancy lowers symmetry locally, while the ensemble retains the crystalline point group, consistent with our group-theoretical analysis (see Supplementary Note S1 C). Therefore, since the defects themselves do not break the spatial symmetry, the observed symmetry-forbidden magneto-photocurrent must arise from how these defects modify the system’s response beyond what is captured by the ideal crystal symmetry. One well-known defect-related phenomenon is defect-induced magnetism, and even p-orbital-based graphene shows sizable moments upon defect creation 54,55 . As shown in Fig. 2(d), removing O leaves an unpaired elec-tron depending on charge state. This magnetic moment adopts orientations stabilized by the strong spin-orbit coupling (SOC) of Bi 56 . Details of the charged defect calculation are described in the Methods section. Con-sistent with this picture, previous electron paramagnetic resonance (EPR) measurements report an effective spin-1/2 center upon vacancy formation 57 . We summarized defect formation energy calculations in the Methods sec-tion. In our DFT calculations, allowing noncollinear spin polarization stabilizes the defect state; compared to a spin-constrained solution, the spinor wavefunction solu-tion opens a spin-dependent gap, as shown in Fig. 2(e) and (f), and lowers the total energy by approximately 70 meV. To determine in detail how a charged oxygen vacancy sets a preferred spin orientation in the absence of an exter-nal field, we map the defect magnetocrystalline anisotropy energy (MAE) induced by Bi spin-orbit coupling. For each symmetry-related vacancy configuration p, we constrain the magnetization direction ˆm and compute the total energy E(p)( ˆm) over a quasi-uniform set of orientations on S2 (Fibonacci sampling, including antipodal partners to enforce E( ˆm) = E(− ˆm) at B = 0). We then extract the easy axis ˆm(p)easy using a robust leading-anisotropy quadratic fit E(p)( ˆm) = C(p) + ˆmTM (p) ˆm, where the minimum-eigenvalue eigenvector of the symmetric ma-trix M (p) defines ˆm(p)easy . Across symmetry-related defect sites, the resulting easy axes transform covariantly under crystallographic rotations, ˆm(q)easy ≃ R ˆm(p)easy , consistent with the underlying T symmetry of the ionic lattice. De-tailed information for the spin easy axis is summarized in Supplementary Note S2. At B = 0, the nearly degenerate formation energies of symmetry-related vacancy sites imply a statistically uniform configurational ensemble, so the net magnetiza-tion cancels and the macroscopic point group remains T
+
+(and space group I23). Applying a magnetic field selects among the SOC-coupled MAE minima by favoring the branch with the local moment aligned with ˆB (in our Voigt geometry, B ∥ ˆy), thereby introducing a distinguished axial direction in the electronic sector even without any ionic symmetry breaking. Consequently, the effective symmetry is reduced to the subgroup of T that leaves ˆB
+
+invariant, i.e., T → { E, C 2 ˆB} ≡ C2. This field-selected magnetic point-group reduction removes the cancellations enforced by the orthogonal C2 axes in T and therefore opens a longitudinal photocurrent channel that is odd in 
+
+B and linear in B at leading order, in agreement with the observed Voigt-geometry response. This mechanism resolves the full set of experimental anomalies within a single picture. Oxygen vacancies in-troduce in-gap states, thereby enabling sub-band-gap photoexcitation, while simultaneously generating local-ized spin moments stabilized by strong SOC. At zero field, symmetry-related vacancy configurations are degenerate and statistically preserve the macroscopic T symmetry, so no net symmetry-forbidden longitudinal odd-in-B re-sponse is selected. Under an applied magnetic field, how-ever, the defect ensemble is projected onto the spin-orbit-coupled branch favored by ˆB, which lowers the effective magnetic point group to the subgroup compatible with the field direction. This field-selected symmetry reduction re-moves the cancellation enforced in the pristine crystal and activates the longitudinal magneto-photocurrent channel observed experimentally. 4
+
+Defect-activated longitudinal magneto-photocurrent in BSO. 
+
+Having established that oxygen vacancies generate lo-calized moments while preserving the macroscopic crystal symmetry at B = 0, we now test whether field-selected symmetry lowering is sufficient to reproduce the three central experimental signatures simultaneously: a longitu-dinal odd-in-B response, strong sub-band-gap photocur-rent, and helicity-selective enhancement under circular polarization. We evaluate the resulting photocurrent us-ing DFT with a perturbative formalism that includes both shift and injection contributions 3,58 . We include spin–orbit coupling and an external magnetic field as a Zeeman-like term applied along [010]. Longitudinal pho-tocurrent with xy oscillating electric field for the defect ensemble and for pristine BSO show significantly different behavior depending on magnetic field as shown in Fig. 3(a) and (b), respectively. In the pristine case, there is no magnetic field dependence. By contrast, the defect ensemble BSO shows a pronounced sub-gap photocurrent, and the B dependence tracks the dominant experimental trends closely, supporting our analytic derivation above. Together with photocurrent calculations for other possible defects (See Fig. S4), these results identify defect-induced local moments as the origin of the symmetry-forbidden response observed experimentally. To enable a quantitative comparison between theory and experiment, we examine the magnetic-field depen-dence of the photocurrent at the photon energy marked by the black arrow in Fig. 3(a). Plotting Jz versus B repro-duces the experimentally observed dominant linear-in-B,helicity-selective response [Fig. 3(c)]. At the same field amplitude, the measured and calculated responsivities are 1 .00 × 10 −10 A/W and 0 .45 × 10 −10 A/W, respec-tively. We quantify magnetic sensitivity by extracting the slope ∂J/∂B for each ψ from linear fits to the traces in Fig. 3(d). The experimental sensitivity shows peaks for RCP ( ψ = π/ 4) and LCP ( ψ = 3 π/ 4) and reverses sign between the two across the visible range [Fig. 3(c) and Fig. S3]. Consistently, fitting the numerical calculation to Eq. 3 yields a dominant circular component with much smaller linear terms, mirroring the experimental trend vs. wavelength. In all cases, they differ by about a factor of 2, and the residual amplitude discrepancy likely reflects dif-ferences in defect concentration or carrier lifetime, as well as limitations of the present supercell-based, perturbative treatment (lack of an explicit real-time vector potential 
+
+A(t) and omission of many-body/excitonic effects). We now demonstrate the polarization dependence of the photocurrent. Because a magnetic field aligns pre-existing spins and lowers the symmetry, both linear and circular magneto-photocurrent tensors become allowed; however, the experimentally observed magnitude contrast [CPL ≈ 4× LPL at λ = 568 nm; Fig. 1(f)] cannot be set by symmetry considerations alone. To resolve this, we decompose our BPVE (shift and injection current) into linear and circular components. From shift current ( JSC )and injection current ( JIC ) equations 4,59 ,
+
+Ja 
+
+> SC
+
+= − iπe 3
+
+2ℏ2
+
+Z
+
+[dk] X
+
+> mnσ
+
+fnm 
+
+  rbmn rcnm ;ka − rcmn rbnm ;ka
+
+
+
+δ(ωnm − ωβ ) Eb(ωβ ) Ec(−ωβ ) .
+
+(4) 
+
+dJ a
+
+> IC
+
+dt = − πe 3
+
+ℏ2
+
+Z
+
+[dk] X
+
+> mnσ
+
+fmn ∆amn rbnm rcmn 
+
+δ(ωnm − ωβ ) Eb(ωβ ) Ec(−ωβ ) .
+
+(5) where r bnm ;ka = ∂r bmn  
+
+> ∂k a
+
+− i r bmn (Aam − Aan) is the gauge-covariant derivative associated with the shift vector. 
+
+r bnm = i⟨n|∂kb |m⟩ and Aan = i⟨n|∂ka |n⟩ are the in-terband and intraband Berry connections, respectively. ∆anm = vann − vamm , where vanm = 1 
+
+> ℏ
+
+⟨n|∂ka H|m⟩. We can symmetrize our electric fields as following; 
+
+Eb(ω) Ec(−ω) = Eb(ω) E∗ 
+
+> c
+
+(ω) = Re  EbE∗
+
+> c
+
+ + i Im  EbE∗
+
+> c
+
+ ,Eb(−ω) Ec(ω) = E∗ 
+
+> b
+
+(ω) Ec(ω) = Re  EbE∗
+
+> c
+
+ − i Im  EbE∗
+
+> c
+
+ .
+
+(6) When we substitute Eq. 6 into Eqs. 4 and 5, we can decompose the linear and circular components as below; 
+
+Ja 
+
+> SC
+
+= 2 σabc  
+
+> Ib
+
+Re  EbE∗
+
+> c
+
+ + 2 i σ abc  
+
+> TRb
+
+Im  EbE∗
+
+> c
+
+ ,σabc 
+
+> Ib
+
+= − πe 3
+
+4ℏ2
+
+Z
+
+[dk] X
+
+> mnσ
+
+fnm 
+
+ Ra;bmn (k) + Ra;cmn (k) rbnm rcmn 
+
+ δ(ωnm − ω) ,σabc 
+
+> TRb
+
+= − πe 3
+
+4i ℏ2
+
+Z
+
+[dk] X
+
+> mnσ
+
+fnm 
+
+ Ra;bmn (k) + Ra;cmn (k)
+
+Ωdmn (k) δ(ωnm − ω) .
+
+(7) 
+
+dJ a
+
+> IC
+
+dt = 2 ηabc  
+
+> TRb
+
+Re  EbE∗
+
+> c
+
+ + 2 i η abc  
+
+> Ib
+
+Im  EbE∗
+
+> c
+
+ ,ηabc  
+
+> Ib
+
+= − πe 3
+
+2ℏ2
+
+Z
+
+[dk] X
+
+> mnσ
+
+fmn ∆amn [rbnm , r cmn ], δ (ωnm − ω) ,ηabc  
+
+> TRb
+
+= − πe 3
+
+2ℏ2
+
+Z
+
+[dk] X
+
+> mnσ
+
+fmn ∆amn {rbnm , r cmn }, δ (ωnm − ω) .
+
+(8) Here, Ra;bmn (k) and Ω dmn (k) are shift vector and local Berry curvature, respectively. When b̸ = c, Re  EbE∗
+
+> c
+
+ and Im  EbE∗
+
+> c
+
+ are the linearly and circularly polarized light, respectively. By their symmetry, σabc  
+
+> Ib
+
+and ηabc  
+
+> Ib
+
+are arise only when inversion symmetry breaking (Ib) occurs, and 
+
+σabc  
+
+> TRb
+
+and ηabc  
+
+> TRb
+
+arise only when time-reversal symmetry breaking (TRb) occurs. We plot each component of Eqs. 7 and 8 with respect to photon energy in Fig. 3(e)-(h). σabc 
+
+> Ib
+
+and ηabc  
+
+> Ib
+
+are non-zero due to non-centrosymmetry, but they have no dependence on magnetic field strength. σabc 
+
+> TRb
+
+5and ηabc  
+
+> TRb
+
+are time-reversal symmetry broken response and therefore have magnetic field dependency as per symmetry analysis. We refer to σabc  
+
+> TRb
+
+and ηabc  
+
+> TRb
+
+as circular shift and linear injection respectively. We find that the circular shift component is around 10 times larger than the linear injection component at 568 nm, qualitatively consistent with our measurement, also showing in that the circular response dominates over the linear one.  
+
+> III. DISCUSSION
+
+To further elucidate the geometric origin of the defect-activated magneto-photocurrent, we examine the k-resolved distribution of the dominant time-reversal-breaking contributions and compare them directly with the underlying band-geometric quantities. As shown in Fig. 4(a) and 4(b), the circular shift and linear injec-tion currents at 568 nm exhibit pronounced hot spots localized in specific regions of the Brillouin zone. Re-markably, these hot spots spatially correlate with the distributions of the band Berry curvature and quantum metric shown in Fig. 4(c) and 4(d), respectively. The circular shift component (Ω dmn (k)) in Eq. 7 closely follows regions of enhanced Berry curvature, consistent with its dependence on the antisymmetric part of the interband matrix elements, while the linear injection contribution ({rbnm , r cmn }) in Eq. 8 traces regions where the quantum metric is large, reflecting sensitivity to the symmetric part of the band-connection structure, as described in Supplementary Note S3. This correspondence provides direct k-space evidence that the defect-enabled symmetry lowering does not merely lift selection rules but also activates latent band-geometric responses that are already encoded in the pris-tine electronic structure. The magnetic field selects a time-reversal-broken sector of the defect ensemble, thereby preventing cancellation of Berry-curvature- and quantum-metric-mediated contributions upon Brillouin-zone inte-gration. Consequently, the observed helicity-selective longitudinal magneto-photocurrent can be understood as a field-unmasked geometric response rooted in the inter-play among spin-orbit coupling, defect-localized moments, and band topology.  
+
+> IV. CONCLUSION
+
+We have demonstrated that nominally forbidden longi-tudinal magneto-photocurrents can be activated in chiral cubic Bi 12 SiO 20 through defect-induced magnetic sym-metry lowering. Polarization-resolved photocurrent spec-troscopy reveals a pronounced odd-in-B, helicity-selective response in Voigt geometry across the visible range, per-sisting well below the band gap and thus pointing to the essential role of in-gap defect states. First-principles calcu-lations identify oxygen vacancies as the microscopic origin; vacancy-bound electronic states generate localized spin moments on neighboring Bi-O units that are stabilized by strong spin-orbit coupling. While symmetry-related vacancy configurations remain nearly degenerate and pre-serve the macroscopic T symmetry at B = 0, an external magnetic field selects among spin-orbit-coupled anisotropy minima, introducing a unique axial direction and reducing the effective magnetic symmetry to the subgroup that leaves ˆB invariant, thereby lifting the longitudinal selec-tion rule. The resulting photocurrent is dominated by time-reversal-breaking contributions and exhibits k-space hot spots that correlate closely with the band Berry curva-ture and quantum metric, establishing a direct connection between defect-unmasked symmetry channels and band geometry. Our results establish a general design principle: controlled defects combined with magnetic-field selection provide a route to helicity-tunable, symmetry-forbidden nonlinear magneto-optical functionalities in chiral quan-tum materials.   
+
+> V. METHODS A. Experimental details
+
+An Innova (Coherent) I-90 Ar/Kr ion laser and a Kim-mon Koha IK5652R-G HeCd laser provided the incident laser illumination. Light polarization was modulated using a Pockels cell electro-optic modulator (Conoptics KD*P-UV), operated at half-wave voltage. Following the modulator, and immediately before the sample, an achro-matic quarter-wave plate was automatically rotated from 
+
+ψ = 0 ◦ to ψ = 180 ◦ to vary the helicity of the incident modulated polarization from linear through elliptical to right circular polarization RCP ( ψ = 45 ◦), and left circu-lar polarization LCP ( ψ = 135 ◦) states. The modulation frequency was 376.9 Hz, and data were recorded in phase with the polarization modulation. The modulation tech-nique was reported in detail previously 31,44 . The BSO cubic crystal, 3 × 3 mm, was mounted in a magneto-optic cryostation (Montana Instruments) and maintained under static vacuum conditions at room temperature. Photocur-rents were recorded using an SRS-830 lock in amplifier. Quarter-wave plate rotation and data acquisition from the SR-830 were automated using LabVIEW. At ψ = 0 ◦, the incident light is linearly polarized along the [100] crystal direction at the entrance surface. Owing to the optically active of BSO, the polarization state evolves during prop-agation through the crystal, so that the local electric field generally acquires both x- and y-components inside the sample. Photocurrents were collected through indium tin oxide (ITO) transparent conducting electrodes deposited on the [001] and [001] crystal faces. The 100 nm thick electrodes were sputtered at room temperature, following the methods described in Ref. 60 . For each available laser wavelength, data were recorded during quarter-wave plate rotation, and measurements were acquired in sequence for each magnetic field strength. The experimental configuration used to probe magneto-6photocurrents is shown in Fig. 1(b). A magnetic field is ap-plied along [010] while light propagates along [001] ( k ∥ ˆz). The incident polarization is controlled by an electro-optic modulator and a rotating quarter-wave plate (QWP), enabling continuous tuning from linear ( x-polarized) to elliptical to circular; right-circular (RCP) and left-circular (LCP) states are realized at ψ = 45 ◦ and 135 ◦, respec-tively 44 . Magnetic fields up to ±0.6 T were applied in 0.1 T steps, and the photocurrent was measured over 325–647 nm. PL measurements were conducted with an excitation wavelength of 457 nm. A power of 20 mW was focused down to ≈ 15 micron spot size. The sample was cooled to 2 Kelvin before measurements.  
+
+> B. Theoretical details
+> Computational framework
+
+First-principles calculations were performed within the framework of DFT using the projector-augmented wave (PAW) method 61 as implemented in the VASP pack-age 62 . The exchange–correlation functional was treated within the generalized gradient approximation (GGA) of Perdew–Burke–Ernzerhof (PBE) 63 . A plane-wave cutoff energy of 500 eV was employed, and the Brillouin zone was sampled with a 10 × 10 × 10 grid, ensuring energy con-vergence within 1 meV/atom. Structural relaxations were performed until the residual Hellmann–Feynman forces on each atom were below 0.01 eV ˚A−1. SOC was included self-consistently in all calculations using a noncollinear spinor Hamiltonian, because the strong relativistic effects of Bi are essential for accurately describing the magneto-optical response. In addition, we corrected the band-gap underestimation of DFT by applying a scissor operator, making a rigid conduction-band shift (experimental band gap : 3.2 eV and simulation band gap : 2.5 eV) 64,65 .The effect of an external magnetic field ( Bext ) was in-corporated through the Zeeman interaction added to the Kohn–Sham Hamiltonian as below. ˆH = ˆH0 + Bext · σ
+
+> Defect formation energy calculation for charged states
+
+To determine the charge state of the oxygen vacancy, we evaluate the defect formation energy as a function of the Fermi level. For a defect D in charge state q, the formation energy is 
+
+Eform (Dq ; EF ) = Etot (Dq ) − Etot (bulk) − X
+
+> i
+
+niμi
+
++ q(EF + EVBM + ∆ V ) + Ecorr (q),
+
+(9) where Etot (Dq ) and Etot ( bulk ) are total energies of defec-tive and pristine supercells; ni and μi denote the number and chemical potential of species i exchanged with reser-voirs; EVBM is the valence-band maximum; ∆ V accounts for potential alignment; and Ecorr (q) is the finite-size charge correction. 
+
+> Nonlinear optical response calculations
+
+To evaluate the defect-activated magneto-photocurrent in Bi 12 SiO 20 , we employed a perturbative second-order optical-response formalism that includes both shift-current and injection-current contributions 28,58 . Starting from the Kohn-Sham Hamiltonian with the SOC and an external magnetic field introduced through a Zeeman term, we project the Kohn-Sham Hamiltonian to max-imally localized Wannier function 66 . We computed the longitudinal photocurrent response where the Brillouin zone was sampled with a 25 × 25 × 25 grid, which show sufficiently converged photocurrent spectra. 
+
+> ACKNOWLEDGMENTS
+
+This work was supported by the U.S. Department of Energy, Office of Science, Basic Energy Sciences, under Award No. DE-SC0024942.                      
+
+> ∗These authors contributed equally.
+> †rappe@sas.upenn.edu
+> 1Y. J. Zhang, T. Ideue, M. Onga, F. Qin, R. Suzuki, A. Zak, R. Tenne, J. H. Smet, and Y. Iwasa, Nature 570 , 349 (2019).
+> 2T. Akamatsu, T. Ideue, L. Zhou, Y. Dong, S. Kitamura, M. Yoshii, D. Yang, M. Onga, Y. Nakagawa, K. Watanabe, et al., Science 372 , 68 (2021).
+> 3S. M. Young, F. Zheng, and A. M. Rappe, Physical Review Letters 109 , 236601 (2012).
+> 4Y. Zhang, T. Holder, H. Ishizuka, F. de Juan, N. Nagaosa, C. Felser, and B. Yan, Nature Communications 10 , 3783 (2019).
+> 5T. Morimoto and N. Nagaosa, Science Advances 2, e1501524 (2016).
+> 6J. Ahn, G.-Y. Guo, N. Nagaosa, and A. Vishwanath, Nature Physics 18 , 290 (2022).
+> 7Q. Ma, A. G. Grushin, and K. S. Burch, Nature Materials
+> 20 , 1601 (2021).
+> 8M. Kang, S. Kim, Y. Qian, P. M. Neves, L. Ye, J. Jung, D. Puntel, F. Mazzola, S. Fang, C. Jozwiak, et al., Nature Physics 21 , 110 (2025).
+> 9R. Krishna Kumar, G. Li, R. Bertini, S. Chaudhary, K. Nowakowski, J. M. Park, S. Castilla, Z. Zhan, P. A.
+
+7
+
+Pantale´ on, H. Agarwal, et al., Nature materials 24 , 1034 (2025).  
+
+> 10
+
+V. M. Fridkin, V. G. Lazarev, and A. L. Shlensky, Japanese Journal of Applied Physics 24 , 296 (1985).  
+
+> 11
+
+I. Grinberg, D. V. West, M. Torres, G. Gou, D. M. Stein, L. Wu, G. Chen, E. M. Gallo, A. R. Akbashev, P. K. Davies, et al., Nature 503 , 509 (2013).  
+
+> 12
+
+K. F. Mak, C. Lee, J. Hone, J. Shan, and T. F. Heinz, Physical Review Letters 105 , 136805 (2010).  
+
+> 13
+
+M. W. Graham, S.-F. Shi, D. C. Ralph, J. Park, and P. L. McEuen, Nature Physics 9, 103 (2013).  
+
+> 14
+
+Q. Ma, S.-Y. Xu, C.-K. Chan, C.-L. Zhang, G. Chang, Y. Lin, W. Xie, T. Palacios, H. Lin, S. Jia, et al., Nature Physics 13 , 842 (2017).  
+
+> 15
+
+C. Ma, S. Yuan, P. Cheung, K. Watanabe, T. Taniguchi, F. Zhang, and F. Xia, Nature 604 , 266 (2022).  
+
+> 16
+
+S.-Y. Xu, Q. Ma, H. Shen, V. Fatemi, S. Wu, T.-R. Chang, G. Chang, A. M. M. Valdivia, C.-K. Chan, Q. D. Gibson, et al., Nature Physics 14 , 900 (2018).  
+
+> 17
+
+J. W. McIver, D. Hsieh, H. Steinberg, P. Jarillo-Herrero, and N. Gedik, Nature Nanotechnology 7, 96 (2012).  
+
+> 18
+
+M.-M. Yang and M. Alexe, Advanced Materials 30 , 1704908 (2018).  
+
+> 19
+
+M. Matsubara, T. Kobayashi, H. Watanabe, Y. Yanase, S. Iwata, and T. Kato, Nature Communications 13 , 6708 (2022).  
+
+> 20
+
+Z. Ji, G. Liu, Z. Addison, W. Liu, P. Yu, H. Gao, Z. Liu, A. M. Rappe, C. L. Kane, E. J. Mele, et al., Nature Mate-rials 18 , 955 (2019).  
+
+> 21
+
+J. Ahn, G.-Y. Guo, and N. Nagaosa, Physical Review X 
+
+10 , 041041 (2020).  
+
+> 22
+
+Q. Ma, R. Krishna Kumar, S.-Y. Xu, F. H. L. Koppens, and J. C. W. Song, Nature Reviews Physics 5, 170 (2023).  
+
+> 23
+
+N. Sirica, P. P. Orth, M. S. Scheurer, Y. M. Dai, M.-C. Lee, P. Padmanabhan, L. T. Mix, S. W. Teitelbaum, M. Trigo, L. Zhao, et al., Nature Materials 21 , 62 (2022).  
+
+> 24
+
+J. Pettine, P. Padmanabhan, N. Sirica, R. P. Prasankumar, A. J. Taylor, and H.-T. Chen, Light: Science & Applications 
+
+12 , 133 (2023).  
+
+> 25
+
+K. Wang, B. Zhang, C. Yan, L. Du, S. Wang, et al., Nature Communications 15 , 9036 (2024).  
+
+> 26
+
+C.-Y. Cheon, Z. Sun, J. Cao, J. F. Gonzalez Marin, M. Tri-pathi, K. Watanabe, T. Taniguchi, M. Luisier, and A. Kis, npj 2D Materials and Applications 7, 74 (2023).  
+
+> 27
+
+W. T. H. Koch, R. Munser, W. Ruppel, and P. W¨ urfel, Ferroelectrics 13 , 305 (1976).  
+
+> 28
+
+S. M. Young and A. M. Rappe, Physical Review Letters 
+
+109 , 116601 (2012).  
+
+> 29
+
+J. E. Spanier, V. M. Fridkin, A. M. Rappe, A. R. Akba-shev, A. Polemi, Y. Qi, Z. Gu, S. M. Young, C. J. Hawley, D. Imbrenda, et al., Nature Photonics 10 , 611 (2016).  
+
+> 30
+
+S. Aftab, M. Z. Iqbal, Z. Haider, M. W. Iqbal, G. Nazir, and M. A. Shehzad, Advanced Optical Materials 10 , 2201288 (2022).  
+
+> 31
+
+A. M. Burger, R. Agarwal, A. Aprelev, E. Schruba, A. Gutierrez-Perez, V. M. Fridkin, and J. E. Spanier, Sci-ence Advances 5, eaau5588 (2019).  
+
+> 32
+
+A. M. Burger, L. Gao, R. Agarwal, A. Aprelev, J. E. Spanier, A. M. Rappe, and V. M. Fridkin, Physical Review B 102 ,081113 (2020).  
+
+> 33
+
+Z. Dai and A. M. Rappe, Physical Review B 107 , L201201 (2023).  
+
+> 34
+
+H. Pi, S. Zhang, and H. Weng, Quantum Frontiers 2, 6 (2023).  
+
+> 35
+
+V. Tassev, M. Gospodinov, and M. Veleva, Crystal Research and Technology: Journal of Experimental and Industrial Crystallography 35 , 213 (2000).  
+
+> 36
+
+P. Mihailovic, S. Petricevic, S. Stankovic, and J. Radunovic, Optical Materials 30 , 1079 (2008).  
+
+> 37
+
+V. I. Burkov, A. V. Egorysheva, and Y. F. Kargin, Crystal-lography Reports 46 , 312 (2001).  
+
+> 38
+
+I. Ahmad, V. Marinova, and E. Goovaerts, Physical Review B 79 , 033107 (2009).  
+
+> 39
+
+H.-J. Reyher, U. Hellwig, and O. Thiemann, Physical Re-view B 47 , 5638 (1993).  
+
+> 40
+
+E. L. Ivchenko and S. D. Ganichev, arXiv preprint arXiv:1710.09223 (2017).  
+
+> 41
+
+B. I. Sturman and V. M. Fridkin, Photovoltaic effect in media without a center of symmetry and related phenomena 
+
+(1992).  
+
+> 42
+
+D. Hornung and R. von Baltz, Physical Review B 103 ,195203 (2021).  
+
+> 43
+
+M. P. Petrov and A. I. Grachev, ZhETF Pisma Redaktsiiu 
+
+30 , 18 (1979).  
+
+> 44
+
+A. L. Grachev and M. P. Petrov, Ferroelectrics 43 , 181 (1982).  
+
+> 45
+
+S. L. Hou, R. B. Lauer, and R. E. Aldrich, Journal of Applied Physics 44 , 2652 (1973).  
+
+> 46
+
+M. Isik, S. Delice, and N. M. Gasanly, Physica Scripta 96 ,125875 (2021).  
+
+> 47
+
+A. F. Lima, S. A. S. Farias, and M. V. Lalic, Journal of Applied Physics 110 , 083705 (2011).  
+
+> 48
+
+A. F. Lima and M. V. Lalic, Journal of Physics: Condensed Matter 25 , 495505 (2013).  
+
+> 49
+
+R. B. Lauer, Journal of Applied Physics 42 , 2147 (1971).  
+
+> 50
+
+W. Wojdowski, Physica Status Solidi (b) 130 , 121 (1985).  
+
+> 51
+
+Z. Lazarevi´ c, S. Kosti´ c, V. Radojevi´ c, M. Romˇ cevi´ c, M. Gili´ c, M. Petrovi´ c-Damjanovi´ c, and N. Romˇ cevi´ c, Phys-ica Scripta 157 , 014046 (2013).  
+
+> 52
+
+M. Isik, S. Delice, N. Gasanly, N. Darvishov, and V. Bagiev, Journal of Applied Physics 126 (2019).  
+
+> 53
+
+A. Cremades, M. Santos, A. Rem´ on, J. Garc´ ıa, E. Di´ eguez, and J. Piqueras, Journal of Applied Physics 79 , 7186 (1996).  
+
+> 54
+
+R. R. Nair, M. Sepioni, I.-L. Tsai, O. Lehtinen, J. Keinonen, A. V. Krasheninnikov, T. Thomson, A. K. Geim, and I. V. Grigorieva, Nature Physics 8, 199 (2012).  
+
+> 55
+
+O. V. Yazyev, Reports on Progress in Physics 73 , 056501 (2010).  
+
+> 56
+
+E. Brand, V. Rosendal, Y. Wu, T. Tran, A. Palliotto, I. V. Maznichenko, S. Ostanin, V. Esposito, A. Ernst, S. Zhou, et al., Applied Physics Reviews 12 , 011327 (2025).  
+
+> 57
+
+H. Sekhar, Ph.D. thesis, School of Physics, University of Hyderabad, Hyderabad, India (2012).  
+
+> 58
+
+J. E. Sipe and A. I. Shkrebtii, Physical Review B 61 , 5337 (2000).  
+
+> 59
+
+H. Wang and X. Qian, npj Computational Materials 6, 199 (2020).  
+
+> 60
+
+A. L. Bennett-Jackson, Ph.D. thesis, Drexel University (2022).  
+
+> 61
+
+G. Kresse and D. Joubert, Physical Review B 59 , 1758 (1999).  
+
+> 62
+
+G. Kresse and J. Hafner, Physical Review B 47 , 558 (1993).  
+
+> 63
+
+J. P. Perdew, K. Burke, and M. Ernzerhof, Physical Review Letters 77 , 3865 (1996).  
+
+> 64
+
+Z. H. Levine and D. C. Allan, Physical Review Letters 63 ,1719 (1989).  
+
+> 65
+
+F. Nastos, B. Olejnik, K. Schwarz, and J. E. Sipe, Physical Review B 72 , 045223 (2005). 8 
+
+> 66
+
+A. A. Mostofi, J. R. Yates, Y.-S. Lee, I. Souza, D. Vander-bilt, and N. Marzari, Computer Physics Communications 
+
+178 , 685 (2008). 9
+
+FIG. 1. (a) Crystal structure of Bi 12 SiO 20 : atomic model (Si blue, Bi grey, and O red) and a simplified tetrahedral diagram highlighting its chiral cubic symmetry T with two-fold and three-fold symmetry (space group I23). (b) Measurement geometry in the Voigt configuration for longitudinal photocurrent under magnetic field: Photocurrent J ∥ ˆz, magnetic field B ∥ ˆy, and light propagates along k ∥ ˆz. (c) Magneto-optical photocurrent Jz versus quarter-wave-plate angle ψ at λ = 568 nm; color encodes magnetic field B (T; + ˆy positive; −0.6 → 0.6 in 0.1 T steps). (d) Magnetic field dependence of Jz (∆ Jz ) at λ = 568 nm for quarter-wave plate angles ψ ∈ [0 , π ]. (e) Magnetic sensitivity ∂J z /∂B versus light-polarization state for all measured wavelengths. (f) Spectra of the magneto-photocurrent change ∆ Jz (B) ≡ Jz (B) − Jz (B = 0) for left circularly (left), linearly (middle), and right circularly (right) polarized light. The blue dashed line marks the pristine BSO band gap ( ≈ 387 nm). 10 
+
+FIG. 2. (a) Room-temperature Raman spectrum of Bi 12 SiO 20 collected via a back-scattering configuration under 457 nm excitation with a parallel polarization geometry. Raman spectra exhibit peaks at 61.0, 69.6, 92.3, 132.4, 147.7, 170.1, 212.2, 280.5, 331.5, 462.5, and 542.7 cm −1. (b) Photoluminescence spectrum of Bi 12 SiO 20 with an excitation wavelength of 457 nm depending on helicity of light (RCP, black-solid; LCP blue-dashed lines). (c) Total energies of symmetry-related neutral oxygen-vacancy configurations  V×
+
+> O
+
+, grouped by the distance to the nearest Si site (N/NN/NNN). (d) Defect formation energy of Bi 12 SiO 20 with an oxygen vacancy as a function of the Fermi level; the slope of each segment equals the charge state q. Shaded regions indicate the valence-band (VB) and conduction-band (CB) energy ranges. (e,f) Spin-resolved density of states (DOS) for Bi 12 SiO 20 
+
+containing V ·O: (e) a magnetic solution with total magnetization M ≈ 1 μB per supercell and (f) a (nearly) nonmagnetic solution with M ≈ 0, highlighting a defect-related feature near EF (circled). (g) Supercell view and local atomic environment around V·O, illustrating vacancy-induced spin polarization on neighboring Bi atoms (arrow indicates the spin/magnetization direction). 
+
+FIG. 3. (a,b) Calculated spectral magneto-photocurrent of (a) defective BSO (defect ensemble) and (b) pristine BSO for 
+
+B ∥ [010] and k ∥ [001]. (c) Calculated magnetic field dependence of ∆ Jz at λ = 568 nm for quarter-wave angles ψ ∈ [0 , π ] with fitting. (d) Magnetic sensitivity ∂J z /∂B versus light-polarization state for all measured wavelengths fitting using Eq. 3. (e-h) Decomposition photocurrent of the defect ensemble into (e) linear shift, (f) circular injection, (g) circular shift, and (h) linear injection currents. 11 
+
+FIG. 4. (a,b) Two-dimensional (2D) momentum-resolved distribution of (a) circular shift and (b) linear injection currents of the 568 nm peak in the first Brillouin zone (BZ) of the defect ensemble Bi 12 SiO 20 at kz = 0 plane. (c,d) Corresponding 2D momentum-resolved distribution of (c) Berry curvature and (d) Quantum metric map in the first BZ of the defect ensemble Bi 12 SiO 20 at kz = 0 plane. 12 
+
+# Extended data Figure 1 
+
+> FIG. S1. Measured variation in the longitudinal photocurrent vs. QWP angle for various magnetic fields. Individual traces fit using eq. 3.
+
+The photocurrent was analyzed by fitting Jz (ψ, B ) at each wavelength across all magnetic fields to 
+
+Jz (ψ, B ) = JL(B) sin(4 ψ + ψ0) − JC (B) sin(2 ψ) + J0,
+
+where the amplitudes were taken to vary linearly with field, JL(B) = JL0 + JL1B and JC (B) = JC0 + JC1B. The phase offset ψ0 and constant offset J0 were treated as field-independent and shared across all magnetic fields at a given wavelength. More general models allowing additional field-dependent terms were considered but did not improve the fit, and were therefore excluded. In some cases, the linear current JL exhibited no measurable field dependence, and was well described by JL(B) = JL(B = 0). This procedure yields a minimal description of the data that isolates the field dependence of the linear and circular photocurrent components. 13 
+
+# Extended data Figure 2 
+
+FIG. S2. Measured magneto-optical photocurrent versus magnetic field for a range of QWP helicities at each laser wavelength excitation. 14 
+
+# Extended data Figure 3 
+
+FIG. S3. Light polarization variation of the photocurrent magnetic field sensitivity for each of the laser wavelengths. 15 
+
+# Extended data Figure 4 
+
+FIG. S4. (a,b) Spectral magneto-photocurrent of (a) Fe-doped BSO and (b) Si-Bi exchange defective BSO defined as ∆jz (B) ≡ jz (B) − jz (0) for B ∥ [010] and k ∥ [001]. Both defect ensemble show magnetic field dependence, but not clear linear dependence on B field. 16 
+
+> NOTE S1. SYMMETRY PROOF FOR THE DEFECT-ACTIVATED LONGITUDINAL RESPONSE
+
+In this note, we summarize the symmetry logic underlying the main-text claim that a longitudinal odd-in-B
+
+magneto-photocurrent is forbidden in pristine Bi 12 SiO 20 with point group T , but can become allowed once a magnetic field selects a reduced symmetry sector of the defect ensemble.    
+
+> A. Pristine Tcrystal: allowed second-order response without magnetic field
+
+The point group T is noncentrosymmetric and contains only proper rotations: the identity, eight C3 rotations, and three C2 rotations. In the absence of a magnetic field, the second-order photocurrent can be written as 
+
+Ja = Sabc EbE∗ 
+
+> c
+
++ i Q ab (E × E∗)b, (S1) where Sabc and Qab denote the linear and circular photovoltaic tensors, respectively. For light propagating along ˆ z with polarization in the xy plane, we use 
+
+El = E0
+
+√2 (1 , 1, 0) ei(kz −ωt ), Ec = E0
+
+√2 (1 , ±i, 0) ei(kz −ωt ), (S2) where the sign distinguishes the two opposite helicities. The longitudinal response takes the form 
+
+J · ˆz = Szxy (El · ˆx)( E∗ 
+
+> l
+
+· ˆy) + i Q zz 
+
+(Ec × E∗ 
+
+> c
+
+) · ˆz. (S3) Under any of the three C2 rotations of T , the signs of the relevant vector components transform in such a way that eq. (S3) remains symmetry-allowed. Thus, in pristine point group T , the longitudinal zero-field LPGE and CPGE channels are not forbidden by symmetry.     
+
+> B. Pristine Tcrystal in Voigt geometry: forbidden odd-in-Blongitudinal response
+
+In the Voigt geometry used in the experiment, with k ∥ ˆz and B ∥ ˆy, the longitudinal odd-in-B magneto-photocurrent can be written as 
+
+J · ˆz = Szxyy (El · ˆx)( E∗ 
+
+> l
+
+· ˆy)( B · ˆy) + i Q zzy 
+
+(Ec × E∗ 
+
+> c
+
+) · ˆz(B · ˆy). (S4) The crucial point is that, in the pristine T crystal, the two C2 operations orthogonal to the magnetic-field direction still constrain the response. Under C2x, both ( E∗ 
+
+> l
+
+· ˆy) and ( B · ˆy) change sign, while J · ˆz also changes sign. Comparing the transformed expression with eq. (S4) shows that the tensor coefficients associated with the odd-in-B longitudinal response must vanish. The same conclusion follows from C2z .By contrast, under C2y , the longitudinal response remains compatible with the symmetry operation. Therefore, in pristine point group T , a nonzero longitudinal odd-in-B response in Voigt geometry is forbidden specifically because the two C2 axes perpendicular to B enforce cancellation. A nonzero response requires breaking both orthogonal C2
+
+symmetries while retaining the subgroup compatible with the field direction.    
+
+> C. Defect ensemble at B= 0
+
+We now consider a defect ensemble in which each local defect induces a local polar vector F and possibly a local magnetic moment, while the set of symmetry-related defect sites remains statistically uniform. Denoting the ensemble average by ⟨· · ·⟩ , the odd moments of F vanish, 
+
+⟨Fi⟩ = 0 , ⟨FiFj Fk⟩ = 0 , (S5) while the even moments reduce to isotropic tensor contractions, 
+
+⟨FiFj ⟩ = F 2
+
+3 δij , ⟨FiFj FkFℓ⟩ = A(δij δkℓ + δik δjℓ + δiℓ δjk ), (S6) with A fixed by F 4 .17 For a generic current expansion from Eq. 1, 
+
+Ji(E, B; F) = X
+
+> j,l ≥0
+
+χ(2 ,j ;l) 
+
+> i; ( α1α2);( β1··· βj);( γ1··· γl)
+
+Eα1 Eα2
+
+> j
+
+Y
+
+> a=1
+
+Bβa
+
+! lY
+
+> b=1
+
+Fγb
+
+!
+
+, i, α r , β j , γ l ∈ { x, y, z }, (S7) all contributions with odd powers of F vanish after ensemble averaging, while even powers reduce to isotropic renormalizations of already allowed terms. Therefore, at B = 0, defect averaging cannot by itself activate a response channel that is symmetry-forbidden in the pristine T crystal. It can only renormalize the strength of allowed responses. 
+
+NOTE S2. HOW SPINS ORDER AT B = 0 : DETERMINING THE EASY AXIS OF THE CHARGED OXYGEN VACANCY 
+
+The charged oxygen vacancy hosts a local moment whose orientation is set by MAE induced by SOC. We determine the MAE landscape by constraining the magnetization direction ˆm (unit vector) at B = 0 and computing the total energy E(i)( ˆ m) for each defect configuration i.To sample orientations uniformly on the sphere, we use a spiral (Fibonacci-type) lattice on S2. We generate Nh
+
+points on the upper hemisphere ( z ≥ 0) and include their antipodal partners to enforce the reversal symmetry 
+
+E( ˆ m) = E(− ˆm), (S8) expected at B = 0. With i = 0 , 1, . . . , N h − 1, 
+
+zi = i + 12
+
+Nh
+
+, θi = arccos( zi), ϕi = 2 π frac 
+
+ iφg
+
+
+
+, (S9) where φg = (1 + √5) /2 is the golden ratio. The corresponding unit vectors are ˆmi = (sin θi cos ϕi, sin θi sin ϕi, cos θi), (S10) and the full antipodal set is 
+
+S = { ˆmi}Nh−1 
+
+> i=0
+
+∪ {− ˆmi}Nh−1 
+
+> i=0
+
+, (S11) containing N = 2 Nh directions. In this work we use Nh = 27 (hence N = 54 total directions). 
+
+Quadratic (leading-anisotropy) fit and symmetry covariance 
+
+We first fit the MAE using the quadratic form 
+
+E(i)( ˆ m) = C(i) + ˆ mTM (i) ˆm, ˆm = m
+
+∥m∥ , (S12) where M (i) is a real symmetric 3 × 3 matrix. Because ˆmT(αI ) ˆm = α for unit vectors, M → M + αI can be absorbed into C. The fitted easy axis ˆ m(i)easy is obtained from the eigenvector associated with the minimum eigenvalue of M (i).Across the twelve symmetry-related vacancy configurations, the quadratic-fit easy axes transform covariantly under the crystallographic rotations: if configuration 2 is obtained from configuration 1 by a spatial rotation R, then ˆm(2) easy ≈ R ˆm(1) easy . (S13) Table I reports representative examples; the full list is provided separately. 
+
+NOTE S3. GEOMETRIC CONTENT OF THE TR-BREAKING PHOTOCURRENT CHANNELS 
+
+In this section we make explicit that the two dominant time-reversal-breaking (TRb) contributions in the main text, namely the circular shift current ( σTRb ) and the linear injection current ( ηTRb ), are correlated with Berry-curvature-like and quantum-metric-like band-geometric objects, respectively. The starting point is the decomposition Eqs. (7) and 18 
+
+TABLE I. Representative quadratic-fit easy axes ˆmeasy for charged oxygen-vacancy configurations. Components are in the global Cartesian frame. tag measy ,x measy ,y measy ,z 
+
+01 0.733 0.141 0.665 02 0.794 -0.282 -0.539 03 -0.744 0.158 -0.646 04 -0.702 -0.113 0.702 05 0.185 0.641 0.745 06 0.154 -0.703 -0.693 07 -0.156 0.652 0.741 08 -0.134 -0.705 0.696 09 0.667 0.731 0.137 10 0.616 -0.773 -0.147 11 -0.697 0.709 -0.099 12 -0.705 -0.687 0.173 
+
+(8) in main text, reproduced here for convenience. For complex interband connections rbnm (k) and rcmn (k), define the product 
+
+P bc mn (k) ≡ rbnm (k) rcmn (k). (S14) The commutator and anticommutator satisfy the identities [rbnm , r cmn ] = rbnm rcmn − rcnm rbmn = P bc mn −  P bc mn 
+
+∗ = 2 i Im P bc mn , (S15) 
+
+{rbnm , r cmn } = rbnm rcmn + rcnm rbmn = P bc mn +  P bc mn 
+
+∗ = 2 Re P bc mn . (S16) Therefore, the injection-current decomposition in Eq. (8) cleanly separates the antisymmetric (helicity-odd) and symmetric (helicity-even) interband-coherence structures via [ rbnm , r cmn ] and {rbnm , r cmn }.
+
+A. Linear injection current is governed by the band quantum metric 
+
+The quantum metric of band n is defined as the symmetric part of the quantum geometric tensor, 
+
+g(n) 
+
+> bc
+
+(k) ≡ Re X
+
+> m̸=n
+
+rbnm (k) rcmn (k). (S17) Using Eq. (S16), the TR-breaking injection coefficient in Eq. (8) becomes 
+
+ηabc  
+
+> TRb
+
+= − πe 3
+
+2ℏ2
+
+Z
+
+[dk] X
+
+> mnσ
+
+fmn ∆amn {rbnm , r cmn } δ(ωnm − ω)= − πe 3
+
+ℏ2
+
+Z
+
+[dk] X
+
+> mnσ
+
+fmn ∆amn Re  rbnm rcmn 
+
+ δ(ωnm − ω). (S18) Equation (S18) shows that the linear-in-polarization injection channel ( ∝ Re (EbE∗ 
+
+> c
+
+) in Eq. (8)) is governed by the symmetric interband coherence Re (rbnm rcmn ), i.e., the same geometric structure that builds the quantum metric Eq. (S17). In this sense, ηabc 
+
+> TRb
+
+(ω) defines an optical quantum metric weighted by the velocity difference ∆ amn and the resonance constraint δ(ωnm − ω). 
+
+B. Circular shift current is governed by the band Berry curvature 
+
+The interband Berry curvature associated with the ( m, n ) subspace can be written as Ωdmn (k) = i ϵ dbc rbnm (k) rcmn (k), (S19) 19 which is explicitly antisymmetric in the optical indices ( b, c ) and originates from the imaginary part of the interband coherence. Substituting Eq. (S19) into the TR-breaking shift coefficient in Eq. (7), we obtain 
+
+σabc  
+
+> TRb
+
+= − πe 3
+
+4i ℏ2
+
+Z
+
+[dk] X
+
+> mnσ
+
+fnm 
+
+ Ra;bmn + Ra;cmn 
+
+ Ωdmn δ(ωnm − ω)= − πe 3
+
+4ℏ2
+
+Z
+
+[dk] X
+
+> mnσ
+
+fnm 
+
+ Ra;bmn + Ra;cmn 
+
+ ϵdbc rbnm rcmn δ(ωnm − ω). (S20) Equation (S20) makes explicit that the circular shift-current channel ( ∝ Im (EbE∗ 
+
+> c
+
+) in Eq. (7)) is governed by the antisymmetric interband coherence encoded in Ω dmn (k), i.e., the Berry-curvature-like structure. Here the shift-vector prefactor  Ra;bmn + Ra;cmn 
+
+ acts as a gauge-invariant weight selecting where the Berry-curvature hot spots contribute most strongly at a given photon energy. Combining Eqs. (S18) and (S20), we conclude: (i) the TR-breaking linear injection current is controlled by the symmetric (metric-like) interband coherence Re (rbnm rcmn ) and thus correlates with the band quantum metric; (ii) the TR-breaking circular shift current is controlled by the antisymmetric (curvature-like) interband coherence Ω dmn 
+
+and thus correlates with the band Berry curvature. This provides the formal basis for comparing the k-resolved photocurrent hot spots with the k-resolved quantum metric and Berry curvature maps in the main text.

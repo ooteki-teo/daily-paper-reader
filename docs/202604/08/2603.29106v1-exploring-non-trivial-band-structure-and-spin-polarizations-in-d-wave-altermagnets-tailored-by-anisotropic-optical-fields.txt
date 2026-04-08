@@ -1,0 +1,3089 @@
+Title: Exploring non-trivial band structure and spin polarizations in $d$-wave altermagnets tailored by anisotropic optical fields
+
+URL Source: https://arxiv.org/pdf/2603.29106v1
+
+Published Time: Wed, 01 Apr 2026 00:20:33 GMT
+
+Number of Pages: 25
+
+Markdown Content:
+## Exploring non-trivial band structure and spin polarizations in d-wave altermagnets tailored by anisotropic optical fields 
+
+Andrii Iurov 1∗, Liubov Zhemchuzhna 1,2,3†, Tiyhearah Danner-Jackson 1
+
+> 1
+
+Department of Physics and Computer Science, Medgar Evers College of City University of New York, Brooklyn, NY 11225, USA 
+
+> 2
+
+Department of Physics & Engineering Physics, Fordham University, Bronx, NY 10458, USA 
+
+> 3
+
+Department of Physics and Astronomy, Hunter College of the City University of New York, 695 Park Avenue, New York, New York 10065, USA 
+
+(Dated: April 1, 2026) The subject of the present paper is a detailed theoretical investigation of the energy spectrum and bandgaps, as well as collective properties and linear response, in d-wave altermagnets in the presence of an off-resonance optical dressing field. We consider the altermagnets with both dx2−y2
+
+and dxy pairing symmetries and focus on anisotropic dressing fields applied to an anisotropic and non-linear electron Hamiltonian. We have uncovered several crucial properties of the resulting electron-dressed state; specifically, we found that a finite bandgap is opened by linearly polarized irradiation, a phenomenon not observed in Dirac materials. A number of crucial properties of the electron dressed states in the presence of the linearly polarized light can be uncovered only in the second-order perturbation expansion, which is often omitted. We demonstrate that introducing an anisotropic driving field leads to several subtle yet important changes in the Edelstein susceptibilities of alternagents, enabling the fine-tuning of their spin polarizations. All these results must be in high demand due to the rapidly developing fields of spintronics and device physics. 
+
+I. INTRODUCTION 
+
+Altermagnetism is a recently discovered magnetic phase (a distinct state of matter) which is neither ferromagnetic nor conventional antiferromagnetic, but combines most crucial features of both. 1–6 Specifically, its net magnetic moment is zero, yet the electronic band structure shows spin splitting – a property which is usually observed in ferromagnets. 4,7 Thus, altermagnetism introduces a revolutionary paradigm in magnetic materials by breaking the traditional divisions and merging characteristics traditionally attributed to all the known types of magnetic ordering. The magnetic moments of altermagnets on different sublattices are antiparallel, which leads to the cancellation of the net magnetization, but the crystal symmetry is such that the electronic states on the two sublattices are not equivalent, producing momentum-dependent spin polarization 8 (see also Fig. 1 ( a)). This leads to a large spin-splitting of the electron energy subbands without net magnetization and efficient spin-resolved transport which could result in potential applications in low-power spintronics, spin-orbit–free spin control, and high- temperature devices. The spin splitting of the band structure of the altermagnets is symmetry-protected, which demonstrates a direct relation to the topological phases of the electronic structure of the corresponding materials. The exist a noticeable list of experimentally confirmed altermagnets, 9–11 specifically a layered intercalated transition-metal dichalcogenide, CoNb 4Se8, KV 2Se 2O, RbV 2Te 2O 12–14 and thin films of manganese telluride, MnTe, 2,15,16 
+
+which have clearly exhibited altermagnetic band-structure properties. Researchers have also employed first-principles calculations, such as density functional theory, to propose a wide variety of materials that, in principle, should exhibit alternamagnetism, including FeS-based semiconductors 4. Importantly, several ordinary materials (oxides, pnictides, etc.) actually demonstrate altermagnetic symmetry, but we only recently realized it. This opens a large library of materials for new technological applications, and gaining new knowledge about their electronic and magnetic structure is crucial. Also, CrSb has been predicted and increasingly studied as an altermagnetic semiconductor. 17,18 
+
+Spin–orbit coupling (SOC) 19–22 plays an important role in altermagnets since the spin splitting arises from crystal and magnetic symmetries. Often induced by external electrostatic voltage gate, it could modify and hybridize spin texture, as well as enable anomalous Hall responses, spin–orbital textures and related phenomena. 23–26 Also, there are topological spin persistance currents, 27–29 orbital magnetization 30 related to spin-orbit coupling.   
+
+> ∗E-mail contact: aiurov@mec.cuny.edu, theorist.physics@gmail.com
+> †E-mail contact: lzhemchuzhna@mec.cuny.edu, lzhemchuzhna@fordham.edu
+> arXiv:2603.29106v1 [cond-mat.mes-hall] 31 Mar 2026
+
+2The unusual types of spin polarizations discussed above have significant implications for superconductivity. 31,31–34 
+
+Altermagnetic order may enable directional singlet pairing, generating spin mixtures, which allow topological su-perconducting phases due to the coupling between symmetry-protected spin structures. In altermagnetic systems superconductivity coexists with other types of pairing states. This superconductivity could be very stable since altermagnets do not exhibit a net macroscopic magnetization. 35–37 
+
+Floquet engineering is a dynamical, tunable, and controllable modification of the key electronic properties – mostly band structure and the corresponding band gaps – in various two-dimensional materials and electronic surface states. 38–41 . It is achieved by applying a high-frequency, periodic optical driving field. 42 In contrast to strong, ionizing irradiation, we consider high-frequency dressing with energies (frequencies) well above any characteristic energy of the system, such as the Fermi energy. Theoretically, these new bound electron-photon states, or quasiparticles, are considered a very new kind of field-matter structures and are modeled by time-periodic perturbations of the coherent dressing of matter. Once the dressing field is applied, the band structure of the considered materials is modified in a non-trivial way. 43 
+
+In principle, the results of applying the driving field substantially depend on its polarization. The most well-known result is opening a sizable bandgap by circularly polarized light 44–49 A linearly polarized light leads to the creation or modification of existing anisotropy 50,51 and asymmetric Klein tunneling 52,53 in various materials with the Dirac cone. All essential transport properties, such as inverse realization time and components of the Fermi velocities of a material, are changed 54–57 Importantly, plasmons and other collective effects 58–60 could be also substantially modified by the optical driving field 61 Applying external dressing filled with different polarizations could also substantially modify the RKKY interaction. 62 in altermagnets. 63 
+
+Most of the crucial aspects of Floquet theory and Floquet engineering for graphene and other direct materials have been successfully experimentally realized, including both the induction of nonequilibrium band structures and the emergence of topological properties. The most crucial and commonly used methods for the experimental investiga-tion of Floquet states have been pump–probe and time- and angle-resolved photoemission spectroscopy (tr-ARPES) measurements. This experiments demonstrated most crucial results in the theory of electron dressed states, including demonstrated light-induced band renormalization and the opening of dynamical gaps at the Dirac points 64,65 , Floquet band crossings, accompanied by coherent Floquet sidebands 66,67 A detailed comparison between the theoretical and experimental results are provided in Ref. [68]. Recently, ultrafast optical driving was applied to engineer transient Berry curvature and anomalous Hall responses. 69,70 
+
+Apart from the changes to the energy spectrum and band gaps, optical driving fields have become powerful and widely used tools to induce and control topological phases in graphene and related materials. Opening a gap re-sults in breaking the time-reversal symmetry and creating a Haldane-like Chern insulator with light-tunable band topology 71,72 , higher-order topology, and dynamical band inversion in transition metal dichalcogenides 73,74 . Periodic driving provides a versatile nonequilibrium tool to design topological band structures 75 and many-body phase tran-sitions in low-dimensional materials exposed to such a dressing field. 76–80 . It also modifies the topological properties of its Fermi surface, known as the Lifshitz phase transition. 81,82 
+
+Finally, optical dressing field could be applied to generate desirable structures of spin polarization, spin texture, topology and spin-orbit coupling 83–86 , RKKY interaction 63,87,88 in various low-dimensional lattices, including alter-mangets. The remaining part of the present paper is organized as follows: we begin with presenting a complete formalism for the low-energy Hamiltonian, electronic states and the corresponding energy spectrum of altermagnets with dx2−y2
+
+and dxy pairing symmetries in Section II. We also discuss the proposed experimental setup for the considered two-dimensional altermagnetic material with gate voltage induced spin-orbit coupling and external off-resonance high-frequency dressing field. Section III is concerned with presenting our results for the electron dressed states for altermagnet exposed to various types of an isotropic dressing field with β̸ = 1. We discuss in detail all the novel properties in contrast to the previously considered circularly polarized light. The detailed derivations of all these electronic states, energy spectrum, and bandgaps is presented in Appendix B. Next, we calculate and present the detailed numerical results for different types of energy dispersions, as well as their constant-energy cuts (showing the angular dependence of the obtained spectrum) in Section IV. Finally, in section V, we provide the final concluding remarks, emphasizing the significance of our findings. The research outlook and potential future directions are discussed , highlighting the importance of the original results for the field and inspiring further investigation. Acomprehensive, unified expression for calculating energy dispersions for all types of spin-1/2 Hamiltonian, which is also applicable to qubit states, is presented and explained in Appendix A. 3 
+
+> FIG. 1: (Color online) The schematics for a setup of a two-dimensional altermagnetic material (d-wave type) in the presence of an off-resonance dressing field with different polarizations (generally elliptical; circular, and linear, as limiting cases). The electrostatic gating provided by the two electrodes enables Rashba spin-orbit coupling in this material.
+> II. GENERAL FORMALISM FOR ALTERMAGNETIC ELECTRONIC STATES: HAMILTONIAN, DISPERSIONS AND SPIN POLARIZATION
+
+The focus of our consideration is a d-wave alternagnet with spin-orbit coupling, which is also exposed to an off-resonance optical driving field. The schematics of a possible experimental setup for the considered system are presented in Figure 1. Here, the spin-orbit interaction and the inversion symmetry breaking appear as a result of the applied gate voltage. The considered electronic and spin structure is effectively described by a two-band model with the following Hamil-tonian ˆH(0) 1,2(⃗k) = (ℏk)2
+
+2m ˆΣ(2) 0 + H(A)1,2 (⃗k) ˆΣ(2)  
+
+> z
+
++ rSO 
+
+
+
+kx Σ(2)  
+
+> y
+
+− ky Σ(2) 
+
+> x
+
+
+
+, (1) Here, are the ˆΣ(2) 0,x,y,z are 2 × 2 Pauli matrices (specifically, ˆΣ(2) 0 is the 2 × 2 unit matrix which corresponds to a constant energy shift), ⃗ k = ( kx, k y ) is the two-dimensional electron wave vector and Θ ⃗k = arctan( ky /k x) is the angle associated with the wave vector; m is the electron mass. The strength of the gate-induced Rashba spin orbit coupling is given by rSO .Following Refs. [89] and [90], we distinguish two types H1,2 of altermagnets corresponding to dx2−y2 and dxy pairing symmetry (or wave symmetry) according to their ˆΣ(2)  
+
+> z
+
+-term: 
+
+H(A)1 (⃗ k) = ℏ2A1
+
+2m
+
+ k2 
+
+> x
+
+− k2
+
+> y
+
+ (2) and 
+
+H(A)2 (⃗k) = ℏ2A2
+
+2m kxky . (3) The first type shows stronger altermagnetic order but we will consider both of them. Specifically, we want to know how the energy dispersions of the two types of altermagnets are modified in the presence of an optical driving field. One can in principle obtain one type of altermagnets from the others by performing a combined rotation in both momentum and spin space. The two parameters A1 and A2 represent the strengths of altermagnetic order for both types of the pairing symmetries. Obviously, altermagnetism would not exist if A1 −→ 0 and A2 −→ 0. Normally, we assume 0 < A1 ≤ 1 and A1 < 1, and the dx2−y2 -type altermagnets are view as showing more significant altermagnetic order. Here, we will consider both symmetry types and equally investigate their optically induced energy spectrum. That Rashba spin-orbit coupling term, no matter how small, leads to significant changes in the spin polarizations and spin structures of the reconsidered material. In the absence of the term, we observe complete inversion symmetry 40.5 1.5 06323567643 325311 60.5 1.5    
+
+> 1.0 0.0 -1.0 1.0 0.0
+> 1.0 0.0 -1.0 1.0 0.0 0.5 0.5 206323567643325311 62
+
+( ) a b( ) ( ) c d( ) 
+
+FIG. 2: (Color online). Energy spectrum of a d-wave altramagnet with dx2−y2 pairing symmetry in the absence of the spin-orbit coupling ( ρ = 0). Panels ( a) and ( b) demonstrate the spin-resolved ( s = ±1) anisotropic energy dispersions ϵs(⃗ k) obtained from Eq. (6) as the functions of the kx- and ky - components of the wave vector ⃗ k. The black and red lines correspond to the values of spin index s = ±1. Plots ( c) and ( d) represent the constant-energy cuts corresponding to ϵ1 = 2 .0 E(0) 
+
+and ϵ1 = 1 .0 E(0) . Here, the red and black curves are related to the positive and negative out-of-plane spin polarizations sign 
+
+hD ˆSz
+
+Ei 
+
+= sign 
+
+hD 
+
+Ψs(⃗ k) ˆΣ(2)  
+
+> z
+
+Ψs(⃗ k)
+
+E i 
+
+= ±1, which are in principle not equivalent to the values of the spin index s = ±1. 
+
+kx ↔ − kx and ky ↔ − ky . Since only k2 
+
+> x
+
+and k2 
+
+> y
+
+terms are present in the Hamiltonian(1), each component of the spin, specifically, z, is concerned for each of their spin-resolved s− dependent sub bands, meaning that each of these sub bands exactly corresponds to either a positive or a negative direction of the out-of-plane spin component. The energy subbands could be clearly classified by this spin direction, which results in the fact that each of the subbands is shown as completely spin-down (red curves) or completely spin-up (black curves) in Fig. 2. Apparently, we don’t observe such a clear separation in Fig.3 when spin-orbit coupling is present. Now the spin is coupled to the electron momentum (known as spin-momentum locking), and we observe the different directions of the out-of-plane spin component (black and red pieces) on a single energy band. Importantly, the energy dispersions corresponding to all types of spin-1/2 Hamiltonians, which definitely include Eq. (1), could be presented in a unified, general, and a very straightforward form. As we demonstrate in Appendix A, one can easily compose the expression for the energy dispersions for both irradiated and non-irradiated materials without doing any additional calculations. We’ll start with the general form of spin-1/2 Hamiltonian. Namely, any 2 × 2 matrix could be presented as a linear combination of all the Pauli matrices ⃗ Σ(2)  
+
+> i
+
+, i = 0 , x, y, z , including a unit Matrix ˆΣ(2) 0
+
+H(0) 1 (⃗ k) = 
+
+> 3
+
+X
+
+> i=1
+
+⃗
+
+Vi(⃗k)⃗ Σ(2)  
+
+> i
+
+= V0(⃗ k)Σ (2) 0 +
+
+> 3
+
+X
+
+> i=1
+
+⃗
+
+Vi(⃗k)⃗ Σ(2)  
+
+> i
+
+(4) We introduce a vector ⃗ Vi(⃗k) = 
+
+h
+
+V1(⃗ k), V 2(⃗ k), V 3(⃗k)
+
+i
+
+as ⃗
+
+Vi(⃗k) = ˆn(⃗ k)
+
+|Vi(⃗k)| = ˆn(⃗k)
+
+s 3P
+
+> i=1
+
+V 2 
+
+> i
+
+(⃗ k)
+
+. (5) 5( ) a b( )       
+
+> 1.0 0.0 -1.0 1.0 0.0
+> 1.0 0.0 -1.0 1.0 0.0 0.5 06323567643325311 62
+> 0.5 1.5
+> d( )
+> 06323567643325311 62( )
+
+c 
+
+> 0.5 1.5
+
+FIG. 3: (Color online) Energy spectrum of a d-wave altramagnet with dx2−y2 pairing symmetry in the presence of the spin-orbit coupling ( ρ = 0 .53). Panels ( a) and ( b) demonstrate the spin-resolved ( s = ±1) anisotropic energy dispersions ϵs(⃗ k)obtained from Eq. (6) as the functions of the kx- and ky - components of the wave vector ⃗ k. The black and red lines correspond to the values of spin index s = ±1. Plots ( c) and ( d) represent the constant-energy cuts corresponding to ϵ1 = 2 .0 E(0) 
+
+and ϵ1 = 1 .0 E(0) . Here, the red and black curves are related to the positive and negative out-of-plane spin polarizations sign 
+
+hD ˆSz
+
+Ei 
+
+= sign 
+
+hD 
+
+Ψs(⃗ k) ˆΣ(2)  
+
+> z
+
+Ψs(⃗ k)
+
+E i 
+
+= ±1, which are in principle not equivalent to the values of the spin index s = ±1. 
+
+It could be easily verified that the corresponding energy dispersions are immediately presented as 
+
+εs=±1(⃗k) = V0(⃗ k) + s |⃗ V(⃗ k)| = V0(⃗ k) + s
+
+vuut 3X
+
+> i=1
+
+V 2 
+
+> i
+
+(⃗k) . (6) The corresponding wave functions of Hamiltonian (1), which are mathematically equivalent to the qubit states in quantum computing and quantum information processing, are also obtained in our Appendix A. 
+
+III. ELECTRON-PHOTON DRESSED STATES AND MODIFIED ENERGY SPECTRUM 
+
+In this section, we aim to derive closed-form analytical expressions for the energy dispersions of the quasiparticles represented by the electron-photon dress-states in a two-dimensional d-wave altermagnet. Such hybrid states are obtained if a two-dimensional material is irradiated with an off-resonance dressing field with the frequency ℏω much exceeding any characteristic energy of the considered electronic system, such as the Fermi energy (chemical potential): 
+
+ℏω ∽ 1 eV ≫ EF .The effect of the dressing field is given by a canonical substitute of the electron momentum kx,y −→ kx,y − e/ ℏAx,y .We consider the most general case of an elliptically polarized irradiation with the vector potential given by the equation 
+
+A(E)(t) = E0
+
+ω
+
+ cos( ωt )
+
+β sin( ωt )
+
+
+
+. (7) We see that the two components of the vector potential (8) are separated by the phase difference of π/ 2. Here, β is the ratio of field strengths along the two axes of the polarization ellipse. Vector potential (8) becomes equivalent to 6( ) a b( ) ( ) c  
+
+> 06323567643325311 62
+> 06323567643325311 62d
+
+( )        
+
+> 0.5 1.5 0.5 1.5 0.5 1.5 0.5 1.5
+> 1.0 0.0 -1.0 1.0 0.0 0.5
+> 1.0 0.0 -1.0 1.0 0.0 0.5
+
+FIG. 4: (Color online) Energy spectrum of a d-wave altramagnet with dx2−y2 pairing symmetry in the presence of the spin-orbit coupling ( ρ = 0 .53) and an off-resonance dressing field with effective coupling parameter Kω = 0 .6 k(0) and β = 0 .9(nearly circular polarization). Panels ( a) and ( b) demonstrate the spin-resolved ( s = ±1) anisotropic energy dispersions ϵs(⃗ k)obtained from Eq. (6) as the functions of the kx- and ky - components of the wave vector ⃗ k. The black and red lines correspond to the values of spin index s = ±1. Plots ( c) and ( d) represent the constant-energy cuts corresponding to ϵ1 = 2 .0 E(0) 
+
+and ϵ1 = 1 .0 E(0) . Here, the red and black curves are related to the positive and negative out-of-plane spin polarizations sign 
+
+hD ˆSz
+
+Ei 
+
+= sign 
+
+hD 
+
+Ψs(⃗ k) ˆΣ(2)  
+
+> z
+
+Ψs(⃗ k)
+
+E i 
+
+= ±1, which are in principle not equivalent to the values of the spin index s = ±1. 
+
+the that of a circularly polarized light in the limiting case of β −→ 1, and the linearly polarized light is obtained as 
+
+β −→ 0: 
+
+A(L)(t) = E0
+
+ω
+
+ 10
+
+
+
+cos( ωt ) . (8) Vector potential (8), as well as the resulting electronic states, definitely depend on the direction of the light polarization (unless β = 1, in which case we’re dealing with circularly polarized light), which is assumed to be along the x−axis. Importantly, we can select an arbitrary direction of the linear polarization by applying the following transformation 
+
+A(L)(t) = E0
+
+ω
+
+
+
+ˆR(θ0)
+
+ 10
+
+  
+
+cos( ωt ) = E0
+
+ω
+
+ cos θ0
+
+sin θ0
+
+
+
+cos( ωt ) , (9) where ˆR(θ0) = 
+
+ cos θ0 − sin θ0
+
+sin θ0 cos θ0
+
+
+
+(10) is the rotation matrix for angle θ0.By making use of the canonical substitution for the electron momentum kx,y −→ kx,y − e/ ℏAx,y , we obtain the time-dependent Hamiltonian in the presence of the driving field. To solve the current eigenvalue problem, we have to rely on perturbation theory. Importantly, there are several approaches to calculating the dressed states. For the terms which depend on the components of the wave vector ⃗ k linearly, the obtained Hamiltonian consists of the initial terms and additional time-dependent (but not ⃗ k-dependent) interaction terms. 70.5 1.5 0.5 1.5 0.5 1.5 0.5 1.5   
+
+> 1.0 0.0 -1.0 1.0 0.0 0.5 1.5
+> 1.0 0.0 -1.0 1.0 0.0 0.5 1.5 ( )
+
+a b( ) ( ) c  
+
+> 06323567643325311 62d( )
+> 06323567643325311 62
+
+e.p. e.p. e.p. e.p. 
+
+FIG. 5: (Color online) Energy spectrum of a d-wave altramagnet with dx2−y2 pairing symmetry in the absence of the spin-orbit coupling ( ρ = 0) but exposed to an off-resonance dressing field with effective coupling parameter Kω = 0 .6 k(0) and β = 0 .9(nearly circular polarization). Panels ( a) and ( b) demonstrate the spin-resolved ( s = ±1) anisotropic energy dispersions ϵs(⃗ k)obtained from Eq. (6) as the functions of the kx- and ky - components of the wave vector ⃗ k. The black and red lines correspond to the values of spin index s = ±1. Plots ( c) and ( d) represent the constant-energy cuts corresponding to ϵ1 = 2 .0 E(0) 
+
+and ϵ1 = 1 .0 E(0) . Here, the red and black curves are related to the positive and negative out-of-plane spin polarizations sign 
+
+hD ˆSz
+
+Ei 
+
+= sign 
+
+hD 
+
+Ψs(⃗ k) ˆΣ(2)  
+
+> z
+
+Ψs(⃗ k)
+
+E i 
+
+= ±1, which are in principle not equivalent to the values of the spin index s = ±1. 
+
+Our Hamiltonian (1) contains multiple terms with non-linear ⃗ k-dependence and one possible approaches to obtaining the effective The time-independent (time-averaged) Floquet Hamiltonian could be van Vleck frequency expansion, which leads to the following expression. 
+
+H(D)(⃗k) = H(F )0 (⃗k) + ( ℏω)−1 h
+
+H(F ) 
+
+> −1
+
+(⃗k), H(F )+1 (⃗k)
+
+i
+
++ 1 /2 ( ℏω)−2 h
+
+H(F ) 
+
+> −1
+
+(⃗k),
+
+h
+
+H(F )0 (⃗k), H(F )+1 (⃗k)
+
+i i 
+
+... . (11) Thus, van Vleck expansion results in a time-independent Hamiltonian and the energy spectrum with modified band gaps and components of the electron group velocities. In most cases, taking only the linear expansion term (ℏω)−1
+
+h
+
+H(F ) 
+
+> −1
+
+(⃗k), H(F )+1 (⃗k)
+
+i
+
+into account would be sufficient. However, as we will find out soon, for a crucial case of the linearly polarized radiation, the first-order expansion term would vanish, and we need to take the next term into consideration. For the considered problem, it seems natural to choose L(0) = 1nm as the unit of length, meaning that all our wave vectors will be measured in terms of k(0) = 1 /L (0) = 1 nm −1 = 10 9m−1. Next, we choose our unit of energy as 
+
+E(0) = ℏ2/(2 me) k2(0) = 6 .058 · 10 −21 J = 37 .86meV, which results in the most straightforward form of the ˆΣ(2) 0 -term, now given only as k2. Parameter A which quantifies the strength of an altermagnetic order, is dimensionless and is normally assumed to be A ≤ 1. A relatively small spin-orbit coupling induced by the extremal voltage gate is typically given by rSO ≤ 0.2eV˚ A = 3 .2 · 10 −30 J·m so that we can introduce a dimensionless spin-orbit coupling coefficient as 
+
+r ≤ 0.525 k(0) /E (0) .Next, we introduce the unit for the vector potential of the imposed irradiation. As expected, Ax,y ∽ Ee/ω , where the off-resonance dressing field is normally applied in the terahertz regime which results in ω ∽ 1.5 · 10 15 Hz so that 
+
+ℏω ∽ 1eV ≫ E(0) . The typical amplitude of the electric field is Ee ≤ 5.0V/nm so that the change of the electron momentum by the canonical substitution is given by eA/ (ℏ) = E/ω ≤ 5.0 k(0) . Therefore, we are going to introduce and further employ a dimensionless electron-light coupling parameter Kω = eE 0/(ℏω) as the measure of the strength of the electron-light interaction. 8( ) cb( )  
+
+> 06323567643325311 62
+
+d( )         
+
+> 06323567643325311 62
+> 0.5 1.5 0.5 1.5 0.5 1.5 0.5 1.5
+> 1.0 0.0 -1.0 1.0 0.0 0.5 1.5
+> 1.0 0.0 -1.0 1.0 0.0 0.5 1.5
+
+( ) a
+
+e.p. e.p. e.p. e.p. 
+
+FIG. 6: (Color online) Energy spectrum of a d-wave altramagnet with dx2−y2 pairing symmetry in the presence of the spin-orbit coupling ( ρ = 0 .53) and an off-resonance dressing field with effective coupling parameter Kω = 0 .6 k(0) and β = 0 .2 (close to the linear polarization). Panels ( a) and ( b) demonstrate the spin-resolved ( s = ±1) anisotropic energy dispersions ϵs(⃗ k)obtained from Eq. (6) as the functions of the kx- and ky -components of the wave vector ⃗ k. The black and red lines correspond to the values of spin index s = ±1. Plots ( c) and ( d) represent the constant-energy cuts corresponding to ϵ1 = 2 .0 E(0) 
+
+and ϵ1 = 1 .0 E(0) . Here, the red and black curves are related to the positive and negative out-of-plane spin polarizations sign 
+
+hD ˆSz
+
+Ei 
+
+= sign 
+
+hD 
+
+Ψs(⃗ k) ˆΣ(2)  
+
+> z
+
+Ψs(⃗ k)
+
+E i 
+
+= ±1, which are in principle not equivalent to the values of the spin index s = ±1. 
+
+Now we are in position to present and discuss our results for the energy spectrum of the dressed states in an altermagnet in the presence of an off-resonance dressing optical field which we have derived in our Appendix B. First, we consider a dx2−y2 altermagnet and the most general elliptically polarized irradiation. In this case, we obtain ˆH(E)1 (⃗ k) = H(F )[n=0] (⃗k) + β ρ Kω
+
+2Σ(2)  
+
+> z
+
+− β A1 ρ K2
+
+> ω
+
+h
+
+kx ˆΣ(2)  
+
+> x
+
++ ky ˆΣ(2) 
+
+> x
+
+i
+
+, (12) where the zero-order Floquet Hamiltonian H(F )[n=0] (⃗ k)
+
+H(F )[n=0] (⃗k) = H1(⃗ k) + 1 + β2
+
+2 K2 
+
+> ω
+
+Σ(2) 0 + 1 − β2
+
+2 K2 
+
+> ω
+
+ˆΣ(2)  
+
+> x
+
+ˆΣ(2)  
+
+> z
+
+= k2 ˆΣ(2) 0 + A1
+
+ k2 
+
+> x
+
+− k2
+
+> y
+
+ ˆΣ(2)  
+
+> z
+
+++ ρ
+
+
+
+kx ˆΣ(2)  
+
+> y
+
+− ky ˆΣ(2) 
+
+> x
+
+
+
++ 1 + β2
+
+2 K2 
+
+> ω
+
+ˆΣ(2) 0 + 1 − β2
+
+2 K2 
+
+> ω
+
+ˆΣ(2)  
+
+> z
+
+, (13) We find that applying an Optical driving field with elliptical polarization results in multiple effects: a constant energy shift, which is, however, always offset by modifying the chemical potential (doping level) of the considered structure, an induced energy bandgap, and modifications to both components of the electron group velocities. The bandgap is represented by two independent contributions ∆ = ∆ 1(β | ρ, Kω ) + ∆ 2(β | K ω ) = β (ρ Kω )2 +  1 − β2 K2 
+
+> ω
+
+, (14) which demonstrates a non-monotonic dependence on parameter β and is substantially different for the various types of elliptically polarized irradiation. Next, we obtain and analyze the electron-dressed states of a d-wave alternagnet with dxy symmetry, in which the alternagnetic Hamiltonian term is represented by Eq. (3). This type of alternation has received less attention because 906323567643 325311 62 
+
+> 06323567643325311 62
+
+d( ) ( ) cb( ) ( ) a
+
+e.p. e.p. e.p. e.p. 0.5 1.5 0.5 1.5 0.5 1.5 0.5 1.5   
+
+> 1.0 0.0 -1.0 1.0 0.0 0.5 1.5
+> 1.0 0.0 -1.0 1.0 0.0 0.5 1.5
+
+FIG. 7: (Color online) Energy spectrum of a d-wave altramagnet with dxy pairing symmetry in the presence of the spin-orbit coupling ( ρ = 0 .53) and an off-resonance dressing field with effective coupling parameter Kω = 0 .6 k(0) and β = 0 .9 (nearly circular polarization). Panels ( a) and ( b) demonstrate the spin-resolved ( s = ±1) anisotropic energy dispersions ϵs(⃗k) obtained from Eq. (6) as the functions of the kx- and ky - components of the wave vector ⃗ k. The black and red lines correspond to the values of spin index s = ±1. Plots ( c) and ( d) represent the constant-energy cuts corresponding to ϵ1 = 2 .0 E(0) 
+
+and ϵ1 = 1 .0 E(0) . Here, the red and black curves are related to the positive and negative out-of-plane spin polarizations sign 
+
+hD ˆSz
+
+Ei 
+
+= sign 
+
+hD 
+
+Ψs(⃗ k) ˆΣ(2)  
+
+> z
+
+Ψs(⃗ k)
+
+E i 
+
+= ±1, which are in principle not equivalent to the values of the spin index s = ±1. 1.0 0.0 0.5 0.25 0.0 0.5    
+
+> 1.0 0.0 0.5 0.25 0.0 0.5
+> ( ) ab( )
+> 0.19 0.38 0.76 3.70 0.92 0.73 0.56 0.42 0.36 0.21 0.01 2.98 2.45 1.31
+
+FIG. 8: (Color online) The energy bandgap ∆ 0(ρ, β | K ω , ω ) between the two spin-resolved bands ( s = ±1) in a d-wave altermagnet with dx2−y2 pairing symmetry in the presence of the spin-orbit coupling and an off-resonance dressing field of different polarizations. Panel ( a) demonstrates a contour plot of the bandgap ∆ 0 as a function of ratio of field strengths along the two axes of the polarization ellipse beta and effective coupling parameter Kω . Plot ( b) represents the bandgap ∆ 0 as a function of parameter data and the strength of the spin orbit coupling ρ = rSO /k (0) , as labeled. 
+
+of the lower anisotropy due to spin-orbit coupling. However, this d-wave alternates demonstrate a highly unusual energy Spectrum induced by external, isotropic irradiation. Therefore, we would also like to consider this situation in detail. Once the optical dressing field is applied, we obtain the following effective Floquet time-independent Hamiltonian 
+
+H(E)2 (⃗k) = H(F )[n=0] (⃗k) + β ρ Kω
+
+2 ˆΣ(2)  
+
+> z
+
+− A2 ρ K2
+
+> ω
+
+h
+
+ky ˆΣ(2)  
+
+> x
+
++ β2 kx ˆΣ(2) 
+
+> y
+
+i
+
+, (15) where the zero-order Floquet Hamiltonian H(F )[n=0] (⃗ k)10 b( ) ( ) a      
+
+> 1.0 0.0 -1.0 1.0 0.0 0.5 1.5
+> 1.0 0.0 -1.0 1.0 0.0 0.5 1.5 0.5 1.5 0.5 1.5 06323567643325311 62
+
+d( ) 
+
+l.p. l.p. l.p. 06323567643 325311 62  
+
+> 0.5 1.5 0.5 1.5
+
+( ) c
+
+l.p. 
+
+FIG. 9: (Color online) Energy spectrum of a d-wave altramagnet with dx2−y2 pairing symmetry in the presence of the spin-orbit coupling ( ρ = 0 .53) and an off-resonance linearly polarized (β = 0) dressing field with effective coupling parameter 
+
+Kω = 0 .6 k(0) . The direction of the linear polarization of the imposed radiation is along the x−axis ( θ0 = 0). Panels ( a) and (b) demonstrate the spin-resolved ( s = ±1) anisotropic energy dispersions ϵs(⃗ k) obtained from Eq. (6) as the functions of the 
+
+kx- and ky -components of the wave vector ⃗ k. The black and red lines correspond to the values of spin index s = ±1. Plots ( c)and ( d) represent the constant-energy cuts corresponding to ϵ1 = 2 .0 E(0) and ϵ1 = 1 .0 E(0) . Here, the red and black curves are related to the positive and negative out-of-plane spin polarizations sign 
+
+hD ˆSz
+
+Ei 
+
+= sign 
+
+hD 
+
+Ψs(⃗ k) ˆΣ(2)  
+
+> z
+
+Ψs(⃗ k)
+
+E i 
+
+= ±1, which are in principle not equivalent to the values of the spin index s = ±1. 
+
+H(F )[n=0] (⃗ k) = H2(⃗k) + 1 + β2
+
+2 K2 
+
+> ω
+
+ˆΣ(2) 0 + 1 − β2
+
+2 K2 
+
+> ω
+
+ˆΣ(2)  
+
+> z
+
+= k2 ˆΣ(2) 0 + A2 kxky ˆΣ(2)  
+
+> z
+
+++ ρ
+
+
+
+kx ˆΣ(2)  
+
+> y
+
+− ky ˆΣ(2) 
+
+> x
+
+
+
++ 1 + β2
+
+2 K2 
+
+> ω
+
+ˆΣ(2) 0 + 1 − β2
+
+2 K2 
+
+> ω
+
+ˆΣ(2)  
+
+> z
+
+, (16) is the same as for the previously considered dx2−y2 type of altermagnets. We see that ˆΣ(2)  
+
+> x
+
+and ˆΣ(2)  
+
+> y
+
+terms are affected in non-equivalent ways for β̸ = 1 and the same goes for the corresponding components on the Fermi velocity, as we should expect from an anisotropic driving field. 
+
+A. Linearly polarized dressing field 
+
+We now consider the electronic states in a dx2−y2 altermagnet with a Hamiltonian (1) in the presence of a linearly polarized dressing field 
+
+A(L)(t) = E0
+
+ω
+
+ cos θ0
+
+sin θ0
+
+
+
+cos( ωt ) , (17) where θ0 is the fixed direction of the external field polarization. Analyzing Hamiltonian (B20), we immediately discern that ˆH(F ) 
+
+> −1
+
+(⃗ k) ≡ ˆH(F )1 (⃗ k) and a linear term in Van Vleck expansion could only yield zero. Therefore, this time we must take into the ∽ 1/ω 2 corrections in Eq. (B7). Let’s first consider the most straightforward case of graphene with a Hamiltonian kxΣ(2)  
+
+> x
+
++ky Σ(2)  
+
+> y
+
+. The corresponding Floquet expansion terms are given as 11 l.p. 
+
+( ) c    
+
+> 1.0 0.0 -1.0 1.0 0.0 0.5 1.5
+> 0.5 1.5 0.5 1.5
+> 1.0 0.0 -1.0 1.0 0.0 0.5 1.5
+
+( ) a b( ) 
+
+l.p.      
+
+> 06323567643325311 62
+> 0.5 1.5 0.5 1.5 063235676433
+> 25311 62
+
+d( ) 
+
+l.p. l.p. 
+
+FIG. 10: (Color online) Energy spectrum of a d-wave altramagnet with dx2−y2 pairing symmetry in the presence of the spin-orbit coupling ( ρ = 0 .53) and an off-resonance linearly polarized (β = 0) dressing field with effective coupling parameter 
+
+Kω = 0 .6 k(0) . The direction of the linear polarization of the imposed radiation is along the y−axis ( θ0 = π/ 2). Panels ( a) and (b) demonstrate the spin-resolved ( s = ±1) anisotropic energy dispersions ϵs(⃗ k) obtainedfrom Eq. (6) as the functions of the 
+
+kx- and ky -components of the wave vector ⃗ k. The black and red lines correspond to the values of spin index s = ±1. Plots ( c)and ( d) represent the constant-energy cuts corresponding to ϵ1 = 2 .0 E(0) and ϵ1 = 1 .0 E(0) . Here, the red and black curves are related to the positive and negative out-of-plane spin polarizations sign 
+
+hD ˆSz
+
+Ei 
+
+= sign 
+
+hD 
+
+Ψs(⃗ k) ˆΣ(2)  
+
+> z
+
+Ψs(⃗ k)
+
+E i 
+
+= ±1, which are in principle not equivalent to the values of the spin index s = ±1. 
+
+ˆH(F )0 (k) = H0(k) = ℏvF kxΣ(2)  
+
+> x
+
++ ℏvF ky Σ(2)  
+
+> y
+
+, (18) ˆH(F ) 
+
+> −1
+
+(⃗ k) = H(F )1 (⃗k) = − eE 0 vF
+
+2ω
+
+h
+
+cos θ0 Σ(2)  
+
+> x
+
++ sin θ0 Σ(2) 
+
+> y
+
+i
+
+.
+
+The first order expansion term in Eq. (B7) is obviously zero since H(F )1 (⃗k) = H(F ) 
+
+> −1
+
+(⃗k), just like for all the cases of a linearly polarized irradiation. However, an effective Floquet Hamiltonian is obtained from its second order term: ˆH(L)1 (⃗ k) = H(F )0 (k) + 12ℏ (eE 0)2
+
+ v3
+
+> F
+
+ω4
+
+
+
+(cos θ0ky − kx sin θ0)
+
+h
+
+cos θ0 Σ(2)  
+
+> x
+
++ sin θ0 Σ(2) 
+
+> x
+
+i
+
+= (19) = ℏvF kxΣ(2)  
+
+> x
+
++ ℏvF ky Σ(2)  
+
+> y
+
++ 12ℏ (eE 0)2
+
+ v3
+
+> F
+
+ω4
+
+
+
+(cos θ0ky − kx sin θ0)
+
+h
+
+cos θ0 Σ(2)  
+
+> x
+
++ sin θ0 Σ(2) 
+
+> x
+
+i
+
+.
+
+For the polarization direction along the x−axis, θ0 = 0, we immediately recover the known expression for the energy dispersions 
+
+ε(L)(⃗k) = 
+
+s
+
+cos 2(θk) + 
+
+
+
+J0
+
+ 2eE 0 vF
+
+ℏω2
+
+
+
+sin 2(θk)
+
+2
+
+k ⋍
+
+s
+
+1 −
+
+ eE 0 vF
+
+ℏω2
+
+2
+
+sin 2(θk) , (20) where J0(x) ⋍ 1 − x2/4 is the zero-order Bessel function. Following a similar approach, we derive following Floquet time-independent Hamiltonian for a dx2−y2 altermagnet 12 ˆH(L)1 (⃗k) = H(F )[n=0] (⃗ k) + X
+
+> i=( x,y,z )
+
+F(L) 
+
+> i
+
+(ρ, ω | θ0) ˆΣ(2)  
+
+> i
+
+= (21) = H(F )[n=0] (⃗ k) + F(L) 
+
+> x
+
+(ρ, ω | θ0) ˆΣ(2)  
+
+> x
+
++ F(L) 
+
+> y
+
+(ρ, ω | θ0) ˆΣ(2)  
+
+> y
+
++ F(L) 
+
+> z
+
+(ρ, ω | θ0) ˆΣ(2)  
+
+> z
+
+,
+
+where 
+
+F(L) 
+
+> z
+
+(ρ, ω | θ0) = − A1
+
+4 [μω Kω ]2 n
+
+2 cos θ0
+
+k2 − 2kx(kx + ky ) + 2 sin θ0
+
+k2 + 2 ky (kx + ky ) o
+
+, (22) 
+
+F(L) 
+
+> x
+
+(ρ, ω | θ0) = ρ3
+
+4 [μω Kω ]2 cos θ0 (cos θ0ky − sin θ0kx) − A1
+
+2 [μω Kω ]2 ρ (cos θ0ky − sin θ0kx) ××
+
+h
+
+2 cos θ0 kxky − sin θ0
+
+ k2 
+
+> x
+
++ 3 k2
+
+> y
+
+ i
+
+, (23) 
+
+F(L) 
+
+> y
+
+(ρ, ω | θ0) = − ρ3
+
+4 [μω Kω ]2 cos θ0 (cos θ0ky − sin θ0kx) − A1
+
+2 [μω Kω ]2 ρ (cos θ0ky − sin θ0kx) ××
+
+h
+
+2 cos θ0 k2 
+
+> x
+
+− cos θ0 k2 − 2kxky sin θ0
+
+i
+
+. (24) Here, μω = E(0) /(ℏω) ≪ 1. The zero-order Floquet Hamiltonian H(F )[n=0] (⃗ k)
+
+H(F )[n=0] (⃗k) = H(0) 1 (⃗k) + 12 K2 
+
+> ω
+
+ˆΣ(2) 0 + A1
+
+12 K2 
+
+> ω
+
+ˆΣ(2)  
+
+> z
+
+= k2 ˆΣ(2) 0 + (25) + A1 (k2 
+
+> x
+
+− k2 
+
+> y
+
+) ˆΣ(2)  
+
+> z
+
++ ρ
+
+
+
+kx Σ(2)  
+
+> y
+
+− ky ˆΣ(2) 
+
+> x
+
+
+
++ 12 K2 
+
+> ω
+
+ˆΣ(2) 0 + A1
+
+12 K2 
+
+> ω
+
+ˆΣ(2)  
+
+> z
+
+,
+
+we see that a finite bandgap is created independent of the direction of the polarization of the dressing field. For the polarization direction along the x−axis, equation (21) is simplified as ˆHA 
+
+> 1
+
+(⃗ k) = H(F )[n=0] (⃗k) − A1
+
+4 [μω Kω ]2 k2 − 2kx(kx + ky )2 Σ(2)  
+
+> z
+
++ (26) + [μω Kω ]2
+
+ ρ3
+
+4 ky + A1
+
+2 ρ k 2
+
+> x
+
+ky
+
+
+
+Σ(2)  
+
+> x
+
+−− [μω Kω ]2
+
+ ρ3
+
+4 ky + A1
+
+2 ρ k x
+
+ k2 
+
+> x
+
+− k2
+
+> y
+
+
+
+Σ(2)  
+
+> y
+
+,
+
+which demonstrates that the second-order perturbation expansion terms brings small but still important corrections to the band structure of irradiated altermagnets. Finally, let us briefly address the case of a dxy altermagnet under linearly polarized dressing field. We perform the perturbation expansion up to the ∽ ω−2 order, as we explain in all detail in Appendix B. The zero-order Floquet Hamiltonian H(F )[n=0] (⃗ k) is given by ˆH(L)0 (⃗k) = k2 ˆΣ(2) 0 + A1 (k2 
+
+> x
+
+− k2 
+
+> y
+
+) ˆΣ(2)  
+
+> z
+
++ ρ
+
+
+
+kx ˆΣ(2)  
+
+> y
+
+− ky ˆΣ(2) 
+
+> x
+
+
+
++ ℏ2
+
+4m K2 
+
+> ω
+
+ˆΣ(2) 0 + (27) + ℏ2 A1
+
+8m sin 2 θ0 K2 
+
+> ω
+
+ˆΣ(2)  
+
+> z
+
+.
+
+Therefore, the bandgap becomes 2∆ (L)2 , where ∆(L)2 = A2
+
+4 sin(2 θ0)
+
+ eE 0
+
+ω
+
+2
+
+= A2
+
+4 sin(2 θ0) K2 
+
+> ω
+
+. (28) We observe that the bandgap (28) disappears for certain directions θ0 = πn/ 2, n = 0 , 1, 2, 3, ... (importantly, θ0 = 0 and π/ 2 are included). The other changes to the finite-k dispersions are given as the modifications of the components of its anisotropic Fermi velocity and are shown at 1 /ω 4 level, which are are small but not negligible. 13  
+
+> IV. RESULTS AND DISCUSSION
+
+Now we turn to our discussion of the energy dispersions of the electron dressed states for both dx2−y2 and dxy 
+
+symmetry types of the wave alter magnets. The modification of the energy dispersions due to the optical driving drastically depends on the polarization of the applied field. We put the focus on anisotropic optical dressing fields in which not only the type of polarization but its direction applied to essentially anisotropic and non-linear Hamiltonian (1) of d−wave altermagnets leads to substantially different electronic states. The energy dispersions of a d-wave altermagnets with dx2−y2 symmetry, as presented in Figs. 2 and 3, shows the two solutions for the energy subbands, which depend on the spin index s = ±1. We also demonstrate the horizontal constant-energy cuts of the calculated energy spectrum by solving each dispersion equation for the wave vector magnitude k = |⃗ k| at the fixed angle Θ ⃗k. We also distinguish the two branches by the direction of out-of-plane polarization obtained from equation sign 
+
+hD ˆSz
+
+Ei 
+
+= sign 
+
+hD 
+
+Ψs(⃗ k) ˆΣ(2)  
+
+> z
+
+Ψs(⃗k)
+
+E i 
+
+= ± ℏ
+
+2 cos Θ ⃗k = ± ℏ
+
+2
+
+V3(⃗k)
+
+|V (⃗ k)| , (29) so that we obtain sign 
+
+hD ˆSz
+
+Ei 
+
+= sign 
+
+h
+
+V3(⃗k)
+
+i
+
+.We have found that in the absence of both optical driving field and spin-orbit interaction, we obtain anisotropic energy subbands with nearly elliptical angular dependence. One of them corresponds to the positive out-of-plane spin polarization (upward direction of 
+
+D ˆSz
+
+E
+
+); the other one is related to the negative 
+
+D ˆSz
+
+E
+
+. Thus, in the absence of spin-orbit locking, each separate energy subband corresponds to a fixed direction of the out-of-plane spin polarization. The bandgap in this case is equal to zero, and both energy subbands start with ϵs=±1(⃗k) = 0 energy level. Once the finite spin-orbit coupling is introduced, we obtain a very unusual star-shaped angular dependence, which reflects the specific type of Rashba spin-orbit interaction. However, the energy bandgap in this case still remains zero, as it does for most other materials with spin-orbit coupling. Next, we expose our considered altermagnets to an off-resonance optical dressing field which already exhibits spin-orbit coupling due to an electrostatic gating. We consider anisotropic types of the light polarization, specifically, elliptical ( β < 1) and linear ( β = 0). We begin with β = 0 .9 which is rather similar to the circularly polarized fields (β = 1). The results for the energy spectrum for an irradiated altermagent with finite and zero spin-orbit coupling are presented in Figures 4 and 5, correspondingly. Most importantly, a finite bandgap between the two bands is generated in both cases. We verifythe existence of both direct and indirect gaps along the x−direction, while the indirect gap along the y−axis is missing: the two subbands intersect at a finite wavevector ⃗ k. The angular dependence of these subbands are generally preserved in the presence of circularly polarized driving field. However, now we observe some very unusual types of dispersions with changing its concave-convex form with an increasing wave vector k. These dispersions are definitely a result of highly unusual interplay between the driving field and spin-orbit coupling. It is also interesting to notice that the distinction between the directions of out-of-plain polarization is no longer at ±π/ 4and ±3π/ 4 directions. The corresponding boundaries are substantially shifted by the applied optical driving field. These spin textures also becomes very different from separation of the two energy subbands corresponding to s = ±1. As an alternative, we also apply the elliptically polarized optical filled ways β = 0 .2 which is a lot closer to the linear polarization compared to the previously considered cases. We observe that a substantial band gap is still opened, which is in stark contrast with all the known Dirac cone materials, including graphene and the α − T 3 model. 91–93 
+
+The angular dependence (anisotropy) of the energy spectrum in this case is also strongly affected, however, this effect is gap-related: the upper bands are much more elevated in the x−direction. We need to keep in mind that these calculations are performed within the first order of perturbation expansion which are in principle not applicable to the linearly polarized irradiation, corresponding to β = 0. This gives us an opportunity to compare what types of the additional Hamiltonian terms result in each separate effect (bandgap and anisotropy). Finally, we want to take a quick look at an altermagnet with a dxy symmetry. For β = 0 .9, we observe a noticeable bandgap and monotonic energy dispersions. However, its angular dependence is rather unusual with the subbands most extended along ±π/ 4 and ±3π/ 2 directions due to a kxky -term which present both in the initial Hamiltonian and in the radiation-induced additions. The separation between the positive and negative directions of out-of-plane spin polarizations correspond to 0 and π/ 2 angles, which has not been observed for any previous situations in dx2−y2
+
+altermagnet. The generated energy gap for the case of elliptically polarized light and dx2−y2 symmetry is presented in Fig. 8. This gap depends on parameter β, spin-orbit coupling ρ and obviously the electron-light coupling perimeter Kω since 14 the band gap is basically created by the driving field. We see that equation (14) contains two terms such that one of them is increasing and the one is decreasing with an increasing β. Therefore, the dependence on the anisotropy of the dressing field is not monotonic and limiting cases of circularly and linearly polarized light both show a substantial bandgap. The bandgap is also a monotonically increasing function of spin-orbit coupling ρ. However, this dependence becomes substantial only for β̸ = 0, i,e., next to the limit of circularly polarized irradiation of the dressing field. Finally, we investigate the energy dispersion and they are angular dependent for the case of literally polarized light. As we are now aware, we cannot limit our consideration to the first order of the perturbation expansion, and the second-order corrections are needed. It is important to mention that the allowable intensity of light in the off-resonance regime could create electron light coupling parameter Kω ∽ 5.0 k(0) . However, an accurate application of the perturbation theory requires the electron-light coupling to be a small parameter. Therefore, we limit our consideration with Kω ≤ 1.0k(0) . The obtained energy depressions are presented in Fig. 9 and we see that a linearly polarized dressing field results in the substantial energy bandgap. This has not been the case for Dirac cone materials. Also, the angular dependence of the energy spectrum is modified only in one direction (perpendicular to the light polarization direction θ0 = 0 .0). We also noticed that the lower branch becomes nearly dispersionless along the x−axis and the change of the energy is rather small for the large range of the wave vectors. Thus, we obtain the picture of the irradiation modified energy dispersions which are absolutely different from that in graphene. The only feature which they have in common is the change of the group velocities in the direction perpendicular to the light polarization.  
+
+> A. Edelstein spin susceptibilities
+
+Next we turn our attention to studying how the applied optical dressing field affects the Edelstein effect in d−wave altermagents. The Edelstein effect spin polarizations from an applied electric field in systems in non-centrosymmetric with spin-orbit coupling (spin-momentum locking). Thus, in-plane spin polarizations could be generated by external electric fields ⃗ E = ( Ex, E y ). The expectation values of the investigated spin polarization is defined by the component susceptibility tensor using the linear response theory 
+
+D ˆSy
+
+E
+
+= χyx Ex + χxy Ey = −χxy Ex − χxx Ey (30) Using the Kubo formula, and following Refs.[90] we apply the following expression for χxy component of Edelstein susceptibility tensor 
+
+−im e χxy =
+
+Z
+
+d2⃗ k
+
+n X 
+
+> σ=±
+
+∂f [ε(E) 
+
+> σ
+
+(⃗k)] 
+
+∂ε (E) 
+
+> σ
+
+(⃗ k ) −iτ0,a 
+
+D
+
+Ψσ (⃗k) ˆΣ(2)  
+
+> x
+
+Ψσ (⃗k)
+
+E D 
+
+Ψσ (⃗ k) ˆP (2)  
+
+> y
+
+Ψσ (⃗k)
+
+Eo 
+
+− (31) 
+
+−
+
+Z
+
+d2⃗ k 
+
+> σ1̸=σ2
+
+X
+
+> σ1=±,σ 2=±
+
+
+
+f [ε(E) 
+
+> σ1
+
+(⃗ k)] − f [ε(E) 
+
+> σ2
+
+(⃗k)] 
+
+ε(E) 
+
+> σ1
+
+(⃗k) − ε(E) 
+
+> σ2
+
+(σ,⃗ k)
+
+D
+
+Ψσ (⃗ k) ˆΣ(2)  
+
+> z
+
+Ψσ (⃗k)
+
+E D 
+
+Ψσ (⃗k) ˆP (2)  
+
+> y
+
+Ψσ (⃗k)
+
+E
+
+ε(E) 
+
+> σ1
+
+(⃗ k) − ε(E) 
+
+> σ2
+
+(⃗k) + iτ −10,e 
+
+ .
+
+Here, τ0,a = τ0,e = 0 .5eV are the the intra- and inter-band lifetime, f [ε(E)(σ,⃗ k)] is the Fermi-Dirac distribution function corresponding to the energy subband ε(E) 
+
+> σ
+
+(⃗k) with the chemical potential μ = ε(E)(σ,⃗ k = 0) and a small temperature kB T = 0 .05 E(0) .All the required matrix elements for the electron spin 
+
+D
+
+Ψσ1,2 (⃗ k) ˆΣ(2)  
+
+> x
+
+Ψσ2,1 (⃗k)
+
+E
+
+and momentum components 
+
+D
+
+Ψσ1,2 (⃗ k) ˆP (2)  
+
+> y
+
+Ψσ2,1 (⃗ k)
+
+E
+
+(∽ m ∂/∂k x,y ) could be easily evaluated for known wave functions (A8) and (A8) (see equation (29) as an example). A complete list of all the matrix elements needed to calculate susceptibility χxy is also provided in Ref.[90]. Due to the specific wave symmetry of our model ( dx2−y2 ), the in-plane electrostatic field cannot create a finite out-of-plane spin polarizations. Therefore, we focus on the larger in-plane and off-diagonal components χxy = −χyx 
+
+of the susceptibility tensor. When the irradiation is not present, we observe completely antisymmetric susceptibilities and the corresponding spin textures, which exist due to inversion and time-reversal (zero bandgap) symmetries. Our current investigation into the spin polarization is in part motivated by Ref.[90] and its crucial discussion of how circularly polarized dressing field combined with spin-orbit coupling and external electrostatic fields leads to a unique 15 0.2 0.4 0.6 0.0 0.0 0.1          
+
+> 0.2 0.4 0.0 0.1
+> 0.2 0.4 0.6 0.0 0.0 0.1
+> 0.2 0.4 0.0 0.1
+> 0.2 0.4 0.6 0.0 0.0 0.1
+> 0.2 0.4 0.0 0.1
+> b( ) ( ) cd( ) ( ) ef( ) ( ) a
+
+FIG. 11: (Color online) The transverse components χxy of spin-type Edelstein susceptibilities in the units of e/ (4 π2) for a 
+
+d-wave altramagnet with dx2−y2 pairing symmetry in the presence of the spin-orbit coupling and an off-resonance dressing field. The chemical potential corresponds to the energy ϵs(⃗ k = 0) for each of these graphs. The left panels ( a), ( c) and ( e)demonstrate how susceptibility χxy depends On the strength of Rashba spin-orbit coupling for different cases of electron-photon coupling parameter Kω = 0 .0 (zero irradiation, black curves), Kω = 0 .5 k(0) (Red curves) and Kω = 0 .7 k(0) (blue curves). The right panels ( b), ( d) and ( f ) how susceptibility χxy depends on the electron-photon coupling parameter Kω for different cases of Rashba spin-orbit coupling ρ = 0 .3 (black curves), ρ = 0 .4 (red curves) and ρ = 0 .5 (blue curves). 
+
+picture of Edelstein spin polarization patterns, which in turn arise from light-modified band gaps and the components of Fermi velocity. Importantly, the off-diagonal components χxy of Edelstein susceptibilities would vanish at a certain frequency and intensity of the applied off-resonance dressing field. Our results for the χxy components of the spin polarization tensor for d−wave altermagnets with different sym-metries are presented in Figs. 11 and 12. Specifically, we focus on anisotropic types of external radiation with β < 1which are substantially different from the circular polarized type. We mostly interested to observe the Edelstein sus-ceptibility for the case of anisotropic radiation interacting with electrons which also exhibit anisotropic and non-linear energy dispersion. We find that the magnitudes of the χxy components uniformly increases with spin-orbit coupling strength ρ (and is always equal to zero for ρ = 0). However, we also notice that each of these curves has a maximum and starts decreasing at a certain value of ρ ∽ 0.7. It is important to keep in mind that ρ > 0.7 is hardly achievable in a real-life experiment. For an elliptical irradiation with β < 1 – when the radiation becomes more anisotropic and shifted from the circular polarization type – it requires a larger value of ρ to reach the maximum for each of the curves, so that the dependence stays monotonic, with a more significant difference between the zero and finite electron-photon coupling parameter Kω (added driving field vs. no driving field). The curves corresponding to Kω > 0.5k(0) become nearly identical, while they are very different from each other for the circularly polarized light ( β = 1). The dependence the 
+
+χxy components on Kω is always monotonically decreasing for all types of irradiation. However, for a decreasing β,the three curves corresponding to the different values of spin-orbit coupling strength ρ become nearly identical, or at least are located a lot closer to each other than what we have observed for the circularly polarized irradiation. The situation becomes very different for the altermagnets with dxy type of symmetry, as we show in Fig. 12. Most importantly, χxy is always zero in the absence of irradiation for any spin-orbit coupling ρ. This result comes in a stark contrast with previously considered dx2−y2 altermagnets, in which the χxy tensor components reached their largest values in the absence of the dressing field. Interestingly, the curves for various electron-photon coupling constants demonstrate different increase rates depending on spin-orbit coupling ρ (the curves for the lower electron-light coupling are located higher for the smaller ρ). Interestingly, for a small β −→ 0, all the three curves corresponding to different 16 ( ) c d( ) ( ) e f( )           
+
+> 0.2 0.4 0.6 0.0 0.0 0.5
+> 0.2 0.4 0.0 0.5 0.0
+> 0.2 0.4 0.6 0.0 0.0 0.5
+> 0.2 0.4 0.0 0.5 0.0
+> 0.2 0.4 0.6 0.0 0.0 0.5
+> 0.2 0.4 0.0 0.5 0.0
+> ( ) ab( )
+
+FIG. 12: (Color online) The transverse components χxy of spin-type Edelstein susceptibilities in the units of e/ (4 π2) for a d-wave altermagnet with dxy pairing symmetry in the presence of the spin-orbit coupling and an off-resonance dressing field. The chemical potential corresponds to the energy ϵs(⃗ k = 0) for each of these graphs. The left panels ( a), ( c) and ( e) demonstrate how susceptibility χxy depends On the strength of Rashba spin-orbit coupling for different cases of electron-photon coupling parameter Kω = 0 .0 (zero irradiation, black curves), Kω = 0 .5 k(0) (Red curves) and Kω = 0 .7 k(0) (blue curves). The right panels ( b), ( d) and ( f ) how susceptibility χxy depends on the electron-photon coupling parameter Kω for different cases of Rashba spin-orbit coupling ρ = 0 .3 (black curves), ρ = 0 .4 (red curves) and ρ = 0 .5 (blue curves). 
+
+light intensities demonstrate nearly identical dependence (and monotonic increase) on spin-orbit coupling parameter ρ,which is not the case for a circularly polarized dressing field. 
+
+V. SUMMARY AND CONCLUDING REMARKS 
+
+In this paper, we investigated the electron energy spectrum and bandgaps for d-wave altermagnets in the presence of an off-resonant optical dressing field and gate-induced spin-orbit coupling. The materials with both dx2−y2 and 
+
+dxy symmetries have been investigated. The optical driving field leads to noticeable modifications of the electron properties and energy dispersions, resulting in substantially different electronic and collective behavior of the consid-ered materials. Specifically, a modification of the Fermi velocity components leads to a completely different situation in quantum transport, specifically, the Boltzmann conductivity. The results of applying external irradiation depend substantially on its polarization: circularly polarized light opens a bandgap, significantly modifying the material’s topological properties, and linearly polarized light creates or modifies the material’s energy spectrum. We have uncovered highly unusual and physically rich picture of the electron dressed states in both dx2−y2 and dxy 
+
+altermagnets which is completely different from that in the previously investigated Dirac cone materials. We have found that a finite bandgap between the two bands is generated by elliptically polarized light, disregarding the spin-orbit coupling parameter. We observe both direct and indirect gaps along the x-direction, whereas the indirect gap along the y-axis is missing. It is also interesting to notice that the distinction between the directions of out-of-plain polarization is no longer at ±π/ 4 and ±3π/ 4 directions. When we apply a strongly anisotropic elliptically polarized optical field with β = 0 .2, we observe that a substantial band gap is still opened, which is in stark contrast with all the known Dirac cone materials. We also look at an altermagnet with a dxy symmetry: its separation between the positive and negative directions of out-of-plane spin polarizations corresponds to 0 and π/ 2 angles; such a behavior has not been found in dx2−y2 altermagnet. We observe that a linearly polarized dressing field yields a substantial energy bandgap in contrast to all known Dirac materials. Also, the angular dependence of the energy spectrum is 17 modified only in one direction (perpendicular to the light polarization direction θ0 = 0 .0). We also investigate the generation of in-plane spin polarization due to external magnetic fields in various types of altermagnets, known as Edelstein susceptibilities, or the Edelstein effect, in the presence of an off-resonance dressing field. We emphasize anisotropic polarization of the external irradiation to explore this effect in the case of anisotropic radiation interacting with electrons, which also exhibit anisotropic, non-linear energy dispersion. We have investigated how susceptibilities depend on two crucial parameters – the electron-light interaction and the electron spin-orbit coupling strength– in the presence of a driving field with β < 1. We have found out that even though the general trends and dependences remain unaltered, introducing an anisotropic driving field leads to several subtle but important changes of χxy , which allows for the fine-tuning of spin polarizations in a d-wave altermagents. This situation is very different for the altramagnets with dxy - type symmetry. Specifically, χxy is always zero in the absence of irradiation for any spin-orbit coupling ρ. This result stands in stark contrast to previously considered dx2−y2 alternates, in which the χxy tensor components reach their largest values in the absence of the dressing field. Altermagnets are considered most promising candidates for spintronics 94,95 because they merge the most prominent characteristics of ferromagnets and antiferromagnets, allowing efficient spin current control without stray fields that hinder device scaling. 1,3,96–99 They also display strong spin-dependent transport effects, such as anisotropic spin Hall responses and magnetoresistance, enabling straightforward electrical detection. 100,101 We strongly believe that our findings on the unusual electronics states, energy spectrum, dispersions and bandgaps for irradiated altermagnets which could be dynamically tuned, are very important for a number of practical applications, including spintronics and device physics. 
+
+> Acknowledgments
+
+A.I. was supported by the funding received from TradB-56-75, PSC-CUNY Award # 68386-00 56. We acknowledge the support from CUNY Research Scholars Program (CRSP); Tiyhearah Danner-Jackson received a fellowship from CRSP. 
+
+> Appendix A: Unified expression for the energy dispersions for a spin-1/2 Hamiltonian
+
+In our problem, the considered electronic states for a d-wave altermagnet are described by the following Hamiltonian 
+
+H(0) 1 (⃗ k) = 
+
+> 3
+
+X
+
+> i=1
+
+⃗
+
+Vi(⃗ k)⃗ Σ(2)  
+
+> i
+
+= V0(⃗ k)Σ (2) 0 +
+
+> 3
+
+X
+
+> i=1
+
+⃗
+
+Vi(⃗ k)⃗ Σ(2)  
+
+> i
+
+(A1) based on all Pauli matrices ⃗ Σ(2)  
+
+> i
+
+, i = 0 , x, y, z .We can present any three-dimensional vector ⃗ Vi(⃗k) = 
+
+h
+
+V1(⃗k), V 2(⃗k), V 3(⃗ k)
+
+i
+
+as ⃗
+
+Vi(⃗k) = ˆn(k)
+
+|Vi(⃗ k)| = ˆn(k)
+
+s 3P
+
+> i=1
+
+V 2 
+
+> i
+
+(⃗k)
+
+. (A2) Here, ˆ n(⃗k) = 
+
+h
+
+sin Θ ⃗k cos ϕ⃗k, sin Θ ⃗k sin ϕ⃗k, cos Θ ⃗ k
+
+i
+
+is a unit vector and Θ˜k = sin −1
+
+"
+
+V3(˜k)
+
+|⃗V(⃗ k)|
+
+#
+
+(A3) and 
+
+ϕ˜k = tan −1
+
+"
+
+V2(⃗k)
+
+V1(⃗k)
+
+#
+
+(A4) 18 are the spherical angles which define our unit vector ˆ n(⃗k). The eigenvalues of the Hamiltonian (A1) which could be also presented as 
+
+H(0) 1 (⃗k) =
+
+ V0(⃗ k) 00 V0(⃗k)
+
+
+
++ |⃗ V(⃗ k)|
+
+
+
+ˆn(⃗k) ·⃗ ˆΣ(2) 
+
+= (A5) =
+
+ V0(⃗ k) 00 V0(⃗k)
+
+
+
++ |⃗ V(⃗ k)|
+
+ cos Θ ⃗k sin Θ ⃗k e−iϕ ⃗
+
+> k
+
+sin Θ ⃗k eiϕ ⃗ 
+
+> k
+
+− cos Θ ⃗ k .
+
+
+
+are easily obtained in the following form 
+
+εs=±1(⃗ k) = V0(⃗ k) + s |⃗ V(⃗ k)| = V0(⃗ k) + s
+
+vuut 3X
+
+> i=1
+
+V 2 
+
+> i
+
+(⃗k) . (A6) The corresponding spinor eigenstates Ψ (0) [s=±1] (⃗k) = ( a, b )† obviously do not depend on V0(⃗ k) or even |⃗V(⃗ k)| and are calculated from the following equation 
+
+cos Θ ⃗k ∓ 1 a + eiϕ ⃗ 
+
+> k
+
+sin Θ ⃗k b = 0 . (A7) Finally, the spinor eigenstates of a two-level system are obtained in the form of a qubit state Ψ(0) [s=1] (⃗k) = 
+
+
+
+cos 
+
+ Θ⃗
+
+> k
+> 2
+
+
+
+sin 
+
+ Θ⃗
+
+> k
+> 2
+
+
+
+eiϕ ⃗
+
+> k
+
+ . (A8) and Ψ(0) [s=−1] (⃗k) = 
+
+
+
+sin 
+
+ Θ⃗
+
+> k
+> 2
+
+
+
+− cos 
+
+ Θ⃗
+
+> k
+> 2
+
+
+
+eiϕ ⃗
+
+> k
+
+ , (A9) while the total phase of both components of the spinor is irrelevant, as expected. 
+
+Appendix B: Finding the electron states in the presence of off-resonance dressing fields 
+
+Now we address the problem of calculating the electronic states of a d-wave altermagnet in the presence of an off-resonance dressing field. We consider how each of the term of the Hamiltonian ˆH1,2(⃗k) = ˆHM (⃗k) + ˆHA
+
+> 1,2
+
+(⃗ k) + ˆHR(⃗k) (B1) where ˆHM (⃗ k) = (ℏk)2
+
+2m ˆΣ(2) 0 = ℏ2
+
+2m
+
+ k2 
+
+> x
+
++ k2
+
+> y
+
+ ˆΣ(2) 0 (B2) is a standard diagonal and isotropic mass term. The two types H1,2 of altermagnets corresponding to dx2−y2 and dxy 
+
+pairing symmetries are distinguished by the ˆΣ(2)  
+
+> z
+
+term: ˆHA 
+
+> 1
+
+(⃗ k) = ℏ2A1
+
+2m
+
+ k2 
+
+> x
+
+− k2
+
+> y
+
+ ˆΣ(2)  
+
+> z
+
+. (B3) 19 and ˆHA 
+
+> 2
+
+(⃗ k) = ℏ2A2
+
+2m (kxky ) ˆΣ(2)  
+
+> z
+
+. (B4) corresponding to dxy type of symmetry of an altermagnet. Finally, ˆHR
+
+> 1,2
+
+(⃗k) = rSO 
+
+
+
+kx Σ(2)  
+
+> y
+
+− ky Σ(2) 
+
+> x
+
+
+
+, (B5) is the Rashba spin-orbit coupling Hamiltonian induced by the external gates voltage. We are going to calculate the effect of the off-resonance dressing field is given by a canonical substitute of the electron momentum kx,y −→ kx,y − e/ ℏAx,y . time-dependent vector potential. Let us first address the most general elliptical polarization with vector potential 
+
+A(E)(t) = E0
+
+ω
+
+ cos( ωt )
+
+β sin( ωt )
+
+
+
+. (B6) Importantly, there are several approach to calculating the dressed states. The non-linear k-terms are normally treated using van Vleck expansion ˆH(D)(⃗k) = ˆH(F )0 (⃗k) + ( ℏω)−1 h ˆH(F ) 
+
+> −1
+
+(⃗ k), ˆH(F )+1 (⃗k)
+
+i
+
++ 1 /2 ( ℏω)−2 h ˆH(F ) 
+
+> −1
+
+(⃗k),
+
+h ˆH(F )0 (⃗k), ˆH(F )+1 (⃗k)
+
+i i 
+
+... . (B7) In most cases, taking only the linear expansion term ( ℏω)−1
+
+h ˆH(F ) 
+
+> −1
+
+(⃗ k), ˆH(F )+1 (⃗ k)
+
+i
+
+into account would be sufficient. Here, the Floquet components ˆH(F )[n=0 ,1,−1] (⃗k) are time-independent and are given as the time-integrals ˆH(F ) 
+
+> n
+
+(⃗k) = ω
+
+2π
+
+> 2π/ω
+
+Z
+
+> 0
+
+ˆH(0) 1,2
+
+h⃗
+
+k − e
+
+ℏ⃗ A(t)
+
+i
+
+exp [in ωt ] dt , (B8) over the period T = 2 π/ω of the time-dependent and periodic terms ˆH(0) 1,2
+
+h⃗
+
+k − e
+
+> ℏ
+
+⃗ A(t)
+
+i
+
+obtained from initial non-interacting Hamiltonian (B1) in which wave vector ⃗ k is replaced by a canonical substitution kx,y −→ kx,y − e/ ℏAx,y .We now consider the case of elliptical polarized irradiation and most common dx2−y2 type of altermagents And derived the exact equations for each part of the Hamiltonian affected by the irradiation. The canonical substitution leads to the following time dependent Hamiltonian ˆHM (⃗k, t ) = ℏ2
+
+2m
+
+(
+
+k2 − 2eE 0
+
+ℏω [kx cos( ωt ) + ky β sin( ωt )] + 
+
+ eE 0
+
+ℏω
+
+2  1 + β2
+
+2 + 1 − β2
+
+2 cos(2 ωt )
+
+ )
+
+ˆΣ(2) 0 (B9) ˆHA 
+
+> 1
+
+(⃗ k, t ) = ℏ2A1
+
+2m
+
+ k2 
+
+> x
+
+− k2
+
+> y
+
+ − eE 0
+
+ℏω [kx cos( ωt ) − βk y sin( ωt )]+ (B10) +
+
+ eE 0
+
+ℏω
+
+2  1 − β2
+
+2 + 1 + β2
+
+2 cos(2 ωt )
+
+ )
+
+ˆΣ(2)  
+
+> z
+
+.
+
+The Rashba spin-orbit coupling Hamiltonian is transformed in the most straightforward way ˆHR
+
+> 1,2
+
+(⃗k) = rSO 
+
+
+
+kx Σ(2)  
+
+> y
+
+− ky Σ(2) 
+
+> x
+
+
+
+− rSO 
+
+eE 0
+
+ℏω
+
+h
+
+cos( ωt ) Σ (2)  
+
+> y
+
+− β sin( ωt ) Σ (2) 
+
+> x
+
+i
+
+. (B11) Next, we evaluate the integrals in Eq. (B8) and obtain 20 ˆH(E)1 (⃗k) = H(F )[n=0] (⃗ k) + β
+
+ eE 0r
+
+ℏω
+
+2
+
+Σ(2)  
+
+> z
+
+− β k y
+
+A1 rSO 
+
+2m
+
+ eE 0
+
+ω
+
+2
+
+Σ(2)  
+
+> x
+
+− (B12) 
+
+− β k x
+
+A1 rSO 
+
+2m
+
+ eE 0
+
+ω
+
+2
+
+Σ(2)  
+
+> y
+
+,
+
+where the zero-order Floquet Hamiltonian H(F )[n=0] (⃗ k)
+
+H(F )[n=0] (⃗k) = H(0) 1,2(⃗k) + 1 + β2
+
+4m
+
+ eE 0
+
+ω
+
+2
+
+= (ℏk)2
+
+2m ˆΣ(2) 0 + ℏ2A1
+
+2m
+
+ k2 
+
+> x
+
+− k2
+
+> y
+
+ ˆΣ(2)  
+
+> z
+
++ (B13) + rSO 
+
+
+
+kx Σ(2)  
+
+> y
+
+− ky Σ(2) 
+
+> x
+
+
+
++ 1 + β2
+
+4m
+
+ eE 0
+
+ω
+
+2
+
+Σ(2) 0 + 1 − β2
+
+4m
+
+ eE 0
+
+ω
+
+2
+
+Σ(2)  
+
+> z
+
+,
+
+is equal to the initial Hamiltonian (1) and an additional constant energy shift ℏ2/(4 m) [ eE 0/(ℏω)] 2 (1 + β2) and an additional bandgap (1 − β2)/(2 m) [ eE 0/(ℏω)] 2.Here, we used the following relations 
+
+> 2π/ω
+
+Z
+
+> 0
+
+cos( nωt ) e±iωt = πω δn, 1 , (B14) 
+
+> 2π/ω
+
+Z
+
+> 0
+
+sin( nωt ) e±iωt = ±iπ ω δn, 1 ,
+
+as well as 
+
+" 3X
+
+> λ=0
+
+Cp,λ ˆΣ(2)  
+
+> λ
+
+,
+
+> 3
+
+X
+
+> μ=0
+
+Cm,μ ˆΣ(2) 
+
+> μ
+
+#
+
+= (B15) =
+
+ 2i(Cm, 2Cp, 1 − Cm, 1Cp, 2) −2Cm, 3(Cp, 1 − 2iC p, 2) + (2 Cm, 1 − 2iC m, 2)Cp, 3
+
+2Cm, 3(Cp, 1 + iC p, 2) − 2( Cm, 1 + iC m, 2)Cp, 3 2i(Cm, 1Cp, 2 − Cm, 2Cp, 1)
+
+
+
+.
+
+1. Altermagnets with dxy symmetry under elliptically polarized dressing field 
+
+Let us know calculate the electron dressed states for an altermagnet with dxy symmetry. We easily notice that for 
+
+H2 Hamiltonian the only term which needs to be calculated again 
+
+HA 
+
+> 2
+
+(⃗ k, t ) = ℏ2A1
+
+2m
+
+
+
+kxky − eE 0
+
+ℏω [kxβ sin( ωt ) + βk y cos( ωt )]+ (B16) + β
+
+2
+
+ eE 0
+
+ℏω
+
+2
+
+sin(2 ωt )
+
+)
+
+ˆΣ(2)  
+
+> z
+
+.
+
+As a result, we have the following effective Floquet time-independent Hamiltonian ˆH(E)2 (⃗k) = H(F )[n=0] (⃗k) + β
+
+ eE 0r
+
+ℏω
+
+2
+
+Σ(2)  
+
+> z
+
+− ky
+
+A2 rSO 
+
+2m
+
+ eE 0
+
+ω
+
+2
+
+Σ(2)  
+
+> x
+
+− (B17) 
+
+− β2 kx
+
+A2 rSO 
+
+2m
+
+ eE 0
+
+ω
+
+2
+
+Σ(2)  
+
+> y
+
+,21 where the zero-order Floquet Hamiltonian H(F )[n=0] (⃗ k)ˆH(F )[n=0] (⃗k) = H(0) 1,2(⃗k) + 1 + β2
+
+4m
+
+ eE 0
+
+ω
+
+2
+
+= (ℏk)2
+
+2m ˆΣ(2) 0 + ℏ2A2
+
+2m kxky ˆΣ(2)  
+
+> z
+
++ (B18) + rSO 
+
+
+
+kx Σ(2)  
+
+> y
+
+− ky Σ(2) 
+
+> x
+
+
+
++ 1 + β2
+
+4m
+
+ eE 0
+
+ω
+
+2
+
+Σ(2) 0 + 1 − β2
+
+4m
+
+ eE 0
+
+ω
+
+2
+
+Σ(2)  
+
+> z
+
+,
+
+is the same as for the previously considered dx2−y2 type of symmetry. We see that Σ (2)  
+
+> x
+
+and Σ (2)  
+
+> y
+
+terms are affected in non-equivalent ways for β̸ = 1. 
+
+2. Linearly polarized irradiation with an arbitrary polarization direction θ0
+
+We now consider the electronic states in a dx2−y2 altermagnet with a Hamiltonian (1) in the presence of a linearly polarized dressing field 
+
+A(L)(t) = E0
+
+ω
+
+ cos θ0
+
+sin θ0
+
+
+
+cos( ωt ) , (B19) where θ0 is the fixed direction of the external field polarization. The components of the wave vector is modified as kx −→ kx − eE 0/(ℏω) cos θ0 cos( ωt ) and ky −→ ky −
+
+eE 0/(ℏω) sin θ0 cos( ωt ). The time-dependent Hamiltonian now becomes ˆH1(⃗ k, t ) = HM (⃗k, t ) + HA
+
+> 1,2
+
+(⃗ k, t ) + HR(⃗k) (B20) ˆHM (⃗ k, t ) = ℏ2
+
+2m
+
+(
+
+k2 − 2eE 0
+
+ℏω [kx cos θ0 + ky sin θ0] cos( ωt ) + 12
+
+ eE 0
+
+ℏω
+
+2
+
+[1 + cos(2 ωt ) ] 
+
+)
+
+ˆΣ(2) 0 (B21) ˆHA
+
+> 1,2
+
+(⃗k, t ) = ℏ2A1
+
+2m
+
+ k2 
+
+> x
+
+− k2
+
+> y
+
+ − 2eE 0
+
+ℏω [kx cos θ0 − ky sin θ0] cos( ωt )+ (B22) + 12
+
+ eE 0
+
+ℏω
+
+2
+
+[1 + cos(2 ωt ) ] 
+
+)
+
+ˆΣ(2)  
+
+> z
+
+.
+
+The Rashba spin-orbit coupling Hamiltonian is transformed in the most straightforward way ˆHR
+
+> 1,2
+
+(⃗ k) = rSO 
+
+
+
+kx Σ(2)  
+
+> y
+
+− ky Σ(2) 
+
+> x
+
+
+
+− rSO 
+
+eE 0
+
+ℏω
+
+h
+
+cos θ0 Σ(2)  
+
+> y
+
+− sin θ0 Σ(2) 
+
+> x
+
+i
+
+cos( ωt ). (B23) Analyzing Hamiltonian (B30), we immediately discern that ˆH(F ) 
+
+> −1
+
+(⃗k) ≡ ˆH(F )1 (⃗k) and a linear term in Van Vleck expansion could only yield zero. Therefore, this time we must take into the ∽ 1/ω 2 corrections in Eq. (B7). Now we can derive following Floquet time-independent Hamiltonian for a dx2−y2 altermagnet ˆHA 
+
+> 2
+
+(⃗k, t ) = H(F )[n=0] (⃗k) − F (z) 
+
+> A
+
+(rSO , ω | θ0)Σ (2)  
+
+> z
+
++ F(x) 
+
+> A
+
+(rSO , ω | θ0)Σ (2)  
+
+> x
+
++ F(y) 
+
+> A
+
+(rSO , ω | θ0)Σ (2)  
+
+> y
+
+(B24) where 22 
+
+F(z) 
+
+> A
+
+(rSO , ω | θ0) = A1
+
+8mω 4 (eE 0 rSO )2 2 cos θ0
+
+k2 − 2kx(kx + ky ) + 2 sin θ0
+
+k2 + 2 ky (kx + ky ) , (B25) 
+
+F(x) 
+
+> A
+
+(rSO , ω | θ0) = r3(eE 0)2
+
+2( ℏω)4 cos θ0 (cos θ0ky − sin θ0kx) −
+
+ A1 eE 0
+
+2mℏω2
+
+2
+
+rSO (cos θ0ky − sin θ0kx) ××
+
+h
+
+2 cos θ0 kxky − sin θ0
+
+ k2 
+
+> x
+
++ 3 k2
+
+> y
+
+ i
+
+, (B26) 
+
+F(y) 
+
+> A
+
+(rSO , ω | θ0) = − r3(eE 0)2
+
+2( ℏω)4 cos θ0 (cos θ0ky − sin θ0kx) −
+
+ A1 eE 0
+
+2mℏω2
+
+2
+
+rSO (cos θ0ky − sin θ0kx) ××
+
+h
+
+2 cos θ0 k2 
+
+> x
+
+− cos θ0 k2 − 2kxky sin θ0
+
+i
+
+(B27) The zero-order Floquet Hamiltonian H(F )[n=0] (⃗k)
+
+H(F )[n=0] (⃗k) = H(0) 1 (⃗k) + ℏ2
+
+4m
+
+ eE 0
+
+ω
+
+2
+
+ˆΣ(2) 0 + ℏ2 A1
+
+4m
+
+ eE 0
+
+ω
+
+2
+
+ˆΣ(2)  
+
+> z
+
+= (ℏk)2
+
+2m ˆΣ(2) 0 + (B28) + ℏ2 A1
+
+2m (k2 
+
+> x
+
+− k2 
+
+> y
+
+) ˆΣ(2)  
+
+> z
+
++ rSO 
+
+
+
+kx Σ(2)  
+
+> y
+
+− ky Σ(2) 
+
+> x
+
+
+
++ ℏ2
+
+4m
+
+ eE 0
+
+ω
+
+2
+
+ˆΣ(2) 0 + ℏ2 A1
+
+4m
+
+ eE 0
+
+ω
+
+2
+
+ˆΣ(2)  
+
+> z
+
+,
+
+we see that a finite bandgap is created independent of the direction of the polarization of the dressing field. For the polarization direction along the x−axis, equation (B24) is simplified as ˆHA 
+
+> 1
+
+(⃗k) = H(F )[n=0] (⃗ k) − A1(eE 0 rS O)2
+
+4mℏ2ω4
+
+k2 − 2kx(kx + ky )2 Σ(2)  
+
+> z
+
++ (B29) +
+
+(
+
+(eE 0)2
+
+2( ℏω)4 r3 
+
+> SO
+
+ky + rSO 
+
+ ℏA1 eE 0
+
+2mω 2
+
+2
+
+k2
+
+> x
+
+ky
+
+)
+
+Σ(2)  
+
+> x
+
+−−
+
+(
+
+(eE 0)2
+
+2( ℏω)4 r3 
+
+> SO
+
+ky + rSO 
+
+ ℏA1 eE 0
+
+2mω 2
+
+2
+
+kx
+
+ k2 
+
+> x
+
+− k2
+
+> y
+
+)
+
+Σ(2)  
+
+> y
+
+,
+
+which demonstrates that the second-order perturbation expansion terms brings small but still important corrections to the band structure of irradiated altermagnets. Finally, let us briefly address the case of a dxy altermagnet under linearly polarized dressing field. We perform the perturbation expansion up to the ∽ ω−2 order. The time-dependent Hamiltonian now becomes ˆH(0) 1 (⃗ k, t ) = H(0) , M (⃗ k, t ) + HA 
+
+> 1
+
+(⃗ k, t ) + H(0) , R  
+
+> 1,2
+
+(⃗k) (B30) where H(0) , M (⃗ k, t ) and H(0) , R  
+
+> 1,2
+
+(⃗k) remain unchanged and ˆHA 
+
+> 1
+
+(⃗ k, t ) = ℏ2A1
+
+2m
+
+
+
+kxky − 2eE 0
+
+ℏω [kx sin θ0 + ky cos θ0] cos( ωt )+ (B31) + 14
+
+ eE 0
+
+ℏω
+
+2
+
+sin(2 θ0) [1 + cos(2 ωt ) ] 
+
+)
+
+ˆΣ(2)  
+
+> z
+
+.
+
+The zero-order Floquet Hamiltonian H(F )[n=0] (⃗k) is given by ˆH(F )[n=0] (⃗k) = (ℏk)2
+
+2m ˆΣ(2) 0 + ℏ2 A1
+
+2m (k2 
+
+> x
+
+− k2 
+
+> y
+
+) ˆΣ(2)  
+
+> z
+
++ rSO 
+
+
+
+kx Σ(2)  
+
+> y
+
+− ky Σ(2) 
+
+> x
+
+
+
++ ℏ2
+
+4m
+
+ eE 0
+
+ω
+
+2
+
+ˆΣ(2) 0 + (B32) + ℏ2 A1
+
+8m sin 2 θ0
+
+ eE 0
+
+ω
+
+2
+
+ˆΣ(2)  
+
+> z
+
+.23 Therefore, the bandgap 2∆ (L)2 is obtained as ∆(L)2 = ℏ2 A2
+
+8m sin(2 θ0)
+
+ eE 0
+
+ω
+
+2
+
+= A2
+
+4 sin(2 θ0) K2 
+
+> ω
+
+, (B33) and disappears for certain directions θ0 = πn/ 2, n = 1 , 2, 3, ... . The other changes to the finite-k dispersions are given as the modifications of the components of its anisotropic Fermi velocity and are shown at 1 /ω 4 level, which are are small but not negligible.  
+
+> 1
+
+L. ˇSmejkal, R. Gonz´ alez-Hern´ andez, T. Jungwirth, and J. Sinova, Science advances 6, eaaz8809 (2020).  
+
+> 2
+
+P. Negi, S. S. S. A. Aradhyula, S. Dutta, and S. Roychowdhury, Chemistry of Materials 37 , 6097 (2025).  
+
+> 3
+
+L. ˇSmejkal, J. Sinova, and T. Jungwirth, Physical Review X 12 , 031042 (2022).  
+
+> 4
+
+R. Tamang, S. Gurung, D. P. Rai, S. Brahimi, and S. Lounis, Magnetism 5, 17 (2025).  
+
+> 5
+
+J. Liu, X. Ma, X. Zhang, W. Jing, Z. Liu, and D. Shen, Nano Convergence 13 , 6 (2026).  
+
+> 6
+
+S. S. Fender, O. Gonzalez, and D. K. Bediako, Journal of the American Chemical Society 147 , 2257 (2025).  
+
+> 7
+
+C. Song, H. Bai, Z. Zhou, L. Han, H. Reichlova, J. H. Dil, J. Liu, X. Chen, and F. Pan, Nature Reviews Materials 10 , 473 (2025).  
+
+> 8
+
+O. Gomonay, V. P. Kravchuk, R. Jaeschke-Ubiergo, K. V. Yershov, T. Jungwirth, L. ˇSmejkal, J. v. d. Brink, and J. Sinova, npj Spintronics 2, 35 (2024).  
+
+> 9
+
+C. He, Z. Wen, J. Okabayashi, Y. Miura, T. Ma, T. Ohkubo, T. Seki, H. Sukegawa, and S. Mitani, Nature Communications 
+
+16 , 8235 (2025).  
+
+> 10
+
+T. Tschirner, P. Keßler, R. D. Gonzalez Betancourt, T. Kotte, D. Kriegner, B. B¨ uchner, J. Dufouleur, M. Kamp, V. Jovic, L. Smejkal, et al., Apl Materials 11 (2023).  
+
+> 11
+
+Z. Zhou, X. Cheng, M. Hu, R. Chu, H. Bai, L. Han, J. Liu, F. Pan, and C. Song, Nature 638 , 645 (2025).  
+
+> 12
+
+O. Fedchenko, J. Min´ ar, A. Akashdeep, S. W. D’souza, D. Vasilyev, O. Tkach, L. Odenbreit, Q. Nguyen, D. Kutnyakhov, N. Wind, et al., Science advances 10 , eadj4883 (2024).  
+
+> 13
+
+S. Lee, S. Lee, S. Jung, J. Jung, D. Kim, Y. Lee, B. Seok, J. Kim, B. G. Park, L. ˇSmejkal, et al., Physical review letters 
+
+132 , 036702 (2024).  
+
+> 14
+
+S. Reimers, L. Odenbreit, L. ˇSmejkal, V. N. Strocov, P. Constantinou, A. B. Hellenes, R. Jaeschke Ubiergo, W. H. Campos, V. K. Bharadwaj, A. Chakraborty, et al., Nature Communications 15 , 2116 (2024).  
+
+> 15
+
+O. Amin, A. Dal Din, E. Golias, Y. Niu, A. Zakharov, S. Fromage, C. Fields, S. Heywood, R. Cousins, F. Maccherozzi, et al., Nature 636 , 348 (2024).  
+
+> 16
+
+R. Gonzalez Betancourt, J. Zub´ aˇ c, R. Gonzalez-Hernandez, K. Geishendorf, Z. ˇSob´ aˇ n, G. Springholz, K. Olejn´ ık, L. ˇSmejkal, J. Sinova, T. Jungwirth, et al., Physical Review Letters 130 , 036702 (2023).  
+
+> 17
+
+W. Chen, A. D. James, and S. B. Dugdale, arXiv preprint arXiv:2511.01094 (2025).  
+
+> 18
+
+T. Yu et al. (2025).  
+
+> 19
+
+V. Galitski and I. B. Spielman, Nature 494 , 49 (2013).  
+
+> 20
+
+M. Usman, T. K. Ghosh, and S. F. Islam, Journal of Physics: Condensed Matter (2026).  
+
+> 21
+
+A. Pandita and S. F. Islam, Physical Review B 113 , 115419 (2026).  
+
+> 22
+
+M. A. Mojarro and S. E. Ulloa, 2D Materials 12 , 035015 (2025).  
+
+> 23
+
+M. Naka, Y. Motome, and H. Seo, npj Spintronics 3, 1 (2025).  
+
+> 24
+
+S.-W. Cheong and F.-T. Huang, npj Quantum Materials 10 , 38 (2025).  
+
+> 25
+
+Z.-M. Wang, Y. Zhang, S.-B. Zhang, J.-H. Sun, E. Dagotto, D.-H. Xu, and L.-H. Hu, Physical Review Letters 135 , 176705 (2025).  
+
+> 26
+
+M. Roig, Y. Yu, R. C. Ekman, A. Kreisel, B. M. Andersen, and D. F. Agterberg, Physical Review Letters 135 , 016703 (2025).  
+
+> 27
+
+M. Islam and S. Basu, Journal of Physics: Condensed Matter (2023).  
+
+> 28
+
+S. Sarkar and A. Agarwal, Physical Review B 112 , 195420 (2025).  
+
+> 29
+
+P. Kapri, Physical Review B 112 , 155422 (2025).  
+
+> 30
+
+L. Tamang, S. Verma, and T. Biswas, arXiv preprint arXiv:2309.07074 (2023).  
+
+> 31
+
+I. Mazin, Physical Review B 107 , L100418 (2023).  
+
+> 32
+
+M. Sato and Y. Ando, Reports on Progress in Physics 80 , 076501 (2017).  
+
+> 33
+
+K. Leraand, K. Mæland, and A. Sudbø, Physical Review B 112 , 104510 (2025).  
+
+> 34
+
+C. L. Rasmussen, J. Gondolf, M. Barkman, M. Roig, D. F. Agterberg, A. Kreisel, and B. M. Andersen, arXiv preprint arXiv:2509.03247 (2025).  
+
+> 35
+
+Y. Fukaya, B. Lu, K. Yada, Y. Tanaka, and J. Cayao, Journal of Physics: Condensed Matter 37 , 313003 (2025).  
+
+> 36
+
+K. Monkman, J. Weng, N. Heinsdorf, A. Nocera, Y. Barlas, and M. Franz, Physical Review X 16 , 011057 (2026).  
+
+> 37
+
+A. Hadjipaschalis, S. A. A. Ghorashi, and J. Cano, Physical Review B 112 , 214430 (2025).  
+
+> 38
+
+T. Oka and H. Aoki, Physical Review B 79 , 081406 (2009). 24  
+
+> 39
+
+T. Oka and S. Kitamura, Annual Review of Condensed Matter Physics 10 , 387 (2019).  
+
+> 40
+
+G. E. Topp, G. Jotzu, J. W. McIver, L. Xian, A. Rubio, and M. A. Sentef, Physical Review Research 1, 023031 (2019).  
+
+> 41
+
+M. A. Mojarro, V. G. Ibarra-Sierra, J. C. Sandoval-Santana, R. Carrillo-Bastos, and G. G. Naumis, Physical Review B 
+
+102 , 165301 (2020).  
+
+> 42
+
+N. Goldman and J. Dalibard, Physical review X 4, 031027 (2014).  
+
+> 43
+
+M. Mojarro, R. Carrillo-Bastos, and J. A. Maytorena, Physical Review B 103 , 165415 (2021).  
+
+> 44
+
+A. Iurov, L. Zhemchuzhna, P. Fekete, G. Gumbs, and D. Huang, Physical Review Research 2, 043245 (2020).  
+
+> 45
+
+O. Kibis, Physical Review B 81 , 165433 (2010).  
+
+> 46
+
+M. Mojarro, V. Ibarra-Sierra, J. Sandoval-Santana, R. Carrillo-Bastos, and G. G. Naumis, Physical Review B 102 , 165301 (2020).  
+
+> 47
+
+V. Ibarra-Sierra, J. Sandoval-Santana, A. Kunold, and G. G. Naumis, Physical Review B 100 , 125302 (2019).  
+
+> 48
+
+A. Iurov, M. Mattis, L. Zhemchuzhna, G. Gumbs, and D. Huang, Applied Sciences 14 , 6027 (2024).  
+
+> 49
+
+L. Tamang, T. Nag, and T. Biswas, Physical Review B 104 , 174308 (2021).  
+
+> 50
+
+A. Iurov, L. Zhemchuzhna, G. Gumbs, and D. Huang, Journal of Applied Physics 122 (2017).  
+
+> 51
+
+S. Zhou, C. Bao, B. Fan, F. Wang, H. Zhong, H. Zhang, P. Tang, W. Duan, and S. Zhou, Physical Review Letters 131 ,116401 (2023).  
+
+> 52
+
+O. Roslyak, A. Iurov, G. Gumbs, and D. Huang, Journal of Physics: Condensed Matter 22 , 165301 (2010).  
+
+> 53
+
+A. Iurov, G. Gumbs, O. Roslyak, and D. Huang, Journal of Physics: Condensed Matter 25 , 135502 (2013).  
+
+> 54
+
+A. Iurov, L. Zhemchuzhna, D. Dahal, G. Gumbs, and D. Huang, Physical Review B 101 , 035129 (2020).  
+
+> 55
+
+S. F. Islam and A. Saha, Physical Review B 98 , 235424 (2018).  
+
+> 56
+
+A. Iurov, L. Zhemchuzhna, G. Gumbs, D. Huang, and P. Fekete, Physical Review B 105 , 115309 (2022).  
+
+> 57
+
+K. Kristinsson, O. V. Kibis, S. Morina, and I. A. Shelykh, Scientific reports 6, 1 (2016).  
+
+> 58
+
+G. Iurov, Andrii and, D. Huang, and L. Zhemchuzhna, Journal of Applied Physics 121 (2017).  
+
+> 59
+
+N. Horing, A. Iurov, G. Gumbs, A. Politano, and G. Chiarello (2016).  
+
+> 60
+
+G. Ross-Harvey, A. Iurov, L. Zhemchuzhna, G. Gumbs, D. Huang, and P. Fekete, Physical Review B 111 , 045413 (2025).  
+
+> 61
+
+T. J. Constant, S. M. Hornett, D. E. Chang, and E. Hendry, Nature Physics 12 , 124 (2016).  
+
+> 62
+
+D. Oriekhov and V. Gusynin, Physical Review B 101 , 235162 (2020).  
+
+> 63
+
+M. Yarmohammadi, U. Z¨ ulicke, J. Berakdar, J. Linder, and J. K. Freericks, Physical Review B 111 , 224412 (2025).  
+
+> 64
+
+F. Wang, X. Cai, X. Tang, J. Lu, W. Chen, T. Sheng, R. Feng, H. Zhong, H. Zhang, P. Yu, et al., Nature Materials pp. 1–6 (2026).  
+
+> 65
+
+M. Merboldt, M. Sch¨ uler, D. Schmitt, J. P. Bange, W. Bennecke, K. Gadge, K. Pierz, H. W. Schumacher, D. Momeni, D. Steil, et al., Nature Physics 21 , 1093 (2025).  
+
+> 66
+
+Y.-X. Chen, G. Wang, M. Li, and T.-Y. Du, Physical Review B 113 , 035110 (2026).  
+
+> 67
+
+Y. Wang, H. Steinberg, P. Jarillo-Herrero, and N. Gedik, Science 342 , 453 (2013).  
+
+> 68
+
+M. Sentef, M. Claassen, A. Kemper, B. Moritz, T. Oka, J. Freericks, and T. Devereaux, Nature communications 6, 7047 (2015).  
+
+> 69
+
+H. H¨ ubener, M. A. Sentef, U. De Giovannini, A. F. Kemper, and A. Rubio, Nature communications 8, 13940 (2017).  
+
+> 70
+
+S. Beaulieu, S. Dong, V. Christiansson, P. Werner, T. Pincelli, J. D. Ziegler, T. Taniguchi, K. Watanabe, A. Chernikov, M. Wolf, et al., Science Advances 10 , eadk3897 (2024).  
+
+> 71
+
+N. H. Lindner, G. Refael, and V. Galitski, Nature Physics 7, 490 (2011).  
+
+> 72
+
+T. Oka and H. Aoki, Phys. Rev. B 79 , 081406 (2009).  
+
+> 73
+
+H. Zeng and X. Cui, Chemical Society Reviews 44 , 2629 (2015).  
+
+> 74
+
+D.-H. Choe, H.-J. Sung, and K. J. Chang, Physical Review B 93 , 125109 (2016).  
+
+> 75
+
+J. Cayssol, B. D´ ora, F. Simon, and R. Moessner, physica status solidi (RRL)–Rapid Research Letters 7, 101 (2013).  
+
+> 76
+
+A. Iurov, G. Gumbs, and D. Huang, Physical Review B 99 , 205135 (2019).  
+
+> 77
+
+B. Dey and T. K. Ghosh, Physical Review B 98 , 075422 (2018).  
+
+> 78
+
+L. Tamang and T. Biswas, Physical Review B 107 , 085408 (2023).  
+
+> 79
+
+G. Paul, S. Lahiri, K. Bhattacharyya, and S. Basu, Physical Review B 113 , 035145 (2026).  
+
+> 80
+
+A. Iurov, L. Zhemchuzhna, G. Gumbs, D. Huang, W.-K. Tse, K. Blaise, and C. Ejiogu, Scientific Reports 12 , 21348 (2022).  
+
+> 81
+
+I. Iorsh, D. Sedov, S. Kolodny, R. Sinitskiy, and O. Kibis, Physical Review B 109 , 035104 (2024).  
+
+> 82
+
+P. Mohan and S. Rao, Physical Review B 98 , 165406 (2018).  
+
+> 83
+
+S. A. A. Ghorashi and Q. Li, Physical Review Letters 135 , 236702 (2025).  
+
+> 84
+
+P.-H. Fu, S. Mondal, J.-F. Liu, Y. Tanaka, and J. Cayao, Physical Review Letters 136 , 066703 (2026).  
+
+> 85
+
+D. Liu, Z.-Y. Zhuang, D. Zhu, Z. Wu, and Z. Yan, Physical Review B 113 , L060409 (2026).  
+
+> 86
+
+T. Zhu, D. Zhou, H. Wang, S.-H. Wei, and J. Ruan, arXiv preprint arXiv:2508.02542 (2025).  
+
+> 87
+
+Y.-X. Li, R.-Q. Wang, M.-X. Deng, and H.-J. Duan, arXiv preprint arXiv:2601.09303 (2026).  
+
+> 88
+
+M. Ke, M. M. Asmar, and W.-K. Tse, Physical Review B 110 , 035307 (2024).  
+
+> 89
+
+S. Hayami and Y. Motome, Nature Communications 14 , 1 (2023).  
+
+> 90
+
+M. Yarmohammadi, M. Berritta, M. Bukov, L. ˇSmejkal, J. Linder, and P. M. Oppeneer, Physical Review B 113 , L060403 (2026).  
+
+> 91
+
+L. Tamang, S. Verma, and T. Biswas, Physical Review B 110 , 165426 (2024).  
+
+> 92
+
+L. Tamang and T. Biswas, Physical Review B 107 , 085408 (2023).  
+
+> 93
+
+J. P. G. Nascimento, S. M. Cunha, M. L. A. Paz, R. N. Costa Filho, J. M. Pereira, F. M. Peeters, and D. R. da Costa, Physical Review B 112 , 125410 (2025). 25  
+
+> 94
+
+D. L. Cortie, G. L. Causer, K. C. Rule, H. Fritzsche, W. Kreuzpaintner, and F. Klose, Advanced Functional Materials 30 ,1901414 (2020).  
+
+> 95
+
+I. ˇZuti´ c, J. Fabian, and S. D. Sarma, Reviews of modern physics 76 , 323 (2004).  
+
+> 96
+
+L. Bai, W. Feng, S. Liu, L. ˇSmejkal, Y. Mokrousov, and Y. Yao, Advanced Functional Materials 34 , 2409327 (2024).  
+
+> 97
+
+P.-H. Fu, Q. Lv, Y. Xu, J. Cayao, J.-F. Liu, and X.-L. Yu, npj Quantum Materials (2025).  
+
+> 98
+
+T. Jungwirth, X. Marti, P. Wadley, and J. Wunderlich, Nature nanotechnology 11 , 231 (2016).  
+
+> 99
+
+J. Krempask` y, L. ˇSmejkal, S. D’souza, M. Hajlaoui, G. Springholz, K. Uhl´ ıˇ rov´ a, F. Alarab, P. Constantinou, V. Strocov, D. Usanov, et al., Nature 626 , 517 (2024).  
+
+> 100
+
+S. Takahashi and S. Maekawa, Physical Review B 67 , 052409 (2003).  
+
+> 101
+
+H. J. Mamin, R. Budakian, B. W. Chui, and D. Rugar, Physical Review Letters 91 , 207604 (2003).

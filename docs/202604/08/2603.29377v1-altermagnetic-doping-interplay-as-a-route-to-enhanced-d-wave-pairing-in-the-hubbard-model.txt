@@ -1,0 +1,659 @@
+Title: Altermagnetic-doping interplay as a route to enhanced d-wave pairing in the Hubbard model
+
+URL Source: https://arxiv.org/pdf/2603.29377v1
+
+Published Time: Wed, 01 Apr 2026 00:39:58 GMT
+
+Number of Pages: 16
+
+Markdown Content:
+# Altermagnetic–doping interplay as a route to enhanced d-wave pairing in the Hubbard model 
+
+## Ji Liu 1,2,3* , Jianyu Li 4* , Peng Zhang 1,3 , Xiaosen Yang 2,Ho-Kin Tang 1,3 
+
+> 1
+
+School of Science, Harbin Institute of Technology, Shenzhen, 518055, China. 
+
+> 2
+
+Department of Physics, Jiangsu University, Zhenjiang, 212013, China. 
+
+> 3
+
+Shenzhen Key Laboratory of Advanced Functional Carbon Materials Research and Comprehensive Application, Shenzhen, 518055, China. 
+
+> 4
+
+Institute for Materials Research, Tohoku University, Sendai, 980-8577, Japan. Contributing authors: yangxs@ujs.edu.cn; denghaojian@hit.edu.cn; 
+
+Abstract 
+
+Altermagnets—collinear, zero–net-moment magnets with momentum-odd spin splitting protected by crystalline symmetries—offer a tunable route to sup-press long-range antiferromagnetism while preserving strong short-range spin fluctuations. We show that this environment robustly stabilizes unconventional superconductivity and naturally produces mixed-symmetry pairing. Through a strong-coupling analysis of a spin-anisotropic Hubbard model, we derive an anisotropic t–J model where exchange interactions cooperatively enhance sin-glet d-wave and promote triplet p-wave pairing. Our mean-field analysis reveals a pairing evolution driven by altermagnetic anisotropy: for small spin anisotropy, the d-wave channel is enhanced, closely resembling the dominant pairing sym-metry in cuprate superconductors, which suggests that weak spin anisotropies may be an essential ingredient in realistic models of these materials. Constrained-path quantum Monte Carlo simulations confirm this picture, showing a regime where dominant d-wave correlations coexist with an emergent p-wave compo-nent near optimal doping. As spin anisotropy increases, strong C2 anisotropy and spin splitting activate the triplet channel, leading to a stable d + p mixed-pairing state. This synergistic state exhibits significantly enhanced overall pairing strength, predicting a higher superconducting transition temperature. 
+
+1 
+
+> arXiv:2603.29377v1 [cond-mat.supr-con] 31 Mar 2026 Keywords: Hubbard model, altermagnet, unconventional superconductivity, triplet pairing
+
+Unconventional superconductivity emerging from strongly correlated, net-zero-magnetization backgrounds remains one of the central puzzles in condensed matter physics [1]. In cuprate and heavy-fermion systems, long-range antiferromagnetism is suppressed by doping, while short-range spin fluctuations persist and are believed to mediate d-wave pairing [2]. Since the discovery of cuprates with predominant dx2−y2
+
+pairing [3–5], the two-dimensional one-band Hubbard and t-J models have served as minimal frameworks to examine how strong local repulsion and magnetic fluctuations can generate effective pairing glue [6–9]. However, doping alone may not sufficiently account for unconventional superconductivity over broad ranges, motivating the identification of complementary ingredients that cooperate with doping. Notably, a striking spin anisotropy in cuprates foreshadows the concept of alter-magnetism, where multi-orbital studies have shown that oxygen moments in CuO 2
+
+planes can generate a d-wave-like spin pattern with momentum-dependent splitting yet zero net magnetization [10–13]. This phenomenon finds its formalization in altermag-netism, which has recently emerged as a distinct class of magnetism characterized by compensating collinear spin structures related to crystal rotational symmetries [14– 17]. Combining key features of ferromagnets and antiferromagnets, altermagnets exhibit momentum-dependent spin splitting while preserving symmetry-enforced zero net magnetization [10, 15, 18]. Intense theoretical and experimental efforts have led to the identification of several altermagnetic materials, including RuO 2 [19, 20], MnTe [21], Mn 5Si 3 [22], CrSb [23, 24], and KV 2Se 2O [25]. Depending on the underlying crystal symmetry, altermagnets realize distinct spin-splitting textures. These give rise to a spectrum of novel transport and optical phenomena, establishing altermagnetism as a versatile platform for exploring correlated and nonequilibrium spin physics. Recent theoretical works predict unconventional pairing phenomena in altermag-netic systems, including finite-momentum Cooper pairing [26], superconducting diode effect [27], and topological superconductivity induced by altermagnetic spin split-ting [28, 29]. However, the cooperative influence of altermagnetic hopping anisotropy 
+
+tA and doping n on the competition between magnetic order and pairing in the mean-field framework and beyond remains largely unexplored. In this work, we study a minimal Fermi-Hubbard Hamiltonian with spin-selective, anisotropic nearest-neighbor hopping parameterized by tA. Starting from half-filling ( n = 1), we vary doping 
+
+δ = |1 − n| to introduce mobile carriers and examine its interplay with tA.
+
+Unconventional pairing in t − J model with doping and anisotropy 
+
+We introduce a spin-dependent anisotropic hopping that physically motivated as an effective model representing materials where a high-energy magnetic order, such as antiferromagnetism, creates a complex, spin-dependent energy landscape for elec-trons [30, 31]. Because this magnetic energy scale is often orders of magnitude larger than that of superconductivity, its primary effect can be captured by an 2Fig. 1 Spin-anisotropic Hubbard model, mapping to the t–J model, and pairing anal-ysis. (a) Schematic of the Hubbard model with spin-anisotropic nearest-neighbor hopping t ± tA
+
+under on-site repulsion U . (b) In the strong-coupling limit, the system maps onto an anisotropic t–J
+
+Hamiltonian characterized by Jz and J⊥. (c–f) Representative Fermi surfaces at different fillings n
+
+and anisotropies tA, illustrating the reconstruction from a perfectly nested square to distorted and spin-split contours. (g) QMC evaluation of the total pairing strength ∆ tot in the ( n, t A) parameter space, showing a broad enhancement with increasing anisotropy. (h,i) Comparison of extended s-wave (blue) and d-wave (red) states within the t–J model. Although the nominal grand potential Ω min of the s-wave branch is slightly lower (h), its gap amplitude remains vanishingly small across the entire range (i), corresponding to a normal state. In contrast, the d-wave solution develops a robust finite gap whose onset filling decreases and magnitude grows with tA, establishing d-wave as the dominant superconducting instability stabilized by spin-anisotropic hopping in the altermagnetic background. 
+
+effective spin-dependent hopping parameter; therefore, we consider the square-lattice Fermi–Hubbard Hamiltonian with spin-dependent anisotropic hopping [32, 33], 
+
+H = −X
+
+> i,σ
+
+
+
+tˆx,σ c† 
+
+> i,σ
+
+ci+ˆ x,σ + tˆy,σ c† 
+
+> i,σ
+
+ci+ˆ y,σ + H.c. 
+
+
+
++ U X
+
+> i
+
+ni, ↑ni, ↓,
+
+where c† 
+
+> i,σ
+
+(ci,σ ) creates (annihilates) a fermion with spin σ =↑, ↓ at site i and ni,σ =
+
+c† 
+
+> i,σ
+
+ci,σ . A schematic illustration of the model on the 2D square lattice is shown in Fig. 1(a). The anisotropy is encoded by a single tunable parameter tA ∈ [0 , 1]: tˆy↓ =
+
+tˆx↑ = t − tA, tˆx↓ = tˆy↑ = t + tA. Because tl, ↑ + tl, ↓ = 2 t, the total bandwidth is conserved and the spin populations remain balanced with ⟨ni, ↑⟩ = ⟨ni, ↓⟩ = n/ 2. Thus 
+
+tA = 0 reproduces the isotropic Hubbard model, whereas tA = 1 corresponds to the extreme C2 limit in which each spin species hops strictly along one lattice axis. The anisotropy generates an altermagnetic spin splitting that is odd in momentum and averages to zero, ensuring zero net magnetization. 3In the strong coupling regime ( U ≫ t), we perform a Schrieffer–Wolff transforma-tion [34, 35] to integrate out doubly occupied states, yielding an effective anisotropic 
+
+t–J model [see Fig. 1(b)]: 
+
+Ht−J = − X
+
+> ⟨ij ⟩,σ
+
+tij,σ ˜c† 
+
+> iσ
+
+˜cjσ + X
+
+> ⟨ij ⟩
+
+
+
+J⊥S⊥ 
+
+> i
+
+· S⊥ 
+
+> j
+
++ Jz Szi Szj − Jz
+
+ninj
+
+4
+
+
+
+.
+
+with ˜ ciσ = ciσ (1 − ni¯σ ) the projected fermion operator, and anisotropic superexchange couplings J⊥ = 4( t2 − t2
+
+> A
+
+)/U and Jz = 4( t2 + t2
+
+> A
+
+)/U . Intuitively, the direction in which a given spin hops more easily produces stronger associated superexchange. This yields two effective couplings: a component that grows with tA and favors spin-singlet channels (extended-s and d-wave), and an anisotropic component that promotes spin-triplet p-wave tendencies. Upon doping, mobile carriers traverse this anisotropic spin background; because only C2 symmetry remains, a p-wave component is symmetry-allowed to admix with the leading d-wave state, producing mixed-symmetry pairing whose relative weights evolve with tA and carrier concentration. Within the t–J analysis, we benchmark the grand potential Ω min of the extended-s
+
+and d-wave solutions as a function of filling n and anisotropy tA. As shown in Fig.1(h), the d-wave branch consistently attains a lower Ω min across the entire density range, indicating a robust stabilization of d-wave pairing by the altermagnetic anisotropy. This enhancement is rooted in the emergent altermagnetic background. Figure 1(g) shows that the total momentum-domain spin polarization, ∆ tot , increases with tA for 
+
+U = 4, signifying a stronger spin splitting. This environment, visualized by the spin-split Fermi surfaces in Fig. 1(c-f), at the same time, the nesting condition is disrupted, resulting in destruction of antiferromagnetic instability at isotropic half filling as well as creating favorable conditions for superconducting fluctuations. Our prior work [32] demonstrated that altermagnetic spin splitting enhances d-wave pairing via a resonat-ing valence bond (RVB)-like mechanism at half-filling [36, 37], where Fermi-surface reconstruction suppresses antiferromagnetism and promotes short-range singlet and triplet correlations. Here, we extend this mechanism to the doped regime. Doping introduces mobile carriers that convert the short-range correlations into coherent mixed singlet and triplet pairs. Combined with altermagnetic anisotropy, the coopera-tive effect further enhances superconductivity beyond the half-filling. This generalizes the application of RVB-like mechanism to a richer prospects and broader regime, reinforcing the unconventional pairings in the altermagnetic system. As tA increases from 0 .1 to 0 .3, the d-wave gap ∆ d is significantly larger than the extended s-wave gap ∆ s, indicating that d-wave pairing stably dominates in this parameter range. However, when tA further increases to 0 .5, both ∆ d and ∆ s drop sharply and approach zero, reflecting strong suppression of both pairing channels under large tA, in which p-wave pairing plays the main role where we will discussed later. This non-monotonic behavior demonstrates that although d-wave pairing holds a clear advantage over extended s-wave at moderate tA, its amplitude does not increase con-tinuously with tA. In the presence of only C2 symmetry, doping-induced carriers may promote mixing between the spin-singlet d-wave and spin-triplet p-wave component, 4leading to mixed-symmetry pairing. The evolution of ∆ d and ∆ s with tA—first main-taining dominance and then being jointly suppressed—illustrates a general trend of overall superconducting instability in the system as it enters the high-tA regime. 
+
+Competing density waves restricting pairing enhanced regimes 
+
+Taken together, the t–J analysis shows that an altermagnetic background can stabilize and strengthen the d-wave superconducting solution by lowering its onset filling and deepening the minimum in the free-energy landscape Ω(∆ d, ∆p). Although spin den-sity wave (SDW) and charge density wave (CDW) channels are not treated explicitly at this level, the t–J results suggest that, in the full Hubbard model, d-wave supercon-ductivity should be optimized in the parameter regime where spin-anisotropy–induced altermagnetic correlations reduce the tendency toward density-wave ordering [38]. In the following, we test this expectation in the underlying Hubbard model using large-scale qauntum Monte Carlo (QMC) simulations, which quantify the evolution of d-wave pairing and SDW/CDW correlations on an equal footing. Specifically, we use constraint path QMC [39, 40], in which the constraint path approximation is implemented to mediate the sign problem. As shown in Fig. 2(a), the dx2−y2 channel exhibits a pronounced peak in the vertex pairing function N Vertex  
+
+> dx2−y2
+
+within the ( n, t A)parameter space. 
+
+N Vertex  
+
+> dx2−y2
+
+(k) = 1
+
+N
+
+X
+
+> i,j
+
+exp [ ik · (ri − rj )] CVertex  
+
+> dx2−y2
+
+(i, j ),
+
+where CVertex  
+
+> dx2−y2
+
+(i, j ) = P 
+
+> δζ,δ ′
+> ζ
+
+
+
+⟨∆† 
+
+> dx2−y2
+
+(i) ∆ dx2−y2 (j)⟩− ηdx2−y2 
+
+> δζ
+
+ηdx2−y2
+
+> δ′
+> ζ
+
+G↑ 
+
+> i,j
+
+G↓ 
+
+> i+δζ,j +δ′
+> ζ
+
+)with ∆ † 
+
+> dx2−y2
+
+(i) = c†
+
+> i↑
+
+(c† 
+
+> i+x↓
+
+−c† 
+
+> i+y↓
+
++c† 
+
+> i−x↓
+
+−c†
+
+> i−y↓
+
+) with δ(′) 
+
+> ζ
+
+denoting nearest-neighbor bonds. The distinct form factors ηζ of these pairing symmetries on the square lattice are illustrated in Fig. 2(c-f). The restricted regime of enhancement suggests that competing orders may sup-press the unconventional pairing, so we analyse the density-wave channels using QMC. The longitudinal spin structure factor NSz (k) = 1
+
+> N
+
+P 
+
+> i,j
+
+eik·(ri−rj )⟨Szi Szj ⟩,where 
+
+Szi = 12 (ni↑ − ni↓), is used to construct the spin structure factor measure NSDW =
+
+> 1
+> L2
+
+P 
+
+> k
+
+NSz (k),whose distribution in the ( n, t A) plane is shown in Fig. 2(g). NSDW is largest close to half filling and decreases when moving away from n ≃ 1, indicating that strong antiferromagnetic correlations are confined to the vicinity of half filling and are weakened along the dashed trajectory where the d-wave vertex is enhanced. Within an RVB picture, the suppression of long-range N´ eel order leaves robust short-range spin fluctuations that act as the glue for sign-changing pairing, naturally accounting for the growth of the d-wave vertex as NSDW is reduced. Charge order constitutes a second competitor. Its correlations are characterised by NCDW (k) = 1
+
+> N
+
+P 
+
+> i,j
+
+eik·(ri−rj )⟨ninj ⟩, and the charge structure factor NCDW =
+
+> 1
+> L2
+
+P 
+
+> k
+
+NCDW (k) is displayed in Fig. 2(h). Away from half filling, around n ≈ 0.88 where the d-wave vertex attains its maximum, NCDW shows a pronounced ridge at small tA, signalling enhanced CDW tendencies in this doping range. Along the dashed trajectory, increasing tA systematically suppresses NCDW , demonstrating that spin 5anisotropy weakens charge-order tendencies precisely in the density regime relevant for the d-wave peak. Phenomenologically, an enhanced NCDW corresponds to an incipient charge modulation that would reconstruct the Fermi surface and deplete low-energy carriers that could otherwise participate in d-wave pairing [41]. A moderate spin-anisotropic hopping tA therefore weakens both SDW near n ≈ 1 and CDW near n ≈
+
+0.88, preventing such depletion and allowing the d-wave vertex to reach its maximum. From the QMC result with medium range of U , we noted that the d-wave pairing becomes the dominant pairing channel in the regime of finite doping around n ≈ 0.85 and strong anisotropy tA = 0 .7 − 0.9 (See supplementary material Sec. S6). This is consistent with the t–J model analysis in the strong U limit, where the anisotropy lowers the onset doping for pairing and sustains a finite d-wave gap ∆ d.
+
+Fig. 2 Enhancement of d-wave pairing restricted by competing density-wave channels. 
+
+(a) Quantum Monte Carlo evaluation of the total vertex d-wave pairing function N Vertex  
+
+> dx2−y2
+
+in the (n, t A) parameter space, showing a pronounced maximum around n ≈ 0.88 and tA ≈ 0.6 (blue circle), with pairing strength increasing along the dashed trajectory. (b) Filling dependence of vertex functions for multiple pairing channels, demonstrating the dominance of dx2−y2 and p↑↓ over others. (c–f) Form factor ηζ of the dx2−y2 , dxy , p (px or py ) pairing symmetry. (g,h) the spin structure factor N local  
+
+> SDW
+
+and the charge structure factor N local  
+
+> CDW
+
+in the ( n, t A) space. (i–k) Momentum-resolved vertex function for the dx2−y2 -wave channel at the representative parameter points indicated by the blue markers. Together, these results establish that d-wave pairing is strongly enhanced in the region where both SDW and CDW tendencies are weakened, consistent with the RVB picture in which short-range spin fluctuations mediate superconductivity once density-wave instabilities are suppressed. 
+
+Prospective mixed p- and d-wave superconductor with finite doping and anisotropy 
+
+Within the t–J model, the mean-field free-energy landscapes Ω(∆ d, ∆p) shown in Fig. 3(a–f) reveal how anisotropy tA and filling n jointly reshape the competition between the d- and p-wave pairing channels. Figures 3(a–c), obtained at fixed filling 
+
+n = 0 .71 for tA = 0 .3, 0.4, 0.5, illustrate a clear evolution of the global minimum: at weak anisotropy the minimum corresponds to a pure d-wave state; at intermediate 6Fig. 3 Enhancement of p-wave pairing and emergence of d + p coexistence. (a–c) Free-energy landscape Ω(∆ d, ∆p) of the t–J model for representative anisotropies tA = 0 .3, 0.4, 0.5: the global minimum evolves from a pure d-wave state to a d + p mixed state (star symbol in panel b) and finally towards a regime dominated by the p-wave component. (d–f) Free-energy landscape Ω(∆ d, ∆p)of the t–J model for representative anisotropies n = 0 .4, 0.71 , 0.9: the global minimum evolves from a pure d-wave state to a d + p mixed state (star symbol in panel b) and finally towards a regime dominated by the p-wave component.(g) Quantum Monte Carlo results for the vertex pairing function             
+
+> NVertex
+> p↑↓ in the ( n, t A) parameter space, showing a pronounced enhancement around n≈0.85–0 .90 and tA≈0.45–0 .55. Taken together, QMC and t–Jmean-field results demonstrate that near optimal filling and intermediate anisotropy, p-wave pairing is strongly enhanced and cooperates with d-wave order, stabilizing a mixed-symmetry superconducting state.
+
+anisotropy [Fig. 3(b)] it shifts to a mixed d+p configuration (marked by the star symbol); and at stronger anisotropy it gradually moves toward a regime dominated by the p-wave component. This evolution originates from the symmetry reduction 
+
+C4 → C2, which weakens ( π, π ) nesting in the singlet sector, while the anisotropic hopping simultaneously produces momentum-dependent spin splitting that amplifies the triplet kernel. A complementary trend is found in Fig. 3(d–f), where the anisotropy is fixed at 
+
+tA = 0 .4 and the filling varies over n = 0 .40 , 0.71 , 0.90. At low filling, the free-energy minimum remains predominantly d-wave; near n = 0 .71, a stable mixed d+p minimum emerges; and at higher filling the landscape shifts toward p-wave dominance. In the 
+
+d+p coexistence region, the superconducting order parameter is intrinsically multi-component, and the relative phase between the singlet and triplet components acquires a finite stiffness enabled by the altermagnetic anisotropy. This generates a neutral Leggett mode—an out-of-phase oscillation between the two condensates— with a finite gap. The Leggett excitation provides a characteristic dynamical fingerprint of mixed-symmetry superconductivity and should appear as a low-energy resonance in Raman 
+
+A1g or THz phase spectroscopy [42–44]. Fig. 3(g) provides a complementary non-perturbative QMC perspective. The ver-tex pairing strength N Vertex  
+
+> p↑↓
+
+develops a pronounced ridge around tA ∼ 0.4–0.6 and 
+
+n ∼ 0.85–0 .90, indicating that moderate anisotropy and near-optimal filling substan-tially enhance the spin-triplet channel. Taken together with the mean-field landscapes, this shows that the d+p coexistence region is stabilized precisely where anisotropy-enhanced triplet pairing intersects with the singlet d-wave pairing, and where the Leggett mode is expected to be most robust [42, 45]. In the weak-anisotropy limit, our calculations show that the d-wave pairing chan-nel is significantly strengthened. The resulting gap structure closely resembles that of 7the cuprate superconductors, where a robust d-wave superconducting state emerges from strong electronic correlations. Notably, the fact that the d-wave response remains dominant even when a small altermagnetic anisotropy is present suggests that a realis-tic description of cuprates may also require accounting for weak spin anisotropies that are usually neglected in minimal models. The presence of a moderate spin anisotropy can act in synergy with the d-wave symmetry, leading to a further enhancement of superconductivity in doping regimes where it is already promoted. Beyond solid-state cuprates, the same spin-anisotropic mechanism can be implemented in optical-lattice setups via spin-dependent tunneling and engineered time-reversal-symmetry break-ing [46]. This approach, which isolates the role of time-reversal symmetry breaking inherent to altermagnetism, is further justified by its direct and tunable realization in modern cold-atom experiments [47–50]. As the spin-anisotropic hopping tA increases, the system gradually departs from the cuprate-like regime and enters a domain where the momentum-dependent spin splitting begin to activate the triplet pairing channels. Our self-consistent solutions show that beyond a critical anisotropy scale, the gap function develops a finite p-wave component coexisting with the dominant d-wave structure, forming a stable mixed d+p
+
+superconducting state. Importantly, the enhanced spin splitting associated with large 
+
+tA strengthens the overall pairing kernel, leading to a larger effective pairing amplitude than in the small-tA d-wave regime. This synergistic d+p state, with its reinforced pairing strength, may lead to an elevated superconducting transition temperature. Our results thus indicate that altermagnetic spin anisotropy provides a natural mechanism not only for generating triplet-enriched superconductivity but also for enhancing Tc
+
+in the intermediate to large tA regime, offering a new avenue for designing high-temperature superconductors [51]. 
+
+# Methods 
+
+## Mean-field approach in altermagnetic t − J model 
+
+In the strong-coupling limit ( U ≫ t), the spin-dependent anisotropic hopping leads to an effective anisotropic t–J model, expressed as 
+
+H = − X
+
+> i,σ,l =ˆ x, ˆy
+
+
+
+tl,σ C† 
+
+> i,σ
+
+Ci+l,σ + h.c. 
+
+
+
++ X
+
+> ⟨i,j ⟩
+
+(J⊥S⊥ 
+
+> i
+
+· S⊥ 
+
+> j
+
++ Jz SZi · SZj − JZ
+
+ninj
+
+4 ).
+
+Here, J⊥ = J − JA and Jz = J + JA with J = 4t2 
+
+> U
+
+and JA = 4t2 
+
+> A
+> U
+
+.In the mean field framework based on the slave boson method, the Hamiltonian can be written as: 
+
+Heff = X
+
+> kσ
+
+εkσ C† 
+
+> kσ
+
+Ckσ − Jz
+
+X
+
+> k
+
+
+
+C†
+
+> k↑
+
+C†−k↓∆η (k) + ∆ ∗ 
+
+> η
+
+(k)C−k↓Ck↑
+
+
+
+− 4JA
+
+X
+
+> k
+
+
+
+∆p(k)C†
+
+> k↑
+
+C†−k↓ + ∆ ∗
+
+> p
+
+(k)C−k↓Ck↑
+
+
+
++ Jz |∆η |2 + 8 JA|∆p|2.
+
+8Here, ϵk = −2t(cos kx + cos ky ) − μ describes kinetic energy, ϵA = −2tA(cos kx −
+
+cos ky ) encodes the altermagnetic splitting. We consider the extended s-wave (∆ s(k) = ∆s(cos kx + cos ky )), d-wave (∆ d(k) = ∆ d(cos kx − cos ky )) and p-wave (∆ p(k) = ∆p(sin kx + i sin ky )) pairing, with the pairing amplitude ∆ s/p/d .By introducing the Nambu spinor ψk = ( Ck↑, C k↓, C †−k↑, C †−k↓)T , the Hamiltonian can be written as: 
+
+Heff = 12
+
+X
+
+> k
+
+ψ†
+
+> k
+
+H(k) ψk + X
+
+> k
+
+ϵk + Jz N |∆η |2 + 8 JAN |∆p|2,
+
+where the Bogoliubov–de Gennes (BdG) Hamiltonian takes the specific form: 
+
+H(k) = ϵkτz + ϵAσz τz − Jz ∆η (k)σy τy + 8 JA∆p(sin kxσxτx − sin ky σxτy ).
+
+At zero temperature, the grand potential takes the form Ω = X
+
+> k
+
+ϵk − 12
+
+X
+
+> k
+
+ E+ 
+
+> k
+
++ E−
+
+> k
+
+ + Jz N |∆η |2 + 8 JAN |∆p|2,
+
+where E± 
+
+> k
+
+denote the quasiparticle excitation spectra of the BdG Hamiltonian. From the underlying t–J model, the exchange JZ grows with tA and favors spin-singlet channels ( d-wave or extended s-wave), while the anisotropic exchange JA drives spin-triplet p-wave pairing. 
+
+## Constraint path quantum Monte Carlo 
+
+The constraint path quantum Monte Carlo (CPQMC) method is a quantum Monte Carlo method implemented with a constraint path approximation [40], mediating the sign problem encountered in QMC studies [52]. In CPQMC, the ground state wave function ψ(n) is represented by a finite ensemble of Slater determinants, i.e., ψ(n) ∝
+
+P 
+
+> k
+
+ϕ(n)
+
+> k
+
+E
+
+, where k is the index of the Slater determinants, and n is the number of iteration. The overall normalization factor of the wave function has been omitted here. The propagation of the Slater determinants dominates the computational time, as follows 
+
+ϕ(n+1) 
+
+> k
+
+E
+
+←
+
+Z
+
+d⃗ xP (⃗x)B(⃗x) ϕ(n)
+
+> k
+
+E
+
+.
+
+where ⃗x is the auxiliary-field configuration, that we select according to the probability distribution function P (⃗x). The propagation includes the matrix multiplication of the propagator B(⃗x) and ϕ (n) 
+
+> k
+
+. After a series of equilibrium steps, the walkers are the Monte Carlo samples of the ground state wave function ϕ(0) and ground-state properties can be measured. The random walk formulation suffers from the sign problem due to the fundamental symmetry between the fermion ground state |Ψ0⟩ and its negative counterpart −| Ψ0⟩.Mathematically, this problem originates from the structure of the ground state wave function in Slater determinant space. We can define a nodal surface, N = {| ϕ⟩ | ⟨Ψ0|ϕ⟩ = 0 }, which partitions the entire Slater determinant space into two symmetric 9half-spaces, with the ground state wave function |Ψ0⟩ existing only in one of them. From the projection principle perspective, once a walker |ϕ⟩ lands on the nodal surface 
+
+N , i.e., ⟨Ψ0|ϕ⟩ = 0, its contribution to the ground state becomes exactly zero for all subsequent imaginary time evolution: 
+
+⟨Ψ0|ϕ⟩ = 0 ⇒ ⟨ Ψ0|e−τ H |ϕ⟩ = 0 , τ > 0.
+
+Therefore, in principle, restricting the random walk strictly to the “correct” half-space defined by N would yield the exact ground state while completely avoiding the sign problem. However, the true ground state |Ψ0⟩ and its nodal surface N are unknown, which constitutes the crux of the problem. The core idea of CPQMC is to approximate 
+
+|Ψ0⟩ using a known trial wave function |ΨT ⟩, thereby defining a trial nodal surface, 
+
+NT = {| ϕ⟩ | ⟨ ΨT |ϕ⟩ = 0 }. We use this trial nodal surface NT as an approximation to the true nodal surface N and enforce the constraint at each step of the random walk for all walkers |ϕ(n) 
+
+> k
+
+⟩:
+
+⟨ΨT |ϕ(n) 
+
+> k
+
+⟩ > 0.
+
+In practical Monte Carlo simulations, this constraint proves highly effective: after sampling the auxiliary field ⃗x according to ˆP (⃗x) and computing the propagated new walker |ϕ(n+1) ⟩ = B(⃗x)|ϕ (n)⟩, we immediately calculate its overlap with the trial wave function ⟨ΨT |ϕ(n+1) ⟩. If this value ≤ 0, the walker is considered to have crossed the trial nodal surface, and we consequently set its weight to zero and discard it. Only walkers satisfying the constraint condition are retained for the next generation of evolution. This yields an approximate solution to the ground-state wave function, 
+
+|ψc
+
+> 0
+
+⟩ = Σ ϕ|ϕ⟩. This approximation becomes exact if we have the ground state wave function as our trial wave function |ψT ⟩ = |ψ0⟩.The distribution of random walkers represents the ground-state wave function |ψc
+
+> 0
+
+⟩
+
+under the constrained path approximation. Various expectation values can then be computed from a population of these walkers and their weights. We use the effec-tive scheme of back propagation for the physical quantities estimation, including the pairing and structure factors, 
+
+⟨O⟩ BP = lim  
+
+> τ→∞
+
+⟨ψT exp ( −τ H c)| O | ψc
+
+> 0
+
+⟩⟨ψT exp ( −τ H c) | ψc
+
+> 0
+
+⟩ .
+
+The details of hyper-parameters in CPQMC calculations are given as follows. The number of walkers is 1000, the number of blocks for relaxation is 10, the number of blocks for growth estimate is 3, the number of blocks after relaxation is 10, the number of steps in each block is 640, the Trotter step size is 0.01, the growth-control energy estimate is -50. To ensure the stability of the data, we set the number of steps per block to 640 and the Trotter step size to 0.01. For the choice of trial wavefunction, we use the Hartree wavefucntion. We adopt a density-only mean-field decoupling and set the spin-flip averages to zero, 
+
+⟨S+ 
+
+> i
+
+⟩ = ⟨S− 
+
+> i
+
+⟩ = 0. The on-site Hubbard interaction then reduces to U P 
+
+> i
+
+ni↑ni↓ =10 U P
+
+> i
+
+(ni↑ ⟨ni↓⟩ + ni↓ ⟨ni↑⟩ − ⟨ ni↑⟩ ⟨ ni↓⟩). The resulting mean-field Hamiltonian sepa-rates into spin-resolved components: 
+
+HMF = − X
+
+> i,σ,l
+
+
+
+tl,σ c† 
+
+> i,σ
+
+ci+l,σ + h.c. 
+
+
+
++ U X
+
+> i,σ
+
+
+
+⟨ni, ¯σ ⟩ni,σ − 12 ⟨ni, ↑⟩⟨ ni, ↓⟩
+
+
+
+,
+
+where ¯ σ denotes the opposite spin of σ. The self-consistency condition requires that the input densities ⟨ni,σ ⟩in and the output densities ⟨ni,σ ⟩out calculated from the eigen states of HMF converge, typically satisfying max i |⟨ ni,σ ⟩out − ⟨ ni,σ ⟩in | < ϵ . The single-particle wavefunctions ϕσ,k (i) is obtained by diagonalizing HMF ,σ . The wavefunction determines the electron densities ⟨ni,σ ⟩ = PNσ 
+
+> k=1
+
+|ϕσ,k (i)|2, where Nσ is the number of electrons with spin σ. As an additional numerical check, CPQMC is benchmarked against exact diagonalization on a small cluster, where the dx2−y2 vertex pairing cor-relator is reproduced with high accuracy over a representative range of anisotropy tA
+
+(see Supplemental material Sec. S6). 
+
+# Declarations 
+
+Funding This work is supported by the Shenzhen Fundamental Research Program (Grant No. JCYJ20250604145655074), the National Natural Science Foundation of China (Grant No. 12204130), Shenzhen Key Laboratory of Advanced Func-tional Carbon Materials Research and Comprehensive Application (Grant No. ZDSYS20220527171407017), and Natural Science Foundation of Jiangsu Province (Grant No. BK20231320). 
+
+Competing interests The authors declare no competing interests. 
+
+Ethics approval Not applicable. 
+
+Consent to participate All authors agreed with the content. 
+
+Consent for publication All gave explicit consent to submit. 
+
+Availability of data and materials The data that support the plots in this paper and other findings of this study are available from the corresponding authors on reasonable request. 
+
+Code availability The code that supports the plots in this paper is available from the corresponding authors on reasonable request. 
+
+Authors’ contributions X.S.Y. and H.K.T. conceived and supervised the project. J.L., J.Y.L. and P.Z. performed the strong-coupling analysis and mean-field calcula-tions under the guidance of X.S.Y.. J.L. and J.Y.L. perform the simulation, analyze, and visualize the data under the guidance of H.K.T. The theoretical interpretation of the results carried out by X.S.Y. and H.K.T.. All authors contributed to the review and editing of the manuscript. 
+
+# References 
+
+[1] Scalapino, D. J. A common thread: The pairing interaction for unconventional superconductors. Reviews of modern physics 84 , 1383–1417 (2012). 11 [2] Anderson, P. W. The Resonating Valence Bond State in La 2CuO 4 and Superconductivity. Science 235 , 1196–1198 (1987). [3] Bednorz, J. G. & M¨ uller, K. A. Possible high Tc superconductivity in the Ba −La −Cu −O system. Z Physik B 64 , 189–193 (1986). URL https://doi.org/ 10.1007/BF01303701. [4] Tsuei, C. C. & Kirtley, J. R. Pairing symmetry in cuprate superconductors. 
+
+Rev. Mod. Phys. 72 , 969–1016 (2000). URL https://link.aps.org/doi/10.1103/ RevModPhys.72.969. [5] Van Harlingen, D. J. Phase-sensitive tests of the symmetry of the pairing state in the high-temperature superconductors—evidence for dx2−y2 symmetry. Rev. Mod. Phys. 67 , 515–535 (1995). URL https://link.aps.org/doi/10.1103/RevModPhys. 67.515. [6] Imada, M., Fujimori, A. & Tokura, Y. Metal-insulator transitions. Rev. Mod. Phys. 70 , 1039–1263 (1998). URL https://link.aps.org/doi/10.1103/ RevModPhys.70.1039. [7] Keimer, B., Kivelson, S. A., Norman, M. R., Uchida, S. & Zaanen, J. From quantum matter to high-temperature superconductivity in copper oxides. Nature 
+
+518 , 179–186 (2015). URL https://doi.org/10.1038/nature14165. [8] Jiang, S., Scalapino, D. J. & White, S. R. Ground-state phase diagram of the t-t’-J model. Proceedings of the National Academy of Sciences 118 , e2109978118 (2021). URL https://www.pnas.org/doi/abs/10.1073/pnas.2109978118. [9] Qin, M., Sch¨ afer, T., Andergassen, S., Corboz, P. & Gull, E. The hubbard model: A computational perspective. Annual Review of Condensed Matter Physics 13 ,275–302 (2022). URL https://www.annualreviews.org/content/journals/10.1146/ annurev-conmatphys-090921-033948. [10] ˇSmejkal, L., Sinova, J. & Jungwirth, T. Emerging research landscape of alter-magnetism. Phys. Rev. X 12 , 040501 (2022). URL https://link.aps.org/doi/10. 1103/PhysRevX.12.040501. [11] Song, C. et al. Altermagnets as a new class of functional materials. 
+
+Nature Reviews Materials 10 , 473–485 (2025). URL https://doi.org/10.1038/ s41578-025-00779-1. [12] ˇSmejkal, L., Gonz´ alez-Hern´ andez, R., Jungwirth, T. & Sinova, J. Crystal time-reversal symmetry breaking and spontaneous hall effect in collinear anti-ferromagnets. Science Advances 6, eaaz8809 (2020). URL https://www.science. org/doi/abs/10.1126/sciadv.aaz8809. 12 [13] Gotlieb, K. et al. Revealing hidden spin-momentum locking in a high-temperature cuprate superconductor. Science 362 , 1271–1275 (2018). URL https://www. science.org/doi/abs/10.1126/science.aao0980. [14] ˇSmejkal, L., Sinova, J. & Jungwirth, T. Beyond conventional ferromagnetism and antiferromagnetism: A phase with nonrelativistic spin and crystal rotation symmetry. Phys. Rev. X 12 , 031042 (2022). URL https://link.aps.org/doi/10. 1103/PhysRevX.12.031042. [15] Bai, L. et al. Altermagnetism: Exploring new frontiers in magnetism and spintronics. Advanced Functional Materials 34 , 2409327 (2024). URL https: //advanced.onlinelibrary.wiley.com/doi/abs/10.1002/adfm.202409327. [16] Rimmler, B. H., Pal, B. & Parkin, S. S. P. Non-collinear antiferromagnetic spin-tronics. Nature Reviews Materials 10 , 109–127 (2025). URL https://doi.org/10. 1038/s41578-024-00706-w. [17] Zhang, F. et al. Crystal-symmetry-paired spin–valley locking in a layered room-temperature metallic altermagnet candidate. Nature Physics 21 , 760–767 (2025). URL https://doi.org/10.1038/s41567-025-02864-2. [18] Sun, W. et al. Designing spin symmetry for altermagnetism with strong magne-toelectric coupling. Advanced Science 12 , e03235 (2025). URL https://advanced. onlinelibrary.wiley.com/doi/abs/10.1002/advs.202503235. [19] Zhu, Z. H. et al. Anomalous antiferromagnetism in metallic RuO 2 determined by resonant x-ray scattering. Phys. Rev. Lett. 122 , 017202 (2019). URL https: //link.aps.org/doi/10.1103/PhysRevLett.122.017202. [20] Fedchenko, O. et al. Observation of time-reversal symmetry breaking in the band structure of altermagnetic RuO 2. Science Advances 10 , eadj4883 (2024). URL https://www.science.org/doi/abs/10.1126/sciadv.adj4883. [21] Amin, O. J. et al. Nanoscale imaging and control of altermagnetism in MnTe. 
+
+Nature 636 , 348–353 (2024). URL https://doi.org/10.1038/s41586-024-08234-x. [22] S¨ urgers, C. et al. Anomalous nernst effect in the noncollinear antiferromagnet 
+
+M n 5Si 3. Communications Materials 5, 176 (2024). URL https://doi.org/10. 1038/s43246-024-00617-x. [23] Reimers, S. et al. Direct observation of altermagnetic band splitting in CrSb thin films. Nature Communications 15 , 2116 (2024). URL https://doi.org/10.1038/ s41467-024-46476-5. [24] Zhou, Z. et al. Manipulation of the altermagnetic order in CrSb via crys-tal symmetry. Nature 638 , 645–650 (2025). URL https://doi.org/10.1038/ s41586-024-08436-3. 13 [25] Jiang, B. et al. A metallic room-temperature d-wave altermagnet. Nature Physics 
+
+21 , 754–759 (2025). URL https://doi.org/10.1038/s41567-025-02822-y. [26] Zhang, S.-B., Hu, L.-H. & Neupert, T. Finite-momentum cooper pairing in proximitized altermagnets. Nature Communications 15 , 1801 (2024). URL https://doi.org/10.1038/s41467-024-45951-3. [27] Chakraborty, D. & Black-Schaffer, A. M. Perfect superconducting diode effect in altermagnets. Phys. Rev. Lett. 135 , 026001 (2025). URL https://link.aps.org/ doi/10.1103/cv8s-tk4c. [28] Ghorashi, S. A. A., Hughes, T. L. & Cano, J. Altermagnetic routes to majorana modes in zero net magnetization. Phys. Rev. Lett. 133 , 106601 (2024). URL https://link.aps.org/doi/10.1103/PhysRevLett.133.106601. [29] Wu, Y.-M., Wang, Y. & Fernandes, R. M. Intra-unit-cell singlet pairing mediated by altermagnetic fluctuations. Phys. Rev. Lett. 135 , 156001 (2025). URL https: //link.aps.org/doi/10.1103/dlpb-gfct. [30] Roig, M., Kreisel, A., Yu, Y., Andersen, B. M. & Agterberg, D. F. Minimal models for altermagnetism. Phys. Rev. B 110 , 144412 (2024). URL https://link. aps.org/doi/10.1103/PhysRevB.110.144412. [31] Chen, H., Niu, Q. & MacDonald, A. H. Anomalous hall effect arising from noncollinear antiferromagnetism. Phys. Rev. Lett. 112 , 017205 (2014). URL https://link.aps.org/doi/10.1103/PhysRevLett.112.017205. [32] Li, J., Liu, J., Yang, X. & Tang, H.-K. Enhancement of d-wave pairing in strongly correlated altermagnet. arXiv preprint arXiv:2505.12342 (2025). [33] Lee, P. A., Nagaosa, N. & Wen, X.-G. Doping a mott insulator: Physics of high-temperature superconductivity. Rev. Mod. Phys. 78 , 17–85 (2006). URL https://link.aps.org/doi/10.1103/RevModPhys.78.17. [34] Schrieffer, J. R. & Wolff, P. A. Relation between the anderson and kondo hamil-tonians. Phys. Rev. 149 , 491–492 (1966). URL https://link.aps.org/doi/10.1103/ PhysRev.149.491. [35] Bravyi, S., DiVincenzo, D. P. & Loss, D. Schrieffer–wolff transformation for quantum many-body systems. Annals of Physics 326 , 2793–2826 (2011). URL https://www.sciencedirect.com/science/article/pii/S0003491611001059. [36] Anderson, P. W. The resonating valence bond state in La 2CuO 4 and supercon-ductivity. Science 235 , 1196–1198 (1987). URL https://www.science.org/doi/ abs/10.1126/science.235.4793.1196. 14 [37] Baskaran, G., Zou, Z. & Anderson, P. The resonating valence bond state and high-Tc superconductivity — a mean field theory. Solid State Communications 
+
+63 , 973–976 (1987). URL https://www.sciencedirect.com/science/article/pii/ 0038109887906429. [38] Kim, H.-H. et al. Uniaxial pressure control of competing orders in a high-temperature superconductor. Science 362 , 1040–1044 (2018). URL https: //www.science.org/doi/abs/10.1126/science.aat4708. [39] Zhang, S., Carlson, J. & Gubernatis, J. E. Constrained path quantum monte carlo method for fermion ground states. Physical Review Letters 74 , 3652–3655 (1995). URL http://dx.doi.org/10.1103/PhysRevLett.74.3652. [40] Zhang, S., Carlson, J. & Gubernatis, J. E. Constrained path monte carlo method for fermion ground states. Phys. Rev. B 55 , 7464–7477 (1997). URL https: //link.aps.org/doi/10.1103/PhysRevB.55.7464. [41] Yu, F. H. et al. Unusual competition of superconductivity and charge-density-wave state in a compressed topological kagome metal. Nature Communications 
+
+12 , 3645 (2021). URL https://doi.org/10.1038/s41467-021-23928-w. [42] Cuozzo, J. J. et al. Leggett modes in a dirac semimetal. Nature Physics 20 ,1118–1123 (2024). URL https://doi.org/10.1038/s41567-024-02412-4. [43] Zhao, S. Z. et al. Observation of soft leggett mode in superconducting 
+
+CaKF e 4As 4. Phys. Rev. B 102 , 144519 (2020). URL https://link.aps.org/doi/ 10.1103/PhysRevB.102.144519. [44] Giorgianni, F. et al. Leggett mode controlled by light pulses. Nature Physics 15 ,341–346 (2019). URL https://doi.org/10.1038/s41567-018-0385-4. [45] Kamatani, T., Kitamura, S., Tsuji, N., Shimano, R. & Morimoto, T. Optical response of the leggett mode in multiband superconductors in the linear response regime. Phys. Rev. B 105 , 094520 (2022). URL https://link.aps.org/doi/10. 1103/PhysRevB.105.094520. [46] Hart, R. A. et al. Observation of antiferromagnetic correlations in the hubbard model with ultracold atoms. Nature 519 , 211–214 (2015). URL https://doi.org/ 10.1038/nature14223. [47] Aidelsburger, M. et al. Realization of the hofstadter hamiltonian with ultracold atoms in optical lattices. Phys. Rev. Lett. 111 , 185301 (2013). URL https: //link.aps.org/doi/10.1103/PhysRevLett.111.185301. [48] Serwane, F. et al. Deterministic preparation of a tunable few-fermion system. 
+
+Science 332 , 336–338 (2011). URL https://www.science.org/doi/abs/10.1126/ science.1201351. 15 [49] Jau, Y.-Y., Hankin, A. M., Keating, T., Deutsch, I. H. & Biedermann, G. W. Entangling atomic spins with a rydberg-dressed spin-flip blockade. Nature Physics 
+
+12 , 71–74 (2016). URL https://doi.org/10.1038/nphys3487. [50] Zeiher, J. et al. Many-body interferometry of a rydberg-dressed spin lattice. 
+
+Nature Physics 12 , 1095–1099 (2016). URL https://doi.org/10.1038/nphys3835. [51] Xu, C. et al. Altermagnetic ground state in distorted kagome metal CsCr 3Sb 5.
+
+Nature Communications 16 , 3114 (2025). URL https://doi.org/10.1038/ s41467-025-58446-6. [52] LeBlanc, J. P. F. et al. Solutions of the two-dimensional hubbard model: Bench-marks and results from a wide range of numerical algorithms. Phys. Rev. X 5,041041 (2015). URL https://link.aps.org/doi/10.1103/PhysRevX.5.041041. 16

@@ -1,0 +1,1978 @@
+Title: 2603.29172v1.pdf
+
+URL Source: https://arxiv.org/pdf/2603.29172v1
+
+Published Time: Wed, 01 Apr 2026 00:24:09 GMT
+
+Number of Pages: 31
+
+Markdown Content:
+1
+
+# Three -Band Anderson Lattice Model Reveals Co -Evolution of 
+
+# Topological and Magnetic Phases Driven by Electron Correlation 
+
+Zhong -Yi Wang 1, Ya -Min Quan 2, Yu -Xuan Sun 1, Liang -Jian Zou 2,3, *, Xiang -Long Yu 1, *
+
+Z. -Y.  Wang , Y. -X. S un , X. -L. Y u
+
+> 1
+
+School of Science, Sun Yat -sen University, Shenzhen 518107, China. 
+
+*E -mail:  yuxlong6@mail.sysu.edu.cn 
+
+Y. -M. Q uan , L. -J. Z ou 
+
+> 2
+
+Key Laboratory of Materials Physics, Institute of Solid  State Physics, HFIPS, Chinese 
+
+Academy of Sciences, PO Box 1129, Hefei 230031 , People’s Republic of China ;
+
+> 3
+
+Science Island Branch of Graduate School, University of Science and Technology of 
+
+China, Hefei 230026, People’s Republic of China .
+
+*E -mail:  zou@theory.issp.ac.cn 
+
+# Abstract 
+
+Understanding the interplay of band topology, strong electron correlation, and magnetic 
+
+order is the fundamental core bottleneck for realizing robust high -temperature quantum 
+
+anomalous Hall effect (QAHE). Conventional two -band Anderson models are limited 
+
+to paramagnetic Kondo topological insulators, failing to capture coupled topological -
+
+magnetic phase evolution relevant to the QAHE benchmark MnBi₂Te₄ family.  We 
+
+develop a minimal three -band Anderson lattice model incorporating Hubbard 
+
+interaction, s -d excha nge coupling, and a BHZ -like topological mechanism. Using the 
+
+Kotliar -Ruckenstein slave -boson approach, we map  correlation -driven phase 
+
+transitions at filling  ν=2:  increasing U drives a trivial -to -Kondo topological insulator 
+
+transition, then activates the third band to mediate a paramagnetic topological insulator -
+
+to -ferromagnetic metal transition. The accompanying  band reconstruction —fully spin -
+
+polarized  d-orbitals sinking below the Fermi level, leaving itinerant  p-orbitals to 
+
+dominate low -energy physics —qu alitatively matches published first -principles results 
+
+for MnBi₂Te₄.  In the strong -correlation regime, exchange coupling J stabilizes a Chern -
+
+Kondo insulator (C=1) and Weyl nodal -line semimetal. Critically, we reveal full d -
+
+orbital spin polarization renders the topological gap immune to correlation -induced 
+
+narrowing, resolv ing the long -standing strong correlation -large gap incompatibility. 2
+
+Our results show excellent qualitative alignment with recent state -of -the -art QAHE 
+
+experiments, providing a unified framework for correlated magnetic topological 
+
+materials and new pathways to high -temperature QAHE. 
+
+# Keywords ：
+
+Magnetic topological insulators , Anderson lattice model , Strongly correlated systems ,
+
+s-d exchange model , Chern -Kondo insulator , Quantum anomalous Hall effect ,
+
+MnBi₂Te₄ 
+
+# I. INTRODUCTION 
+
+Magnetic topological insulators  [1-2], as a frontier system in condensed matter 
+
+physics, are fundamentally characterized by the coupling between magnetic spin 
+
+confgurations and topology of electronic wavefunctions, which gives rise to a rich 
+
+variety of topological quantum states.  On one hand, the broken time -reversal symmetry 
+
+by magnetic order provides the foundation for realizing novel topological states. These 
+
+include the quantum anomalous Hall effect (QAHE) with its dissipationless chiral edge 
+
+states  [3-5], axion insulators exhibiting a topological magnetoelectric effect  [6-10 ], and 
+
+potential Majorana fermions in proximity to superconductors  [4,11 ]. On the other hand, 
+
+the presence of magnetic order opens avenues for the dynamic control of topological 
+
+states  [12 -18 ]; for instance, altering the magnetic configuration via an external 
+
+magnetic field can drive phase transitions between distinct topological phases like the 
+
+axion insulator and the quantum anomalous Hall state  [13 ,14 ]. These tunable 
+
+topological quantum phenomena hold significant promise for applications in 
+
+dissipationless  electronics and topological quantum  computation  [4,19 ].
+
+Despite numerous theoretical predictions, intrinsic magnetic topological insulator 
+
+materials with ideal properties remain scarce. The emergence of MnBi ₂Te ₄ with a 
+
+tetradymite -type  structure has provided an ideal material platform for this field  [12] . As 
+
+the first confirmed intrinsically magnetic and topologically non -trivial two -dimensional 
+
+van der Waals material  [21 ,22 ], MnBi ₂Te ₄ offers a core advantage over earlier 
+
+magnetically doped (Bi,Sb) ₂Te ₃ thin films, which realized the  QAHE  only at extreme ly 
+
+low temperatures (~30 mK)  [5] . It circumvents the issues of compositional 
+
+inhomogeneity and magnetic disorder associated with doping, leading to superior 
+
+sample quality and a larger exchange gap  [20] . Consequently, the observation 
+
+temperature for topological quantum effects has been significantly elevated to the liquid 3
+
+helium range and beyond (1 K to several tens of K)  [9,22 ,23 ]. More importantly, this 
+
+system exhibits multidimensional tunability: the layer -number parity modulates its 
+
+electronic ground state —odd -layer films tend to exhibit the  QAHE , while even -layer 
+
+ones favor the axion insulator state  [13 ,22 ,24 ]; an external magnetic field can drive the 
+
+bulk phase from an A -type antiferromagnetic topological insulator to a ferromagnetic 
+
+Weyl semimetal  [10 ,12 ,14 ]; and its chemical composition is richly variable, forming an 
+
+extensive MB ₂T₄ (M = Mn or other transition/rare -earth metals, B = Bi/Sb, T = Te/Se/S) 
+
+material family [12 ,25 -28 ]. Furthermore, by modifying the stacking periodicity and 
+
+stoichiometry, a series of related materials such as Mn ₂Bi ₂Te ₅ [29] , MnBi ₈Te ₁₃  [30] ,
+
+MnBi ₆Te ₁₀  [31] , and MnBi ₄Te ₇ [32]  can be derived. These properties collectively 
+
+establish the MnBi ₂Te ₄ family as an ideal platform for realizing and thoroughly 
+
+investigating various topological quantum states. 
+
+However, a core challenge persists: the observation temperature for most 
+
+topological quantum effects remains far below the liquid nitrogen temperature, severely 
+
+hindering practical applications. The discovery of  more  magnetic  topological materials 
+
+with high characteristic temperatures is thus imperative. Yet, the  interplay  of magnetism 
+
+and topology makes their theoretical prediction more difficult than for non -magnetic 
+
+systems. At the level of computational materials science, the presence of strong 
+
+correlat ion effects poses challenges for first -principles methods based on the single -
+
+electron approximation to accurately predict their electronic  structures  [33] .
+
+Additionally, the introduction of magnetic degrees of freedom, combined with the 
+
+crystal space group, results in a vast number of magnetic space groups  [17] . While this 
+
+enhances the diversity of magnetic topological states, it also increases the complexity 
+
+of research. In terms of theoretical modeling  , descriptions of nontrivial band topology 
+
+using the Kane -Mele, Haldane, or  Bernevig -Hughes -Zhang  (BHZ ) models  [34 -38 ],
+
+when augmented with Hubbard interactions, have largely focused on the half -filling 
+
+scenario. These studies primarily address the phase transition from a topological 
+
+insulator at small U to a trivial Mott insulator at large U  [34 ,35 ]. Systematic 
+
+investigations into how magnetism specifically regulates topological properties, as well 
+
+as the physical picture under conditions deviating from half -filling, are still lacking [37] .
+
+Therefore, this study aims to explore the  universal regulatory mechanisms  of 
+
+strong correlation effects and their resulting magnetism on the band structure of 
+
+topological materials.  To this end, drawing inspiration from the key [Te –Mn –Te] 
+
+trilayer Hamiltonian in MnBi₂Te₄  [39] , which is identified as a core carrier of both 4
+
+topology and magnetism, we adopt and develop a minimal three -band low -energy 
+
+effective model.  It captures the essential features  of the low -energy electronic structure 
+
+and the crystalline symmetry (point group D 3d ) of such materials, while abstracting 
+
+away their complex details to reveal physics that transcends any specific compound. 
+
+The core of the model lies in its integration of a topological origin mechanism 
+
+analogous to that in the BHZ model  [40 ,41 ], the Hubbard interaction (U) describing 
+
+electron correlations, and the s -d exchange coupling (J).  Consequently, it couples the 
+
+three core degrees of freedom —topology, correlation, and magnetism —within a 
+
+unified framework.  We employ this model to systemati cally study their interplay, 
+
+focusing on the electronic fillings  ν = 1 and  ν = 2.
+
+The remainder of this paper is organized as follows. In  Sec. II , we detail the 
+
+construction of this model. The theoretical framework is based on the  periodic 
+
+Anderson model  [42] , and strong correlation effects are treated using the  Kotliar -
+
+Ruckenstein slave -boson mean -field approach  [43 ,44 ]. Sec. III  presents the main 
+
+results. We first systematically analyze how the correlation strength U drives magnetic 
+
+phase transitions and topological evolution under both paramagnetic and ferromagnetic 
+
+conditions for systems at fillings  ν = 2  and  ν = 1,  respectively.  Notably, in contrast to 
+
+previous two -band correlated models  [45 -47 ], the three -band structure of our study 
+
+reveals that the involvement of the third band plays a crucial role in driving the 
+
+transition to a ferromagnetic metallic phase under strong correlation, building upon a 
+
+correlation -induced  Kondo topological insulator  phase  [48] . Subsequently, we focus on 
+
+the  strong correlation limit (large U),  elucidating the decisive role of the exchange 
+
+coupling J in regulating the topological bands and  revealing its key mechanism in 
+
+inducing topological states such as the Chern -Kondo insulator  [49]  (whose unique 
+
+prospect for a large gap will be discussed in detail).  Finally,  Sec. IV  summarizes the 
+
+principal findings of this work. We emphasize the discussion on  magnetic regulation by 
+
+correlations (e.g., enhanced ferromagnetic stability), the systematic evolution of the 
+
+band structure under correlation, and the distinctive properties of the Chern -Kondo 
+
+insulator phase.  The section concludes with an outlook on future research directions for 
+
+exploring the  QAHE  at high characteristic temperatures in correlated materials. 
+
+# II.  EFFECTIVE MODEL AND MEAN -FIELD APPROACH 
+
+To investigate the regulatory mechanism of electron correlations in magnetic 
+
+topological materials, this work constructs a minimal low -energy effective model 5
+
+designed to simultaneously describe both the magnetic and topological properties of the 
+
+system.  The model is inspired by the low -energy electronic structure revealed in first -
+
+principles (DFT) calculations for monolayer MnBi₂Te₄ performed without correlation 
+
+(U = 0).  Specifically, the DFT -computed density of states (Fig. 1 (a) ) indicates a 
+
+dominant Mn -3d orbital character around the energy zero (corresponding to the Fermi 
+
+level  EF), while the states at positive energies just above  EF are primarily derived fro m
+
+Bi/Te -p orbitals.  In contrast, previous DFT studies  [12]  have shown that  with the 
+
+inclusion of an  electron  interaction (U  = 4 eV), the  d-orbitals undergo significant 
+
+splitting, provide the dominant magnetic moment, and shift away from the  EF,
+
+consequently yielding a low -energy region dominated by  p-orbitals. To capture the 
+
+essential low -energy physics of such materials while preserving the lattice symmetry 
+
+of MnBi₂Te₄, we focus on the  [Te –Mn –Te] trilayer  (Fig . 1(b)), identified in Ref. [39]  as 
+
+the key structural unit governing both magnetism and topology. This structure features 
+
+a tripled triangular lattice stacking, where the lattice sites of each layer are located at 
+
+the centers of the adjacent layers, thereby maintaining the same point gr oup symmetry 
+
+(D 3d ) as the parent material.  To construct the minimal model, we extract the essential 
+
+low -energy degrees of freedom from this unit. At the Mn site in the middle layer, the 
+
+local magnetic moment and correlation effects are described by introducing a single 
+
+effective  d orbital. At each of the upper and lower layer sites —formally corresponding 
+
+to the Te positions —a single effective  “p” orbital is introduced, physically interpreted 
+
+as a composite degree of freedom representing the Bi/Te -p orbitals,  which constitute 
+
+the low -energy conductio n states as suggested by the DOS . This design condenses the 
+
+complex band structure of the actual material into a minimal three -band model, which 
+
+facilitates the clarification of the universal physical principles underlying the interplay 
+
+between magnetism and topology. 
+
+The specific selection of the orbital basis follows the Wannier Hamiltonian 
+
+construction scheme for the  [Te -Mn -Te ] system described in the existing  Ref.  [39] , but 
+
+assigns a new physical interpretation to the Te sites: 
+
+“Mn ” d-orbital basis : Under the influence of the  triangular crystal field (point 
+
+group  D3d ) and  spin -orbit coupling (SOC), the originally five -fold degenerate 3 d
+
+orbitals of the  Mn²⁺ (3 d⁵ ) ion split. To construct the low -energy effective model, we 
+
+neglect other energy states far from the Fermi level and select only the Kramers doublet 
+
+closest to it, namely the states with total angular momentum quantum number  j =
+
+5/2  and projection  𝑚 j = ±5/2, denoted as  |
+
+d5/2,  ±5/2 ⟩. This state can be explicitly 6
+
+expressed as a direct product of an orbital state with orbital angular momentum 
+
+projection  𝑙 z = ±2  (corresponding to the  |dx2 -y2  ± idxy ⟩ orbital) and a spin state with 
+
+projection  𝑠 z = ±1/2, effectively describing the local magnetism and correlation effects 
+
+at the Mn site. 
+
+“Te ” p-orbital basis:  For the atoms in the upper and lower layers, the  p-orbitals 
+
+split under the triangular crystal field (point group C 3v ) and SOC into three Kramers 
+
+doublets. To simplify the model, we select one of these doublets, specifically the state 
+
+with  j = 3/2,  𝑚 j = ±3/2, denoted as  |p3/2,  ±3/2 ⟩, as our basis. This state corresponds to the 
+
+direct product state of an orbital with angular momentum projection  𝑙 z = ±1  (the  |px ±
+
+ipy⟩ orbital) and spin projection  𝑠 z = ±1/2. Here,  "Te " should be understood as 
+
+representing the composite  p-orbital contribution from Bi/Te atoms, describing the 
+
+conduction bands above the Fermi level in the DFT results, differing in physical 
+
+connotation from the original  Ref.  [39] .
+
+(a)  (b)      
+
+> Fig. 1. Electronic structure at U=0 and the core [Te -Mn -Te] structural unit of monolayer
+> MnBi₂Te₄. (a)Projected density of states (DOS) from DFT calculations (U=0), showing the orbital
+> contributions of different elements. The energy zero corresponds to the Fermi level. (b) Schematic
+> of the [Te -Mn -Te] sandwich structure: Mn atoms (solid circles) form a triangular lattice in the
+> middle layer; Te atoms (triangle vertices) are located above and below, also forming triangular
+> lattices. The red open circles mark the projections of the upper -layer Te atoms onto the middle Mn
+> plane, while the yellow ones represent those from the lower layer.
+
+Based on the above basis selection, the tight -binding Hamiltonian  𝐻 ̂𝑇𝐵 (𝑘 ) for a 
+
+single electron  of the system can be constructed from the following  spin orbitals  states: 
+
+the  |d5/2,±5/2 ⟩ states at the  “Mn ” site, and the  |1,  p3/2,±3/2 ⟩ and  |2, p3/2,±3/2 ⟩ states at the 
+
+upper and lower  “Te ” sites, respectively. The matrix elements of the Hamiltonian are 
+
+determined by six real parameters and their corresponding momentum -dependent 
+
+functions:  𝜀 𝑝  and  𝜀 𝑑  denote the on -site energies of the  d and  p orbitals, 7
+
+respectively;  𝑡 𝑑  and  𝑡 𝑝  describe the nearest -neighbor hopping between  d-d and  p-p
+
+orbitals within the same atomic layer;  𝑡 𝑝𝑑  characterizes the  p-d orbital hybridization 
+
+hopping between adjacent  “Mn ” and "Te" layers; and  𝑡 𝑝𝑝  describes the  p-p orbital 
+
+hopping between the two  “Te ” layers. Since the spin -orbit coupling effect is implicitly 
+
+included in the construction of the basis states  [41] , the Hamiltonian is block -diagonal 
+
+in spin space and can be written as: 
+
+𝐻 ̂𝑇𝐵 (𝑘 ) = (𝐻 ̂+(𝑘 ) 0
+
+0 𝐻 ̂−(𝑘 )), (1) 
+
+here  𝐻 ̂±(𝒌 ) correspond to the spin -up  (+)  and spin -down  (－) subspaces, respectively. 
+
+To satisfy time -reversal symmetry,  𝐻 ̂−(𝒌 ) = 𝐻 ̂+ 
+
+> ∗
+
+(−𝒌 ). The matrix form of  𝐻 ̂±(𝒌 ) is: 
+
+𝑯 ̂±(𝑘 ) |1,  p3/2,  ±3/2 ⟩ |d 5/2,  ±5/2⟩ |2,  p3/2,  ±3/2 ⟩
+
+⟨1,  p3/2,  ±3/2 | 𝜀 𝑝  − 𝑡 𝑝 𝐺 (𝒌 ) −𝑡 𝑝𝑑 𝐹 ±1∗(𝒌 ) −𝑡 𝑝𝑝 𝐹 0(𝒌 )
+
+⟨d5/2,  ±5/2| −𝑡 𝑝𝑑 𝐹 ±1(𝒌 ) 𝜀 𝑑  + 𝑡 𝑑 𝐺 (𝒌 ) 𝑡 𝑝𝑑 𝐹 ∓1∗(𝒌 )
+
+⟨2,  p3/2 , ±3/2 | 𝑡 𝑝𝑝 𝐹 0∗(𝒌 ) 𝑡 𝑝𝑑 𝐹 ∓1(𝒌 ) 𝜀 𝑝  − 𝑡 𝑝 𝐺 (𝒌 )
+
+(2) 
+
+Here,  𝐺 (𝒌 ) and  𝐹 0,±1(𝒌 ) are geometric phase factors that depend on the lattice 
+
+structure. Their explicit forms are: 
+
+𝐺 (𝒌 ) = 2[cos (𝑎𝑘 𝑥 ) + cos (𝑎 𝑘 𝑥 /2 + √3𝑎𝑘 𝑦 /2) + cos (𝑎 𝑘 𝑥 /2 − √3𝑎𝑘 𝑦 /2)]
+
+𝐹 n(𝒌 ) = 𝑒 −𝑖 𝒌 ∙𝝉 𝑎  + 𝒆 𝑖 2𝜋𝑛  
+
+> 3
+
+𝑒 −𝑖 𝒌 ∙𝝉 𝑏  + 𝒆 −𝑖 2𝜋𝑛  
+
+> 3
+
+𝑒 −𝑖 𝒌 ∙𝝉 𝑐  , 𝑛  = 0, ±1 (3) 
+
+where  𝝉 𝑎  = (0, √3/3)𝑎  , 𝝉 𝑏  = (1/2, −√3/6)𝑎  , and  𝝉 𝑐  = (−1/2, −√3/6)𝑎  are the 
+
+position vectors (with  𝑎  being the lattice constant of the triangular lattice) of the three 
+
+equivalent nearest -neighbor “Te” atoms in the first layer relative to the  “Mn ” atom at 
+
+the origin. 
+
+It is crucial to emphasize that the key ingredient for generating nontrivial 
+
+topological band structure in this model originates from the  interlayer  p-d orbital 
+
+hybridization term  𝐹 ±1(𝐤 ) [39] . Constrained by the threefold rotational symmetry ( 𝐶 3)
+
+of the system along the z -axis, the hopping integrals between orbitals with different 
+
+angular momentum quantum numbers exhibit directional dependence. Taking the 
+
+hopping between Mn and a “Te” atom in the spin -up channel as an example, the hopping 
+
+integra ls along the three nearest -neighbor directions satisfy: 
+
+𝑡 𝑝𝑑  = 𝑡 𝑝𝑑 (𝝉 𝑎 ) = 𝑒 −𝑖 2𝜋 /3𝑡 𝑝𝑑 (𝝉 𝑏 ) = 𝑒 −𝑖 4𝜋 /3𝑡 𝑝𝑑 (𝝉 𝑐 ) (4) 
+
+This relation introduces additional direction -dependent phase 8
+
+factors  𝑒 ±𝑖 2𝜋 /3 into  𝐹 ±1(𝐤 ) . Consequently, the  p-d hybridization exhibits distinct 
+
+momentum -space dependencies in the spin -up and spin -down subsystems. This 
+
+mechanism is essential for inducing the nontrivial topological band structure and is 
+
+analogous to the origin of topology in the BHZ model  [39 -41 ]. In contrast, the  intralayer 
+
+hopping  described by  𝐺 (𝒌 ) and the  direct hopping between the two  “Te” 
+
+layers  via  𝐹 0(𝒌 ) occur between orbitals with the same angular momentum projection 
+
+and thus lack such directional -dependent phase characteristics. 
+
+After constructing the tight -binding model,  we can formulate the system's 
+
+Hamiltonian in second quantization.  We define the momentum -space creation 
+
+(annihilation) operators:  𝐶 1𝒌 𝜎  
+
+> †
+
+(𝐶 1𝒌 𝜎 ) and  𝐶 2𝒌 𝜎  
+
+> †
+
+(𝐶 2𝒌 𝜎 ) for the upper and lower  “Te ”
+
+sites, respectively, and  𝑑 𝒌 𝜎  
+
+> †
+
+(𝑑 𝒌 𝜎 ) for the  “Mn ” site, where  𝜎  = ± denotes the spin. 
+
+The  non -interacting Hamiltonian  is then given by: 
+
+𝐻 0 = ∑ 𝜓 ̂ 𝑘𝜎  
+
+> +
+
+[𝐻 ̂𝜎 (𝒌 ) − 𝜇 𝐼 ̂ ]𝜓 ̂ 𝑘𝜎 𝑘𝜎  (5) 
+
+where  𝜇  is the chemical potential,  𝐼 ̂ is the identity matrix, and  𝜓 ̂𝑘𝜎  
+
+> †
+
+=
+
+(𝐶 1𝑘𝜎  
+
+> †
+
+, 𝑑 𝑘𝜎  
+
+> †
+
+, 𝐶 2𝑘𝜎  
+
+> †
+
+). To incorporate electron correlation effects, an on -site density -density 
+
+interaction is introduced on the  d-orbitals: 
+
+𝐻 𝑈  = 𝑈 /2 ∑ ∑ 𝑑 𝑖𝜎  
+
+> †
+
+𝑑 𝑖𝜎 𝑑 𝑖 𝜎 ̅ 
+
+> †
+
+𝑑 𝑖 𝜎 ̅𝜎 =±𝑖  (6) 
+
+Here,  𝑖  is the lattice site index in real space. This model is essentially a  periodic 
+
+Anderson model (PAM) , containing localized  d electrons, conduction  p electrons, and 
+
+the hybridization between them. To effectively describe the coupling between the 
+
+strongly localized  d electrons with large magnetic moments (in the large -U limit) and 
+
+the spins of the conduction  p electrons, we additionally introduce an s -d-type exchange 
+
+interaction term  [50] :
+
+𝐻 𝑠 −𝑑  = − 𝐽  
+
+> 𝑁
+
+∑ ∑ ∑ ∑ 𝑒 𝑖 (𝒌 ′−𝒌 )∙(𝒊 +𝛿 𝜆 ) 
+
+> 𝜎 ,𝜎 ′𝑘 ,𝑘 ′𝑖 ,𝛿 𝜆
+> 2
+> 𝜆 =1
+
+𝑺 ̂ 𝑖  ∙ 𝝉 ̂𝜎 𝜎 ′ 𝐶 𝜆𝑘𝜎  
+
+> †
+
+𝐶 𝜆 𝑘 ′𝜎 ′ (7) 
+
+Here,  𝐽  is the exchange coupling constant;  𝜹 1 and  𝜹 2 denote the vectors to the three 
+
+nearest -neighbor  p-orbital lattice points from the magnetic moment at site  𝑖  on the 
+
+upper and lower layers, respectively;  𝑺 ̂ 𝑖  = 1 
+
+> 2
+
+∑ 𝑑 𝑖𝜎 
+
+> †
+> 𝜎 ,𝜎 ′
+
+𝝉 ̂𝜎 𝜎 ′ 𝑑 𝑖 𝜎 ′ is the local spin 
+
+operator; and  𝝉 ̂ is the vector of Pauli matrices. 
+
+It is important to note that this term is not a standard component of the PAM but 
+
+rather an effective interaction derived in the Kondo limit via the  Schrieffer -Wolff 
+
+transformation  [51 ,52 ]. Its purpose is to more accurately capture the coupling physics 
+
+between the localized magnetic moments (resulting from strongly localized  d-electrons 9
+
+in the large -U limit) and the conduction electron spins. Therefore, this term is 
+
+considered only when the system is in the large -U limit and exhibits substantial local 
+
+moments. 
+
+To simplify the analysis and focus on the core physics, in this study we consider 
+
+the following scenario: the magnetization of the  d-orbitals is aligned along the z -
+
+direction, and we assume the scattering of conduction electrons by the local magnetic 
+
+moments is an  elastic process that conserves momentum  (i.e.,  𝐤 ′ = 𝐤 ). Under these 
+
+conditions, the  𝐻 𝑠 −𝑑  term simplifies to an effective magnetic field acting on the 
+
+conduction p electrons from the  d-orbital magnetic moment: 
+
+𝐻 𝑠 −𝑑  = − 3𝐽  
+
+> 𝑁
+
+∑ ∑ ∑ ∑ 𝜎  
+
+> 2𝜎 =±𝑘 𝑖
+> 2
+> 𝜆 =1
+
+(𝑑 𝑖 + 
+
+> †
+
+𝑑 𝑖 + − 𝑑 𝑖 − 
+
+> †
+
+𝑑 𝑖 −)𝐶 𝜆𝑘𝜎  
+
+> †
+
+𝐶 𝜆 𝑘 𝜎  (8) 
+
+The total Hamiltonian of the system is: 
+
+𝐻  = 𝐻 0 + 𝐻 𝑈  + 𝐻 𝑠 −𝑑  (9) 
+
+To treat the strong correlation effects, we employ the  Kotliar –Ruckenstein (K –R) slave -
+
+boson mean -field approach  [42 -44 ], rewriting the d -electron operator as: 
+
+𝑑 𝑖𝜎  → 𝑓 𝑖𝜎 𝑧 𝑖𝜎  (10) 
+
+where  𝑧 𝑖𝜎  is a bosonic projection operator: 
+
+𝑧 𝑖𝜎  = 𝑒 𝑖      
+
+> †𝑝 𝑖𝜎 +𝑝 𝑖 𝜎 ̅
+> †𝑏 𝑖
+> √(1−𝑏 𝑖
+> †𝑏 𝑖 −𝑝 𝑖𝜎
+> †𝑝 𝑖𝜎 )(1−𝑒 𝑖
+> †𝑒 𝑖 −𝑝 𝑖 𝜎 ̅
+> †𝑝 𝑖 𝜎 ̅)
+
+(11) 
+
+The bosonic operators — 𝑒 𝑖  
+
+> †
+
+(empty),  𝑝 𝑖𝜎  
+
+> †
+
+(single occupation with spin  𝜎  ), 
+
+and  𝑏 𝑖  
+
+> †
+
+(double occupation) —satisfy the constraint conditions: 
+
+𝑒 𝑖 
+
+> †
+
+𝑒 𝑖  + ∑ 𝑝 𝑖𝜎  
+
+> †
+
+𝑝 𝑖𝜎 𝜎  + 𝑏 𝑖 
+
+> †
+
+𝑏 𝑖  = 1; 𝑝 𝑖𝜎  
+
+> †
+
+𝑝 𝑖𝜎  + 𝑏 𝑖 
+
+> †
+
+𝑏 𝑖  = 𝑓 𝑖𝜎  
+
+> †
+
+𝑓 𝑖𝜎 . (12) 
+
+Consequently, the d -operator products in the interaction terms are replaced as:  
+
+> 1
+> 2
+
+∑ 𝑑 𝑖𝜎 
+
+> †
+> 𝜎 =±
+
+𝑑 𝑖𝜎 𝑑 𝑖 𝜎 ˉ 
+
+> †
+
+𝑑 𝑖 𝜎 ˉ → 𝑏 𝑖 
+
+> †
+
+𝑏 𝑖 ; 𝑑 𝑖 + 
+
+> †
+
+𝑑 𝑖 + − 𝑑 𝑖 − 
+
+> †
+
+𝑑 𝑖 − → 𝑝 𝑖 + 
+
+> †
+
+𝑝 𝑖 + − 𝑝 𝑖 − 
+
+> †
+
+𝑝 𝑖 −. (13) 
+
+Applying the saddle -point approximation to the bosonic fields, we assume their 
+
+expectation values are uniform (independent of lattice site  𝑖 ) and replace the bosonic 
+
+operators with static mean values  𝑒 , 𝑏 , 𝑝 𝜎 . Lagrange multipliers  𝜆 𝜎  and  𝜆 ′, along with 
+
+the particle filling  𝜈 , are introduced to enforce the constraints. This yields the mean -
+
+field Hamiltonian: 
+
+𝐻 𝑀𝐹  = 𝐻 𝐵𝑜𝑠𝑒  + 𝐻 𝐹𝑒𝑟𝑚𝑖  (14) 
+
+where 
+
+𝐻 𝐵𝑜𝑠𝑒  = 𝑁𝑈 𝑏 2 + 𝑁 𝜇 𝜈  − 𝑁  ∑ 𝜆 𝜎 𝜎  (𝑝 𝜎 2 + 𝑏 2) + 𝑁 𝜆 ′(𝑒 2 + ∑ 𝑝 𝜎 2 
+
+> 𝜎
+
++ 𝑏 2 − 1) ，
+
+𝐻 𝐹𝑒𝑟𝑚𝑖  = ∑ 𝜑 ̂𝑘𝜎  
+
+> †
+
+[𝐻 ̂𝜎 (𝑘 , 𝑧 𝜎 , 𝜆 𝜎 ) − 𝜇 𝐼 ̂ ]𝜑 ̂ 𝑘𝜎 𝑘𝜎 =± . (15) 10 
+
+Here,  𝜑 ̂ 𝒌 𝜎  
+
+> †
+
+= (𝐶 1𝒌 𝜎  
+
+> †
+
+, 𝑓 𝒌 𝜎  
+
+> †
+
+, 𝐶 2𝒌 𝜎  
+
+> †
+
+), and the renormalized Bloch Hamiltonian matrix is: 
+
+𝐻 ̂𝜎 (𝑘 , 𝑧 𝜎 , 𝜆 𝜎 )
+
+= (
+
+𝜀 𝑝  − 𝑡 𝑝 𝐺 (𝒌 ) − 3𝐽  < 𝑆 𝑧  > 𝜎  −𝑡 𝑝𝑑 𝑧 ̅𝜎 𝐹 𝜎 ∗(𝒌 ) −𝑡 𝑝𝑝 𝐹 0(𝒌 )
+
+−𝑡 𝑝𝑑 𝑧 ̅𝜎 𝐹 𝜎 (𝒌 ) 𝜀 𝑑  + 𝑡 𝑑 𝑧 ̅𝜎 2𝐺 (𝒌 ) + 𝜆 𝜎  𝑡 𝑝𝑑 𝑧 ̅𝜎 𝐹 𝜎 ̅ ∗(𝒌 )
+
+𝑡 𝑝𝑝 𝐹 0∗(𝒌 ) 𝑡 𝑝𝑑 𝑧 ̅𝜎 𝐹 𝜎 ̅ (𝒌 ) 𝜀 𝑝  − 𝑡 𝑝 𝐺 (𝒌 ) − 3𝐽  < 𝑆 𝑧  > 𝜎 
+
+)
+
+(16) 
+
+In the above expression,  ⟨𝑆 ̂𝑖 𝑧 ⟩ = 1 
+
+> 2
+
+(𝑝 + 
+
+> 2
+
+− 𝑝 − 
+
+> 2
+
+) represents the  average local magnetic 
+
+moment on the  d-orbital, and  𝑧 ˉ𝜎  = (𝑒 2 + 𝑝 𝜎 ˉ
+
+> 2
+
+)−1/2(𝑒 𝑝 𝜎  + 𝑝 𝜎 ˉ 𝑏 )(𝑏 2 + 𝑝 𝜎 
+
+> 2
+
+)−1/2 is 
+
+the  band renormalization factor . Here, the notation  𝐹 ±(𝒌 ) is a shorthand for the 
+
+geometric factor  𝐹 ±1(𝒌 ) introduced earlier, and the Lagrange 
+
+multiplier  𝜆 𝜎  characterizes the effective energy shift of the  d-orbital.  Finally, the 
+
+ground state and electronic structure of the system are determined by solving the self -
+
+consistent equations obtained from  ⟨∂𝐻 MF / ∂𝜃 ⟩ = 0, where  𝜃  = {𝑒 , 𝑝 𝜎 , 𝑏 , 𝜆 𝜎 , 𝜆 ′, 𝜇 }.
+
+Simultaneously, to align with the low -energy picture revealed by DFT, we 
+
+predefine the on -site energy of the  d-orbital,  𝜀 𝑑  , to be lower than that of the  p-
+
+orbital,  𝜀 𝑝  , i.e., we set a positive energy difference  𝜀 𝑔  = 𝜀 𝑝  − 𝜀 𝑑  > 0 . This setting 
+
+aims to qualitatively reflect the characteristics of materials like MnBi₂Te₄ in the non -
+
+correlated (U=0) scenario: the bands dominated by Mn -3d orbitals reside near the Fermi 
+
+level ( 𝐸 𝐹 ), while the conduction bands immediately above  𝐸 𝐹  are contributed by Bi/Te -
+
+p orbitals. 
+
+Secondly, the filling factor  𝜈  in our model is defined as the total number of 
+
+electrons occupying the aforementioned low -energy effective orbital basis. DFT 
+
+calculation results indicate that the Fermi level of the system lies within the Mn -3d
+
+dominated bands. Therefore, we focus on the filling scenarios of  𝜈  = 1 and  𝜈  = 2.
+
+These two cases correspond to electronic occupation states near the Fermi surface being 
+
+primarily contributed by  d-orbitals, making them an ideal regime for investigating how 
+
+correlation effects (U) regulate the magnetism in this region and its interplay with the 
+
+topology of the neighboring  p-orbital bands. In particular, considering that the Mn²⁺ ion 
+
+(3 d⁵  electron configuration) in MnBi₂Te₄ is in a half -filled state, the  𝜈  = 1 filling 
+
+scenario qualitatively simulates the low -energy electronic structure of MnBi₂Te₄ in its 
+
+intrinsic condition. 
+
+Furthermore, this study primarily focuses on the correlated topological effects 
+
+under paramagnetic and out -of -plane ferromagnetic orders. This choice is based on the 
+
+material foundation of the model: it is a low -energy abstraction of monolayer MnBi₂Te₄ 11 
+
+and its homologous materials. In such materials, the intra -layer magnetic ions are 
+
+connected via ligands (e.g., Te) with bond angles close to 90° (e.g., the Mn -Te -Mn bond 
+
+angle is approximately 86°)  [13] . According to the  Goodenough -Kanamori rules , the 
+
+superexchange  interaction at this bond angle intrinsically favors intra -layer 
+
+ferromagnetic coupling  [12] . This has also been validated in two -dimensional 
+
+ferromagnets with similar structures, such as CrI₃ and Cr₂Ge₂Te₆  [53 ,54 ]. Therefore, 
+
+setting ferromagnetic order as the magnetic background for the model is justified. 
+
+Finally, since there is no coupling between the upper and lower spin subspaces of 
+
+the system, when judging the band topology in the paramagnetic phase, we can still 
+
+directly analyze it through changes in the  spin  Chern number  for each subspace  [55] ,
+
+without relying on the  𝑍 2 topological invariant. 
+
+Based on the aforementioned model framework and parameter settings, we 
+
+proceed to discuss the calculation results. 
+
+# III. RESULTS AND DISCUSSION 
+
+In this work, by tuning the on -site energy difference between the  p and  d orbitals 
+
+(𝜀 𝑔  = 𝜀 𝑝  − 𝜀 𝑑  ), we systematically investigate the influence of electron correlation 
+
+strength U on the system's states. The values of the hopping integral parameters are 
+
+partially referenced from data reported for the  [Te –Mn –Te ] system (Ref.  [39] ) and are 
+
+set as:  𝑡 𝑑  = 0.15 ，𝑡 𝑝  = 0.25 ，𝑡 𝑝𝑑  = 0.1，and  𝑡 𝑝𝑝  = 0.2, all in units of eV. 
+
+Fig. 2 illustrates the influence of the  p-d orbital energy level difference  𝜀 𝑔  on the 
+
+band structure in the absence of electronic correlation (U = 0).  When  𝜀 𝑔  = 3.3 eV, the 
+
+system behaves as a  trivial insulator . As  𝜀 𝑔  decreases, the bands corresponding to the 
+
+d and  p orbitals begin to overlap, with the  p-d hybridization opening a band gap 
+
+accompanied by band inversion. Calculations of the spin Chern number confirm that 
+
+the system enters a  topological insulator phase  with a Chern number of 1 at  𝜀 𝑔  = 2.3 
+
+eV.  Continuing to reduce  𝜀 𝑔  to 0.7 eV,  the  p-orbital band which originally resided at a 
+
+higher energy level (i.e., the highest -energy band among the three)  begins to cross the 
+
+Fermi level, placing the system near the critical point of a metal -insulator transition. 
+
+Finally, at  𝜀 𝑔  = 0.3 eV, the system becomes fully metallic. Building on this, we further 
+
+examine the effects of electron correlation U and the s -d exchange interaction J on the 
+
+system under both paramagnetic (PM) and ferromagnetic (FM) states for different  𝜀 𝑔 
+
+values. 12 
+
+Fig . 2. Band structures under different on -site energy differences  𝜀 𝑔  at U = 0 (filling factor  ν
+
+= 2).  The red and blue portions of the bands indicate dominance by  d-orbital and  p-orbital 
+
+components, respectively. Decreasing  𝜀 𝑔  values correspond to an increasing overlap between the 
+
+p and d orbitals, leading the system to successively exhibit a trivial insulator, a topological insulator, 
+
+a critical insulator -metal state, and a metallic state. 
+
+A. Correlation  effects at J = 0 (pure periodic Anderson model) and filling  ν = 2 
+
+(a)  (b) 
+
+(c)  (d) 13                            
+
+> Fig. 3. Ground -state energy, magnetism, and electronic phases of the system at filling ν= 2
+> tuned by the electron correlation strength U. (a) Energy difference between the PM and FM states,
+> ΔE = E PM –EFM , as a function of U for different 𝜀 𝑔 . (b) Corresponding evolution of the d-orbital
+> magnetic moment with U. (c) U -𝜀 𝑔 phase diagram of the system. The red, orange, and green areas
+> represent the metallic phase, topological insulator phase, and trivial insulator phase, respectively.
+> The square -dotted line and the star -dotted line indicate the critical values U c(PM -FM phase
+> boundary) and U p(FM -FSP phase boundary), respectively. (d) ΔE as a function of 𝜀 𝑔 for different
+> values of U, derived from the data in (a). In (c) and (d), the blue arrows on the horizontal axes mark
+> two characteristic points at U = 0: 𝜀 𝑔 = 0.7 eV (metal -insulator crossover) and 𝜀 𝑔 = 3.08 eV
+> (topological critical point).
+
+Figs. 3(a) and 3(b) show the evolution of the system energy difference  (ΔE = E PM 
+
+－ EFM ) and the  d-orbital magnetic moment with U for different  𝜀 𝑔 . As seen in Fig. 
+
+3(a), regardless of the initial metallic or insulating phase, the energy of the PM state 
+
+eventually becomes higher than that of the FM state with increasing U, signifying the 
+
+system's entry into the  FM  phase. This corresponds to the emergence of a finite 
+
+magnetic moment at a critical value U c in Fig. 3(b). The magnetic moment then 
+
+increases monotonically with further increase in U. When U increases to another critical 
+
+value U p, an inflection point appears in the energy curve, accompanied by a jump in the 
+
+magnetic moment to saturation, indicating a phase transition from  a partially spin -
+
+polarized  FM  state  to a  fully spin -polarized (FSP) state . The saturated magnetic 
+
+moment decreases with decreasing  𝜀 𝑔  (i.e., enhanced  d-p orbital overlap), with a 
+
+particularly pronounced reduction in the region where  𝜀 𝑔  < 1.7 eV (corresponding to 
+
+states closer to metallic at U  = 0). This can be attributed to the transfer of  d-orbital 
+
+electrons to the  p-orbitals. 
+
+Based on these results, we construct the U -𝜀 𝑔  phase diagram of the system (Fig. 
+
+3c). It can be seen that as  𝜀 𝑔  decreases ( d-p orbital overlap strengthens), the critical 
+
+value U c for the PM -FM transition gradually decreases. Meanwhile, the critical value 
+
+Up for the FM -FSP transition exhibits non -monotonic behavior with varying  𝜀 𝑔 : in the 
+
+range  𝜀 𝑔  > 1.7 eV (corresponding to the insulating region at U  = 0), U p decreases with 
+
+decreasing  𝜀 𝑔 ; whereas in the range  𝜀 𝑔  < 1.7 eV (near the metallic region at U  = 0), 
+
+Up increases with decreasing  𝜀 𝑔 . When  𝜀 𝑔  is further reduced below 0.7 eV (metallic 
+
+region at U  = 0), the U p value exceeds the computational range of this study (0  – 10 
+
+eV). 
+
+Further analysis of the spectral evolution under correlation effects (representative 14 
+
+results are shown in Appendix Fig. S1  and S2 ) indicates that for systems with  𝜀 𝑔  > 0.7 
+
+eV (insulating region at U  = 0), the  originally unoccupied, highest -energy third band 
+
+begins to cross the Fermi level with increasing U , thereby driving the system into a 
+
+metallic phase.  Notably, the band structures near the PM -FM transition points are 
+
+precisely located within the critical region of the insulator -metal transition. 
+
+Consequently, the PM -FM phase boundary in Fig. 3 (c) essentially coincides with the 
+
+insulator -metal boundary. In particular, for systems with  𝜀 𝑔  > 3.08 eV (trivial insulator 
+
+at U  = 0), band inversion occurs with increasing U (Fig. S 2), transforming the system 
+
+from an initial trivial insulator into a topological insulator. This transition originates 
+
+from the correlation -induced shift of the  d-orbital energy levels, which enhances the  d-
+
+p band overlap, constituting a behavior akin to that of a  topological Kondo insulator 
+
+[45 ,46 ]. However, at larger  𝑈  values, the involvement of the third band disrupts  this 
+
+PM  topological Kondo  insulator phase, causing it to give way to a  FM  metal. 
+
+To investigate the stability of the  FM  phase, we systematically analyzed the 
+
+variation of  ΔE with  𝜀 𝑔  for different U values (Fig. 3 (d)).  Here, the terms "insulating 
+
+region" and "metallic region" specifically refer to the nature of the bands as determined 
+
+by  𝜀 𝑔  under the condition of  U = 0 . Under weaker correlation conditions (U < 3 eV), 
+
+ΔE increases monotonically with decreasing  𝜀 𝑔 . Under stronger correlation conditions 
+
+(U ≥ 4 eV),  ΔE still increases with decreasing  𝜀 𝑔  in the insulating region ( 𝜀 𝑔  ≈ 4.3 ~ 
+
+2 eV), turns to decrease in the region approaching metallicity ( 𝜀 𝑔  ≈ 2 ~ 1 eV), and rises 
+
+again near and upon entering the metallic region ( 𝜀 𝑔  < 1 eV). 
+
+B. C orrelation effects at J = 0 (pure periodic Anderson model) and filling  ν = 1 
+
+(a)  (b) 
+
+(c)  (d) 15 
+
+Fig. 4. Ground -state energy, magnetism, and electronic phases of the system at filling  ν = 1 
+
+tuned by the electron correlation strength U.  (a) Energy difference between the paramagnetic 
+
+(PM) and ferromagnetic (FM) states,  ΔE = E PM  – EFM , as a function of U for different  𝜀 𝑔  . (b) 
+
+Corresponding evolution of the  d-orbital magnetic moment with U. (c) U -𝜀 𝑔  phase diagram of the 
+
+system. The red and green areas represent the metallic and insulating phases, respectively. The 
+
+stippled line indicates the phase boundary from the PM to the FSP phase, with the critical value 
+
+denoted as U p. (d)  ΔE as a function of  𝜀 𝑔  for different values of U. In (c) and (d), the blue arrows 
+
+on the horizontal axes mark two characteristic points of the bands at U = 0:  𝜀 𝑔  = 0.7 eV (metal -
+
+insulator crossover) and  𝜀 𝑔  = 3.08 eV (topological critical point). 
+
+Figures 4(a) and 4(b) show the evolution of the system energy and the  d-orbital 
+
+magnetic moment with the correlation strength U for different  𝜀 𝑔 . Similar to the case 
+
+of  ν = 2,  as U increases, the energy of the PM state eventually surpasses that of the FM 
+
+state, marking the system's entry into the  FM  phase. However, there is a significant 
+
+difference in the evolution of the magnetic moment: as shown in Fig. 4(b), upon 
+
+entering the FM phase, the magnetic moment jumps directly from zero to its saturation 
+
+value, indicating that only a single phase transit ion from PM to a FSP state occurs here. 
+
+The saturated magnetic moment value also decreases with decreasing  𝜀 𝑔 , and due to 
+
+the lower filling, this decreasing trend is more rapid and pronounced; the moment 
+
+nearly vanishes as  𝜀 𝑔  approaches zero. 
+
+Based on these results, we construct the corresponding U -𝜀 𝑔  phase diagram (Fig. 
+
+4(c)). It can be seen that, akin to the  ν =2  case, the critical value U p for the PM -FSP 
+
+transition exhibits non -monotonic behavior with decreasing  𝜀 𝑔 : in the range  𝜀 𝑔  = 4.3 
+
+~ 0.7 eV, U p decreases with decreasing  𝜀 𝑔 ; when  𝜀 𝑔  < 0.7 eV, U p instead increases 
+
+with decreasing  𝜀 𝑔 . A comparison with the results for  ν = 2 ( Fig. 3 (c)) further reveals 
+
+that the U value required for the system to reach magnetic saturation is generally 
+
+smaller for  ν = 1. 16 
+
+Further analysis of the spectral evolution under correlation effects (see Appendix 
+
+Fig. S 3 and S4 ) indicates that due to  ν = 1  and the charge transfer induced by  p-d band 
+
+overlap and hybridization, the system exhibits a metallic state over the vast majority of 
+
+the parameter space. However, for systems in the  p-d orbital non -overlap region at U = 
+
+0 ( 𝜀 𝑔 > 3.08 eV), a metal -insulator transition occurs upon the FM transition under strong 
+
+correlation (large U). This is because double occupancy is completely suppressed and 
+
+spin polarization leads to the complete filling of the lower spin subband. That is, wit hin 
+
+this specific region, the FM transition is accompanied by a Mott insulator transition. 
+
+To investigate the stability of the  FM  phase, we systematically analyze the 
+
+variation of the PM -FM energy difference  ΔE with  𝜀 𝑔  for different U (Fig. 4d). 
+
+Overall,  ΔE increases with decreasing  𝜀 𝑔  in the range  𝜀 𝑔  = 4.3 ~ 1.7 eV, reaching a 
+
+peak near  𝜀 𝑔  ≈ 1.7 eV, which is similar to the  ν = 2  case. The key distinction is that 
+
+subsequently, within the range  𝜀 𝑔  = 1.7 ~ 0.0 eV,  ΔE continuously decreases and 
+
+approaches zero.  This is primarily due to the combined effects of the lower filling factor 
+
+and the significant electron transfer resulting from p -d band overlap.  Furthermore, as U 
+
+decreases below 2.5 eV, this peak shifts toward smaller  𝜀 𝑔 .
+
+From the above results, particularly the spectral evolution with U shown in 
+
+Appendix Fig. S1 -S4, it can be seen that the dominant role of electron correlation U has 
+
+a dual nature.  First,  under general conditions, U reduces the transition probability 
+
+involving the  d-orbitals, leading to  orbital narrowing of the  d states and a weakening of 
+
+the  p-d hybridization strength,  thereby compressing the band gap —this is the common 
+
+correlation effect observed in  PM  Kondo insulators  [46] . Second , in the strong 
+
+correlation limit  (U = 10 eV) , the situation undergoes a fundamental change.  When 
+
+double occupancy is completely suppressed ( 𝑏  → 0 ) and the system achieves spin 
+
+polarization ( 𝑝 − → 0), the renormalization factor for the occupied spin subband (+) 
+
+satisfies: 
+
+𝑧 ˉ+ = (𝑒 2 + 𝑝 − 
+
+> 2
+
+)−1/2(𝑒 𝑝 + + 𝑝 −𝑏 )(𝑏 2 + 𝑝 + 
+
+> 2
+
+)−1/2 → 1. (17) 
+
+This limiting behavior is crucial, as it implies that the effective transition strength in 
+
+this spin channel is no longer suppressed by U . The underlying reason is that, with the 
+
+absence of opposite -spin electrons on the  d-orbitals, the Hubbard repulsion —which 
+
+normally hinders electron transitions by penalizing double occupancy —becomes 
+
+irrelevant for the intra -spin -channel processes. Consequently, the band narrowing 
+
+typically induced by correlations is circumvented.  This provides the microscopic 
+
+foundation for understanding the potentially large band gap that may be sustained in 17 
+
+the Chern -Kondo insulator discussed later.  Finally , throughout this process, the 
+
+influence of  U remains  primarily confined to the energy level position and spin splitting 
+
+of the  d-orbitals, while its direct effect on the  p-orbitals is weak —only exerting a 
+
+limited perturbation through hybridization in the overlap region.  Consequently, U alone 
+
+is insufficient for achieving direct and effective control over the topological bands of 
+
+the  p-orbitals. 
+
+It is noteworthy that in the strong correlation limit (U = 10 eV), the system 
+
+consistently exhibits complete spin polarization of the  d-orbitals accompanied by the 
+
+formation of a large local magnetic moment. From the perspective of band structure, 
+
+since double occupancy is essentially fully suppressed, the energy level of the occupied 
+
+d-orbital shifts significantly downward compared to its pre -polarization position 
+
+(approaching the  𝜀 𝑑  value at U = 0), while a drastic splitting occurs between the spin 
+
+subbands. Particularly for the  ν = 2  case, after the spin subband splitting, electrons 
+
+transfer from the  d-orbitals to the  p-orbitals, causing the dominant orbital character near 
+
+the Fermi level to shift from  d to  p, while the  d-orbital level sinks to a position far from 
+
+the Fermi level. This series of transformations indicates that in the large -U limit, the 
+
+system meets the Kondo limit conditions of the Anderson model  — namely, the 
+
+existence of a stable, large local moment and a Fermi level far removed from the  d-
+
+orbital energy level —thus  entering the physical regime described by the Kondo lattice 
+
+model. Therefore, to explore substantive control of magnetism over the topological 
+
+bands of  p-orbitals, we will further introduce the s -d exchange interaction (i.e., the 
+
+exchange coupling between local  d-electron moments and itinerant  p-electrons) on the 
+
+basis of the aforementioned large -U limit (U = 10 eV) and investigate the case of J  ≠
+
+0. 
+
+C. Effects of the  exchange interaction J in the strong correlation limit  (U = 10 eV) 
+
+(a) 18 
+
+(b ) (c)                    
+
+> Fig. 5. Topological phase diagram and magnetic field response of the system at filling ν= 1 in
+> the strong correlation limit (U = 10 eV).
+> (a) Topological phase diagram in the J -𝜀 𝑔 parameter space. The background magnetic order is the
+> FSP state. The red, green, orange, and purple regions correspond to the metallic phase, Mott
+> insulator phase, Chern -Kondo insulator phase, and Weyl nodal -line semimetal phase, respectively.
+> (b), (c) Magnetic field modulation of the topological band gap: shown are the changes in the band
+> gap, defined as ΔGap(H) = Gap(H) –Gap(0) , as a function of the transverse ( Hx) and longitudinal
+> (Hz) magnetic fields for (b) the Chern -Kondo insulator phase (J = 0.1 eV) and (c) the Weyl nodal -
+> line semimetal phase (J = –0.1 eV), respectively. The calculati ons are performed for 𝜀 𝑔 = 3. 3eV.
+
+First, it should be clarified that in our model,  J > 0  corresponds to  ferromagnetic 
+
+exchange coupling  between the local  d-electron moments and the itinerant  p-electrons, 
+
+while  J < 0  represents  antiferromagnetic exchange coupling. 
+
+For the system with  ν = 2 , as shown by the representative spectra in Appendix Fig. 
+
+S5, the Fermi level vicinity is primarily dominated by  p-orbitals and the system is 
+
+metallic in the strong correlation limit. Here, introducing a finite J is equivalent to 
+
+applying an effective exchange field to the  p-orbitals, whose main effect is to induce a 
+
+Zeeman splitting in these orbitals, while exerting  negligible influence on the topology 
+
+near the Fermi level. Although changes in band topology can be observed in deep 
+
+energy levels far from the Fermi energy, their contribution to low -energy physics is 
+
+limited. This result suggests that the pronounced  topological modulating effects  of the 
+
+exchange interaction J are more likely to occur for the filling case of  ν = 1;  therefore, 
+
+the following discussion will focus on this scenario. 
+
+For the system with  ν = 1,  Appendix Fig. S 6 displays the evolution of the energy 
+
+spectra with J in the strong correlation limit for typical values of  𝜀 𝑔 . Taking the system 
+
+with  𝜀 𝑔  = 3. 3 eV  as an example: at  J = 0, it is a trivial Mott insulator. Introducing a 
+
+finite J effectively induces a  p-d band inversion, yet the topological outcome depends 19 
+
+critically on the sign of J. 
+
+When  J > 0 , the system opens a topologically nontrivial gap, forming a topological 
+
+state with a  Chern number of 1 . This is a  strongly correlated topological state , distinct 
+
+from the QAHE state in a single -particle picture, wherein the  d-orbitals simultaneously 
+
+contribute to both magnetic order and nontrivial topology. Such a state is referred to in 
+
+theoretical studies as a  “Chern -Kondo insulator”  and has been realized in optical lattice 
+
+systems  [49] . When  J < 0, although a global gap does not open, the p -d band crossing 
+
+forms a  closed nodal loop. Since this degeneracy is two -fold, we term this state a  Weyl -
+
+type nodal -line semimetal . The reason why the sign of J leads to such distinct 
+
+topological states is as follows:  To simplify the model, we have included SOC only in 
+
+the on -site energy part and neglected the spin -flip processes in the s -d exchange 
+
+interaction. This results in the complete decoupling of the spin -up and spin -down 
+
+subspaces of the system, leading to an i ntrinsic asymmetry in how positive and negative 
+
+J regulate the bands. 
+
+For the system with  𝜀 𝑔  = 2.3 eV , although it is metallic at J = 0 due to  p-d band 
+
+overlap, adjusting J can still effectively shift the  p-orbital bands, thereby enabling 
+
+topological phase transitions analogous to the  𝜀 𝑔  = 3. 3 eV case —namely, inducing 
+
+either a  Chern -Kondo insulator  or a  Weyl nodal -line semimetal. 
+
+To systematically characterize the phase transitions in the strong correlation limit, 
+
+we plot the  J-𝜀 𝑔  phase diagram  in Fig. 5 (a). Since the system remains in the  FSP  phase 
+
+throughout this parameter region, the diagram primarily reveals the evolution of its 
+
+topological properties. It can be seen that when  J > 0, the system can enter the  Chern -
+
+Kondo insulator  phase, whereas when  J < 0, it transitions into the  Weyl -type  nodal -line 
+
+semimetal  phase. Notably, the critical  |J|  value required to induce the topological 
+
+transition depends strongly on  𝜀 𝑔 : once  𝜀 𝑔  deviates from the band inversion critical 
+
+point ( 𝜀 𝑔  ≈ 3.08 eV), the required |J| increases rapidly. Particularly in the strong orbital 
+
+overlap region ( 𝜀 𝑔  < 1.7 eV), the critical |J| rises sharply, and for  𝜀 𝑔  < 1.3 eV, the 
+
+system remains metallic for any finite |J|. In contrast, in the  insulating region without 
+
+orbital overlap (  𝜀 𝑔  > 3.08 eV), J consistently exhibits a significant modulating 
+
+capability over the band topology. 
+
+It is important to note that  Weyl points in three dimensions possess topological 
+
+protection stability, whereas the Weyl nodal lines appearing for J < 0 in our two -
+
+dimensional system are inherently dynamically unstable  [56] . These nodal lines 
+
+originate from  p-d band crossings between different spin channels. Considering 20 
+
+additional realistic perturbations —such as non -local spin -orbit coupling not included 
+
+in the current model, or applying an in -plane transverse magnetic field —could 
+
+potentially gap out the nodal lines, possibly inducing a Chern -Kondo insulator. 
+
+On the other hand, the  Chern -Kondo insulator  induced by  J > 0  stems from  p-d
+
+band inversion within the same spin channel. In contrast, the  Weyl nodal -line 
+
+semimetal  caused by  J < 0  involves  band crossings between different spin channels. 
+
+This fundamental difference in origin leads to their  markedly distinct responses to an 
+
+externa l magnetic field .
+
+To reveal this difference, we introduce a Zeeman coupling term of the following 
+
+form: 
+
+𝐻 𝐵  = − ∑ 𝜙 ̂𝐤 𝜎 
+
+> †
+> 𝐤 ,𝜎 ,𝜎 ′
+
+[𝑯  ⋅ 𝝉 ̂ 𝜎 𝜎 ′ ⊗ 𝐼 ̂ ]𝜙 ̂𝐤 𝜎 ′ (18) 
+
+Here, the  magnetic field  vector  H incorporates the Bohr magneton and the g -
+
+factor,  its magnitude directly representing the effective Zeeman energy.  We calculated 
+
+the variation of the band gap with the  H for the system with  𝜀 𝑔  = 3. 3 eV  at  J = ±0.1 
+
+eV; the results are shown in Figs.  5(b) and  5(c).
+
+The topological gap of the  Chern -Kondo insulator at J = 0.1 eV  is insensitive to 
+
+both  transverse (Hx) and  longitudinal (Hz) magnetic fields, demonstrating robust 
+
+stability. In stark contrast, for the  Weyl  nodal -line semimetal at J =  －0.1 eV, the 
+
+degenerate nodal lines can be gapped out under a  transverse magnetic field ( Hx), giving 
+
+rise to a  magnetic gap that increases monotonically with | Hx|.  This specific, direction -
+
+sensitive response to the magnetic field is in excellent agreement with recent 
+
+experimental observations in multilayer MnBi₂Te₄ thin films  [57] .
+
+# VI . SUMMARY 
+
+In this work, we systematically investigate the regulatory mechanism of electron 
+
+correlation strength  U on the band structure of magnetic topological materials by 
+
+constructing and studying a low -energy effective model that combines strong 
+
+correlation and topology.  Our study focuses on  paramagnetic (PM) and ferromagnetic 
+
+(FM)  orders, motivated by the material foundation of monolayer MnBi₂Te₄ and its 
+
+analogues, in which intra -layer magnetic coupling is intrinsically FM due to near -90° 
+
+Mn –Te –Mn superexchange, as supported by the Goodenough‑Kanamori rules and 
+
+experimental observa tions. 
+
+Our results demonstrate that increasing  U can effectively drive the system from a 21 
+
+PM phase into a  FM phase, but the specific pathway is closely related to the electron 
+
+filling factor  𝜈  . For systems with  𝜈  = 2 that are trivial insulators at  𝑈  = 0 ,
+
+enhancing  U in the PM phase tunes the  d-orbital energy levels, promotes  p-d band 
+
+overlap and inversion, and  realizes a transition from a trivial insulator to a topological 
+
+insulator, exhibiting behavior typical of a Kondo topological insulator. Notably, based 
+
+on the  three -band model  employed in this study, a further increase in  𝑈  from this 
+
+topological insulating state drives the highest -energy third band to cross the Fermi level. 
+
+This metallizes the system and facilitates the completion of the PM -to -FM phase 
+
+transition. For metallic systems at half -filling ( 𝜈  = 1), increasing  U also induces a PM -
+
+FM transition. However, it manifests as a  direct jump from the PM phase to a FSP phase, 
+
+bypassing any intermediate gradual FM state. Furthermore, for  𝜈  = 1 systems with no 
+
+initial  p-d band overlap, the FM transition is accompanied by a  metal -insulator 
+
+transition, leading to the formation of a  Mott insulator. 
+
+This study finds that the Hubbard -type correlation  U primarily regulates 
+
+the  energy level and spin splitting of the  d-orbitals, with a limited effect on the  p-
+
+orbitals. However, in the  large -U limit, the system enters an FSP phase where double 
+
+occupancy is suppressed, and its physics transitions from the regime of the Anderson 
+
+model to that of the Kondo model. Here, the formed large local moments can effectively 
+
+modulate the itinerant p electrons via the  s-d exchange interaction ( J). In systems 
+
+with  𝜈  = 1 , b y introducing the exchange interaction  J, we successfully realize 
+
+topological states such as the  Chern -Kondo insulator  and the  two -dimensional Weyl -
+
+type nodal -line semimetal. The magnetic gap opened in the latter under a transverse 
+
+magnetic field exhibits a highly sensitive and specific response , in excellent agreement 
+
+with recent experimental observations of the QAHE enhancement by a transverse field 
+
+in MnBi₂Te₄ systems  [57] .
+
+Regarding  magnetic control, calculations show that appropriately reducing the  p-
+
+d-orbital energy difference  𝜀 𝑔  at  𝑈  = 0 —which introduces moderate band overlap 
+
+near the Fermi level —helps enhance the PM -FM energy difference, thereby  improving 
+
+the stability of the  FM  phase. It also lowers the critical  Up value required to achieve 
+
+spin polarization while only weakly suppressing the saturated magnetic moment. 
+
+Experimentally, this can be analogous to tuning orbital on -site energies via gate voltage. 
+
+Particularly for systems where the  d-orbital resides at an inversion center, an external 
+
+electric field can cause a relative energy offset between the upper and lower  p-orbital 
+
+layers. This selectively enhances the hybridization between the  d-orbital and one of the 22 
+
+p-orbital layers, enabling more effective electrical control of magnetism.  Furthermore, 
+
+recent studies have integrated MnBi₂Te₄ with layered ferroelectric materials In₂ Te₃  into 
+
+van der Waals heterostructures  [58] . By leveraging the non -volatile polarization of the 
+
+ferroelectric layer, a strong and switchable interfacial electric field is generated. This 
+
+field can effectively manipulate the band structure and magnetic order of the adjacent 
+
+MnBi₂Te₄, and even induce topological phase trans itions, thereby offering a more 
+
+reliable control approach compared to gate -voltage techniques. 
+
+Concerning the  control of topological properties, this study reveals the following 
+
+core principles and prospects: 
+
+(i).  Systematic evolution of the band structure under correlation:  At  𝑈  = 0, the vicinity 
+
+of the Fermi level is dominated by  d-orbitals; entering the weak correlation regime 
+
+(small  U), the  d-orbitals undergo slight spin splitting but retain their dominance; 
+
+when  U increases to the strong correlation limit, double occupancy is completely 
+
+suppressed, and the  d-orbitals experience  complete spin splitting and essentially sink 
+
+below the Fermi level. At this point, if the  s-d exchange interaction  between local 
+
+moments and itinerant electrons is further considered,  the originally lower -energy  p-
+
+orbitals —which lie below the  d-orbitals and are not included in  our  simplified model —
+
+will be significantly l ifted.  Consequently,  the low -energy region near the Fermi level 
+
+becomes dominated by  p-orbitals, with  d-orbitals relegated to a secondary role. This 
+
+evolution picture is  consistent with the band features revealed by DFT calculations for 
+
+MnBi₂Te₄ under correlation.  Within this framework, the system enters the regime 
+
+described by the  Kondo lattice model. Here, magnetism modulates the  p-orbital bands 
+
+via the  s-d exchange interaction; however, the emergence of possible nontrivial 
+
+topological states often requires the inclusion of  p-p orbital interactions beyond the 
+
+scope of our current model. This extends past the framework of acquiring topology 
+
+solely through  p-d hybridization  as described in the present work. 
+
+(ii ) We propose and demonstrate a class of  “Chern -Kondo insulators” with a potentially 
+
+large band gap. This state is characterized by  strongly correlated  d-orbitals that 
+
+simultaneously contribute to both magnetic order and nontrivial topology. Its key 
+
+physical foundation is that the  d-orbitals are in an  almost fully polarized state. Unlike 
+
+conventional  PM  Kondo insulators  [46] —where correlation effects induce significant 
+
+band renormalization and weaken effective hybridization, leading to a small topological 
+
+gap —in the Chern -Kondo insulator,  the combination of strong suppression of double 
+
+occupancy and  d-orbital spin polarization  ensures that correlation effects  do not cause 23 
+
+band narrowing nor weaken the  p-d hybridization strength. Consequently, this state 
+
+is  expected to possess a larger topological gap compared to traditional Kondo insulators, 
+
+offering a novel route for observing the QAHE at elevated temperatures. 
+
+The key to realizing this state lies in  hole doping  to tune the Fermi level of the 
+
+system to the vicinity of the  ν = 1  filling as specified by our model. Feasible 
+
+experimental pathways include: employing  ionic liquid gating  [59 ,60 ] for in situ carrier 
+
+modulation  in Kondo lattice materials with analogous electronic structures (such as Ce -
+
+[61 ,62 ] or Yb -based  [63 ,64 ] compounds) or in artificial heterostructures; alternatively, 
+
+introducing holes via  Ca²⁺ doping to replace Sm³⁺  in  SmB₆  [65] , a material confirmed 
+
+as a candidate topological Kondo insulator. These approaches provide practical and 
+
+viable experimental schemes for verifying our theoretical prediction. 
+
+DATA AVAILABILITY 
+
+All data generated or analysed  during this study are included in this published article. 
+
+AUTHOR CONTRIBUTIONS 
+
+Z. -Y.  Wang  developed the model, performed calculations, and wrote the manuscript; 
+
+Y. -M.  Quan  optimized the computational codes and contributed to discussions; Y. -X. 
+
+Sun  performed DFT calculations; L. -J.  Zou  and X. -L.  Yu supervised the project, 
+
+acquired funding, and revised the manuscript. 
+
+ACKNOWLEDGMENT 
+
+X. -L. Yu acknowledges support from the Shenzhen Science and Technology Program 
+
+(Grant No. JCYJ20250604174400001) , the Basic Start -up Fund for Introduced Talents 
+
+at Sun Yat -sen University  and  the Guangdong Basic and Applied Basic Research 
+
+Foundation (Grant No. 2023A1515011852) .
+
+L. -J. Zou acknowledges support from the National Natural Science Foundation of 
+
+China (Grant No. 11534010). 
+
+COMPETING INTERESTS 
+
+The authors declare no competing interests. 
+
+# APPENDIX 
+
+Throughout this appendix, red and blue coloring in the spectra indicates dominant  d-24 
+
+orbital and  p-orbital character, respectively. 
+
+Fig. S1. Spectral evolution with U (0 to 10 eV) for the system with  ν = 2  and  𝜀 𝑔  = 1.7 eV.  Here, 
+
+U = 1.3 eV and U = 2.9 eV correspond to the critical points before the PM -FM and FM -FSP phase 
+
+transitions, respectively. It is noteworthy that the spectrum at U = 1.3 eV lies within the critical 
+
+region of the insulator -metal crossover. For U > 3 eV ( after spin polarization), the band structure 
+
+below the Fermi level remains largely unchanged. 
+
+Fig. S2. Spectral evolution with U (0 to 10 eV) for the system with  ν = 2  and  𝜀 𝑔  = 3.8 eV.  As U 
+
+increases from 0 to 2 eV, the system undergoes a transition from a trivial insulator to a topological 
+
+insulator. U = 3.6 eV and U = 4.4 eV correspond to the critical points before the PM -FM and FM -
+
+FSP phase transitions, respectively, with the spectrum  at U = 3.6 eV also residing in the critical 
+
+region of the insulator -metal crossover. For U > 4.5 eV (after spin polarization), the band structure 
+
+below the Fermi level remains largely unchanged. 25 
+
+Fig. S3. Spectral evolution with U (0 to 10 eV) for the system with  ν = 1  and  𝜀 𝑔  = 1.7 eV.  U = 
+
+1.2 eV marks the critical point before the PM -FSP phase transition. Thereafter, the band structure 
+
+below the Fermi level remains largely unchanged. 
+
+Fig. S4. Spectral evolution with U (0 to 10 eV) for the system with  ν = 1  and  𝜀 𝑔  = 3.8 eV.  U = 
+
+1.9 eV marks the critical point before the PM -FSP phase transition. Thereafter, the band structure 
+
+below the Fermi level remains largely unchanged. 26               
+
+> Fig. S5. Band spectra for the system with ν= 2 and 𝜀 𝑔 = 2.3 eV at J = 0, ±0.2 eV in the strong
+> correlation limit (U = 10 eV). Purple and blue segments denote the spin -up and spin -down channels,
+> respectively.
+> Fig. S6. Band spectra for systems with ν= 1 at 𝜀 𝑔 = 2.3 eV and 𝜀 𝑔 = 3.3 eV for J = 0, ±0.2 eV
+> in the strong correlation limit (U = 10 eV). Purple and blue segments denote the spin -up and spin -
+> down channels, respectively.
+
+# REFERENCES 
+
+[1]  B. A. Bernevig, C. Felser, and H. Beidenkopf,  Progress and prospects in magnetic 
+
+topological materials , Nature  603 , 41 (2022). 
+
+[2]  S. Li, T. Liu, C. Liu,  et al. , Progress on the antiferromagnetic topological insulator 
+
+MnBi 2Te 4, Natl. Sci. Rev.  11 , nwac296 (2024). 
+
+[3]  R. Yu, W. Zhang, H. -J. Zhang, S. -C. Zhang, X. Dai, Z. Fang, Quantized anomalous 
+
+Hall effect in magnetic topological insulators. Science  329 , 61 –64 (2010). 
+
+[4]  X. -L. Qi and S. -C. Zhang,  Topological insulators and superconductors , Rev. Mod. 
+
+Phys.  83 , 1057 (2011). 
+
+[5]  C. -Z. Chang, J. Zhang, X. Feng, J. Shen, Z. Zhang, M. Guo, K. Li, Y. Ou, P. Wei, 
+
+L. -L. Wang, Z. -Q. Ji, Y. Feng, S. Ji, X. Chen, J. Jia, X. Dai, Z. Fang, S. -C. Zhang, K. 27 
+
+He, Y. Wang, L. Lu, X. -C. Ma, Q. -K. Xue, Experimental observation of the quantum 
+
+anomalous Hall effect in a magnetic topological insulator. Science  340 , 167 –170 
+
+(2013). 
+
+[6]  X. -L. Qi, T. L. Hughes, and S. -C. Zhang,  Topological field theory of time -reversal 
+
+invariant insulators , Phys. Rev. B  78 , 195424 (2008). 
+
+[7]  A. M. Essin, J. E. Moore  and  D. Vanderbilt, Magnetoelectric polarizability and 
+
+axion electrodynamics in crystalline insulators. Phys. Rev. Lett.  102 , 146805 (2009). 
+
+[8]  R. S. K. Mong, A. M. Essin  and  J. E. Moore, Antiferromagnetic topological 
+
+insulators. Phys. Rev. B  81 , 245209 (2010). 
+
+[9]  C. Liu, Y. Wang, H. Li,  et al. , Robust axion insulator and Chern insulator phases 
+
+in a two -dimensional antiferromagnetic topological insulator , Nat. Mater.  19 , 522 
+
+(2020). 
+
+[10]  D. Zhang, M. Shi, T. Zhu,  et al. , Topological axion states in the magnetic insulator 
+
+MnBi 2Te 4 with the quantized magnetoelectric effect , Phys. Rev. Lett.  122 , 206401 
+
+(2019). 
+
+[11]  Q. L. He, L. Pan, A. L. Stern, E. C. Burks, X. Che, G. Yin, J. Wang, B. Lian, Q. 
+
+Zhou, E. S. Choi, K. Murata, X. Kou, Z. Chen, T. Nie, Q. Shao, Y. Fan, S. -C. Zhang, 
+
+K. Liu, J. Xia  and  K. L. Wang, Chiral Majorana fermion modes in a quantum 
+
+anomalous Hall insulator –superconductor structure. Science  357 , 294 –299 (2017). 
+
+[12]  J. L. Li, Y. L. Yang, S. Q. Duan,  et al. , Intrinsic magnetic topological insulators in 
+
+van der Waals layered MnBi 2Te 4-family materials , Sci. Adv.  5, eaaw5685 (2019). 
+
+[13]  K. He,  MnBi 2Te 4-family intrinsic magnetic topological materials , npj Quantum 
+
+Mater.  5, 90 (2020). 
+
+[14]  J. Li, C. Wang, Z. Zhang, B. -L. Gu, W. Duan, and Y. Xu,  Magnetically  controllable 
+
+topological quantum phase transitions in the antiferromagnetic topological insulator 
+
+MnBi 2Te 4, Phys. Rev. B  100 , 121103(R) (2019). 
+
+[15]  L.-L. Wang, et al.  Single pair of Weyl fermions in the half -metallic semimetal 
+
+EuCd 2As 2. Phys. Rev. B  99 , 245147 (2019). 
+
+[16]  J. Ma, et al. Emergence of Nontrivial Low -Energy Dirac Fermions in 
+
+Antiferromagnetic EuCd 2As 2. Adv. Mater.  32 , 1907565 (2020). 
+
+[17]  G. Hua, et al. Dirac semimetal in type -IV magnetic space groups.  Phys. Rev. B  98 , 201116 
+
+> (2018).
+
+[18]  F. Xue, Y. Hou, Z. Wang, Z. Xu, K. He, R. Wu, Y. Xu, and W. Duan,  Tunable 
+
+quantum anomalous Hall effects in ferromagnetic van der Waals heterostructures ,
+
+Natl. Sci. Rev.  11 , nwad151 (2024). 
+
+[19]  M. Z. Hasan, C. L. Kane, Colloquium: Topological insulators. Rev. Mod. Phys.  82 ,28 
+
+3045 (2010). 
+
+[20]  M. M. Otrokov, T. V. Menshchikova,  et al. , Highly -ordered wide bandgap 
+
+materials for quantized anomalous Hall and magnetoelectric effects , 2D Mater.  4,
+
+025082 (2017). 
+
+[21]  Y. Gong, J. Guo, J. Li,  et al. , Experimental realization of an intrinsic magnetic 
+
+topological insulator , Chin. Phys. Lett.  36 , 076801 (2019). 
+
+[22]  Y. Deng, Y. Yu, M. Z. Shi,  et al. , Quantum anomalous Hall effect in intrinsic 
+
+magnetic topological insulator MnBi 2Te 4, Science  367 , 895 (2020). 
+
+[23]  J. G. Jun, Y. Z. Li, J. H. Li,  et al. , High -Chern -number and high -temperature 
+
+quantum Hall effect without Landau levels , Natl. Sci. Rev.  7, 1280 (2020). 
+
+[24]  M. M. Otrokov,  et al. , Unique thickness -dependent properties of the van der Waals 
+
+interlayer antiferromagnet MnBi 2Te 4 films , Phys. Rev. Lett.  122 , 107202 (2019). 
+
+[25]  P. Li, J. Yu, Y. Wang, and W. Luo,  Electronic structure and topological phases of 
+
+the magnetic layered materials MnBi 2Te 4, MnBi 2Se 4, and MnSb 2Te 4, Phys. Rev. B  103 ,
+
+155118 (2021). 
+
+[26]  N. T. Hung, V. V. Thanh, M. Li, and T. Shimada,  Strain effect on optical properties 
+
+and quantum weight of monolayer MnBi 2X4 (X = Te, Se, S) , Appl. Phys. Lett.  127 ,
+
+113102 (2025). 
+
+[27]  H. Zhang, W. Yang, Y. Wang, and X. Xu,  Tunable topological states in layered 
+
+magnetic materials of MnSb 2Te 4, MnBi 2Se 4, and MnSb 2Se 4, Phys. Rev. B  103 , 094433 
+
+(2021). 
+
+[28]  Z. Li, J. Zhang, X. Hong, X. Feng, and K. He,  Multimechanism quantum 
+
+anomalous Hall and Chern number tunable states in germanene (silicene, 
+
+stanene)/MBi 2Te 4 heterostructures , Phys. Rev. B  109 , 235132 (2024). 
+
+[29]  Y. Li, Y. Jiang, J. Zhang, Z. Liu, Z. Yang, and J. Wang,  Intrinsic topological phases 
+
+in Mn 2Bi 2Te 5 tuned by the layer magnetization , Phys. Rev. B  102 , 121107(R) (2020). 
+
+[30]  Q. Bai, M. Xu, and G. Li,  Study on field -induced sign reversal of planar Hall effect 
+
+in intrinsic ferromagnetic topological insulator MnBi 8Te 13 , Mater. Today Phys.  51 ,
+
+101666 (2025). 
+
+[31]  K. D. Nguyen, G. Berruto, S. H. Lee, Y. Bai, H. Lin, Q. Gao, Z. Mao, and S. 
+
+Yang,  Spectroscopic evidence of intra -unit -cell charge redistribution in a charge -
+
+neutral magnetic topological insulator , Nanoscale  17 , 10663 (2025). 
+
+[32]  H. -K. Xu, M. Gu, F. Fei, Y. -S. Gu, D. Liu, Q. -Y. Yu, S. -S. Xue, X. -H. Ning, B. 
+
+Chen, H. Xie, Z. Zhu, D. Guan, S. Wang, Y. Li, C. Liu, Q. Liu, F. Song, H. Zheng, 29 
+
+and J. Jia,  Observation of magnetism -induced topological edge state in 
+
+antiferromagnetic topological insulator MnBi 4Te 7, ACS Nano  16 , 9810 (2022). 
+
+[33]  Y. Xu, L. Elcoro, Z. -D. Song, B. J. Wieder, M. G. Vergniory, N. Regnault, Y. Chen, 
+
+C. Felser, and B. A. Bernevig,  High -throughput calculations of magnetic topological 
+
+materials , Nature  586 , 702 (2020). 
+
+[34]  M. Hohenadler and F. F. Assaad,  Correlation effects in two -dimensional 
+
+topological insulators , J. Phys.: Condens. Matter  25 , 143201 (2013). 
+
+[35]  S. Rachel,  Interacting topological insulators: a review , Rep. Prog. Phys.  81 ,
+
+116501 (2018). 
+
+[36]  J. Hutchinson, P. W. Klein, and K. Le Hur,  Analytical approach for the Mott 
+
+transition in the Kane -Mele -Hubbard model , Phys. Rev. B  104 , 075120 (2021). 
+
+[37]  G. K. Gupta, D. N. Sheng, and C. S. Ting,  Phase Diagram of Kane -Mele Hubbard 
+
+model at small doping , arXiv:2410.23221 (2024). 
+
+[38]  J. Zhang, H. Xu, and Y. Wang,  Zeeman field induced corner states in the Kane -
+
+Mele -Hubbard model , Phys. Rev. B  111 , 035111 (2025). 
+
+[39]  V. V. Val’kov, A. O. Zlotnikov, and A. Gamov,  Interplay between magnetism and 
+
+topology in MnBi 2Te 4, JETP Lett.  118 , 328 (2023). 
+
+[40]  B. A. Bernevig, T. L. Hughes, and S. -C. Zhang,  Quantum spin Hall effect and 
+
+topological phase transition in HgTe quantum wells , Science  314 , 1757 (2006). 
+
+[41]  X. Dang, J. D. Burton, A. Kalitsov, J. P. Velev, and E. Y. Tsymbal,  Complex band 
+
+structure of topologically protected edge states , Phys. Rev. B  90 , 155307 (2014). 
+
+[42]  V. Dorin and P. Schlottmann,  Slave -boson mean -field theory of the Anderson lattice 
+
+with finite U and orbital degeneracy , Phys. Rev. B  47 , 5095 (1993). 
+
+[43]  G. Kotliar and A. E. Ruckenstein,  New functional integral approach to strongly 
+
+correlated fermi systems: The gutzwiller approximation as a saddle point , Phys. Rev. 
+
+Lett.  57 , 1362 (1986). 
+
+[44]  R. Meyer and P. Entel,  Specific details of the mean -field slave -boson solution of 
+
+the Hubbard model , Phys. Rev. B  47 , 1099 (1993). 
+
+[45]  H. Li, Z. -Y. Wang, X. -J. Zheng, Y. Liu, and Y. Zhong,  Magnetic and topological 
+
+transitions in three -dimensional topological Kondo insulator , Chin. Phys. Lett.  35 ,
+
+127501 (2018). 
+
+[46]  M. Legner, A. Ruegg, and M. Sigrist,  Topological invariants, surface states, and 
+
+interaction -driven phase transitions in correlated Kondo insulators with cubic 
+
+symmetry , Phys. Rev. B  89 , 085110 (2014). 30 
+
+[47]  J. C. Budich, B. Trauzettel, and G. Sangiovanni,  Fluctuation -driven topological 
+
+Hund insulators , Phys. Rev. B  87 , 235104 (2013). 
+
+[48]  M. Dzero, K. Sun, P. Coleman, and V. Galitski,  Theory of topological Kondo 
+
+insulators , Phys. Rev. B  85 , 045130 (2012). 
+
+[49]  H. Chen, X. -J. Liu, and X. C. Xie,  Chern Kondo insulator in an optical lattice ,
+
+Phys. Rev. Lett.  116 , 046401 (2016) .
+
+[50]  U. Larsen,  A simple derivation of the s -d exchange interaction , J. Phys. C: Solid 
+
+State Phys.  4, 1835 (1971). 
+
+[51]  A. C. Hewson,  The Kondo Problem to Heavy Fermions  (Cambridge University 
+
+Press, New York, 1993). 
+
+[52]  J. R. Schrieffer and P. A. Wolff,  Relation between the Anderson and Kondo 
+
+Hamiltonians , Phys. Rev.  149 , 491 (1966). 
+
+[53]  B. Huang, G. Clark, E. Navarro -Moratalla, D. R. Klein, R. Cheng, K. L. Seyler, D. 
+
+Zhong, E. Schmidgall, M. A. McGuire, D. H. Cobden, W. Yao, D. Xiao, P. Jarillo -
+
+Herrero, and X. Xu,  Layer -dependent ferromagnetism in a van der Waals crystal 
+
+down to the monolayer limit , Nature  546 , 270 (2017). 
+
+[54]  C. Gong, L. Li, Z. Li, H. Ji, A. Stern, Y. Xia, T. Cao, W. Bao, C. Wang, Y. Wang, 
+
+Z. Q. Qiu, R. J. Cava, S. G. Louie, J. Xia, and X. Zhang,  Discovery of intrinsic 
+
+ferromagnetism in two -dimensional van der Waals crystals , Nature  546 , 265 (2017) .
+
+[55]  C. L. Kane and E. J. Mele,  Z2 topological order and the quantum spin Hall effect ,
+
+Phys. Rev. Lett.  95 , 146802 (2005). 
+
+[56]  A. A. Burkov,  Topological semimetals , Nat. Mater.  15 , 1145 (2016). 
+
+[57]  Z. Lian, Y. Wang, Y. Wang,  et al. , Antiferromagnetic quantum anomalous Hall 
+
+effect under spin flips and flops , Nature  641 , 70 (2025). 
+
+[58]  J. Li, Q. Wu, and H. Weng,  Ferroelectric switching of quantum anomalous Hall 
+
+effects in MnBi 2Te 4 films , npj Quantum Mater.  10 , 89 (2025). 
+
+[59]  C. Yin, P. Kumar, W. Gelling, and J. Aarts,  Tunable magnetic scattering effects at 
+
+the LaAlO 3/SrTiO 3 interface by ionic liquid gating , ACS Appl. Electron. Mater.  2,
+
+3837 (2020). 
+
+[60]  P. Chen, J. Zhang, G. Zhou,  et al. , Carrier -modulated anomalous electron 
+
+transport in electrolyte -gated SrTiO 3, Phys. Status Solidi RRL  17, 2300111 (2023). 
+
+[61]  C. Cao, G. -X. Zhi, and J. -X. Zhu,  From trivial Kondo insulator Ce 3Pt 3Bi 4 to 
+
+topological nodal -line semimetal Ce 3Pd 3Bi 4, Phys. Rev. Lett.  124 , 166403 (2020). 
+
+[62]  D. C. Ryu, J. Kim, K. Kim, C. J. Kang, J. D. Denlinger, and B. I. Min,  Distinct 31 
+
+topological properties in Ce monopnictides having correlated f electrons: CeN vs. 
+
+CeBi , Phys. Rev. Research  2, 012069 (2020). 
+
+[63]  Y. Sato, Z. Xiang, Y. Kasahara,  et al. , Topological surface conduction in Kondo 
+
+insulator YbB 12 , J. Phys. D: Appl. Phys.  54 , 404002 (2021). 
+
+[64]  T. -R. Chang, T. Das, P. -J. Chen,  et al. , Two distinct topological phases in the mixed -
+
+valence compound YbB 6 and its differences from SmB 6, Phys. Rev. B  91 , 155151 
+
+(2015). 
+
+[65]  J. Zhang, Z. Hua, C. Wang,  et al. , Realizing a topological diode effect on the 
+
+surface of a topological Kondo insulator , Proc. Natl. Acad. Sci. U.S.A.  122 ,
+
+e2417709122 (2025).

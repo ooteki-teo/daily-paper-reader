@@ -1,0 +1,30 @@
+{
+  "version": 2,
+  "extractor": "pdffigures2",
+  "figures": [
+    {
+      "url": "assets/figures/arxiv/2603.29377v1/fig-001.webp",
+      "caption": "Fig. 1 Spin-anisotropic Hubbard model, mapping to the t–J model, and pairing analysis. (a) Schematic of the Hubbard model with spin-anisotropic nearest-neighbor hopping t ± tA under on-site repulsion U . (b) In the strong-coupling limit, the system maps onto an anisotropic t–J Hamiltonian characterized by Jz and J⊥. (c–f) Representative Fermi surfaces at different fillings n and anisotropies tA, illustrating the reconstruction from a perfectly nested square to distorted and spin-split contours. (g) QMC evaluation of the total pairing strength ∆tot in the (n, tA) parameter space, showing a broad enhancement with increasing anisotropy. (h,i) Comparison of extended s-wave (blue) and d-wave (red) states within the t–J model. Although the nominal grand potential Ωmin of the s-wave branch is slightly lower (h), its gap amplitude remains vanishingly small across the entire range (i), corresponding to a normal state. In contrast, the d-wave solution develops a robust finite gap whose onset filling decreases and magnitude grows with tA, establishing d-wave as the dominant superconducting instability stabilized by spin-anisotropic hopping in the altermagnetic background.",
+      "page": 3,
+      "index": 1,
+      "width": 700,
+      "height": 494
+    },
+    {
+      "url": "assets/figures/arxiv/2603.29377v1/fig-002.webp",
+      "caption": "Fig. 2 Enhancement of d-wave pairing restricted by competing density-wave channels. (a) Quantum Monte Carlo evaluation of the total vertex d-wave pairing function NVertex",
+      "page": 6,
+      "index": 2,
+      "width": 777,
+      "height": 304
+    },
+    {
+      "url": "assets/figures/arxiv/2603.29377v1/fig-003.webp",
+      "caption": "Fig. 3 Enhancement of p-wave pairing and emergence of d + p coexistence. (a–c) Freeenergy landscape Ω(∆d,∆p) of the t–J model for representative anisotropies tA = 0.3, 0.4, 0.5: the global minimum evolves from a pure d-wave state to a d+p mixed state (star symbol in panel b) and finally towards a regime dominated by the p-wave component. (d–f) Free-energy landscape Ω(∆d,∆p) of the t–J model for representative anisotropies n = 0.4, 0.71, 0.9: the global minimum evolves from a pure d-wave state to a d + p mixed state (star symbol in panel b) and finally towards a regime dominated by the p-wave component.(g) Quantum Monte Carlo results for the vertex pairing function NVertex",
+      "page": 7,
+      "index": 3,
+      "width": 700,
+      "height": 221
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "version": 2,
+  "extractor": "pdffigures2",
+  "figures": [
+    {
+      "url": "assets/figures/arxiv/2603.29830v1/fig-001.webp",
+      "caption": "FIG. 2. Symmetry-resolved map of the (normalized) two-dimensional spin-flip SANS cross section for a linear vortex ensemble. Each panel shows the analytically calculated spin-flip scattering pattern [up to (qR)max = 5.0] obtained from Eq. (6) for a given combination of the vortex amplitude parameter m1R/m0 (vertical axis) and the cone angle αc (horizontal axis), which describes the statistical distribution of vortex axes within a rotational cone. The model represents an ensemble of linearly varying vortex structures whose axes are distributed within a cone of opening angle αc, rather than a single vortex configuration. The background colors indicate the dominant angular anisotropy of the scattering pattern: four-fold symmetry ∝ 1− cos(4θ) (light blue), vertical two-fold symmetry ∝ 1 − cos(2θ) (dark blue), horizontal two-fold symmetry ∝ 3 + cos(2θ) (orange), isotropic ring-like scattering ∝ 1 (green), and intermediate transition regions. The map provides a controlled visual classification tool for experimental two-dimensional spin-flip SANS data, linking observed angular anisotropies to specific regions in the parameter space of vortex amplitude and axis distribution.",
+      "page": 3,
+      "index": 1,
+      "width": 1010,
+      "height": 1173
+    },
+    {
+      "url": "assets/figures/arxiv/2603.29830v1/fig-002.webp",
+      "caption": "FIG. 3. Same as Fig. 2, but based on the nonlinear hyperbolic vortex magnetization ansatz Eq. (10) and numerically computed using the NuMagSANS software package [22]. In this calculation, we used spherical nanoparticles with a radius of R = 20nm (discretized into a 2 × 2 × 2 nm3 grid) and 1024 samples for the rotation angles α, β. The vortex parameter ν in Eq. (10) is selected as ν = µ = m1R/m0, as the hyperbolic vortex (10) reduces (in a first-order Taylor expansion at ρ′ = 0) to the linear vortex ansatz (1). The resulting two-dimensional scattering cross sections are shown up to a maximum scattering vector of qmax = 0.25 nm−1. The code used to generate the data is available on Zenodo [23].",
+      "page": 5,
+      "index": 2,
+      "width": 1010,
+      "height": 1173
+    }
+  ]
+}

@@ -1,0 +1,741 @@
+Title: Interplay of Antiferromagnetism and Quasiperiodicity in a Hubbard Ring: Localization Insights
+
+URL Source: https://arxiv.org/pdf/2603.29177v1
+
+Published Time: Wed, 01 Apr 2026 00:24:57 GMT
+
+Number of Pages: 14
+
+Markdown Content:
+# Interplay of Antiferromagnetism and Quasiperiodicity in a Hubbard Ring: Localization Insights 
+
+Souvik Roy ∗
+
+School of Physical Sciences, National Institute of Science Education and Research, Jatni 752050, India and Homi Bhabha National Institute, Training School Complex, Anushaktinagar, Mumbai 400094, India 
+
+Ranjini Bhattacharya †
+
+Institute of Physics, Sachivalaya Marg, Bhubaneswar-751005, India and Homi Bhabha National Institute, Training School Complex, Anushaktinagar, Mumbai 400094, India 
+
+(Dated: April 1, 2026) We study localization in a quasiperiodic spinful antiferromagnetic Hubbard ring within aself-consistent Hartree–Fock framework, emphasizing the interplay of quasiperiodicity, staggered Zeeman-field-induced antiferromagnetic order, and electron correlations. Localization properties are characterized through inverse participation ratios, normalized participation ratios, and multifractal-ity, and are consistently supported by a broad class of real-space mean-field observables, including double occupancy, density fluctuations, local entropy, spin-density-wave (SDW) order, and other re-lated correlation measures. We uncover a pronounced nonmonotonic evolution of localization with interaction strength, featuring an intermediate regime marked by enhanced localization, strong spa-tial inhomogeneity, and magnetic ordering, followed by a re-entrant tendency toward delocalization at stronger interaction regime. Phase diagrams constructed from complementary localization and mean-field indicators reveal extended, localized, and critical regimes governed by the interplay of quasiperiodicity and interactions. Furthermore, real-time wave-packet dynamics of eigenstates pro-vide direct evidence of ballistic spreading, confinement, and re-entrant transport, in agreement with the underlying spectral characteristics. These results establish a unified framework where diverse mean-field observables and dynamical probes consistently capture correlation-driven localization phenomena in quasiperiodic systems. 
+
+I. INTRODUCTION 
+
+Understanding the fate of quantum states in the pres-ence of disorder and interactions remains a central prob-lem in condensed-matter physics. In noninteracting sys-tems, disorder can suppress transport through Anderson localization[ 1], while quasiperiodic potentials provide a deterministic route to localization without randomness, exhibiting sharp transitions between extended and local-ized states [ 2, 3]. Quasiperiodic lattices further host criti-cal phases characterized by multifractal eigenstates, lying intermediate between fully extended and fully localized regimes. These features make quasiperiodic systems [ 4–
+
+29 ] an ideal platform for exploring localization phenom-ena beyond conventional disordered models [ 30 –33 ]. The role of interactions in such systems, however, remains far less understood. Interactions [ 34 –39 ] can either enhance localization by amplifying spatial inho-mogeneities or promote delocalization through screening and spectral restructuring. In quasiperiodic settings, this competition is particularly subtle, as interactions act on a background that is already spatially modulated in a deterministic manner. As a result, interaction-driven effects can be highly nonmonotonic, giving rise to re-entrant behavior, coexistence of localized and extended states, and extended critical regimes. Identifying the   
+
+> ∗souvikroy138@gmail.com
+> †ranjinibhattacharya@gmail.com
+
+mechanisms underlying these effects, and understanding how they manifest in both equilibrium and nonequilib-rium observables, continues to be an active area of re-search. An additional layer of complexity arises when spin de-grees of freedom are included. Spin-dependent potentials, such as Zeeman fields or staggered magnetic textures, ex-plicitly break spin symmetry and enable the possibility of spin-selective localization and transport. When com-bined with interactions, even small spin-density imbal-ances can be amplified through self-consistent mean-field potentials, leading to subtle yet physically meaningful spin asymmetries in the spatial structure of eigenstates. Such effects are of direct relevance to spin-dependent transport, spin caloritronics, and engineered quantum systems where spin-resolved control is possible. Motivated by these considerations, we study a spin-ful Hubbard ring with quasiperiodically modulated hop-ping subjected to a staggered spin-dependent Zeeman field. The system is treated within a self-consistent Hartree–Fock framework, which captures interaction-induced renormalization of the effective single-particle spectrum while remaining computationally tractable for large system sizes. Although mean-field in nature, this approach is well suited for uncovering interaction-driven spectral reconstruction, localization trends, and spin-dependent effects, and provides a controlled starting point for exploring dynamical behavior. Our work goes beyond conventional spectral analy-sis by employing a broad set of complementary diag-
+
+> arXiv:2603.29177v1 [cond-mat.mes-hall] 31 Mar 2026
+
+2
+
+nostics. These include inverse participation ratios and normalized participation ratios to characterize localiza-tion, combined indicators that distinguish extended, lo-calized, and intermediate regimes, and multifractal anal-ysis based on the average fractal dimension. In addition, we analyze real-space mean-field observables such as den-sity variance, spin imbalance, double occupancy, excita-tion gaps, and local entropy, which provide direct insight into interaction-induced spatial restructuring. Crucially, we complement these static probes with real-time wave-packet dynamics [ 40 –44 ], allowing us to establish a direct correspondence between equilibrium eigenstate proper-ties and nonequilibrium transport behavior. The central questions we address are as follows: How do interactions reshape the localization properties of a quasiperiodic spinful system in the presence of a stag-gered Zeeman field? Under what conditions do interac-tions induce localization, restore delocalization, or stabi-lize critical multifractal regimes? How do spin-dependent effects emerge from self-consistent Hartree potentials, and how are they reflected in both static and dynami-cal observables? By systematically exploring these ques-tions across a wide parameter space, we provide a unified picture of interaction-driven localization, spin asymme-try, and dynamical transport in quasiperiodic Hubbard systems. The key findings of this work are as follows: (a) the emergence of an intermediate localized regime with increasing Hubbard interaction strength U , (b) the restoration of an extended phase at higher values of U ,(c) a contrasting localization behavior between edge and bulk states, where for lower U the edge states remain delocalized while the bulk states are relatively localized, whereas for larger U the edge states become compara-tively localized and the bulk states tend toward delocal-ization, (d) the existence of the intermediate localized phase and the reentrant delocalized phase is further sub-stantiated through the analysis of fractal dimensions and relevant mean-field order parameters, and (e) these char-acteristic features are consistently preserved in the dy-namical behavior of the system. The remainder of the paper is organized as follows. In Sec. II, we introduce the model and outline the mean-field formulation. Section III presents the main results, in-cluding spectral reconstruction, localization diagnostics, phase diagrams, and real-time dynamics. Finally, Sec. IV summarizes our findings and discusses their implications for interacting quasiperiodic systems and experimentally realizable platforms.  
+
+> II. THEORETICAL FORMULATION
+
+In this section, we introduce the model Hamiltonian and present the self-consistent mean-field framework em-ployed in our analysis. We also outline the complemen-tary set of diagnostics used to characterize localization, including spectral, eigenstate, and real-space measures, which together provide a comprehensive understanding 
+
+> FIG. 1. Schematic illustration of a spinful antiferromagnetic lattice with incommensurate hopping amplitudes, represented using distinct colors.
+
+of the underlying localization behavior.  
+
+> A. Model and Mean-Field Formulation
+
+We consider a one-dimensional spinful Hubbard ring of length L with quasiperiodically modulated nearest-neighbor hopping and an explicit spin-dependent stag-gered Zeeman potential. The total Hamiltonian is writ-ten as 
+
+H = Hkin + HU + HZ , (1) with periodic boundary conditions imposed along the ring. The kinetic part of the Hamiltonian incorporates quasiperiodic modulation in the hopping amplitude and is given by 
+
+Hkin = ∑
+
+> i,σ
+
+t[1 + λ cos(2 πb i )] 
+
+(
+
+c† 
+
+> i+1 ,σ
+
+ci,σ + H .c.
+
+)
+
+, (2) where c† 
+
+> i,σ
+
+(ci,σ ) creates (annihilates) an electron with spin σ =↑, ↓ at site i, t denotes the average hopping amplitude, λ controls the strength of the quasiperiodic modulation, and b is an irrational number, chosen as (1 + √5) /2, which introduces incommensurability in the system. Electron–electron interactions are described by the on-site Hubbard term 
+
+HU = U ∑
+
+> i
+
+ni, ↑ni, ↓, (3) where U is the interaction strength and ni,σ = c†
+
+> i,σ
+
+ci,σ is the local number operator. To explicitly break spin symmetry, we introduce a stag-gered Zeeman field that alternates in sign between neigh-boring lattice sites and couples oppositely to the two spin species, 
+
+HZ = hz
+
+∑
+
+> i
+
+(−1) i (ni, ↑ − ni, ↓) . (4) This term enforces an alternating on-site energy land-scape in which up-spin electrons experience the sequence +hz, −hz , +hz , . . . , while down-spin electrons experience the opposite pattern. The resulting spin polarization is therefore externally imposed rather than arising from spontaneous symmetry breaking. 3 
+
+> B. Mean field decoupling mechanism
+
+The interacting Hamiltonian is treated within aHartree–Fock mean-field approximation restricted to the density channel, appropriate for a collinear spin configu-ration. The on-site interaction is decoupled as 
+
+ni, ↑ni, ↓ ≈ 〈 ni, ↑〉ni, ↓ + 〈ni, ↓〉ni, ↑ − 〈 ni, ↑〉〈 ni, ↓〉, (5) where 〈ni,σ 〉 denotes the local spin-resolved density de-termined self-consistently. The last term contributes only a constant energy shift and does not affect the single-particle spectrum. Within this approximation, the mean-field Hamilto-nian separates into two effective single-particle Hamilto-nians for the up- and down-spin sectors, 
+
+HMF = Heff  
+
+> ↑
+
++ Heff  
+
+> ↓
+
++ E0, (6) with E0 = −U ∑
+
+> i
+
+〈ni, ↑〉〈 ni, ↓〉.
+
+The effective Hamiltonian for up-spin electrons is given by 
+
+Heff  
+
+> ↑
+
+= ∑
+
+> i
+
+t[1 + λ cos(2 πb i )] 
+
+(
+
+c†
+
+> i+1 ,↑
+
+ci, ↑ + H .c.
+
+)
+
++ ∑
+
+> i
+
+[U 〈ni, ↓〉 + hz (−1) i] ni, ↑,
+
+(7) while the down-spin sector is governed by 
+
+Heff  
+
+> ↓
+
+= ∑
+
+> i
+
+t[1 + λ cos(2 πb i )] 
+
+(
+
+c†
+
+> i+1 ,↓
+
+ci, ↓ + H .c.
+
+)
+
++ ∑
+
+> i
+
+[U 〈ni, ↑〉 − hz (−1) i] ni, ↓.
+
+(8) The two spin sectors are coupled only through the self-consistency conditions on the local densities, which are obtained by summing the contributions from occupied eigenstates in each spin channel. This formulation natu-rally generates site- and spin-dependent effective poten-tials arising from the combined effects of quasiperiodic-ity, interaction-induced Hartree fields, and the staggered Zeeman coupling. As a result, the model provides a con-trolled framework to investigate spin-dependent spectral properties, localization phenomena, and dynamical re-sponse.  
+
+> C. Localization and Fractal Measures
+
+After achieving self-consistency within the Hartree– Fock scheme, the system is described by two effective single-particle Hamiltonians, Heff  
+
+> ↑
+
+and Heff  
+
+> ↓
+
+, correspond-ing to the up- and down-spin sectors, respectively. The eigenvalue problems Heff 
+
+> σ
+
+∣∣∣ψ(σ)
+
+> n
+
+〉
+
+= E(σ)
+
+> n
+
+∣∣∣ψ(σ)
+
+> n
+
+〉
+
+, with 
+
+σ =↑, ↓, yield normalized eigenstates ψ(σ) 
+
+> n,i
+
+defined on lat-tice sites i = 1 , . . . , L . These converged eigenstates form the basis for characterizing localization, delocalization, and multifractal properties.  
+
+> 1. Inverse Participation Ratio and Normalized Participation Ratio
+
+The degree of localization of an eigenstate is quantified using the inverse participation ratio (IPR), defined for each spin sector as IPR (σ) 
+
+> n
+
+=
+
+> L
+
+∑
+
+> i=1
+
+∣∣∣ψ(σ)
+
+> n,i
+
+∣∣∣4
+
+. (9) For a fully extended state, IPR (σ) 
+
+> n
+
+scales inversely with system size, while for a localized state it remains finite in the thermodynamic limit. Complementarily, the normalized participation ratio (NPR) is defined as NPR (σ) 
+
+> n
+
+= 1
+
+L × IPR (σ)
+
+> n
+
+, (10) which approaches unity for extended states and vanishes for localized states. Together, IPR and NPR provide a consistent measure to distinguish localized, extended, and intermediate regimes.  
+
+> 2. Spectral Averaging
+
+To characterize the global nature of the spectrum, we compute spectral averages over all eigenstates, 
+
+〈IPR 〉σ = 1
+
+L
+
+∑
+
+> n
+
+IPR (σ) 
+
+> n
+
+, 〈NPR 〉σ = 1
+
+L
+
+∑
+
+> n
+
+NPR (σ) 
+
+> n
+
+,
+
+(11) where L denotes the number of eigenstates included in the averaging. These averaged quantities capture the overall localization tendency of each spin sector in the converged mean-field state.  
+
+> 3. Combined Localization Indicator
+
+To simultaneously account for localization and delocal-ization characteristics, we introduce the parameter 
+
+ησ = log 10 (〈IPR 〉σ × 〈 NPR 〉σ ) . (12) This quantity serves as a unified diagnostic: it remains small in fully localized or fully extended regimes, while attaining enhanced values in intermediate or critical phases where both IPR and NPR are finite.  
+
+> 4. Fractal Dimension
+
+Multifractal properties of the eigenstates are character-ized through the generalized fractal dimension. For each 4              
+
+> FIG. 2. Combined spin-resolved mean-field eigenvalue spec-trum as a function of the Hubbard interaction U.For each value of U, all spin-up and spin-down eigenvalues obtained from the self-consistent Hartree mean-field decoupling are merged into a single set and plotted together. In the first column, we fix hz= 0 .5 and vary λfrom 0 .5 to 0 .8 in panels (a) and (c). In the second column, λis fixed at 0 .5, while hz
+> is varied from 0 .4 to 0 .8 in panels (b) and (d), respectively.
+
+eigenstate, the second-order fractal dimension is defined as 
+
+D(σ)2,n = −
+
+log 
+
+(
+
+IPR (σ)
+
+> n
+
+)
+
+log L . (13) Extended states yield D2 ≈ 1, localized states give 
+
+D2 ≈ 0, while intermediate values indicate multifractal behavior. The average fractal dimension is obtained by spectral averaging, 
+
+〈D2〉σ = 1
+
+L
+
+∑
+
+> n
+
+D(σ)2,n , (14) providing a global measure of criticality and spatial com-plexity in each spin sector. All localization and fractal observables presented in this work are computed using the fully converged eigen-states of the effective spin-resolved Hamiltonians, ensur-ing that interaction effects enter self-consistently through the mean-field potentials. The remaining mean-field observables and the theoret-ical framework for wave-packet dynamics are introduced in the respective subsections alongside the discussion of their corresponding results.  
+
+> III. RESULT AND DISCUSSION
+
+The system is treated at half-filling to obtain self-consistent spin-dependent Hamiltonians within the Hartree–Fock framework, which define an effective single-particle potential landscape. The localization properties          
+
+> FIG. 3. Spin-resolved energy splitting ∆ E=E↑−E↓as a function of U, with the color scale representing |IPR ↑ −
+> IPR ↓| , shown for the same parameter-space orientation as in the preceding figure, highlighting the onset of interaction-driven spin-dependent localization.
+
+are subsequently analyzed over the entire spectrum to probe the global and energy-resolved characteristics of the resulting quasiparticle states. In most calculations, we consider a system size of 610, the largest size allow-ing reliable mean-field convergence. For phase diagram calculations, however, we restrict the system size to 144 due to convergence limitations. The hopping parameter is set to t = 1 .0, while all other parameters are specified in the respective sections.  
+
+> A. Interaction-driven evolution of the IPR-resolved energy spectrum
+
+In Fig. 2, we show the inverse participation ratio (IPR)-resolved energy eigenvalue spectrum as a function of the on-site interaction strength U for representative values of the quasiperiodic modulation λ and the Zee-man field hz , as indicated in the caption. For each U , all spin-up and spin-down mean-field eigenvalues are com-bined and plotted, highlighting the interaction-driven re-structuring of the effective single-particle spectrum. At 
+
+U = 0, all panels exhibit four well-defined subbands aris-ing from the combined effects of spin splitting and lattice modulation. With increasing U , interaction-driven cor-relations progressively reorganize the spectrum, causing the four subbands to merge into two effective bands, in-dicative of a pronounced reconstruction of the underlying eigenstates. Focusing on subplot Fig. 2(a) ( λ = 0 .5, hz = 0 .4), the eigenstates remain predominantly delocalized at weak in-teraction strengths, as evidenced by the low IPR across the spectrum. Upon increasing U , an intermediate inter-action window emerges where a pronounced enhancement of IPR is observed, indicating interaction-driven local-ization. In this regime, additional sets of eigenvalues ap-pear that are absent at lower U , forming localized bands, 5
+
+FIG. 4. Figure shows the interaction-driven evolution of spin-resolved eigenstate profiles for λ = 0 .5, hz = 0 .4 (top row) and 
+
+λ = 0 .8, hz = 0 .8 (bottom row). Panels (c) and (d) display ∆IPR, with the color scale capped at 0 .20 for enhanced visibility, consistent with the IPR-resolved spectral analysis. 
+
+FIG. 5. Variation of the average inverse participation ratio (AIPR) and average normalized participation ratio (ANPR) as functions of U for four representative λ–hz parameter sets, corresponding to the parameter regimes shown in Fig. 2.
+
+while the previously dispersive subbands also acquire lo-calized character. Interestingly, for sufficiently large U ,the spectrum reorganizes into two subbands with reduced IPR, indicating a re-entrant delocalized phase driven by strong-coupling correlations. In subplot Fig. 2(b), the Zeeman field strength is in-creased from hz = 0 .4 to hz = 0 .8 while keeping the 
+
+FIG. 6. Dependence of the up- and down-spin sector differ-ences in the average inverse participation ratio and average normalized participation ratio ( △AIPR and △ANPR) on U
+
+for four representative parameter sets. 
+
+quasiperiodic modulation fixed at λ = 0 .5. The overall behavior remains qualitatively similar to that observed in subplot (a), with the primary difference being a shift of the interaction-driven transition window toward higher values of U . Within this window, four well-separated subbands with clearly resolved gaps are visible. No-tably, the inner two subbands exhibit enhanced localiza-tion compared to subplot (a), indicating that increasing 6               
+
+> FIG. 7. Evolution of spin-resolved localization and delocal-ization characteristics across the eigenstates, quantified by
+> IP R ↑,IP R ↓,N P R ↑, and N P R ↓, at λ= 0 .8 and hz= 0 .8for four interaction strengths U.
+> FIG. 8. Same as the previous figure, but for λ= 0 .5 and
+> hz= 0 .4.
+
+hz strengthens localization and drives the transition to occur at larger interaction strengths. A pronounced modification of the spectrum is observed in Fig. 2(c) as the quasiperiodic strength is increased from λ = 0 .5 to λ = 0 .8 at hz = 0 .4. At low inter-action strengths U , the inner two subbands out of the four already exhibit localization, a feature that was ab-sent in the weaker quasiperiodic case. As U is increased, the intermediate interaction window in which additional bands emerge becomes broader, and these newly formed bands display enhanced localization compared to subplot (a). At larger U , localization becomes spectrally nonuni-form: while many eigenstates remain strongly delocal-ized, a subset displays enhanced localization compared to the lower-λ case. Subplot Fig. 2(d) exhibits behavior largely analogous to that of subplot (c), with the key distinction arising from the increased quasiperiodic strength, λ = 0 .8, at a fixed Zeeman field hz = 0 .8. As a result, the interaction-driven transition window is shifted relative to subplot (c). Within this window, clear gaps open between all four subbands, and the inner two subbands display stronger localization than in subplot (c), indicating an enhanced interplay between quasiperiodicity and Zeeman splitting. To characterize the interaction-induced spin asym-metry, we analyze the spin-resolved energy splitting ∆E = E↑ − E↓ as a function of the Hubbard interac-tion U , as shown in Fig. 3. For each U , the energy difference between the corresponding spin-up and spin-down mean-field eigenvalues is evaluated and color-coded by the difference of their inverse participation ratios, 
+
+|IPR ↑ − IPR ↓|. This representation directly probes the degree of spin-dependent localization induced by interac-tions. While extended eigenstates typically exhibit simi-lar spatial profiles for both spin channels, resulting in a small IPR difference and a relatively smooth spin split-ting, localized or quasi-localized states respond asymmet-rically to the self-consistent Hartree potential, leading to enhanced spin-dependent localization and larger values of |IPR ↑ − IPR ↓|. The combined visualization of ∆ E
+
+and the spin-resolved localization contrast thus highlights the intrinsic coupling between interaction-driven spectral splitting and spin-selective spatial restructuring in the in-teracting quasiperiodic system. The structure and orientation of the physical param-eters in Fig. 3 are identical to those in Fig. 2. From Fig. 3, we observe that the difference between the spin-up and spin-down eigenvalues remains close to zero up to a certain interaction strength U , the extent of which depends sensitively on the parameter space, such as the quasiperiodic strength λ and the Zeeman field hz . In par-ticular, for λ = 0 .5 and hz = 0 .4 [subplot (b)], the spin-resolved eigenvalue difference stays negligibly small up to relatively large values of U . More interesting behavior emerges in the intermediate interaction regime, consis-tent with the spectral reconstruction observed earlier in Fig. 2. In this regime, the difference between the two spin sectors becomes finite, taking both positive and negative values, indicating a state-dependent interaction-induced spin splitting. Notably, this region also exhibits enhanced values of the spin-resolved localization contrast, as re-flected by larger differences in the inverse participation ratios for a subset of eigenstates. At sufficiently large 
+
+U , the spin-resolved eigenvalue differences as well as the corresponding IPR differences again tend toward zero, signaling a restoration of effective spin symmetry driven by strong mean-field renormalization. 7                  
+
+> FIG. 9. Phase diagrams of ηin the hz–Uparameter space for (a) λ= 0 .5 and (b) λ= 0 .8 respectively.
+> FIG. 10. IPRmax and IPRmin phase diagrams in the hz–U
+> plane for λ= 0 .5 (top) and λ= 0 .8 (bottom).
+> B. Eigenstate indices with interaction strength U
+
+In Fig. 4, we illustrate the evolution of the eigen-state profiles as a function of the interaction strength 
+
+U for spin-up and spin-down electrons. The top row corresponds to λ = 0 .5 and hz = 0 .4, while the bot-tom row shows results for λ = 0 .8 and hz = 0 .8. In subplots (c) and (f), we present the difference between the spin-resolved inverse participation ratios, ∆IPR = 
+
+|IPR ↑ − IPR ↓|. For clarity of visualization, the color scale for ∆IPR is restricted to a maximum value of 0 .20. The trends observed in the eigenstate profiles are fully consistent with the IPR-resolved spectral characteristics discussed earlier. In subplots (a), the eigenstates remain predominantly delocalized at weak interaction strengths. As U enters an intermediate regime, a subset of states undergoes pronounced localization, while at sufficiently large U the eigenstates progressively recover extended character. Across most of the interaction range, the in-verse participation ratios of the spin-up and spin-down sectors remain nearly identical, indicating minimal spin-dependent localization. However, in the intermediate in-teraction window, where significant spectral reconstruc-tion occurs, the difference between the spin-resolved IPRs becomes finite for a subset of eigenstates. This enhanced          
+
+> FIG. 11. Average fractal dimension D2in the hz–Uplane for (a) λ= 0 .5 and (b) λ= 0 .8.
+
+∆IPR (subplot (c)) reflects an interaction-induced spin asymmetry in the spatial structure of the eigenstates and serves as a clear signature of correlation-driven localiza-tion effects. Subplots (d) and (e) display the corresponding spin-resolved eigenstate characteristics for λ = 0 .8 and hz =0.8. At weak interaction strengths, the eigenstates near the spectral edges remain predominantly extended for both spin sectors, while states in the central part of the spectrum exhibit comparatively stronger localization. As 
+
+U enters an intermediate regime (around U ≈ 5), a pro-nounced localization emerges in the middle of the spec-trum. Moving away from the spectral center, the states gradually recover extended character; however, the edge states, which were delocalized at low U , begin to show enhanced localization. Around U ≈ 7, the edge states become sharply localized. Although qualitatively sim-ilar trends are observed in subplots (a) and (b), the localization- delocalization crossover is significantly more pronounced and clearly resolved in subplots (d) and (e). At larger interaction strengths, the spectral distribution of localization contrasts sharply with the weak-U regime: the edge states become more localized than those near the center of the spectrum. Subplot (f) captures this behavior through the difference ∆IPR, which mirrors the same spectral pattern, albeit with a comparatively smaller magnitude.   
+
+> C. U-dependence of the average IPR, average NPR, and their spin asymmetries.
+
+In Fig. 5, we show the evolution of the average in-verse participation ratio (AIPR) and the average nor-malized participation ratio (ANPR) as functions of the interaction strength U , with the subplot arrangement following the same parameter-space organization as in the earlier figures. For subplots (a) and (b), where the quasiperiodic strength is fixed at λ = 0 .5 and the Zeeman field hz is increased from 0 .4 to 0 .8, the system remains predominantly extended at weak interactions, under-goes interaction-induced localization in an intermediate-
+
+U regime, and subsequently recovers extended behavior at larger U , as indicated by enhanced (suppressed) AIPR (ANPR) at intermediate U . In contrast, upon increas-8
+
+ing λ from 0 .5 to 0 .8 while keeping hz = 0 .4 fixed, the extended phase survives only over a very narrow range of small U , followed by rapid localization as U increases, with the system remaining strongly localized throughout the intermediate-U regime. Although partial delocaliza-tion tendencies emerge at larger U , the system does not fully recover an extended phase, and the AIPR remains finite even at the highest interaction strengths consid-ered. In Fig. 6, we analyze the interaction dependence of the spin-resolved differences ∆AIPR and ∆ANPR. At weak interaction strengths, both quantities remain nearly zero, reflecting the fact that spin-up and spin-down electrons experience almost identical effective mean-field potentials and thus exhibit similar spatial distributions. In this regime, the eigenstates are predominantly extended, and the influence of the interaction-induced Hartree term on spin differentiation is minimal. As U is increased into the intermediate interaction regime, both ∆AIPR and ∆ANPR develop pronounced maxima. This enhance-ment coincides with the onset of interaction-driven local-ization observed in Fig. 5, indicating that localized eigen-states are significantly more sensitive to spin-dependent fluctuations of the mean-field potential. In this regime, small differences in the local spin densities are ampli-fied by the Hubbard interaction, leading to an imbal-ance in the spatial confinement of spin-up and spin-down states. Consequently, localization acts as a magnifying mechanism for spin asymmetry, even though the overall magnitude of the difference remains small. Upon further increasing U , both ∆AIPR and ∆ANPR gradually de-crease and approach zero again. This behavior reflects the restoration of a more homogeneous mean-field en-vironment at strong coupling, where interaction effects dominate over quasiperiodic modulation and suppress spin-dependent spatial differentiation. The nonmono-tonic dependence of ∆AIPR and ∆ANPR on U there-fore establishes a direct connection between correlation-induced localization and spin-resolved spatial asymmetry in the interacting quasiperiodic system.  
+
+> D. Variation of IPR (NPR) with eigenstates
+
+In Fig. 7, we present the eigenstate-resolved inverse participation ratio (IPR) and normalized participation ratio (NPR) for λ = 0.8 and hz = 0.8 at four rep-resentative interaction strengths. For weak interaction (U = 1), the spectrum is predominantly extended, as reflected by low IPR and high NPR values, except for states near the center of the spectrum that exhibit en-hanced localization. Upon increasing the interaction to 
+
+U = 5, interaction-induced correlations substantially re-shape the spatial character of the eigenstates: the sys-tem displays a mixed regime in which localized states emerge in the central part of the spectrum, while neigh-boring states show partial delocalization. This nonuni-form localization pattern persists and becomes more pro-nounced at U = 7, where a larger fraction of eigen-states exhibits stronger spatial confinement. At strong coupling ( U = 9), the localization profile undergoes a qualitative inversion: the edge states become strongly localized, whereas a broad portion of the spectrum recov-ers extended character. The spectrum retains a mirror-symmetric structure about its center for all interaction strengths, reflecting the underlying lattice and spin sym-metries. Overall, these results demonstrate a nonmono-tonic and spectrally selective evolution of localization driven by the interplay between quasiperiodicity, Zeeman splitting, and interaction effects. Figure 8 presents the same set of four subplots for 
+
+λ = 0 .5 and hz = 0 .4. In this case, a pronounced mirror-symmetric structure of the eigenstate profiles is observed across all interaction strengths. Unlike the higher-λ case discussed earlier, the spectral inversion of localization characteristics, previously seen at large U is absent here, indicating a weaker interaction-driven redistribution of localized and extended states in this parameter regime. We further observe that for most eigenstates the IPR (NPR) of the spin-up and spin-down sectors overlap almost exactly, indicating nearly identical localization properties for the two spin channels. However, for a sub-set of eigenstates this overlap breaks down, manifested as distinct deviations that appear, for instance, as pro-nounced spikes (red color) in the IPR spectrum. These features signal eigenstates for which the spatial local-ization characteristics of the two spin components differ quantitatively, reflecting a state-dependent spin asym-metry induced by interactions. Such deviations, signal-ing state-dependent spin asymmetry in localization, are more prominent in Fig. 8 than in Fig. 7.   
+
+> E. Phase diagram of η, the extrema of the IPR, and the fractal dimension D2
+
+In Fig. 9, we present the phase diagram of η over the full parameter space, with hz varied along the y axis and 
+
+U along the x axis. Such η-based phase diagrams are commonly used to identify localized, delocalized, and in-termediate regimes. For numerical simplicity and to en-sure reliable convergence, we restrict our analysis to a system size of L = 144, which is sufficient to capture the essential characteristics of the different phases. Subplots (a) and (b) correspond to two representative quasiperi-odic strengths, λ = 0 .5 and λ = 0 .8, respectively. Since 
+
+η alone cannot distinguish between fully delocalized and fully localized phases, we additionally analyze the ex-trema of the IPR, namely its maximum and minimum values, as shown in Fig. 10 . The first and second rows correspond to the lower and higher values of λ, respec-tively, and closely follow the structure of the η phase dia-gram. From Fig. 9(a), a strip-like region emerges beyond a critical value of hz , which gradually broadens with in-creasing hz . A detailed inspection of the corresponding maximum and minimum IPR maps in Fig. 10 (a) and (b) 9
+
+# 0 0 
+
+# U
+
+# 00  
+
+# 0 0
+
+# 0  
+
+>   
+
+# 0 0 
+
+# U
+
+# 0  
+
+# 0 
+
+# 0 
+
+>  
+
+# 0 0 
+
+# U
+
+# 00 
+
+# 0 
+
+# 000 
+
+> 
+
+#     
+
+# 0 0 
+
+# U
+
+# 0 
+
+# 0 
+
+# 0 
+
+>   ⟨     
+
+# 0 0 
+
+# U
+
+# 00000 
+
+# 00 
+
+# 00 
+
+> ⟩
+
+# 0 0 
+
+# U
+
+# 0 
+
+# 0 
+
+# 0 0 
+
+>  
+
+# Δ                  
+
+> FIG. 12. (Color online). Dependence of various mean-field observables on U: variance (a), ASD (b), double occupancy D(c),
+> 〈(n↑−n↓)2〉(d), △(e), and local entropy S(f), shown for λ= 0 .5 and hz= 0 .4.
+
+reveals that the regions on both sides of this strip corre-spond to fully delocalized phases. Within the strip, the red-colored region in Fig. 10 (b) signifies a fully localized phase. In contrast, the off-white to light bluish regions in Fig. 10 (b), along with the corresponding regions in Fig. 10 (a) and Fig. 9(a), can be identified as an interme-diate phase, characterized by finite minimum IPR values that do not approach zero. For λ = 0 .8, as shown in Fig. 9(b) and the correspond-ing Figs. 10 (c) and (d), the fully delocalized regime sur-vives only within a very narrow window of U , indicated by the dark blue region in Fig. 10 (c). A closer inspec-tion of the minimum IPR map reveals a red strip that is considerably thicker than in the λ = 0 .5 case, signifying an extended localized region. In contrast, the off-white to light bluish regions in Fig. 10 (d), which are noticeably narrower than in the lower-λ case, can be identified as an intermediate phase. An important distinction emerging from Figs. 10 (c) and (d) is that, although the minimum IPR approaches zero (dark blue region in subplot (d)), the maximum IPR remains finite, indicating the coex-istence of states with small and moderate IPR values. Consequently, upon averaging over all states, the system effectively enters a localized phase, a behavior that is qualitatively different from the λ = 0 .5 case, where both the minimum and maximum IPR values on either side of the strip remain close to zero, reflecting a uniformly extended phase. In Fig. 11 , we present the phase diagram of the aver-age fractal dimension 〈D2〉 in the hz –U plane for λ = 0 .5and 0 .8, shown in subplots (a) and (b), respectively. For 
+
+λ = 0 .5 [subplot (a)], a reddish region with 〈D2〉 ≈ 0.88 clearly indicates a delocalized phase, while the dark blue region, where 〈D2〉 is reduced to values around 0 .11, cor-responds to a localized window. The intermediate off-white to light bluish regions, characterized by 〈D2〉 & 0.3, can therefore be identified as a critical (multifractal) regime. For the higher quasiperiodic strength λ = 0 .8[subplot (b)], a fully extended phase with large 〈D2〉
+
+survives only within a very narrow window of U , con-sistent with our earlier analysis. In contrast, a broad region with intermediate values 〈D2〉 ∼ 0.7 signals an enhanced critical regime, while the dark bluish region ex-pands significantly, indicating a strongly localized phase, in agreement with the corresponding IPR-extrema phase diagrams. Finally, we note that the mean-field calcula-tions are highly sensitive to system size for achieving con-vergence; therefore, we restrict our analysis to L = 144 lattice sites, which is sufficient to capture the essential macroscopic features and provide a qualitative overview of the phase structure.   
+
+> F. Different mean field parameters with U
+
+To further quantify the interaction-driven restructur-ing of the electronic states, we examine the variance of the local site occupations, defined as Var sites = 〈n↑〉 (1 − 〈 n↑〉) + 〈n↓〉 (1 − 〈 n↓〉) , (15) where 〈nσ〉 denotes the spin-resolved mean density ob-tained from the self-consistent Hartree solution. In Fig. 12 (a), we present the interaction dependence of the density fluctuation Var( n), obtained by averag-ing Var sites over all lattice sites. In the weakly interact-10 
+
+ing regime, Var( n) assumes relatively large values, re-flecting nearly homogeneous charge distributions associ-ated with extended eigenstates; correspondingly, the av-erage inverse participation ratio (AIPR) remains low. As the Hubbard interaction U is increased, Var( n) initially decreases, following a trend opposite to that of AIPR. However, upon entering an intermediate interaction win-dow, a subset of eigenstates undergoes localization driven by the combined effects of quasiperiodicity and the self-consistent Hartree potential. This interaction-induced lo-calization gives rise to pronounced spatial density mod-ulations, enhancing site-to-site charge fluctuations and leading to a noticeable increase in Var( n). The simulta-neous enhancement of Var( n) and AIPR in this regime establishes a direct correspondence between density inho-mogeneity and eigenstate localization. At larger values of U , the effective mean-field potential becomes smoother again, and the system returns to a weakly inhomoge-neous or extended regime, where both Var( n) and AIPR are suppressed. The resulting nonmonotonic evolution of Var( n) with U therefore closely tracks the behavior of AIPR, demonstrating that density fluctuations provide an independent and complementary probe of interaction-driven localization in the quasiperiodic Hubbard model. In Fig. 12 (b) we plot the average spin-density imbal-ance (ASD), defined as ASD = 1
+
+L
+
+> L
+
+∑
+
+> i=1
+
+∣∣〈ni, ↑〉 − 〈 ni, ↓〉∣∣, (16) which directly quantifies the site-averaged spin polar-ization in the interacting system. At weak interac-tion strengths, the ASD increases with U , reflecting the enhancement of spin imbalance induced by the Zee-man field hz in the presence of a nearly homogeneous Hartree potential. As U is increased into the interme-diate regime, the combined effects of quasiperiodicity and interaction-driven Hartree fields lead to partial lo-calization and strong spatial inhomogeneity of the lo-cal densities. In this regime, the spin polarization be-comes highly nonuniform across the lattice, resulting in a partial cancellation of local spin imbalances when av-eraged over sites and giving rise to a pronounced dip in the ASD. Upon further increasing U , the interaction term dominates and enforces a more robust local spin polarization throughout the system, thereby increasing the ASD again. The resulting nonmonotonic dependence of the ASD on U thus captures the competition between Zeeman-induced spin splitting and interaction-driven lo-calization, and provides a complementary spin-resolved signature of the interaction-controlled restructuring of the electronic states. A similar pattern and character-istic behavior are also observed in Fig. 12 (d). In Fig. 12 (c) we plot the interaction dependence of the site-averaged quantity 
+
+D = 1
+
+L
+
+> L
+
+∑
+
+> i=1
+
+〈ni, ↑〉〈 ni, ↓〉, (17)      
+
+> FIG. 13. Variation of SDW in the hz–Uplane for 144 sites. Panels (a) and (b) correspond to λ= 0 .5 and 0 .8, respectively.
+
+which represents the mean-field probability of simultane-ous spin-up and spin-down occupation at the same lat-tice site. In the weakly interacting regime, D decreases gradually with increasing U due to the repulsive Hubbard interaction, which energetically disfavors local double oc-cupancy. As U enters an intermediate regime, the com-bined effects of quasiperiodicity and interaction-induced Hartree potentials drive partial localization and strong spatial modulation of the local densities. In this regime, electrons become concentrated on a subset of lattice sites, enhancing the overlap between 〈ni, ↑〉 and 〈ni, ↓〉 on those sites and leading to a noticeable increase in D. Upon further increasing U , the repulsive interaction dominates over density inhomogeneity, strongly suppressing simul-taneous spin occupancy across the lattice and causing D
+
+to decrease again. The resulting nonmonotonic behavior of D therefore reflects a competition between interaction-driven localization, which enhances local density overlap, and strong on-site repulsion, which suppresses double oc-cupancy. Its close correspondence with the behavior of Var( n) further establishes D as an independent real-space indicator of interaction-induced localization within the Hartree mean-field framework. In Fig. 12 (e) we present the interaction dependence of the single-particle excitation gap ∆ = Eunocc − Eocc , (18) where Eocc and Eunocc denote, respectively, the high-est occupied and lowest unoccupied eigenvalues obtained from the combined spin-up and spin-down mean-field spectrum. In the weakly interacting regime, the gap re-mains nearly zero, consistent with an extended phase characterized by delocalized eigenstates and a quasi-continuous spectrum. As the Hubbard interaction U is increased into an intermediate regime, a finite gap de-velops, signaling a substantial restructuring of the effec-tive single-particle spectrum. This gap opening coincides with the enhancement of AIPR, Var( n), and the site-averaged overlap D, indicating that interaction-induced localization and strong density inhomogeneity lead to an energetic separation between occupied and unoccupied states. In this regime, the self-consistent Hartree po-tential generates site-dependent energy shifts, which lift the near-degeneracies present at low U and stabilize a gapped spectrum. Upon further increasing U , the gap decreases again and tends toward smaller values, reflect-11 
+
+ing a partial restoration of spectral continuity associated with the re-emergence of extended or weakly localized eigenstates. The nonmonotonic behavior of ∆ therefore mirrors that of AIPR and density-fluctuation measures, establishing the excitation gap as an energetic manifesta-tion of interaction-driven localization in the quasiperiodic Hubbard model. We further investigate the interaction-driven evolution of the local electronic structure through the site-averaged local entropy, defined as 
+
+Sloc = − [n↑ ln( n↑) + n↓ ln( n↓)] , (19) with n↑ and n↓ obtained from the self-consistent Hartree solution. Figure 12 (f) displays the spatially averaged quantity 〈Sloc 〉, denoted by S, as a function of the interac-tion strength U . At weak coupling, S assumes relatively large values, reflecting nearly homogeneous spin densi-ties and a high degree of local configurational uncertainty characteristic of extended eigenstates. As the interaction strength U is increased into an intermediate regime, the system undergoes a qualitative reorganization driven by the interplay of quasiperiodicity and interaction-induced Hartree fields. In this regime, strong site-dependent den-sity modulations develop, leading to pronounced spatial variations of both n↑ and n↓. These inhomogeneities en-hance local charge and spin fluctuations rather than sup-pressing them, resulting in a marked increase of the site-averaged local entropy S. The entropy peak coincides with the maxima observed in Var( n) and D, as well as with enhanced AIPR and the emergence of a finite single-particle gap, establishing the intermediate-U window as the regime of strongest correlation effects. Upon further increasing U , the effective mean-field potential becomes smoother and the system crosses over into a weakly inho-mogeneous or re-extended regime, where density fluctua-tions are reduced. Consequently, S decreases again, mir-roring the behavior of Var( n) and D. The resulting non-monotonic dependence of the local entropy on U there-fore provides an entropic fingerprint of interaction-driven localization and spectral reconstruction in the quasiperi-odic Hubbard model.  
+
+> G. Variation of SDW phase diagram
+
+The spin–density–wave (SDW) amplitude is obtained from the converged spin-resolved local densities 〈ni, ↑〉
+
+and 〈ni, ↓〉 as 
+
+m(q) = 1
+
+L
+
+∣∣∣∣∣
+
+> L
+
+∑
+
+> i=1
+
+eiq·i (〈ni, ↑〉 − 〈 ni, ↓〉)
+
+∣∣∣∣∣ , (20) where L denotes the total number of lattice sites and q
+
+is the SDW ordering wave vector. The maximum SDW response is then defined as 
+
+SDW m = max  
+
+> q
+
+m(q), (21) which is evaluated over all allowed wave vectors in the Brillouin zone. In Fig. 13 (a), we present the phase diagram of the max-imum spin–density–wave amplitude SDW m in the hz –U
+
+parameter space for λ = 0 .5. At U = 0, SDW m remains vanishingly small up to a finite threshold value of the staggered field hz , beyond which it increases monoton-ically and reaches values close to saturation (SDW m ≃
+
+0.95) at hz = 1. A similar behavior is observed along the interaction axis: for hz = 0, SDW m is initially zero and becomes finite only beyond a critical interaction strength, increasing steadily with U . A more intriguing behavior emerges at finite hz , where SDW m is already nonzero at weak interaction strengths but decreases upon increasing 
+
+U , reaching a minimum at intermediate U . This suppres-sion of SDW order coincides with the interaction regime in which pronounced spectral reconstruction and local-ization effects were identified in earlier figures. Upon further increasing U , the SDW amplitude recovers and grows again, leading to a nonmonotonic high–low–high evolution of SDW m. This re-entrant behavior of the SDW order parameter is closely correlated with the ex-tended–localized–extended crossover observed in the lo-calization diagnostics, highlighting a strong interplay be-tween interaction-driven magnetic ordering and spatial localization of the electronic states. Figure 13 (b), the quasiperiodic modulation strength is increased to λ = 0 .8. As a result, the intermediate inter-action regime is significantly enlarged, consistent with our earlier observations. In particular, the nonmono-tonic high–low–high evolution of the maximum SDW am-plitude becomes more pronounced: the intermediate re-gion where SDW m is suppressed broadens, while the low-and high-U regimes with enhanced SDW order are cor-respondingly reduced. This expansion of the intermedi-ate low-SDW m region reflects the strengthened influence of quasiperiodicity, which promotes localization and sup-presses coherent spin modulation over a wider range of in-teraction strengths. The resulting behavior further sup-ports the close connection between the re-entrant SDW response and the extended–localized–extended crossover identified in the localization and spectral analyses.  
+
+> H. Real time dynamics
+
+The real-time evolution of a spin-resolved single-particle wave packet governed by the effective mean-field Hamiltonian. To probe the dynamical transport charac-teristics of the system, we consider an initially localized excitation prepared at a specific lattice site, 
+
+|ψσ (0) 〉 = |j0, σ 〉,
+
+where j0 denotes the initial site and σ =↑, ↓ labels the spin degree of freedom. The subsequent time evolution of the wave packet is dictated by the unitary time-evolution operator, 
+
+|ψσ (t)〉 = e−iH σ t |ψσ (0) 〉,12           
+
+> FIG. 14. Spatiotemporal evolution of the probability den-sity |ψ(t)|2across the lattice, resolved for both spin sectors. Panels (a)–(d) illustrate the extended, intermediate, localized, and intermediate dynamical regimes obtained at interaction strengths U= 1, 5, 7, and 9, respectively, for λ= 0 .8 and
+> hz= 0 .8. The system size is fixed at L= 144 to enhance the visibility of the time evolution and to clearly distinguish ex-tended from localized propagation in both the up- and down-spin channels.
+
+where we set ℏ = 1 and Hσ represents the spin-dependent effective Hamiltonian obtained from the self-consistent Hartree decoupling. Since the dynamics is governed by an effective single-particle description, the time-evolved state can be expressed in the lattice basis as 
+
+|ψσ (t)〉 =
+
+> L
+
+∑
+
+> j=1
+
+ψj,σ (t) |j, σ 〉,
+
+with ψj,σ (t) denoting the probability amplitude of find-ing a particle with spin σ at site j and time t. The spatiotemporal spreading of the wave packet is therefore quantified through the site- and spin-resolved probability density |ψj,σ (t)|2.Figure 14 displays the real-time evolution of the spin-resolved probability density |ψj,σ (t)|2 as a function of the site index j and time t for both spin sectors, evaluated at four representative values of the interaction strength                   
+
+> FIG. 15. Time evolution of the root-mean-square displace-ment σ(t) as a function of time for interaction strengths
+> U= 1, 5, 7, and 9 at λ= 0 .8 and hz= 0 .8.
+> FIG. 16. Maximum wave-packet spread σG, max (crimson solid line) and survival probability Prat r= 10 (blue dashed line) plotted as functions of Ufor four representative λ–hzparam-eter sets, as specified in Fig. 2.
+
+U for λ = 0 .8 and hz = 0 .8. A reduced system size of 
+
+L = 144 is employed to facilitate a clear visualization of the wave-packet spreading dynamics. Consistent with the static spectral and localization diagnostics discussed earlier, the spin-up and spin-down components exhibit nearly identical dynamical signatures across all interac-tion regimes. At weak interaction ( U = 1), the initially localized wave packet expands coherently across the lat-tice, generating a pronounced light-cone–like structure characteristic of ballistic transport in an extended phase. Upon increasing the interaction to U = 5, the spread-ing is strongly suppressed and the wave packet remains largely confined near its initial site, indicating the on-set of partial localization. For U = 7, the dynamics is dominated by strong confinement, with the wave packet remaining localized throughout the evolution, signaling a fully localized regime. Interestingly, at larger interac-tion strength ( U = 9), the wave packet again exhibits appreciable spatial spreading, suggesting a re-emergence of extended behavior driven by interaction-induced re-structuring of the effective single-particle states. To quantify the nonequilibrium dynamics of the interact-13 
+
+ing system, we analyze two complementary observables constructed from the spin-resolved time-dependent wave functions ψj,σ (t). The first quantity is the root-mean-square (RMS) displacement of the wave packet, defined for each spin sector as 
+
+σσ (t) = 
+
+
+
+> L
+
+∑
+
+> j=1
+
+(j − j0)2 |ψj,σ (t)|2
+
+
+
+> 1/2
+
+, (22) where the initial excitation is placed at the central site 
+
+j0 = L/ 2. Our numerical analysis shows that the tempo-ral evolution of σ↑(t) and σ↓(t) follows nearly identical trends over the entire parameter range. We therefore characterize the wave-packet spreading using the spin-averaged displacement, σ(t) = 1 
+
+> 2
+
+[σ↑(t) + σ↓(t)]. In the localized regime, the wave packet remains con-fined close to its initial position, causing the root-mean-square displacement σ(t) to rapidly saturate at a small value. In contrast, both extended and intermediate regimes are characterized by appreciable spatial spread-ing, which leads to significantly larger saturation values of σ(t). As shown in Fig. 15 , σ(t) attains enhanced val-ues for U = 1 and U = 9, signaling extended transport in these regimes. On the other hand, for U = 5 and 
+
+U = 7 the saturation values are markedly reduced, with the smallest σ(t) occurring at U = 7, clearly indicating strong localization. These dynamical trends are fully con-sistent with the localization characteristics inferred from the static spectral and eigenstate analyses discussed ear-lier. We denote the long-time limit by σt and introduce a normalized measure σG, max = σ(t)/σ max , where σmax 
+
+corresponds to the fully extended reference case (ob-tained for U = 0). Consequently, σ(t)/σ max ≈ 1 sig-nals extended dynamics, σ(t)/σ max ≈ 0 indicates strong localization, and intermediate finite values characterize partially extended behavior. As a second diagnostic, we compute the spin-resolved survival probability, 
+
+Pr,σ (t) = 
+
+> ⌈L/ 2⌉+r
+
+∑
+
+> j=⌈L/ 2⌉− r
+
+|ψj,σ (t)|2 , (23) which measures the likelihood that the wave packet re-mains within a finite window of width 2 r + 1 centered around the initial site. Similar to the RMS displacement, the survival probabilities for spin-up and spin-down com-ponents exhibit almost indistinguishable temporal be-havior, allowing us to define a spin-averaged quantity 
+
+Pr (t) = 1 
+
+> 2
+
+[Pr, ↑(t) + Pr, ↓(t)]. In the long-time limit, Pr (t)vanishes in the extended phase due to complete delocal-ization of the excitation, approaches unity in the local-ized phase where the wave packet remains trapped, and attains finite nonzero values in the intermediate regime. Together, the combined behavior of σ(t) and Pr (t) pro-vides a robust and consistent characterization of the dy-namical transport properties across different interaction-driven phases. In Fig. 16 , we present the interaction dependence of the survival probability Pr and the normalized satura-tion width σG, max for different parameter regimes, cho-sen consistently with the earlier figures. Both quantities exhibit trends that closely mirror those observed for the average IPR and average NPR in Fig. 5. In particular, regimes characterized by enhanced localization (delocal-ization) correspond to larger (smaller) values of Pr and reduced (enhanced) values of σG, max . This close corre-spondence between dynamical and static diagnostics pro-vides further confirmation that the interaction-driven lo-calization behavior inferred from the eigenstate analysis is robust and persists under real-time evolution.  
+
+> IV. CONCLUSION
+
+In conclusion, we have systematically investigated interaction-driven localization, spin asymmetry, multi-fractality, and nonequilibrium dynamics in a quasiperi-odic spinful Hubbard ring subjected to a staggered spin-dependent Zeeman field within a self-consistent mean-field framework. By combining IPR-resolved spectral analysis, spin-dependent localization diagnostics, aver-aged participation measures, fractal-dimension charac-terization, real-space mean-field observables, and real-time wave-packet dynamics, we have demonstrated that the interplay of quasiperiodicity, Zeeman splitting, and Hubbard interaction produces a highly nonmonotonic and spectrally selective evolution of electronic states. Starting from a predominantly extended regime at weak coupling, the system undergoes a pronounced interaction-induced restructuring in an intermediate-U
+
+window, marked by enhanced localization, spin-resolved asymmetry, spectral gap opening, strong density inhomo-geneity, and elevated local entropy, before exhibiting a re-entrant tendency toward delocalization at strong cou-pling driven by Hartree renormalization. The phase di-agrams constructed from the combined localization pa-rameter η, the extrema of the inverse participation ra-tio, and the average fractal dimension D2 reveal the coexistence of extended, localized, and critical multi-fractal regimes, with their stability strongly controlled by the quasiperiodic strength and Zeeman field. While the majority of eigenstates retain nearly identical local-ization properties for the two spin sectors, a subset of states in the intermediate regime displays enhanced spin-dependent localization, reflecting the amplification of small spin-density imbalances by interactions in spatially confined states. These static signatures are fully cor-roborated by real-time dynamical probes, where ballistic spreading, strong confinement, and re-emergent trans-port are observed in direct correspondence with the un-derlying eigenstate properties. Taken together, our re-sults establish a unified physical picture in which inter-actions act as a dual agent, capable of both inducing and suppressing localization in quasiperiodic systems, while enabling controlled spin-selective effects through stag-14 
+
+gered Zeeman coupling. Our findings are directly rele-vant to engineered quantum materials, cold-atom optical lattices, and synthetic lattice platforms, and they pro-vide a robust foundation for future studies incorporating beyond-mean-field correlations, dissipation, or higher-dimensional geometries. 
+
+[1] P. W. Anderson, Phys. Rev. 109 , 1492 (1958). 
+
+[2] N. Mott, J. Phys. C 20 , 3075 (1987). 
+
+[3] P. A. Lee and T. V. Ramakrishnan, Rev. Mod. Phys. 57 ,287 (1985). 
+
+[4] S. Aubry and G. Andre, Ann. Israel Phys. Soc. 3, 133 (1980). 
+
+[5] E. Abrahams et al., Phys. Rev. Lett. 42 , 673 (1979). 
+
+[6] M. Verbin et al., Phys. Rev. Lett. 110 , 076403 (2013). 
+
+[7] P. G. Harper, Proc. Phys. Soc. A 68 , 874 (1955). 
+
+[8] J. B. Sokoloff, Phys. Rep. 126 , 189 (1985). 
+
+[9] Y. E. Kraus et al., Phys. Rev. Lett. 109 , 106402 (2012). 
+
+[10] D. J. Thouless, Phys. Rep. 13 , 93 (1974). 
+
+[11] B. Simon, Adv. Appl. Math. 3, 463 (1982). 
+
+[12] F. J. Wegner, Z. Phys. B 36 , 209 (1980). 
+
+[13] C. M. Soukoulis and E. N. Economou, Phys. Rev. Lett. 
+
+48 , 1043 (1982). 
+
+[14] S. Sil et al., Phys. Rev. Lett. 101 , 076803 (2008). 
+
+[15] J. Biddle and S. D. Sarma, Phys. Rev. Lett. 104 , 070601 (2010). 
+
+[16] D. Delande and G. Orso, Phys. Rev. Lett. 113 , 060601 (2014). 
+
+[17] H. P. Luschen et al., Phys. Rev. Lett. 120 , 160404 (2018). 
+
+[18] M. Rossignolo and L. DellAnna, Phys. Rev. B 99 , 054211 (2019). 
+
+[19] S. Y. Jitomirskaya, Ann. Math. 150 , 1159 (1999). 
+
+[20] S. Roy and S. K. Maiti, Eur. Phys. J. B 92 , 267 (2019). 
+
+[21] S. Ganeshan et al., Phys. Rev. Lett. 114 , 146601 (2015). 
+
+[22] S. Ganeshan et al., Phys. Rev. Lett. 110 , 180403 (2013). 
+
+[23] S. D. Sarma et al., Phys. Rev. B 41 , 5544 (1990). 
+
+[24] S. D. Sarma et al., Phys. Rev. Lett. 61 , 2144 (1988). 
+
+[25] T. Liu and H. Guo, Phys. Rev. B 96 , 174207 (2017). 
+
+[26] T. Liu and H. Guo, Phys. Rev. B 98 , 104201 (2018). 
+
+[27] W. P. Su et al., Phys. Rev. Lett. 42 , 1698 (1979). 
+
+[28] M. Yahyavi et al., Phys. Rev. B 100 , 064202 (2019). 
+
+[29] A. Eilmes et al., Eur. Phys. J. B 23 , 229 (2001). 
+
+[30] E. J. Meier et al., Nat. Commun. 7, 13986 (2016). 
+
+[31] S. Roy et al., Phys. Rev. Lett. 126 , 106803 (2021). 
+
+[32] S. Bid and A. Chakrabarti, Phys. Lett. A 423 , 127816 (2022). 
+
+[33] T. Liu and H. Guo, Phys. Lett. A 382 , 3287 (2018). 
+
+[34] S. Roy and S. K. Maiti, J. Phys.: Condens. Matter 35 ,355303 (2023). 
+
+[35] B. S. Shastry and B. Sutherland, Phys. Rev. Lett. 65 ,243 (1990). 
+
+[36] A. Kambili et al., Phys. Rev. B 60 , 7684 (1999). 
+
+[37] S. Gupta et al., Physica B 355 , 65 (2005). 
+
+[38] S. K. Maiti and A. Chakrabarti, Phys. Rev. B 82 , 184201 (2010). 
+
+[39] X. Li et al., Phys. Rev. B 96 , 085119 (2017). 
+
+[40] M. Gonulol, E. Aydiner, Y. Shikano, and O. E. Muste-caplioglu, New J. Phys. 13 , 033037 (2011). 
+
+[41] Z. Xu, H. Huangfu, Y. Zhang, and S. Chen, New J. Phys. 
+
+22 , 013036 (2020). 
+
+[42] R. Qi, J. Cao, and X.-P. Jiang, Phys. Rev. B 107 , 224201 (2023). 
+
+[43] Z. Zhang, P. Tong, J. Gong, and B. Li, Phys. Rev. Lett. 
+
+108 , 070603 (2012). 
+
+[44] C. Wu, J. Fan, G. Chen, and S. Jia, New J. Phys. 23 ,123048 (2021).

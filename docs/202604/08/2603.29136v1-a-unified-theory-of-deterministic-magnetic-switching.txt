@@ -1,0 +1,312 @@
+Title: A Unified Theory of Deterministic Magnetic Switching
+
+URL Source: https://arxiv.org/pdf/2603.29136v1
+
+Published Time: Wed, 01 Apr 2026 00:27:06 GMT
+
+Number of Pages: 6
+
+Markdown Content:
+# A Unified Theory of Deterministic Magnetic Switching 
+
+Xizhi Fu, 1 Lei Han, 2 Xi Liu, 1 Cheng Song, 2 and Junwei Liu 1, 3, ∗
+
+> 1
+
+Department of Physics, Hong Kong University of Science and Technology, Clear Water Bay, Hong Kong SAR, China 
+
+> 2
+
+Key Laboratory of Advanced Materials (MOE), School of Materials Science and Engineering, Tsinghua University, Beijing 100084, China 
+
+> 3
+
+IAS Center for Quantum Matter, Hong Kong University of Science and Technology, Clear Water Bay, Hong Kong SAR, China 
+
+(Dated: April 1, 2026) The deterministic switching of magnetic order parameters is critically important, as it forms the fundamental basis for manipulating information states in magnetic memory devices. This work presents a general theoretical framework that unifies the mechanisms of magnetic switching by introducing the concept of switching symmetry and establishing that the necessary condition for deterministic switching is the breaking of all switching symmetries, which can be achieved through asymmetric states, asymmetric barriers, and asymmetric torques. Our theory can successfully and universally explain all reported experimental cases of deterministic magnetic switching and provides unified and simple design principles for new switching devices of all magnetic materials without the need of complicated simulations. 
+
+Introduction — The study of the deterministic switch-ing of order parameters in magnetic systems has a long and rich history [1]. In ferromagnets (FMs), net magne-tization can be reversed by a magnetic field or current-induced torques, such as spin-transfer torques (STTs) [2–5] and spin-orbit torques (SOTs) [6–18]. These fun-damental discoveries have propelled the development of magnetoresistive random-access memory, a cornerstone in non-volatile memory technology. In contrast, antifer-romagnets (AFMs) are expected to exhibit superior per-formance for next-generation spintronic devices because of their ultrafast dynamics and high integration density [19, 20]. In particular, the recently discovered altermag-nets (A lMs) [21–32] further integrate the properties and advantages of FMs and conventional AFMs by exhibiting spin-splitting band structures and zero net magnetization in the nonrelativistic limit. However, the compensated magnetic moments in con-ventional AFMs and A lMs make manipulation of the Néel vector exceptionally challenging. It is only in re-cent years that electrical switching of the Néel vector has been demonstrated, and so far only in a limited number of AFMs and A lMs [33–45]; see also related theoreti-cal studies [46–49]. Despite these substantial experimen-tal advances, one central question remains unresolved: What are the fundamental requirements for determin-istic switching , a process in which controllable external stimuli can unambiguously drive the system from any initial state to a uniquely designated final state? In this work, we introduce the new concept of switch-ing symmetry, which is the symmetry operation that maps distinct magnetic ground states to each other, and demonstrate that the necessary condition for determinis-tic switching is the breaking of all switching symmetries. This general principle governs switching dynamics across various mechanisms, including asymmetric state ener-gies, asymmetric energy barriers, or asymmetric driving torques. We rigorously validate this theory by analyz-
+
+FIG. 1. Schematic illustration of symmetry operations and their effects on ground states. (a) In a magnetic system with n-fold degenerate ground states, the switching symmetry gνμ 
+
+> S
+
+maps the ground state ψμ to ψν , thereby transforming the order parameter from Oμ to Oν . In contrast, the magnetic space group symmetry gμ 
+
+> M
+
+leaves ψμ and Oμ invariant. (b) Left: In a FM with a single sublattice, the identity E preserves the ground state, whereas the time-reversal T reverses the net magnetization M = m1. Right: In an AFM with two sublattices, the Néel vector N = ( m1 − m2)/2 is reversed under either T or the translation t. The four-fold rotation C4
+
+rotates both M (FM) and N (AFM) by 90 ◦.
+
+ing the role of switching symmetry and external stimuli on switching dynamics based on the Landau–Lifshitz– Gilbert (LLG) equation and further explicitly demon-strate its power in typical FMs, AFMs, and A lMs. 
+
+Unified theory — We begin by establishing the unified theory for magnetic switching. A typical magnetic sys-tem can be described by the local magnetic moments 
+
+mi at the sites ri in a periodic crystal characterized by the crystal space group GC = {gC}. Represented by a classical pseudo-vector function m(ri), each mi
+
+transforms as ˜m(ri) = gCm(g−1C ri) under the gC op-
+
+> arXiv:2603.29136v1 [cond-mat.other] 31 Mar 2026
+
+2eration [50, 51], with m being invariant under inver-sion ( P) and translation ( t) operations. Without ex-ternal stimuli, the Hamiltonian H(m) of magnetic mo-ments generally remains invariant under all gC oper-ations and time-reversal ( T ) operation, i.e., H(m) = 
+
+H( ˜m), where m ≡ [m(r1), m(r2), . . . , m(rN )] and ˜m ≡
+
+[ ˜m(r1), ˜m(r2), . . . , ˜m(rN )] , and ˜m(ri) = gm(g−1ri) for 
+
+g = gC or T . Consequently, the complete symmetry group of H is GH = G C + G CT = {gC, g CT } .Typically, a magnetic system can undergo atemperature-driven phase transition from the paramag-netic phase to a long-range ordered magnetic ground state ψμ, characterized by an order parameter Oμ that emerges from the spontaneous breaking of symmetries 
+
+gνμ  
+
+> S
+
+∈ GH. Each gνμ  
+
+> S
+
+operation maps the ground state 
+
+ψμ to another ground state ψν [Fig. 1(a)], simultane-ously switching the order parameter from Oμ to Oν ,and thus gνμ  
+
+> S
+
+is termed the switching symmetry . The ground state ψμ remains invariant under each operation of unbroken symmetries gμ
+
+> M
+
+, which form the magnetic space group Gμ 
+
+> M
+
+= {gμ
+
+> M
+
+}, a subgroup of GH with the cosets ˜Gνμ  
+
+> S
+
+= {gνμ  
+
+> S
+
+} [52]. As exemplified in Fig. 1(b), the time-reversal symmetry T is a general switching symme-try that can facilitate the transition between two ground states with opposite order parameters, such as net mag-netization M in FMs and Néel vector N in collinear AFMs. In AFMs, the translation t may also be a switch-ing symmetry that induces the same transition by inter-changing magnetic sublattices. More generally, systems with higher degeneracy can possess additional switch-ing symmetries and hence support other switching types, where an example is that a rotation C4 can mediate a 90 ◦ reorientation of the order parameter in systems with four-fold degeneracy. In general, switching symmetry can fundamentally pre-vent deterministic switching by connecting the desired switching path to other symmetry-related paths. To il-lustrate this point, we consider a switching symmetry gS
+
+of order l, which cyclically permutes the ground states 
+
+ψ1, ψ 2, ..., ψ l according to gSψμ = ψμ+1 (1 ≤ μ ≤ l,
+
+ψl+1 ≡ ψ1). As schematically shown in Fig. 2(a), be-sides mapping ψ1 to ψ2, gS also maps each intermediate state m(t) on the switching path ψ1 → ψ2 to another intermediate state ˜m(t) on the path ψ2 → ψ3. More specifically, as illustrated in Fig. 2(b), gS forces the state energies ( E1 = E2), energy barriers ( E1→2 = E2→3), and driving torques ( T1→2 = T2→3) to be identical. Suppose external stimuli that preserve gS could drive the system to switch from ψ1 to ψ2 along the path ψ1 → ψ2, it will equivalently switch ψ2 to ψ3, resulting in a continuous cyclic evolution ψ1 → ψ2 → ... → ψl → ψ1. Therefore, we arrive at the central conclusion that a necessary con-dition for deterministic switching in magnetic systems is the breaking of all switching symmetries that connect desired states with undesired states. In particular, this can occur via at least one of three mechanisms: asym-            
+
+> FIG. 2. (a) Phase diagram of transition between ground states ψ1, ψ 2, ..., ψ l, with switching symmetry gSconnecting intermediate states m(t)(green points) and ˜m(t)(yellow points). (b)-(e) Transition in magnetic systems with: (b) unbroken gS, (c) asymmetric states, (d) asymmetric barri-ers, and (e) asymmetric torques. In (b)-(e), the curve en-closing the gray region represents the energy profile along the path; solid curves with arrowheads denote allowed paths, while dashed curves with red crosses mark forbidden paths; black arrows indicate driving torques.
+
+metric states ( E1̸ = E2) [Fig. 2(c)], asymmetric barri-ers ( E1→2̸ = E2→3) [Fig. 2(d)], and asymmetric torques (T1→2̸ = T2→3) [Fig. 2(e)]. To substantiate the above conclusion more rigorously, we now formulate the switching process explicitly in terms of spin dynamics. For a switching process from 
+
+ψ1 = m(t1) to ψ2 = m(t2), the final state can be written as 
+
+ψ2 = ψ1 +
+
+∫ t2
+
+> t1
+
+˙m dt. (1) The time derivative ˙m = dm 
+
+> dt
+
+is governed by the LLG equation 
+
+dmi
+
+dt = −γmi × Hi(m) + λmi × dmi
+
+dt + Ti(m), (2) where γ is the gyromagnetic ratio, Hi = − 1 
+
+> μ0
+> ∂H
+> ∂mi
+
+is the effective field, λ is the Gilbert damping parameter, and 
+
+Ti is the spin torque exerted by external stimuli. We then ask what happens if the same stimuli are applied for another equal time interval, namely from t2 to t3 with 
+
+t3 − t2 = t2 − t1. If the torque preserves the switching symmetry, i.e., Ti(m(t2+∆ t)) = gSTj (m(t1+∆ t)) for all 
+
+∆t ∈ [0 , t 2 −t1], then the LLG equation is covariant under 
+
+gS (see Supplementary Materials [52] for a derivation). Therefore, since gSψ1 = ψ2, by the uniqueness of the 3solution with a given initial condition, one obtains ˙m(t2 +∆t) = gS ˙m(t1 + ∆ t), which implies 
+
+gS
+
+∫ t2
+
+> t1
+
+˙m dt =
+
+∫ t3
+
+> t2
+
+˙m dt. 
+
+Applying gS to Eq. (1) therefore gives 
+
+gSψ2 = gS
+
+(
+
+ψ1 +
+
+∫ t2
+
+> t1
+
+˙m dt
+
+)
+
+= ψ2 +
+
+∫ t3
+
+> t2
+
+˙m dt. 
+
+Since gSψ2 = ψ3, one has 
+
+ψ3 = ψ2 +
+
+∫ t3
+
+> t2
+
+˙m dt. (3) This result shows that, once gS remains unbroken, the path ψ1 → ψ2 necessarily implies the coexistence of the subsequent path ψ2 → ψ3. Therefore, determinis-tic switching from ψ1 to ψ2 requires the applied torque to break every switching symmetry gS, namely 
+
+Ti(gSm)̸ = gSTj (m). (4) In the switching process discussed above, m and gSm
+
+correspond to m(t1 + ∆ t) and m(t2 + ∆ t), respectively. In particular, spin torques are commonly decomposed into field-like torques (FLTs, τ FL  
+
+> i
+
+= −γmi × pFL  
+
+> i
+
+) and damping-like torques (DLTs, τ DL  
+
+> i
+
+= −γmi ×(mi ×pDL  
+
+> i
+
+))[11, 53], breaking the switching symmetries gS when 
+
+gSpFL 
+
+> j
+
+̸ = pFL  
+
+> i
+
+or gSpDL 
+
+> j
+
+̸ = pDL  
+
+> i
+
+, (5) where pFL  
+
+> i
+
+and pDL  
+
+> i
+
+are polarizations. In general, FLTs can be incorporated into the energy, thus giving rise to asymmetric states and barriers, whereas DLTs are non-conservative and directly contribute to asymmetric torques. Beyond FLTs, polarizations pi can modify the Hamiltonian as H′ = H + ∆ H, with the linear coupling term 
+
+∆H = ∑
+
+> i
+
+pT 
+
+> i
+
+himi, (6) where each hi is a 3 ×3 coupling matrix constrained by 
+
+GC. As a concrete example, for a two-sublattice system (i = 1 , 2) with uniform polarizations ( p1 = p2 = p), a minimal low-order symmetry-allowed form of the Hamil-tonian can be written as (see Supplementary Materials [52] for a derivation) 
+
+H′ = H + h0p · M + hd,N d · (p × N)+hd,M (p · d)( M · d) + hk,M (p · k)( M · k), (7) where d is the Dzyaloshinskii–Moriya (DM) vector, and 
+
+k is the easy axis. 
+
+Case studies — To validate our unified theory, we ex-amine representative switching cases reported in the lit-erature. A canonical example is the net magnetization re-versal in a FM driven by a magnetic field [Fig. 3(a)] or by a current-induced STT [Fig. 3(b)] [4]. In the macrospin model [54], where the FM is described as a single mag-netic moment m1 residing in an orthorhombic cell, the two ground states ( m1 ∥ ± [001] ) are connected by the switching symmetries C2,[100] and C2,[010] , corresponding to two-fold rotations about [100] and [010] axes, respec-tively [Fig. 3(c)]. According to Eq. (5), either a magnetic field H ∥ ± [001] or a DLT (from STT) with polarization 
+
+p ∥ ± [001] can break C2,[100] and C2,[010] , enabling deter-ministic reversal of net magnetization, as demonstrated by atomistic simulations [Figs. 3(d) and (e)]. Importantly, our theory also provides a unified inter-pretation of deterministic 180 ◦ Néel vector switching in AFMs and A lMs. As exemplified by A lM CrSb thin films [36], such switching can be achieved by a charge current that injects an in-plane polarized spin current via the spin Hall effect, enabling both field-free and field-assisted modes for distinct crystallographic orien-tations [Figs. 3(f) and (g)]. As illustrated in Fig. 3(h), CrSb possesses two switching symmetries: C2,[100] flip-ping all magnetic moments and C2,[001] (accompanied by a half-translation) interchanging two sublattices. In the field-free mode, the current-induced spin polarization 
+
+p ∥ ∓ [120] breaks all switching symmetries, as dictated by Eq. (5). Specifically, the direct coupling between p
+
+and N generates asymmetric states described by the term 
+
+hd,N d · (p × N) (d ∥ [100] ) in Eq. (7), thus enabling deterministic N reversal, as simulated in Fig. 3(i). In the field-assisted mode, by contrast, the spin polarization 
+
+p ∥ ± [100] preserves C2,[100] . Hence, an auxiliary mag-netic field ( H ∥ [001] ) is required to break this symmetry [Eq. (5)] and create asymmetric energy barriers, thereby enabling deterministic switching driven by p [Fig. 3(j)]. Apart from deterministic 180 ◦ switching of order pa-rameters, our unified theory can also account for other types of switching. For example, a four-fold AFM such as tetragonal CuMnAs [33] possesses four ground states, characterized by N aligned along [100] , [¯ 100] , [010] ,and [0¯ 10] , respectively. Since anisotropic magnetoresis-tance cannot distinguish reversed Néel vectors, we fo-cus on switching between two ground-state classes: ψ1
+
+(N ∥ ± [100] ) and ψ2 (N ∥ ± [010] ). The corresponding switching symmetry set is 
+
+˜G90 ◦ 
+
+> S
+
+= {C4,[001] , C 2,[110] , C 2,[1¯ 10] , C 4,[001] P, M [110] , M [1¯ 10] },
+
+where M denotes the mirror symmetry with the normal vector parallel to the subscript. As illustrated in Fig. 4 (a), a charge current JC parallel to ±[100] or ±[010] can break all these switching symmetries [Eq. (5)], enabling deterministic 90 ◦ switching of N between ψ1 and ψ2. In this case, N ⊥ JC due to asymmetric states created by current-induced FLTs with staggered spin polarizations [52]. Similarly, a six-fold AFM (e.g., α-Fe 2O3 [44]) ex-hibits three classes of ground states: ψ1 (N ∥ ± [210] ), 
+
+ψ2 (N ∥ ± [120] ), and ψ3 (N ∥ ± [1¯ 10] ), connected by 4
+
+FIG. 3. Switching cases in FMs and A lMs. (a),(b) Schematic diagrams of net magnetization ( M ∥ ± ˆz) reversal in a FM driven by (a) a magnetic field H ∥ ± ˆz or (b) a charge current JC ∥ ∓ ˆz passing through a fixed FM layer with magnetization Mfix ∥ +ˆ z,where H and Mfix are slightly tilted to initiate the dynamical process. (c) Switching symmetries ( C2,[100] and C2,[010] ) for a single magnetic moment m1 in an orthorhombic cell. (d),(e) Atomistic simulations of M reversal between M± ∥ ± [001] driven by (d) H ∥ ± [001] and (e) a current-induced polarization p ∥ ± [001] , each with a slight tilt. (f),(g) Schematic diagrams of (f) field-free and (g) field-assisted switching of Néel vector ( N ∥ ± ˆx) in A lM CrSb films (top layers), achieved by JC ∥ ± ˆx passing through the bottom heavy metal layers. (h) Switching symmetries ( C2,[100] and C2,[001] t1/2, where t1/2 is a half-translation along [001]) for a CrSb thin film with m1 and m2. (i),(j) Atomistic simulations of N reversal between N± ∥ ± [001] with DM vector d ∥ [100] in (i) field-free ( p ∥ ∓ [120] ) and (j) field-assisted ( p ∥ ± [100] and H ∥ [001] ) modes. 
+
+switching symmetry sets 
+
+˜G21 S , ˜G12 S = {C3,[001] , C 6,[001] , C 2,[110] , C 2,[1¯ 10] },
+
+˜G32 S , ˜G23 S = {C3,[001] , C 6,[001] , C 2,[010] , C 2,[210] },
+
+˜G31 S , ˜G13 S = {C3,[001] , C 6,[001] , C 2,[100] , C 2,[120] },
+
+where the improper switching symmetries ( C3P, C6P,and M ) are omitted for brevity. As illustrated in Fig. 4 (b), a charge current JC ∥ ± [210] can break the switching 
+
+FIG. 4. Current-induced 90 ◦ and 120 ◦ switching of the Néel vector. (a) A charge current JC (JC ∥ ± [100] or JC ∥ ± [010] )rotates the Néel vector N to be perpendicular to JC. (b) A charge current JC (JC ∥ ± [210] , JC ∥ ± [120] , or JC ∥ ± [1¯ 10] )rotates the Néel vector N to be parallel or antiparallel to JC.
+
+symmetries within ˜G12 S and ˜G13 S [Eq. (5)], allowing deter-ministic switching to ψ1 with N either parallel or antipar-allel to JC. However, JC ∥ ± [210] preserves C2,[210] in 
+
+˜G23 S , so ψ2 and ψ3 remain indistinguishable under such a charge current. Consequently, a charge current ori-ented along ±[210] , ±[120] , or ±[1¯ 10] can deterministi-cally switch N by 60 ◦ or 120 ◦ to align parallel or an-tiparallel to JC. Microscopically, this behavior can be understood from asymmetric torques offered by current-induced DLTs with uniform spin polarizations [52]. In addition, more switching cases are discussed in the Sup-plementary Materials [52]. 
+
+Discussion and outlook — We establish a simple pro-cedure to achieve deterministic magnetic switching: (i) identify all the switching symmetries that connect the target ground states with others; and (ii) design the ex-ternal stimuli to break all such switching symmetries. Although thermal fluctuations, domain wall motions, lat-tice distortions, and metastable states may affect the quantitative switching path and threshold, they do not alter the validity of our central symmetry-based princi-ple. This work paves the way for further exploration and innovation in spintronics, particularly for the design of controllable magnetic memory materials. Our unified theory also offers an insightful perspec-5tive on A lM. As established in Ref. [26], A lM is defined by the crystal symmetry C instead of P or t that con-nects opposite-spin sublattices, which fundamentally al-lows the nonrelativistic spin currents available for elec-trical readout of the Néel vector. Interestingly, this very same symmetry C is precisely the switching symmetry that must be broken to achieve deterministic Néel vector reversal. Our theory thus reveals a duality in A lM spin-tronics: the symmetry C that shapes the readout is the one whose breaking enables robust writing. 
+
+Acknowledgments — This work is supported by Na-tional Key R &D Program of China (2021YFA1401500) and the Hong Kong Research Grants Council (CRS_HKUST603/25, C6046-24G, 16306722, 16304523 and 16311125).  
+
+> ∗
+
+liuj@ust.hk [1] A. Hirohata, K. Yamada, Y. Nakatani, I.-L. Prejbeanu, B. Diény, P. Pirro, and B. Hillebrands, J. Magn. Magn. Mater. 509 , 166711 (2020). [2] J. C. Slonczewski, J. Magn. Magn. Mater. 159 , L1 (1996). [3] L. Berger, Phys. Rev. B 54 , 9353 (1996). [4] D. C. Ralph and M. D. Stiles, J. Magn. Magn. Mater. 
+
+320 , 1190 (2008). [5] A. Brataas, A. D. Kent, and H. Ohno, Nat. Mater. 11 ,372 (2012). [6] I. M. Miron, K. Garello, G. Gaudin, P.-J. Zermatten, M. V. Costache, S. Auffret, S. Bandiera, B. Rodmacq, A. Schuhl, and P. Gambardella, Nature 476 , 189 (2011). [7] L. Liu, C.-F. Pai, Y. Li, H. W. Tseng, D. C. Ralph, and R. A. Buhrman, Science 336 , 555 (2012). [8] L. Liu, O. J. Lee, T. J. Gudmundsen, D. C. Ralph, and R. A. Buhrman, Phys. Rev. Lett. 109 , 096602 (2012). [9] S. Fukami, T. Anekawa, C. Zhang, and H. Ohno, Nat. Nanotechnol. 11 , 621 (2016). [10] J. Železný, H. Gao, A. Manchon, F. Freimuth, Y. Mokrousov, J. Zemen, J. Mašek, J. Sinova, and T. Jungwirth, Phys. Rev. B 95 , 014403 (2017). [11] A. Manchon, J. Železný, I. M. Miron, T. Jungwirth, J. Sinova, A. Thiaville, K. Garello, and P. Gambardella, Rev. Mod. Phys. 91 , 035004 (2019). [12] L. Liu, J. Yu, R. González-Hernández, C. Li, J. Deng, W. Lin, C. Zhou, T. Zhou, J. Zhou, H. Wang, et al. ,Phys. Rev. B 101 , 220402 (2020). [13] L. Liu, C. Zhou, T. Zhao, B. Yao, J. Zhou, X. Shu, S. Chen, S. Shi, S. Xi, D. Lan, et al. , Nat. Commun. 
+
+13 , 3539 (2022). [14] K. Cai, M. Yang, H. Ju, S. Wang, Y. Ji, B. Li, K. W. Edmonds, Y. Sheng, B. Zhang, N. Zhang, et al. , Nat. Mater. 16 , 712 (2017). [15] X. Wang, J. Tang, X. Xia, C. He, J. Zhang, Y. Liu, C. Wan, C. Fang, C. Guo, W. Yang, et al. , Sci. Adv. 5,eaaw8904 (2019). [16] X. Chen, S. Shi, G. Shi, X. Fan, C. Song, X. Zhou, H. Bai, L. Liao, Y. Zhou, H. Zhang, et al. , Nat. Mater. 20 , 800 (2021). [17] Y. Wu, T. Wu, H. Chen, Y. Cui, H. Xu, N. Jiang, Z. Cheng, and Y. Wu, Appl. Phys. Lett. 126 , 012401 (2025). [18] Q. Guo, Q. Chen, W. Jiang, B. Lu, M. Tian, R. Liu, X. Chen, Z. Li, L. Cao, F. Zhu, et al. , Adv. Funct. Mater. 
+
+35 , 2503229 (2025). [19] T. Jungwirth, X. Marti, P. Wadley, and J. Wunderlich, Nat. Nanotechnol. 11 , 231 (2016). [20] V. Baltz, A. Manchon, M. Tsoi, T. Moriyama, T. Ono, and Y. Tserkovnyak, Rev. Mod. Phys. 90 , 015005 (2018). [21] M. Naka, S. Hayami, H. Kusunose, Y. Yanagi, Y. Mo-tome, and H. Seo, Nat. Commun. 10 , 4305 (2019). [22] S. Hayami, Y. Yanagi, and H. Kusunose, J. Phys. Soc. Jpn. 88 , 123702 (2019). [23] L. Šmejkal, R. González-Hernández, T. Jungwirth, and J. Sinova, Sci. Adv. 6, eaaz8809 (2020). [24] K. Samanta, M. Ležaić, M. Merte, F. Freimuth, S. Blügel, and Y. Mokrousov, J. Appl. Phys. 127 , 213904 (2020). [25] L.-D. Yuan, Z. Wang, J.-W. Luo, E. I. Rashba, and A. Zunger, Phys. Rev. B 102 , 014422 (2020). [26] H.-Y. Ma, M. Hu, N. Li, J. Liu, W. Yao, J.-F. Jia, and J. Liu, Nat. Commun. 12 , 2846 (2021). [27] R. González-Hernández, L. Šmejkal, K. Výborný, Y. Ya-hagi, J. Sinova, T. Jungwirth, and J. Železný, Phys. Rev. Lett. 126 , 127701 (2021). [28] I. I. Mazin, K. Koepernik, M. D. Johannes, R. González-Hernández, and L. Šmejkal, Proc. Natl. Acad. Sci. U.S.A. 118 , e2108924118 (2021). [29] D.-F. Shao, S.-H. Zhang, M. Li, C.-B. Eom, and E. Y. Tsymbal, Nat. Commun. 12 , 7061 (2021). [30] L. Šmejkal, J. Sinova, and T. Jungwirth, Phys. Rev. X 
+
+12 , 040501 (2022). [31] L. Bai, W. Feng, S. Liu, L. Šmejkal, Y. Mokrousov, and Y. Yao, Adv. Funct. Mater. 34 , 2409327 (2024). [32] Y. Chen, X. Liu, H.-Z. Lu, and X. C. Xie, Phys. Rev. Lett. 135 , 016701 (2025). [33] P. Wadley, B. Howells, J. Železný, C. Andrews, V. Hills, R. P. Campion, V. Novák, K. Olejník, F. Maccherozzi, S. S. Dhesi, et al. , Science 351 , 587 (2016). [34] J. Godinho, H. Reichlová, D. Kriegner, V. Novák, K. Ole-jník, Z. Kašpar, Z. Šobáň, P. Wadley, R. Campion, R. Otxoa, et al. , Nat. Commun. 9, 4686 (2018). [35] L. Han, X. Fu, R. Peng, X. Cheng, J. Dai, L. Liu, Y. Li, Y. Zhang, W. Zhu, H. Bai, et al. , Sci. Adv. 10 , eadn0479 (2024). [36] Z. Zhou, X. Cheng, M. Hu, R. Chu, H. Bai, L. Han, J. Liu, F. Pan, and C. Song, Nature 638 , 645 (2025). [37] Z. Zhou, Y. Cao, Z. Pan, Y. Zhang, S. Liang, F. Pan, and C. Song, Nature 651 , 341 (2026). [38] W. He, T. Zhang, Y. Zhou, C. Wan, H. Wu, B. Cui, J. Xia, R. Zhang, T. Guo, P. Chen, et al. , Nat. Electron. 
+
+7, 975 (2024). [39] S. Y. Bodnar, L. Šmejkal, I. Turek, T. Jungwirth, O. Gomonay, J. Sinova, A. Sapozhnik, H.-J. Elmers, M. Kläui, and M. Jourdan, Nat. Commun. 9, 348 (2018). [40] X. Z. Chen, R. Zarzuela, J. Zhang, C. Song, X. F. Zhou, G. Y. Shi, F. Li, H. A. Zhou, W. J. Jiang, F. Pan, and Y. Tserkovnyak, Phys. Rev. Lett. 120 , 207204 (2018). [41] T. Moriyama, K. Oda, T. Ohkochi, M. Kimata, and T. Ono, Sci. Rep. 8, 14167 (2018). [42] S. DuttaGupta, A. Kurenkov, O. A. Tretiakov, G. Kr-ishnaswamy, G. Sala, V. Krizakova, F. Maccherozzi, S. Dhesi, P. Gambardella, S. Fukami, et al. , Nat. Com-mun. 11 , 5715 (2020). [43] H. Yan, Z. Feng, P. Qin, X. Zhou, H. Guo, X. Wang, 6
+
+H. Chen, X. Zhang, H. Wu, C. Jiang, et al. , Adv. Mater. 
+
+32 , 1905603 (2020). [44] Y. Cheng, S. Yu, M. Zhu, J. Hwang, and F. Yang, Phys. Rev. Lett. 124 , 027202 (2020). [45] H. Meer, F. Schreiber, C. Schmitt, R. Ramos, E. Saitoh, O. Gomonay, J. Sinova, L. Baldrati, and M. Kläui, Nano Lett. 21 , 114 (2021). [46] J. Železný, H. Gao, K. Výborný, J. Zemen, J. Mašek, A. Manchon, J. Wunderlich, J. Sinova, and T. Jung-wirth, Phys. Rev. Lett. 113 , 157201 (2014). [47] F. Xue and P. M. Haney, Phys. Rev. B 104 , 224414 (2021). [48] Z. Xu, J. Ren, Z. Yuan, Y. Xin, X. Zhang, S. Shi, Y. Yang, and Z. Zhu, J. Appl. Phys. 133 , 153904 (2023). [49] S.-S. Zhang, Z.-A. Wang, B. Li, W.-J. Lu, M. Tian, Y.-P. Sun, H. Du, and D.-F. Shao, Phys. Rev. Lett. 136 ,096702 (2026). [50] Z. Xiao, J. Zhao, Y. Li, R. Shindou, and Z.-D. Song, Phys. Rev. X 14 , 031037 (2024). [51] J. Yang, Z.-X. Liu, and C. Fang, Nat. Commun. 15 ,10203 (2024). [52] “See Supplemental Material at [url will be inserted by publisher] for detailed theoretical derivations, symmetry analysis of the LLG equation, and extended case studies, which includes Refs. [? ? ].”. [53] H. Kurebayashi, J. Sinova, D. Fang, A. Irvine, T. Skin-ner, J. Wunderlich, V. Novák, R. Campion, B. Gallagher, E. Vehstedt, et al. , Nat. Nanotechnol. 9, 211 (2014). [54] J. Xiao, A. Zangwill, and M. D. Stiles, Phys. Rev. B 72 ,014446 (2005).
