@@ -1,0 +1,274 @@
+Title: Nonreciprocal spin waves of helical magnetization states in CoFeB/NiFe bilayers
+
+URL Source: https://arxiv.org/pdf/2604.00922v1
+
+Published Time: Thu, 02 Apr 2026 01:19:37 GMT
+
+Number of Pages: 9
+
+Markdown Content:
+# Nonreciprocal spin waves of helical magnetization states in CoFeB/NiFe bilayers 
+
+Claudia Negrete 
+
+Departamento de Física, Universidad Católica del Norte, Avenida Angamos 0610, Antofagasta, Chile 
+
+Omar J. Suarez 
+
+Departamento de Física, Universidad de Sucre, Sincelejo, Colombia 
+
+Attila Kákay 
+
+Helmholtz-Zentrum Dresden - Rossendorf, Institute of Ion Beam Physics and Materials Research, Bautzner Landstr. 400, 01328 Dresden, Germany 
+
+Jorge A. Otálora ∗
+
+Departamento de Física, Universidad Católica del Norte, Avenida Angamos 0610, Antofagasta, Chile 
+
+(Dated: April 2, 2026) We investigated the nonreciprocal spin-wave properties, including the frequency shift, of a helical equilibrium state in a versatile CoFeB/NiFe bilayer. Through an extension of the dynamic matrix formalism (developed in this work) to an arbitrary non-collinear configuration along a heterostructured multilayered system thickness, we explained the frequency shift via differences in the dynamic dipolar and interlayer exchange interactions arising from the distinct spin-wave mode profiles across the bilayer thickness for counterpropagating modes at the same wave vector. In contrast to recent literature wherein the frequency shift is attributed solely to the dipolar interaction, our results and explanations hereby presented involve a starring role of the interlayer exchange interaction not accounted in current literature. Furthermore, we also found a combination of large frequency shift values and sub-100 nm spin wave wavelengths that can be tuned or even enhanced with the twisting degree of the helical magnetization state by the application of the external field, and with the thickness of the NiFe sublayer, which might be highly relevant for magnonic applications. We validated our model and the physical mechanism that explains the frequency shift using recent simulations and experimental results. 
+
+I. INTRODUCTION 
+
+The directional control of spin waves has become a cen-tral theme in modern magnonics due to its potential for low-energy and charge-free information transport and processing [1–5]. In this context, non-reciprocity, characterized by an asymmetry in the dispersion relation such that f [k]̸ = f [−k]
+
+[6–8], plays a fundamental role, as it enables unidirectional propagation and the design of functional devices such as magnonic diodes [9, 10], insulators, and reconfigurable logic elements [11, 12]. This asymmetry can arise from various physical mechanisms, including dynamic dipolar interactions in Damon-Eshbach geometries [13–16], structural symmetry breaking in thin films, and the Dzyaloshinskii Moriya interac-tion (DMI) induced by strong spin-orbit coupling in ferromag-net/heavy metal heterostructures [17–19]. Such mechanisms have been extensively explored both experimentally and theo-retically in magnetic bilayers and multilayers, where manipu-lation of thickness and magnetic properties allows modulation of the magnitude of nonreciprocity. In recent years, increasing attention has been paid to het-erostructured multilayered planar systems with spatial vari-ations in magnetic properties along the thickness, including synthetic antiferromagnets and multilayers with graded mag-netization profiles [20–23]. In these systems, isotropic ex-change coupling and collective dipolar interactions can lead  
+
+> ∗Corresponding author: jorge.otalora@ucn.cl
+
+to spin wave modes hybridization, surface localization, and modification of the dynamic character of the excitations [21, 24, 25], leading to thickness-related caustic effects, the emer-gence of hybrid modes with locally inverted precession (anti-Lamor precession), and substantiated non-reciprocal proper-ties. [20, 21, 26] Recently, highly tunable nonreciprocal propagation in SmCo/Fe bilayers, known as spring-exchange systems, has been experimentally demonstrated and simulated using mi-cromagnetic methods. In this bilayer, the in-plane easy axis anisotropy of the hard magnetic layer (SmCo) and the re-sponse of the soft magnetic layer (Fe) as in-plane deviations of its magnetization from the hard layer easy axis, gener-ate a non-collinear magnetization profile along the thickness (so named here as the helical magnetic state) that allows a tunability of the nonreciprocity with the layer thicknesses and the applied magnetic field [27–30]. Within this frame-work, exchange spring magnets constitute a particularly at-tractive platform, as they combine the power of two seem-ingly separate worlds: spring exchange valves and a mul-tilayered non-reciprocal platform for magnonic applications. These nanostructures, typically composed of a hard magnetic phase and a soft phase coupled by exchange, exhibit a he-lical or gradually rotated equilibrium state along the thick-ness due to the competition among anisotropy, exchange, and Zeeman interactions[31, 32]. Originally proposed for high-density magnetic storage applications, these systems also of-fer a natural environment for investigating spin wave propaga-tion in media with spatially distributed non-collinear magne-tization [33, 34]. Analyzing non-reciprocity in such structures 
+
+> arXiv:2604.00922v1 [cond-mat.mes-hall] 1 Apr 2026
+
+2allows us not only to clarify the origin of the dispersion rela-tion asymmetry but also to evaluate its potential for thickness-controlled modal engineering in next-generation magnonic devices. To date, no theoretical framework with analytical support has been found that systematically explains how he-lical magnetization, magnetization variation, and the applied field determine non-reciprocity in spin waves. In this work, we extend the dynamic matrix formal-ism to describe spin-wave propagation in a multilayer with an in-plane equilibrium magnetization that twists layer by layer along the multilayer thickness. We apply our model to understand the non-reciprocal spin wave transport prop-erties of a CoFeB/NiFe bilayer exchange spring with a helical equilibrium magnetization profile along its thick-ness, as seen in FIG. 1. We choose this system due to its versatility for exchange spring applications cite Tac-chi2014,Stenning2015,Gubbiotti2021 and magnonic diodes [26, 35]. Starting from a multilayer model, we determine the equilibrium configuration and subsequently calculate the spin-wave dispersion relation and its directional asymmetry as a function of bilayer thickness and applied field. Special attention is paid to the layer-resolved dynamic mode profiles, where exchange and dipolar interactions play a significant role in explaining the frequency shift of the nonreciprocal disper-sion relation. Our analytical formalism was validated with mi-cromagnetic simulation and experimental results previously published by other authors on the SmCo/Fe exchange spring bilayer [27], which can be found in the supplementary ma-terial Section II[36], as well as details on the mathematical derivations of the analytical equations presented in here and shown in supplementary material Section I[36].                          
+
+> Figure 1. Illustration of CoFeB/NiFe bilayer in a helical magnetiza-tion state with a total thickness dt, NiFe thickness dPy , and CoFeB thickness dCoFeB .(a) Illustration of the system subdivided into N sublayers, where the n’th layer is positioned at the yn, with thick-ness dn, saturation magnetization Mns, and equilibrium magnetiza-tion M0
+> n=MsnˆZn, where (Xn, Y n, Z n)are local coordinates. (b) Illustration of the n’th layer with its equilibrium angle ϕnregarding the global coordinate z. Global coordinates are denoted by (x, y, z )
+> and the spin-wave wave vector is kx=kxˆx.
+> II. MODEL
+
+The system under consideration is modeled under the mi-cromagnetism continuum theory and the dynamic matrix method (DMM). According to the later, the CoFeB/NiFe bi-layer is assumed to be a multilayer stack of N-sublayers, where the n′th sublayer (one of the layers of the total number of layers) is magnetically described by a magnetization vec-tor Mn, an exchange length lex n , a stiffness constant An and a saturation magnetization Msn , as shown in FIG 1. These assumptions, along with the following considerations on the nth layer, allow for achieving the in-plane helical magnetiza-tion states, as illustrated in FIG. 1(a). We assume the follow-ing: (i) an in-plane and homogeneous applied magnetic field 
+
+H = H ˆz, (ii) an uniaxial anisotropy interaction featured by a constant Kun that induce a magnetization tendency to line-up along the ˆz axis, (iii) an interlayer exchange interaction fea-tured by the integral exchange constant Jn,p between the n′th 
+
+and p′th sublayers, and (iv) an intralayer exchange interaction featured by the exchange length lex n . Under this scenario, the helical magnetization state can be stabilized and featured by the equilibrium magnetization M0 
+
+> n
+
+and the magnetization an-gle ϕn, as illustrated in FIG. 1(b). These angles are obtained by solving Brown’s equation, as we will see later. The spin-waves properties as the dispersion relation ω(k) of the helical equilibrium state (also referred here as the magnetization dy-namics) will be studied for the specific case of a wave vector 
+
+k = kx = kx ˆx pointing along the global coordinate x, as shown in FIG. 1(b). The angular spin-wave frequency ω as a function of the wave vector kx will be addressed next by linearizing the magnetization dynamical equation around the helical equilibrium state. According to the micromagnetic continuum theory, the equilibrium states and the magnetization dynamics of the bi-layer can be modeled by the Landau-Lifshitz (LL) equation. Since the system is divided into N layers, we end up with N coupled LL equations, one for each layer. In this sense, the LL equation of the n′th layer is given as 
+
+˙Mn[r, t ] = −μ0γMn[r, t ] × Hen[r, t ] (1) where γ is the magnitude of the gyromagnetic ratio, Hen[r, t ]
+
+is the effective magnetic field acting on the n′th layer, and 
+
+Mn[r, t ] is the magnetization field. The spin-wave disper-sion relation and the equilibrium helical state can be studied by linearizing each of the n′th LL-equation around the equi-librium magnetization M0
+
+> n
+
+. To do so, the magnetization field and the effective field are linearly expanded as Mn[r, t ] = 
+
+M0 
+
+> n
+
++ mn[r, t ] and Hen[r, t ] = H0en + hen[r, t ], respectively, where M0 
+
+> n
+
+and H0en are the magnetization and the effective field at equilibrium, respectively, and the terms mn[r, t ] and 
+
+hen[r, t ] are dynamic perturbations. We assume that the dy-namic magnetic perturbation and dynamic magnetic field per-turbation have the form mn[r, t ] = R d3k ei(ωt −k·r)mn[k],and hn[r, t ] = R d3k ei(ωt −k·r)hn[k] respectively, where 
+
+mn[k] and hn[k] are the dynamic magnetization and dynamic magnetic field amplitude vector, respectively, written in the spin-wave wave vector k space, and ω is the angular reso-nance frequency of the spin-waves. After linearizing Eq. (1), we arrive to the following two equations: 
+
+M0 
+
+> n
+
+× H0en = 0 , (2) 
+
+ω m[k] = Nm[k], (3) 3where equation EQ. (2) is the Brown’s equation, whose solu-tions return the equilibrium state of the system (in our case, a solution for the equilibrium angles ϕ1, ..., ϕ N that define the helical states); whereas the equation EQ. (3) represents the eigenvalue equation, being N the so-called dynamic ma-trix, whose dimensions are 2N × 2N , with N the number of sublayers and m[k] the eigenvector with a transpose given as 
+
+m[k]T = { ˜mX1 [k], ... , ˜mXN [k], ˜mY1 [k], ... , ˜mYN [k]}.The Brown’s equation for the n′th layer Eq.(2) in its ex-plicit form is given as 
+
+sin ( ϕH − ϕn) + Hinter 
+
+> n,n +1
+
+H sin ( ϕn − ϕn+1 )+ Hinter 
+
+> n,n −1
+
+H sin ( ϕn − ϕn−1)
+
+− ˜Hun
+
+H cos ( ϕn) sin ( ϕn) = 0 . (4) The first term corresponds to the Zeeman interaction where a magnetic field H is applied in-plane at an angle ϕH measured from the z axis. The second and third terms contain the in-terlayer exchange that accounts for the coupling between the 
+
+n′th layer and its two neighbouring layers n ± 1. Such cou-pling are strengthen by the interlayer exchange field Hinter  
+
+> n,p
+
+=
+
+−Jn,p /(2 Msn μ0d). The last term corresponds to the uniaxial anisotropy of the n’th layer, where ˜Hu 
+
+> n
+
+= 2 |Ku
+
+> n
+
+|/(μ0Msn ) is the strength of the anisotropy field. The dipolar and intralayer exchange interactions do not appear in the Brown equation. The solution for the set of angles ϕ1, ..., ϕ N is obtained by solving the system of N equations resulting from applying EQ. (4) at n = 1 , ..., N .The dynamic matrix contains all the information about the static and dynamic effective fields acting on the magnetiza-tion field. It is recorded as the additive contribution of the dynamic tensors associated to the dipolar, exchange, uniaxial anisotropy, and Zeeman interactions: N = Ndip + Ninter +
+
+Nintra + Nu + NZ , where the dynamic tensor contribution Nσ
+
+is given as 
+
+Nσ =
+
+NXX,σ NXY,σ 
+
+NY X,σ NY Y,σ 
+
+
+
+with σ ∈ {dip , inter , intra , u, Ze }. The dynamic matrix blocks Nq,σ with q ∈ { XX, XY, Y X, Y Y } are N ×N matri-ces where the entries N q,σ np = [ Nq,σ ]np are explicitly defined in the supplementary material Section IB.[36] The dispersion relation ω[k] and the eigenvectors m[k] are obtained by solving the eigenvalue EQ. (3).  
+
+> III. RESULTS AND DISCUSSION
+
+In the following, we assume a planar CoFeB/NiFe bilayer that is subdivided into N sublayers. For simplicity and con-vergence of our calculations, each nth layer has the same thickness, d = 1 nm. The CoFeB layer saturation magne-tization, stiffness constant, thickness, and uniaxial anisotropy constant are set to M CoFeB  
+
+> s
+
+= 1270 kA /m ACoFeB = 17 pJ /m,
+
+dCoFeB =25 nm , and KCoFeB = 500 kJ/m 3, respectively. The NiFe layer saturation magnetization, stiffness constant, and uniaxial anisotropy constant are set to M NiFe  
+
+> s
+
+= 845 kA/m, 
+
+ANiFe = 12 .8 pJ/m, and KNiFe = 0 , respectively. The NiFe thickness and the applied magnetic field magnitude are free parameters that we run over a set of achievable experimen-tal values to stabilize the equilibrium helical state and thereby study its magnetization dynamics. The applied magnetic field orientation is set to ϕH = 0 , with H ≥ 0. In the follow-ing sections, we proceed to describe the helical equilibrium states by solving EQ. (4) as the thickness of the NiFe changes and for different magnetic field values H. Thus, we proceed with describing the dispersion relation and spin wave modes by solving EQ. (3) as the helical equilibrium states are stabi-lized.  
+
+> A. Equilibrium states
+
+FIG. 2(a) presents the coercive field HC of the CoFeB/NiFe bilayer as a function of the thickness of the NiFe layer. The equilibrium magnetization states are also shown for two repre-sentative NiFe thicknesses, dNiFe = 25 nm and dNiFe = 47 nm. In these results, the CoFeB thickness was kept constant at 
+
+dCoFeB = 25 nm. At zero applied magnetic field H = 0 , the equilibrium mag-netization state is homogeneous, and for our convenience is assumed pointing along −ˆz axis, i.e., M 0 
+
+> n
+
+= −Msn ˆz. For an applied magnetic H > 0, the homogeneous state remains as long as the condition H < H C is satisfied, where HC is the coercive field. For a larger field magnitude H > H C , the heli-cal magnetization is stabilized. In our case, the coercive field 
+
+HC defines the field onset where the NiFe layer magnetiza-tion loses the uniform configuration and turns into the helical state, as illustrated in FIG 1(a). FIGs 2(b) and (c) show in detail the helical states through the angle ϕn as a function of the layer position yn in the thickness of the film. The helical equilibrium states pre-sented herein are in agreement with literature [27]; moreover, they are expected in multilayered magnetic materials, wherein neighboring layers are coupled among them by the interlayer exchange interaction of the type taken here (see Supplemen-tary Material Section IA3[36]).  
+
+> B. Dispersion relation
+
+In the previous sections, we showed our results and discus-sion on the helical equilibrium states of the CoFeB/NiFe bi-layer. The next step is dedicated to the dispersion relation cal-culated with the dynamic matrix method EQ. (3) with all rel-evant interactions explained in the Model section II. In what follows, we calculate and analyze the dispersion relation of a CoFeB/NiFe bilayer in a helical magnetization state. Our results are obtained for different applied magnetic field mag-nitudes and different NiFe thicknesses. We will analyze the dispersion relations of the fundamental and first-order modes, 4                  
+
+> Figure 2. (a) Coercive field as function of Permalloy thickness
+> dNiFe .Helical equilibrium states of the bilayer CoFeB/NiFe, with CoFeB (NiFe) thickness dCoFeB =25 nm ( dNiFe =25 nm), and
+> KCoFeB = 500 kJ/m 3.The equilibrium helical states are shown in (b) for dNiFe = 25 nm and (c) for dNiFe = 47 nm.
+
+focusing on the non-reciprocal frequency shifts and spin-wave orbital profiles along the thickness to explain the obtained re-sults. Our following discussion is divided into two main parts. In the first part, we discuss general aspects of the CoFeB/NiFe bilayer dispersion relation (see FIG. 3(d,f)), including the ori-gin of the dispersion’s frequency range and the modes’ hy-bridization at larger thicknesses. It will be done by comparing the dispersion relation between the CoFeB/NiFe bilayer and the individual CoFeB and NiFe layers. In the second part, the frequency shift of the non-reciprocal dispersion relation is discussed and explained by analyzing the dipolar and inter-layer exchange interactions involved in the spin-wave modes profiles along the bilayer thickness. The frequency range of the CoFeB/NiFe dispersion rela-tion can be understood by comparing it with the frequency ranges of the single CoFeB and NiFe layers. In this sense, we consider the CoFeB and NiFe layers and assign to them a homogeneous magnetization state based on rough approx-imations of the helical equilibrium state of the CoFeB/NiFe bilayer. The structure of the helical equilibrium state in the CoFeB/NiFe bilayer is such that the magnetization of the NiFe layer rotates along its thickness, whereas the magnetization of the CoFeB layer is mostly antiparallel to the applied field, ex-cept for a rotation nearby the interface with the NiFe layer. Therefore, we base in the almost homogeneous magnetization of the CoFeB in the bilayer to assign an in-plane homoge-neous state to the single CoFeB layer, with a constant relative orientation with respect to kx given by ϕr = 90 Deg, which gives a dispersion relation as shown in FIG. 3(c). Assigning the magnetization state to the single NiFe layer is a little sub-tle. The degree of twisting of the magnetization rotation of the NiFe layer in the bilayer depends on the applied magnetic field strength (see FIGs. 3(a,b)), therefore, the relative ori-entation between the wave vector kx and the magnetization varies along the NiFe layer thickness in the bilayer. To ac-count for this relative orientation in the dispersion relation of a single NiFe layer with a homogeneous magnetization, we cal-culate its dispersion relation at different wave vector orienta-tions defined by the relative angle ϕr and at zero applied field 
+
+H = 0 . Despite being a rough approximation, it shows that the dispersion relation frequency range of the CoFeB/NiFe bi-layer mostly (poorly) matches that of the single NiFe (CoFeB) layer. Consequently, one can expect that the dynamic magne-tization oscillates with a much larger amplitude in the NiFe layer than in the CoFeB layer in the bilayer, as observed and shown in FIGs. 3(h-k). Comparing dispersion relations between the CoFeB/NiFe bilayer and the CoFeB and NiFe single layers is also help-ful for understanding some general features of hybridization in the bilayer’s spin wave modes. We present two cases, the CoFeB(25)/NiFe(25) bilayer without mode hybridiza-tion in the dispersion relation, as shown in FIG. 3(d) and the CoFeB(25)/NiFe(47) bilayer with modes hybridization as shown in 3(d). In the former case, the lack of mode hy-bridization is consistent with the lack of hybridization in the dispersion relation of the single NiFe layer 3(a), wherein the CoFeB plays a side role due to its larger dispersion relation frequency range. In the latter case, the modes’ hybridization in the CoFeB/NiFe bilayer dispersion relation FIG. 3(f) oc-curs only at cero applied field H = 0 and kx ≈ 30 rads/ μm, where the bilayer has an homogeneous equilibrium magneti-zation state. This is consistent with the modes’ hybridization of the single NiFe layer shown in Fig 3(b) at ϕr = 90 Deg and 
+
+kx ≈ 10 rads/ μm. One could also expect modes hybridization at kx < 0 in the bilayer dispersion relation in consequence to the modes hybridization at kx ≈ − 10 rads/ μm of the single NiFe layer. However, the lack of hybridization at kx < 0 in the bilayer is due to the fact that the CoFeB frustrates the het-erosymmetrical condition for counter-propagating modes, i.e., the CoFeB tends to frustrate dynamic oscillations in its body and nearby the interface with the NiFe, avoiding establishing conditions for heterosymmetry, therefore, breaking magnetic interaction symmetries that lead to hybridization at kx < 0 as shown in FIG. 3(f). The non-reciprocal dispersion relation of the CoFeB/NiFe bilayer is quantified here by the frequency shift ∆f [kx] = 5
+
+Figure 3. Dispersion relation of an insulated and homogeneously saturated NiFe layer at different propagation directions ϕr and zero applied magnetic field μ0H = 0 mT of thickness (a) dNiFe = 25 nm and (b) dNiFe = 47 nm, respectively. (c) Damon-Eschbach dispersion relation of an insulated and homogeneously saturated CoFeB layer of thickness dCoFeB = 25 nm and in-plane uniaxial anisotropy KCoFeB = 500 kJ/m 3,at different magnetic fields applied in −ˆz direction. (d) Dispersion relation and (e) frequency shift ∆f = ( f [kx] − f [−kx]) of CoFeB/NiFe system with dNiFe = 25 nm. (f) Dispersion relation and (g) frequency shift ∆f = ( f [kx]−f [−kx]) of CoFeB/NiFe system with dNiFe = 47 nm. (h-i) and (j-k) Mode profiles at |kx| = 40 rad /μ m of and a set of applied field μ0H ∈ { 0, 90 , 111 , 150 } mT for dNiFe = 25 nm and dNiFe = 47 
+
+nm, respectively, where top (bottom) line of modes are for kx = 40 rads /μ m ( kx = −40 rads /μ m). 
+
+f [kx] − f [−kx], as shown in FIGs. 3(e,g). One can see the behavior of ∆f v.s kx for the fundamental mode (mode 1) and first order mode (mode 2) at four different applied fields 
+
+H and two NiFe thicknesses. The magnetic field values were chosen such that, one can see the evolution of the frequency shift as the equilibrium magnetization turns from the homoge-neous state to a helical state with an accentuated twist of the magnetization field in the NiFe layer at larger magnetic field 6          
+
+> Figure 4. (a,c) Surface charge ratio of the CoFeB/NiFe bilayer bottom surface and (b,d) its frequency shift as a function of the applied magnetic field. (a) and (b) corresponds to a NiFe sublayer thickness dNiFe = 25 nm, and (c) and (d) for dNiFe = 25 nm. A wave vector magnitude |kx|= 40 rads /μ m was taken for calculations.
+
+values (see FIGs. 2(b,c) at μ0H ∈ { 0, 90 , 110 , 150 } mT). The frequency shift as a function of the wave vector kx and the applied magnetic field H can be understood by analyzing the effects on magnetic interactions arising from the asym-metry in the orbital distribution along the thickness of coun-terpropagating spin waves at the same wave vector.[37] FIG. 3(h-k) shows the spin wave orbit distribution for modes 1 and 2 at four different applied magnetic fields and a representative wave vector magnitude |kx| = 40 rads /μ m, being FIG. 3(h,i) the spin wave orbit distribution for mode 1 and FIG. 3(j,k) for mode 2. Notice that the top(bottom) panel in 3(h-k) shows the spin wave modes orbits for kx = +40 rads /μ m ( kx = −40 
+
+rads /μ m). In terms of interactions, the frequency shift is dominated by the interlayer exchange interaction when the counterprop-agating spin wave modes’ profiles at the same wave vector magnitude differ. Under these conditions, the interlayer ex-change interaction contributes to the frequency shift by over two to three orders of magnitude more than any other interac-tion, including the dipolar interaction (in this work, we are not considering the Dzyaloshinskii?Moriya interaction). Excep-tionally, the dipolar interaction can compete or even be dom-inant contributing interaction under the condition where the counterpropagating spin wave modes’ profiles are very sim-ilar or identical to each other [37]. In the following, we use these arguments to analyze the frequency shift observed in two CoFeB/NiFe bilayers: the first with 25 nm NiFe thickness and the second with 47 nm NiFe thickness. We base our analy-sis on the spin wave orbit distribution of counterpropagating spin waves at the representative case of |kx| = 40 rads /μ mshown in FIG. 3(h-k), and analyzing the interlayer exchange and dipolar interactions to explain the frequency shift as a function of the applied magnetic field. As explained next, we see that the frequency shift of the CoFeB(25)/NiFe(25) of modes 1 and 2 is mostly dominated by the dipolar interaction, whereas the interlayer exchange interaction plays a fundamen-tal role in both modes in the CoFeB(25)/NiFe(47). Let’s start with analyzing the frequency shift of the CoFeB(25)/NiFe(25) bilayer. As seen in the upper ( kx = +40 
+
+rads /μ m) and lower ( kx = −40 rads /μ m) panels in FIG. 3(h,i), the orbit distributions along the thickness of both coun-terpropagating modes are very similar; one can expect that the dipolar interaction plays a primary role in the frequency shift across the entire applied magnetic field range. It can be analyzed by focusing on the dynamic dipolar charge differ-ences between counterpropagating SW modes. A difference between such charges also produces a difference in their dy-namic dipolar fields. Both fields exert torques on the magne-tization that differ from each other. Each torque forces the magnetization to oscillate at a given frequency, therefore a frequency shift is produced once both torques are different from each other. Dipolar dynamic charges can be separated in two types, those with volumetric origin ρv = −∇ · m
+
+and those originated at the system surface σ = m · ˆs, where 
+
+m = mn if yn−1 ≤ y < y n is the dynamic magnetiza-tion at the n’th layer with yn = nd , and ˆs = ˆs0 = −ˆy
+
+(ˆs = sN = ˆ y) is the normal vector at the bottom (top) sys-tem surface. In the following, we focus only in the surface charges because, as seen in FIG. 4(a), the ratio between them (σ[+ kx]/σ [−kx] = mY0 [+ kx]/m Y0 [−kx]) at the bottom sur-face reflects most of the frequency shift behavior shown in 4(b). Note that the surface charges at the top surface are not accounted for here since the orbit amplitude at the CoFeB is strongly diminished. As seen, the surface charge ratio behaves similarly to the frequency shift at both spin wave modes. For 
+
+0 ≤ μ0H ≤ μ0Hc (with μ0Hc ≈ 90 ) mT, the bilayer is in a homogeneous equilibrium magnetization; consequently, the frequency shift and the surface charge ratio are almost con-7stant. At larger field values, both the surface charge ratio and frequency shift decrease (increase) at the mode 1 (mode 2) as the magnetic field increases, which is consequent to the fact that the equilibrium magnetization state is in a helical config-uration where the helical twisting degree of the magnetization increases with the applied field magnitude. A difference be-tween the frequency shift and the surface charge ratio appears at the applied magnetic field where both are zero. It occurs at μ0H ≈ 111 mT ( μ0H ≈ 122 mT) for the frequency shift (surface charge ratio). This difference can be explained from interlayer exchange interaction. As seen in FIG. 3(h-j), the or-bit distribution at kx = 40 rads /μ m ( kx = −40 rads /μ m) is slightly more (less) homogeneously distributed along the bi-layer thickness. Understanding that more (less) magnetization homogeneity involves less (more) interlayer exchange inter-action and that a strengthened interlayer interaction induces a tendency to oscillate at larger frequencies, one can conclude that the interlayer exchange interaction tends to strengthen the oscillation frequency of spin wave orbit distribution at 
+
+kx = −40 rads /μ m more than at kx = 40 rads /μ m. It tends to move the frequency shift to negative values, leading to ∆f = 0 at a lower applied magnetic field than in the case of the surface charge ratio. Let’s continue with analyzing the frequency shift of the CoFeB(25)/NiFe(47) bilayer. As seen in the upper ( kx = +40 
+
+rads /μ m) and lower ( kx = −40 rads /μ m) panels in FIG. 3(j,k), counterpropagating spin waves of mode 1 have differ-ent orbit distributions from each other along the system thick-ness, one can expect that the interlayer exchange interaction plays the primary role in the frequency shift. In contrast, the orbit distribution of mode 2 along the thickness of counter-propagating spin waves is such that the dipolar and interlayer exchange interactions jointly determine the frequency shift. In the following, we will discuss each mode separately. In the case of mode 1, the influence of the dipolar inter-action evaluated via the surface charge ratio (see FIG. 4(c)) does not explain the frequency shift (see FIG. 4(d)). This is consequent to the fact that the spin wave orbit distribu-tion along the thickness of the counterpropagating modes has important differences between them, wherein the frequency shift is therefore dominated by the interlayer exchange in-teraction as aforementioned[37]. One can argue that modes with greater inhomogeneity in the orbital distribution exhibit a stronger interlayer exchange interaction, which promotes a higher oscillation frequency. In this sense, the frequency shift will be positive (negative) if the orbit distribution along the thickness at kx = 40 rads /μ m ( kx = −40 rads /μ m) is more inhomogeneous than in the case of kx = −40 rads /μ m(kx = 40 rads /μ m). We use this argument to understand the frequency shift of mode 1 as a function of the applied field. Accordingly, one can see that at H = 0 in FIG. 3(j) - downward red triangle - and kx = 40 rads /μm (upper fig-ure), the orbit distribution is more inhomogeneous than in the case of kx = −40 rads /μm (bottom figure), therefore the frequency shift is positive as shown in FIG. 4(d). This ten-dency remains as far as 0 ≤ H ≤ HC with μ0HC ≈ 27 mT, wherein the bilayer is in a homogeneous magnetization state. At H > H C , the equilibrium magnetic state turns into a heli-cal configuration, wherein the frequency shift start to displace towards negative values as the twist of the helical equilibrium state increases. It is consistent with the modes distribution at 
+
+μ0H ∈ { 90 , 111 , 150 } mT, wherein the spin wave orbit dis-tribution at kx = −40 rads μm is more inhomogeneous along the thickness than those at kx = 40 rads /μ m, letting the spin wave modes at kx = −40 rads /μ m oscillating at larger fre-quencies than at kx = 40 rads /μ m, resulting in a negative frequency shift. In mode 2, the frequency shift is explained as a compen-sation between the dipolar and interlayer exchange interac-tions. As seen in FIG. 4(c) of mode 2, the surface charge ratio can not explain by itself the frequency shift shown in FIG. 4(d). For a successful explanation, it is necessary to in-troduce in the analysis the effects of the interlayer exchange interaction via the inhomogeneity of the orbit mode along the thickness. At H = 0 , one can see that the orbit distribu-tion at kx = −40 rads /μ m (see bottom figure at FIG. 3(k) - downward empty blue triangle) is slightly more inhomoge-neous than the counterpropagating one at kx = 40 rads /μ m(see upper figure at FIG. 3(k) - downward empty blue trian-gle). It suggests that the spin wave at kx = −40 rads /μ moscillates at a higher frequency, thereby promoting a negative frequency shift. In contrast, the positive surface charge ratio promotes a positive frequency shift. Since the orbit inhomo-geneities at kx = −40 rads /μ m are slightly larger than at 
+
+kx = −40 rads /μ m, the negative frequency shift promoted by the interlayer interaction is not dominant. As a result, both interactions compensate each other, reducing the frequency shift to ∆f ≈ − 1 GHz, which is an indication that at H = 0 
+
+the interlayer exchange interaction has a stronger effect on the frequency shift than the dipolar interaction. This nega-tive frequency shift remains almost unaltered as long as the equilibrium magnetization remains in the homogeneous con-figuration. Once the applied magnetic field exceeds Hc = 27 
+
+mT, the equilibrium state becomes a helicoidal configuration, and the frequency shift of mode 2 becomes positive, as seen in FIG. 4(d). This is consistent with the counterpropagating spin wave orbit distribution at μ0H ∈ { 90 , 111 , 150 } mT. At these fields, the surface charge ratio increases negatively in the range −1 < σ [+ |kx|]/σ [−| kx|] < 0, thus promoting a negative frequency shift as the applied field increases. How-ever, the spin wave orbit distribution at kx = +40 rads /μ macquires a slightly less inhomogeneous profile than the orbit distribution at kx = −40 rads /μ m, promoting a reduced pos-itive frequency shift if compared with H = 0 . We can expect that this positive frequency shift should remain almost unaf-fected in the set of fields μ0H ∈ { 90 , 111 , 150 } mT, since the spin wave orbit distributions slightly change at these fields (see FIG. 3(k)) and with it, a slight change in the interlayer interaction. Afterward, we ended up with a dipolar interac-tion promoting an increasingly negative frequency shift and a reduced, but almost unaffected, promotion of the positive frequency shift by the interlayer exchange interaction. As a result, both interactions compensate each other, showing a de-creasing frequency shift to almost zero at μ0H = 150 mT, as shown in FIG. 4(d) mode 2. Finally, we characterized the extreme values of the fre-8        
+
+> Figure 5. (a-c) Frequency shift extreme values ∆fext at (b-d) the corresponding wave vector kext
+> xof a CoFeB/NiFe bilayer, as a function of the applied magnetic field. The CoFeB sublayer thickness is set to dCoFeB = 25 nm, whereas three different thicknesses of the NiFe sublayer were considered.
+
+quency shift ∆f ext at its wave vector kext  
+
+> x
+
+at three different NiFe thicknesses in the CoFeB(25)/NiFe bilayer, for an ap-plied magnetic field ranging as 0 ≤ μ0H ≤ 150 mT. FIG. 5(a,b) and (c,d) show ∆f ext and kext  
+
+> x
+
+as functions of the ap-plied magnetic field of mode 1 and mode 2, respectively. The discontinuity (or gap) in ∆f ext of mode 1 at FIG. 5(a) are ex-tremes with wave vectors kext  
+
+> x
+
+located beyond the wave vector range considered in our calculations. The almost flat behav-ior of ∆f ext and kext  
+
+> x
+
+shown in FIG. 5, occurs as far as the equilibrium magnetization is in the homogeneous configura-tion. It happen at applied fields below the coercive field, be-yond which the helical magnetic state is stabilized. It is worth noticing the frequency shift values obtained here, reaching the 
+
+|∆f ≈ 10 | Ghz at large wave vectors kext  
+
+> x
+
+≈ 50 rads /μ m, or relatively large frequency shifts |∆f | ≈ 5 Ghz at very large wave vectors kext  
+
+> x
+
+≈ 100 rads /μ m (or sub-100 nm wave lengths). Large wave vectors with large frequency shifts can be tuned by selecting the appropriate NiFe sublayer thickness; however, this is the subject of a forthcoming work. Finally, the frequency-shift mechanism proposed through-out this manuscript, based on differences in the dynamic dipolar and interlayer exchange interactions arising from dis-tinct spin-wave mode profiles across the film thickness for two counterpropagating modes at the same wave vector, con-trasts with recent literature, which attributes the shift solely to dipolar interactions. We argue that such an interpretation is incomplete.[37]  
+
+> IV. CONCLUSIONS
+
+In this work, we have extended the dynamic matrix formal-ism to describe the spin-wave propagation in a heterostruc-tured multilayer with an inhomogeneous in-plane helical equi-librium magnetization. We have validated our model by fit-ting experimental and simulated dispersion relations for a SmCo/Fe exchange spring bilayer (see Jiang et al. (2025) [27]), as shown in Supplementary Material Section II [36]. In-stead of focusing on SmCo/Fe, our system of interest was the CoFeB/NiFe bilayer due to its versatile features as a magnonic diode and an exchange spring. In contrast to recent litera-ture where the frequency shift behavior is attributed solely to the dipolar interaction, we explained its features by analyzing the differences in the dynamic dipolar and interlayer exchange interactions arising from the distinct spin-wave mode profiles across the thickness for counterpropagating modes at the same wave vector kx. Complimentarily, we have evaluated the ex-tremes frequency shifts ∆f ext at the given wave vector kext  
+
+> x
+
+,finding a combination of large frequency shift values and sub-100 nm spin waves wave lengths that can be tuned with the twisting degree of the helical magnetization state by the ap-plication of the external field, and with the thickness of the NiFe sublayer, which might be highly relevant for magnonic applications. 
+
+> DECLARATION OF COMPETING INTEREST
+
+The authors declare that they have no known competing fi-nancial interests or personal relationships that could have ap-peared to influence the work reported in this paper. 
+
+> ACKNOWLEDGMENTS
+
+This research has received funding support from Chilean Doctorado Nacional ANID via fellowship Grant 21211429.. 9
+
+DATA AVAILABILITY STATEMENT 
+
+The data are available upon reasonable request from the au-thors. 
+
+CREDIT AUTHORSHIP CONTRIBUTION STATEMENT 
+
+Claudia Negrete : Writing - original draft, Visualization, Conceptualization, Investigation, Formal Analysis. Omar J. Suarez : Writing - review . Attila Kákay : Writing - review & editing, Conceptualization, Investigation. Jorge A. Otálora :Writing - review & editing, Conceptualization, Supervision, Resources, Project administration, Methodology, Investiga-tion, Formal Analysis. 
+
+[1] S. O. D. V V Kruglyak and D. Grundler, J. Phys. D: Appl. Phys. 
+
+43 , 264001 (2010). [2] M. Jamali, J. H. Kwon, S.-M. Seo, K.-J. Lee, and H. Yang, Scientific reports 3, 3160 (2013). [3] S. O. Demokritov, in Topology in Magnetism (Springer, 2018) pp. 299–334. [4] V. Kruglyak and R. Hicken, Journal of Magnetism and Mag-netic Materials 306 , 191 (2006). [5] B. Lenk, H. Ulrichs, F. Garbs, and M. Münzenberg, Physics Reports 507 , 107 (2011). [6] H. T. Nembach, J. M. Shaw, M. Weiler, E. Jué, and T. J. Silva, Nature Physics 11 , 825 (2015). [7] J. A. Otálora, M. Yan, H. Schultheiss, R. Hertel, and A. Kákay, Phys. Rev. Lett. 117 , 227203 (2016). [8] J. A. Otálora, A. Kákay, J. Lindner, H. Schultheiss, A. Thomas, J. Fassbender, and K. Nielsch, Phys. Rev. B 98 , 014403 (2018). [9] J. Lan, W. Yu, R. Wu, and J. Xiao, Phys. Rev. X 5, 041049 (2015). [10] K. Szulc, P. Graczyk, M. Mruczkiewicz, G. Gubbiotti, and M. Krawczyk, Phys. Rev. Appl. 14 , 034063 (2020). [11] J. Adam, L. Davis, G. Dionne, E. Schloemann, and S. Stitzer, IEEE Transactions on Microwave Theory and Techniques 50 ,721 (2002). [12] Y. Chen, T. Sakai, T. Chen, S. D. Yoon, A. L. Geiler, C. Vittoria, and V. G. Harris, Applied physics letters 88 (2006). [13] H. Benson and D. L. Mills, Phys. Rev. 178 , 839 (1969). [14] K. Y. Guslienko, S. O. Demokritov, B. Hillebrands, and A. N. Slavin, Phys. Rev. B 66 , 132402 (2002). [15] B. Flebus, D. Grundler, B. Rana, Y. Otani, I. Barsukov, A. Bar-man, G. Gubbiotti, P. Landeros, J. Åkerman, U. Ebels, P. Pirro, V. Demidov, K. Schultheiss, G. Csaba, Q. Wang, F. Ciubotaru, D. Nikonov, P. Che, R. Hertel, and J. Rao, Journal of Physics: Condensed Matter 36 (2024). [16] L. Körber, M. Zimmermann, S. Wintz, S. Finizio, M. Kro-nseder, D. Bougeard, F. Dirnberger, M. Weigand, J. Raabe, J. A. Otálora, H. Schultheiss, E. Josten, J. Lindner, I. Kézsmárki, C. H. Back, and A. Kákay, Phys. Rev. B 104 , 184429 (2021). [17] S. Tacchi, R. E. Troncoso, M. Ahlberg, G. Gubbiotti, M. Madami, J. Åkerman, and P. Landeros, Phys. Rev. Lett. 118 ,147201 (2017). [18] L. Körber, R. Verba, J. A. Otálora, V. Kravchuk, J. Lindner, J. Fassbender, and A. Kákay, Phys. Rev. B 106 , 014405 (2022). [19] A. Korniienko, V. P. Kravchuk, O. V. Pylypovskyi, D. D. Sheka, J. van den Brink, and Y. Gaididei, SciPost Phys. 7, 035 (2019). [20] R. A. Gallardo, P. Alvarado-Seguel, A. Kákay, J. Lindner, and P. Landeros, Phys. Rev. B 104 , 174417 (2021). [21] R. A. Gallardo, P. Alvarado-Seguel, T. Schneider, C. Gonzalez-Fuentes, A. Roldán-Molina, K. Lenz, J. Lindner, and P. Lan-deros, New Journal of Physics 21 , 033026 (2019). [22] K. Mika and P. Grünberg, Phys. Rev. B 31 , 4465 (1985). [23] A. F. Franco and P. Landeros, Phys. Rev. B 102 , 184424 (2020). [24] L. Fallarino, P. Riego, B. Kirby, C. Miller, and A. Berger, Ma-terials 11 , 251 (2018). [25] L. Fallarino, B. Kirby, M. Pancaldi, P. Riego, A. Balk, C. Miller, P. Vavassori, and A. Berger, Physical Review B 95 (2017). [26] C. Heins, V. Iurchuk, O. Gladii, L. Körber, A. Kákay, J. Fass-bender, K. Schultheiss, and H. Schultheiss, Phys. Rev. B 111 ,134434 (2025). [27] M. Jiang, G. Xu, L. Sun, H. Niu, C. Li, X. Yang, T. Ji, M. Yang, J. Cheng, J. Ma, G. Chen, G. Chai, B. Miao, and H. Ding, Phys. Rev. B 112 , L020409 (2025). [28] T. A. Taaev, K. S. Khizriev, E. A. Karashtin, and A. K. Mur-tazaev, Journal of Magnetism and Magnetic Materials 607 ,172409 (2024). [29] C.-F. Pai, M. Mann, A. J. Tan, and G. S. D. Beach, Phys. Rev. B 93 , 144409 (2016). [30] Y. Liu, Y. Q. Wu, M. J. Kramer, Y. Choi, J. S. Jiang, Z. L. Wang, and J. P. Liu, Applied Physics Letters 93 , 192502 (2008). [31] E. E. Fullerton, J. S. Jiang, and S. D. Bader, Journal of Mag-netism and Magnetic Materials 200 , 392 (1999). [32] F. Magnus, M. E. Brooks-Bartlett, R. Moubah, R. A. Procter, G. Andersson, T. P. A. Hase, S. T. Banks, and B. Hjörvarsson, Nature Communications 7, 11931 (2016). [33] A. Haldar, C. Banerjee, P. Laha, and A. Barman, Journal of Applied Physics 115 , 133901 (2014). [34] S.-s. Yan, W. J. Liu, J. L. Weston, G. Zangari, and J. A. Barnard, Phys. Rev. B 63 , 174415 (2001). [35] M. Grassi, M. Geilen, D. Louis, M. Mohseni, T. Brächer, M. Hehn, D. Stoeffler, M. Bailleul, P. Pirro, and Y. Henry, Phys. Rev. Appl. 14 , 024047 (2020). [36] See supplementary matrial at [URL inserted by editor] for de-tails on analytical calculations and validation of the formalism, which includes Refs. [27]. [37] C. Negrete, A. Kákay, and J. A. Otálora, arXiv preprint arXiv:2601.20636 (2026).

@@ -1,0 +1,764 @@
+Title: Quasi-1D Planar Magnetic Topological Heterostructure
+
+URL Source: https://arxiv.org/pdf/2604.01823v1
+
+Published Time: Fri, 03 Apr 2026 00:42:29 GMT
+
+Number of Pages: 10
+
+Markdown Content:
+# Quasi-1D Planar Magnetic Topological Heterostructure 
+
+Z.Z. Alisultanov 1, 2, ∗
+
+> 1
+
+Abrikosov Center for Theoretical Physics, MIPT, Dolgoprudnyi, Moscow Region 141701, Russia 
+
+> 2
+
+Institute of Physics of DFRS, Russian Academy of Sciences, Makhachkala, 367015, Russia 
+
+We theoretically introduce a quasi-1D magnetic heterostructure of alternating 2D topological and normal insulator strips. Its low-energy physics is governed by a hybrid Hamiltonian intertwining the Su-Schrieffer-Heeger and Shockley models, with spin-momentum locking and local Zeeman splitting. Symmetry analysis places it in class AIII, characterized by chiral symmetry and a Z topological invariant. Computing the winding number from the block-off-diagonal structure of the Hamiltonian reveals topological phases characterized by invariants ν = 0, 1, and 2. Furthermore, a single magnetic defect acts as a sensitive local probe, whose in-gap spectrum provides a spectroscopic fingerprint to distinguish topological phases. Extending the platform to a multilayer geometry uncovers a nonsymmorphic projective symmetry that gives rise to M¨ obius band topology, with the Brillouin zone compactifying into a Klein bottle. Our work establishes a platform for higher-order topology via heterostructure design and magnetic patterning. 
+
+INTRODUCTION 
+
+The discovery of topological insulators (TIs) has un-veiled a paradigm where the electronic bulk-boundary correspondence dictates the emergence of robust states protected against disorder and perturbations [1–3]. In two dimensions, this is exemplified by the quantum spin Hall (QSH) effect, hosting helical edge states immune to backscattering due to time-reversal symmetry (TRS) [4– 6]. After their experimental realization, these materi-als have been recognized as promising platforms for ob-serving nontrivial electronic and thermoelectric effects (see,e.g. [7–10]). A central theme in modern condensed matter physics is the artificial engineering of topologi-cal states through heterostructuring [11–16], where the interplay between topology and geometry gives rise to novel phenomena beyond the intrinsic properties of the constituent materials. A particularly rich direction involves patterning two-dimensional systems into quasi-one-dimensional (quasi-1D) structures to engineer novel topological phases. The immense potential of this approach is exemplified by pla-nar Josephson junctions, where such confinement has re-cently enabled the pursuit of topological superconduc-tivity and Majorana zero modes [17–19]. Inspired by this platform, we consider architectures where the chi-ral edge states of 2D TI segments can hybridize via two distinct tunneling pathways: through the bulk of adja-cent TI regions (∆ S ) and across the intervening bar-riers of 2D normal insulators (NI) (∆ D ) (see Fig. 1). This inherent dimerization naturally maps onto the Su-Schrieffer-Heeger (SSH) model [20, 21], but is enriched by the critical addition of spin-momentum locking. Fur-thermore, introducing magnetic impurities at the inter-faces [22–24] breaks TRS and allows for control over spin-dependent transport through local, on-edge spin-flip scattering (∆ F ), potentially driving the system into mag-netic topological phases. Remarkably, this alternating stripe geometry is not ∆S ∆D
+
+# ∆F
+
+# TI NI 
+
+Figure 1. Schematic illustration of the proposed model. The device is a quasi-1D ribbon comprising an alternating se-quence of 2D topological insulator (TI) and normal insulator (NI) segments. Magnetic impurities (green) are assumed to be present at each TI-NI interface. The effective coupling be-tween the counter-propagating chiral edge modes is described by the tight-binding Hamiltonian in Eq. (1), with the hop-ping parameters defined as follows: ∆S (tunneling across a TI segment), ∆ D (tunneling across a NI segment), and ∆ F
+
+(direct on-edge spin-flip tunneling). 
+
+merely a theoretical construct but can appear naturally in recently discovered one-dimensional moir´ e systems. Examples include graphene nanoribbons on hBN that exhibit periodic domain structures [25], twisted bilayer 1T ′ −WTe 2 forming 1D superlattices of alternating stack-ing domains [26], and strain-engineered MoSe 2 − WSe 2
+
+heterobilayers where uniaxial strain transforms triangu-lar moir´ e patterns into 1D arrays [27]. Given that mono-layer 1 T ′ − WTe 2 is a quantum spin Hall insulator [28], strain or moir´ e patterning can locally drive regions into a trivial insulating state, creating an intrinsic analogue of our designed heterostructure. Our findings—particularly the predicted phase diagram and the spectroscopic finger-
+
+> arXiv:2604.01823v1 [cond-mat.mes-hall] 2 Apr 2026
+
+2print of magnetic defects—can be interesting for studies in these emerging 1D moir´ e platforms. The low-energy physics of such quasi-1D heterostruc-ture (Fig. 1) is governed by a hybrid Hamiltonian that intertwines elements of the SSH model (via ∆ S and ∆ D )and the Shockley model of interface states (via the on-site magnetic term ∆ F ) [29–31], all while retaining the Dirac nature of the original edge states. The competi-tion between these energy scales, along with a Zeeman splitting (∆ z ), is poised to yield a rich phase diagram. However, a comprehensive symmetry classification and a detailed mapping of the topological phases of such a hybrid SSH-Shockley model remain unexplored. In this work, we theoretically investigate the elec-tronic and topological properties of above-mentioned het-erostructure (Fig. 1). We derive an effective tight-binding Hamiltonian and perform a complete symmetry anal-ysis. We demonstrate that the system, lacking both time-reversal and particle-hole symmetry but possessing a chiral symmetry, belongs to the Altland-Zirnbauer class AIII [32, 33]. This classification implies a Z topological invariant in one dimension. We compute the topologi-cal phase diagram by evaluating the winding number ν
+
+from the block-off-diagonal structure of the Hamiltonian, revealing topological phases characterized by invariants 
+
+ν = 0, 1, and 2. Furthermore, we explore the local effect of a single magnetic defect embedded in a non-magnetic host. We show that the spectrum of the bound states induced within the bulk gap acts as a sensitive local probe: in the topological phase, the defect generates four disper-sive states with a protected level crossing, while in the trivial phase, it gives rise to only two states, one of which is pinned to the band edge. This stark difference pro-vides a clear spectroscopic fingerprint for distinguishing the global topological order. Finally, extending this platform to a multilayer geom-etry reveals a nonsymmorphic projective symmetry that gives rise to M¨ obius band topology in the electronic struc-ture, with the Brillouin zone compactifying into a Klein bottle—a manifestation of higher-order topological phe-nomena beyond conventional classifications. 
+
+> MODEL AND SYMMETRY ANALYSIS
+
+We consider the quasi-one-dimensional heterostructure depicted in Fig. 1. Its low-energy physics is described by a tight-binding Hamiltonian featuring two internal de-grees of freedom per unit cell: 
+
+• Spin (σ), described by Pauli matrices σx, σ y , σ z
+
+acting on the subspace {↑ , ↓} .
+
+• Edge (τ ), described by Pauli matrices τx, τ y , τ z act-ing on the subspace {A, B } representing the two distinct edges of the TI strip (unit cell of system).            
+
+> Table I. Symmetry classification of the Hamiltonian (2).
+> Symmetry Present
+> Time-Reversal ( T)No Particle-Hole ( P)No Chiral ( C=τzσy)Yes Mirror ( Mx)No Mirror ( My)No
+
+The full basis vector for the n-th unit cell is thus Ψ n =(cn,A, ↑, c n,A, ↓, c n,B, ↑, c n,B, ↓)T . In this basis, the real-space Hamiltonian is given by: 
+
+H = X
+
+> n
+
+Ψ† 
+
+> n
+
+(vF ky τz σz + ∆ F τ0σx + ∆ S τxσ0) Ψ n+
+
+X
+
+> n
+
+h
+
+Ψ†
+
+> n
+
+∆z τ0σz Ψn +
+
+
+
+∆D Ψ†
+
+> n+1
+
+τ+σ0Ψn + h.c. 
+
+i 
+
+, (1) where τ± = 1/2 ( τx ± iτ y ) and the terms represent: 
+
+vF ky τz σz is the spin-orbit coupled propagation along the edge ( y-direction), ∆ F τ0σx is the spin-flip hybridization within a unit cell, ∆ S τxσ0 is tunneling between edges across a TI segment (intra-cell hopping), ∆ D τxσ0 is tun-neling between edges across a NI segment (inter-cell hop-ping), ∆ z τ0σz is Zeeman splitting induced by magnetic impurities. For brevity, the tensor product symbol ⊗ is omitted throughout. The corresponding Bloch Hamilto-nian in momentum space is: 
+
+H(k) = vF ky τz σz + ∆ F τ0σx + ∆ z τ0σz ++ (∆ S + ∆ D cos kx) τxσ0 + ∆ D sin kxτy σ0. (2) This Hamiltonian coincides with the Hamiltonian of the SSH model at ∆ F , ∆z , k y = 0. However, unlike the simple SSH model, there are two orbitals at each site. The term vF ky τz σz represents spin-momentum locking along the edges, coupling the spin and orbital degrees of freedom. And at ∆ F̸ = 0, this Hamiltonian partially includes the Shockley model. Therefore, we can call this Hamiltonian the hybrid SSH-Shockley model. The symmetry properties of the Hamiltonian H
+
+are fundamental to classifying its potential topological phases. We analyze its behavior under time-reversal, particle-hole, chiral, and mirror symmetries. The results are summarized in Table I. 
+
+Time-Reversal Symmetry (TRS) is an antiunitary operation represented by T = UT K, where K denotes complex conjugation. For spin-1/2 particles, UT = iτ 0σy .The Hamiltonian respects TRS if TH (kx, k y )T−1 =
+
+H(−kx, −ky ). The spin-orbit coupling term vF ky τz σz
+
+is TRS-invariant. However, both the spin-hybridization term ∆F τ0σx and the Zeeman term ∆z τ0σz change sign under TRS: T(∆ F τ0σx)T−1 = −∆F τ0σx and 
+
+T(∆ z τ0σz )T−1 = −∆z τ0σz , explicitly breaking TRS. 
+
+Particle-Hole Symmetry (PHS) . A Hamiltonian re-spects PHS if there exists an antiunitary operator P such that PH (kx, k y )P−1 = −H(−kx, −ky ). We examine 3-3 -2 -1 1 2 3 kx                                               
+
+> -3
+> -2
+> -1123E
+> ΔF=0, ΔZ=0
+> -3-2-1123kx
+> -3
+> -2
+> -1123E
+> ΔF=0.4, ΔZ=0
+> -3-2-1123kx
+> -3
+> -2
+> -1123E
+> ΔF=0, ΔZ=0.4
+> -3-2-1123kx
+> -3
+> -2
+> -1123E
+> ΔF=0.5, ΔZ=0.5
+
+Figure 2. Electronic spectrum (3) calculated for various Hamiltonian parameters. Note that the magnetic terms ∆ F
+
+and ∆ Z produce equivalent band splittings. 
+
+both classes of particle-hole symmetry. As an example, consider the candidate P+ = τy σy K for P+ symmetry (P2+ = 1). Applying it to the spin-orbit term yields 
+
+P+(vF ky τz σz )P−1+ = −vF ky τz σz , while the PHS con-dition requires + vF ky τz σz for this term. Furthermore, the Zeeman term ∆ z τ0σz remains invariant under this transformation instead of acquiring a minus sign. A com-prehensive analysis shows that no operator P− satisfying the PHS condition exists for this Hamiltonian. Thus, the system possesses neither P+ nor P− symmetry. 
+
+Chiral Symmetry (CS) . A Hamiltonian possesses CS if there exists a unitary operator C such that 
+
+CH (kx, k y )C−1 = −H(kx, k y ) and C2 = 1. We find that the operator C = τz σy fulfills this condition. It anticommutes with all terms in the Hamiltonian: τz σy
+
+anticommutes with τz σz , τ0σx, τ0σz , τxσ0, and τy σ0.
+
+Mirror Symmetries . We consider mirror reflections 
+
+Mx (inversion of x → − x) and My (inversion of y →−y). The operator Mx is represented by iτ xσx and My by 
+
+iτ 0σy . The spin-orbit term vF ky τz σz is invariant under both Mx and My . But the Zeeman term ∆ z τ0σz changes sign under both Mx and My . Consequently, neither Mx
+
+nor My is a symmetry of the full Hamiltonian (2). As we discuss below, the breaking of these mirror symmetries is crucial for the photocurrent generation in this system. According to the Altland-Zirnbauer classification [32], the Hamiltonian, lacking both TRS and PHS but pos-sessing a chiral symmetry, belongs to class AIII . In one dimension, this class is characterized by a Z topological invariant. Beyond the standard Altland-Zirnbauer classification, the Hamiltonian exhibits a unitary symmetry that im-poses a fundamental constraint on its spectral structure. We identify the unitary operator P′ = τy σy , which sat-isfies the relation: P′H (k) P′− 1 = −H (−k). This is distinct from particle-hole symmetry as the operator is unitary rather than antiunitary. The immediate conse-quence: for every eigenstate at wavevector k with energy 
+
+E(k), there exists a corresponding eigenstate at wavevec-tor −k with energy −E(k). While the system’s topolog-ical classification remains that of class AIII due to the presence of chiral symmetry and the absence of antiuni-tary symmetries, this additional unitary symmetry can have profound implications for the structure of the topo-logical boundary states and the protection of certain de-generacies. Finally, we note that for ∆ F = ∆ z = 0 and ∆ S = ∆ D ,a hidden (projective) symmetry is restored in our system, defined by the operator L x = Lx ⊗ G = 
+
+ 0 1
+
+eik x 0
+
+
+
+⊗ σx
+
+(pure Lx is not a symmetry). This symmetry corresponds to a translation Lx along the X-axis by half the period of the unit cell combined with a spin flip. As is straight-forward to verify, [L x, H] = 0 holds in this case. This symmetry with TRS enforce the two-fold degeneracy of bands and appearance of the bands crossing point - a Dirac point - in the Hamiltonian (see, e.g., [34]). Next, we diagonalize the Bloch Hamiltonian H(kx, k y ). The energy spectrum E(k) is obtained by solving det ( H(kx, k y ) − EI4×4) = 0: 
+
+E±± (kx, k y ) = ±
+
+r
+
+∆2 (kx) + ∆ 2 
+
+> F
+
++ v2 
+
+> F
+
+k2 
+
+> y
+
++ ∆ 2 
+
+> z
+
+± 2
+
+q
+
+(∆ 2 
+
+> F
+
++ ∆ 2 
+
+> z
+
+) ∆ 2 (kx) + v2 
+
+> F
+
+k2 
+
+> y
+
+∆2 
+
+> z
+
+(3) where ∆ 2 (kx) = ∆ 2 
+
+> D
+
++ ∆ 2 
+
+> S
+
++ 2∆ D ∆S cos kx. The Fig. 2 shows this spectrum. In general, it consists of four non-degenerate bands, a consequence of the broken time-reversal symmetry which lifts all Kramers degenera-cies. The terms ∆ z τ0σz , ∆F τ0σx explicitly break time-reversal symmetry, lifting the spin degeneracy and result-ing in four distinct bands. At ky = 0 we have the simple expression for the four energy bands: 
+
+E±± (kx) = ± R ± | t(kx)| , (4) where R = p∆2 
+
+> F
+
++ ∆ 2 
+
+> z
+
+and t(kx) = ∆ S + ∆ D e−ik x . The two inner bands, E2(kx) = −| R − | t(kx)|| and E3(kx) = 
+
+|R − | t(kx)|| , determine the direct band gap ∆gap (kx) = E3(kx) − E2(kx) = 2 R − | t(kx)| . (5) 4The global bulk gap is the minimum of (5) over the Bril-louin zone. Since |t(kx)| varies between 
+
+|t|min = |∆S | − | ∆D | , |t|max = |∆S | + |∆D |, (6) three distinct regimes emerge: i) R < |t|min : then R − | t(kx)| < 0 for all kx and ∆gap = 2( |t|min − R) > 0; the system is gapped. ii) |t|min < R < |t|max : there exist two momenta k∗
+
+> x
+
+satisfying |t(k∗
+
+> x
+
+)| = R. At these points ∆ gap (k∗
+
+> x
+
+) = 0 and the bulk gap closes; the system is gapless. iii) R > |t|max : then R − | t(kx)| > 0 for all kx and ∆gap = 2( R − | t|max ) > 0; the system is again gapped. These three regimes correspond precisely to the topo-logical phases considered in the next section. 
+
+> TOPOLOGICAL PROPERTIES
+
+Here we study topological properties of our sys-tems. The Hamiltonian (2) describes a generalized Su-Schrieffer-Heeger (SSH) model enriched by spin-dependent terms (SSH+Shockley ). The conserved chi-ral symmetry ensures that the spectrum is symmetric around E = 0, allowing for the existence of topologically protected zero-energy edge states in a finite open system. A key observation is that H(k), possessing chiral sym-metry C = τz σy with C2 = I and CH (k)C−1 = −H(k), can be brought to a block-off-diagonal form by a unitary transformation. The appropriate unitary matrix is given by: 
+
+U = 1
+
+√2
+
+
+
+1 0 1 0
+
+i 0 −i 00 1 0 10 i 0 −i
+
+ . (7) Applying this transformation, Heff( k) = U †H(k)U ,and subsequently reordering the basis to group states by their chiral eigenvalues, yields the block-off-diagonal form: 
+
+Heff (k) = 
+
+ 0 Q(k)
+
+Q†(k) 0
+
+
+
+, (8) where Q(k) is a 2 × 2 matrix encapsulating the inter-block coupling. This structure is mandated by the chiral symmetry and enables the computation of the topological invariant via the winding number of Q(k). The explicit form of the off-diagonal block Q(k) is found to be: 
+
+Q(k) = 
+
+−i∆F + vF ky + ∆ z ∆S + ∆ D e−ik x
+
+∆S + ∆ D e−ik x i∆F − vF ky + ∆ z
+
+
+
+. (9) For one-dimensional systems in class AIII, the topo-logical invariant is the winding number. In our case we have quasi-one-dimensional system and so 
+
+ν(ky ) = 12πi 
+
+Z π
+
+> −π
+
+dk x Tr 
+
+
+
+Q−1(kx, k y ) ∂Q (kx, k y )
+
+∂k x
+
+
+
+,
+
+(10) which takes integer values ν ∈ Z. It can be conveniently expressed through the phase evolution of the determi-nant: 
+
+ν(ky ) = 12π ∆kx arg det Q(kx, k y ), (11) where ∆ kx denotes the change over the Brillouin zone. To uncover the phase diagram we first set ky = 0; the dependence on ky will be discussed later. With R2 ≡
+
+∆2 
+
+> z
+
++ ∆ 2 
+
+> F
+
+and t(kx) = ∆ S + ∆ D e−ik x , the determinant reads det Q(kx) = R2 −t2(kx) = −∆2
+
+> D
+
+ w−w+
+
+  w−w−
+
+, (12) where w = e−ik x and 
+
+w± = − ∆S
+
+∆D
+
+± R
+
+∆D
+
+. (13) From Eq. (11) the winding number equals the number of roots w± that lie inside the unit circle |w| < 1: 
+
+ν = n+ + n−, n± = 1 if |w±| < 1, otherwise 0 .
+
+(14) The conditions |w±| < 1 translate into 
+
+|∆S ∓ R| < ∆D . (15) Introducing the dimensionless parameters 
+
+x = |∆S |
+
+∆D
+
+, y = R
+
+∆D
+
+(≥ 0) , (16) we obtain three distinct topological phases shown in Fig. 3. 
+
+Phase ν = 2 (yellow triangle) occurs when both roots lie inside the unit circle: 
+
+y < 1 − x and x < 1, (17) i.e. ∆D > |∆S | and R < ∆D − | ∆S |. In this regime the magnetic terms are weak, and the system effectively consists of two uncoupled SSH copies, each contributing 
+
+ν = ±1. 
+
+Phase ν = 1 (blue strip) appears when only one root is inside: 
+
+|x − 1| < y < x + 1 . (18) This corresponds to ∆ D − | ∆S | < R < ∆D + |∆S |. Here the magnetic coupling hybridizes the two channels, re-ducing the total winding number by one. This corre-sponds to gapless phase with Dirac/Weyl points. 
+
+Phase ν = 0 (white regions) is realized when both roots are outside the unit circle, which happens either for 
+
+y > x + 1 or (x > 1 and y < x − 1) . (19) The former condition describes strong magnetic terms (R > ∆D + |∆S |) that completely destroy the topology; 5x = |∆S |         
+
+> ∆D
+> y=R/ ∆D
+> ν= 2
+> ν= 1
+> ν= 0
+> ν= 0
+> y = 1  − x
+> y = x + 1
+> y = x − 1
+> Increasing R
+> 012
+> 0
+> 1
+
+Figure 3. Topological phase diagram of the hybrid SSH– Shockley model at ky = 0. The dimensionless parameters are 
+
+x = |∆S |/∆D and y = R/ ∆D with R = p∆2 
+
+> F
+
++ ∆ 2 
+
+> z
+
+. Phases are characterized by the winding number ν. The dashed line indicates a cut at fixed x = 0 .5, along which increasing the magnetic parameters ( y) drives the transitions ν = 2 → 1 →
+
+0. The dot marks the triple point ( x, y ) = (1 , 0). 
+
+the latter corresponds to the trivial SSH limit |∆S | > ∆D
+
+with negligible R.The phase boundaries are the lines y = |x − 1| and 
+
+y = x + 1, which meet at the triple point ( x, y ) = (1 , 0). A direct transition ν = 2 ↔ 0 occurs only along the line 
+
+x = 0 (∆ S = 0), where the intermediate phase ν = 1 is absent. The phase diagram reveals a remarkable possibility of magnetic-field-induced topological transitions .For a fixed ratio x < 1, increasing the magnetic parame-ters (i.e. increasing y) moves the system from the ν = 2 phase through the ν = 1 phase into the trivial ν = 0 phase. Conversely, for x > 1 a sufficiently large magnetic term can drive the system from the trivial phase into the topological ν = 1 phase before it becomes trivial again at even larger fields. 
+
+SINGLE MAGNETIC TI IN NON-MAGNETIC STRUCTURE 
+
+In this section, we investigate the electronic prop-erties of the heterostructure comprising alternat-ing two-dimensional topological and trivial insulators, where only a single topological layer is magnetically doped—effectively creating a magnetic defect in an other-wise nonmagnetic system. Unlike the previously studied fully magnetic configurations that exhibit broken time-reversal symmetry globally, this architecture allows us to probe the local effects of a symmetry-breaking per--1.5 -1.0 -0.5 0.0 0.5 1.0 1.5 
+
+> -0.5 0.0 0.5
+
+Conduc ti on band Topological Valence band Orange (Δ F =0)
+
+Purple (Δ F =1)-1.5 -1.0 -0.5 0.0 0.5 1.0 1.5 
+
+> -0.5 0.0 0.5
+
+Conduc ti on band Trivial Valence band 
+
+Figure 4. (Color online) Energy spectra of in-gap bound states induced by a single magnetic defect, calculated at 
+
+ky = 0 as a function of the Zeeman splitting strength ∆ Z and intra-edge intermodes tunneling magnitude ∆ F . (a) Topo-logical phase (∆ S < ∆D ). The introduction of the defect gives rise to four in-gap states. The initially degenerate lev-els split, and all states exhibit dispersion. Notably, the lower pair of states cross at a critical value of ∆ Z . (b) Trivial phase (∆ S > ∆F ). Only two in-gap states emerge. While the degen-eracy is also lifted, one branch is dispersionless and is pinned precisely at the edge of the bulk band gap. In contrast to the topological phase, the bound states in the trivial phase exhibit no crossing. The spectra are obtained from the ana-lytical expression in Eq. (29). 6turbation embedded in a trivial environment. We fo-cus on the emergence and behavior of bound states near the magnetic domain, analyzing their energy dependence on interlayer tunneling couplings in both topological and trivial phases. The hybridization of edge states and the formation of localized modes are examined to uncover the interplay between topology and controlled symmetry breaking. We consider a non-magnetic topological insulator sys-tem with parameters: ∆F = 0 , ∆z = 0 , ∆S , ∆D̸ = 0 (20) such that the system is in the topological phase ( ν = 1). A single magnetic defect is introduced at site i0 with: ∆F (i) = ∆ 0 
+
+> F
+
+δi,i 0 , ∆z (i) = ∆ 0 
+
+> z
+
+δi,i 0 (21) where δi,i 0 is the Kronecker delta function. The full Hamiltonian becomes: 
+
+H = Hbulk + Hdefect (22) with 
+
+Hbulk = X
+
+> n
+
+Ψ† 
+
+> n
+
+(vF ky τz σz + ∆ S τxσ0) Ψ n++ X
+
+> n
+
+
+
+∆D Ψ†
+
+> n+1
+
+τ+σ0Ψn + h.c. 
+
+
+
+, (23) and 
+
+Hdefect = Ψ † 
+
+> i0
+
+δˆhΨi0 , (24) where δˆh = ∆ 0 
+
+> F
+
+τ0σx + ∆ 0 
+
+> z
+
+τ0σz .To find the bound state energy induced by this de-fect, we employ the Green’s function formalism. The full Green’s function Gsd satisfies the Dyson equation, which has the formal solution: 
+
+Gsd ij (ky , ε ) = G0 
+
+> ij
+
+(ky , ε ) + +G0 
+
+> ii 0
+
+(ky , ε ) δˆh1 − G0 (ky , ε ) δˆh−1G0 
+
+> i0j
+
+(ky , ε ) . (25) where G0 
+
+> ij
+
+is the Green’s function of the perfect system (with Hamiltonian (23)) and G0 = G0
+
+> ii
+
+. The new poles of 
+
+Gsd , which correspond to bound state energies, are given by the condition: det 1 − G0 (ky , ε ) δˆh = 0 . (26) Inside the bulk gap, the unperturbed Green’s function 
+
+G0 is real, allowing Eq. (26) to have solutions. To find the bound state energy for arbitrary momentum ky , we use the full expression for the local Green’s function. For energies inside the bandgap, where ε2 
+
+> ⊥
+
+< (∆ S − ∆D )2, it takes the form: 
+
+G0 
+
+> ll
+
+= X
+
+> kx
+
+G0 
+
+> k
+
+→
+
+Z π
+
+> −π
+
+dk x
+
+2π (ε − Hbulk (k)) −1 == − (z1∆D + ∆ S )τx + ε + vF ky τz σz
+
+2∆ S ∆D
+
+r (ε2   
+
+> ⊥−∆2
+> S−∆2
+> D)2
+> 4∆ 2
+> S∆2
+> D
+
+− 1
+
+, (27) where ε2 
+
+> ⊥
+
+= ε2 − v2 
+
+> F
+
+k2 
+
+> y
+
+. We can rewrite the Green’s func-tion as 
+
+G0 
+
+> ll
+
+= G0I4×4 + G1τxσ0 + G2τz σz , (28) Then we have the following equation for in-gap states 1 +  ∆2 
+
+> F
+
++ ∆ 2
+
+> z
+
+2  G21 + G22 − G20
+
+2 −−2  ∆2 
+
+> F
+
++ ∆ 2
+
+> z
+
+   G20 + G21
+
+ + 2  ∆2 
+
+> F
+
+− ∆2
+
+> z
+
+ G22 = 0 . (29) The spectral signature of the magnetic defect provides a powerful tool to distinguish between the topological and trivial bulk phases of the host system. Figure 4 presents the energy of the resulting in-gap bound states, calcu-lated at ky = 0 from Eq. (29), as a function of the Zeeman splitting strength ∆ Z for two fixed values of the spin-flip tunneling amplitude ∆ F .In the topological phase (∆ S < ∆D ), the defect gener-ates four distinct states within the bulk gap [Fig. 4(a)]. The initially degenerate levels split, and all states exhibit a pronounced dispersion. A key feature of this phase is the protected crossing of the lower pair of states at a crit-ical value ∆ crit  
+
+> Z
+
+, a direct consequence of the underlying non-trivial topology. In stark contrast, the spectrum in the trivial phase (∆ S > ∆D ) reveals only two in-gap states [Fig. 4(b)]. While the degeneracy is also lifted, one branch remains essentially dispersionless and pinned precisely at the edge of the bulk band. Notably, the bound states in this phase exhibit no crossing, consistent with the absence of topo-logical protection. This stark difference in the spectral re-sponse to a local magnetic perturbation serves as a clear spectroscopic fingerprint of the global topological order. As we have shown, a single magnetic layer induces bound states within the band gap. Owing to the break-ing of time-reversal symmetry, the number of such states is four. Concurrently, the presence of Zeeman splitting breaks mirror reflection symmetry (see the Model and Symmetry Analysis section). These two conditions are both necessary and sufficient for the emergence of a non-linear shift current photoresponse in the system (see, e.g., [35, 36]). Consequently, our system with a single magnetic layer may exhibit nontrivial photovoltaic prop-erties, making it a promising candidate for locally sensi-tive terahertz detectors. 
+
+> DISCUSSION AND PERSPECTIVES
+
+In summary, we have developed a comprehensive the-ory for a quasi-1D magnetic heterostructure, mapping it onto a novel hybrid SSH-Shockley model. Our symme-try analysis unequivocally classifies the system in class AIII, characterized by a chiral symmetry and a Z topo-logical invariant. The calculated phase diagram reveals a rich structure, including a remarkable phase where 7a) b)
+
+## c) d)     
+
+> Figure 5. (Color online) A comparison of two distinct global topologies arising from closing a quasi-1D ribbon. (a) M¨ obius strip geometry, formed by connecting the ends of the ribbon with a half-twist. (b) Cylindrical geometry, formed by direct connection of the ends. The fundamental difference manifests in the boundary conditions for the chiral edge modes at the junction (highlighted in red). (c) In the M¨ obius strip, the connection forces edge modes of the same chirality to meet at the seam, leading to their hybridization and intersection in real space. (d) In the cylinder, the connection brings together edge modes of opposite chirality, as is the case at all other interfaces in the array. This results in two spatially separated edge modes, localized on opposite physical boundaries and propagating without intersection.
+
+a null global invariant masks the existence of robust, spatially separated end states—a direct manifestation of compensated non-trivial topology from opposing subsys-tem winding numbers. Furthermore, we demonstrated that the in-gap spectrum induced by a single magnetic defect provides a distinct spectroscopic fingerprint of the global topological order. This work establishes a versatile and tunable plat-form for exploring higher-order topological phenomena through material engineering and magnetic patterning. The uncovered principles of hidden topology and local probing are general and could be extended to other topo-logical material classes. Furthermore, the proposed platform, being free of magnetic impurities, provides a unique opportunity to in-vestigate nontrivial symmetry-protected and topological phenomena. Specifically, the nanoribbon can be closed into two distinct geometries: a cylinder or a M¨ obius strip (see Fig. 5). As the figure illustrates, these two topologies have profoundly different consequences for the edge modes. In the cylindrical geometry, the counter-propagating edge modes remain spatially separated and localized on opposite boundaries. In contrast, in the M¨ obius strip geometry, the edge modes are forced to hybridize at the ”seam” where the ends are connected, forming an analogue of a Hopf bundle. This funda-mental difference arises because the connection in the cylinder brings together edges with opposite chiralities, whereas the M¨ obius strip connection identifies edges with NI TI 
+
+∆
+
+z
+
+x
+
+y
+
+A B
+
+1
+
+2
+
+Mx
+
+> Chiral
+> Non-chiral
+
+## a) 
+
+## b) 
+
+## с) 
+
+∆2
+
+∆1             
+
+> Figure 6. (Color online) Layered heterostructure and its emer-gent topology. (a) A three-dimensional stack of the proposed quasi-1D planar ribbons along the Z-axis. (b) An equiva-lent planar representation of the layered structure, illustrat-ing the two-dimensional periodicity in the X-Zplane. This system possesses a non-symmorphic projective translational symmetry L z, while translational invariance along Xis ex-plicitly broken, rendering the system an insulator. (c) Due to the nontrivial action of the L zsymmetry, the projection of the Brillouin zone onto the XZ -plane yields a spectrum with edge states characterized by a M¨ obius strip topology. Further compactification of the Brillouin zone along the Y-direction results in a manifold with the topology of a Klein bottle.
+
+the same chirality, leading to a direct intersection of the modes (see Fig. 5). This twisting effectively alters the boundary conditions. The Hamiltonian for the M¨ obius strip thus differs from that of the cylinder by the pres-ence of a single topological defect (TD) at the junction, characterized by the identification of similar chiralities instead of opposing ones. In terms of projective transla-tion symmetry, this defect breaks the Lx ⊗ G symmetry mentioned above (see text before (3)). We can express this Hamiltonian as: 
+
+H = Hbulk + HTD (30) with 
+
+HTD = Ψ † 
+
+> N
+
+vF ky τz ⊗ (σ0 − σz ) Ψ N , (31) where N is number of the junction site and Hbulk is given by (23). This defect is topological and cannot be elimi-nated continuously. Another nontrivial topological feature emerges when considering the heterostructure depicted in Fig. 6. In this case, an additional degree of freedom—the layer index along the Z-axis—comes into play. The Hamiltonian for 8such a structure can be formulated as follows: 
+
+H(k) = ky γ0τz σz +γ0
+
+ 0 ∆1 +∆ 2e−ik x
+
+∆1 +∆ 2eik x 0
+
+
+
+σ0++∆  1 + e−ik z  γ+
+
+0 e−ik x
+
+1 0
+
+
+
+σ0++∆  1 + eik z  γ−
+
+ 0 1
+
+eik x 0
+
+
+
+σ0, (32) where γ = ( γx, γ y , γ z ) are Pauli matrices in the basis (1,2) of displacements along the Z axis (see Fig. 6), 
+
+γ± = 1 /2( γx ± iγ y ), and the matrix products are ten-sor products (the direct product symbol is omitted for brevity). We put υF = 1. It is straightforward to show that such a Hamiltonian remains invariant under the transformation L z =
+
+ 0 1
+
+eik z 0
+
+
+
+⊗ τx ⊗ σx:L−1 
+
+> z
+
+H(−kx, k y , k z )L z = H(kx, k y , k z ). (33) The operator L z corresponds to a translation along the 
+
+Z-axis combined with a reflection in the Y Z -plane. In-deed, this operation reverses the spin projection, as well as transforming kx → − kx. Such Hamiltonian has chi-ral symmetry with the operator ˆC = γ0 ⊗ τz ⊗ σx:
+
+{ ˆC, H} = 0. The transformation L z is related to projective non-symmorphic crystal symmetries, which have become an important direction in modern research. Such symme-tries arise in the presence of gauge fields, for instance, in the context of Z2 lattice gauge theories, spin liquids, or artificial crystals [34, 37–39]. Z2 projective transla-tional symmetry gives rise to fundamentally new topo-logical phenomena [34]. In particular, the anticommu-tation relation between translation operators in such a setting induces twofold band degeneracy and precludes a global trivialization of the spinor structure in momentum space [34]. Combining this symmetry with time-reversal symmetry yields fourfold-degenerate Dirac points, while its partial breaking leads to a M¨ obius insulator phase characterized by distinctive edge states [34]. Since L z is a symmetry, its eigenfunctions can be used to diagonalize the Hamiltonian matrix at planes 
+
+kx = 0 , π . It is easy to show that the following matrix diagonalizes the operator L z with eigenvalues ±eik z /2:
+
+U (kz ) = Tz ⊗ Uτ ⊗ Uσ , (34) where 
+
+Tz = 1
+
+√2
+
+ 1 1
+
+eik z /2 −eik z /2
+
+
+
+, (35) 
+
+Uτ = Uσ = 1
+
+√2
+
+1 11 −1
+
+
+
+, (36) After diagonalization we have following 
+
+U †H(k0, k y , k z )U =
+
+h1 (ky , k z ) 00 h2 (ky , k z )
+
+
+
+, (37) where k0 = 0 , π and 
+
+h1,2 (ky , k z ) = ky τxσx +
+
+
+
+m ± 2∆ cos kz
+
+2
+
+
+
+τz σ0, (38) where m = ∆ 1 ± ∆2 at kx = 0 , π . We note that 
+
+τxσz h1,2τxσz = −h1,2, (39) 
+
+h1,2 (ky , k z + 2 π) = h2,1 (ky , k z ) . (40) As is evident from these expressions, the Hamilto-nian exhibits nonperiodic behavior in momentum space along the kz direction, which directly manifests itself in the emergence of M¨ obius topology in the electronic band structure. Indeed, the explicit form yields the re-lation H (kz + 2 π) = γxH (kz ) γx, which is a similar-ity transformation that leaves the spectrum invariant but rotates the basis of eigenfunctions. Consequently, the eigenstates satisfy |Ψ⟩ (kz + 2 π) = γx|Ψ⟩ (kz ), from which, in the block-diagonal representation, we obtain 
+
+|ψ1,2⟩ (kz + 2 π) = |ψ2,1⟩ (kz ), where |ψ1,2⟩ are the eigen-functions of the operators h1,2. This structure is a direct consequence of the nonsymmorphic symmetry of the sys-tem and serves as a key signature of the realization of M¨ obius topology in the band spectrum. Focusing on the point ky = 0, the energy spectrum takes the analytically tractable form 
+
+e1,2 = ±
+
+
+
+m ± 2∆ cos kz
+
+2
+
+
+
+, (41) where the interplay of parameters dictates the topolog-ical phase. When m > 2∆, the spectrum is gapped. Notably, the eigenstates within each band (conduction and valence) form distinct M¨ obius pairs, as illustrated schematically in Fig. 7(a). A topological phase transition occurs at the critical point m = 2∆. For m < 2∆, the system becomes gapless, hosting a semimetallic phase. In this regime, the previously separated M¨ obius pairs in-tersect, resulting in the formation of symmetry-protected Dirac points at zero energy, shown in Fig. 7 (b). A comprehensive phase diagram emerges from this analysis, governed by the parameters ∆ 1, ∆ 2, and ∆ at the high-symmetry points kx = 0 , π : 1) Fully gapped Phase: When ∆ 1 ± ∆2 > 2∆ holds for both signs, the system is gapped at both kx = 0 and kx = π. 2) Fully gapless Phase: When ∆ 1 ±∆2 < 2∆ holds for both signs, the system is gapless at both kx = 0 and kx = π, hosting a total of four Dirac nodes at the Fermi level. 3) Mixed Phase: When ∆ 1 −∆2 < 2∆ < ∆1 +∆ 2, a hybrid phase is realized. The spectrum gapped at kx = 0 but gapless at 
+
+kx = π, yielding two Dirac points at zero energy. Transi-tions between these phases can be achieved by changing ∆, for example, by uniaxial deformation along Z. The proposed platform presents a compelling avenue for exploring non-Hermitian physics induced by local gain and loss. Introducing non-Hermitian defects, for 9
+
+Figure 7. Band structure exhibiting M¨ obius topology for the gapped ( m > 2∆, top panel) and gapless ( m < 2∆, bot-tom panel) phases. The two band branches interchange upon traversing the Brillouin zone; returning to the initial point requires a double loop. The spectra are shown at ky = 0. Accounting for the fact that the Brillouin zone is a closed manifold along the ky direction reveals that the actual band topology is that of a Klein bottle. 
+
+instance, could lead to the emergence of exceptional points [40, 41] and the non-Hermitian skin effect [42] within a topologically non-trivial backbone. Particularly intriguing is the interplay between such non-Hermitian perturbations and the compensated topological phase we discovered, potentially leading to novel hybrid phe-nomena [43]. Investigating the stability of the topolog-ical boundary states and their spectral flow under non-Hermitian terms represents a promising direction for fu-ture research. 
+
+Acknowledgments . The study is supported by the Min-istry of Science and Higher Education of the Russian Fed-eration (Goszadaniye) (No. FSMG-2026-0012).  
+
+> ∗
+
+zaur0102@gmail.com [1] M. Z. Hasan and C. L. Kane, Colloquium: Topological insulators, Rev. Mod. Phys. 82 , 3045 (2010). [2] X.-L. Qi and S.-C. Zhang, Topological insulators and su-perconductors, Rev. Mod. Phys. 83 , 1057 (2011). [3] J. E. Moore, The birth of topological insulators, Nature 
+
+464 , 194 (2010). [4] C. L. Kane and E. J. Mele, z2 topological order and the quantum spin hall effect, Phys. Rev. Lett. 95 , 146802 (2005). [5] B. A. Bernevig, T. L. Hughes, and S.-C. Zhang, Quantum spin hall effect and topological phase transition in hgte quantum wells, Science 314 , 1757 (2006). [6] M. K¨ onig, S. Wiedmann, C. Br¨ une, A. Roth, H. Buh-mann, L. W. Molenkamp, X.-L. Qi, and S.-C. Zhang, Quantum spin hall insulator state in hgte quantum wells, Science 318 , 766 (2007). [7] E. Olshanetsky, Z. Kvon, G. Gusev, and N. Mikhailov, Observation of different edge current states localization scenarios in a HgTe based two-dimensional topological insulator, Phys. E: Low-Dimens. Syst. Nanostructures 
+
+147 , 115605 (2023). [8] N. Xu, Y. Xu, and J. Zhu, Topological insulators for ther-moelectrics, npj Quantum Materials 2, 51 (2017). [9] C. Fu, Y. Sun, and C. Felser, Topological thermoelectrics, APL Mater. 8, 040913 (2020). [10] Z. Alisultanov, E. Idrisov, and A. Kavokin, Thermo-electric effects in two-dimensional topological insulators, Phys. Rev. B 111 , 155430 (2025). [11] M. M. Otrokov, I. I. Klimovskikh, H. Bentmann, D. Es-tyunin, A. Zeugner, Z. S. Aliev, S. Gaß, A. Wolter, A. Ko-roleva, A. M. Shikin, et al. , Prediction and observation of an antiferromagnetic topological insulator, Nature 576 ,416 (2019). [12] Y. Deng, Y. Yu, M. Z. Shi, Z. Guo, Z. Xu, J. Wang, X. H. Chen, and Y. Zhang, Quantum anomalous hall ef-fect in intrinsic magnetic topological insulator mnbi2te4, Science 367 , 895 (2020). [13] J. Jiang, D. Xiao, F. Wang, J.-H. Shin, D. Andreoli, J. Zhang, R. Xiao, Y.-F. Zhao, M. Kayyalha, L. Zhang, 
+
+et al. , Concurrence of quantum anomalous hall and topo-logical hall effects in magnetic topological insulator sand-wich heterostructures, Nature Materials 19 , 732 (2020). [14] J. Liu and T. Hesjedal, Magnetic topological insula-tor heterostructures: A review, Advanced Materials 35 ,2102427 (2023). [15] Z. Z. Alisultanov and A. Kudlis, Disorder-induced topo-logical transitions in a multilayer topological insulator, Phys. Rev. B 109 , 165141 (2024). [16] Z. Alisultanov and A. Kudlis, Theory of off-diagonal dis-order in multilayer topological insulators, Physical Re-view B 112 , 205108 (2025). [17] O. Lesser, A. Saydjari, M. Wesson, A. Yacoby, and Y. Oreg, Phase-induced topological superconductivity in a planar heterostructure, Proceedings of the National Academy of Sciences 118 , e2107377118 (2021). [18] F. Pientka, A. Keselman, E. Berg, A. Yacoby, A. Stern, and B. I. Halperin, Topological superconductivity in a planar josephson junction, Physical Review X 7, 021032 (2017). [19] A. Fornieri, A. M. Whiticar, F. Setiawan, E. Portol´ es, A. C. Drachmann, A. Keselman, S. Gronin, C. Thomas, T. Wang, R. Kallaher, et al. , Evidence of topological superconductivity in planar josephson junctions, Nature 
+
+569 , 89 (2019). [20] W. P. Su, J. R. Schrieffer, and A. J. Heeger, Solitons in polyacetylene, Phys. Rev. Lett. 42 , 1698 (1979). [21] J. K. Asb´ oth, L. Oroszl´ any, and A. P´ alyi, A Short Course on Topological Insulators: Band-structure topol-ogy and edge states in one and two dimensions , Vol. 919 (Springer, 2016). [22] Q. Liu, C.-X. Liu, C. Xu, X.-L. Qi, and S.-C. Zhang, Magnetic impurities on the surface of a topological insu-10 
+
+lator, Physical review letters 102 , 156603 (2009). [23] A. Gao, Y.-F. Liu, J.-X. Qiu, B. Ghosh, T. V. Trevisan, Y. Onishi, C. Hu, T. Qian, H.-J. Tien, S.-W. Chen, et al. ,Quantum metric nonlinear Hall effect in a topological an-tiferromagnetic heterostructure, Science 381 , 181 (2023). [24] I. Belopolski, R. Watanabe, Y. Sato, R. Yoshimi, M. Kawamura, S. Nagahama, Y. Zhao, S. Shao, Y. Jin, Y. Kato, et al. , Synthesis of a semimetallic Weyl fer-romagnet with point Fermi surface, Nature 637 , 1078 (2025). [25] R. Okumura, N. Nakatsuji, T. Kawakami, and M. Koshino, One-dimensional moir´ e engineering in zigzag graphene nanoribbons on h-bn, Physical Review B 113 ,115411 (2026). [26] T. Kawakami, H. Tateish, D. Yoshida, X. Yang, N. Nakatsuji, L. Chen, K. Aso, Y. Yamada-Takamura, Y. Oshima, Y. Zhang, et al. , One-dimensional electronic states in a moir \’e superlattice of twisted bilayer wte2, arXiv preprint arXiv:2601.21228 (2026). [27] S. Zhao, Z. Li, Z. A. Iakovlev, P. Ji, F. Lin, X. Huang, K. Watanabe, T. Taniguchi, M. M. Glazov, A. S. Baimu-ratov, et al. , Control of atomic reconstruction and quasi-1d excitons in strain-engineered moir \’e heterostructures, arXiv preprint arXiv:2504.08556 (2025). [28] S. Tang, C. Zhang, D. Wong, Z. Pedramrazi, H.-Z. Tsai, C. Jia, B. Moritz, M. Claassen, H. Ryu, S. Kahn, et al. ,Quantum spin hall state in monolayer 1t’-wte2, Nature Physics 13 , 683 (2017). [29] W. Shockley, On the surface states associated with a pe-riodic potential, Phys. Rev. 56 , 317 (1939). [30] S. S. Pershoguba and V. M. Yakovenko, Shockley model description of surface states in topological insulators, Physical Review B 86 , 075304 (2012). [31] E. McCann, Catalog of noninteracting tight-binding models with two energy bands in one dimension, Physical Review B 107 , 245401 (2023). [32] A. Altland and M. R. Zirnbauer, Nonstandard symme-try classes in mesoscopic normal-superconducting hybrid structures, Phys. Rev. B 55 , 1142 (1997). [33] C.-K. Chiu, J. C. Teo, A. P. Schnyder, and S. Ryu, Classi-fication of topological quantum matter with symmetries, Reviews of Modern Physics 88 , 035005 (2016). [34] Y. Zhao, Y.-X. Huang, and S. A. Yang, Z 2-projective translational symmetry protected topological phases, Physical Review B 102 , 161117 (2020). [35] W. Kraut and R. von Baltz, Anomalous bulk photo-voltaic effect in ferroelectrics: A quadratic response the-ory, Physical Review B 19 , 1548 (1979). [36] R. von Baltz and W. Kraut, Theory of the bulk pho-tovoltaic effect in pure crystals, Physical Review B 23 ,5590 (1981). [37] Z. Chen, S. A. Yang, and Y. Zhao, Brillouin klein bottle from artificial gauge fields, Nature communications 13 ,2215 (2022). [38] C. Zhang, Z. Chen, Z. Zhang, and Y. Zhao, General theory of momentum-space nonsymmorphic symmetry, Physical Review Letters 130 , 256601 (2023). [39] C. Zhang, P. Wang, J. Lyu, and Y. Zhao, Brillouin platy-cosms and topological phases, Physical Review Letters 
+
+135 , 136601 (2025). [40] R. El-Ganainy, K. G. Makris, M. Khajavikhan, Z. H. Musslimani, S. Rotter, and D. N. Christodoulides, Non-hermitian physics and pt symmetry, Nature Physics 14 ,11 (2018). [41] E. J. Bergholtz, J. C. Budich, and F. K. Kunst, Excep-tional topology of non-hermitian systems (2021). [42] N. Okuma, K. Kawabata, K. Shiozaki, and M. Sato, Topological origin of non-hermitian skin effects, Phys. Rev. Lett. 124 , 086801 (2020). [43] Z. Z. Alisultanov and E. G. Idrisov, Non-hermitian weyl fermions of types iii and iv: Hamiltonian, topological protection, and landau levels, Phys. Rev. B 107 , 085135 (2023).
