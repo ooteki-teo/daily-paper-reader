@@ -1,0 +1,70 @@
+{
+  "version": 2,
+  "extractor": "pdffigures2",
+  "figures": [
+    {
+      "url": "assets/figures/arxiv/2604.02824v1/fig-001.webp",
+      "caption": "FIG. 4. PA-GISANS measurements and extracted chirality. I(Qy) plots of (a) i.Nb/FePd and (b) ii.FePd, in comparison with (c) the respective chirality plots (I+− − I−+)(Qy). Displayed for a polarization along the surface normal <001> (left), and within the surface plane (100) (right). All measurements were made at 300 K.",
+      "page": 6,
+      "index": 1,
+      "width": 514,
+      "height": 571
+    },
+    {
+      "url": "assets/figures/arxiv/2604.02824v1/fig-002.webp",
+      "caption": "FIG. 8. Parity and radial decay plots for magnetic interactions and spin moments. (a-c) Fe-Fe, Fe-Pd, and PdPd exchange interactions; (d-f) DMI; (g,h) spin magnetic moments; (i) radial profile of the Fe-Fe DMI magnitude |Dij |(r). Each plot compares the fully ab-initio (true) values, obtained from DFT, with the corresponding SAGNN predictions across the validation set. Gray hexagons indicate points lying outside the 90% prediction interval, while the dotted red lines in panels (a-f) denote the baseline values J̄base",
+      "page": 11,
+      "index": 2,
+      "width": 917,
+      "height": 866
+    },
+    {
+      "url": "assets/figures/arxiv/2604.02824v1/fig-003.webp",
+      "caption": "FIG. 10. Sensitivity analysis of the stability of the chiral magnetic ground state in the mesoscopic FePd model. In-plane modulation period, λ = 2π/|Q∥|, and chirality measure CN as functions of the effective anisotropy parameter K. The vertical dotted line marks the critical anisotropy value Kc.",
+      "page": 13,
+      "index": 3,
+      "width": 484,
+      "height": 311
+    },
+    {
+      "url": "assets/figures/arxiv/2604.02824v1/fig-004.webp",
+      "caption": "FIG. 6. Localized intermixing cases and screening indicators of disorder-induced noncollinearity. (a) Types of atomic intermixings considered for calculations. Supercells (i) and (ii) grow in the ẑ direction, while in cases (iii) and (iv) they grow in the x̂ direction. (b) Characteristic modulation length λ calculated from the stiffness and spiralization tensors (A and D), as defined in the Supplementary Note 2. In (a), green arrows indicate atom exchanges from the pristine structure.",
+      "page": 8,
+      "index": 4,
+      "width": 744,
+      "height": 302
+    },
+    {
+      "url": "assets/figures/arxiv/2604.02824v1/fig-005.webp",
+      "caption": "FIG. 7. Analysis of the spin texture for case (iii). (a) Three-dimensional view of the real-space magnetization corresponding to a numerical energy minimum, showing the x̂ component. The supercell dimensions are 67.51× 33.75× 45.29 nm3. (b) Static spin-spin structure factor S(q) at zero temperature for the configuration in (a). The figure shows a cut in reciprocal space containing both the ordering wave vectors q = ±Q (dominant Bragg peaks) and the Γ point, with q = uû+ vv̂, where û = Q̂ and v̂ = (û × x̂)/|û × x̂|. u and v are given in reciprocal lattice units (r.l.u). (c) Chirality measure (spin asymmetry along polarization axis ν), 2iCν (Eq. 2), for ν = Pz = [001], with the structure-factor intensity shown in grayscale in the background. (d) Thermal average of S(q) at T = 300 K, obtained from stochastic spin-dynamics simulations over N = 150 snapshots taken at every ∆t = 100 fs.",
+      "page": 8,
+      "index": 5,
+      "width": 1060,
+      "height": 479
+    },
+    {
+      "url": "assets/figures/arxiv/2604.02824v1/fig-006.webp",
+      "caption": "TABLE VI. Relevant hyperparameters of the SAGNN model and training routine.",
+      "page": 19,
+      "index": 6,
+      "width": 410,
+      "height": 421
+    },
+    {
+      "url": "assets/figures/arxiv/2604.02824v1/fig-007.webp",
+      "caption": "FIG. 9. Magnetic interactions in a disordered Fe50Pd50 supercell mimicking a Fe-Pd gradient and their associated properties. (a) Fe-Fe exchange interactions and Fe-Pd interactions (inset); (b) Fe-Fe DMI interactions; (c) atomic structure of the disordered FePd, modeled as a random 4×2×2 supercell (32 atoms), constructed to mimic a Fe-Pd compositional gradient and lying outside the SAGNN training and validation sets; (d) softest branches of the adiabatic magnon spectrum obtained using the three interaction sets (DFT, SAGNN, and baseline). All interactions are calculated with respect to a single Fe reference site, randomly selected among the 16 Fe atoms in the cell. Blue dots denote direct DFT results, while orange crosses (green triangles) represent the corresponding SAGNN (baseline) predictions. In the inset of panel (a), green dots indicate DFT Fe-Pd interactions, and red crosses (purple triangles) the corresponding SAGNN (baseline) predictions. The dotted lines in panel (a) serve as guides to the eye and indicate the average exchange interaction within each coordination shell for each model. In panel (c), orange (gray) spheres represent Fe (Pd) atoms. The inset in panel (d) shows a zoom of the magnon spectra around the Γ point.",
+      "page": 12,
+      "index": 7,
+      "width": 889,
+      "height": 649
+    },
+    {
+      "url": "assets/figures/arxiv/2604.02824v1/fig-008.webp",
+      "caption": "FIG. 11. GISANS setup and Qy-Qz map. (a) Schematic measurement setup of GISANS with the scattering vectors Qz and Qy along the out-of-plane z and the in-plane y-direction, respectively. (b) Qy-Qz map of the PA-GISANS I−+ channel of i.Nb/FePd, with B ⊥ [001]. The black box indicates the region containing the GISANS and specular peaks.",
+      "page": 16,
+      "index": 8,
+      "width": 514,
+      "height": 237
+    }
+  ]
+}

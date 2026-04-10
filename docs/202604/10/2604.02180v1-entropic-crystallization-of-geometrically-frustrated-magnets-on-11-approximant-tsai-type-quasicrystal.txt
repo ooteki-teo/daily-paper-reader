@@ -1,0 +1,393 @@
+Title: Entropic crystallization of geometrically frustrated magnets on 1/1 approximant Tsai-type quasicrystal
+
+URL Source: https://arxiv.org/pdf/2604.02180v1
+
+Published Time: Fri, 03 Apr 2026 01:18:59 GMT
+
+Number of Pages: 11
+
+Markdown Content:
+# Entropic crystallization of geometrically frustrated magnets on 1/1 approximant Tsai-type quasicrystal 
+
+Oscar Novat 1,2, Ludovic D. C. Jaubert 3, and Masafumi Udagawa 2
+
+> 1
+
+ENS de Lyon, CNRS, Laboratoire de Physique, F-69342 Lyon, France 
+
+> 2
+
+Department of Physics, Gakushuin University, Mejiro, Toshima-ku, Tokyo 171-8588, Japan 
+
+> 3
+
+CNRS, Universit´ e de Bordeaux, LOMA, UMR 5798, 33400 Talence, France 
+
+(Dated: April 3, 2026) We have studied the antiferromagnetic Ising model on the icosahedral bcc lattice, as a model system of 1/1 approximant Tsai-type quasicrystals. We addressed thermal equilibrium properties of this system with Markov-chain Monte Carlo simulation supplemented with the parallel temper-ing technique to accelerate the relaxation dynamics. As a result, we found a second-order phase transition takes place to the magnetic ordered phase with Z3 × Z2 symmetry breaking. Despite the ordering, the low-temperature phase keeps macroscopic degeneracy as identified by finite residual entropy, S ∼ 0.1767 /spin. Remarkably, the existence of residual entropy turns out to play a major role in the formation of magnetic order. Generation of domain wall is suppressed, as it reduces the residual entropy locally stored in icosahedra, beyond the gain of configurational entropy due to domain wall patterns. Magnetic order arises out of this competition as entropic crystallization, which manifest universal mechanism of strongly frustrated systems with large geometrical units. 
+
+I. INTRODUCTION 
+
+Geometrical frustration has produced a rich variety of exotic magnetic states [1–6]. Among the frustrated lat-tice structures, considerable attention is focused on the lattices made of corner-sharing units – such as kagome, checkerboard, trillium and pyrochlore – whose physics is more easily understood in two steps; first within a triangular or tetrahedron unit, and then in the lattice as a whole. Among these systems, spin ice is proba-bly the most famous example [1]. Defined on a corner-sharing network of tetrahedra, it exhibits the unconven-tional properties of a classical Coulomb spin liquid with macroscopic residual entropy [7], fractionalized magnetic monopoles [8] and magnetic correlation with pinch point singularities [9]. Intensive studies are going on to fur-ther clarify various aspects of spin ice, such as classical and quantum dynamics of magnetic monopoles [10–15], magnetization plateaus [16–20], diffusive magnetic corre-lations [21–26], magneto-elastic coupling [27–29], glassy slow dynamics in absence of any structural disorder [30– 33], and thermal transport [34–38]. Here we consider the approximants of quasicrystals as extensions of these paradigmatic frustrated lattices. Ap-proximants are periodic lattices whose structure locally approximates the atomic arrangement of a quasicrystal. Among them, the so-called 1/1 approximant takes a rela-tively simple lattice structure, where a basic geometrical unit has rhombic triacontahedral structure, which con-sists of successive shells made of an icosidodecahedron, an icosahedron, a dodecahedron, and a tetrahedron, from outer to inner shell [39, 40]. In a typical class of Yb-Cd 1/1 approximant Tsai-type quasicrystals, magnetic Yb ions are placed on the icosahedral shell of the unit. In other words, if only magnetic degrees of freedom are con-sidered, the lattice structure of a 1/1 approximant can be simplified as a set of icosahedra placed on the vertices of the body-centered-cubic (bcc) lattice [Fig. 1]. Hence, this class of magnetic approximant quasicrystal can be regarded as a generalization of spin ice, where icosahe-dra, instead of tetrahedra, are the source of geometrical frustration. On the experimental front, many 1/1 approximant crystals have been synthesized and their magnetic prop-erties are studied [41–51]. In the classification table of Ref. [52], a substantial amount of magnets are dubbed as “spin glass”. While there is a possibility of intrinsic spin-glass physics in these materials, this glassiness sug-gests that the magnetic properties of several compounds are still unclear. This uncertainty may be attributed to a shortage of theoretical studies on quasicrystal approx-imants, leaving many potential magnetic patterns unex-plored. 
+
+FIG. 1. (Color online) The icosahedral bcc network of mag-netic ions on the 1/1 quasicrystal approximant. 
+
+To help resolve the magnetic structures of realistic ma-terials, in this work, we aim to find typical magnetic 
+
+> arXiv:2604.02180v1 [cond-mat.str-el] 2 Apr 2026
+
+2patterns of 1/1 approximant Tsai-type quasicrystals, in-duced by geometrical frustration, by considering the an-tiferromagnetic Ising model. For the systems with fer-romagnetic interaction, many interesting magnetic pat-terns have been proposed, and their thermodynamic and transport properties have been studied [53–58]. Com-pared with the intensive efforts on ferromagnetic side, the number of studies on frustrated interactions is still limited [59–61]. In this work, frustration gives rise to the co-existence of long-range magnetic order specific to the structure of icosahedral units on one hand, together with fluctuating spins supporting a finite residual entropy down to zero temperature, similarly to classical spin liq-uids. Surprisingly, this residual entropy turns out to be a driving force of magnetic order through the competition between local icosahedral entropy and global configura-tional entropy of domain wall patterns.   
+
+> II. MODEL & METHOD A. Model
+
+We consider the J1-J2 Ising model defined on the icosa-hedral bcc lattice, where an icosahedron is placed at each vertex of the bcc lattice [Fig. 1]. The Hamiltonian reads 
+
+H = H1 + H2 = J1
+
+X
+
+> ⟨i,j ⟩
+
+σiσj + J2
+
+X
+
+> ⟨⟨ i,j ⟩⟩
+
+σiσj . (1) Here, the Ising variable takes σj = ±1. We assume the antiferromagnetic coupling inside each icosahedron, 
+
+J1 ≡ 1, which we take as a unit of energy. We also in-troduce the coupling J2 between neighboring icosahedra. On the bcc lattice, neighboring icosahedra face with each other through a pair of triangles [Fig. 2 (a)]. We define the J2 coupling between the nearest-neighbor sites on this connecting triangle pair. Note that, as opposed to kagome and pyrochlore lattices, our system is not made of corner-sharing frustrated units. Each Ising spin belongs to one and only one icosahedron, and interacts with four spins of two neighboring icosahedra via J2 coupling. We arbitrarily choose J2 to be ferromagnetic, J2 ≤ 0, because the sign of J2 is irrelevant to the physics. Since the bcc lattice is bipartite, if we replace σj with −σj on all icosahedra for one of the two bcc sublattices, then the system can be mapped to the model with antiferromag-netic J2. 
+
+> B. Monte Carlo simulation
+
+We address the finite temperature properties of Hamil-tonian (1) with classical Monte Carlo simulation. We use the standard single spin flip Metropolis algorithm, jointly with parallel tempering in order to facilitate ther-malization. However, as is often the case with geometri-cally frustrated systems, simulations encounter dynami-cal bottlenecks of relaxation. In particular, each vertex (a) (b) (c) (d) (e) (f) 
+
+xy yz zx zx xyz
+
+01230 12 3
+
+-zx -xy +xy +zx +zx +xy -xy -zx               
+
+> FIG. 2. (Color online) (a) Structure of the connecting trian-gle. (b) Numbering of sites within an icosahedron. Rectangles on each plane are shown. (c) The spin configuration of the P1 state of the XY sector is shown (see Table II). σ= +1( −1) is shown with outward (inward) arrow. (d) The spin config-uration of the S1 state of the XY sector is shown (see Table II). The spin configuration is obtained by exchanging spins at sites 4 and 8 from the P1 state as shown with orange circles. (e) The positions of the 8 connecting triangles within an icosa-hedron are shown on the vertices of a cube. The spin minority representation of the P1 state is shown. (f) Two connecting triangles belonging to two neighboring icosahedra. The top triangle has a minority spin σ=−1 on the zx plane, as col-ored in blue. Due to the ferromagnetic J2, the zx spin of the bottom triangle takes σ= +1, as colored in red.
+
+of an icosahedron has an odd number of nearest-neighbor sites. This means that the effective field is always non-zero, so the single spin flip process eventually becomes frozen at low temperatures. To remedy this problem, we also introduce a two-spin update which can take place at zero energy cost. The simulation runs on N parallel cores; each core stores one temperature for a cubic system of Nspin =12 × 2 × L3 spins. The 12 is for the twelve spins in 3one icosahedron, the 2 is for the two sublattices of the bcc lattice, and L counts the number of bcc unit cells along one of the cartesian axes. One Monte Carlo step is the collection of Nspin single and double spin flips, cho-sen randomly on the lattice and accepted through a de-tailed balance condition. Each core undergoes an anneal-ing procedure before the simulation starting at Ti + 500, where Ti is the initial temperature of the simulation (the greatest among cores). This annealing procedure is the same for all cores: the interval [ Ti + 500 , T core ] is divided into a linear slope of 10 6 temperature steps, completing one Monte Carlo step at each temperature. Each core is then thermalized during 10 6 Monte Carlo steps at its own temperature Tcore . We do not perform any measurements during this thermalisation phase, but we use parallel tempering between the cores every 10 Monte Carlo steps. Finally, the system is sampled into Nsample different samples to perform the thermal averages. Each sample is obtained after 10 Monte Carlo steps, and parallel tem-pering is applied every 100 Monte Carlo steps. In all the results shown in this article, Nsample is set to 10 6. The parameters that can be varied along simulations are J2
+
+and L.  
+
+> III. THE GROUND STATE OF A SINGLE ICOSAHEDRON A. Degeneracy
+
+At J2 = 0, the system is decomposed into independent icosahedra, where each icosahedron has 72-fold degener-ate ground states. To confirm this, it is easiest to rewrite the Hamiltonian as the summation over triangles. 
+
+H = J1
+
+X
+
+> ⟨i,j ⟩
+
+σiσj = J1
+
+4
+
+X
+
+> i,j,k ∈△
+
+[( σi + σj + σk)2 − 3] . (2) According to this expression, we recover the tradi-tional constraint on antiferromagnetic triangular struc-tures that imposes σi + σj + σk = ±1 on all N△ ≡
+
+20 triangles of the icosahedron. For the sake of con-venience, we shall refer to this constraint as the trian-gle condition. Consequently, the ground state energy is 
+
+E = − J1 
+
+> 2
+
+N△ = −10 J1 per icosahedron. By simple argu-ments based on local effective fields, one finds that the triangle condition indeed leads to 72 ground states per icosahedron, as derived in Appendix A.  
+
+> B. Sectors
+
+The 72 configurations of the icosahedral ground state can be classified into 6 sectors. To see this, we first define the spin positions within an icosahedron, as shown in Fig. 2 (b). An icosahedron can be decomposed into three rectangles, each parallel to xy , yz , and zx planes. As                                                                                               
+
+> Site xyz -coordinate 0(+1 ,+τ, 0) 1(−1,+τ, 0) 2(+1 ,−τ, 0) 3(−1,−τ, 0) 4(0 ,+1 ,+τ)5(0 ,−1,+τ)6(0 ,+1 ,−τ)7(0 ,−1,−τ)8(+ τ, 0,+1) 9(+ τ, 0,−1) 10 (−τ, 0,+1) 11 (−τ, 0,−1) Triangle Sites ( xy ,yz ,zx )0(0 ,4,8) 1(1 ,4,10) 2(2 ,5,8) 3(3 ,5,10) 0(3 ,7,11) 1(2 ,7,9) 2(1 ,6,11) 3(0 ,6,9) TABLE I. (Left) xyz -coordinates of the sites on a single icosahe-dron. τ≡1+ √52>1 is a golden ratio. Accordingly, the bond 02 is longer than 01. The upper, middle and bottom 4 rows are on the
+> xy ,yz , and zx planes, respectively. (Right) The triplet of spins (σi, σ j, σ k) constituting each connecting triangle. σi,σj, and σk
+> are on the xy ,yz , and zx planes in this order. The connecting tri-angle ¯ ais at the opposite side of ¯ a(a= 0 ,1,2,3). See also Fig. 2(d)
+
+explicitly shown in Fig. 2 (b), spins are numbered so that ( σ0, σ 1, σ 2, σ 3), ( σ4, σ 5, σ 6, σ 7), and ( σ8, σ 9, σ 10 , σ 11 )are on the xy , yz , and zx planes, respectively. For the 
+
+{x, y, z } coordinates of each spin, see Table I. Among the 72 ground states, 24 possess the property of carrying zero magnetization on all three rectangles. These 24 states can be divided in a unique way into 6 sectors of 4 states each. The condition is that, within any given sector, the 4 states share the same spin con-figuration on 2 of the 3 rectangles; it is only the third rectangle whose spin configuration distinguishes between the four states (see states P1 . . . P4 in Table II for a given sector). Among the remaining 72 − 24 = 48 ground states, there is always one, and only one, rectangle with zero magnetization. This rectangle shares the same con-figuration as in one of the six sectors mentioned above, which allows to divide these 48 remaining ground states into the 6 sectors (see states S1 . . . S4 in Table II). The resulting sectors are thus made of 12 ground states each: (i) 4 of them with zero magnetization on all rectangles (we shall call them primary), and (ii) 8 of them with only one zero-magnetization rectangle (we shall call them sec-ondary). Within a sector, each secondary state becomes a primary state by flipping two spins only [Fig. 2(c,d)]. The rectangle with zero magnetization for all states of a sector defines the principal plane of that sector. It enables to label the six sectors as XY, YZ, ZX and their time-reversal counterparts XY, YZ and ZX. The spin configuration of that zero-magnetization rectangle always has opposite spins on the short side of the rectan-gle; the corresponding plane will be called the short-side-staggered (SSS) plane of the sector (see the red spins in Table II). In parallel, the other rectangle with iden-tical spin configuration for the primary state (see the green spins in Table II) always have opposite spins on the long side of the rectangle; the corresponding plane will be called the long-side-staggered (LSS) plane of the 4sector.   
+
+> IV. PAVING THE LATTICE WITH ICOSAHEDRA A. Connecting triangles and spin representations
+
+Icosahedra are placed on a bcc lattice, which means each icosahedron interacts with eight neighbors via J2
+
+couplings connecting opposite triangles facing each other. Each icosahedron thus possesses 8 triangles interacting with its neighbors; we shall call them the connecting tri-angles. We label these triangles with the indices a and 
+
+a (a = 0 , 1, 2, 3), so that a triangle a faces with a of the neighboring icosahedron [Fig. 2 (e)]. Each connecting tri-angle is described by a triplet of spins, ( σi, σ j , σ k), where 
+
+σi, σ j , and σk are placed respectively on the xy , yz , and 
+
+zx planes [Table I (Right)]. Due to the triangle condi-tion, each triplet ( σi, σ j , σ k) has 6 possible values in the ground state. A trivial way to represent the spin configuration of an icosahedron is as a list of its spin orientations, as given in Table II. This representation is, however, not ideal to determine how two neighboring icosahedra interact. The set of triplets on the 8 connecting triangles give a more convenient representation of the icosahedral ground states, which we call the triplet representation, as listed in Table III. Another convenient representation is the minority spin representation, which we also list in Table III. Triplets can be labeled by the position and orientation of the mi-nority spin: for example, a triplet, ( σi, σ j , σ k) = (+ + −)can be expressed as −zx , since the spin on the zx plane is the only spin that takes the value, −1.  
+
+> B. Inter-icosahedral interaction
+
+Each pair of connecting triangles between neighbor-ing icosahedra is coupled via six J2 couplings forming an hexagon [Fig. 2 (a,f)], whose energy also needs to be minimized in order to find the ground state. Ferromag-netic J2 favor the same orientation for all 6 spins. How-ever, as long as J2 < J 1, the energy minimization of J2
+
+couplings shall not affect the intra-icosahedron J1 inter-actions. Since the two connecting triangles still have to respect the triangle condition, the 6 spins cannot all be the same. The best compromise is found when 4 of the 6 ferromagnetic J2 couplings are satisfied, leaving only two bonds with antiferromagnetic spin orientation. As illus-trated in Fig. 2(f), it implies that if the minority spin of one of the connecting triangle is, say ±zx , then the spin of the other connecting triangle belonging to the zx 
+
+plane will be σ = ∓1. As long as the trinagle condition is imposed on all icosahedra, this constraint is actually the only necessary condition to minimize the J2 couplings between two neighboring icosahedra. This condition has direct consequences on the connec-tivity between different icosahedral sectors in the ground state of the system, that can be rationalized as follows. As an example, let us consider one icosahedron in the P1 configuration of the XY sector [Table III]. In the minor-ity spin representation, the connecting triangle 0 is in the 
+
+−zx state, as highlighted in red in Table III. This −zx 
+
+label compactly expresses the constraint on the connect-ing triangle 0 of the neighboring icosahedron [Fig. 2(f)]. As discussed just above, the energy of the ferromagnetic inter-icosahedral interaction is minimized if and only if the spin on the zx plane on the connecting triangle 0 takes the value +1. Accordingly, if the neighboring icosahedron is in the XY sector, 10 configurations highlighted in red in Ta-ble III are possible. In contrast, provided the neighboring icosahedron is in the XY sector, all the spins are reversed. Then, only the S7 and S8 configurations are possible, as highlighted in green in Table III, since only these two configurations have the zx -spin to be +1 in the XY sec-tor. It implies that one sector has more possibilities to connect to itself than to another sector. This tendency becomes more evident, for example, if we consider the P3 configuration of the XY sector, as highlighted in blue in Table III. In this case, the con-necting triangle 0 is in the + xy state, and never couples to any state of the XY sector, but couples to any state of the XY sector, since the xy -spin is −1 (+1) for all the 12 configurations in the XY (XY) sector. By symmetry, this entropic preference for a given sector to connect with itself on neighboring icosahedra applies to all sectors and to all pairs of connecting triangles. Note that here we see the impact of changing the na-ture of the J2 coupling: it only changes the sector favored on one sublattice, going from XY for ferromagnetic J2 to XY for antiferromagnetic J2.This strong selectivity of the neighboring triplet can be naturally understood from the way each sector is con-structed. In each sector, the spins on the SSS plane are completely the same for the 12 configurations in the sec-tor. Furthermore, the spins on the LSS plane are also mostly the same; for primary states they are completely identical, while for secondary states they are half identi-cal. Consequently, if a certain triplet is not compatible with these fixed spins on the neighboring triangle, the coupling to the sector becomes immediately prohibited. This selectivity will be important in order to rationalize the thermal properties of our model.   
+
+> V. ORDER OR SPIN LIQUID ? A. Thermal properties
+
+In Fig. 3, we show the temperature dependence of ther-modynamic quantities, obtained by Monte Carlo simula-tion. Keeping in mind that J1 = +1, hereafter we set 5
+
+Label σ0 σ1 σ2 σ3 σ4 σ5 σ6 σ7 σ8 σ9 σ10 σ11 Connections P1 + − + − + − + − − − + + (4 − 8)(5 − 10)(6 − 9)(7 − 11) P2 + − + − + − − + − − + + (4 − 8)(5 − 10)(6 − 11)(7 − 9) P3 + − + − − + + − − − + + (4 − 10)(5 − 8)(6 − 9)(7 − 11) P4 + − + − − + − + − − + + (4 − 10)(5 − 8)(6 − 11)(7 − 9) S1 + − + − − − + − + − + + P1, P3 via spin 8 S2 + − + − − − − + + − + + P2, P4 via spin 8 S3 + − + − + − − − − + + + P1, P2 via spin 9 S4 + − + − − + − − − + + + P3, P4 via spin 9 S5 + − + − + + + − − − − + P1, P3 via spin 10 S6 + − + − + + − + − − − + P2, P4 via spin 10 S7 + − + − + − + + − − + − P1, P2 via spin 11 S8 + − + − − + + + − − + − P3, P4 via spin 11 TABLE II. 12 spin configurations that belong to XY sector, grouped by primary (P#) and secondary (S#) states. The column of connections indicates how primary and secondary states are related with each other. For the primary states, 4 flippable bonds are listed for each state. For the secondary states, the related primary states are listed together with the spin index necessary to flip. For example, the S1 state can be obtained from P1 state flipping the (4 − 8) bond, or from P3 state flipping the (5 − 8) bond. SSS rectangle is on the     
+
+> xy plane, and the spin configuration on this plane is common for all the 12 states, as highlighted in red. The zx plane supports spins staggered along the longer sides, and the spin configurations are common for all the 4 primary states, as highlighted in green.
+
+XY sector 0 1 2 3 0 1 2 3 0 1 2 3 0 1 2 3P1 + + − − + + + − − − − + − − + + − − − + + + + − −zx −xy +xy +zx +zx +xy −xy −zx 
+
+P2 + + − − + + + − − − − + − + + + + − − − + + − − −zx −xy +xy +zx −xy −zx +zx +xy 
+
+P3 + − − − − + + + − − + + − − + + − − − + + + + − +xy +zx −zx −xy +zx +xy −xy −zx 
+
+P4 + − − − − + + + − − + + − + + + + − − − + + − − +xy +zx −zx −xy −xy −zx +zx +xy 
+
+S1 + − + − − + + − + − − + − − + + − − − + + + + − −yz +zx −yz +zx +zx +xy −xy −zx 
+
+S2 + − + − − + + − + − − + − + + + + − − − + + − − −yz +zx −yz +zx −xy −zx +zx +xy 
+
+S3 + + − − + + + − − − − + − − + + − + − − + + − + −zx −xy +xy +zx +zx −yz +zx −yz 
+
+S4 + − − − − + + + − − + + − − + + − + − − + + − + +xy +zx −zx −xy +zx −yz +zx −yz 
+
+S5 + + − − + − + + − − + − − − + + − − − + + + + − −zx +yz −zx +yz +zx +xy −xy −zx 
+
+S6 + + − − + − + + − − + − − + + + + − − − + + − − −zx +yz −zx +yz −xy −zx +zx +xy 
+
+S7 + + − − + + + − − − − + − + − + + − − + − + + − −zx −xy +xy +zx +yz −zx +yz −zx 
+
+S8 + − − − − + + + − − + + − + − + + − − + − + + − +xy +zx −zx −xy +yz −zx +yz −zx 
+
+TABLE III. Triplet and minority spin representations of the 12 states in the XY sector. In the triplet representation ( σi, σ j , σ k ), 
+
+σi, σ j , and σk are placed on xy , yz , and zx planes in this order. To relate the two representations, for example, the triangle 0 of the P1 state is ( σi, σ j , σ k ) = (+ , +, −), with the minority spin σk is on the zx plane and takes the value −1. Accordingly, it is expressed as −zx in the minority spin representation. The selectivity of the coupling is demonstrated through a few examples. 
+
+J2 = −0.02 for the sake of convenience. Our results re-main valid for a large region of the ratio J2/J 1.Firstly, in Fig. 3 (c), the specific heat shows a clear double-peak structure: a broad peak appears at high temperature, TH ∼ 1.0, and a sharp peak shows up at a low temperature TL. As is naturally guessed from the energy scale of TH ∼ J1, the high-temperature broad peak is attributed to a crossover to the single-icosahedron ground states. Below TH, each icosahedron takes one of the 72 ground state configurations. Accordingly, the intra-icosahedral energy ε1 ≡ 1 
+
+> Nspin
+
+⟨H 1⟩ relaxes to its minimal value, ε1 → − 56 J1 [Fig. 3 (a)]. In contrast, the inter-icosahedral energy ε2 ≡ 1 
+
+> Nspin
+
+⟨H 2⟩ does not show any visible change around TH, implying that icosahedra are still mostly uncorrelated from each other in this tem-perature range. In contrast to the broad peak at TH, the low-temperature peak shows characteristic behavior of aphase transition. In Fig. 4, the peak is shown to evolve sharply when increasing the system size, suggesting a second-order phase transition. To characterize the low-temperature phase, we need to define an order parameter. As discussed in Sec. III B, the degenerate ground states can be classified into 6 sec-tors. To distinguish these sectors, we define the order parameter as ∆α = 3
+
+Nspin 
+
+X
+
+> Ri
+
+X
+
+> j∈α
+
+(−1) j σRi,j , (3) for α = xy, yz, and zx . Here, Ri refers to the position of the icosahedron, and j = 0 − 11 is the intra-icosahedral coordinate as introduced in Sec. III B, and listed in Table I, and the summation over j is here limited to the plane α. This order parameter intends to detect SSS order on the plane α. Assuming SSS order is realized on the xy plane, then site 0 (resp. 1) is ferromagnetically aligned with site 2 (resp. 3), so if σ0 = +1( −1), then ∆ xy = +1( −1). ∆α stays close to zero at high temperatures, but suddenly starts to rise at TL and 6(a) (b) (c) (d) 
+
+FIG. 3. (Color online) Temperature dependence of (a) the energy, (b) the entropy per spin, (c) the specific heat, and (d) the order parameter, for L = 14 ↔ Nspin = 65856 spins. The values per spin are shown. In (a), in addition to the total energy, the intra- and inter-icosahedral energies are shown. 
+
+continues to grow following a concave curve, as is typical with continuous phase transitions. The finite ∆ α implies that the phase transition selects a given sector, and is associated with the Z3 × Z2 symmetry breaking due to the C3 spatial rotation around [111] axes, and the time-reversal operation. Reflecting the double-peak structure of the specific heat, the entropy per spin shows two plateau regions be-low TL and between TH and TL, respectively. The plateau value just below TH is consistent with the 72-fold de-generacy of a single icosahedron, Sico = log 72 12 ≈ 0.356, giving another evidence for the peak at TH to indicate 0.01 0.02 0.03 0.04 0.05 0.06 0.07 0.08 
+
+> Temperature
+> 0.00
+> 0.05
+> 0.10
+> 0.15
+> 0.20
+> 0.25
+> Specific heat
+> C6
+> C8
+> C10
+> C12
+> C14
+> C20
+
+FIG. 4. (Color online) System size scaling of the phase tran-sition. System size goes from L = 6 ↔ Nspin = 5184 spins to L = 20 ↔ Nspin = 192000 spins by steps of 2. The sys-tem is well thermalised for T ≥ 10 −2, but fails to thermalise for smaller temperatures. The entropy is therefore calculated down to the smallest reliable temperature for T > 10 −2.
+
+the crossover from paramagnetism to the independent-icosahedral ground states. We find in simulations that this first plateau between 
+
+TH and TL persists up to |J2/J 1| ≲ 0.1. For larger values, at least up to |J2/J 1| ≲ 1, there is only one peak in the specific heat; the entropy directly reaches the second plateau and remains finite at the same value down to the lowest temperatures. The second plateau below TL is nontrivial. Naively, we would expect the entropy to drop to zero below the transition temperature, TL, where the magnetic ordering takes place, as implied by the finite value of the order parameter. However, the entropy decrease stops at a finite value, and keeps its residual value down to zero temperature. 
+
+B. Structure of the low temperature phase 
+
+From the analysis of thermodynamic quantities pre-sented in the previous section, we found that the low-temperature phase shows spontaneous symmetry break-ing, as characterized by the order parameter, ∆ α, while keeping substantial amount of ground state entropy, 
+
+Smin . How can we reconcile these apparently contradict-ing order and disorder aspects of the low-temperature 7phase ? To gain an insight into the spin structure in the low-temperature phase, we calculate the probability distri-bution of the spin states in the selected sector with Monte Carlo simulation. At the lowest temperature, we find a marked unbalance between the primary and secondary states. Despite the fact that 2/3 of the 72 single-icosahedron ground states are secondary states, primary states have a noticeably higher probability of oc-currence in simulations at low temperatures: p1 ≃ 0.578 versus p2 ≃ 0.336 for secondary ones. The rest of 1 − p1 − p2 ≃ 0.086 is the probability that configura-tions in different sectors appear, which is consistent with the value of |∆| being a bit smaller than 1 at lowest tem-peratures. To understand this distribution, one needs to pay at-tention to the inter-icosahedral connectivity. Based on our simulations, let us assume that all icosahedra are in the same sector. Following Sec. IV B and Table III, one primary state can link to the 12 states of the same sec-tor on 4 connecting triangles, and to 10 states on the 4 remaining connecting triangles. Carrying out the same manipulation for secondary states, one finds that any sec-ondary state can connect to 6 states of the same sector on 2 of its connecting triangles, 10 states on 4 other connect-ing triangles, and 12 states on the remaining 2 connecting triangles. Accordingly, if we ignore farther connections, each primary state allows Ω P ≡ 12 4 × 10 4 ∼ 2 × 10 8 pos-sible spin configurations in the neighboring icosahedra, while a secondary state allows Ω S ≡ 12 2 ×10 4 ×62 = 14 ΩP
+
+spin configurations on the 8 neighboring icosahedra, out of the total Ω T = 12 8 configurations, respectively. Con-sidering that the number of secondary states is twice that of primary states, this ratio of possible neighboring con-figurations reasonably accounts for the unbalance men-tioned found numerically.  
+
+> C. Pauling’s entropy
+
+The connectivity of dominant and subdominant config-urations presented in the previous section enables us to estimate the ground state entropy in a mean-field type argument analogous to Pauling’s estimate of water ice entropy. To this aim, we divide the N icosahedra com-posing the bcc lattice into two sublattices, A and B. Then, suppose that all the A sublattice is occupied by the configurations in one sector, which gives the number of the states, 12 N 
+
+> 2
+
+. Then, the configurations on A sub-lattice put a constraint on the possible configurations on B sublattice, which reduces its number to much less than 12 N 
+
+> 2
+
+. If the spin configuration on each of the 8 icosahe-dra, surrounding the B sublattice, is chosen completely randomly from the 12 states, the probability that one particular primary state to be possible on the B sublat-tice is ΩP 
+
+> ΩT
+
+=
+
+ 56
+
+4
+
+. We could add probabilities that allow different primary states and secondary states, but they give only small corrections. If we estimate the constraint per icosahedron as ΩP 
+
+> ΩT
+
+,we can estimate the residual entropy as 
+
+SP = 112 N log 
+
+h
+
+12 N  ΩP
+
+ΩT
+
+ N 
+
+> 2
+
+i
+
+≃ 0.1767 /spin , (4) which is remarkably close to the numerical value, Smin ≃
+
+0.1769.  
+
+> D. Origin of ordering
+
+While the spin structure of the low-temperature phase is established, one important question still remains: Why are the spins ordered in this system ? Magnetic ordering usually takes place as a result of competition between en-ergy and entropy. This universal mechanism may be most clearly presented by Peierls’s argument on the estimate of the transition temperature of the 2D Ising model. Ac-cording to the argument, starting from the perfect ferro-magnetic ground state, the energy cost of creating the do-main of flipped spins is estimated as 2 JL , with the length of domain boundary, L. Meanwhile, the gain of con-figurational entropy to create the domain is estimated, e.g. by a Brownian motion argument, to be L log 3. Bal-ancing these effects leads to the approximate value of the transition temperature, TP/J = 2log 3 ≃ 1.820, which is reasonably close to the exact transition temperature, 
+
+Tc/J = 2log(1+ √2) ≃ 2.269. From this viewpoint, the ordering of our model may be surprising. Since there is extensive degeneracy in the ground state, the disturbance of the ordered configura-tion does not cost any energy, leading to Tc → 0, at first sight. Then, what is the driving force to align the SSS rectangles ? The answer to this question is that the destruction of ordering, i.e. the creation of domain walls, reduces the entropy considerably, beyond the gain of configu-rational entropy from the domain-wall fluctuations. In other words, the typical spin configurations in the de-generate ground state are ordered. To see this, let us start with the ground state in one sector, and see what happens if domain boundaries are introduced by insert-ing a region of different sector, while keeping the system in the ground state. To be specific, let us consider 4 icosahedra placed on the xy plane, and assume they belong to the XY sector. Then, let us look at the icosahedron on top of them, and ask how many spin configurations in the YZ sector are possible at this top icosahedron. Close inspection of the matching condition reveals that only 3 configurations, P2, S2, S7, turn out to be compatible, irrespective of which spin configurations in the XY sector the bottom 4 icosahedra take. Insertion of different sectors introduces severe restriction on the connections and reduce the en-tropy. See Appendix. B for details. 8This means that if the XY-YZ domain wall is generated along the z direction, then, the boundary YZ icosahe-dron is left with the entropy of log 3 ≃ 1.58 log 2, which is almost half of the residual entropy per icosahedron, 12 Smin ≃ 3.06 log 2. This reduction of entropy cannot be compensated by the configurational entropy from the domain wall pattern. It is not easy to evaluate the con-figurational entropy of a domain wall, SD , in a three-dimensional system. However, if we estimate it from the transition temperature of 3D Ising model, T 3D c ≃ 4.512 J,we obtain SD ≃ 2JT 3D c
+
+≃ 0.64 log 2. Consequently, even if the configurational entropy is considered, it cannot make up for the loss of local icosahedral entropy. This ordering mechanism is somewhat reminiscent of the so-called “order-by-disorder” mechanism, but it dif-fers in one respect; only entropy plays a role. In typical order-by-disordered scenarios, the population of thermal excitations or the reduction of ground state energy by quantum fluctuation selects an ordering pattern. In con-trast to these normal stories, in this system, the selection of order is of purely entropic origin.  
+
+> VI. DISCUSSION AND SUMMARY
+
+We addressed the antiferromagnetic Ising model de-fined on the 1/1 approximant of Tsai-type quasicrystal, one of the simplest and realistic models of quasicrystal magnet with geometrical frustration. We found the sys-tem to show a two-step change for |J2/J 1| ≲ 0.1 in ther-modynamic properties as indicated by the double-peak structure of specific heat. The higher-T peak corresponds to the crossover from the high-temperature paramag-net to the intermediate icosahedral paramagnetic region, where each icosahedron relaxes to their ground states in-dependently. The lower-T peak shows the second-order phase transition due to the combined Z3 × Z2 symmetry breaking. In the low-temperature ordered phase, the ordering pattern is characterized by the orientation of the SSS rectangles on which spins take 2-up 2-down configura-tions with two spins aligned along the longer side. De-spite the magnetic ordering, the low-temperature phase keeps a macroscopic residual entropy. The coexistence of order and disorder results from the competition between the local icosahedral entropy and global configurational entropy of domain patterns. It means that typical states of the degenerate ground state present long-range mag-netic order. The model considered in this work is one of the sim-plest, yet realistic models of geometrical frustration on quasicrystal magnets. We believe that the obtained or-dering pattern and its mechanism will shed a new light on the magnetic structure of the compounds reported so far, and also on future studies. Most quasicrystal magnets have metallic tendency with finite electric conductivity, and the magnetic interaction has long-range components of RKKY type. Nevertheless, to understand the nature of such complicated systems and models, the understand-ing of the simple short-range model is essential We hope that our analysis will serve as a useful reference for fur-ther studies in this field. In particular, the origin of ordering we have found in this system implies a general mechanism to design mag-netic structure. In this system, the ordering takes place, since the entropy loss of local icosahedron exceeds the gain of global configurational entropy of domain pat-terns. This competition suggests an interesting common viewpoint in systems where local degrees of freedom are associated with a domain boundary. In such systems, depending on the competition between local and global entropies, magnetic order may be stabilized or destabi-lized. Particularly interesting is the competitive region, where both contributions are in subtle balance. In those systems, exotic spatial magnetic structure might emerge from the keen correlation between local and global de-grees of freedom. We would like to leave this interesting question as a future problem. We are grateful to Peter Holdsworth for giving us a precious opportunity to start this project. This work was supported by the JSPS KAKENHI (Nos. JP20H05655, JP22H01147, and JP23K22418), MEXT, Japan and by the French National Agency for Research (ANR-23-CE30-0038-01 and ANR-25-CE30-5029-04) and Idex Bor-deaux (Research Program GPR Light). 
+
+> Appendix A: Construction of single icosahedral ground state
+
+In the single icosahedral limit J2 = 0, the ground state has 72 configurations. To find all the configura-tions, let us define the effective potential at vertex j as 
+
+Vj ≡ − P′ 
+
+> j′
+
+σj′ . Here, the summation of j′ is taken over the nearest-neighbor sites of j. Since each site j has 5 neighbors, the effective potential takes 6 possible values, 
+
+Vj = −5, −3, −1, 1, 3, 5. The total energy of the icosahe-dron is expressed as 
+
+E = − 12
+
+> 11
+
+X
+
+> j=0
+
+σj Vj . (A1) Meanwhile, since all the 20 triangles contributes to the energy −1 in the ground state, the ground state energy is equal to −10, then it leads to 
+
+> 11
+
+X
+
+> j=0
+
+σj Vj = 20 . (A2) Now, we consider the maximal value of Vj , Vmax , for a ground-state spin configuration. If Vmax ≤ 1, 
+
+> 11
+
+X
+
+> j=0
+
+σj Vj ≤ 12 , (A3) 9(a) (b) 
+
+FIG. 5. (a) Single icosahedral ground state with the reference spin circled in red having Vj = 5. The other spins are fully constrained by the triangle rule. (b) Single icosahedral ground state with the reference spin having Vj = 3. Note that it is connected to (a) by flipping the two spins circled in green (see Sec. III B). 
+
+and cannot satisfy Eq. (A2). So, Vmax = 3 or 5. First, suppose Vmax = 5, and set Vj = 5 for a site j. If we assume σj = +1, the site j is surrounded by five sites with σj′ = −1. Then, the triangle condition determines the values of the rest of spins. The number of spin con-figurations of this type is 12, according to the choice of the site j on the icosahedron. Next, suppose Vmax = 3, and set Vj = 3 for a site j,and assume σj = +1, then the site j is surrounded by four sites with σj′ = −1, and one site with σj′ = +1. Again, the triangle condition determines the values of the rest of spins, except for the choice of the two sites with σ = +1. Counting the possible number of spin configurations constructed this way, we find 12 × 5 = 60 configurations of this type. Please note that this counting argument takes into account time reversal symmetry (by symmetry of the ground states, see Fig. 5) and results in a total of 60 + 12 = 72 ground states. 
+
+Appendix B: Connection between XY and YZ sectors 
+
+To see the entropy reduction by creating a domain wall between the XY and YZ sectors, we compare the triplet and spin minority representations of the both sectors [Ta-ble IV]. Suppose that we place an icosahedron in the YZ sector on the surface of XY ordered domain. First, we assume that the surface in the xy plane, i.e. the same as the SSS plane of the XY sector. For the connection to be possible, the minority spin on the YZ icosahedron must be compatible with the spins on the SSS plane of the XY icosahedra. The color of red and green must match in Table IV. As an example of prohibited connection, the P1 state of the YZ sector takes +xy triplet state on the triangle 0, which is incompatible with the minority spin +1 on the xy plane of the triangle 0 of the XY icosahedron. Similarly, there might occur conflicts for the 0 − 0 and 3 − 3 links: P1, P3, S1, S3, S4, and S5 states are incompatible with the minority spin +1 on the 0 − 0 link, and P3, P4, S4, S5, S6, and S8 states are incompatible with the minority spin −1 on the 3 − 3link. As a result, only the three states, P3, S4 and S5 can be connected to the basal 4 icosahedra in the XY sector. Domain wall creation on the yz plane is even worse. In this case, we need to consider the connection between the triangles 0 , 1, 2, 3 in the XY sector, and 0 , 1, 2, 3 in the YZ sector. Checking the color matching as above, we found only two states, S5 and S6 survive, leading to larger entropy reduction. 
+
+[1] M. Udagawa and L. Jaubert, eds., Spin Ice, Springer Se-ries in Solid-State Sciences, Vol. 197 (Springer Interna-tional Publishing, 2021). [2] P. Anderson, Materials Research Bulletin 8, 153 (1973). [3] R. Moessner and S. L. Sondhi, Phys. Rev. Lett. 86 , 1881 (2001). [4] A. Kitaev, Annals of Physics 321 , 2 (2006). [5] P. Anderson, Journal of the Less Common Metals 62 ,291 (1978). [6] S. Sachdev and J. Ye, Phys. Rev. Lett. 70 , 3339 (1993). [7] A. P. Ramirez, A. Hayashi, R. J. Cava, R. Siddharthan, and B. S. Shastry, Nature 399 , 333 (1999). [8] C. Castelnovo, R. Moessner, and S. L. Sondhi, Nature 
+
+451 , 42 (2008). [9] T. Fennell, P. P. Deen, A. R. Wildes, K. Schmalzl, D. Prabhakaran, A. T. Boothroyd, R. J. Aldus, D. F. McMorrow, and S. T. Bramwell, Science 326 , 415 (2009), https://www.science.org/doi/pdf/10.1126/science.1177582. [10] M. Udagawa and R. Moessner, Phys. Rev. Lett. 122 ,117201 (2019). [11] Y. Tokiwa, T. Yamashita, M. Udagawa, S. Kit-taka, T. Sakakibara, D. Terazawa, Y. Shimoyama, T. Terashima, Y. Yasui, T. Shibauchi, and Y. Matsuda, Nat. Commun. 7, 10807 (2016). [12] V. Por´ ee, H. Yan, F. Desrochers, S. Petit, E. Lhotel, M. Appel, J. Ollivier, Y. B. Kim, A. H. Nevidomskyy, and R. Sibille, Nature Physics 21 , 83 (2025). [13] S. C. Morampudi, F. Wilczek, and C. R. Laumann, Phys. Rev. Lett. 124 , 097204 (2020). [14] G. Chen, Phys. Rev. B 96 , 085136 (2017). [15] H. Takatsu, K. Goto, T. J. Sato, J. W. Lynn, K. Mat-subayashi, Y. Uwatoko, R. Higashinaka, K. Mat-suhira, Z. Hiroi, and H. Kadowaki, Journal of the Physical Society of Japan 90 , 123705 (2021), https://doi.org/10.7566/JPSJ.90.123705. [16] M. Udagawa, M. Ogata, and Z. Hiroi, Journal of the Physical Society of Japan 71 , 2365 (2002), https://doi.org/10.1143/JPSJ.71.2365. [17] K. Matsuhira, Z. Hiroi, T. Tayama, S. Takagi, and T. Sakakibara, Journal of Physics: Condensed Matter 10 
+
+XY sector 0 1 2 3 0 1 2 3 0 1 2 3 0 1 2 3P1 + + − − + + + − − − − + − − + + − − − + + + + − −zx −xy +xy +zx +zx +xy −xy −zx 
+
+P2 + + − − + + + − − − − + − + + + + − − − + + − − −zx −xy +xy +zx −xy −zx +zx +xy 
+
+P3 + − − − − + + + − − + + − − + + − − − + + + + − +xy +zx −zx −xy +zx +xy −xy −zx 
+
+P4 + − − − − + + + − − + + − + + + + − − − + + − − +xy +zx −zx −xy −xy −zx +zx +xy 
+
+S1 + − + − − + + − + − − + − − + + − − − + + + + − −yz +zx −yz +zx +zx +xy −xy −zx 
+
+S2 + − + − − + + − + − − + − + + + + − − − + + − − −yz +zx −yz +zx −xy −zx +zx +xy 
+
+S3 + + − − + + + − − − − + − − + + − + − − + + − + −zx −xy +xy +zx +zx −yz +zx −yz 
+
+S4 + − − − − + + + − − + + − − + + − + − − + + − + +xy +zx −zx −xy +zx −yz +zx −yz 
+
+S5 + + − − + − + + − − + − − − + + − − − + + + + − −zx +yz −zx +yz +zx +xy −xy −zx 
+
+S6 + + − − + − + + − − + − − + + + + − − − + + − − −zx +yz −zx +yz −xy −zx +zx +xy 
+
+S7 + + − − + + + − − − − + − + − + + − − + − + + − −zx −xy +xy +zx +yz −zx +yz −zx 
+
+S8 + − − − − + + + − − + + − + − + + − − + − + + − +xy +zx −zx −xy +yz −zx +yz −zx 
+
+YZ sector 0 1 2 3 0 1 2 3 0 1 2 3 0 1 2 3P1 − + + − + + + − + + − + + − − + − − − + − − + − −xy −xy −yz −yz +xy +xy +yz +yz 
+
+P2 − + + − + − + − + + − − + − + + − − − + + − + − −xy +yz −yz +xy −yz +xy −xy +yz 
+
+P3 − + − − + + + − − + − + + − − + − + − + − − + + +yz −xy +xy −yz +xy −yz +yz −xy 
+
+P4 − + − − + − + − − + − − + − + + − + − + + − + + +yz +yz +xy +xy −yz −yz −xy −xy 
+
+S1 + + − − + + + − − + − + + − − + − − − + − + + − −zx −xy +xy −yz +xy +xy +yz −zx 
+
+S2 + + − − + − + − − + − − + − + + − − − + + + + − −zx +yz +xy +xy −yz +xy −xy −zx 
+
+S3 − + + + + − + − + + − − + − − + − − + + − − + − −xy −zx −yz +xy +xy +xy −zx +yz 
+
+S4 − + − + + − + − − + − − + − − + − + + + − − + + +yz −zx +xy +xy +xy −yz −zx −xy 
+
+S5 − + + − + + − − + + − + + − − − − + − + − − + + −xy −xy +zx −yz +xy +zx +yz −xy 
+
+S6 − + + − + − − − + + − − + − + − − + − + + − + + −xy +yz +zx +xy −yz +zx −xy −xy 
+
+S7 − + + − + + + − + − − + − − + + − − − + + − + − −xy −xy −yz +zx +zx +xy −xy +yz 
+
+S8 − + − − + + + − − − − + − − + + − + − + + − + + +yz −xy +xy +zx +zx −yz −xy −xy 
+
+TABLE IV. The triplet and minority spin representations of (top) XY and (bottom) YZ sectors are shown. In the columns of triplet representation of the top table, the spins on the SSS plane is highlighted, with +1( −1) in green (red). In the columns of minority spin representation of the bottom table, the + xy (−xy ) is highlighted in red (green). 
+
+14 , L559 (2002). [18] R. Moessner and S. L. Sondhi, Phys. Rev. B 68 , 064411 (2003). [19] N. Tang, Y. Gritsenko, K. Kimura, S. Bhattachar-jee, A. Sakai, M. Fu, H. Takeda, H. Man, K. Sug-awara, Y. Matsumoto, Y. Shimura, J. Wen, C. Bro-holm, H. Sawa, M. Takigawa, T. Sakakibara, S. Zherlit-syn, J. Wosnitza, R. Moessner, and S. Nakatsuji, Nature Physics 19 , 92 (2023). [20] E. Kermarrec, G. Chen, H. Okamoto, C.-J. Huang, H. Yan, J. Yan, H. Takeda, Y. Shimizu, E. M. Smith, A. Fitterman, A. D. Bianchi, B. D. Gaulin, and M. Ya-mashita, arXiv:2509.09189 (2025). [21] M. Udagawa, L. D. C. Jaubert, C. Castelnovo, and R. Moessner, Phys. Rev. B 94 , 104416 (2016). [22] T. Mizoguchi, L. D. C. Jaubert, and M. Udagawa, Phys. Rev. Lett. 119 , 077207 (2017). [23] J. G. Rau and M. J. Gingras, Nature communications 7,12234 (2016). [24] T. Mizoguchi, L. D. C. Jaubert, R. Moessner, and M. Udagawa, Phys. Rev. B 98 , 144446 (2018). [25] H. Yan, O. Benton, A. H. Nevidomskyy, and R. Moess-ner, Phys. Rev. B 109 , 174421 (2024). [26] H. Yan, J. Romh´ anyi, A. Thomasen, and N. Shannon, Phys. Rev. B 110 , 195117 (2024). [27] D. I. Khomskii, Nature Communications 3, 904 (2012). [28] D. I. Khomskii, Nature Communications 12 , 3047 (2021). [29] T. Uehara, T. Ohtsuki, M. Udagawa, S. Nakatsuji, and Y. Machida, Nature Communications 13 , 4604 (2022). [30] K. Matsuhira, Y. Hinatsu, K. Tenya, and T. Sakakibara, Journal of Physics: Condensed Matter 12 , L649 (2000). [31] K. Matsuhira, Y. Hinatsu, and T. Sakakibara, Journal of Physics: Condensed Matter 13 , L737 (2001). [32] J. Snyder, J. S. Slusky, R. J. Cava, and P. Schiffer, Na-ture 413 , 48 (2001). [33] L. D. C. Jaubert and P. C. W. Holdsworth, Nature Physics 5, 258 (2009). [34] W. H. Toews, S. S. Zhang, K. A. Ross, H. A. Dabkowska, B. D. Gaulin, and R. W. Hill, Phys. Rev. Lett. 110 ,217209 (2013). [35] G. Kolland, O. Breunig, M. Valldor, M. Hiertz, J. Friel-ingsdorf, and T. Lorenz, Phys. Rev. B 86 , 060402 (2012). [36] G. Kolland, M. Valldor, M. Hiertz, J. Frielingsdorf, and T. Lorenz, Phys. Rev. B 88 , 054406 (2013). [37] R. Sutcliffe and J. G. Rau, Phys. Rev. B 105 , 104405 (2022). [38] N. Tang, S. Glamsch, A. Aqeel, L. Scheuchenpflug, M. Schulze, C. Liebald, D. Rytz, C. Guguschev, M. Albrecht, and P. Gegenwart, arXiv:2509.18422 ,https://arxiv.org/abs/2509.18422 (2025). [39] H. Takakura, C. P. G´ omez, A. Yamamoto, M. De Boissieu, and A. P. Tsai, Nature Materials 
+
+6, 58 (2007). [40] C. P. G´ omez and S. Lidin, Phys. Rev. B 68 , 024203 (2003). [41] A. Ishikawa, T. Fujii, T. Takeuchi, T. Yamada, Y. Mat-sushita, and R. Tamura, Phys. Rev. B 98 , 220403 (2018). [42] R. Tamura, Y. Muro, T. Hiroto, K. Nishimoto, and T. Takabatake, Phys. Rev. B 82 , 220201 (2010). [43] A. Mori, H. Ota, S. Yoshiuchi, K. Iwakawa, Y. Taga, Y. Hirose, T. Takeuchi, E. Yamamoto, Y. Haga, F. Honda, R. Settai, and Y. ¯Onuki, Journal of 11 
+
+the Physical Society of Japan 81 , 024720 (2012), https://doi.org/10.1143/JPSJ.81.024720. [44] K. Imura, K. Nobe, K. Deguchi, M. Matsunami, H. Miyazaki, A. Yasui, E. Ikenaga, and N. K. Sato, Jour-nal of the Physical Society of Japan 86 , 093702 (2017), https://doi.org/10.7566/JPSJ.86.093702. [45] S. Ibuka, K. Iida, and T. J. Sato, Journal of Physics: Condensed Matter 23 , 056001 (2011). [46] A. Ishikawa, T. Hiroto, K. Tokiwa, T. Fujii, and R. Tamura, Phys. Rev. B 93 , 024416 (2016). [47] S. Yoshida, S. Suzuki, T. Yamada, T. Fujii, A. Ishikawa, and R. Tamura, Phys. Rev. B 100 , 180409 (2019). [48] T. Hiroto, G. H. Gebresenbut, C. Pay G´ omez, Y. Muro, M. Isobe, Y. Ueda, K. Tokiwa, and R. Tamura, Journal of Physics: Condensed Matter 25 , 426004 (2013). [49] T. Hiroto, K. Tokiwa, and R. Tamura, Journal of Physics: Condensed Matter 26 , 216004 (2014). [50] P. Koˇ zelj, S. Jazbec, S. Vrtnik, A. Jelen, J. Dolinˇ sek, M. Jagodiˇ c, Z. Jagliˇ ci´ c, P. Boulet, M. C. de Weerd, J. Ledieu, J. M. Dubois, and V. Fourn´ ee, Phys. Rev. B 88 , 214202 (2013). [51] K. Inagaki, S. Suzuki, A. Ishikawa, T. Tsugawa, F. Aya, T. Yamada, K. Tokiwa, T. Takeuchi, and R. Tamura, Phys. Rev. B 101 , 180405 (2020). [52] S. Suzuki, A. Ishikawa, T. Yamada, T. Sugimoto, A. Sakurai, and R. Tamura, MATERIALS TRANSAC-TIONS 62 , 298 (2021). [53] S. Watanabe, Scientific Reports 11 , 17679 (2021). [54] S. Watanabe, Phys. Rev. B 109 , 184404 (2024). [55] R. Eto, M. Mochizuki, and S. Watanabe, Phys. Rev. B 
+
+112 , L020405 (2025). [56] S. Watanabe, T. Yamada, H. Takakura, and N. Fujita, Phys. Rev. Res. 7, 043113 (2025). [57] S. Watanabe and M. Kawamoto, Journal of the Physical Society of Japan 90 , 063701 (2021), https://doi.org/10.7566/JPSJ.90.063701. [58] S. Watanabe and T. Iwasaki, Journal of the Physical Society of Japan 95 , 044705 (2026), https://doi.org/10.7566/JPSJ.95.044705. [59] J. Jeon and S. Lee, npj Quantum Materials 9, 5 (2024). [60] T. Sugimoto, T. Tohyama, T. Hiroto, and R. Tamura, Journal of the Physical Society of Japan 85 , 053701 (2016), https://doi.org/10.7566/JPSJ.85.053701. [61] T. Sugimoto, S. Suzuki, R. Tamura, and T. Tohyama, Journal of the Physical Society of Japan 93 , 045001 (2024), https://doi.org/10.7566/JPSJ.93.045001.

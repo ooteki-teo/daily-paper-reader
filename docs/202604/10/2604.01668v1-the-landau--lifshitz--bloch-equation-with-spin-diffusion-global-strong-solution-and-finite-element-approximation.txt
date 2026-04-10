@@ -1,0 +1,4126 @@
+Title: The Landau--Lifshitz--Bloch equation with spin diffusion: Global strong solution and finite element approximation
+
+URL Source: https://arxiv.org/pdf/2604.01668v1
+
+Published Time: Fri, 03 Apr 2026 00:37:13 GMT
+
+Number of Pages: 35
+
+Markdown Content:
+THE LANDAU–LIFSHITZ–BLOCH EQUATION WITH SPIN DIFFUSION: GLOBAL STRONG SOLUTION AND FINITE ELEMENT APPROXIMATION 
+
+AGUS L. SOENJAYA 
+
+Abstract. The spin-diffusion Landau–Lifshitz–Bloch (SDLLB) system is a nonlinearly coupled system of quasilinear vector-valued PDEs which models the interaction between spin-polarised cur-rents and magnetisation at high temperatures. The aim of this paper is twofold. Firstly, assuming the initial data is sufficiently small, we show the existence of a unique global strong solution to the SDLLB equation in a bounded domain Ω ⊂ Rd, where d ≤ 3, thus ensuring well-posedness of the model. Secondly, we propose a decoupled linearised fully-discrete finite element scheme to solve the problem. Despite the strong nonlinearity of the system, the proposed scheme only requires the solution of two completely decoupled linear systems per time-step. Assuming adequate regularity of the exact solution and a certain time-step constraint, we rigorously show that the numerical scheme converges at an optimal rate. Several numerical experiments corroborate our theoretical results. 
+
+1. Introduction 
+
+Micromagnetics is a field of physics dealing with the prediction of magnetic behaviour at sub-micrometre length scales. More recently, it was found that magnetisation can be manipulated by spin-polarised currents, even in the absence of any external magnetic field. This gives birth to the field of spintronics. Modern applications of this theory include the development of magnetoresistive random access memory (MRAM) and heat-assisted magnetic recording (HAMR) devices. It is important to note that in various applications, the temperature inside the devices may exceed the Curie temperature of the material. This underlies the importance of a model which incorporates interactions between magnetisation and spin-polarised currents at high temperatures. One such model is given by the spin-diffusion Landau–Lifshitz–Bloch (SDLLB) system, first analysed in [25]. In the absence of currents, one recovers the Landau–Lifshitz–Bloch (LLB) equation [13, 20, 28]. Fix a bounded domain Ω ⊂ Rd (d = 1 , 2, 3) with boundary ∂Ω. Let m : [0 , T ] × Ω → R3
+
+and s : [0 , T ] × Ω → R3 be the local magnetisation and the spin accumulation, respectively. The dynamics of the local magnetisation coupled with the spin accumulation in the regime above the Curie temperature can be described by a coupled system of vector-valued quasilinear equations [25], which we refer to as the SDLLB system: 
+
+∂tm = −γm × H + αH − γ′m × s for ( t, x) ∈ (0 , T ) × Ω, (1.1a) 
+
+H = α′∆m − κμ m − κ|m|2m, for ( t, x) ∈ (0 , T ) × Ω, (1.1b) 
+
+∂ts = −∇ · J − D0
+
+τsf 
+
+s − D0
+
+τJ
+
+s × m for ( t, x) ∈ (0 , T ) × Ω, (1.1c) 
+
+J = β′m ⊗ j − D0∇s + βD 0(m ⊗ m)∇s for ( t, x) ∈ (0 , T ) × Ω, (1.1d) 
+
+m(0 , x) = m0(x), s(0 , x) = s0(x) for x ∈ Ω, (1.1e) 
+
+∂nm = ∂ns = 0 for ( t, x) ∈ (0 , T ) × ∂Ω. (1.1f) 
+
+2020 Mathematics Subject Classification. 65M12, 65M60, 35K59, 35Q60. 
+
+Key words and phrases. Landau–Lifshitz–Bloch, spin diffusion, global strong solution, decoupled linear finite element, error analysis. 
+
+> 1
+> arXiv:2604.01668v1 [math.NA] 2 Apr 2026 2
+
+A more detailed discussion about this model can be found in Section 2.2. Here, n is the outward pointing normal vector to ∂Ω and γ′ := γδ . The physical meanings of other coefficients in (1.1) are as follows: α′ is the exchange field intensity, κ = (2 χ)−1 is a positive constant related to the longitudinal susceptibility χ of the material, μ is a constant related to the equilibrium magnetisation and temperature, τsf is the spin flip relaxation time, τJ is the spin transfer torque characteristic time, and β, β ′ ∈ (0 , 1) are spin polarisation parameters. All numerical coefficients in (1.1) are positive. For physical reasons, we assume that the function j := j(t, x) is a prescribed current density vector field which is tangential to the boundary ( j · n = 0 on ∂Ω), while D0 := D0(x) is a given diffusion scalar field which is bounded above and below by positive constants. As is commonly done in the literature, we only consider energy contribution from the exchange interactions [13, 28, 41]: 
+
+E(m) := α′
+
+2
+
+Z
+
+> Ω
+
+|∇ m(x)|2 + κ
+
+4
+
+Z
+
+> Ω
+
+|m(x)|4 + κμ 
+
+Z
+
+> Ω
+
+|m(x)|2 dx, (1.2) leading to the effective field H in (1.1b). Lower-order contributions from the first-order anisotropy field and the applied field could be considered without difficulty, but is omitted here for simplicity. Contribution from the demagnetisation field poses no significant problem analytically, but may be a source of numerical bottleneck. We refer the reader to [15, 30, 47] for further details about these issues. We note that the spin diffusion equation coupled with the Landau–Lifshitz–Gilbert equation (SDLLG) is proposed in [21, 22] as a model for micromagnetics in the presence of spin currents for temperatures much lower than the Curie temperature. Numerical methods to solve such problem, focusing on multi-layer system, are proposed in [1, 21, 38], where convergence (along subsequence) to a weak solution is shown (see also [6, 16, 18, 32], among others, for numerical integrators to the LLG equation without spin diffusion). Analysis of the SDLLG problem focusing on various mathematical issues such as regularity, long-time behaviour, and optimal control are done in [4, 15, 33, 34, 36]. More detail about the physical background can be found in [37]. On the other hand, the SDLLB system is much less studied. While the issues of well-posedness and numerical approximation of the Landau–Lifshitz–Bloch equation (without spin diffusion) have been considered in [8, 28, 29, 31, 42], not much is known about the SDLLB system, especially for d = 3. The existence of a smooth solution to (1.1) (which is global for sufficiently small initial data) is shown in [25] for d ≤ 2. As far as we know, numerical integrator for (1.1) has not been considered before. One of the aims of this paper is to continue the study in [25] for the case d = 3. Specifically, under certain smallness assumption on the initial data, we show the existence and uniqueness of global strong solution to the SDLLB in a smooth and bounded domain. We further propose a fully-discrete numerical scheme based on the Galerkin finite element method in space and the linearised Euler method in time to approximate the solution. We remark that despite the nonlinear coupling in (1.1), the proposed scheme only requires solving two completely decoupled linear systems in each time-step, which is an advantage in micromagnetics simulation [44]. Differently from the analysis of numerical schemes for the LLG or the SDLLG equation where only convergence along subsequence without rate is shown [1], here we proceed to show an error estimate for the approximation, since the solution to the SDLLB is expected to be regular for a smooth and sufficiently small initial data (or small β) in a regular bounded domain. Assuming adequate regularity of the exact solution, an optimal rate of convergence is shown, as corroborated by several numerical experiments. In contrast with the SDLLG equation, the problem (1.1) does not automatically admit a pointwise bound on the magnetisation magnitude |m|, which complicates the analysis. On the other hand, the SDLLB equation possesses a stronger damping term (given by αH) which can be exploited to show a better regularity for the solution, at least for sufficiently small initial data (or small spin polarisation parameters) and in a smooth domain. Note that a certain smallness assumption on m
+
+is expected for well-posedness, otherwise, at least formally, the last term in (1.1d) will dominate, 3
+
+turning (1.1c) into a backward diffusion equation for which ill-posedness of the associated initial-value problem is known. The existence and uniqueness results for the SDLLB are established by proving several uniform a priori estimates for the solution, which require careful analysis due to the nonlinearities involved in the coupled system. The error analysis of the numerical integrator is performed by defining appropriate elliptic projections tailored to the problem at hand and analysing their properties. Here, we work with a single-layer magnetic domain Ω as in [15, 25, 33, 34, 36], which is physically relevant. We briefly remark that for a multi-layer domain, the magnetisation vector field m on the smaller domain needs to be extended by zero to the larger domain, potentially creating discontinuity in the coefficients of the drift-diffusion equation (cf. [15, Remark 3.1]). This causes substantial difficulties in the theoretical and numerical analysis, and will be a subject for future research. To summarise, the main contributions of this paper include: (1) proving the existence and uniqueness of a global strong solution to the SDLLB system with small initial data (or small spin polarisation parameters) in spatial dimensions d ≤ 3(Theorem 3.10), (2) proposing a linear, decoupled, fully-discrete finite element method for solving the SDLLB system (Algorithm 4.1), (3) establishing an error estimate for the proposed numerical scheme under a suitable time-step restriction and assumptions on the norm of the initial data (Theorem 4.12). The paper is organised as follows: 
+
+• Section 2 discusses the model in more detail, and gathers the notations and auxiliary results used throughout the paper; 
+
+• Section 3 establishes the global well-posedness for the SDLLB system; 
+
+• Section 4 presents and analyses the fully decoupled finite element approximation of the SDLLB system; 
+
+• Section 5 contains numerical experiments that verify the theoretical convergence rates of the proposed numerical scheme. 2. Preliminaries 
+
+2.1. Notations. We begin by defining some notations used in this paper. Let Ω ⊂ Rd be a domain. The function space Lp := Lp(Ω; R3) denotes the space of p-th integrable functions taking values in 
+
+R3 and Wk,p := Wk,p (Ω; R3) denotes the Sobolev space of functions on Ω, taking values in R3. As usual, Hk(Ω) := Wk, 2(Ω). The space eH−1(Ω) denotes the dual of H1(Ω), with the duality pairing defined as the extension of the L2(Ω) inner product. For brevity, we write Lp, Wk,p , or Hk in lieu of 
+
+Lp(Ω), Wk,p (Ω), or Hk(Ω) respectively. Denote Ω T := (0 , T ) × Ω. Let ∆ be the Neumann Laplacian operator acting on R3-valued functions with domain 
+
+H2 
+
+> n
+
+:= 
+
+
+
+v ∈ H2 : ∂v
+
+∂n = 0 on ∂Ω
+
+
+
+.
+
+For a Banach space X, the spaces Lp(0 , T ; X) and W k,p (0 , T ; X) denote respectively the Lebesgue and Sobolev spaces of functions on (0 , T ) taking values in X. The space C([0 , T ]; X) denotes the space of continuous function on [0 , T ] taking values in X. For simplicity, we will write 
+
+LpT (X) := Lp(0 , T ; X) and W k,p T (X) := W k,p (0 , T ; X).
+
+We do not distinguish between the scalar product of L2 vector-valued functions taking values in 
+
+R3 and the scalar product of L2 matrix-valued functions taking values in R3×3, and denote them both by ⟨· , ·⟩ .4
+
+Finally, the constant C in the estimate denotes a generic constant which may take different values at different occurrences. If the dependence of C on a variable, e.g. T , is emphasised, we will write CT . The notation a ≲ b means a ≤ Cb for some constant C.2.2. The model. We now provide a more detailed discussion of the SDLLB model under con-sideration. Recall that m and s represent the local magnetisation and the spin accumulation, respectively. The vector field H : [0 , T ] × Ω → R3 is the effective field, which is defined as the negative variational derivative of the micromagnetic energy E, i.e. 
+
+H[m] := −∇ mE.
+
+The time evolution of the magnetisation vector field at elevated temperatures can be described by the LLB equation [13, 19]: 
+
+∂tm = −γm × H + γα ∥
+
+|m|2 (m · H)m − γα ⊥
+
+|m|2 m × (m × H), (2.1) where α∥ and α⊥ are, respectively, the longitudinal and transverse damping parameters, and γ is the gyromagnetic ratio. The damping parameters α∥ and α⊥ are related to the temperature Θ, the Curie temperature Tc, and the Gilbert damping parameter αG in the standard Landau–Lifshitz equation via 
+
+α∥ = 2αGΘ3Tc , α⊥ = αG
+
+
+
+1 − Θ3Tc
+
+
+
+, if Θ < T c,α∥ = α⊥ = 2αG 
+
+> 3
+
+, if Θ ≥ Tc.
+
+(2.2) In contrast to the LLG equation, equation (2.2) does not preserve the magnitude of the magneti-sation vector in general. However, note that at zero kelvin, α∥ = 0 and α⊥ = αG, thus equation (2.1) reduces to 
+
+∂tm = −γm × H − γα G
+
+|m|2 m × (m × H). (2.3) Formally taking the inner product of (2.3) with m shows that |m| is a constant in this special case, reducing (2.3) to the standard Landau–Lifshitz equation. In the high-temperature regime, noting that α∥ = α⊥ = 2 αG/3 for Θ ≥ Tc from (2.2), by the vector triple product identity the LLB equation simplifies to 
+
+∂tm = −γm × H + αH, (2.4) where α := 2 γα G/3. This is the form of the LLB equation we are considering in this paper. Aderivation of (2.1) and (2.4) within the continuum thermodynamic framework can be found in [9]. In the presence of an electric current, the local magnetisation experiences a torque due to the spin accumulation s, whose dynamics is described by a nonlinear drift–diffusion equation [39, 49]. Following [10, 49, 48], the coupling between the magnetisation and spin accumulation, with strength 
+
+δ > 0, can be introduced by appending the term δs to the effective field H in the LLB magnetisation equation (2.4). This coupling generates additional torques in (2.4): a transverse (precessional) torque −γδ m × s and a longitudinal torque αδ s.For analytical tractability, we consider a simplified model in the regime above the Curie tem-perature. In this regime, strong thermal agitation reduces the efficiency of a spin-polarised current in generating a net spin accumulation, resulting in a relatively small effective coupling δ. More-over, spin relaxation rates increase with temperature due to enhanced scattering, causing s to decay rapidly and remain small compared with other contributions to the effective field [10]. Since 
+
+αG ≪ 1 [50] and δ is small, the longitudinal torque αδ s is therefore negligible relative to the damp-ing term αH or the precessional torque γδ m × s, and it is dropped in our model. This leads to the SDLLB system (1.1) studied here, which coincides with the model in [25]. 5
+
+2.3. Problem formulations. Let Ω ⊂ Rd be a bounded smooth or a convex polytopal domain. The following standing assumptions are used throughout the paper: (i) the function j : Ω T → Rd is given such that j ∈ L∞(Ω T ) and j · n = 0 on ∂Ω; (ii) the function D0 : Ω → R is given such that D0 is bounded above and below by positive constants, i.e. there exist positive constants D∗ and D∗ such that D∗ ≤ D0 ≤ D∗.Further regularity assumptions will be introduced as necessary in the corresponding theorems. In the analysis, we always assume d = 3 for ease of presentation, noting that similar argument holds for d ≤ 2. We introduce the following notions of solution to (1.1). 
+
+Definition 2.1 (weak solution) . Let m0 ∈ H1 and s0 ∈ H1 be given. A weak solution to (1.1) is a pair ( m, s), where m : Ω T → R3 and s : Ω T → R3 satisfy: (i) m ∈ H1(0 , T ; eH−1) ∩ C([0 , T ]; L2) ∩ L∞(0 , T ; L∞) ∩ L2(0 , T ; H1); (ii) s ∈ H1(0 , T ; eH−1) ∩ C([0 , T ]; L2) ∩ L2(0 , T ; H1); (iii) m(0) = m0 and s(0) = s0;(iv) for almost all t ∈ (0 , T ), 
+
+⟨∂tm, ϕ⟩ = γα ′ ⟨m × ∇ m, ∇ϕ⟩ − αα ′ ⟨∇ m, ∇ϕ⟩ − ακμ ⟨m, ϕ⟩− ακ |m|2m, ϕ − γ′ ⟨m × s, ϕ⟩ , ∀ϕ ∈ H1, (2.5) 
+
+⟨∂ts, ψ⟩ = β′ ⟨m ⊗ j, ∇ψ⟩ − ⟨ D0∇s, ∇ψ⟩ + β ⟨D0(m ⊗ m)∇s, ∇ψ⟩− 1
+
+τsf 
+
+⟨D0s, ψ⟩ − 1
+
+τJ
+
+⟨D0s × m, ψ⟩ , ∀ψ ∈ H1; (2.6) A weak solution is local if the solution exists only for sufficiently small T . It is global if the solution exists for arbitrary positive T .
+
+Definition 2.2 (strong solution) . A strong solution (m, s) to (1.1) is a weak solution with addi-tional regularity: (i) m ∈ H1(0 , T ; H1) ∩ C([0 , T ]; H2) ∩ L2(0 , T ; H3); (ii) s ∈ H1(0 , T ; H1) ∩ C([0 , T ]; H2) ∩ L2(0 , T ; H3). In this case, ( m, s) satisfies (1.1) for almost every ( t, x) ∈ ΩT .The above definition of weak solution is in the spirit of [4, 28], noting that j · n = 0 on ∂Ω by assumption. Strong solution of the SDLLB system satisfies the following energy equality for all 
+
+t ∈ (0 , T ): 
+
+E(m(t)) + α
+
+Z t
+
+> 0
+
+∥H(τ )∥2 
+
+> L2
+
+dτ = E(m0) + 
+
+Z t
+
+> 0
+
+γ′ ⟨m(τ ) × s(τ ), H(τ )⟩ dτ, (2.7) where E is the micromagnetic energy functional defined by (1.2). The energy equality (2.7) can be motivated as follows: Formally taking the inner product of (1.1a) with H, and of (1.1b) with ∂tm,then subtracting the resulting equations, we obtain 
+
+α′
+
+2ddt ∥∇ m∥2 
+
+> L2
+
++ κ
+
+4ddt ∥m∥4 
+
+> L4
+
++ κμ ddt ∥m∥2 
+
+> L2
+
++ α ∥H∥2 
+
+> L2
+
+= γ′ ⟨m × s, H⟩ . (2.8) Integrating this over (0 , t ) then yields (2.7). For ease of presentation, in the analysis we set all numerical coefficients in (2.5) and (2.6), except for β, to 1. 2.4. Finite elements. Let Th h> 0 be a family of shape-regular and quasi-uniform triangulations of Ω into triangles or tetrahedra with maximal mesh-size h. Next, we introduce the conforming finite element space Vh ⊂ H1 given by 
+
+Vh := ϕh ∈ C(Ω; R3) : ϕh|K ∈ P r(K; R3), ∀K ∈ T h , (2.9) 6
+
+where Pr(K; R3) denotes the space of polynomials of degree at most r on K taking values in R3.For a technical reason (see Lemma 4.7), we assume that in (2.9) the polynomial degree r in Vh is: 
+
+(
+
+r ≥ 1, if d ∈ { 1, 2},r ≥ 2, if d = 3 . (2.10) Due to the regularity of the triangulation, we have the following best approximation property: for p ∈ [1 , ∞], there exists a constant C independent of h such that for any v ∈ Wr+1 ,p ,inf 
+
+> χ∈Vh
+
+ ∥v − χ∥Lp + h ∥∇ (v − χ)∥Lp ≤ Ch r+1 ∥v∥Wr+1 ,p . (2.11) In the analysis, we will use the finite element projection operator Ph : L2 → Vh defined by 
+
+⟨Phv − v, χ⟩ = 0 , ∀χ ∈ Vh. (2.12) Let p ∈ [1 , ∞]. The projector Ph satisfies the following boundedness and approximation proper-ties [14, 17]: 
+
+∥Phv∥Lp ≤ Cp ∥v∥Lp , (2.13) 
+
+∥Phv∥W1,p ≤ Cp ∥v∥W1,p , (2.14) 
+
+∥v − Ph(v)∥L2 + h ∇ v − Ph(v) 
+
+> L2
+
+≤ Ch r+1 ∥v∥Hr+1 . (2.15) Other projection operators used in this paper will be introduced and analysed in Section 4. Finally, the following inverse estimates are well-known: there exist constants Cinv and eCinv (which depend on the regularity of the triangulation, but is independent of h) such that 
+
+∥v∥L∞ ≤ Cinv h−d/ 2 ∥v∥L2 , ∀v ∈ Vh, (2.16) 
+
+∥v∥L∞ ≤ eCinv ℓh ∥v∥H1 , ∀v ∈ Vh, (2.17) where 
+
+ℓh := 
+
+
+
+1, if d = 1 ,
+
+|log h|1/2 , if d = 2 ,h−1/2, if d = 3 .
+
+(2.18) The inverse estimates hold under the quasi-uniformity assumption on the triangulation. 3. The existence and uniqueness of global strong solution 
+
+To establish the global existence and uniqueness of solutions to (1.1), one could apply the Faedo– Galerkin method: derive suitable uniform estimates for the approximate solutions and apply weak compactness argument to extract a subsequence which solves the problem. However, in order to streamline the presentation, we will work directly (and formally) with smooth solution ( m, s) of problem (1.1) in lieu of its Faedo–Galerkin approximations. The formal a priori estimates presented below can be rigorously justified by appealing to the Galerkin approximation framework, following the approach in [28, 29]. Uniqueness of strong solutions (in the sense of Definition 2.2) will be shown by an energy-based argument. The main result of this section is stated in Theorem 3.10. For clarity of exposition, we recall that all numerical coefficients in (1.1) have been set to 1, except for β. We begin with a lemma that demonstrates the exponential decay of the Lp norm of the solution m. This decay corresponds to the eventual loss of magnetisation above the Curie temperature (see also Remark 3.4, and [5, 27, 29] for supporting evidence). 
+
+Lemma 3.1. Let ( m, s) be a smooth solution of (1.1) with initial data m0 ∈ Lp, where p ∈ [2 , ∞]. Then for all t ∈ [0 , T ], 
+
+∥m(t)∥Lp ≤ e−t ∥m0∥Lp . (3.1) 7
+
+Moreover, for p ∈ [2 , ∞), Z t
+
+> 0
+
+|m(τ )| p−22 |∇ m(τ )| 2 
+
+> L2
+
+dτ ≤ C, (3.2) where C depends on the coefficients of the equation and ∥m0∥Lp .
+
+Proof. Taking the inner product of (1.1a) with |m|p−2m for p ≥ 2, and noting (1.1b), we obtain 1
+
+p
+
+ddt ∥m∥p 
+
+> Lp
+
++
+
+D
+
+∇m, ∇(|m|p−2 m)
+
+E
+
++ ∥m∥p 
+
+> Lp
+
++ ∥m∥p+2  
+
+> Lp+2
+
+= 0 .
+
+Therefore, 1
+
+p
+
+ddt ∥m∥p 
+
+> Lp
+
++ |m| p−22 |∇ m| 2 
+
+> L2
+
++ ( p − 2) |m| p−42 |m · ∇ m| 2
+
+> L2
+
++ ∥m∥p 
+
+> Lp
+
++ ∥m∥p+2  
+
+> Lp+2
+
+= 0 .
+
+Integrating this over (0 , t ) gives (3.2). Furthermore, dropping irrelevant terms, we have ddt ∥m(t)∥p 
+
+> Lp
+
++ p ∥m(t)∥p 
+
+> Lp
+
+≤ 0,
+
+so that ddt
+
+
+
+ept ∥m(t)∥p
+
+> Lp
+
+
+
+≤ 0.
+
+Integrating over (0 , t ) and taking p-th root show (3.1) for p ∈ [2 , ∞). Letting p → ∞ in (3.1) completes the proof for the case p = ∞. □
+
+In the next lemma, we assume a certain smallness condition on β or ∥m0∥L∞ to derive a uniform estimate for s.
+
+Lemma 3.2. Let ( m, s) be a smooth solution of (1.1) with initial data m0 ∈ L∞ and s0 ∈ L2,such that βD ∗ ∥m0∥2 
+
+> L∞
+
+< D ∗. Then for all t ∈ [0 , T ], 
+
+∥s(t)∥2 
+
+> L2
+
++
+
+Z t
+
+> 0
+
+∥∇ s(τ )∥2 
+
+> L2
+
+dτ ≤ C, (3.3) where the constant C depends on the coefficients of the equation, ∥m0∥L∞ , and ∥s0∥L2 . Further-more, we have lim  
+
+> t→∞
+
+∥s(t)∥2 
+
+> L2
+
+= 0 . (3.4) 
+
+Proof. Taking the inner product of (1.1c) with s, noting (1.1d) and our standing assumptions, gives 12ddt ∥s∥2 
+
+> L2
+
++ ⟨D0∇s, ∇s⟩ + ⟨D0s, s⟩ = ⟨m ⊗ j, ∇s⟩ + β ⟨D0(m ⊗ m)∇s, ∇s⟩
+
+Noting the assumption on D0, by Young’s inequality we obtain for any ϵ > 0, 12ddt ∥s∥2 
+
+> L2
+
++ D∗ ∥∇ s∥2 
+
+> L2
+
++ D∗ ∥s∥2
+
+> L2
+
+≤ C ∥j∥2  
+
+> L∞(Ω T)
+
+∥m∥2 
+
+> L∞
+
++ βD ∗ ∥m∥2 
+
+> L∞
+
+∥∇ s∥2 
+
+> L2
+
++ ϵ ∥∇ s∥2
+
+> L2
+
+≤ Ce −2t ∥m0∥2 
+
+> L∞
+
++ βD ∗e−2t ∥m0∥2 
+
+> L∞
+
+∥∇ s∥2 
+
+> L2
+
++ ϵ ∥∇ s∥2 
+
+> L2
+
+, (3.5) where in the last step we used the assumption on j and (3.1). Now, if βD ∗ ∥m0∥2 
+
+> L∞
+
+< D ∗, then noting that e−2t ≤ 1 and choosing ϵ > 0 sufficiently small we can absorb the last two terms on the right-hand side. Integrating over (0 , t ) then yields (3.3). Furthermore, (3.5) and the assumption ∥m0∥2 
+
+> L∞
+
+< D ∗/(βD ∗) imply ddt ∥s∥2 
+
+> L2
+
++ 2 D∗ ∥s∥2 
+
+> L2
+
+≤ Ce −2tD∗
+
+βD ∗ . (3.6) 8
+
+By a variant of the Gronwall inequality [35, Theorem 2.1.5], we obtain 
+
+∥s(t)∥2 
+
+> L2
+
+≤ ∥ s0∥2 
+
+> L2
+
+e−2D∗t +
+
+Z t
+
+> 0
+
+Ce −2D∗(t−τ ) e−2τ D∗
+
+βD ∗ dτ
+
+= ∥s0∥2 
+
+> L2
+
+e−2D∗t + CD ∗
+
+βD ∗(2 D∗ − 2) 
+
+ e−2t − e−2D∗t .
+
+In particular, we have (3.4). This completes the proof of the lemma. □
+
+Further estimates on the norms of spatial derivatives of m are derived in the following lemmas. 
+
+Lemma 3.3. Let ( m, s) be a smooth solution of (1.1) with initial data m0 ∈ H1 ∩L∞ and s0 ∈ L2,such that βD ∗ ∥m0∥2 
+
+> L∞
+
+< D ∗. Then for all t ∈ [0 , T ], 
+
+∥∇ m(t)∥2 
+
+> L2
+
++
+
+Z t
+
+> 0
+
+∥∆m(τ )∥2 
+
+> L2
+
+dτ ≤ C, (3.7) where the constant C depends on the coefficients of the equation, ∥m0∥H1∩L∞ , and ∥s0∥L2 .
+
+Proof. Taking the inner product of (1.1a) with −∆m and integrating by parts, we have 12ddt ∥∇ m∥2 
+
+> L2
+
++ ∥∆m∥2 
+
+> L2
+
++ ∥∇ m∥2 
+
+> L2
+
++ ∥| m||∇ m|∥ 2 
+
+> L2
+
++ 2 ∥m · ∇ m∥2
+
+> L2
+
+= − ⟨ m × s, ∆m⟩≤ 12 ∥∆m∥2 
+
+> L2
+
++ 12 ∥m∥2 
+
+> L∞
+
+∥s∥2 
+
+> L2
+
+.
+
+Integrating both sides over (0 , t ), noting (3.1) and (3.3), we obtain the required result. □
+
+Remark 3.4. Physically, (3.1) and (3.4) indicate that above the Curie temperature, both the local magnetisation and the spin accumulation decay to zero in a certain sense. Under the LLB frame-work considered here, |m| can vary in space and time since m represents the local magnetisation 
+
+(or macrospin) at high temperatures. Indeed, above the Curie temperature, m(t) even decays exponentially to zero. We emphasise that this does not mean that the individual magnetic spin 
+
+vectors vanish (they are still of unit length), but rather that they become sufficiently disordered so that the averaged (or local) magnetisation m at any point tends to zero, corresponding to the loss of macroscopic magnetisation above the Curie point [5, 27]. The loss of magnetisation and the enhanced scattering weaken the coupling between m and s in such a way that spin relaxation mechanisms dominate over spin current injection, resulting in an eventual decay of s to zero as well [10]. 
+
+Remark 3.5. We comment on the physical plausibility of the assumption βD ∗ ∥m0∥2 
+
+> L∞
+
+< D ∗
+
+used in Lemmas 3.2 and 3.3, and later in Theorem 3.10 to establish the existence of a global weak solution. In the SDLLG system, a similar smallness condition on β is typically imposed. Notably, if 
+
+∥m0∥L∞ = 1, then our assumption simplifies to β < D ∗/D ∗, which is consistent with the condition intended in [1]. We note that the statement of [1, Lemma 5] contains a minor inaccuracy, but once corrected, the resulting constraint for parabolicity reduces precisely to β < D ∗/D ∗ in our notation. If moreover D0 is constant in space, then this assumption reduces to β ∈ (0 , 1). Equivalently, for a given β ∈ (0 , 1), the assumption holds if ∥m0∥2 
+
+> L∞
+
+< D ∗/(βD ∗), which can occur naturally in a sufficiently ‘weak’ ferromagnet (small local magnetisation almost everywhere) or at a sufficiently high temperature. 
+
+Lemma 3.6. Let ( m, s) be a smooth solution of (1.1) with initial data m0 ∈ H2 and s0 ∈ L2,such that 
+
+∥m0∥2 
+
+> L∞
+
+< min 1/C 2G, D ∗/(βD ∗) =: K0, (3.8) 9
+
+where CG := C1C2 is a constant associated with the Gagliardo–Nirenberg inequalities (3.11) and (3.12). Then for all t ∈ [0 , T ], 
+
+∥∆m(t)∥2 
+
+> L2
+
++
+
+Z t
+
+> 0
+
+∥∇ ∆m(τ )∥2 
+
+> L2
+
+dτ ≤ C, (3.9) where the constant C depends on the coefficients of the equation, ∥m0∥H2 , and ∥s0∥L2 .
+
+Proof. Taking the inner product of (1.1a) with ∆ 2m and integrating by parts as necessary, we have 12ddt ∥∆m∥2 
+
+> L2
+
++ ∥∇ ∆m∥2 
+
+> L2
+
++ ∥∆m∥2
+
+> L2
+
+= ⟨∇ m × ∆m, ∇∆m⟩ + ∇(|m|2m), ∇∆m + ⟨∇ m × s, ∇∆m⟩ + ⟨m × ∇ s, ∇∆m⟩
+
+=: J1 + J2 + J3 + J4. (3.10) We will estimate each term on the last line. Firstly, note that by the Gagliardo–Nirenberg inequal-ities in 3D, 
+
+∥∇ m∥L6 ≤ C1 ∥m∥ 23 
+
+> L∞
+
+∥m∥ 13 
+
+> H3
+
+(3.11) 
+
+∥∆m∥L3 ≤ C2 ∥m∥ 13 
+
+> L∞
+
+∥m∥ 23 
+
+> H3
+
+, (3.12) where C1 and C2 are constants depending on Ω. Therefore, we infer that 
+
+|J1| ≤ ∥∇ m∥L6 ∥∆m∥L3 ∥∇ ∆m∥L2
+
+≤ CG ∥m∥L∞ ∥m∥H3 ∥∇ ∆m∥L2
+
+≤ CG ∥m0∥L∞
+
+
+
+1 + ∥∆m∥2
+
+> L2
+
+
+
++ ϵ ∥∇ ∆m∥2 
+
+> L2
+
++ CG ∥m0∥L∞ ∥∇ ∆m∥2 
+
+> L2
+
+,
+
+for any ϵ > 0, where in the last step we used Young’s inequality, (3.1), and (3.7). For the term J2,by Young’s inequality we have 
+
+|J2| ≤ 3 ∥m∥2 
+
+> L∞
+
+∥∇ m∥L2 ∥∇ ∆m∥L2 ≤ C ∥m0∥2 
+
+> L∞
+
+∥∇ m∥2 
+
+> L2
+
++ ϵ ∥∇ ∆m∥2 
+
+> L2
+
+.
+
+Next, for the term J3 we apply Young’s and Agmon’s inequalities to obtain 
+
+|J3| ≤ ∥∇ m∥L∞ ∥s∥L2 ∥∇ ∆m∥L2
+
+≤ C ∥∇ m∥ 12 
+
+> H1
+
+∥∇ m∥ 12 
+
+> H2
+
+∥s∥L2 ∥∇ ∆m∥L2
+
+≤ C
+
+
+
+1 + ∥∆m∥2
+
+> L2
+
+
+
++ ϵ ∥∇ ∆m∥2 
+
+> L2
+
+,
+
+where in the last step we used (3.3) and (3.7). Similarly, for the term J4 we have 
+
+|J4| ≤ ∥ m∥L∞ ∥∇ s∥L2 ∥∇ ∆m∥L2 ≤ ∥ m0∥2 
+
+> L∞
+
+∥∇ s∥2 
+
+> L2
+
++ ϵ ∥∇ ∆m∥2 
+
+> L2
+
+.
+
+Altogether, continuing from (3.10) we obtain 12ddt ∥∆m∥2 
+
+> L2
+
++ ∥∇ ∆m∥2 
+
+> L2
+
++ ∥∆m∥2
+
+> L2
+
+≤ C
+
+
+
+1 + ∥∆m∥2 
+
+> L2
+
++ ∥∇ s∥2
+
+> L2
+
+
+
++ CG ∥m0∥L∞ ∥∇ ∆m∥2 
+
+> L2
+
++ ϵ ∥∇ ∆m∥2 
+
+> L2
+
+.
+
+Choosing ϵ > 0 sufficiently small and noting the assumption (3.8), we can absorb the last two terms on the right-hand side above. Integrating with respect to time, noting (3.3) and (3.7) again, then yields (3.9). □
+
+Next, we derive estimates on the norms of spatial derivatives of s under further smoothness assumptions on j and D0.10 
+
+Lemma 3.7. Let ( m, s) be a smooth solution of (1.1) with initial data m0 ∈ H2 and s0 ∈ H1,such that (3.8) holds. Let j ∈ L∞ 0, T ; H1(Ω; Rd) and D0 ∈ W 1,∞(Ω) be given. Then for all 
+
+t ∈ [0 , T ], 
+
+∥∇ s(t)∥2 
+
+> L2
+
++
+
+Z t
+
+> 0
+
+∥∆s(τ )∥2 
+
+> L2
+
+dτ ≤ C, (3.13) where the constant C depends on the coefficients of the equation, ∥m0∥H2 , and ∥s0∥H1 .
+
+Proof. Taking the inner product of (1.1c) with −∆s, we obtain 12ddt ∥∇ s∥2 
+
+> L2
+
+= ⟨∇ · (m ⊗ j), ∆s⟩ − ⟨∇ · (D0∇s), ∆s⟩ − β ∇ ·  D0(m ⊗ m)∇s, ∆s
+
++ ⟨D0s, ∆s⟩ + ⟨D0s × m, ∆s⟩
+
+= ⟨∇ · (m ⊗ j), ∆s⟩ − ⟨ D0∆s, ∆s⟩ − ⟨∇ s · ∇ D0, ∆s⟩− ∇ ·  D0(m ⊗ m)∇s, ∆s + ⟨D0s, ∆s⟩ + ⟨D0s × m, ∆s⟩ .
+
+After rearranging the terms, we have 12ddt ∥∇ s∥2 
+
+> L2
+
++ ⟨D0∆s, ∆s⟩ = ⟨∇ · (m ⊗ j), ∆s⟩ − ⟨∇ s · ∇ D0, ∆s⟩ + ⟨D0s, ∆s⟩− β ∇ ·  D0(m ⊗ m)∇s, ∆s + ⟨D0s × m, ∆s⟩
+
+=: I1 + I2 + · · · + I5. (3.14) We need to estimate each term on the last line. The first term can be estimated in a straightforward manner by Young’s inequality: 
+
+|I1| ≤ ∥∇ m∥L4 ∥j∥L4 ∥∆s∥L2 + ∥m∥L∞ ∥∇ j∥L2 ∥∆s∥L2
+
+≤ C + ϵ ∥∆s∥2 
+
+> L2
+
+,
+
+where we used the assumption on j, the Sobolev embedding H1 ,→ L4, (3.9), and (3.1). Similarly, by the assumption on D0 and Young’s inequality, we have 
+
+|I2| ≤ ∥∇ s∥L2 ∥∇ D0∥L∞ ∥∆s∥L2 ≤ C ∥∇ s∥2 
+
+> L2
+
++ ϵ ∥∆s∥2 
+
+> L2
+
+,
+
+|I3| ≤ ∥ D0∥L∞ ∥s∥L2 ∥∆s∥L2 ≤ C ∥∇ s∥2 
+
+> L2
+
++ ϵ ∥∆s∥2 
+
+> L2
+
+.
+
+For the term I4, we expand the divergence term then apply H¨ older’s inequality to obtain 
+
+|I4| ≤ β ∥D0∥W 1,∞ ∥m∥2 
+
+> L∞
+
+∥∇ s∥L2 ∥∆s∥L2
+
++ 2 β ∥D0∥L∞ ∥m∥L∞ ∥∇ m∥L4 ∥∇ s∥L4 ∥∆s∥L2
+
++ β ∥D0∥L∞ ∥m∥2 
+
+> L∞
+
+∥∆s∥2
+
+> L2
+
+≤ C ∥∇ s∥2 
+
+> L2
+
++ ϵ ∥∆s∥2 
+
+> L2
+
++ βD ∗ ∥m0∥2 
+
+> L∞
+
+∥∆s∥2 
+
+> L2
+
+,
+
+where in the last step we used the Gagliardo–Nirenberg inequalities, (3.1), (3.7), and (3.9). Finally, for the term I5,
+
+|I5| ≤ ∥ D0∥L∞ ∥s∥L2 ∥m∥L∞ ∥∆s∥L2 ≤ C ∥s∥2 
+
+> L2
+
++ ϵ ∥∆s∥2 
+
+> L2
+
+.
+
+Collecting the above estimates and continuing from (3.14), we infer that for any ϵ > 0, 12ddt ∥∇ s∥2 
+
+> L2
+
++ D∗ ∥∆s∥2 
+
+> L2
+
+≤ C ∥∇ s∥2 
+
+> L2
+
++ ϵ ∥∆s∥2 
+
+> L2
+
++ βD ∗ ∥m0∥2 
+
+> L∞
+
+∥∆s∥2 
+
+> L2
+
+.
+
+If the quantity ∥m0∥2 
+
+> L∞
+
+is small such that (3.8) holds, then we can absorb the last term on the right-hand side of the above inequality. Choosing ϵ > 0 sufficiently small and integrating over (0 , t ), we obtain (3.13). □11 
+
+Lemma 3.8. Let ( m, s) be a smooth solution of (1.1) with initial data m0 ∈ H2 and s0 ∈ H2,such that (3.8) holds. Let j ∈ L∞ 0, T ; H2(Ω; Rd) and D0 ∈ W 2,∞(Ω) be given. Then for all 
+
+t ∈ [0 , T ], 
+
+∥∆s(t)∥2 
+
+> L2
+
++
+
+Z t
+
+> 0
+
+∥∇ ∆s(τ )∥2 
+
+> L2
+
+dτ ≤ C, (3.15) where the constant C depends on the coefficients of the equation, ∥m0∥H2 , and ∥s0∥H2 .
+
+Proof. Taking the inner product of (1.1c) with ∆ 2s and integrating by parts as necessary, we have 12ddt ∥∆s∥2 
+
+> L2
+
+= − ∇ · (m ⊗ j), ∆2s + ∇ · (D0∇s), ∆2s
+
+− D0s, ∆2s − D0s × m, ∆2s − β ∇ ·  D0(m ⊗ m)∇s, ∆2s
+
+= ∇ ∇ · (m ⊗ j), ∇∆s − ⟨∇ D0 ⊗ ∆s, ∇∆s⟩ − ⟨ D0∇∆s, ∇∆s⟩− ∇ ∇s · ∇ D0
+
+, ∇∆s + ⟨∇ (D0s), ∇∆s⟩ + ⟨∇ (D0s × m), ∇∆s⟩
+
++ β ∇ D0∇ · (m ⊗ m)∇s, ∇∆s + β ∇ (m ⊗ m · ∇ D0)∇s, ∇∆s .
+
+Upon rearranging the terms, we obtain 12ddt ∥∆s∥2 
+
+> L2
+
++ ⟨D0∇∆s, ∇∆s⟩
+
+= ∇ ∇ · (m ⊗ j), ∇∆s − ⟨∇ D0 ⊗ ∆s, ∇∆s⟩ − ∇ ∇s · ∇ D0
+
+, ∇∆s
+
++ ⟨∇ (D0s), ∇∆s⟩ + ⟨∇ (D0s × m), ∇∆s⟩
+
++ β ∇ D0∇ · (m ⊗ m)∇s, ∇∆s + β ∇ (m ⊗ m · ∇ D0)∇s, ∇∆s
+
+=: J1 + J2 + · · · + J7. (3.16) We now estimate each term on the last line. For the first term, we immediately have 
+
+|J1| ≤ ∥ m∥H2 ∥j∥H2 ∥∇ ∆s∥L2 ≤ C + ϵ ∥∇ ∆s∥2 
+
+> L2
+
+,
+
+where in the last step we used Young’s inequality and (3.9). For the terms J2 and J3, straightforward application of Young’s inequality and the Leibniz rule gives 
+
+|J2| ≤ ∥∇ D0∥L∞ ∥∆s∥L2 ∥∇ ∆s∥L2 ≤ C ∥∆s∥2 
+
+> L2
+
++ ϵ ∥∇ ∆s∥2 
+
+> L2
+
+,
+
+and 
+
+|J3| ≤ ∥∇ s · ∇ D0∥H1 ∥∇ ∆s∥L2
+
+≤ ∥∇ s∥H1 ∥D0∥W 1,∞ ∥∇ ∆s∥L2 + ∥∇ s∥L2 ∥D0∥W 2,∞ ∥∇ ∆s∥L2
+
+≤ C ∥∆s∥2 
+
+> L2
+
++ ϵ ∥∇ ∆s∥2 
+
+> L2
+
+.
+
+For the terms J4 and J5, similar argument gives 
+
+|J4| ≤ (∥D0∥L∞ ∥∇ s∥L2 + ∥D0∥W 1,∞ ∥s∥L2 ) ∥∇ ∆s∥L2
+
+≤ C ∥s∥2 
+
+> H1
+
++ ϵ ∥∇ ∆s∥2 
+
+> L2
+
+,
+
+|J5| ≤ ∥ D0∥W 1,∞ (∥s∥H1 ∥m∥L∞ + ∥s∥L4 ∥∇ m∥L4 ) ∥∇ ∆s∥L2
+
+≤ C ∥s∥2 
+
+> H1
+
++ ϵ ∥∇ ∆s∥2 
+
+> L2
+
+,
+
+where in the last step we also used the Sobolev embedding, (3.1), and (3.9). Similarly for the term 
+
+J6, by the Leibniz rule and H¨ older’s inequality we have 
+
+|J6| ≤ β ∥D0∥W 1,∞
+
+
+
+∥m∥2 
+
+> H2
+
+∥∇ s∥L∞ + 2 ∥m∥L∞ ∥∇ m∥L∞ ∥s∥H2
+
+
+
+∥∇ ∆s∥L2
+
+≤ C
+
+
+
+∥∇ s∥ 12 
+
+> H1
+
+∥∇ s∥ 12 
+
+> H2
+
++ ∥∇ m∥L∞ ∥s∥H2
+
+
+
+∥∇ ∆s∥L212 
+
+≤ C
+
+
+
+1 + ∥∇ m∥2
+
+> L∞
+
+  
+
+1 + ∥∆s∥2
+
+> L2
+
+
+
++ ϵ ∥∇ ∆s∥2 
+
+> L2
+
+,
+
+where in the penultimate step we used Agmon’s inequality, (3.1), and (3.9), while in the last step we used elliptic regularity [23], Young’s inequality, (3.3), and (3.13). Finally, for the term J7, by the same argument we infer that for any ϵ > 0, 
+
+|J7| ≤ β ∥D0∥W 1,∞
+
+
+
+∥m∥L∞ ∥∇ m∥L∞ + ∥m∥2 
+
+> L∞
+
+∥s∥H2
+
+
+
+∥∇ ∆s∥L2
+
++ β ∥D0∥W 2,∞ ∥m∥2 
+
+> L∞
+
+∥∇ s∥L2 ∥∇ ∆s∥L2
+
+≤ C (1 + ∥∇ m∥L∞ ) + C ∥∆s∥2 
+
+> L2
+
++ ϵ ∥∇ ∆s∥2 
+
+> L2
+
+,
+
+where in the last step we used elliptic regularity, Young’s inequality, (3.1), (3.3), and (3.13). Alto-gether, continuing from (3.16) we have 12ddt ∥∆s∥2 
+
+> L2
+
++ D∗ ∥∇ ∆s∥2 
+
+> L2
+
+≤ C
+
+
+
+1 + ∥∇ m∥2
+
+> L∞
+
+  
+
+1 + ∥∆s∥2
+
+> L2
+
+
+
++ ϵ ∥∇ ∆s∥2 
+
+> L2
+
+.
+
+Choosing ϵ > 0 sufficiently small, noting (3.9) and the Sobolev embedding H2 ,→ L∞, we infer the required result by the Gronwall lemma. □
+
+Lemma 3.9. Let ( m, s) be a smooth solution of (1.1) with initial data m0 ∈ H1 ∩L∞ and s0 ∈ L2,such that βD ∗ ∥m0∥2 
+
+> L∞
+
+< D ∗. Then for all t ∈ [0 , T ], 
+
+∥m∥H1  
+
+> T(eH−1)
+
++ ∥s∥H1  
+
+> T(eH−1)
+
+≤ C, (3.17) where the constant C depends on the coefficients of the equation, ∥m0∥H1∩L∞ , and ∥s0∥L2 .If, in addition, m0 ∈ H2 and s0 ∈ H2 such that (3.8) holds, and moreover j ∈ L∞ 0, T ; H2(Ω; Rd)
+
+and D0 ∈ W 2,∞(Ω), then for all t ∈ [0 , T ], 
+
+∥m∥H1  
+
+> T(H1)
+
++ ∥s∥H1  
+
+> T(H1)
+
+≤ C, (3.18) where the constant C depends on the coefficients of the equation, ∥m0∥H2 , and ∥s0∥H2 .
+
+Proof. First, we show (3.17). We have by (2.5) and H¨ older’s inequality, 
+
+∥∂tm∥eH−1 = sup   
+
+> φ∈H1,∥φ∥H1≤1
+
+⟨∂tm, φ⟩
+
+≤ C ∥m∥L∞ ∥∇ m∥L2 + C ∥∇ m∥L2 + C ∥m∥L2 + C ∥m∥3 
+
+> L6
+
++ C ∥m∥L∞ ∥s∥L2 ≤ C, 
+
+where in the last step we used (3.1), (3.3), (3.7), and the embedding H1 ,→ L6. This implies 
+
+∥∂tm∥L2  
+
+> T(eH−1)
+
+≤ C. Similarly, by (2.6), 
+
+∥∂ts∥eH−1 = sup   
+
+> φ∈H1,∥φ∥H1≤1
+
+⟨∂ts, φ⟩
+
+≤ C ∥m∥L2 ∥j∥L∞(Ω T ) + C ∥∇ s∥L2 + C ∥m∥2 
+
+> L∞
+
+∥∇ s∥L2 + C ∥s∥L2 ∥m∥L∞
+
+≤ C + C ∥∇ s∥L2 ,
+
+where in the last step we used (3.1) and (3.3). This implies ∥∂ts∥L2  
+
+> T(eH−1)
+
+≤ C by (3.3), thus completing the proof of (3.17). Next, we prove (3.18). From (1.1a), we have 
+
+∥∂tm∥L2  
+
+> T(L2)
+
+≤ ∥ m∥L∞  
+
+> T(L∞)
+
+∥H∥L2  
+
+> T(L2)
+
++ ∥H∥L2  
+
+> T(L2)
+
++ ∥m∥L∞  
+
+> T(L∞)
+
+∥s∥L2  
+
+> T(L2)
+
+≤ C, 
+
+where in the last step we used (3.1), (3.3), and (3.9). Similarly, from (1.1c) we infer 
+
+∥∂ts∥L2  
+
+> T(L2)
+
+≤ ∥ J∥L2  
+
+> T(H1)
+
++ ∥D0s∥L2  
+
+> T(L2)
+
++ ∥D0s∥L2  
+
+> T(L2)
+
+∥m∥L∞  
+
+> T(L∞)
+
+≤ C. 13 
+
+Furthermore, we also have 
+
+∥∇ ∂tm∥L2  
+
+> T(L2)
+
+≤ ∥∇ m∥L2  
+
+> T(L∞)
+
+∥H∥L∞  
+
+> T(L2)
+
++ ∥m∥L∞  
+
+> T(L∞)
+
+∥∇ H∥L2 
+
+> T(L2)
+
++ ∥∇ H∥L2  
+
+> T(L2)
+
++ ∥∇ m∥L2  
+
+> T(L∞)
+
+∥s∥L∞ 
+
+> T(L2)
+
++ ∥m∥L∞  
+
+> T(L∞)
+
+∥∇ s∥L2  
+
+> T(L2)
+
+≤ C, 
+
+where in the last step we used (3.1), (3.3), (3.9), and the Sobolev embedding H3 ,→ W1,∞. By similar argument, from (1.1c) we infer that 
+
+∥∇ ∂ts∥L2  
+
+> T(L2)
+
+≤ ∥ J∥L2  
+
+> T(H2)
+
++ ∥D0s∥L2  
+
+> T(H1)
+
++ ∥D0s∥L2  
+
+> T(H1)
+
+∥m∥L∞ 
+
+> T(L∞)
+
++ ∥D0s∥L∞  
+
+> T(L2)
+
+∥m∥L2  
+
+> T(W1,∞)
+
+≤ C, 
+
+where in the last step we also used the fact that from (1.1d), 
+
+∥J∥L2  
+
+> T(H2)
+
+≤ ∥ m∥L∞  
+
+> T(H2)
+
+∥j∥L2  
+
+> T(H2)
+
++ ∥s∥L2 
+
+> T(H3)
+
++ β ∥D0∥H2 ∥m∥2  
+
+> L∞
+> T(H2)
+
+∥s∥L2  
+
+> T(H3)
+
+≤ C, 
+
+by (3.9) and (3.15). This completes the proof of the lemma. □
+
+We can now state the main theorem of this section. 
+
+Theorem 3.10. Let T > 0. Let initial data m0 ∈ H1 ∩ L∞ and s0 ∈ H1 be given, such that 
+
+βD ∗ ∥m0∥2 
+
+> L∞
+
+< D ∗. Then there exists a global weak solution (in the sense of Definition 2.1) to the problem (1.1). This solution satisfies 
+
+∥m∥L∞  
+
+> T(L∞)
+
+≤ ∥ m0∥L∞ . (3.19) In addition, if m0 ∈ H2 and s0 ∈ H2 such that (3.8) holds, and j ∈ L∞ 0, T ; H2(Ω; Rd) and 
+
+D0 ∈ W 2,∞(Ω), then there exists a unique global strong solution (in the sense of Definition 2.2) to the problem (1.1). This strong solution satisfies energy equality (2.7). 
+
+Proof. First, we show the existence of a global weak solution. A straightforward application of the Banach–Alaoglu theorem and a compactness argument, utilising a priori estimates (3.1), (3.2), (3.3), (3.7), (3.17), and the Aubin–Lions lemma yields the required global weak solution in the sense of Definition 2.1. Since this part of the argument is standard (see e.g. [28, 29]), further detail is omitted. Note that the continuity in time follows from the Lions–Magenes interpolation lemma (Theorem II.5.13 of [11]): 
+
+H1(0 , T ; eH−1) ∩ L2(0 , T ; H1) ,→ C([0 , T ]; L2).
+
+Inequality (3.19) follows from (3.1), noting that e−t ≤ 1 for t ≥ 0. If further regularity on the initial data, j, and D0 are assumed, then we obtain m ∈ L∞ 
+
+> T
+
+(H2) ∩
+
+L2 
+
+> T
+
+(H3) and s ∈ L∞ 
+
+> T
+
+(H2) ∩ L2 
+
+> T
+
+(H3) by uniform estimates (3.9) and (3.15). A priori estimate (3.18) further shows that m ∈ H1 
+
+> T
+
+(H1) and s ∈ H1 
+
+> T
+
+(H1). By the embedding 
+
+L2(0 , T ; H3) ∩ H1(0 , T ; H1) ,→ C([0 , T ]; H2),
+
+we obtain a strong solution with regularity specified in Definition 2.2. The energy equality (2.7) now follows by the argument leading to (2.8), noting that a strong solution ( m, s) satisfies (1.1) for almost every ( t, x) ∈ ΩT as well as the regularity of strong solution m and s obtained above. It remains to show uniqueness of this strong solution. To this end, suppose that ( m, s) and (m′, s′) are two strong solutions corresponding to initial data ( m0, s0) and ( m′
+
+> 0
+
+, s′
+
+> 0
+
+), respectively. Let u := m−m′, r := s−s′, u0 := m0 −m′
+
+> 0
+
+, and r0 := s0 −s′
+
+> 0
+
+. Then for almost every ( t, x) ∈ ΩT ,the function u satisfies 
+
+∂tu = − m × ∆u + u × ∆m′ + ∆ u − u −  |m|2u + (( m + m′) · u)m′14 
+
+−  m × r + u × s′, (3.20) while for almost every ( t, x) ∈ ΩT , the function r satisfies 
+
+∂tr = −∇ · (u ⊗ j) + ∇ · (D0∇r) − β∇ ·  D0
+
+(m ⊗ m)∇r + ( m ⊗ u)∇s′ + ( u ⊗ m′)∇s′ 
+
+− D0r − D0
+
+ r × m + s′ × u, (3.21) with initial data u0 ∈ H2 and r0 ∈ H2, as well as boundary data ∂nu = ∂nr = 0.We will establish a continuous dependence estimate with respect to the initial data, which will imply uniqueness. Taking the inner product of (3.20) with u gives 12ddt ∥u∥2 
+
+> L2
+
++ ∥∇ u∥2 
+
+> L2
+
++ ∥u∥2 
+
+> L2
+
++ ∥| m|| u|∥ 2 
+
+> L2
+
++ m′ · u 2
+
+> L2
+
+= − ⟨∇ m × u, ∇u⟩ − (m · u)m′, u − ⟨ m × r, u⟩≤ 12 ∥∇ u∥2 
+
+> L2
+
++ 12 ∥∇ m∥2 
+
+> L∞
+
+∥u∥2 
+
+> L2
+
++ 12 ∥| m|| u|∥ 2 
+
+> L2
+
++ 12 m′ · u 2
+
+> L2
+
++ 12 ∥m∥2 
+
+> L∞
+
+∥u∥2 
+
+> L2
+
++ 12 ∥r∥2 
+
+> L2
+
+,
+
+where in the last step we used Young’s inequality. Rearranging the terms, we obtain ddt ∥u∥2 
+
+> L2
+
++ ∥u∥2 
+
+> H1
+
+≤ ∥ m∥2 
+
+> W1,∞
+
+∥u∥2 
+
+> L2
+
++ ∥r∥2 
+
+> L2
+
+. (3.22) Next, taking the inner product of (3.21) with r gives 12ddt ∥r∥2 
+
+> L2
+
++ ⟨D0∇r, ∇r⟩ + ⟨D0r, r⟩
+
+= − ⟨∇ · (u ⊗ j), r⟩ − D0s′ × u, r
+
++ β ⟨D0(m ⊗ m)∇r, ∇r⟩ + β D0(m ⊗ u)∇s′, ∇r + β D0(u ⊗ m′)∇s′, ∇r
+
+=: I1 + I2 + · · · + I5. (3.23) We estimate each term in the following. Firstly, by H¨ older’s and Young’s inequalities, 
+
+|I1| ≤ ∥ j∥L∞  
+
+> T(L∞)
+
+∥∇ u∥L2 ∥r∥L2 + ∥j∥L∞  
+
+> T(W1,4)
+
+∥u∥L4 ∥r∥L2
+
+≤ 14 ∥u∥2 
+
+> H1
+
++ C ∥j∥2  
+
+> L∞
+> T(H2)
+
+∥r∥2 
+
+> L2
+
+,
+
+where in the last step we used the Sobolev embedding H2 ,→ W1,4 ,→ L∞. For the second term, similarly we have 
+
+|I2| ≤ 12 ∥D0∥2 
+
+> L∞
+
+s′ 2 
+
+> L∞
+
+∥u∥2 
+
+> L2
+
++ 12 ∥r∥2 
+
+> L2
+
+≤ 12 D∗ s′ 2 
+
+> L∞
+
+∥u∥2 
+
+> L2
+
++ 12 ∥r∥2 
+
+> L2
+
+.
+
+For the term I3, by the same argument we obtain 
+
+|I3| ≤ βD ∗ ∥m∥2 
+
+> L∞
+
+∥∇ r∥2 
+
+> L2
+
+≤ βD ∗ ∥m0∥2 
+
+> L∞
+
+∥∇ r∥2 
+
+> L2
+
+,
+
+where in the last step we used (3.1). For the terms I4 and I5, by Young’s inequality and (3.1) again, we have for any ϵ > 0, 
+
+|I4| ≤ ϵβ ∥∇ r∥2 
+
+> L2
+
++ βD ∗
+
+4ϵ ∥m0∥2 
+
+> L∞
+
+∇s′ 2 
+
+> L∞
+
+∥u∥2 
+
+> L2
+
+,
+
+|I5| ≤ ϵβ ∥∇ r∥2 
+
+> L2
+
++ βD ∗
+
+4ϵ m′ 
+
+> 0
+> 2
+> L∞
+
+∇s′ 2 
+
+> L∞
+
+∥u∥2 
+
+> L2
+
+.
+
+Altogether, continuing from (3.23) we have for any ϵ > 0, 12ddt ∥r∥2 
+
+> L2
+
++ D∗ ∥r∥2 
+
+> H1
+
+≤ C ∥r∥2 
+
+> L2
+
++ 14 ∥u∥2 
+
+> H1
+
++ 12 D∗ s′ 2 
+
+> L∞
+
+∥u∥2
+
+> L2
+
++  βD ∗ ∥m0∥2 
+
+> L∞
+
++ 2 ϵβ  ∥∇ r∥2
+
+> L215
+
++ βD ∗
+
+4ϵ
+
+
+
+∥m0∥2 
+
+> L∞
+
++ m′
+
+> 0
+> 2
+> L∞
+
+
+
+∇s′ 2 
+
+> L∞
+
+∥u∥2 
+
+> L2
+
+.
+
+Now, by the assumption (3.8), since ∥m0∥2 
+
+> L∞
+
+< D ∗/(βD ∗), we can choose 
+
+ϵ = 14β
+
+
+
+D∗ − βD ∗ ∥m0∥2
+
+> L∞
+
+
+
+> 0,
+
+to absorb the term containing ∥∇ r∥2 
+
+> L2
+
+to the left-hand side. This yields ddt ∥r∥2 
+
+> L2
+
+≤ C ∥r∥2 
+
+> L2
+
++ 14 ∥u∥2 
+
+> H1
+
++ C s′ 2 
+
+> W1,∞
+
+∥u∥2 
+
+> L2
+
+. (3.24) Adding (3.22) and (3.24), and rearranging the terms, we obtain ddt
+
+
+
+∥u∥2 
+
+> L2
+
++ ∥r∥2
+
+> L2
+
+
+
+≤ C
+
+
+
+1 + ∥m∥2 
+
+> W1,∞
+
++ s′ 2
+
+> W1,∞
+
+  
+
+∥u∥2 
+
+> L2
+
++ ∥r∥2
+
+> L2
+
+
+
+.
+
+Noting the regularity of the strong solution, by the Gronwall lemma and the Sobolev embedding 
+
+H3 ,→ W1,∞, we have the continuous dependence estimate 
+
+∥u∥2 
+
+> L2
+
++ ∥r∥2 
+
+> L2
+
+≤ C
+
+
+
+∥u0∥2 
+
+> L2
+
++ ∥r0∥2
+
+> L2
+
+
+
+,
+
+where C depends on T , ∥m0∥H2 , and ∥s0∥H2 . This concludes the proof of the theorem. □
+
+4. Finite element approximation 
+
+Let Vh be the finite element space in (2.9), and let k be the time-step size. Let ( mnh, snh) ∈ Vh ×Vh
+
+be the numerical approximation of ( m(tn), s(tn)), where tn := nk ∈ [0 , T ] and n ∈ { 0, 1, . . . , N },and N := ⌊T /k ⌋. We denote vn := v(tn). For any discrete function v, define for n ∈ N,dtvn := vn − vn−1
+
+k .
+
+Let ( m0
+
+> h
+
+, s0
+
+> h
+
+) be a suitable approximation of the initial data. For ease of presentation, suppose that j ∈ C [0 , T ]; H1 so that the expression jn are well-defined for n ∈ { 0, 1, . . . , N }. It is possible to replace jn by a numerical approximation jnh without changing the analysis significantly. A fully discrete linearised finite element scheme to solve (1.1) can be described as follows. 
+
+Algorithm 4.1. Input: ( m0
+
+> h
+
+, s0
+
+> h
+
+), {jn}0≤n≤N .For n = 1 , 2, . . . , N , iterate: (1) compute mnh ∈ Vh such that 
+
+⟨dtmnh, ϕh⟩ = mn−1 
+
+> h
+
+× ∇ mnh, ∇ϕh − ⟨∇ mnh, ∇ϕh⟩ − ⟨ mnh, ϕh⟩− |mn−1 
+
+> h
+
+|2mnh, ϕh − mnh × sn−1 
+
+> h
+
+, ϕh , ∀ϕh ∈ Vh; (4.1) (2) compute snh ∈ Vh such that 
+
+⟨dtsnh, ϕh⟩ = mn−1 
+
+> h
+
+⊗ jn, ∇ψh − ⟨ D0∇snh, ∇ψh⟩ − ⟨ D0snh, ψh⟩
+
++ β D0
+
+ mn−1 
+
+> h
+
+⊗ mn−1
+
+> h
+
+∇snh, ∇ψh − D0snh × mn−1 
+
+> h
+
+, ψh , ∀ψh ∈ Vh; (4.2) Output: a sequence of discrete functions (mnh, snh) 1≤n≤N .We remark that while (1.1) is a nonlinearly coupled system of quasilinear PDEs, the above scheme only requires solving two completely decoupled linear systems per time-step. Note that, in contrast to the scheme presented in [1] for the SDLLG equation which solves for mnh and then snh sequentially, Algorithm 4.1 for the SDLLB equation allows mnh and snh to be computed in parallel , owing to the explicit treatment of mn−1 
+
+> h
+
+in (4.2). This decoupling provides a significant computational advantage, particularly in large-scale simulations or parallel computing environments. 16 
+
+To derive an error estimate in this section, for simplicity we take ( m0
+
+> h
+
+, s0
+
+> h
+
+) = ( Phm0, P hs0), where Ph is the L2 projection operator defined in (2.12). Note that other initial inputs are possible as long as they approximate the initial data with sufficient accuracy. We further assume adequate regularity for the exact solution ( m, s) to (1.1) to derive an optimal order of convergence, namely 
+
+m, s ∈ L∞ 
+
+> T
+
+(H3) ∩ W 1,∞ 
+
+> T
+
+(Hr+1 ) ∩ W 2,∞ 
+
+> T
+
+(L2), (4.3) where r is the degree of polynomials used in Vh.We now define several bilinear forms and discuss their properties to facilitate subsequent analysis. 
+
+Definition 4.2. Given ϕ, ψ ∈ H1 ∩ L∞ and β > 0, together with D0 and j satisfying the assump-tions stated in Section 2.3, we define bilinear forms on H1 × H1:
+
+D1(v, w) := ⟨∇ v, ∇w⟩ + ⟨v, w⟩ ,
+
+C1(ϕ; v, w) := − ⟨ ϕ × ∇ v, ∇w⟩ ,
+
+B1(ϕ, ψ; v, w) := ⟨(ϕ · ψ)v, w⟩ ,
+
+L1(ϕ; v, w) := − ⟨ v × ϕ, w⟩ ,
+
+D2(v, w) := ⟨D0∇v, ∇w⟩ + ⟨D0v, w⟩ ,
+
+C2(ϕ; v, w) := ⟨D0v × ϕ, w⟩ ,
+
+B2(ϕ, ψ; v, w) := −β ⟨D0(ϕ ⊗ ψ)∇v, ∇w⟩ ,
+
+L2(ϕ; v, w) := − ⟨ v ⊗ ϕ, ∇w⟩ .
+
+Furthermore, let 
+
+Ai(ϕ; v, w) := Di(v, w) + Ci(ϕ; v, w) + Bi(ϕ, ϕ; v, w), for i = 1 , 2. (4.4) With the above notations, the weak formulations (2.5) and (2.6) for the continuous problem now read as: 
+
+⟨∂tm, ϕ⟩ + A1(m; m, ϕ) + L1(s; m, ϕ) = 0 , ∀ϕ ∈ H1, (4.5) 
+
+⟨∂ts, ψ⟩ + A2(m; s, ψ) + L2(j; m, ψ) = 0 , ∀ψ ∈ H1. (4.6) The weak formulations (4.1) and (4.2) for the discrete scheme can be written as: 
+
+⟨dtmnh, ϕh⟩ + A1(mn−1 
+
+> h
+
+; mnh, ϕh) + L1(sn−1 
+
+> h
+
+; mnh, ϕh) = 0 , ∀ϕh ∈ Vh, (4.7) 
+
+⟨dtsnh, ψh⟩ + A2(mn−1 
+
+> h
+
+; snh, ψh) + L2(jn; mn−1 
+
+> h
+
+, ψh) = 0 , ∀ψh ∈ Vh. (4.8) We collect some important estimates on the previously defined bilinear forms in the following lemma. 
+
+Lemma 4.3. The following statements hold true for the bilinear forms defined in Definition 4.2: (i) A1(ϕ; ·, ·) and A2(ϕ; ·, ·) are bounded, i.e. there exist constants β1, β 2 > 0 depending only on the coefficients of the problem (1.1), ∥ϕ∥L∞ , and ∥ϕ∥H1 , such that 
+
+|A 1(ϕ; v, w)| ≤ β1 ∥v∥H1 ∥w∥H1 , ∀v, w ∈ H1, (4.9) 
+
+|A 2(ϕ; v, w)| ≤ β2 ∥v∥H1 ∥w∥H1 , ∀v, w ∈ H1; (4.10) (ii) A1(ϕ; ·, ·) is coercive, i.e. there exist a constant μ1 > 0 independent of ϕ, such that 
+
+|A 1(ϕ; v, v)| ≥ μ1 ∥v∥2 
+
+> H1
+
+, ∀v ∈ H1; (4.11) (iii) If ∥ϕ∥2 
+
+> L∞
+
+≤ D∗/(2 βD ∗), then A2(ϕ; ·, ·) is also coercive, i.e. there exist a constant μ2 > 0
+
+independent of ϕ, such that 
+
+|A 2(ϕ; v, v)| ≥ μ2 ∥v∥2 
+
+> H1
+
+, ∀v ∈ H1; (4.12) 17 
+
+(iv) There exists a constant C > 0 such that for any ϕ ∈ W1,4, v ∈ H1, and w ∈ H2
+
+> n
+
+,
+
+|C 1(ϕ; v, w)| ≤ C ∥ϕ∥W1,4 ∥v∥L2 ∥w∥H2 , (4.13) 
+
+|C 1(ϕ; ∆ w, w)| ≤ C ∥ϕ∥W1,4 ∥w∥W1,4 ∥∆w∥L2 ; (4.14) (v) There exists a constant C > 0 such that for any D0 ∈ W 1,4(Ω), ϕ, ψ ∈ W1,4, v ∈ H1, and 
+
+w ∈ H2
+
+> n
+
+,
+
+|B 2(ϕ, ψ; v, w)| ≤ C (∥ϕ∥W1,4 ∥ψ∥L∞ + ∥ϕ∥L∞ ∥ψ∥W1,4 ) ∥v∥L2 ∥w∥H2 ; (4.15) (vi) For any ϕ ∈ L∞, v ∈ L2, and w ∈ H1,
+
+|L 2(ϕ; v, w)| ≤ ∥ ϕ∥L∞ ∥v∥L2 ∥∇ w∥L2 . (4.16) 
+
+Proof. Inequalities (4.9) and (4.10) follow immediately by H¨ older’s inequality, while inequality (4.11) is obvious. Finally, we have 
+
+A2(ϕ; v, v) = ⟨D0∇v, ∇v⟩ + ⟨D0v, v⟩ − β ⟨D0(ϕ ⊗ ϕ)∇v, ∇v⟩≥ D∗ ∥v∥2 
+
+> L2
+
++  D∗ − βD ∗ ∥ϕ∥2
+
+> L∞
+
+ ∥∇ v∥2 
+
+> L2
+
+≥ μ2 ∥v∥2 
+
+> H1
+
+,
+
+where μ2 := D∗/2, thus showing (4.12). Next, we show (4.13) and (4.14). Integrating by parts, we infer that 
+
+C1(ϕ; v, w) = ⟨ϕ × v, ∆w⟩ + ⟨∇ ϕ × v, ∇w⟩ .
+
+By H¨ older’s inequality, we then have 
+
+|C 1(ϕ; v, w)| ≤ ∥ ϕ∥L∞ ∥v∥L2 ∥∆w∥L2 + ∥∇ ϕ∥L4 ∥v∥L2 ∥∇ w∥L4 ,
+
+from which (4.13) follows by the embeddings H2 ,→ W1,4 ,→ L∞. Inequality (4.14) follows by similar argument. Next, using integration by parts, we also have 
+
+B2(ϕ, ψ; v, w) = β ⟨D0(ϕ ⊗ ψ)v, ∆w⟩ + β
+
+D
+
+v∇ D0(ϕ ⊗ ψ)⊤, ∇w
+
+E
+
+.
+
+Therefore, by H¨ older’s inequality, 
+
+|B 2(ϕ, ψ; v, w)| ≤ βD ∗ ∥ϕ∥L∞ ∥ψ∥L∞ ∥v∥L2 ∥∆w∥L2
+
++ β ∥v∥L2 ∥D0(ϕ ⊗ ψ)∥W1,4 ∥∇ w∥L4 ,
+
+which implies (4.15) by the assumptions and the embeddings H2 ,→ W1,4 ,→ L∞. Finally, by H¨ older’s inequality we have 
+
+|L 2(ϕ; v, w)| ≤ ∥ v ⊗ ϕ∥L2 ∥∇ w∥L2 ≤ ∥ ϕ∥L∞ ∥v∥L2 ∥∇ w∥L2 ,
+
+showing (4.16), thus completing the proof of the lemma. □
+
+To aid in the analysis, we next introduce the following elliptic projection operators, a technique originating in [46]. 
+
+Definition 4.4. Let t ∈ [0 , T ]. Let ( m, s) be a strong solution to (1.1) in the sense of Definition 2.2, with initial data ( m0, s0) satisfying 
+
+∥m0∥2 
+
+> L∞
+
+≤ D∗/(2 βD ∗). (4.17) The A1-elliptic projection operator Π h := Π h, m(t) : H1 → Vh is defined by 
+
+v 7 → Πhv satisfying A1(m(t); v − Πhv, ϕh) = 0 , ∀ϕh ∈ Vh. (4.18) The A2-elliptic projection operator Λ h := Λ h, m(t) : H1 → Vh is defined by 
+
+v 7 → Λhv satisfying A2(m(t); v − Λhv, ψh) = 0 , ∀ψh ∈ Vh. (4.19) 18 
+
+Note that the bilinear forms defining Π hv and Λ hv in (4.18) and (4.19) depend on the given exact solution ( m, s) of the problem (1.1). In light of the regularity assumption on ( m, s), estimate (3.19) and the assumption (4.17), as well as the coercivity and boundedness properties (4.9), (4.10), (4.11), and (4.12), the elliptic projections are well-defined by the Lax–Milgram theorem. Next, for any v ∈ L∞ 
+
+> T
+
+(H1), let ρ and η be defined by 
+
+ρ(t) := Π hv(t) − v(t) and η(t) := Λ hv(t) − v(t). (4.20) Then 
+
+A1(m(t); ρ(t), ϕh) = A2(m(t); η(t), ψh) = 0 , ∀ϕh, ψh ∈ Vh. (4.21) Some estimates on ρ and η are derived below. 
+
+Proposition 4.5. Let ( m, s) be the solution to (1.1) with regularity given by (4.3), and initial data satisfying (4.17). Let ρ and η be as defined in (4.20), and suppose that v ∈ L∞ 
+
+> T
+
+(Hr+1 ). Then there exists a constant C > 0 such that for any t ∈ [0 , T ], 
+
+∥ρ(t)∥L2 + h ∥∇ ρ(t)∥L2 ≤ C ∥v∥L∞  
+
+> T(Hr+1 )
+
+hr+1 , (4.22) 
+
+∥η(t)∥L2 + h ∥∇ η(t)∥L2 ≤ C ∥v∥L∞  
+
+> T(Hr+1 )
+
+hr+1 , (4.23) where the constant C is independent of h, but may depend on T and ∥m∥L∞ 
+
+> T(H2)
+
+.Furthermore, suppose that v ∈ L∞ 
+
+> T
+
+(Hr+1 ) ∩ H1 
+
+> T
+
+(H2), then there exists a constant C > 0 such that for any t ∈ [0 , T ], 
+
+∥∂tρ(t)∥L2 + h ∥∇ ∂tρ(t)∥L2 ≤ C 1 + ∥v∥L∞ 
+
+> T(Hr+1 )
+
+hr+1 , (4.24) 
+
+∥∂tη(t)∥L2 + h ∥∇ ∂tη(t)∥L2 ≤ C 1 + ∥v∥L∞ 
+
+> T(Hr+1 )
+
+hr+1 , (4.25) where the constant C is independent of h, but may depend on T and ∥m∥W 1,∞ 
+
+> T(Hr+1 )
+
+.
+
+Proof. Note that by (3.1), we have ∥m∥2  
+
+> L∞
+> T(L∞)
+
+≤ D∗/(2 βD ∗). First, we prove (4.22). For all 
+
+χ ∈ Vh, by the coercivity and the boundedness of A1 in Lemma 4.3, and the definition of ρ,
+
+μ1 ∥ρ(t)∥2 
+
+> H1
+
+≤ A 1(m(t); ρ(t), ρ(t)) = A1(m(t); ρ(t), Πhv(t) − χ) − A 1(m(t); ρ(t), v(t) − χ)
+
+≤ β1 ∥ρ(t)∥H1 ∥v(t) − χ∥H1 ,
+
+since the first term in the second step is zero. Here, β1 depends on ∥m∥L∞ 
+
+> T(H2)
+
+. Therefore, by (2.11), 
+
+∥ρ(t)∥H1 ≤ (β1/μ 1) inf 
+
+> χ∈Vh
+
+∥v(t) − χ∥H1 ≤ Ch r ∥v∥L∞  
+
+> T(Hr+1 )
+
+, (4.26) where C depends on ∥m∥L∞ 
+
+> T(H2)
+
+. To show the L2-estimate, we use a duality argument. For each 
+
+m(t) ∈ H2, let ψ(t) ∈ H2 
+
+> n
+
+satisfy 
+
+A1(m(t); ζ, ψ(t)) = ⟨ρ(t), ζ⟩ , ∀ζ ∈ H1. (4.27) For any t ∈ [0 , T ], such ψ(t) exists by Lemma 4.6 under the assumed conditions on Ω. Moreover, 
+
+∥ψ(t)∥H2 ≤ C ∥ρ(t)∥L2 , (4.28) where C depends on ∥m∥L∞ 
+
+> T(H2)
+
+. Therefore, taking ζ = ρ(t) in (4.27) and noting (4.21), we have for all χ ∈ Vh,
+
+∥ρ(t)∥2 
+
+> L2
+
+= A1(m(t); ρ(t), ψ(t)) = A1(m(t); ρ(t), ψ(t) − χ)
+
+≤ β1 ∥ρ(t)∥H1 inf 
+
+> χ∈Vh
+
+∥ψ(t) − χ∥H1 ≤ Ch r+1 ∥v∥L∞  
+
+> T(Hr+1 )
+
+∥ρ(t)∥L2 ,19 
+
+where C depends on ∥m∥L∞ 
+
+> T(H2)
+
+, and in the last step we used (4.26), (2.11), and (4.28). This then implies (4.22). The proof of (4.23) follows in a similar manner. Next, we show (4.24) for v ∈ L∞ 
+
+> T
+
+(Hr+1 ) ∩ H1 
+
+> T
+
+(H2). For ease of presentation, we will omit the dependence of the functions on t. By using successively the coercivity of A1, the definition of ρ in (4.20), and the fact that Ph∂tΠhv = ∂tΠhv, with Ph being the L2 projection operator onto Vh, we obtain 
+
+μ1 ∥∂tρ∥2 
+
+> H1
+
+≤ A 1(m; ∂tρ, ∂ tρ) = A1 (m; ∂tρ, P h(∂tρ)) + A1 (m; ∂tρ, ∂ tρ − Ph(∂tρ)) = A1 (m; ∂tρ, P h(∂tρ)) + A1 (m; ∂tρ, ∂ tΠhv(t) − Ph∂tΠhv(t)) + A1 (m; ∂tρ, P h(∂tv) − ∂tv)= A1 (m; ∂tρ, P h(∂tρ)) + A1 (m; ∂tρ, P h(∂tv) − ∂tv) . (4.29) We will estimate each term on the last line of (4.29). To this end, noting (4.4) and differentiat-ing (4.21) with respect to t, we have for all ϕh ∈ Vh,
+
+A1(m; ∂tρ, ϕh) + 2 B1(m, ∂ tm; ρ, ϕh) + C1(∂tm; ρ, ϕh) = 0 . (4.30) Thus, for the first term on the right-hand side of (4.29), by the boundedness of B1, C1, and Ph we obtain 
+
+A1(m; ∂tρ, P h(∂tρ)) ≤ 2B1(m, ∂ tm; ρ, P h(∂tρ)) + C1(∂tm; ρ, P h(∂tρ)) 
+
+≤ C ∥ρ∥H1 ∥Ph(∂tρ)∥H1 ≤ Ch r ∥v∥L∞  
+
+> T(Hr+1 )
+
+∥∂tρ∥H1 , (4.31) where C depends on ∥m∥W 1,∞ 
+
+> T(H2)
+
+, and in the last step we also used (4.22) and (2.14). For the second term on the right-hand side of (4.29), by the boundedness of A1 and (2.15) we have 
+
+A1(m; ∂tρ, P h(∂tv) − ∂tv) ≤ C ∥∂tρ∥H1 ∥Ph(∂tv) − ∂tv∥H1 ≤ Ch r ∥∂tρ∥H1 , (4.32) where C depends on ∥m∥W 1,∞ 
+
+> T(Hr+1 )
+
+. The estimates (4.31) and (4.32), together with (4.29) imply 
+
+∥∂tρ(t)∥H1 ≤ C 1 + ∥v∥L∞ 
+
+> T(Hr+1 )
+
+hr. (4.33) To estimate ∥∂tρ∥L2 , we use duality argument as before. For each m(t) ∈ H2, let ψ(t) ∈ H2 
+
+> n
+
+satisfy 
+
+A1(m(t); ζ, ψ(t)) = ⟨∂tρ(t), ζ⟩ , ∀ζ ∈ H1. (4.34) The existence of ψ(t) is given by Lemma 4.6 (to be proven after the conclusion of this proof), and furthermore we have 
+
+∥ψ(t)∥H2 ≤ C ∥∂tρ(t)∥L2 , (4.35) where C depends on ∥m∥L∞ 
+
+> T(H2)
+
+. Taking ζ = ∂tρ(t) in (4.34), we have 
+
+A1(m(t); ∂tρ(t), ψ(t)) = ∥∂tρ(t)∥2 
+
+> L2
+
+.
+
+This equation and (4.30) yield for all ϕh ∈ Vh,
+
+∥∂tρ∥2 
+
+> L2
+
+= A1(m; ∂tρ, ψ − ϕh) − 2B1(m, ∂ tm; ρ, ϕh) − C 1(∂tm; ρ, ϕh)= A1(m; ∂tρ, ψ − ϕh) + 2 B1(m, ∂ tm; ρ, ψ − ϕh) − 2B1(m, ∂ tm; ρ, ψ)+ C1(∂tm; ρ, ψ − ϕh) − C 1(∂tm; ρ, ψ). (4.36) It remains to bound each term in the last expression using (4.9) and H¨ older inequality, resulting in 
+
+∥∂tρ∥2 
+
+> L2
+
+≤ C
+
+
+
+1 + ∥m∥2
+
+> H2
+
+
+
+∥∂tρ∥H1 ∥ψ − ϕh∥H1 + 2 ∥m∥L∞ ∥∂tm∥L∞ ∥ρ∥L2 ∥ψ − ϕh∥L2
+
++ 2 ∥m∥L∞ ∥∂tm∥L∞ ∥ρ∥L2 ∥ψ∥L2 + C ∥∂tm∥L∞ ∥ρ∥H1 ∥ψ − ϕh∥H1
+
++ C ∥∂tm∥W1,4 ∥ρ∥L2 ∥ψ∥H2 ,20 
+
+where in the last step we also used the Sobolev embedding and (4.13). We now choose ϕh = Phψ.Successively using (4.33), (2.15), and (4.22), we have 
+
+∥∂tρ(t)∥2 
+
+> L2
+
+≤ C 1 + ∥v∥L∞ 
+
+> T(Hr+1 )
+
+(hr+1 + hr+3 ) ∥ψ(t)∥H2
+
+≤ C 1 + ∥v∥L∞ 
+
+> T(Hr+1 )
+
+hr+1 ∥∂tρ(t)∥L2 , (4.37) where in the last step we used (4.35), and C depends on ∥m∥W 1,∞ 
+
+> T(Hr+1 )
+
+. This implies 
+
+∥∂tρ(t)∥L2 ≤ C 1 + ∥v∥L∞ 
+
+> T(Hr+1 )
+
+hr+1 .
+
+This inequality and (4.33) imply (4.24). Finally, we prove (4.25). By the coercivity of A2 in Lemma 4.3 and the definition of η, in the same manner as (4.29) we have 
+
+μ2 ∥∂tη∥2 
+
+> H1
+
+≤ A 2(m; ∂tη, ∂ tη) = A2 (m; ∂tη, P h(∂tη)) + A2 (m; ∂tη, P h(∂tv) − ∂tv) .
+
+By the same argument leading to (4.30) and (4.33), we have for all ψh ∈ Vh,
+
+A2(m; ∂tη, ψh) + 2 B2(m, ∂ tm; η, ψh) + C2(∂tm; η, ψh) = 0 . (4.38) and infer that 
+
+∥∂tη(t)∥H1 ≤ C 1 + ∥v∥L∞ 
+
+> T(Hr+1 )
+
+hr, (4.39) where C depends on ∥m∥W 1,∞ 
+
+> T(Hr+1 )
+
+. To bound ∥∂tη∥L2 , we again use duality. For each m(t) ∈ H2,let eψ(t) ∈ H2 
+
+> n
+
+satisfy 
+
+A2(m(t); ζ, eψ(t)) = ⟨∂tη(t), ζ⟩ , ∀ζ ∈ H1. (4.40) The existence of eψ(t) is given by Lemma 4.6, and furthermore we have 
+
+eψ(t) H2 ≤ C ∥∂tη(t)∥L2 , (4.41) where C depends on ∥m∥L∞ 
+
+> T(H2)
+
+. Taking ζ = ∂tη(t) in (4.40), we have 
+
+A2(m(t); ∂tη(t), eψ(t)) = ∥∂tη(t)∥2 
+
+> L2
+
+.
+
+As in (4.36), this equation and (4.38) yield for all ψh ∈ Vh,
+
+∥∂tη∥2 
+
+> L2
+
+= A2(m; ∂tη, eψ − ψh) + 2 B2(m, ∂ tm; η, eψ − ψh) − 2B2(m, ∂ tm; η, eψ)+ C2(∂tm; η, eψ − ψh) − C 2(∂tm; η, eψ).
+
+By (4.10), H¨ older inequality, and the Sobolev embedding, we obtain 
+
+∥∂tη∥2 
+
+> L2
+
+≤ C
+
+
+
+1 + ∥m∥2
+
+> H2
+
+
+
+∥∂tη∥H1 eψ − ψh H1 + 2 ∥m∥L∞ ∥∂tm∥L∞ ∥η∥H1 eψ − ψh H1
+
++ 2   ∥m∥W1,4 ∥∂tm∥L∞ + ∥m∥L∞ ∥∂tm∥W1,4
+
+ ∥η∥L2 eψ H2
+
++ C ∥∂tm∥L∞ ∥η∥L2 eψ − ψh L2 + C ∥∂tm∥L∞ ∥η∥L2 eψ L2 .
+
+We now choose χ = Ph eψ. By the same argument as in (4.37), we infer that 
+
+∥∂tη(t)∥2 
+
+> L2
+
+≤ C 1 + ∥v∥L∞ 
+
+> T(Hr+1 )
+
+hr+1 ∥∂tη(t)∥L2 ,
+
+where in the last step we used (4.41), and C depends on ∥m∥W 1,∞ 
+
+> T(Hr+1 )
+
+. This implies 
+
+∥∂tη(t)∥L2 ≤ C 1 + ∥v∥L∞ 
+
+> T(Hr+1 )
+
+hr+1 .
+
+This, together with (4.39), implies (4.25). The proof of this proposition will then be complete once we show the following regularity result in Lemma 4.6. □21 
+
+Lemma 4.6. Assume that ( m, s) is a strong solution of (1.1) with initial data satisfying (4.17). For any φ ∈ L2, eφ ∈ L2, and for each t ∈ [0 , T ], there exists ψ(t) ∈ H2 
+
+> n
+
+and eψ(t) ∈ H2 
+
+> n
+
+such that 
+
+A1(m(t); ζ, ψ(t)) = ⟨φ, ζ⟩ , ∀ζ ∈ H1, (4.42) 
+
+A2(m(t); eζ, eψ(t)) = 
+
+Deφ, eζ
+
+E
+
+, ∀ eζ ∈ H1. (4.43) Moreover, there exist constants C1 and C2 such that 
+
+∥ψ(t)∥H2 ≤ C1 ∥φ∥L2 , (4.44) 
+
+eψ(t) H2 ≤ C2 ∥eφ∥L2 , (4.45) where the constants C1, C 2 depend on Ω, T , and ∥m∥L∞ 
+
+> T(H2)
+
+.
+
+Proof. Let ( m, s) be a given strong solution with initial data satisfying (4.17). The existence of ψ(t) ∈ H1 satisfying (4.42) and of eψ(t) ∈ H1 satisfying (4.43) follows from the Lax–Milgram theorem, noting the coercivity estimates (4.11) and (4.12), the boundedness of A1 and A2 in (4.9) and (4.10), as well as the regularity of the solution m. Taking ζ = ψ(t) in (4.42) and using the coercivity of A1, we have 
+
+μ1 ∥ψ(t)∥2 
+
+> H1
+
+≤ A 1(m(t); ψ(t), ψ(t)) = ⟨φ, ψ(t)⟩ ≤ ∥ φ∥L2 ∥ψ(t)∥L2 ,
+
+which implies 
+
+∥ψ(t)∥H1 ≤ C ∥φ∥L2 . (4.46) Similarly, making use of the coercivity of A2 and (3.19), we also have 
+
+eψ(t) H1 ≤ C ∥eφ∥L2 . (4.47) Next, we establish (4.44); the proof of (4.45) follows in a similar manner. To this end, we carry out a formal energy estimate, which can be justified rigorously through the standard finite-dimensional Galerkin approximation based on the eigenfunctions of the Neumann Laplacian. Taking ζ = −∆ψ,integrating by parts as necessary, and applying H¨ older’s inequality together with (4.14), we obtain 
+
+D∗ ∥∆ψ∥2 
+
+> L2
+
++ D∗ ∥∇ ψ∥2 
+
+> L2
+
+≤ |B 1(m, m; ∆ ψ, ψ)| + |C 1(m; ∆ ψ, ψ)| + |⟨ φ, ∆ψ⟩| ≤ D∗ ∥m∥2 
+
+> L∞
+
+∥∆ψ∥L2 ∥ψ∥L2
+
++ C ∥m∥W1,4 ∥ψ∥W1,4 ∥∆ψ∥L2 + ∥φ∥L2 ∥∆ψ∥L2
+
+≤ C ∥ψ∥2 
+
+> H1
+
++ α
+
+2 ∥∆ψ∥2 
+
+> L2
+
++ ∥φ∥2 
+
+> L2
+
+,
+
+where we in the last step we also used the Gagliardo–Nirenberg inequality, Sobolev embedding, and Young’s inequality. This, together with (4.46) and the elliptic regularity result [23], implies (4.44). This completes the proof of Lemma 4.6 (thus also of Proposition 4.5). □
+
+Next, we also need the following technical result on the stability of the elliptic projections defined previously. To show this lemma, we need to assume (2.10). 
+
+Lemma 4.7. Let ( m, s) be a strong solution of (1.1) and let Π h and Λ h be the projection operators defined by (4.18) and (4.19), respectively. Then for any v ∈ L∞ 
+
+> T
+
+(H2) and t ∈ [0 , T ], 
+
+∥Πhv(t)∥L∞ ≤ CΠ ∥v∥L∞  
+
+> T(H2)
+
+, (4.48) where CΠ depends on T and ∥m∥L∞ 
+
+> T(H2)
+
+, but is independent of h or v.Now, suppose that the polynomial degree r in Vh satisfies (2.10). Then for all v ∈ L∞ 
+
+> T
+
+(H3) and 
+
+t ∈ [0 , T ], 
+
+∥Πhv(t)∥W1,∞ ≤ C ∥v∥L∞  
+
+> T(H3)
+
+, (4.49) 22 
+
+∥Λhv(t)∥W1,∞ ≤ C ∥v∥L∞  
+
+> T(H3)
+
+. (4.50) The constant C depends on T and ∥m∥L∞ 
+
+> T(H2)
+
+, but is independent of h or v.
+
+Proof. First, we show (4.48). Recall that ρ and η are defined by (4.20). By the triangle inequality, the inverse estimate (2.17), (4.22), and the stability of the finite element projector Ph in (2.13), we obtain 
+
+∥Πhv(t)∥L∞ ≤ ∥ Πhv(t) − Ph(v(t)) ∥L∞ + ∥Ph(v(t)) ∥L∞
+
+≤ Cℓ h
+
+  ∥ρ(t)∥H1 + ∥Ph(v(t)) − v(t)∥H1
+
+ + ∥v(t)∥L∞
+
+≤ Cℓ h
+
+ Ch ∥v∥L∞ 
+
+> T(H2)
+
+ + C ∥v∥L∞ 
+
+> T(L∞)
+
+≤ C(1 + hrℓh) ∥v∥L∞  
+
+> T(H2)
+
+,
+
+where C depends on ∥m∥L∞ 
+
+> T(H2)
+
+, and ℓh is defined in (2.18), thus showing (4.48). Next, we prove (4.49). By a similar argument, we have 
+
+∥Πhv(t)∥W1,∞ ≤ ∥ Πhv(t) − Ph(v(t)) ∥W1,∞ + ∥Ph(v(t)) ∥W1,∞
+
+≤ Ch −d/ 2  ∥ρ(t)∥H1 + ∥Ph(v(t)) − v(t)∥H1
+
+ + C ∥v(t)∥W1,∞
+
+≤ C(1 + hr−d/ 2) ∥v∥L∞  
+
+> T(H3)
+
+.
+
+where C depends on ∥m∥L∞  
+
+> T(H2)
+
+and we used the embedding H3 ,→ W1,∞. Inequality (4.49) follows by noting the fact that r ≥ d/ 2 by the assumption (2.10), while inequality (4.50) can be shown similarly. This completes the proof of the lemma. □
+
+We now proceed with the analysis of numerical scheme proposed in Algorithm (4.1). To this end, the approximation errors are decomposed as: 
+
+mnh − mn = ( mnh − Πhmn) + (Π hmn − mn) =: θn + ρn, (4.51) 
+
+snh − sn = ( snh − Λhsn) + (Λ hsn − sn) =: ξn + ηn, (4.52) where Π hmn and Λ hsn are, respectively, the A1-elliptic projection of the solution m(tn) and the 
+
+A2-elliptic projection of the solution s(tn) introduced in Definition 4.4. The error analysis proceeds by induction, showing the existence of solution and then the error estimate alternatingly. We outline the general strategy now. First, we show a criterion for the unique existence of ( mnh, snh) in terms of the numerical solution at the previous time-step, namely: 
+
+mn−1 
+
+> h
+> 2
+> L∞
+
+< D ∗/(2 βD ∗). (4.53) Next, we prove that if ( mjh, sjh) exists for all j ≤ n for some n ≤ N , then these discrete solutions necessarily satisfy a certain stability property for all j ≤ n. Under the assumption that the criterion (4.53) holds (and thus ( mnh, snh) exists), we derive auxiliary error estimates for 
+
+mnh −Πhmn and snh −Λhsn. These auxiliary error estimates are then used to prove, under a suitable restriction on the time-step size, that ∥mnh∥2 
+
+> L∞
+
+< D ∗/(2 βD ∗). This guarantees the unique existence of ( mn+1  
+
+> h
+
+, sn+1  
+
+> h
+
+). Proceeding inductively, we thus establish the unique existence of ( mjh, sjh) along with the corresponding auxiliary error estimates for all j ≤ N . Finally, these auxiliary estimates, together with the error decompositions in (4.51) and (4.52), and the projection error estimates in Proposition 4.5 yield the desired full error estimates. We now proceed to implement this strategy, starting with the following proposition. 
+
+Proposition 4.8. Let n ≥ 1 and ( mn−1 
+
+> h
+
+, sn−1 
+
+> h
+
+) ∈ Vh × Vh be given such that condition (4.53) holds. Then there exists a unique solution ( mnh, snh) ∈ Vh × Vh to the numerical scheme at time step n, as described in Algorithm 4.1. 23 
+
+Proof. Given ( mn−1 
+
+> h
+
+, sn−1 
+
+> h
+
+) and jn, our numerical scheme is seeking for ( v, w) ∈ Vh × Vh which satisfies 
+
+⟨v, ϕh⟩ + kA1(mn−1 
+
+> h
+
+; v, ϕh) + kL1(sn−1 
+
+> h
+
+; v, ϕh) = mn−1 
+
+> h
+
+, ϕh , ∀ϕh ∈ Vh,
+
+⟨w, ψh⟩ + kA2(mn−1 
+
+> h
+
+; w, ψh) = sn−1 
+
+> h
+
+, ψh − kL2(jn; mn−1 
+
+> h
+
+, ψh), ∀ψh ∈ Vh.
+
+It is clear that for any v ∈ Vh,
+
+⟨v, v⟩ + kA1(mn−1 
+
+> h
+
+; v, v) + kL1(sn−1 
+
+> h
+
+; v, v) ≥ ∥ v∥2 
+
+> H1
+
+.
+
+Moreover, if (4.53) holds, then for any w ∈ Vh,
+
+⟨w, w⟩ + kA2(mn−1 
+
+> h
+
+; w, w) ≥ (1 + kD ∗) ∥w∥2 
+
+> L2
+
++ k(D∗ − βD ∗δ) ∥∇ w∥2 
+
+> L2
+
+≳ ∥w∥2 
+
+> H1
+
+.
+
+Boundedness of the bilinear forms is a consequence of (4.9) and (4.10). The existence of a unique solution ( mnh, snh) ∈ Vh × Vh then follows from the Lax–Milgram theorem. □
+
+Assuming the existence of ( mjh, sjh) for all j ≤ n, the scheme described in Algorithm 4.1 enjoys the following stability property. 
+
+Lemma 4.9. Suppose that for some n ≤ N ,max  
+
+> 1≤j≤n
+
+mj−1 
+
+> h
+> 2
+> L∞
+
+< D ∗/(2 βD ∗), (4.54) and thus ( mjh, sjh) exists for all j ≤ n (by Proposition 4.8). Then for any j ≤ n,
+
+mjh 
+
+> 2
+> L2
+
++ sjh 
+
+> 2
+> L2
+
++ k
+
+> j
+
+X
+
+> i=1
+
+
+
+mih 
+
+> 2
+> H1
+
++ sih
+
+> 2
+> H1
+
+
+
+≤ CT , (4.55) where CT is a constant depending on T , but is independent of n, j, h, or k.
+
+Proof. We replace the index n with j, and set ϕh = mjh and ψh = sjh in (4.7) and (4.8), respectively, then add the resulting equations. Noting the elementary vector identities (a × b) · a = 0 and 2( a − b) · a = |a|2 − | b|2 + |a − b|2 ,
+
+and applying (4.11) and (4.12), we obtain after discarding some non-negative terms, that for any 
+
+j ≤ n,12k
+
+
+
+mjh 
+
+> 2
+> L2
+
+− mj−1
+
+> h
+> 2
+> L2
+
+
+
++ 12k
+
+
+
+sjh 
+
+> 2
+> L2
+
+− sj−1
+
+> h
+> 2
+> L2
+
+
+
++ μ1 mjh 
+
+> 2
+> H1
+
++ μ2 sjh
+
+> 2
+> H1
+
+≤ L2(jj ; mj−1 
+
+> h
+
+, sjh)
+
+≤ C jj 
+
+> L∞
+
+mj−1  
+
+> hL2
+
+sjh H1 ≤ C mj−1 
+
+> h
+> 2
+> L2
+
++ μ2
+
+2 sjh 
+
+> 2
+> H1
+
+.
+
+In the last line, we used (4.16) and Young’s inequality. The required result then follows by the discrete Gronwall lemma. □
+
+Some inequalities for nonlinear terms which are needed to derive auxiliary error estimates will be shown next. 
+
+Lemma 4.10. Suppose that ( m, s) is a strong solution to (1.1) satisfying the regularity assump-tion (4.3), and let ( mnh, snh) be the sequence defined by Algorithm 4.1. Let the bilinear forms be those introduced in Definition 4.2. Given ϵ > 0 and χ ∈ H1, the following estimates hold: 
+
+B1(mn−1 
+
+> h
+
+, mn−1 
+
+> h
+
+; Π hmn, χ) − B 1(mn, mn; Π hmn, χ)
+
+≤ C
+
+
+
+1 + mn−1
+
+> h
+> 2
+> L4
+
+  
+
+θn−1 2 
+
+> L2
+
++ h2( r+1) + k2
+
++ ϵ ∥χ∥2 
+
+> H1
+
+, (4.56) 24 
+
+C1(mn−1 
+
+> h
+
+; Π hmn, χ) − C 1(mn; Π hmn, χ)
+
+≤ C
+
+
+
+1 + mn−1
+
+> h
+> 2
+> L4
+
+  
+
+θn−1 2 
+
+> L2
+
++ h2( r+1) + k2
+
++ ϵ ∥χ∥2 
+
+> H1
+
+, (4.57) 
+
+B2(mn−1 
+
+> h
+
+, mn−1 
+
+> h
+
+; Λ hsn, χ) − B 2(mn, mn; Λ hsn, χ)
+
+≤ C
+
+
+
+1 + mn−1
+
+> h
+> 2
+> L∞
+
+  
+
+θn−1 2 
+
+> L2
+
++ h2( r+1) + k2
+
++ ϵ ∥χ∥2 
+
+> H1
+
+, (4.58) 
+
+C2(mn−1 
+
+> h
+
+; Λ hsn, χ) − C 2(mn; Λ hsn, χ)
+
+≤ C
+
+
+
+θn−1 2 
+
+> L2
+
++ h2( r+1) + k2
+
++ ϵ ∥χ∥2 
+
+> L2
+
+. (4.59) Furthermore, with θn and ξn as defined in (4.51) and (4.52), respectively, we also have 
+
+L1(sn−1 
+
+> h
+
+; mnh, θn) − L 1(sn; mn, θn) ≤ C
+
+
+
+1 + sn−1
+
+> h
+> 2
+> L4
+
+
+
+(h2( r+1) + k2)+ C ξn−1 2 
+
+> L2
+
++ ϵ ∥θn∥2 
+
+> H1
+
+, (4.60) 
+
+L2(jn; mn−1 
+
+> h
+
+, ξn) − L 2(jn; mn, ξn) ≤ C θn−1 2 
+
+> L2
+
++ C(h2( r+1) + k2) + ϵ ∥ξn∥2 
+
+> H1
+
+, (4.61) where C depends on ϵ, but is independent of n, h, or k.
+
+Proof. We will refer to the following identities several times in the proof: 
+
+mn−1 
+
+> h
+
+− mn = θn−1 + ρn−1 − k · dtmn, (4.62) 
+
+sn−1 
+
+> h
+
+− sn = ξn−1 + ηn−1 − k · dtsn. (4.63) First, we prove (4.56). By H¨ older’s inequality, (4.62), and (4.22), we have 
+
+|mn−1 
+
+> h
+
+|2 − | mn|2 
+
+> L4/3
+
+= (mn−1 
+
+> h
+
++ mn) · (mn−1 
+
+> h
+
+− mn) L4/3
+
+≤ mn−1 
+
+> h
+
++ mn 
+
+> L4
+
+θn−1 + ρn−1 − k · dtmn
+
+> L2
+
+≤ C  1 + mn−1 
+
+> hL4
+
+   θn−1 
+
+> L2
+
++ hr+1 + k . (4.64) We then obtain for any ϵ > 0, 
+
+B1(mn−1 
+
+> h
+
+, mn−1 
+
+> h
+
+; Π hmn, χ) − B 1(mn, mn; Π hmn, χ)
+
+= (|mn−1 
+
+> h
+
+|2 − | mn|2)Π hmn, χ
+
+≤ |mn−1 
+
+> h
+
+|2 − | mn|2 
+
+> L4/3
+
+∥Πhmn∥L∞ ∥χ∥L4
+
+≤ C
+
+
+
+1 + mn−1
+
+> h
+> 2
+> L4
+
+  
+
+θn−1 2 
+
+> L2
+
++ h2( r+1) + k2
+
++ ϵ ∥χ∥2 
+
+> H1
+
+,
+
+where in the last step we used (4.64), Young’s inequality, and Lemma 4.7 (noting the Sobolev embedding H1 ,→ L4). This proves (4.56). Next, we prove (4.57). By (4.62), Young’s inequality, and Lemma 4.7, we have for any ϵ > 0, 
+
+C1(mn−1 
+
+> h
+
+; Π hmn, χ) − C 1(mn; Π hmn, χ) ≤ (mn−1 
+
+> h
+
+− mn) × ∇ Πhmn, ∇χ
+
+≤ C mn−1 
+
+> h
+
+− mn 
+
+> L2
+
+∥Πhmn∥W1,∞ ∥χ∥H1
+
+≤ C(h2( r+1) + k2) + C θn−1 2 
+
+> L2
+
++ ϵ ∥χ∥2 
+
+> H1
+
+,
+
+where in the last step we used (4.22). Inequality (4.58) can be estimated by similar argument as follows. 
+
+B2(mn−1 
+
+> h
+
+, mn−1 
+
+> h
+
+; Λ hsn, χ) − B 2(mn, mn; Λ hsn, χ)
+
+≤ B2(mn−1 
+
+> h
+
+− mn, mn−1 
+
+> h
+
+; Λ hsn, χ) + B2(mn, mn−1 
+
+> h
+
+− mn; Λ hsn, χ)
+
+≤ C mn−1 
+
+> h
+
+− mn 
+
+> L2
+
+mn−1  
+
+> hL∞
+
+∥Λhsn∥W1,∞ ∥χ∥H1
+
++ C ∥mn∥L∞ mn−1 
+
+> h
+
+− mn 
+
+> L2
+
+∥Λhsn∥W1,∞ ∥χ∥H125 
+
+≤ C
+
+
+
+1 + mn−1
+
+> h
+> 2
+> L∞
+
+  
+
+θn−1 2 
+
+> L2
+
++ h2( r+1) + k2
+
++ ϵ ∥χ∥2 
+
+> H1
+
+.
+
+The proof of (4.59) proceeds in a similar way as that of (4.57). By similar argument, noting (4.63) and the fact that ( a × b) · a = 0, we have 
+
+L1(sn−1 
+
+> h
+
+; mnh, θn) − L 1(sn; mn, θn)
+
+≤ L1(sn−1 
+
+> h
+
+; mnh − mn, θn) + L1(sn−1 
+
+> h
+
+− sn; mn, θn)
+
+= ρn × sn−1 
+
+> h
+
+, θn + mn × (sn−1 
+
+> h
+
+− sn), θn
+
+≤ ∥ ρn∥L2 sn−1  
+
+> hL4
+
+∥θn∥L4 + ∥mn∥L∞ sn−1 
+
+> h
+
+− sn 
+
+> L2
+
+∥θn∥L2
+
+≤ C
+
+
+
+1 + sn−1
+
+> h
+> 2
+> L4
+
+
+
+(h2( r+1) + k2) + C ξn−1 2 
+
+> L2
+
++ ϵ ∥θn∥2 
+
+> H1
+
+,
+
+which shows (4.60). Finally, we show (4.61). By (4.16), H¨ older’s and Young’s inequalities, not-ing (4.22) and (4.62), we obtain for any ϵ > 0, 
+
+L2(jn; mn−1 
+
+> h
+
+, ξn) − L 2(jn; mn, ξn) ≤ ∥ jn∥L∞ mn−1 
+
+> h
+
+− mn 
+
+> L2
+
+∥ξn∥H1
+
+≤ C θn−1 2 
+
+> L2
+
++ C(h2( r+1) + k2) + ϵ ∥ξn∥2 
+
+> H1
+
+,
+
+which shows (4.61). This completes the proof of the lemma. □
+
+We are now ready to show auxiliary error estimates for the numerical scheme proposed in Algo-rithm 4.1. In the proof, we use the following inequalities: 
+
+∥dtρn∥L2 = 1
+
+k
+
+Z tn
+
+> tn−1
+
+∂tρ(t) d t
+
+> L2
+
+≤ Ch r+1 , (4.65) 
+
+∥dtmn − ∂tmn∥L2 = 12k
+
+Z tn
+
+> tn−1
+
+(t − tn−1) ∂2 
+
+> t
+
+m(t) d t
+
+> L2
+
+≤ Ck. (4.66) Similar estimates hold for ∥dtηn∥L2 and ∥dtsn − ∂tsn∥L2 .
+
+Proposition 4.11. Let n ≤ N , and let θn and ξn be as defined in (4.51) and (4.52), respectively. Assume that (4.54) holds and write δ := D∗/(2 βD ∗). Then 
+
+∥θn∥2 
+
+> L2
+
++ ∥ξn∥2 
+
+> L2
+
++ k
+
+> n
+
+X
+
+> j=1
+
+
+
+∇θj 2 
+
+> L2
+
++ ∇ξj 2
+
+> L2
+
+
+
+≤ eCe eC(1+ δ)T (h2( r+1) + k2), (4.67) where eC is a constant independent of n, h or k.
+
+Proof. Noting the definitions of θn and ρn, the scheme (4.7), and the weak formulation (4.5), we have for all χ ∈ Vh,
+
+⟨dtθn, χ⟩ + A1(mn−1 
+
+> h
+
+; θn, χ)= ⟨dtmnh, χ⟩ + A1(mn−1 
+
+> h
+
+; mnh, χ) − ⟨ dtΠhmn, χ⟩ − A 1(mn−1 
+
+> h
+
+; Π hmn, χ)= L1(sn−1 
+
+> h
+
+; mnh, χ) − ⟨ dtΠhmn − ∂tmn, χ⟩ − ⟨ ∂tmn, χ⟩−  A1(mn−1 
+
+> h
+
+; Π hmn, χ) − A 1(mn; Π hmn, χ) − A 1(mn; Π hmn, χ)=  L1(sn; mn, χ) − L 1(sn−1 
+
+> h
+
+; mnh, χ) − ⟨ dtρn, χ⟩ − ⟨ dtmn − ∂tmn, χ⟩−  A1(mn−1 
+
+> h
+
+; Π hmn, χ) − A 1(mn; Π hmn, χ) . (4.68) We now take χ = θn in (4.68). Applying (4.11), Young’s inequality, (4.22), (4.24), (4.65), (4.66), and Lemma 4.10, we have 12k
+
+
+
+∥θn∥2 
+
+> L2
+
+− θn−1 2
+
+> L2
+
+
+
++ 12k θn − θn−1 2 
+
+> L2
+
++ μ1 ∥θn∥2
+
+> H126
+
+≤ L1(sn; mn, θn) − L 1(sn−1 
+
+> h
+
+; mnh, θn) + |⟨ dtρn, θn⟩| 
+
++ |⟨ dtmn − ∂tmn, θn⟩| + A1(mn−1 
+
+> h
+
+; Π hmn, θn) − A 1(mn; Π hmn, θn)
+
+≤ C
+
+
+
+1 + mn−1
+
+> h
+> 2
+> L4
+
+  
+
+θn−1 2 
+
+> L2
+
++ h2( r+1) + k2
+
++ C
+
+
+
+1 + sn−1
+
+> h
+> 2
+> L4
+
+
+
+(h2( r+1) + k2)+ C ξn−1 2 
+
+> L2
+
++ ϵ ∥θn∥2 
+
+> H1
+
+. (4.69) Analogous to (4.68), noting the definitions of ξn and ηn, we obtain 
+
+⟨dtξn, χ⟩ + A2(mn−1 
+
+> h
+
+; ξn, χ)=  L2(jn; mn, χ) − L 2(jn; mn−1 
+
+> h
+
+, χ) − ⟨ dtηn, χ⟩ − ⟨ dtsn − ∂tsn, χ⟩−  A2(mn−1 
+
+> h
+
+; Λ hsn, χ) − A 2(mn; Λ hsn, χ) .
+
+We apply the same argument as in (4.69). Taking χ = ξn and using (4.12), noting the assump-tion (4.54), we obtain 12k ∥ξn∥2 
+
+> L2
+
++ μ2 ∥ξn∥2
+
+> H1
+
+≤ L2(jn; mn, ξn) − L 1(jn; mn−1 
+
+> h
+
+, ξn) + |⟨ dtηn, ξn⟩| 
+
++ |⟨ dtsn − ∂tsn, ξn⟩| + A2(mn−1 
+
+> h
+
+; Λ hsn, ξn) − A 2(mn; Λ hsn, ξn)
+
+≤ C
+
+
+
+1 + mn−1
+
+> h
+> 2
+> L∞
+
+  
+
+θn−1 2 
+
+> L2
+
++ h2( r+1) + k2
+
++ ϵ ∥ξn∥2 
+
+> H1
+
+. (4.70) Adding (4.69) and (4.70) yields 12k
+
+
+
+∥θn∥2 
+
+> L2
+
+− θn−1 2
+
+> L2
+
+
+
++ 12k
+
+
+
+∥ξn∥2 
+
+> L2
+
+− ξn−1 2
+
+> L2
+
+
+
++ μ1 ∥θn∥2 
+
+> H1
+
++ μ2 ∥ξn∥2
+
+> H1
+
+≤ C
+
+
+
+1 + sn−1
+
+> h
+> 2
+> L4
+
+
+
+(h2( r+1) + k2) + C
+
+
+
+1 + mn−1
+
+> h
+> 2
+> L∞
+
+  
+
+θn−1 2 
+
+> L2
+
++ h2( r+1) + k2
+
++ C ξn−1 2 
+
+> L2
+
++ ϵ ∥θn∥2 
+
+> H1
+
++ ϵ ∥ξn∥2
+
+> H1
+
+≤ C
+
+
+
+1 + δ + sn−1
+
+> h
+> 2
+> L4
+
+  
+
+h2( r+1) + k2
+
++ C(1 + δ) θn−1 2 
+
+> L2
+
++ C ξn−1 2
+
+> L2
+
++ ϵ ∥θn∥2 
+
+> H1
+
++ ϵ ∥ξn∥2 
+
+> H1
+
+,
+
+where in the last step we used the assumption (4.54). Choosing ϵ > 0 sufficiently small, summing over m ∈ { 1, 2, . . . , n }, and applying the discrete Gronwall lemma, we obtain 
+
+∥θn∥2 
+
+> L2
+
++ ∥ξn∥2 
+
+> L2
+
++ k
+
+> n
+
+X
+
+> j=1
+
+
+
+∇θj 2 
+
+> L2
+
++ ∇ξj 2
+
+> L2
+
+
+
+≤ C
+
+ θ0 2 
+
+> L2
+
++ ξ0 2 
+
+> L2
+
++ k
+
+> n
+
+X
+
+> j=1
+
+
+
+1 + δ + sj−1
+
+> h
+> 2
+> H1
+
+
+
+(h2( r+1) + k2)
+
+ exp ( C(1 + δ)T )
+
+≤ Ce C(1+ δ)T (h2( r+1) + k2),
+
+where we used the Sobolev embedding H1 ,→ L4 and the stability estimate (4.55). In the last step, we also used the fact that by the triangle inequality, (2.15), and (4.22), 12
+
+
+
+θ0 2 
+
+> L2
+
++ ξ0 2
+
+> L2
+
+
+
+≤ ∥ Phm0 − m0∥2 
+
+> L2
+
++ m0 − Πhm0 2 
+
+> L2
+
++ ∥Phs0 − s0∥2 
+
+> L2
+
++ s0 − Πhs0 2
+
+> L2
+
+≤ Ch 2( r+1) .
+
+This completes the proof of the theorem. □
+
+Finally, we now turn to the proof of the main theorem. 27 
+
+Theorem 4.12. Let n ≤ N . Let ( m, s) be a strong solution to the problem (1.1) with regularity given by (4.3). Suppose that the initial data (or β) is sufficiently small such that 
+
+∥m∥2  
+
+> L∞
+> T(H2)
+
+≤ D∗
+
+18 C2ΠβD ∗ and m0 
+
+> h
+> 2
+> L∞
+
+≤ D∗
+
+2βD ∗ . (4.71) Assume further that h and k are sufficiently small such that k = O(h−d/ 2). Then the scheme defined by Algorithm 4.1 is well-posed and stable (in the sense of Lemma 4.9). Furthermore, the following error estimates hold: 
+
+∥mnh − m(tn)∥2 
+
+> L2
+
++ ∥snh − s(tn)∥2 
+
+> L2
+
+≤ C
+
+
+
+h2( r+1) + k2
+
+,k
+
+> n
+
+X
+
+> j=1
+
+
+
+∇mjh − ∇ m(tj ) 2 
+
+> L2
+
++ ∇sjh − ∇ s(tj ) 2
+
+> L2
+
+
+
+≤ C  h2r + k2 , (4.72) where C depends on T , but is independent of n, h or k.
+
+Proof. Let δ := D∗/(2 βD ∗). We will prove the theorem by induction. Firstly, if (4.71) holds, then a unique solution ( m1
+
+> h
+
+, s1
+
+> h
+
+) to the numerical scheme exists (by Proposition 4.8), satisfying the auxiliary error estimate (4.67) for n = 1. By (4.22) and (4.23), together with (4.67) and the triangle inequality, we then have (4.72) for n = 1. For the inductive step, suppose that for some n ≤ N ,max  
+
+> 0≤j≤n−1
+
+mjh 
+
+> 2
+> L∞
+
+≤ δ. 
+
+Under this assumption, we will show that the conclusions of the theorem hold at time step n and 
+
+∥mnh∥2 
+
+> L∞
+
+≤ δ, thus completing the induction. Indeed, the existence of a unique solution ( mnh, snh)follows from Proposition 4.8. The auxiliary error estimate (4.67) also holds. Therefore, by (4.22), (4.23), and the triangle inequality, we obtain (4.72). Furthermore, by the definition of θn, the triangle inequality, the inverse estimate (2.16), the stability estimate (4.48), and the auxiliary error estimate (4.67), 
+
+∥mnh∥L∞ ≤ ∥ θn∥L∞ + ∥Πhmn∥L∞
+
+≤ Cinv h− d 
+
+> 2
+
+∥θn∥L2 + CΠ ∥m∥L∞ 
+
+> T(H2)
+
+≤
+
+
+
+Cinv h− d
+
+> 2
+
+ eCe eC(1+ δ)T  hr+1 + k + CΠ ∥m∥L∞ 
+
+> T(H2)
+
+≤ Cinv eCe eC(1+ δ)T hr+1 − d 
+
+> 2
+
++ Cinv eCe eC(1+ δ)T kh − d 
+
+> 2
+
++ CΠ ∥m∥L∞  
+
+> T(H2)
+
+.
+
+Suppose that h and k are sufficiently small (noting (2.10)) such that 
+
+hr+1 − d 
+
+> 2
+
+≤ δ 12
+
+3Cinv eCe eC(1+ δ)T and kh − d 
+
+> 2
+
+≤ δ 12
+
+3Cinv eCe eC(1+ δ)T .
+
+Combining this with the first inequality in assumption (4.71), we obtain ∥mnh∥L∞ ≤ δ 12 . This concludes the induction step, thus completing proof of the theorem. □
+
+We note that condition (4.71) can be ensured by choosing sufficiently small initial data ( m0, s0)or a small β, in view of estimate (3.9), as well as our choice of m0 
+
+> h
+
+and the stability property (2.13). 5. Numerical experiments 
+
+We perform some numerical simulations for the numerical scheme in Algorithm 4.1 using the open-source package FEniCS . The results are presented in this section. Since the exact solution of the equation is not known, we use extrapolation to verify the order of convergence experimentally. 28 
+
+To this end, let ( mnh, snh) be the finite element solution with spatial step size h and time-step size 
+
+k = ⌊T /n ⌋. We define the extrapolated spatial order of convergence 
+
+h-rate( ·) := log 2
+
+ max n ∥e2h(·)∥L2
+
+max n ∥eh(·)∥L2
+
+
+
+,
+
+where eh(m) := mnh − mnh/ 2 and eh(s) := snh − snh/ 2. Taking the time-step size k to be very small, we expect the error in the numerical scheme to be dominated by that due to spatial discretisation. 5.1. Simulation 1 (disk magnet, above the Curie temperature). Let Ω be a unit disk. We take k = 1 .0 × 10 −7. The coefficients in (1.1) are γ = 2 .3 × 10 6, α = 1 .0 × 10 5, γ ′ = 3 .0 × 10 −3, α ′ =1.0 × 10 −6, κ = 1 .0 × 10 −9, μ = 1 .0 × 10 4, D 0 = 1 .0 × 10 −2, τ sf = 1 .0 × 10 −7, τ J = 5 × 10 −8, β =0.1, β ′ = 1 .0 × 10 −5, which are of typical order of magnitude (in SI units) for a micromagnetic simulation of a ferromagnet [2]. The current density is given by j = (0 , 2.0 × 10 8)⊤. The initial magnetisation vector m0 and spin vector s0 is given by 
+
+m0(x, y ) =   − 0.1y, 0.1x, 0.1(1 − x2 − y2),
+
+s0(x, y ) =  0.1y, −0.1x, −0.1(1 − x2 − y2).
+
+Snapshots of the magnetisation vector field m and the spin accumulation vector field s at selected times are shown in Figure 1 and Figure 2, respectively. The colours indicate the relative magnitude of the vectors. Plots of eh against 1 /h are displayed in Figure 3a and Figure 3b, which show the expected order of convergence. The local magnetisation vector field m is observed to precess regularly around both the effective field and the spin accumulation field. Over a longer time scale, the magnitude of m is expected to decay to zero, as predicted by (3.1). The spin accumulation field s also appears to decay to zero, as suggested by (3.4), seemingly at a faster rate. 5.2. Simulation 2 (square magnet, above the Curie temperature). Let Ω = [ −1, 1] ×[−1, 1]. We take k = 1 .0 × 10 −9. The material coefficients are taken to be the same as in Simulation 1. The current density is given by j = (0 , 1.0 × 10 7)⊤. The initial magnetisation vector m0 and spin vector s0 is given by 
+
+m0(x, y ) =   − 0.1y, 0.1x, 0.1 sin(2 πx ),
+
+s0(x, y ) =  0.1x, −0.1y, 0.1xy .
+
+Snapshots of the magnetisation vector field m and the spin accumulation vector field s at selected times are shown in Figure 4 and Figure 5, respectively. The colours indicate the relative magnitude of the vectors. Plots of eh against 1 /h are given in Figure 6a and Figure 6b, which show the expected order of convergence. The spin accumulation field and the effective field both induce torques on m. The magnitudes of m and s are observed to decay to zero in this simulation as well. 5.3. Simulation 3 (below the Curie temperature). At moderate temperatures below the Curie temperature, the Ginzburg–Landau theory dictates that μ < 0. In the literature, equation (1.1a) with γ′ = 0 is also known as the Landau–Lifshitz–Baryakhtar equation in the limiting case of vanishing higher-order damping term [7, 43, 45]. Our numerical scheme and its error analysis also applies to this case with minor modifications. Let Ω = [ −1, 1] × [−1, 1]. We take k = 1 .0 × 10 −9. The coefficients in (1.1) are now taken to be 
+
+γ = 2 .0 × 10 6, α = 2 .0 × 10 5, γ ′ = 1 .0 × 10 −3, α ′ = 1 .2 × 10 −6, κ = 1 .0 × 10 −9, μ = −1.0 × 10 4, D 0 =2.0 × 10 −2, τ sf = 2 .0 × 10 −7, τ J = 1 .0 × 10 −7, β = 0 .2, β ′ = 1 .0 × 10 −5. The current density is given by j = (1 .0 × 10 6, 0) ⊤. The initial magnetisation vector m0 and spin vector s0 is given by 
+
+m0(x, y ) =  0.2 sin(2 πy ), 0.2 sin(2 πx ), 0.05 ,29 
+
+s0(x, y ) =  0.1 cos(2 πx ), −0.1 cos( πx ), 0.1xy .
+
+Snapshots of the magnetisation vector field m and the spin accumulation vector field s at selected times are shown in Figure 7 and Figure 8, respectively. The colours indicate the relative magnitude of the vectors. Plots of eh against 1 /h are displayed in Figure 9a and Figure 9b, which show the expected order of convergence. In this moderate temperature regime, Figure 7 appears to show varying degrees of torque and precession in the local magnetisation vectors. However, the magnitude of m does not decay to zero, consistent with the observations in [40, 41]; in the present case, the additional torque induces nonuniformity in the magnetisation. Notably, Figure 8 qualitatively indicates that the magnitude of the spin accumulation s still decays to zero. 6. Conclusion 
+
+We have shown the existence and uniqueness of global solution to the spin-diffusion Landau– Lifshitz–Bloch equation, which is a system of coupled quasilinear PDEs modelling the evolution of the magnetisation vector field in the presence of spin-polarised currents at high temperatures. We then propose a finite element scheme which only involves solving two decoupled linear systems and perform a rigorous error analysis, assuming adequate regularity of the exact solution and sufficiently small initial data. Some numerical results are presented which confirm our theoretical analysis. For future research, we will consider the problem posed in a multi-layer domain which leads to a system with discontinuous coefficients. Higher-order time-marching scheme involving the backward difference formulae (as in [3, 24, 26]) will also be considered in a future work. 
+
+Funding information 
+
+The author is supported by the Australian Government Research Training Program (RTP) Schol-arship awarded at the University of New South Wales, Sydney. Financial support from the Aus-tralian Research Council under grant number DP200101866 is gratefully acknowledged. 
+
+Conflict of interest declaration 
+
+The authors declare no conflict of interest. 
+
+Data availability statement 
+
+Data sharing not applicable to this article as no datasets were generated or analysed during the current study. 
+
+Acknowledgements 
+
+The author would like to thank the referees for their careful reading and valuable comments, which have significantly improved the quality of the paper. 
+
+References                
+
+> [1] C. Abert, G. Hrkac, M. Page, D. Praetorius, M. Ruggeri, and D. Suess. Spin-polarized transport in ferromagnetic multilayers: An unconditionally convergent FEM integrator. Comput. Math. Appl. ,68 (2014), 639–654. [2] C. Abert, M. Ruggeri, F. Bruckner, C. Vogler, G. Hrkac, D. Praetorius, and D. Suess. A three-dimensional spin-diffusion model for micromagnetics. Sci. Rep. ,5(2015), 14855. [3] G. Akrivis, M. Feischl, B. Kov´ acs, and C. Lubich. Higher-order linearly implicit full discretization of the Landau-Lifshitz-Gilbert equation. Math. Comp. ,90 (2021), 995–1038. [4] X. An, A. K. Majee, A. Prohl, and T. Tran. Optimal control for a coupled spin-polarized current and magneti-zation system. Adv. Comput. Math. ,48 (2022), Paper No. 28, 40. [5] U. Atxitia, O. Chubykalo-Fesenko, N. Kazantseva, D. Hinzke, U. Nowak, and R. W. Chantrell. Micromagnetic modeling of laser-induced magnetization dynamics using the Landau-Lifshitz-Bloch equation. Applied Physics Letters ,91 (2007), 232507. 30
+
+(a) t = 0 (b) t = 2 .5 × 10 −7 (c) t = 1 .0 × 10 −6
+
+(d) t = 2 .0 × 10 −6 (e) t = 4 .0 × 10 −6 (f) t = 5 .0 × 10 −6
+
+Figure 1. Snapshots of the magnetisation vector field m (projected onto R2) for simulation 1. 
+
+(a) t = 0 (b) t = 2 .5 × 10 −6 (c) t = 5 .0 × 10 −6
+
+Figure 2. Snapshots of the spin accumulation vector field s (projected onto R2)for simulation 1. 
+
+[6] S. Bartels and A. Prohl. Convergence of an implicit finite element method for the Landau-Lifshitz-Gilbert equation. SIAM J. Numer. Anal. , 44 (2006), 1405–1419. [7] V. G. Baryakhtar. Phenomenological description of relaxation processes in magnets. Zh. Eksp. Teor. Fiz. , 87 
+
+(1984). [8] M. Benmouane, E.-H. Essoufi, and C. Ayouch. A finite element scheme for the Landau-Lifshitz-Bloch equation. 
+
+Comput. Appl. Math. , 43 (2024), Paper No. 394, 30. [9] A. Berti and C. Giorgi. Derivation of the Landau–Lifshitz–Bloch equation from continuum thermodynamics. 
+
+Physica B: Condensed Matter , 500 (2016), 142–153. 31 
+
+10 1 10 1.5
+
+10 −4
+
+10 −3
+
+10 −2
+
+10 −1
+
+1/h 
+
+> eh
+
+Plot of eh(m) against 1 /h   
+
+> max n∥eh(m)∥H1
+> max n∥eh(m)∥L2
+> order 1 line order 2 line
+
+(a) Error order of m for simulation 1. 
+
+10 1 10 1.5
+
+10 −5
+
+10 −4
+
+10 −3
+
+10 −2
+
+1/h 
+
+> eh
+
+Plot of eh(s) against 1 /h   
+
+> max n∥eh(s)∥H1
+> max n∥eh(s)∥L2
+> order 1 line
+> order 2 line
+
+(b) Error order of s for simulation 1. 
+
+Figure 3. Order of convergence of m and s for simulation 1. 
+
+[10] W. Boonruesi, J. Chureemart, R. W. Chantrell, and P. Chureemart. Temperature dependence of spin-transport properties and spin torque in a magnetic nanostructure. Phys. Rev. B , 102 (2020), 134427. [11] F. Boyer and P. Fabrie. Mathematical tools for the study of the incompressible Navier-Stokes equations and related models , volume 183 of Applied Mathematical Sciences . Springer, New York, 2013. [12] S. C. Brenner and L. R. Scott. The mathematical theory of finite element methods , volume 15 of Texts in Applied Mathematics . Springer, New York, third edition, 2008. [13] O. Chubykalo-Fesenko, U. Nowak, R. W. Chantrell, and D. Garanin. Dynamic approach for micromagnetics close to the Curie temperature. Phys. Rev. B , 74 (2006), 094436. [14] M. Crouzeix and V. Thom´ ee. The stability in Lp and W 1 
+
+> p
+
+of the L2-projection onto finite element function spaces. 
+
+Math. Comp. , 48 (1987), 521–532. [15] G. Di Fratta, A. J¨ ungel, D. Praetorius, and V. Slastikov. Spin-diffusion model for micromagnetics in the limit of long times. J. Differential Equations , 343 (2023), 467–494. [16] G. Di Fratta, C.-M. Pfeiler, D. Praetorius, M. Ruggeri, and B. Stiftner. Linear second-order IMEX-type integrator for the (eddy current) Landau-Lifshitz-Gilbert equation. IMA J. Numer. Anal. , 40 (2020), 2802–2838. [17] J. Douglas, Jr., T. Dupont, and L. Wahlbin. The stability in Lq of the L2-projection into finite element function spaces. Numer. Math. , 23 (1974/75), 193–197. [18] W. E and X.-P. Wang. Numerical methods for the Landau-Lifshitz equation. SIAM J. Numer. Anal. , 38 (2000), 1647–1665. [19] D. Garanin. Generalized equation of motion for a ferromagnet. Physica A: Statistical Mechanics and its Appli-cations , 172 (1991), 470 – 491. [20] D. A. Garanin. Fokker-Planck and Landau-Lifshitz-Bloch equations for classical ferromagnets. Phys. Rev. B , 55 
+
+(1997), 3050–3057. [21] C. J. Garc´ ıa-Cervera and X.-P. Wang. Spin-polarized currents in ferromagnetic multilayers. J. Comput. Phys. ,
+
+224 (2007), 699–711. [22] C. J. Garc´ ıa-Cervera and X.-P. Wang. Spin-polarized transport: existence of weak solutions. Discrete Contin. Dyn. Syst. Ser. B , 7 (2007), 87–100. 32 
+
+(a) t = 0 (b) t = 2 .5 × 10 −7 (c) t = 1 .0 × 10 −6
+
+(d) t = 2 .0 × 10 −6 (e) t = 4 .0 × 10 −6 (f) t = 5 .0 × 10 −6
+
+Figure 4. Snapshots of the magnetisation vector field m (projected onto R2) for simulation 2. 
+
+(a) t = 0 (b) t = 2 .5 × 10 −6 (c) t = 5 .0 × 10 −6
+
+Figure 5. Snapshots of the spin accumulation vector field s (projected onto R2)for simulation 2. 
+
+[23] P. Grisvard. Elliptic problems in nonsmooth domains , volume 69 of Classics in Applied Mathematics . Society for Industrial and Applied Mathematics (SIAM), Philadelphia, PA, 2011. [24] Y. Gui, C. Wang, and J. Chen. IMEX-RK methods for Landau-Lifshitz equation with arbitrary damping. 
+
+Commun. Math. Sci. , 22 (2024), 1397–1425. [25] B. Guo and F. Li. Global smooth solution for the spin-polarized transport equation with Landau-Lifshitz-Bloch equation. Discrete Contin. Dyn. Syst. Ser. B , 25 (2020), 2825–2840. [26] S. Hu, G. Zhao, and R. An. Temporal convergence of extrapolated BDF-2 scheme for the Maxwell-Landau-Lifshitz equations. Comput. Math. Appl. , 119 (2022), 278–287. 33 
+
+10 1 10 2
+
+10 −4
+
+10 −3
+
+10 −2
+
+10 −1
+
+1/h 
+
+> eh
+
+Plot of eh(m) against 1 /h   
+
+> max n∥eh(m)∥H1
+> max n∥eh(m)∥L2
+> order 1 line order 2 line
+
+(a) Error order of u for simulation 2. 
+
+10 1 10 2
+
+10 −5
+
+10 −4
+
+10 −3
+
+10 −2
+
+1/h 
+
+> eh
+
+Plot of eh(s) against 1 /h   
+
+> max n∥eh(s)∥H1
+> max n∥eh(s)∥L2
+> order 1 line
+> order 2 line
+
+(b) Error order of s for simulation 2. 
+
+Figure 6. Order of convergence of m and s for simulation 2. 
+
+[27] U. Kilic, G. Finocchio, T. Hauet, S. H. Florez, G. Aktas, and O. Ozatay. Magnetic switching driven by nanosecond scale heat and magnetic field pulses: An application of macrospin Landau-Lifshitz-Bloch model. Applied Physics Letters , 101 (2012), 252407. [28] K. N. Le. Weak solutions of the Landau-Lifshitz-Bloch equation. J. Differential Equations , 261 (2016), 6699– 6717. [29] K.-N. Le, A. L. Soenjaya, and T. Tran. The Landau–Lifshitz–Bloch equation on polytopal domains: Unique existence and finite element approximation. arXiv:2406.05808, 2024. [30] P. Li, Z. Ma, R. Du, and J. Chen. A Gauss-Seidel projection method with the minimal number of updates for the stray field in micromagnetics simulations. Discrete Contin. Dyn. Syst. Ser. B , 27 (2022), 6401–6416. [31] Q. Li, B. Guo, F. Liu, and W. Liu. Weak and strong solutions to Landau-Lifshitz-Bloch-Maxwell equations with polarization. J. Differential Equations , 286 (2021), 47–83. [32] A. Prohl. Computational Micromagnetism . Advances in Numerical Mathematics. B. G. Teubner, Stuttgart, 2001. [33] X. Pu and B. Guo. Global smooth solutions for the one-dimensional spin-polarized transport equation. Nonlinear Anal. , 72 (2010), 1481–1487. [34] X. Pu and W. Wang. Partial regularity to the Landau-Lifshitz equation with spin accumulation. J. Differential Equations , 268 (2020), 707–737. [35] Y. Qin. Analytic inequalities and their applications in PDEs , volume 241 of Operator Theory: Advances and Applications . Birkh¨ auser/Springer, Cham, 2017. [36] R. Rong. The partial regularity for Landau-Lifshitz-Maxwell-Spin diffusion system in three dimensions. J. Math. Anal. Appl. , 507 (2022), Paper No. 125830, 29. [37] M. Ruggeri. Coupling and numerical integration of the Landau–Lifshitz–Gilbert equation . PhD thesis, TU Wien, 2016. [38] M. Ruggeri, C. Abert, G. Hrkac, D. Suess, and D. Praetorius. Coupling of dynamical micromagnetism and a stationary spin drift-diffusion: A step towards a fully self-consistent spintronics framework. Physica B , 486 
+
+(2016), 88–91. [39] A. Shpiro, P. M. Levy, and S. Zhang. Self-consistent treatment of nonequilibrium spin torques in magnetic multilayers. Phys. Rev. B , 67 (2003), 104430. 34 
+
+(a) t = 0 (b) t = 1 .0 × 10 −7 (c) t = 2 .5 × 10 −7
+
+(d) t = 5 .0 × 10 −7 (e) t = 1 .0 × 10 −6 (f) t = 2 .5 × 10 −6
+
+Figure 7. Snapshots of the magnetisation vector field m (projected onto R2) for simulation 3. 
+
+(a) t = 0 (b) t = 2 .5 × 10 −6 (c) t = 5 .0 × 10 −6
+
+Figure 8. Snapshots of the spin accumulation vector field s (projected onto R2)for simulation 3. 
+
+[40] A. L. Soenjaya. Energy-stable finite element approximation of the Landau-Lifshitz-Bloch equation below the Curie temperature. J. Sci. Comput. , 104 (2025), Paper No. 50, 38 pp. [41] A. L. Soenjaya. Mixed finite element methods for the Landau–Lifshitz–Baryakhtar and the regularised Landau– Lifshitz–Bloch equations in micromagnetics. J. Sci. Comput. , 103 (2025), Paper No. 65, 63 pp. [42] A. L. Soenjaya. Numerical analysis of the Landau–Lifshitz–Bloch equation with spin-torques. arXiv:2502.20098, 2025. [43] A. L. Soenjaya and T. Tran. Global solutions of the Landau–Lifshitz–Baryakhtar equation. J. Differential Equa-tions , 371 (2023), 191–230. 35 
+
+10 1 10 1.5
+
+10 −3
+
+10 −2
+
+10 −1
+
+10 0
+
+1/h 
+
+> eh
+
+Plot of eh(m) against 1 /h   
+
+> max n∥eh(m)∥H1
+> max n∥eh(m)∥L2
+> order 1 line order 2 line
+
+(a) Error order of m for simulation 3. 
+
+10 1 10 1.5
+
+10 −3
+
+10 −2
+
+10 −1
+
+1/h 
+
+> eh
+
+Plot of eh(s) against 1 /h   
+
+> max n∥eh(s)∥H1
+> max n∥eh(s)∥L2
+> order 1 line
+> order 2 line
+
+(b) Error order of s for simulation 3. 
+
+Figure 9. Order of convergence of m and s for simulation 3. 
+
+[44] Y. Sun, J. Chen, R. Du, and C. Wang. Advantages of a semi-implicit scheme over a fully implicit scheme for Landau-Lifshitz-Gilbert equation. Discrete Contin. Dyn. Syst. Ser. B , 28 (2023), 5105–5122. [45] W. Wang, M. Dvornik, M.-A. Bisotti, D. Chernyshenko, M. Beg, M. Albert, A. Vansteenkiste, B. V. Waeyen-berge, A. N. Kuchko, V. V. Kruglyak, and H. Fangohr. Phenomenological description of the nonlocal magneti-zation relaxation in magnonics, spintronics, and domain-wall dynamics. Phys. Rev. B , 92 (2015), 054430. [46] M. F. Wheeler. A priori L2 error estimates for Galerkin approximations to parabolic partial differential equations. 
+
+SIAM J. Numer. Anal. , 10 (1973), 723–759. [47] L. Yang, J. Chen, and G. Hu. A framework of the finite element solution of the Landau-Lifshitz-Gilbert equation on tetrahedral meshes. J. Comput. Phys. , 431 (2021), Paper No. 110142, 17. [48] N. Zamponi and A. J¨ ungel. Analysis of a coupled spin drift-diffusion Maxwell-Landau-Lifshitz system. J. Dif-ferential Equations , 260 (2016), 6828–6854. [49] S. Zhang, P. M. Levy, and A. Fert. Mechanisms of spin-polarized current-driven magnetization switching. Phys. Rev. Lett. , 88 (2002), 236601. [50] Y. Zhao, Q. Song, S.-H. Yang, T. Su, W. Yuan, S. Parkin, J. Shi, and W. Han. Experimental investigation of temperature-dependent Gilbert damping in permalloy thin films. Sci. Rep. , 6, 22890 (2016). 
+
+School of Mathematics and Statistics, The University of New South Wales, Sydney 2052, Australia 
+
+Email address : a.soenjaya@unsw.edu.au

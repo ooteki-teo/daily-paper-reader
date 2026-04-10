@@ -1,0 +1,227 @@
+Title: Switching between Antiferromagnetic and Ferromagnetic Skyrmions in Two-Dimensional Magnets
+
+URL Source: https://arxiv.org/pdf/2604.01861v1
+
+Published Time: Fri, 03 Apr 2026 00:53:44 GMT
+
+Number of Pages: 12
+
+Markdown Content:
+# Switching between Antiferromagnetic and Ferromagnetic Skyrmions in Two-Dimensional Magnets 
+
+## Xinyuan Jiang 1, Jian Wu 1,2 , and Weiyi Pan* 1,3 1State Key Laboratory of Low Dimensional Quantum Physics, Department of Physics, Tsinghua University, Beijing 100084, China 
+
+2Frontier Science Center for Quantum Information, Beijing, China 
+
+3Institute for Theoretical Physics, University of Regensburg, 93040 Regensburg, Germany *Email: weiyi.pan@physik.uni-regensburg.de 
+
+Abstract 
+
+Antiferromagnetic (AFM) and ferromagnetic (FM) skyrmions possess unique advantages for spin-tronic applications. AFM skyrmions eliminate the skyrmion Hall effect and exhibit fast dynamics, whereas FM skyrmions are easier to nucleate and manipulate. However, realizing a transition between AFM and FM skyrmions within the same two-dimensional (2D) material has remained elusive. Here, using first-principles calculations and atomistic spin simulations on the Janus monolayer Cr 2Ge 2Te 3S3,we demonstrate that strain-driven modulation of magnetic interactions enables switching between AFM and FM skyrmion phases. A compressive strain of −3% induces an AFM ground state hosting AFM skyrmions, while a tensile strain of +2% drives the system into a FM skyrmion phase. Moreover, un-der an out-of-plane magnetic field, FM skyrmions are rapidly transformed into a uniform FM phase, while AFM skyrmions transform into AFM bimerons under stronger fields. These findings establish a framework for controllable transitions between topological magnetic states in a single 2D material. 
+
+# Keywords 
+
+antiferromagnetic skyrmions, ferromagnetic skyrmions, strain, Janus monolayer, first-principles AFM skyrmions 
+
+> FM skyrmions
+> strain
+
+1
+
+> arXiv:2604.01861v1 [cond-mat.mtrl-sci] 2 Apr 2026
+
+# Introduction 
+
+Topological magnetic textures, such as magnetic skyrmions, have emerged as a central topic in condensed matter physics owing to their nontrivial topology, nanoscale size, and potential applications in next-generation spintronic devices. 1–3 Depending on the magnetic background in which they exist, skyrmions can be classified into ferromagnetic (FM) and antiferromagnetic (AFM) types. FM skyrmions have been extensively studied and experimentally realized in a variety of materials, benefiting from their finite magnetization that enables direct detection and efficient manipulation by magnetic fields or spin-polarized currents. 4–6 However, these same characteristics also give rise to intrinsic limitations: the nonzero net magnetization and topological charge induce a pronounced skyrmion Hall effect (SkHE), leading to transverse motion under current-driven dynamics and complicating precise trajectory control. 7–9 In addition, dipolar interactions tend to increase the skyrmion size, posing challenges for device miniaturization. 10 In contrast, AFM skyrmions, composed of two antiparallel FM sublattices coupled antiferromagnetically, exhibit complementary properties. Their compensated magnetization and topological charge suppress the SkHE, resulting in strictly linear motion and enhanced dynamical stability. 11–16 This intrinsic complementarity between FM and AFM skyrmions highlights the importance of considering both types of topological textures on equal footing. In recent years, the rapid progress in two-dimensional (2D) magnetic materials has further stimulated intensive research on both FM and AFM skyrmion crystals, driven by their promise for highly integrated and energy-efficient topological spintronic devices. 17–20 
+
+Given the complementary advantages of different topological magnetic states, an important objective for functional spintronic applications is to achieve controlled regulation and interconversion between distinct topological textures. A variety of external stimuli, including magnetic fields, 21–23 electric fields, 24–26 and thermal excitation, 27–29 have been demonstrated to effectively manipulate skyrmions and related textures. However, in most reported cases, such manipulations are performed within a fixed magnetic background, for example, transforming one FM topological texture into another, such as from FM skyrmions to FM bimerons, 20,30 without altering the underlying FM exchange framework. In contrast, a direct switching between FM and AFM topological states remains largely unexplored. The difficulty is that such a transition requires a change in the sign of the dominant exchange interaction, which is tightly bound to the electronic structure and crystal geometry of the material and therefore not easily tunable. Nevertheless, considering the complementary transport and dynamical properties of FM and AFM skyrmions, the ability to switch between FM and AFM skyrmion phases would represent a critical step toward multifunctional and reconfigurable topological devices, enabling different operational modes within a single material platform. In this work, taking the Janus monolayer Cr 2Ge 2Te 3S3 as a representative model system, we demonstrate that a switching between FM and AFM skyrmion phases can be realized through strain-induced modulation of magnetic interactions. Based on first-principles calculations and atomistic spin simulations, we show that the application of strain tunes the underlying magnetic background from FM to AFM coupling, thereby enabling the emergence of distinct skyrmion crystals with different topological and dynamical characteristics within the same material platform. Our analysis reveals that these textures originate from the competition among the Heisenberg exchange, Dzyaloshinskii-Moriya interaction (DMI), and magnetic anisotropy, whose relative balance is continuously modulated by strain. Under external magnetic fields, the FM skyrmion phase can be easily reshaped or annihilated, whereas the AFM skyrmion state exhibits robustness owing to its compensated spin structure. These findings open a previously unexplored route toward strain-mediated interconversion between FM and AFM topological magnetic states, offering a promising pathway for the development of multifunctional and reconfigurable topological spintronic devices. 
+
+# Results and discussion 
+
+From a physical perspective, the formation of skyrmions generally originates from the competition between the Heisenberg exchange interaction and the DMI. 31–33 While the exchange interaction favors collinear spin alignment, the DMI promotes chiral noncollinear spin textures, and their interplay stabilizes topological spin configurations in magnetic systems. To illustrate this principle, we consider a prototypical 2D hexagonal lattice, as shown in Fig. 1. When the nearest-neighbor exchange interaction ( J1) is FM, the presence of finite DMI can twist the spins into a chiral configuration and stabilize a FM skyrmion state. In contrast, when J1
+
+is AFM, the magnetic lattice naturally divides into two antiparallel sublattices, and the resulting chiral spin 2AFM skyrmions  
+
+> FM skyrmions
+> FM J 1
+> switch
+> J1sign
+> colinear AFM
+> 𝐀 𝐀
+> 𝐀 //
+
+(a) (b) 
+
+> colinear FM
+> DMI
+> DMI AFM J 1
+
+Figure 1: General mechanism for the transition between FM and AFM skyrmions. (a) Schematic illustration of a 2D hexagonal lattice composed of two magnetic sublattices (blue and red atoms). The nearest-neighbor exchange interaction J1 connects spins on adjacent sites, while the in-plane DMI D// is indicated by arrows (anticlockwise chirality shown as an example). (b) Schematic transition of magnetic textures. Under finite 
+
+D// , a collinear FM state can transform into a FM skyrmion state, while a collinear AFM state can transform into an AFM skyrmion state. The transition between FM and AFM skyrmions can be achieved by switching the sign of J1.texture corresponds to an AFM skyrmion. This suggests a general route for realizing the transition between FM and AFM skyrmions. As illustrated in Fig. 1, once a finite DMI exists to stabilize chiral spin textures, tuning J1 from FM to AFM can transform the magnetic background and consequently drive the evolution between these two types of skyrmions. 
+
+## Strain-tunable magnetic ground states 
+
+After clarifying the conditions for the transition from FM to AFM skyrmions, we take Cr 2Ge 2Te 3S3 as a representative 2D magnetic material to demonstrate how this concept can be realized in a realistic system. The crystal structure of monolayer Cr 2Ge 2Te 3S3 is illustrated in Fig. 2(a). The system crystallizes in the polar Janus structure with the space group P 3m1 (No. 157). It can be viewed as a derivative of CrGeTe 3, in which the bottom Te layer is replaced by S atoms. This asymmetric configuration breaks inversion symmetry, giving rise to a DMI between neighboring Cr atoms. The optimized in-plane lattice constant, defined as the distance between the two Ge atoms in the same layer, is 6.35 Å. The Cr atoms form a hexagonal lattice with two inequivalent Cr sites per unit cell, as shown in Fig. 2(b). Each Cr atom is octahedrally coordinated by three Te and three S atoms, forming a distorted octahedron. The mixed chalcogen coordination produces a crystal-field splitting of the Cr 3d orbitals, where the octahedral ligand field separates the states into fully occupied threefold-degenerate t2g levels and empty twofold-degenerate eg levels. We evaluate the formation energy ( Ef ) of monolayer Cr 2Ge 2Te 3S3, which is defined as 
+
+Ef = ECr 2Ge 2Te 3S3 − 2ECr − 2EGe − 3ETe − 3ES
+
+10 (1) where ECr 2Ge 2Te 3S3 is the total energy of monolayer Cr 2Ge 2Te 3S3 per unit cell, and EX (X = Cr, Ge, Te, S) are the energies per atom for corresponding elemental bulk phases. Specifically, Cr crystallizes in a body-centered cubic Phase, Ge in a diamond phase, Te in a trigonal structure, and S in an orthorhombic phase. The calculated Ef of −0.17 eV per atom indicates that Cr 2Ge 2Te 3S3 is energetically and chemically stable. The phonon spectrum is shown in Fig. 2(c), obtained using the PHONOPY package, exhibits no imaginary frequencies, confirming the dynamical stability of the structure. Furthermore, AIMD simulations performed at 300 K in Fig. 2(d) show only small total-energy fluctuations and well-preserved atomic configurations throughout the simulation, verifying its thermal robustness at room temperature. To gain further insight into the magnetic interactions, we constructed a spin Hamiltonian for monolayer 3x
+
+> y
+> x
+> z
+> a
+> b
+
+Cr 
+
+Ge 
+
+Te 
+
+S
+
+Sub1 Sub2 
+
+𝐀 𝐀 
+
+𝐀 𝐀 
+
+𝐀 𝐀 
+
+> x
+> y
+
+(a) 
+
+(d) (c) 
+
+(b) Figure 2: (a) Crystal structures of Cr 2Ge 2Te 3S3. The upper panel shows the top view along the z-axis, and the lower panel presents the side view perpendicular to the z-axis. (b) Schematic representation of Heisenberg exchange interactions, with first-nearest neighbor J1, second-nearest neighbor J2, and third-nearest neighbor 
+
+J3. (c) Phonon spectra of Cr 2Ge 2Te 3S3. (d) AIMD simulations of monolayer Cr 2Ge 2Te 3S3 at 300 K. The energy is given, where the inset shows the crystal structure after 8000 fs. 4(a) (b) 
+
+(d1) (d2) 
+
+Sub1 Sub2 +
+
+(c1) (c2) 
+
+𝐀 𝐀 ＋1－1Figure 3: Strain dependence of the magnetic parameters, magnetic phase diagrams, and detailed spin configurations of monolayer Cr 2Ge 2Te 3S3. (a) Variations of the Heisenberg exchange ( J1, J2, and J3) as functions of biaxial strain. (b) Variations of the in-plane ( D// ) and out-of-plane ( Dz ) components of the DMI, together with the SIA ( Azz ), under the same strain conditions. For simplicity, all spin vectors are normalized to |S| = 1 in our calculations. (c1) Enlarged view of the magnetic texture at −3% strain, showing the formation of AFM skyrmions. (c2) Magnified region highlighted by the red box in (c1), where the AFM skyrmion can be decomposed into two interpenetrating sublattices, Sub1 and Sub2, corresponding to FM skyrmions with opposite spin orientations (spin-up and spin-down, respectively). (d1) Enlarged view of the magnetic texture at +2% strain, exhibiting FM skyrmions. (d2) Further magnification of the red-boxed regions in (d1), illustrating two types of FM skyrmions with opposite spin orientations. 5Cr 2Ge 2Te 3S3:
+
+H =J1
+
+X
+
+> ⟨i,j ⟩
+
+Si · Sj + J2
+
+X
+
+> ⟨⟨ i,j ⟩⟩
+
+Si · Sj + J3
+
+X
+
+> ⟨⟨⟨ i,j ⟩⟩⟩
+
+Si · Sj
+
++ Azz 
+
+X
+
+> i
+
+(Szi )2 + X
+
+> ⟨i,j ⟩
+
+Dij · (Si × Sj )
+
+(2) In this equation, Si(j) denotes the normalized spin vector of the i-th ( j-th) Cr atom. Szi denotes the 
+
+z-component of the i-th spin. J1, J2 and J3 correspond to the Heisenberg exchange parameters of the first, second, and third nearest neighbors (1NN, 2NN, and 3NN), respectively, as shown in Fig. 2(b). The summations ⟨i, j ⟩, ⟨⟨ i, j ⟩⟩ , and ⟨⟨⟨ i, j ⟩⟩⟩ run over the 1NN, 2NN, and 3NN spin pairs, respectively. Azz is the single-ion anisotropy (SIA) energy. Dij is the DMI between the i-th and j-th Cr atoms. Because the structure possesses a mirror plane perpendicular to the 1NN Cr-Cr bond, the DMI vector can be expressed as Dij = D// (ˆuij × ˆz) + Dz ˆz, where ˆuij represents the unit vector pointing along the Cr-Cr bond and ˆz
+
+represents the unit vector along the z direction. Using the spin Hamiltonian described above, the magnetic parameters are obtained by mapping the total energies of representative spin configurations. For the unstrained monolayer, the exchange couplings J1, J2,and J3 are all relatively small and AFM, indicating weak overall exchange interaction that are unfavorable for the stabilization of magnetic orders. In contrast, the DMI is remarkably strong due to the broken inversion symmetry of the lattice. The magnetic coupling strength can be further tuned by strain. Upon applying biaxial strain, the magnetic exchange parameters exhibit systematic and contrasting trends. As shown in Fig. 3(a), J1 is the most strain-sensitive parameter: compressive strain strengthens its AFM character, whereas tensile strain reverses it to a FM interaction. From a microscopic perspective, the compress-induced FM-to-AFM transition in J1 can be ascribed to the strengthening of direct AFM exchange between Cr atoms, resulting from the contraction of the Cr-Cr bond distance. J2, J3, and DMI also vary with strain, but their changes are relatively moderate compared with J1. These results indicate that strain primarily tunes the balance of magnetic exchange interactions, which provides a natural mechanism for switching between distinct magnetic ground states. To gain deeper insights into the strain-dependent evolution of spin textures, we carry out LLG simulations on large supercells. The results indicate that strain can effectively modify the magnetic configurations, en-abling the emergence of both FM and AFM skyrmions. Under compressive strain of −3% , the system develops a complex AFM labyrinth domain structure interspersed with multiple isolated AFM skyrmions, as shown in Fig. 3(c1). A magnified view in Fig. 3(c2) reveals that each AFM skyrmion consists of two FM skyrmions cou-pled antiferromagnetically on interpenetrating sublattices. Unlike synthetic AFM skyrmions, 13,34–36 which require two FM layers coupled through interlayer AFM exchange, the AFM skyrmions in our system are intrinsically realized within a single atomic layer. When the tensile strain is increased to +2% , the AFM spin-spiral texture evolves into a FM skyrmion lattice, as shown in Fig. 3(d1). This transformation arises from the delicate balance among the competing exchange interactions, DMI, and magnetic anisotropy, which collectively determine the characteristic skyrmion size and stability. Remarkably, these results demonstrate that both AFM and FM skyrmions can be engineered within the same 2D Janus system through strain alone, providing an efficient and tunable route toward strain-controlled skyrmionics. In the following sections, we focus on the representative cases of −3% and +2% strain to elucidate the microscopic origins of their distinct spin configurations. 
+
+## Microscopic origin of AFM and FM skyrmions 
+
+To elucidate the microscopic mechanism governing the stabilization of AFM and FM skyrmions, we performed a comparative energy analysis based on the spin Hamiltonian introduced above. Specifically, we evaluated the energy difference between the collinear N ´eel-type AFM (FM) ground state and the corresponding AFM (FM) skyrmionic state, and decomposed these energy differences into distinct magnetic contributions, including the Heisenberg exchanges ( Ji), SIA energy ( Azz ), and DMI ( Dz , D// ). The results, summarized in Table 1, reveal that the total energy differences are small for both AFM and FM skyrmions, suggesting that these topological states are energetically accessible in the same 2D Janus system. For the −3% strained system hosting AFM skyrmions, as shown in Table 1, both J2 and D// yield negative values of ∆E1, indicating 6𝐀 // 0 2.0 1.5 1.0 0.5       
+
+> strain 2%
+> (d)
+> 𝐀 𝐀 02.0 1.5 1.0 0.5
+> strain 2% (c)
+> 01.2 0.9 0.6 0.3
+> strain -3%
+> 𝐀 //
+> (b)
+> 02.5 2.0 1.5 1.0
+> strain -3%
+> 𝐀 𝐀
+> (a)
+> 𝐀 𝐀 ＋1－1
+
+Figure 4: Magnetic configurations as functions of the J2 and D// under different strain conditions. (a) Evolution of spin textures with varying 2NN exchange coupling J2 for the −3% strained structure. (b) Evolution of spin textures with increasing in-plane DMI component D// for the −3% strained structure. (c) Magnetic configurations as a function of J2 for the +2% strained structure. (d) Magnetic configurations as a function of D// for the +2% strained structure. All energy parameters are given in units of meV/Cr. The color scale represents the out-of-plane spin component, where red and blue correspond to spin-up and spin-down orientations, respectively. Only one-quarter of the full simulation area is displayed for clarity. 7𝐀 𝐀 ＋1－1    
+
+> (a)
+> 𝐀 𝐀 (𝐀 )050 30 20
+> strain -3%
+> 10
+> 𝐀 𝐀 (𝐀 )03.5 3.0 1.0
+> strain 2%
+> 0.2
+> (b)
+
+Figure 5: Evolution of magnetic textures under an external magnetic field ( Bz ) in monolayer Cr 2Ge 2Te 3S3.(a) Field-dependent evolution of the AFM skyrmions phase at −3% strain under increasing out-of-plane magnetic field. (b) Field-dependent evolution of the FM skyrmions phase at +2% strain under increasing out-of-plane magnetic field. Only one-quarter of the full simulation area is displayed for clarity. that they contribute to overall energy gain and play crucial roles in stabilizing the AFM skyrmion state. To elucidate how these parameters govern the resulting spin configurations, we performed a series of LLG simulations by varying the magnetic interactions. First, J2 is tuned from 0 to 2.5 meV/Cr while keeping all other parameters fixed, and the magnetic configurations are illustrated in Fig. 4(a). When J2 = 0 , the spins lie predominantly in-plane without forming any topological texture. As J2 increases to approximately 1 meV/Cr, AFM bimerons begin to appear, and well-defined AFM skyrmions emerge near J2 = 2 .5 meV/Cr. Next, to examine how D// affects the magnetic configuration, we vary its value from 0 to 1.2 meV/Cr while fixing other parameters, as shown in Fig. 4(b). At D// = 0 , the spins remain nearly collinear within the plane. When D// reaches about 0.6 meV/Cr, AFM bimerons appear, consisting of two oppositely polarized merons in the two AFM-coupled sublattices. Upon further increasing D// to 0.9 meV/Cr, fully developed AFM skyrmions become stabilized. These results confirm that both moderate J2 and sizable in-plane DMI cooperatively promote the formation of AFM skyrmions by introducing exchange frustration and chiral twisting. As for the FM skyrmion state, Table 1 shows that both J2 and D// also produce negative values of 
+
+∆E2, suggesting that they likewise contribute to the energy stabilization of FM skyrmions. To further verify their effects, we performed similar parameter-tuning LLG simulations. As shown in Fig. 4(c), J2 is varied from 0 to 2 meV/Cr while keeping all other parameters fixed. At J2 = 0 , the system remains uniformly ferromagnetic. A slight increase in J2 induces stripe-like modulations, and stable FM skyrmions appear near 
+
+J2 = 1 meV/Cr. Their diameter decreases gradually as J2 increases further, indicating that moderate AFM J2
+
+enhances exchange frustration and promotes smaller skyrmion formation. Similarly, when D// is varied from 0 to 2 meV/Cr, as shown in Fig. 4(d), the magnetic structure tends to become noncollinear. FM skyrmions emerge once D// exceeds 1 meV/Cr, and their diameter decreases progressively with increasing DMI strength, consistent with enhanced chiral twisting of spins. These results demonstrate that the cooperative effects of 
+
+J1, J2, and D// are also essential for stabilizing FM skyrmions in the tensile-strained system. 
+
+## Magnetic textures under external magnetic field 
+
+The application of an external magnetic field provides an effective route for manipulating topological spin tex-tures. 37–39 In chiral magnets dominated by FM exchange couplings, a perpendicular magnetic field is known to stabilize skyrmions through the delicate competition among exchange interactions, magnetic anisotropy, and DMI. 40,41 In contrast, the magnetic-field response of AFM skyrmions has received far less attention. Understanding how AFM skyrmions evolve under an out-of-plane magnetic field ( Bz ) and their comparison with FM skyrmions is crucial for the design of field-tunable topological spintronic devices. To explore this, 8Table 1: Upper: Total energy of AFM skyrmion (AFMsk) state and N ´eel-type AFM state for Cr 2Ge 2Te 3S3
+
+under −3% strain, as well as the decomposed energies into each term of Hamiltonian. Energy unit is meV/u.c.. The ground state corresponds to the AFMsk configuration, as shown in Fig. 3(c1). Lower: Total energy of FM skyrmion (FMsk) state and FM state, as well as the decomposed energies into each term of Hamiltonian. Energy unit is meV/u.c.. The ground state corresponds to the FMsk configuration, as shown in Fig. 3(d1). The third row of upper and lower sections reports the energy difference, which are 
+
+∆E1 = EAFMsk − EAFM and ∆E2 = EFMsk − EFM . The above calculations are performed in a 100 × 100 × 1
+
+supercell containing 2 × 10 4 Cr atoms. Total J1 J2 J3 D// Dz Azz 
+
+AFMsk state -0.925 -1.295 0.678 -0.294 -0.017 -0.002 0.006 AFM state -0.908 -1.325 0.723 -0.321 0 0 0.015 
+
+∆E1 -0.018 0.029 -0.045 0.027 -0.017 -0.002 -0.009 FMsk state -0.684 -0.763 0.297 -0.045 -0.045 0 -0.034 FM state -0.681 -0.804 0.348 -0.173 0 0 -0.052 
+
+∆E2 -0.003 0.041 -0.051 0.033 -0.045 0 0.018 we performed Landau-Lifshitz-Gilbert (LLG) micromagnetic simulations for the −3% strained monolayer, where AFM skyrmions are stabilized in the absence of an external field. When a weak perpendicular field (Bz = 10 T) is applied, as shown in Fig. 5(a), the spin configuration remains nearly unchanged, indicating the remarkable robustness of AFM skyrmions against magnetic perturbations. As the magnetic field increases to Bz = 20 T, the AFM skyrmions gradually transform into AFM merons. This field-induced skyrmion-to-meron transition differs fundamentally from that in FM systems, in which increasing the magnetic field usually drives the merger of meron pairs into complete skyrmions. 42 Upon further field increase, the AFM merons shrink, their density decreases, and eventually the system transitions into a nearly coplanar spin configuration as the Zeeman energy overtakes the DMI and exchange terms. We also investigated the magnetic-field evolution of FM skyrmions stabilized under +2% strain. At moderate fields ( Bz = 3 T), as shown in Fig. 5(b), the system exhibits a dense array of small-sized FM skyrmions. As the field increases to Bz = 3 .5 T, the skyrmionic lattice collapses into a uniform FM state. Given that AFM skyrmions only start to show quantitative changes under a 20 T magnetic field, this behavior demonstrates that FM skyrmions are considerably less resistant to magnetic fields than their AFM counterparts. The contrasting field responses also highlight the intrinsic robustness of AFM skyrmions, which maintain topological stability even under strong magnetic perturbations. Taken together with the strain-induced switching discussed above, these results establish that both AFM and FM skyrmions can be controlled within a single Janus monolayer through the combined application of strain and magnetic fields. 
+
+# Conclusion 
+
+In summary, our first-principles calculations and atomistic spin simulations demonstrate that it is possible to switch between AFM and FM skyrmion phases within the same system through strain engineering, as exem-plified by the Janus monolayer Cr 2Ge 2Te 3S3. The two topological states arise from the delicate competition among exchange interactions and DMI, and can be interconverted by tuning the magnetic coupling strength. Strain provides an effective means of tuning the magnetic coupling strength, where compressive strain sta-bilizes AFM skyrmions and tensile strain favors FM skyrmions. Both phases exhibit dynamical and thermal stability and respond differently to magnetic fields, with FM skyrmions being more easily modulated while AFM skyrmions remain robust. These results establish a general framework for achieving and controlling different topological magnetic states within a single 2D magnet. Beyond demonstrating the strain-induced switching between AFM and FM skyrmions, this work reveals the connection between exchange frustration and chiral interactions, offering a versatile platform for reconfigurable topological spintronic devices. 9Acknowledgements 
+
+The authors thank the National Key R&D Program of China (2023YFA1406400) for financial support. 
+
+# References 
+
+[1] Mühlbauer, S.; Binz, B.; Jonietz, F.; Pfleiderer, C.; Rosch, A.; Neubauer, A.; Georgii, R.; Böni, P. Skyrmion Lattice in a Chiral Magnet. Science 2009 , 323 , 915–919. [2] Yu, X. Z.; Onose, Y.; Kanazawa, N.; Park, J. H.; Han, J. H.; Matsui, Y.; Nagaosa, N.; Tokura, Y. Real-space observation of a two-dimensional skyrmion crystal. Nature 2010 , 465 , 901–904. [3] Fert, A.; Reyren, N.; Cros, V. Magnetic skyrmions: advances in physics and potential applications. Nat. Rev. Mater. 2017 , 2, 17031. [4] Zhang, H.; Zhang, Y.; Hou, Z.; Qin, M.; Gao, X.; Liu, J. Magnetic skyrmions: materials, manipulation, detection, and applications in spintronic devices. Materials Futures 2023 , 2, 032201. [5] Zhang, S. L.; Wang, W. W.; Burn, D. M.; Peng, H.; Berger, H.; Bauer, A.; Pfleiderer, C.; van der Laan, G.; Hesjedal, T. Manipulation of skyrmion motion by magnetic field gradients. Nature Commu-nications 2018 , 9, 2115. [6] Wang, W.; Song, D.; Wei, W.; Nan, P.; Zhang, S.; Ge, B.; Tian, M.; Zang, J.; Du, H. Electrical manipulation of skyrmions in a chiral magnet. Nature Communications 2022 , 13 , 1593. [7] Nagaosa, N.; Tokura, Y. Topological properties and dynamics of magnetic skyrmions. Nature Nanotech-nology 2013 , 8, 899–911. [8] Jiang, W.; Zhang, X.; Yu, G.; Zhang, W.; Wang, X.; Benjamin Jungfleisch, M.; Pearson, J. E.; Cheng, X.; Heinonen, O.; Wang, K. L.; Zhou, Y.; Hoffmann, A.; te Velthuis, S. G. E. Direct observation of the skyrmion Hall effect. Nature Physics 2017 , 13 , 162–169. [9] Litzius, K. et al. Skyrmion Hall effect revealed by direct time-resolved X-ray microscopy. Nature Physics 
+
+2017 , 13 , 170–175. [10] Büttner, F.; Lemesh, I.; Beach, G. S. D. Theory of isolated magnetic skyrmions: From fundamentals to room temperature applications. Scientific Reports 2018 , 8, 4464. [11] Göbel, B.; Mertig, I.; Tretiakov, O. A. Beyond skyrmions: Review and perspectives of alternative magnetic quasiparticles. Physics Reports 2021 , 895 , 1–28, Beyond skyrmions: Review and perspectives of alternative magnetic quasiparticles. [12] Barker, J.; Tretiakov, O. A. Static and Dynamical Properties of Antiferromagnetic Skyrmions in the Presence of Applied Current and Temperature. Phys. Rev. Lett. 2016 , 116 , 147203. [13] Zhang, X.; Zhou, Y.; Ezawa, M. Antiferromagnetic Skyrmion: Stability, Creation and Manipulation. 
+
+Scientific Reports 2016 , 6, 24795. [14] Gomonay, O.; Baltz, V.; Brataas, A.; Tserkovnyak, Y. Antiferromagnetic spin textures and dynamics. 
+
+Nature Physics 2018 , 14 , 213–216. [15] Jungwirth, T.; Marti, X.; Wadley, P.; Wunderlich, J. Antiferromagnetic spintronics. Nature Nanotech-nology 2016 , 11 , 231–241. [16] Šmejkal, L.; Mokrousov, Y.; Yan, B.; MacDonald, A. H. Topological antiferromagnetic spintronics. 
+
+Nature Physics 2018 , 14 , 242–251. [17] Pan, W.; Xu, C.; Li, X.; Xu, Z.; Liu, B.; Gu, B.-L.; Duan, W. Chiral magnetism in lithium-decorated monolayer CrTe 2: Interplay between Dzyaloshinskii-Moriya interaction and higher-order interactions. 
+
+Phys. Rev. B 2024 , 109 , 214405. 10 [18] Liu, M.; Sun, J.-T.; Meng, S. Formation of a high-density skyrmion crystal in the monolayer semicon-ductor LiCrTe 2 with tunable bands. Phys. Rev. B 2025 , 111 , 054423. [19] Pan, W.; Ji, S.; Xu, Z. Strain-induced intrinsic antiferromagnetic skyrmions in two-dimensional Janus magnets. Phys. Rev. B 2024 , 110 , 144408. [20] Thevenard, C.; Leiviskä, M.; Evans, R. F. L.; Gusakova, D.; Baltz, V. Imprinting of skyrmions and bimerons in an antiferromagnet. Phys. Rev. B 2025 , 111 , 224429. [21] Yuan, J.; Yang, Y.; Cai, Y.; Wu, Y.; Chen, Y.; Yan, X.; Shen, L. Intrinsic skyrmions in monolayer Janus magnets. Phys. Rev. B 2020 , 101 , 094420. [22] Xu, C.; Feng, J.; Prokhorenko, S.; Nahas, Y.; Xiang, H.; Bellaiche, L. Topological spin texture in Janus monolayers of the chromium trihalides Cr(I, X)3. Phys. Rev. B 2020 , 101 , 060404. [23] Du, W.; Dou, K.; He, Z.; Dai, Y.; Huang, B.; Ma, Y. Spontaneous Magnetic Skyrmions in Single-Layer CrInX3 (X = Te, Se). Nano Letters 2022 , 22 , 3440–3446, PMID: 35362978. [24] Sun, W.; Wang, W.; Li, H.; Zhang, G.; Chen, D.; Wang, J.; Cheng, Z. Controlling bimerons as skyrmion analogues by ferroelectric polarization in 2D van der Waals multiferroic heterostructures. Nature Com-munications 2020 , 11 , 5930. [25] He, Z.; Du, W.; Dou, K.; Dai, Y.; Huang, B.; Ma, Y. Ferroelectrically tunable magnetic skyrmions in two-dimensional multiferroics. Mater. Horiz. 2023 , 10 , 3450–3457. [26] Xu, C.; Chen, P.; Tan, H.; Yang, Y.; Xiang, H.; Bellaiche, L. Electric-Field Switching of Magnetic Topological Charge in Type-I Multiferroics. Phys. Rev. Lett. 2020 , 125 , 037203. [27] Wang, J.; Strungaru, M.; Ruta, S.; Meo, A.; Zhou, Y.; Deák, A.; Szunyogh, L.; Gavriloaea, P.-I.; Moreno, R.; Chubykalo-Fesenko, O.; Wu, J.; Xu, Y.; Evans, R. F. L.; Chantrell, R. W. Spontaneous creation and annihilation dynamics of magnetic skyrmions at elevated temperature. Phys. Rev. B 2021 ,
+
+104 , 054420. [28] Amoroso, D.; Barone, P.; Picozzi, S. Spontaneous skyrmionic lattice from anisotropic symmetric ex-change in a Ni-halide monolayer. Nature Communications 2020 , 11 , 5784. [29] Wang, Z.-q.; Xue, F.; Qiu, L.; Wang, Z.; Wu, R.; Hou, Y. Switching Intrinsic Magnetic Skyrmions with Controllable Magnetic Anisotropy in van der Waals Multiferroic Heterostructures. Nano Letters 2024 ,
+
+24 , 4117–4123, PMID: 38509030. [30] Du, W.; Dou, K.; He, Z.; Dai, Y.; Wang, Z.; Huang, B.; Ma, Y. Ferroelectric Switchable Topological Antiferromagnetism. Nano Letters 0, 0, null, PMID: 41524775. [31] Moriya, T. Anisotropic Superexchange Interaction and Weak Ferromagnetism. Phys. Rev. 1960 , 120 ,91–98. [32] Dzyaloshinsky, I. A thermodynamic theory of “weak” ferromagnetism of antiferromagnetics. Journal of Physics and Chemistry of Solids 1958 , 4, 241–255. [33] Okubo, T.; Chung, S.; Kawamura, H. Multiple-q States and the Skyrmion Lattice of the Triangular-Lattice Heisenberg Antiferromagnet under Magnetic Fields. Phys. Rev. Lett. 2012 , 108 , 017206. [34] Chen, R.; Gao, Y.; Zhang, X.; Zhang, R.; Yin, S.; Chen, X.; Zhou, X.; Zhou, Y.; Xia, J.; Zhou, Y.; Wang, S.; Pan, F.; Zhang, Y.; Song, C. Realization of Isolated and High-Density Skyrmions at Room Temperature in Uncompensated Synthetic Antiferromagnets. Nano Lett. 2020 , 20 , 3299–3305. [35] Legrand, W.; Maccariello, D.; Ajejas, F.; Collin, S.; Vecchiola, A.; Bouzehouane, K.; Reyren, N.; Cros, V.; Fert, A. Room-temperature stabilization of antiferromagnetic skyrmions in synthetic anti-ferromagnets. Nature Materials 2020 , 19 , 34–42. 11 [36] Duine, R. A.; Lee, K.-J.; Parkin, S. S. P.; Stiles, M. D. Synthetic antiferromagnetic spintronics. Nature Physics 2018 , 14 , 217–219. [37] Zhang, Y.; Xu, C.; Chen, P.; Nahas, Y.; Prokhorenko, S.; Bellaiche, L. Emergence of skyrmionium in a two-dimensional CrGe(Se , Te) 3 Janus monolayer. Phys. Rev. B 2020 , 102 , 241107. [38] Liang, J.; Wang, W.; Du, H.; Hallal, A.; Garcia, K.; Chshiev, M.; Fert, A.; Yang, H. Very large Dzyaloshinskii-Moriya interaction in two-dimensional Janus manganese dichalcogenides and its applica-tion to realize skyrmion states. Phys. Rev. B 2020 , 101 , 184401. [39] Haldar, S.; von Malottki, S.; Meyer, S.; Bessarab, P. F.; Heinze, S. First-principles prediction of sub-10-nm skyrmions in Pd/Fe bilayers on Rh(111). Phys. Rev. B 2018 , 98 , 060413. [40] Dou, K.; Du, W.; He, Z.; Dai, Y.; Huang, B.; Ma, Y. Theoretical Prediction of Antiferromagnetic Skyrmion Crystal in Janus Monolayer CrSi2N2As2. ACS Nano 2023 , 17 , 1144–1152, PMID: 36448916. [41] Rosales, H. D.; Cabra, D. C.; Pujol, P. Three-sublattice skyrmion crystal in the antiferromagnetic triangular lattice. Phys. Rev. B 2015 , 92 , 214439. [42] Sun, W.; Wang, W.; Zang, J.; Li, H.; Zhang, G.; Wang, J.; Cheng, Z. Manipulation of Magnetic Skyrmion in a 2D van der Waals Heterostructure via Both Electric and Magnetic Fields. Advanced Functional Materials 2021 , 31 , 2104452. 12

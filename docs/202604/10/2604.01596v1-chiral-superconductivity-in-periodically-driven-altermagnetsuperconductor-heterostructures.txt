@@ -1,0 +1,232 @@
+Title: Chiral Superconductivity in Periodically Driven Altermagnet/Superconductor Heterostructures
+
+URL Source: https://arxiv.org/pdf/2604.01596v1
+
+Published Time: Fri, 03 Apr 2026 00:28:17 GMT
+
+Number of Pages: 7
+
+Markdown Content:
+# Chiral Superconductivity in Periodically Driven Altermagnet/Superconductor Heterostructures 
+
+Xiaolin Wan, 1, 2 Zheng Qin, 1, 2 Fangyang Zhan, 1, 2, 3 Junjie Zeng, 1, 2, 3, ∗ Dong-Hui Xu, 1, 2, 3, † and Rui Wang 1, 2, 3, ‡
+
+> 1
+
+Institute for Structure and Function & Department of Physics, Chongqing University, Chongqing 400044, P. R. China 
+
+> 2
+
+Chongqing Key Laboratory for Strongly Coupled Physics, Chongqing 400044, P. R. China 
+
+> 3
+
+Center for Quantum materials and devices, Chongqing University, Chongqing 400044, P. R. China 
+
+The interplay between magnetism and superconductivity provides a fertile ground for engineering exotic topological phases, while dynamical control via periodic driving offers a unique avenue to access quantum states that are inaccessible in static equilibrium. Here, we propose a strategy to achieve the Floquet chiral topological superconductivity in an altermagnet-superconductor heterostructure driven by elliptically polarized light. We show that for s-wave pairing, the system undergoes a transition from a trivial to a chiral topological superconducting phase. More strikingly, with the introduction of mixed s + d-wave pairing, we find that the system can access Floquet chiral topological superconducting phases with highly tunable Chern numbers up to |N | = 4. These exotic phases are attributed to the intertwining of altermagnetism, superconducting pairing, and the periodic driving field. Our work establishes the light-driven altermagnetic heterostructure as a versatile platform for exploring and manipulating high-Chern-number chiral topological superconductivity. 
+
+Introduction —The exploration of topological superconductors (TSCs) attracts intensive interest in the modern condensed-matter community, as it can give rise to topologically protected Majorana fermions (also referred to as Majorana modes) [1–8]. In particular, a chiral TSC with time-reversal symmetry breaking is one of the most fascinating topics due to the coexistence of band topology and unconventional pairing symmetries [8–15]. The chiral TSCs exhibit a full pairing gap in the two-dimensional (2D) bulk and possess N gapless chiral Majorana modes at the edge (where N is the BdG Chern number). Of particular importance are the chiral TSCs with an odd N . The vortex bound states of these chiral TSCs can support a single Majorana zero mode, serving as fundamental building blocks for topological quantum computation [13–19]. Therefore, extensive studies have been carried out to explore chiral TSC candidates [20– 33]; however, naturally occurring chiral TSCs remain scarce. In the past decade, many proposals have been raised to achieve chiral topological superconductivity in artificial heterostructures through the proximity coupling conventional s-wave superconductors [15, 33– 36]. In this context, an external magnetic field or a ferromagnetic (FM) substrate is generally regarded as an essential factor for breaking time-reversal symmetry. Nevertheless, FM orders tend to suppress the proximity-induced superconducting gap, thereby posing challenges in achieving robust chiral topological superconductivity in magnet-superconductor heterostructures [37–42]. Recently, altermagnetism, an emerging magnetic phase characterized by alternating nonrelativistic momentum-   
+
+> ∗jjzeng@cqu.edu.cn
+> †donghuixu@cqu.edu.cn
+> ‡rcwang@cqu.edu.cn
+
+dependent spin splitting while maintaining a vanishing net magnetization, has become the subject of intense recent studies [43–52]. Considering that the interplay between magnetism and superconductivity facilitates the emergence of unconventional superconductivity, the exploration of TSCs in an altermagnetic (AM) system is an interesting avenue. In this regard, several AM-based strategies for designing topological superconductivity with vanishing net magnetization have been proposed [53–65]. Strikingly, it has been demonstrated that altermagnetism is beneficial for realizing chiral Majorana fermions [62–65]. It is well-known that Floquet engineering, owing to its dynamic manipulation on ultrafast timescales, offers a powerful tool for designing novel quantum phases with intriguing topological features [66–71]. Periodic driving can enable promising Floquet Majorana modes beyond the conventional Floquet band topology [72–85], and thus numerous exotic phenomena related to Floquet TSCs have spurred extensive research activity [83–90]. Moreover, an application of periodically-driven circularly polarized light (CPL) can introduce an effective time-reversal symmetry (TRS) breaking and flexibly switch the chirality of systems by changing the handedness of CPL; thus Floquet engineering can provide a promising platform to study and control the chiral Majorana modes [82, 91–95]. Since the intertwining between magnetism, topology, and superconductivity creates numerous opportunities for engineering and controlling a wide range of exotic phenomena, the exploration of topological superconductivity in AM systems via Floquet engineering is highly desirable. In this work, we theoretically investigate the topological phase transitions in an AM/SC heterostructure driven by elliptically polarized light (EPL), and propose a strategy for realizing the Floquet Chiral Topological Superconductor (FCTSC), as shown 
+
+> arXiv:2604.01596v1 [cond-mat.supr-con] 2 Apr 2026
+
+2       
+
+> FIG. 1. Schematic of the light-driven 2D AM-SC heterostructure, where the red and blue arrows denote spin-up and spin-down, respectively.
+
+in Fig. 1. For the sake of concreteness, we focus on a heterostructure composed of a d-wave AM and a SC with s-wave or s + d-wave pairing. We systematically calculate the Bogoliubov–de Gennes (BdG) Chern number N to characterize the topological phases of the nonequilibrium steady states. We demonstrate that the light amplitude and the AM strength can synergistically promote the transition from a trivial SC into a topological phase hosting chiral Majorana fermions (CMFs). Remarkably, our calculations reveal that the driven system can host high Chern numbers (N > 1), corresponding to multiple chiral Majorana edge modes. Our results establish a dynamical pathway to engineer and manipulate high-Chern-number topological phases in AM/SC platforms. 
+
+Lattice model and Floquet theory .— To investigate the topological phases, we employ a Bogoliubov–de Gennes (BdG) Hamiltonian constructed by adding superconducting pairing to the AM lattice model. The Hamiltonian for the AM/SC heterostructure explicitly includes several key components: the normal-state term, the Rashba spin-orbit coupling (SOC) term, the AM term, and two types of superconducting pairing terms — conventional s-wave pairing and unconventional dx2−y2 -wave pairing. The Hamiltonian of the system can be expressed as [64]: 
+
+HBdG (k) = H0(k) + λR(k) + JAM (k) + ∆( k)τ 2σ2,H0(k) = t(cos kx + cos ky − μ)τ 3,λR(k) = λR(sin kxτ 3σ2 − sin ky τ 0σ1),JAM (k) = JAM (cos kx − cos ky )τ 3σ3,
+
+∆( k) = ∆ 0 + ∆ 1(cos kx + η cos ky ),
+
+(1) 0.3 
+
+> 0.0
+> 0.2
+> 0.4
+> 0.5
+> 0.1
+
+𝐀 /𝐀            
+
+> 0.0 1.6 0.4 0.8 1.2 0.0 1.6 0.4 0.8 1.2
+> 𝐀 =0.225 𝐀
+> 𝐀 =0.8
+
+(a) (b) 
+
+𝐀 𝐀                                               
+
+> FIG. 2. (a) Topological phase diagram characterized by Chern numbers in the θ-Aparameter plane for an s-wave/AM heterojunction at JAM = 0 .245. The red dashed line indicates A=0.8. As θvaries along this dashed line, the system undergoes phase transitions between two distinct strong FCTSC phases and a topologically trivial phase. (b) Topological phase diagram in the θ-Aparameter plane for an s-wave/AM heterojunction at JAM = 0 .26. As
+> Avaries along the dashed line, the system evolves from a weak TSC state into an FCTSC state, and ultimately transitions into a topologically trivial state. The gray regions represent the topologically trivial phase. The yellow and green regions correspond to strong TSC states with Chern numbers N=±1, while the blue regions indicate a weak topological superconducting state with a Chern number of
+> N= 0.
+
+where τ and σ denote Pauli matrices in Nambu and spin spaces, respectively. And t is the nearest-neighbor hopping strength, λR represents the Rashba SOC strength, and JAM characterizes the AM strength. Furthermore, ∆ 0 and ∆ 1 are the superconducting pairing amplitudes for the s-wave and d-wave components, with 
+
+η denoting the mixing parameter. A general form of the vector potential caused by the elliptically polarized light is given by 
+
+A(τ ) = ( Ax cos( ωτ ), A y sin( ωτ ), 0) . (2) The elliptically polarized driving field can be expressed as E(τ ) = −∂τ A(τ ), where A(τ ) = A(τ + T ) is a time periodic, spatially homogeneous vector potential of period T = 2 π/ω , and ω is the frequency of light. We incorporate the effect of the periodic driving field into the tight-binding Hamiltonian via the Peierls substitution, which introduces a time-dependent phase in the hopping amplitudes and is equivalent to the replacement k →
+
+k + A(t). Setting ℏ = e = c = 1, this yields a Floquet system governed by a time-periodic Hamiltonian 
+
+H(τ ) = H(τ + T ), which serves as the starting point for our high-frequency analysis. In the following discussion, we define the light field amplitude as A = e
+
+q
+
+A2 
+
+> x
+
++ A2 
+
+> y
+
+,with the polarization angle given by θ = arctan( Ay /A x). 3𝐀 = 0.72 𝐀 = 0.90 
+
+𝐀 = 0.25 𝐀 𝐀 = 0.10 𝐀 𝐀 = 0.18 𝐀 𝐀 = 0.31 𝐀 𝐀 = 0.40 𝐀 
+
+𝐀 = 0.46𝐀 = 0.1 𝐀 = 0.55                   
+
+> -YYΓ-YYΓ-YYΓ-YYΓ-YYΓ
+> -YYΓ-YYΓ-YYΓ-YYΓ-YYΓ
+
+0.05 
+
+-0.05 
+
+0.00 
+
+0.2 
+
+-0.2 
+
+0.0 E
+
+## E
+
+(a) (b) (c) (d) (e) 
+
+(f) (g) (h) (i) (j)                                                  
+
+> 𝐀 =1𝐀 =0𝐀 =−1
+> 𝐀 =0𝐀 =1𝐀 =0
+> FIG. 3. Edge states and topological phase transitions in an AM/s-wave SC system. (a)–(e) Edge state spectra along the
+> −¯Y−¯Γ−¯Y path for fixed AM strength JAM = 0 .245 and light amplitude A= 0 .8. The polarization angles correspond to
+> θ= 0 .1π, 0 .31 π, 0 .25 π, 0 .18 π, and 0 .10 π, respectively. The corresponding Chern numbers are N= 1, gap closing, N= 0, gap closing, and N=−1. (f)–(g) Edge state spectra for fixed AM strength JAM = 0 .26 and polarization angle θ= 0 .225 π. The light amplitudes are A= 0 .3, 0 .46, 0 .55, 0 .72, and 0 .9, respectively. The corresponding Chern numbers are N= 0, gap closing,
+> N= 1, gap closing, and N= 0. Notably, in (f), two opposite chirality Majorana edge modes are present, resulting in a net Chern number of N= 0
+
+According to the Floquet theory [66, 67], the time-dependent Schr¨ odinger equation admits solutions of the form |Ψ( τ )⟩ = e−iϵτ |Φ( τ )⟩, where ϵ denotes the Floquet quasienergy and |Φ( τ )⟩ = |Φ( τ + T )⟩ is the Floquet eigenvector. By applying the Fourier decomposition to both the Hamiltonian H(τ ) =P 
+
+> n
+
+e−inωτ Hn and |Φ( τ )⟩ = P 
+
+> n
+
+e−inωτ |Φn⟩, the time-dependent Schr¨ odinger equation is mapped to an infinite-dimensional eigenvalue equation in the extended Hilbert space: 
+
+X
+
+> m
+
+(Hn−m − mωδ mn ) |Φmα ⟩ = ϵα |Φnα⟩ . (3) Throughout this work, we focus on the high-frequency regime where direct electron transitions mediated by photon absorption or emission are strongly suppressed. In this off-resonant limit, the time-dependent system can be effectively described by a static Floquet Hamiltonian, derived as [69, 70]: 
+
+Heff = H0 + X
+
+> n̸=0
+
+[H−n, Hn]2nω + O(ω−2). (4) While the truncation order in numerical calculations is typically determined by convergence criteria, we focus here on the leading-order contributions, retaining terms up to the cutoff n = 1. 
+
+Floquet Engineering of Chiral Topological Phases in AM/s-wave SC .— To explore the system’s response under nonequilibrium conditions, we explicitly consider 
+
+s-wave pairing by fixing ∆ 0 = 0 .3 and ∆ 1 = 0 for the subsequent analysis. In the absence of an external light field, tuning the AM strength JAM places the system in either a topologically trivial phase or a weak TSC phase [64], and we adopt these as our initial states. Detailed discussions on the intrinsic band structure and momentum-dependent spin splitting in the absence of the EPL are provided in the Supplemental Material [96]. Figure 2(a) and (b) display the topological phase diagrams in the θ-A parameter space for JAM = 0 .245 and JAM = 0 .26, respectively. Focusing on the JAM =0.245 case, the introduction of EPL drives the system from a trivial phase into a strong TSC phase ( N =
+
+±1). Moreover, fixing A and varying θ reveals multiple topological phase transitions where the Chern number evolves 1 → 0 → − 1. Each transition is accompanied by a band inversion. To elucidate the physical mechanism governing this evolution, we analyze the topological phase transitions along the cut defined by A = 0.8[indicated by the red dashed line in Fig. 2(a)]. This series of phase transitions is due to the anisotropic response of the X and Y valleys to the EPL field. As shown in Fig. 3(a), for θ = 0 .40 π, the system exhibits a Chern number of N = 1. As θ decreases to 0 .31 π, the band gap at the X valley closes (projected onto the ¯Γ point) [Fig. 3(b)]. Upon further decreasing θ, the X valley gap reopens, driving the system into a trivial state with 
+
+N = 0 [Fig. 3(c)]. Subsequently, at θ = 0 .18 π, the gap at the Y valley closes [Fig. 3(d)]. Finally, as θ continues to decrease, a band inversion occurs at the Y valley, resulting in N = −1 [Fig. 3(e)]. Turning to the case of 
+
+JAM = 0 .26, where the system originates from the weak 4TSC phase, the introduction of EPL similarly drives a transition toward a strong TSC phase. We focus on the evolution along the cut at θ = 0 .225 π [red dashed line in Fig. 2(b)]. By varying the amplitude A, we observe distinct edge state behaviors. At A = 0 .1, the system hosts two Majorana edge modes of opposite chirality. Notably, the Chern number remains N = 0, as shown in Fig. 3(f). As A increases to 0 .46, the band gap at the Y valley closes [Fig. 3(g)]. Upon further increasing A,the gap at the Y valley reopens, yielding a phase with 
+
+N = 1 [Fig. 3(h)]. Finally, with a continued increase in 
+
+A, the X valley undergoes a gap closing and reopening process, returning the system to a state with N = 0, as illustrated in Figs. 3(i) and (j). In summary, we have demonstrated that the application of EPL consistently drives the system into a strong TSC phase characterized by an odd Chern number, regardless of whether the initial static phase is topologically trivial or a weak TSC state. Furthermore, our results highlight that the system allows for versatile topological control, where multiple phase transitions can be precisely realized by tuning the polarization angle 
+
+θ and the light amplitude A. To further illustrate the versatility of the system, a comprehensive discussion on the topological phase transitions cooperatively driven by the altermagnetic exchange strength and the light field amplitude is presented in the SM [96] 
+
+Floquet Engineering of Chiral Topological Phases in AM/s+d-wave SC .— Next, we consider the s + d-wave pairing by setting ∆0 = 0.1 and ∆1 = 0.3. For computational convenience, we set Ay /A x = 2 in the following analysis. Under these conditions, we observe the emergence of gapless bulk nodes in the system. The resulting band structure and the distribution of these nodes in the momentum space are presented in Figs. 4(a) and (b), respectively. Upon introducing an EPL, a full energy gap opens at the bulk nodes, extending across the entire Brillouin zone. Furthermore, we found that the interplay between AM and the optical drive uncovers remarkably rich topological phases. We observe that the system undergoes a cascade of sequential phase transitions, evolving into high-Chern-number states ranging from 
+
+N = −1 up to N = −4, as visualized in Figs. 4(c)-(f). Crucially, these topological invariants strictly obey the bulk-boundary correspondence: the phases with N =
+
+−3 and N = −4 signify the emergence of three and four chiral Majorana edge modes within the bulk gap, respectively. We thus conclude that the FCTSC phases in our driven AM system can be effectively engineered to host a highly tunable number of propagating gapless edge channels. 
+
+Conclusion .— In summary, we have theoretically investigated the topological phase transitions in an AM/SC heterostructure driven by EPL. To provide a comprehensive understanding, we conducted a comparative study considering two distinct superconducting pairings: s-wave and s + d-wave.                    
+
+> t-YYΓ-YΓ
+> -YYΓ-YYΓ
+> 𝐀 =-1 𝐀 =-2
+> 𝐀 =3𝐀 =4
+> Y
+> (a) (b)
+> (c) (d)
+> (e) (f)
+> 𝐀 𝐀
+> 𝐀 𝐀 ΓX
+> Y
+> 𝐀 𝐀 =0
+
+s + d-wave                                               
+
+> ΧYΓ
+> E
+> -0.4
+> 0.0
+> 0.4
+> E
+> E
+> -0.1
+> 0.0
+> 0.1
+> -0.1
+> 0.0
+> 0.1
+> Up
+> Down
+> 𝐀 =-3 𝐀 =-4
+> FIG. 4. Topological phases in an AM/ s+d-wave SC system. (a) Spin-resolved band structures along the high-symmetry path Y-Γ-X in the static limit ( Ax= 0 , J AM = 0 .3). (b) Illustration of the distribution of bulk nodes in the Brillouin zone. (c)-(f) Topological edge state spectra of the AM/ s+d-wave SC heterostructure along the surface Brillouin zone path ¯Y-¯Γ- ¯Y, driven by an EPL with a varying light amplitude Ax
+> and exchange strength JAM .The specific parameters and resulting phases are: (c) N=−1 with JAM = 0 .6 and Ax=0.98; (d) N=−2 with JAM = 0 .4 and Ax= 1 .05; (e) High-Chern-number state N=−3 with JAM = 0 .4 and Ax= 0 .7; and (f) N=−4 with JAM = 0 .4 and Ax= 0 .90. Other model parameters are fixed at μ= 0 , λ R= 0 .3, and t= 1 for all plots.
+
+By systematically analyzing the interplay between the AM strength and the external periodic driving, we demonstrated that the system can be driven into multiple FCTSC phases. For example, under the AM/ s-wave superconducting pairing, the system can evolve from either a topologically trivial phase or aweak TSC phase into a strong TSC state characterized by an odd Chern number N . Furthermore, within the vanishing BdG Chern number regime ( N = 0), our analysis reveals a subtle distinction between atrivial state and a weak FCTSC. The latter is notably characterized by the presence of two Majorana edge modes of opposite chirality, protected by translational symmetry. In comparison, for the s + d-wave pairing, the topological classification spans a much wider range, accessing high BdG Chern numbers from N = −1 to 
+
+N = −4 by adjusting the light amplitude and AM 5strength. Overall, the extensive tunability of these topological phases underscores the potential of Floquet engineering for manipulating exotic quantum states within AM/SC heterostructures. 
+
+Acknowledgments. — This work was supported by the National Key Research and Development Program of the Ministry of Science and Technology of China (Grant No. 2025YFA1411303), the National Natural Science Foundation of China (NSFC, Grants No. 12595330, No. 92365101, No. 12474151, No. 12547101, No. 12447141), and the Natural Science Foundation of Chongqing (Grant No. 2023NSCQ-JQX0024 and CSTB2023NSCQ-MSX0476). 
+
+[1] M. Sato and Y. Ando, Topological superconductors: areview, Rep. Prog. Phys. 80 , 076501 (2017). [2] X.-L. Qi and S.-C. Zhang, Topological insulators and superconductors, Rev. Mod. Phys. 83 , 1057 (2011). [3] M. Sato and S. Fujimoto, Majorana fermions and topology in superconductors, J. Phys. Soc. Jpn. 85 ,072001 (2016). [4] J. Alicea, New directions in the pursuit of majorana fermions in solid state systems, Rep. Prog. Phys. 75 ,076501 (2012). [5] S. R. Elliott and M. Franz, Colloquium: Majorana fermions in nuclear, particle, and solid-state physics, Rev. Mod. Phys. 87 , 137 (2015). [6] C. Beenakker, Search for majorana fermions in superconductors, Annu. Rev. Condens. Matter Phys. 4,113 (2013). [7] M. Mandal, N. C. Drucker, P. Siriviboon, T. Nguyen, A. Boonkird, T. N. Lamichhane, R. Okabe, A. Chotrattanapituk, and M. Li, Topological superconductors from a materials perspective, Chem. Mater. 35 , 6184 (2023). [8] C. Kallin and J. Berlinsky, Chiral superconductors, Rep. Prog. Phys. 79 , 054502 (2016). [9] T. Han, Z. Lu, Z. Hadjri, L. Shi, Z. Wu, W. Xu, Y. Yao, A. A. Cotten, O. Sharifi Sedeh, H. Weldeyesus, J. Yang, J. Seo, S. Ye, M. Zhou, H. Liu, G. Shi, Z. Hua, K. Watanabe, T. Taniguchi, P. Xiong, D. M. Zumb¨ uhl, L. Fu, and L. Ju, Signatures of chiral superconductivity in rhombohedral graphene, Nature 643 , 654 (2025). [10] J. Wang, Q. Zhou, B. Lian, and S.-C. Zhang, Chiral topological superconductor and half-integer conductance plateau from quantum anomalous hall plateau transition, Phys. Rev. B 92 , 064520 (2015). [11] G. Xu, B. Lian, P. Tang, X.-L. Qi, and S.-C. Zhang, Topological superconductivity on the surface of fe-based superconductors, Phys. Rev. Lett. 117 , 047001 (2016). [12] J. Hu, F. Yu, A. Luo, X.-H. Pan, J. Zou, X. Liu, and G. Xu, Chiral topological superconductivity in superconductor-obstructed atomic insulator-ferromagnetic insulator heterostructures, Phys. Rev. Lett. 132 , 036601 (2024). [13] C. Nayak, S. H. Simon, A. Stern, M. Freedman, and S. Das Sarma, Non-abelian anyons and topological quantum computation, Rev. Mod. Phys. 80 , 1083 (2008). [14] N. Read and D. Green, Paired states of fermions in two dimensions with breaking of parity and time-reversal symmetries and the fractional quantum hall effect, Phys. Rev. B 61 , 10267 (2000). [15] X.-L. Qi, T. L. Hughes, and S.-C. Zhang, Chiral topological superconductor from the quantum hall state, Phys. Rev. B 82 , 184516 (2010). [16] D. A. Ivanov, Non-abelian statistics of half-quantum vortices in p-wave superconductors, Phys. Rev. Lett. 86 ,268 (2001). [17] T. Karzig, C. Knapp, R. M. Lutchyn, P. Bonderson, M. B. Hastings, C. Nayak, J. Alicea, K. Flensberg, S. Plugge, Y. Oreg, C. M. Marcus, and M. H. Freedman, Scalable designs for quasiparticle-poisoning-protected topological quantum computation with majorana zero modes, Phys. Rev. B 95 , 235305 (2017). [18] B. Lian, X.-Q. Sun, A. Vaezi, X.-L. Qi, and S.-C. Zhang, Topological quantum computation based on chiral majorana fermions, Proc. Natl. Acad. Sci. U.S.A. 
+
+115 , 10938 (2018). [19] Y.-F. Zhou, Z. Hou, and Q.-F. Sun, Non-abelian operation on chiral majorana fermions by quantum dots, Phys. Rev. B 99 , 195137 (2019). [20] Q. L. He, L. Pan, A. L. Stern, E. C. Burks, X. Che, G. Yin, J. Wang, B. Lian, Q. Zhou, E. S. Choi, K. Murata, X. Kou, Z. Chen, T. Nie, Q. Shao, Y. Fan, S.-C. Zhang, K. Liu, J. Xia, and K. L. Wang, Retracted: Chiral majorana fermion modes in a quantum anomalous hall insulator–superconductor structure, Science 357 ,294 (2017). [21] A. Ribak, R. M. Skiff, M. Mograbi, P. K. Rout, M. H. Fischer, J. Ruhman, K. Chashka, Y. Dagan, and A. Kanigel, Chiral superconductivity in the alternate stacking compound 4Hb-TaS 2, Sci. Adv. 6, eaax9480 (2020). [22] S. Ran, C. Eckberg, Q.-P. Ding, Y. Furukawa, T. Metz, S. R. Saha, I.-L. Liu, M. Zic, H. Kim, J. Paglione, and N. P. Butch, Nearly ferromagnetic spin-triplet superconductivity, Science 365 , 684 (2019). [23] L. Jiao, S. Howard, S. Ran, Z. Wang, J. O. Rodriguez, M. Sigrist, Z. Wang, N. P. Butch, and V. Madhavan, Chiral superconductivity in heavy-fermion metal UTe 4,Nature 579 , 523 (2020). [24] F. Ming, X. Wu, C. Chen, K. D. Wang, P. Mai, T. A. Maier, J. Strockoz, J. W. F. Venderbos, C. Gonz´ alez, J. Ortega, S. Johnston, and H. H. Weitering, Evidence for chiral superconductivity on a silicon surface, Nat. Phys. 
+
+19 , 500 (2023). [25] E. R. Schemm, W. J. Gannon, C. M. Wishne, W. P. Halperin, and A. Kapitulnik, Observation of broken time-reversal symmetry in the heavy-fermion superconductor UPt 3, Science 345 , 190 (2014). [26] J. Jang, D. G. Ferguson, V. Vakaryuk, R. Budakian, S. B. Chung, P. M. Goldbart, and Y. Maeno, Observation of half-height magnetization steps in Sr 2RuO 4, Science 331 ,186 (2011). [27] X. Gong, M. Kargarian, A. Stern, D. Yue, H. Zhou, X. Jin, V. M. Galitski, V. M. Yakovenko, and J. Xia, Time-reversal symmetry-breaking superconductivity in epitaxial bismuth/nickel bilayers, Sci. Adv. 3, e1602579 6
+
+(2017). [28] O. Can, T. Tummuru, R. P. Day, I. Elfimov, A. Damascelli, and M. Franz, High-temperature topological superconductivity in twisted double-layer copper oxides, Nat. Phys. 17 , 519 (2021). [29] H. G. Suh, H. Menke, P. M. R. Brydon, C. Timm, A. Ramires, and D. F. Agterberg, Stabilizing even-parity chiral superconductivity in Sr 2RuO 4, Phys. Rev. Res. 2,032023 (2020). [30] J. R¨ ontynen and T. Ojanen, Topological superconductivity and high chern numbers in 2d ferromagnetic shiba lattices, Phys. Rev. Lett. 114 ,236803 (2015). [31] N. F. Q. Yuan, K. F. Mak, and K. T. Law, Possible topological superconducting phases of MoS 2, Phys. Rev. Lett. 113 , 097001 (2014). [32] P. K. Biswas, H. Luetkens, T. Neupert, T. St¨ urzer, C. Baines, G. Pascua, A. P. Schnyder, M. H. Fischer, J. Goryo, M. R. Lees, H. Maeter, F. Br¨ uckner, H.-H. Klauss, M. Nicklas, P. J. Baker, A. D. Hillier, M. Sigrist, A. Amato, and D. Johrendt, Evidence for superconductivity with broken time-reversal symmetry in locally noncentrosymmetric SrPtAs, Phys. Rev. B 87 ,180503 (2013). [33] J. D. Sau, R. M. Lutchyn, S. Tewari, and S. Das Sarma, Generic new platform for topological quantum computation using semiconductor heterostructures, Phys. Rev. Lett. 104 , 040502 (2010). [34] L. Fu and C. L. Kane, Superconducting proximity effect and majorana fermions at the surface of a topological insulator, Phys. Rev. Lett. 100 , 096407 (2008). [35] R. M. Lutchyn, J. D. Sau, and S. Das Sarma, Majorana fermions and a topological phase transition in semiconductor-superconductor heterostructures, Phys. Rev. Lett. 105 , 077001 (2010). [36] S. Kezilebieke, M. N. Huda, V. Vaˇ no, M. Aapro, S. C. Ganguli, O. J. Silveira, S. Glodzik, A. S. Foster, T. Ojanen, and P. Liljeroth, Topological superconductivity in a van der waals heterostructure, Nature 588 , 424 (2020). [37] A. Yazdani, B. A. Jones, C. P. Lutz, M. F. Crommie, and D. M. Eigler, Probing the local effects of magnetic impurities on superconductivity, Science 275 , 1767 (1997). [38] A. I. Buzdin, Proximity effects in superconductor-ferromagnet heterostructures, Rev. Mod. Phys. 77 , 935 (2005). [39] P. Fulde and R. A. Ferrell, Superconductivity in a strong spin-exchange field, Phys. Rev. 135 , A550 (1964). [40] F. S. Bergeret, A. F. Volkov, and K. B. Efetov, Odd triplet superconductivity and related phenomena in superconductor-ferromagnet structures, Rev. Mod. Phys. 
+
+77 , 1321 (2005). [41] V. V. Ryazanov, V. A. Oboznov, A. Y. Rusanov, A. V. Veretennikov, A. A. Golubov, and J. Aarts, Coupling of two superconductors through a ferromagnet: Evidence for a π junction, Phys. Rev. Lett. 86 , 2427 (2001). [42] T. Tokuyasu, J. A. Sauls, and D. Rainer, Proximity effect of a ferromagnetic insulator in contact with asuperconductor, Phys. Rev. B 38 , 8823 (1988). [43] L. ˇSmejkal, J. Sinova, and T. Jungwirth, Beyond conventional ferromagnetism and antiferromagnetism: A phase with nonrelativistic spin and crystal rotation symmetry, Phys. Rev. X 12 , 031042 (2022). [44] L. ˇSmejkal, J. Sinova, and T. Jungwirth, Emerging research landscape of altermagnetism, Phys. Rev. X 12 ,040501 (2022). [45] L. ˇSmejkal, R. Gonz´ alez-Hern´ andez, T. Jungwirth, and J. Sinova, Crystal time-reversal symmetry breaking and spontaneous hall effect in collinear antiferromagnets, Sci. Adv. 6, eaaz8809 (2020). [46] S. Hayami, Y. Yanagi, and H. Kusunose, Momentum-dependent spin splitting by collinear antiferromagnetic ordering, J. Phys. Soc. Jpn. 88 , 123702 (2019). [47] M. Naka, S. Hayami, H. Kusunose, Y. Yanagi, Y. Motome, and H. Seo, Spin current generation in organic antiferromagnets, Nat. Commun. 10 , 4305 (2019). [48] L.-D. Yuan, Z. Wang, J.-W. Luo, E. I. Rashba, and A. Zunger, Giant momentum-dependent spin splitting in centrosymmetric low-z antiferromagnets, Phys. Rev. B 
+
+102 , 014422 (2020). [49] H.-Y. Ma, M. Hu, N. Li, J. Liu, W. Yao, J.-F. Jia, and J. Liu, Multifunctional antiferromagnetic materials with giant piezomagnetism and noncollinear spin current, Nat. Commun. 12 , 2846 (2021). [50] L.-D. Yuan, Z. Wang, J.-W. Luo, and A. Zunger, Prediction of low-z collinear and noncollinear antiferromagnetic compounds having momentum-dependent spin splitting even without spin-orbit coupling, Phys. Rev. Mater. 5, 014409 (2021). [51] J. Krempask´ y, L. ˇSmejkal, S. W. D’Souza, M. Hajlaoui, G. Springholz, K. Uhl´ ıˇ rov´ a, F. Alarab, P. C. Constantinou, V. Strocov, D. Usanov, W. R. Pudelko, R. Gonz´ alez-Hern´ andez, A. Birk Hellenes, Z. Jansa, H. Reichlov´ a, Z. ˇSob´ aˇ n, R. D. Gonzalez Betancourt, P. Wadley, J. Sinova, D. Kriegner, J. Min´ ar, J. H. Dil, and T. Jungwirth, Altermagnetic lifting of kramers spin degeneracy, Nature 626 , 517 (2024). [52] I. Mazin (The PRX Editors), Editorial: Altermagnetism—a new punch line of fundamental magnetism, Phys. Rev. X 12 , 040002 (2022). [53] A. Bose, S. Vadnais, and A. Paramekanti, Altermagnetism and superconductivity in a multiorbital 
+
+t − j model, Phys. Rev. B 110 , 205120 (2024). [54] Y.-X. Li, Realizing tunable higher-order topological superconductors with altermagnets, Phys. Rev. B 109 ,224502 (2024). [55] Y.-X. Li and C.-C. Liu, Majorana corner modes and tunable patterns in an altermagnet heterostructure, Phys. Rev. B 108 , 205410 (2023). [56] J. A. Ouassou, A. Brataas, and J. Linder, dc josephson effect in altermagnets, Phys. Rev. Lett. 131 , 076003 (2023). [57] C. W. J. Beenakker and T. Vakhtel, Phase-shifted andreev levels in an altermagnet josephson junction, Phys. Rev. B 108 , 075425 (2023). [58] H.-Y. Sun, L. Liu, Y.-T. Zhang, and Z. Qiao, Altermagnetism-induced iron-based third-order topological superconductivity, Phys. Rev. B 112 ,195402 (2025). [59] S. Sumita, M. Naka, and H. Seo, Phase-modulated superconductivity via altermagnetism, Phys. Rev. B 112 ,144510 (2025). [60] H. G. Giil and J. Linder, Superconductor-altermagnet memory functionality without stray fields, Phys. Rev. B 
+
+109 , 134511 (2024). [61] C. Sun, A. Brataas, and J. Linder, Andreev reflection in 7
+
+altermagnets, Phys. Rev. B 108 , 054511 (2023). [62] P. Chatterjee and V. Juriˇ ci´ c, Interplay between altermagnetism and topological superconductivity on an unconventional superconducting platform, Phys. Rev. B 
+
+112 , 054503 (2025). [63] D. Zhu, D. Liu, Z.-Y. Zhuang, Z. Wu, and Z. Yan, Field-sensitive dislocation bound states in two-dimensional d-wave altermagnets, Phys. Rev. B 110 , 165141 (2024). [64] S. A. A. Ghorashi, T. L. Hughes, and J. Cano, Altermagnetic routes to majorana modes in zero net magnetization, Phys. Rev. Lett. 133 , 106601 (2024). [65] D. Zhu, Z.-Y. Zhuang, Z. Wu, and Z. Yan, Topological superconductivity in two-dimensional altermagnetic metals, Phys. Rev. B 108 , 184505 (2023). [66] J. H. Shirley, Solution of the schr¨ odinger equation with a hamiltonian periodic in time, Phys. Rev. 138 , B979 (1965). [67] H. Sambe, Steady states and quasienergies of a quantum-mechanical system in an oscillating field, Phys. Rev. A 
+
+7, 2203 (1973). [68] N. Goldman and J. Dalibard, Periodically driven quantum systems: Effective hamiltonians and engineered gauge fields, Phys. Rev. X 4, 031027 (2014). [69] A. Eckardt and E. Anisimovas, High-frequency approximation for periodically driven quantum systems from a floquet-space perspective, New J. Phys. 17 ,093039 (2015). [70] M. Bukov, L. D’Alessio, and A. Polkovnikov, Universal high-frequency behavior of periodically driven systems: from dynamical stabilization to floquet engineering, Adv. Phys. 64 , 139 (2015). [71] T. Oka and S. Kitamura, Floquet engineering of quantum materials, Annu. Rev. Condens. Matter Phys. 10 , 387 (2019). [72] T. Yokoyama, Floquet engineering triplet superconductivity in superconductors with spin-orbit coupling or altermagnetism, Phys. Rev. B 112 , 024512 (2025). [73] T. ˇCadeˇ z, R. Mondaini, and P. D. Sacramento, Edge and bulk localization of floquet topological superconductors, Phys. Rev. B 99 , 014301 (2019). [74] M. Thakurathi, D. Loss, and J. Klinovaja, Floquet majorana fermions and parafermions in driven rashba nanowires, Phys. Rev. B 95 , 155407 (2017). [75] A. A. Reynoso and D. Frustaglia, Unpaired floquet majorana fermions without magnetic fields, Phys. Rev. B 87 , 115420 (2013). [76] D. Wang, A. K. Ghosh, Y. Tao, F. Ma, and C. Song, Emerging of anomalous higher-order topological phases in altermagnet/topological insulator heterostructure by floquet engineering, Adv. Sci. 13 , 2502203 (2026). [77] A. K. Ghosh, T. Nag, and A. Saha, Floquet second order topological superconductor based on unconventional pairing, Phys. Rev. B 103 , 085413 (2021). [78] A. Kundu and B. Seradjeh, Transport signatures of floquet majorana fermions in driven topological superconductors, Phys. Rev. Lett. 111 , 136402 (2013). [79] K. Takasan, A. Daido, N. Kawakami, and Y. Yanase, Laser-induced topological superconductivity in cuprate thin films, Phys. Rev. B 95 , 134508 (2017). [80] M. Benito, A. G´ omez-Le´ on, V. M. Bastidas, T. Brandes, and G. Platero, Floquet engineering of long-range p-wave superconductivity, Phys. Rev. B 90 , 205127 (2014). [81] D. Mondal, A. K. Ghosh, T. Nag, and A. Saha, Topological characterization and stability of floquet majorana modes in rashba nanowires, Phys. Rev. B 107 ,035427 (2023). [82] M. Claassen, D. M. Kennes, M. Zingl, M. A. Sentef, and A. Rubio, Universal optical control of chiral superconductors and majorana modes, Nat. Phys. 15 ,766 (2019). [83] L. Jiang, T. Kitagawa, J. Alicea, A. R. Akhmerov, D. Pekker, G. Refael, J. I. Cirac, E. Demler, M. D. Lukin, and P. Zoller, Majorana fermions in equilibrium and in driven cold-atom quantum wires, Phys. Rev. Lett. 106 ,220402 (2011). [84] Q.-J. Tong, J.-H. An, J. Gong, H.-G. Luo, and C. H. Oh, Generating many majorana modes via periodic driving: A superconductor model, Phys. Rev. B 87 , 201109 (2013). [85] Y. Peng, Floquet higher-order topological insulators and superconductors with space-time symmetries, Phys. Rev. Res. 2, 013124 (2020). [86] P. Molignini, E. van Nieuwenburg, and R. Chitra, Sensing floquet-majorana fermions via heat transfer, Phys. Rev. B 96 , 125144 (2017). [87] C. Peng, A. Haim, T. Karzig, Y. Peng, and G. Refael, Floquet majorana bound states in voltage-biased planar josephson junctions, Phys. Rev. Res. 3, 023108 (2021). [88] D. E. Liu, A. Levchenko, and H. U. Baranger, Floquet majorana fermions for topological qubits in superconducting devices and cold-atom systems, Phys. Rev. Lett. 111 , 047002 (2013). [89] D. T. Liu, J. Shabani, and A. Mitra, Floquet majorana zero and π modes in planar josephson junctions, Phys. Rev. B 99 , 094303 (2019). [90] Z. Yang, Q. Yang, J. Hu, and D. E. Liu, Dissipative floquet majorana modes in proximity-induced topological superconductors, Phys. Rev. Lett. 126 , 086801 (2021). [91] S. Kitamura and H. Aoki, Floquet topological superconductivity induced by chiral many-body interaction, Commun. Phys. 5, 174 (2022). [92] D. Z. Haxell, M. Coraiola, D. Sabonis, M. Hinderling, S. C. ten Kate, E. Cheah, F. Krizek, R. Schott, W. Wegscheider, W. Belzig, J. C. Cuevas, and F. Nichele, Microwave-induced conductance replicas in hybrid josephson junctions without floquet—andreev states, Nat. Commun. 14 , 6798 (2023). [93] S. Yao, Z. Yan, and Z. Wang, Topological invariants of floquet systems: General formulation, special properties, and floquet topological defects, Phys. Rev. B 96 , 195303 (2017). [94] Y. Peng and G. Refael, Floquet second-order topological insulators from nonsymmorphic space-time symmetries, Phys. Rev. Lett. 123 , 016806 (2019). [95] H. H. Yap, L. Zhou, C. H. Lee, and J. Gong, Photoinduced half-integer quantized conductance plateaus in topological-insulator/superconductor heterostructures, Phys. Rev. B 97 , 165142 (2018). [96] See the Supplemental Material for discussions on the intrinsic band structure and momentum-dependent spin splitting in the absence of the EPL, as well as the calculations of the Chern numbers and the band structure evolution within the JAM -Ax parameter space.

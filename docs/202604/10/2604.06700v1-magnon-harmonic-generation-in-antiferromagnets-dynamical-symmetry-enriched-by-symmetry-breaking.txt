@@ -1,0 +1,3594 @@
+Title: Magnon harmonic generation in antiferromagnets: Dynamical symmetry enriched by symmetry breaking
+
+URL Source: https://arxiv.org/pdf/2604.06700v1
+
+Published Time: Thu, 09 Apr 2026 00:40:49 GMT
+
+Number of Pages: 38
+
+Markdown Content:
+# Magnon harmonic generation in antiferromagnets : Dynamical symmetry enriched by symmetry breaking 
+
+Yuto Jita, 1, ∗ Minoru Kanega, 1 Takumi Ogawa, 2 Shunsuke C. Furuya, 3, 4 and Masahiro Sato 1, †
+
+> 1
+
+Department of Physics, Chiba University, Chiba 263-8522, Japan 
+
+> 2
+
+Department of Physics, Ibaraki University, Mito, Ibaraki 310-8512, Japan 
+
+> 3
+
+Department of Liberal Arts, Saitama Medical University, Moroyama, Saitama 350-0495, Japan 
+
+> 4
+
+Institute for Solid State Physics, The University of Tokyo, Kashiwa, 277-8581, Japan 
+
+(Dated: April 9, 2026) In recent years, techniques of intense THz laser have enabled us to experimentally observe nonlin-ear spin dynamics in antiferromagnets since the elementary excitations such as magnons reside on a THz to GHz range in antiferromagnets and THz laser thus can directly excite them. We numerically and theoretically investigate THz-laser or GHz-wave driven harmonic generations in typical ordered phases of antiferromagnets: N´ eel, canted and weak ferromagnetic phases. The radiation waves (harmonic generations) are created by the incident-wave driven magnon dynamics. We point out that magnetic orders and phase transitions can change the spectra of harmonic generations, differ-ently from those of metallic, semiconductor, or atomic-gas systems without (spontaneous) symmetry breakings. We consider both the magnon harmonic generation driven by standard single-color laser and that by two-color laser in the antiferromagnets, and find several dynamical symmetries and the corresponding selection rules of the harmonic generations. These results indicate that the magnon harmonic generation spectra provide new information about symmetry or symmetry breaking of antiferromagnets. 
+
+I. INTRODUCTION 
+
+Recent developments of terahertz (THz) laser tech-nologies open up new fields in science and technology. Nonlinear optical phenomena in solids have actively been studied in more recent years. Among the most active top-ics is high harmonic generation (HHG) [1–4], including multi-color-laser-driven HHG [5–11]. Suppose that we apply an external electromagnetic wave with frequency Ω to a material, an outgoing wave with multiple frequen-cies of Ω, nΩ with n = 1 , 2, 3, . . . , is emitted. This phenomenon is referred to as HHG (see Fig. 1) and is one of the simplest nonlinear optical responses. HHG was first observed in atomic gas systems [12, 13]. Developments in strong-field laser technologies [14] ex-panded the playing field to solid systems of semiconduc-tors and metals [15–21]. For instance, more than twenty-th order peaks of HHG spectra have been observed in a semiconductor GaSe [16]. In these experiments, the electric-dipolar radiation is dominant in generating out-going wave because the coupling between electric-field and charge is the strongest one in the light-matter inter-action. We also witness important scientific and techno-logical advances in a different frequency region, namely, in terahertz (THz) lasers [22–30]. Strong-field THz lasers with magnitude 1 − 10 MV /cm have been put into prac-tice in the last decades. THz laser (typically with 0 .1 − 10 THz frequency) has an extreme importance for its ideal matching with energy scales of elementary excitations in magnetic Mott insula-tors, especially, antiferromagnets. THz electromagnetic   
+
+> ∗yutojj130@gmail.com
+> †sato.phys@chiba-u.jp Observation of magnetic dipole radiation or nonlinear spin dynamics
+
+FIG. 1. Schematic diagram of harmonic generation in an-tiferromagnetic insulator. When we apply a strong enough THz laser pulse with frequency Ω to an antiferromagnet, we can observe a radiation wave consisting of mixed waves with frequencies Ω, 2Ω, 3Ω, . . . through the spin-light coupling. 
+
+wave can cause the resonant absorption or generation of magnetic excitations, and strong enough THz laser can even induce nonlinear spin dynamics beyond the linear response. Hence, intense THz laser is ideal to investi-gate and control magnetic dynamics in magnetic Mott insulators. There are numerous experimental studies of THz-laser driven magnetic dynamics in various magnetic Mott insulators [27, 31–52]. Speaking of HHG, several papers reported observations of harmonic generations in antiferromagnetic insulators in the fairly recent past: up to third-order harmonic generations in a pump-probe ex-periment by an intense THz laser pulse [53] and up to sixth-order harmonic generations in a double-pulse ex-periment [54]. The spin-light coupling is generally much weaker than the charge-light one, but the sufficiently strong THz wave makes it possible to generate third- or sixth-order harmonics. These experimental studies have stimulated theoreti-cal studies of nonlinear optical responses and harmonic generations in antiferromagnetic insulators [10, 55–69] including multiferroics and quantum spin liquids. In 
+
+> arXiv:2604.06700v1 [cond-mat.str-el] 8 Apr 2026
+
+2particular, one can find theoretical studies on HHG in quantum spin systems such as one-dimensional quan-tum antiferromagnets [62], two-dimensional Kitaev spin-liquids [65], and two-dimensional Shastry-Sutherland model in a quantum disordered phase known as the dimer-singlet phase [10], done in collaboration with our group. Reference [10] investigated HHG driven by two-color laser pulse [70–82]. The research of HHG driven by multi-color laser is growing in addition to that by the usual one-color laser. Even at this stage, one lacks firm understanding of the relation between HHG and magnetic ordered mate-rials. A key feature of magnetic Mott insulators is that magnetic order and symmetry breaking can be controlled by tuning temperature and external magnetic field. We are going to show that such an ordering makes the HHG in magnetic Mott insulators richer than those in semi-conductor or atomic-gas systems without any symmetry breaking. This paper undertakes this fundamental ques-tion of how basic kinds of magnetic orders and symme-try breakings make an impact on harmonic generations in magnetic Mott insulators. In particular, we consider the N´ eel order, the canted order, and the weak ferromag-netic (WF) order in antiferromagnets, which are repre-sentative magnetically ordered states with magnon exci-ations [83, 84] in a THz range. We adopt numerical and theoretical approaches to this question. On the one hand, we numerically solve the Landau-Lifshitz-Gilbert (LLG) equation of microscopic magnetic moments [85–93], faithfully taking magnetic ex-change interactions into account. The LLG equation is well known as a standard semiclassical equation that de-scribes dynamical evolution of magnetic moments, best suited to magnetically ordered phases of our target. On the other hand, we take advantage of a theoretical con-cept, dynamical symmetry [10, 62, 65, 94–100], to es-tablish basic understanding about the essential role of magnetic orders in magnon harmonic generation spec-tra. The numerically obtained spectrum shows a selec-tion rule, systematic disappearance of harmonic genera-tion peaks. The selection rule possesses rich information about interplay of underlying system and applied laser fields: magnetic orders, direction of ac magnetic field of laser fields, and spatial symmetry of laser fields. We show how dynamical symmetry determines the selection rule of the spectrum and how a magnetic phase transition or a symmetry breaking alters the dynamical symmetry. We also adopt the spin-wave theory [83, 84] to obtain a microscopic insight into harmonic generation spectra in the ordered phases in antiferromagnets. Our numerical and theoretical investigations in this paper point out that harmonic generation spectrum will provide information on characteristics of magnetic orders and (spontaneous) symmetry breaking. We organize this paper as follows. Section II gives two types of the model Hamiltonians for antiferromag-netic Mott insulators. One model shows the N´ eel and canted phases, depending on the strength of static mag-netic field. These magnetic orders spontaneously break the symmetry of Hamiltonian in different manners. The other model shows the WF phase, where the magnetic or-der keeps the full symmetry of Hamiltonian. In Sec. III, we define the laser pulse we use in the present work. This study focuses on two sorts of laser pulses: A standard one-color laser with linear polarization and a two-color laser whose ac field draws a Cℓ+1 -symmetric (multiple-leaf shape) closed trajectory ( ℓ = 2 , 3, · · · ). In Sec. IV, we explain the LLG equation, which generally describes the spin dynamics in magnetically ordered states. We will use this equation of motion to quantitatively inves-tigate the magnon harmonic generation spectrum in an-tiferromagnets. Sections V and VI are the main parts of this work, in which we comprehensively investigate the magnon harmonic generations driven by THz laser or GHz wave. We explore the harmonic generations driven by one-color laser in Sec. V. We find the similarity and difference between the N´ eel and canted phases. These two orders appear in the same Hamiltonian, but we find that these two systems satisfy different dynamical sym-metries, and as a result, their harmonic generation spec-tra follow different selection rules. Namely, we see that the symmetry or symmetry breaking (phase transitions) makes the harmonic generation spectrum richer. We also compare the spectra of the canted and WF phases. These two states have the same magnetic ordering pattern, but they follow different Hamiltonians. We find the similarity and difference between the spectra of the canted and WF phases. In Sec. V, we study two-color laser driven har-monic generations and we show that multiple-color laser makes the harmonic spectra richer. In particular, when we apply Cℓ-symmetric two-color laser to the N´ eel phase, we find that non-trivial dynamical symmetries and the resulting selection rules emerge. We show that these in-teresting selection rules stem from two properties of the N´ eel state: (i) The N´ eel state possesses the U(1) spin-rotation symmetry and (ii) two-color laser is coupled to magnets through the Zeeman interaction between the to-tal spin and the laser magnetic field. In Sec. VII, we dis-cuss a few non-perturbative effects of intense THz laser in the magnon harmonic generation: A power law of the radiation intensity and a red shift of the resonant peak position. Finally, we summarize our results in Sec. VIII. We put several calculations and the detailed properties of the harmonic generation in Appendices.  
+
+> II. MODEL OF MAGNETIC MOTT INSULATORS
+
+This section provides details of our models whose laser-driven dynamics is to be investigated in later sections. We define two model Hamiltonians of magnetic Mott in-sulator on the square lattice, which show N´ eel, canted, and WF phases. The Hamiltonians contain spin degree of freedom only. This is because the charge degree of freedom is frozen in the Mott insulating phases. We con-3sider the setup that the frequency of applied THz laser and temperature are both much lower than the charge gap. Besides, the temperature needs to be sufficiently low so that the magnetic order develops well. For simplicity, we focus on the harmonic generations in two-dimensional models, but (as we will briefly explain in Appendix C) similar magnon harmonic generations also occur in three-dimensional models of amtiferromagnets.  
+
+> A. N´ eel and canted orders
+
+The first model Hamiltonian is ˆHN-C = J X
+
+> ⟨r,r′⟩
+
+ˆSr · ˆSr′ − K X
+
+> r
+
+( ˆSz 
+
+> r
+
+)2
+
+− B X
+
+> r
+
+ˆSz 
+
+> r
+
+, (2.1) where r = rxa0ex + ry a0ey specifies a site on the square lattice ( a0 is the lattice constant) and ⟨r, r′⟩ denotes a nearest-neighbor pair of sites. The coordinate ( rx, r y ) are a pair of integers, and ex and ey are unit vectors along the 
+
+x and y directions, respectively. ˆSr = ( ˆSx 
+
+> r
+
+, ˆSy 
+
+> r
+
+, ˆSz 
+
+> r
+
+)⊤ is the spin operator at the site r. Hereafter, we will use the unit of ℏ = 1, but we occasionally recover ℏ, especially when we consider the spin angular momentum. The peri-odic boundary condition is imposed on the square lattice. Parameters J(> 0) and K(> 0) represent the isotropic Heisenberg antiferromagnetic exchange interaction and the easy-axis single-ion anisotropy along the z axis, re-spectively, and B represents the static magnetic field. Note that the g factor and the Bohr magneton μB are implicitly included in the parameter B, allowing us to identify the magnetic field and the Zeeman energy for simplicity. Throughout this paper, we define the spin operators so that the spins tend to be point to the mag-netic field B = (0 , 0, B ) in the energetic sense [see the Zeeman term of Eq. (2.1)]. Figure 2 (a) shows the ground-state phase diagram of the model (2.1). The ground state has the N´ eel phase with A and B sublattices for weak magnetic field (B < B sf ). The N´ eel order spontaneously breaks the translation symmetry of the model (2.1), leading to the double degeneracy of the ground state and the finite ex-citation gap. Reflecting the two-sublattice structure of the N´ eel order along the z axis, there are two kinds of magnons. Let us call them α mode and β mode, in this paper. The energy bands ϵN´ eel ,α  
+
+> k
+
+and ϵN´ eel ,β  
+
+> k
+
+of α and β
+
+modes have a minimum at k = 0 (see Appendix A). This magnon gap, an excitation energy gap to create a single magnon, is finite in the presence of an easy-axis magnetic anisotropy K. Figure 2 (b) shows the B/J dependence of magnons gaps ϵN´ eel ,α  
+
+> k=0
+
+and ϵN´ eel ,β  
+
+> k=0
+
+[Eqs. (A22) and (A23)]. Figure 2 (e) gives a rough sketch of the α and β modes in the N´ eel phase. We can distinguish the α and β modes from the viewpoint of the precession of the total mag-netic moment. The precessing directions in these modes                         
+
+> FIG. 2. (a) Ground-state phase diagram of model (2.1). The N´ eel phase exists for weak magnetic field ( B < B sf ) and the canted phase appears for strong magnetic field ( B > B sf ). The point B=Bsf corresponds to the spin-flop transition, that separates the N´ eel and canted phases. Red and blue arrows respectively denote A- and B-sublattice magnetic mo-ments. Vectors ex,y,z are the orthonormal basis vectors of the Cartesian coordinate. Panels (b), (c), and (d) show the
+> B/J -dependence of the magnon gap of two magnon bands in the N´ eel phase, the canted phase and the WF phase, re-spectively. Panels (e) and (f) schematically show dynamics of magnon with wavevector k=0(i.e., spin precession mo-tion) relevant to the harmonic generation. The red arrow (S1) and the blue arrow ( S2) represent the precessions of A-and B-sublattice spins on the nearest-neighbor sites, respec-tively. The black arrow ( M) shows the dynamics of uniform magnetization M=S1+S2.Panel (e) corresponds to the N´ eel phase and panel (f) corresponds to the canted and WF phases.
+
+are opposite. The increase of B/J reduces the lowest magnon gap 
+
+ϵN´ eel ,β  
+
+> 0
+
+. The β-mode magnon gets softened at B = Bsf ,that is, it has an infinitesimal excitation energy there. The system undergoes a spin-flop transition at B = Bsf 
+
+from the N´ eel phase ( B < Bsf ) to the canted phase (B > B sf ). Figure 2 (c) shows magnon gaps at k = 0
+
+in the canted phases. The canted phase also hosts the two magnon modes with the same label, α and β. The 
+
+β mode in the canted phase remains gapless at k = 0,that is, ϵCant ,β  
+
+> 0
+
+= 0 as shown in Fig. 2 (c). This gap-less feature comes out of generic Nambu-Goldstone (NG) theorem about spontaneous breaking of continuous sym-metry [101–104]. In the canted phase, the U(1) rotation symmetry around the Sz axis (i.e., a contonuous symme-try) spontaneously breaks and the gapless β mode can be viewed as the NG mode. Figure 2 (f) gives a rough sketch of the α and β modes 4in the canted phase. The α model involves the precession of the total magnetic moment. By contrast, the total magnetic moment in the β mode is oscillating along the 
+
+z axis but not precessing. Finally, we note the temperature effect in the canted phase. We will consider a low but finite temperature setup of the canted phase to compute the harmonic generation. However, Mermin-Wagner-Hohenberg the-orem [105, 106] tells us that any spontaneous break-ing of continuous symmetry (including the U(1) sym-metry breaking in the canted phase) cannot occur at fi-nite temperatures in two-dimensional systems. There-fore, strictly speaking, the canted phase in our two-dimensional model disappears once we introduce a finite temperature. We will introduce a very weak easy-plane anisotropy + Dy
+
+P 
+
+> r
+
+( ˆSy 
+
+> r
+
+)2 with Dy /J = 0 .01 so that the canted spin order in the Sx-Sz plane survives. We verify that the above weak anisotropy does not affect the spec-tra of the harmonic generation when the laser frequency is close to the gapped ( α) mode. In real materials, the canted phase is protected by such a weak anisotropy or three dimensionality due to weak inter-plane interactions.  
+
+> B. Weak-ferromagnetic order
+
+Here we introduce another square-lattice model that shows the WF phase. The model has the Hamiltonian, ˆHWF = J X
+
+> ⟨r,r′⟩
+
+ˆSr · ˆSr′ − B X
+
+> r
+
+ˆSz 
+
+> r
+
+(2.2) 
+
+− D X
+
+> r
+
+X
+
+> ρ=ex,ey
+
+(−1) (rx+ry )( ˆSz 
+
+> r
+
+ˆSx 
+
+> r+ρ
+
+− ˆSx 
+
+> r
+
+ˆSz
+
+> r+ρ
+
+),
+
+with the nearest-neighbor Heisenberg antiferromagnetic exchange interaction (first term), the Zeeman energy in the z direction (second term), and the staggered Dzyaloshinskii-Moriya (DM) interaction (third term). The site r on the square lattice is represented as r =
+
+rxa0ex + ry a0ey , where rx and ry are integers. The DM interaction may be rewritten as −(−1) (rx+ry )D · ( ˆSr ×
+
+ˆSr+ρ) with the DM vector D = (0 , D, 0). Since the di-rection of the DM interaction is alternating along the x
+
+and y directions, we call it the staggered DM interaction. The model (2.2) has the WF state as the ground state. The spin configuration in the WF phase is similar to that in the canted phase, and the precession patterns of two magnon modes in the WF phase are also like those of the canted phase, as shown in the panel (f) of Fig. 2. However, the magnon gap shows a different B/J 
+
+dependence. Figure 2 (d) shows the B/J dependence of the two magnon gaps, ϵWF ,α  
+
+> 0
+
+and ϵWF ,β  
+
+> 0
+
+, in the WF phase. Whereas the canted phase has the gapless mode (ϵCant ,β  
+
+> 0
+
+= 0) for B > B sf , the WF phase has no gapless mode for B/J > 0. The WF phase of the model (2.2) has the gapless mode only for B = 0 because the model has the U(1) symmetry around the y axis for B = 0 but not                   
+
+> FIG. 3. (a) Schematic figure of laser pulse field Blaser (t) as a function of time t. Panels (b) and (c) depict the trajectories drawn by the arrow head of the ac field [ b−1(t) + bℓ(t)] /√2in two-color laser pulse B2,ℓ (t) [Eq. (3.4)] with (b) ℓ= 2 and (c) ℓ= 3 for single period 0 ≤t−t0≤2π/ Ω. We consider the setup that the ac magnetic field B2,ℓ (t) is in the x-yplane. The arrowhead depicts the direction of change in time.
+
+for B > 0. The magnetic field B breaks the U(1) symme-try around the y axis and thus yields the nonzero magnon gap in the WF phase. This paper compares the harmonic generation in the canted and WF phase to clarify the fact that the harmonic generation spectrum is determined not only the symmetry of the ground state but also by that of the Hamiltonian.  
+
+> III. LASER PULSE
+
+The previous section defined two models of magnetic Mott insulators. Here, we take into account the laser pulse and introduce it into our model to discuss the har-monic generation. As we mentioned, we assume that both the temperature and the laser frequency need to be lower than the Mott gap. This condition is required to drop the ac electric field of the laser pulse. Let Bac (t)be the ac magnetic field of the laser pulse. The mag-netic Mott insulator interacts with the temporally oscil-lating external field Bac (t) through the Zeeman interac-tion. Namely, the full Hamiltonian ˆH(t) incorporates the magnetic interactions and the laser fields as follows. ˆH(t) = ˆHmag + ˆHext (t), (3.1) ˆHext (t) = −Bac (t) · X
+
+> r
+
+ˆSr , (3.2) Here, ˆHmag is the Hamiltonian of the magnetic Mott in-sulator in the absence of the laser pulse, such as ˆHN-C and ˆHWF . As the ac Zeeman energy (3.2) shows, we consider the laser pulse as a plane wave coupled to the total spin operator, P 
+
+> r
+
+ˆSr . The electromagnetic wave including the laser pulse with the THz frequency has a wavelength much longer than the typical length scale (lattice spac-ing) of crystals, and is thus deemed a plane wave when applied to magnetic Mott insulators. We adopt two kinds of external ac magnetic field due to the laser Bac (t): one- and two-color laser pulses, which we denote B1(t) and B2,ℓ (t), respectively. Both B1(t)and B2,ℓ (t) are laser-pulse fields with a Gaussian enve-5                         
+
+> TABLE I. Typical THz-laser intensities to observe magnetic harmonic generation [62, 107]. In this paper, we will often set the strength of ac magnetic field Bac = 0 .1J, in which J
+> is the strength of exchange interaction of antiferromagnets. Typical range of Jis 1 ≲J/k B≲100. As one will see soon,
+> Bac = 0 .1Jis strong enough to observe second, and third magnon harmonic generations. Fields J/k B= 10[K] J/k B= 100[K] ac magnetic field Bac = 0 .1J0.744[T] 7.44 [T] ac electric field Eac =cB ac 2.23 [MV/cm] 22 .3 [MV/cm]
+
+lope. 
+
+B1(t) = Bac exp 
+
+
+
+− (t − t0)2
+
+2σ2
+
+
+
+cos[Ω( t − t0)] , (3.3) 
+
+B2,ℓ (t) = b−1(t) + bℓ(t)
+
+√2 exp 
+
+
+
+− (t − t0)2
+
+2σ2
+
+
+
+, (3.4) 
+
+bℓ(t) = Bac 
+
+
+
+cos[ ℓΩ( t − t0)] , − sin[ ℓΩ( t − t0)] , 0
+
+
+
+,
+
+(3.5) where Ω, σ, and Bac denote the laser frequency, the pulse width, and the field strength at t = t0 [Fig. 3 (a)]. The dimensionless parameter ℓ takes a positive integer 
+
+ℓ = 1 , 2, 3, · · · and defines the spatial symmetry of the two-color laser pulse [Fig. 3 (b) for ℓ = 2]. In the case of a monochromatic laser, the polarization direction of the laser magnetic field Bac is considered to be in all direc-tions: x, y, and z. On the other hand, the ac field B2,ℓ (t)of two-color laser is chosen to be in the x-y plane, i.e., perpendicular to the dc magnetic field B.The pulse width σ is fixed to 20 ℏ/J in the following numerical calculations. In the mathematical sense, the amplitude of Gaussian pulse is always finite in all range of time −∞ < t − t0 < ∞. However, in our numerical calculations, we apply the laser pulse in a finite time window ti < t −t0 < t end , in which the radiation time and the ending time are chosen to be ti = −6σ and tend =9σ. In fact, the laser amplitudes of B1(t) and B2,ℓ (t)are negligibly small outside the above time window. We prepare the thermal equilibrium state of ˆHmag at t−t0 =
+
+ti.While Eq. (3.3) represents the linearly polarized single-color laser pulse, Eq. (3.4) represents the two-color laser pulse with a more complex spatial pattern. Figure 3 (b) and (c) show trajectories of [ b−1(t) + bℓ(t)] /√2 on the 
+
+xy plane for ℓ = 2 and ℓ = 3, respectively. The trajec-tory for ℓ = 2 has the C3 symmetry, namely, is identi-cal under the 2 π/ 3 rotation around the origin of the xy 
+
+plane. Generically, B2,ℓ (t) shows the Cℓ+1 symmetry for 
+
+ℓ = 2 , 3, · · · .Finally, we comment on the intensity of THz laser. If we use current experimental techniques of THz laser [22, 26], its ac electric field strength can exceed ∼ 1 MV/cm, which corresponds to the ac magnetic field with ∼ 0.3 T. On the other hand, the typical value of the exchange cou-pling in antiferromagnettic insulators is around J/k B =1 − 100 K. Table I indicates that for standard antiferro-magnets, the ac magnetic field with Bac = 0 .1J can be created by using the current laser techniques. As one will see soon later, we numerically show that the ac magnetic field with Bac = 0 .1J is strong enough to observe lower-order (second, third, etc.) magnon harmonic generations in antiferromagnets.  
+
+> IV. LANDAU-LIFSHITZ-GILBERT EQUATION
+
+Let us briefly review the LLG equation that our numer-ical calculations of spin dynamics are based on. While the spin has a quantum origin, it can be seen as a clas-sical vector with a fixed length when the system belongs to a long-range magnetically ordered phase. We regard ˆSr at each site r as a classical vector ℏmr with a fixed length, ℏm, and investigate the spin dynamics based on the following stochastic LLG equation. 
+
+dmr
+
+dt = 1
+
+ℏ mr ×
+
+ ∂H(t)
+
+∂mr
+
++ ξr (t)
+
+
+
++ αm mr × dmr
+
+dt ,
+
+(4.1) where ξr (t) is a white-noise random field that represents the thermal fluctuation of mr at time t. The positive parameter α is called Gilbert damping coefficient. Note that H(t) is a classical counter part of Eq. (3.1), where every ˆSr is replaced by mr . The random field ξr (t)satisfies the following relations about the average and correlation. 
+
+⟨ξr (t)⟩ = 0 , (4.2) 
+
+⟨ξa 
+
+> r
+
+(t)ξb 
+
+> r′
+
+(t′)⟩ = 2ℏαk B Tr
+
+m δr,r′ δa,b δ(t − t′), (4.3) where Tr is the temperature at the site r and a, b =
+
+x, y, z . We use the following LLG equation, equivalent to Eq. (4.1) but represented with dimensionless operators and parameters, in our numerical simulations 
+
+dmr
+
+dτ = 11 + α2
+
+
+
+mr ×
+
+ ∂ ˜H(τ )
+
+∂mr
+
++ ˜ξr (τ )
+
+
+
++ αm mr ×
+
+
+
+mr ×
+
+ ∂ ˜H(τ )
+
+∂mr
+
++ ˜ξr (τ )
+
+ 
+
+, (4.4) where τ = tJ/ ℏ, ˜H = H(t)/J , ˜ξr (τ ) = ξr (t)/J . In our numerical simulations, we set kB T /J = 10 −3 so that the magnetic orders in the N´ eel, canted, and WF phases survive. The Gilbert damping constant is chosen to be 
+
+α = 0 .01, which is a typical value of ordered magnets. Note that we need to take the ensemble average of Nr =1000 results to reduce the standard deviation due to the random field ˜ξr (τ ). Throughout the paper, we set the length of magnetic moment m = 1. Let us comment on some details on numerical calcu-lations: system size and numerical methods. We here-after show numerical results performed on the system 6with 10 × 10 sites. The system size 10 × 10 turns out to be large enough as a result of comparisons with harmonic spectra in further larger systems (see Appendix C). To obtain harmonic generation spectra, we adopted two nu-merical techniques: the Heun method [108], implemented in DifferentialEquations.jl [109], to solve the LLG equation (4.4), and the fast Fourier transform (FFT), computed via FFTW.jl (FFTW3) [110], to turn m(t) into ˜m(ω). We prepare the thermal equilibrium state by evolving the system with the LLG equation (4.1) with H(t) = 
+
+Hmag . The thermal equilibrium state is ready at clock time t − t0 = ti. We start the irradiation of Blaser (t)at t − t0 = ti and make the system develop with the LLG equation with H(t) = Hmag + Hext (t). As already mentioned, we will take t0 = ti + 6 σ so that |Blaser (ti)| is negligibly small.  
+
+> V. MAGNON HARMONIC GENERATION
+
+Using the normalized stochastic LLG equation (4.4) for the two models (2.1) and (2.2), we numerically obtain the real-time dynamics of the magnetic moment mr at each site r. Since the laser-pulse field Bac (t) is coupled to the total magnetic moment, as Eq. (3.2) shows, we focus on the real-time dynamics of the total magnetic moment, 
+
+ma(t) = 1
+
+N
+
+X
+
+> r
+
+ma 
+
+> r
+
+(t), (a = x, y, z ), (5.1) and its Fourier transform, ˜M a(ω) = 
+
+Z ∞−∞ 
+
+dt e iωt ma(t), (5.2) with the total number of sites, N . In practical numer-ical calculations, we employ the following dimensionless version in a finite time window, ˜ma(ω) = J
+
+ℏ
+
+Z 9σ
+
+> −6σ
+
+dt e iωt ma(t), (5.3) where we have set t0 = 0. Using this definition of the Fourier transform with a sufficiently long time window, we can obtain the reliable harmonic generation spectra. Here, we comment on the relation between magnetic harmonic generation and ˜ma(ω). In THz-wave driven magnetic Mott insulators, the dominant radiation is ex-pected to stem from the magnetic dipolar radiation pro-cess [111]. It intensity I(ω) is given by 
+
+I(ω) ∝ | ω2 ˜ma(ω)|2. (5.4) On the other hand, several recent experimental studies have indirectly observed the real-time evolution of ma(t)and its Fourier transform ˜ma(ω), by using magneto-optical phenomena such as Kerr and Faraday effects. Therefore, we will compute the spectra of | ˜ma(ω)| in-stead of I(ω) throughout this paper. In what follows, we show numerical results on the spec-tra | ˜ma(ω)| in the N´ eel, canted, and WF phases, where we see how a symmetry and its breaking determine the dynamical symmetry and, ultimately, the harmonic gen-eration spectra. This section is mainly devoted to our results of one-color laser driven harmonic generations.  
+
+> A. Dynamical symmetry in general
+
+Before going into specific cases, we describe how the following argument on dynamical symmetry works. The dynamical symmetry refers to a symmetry that incor-porates the time translation and an ordinary symmetry operation such as a global spin rotation. The dynamical symmetry holds when the externally applied ac field has an approximate or exact periodicity in time. Suppose that the ac magnetic field Bac (t) is periodic in time, 
+
+Bac (t + Tac ) = Bac (t), where Tac = 2 π/ Ω is the laser period. Then, the Hamiltonian (3.1) trivially satisfies ˆH(t + Tac ) = ˆH(t). The Hamiltonian (3.1) can have an-other relation ˆU ˆH(t) ˆU † = ˆH(t + κT ac ), (5.5) with a unitary or antiunitary operator ˆU . The parameter 0 < κ < 1 depends on details of ˆU and ˆH(t). When the Hamiltonian satisfies Eq. (5.5), we say that the time-periodic system possesses the dynamical symmetry. Adynamical symmetry is characterized by the symmetry operator ˆU and the time shift κT ac . Therefore, we will label each dynamic symmetry with the following equation ( ˆU , κT ac ). (5.6) In our spin systems irradiated by THz laser, (we will show later) some sorts of dynamical symmetries (5.5) can emerge since the spin-light coupling term (3.2) between the ac field Bac (t) and the spin operator ˆSr relates the time translation and the ordinary symmetry operation. For instance, we find the dynamical symmetry where κ =1/2 and ˆU is the π spin rotation around the Sz axis in the N´ eel phase. When we focus on a dynamically symmetric time-periodic system, we can often encounter a selection rule of its harmonic generation spectrum. To find such a selec-tion rule, one need to consider the transformation prop-erty of global observables (such as total magnetization) under the symmetry operation ˆU . The transformation is usually described as ˆU ˆA(t) ˆU † = f ( ˆA(t), ˆB(t), · · · ), (5.7) where ˆA(t) is an observable of the system and 
+
+f ( ˆA, ˆB, · · · ) is a function of operators ˆA, ˆB, · · · . Com-bining Eqs. (5.5) and (5.7) leads to a relationship be-tween two expectation values of ˆA at different times t
+
+and t + κT ac . The relation directly gives a selection rule 7for the HHG spectrum of ˆA(t). In this paper, we will show several concrete examples of dynamical symmetries and selection rules for magnetization mα(t). In the above argument around Eqs. (5.5) and (5.7), we assume that the thermal state (including the ground state) of the system before laser application possesses all the symmetries in the static part of the Hamiltonian. However, in the case of magnetic Mott insulators, their static symmetry can often be broken or recovered by tun-ing temperature and static magnetic field. This nature is quite different from most of semiconductor systems. If such a symmetry breaking occurs, we have to consider not only observables but also the quantum state (the wave function) [62, 65] to find the dynamical symmetry and the selection rule. We discuss the more detailed analysis and how to derive the selection rule in Appendix B. Lastly, we make two comments on dynamical symme-try. The first comment is associated with time period-icity. The relation (5.5) stands on the periodicity of the ac field. The ac magnetic fields (3.3) and (3.4) are os-cillating in time but has no complete periodicity because of the Gaussian envelope. Nevertheless, the above argu-ment of the dynamical symmetry is approximately ap-plicable to our setup. In the time window |t − t0| ≲ σ,we may approximate exp[ −(t − t0)2/2σ2] ∼ 1 and regard 
+
+B1(t) and B2,ℓ (t) as periodically oscillating fields with 
+
+Tac = 2 π/ Ω. In this sense, the model (3.1) approximately has the dynamical symmetry. Laser pulses of B1(t) and 
+
+B2,ℓ (t) consist of mixed waves with different frequencies around Ω (i.e., broad-band type), and their width in the frequency space is about ∼ 1/σ . However, an essential point of HHG experiments is whether neighboring peaks (n-th and ( n + 1)-th order hamonics peaks) can be dis-tinguished. Therefore, under the condition of 1 /σ < Ω, the conclusion derived by the dynamical symmetry is ex-pected to be applied to HHG spectra, especially, the peak structures. We show in the remainder of the paper that the approximate dynamical symmetry indeed governs the harmonic generation spectrum. Secondly, we comment on the time-evolution rule of our ordered antiferromagnet models. As we mentioned in Sec. IV, the time evolution of spins (more correctly, the expectation value of spins) can be well described by the LLG equation in the N´ eel, canted, and WF phases in-stead of Schr¨ odinger equation. Namely, spins can be ap-proximated by classical vectors in these ordered phases. In the above paragraphs, on the other hand, we defined the dynamical symmetry under the assumption that the time evolution of observables follows Schr¨ odinger equa-tion (i.e., quantum mechanics). In the following subsec-tions, we will mainly consider several dynamical symme-tries based on the LLG equation and the “classical” mag-netic moment mα(t) because we will numerically apply the LLG equation to compute the magnon harmonic gen-eration. In Appendix B, details of dynamical symmetries based on both quantum mechanics and LLG equation are discussed. We find that at least in our models of antifer-romagnets, we can derive the same selection rule in both a quantum spin model and its classical version based on the LLG equation.  
+
+> B. N´ eel phase
+
+In this subsection, we discuss the numerical results of the magnon harmonic generation driven by one-color laser pulse in the N´ eel phase. Figure 4 (a) and (b) show the typical spectra of | ˜ma(ω)| in the N´ eel phase. We show 3 × 3 patterns of | ˜ma(ω)| with a = x, y, and z
+
+under Bac ∥ ex, ey , and ez . Figure 4 (a) shows results in the presence of the static magnetic field ( B/J = 0 .5) and Fig. 4 (b) shows those in the absence of the static magnetic field ( B/J = 0 .0). We normalize the frequency 
+
+ω with the laser frequency Ω, and it is tuned to the lower magnetic resonance point: Ω = ϵN´ eel ,β  
+
+> 0
+
+.Let us see the first column where the laser field is parallel to the x axis ( Bac ∥ ex). In the presence of the static magnetic field [the first column of Fig. 4 (a)], the spectra | ˜mx(ω)| and | ˜my (ω)| show clear fundamen-tal and third-harmonic peaks ( ω/ Ω1 = 1 and 3) but no second-harmonic peak ( ω/ Ω1 = 2). We can generalize this observation to the following statement. | ˜mx(ω)| and 
+
+| ˜my (ω)| show no even-harmonic peaks ( ω/ Ω1 = 2 n with 
+
+n = 1 , 2, 3, · · · ).    
+
+> 1. Laser field along xaxis
+
+Let us investigate and compare harmonic generation spectra in the absence or presence of the static magnetic field, closely from the viewpoint of dynamical symmetry. When the static magnetic field is present and the laser field is parallel to the x axis, the even-order harmonics are absent in the spectra | ˜mx(ω)| and | ˜my (ω)| because the following dynamical symmetry forbids the even-order harmonics with ω/ Ω1 = 2 n (n ∈ Z). This dynamical symmetry is a combination of a time translation by Tac /2and a spin rotation by angle π around the Sz axis, ˆUz (π). The operator ˆUz (π) rotates the spin, ( ˆSx 
+
+> r
+
+, ˆSy 
+
+> r
+
+, ˆSz 
+
+> r
+
+) →
+
+(− ˆSx 
+
+> r
+
+, − ˆSy 
+
+> r
+
+, ˆSz 
+
+> r
+
+). Namely, the dynamical symmetry is expressed as ( ˆUz (π), T ac /2) (5.8) Equation (5.8) holds in the Hamiltonian (3.1) for |t−t0| ≲
+
+σ. Detailed calculations around the dynamical symmetry (5.8) are presented in Appendix B 3. The dynamical symmetry (5.8) gives rise to constraints on the magnetic moment m(t): 
+
+mx
+
+
+
+t + Tac 
+
+2
+
+
+
+= −mx(t), (5.9) 
+
+my
+
+
+
+t + Tac 
+
+2
+
+
+
+= −my (t), (5.10) 
+
+mz
+
+
+
+t + Tac 
+
+2
+
+
+
+= mz (t). (5.11) 8
+
+FIG. 4. Numerical result of harmonic generation in N´ eel phase at kBT /J = 10 −3. Panels (a), (b) show plots of the amplitude of the Fourier transform ˜m(ω) = ( ˜ mx(ω), ˜my (ω), ˜mz (ω)) of the model (2.1) in the N´ eel phase vs. the normalized frequency 
+
+ω/ Ω. The static magnetic field B is on ( B/J = 0 .5) in the panel (a) and off ( B/J = 0 .0) in the panel (b). We set Bac /J = 0 .1in both panels. The laser frequency Ω = 2 π/T ac is set to the resonant frequency of magnon: Ω = Ω 1 (Ω = Ω 2) in the presence (absence, respectively) of the magnetic field. Ω 1 and Ω 2 are given by ℏΩ1 = ϵN´ eel ,β  
+
+> 0
+
+= 1 .33 J and ℏΩ2 = ϵN´ eel ,β  
+
+> 0
+
+= 1 .83 J. Each panel consists of 3 × 3 plots. The first, second, and third rows show spectra | ˜ma(ω)| for a = x, y, and z, respectively. The first, second, and third columns show spectra when the applied laser pulse is parallel to the x, y, and z directions, respectively. The symmetry operation below each column [such as ( ˆUz (π), T ac /2)] denotes the dynamical symmetry in each setup. Panels (c), (d), and (e) show the first ( | ˜mx(Ω) |), second ( | ˜mz (2Ω) |), and third harmonic generations ( | ˜mx(3Ω) |), respectively, when Bac is parallel to the x axis. Panel (f) shows magnon bands ϵN´ eel ,α  
+
+> 0
+
+and ϵN´ eel ,β  
+
+> 0
+
+(red curves), and their one-third scales (blue curves). The latter is plotted for the purpose of comparison with the panel (e). 
+
+The minus sign on the right hand side directly affects the Fourier transform (5.2). In fact, straightforward calcula-tions lead to ˜ma(nΩ) = 
+
+Z Tac 
+
+> 0
+
+dt {1 − (−1) n}ein Ωt ˜ma(t), (a = x, y ),
+
+(5.12) ˜mz (nΩ) = 
+
+Z Tac /20
+
+dt {1 + ( −1) n}ein Ωt ˜mz (t), (5.13) with t0 = 0. Note that we take the integration range 0 < t < T ac 
+
+instead of −∞ < t < ∞ for the following reasons. As we already mentioned in Sec. V A, the dynamical symmetry holds when |t−t0| ≲ σ. In this limited time range, we can regard the laser pulse field as the periodically oscillating field with the period Tac . The periodicity allows us to shorten the integration range from −∞ < t < ∞ to 0 < t < T ac with t0 = 0. Namely, we can use the Fourier series expansion instead of the Fourier transformation. The dynamical symmetry thus forbids the even-order harmonic generations with ( −1) n = 1 to emerge in 
+
+| ˜ma(nΩ) | for a = x, y whereas the same symmetry for-bids the odd-order harmonic generations with ( −1) n =
+
+−1 to emerge in | ˜mz (nΩ) |, as Fig. 4 (a) shows. Namely, ˜mx(2 nΩ) = 0 , (5.14) ˜my (2 nΩ) = 0 , (5.15) 9˜mz  (2 n + 1)Ω) = 0 , (5.16) for n = 0 , 1, 2, · · · .When the static magnetic field B is absent, the Hamil-tonian (3.1) has a higher symmetry. The Hamiltonian (2.1) without B has the U(1) ⋊ Z 2 symmetry due to the U(1) spin rotation around Sz and the time reversal while the same Hamiltonian with nonzero B has the U(1) sym-metry since the magnetic field breaks the time reversal symmetry. The larger symmetry of the magnetic Mott insulator leads to a larger dynamical symmetry. Namely, the full Hamiltonian (3.1) with B = 0 has the following dynamical symmetry ( ˆTx ˆUy (π), T ac /2) (5.17) in addition to Eq. (5.8). Here, ˆTx is the one-site transla-tion Sr → Sr+a0ex along the x axis and ˆUy (π) is the π
+
+rotation of spin around Sy . Note that ˆTx is required in Eq. (5.17) so that the operator ˆTx ˆUy (π) keeps the ground state, the N´ eel state, invariant, as we will closely discuss later. The symmetry under Eq. (5.17) yields another selec-tion rule: ˜mx(2 nΩ) = 0 , (5.18) ˜my  (2 n + 1)Ω  = 0 , (5.19) ˜mz (2 nΩ) = 0 , (5.20) for n = 0 , 1, 2, · · · . The presence of two dynamical symmetries [Eqs. (5.8) and (5.17)] forbids the even-order harmonic generations of | ˜mx(nΩ) | with n = 0 , 2, 4, · · · 
+
+and every harmonic generation of | ˜ma(nΩ) | for a = y, z 
+
+with n = 0 , 1, 2, · · · . In fact, the numerically ob-tained spectra | ˜my (ω)| and | ˜mz (ω)| [see the first column of Fig. 4 (b)] has suppressed peak heights at ω = nΩ, which are roughly 10 −3 times of those in the presence of the static magnetic field. We find out that the selection rules when the one-color laser-pulse field is along the x or y axis explains the qual-itative features of the harmonic generations on the first and second columns of Figs. 4 (a) and (b).    
+
+> 2. Laser field along zaxis
+
+When the laser field is parallel to the z axis, we find no clear peaks in | ˜ma(ω)| for any a = x, y, z regard-less of the presence or absence of the static magnetic field. While the spectra look similar in those cases, the dynamical symmetry is quite different. In the presence of the static magnetic field [Fig. 4 (a)], the Hamilto-nian (3.1) has no dynamical symmetry even approxi-mately. By contrast, in the absence of the static mag-netic field [Fig. 4 (b)], we find that the Hamiltonian (3.1) has two dynamical symmetries, ( ˆTx ˆUx(π), T ac /2) and ( ˆTx ˆUy (π), T ac /2). As a result, we have a selection rule that even-order harmonics peaks in | ˜mz (ω)| are ab-sent in the case of zero field B = 0. Despite this dif-ference between two cases of zero field and a finite field, the resultant spectra equally have no major harmonic generations. We can understand the magnon modes [ α
+
+and β modes in Fig. 2 (e)] are precessions around the z
+
+axis. The laser fields oscillating linearly along the z axis does not excite such precessing modes, ending up with the absence of harmonic generations. This weak response to the ac field along the z direction can also be understood from the spin-wave (magnon) pic-ture. From the Holstein-Primakov transformation, spin operators in collinear ordered phases including the N´ eel phase are approximated by ˆSz 
+
+> r
+
+= S − ˆc† 
+
+> r
+
+ˆcr and ˆS+ 
+
+> r
+
+≃√2Sˆcr , where ˆ cr is the annihilation boson (magnon) op-erator [83, 84]. Therefore, the dynamics of ˆSz requires a simultaneous two-magnon excitation, while the trans-verse spin dynamics can occur through one-magnon exci-tation. It indicates that the longitudinal spin dynamics driven by an ac magnetic field is weak compared with the transverse spin dynamics. Finally, we briefly comment on the broad peaks in the cases of Bac ∥ ez . Panels (a) and (b) of Fig. 4 show that there seem to be two small peaks in the spectra of 
+
+| ˜mx,y (ω)| under Bac ∥ ez and a finite static field B =0.5J, while there is one peak in | ˜mx,y (ω)| under Bac ∥ ez
+
+and zero field B = 0. In Appendix F, we show that these are not the laser-driven harmonics and rather owing to the effect of thermal fluctuation.  
+
+> 3. Magnon picture and angular-momentum conservation
+
+The dynamical symmetry enables the qualitative inter-pretation of the harmonic generation | ˜ma(nΩ) |. Here, we discuss the spectra from the magnon point of view. Fig-ures 4 (c), (d), and (e), respectively show the intensity for the first (fundamental), second, and third harmon-ics. Though these intensities are mathematically given by | ˜ma(nΩ) | for n = 1 , 2, 3, we practically define them as an average, 
+
+Z (n+ϵ)Ω (n−ϵ)Ω 
+
+dω | ˜ma(ω)|, (5.21) near ω = nΩ within a narrow enough width 2 ϵΩ to reduce numerical errors. In the panels (c)-(e), we employ ϵ =0.2 and show these averaged intensities | ˜ma(nΩ) | as the function of laser frequency Ω and static magnetic field B.The high-intensity regions are indicated in these figures as curves with bright color. By comparing these curves with Fig. 4 (f), we find that the bright curves correspond to the one-magnon energy with k = 0, ϵN´ eel ,μ  
+
+> 0
+
+(μ = α. β )[in Figs. 4 (c), (d), and (e)], or 1 /3 of that, ϵN´ eel ,μ  
+
+> 0
+
+/3(μ = α. β ) [in Fig. 4 (e)]. We can understand the correspondence of the high-intensity curves to the magnon bands in terms of the 10 
+
+FIG. 5. Selection rules of magnon harmonic generation in N´ eel phase from viewpoint of angular momentum conservation. We consider the case where linearly polarized THz laser with Bac ∥ ˆex [see panels (c)-(e) in Fig. 4]. Panels (a) and (c) show the resonant absorption of photons. A single photon with energy ℏΩ creates one magnon when ℏΩ = ϵN´ eel ,β  
+
+> 0
+
+in panel (a), while three photons, each of which has the energy ℏΩ/3, creates one magnon when 3 ℏΩ = ϵN´ eel ,β  
+
+> 0
+
+in panel (c). These resonant absorptions (and the subsequent resonant emissions) of photon(s) are possible since these processes are consistent with the angular momentum conservation. Panel (b) shows that two photons, each of which has the energy ℏΩ/2, cannot create one magnon even though the photon energy meets the resonant condition, 2 ℏΩ = ϵN´ eel ,β  
+
+> 0
+
+since this process violates the angular momentum conservation law. 
+
+spin-wave theory [83, 84] and angular momentum conser-vation. The fundamental (first) harmonic generation at 
+
+ω = Ω involves the absorption and emission of one pho-ton with energy ℏΩ. Such a resonant phenomenon occurs when ℏΩ is equal to the magnon gap ϵN´ eel ,μ  
+
+> 0
+
+(μ = α, β ), leading to the high-intensity curve in | ˜mx(Ω) | as well as 
+
+| ˜mz (2Ω) | and | ˜mx(3Ω) |. We may expect that the magnon bands ϵN´ eel ,μ  
+
+> 0
+
+with μ = α, β emerge in ˜ mx(nΩ) for ev-ery n = 1 , 2, 3, · · · since it corresponds to the resonant absorption of n photons that creates n magnons. Each photon with energy ℏΩ invokes one magnon with energy 
+
+ϵN´ eel ,μ  
+
+> 0
+
+, leading to the resonance ℏΩ = ϵN´ eel ,μ  
+
+> 0
+
+. For ex-ample, the two-photon absorption corresponding to the two-magnon creation is the leading contribution of the bright curve ℏΩ = ϵN´ eel ,μ  
+
+> 0
+
+of | ˜mz (2Ω) | in the panel (d) of Fig. 4. This is because (as we discussed in Sec. V B 2) at least a two-magnon creation is necessary to generate an oscillation of Sz . By contrast, the curves corresponding to the one third of the magnon band emerge in | ˜mx(3Ω) |
+
+is related to resonant absorption of three photons that creates only one magnon. Each photon with energy ℏΩhas one third of the magnon energy, too small to solely invoke one magnon. Only after three such photons are assembled, they invoke one magnon, leading to the reso-nance ℏΩ = ϵN´ eel ,μ  
+
+> 0
+
+/3. Such a channel of resonant absorp-tion is absent in | ˜mz (2Ω) |. Namely, there is no resonant absorption of two photons that would create only one magnon. To explain this difference between | ˜mz (2Ω) | and 
+
+| ˜mx(3Ω) |, we look at the angular momenta carried by photons and magnons. Each photon carries the angular momentum ℏ or −ℏ since we apply a linearly polarized THz laser that consists of right circularly polarized pho-ton with angular momentum + ℏ and left one with −ℏ
+
+TABLE II. Angular momenta of magnons in N´ eel phase and photons. In this paper, the sign of spin angular momentum is defined so that the up-spin magnon has the positive angular momentum + ℏ.
+
+α mode magnon −ℏ
+
+β mode magnon +ℏ
+
+Right circularly polarized photon +ℏ
+
+Left circularly polarized photon −ℏ
+
+(see Table II). Likewise, the angular momentum of each magnon is either ℏ or −ℏ in the N´ eel phase. The an-gular momentum of magnon is defined as follows. The Holstein-Primakoff transformation [83] relates the z com-ponent of the spin to the number of magnons in the N´ eel phase such as ˆSz 
+
+> r
+
+= S − ˆa† 
+
+> r
+
+ˆar or ˆSz 
+
+> r
+
+= −S +ˆb†
+
+> r
+
+ˆbr , depend-ing on the sublattice of the square lattice. Each magnon changes the z component of the spin by ±ℏ, meaning that the magnon has the angular momentum, either ℏ or 
+
+−ℏ. Since the z component of total spin, ˆSz 
+
+> tot
+
+= P 
+
+> r
+
+ˆSz 
+
+> r
+
+, is conserved in the N´ eel phase, the magnon angular momen-tum is a good quantum number. As we show in Table II, in our notation, the angular momentum of the α-mode magnon is −ℏ, while that of the β-mode one is + ℏ.When three photons, each of which has the energy 
+
+ϵN´ eel ,μ  
+
+> 0
+
+, inovke one magnon with angular momentum ℏ,two photons carry the angular momentum 2 ℏ and one carries −ℏ so that the total angular momentum of three photons, ℏ + ℏ + ( −ℏ) = ℏ coincides with that of the created magnon. Such angular-momentum conserva-tion cannot be fulfilled when two photons are simulta-neously absorbed. Generally, we may expect the reso-nance ℏΩ = ϵN´ eel ,μ  
+
+> 0
+
+/n (μ = α, β ) is forbidden for even 11 
+
+n = 2 , 4, 6, · · · . 
+
+> C. Canted phase
+
+Figure 6 shows the harmonic generation spectra in the canted phase, in which the spins are locked in the Sx-Sz
+
+plane before the laser application. The model Hamilto-nian is the same as that in Sec. V B but has the canted state as its ground state for large magnetic field, say, 
+
+B/J = 3 .0 in Fig. 6. Despite the same Hamiltonian, the harmonic generation spectra show different behav-iors. The difference originates from the way how sponta-neous symmetry breaking occurs in the N´ eel and canted phase. While the N´ eel ordered state has the U(1) spin rotation symmetry around the Sz axis, the canted state has a lower symmetry, the Z2 symmetry around the Sz
+
+axis. Namely, the N´ eel state is invariant under the rota-tion by any continuous angle around the z axis but the canted state is invariant only when the angle is either 0 or π.The laser field with Bac ∥ ex further lowers the sym-metry of the system. In the N´ eel phase, the symmetry is lowered to the dynamical one (5.8). In the canted phase, the dynamical symmetry is given by ( ˆTx ˆUz (π), T ac /2) (5.22) The difference between two symmetry operations in Eqs. (5.8) and (5.22) is the absence or presence of the translation operator ˆTx. Interestingly, the selection rules in the harmonic generation spectra | ˜mx(ω)| in the N´ eel and canted phases are exactly the same [compare the first columns of Figs. 4 (a) and 6 (a)]. The involvement of translation operator (or not) turns out to be irrele-vant to the selection rule here since we are focused on the dynamics of the total magnetic moment (5.1). Since there is no dynamical symmetry in the setup of Bac || ez , all peaks of the harmonic generation are ex-pected to appear. However, we find only the linear re-sponse near ω = Ω for Bac || ez . The absence of harmonic generations with n ≥ 2 is due to the nature of the magnon (β mode) created by a longitudinal ac field Bac || ez , which is the gapless NG boson as shown in Fig. 2 (f). No pho-ton with finite energy ℏΩ can excite the gapless mode with infinitesimal energy. It is inferred that the peak of the linear response is attributed to a “forced” excita-tion of the gapped α mode (precession of total spin in the Sx-Sy plane) by the intense laser with Bac = 0 .1J.We can expect that if the applied laser becomes further strong (although it is hard to prepare such a strong laser in the current laser technique), higher-order harmonics peaks with n ≥ 2 appear due to the nonlinear interac-tion processes of the spin-light coupling. In Appendix G, we confirm that this naive expectation is true. Let us look into the color plots in Figs. 6 (b), (c), and (d). We find qualitative similarities between these plots and corresponding ones [Figs. 4 (c), (d), and (e)] in the N´ eel phase. They show the resonant absorption of magnon, resulting in the high intensity at the frequency that equals to the magnon band ϵCant ,α  
+
+> 0
+
+. The third-harmonic generation also shows the resonant absorption at the frequency that equals to one third of the magnon band ( ℏΩ = ϵCant ,α  
+
+> 0
+
+/3) for the same reason as Fig. 4 (e). The only difference due to the magnetic order (canted vs N´ eel) is quantitative as follows. The magnon band in the canted phase and its one third scale are plotted in Fig. 6 (e). As this plot shows, the B/J dependence of the magnon band differs quantitatively in the canted and N´ eel phases. We emphasize that the number of magnon modes is the same in these two phases. While Fig. 4 (f) shows peaks of both the α and β modes, Fig. 6 (e) shows only the peak of the α mode. The β mode does exist in the canted phase but is invisible in Fig. 6 (e) because the plot shows the magnon gap at k = 0 and the β mode in the canted phase is the NG boson, gapless at this wave vector. The magnon in the N´ eel phase carries the angular momentum ±ℏ, whose quantization comes out of the collinear nature of the N´ eel order. The classical N´ eel or-der shows ˆSz 
+
+> r
+
+= ±ℏS and the magnon as quantum fluctu-ation changes ˆSz 
+
+> r
+
+by ±ℏ × (number of magnons). On the other hand, the canted order is noncollinear as the name implies. Namely, the canted order breaks the U(1) spin rotation symmetry. The absence of the U(1) symmetry makes the angular momentum be a nonconserved quan-tity. We thus cannot apply to the argument based on the angular momentum (see Fig. 5) to the canted phase. Nevertheless, we find that the peak structure of the pan-els (b)-(d) in Fig. 6 is similar to that in Fig. 4. Namely, the peak structure in panels (b) and (d) in Fig. 6 seems to be interpreted by using the angular momentum transfer between magnons and photons. We might understand this situation as follows. The applied THz laser has a very long wavelength compared with the lattice spacing and the laser field is coupled only to the total spin. This indicates that the laser is “unaware” of the detailed spin structure in the unit cell. To the laser, the canted order appears identical to an ordered state with a spatially uni-form magnetization (i.e., a ferromagnetic order). There-fore, the argument of the angular momentum works well in explaining the harmonic generation even in the U(1)-symmetry breaking canted phase.  
+
+> D. weak ferromagnets
+
+We move on to the harmonic generation spectra in the WF phase [Fig. 7 (a)]. The spins are set to the Sx-Sz
+
+plane like the canted phase. Note that the WF order and the canted order show no clear difference by them-selves. Mechanisms, or Hamiltonians, that yield these magnetic orders are different. Let us compare the har-monic generation spectra in the WF and canted phases. For Bac ∥ ex, the spectra resemble in the WF and canted phases despite the difference in the Hamiltonians lying behind these orders [Eqs. (2.1) and (2.2)]. In particular, 12 
+
+FIG. 6. Numerical result of harmonic generation in canted phase at kBT /J = 10 −3. (a) Spectra | ˜ma(ω)| of model (2.1) in canted phase, where the spins of the thermal state are chosen to be in Sx-Sz plane. The first, second, and third rows show spectra a = x, y, and z, respectively. The first, second, and third columns show spectra when the applied laser pulse is parallel to the x, y , and z axis, respectively. The symmetry operation below each column [such as ( ˆTx ˆUz (π), T ac /2)] denotes the dynamical symmetry in each setup. We set B/J = 3 .0, Bac /J = 0 .1, and the photon energy ℏΩ = 2 .7J, that is equivalent to the gap of the α-mode magnon, ϵCant ,α  
+
+> 0
+
+. Panels (b), (c), and (d) show the first ( | ˜mx(Ω) |), second ( | ˜mz (2Ω) |), and third (| ˜mx(3Ω) |) harmonic generations when Bac is parallel to the x axis. Panel (e) shows the magnon band ϵCant ,α  
+
+> 0
+
+(red curve), and its one-third scale (blue curve). The latter is plotted for the purpose of comparison with the panel (d). 
+
+the same selection rule (5.14), (5.15), and (5.16) applies to the spectra in theses phases for Bac ∥ ex. The se-lection rule is determined by the dynamical symmetry. A combination of the temporal translation and the sym-metry of the ground state result in the selection rule. Since the canted and WF ground state are qualitatively the same, the resultant dynamical symmetry is similarly, however, not exactly the same. It is important to distinguish the symmetry of the ground state from that of the Hamiltonian. The Hamilto-nian ˆHN-C has the U(1) global rotation symmetry around the Sz axis, while the Hamiltonian ˆHWF has no global rotation symmetry. The latter still has the ˆTxZ2 symme-try, the combination of the spatial translation and the Z2
+
+global rotation around the Sz axis. The ground state in the canted phase, spontaneously breaking the U(1) rota-tion symmetry, has the ˆTxZ2 phase instead of the U(1). By contarst, the ground state in the WF phase has the full symmetry of the Hamiltonian, the ˆTxZ2 symmetry. After all, the spectra | ˜ma(ω)| for Bac ∥ ex shows qual-itative resemblance originating from the same selection rule in the canted and WF phases. The absence of the spontaneous symmetry breaking in the WF phase also results in the gapped β mode. As Fig. 7 (i) shows, the β
+
+mode has the finite gap ϵWF ,β  
+
+> 0
+
+> 0 even for B/J = 0. We see a clear difference in the spectra | ˜mz (ω)| in the WF and canted phases when Bac ∥ ez . We find wide but clear harmonic generations n = 1 , 2, · · · , 5 in the spec-trum | ˜mz (ω)| while that in the canted phase has no such harmonic generations. This difference in the z direction originates from the nature of the β mode. The β mode in the WF phase is gapped but that in the canted phase is gapless, due to the absence or presence of the spon-taneous symmetry breaking. Photons with finite energy 13 
+
+FIG. 7. Numerical result of harmonic generation in WF phase at kBT /J = 10 −3. (a) Spectra | ˜mx(ω)| of model (2.1) in WF phase. The first, second, and third rows show spectra a = x, y , and z, respectively. The first, second, and third columns show spectra when the applied laser pulse is parallel to the x, y , and z axis, respectively. The symmetry operation below each column [such as ( ˆTx ˆUz (π), T ac /2)] denotes the dynamical symmetry in each setup. We set B/J = 0 .5 and Bac /J = 0 .1. The photon energies ℏΩ1 = 0 .591 J and ℏΩ2 = 0 .374 J are set to the gaps of the α-mode magnon ( ϵWF ,α  
+
+> 0
+
+) and the β-mode magnon ( ϵWF ,β  
+
+> 0
+
+), respectively. Panels (b), (c), and (d) show first ( | ˜mx(Ω) |), second ( | ˜mz (2Ω) |), and third ( | ˜mx(3Ω) |) harmonic generations when 
+
+Bac is parallel to the x axis. Panels (e), (f), and (g) show first ( | ˜mx(Ω) |), second ( ˜ mz (2Ω) |), and third ( | ˜mx(3Ω) |) harmonic generations when Bac is parallel to the z axis. Panel (h) shows the magnon band ϵWF ,α  
+
+> 0
+
+(red curve), and its one-third scale (blue curve). The latter is plotted for the purpose of comparison with the panel (d). Panel (i) shows the magnon band ϵWF ,β  
+
+> 0
+
+(red curve), and its half (green curve) and one-third scales (blue curve). The latter two are plotted for the purpose of comparison with the panel (g). 
+
+can excite gapped modes, leading to harmonic genera-tions in | ˜mz (ω)| for Bac ∥ ez . This magnon harmonic generation spectrum for Bac ∥ ez in the WF phase is at least qualitatively consistent with a recent observation of the magnon harmonic generation in a WF phase of HoFeO 3 [53], in which the first, second and third har-monics peaks are detected. Let us see color plots [Figs. 7 (b-g)] for the first, second, and third harmonic generations of | ˜mx(Ω) |, | ˜mz (2Ω) | and 
+
+| ˜mx(3Ω) |. Figures 7 (b), (c), and (d) resemble Figs. 6 (b), (c), and (d), respectively. The resemblance comes from the similarity of the α mode in the WF and canted phases 14 [compare Figs. 7 (h) and Fig. 6 (e)]. However, we should note that the spectrum of | ˜mz (2Ω) | possesses not only the peak at ϵWF ,α  
+
+> 0
+
+but also that at ϵWF ,β  
+
+> 0
+
+/2. The latter peak is qualitatively different from the spectrum of | ˜mz (2Ω) |
+
+in the canted phase [see Fig. 6(c)]. On the other hand, Fig. 7 (e), (f), and (g), related to the β mode [Fig. 7 (i)], are more characteristic to the WF phase. The β mode has a finite gap, leading to a resonant absorption of magnons. The second harmonics | ˜mz (2Ω) | shows the bright curve corresponding to ϵWF ,β  
+
+> 0
+
+/2 [compare Figs. 7 (f) and (i)] in addition to the peak at ϵWF ,β  
+
+> 0
+
+. Likewise, | ˜mz (3Ω) |
+
+shows two weakly bright curves corresponding to ϵWF ,β  
+
+> 0
+
+/2and ϵWF ,β  
+
+> 0
+
+/3 [compare Figs. 7 (g) and (i)] in addition to 
+
+ϵWF ,β  
+
+> 0
+
+. The structure of these multiple peaks quite dif-fers from that of the canted phase, and the multiple peaks seem not to be understood from the angular momentum transfer between magnons and photons. In fact, (as we mentioned) the WF state has no continuous spin rotation symmetry, and the magnons do not have quantized an-gular momenta ±ℏ. The simple argument of the angular momentum conservation in the N´ eel phase thus does not apply to the spectra | ˜ma(nΩ) | in the WF phase.  
+
+> VI. TWO COLOR LASER
+
+So far we have discussed the magnon harmonic gen-erations driven by conventional one-color lasers. This section is devoted to investigations on how two-color laser fields (3.4) affects the harmonic generation spec-trum. We consider two particular cases: two-color lasers with C3 or C4 (spatial) rotation symmetry. When ℓ = 2 (ℓ = 3) in Eq. (3.4), the trajectory of the laser field 
+
+B2,ℓ (t) ∝ [b−1(t) + bℓ(t)] has the C3 (C4) symmetry, as we explained before. The spatial symmetry of the laser field is also a key ingredient of the dynamical sym-metry. Application of the two-color laser instead of the one-color one affects the dynamical symmetry and, ulti-mately, the selection rule of harmonic generations. In the remainder of this section, we discuss effects of the C3- and 
+
+C4-symmetric two-color laser fields on the harmonic gen-eration in the N´ eel and canted phases. We also compare the two-color laser driven harmonic generations in these ordered states with that in the dimer-singlet phase in the two-dimensional Shastry-Sutherland model that has been studied in Ref. [10]. The dimer-singlet state is a typical many-spin ground state without spontaneous symmetry breaking and magnetic (dipole) moment, in contrast to ordered phases in antiferromagnets.  
+
+> A. C3-symmetric laser
+
+Let us look into the ℓ = 2 case, where the laser field (3.4) has the C3 spatial rotation symmetry [see Fig. 3 (b)]. In analogy with the one-color laser, we con-sider 
+
+B′
+
+> 2,ℓ
+
+(t) = b−1(t) + bℓ(t)
+
+√2 , (6.1) instead of B2,ℓ (t) of Eq. (3.4). We can approximate 
+
+B2,ℓ (t) ≈ B′
+
+> 2,ℓ
+
+(t) = ( B′
+
+> 2,ℓ x
+
+(t), B′ 
+
+> 2,ℓ y
+
+(t), B′ 
+
+> 2,ℓ z
+
+(t)) ⊤ for 
+
+|t − t0| ≪ σ. Applying the 2 π/ 3 rotation around the z
+
+axis to B′
+
+> 2,ℓ
+
+(t) with ℓ = 2, we immediately obtain 
+
+
+
+cos(2 π/ 3) − sin(2 π/ 3) 0 sin(2 π/ 3) cos(2 π/ 3) 00 0 1
+
+ B′
+
+> 2,ℓ
+
+(t) = B′
+
+> 2,ℓ
+
+
+
+t + 2π
+
+3Ω 
+
+
+
+= B′
+
+> 2,ℓ
+
+
+
+t + Tac 
+
+3
+
+
+
+.
+
+(6.2) This result means that the C3 rotation of the C3-symmetric laser field can be compensated by the time translation of the laser field by Tac /3. Since the ac Zee-man interaction is only the time-dependent term in the Hamiltonian, the time translation of the laser field can be regarded as that of the Hamiltonian. Next, let us focus on the shape of the ac Zeeman interaction, which consists of the inner product of the ac magnetic field and the total spin, −B2,ℓ (t) · P 
+
+> r
+
+ˆSr . The inner prod-uct is unchanged under the simultaneous rotation of the ac field and total spin. Therefore, if we simultaneously perform the above time translation and the 2 π/ 3 spin ro-tation around the Sz axis to the ac Zeeman interaction [ ˆUz (2 π/ 3)], the shape of the Zeeman interaction is un-changed. Here, the spin rotation by angle θ around the 
+
+Sz axis is defined as follows: ˆUz (θ) ˆSr ˆUz (θ)† =
+
+
+
+cos θ − sin θ 0sin θ cos θ 00 0 1
+
+ ˆSr (6.3) Both the Hamiltonian (2.1) and the N´ eel-ordered ground state has the U(1) spin rotation symmetry around the Sz
+
+axis. From these facts, we find a dynamical symmetry ( ˆUz (2 π/ 3) , T ac /3) . (6.4) Likewise, by considering the time translation by 2 ×Tac /3and the spin rotation by 2 × 2π/ 3, we obtain another dynamical symmetry ( ˆUz (4 π/ 3) , 2Tac /3) . (6.5) These dynamical symmetries forbid all the nth harmonic generations in | ˜mx(ω)| and | ˜my (ω)| for n = 3 , 6, 9, · · · 
+
+[see the top and middle panels of Fig. 8 (a)]. By contrast, the same dynamical symmetries forbids the nth harmonic generations | ˜mz (ω)| for n̸ = 3 , 6, 9, · · · [see the bottom panel of Fig. 8 (a)]. We note that the trajectory of C3-symmetric laser (three-leaf shape) and the symmetry of square lattice 15                                                            
+
+> FIG. 8. (a) Spectra |˜ma(ω)|for a=x, y, z in N´ eel phase where two-color laser pulse with C3symmetry around zaxis is applied. (b) Spectra |˜ma(ω)|for a=x, y, z in canted phase where two-color laser pulse with C3symmetry around zaxis is applied. We set the static magnetic-field strength Bto (a) B/J = 0 .1 and (b) B/J = 3 .0. We also set Bac /J = 0 .1 in both cases. The laser frequencies Ω 1and Ω 2are chosen to be the magnetic resonance values: ℏΩ1/J =ϵN´ eel ,β
+> 0/J = 1 .73, and ℏΩ2/J =ϵCant ,α
+> 0/J = 2 .7. The symmetry operation below the panel (a) denotes the dynamical symmetry. (c) Shastry-Sutherland model. The model has antiferromagnetic exchange interactions on nearest-neighbor J′bonds and next-nearest-neighbor Jbonds. (d) Harmonic generation spectra |ˆPs(ω)|of Shastry-Sutherland model. ˆPs(ω) is the electric polarization [Eq. (6.10)]. This panel is the result of Ref. [10].
+
+(i.e., C4 symmetry) are incompatible in the sense of sym-metry. Therefore, one can naively infer the absence of the dynamical symmetry and the selection rule in the square-lattice N´ eel ordered phase. However, as we dis-cussed above, the selection rules indeed exist in the N´ eel phase. This emergence of the selection rules is owing to the fact that the dynamical symmetry operations in Eqs. (6.4) and (6.5) include only global spin rotation and do not include any spatial operation. We will discuss this point in more detail later. Let us move on to the canted phase. The selection rule disappears when the ground state has the canted order. Figure 8 (b) shows that every harmonic generation appears in the canted phase despite the symmetry of the Hamiltonian is kept unchanged. The canted order breaks the C3 spin rotation symmetry and the canted state is not invariant under the spin rotations in Eqs. (6.4) and (6.5). Figures 8 (a) and (b) shows that the symmetry (or symmetry breaking) of the magnetic order can change the qualitative properties of the harmonic generation spectra.  
+
+> B. Importance of lattice structures and Shastry-Sutherland model
+
+To discuss the importance of the underlying lattices of magnetic Mott insulators in the harmonic gener-ation spectrum, we compare the C3-symmetric laser driven harmonic generations in the above N´ eel phase and the singlet-dimer phase in the Shastry-Sutherland (SS) model, which has been theoretically studied in Ref. [10]. Figure 8 (c) shows the lattice of the SS model [112], the square lattice with the diagonal bonds in each plaquette (the minimal square). These diagonal bonds are alter-nately aligned so that they do not share any edge points. The SS model is the spin-1 /2 quantum spin model whose Hamiltonian is made of two antiferromagnetic exchange interactions, ˆHS = J′ X
+
+> ⟨r,r′⟩
+
+ˆSr · ˆSr′ + J X
+
+> ⟨⟨ r,r′⟩⟩
+
+ˆSr · ˆSr′ , (6.6) where ⟨r, r′⟩ denotes the nearest-neighbor bond of the square lattice [dotted bond in Fig. 8 (c)] and ⟨⟨ r, r′⟩⟩ 
+
+denotes the diagonal bond [black bond in Fig. 8 (c)]. It is established that the Hamiltonian (6.6) has the dimer-singlet ground state for 0 ≤ J′/J < 0.675 [113–116]. In particular, for J′ = 0, the model (6.6) consists of mu-tually isolated antiferromagnetic dimers, whose ground state obviously belongs to the dimer-singlet phase. As is well known, the singlet state on the J bond 
+
+|s⟩ = 1
+
+√2 (|↑↓⟩ − |↓↑⟩ ) (6.7) 16 made of two S = 1 /2 spins is invariant under any SU(2) spin rotation. Therefore, the dimer-singlet ground state has the SU(2) spin rotation symmetry. We might naively expect that the harmonic generation spectrum of the SS model in the singlet-dimer phase would show a selection rule similar to that of the model (2.1) in the N´ eel phase. However, Ref. [10] shows no selection rule in the multi-ferroic SS model irradiated by a C3-symmetric laser. We briefly review this result below. Let us apply the C3-symmetric two-color laser field to the Shastry-Sutherland model in the following manner. We regard ˆH(t) = ˆHS + ˆHext (t), (6.8) ˆHext (t) = −Bac (t) · X
+
+> r
+
+ˆSr − Eac (t) · ˆPS (6.9) as the full Hamiltonian including the laser field. Here, ˆPS is the electric polarization operator. In addition to the ac magnetic field Bac (t), we take into account the electric field Eac (t) of the two-color laser since the SrCu 2(BO 3)2 [113], a faithful realization of the SS model (6.6), shows the magnetoelectric (ME) effect [117–120]. We assume that the ME coupling between the electric po-larization and the spin operator [41, 121] is the following magneto-striction type, ˆPS = X
+
+> ⟨r,r′⟩
+
+
+
+Πme ˆSr · ˆSr′
+
+
+
+err ′ , (6.10) where Π me is a coefficient originating from the ME cou-pling and err ′ = ( r −r′)/|r −r′| is the unit vector on the 
+
+J′ bond. In magnet SrCu 2(BO 3)2, this magneto-striction type of the ME coupling is known to be dominant [117– 120] in the THz regime. Figure 8 (d) shows the harmonic generation spec-trum | ˆPS (ω)| in the singlet-dimer phase when the C3-symmetric two-color laser is applied. This is calculated in Ref. [10]. The spectrum clearly indicates that there is no selection rule and every harmonic generation appears. Comparing the C3-symmetric laser driven spectra of the N´ eel phase [Fig. 8 (a)] with that of the SS model [Fig. 8 (d)], we consider the reason why a higher-symmetric (SU(2)-symemtric) dimer-singlet state in the SS model has no selection rule. As we discussed in Sec. VI A, in the N´ eel phase, the change of the ac mag-netic field by time translation can be compensated by a global spin rotation around the Sz axis, and as a result, we obtain the dynamical symmetries of Eqs. (6.4) and (6.5). This logic holds because the spin-light coupling is the Zeeman interaction type and the total spin is coupled to the ac field. However, in the case of the SS model, the spin-light coupling is an ME coupling of Eq. (6.10), which is invariant under a continuous spin rotation around the 
+
+Sz axis since the inner product of two spins ˆSr · ˆSr′ in Eq. (6.10) is unchanged by arbitrary spin rotation. This implies that the change of the ac field via a time transla-tion cannot be canceled out by spin rotation, unlike the case of the N´ eel phase. Thus, we cannot find dynamical symmetry in the singlet-dimer state of the SS model with the ME coupling. An important point is that the ac Zeeman coupling is the interaction between a uniform ac magnetic field and total spin (i.e., a generator of global spin rotation) and thereby it does not include the information about the underlying lattice (spatial) structure of the target sys-tem. However, in usual laser-driven crystal systems, the static part of the Hamiltonian, the ordering pattern, or the light-matter coupling are correlated with the lattice structure. As a result, a spatial symmetry operation ( π
+
+rotation, parity, mirror operations, etc.) is usually neces-sary to compensate a time shift of the applied two-color laser field. An example of the relation between spatial symmetry of the target and the applied laser trajectory is given by considering the SS model. The SS model possesses the C2-rotation symmetry but does not the C3
+
+symmetry. This means that the spatial symmetry of the SS model ( C2) is incompatible with the trajectory of the 
+
+C3-symmetric laser. Therefore, (as we have already dis-cussed) the SS model (6.8) has no dynamical symme-try. On the other hand, if we apply a C4-symmetric two-color laser [see Fig. 3(c)] to the SS model, it is shown in Ref. [10] that a dynamical symmetry and a correspond-ing selection rule appear since the C2 symmetry of the SS model is a subgroup of the C4 symmetry of the laser trajectory, that is, C2 ⊂ C4.We can also find a similar relationship between the lat-tice symmetry and the trajectory of two-color laser field if we consider laser-driven harmonic generation in solid electron systems. For example, let us consider the har-monic generation in graphene, that is a many-electron system on a honeycomb lattice. A recent theoretical study of Ref. [11] shows the following result. The honey-comb lattice on the x-y plane possesses the C3 rotation symmetry and thus the lattice is compatible with the tra-jectory of the C3-symmetric laser. As a result, we obtain the dynamical symmetries associated with rotating oper-ations ˆUrot (2 π/ 3) and ˆUrot (4 π/ 3). Note that the rotation operator ˆUrot (θ) means a real-space rotation by θ around the z axis, unlike the spin rotations in Eqs. (6.4) and (6.5). These dynamical symmetries lead to the selection rule that all the 3 n-order hamonics generation peaks ( n
+
+is an integer) do not appear in graphene irradiated by a C3-symmetric laser. On the other hand, if we apply a different two-color laser, whose trajectory has no rotation symmetry, to graphene, we have no selection rule and all order harmonics emerge. From these arguments, we can see how exceptional U(1) spin-rotation symmetric systems with ac Zeeman coupling (including two-color laser driven N´ eel phase) are. Namely, (as we emphasized) in U(1)-symmetric spin models, a time shift of two-color laser field can be com-pensated by a global spin rotation without spatial sym-metry operation. We will extend this argument of two-color laser in the following subsections VI C and VI D. 17  
+
+> C. C4-symmetric laser
+
+This subsection is devoted to the N´ eel and canted phases irradiated by a C4-symmetric laser with ℓ = 3. Figures 9 (a) and (b) show the C4-symmetric laser driven harmonic generation spectra | ˜mx(ω)| in the N´ eel phase and the canted phase, respectively. In analogy with the 
+
+C3-symmetric case, we obtain a generic relation between the Cℓ+1 spatial rotation and the temporal translation by mT ac /(ℓ + 1) for ℓ = 2 , 3, · · · and m = 1 , 2, · · · ℓ:
+
+
+
+cos( 2mπ ℓ+1 ) − sin( 2mπ ℓ+1 ) 0sin( 2mπ ℓ+1 ) cos( 2mπ ℓ+1 ) 00 0 1
+
+ B′
+
+> 2,ℓ
+
+(t)= B′
+
+> 2,ℓ
+
+
+
+t + mT ac 
+
+ℓ + 1 
+
+
+
+, (6.11) This relation implies that combining the 2 mπ/ (ℓ+1) spin rotation around the Sz axis and the temporal translation by mT ac /(ℓ + 1), we can transform B′
+
+> 2,ℓ
+
+(t) to B′
+
+> 2,ℓ
+
+(t +
+
+mT ac /(ℓ+1)) in the Hamiltonian. Since the N´ eel-ordered state is symmetric under the U(1) spin rotation around the Sz axis, we find the following dynamical symmetries for ℓ = 3: ( ˆUz (π/ 2) , T ac /4) (6.12) ( ˆUz (π), T ac /2) (6.13) ( ˆUz (3 π/ 2) , 3Tac /4) . (6.14) Equations (6.12), (6.13), and (6.14) respectively cor-respond to m = 1, 2 and 3 of Eq. (6.11). These three dynamical symmetries result in the selection rule: 
+
+| ˜mx(nΩ) | = | ˜my (nΩ) | = 0 for even n = 2 , 4, · · · and 
+
+| ˜mz (nΩ) |̸ = 0 only for n multiple of 4. To find the dynamical symmetry of the canted phase driven by a C4-symmetric laser, we have to consider not only the Hamiltonian but also the equilibrium state (ground state) before the laser application. This is be-cause the canted phase spontaneously breaks the U(1) spin-rotation symmetry (although the Hamiltonian is the same as that of the N´ eel phase). The canted ordered state in the Sx-Sz plane is not invariant under a global 
+
+π/ 2 spin rotation ˆUz (π/ 2), unlike the N´ eel phase. On the other hand, one can find that the state is invariant under the combination of a global π spin rotation ˆUz (π) and the one-site translation ˆTx along the x direction. Therefore, instead of Eqs. (6.12)-(6.14), we obtain the dynamical symmetry ( ˆTx ˆUz (π), T ac /2) (6.15) in the canted phase irradiated by a C4-symmetric laser. As a result, we have the selection rule that the even-order harmonics peaks of | ˜mx,y (ω)| are forbidden, while the odd-order peaks of | ˜mz (ω)| are forbidden. These two rules are consistent with the numerical result of Fig. 9 (b). We note that the combination of the spin rota-tion ˆUz (π) and the spatial operation ˆTx in Eq. (6.15) stems from the underlying lattice structure (square lat-tice). Namely, the spatial information is important to find the dynamical symmetry in the above canted phase, as in the case of the SS model in Sec. VI B.  
+
+> D. Generalization to U(1)-symmetric states
+
+From the arguments in Secs. VI A-VI C, we can find that the class of the U(1) spin-rotation symmetric spin systems driven by a Cℓ+1 -symmetric two-color laser al-ways possesses the dynamical symmetry and the result-ing selection rule if the spin-light coupling is the ac Zee-man interaction type. The point is that the above state-ment holds irrespective of details of underlying lattices: Square, honeycomb, triangular, Kagome lattices, etc. In addition to the N´ eel phase, the above U(1) systems in-clude ferromagnetic phases, ferrimagnetic phases, and SU(2) or U(1) spin-rotation symmetric quantum spin liq-uid phases. The argument around Eq. (6.11) tells us that for a U(1)-symmetric system driven by Cℓ+1 -symmetric two-color laser, one obtains ℓ kinds of dynamical symmetries whose symmetry operations are given by 
+
+ ˆUz (2 mπ/ (ℓ + 1)) , mT ac /(ℓ + 1) 
+
+
+
+(6.16) with m = 1 , 2, · · · , ℓ . This result implies that the prepa-ration of an ideal two-color laser and the observation of harmonic generations driven by the two-color laser could be a powerful tool to understand the symmetry and the magnetic ordering pattern of target materials.  
+
+> VII. NON-PERTURBATIVE NATURES
+
+In Secs. V and VI, we have quantitatively estimated the harmonic generation spectra by numerically solving the LLG equation, without relying on any perturbative arguments. It is worth comparing our numerical results with perturbative arguments. This section focuses on the harmonic generations by one-color laser.  
+
+> A. Laser-strength dependence
+
+When the Zeeman energy due to the laser field can be seen as a perturbation to the intrinsic Hamiltonian such as Eqs. (2.1) and (2.2), we may expect that the strength of the nth harmonic generation, | ˜ma(nΩ) |, is proportional to ( Bac /J )n, where n photons resonantly turn into n magnons. As Fig. 10 shows, this expec-tation indeed holds for small Bac /J ≲ 0.1. Figure 10 also shows that the strength | ˜ma(nΩ) | deviates from the simple power-law curve, which clarifies that our numer-ical calculations successfully go beyond the perturbative regime, properly including nonperturbative effects. 18 
+
+FIG. 9. (a) Spectra | ˜ma(ω)| for a = x, y, z in N´ eel phase where two-color laser pulse with C4 symmetry around z axis is applied. (b) Spectra | ˜ma(ω)| for a = x, y, z in canted phase where two-color laser pulse with C4 symmetry around z axis is applied. We set the magnetic-field strength B to (a) B/J = 0 .1 and (b) B/J = 3 .0. We also set Bac /J = 0 .1 in both cases. The laser frequencies Ω 1 and Ω 2 are respectively given by ℏΩ1/J = ϵN´ eel ,β  
+
+> 0
+
+/J = 1 .73 and ℏΩ2/J = ϵCant ,α  
+
+> 0
+
+= 2 .7. The symmetry operation below each column denotes the dynamical symmetry in each setup. 
+
+FIG. 10. Diamond symbols in panels (a), (b), and (c) show 
+
+Bac dependence of | ˜mx(Ω) |, | ˜mz (2Ω) |, and | ˜mx(3Ω) |, respec-tively, in the N´ eel phase with static magnetic field B/J = 0 .5when we apply the one-color laser pulse oscillating in the x
+
+axis. We set the laser frequency Ω to the resonant value: 
+
+ℏΩ = ϵN´ eel ,β  
+
+> 0
+
+= 1 .33 J. The solid curves in panels (a), (b), and (c) show fitting curves ∝ Bn 
+
+> ac
+
+for (a) n = 1, (b) n = 2, and (c) n = 3. Diamond symbols in panels (d), (e), and (f) show Bac dependence of | ˜mx(Ω) |, | ˜mz (2Ω) |, and | ˜mx(3Ω) |,respectively, in the canted phase with static magnetic field 
+
+B/J = 3 .0 when we apply the one-color laser pulse oscillating in the x axis. We set the laser frequency Ω to the resonant value: ℏΩ = ϵCant ,α  
+
+> 0
+
+= 2 .7J. The solid curves in panels (a), (b), and (c) show fitting curves ∝ Bn 
+
+> ac
+
+for (a) n = 1, (b) n = 2, and (c) n = 3. 
+
+As we discussed in Table I, the strength of Bac = 0 .1J
+
+usually corresponds to an ac magnetic field of ∼ 1 Tesla and an ac electric field of ∼ 1MV/cm. A recent experi-mental research has observed the power-law behavior of 
+
+| ˜ma(nΩ) | with n = 1, 2 and 3 in the magnon harmonic generation of a WF phase [53]. This experiment has uti-lized ac magnetic fields of Tesla order. The above re-search has also detected the deviation from the power law when the strength of ac magnetic (electric) field is increased. Therefore, our numerical result in Fig. 10 is at least qualitatively consistent with the experimental data in Ref. [53]. 
+
+B. Red shift of magnetic resonance 
+
+There is another nonperturbative phenomenon, which we call red shift of magnetic resonance. As we explained before, the first harmonic generation is related to the res-onant absorption and generation of one magnon. Hence, we may expect that the resonant frequency equals to the magnon band at zero wave vector, say, ϵN´ eel ,β  
+
+> 0
+
+in the N´ eel phase. This expectation holds when Bac /J is weak enough but breaks down when it becomes strong. Fig-ure 11 shows the spectrum strength | ˜mx(Ω) | in the N´ eel phase under the condition of magnetic resonance. When 
+
+Bac /J ≪ 1, the bright region with large strength is sharp and is located on the horizontal dashed line that repre-sents the magnon gap ℏΩ = ϵN´ eel ,β  
+
+> 0
+
+= 1 .83 J. As Bac /J 
+
+increases, the bright region shifts to the low-frequency 19            
+
+> FIG. 11. Spectrum intensity |˜mx(Ω) |of first harmonic gener-ation by one-color laser pulse along xaxis. We plot |˜mx(Ω) |
+> as a function of laser frequency Ω and strength of ac mag-netic field Bac . The dashed line shows the resonant frequency
+> ϵN´ eel ,β
+> 0/J = 1 .83, where the static magnetic field is not ap-plied.
+
+side, which we call the red shift. The red shift is the nonperturbative effect. The larger Bac /J , the more the THz laser field excites magnons. Therefore, such a strong THz laser field is expected to lead to the shortening of the spin “length” S and ultimately lowering the magnon band ϵN´ eel ,β  
+
+> 0
+
+.This red shift has been observed in several experi-ments [27, 53] of THz-laser driven spin dynamics, in which a strong enough THz laser pulse of Tesla order is applied to antiferromagnets. Our numerical result of Fig. 11 thereby agrees with these experiments at least qualitatively.  
+
+> VIII. SUMMARY
+
+We have investigated the harmonic generation spec-trum of antiferromagnetic Mott insulators in ordered phases. We apply intense THz laser (or GHz wave) pulse fields to these magnetic Mott insulators through the Zee-man interaction between the total spin P 
+
+> r
+
+ˆSr and the oscillating pulse magnetic field Bac (t): − P 
+
+> r
+
+Bac (t) · ˆSr .The real time dynamics of these systems under the laser field is investigated by means of the LLG equation (4.1). The LLG equation is known to well describes the dy-namics of microscopic magnetic moment mr at each site r if we considered magnetically ordered states in magnets. The equation contains the phenomenological Gilbert damping effect and the stochastic field ξr (t) that is introduced to take finite-temperature effects into ac-count. Solving this stochastic LLG equation numerically, we obtain the spin dynamics of antiferromagnetic ordered phases: The N´ eel, canted and WF phases. We have considered two model Hamiltonians (2.1) and (2.2) to describe magnetic Mott insulators in ordered phases. The former model shows the N´ eel and canted phases [Fig. 2 (a)], where spontaneous symmetry break-ing occurs. The latter model shows the WF phase whose magnetic structure is akin to that in the canted phase. However, no spontaneous symmetry breaking occurs in the WF phase and the ground state keeps all the sym-metries that the Hamiltonian (2.2) possesses. We also consider two kinds of the laser field: one-color laser (3.3) and two-color laser (3.4). The one-color laser (3.3) is the linearly oscillating field. The two-color laser (3.4) draws a more complex spatial trajectory whose spatial pattern is determined by the parameter ℓ [Fig. 3 (b) and (c)]. The choices ℓ = 2 and 3 of the parameter make the two-color laser field exhibit the C3- and C4-symmetric spatial patterns, respectively. We have obtained a plenty of harmonic generation spectra in various situations. The selection rule of the spectrum critically depends on the dynamical symmetry that stems from the combination of the symmetry of the Hamiltonian, the symmetry of the ground state, the sym-metry of the laser field. Here, the selection rule is referred to as the existence or absence of a partial series of the harmonic generation. We first analyze the magnon har-monic generation driven by a standard one-color laser in Sec. V. When the one-color laser field Bac ∥ ex is applied to the model (2.1) in the N´ eel phase, we observe the ab-sence of the nth harmonic generation for n = 2 , 4, 6, · · · 
+
+(Fig. 4). Interestingly, the observed nth harmonic gen-eration n = 1 , 3, 5, · · · in the N´ eel phase disappears when the system enters into the canted phase. Compar-ing Figs. 4 and 6, we find different selection rules when the Hamiltonian is the same in both cases, but the sys-tem belongs to different ordered phases. We also detect another contrasting comparison between the canted and WF phases. The Hamiltonians in these two phases are different: Eq. (2.1) for the canted phase and Eq. (2.2) for the WF phase. However, the symmetry of their ground states is the same. Comparing Figs. 6 and 7, we also find different selection rules when the Hamiltonians are different but the ground states’ symmetry is the same. We emphasize that the symmetry of the phase and the symmetry of the Hamiltonian can differ in the ordered phases of magnetic Mott insulators, both of which are important for the selection rule in the harmonic genera-tion spectrum. The application of two-color laser fields makes the sit-uation even richer. Section VI is devoted to the inves-tigation of such two-color laser induced harmonic gen-erations. We find the characteristic selection rules re-lated to C3 [Fig. 8 (a)] and C4 symmetry [Fig. 9 (a)] in the N´ eel phase. The point is that a time shift of the ac magnetic field can be canceled out by applying a proper spin rotation around the Sz axis if we consider the U(1) spin-rotation symmetric magnets (including the N´ eel state) with an ac Zeeman coupling between the total spin and two-color laser. We also find that the selection rule is limited in the canted phase since the canted order breaks the spin rotation symmetry around the Sz axis and is incompatible with the C3 symmetry of the two-20 color laser for ℓ = 2 [Fig. 8 (b)]. Still, we obtain the limited but nontrivial selection rule in the canted phase for the C4-symmetric laser [Fig. 9 (b)]. From the results of C3 and C4-symmetric laser induced harmonic gener-ations, we show that a generic selection rule holds in a broad class of two-color laser driven U(1) spin-rotation symmetric magnets with an ac Zeeman interaction. For this class (including the N´ eel phase), one can always have the ℓ dynamical symmetries of Eq. (6.16) irrespective of the underlying lattice structure. In Sec. VII, we discuss the laser-strength dependence of the magnon harmonic generation spectrum. By nu-merically solving the LLG equation, we show that some non-perturbative effects [deviation from the power law in Fig. 10 and the red shift in Fig. 11] emerge when the strength of the ac magnetic field Bac approaches the or-der of 0 .1J, where J is the strength of the dominant exchange interaction in antiferromagnets. The intensity 
+
+Bac = 0 .1J corresponds to about a Tesla order of the ac magnetic field in real antiferromagnetic materials. These numerical results of the non-perturbative effects are con-sistent with recent experimental observations [27, 53]. From our comprehensive investigation, we conclude that the harmonic generation spectrum | ˜ma(ω)| of mag-netic Mott insulators possesses rich information on mag-netic interactions and magnetic orders. This paper established the fundamental understanding about the harmonic generation spectrum in magnetically ordered phases and the associated dynamical symmetry. Finally we briefly comment on the difference between the laser-driven quantum magnet following Schr¨ odinger (or Heisenberg) equation and the semiclassical magnet following the LLG equation. As we discussed, we have used the LLG equation to numerically analyze the har-monic generation of the THz-laser driven ordered anti-ferromagnets because spin dynamics of ordered magnets is known to be nicely described by the LLG equation. However, if we consider a phenomenon deeply associated with the spin commutation relation, there would be a possibility that the result of a quantum ordered magnet largely deviates from that of the corresponding classical magnet. Finding such a quantum nature of laser-driven ordered magnets might offer an interesting open issue. 
+
+> ACKNOWLEDGMENTS
+
+The authors thank Hogara Watanabe for fruitful dis-cussions. M.S. is supported by JSPS KAKENHI (Grants No. JP25K07198, No. JP25H02112, No. JP22H05131, No. JP25H01609 and No. JP25H01251) and JST, CREST Grant No. JPMJCR24R5, Japan. 
+
+> Appendix A: Linear spin-wave theory
+
+This appendix presents the linear spin-wave theory in the ordered phases in antiferromagnets (the N´ eel, canted phase, and WF phases) for self-containedness of the pa-per. The linear spin-wave theory gives us the excitation gap of magnons and shows how the gap depends on pa-rameters including the magnetic field. As is well known, the spin-wave theory is a semiclassi-cal theory of magnons built on a classical magnetic order. We derive the spin-wave theory in the three magnetically ordered phases separately but in a parallel way.  
+
+> 1. N´ eel phase
+
+The square lattice has two sublattices, say A and B. Any site in the A sublattice is surrounded by four nearest-neighbor sites in the B sublattice and vice versa. Let rA
+
+and rB be sites in the A sublattice and B sublattice, respectively. We can assume that the classical N´ eel or-der has ˆSz 
+
+> rA
+
+= S and ˆSz 
+
+> rB
+
+= −S. Let us introduce the Holstein-Primakoff transformation [83] as follows. ˆSz 
+
+> rA
+
+= S − ˆa† 
+
+> rA
+
+ˆarA , (A1) ˆS+ 
+
+> rA
+
+=
+
+q
+
+2S − ˆa†
+
+> A
+
+ˆarA ˆarA , (A2) ˆSz 
+
+> rB
+
+= −S + ˆb†
+
+> rB
+
+ˆbrB , (A3) ˆS+ 
+
+> rB
+
+= ˆb†
+
+> rB
+
+q
+
+2S − ˆb† 
+
+> rB
+
+ˆbrB , (A4) where ˆS+ 
+
+> r
+
+= ˆSx 
+
+> r
+
++ i ˆSy 
+
+> r
+
+and ˆS− 
+
+> r
+
+= ( ˆS+ 
+
+> r
+
+)† = ˆSx 
+
+> r
+
+− i ˆSy 
+
+> r
+
+are the ladder operators of the spin, ˆ ar and ˆbr are bosonic annihilation operators at the site r. The annihilation op-erators ˆ ar and ˆbr and their Hermite conjugate operators, ˆa† 
+
+> r
+
+and ˆb† 
+
+> r
+
+, satisfy the following commutation relations: [ˆ ar , ˆa† 
+
+> r′
+
+] = δr,r′ , (A5) [ˆ ar , ˆar′ ] = [ˆ a† 
+
+> r
+
+, ˆa† 
+
+> r′
+
+] = 0 , (A6) [ˆbr , ˆb† 
+
+> r′
+
+] = δr,r′ , (A7) [ˆbr , ˆbr′ ] = [ ˆb† 
+
+> r
+
+, ˆb† 
+
+> r′
+
+] = 0 , (A8) [ˆ ar , ˆbr′ ] = [ˆ a† 
+
+> r
+
+, ˆbr′ ] = [ˆ ar , ˆb† 
+
+> r′
+
+] = [ˆ a† 
+
+> r
+
+, ˆb† 
+
+> r′
+
+] = 0 . (A9) Here, δr,r′ is the Kronecker delta. The Holstein-Primakoff transformation is nonlinear in the boson oper-ators, leading to interactions among magnons. The lin-ear spin-wave theory drops the third- and higher-order terms about bosonic creation or annihilation operators and thus, ignore interactions. Within the framework of the linear spin-wave theory, the Holstein-Primakoff trans-formation is approximated as 
+
+Sz 
+
+> rA
+
+= S − ˆa† 
+
+> rA
+
+ˆarA , (A10) 
+
+S+ 
+
+> rA
+
+≈ √2S ˆarA , (A11) 
+
+Sz 
+
+> rB
+
+= −S + ˆb†
+
+> rB
+
+ˆbrB , (A12) 
+
+S+ 
+
+> rB
+
+≈ √2S ˆb† 
+
+> rB
+
+. (A13) Let us plug the approximated Eqs. (A10), (A11), (A12), (A13) into the Hamiltonian (2.1) and drops the third-and higher-order terms in ˆ ar and ˆ a† 
+
+> r
+
+.21 ˆHN-C ≈ − 12 zJN S 2 − KN S 2 + JS X
+
+> rA,ρ
+
+(ˆ arA
+
+ˆbrA+ρ + ˆ a†
+
+> rA
+
+ˆb† 
+
+> rA+ρ
+
++ ˆ a† 
+
+> rA
+
+ˆarA + ˆb†
+
+> rA+ρ
+
+ˆbrA+ρ)+ (2 KS + B) X
+
+> rA
+
+ˆa† 
+
+> rA
+
+ˆarA + (2 KS − B) X
+
+> rB
+
+ˆb†
+
+> rB
+
+ˆbrB , (A14) where N is the site number and z = 4 is the coordination number. The vector ρ = a0ex, −a0ex, a 0ey , −a0ey
+
+denotes the vector connecting nearest-neighbor sites, and a0 is the lattice spacing. Applying the Fourier transform to the bosonic creation and annihilation operators, we obtain ˆHN-C = − 12 zJN S z − KN S 2 + zJs X
+
+> k
+
+n
+
+ˆa†
+
+> k
+
+ˆak + ˆb†
+
+> k
+
+ˆbk + γk(ˆ akˆbk + ˆ a†
+
+> k
+
+ˆb†
+
+> k
+
+)
+
+o
+
++ (2 KS + B) X
+
+> k
+
+ˆa†
+
+> k
+
+ˆak + (2 KS − B) X
+
+> k
+
+b†
+
+> k
+
+bk
+
+= − 12 zJN S 2 − KN S 2
+
++ X
+
+> k
+
+n
+
+(zJS + 2 KS + B)ˆ a†
+
+> k
+
+ˆak + ( zJS + 2 KS − B)ˆb†
+
+> k
+
+ˆbk + γk(ˆ akˆbk + ˆ a†
+
+> k
+
+ˆb†
+
+> k
+
+)
+
+o
+
+, (A15) where γk is a scalar given by 
+
+γk = 1
+
+z
+
+X
+
+> ρ
+
+eik·ρ = 12 {cos( kxa0) + cos( ky a0)}, (A16) with the wavevector k = ( kx, k y , k z )⊤. We diagonalize the quadratic Hamiltonian (A15) by performing the Bogoli-ubov transfomation. 
+
+ˆαk
+
+ˆβk
+
+!
+
+= cosh θk sinh θk
+
+sinh θk cosh θk
+
+!
+
+ˆak
+
+ˆbk
+
+!
+
+. (A17) The transformed bosonic operators ˆ αk and ˆβk satisfy the commutation relation, [ˆ αk, ˆα† 
+
+> k′
+
+] = [ ˆβk, ˆβ† 
+
+> k′
+
+] = δk,k′ . (A18) The other pairs of these bosonic operators are commutative (e.g., [ˆ αk, ˆβk′ ] = 0). Choosing the parameter θk so that tanh(2 θk) = zJγ k
+
+zJ + 2 K , (A19) we can diagonalize the quadratic Hamiltonian (A15). ˆHN-C = − 12 zJN S 2 − KN S 2 + X
+
+> k
+
+p(zJS + 2 KS )2 − (zJSγ k)2 − (zJS + 2 KS )
+
+
+
++ X
+
+> k
+
+p(zJS + 2 KS )2 − (zJSγ k)2 + B
+
+
+
+ˆα† 
+
+> k
+
+ˆαk + X
+
+> k
+
+p(zJS + 2 KS )2 − (zJSγ k)2 − B
+
+
+
+ˆβ† 
+
+> k
+
+ˆβk
+
+= EN´ eel + X
+
+> k
+
+(ϵN´ eel ,α  
+
+> k
+
+ˆα† 
+
+> k
+
+ˆαk + ϵN´ eel ,β  
+
+> k
+
+ˆβ† 
+
+> k
+
+ˆβk), (A20) with 
+
+EN´ eel = − 12 zJS 2 − KN S 2 + X
+
+> k
+
+p(zJS + 2 KS )2 − (zJSγ k)2 − (zJS + 2 KS )
+
+
+
+, (A21) 
+
+ϵN´ eel ,α  
+
+> k
+
+= p(zJS + 2 KS )2 − (zJSγ k)2 + B, (A22) 
+
+ϵN´ eel ,β  
+
+> k
+
+= p(zJS + 2 KS )2 − (zJSγ k)2 − B. (A23) We thus obtain the two magnon bands ϵN´ eel ,α  
+
+> k
+
+and ϵN´ eel ,β  
+
+> k
+
+in the N´ eel phase. 
+
+2. Canted phase The classical order in the canted phase is sketched in 22 Fig. 2 (a), that is, ˆSrA =
+
+
+
+− sin θ
+
+0cos θ
+
+ , ˆSrB =
+
+
+
+sin θ
+
+0cos θ
+
+ , (A24) where θ is determined by B/J to minimize the energy. We thus find 
+
+θ = cos −1
+
+ B
+
+2S(zJ − K)
+
+
+
+. (A25) We consider the canted order within the Sz -Sx plane without loss of generality since the model (2.1) has the U(1) spin-rotation symmetry around the Sz axis. The classical canted order is generated by tilting the ferro-magnetic order along the Sz axis with angles ±θ, where the ratio B/J uniquely determines θ. As Fig. 2 (a) shows, the spin ˆSrA in the A sublattice is tilted by −θ around the Sy axis and the spin ˆSrB in the B sublattice is tilted by + θ around the Sy axis. Let us consider another coor-dinate system ( ˆSξ 
+
+> r
+
+, ˆSη 
+
+> r
+
+, ˆSζ 
+
+> r
+
+)⊤ related to the original one ( ˆSx 
+
+> r
+
+, ˆSy 
+
+> r
+
+, ˆSz 
+
+> r
+
+)⊤ through the rotation around the y axis: 
+
+
+
+ˆSx
+
+> rA
+
+ˆSy
+
+> rA
+
+ˆSz
+
+> rA
+
+ =
+
+
+
+cos θ 0 − sin θ
+
+0 1 0sin θ 0 cos θ
+
+
+
+ˆSξ
+
+> rA
+
+ˆSη
+
+> rA
+
+ˆSζ
+
+> rA
+
+ , (A26) 
+
+
+
+ˆSx
+
+> rB
+
+ˆSy
+
+> rB
+
+ˆSz
+
+> rB
+
+ =
+
+
+
+cos θ 0 sin θ
+
+0 1 0
+
+− sin θ 0 cos θ
+
+
+
+ˆSξ
+
+> rB
+
+ˆSη
+
+> rB
+
+ˆSζ
+
+> rB
+
+ . (A27) In the coordinate ( ˆSξ 
+
+> r
+
+, ˆSη 
+
+> r
+
+, ˆSζ 
+
+> r
+
+)⊤, the classical canted order (A24) corresponds to the ferromagnetic order, ( ˆSξ 
+
+> rA
+
+, ˆSη 
+
+> rA
+
+, ˆSζ 
+
+> rA
+
+)⊤ = ( ˆSξ 
+
+> rB
+
+, ˆSη 
+
+> rB
+
+, ˆSζ 
+
+> rB
+
+)⊤ = (0 , 0, 1) ⊤.Hence, we can utilize the spin-wave theory in the fer-romagnetic phase. The spin-wave theory here, however, has two kinds of bosons unlike that in the ferromagnetic phase because of the existence of the two sublattices. We introduce the following Holstein-Primakoff transforma-tion: ˆSζ 
+
+> rA
+
+= S − ˆa† 
+
+> rA
+
+ˆarA , (A28) ˆSξ 
+
+> rA
+
++ i ˆSη 
+
+> rA
+
+≈ √2S ˆarA , (A29) ˆSζ 
+
+> rB
+
+= S − ˆb†
+
+> rB
+
+ˆbrB , (A30) ˆSξ 
+
+> rB
+
++ i ˆSη 
+
+> rA
+
+≈ √2S ˆbrB , (A31) where we have already dropped the higher-order terms. In the original coordinate system ( ˆSx 
+
+> r
+
+, ˆSy 
+
+> r
+
+, ˆSz 
+
+> r
+
+)⊤, the spin operator is written in terms of these bosonic operators as follows. ˆSz 
+
+> rA
+
+=
+
+r S
+
+2 sin θ(ˆ arA + ˆ a† 
+
+> rA
+
+) + cos θ(S − ˆa† 
+
+> rA
+
+ˆarA ), (A32) ˆS+ 
+
+> rA
+
+≈
+
+r S
+
+2 (cos θ + 1)ˆ arA +
+
+r S
+
+2 (cos θ − 1)ˆ a† 
+
+> rA
+
+− sin θ(S − ˆa† 
+
+> rA
+
+ˆarA ), (A33) 
+
+Sz 
+
+> rB
+
+= −
+
+r S
+
+2 sin θ(ˆbrB + ˆb† 
+
+> rB
+
+) + cos θ(S − ˆb†
+
+> rB
+
+ˆbrB ), (A34) 
+
+S+ 
+
+> rB
+
+≈
+
+r S
+
+2 (cos θ + 1) ˆbrB +
+
+r S
+
+2 (cos θ − 1) ˆb† 
+
+> rB
+
++ sin θ(S − ˆb†
+
+> rB
+
+ˆbrB ). (A35) The rest of the procedure is parallel to that in the N´ eel phase. We rewrite the Hamiltonian (2.1) in terms of boson operators. ˆHN-C = 12 zJN S 2 cos(2 θ) − KN S 2 cos 2 θ − BN S cos θ − 12 KN S sin 2 θ
+
++ X
+
+> rA
+
+r S
+
+2 sin θ{2S(2 J − K) cos θ − B}(ˆ arA + ˆ a† 
+
+> rA
+
+) − X
+
+> rB
+
+r S
+
+2 sin θ{2S(zJ − K) cos θ − B}(ˆbrB + ˆb† 
+
+> rB
+
+)+ X
+
+> rA,ρ
+
+ 12 JS (cos(2 θ) + 1)(ˆ arA
+
+ˆb† 
+
+> rA+ρ
+
++ ˆ a†
+
+> rA
+
+ˆbrA+ρ) + 12 JS (cos(2 θ) − 1)(ˆ arA
+
+ˆbrA+ρ + ˆ a†
+
+> rA
+
+ˆb†
+
+> rA+ρ
+
+)
+
+
+
++ X
+
+> rA
+
+
+
+− 12 KS sin 2 θ(ˆ arA ˆarA + ˆ a† 
+
+> rA
+
+ˆa† 
+
+> rA
+
+) + {− zJS cos(2 θ) + KS (3 cos 2 θ − 1) + B cos θ}ˆa† 
+
+> rA
+
+ˆarA
+
+
+
++ X
+
+> rB
+
+
+
+− 12 KS sin 2 θ(ˆbrB
+
+ˆbrB + ˆb†
+
+> rB
+
+ˆb† 
+
+> rB
+
+) + {− zJS cos(2 θ) + KS (3 cos 2 θ − 1) + B cos θ}ˆb†
+
+> rB
+
+ˆbrB
+
+
+
+. (A36) The linear terms proportional to (ˆ arA + ˆ a† 
+
+> rA
+
+) or to ( ˆbrB + ˆb† 
+
+> rB
+
+), which should vanish, indeed vanish because of the 23 relation (A25) between the canted angle θ and the ratio B/J . The Fourier transform of this quadratic Hamiltonian is ˆHN-C = 12 zJN S 2 cos(2 θ) − KN S 2 cos 2 θ − BN S cos θ − 12 KN S sin 2 θ
+
++ X
+
+> k
+
+−zJS cos(2 θ) + KS (3 cos 2 θ − 1) + B cos θ (ˆ a†
+
+> k
+
+ˆak + ˆb†
+
+> k
+
+ˆbk) + X
+
+> k
+
+12 zJS (cos(2 θ) − 1) γk(ˆ akˆbk + ˆ a†
+
+> k
+
+ˆb†
+
+> k
+
+)+ X
+
+> k
+
+12 zJS (cos(2 θ) + 1) γk(ˆ akˆb†−k + ˆ a†
+
+> k
+
+ˆb−k) − X
+
+> k
+
+12 KS sin 2 θ(ˆ akˆa−k + ˆ a†
+
+> k
+
+ˆa†−k + bkˆb−k + ˆb†
+
+> k
+
+ˆb†−k). (A37) To lighten the notation, we introduce the following parameters, 
+
+A = −zJS cos(2 θ) + KS (3 cos 2 θ − 1) + B cos θ = zJS − KS sin 2 θ, (A38) 
+
+Bk = 12 zJS (cos(2 θ) − 1) γk = −zJS sin 2 θγ k, (A39) 
+
+Ck = 12 zJS (cos(2 θ) + 1) γk = zJS cos 2 θγ k, (A40) 
+
+F = − 12 KS sin 2 θ, (A41) and the following operators, ˆck = 1
+
+√2 (ˆ ak + ˆb−k), (A42) ˆdk = 1
+
+√2 (ˆ ak − ˆb−k). (A43) The Hamiltonian then becomes ˆHN-C = 12 zJN S 2 cos(2 θ) − KN S 2 cos 2 θ − BN S cos θ − 12 KN S sin 2 θ
+
++ X
+
+> k
+
+(A + Ck)ˆ c† 
+
+> k
+
+ˆck + X
+
+> k
+
+(A − Ck) ˆd† 
+
+> k
+
+ˆdk
+
++ X
+
+> k
+
+ 12 Bk + F
+
+
+
+(ˆ ck ˆc−k + ˆ c† 
+
+> k
+
+ˆc†−k) + X
+
+> k
+
+
+
+− 12 Bk + F
+
+
+
+( ˆdk ˆd−k + ˆd† 
+
+> k
+
+ˆd†−k). (A44) Since ˆ ck and ˆdk are mutually decoupled, we are finally ready to apply the following Bogoliubov transformations. 
+
+ˆαk
+
+ˆα†−k
+
+!
+
+= cosh θα 
+
+> k
+
+− sinh θα
+
+> k
+
+− sinh θα 
+
+> k
+
+cosh θα
+
+> k
+
+!
+
+ˆck
+
+c†−k
+
+!
+
+, (A45) 
+
+ˆβk
+
+ˆβ†−k
+
+!
+
+= cosh θβ 
+
+> k
+
+− sinh θβ
+
+> k
+
+− sinh θβ 
+
+> k
+
+cosh θβ
+
+> k
+
+! ˆdk
+
+d†−k
+
+!
+
+. (A46) These transformations from ˆ ck and ˆdk to ˆ αk and ˆβk lead to ˆHN-C = 12 zJN S 2 cos(2 θ) − KN S 2 cos 2 θ − BN S cos θ − 12 KN S sin 2 θ
+
++ X
+
+> k
+
+(A + Ck) cosh(2 θα 
+
+> k
+
+) + ( Bk + 2 F ) sinh(2 θα 
+
+> k
+
+) + (A − Ck) cosh(2 θβ 
+
+> k
+
++ ( −Bk + 2 F ) sinh(2 θβ 
+
+> k
+
+) − A
+
+
+
++ X
+
+> k
+
+12
+
+(A + Ck) sinh(2 θα 
+
+> k
+
+) + ( Bk + 2 F ) cosh(2 θα 
+
+> k
+
+) (ˆ αk ˆα−k + ˆ α† 
+
+> k
+
+ˆα†−k)+ X
+
+> k
+
+12
+
+(A − Ck) sinh(2 θk) + ( −Bk + 2 F ) cosh(2 θβ 
+
+> k
+
+) ( ˆβk ˆβ−k + ˆβ† 
+
+> k
+
+ˆβ†−k)+ X
+
+> k
+
+(A + Ck) cosh(2 θα 
+
+> k
+
+) + ( Bk + 2 F ) sinh(2 θα 
+
+> k
+
+) ˆα† 
+
+> k
+
+ˆαk24 + X
+
+> k
+
+(A − Ck) cosh(2 θβ 
+
+> k
+
+) + ( −Bk + 2 F ) sinh(2 θβ 
+
+> k
+
+) ˆβ† 
+
+> k
+
+ˆβk. (A47) When θα 
+
+> k
+
+and θβ 
+
+> k
+
+satisfy tanh(2 θα 
+
+> k
+
+) = − Bk + 2 FA + Ck
+
+, (A48) tanh(2 θβ 
+
+> k
+
+) = − Bk − 2FA − Ck
+
+, (A49) the off-diagonal terms vanish and the Hamiltonian is diagonalized as ˆHN-C = ECant + X
+
+> k
+
+ϵCant ,α  
+
+> k
+
+ˆα† 
+
+> k
+
+ˆαk + X
+
+> k
+
+ϵCant ,β  
+
+> k
+
+ˆβ† 
+
+> k
+
+ˆβk, (A50) where 
+
+ECant = 12 zJN S 2 cos(2 θ) − KN S 2 cos 2 θ − BN S cos θ − zJN S + 12 KN S sin 2 θ
+
++ X
+
+> k
+
+ 12
+
+p(A + Ck)2 − (Bk + 2 F )2 + 12
+
+p(A − Ck)2 − (Bk − 2F )2 − A
+
+
+
+, (A51) 
+
+ϵCant ,α  
+
+> k
+
+= p(A + Ck)2 − (Bk + 2 F )2, (A52) 
+
+ϵCant ,β  
+
+> k
+
+= p(A − Ck)2 − (Bk − 2F )2. (A53) We thus obtain the two magnon bands ϵCant ,α  
+
+> k
+
+and ϵCant ,β 
+
+> k
+
+in the canted phase. The magnon band ϵCant ,β  
+
+> k
+
+has a minimum at k = 0 and 
+
+ϵCant ,β  
+
+> 0
+
+= 0 , (A54) independent of θ, that is, of B/J [Fig. 2 (c)]. This gap-less mode corresponds to the NG mode associated with the spontaneous U(1) symmetry breaking in the canted phase. 
+
+3. Weak ferromagnets 
+
+As we mentioned in the main text, the ground state in the WF phase is akin to that in the canted phase. We thus reuse the Holstein-Primakoff transformation from the spin to magnon operators that we developed in the canted phase. In the linear spin-wave theory regime, we then approximate ˆSrA and ˆSrB as follows. ˆSx 
+
+> rA
+
+= ˆSξ 
+
+> rA
+
+cos θ − ˆSζ 
+
+> rA
+
+sin θ
+
+≈
+
+r S
+
+2 (ˆ arA + ˆ a† 
+
+> rA
+
+) cos θ − (S − ˆa† 
+
+> rA
+
+ˆarA ) sin θ, 
+
+(A55) ˆSy 
+
+> rA
+
+= ˆSη
+
+> rA
+
+≈ − i
+
+r S
+
+2 (ˆ arA − ˆa† 
+
+> rA
+
+), (A56) ˆSz 
+
+> rA
+
+= ˆSξ 
+
+> rA
+
+sin θ + ˆSζ 
+
+> rA
+
+cos θ
+
+≈
+
+r S
+
+2 (ˆ arA + ˆ a† 
+
+> rA
+
+) sin θ + ( S − ˆa† 
+
+> rA
+
+ˆarA ) cos θ, 
+
+(A57) for the A sublattice and ˆSx 
+
+> rB
+
+= ˆSξ 
+
+> rB
+
+cos θ − ˆSζ 
+
+> rB
+
+sin θ
+
+≈
+
+r S
+
+2 (ˆbrB + ˆb† 
+
+> rB
+
+) cos θ − (S − ˆb†
+
+> rB
+
+ˆbrB ) sin θ, 
+
+(A58) ˆSy 
+
+> rB
+
+= ˆSη
+
+> rB
+
+≈ − i
+
+r S
+
+2 (ˆbrB − ˆb† 
+
+> rB
+
+), (A59) ˆSz 
+
+> rB
+
+= ˆSξ 
+
+> rB
+
+sin θ + ˆSζ 
+
+> rB
+
+cos θ
+
+≈
+
+r S
+
+2 (ˆbrB + ˆb† 
+
+> rB
+
+) sin θ + ( S − ˆb†
+
+> rB
+
+ˆbrB ) cos θ, 
+
+(A60) for the B sublattice. Using these bosonic operators, we rewrite the Hamiltonian (2.2) as ˆHWF = 12 zJN S 2 cos(2 θ) − 12 zDN S 2 sin(2 θ) − BN S cos θ25 + X
+
+> rA
+
+zS (−J cos(2 θ) + D sin(2 θ)) + B cos θ ˆa† 
+
+> rA
+
+ˆarA
+
++ X
+
+> rB
+
+zS (−J cos(2 θ) + D sin(2 θ)) + B cos θ ˆb†
+
+> rB
+
+ˆbrB
+
++ X
+
+> ⟨rA,rB⟩
+
+S
+
+2 (J cos(2 θ) − D sin(2 θ) − J)(ˆ arA
+
+ˆbrB + ˆ a†
+
+> rB
+
+ˆb† 
+
+> rB
+
+)+ X
+
+> ⟨rA,rB⟩
+
+S
+
+2 (J cos(2 θ) − D sin(2 θ) + J)(ˆ arA
+
+ˆb† 
+
+> rB
+
++ ˆ a†
+
+> rA
+
+ˆbrB ), (A61) where we have dropped third- or higher-order terms about bosonic operators. The linear terms about ˆ ar or ˆbr vanish in analogy with the canted phase. The Fourier transformation allows us to rewrite the Hamiltonian as ˆHWF = 12 zJN S 2 cos(2 θ) − 12 zDN S 2 sin(2 θ) − BN S cos θ
+
++ X
+
+> k
+
+Ak(ˆ a†
+
+> k
+
+ˆak + ˆb†
+
+> k
+
+ˆbk) + X
+
+> k
+
+Bk(ˆ akˆbk + ˆ a†
+
+> k
+
+ˆb†
+
+> k
+
+) + X
+
+> k
+
+Ck(ˆ akˆb†−k + ˆ a†
+
+> k
+
+ˆb−k), (A62) where Ak, Bk, and Ck are 
+
+Ak = zS (−J cos(2 θ) + D sin(2 θ)) + B cos θ, (A63) 
+
+Bk = 12 zSγ k(J cos(2 θ) − D sin(2 θ) − J), (A64) 
+
+Ck = 12 zSγ k(J cos(2 θ) − D sin(2 θ) + J). (A65) Diagonalizing the Hamiltonian in analogy with the canted phase, we obtain ˆHWF = EWF + X
+
+> k
+
+(ϵWF ,α  
+
+> k
+
+ˆα† 
+
+> k
+
+ˆαk + ϵWF ,β  
+
+> k
+
+ˆβ† 
+
+> k
+
+ˆβk), (A66) with the ground-state energy EWF and the magnon bands, 
+
+ϵWF ,α  
+
+> k
+
+=
+
+q
+
+(Ak + Ck)2 − B2
+
+> k
+
+, (A67) 
+
+ϵWF ,β  
+
+> k
+
+=
+
+q
+
+(Ak − Ck)2 − B2
+
+> k
+
+. (A68) 
+
+Appendix B: Dynamical symmetries 
+
+Models of magnetic Mott insulators under an ac mag-netic field often possess a dynamical symmetry related to the period Tac of the ac magnetic field when the ac field can be viewed as an ideal continuous wave (not a finite-length pulse). In this section, we derive the dynamical symmetry of magnetic Mott insulators in a general form and also consider dynamical symmetries in the presence of spontaneous magnetic orders dealt with in the main text. To simplify the setup, we assume that the equation of motion has no dissipation effect, that is, we consider simple closed (isolated) magnetic systems irradiated by an ac field. 
+
+1. Dynamical symmetry in quantum systems 
+
+Let us consider a quantum spin model ˆHmag subject to a spin-light coupling ˆHext (t), whose temporal period is Tac : ˆHext (t) = ˆHext (t + Tac ). In this study, we mainly consider the ac Zeeman interaction as the spin-light cou-pling. To discuss the dynamical symmetry, we focus on the ideal setup that the applied laser is a continuous wave (not a finite-length pulse) and the temporal periodicity ˆHext (t) = ˆHext (t + Tac ) holds from the initial time. Suppose that the static system of ˆHmag has a sym-metry generated by a unitary operator ˆU . Namely, ˆU ˆHmag ˆU † = ˆHmag . (More generally speaking, the op-erator ˆU is a unitary or an antiunitary operator.) In the presence of the periodic field, ˆU does not keep the total Hamiltonian ˆH(t) = ˆHmag + ˆHext (t) invariant in general: ˆU ˆH(t) ˆU † = ˆH(t) does not hold in general. Instead, let 26 us consider the case that the a time translation of the time-dependent Hamiltonian ˆH(t) by κT ac is equivalent to its symmetry operation ˆU :ˆU ˆH(t) ˆU † = ˆH(t + κT ac ), (B1) where we assume that the constant κ satisfies 0 < κ < 1without loss of generality thanks to the time periodicity of the ac field. The case of κ = 1 corresponds to the trivial equation: ˆH(t + κT ac ) = ˆH(t + Tac ) = ˆH(t). If a time periodic system satisfies the relation (B1), we say that the system has dynamical symmetry. Namely, the dynamical symmetry is a sort of the symmetry including a time shift. We here note that in Eq. (B1), the Hamilto-nian is defined in the Schr¨ odinger picture and it has the time dependence only through the external ac field. Since each dynamical symmetry is characterized by the sym-metry operator ˆU and the time shift κT ac , (as we used in the main text) we represent each dynamical symmetry using the symbol ( ˆU , κT ac ). As we briefly discussed in Sec. V A, the relation of Eq. (B1) is not enough to derive the selection rule for the harmonic generation spectrum. In addition to Eq. (B1), we should focus on the transformation laws for symmetry operations on physical quantities. In particular, in the present target of laser-driven magnets, the main observ-able is the spin operator. Therefore, we should consider the following symmetry relation, ˆU ˆSr ˆU † = f ({ ˆSr′ }), (B2) where f ({ ˆSr′ }) is a function of { ˆSr′ }. For example, when ˆU is the π spin-rotation operator around the Sz axis ( ˆU =ˆUz (π)), the above equation is given by ˆUz (π) ˆSx,y  
+
+> r
+
+ˆU † 
+
+> z
+
+(π) = 
+
+− ˆSx,y  
+
+> r
+
+.Combining Eqs. (B1) and (B2), we can often derive a selection rule of the harmonic generation spectrum. To see the logic from these two equations to the selection rule, we consider the time-evolution operator ˆUtime (s, s ′) = T
+
+"
+
+exp 1
+
+iℏ
+
+Z s′
+
+> s
+
+dt ′ ˆH(t′)
+
+!# 
+
+, (B3) where T stands for the time-ordering operator and the Hamiltonian ˆH(t) is in the Schr¨ odinger picture. Here we assume that the initial time s′, which is equaivalent to the beginning of the laser application, is long enough ago ( s′ → −∞ ) and the initial state |ψ0⟩ at s′ is given by the ground state or the thermal equilibrium state of ˆHmag . Under this assumption, we can re-expressed the time-evolution operator as ˆUtime (s) = ˆUtime (s, ∞) (B4) By taking the time derivative of ˆUtime (t), we find the time-evolution operator satisfies the following equation of motion 
+
+ddt ˆUtime (t) = T
+
+ 1
+
+iℏ ˆH(t) exp 
+
+ 1
+
+iℏ
+
+Z t
+
+> −∞
+
+dt ′ ˆH(t′)
+
+ 
+
+= 1
+
+iℏ ˆH(t) ˆUtime (t). (B5) By sandwiching this equation between ˆU and ˆU †, we ob-tain the following equation 
+
+ddt ˆU ˆUtime (t) ˆU † = 1
+
+iℏ ˆU ˆH(t) ˆU † ˆU ˆUtime (t) ˆU †
+
+= 1
+
+iℏ ˆH(t + κT ac ) ˆU ˆUtime (t) ˆU †, (B6) where we have used Eq. (B1) and ˆU ˆU † = ˆ 1. Comparing the original equation of motion (B5) with Eq. (B6), we may assume that the relation ˆU ˆUtime (t) ˆU † ∝ ˆUtime (t +
+
+κT ac ) holds, namely, ˆU ˆUtime (t) ˆU † = eiϕ ˆUtime (t + κT ac ), (B7) where the phase ϕ is a real number. Using Eqs. (B7), (B1) and (B2), we can compute the expectation value of spin operators at time t as follows: 
+
+Mr (t) ≡ ⟨ ψ(t)| ˆSr |ψ(t)⟩
+
+= ⟨ψ0| ˆUtime (t)† ˆSr ˆUtime (t)|ψ0⟩
+
+= ⟨ψ0| ˆU † ˆU ˆUtime (t)† ˆU † ˆU ˆSr ˆU † ˆU ˆUtime (t) ˆU † ˆU |ψ0⟩
+
+= ⟨ψ0| ˆU † ˆUtime (t + κT ac )†f ({ ˆSr′ }) ˆUtime (t + κT ac ) ˆU |ψ0⟩
+
+= ⟨ψ0| ˆUtime (t + κT ac )†f ({ ˆSr′ }) ˆUtime (t + κT ac )|ψ0⟩
+
+= ⟨ψ(t + κT ac )|f ({ ˆSr′ })|ψ(t + κT ac )⟩
+
+= f ({Mr′ (t + κT ac )}), (B8) where |ψ(t)⟩ = ˆUtime (t)|ψ0⟩ is the wave function at time 
+
+t. In this equation, we have used ˆU † ˆU = ˆ1 on the third line, and used Eqs. (B2) and (B7) on the fourth line. On the fifth line, we have assumed that the initial state |ψ0⟩ is invariant under the symmetry operation ˆU :ˆU |ψ0⟩ = eiϕ 1 |ψ0⟩ with the phase ϕ1 being a real num-ber. Equation (B8) provides a relation between the ex-pectation values of spins at two different times, Mr (t)and Mr (t + κT ac ). The harmonic generation spectrum is given by the Fourier transform of Mr (t) along the time direction, and thereby Eq. (B8) generally restricts the form (frequency dependence) of the Fourier transform, namely, Eq. (B8) leads to a selection rule. We will dis-cuss several concrete examples of such selection rules in the following subsections. So far we have considered only the case where the ini-tial state (ground state or equilibrium state of ˆHmag )is invariant under the symmetry operation ˆU . This ar-gument holds if we discuss dynamical symmetry in a magnetic system where spontaneous symmetry breaking (SSB) does not occur. On the other hand, if the sym-metry associated with the operator ˆU is spontaneously broken in the initial state |ψ0⟩ before the laser appli-cation, the state |ψ0⟩ is generally changed by the ac-tion of ˆU : ˆU |ψ0⟩̸ = |ψ0⟩. In such a case, the system is no longer dynamically symmetric and Eq. (B8) does not 27 hold [although the Hamiltonian still satisfies Eq. (B1)]. That is, for the case of SSB, one has to consider sym-metry relations of both the operator and the wave func-tion simultaneously. Even in such an SSB case, if one finds a symmetry operator ˆU that satisfies Eq. (B1) and ˆU |ψ0⟩ = eiϕ 1 |ψ0⟩, there is a possibility that one can find a dynamical symmetry associated with ˆU . 
+
+> 2. Dynamical symmetry in LL equation
+
+In the main text, we have adopted the LLG equation instead of the quantum Heisenberg equation because the system belongs to the magnetically ordered phase. The long-range magnetic order justifies the application of the semiclassical equation of motion. However, there is a pri-ori no guarantee that the dynamical symmetry sustains after the semiclassical approximation. We thus show that the dynamical symmetry also exists when the sys-tem evolves in time in accordance with the semiclassical equation of motion instead of the Heisenberg equation. We start from the Landau-Lifshitz (LL) equation, 
+
+dmr (t)
+
+dt = mr (t) × ∂H(t)
+
+∂mr (t) . (B9) Here, mr (t) is the magnetic moment at the site r and the time t, the semiclassical counterpart of the quantum spin operator ˆSr (t). The semiclassical counterpart of the Heisenberg equation is the LL equation (B9) rather than the LLG equation (4.1). The latter contains the damping term arising out of various effects, which cannot be de-scribed by the microscopic spin Hamiltonian. As in the case of the LLG equation in Sec. IV, the classical Hamil-tonian H(t) = Hmag + Hext (t) is the classical version of Eq. (3.1), where every ˆSr is replaced by mr (t). We note that in this semiclassical systems following the LL equa-tion, the set of the local magnetization {mr } stands for both the many-spin state and the spin expectation value (one no longer distinguish the spin operator and the wave function). Suppose a unitary operator ˆU that satisfies ˆU H(t) ˆU † = H(t + κT ac ) (B10) in analogy with Eq. (B1). Equation (B10) is defined as the dynamical symmetry in classical magnets follow-ing the LL equation. We note that like the quantum situation, the time dependence of the Hamiltonian in Eq. (B10) is included only through the external ac field 
+
+Bac (t). Similarly to the quantum case, the dynamical symme-try of Eq. (B10) is not enough to derive the selection rule of harmonic generation spectrum. We should con-sider the symmetry operation for the magnetization mr .Let us define m′ 
+
+> r′
+
+(t) as 
+
+m′ 
+
+> r′
+
+(t) = ˆU mr (t) ˆU †. (B11) The sites r′ and r in Eq. (B11) are not necessarily iden-tical since ˆU can include a spatial operation such as a rotation, one-site translation along a certain axis, etc. For instance, if ˆU is the one-site translation along the x
+
+direction, ˆTx, m′ 
+
+> r′
+
+= mr+a0ex .Using Eqs. (B9), (B10), and (B11), we try to find a relation between m′ 
+
+> r′
+
+(t) and mr (t). By sandwiching the LL equation of Eq. (B9) between ˆU and ˆU †, we have 
+
+dm′ 
+
+> r′
+
+(t)
+
+dt = d ˆU m′ 
+
+> r′
+
+(t) ˆU †
+
+dt 
+
+= ˆU mr (t) ˆU † × ˆU ∂H
+
+∂mr
+
+({mr }, Bac (t)) ˆU †.
+
+= m′ 
+
+> r′
+
+(t) × ∂H
+
+∂m′
+
+> r′
+
+({m′ 
+
+> r′
+
+}, Bac (t + κT ac )) ,
+
+(B12) where we have used the time independent nature of ˆU
+
+and ˆU ˆU † = ˆ 1 on the second line and used Eqs. (B10) and (B11) on the third line. Since the torque term ∂H
+
+> ∂mr
+
+is a function of the set of local magnetizations {mr }
+
+and the laser field Bac (t), we have added the arguments ({mr }, Bac (t)) to emphasize their dependence. Equa-tion (B12) indicates that the ”magnetization” m′ 
+
+> r′
+
+(t) is also a solution of the LL equation at time t + κT ac . The uniqueness of solution of the LL equation thus leads us to the conclusion that 
+
+m′ 
+
+> r′
+
+(t) = mr′ (t + κT ac ). (B13) This equation gives the relationship between two local magnetizations at different times t and t + κT ac like Eq. (B8). Therefore, Eq. (B13) can lead to a selection rule of the harmonic generation spectrum. So far we have assumed that the initial state (ground or equilibrium states of Hmag ) conserves the symmetry associated with ˆU . Namely, the relation ˆU Hmag ˆU † = Hmag (B14) holds at the initial time t → −∞ . However, if an SSB occurs and Eq. (B14) does not hold at t → −∞ , the dynamical symmetry of Eq. (B10) generally does not hold and we cannot lead to any selection rule.  
+
+> 3. Selection rules in high-harmonic spectra: one-color laser case
+
+Let us derive the selection rule of the spectrum related to the dynamical symmetry in the case where the one-color laser field with the frequency Ω along the x axis is applied to the magnetic Mott insulator (2.1) with the static magnetic field. The total Hamiltonian is given by ˆH(t) = ˆHN-C − Bac cos(Ω t) X
+
+> r
+
+ˆSx 
+
+> r
+
+. (B15) 28 This Hamiltonian has a dynamical symmetry defined by the following combination ( ˆUz (π), T ac /2) , (B16) which is made of the time translation ny Tac /2 and the 
+
+π rotation of the total spin around Sz . The Hamiltonian ˆHN-C of Eq. (2.1) with the uniaxial symmetry is obviously invariant under the spin rotation ˆUz (π). The ac Zeeman energy ˆHext (t) = −Bac cos(Ω t) P 
+
+> r
+
+ˆSx 
+
+> r
+
+is changed by the time translation and the spin rotation as follows: ˆHext (t + Tac /2) = 
+
+
+
+Bac cos(Ω( t + Tac /2)) X
+
+> r
+
+ˆSx
+
+> r
+
+
+
+= −Bac cos(Ω t) X
+
+> r
+
+ˆSx 
+
+> r
+
+= − ˆHext (t), (B17) ˆUz (π) ˆHext (t) ˆU † 
+
+> z
+
+(π) = ˆUz (π)
+
+
+
+Bac cos(Ω t) X
+
+> r
+
+ˆSx
+
+> r
+
+ ˆU † 
+
+> z
+
+(π) = −Bac cos(Ω t) X
+
+> r
+
+ˆSx 
+
+> r
+
+= − ˆHext (t). (B18) Namely, both the time shift by Tac /2 and the spin ro-tation ˆUz (π) turn out to change the sign of the ac field 
+
+Bac → − Bac . From the relation of ˆUz (π) ˆSx,y  
+
+> r
+
+ˆU † 
+
+> z
+
+(π) = 
+
+− ˆSx,y  
+
+> r
+
+and ˆUz (π) ˆSz 
+
+> r
+
+ˆU † 
+
+> z
+
+(π) = ˆSz 
+
+> r
+
+, the dynamical symme-try of Eq. (B16) yields the following constraint on the total magnetization m(t): 
+
+mx(t + Tac /2) = −mx(t), (B19) 
+
+my (t + Tac /2) = −my (t), (B20) 
+
+mz (t + Tac /2) = mz (t). (B21) These relations correspond to Eqs. (B8) or (B13). These constraints manifest itself as the selection rule of the spectrum. Indeed, the Fourier transforms ˜ma(ω) are rewritten as ˜ma(ω) = 
+
+Z Tac 
+
+> 0
+
+dt e iωt ma(t)=
+
+Z Tac /20
+
+dt 
+
+
+
+eiωt ma(t) + eiω (t+Tac /2) ma(t + Tac /2) 
+
+
+
+=
+
+Z Tac /20
+
+dt 1 + eiωT ac /2σa eiωt ma(t), (B22) where σa = −1 for a = x, y and σz = 1. Since Tac =2π/ Ω, we obtain ˜mx(nΩ) = 
+
+Z Tac /20
+
+dt {1 − (−1) n}eiωt mx(t), (B23) ˜my (ω) = 
+
+Z Tac /20
+
+dt {1 − (−1) n}eiωt my (t), (B24) ˜mz (ω) = 
+
+Z Tac /20
+
+dt {1 + ( −1) n}eiωt mz (t). (B25) Therefore, we find the selection rule, ˜mx(2 nΩ) = 0 , (B26) ˜my (2 nΩ) = 0 , (B27) ˜mz  (2 n + 1)Ω  = 0 , (B28) for n = 0 , 1, 2, 3, · · · .
+
+4. Selection rules in high-harmonic spectra: two-color laser case 
+
+In this section, we consider the dynamical symmetries in antiferromagnets irradiated by two-color laser, and de-rive the selection rules of their harmonic generation spec-tra. 
+
+a. C3-symmetric case 
+
+In this subsection, we derive the selection rules from the dynamical symmetries of ( ˆUz (2 π/ 3) , T ac /3) [Eq. (6.4)] and ( ˆUz (4 π/ 3) , 2Tac /3) [Eq. (6.5)]. Namely, we consider the magnet driven by C3-symmetric laser. Under the 2 π/ 3 spin rotation ˆUz (2 π/ 3), the uniform mag-netization m(t) is transformed ˆUz (2 π/ 3) mx(t) ˆU † 
+
+> z
+
+(2 π/ 3) = − 12 mx(t) + 
+
+√32 my (t),
+
+ˆUz (2 π/ 3) my (t) ˆU † 
+
+> z
+
+(2 π/ 3) = −√32 mx(t) − 12 my (t)(B29) A similar equation can also be obtained for the 4 π/ 3spin rotation ˆUz (4 π/ 3) by using the relation ˆU † 
+
+> z
+
+(2 π/ 3) = ˆUz (4 π/ 3). Therefore, we find 
+
+mx(t + Tac /3) = − 12 mx(t) + 
+
+√32 my (t), (B30) 
+
+my (t + Tac /3) = −√32 mx(t) − 12 my (t), (B31) 
+
+mz (t + Tac /3) = mz (t). (B32) from the dynamical symmetry ( ˆUz (2 π/ 3) , T ac /3). Simi-larly, the other dynamical symmetry (6.5) leads to 
+
+mx(t + 2 Tac /3) = − 12 mx(t) −√32 my (t), (B33) 
+
+my (t + 2 Tac /3) = f rac √32 mx(t) − 12 my (t), (B34) 29 
+
+mz (t + 2 Tac /3) = mz (t). (B35) These relations affect the Fourier transform ˜ ma(nΩ) rel-evant to the nth harmonic generation as follows. ˜ma(nΩ) = 
+
+Z Tac 
+
+> 0
+
+dt e in Ωtmx(t)=
+
+Z Tac /30
+
+dt e in Ωt
+
+ma(t) + ei2πn/ 3ma(t + Tac /3) + ei4πn/ 3ma(t + 2 Tac /3) 
+
+
+
+. (B36) Using these relations between ma(t + Tac /3) [ ma(t + 2 Tac /3)] and ma(t), we obtain ˜mx(nΩ) = 
+
+Z Tac /30
+
+dt e in Ωth1 − cos(2 πn/ 3) mx(t) + i√3 sin(2 πn/ 3) my (t)
+
+i
+
+, (B37) ˜my (nΩ) = 
+
+Z Tac /30
+
+dt e in Ωth
+
+−i√3 sin(2 πn/ 3) mx(t) + 1 − cos(2 πn/ 3) my (t)
+
+i
+
+, (B38) ˜mz (nΩ) = 
+
+Z Tac /30
+
+dt e in Ωt1 + 2 cos(2 πn/ 3) mz (t). (B39) Therefore, we reach the selection rule that | ˜mx(nΩ) | = | ˜my (nΩ) | = 0 for n = 0 mod 3 and | ˜mz (nΩ) | = 0 for n = ±1mod 3. 
+
+b. C4-symmetric case 
+
+In analogy with the C3-symmetric case, we derive the selection rule for the C4-symmetric case. First, we consider the dynamical symmetry of ( ˆUz (π/ 2) , T ac /4) [Eq. (6.12)]. If we apply the π/ 2 spin rotation ˆUz (π/ 2) to the total magnetic moment m(t), it changes as follows: ˆUz (π/ 2) mx(t) ˆU † 
+
+> z
+
+(π/ 2) = my (t),
+
+ˆUz (π/ 2) my (t) ˆU † 
+
+> z
+
+(π/ 2) = −mx(t). (B40) This leads to the relation between m(t) and m(t+Tac /4) 
+
+mx(t + Tac /4) = my (t), (B41) 
+
+my (t + Tac /4) = −mx(t), (B42) 
+
+mz (t + Tac /4) = mz (t). (B43) Likewise, the other two dynamical symmetries [Eqs. (6.13) and (6.14)] lead to 
+
+mx(t + Tac /2) = −mx(t), (B44) 
+
+my (t + Tac /2) = −my (t), (B45) 
+
+mz (t + Tac /2) = mz (t), (B46) and 
+
+mx(t + 3 Tac /4) = −my (t), (B47) 
+
+my (t + 3 Tac /4) = mx(t), (B48) 
+
+mz (t + 3 Tac /4) = mz (t). (B49) These relations result in ˜mx(nΩ) = 
+
+Z Tac /40
+
+dt e in Ωth1 − (−1) n mx(t) + i sin( πn/ 2) my (t)
+
+i
+
+, (B50) ˜my (nΩ) = 
+
+Z Tac /40
+
+dt e in Ωth
+
+−i sin( πn/ 2) mx(t) + 1 − (−1) n my (t)
+
+i
+
+, (B51) ˜mz (nΩ) = 
+
+Z Tac /40
+
+dt e in Ωt1 + ( −1) n + 2 cos( πn/ 2) mz (t). (B52) Hence, we obtain the selection rules: ˜mx(nΩ) = ˜my (nΩ) = 0 for n = 0 mod 2 and ˜mz (nΩ) = 0 for 30 
+
+FIG. 12. Comparison of harmonic generation spectra with system sizes, 10 × 10, 20 × 20, and 30 × 30. Panels (a), (b), and (c) show the spectrum | ˜mx(ω)| in the N´ eel, canted, and WF phases, respectively. We set the static magnetic field strength to B/J = (a) 0 .5, (b) 3 .0, and (c) 0 .5. We apply the laser pulse field is parallel to the x axis to the system. The horizontal axes are plotted in unit of Ω n (n = 1 , 2, 3). The unit Ω n denotes the resonant frequency in each phase given by ℏΩ1/J = ϵN´ eel ,β  
+
+> 0
+
+/J = 1 .33 , ℏΩ2/J = ϵCant ,α  
+
+> 0
+
+/J =2.7, ℏΩ3/J = ϵWF ,α  
+
+> 0
+
+/J = 0 .591. 
+
+n = 1 , 2, 3 mod 4. 
+
+Appendix C: Finite-size effects 
+
+Let us examine the system-size dependence of the har-monic generation spectrum and confirm that the 10 × 10 size is large enough to guarantee the convergence of our numerical results to the infinite-size limit. Figure 12 gives the numerically estimated harmonic generation spectra in the N´ eel, canted and WF phases with different system sizes: Antiferromagnetic models on square lattices con-sisting of 10 × 10, 20 × 20 and 30 × 30 sites. The result clearly shows that the 10 ×10 system size is large enough. The lineshape of every harmonic generation peak shown there exhibits almost no size dependence. We can find subtle system-size dependence only in the background noise. 
+
+Appendix D: Classical picture of magnetic resonance 
+
+This section provides a short review of the magnetic resonances in antiferromagnets from the classical spin viewpoint. Namely, we discuss the magnetic resonance by regarding the spin operator ˆSr as the classical vector 
+
+mr with a fixed length. The classical picture of mag-netic resonance tells us that the precession motion of the uniform magnetic moment draws an ellipse in the canted and WF phases, while it draws a circle in the N´ eel phase [see Fig. 2 (e) and (f)]. As a result, the intensity of har-monic generation peaks exhibit the dependence of the polarization of the ac magnetic field in the canted and WF phases. 
+
+1. N´ eel phase 
+
+Classically, magnetic resonance in magnetic Mott in-sulators occurs when the external ac magnetic field in-duces resonant precession of total magnetic moment m =P 
+
+> r
+
+mr . The magnetic resonance involves the total mag-netic moment since the external ac magnetic field (elec-tromagnetic wave) can be deemed the plane wave, as we mentioned already in the main text. In the N´ eel phase, the total magnetic moment is made of two modes m = mA + mB. Suppose that these modes satisfy the following LL equation, 
+
+ℏ dmA
+
+dt = −mA × ∂HN-C;MF 
+
+∂mA
+
+, (D1) 
+
+ℏ dmB
+
+dt = −mB × ∂HN-C;MF 
+
+∂mB
+
+. (D2) Here, the indices A and B specify the sublattice formed by the N´ eel order. HN-C;MF is the mean-field Hamilto-nian corresponding to Eq. (2.1): 
+
+HN-C;MF = zJ mA · mB − B(mz 
+
+> A
+
++ mz
+
+> B
+
+)
+
+− K{(mz
+
+> A
+
+)2 + ( mz
+
+> B
+
+)2}. (D3) Magnetic resonance in the N´ eel phase has the property that the spin precessions in the A and B sublattices both draw circles, but they have different radii. The radius Mμ (μ = A , B) is defined as follows. We may rewrite the precessing mode mμ = ( mxμ, m yμ, m zμ)as 
+
+mx 
+
+> A
+
+= MA cos ωt, (D4) 
+
+my 
+
+> A
+
+= MA sin ωt, (D5) 
+
+mz 
+
+> A
+
+=
+
+q
+
+S2 − M 2A, (D6) for μ = A and 
+
+mx 
+
+> B
+
+= −MB cos ωt, (D7) 
+
+my 
+
+> B
+
+= −MB sin ωt, (D8) 
+
+mz 
+
+> B
+
+=
+
+q
+
+S2 − M 2B (D9) for μ = B. Substituting these mA and mB into the LL equations (D1) and (D2), we obtain a relation be-tween the radii MA and MB. The x and y components of Eq. (D1) leads to an equation for m+A = mx 
+
+> A
+
++ im y
+
+> A
+
+,
+
+ℏ dm +A
+
+dt = im +A (zJm z 
+
+> B
+
+− B − 2Km z
+
+> A
+
+) − izJm z
+
+> A
+
+m+B
+
+(D10) 31 Let us drop second- or higher-order terms about Mμ by approximating mz 
+
+> A
+
+≈ S and mB ≈ − S. Since m+A =
+
+MAeiωt and m+B = −MBeiωt , we can rewrite Eq. (D10) as 
+
+iℏωM A ≈ iM A(−zJS − B − 2KS ) + izJSM B (D11) Likewise, m+B = mx 
+
+> B
+
++ im y 
+
+> B
+
+satisfies 
+
+ℏ dm +B
+
+dt = im +B (zJm z 
+
+> A
+
+− B − 2Km z
+
+> B
+
+) − izJm z
+
+> B
+
+m+A
+
+(D12) We thus obtain 
+
+−iℏωM B ≈ − iM B(zJS − B + 2 KS ) + izJSM A.
+
+(D13) Equations (D11) and (D13) gives the following equation for a ratio 
+
+X = MA
+
+MB
+
+(D14) about the radii MA and MB:
+
+−X = X(−zJS − B − 2KS ) + zJS 
+
+−(zJS − B + 2 KS ) + zJSX . (D15) This is rewritten as 
+
+X2 − 2
+
+
+
+1 + KzJ 
+
+
+
+X + 1 = 0 . (D16) Obviously, this equation has two solutions X = X±, that is, 
+
+X± = 1 + KzJ ±
+
+s
+
+1 + KzJ 
+
+2
+
+− 1. (D17) The ratio (D14) equals to 1 only when K = 0. The easy-axis single-ion anisotropy K > 0 makes the ratio deviate from 1. The solutions X+ and X− correspond to the α mode and the β mode with k = 0, respectively [see Fig. 2 (e)]. The two precession modes draw the circle trajectory on the Sx-Sy plane, whose radius Mμ depends on the index μ = A , B. 
+
+2. Canted phase 
+
+The precession in the canted phase draws elliptic or-bitals instead of the circular one, as we derive below. In the ξηζ coordinate introduced in Appendix. A 2, the magnetic moment in the μ = A , B sublattice is given by 
+
+mξμ = M ξ cos ωt, (D18) 
+
+mημ = M η sin ωt, (D19) 
+
+mζμ =
+
+q
+
+S2 − (M ξ )2 − (M η )2. (D20) In this equation, we assume that mA and mB follow the precession motion with the same phase. This means that we consider the α mode [see Fig. 2 (f)]. We can translate the ξηζ coordinate into the xyz coordinate by the following rotations: 
+
+mx 
+
+> A
+
+= mξ 
+
+> A
+
+cos θ − mζ 
+
+> A
+
+sin θ, (D21) 
+
+my 
+
+> A
+
+= mη
+
+> A
+
+, (D22) 
+
+mz 
+
+> A
+
+= mξ 
+
+> A
+
+sin θ + mζ 
+
+> A
+
+cos θ, (D23) for the A sublattice and 
+
+mx 
+
+> B
+
+= mξ 
+
+> B
+
+cos θ + mζ 
+
+> B
+
+sin θ, (D24) 
+
+my 
+
+> B
+
+= mη
+
+> B
+
+, (D25) 
+
+mz 
+
+> B
+
+= −mξ 
+
+> B
+
+sin θ + mζ 
+
+> B
+
+cos θ, (D26) for the B sublattice. Here, θ is determined by B and J
+
+[see Eq. (A25)]. Substituting these into the LL equations, 
+
+ℏ dm x
+
+> A
+
+dt = ∂HN-C;MF 
+
+∂m x
+
+> A
+
+= −my
+
+> A
+
+(zJm z 
+
+> B
+
+− B − 2Km z
+
+> A
+
+) + zJm z
+
+> A
+
+my
+
+> B
+
+,
+
+(D27) 
+
+ℏ dm y
+
+> A
+
+dt = ∂HN-C;MF 
+
+∂m y
+
+> A
+
+= mx
+
+> A
+
+(zJm z 
+
+> B
+
+− B − 2Km z
+
+> A
+
+) − zJm z
+
+> A
+
+mx
+
+> B
+
+, (D28) and dropping second- and higher-order terms about M ξ
+
+and M η , we obtain 
+
+ℏM ξ (−ω sin ωt ) cos θ ≈ M η sin ωt (B + 2 KS cos θ), (D29) 
+
+ℏM η ω cos ωt ≈ − M ξ cos ωt (B cos θ + 2 KS cos 2 θ) − S sin θ cos θ2S(zJ − K) cos θ − B]= −M ξ cos ωt (B cos θ + 2 KS cos 2 θ). (D30) In the last line, we used Eq. (A25) to eliminate O(( M ξ )0) terms Let us define another ratio, 
+
+Y = M ξ
+
+M η , (D31) which defines the anisotropy of the ellipse. The precess-ing mode ( mξ
+
+> A
+
+, mη
+
+> A
+
+, mζ
+
+> A
+
+) draws the elliptic trajectory 32 on the ξη plane for Y̸ = 1 and the circle trajectory for 
+
+Y = 1. Dividing Eq. (D29) by Eq. (D30), we find an equation about Y ,
+
+−Y cos θ ≈ B + 2 KS cos θ
+
+−Y (B cos θ + 2 K cos 2 θ) , (D32) whose solution is 
+
+Y =
+
+s
+
+B + 2 KS cos θ
+
+cos θ(B cos θ + 2 KS cos 2 θ) . (D33) Figure 13 shows the ratio (D33) as a function of B/J .The ellipse approaches the circle as B approaches the saturation transition point, B → Bsat − 0. By contrast, the ellipse is more distorted as B approaches the spin-flop transition point, B → Bsf + 0. From the above result, the uniform magnetization m =
+
+mA + mB per unit cell obeys a precession motion in the Sx-Sy plane and its orbital is an ellipse. The Sx
+
+axis corresponds to the major axis and the ratio between major and minor radii is given by Y cos θ.        
+
+> FIG. 13. B/J dependence of ratio Yin canted phase. We set K/J = 0 .2.
+> 3. Weak-ferromagnetic phase
+
+The magnetic structure in the WF phase is akin to that in the canted phase. The precession in the WF phase as well as the canted phase draws the elliptic trajectory in the ξη phase. The difference between these two phases arises from the Hamiltonian. We apply the mean-field approximation to the Hamil-tonian (2.2) and consider 
+
+HWF;MF = zJ mA · mB − zD (mz
+
+> A
+
+mx 
+
+> B
+
+− mx
+
+> A
+
+mz
+
+> B
+
+)
+
+− B(mz 
+
+> A
+
++ mz
+
+> B
+
+). (D34) We then obtain the LL equation, 
+
+ℏ dmμ
+
+dt = −mμ × ∂HWF;MF 
+
+∂mμ
+
+(μ = A , B) . (D35) This equation is rewritten as 
+
+∂HWF;MF 
+
+∂m xμ
+
+= zJm xμ′ + σzDm zμ′ , (D36) 
+
+∂HWF;MF 
+
+∂m yμ
+
+= zJm yμ′ , (D37) 
+
+∂HWF;MF 
+
+∂m zμ
+
+= zJm zμ′ − σzDm xμ′ − B, (D38) where μ′ = A for μ = B and μ′ = B for μ = A, and we take σ = 1 for μ = A and σ = −1 for μ = B. Note that the sign σ in HWF;MF disappears in the effective field ∂HWF;MF /∂ mμ that mμ feels since the antisymme-try of the Dzyaloshinskii-Moriya interaction cancels it. We consider the following precessing motion in the ξηζ 
+
+coordinate system, 
+
+mξμ = M ξ cos ωt, (D39) 
+
+mημ = M η sin ωt, (D40) 
+
+mζμ =
+
+q
+
+S2 − (mξμ)2 − (mημ)2, (D41) and rotate it by angles ±θ around η axis to return to the 
+
+xyz coordinate system in analogy with the canted phase. In this equation, we assume that mA and mB follow the precession motion with the same phase. This means that we consider the α mode [see Fig. 2 (f)]. The LL equations for mx 
+
+> A
+
+and my 
+
+> A
+
+become 
+
+ℏM ξ (−ω sin ωt ) cos θ ≈ − M η sin ωt (zJS cos θ − zDS sin θ − B) + zJSM η sin ωt cos θ
+
+≈ M η sin ωt (B + zDS sin θ), (D42) 
+
+ℏM η ω cos ωt ≈ − (M ξ cos ωt sin θ + S cos θ){zJ (−M ξ cos ωt cos θ + S sin θ) + zD (−M ξ cos ωt sin θ + S cos θ)}
+
++ ( M ξ cos ωt cos θ − S sin θ){zJ (−M ξ cos ωt sin θ + S cos θ) − zD (M ξ cos ωt cos θ + S sin θ) − B}≈ − BM ξ cos ωt cos θ − zJS 2 sin 2 θ − zD cos 2 θ + BS sin θ
+
+= −BM ξ cos ωt cos θ. (D43) 33 
+
+FIG. 14. B/J dependence of ratio Y in WF phase. We set 
+
+D/J = 0 .05. 
+
+In the last line, we used a relation about the ground-state energy density, 
+
+∂e 0WF 
+
+∂θ = −zJS sin 2 θ − zDS cos 2 θ + B sin θ = 0 ,
+
+(D44) where e0WF is the ground-state energy density [see Eq. (A62)], namely, 
+
+e0WF = 12 zJS 2 cos 2 θ − 12 zDS 2 sin 2 θ − BS cos θ. (D45) The stability of the ground state is rephrased as 
+
+∂e 0WF /∂θ = 0. We thus obtain the following equation about the ratio Y = M ξ /M η .
+
+−Y 2 cos θ ≈ − B + zDS sin θB cos θ (D46) Since Y > 0, this equation has the unique solution, 
+
+Y =
+
+r B + zDS sin θB cos 2 θ . (D47) As Fig. 14 shows, the ratio Y diverges as B/J → +0 and converges to 1 as B/J → +∞.Similarly to the canted phase, the uniform magnetiza-tion m = mA + mB follows an elliptic precession in the 
+
+Sx-Sy plane. The Sx axis is the major axis and the ratio between the major and minor radii is Y cos θ.
+
+Appendix E: Dependence on laser-field direction and static-field strength 
+
+In Appendix D, we see that for the magnetic resonance of the α mode [see Fig. 2 (f)], the trajectory of uniform magnetization precession is an ellipse (not circle) in the canted and WF phases, especially in a region of low static magnetic fields [see Fig. 15 (a)]. From this fact, the in-tensities of harmonic generation spectra are also expected 
+
+FIG. 15. (a) Schematic image of precession motion in α-mode magnetic resonance of canted phase. Symbols m1 and 
+
+m2 denote the magnetic moments of A and B sublattices, respectively, while M = ( m1 + m2)/2 is the uniform mag-netization. Light-colored arrows mean the directions of mag-netic moments in the equilibrium state. The sublattice mo-ments draw a ellipse orbital in the coordinate ( Sξ 
+
+> r
+
+, S η 
+
+> r
+
+, S ζ 
+
+> r
+
+), in which the axis Sξ 
+
+> r
+
+is the major axis and the axis Sη 
+
+> r
+
+is the minor axis. The uniform magnetization M also has an ellipse orbital whose major and minor axes are respectively the Sx
+
+and Sy axes. Panels (b) and (c) show how the first harmonic generation peaks | ˜ma(Ω) | (a = x, y ) depend on the static (dc) magnetic field B when (b) Bac ∥ ex or (c) Bac ∥ ey . Panels (d) and (e) show how the third harmonic generation peaks 
+
+| ˜ma(3Ω) | (a = x, y ) depend on the static magnetic field B
+
+when (d) Bac ∥ ex or (e) Bac ∥ ey . We set Bac /J = 0 .01 for upper panels (b) and (c) and Bac /J = 0 .05 for lower panels. 
+
+to depend on the direction of the ac magnetic field. This section numerically shows how first and third harmonic generations depend on the ac-field direction in the canted phase. Figure 15 (b)-(e) shows the B dependence of heights of the first and third harmonic generation peaks. Let us compare the upper panels (b) and (c), where Bac is par-allel to (b) ex or (c) ey . Note that the spin flop transition occurs at B = Bsf with Bsf = 1 .74 J as we increase B/J .By looking at the panels (b) and (c), we find two charac-teristics. First, | ˜mx(Ω) | > | ˜my (Ω) | holds in both panels for small B/J and the difference | ˜mx(Ω) | − | ˜my (ω)| in-creases as we decrease B/J so that it approaches Bsf .Besides, the peak height | ˜mx(Ω) | of the first harmonic generation for Bac ∥ ex is higher than that for Bac ∥ ey .In other words, the stronger magnetic resonance occurs in the former case than the latter. These two character-34                              
+
+> FIG. 16. Spectra |˜mx(ω)|in N´ eel phase when Bac ∥ezwith or without static magnetic field B.We compare the cases with Bac /J = 0 .0,0.1,2.0. We set B/J = 3 .0 in the left col-umn and B/J = 0 in the right column. In the presence of
+> B, no dynamical symmetry exists and every harmonic gener-ation can potentially appear. By contrast, in the absence of
+> B, dynamical symmetry forbids every harmonic generation. We set the laser-pulse frequency Ω so that it equals to the magnon gap of the βmode, ϵN´ eel ,β
+> 0:ℏΩ1/J = 1 .33 with B
+> and ℏΩ2/J = 1 .83 without B.
+
+istics are vanishing as we increase B/J and completely disappears at B = Bsat when the system exhibits the phase transition to the saturated phase, also known as the forced ferromagnetic phase. One can find qualita-tively the same features in the third harmonic generation peak heights [lower panels (d) and (e) of Fig. 15]. The parameter dependence discussed in this section is consistent with the classical picture of the magnetic resonance in Appendix D. The spatial anisotropy of the ellipse trajectory explains why the harmonic generation peaks show the dependence on the laser-field direction.   
+
+> Appendix F: Finite-temperature fluctuation in N´ eel phase for laser field parallel to zaxis
+
+As shown in Fig. 4 (a) and (b), there is no sharp peaks in the harmonic generation of the N´ eel phase when the ac magnetic field is parallel to the z axis. Therefore, in this section, we consider the temperature effect and the ac-field strength dependence of the harmonic gener-ation spectrum in the N´ eel phase for Bac ∥ ez . First we look at | ˜ma(ω)| for Bac ∥ ez in the presence of the static magnetic field B. As Fig. 4 (a) shows, there is neither dynamical symmetry nor nontrivial selection rule on the harmonic generation. The left column of Fig. 16 shows the harmonic generation spectra | ˜mx(ω)|
+
+for Bac /J = 0 .0, 0 .1, and 2 .0. We see qualitative agree-ments among these three cases. In these figures, we have set the laser frequency to the magnetic resonance of the 
+
+β mode: ℏΩ1 = ϵN´ eel ,β  
+
+> 0
+
+= 1 .33 J. This agreement of three cases implies that the laser field along the z axis (with re-                       
+
+> FIG. 17. (a) Harmonic generation spectra |˜ma(ω)|for a=
+> x, y, z in canted phase when laser field is parallel to zaxis and extremely strong. We set Bac /J = 3 .0. The laser frequency Ω is chosen to be the magnon gap of the αmode: ℏΩ =
+> ϵCant ,α
+> 0= 2 .7J. (b) Linear Bac /J dependence of peak height
+> |˜mz(Ω) |of first harmonic generation in spectrum |˜mz(ω)|.
+
+alistic strength) excites no magnons. The broad peaks in these spectra are due to thermally excited magnons. The three left panels in Fig. 16 seem to have a second har-monic generation peak in addition to the first harmonic generation one. However, we note that the broad peak around ℏω ∼ 2ℏΩ1 is the linear response of the α mode. In fact, the peak position deviates from ℏω = 2 ℏΩ1.Let us move on to the spectra in the absence of the static magnetic field B. As we already pointed out in the main text, the dynamical symmetry forbids ev-ery harmonic generation peak i.e., ˜mx(nΩ) = 0 for 
+
+n = 1 , 2, 3, · · · . Nevertheless, we observe the broad first harmonic generation for Bac /J = 0 .0 and 0 .1. We can conclude that the emergence of the first generation peak would be attributed to the thermally excited magnon, by comparing the panels of Bac /J = 0 .0 and 0 .1. When 
+
+Bac /J = 2 .0, we also observe a small second harmonic generation as a combination of the finite-temperature ef-fect and the strong ac field. We can infer that the dynam-ical symmetry is slightly violated at finite temperatures because thermal excitation of magnons cannot be ruled out.    
+
+> Appendix G: Harmonic generation spectra in canted phase for laser field parallel to zaxis
+
+Similarly to the N´ eel phase, Fig. 6 shows that only small first harmonic generation peaks appear when the ac field Bac is parallel to ez in the canted phase. Let us 35 take a close look at the ac-field strength dependence of the harmonic generation spectrum | ˜ma(ω)| in the canted phase for Bac ∥ ez . Figure 17 (a) shows the spectra 
+
+| ˜ma(ω)| for a = x, y, z under the extremely strong laser field, Bac /J = 3 .0 when Bac ∥ ez . The harmonic gen-eration peaks are attributed to the α mode of magnons. The β mode is gapless longitudinal mode and thus ir-relevant to the spectrum. Let us recall that Fig. 6 (a) shows the first harmonic generation only when Bac ∥ ez .The absence of second and higher harmonic generations results from the mismatch between the laser-field direc-tion and the precessing direction. The precession around the z axis is hardly induced by the laser field oscillat-ing in the z axis. Nevertheless, Fig. 17 (a) shows second and higher harmonic generations thanks to the extremely strong laser field strength. We observe harmonic gener-ations up to third order in | ˜mx(ω)| and | ˜my (ω)| and ob-serve those up to fifth order in | ˜mz (ω)|. We note that it is difficult to generate a THz laser with intensity Bac > J 
+
+within the current experimental technique [see also Ta-ble I]. The peak height of the first harmonic generation in the spectrum | ˜mz (ω)| shows a linear dependence on Bac /J 
+
+[Fig. 17 (b)]. This linearity indicates that the first har-monic generation is the linear response of the α mode to the laser field Bac .
+
+[1] S. Ghimire and D. A. Reis, High-harmonic generation from solids, Nat. Phys. 15 , 10 (2018). [2] L. Yue and M. B. Gaarde, Introduction to theory of high-harmonic generation in solids: tutorial, J. Opt. Soc. Am. B 39 , 535 (2022). [3] E. Goulielmakis and T. Brabec, High harmonic gen-eration in condensed matter, Nat. Photonics 16 , 411 (2022). [4] L. Li, P. Lan, X. Zhu, and P. Lu, High harmonic gen-eration in solids: particle and wave perspectives, Rep. Prog. Phys. 86 , 116401 (2023). [5] G. Vampa, T. J. Hammond, N. Thir´ e, B. E. Schmidt, F. L´ egar´ e, C. R. McDonald, T. Brabec, and P. B. Corkum, Linking high harmonics from gases and solids, Nature 522 , 462 (2015). [6] T. T. Luu and H. J. W¨ orner, High-order harmonic gen-eration in solids: A unifying approach, Phys. Rev. B 94 ,115164 (2016). [7] T. T. Luu and H. J. W¨ orner, Observing broken inversion symmetry in solids using two-color high-order harmonic spectroscopy, Phys. Rev. A 98 , 041802 (2018). [8] N. Rana, M. S. Mrudul, and G. Dixit, Generation of Cir-cularly Polarized High Harmonics with Identical Helic-ity in Two-Dimensional Materials, Phys. Rev. Applied 
+
+18 , 064049 (2022). [9] Y.-L. He, J. Guo, F.-Y. Gao, and X.-S. Liu, Dynamical symmetry and valley-selective circularly polarized high-harmonic generation in monolayer molybdenum disul-fide, Phys. Rev. B 105 , 024305 (2022). [10] M. Udono and M. Sato, Triplons, triplon pairs, and dy-namical symmetries in laser-driven Shastry-Sutherland magnets, Phys. Rev. B 110 , L201112 (2024). [11] M. Kanega and M. Sato, Two-color laser control of pho-tocurrent and high harmonics in graphene, Phys. Rev. B 112 , 045306 (2025). [12] A. McPherson, G. Gibson, H. Jara, et al. , Studies of multiphoton production of vacuum-ultraviolet radiation in the rare gases, J. Opt. Soc. Am. B 4, 595 (1987). [13] M. Ferray, A. L’Huillier, X. F. Li, et al. , Multiple-harmonic conversion of 1064 nm radiation in rare gases, J. Phys. B 21 , L31 (1988). [14] S. Ghimire, G. Ndabashimiye, A. D. DiChiara, et al. ,Strong-field and attosecond physics in solids, J. Phys. B 
+
+47 , 204030 (2014). [15] S. Ghimire, A. D. DiChiara, E. Sistrunk, et al. , Ob-servation of high-order harmonic generation in a bulk crystal, Nat. Phys. 7, 138 (2011). [16] O. Schubert, M. Hohenleutner, F. Langer, et al. , Sub-cycle control of terahertz high-harmonic generation by dynamical bloch oscillations, Nat. Photonics 8, 119 (2014). [17] M. Hohenleutner, F. Langer, O. Schubert, et al. , Real-time observation of interfering crystal electrons in high-harmonic generation, Nature 523 , 572 (2015). [18] T. T. Luu, M. Garg, S. Y. Kruchinin, et al. , Extreme ultraviolet high-harmonic spectroscopy of solids, Nature 
+
+521 , 498 (2015). [19] G. Ndabashimiye, S. Ghimire, M. Wu, et al. , Solid-state harmonics beyond the atomic limit, Nature 534 , 520 (2016). [20] G. Vampa, B. G. Ghamsari, S. Siadat Mousavi, et al. ,Plasmon-enhanced high-harmonic generation from sili-con, Nat. Phys. 13 , 659 (2017). [21] K. Kaneshima, Y. Shinohara, K. Takeuchi, et al. ,Polarization-resolved study of high harmonics from bulk semiconductors, Phys. Rev. Lett. 120 , 243903 (2018). [22] H. Hirori, A. Doi, F. Blanchard, and K. Tanaka, Sin-gle cycle terahertz pulses with amplitudes exceeding 1 MV/cm generated by optical rectification in LiNbO 3,Appl. Phys. Lett. 98 , 091106 (2011). [23] M. Sato, T. Higuchi, N. Kanda, et al. , Terahertz polar-ization pulse shaping with arbitrary field control, Nat. Photonics 7, 724 (2013). [24] H. A. Hafez, X. Chai, A. Ibrahim, et al. , Intense ter-ahertz radiation and their applications, J. Opt. 18 ,093004 (2016). [25] S. S. Dhillon, M. S. Vitiello, E. H. Linfield, A. G. Davies, et al. , The 2017 terahertz science and technology roadmap, J. Phys. D: Appl. Phys. 50 , 043001 (2017). [26] B. Liu, H. Bromberger, A. Cartella, et al. , Generation of narrowband, high-intensity, carrier-envelope phase-stable pulses tunable between 4 and 18 THz, Opt. Lett. 
+
+42 , 129 (2017). [27] Y. Mukai, H. Hirori, T. Yamamoto, H. Kageyama, and K. Tanaka, Nonlinear magnetization dynamics of anti-ferromagnetic spin resonance induced by intense tera-hertz magnetic field, New J. Phys. 18 , 013045 (2016). [28] S. Kovalev, Z. Wang, J.-C. Deinert, et al. , Selective THz control of magnetic order: new opportunities from su-perradiant undulator sources, J. Phys. D: Appl. Phys. 36 
+
+51 , 114007 (2018). [29] E. T. Papaioannou and R. Beigang, THz spintronic emitters: a review on achievements and future chal-lenges, Nanophotonics 10 , 1243 (2021). [30] A. Leitenstorfer, A. S. Moskalenko, T. Kampfrath, 
+
+et al. , The 2023 terahertz science and technology roadmap, J. Phys. D: Appl. Phys. 56 , 223001 (2023). [31] T. Kampfrath, A. Sell, G. Klatt, et al. , Coherent tera-hertz control of antiferromagnetic spin waves, Nat. Pho-tonics 5, 31 (2011). [32] T. Kampfrath, K. Tanaka, and K. A. Nelson, Resonant and nonresonant control over matter and light by in-tense terahertz transients, Nat. Photonics 7, 680 (2013). [33] C. Vicario, C. Ruchert, F. Ardana-Lamas, et al. , Off-resonant magnetization dynamics phase-locked to an in-tense phase-stable terahertz transient, Nat. Photonics 7,720 (2013). [34] J. Lu, X. Li, H. Y. Hwang, et al. , Coherent two-dimensional terahertz magnetic resonance spectroscopy of collective spin waves, Phys. Rev. Lett. 118 , 207204 (2017). [35] S. Baierl, J. H. Mentink, M. Hohenleutner, et al. ,Terahertz-driven nonlinear spin response of antiferro-magnetic nickel oxide, Phys. Rev. Lett. 117 , 197201 (2016). [36] D. Bossini, S. Dal Conte, O. Gomonay, et al. , Laser-driven quantum magnonics and terahertz dynamics of the order parameter in antiferromagnets, Phys. Rev. B 
+
+100 , 024428 (2019). [37] J. Li, C. B. Wilson, R. Cheng, et al. , Spin cur-rent from sub-terahertz-generated antiferromagnetic magnons, Nature 578 , 70 (2020). [38] J. Walowski and M. Muenzenberg, Perspective: Ultra-fast magnetism and THz spintronics, J. Appl. Phys. 
+
+120 , 140901 (2016). [39] P. Salen, M. Basini, S. Bonetti, et al. , Matter manipu-lation with extreme terahertz light: Progress in the en-abling THz technology, Phys. Rep. 836–837 , 1 (2019). [40] A. R. Safin, S. A. Nikitov, D. V. Kalabin, et al. , Excita-tion of terahertz magnons in antiferromagnetic nanos-tructures: Theory and experiment, J. Exp. Theor. Phys. 
+
+131 , 71 (2020). [41] A. Pimenov, A. A. Mukhin, V. Y. Ivanov, et al. , Possible evidence for electromagnons in multiferroic manganites, Nat. Phys. 2, 97 (2006). [42] Y. Takahashi, R. Shimano, Y. Kaneko, et al. , Magneto-electric resonance with electromagnons in a perovskite helimagnet, Nat. Phys. 8, 121 (2012). [43] T. Kubacka, J. A. Johnson, M. C. Hoffmann, et al. ,Large-amplitude spin dynamics driven by a THz pulse in resonance with an electromagnon, Science 343 , 1333 (2014). [44] Z. Wang, J. Wu, W. Yang, et al. , Experimental obser-vation of bethe strings, Nature 554 , 219 (2018). [45] A. Kirilyuk, A. V. Kimel, and T. Rasing, Ultrafast op-tical manipulation of magnetic order, Rev. Mod. Phys. 
+
+82 , 2731 (2010). [46] K. Yamaguchi, M. Nakajima, and T. Suemoto, Coherent control of spin precession motion with impulsive mag-netic fields of half-cycle terahertz radiation, Phys. Rev. Lett. 105 , 237201 (2010). [47] S. Baierl, M. Hohenleutner, T. Kampfrath, et al. , Non-linear spin control by terahertz-driven anisotropy fields, Nat. Photonics 10 , 715 (2016). [48] A. A. Sirenko, P. Marsik, C. Bernhard, et al. , Terahertz vortex beam as a spectroscopic probe of magnetic exci-tations, Phys. Rev. Lett. 122 , 237401 (2019). [49] E. A. Mashkovich, K. A. Grishunin, R. M. Dubrovin, 
+
+et al. , Terahertz light-driven coupling of antiferromag-netic spins to lattice, Science 374 , 1608 (2021). [50] Y. Behovits, A. L. Chekhov, S. Y. Bodnar, et al. , Ter-ahertz Neel spin-orbit torques drive nonlinear magnon dynamics in antiferromagnetic Mn 2Au, Nat. Commun. 
+
+14 , 6038 (2023). [51] T. Kurihara, M. Bamba, H. Watanabe, et al. , Observa-tion of terahertz-induced dynamical spin canting in or-thoferrite magnon by magnetorefractive probing, Com-mun. Phys. 6, 51 (2023). [52] E. A. Mashkovich, K. A. Grishunin, R. V. Mikhaylovskiy, et al. , Terahertz optomagnetism: Nonlinear THz excitation of GHz spin waves in anti-ferromagnetic FeBO 3, Phys. Rev. Lett. 123 , 157202 (2019). [53] Z. Zhang, F. Sekiguchi, T. Moriyama, et al. , Generation of third-harmonic spin oscillation from strong spin pre-cession induced by terahertz magnetic near fields, Nat. Commun. 14 , 1795 (2023). [54] C. Huang, L. Luo, M. Mootz, et al. , Extreme terahertz magnon multiplication induced by resonant magnetic pulse pairs, Nat. Commun. 15 , 3214 (2024). [55] S. Takayoshi, H. Aoki, and T. Oka, Magnetization and phase transition induced by circularly polarized laser in quantum magnets, Phys. Rev. B 90 , 085150 (2014). [56] S. Takayoshi, M. Sato, and T. Oka, Laser-induced mag-netization curve, Phys. Rev. B 90 , 214413 (2014). [57] M. Sato, S. Takayoshi, and T. Oka, Laser-driven mul-tiferroics and ultrafast spin current generation, Phys. Rev. Lett. 117 , 147202 (2016). [58] M. Sato, Y. Sasaki, and T. Oka, Floquet Majorana Edge Mode and Non-Abelian Anyons in a Driven Ki-taev Model, arXiv:1404.2010 (2014). [59] H. Fujita and M. Sato, Encoding orbital angular mo-mentum of light in magnets, Phys. Rev. B 96 , 060407 (2017). [60] M. Mochizuki and N. Nagaosa, Theoretically predicted picosecond optical switching of spin chirality in multi-ferroics, Phys. Rev. Lett. 105 , 147202 (2010). [61] H. Ishizuka and M. Sato, Rectification of spin current in inversion-asymmetric magnets with linearly polarized electromagnetic waves, Phys. Rev. Lett. 122 , 197702 (2019). [62] T. N. Ikeda and M. Sato, High-harmonic generation by electric polarization, spin current, and magnetization, Phys. Rev. B 100 , 214424 (2019). [63] W. Choi, K. H. Lee, and Y. B. Kim, Theory of Two-Dimensional Nonlinear Spectroscopy for the Ki-taev Spin Liquid, Phys. Rev. Lett. 124 , 117205 (2020), arXiv:1911.07138v2. [64] M. Sato and Y. Morisaku, Two-photon driven magnon-pair resonance as a signature of spin-nematic order, Phys. Rev. B 102 , 060401 (2020). [65] M. Kanega, T. N. Ikeda, and M. Sato, Linear and non-linear optical responses in Kitaev spin liquids, Phys. Rev. Res. 3, L032024 (2021). [66] G. Sim, Microscopic details of two-dimensional spec-troscopy of one-dimensional quantum Ising mag-nets, Phys. Rev. B 108 , 10.1103/PhysRevB.108.134423 (2023). 37 
+
+[67] M. Potts, R. Moessner, and O. Benton, Signatures of Spinon Dynamics and Phase Structure of Dipolar-Octupolar Quantum Spin Ices in Two-Dimensional Co-herent Spectroscopy, Phys. Rev. Lett. 133 , 226701 (2024). [68] M. Yarmohammadi and M. H. Kolodrubetz, Terahertz high-harmonic generation in gapped antiferromagnetic chains, Phys. Rev. B 110 , 134442 (2024). [69] Y. Watanabe, Exploring two-dimensional coherent spec-troscopy with exact diagonalization: Spinons and con-finement in one-dimensional quantum magnets, Phys. Rev. B 110 , 10.1103/PhysRevB.110.134443 (2024). [70] H. Eichmann, A. Egbert, S. Nolte, et al. , Polarization-dependent high-order two-color mixing, Phys. Rev. A 
+
+51 , R3414 (1995). [71] A. Hache, Y. Kostoulas, R. Atanasov, et al. , Observa-tion of coherently controlled photocurrent in unbiased, bulk GaAs, Phys. Rev. Lett. 78 , 306 (1997). [72] D. Sun, C. Divin, J. Rioux, et al. , Coherent control of ballistic photocurrents in multilayer epitaxial graphene using quantum interference, Nano Lett. 10 , 1293 (2010). [73] A. Fleischer, O. Kfir, T. Diskin, P. Sidorenko, and O. Cohen, Spin angular momentum and tunable polar-ization in high-harmonic generation, Nat. Photonics 8,543 (2014). [74] D. A. Bas, K. Vargas-Velez, S. Babakiray, et al. , Coher-ent control of injection currents in high-quality films of Bi 2Se 3, Appl. Phys. Lett. 106 , 041109 (2015). [75] O. Kfir, P. Grychtol, E. Turgut, et al. , Generation of bright phase-matched circularly-polarized extreme ul-traviolet high harmonics, Nat. Photonics 9, 99 (2015). [76] D. Baykusheva, M. S. Ahsan, N. Lin, and H. J. Woerner, Bicircular high-harmonic spectroscopy reveals dynami-cal symmetries of atoms and molecules, Phys. Rev. Lett. 
+
+116 , 123001 (2016). [77] O. Kfir, E. Bordo, G. I. Haham, et al. , In-line production of a bi-circular field for generation of helically polarized high-order harmonics, Appl. Phys. Lett. 108 , 211106 (2016). [78] S. Kerbstadt, D. Timmer, L. Englert, et al. , Ultrashort polarization-tailored bichromatic fields from a CEP-stable white-light supercontinuum, Opt. Exp. 25 , 12518 (2017). [79] S. Kerbstadt, K. Eickhoff, T. Bayer, and M. Wollen-haupt, Odd electron wave packets from cycloidal ultra-short laser fields, Nat. Commun. 10 , 658 (2019). [80] K. Ogawa, N. Kanda, Y. Murotani, and R. Matsunaga, Programmable generation of counterrotating bicircular light pulses in the multi-terahertz frequency range, Nat. Commun. 15 , 6310 (2024). [81] S. Mitra, A. Jimenez-Galan, M. Aulich, et al. , Light-wave-controlled Haldane model in monolayer hexagonal boron nitride, Nature 628 , 752 (2024). [82] I. Tyulnev, A. Jimenez-Galan, J. Poborska, et al. , Val-leytronics in bulk MoS 2 with a topologic optical field, Nature 628 , 746 (2024). [83] T. Holstein and H. Primakoff, Field Dependence of the Intrinsic Domain Magnetization of a Ferromagnet, Phys. Rev. 58 , 1098 (1940). [84] R. M. White, Quantum Theory of Magnetism: Magnetic Properties of Materials , 3rd ed., Springer Series in Solid-State Sciences, Vol. 32 (Springer, 2007). [85] L. Landau, E. Lifshitz, et al. , On the theory of the dis-persion of magnetic permeability in ferromagnetic bod-ies, Phys. Z. Sowjetunion 8, 101 (1935). [86] W. F. Brown, Thermal Fluctuations of a Single-Domain Particle, Phys. Rev. 130 , 1677 (1963). [87] J. L. Garc´ ıa-Palacios and F. J. L´ azaro, Langevin-dynamics study of the dynamical properties of small magnetic particles, Phys. Rev. B 58 , 14937 (1998). [88] T. Gilbert, A phenomenological theory of damping in ferromagnetic materials, IEEE Trans. Magn. 40 , 3443 (2004). [89] Z. Li and S. Zhang, Domain-wall dynamics driven by adiabatic spin-transfer torques, Phys. Rev. B 70 , 024417 (2004). [90] Z. Li and S. Zhang, Thermally assisted magnetization reversal in the presence of a spin-transfer torque, Phys. Rev. B 69 , 134416 (2004). [91] M. Lakshmanan, The fascinating world of the landau-lifshitz-gilbert equation: an overview, Philos. Trans. R. Soc. A 369 , 1280 (2011). [92] C. Aron, D. G. Barci, L. F. Cugliandolo, Z. G. Are-nas, and G. S. Lozano, Magnetization dynamics: Path-integral formalism for the stochastic Landau–Lifshitz– Gilbert equation, J. Stat. Mech. 2014 , P09008 (2014). [93] S. Seki and M. Mochizuki, Skyrmions in Magnetic Mate-rials , 1st ed., SpringerBriefs in Physics (Springer, Cham Heidelberg New York Dordrecht London, 2016). [94] M. Kanega and M. Sato, High-harmonic generation in graphene under the application of a dc electric current: From perturbative to nonperturbative regime, Phys. Rev. B 110 , 035303 (2024). [95] O. E. Alon, V. Averbukh, and N. Moiseyev, Selection rules for the high harmonic generation spectra, Phys. Rev. Lett. 80 , 3743 (1998). [96] X. Liu, X. Zhu, L. Li, Y. Li, Q. Zhang, P. Lan, and P. Lu, Selection rules of high-order-harmonic genera-tion: Symmetries of molecules and laser fields, Phys. Rev. A 94 , 033410 (2016). [97] T. Morimoto, H. C. Po, and A. Vishwanath, Floquet topological phases protected by time glide symmetry, Phys. Rev. B 95 , 195155 (2017). [98] O. Neufeld, D. Podolsky, and O. Cohen, Floquet group theory and its application to selection rules in harmonic generation, Nat. Commun. 10 , 405 (2019). [99] K. Chinzei and T. N. Ikeda, Time Crystals Protected by Floquet Dynamical Symmetry in Hubbard Models, Phys. Rev. Lett. 125 , 060601 (2020). [100] T. N. Ikeda, High-order nonlinear optical response of a twisted bilayer graphene, Phys. Rev. Res. 2, 032015 (2020). [101] Y. Nambu, Quasi-Particles and Gauge Invariance in the Theory of Superconductivity, Phys. Rev. 117 , 648 (1960). [102] J. Goldstone, A. Salam, and S. Weinberg, Broken Sym-metries, Phys. Rev. 127 , 965 (1962). [103] H. Watanabe and H. Murayama, Unified Description of Nambu-Goldstone Bosons without Lorentz Invariance, Phys. Rev. Lett. 108 , 251602 (2012). [104] Y. Hidaka, Counting Rule for Nambu-Goldstone Modes in Nonrelativistic Systems, Phys. Rev. Lett. 110 ,10.1103/PhysRevLett.110.091601 (2013). [105] N. D. Mermin, Absence of Ferromagnetism or Anti-ferromagnetism in One- or Two-Dimensional Isotropic Heisenberg Models, Phys. Rev. Lett. 17 , 1133 (1966). [106] P. C. Hohenberg, Existence of Long-Range Order in One and Two Dimensions, Phys. Rev. 158 , 383 (1967). 38 
+
+[107] M. Sato, Floquet Theory and Ultrafast Control of Mag-netism, in Chirality, Magnetism and Magnetoelectricity ,Vol. 138, edited by E. Kamenetskii (Springer Interna-tional, Cham, 2021) pp. 265–286. [108] K. Heun, Neue methode zur approximativen inte-gration der differentialgleichungen einer unabh¨ angigen ver¨ anderlichen, Z. Math. Phys. 45 , 23 (1900). [109] C. Rackauckas and Q. Nie, DifferentialEquations.jl – A Performant and Feature-Rich Ecosystem for Solving Differential Equations in Julia, J. Open Res. Softw. 5,15 (2017). [110] M. Frigo and S. G. Johnson, The design and imple-mentation of FFTW3, Proceedings of the IEEE 93 , 216 (2005). [111] J. D. Jackson, Classical Electrodynamics , 3rd ed. (Wiley, Hoboken, NY, 2009). [112] B. Sriram Shastry and B. Sutherland, Exact ground state of a quantum mechanical antiferromagnet, Physica B+C 108 , 1069 (1981). [113] H. Kageyama, K. Yoshimura, R. Stern, N. V. Mush-nikov, K. Onizuka, M. Kato, K. Kosuge, C. P. Slichter, T. Goto, and Y. Ueda, Exact Dimer Ground State and Quantized Magnetization Plateaus in the Two-Dimensional Spin System SrCu 2(BO 3)2, Phys. Rev. Lett. 82 , 3168 (1999). [114] S. Miyahara and K. Ueda, Exact Dimer Ground State of the Two Dimensional Heisenberg Spin System SrCu 2(BO 3)2, Phys. Rev. Lett. 82 , 3701 (1999). [115] A. Koga and N. Kawakami, Quantum Phase Transitions in the Shastry-Sutherland Model for SrCu 2(BO 3)2,Phys. Rev. Lett. 84 , 4461 (2000). [116] P. Corboz and F. Mila, Tensor network study of the Shastry-Sutherland model in zero magnetic field, Phys. Rev. B 87 , 115144 (2013). [117] T. R˜ o˜ om, D. H¨ uvonen, U. Nagel, J. Hwang, T. Timusk, and H. Kageyama, Far-infrared spectroscopy of spin excitations and Dzyaloshinskii-Moriya interactions in the Shastry-Sutherland compound SrCu 2(BO 3)2, Phys. Rev. B 70 , 144417 (2004). [118] O. C´ epas and T. Ziman, Theory of phonon-assisted for-bidden optical transitions in spin-gap systems, Phys. Rev. B 70 , 024404 (2004). [119] F. Giorgianni, B. Wehinger, S. Allenspach, N. Colonna, C. Vicario, P. Puphal, E. Pomjakushina, B. Normand, and Ch. R¨ uegg, Ultrafast frustration breaking and mag-netophononic driving of singlet excitations in a quantum magnet, Phys. Rev. B 107 , 184440 (2023). [120] S. Miyahara, Theory of absorption in a frustrated spin gap system SrCu 2(BO 3)2, arXiv:2304.10823 (2023). [121] Y. Tokura, S. Seki, and N. Nagaosa, Multiferroics of spin origin, Rep. Prog. Phys. 77 , 076501 (2014).
