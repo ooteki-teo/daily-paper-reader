@@ -1,0 +1,489 @@
+Title: Superconductivity and fractionalized magnetic excitations in CeCoIn5
+
+URL Source: https://arxiv.org/pdf/2604.02481v1
+
+Published Time: Mon, 06 Apr 2026 00:08:01 GMT
+
+Number of Pages: 12
+
+Markdown Content:
+# Superconductivity and fractionalized magnetic excitations in CeCoIn 5∗
+
+Pyeongjae Park, 1, † Shang-Shun Zhang, 2 Pietro M. Bonetti, 3, 4 Andrey A. Podlesnyak, 5 Daniel M. Pajerowski, 5 Matthew B. Stone, 5 C. Petrovic, 6 C. Stock, 7
+
+Subir Sachdev, 3, 8 Cristian D. Batista, 2, 9, ‡ and Andrew D. Christianson 1, §
+
+> 1
+
+Materials Science & Technology Division, Oak Ridge National Laboratory, Oak Ridge, TN 37831, USA 
+
+> 2
+
+Department of Physics and Astronomy, The University of Tennessee, Knoxville, TN, 37996, USA 
+
+> 3
+
+Department of Physics, Harvard University, Cambridge, MA 02138, USA 
+
+> 4
+
+Max Planck Institute for Solid State Research, Heisenbergstraße 1, D-70569 Stuttgart, Germany 
+
+> 5
+
+Neutron Scattering Division, Oak Ridge National Laboratory, Oak Ridge, Tennessee 37831, USA 
+
+> 6
+
+Department of Physics, Brookhaven National Laboratory, Upton, New York 11973, USA 
+
+> 7
+
+School of Physics and Astronomy, University of Edinburgh, Edinburgh EH9 3JZ, United Kingdom 
+
+> 8
+
+Center for Computational Quantum Physics, Flatiron Institute, 162 5th Avenue, New York, NY 10010, USA 
+
+> 9
+
+Quantum Condensed Matter Division and Shull-Wollan Center, Oak Ridge National Laboratory, Oak Ridge, TN, 37831, USA 
+
+Recent experiments on CeCoIn 5—a prototypical d-wave superconductor—indicate that its nor-mal state lies near an unconventional quantum critical point (QCP). One intriguing hypothesis is that quantum-critical fluctuations promote fractionalization of localized 4 f moments into fermionic spinons. This fractionalized Fermi liquid (FL ∗) scenario provides a comprehensive framework for the unconventional QCP and superconductivity, and can reconcile a “missing” Fermi-surface volume relative to the Luttinger count in the normal state of CeCoIn 5. To test this possibility, we performed inelastic neutron scattering (INS) measurements on CeCoIn 5 across the superconducting transition and corresponding theoretical analysis. Our high-precision spectra reveal detailed momentum and temperature dependence of the spin resonance and a structured spin excitation continuum persist-ing even in the normal state, placing stringent constraints on the physical picture of pairing in a 
+
+d-wave superconductor. We show that a Kondo-lattice framework incorporating proximity to FL ∗
+
+physics and d-wave pairing reproduces key features of the data. The model suggests that both the quasi-localized nature of the f -moments above Tc and the resonance below Tc arise from common underlying gauge dynamics, implying a unifying organizing principle linking spin fractionalization and unconventional superconductivity in strongly correlated metals. 
+
+Strong electronic correlations, which can lead to phe-nomena beyond the Landau Fermi-liquid paradigm, are widely believed to underlie unconventional superconduc-tivity. The heavy-fermion metal CeCoIn 5 is a prototypi-cal d-wave superconductor, which lies in close proximity to an unconventional quantum critical point (QCP) [1– 16]. Previous experiments have revealed pronounced non-Fermi liquid behavior at zero field and a field-driven evolution into a conventional (non-magnetic) Fermi liq-uid as well as a magnetically ordered phase [6, 7, 13, 17, 18], placing CeCoIn 5 near a magnetic QCP sepa-rating antiferromagnetically ordered and heavy Fermi-liquid regimes. Notably, this magnetic criticality appears       
+
+> ∗This manuscript has been authored by UT-Battelle, LLC un-der Contract No. DE-AC05-00OR22725 with the U.S. Depart-ment of Energy. The United States Government retains and the publisher, by accepting the article for publication, acknowledges that the United States Government retains a non-exclusive, paid-up, irrevocable, world-wide license to publish or reproduce the published form of this manuscript, or allow others to do so, for United States Government purposes. The Department of En-ergy will provide public access to these results of federally spon-sored research in accordance with the DOE Public Access Plan (http://energy.gov/downloads/doe-public-access-plan).
+> †parkp@ornl.gov
+> ‡cbatist2@utk.edu
+> §christiansad@ornl.gov
+
+incompatible with the conventional Hertz-Millis-Moriya description based on spin-density-wave instability, point-ing instead to alternative explanations such as a Kondo-breakdown scenario [19–21]. An intriguing hypothesis is that the unconventional QCP of CeCoIn 5 is characterized by the fractionaliza-tion of the localized 4 f magnetic moments into fermionic spinons. This fractionalized Fermi liquid (FL ∗) scenario offers a concrete framework for understanding Kondo-breakdown quantum criticality [22–29]. Notably, this can explain a few puzzling observations in CeCoIn 5. While extensive experiments have demonstrated signatures of Kondo hybridization at low temperatures [30–33], obser-vations of Maksimovic et al. and others [33–35] indicate a partially “missing” Fermi-surface volume in the nor-mal state relative to the Luttinger count, without any symmetry-breaking long-range order . This apparent vi-olation can be reconciled in FL ∗ by assigning the missing volume to the fractionalized, charge-neutral spin sector [23, 24, 36–38], compatible with a more generalized form of the Luttinger constraint formulated by Oshikawa [39]. Importantly, this parton description does not require the system to lie exactly at the QCP: even if the ultimate low-temperature state is confined, proximity to a deconfined QCP may still yield the deconfinement length signifi-cantly exceeding the lattice spacing, making the parton framework a natural starting point for finite-temperature dynamics. This is analogous to magnetically ordered sys-
+
+> arXiv:2604.02481v1 [cond-mat.str-el] 2 Apr 2026
+
+2tems proximate to quantum spin liquids where collec-tive modes are more accurately described as two-spinon bound states rather than conventional magnons [40, 41]. A central outstanding question then is whether CeCoIn 5 shows hallmarks of spin fractionalization in its normal state, and whether these fractionalized ex-citations confine in the superconductor to yield astate smoothly connected to a Bardeen-Cooper-Schrieffer state. Inelastic neutron scattering (INS) is uniquely suited to address this issue. Beyond establishing prox-imity to deconfined spinons in quantum spin-liquid can-didates [42–44], INS has historically revealed key col-lective excitations in unconventional superconductors, most notably the sharp, gapped “spin-resonance” modes that emerge below Tc at antiferromagnetic wave vectors in cuprates, iron pnictides, and heavy-fermion materi-als [45–50]. In CeCoIn 5, seminal INS studies identified such a resonance at Qδ = (1 /2 − δ, 1/2 − δ, 1/2) with 
+
+δ ≈ 0.05, and traced its evolution into the field-induced, incommensurate “Q-phase” spin-density wave governed by the same Qδ [10, 17, 18, 51–55]. However, these measurements were largely confined to a narrow region around Qδ and to temperatures below Tc. Mapping the complete momentum- and energy-dependent evolution of this mode across the superconducting transition could offer essential clues to its microscopic origin and, crit-ically, to whether it reflects the emergence of fraction-alized spin excitations potentially underlying a nearby magnetic QCP. Here, using a modern time-of-flight spectrometer with broad momentum coverage and enhanced statistics, we report comprehensive INS measurements of CeCoIn 5.These measurements provide a significantly improved view of the magnetic excitation spectrum across the su-perconducting transition and uncover previously inac-cessible features: namely, quasi two-dimensional spin dynamics, a scattering continuum co-existing with co-herent gapped excitations, and strong antiferromagnetic spin correlations that persist above Tc. These points es-tablish a stringent experimental benchmark for theories of correlated superconductivity. We utilize the spectro-scopic data to test the theoretical framework incorporat-ing both the proximity to a FL ∗ phase and d-wave pair-ing, which is based on a fermionic parton decomposition of the 4 f -moments consisting of an emergent SU(2) gauge field coupled to Nf = 2 flavors of Dirac fermions. The model captures the overall energy, momentum, and tem-perature dependence of the experimental spectrum and thus supports a link between spin fractionalization and unconventional superconductivity in strongly correlated metals. 
+
+> EXPERIMENT
+
+Our dataset, which spans both the superconducting and normal phases, reveals a transformation of the mag-netic excitation spectrum across Tc. Below Tc (Fig. 1), the most prominent feature is a well-defined, disper-sive magnetic excitation branch with a finite spin gap, extending continuously along both in-plane and out-of-plane momentum directions. While this excitation in-deed connects to the previously reported spin resonance mode [10], our full mapping along the high-symmetry directions—[ H, H, 0], [ H, 0, 0], and [0 , 0, L ]—allows us to resolve its detailed dispersion in each direction (Figs. 1g– h). Notably, the dispersion along [0, 0, L] is nearly flat compared to the in-plane directions, highlighting the quasi-two-dimensional nature of the spin dynamics. This contrasts with earlier reports of nearly isotropic disper-sion [54] and provides motivation for modeling the spin dynamics using a two-dimensional square-lattice frame-work. In a similar context, the gapped spin excitation previously thought to be present only around L = 1 /2is in fact not strictly confined to the L = 1 /2 plane. In-stead, it extends across nearly the entire range of L values (Fig. 1c–d). In addition, the intensity of this mode de-creases with increasing L (e.g., [1/2, 1/2, 1/2] and [1/2, 1/2, 3/2] in Fig. 1d), consistent with prior reports that the spin fluctuations are predominantly c-axis polarized, as the momentum transfer becomes more parallel to the 
+
+c-axis at higher L [10, 53]. More importantly, beyond the coherent dispersive branch, our measurements reveal a broad underlying magnetic continuum. As best illustrated in Fig. 1f, a sub-stantial portion of the spectral weight resides within the dispersion valley, well beyond what can be captured by the model of a single, coherent excitation branch with V-shaped dispersion. This spectral weight exhibits a broad distribution that extends well beyond the instrumental momentum and energy resolutions (see Supplementary Note II), supporting its continuum-like character. See also the constant-energy slices above 0.85 meV in Fig. 1b and Fig. S5. The coexistence of a sharp, dispersive mode and a broad continuum suggests correlated spin dynamics beyond a simple single-particle picture, likely reflecting two-particle dynamics of underlying S = 1 /2 degrees of freedom. Notably, this continuum character becomes in-creasingly pronounced as the [0, 0, L] component deviates from L = 1 /2 (Figs. 1c–d). The temperature dependence of these excitations pro-vides further insight into the close link between supercon-ductivity and spin correlations in CeCoIn 5. As the tem-perature rises through Tc, the gapped, dispersive mode collapses into a broad, gapless continuum extending down to the lowest accessible energy ( ∼ 0.15 meV; see Fig. 2). This transformation indicates that the entire coherent branch, not just the resonance near Qδ , is closely tied to the onset of superconductivity. Remarkably, in the nor-mal state, the continuum remains well structured, with spectral weight concentrated near Qδ , indicating persis-tent antiferromagnetic correlations. This challenges the prevailing view that the magnetic spectrum of CeCoIn 5
+
+above Tc is featureless, which led to its routine subtrac-tion as “background” in prior neutron studies [10, 55]. 30 0.5 1 1.5 2[1/2, 1/2, L] (r.l.u.)                    
+
+> 00.5 11.5 2Energy (meV)
+> 246810 10 -4
+> -1 -0.5 00.5 1[H,H, 0] (r.l.u.) -2 -1 012[0, 0,  L] (r.l.u.)
+> 246810 12 10 -4
+> 00.25 0.5 0.75 1[1/2, K, 1/2] [H,H, 1/2] 00.5 11.5 2Energy (meV) 00.5 11.5 22.5
+
+Temperature (K) 0246810 12 Magnetic field (T)          
+
+> 00.5 1[H,H, 1/2] (r.l.u.) 00.5 11.5 2Energy (meV)
+> 00.5 1[H,H, 0.3] (r.l.u.) 00.5 11.5 2Energy (meV)
+> 00.5 1[H,H, 0] (r.l.u.) 00.5 11.5 2Energy (meV) Intensity (arb. units) Intensity (arb. units)
+
+d
+
+Superconducting Normal  
+
+> H|| (1-10)
+
+Q-phase 0.25 0.5 0.75 [1/2, K, 1/2] [H, H, 1/2] 00.5 11.5 2Energy (meV) 0.25 Å -1 0 0.5 1[1/2, 1/2, L] (r.l.u.) 00.5 1Energy (meV) 0.25 Å -1             
+
+> T= 0.3 K 0.2 0.4 0.6 0.8 [H,H, 1/2] (r.l.u.) 012Intensity (arb. units) 2468246810 10 Intensity (arb. units) Intensity (arb. units)
+
+bae fghc      
+
+> 0.9 ≤ ħω ≤ 0.95 (meV) 0.45 ≤ ħω ≤ 0.65
+> (meV)
+> 0.85 ≤ ħω ≤ 1.05
+> (meV)
+
+FIG. 1. Magnetic excitation spectra in the superconducting phase of CeCoIn 5 (T = 0.3 K). a , Field–temperature phase diagram of CeCoIn 5 [17, 18]. The “Q-phase” corresponds to a spin-density wave order of Ce 3+ moments with modulation vector Qδ = (0 .45 , 0.45 , 1/2) in reciprocal lattice units. b, Two constant-energy slices of the inelastic neutron scattering (INS) spectrum at T = 0 .3 K, integrated over two different energy ranges. c–e, Energy–momentum slices along high-symmetry directions, revealing a well-defined magnetic excitation branch across broad momentum space as well as continuum scattering. Dashed grey lines mark regions where the spectrum is affected by unreliable background subtraction of quasi-elastic scattering signals (see Fig. S3). f Momentum-dependent intensity over the energy range 0 .9 ≤ ℏω ≤ 0.95 meV at T = 0 .3 K. The red and blue shaded regions indicate nominal peaks obtained by fitting each side of the dispersive mode with a pseudo-Voigt function. 
+
+g–h Extracted dispersion relations of the observed excitation branch from panels d and e, obtained by fitting the peak positions of constant-energy/momentum cuts through the volumetric intensity data. 
+
+This inadvertently obscured an intrinsic continuum com-ponent that coexists with the coherent mode below Tc
+
+(see Fig. 1f). In addition, the spectral weight near the resonance rapidly diminishes approaching Tc, and becomes signif-icantly weaker at higher temperatures. Fig. S6 shows detailed line cuts at q = (1 /2, 1/2, 1/2), illustrating this evolution together with Fig. 2. Although our analysis may miss some spectral weight below ∼ 0.15 meV in the normal phase due to background contamination, a quantitative assessment of the total intensity at q =(1 /2, 1/2, 1/2) likely suggests a strong net enhancement of the structure factor below Tc, rather than a redistri-bution of spectral weight from zero to finite energy at constant total intensity. Overall, these results suggest that the magnetic ex-citation spectrum of CeCoIn 5 is far richer than a single superconductivity-induced “spin resonance.” It reveals a continuous evolution from a scattering continuum— rooted in strong antiferromagnetic correlations of the normal state—into a coherent, gapped mode that devel-ops alongside superconductivity. The intertwined nature of these excitations highlights the need for a theoretical framework that can capture both coherent and incoher-ent magnetic responses across energy–momentum space, by treating antiferromagnetic correlations and supercon-ductivity on equal footing. 
+
+THEORY 
+
+Parton-based approaches provide an intuitive frame-work for describing the continuum of magnetic excita-tions that emerges in deconfined quantum phases [27– 29, 56] or in their proximity [40, 41], where the decon-finement length scale remains finite but much larger than the lattice spacing. The finite-temperature FL ∗ state—a compelling framework for the normal phase of CeCoIn 5—40 0.5 1[1/2, 1/2, L] (r.l.u.) 00.5 11.5 2Energy (meV)                    
+
+> 00.5 1[H,H, 1/2] (r.l.u.) 00.5 11.5 2Energy (meV)
+> 00.5 1[1/2, 1/2, L] (r.l.u.) 00.5 11.5 2Energy (meV)
+> 00.5 1[H,H, 1/2] (r.l.u.) 00.5 11.5 2Energy (meV)
+> 00.5 1[1/2, 1/2, L] (r.l.u.) 00.5 11.5 2Energy (meV)
+> 00.5 1[H,H, 1/2] (r.l.u.) 00.5 11.5 2Energy (meV) 246810 Intensity (arb. units)
+
+a      
+
+> 00.5 1[1/2, 1/2, L] (r.l.u.) 00.5 11.5 2Energy (meV)
+> 00.5 1[H,H, 1/2] (r.l.u.) 00.5 11.5 2Energy (meV)
+
+c      
+
+> 00.5 1[1/2, 1/2, L] (r.l.u.)
+> 00.5 11.5 2Energy (meV)
+> 00.5 1[H,H, 1/2] (r.l.u.) 00.5 11.5 2Energy (meV)
+
+T = 1.6 K (0.70 Tc) T = 2.0 K (0.87 Tc)
+
+T = 2.15 K (0.93 Tc) T = 2.5 K (1.09 Tc ) T = 4.0 K (1.74 Tc)      
+
+> 00.5 1[1/2, 1/2, L] (r.l.u.) 00.5 11.5 2Energy (meV)
+> 00.5 1[H,H, 1/2] (r.l.u.) 00.5 11.5 2Energy (meV)
+
+bd fe 
+
+> T= 0.3 K (0.13 Tc)
+
+FIG. 2. Temperature dependence of the magnetic excitations in CeCoIn 5. Each panel shows energy-momentum slices along [1/2, 1/2, L] and [ H, H, 1/2] measured at a T = 0 .3 K, b 1.6 K, c 2 K, d 2.15 K, e 2.5 K, and f 4 K. They demonstrate the evolution of the gapped magnetic excitations into a gapless, structured continuum scattering signal above Tc. Dashed grey lines mark regions where the spectrum is affected by unreliable background subtraction due to strong quasi-elastic background signals (see Fig. S3). 
+
+represents such a regime, in which the evolution toward a fully deconfined zero-temperature phase is interrupted by the onset of d-wave superconductivity that confines the emergent gauge fields via the Higgs mechanism (see Fig. 3a and b) [57]. This raises a natural question: can the continuous transition between the FL ∗ and supercon-ducting states, as captured by a simple mean-field parton theory, account for the INS spectra of CeCoIn 5 below and above Tc? To address this question, we describe CeCoIn 5
+
+using an effective Kondo–Heisenberg lattice model: 
+
+H = Hc + Hf + HK , (1) with 
+
+Hc = X
+
+> ij
+
+
+
+tij c† 
+
+> iσ
+
+cjσ + H.c. 
+
+
+
+− μ X
+
+> i,σ
+
+c† 
+
+> iσ
+
+ciσ ,
+
+Hf = JH
+
+X
+
+> ⟨ij ⟩
+
+Si · Sj , HK = 12 JK
+
+X
+
+> i
+
+Si · c† 
+
+> i
+
+σci. (2) 
+
+Hc denotes the tight-binding Hamiltonian for the con-duction electrons, including hopping amplitudes up to third-nearest neighbors, whose values are determined by fitting quasiparticle interference (QPI) data [58, 59]. Hf
+
+describes the effective interactions among the localized f -moments, while HK captures the Kondo exchange cou-pling between the f -electron spins and the conduction electrons. We consider an FL ∗ framework in which the Ce 3+ 4f
+
+moments fractionalize into fermionic spinons, while the conduction electrons retain a conventional Fermi-liquid character. The spinon degrees of freedom are introduced by expressing the spin-exchange interaction in bilinear form, Si = 12 f † 
+
+> i
+
+σfi, with fi = ( fi, ↑, f i, ↓)T . The resulting spin-liquid state is described at the mean-field level by the quadratic Hamiltonian 
+
+Hm.f.f = JH
+
+4
+
+X
+
+> ⟨jj ′⟩
+
+
+
+F † 
+
+> j
+
+U m.f.jj ′ Fj′ + H .c.
+
+
+
+, (3) where ⟨jj ′⟩ refers to nearest neighbor bonds, Fj =(fj, ↑, f †
+
+> j, ↓
+
+)T is the Nambu spinor, and 
+
+U m.f.jj ′ =
+
+ t ejj ′ ∆
+
+ejj ′ ∆ −t
+
+
+
+(4) is the mean-field ansatz in the standard d-wave gauge, with ejj ′ = +1 ( −1) for bonds along the x (y) direction. 5Chargon 
+
+## a b
+
+## c Energy spectrum (FL* phase)  Energy spectrum (SC phase) 
+
+> Dirac
+> nodes
+> Fermi
+> surface
+> Singlet spinon pair
+
+Doping 
+
+> Temperature  FL*
+> FL
+> Spinon
+> Dirac
+> nodes
+> Dirac
+> nodes
+> Dirac
+> nodes
+> Electron
+> Dirac
+> nodes
+> Dirac
+> nodes
+> Dirac
+> nodes
+> Dirac
+> nodes
+> Dirac
+> nodes
+> SC
+
+## d 
+
+> SC FL*
+
+Ba
+
+cjσ
+
+fjσ
+
+FIG. 3. Minimal theoretical model for CeCoIn 5. a , Schematic theoretical phase diagram of CeCoIn 5 in the tempera-ture–doping plane. Upon doping (horizontal arrow), the system undergoes a delocalization transition, as reported in Ref. [34]. Upon cooling (vertical arrow), it enters a superconducting state through the condensation of chargons. b, The minimal model capturing the proposed scenario consists of conduction electrons and local f -moments, coupled via a Kondo-like interaction. A central assumption is that the f -moments fractionalize into fermionic spinons, giving rise to a fractionalized FL* phase above 
+
+Tc. A bosonic chargon field emerges as a bound state of an electron and a spinon, and its condensation drives the onset of superconductivity. The corresponding chargon condensate order parameter, B1, is shown in c as a function of temperature. d, 
+
+Contour plot of the low-energy spectrum in the FL ∗ and superconducting phases. The color scale of the contour plot represents energy of the single-particle excitations. The gray contours indicates that individual spinon in the FL* phase is invisible to physical probes. 
+
+This ansatz describes a spin-liquid state with an emer-gent U(1) gauge symmetry, which enlarges to SU(2) at the special point t = ∆ for which there is support in nu-merical studies of square lattice antiferromagnets [60–65]. In more general settings, where pairing terms on further-neighbor bonds are included, the gauge symmetry is re-duced to Z 2, corresponding to the projective symmetry group Z 2Azz13 [66, 67]. We note that the specific choice of gauge structure does not qualitatively affect the dy-namical spin correlations discussed below. For simplicity, we therefore set t = ∆. In this class of spin liquids, the spinon spectrum is characterized by the presence of four Dirac nodes (see Fig. 3d). As shown below, this mean-field description, when supplemented by quantum fluc-tuations, provides a consistent account of the neutron-scattering data. The Kondo interaction acts as a pairing mechanism between spinons and conduction electrons [25, 26]. As shown below, these two elementary excitations of the FL ∗
+
+phase bind to form a composite boson—referred to as a chargon —that carries both the physical U(1) charge and the emergent gauge charge of the spinons (Fig. 3b). Formally, the Kondo coupling can be rewritten as 
+
+HK = JK
+
+4
+
+X
+
+> j
+
+
+
+F † 
+
+> j
+
+Bj Cj + H .c.
+
+
+
+, (5) where Cj = ( cj, ↑, c †
+
+> j, ↓
+
+)T is the Nambu spinor of conduc-tion electrons, and 
+
+Bj =
+
+B1,j B2,j 
+
+B∗ 
+
+> 2,j
+
+−B∗
+
+> 1,j
+
+
+
+(6) 6is the chargon field. Above Tc, chargons remain uncon-densed and the system resides in the FL ∗ phase; but the chargon fluctuations are expected to be overdamped and classical, as in a recent analysis for the cuprates [68]. Upon cooling, chargon condensation breaks the emer-gent gauge symmetry, producing conventional symmetry-breaking orders and hybridized conduction–spinon bands (Fig. 3c). A superconducting state emerges when B1,j =
+
+B1̸ = 0 and B2,j = 0, yielding a pairing gap proportional to |B1|. The resulting superconducting order inherits its 
+
+d-wave structure from the underlying spin-liquid corre-lations of the FL ∗ state, causing the conduction-electron Fermi surface to collapse into four Dirac nodes in the Bo-goliubov excitation spectrum, as illustrated in Fig. 3d. To test if this framework captures the key features in our INS data, we calculated the dynamical spin struc-ture factor (DSSF) in the superconducting state. Given that the spectral weight is dominated by the f -electron moments (see Methods for details), we neglect the contri-bution of conduction electrons to the DSSF in our calcu-lations. First, the spectrum obtained from a mean-field calculation (Fig. 4a) exhibits a broad particle–hole con-tinuum of the hybridized fermionic bands centered near 1.5 meV, lacking the sharp dispersive mode observed ex-perimentally. Intuitively, reproducing such a mode re-quires a quasiparticle excitation carrying spin quantum number Sz = ±1, 0, as dictated by magnetic dipole selec-tion rules in neutron scattering. This type of excitation can arise from a particle–hole (i.e., two-spinon) bound state or resonance. Although this mechanism is reminis-cent of the conventional spin-excitonic picture proposed to explain the spin resonance [55, 69, 70], a crucial dis-tinction here is that both the particle and hole excitations retain substantial spinon character, reflecting the nonlo-cal structure of the parent FL ∗ state. Notably, the con-ventional spin-exciton framework has failed to reproduce the observed mode dispersion near q = [1 /2, 1/2, 1/2] below Tc [55, 69], and is incompatible with the non-Luttinger Fermi volume observed above Tc [33, 34]. To quantitatively assess this bound-state picture, we computed the DSSF using the ladder-diagram summa-tion shown in Fig. 4b. The bound state originates from the bubble diagrams in the ladder series, which gener-ate Ruderman–Kittel–Kasuya–Yosida (RKKY) interac-tion between the local f moments mediated by the con-duction electrons (Fig. 4c). Within second-order per-turbation theory in JK , this interaction takes the form 
+
+JRKKY (q) = J2 
+
+> K
+
+Πc(q, Ω = 0). As CeCoIn 5 lies in close proximity to a magnetically ordered phase with ordering vector Qδ , any realistic model should exhibit JRKKY (q)that peaks near Qδ . By tuning the conduction-electron filling nc of the single-band model, we find that JRKKY (q)is indeed maximized around q = Qδ when nc ≃ 1.2, i.e., near half filling. The corresponding Fermi surface is close to those observed experimentally [34, 58, 59]. We there-fore adopt nc = 1 .2 in our calculations, and the corre-sponding Π c(q, Ω = 0) is plotted in Fig. 4c. This peak in JRKKY (q) naturally leads to the spec-trum with a sharp mode shown in Fig. 4b (T =0.13 Tc), which reproduce the key experimental features: a parabolic quasiparticle mode coexisting with a broad continuum, and a pronounced spectral weight accu-mulation near its dispersion minimum, i.e., the spin-resonance. In this context, the spin-resonance can be interpreted as a precursor to the field-induced magnetic instability (“ Q-phase”) that arises when this bosonic mode condenses, a perspective consistent with previ-ous neutron scattering studies under applied magnetic fields [17, 18, 51, 53]. The binding energy of the bound state is governed by the competition between the Kondo interaction JK
+
+and the Fermi energy of conduction electrons. To re-produce the experimental energy scale, it is necessary to account for the screening of the Kondo interaction, de-scribed by a momentum- and frequency-dependent RPA propagator of the B fields shown in Fig. 4d. Averaging this propagator over momentum and a finite frequency window ( ±2meV) reduces its effective strength to ap-proximately 60 % of the bare value set by JK . For com-putational simplicity, we approximate this screened prop-agator as momentum- and frequency-independent when evaluating the DSSF, which yields the spectrum shown in Fig. 4b ( T = 0 .13 Tc). The result is in quantitative agree-ment with our INS measurements exhibiting the spin-resonance energy Er ≈ 0.55 meV. Moreover, the ratio between Er and the pair-breaking energy (= twice the superconducting gap) is close to 0 .55 in our model calcu-lation, close to the empirical value of ∼ 0.64 that is ubiq-uitously observed in most unconventional superconduc-tors exhibiting spin-resonance, including CeCoIn 5 [71]. Finally, the simulated spin-resonance signal progres-sively weakens as the temperature increases, while the overall structure of the continuum remains largely un-changed (Fig. 4b). In our framework, this reflects a re-duction in the binding energy of the particle-hole bound state and a corresponding growth in its spatial extent. As 
+
+T approaches Tc, the lower edge of the particle-hole con-tinuum collapses to zero energy due to the superconduct-ing gap closure and the presence of gapless Dirac spinons. The resonance mode is therefore embedded within a gap-less continuum and loses its coherence, as shown in the rightmost panel of Fig. 4b. The resulting conical contin-uum in the same figure (red dashed line) directly mirrors the Dirac spectrum of the underlying spin liquid above 
+
+Tc. Notably, spinon-spinon interactions enhance low-energy spectral weight, similar to the INS data (Fig. 2e). In contrast, non-interacting Dirac spinons yield vanish-ing spectral weight at low-energies due to the marginal density of states on the Dirac points, in qualitative dis-agreement with experimental observations. 
+
+> DISCUSSION AND OUTLOOK
+
+While our simplified model captures key features of the INS spectra—especially the spin resonance below Tc7T = 0.13 Tc
+
+> Free spinon gas
+
+a c cf
+
+f
+
+f
+
+f 
+
+> −Πc(q)
+
+= + + . . .   
+
+> −D(q,Ω)−JK
+> −Π(q,Ω)
+
+b
+
+d           
+
+> T=0.13 TcT=0.70 TcT=0.87 TcT=1.09 Tc
+
+c
+
+> Sμ
+> f
+
++ + + . . . 
+
+> −JK−JK
+
+χμν(q, ω) = Sν                       
+
+> f
+> FIG. 4. Calculated dynamical spin structure factor (DSSF). a, DSSF between local f-moments in the mean-field approximation, evaluated at a temperature below Tc. The spectrum is characterized by a broad continuum arising from particle-hole excitations. b, Interaction-renormalized DSSF between local f-moments, obtained by summing ladder-type Feynman diagrams. A bound state of spinon pairs (or electron pairs below Tc) emerges below the continuum, manifesting as bright, dispersive modes. As temperature increases, this bound state gets closer to the continuum and gradually fades out. c, Static magnetic susceptibility χ(q,0) of non-interacting conduction electrons, which exhibits a peak near ( π, π )—coinciding with the minimum of the bound-state dispersion. d, Renormalized propagator of the chargon field captured by the RPA series of diagrams. Here we only show the results for Bj, 1field, whose amplitude is reduced by a factor about 0 .6 relative to the bare value JK; similar result holds for the Bj, 2field.
+
+and antiferromagnetic correlations present above it—it does not fully reproduce several finer aspects, such as a steeper slope of the cone delineating the scattering con-tinuum just above Tc in the experiment (compared to the red dashed line in Fig. 4b). We attribute these dis-crepancies to the minimal mean-field treatment of the quantum spin liquid, which neglects longer-range effec-tive interactions between the f moments that are ex-pected to enhance the spinon velocity of the Dirac spin liquid. Incorporating these interactions substantially in-creases the excitation velocity while retaining a fixed bandwidth as recently demonstrated in Refs. [72, 73], which notably improved quantitative agreement with the INS spectra of the magnetically ordered parent com-pound CeIn 3. Such a characteristic is reminiscent of the vertical pillar-like low-energy continuum structure observed in CeCoIn 5 (Fig. 2e–f). Another ingredient not included in our model is the pronounced Ising-type anisotropy of the spin-spin correlations in CeCoIn 5. This anisotropy is revealed by polarized neutron scattering measurements of the spin resonance [52, 53] and is fur-ther supported by the c-axis-polarized spin-density-wave character of the “Q phase” [17, 18]. A more detailed modeling and a rigorous treatment of these effects will be necessary to fully capture the details of our observa-tion. Perhaps the most intriguing question implied by our results is the potential of the FL ∗ framework to serve as a unifying description of the exotic metallic states that emerge just above the d-wave superconduct-ing dome across several material families. Notably, in-tense, gapped spin-resonance excitations have been re-ported across heavy-fermion, cuprate, and iron-based su-perconductors [45–50], most exhibiting a remarkably con-sistent ratio between the resonance energy and the su-perconducting gap [71]. This universality may suggest a common organizing principle underpinning these sys-tems and linking the two scales. Within the FL ∗ frame-8work, such a link arises naturally: both the spin res-onance and the superconducting gap originate from a shared hybridized spinon–electron dispersion, developed by the condensation of the B1 chargon field. The relevance of FL ∗ is particularly compelling in the case of slightly underdoped cuprates, where it of-fers a unified treatment of antiferromagnetism, d-wave superconductivity, and charge order on the square lat-tice [27]. Notably, it accounts for quantum oscillation measurements [74] and anomalous magnetotransport in the pseudogap regime of cuprates [29, 75, 76]; specifi-cally, the observed Yamaji effect is consistent with the FL ∗ framework [77]. These developments imply that the electronic Fermi surfaces and fractionalized spin excita-tions of FL ∗ may underlie a common organizing principle of correlated metals near unconventional superconductiv-ity. In fact, CeCoIn 5 closely parallels the cuprates in its layered square-lattice structure, quasi-two-dimensional transport properties, and the presence of a quantum phase transition beneath the superconducting dome [1– 10, 12–16, 34]. A key advantage of CeCoIn 5 is that this criticality can be accessed in a clean, stoichiomet-ric setting, free from the strong chemical disorder that plagues many cuprates [1, 6]. Nevertheless, extend-ing similar spectroscopic investigations to the cuprates remains highly appealing, especially given their much higher Tc and their central role in the broader context of unconventional superconductivity. 
+
+[1] C. Petrovic, R. Movshovich, M. Jaime, P. G. Pagliuso, M. F. Hundley, J. L. Sarrao, Z. Fisk, and J. D. Thomp-son, A new heavy-fermion superconductor CeCoIn 5: Arelative of the cuprates? , J. Phys.: Condens. Matter 13 ,L337 (2001). [2] R. Settai, H. Shishido, S. Ikeda, Y. Murakawa, M. Nakashima, D. Aoki, Y. Haga, H. Harima, and Y. Onuki, Quasi-two-dimensional Fermi surfaces and de Haas–van Alphen oscillations in both the normal and su-perconducting mixed states of CeCoIn 5, J. Phys.: Con-dens. Matter 13 , L627 (2001). [3] Y. Kohori, Y. Yamato, Y. Iwamoto, T. Kohara, E. D. Bauer, M. B. Maple, and J. L. Sarrao, NMR and NQR studies of the heavy fermion superconductors CeTIn 5 (T = Co and Ir) , Phys. Rev. B 64 , 134526 (2001). [4] G. Sparn, M. Nicklas, R. Borth, E. Lengyel, P. G. Pagliuso, J. L. Sarrao, and F. Steglich, Unconventional superconductivity in CeCoIn 5 — a high-Tc heavy fermion superconductor , Physica B 319 , 262 (2002). [5] V. A. Sidorov, M. Nicklas, P. G. Pagliuso, J. L. Sarrao, Y. Bang, A. V. Balatsky, and J. D. Thompson, Super-conductivity and quantum criticality in CeCoIn 5, Phys. Rev. Lett. 89 , 157004 (2002). [6] A. Bianchi, R. Movshovich, I. Vekhter, P. G. Pagliuso, and J. L. Sarrao, Avoided antiferromagnetic order and quantum critical point in CeCoIn 5, Phys. Rev. Lett. 91 ,257001 (2003). [7] J. Paglione, M. A. Tanatar, D. G. Hawthorn, E. Boaknin, R. W. Hill, F. Ronning, M. Sutherland, L. Taillefer, C. Petrovic, and P. C. Canfield, Field-induced quantum critical point in CeCoIn 5, Phys. Rev. Lett. 91 , 246405 (2003). [8] A. D. Christianson, E. D. Bauer, J. M. Lawrence, P. S. Riseborough, N. O. Moreno, P. G. Pagliuso, J. L. Sar-rao, J. D. Thompson, E. A. Goremychkin, F. R. Trouw, M. P. Hehlen, and R. J. McQueeney, Crystalline electric field effects in CeM In 5: Superconductivity and the influ-ence of kondo spin fluctuations , Phys. Rev. B 70 , 134505 (2004). [9] Y. Nakajima, T. Shibauchi, Y. Matsuda, H. Shishido, R. Settai, and Y. Onuki, Non-Fermi-liquid behavior in CeCoIn 5 studied by magnetoresistance , Physica C 460– 462 , 680 (2007). [10] C. Stock, C. Broholm, J. Hudis, H. J. Kang, and C. Petrovic, Spin resonance in the d-wave superconductor CeCoIn 5, Phys. Rev. Lett. 100 , 087001 (2008). [11] S. Ramos, M. Fontes, E. Hering, M. Continentino, E. Baggio-Saitovich, F. D. Neto, E. Bittar, P. Pagliuso, E. D. Bauer, J. L. Sarrao, et al. , Superconducting quan-tum critical point in CeCoIn 5−xSn x, Phys. Rev. Lett 
+
+105 , 126401 (2010). [12] B. B. Zhou, S. Misra, E. H. da Silva Neto, P. Ayna-jian, R. E. Baumbach, J. D. Thompson, E. D. Bauer, and A. Yazdani, Visualizing nodal heavy fermion super-conductivity in CeCoIn 5, Nat. Phys. 9, 474 (2013). [13] Y. Tokiwa, E. D. Bauer, and P. Gegenwart, Zero-field quantum critical point in CeCoIn 5, Phys. Rev. Lett. 111 ,107003 (2013). [14] M. P. Allan, F. Massee, D. K. Morr, J. V. Dyke, A. W. Rost, A. P. Mackenzie, C. Petrovic, and J. C. S. Davis, 
+
+Imaging Cooper pairing of heavy fermions in CeCoIn 5,Nat. Phys. 9, 468 (2013). [15] J. S. V. Dyke, F. Massee, M. P. Allan, J. C. Davis, C. Petrovic, and D. K. Morr, Direct evidence for a mag-netic f-electron–mediated pairing interaction in the heavy fermion superconductor CeCoIn 5, Proc. Natl. Acad. Sci. U.S.A. 111 , 11663 (2014). [16] J. Spehling, R. H. Heffner, J. E. Sonier, E. D. Bauer, J. D. Thompson, F. Steglich, and H. H. Klauss, Field-induced coupled superconductivity and spin density wave order in the heavy fermion compound CeCoIn 5, Phys. Rev. Lett. 
+
+103 , 037003 (2009). [17] M. Kenzelmann, T. Strassle, C. Niedermayer, M. Sigrist, B. Padmanabhan, M. Zolliker, A. Bianchi, R. Movshovich, E. D. Bauer, J. L. Sarrao, et al. , Coupled superconducting and magnetic order in CeCoIn 5, Science 
+
+321 , 1652 (2008). [18] M. Kenzelmann, S. Gerber, N. Egetenmeyer, J. Gavilano, T. Str¨ assle, A. Bianchi, E. Ressouche, R. Movshovich, E. D. Bauer, J. L. Sarrao, et al. , Evidence for a magnet-ically driven superconducting Q phase of CeCoIn 5, Phys. Rev. Lett. 104 , 127001 (2010). [19] P. Gegenwart, Q. Si, and F. Steglich, Quantum criticality in heavy-fermion metals , Nature Physics 4, 186 (2008). [20] Q. Si and F. Steglich, Heavy fermions and quantum phase transitions , Science 329 , 1161 (2010). [21] O. Stockert and F. Steglich, Unconventional quantum criticality in heavy-fermion compounds , Annu. Rev. Con-9
+
+dens. Matter Phys. 2, 79 (2011). [22] T. Senthil, S. Sachdev, and M. Vojta, Fractionalized fermi liquids , Phys. Rev. Lett. 90 , 216403 (2003). [23] T. Senthil, M. Vojta, and S. Sachdev, Weak magnetism and non-Fermi liquids near heavy-fermion critical points ,Physical Review B 69 , 035111 (2004). [24] A. Paramekanti and A. Vishwanath, Extending Lut-tinger’s theorem to Z2 fractionalized phases of matter ,Phys. Rev. B 70 , 245118 (2004). [25] N. Andrei and P. Coleman, Cooper Instability in the Pres-ence of a Spin Liquid , Phys. Rev. Lett. 62 , 595 (1989). [26] P. Coleman and N. Andrei, Kondo-stabilised spin liquids and heavy fermion superconductivity , Journal of Physics: Condensed Matter 1, 4057 (1989). [27] M. Christos, Z.-X. Luo, H. Shackleton, Y.-H. Zhang, M. S. Scheurer, and S. Sachdev, A model of d-wave su-perconductivity, antiferromagnetism, and charge order on the square lattice , PNAS 120 , e2302701120 (2023). [28] M. Christos and S. Sachdev, Emergence of nodal Bogoli-ubov quasiparticles across the transition from the pseu-dogap metal to the d-wave superconductor , npj Quantum Materials 9, 4 (2024). [29] P. M. Bonetti, M. Christos, A. Nikolaenko, A. A. Pa-tel, and S. Sachdev, Critical quantum liquids and the cuprate high temperature superconductors , arXiv preprint arXiv:2508.20164 (2025). [30] H. Shishido, R. Settai, D. Aoki, S. Ikeda, H. Nakawaki, N. Nakamura, T. Iizuka, Y. Inada, K. Sugiyama, T. Takeuchi, et al. , Fermi surface, magnetic and super-conducting properties of LaRhIn 5 and CeTIn 5 (T: Co, Rh and Ir) , Journal of the Physical Society of Japan 71 ,162 (2002). [31] A. Koitzsch, S. V. Borisenko, D. Inosov, J. Geck, V. B. Zabolotnyy, H. Shiozawa, M. Knupfer, J. Fink, B. B¨ uchner, E. D. Bauer, J. L. Sarrao, and R. Fol-lath, Hybridization effects in CeCoIn 5 observed by angle-resolved photoemission , Phys. Rev. B 77 , 155128 (2008). [32] A. Koitzsch, T. K. Kim, U. Treske, M. Knupfer, B. B¨ uchner, M. Richter, I. Opahle, R. Follath, E. D. Bauer, and J. L. Sarrao, Band-dependent emergence of heavy quasiparticles in CeCoIn 5, Phys. Rev. B 88 , 035124 (2013). [33] Q. Chen, D. Xu, X. Niu, J. Jiang, R. Peng, H. Xu, C. Wen, Z. Ding, K. Huang, L. Shu, et al. , Direct observa-tion of how the heavy-fermion state develops in CeCoIn 5,Physical Review B 96 , 045107 (2017). [34] N. Maksimovic, D. H. Eilbott, T. Cookmeyer, F. Wan, J. Rusz, V. Nagarajan, S. C. Haley, E. Maniv, A. Gong, S. Faubel, I. M. Hayes, A. Bangura, J. Singleton, J. C. Palmstrom, L. Winter, R. McDonald, S. Jang, P. Ai, Y. Lin, S. Ciocys, J. Gobbo, Y. Werman, P. M. Oppeneer, E. Altman, A. Lanzara, and J. G. Analytis, Evidence for a delocalization quantum phase transition without sym-metry breaking in CeCoIn 5, Science 375 , 76 (2022). [35] A. Koitzsch, I. Opahle, S. Elgazzar, S. V. Borisenko, J. Geck, V. B. Zabolotnyy, D. Inosov, H. Shiozawa, M. Richter, M. Knupfer, J. Fink, B. B¨ uchner, E. D. Bauer, J. L. Sarrao, and R. Follath, Electronic struc-ture of CeCoIn 5 from angle-resolved photoemission spec-troscopy , Phys. Rev. B 79 , 075104 (2009). [36] P. Bonderson, M. Cheng, K. Patel, and E. Plamadeala, 
+
+Topological Enrichment of Luttinger’s Theorem , arXiv e-prints , arXiv:1601.07902 (2016), arXiv:1601.07902 [cond-mat.str-el]. [37] D. V. Else, R. Thorngren, and T. Senthil, Non-Fermi Liquids as Ersatz Fermi Liquids: General Constraints on Compressible Metals , Physical Review X 11 , 021005 (2021), arXiv:2007.07896 [cond-mat.str-el]. [38] M. Cheng and N. Seiberg, Lieb-Schultz-Mattis, Luttinger, and ’t Hooft - anomaly matching in lattice systems , Sci-Post Physics 15 , 051 (2023), arXiv:2211.12543 [cond-mat.str-el]. [39] M. Oshikawa, Topological approach to Luttinger’s theo-rem and the Fermi surface of a Kondo lattice , Phys. Rev. Lett. 84 , 3370 (2000). [40] E. A. Ghioldi, M. G. Gonzalez, S.-S. Zhang, Y. Kamiya, L. O. Manuel, A. E. Trumper, and C. D. Batista, Dy-namical structure factor of the triangular antiferromag-net: Schwinger boson theory beyond mean field , Phys. Rev. B 98 , 184403 (2018). [41] E. A. Ghioldi, S.-S. Zhang, Y. Kamiya, L. O. Manuel, A. E. Trumper, and C. D. Batista, Evidence of two-spinon bound states in the magnetic spectrum of Ba 3CoSb 2O9, Phys. Rev. B 106 , 064418 (2022). [42] B. Lake, D. A. Tennant, C. D. Frost, and S. E. Nagler, 
+
+Quantum criticality and universal scaling of a quantum antiferromagnet , Nature materials 4, 329 (2005). [43] A. Banerjee, J. Yan, J. Knolle, C. A. Bridges, M. B. Stone, M. D. Lumsden, D. G. Mandrus, D. A. Tennant, R. Moessner, and S. E. Nagler, Neutron scattering in the proximate quantum spin liquid α-RuCl 3, Science 356 ,1055 (2017). [44] A. Scheie, E. Ghioldi, J. Xing, J. Paddison, N. Sherman, M. Dupont, L. Sanjeewa, S. Lee, A. Woods, D. Aber-nathy, et al. , Proximate spin liquid and fractionaliza-tion in the triangular antiferromagnet KYbSe 2, Nature Physics 20 , 74 (2024). [45] Y. Sidis, S. Pailhes, B. Keimer, P. Bourges, C. Ulrich, and L. Regnault, Magnetic resonant excitations in High-Tc superconductors , physica status solidi (b) 241 , 1204 (2004). [46] M. D. Lumsden and A. D. Christianson, Magnetism in Fe-based superconductors , Journal of Physics: Condensed Matter 22 , 203203 (2010). [47] M. Fujita, H. Hiraka, M. Matsuda, M. Matsuura, J. M. Tranquada, S. Wakimoto, G. Xu, and K. Yamada, 
+
+Progress in neutron scattering studies of spin excitations in high-T c cuprates , Journal of the Physical Society of Japan 81 , 011007 (2011). [48] J. M. Tranquada, G. Xu, and I. A. Zaliznyak, Super-conductivity, antiferromagnetism, and neutron scatter-ing , Journal of magnetism and magnetic materials 350 ,148 (2014). [49] P. Dai, Antiferromagnetic order and spin dynamics in iron-based superconductors , Reviews of Modern Physics 
+
+87 , 855 (2015). [50] O. Stockert and F. Steglich, Spin resonances in heavy-fermion superconductors , Physica C: Superconductivity and its Applications 615 , 1354375 (2023). [51] C. Stock, C. Broholm, Y. Zhao, F. Demmel, H. Kang, K. Rule, and C. Petrovic, Magnetic field splitting of the spin resonance in CeCoIn 5, Phys. Rev. Lett. 109 , 167207 (2012). [52] S. Raymond, K. Kaneko, A. Hiess, P. Steffens, and G. Lapertot, Evidence for Three Fluctuation Channels in the Spin Resonanc of the Unconventional Superconductor CeCoIn 5, Phys. Rev. Lett. 109 , 237210 (2012). [53] S. Raymond and G. Lapertot, Ising incommensurate spin 10 
+
+resonance of CeCoIn 5: A dynamical precursor of the Q phase , Phys. Rev. Lett. 115 , 037001 (2015). [54] Y. Song, J. Van Dyke, I. Lum, B. White, S. Jang, D. Yazici, L. Shu, A. Schneidewind, P. ˇCerm´ ak, Y. Qiu, et al. , Robust upward dispersion of the neu-tron spin resonance in the heavy fermion superconduc-tor Ce 1−xYb xCoIn 5, Nature communications 7, 12774 (2016). [55] Y. Song, W. Wang, J. S. Van Dyke, N. Pouse, S. Ran, D. Yazici, A. Schneidewind, P. ˇCerm´ ak, Y. Qiu, M. Maple, et al. , Nature of the spin resonance mode in CeCoIn 5, Communications physics 3, 98 (2020). [56] M. Punk, D. Chowdhury, and S. Sachdev, Topological ex-citations and the dynamic structure factor of spin liquids on the kagome lattice , Nature Physics 10 , 289 (2014). [57] Although the deconfinement associated with the FL ∗
+
+phase exists strictly at zero temperature, we continue to refer to the finite-temperature normal state as FL ∗ for brevity. [58] M. P. Allan, F. Massee, D. Morr, J. Van Dyke, A. W. Rost, A. Mackenzie, C. Petrovic, and J. C. Davis, Imag-ing Cooper pairing of heavy fermions in CeCoIn 5, Nature physics 9, 468 (2013). [59] J. S. Van Dyke, F. Massee, M. P. Allan, J. S. Davis, C. Petrovic, and D. K. Morr, Direct evidence for a mag-netic f-electron–mediated pairing mechanism of heavy-fermion superconductivity in CeCoIn 5, PNAS 111 , 11663 (2014). [60] C. Wang, A. Nahum, M. A. Metlitski, C. Xu, and T. Senthil, Deconfined quantum critical points: sym-metries and dualities , Phys. Rev. X 7, 031051 (2017), arXiv:1703.02426 [cond-mat.str-el]. [61] Z. Zhou, L. Hu, W. Zhu, and Y.-C. He, SO(5) De-confined Phase Transition under the Fuzzy-Sphere Mi-croscope: Approximate Conformal Symmetry, Pseudo-Criticality, and Operator Spectrum , Physical Review X 
+
+14 , 021044 (2024), arXiv:2306.16435 [cond-mat.str-el]. [62] B.-B. Chen, X. Zhang, Y. Wang, K. Sun, and Z. Y. Meng, 
+
+Phases of (2 +1 )D SO(5) Nonlinear Sigma Model with a Topological Term on a Sphere: Multicritical Point and Disorder Phase , Phys. Rev. Lett. 132 , 246503 (2024), arXiv:2307.05307 [cond-mat.str-el]. [63] W.-Y. Liu, D. Poilblanc, S.-S. Gong, W.-Q. Chen, and Z.-C. Gu, Tensor network study of the spin-1/2 square-lattice J1-J 2-J 3 model: Incommensurate spiral order, mixed valence-bond solids, and multicritical points , Phys. Rev. B 109 , 235116 (2024), arXiv:2309.13301 [cond-mat.str-el]. [64] S. M. Chester and N. Su, Bootstrapping Deconfined Quantum Tricriticality , Phys. Rev. Lett. 132 , 111601 (2024), arXiv:2310.08343 [hep-th]. [65] J. Takahashi, H. Shao, B. Zhao, W. Guo, and A. W. Sandvik, SO(5) multicriticality in two-dimensional quan-tum magnets , arXiv e-prints , arXiv:2405.06607 (2024), arXiv:2405.06607 [cond-mat.str-el]. [66] X.-G. Wen, Quantum orders and symmetric spin liq-uids , Phys. Rev. B 65 , 165113 (2002), arXiv:cond-mat/0107071 [cond-mat.str-el]. [67] H. Shackleton, A. Thomson, and S. Sachdev, Deconfined criticality and a gapless Z2 spin liquid in the square-lattice antiferromagnet , Phys. Rev. B 104 , 045110 (2021), arXiv:2104.09537 [cond-mat.str-el]. [68] H. Pandey, M. Christos, P. M. Bonetti, R. Shanker, A. Nikolaenko, S. Sharma, and S. Sachdev, Ther-mal SU(2) lattice gauge theory of the cuprate pseudo-gap: reconciling Fermi arcs and hole pockets , arXiv e-prints , arXiv:2507.05336 (2025), arXiv:2507.05336 [cond-mat.str-el]. [69] I. Eremin, G. Zwicknagl, P. Thalmeier, and P. Fulde, 
+
+Feedback spin resonance in superconducting cecu 2si 2 and cecoin 5, Phys. Rev. Lett 101 , 187001 (2008). [70] V. P. Michal and V. P. Mineev, Field-induced spin-exciton condensation in the dx2−y2 -wave superconductor cecoin 5, Phys. Rev. B 84 , 052508 (2011). [71] G. Yu, Y. Li, E. Motoyama, and M. Greven, A universal relationship between magnetic resonance and supercon-ducting gap in unconventional superconductors , Nature Physics 5, 873 (2009). [72] W. Simeth, Z. Wang, E. Ghioldi, D. M. Fobes, A. Podlesnyak, N. Sung, E. D. Bauer, J. Lass, S. Flury, J. Vonka, et al. , A microscopic Kondo lattice model for the heavy fermion antiferromagnet CeIn 3, Nature Com-munications 14 , 8239 (2023). [73] E. Ghioldi, Z. Wang, L. Chinellato, J.-X. Zhu, Y. No-mura, R. Arita, W. Simeth, M. Janoschek, F. Ronning, and C. Batista, Derivation of low-energy Hamiltonians for heavy-fermion materials , Physical Review B 110 ,195123 (2024). [74] P. M. Bonetti, M. Christos, and S. Sachdev, Quantum os-cillations in the hole-doped cuprates and the confinement of spinons , PNAS 121 , e2418633121 (2024). [75] Y. Fang, G. Grissonnanche, A. Legros, S. Verret, F. Lal-ibert´ e, C. Collignon, A. Ataei, M. Dion, J. Zhou, D. Graf, 
+
+et al. , Fermi surface transformation at the pseudogap critical point of a cuprate superconductor , Nature Physics 
+
+18 , 558 (2022). [76] M. K. Chan, K. A. Schreiber, O. E. Ayala-Valenzuela, E. D. Bauer, A. Shekhter, and N. Harrison, Observation of the yamaji effect in a cuprate superconductor , Nature Physics 21 , 1753 (2025). [77] J.-Y. Zhao, S. Chatterjee, S. Sachdev, and Y.-H. Zhang, 
+
+Yamaji effect in models of underdoped cuprates , arXiv e-prints (2025), arXiv:2510.13943 [cond-mat.str-el]. [78] O. Arnold, J. C. Bilheux, J. M. Borreguero, A. Buts, S. I. Campbell, L. Chapon, M. Doucet, N. Draper, R. Fer-raz Leal, M. A. Gigg, V. E. Lynch, A. Markvardsen, D. J. Mikkelson, R. L. Mikkelson, R. Miller, K. Pal-men, P. Parker, G. Passos, T. G. Perring, P. F. Peterson, S. Ren, M. A. Reuter, A. T. Savici, J. W. Taylor, R. J. Taylor, R. Tolchenov, W. Zhou, and J. Zikovsky, Man-tid—Data analysis and visualization package for neutron scattering and μSR experiments , Nuclear Instruments and Methods in Physics Research Section A: Acceler-ators, Spectrometers, Detectors and Associated Equip-ment 764 , 156 (2014). [79] A. T. Savici, M. A. Gigg, O. Arnold, R. Tolchenov, R. E. Whitfield, S. E. Hahn, W. Zhou, and I. A. Zaliznyak, Ef-ficient data reduction for time-of-flight neutron scattering experiments on single crystals , Applied Crystallography 
+
+55 , 1514 (2022). [80] Shiver, spectroscopy histogram visualizer for event re-duction, https://github.com/neutrons/shiver. [81] P. Park, A. A. Podlesnyak, D. M. Pajerowski, M. B. Stone, C. Stock, and A. D. Christianson, Dataset for “superconductivity and fractionalized magnetic excita-tions in cecoin 5”, https://doi.org/10.14461/oncat. data/TBA .11 
+
+> METHODS Sample preparation
+
+The inelastic neutron scattering (INS) measurements presented in this study were performed on the same co-aligned CeCoIn 5 single crystals previously used by Stock et al. [10]. A total of 5 g of crystals were co-aligned on multiple thin aluminum plates with the ( HHL ) plane horizontal. The quality and alignment of the crystal ar-ray were verified by a sharp, clean nuclear Bragg peak profile; see Fig. S2. 
+
+> Single-crystal inelastic neutron scattering (INS)
+
+INS data were collected using the CNCS time-of-flight spectrometer at the Spallation Neutron Source, Oak Ridge National Laboratory (ORNL). Measurements were performed with a 3He cryostat at temperatures of 0.3, 1.0, 1.6, 2.0, 2.15, 2.5, and 4 K. The primary mea-surements were carried out with an incident energy of 
+
+Ei = 2 .49 meV using the high-flux chopper setting oper-ating at f = 240 Hz. The sample was rotated through an-gular windows ranging from 120 ◦ to 360 ◦ in total width (which depends on the temperature), with a step size of 1 ◦ and a nominal counting time of 4—9 minutes per step (also temperature-dependent). To assess the overall crystal alignment quality, additional measurements were conducted using Ei = 10 meV, which provided nuclear Bragg reflection profiles across a broad region of momen-tum space (Fig. S2). The measurements were conducted under the beam power of 1.7 MW for 0.3 K, 1.5 K and 2 K, and 1.8 MW for 1 K, 2.15 K, 2.5 K and 4 K. Post-processing and visualization of the INS spectra were carried out using the Mantid [78] and Shiver [79, 80] software packages. Background subtraction was per-formed using data measured at the same temperature in momentum regions free of magnetic signal, as detailed in Supplementary Note I and Fig. S3. The datasets were symmetrized using the crystallographic symmetry operations of CeCoIn 5 to enhance statistical quality. No artifacts are introduced by this treatment; see Supple-mentary Fig. S4 for a comparison before and after sym-metrization. The integration widths used for the mo-mentum directions perpendicular to the plotted slices are summarized in Table S1. 
+
+> Parameters of Model Hamiltonian
+
+In the minimal model Hamiltonian, Eq. (3), we adopt the tight-binding parameters for the conduction electrons from Ref. [14], which provide a good fit to quasiparticle interference experiments. Retaining hopping processes up to the third nearest neighbors, the parameters are 
+
+t1 ≃ − 50 .0 meV, t2 ≃ − 13 .34 meV, and t3 ≃ 16 .7 meV. The Heisenberg interaction JH is primarily fixed by the upper energy scale of the DSSF observed in the INS spectrum, which is approximately 2 meV. Within our theoretical framework, this scale corresponds to twice the maximum spinon excitation energy, which in a mean-field description is approximately 1 .36 JH . This yields an estimate of JH ≃ 0.733 meV. The Kondo interaction JK is constrained by the re-quirement of a superconducting ground state as well as by the energy of the spin-resonance mode. Based on the detailed calculations presented below, we find that an op-timal value of JK is approximately 60 meV. We note that this magnitude of JK is comparable to the underlying tight-binding energy scales of the conduction electrons, a condition that is essential for the condensation of the chargon field and the emergence of superconductivity. 
+
+> Dynamic spin structure factor
+
+The DSSF contains contributions from both the spin dipole moments of the conduction electrons and the local moments of the f electrons. The spectral weight associ-ated with the f electrons is concentrated at energies of order twice the spinon excitation scale, which lies within the energy window relevant to INS measurements. By contrast, the contribution from conduction electrons is distributed over the much larger kinetic energy scale of the conduction band, yielding a spectral weight that is approximately 1% of that from the f electrons for the model parameters considered here. Consequently, within the energy range of interest, the INS spectra are domi-nated by the f -moment contribution, and we neglect the conduction-electron contribution in the analysis. Our analysis begins with a mean-field calculation that self-consistently determines the chargon field Bj and the link fields Ujj ′ . The interaction between spinons and con-duction electrons is mediated by quantum fluctuations of the chargon field, described by its propagator D(q, Ω). The dynamic spin structure factor is computed using the ladder diagram shown in Fig. 4b. To simplify the calculation, we neglect the explicit momentum and frequency dependence of D(q, Ω) and re-place it by an effective, averaged propagator obtained by integrating over the Brillouin zone and over a frequency window comparable to the spinon excitation scale, 
+
+Deff =
+
+Z dq
+
+(2 π)2
+
+Z Λ
+
+> −Λ
+
+dΩ2π D(q, Ω) = α
+
+4 JK , (7) where Λ ≃ 2meV. This procedure yields α ≃ 0.58 at 
+
+T = 0 .13 K. The validity of this approximation is sup-ported by Fig. 4d, which shows that D(q, Ω) exhibits only modest variation (approximately 10%) over the mo-mentum and frequency range pertinent to the magnetic excitations. 12 
+
+> DATA AVAILABILITY
+
+The neutron scattering data presented in this manuscript are publicly available at [81] 
+
+> CODE AVAILABILITY
+
+Custom codes used in this article are available from the corresponding authors upon request. 
+
+> ACKNOWLEDGMENTS
+
+We thank Filip Ronning for helpful discussions. This work was supported by the U.S. Department of Energy, Office of Science, Basic Energy Sciences, Materials Sci-ences and Engineering Division. This research used re-sources at the Spallation Neutron Source, a DOE Office of Science User Facility operated by the Oak Ridge National Laboratory. The beam time was allocated to CNCS on proposal number IPTS-32607.1 and IPTS-35088.1. S.S. and P.M.B. were supported by NSF Grant DMR-2245246 and by the Simons Collaboration on Ultra-Quantum Matter which is a grant from the Simons Foundation (651440, S. S.). The Flatiron Institute is a division of the Simons Foundation. P.M.B. acknowledges support by the German National Academy of Sciences Leopold-ina through Grant No. LPDS 2023-06 and the Gordon and Betty Moore Foundation’s EPiQS Initiative Grant GBMF8683. Part of this work was carried out at the Brookhaven National Laboratory which is operated for the U.S. Department of Energy by Brookhaven Science Associates (DE-AcO2-98CH10886). 
+
+> AUTHOR CONTRIBUTIONS
+
+P.P., S.S., C.D.B., and A.D.C. conceived the project. C.P. grew the single crystals. C.S. prepared the co-aligned sample array for neutron scattering. P.P., A.A.P., D.M.P., M.B.S., and A.D.C. conducted the neutron scat-tering measurements. P.P. analyzed the neutron scatter-ing data. S.-S.Z., P.M.B., S.S., and C.D.B. conceived and performed the theoretical analysis. P.P., S.-S.Z., C.D.B., and A.D.C. wrote the paper with contributions from all authors. 
+
+> COMPETING INTERESTS
+
+The authors declare no competing interests.

@@ -1,0 +1,557 @@
+Title: Proximate quantum spin liquids and Majorana continua in magnetically ordered Kitaev magnets
+
+URL Source: https://arxiv.org/pdf/2604.03099v2
+
+Published Time: Tue, 07 Apr 2026 01:53:00 GMT
+
+Number of Pages: 12
+
+Markdown Content:
+# Proximate quantum spin liquids and Majorana continua in magnetically ordered Kitaev magnets 
+
+Peng Rao, 1 Roderich Moessner, 2 and Johannes Knolle 1, 3 
+
+> 1
+
+Physics Department, Technical University of Munich, TUM School of Natural Sciences, 85748 Garching, Germany 
+
+> 2
+
+Max Planck Institute for the Physics of Complex Systems, 01187 Dresden, Germany 
+
+> 3
+
+Munich Center for Quantum Science and Technology (MCQST), Schellingstr. 4, 80799 M¨ unchen, Germany 
+
+(Dated: April 7, 2026) We study the spin excitation spectra in magnetically ordered phases proximate to the Kitaev quantum spin liquid (KQSL). Although the low-energy universal features should be governed by the magnetic orders, the 
+
+non-universal high-energy features of the KQSL and adjacent phases can be remarkably similar. Therefore, we study the extended Kitaev model within a Stoner-like theory using Majorana partons, and compute the inelastic neutron scattering (INS) intensities in the random phase approximation. First, we benchmark against the antiferromagnetic (AFM) Heisenberg model and recover the AFM order with linear Goldstone modes. We then explore the phase diagram which agrees qualitatively with previous numerical results. In particular, the Majorana parton theory accurately captures Order-by-Disorder e ff ects in the Kitaev-Heisenberg limit. We also find large INS intensities near the associated high-symmetry Brillouin zone (BZ) points of the magnetic orders. At intermediate and high energies, broad multi-spinon continua emerge across the BZ, providing a distinct mechanism for magnon decay and spectral broadening beyond the conventional multi-magnon decay scenario. Finally, we study the model Hamiltonian of candidate Kitaev material α-RuCl 3. The zigzag ground state agrees qualitatively with experiments, its stability under external magnetic field also exhibits strong anisotropy in the field directions, and broad scattering continua are recovered similar to those observed experimentally. 
+
+I. INTRODUCTION 
+
+Symmetry and conservation laws are ubiquitous and pow-erful tools to determine the universal long-wavelength prop-erties of a physical system. On the one hand, the low-energy universal excitations, e.g. Goldstone modes [1], carry distinct signatures of a given symetry broken phase, and can be ex-perimentally measured by dynamical probes such as inelastic neutron scattering (INS). On the other hand, these probes can also assess intermediate and high energies, where the features are non-universal and determined by microscopic correlations of the system. As a result, in systems with multiple compet-ing phases the high energy responses are expected to be sim-ilar across the transition points. This is particularly useful in the experimental search for new and exotic quantum states of matter, where one must determine the proximity of a given phase to the target one. One prominent example of such exotic phases are quan-tum spin liquids (QSL), exotic phases of quantum mag-nets in which conventional magnetic order is destroyed by quantum fluctuations leading to long-range entangled ground states [2, 3]. QSL appear in phase diagrams proximate to var-ious magnetically ordered phases, i.e. a prominent example the two-dimensional antiferromagnetic phase in the context of high-temperature superconductivity [4, 5]. The QSL hosts fractionalized spin excitations as ‘partons’ mapped from spin operators interacting via gauge fields [6]. Thus a given QSL phase corresponds to a ‘deconfined’ phase of partons, whereas in the magnetically ordered phases, single partons are ‘con-fined’ and cannot be observed as quasiparticles. However, proximate to the QSL phase the confinement length is ex-pected to be long, and partons can still be used to describe higher energy processes as virtual particles. For example, Ho, Muthukumar, Ogata and Anderson in Ref. 7 used partons to study the broad high-energy spectral of spin excitations in the antiferromagnetic phase of undoped cuprates, based on the ’proximate QSL’ idea. However, in a strongly correlated mag-net, there is no general framework to determine which type of partons to use. The choice depends on the type of QSL and needs to be adapted case by case. However, there is a class of models where the choice of the parton representation is natural, namely for the soluble Kitaev model which hosts neutral Majorana excitations and 
+
+Z2 gauge fields [8], which persist as excitations beyond the soluble point [9]. The extended Kitaev models contain addi-tional spin interactions and are relevant to spin-orbit coupled Mott insulators that are argued to realize a Kitaev quantum spin liquid (KQSL) [10], the most prominent of which being 
+
+α-RuCl 3 [11]. Although these materials have magnetic order at low temperatures, they have been argued to be ’proximate’ to the KQSL which can be induced by small perturbations to the Hamiltonian [12–14]. For example, in α-RuCl 3 the low-temperature zigzag phase is destroyed by an in-plane external magnetic field around 7 −12 T at which a KQSL is argued to be realized, before the system becomes a trivially polarized para-magnet. However, despite much research activity, whether the intermediate field phase is a KQSL is not resolved; for reviews see Refs. [15–20]. The magnetically ordered ‘proximate KQSL’ phase of α-RuCl 3 also exhibits unusual behaviors. At zero magnetic field, inelastic neutron scattering (INS) experiments found sharp magnon modes coexisting with a large overdamped contin-uum [13, 14, 22], also confirmed by DMRG simulations [23]. Theoretically, such a continuum can be attributed to the strong frustration of anisotropic spin interactions, which leads to magnon non-conserving decay processes in spin wave theory (SWT) [23, 24]. An important question is which other frame-work beyond the SWT scenario could explain magnon damp-ing and decay? In itinerant magnets magnons can be broad-ened by decaying into particle-hole excitations of fermionic 
+
+> arXiv:2604.03099v2 [cond-mat.str-el] 6 Apr 2026
+
+2    
+
+> FIG. 1. Phase diagram and INS intensities of the proximate KQSL in the KJ Γ-model. a (upper panel) near the FM KQSL phase; b(lower panel) near the AFM KQSL phase. The phase diagrams are adapted schematically from Ref. [21]. The momentum path convention is shown in Fig. 2. The INS intensity is plotted in logarithmic scale introduced in Sec. IV B.
+
+excitations and it is unclear whether a similar scenario can apply in the presence of emergent fermionic spinon excita-tions. Here, drawing on the foregoing considerations, we elab-orate such an alternative scenario in detail: we establish that magnons can be overdamped by the presence of multi-spinon continua of a proximate QSL. It allows us to provide an ex-planation for the high-energy INS features of a Kitaev magnet by its proximity to the KQSL phase. Concretely, we study the proximate ordered phases of generic Kitaev magnets in the Majorana representation at zero temperature. In a previous work [25], we employed Majo-rana mean field theory (MFT) and the random phase approxi-maion (RPA) to compute the INS intensity of the K J Γ-model within the KQSL phases, where the MF magnetization m = 0vanishes at zero magnetic field. In the pure Kitaev limit, we did find a remarkable even quantitative agreement between the RPA theory and the exact solution for the dynamical spin sus-ceptibility [26, 27]. Moreover, it was found that non-Kitaev couplings induce sharp paramagnon modes as bound states of partons within the RPA INS intensity. Instabilities towards magnetic orders appear via the condensation of these modes at the corresponding high-symmetry points in the Brillouin zone (BZ). Here, we use the resulting phase diagram as an input and concentrate on the proximate ordered phases solving for non-zero m on the MF level and then performing self-consistent RPA for the INS intensities. We first benchmark our method for the AFM Heisenberg model, which is far from any QSL regime on the bipartite hon-eycomb lattice. Nevertheless, the Majorana RPA reproduces the standard linear dispersion of the gapless Goldstone mode at low energies, with a renormalized spin wave velocity com-pared to SWT. We then explore the ordered phases of the K J Γ-model, where the Majorana MF gives good qualitative agree-ment with numerical studies on the nature of the phases and the magnetization directions. In the INS intensity, the low-energy magnon modes are located near the high-symmetry BZ points of the corresponding order; they are generally sharp and gapped away from the phase boundary with KQSL. We fo-cus on the Kitaev-Heisenberg limit, where Order-by-Disorder (ObD) e ff ects are prominent [21, 28–31]. In ObD the classical ground state manifold in linear SWT (LSWT) has a larger ac-cidental degeneracy unrelated to symmetry, resulting in gap-less pseudo-Goldstone (pG) modes [32–36]. This acciden-tal degeneracy is normally removed by magnon interactions which also gap out the pG modes. Now within our parton-based theory we find that in the Kitaev-Heisenberg model the Majorana theory has better agreement with the numerics on the ground state and the spin gap, which di ff er drastically from the LSWT results [21, 28, 29, 34]. We attribute the agreement to the fact that Majorana MF does not directly exapnd around the classical spin Ansatz and captures part of the quantum fluctuations. Finally, we study the K J ΓΓ ′ J3-model, which is argued to describe the Kitaev candidate material α-RuCl 3 [37], under external magnetic fields. We emphasize that in our results, both the sharp modes and the continua are generated self-consistently using a single, general framework without addi-tional ad hoc approximations. We argue that our results are in qualitative agreement with recent experiments [22].  
+
+> II. RESULTS
+
+Throughout we consider the K J Γ-model: 
+
+HK J Γ = K
+
+X 
+
+> i,j∈α
+
+S α 
+
+> i
+
+S α 
+
+> j
+
++ J
+
+X
+
+> N.N.
+
+Si.S j + Γ 
+
+X 
+
+> i,j∈αα,β,γ
+
+S β 
+
+> i
+
+S γ 
+
+> j
+
+, (1) with the Kitaev coupling K, the nearest neighbour (N.N.) Heisenberg coupling J, and an o ff -diagonal symmetric cou-pling Γ. The honeycomb lattice conventions and BZ details used in the following are given in Fig. 2.  
+
+> A. Phase Diagram
+
+As established in Ref. [25], within a parton-based RPA the-ory within the KQSL phase, the latter becomes unstable when 3       
+
+> FIG. 2. Lattice and Brillouin zone (BZ) conventions . The unit cells are shown in black dashed lines with: atwo sublattices (KQSL, FM, AFM); bfour sublattices (zigzag, stripy); csix sublattices (120 ◦). The first and second BZs of the honeycomb lattice are shown in gray and black solid lines respectively. The BZs of the four- and six-sublattice unit cells are shown in grey dashed lines.
+
+the sharp magnon modes condense. Here, we decouple the spin interactions written in the parton basis self-consistently allowing for finite magnetic order. The magnetic orders are shown schematically in Fig. 1, and are discussed in detail in subsequent sections. We briefly note some general fea-tures: Majorana MFT gives qualitatively the same magnetic orders as previoulsy found with classical solutions, exact di-agonalization and DMRG [21, 38] albeit with quantitative dif-ferences expected for any MFT. The resulting INS intensities also show distinctive features within the ordered phases. Near the transition points, the magnon modes at the corresponding high-symmetry momenta points are gapped and more broad-ened compared to the KQSL phase. However as the non-Kitaev couplings further increase, the magnon modes become sharper. In the following, we discuss di ff erent limiting cases and points of the rich phase diagram.  
+
+> B. The Kitaev-Heisenberg model and Order by Disorder
+
+Let us discuss the results in di ff erent parameter regimes in greater detail. We start from the Kitaev-Heisenberg model, i.e. setting Γ = 0 in Eq. (1). Ref. [25] considered the pure Kitaev limit using the present approach. Rather surprisingly it was found that the RPA spin susceptibility agreed quanti-tatively with the exact solution [26]. Remarkably, we show in the following that also in the opposite ‘limit’ of a pure un-frustrated AFM Heisenberg model, the parton RPA method captures qualitatively the low-energy properties of the ordered system. In particular, we find that the MF magnetic moment direc-tions have full rotational symmetry and the magnon modes are gapless as a result of spontaneous symmetry breaking; see Fig. 3 a-b. In Fig. 3 a, the Goldstone mode has linear dis-persion around the K1-point in the second BZ, correspond-ing to AFM order. As seen from Fig. 3 b, the mode termi-nates at the two-Majorana continuum boundary at higher fre-quency, while another magnon branch tends to the Γ-point with vanishing intensity. We also extract the spin wave ve-locity u ≈ 1.15 Ja from Fig. 3 a. This is close to the LSWT result u = (3 √2/4) Ja ≈ 1.06 Ja , which is derived in Supple-mentary Note I. At high frequencies, the magnon modes are broadened by decaying into the Majorana continua contrary to LSWT. However, we note that the Majorana MF works less well for the FM Heisenberg model. We present and discuss the results in Supplementary Note II. We now study the response as a function of the anisotropic parameter K, keeping J > 0 fixed. The parameters and the INS intensities are shown in Fig. 3 c-d. In both cases con-sidered, the system has AFM order. As K becomes non-zero the magnon modes acquire a gap ∆ ∼ K, and the magnetic moments m are along one of the cubic axes x, y or z. The con-clusion is true for all phases of the Kitaev-Heisenberg model; we fix m ∥ (001). Let us compare our results with the standard SWT. This is particularly interesting as the Kitaev-Heisenberg model belongs to a class of spin models where ObD e ff ects are present. It means that even though the Kitaev interac-tions break spin rotational symmetry, the classical ground state still has the full rotational symmetry of the Heisenberg model which is accidental. The ObD fluctuation corrections using non-linear SWT (NLSWT) select the magnetic moment direction along the cubic axes as in our approach [28, 29]. In-terestingly, the correct magnetic order is in our parton theory already determined on the bare MF level, contrary to SWT where magnon interactions need to be considered. This is be-cause the accidental degeneracy is an artifact of the classical spin Ansatz, which the Majorana fermion representation does not use. This di ff erence will become more prominent when we discuss the e ff ect of Γ coupling in Sec. II C, where the classical ground state can be a bad approximation in certain parameter regimes. ObD e ff ects are also visible in the excitation spectra where accidental soft modes from the spurious symmetry enhance-ment are lifted by quantum fluctuations [32–36]. From the excitations spectra we we also extract the magnon gap ∆ for the parameters shown in Fig. 3, and compare the results with those obtained by ObD SWT fpr S = 1/2 [34]: 
+
+K = −0.5J, ∆ = 0.2J (MF) , ∆ = 0.31 J (ObD); 
+
+K = 2J, ∆ = 1.27 J (MF) , ∆ = 1.17 J (ObD) . (2) The good agreement suggests that the quantum fluctuations are already incorporated on the Majorana MF level. In Sup-plementary Note II, we also find ∆ for J < 0 and non-zero 
+
+K. There we find that the Majorana MF gives much larger 
+
+∆ than ObD and numerical DMRG results [38]. This can be attributed to the fact that the FM order is close to being ‘clas-sical’: quantum fluctuations and the associated ObD-induced gap are small and overestimated in the parton treatment. 4                           
+
+> FIG. 3. INS intensities for the Kitaev-Heisenberg model inside the AFM phase at J>0.The intensities are shown in logarithmic scale introduced in Sec. IV B which makes the magnon mode more visible. In a,c-dthe o ff -set value c=1 introduced below Eq. (15). In
+> bwe set c=10 −4to highlight the low-intensity features, compared to awhich focuses on the sharp gapless Goldstone mode. The ap-parent anisotropy of the Goldstone mode spin velocity in a-bis due to that the momentum path lengths M1→K1,K1→K′are scaled di ff erently.
+
+Similarly, Majorana MFT automatically gives the fluctua-tion reduction of the magnetic moment from its nominal value 1/2. At K = 0, the MF moment |m| ≈ 0.4, a reduction by ap-proximately 20%. In comparison, linear SWT gives a larger reduction ∆m ≈ 0.24; see Supplementary Note I. This indi-cates that fluctuations are weaker in the Majorana basis. We note in passing that this value is the same for both J ≷ 0, since they di ff er by a gauge transformation in the Majorana basis. For J < 0, this disagrees with the maximally polarized real ground state which is also the classical ground state. For 
+
+J > 0 both the magnetic moment and the INS peak intensity decrease with increasing K, signifying greater frustration. We also investigate the stripy phase at K < 0, J = 0.11 |K|
+
+which is shown to be a ‘field-induced KQSL’ [25], i.e. the condensed magnon modes at M-, M1-points at zero field are lifted at intermediate magnetic field values, stabilizing the KQSL. In Fig. 4, it is shown that the INS intensities in the stripy phase are broad and remain qualitatively the same as the magnetic field is switched on. This signifies that the finite field transition can be first-order, which is expected since the system symmetry is broken explicitly by the magnetic field. In Ref. [25] the critical J values at which the magnon modes condense within the KQSL phase are reported. Here we fo-cus on the transition points for FM K: Jcr ≈ − 0.12 |K| and 
+
+Jcr ≈ 0.1|K|, which separates the KQSL phase from the fer-romagnetic and stripy phases respectively. We plot the corre-sponding INS intensities in the ordered phases in Fig. 5 Some-what counter-intuitively, near the transition points the magnon modes are sharper in the KQSL phase than in the magneti-cally ordered phases. As is seen in Fig. 5, after the on-set of magnetic order the magnons are immediately pushed up into the continuum and become broadened. However, the sudden change is partly a numerical artefact, i.e. the MF solution of the ordered phases does not converge near the critical point.                      
+
+> FIG. 4. INS intensity for K<0and J=−0.11 |K|at external magnetic field. a B=0 and bB=0.157 |K|,B∥(111). It was shown in Ref. [25] that for the field value at bthe KQSL is stabilized.
+
+As a result, when the solution has converged at increased |J|,there is a first-order like jump to a sizable m.  
+
+> C. The K J Γ-model
+
+Next, we consider the e ff ect of Γ > 0. Generally, the di-rection of MF magnetic moments m are in good agreement with numerical studies for su ffi ciently large Γ. In phase 4 in Fig. 1b, the MF AFM m lies along the (111)-surface which agrees with the classical solution [21]. Phase 3 has the zigzag moments slightly canted away from the cubic axes, the two inequivalent moments di ff ering by one of the mirror reflec-tions σ. The 120 ◦ order for set 6 has three pairs of AFM mo-ments on adjacent sublattices, di ff ering by C6 rotations. Here however, each pair of AFM moments lies close to one of the 
+
+x, y, z-axes instead of inside the (111)-plane predicted by the classical solution. Increasing Γ tilts these moments in-plane perpendicular to the bonds. The discrepancy is possibly due to the proximity to the zigzag phases. Significantly, we find that for small Γ the Majorana MF or-der is not close to the classical ground state. We argue that this should also be the case for the real ground state. Consider for example adding an infinitesimal Γ > 0 coupling inside the FM phase. The classical spin directions are inside the (111)-plane and degenerate [21]. However, this is clearly not the correct ground state, given the magnetic moment at Γ = 0 lies along one of the cubic axes [28], and cannot change discontinuously upon infinitesimal Γ. The Majorana MF gives much more physical results in comparison: here as Γ increases, the mag-netic moments are tilted progressively in-plane towards the (11¯ 2)-axis, until the system transitions into the zigzag phase. Similarly, classical spins align along the (111)-direction for infinitesimal Γ > 0 inside the AFM phase. The Majorana MF shows that within the AFM phase a small Γ > 0 merely tilts the magnetic moment towards the (111)-axis, before a first order transition occurs at intermediate Γ (around 0 .07 K for 
+
+J = 0.2K) above which m ∥ (111). Therefore, here the Majo-rana MFT can be more convenient, as it captures that the real ground state is far from the classical one. As for the INS intensities, the Γ term generally tends to broaden the magnon mode. As seen from Fig. 1 b, finite 
+
+Γ broadens the two-Majorana continuum to lower energies which covers the AFM mode at K1. Within Majorana MF, this is because the Γ interaction increases b-Majorana level re-5                  
+
+> FIG. 5. INS intensity near the transition points for the Kitaev-Heisenberg model with FM K.Due to proximity to the critical Jcr , both phases admit MF solutions. ain the stripy phase and bthe QSL phase at J=0.103 |K|.cin the FM phase and dthe QSL phase at J=−0.127 |K|.The KQSL phase intensity is normalized to be the same as that in the corresponding ordered phase.
+
+pulsions in the MF spectrum, which generates the broadening eff ect in the two-Majorana continuum. A similar broadening is observed using NLSWT and DMRG [23], where frustration induced by the anisotropic Γ term results in non-conservation of magnon numbers, which gives rise to a broad multi-magnon continuum and magnon decay. There of course, the low en-ergy magnon modes are always sharp. In the presence of a spinon continuum magnon modes can be overdamped over the whole frequency range because there are no kinematic con-straints directly linking the single magnon and multi-spinon excitations.  
+
+> D. Kitaev candidate materials
+
+We also investigate the ‘proximate spin liquid’ which is ar-gued to be realized in the Kitaev candidate material α-RuCl 3.It is commonly believed that α-RuCl 3 is described by the 
+
+K J ΓΓ ′ J3-model [37]: 
+
+H = HK J Γ + Γ ′ X 
+
+> i,j∈αβ,α
+
+hS α 
+
+> i
+
+S β 
+
+> j
+
++ S β 
+
+> i
+
+S α
+
+> j
+
+i + J3
+
+X
+
+> 3rd N.N.
+
+Si.S j. (3) Here J3 is the third N.N. Heisenberg coupling shown in Fig. 6 a. For microscopic parameters we use the set from Ref. [37] (in units of meV): 
+
+K = −7.567 , J = −4.75 , Γ = 4.276 , Γ′ = 2.362 , J3 = 3.4.
+
+(4) Without magnetic field, the MF ground state has zigzag or-der where m lies within the ac -plane but is tilted away from the honeycomb plane by angle α, agreeing with experiments; see Fig. 6 b. For the parameter set (4) , α ≈ 44 .7◦ compared with the experimental value 32 ◦-35 ◦ [37]. The INS intensity is shown in Fig. 6 c. There is a relatively broad peak near the M
+
+point of the zigzag order, and a large continuum response near 
+
+Γ. The overall shape of the response is in agreement with the INS data [13] and the broad continua stem from two-partcile Majorana excitations. We also consider the e ff ect of an external magnetic field along the a, b, c-axes. We use a simple isotropic g-factor 
+
+g = 2. In Fig. 6(d)-(f), we plot the INS intensities just be-low the critical field values for the KQSL MF solution. In particular under B ∥ (¯ 110), the moment m is strongly canted towards (¯ 110) under modest field values. The large anisotropy in critical field values Bcr ≈ 86 T along the c-axis and around 2 T along in-plane a-and b-axes, agrees qualitatively with ex-periments ( |Bcr | ≈ 8 T in plane and 70 T out-of-plane [18]). A more quantitative determination of Bcr to compare with experiments however, would require the precise form of the anisotropic g-tensor of the material and correction to the mean field values from fluctuations.  
+
+> III. DISCUSSION
+
+In this work, we employed a self-consistent Majorana MFT and RPA theory to study the magnetization and INS intensity in the magnetically ordered phases of the K J Γ-model on the honeycomb lattice. Motivated by the concept of the ’prox-imate QSL’ in α−RuCl 3 our approach not only captures the low energy magnon like excitations but also the higher en-ergy fractionalized excitations of a nearby QSL phase, which can overdamp magnon modes. We find overall good qualita-tive agreement between the phases obtained by our MF the-ory and other numerical methods. Remarkably, at Γ = 0 and 
+
+K , 0 we find that Majorana MFT automatically gives the correct ground state spin configurations and a finite spin gap, which normally requires ObD fluctuation corrections beyond linear SWT. We also confirmed that in the AFM Heisenberg limit, the spin isotropy and the linear Goldstone modes are reproduced correctly within our approach with quantitative agreement of the spin wave velocity. For the K J Γ-model, we found gapped magnon modes at low energy in the ordered phase with minima near the corresponding high-symmetry points of the BZ. The magnons are generally broadened near the phase boundary with the KQSL and only become sharp upon increased Heisenberg coupling. The Γ coupling how-ever, tends to extend the Majorana continuum to lower energy, thus broadening the magnon modes as a result. In the NL-SWT formalism, Γ has a similar e ff ect on the single-magnon branch by increasing frustration and inducing magnon non-conserving processes. This facilitates magnon decay into multi-magnon continuum and the single-magnon modes can become broadened at higher energies. In terms of Majorana fermions, the broadening is due to magnons decaying into the multi-Majorana continuum. One crucial di ff erence between the two methods is that the lowest energy magnon modes 6                     
+
+> FIG. 6. The KJ ΓΓ ′J3-model. a The third N.N. x,y,z-bonds in dashed lines. bMagnetic moments of the zigzag order lying in the ac -plane with tilt angle α.cINS intensity at zero field. d-fINS intensities for field directions along a-, b-, c-axes. The discontinuity near Γis due to that the INS intensity (15) does not tend to a constant limit at k→0.
+
+are always sharp in NLSW due to kinematic constraints on magnon decay. However, in the Majorana RPA the magnon modes can be broad throughout the BZ because the kinemat-ics of the continuum which damps them is not linked to the magnon dispersion itself. In this context, we add a word of caution. While the parton RPA method captures part of the gauge field fluctuations of the QSL it does not correctly describes the confinement of the two Majorana sector. This is neither a problem at low ener-gies, where the RPA recovers the collective magnon modes as Majorana bound states, nor at high energies, where the short time dynamics is una ff ected by coonfinement. However, the bottom of the two-Majorana continuum is expected to be al-tered and form confinement-induced sharp modes similar to the established Ising chain materials [39]. Extending the the-ory to capture this crossover regime is a formidable challenge for future research. We also investigated the K J ΓΓ ′ J3-model which is argued to describe the Kitaev candidate material α-RuCl 3. The spin coupling parameters proposed in Ref. [37] gives a MF zigzag phase that lies in the plane of the a-, c-axes with m tilted from the a-axis by α ≈ 44 .7◦. This agrees qualitatively with the ex-perimental value of 32 ◦ −35 ◦. We also reproduce qualitatively the large anisotropy in the stability of the proximate QSL with respect to external field directions. The INS intensities are concentrated near M and Γ in the BZ, but there are no sharp modes, again similar to experimental observations [13, 22]. Overall, our method predicts quantitatively key features of the INS signature, i.e. sharp modes and the broad continua, in frustrated magnetic systems. Compared with other ap-proaches, our framework is general and self-consistent with-out ad hoc approximations and free parameters. Requiring only the spin couplings as input, both the continua and the sharp modes are generated by Majorana fermions, which re-sembles stable and unstable bound stats. The considerable simplicity and generality is a methodological advantage of our approach and will help to interpret both experimental data and numerical results. One possible extension is to consider other types of re-sponses. In this paper and in Ref. [25] we have considered the dynamical response of spin operators related to INS exper-iments, which captures the spin-1 /2 quasiparticle spectrum. The continuum appears indirectly as a result of quasiparti-cle decay. However to directly probe the continuum, other types of dynamical response functions can be more conve-nient. For example, Raman and resonant inelastic X-ray scat-tering (RIXS) experiments measure the dynamical response of two-spin operators and capture the continuum directly [40– 42]. Thus investigating such response functions using the Ma-jorana RPA is an interesting direction for the future. Sim-ilarly, our method can be readily applied to other ordered phases proximate to a QSL phase, for example the undoped cuprates [7], the Kagome lattice QSL [43], phases proximate to the U(1) Dirac QSL on the triangular lattice [44], and the square lattice J1-J2 model which is argued to host a Z2
+
+QSL [45, 46]. Another exciting option is to consider other phases with fractionalized excitations well described by par-ton theories, such as the fractional Quantum Hall e ff ect [47] and the fractional Chern insulators [48]. The simple and intu-itive nature of RPA could potentially provide a better under-standing of these systems and allow for a crisp understanding of experimental observables.   
+
+> IV. METHODS A. Majorana mean field theory
+
+The mapping from spin-1 /2 operators to Majorana fermions [8]: 
+
+S α 
+
+> i
+
+→ ic ibα 
+
+> i
+
+, c2 
+
+> i
+
+= (bα 
+
+> i
+
+)2 = 12 , (5) with the on-site quartic constraint: 
+
+Di = cibxi byi bzi = 14 . (6) 7The Majorana band structure is obtained using Majorana mean field theory (MFT) by decoupling in the following spin-liquid channel: 
+
+ηα = i⟨cic j⟩α, Qβγ α = i⟨bβ 
+
+> i
+
+bγ 
+
+> j
+
+⟩α, mα 
+
+> i
+
+= i⟨cibα 
+
+> i
+
+⟩, (7) where i, j ∈ α are connected by the N.N. α-bond. The quartic constraint (6) can be written equivalently as three quadratic constraints [49]: 
+
+Fα 
+
+> i
+
+= i cibα 
+
+> i
+
++ 12 εαβγ bβ 
+
+> i
+
+bγ
+
+> i
+
+!
+
+. (8) They are enforced on average Pi⟨Fα 
+
+> i
+
+⟩ = 0 by adding the terms 
+
+λα Fα 
+
+> i
+
+to the MF Hamiltonian, where λα are the Lagrange mul-tipliers regarded as additional MF parameters. For the K J ΓΓ ′ J3-model, there appears additional MF pa-rameters for sites i, j connected by third N.N. bonds: 
+
+eηα′ = i⟨cic j⟩α′ , eQββ α′ = i⟨bβ 
+
+> i
+
+bβ 
+
+> j
+
+⟩α′ , (9) where α′ = x, y, z as shown in Fig. 6a. The MF Majorana Hamiltonian in the magnetically ordered phases are obtained by first finding the MF solution in the KQSL regime, then solving for mα 
+
+> i
+
+keeping all other MF pa-rameters fixed. More precisely, within the QSL phase at zero magnetic field, we look for the mα 
+
+> i
+
+= 0 solution with the two-sublattice unit cell, which always exists. The magnetic field induces non-zero m. For field directions B ∥ (111) and B ∥ (¯ 110), the system has six-fold rotation symmetry C 6 and a reflection plane σ across the z-bond respectively. This allows the num-ber of independent MF parameters to be reduced in the same way as described in Ref. [49]. Note that the third N.N. bonds transform in the same way as N.N. bonds under the symmetry operations so the same consideration applies to eηα′ , eQββ α′ .For the magnetically ordered phases , the spontaneous mag-netization is found by solving for mα 
+
+> i
+
+while keeping all other MF parameters fixed. For FM and AFM, the unit cell is unal-tered. For zigzag and stripy phases, we use the four-sublattice unit cell, while for the 120 ◦ the unit cell has six sublattices; see Fig. 2. For all MF simulations, we use the momentum discretiza-tion: 
+
+p = (n1b1 + n2b2)/L, (10) where 0 ≤ ni < L, L = 60 and bi are the corresponding recip-rocal lattice vectors in a given unit cell.  
+
+> B. Spin susceptibility
+
+The spin susceptibility is computed using RPA. First we compute the one-loop susceptibility tensor in the Matsubara formalism at zero temperature T = 0: [χ0(ω, k)] iα, jβ = lim 
+
+> ik 0→ω+iδ
+
+Z
+
+Tτ{S α 
+
+> i
+
+(τ, k)S β 
+
+> j
+
+(0 , −k)} eik 0τdτ, 
+
+(11) where i, j are sublattice indices and S α 
+
+> i
+
+(τ, k) is the Fourier transform of the spin operator at momentum k in the Majo-rana basis (5). The averaging is taken over the non-interacting MF background. δ is a positive infinitesimal in the analyti-cal continuation ik 0 → ω + iδ. Eq. (11) can be computed by diagonalizing the MF Majorana Hamiltonian in momentum space, taking the eigenstates and energy levels as input. This was done in Ref. [25] for the two-sublattice case without mag-netic order. To generalize to larger unit cells, the indices i, j
+
+include more sublattices and the MF Hamiltonian contains a non-zero m. In choosing the unit-cells as shown in Fig. 2, the BZ backfolding due to magnetic order is automatically taken into account. The four-Majorana interactions are given by substituting the mapping (5) into the given spin Hamiltonian, which ac-quires the following form in momentum space: 
+
+V =
+
+X
+
+> p,p′,k
+
+Uiα, jβ(k)ic i(k − p)bα 
+
+> i
+
+(p)ic j(−k − p′)bβ 
+
+> j
+
+(p′). (12) The RPA sums over all one-loop diagrams with the interaction vertex (12). The resulting susceptibility tensor is given by the ‘matrix equation’: 
+
+χ(ω, k) = χ0(ω, k) h1 + ˆU(k)χ0(ω, k)i−1
+
+, (13) where [ ˆ U(k)] iα, jβ = Uiα, jβ(−k) + U jβ, iα(k) is the symmetrized interaction vertex. The spin susceptibility is: 
+
+χαβ (ω, k) =
+
+X 
+
+> i,j
+
+[χαβ (ω, k)] iα, jβe−ik.(ri−r j), (14) where ri − r j are vectors connecting di ff erent sublattices in a single unit cell. For example, for the two-sublattice unit cell: 
+
+rB − rA = −(a1 + a2)/3. Finally, from the spin susceptibility we compute the INS intensity: 
+
+I(ω, k) = δαβ − kαkβ
+
+k2
+
+!
+
+i hχ∗
+
+> βα
+
+(ω, k) − χαβ (ω, k)i , (15) where kα, kβ are three-dimensional momenta in the global laboratory frame. The factor i[χ∗
+
+> βα
+
+(ω, k) − χαβ (ω, k)] repre-sents the dynamical structure factor due to the fluctuation-dissipation theorem. For numerical simulations, we use L =
+
+180 in (10) and ω = nωmax /L, 0 ≤ n < L where ωmax is the upper frequency limit shown in each plot. The broadening 
+
+δ = ωmax /L. The logarithmic scale for INS plots is given by log( c + I/40) with c = 1 unless stated otherwise. 
+
+> DATA AVAILABILITY
+
+The numerical code for computing the Majorana MF spec-trum and the spin susceptibility is available at [50]. 
+
+> ACKNOWLEDGEMENTS
+
+We would like to thank K. Dixit, C. Sarkis, A. Baner-jee, C. Balz, S. Nagler and A. Tennant for a related ex-perimental collaboration. JK acknowledges support from 8the Deutsche Forschungsgemeinschaft (DFG, German Re-search Foundation) under Germany’s Excellence Strategy (EXC–2111–390814868 and ct.qmat EXC-2147-390858490), and DFG Grants No. KN1254 /1-2, KN1254 /2-1 TRR 360 -492547816 and SFB 1143 (project-id 247310070), as well as the Munich Quantum Valley, which is supported by the Bavar-ian state government with funds from the Hightech Agenda Bayern Plus. 
+
+[1] B. I. Halperin and P. C. Hohenberg, Hydrodynamic theory of spin waves, Phys. Rev. 188 , 898 (1969). [2] L. Savary and L. Balents, Quantum spin liquids: a review, Re-ports on Progress in Physics 80 , 016502 (2016), publisher: IOP Publishing. [3] J. Knolle and R. Moessner, A field guide to spin liquids, Annual Review of Condensed Matter Physics 10 , 451 (2019). [4] P. W. Anderson, The resonating valence bond state in La 2CuO 4
+
+and superconductivity, science 235 , 1196 (1987). [5] P. W. Anderson, G. Baskaran, Z. Zou, and T. Hsu, Resonating– valence-bond theory of phase transitions and superconductivity in La 2CuO 4-based compounds, Physical review letters 58 , 2790 (1987). [6] P. A. Lee, N. Nagaosa, and X.-G. Wen, Doping a mott insula-tor: Physics of high-temperature superconductivity, Rev. Mod. Phys. 78 , 17 (2006). [7] C.-M. Ho, V. N. Muthukumar, M. Ogata, and P. W. Anderson, Nature of spin excitations in two-dimensional mott insulators: Undoped cuprates and other materials, Phys. Rev. Lett. 86 , 1626 (2001). [8] A. Kitaev, Anyons in an exactly solved model and beyond, An-nals of Physics 321 , 2 (2006), january Special Issue. [9] J. Knolle, S. Bhattacharjee, and R. Moessner, Dynamics of a quantum spin liquid beyond integrability: The kitaev-heisenberg-γ model in an augmented parton mean-field theory, Physical Review B 97 , 134432 (2018). [10] G. Jackeli and G. Khaliullin, Mott insulators in the strong spin-orbit coupling limit: From heisenberg to a quantum compass and kitaev models, Phys. Rev. Lett. 102 , 017205 (2009). [11] K. Plumb, J. Clancy, L. Sandilands, V. V. Shankar, Y. Hu, K. Burch, H.-Y. Kee, and Y.-J. Kim, α-RuCl 3: A spin-orbit as-sisted mott insulator on a honeycomb lattice, Physical Review B 90 , 041112 (2014). [12] A. Banerjee, C. Bridges, J.-Q. Yan, A. Aczel, L. Li, M. Stone, G. Granroth, M. Lumsden, Y. Yiu, J. Knolle, et al. , Proximate kitaev quantum spin liquid behaviour in a honeycomb magnet, Nature materials 15 , 733 (2016). [13] A. Banerjee, J. Yan, J. Knolle, C. A. Bridges, M. B. Stone, M. D. Lumsden, D. G. Mandrus, D. A. Tennant, R. Moessner, and S. E. Nagler, Neutron scattering in the proximate quantum spin liquid α-RuCl 3, Science 356 , 1055 (2017). [14] A. Banerjee, P. Lampen-Kelley, J. Knolle, C. Balz, A. A. Aczel, B. Winn, Y. Liu, D. Pajerowski, J. Yan, C. A. Bridges, et al. ,Excitations in the field-induced quantum spin liquid state of α-RuCl 3, npj Quantum Materials 3, 8 (2018). [15] M. Hermanns, I. Kimchi, and J. Knolle, Physics of the kitaev model: Fractionalization, dynamic correlations, and material connections, Annual Review of Condensed Matter Physics 9,17 (2018). [16] H. Takagi, T. Takayama, G. Jackeli, G. Khaliullin, and S. E. Nagler, Concept and realization of kitaev quantum spin liquids, Nature Reviews Physics 1, 264 (2019). [17] Y. Motome and J. Nasu, Hunting majorana fermions in kitaev magnets, Journal of the Physical Society of Japan 89 , 012002 (2020). [18] S. Trebst and C. Hickey, Kitaev materials, Physics Reports 950 ,1 (2022). [19] I. Rousochatzakis, N. B. Perkins, Q. Luo, and H.-Y. Kee, Be-yond kitaev physics in strong spin-orbit coupled magnets, Re-ports on Progress in Physics 87 , 026502 (2024). [20] Y. Matsuda, T. Shibauchi, and H.-Y. Kee, Kitaev quantum spin liquids (2025), arXiv:2501.05608 [cond-mat.str-el]. [21] J. G. Rau, E. K.-H. Lee, and H.-Y. Kee, Generic spin model for the honeycomb iridates beyond the kitaev limit, Phys. Rev. Lett. 
+
+112 , 077204 (2014). [22] C. Sarkis, K. Dixit, P. Rao, G. Khundzakishvili, C. Balz, J. Yan, B. Winn, T. Williams, A. Unnikrishnan, R. Moessner, et al. ,Intermediate field spin(on) dynamics in α-RuCl 3, arXiv preprint arXiv:2601.16850 (2026). [23] S. M. Winter, K. Riedl, P. A. Maksimov, A. L. Chernyshev, A. Honecker, and R. Valent´ ı, Breakdown of magnons in a strongly spin-orbital coupled magnet, Nature communications 
+
+8, 1152 (2017). [24] M. E. Zhitomirsky and A. L. Chernyshev, Colloquium: Sponta-neous magnon decays, Rev. Mod. Phys. 85 , 219 (2013). [25] P. Rao, R. Moessner, and J. Knolle, Dynamical response theory of interacting majorana fermions and its application to generic kitaev quantum spin liquids in a field, Phys. Rev. B 112 , 024440 (2025). [26] J. Knolle, D. Kovrizhin, J. Chalker, and R. Moessner, Dynam-ics of a two-dimensional quantum spin liquid: Signatures of emergent majorana fermions and fluxes, Physical Review Let-ters 112 , 207203 (2014). [27] J. Knolle, Dynamics of a Quantum Spin Liquid (Springer, 2016). [28] J. Chaloupka, G. Jackeli, and G. Khaliullin, Kitaev-heisenberg model on a honeycomb lattice: Possible exotic phases in irid-ium oxides A2IrO 3, Phys. Rev. Lett. 105 , 027204 (2010). [29] J. Chaloupka, G. Jackeli, and G. Khaliullin, Zigzag magnetic order in the iridium oxide Na 2IrO 3, Phys. Rev. Lett. 110 ,097204 (2013). [30] E. Sela, H.-C. Jiang, M. H. Gerlach, and S. Trebst, Order-by-disorder and spin-orbital liquids in a distorted heisenberg-kitaev model, Phys. Rev. B 90 , 035113 (2014). [31] G.-W. Chern, Y. Sizyuk, C. Price, and N. B. Perkins, Kitaev-heisenberg model in a magnetic field: Order-by-disorder and commensurate-incommensurate transitions, Phys. Rev. B 95 ,144427 (2017). [32] J. Villain, R. Bidaux, J.-P. Carton, and R. Conte, Order as an eff ect of disorder, http: // dx.doi.org /10.1051 /jphys:0198000410110126300 41 
+
+(1980). [33] E. Shender, Antiferromagnetic garnets with fluctuationally in-teracting sublattice, Sov. Phys. JETP 56 , 178 (1982), [Zh. Eksp. Teor. Fiz. 83 , 326 (1982)]. [34] J. G. Rau, P. A. McClarty, and R. Moessner, Pseudo-goldstone gaps and order-by-quantum disorder in frustrated magnets, Phys. Rev. Lett. 121 , 237201 (2018). [35] S. Khatua, M. J. P. Gingras, and J. G. Rau, Pseudo-goldstone modes and dynamical gap generation from order by thermal 9
+
+disorder, Phys. Rev. Lett. 130 , 266702 (2023). [36] P. Rao and J. Knolle, Order-by-disorder in magnets with frus-trated spin interactions-classical and large-s limits via the spin functional integral, Journal of Physics: Condensed Matter (2025). [37] M. M¨ oller, P. A. Maksimov, S. Jiang, S. R. White, R. Valent´ ı, and A. L. Chernyshev, Rethinking α−RuCl 3: Parameters, mod-els, and phase diagram, Phys. Rev. B 112 , 104403 (2025). [38] M. Gohlke, R. Verresen, R. Moessner, and F. Pollmann, Dy-namics of the kitaev-heisenberg model, Phys. Rev. Lett. 119 ,157203 (2017). [39] S. Rutkevich, On the weak confinement of kinks in the one-dimensional quantum ferromagnet CoNb 2O6, Journal of Statis-tical Mechanics: Theory and Experiment 2010 , P07015 (2010). [40] J. Knolle, G.-W. Chern, D. Kovrizhin, R. Moessner, and N. Perkins, Raman scattering signatures of kitaev spin liquids in a 2 iro 3 iridates with a = na or li, Physical review letters 113 ,187201 (2014). [41] J. Nasu, J. Knolle, D. L. Kovrizhin, Y. Motome, and R. Moess-ner, Fermionic response from fractionalization in an insulating two-dimensional magnet, Nature Physics 12 , 912 (2016). [42] G. B. Hal´ asz, N. B. Perkins, and J. Van Den Brink, Reso-nant inelastic x-ray scattering response of the kitaev honeycomb model, Physical review letters 117 , 127203 (2016). [43] Y. Iqbal, F. Becca, and D. Poilblanc, Projected wave function study of Z2 spin liquids on the kagome lattice for the spin- 12
+
+quantum heisenberg antiferromagnet, Phys. Rev. B 84 , 020407 (2011). [44] J. Willsher and J. Knolle, Dynamics and stability of U(1) spin liquids beyond mean-field theory: Triangular-lattice J1-J2
+
+heisenberg model, arXiv preprint arXiv:2503.13831 (2025). [45] F. Ferrari and F. Becca, Gapless spin liquid and valence-bond solid in the J1-J2 heisenberg model on the square lattice: In-sights from singlet and triplet excitations, Phys. Rev. B 102 ,014417 (2020). [46] L. Shackleton, A. Thomson, and S. Sachdev, Deconfined criti-cality and a gapless Z2 spin liquid in the square-lattice antifer-romagnet, Phys. Rev. B 104 , 045110 (2021). [47] H. L. Stormer, D. C. Tsui, and A. C. Gossard, The fractional quantum hall e ff ect, Rev. Mod. Phys. 71 , S298 (1999). [48] N. Regnault and B. A. Bernevig, Fractional chern insulator, Phys. Rev. X 1, 021014 (2011). [49] Y.-Z. You, I. Kimchi, and A. Vishwanath, Doping a spin-orbit mott insulator: Topological superconductivity from the kitaev-heisenberg model and possible application to (Na 2/Li 2)IrO 3,Phys. Rev. B 86 , 085145 (2012). [50] P. Rao, Computing spin susceptibility for the kitaev spin liquid in the K J Γ model, Zenodo 10.5281 /zenodo.15125435 (2026). Supplemental Material for ’Proximate Quantum spin liquids and Majorana continua in magnetically ordered Kitaev magnets’ 
+
+Peng Rao, 1 Roderich Moessner, 2 and Johannes Knolle 1, 3, 4 
+
+> 1
+
+Physics Department, Technical University of Munich, TUM School of Natural Sciences, 85748 Garching, Germany 
+
+> 2
+
+Max Planck Institute for the Physics of Complex Systems, 01187 Dresden, Germany 
+
+> 3
+
+Munich Center for Quantum Science and Technology (MCQST), Schellingstr. 4, 80799 M¨ unchen, Germany 
+
+> 4
+
+Blackett Laboratory, Imperial College London, London SW7 2AZ, United Kingdom 
+
+(Dated: April 7, 2026) 
+
+CONTENTS 
+
+I. Linear spin wave theory in the AFM Heisenberg limit 1II. The ferromagnetic Heisenberg model 1References 2
+
+I. LINEAR SPIN WAVE THEORY IN THE AFM HEISENBERG LIMIT 
+
+Applying the Holstein-Primako ff expansion to the AFM Heisenberg Hamiltonian, the quadratic magnon Hamiltonian is: 
+
+Hmag = JS z 
+
+X
+
+> k
+
+Ψ†
+
+> k
+
+1 γk
+
+γ∗ 
+
+> k
+
+1
+
+!
+
+Ψk, γ k = 1
+
+z
+
+X
+
+> α
+
+eik.eα , Ψk = ak
+
+b†−k
+
+!
+
+, (SI-1) where ak, bk are magnon operators on sublattices A and B, and z = 3 is the coordination number. In γk, the summation is over N.N. bond vectors eα.Diagonalizing Eq. (SI-1) using the standard Bogoliubov transformation results in the spectrum: 
+
+Ek = JS z 
+
+q
+
+1 − | γk|2. (SI-2) Expanding at small k and S = 1/2, z = 3, we obtain: 
+
+γk ≈ 1 − (ka )2
+
+4 , Ek ≈ 3 √24 Jka , (SI-3) where a is the lattice constant The fluctuation correction to the on-site magnetic moment is: 
+
+∆m = 12
+
+X
+
+> k
+
+h(1 − | γk|2)−1/2 − 1i ≈ 0.24 . (SI-4) 
+
+II. THE FERROMAGNETIC HEISENBERG MODEL 
+
+The INS intensities for the Kitaev-Heisenberg model with FM couplings K < 0, J < 0 are presented in Supplementary Figure S1. It can be seen at once in Supplementary Figure S1 a that the magnon dispersion is linear in the Heisenberg limit. Furthermore, the dispersion is the same as the AFM Heisenberg model in Fig. 3 a, but the sharp mode near Γ does not vanish. This contradicts the ω ∝ k2 dispersion of the Heisenberg ferromagnet, which is known to be a general consequence of the conversation of magnetization as the symmetry-breaking order parameter [1]. We attribute the discrepancy to that the MF Majorana Hamiltonian breaks spin conservation and the consideration in Ref. [1] does not apply. In fact, below we shall prove that the magnon dispersions obtained from Majorana RPA are the same for both FM and AFM Heisenberg models. In the Majorana basis, the FM Heisenberg model di ff ers from the AFM model by a gauge transformation, e.g. on c-Majorana fermions on the B sublattices: 
+
+cB → − cB, SB → − SB. (SI-5) 2     
+
+> Supplementary Figure S1. INS intensities for the Kitaev-Heisenberg model inside the FM phase at J<0. The intensities are shown in logarithmic scale described in the Method section in the main text.
+
+As a result, the non-interacting spin susceptibility tensor [ χ0(ω, k)] iα, jβ (11) for given spin indices α, β is transformed in the sublattice indices i, j = A, B as follows: 
+
+χ0 =
+
+"(χ0)AA (χ0)AB 
+
+(χ0)BA (χ0)BB 
+
+#
+
+→
+
+" (χ0)AA −(χ0)AB 
+
+−(χ0)BA (χ0)BB 
+
+#
+
+(SI-6) where we neglect α, β .Let us now compute analytically the RPA susceptibility for the AFM Heisenberg model. The interaction vertex Eq. (12) has the form: 
+
+Uiα, jβ(k) = δαβ 
+
+0 Jγk
+
+Jγ∗ 
+
+> k
+
+0
+
+!
+
+> i j
+
+; γk =
+
+X
+
+> α
+
+eik.eα . (SI-7) Thus the RPA equation (13) factorizes into 2 × 2 matrix equations in sublattice indices only. Thus we shall neglect spin indices below and regard all relevant tensors as 2 × 2 matrices. Let us first consider the quasi-particle pole given by the zeros of the RPA kernel: det[1 + ˆU(k)χ0] = det 1 + Jγk(χ0)BA Jγk(χ0)BB 
+
+Jγ∗
+
+> k
+
+(χ0)AA 1 + Jγ∗
+
+> k
+
+(χ0)AB 
+
+!
+
+. (SI-8) Under the gauge transformation (SI-5) and J → − J in (SI-7), the o ff -diagonal components change sign while the diagonal ones are invariant. Therefore, the determinant is also invariant and both FM and AFM Heisenberg models have the same magnon dispersions. The RPA susceptibility and the INS intensity are of course not invariant (for simplicity we neglect the momentum arguments): 
+
+χ = χ0(1 + ˆUχ0)−1 = 1det(1 + ˆUχ0)
+
+(χ0)AA (χ0)AB + Jγk det χ0
+
+(χ0)BA + Jγ∗ 
+
+> k
+
+det χ0 (χ0)BB 
+
+!
+
+. (SI-9) Under the transformation (SI-5) and J → − J in (SI-7), χ transforms in the same way as χ0: only the o ff -diagonal components change sign (det χ0 is clearly invariant). As can be seen from Eqs. (14) and (15), the resulting INS intensity is also not invariant. Near k = 0 for the AFM model, the o ff -diagonal components add destructively to the diagonal ones, and the magnon mode intensity vanishes. For the FM model, they add constructively near k = 0 resulting in the observed sharp mode with the same dispersion as the AFM case. We note that in Fig. 3 b the k = 0 mode is entirely absent from Γ to K. This is because the corresponding momentum path has k.ez = 0 in the sublattice factor in Eq. (13), so the cancellation holds even away from k = 0. We also extract the magnon gap for the FM models in Supplementary Figure S1 b-c and compare with ObD results [2]: 
+
+K = −0.65 |J|, ∆ = 0.4|J| (MF) , ∆ = 0.03 |J| (ObD); 
+
+K = −2|J|, ∆ = 1.27 J (MF) , ∆ = 0.208 J (ObD) . (SI-10) Note that for K = −2|J| the MF gap is the same as the AFM model with K = 2J in (2). This is due to that the two models are related by the gauge transformation (SI-5), and a similar analysis to above shows that the quasi-particle pole is also invariant in this case. The Majorana MF overestimates the magnon gaps compared with both ObD and numerics [2, 3]. Finally, we remark that a similar transformation to (SI-5) in the zigzag phase on sublattices A, C (shown in Figure 2 b) also changes the signs of spin coupling, and converts the system into the stripy phase. This explains the similarity of the INS intensities in Fig. 4 between sets 2 and 5.  
+
+> [1] B. I. Halperin and P. C. Hohenberg, Hydrodynamic theory of spin waves, Phys. Rev. 188 , 898 (1969).
+
+3
+
+[2] J. G. Rau, P. A. McClarty, and R. Moessner, Pseudo-goldstone gaps and order-by-quantum disorder in frustrated magnets, Phys. Rev. Lett. 
+
+121 , 237201 (2018). [3] M. Gohlke, R. Verresen, R. Moessner, and F. Pollmann, Dynamics of the kitaev-heisenberg model, Phys. Rev. Lett. 119 , 157203 (2017).

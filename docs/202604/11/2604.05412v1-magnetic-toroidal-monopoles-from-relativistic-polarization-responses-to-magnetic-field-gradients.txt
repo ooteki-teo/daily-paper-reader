@@ -1,0 +1,778 @@
+Title: Magnetic toroidal monopoles from relativistic polarization responses to magnetic field gradients
+
+URL Source: https://arxiv.org/pdf/2604.05412v1
+
+Published Time: Wed, 08 Apr 2026 00:34:33 GMT
+
+Number of Pages: 9
+
+Markdown Content:
+## Magnetic toroidal monopoles from relativistic polarization responses to magnetic field gradients 
+
+Taisei Yamanaka, ∗ Takumi Sato, † and Satoru Hayami ‡
+
+Graduate School of Science, Hokkaido University, Sapporo 060-0810, Japan 
+
+(Dated: April 8, 2026) The magnetic toroidal monopole, a time-reversal-odd scalar, has attracted attention through its characteristic responses, such as electric-field-induced nonreciprocal directional dichroism observed in Co 2SiO 4. However, its evaluation in crystalline solids remains unresolved, as it cannot be defined within conventional multipole expansions or thermodynamic formulations. In this paper, we pro-pose a theoretical framework to evaluate the magnetic toroidal monopole in periodic crystals based on the response of relativistic electric polarization to a magnetic field gradient. By incorporating the magnetic-field-gradient correction to the relativistic polarization, we derive an explicit expres-sion for the magnetic toroidal monopole beyond symmetry arguments. The resulting expression is formulated in terms of geometric quantity such as Berry curvatures and orbital magnetic moment defined in an extended parameter space spanning momentum, magnetic field, and electric field. We further perform model calculations for an antiferromagnetic system hosting a magnetic toroidal monopole and confirm that the proposed quantity is finite. These results provide a practical route to characterize magnetic toroidal monopoles in crystalline solids and clarify their quantum geometric nature. 
+
+I. INTRODUCTION 
+
+The breaking of time-reversal symmetry underlies a wide range of magnetic phenomena. A typical example is the anomalous Hall effect originating from finite Berry curvature in momentum space [1–10]. This effect was long attributed to net magnetization in ferromagnets; however, recent studies have demonstrated that it can also occur in antiferromagnets with broken time-reversal symmetry [11–18], so-called altermagnets [19]. In addi-tion, when spatial inversion symmetry is broken, non-reciprocal transport phenomena [20–27] and magneto-electric effects [28–34] can emerge. These phenomena in antiferromagnets originate from symmetry-breaking elec-tronic degrees of freedom that serve as sources of diverse physical responses. The electronic states and associated physical phenom-ena induced by breakings of spatial inversion and time-reversal symmetry can be described in a unified manner using multipole representation theory [35–37]. Within this framework, time-reversal symmetry breaking is char-acterized by magnetic multipoles and magnetic toroidal multipoles. For example, a magnetic dipole is a source of the anomalous Hall effect, while a magnetic toroidal dipole is a source of nonreciprocal transport and linear magnetoelectric effect. The magnetic toroidal monopole (MTM), which is de-noted as T0, is a time-reversal-odd scalar corresponding to the source of the magnetic toroidal dipole. It is for-mally expressed as the inner product of the position vec-   
+
+> ∗yamanaka@phys.sci.hokudai.ac.jp
+> †sato@phys.sci.hokudai.ac.jp
+> ‡hayami@phys.sci.hokudai.ac.jp
+
+tor r and the magnetic toroidal dipole T ,
+
+T0 = r · T . (1) Since T ∝ r × s with the spin s, T0 vanishes identically at the single-site level but survives in the framework of cluster multipole [38] or many-body systems [39]. From a symmetry viewpoint, the MTM can also be expressed as coupling between four types of dipoles, 
+
+T0 ∼ Q · T , (2) 
+
+T0 ∼ G · M , (3) where Q, G, and M denote electric, electric toroidal, and magnetic dipoles, respectively. Such couplings im-ply characteristic responses unique to the MTM, in-cluding electric-field-induced spin vortices and magnetic-field-induced rotational distortions [38]. Indeed, electric-field-induced nonreciprocal directional dichroism related to the coupling in Eq. (2) [40, 41] has been experimen-tally observed in Co 2SiO 4[42, 43]. However, a method for evaluating the MTM in peri-odic crystals has not yet been established, since its op-erator expression is not well defined; in particular, the naive form based on the magnetic toroidal dipole, i.e., 
+
+r · T = 0, vanishes identically at the multipole operator level [37, 44]. In addition, because multipole moments reflect spatial anisotropy and involve the position op-erator, their evaluation in crystals is hindered by their unbounded nature. Although recent studies have shown that such difficulties can be overcome within a thermody-namic formulation [45–53], this approach is not directly applicable to the MTM. For example, a magnetic oc-tupole proportional to sirj rk (i, j, k = x, y, z ) can be de-fined within the thermodynamic formalism through its coupling to the second spatial derivative of the magnetic field, ∂j ∂kBi [51, 52]. In contrast, there is no correspond-ing thermodynamic quantity for the MTM, which is as-sociated with the antisymmetric part of rj rk.
+
+> arXiv:2604.05412v1 [cond-mat.str-el] 7 Apr 2026
+
+2In this study, we develop a theoretical framework for describing the MTM in crystalline solids from the view-point of response theory. By examining the response of relativistic electric polarization [54, 55] to a magnetic field gradient, we identify the contribution associated with the MTM in a gauge-invariant manner, thereby providing a route to characterize it in periodic systems. The formulation naturally leads to expressions involving quantum geometric quantities defined in an extended pa-rameter space, reflecting the interplay between momen-tum, magnetic field, and electric field. Furthermore, we perform model calculations for an antiferromagnetic sys-tem hosting the MTM and confirm that the proposed framework yields a finite contribution, demonstrating its applicability to realistic systems. The remainder of this paper is organized as follows: In Sec. II, we derive the response tensor of relativistic elec-tric polarization to a magnetic field gradient. In Sec. III, we discuss the physical meaning of the obtained expres-sion and its relation to thermodynamic multipoles. In Sec. IV, we introduce a minimal antiferromagnetic model exhibiting the MTM and present numerical results based on the derived formula. Finally, in Sec. V, we summarize this paper. Throughout this paper, we use the units of 
+
+kB = c = ℏ = 1, where kB is the Boltzmann constant and c is the speed of light.  
+
+> II. RESPONSE THEORY OF RELATIVISTIC POLARIZATION TO MAGNETIC FIELD GRADIENTS
+
+We first discuss a general viewpoint for characteriz-ing the MTM. Since the MTM is a rank-0 scalar quan-tity, it is natural to describe it in terms of higher-rank tensors and their contractions. In particular, a rank-3 tensor, such as the magnetic octupole, provides a suit-able starting point, as it shares the same spatial inver-sion and time-reversal parities as the MTM. The conven-tional magnetic octupole is proportional to sirj rk, where the factor rj rk is constructed from a single polar vector. As a result, it is symmetric under the interchange of rj
+
+and rk, which prevents the formation of a rank-0 scalar component. To overcome this limitation, we reinterpret the product rj rk as a combination of two independent polar vectors, rj Rk. This enables the construction of a general rank-3 tensor, sirj Rk, which includes the com-pletely antisymmetric component; contracting it with the Levi-Civita tensor, ϵijk sirj Rk, yields a rank-0 scalar that can be identified with T0. Motivated by this viewpoint, we focus on the antisymmetric component of a rank-3 response tensor and formulate a scheme to extract the MTM in crystalline systems, as discussed below. We begin with the thermodynamic relation for the standard magnetic octupole Mijk at zero temperature in insulators [51, 52, 56]. 
+
+∂M ijk 
+
+∂μ = −e ∂P k
+
+∂(∂j Bi) . (4) Here, μ, e, and P denote the chemical potential, the electron charge, and the electric polarization, respec-tively. This relation indicates that the chemical-potential derivative of the magnetic octupole is directly related to the electric polarization induced by a magnetic field gra-dient. By definition, Mijk is symmetric under the inter-change of j and k and thus has no completely antisym-metric component. Although the polarization P in Eq. (4) usually refers to the charge-induced polarization, it is modified by the spin degree of freedom at the relativistic level. The cor-responding relative correction can be expressed in terms of spin currents [54, 55], which are given by ˜P (s) = ξs × v = ξ ˜P , (5) where ξ is the relativistic coefficient ξ = e/ 2mc 2 and ˜P = s × v. Here, s and v represent the spin and velocity operators, respectively. By introducing ˜P , one can ob-tain the completely antisymmetric component of Mijk in Eq. (4) in a gauge-invariant form. Building on this formulation, we evaluate the MTM from the completely antisymmetric component of the re-sponse tensor describing the variation of ˜P under a mag-netic field gradient. Specifically, we define 
+
+χijk = ξ ∂ ˜Pk
+
+∂(∂j Bi) , χT0 = 13! ϵijk χijk , (6) where χijk is a general rank-3 tensor and χT0 represents the MTM contribution. This equation is valid for both metals and insulators at any temperature. To evaluate 
+
+χijk , we employ the Kubo formalism and calculate the polarization-magnetization correlation function as 
+
+χ ˜Pk ,M i (q, ω ) = 
+
+− gμ Bξ X
+
+> n,m
+
+Z ddk
+
+(2 π)d ⟨nk−| ˆ˜rk |mk+⟩ ⟨ mk+| ˆsi |nk−⟩× fnk− − fmk+
+
+ϵnk− − ϵmk+ + ω + iδ , (7) which describes the linear response δ ˜Pk(q, ω ) =
+
+χ ˜Pk ,M i (q, ω )Bi(q, ω ) with the wave vector q and the fre-quency ω. ˜Pk corresponds to the expectation value of polarization operator; ˜Pk =
+
+Dˆ˜rk
+
+E
+
+with ˜r = s × v. Here, 
+
+g, μB, ˆ si, and d represent the spin g factor, Bohr magne-ton, spin operator, and spatial dimension, respectively. In addition, we adopt the following notation; ˆHk |nk⟩ = ϵnk |nk⟩ , fnk = (1 + eβ(ϵnk−μ))−1,
+
+k± = k ± q
+
+2 , ˆ˜rk = 12 ϵkab {ˆva, ˆsb}+ , (8) 3where ˆHk is the Bloch Hamiltonian with eigenvalues ϵnk
+
+for eigenstates |nk⟩ (n labels the band index and k is the crystal momentum), fnk is the Fermi distribution function, and ˆ vj is the velocity operator; ˆ vj = ∂kj
+
+ˆHk
+
+(∂kj = ∂/∂k j ). Taking the static limit ω → 0 and expandiing 
+
+χ ˜Pk ,M i (q, ω ) to the first order in q, we obtain χijk as 
+
+χijk = lim  
+
+> q→0
+
+−i∂ qj lim  
+
+> δ→0
+
+χ ˜Pk ,M i (q, 0) . (9) Carrying out the calculations, the response tensor is ex-pressed in the gauge-invariant form as 
+
+χijk = −gμ Bξ
+
+Z ddk
+
+(2 π)d
+
+X
+
+> n
+
+"̸ =nX
+
+> m
+
+− 12
+
+(
+
+(sin + sim)Ω vj ,˜rk 
+
+> nm
+
++ ( vjn + vjm)Ω ˜rk ,s i 
+
+> nm
+
++ (˜ rkn + ˜ rkm)Ω si,v j
+
+> nm
+
+)
+
+fn
+
+−
+
+(
+
+sinmvj ,˜rk 
+
+> nm
+
++ vjnm˜rk ,s i 
+
+> nm
+
++ ˜ rknmsi,v j
+
+> nm
+
+)
+
+f ′ 
+
+> n
+
++̸
+
+> =n
+
+X
+
+> m̸
+> =n,m
+
+X
+
+> l
+
+Xijk nml fn
+
+#
+
+, (10) where ΩA,B nm = −2 Im 
+
+ Anm Bmn 
+
+ϵ2
+
+> nm
+
+
+
+, (11) 
+
+mA,B nm = Im 
+
+ Anm Bmn 
+
+ϵnm 
+
+
+
+, (12) 
+
+Xijk nml = Im 
+
+"
+
+siln vjml ˜rknm − sinm vjml ˜rkln 
+
+ϵnm ϵml 
+
++ siml vjln ˜rknm − sinm vjln ˜rkml 
+
+ϵnm ϵln 
+
+#
+
+. (13) We use the abbreviations Ainm = ⟨nk| ˆAi |mk⟩, Ain =
+
+Ainn with ˆA = ˆ s, ˆv, ˆ˜r, ϵn = ϵnk, ϵnm = ϵn − ϵm, fn = fnk
+
+and f ′ 
+
+> n
+
+= ∂f n/∂ϵ n. We show that the expression remains valid even in the presence of band touchings, including degenerate points in Appendix A. The response tensor in Eq. (10) consists of several contributions involving Ω A,B nm ,
+
+mA,B nm , and Xijk nml , which encode interband processes me-diated by the operators ˆ v, ˆ s, and ˆ ˜r. The first two quan-tities, Ω A,B nm and mA,B nm , are generalizations of well-known geometric quantities in periodic crystals. For example, by taking A = vj and B = vk, Ω A,B nm and mA,B nm correspond to the band-resolved Berry curvature and orbital mag-netic moment, respectively, where the Berry curvature and orbital magnetic moment obtained within semiclas-sical theory [57–60], are given by Ωjk n =
+
+> m̸=n
+
+X
+
+> m
+
+−2 Im 
+
+ vjnm vkmn 
+
+ϵ2
+
+> nm
+
+
+
+, (14) 
+
+mjk n =
+
+> m̸=n
+
+X
+
+> m
+
+Im 
+
+ vjnm vkmn 
+
+ϵnm 
+
+
+
+. (15) Since the velocity operator is given by the momentum derivative of the Hamiltonian, ˆ vj = ∂kj
+
+ˆHk, these quan-tities can be expressed in terms of geometric tensors in momentum ( k-k) space. They are related to the quantum geometric tensor of the nth band, 
+
+T jk n = ∂kj nk (1 − | n⟩ ⟨ n|) |∂kk nk⟩ , (16) ˜T jk n = ∂kj nk
+
+ ˆHk − ϵnk
+
+
+
+|∂kk nk⟩ , (17) which satisfy Ω jk n = −2Im T jk n and mjk n = −Im ˜T jk n [61, 62]. In the present formulation, the operators ˆ s and ˆ˜r can also be regarded as derivatives of a parameter-dependent Hamiltonian, ˆH = ˆHk + h · ˆs + e · ˆ˜r, (18) with h = −gμ BB and e = ξE, such that ∂hi
+
+ˆH = ˆ si
+
+and ∂ei
+
+ˆH = ˆ ˜ri. From this viewpoint, Ω A,B nm and mA,B nm in Eq. (10) can be interpreted as geometric quantities de-fined in an extended parameter space spanned by crystal momentum ( k), magnetic field ( h), and electric field ( e). This highlights that the MTM-related response function is intrinsically linked to the quantum geometry of elec-tronic states beyond conventional momentum-space for-mulations. 
+
+III. BULK FORMULATION OF MAGNETIC TOROIDAL MONOPOLE 
+
+Combining Eqs. (4) and (6), the MTM in crystalline solids can be defined through the antisymmetric compo-nent of the response tensor. The corresponding relation 4between the MTM and the linear response is given by 
+
+∂ ˜Mijk 
+
+∂μ := ξ ∂ ˜Pk
+
+∂(∂j Bi) , (19) where ˜Mijk denotes a generalized rank-3 tensor that in-cludes the completely antisymmetric component. Since the chemical potential dependence enters only through the Fermi distribution function, the integration can be carried out straightforwardly, yielding the following re-sult: ˜Mijk = −gμ B
+
+Z ddk
+
+(2 π)d
+
+X
+
+> n
+
+"̸ =nX
+
+> m
+
+12
+
+(
+
+(sin + sim)Ω vj ,˜rk 
+
+> nm
+
++ ( vjn + vjm)Ω ˜rk ,s i 
+
+> nm
+
++ (˜ rkn + ˜ rkm)Ω si,v j
+
+> nm
+
+)
+
+Gn
+
++
+
+(
+
+sinmvj ,˜rk 
+
+> nm
+
++ vjnm˜rk ,s i 
+
+> nm
+
++ ˜ rknmsi,v j
+
+> nm
+
+)
+
+fn −̸
+
+> =n
+
+X
+
+> m̸
+> =n,m
+
+X
+
+> l
+
+Xijk nml Gn
+
+#
+
+. (20) Here, Gn = −T log 1 + e−(ϵnk−μ)/T is the grandpoten-tial density. In Eq. (20), the terms involving the off-diagonal components of ˆ˜r reduce to those of the ther-modynamic spin magnetic octupole [51, 52] when ˆ˜r is replaced by the position operator in momentum space, ˆ˜r → − i∇k.The MTM in periodic crystals is then defined as the completely antisymmetric component, ˜T0 := 13! ϵijk ˜Mijk ,which is given by ˜T0 =
+
+Z ddk
+
+(2 π)d
+
+X
+
+> n
+
+13! 
+
+
+
+˜rn · Tn + vn · Qn + sn · Gn + Fn
+
+
+
+.
+
+(21) Here, 
+
+T kn = −gμ Bϵijk {Ωsi,v j 
+
+> n
+
+Gn + msi,v j 
+
+> n
+
+fn} , (22) 
+
+Qkn = −gμ Bϵijk 
+
+Ω˜ri,s j 
+
+> n
+
+Gn + m˜ri,s j 
+
+> n
+
+fn , (23) 
+
+Gkn = −gμ Bϵijk 
+
+Ωvi,˜rj 
+
+> n
+
+Gn + mvi,˜rj 
+
+> n
+
+fn , (24) 
+
+Fn = −gμ Bϵijk ̸
+
+> =n
+
+X
+
+> m
+
+−12
+
+(
+
+(sin − sim)Ω vj ,˜rk 
+
+> nm
+
++ ( vjn − vjm)Ω ˜rk ,s i
+
+> nm
+
++ (˜ rkn − ˜rkm)Ω si,v j 
+
+> nm
+
++ 2 ̸
+
+> =n,m
+
+X
+
+> l
+
+Xijk nml 
+
+)
+
+Gn, (25) with Ω A,B n = P 
+
+> m̸=n
+
+ΩA,B nm . This expression indicates that the MTM is described as a linear combination of inner products of vector quantities, ˜rn ·Tn, vn ·Qn, and sn ·Gn.Each of these terms forms a time-reversal-odd scalar, con-sistent with the symmetry of the MTM: ˜rn, Qn, and Gn
+
+are even under time reversal, whereas Tn, vn, and sn
+
+are odd; similarly, sn and Gn are even under spatial in-version, while vn, ˜rn, Qn, and Tn are odd. Similar to Eq. (6), this expression is gauge-invariant, and remains valid for both metals and insulators at all temperatures. The quantity T = R ddk
+
+> (2 π)d
+
+P 
+
+> n
+
+Tn corresponds to the thermodynamic spin magnetic toroidal dipole [46, 49], which characterizes a vortex-like distribution of magnetic moments in periodic crystals. The thermodynamic mag-netic toroidal dipole is associated with geometric quan-tities involving the Berry curvature and the orbital mag-netic moment in the h-k parameter space, reflecting its origin of magnetic-field-induced electric polarization and vice versa. In this context, the term ˜rn ·Tn, as introduced in Eq. (1), can be interpreted as a coupling between the relativistic electric polarization and the magnetic toroidal dipole moment. This term provides a microscopic realiza-tion of the scalar quantity formed by contracting a polar vector with a magnetic toroidal moment, consistent with the intuitive expression for the source of the magnetic toroidal dipole given in Eq. (1). Furthermore, from a symmetry viewpoint, Qn and Gn
+
+correspond to the electric dipole and electric toroidal dipole in periodic crystals, respectively. The electric dipole is associated with the Berry curvature in the 
+
+e-h parameter space, which can be viewed as related to time-dependent-magnetic-field-induced spin currents, whereas the electric toroidal dipole is associated with the Berry curvature in the k-e space, related to electric-field-induced spin currents [63]. Accordingly, the terms vn ·Qn
+
+and sn · Gn represent couplings between fundamental electronic degrees of freedom ( vn and sn) and the dipolar moments. Although these contributions are consistent with the symmetry-allowed couplings in Eqs. (2) and (3), our results go beyond this symmetry argument by show-ing that they originate from microscopic couplings and directly contribute to the MTM, thereby establishing its composite nature in terms of multiple dipolar compo-nents. In this way, the MTM is composed of intertwined contributions from relativistic polarization, velocity, and spin degrees of freedom, which cannot be defined within the conventional thermodynamic framework [51, 52] It is worth noting that the presence of the additional term Fn indicates that the MTM cannot be fully reduced to simple dipole-dipole couplings. Instead, it involves intrinsic multiband and interband contributions encoded in Xijk nml , reflecting the underlying quantum geometry of the electronic structure. 5 
+
+> IV. MODEL CALCULATION
+
+(a) 
+
+A B
+
+(b) 
+
+A B
+
+𝑥 
+
+𝑧 
+
+𝑦 𝑥    
+
+> 𝑧 𝑦
+> FIG. 1. (a,b) Schematic illustrations of the model with mag-netic point group m2m, shown from different viewing angles. The red and blue arrows represent up and down spins, respec-tively. The figures are generated using QtDraw [64].
+
+To examine the relationship between the obtained MTM and the internal degrees of freedom of a mate-rial, we perform model calculations based on a minimal two-sublattice system shown in Fig. 1(a) and Fig. 1(b), which belongs to the magnetic point group m2m. The model Hamiltonian is given by 
+
+H = Hhop + HMF + HSOI , (26) 
+
+Hhop = ε0(k) + εx(k)τx + εy (k)τy , (27) 
+
+HMF = −hτ z ⊗ σz , (28) 
+
+HSOI = α sin( kz )σx, (29) with 
+
+ε0(k) = −2ty cos( ky ) − 2tz cos( kz ),εx(k) = −2tx cos( kx), εy (k) = −2t′ 
+
+> x
+
+sin( kx). (30) Here, σi and τi are the Pauli matrices acting on the spin and sublattice degrees of freedom, respectively. Hhop is the hopping Hamiltonian including inter-sublattice hop-pings, tx and t′
+
+> x
+
+, along the x direction and the intra-sublattice hopping along the y direction, ty , and that along the z direction, tz . We take the lattice constant as the unit of length and set the hopping parameters as 
+
+tx = 0 .9, t′ 
+
+> x
+
+= 0 .1, ty = tz = 1. HMF denotes the mean-field term to describe the collinear antiferromagnetic or-dering. HSOI denotes the antisymmetric spin–orbit in-teraction term by supposing the polar field along the y
+
+direction. From the symmetry viewpoint, each term in the Hamil-tonian plays a distinct role in breaking the symmetry. The hopping Hamiltonian Hhop preserves the magnetic point group symmetry mmm 1′. When the polar spin– orbit interaction term HSOI is introduced, the symmetry is lowered to m2m1′ due to the breaking of spatial inver-sion and one of the mirror symmetries. Furthermore, the inclusion of the antiferromagnetic mean-field term HMF 
+
+breaks time-reversal symmetry, reducing the symmetry to m2m. Within this symmetry setting, HMF gives rise to a magnetic toroidal dipole [65], while HSOI induces an electric dipole. Since the MTM can be expressed as the inner product of a magnetic toroidal dipole and an elec-tric dipole [Eq. (2)], the present model provides a min-imal and symmetry-consistent platform for realizing the MTM. In this sense, the MTM emerges as a consequence of the symmetry lowering by HSOI and HMF .(a) 
+
+# (b)                          
+
+> FIG. 2. (a), (b) Band structures calculated from Eq. (26) for (a) ( h, α ) = (0 .5,0) and (b) (0 ,0.5), respectively. The high-symmetry points in the Brillouin zone are defined by the fol-lowing fractional coordinates (in units of the reciprocal lattice vectors): Γ = (0 ,0,0) ,X = (0 .5,0,0) ,M = (0 .5,0.5,0) ,Z = (0 ,0,0.5) ,R = (0 ,0.5,0.5) ,and A = (0 .5,0.5,0.5). The red and blue colors in (b) indicate the positive and negative spin polarizations along the xdirection.
+
+Figures 2(a) and (b) show the band structures for h =0.5 and α = 0 and h = 0 and α = 0 .5, respectively. In Fig. 2(b), the antisymmetric spin splitting appears along the X–Γ and R–Z directions, reflecting the effect of the antisymmetric spin–orbit interaction HSOI .Figure 3(a) [Figure 3(b)] shows the h (α) dependence of χT0 at fixed α = 0 .1 ( h = 0 .1). The number of unit cells is set to 256 3. In the present parameter regime, where the chemical potential lies in the metallic regime, the response is predominated by the Fermi-surface con-tribution proportional to f ′
+
+> n
+
+. Consequently, χT0 is highly sensitive to the evolution of the Fermi surface induced by changes in h and α. This sensitivity leads to a non-monotonic dependence of χT0 , which can be attributed to band crossings and the redistribution of spectral weight near the Fermi level. It is noted that the behavior of re-sponse functions associated with multipoles depends on the specific model, and sign reversals due to variations in model parameters are common. Similar behavior has also been observed in other multipole systems. Furthermore, it has been demonstrated that multipoles contribute to the response even at chemical potentials where the ther-6(a) 
+
+# (b)              
+
+> FIG. 3. Dependence of χT0on (a) hand (b) αfor fixed
+> α= 0 .1 and h= 0 .1, respectively. The parameters are set to
+> μ= 1 and T= 0 .01.
+
+modynamic multipoles become zero [66]. Figures 4(a) and 4(d) show the band structures for 
+
+h = 5 and α = 1. Here, a relatively large value of h
+
+is introduced so as to open a gap and realize an insu-lating state at half filling. Figures 4(b) and 4(e) show the chemical potential dependence of χT0 at T = 0 .1 and 0.01, respectively. The magnitude of χT0 remains of the same order in both metallic and insulating regimes. Fig-ures 4(c) and 4(f) present the corresponding behavior of ˜T0 at T = 0 .1 and 0 .01. Similarly, ˜T0 exhibits a compa-rable magnitude across the two regimes. In the insulating regime, χT0 is independent of μ,whereas ˜T0 exhibits a linear dependence on μ. This dif-ference originates from the distinct μ dependence of the Fermi distribution function fn and the grand potential density Gn. At zero temperature, P 
+
+> n
+
+fn reduces to a sum over occupied states, Pocc  
+
+> n
+
+, while P 
+
+> n
+
+Gn becomes 
+
+Pocc  
+
+> n
+
+(ϵn − μ). Consequently, χT0 and ˜T0 exhibit distinct dependencies on the chemical potential. This contrast reflects a general feature commonly found in thermody-namic multipoles, where response functions and thermo-dynamic quantities exhibit distinct dependencies on the chemical potential.  
+
+> V. SUMMARY
+
+We have developed a theoretical framework for charac-terizing the MTM in periodic crystals from the viewpoint of response theory. Motivated by the fact that the MTM is a rank-0 time-reversal-odd scalar quantity, we focused on the completely antisymmetric component of a rank-3 response tensor and formulated a gauge-invariant scheme to extract the MTM from the response of relativistic elec-tric polarization to a magnetic field gradient. By employ-ing the Kubo formalism, we derived the response tensor associated with the magnetic-field-gradient correction to relativistic electric polarization. The obtained expres-sion was shown to be described by geometric quantities defined in an extended parameter space spanned by crys-tal momentum, magnetic field, and electric field. This indicates that the MTM-related response is intrinsically linked to the quantum geometry of electronic states. We also established a bulk formulation of the MTM by inte-grating the response function with respect to the chem-ical potential. The resulting expression for the MTM is written as a linear combination of couplings among relativistic polarization, velocity, spin, and dipolar quan-tities such as the magnetic toroidal, electric, and electric toroidal dipoles. Furthermore, our results for character-izing MTM in a crystal are applicable to both metals and insulators at any temperatures. Finally, we demonstrate the formulation in a minimal antiferromagnetic model, where the MTM becomes finite. The present results provide a practical route to char-acterize the MTMs in periodic crystals and clarify their microscopic origin in terms of extended quantum ge-ometry. They also offer a basis for future investiga-tions of MTM-related responses in realistic materials. As candidate materials exhibiting these responses, not only Co 2SiO 4[42, 43] but also KMnF 3[67], MnV 2O4[68], Er 2Cu 2O5[69], Ho 2Ge 2O7[70], and Mn 2FeMoO 6[71] are promising candidates. 
+
+> ACKNOWLEDGMENTS
+
+This research was supported by JSPS KAK-ENHI Grants Numbers JP22H00101, JP22H01183, JP23H04869, JP23K03288, and by JST CREST (JP-MJCR23O4) and JST FOREST (JPMJFR2366). 7(a) (b) (c) 
+
+# (d) (e) (f) 
+
+FIG. 4. (a), (d) Band structures calculated from Eq. (26). (b), (e) Chemical potential dependence μ of χT0 . (c), (f) Chemical potential dependence μ of ˜T0. In all panels, the parameters are set to h = 5 and α = 1. Panels (d)–(f) show enlarged views of panels (a)–(c) around −1 ≲ μ ≲ 1. The yellow-shaded areas correspond to the energy gap. 
+
+Appendix A: Expression near degenerate points 
+
+To perform the numerical calculations, we begin with an equivalent form of Eq. (10): 
+
+χijk = −gμ Bξ
+
+Z ddk
+
+(2 π)d
+
+X
+
+> n̸
+> =n
+
+X
+
+> m
+
+" sin Im vjnm ˜rkmn 
+
+ + vjn Im ˜rknm simn 
+
+ + ˜ rkn Im sinm vjmn 
+
+ Pnm +̸
+
+> =n,m
+
+X
+
+> l
+
+Im 
+
+h
+
+sinm vjml ˜rkln 
+
+i
+
+Qnml 
+
+#
+
+,
+
+(A1) where 
+
+Pnm = fnm 
+
+ϵ2
+
+> nm
+
+− f ′
+
+> n
+
+ϵnm 
+
+,Qnml = fnm 
+
+ϵnm ϵml 
+
+− fln 
+
+ϵml ϵln 
+
+. (A2) 
+
+Pnm has the asymptotic form near the degeneracy point (ϵn = ϵm)
+
+Pnm = − 12 f ′′  
+
+> n
+
++ 16 f ′′′  
+
+> n
+
+ϵnm + O(ϵ2
+
+> nm
+
+) (A3) For Qnml , cases should be classified according to the type of degeneracy: (i) ϵn = ϵm and ϵm̸ = ϵl ,(ii) ϵn̸ = ϵm and ϵm = ϵl ,(iii) ϵn = ϵm = ϵl .In the case of (i), 
+
+Qnml =
+
+ fln 
+
+ϵ2
+
+> ln
+
+− f ′
+
+> n
+
+ϵln 
+
+
+
++
+
+ f ′′ 
+
+> n
+
+2ϵln 
+
++ f ′
+
+> n
+
+ϵ2
+
+> ln
+
+− fln 
+
+ϵ3
+
+> ln
+
+
+
+ϵnm + O(ϵ2
+
+> nm
+
+)(A4) In the case of (ii), 
+
+Qnml =
+
+ fnm 
+
+ϵ2
+
+> nm
+
+− f ′
+
+> m
+
+ϵnm 
+
+
+
++
+
+ f ′′ 
+
+> m
+
+2ϵnm 
+
++ f ′
+
+> m
+
+ϵ2
+
+> nm
+
+− fnm 
+
+ϵ3
+
+> nm
+
+
+
+ϵml + O(ϵ2
+
+> ml
+
+)(A5) 8In the case of (iii), 
+
+Qnml = 12 f ′′  
+
+> m
+
+− 16 f ′′′  
+
+> m
+
+ϵnm + O(ϵ2
+
+> nm
+
+) (A6) Thus, Eq. (A1) remains well defined even at degenerate points. 
+
+[1] R. Karplus and J. M. Luttinger, Hall Effect in Ferromag-netics, Phys. Rev. 95 , 1154 (1954). [2] J. Smit, The spontaneous hall effect in ferromagnetics II, Physica 24 , 39 (1958). [3] F. E. Maranzana, Contributions to the Theory of the Anomalous Hall Effect in Ferro- and Antiferromagnetic Materials, Phys. Rev. 160 , 421 (1967). [4] L. Berger, Side-Jump Mechanism for the Hall Effect of Ferromagnets, Phys. Rev. B 2, 4559 (1970). [5] P. Nozi` eres and C. Lewiner, A simple theory of the anomalous hall effect in semiconductors, Journal de Physique 34 , 901 (1973). [6] D. Loss and P. M. Goldbart, Persistent currents from Berry’s phase in mesoscopic systems, Phys. Rev. B 45 ,13544 (1992). [7] J. Ye, Y. B. Kim, A. J. Millis, B. I. Shraiman, P. Majum-dar, and Z. Teˇ sanovi´ c, Berry Phase Theory of the Anoma-lous Hall Effect: Application to Colossal Magnetoresis-tance Manganites, Phys. Rev. Lett. 83 , 3737 (1999). [8] T. Jungwirth, Q. Niu, and A. H. MacDonald, Anomalous Hall Effect in Ferromagnetic Semiconductors, Phys. Rev. Lett. 88 , 207208 (2002). [9] N. Nagaosa, J. Sinova, S. Onoda, A. H. MacDonald, and N. P. Ong, Anomalous Hall effect, Rev. Mod. Phys. 82 ,1539 (2010). [10] D. Gos´ albez-Mart´ ınez, I. Souza, and D. Vanderbilt, Chi-ral degeneracies and Fermi-surface Chern numbers in bcc Fe, Phys. Rev. B 92 , 085138 (2015). [11] I. V. Solovyev, Magneto-optical effect in the weak ferro-magnets LaMO 3 (M= Cr, Mn, and Fe), Phys. Rev. B 55 ,8060 (1997). [12] N. Sivadas, S. Okamoto, and D. Xiao, Gate-Controllable Magneto-optic Kerr Effect in Layered Collinear Antifer-romagnets, Phys. Rev. Lett. 117 , 267203 (2016). [13] H. Chen, Q. Niu, and A. H. MacDonald, Anomalous Hall Effect Arising from Noncollinear Antiferromagnetism, Phys. Rev. Lett. 112 , 017205 (2014). [14] M. Naka, S. Hayami, H. Kusunose, Y. Yanagi, Y. Mo-tome, and H. Seo, Anomalous hall effect in κ-type organic antiferromagnets, Phys. Rev. B 102 , 075112 (2020). [15] L. ˇSmejkal, R. Gonz´ alez-Hern´ andez, T. Jungwirth, and J. Sinova, Crystal time-reversal symmetry breaking and spontaneous Hall effect in collinear antiferromagnets, Sci. Adv. 6, eaaz8809 (2020). [16] S. Hayami and H. Kusunose, Essential role of the anisotropic magnetic dipole in the anomalous Hall effect, Phys. Rev. B 103 , L180407 (2021). [17] H. Chen, Electronic chiralization as an indicator of the anomalous Hall effect in unconventional magnetic sys-tems, Phys. Rev. B 106 , 024421 (2022). [18] M. Naka, Y. Motome, and H. Seo, Anomalous hall ef-fect in antiferromagnetic perovskites, Phys. Rev. B 106 ,195149 (2022). [19] L. ˇSmejkal, J. Sinova, and T. Jungwirth, Beyond Con-ventional Ferromagnetism and Antiferromagnetism: APhase with Nonrelativistic Spin and Crystal Rotation Symmetry, Phys. Rev. X 12 , 031042 (2022). [20] G. Rikken and E. Raupach, Observation of magneto-chiral dichroism, Nature 390 , 493 (1997). [21] R. Wakatsuki, Y. Saito, S. Hoshino, Y. M. Itahashi, T. Ideue, M. Ezawa, Y. Iwasa, and N. Nagaosa, Nonre-ciprocal charge transport in noncentrosymmetric super-conductors, Science advances 3, e1602390 (2017). [22] Y. Tokura and N. Nagaosa, Nonreciprocal responses from non-centrosymmetric quantum materials, Nat. Commun. 
+
+9, 3740 (2018). [23] H. Watanabe and Y. Yanase, Nonlinear electric transport in odd-parity magnetic multipole systems: Application to Mn-based compounds, Phys. Rev. Res. 2, 043081 (2020). [24] M. Yatsushiro, R. Oiwa, H. Kusunose, and S. Hayami, Analysis of model-parameter dependences on the second-order nonlinear conductivity in PT-symmetric collinear antiferromagnetic metals with magnetic toroidal moment on zigzag chains, Phys. Rev. B 105 , 155157 (2022). [25] S. Hayami and M. Yatsushiro, Nonlinear nonreciprocal transport in antiferromagnets free from spin-orbit cou-pling, Phys. Rev. B 106 , 014420 (2022). [26] Y. Suzuki, Tunneling spin current in systems with spin degeneracy, Phys. Rev. B 105 , 075201 (2022). [27] N. Nagaosa and Y. Yanase, Nonreciprocal transport and optical phenomena in quantum materials, Annu. Rev. Condens. Matter Physis 15 , 63 (2024). [28] P. Curie, Sur la sym´ etrie dans les ph´ enom` enes physiques, sym´ etrie d’un champ ´ electrique et d’un champ magn´ etique, J. Phys. Theor. Appl. 3, 393 (1894). [29] Y. F. Popov, A. Kadomtseva, D. Belov, G. Vorob’ev, and A. Zvezdin, Magnetic-field-induced toroidal moment in the magnetoelectric Cr2O3, J. Exp. Theor. Phys. Lett. 
+
+69 , 330 (1999). [30] M. Fiebig, Revival of the magnetoelectric effect, J. Phys. D: Appl. Phys. 38 , R123 (2005). [31] N. A. Spaldin and M. Fiebig, The renaissance of magne-toelectric multiferroics, Science 309 , 391 (2005). [32] C. Ederer and N. A. Spaldin, Towards a microscopic the-ory of toroidal moments in bulk periodic crystals, Phys. Rev. B 76 , 214404 (2007). [33] S. Hayami, H. Kusunose, and Y. Motome, Spontaneous parity breaking in spin-orbital coupled systems, Phys. Rev. B 90 , 081115 (2014). [34] F. Th¨ ole and N. A. Spaldin, Magnetoelectric multipoles in metals, Philos. Trans. R. Soc. A 376 , 20170450 (2018). [35] M.-T. Suzuki, H. Ikeda, and P. M. Oppeneer, First-principles theory of magnetic multipoles in condensed matter systems, J. Phys. Soc. Jpn. 87 , 041008 (2018). 9
+
+[36] H. Kusunose and S. Hayami, Generalization of micro-scopic multipoles and cross-correlated phenomena by their orderings, J. Phys.: Condens. Matter 34 , 464002 (2022). [37] S. Hayami and H. Kusunose, Unified description of elec-tronic orderings and cross correlations by complete multi-pole representation, J. Phys. Soc. Jpn. 93 , 072001 (2024). [38] S. Hayami and H. Kusunose, Time-reversal switching re-sponses in antiferromagnets, Phys. Rev. B 108 , L140409 (2023). [39] S. Kuniyoshi, R. Oiwa, and S. Hayami, Theory of many-body multipole operators in single-centered electron sys-tems: Two-body toroidal monopoles in spinless orbitals (2026), arXiv:2603.10620 [cond-mat.str-el]. [40] H. Schmid, On ferrotoroidics and electrotoroidic, mag-netotoroidic and piezotoroidic effects, Ferroelectrics 252 ,41 (2001). [41] H. Schmid, J. Phys.: Condens. Matter 20 , 434201 (2008). [42] T. Hayashida, K. Matsumoto, and T. Kimura, Electric Field-Induced Nonreciprocal Directional Dichroism in a Time-Reversal-Odd Antiferromagnet, Advanced Materi-als 37 , 2414876 (2025). [43] Y. Kato, T. Hayashida, K. Matsumoto, T. Kimura, and Y. Motome, Electric-field-induced magnetic toroidal mo-ment and nonlinear magnetoelectric effect in antiferro-magnetic olivines, Phys. Rev. B 113 , 094411 (2026). [44] N. A. Spaldin, M. Fiebig, and M. Mostovoy, The toroidal moment in condensed-matter physics and its relation to the magnetoelectric effect, J. Phys.: Condens. Matter 20 ,434203 (2008). [45] J. Shi, G. Vignale, D. Xiao, and Q. Niu, Quantum The-ory of Orbital Magnetization and Its Generalization to Interacting Systems, Phys. Rev. Lett. 99 , 197202 (2007). [46] Y. Gao, D. Vanderbilt, and D. Xiao, Microscopic theory of spin toroidization in periodic crystals, Phys. Rev. B 
+
+97 , 134423 (2018). [47] A. Shitade, H. Watanabe, and Y. Yanase, Theory of or-bital magnetic quadrupole moment and magnetoelectric susceptibility, Phys. Rev. B 98 , 020407 (2018). [48] Y. Gao and D. Xiao, Orbital magnetic quadrupole mo-ment and nonlinear anomalous thermoelectric transport, Phys. Rev. B 98 , 060402 (2018). [49] A. Shitade, A. Daido, and Y. Yanase, Theory of spin magnetic quadrupole moment and temperature-gradient-induced magnetization, Phys. Rev. B 99 , 024404 (2019). [50] A. Daido, A. Shitade, and Y. Yanase, Thermodynamic approach to electric quadrupole moments, Phys. Rev. B 
+
+102 , 235149 (2020). [51] J. ¯Oik´ e, R. Peters, and K. Shinada, Thermodynamic for-mulation of the spin magnetic octupole moment in bulk crystals, Phys. Rev. B 112 , 134412 (2025). [52] T. Sato and S. Hayami, Quantum theory of magnetic octupole in periodic crystals and application to d-wave altermagnets, npj Quantum Mater. 11 , 32 (2026). [53] T. Sato and S. Hayami, Orbital magnetic octupole in crystalline solids and anomalous hall response to a nonuniform electric field (2025), arXiv:2512.24269 [cond-mat.mes-hall]. [54] H. Katsura, N. Nagaosa, and A. V. Balatsky, Spin Cur-rent and Magnetoelectric Effect in Noncollinear Magnets, Phys. Rev. Lett. 95 , 057205 (2005). [55] S. Hayami, R. Yambe, and H. Kusunose, Analysis of Photo-Induced Chirality and Magnetic Toroidal Moment Based on Floquet Formalism, J. Phys. Soc. Jpn. 93 ,043702 (2024). [56] A. Shitade, Intrinsic spin accumulation in the magnetic spin Hall effect, Phys. Rev. B 112 , 174431 (2025). [57] M.-C. Chang and Q. Niu, Berry phase, hyperorbits, and the hofstadter spectrum, Phys. Rev. Lett. 75 , 1348 (1995). [58] G. Sundaram and Q. Niu, Wave-packet dynamics in slowly perturbed crystals: Gradient corrections and Berry-phase effects, Phys. Rev. B 59 , 14915 (1999). [59] M.-C. Chang and Q. Niu, Berry phase, hyperorbits, and the Hofstadter spectrum: Semiclassical dynamics in mag-netic Bloch bands, Phys. Rev. B 53 , 7010 (1996). [60] D. Xiao, M.-C. Chang, and Q. Niu, Berry phase effects on electronic properties, Rev. Mod. Phys. 82 , 1959 (2010). [61] Y.-Q. Ma, S. Chen, H. Fan, and W.-M. Liu, Abelian and non-Abelian quantum geometric tensor, Phys. Rev. B 81 ,245129 (2010). [62] M. Kang, S. Kim, Y. Qian, P. M. Neves, L. Ye, J. Jung, D. Puntel, F. Mazzola, S. Fang, C. Jozwiak, et al. , Mea-surements of the quantum geometric tensor in solids, Na-ture Physics 21 , 110 (2025). [63] S. Hayami, R. Oiwa, and H. Kusunose, Electric Ferro-Axial Moment as Nanometric Rotator and Source of Lon-gitudinal Spin Current, J. Phys. Soc. Jpn. 91 , 113702 (2022). [64] H. Kusunose, R. Oiwa, and S. Hayami, Symmetry-adapted modeling for molecules and crystals, Phys. Rev. B 107 , 195118 (2023). [65] S. Hayami, M. Yatsushiro, and H. Kusunose, Nonlin-ear spin Hall effect in PT -symmetric collinear magnets, Phys. Rev. B 106 , 024405 (2022). [66] T. Sato and S. Hayami, Thermodynamic Multipoles and Dissipative Conductivities in Metallic Systems (2026), arXiv:2603.29267 [cond-mat.mes-hall]. [67] K. S. Knight, D. D. Khalyavin, P. Manuel, C. L. Bull, and P. McIntyre, Nuclear and magnetic structures of KMnF3 perovskite in the temperature interval 10 K–105 K, J. Alloys Compd. 842 , 155935 (2020). [68] V. O. Garlea, R. Jin, D. Mandrus, B. Roessli, Q. Huang, M. Miller, A. J. Schultz, and S. E. Nagler, Magnetic and Orbital Ordering in the Spinel MnV 2O4, Phys. Rev. Lett. 
+
+100 , 066404 (2008). [69] J. L. Garca-Muoz, J. Rodrguez-Carvajal, X. Obradors, M. Vallet-Reg, J. Gonz´ alez-Calbet, and M. Parras, Complex magnetic structures of the rare-earth cuprates 
+
+R2Cu 2O5 (R=Y,Ho,Er,Yb,Tm), Phys. Rev. B 44 , 4716 (1991). [70] E. Morosan, J. A. Fleitman, Q. Huang, J. W. Lynn, Y. Chen, X. Ke, M. L. Dahlberg, P. Schiffer, C. R. Cra-ley, and R. J. Cava, Structure and magnetic properties of the Ho 2Ge 2O7 pyrogermanate, Phys. Rev. B 77 , 224423 (2008). [71] M.-R. Li, M. Retuerto, D. Walker, T. Sarkar, P. W. Stephens, S. Mukherjee, T. S. Dasgupta, J. P. Hodges, M. Croft, C. P. Grams, J. Hemberger, J. S´ anchez-Ben´ ıtez, A. Huq, F. O. Saouma, J. I. Jang, and M. Green-blatt, Magnetic-Structure-Stabilized Polarization in an Above-Room-Temperature Ferrimagnet, Angew. Chem. Int. Ed. 53 , 10774 (2014).

@@ -1,0 +1,1190 @@
+Title: Exploring the conventional and anomalous Josephson effects at arbitrary disorder strength in systems with spin-dependent fields
+
+URL Source: https://arxiv.org/pdf/2604.08231v1
+
+Published Time: Fri, 10 Apr 2026 01:06:05 GMT
+
+Number of Pages: 13
+
+Markdown Content:
+## Exploring the conventional and anomalous Josephson effects at arbitrary disorder strength in systems with spin-dependent fields 
+
+Maryam Darvishi, 1 F. Sebastián Bergeret, 2, 3 and Stefan Ilić 4
+
+> 1
+
+Department of Physics and Nanoscience Center, University of Jyväskylä, P.O. Box 35 (YFL), FI-40014 University of Jyväskylä, Finland 
+
+> 2
+
+Centro de Física de Materiales (CFM-MPC) Centro Mixto CSIC-UPV/EHU, E-20018 Donostia-San Sebastián, Spain 
+
+> 3
+
+Donostia International Physics Center (DIPC), 20018 Donostia–San Sebastián, Spain 
+
+> 4
+
+Department of Physics and Nanoscience Center, University of Jyväskylä, P.O. Box 35 (YFL), FI-40014 University of Jyväskylä, Finland 
+
+(Dated: April 10, 2026) We present a theory of the Josephson current in superconductor-normal metal-superconductor (SNS) junctions in the presence of generic spin-dependent fields, such as spin-orbit coupling (SOC), Zeeman fields, and altermagnetism. We consider systems with arbitrary disorder strength, going beyond the usual diffusive and ballistic approximations. Using the linearized quasiclassical Eilen-berger equation, we derive a compact expression for the Josephson current, which is then applied to various situations of experimental interest. First, we investigate the evolution of the Josephson critical current in an applied magnetic field in the presence of Rashba and Dresselhaus SOC, and discuss how this dependence can be used to probe SOC in the junction. We then study the anoma-lous Josephson ( φ0) effect in systems with Rashba SOC and show that it remains robust over a wide range of disorder strength, and can even be enhanced by moderate disorder in sufficiently long junc-tions. Finally, we investigate the Josephson current in disordered junctions with altermagnets, and show how the 0-π transition in such systems is suppressed by disorder. Our results may be useful for describing experimental setups with high-mobility samples, which nevertheless always contain some amount of disorder, and where neither purely ballistic nor diffusive approximations are adequate. 
+
+I. INTRODUCTION 
+
+The interplay between superconductivity and spin-dependent fields lies at the heart of many interesting phenomena explored in superconducting spintronics [1]. In this context, spin-dependent fields include magnetism as well as spin-orbit coupling (SOC). Their presence breaks two fundamental symmetries of the supercon-ducting state, namely time-reversal and spatial inver-sion symmetries, respectively. As a consequence, the internal structure of Cooper pairs is modified, allowing spin-triplet and finite-momentum correlations to emerge [2]. This leads to distinct signatures in superconducting transport and enables new mechanisms for controlling dissipationless currents in spintronic devices. The simplest example of this physics arises in super-conducting systems with a homogeneous Zeeman field [3, 4]. In bulk superconductors, the competition of pair-ing and spin-splitting gives rise to Fulde-Ferrell-Larkin-Ovchinnikov (FFLO) states, where the Cooper pairs ac-quire a finite momentum and the order parameter be-comes spatially modulated. In Josephson junctions, the same mechanism leads to oscillations of the supercon-ducting condensate inside the ferromagnetic weak link. As a result, the critical current can change sign, pro-ducing the transition between the 0 and π states of the junction. This 0-π transition is one of the main hallmarks of superconductor-ferromagnet Josephson junctions, and has been observed experimentally through variation of sample thickness and magnetic field. Adding SOC to the picture modifies the Zeeman-field-driven physics described above [5]. For example, in Josephson junctions, the 0-π transition may be shifted to different fields or completely suppressed depending on the type of SOC and its strength. SOC may also en-able the formation of equal-spin triplet correlations and the associated long-range proximity effect, in which su-perconducting correlations may persist over much longer distances than in the absence of such triplet components [6, 7]. Moreover, SOC enables an entirely new class of phenomena, known as magnetoelectric effects, in which magnetization and supercurrents become coupled [8]. In bulk systems, magnetoelectric effects manifest as helical superconductivity [9, 10] and Edelstein effects [11, 12]. In Josephson junctions, this mechanism produces an anoma-lous φ0 phase shift corresponding to a finite supercur-rent at zero phase difference [13, 14]. Perhaps the most striking manifestation of magnetoelectric effects is non-reciprocal transport in the form of the superconduct-ing diode effect [15], characterized by different critical currents for opposite current directions, which has re-cently attracted considerable attention and appears both in bulk systems and Josephson junctions. Lately, the interplay between altermagnetism and su-perconductivity has emerged as another active direc-tion in superconducting spintronics [16–23]. Although experimental confirmation of the proximity effect in altermagnet-superconductor structures is still lacking, there have been a number of exciting theoretical develop-ments. An altermagnet may be viewed as a system with momentum-dependent Zeeman splitting that averages to zero over the Brillouin zone [24]. Despite the absence of net magnetization, coupling to superconductivity gives rise to similar phenomena as in magnetic systems, in-
+
+> arXiv:2604.08231v1 [cond-mat.supr-con] 9 Apr 2026
+
+2cluding FFLO-like modulation of the order parameter in the bulk [20, 25], 0-π transitions in Josephson junctions [20, 21], along with new phenomena such as anisotropic current-phase relations [19]. Most existing theoretical descriptions of Josephson junctions in the presence of spin-dependent fields are for-mulated either in the ballistic or in the diffusive limit, corresponding respectively to negligible and strong impu-rity scattering, with only limited results available beyond these limits [26, 27]. Experimentally available structures, however, inevitably contain a finite amount of disorder, while modern material growth allows one to approach very high mobilities where the purely diffusive limit is no longer applicable. A theory valid at intermediate disor-der strength is therefore required. In this work, we develop such a theory within the quasi-classical formalism, describing the Josephson effect valid for arbitrary disorder strength in the presence of generic spin-dependent fields. The main focus of our work is the Josephson current in such junctions, given by the current-phase relation 
+
+jJ = js sin φ + jc cos φ = |jJ | sin( φ + φ0), (1) where φ is the phase difference across the junction, and js and jc are the conventional and anomalous [13, 14] Josephson currents, respectively. Alternatively, the current-phase relation can be written using the am-plitude |jJ | = pj2 
+
+> s
+
++ j2 
+
+> c
+
+and the anomalous phase shift 
+
+φ0 = arctan( jc/j s). The conventional component js
+
+occurs in all Josephson junctions, while the anomalous component jc and the associated phase shift φ0 origi-nate from magnetoelectric effects [28]. Their appearance requires simultaneous breaking of time-reversal symme-try and inversion symmetry, which can occur, for exam-ple, in the presence of SOC together with Zeeman fields. In this work, we investigate how the interplay of spin-dependent fields and disorder affects both js and jc. In Sec. II, we introduce the model and specify the geome-try of the superconductor–normal metal–superconductor (SNS) Josephson junction and outline the quasiclassical Eilenberger formalism used throughout this work. In Sec. III, we present the general solution of the Eilen-berger equation, which provides a framework for calcu-lating the Josephson current in the presence of generic spin-dependent fields for any disorder strength. Our main findings are presented in Secs. IV and V, where we apply our general theory to several systems of experimental interest. We first discuss junctions with Rashba and Dresselhaus SOC in the presence of a Zee-man field in Sec. IV A, where we demonstrate how the magnetic-field dependence of the critical current js can be used to probe the nature and magnitude of the SOC. We then turn to the anomalous φ0 effect in systems with Rashba SOC in Sec. IV B, and explore it over the full range of disorder strength. We demonstrate that the ef-fect can even be enhanced by moderate disorder in suf-ficiently long junctions. Finally, we consider junctions incorporating altermagnetic materials in Sec. V, where we show that disorder leads to a rapid suppression of the 
+
+0-π transition. We summarize our main results and conclusions in Sec. VI.  
+
+> II. MODEL AND SETUP
+
+We consider an SNS Josephson junction where the nor-mal region is subject to spin-dependent fields. The single-particle Hamiltonian describing the normal metal is 
+
+H = ξp + bi
+
+> p
+
+σi + hi
+
+> p
+
+σi + Vimp . (2) Here and throughout the text, we use the natural units where kB = ℏ = 1 , ξp = p2 
+
+> 2m
+
+− μ is the kinetic en-ergy term, where μ is the chemical potential and p is the momentum. Spin-dependent fields are captured by the SOC terms bi
+
+> p
+
+, and the magnetic (Zeeman-like) terms 
+
+hi
+
+> p
+
+. SOC terms break the spatial inversion symmetry and are odd under momentum inversion, bi 
+
+> −p
+
+= −bi
+
+> p
+
+, whereas magnetic terms break the time-reversal symmetry (TRS) and are even under momentum inversion hi 
+
+> −p
+
+= hi
+
+> p
+
+. We introduced the Pauli matrices σi, i = x, y, z , acting in spin space. The potential Vimp represents a random spin-independent impurity potential. Throughout this work, we will consider only linear-in-momentum SOC, so that 
+
+bi 
+
+> p
+
+= bij pj , and we will retain momentum dependence in the magnetic terms hi
+
+> p
+
+, which will be essential for the description of altermagnetism. Figure 1 shows the system under consideration. Panel 1(a) illustrates a typical experimental configuration: aplanar Josephson junction in which two large supercon-ducting electrodes are deposited on a normal metal that hosts spin-dependent fields. In our theoretical treatment, this structure is approximated by considering an infinite two-dimensional system where a conventional s-wave su-perconducting pairing potential is imposed in the regions 
+
+|x| > d/ 2, as shown in Fig. 1(b). Therefore, the pairing potential has the form 
+
+∆( x) = ∆ ei φ 
+
+> 2
+
+Θ ( x − d/ 2) + ∆ e−i φ 
+
+> 2
+
+Θ ( −x − d/ 2) , (3) where ∆ is its magnitude, d denotes the distance between the superconducting electrodes, φ is the phase difference between the two superconductors, and Θ is the Heavi-side step function. Spin-dependent fields are taken to be present throughout the entire structure, including both the regions with ∆ = 0 and ∆̸ = 0 .Combining the normal state Hamiltonian (2) with the pairing potential (3), we can write the Bogoliubov-de Gennes Hamiltonian for our setup 
+
+HBdG = [ ξp + bi
+
+> p
+
+σi + Vimp ]τz + hi
+
+> p
+
+σi + ∆( x)τ+ + ∆ ∗(x)τ−,
+
+(4) where τi are Pauli matrices in Nambu space, and τ± = 
+
+> 12
+
+(τx ± iτ y ). Next, we assume the quasiclassical approx-imation, meaning the chemical potential is the domi-nant energy scale μ ≫ ∆, τ −1, h i
+
+> p
+
+, b i
+
+> p
+
+, and that electronic 3       
+
+> FIG. 1. Schematic of an SNS junction with spin-dependent fields. (a) Typical experimental setup: two s-wave superconducting leads are deposited on top of a normal metal, forming a planar SNS Josephson junction. (b) Theoretical model used in this work: an infinite 2D material with spin-dependent fields in which a finite pairing potential is imposed at |x|> d/ 2. Spin-dependent fields are present throughout the entire structure, including both the regions where ∆ = 0 and ∆̸= 0 .
+
+transport occurs near the Fermi level. This assumption holds in the majority of experimentally available materi-als, and moreover, it enables us to approximate the spin dependent fields as bi 
+
+> p
+
+≈ bipF n ≡ bi 
+
+> n
+
+and hi 
+
+> p
+
+≈ hipF n ≡ hi
+
+> n
+
+,with pF being the Fermi momentum, and n = p/|p| de-scribes the momentum direction along the Fermi surface. Furthermore, we assume that superconducting correla-tions ∆ are weak, which is appropriate for structures in which ∆ is introduced via the proximity effect through an opaque superconductor-normal interface, or close to the critical temperature of the superconductor. Under these assumptions, our system is described by the linearized Eilenberger equation [7, 14, 29] 
+
+vF nk∂k ˆf + 2 ωn ˆf − i{hi
+
+> n
+
+σi, ˆf } + i[bi
+
+> n
+
+σi, ˆf ]= 1
+
+τ (⟨ ˆf ⟩ − ˆf ) − 2i∆( x) + 12m { ˆFij , n i∂nj
+
+ˆf }. (5) Here, ˆf = f iσi, (i = 0 , x, y, z ) is quasiclassical anoma-lous Green’s function, where f 0 describes the singlet superconducting correlations, while f x,y,z describes the triplets. Furthermore, ωn = 2 πT (n + 1 /2) , n ∈ Z, is the Matsubara frequency, with T being the temperature, τ is the disorder scattering time, and ⟨... ⟩ denotes averaging over the momentum-direction n. As seen from the struc-ture of Eq. (5), the main role of the magnetic terms hi 
+
+> n
+
+is to couple singlets and triplets. The role of the SOC field is two-fold. First, the term [bi
+
+> n
+
+σi, ˆf ] introduces coupling between triplets, leading to triplet precession and relax-ation. Second, the term containing ˆFij is responsible for magnetoelectric phenomena, such as the anomalous Josephson effect, the Edelstein effects, and the diode ef-fect. The object ˆFij = − ˆFji = −i[ ˆAi, ˆAj ] is known as the field-strength tensor, with ˆAi = −2bki σk correspond-ing to the effective vector potentials in the SU(2) gauge-field formulation of linear-in-momentum spin–orbit cou-pling [7, 30, 31]. Importantly, this magnetoelectric term scales as ∼ | bn|/μ , and therefore it is necessarily small within the quasiclassical approximation. Still, we retain it to be able to discuss the anomalous Josephson effect in Sec. IV B. In terms of the anomalous Green’s functions, the su-percurrent is given by: 
+
+ji = −ieπN 0vF T X
+
+> ωn>0
+
+Tr σ ⟨ni ˆf ˆ¯f ⟩, (6) where N0 is the density of states at the Fermi level and Tr σ denotes the trace over spin, and ˆ¯f (n) = σy ˆf ∗(−n)σy
+
+is the time-reversal conjugated anomalous Green’s func-tion. This current is conserved, ∇j = 0 , provided that 
+
+∆( x) is determined self-consistently [29]. For simplicity, and to avoid the complexity of the self-consistent calcu-lation, we assume that ∆ is rigid and unaffected by the weak link and the spin-dependent fields. This assumption is justified in lateral junctions shown in Fig. 1(a), where superconductivity is induced in a 2D normal metal by large 3D superconducting electrodes. In the next section, we present a general solution of Eq. (5). This solution is then used to calculate the Josephson current using Eq. (6). 
+
+III. GENERAL SOLUTION OF THE EILENBERGER EQUATION AND THE JOSEPHSON CURRENT 
+
+To solve Eq. (5), we first notice that the spatial varia-tions in our setup occur only along the x-direction, mean-ing that the problem is effectively one-dimensional. We proceed by transforming Eq. (5) to the reciprocal space, by applying the Fourier transform 
+
+F (x) = 1
+
+√2π
+
+Z
+
+dQe iQx FQ. (12) This way we obtain 
+
+ iQv F nx + 2 ωn + τ −1 ˆfQ − i{hi
+
+> n
+
+σi, ˆfQ} + i[bi
+
+> n
+
+σi, ˆfQ]= τ −1⟨ ˆfQ⟩ + 12m { ˆFxy , L ˆfQ} + ∆ Q, (7) where we introduced the shorthand notation for the op-erator L ≡ nx∂ny −ny ∂nx , and the source term ∆Q is ob-tained by Fourier-transforming the pair potential ∆( x),
+
+∆Q = −2i∆√2πδ (Q) cos ( φ/ 2) + 2∆ 
+
+√2πQ 
+
+h
+
+eid (Q+φ)/2 − e−id (Q+φ)/2i
+
+. (8) Next, we express the anomalous Green’s function as a four-component vector in the singlet–triplet basis: ⃗fQ = ( f xQ, f yQ, f zQ, f 0
+
+> Q
+
+)T, (9) Now, we can rewrite the Eilenberger equation in the fol-lowing form 
+
+hbΠ(0) i−1⃗ fQ = 1
+
+τ ⟨⃗fQ⟩ + bFL ⃗ fQ + ∆ Q⃗e 0, (10) 4where ⃗e 0 = (0 , 0, 0, 1) T. Here we introduce the polariza-tion operator bΠ(0) , which is a 4 × 4 operator acting in a singlet-triplet space defined as 
+
+bΠ(0) =
+
+
+
+τ −1 + 2 ωn + iQv F nx + bAn
+
+−1
+
+, (11) where bAn is a matrix that accounts for spin-dependent fields. 
+
+bAn = 2 
+
+
+
+0 bz 
+
+> n
+
+−by 
+
+> n
+
+−ih x
+
+> n
+
+−bz 
+
+> n
+
+0 bx 
+
+> n
+
+−ih y
+
+> n
+
+by 
+
+> n
+
+−bx 
+
+> n
+
+0 −ih z
+
+> n
+
+−ih x 
+
+> n
+
+−ih y 
+
+> n
+
+−ih z 
+
+> n
+
+0
+
+ . (12) Magnetoelectric effects are captured by the operator bF
+
+given as 
+
+bF =
+
+
+
+0 0 0 Fx
+
+0 0 0 Fy
+
+0 0 0 Fz
+
+Fx Fy Fz 0
+
+ , (13) where Fi = 14m Tr 
+
+
+
+σi ˆFxy 
+
+
+
+.We proceed to solve Eq. (10) perturbatively in the magnetoelectric term bF. As explained in Sec. II, such a perturbative treatment is justified because magneto-electric effects are weak in the quasiclassical theory. We expand the Green’s function as ⃗ fQ =⃗ f (0)  
+
+> Q
+
++ δ⃗f Q, where ⃗f (0)  
+
+> Q
+
+is the bare solution, and δ⃗f Q ∝ bF is the perturbative correction. Using Eq. (10), we find ⃗f (0)  
+
+> Q
+
+= 1
+
+τ bΠ(0) ⟨⃗ f (0)  
+
+> Q
+
+⟩ + bΠ(0) ∆Q⃗e 0, (14) 
+
+δ⃗f Q = 1
+
+τ bΠ(0) ⟨δ⃗f Q⟩ + bΠ(0) bFL ⃗ f (0)  
+
+> Q
+
+. (15) Solving these equations finally yields ⃗fQ = bΠ
+
+
+
+1 − 1
+
+τ ⟨bΠ⟩
+
+−1
+
+∆Q⃗e 0, (16) where we introduced the total polarization operator as 
+
+bΠ = bΠ(0) + δ bΠ, (17) consisting of a "bare" contribution defined in Eq. (11) corrected to account for magnetoelectric effects by 
+
+δ bΠ = bΠ(0) bF bΠ(0) L
+
+hbΠ(0) i−1 bΠ(0) . (18) Equation (16), together with Eqs. (11), (17) and (18), provides a generic solution for the anomalous Green’s function in the reciprocal Q-space in the presence of ar-bitrary disorder strength and for generic spin-dependent fields. It is one of the main results of our work. We pro-ceed to calculate the Josephson current in different cases based on these equations.  
+
+> A. Calculation of the Josephson current
+
+To compute the supercurrent, we first need to trans-form the anomalous Green’s function from the Q-space back to the real space. At the center of the junction (x = 0 ), we obtain, using (12), ⃗ f (0) = 1√2π
+
+R dQ⃗f Q. In general, this integral must be evaluated numerically, as analytical results can be obtained only in the ballistic and diffusive limits, and even then, only for some spe-cific configurations of spin-dependent fields, as discussed below. The Josephson current then follows from Eq. (6).  
+
+> B. Ballistic and diffusive limit
+
+In this section, we examine how our theory simplifies in the ballistic and diffusive limits. 
+
+a. Ballistic limit. In the absence of disorder, Eq. (16) simplifies to ⃗fQ = bΠ∆ Q⃗e 0, (19) where one should set τ −1 → 0 when evaluating the po-larization operator (11). This form enables simpler nu-merical evaluation and, in certain cases, analytical calcu-lations of the Josephson current. To illustrate how the current is obtained from Eq. (19), let us consider the simplest case – the absence of spin-dependent fields. Then, only the singlet com-ponent remains, f 0 
+
+> Q
+
+= ∆Q/(2 ωn + iQv F nx), which, after transforming to real space becomes f 0(0) = 
+
+> ∆
+> ωn
+
+exp ( −dω n/|nx|vF ) (sgn( nx) sin φ 
+
+> 2
+
+− i cos φ 
+
+> 2
+
+). From here, we finally obtain the Josephson current 
+
+jJ = 2 eN 0vF πT ∆2 X
+
+> ωn>0
+
+1
+
+ω2
+
+> n
+
+D
+
+|nx|e− 2dωn vF |nx |
+
+E
+
+sin( φ).
+
+(20) This expression is consistent with the previous works on ballistic Josephson junctions in the limit of small ∆ [32]. In Appendix A, we present a similar analytical solution for a system with Rashba SOC and an in-plane Zeeman field, which is discussed in more detail in Sec. IV A. 
+
+b. Diffusive limit. At strong disorder, τ −1 ≫
+
+∆, h i
+
+> n
+
+, b i
+
+> n
+
+, we may expand the polarization operator in orders of τ as bΠ(0) ≈ τ (1 − bΛτ + bΛ2τ 2 + ... ) with 
+
+bΛ = 2 ωn + iQv F nx + bAn. The leading orders in the magnetoelectric correction term are obtained as δΠ ≈
+
+τ 3 bFL bΛ − τ 4( bF bΛLbΛ + bF(LbΛ) bΛ + bΛ bFL bΛ) . Then, we ob-tain the anomalous Green’s function as ⃗fQ ≈  1 − iQv F τ n x − bAnτ + 2 iQv F nx bAnτ 2
+
++ bFnL bAnτ 2 bD∆Q⃗e 0. (21) In the parentheses in the above equation, one must retain terms that are odd in n, since these terms are essential for obtaining a finite supercurrent. We introduced the 5diffusion operator 
+
+bD−1 ≡ 1
+
+τ
+
+
+
+1 − 1
+
+τ ⟨Π⟩
+
+
+
+≈ 2ωn + ⟨ bAn⟩ + DQ 2 − ⟨ bA2
+
+> n
+
+⟩τ
+
+− 2iQv F ⟨nx bAn⟩τ − 6DQ 2⟨n2 
+
+> x
+
+bAn⟩τ − iQ [⟨ny bAn⟩, bF]τ 2.
+
+(22) Here, D = 12 v2 
+
+> F
+
+τ is the diffusion constant. The physical role of different terms is the following. The term ⟨ bAn⟩
+
+describes the average spin splitting, to which only the magnetic fields hi 
+
+> n
+
+contribute. On the other hand, only the SOC fields bi 
+
+> n
+
+contribute to the term 2iQ ⟨nx bAn⟩τ ,capturing triplet precession, that is, rotations of the triplet vector in real space caused by the SOC. The term ⟨ bA2
+
+> n
+
+⟩τ governs the triplet and singlet relaxation due to the SOC and magnetic fields, respectively. The term 6DQ 2⟨n2 
+
+> x
+
+bAn⟩τ captures spin-dependent corrections to the diffusion constant due to magnetic fields. As we discuss in Sec. V, this term is needed to capture the 0-
+
+π transitions in diffusive altermagnets. Finally, the last term in Eq. 22 accounts for magnetoelectric effects, and it is necessary to obtain the anomalous Josephson effect, discussed in Sec. IV B. The solution presented in Eq. (21) is equivalent to solv-ing the linearized Usadel equation for diffusive systems [33–35]. As a specific example, for a system with Rashba SOC and an in-plane Zeeman field, Eq. (22) reproduces the well-known diffusion operator [36], widely used in both normal and superconducting spintronics. Its ex-plicit form is shown in Appendix B. Let us illustrate how to obtain the Josephson cur-rent using Eq. (21) for the simplest case with no spin-dependent fields. In this case, the only finite component is the singlet one, f 0 
+
+> Q
+
+= ∆ Q(1 − iQv F τ n x)/(DQ 2 + 2 ωn),which, when transformed into real space, yields f 0(0) =  
+
+> ∆
+> ωn
+
+exp( −dκ ω /2)( κω nxvF τ sin φ 
+
+> 2
+
+− i cos φ 
+
+> 2
+
+). Here we in-troduced κω = p2ωn/D . The corresponding Josephson current is then [32, 37] 
+
+jJ = 2 eN 0πT D X
+
+> ωn>0
+
+∆2κω e−dκ ω
+
+ω2
+
+> n
+
+sin( φ). (23)  
+
+> IV. APPLICATION TO SYSTEMS WITH SOC AND ZEEMAN FIELD
+
+In this section, we apply our general result to systems with linear-in-momentum SOC subjected to in-plane Zee-man fields. This setting is directly relevant to Joseph-son junctions formed by superconductors (e.g., Al) prox-imitizing semiconducting 2D electron gases with strong SOC (e.g., InAs) [37–45], and also to junctions formed in van der Waals heterostructures that combine super-conductivity with intrinsic SOC and magnetism [46–49]. Such platforms are central in superconducting spintronics and have been recently extensively investigated in exper-iments [5]. A major recent focus in these systems has been on magnetoelectric phenomena, most notably the diode effect [15] and the anomalous φ0 Josephson effect. Understanding how these phenomena depend on disorder is therefore both of fundamental and practical interest. We first neglect magnetoelectric effects in Sec. IV A, which means setting bF → 0 in Eq. (16). Our goal is to first investigate how the interplay between SOC and Zeeman fields controls the conventional Josephson effect, described by js in Eq. (1), specifically in systems with linear Rashba and Dresselhaus SOC. In particular, we discuss how the critical current exhibits characteristic de-pendence on the direction of in-plane field, which can be used to identify and probe the type of SOC present in the system. Then, in Sec. IV B we consider magnetoelectric phe-nomena, taking finite bF, and investigate the anomalous Josephson effect in systems with linear Rashba SOC. While this effect has been extensively studied in the bal-listic [13, 29, 50] and diffusive limits[14, 51], the interme-diate disorder regime, which is likely most relevant for ex-periments, has remained largely unexplored. We analyze the full crossover from the clean to diffusive regime, and find that the anomalous phase shift can even be enhanced by moderate disorder in sufficiently long junctions. In all plots throughout this work, we set the tempera-ture to T = 0 .1∆ , and we express lengths in terms of the coherence length of a clean superconductor ξ0 = vF /∆.  
+
+> A. Conventional Josephson effect and 0-π
+> transitions in the presence of SOC
+
+Spin-orbit coupling, on its own, does not affect the Josephson effect in conventional s-wave junctions. This changes once the Zeeman field is applied. Namely, the Zeeman field converts the singlet correlations into triplet ones, and SOC then couples the triplets and causes them to precess. As a consequence, SOC can significantly mod-ify the 0-π transitions, shifting the field at which the tran-sition happens or eliminating the transition altogether. Related effects have been studied in systems with spin-orbit impurities [27], and in junctions with intrinsic SOC in ballistic[52] and diffusive limits[53]. Here, we extend those works to arbitrary disorder strength. We consider a system with linear Rashba and Dres-selhaus spin-orbit coupling subjected to a homogeneous in-plane Zeeman field. In this case, the corresponding SOC terms that should be substituted into Eq. (12) read 
+
+bx 
+
+> n
+
+= αp F ny + βp F nx, by 
+
+> n
+
+= −αp F nx − βp F ny , (24) where α and β describe the Rashba and Dresselhaus SOC, respectively, while the Zeeman field is captured by 
+
+hx 
+
+> n
+
+= hx, hy 
+
+> n
+
+= hy . (25) We first consider the case of pure Rashba SOC, α̸ = 0 
+
+with β = 0 . In the ballistic limit, the Josephson current can be obtained analytically, although the expression is 60 1 2 3
+
+# d/ 0
+
+0.2 
+
+0.0 
+
+0.5 
+
+> js/j0
+
+## hy = /2, hx = 0 
+
+## (a) 
+
+0 1 2 3
+
+# d/ 0
+
+0.2 
+
+0.4 
+
+0.8 
+
+## hy = 0, hx = /2 
+
+## (b) 
+
+pF/ = 0 pF/ = 0.25 pF/ = 0.5 pF/ = 2              
+
+> FIG. 2. Josephson critical current as a function of junction length for several strengths of Rashba spin–orbit coupling. (a) Zeeman field applied perpendicular to the current ( hy= ∆ /2, h x= 0 ). (b) Zeeman field applied parallel to the current ( hx= ∆ /2, h y=0). In the absence of SOC, the current exhibits a 0–πtransition with increasing length, while finite Rashba coupling introduces a pronounced anisotropy and can suppress the transition for fields parallel to the current. The current is normalized by j0= 2 eN 0vF,and disorder is fixed at 1/τ = ∆ .
+
+somewhat cumbersome and deferred to Appendix A. In the diffusive limit, the closed-form solution is no longer possible analytically, but the diffusion operator acquires a simple form known from previous studies [36], see Ap-pendix B. In Fig. 2, we show how Rashba SOC modi-fies the critical current js. Without SOC (blue curve), the critical current changes sign as the junction length increases – this is the 0-π transition. A similar sign change also occurs when the length of the junction is fixed, and the Zeeman field is varied. In the presence of Rashba SOC, this behavior becomes anisotropic. For a field applied along the y direction, perpendicular to the current, the 0-π transition remains, but it is shifted [see Fig. 2(a)]. In contrast, for a field applied along the x-direction, parallel to the current, the transition is suppressed at sufficiently strong SOC [see Fig. 2(b)]. Namely, for quasiparticles moving along x (the direc-tion to the current), Rashba SOC causes spin preces-sion around the y-axis. A Zeeman field applied along x
+
+generates the x-triplet, which is strongly affected by the precession, which then ultimately disrupts the 0-π transi-tion at sufficiently strong SOC. In contrast, a field along 
+
+y produces a y-triplet that does not precess, allowing the 
+
+0-π transition to persist at strong SOC. We examine this anisotropy in more detail in Fig. 3, where we plot the absolute value of the critical current in the hx-hy plane for various strengths of SOC and dis-order. In the absence of SOC (right column), the cur-rent pattern is isotropic, whereas there is pronounced anisotropy at strong SOC and weak disorder (left col-umn), consistent with the picture discussed above. At strong SOC coupled with strong disorder (lower-left cor-ner of Fig. 3), the picture looks more isotropic again – this is because the strong spin-relaxation in this regime sup-presses all triplets. Intermediate SOC strength (middle 1
+
+0
+
+1
+
+> hy/
+> 1/ = 0
+
+## pF = 10 pF = 0.5 pF = 0 
+
+1
+
+0
+
+1
+
+> hy/
+> 1/ =
+
+1 0 1
+
+## hx/
+
+1
+
+0
+
+1
+
+> hy/
+> 1/ = 10
+
+1 0 1
+
+## hx/ 1 0 1
+
+## hx/
+
+0
+
+0.5 
+
+1           
+
+> js/j max 0
+> FIG. 3. Normalized critical current js/j max 0in the (hx, h y)plane for pure Rashba spin–orbit coupling ( β= 0 ). The junction length is fixed at d/ξ 0= 2 . Rows correspond to increasing disorder strength
+> 1/τ , while columns show increasing Rashba coupling αp F. In the absence of SOC, the pattern is isotropic, whereas finite Rashba coupling generates pronounced anisotropy.
+
+column) produces the most intricate pattern that inter-polates between the former two cases of strong SOC and no SOC. We next consider the case of pure Dresselhaus SOC, 
+
+α = 0 with β̸ = 0 . The corresponding current patterns in this case look the same as Fig. 3 but rotated by π/ 2
+
+in the hx-hy plane. Equivalently, this corresponds to exchanging hx → hy and hy → hx.Finally, we consider the particularly interesting case of equal Rashba and Dresselhaus SOC, α = β. This regime has been widely studied in spintronics due to the emer-gence of the persistent spin helix [54]. In this situation, along the special direction (1 /√2, 1/√2) , the Rashba and Dresselhaus SOC exactly cancel each other, leading to the suppression of spin relaxation along that direction. In Fig. 4 we plot the absolute value of the critical cur-rent in the hx-hy plane. The distinct diagonal features visible in these plots are a direct consequence of the per-sistent spin helix. The results shown in Figs. 3 and 4 demonstrate that different types of SOC give rise to distinct patterns of the critical current as a function of Zeeman field. The symmetry and anisotropy of these patterns are directly tied to the nature and magnitude of SOC, which could be used to experimentally probe the SOC in Josephson junctions. 
+
+B. Anomalous Josephson Effect at Arbitrary Disorder 
+
+Beyond modifying the conventional Josephson current 
+
+js in the presence of a Zeeman field, as discussed in 71
+
+0
+
+1
+
+> hy/
+> 1/ = 0
+
+## pF = pF = 10 pF = pF =
+
+1
+
+0
+
+1
+
+> hy/
+> 1/ =
+
+1 0 1
+
+## hx/
+
+1
+
+0
+
+1
+
+> hy/
+> 1/ = 10
+
+1 0 1
+
+## hx/
+
+0
+
+0.5 
+
+1
+
+> js/j max 0
+
+FIG. 4. Normalized critical current js/j max 0 in the (hx, h y ) plane for equal Rashba and Dresselhaus spin–orbit coupling ( α = β). The junction length is fixed at d/ξ 0 = 2 . Rows correspond to increasing disorder strength 1/τ , and columns to increasing SOC strength. The characteristic diagonal features are signatures of the persistent spin helix, arising from the suppression of spin relaxation along the symmetry-protected direction. 
+
+Sec. IV A, SOC can give rise to a more striking phe-nomenon: the anomalous Josephson effect. In this case, the current-phase relation acquires a finite anomalous component jc and the anomalous phase shift φ0 [see Eq. (1)]. Within our approach, the anomalous Joseph-son effect originates from the term bF, which introduces an additional singlet-triplet conversion and enables mag-netoelectric effects. We focus on the prototypical and most widely studied setup: a Rashba material subjected to an in-plane Zeeman field perpendicular to the current. Therefore, we use the following SOC and Zeeman fields in Eq. (12) 
+
+bx 
+
+> n
+
+= αp F ny , by 
+
+> n
+
+= −αp F nx, hy 
+
+> n
+
+= hy , (26) and the components of the operator bF defined in Eq. (13) are found as 
+
+Fx = Fy = 0 , Fz = mα 2 = α2p2
+
+> F
+
+2μ . (27) In Fig. 5, we plot the conventional and anomalous com-ponents of the current, jc and js, alongside the anoma-lous phase shift φ0 extracted from them. The presence of magnetoelectric coupling smooths the φ0(hy ) depen-dence: in its absence, φ0 can only have values of 0 and 
+
+π, whereas in its presence φ0 can assume any value. We can see that the φ0 effect persists across the entire range of disorder strengths, from the ballistic to the diffusive regime, although the overall magnitude of the current sharply decreases with increasing disorder. Moreover, we can see that, as disorder strength increases, larger fields are needed to produce a substantial φ0 effect. This is be-cause disorder induces triplet relaxation, and therefore 0 1 2 3
+
+0.0 
+
+0.5 
+
+1.0   
+
+> 0/ 10 6
+> 10 2
+> 10 2
+> |js/j0|
+
+0 1 2 3  
+
+> 10 8
+> 10 4
+> 10 0
+> |jc/j0|
+
+0 1 2 3
+
+0
+
+1
+
+2  
+
+> 0/ 10 9
+> 10 3
+> 10 2
+> |js/j0|
+
+0 1 2 3  
+
+> 10 12
+> 10 5
+> 10 0
+> |jc/j0|
+
+0.0 0.5 1.0 
+
+# hy/
+
+0
+
+1
+
+2  
+
+> 0/ 10 13
+> 10 6
+> 10 2
+> |js/j0|
+
+0.0 0.5 1.0 
+
+# hy/  
+
+> 10 13
+> 10 6
+> 10 0
+> |jc/j0|
+
+1/ = 0 1/ = 1/ = 5 1/ = 10 1/ = 30 (a) 
+
+(b) 
+
+(c) 
+
+FIG. 5. (a–c) Anomalous phase shift φ0 as a function of the in-plane Zeeman field hy for junction lengths (a) d/ξ 0 = 0 .2, (b) 
+
+d/ξ 0 = 1 , and (c) d/ξ 0 = 3 . The left panels show φ0(hy ), while the right panels display the corresponding current components js and 
+
+jc (logarithmic scale), from which φ0 = arctan( jc/j s) is extracted. The sharp dips occur at points where either js or jc changes sign. Parameters: αp F = 10∆ , Fz = 0 .5∆ , and current normalized by 
+
+j0 = 2 eN 0vF . The dashed lines indicate wrapping of φ0 from 2π
+
+to 0.0 10 20 30 
+
+# 1/( )
+
+0.00 
+
+0.25 
+
+0.50 
+
+> 0
+> hy
+> |hy = 0
+
+d/ 0 = 0.2 
+
+d/ 0 = 1 
+
+d/ 0 = 3 
+
+FIG. 6. Slope of the anomalous phase shift at low Zeeman fields,  
+
+> ∂φ 0
+> ∂h y
+
+|hy =0 , as a function of disorder strength for junction lengths 
+
+d/ξ 0 = 0 .2, 1, and 3. The slope characterizes the linear magne-toelectric response of the junction and quantifies the sensitivity of the anomalous phase to weak in-plane fields. Spin–orbit coupling parameters are the same as in Fig. 5. 8stronger fields are needed to generate sufficiently large triplets to drive the φ0 effect. In addition, we see that in the ballistic limit, the evo-lution of φ0 from 0 to π happens rather sharply, within a narrow range of magnetic fields, whereas in more dis-ordered systems it is spread out over a wider field range. This might be relevant for experimental observation of this effect, since in many semiconductors with strong SOC (e.g. InAs), that may be used as a weak link, the electron g-factor is large [55], so that even a small applied field can induce a sizable Zeeman energy. In such cases it might be advantageous to work with more disordered structures, where the more gradual evolution of φ0 over a large field range makes the effect easier to control. To better isolate the role of disorder on the anomalous phase, we next focus on the low-field regime, where the effect scales linearly with the field, φ0 ∼ hy . In Fig. 6, we plot the low-field slope of the φ0 as a function of disorder strength for different junction lengths. We see that there is a strong enhancement of the effect in longer junctions, consistent with previous studies [14, 29, 50]. This could be understood from the fact that SOC acts over a larger distance, allowing for greater accumulation of the anoma-lous phase. Interestingly, moderate disorder leads to a slight enhancement of the φ0 effect, particularly in longer junctions. A possible explanation for this might be that disorder makes the junction effectively longer, which pro-motes the φ0 effect, as explained above. Namely, disorder reduces the superconducting coherence length ξ, making the ratio d/ξ larger. As disorder further increases, re-laxation effects become more important, leading to sup-pression of triplet components and gradual decline of the 
+
+φ0 effect. We note that the study of a closely related magnetoelectric phenomenon, the superconducting diode effect, has likewise reported a non-trivial enhancement of the effect at moderate disorder strengths in homogeneous Rashba superconductors [56]. Another phenomenon related to the φ0 effect is the superconducting Edelstein effect [11, 12], whereby an ap-plied magnetic field induces a supercurrent in a homoge-neous superconductor, and inversely, a supercurrent gen-erates a spin polarization. The Edelstein effect can also be obtained using our equations by considering a homoge-neous bilayer of a superconductor in contact with a nor-mal metal with a spin-dependent field. In our framework, this corresponds to a constant source term ∆( x) = ∆ . In Appendix C, we present the results obtained using our approach and show that it is consistent with the previous studies of this effect [11, 12, 57]. The results of this section provide a useful framework for interpreting the experiments probing the φ0 effect and related magnetoelectric phenomena. In realistic devices, the relevant parameter regime is often characterized by moderate disorder, and therefore, the simpler ballistic or diffusive theories might not be appropriate.  
+
+> V. APPLICATION TO JUNCTIONS WITH ALTERMAGNETS
+
+The interaction between superconductivity and alter-magnetism has recently garnered significant attention [16–23]. Altermagnets have a momentum-dependent exchange field that breaks spin degeneracy even when there is no net magnetization. Altermagnetism affects the Andreev reflection at interfaces with superconduc-tors [16–18] and leads to unconventional Josephson be-havior in clean junctions [19–21]. A diffusion theory for altermagnet-superconductor systems has also been recently formulated [22, 23], and applied to diffusive Josephson junctions [58]. As discussed in the Introduction, despite the absence of net magnetization, altermagnet-superconductor struc-tures remarkably exhibit many phenomena characteris-tic of conventional superconductor-ferromagnet systems, including FFLO-like states and 0-π transitions. At the same time, altermagnets may offer practical advantages over conventional ferromagnets, since the lack of stray fields in altermagnets [24] means that detrimental orbital effects do not arise. Here we investigate the Josephson junctions with altermagnets across the full range of disor-der strength, generalizing previous studies for clean [19– 21] and diffusive [58] junctions. We demonstrate that even a small amount of disorder is sufficient to wash out features such as 0-π transitions and the anisotropic crit-ical current. As a minimal description of an altermagnet, we assume the d-wave momentum dependence with magnetization axis along the z direction, captured by the following term in Eq. (12) 
+
+hz 
+
+> n
+
+= h0
+
+(n2 
+
+> x
+
+− n2 
+
+> y
+
+) cos(2 χ) + 2 nxny sin(2 χ) . (28) Here, h0 sets the amplitude of altermagnetism, and χ
+
+defines the orientation of the d-wave pattern with respect to the current direction. Following Sec. III B, we find the critical current ana-lytically in the ballistic limit 
+
+jBs = eN 0vF πT ∆2 X
+
+> ωn>0,±
+
+ |nx|
+
+(ωn ± ih z
+
+> n
+
+)2 e− 2d(ωn ±ih z 
+
+> n)
+> vF|nx |
+
+
+
+,
+
+(29) and in the diffusive limit 
+
+jDs = eN 0πT D X
+
+> ωn>0,±
+
+∆2κ± 
+
+> ω
+
+e−dκ ±
+
+> ω
+
+(ωn + Γ) 2 , (30) where we introduced 
+
+κ± 
+
+> ω
+
+=
+
+s
+
+2( ωn + Γ) 
+
+D(1 ± iK χ) , Γ = h20τ, Kχ = 3 h0τ cos 2 χ. 
+
+(31) In the present representation, the altermagnet in the dif-fusive limit is governed by two parameters: the relaxation rate Γ that has a form similar to the Dyakonov-Perel 90 1 2 3
+
+# d/ 0
+
+## 0.2 
+
+## 0.5 
+
+## 1.0 
+
+> js/j0
+
+## (a) 
+
+## 0 1 2 3
+
+# h0/
+
+## (b) 
+
+## 1/ = 0 
+
+## 1/ = 
+
+## 1/ = 4               
+
+> FIG. 7. Josephson critical current in an altermagnetic SNS junction at χ= 0 .(a) Dependence on junction length dat fixed h0= ∆ .(b) Dependence on exchange field strength h0at fixed d/ξ 0= ∆ .Currents are normalized to j0= 2 eN 0vF.
+
+mechanism [59], and the parameter Kχ, which accounts for spin-dependent corrections to the diffusion constant (see also Sec. III B). Retaining Kχ is necessary to ob-tain the 0-π transitions and the directional dependence of the critical current. Specifically, Kχ introduces an imaginary component to the decay rates κ±, which can generate the oscillatory behavior of the current and sign changes. However, these contributions arise from higher-order terms in the diffusive limit ( DK χ ∼ τ 2) and are therefore weak. On the other hand, the relaxation term 
+
+Γ is typically larger ( Γ ∼ τ ). Its primary effect is to suppress the overall magnitude of the current, and also to damp the oscillatory features. The expressions for Γ
+
+and K presented in (31) agree with Ref. [58], where these parameters have been derived using other methods. We plot the Josephson critical current js for the alter-magnetic Josephson junction in Fig. 7 as a function of junction length d and altermagnet strength h0, at differ-ent strengths of disorder. In the ballistic limit, a clear 0-π
+
+transition appears when varying either d or h0. However, once weak disorder is introduced ( τ −1 ≳ ∆), the tran-sition becomes barely discernible, although it can still occur. This is consistent with our analysis in the diffu-sive limit above. In Fig. 8, we show another feature of the altermagnet – the direction dependence of the critical current. Namely, its magnitude depends on the orienta-tion of the altermagnetic d-wave "flower" pattern relative to the current, captured by the angle χ. The amplitude of the oscillations with respect to χ is also suppressed by a small amount of disorder. The results of this section indicate that very clean sam-ples would likely be required to clearly observe the 0-π
+
+transition or directional dependence of the critical cur-rent in experiments. We emphasize, however, that our theory is limited to weak altermagnets, where the Fermi energy greatly exceeds the altermagnetic splitting, and the quasiclassical approximation holds ( μ ≫ h0). 0.0 0.5 1.0 
+
+# /
+
+> 0.19
+> 0.22 0.22
+> 0.25
+> js/j0
+
+1/ = 0 
+
+1/ =           
+
+> FIG. 8. Josephson critical current in an altermagnet junction as a function of the angle χ. We set h0= 0 .5∆ and d/ξ 0= ∆ . Currents are normalized to j0= 2 eN 0vF.
+> VI. CONCLUSION
+
+We have presented a comprehensive theory of the Josephson effect in SNS junctions containing spin-dependent fields at arbitrary disorder strength. In Sec. III, by solving the linearized quasiclassical Eilen-berger equation, we derived a general expression for the Josephson current that is valid beyond the conventional ballistic and diffusive limit. Using this approach, we analyzed several experimen-tally relevant situations. In junctions with Rashba and Dresselhaus SOC, we examined how the conventional Josephson current evolves in an applied magnetic field, and discussed how this evolution can be used to experi-mentally probe the type and strength of SOC in the junc-tion (IV A). We also investigated the anomalous Joseph-son effect in systems with Rashba SOC in Sec. IV B, and found that the anomalous phase shift φ0 remains robust over the broad range of disorder strength. In sufficiently long junctions, moderate disorder can even enhance φ0,highlighting the nontrivial interplay between SOC and impurity scattering. Finally, we studied the Josephson effect in altermagnetic materials in Sec. V, and demon-strated that the 0-π transition present in the clean sys-tems is rapidly suppressed by disorder. Although here we have mostly focused on the Joseph-son effect, the method we used can be readily extended to other situations. For instance, as demonstrated in Ap-pendix C, it can be adapted straightforwardly to homo-geneous bilayer systems. More generally, this approach can be applied to a wide class of semi-infinite hybrid sys-tems that can be treated with Fourier transforms. Exten-sions to unconventional superconducting pairing are also possible by introducing the appropriate source terms. In addition to the supercurrent, the solution presented in Eq. (16) can also be used to compute other observables, such as induced magnetic moments or corrections to the normal-state density of states due to superconductivity. 10 
+
+> ACKNOWLEDGMENTS
+
+This work is part of the Finnish Centre of Excel-lence in Quantum Materials (QMAT). We acknowledge the financial support of the Finnish Ministry of Educa-tion and Culture through the Quantum Doctoral Ed-ucation Pilot Program (QDOC VN/3137/2024-OKM-4) and the Research Council of Finland through the Finnish Quantum Flagship project 359240. S.I. is supported by the Research Council of Finland (Grant Number 355056). F. S. B. thanks financial support from the Spanish MCIN/AEI/10.13039/501100011033 through the grant PID2023-148225NB-C31, and the Eu-ropean Union’s Horizon Europe research and innova-tion program under grant agreement No. 101130224 (JOSEPHINE). 
+
+> Appendix A: Analytical results for ballistic Josephson junctions with Rashba SOC
+
+In Sec. III B, we discussed how the general solution (16) simplifies in the ballistic limit and illustrated the calculation of the Josephson current for the simplest case without spin-dependent fields. Here, we follow the same strategy for a junction with Rashba spin–orbit coupling (SOC) and an in-plane Zeeman field, described by the coefficients introduced in Eqs. (24) and (25). For sim-plicity, in the following we neglect the magnetoelectric term bF. While an analytical solution can, in principle, also be obtained in its presence, the resulting expressions become rather cumbersome and are not presented here. Starting from the ballistic-limit solution, Eq. (19), af-ter Fourier-transforming it to the real space, the anoma-lous Green’s function in the middle of the junction, 
+
+ˆf (0) = f i(0) σi (i = 0 , x, y, z ), can be written as 
+
+f i(0) = 
+
+> 4
+
+X
+
+> α=1
+
+aiα
+
+
+
+f cα cos φ
+
+2 + f sα sin φ
+
+2
+
+
+
+, (A1) where φ is the superconducting phase difference and 
+
+f cα = − i∆
+
+κα
+
+e− dκα vF |nx | , f si = sgn( nx) ∆
+
+κα
+
+e− dκα vF |nx | .
+
+(A2) The four decay rates κα are 
+
+κ1,2 = ω ± χ+, κ3,4 = ω ± χ−, (A3) where 
+
+χ± = 1
+
+√2
+
+p±M − h2 − E2
+
+> α
+
+,M = ph4 + E4 
+
+> α
+
++ 2 h2E2 
+
+> α
+
+cos 2( θ − ρ), (A4) and Eα = αp F is the Rashba energy. We introduced the angle ρ between the current and the field directions, so that tan ρ = hx/h y . The corresponding weights aiα are 
+
+a01 = a02 = 14 + E2 
+
+> α
+
+− h2
+
+4M , a03 = a04 = 14 − E2 
+
+> α
+
+− h2
+
+4M ,ax 
+
+> 1
+
+= −ax 
+
+> 2
+
+= − ih [E2 
+
+> α
+
+cos(2 θ − ρ) + ( h2 − M ) cos ρ]4χ+M ,ax 
+
+> 3
+
+= −ax 
+
+> 4
+
+= − ih [E2 
+
+> α
+
+cos(2 θ − ρ) + ( h2 + M ) cos ρ]4χ−M ,ay 
+
+> 1
+
+= −ay 
+
+> 2
+
+= ih [E2 
+
+> α
+
+sin(2 θ − ρ) + ( h2 − M ) sin ρ]4χ+M ,ay 
+
+> 3
+
+= −ay 
+
+> 4
+
+= − ih [E2 
+
+> α
+
+sin(2 θ − ρ) + ( h2 + M ) sin ρ]4χ+Maz 
+
+> 1
+
+= az 
+
+> 2
+
+= −az 
+
+> 3
+
+= −az 
+
+> 4
+
+= ihE α cos[ θ − ρ]2M .
+
+(A5) The analytical expression for the Josephson current is obtained by substituting the expression (A1) into Eq. (6). This expression reproduces the numerical results shown in Fig. 3 in the ballistic limit. 
+
+> Appendix B: Diffusion operator in systems with Rashba SOC
+
+In Eq. (22), we derived the general form of the dif-fusion operator for generic spin-dependent fields. Here, we present its explicit form for the case of Rashba SOC and in-plane Zeeman field, described by the coefficients introduced in Eqs. (24) and (25). Substituting these co-efficients into Eq. (22), we obtain 
+
+bD−1 = (2 ω + DQ 2) + 
+
+
+
+ΓR 0 −2i√DΓRQ −2ih x
+
+0 ΓR 0 −i(2 hy − Γst Q)
+
+−2i√DΓRQ 0 2Γ R 0
+
+−2ih x −i(2 hy − Γst Q) 0 0
+
+ , (B1) here D = 12 v2 
+
+> F
+
+τ is the diffusion constant, ΓR = 2( αp F )2τ
+
+is the D’yakonov–Perel spin-relaxation rate, and Γst =(αp F )3τ 2/p F characterizes the singlet–triplet coupling induced by the spin–orbit interaction. Eq. (B1) is the familiar singlet-triplet (spin-charge) coupled diffusion op-erator widely used in superconducting and normal-state 11 transport [36]. 
+
+Appendix C: Edelstein effect 
+
+In this Appendix, we calculate the inverse Edelstein effect: the anomalous current generated by applying a Zeeman field in a superconducting system with SOC. Our goal here is primarily to show that our approach can be readily extended to homogeneous bilayers and other geometries, beyond the Josephson junctions considered in the main text. We consider a homogeneous bilayer system, shown in Fig. 9, consisting of a superconductor and a normal metal with finite Rashba SOC and an in-plane Zeeman field in the y-direction, described by the coefficients intro-duced in Eq. (26). To model the bilayer, we set ∆Q =
+
+> FIG. 9. Homogeneous bilayer of a normal metal with Rashba SOC and an in-plane Zeeman field, and a superconductor.
+
+−2i∆√2πδ (Q), corresponding to the homogeneous pair potential. Then, we simply have ˆf = ˆfQ(Q = 0) since the system is homogeneous, and the current follows from Eq. (6). We plot the anomalous current along the x-direction obtained this way in Fig. 10. This result gener-alizes the previous studies of the Edelstein effect beyond the weak-field regime [11, 12, 57]. 0.0 0.2 0.4 0.6 0.8 1.0 
+
+# hy/
+
+> 0.001
+> 0.000
+> 0.002
+> 0.004
+> 0.006
+> 0.008
+> jb/j0
+
+1/ = 0 
+
+1/ = 5 
+
+1/ = 10 
+
+1/ = 30       
+
+> FIG. 10. Bulk anomalous current jbversus in-plane Zeeman field
+> hyin a Rashba spin–orbit coupled normal metal proximitized by a superconductor. Currents are normalized by j0= 2 eN 0vF.
+
+Next, we investigate the low-field regime by expanding the current up to first order in h. There, the anomalous current can be found analytically in the form jb = χE hy ,where χE is the Edelstein response function 
+
+χE = eπN 0vF T (αp F )3∆2
+
+8μ ×
+
+X
+
+> ωn>0
+
+1
+
+ω2
+
+> n
+
+1
+
+ωn(2 ωn + 1 /τ )2 + α2p2 
+
+> F
+
+(4 ωn + 1 /τ ) . (C1) This result is identical to the Edelstein response function obtained in the study of the direct Edelstein effect [57], as expected from Onsager reciprocity. 
+
+[1] J. Linder and J. W. Robinson, Superconducting spintron-ics, Nature Physics 11 , 307 (2015). [2] E. Bauer and M. Sigrist, Non-centrosymmetric supercon-ductors: introduction and overview , Vol. 847 (Springer Science & Business Media, 2012). [3] A. I. Buzdin, Proximity effects in superconductor-ferromagnet heterostructures, Reviews of Modern Physics 77 , 935 (2005). [4] F. Bergeret, A. F. Volkov, and K. B. Efetov, Odd triplet superconductivity and related phenomena in superconductor-ferromagnet structures, Reviews of Mod-ern Physics 77 , 1321 (2005). [5] M. Amundsen, J. Linder, J. W. Robinson, I. Žutić, and N. Banerjee, Colloquium: Spin-orbit effects in supercon-ducting hybrid structures, Reviews of Modern Physics 
+
+96 , 021003 (2024). [6] F. S. Bergeret and I. Tokatly, Singlet-triplet conversion and the long-range proximity effect in superconductor-ferromagnet structures with generic spin-dependent fields, Physical Review Letters 110 , 117003 (2013). [7] F. Bergeret and I. Tokatly, Spin-orbit coupling as a source of long-range triplet proximity effect in superconductor-ferromagnet hybrid structures, Physical Review B 89 ,134517 (2014). [8] I. Bobkova, A. Bobkov, and M. Silaev, Magnetoelectric effects in Josephson junctions, Journal of Physics: Con-densed Matter 34 , 353001 (2022). [9] D. Agterberg and R. Kaur, Magnetic-field-induced helical and stripe phases in Rashba superconductors, Physical Review B—Condensed Matter and Materials Physics 75 ,064511 (2007). [10] O. Dimitrova and M. Feigel’Man, Theory of a two-dimensional superconductor with broken inversion sym-metry, Physical Review B—Condensed Matter and Ma-terials Physics 76 , 014522 (2007). [11] V. M. Edelstein, Magnetoelectric effect in polar super-conductors, Physical Review Letters 75 , 2004 (1995). [12] V. M. Edelstein, Magnetoelectric effect in dirty supercon-ductors with broken mirror symmetry, Physical Review B—Condensed Matter and Materials Physics 72 , 172501 (2005). [13] A. Buzdin, Direct coupling between magnetism and su-perconducting current in the Josephson φ0 junction, Physical Review Letters 101 , 107005 (2008). [14] F. Bergeret and I. Tokatly, Theory of diffusive φ0 Joseph-son junctions in the presence of spin-orbit coupling, Eu-12 
+
+rophysics Letters 110 , 57005 (2015). [15] M. Nadeem, M. S. Fuhrer, and X. Wang, The super-conducting diode effect, Nature Reviews Physics 5, 558 (2023). [16] C. Sun, A. Brataas, and J. Linder, Andreev reflection in altermagnets, Physical Review B 108 , 054511 (2023). [17] M. Papaj, Andreev reflection at the altermagnet-superconductor interface, Physical Review B 108 ,L060508 (2023). [18] C. Beenakker and T. Vakhtel, Phase-shifted Andreev lev-els in an altermagnet Josephson junction, Physical Re-view B 108 , 075425 (2023). [19] J. A. Ouassou, A. Brataas, and J. Linder, dc Joseph-son effect in altermagnets, Physical Review Letters 131 ,076003 (2023). [20] S.-B. Zhang, L.-H. Hu, and T. Neupert, Finite-momentum cooper pairing in proximitized altermagnets, Nature Communications 15 , 1801 (2024). [21] B. Lu, K. Maeda, H. Ito, K. Yada, and Y. Tanaka, φ
+
+Josephson junction induced by altermagnetism, Physical Review Letters 133 , 226002 (2024). [22] H. G. Giil, B. Brekke, J. Linder, and A. Brataas, Qua-siclassical theory of superconducting spin-splitter effects and spin-filtering via altermagnets, Physical Review B 
+
+110 , L140506 (2024). [23] T. Kokkeler, I. Tokatly, and F. S. Bergeret, Quantum transport theory for unconventional magnets: Interplay of altermagnetism and p-wave magnetism with supercon-ductivity, SciPost Physics 18 , 178 (2025). [24] L. Šmejkal, J. Sinova, and T. Jungwirth, Emerging re-search landscape of altermagnetism, Physical Review X 
+
+12 , 040501 (2022). [25] D. Chakraborty and A. M. Black-Schaffer, Zero-field finite-momentum and field-induced superconductivity in altermagnets, Physical Review B 110 , L060508 (2024). [26] F. Bergeret, A. Volkov, and K. Efetov, Josephson current in superconductor-ferromagnet structures with a nonho-mogeneous magnetization, Physical Review B 64 , 134506 (2001). [27] F. Bergeret, A. Volkov, and K. Efetov, Scattering by magnetic and spin-orbit impurities and the Josephson current in superconductor-ferromagnet-superconductor junctions, Physical Review B—Condensed Matter and Materials Physics 75 , 184510 (2007). [28] T. Kokkeler, I. Tokatly, and F. S. Bergeret, Nonrecipro-cal superconducting transport and the spin hall effect in gyrotropic structures, SciPost Physics 16 , 055 (2024). [29] F. Konschelle, I. V. Tokatly, and F. S. Bergeret, Theory of the spin-galvanic effect and the anomalous phase shift 
+
+φ0 in superconductors and Josephson junctions with in-trinsic spin-orbit coupling, Physical Review B 92 , 125443 (2015). [30] I. Tokatly, Equilibrium spin currents: Non-abelian gauge invariance and color diamagnetism in condensed matter, Physical Review Letters 101 , 106601 (2008). [31] C. Gorini, P. Schwab, R. Raimondi, and A. L. Shelankov, Non-abelian gauge fields in the gradient expansion: Gen-eralized Boltzmann and Eilenberger equations, Physical Review B—Condensed Matter and Materials Physics 82 ,195316 (2010). [32] A. A. Golubov, M. Y. Kupriyanov, and E. Il’Ichev, The current-phase relation in Josephson junctions, Reviews of Modern Physics 76 , 411 (2004). [33] W. Belzig, F. K. Wilhelm, C. Bruder, G. Schön, and A. D. Zaikin, Quasiclassical Green’s function approach to mesoscopic superconductivity, Superlattices and Mi-crostructures 25 , 1251 (1999). [34] P. Virtanen, F. Bergeret, and I. Tokatly, Nonlinear σ
+
+model for disordered systems with intrinsic spin-orbit coupling, Physical Review B 105 , 224517 (2022). [35] T. Kokkeler, F. S. Bergeret, and I. Tokatly, Univer-sal phenomenology of charge-spin interconversion and dynamics in diffusive systems with spin-orbit coupling, Physical Review Letters 134 , 096001 (2025). [36] A. Burkov, A. S. Núñez, and A. MacDonald, Theory of spin-charge-coupled transport in a two-dimensional elec-tron gas with Rashba spin-orbit interactions, Physical Review B 70 , 155308 (2004). [37] E. Strambini, A. Iorio, O. Durante, R. Citro, C. Sanz-Fernández, C. Guarcello, I. V. Tokatly, A. Braggio, M. Rocci, N. Ligato, et al. , A Josephson phase battery, Nature Nanotechnology 15 , 656 (2020). [38] A. Fornieri, A. M. Whiticar, F. Setiawan, E. Portolés, A. C. Drachmann, A. Keselman, S. Gronin, C. Thomas, T. Wang, R. Kallaher, et al. , Evidence of topological su-perconductivity in planar Josephson junctions, Nature 
+
+569 , 89 (2019). [39] A. Assouline, C. Feuillet-Palma, N. Bergeal, T. Zhang, A. Mottaghizadeh, A. Zimmers, E. Lhuillier, M. Eddrie, P. Atkinson, M. Aprili, et al. , Spin-orbit induced phase-shift in bi2se3 Josephson junctions, Nature Communica-tions 10 , 126 (2019). [40] W. Mayer, M. C. Dartiailh, J. Yuan, K. S. Wickramas-inghe, E. Rossi, and J. Shabani, Gate controlled anoma-lous phase shift in al/inas Josephson junctions, Nature Communications 11 , 212 (2020). [41] M. C. Dartiailh, W. Mayer, J. Yuan, K. S. Wickra-masinghe, A. Matos-Abiague, I. Žutić, and J. Shabani, Phase signature of topological transition in Josephson junctions, Physical Review Letters 126 , 036802 (2021). [42] C. Baumgartner, L. Fuchs, A. Costa, S. Reinhardt, S. Gronin, G. C. Gardner, T. Lindemann, M. J. Manfra, P. E. Faria Junior, D. Kochan, et al. , Supercurrent rectifi-cation and magnetochiral effects in symmetric Josephson junctions, Nature Nanotechnology 17 , 39 (2022). [43] A. Banerjee, O. Lesser, M. Rahman, H.-R. Wang, M.-R. Li, A. Kringhøj, A. Whiticar, A. Drachmann, C. Thomas, T. Wang, et al. , Signatures of a topological phase transi-tion in a planar Josephson junction, Physical Review B 
+
+107 , 245304 (2023). [44] P. Mandal, S. Mondal, M. P. Stehno, S. Ilić, F. S. Berg-eret, T. M. Klapwijk, C. Gould, and L. W. Molenkamp, Magnetically tunable supercurrent in dilute magnetic topological insulator-based Josephson junctions, Nature Physics 20 , 984 (2024). [45] S. Reinhardt, T. Ascherl, A. Costa, J. Berger, S. Gronin, G. C. Gardner, T. Lindemann, M. J. Manfra, J. Fabian, D. Kochan, et al. , Link between supercurrent diode and anomalous Josephson effect revealed by gate-controlled interferometry, Nature Communications 15 , 4413 (2024). [46] N. Yabuki, R. Moriya, M. Arai, Y. Sata, S. Morikawa, S. Masubuchi, and T. Machida, Supercurrent in van der waals Josephson junction, Nature Communications 7,10616 (2016). [47] L. Ai, E. Zhang, J. Yang, X. Xie, Y. Yang, Z. Jia, Y. Zhang, S. Liu, Z. Li, P. Leng, et al. , Van der waals ferromagnetic Josephson junctions, Nature Communica-tions 12 , 6580 (2021). 13 
+
+[48] H. Idzuchi, F. Pientka, K.-F. Huang, K. Harada, Ö. Gül, Y. J. Shin, L. T. Nguyen, N. H. Jo, D. Shindo, R. J. Cava, 
+
+et al. , Unconventional supercurrent phase in ising super-conductor Josephson junction with atomically thin mag-netic insulator, Nature Communications 12 , 5332 (2021). [49] H. Wu, Y. Wang, Y. Xu, P. K. Sivakumar, C. Pasco, U. Filippozzi, S. S. Parkin, Y.-J. Zeng, T. McQueen, and M. N. Ali, The field-free Josephson diode in a van der waals heterostructure, Nature 604 , 653 (2022). [50] J. Hasan, K. N. Nesterov, S. Li, M. Houzet, J. S. Meyer, and A. Levchenko, Anomalous Josephson effect in pla-nar noncentrosymmetric superconducting devices, Phys-ical Review B 106 , 214518 (2022). [51] S. Ilić, P. Virtanen, D. Crawford, T. T. Heikkilä, and F. S. Bergeret, Superconducting diode effect in diffusive superconductors and Josephson junctions with Rashba spin-orbit coupling, Physical Review B 110 , L140501 (2024). [52] F. Konschelle, I. V. Tokatly, and F. S. Bergeret, Ballis-tic Josephson junctions in the presence of generic spin-dependent fields, Physical Review B 94 , 014515 (2016). [53] J. Arjoranta and T. T. Heikkilä, Intrinsic spin-orbit in-teraction in diffusive normal wire Josephson weak links: supercurrent and density of states, Physical Review B 
+
+93 , 024522 (2016). [54] B. A. Bernevig, J. Orenstein, and S.-C. Zhang, Exact SU (2) symmetry and persistent spin helix in a spin-orbit coupled system, Physical Review Letters 97 , 236601 (2006). [55] A. V. Rodina, M. A. Semina, and E. L. Ivchenko, Elec-tron and hole g factors in semiconductors and nanostruc-tures (2025), arXiv:2511.02956 [cond-mat.mes-hall]. [56] J. Hasan, D. Shaffer, M. Khodas, and A. Levchenko, Su-perconducting diode efficiency from singlet-triplet mixing in disordered systems, Physical Review B 111 , 174514 (2025). [57] S. Ilić, I. V. Tokatly, and F. S. Bergeret, Unified descrip-tion of spin transport, weak antilocalization, and triplet superconductivity in systems with spin-orbit coupling, Physical Review B 102 , 235430 (2020). [58] R. d. l. Heras, T. Kokkeler, S. Ilić, I. V. Tokatly, and F. S. Bergeret, Interplay between superconductivity and alter-magnetism in disordered materials and heterostructures (2025), arXiv:2512.04819 [cond-mat.supr-con]. [59] M. Dyakonov and V. Perel, Spin relaxation of conduction electrons in noncentrosymmetric semiconductors, Soviet Physics Solid State, Ussr 13 , 3023 (1972).
