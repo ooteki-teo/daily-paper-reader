@@ -1,0 +1,1925 @@
+Title: 2604.04398v2.pdf
+
+URL Source: https://arxiv.org/pdf/2604.04398v2
+
+Published Time: Wed, 08 Apr 2026 00:23:58 GMT
+
+Number of Pages: 35
+
+Markdown Content:
+Temperature evolution of orbital states with 
+
+## successive phase transitions in FeV 2O4
+
+Chihaya Koyama 1,* , Yusuke Nomura 2,3 , Shunsuke Kitou 1,†, Taishun Manjo 4,
+
+Yuiga Nakamura 4, Takeshi Hara 5, Naoyuki Katayama 6, Yoichi Nii 7, Ryotaro Arita 8,9,
+
+Hiroshi Sawa 10 , and Taka -hisa Arima 1, 9 
+
+> 1
+
+Department of Advanced Materials Science, The University of Tokyo, Kashiwa 277 -8561, Japan. 
+
+> 2
+
+Institute for Materials Research  (IMR) , Tohoku University, Sendai 980 -8577, Japan. 
+
+> 3
+
+Advanced Institute for Materials Research (WPI -AIMR), Tohoku University, Sendai 980 -8577, Japan. 
+
+> 4
+
+Japan Synchrotron Radiation Research Institute (JASRI), SPring -8; Hyogo 679 -5198, Japan. 
+
+> 5
+
+Department of Physics, Tohoku University, Sendai 980 -8578, Japan. 
+
+> 6
+
+Department of Physics,  Okayama  University,  Okayama  700 -8530 , Japan. 
+
+> 7
+
+Department of Applied Physics and Physico -Informatics, Keio University, Kanagawa 223 -8522, Japan. 
+
+> 8
+
+Department of Physics, The University of Tokyo, Tokyo 153 -8904, Japan. 
+
+> 9
+
+RIKEN Center for Emergent Matter Science (CEMS), Wako 351 -0198, Japan. 
+
+> 10
+
+Nagoya Industrial Science Research Institute, Nagoya 460 -0008, Japan. 
+
+> *
+
+koyama -chihaya@g.ecc.u -tokyo.ac.jp 
+
+> †
+
+kitou@edu.k.u -tokyo.ac.jp 
+
+Abstract 
+
+Direct experimental access to orbital states in strongly correlated materials remains a major challenge, 
+
+despite their central role in driving coupled structural and magnetic phase transitions. In systems where 
+
+electronic correlations, electron –lattice cou pling, and relativistic spin –orbit interactions compete on 
+
+comparable energy scales, even first -principles calculations often yield multiple metastable solutions, 
+
+hindering  the  unambiguous identification of the ground state. Here, we demonstrate that the o rbital 
+
+states of the spinel oxide FeV 2O4, which possesses  active orbital degrees of freedom on both Fe and V 
+
+ions , are  uniquely resolved by combining valence electron density (VED) analysis based on state -of -
+
+the -art synchrotron  x-ray diffraction with spin -polarized density -functional -theory calculations. Our 
+
+results reveal that temperature -dependent rearrangements of orbital occupations drive successive 
+
+structural transitions that accompany collinear and  noncoplanar  ferrimagnetic orders, establishing a 
+
+direct correspondence between orbital anisotropy and spin structure. More broadly, this work shows 
+
+that experimentally det ermined VED provides a decisive real -space constraint on competing 
+
+theoretical solutions, offering a powerful and broadly applicable framework for elucidating the 
+
+microscopic mechanisms of complex phase transitions in strongly correlated electron systems. Popular Summary 
+
+Understanding material properties often comes down to how electrons occupy valence orbitals, but 
+
+these states are notoriously difficult to observe directly. Here we address this challenge by visualizing 
+
+valence electron density using synchrotron x -ray diff raction. This approach allows us to “see” how 
+
+electron distributions evolve across a sequence of structural and magnetic phase transitions. We find 
+
+that subtle changes in orbital shapes occur step by step as the temperature decreases and are closely 
+
+tied t o the emergence of distinct magnetic states. By combining these observations with density -
+
+functional -theory calculations, we demonstrate that key physical parameters —otherwise difficult to 
+
+determine independently in strongly correlated systems —can be uniqu ely identified. Our work 
+
+provides a real -space view of phase transitions and offers a new way to understand how intertwined 
+
+electronic degrees of freedom give rise to complex behavior. 
+
+I. INTRODUCTION 
+
+The anisotropy of valence electrons is fundamentally intertwined with a variety of emergent 
+
+quantum phenomena, including  charge  and  orbital order  [1 –5] , unconventional 
+
+superconductivity  [6,7] , quantum spin liquid  [8] , and multipole order  [9] . In such systems,  orbital 
+
+configuration  directly governs the electronic states and  physical  properties.  However, since external 
+
+fields that  couple  directly to orbital degrees of freedom are limited,  orbital states  are  considerably less 
+
+accessible  to  direct  experimental  observation  than  lattice  distortions  or magnetic structures .
+
+Traditionally, orbital states have been inferred indirectly from Jahn –Teller distortions, which manifest 
+
+as structural deformations of metal –ligand polyhedra  through  electron -phonon coupling.  While such 
+
+structural information  generally  provides valuable insight in strongly correlated electron systems , it is 
+
+rarely sufficient on its own. Electron correlation,  relativistic  spin –orbit interaction, and finite -
+
+temperature effects  act on comparable energy scales, obscuring the simple correspondence between 
+
+lattice distortions and orbital occupations.  Consequently, the orbital state cannot be unambiguously 
+
+determined solely from crystallographic analysis,  necessitating  direct experimental probes of valence 
+
+electron anisotropy. 
+
+A prototypical example  in which orbital degrees of freedom give rise to exotic electronic states is 
+
+the spinel -type iron vanadium oxide FeV 2O4, which crystallizes in the space group  Fd 3̅m at high 
+
+temperatures  [Fig. 1 (a)]. In this compound, each Fe 2+  ion  (3d6) is coordinated by four O 2- ions  to form 
+
+a FeO 4 regular tetrahedr on , while each V 3+  ion  (3d2) is surrounded by six O 2- ions  to form  a VO 6
+
+octahedr on  with trigonal distortions.  In contrast to  AV2O4 (A = Mg, Zn, Cd , Mn ) [10 –15] , both  the  Fe 
+
+and V  ion s host  orbital degeneracies in the high -temperature cubic phase  in  FeV 2O4.
+
+Figure  1(b) shows the changes in lattice deformations across the successive phase transitions in 
+
+FeV 2O4 [15 –18] . Hereafter,  a, b, and  c denote the lattice parameters in the standard crystallographic 
+
+setting  of  the  cubic  phase , whereas  a′,  b′, and  c′ are used as a  unified notation, referenced to the cubic 
+
+phase, for all temperature -dependent phases.  As shown in  Fig. 1 (b), upon cooling, the cubic lattice first transforms to tetragonal  with  I41/amd  symmetry  at  Ts = 140 K , in which the lattice is contracted along 
+
+the  c′-axis . Below  TN1  = 110 K, collinear ferrimagnetic (C -FM) order  emerges , with Fe 2+  and V 3+ 
+
+moments aligned antiparallel  to each other  [Fig. 1 (c)], accompanied by a  further  lowering of lattice 
+
+symmetry  from tetragonal to orthorhombic , with  space  group  Fddd . The ferrimagnetic moment 
+
+appe ars along the longest  a′-axis  [Fig. 1 (b)].
+
+Below  TN2  = 70 K, the structure reverts from orthorhombic to tetragonal  with  space  group  I41/amd ,
+
+accompanied by a transition to a noncollinear ferrimagnetic (NC -FM) state  [15 –18] . In contrast to the 
+
+high -temperature tetragonal phase,  the  low -temperature  tetragonal lattice  is  elongate d along the 
+
+four fold axis , unlike in  other spinel vanadates  AV2O4 with  orbitally inactive  A ions  [10 –15] . Note that 
+
+Fig. 1 (b) depicts  the  low -temperature tetragonal phase  using a face -centered tetragonal cell with  a′ as 
+
+the unique axis.  The Fe spins remain collinear, whereas the V spins  are  tilt ed  by approximately 55 
+
+deg rees  [Fig. 1 (c)] [17] . In the two low er -temperature phases,  the spin arrangements of Fe and V  are 
+
+strongly coupled to their orbital states  [15,16,18] . Hereafter, the four phases from high to low 
+
+temperature are referred to as Cubic, HT -tetra, Ortho, and LT -tetra. 
+
+Despite extensive experimental  [15 –25]  and theoretical  [26 –32]  investigations  of  FeV 2O4, the 
+
+microscopic origins of the successive phase transitions remain under debate.  Because  strong  on -site 
+
+Coulomb interactions open an energy gap on the order of electron volts,  the low -energy  configurations 
+
+of spin and orbital  are  affected  by  Kugel -Khomskii -type interaction s between adjacent  metal  sites  [33] ,
+
+relativistic spin –orbit  interaction , and  Jahn –Teller  interaction . Th e competition  among them  introduces 
+
+theoretical ambiguity, giving rise to  several possible thermal equilibrium  states depending on  the 
+
+parameters  [26,27,29,34] .
+
+We previously visualized the valence electron density (VED) distribution in the Cubic phase of 
+
+Fe V2O4 [35]  by combining single -crystal synchrotron x -ray diffraction with the core differential 
+
+Fourier synthesis (CDFS) metho d [36,37] . This approach enabled us to experimentally determine the 
+
+Fe and V 3 d wavefunctions  (details are provided below)  and to clarify the orbitally degenerate states 
+
+in the high -temperature  Cubic  phase, which had long remained controversial from a theoretical 
+
+standpoint. A more central issue in FeV 2O4, however, is how these orbital states evolve through the 
+
+successive structural and magnetic transitions upon cooling . This question  has  remained unresolved, 
+
+mainly because symmetry lowering induces multi -domain state s that  hinder precise data acquisition .
+
+In this study, we address this problem by applying external magnetic fields to a smaller crystal across 
+
+the magnetic phase transitions. In the low -temperature phases, this approach strongly biases the 
+
+domain populations, reducing the number of populated do mains to two or fewer and thereby allowing 
+
+us to obtain high -quality diffraction data suitable for precise VED analysis. This enables us to follow 
+
+the temperature evolution of the VED across the successive phase transitions and to establish a 
+
+comprehensive  experimental picture of how the Fe and V orbital states are reconfigured through the 
+
+successive phases. In addition, a comparison between the experimental VED and spin -polarized 
+
+density -functional -theory (DFT) calculations in the ground state reveals a co rrelation between the 
+
+orbital state and spin structure [ Figs. 1(d)  and  1(e) ]. These results provide new insights into the interplay among orbital, spin, and lattice degrees of freedom in FeV 2O4, paving the way for a deeper 
+
+understanding of strongly correlated electron systems. 
+
+II. RESULTS  and DISCUSSION 
+
+A.  VED in the Cubic phase 
+
+Figure  2(a) shows the VED distribution at 160 K  (Cubic phase ), obtained  from  the CDFS analysis. 
+
+As shown by yellow iso -density surfaces  of  3.9 e/Å 3, the VED  distribution  appears isotropic around 
+
+the O 2- ions, which is consistent with the 2 s22p6 electronic configuration. On the other hand, weak  and 
+
+pronounced anisotropies are observed around the Fe and V sites, respectively , as shown in  the  zoomed -
+
+in  view s [Figs . 2(b) and  2(c)]. Since the FeO 4 forms a regular tetrahedron, the Fe 3 d orbitals split into 
+
+a lower -lying  e doubl et and  a higher -lying  t2 tripl et. In the high -spin configuration for Fe 2+  (3 d6),  the 
+
+five majority -spin electrons fully occupy  the  3d orbitals, while  the  remaining  minority -spin electron 
+
+resides  in  degenerate  e orbitals  (3z2–r2 and  x2–y2) with equal probability  [inset, dashed square  in  Fig. 
+
+2(b)]. Since  x-ray diffraction probes orbitals as time - and space -averaged states , the observed VED 
+
+anisotropy  around the Fe site can be interpreted as a manifestation of this orbital  disorder  [35] .
+
+A similar interpretation can be applied to the VED  distribution  around the V 3+  (3 d2) ion. In a regular 
+
+VO 6 octahedron, the 3 d orbitals split into  a higher -lying  eg doubl et and  a lower -lying  t2g tripl et.
+
+However,  the VO 6 octahedron is slightly elongated along the local three -fold axis , satisfying the  .3̅m
+
+symmetry at the V site.  As a result, the  t2g orbitals are further split into  a1g and  eg 
+
+> '
+
+orbitals.  If 
+
+considering only the crystal field from the  adjacent  six O 2- ions  forming  the octahedron, the  e’ g orbitals 
+
+would  lie lower in energy than the  a1g orbital.  The influence of more distant ions using the Ewald 
+
+method  [38] , however,  reverses this hierarchy, stabilizing the  a1g  orbital relative to the  e’ g orbitals  [35] .
+
+The observed VED anisotropy around the V site  confirms the  latter  situation , where one electron 
+
+occupies the  a1g  orbital and  the  other is equally distributed  to  the  e’ g doubl et [Fig.  2(c)]. Starting from 
+
+this Cubic phase orbital state, we discuss how successive phase transitions lift the degeneracy of Fe 
+
+and V orbitals and lead to  the  ground state. 
+
+B.  FeO 4 deformation  and VED  around  the Fe site  associated with the phase transition s
+
+Figure 3  shows the  distortion s of  FeO 4 and  VO 6 polyhedr a associated with the phase transition , as 
+
+determined  by  synchrotron  x-ray diffraction . As shown in  Fig . 3(a), the FeO 4 distortions  contain  two -
+
+dimensional  normal  modes of  Q2,Fe  and  Q3,Fe , which  cause  splitting of the  e orbitals  [Fig. 2 (b)]. First, 
+
+we  examine  the successive change in FeO 4 distortion.  Figures 3 (b) and  3(c) present the temperature 
+
+dependence of  Q2,Fe  and  Q3,Fe  for the FeO 4 tetrahedron.  Orange  iso -density surfaces  in  Fig . 3(c) show 
+
+the minority -spin electron densities of Fe  predicted from the local FeO 4 distortions in each phase. In 
+
+the Cubic phase, the  Q2,Fe  and  Q3,Fe  mode s are  absent . In the HT -tetra phase at 130 K, negative  Q3,Fe 
+
+coupled to the 3 z²–r² orbital emerges, followed by the  emergence  of  Q2,Fe  in the Ortho phase at 100 K. 
+
+Here we  consider  the domain  with  Q2,Fe  > 0.  In the LT -tetra phase, the FeO 4 tetrahedron is elongated 
+
+along the  x-axis and couples with the  y²–z² orbital. To directly elucidate Fe 3 d orbital states, we examine the VED distribution.  Figure 4 (a) shows the 
+
+temperature evolution of the VED around the Fe site. In the Cubic phase, high -density  regions, shown 
+
+by  orange,  are located on  the  x-, y-, and  z-axes. In the HT -tetra phase,  enhanced  VED  develops  along 
+
+the  z-axis reflecting the splitting of the  e orbitals and minority -spin occupation of 3 z2–r2 orbital.  Upon 
+
+further cooling into the Ortho phase, the VED along the  y-axis increases,  described by a linear 
+
+combination of the 3 z²–r² and  y²–z² orbitals. In the LT -tetra phase,  high -density regions  extending 
+
+within the  yz -plane  are  observed, corresponding to the stabilization of the  y²–z² orbital.  Figure 4 (b)
+
+presents the calculated VED distribution for the minority -spin of Fe, which reproduces the anisotropy 
+
+observed in the high iso -density surface s shown in orange  [Fig. 4 (a)]. These results are consistent with 
+
+those expected from the distortion of the FeO 4 tetrahedron  [Fig. 3 (c)].
+
+The successive changes in Fe 3 d orbital state can be understood in  terms of the cooperative Jahn –
+
+Teller effect  below  TS and the spin –orbit coupling  in the magnetic phases , which stabilize the 3 z2–r2
+
+and  y2–z2 orbitals, respectively  [15,16,18,39] . The effective Hamiltonians for the Jahn –Teller  coupling 
+
+and the spin –orbit coupling in the FeO 4 tetrahedron are given by  HJT =A(τxQ2,Fe −τzQ3,Fe ), and  HSOC  =        
+
+> B/6[(3 Sz
+> 2−S2)τz−√3( Sx
+> 2−Sy
+> 2)τx]
+
+[40] , respectively. Here,  A (<0) is a n electron -phonon  coupling 
+
+constant,  τz and  τx are pseudospin operators representing  3z2−r2 (τz = 1/2)  and  x2−y2 (τz = −1/2)  orbitals .
+
+S, Sx, Sy, and  Sz are spin operators,  B (>0)  represents a second -order  perturbation  of spin –orbit coupling .
+
+Firstly, we examine the HT -tetra phase. Focusing on the anharmonic term of the lattice elastic energy, 
+
+U = A₃Q³cos(3 θ), the compressed tetragonal distortion is stabilized.  Here,  A₃ (>0) is the third -order 
+
+elastic constant , Q = ( Q2,Fe ² +  Q3,Fe ²)¹ /²,  an d θ is the polar angle  of the distortion vector  (Q3,Fe , Q2,Fe ) in 
+
+the  Q2,Fe - Q3,Fe  plane . This induces cooperative Jahn –Teller distortion, stabilizing the  Fe  3z²-r² orbital s.
+
+At lower temperatures whe re  magnetic order emerges, the system undergoes a further structural 
+
+transition. Under second -order spin -orbit coupling, the favored orbital depends on the spin operation: 
+
+the  y2−z2 orbital  is  stabilized when  the  spin  moment  is  align ed  along  the  x-axes. When Fe 2+  magnetic 
+
+order emerges at  TN1 , the orbital state is therefore modulated by spin –orbit coupling.  As the  spins align 
+
+along the  x-axis below  TN1  in the Ortho phase, the  y²− z² orbital is stabilized by spin –orbit coupling, 
+
+leading to a hybrid of 3 z2−r2 and  y2−z2 orbitals  [15] . Consequently,  Q2,Fe  become s non -zero  through 
+
+Jahn –Teller coupling,  resulting in  an  orthorhombic  distortion . Here,  Q2,Fe  > 0, as we adopt the 
+
+orthorhomb icity of  a > b > c. Indeed, in Fe Cr 2O4, where  Cr 3+  ions without orbital degrees of freedom 
+
+occupy the octahedral sites , the ground state  remains  an orthorhombic phase with  conical order  of Fe 
+
+and Cr spins  [40,41] . This suggests that the cooperative Jahn –Teller effect and spin –orbit coupling at 
+
+the Fe site account for the tetragonal -to -orthorhombic transition. However, the reentrant tetragonal 
+
+symmetry in the ground state of Fe V2O4 cannot be explained within this Fe -only framework, indicating 
+
+an essential role of the orbital degrees of freedom at the V sites. 
+
+C.  VO6 deformation  and VED  around  the V site  associated with the phase transition s
+
+The  symmetric  distortion  of a  VO 6 octahedron  can be decomposed into  Eg (Q2,V , Q3,V ) and  T2g (Q4,V ,
+
+Q5,V , Q6,V ) modes, corresponding to  variations in the V -O bond lengths and the O -V-O bond angles, respectively  [Fig . 3(d)]. In the Cubic phase,  Q4,V  = Q5,V  = Q6,V  > 0 and their  linear combination  Qt1 ,V 
+
+= (Q4,V  + Q5,V  + Q6,V )/ √3  corresponds to elongation or compression of the VO 6 octahedron along the 
+
+[111] axis. This trigonal distortion leads to the splitting of the  t2g into  a1g and  e’ g orbitals.  Figure  3(e)
+
+shows the temperature dependence of each  Q mode of the VO 6 octahedron. The  Q2,V  and  Q3,V  values, 
+
+which  directly  couple to the splitting of the  eg orbitals, remain nearly zero, whereas  Q4,V , Q5,V , and 
+
+Q6,V  values exhibit pronounced temperature dependence, reflecting their coupling to the splitting of 
+
+the  t2g orbitals.  Notably, the large  Qt1 ,V  value is  nearly  temperature -independent, indicating that one 
+
+electron continues to occupy the  a1g orbital down to  the  lowest temperatures.  To further probe the 
+
+splitting of the  e’g orbitals , we examin e the temperature dependence of  Q(z)t2 ,V  = (−Q4,V  − Q5,V  +
+
+2Q6,V )/ √6  and  Q(z)t3 ,V  = (−Q4,V  + Q5,V )/ √2  modes,  which are orthogonal to  Qt1 ,V  [Fig.  3(f)]. In the 
+
+Cubic phase a t 160 K, both  Q(z)t2 ,V  and  Q(z)t3 ,V  values are zero,  indicating that  the  e’g orbitals  remain 
+
+degenerate . In the HT -tetra phase a t 130 K, a positive  Q(z)t2,V  mode emerges while  Q(z)t3 ,V  remains zero ,
+
+corresponding to tetragonal distortion . Subsequently,  in the Ortho phase  at 100 K,  a positive  Q(z)t3 ,V 
+
+mode appears.  Upon entering  the LT -tetra phase,  Q(z)t3 ,V  gradually increases.  We emphasize that the 
+
+value at  50 K  lies along the  Q(x)t2 ,V  = (−Q5,V  −Q6,V  + 2Q4,V )/ √6  axis when the  Q4,V  direction is taken 
+
+as the principal axis, corresponding to  Q(x)t3 ,V  = (−Q5,V  +Q6,V )/ √2  = 0. The continuous  evolution  from 
+
+positive  Q(z)t2 ,V  to  negative  Q(x)t2 ,V  may  reflect modifications of the 3 d wave functions .
+
+Next, we turn to the VED distribution around the V site  [Fig.  5(a)], which also  continuous ly  change s
+
+upon cooling.  Here,  we define  t2g  wavefunctions as  Ψ1 = C1 |yz ⟩ +C2 |zx ⟩ +C3 |xy ⟩ , Ψ2 =
+
+D1|yz ⟩+D2|zx ⟩+D3|xy ⟩, and  Ψ3 = E1|yz ⟩+E2|zx ⟩+E3|xy ⟩, with  |C1|2+| C2|2+| C3|2=1, | D1|2+| D2|2+| D3|2=1, 
+
+|E1|2+| E2|2+| E3|2=1 , where the coefficients are chosen to satisfy the site -symmetry and mutual -
+
+orthogonality constraints  (see  Supplemental Information  Sections  3 [42] ). To elucidate the orbital 
+
+state s, the quantum parameters  Ci, Di, and  Ei (i = 1 to 3)  are optimized by fitting the calculated  VED 
+
+distributions to reproduce the  observed  anisotropy.  Assuming that the trigonal distortion is large 
+
+enough for one electron to occupy  Ψ1, the calculated 3 d2 VED is expressed as 
+
+𝜌 calc (𝒓 ) = |𝜓 1|2 + 𝜂 |𝜓 2|2 + (1 − 𝜂 )|𝜓 3|2, (1)
+
+where  η represents the electron filling of  Ψ2. The  evaluation function  s for the fitting is defined as 
+
+𝑠  = ∑ |𝜌 obs (𝒓 ) − 𝜅 3𝜌 calc (𝜅 𝒓 )|𝑟 
+
+∑ |𝜌 obs (𝒓 )|𝑟 
+
+(2)
+
+where  𝜌 obs (𝒓 ) is the observed VED around the V site . In general, hybridization between neighboring 
+
+atoms  may modify  the radial distribution of the observed  VED  from that of an isolated -atom model. 
+
+To account for this effect, a radial scaling parameter  𝜅  is introduced.  The quantum parameters  are 
+
+optimized  by minimizing the evaluation function in Eq. (2) within a radial range  of  0.25  < r < 0.6 Å 
+
+around  the  V site  (see  Supplemental Information Fig.  S6 [42] ). The evaluation function is minimized 
+
+at approximately  η = 0.5  in all  the  phases.  Figure  5(b) shows the  calculated  VED distribution s with the 
+
+optimized  quantum  parameters.  The temperature dependence of the  observed  VED anisotropy  should 
+
+be  attributed to  the reconfiguration of the  Ψ1 wavefunction  [Fig.  5(c)], since  Ψ2 and  Ψ3 are determined 
+
+by the  Ci parameters  through the site -symmetry constraints and the orthogonality conditions with respect to  Ψ1 (see  Supplemental Information  Sections  3 [42] ). 
+
+D.  Spin -polarized DFT calculations  in the LT -tetra phase 
+
+The 3 d2 orbital states of V 3+  in the  low -temperature  phases can be interpreted within two possible 
+
+frameworks , as shown in  Fig . 5(d). One possible s cenario  is th at the  splitting  of the  eg 
+
+> '
+
+orbitals  is 
+
+sufficiently  small  that  the system reside s in a thermally accessible pseudo -degenerate state. 
+
+Alternatively,  the VED  with  η = 0.5  can  also  arise  from  wavefunctions  stabilized in magnetically 
+
+ordered states  through relativistic spin –orbit interaction  [27] . The two scenarios are impossible to 
+
+distinguish based  solely  on the VED distribution. 
+
+To address this issue, we perform spin -polarized DFT+ U calculations  for the LT -tetra phase 
+
+considering  the  relativistic spin –orbit interaction . The three  V t2g  wavefunctions are defined as 
+
+Ψ1=γ |yz ⟩ + √(1 − γ2)/2|zx ⟩ + √(1 − γ2)/2|xy ⟩ , Ψ2= −√1 − γ2|yz ⟩ + (γ/√2)|zx ⟩ + (γ/√2)|xy ⟩ , and 
+
+Ψ3=(1/ √2)|zx ⟩ − (1/ √2)|xy ⟩ [as illustrated in  Figs. 1(e)  and  6(c) ]. The Hubbard  U raises the energy 
+
+of unoccupied  eg states,  thereby  promoting gap formation  between  the  t2g  and  eg orbitals . Interestingly, 
+
+we find two solutions depending on the mechanism of orbital order.  Note that, because these two 
+
+solutions are nearly degenerate in energy, a unique determination cannot be made based on DFT 
+
+calculations alone .
+
+In one  solution,  Fe spin moments are  ferromagnetically  arranged along the  four -fold axis  (− x
+
+direction)  and  V spins  are  align ed  nearly in the opposite direction  with small canting arising from  the 
+
+spin –orbit  interaction  [Fig.  6(a)]. The Hubbard  U effectively enhances the crystal  field  effect of  the 
+
+compression  of VO 6 along the  x-axis,  raising the energy of the  Ψ3 orbital , composed of  zx  and  xy 
+
+orbitals , relative to the  Ψ2 orbital, which  contains the  yz  component  [Figs. 6 (b) and  6(c)]. Consequently, 
+
+orbital ordering consisting of  Ψ1 and  Ψ2 emerges . The  predicted  VED is shown in  Fig . 6(d), which is, 
+
+however, inconsistent with the experimental observation  [Fig.  5(a) ].
+
+In  an alternative  solution , the  V spin  moments exhibit a “two -in -two -out”  configuration  with in  the 
+
+V4 tetrahedra of  the  pyrochlore network  [Fig.  6(e)]. In this case,  Ψ1 and ( Ψ2 + iΨ3)/ √2  constitute the 
+
+orbital order  [Fig s. 6(f) and  6(g)]. The complex orbital  (Ψ2 + iΨ3)/ √2  gives a n orbital  angular  moment 
+
+of  approximately  1 μB, oriented close to  ⟨111 ⟩, corresponding to the direction toward the center of the 
+
+V4 tetrahedron.  This  orientation  is  nearly  opposite to  the local spin directions  in the two -in -two -out 
+
+configuration . In fact,  an  x-ray magnetic circular dichroism study  [24]  has demonstrated that the V site 
+
+possesses  a finite  orbital magnetic moment  component  parallel to the magnetization . It is  likely that 
+
+spin –orbit  interaction  triggers orbital ordering , assisted  by the  gap enhancement  due to  the Hubbard  U.
+
+Figure  6(h) displays the  calculated  VED, which shows good agreement with the  observed VED  [Fig. 
+
+5(a) ].
+
+E.  Expected noncoplanar arrangement of V spins 
+
+Importantly,  in the  wavefunction  Ψ1 = γ|yz ⟩ + √(1 − γ2)/2|zx ⟩ + √(1 − γ2)/2|xy ⟩ , where  γ =
+
+0.76  is  determined by fitting to the experimental  VED , the occupation of the  yz  orbital is inequivalent to those of the  zx  and  xy  orbitals . The latter two  carry  equal weights , as dictated by the calculated 
+
+symmetry . As a result, the threefold rotational symmetry is explicitly broken, whereas the exchange 
+
+symmetry  between  zx  and  xy  remains preserved. As a consequence, the local crystal field retains a 
+
+mirror symmetry that leaves the  yz  orbital invariant and exchanges  zx  and  xy . This mirror plane 
+
+contains the local  ⟨111 ⟩ axis, and therefore the orbital angular momentum induced by spin –orbit 
+
+coupling is constrai ned to lie within this plane. The spin moment is thus  constrained  to cant within the 
+
+same mirror plane, fixing its azimuthal direction. Using the orbital  wavefunctions in LT -tetra phase, 
+
+the direction of the local spin moment is obtained as  S ∝ (−γ, −√(1 − γ2)/2, −√(1 − γ2)/2).  This 
+
+corresponds to a polar angle of approximately 41  deg rees  from the  −x direction  and about 8  degrees 
+
+from the direction antiparallel to the local  ⟨111 ⟩ axis , indicating a small but finite canting away from 
+
+the threefold rotational axis.  This estimate is in good agreement with the canting angle  of  43  degrees 
+
+obtained in the DFT calculation.  Notably, because the canting direction is  confined on  the local mirror, 
+
+the spin configuration on the pyrochlore lattice becomes intrinsically noncoplanar , thereby generating 
+
+a finite  scalar spin chirality. More generally, carriers endowed with  an  angular momentum  may 
+
+experience an effective magnetic field arising from the scalar spin chirality,  which may give rise to 
+
+unique  transport phenomena such as the magnon Hall effect.  These results suggest intertwined spin 
+
+and orbit al degrees of freedom . The observed orbital -ordering pattern provides an important clue to 
+
+the spin configuration of the system and, more importantly, a key to identifying the underlying 
+
+mechanism of the orbital ordering. 
+
+F.  Origin of the  reentrant  tetragonal  ground  state 
+
+The reentrant tetragonal symmetry in the ground state can be understood as a consequence of spin –
+
+orbital –lattice cooperation and competition involving both Fe and V sites. The canting of the V spins 
+
+is primarily determined by competing Fe –V and V –V antiferr omagnetic exchange interactions. The 
+
+evolution of the mode  Q(x)t2,V  toward negative values  in the LT -tetra phase  reflects a reconfiguration of 
+
+the  t2g  orbital  components, corresponding to an increase in the occupancy of the  𝑦𝑧  orbital component 
+
+[Fig. 3 (f)]. Through spin –orbit coupling, this orbital reconfiguration further stabilizes the  two -in -two -
+
+out  spin configuration of the V sublattice, providing an additional relativistic energy gain. This 
+
+evolution in the V sector modifies the balance of spin –orbital –lattice coupling at low temperatures. 
+
+Consequently, the energetic hierarchy between the anharmoni c term of the lattice elastic energy for the 
+
+FeO 4 distortion and the relativistic spin –orbit interaction at the Fe site is altered, effectively reversing 
+
+the preferred distortion direction and stabilizing the elongated  FeO 4 distortion along the  𝑥  axis, wh ich 
+
+couples to the  y²–z²  orbital. Notably, the magnitude of the  FeO 4 distortion exceeds that of  VO6 [Figs. 
+
+3(c) and  3(f)], indicating that the  FeO 4 units dominate the overall lattice deformation associated with 
+
+the structural phase transitions and ultimately give rise to the elongated tetragonal ground state  along 
+
+the  a’ axis .
+
+Finally , we consider the orbital states of the V 3+  ion  in the  intermediate  HT-tetra and Ortho phases .
+
+Previous  thermal conductivity  measurements  [22]  and powder neutron diffraction  [17]  suggest  that  Vorbital order is not established in  these intermediate phases . Consequently, the electron is likely to 
+
+fluctuate within the Bloch sphere  defined  by  Ψ2 and  Ψ3 orbitals . If such fluctuations are sufficiently 
+
+slow on the relevant experimental time scale, they may give rise to a dynamical Jahn –Teller effect. 
+
+However, w e observe neither  x-ray  diffuse scattering  nor  anomalies in anisotropic  atomic displacement 
+
+parameters  (see  Supplemental Information  Sections  1 [42] ). To directly probe this pseudo -degenerate 
+
+state in the intermediate phases,  spectroscopic investigations of phonon dynamics, such as Raman or 
+
+infrared spectroscopy, would therefore be useful. 
+
+III . CONCLUSION 
+
+We  have directly visualized the temperature evolution of the  VED  distributions in FeV 2O4 across its 
+
+successive structural and magnetic phase transitions. The  observed VED  anisotropies around the Fe 
+
+and V sites reveal how the local orbital states are reconstructed from the orbitally degenerate cubic 
+
+phase to the low -temperature phases , demonstrating  that the phase evolution is governed by 
+
+cooperative spin –orbital –lattice coupling involving both sublattices. By combining these real -space 
+
+observations with spin -polarized DFT calculations, we further demonstrate that the low est -temperature 
+
+V orbital state can be  uniquely  identified  through  direct comparison with experiment, thereby 
+
+discriminating between competing microscopic scenarios that  are  nearly degenerate in theory. These 
+
+results establish experimentally determined  VED  as a decisive p robe of orbital physics in strongly 
+
+correlated materials, going beyond conventional  crystal -structure -based inference. More broadly, our 
+
+work provides a general strategy for identifying hidden orbital states and their coupling to magnetism 
+
+and lattice symmetry in quantum materials, particularly when multiple metastable solutions compete 
+
+on compar able energy scales. 
+
+IV.  METHODS 
+
+A.  X-ray diffraction 
+
+Single -crystal  x-ray diffraction experiments were conducted at the BL02B1 beamline  [43]  of the 
+
+SPring -8 synchrotron facility in Japan.  The single crystal s used in this study w ere  the same as those in 
+
+Ref.  [10] . Temperature  was  controlled using  an N2/He  gas -blowing  device . The wavelength s were 
+
+0.309 45 Å at  160  and  50  K, and 0.3108 0 Å at  130  and  100  K.  Prior to the measurements in the Ortho 
+
+and LT -tetra phases , the sample was cooled while applying a magnetic field  along the  a’-axis of the 
+
+cubic phase  using  a Neodymium  magnet  to  align  structural  domains . Diffraction patterns were 
+
+recorded using a two -dimensional CdTe PILATUS detector  [44]  with a dynamic range of ~ 10 6. Data 
+
+were acquired using the Fine Slice method by oscillating the crystal and dividing reciprocal space into 
+
+intervals of  Δω  = 0.1°  [45] . The intensities of  Bragg  reflections were collected by CrysAli sPro  [46] .
+
+Intensities  of equivalent reflections  were averaged  using SORTAV  [47] , and  structural parameters  were 
+
+refined  by  Jana2006  [48] . Here, by utilizing only high -angle reflections (sin θ/λ > 0.6  Å⁻¹), where the 
+
+contribution of spatially spread valence electrons to  x-ray diffraction is negligible, structural 
+
+parameters including atomic displacement parameters were obtained with high accuracy. B.  CDFS analysis 
+
+The CDFS method was used to extract the VED distribution.  The [Ar] -type configuration 
+
+(1 s2,2 s2,2 p6,3 s2,3 p6) of the Fe and V atoms  as well as 1 s2 electrons of O atoms were regarded as core 
+
+electrons . The contribution of the thermal vibration was subtracted from the VED using the atomic 
+
+displacement parameters determined by the high -angle analysis. The voxel size of the three -
+
+dimensional  VED distribution  was  0.05 Å 3. We used the STO -COPPENS Slater -type orbital (STO) 
+
+library implemented in Jana2006 for the CDFS analysis.  The crystal structure and VED distributions 
+
+were visualized using VESTA  [49] .
+
+C.  DFT  calculation 
+
+The DFT electronic structure calculations for FeV 2O4 were  performed using Quantum Espresso  [50] 
+
+using the experimental structure  of the LT -tetra phase  obtained in this study. We employ ed  relativistic 
+
+norm -conserving pseudopotentials with Perdew -Burke -Ernzerhof (PBE)  [51]  exchange -correlation 
+
+functional, which  were  taken from the PseudoDojo  [52] . We perform ed  spin -polarized calculations 
+
+considering the spin –orbit coupling with  k-mesh of 7×7×7. The effects of Coulomb interactions of Fe 
+
+3d and V 3 d orbitals  were  incorporated within the DFT+ U formalism  [53]  with the Hubbard  U
+
+parameters of  5 eV. The energy cutoff  was  set to 100 Ry for the wave functions and 400 Ry for the 
+
+charge density. Based on the DFT electronic structure, we construct ed  Wannier orbitals  [54,55]  using 
+
+RESPACK  [56,57]  and Wannier90  [58]  for Fe 3 d, V 3 d, and O 2 p manifold.  Since a primitive unit cell 
+
+consists of  two Fe sites, four V sites, and eight O sites, the number of Wannier orbitals  was 
+
+(5×2+5×4+3×8)×2=108, where the factor of two account ed  for the summation over spin degrees of 
+
+freedom. 
+
+Acknowledgements 
+
+We thank A. Nakano, T. Ohashi, Y. Yamanaka, and T. Sasaki for supporting the  x-ray diffraction 
+
+experiments , and T. Katsufuji , T. Hasegawa , K. Siratori,  and T.  Nakai  for the fruitful discussions. This 
+
+work was supported by JST SPRING (Grant No. JPMJSP2108), JSPS KAKENHI (Grant No. 
+
+22K14010, 23H04869,  24H01644 , 25H01246  and  25H01252 ),  RIKEN TRIP initiative (Advanced 
+
+General Intelligence for Science Program, Many -body Electron Systems) , and JST FOREST (Grant 
+
+No. JPMJFR2362). The synchrotron radiation experimen ts were performed at SPring -8 with the 
+
+approval of the Japan Synchrotron Radiation Research Institute (JASRI) (Proposal  No.202 2A1246 ,
+
+202 2A1247 , 2024B0304, 2025A1505 and 2025A1732). 
+
+Data availability 
+
+The data that support the findings of this study are available from the corresponding author upon 
+
+reasonable request. 
+
+References     
+
+> [1] A. J. Millis, Lattice effects in magnetoresistive manganese perovskites ,Nature 392 , 147 -150 (1998).
+
+[2]  P. G. Radaelli, Y. Horibe, M. J. Gutmann, H. Ishibashi, C. H. Chen, R. M. Ibberson, Y. Koyama, Y. S. Hor, V. 
+
+Kiryukhin, and S. -W. Cheong,  Formation of isomorphic  Ir 3+ and  Ir 4+ octamers and spin dimerization in the 
+
+spinel  CuIr 2S4, Nature  416 , 155 -158 (2002). 
+
+[3]  M. S. Senn, J. P. Wright, and J. P. Attfield,  Charge order and three -site distortions in the Verwey structure of 
+
+magnetite , Nature  481 , 173 -176 (2012). 
+
+[4]  L. Camerano, A. O. Fumega, J. L. Lado, A. Stroppa, and G. Profeta,  Multiferroic nematic d -wave 
+
+altermagnetism driven by orbital -order on the honeycomb lattice , npj 2D Mater. Appl . 9, 75 (2025). 
+
+[5]  M. Neupane, P. Richard, Z. -H. Pan, Y. -M. Xu, R. Jin, D. Mandrus, X. Dai, Z. Fang, Z. Wang, and H. Ding, 
+
+Observation of a novel orbital selective Mott transition in  Ca 1.8Sr 0.2RuO 4, Phys. Rev. Lett . 103 , 097001 
+
+(2009). 
+
+[6]  G. M. Luke, Y. Fudamoto, K. M. Kojima, M. I. Larkin, J. Merrin, B. Nachumi, Y. J. Uemura, Y. Maeno, Z. 
+
+Q. Mao, Y. Mori, H. Nakamura, and M. Sigrist,  Time -reversal symmetry -breaking superconductivity in 
+
+Sr 2RuO 4, Natur e 394 , 558 -561 (1998). 
+
+[7]  Á. A. Carrasco Álvarez, S. Petit, W. Prellier, M. Bibes, and J. Varignon,  Orbital -order as the driving 
+
+mechanism for superconductivity in ruthenates , Nat. Commun . 16 , 1458 (2025). 
+
+[8]  H. Takagi, T. Takayama, G. Jackeli, G. Khaliullin, and S. E. Nagler,  Concept and realization of Kitaev 
+
+quantum spin liquids , Nat. Rev. Phys . 1, 264 -280 (2019). 
+
+[9]  D. Hirai, H. Sagayama, S. Gao, H. Ohsumi, G. Chen, T. -h. Arima, and Z. Hiroi,  Detection of multipolar orders 
+
+in the spin -orbit -coupled 5d Mott insulator  Ba 2MgReO 6, Phys. Rev. Research  2, 022063(R) (2020). 
+
+[10]  S. -H. Lee, D. Louca, H. Ueda, S. Park, T. J. Sato, M. Isobe, Y. Ueda, S. Rosenkranz, P. Zschack, J. Íñiguez, 
+
+Y. Qiu, and R. Osborn,  Orbital and spin chains in  ZnV 2O4, Phys. Rev. Lett . 93 , 156407 (2004). 
+
+[11]  T. Maitra and R. Valentí,  Orbital order in  ZnV 2O4, Phys. Rev. Lett . 99 , 126401 (2007). 
+
+[12]  E. M. Wheeler, B. Lake, A. T. M. N. Islam, M. Reehuis, P. Steffens, T. Guidi, and A. H. Hill,  Spin and orbital 
+
+order in the vanadium spinel  MgV 2O4, Phys. Rev. B  82 , 140406(R) (2010). 
+
+[13]  A. Kiswandhi, J . Ma, J . S. Brooks, and H . D.  Zhou,  Effects of inter -vanadium distance and A -site magnetism 
+
+in  AV 2O4 (A = Cd, Mg, Zn)  spinels near the itinerant electron limit , Phys. Rev. B  90 , 155132 (2014). 
+
+[14]  T. Suzuki, M. Katsumura, K. Taniguchi, T. Arima, and T. Katsufuji,  Orbital ordering and magnetic field effect 
+
+in  MnV 2O4, Phys. Rev. Lett.  98 , 127203 (2007). 
+
+[15]  Y. Nii, H. Sagayama, T. Arima, S. Aoyagi, R. Sakai, S. Maki, E. Nishibori, H. Sawa, K. Sugimoto, H. Ohsumi, 
+
+and M. Takata,  Orbital structures in spinel vanadates  AV 2O4 (A = Fe, Mn),  Phys. Rev. B  86 , 125142 (2012). 
+
+[16]  T. Katsufuji, T. Suzuki, H. Takei, M. Nohara, and H. Takagi,  Structural and magnetic properties of spinel 
+
+FeV 2O4 with two ions having orbital degrees of freedom , J. Phys. Soc. Jpn . 77 , 053708 (2008). 
+
+[17]  G. J. MacDougall, V. O. Garlea, A. A. Aczel, H. D. Zhou, and S. E. Nagler,  Magnetic order and ice rules in 
+
+the multiferroic spinel  FeV 2O4, Phys. Rev. B  86 , 060414(R) (2012). 
+
+[18]  S. Kawaguchi, H. Ishibashi, S. Nishihara, S. Mori, J. Campo, F. Porcher, O. Fabelo, K. Sugimoto, J. Kim, K. 
+
+Kato, M. Takata, H. Nakao, and Y. Kubota,  Orthorhombic distortion and orbital order in the vanadium spinel 
+
+FeV 2O4, Phys. Rev. B  93 , 024108 (2016). 
+
+[19]  Q. Zhang, K. Singh, F. Guillou, C. Simon, Y. Bréard, V. Caignaert, and V. Hardy,  Ordering process and ferroelectricity in a spinel derived from  FeV 2O4, Phys. Rev. B  85 , 054405 (2012). 
+
+[20]  J. -S. Kang, J. Hwang, D. H. Kim, E. Lee, W. C. Kim, C. S. Kim, S. Kwon, S. Lee, J. -Y. Kim, T. Ueno, M. 
+
+Sawada, B. Kim, B. H. Kim, and B. I. Min , Valence states and spin structure of spinel  FeV 2O4 with different 
+
+orbital degrees of freedom , Phys. Rev. B  85 , 165136 (2012). 
+
+[21]  G. J. MacDougall, I. Brodsky, A. A. Aczel, V. O. Garlea, G. E. Granroth, A. D. Christianson, T. Hong, H. D. 
+
+Zhou, and S. E. Nagler,  Magnons and a two -component spin gap in  FeV 2O4, Phys. Rev. B  89 , 224404 (2014). 
+
+[22]  Y. Ishitsuka, T. Ishikawa, R. Koborinai, T. Omura, and T. Katsufuji,  Comparative studies of the thermal 
+
+conductivity of spinel oxides with orbital degrees of freedom , Phys. Rev. B  90 , 224411 (2014). 
+
+[23]  K. Matsuura, H. Sagayama, Y. Nii, N. D. Khanh, N. Abe, and T. Arima, X -ray magnetic circular dichroism 
+
+study of an orbital ordered state in the spinel -type vanadium oxide  AV 2O4 (A = Mn, Fe),  Phys. Rev. B  92 ,
+
+035133 (2015). 
+
+[24]  J. Okabayashi, S. Miyasaka, M. Takahashi, and S. Tajima,  Local electronic and magnetic properties of ferro -
+
+orbital -ordered  FeV 2O4, Jpn. J. Appl. Phys . 57 , 0902BD (2018). 
+
+[25]  M. Nakano, T. Kobayashi, and T. Katsufuji,  Coupling between orbital and spin degrees of freedom in Jahn -
+
+Teller ions for  Co 1−x Fe xV2O4, Phys. Rev. Lett.  135 , 186701 (2025). 
+
+[26]  H. Tsunetsugu and Y. Motome,  Magnetic transition and orbital degrees of freedom in vanadium spinels , Phys. 
+
+Rev. B  68 , 060405(R) (2003). 
+
+[27]  O. Tchernyshyov,  Structural, orbital, and magnetic order in vanadium spinels , Phys. Rev. Lett.  93 , 157206 
+
+(2004). 
+
+[28]  S. Di Matteo, G. Jackeli, and N. B. Perkins,  Orbital order in vanadium spinels , Phys. Rev. B  72 , 020408(R) 
+
+(2005). 
+
+[29]  Y. Motome and H. Tsunetsugu,  Theory of successive transitions in vanadium spinels and order of orbitals 
+
+and spins , Prog. Theor. Phys. Suppl . 160 , 203 -213 (2005). 
+
+[30]  S. Sarkar and T. Saha -Dasgupta,  Orbital ordering in  FeV 2O4: Spinel with two orbitally active sites , Phys. Rev. 
+
+B 84 , 235112 (2011). 
+
+[31]  D. Dey, T. Maitra, and A. Taraphder,  Orbital ordering in  Fe 1−x Mn xV2O4: A first -principles study , Phys. Rev. 
+
+B 93 , 195133 (2016). 
+
+[32]  J. Krishna, N. Singh, S. Shallcross, J. K. Dewhurst, E. K. U. Gross, T. Maitra, and S. Sharma,  Complete 
+
+description of the magnetic ground state in spinel vanadates , Phys. Rev . B  100 , 081102(R) (2019). 
+
+[33]  K. I. Kugel and D. I. Khomskii,  The Jahn -Teller effect and magnetism: Transition metal compounds , Sov. 
+
+Phys. Usp.  25 , 231 --256 (1982). 
+
+[34]  D. I. Khomskii and T. Mizokawa,  Orbitally induced Peierls state in spinels , Phys. Rev. Lett . 94 , 156402 
+
+(2005). 
+
+[35]  T. Manjo, S. Kitou, N. Katayama, S. Nakamura, T. Katsufuji , Y. Nii, T. -h. Arima, J. Nasu, T. Hasegawa, K. 
+
+Sugimoto, D. Ishikawa, A. Q. R. Baron, and H. Sawa,  Do electron distributions with orbital degree of freedom 
+
+exhibit anisotropy? , Mater. Adv . 3, 3192 -3198 (2022). 
+
+[36]  S. Kitou, T. Fujii, T. Kawamoto, N. Katayama, S. Maki, E. Nishibori, K. Sugimoto, M. Takata, T. Nakamura, 
+
+and H. Sawa,  Successive dimensional transition in  (TMTTF) 2PF 6 revealed by synchrotron x -ray diffraction ,Phys. Rev. Lett.  119 , 065701 (2017). 
+
+[37]  S. Kitou , T. Manjo, N. Katayama, T. Shishidou, T. -h. Arima, Y. Taguchi, Y. Tokura, T. Nakamura, T. 
+
+Yokoyama, K. Sugimoto, and H. Sawa,  Collapse of the simple localized 3d 1 orbital picture in Mott insulator ,
+
+Phys.  Rev. Research  2, 033503 (2020). 
+
+[38]  P. P. Ewald,  Die Berechnung optischer und elektrostatischer Gitterpotentiale , Ann.  Phys.  369 , 253 -287 (1921). 
+
+[39]  S. Nakamura and A. Fuwa,  Distinct evidence of orbital order in spinel oxide  FeV 2O4 by  57 Fe  Mössbauer 
+
+spectroscopy , J. Phys. Soc. Jpn . 85 , 014702 (2016). 
+
+[40]  S. Ohtani, Y . Watanabe, M . Saito, N . Abe, K . Taniguchi, H . Sagayama, T .-h. Arima, M. Watanabe, and Y. 
+
+Noda , Orbital dilution effect in ferrimagnetic  Fe 1−x Mn xCr 2O4: Competition between anharmonic lattice 
+
+potential and spin -orbit coupling , J. Phys.: Condens. Matter  22 , 176003 (2010). 
+
+[41]  S. Bordács, D. Varjas, I. Kézsmárki, G. Mihály, L. Baldassarre, A. Abouelsayed, C. A. Kuntscher, K. Ohgushi, 
+
+and Y. Tokura,  Magnetic -order -induced crystal symmetry lowering in  ACr 2O4 ferrimagnetic spinels , Phys. 
+
+Rev. Lett . 103 , 077205 (2009). 
+
+[42]  See Supplemental Material for details, which includes Refs. [15,59]. 
+
+[43]  K. Sugimoto, H. Ohsumi, S. Aoyagi, E. Nishibori, C. Moriyoshi, Y. Kuroiwa, H. Sawa, and M. Takata, 
+
+Extremely High Resolution Single Crystal Diffractometory for Orbital Resolution using High Energy 
+
+Synchrotron Radiation at SPring -8, AIP Conf. Proc . 1234 , 887 -890 (2010). 
+
+[44]  L. Krause, K. Tolborg, T. B. E. Grønbech, K. Sugimoto, B. B. Iversen, and J. Overgaard,  Accurate high -
+
+resolution single -crystal diffraction data from a Pilatus  3X CdTe detector , J. Appl. Crystallogr . 53 , 635 (2020). 
+
+[45]  M. Mueller, M. Wang, and C. Schulze -Briese,  Optimal fine  φ-slicing for single -photon -counting pixel 
+
+detectors , Acta Crystallogr. D  68 , 42 -56 (2012). 
+
+[46]  Agilent Technologies, CrysAlis PRO (Agilent Technologies Ltd., Yarnton, Oxfordshire, England, 2014). 
+
+[47]  R. H. Blessing,  DREADD —data reduction and error analysis for single -crystal diffractometer data , J. Appl. 
+
+Crystallogr . 22 , 396 -397 (1989). 
+
+[48]  V. Petříček, M. Dušek, and L. Palatinus,  Crystallographic computing system JANA2006: General features , Z. 
+
+Kristallogr.  229 , 345 -352 (2014). 
+
+[49]  K. Momma and F. Izumi,  VESTA3 for three -dimensional visualization of crystal, volumetric and morphology 
+
+data , J. Appl. Crystallogr . 44 , 1272 -1276 (2011). 
+
+[50]  P. Giannozzi et al.,  Advanced capabilities for materials modelling with Quantum ESPRESSO , J. Phys.: 
+
+Condens. Matter  29 , 465901 (2017). 
+
+[51]  J. P. Perdew, K. Burke, and M. Ernzerhof , Generalized gradient approximation made simple , Phys. Rev. Lett. 
+
+77 , 3865 -3868 (1996). 
+
+[52]  M. J. van Setten, M. Giantomassi, E. Bousquet, M. J. Verstraete, D. R. Hamann, X. Gonze, and G. -M. 
+
+Rignanese,  The PseudoDojo: Training and grading a 85 element optimized norm -conserving pseudopotential 
+
+table , Comput. Phys. Commun . 226 , 39 --54 (2018). 
+
+[53]  A. I. Liechtenstein, V. I. Anisimov, and J. Zaanen,  Density -functional theory and strong interactions: Orbital 
+
+ordering in Mott -Hubbard insulators , Phys. Rev. B  52 , R 5467 (1995). 
+
+[54]  N. Marzari and D. Vanderbilt,  Maximally localized generalized Wannier functions for composite energy bands ,Phys. Rev. B  56 , 12847 -12865 (1997). 
+
+[55]  I. Souza, N. Marzari, and D. Vanderbilt,  Maximally localized Wannier functions for entangled energy bands ,
+
+Phys. Rev. B  65 , 035109 (2001). 
+
+[56]  K. Nakamura, Y. Yoshimoto, Y. Nomura, T. Tadano, M. Kawamura, T. Kosugi, K. Yoshimi, T. Misawa, and 
+
+Y. Motoyama,  RESPACK: An ab initio tool for derivation of effective low -energy model of material , Comput. 
+
+Phys. Commun . 261 , 107781 (2021). 
+
+[57]  M. Charlebois, J. -B. Morée, K. Nakamura, Y. Nomura, T. Tadano, Y. Yoshimoto, Y. Yamaji, T. Hasegawa, K. 
+
+Matsuhira, and M. Imada,  Ab initio derivation of low -energy Hamiltonians for systems with strong spin -orbit 
+
+interaction : Application to  Ca 5Ir 3O12 , Phys. Rev. B  104 , 075153 (2021). 
+
+[58]  G. Pizzi  et al.,  Wannier90 as a community code : New features and applications , J. Phys.: Condens. Matter  32 ,
+
+165902 (2020). 
+
+[59]  S. Kitou , M. Gen, Y. Nakamura, K. Sugimoto, Y. Tokunaga, S. Ishiwata, and T. -h. Arima,  Real -Space 
+
+Observation of Ligand Hole State in Cubic Perovskite  SrFeO 3, Adv. Sci . 10 , 2302839 (2023). Fig.1 . Structural  and magnetic phase transition s in  FeV 2O4, and  comparison between  x-ray diffraction  experiments 
+
+and  DFT calculations.  (a) Crystal structure of FeV 2O4 in the Cubic phase , consisting of FeO 4 tetrahedra  and VO 6
+
+octahedra . (b) Change in  lattice deformations across the successive phase transitions.  Purple  arrows  indicate  the 
+
+direction of magnetization ( M). The magnetic states are denoted as paramagnetic (PM), collinear ferrimagnetic (C -
+
+FM), and noncollinear ferrimagnetic (NC -FM).  (c) Schematic illustration of the magnetic structures in the Ortho (C -
+
+FM) and LT -tetra (NC -FM)  phases . The Fe and V spins are shown by thick red and blue arrows, respectively.  (d)
+
+Experimental VED distribution  around a VO 6 octahedron  at 50 K in the LT -tetra phase.  The yellow color represents 
+
+the iso -density surface  of the VED . (e) VED distribution and electronic band dispersion in the LT -tetra phase, 
+
+computed using spin -polarized DFT+ U calculations with spin –orbit coupling.  The dashed box shows three 
+
+wavefunctions ( Ψ1, Ψ2, and  Ψ3) originating from the  t2g orbitals, where  green  and  pink  represent the positive and 
+
+negative signs of the wavefunctions, respectively. The VED distribution, corresponding to the occupied  t2g orbitals 
+
+below the Fermi level, is shown around the V sites, exhibiting anisotropy similar to that observed experimentally. 
+
+The blue  arrow  represents the  spin on the V site.  The  x, y, and  z axes in (d) and (e) represent the local coordinate 
+
+system s defined  by  x∥a′ , y∥b′, and  z∥c′ for Fe at  (1/8, 1/8, 1/8)  and V at  (1/2, 1/2, 1/2),  respectively  (s ee  Supplemental 
+
+Information, Sections 1  [42] ).Fig.2 . VED  distribution  of FeV 2O4 in the Cubic phase . (a) Experimental VED distribution at 160 K, showing a single 
+
+FeO 4 tetrahedron and a single  VO 6 octahedron  sharing an O atom . Iso -density surface s at a level of 3.9 e/Å 3 are  shown 
+
+by yellow.  (b) Enlarged  VED distribution around the Fe site and schematic of Fe 2+  3d6 high -spin configuration . VED 
+
+distribution of a down -spin in the  doubly degenerate  e orbitals , shown in orange,  is calculated  as the average of 
+
+electron densities of  the 3 z²–r² and  x²–y² orbitals.  (c) Enlarged  VED distribution around the V site and schematic of 
+
+V3+  3d2 configuration . A black stick  with a  black triangle represents the three -fold axis.  The trigonal distortion  splits 
+
+the  t2g orbital  into a low er  energy  a1g and  higher energy  doubly degenerate  eg 
+
+> '
+
+orbitals. VED distribution  is calculated 
+
+as the sum of electron densities of  a1g and  the average of  eg 
+
+> '
+
+orbitals. Spins with  an  orbital degree of freedom are 
+
+depicted as light blue arrows, while other spins are shown by black arrows. Fig. 3. Distortion s of  FeO 4 and  VO 6 associated with  the  phase transition s. (a) Schematic illustration of the normal 
+
+mode in the FeO 4 tetrahedron. The distortion can be represented using the  Q2,Fe  and  Q3,Fe  modes. In the FeO 4
+
+tetrahedron,  Q4,Fe  = Q5,Fe  = Q6,Fe  =0. ( b) Temperature dependence of  Q2,Fe  and  Q3,Fe . ( c) Temperature dependence of 
+
+Q2,Fe  and  Q3,Fe  on a two -dimensional plane. This diagram also illustrates which 3 d orbital is stabilized through 
+
+coupling with the distortion of FeO 4. (d) Schematic illustration of  Q-modes  of  VO 6 distortion . In the case of 
+
+octahedral coordination,  symmetric  distortion  is  decomposed into  six  modes:  A1g  (Q1,V : breathing),  Eg (Q2,V , Q3,V ),
+
+T2g (Q4,V , Q5,V , Q6,V ) modes.  The  trigonal distortion  is represented as  Qt1 ,V  = (Q4,V  + Q5,V  + Q6,V )/ √3 . (e) Temperature 
+
+dependence of the  Qi,V  (i=2 to 6)  and  Qt1 ,V  values.  (f) Temperature dependence of  Q(z)t2,V  = (-Q4,V  - Q5,V  + 2Q6,V )/ √6 
+
+and  Q(z)t3,V  = (-Q4,V  + Q5,V )/ √2  modes,  which are orthogonal to  Qt1 ,V , on a two -dimensional plane. Fig. 4. VED  distribution  around  the  Fe site  and  its  orbital  configuration . (a) Temperature dependence of the  observed 
+
+VED distribution s around the Fe site.  (b) Calculated  distribution  of minority -spin electron  and schematic diagram s
+
+of  the  high -spin  3d6 configuration . A m inority  spin with an orbital degree of freedom are depicted  by  a light blue 
+
+arrow , minority spins whose degeneracy is lifted in the low -temperature phases are depicted  by  red  arrows , and 
+
+majority spins are depicted  by  black  arrows . In the Ortho phase, the two basis states of the  e orbitals are expressed 
+
+as linear combinations of  |3z2-r2⟩ and  |y2-z2⟩, 𝛼 |3z2-r2⟩ + 𝛽 |y2-z2⟩ and  𝛾 |3z2-r2⟩ + 𝛿 |y2-z2⟩. Here,  the  coefficients 
+
+α, β, γ, δ are  obtained from a  basis transformation of the orthonormal states  𝑐 1|3z2-r2⟩ + 𝑐 2|
+
+x2-y2⟩ and  −𝑐 2|3z2-r2⟩ +
+
+𝑐 1|
+
+x2-y2⟩ with  |c1|2+| c2|2=1 . Using relation  |y2-z2⟩ = − √3 
+
+> 2
+
+|3z2-r2⟩ − 1 
+
+> 2
+
+|
+
+x2-y2⟩, the coefficients are given by  𝛼  = 𝑐 1 −
+
+√3𝑐 2, 𝛽  = −2𝑐 2, 𝛾  = −√3𝑐 1 − 𝑐 2, and  𝛿  = −2𝑐 1. The  best fit to the experimental observation is obtained with 
+
+𝛼  = 1.97 , 𝛽  = 1.89 , 𝛾  = 0.37 , and  𝛿  = −0.66 .Fig. 5. Comparison between observed  and calculated  VED  distributions  around  the V site . (a) Temperature 
+
+dependence of the observed VED distributions around the V site , viewed along the [111] axis . (b) Calculated  VED 
+
+distribution obtained using the parameters from the fitting analysis.  (c) Temperature dependence of quantum 
+
+parameters  C1, C2, and  C3 of the  Ψ1 wavefunction . (d) Two possible models for the 3 d2 orbital state of the V 3+  ion. Fig. 6. Results for s pin -polarized DFT+ U calculation s with spin -orbit coupling  in the LT -tetra phase . (a) Magnetic 
+
+structure in the collinear solution, where the V spins are antiferromagnetically aligned with the Fe spins.  (b) Band 
+
+structure along the  k-path of  Γ(0, 0, 0) ZZ (2𝜋  
+
+> 𝑎
+
+, 0, 0)ZX (𝜋  
+
+> 𝑎
+
+, 𝜋  
+
+> 𝑎
+
+, 0) ZΓ (0, 0, 0) ZP (𝜋  
+
+> 𝑎
+
+, 𝜋  
+
+> 𝑎
+
+, 𝜋  
+
+> 𝑐
+
+) and projected density of 
+
+states of the V  t2g  orbitals for  the  collinear solution.  (c), (d) Schematic diagram of  the  orbital states , corresponding to 
+
+the  collinear solution  and  calculated  VED distribution at the V site . (e) Magnetic structure in the  noncoplanar  solution 
+
+with two -in -two -out type V magnetic moments.  In this solution, the spin of V is canted approximately 4 3 deg . from 
+
+the  -x direction.  (f) Band structure and projected density of states of the V  t2g  orbitals for  the  noncoplanar  solution .
+
+(g), (h) Schematic diagram of  the  orbital states , corresponding to  the  noncoplanar  solution and  calculated  VED 
+
+distribution at the V site.  Here, t he  projected density of states of the V  t2g  orbitals  was obtained from the band structure 
+
+using the wave function  Ψ1=γ |yz ⟩ + √(1 − γ2)/2|zx ⟩ + √(1 − γ2)/2|xy ⟩ , Ψ2= −√1 − γ2|yz ⟩ + (γ/√2)|zx ⟩ +
+
+(γ/√2)|xy ⟩ , and  Ψ3=(1/ √2)|zx ⟩ − (1/ √2)|xy ⟩ . The parameter  γ=0.76,  determined by fitting to the experimental 
+
+results, was used  for  both the collinear and  noncoplanar  solutions .1
+
+## Supplemental  information  of 
+
+## Temperature evolution of orbital states with 
+
+## successive phase transitions in FeV 2O4
+
+Chihaya Koyama 1,* , Yusuke Nomura 2,3 , Shunsuke Kitou 1, †, Taishun Manjo 4,
+
+Yuiga Nakamura 4, Takeshi Hara 5, Naoyuki Katayama 6, Yoichi Nii 7, Ryotaro Arita 8,9,
+
+Hiroshi Sawa 10 , and Taka -hisa Arima 1, 9 
+
+> 1
+
+Department of Advanced Materials Science, The University of Tokyo, Kashiwa 277 -8561, Japan. 
+
+> 2
+
+Institute for Materials Research  (IMR) , Tohoku University, Sendai 980 -8577, Japan. 
+
+> 3
+
+Advanced Institute for Materials Research (WPI -AIMR), Tohoku University, Sendai 980 -8577, Japan. 
+
+> 4
+
+Japan Synchrotron Radiation Research Institute (JASRI), SPring -8; Hyogo 679 -5198, Japan. 
+
+> 5
+
+Department of Physics, Tohoku University, Sendai 980 -8578, Japan. 
+
+> 6
+
+Department of Physics, Okayama University, Okayama 700 -8530, Japan. 
+
+> 7
+
+Department of Applied Physics and Physico -Informatics, Keio University, Kanagawa 223 -8522, Japan. 
+
+> 8
+
+Department of Physics, The University of Tokyo, Tokyo 153 -8904, Japan. 
+
+> 9
+
+RIKEN Center for Emergent Matter Science (CEMS), Wako 351 -0198, Japan. 
+
+> 10
+
+Nagoya Industrial Science Research Institute, Nagoya 460 -0008, Japan. 
+
+> *
+
+koyama -chihaya@g.ecc.u -tokyo.ac.jp 
+
+> †
+
+kitou@edu.k.u -tokyo.ac.jp 
+
+This PDF file includes: 
+
+Supplementary text 
+
+Figures S1 to S 9
+
+Tables S1 to S 13
+
+SI References 
+
+CONTENTS 
+
+1. Single -crystal structural analysis using synchrotron X -ray diffraction........ .. .. ....... ... .2
+
+2. Q-mode analysis ........................... ... ......................................................... .. ....... .... .... .. 8
+
+3. Definition of wave functions and determination of orbital states  ...... .. ... ...... ....... .. ... 10 
+
+4. Spin -polarized  DFT+ U+SOC  calculations ….. .... .............................................. .. ...... 132
+
+1. Single -crystal structural analysis using synchrotron X -ray diffraction .
+
+FeV 2O4 undergoes three structural phase transitions upon cooling —from the cubic phase to the 
+
+high -temperature tetragonal  (HT -tetra) , orthorhombic  (Ortho) , and finally the low -temperature 
+
+tetragonal  (LT -tetra)  phases, as described in the main manuscript.  The structural analysis results for 
+
+FeV 2O4 at 160 K (Cubic), 130 K (HT -tetra), 100 K (Ortho), and 50 K (LT -tetra) are summarized in 
+
+Tables S1 -12 .
+
+Taking  𝒂 , 𝒃 , and  𝒄  as the  crystallographic axes of the cubic phase , the axes of  HT -tetra , Ortho, and 
+
+LT -tetra  phase s are  defined  as follows :
+
+𝒂 HT  = 𝒂 −𝒃  
+
+> 2
+
+, 𝒃 HT  = 𝒂 +𝒃  
+
+> 2
+
+, and  𝒄 HT  = 𝒄 ,
+
+𝒂 O = −𝒂 , 𝒃 O = 𝒄 , and  𝒄 O = 𝒃 ,
+
+𝒂 LT  = − 𝒃 +𝒄  
+
+> 2
+
+, 𝒃 LT  = 𝒃 −𝒄  
+
+> 2
+
+, and  𝒄 LT  = 𝒂 .
+
+Using these relations, the atomic coordinates in each phase were transformed into a common cubic 
+
+reference frame to define unified quantization axes for the Fe and V sites.  Figure S1  shows the 
+
+definition of the quantization axes of a FeO 4 tetrahedron and a VO 6 octahedron in FeV 2O4. In the 
+
+cubic phase , the Fe site at the internal coordinate (1/8, 1/8, 1/8) and the V site at (1/2, 1/2, 1/2) are 
+
+chosen as representative atomic positions, and the quantization axes are defined as  𝒙  ∥ 𝒂  , 𝒚  ∥ 𝒃  and 
+
+𝒛  ∥ 𝒄 .
+
+For the HT -tetra, Ortho, and LT -tetra phases, the atomic coordinates in each unit cell were 
+
+transformed into the cubic reference frame using the matrices shown below, thereby defining a 
+
+common quantization axis  (Table S1 3).
+
+(𝒂 ′ 𝒃 ′ 𝒄 ′) = (𝒂  𝒃  𝒄 )𝑷  + (𝒂  𝒃  𝒄 )𝒑  (S1 )
+
+Here, ( a′ b′ c′) and ( a b c) denote the lattice vectors after and before the transformation, respectively. 
+
+In this setting,  𝒙  ∥ 𝒂 ′ , 𝒚  ∥ 𝒃 ′ and  𝒛  ∥ 𝒄 ′.3
+
+Table  S1. Summary of crystallographic data of  Fe V2O4 (Cubic phase). 
+
+Temperature (K)  160 
+
+Wavelength  𝜆  (Å)  0.30945 
+
+Crystal dimension ( μm3) 40 × 40 ×  10
+
+Space group  𝐹𝑑 3̅ 𝑚 
+
+a (Å)  8.4504(10) 
+
+V (Å 3) 603.440(2) 
+
+Z 8
+
+(sin  𝜃  /𝜆 )max  (Å -1) 1.79 
+
+NTotal,obs  38988 
+
+NUnique,obs  (I > 3 σ / all ) 697 / 735 
+
+Average redundancy  50.3 
+
+Completeness  0.99 2
+
+Rint  0.0 36
+
+Only high -angle  reflections  [0.8 ≤ sin  𝜃  /𝜆  ≤ 1.79  Å−1]
+
+R1 (I > 3 σ / all ) 0.0107  / 0.0114 
+
+wR  (I > 3 σ / all ) 0.0 236  / 0.0241 
+
+GOF  (I > 3 σ / all ) 1.39  / 1.38 
+
+All reflections  [0 ≤ sin  𝜃  /λ ≤ 1.79  Å−1]
+
+R1 (I > 3 σ / all ) 0.0128  / 0.0133 
+
+wR  (I > 3 σ / all ) 0.0279  / 0.0283 
+
+GOF  (I > 3 σ / all ) 1.66  / 1.63 
+
+Table  S2. Structural parameters  using  origin  choice 2  of  Fe V2O4 at 160 K. 
+
+Atom  Wyckoff 
+
+position  x y z Ueq  (Å 2)
+
+Fe  8a 1/8 1/8 1/8 0.004700 (10 )
+
+V 16 d 1/2 1/2 1/2 0.003495 (10 )
+
+O 32 e 0.738735 (17 ) 0.738735 (17 ) 0.738735 (17 ) 0.005004 (13 )
+
+Table  S3. Anisotropic atomic displacement parameters of  Fe V2O4 at 160 K. 
+
+Atom  U11  (Å 2) U22  (Å 2) U33  (Å 2) U12  (Å 2) U13  (Å 2) U23  (Å 2)
+
+Fe  0.004700 (10 ) = 𝑈 11  = 𝑈 11  0 0 0
+
+V 0.003495 (17 ) = 𝑈 11  = 𝑈 11  −0.000120 (4) = 𝑈 12  = 𝑈 12 
+
+O 0.00500 (2) = 𝑈 11  = 𝑈 11  −0.000501 (19 ) = 𝑈 12  = 𝑈 12 4
+
+Table  S4. Summary of crystallographic data of  Fe V2O4 (HT -tetra  phase). 
+
+Temperature (K)  130
+
+Wavelength  𝜆  (Å)  0.31080 
+
+Crystal dimension ( μm3) 40 × 40 ×  10
+
+Space group  𝐼 41/𝑎𝑚𝑑 
+
+a (Å)  6.0125(3) 
+
+c (Å)  8.4077(7) 
+
+V (Å 3) 303.940(3) 
+
+Z 4
+
+(sin  𝜃  /𝜆 )max  (Å -1) 1.79 
+
+NTotal,obs  51768 
+
+NUnique,obs  (I > 3 σ / all ) 1643 / 1907 
+
+Average redundancy  39.6 
+
+Completeness  0.99 0
+
+Rint  0.0 52 
+
+Only high -angle reflections  [0.8 ≤ sin  𝜃  /𝜆  ≤ 1.79  Å−1]
+
+R1 (I > 3 σ / all ) 0.0126  / 0.0152 
+
+wR  (I > 3 σ / all ) 0.0166  / 0.0173 
+
+GOF  (I > 3 σ / all ) 0.82  / 0.80 
+
+All reflections  [0 ≤ sin  𝜃  /λ ≤ 1.79  Å−1]
+
+R1 (I > 3 σ / all ) 0.0130  / 0.0153 
+
+wR  (I > 3 σ / all ) 0.0173  /0.0179 
+
+GOF  (I > 3 σ / all ) 0.86  / 0.83 
+
+Table  S5. Structural parameters  using  origin  choice 2  of  Fe V2O4 at  130 K. 
+
+Atom  Wyckoff 
+
+position  x/a  y/b  z/c  Ueq  (Å 2)
+
+Fe  4a 0 3/4 1/8 0.003935 (6)
+
+V 8d 0 0 1/2 0.002980 (6)
+
+O 16 h 0 0.47477 (3) 0.258447 (17 ) 0.004491 (16 )
+
+Table  S6.  Anisotropic atomic displacement parameters of  Fe V2O4 at  130  K. 
+
+Atom  U11  (Å 2) U22  (Å 2) U33  (Å 2) U12  (Å 2) U13  (Å 2) U23  (Å 2)
+
+Fe  0.003558 (9) = 𝑈 11  0.004690 (12 ) 0 0 0
+
+V 0.003002 (10 ) 0.002794 (10 ) 0.003143 (10 ) 0 0 0.000109 (5)
+
+O 0.00491 (3) 0.00392 (3) 0.00464 (3) 0 0 0.00055 (2)5
+
+Table  S7. Summary of crystallographic data of  Fe V2O4 (Ortho  phase). 
+
+Temperature (K)  100
+
+Wavelength  𝜆  (Å)  0.31080 
+
+Crystal dimension ( μm3) 40 × 40 × 10 
+
+Space group  𝐹𝑑𝑑𝑑 
+
+a (Å)  8.5429 (4)
+
+b (Å)  8.3578 (4)
+
+c (Å)  8. 4566 (3)
+
+V (Å 3) 603.807 (2) 
+
+Z 8
+
+(sin  𝜃  /𝜆 )max  (Å -1) 1.79 
+
+NTotal,obs  45450 
+
+NUnique,obs  (I > 3 σ / all ) 2552 / 3568 
+
+Average redundancy  12.7 
+
+Completeness  0.9 80 
+
+Rint  0.0 51 
+
+Only high -angle reflections  [0.8 ≤ sin  𝜃  /𝜆  ≤ 1.79  Å−1]
+
+R1 (I > 3 σ / all ) 0.0132  / 0.0177 
+
+wR  (I > 3 σ / all ) 0.0150  / 0.0151 
+
+GOF  (I > 3 σ / all ) 0.94  / 0.79 
+
+All reflections  [0 ≤ sin  𝜃  /λ ≤ 1.79  Å−1]
+
+R1 (I > 3 σ / all ) 0.0139  / 0.0179 
+
+wR  (I > 3 σ / all ) 0.0165  / 0.0165 
+
+GOF  (I > 3 σ / all ) 1.05  / 0.90 
+
+Table  S8. Structural parameters  using  origin  choice 2  of  Fe V2O4 at 1 00 K. 
+
+Atom  Wyckoff 
+
+position  x/a  y/b  z/c  Ueq  (Å 2)
+
+Fe  8a 1/8 1/8 1/8 0.003255 (6)
+
+V 16 d 0 1/4 3/4 0.002447 (5)
+
+O 32 h 0.986032 (19 ) 0.258106 (17 ) 0.988416 (17 ) 0.003966 (17 )
+
+Table  S9. Anisotropic atomic displacement parameters of  Fe V2O4 at 1 00 K. 
+
+Atom  U11  (Å 2) U22  (Å 2) U33  (Å 2) U12  (Å 2) U13  (Å 2) U23  (Å 2)
+
+Fe  0.002676 (12 ) 0.003697 (10 ) 0.003391 (10 ) 0 0 0
+
+V 0.002265 (10 ) 0.002356 (8) 0.002721 (8) 0.000110 (6) 0.000109 (6) −0.000020 (6)
+
+O 0.00382 (3) 0.00380 (3) 0.00428 (3) 0.00027 (2) −0.00044 (2) 0.00037 (2)6
+
+Table  S10. Summary of crystallographic data of  Fe V2O4 (LT -tetra  phase). 
+
+Temperature (K)  50 
+
+Wavelength  𝜆  (Å)  0.30945 
+
+Crystal dimension ( μm3) 40 × 40 ×  10
+
+Space group  𝐼 41/𝑎𝑚𝑑 
+
+a (Å)  5.9430 (10) 
+
+c (Å)  8.5384 (5) 
+
+V (Å 3) 301.570 (2) 
+
+Z 4
+
+(sin  𝜃  /𝜆 )max  (Å -1) 1.79 
+
+NTotal,obs  48844 
+
+NUnique,obs  (I > 3 σ / all ) 1739 / 1906 
+
+Average redundancy  25.3 
+
+Completeness  0.98 7
+
+Rint  0.0 37 
+
+Only high -angle reflections  [0.8 ≤ sin  𝜃  /𝜆  ≤ 1.79  Å−1]
+
+R1 (I > 3 σ / all ) 0.0102  / 0.0120 
+
+wR  (I > 3 σ / all ) 0.0180  / 0.0189 
+
+GOF  (I > 3 σ / all ) 1.01  / 1.01 
+
+All reflections  [0 ≤ sin  𝜃  /λ ≤ 1.79  Å−1]
+
+R1 (I > 3 σ / all ) 0.01 25 / 0.0138 
+
+wR  (I > 3 σ / all ) 0.02 13  / 0.0220 
+
+GOF  (I > 3 σ / all ) 1. 20 / 1.18 
+
+Table  S11 . Structural parameters  using  origin  choice 2  of  Fe V2O4 at  50 K. 
+
+Atom  Wyckoff 
+
+position  x/a  y/b  z/c  Ueq  (Å 2)
+
+Fe  4a 0 3/4 1/8 0.002382 (6)
+
+V 8d 0 0 1/2 0.001799 (6)
+
+O 16 h 0 0.48156 (2) 0.265154 (18 ) 0.003367 (13 )
+
+Table  S12 . Anisotropic atomic displacement parameters of  Fe V2O4 at  50 K. 
+
+Atom  U11  (Å 2) U22  (Å 2) U33  (Å 2) U12  (Å 2) U13  (Å 2) U23  (Å 2)
+
+Fe  0.002647 (10 ) = 𝑈 11  0.001852 (11 ) 0 0 0
+
+V 0.001879 (10 ) 0.001817 (10 ) 0.001701 (11 ) 0 0 0.000165 (4)
+
+O 0.00420 (3) 0.00290 (2) 0.00300 (2) 0 0 0.00039 (2)7
+
+Table  S1 3. Transformation matrices  𝑷  and shift vectors  𝒑 .
+
+HT -tetra  Ortho  LT -tetra 
+
+transformation matrix 
+
+𝑷  (
+
+𝟏  −𝟏  𝟎 
+
+𝟏  𝟏  𝟎 
+
+𝟎  𝟎  𝟏 
+
+) (
+
+−𝟏  𝟎  𝟎 
+
+𝟎  𝟎  𝟏 
+
+𝟎  𝟏  𝟎 
+
+) (
+
+𝟎  −𝟏  −𝟏 
+
+𝟎  𝟏  −𝟏 
+
+𝟏  𝟎  𝟎 
+
+)
+
+Origin shift 
+
+𝒑  (
+
+𝟎 
+
+𝟏  𝟐 ⁄
+
+𝟎 
+
+) (
+
+𝟎 
+
+𝟏  𝟒 ⁄
+
+𝟏  𝟒 ⁄
+
+) (
+
+𝟏  𝟒 ⁄
+
+𝟏  𝟒 ⁄
+
+− 𝟏  𝟒 ⁄
+
+)
+
+Figure S1. Definition of the quantization axes of FeO 4 tetrahedron and VO 6 octahedron in FeV 2O4.
+
+Changes in the 3 d orbital states of Fe and V due to the structural phase transitions are discussed 
+
+based on this quantization axis. 8
+
+2. Q-mode analysis .
+
+To consider the  V3+  and Fe 2+  orbital states, we analyze the distortion of the VO 6 octahedron and 
+
+the  FeO 4 tetrahedron in terms of normal  (Q) modes  [1] . In the case of octahedral coordination, 
+
+symmetric  distortion of the octahedron can be decomposed into  six  modes:  the  A1g (Q1) mode, 
+
+representing octahedral breathing,  the  Eg (Q2, Q3) modes and the  T2g  (Q4, Q5, Q6) modes.  The  six 
+
+modes can be expressed as 
+
+{
+
+𝑄 1 = (𝑋 1 + 𝑌 2 + 𝑍 3 − 𝑋 4 − 𝑌 5 − 𝑍 6)/√6
+
+𝑄 2 = (𝑋 1 − 𝑌 2 − 𝑋 4 + 𝑌 5)/2
+
+𝑄 3 = (−𝑋 1 − 𝑌 2 + 2𝑍 3 + 𝑋 4 + 𝑌 5 − 2𝑍 6)/2√3
+
+𝑄 4 = (𝑍 2 + 𝑌 3 − 𝑍 5 − 𝑌 6)/2
+
+𝑄 5 = (𝑍 1 + 𝑋 3 − 𝑍 4 − 𝑋 6)/2
+
+𝑄 6 = (𝑌 1 + 𝑋 2 − 𝑌 4 − 𝑋 5)/2
+
+(S2)
+
+where  Ui (U = X, Y, Z, and  i = 1 to 6) represents the displacement  of  the  ith oxygen atom in the  U
+
+direction.  Figure S 2 shows schematic illustration s of  the  normal mode s of  the  octahedron. 
+
+Figure  S2. Schematic  illustration s of  Eg (Q2, Q3) and  T2g  (Q4, Q5, Q6) distortion  modes  of the VO 6
+
+octahedron . The  Q2 and  Q3 modes are orthorhombic and tetragonal distortions, respectively, and the 
+
+Q4,Q5 and  Q6 modes correspond to deviation of the O -V-O angle s.
+
+For the  FeO 4 tetrahedron, the distortion modes are evaluated directly from the displacements of 
+
+the four surrounding oxygen atoms (O1 –O4).  In analogy with the octahedral case, the normal modes 
+
+are expressed in terms of ligand displacements. The tetrahedral distortion can then be decomposed 
+
+into a breathing mode ( Q1) and two Jahn –Teller –active modes ( Q2, Q3).  The  three  modes can be 
+
+expressed as 9
+
+{
+
+𝑄 1 = (𝑋 1 − 𝑌 1 − 𝑍 1 + 𝑋 2 + 𝑌 2 + 𝑍 2− 𝑋 3 + 𝑌 3 − 𝑍 3 − 𝑋 4 − 𝑌 4 + 𝑍 4)/√12 
+
+𝑄 2 = (𝑋 1 + 𝑌 1 + 𝑋 2 − 𝑌 2 − 𝑋 3 − 𝑌 3 − 𝑋 4 + 𝑌 4)/2√2
+
+𝑄 3 = (−2𝑍 1 − 𝑋 1 + 𝑌 1 + 2𝑍 2 − 𝑋 2 − 𝑌 2 − 2𝑍 3 + 𝑋 3 − 𝑌 3 + 2𝑍 4 + 𝑋 4 + 𝑌 4)/2√6
+
+(S3 )
+
+where  Ui (U = X, Y, Z, and  i = 1 to  4) represents the displacement  of  the  ith oxygen atom in the  U
+
+direction.  Figure S 3 shows schematic illustrations of the normal modes of the  tetrahedron .
+
+Figure S 3. Schematic illustration of  Q2 and  Q3 modes  of the  FeO 4 tetrahedron .
+
+Figure S 4. Temperature dependence of breathing mode  Q1 for the  Fe O4 and V O6. Here we define 
+
+Q1=0 at 160  K ( Cubic phase) .10 
+
+3. Definition of wave functions and determination of orbital states .
+
+As shown in the  main  text , the  quantum parameters of  orbital configuration at  the V site  are 
+
+obtained  by fitting the experimental  valence electron density (VED)  distribution using the  3d (t2g)
+
+wave function s determined by site symmetry. 
+
+Here, the LT -tetra phase is first  examined  as a representative case.  The symmetry  at the  V site 
+
+is  ..2/ m, which includes a twofold  rotation  axis  along  [01̅ 1] and  a mirror  plane  perpendicu lar  to  th is 
+
+axis , as shown in  Fig . S5(a). It should be noted that the quantization axes  x, y, and  z are defined 
+
+based on the coordinate system described in Supplemental Text  Sections  1. Considering this 
+
+symmetry, the wave function s of the  t2g  orbital of V in the LT -tetra phase can be written as in  Eq .
+
+(S4) with γ as  a variable. 
+
+{
+
+𝜓 1 = 𝛾 |𝑦𝑧 ⟩ + √1 − 𝛾 2
+
+2 |𝑧𝑥 ⟩ + √1 − 𝛾 2
+
+2 |𝑥𝑦 ⟩
+
+𝜓 2 = −√1 − 𝛾 2|𝑦𝑧 ⟩ + 𝛾 
+
+√2 |𝑧𝑥 ⟩ + 𝛾 
+
+√2 |𝑥𝑦 ⟩
+
+𝜓 3 = 1
+
+√2 |𝑧𝑥 ⟩ − 1
+
+√2 |𝑥𝑦 ⟩
+
+(S4)
+
+The calculated 3 d2 VED is expressed as 
+
+𝜌 calc (𝒓 ) = |𝜓 1|2 + 𝜂 |𝜓 2|2 + (1 − 𝜂 )|𝜓 3|2 (S5)
+
+The  evaluation function  s for the fitting is defined as 
+
+𝑠  = ∑ |𝜌 obs (𝒓 ) − 𝜅 3𝜌 calc (𝜅 𝒓 )|𝑟 
+
+∑ |𝜌 obs (𝒓 )|𝑟 
+
+(S6)
+
+where  𝜌 obs (𝒓 ) is the observed VED around the V site,  κ is a variable parameter representing 
+
+contraction of the VED.  Figure S 6 shows one -dimensional radial profiles of the calculated and 
+
+experimentally observed VEDs around the V atom in the  Cubic  phase. This reveals that the 
+
+experimental results and calculated values show good agreement in the radial range 0.25 Å <  r < 0.6 
+
+Å.  Therefore,  the  fittin g analyses  were  performed for all temperature phases using this radial range .
+
+The nonzero VED observed near  𝑟  = 0 primarily arises from truncation effects in the Fourier 
+
+synthesis, due to the finite range of diffraction intensities used in the  VED  analysis  [2] . The quantum 
+
+parameters were optimized to  κ = 1.53,  γ = 0.76, and  η = 0.50, for which the evaluation function in 
+
+Eq. (S 6) is minimized to  s = 0.27. 
+
+A similar approach  is  applied to the HT -tetra  phase. The symmetry of  the  V site  in this phase 
+
+is  ..2/ m, which includes a  twofold  rotation axis  along  [1̅10] and  a mirror  plane  perpendicular  to th is 
+
+axis , as shown in  Fig.  S5(b). From this symmetry, the wave function of the  t2g  orbital of V in the HT -
+
+tetra  phase can be expressed as in  Eq.  (S7). 11 
+
+{
+
+𝜓 1 = √1 − 𝛾 2
+
+2 |𝑦𝑧 ⟩ + √1 − 𝛾 2
+
+2 |𝑧𝑥 ⟩ + 𝛾 |𝑥𝑦 ⟩
+
+𝜓 2 = 𝛾 
+
+√2 |𝑦𝑧 ⟩ + 𝛾 
+
+√2 |𝑧𝑥 ⟩ − √1 − 𝛾 2|𝑥𝑦 ⟩
+
+𝜓 3 = 1
+
+√2 |𝑦𝑧 ⟩ − 1
+
+√2 |𝑧𝑥 ⟩
+
+(S7)
+
+The quantum parameters were optimized to  κ=1.41,  γ=0.62, and  η=0.50 , for which the evaluation 
+
+function in Eq. (S 6) is minimized to  s = 0.2 1.
+
+Regarding  the  Ortho phase, the symmetry of  the  V site  is  1̅, possessing only an inversion center. 
+
+Therefore, the quantum parameters  Ci, Di, and  Ei (i = 1 to 3)  are subject exclusively to the 
+
+normalization constraints  |C1|2+| C2|2+| C3|2=1, | D1|2+| D2|2+| D3|2=1, and | E1|2+| E2|2+| E3|2=1, with no 
+
+additional  symmetry  restrictions.  In this case,  the optimization of the quantum parameters was 
+
+challenging due to the presence of numerous local minima.  To  address this  issue,  additional 
+
+constraints  were imposed  on  Ci (i = 1 to 3).  Focusing on the coefficient  Ψ1, in the HT -tetra phase,  C1
+
+= C2 < C3, while in the LT -tetra phase,  C1 > C2 = C3. Since the Ortho phase  represents  an 
+
+intermediate state, a constraint of  C1 > C3 > C2 is  applied . The  wave functions  Ψ2 and  Ψ3 are  set 
+
+orthogonal to  Ψ1. Under these conditions,  the evaluation function  s is minimized  to  s=0. 34  at  κ=1. 36 ,
+
+C1=0.6 0, C2=0. 55 , C3=0. 58 , and  η=0. 49 . The optimized coefficients  are  (D1,D2,D3)=( −0.27,  −0.54, 
+
+0.80)  and  (E1,E2,E3)=( −0.74, 0.66, 0.15). 
+
+Figure S 5. (a),(b) Local symmetry of the V site in the LT -tetra and HT -tetra phase s, respectively .
+
+Black ellipse s drawn on the VED represent the  local  twofold  axes , while  black line s indicate  mirror 
+
+planes .12 
+
+Figure S 6. Radial profiles of the calculated (blue  dots ) and experimentally observed (black  dots )
+
+VEDs around the V atom  in the  Cubic phase.  Here we use VED calculation using  Slater -type orbital 
+
+(STO) of an isolated atom with the resolution limit of  d > 0.28  Å.13 
+
+4. Spin -polarized  DFT+ U+SOC  calculations .
+
+Figure S7( a) shows  the  projected  minority spin density of states for the Fe  e orbitals  in the  LT -
+
+tetra  phase , corresponding to the noncoplanar solution from  spin -polarized  density -functional -theory 
+
+(DFT ) calculations  considering  Coulomb interactions  (U) and  spin –orbit coupling  (SOC) . This  result 
+
+indicates that  the  y2-z2 orbital  is occupied by  the  minority spin , exhibiting  orbital ordering . T he 
+
+calculated VED distribution shown in  Fig . S7(b) is consistent with the anisotropy  observed in  the 
+
+experimental VED  [Fig. 4(a) ].
+
+Figure S 7. (a) Projected d ensity of states for  the  Fe  e orbitals with  minority spin  in the  LT -tetra  phase .
+
+(b) VED distribution  around  the Fe site obtained by spin -polarized DFT+ U+SOC  calculation s. The 
+
+iso -density surface at  2.0e/Å³ and 6.5e/Å³ are shown in yellow and orange, respectively. 
+
+Figure  S8(b) also shows simulated VED distribution using parameters obtained from fitting and 
+
+DFT calculations.  Both of these models accurately reproduce the experimentally obtained VED 
+
+distribution anisotropy  [Fig. S 8(a)]. Figure S 8(c) demonstrates that the quantum parameters obtained 
+
+from experimental measurements and those calculated via DFT are in good agreement across the 
+
+parameter space. 14 
+
+Figure S 8. (a), Experimentally obtained VED distribution  around  the V site in the LT -tetra phase.  (b),
+
+Simulation of the VED distribution using parameters obtained from fitting and DFT calculations.  The 
+
+iso -density surface  at 2.9e/Å³ and 3.2e/Å³ are shown in yellow and orange, respectively.  (c),
+
+Colorplot representing the  dependence  of evaluation function  s on the parameters  η and  γ in Eqs. S 5
+
+and S 6. The red and blue stars indicate the optimized parameters obtained from the fitting and the 
+
+DFT calculations, respectively. 
+
+To  explicitly  examine the effect of on -site Coulomb interaction  U on the band structure and the 
+
+VED  distribution , we  intentionally  performed spin -polarized DFT+SOC calculations  with  U = 0
+
+using  the crystal structure  in the LT -tetra phase . Figure S 9(a)  shows the band structure and projected 
+
+density of states for V  t2g  orbital s. In this case,  the system  would  become a ferrimagnetic metal.  The 
+
+metallic bandwidth  is  larger than the energy scale of relativistic spin -orbit coupling, preventing the 
+
+formation of orbital ordering.  Figure S 9(b)  shows the projected  minority spin  density of states for the 
+
+Fe  e orbitals. Due to the tetragonal distortion, a difference arises in the occupancy of the  y²-z² orbital 
+
+and the 3 x²-r² orbital, resulting in the weak anisotropy shown in  Fig . S9(d) . As  U increases, the 
+
+energy difference between the  y²-z² and 3 x²-r² orbital s becomes larger, leading to the  insulating 
+
+orbital ordered state , as shown in  Fig s.  S7(a) and  S7(b). In contrast,  little  anisotropy is found in the 
+
+VED  distribution around the V site  [Fig . S9(c)]. In the case of  U = 0, it should be noted that complex 
+
+V orbital ordering, as illustrated in  Figs . 6(e)  to  6(h) , would  not occur, preventing the formation of a 
+
+2in -2out magnetic structure. Instead, a collinear  ferr imagnetic  structure  would be  realized, where the 
+
+V spins  would  orient oppositely to the iron spins to obtain the energy gain from the exchange 
+
+interaction with the iron spins. 15 
+
+Figure S 9. Results of spin -polarized DFT+ U+SOC calculations performed for the LT -tetra  phase 
+
+with  𝑈  = 0. (a) Virtual  band structure and projected density of states of the V  t2g  orbitals in the  LT -
+
+tetra phase in the  U=0 case . Here,  Ψ1=γ|yz ⟩+√(1 − γ2)/2|zx ⟩+√(1 − γ2)/2|xy ⟩, Ψ2=−√1 − γ2|yz ⟩ +
+
+(γ/√2)|zx ⟩ + (γ/√2)|xy ⟩, and  Ψ3=(1/ √2)|zx ⟩ − (1/ √2)|xy ⟩ (γ=0.76) . (b) Virtual  projected  minority 
+
+spin  density of states for the Fe  e orbitals  in the case of  U=0 . (c),(d) Virtual  VED distribution  around 
+
+V and Fe in the case of DFT+SOC ( U=0) .
+
+RE FERENCES:

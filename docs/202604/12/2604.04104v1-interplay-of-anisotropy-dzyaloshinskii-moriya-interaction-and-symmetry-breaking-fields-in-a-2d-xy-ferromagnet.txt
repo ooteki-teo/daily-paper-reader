@@ -1,0 +1,429 @@
+Title: Interplay of Anisotropy, Dzyaloshinskii Moriya Interaction and Symmetry breaking Fields in a 2D XY Ferromagnet
+
+URL Source: https://arxiv.org/pdf/2604.04104v1
+
+Published Time: Tue, 07 Apr 2026 01:46:14 GMT
+
+Number of Pages: 10
+
+Markdown Content:
+## Interplay of Anisotropy, Dzyaloshinskii Moriya Interaction and Symmetry breaking Fields in a 2D XY Ferromagnet 
+
+Rajdip Banerjee ∗
+
+Department of Physics, Indian Institute of Engineering Science and Technology , Howrah, West Bengal-711103, India 
+
+Satyaki Kar †
+
+Department of Physics, A.K.P.C. Mahavidyalaya, Bengai, West Bengal-712611, India 
+
+A two dimensional ferromagnetic XY model with its bound vortex-antivortex dominated quasi long range ordered phase at low temperatures is a long standing as well as well studied problem of interest in the field of condensed matter. We conduct a detailed Monte Carlo study of such model with rather unexplored extensions where additional anisotropic exchange coupling and Dzyaloshin-skii–Moriya interactions (DMI) together affect the Kosterlitz-Thoulass (KT) transition in presence/ absence of symmetry breaking fields. Without DMI, the exchange term promotes collinear (ferro-magnetic) order, whereas the DMI term induces spin cantings. By tuning anisotropy upto Ising limit, we document energy, specific-heat, magnetizations as well as helicity modulus and vortex densities for different tempeatures and DMI strength. We also compute the 2nd moment of corre-lation lengths in order to probe the spatial correlation of the spins. Furthermore, the effect of U(1) symmetry breaking 4-fold and 8-fold symmetric h4 and h8 fields are explored which shows how the double-peaked specific heat profiles changes in presence of DMI. Overall, our findings append many important updates in the low temperature phases of a topological XY ferromagnet when additional DMI and isotropy-breaking exchange and/or field terms are considered thereby providing a few practical blueprints for suitably engineering topological spin systems. 
+
+I. INTRODUCTION 
+
+A two dimensional (2D) ferromagnetic XY model which is the primary model to exhibit Kosterlitz Thou-less (KT) transitions[1, 2], is considered sacred for its association with a quasi-long range ordered phase at low temperatures (T). As the Mermin-Wagner’s theorem[3] forbids the existance of long range order at any finite temperature in a 2D model with continuous symmet-ric short-range interactions, this quasi-long range order (qLRO) featuring bound vortex-antivortex pairs as topo-logical excitations, carry utmost importance in the field of condensed matter physics. Above the critical temper-ature TKT such excitations unbind to produce a para-magnetic disordered phase where the correlation length decays exponentially[4]. This model is very much capable of explaining superfluid transition[5] or the physics of 2D Josephson junction arrays[6]. Even such transitions have recently been observed in ultracold Fermi gas [7]. Certain liquid-crystal or magnetic films exhibit XY-like behavior and KT criticality [8]. Decades of Monte Carlo stud-ies on ever larger square lattices have thus been devoted to pinning down the critical temperature and universal exponents of the 2D XY ferromagnet (XYFM), provid-ing a benchmark for experiments and for related planar ferromagnets[9]. In real magnetic materials, however, spin-orbit cou-pling can introduce additional anisotropic exchange terms that alter the simple XY physics. A central ex-ample is the Dzyaloshinskii–Moriya interaction (DMI),   
+
+> ∗rajdip.banerjee9696@gmail.com
+> †satyaki.phys@gmail.com
+
+which arises microscopically from superexchange in crys-tals lacking inversion symmetry. The DMI term is anti-symmetric in the spins and thus favors a fixed sense of chirality between neighboring spins. This interaction was first introduced by Dzyaloshinskii to interpret the weak ferromagnetism of the antiferromagnetic materials[10]. In LaCu 2O4, the interaction results in a weak canting of the spins out of the CuO 2 basal plane[11]. In the context of a 2D planar ferromagnet (FM), adding a uni-form DMI term effectively imposes an intrinsic twist on the XY spins, favoring noncollinear configurations with a well-defined handedness. Thus DMI enriches the XY model with chiral and spatially modulated magnetic or-ders. Recent theoretical and numerical work has begun to map out the phase behavior of the 2D ferromagnetic XY model with a DMI. Liu et. al. performed large-scale Monte Carlo simulations on square lattices using a hy-brid update scheme and special boundary conditions[12]. They introduced a novel order parameter sensitive to the DMI-induced spiral and adopted fluctuating bound-ary conditions (FBC) to accommodate the incommensu-rate pitch of the spin modulation[12]. Building on this, Silva et al. carried out extensive Monte Carlo studies of the same model, employing a single-spin Metropo-lis plus Swendsen–Wang cluster hybrid algorithm and single-histogram techniques[13] and obtained TKT in ex-cellent agreement with the known analytic relation for the twisted XY model with an incommensurate phase. On the theoretical side, a renormalization–group anal-ysis based on the Coulomb–gas duality has shown that the Dzyaloshinskii–Moriya interaction enters the vortex description as an effective uniform electric field capable of driving the system toward vortex unbinding for suf-ficiently strong coupling[14]. The thermal and critical 
+
+> arXiv:2604.04104v1 [cond-mat.str-el] 5 Apr 2026
+
+2behavior of this type of XY model with asymmetric ex-change and different types of randomness conditions has been an active subject of Classical Monte Carlo (MC) studies in recent years[15–17]. Classical Monte Carlo (MC) simulations provide a direct, nonperturbative way to probe the equilibrium thermodynamics of lattice spin models. For two-dimensional planar magnets they are particularly well suited to study the interplay of topo-logical defects and collective order. In the pure 2D XY model MC has long been the tool of choice to demon-strate Berezinskii–Kosterlitz–Thouless (BKT) physics. A RG analysis described the topological phase behavior of anisotropic XY model with DMI[18]. Despite these advances, several open questions moti-vate further investigation. Away from the SO(2) sym-metric isotropic point, what could be the effect of DMI on thermodynamic properties in the two dimensional anisotropic XY ferromagnet? How the critical behav-ior changes with changing DMI strength there? The ex-change anisotropy attempts to break the vortex excita-tions and so question arises on what kind of other order it may lead to. Notice that an exchange anisotropy only makes the system spatially anisotropic though the contin-uous U(1) symmetry is still preserved. So bound vortex-antivortex pair and hence qLRO still persists with alge-bric decay of correlation functions at low temperatures in an anisotropic XYFM. However, TKT increases with the strength of anisotropy as single vortex excitations become stable at even further higher temperatures. How such be-havior is modified in presence of DMI is certainly worth investigating. There can be different genre of anisotropy as well that can lower system symmetries. Real 2D mag-netic systems of atomic monnolayers or crystalline sur-faces, that mimic approximately the XY physics, often experiences anisotropic crystal fields breaking continu-ous spin symmetry to discrete Zp symmetries[19]. So their behavior in presence of a DMI is also worth explor-ing. Hence a numerical Monte Carlo based study inves-tigating the interplay of DMI, exchange anisotropy and symmetry breaking fields is long due which we attempt to address in this work. The paper is organized as follows. In Section II we define our model Hamiltonians and outline the simulation protocols. Then in Section III we show the numerical results for a medley of choices in DMI, anisotropy and fields. Finally in section IV, we summerise and discuss our results also briefing on possible future direction of our work.  
+
+> II. MODEL AND METHOD
+
+To investigate the finite-temperature behavior of a 2D XYFM and its extensions, we perform large-scale classical Monte Carlo simulations on a two-dimensional square lattice governed by a Hamiltonian incorporat-ing XY-type spin exchange, bulk Dzyaloshinskii–Moriya interaction (DMI) as well as anisotropy. We use the Metropolis algorithm, a widely adopted Markov Chain Monte Carlo method[20], which proceeds by selecting random spin configurations and updating it probabilisti-cally with temperature dependent acceptance probability of P = min 
+
+h
+
+1, exp 
+
+
+
+− dE kB T
+
+i 
+
+where dE, k B and T repre-sent the energy difference between the updated and ini-tial spin configurations, the Boltzmann constant and the temperature respectively. This updating scheme satisfies the detailed balance and ergodicity, ensuring convergence to the correct equilibrium ensemble. To improve statis-tical reliability, we perform 2 × 10 5 Monte Carlo steps per spin (MCSS) at each temperature point, discarding the first 10 5 steps for thermalization. Periodic bound-ary conditions are imposed to suppress edge effects and mimic an infinite lattice. From the equilibrium configu-rations obtained from the MC simulations, one can com-pute ensemble-averaged thermodynamic quantities such as internal energy E = ⟨H⟩ and specific heat C = d⟨E⟩
+
+> dT
+
+and so on, which allow one to identify the location and nature of thermal phase transitions. Let us first consider a basic 2D isotropic ferromagnetic XY model[21]whose Hamiltonian is given by, 
+
+Hxy = − X
+
+> <i,j>
+
+J⃗S i ·⃗ Sj = −J X
+
+> <i,j>
+
+cos( θi − θj ) (1) Each site (i,j) on a square lattice carries a planar (XY) spin represented by an angle θi, and the Hamiltonian rep-resent a ferromagnetic exchange between nearest neigh-bors, simplied as cosine functions of relative spin ori-entations among the nearest neighbor sites. In prac-tice we sample spin configurations at various tempera-tures T by randomly updating individual spins and ac-cepting or rejecting moves according to the Boltzmann weight exp[ −dE/ (kB T )]. The specific heat per spin is computed from energy fluctuations using the fluctua-tion–dissipation theorem as, 
+
+CV = 1
+
+N β2  ⟨E2⟩ − ⟨ E⟩2 , β = 1
+
+kB T
+
+where N = L2, the number of sites in the square lattice. This can be evaluated following standard classical Monte Carlo simulations. Exchange anisotropy can be introduced in such model to investigate whether and how the BKT transition sur-vives with anisotropy[15]. The corresponding Hamilto-nian becomes 
+
+H = − X
+
+> <i,j>
+
+(JxSxi Sxj + Jy Syi Syj ) (2) As per the standard protocol, we can reduce this two-parameter ( Jx, J y ) anisotropic model into an effective single parameter (Γ) model[15] expressed as, 
+
+Ha = −J X
+
+> <i,j>
+
+[(1 + Γ) Sxi Sxj + (1 − Γ) Syi Syj ], (3) 3
+
+J being a common scale factor. Next we introduce DMI in this anisotropic model. For that we consider a canonical transformation, as outlined by Liu et al.[12], where the effect of DMI can be easily assimilated in the Hamiltonian of a 2D XY ferromagnet as 
+
+Had = Ha −⃗ D · X
+
+> <i,j>
+
+(⃗Si ×⃗ Sj )= −J[p1 + d2 X
+
+> <i,j>
+
+cos( θi − θj − ϕ) − Γ X
+
+> i,j
+
+cos( θi + θj )] (4) The DMI vector here is taken along the z direction. Here 
+
+d = D/J denotes the strength of DMI and the angle ϕ =
+
+sin −1( d√(1+ d2) ) . Apart from specific heat, one can also estimate magnetizations of the system. As the spins on each site has two components, the average magnetization is calculated as 
+
+< m > = p(m2
+
+> x
+
++m2 
+
+> y
+
+) with {mx, my} = 1N
+
+> N
+
+X
+
+> i=1
+
+{Sxi , Syi }.
+
+(5) We adopt periodic boundary conditions for the clasical monte carlo simulation on L ×L square lattice with to-tal sites, N = L2. To avoid incommensurability due to boundary[12], we consider system sizes in multiple of 8 such as L = 8 , 16 , 24 , 32 , 40 , 48 and consider commensu-rate DMI with d = 1 /√3, 1 and √3. Now it has been found that the XY model exhibit in-teresting phase behaviors in presence of competing sym-metry breaking fields (SBF) with strengths h4 and h8
+
+(with 4-fold and 8-fold rotation symmetry respectively to break the SO(2) symmetry of the 2D isotropic XY 
+
+model)[19, 22, 23]. Hence behavior of these fields in a 2D XY model in presence of DMI and exchange anisotropy, as represented by the Hamiltonian 
+
+Hadh = Had − X
+
+> j
+
+hj
+
+X
+
+> i
+
+cos( jθ i). (6) can be worth exploring. Notice that a magnetic field, namely a h1 SBF does not produce any nontrivial change in phase other than pushing for a collinear order, like in the Ising case. Hence here we rather report the non-trivial outcomes of introducing hn fields ( n > 1) in our system and study the noteworthy changes in the phases and particularly, the CV or m plots with temperatures. 
+
+III. RESULTS 
+
+In this section we will show our simulation results step by step starting from the isotropic XY model. 
+
+A. Isotropic XY Ferromagnet 
+
+The thermodynamic behaviour of a two-dimensional ferromagnetic XY model has been widely studied using classical Monte Carlo simulations. Nevertheless, for the sake of the continuity of discussion, we begin our calcula-tions for such isotropic case where gradually cooling down the system from high temperature ranndom spin config-urations, we witness the transition from a paramagnetic phase to a phase with qLRO, where no long range order is observed though spin-spin correlation shows a slower power-law decay. In Fig.1 we capture the system behav-ior in specific heat CV in terms of inverse temperature β,expressed in units of kB /J .
+
+(a) 0.5 1 1.5 2   
+
+> kBT / J
+> 0.4 0.8
+> ρs
+> L=16
+> L=24
+> L=32
+> L=40
+> L=48
+> 00.02 0.04 0.06 1/L
+> 0.9 0.92 0.94 0.96 kBTc / J
+
+(b) FIG. 1. (Color online)(a) Specific heat CV annd (b) spin stiffness ρS as a function of inverse temperature Jβ for differ-ent lattice sizes. The intersecting line in (b) corresponds to 
+
+ρS = 2 
+
+> π
+
+T .
+
+As the temperature is lowered, the system undergoes a Berezinskii–Kosterlitz–Thouless (BKT) transition. The rapid decay of CV on the low-temperature side reflects the essential singularity of the KT transition[24]. The U(1) symmetric Hamiltonian does not accompany any symmetry breaking in the transition but the correlation function undergoes a change in its functional form with the correlation length being infinity in the low temper-ature phase[24]. In this low-temperature quasi-ordered phase, bound vortex–antivortex pairs are formed in the lattice which gets unbound at high temperatures due to thermal fluctuations. At low temperatures, spin-wave excitations also co-exist with the vortex-antivortex pairs[25], though this transition in 2D is mostly domi-nated by the unbinding of vortices though the spin stiff-ness is lost in the high temerature phase[26]. The low T spin-spin correlation function shows a power-law decay 4as < S (r).S (0) >∼ r−η with the temperature dependent exponent η = kB T 
+
+> 2πJ
+
+that indicates a line of critical points for 0 ≤ T ≤ TKT [27]. Notice that for a single vortex to be energetically favorable due to free energy gain, one can estimate the transition temperature to be Tc = πJ  
+
+> 2kB
+
+, at which the exponent η takes its maximum value of 1 /4[27]. This, however, over-estimates the KT transition temper-ature as proliferation of vortices and their interactions are not considered in its naive derivation. The low-T phase with qLRO is generally characterized with condensation of topological defects appearing in the form of bound vortex-antivortex pairs in the system, contrary to the plasma of unbound vortices at high temperatures. Thus the KT transition is an entropy driven transition where a single vortex become unstable at low temperatures and can exist only by binding with antivortices[27, 28]. Notice that topological phases occur in the XY model at all finite temperatures due to formation of vor-tices/antivortices and thus the phase transition is not a topological phase transition in the conventional sense. Rather it only involves binding/unbinding of the topo-logical defects. In this respect, one can compute the spin stiffness ρS (also called the helicity modulus) that mea-sures how much free energy it costs to twist the spin angles slowly across the system. In other words, it tells you how rigid the phase field is against a long-wavelength distortion. The transition temperature ( TKT ) is charac-terised by a finite jump in ρS [29] (see Fig.2(c)) that usu-ally occur at T = TKT ≃ 0.893 J/k B while a broad peak in the specific heat CV (as shown in Fig.1,2(a)) appears due to proliferation of free vortices at a higher temper-ature. Usually, ρS at the transition becomes 2 
+
+> π
+
+TKT [30] and with finite size analysis we estimate the transition to be at TKT ≈ 0.895 J/k B in the thermodynamic limit. MC calculations are also carried out for several lattice sizes, including L = 10 , 20 , 30 , and 40 to capture CV peaks which appear at near about same temperature for all the system sizes considered with periodic boundary condi-tions(PBC). All the curves approach CV ∼ 0.5 at low temperatures, as expected from the equipartition theo-rem. The results can be verified from earlier MC simula-tion results[31].  
+
+> B. Anisotropic XY Ferromagnet
+
+Next we consider exchange anisotropy in the model and the variation of transition temperature because of that. In particular, we probe the evolution of CV peak as anisotropy parameter Γ is varied through. Fig. 2 shows the results of Monte Carlo simulations of the anisotropic two-dimensional XY ferromagnet with 
+
+L = 48 to illustrate how the strength of exchange cou-pling anisotropy modulates the thermal and topological excitations. Notice that the broad peak for CV gradually becomes sharp with an increase in anisotropy , indicat-ing higher-temperature Ising like transitions for larger Γ values. At the Ising limit of Γ = 1 we get a transition 0.5 1              
+
+> Jβ
+> 0123
+> CV
+> Γ = 0.0
+> Γ = 0.2
+> Γ = 0.4
+> Γ = 0.6
+> Γ = 0.8
+> Γ = 1.0
+> 0.5 1
+> Jβ
+> -4 -3 -2 -1 0
+> E/N
+> 0.5 11.5 2
+> Jβ
+> 00.2 0.4 0.6 0.8 1
+> ρS
+> (a) (b) (c)
+> FIG. 2. (Color online)(a) Specific heat CV, (b) Energy per spin < E > /N and (c) spin stiffness ρSvs inverse tempera-ture Jβ for various Γ’s.
+
+temperature to be at β ∼ 0.4/J compared to the theoret-ical estimate by Onsager’s solution[32] of βc = 0 .45 /J for a 2D Ising model in a square lattice. The average energy per spin ⟨E⟩/N decreases monotonically with increasing 
+
+β, reflecting the progressive development of spin align-ment due to suppression of thermal fluctuations. At high temperature, thermal disorder dominates and the ener-gies become nearly independent of the exchange coupling and in particular, the anisotropy parameter Γ. Contrarily upon cooling, anisotropic effects become discernible as a smaller Jy (or, larger Γ) allow spins to align more along the stronger bond directions ˆ x thereby reducing the energy. Each energy curve exhibits a con-cave profile that flattens at large Jβ , tending towards its ground-state value. Notice that, with Γ ̸ = 0,the system carries a finite magnetization at the low temperatures with ⟨m⟩̸ = 0 and thus a true long range order appears there. Interestingly as the anisotropy strength becomes nonzero and the system goes from a BKT phase to a LRO Phase, the spin stiffness also remains nonzero vanishing only in the high T paramagnetic phase (see Fig.2(c)). This indicates presence of vortices which can also be con-firmed from the finite vortex densities at high tempara-tures (see Fig.6(d)). Thus vortices do not readily vanish at the advent of anisotropy. In the slightly anisotropic limit with horizontal x-bonds barely stronger than the vertical y-bonds, the vortex–antivortex unbinding[16] re-quires more energy causing a larger Tc. Contrarily in the large anisotropic limit, which is like a quasi-one-dimensional case, system experiences an Ising-like tran-sition with an even higher Tc.At the isotropic point, the specific heat CV displays a broad, muted hump around Jβ ≈ 0.85. Increasing anisotropy shifts the specific-heat peak to smaller β val-ues while amplifying its sharpness and height. Shifting of 
+
+CV peaks towards larger temperature with an increase in anisotropy marks a shift in universality class of transition 5from XY to Ising type. 
+
+C. Anisotropic XY Ferromagnet with Dzyaloshinskii Moriya Interaction 
+
+Introducing a Dzyaloshinskii–Moriya (DM) term to the anisotropic two-dimensional XY model further alters the spin texture as well as the related thermodynamic prop-erties. The effect of DM interaction in an isotropic 2D XY model has been studied following analytic simplifica-tions and classical MC simulations[12]. We would like to follow those steps in presence of exchange anisotropy. We consider the Dzyaloshinskii-moriya vector D to be perpendicular to the xy plane. Firstly in the isotropic limit, with the anisotropy parameter Γ = 0, we find the variations of transition temperature as shown in the Fig.3. From there, it is evident that increasing DMI 0.5 1 1.5    
+
+> Jβ
+> 00.5 11.5
+> CV
+> d = 0
+> d = 1/ √3
+> d = 1.0
+> d = √3
+> 1.2 1.6 2
+> kBT / J
+> 012
+> d qLRO
+
+FIG. 3. (Color online)Specific heat CV as a function of inverse temperature Jβ for different DMI strength d = 0 .2, 1.0, 1.4 in the 2D isotropic XY ferromagnet. Inset shows Phase Diagram for QLRO-DO phase. 
+
+strength increases the critical temperature and the new spin-canted qLRO lasts longer against thermal fluctua-tions (see Fig.3 inset). The d vs Tc phase diagram portrays how the KT tran-sition temperature gets modified in presence of DMI. Usually DMI leads to spin canting where the nearest neighbour spins no longer remain parallel to each other. Rather they prefer an angular deviation of ξ, particularly in the isotropic limit (see Eq.4). As we only deal with PBC, rather than a fluctuating boundary condition[12], the lattice sizes should be restricted in order to avoid any undue boundary effect coming from DMI and its resulting spin cantings. In fact we only want to deal with commensurate spin cantings. For a square lattice with a length of L, the modulated spin configuratation should be such that, it satisfies L/a = 2 nπ/ϕ , n be-ing an integer. And as ϕ = tan −1(d), not every d val-ues can give commensurate spin configurations. We find 0 10 20 30 40 010 20 30 40 xy               
+
+> -2
+> -10123010 20 30 40 010 20 30 40 xy
+> -2
+> -10123010 20 30 40 010 20 30 40 xy
+> -0.98
+> -0.49 00.49 0.98 1.47 010 20 30 40 010 20 30 40 xy04.8 ×10 -1
+
+FIG. 4. (Color online)Variations of typical spin configurations in terms of ∂xθ for ( d, Γ) = (0,0) at (a) T = 0 .2, (b) 5 .6 (in units of J/k B ) respectively while typical spin configurations (θ) at T = 0 .2 for ( d, Γ) = (c) (1,0) and (d) (0,0.4) respec-tively. 
+
+that L = 48 turns out to be a commensurate lattice size for d = 1 /√3, 1 or √3. Fig.4(c) gives typical spin pat-terns in a low-T condensed phase in presence of DMI with d = 1. The 2D isotropic XY model show a FM LRO at T = 0. However, as per Mermin-Wagner theo-rem < m > = 0 at any finite temperature in a 2D XY model. Numerically for a small T = 0 .2J/k B , bound vortex-antivortex pairs are observed in different pockets in the 2D lattice. It’s better discernible if we plot the spin deviations or eg. , ∂xθ within the lattice (see Fig.4(a)). It shows many local clusters of vortex-antivortex (with pos-itive and negative ∂xθ values respectively) pairs. At a high temperature, however, vortices and antivortices are more scattered through the lattice and do not appear as local pairs (see Fig.4(b)). Finite DMI strength gives a di-agonal arrangement of spins (along ˆ x − ˆy direction where the minimum energy configuration sees no effect of ξ for NN advancement along positive/negative x followed by negative/positive y directions) in the ground state which gets disrupted with temperature when topological exci-tations of vortex-antivortex pairs appear in the lattice. In Fig.6(a), we have shown energy per spin plotted against inverse temperature β. At small β, all energy curves tend to coincide close to zero because thermal fluctuations randomizes spin orientations and washes out any interaction dependence. On cooling ther system (in-creasing β) gradually sees the interaction dominance and drives the system to lower energies as expected [31]. Fur-thermore, anisotropy helps building the collinear FM ar-rangement causing further decrease in the energy. The DMI term, contrarily, favors a chiral alignment. So with both DMI and the anisotropy present, the system witness a competition between these two effects and KT transi-6tion is affected accordingly. 
+
+1. Magnetization 
+
+Away from anisotropy with Γ ̸ = 0, the system tends to align spins ferromagnetically along the direction of stronger exchange interaction and a magnetization m de-velops even at low temperatures. This however decreases in presence of DMI that tilt the spins away from the m
+
+direction. In an anisotropic XYFM, change in transition temperature (more precisely, the CV -peak temperature) is rather low in presence of DMI. Fig. 5 shows the varia-tion of CV with anisotropy (Γ) as well as the correspond-ing phase diagram for d = 1 .0. The evolution of CV
+
+profiles are similar to that for d = 0 case (compare with Fig.2) though transitions occur at a bit higher tempera-tures. Besides, results from d = 1 also show a reluctance in the change in Tc upto Γ ∼ 0.5. 0 0.4 0.8         
+
+> Jβ
+> 00.5 11.5 2
+> CV
+> Γ = 0.0
+> Γ = 0.2
+> Γ = 0.4
+> Γ = 0.5
+> Γ = 0.6
+> Γ = 0.7
+> Γ = 0.8
+> Γ = 1.0
+> 11.5 22.5 kBT/J
+> 00.2 0.4 0.6 0.8 1
+> Γ
+> 11.5 22.5 kBT/J
+> 00.2 0.4 0.6 0.8 1
+> Γ
+> d = 0.0 d = 1.0 d = 1.0
+> (a) (b) (c)
+
+FIG. 5. (Color online)(a) Specific heat CV as a function of inverse temperature Jβ for d = 1 .0 and different Γ. (b), (c) Phase diagrams based on CV peak positions for d = 0 and 1 respectively. 
+
+In Fig.6(b) we show the variation of magnetization order parameter with inverse temperature for different anisotropy strength with DMI. We calculate magnetiza-tion as m =
+
+q
+
+m2 
+
+> x
+
++ m2 
+
+> y
+
+where N is the total number of lattice sites and ( mx, m y ) = 1
+
+> N
+
+P
+
+> i
+
+(cos θi, sin θi), i being the ith lattice site. Here we have considered, N = 48 ×48. Notice that at d = 1 that we consider, it takes a large anisotrotpy with Γ ∼ 0.5 to get finite magnetization at low temperatures. The transtion of Γ = 0 gets modi-fied with Γ ̸ = 0 as anisotropy pushes for ising-like con-figurations in the system providing nonzero magnetiza-tion at low temperatures (though vortices still persists in presence of anisotropy). Γ systematically shifts the magnetization onset to smaller β (higher T ) and sharp-ens the crossover, indicating that anisotropy suppresses low-energy spin-wave fluctuations and stabilizes order 0 0.5 1                
+
+> Jβ
+> -4 -3 -2 -1 0E/N
+> 00.5 1Jβ00.2 0.4 0.6 0.8 1
+> <m>
+> Γ = 0.0
+> Γ = 0.2
+> Γ = 0.4
+> Γ = 0.5
+> Γ = 0.6
+> Γ = 0.7
+> Γ = 0.8
+> Γ = 1.0
+> 0.5 11.5 2
+> 00.4 0.8
+> ρS
+> Γ = 0.0
+> Γ = 0.4
+> Γ = 0.8
+> 00.5 1
+> 00.2 0.4
+> ρv
+> Γ=0 (d=0)
+> Γ=0 (d=1/ √3)
+> Γ=0 (d=1)
+> Γ=0.2 (d=1)
+> Γ=0.4 (d=1)
+> Γ=0.8 (d=1)
+> (a) (b) (c) (d)
+
+FIG. 6. (Color online)(a)Average Energy per spin, ⟨E⟩/N 
+
+and (b)Average magnetization ⟨m⟩ and (c) spin stiffness ρS
+
+as a function of inverse temperature β at different anisotropy strengths for DMI strength d = 1 .0. (d) shows the vortex density ρv .
+
+due to breaking of the continuous U(1) symmetry of the isotropic ferromagnet. All curves saturate close to unity (≈ 0.90 −0.95) at low temperature, which we attribute to DMI-induced canting and residual chiral inhomogeneity that compete with exchange and anisotropy as exchange and anistropy favor coherent alignment while DMI pro-motes twisted configuration. 
+
+2. Spin Stiffness and Vortex Density 
+
+For a XY model with DMI, Ref.[12] devised amagnetization-like order parameter where an effective magnetization is calculated taking into consideration the spin cantings due to DMI. But with exchange anisotropy in addition, such definition no more appropriately de-scribe the order (due to the additional 2 nd term in the Eq.4). As we mentioned earlier, calculating spin stiff-ness ρS can become useful in these cases that can indi-cate the transitions even in presence of DMI, as shown in Fig.6(c) for d = 1. In fact spin stiffness or helicity modulus is a natural measure of phase rigidity because it is defined through the second derivative of the free energy with respect to an imposed twist, and therefore quantifies the energy cost of a global deformation of the spins ([30]). This quantity is especially significant in two dimensions, where the low-temperature phase is not char-acterized by conventional long-range magnetic order but by quasi-long-range order with finite stiffness; physically, a nonzero helicity modulus indicates that the system still resists twisting, while its rapid reduction with increasing temperature reflects the growing influence of vortex ex-citation and its fluctuations and eventual unbinding of vortex-antivortex pairs ([33]). Consequently, the tem-perature dependence of the helicity modulus is one of 700.5 11.5             
+
+> ξ(2)  / L
+> 0.14 0.16
+> ξ(2)  / L
+> 11.5 2kBT / J
+> 010 20 30
+> ξ(2)  / L
+> 11.5 2kBT / J
+> 010 20 30 40
+> ξ(2)  / L
+> L=16
+> L=32
+> L=48
+> L=64
+> d=0.0, Γ=0.0 d=1.0, Γ=0.0
+> d=1.0, Γ=0.6 d=1.0, Γ=0.8
+> (a) (b) (c) (d)
+
+FIG. 7. (Color online) Variation of 2 nd moment Correlationn length with temperature for different DMI and anisotropy strengths. 
+
+the most useful diagnostics of the BKT transition in the XY model, and in the thermodynamic limit it obeys the Nelson–Kosterlitz universal relation ρS (TKT ) = 2 TKT /π ,so that the intersection of ρS (T ) with 2 T /π , provides an estimate of the transition temperature([34]). In addition spin stiffness, one can also calculate vortex densities ( ρv ) to identify the KT or KT-like transitions in such anisotropic limit in presence of DMI. This gives null vortex density ρS in the low-T KT phase as only the bound vortex-antivortex pairs, rather than single vortices are formed in the system in those limit. Fig.6(d) demon-strates such ρv variations for anisotropic XY model with and without DMI. 
+
+3. Second-Moment Correlation Length 
+
+To quantify the spatial extent of spin correlations in the system, we use the second-moment correlation length[19, 35, 36]. For a finite two-dimensional lattice of linear size L, the second-moment correlation length is defined as 
+
+ξ(2) = 12 sin( π/L )
+
+ χF − 1
+
+1/2
+
+, (7) where χ = m2 denotes the magnetic susceptibility and 
+
+F represents the structure factor evaluated at the small-est nonzero wave vector in the periodic lattice[31]. This quantity provides a compact measure of the characteristic length scale over which spins remain correlated. Unlike the full distance-dependent correlation function, which must be examined for different distances, the second-moment correlation length summarizes the overall cor-relation behavior via a single number[35]. This makes it especially useful in finite-size numerical studies, where direct analysis of the correlation function may be affected by noise and boundary effects. The second-moment correlation length is particularly significant in the two-dimensional XY model because the system does not exhibit conventional long-range mag-netic order in the usual sense. Instead, the thermo-dynamic behavior is governed by the evolution of cor-relations over different length scales. As temperature changes, the correlation length provides a direct indica-tion of how far spin coherence extends in the system. Near the transition region, the growth or reduction of 
+
+ξ(2) reflects the changing influence of thermal fluctua-tions and topological excitations. For this reason, it is a very useful quantity for identifying finite-size signatures of the Berezinskii-Kosterlitz-Thouless type behavior. In the present work, the second-moment correlation length has been used to compare the thermal behavior of several related models: the two-dimensional isotropic XY model, the XY model with Dzyaloshinskii-Moriya in-teraction (DMI) for d = 1, and the DMI model with exchange anisotropy for d = 1 and Γ = 0 .2, 0 .6, and 0.8. For each case, simulations were performed on lat-tices of size L = 16, 32, 48, and 64. This systematic comparison allows us to examine how the inclusion of DMI and anisotropy modifies the correlation length and how the finite-size behavior evolves relative to that of the isotropic XY model. In Fig.7(a) the usual behav-ior of 2D XY model is shown where the correlation ratio remains finite and same for all the system sizes inves-tigated at low temperatures but differs while dropping at a certain temperature. Such difference, for d=0.0, near transition region(T 0.9-1.1) is due to the finite size effect. At the high temperature, correlations become short-ranged. Interesting behavior observed with the in-clusion of DMI(d=1.0)(Fig.7(b)), as the correlation ra-tio remains close to zero at all the temperature for the same system sizes. This behavior reflects the lack of cor-relation in the system of XY model with DMI, as DMI prefers a chiral configuration. In the system of XY+DMI, when we introduce anisotropy and increase its strength slowly(Fig.7(c)(d)), the effect of DMI is supressed and correlation length grows again to a higher value but drops close to zero at a certain higher temperature which we can consider as the transition from low temperature or-dered to a high temperature disordered state. 
+
+D. XYFM with symmetry breaking fields 
+
+A magnetic field (or, a 1-fold symmetry breaking field 
+
+h1) along x direction supresses the KT transition in an isotropic XY model causing TKT to increase as free vor-tices become energetically costly and less likely to appear. In fact, the transition gradually becomes a crossover to a new magnetic phase at low temperatures. Moreover, anisotropy enhances the field sensitivity driving the sys-tem faster towards transition. In presence of field h2 or h3 instead, the nature of tran-sitions changes to Ising or 2-state Potts universality class respectively[19]. Moreover, for simultaneous presence of 80.5 11.5 2CV                       
+
+> 00.5 11.5 2kBT / J
+> 0.5 11.5 CV
+> 0.5 11.5 CV
+> 00.5 11.5 2kBT / J
+> 0.5 11.5 CV
+> L = 16
+> L = 32
+> L = 48
+> d = 0
+> (c) (a) (b)
+> d = 0 d = 1 d = 1
+> (d)
+> FIG. 8. (Color online) CVas a function of Jβ in presence of fields (a,b) h4= 0 , h 8= 1 and (c,d) h4= 0 .4, h 8=−0.6 for (a,c) d= 0 and (b,d) d= 1 and different system sizes.
+
+h1 and h2 of opposite signs, a competition develops indi-cating multiple peak structures in variables like specific heat. Interestingly, with a h4 field, specific heat features cusp-like peak (and no rounded peak typical of KT tran-sitions) whereas a h8 field can produce double CV peaks. Particularly a XY h 4h8 model[19], in both limits of com-patible and competing spin configurations, deserves at-tention for it features double peaks in quanitities like specific heat. A h4 field giving a single cusp-like peak indicates a crossover to Ising-like phases. Contrarily a h8 field gives a low T peak for FM to KT transi-tion and a higher-T peak for KT to paramagentic phase transition[19]. These two fields can prefer compatible or competing spin connfigurations depending on whether 
+
+h4h8 > 0 or h4h8 < 0 respectively. In the compati-ble regime with both h4, h 8 positive, one sees a single high temperature continuous transition and/or a low-T crossover in addition[19]. But in the competinng regime of h4 > 0, h 8 < 0, a lattice size dependent low-T sharp peak and a size-independent rounded KT-like peak at a higher temperature can be observed[19]. Fig.8(a) rep-resents the temperature dependance of the specific heat for system size L = 16 , 32 for h4 = 0 .0 and h8 = 1 .0 and 
+
+d = 0 .0. Here we have used a total of 4 × 10 5 Monte carlo steps from which we neglected first 2 × 10 5 steps for thermalization and rest for measurements. Numeri-cal results show two peaks, one at low temperature and the other one at comparatively higher temperature the peak heights being size independent. As mentioned be-fore, the first peak associated with low temperature in-dicates a transition from ferromagnetic to KT whereas the higher temperature peak corresponds to a transition from KT to paramagnetic phase. The results are similar to that shown by Truong et al.[19] where they have im-plimented cluster updating to avoid critical slowing down near transition temperatures. Interestingly, if we impli-ment DMI into the system (see Fig.8(b)), the transition temperature for both the transitions get shifted to higher temperatures, the shift being larger for the high-T tran-sition. The isotropic XY model in presence of h4 = 0 .4 and 
+
+h8 = −0.6 (and without any DMI) that sees the two fields competing for their preferred spin configurations, also shows 2 peaks in Cv representing a low temperature sec-ond order phase transition that gets sharper with increas-ing system size and a high temperature KT phase tran-sition. The average magnetization remains nonzero till some finite temperature. Introducing DMI with this type of crystal field choice, however, results in flatter low-T transition, also dependent of system size (see Fig.8(c,d)). Also the average magnetization, in this case, remains close to zero.  
+
+> IV. SUMMARY AND DISCUSSIONS
+
+The Monte Carlo results presented in this work provide a clear and consistent picture of how direc-tional exchange anisotropy, Dzyaloshinskii–Moriya cou-pling and symmetry-breaking fields reshape the finite-temperature behavior of planar ferromagnets. In the absence of DMI, the XYFM reproduces standard Berezinskii–Kosterlitz–Thouless (BKT) phenomenology and yields a transition temperature close to the well-known benchmark for the classical XY model ( βKT ≈
+
+1.12), confirming the validity of our implementation and thermalization protocol[31]. The anisotropy parameter (Jy /J x or Γ) systematically shifts pseudo-critical sig-natures. Stronger anisotropy makes the system softer towards one direction stabilizing a magnetic order. It drives the specific-heat peak to appear at higher tem-perature and become sharper, consistent with the fact that anisotropy breaks the continuous U(1) symmetry and lifts the classical degeneracy making the system a quasi-1D discrete spin model, altering the balance be-tween spin-wave and topological excitations. The inter-play of exchange anisotropy and Dzyaloshinskii–Moriya coupling qualitatively modifies the thermal and topolog-ical signatures of two-dimensional planar ferromagnets. Anisotropy sharpens the crossover toward ordered be-havior by partially lifting continuous symmetry, while DMI stabilizes chiral, twisted spin textures and shifts pseudo-critical temperatures upward, an effect that have been reported in complementary Monte Carlo studies of XY+DMI models and captured by RG analyses of vor-tex gases in an effective background field[38]. The com-bined numerical evidences, as reported here, support the conclusion that directional and chiral couplings are ef-fective tuning knobs for pseudo-criticality in 2D mag-nets, with direct relevance for engineered ultrathin mag-netic films where DMI and anisotropy can be controlled experimentally[39]. Furthermore, DMI also effectively tune the orders and transitions in presence of symmetry breaking fields that introduces spingaps in the system. 9We plan to adopt a quantum version of such 2D XYFM based detailed analysis and extend that first for 3D Heisenberg spins and then to repeat that in three dimen-sions so that behavior of skyrmions nucleated in such sys-tems can be properly investigated to better understand the exotic phenomena like skyrmion Hall effects[40]. 
+
+ACKNOWLEDGEMENTS 
+
+The authors thank Joao Antonio Plascak, G. Albu-querque Silva, Arghya Taraphder and Tushar Kanti Bose for fruitful discussions. RB and SK acknowledge financial assistance from IIEST, Shibpur, India and ANRF (DST-SERB scheme no. CRG/2022/002781), Government of India respectively. 
+
+[1] Kosterlitz, J., Thouless, D. Long Range Order and Metastability in Two Dimensional Solids and Superfluids (Application of Dislocation Theory). Journal of Physics C: Solid State Physics 5, L124 (2001). [2] Kosterlitz, J., Thouless, D. Ordering, Metastability and Phase Transitions in Two-Dimensional Systems. J. Phys. C: Solid State Phys. 6, 1181 (1973). [3] A. Auerbach, “Interacting Electrons and Quantum Mag-netism”, Sprinnger-Verlag New York (1994). [4] Fr¨ ohlich, J¨ urg., Spencer, T. The Kosterlitz–Thouless transition. Lecture Notes in Physics (1970). doi:10.1007/3-540-11192-1 5. [5] Nguyen, Phong., Boninsegni, Massimo. Superfluid tran-sition and specific heat of the 2D XY model: Monte Carlo simulation. arXiv:2105.14112 (2021). [6] Cosmic, R., Kawabata, K., Ashida, Y., Ikegami, H., Fu-rukawa, S., Patil, P., Taylor, J., Nakamura, Y. Prob-ing XY phase transitions in a Josephson junction array with tunable frustration. Physical Review B 102 , 094509 (2020). [7] Murthy, P., Boettcher, I., Bayha, L., Holzmann, M., Kedar, D., Neidig, M., Ries, M., Wenz, A., Z¨ urn, G., Jochim, S. Observation of the Berezin-skii–Kosterlitz–Thouless phase transition in an ultracold Fermi gas. Physical Review Letters 115 , 010401 (2015). [8] Farinas-Sanchez, A., Botet, R., Berche, B., Paredes, R. On the critical behavior of two-dimensional liquid crys-tals. Condensed Matter Physics 13 , 13601 (2009). [9] Komura, Y., Okabe, Y. Large-scale Monte Carlo simula-tion of two-dimensional classical XY model using multi-ple GPUs. Journal of the Physical Society of Japan 81 ,113001 (2012). [10] Dzyaloshinskii, I. A thermodynamic theory of “weak” fer-romagnetism of antiferromagnetics. Journal of Physics and Chemistry of Solids 4, 241 (1958). [11] Coffey, D., Bedell, K. S., Trugman, S. A. Physical Review B 42 , 6509 (1990). [12] Liu, H., Plascak, J. A., Landau, D. P. Incommensura-bility and phase transitions in two-dimensional XY mod-els with Dzyaloshinskii–Moriya interactions. Physical Re-view E 97 , 052118 (2018). [13] Silva, G. A., Plascak, J. A., Landau, D. P. Incommen-surate phases in the two-dimensional XY model with Dzyaloshinskii–Moriya interactions. Physical Review E 
+
+106 , 044116 (2022). [14] Proskurin, I., Ovchinnikov, A. S., Kishine, J. On Berezin-skii–Kosterlitz–Thouless transition in monoaxial chiral helimagnets. Journal of Physics: Conference Series 903 ,(2017). [15] Mallick, O., Acharyya, M. Monte Carlo study of the phase transitions in the classical XY ferromagnets with random anisotropy. Phase Transitions 96 , 1–19 (2023). [16] Mallick, O., Acharyya, M. Critical behaviours of anisotropic and impure XY ferromagnets. 
+
+arXiv:2208.10109 (2022). [17] Mallick, O. Effects of disorder in a single-site anisotropic XY ferromagnet: A Monte Carlo study. Journal of Mag-netism and Magnetic Materials 626 , 173045 (2025). [18] Farajollahpour, T., Jafari, S. Topological phase transi-tion of anisotropic XY model with Dzyaloshinskii–Moriya interaction. arXiv:1803.08665 (2018). [19] T. T. B. Yen et. al. , Critical properties in the two-dimensional XY model with four-fold and eight-fold crys-tal fields, Results in Physics 78 , 108474 (2025). [20] B. Berg, “Markov Chain Monte Carlo Simulations and Their Statistical Analysis with Web-Based Fortran Code”, ISBN: 978-981-270-363-7 (2004). [21] Kosterlitz, J. M. The critical properties of the two-dimensional XY model. Journal of Physics C: Solid State Physics 7, 1046 (1974). [22] T. A.-Nissila et. al. . Numerical studies of the two-dimensional XY model with symmetry-breaking fields. 
+
+Physical Review B 50 , 12692 (1994). [23] Y., Nishiyama. Two-dimensional transverse-field XY model with the in-plane anisotropy and Dzyaloshin-skii–Moriya interaction: Anisotropy-driven transition. 
+
+Physica A 664 , 130444 (2025). [24] R. G. Jha, Jour. Stat. Mech. th. & Expt., 2020, 083203 (2020). [25] J. V. Jose et. al. , Phys.Rev.B 16 , 1217 (1977). [26] I. Maccari et. al. , Phys.Rev.B 102 , 104505 (2020). [27] N. Goldenfeld, “Lectures on Phase Transitions and The Renormalizationn Group”, Perseus Books, USA (2005). [28] A. Altland, B. Simons, “Condensed Matter Fireld The-ory”, Cambridge University Press (2010). [29] B. Gomez-Bravo et. al. , Semi-vortices and cluster-vorticity: new concepts in the Berezinski ˘ı-Kosterlitz-Thouless phase transition, Suplemento de la Revista Mexicana de F ´ısica 3 020724 (2022) 1–6. [30] G. Khairnar, T. Vojta, Helicity modulus and chiral sym-metry breaking for boundary conditions with finite twist, 10 
+
+Phys. Rev. E 111 , 024114 (2025). [31] Hasenbusch, M. The two-dimensional XY model at the transition temperature: A high-precision Monte Carlo study. Journal of Physics A: Mathematical and General 
+
+38 , 5869–5884 (2005). [32] Onsager, Lars. Crystal Statistics. I. A Two-Dimensional Model with an Order-Disorder Transition, Phys. Rev. 65, 117 (1944). [33] Y. Z. Sun et. al. , Numerical Studies of Vortices and He-licity Modulus in the Two-Dimensional Generalized XY Model, Front. Phys. 10:851322 (2022). [34] D. R. Nelson, J. M. Kosterlitz, Universal Jump in the Su-perfluid Density of Two-Dimensional Superfluids, Phys. Rev. Lett. 39 , 1201 (1977). [35] D. X. Viet, H. Kawamura, Monte Carlo studies of chiral and spin ordering of the three-dimensional Heisenberg spin glass, Phys. Rev. B 80 , 064418 (2009). [36] Y. Komura, Y. Okabe, Large-Scale Monte Carlo Sim-ulation of Two-Dimensional Classical XY Model Using Multiple GPUs, Jour. Phys. Soc. Jap. 81 , 113001 (2012). [37] M. Hasenbusch. The two dimensional XY model at the transition temperature: A high precision Monte Carlo study, J. Phys. A: Math. Gen. 38 , 5869 (2005). [38] Silva, G. A., Plascak, J. A., Landau, D. P. Incommen-surate phases in the two-dimensional XY model with Dzyaloshinskii–Moriya interactions. Physical Review E 
+
+106 , 044116 (2022). [39] Ma, C., Jin, K., Ge, C., Guo, E., Wang, C., Xu, X. Strong Dzyaloshinskii–Moriya interaction in two-dimensional magnets via lithium absorption. Physical Re-view B 108 , 134405 (2023). [40] G. Chen, Skyrmion Hall effect, Nat. Phys., 13 , 112-113 (2017).

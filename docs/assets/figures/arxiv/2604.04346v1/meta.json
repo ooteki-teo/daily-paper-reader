@@ -1,0 +1,38 @@
+{
+  "version": 2,
+  "extractor": "pdffigures2",
+  "figures": [
+    {
+      "url": "assets/figures/arxiv/2604.04346v1/fig-001.webp",
+      "caption": "FIG. 3. Hierarchical fusion cascade for S ≥ 2. Arrows indicate the bipartite A→B link orientation along which ϕℓ is defined. Because the exact ice rule on the z = 4 diamond lattice forbids simultaneous annihilation of 2S ≥ 4 fundamental defects at a single vertex [Fig. 2(b,d)], the defects must fuse sequentially through 2S−2 intermediate vertices. At each vertex, an incoming fundamental defect (ϕ = 1) merges with the accumulated intermediate defect, incrementing the effective charge by one. The displayed link labels ϕℓ alternate between ϕ and 2S−ϕ along the chain because vertices alternate between A and B sublattices; on an A→B link where the effective defect charge ϕ propagates from B to A, one has ϕℓ = 2S − ϕ. The figure illustrates the half-odd-integer case; for integer S the same cascade structure applies with uniform link orientations. The resulting bridge penalty Pbridge = ∏2S−2",
+      "page": 10,
+      "index": 1,
+      "width": 850,
+      "height": 231
+    },
+    {
+      "url": "assets/figures/arxiv/2604.04346v1/fig-002.webp",
+      "caption": "FIG. 6. Monte Carlo results for half-integer spins. (a) Specific heat per spin c for S = 3/2 at T = 0.15 with L = 2, 4, 8. (b) Same for S = 5/2 at T = 0.2. Vertical dashed lines indicate the analytically predicted crossover scale −T lnwc (purple) and the Schottky peak position µSch (dark yellow). The horizontal dashed line (cyan) marks the specific heat of the effective S = 1/2 Ising spin ice at Teff = 4T , to which the large-µ limit asymptotes. Insets zoom in on the peak region. (c,d) Thermal occupancy fractions ns for S = 3/2 and S = 5/2 (L = 8), revealing the thermal depopulation cascade from higher to lower spin amplitudes. (e) Temperature comparison of the S = 3/2 specific heat (L = 8): the peak sharpens upon cooling from T = 0.4 to T = 0.15 but remains a crossover, consistent with the monopole fugacity v ≈ 0.036 ≫ vc ≈ 0.004. (f) Comparison across S = 3/2, 5/2, and 7/2 at T = 0.2 (L = 8). The Schottky hump merges with the topological crossover peak as S increases.",
+      "page": 18,
+      "index": 2,
+      "width": 834,
+      "height": 774
+    },
+    {
+      "url": "assets/figures/arxiv/2604.04346v1/fig-003.webp",
+      "caption": "FIG. 5. Monte Carlo results for integer spins at T = 0.2 with L = 2, 4, 8. (a,b) Specific heat per spin c for S = 2 and S = 3. Vertical dashed lines indicate the analytically predicted crossover scales −T lnwc1 (purple), −T lnwc2 (dark yellow), and the Schottky peak position µSch = 2.4T/(2S− 1) (cyan). Insets zoom in on the µ < 0 peak region. The peak heights saturate with L, confirming crossover rather than a true phase transition. (c,d) Thermal occupancy fractions ns = ⟨δ|Sz ℓ |,s⟩ for S = 2 and S = 3 (L = 8), showing the sequential depopulation of higher spin amplitudes as µ increases. (e) Comparison of the specific heat across S = 1, 2, and 3 (L = 8). The Schottky shoulder (visible for S ≥ 2 near µ ≈ 0.1) shifts toward µ = 0 with increasing S, consistent with the 1/(2S − 1) scaling predicted analytically.",
+      "page": 17,
+      "index": 3,
+      "width": 835,
+      "height": 797
+    },
+    {
+      "url": "assets/figures/arxiv/2604.04346v1/fig-004.webp",
+      "caption": "FIG. 2. Ice rule compatibility at a single z = 4 diamondlattice vertex. Arrows indicate the bipartite A→B link orientation along which ϕℓ is defined. (a) For S = 3/2, three fundamental defects (ϕ = 1) converge and annihilate simultaneously: the defect sum is 1 + 1 + 1 = 3 = 2S ≡ 0 (mod 2S), and the remaining vacuum link carries ϕ = 2S, so the exact ice rule ∑ ℓ∈r ϕℓ = 1 + 1 + 1 + 2S = 4S is preserved. (b) For S = 2, four fundamental defects (ϕ = 1) converge: ∑ ℓ∈r ϕℓ = 1 + 1 + 1 + 1 = 4 = 2S. (c) The spin configuration Sz ℓ corresponding to (a); the vertex satisfies ∑ ℓ∈r S z ℓ = 0, confirming that the ice rule is preserved. (d) The spin configuration corresponding to (b); the vertex gives ∑ ℓ∈r S z ℓ = −4 ̸= 0, violating the ice rule despite the Z2S modular condition being satisfied. The four bonds are drawn in a planar cross for clarity; on the diamond lattice they point toward the corners of a regular tetrahedron.",
+      "page": 9,
+      "index": 4,
+      "width": 404,
+      "height": 343
+    }
+  ]
+}

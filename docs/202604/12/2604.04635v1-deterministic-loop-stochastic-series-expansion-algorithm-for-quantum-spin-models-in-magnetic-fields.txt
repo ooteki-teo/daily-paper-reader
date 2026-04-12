@@ -1,0 +1,681 @@
+Title: Deterministic Loop Stochastic Series Expansion Algorithm for Quantum Spin Models in Magnetic Fields
+
+URL Source: https://arxiv.org/pdf/2604.04635v1
+
+Published Time: Tue, 07 Apr 2026 01:42:51 GMT
+
+Number of Pages: 10
+
+Markdown Content:
+# Deterministic Loop Stochastic Series Expansion Algorithm for Quantum Spin Models in Magnetic Fields 
+
+Liuyun Dao, 1 Yan-Cheng Wang, 2, 3 and Hui Shao 1, 4, ∗
+
+> 1
+
+Center for Advanced Quantum Studies, School of Physics and Astronomy, Beijing Normal University, Beijing 100875, China 
+
+> 2
+
+Hangzhou International Innovation Institute, Beihang University, 311115 Hangzhou, China 
+
+> 3
+
+Tianmushan Laboratory, 311115 Hangzhou, China 
+
+> 4
+
+Key Laboratory of Multiscale Spin Physics, Ministry of Education, Beijing 100875, China 
+
+(Dated: April 7, 2026) The stochastic series expansion (SSE) algorithm is one of the most powerful quantum Monte Carlo methods and has been extensively applied to the study of quantum many-body systems. Its efficiency is particularly enhanced with a deterministic loop update scheme in the study of the 
+
+S = 1 /2 quantum spin systems that preserve SU(2) spin rotational symmetry. Once the symmetry is broken—such as by an external field—a directed loop method is typically required, resulting in a significant reduction in efficiency. Inspired by the SSE approach developed for the quantum Ising model, we introduce a deterministic loop SSE method that is particularly suited for antiferromag-netic systems under a staggered magnetic field. This method enables separate investigations of longitudinal and transverse modes in magnetically ordered phases arising from spontaneous sym-metry breaking. We benchmark the performance of our algorithm against the standard directed loop approach applied to the antiferromagnetic Heisenberg chain and demonstrate that our method substantially reduces CPU time per Monte Carlo step, thereby can outperform the directed loop algorithm in efficiency. 
+
+I. INTRODUCTION 
+
+Over the past several decades, major advances in quan-tum Monte Carlo (QMC) algorithms have made it pos-sible to perform large-scale numerical studies of a wide variety of quantum many-body models. The invention of non-local loop updates has rendered QMC simulations an indispensable tool for investigating large quantum many-body systems. Compared with algorithms employing only local updates, those incorporating non-local updates offer significant advantages. Among the most prominent approaches is the method based on the power-series ex-pansion of the partition function—referred to in the fol-lowing as the stochastic series expansion (SSE)—which is both highly efficient and broadly applicable [1–5]. In particular, the SSE algorithm with operator-loop updates has proven to be extremely powerful in studies of quan-tum spin systems [6–10] and bosonic systems [11–14], including cases involving external magnetic fields and chemical potentials. In the presence of an external magnetic field, the con-struction rules of the SSE operator-loop updates and those of the conventional loop algorithm are, in fact, different solutions of the same set of universal equa-tions—namely, the directed-loops equations that follow directly from the requirement of detailed balance. There-fore, the central issue lies in how to select the optimal solution of the directed-loops equations [3, 4]. However, when the type of magnetic field (uniform versus stag-gered) or its direction (longitudinal versus transverse)  
+
+> ∗huishao@bnu.edu.cn
+
+is changed, one must in general rederive the correspond-ing solutions of the directed-loops equations, a procedure that is often nontrivial. It is normally believed that simulations of spin models in the presence of an external magnetic field must rely on directed-loops algorithms [3, 4, 18], or alternatively em-ploy purely local update schemes, which are generally less efficient[6]. Motivated by quantum Monte Carlo meth-ods for the transverse-field Ising model [19], we develop a deterministic-loops update algorithm based on a simi-lar loop construction scheme, aimed at efficiently treat-ing spin models with magnetic-field terms. As a demon-stration, we apply this method to the isotropic Heisen-berg chain in the presence of staggered longitudinal and transverse fields, respectively. In the weak-field regime, our algorithm significantly reduces the CPU time com-pared with the standard directed-loops approach. We expect that, for ferromagnetic systems under a uniform external field, our method will exhibit comparable effi-ciency. For antiferromagnetic systems in a uniform field, the performance of our algorithm is similar to that of the directed-loops method at weak fields; however, as the field strength increases, the directed-loops approach quickly gains a clear advantage. Moreover, the present method avoids the difficulty of solving the directed-loops equations, features a simple implementation, and possesses broad applicability. It is therefore expected to serve as an efficient tool for simu-lating a wide range of quantum spin systems [6–10] and bosonic systems [11–14]. 
+
+> arXiv:2604.04635v1 [cond-mat.str-el] 6 Apr 2026
+
+2
+
+II. STAGGERED LONGITUDINAL MAGNETIC FIELD 
+
+As a demonstration, we focus on the introduction of a staggered magnetic field, which is crucial for breaking the spin-rotational symmetry in a finite system and is com-monly used in studies of the dynamic structure factor [6, 20]. Our algorithm is designed to maximize efficiency in this scenario, and it can be applied to both longitudi-nal and transverse magnetic fields. The Hamiltonian of the isotropic AFM Heisenberg chain under a staggered longitudinal magnetic field is defined as: 
+
+H = J X
+
+> ⟨i,j ⟩
+
+SiSj − h
+
+> N
+
+X
+
+> i=1
+
+(−1) iSzi . (1) For the magnetic field term, if i ∈ sublattice A, sign [i] = 1, and the magnetic field causes spin i to trend toward 
+
+↑; if i ∈ sublattice B, sign [i] = −1, and the magnetic field causes spin i to trend toward ↓. Referring to the commonly used SSE algorithm [24], we divide the Hamil-tonian into three different bond operators: 
+
+H1,b = −Szi(b)Szj(b) + 1 /4,H2,b = 12 (S+
+
+> i(b)
+
+S− 
+
+> j(b)
+
++ S−
+
+> i(b)
+
+S+
+
+> j(b)
+
+),H3,i = (−1) iSzi + 1 /2 + ϵ, (2) where H1,b is diagonal Heisenberg operator, H2,b is off-diagonal Heisenberg operator, and H3,i is diagonal mag-netic field operator. We employ vertex representations to provide an intuitive description of the bond operators and SSE configurations of the model, as illustrated in Fig. 1. Constants are added to H1,b and H3,i , respectively, to en-sure that the series expansion is positive-definite. These constants are subtracted when calculating the energy. H1, b     
+
+> H2, b
+> H+3, i
+> AB
+> H−
+> 3, i
+> AB
+
+FIG. 1. The six different vertices correspond to the matrix elements in Eqs. 3 and 4. Black circles represent spin-up states, while white holes represent spin-down states. We use different colors and lengths to distinguish between the various vertices. H1,b and H2,b correspond to Heisenberg vertices, where A and B denote different sublattices. H+( −)3,i represents magnetic vertices in which the spins are aligned with (opposite to) the magnetic field. 
+
+The matrix elements of Heisenberg bonds are: 
+
+⟨↑↓ | H1,b | ↑↓⟩ = 1 /2, ⟨↓↑ | H1,b | ↓↑⟩ = 1 /2,
+
+⟨↑↓ | H2,b | ↓↑⟩ = 1 /2, ⟨↓↑ | H2,b | ↑↓⟩ = 1 /2. (3) And the matrix elements of magnetic field bonds are: 
+
+⟨↑ (↓)|H+3,i | ↑ (↓)⟩ = 1 + ϵ, S i aligned with h ;
+
+⟨↓ (↑)|H−
+
+> 3,i
+
+| ↓ (↑)⟩ = ϵ, S i opposite to h. (4) Then the full Hamiltonian can be written as: 
+
+H = −J
+
+> Nb
+
+X
+
+> b=1
+
+(H1,b − H2,b ) − h X
+
+> i
+
+H3,i 
+
++ JN b
+
+4 + h(1 /2 + ϵ)N. (5) The partition function can be written as: 
+
+Z = X
+
+> α
+
+X
+
+> SM
+
+(−1) n2 βn(M − n)! 
+
+M ! ⟨α| 
+
+> M−1
+
+Y
+
+> p=0
+
+Ha(p),b (p)|α⟩, (6) where n is the total number of operators, M is the cut-off length, and the energy is given by E = −⟨ n⟩/β . For a bi-partite system, the sign factor ( −1) n2 always positive[24]. The weight of the configuration shown in Fig. 2 can be written as: 
+
+W (α, S M ) = ( βJ 
+
+2 )nj [β(1 + ϵ)h]n+ (βhϵ )n− (M − n)! 
+
+M ! ,
+
+(7) here nj + n+ + n− = n. The probabilities of inserting or removing a bond are: 
+
+Pinsert (J) = βJN b
+
+2( M − n) , P remove (J) = 2( M − n + 1) 
+
+βJN ;
+
+Pinsert (h+) = (1 + ϵ)βhN 
+
+(M − n) , P remove (h+) = (M − n + 1) (1 + ϵ)βhN ;
+
+Pinsert (h−) = ϵβhN 
+
+(M − n) , P remove (h−) = (M − n + 1) 
+
+ϵβhN . (8) In Fig. 2, we present a typical SSE configuration con-taining multiple loop trajectories. The construction of a loop can start from an arbitrary vertex: when the path encounters a Heisenberg vertex, a “switch-and-reverse” operation is performed, meaning that the path jumps to the other spin line connected by the bond operator while simultaneously reversing its propagation direction; when the path encounters a magnetic-field vertex, it continues straight through the operator along the original direction, while incrementing the count of visited field vertices ac-cordingly. Eventually, the path returns to its starting point, thereby forming a closed loop. It is worth noting that, in the directed-loops method, each time the path encounters an operator, its propa-gation rule must be determined by solving the directed-loopss equations. As a result, each loop-update in a QMC 31 12 23 34 45 56 67 78 8           
+
+> 0
+> 1
+> 2
+> 3
+> 4
+> 5
+> 6
+> 7
+> 8
+> 9
+> 10
+> 11
+> 12
+> 13
+> pi=
+> W1W2
+> FIG. 2. The schematic diagram shows an SSE configura-tion for an 8-spin chain. Here, pdenotes the index of the imaginary-time string. A closed loop is highlighted in red. The weight of the original configuration is denoted by W1,while the weight after flipping the spins is denoted by W2.For loops without magnetic bonds, the probability of flipping spins is 1 /2. For loops with nh̸= 0, the probability of flipping spins is determined by Eq. 9.
+
+simulation typically (with high probability) generates a different loop structure and cluster decomposition, which is then flipped[3, 4]. In contrast, the deterministic-loops method treats each type of operator in a unique and fixed manner: as long as the operator string configuration is unchanged, the constructed loops remain identical in ev-ery update. In particular, when the magnetic field term is set to h = 0, the directed-loops method reduces to the deterministic-loops method, and the cluster structure generated in each update becomes exactly the same. Taking the configuration corresponding to the red loop in Fig. 2 as an example, the probability of flipping, 
+
+P (W1 → W2) , and the probability of remaining un-changed, P (W1 → W1) , can be written as follows: 
+
+P (W1 → W2) = W2
+
+W1 + W2
+
+= 1
+
+  1+ ϵϵ
+
+∆n + 1 ,P (W1 → W1) = W1
+
+W1 + W2
+
+= 1
+
+  1+ ϵϵ
+
+−∆n + 1 , (9) where ∆ n = n+ 
+
+> l
+
+− n− 
+
+> l
+
+, and n+( −) 
+
+> l
+
+denotes the number of 
+
+H+( −)3,i operators in the closed loop. In the staggered-field case considered in this work, only one type of field operator can appear within a given loop, i.e., either n+ 
+
+> l
+
+= 0 or n− 
+
+> l
+
+= 0. This is because the allowed Heisenberg bond operators always connect two sites with opposite spin orientations, thereby excluding the possi-bility that the two types of field operators coexist within the same loop. In contrast, for a uniform magnetic field, a single loop may contain both H+3,i and H− 
+
+> 3,i
+
+operators simultaneously. To gain a more intuitive understanding of the above flipping probabilities, let us substitute ∆ n = 1 and 
+
+ϵ = 1 /2 into Eq. 9. One then obtains P (W1 → W2) = 1 /4and P (W1 → W1) = 3 /4. This indicates that when a loop contains operators aligned with the external mag-netic field, the probability of retaining the original config-uration is significantly higher than that of being flipped. This result has a clear physical interpretation: as the ef-fect of the magnetic field increases, SSE sampling tends to favor loop configurations aligned with the field direc-tion. For loops that do not contain any field operators, we follow the idea of the Swendsen–Wang algorithm and flip them with probability 1 /2, thereby achieving optimal update efficiency[24]. The other components of the QMC process—including off-diagonal updates, adjustment of the cutoff, and mea-surement of observable quantities—are based in part on the deterministic loop algorithm developed by Sandvik in 2010 [24], with certain modifications. One important de-tail is that we need to calculate the number of magnetic bonds in order to determine the flipping probability. In addition, a selection probability Pselect is introduced to decide whether to update magnetic bonds or Heisenberg bonds at a given imaginary time slice p [25]. Although 
+
+Pselect has a slight influence on the update efficiency of the QMC algorithm, it does not affect the measurement of observable quantities. The physical quantities we focus on are the order parameter 
+
+⟨mzs ⟩ = ⟨| 1
+
+N
+
+> N
+
+X
+
+> i=1
+
+(−1) iSzi |⟩ . (10) Then the energy density is simply given by e =
+
+−⟨ n⟩/(βN ). In Fig. 3, we compare the results for the energy density and the order parameter obtained using Exact Diagonal-ization (ED), deterministic loops (DE-L) QMC, and di-rected loops (DI-L) QMC methods. All results show good agreement. The DI-L method is based on the widely used directed-loops algorithm developed for the XXZ model [3, 4]. However, the solution to the directed-loops eqnar-rays differs in our case because we consider a staggered external field. By following solution B in Ref. [3], we can derive a similar solution in which the bounce probabilities are zero. To quantify the efficiency of the algorithm, we in-troduce the integrated autocorrelation time τint , which characterizes the minimum number of Monte Carlo steps (MCS) required to obtain two statistically approximately independent samples. It serves as an important measure of the efficiency of Monte Carlo (MC) sampling. For a given observable O, the normalized autocorrelation func-tion is defined as 
+
+AO (t) = ⟨O(i + t)O(i)⟩ − ⟨ O(i)⟩2
+
+⟨O(i)2⟩ − ⟨ O(i)⟩2 , (11) where i and t denote the index of the MCS (time) and the time interval, respectively. 41.0     
+
+> 0.5
+> 〈e〉
+> (a)
+> ED
+> DE-L
+> DI-L
+> 0.0 0.5 1.0 1.5 2.0
+> h
+> 0.2
+> 0.3
+> 0.4
+> 0.5
+> 〈mzs
+> 〉
+> (b)
+
+FIG. 3. We compare the results of observables obtained at different magnetic field strengths for L = 12 and β = 12 using ED (red circles), deterministic-loops QMC (DE-L, blue squares), and directed-loops QMC (DI-L, green triangles): (a) energy density; (b) AFM order parameter. 
+
+The autocorrelation function reflects the statistical correlation between samples at successive MCS: when 
+
+AO (t) decays rapidly, neighboring samples are relatively independent and the algorithm is efficient; conversely, a slow decay indicates strong correlations and thus low efficiency. In equilibrium, the autocorrelation function typically exhibits an exponential decay, AO (t) ∼ e−t/τ O ,where τO is the characteristic decay time associated with the observable O. Based on this, the integrated autocor-relation time is defined as 
+
+τint (O) = 12 +
+
+> ∞
+
+X
+
+> t=1
+
+AO (t), (12) which provides a quantitative measure of the update ef-ficiency of the Monte Carlo algorithm. This quantity incorporates contributions from the au-tocorrelation function over all MCS and is a standard metric for evaluating the efficiency of MC updates. In practical calculations, one typically chooses the antifer-romagnetic order parameter or the magnetic susceptibil-ity as the observable O, and computes the corresponding 
+
+τint to assess algorithmic efficiency [3]. A shorter inte-grated autocorrelation time indicates that more statisti-cally independent configurations are generated per up-date, corresponding to higher efficiency. By comparing 
+
+τint obtained from different algorithms under the same system and parameter settings, one can directly evaluate the relative performance of various update schemes and provide guidance for optimizing SSE or directed-loops al-gorithms. In QMC simulations, we introduce an upper bound 1        
+
+> 2
+> τint [mzs ]
+> (a) ²= 0
+> ²= 0 .25
+> ²= 0 .5
+> ²= 1 .0
+> ²= 2 .0
+> 0
+> 1
+> 2
+> tcpu /(10 −4)
+> (b)
+> 0.0 0.5 1.0
+> h
+> 0
+> 1
+> 2
+> tint /(10 −4)
+> (c)
+
+FIG. 4. Results of the autocorrelation time measured us-ing the deterministic-loops algorithm (DE-L) under differ-ent tuning parameters ϵ as a function of the external mag-netic field. The system size is L = 64, inverse temperature 
+
+β = 16, and the series cutoff is set to ncut = 500. The sym-bols correspond to ϵ = 0 .0 (red circles), 0 .25 (blue squares), 0.5 (green triangles), 1 .0 (yellow diamonds), and 2 .0 (pur-ple pentagons).(a) Integrated autocorrelation time τint [mzs ]computed from the antiferromagnetic order parameter mzs ;(b) CPU time per Monte Carlo step tCPU ;(c) CPU time tint re-quired to obtain two statistically independent samples. 
+
+ncut for the operator string as a cutoff for the series. As long as ncut ≫ τint , this cutoff has negligible effect on the measurement of the autocorrelation time, since the autocorrelation function has essentially decayed to zero before reaching the cutoff. For the deterministic-loops algorithm (DE-L), all loops are constructed and flipped with a certain probability in each MCS, which is analogous to the Swendsen–Wang cluster update scheme [26]. In this process, the number of operators visited per Monte Carlo step, nvd , is equal to the total number of operators n.In contrast, the directed-loops algorithm (DI-L) con-structs and flips individual loops sequentially via off-diagonal updates, similar to the Wolff cluster algorithm [27]. Therefore, during the equilibration phase, the num-ber of loops Nl needs to be adjusted to ensure that the 5number of operators visited per MCS approaches the maximum length M , i.e., nvd ≈ M [3]. After equili-bration, if an increase in the cutoff length M is required, it is adjusted according to M = 43 nmax , where nmax is the maximum number of operators encountered during the simulation. In practice, since nvd (DI-L) = M >nvd (DE-L) = n, the definition of a MCS is more favor-able for the directed-loops algorithm, as it visits more operators per step. Nevertheless, within certain param-eter regimes, the deterministic-loops algorithm can still exhibit higher sampling efficiency. 1                         
+
+> 2
+> τint [mzs ]
+> (a) ²= 0
+> ²= 0 .25
+> ²= 0 .5
+> ²= 1 .0
+> ²= 2 .0
+> 0
+> 1
+> 2
+> 3
+> tcpu /(10 −4)
+> (b)
+> 0.0 0.5 1.0
+> h
+> 0
+> 1
+> 2
+> tint /(10 −4)
+> (c)
+> FIG. 5. Results of the autocorrelation time measured using the directed-loops algorithm (DI-L) under different tuning pa-rameters ϵas a function of the external magnetic field. The system size is L= 64, inverse temperature β= 16, and the series cutoff is set to ncut = 500. The symbols correspond to
+> ϵ= 0 .0 (red circles), 0 .25 (blue squares), 0 .5 (green triangles), 1.0 (yellow diamonds), and 2 .0 (purple pentagons).(a) Inte-grated autocorrelation time τint [mzs] computed from the anti-ferromagnetic order parameter mzs;(b) CPU time per Monte Carlo step tCPU ;(c) CPU time tint required to obtain two sta-tistically independent samples.
+
+In addition to the integrated autocorrelation time τint ,we introduce two other quantities to evaluate the effi-ciency of a QMC program. The first is tCPU , the CPU time required per MCS in the simulation; the second is 
+
+tint = τint × tCPU , which represents the actual CPU time needed to obtain two statistically independent samples. This metric provides a comprehensive measure of algo-rithm performance, reflecting both statistical indepen-dence and computational cost. In both the DE-L and DI-L algorithms, we introduce a tuning parameter ϵ to control the update efficiency of the QMC simulation. Specifically, a larger ϵ increases the complexity of the imaginary-time sequence and loop structure, which in turn raises the CPU time per MCS. At the same time, increasing ϵ can enhance the update efficiency per step, making it easier for the algorithm to generate statistically independent samples. Therefore, the choice of ϵ requires a trade-off between CPU time consumption and update efficiency. Reference [3] pro-vides a systematic analysis of ϵ in QMC simulations of the XXZ model under a uniform magnetic field, offer-ing guidance for selecting an appropriate value of this parameter. For a fair comparison, we choose the parameter ϵ = 0, at which both algorithms achieve their fastest simulation performance, and compare the efficiency of the DE-L and DI-L algorithms under this condition. Figures 6 and 7 present the numerical results for system sizes L = 64 and L = 128, respectively. The inset of Fig. 6(a) shows the behavior of the auto-correlation time in a smaller magnetic-field window. It can be seen that, for both algorithms, the autocorrelation time first increases and then decreases with increasing magnetic field. For the DE-L algorithm, the autocorre-lation time reaches a maximum value of 1 .95(1) around 
+
+h ≃ 0.02, then decreases as the field increases, and sta-bilizes at approximately 1 .7 for h ≳ 0.15. In contrast, for the DI-L algorithm, the autocorrelation time forms a plateau in the range h ∈ [0 .02 , 0.06], with a maximum value of about 1 .9, and then decreases continuously as the magnetic field increases further. Notably, at h = 0, the autocorrelation times of the two algorithms are nearly identical. This result is consistent with the previous dis-cussion: in the absence of an external magnetic field, the directed-loops algorithm reduces to the deterministic-loops algorithm in its numerical implementation, leading to nearly identical update efficiencies. Figure 6(b) shows that, over the entire range of mag-netic field, the CPU time consumed by the DE-L algo-rithm is consistently smaller than that of the DI-L algo-rithm. This is expected, since the DI-L algorithm is more complex in its implementation and requires visiting more loops and cluster structures in each Monte Carlo step, re-sulting in higher computational overhead. From the results of tint shown in Fig. 6(c), it is evident that in the magnetic-field range h ∈ [0 , 0.35], the DE-L algorithm outperforms the DI-L algorithm in overall ef-ficiency. The CPU time required to obtain statistically independent samples differs by up to a factor of about 1.3 between the two methods. Considering that large-scale MC simulations typically require tens to hundreds of millions of MCS to achieve sufficient statistical accu-racy, this efficiency advantage translates into substantial 60       
+
+> 1
+> 2
+> τint [mzs ]
+> (a)
+> 0.00 0.02 0.04
+> 1
+> 2
+> DE-L DI-L
+> 0.0
+> 0.5
+> 1.0
+> tcpu /(10 −4)
+> (b)
+> 0.0 0.2 0.4
+> h
+> 0.0
+> 0.5
+> 1.0
+> 1.5
+> tint /(10 −4)
+> (c)
+> 0.00 0.02 0.04
+> 0.0
+> 0.5
+> 1.0
+
+FIG. 6. MC performance as a function of the external mag-netic field measured using the DE-L (red circles) and DI-L ( blue squares) algorithms at ϵ = 0. The system size is 
+
+L = 64, inverse temperature β = 16, and the series cutoff is ncut = 500.(a) Integrated autocorrelation time τint [mzs ] cal-culated from the antiferromagnetic order parameter mzs ;(b) CPU time per Monte Carlo step tCPU ;(c) CPU time tint re-quired to obtain two statistically independent samples. Insets in panels (a) and (c) show results for a smaller magnetic field window. 
+
+savings in CPU time in practical computations. Figure 7 presents the results for the system size L =128. Compared with L = 64, the larger system size cor-responds to a longer imaginary-time sequence, leading to significantly increased autocorrelation times and CPU costs for both algorithms. Nevertheless, in the low-field region, the DE-L algorithm still exhibits superior over-all efficiency compared to the DI-L algorithm. The CPU time required to obtain statistically independent samples differs by at most a factor of about 1.3 between the two methods. These results indicate that the efficiency advantage of the DE-L algorithm in the low-field regime remains ro-bust even at larger system sizes. Furthermore, since the computational complexity of QMC simulations scales as 
+
+∝ βN , depending only on the system size and not on the lattice dimensionality, this advantage is expected to 1
+
+2
+
+3
+
+> τint [mzs ]
+
+(a) DE-L 
+
+DI-L 
+
+0
+
+2
+
+4
+
+> tcpu /(10 −4)
+
+(b) 
+
+0.0 0.2 0.4 
+
+h
+
+0
+
+2
+
+4
+
+6
+
+> tint /(10 −4)
+
+(c) 
+
+FIG. 7. MC performance as a function of the external mag-netic field measured using the DE-L (red circles) and DI-L ( blue squares) algorithms at ϵ = 0. The system size is 
+
+L = 128, inverse temperature β = 32, and the series cut-off is ncut = 500.(a) Integrated autocorrelation time τint [mzs ]calculated from the antiferromagnetic order parameter mzs ;(b) CPU time per Monte Carlo step tCPU ;(c) CPU time tint re-quired to obtain two statistically independent samples. 
+
+remain robust when extended to the two-dimensional sys-tems of interest. It should be emphasized that the definition of a MCS adopted here is more favorable to the DI-L algorithm, since it visits more operators within each step. Mean-while, although the chosen parameter ϵ = 0 lies within the optimal regime for the DI-L algorithm, it is not opti-mal for the DE-L algorithm (as shown in Fig. 4, where the optimal range is ϵ ∈ [0 .25 , 0.5]). In practical simulations, a more optimal choice of ϵ for the DE-L algorithm would further enhance its performance, leading to even greater CPU-time savings in obtaining statistically independent samples. All benchmarks were performed on the same server within the same time period. Although slight nonphysi-cal fluctuations in CPU time are present for a few data points, they do not affect the conclusions drawn above. 7 
+
+> III. TRANSVERSE MAGNETIC FIELD
+
+We now apply the magnetic field along the x direction to investigate transverse quantum fluctuations in the sys-tem. The corresponding Hamiltonian can be written as 
+
+H = J X
+
+> ⟨i,j ⟩
+
+SiSj − h
+
+> N
+
+X
+
+> i=1
+
+(−1) iSxi , (13) where Sxi = ( S+ + S−)/2. For the antiferromagnetic Heisenberg model, QMC methods can only simulate a staggered transverse magnetic field; applying a uniform transverse field inevitably leads to the sign problem. Cor-respondingly, in the ferromagnetic model, only a uniform transverse field can be introduced [4, 6]. In the conventional directed-loops algorithm, the single-site magnetic-field term is typically combined with the identity operator to construct an effective two-site op-erator with the same structure as the Heisenberg interac-tion. The advantage of this treatment is that, during the diagonal update, there is no need to distinguish between different operator types, and the acceptance probability depends only on the spin configuration at the ends of the operator string segment. However, the cost is that the transverse-field term introduces additional allowed spin configurations, which in turn requires the inclusion of new types of “vertices” and corresponding “processes” in the off-diagonal (loop) updates. When constructing loop diagrams, one must also consider processes in which only a single leg (incoming or outgoing) is changed while the others remain unchanged[4]. In contrast, the DE-L algorithm adopted here is more closely related to the treatment used for the transverse-field Ising model [19]. By explicitly separating the magnetic-field term from the interaction term, the diago-nal update becomes slightly more involved, but the loop update procedure is significantly simplified. To incor-porate the magnetic-field term into the generated SSE configurations, we introduce a constant operator H3,i .The Hamiltonian is then decomposed into four mutu-ally independent parts: the diagonal Heisenberg term 
+
+H1,b , the off-diagonal Heisenberg term H2,b , the diagonal magnetic-field term H3,i , and the off-diagonal magnetic-field term H4,i , with their explicit forms given by 
+
+H1,b = −Szi(b)Szj(b) + 1 /4,H2,b = 12 (S+
+
+> i(b)
+
+S− 
+
+> j(b)
+
++ S−
+
+> i(b)
+
+S+
+
+> j(b)
+
+),H3,i = h/ 2,H4,i = (−1) i h
+
+2 (S+ 
+
+> i
+
++ S− 
+
+> i
+
+). (14) We add constants to H1,b to ensure the series expansion is positive definite. The matrix elements of the Heisenberg terms are the same as those in Eq. 3, while the matrix elements of the magnetic field terms are given by: 
+
+⟨↑ (↓)|H3,i | ↑ (↓)⟩ = h/ 2; 
+
+⟨↑ (↓)|H4,i | ↓ (↑)⟩ = h/ 2. (15) The schematics of H3,i and H4,i are shown in Fig. 8, while those of H1,b and H2,b are the same as in Fig. 1. H3, i H4, i      
+
+> FIG. 8. The schematic representation of magnetic field ver-tices. H3,i represents diagonal magnetic vertices, H4,i repre-sents off-diagonal magnetic vertices.
+
+The Hamiltonian can be written as: 
+
+H = −J PNb
+
+> b=1
+
+(H1,b − H2,b ) − h P 
+
+> i
+
+H3,i − h P 
+
+> i
+
+H4,i 
+
++ JN b 
+
+> 4
+
++ N h  
+
+> 2
+
+. (16) The partition function can be written as: 
+
+Z = X
+
+> α
+> ∞
+
+X
+
+> n=0
+
+X
+
+> Sn
+
+(−1) n2+ n42
+
+βn
+
+n! ⟨α|
+
+> n
+
+Y
+
+> p=1
+
+Ha(p),b (p)|α⟩,
+
+(17) where n = n1 +n2 +n3 +n4. The probabilities of inserting or removing a magnetic bond are: 
+
+Pinsert (h) = βhN 
+
+2( M − n) ,Premove (h) = 2( M − n + 1) 
+
+βhN . (18) It should be emphasized that, in the diagonal update, only the diagonal Heisenberg operator H1,b and the con-stant operator H3,i are allowed to be inserted. The off-diagonal Heisenberg operator H2,b and the transverse-field operator H4,i are instead generated naturally during the subsequent loop-update process. In Fig. 9, we present an example of an SSE configura-tion containing multiple loop trajectories. When a path encounters a magnetic-field vertex during its propaga-tion, it terminates immediately; therefore, clusters con-taining magnetic-field vertices cannot form closed loops. Since the configurations before and after the loop update have identical weights, the situation is entirely analogous to that of the pure Heisenberg model: flipping each clus-ter with probability 1 /2 yields optimal update efficiency [24]. As illustrated by the loop highlighted in red in Fig. 9, if two clusters separated by the same magnetic-field operator are treated differently during a single loop update—one being flipped while the other remains un-changed—the conversion between the constant operator 
+
+H3,i and the off-diagonal transverse-field operator H4,i is naturally realized. It is worth noting that, although the cluster shown in the left panel of Fig. 9 contains an odd number of off-diagonal operators (seven black rectangles in the fig-ure), the overall sign factor in the partition function, (−1) n2+ n42 = ( −1) 6, remains positive. This is because, for a staggered transverse field, only the magnetic-field 81 12 23 34 45 56 67 78 8         
+
+> 0
+> 1
+> 2
+> 3
+> 4
+> 5
+> 6
+> 7
+> 8
+> 9
+> 10
+> 11
+> 12
+> 13
+> pi=
+> FIG. 9. The schematic diagram shows an SSE configura-tion for an 8-spin chain. Here, pdenotes the index of the imaginary-time string. The magnetic field term cuts off the loops into independent clusters, whereas a closed loop can form in the absence of the magnetic field term. The weights before and after flipping the clusters are the same; therefore, the flip probability Pf lip = 1 /2. The spins of sublattice B contribute a minus sign to ensure the positivity of the parti-tion weight.
+
+terms located on the B sublattice contribute to the sign (site 6 in the figure), while those acting on the A sublat-tice always carry positive weight. For the measurement of most physical observables, the implementation of the model with a transverse field is essentially the same as that of the standard Heisenberg model or the model with a longitudinal field. Moreover, since the staggered transverse magnetization itself ap-pears explicitly in the Hamiltonian, its measurement can be carried out analogously to that of the energy, and can be rewritten as [6]: 
+
+⟨mxs ⟩ = 1
+
+N ⟨
+
+> N
+
+X
+
+> i=1
+
+(−1) iSxi ⟩ = 1
+
+N ⟨H4,i ⟩
+
+= X
+
+> α
+> ∞
+
+X
+
+> n=0
+
+X
+
+> Sn
+
+βn
+
+n! ⟨α|H4,i nY
+
+> p=1
+
+Ha(p),b (p)|α⟩
+
+= ⟨n4⟩
+
+N βh . (19) In Fig. 10, we compare the energy density and the magnetization along the x direction mxs obtained using ED, DE-L QMC, and DI-L QMC. It can be seen that all three methods yield highly consistent results within the parameter range considered. It should be noted that the directed-loops method em-ployed here is based on the algorithm developed for the transverse-field XXZ model[4]. In the parameter regime studied in this work, the bounce probability is zero, indi-cating that the directed-loops algorithm operates at op-timal update efficiency. 1.0              
+
+> 0.5
+> 〈e〉
+> (a)
+> ED
+> DE-L
+> DI-L
+> 0.0 0.5 1.0 1.5 2.0
+> h
+> 0.2
+> 0.3
+> 0.4
+> 0.5
+> 〈mxs
+> 〉
+> (b)
+> FIG. 10. The results of observables obtained at different mag-netic field strengths for L= 12 and β= 12 using ED (red circles), DE-L QMC (blue squares), and DI-L QMC (green triangles): (a) energy density e; (b) antiferromagnetic order parameter along the xdirection mxs.
+
+Since the physical quantity of interest is the transverse imaginary-time correlation function ⟨Szi (τ )Szj (0) ⟩ in the presence of a transverse field, we continue to use the anti-ferromagnetic order parameter along the z direction, mzs ,as the observable to compare the autocorrelation times of the two algorithms. Figures 11 and 12 present the re-sults for system sizes L = 64 and L = 128, respectively. It can be seen that the data for different system sizes are in excellent agreement. For the DE-L algorithm, the autocorrelation time decreases gradually with increasing magnetic-field strength, whereas for the DI-L algorithm, it increases as the magnetic field is enhanced. The CPU time required for a single QMC update in both algorithms increases with increasing magnetic field, although the growth is more pronounced for the DE-L algorithm. When the magnetic field exceeds h ≳ 1.2, the CPU time per update for the DE-L algorithm sur-passes that of the DI-L algorithm. Nevertheless, within the field range considered ( h ∈ [0 .0, 1.2]), the DI-L al-gorithm consistently requires more CPU time than the DE-L algorithm to obtain two statistically independent samples, by approximately a factor of 1.5. Given that 
+
+tint exhibits an almost linear increase with the magnetic field, this conclusion is unlikely to change even at larger field strengths. In summary, under a transverse field, the overall effi-ciency of the DE-L algorithm is superior to that of the DI-L algorithm. It should be noted, however, that due to the higher degree of freedom in the directed-loops equa-tions for the transverse-field case, the particular solu-tion adopted in this work is not guaranteed to yield the 90.5   
+
+> 0.6
+> 0.7
+> τint [mzs ]
+> (a)
+> DE-L
+> DI-L
+> 0.0
+> 1.0
+> 2.0
+> tcpu /(10 −4)
+> (b)
+> 0.0 0.5 1.0
+> h
+> 0.0
+> 0.5
+> 1.0
+> tint /(10 −4)
+> (c)
+
+FIG. 11. MC performance as a function of the external mag-netic field measured using the DE-L (red circles) and DI-L (blue squares) algorithms. The system size is L = 64, in-verse temperature β = 16, and the series cutoff is ncut = 500. (a) Integrated autocorrelation time τint [mzs ] calculated from the antiferromagnetic order parameter mzs ;(b) CPU time per Monte Carlo step tCPU ;(c) CPU time tint required to obtain two statistically independent samples. 
+
+optimal update efficiency, as also discussed in Ref. [4]. In principle, the efficiency of the DI-L algorithm could be significantly improved by constructing more optimal loop-update schemes and identifying more suitable solu-tions to the directed-loops eqnarrays. However, this is not an urgent task in practice, since the DE-L algorithm already demonstrates sufficiently high efficiency and is also simpler to implement. 
+
+IV. CONCLUSION 
+
+Based on the SSE quantum Monte Carlo method, we developed a deterministic-loops algorithm applicable to the Heisenberg model in the presence of an external mag-netic field, and applied it to the isotropic Heisenberg model with staggered longitudinal and transverse fields as benchmark tests. In the case of a staggered longitudi-nal field, the deterministic-loops algorithm significantly reduces computational time compared to the standard 0.5   
+
+> 0.6
+> 0.7
+> τint [mzs ]
+> (a)
+> DE-L
+> DI-L
+> 0
+> 2
+> 4
+> 6
+> tcpu /(10 −4)
+> (b)
+> 0.0 0.5 1.0
+> h
+> 0
+> 2
+> 4
+> tint /(10 −4)
+> (c)
+
+FIG. 12. MC performance as a function of the external mag-netic field measured using the DE-L (red circles) and DI-L (blue squares) algorithms. The system size is L = 128, in-verse temperature β = 32, and the series cutoff is ncut = 500. (a) Integrated autocorrelation time τint [mzs ] calculated from the antiferromagnetic order parameter mzs ;(b) CPU time per Monte Carlo step tCPU ;(c) CPU time tint required to obtain two statistically independent samples. 
+
+directed-loops method in the weak-field regime. For the staggered transverse-field case, it demonstrates higher update efficiency over a wide range of magnetic fields. In addition, the deterministic-loops approach avoids com-plex update operations and the need to solve directed-loops equations, making it simpler both in theoretical formulation and in practical implementation. Therefore, this method offers clear advantages in terms of learn-ing cost and its extension to a broader class of quantum many-body systems, such as quantum spin systems and bosonic models. 
+
+[1] A. W. Sandvik and J. Kurkij¨ arvi, Phys. Rev. B 43 , 5950 (1991). [2] A. W. Sandvik, J. Phys. A 25 , 3667 (1992); Phys. Rev. B 56 , 11678 (1997); Phys. Rev. B 59 , R14157 (1999). 10 
+
+[3] O. F. Sylju˚ asen and A. W. Sandvik, Phys. Rev. E 66 ,046701 (2002). [4] O. F. Sylju˚ asen, Phys. Rev. E 67 , 046701 (2003). [5] F. Alet, S. Wessel, and M. Troyer, Phys. Rev. E 71 ,036706 (2005). [6] P. Henelius, A. W. Sandvik, C. Timm, and S. M. Girvin, Phys. Rev. B 61 , 364 (2000). [7] S. Wessel, M. Olshanii, and S. Haas, Phys. Rev. Lett. 
+
+87 ,206407 (2001). [8] P. Henelius, P. Frobrich, P. J. Kuntz, C. Timm and P. J. Jensen, Phys. Rev. B 66 , 094407 (2002). [9] K. P. Schmidt, J. Dorier, A. M. L¨ auchli, and F. Mila, Phys. Rev. Lett. 100 , 090401 (2008). [10] F. Alet, K. Damle, and S. Pujari, Phys. Rev. Lett. 117 ,197203 (2016). [11] A. Dorneich, W. Hanke, E. Arrigoni, M. Troyer, and S.C.Zhang, Phys. Rev. Lett. 88 , 057003 (2002). [12] G. Schmid, S. Todo, M. Troyer, and A. Dorneich, Phys. Rev. Lett. 88 , 167208 (2002). [13] L. Wang, Y.-H. Liu, and M. Troyer, Phys. Rev. B 93 ,155117 (2016). [14] S. Hesselmann and S. Wessel, Phys. Rev. B 93 , 155157 (2016). [15] P. Scholl, H. J. Williams, G. Bornet, F. Wallner, D. Barredo, L. Henriet, A. Signoles, C. Hainaut, T. Franz, S. Geier, A. Tebben, A. Salzinger, G. Z¨ urn, T. Lahaye, M. Weidem¨ uller, and A. Browaeys, PRX Quantum 3,020303 (2022). [16] P. N. Jepsen, Y. K. Lee, H. Lin, I. Dimitrova, Y. Mar-galit, W. W. Ho, and W. Ketterle, Nat. Phys. 18 , 899 (2022). [17] K. Kim, F. Yang, K. Mølmer, and J. Ahn, Phys. Rev. X 
+
+14 , 011025 (2024). [18] J. D’Emidio, A. A. Eberharter, and A. M. L¨ auchli, Sci-Post Physics 15 , 061 (2023). [19] A. W. Sandvik, Phys. Rev. E 68 , 056701 (2003). [20] A. W. Sandvik and R. R. P. Singh, Phys. Rev. Lett. 86 ,528 (2001). [21] A. Dorneich, M. Troyer, Phys. Rev. E, 64 , 066701(2001). [22] H. G. Evertz. The loop algorithm[J/OL]. Advances in Physics, 2003, 52(1): 1-66. [23] Z Wang,Z Liu,B B Mao, et al. Nature Communications, 
+
+17 ,679(2026). [24] A. W. Sandvik, AIP Conf. Proc. 1297 , 135 (2010). [25] Chengxiang Ding, Yangcheng Wang, Youjin Deng, Hui Shao, arXiv:1702.02675. [26] R. H. Swendsen and J.-S. Wang, Phys. Rev. Lett. 58 , 86 (1987). [27] U. Wolff, Phys. Rev. Lett. 62 , 361 (1989). [28] H. Shao, Y. Q. Qin, S. Capponi, S. Chesi, Z. Y. Meng, and A. W. Sandvik, Phys. Rev. X 7, 041072 (2017). [29] H. Shao, and A. W. Sandvik, Phys. Rep. 1003 1–88 (2023). [30] A. W. Sandvik and H. G. Evertz, Phys. Rev. B 82 ,024407 (2010). [31] P. W. Anderson, Phys. Rev. 86 , 694 (1952). [32] A. Sen, H. Suwa, and A. W. Sandvik, Phys. Rev. B 92 ,195145 (2015). [33] M. Powalski, Kai P. Schmidt, G. S. Uhrig, SciPost Phys. 
+
+4, 001 (2018). [34] R. R. P. Singh, M. P. Gelfand, Phys. Rev. B 52 ,R15695(R)(1995). [35] H. M. Rønnow, D. F. McMorrow, R. Coldea, A. Harrison, I. D. Youngson, T. G. Perring, G. Aeppli, O. Syljusen, K. Lefmann, and C. Rischel, Phys. Rev. Lett. 87 , 037202 (2001). [36] B. Dalla Piazza, M. Mourigal, N. B. Christensen, G. J. Nilsen, P. Tregenna-Piggott, T. G. Perring, M. Enderle, D. F. McMorrow, D. A. Ivanov, and H. M. Rønnow, Nat. Phys. 11 , 62 (2015).
