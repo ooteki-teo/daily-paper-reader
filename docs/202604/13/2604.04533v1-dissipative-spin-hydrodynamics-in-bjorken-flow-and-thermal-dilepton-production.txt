@@ -1,0 +1,2418 @@
+Title: Dissipative spin hydrodynamics in Bjorken flow and thermal dilepton production
+
+URL Source: https://arxiv.org/pdf/2604.04533v1
+
+Published Time: Tue, 07 Apr 2026 01:35:12 GMT
+
+Number of Pages: 17
+
+Markdown Content:
+## Dissipative spin hydrodynamics in Bjorken flow and thermal dilepton production 
+
+Sejal Singh, 1, ∗ Sourav Dey, 1, 2, † Arpan Das, 1, ‡ Hiranmaya Mishra, 2, 3, § and Amaresh Jaiswal 2, ¶
+
+> 1
+
+Department of Physics, Birla Institute of Technology and Science Pilani, Pilani Campus, Pilani, Rajasthan-333031, India 
+
+> 2
+
+School of Physical Sciences, National Institute of Science Education and Research, An OCC of Homi Bhabha National Institute, Jatni-752050, India 
+
+> 3
+
+Institute of Physics, Sachivalaya Marg, Bhubaneswar-751005, India 
+
+(Dated: April 7, 2026) We investigate the boost-invariant expansion of a recently developed first-order spin hydrodynamic framework in which the spin chemical potential is treated as a leading-order hydrodynamic variable. Considering a symmetric energy-momentum tensor and a separately conserved spin tensor, we derive the coupled evolution equations for the medium temperature and the independent components of the spin chemical potential in the presence of both viscous and spin-diffusive transport coefficients. For a boost-invariant system, only the magnetic-like components of the spin chemical potential survive, and their evolution is shown to depend sensitively on the spin transport coefficients. The transverse spin components decay more rapidly due to spin dissipation, while the longitudinal component survives for a longer duration. We further demonstrate that the evolution of the spin degrees of freedom modifies the temperature profile of the expanding medium. Using the resulting temperature profiles, we calculate thermal dilepton production rates from quark-antiquark annihilation. We find that the presence of spin dynamics enhances the dilepton yield relative to standard dissipative hydrodynamics, with the magnitude of the enhancement depending on the spin transport coefficients. Our results indicate that thermal dileptons can provide an indirect probe of spin dynamics and spin transport in the quark-gluon plasma. 
+
+I. INTRODUCTION 
+
+Spin polarization of different hadrons has been mea-sured in heavy-ion collision experiments [ 1–5]. Spin po-larization of hadrons can be argued to originate from spin-vorticity coupling [ 6–15 ]. Non-vanishing vorticity and its effects on the dynamics of the partonic medium produced in heavy-ion collisions have gained a lot of at-tention. The vorticity generation in the plasma produced in heavy-ion collisions is primarily associated with the large angular momentum involved in non-central heavy-ion collisions [ 6–9]. In peripheral heavy ion collisions, the large angular momentum associated with colliding nuclei can give rise to non-vanishing vorticity in the thermal-ized partonic medium due to the nuclei’s inhomogeneous density profile [ 6–9]. As a result of the spin-vorticity coupling, different hadrons can become polarized in the vortical medium. Due to the well-understood weak de-cay process, hyperons are considered to be an important probe for the measurement of spin polarization [ 1]. Var-ious theoretical models have been developed to explain the spin polarization measurements of Lambda (Λ), and anti-Lambda ( ¯Λ) hyperons, e.g., relativistic dissipative hydrodynamic models [ 16 –18 ]), parton cascade model (AMPT) [ 19 ], hadronic cascade model (UrQMD) [ 20 ], chiral kinetic theory [ 21 ], etc. These models use the spin-thermal vorticity coupling to explain the global spin      
+
+> ∗p20230472@pilani.bits-pilani.ac.in
+> †sourav.dey@niser.ac.in
+> ‡arpan.das@pilani.bits-pilani.ac.in
+> §hiranmaya@niser.ac.in
+> ¶a.jaiswal@niser.ac.in
+
+polarization of hyperons, i.e., the polarization along the direction of global angular momentum. However, spin-thermal vorticity coupling alone does not provide a sat-isfactory explanation for the local spin polarization mea-surement, i.e., the longitudinal (along beam direction) polarization as a function of the azimuthal angle in the transverse plane (transverse to the beam direction) [ 22 ]. Apart from the thermal vorticity, thermal shear can also play an important role in the polarization of hyperons [23 –26 ]. To explain the spin polarization measurements vari-ous groups have developed a novel theoretical approach, known as the spin hydrodynamic framework. This ap-proach generalizes the standard hydrodynamic frame-work (for spin-less fluid), to incorporate the dynami-cal evolution of spin [ 27 –32 ]. Contrary to the stan-dard hydrodynamic approach, where one only considers the conservation of the total energy-momentum tensor (∂μT μν = 0), in spin hydrodynamic frameworks one also considers the conservation of the angular momentum ten-sor ( ∂λJλμν = 0). The dynamical evolution of the spin degree of freedom is encoded in the conservation of the total angular momentum tensor. Different methods, e.g., entropy current analysis [ 33 –36 ], the effective Lagrangian approach [ 37 , 38 ], the kinetic-theory approach [ 30 , 39 –
+
+44 ], etc. have been used to develop spin hydrodynamic frameworks. Recently, in Refs. [ 45 , 46 ], numerical simu-lations of spin hydrodynamic frameworks have also been reported. Using the entropy current analysis method, in Ref. [47 ], some of us have developed a first-order spin hy-drodynamic theory. Such a theory can be considered as the Navier-Stokes limit of the higher-order spin hy-drodynamic framework. Similar frameworks have also 
+
+> arXiv:2604.04533v1 [nucl-th] 6 Apr 2026
+
+2been discussed in Refs. [ 33 , 34 , 48 –51 ]. One of the distin-guishing features of our framework as compared to the framework discussed in Refs. [ 33 , 34 , 48 –51 ] is the hy-drodynamic treatment of spin chemical potential ( ωαβ ). In the spin hydrodynamic framework, the evolution of the spin chemical potential encodes the dynamics of the spin degree of freedom [ 27 –29 ]. In such a framework, the spin chemical potential is also treated as a hydrody-namic variable, along with temperature, chemical poten-tial, etc. Hence, the hydrodynamic ordering of the spin chemical potential is crucial. In literature, one often con-siders that spin chemical potential is a O(∂) term in the hydrodynamic gradient expansion [ 33 ]. This is essential when one deals with the asymmetric energy-momentum tensor [ 33 ]. But for a symmetric energy-momentum ten-sor, for theoretical consistency, one can conclude that spin chemical potential is a leading order term, i.e., O(1) term in the hydrodynamic gradient expansion [ 36 , 47 ]. Such different hydrodynamic ordering of spin chemical potential gives rise to qualitatively different spin hydro-dynamic frameworks, e.g., in the framework discussed in Ref. [ 33 ] where one considers that the spin chemical po-tential is O(∂), the dissipative part of the spin tensor can not be fixed at the Navier-Stokes limit. However, if we consider that spin chemical potential is O(1), then within the first-order theory, constitutive relations of the dissipative part of the spin tensor can be obtained. The novelty of the framework developed in Ref. [ 47 ] is the spin transport coefficients and the associated Green-Kubo re-lations. In this work, we consider the spin hydrodynamic framework developed in Ref. [47 ], and discuss the boost-invariant flow (Bjorken flow) solution of the spin hydro-dynamic equations. Bjorken flow solution for different spin hydrodynamic frameworks has been discussed in lit-erature [ 31 , 48 , 52 , 53 ]. In some references, authors have considered the Bjorken flow solution for ideal spin hydro-dynamic equations, i.e., without any dissipation [ 31 ]. On the other hand, in Refs. [ 48 , 52 ] Bjorken flow solution has been discussed, but the spin diffusion, or the dissi-pative part of the spin dynamics, does not play any role. In the present investigation, we incorporate the dissipa-tive parts of the energy-momentum tensor and the spin tensor. More importantly, we demonstrate the effect of spin transport coefficients on the proper time evolution of temperature and spin chemical potential. For simplic-ity, we consider a baryon-free system. Subsequently, the proper time evolution of medium temperature is used to calculate the thermal dilepton production rate [ 54 –
+
+56 ]. Thermal dileptons are an excellent probe of the medium’s temperature. Dileptons interact only electro-magnetically; hence, they have a much longer mean free path than hadrons. In our calculation it is the temper-ature evolution of the plasma, that affects the dilepton production rate. We demonstrate that spin evolution affects the temperature evolution of a longitudinally ex-panding system, which also affects the dilepton produc-tion rates. In this manuscript, we use the following notations and conventions. uμ is the normalized fluid flow vec-tor, uμuμ = 1. ∆μν = gμν − uμuν is the pro-jector normal to uμ, i.e., ∆μν uν = 0. gμν =diag(+1 , −1, −1, −1) is the metric tensor. A〈μ〉 ≡ ∆μν Aν
+
+is the projection of a four vector Aμ orthogonal to uμ.
+
+A{αBβ} = ( AαBβ + Aβ Bα)/2 represents the symmet-ric combination, and A[αBβ] = ( AαBβ − Aβ Bα)/2 rep-resents the anti-symmetric combination. A〈μBν〉 de-notes traceless and symmetric projection orthogonal to fluid flow. It is defined as A〈μBν〉 ≡ ∆μν αβ AαBβ ≡
+
+> 1
+> 2
+
+(
+
+∆μα∆νβ + ∆ μβ ∆να − 2 
+
+> 3
+
+∆μν ∆αβ 
+
+)
+
+AαBβ . By defini-tion, uμA〈μBν〉 = 0, uν A〈μBν〉 = 0, and A〈μBν〉 =
+
+A〈ν Bμ〉. Similarly, the antisymmetric projection opera-tor orthogonal to the flow vector is defined as A〈[μBν]〉 ≡
+
+∆[μν ][αβ ]AαBβ ≡ 1
+
+> 2
+
+(
+
+∆μα∆νβ − ∆μβ ∆να
+
+)
+
+AαBβ . Partial derivative ∂μ can be decomposed along the flow direc-tion and normal to the flow direction, ∂μ = uμD + ∇μ.Here D ≡ uμ∂μ, that represents comoving derivative, and ∇μ ≡ ∆ αμ ∂α. θ ≡ ∂μuμ = ∇μuμ is the fluid ex-pansion rate. σμν is the symmetric traceless combina-tion of the derivative of the fluid flow. It is defined as, 
+
+σμν ≡ 1 
+
+> 2
+
+(∇μuν + ∇ν uμ)− 1 
+
+> 3
+
+θ∆μν . ǫμναβ is the totally an-tisymmetric Levi-Civita tensor with the sign convention 
+
+ǫ0123 = −ǫ0123 = 1. The rest of the manuscript is organized in the follow-ing way. In Sec . II we discuss the dissipative spin hy-drodynamic framework. Here, we also discuss the spin-dependent equation of state. In Sec . III , and Sec . IV 
+
+we discuss the spin dynamics for boost-invariant system (Bjorken flow), the conservation of energy-momentum tensor, and the total angular momentum tensor for Bjorken flow. In Sec . V we present the numerical so-lution of the spin hydrodynamic equation for the boost-invariant system. Here, we show the proper time evolu-tion of medium temperature and the spin chemical po-tential. In Sec. VI , we calculate the dilepton production using the solution of the dissipative spin hydrodynamic framework. We consider the proper time evolution of spin fluid to estimate the dilepton rate. Finally, in Sec. VII 
+
+we conclude, discuss the limitations of the present inves-tigation and possible future directions.  
+
+> II. SPIN HYDRODYNAMIC FRAMEWORK
+
+Spin hydrodynamic frameworks are described by the following conservation laws [ 30 ], 
+
+∂μT μν = 0 , ∂μJμ = 0 , ∂λJλμν = 0 , (1) where, T μν is the energy-momentum tensor which, in general, may not be symmetric under the exchange of 
+
+μ ↔ ν, e.g., the canonical energy-momentum tensor ob-tained from Noether’s theorem is not manifestly symmet-ric. In the above equation, Jμ is the global conserved current. Note that QCD constituents may carry multi-ple conserved charges, e.g., net baryon number B, net 3strangeness S, and electric charge Q. The total angu-lar momentum tensor is represented by Jμαβ which is the sum of the orbital angular momentum tensor Lλμν ,and the spin tensor Sλμν [27 ]. The orbital part can be expressed as Lλμν = xμT λν − xν T λμ . We observe that 
+
+Lλμν is anti-symmetric in the last two indices, but the spin tensor Sλμν can be totally anti-symmetric, e.g., the canonical spin tensor. We emphasize that, in general, neither Lλμν , nor Sλμν are separately conserved. The conservation of the total angular momentum tensor im-plies the following condition for four-divergence of the spin tensor, 
+
+∂λSλμν = −T μν + T νμ = −2T [μν ]. (2) It is evident from the above equation that for a symmet-ric energy-momentum tensor ( T μν = T νμ ), the spin ten-sor is separately conserved, i.e., ∂λSλμν = 0. The anti-symmetric part of the energy-momentum tensor gives rise to the spin-orbit conversion, which spoils the separate conservation of the spin tensor. In general T μν , Jμ, and Sλμν contains dissipative cor-rections. In standard hydrodynamics (spin-less fluid dy-namics), in the absence of dissipation, T μν and Jμ can be expressed as, 
+
+T μν  
+
+> (0)
+
+= εu μuν − P ∆μν (3) 
+
+Jμ 
+
+> (0)
+
+= nu μ. (4) Here ε, P , and n are energy-density, pressure, and num-ber density. ε, P , and n are not independent, but related by the equation-of-state (EoS), P (ε, n ). These quanti-ties can be completely specified by temperature ( T ), and chemical potential ( μ). Hence, T μν  
+
+> (0)
+
+, and Jμ 
+
+> (0)
+
+are com-pletely specified by T , μ, and uμ. Together T , μ, and uμ
+
+have five degrees of freedom. Dynamics of T , μ, and uμ
+
+is determined by the conservation equations ∂μT μν  
+
+> (0)
+
+= 0 and ∂μJμ 
+
+> (0)
+
+= 0, i.e., five dynamical equations. In the spin hydrodynamic framework, six additional equations emerge from the conservation of the total angular mo-mentum tensor, ∂λJλμν  
+
+> (0)
+
+= 0. These six equations de-termine the dynamics of another anti-symmetric tensor having six degrees of freedom. This anti-symmetric ten-sor is identified as the spin chemical potential ( ωμν ) [ 27 ]. The evolution of the spin chemical potential encodes the dynamics of the spin tensor. Note that if the spin tensor 
+
+Sλμν = 0 (unpolarized medium), then the conservation of the total angular momentum tensor does not give rise to new additional dynamical equations. In this case, the energy-momentum tensor is symmetric, and conservation of the energy-momentum tensor implies the conservation of the total angular momentum tensor. Incorporating dissipative effects, the energy-momentum tensor, conserved current, and the spin tensor can be expressed as a hydrodynamic gradient expansion [ 57 ], 
+
+T μν = O(1) + O(∂) + O(∂2) + · · · (5) 
+
+Jμ = O(1) + O(∂) + O(∂2) + · · · (6) 
+
+Sλμν = O(1) + O(∂) + O(∂2) + · · · (7) Here O(1) represent leading order term, and O(∂k) rep-resent k-th order term in the hydrodynamic gradient ex-pansion. In this paper we keep up to O(∂) terms in the constitutive relations (Eqs. ( 5)-( 7)). Note that T ,
+
+μ, uμ are all leading order term ( O(1)) in the hydrody-namic gradient expansion. What one needs to specify is the gradient ordering of the spin chemical potential (ωαβ ). In literature, different hydrodynamic ordering of the spin chemical potential has been considered, e.g., in Refs. [ 33 , 49 , 51 , 52 , 58 ] authors considered ωμν ∼ O (∂). It can be argued that, for asymmetric energy-momentum tensor (i.e., with antisymmetric parts), spin chemical po-tential ωμν is completely determined by the thermal vor-ticity ̟ μν ≡ − (∂μ(uν /T ) − ∂ν (uμ/T )) /2 in global equi-librium [ 10 , 27 , 59 ]. This is the rationale behind the hy-drodynamic gradient ordering of spin chemical potential, 
+
+ωμν ∼ O (∂) [33 , 49 , 51 , 52 , 58 ]. However, if the energy-momentum tensor is symmetric, then in global equilib-rium the spin chemical potential and the thermal vortic-ity need not be related [ 36 , 47 ]. In that case one can con-sider ωμν ∼ O (1) for theoretical consistency [ 36 , 47 , 51 ]. In this article, we consider that the energy-momentum tensor is symmetric and the spin hydrodynamic approach where ωμν ∼ O (1) term in the gradient expansion. Another nontrivial intricacy associated with spin hy-drodynamic frameworks is the pseudo-gauge transfor-mation [ 60 –62 ]. Pseudo-gauge transformation implies that, in the presence of an appropriate super-potential Φλ,μν , we can redefine T μν , and Sλ,μν without affect-ing the conservation of the energy-momentum tensor and the total angular momentum tensor. If ∂μT μν = 0, and ∂λJλ,μν = 0, then we can also find ∂μT ′μν = 0, and ∂λJ′λ,μν = 0, where T μν , and Sλμν are related to the modified energy-momentum tensor T ′μν , and spin tensor S′λμν in the following manner, T ′μν = T μν + 
+
+> 1
+> 2
+
+∂λ
+
+(Φλ,μν − Φμ,λν − Φν,λμ ), and S′λ,μν = Sλ,μν −Φλ,μν .Such transformations of T μν , and Sλμν are known as the pseudo-gauge transformation [ 62 ]. The super poten-tial Φ λ,μν is anti-symmetric at least in the last two in-dices [ 27 ]. Different choices of Φ λ,μν represents different pseudo-gauge transformations, e.g., Belinfante-Rosenfeld (BR) pseudo-gauge [ 63 –65 ], the de Groot-van Leeuwen-van Weert (GLW) pseudo-gauge [ 66 ], the Hilgevoord-Wouthuysen (HW) pseudo-gauge [ 67 , 68 ], etc. Here we consider a symmetric energy-momentum ten-sor, and the spin tensor has a simple phenomenological 
+
+form. In the phenomenological form, the spin tensor is only antisymmetric in the last two indices [ 27 , 30 , 69 ]. Moreover, the leading order term, Sλμν  
+
+> (0)
+
+can be expressed as, Sλμν  
+
+> (0)
+
+= uλSμν . Sμν is the spin density [ 33 , 49 ]. Such a choice of energy-momentum tensor and the spin ten-4sor has been used to develop a theoretically consistent spin hydrodynamic framework [ 47 ]. In this framework incorporating O(∂) terms, the T μν , Jμ and Sλμν can be expressed as [ 47 , 58 ], 
+
+T μν = T μν  
+
+> (0)
+
++ T μν 
+
+> (1)
+
+= εu μuν − P ∆μν 
+
++ hμuν + hν uμ + πμν + Π∆ μν , (8) 
+
+Jμ = Jμ 
+
+> (0)
+
++ Jμ 
+
+> (1)
+
+= nu μ + Jμ
+
+> (1)
+
+, (9) 
+
+Sμαβ = Sμαβ  
+
+> (0)
+
++ Sμαβ 
+
+> (1)
+
+= uμSαβ 
+
++ 2 u[α∆μβ ]Φ + 2 u[ατ μβ ](s) + 2 u[ατ μβ ](a) + Θ μαβ . (10) 
+
+ε is the energy density, P is the pressure, n is the number density, and Sαβ is the spin density. uμ is the normal-ized fluid velocity uμuμ = 1. πμν is a symmetric trace-less tensor representing shear stress, Π is the bulk vis-cous pressure and hμ is the energy diffusion four-current. 
+
+πμν , Π, and hμ are all O(∂) terms in the hydrodynamic gradient ordering. They satisfy the following conditions, 
+
+πμν = πνμ , πμμ = 0, πμν uμ = 0, hμuμ = 0. The third rank tensor Sμαβ  
+
+> (1)
+
+which is antisymmetric in last two in-dices can be divided into a scalar (Φ), a second rank sym-metric tensor ( τ μν  
+
+> (s)
+
+), a second rank anti-symmetric ten-sor ( τ μν 
+
+> (a)
+
+), and a third rank tensor (Θ μαβ ). Φ, τ μν  
+
+> (s)
+
+, τ μν 
+
+> (a)
+
+,and Θ μαβ are the O(∂) terms that appear in the spin tensor [ 58 ]. These currents satisfy the following condi-tions: τ μν  
+
+> (s)
+
+= τ νμ  
+
+> (s)
+
+, τ μ 
+
+> (s)μ
+
+= 0, τ μν  
+
+> (s)
+
+uν = 0, τ μν  
+
+> (a)
+
+= −τ νμ 
+
+> (a)
+
+,
+
+τ μν 
+
+> (a)
+
+uμ = 0, Θ μαβ = −Θμβα ; uμΘμαβ = 0; uαΘμαβ = 0. Note that uλSλαβ  
+
+> (1)
+
+= 0. Φ has 1 component, τ μβ  
+
+> (s)
+
+is sym-metric traceless and orthogonal to uμ having 5 compo-nents. Similarly, τ μβ  
+
+> (a)
+
+has 3 components and Θ μαβ is an-tisymmetric in last two indices and orthogonal to uμ in all indices having 9 components giving us a total of 18 independent component as required for Sμαβ  
+
+> (1)
+
+. Note that 
+
+Sμαβ has 24 components, and six components of Sμαβ 
+
+> (0)
+
+stems from the six components of Sαβ [58 ]. Jμ 
+
+> (1)
+
+is the 
+
+O(∂) term, which satisfy the condition, Jμ
+
+> (1)
+
+uμ = 0. The constitutive relations for different O(∂) terms that appear in T μν , Jμ, and Sλμν can be obtained using the entropy current analysis, where we write down the en-tropy four current for the dissipative system [ 33 , 49 , 58 ], 
+
+Sμ = T μν βν + P β μ − αJ μ − βω αβ Sμαβ , (11) here βμ = βu μ = uμ/T , and α = μ/T . Using Eqs. ( 8)-(10 ), back in to Eq. ( 11 ), and demanding ∂μSμ ≥ 0, one can find the constitutive relations for hμ, πμν , Π, Jμ
+
+> (1)
+
+,Φ, τ μν  
+
+> (s)
+
+, τ μν 
+
+> (a)
+
+, and Θ μαβ in terms of the derivatives of T ,
+
+μ, uμ, and ωμν [47 ]. In the Landau frame hμ = 0 1, for             
+
+> 1The general expression of hμcan be shown to be: hμ=
+
+the baryon free medium, the relevant dissipative currents are πμν , Π, Φ, τ μν  
+
+> (s)
+
+, τ μν 
+
+> (a)
+
+, and Θ μαβ . Their constitutive relations are given as [ 47 ]Π = ζθ, (12) 
+
+πμν = 2 ησ μν , (13) Φ = −2χ1uα∇β (βω αβ ), (14) 
+
+τ μβ  
+
+> (s)
+
+= −2χ2∆μβ,γρ ∇γ (βω αρ )uα, (15) 
+
+τ μβ  
+
+> (a)
+
+= −2χ3∆[μβ ][ γρ ]∇γ (βω αρ )uα, (16) Θμαβ = χ4∆δα ∆ρβ ∆γμ ∇γ (βω δρ ). (17) 
+
+η, ζ, χ1, χ2, χ3, and χ4 are different transport coeffi-cients. The positivity of the entropy production implies, 
+
+η ≥ 0, ζ ≥ 0, χ1 ≥ 0, χ2 ≥ 0, χ3 ≥ 0, and χ4 ≥ 0. To complete the spin hydrodynamic framework, we also need the thermodynamic relations satisfied by the ther-modynamic quantities. For the baryon-free system, these thermodynamic relations can be written as [ 47 , 52 ], 
+
+ε + P = T s + ωαβ Sαβ , (18) 
+
+dε = T ds + ωαβ dS αβ , (19) 
+
+dP = sdT + Sαβ dω αβ . (20) Here s is the entropy density in local equilibrium. The above thermodynamic relations also imply, 
+
+s = ∂P 
+
+∂T 
+
+∣∣∣∣ωαβ 
+
+, Sαβ = ∂P 
+
+∂ω αβ 
+
+∣∣∣∣T
+
+(21) In the baryon-free system, all thermodynamic quanti-ties are functions of temperature ( T ) and spin chemi-cal potential ( ωμν ). In general P (T, ω μν ), ε(T, ω μν ), and 
+
+s(T, ω μν ), can be obtained from a underlying microscopic theory. However, in the absence of such a microscopic theory, we can write P (T, ω μν ) in the following way [ 52 ], 
+
+P (T, ω μν ) = P0(T ) + P1(T ) ωμν ωμν . (22) Here, P0(T ) and P1(T ) only depend on the temperature, and the second term includes the effect of the spin chem-ical potential 2. Note that in our calculation both T , and 
+
+ωμν are leading order in the hydrodynamic gradient ex-pansion, hence P (T, ω μν ) ∼ O (1). Moreover, in the limit 
+
+ωαβ → 0, one obtains P (T, ω μν ) = P0(T ), which is the pressure for the spin-less fluid. Using the expression of 
+
+P (T, ω μν ) in Eq. ( 21 ) one finds, 
+
+Sμν (T, ω μν ) = ∂P 
+
+∂ω μν 
+
+∣∣∣∣T
+
+= S0(T )ωμν , (23)                       
+
+> −κ11 Sαβ
+> ε+P∇μ(βω αβ )−κ12 ∇μα[47 ]. For a baryon free system and for Bjorken flow hμidentically vanishes. Naturally, one can apply the Landau frame condition.
+> 2Here we have not incorporated higher order terms in ωμν ωμν ,e.g., ( ωμν ωμν )2, because we consider ωμν /T small. This is a small polarization limit, where one considers the dimensionless ratio ωμν /T < 1 [ 31 ].
+
+5where S0(T ) = 2 P1(T ). The above relation between the spin density ( Sμν ), and the spin chemical potential ( ωμν )is called the spin equation-of-state. Note that Eq. ( 23 ) is also consistent with the hydrodynamic gradient expan-sion. Both Sμν , and ωμν are leading order terms, i.e., 
+
+O(1) terms. Moreover, P1(T ) is also a function of tem-perature and does not involve any derivatives. Note that in Ref. [ 48 ], the authors considered a different hydro-dynamic ordering of the spin chemical potential. They considered ωμν ∼ O (∂), and Sμν ∼ O (1). However, they have also considered that Sμν ∼ ωμν . To estab-lish such a relation in Ref. [ 48 ], the authors consider that 
+
+Sμν ∼ T 2ωμν , and argued that only in the high tempera-ture limit, a leading order ( O(1)) term should be related to the sub-leading ( O(∂)) term. Considering the issue in connecting a term of the order of O(1) and a term of the order of O(∂), in Ref. [ 52 ] authors propose an alterna-tive form of the spin equation-of-state. They considered that, Sμν (T, ω μν ) = S0(T )ωμν /√ωμν ωμν . This relation is consistent with the hydrodynamic gradient ordering as the LHS and RHS of Sμν (T, ω μν ) = S0(T )ωμν /√ωμν ωμν 
+
+are both leading order ( O(1)). But for the spin equation-of-state Sμν (T, ω μν ) = S0(T )ωμν /√ωμν ωμν , one can not simply consider the ωμν → 0 limit, to obtain the stan-dard hydrodynamics (spin-less fluid dynamics) from the spin hydrodynamic framework. The spin equation-of-state that we use (Eq. ( 23 )) is free of such conceptual issues, it is consistent with the hydrodynamic gradient expansion, and one can also consider the ωμν → 0 limit to obtain the standard hydrodynamic framework as a limiting case. Now using Eq. ( 22 ), in Eq. ( 21 ) we find the expression of s(T, ω μν ), 
+
+s(T, ω μν ) = ∂P 
+
+∂T 
+
+∣∣∣∣ωμν 
+
+= s0(T ) + 1
+
+2 S′
+
+> 0
+
+(T ) ωμν ωμν (24) here, s0(T ) ≡ dP 0(T )/dT , and S′
+
+> 0
+
+(T ) ≡ dS 0/dT . Using Eqs. ( 22 )-( 24 ), back into Eq. ( 18 ) we find, 
+
+ε(T, ω μν ) = ε0(T ) + 1
+
+2
+
+[
+
+S0(T ) + T S ′
+
+> 0
+
+(T )
+
+]
+
+ωμν ωμν , (25) here ε0(T ) + P0(T ) = T s 0(T ) is the first law of thermo-dynamics for spin-less fluid. We have the constitutive relations for the dissipative currents, along with the thermodynamic relations and the spin equation-of-state. Now we can write the spin hydrodynamic equations for the baryon-free system in the Landau frame, 
+
+uμ∂με + ( ε + P − Π) θ − πμν ∂μuν = 0 , (26) (ε + P − Π) ( uμ∂μ) uα − ∆αμ ∂μ (P − Π) + ∆ α ν ∂μπμν = 0 , (27) 
+
+uμ∂μSαβ + Sαβ ∂μuμ + ∂μSμαβ  
+
+> (1)
+
+= 0 . (28) Eq. ( 26 ) is the projection of ∂μT μν = 0 along the direc-tion of uμ. Eq. ( 27 ) is the projection of ∂μT μν = 0 nor-mal to the the direction of uμ, i.e., ∆ α ν ∂μT μν = 0. The third equation (Eq. ( 28 )) is nothing but the conservation of the total angular momentum tensor. Note that in our calculation, we consider a symmetric energy-momentum tensor, hence ∂μJμαβ = 0 implies the conservation of the spin tensor, ∂μSμαβ = 0. To solve Eqs. ( 26 )-( 28 ), we need to specify the fluid flow configuration. Here, we consider the boost-invariant flow, also known as the Bjorken flow [ 48 , 52 , 70 ].  
+
+> III. SPIN DYNAMICS IN A BOOST INVARIANT SYSTEM
+
+In heavy-ion collisions, for the Bjorken flow [ 70 ], one assumes that the system expands along the longitudi-nal direction (beam direction). Moreover, the transverse direction (compared to the beam direction) is uniform, and there is no expansion in the transverse plane. As-suming the beam axis along the Z direction, the fluid flow for the Bjorken flow in the Cartesian coordinate can be expressed as, uμ = (cosh ηs, 0, 0, sinh ηs). Here 
+
+ηs = (1 /2) ln[( t + z)/(t − z)] is the spacetime rapidity. For Bjorken flow, scalar quantities, e.g., energy-density, pressure, number density, temperature, etc. only depend on the proper time τ = √t2 − z2. Cartesian coordinate (t, x, y, z ), can be expressed in terms of ( τ, x, y, η s) as, 
+
+t = τ cosh ηs, z = τ sinh ηs. For a boost-invariant system, to represent various dissipative currents, it is convenient to introduce the following set of vectors [ 52 ]: 
+
+uμ ≡ (cosh ηs, 0, 0, sinh ηs) , (29) 
+
+Xμ ≡ (0 , 1, 0, 0) , (30) 
+
+Y μ ≡ (0 , 0, 1, 0) , (31) 
+
+Zμ ≡ (sinh ηs, 0, 0, cosh ηs) . (32) 
+
+uμ is a time-like four vector which satisfies uμuμ = 1. Xμ
+
+, Y μ, and Zμ are space-like four vectors satisfying the conditions, XμXμ = −1, YμY μ = −1, ZμZμ = −1. It is evident from Eqs. ( 29 )-( 32 ) that uμXμ = 0, uμY μ = 0, 
+
+uμZμ = 0, XμY μ = 0, XμZμ = 0, and YμZμ = 0. Hence the set of vectors ( uμ, X μ, Y μ, Z μ) forms a orthonormal basis vectors. The spin chemical potential ( ωμν ), being a second rank anti-symmetric tensor, can be decomposed into an electric-like component ( κμ), a magnetic-like component (ωμ) [ 27 , 28 , 52 ]
+
+ωμν = κμuν − κν uμ + ǫμναβ uαωβ . (33) Eq. ( 33 ) can be inverted to to write κμ, and ωμ in terms of ωμν . Moreover it can be shown that κμ, and ωμ are space-like, i.e., κμuμ = 0, and ωμuμ = 0. κμ and ωμ
+
+both have three independent components, which add up to the six independent components of the spin chemical potential. The space-like four vectors κμ, and ωμ can 6expressed in term of Xμ, Y μ, and Zμ,
+
+κμ = CκX Xμ + CκY Y μ + CκZ Zμ
+
+= ( CκZ sinh ηs, C κX , C κY , C κZ cosh ηs) (34) 
+
+ωμ = CωX Xμ + CωY Y μ + CωZ Zμ
+
+= ( CωZ sinh ηs, C ωX , C ωY , C ωZ cosh ηs) . (35) The coefficients ( CκX , C κY , C κZ ), and ( CωX , C ωY , C ωZ )only depend on the proper time ( τ ). Some of these coef-ficients are not relevant to determining the spin dynam-ics in a boost-invariant system. Physical implications of these coefficients, Cκi , and Cωi (i ∈ (X, Y, Z )) can be understood by looking into the total angular momen-tum of the fire-cylinder (FC) defined by the conditions: 
+
+τ =constant, −ηFC /2 ≤ ηs ≤ ηFC /2, and √x2 + y2 ≤ R
+
+(see also Fig. 1 in Ref. [ 31 ] and the discussion given in Ref. [ 52 ]). R is the transverse size of the system. The to-tal angular momentum of the fire-cylinder (FC) is defined as, 
+
+J μν  
+
+> FC
+
+= Lμν  
+
+> FC
+
++ Sμν 
+
+> FC
+
+, (36) here Lμν 
+
+> FC
+
+, and Sμν  
+
+> FC
+
+are the orbital angular momentum and the spin angular momentum, respectively. Lμν 
+
+> FC
+
+, and 
+
+Sμν  
+
+> FC
+
+are defined as, 
+
+Lμν  
+
+> FC
+
+=
+
+∫
+
+dΣλLλμν ; Sμν  
+
+> FC
+
+=
+
+∫
+
+dΣλSλμν . (37) 
+
+Lλμν is the orbital angular momentum tensor, and 
+
+Sλμν is the spin angular momentum tensor. dΣλ ≡
+
+uλdxdyτ dη s is the infinitesimal volume element of the fire-cylinder. Using the explicit form for the energy-momentum tensor (in the Landau frame) and the spin tensor, we obtain, 
+
+Lμν  
+
+> FC
+
+=
+
+∫
+
+dΣλ Lλμν =
+
+∫
+
+dΣλ
+
+(xμT λν − xν T λμ )
+
+=
+
+∫
+
+dx dy dη s τ ε (xμuν − xν uμ) = 0 . (38) 
+
+Sμν  
+
+> FC
+
+=
+
+∫
+
+dΣλ Sλμν =
+
+∫
+
+dΣλ Sλμν 
+
+> (0)
+
+=
+
+∫
+
+dx dy dη s τ S μν 
+
+=
+
+∫
+
+dx dy dη s τ S 0(T )
+
+× (κμuν − κν uμ + ǫμναβ uαωβ
+
+) . (39) In the last line of Eq. ( 38 ), one uses the explicit form of Bjorken flow. J 0i 
+
+> FC
+
+(for i = 1 , 2, 3) components of the fire-cylinder describe its center-of-mass motion, and these components vanishes in the center-of-mass system. 
+
+J 0i 
+
+> FC
+
+= 0 (for i = 1 , 2, 3) also implies that S0i 
+
+> FC
+
+= 0 (for 
+
+i = 1 , 2, 3). Using Eq. ( 39 ) S0i 
+
+> FC
+
+(for i = 1 , 2, 3) can be expressed as [ 52 ], 
+
+S01 FC = −2πR 2τ S 0 CκX sinh 
+
+( ηFC 
+
+2
+
+)
+
+, (40) 
+
+S02 FC = −2πR 2τ S 0CκY sinh 
+
+( ηFC 
+
+2
+
+)
+
+(41) 
+
+S03 FC = −πR 2τ S 0CκZ ηFC . (42) The condition S0i 
+
+> FC
+
+= 0 (for i = 1 , 2, 3) implies CκX = 0, 
+
+CκY = 0, and CκZ = 0, i.e., κμ = 0. Therefore, for the boost invariant system, the electric-like components (κμ) of the spin chemical potential vanish in the center-of-mass system, and only magnetic-like components ( ωμ)survive. In this case ωμν = ǫμναβ uαωβ . which has the following independent components, 
+
+ω01 = −CωY sinh ηs; ω03 = 0 , (43) 
+
+ω02 = CωX sinh ηs; (44) 
+
+ω13 = CωY cosh ηs; ω12 = −CωZ , (45) 
+
+ω23 = −CωX cosh ηs. (46) Moreover, it can be shown that, 
+
+ωμν ωμν = 2 (C2 
+
+> ωX
+
++ C2 
+
+> ωY
+
++ C2
+
+> ωZ
+
+) = 2 C2. (47) Using Eq. ( 47 ) in Eqs. ( 22 ), ( 24 ), and ( 25 ) the equilibrium thermodynamic quantities can be expressed as, 
+
+P (T, ω μν ) = P0(T ) + S0(T ) C2, (48) 
+
+ε(T, ω μν ) = ε0(T ) + 
+
+[
+
+S0(T ) + T S ′
+
+> 0
+
+(T )
+
+]
+
+C2, (49) 
+
+s(T, ω μν ) = s0(T ) + S′
+
+> 0
+
+(T )C2. (50) 
+
+IV. SPIN HYDRODYNAMIC EQUATIONS FOR A BOOST-INVARIANT SYSTEM 
+
+For a boost invariant system, Eq. ( 27 ) is trivially satis-fied (see Appendix. A for a detailed derivation). On the other hand, Eq. ( 26 ) give rise to the proper time evolu-tion of the energy density, 
+
+dε 
+
+dτ + ε + P
+
+τ − s0
+
+τ 2
+
+( 4
+
+3
+
+η
+
+s0
+
++ ζ
+
+s0
+
+)
+
+= 0 . (51) Note that in general η, ζ, s0 all depend on the proper time ( τ ). We write Eq. ( 51 ) in terms of the ratios η/s 0,and ζ/s 0 as these are dimensionless quantities. Moreover, for a boost invariant system, Eq. ( 28 ) simplifies to, 
+
+∂S αβ 
+
+∂τ + Sαβ 
+
+τ + ∂μSμαβ  
+
+> (1)
+
+= 0 . (52) For the boost invariant system Sμν = S0(T )ǫμναβ uαωβ .To simplify Eq. ( 52 ), we need explicit expressions for the different dissipative currents in the spin tensor. For 7Bjorken flow, it can be shown that, Φ = 0; Θμαβ = 0; (53) 
+
+τ 01 (a) = −χ3 β C ωY 
+
+sinh ηs
+
+τ ; τ 02 (a) = χ3 β C ωX 
+
+sinh ηs
+
+τ ; (54) 
+
+τ 03 (a) = 0; τ 12 (a) = 0; (55) 
+
+τ 13 (a) = χ3 β C ωY 
+
+cosh ηs
+
+τ ; τ 23 (a) = −χ3 β C ωX 
+
+cosh ηs
+
+τ ; (56) 
+
+τ 00 (s) = 0; τ 11 (s) = 0; τ 22 (s) = 0; τ 33 (s) = 0; (57) 
+
+τ 01 (s) = −χ2 β C ωY 
+
+sinh ηs
+
+τ ; τ 02 (s) = χ2 β C ωX 
+
+sinh ηs
+
+τ ; (58) 
+
+τ 03 (s) = 0; τ 12 (s) = 0; τ 13 (s) = −χ2 β C ωY 
+
+cosh ηs
+
+τ ; (59) 
+
+τ 23 (s) = χ2 β C ωX 
+
+cosh ηs
+
+τ ; (60) In general, Eq. ( 52 ) gives rise to six independent equa-tions. These equations can be obtained by contracting Eq. ( 52 ) with Xαuβ , Yαuβ , Zαuβ , XαYβ , XαZβ , and 
+
+YαZβ . No non-trivial equations are obtained when we contract Eq. ( 52 ) with Xαuβ , Yαuβ , and Zαuβ . How-ever, when we contract Eq. ( 52 ) with YαZβ , XαZβ , and 
+
+XαYβ we find the proper time evolution of CωX , CωY ,and CωZ , respectively (see Appendix B for details), 
+
+dC ωX 
+
+dτ + CωX 
+
+( S′
+
+> 0
+
+(T )
+
+S0(T )
+
+dT 
+
+dτ + 1
+
+τ + (χ2 + χ3)
+
+τ 2T S 0(T )
+
+)
+
+= 0 , (61) 
+
+dC ωY 
+
+dτ + CωY 
+
+( S′
+
+> 0
+
+(T )
+
+S0(T )
+
+dT 
+
+dτ + 1
+
+τ + (χ2 + χ3)
+
+τ 2T S 0(T )
+
+)
+
+= 0 , (62) 
+
+dC ωZ 
+
+dτ + CωZ 
+
+( S′
+
+> 0
+
+(T )
+
+S0(T )
+
+dT 
+
+dτ + 1
+
+τ
+
+)
+
+= 0 . (63) Using Eqs. ( 48 )-( 49 ), and Eqs. ( 61 )-( 63 ) in Eq. ( 51 ) one find the proper time evolution of temperature (see Ap-pendix C for details), 
+
+[
+
+A − BC 2 S′
+
+> 0
+
+(T )
+
+S0(T )
+
+] dT 
+
+dτ − BC 2
+
+τ − B (C2 
+
+> ωX
+
++ C2
+
+> ωY
+
+)
+
+T τ 2 χs
+
++ T s 0(T )
+
+τ +
+
+[
+
+2S0(T ) + T S ′
+
+> 0
+
+(T )
+
+] C2
+
+τ
+
+− s0
+
+τ 2
+
+( 4η
+
+3s0
+
++ ζ
+
+s0
+
+)
+
+= 0 . (64) Here, χs ≡ (χ2 + χ3)/S 0(T ), is the dimensionless ratio. 
+
+A and B are defined as, 
+
+A = dε 0
+
+dT +
+
+[
+
+2S′
+
+> 0
+
+(T ) + T S ′′  
+
+> 0
+
+(T )
+
+]
+
+C2, (65) 
+
+B = 2 
+
+[
+
+S0(T ) + T S ′
+
+> 0
+
+(T )
+
+]
+
+. (66) Eqs. ( 61 )-( 64 ) are coupled first-order differential equa-tions which can be solved to obtain the proper time evolu-tion of T (τ ), CωX (τ ), CωY (τ ), and CωZ (τ ). Considering the complexity of these equations, we solve Eqs. ( 61 )-( 64 )numerically to obtain the numerical solution of the dis-sipative spin hydrodynamic framework for Bjorken flow.  
+
+> V. NUMERICAL SOLUTION OF THE SPIN HYDRODYNAMIC EQUATION FOR A BOOST-INVARIANT SYSTEM
+
+To numerically solve Eqs. ( 61 )-( 64 ) we need to specify 
+
+ε0(T ), s0(T ), S0(T ), χs, η/s 0, and ζ/s 0. We consider the energy density ( ε0) and the entropy density ( s0) of the medium as the energy density and entropy density of a non-interacting system of massive particles, having mass 
+
+m0 at temperature T [52 ], 
+
+ε0(T ) = gs m20 T 2
+
+2π2
+
+[
+
+3 K2
+
+( m0
+
+T
+
+)
+
++ m0
+
+T K1
+
+( m0
+
+T
+
+)] 
+
+(67) 
+
+s0(T ) = gs m30
+
+2π2 K3
+
+( m0
+
+T
+
+)
+
+. (68) Here Kn(m0/T ) is the modified Bessel function of the second kind of order n, gs = 4 is the spin and particle-antiparticle degeneracy factor (spin half particle). ε0(T ), and s0(T ) can also be used to obtain P0(T ) using the thermodynamic relation ε0 + P0 = T s 0. Note that S0(T )that appears in the spin equation-of-state can, in prin-ciple, be determined by a suitable microscopic calcula-tion. However, in the absence of such a microscopic description, we treat S0(T ) as a free parameter, and on dimensional grounds we consider S0(T ) = s0(T )/T .This expression of S0(T ) should be considered as a phe-nomenological ansatz [52 ]. Apart from various thermo-dynamic quantities, different transport coefficients η, ζ,
+
+χ2, and χ3 enter in Eqs. ( 61 )-( 64 ). In general, trans-port coefficients are not constant, and they can change as the system evolves. The temperature dependence of these transport coefficients can be obtained either from a microscopic theory within the kinetic theory frame-work or from a quantum field theory approach within the Green-Kubo framework [ 71 –73 ]. Although such mi-croscopic calculations to obtain η, and ζ are well devel-oped for the standard hydrodynamic approach (spin-less fluid dynamics), estimation of spin transport coefficients using a microscopic calculation is still at the development stage [ 47 , 74 –76 ]. For simplicity and qualitative estima-tion, in the present calculation, we consider fixed values of η/s 0. We ignore the effects of bulk viscosity ζ/s 0 ∼ 0. Note that η, ζ, and s0 all depend on the proper time, but we assume that the dimensionless ratios η/s 0 and ζ/s 0 re-main constant. This is an approximation which has been considered in other references as well [ 48 , 52 , 77 ]. Around the QCD critical point, the variation of η/s 0 and ζ/s 0 is very important, but in the present calculation, such a situation does not appear, as we consider a baryon-free system. For the spin transport coefficients, we also con-sider the dimensionless ratio χs = ( χ2 + χ3)/S 0(T ) to be constant. In Fig. 1 we show the proper time evolution of the medium temperature T (τ ) for dissipative spin hydrody-namics (solution of Eq. ( 64 )). We choose the thermal-ization time scale τ0 = 0 .5 fm to start the hydrodynamic evolution. At the initial time τ0 the initial temperature is T (τ0) = T0 = 300 MeV and CωX (τ0) = CωY (τ0) = 8
+
+CωZ (τ0) = 80 MeV. We choose such a value of CωX , CωY ,and CωZ so that they are small as compared to the tem-perature. The mass of the medium particles is m0 = 200 MeV 3. We consider two different choices of the transport coefficients, the first choice is η/s 0 = 5 /4π, χs = 10 /4π,and the second choice is η/s 0 = 1/4π, χs = 3/4π.For comparison, we also show the proper time evolution of temperature for standard dissipative hydrodynamics (spin-less fluid dynamics). Standard dissipative hydrody-namics (spin-less fluid dynamics) can be recovered from Eq. ( 64 )) by setting CωX (τ ) = CωY (τ ) = CωZ (τ ) = 0. In Fig. 1, the green dashed line and the black dotted line represent the temperature evolution for standard dissipa-tive hydrodynamics for η/s 0 = 5 /4π, and η/s 0 = 1 /4π,respectively. On the other hand, the red solid line and the blue dashed dotted line represent the temperature evolu-tion for dissipative spin hydrodynamics for η/s 0 = 5 /4π,
+
+χs = 10 /4π, and η/s 0 = 1 /4π, χs = 3 /4π, respectively. From this figure, we observe that non vanishing spin chemical potential does affect the temperature evolution. Dissipative effects also slow the decrease in temperature over time. Moreover, we observe that in spin hydrody-namics for η/s 0 = 5 /4π and χs = 10 /4π, the temperature initially increases for a brief moment, then decreases with proper time. This is in analogy with the reheating effect observed in the conventional first-order dissipative hydro-dynamics where the solutions of the relativistic Navier-Stokes equation shows an unphysical reheating [ 78 ]. This is attributed to the fact that at early times, the gradients are quite large as they are governed by the factor 1 /τ ,leading to large entropy density increase per unit time. Therefore, for these early times, dissipative effects are significantly large and lies outside the validity of the rel-ativistic Navier-Stokes equations, leading to the unphys-ical reheating. We note that, for sufficiently large values of χs, the system exhibits a brief initial reheating stage. However, since χs is not determined from first principles in the present study, a quantitative estimate of the spin transport coefficients is required to place physical bounds on its magnitude. Such an analysis would clarify whether this reheating behavior can arise in realistic systems. In Fig. 2 we show the proper time evolution CωX ,
+
+CωY , and CωZ . We present the results for two choices of transport coefficients, i.e., η/s 0 = 1 /4π, χs = 3 /4π,and η/s 0 = 5 /4π, χs = 10 /4π. Note that the evolu-tion of CωX , CωY , and CωZ does not directly depend on 
+
+η/s 0 (see Eqs. ( 61 )-( 63 )), but in the spin hydrodynamic framework the evolution of these components of the spin chemical potential crucially depend on the proper time evolution of temperature ( T (τ )). Since the evolution of temperature depends on η/s 0, the proper time evolution   
+
+> 3Instead of considering mass-less particles, we consider a mass of 200 MeV, because in different references where authors com-pare theoretical predictions with spin polarization observables, a quasiparticle picture, with medium-dependent mass of similar, order becomes crucial [ 26 ,46 ].
+
+100 150 200 250 300 350 
+
+> Temperature
+
+1 2 3 4 5 6 7 8 9 10 
+
+# Proper time 
+
+Spin Hydro. 
+
+Hydro. 
+
+Spin Hydro. 
+
+Hydro. 
+
+> (T ) [MeV]
+
+# (τ ) [fm] 
+
+η/s 0 = 5 /4π, χ s = 10 /4πη/s 0 = 5 /4πη/s 0 = 1 /4π, χ s = 3 /4πη/s 0 = 1 /4π
+
+FIG. 1. Proper time evolution of the medium temperature 
+
+T (τ ). The red solid line and the blue dashed-dotted line rep-resent the temperature evolution in dissipative spin hydro-dynamics. For this case, we consider CωX (τ0) = CωY (τ0) = 
+
+CωZ (τ0) = 80 MeV. The green dashed line and the black dotted lines represent the temperature evolution for stan-dard dissipative hydrodynamics. This is obtained by setting 
+
+CωX = CωY = CωZ = 0. In the limit CωX = CωY = CωZ = 0 the spin hydrodynamic framework boils down to the standard dissipative hydrodynamics. 
+
+of different components of the spin chemical potential is also affected by η/s 0. From this figure, we observe that CωX , CωY , and CωZ decrease with proper time, and the decrease of these components is larger for higher val-ues of different transport coefficients. Moreover, for the boost invariant system, the evolution equation of CωX ,and CωY are identical (see Eqs. ( 61 )-( 62 )), i.e., CωX (τ ) = 
+
+CωY (τ ). The equation governing CωZ does not contain any dissipative contributions from the spin transport co-efficients, leading to a much slower decay compared to the transverse components. For different values of parame-ters that we consider here, we observe that (not shown here explicitly) if we start with unpolarized system, i.e., the initial values of CωX (τ0) = 0, CωY (τ0) = 0, and 
+
+CωZ (τ0) = 0, then after subsequent evolution the system remains unpolarized, i.e., CωX (τ ) = 0, CωY (τ ) = 0, and 
+
+CωZ (τ ) = 0, for all τ ≥ τ0.
+
+VI. RATE OF THERMAL DILEPTON PRODUCTION 
+
+We now apply the temperature profile ( T (τ )) to com-pute the thermal dilepton production from the medium. 9
+
+010 20 30 40 50 60 70 80 
+
+1 2 3 4 5 6 7 8 9 10 
+
+# Proper time 
+
+> CωX  , C ωY  , C ωZ  [MeV]
+
+# (τ ) [fm] 
+
+CωX = CωY ; η/s 0 = 5 /4π, χ s = 10 /4πCωZ ; η/s 0 = 5 /4π, χ s = 10 /4πCωX = CωY ; η/s 0 = 1 /4π, χ s = 3 /4πCωZ ; η/s 0 = 1 /4π, χ s = 3 /4π
+
+FIG. 2. We show the evolution of different components of the spin chemical potential, i.e., CωX (τ ), CωY (τ ), and CωZ (τ ). We observe that with proper time CωX (τ ), CωY (τ ), and 
+
+CωZ (τ ) decreases. The decrease of CωX (τ ), and CωY (τ )is faster as comped to CωZ (τ ), due to the spin dissipation. Note η/s 0 does not directly affect the evolution of spin chem-ical potential. But η/s 0 affects the temperature evolution, thereby indirectly affecting the evolution of the spin chemi-cal potential. Due to the symmetry in the transverse plane 
+
+CωX (τ ) = CωY (τ ). 
+
+Dileptons are considered to be an important probe of the medium produced in heavy-ion collisions [ 79 , 80 ]. Leptons interact only via electromagnetic interactions; hence, they have a low interaction cross-section and a longer mean free path. The dominant channel for dilep-ton production is quark-antiquark annihilation, q ¯q →
+
+γ∗ → ℓ+ℓ− (similar to Drell-Yan process). For massless quarks rate of dilepton production is given by [ 55 , 81 , 82 ]
+
+dN 
+
+d4x = M 2
+
+∫ d3p1
+
+(2 π)3
+
+d3p2
+
+(2 π)3
+
+f (E1)f (E2)
+
+2E1E2
+
+σ(M ) (69) where ~p1, ~p2 and E1, E 2 are the momenta and energy of the dileptons, respectively. M is the invariant mass of the dilepton pair, and σ(M ) is the cross section of thermal dileptons. In the Born approximation for Nf = 2, and 
+
+Nc = 3 the cross-section is given as, σ(M ) = 80 πα 2 
+
+> 9M2
+
+[82 ]. 
+
+Nf is the light quark flavour, and Nc is the color de-gree of freedom. α = 1 /137. f (E) is the Fermi-Dirac (FD) distribution function. In the limit M ≫ T , one can replace the FD distribution function with Maxwell Boltzmann distribution function. In this limit, it can be shown that [ 55 , 81 , 82 ]
+
+E dN 
+
+d4x d 3p dM 2 = 1
+
+4
+
+M 2σ(M )
+
+(2 π)5 exp 
+
+(
+
+− E
+
+T
+
+)
+
+(70) Here, E = E1 + E2 is the energy of ℓ+, ℓ− pair. The effect of spin dynamics comes through the proper time evolution of temperature. The above equation is valid in the fluid rest frame, and this expression can be general-ized for a general fluid frame, by replacing E = p0, by 
+
+uμpμ, here 
+
+pμ = ( MT cosh y, p T cos φ, p T sin φ, M T sinh y) (71) 
+
+y is the particle rapidity, φ is the azimuthal angle, and 
+
+MT = √p2 
+
+> T
+
++ M 2. For a boost invariant system with 
+
+uμ ≡ (cosh ηs, 0, 0, sinh ηs), 
+
+E = uμpμ = MT cosh( y − ηs). (72) For a boost invariant system, it can be shown that [ 55 ], 
+
+d4x = πR 2τ dτ dη s, where R is the transverse size, usually considered as the nuclear radius, and R = 1 .2 A1/3fm. We consider Gold Nuclei, with A = 197. Moreover, 
+
+d3p/E = 2 πp T dp T dy , the differential dilepton produc-tion rates can be expressed as, 
+
+dN 
+
+dM dy = 4 M π 2R2
+
+∫ τmax 
+
+> τ0
+
+τ dτ 
+
+∫ ηmax 
+
+> −ηmin
+
+dη s
+
+∫
+
+pT dp T
+
+×
+
+(
+
+E dN 
+
+d4x d 3p dM 2
+
+)
+
+(73) and 
+
+dN 
+
+pT dp T dM dy = 4 M π 2R2
+
+∫ τmax 
+
+> τ0
+
+τ dτ 
+
+∫ ηmax 
+
+> −ηmin
+
+dη s
+
+×
+
+(
+
+E dN 
+
+d4x d 3p dM 2
+
+)
+
+(74) For a boost invariant system the integrand of the above equations are independent of the azimuthal angle ( φ). Hence we have already performed the integration over the azimuthal angle ( φ) to obtain the above equations. The above expressions are evaluated numerically to obtain the corresponding dilepton spectra. The initial proper time is set to τ0 = 0 .5 fm. The upper limit of the proper time integration is denoted as τmax . τmax defines the proper time, when the temperature of the system reaches the quark-hadron transition temperature Tc = 150 MeV [ 82 ], i.e., T (τmax ) = Tc. The space-time rapidity integration is performed within the limits ηs ∈ [−5.3, 5.3] [ 82 ]. In Figs. 3 and 4, we show the estimation of the dilep-ton rates. In Fig. 3, we show the variation in the dilepton production rate dN/ (pT dp T dM dy ) with transverse mo-mentum pT . For the estimation of dN/ (pT dp T dM dy ), the invariant mass is considered to be M = 0 .4 GeV [ 82 ]. In Fig. 4, we show the variation in the dilepton produc-tion rate dN/ (dM dy ) with invariant mass M . For the es-timation of dN/ (dM dy ), the transverse momentum has 10 
+
+10 -6 25
+
+10 -5 25
+
+10 -4 25
+
+10 -3 25
+
+10 -2 25
+
+10 -1 25
+
+1
+
+0.0 0.2 0.4 0.6 0.8 1.0 1.2 1.4 1.6 1.8 2.0 
+
+> Diss. Spin Hydro, Case I
+> Diss. Hydro, Case I
+> Diss. Spin Hydro, Case II
+> Diss. Hydro, Case II
+> PRD 100, 014016 (2019)
+> dN/ (dM dy p T dp T ) [GeV −3]
+
+# pT [GeV] 
+
+FIG. 3. Dilepton production rate as a function of transverse momenta pT . Here, the invariant mass is considered to be 
+
+M = 0 .4 GeV. For the estimation of the dilepton production rate the temperature profile of the medium has been obtained for (a) Case I: dissipative spin hydrodynamics with η/s 0 =5/4π, χs = 10 /4π, dissipative hydrodynamics with η/s 0 =5/4π, and (b) Case II: dissipative spin hydrodynamics with 
+
+η/s 0 = 1 /4π, χs = 3 /4π, dissipative hydrodynamics with 
+
+η/s 0 = 1 /4π. For the spin hydrodynamic case we consider 
+
+CωX (τ0) = CωY (τ0) = CωZ (τ0) = 80 MeV. We compare our results with the results obtained in Ref. [ 82 ]. The brown dashed line represents the dilepton rate from a medium with non-vanishing vorticity ω0 = 0 .7 fm −1 obtained in Ref. [ 82 ]. 
+
+been considered in the range 0 .5 ≤ pT ≤ 2 GeV [ 82 ]. To obtain the results as shown in Figs. 3 and 4 we have considered the particle rapidity y = 0. Note that medium temperature plays the crucial role in the estimation of dilepton rates. We use different tem-perature profiles T (τ ), as shown in Fig. 1, for different scenarios. In Figs. 3 and 4 the red solid line and green dashed line represent the scenario where T (τ ) has been obtained from the dissipative spin hydrodynamic frame-work (Diss. Spin Hydro Case I), with η/s 0 = 5 /4π,
+
+χs = 10 /4π, and standard dissipative hydrodynamics (Diss. Hydro Case I) with η/s 0 = 5 /4π, respectively. The blue dashed dotted line and black dotted line rep-resent the scenario where T (τ ) has been obtained from the dissipative spin hydrodynamic framework (Diss. Spin Hydro Case II), with η/s 0 = 1 /4π, χs = 3 /4π, and stan-dard dissipative hydrodynamics (Diss. Hydro Case II) with η/s 0 = 1 /4π, respectively. For the spin hydrody-namic case we consider the initial values of CωX (τ0) = 
+
+CωY (τ0) = CωZ (τ0) = 80 MeV. Here τ0 = 0 .5 fm is the initial time of hydrodynamic evolution. From these fig-
+
+10 -6 25
+
+10 -5 25
+
+10 -4 25
+
+10 -3 25
+
+10 -2 2
+
+0.6 0.8 1.0 1.2 1.4 1.6 1.8 2.0 2.2 2.4 
+
+> Diss. Spin Hydro, Case I
+> Diss. Hydro, Case I
+> Diss. Spin Hydro, Case II
+> Diss. Hydro, Case II
+> PRD 100, 014016 (2019)
+> dN/ (dM dy ) [GeV −1]
+
+# M [GeV] 
+
+FIG. 4. Dilepton production rate as a function of invariant mass M . Here, the transverse momentum has been consid-ered in the range 0 .5 ≤ pT ≤ 2 GeV. Here, four temper-ature profiles have also been used to obtain the rates. (a) Case I: dissipative spin hydrodynamics with η/s 0 = 5 /4π,
+
+χs = 10 /4π, dissipative hydrodynamics with η/s 0 = 5 /4π,and (b) Case II: dissipative spin hydrodynamics with η/s 0 =1/4π, χs = 3 /4π, dissipative standard hydrodynamics with 
+
+η/s 0 = 1 /4π. For the spin hydrodynamic case we consider 
+
+CωX (τ0) = CωY (τ0) = CωZ (τ0) = 80 MeV. We compare our results with the results obtained in Ref. [ 82 ] (brown dashed line) for a medium with non-vanishing vorticity ω0 = 0 .7fm −1 [82 ]. 
+
+ures, we observe that the lifetime of the partonic medium is very important for dilepton production. From Fig. 1
+
+we observe that for spin hydrodynamics, the decrease of temperature with proper time is slower compared to the standard dissipative hydrodynamics, hence the lifetime of the partonic medium is larger. With dissipative ef-fects, this time scale is even larger. Hence, we observe an enhancement in the thermal dilepton production rate in the spin-hydrodynamic framework with stronger dissipa-tive effects. We also compare our results with the results obtained in Ref. [ 82 ]. In Ref. [ 82 ], the authors study the dilepton production in a partonic medium with fi-nite vorticity. In Ref. [ 82 ], the authors also considered a boost-invariant system. In Figs. 3 and 4, brown dashed lines represent the dilepton rates from a medium with non-vanishing vorticity ω0 = 0 .7 fm −1 as obtained in Ref. [ 82 ]. In Ref. [ 82 ] authors argue that with increas-ing vorticity ( ω0), the dilepton production rates decrease, which is opposite to our results. In our analysis, in the presence of spin chemical potential, the dilepton rate in-creases. This difference might arise from the theoretical 11 
+
+10 -6 25
+
+10 -5 25
+
+10 -4 25
+
+10 -3 25
+
+10 -2 25
+
+10 -1 25
+
+1
+
+0.0 0.2 0.4 0.6 0.8 1.0 1.2 1.4 1.6 1.8 2.0 
+
+> dN/ (dM dy p T dp T ) [GeV −3]
+
+# pT [GeV] 
+
+CωX = CωY = 80 MeV, CωZ = 0 
+
+CωX = CωY = 0, CωZ = 80 MeV 
+
+FIG. 5. Dilepton production rate as a function of trans-verse momenta pT . Here, the invariant mass is considered to be M = 0 .4 GeV. For this plot, T (τ ) has been obtained by solving spin hydrodynamic equations with η/s 0 = 1 /4π,
+
+χs = 3 /4π. The red solid line corresponds to the case where 
+
+CωX (τ0) = CωY (τ0) = 80 MeV, CωZ (τ0) = 0. The green dashed line corresponds to CωZ (τ0) = 80 MeV, CωX (τ0) = 
+
+CωY (τ0) = 0. 
+
+frameworks; e.g., in the present calculation, we imple-ment a spin hydrodynamic approach, in which tempera-ture and spin evolution are coupled. Such a dynamical framework has not been considered in Ref. [ 82 ], the au-thors only considered the effect of vorticity in the thermo-dynamic relation, but not in the hydrodynamic evolution equation. In Sec. III we argued that for a boost invariant sys-tem the electric-like components vanish ( κμ = 0), and only magnetic-like components ( ωμ) become important. Moreover, the spin evolution is certainly determined by the proper time evolution of CωX , CωY , and CωZ . So far we have considered that CωX , CωY , and CωZ are non-vanishing and have the same value at the initial time (τ0). But one can in principle consider two different cases, one with CωX = CωY 6 = 0, but CωZ = 0, and 
+
+CωX = CωY = 0, but CωZ 6 = 0. These configurations allow us to examine the effects of different components of the spin chemical potential on the system’s evolution and dilepton rates. In Fig. 5 we show the variation of dilepton rate dN/ (pT dp T dM dy ) with pT . To estimate 
+
+dN/ (pT dp T dM dy ) we have taken M = 0 .4 GeV. In Fig. 6
+
+we show the variation of dilepton rate dN/ (dM dy ) with 
+
+M . To estimate dN/ (dM dy ) we have taken 0 .5 ≤ pT ≤ 2GeV. For the estimation of dilepton rates, we have ob-tained the proper time evolution of medium tempera-
+
+10 -6 25
+
+10 -5 25
+
+10 -4 25
+
+10 -3 25
+
+10 -2 
+
+0.6 0.8 1.0 1.2 1.4 1.6 1.8 2.0 2.2 2.4 
+
+> dN/ (dM dy ) [GeV −1]
+
+# M [GeV] 
+
+CωX = CωY = 80 MeV, CωZ = 0 
+
+CωX = CωY = 0, CωZ = 80 MeV 
+
+FIG. 6. Dilepton production rate as a function of invariant mass M . Here, the transverse momentum has been considered in the range 0 .5 ≤ pT ≤ 2 GeV. For this plot, T (τ ) has been obtained by solving spin hydrodynamic equations with 
+
+η/s 0 = 1 /4π, χs = 3 /4π. The red solid line corresponds to the case where CωX (τ0) = CωY (τ0) = 80 MeV, CωZ = 0. The green dashed line corresponds to CωZ (τ0) = 80 MeV, 
+
+CωX (τ0) = CωY (τ0) = 0. 
+
+ture by solving spin hydrodynamic equations with η/s 0 =1/4π, and χs = 3 /4π. The red solid line in both Fig. 5,and Fig. 6 corresponds to the case where we have set 
+
+CωX (τ0) = CωY (τ0) = 80 MeV, but CωZ (τ0) = 0. Sim-ilarly, the green dashed line in Fig. 5, and Fig. 6 corre-sponds to the case where we have considered CωX (τ0) = 
+
+CωY (τ0) = 0, but CωZ (τ0) = 80 MeV. It can be shown that if any Cωi (τ0) = 0, where i ∈ { X, Y, Z }, then for later times also, these coefficients remain zero. Although it has not been shown explicitly, it can be argued that for CωX (τ0) = CωY (τ0) = 80 MeV , C ωZ (τ0) = 0 the medium temperature decreases slowly as compared to the case where CωX (τ0) = CωY (τ0) = 0 , C ωZ (τ0) = 80 MeV. Hence, when we have only the longitudinal component of the spin chemical potential ( CωZ 6 = 0), the lifetime of the partonic medium is shorter, giving rise to a lower dilepton production rate, which can be observed in Fig. 5
+
+and Fig. 6.
+
+VII. SUMMARY AND OUTLOOK 
+
+In this work, we studied the boost-invariant evolution of a recently developed first-order spin hydrodynamic framework in which the spin chemical potential is treated as a leading-order hydrodynamic variable. Unlike for-12 mulations where the spin chemical potential is counted as a first-order quantity (order O(∂)) in the gradient expansion, the present framework allows one to consis-tently construct dissipative corrections to the spin ten-sor and to introduce spin transport coefficients at the Navier–Stokes level. We considered a baryon-free system with a symmetric energy-momentum tensor, so that the spin tensor is separately conserved. Adopting Bjorken flow, we derived the coupled evolution equations for the medium temperature and for the independent compo-nents of the spin chemical potential. Owing to boost invariance and the requirement that the total center-of-mass motion vanishes, the electric-like components of the spin chemical potential are identically zero, while only the magnetic-like components survive. The longi-tudinally expanding system is therefore characterized by three independent spin variables, denoted by CωX , CωY ,and CωZ .The dissipative spin hydrodynamic equations reveal an important qualitative difference between the transverse and longitudinal components of the spin chemical poten-tial. The transverse components, CωX and CωY , receive dissipative contributions from the spin transport coef-ficients χ2 and χ3, and therefore decrease rapidly with proper time. In contrast, the longitudinal component 
+
+CωZ does not receive such dissipative contributions and consequently decays much more slowly. We further ob-served that the decay of all spin components is indirectly affected by the shear viscosity through the temperature evolution of the medium. A central result of this work is that the spin degrees of freedom modify the tempera-ture evolution of the longitudinally expanding medium. Compared to standard dissipative hydrodynamics, the presence of a non-vanishing spin chemical potential leads to a slower cooling of the system. For sufficiently large values of the transport coefficients, we even find a brief initial increase in the temperature before the subsequent cooling sets in, which is reminiscent of the reheating ef-fect in the conventional Navier-Stokes hydrodynamics at early times. Subsequently, we used the modified temperature pro-files to estimate thermal dilepton production from quark-antiquark annihilation. Since dileptons are emitted throughout the evolution of the medium and interact only electromagnetically, they are particularly sensitive to the temperature history of the plasma. We found that the slower cooling in spin hydrodynamics enhances the dilep-ton production rate compared to the standard dissipative hydrodynamic case. This enhancement is visible both in the transverse-momentum spectrum and in the invariant-mass spectrum of the dileptons, and becomes more pro-nounced for larger values of the spin transport coeffi-cients. The present study provides one of the first demon-strations of how dissipative spin dynamics can leave an imprint on thermal dilepton spectra. Although we em-ployed a simplified equation of state and phenomenologi-cal choices for the spin transport coefficients, our results indicate that thermal dileptons may serve as an indirect probe of spin transport in the quark-gluon plasma. Looking forward, there are several possible directions for future work. A more realistic description would re-quire the use of an equation of state obtained from lattice QCD or a microscopic quasiparticle model, together with microscopic estimates of the spin transport coefficients. It would also be interesting to include finite baryon den-sity, transverse expansion, and realistic initial conditions relevant for heavy-ion collisions. In addition, the spin hy-drodynamic framework could be extended to investigate the effect of spin evolution on other observables such as thermal photon production. Such studies may provide further insight into the role of spin dynamics in relativis-tic heavy-ion collisions. 
+
+> ACKNOWLEDGMENTS
+
+A.J. gratefully acknowledges the Department of Atomic Energy (DAE), India, for financial support. S.D. and A.D. acknowledge the New Faculty Seed Grant (NFSG), NFSG/PIL/2024/P3825, provided by the Birla Institute of Technology and Science Pi-lani, Pilani Campus, India. A.D. acknowledges the Anusandhan National Research Foundation (ANRF), Advanced Research Grant (ARG), project number: ANRF/ARG/2025/000691/PS. 
+
+> Appendix A: Conservation of energy-momentum tensor for a boost invariant system
+
+For Bjorken flow in the Cartesian coordinates, 
+
+uμ = (cosh ηs, 0, 0, sinh ηs). The Cartesian coordinate (t, x, y, z ) can be transformed in to the Milne coordi-nate ( τ, x, y, η s) using the following transformations t =
+
+τ cosh ηs, z = τ sinh ηs. Here ηs = (1 /2) ln[( t + z)/(t − z)] is the spacetime rapidity, and the proper time τ =√t2 − z2. The derivative with respect to time ( t) and 
+
+z coordinate can be expressed as, 
+
+∂t = ∂0 = cosh ηs∂τ − sinh ηs
+
+τ ∂ηs (A1) 
+
+∂z = ∂3 = − sinh ηs∂τ + cosh ηs
+
+τ ∂ηs (A2) Using the explicit expression of uμ, and Eqs. ( A1 )-( A2 ), it can be shown that, 
+
+uμ∂μf (τ, η s) = ∂f (τ, η s)
+
+∂τ (A3) 
+
+θ = ∂μuμ = ∇μuμ = 1
+
+τ (A4) 
+
+∇0 = − sinh ηs
+
+τ∂
+
+∂η s
+
+(A5) 
+
+∇3 = − cosh ηs
+
+τ∂
+
+∂η s
+
+(A6) 13 Using the expression of πμν ,
+
+πμν = 2 ησ μν = 2 η
+
+[ 1
+
+2 (∇μuν + ∇ν uμ) − 1
+
+3 ∆μν θ
+
+]
+
+(A7) it can be shown that, 
+
+πμν ∂μuν = πμν ∇μuν
+
+=η
+
+[
+
+(∇μuν )∇μuν + ( ∇ν uμ)∇ν uμ − 2
+
+3 θ∇ν uν
+
+]
+
+=η
+
+[ 1
+
+τ 2 + 1
+
+τ 2 − 2
+
+31
+
+τ 2
+
+]
+
+= 4
+
+3
+
+η
+
+τ 2 . (A8) also, Π = ζθ = ζ
+
+τ (A9) Using Eqs. ( A3 ), ( A4 ), ( A8 ), and ( A9 ) in Eq. ( 26 ) we find, 
+
+dε 
+
+dτ + ε + P
+
+τ −
+
+( 4
+
+3
+
+η
+
+τ 2 + ζ
+
+τ 2
+
+)
+
+= 0 . (A10) Moreover for the boost invariant system, (uμ∂μ) uα = 0 , (A11) ∆αμ ∂μ (P − Π) = 0 . (A12) Note that uμ only depend on space-time rapidity ηs. On the other hand P , and Π only depends on the proper time (τ ). For a boost invariant system different components of πμν are, 
+
+π01 = 0; π02 = 0 (A13) 
+
+π00 = − 4
+
+3
+
+η
+
+τ (sinh ηs)2; π03 = − 4
+
+3
+
+η
+
+τ sinh ηs cosh ηs (A14) 
+
+π11 = 2
+
+3
+
+η
+
+τ ; π12 = 0; π13 = 0 (A15) 
+
+π22 = 2
+
+3
+
+η
+
+τ ; π23 = 0; π33 = − 4
+
+3
+
+η
+
+τ (cosh ηs)2 (A16) Using the above expression of different components of 
+
+πμν one can show that, for a boost invariant system, ∆αν ∂μπμν = 0 . (A17) Therefore for a boost invariant system Eq. ( 27 ) is trivially satisfied. 
+
+Appendix B: Derivation of Eqs. (61 )-(63 )
+
+Contracting Eq. ( 52 ) with uαXβ one finds, 
+
+uαXβ
+
+[ ∂S αβ 
+
+∂τ + Sαβ 
+
+τ + ∂μSμαβ 
+
+> (1)
+
+]
+
+= 0 . (B1) Now, 
+
+uαXβ
+
+∂S αβ 
+
+∂τ = ∂
+
+∂τ 
+
+[
+
+uαXβ Sαβ 
+
+]
+
+= ∂
+
+∂τ 
+
+[
+
+S0(T )uαXβ ωαβ 
+
+]
+
+= ∂
+
+∂τ 
+
+[
+
+S0(T )uαXβ ǫαβγδ uγ ωδ
+
+]
+
+= 0 . (B2) Similarly it can be shown that, uαXβ Sαβ = 0. Moreover, 
+
+uαXβ ∂μSμαβ  
+
+> (1)
+
+= uαXβ ∂μ
+
+[
+
+uατ μβ  
+
+> (s)
+
+− uβ τ μα 
+
+> (s)
+
+]
+
++ uαXβ ∂μ
+
+[
+
+uατ μβ  
+
+> (a)
+
+− uβ τ μα 
+
+> (a)
+
+]
+
+= Xβ ∂μτ μβ  
+
+> (s)
+
++ Xβ ∂μτ μβ 
+
+> (a)
+
+= −∂0τ 01 (s) − ∂3τ 31 (s) − ∂0τ 01 (a) − ∂3τ 31 (a) = 0 . (B3) here we have used the expression of ∂0, ∂3, τ 01 (s), τ 01 (a), τ 31 (s),and τ 31 (a). Similarly it can be shown that, 
+
+uαYβ
+
+[ ∂S αβ 
+
+∂τ + Sαβ 
+
+τ + ∂μSμαβ 
+
+> (1)
+
+]
+
+= 0 . (B4) and, 
+
+uαZβ
+
+[ ∂S αβ 
+
+∂τ + Sαβ 
+
+τ + ∂μSμαβ 
+
+> (1)
+
+]
+
+= 0 . (B5) Now contracting Eq. ( 52 ) with XαYβ one finds, 
+
+XαYβ
+
+[ ∂S αβ 
+
+∂τ + Sαβ 
+
+τ + ∂μSμαβ 
+
+> (1)
+
+]
+
+= 0 . (B6) Here, 
+
+XαYβ Sαβ = S0(T )ǫαβγδ XαYβ uγ ωδ
+
+= S0(T )
+
+[
+
+ǫ1203 u0ω3 + ǫ1230 u3ω0
+
+]
+
+= S0(T )
+
+[
+
+− u0ω3 + u3ω0
+
+]
+
+= −S0(T )CωZ . (B7) Moreover, 
+
+XαYβ ∂μ
+
+[
+
+uατ μβ  
+
+> (s)
+
+− uβ τ μα 
+
+> (s)
+
+]
+
+= 0 , (B8) 
+
+XαYβ ∂μ
+
+[
+
+uατ μβ  
+
+> (a)
+
+− uβ τ μα 
+
+> (a)
+
+]
+
+= 0 . (B9) Using Eqs. ( B7 )-( B9 ) in Eq. ( B6 ) we find, 
+
+∂
+
+∂τ 
+
+[
+
+S0(T )CωZ 
+
+]
+
++ S0(T )CωZ 
+
+τ = 0 ,
+
+=⇒ dC ωZ 
+
+dτ + CωZ 
+
+( S′
+
+> 0
+
+(T )
+
+S0(T )
+
+dT 
+
+dτ + 1
+
+τ
+
+)
+
+= 0 . (B10) Contracting Eq. ( 52 ) with XαZβ one finds, 
+
+XαZβ
+
+[ ∂S αβ 
+
+∂τ + Sαβ 
+
+τ + ∂μSμαβ 
+
+> (1)
+
+]
+
+= 0 . (B11) 14 It can be shown that, 
+
+XαZβ Sαβ = XαZβ S0(T )ǫαβγδ uγ ωδ
+
+=S0(T )X1Z3u0ω2 − S0(T )X1Z0u3ω2
+
+=S0(T )CωY . (B12) Furthermore, 
+
+XαZβ ∂μ
+
+[
+
+uατ μβ  
+
+> (s)
+
+− uβ τ μα 
+
+> (s)
+
+]
+
+= −Xατ μα  
+
+> (s)
+
+Zβ ∂μuβ
+
+= τ μ1(s)Zβ ∂μuβ = τ μ1(s)
+
+[
+
+Z0∂μu0 − Z3∂μu3
+
+]
+
+= τ 01 (s) sinh ηs∂0(cosh ηs) + τ 31 (s) sinh ηs∂3(cosh ηs)
+
+− τ 01 (s) cosh ηs∂0(sinh ηs) − τ 31 (s) cosh ηs∂3(sinh ηs)= χ2βC ωY 
+
+τ 2 . (B13) Similarly it can be shown that, 
+
+XαZβ ∂μ
+
+[
+
+uατ μβ  
+
+> (a)
+
+− uβ τ μα 
+
+> (a)
+
+]
+
+= τ μ1(a)Zβ ∂μuβ
+
+= χ3βC ωY 
+
+τ 2 . (B14) Using Eqs. ( B12 )-( B14 ) in Eq. ( B11 ) we find the evolu-tion equation for CωY ,
+
+d
+
+dτ 
+
+[
+
+S0(T )CωY 
+
+]
+
++ S0(T )CωY 
+
+τ
+
++ ( χ2 + χ3) βC ωY 
+
+τ 2 = 0 .
+
+=⇒ dC ωY 
+
+dτ + CωY 
+
+( S′
+
+> 0
+
+(T )
+
+S0(T )
+
+dT 
+
+dτ + 1
+
+τ
+
++ (χ2 + χ3)
+
+τ 2T S 0(T )
+
+)
+
+= 0 . (B15) Similarly, contracting Eq. ( 52 ) with YαZβ ,
+
+YαZβ
+
+[ ∂S αβ 
+
+∂τ + Sαβ 
+
+τ + ∂μSμαβ 
+
+> (1)
+
+]
+
+= 0 , (B16) it can be shown that, 
+
+d
+
+dτ 
+
+[
+
+S0(T )CωX 
+
+]
+
++ S0(T )CωX 
+
+τ
+
++ ( χ2 + χ3) βC ωX 
+
+τ 2 = 0 .
+
+=⇒ dC ωX 
+
+dτ + CωX 
+
+( S′
+
+> 0
+
+(T )
+
+S0(T )
+
+dT 
+
+dτ + 1
+
+τ
+
++ (χ2 + χ3)
+
+τ 2T S 0(T )
+
+)
+
+= 0 . (B17) 
+
+Appendix C: Derivation of Eq. (64 )
+
+Using the expression of ε(T, ω μν ) (Eq. ( 49 )) we find, 
+
+dε 
+
+dτ = dε 0
+
+dT dT 
+
+dτ +
+
+[
+
+2S′
+
+> 0
+
+(T ) + T S ′′  
+
+> 0
+
+(T )
+
+]
+
+C2 dT 
+
+dτ 
+
++ 2 
+
+[
+
+S0(T ) + T S ′
+
+> 0
+
+(T )
+
+]
+
+C dC 
+
+dτ 
+
+= A dT 
+
+dτ + BC dC 
+
+dτ . (C1) Here, 
+
+A = dε 0
+
+dT +
+
+[
+
+2S′
+
+> 0
+
+(T ) + T S ′′  
+
+> 0
+
+(T )
+
+]
+
+C2, (C2) 
+
+B = 2 
+
+[
+
+S0(T ) + T S ′
+
+> 0
+
+(T )
+
+]
+
+. (C3) Moreover C2 = C2 
+
+> ωX
+
++ C2 
+
+> ωY
+
++ C2 
+
+> ωZ
+
+, which implies, 
+
+C dC 
+
+dτ = CωX 
+
+dC ωX 
+
+dτ + CωY 
+
+dC ωY 
+
+dτ + CωZ 
+
+dC ωZ 
+
+dτ . (C4) Using Eqs. ( 61 )-( 63 ) in Eq. ( C4 ) we find, 
+
+C dC 
+
+dτ = −C2
+
+[ S′
+
+> 0
+
+(T )
+
+S0(T )
+
+dT 
+
+dτ + 1
+
+τ
+
+]
+
+− (C2 
+
+> ωX
+
++ C2
+
+> ωY
+
+) χ2 + χ3
+
+S0(T )1
+
+T τ 2 . (C5) Using Eq. ( C5 ) in Eq. ( C1 ) we get, 
+
+dε 
+
+dτ =
+
+[
+
+A − BC 2 S′
+
+> 0
+
+(T )
+
+S0(T )
+
+] dT 
+
+dτ − BC 2
+
+τ
+
+− B (C2 
+
+> ωX
+
++ C2
+
+> ωY
+
+) χ2 + χ3
+
+S0(T )1
+
+T τ 2 . (C6) Using Eq. ( 48 )-( 49 ) we find, 
+
+ε + P
+
+τ = ε0 + P0
+
+τ +
+
+[
+
+2S0(T ) + T S ′
+
+> 0
+
+(T )
+
+] C2
+
+τ
+
+= T s 0
+
+τ +
+
+[
+
+2S0(T ) + T S ′
+
+> 0
+
+(T )
+
+] C2
+
+τ . (C7) Finally using Eq. ( C6 ), and Eq. ( C7 ) in Eq. ( 51 ) we find the proper time evolution of temperature, 
+
+[
+
+A − BC 2 S′
+
+> 0
+
+(T )
+
+S0(T )
+
+] dT 
+
+dτ − BC 2
+
+τ − B (C2 
+
+> ωX
+
++ C2
+
+> ωY
+
+)
+
+T τ 2 χs
+
++ T s 0(T )
+
+τ +
+
+[
+
+2S0(T ) + T S ′
+
+> 0
+
+(T )
+
+] C2
+
+τ
+
+− s0
+
+τ 2
+
+( 4η
+
+3s0
+
++ ζ
+
+s0
+
+)
+
+= 0 . (C8) Here we define the dimensionless ratio χs = (χ2 +
+
+χ3)/S 0(T ). 15 
+
+[1] STAR Collaboration, L. Adamczyk et al. , “Global Λ hyperon polarization in nuclear collisions: evidence for the most vortical fluid,” Nature 548 (2017) 62–65 ,
+
+arXiv:1701.06657 [nucl-ex] .[2] STAR Collaboration, J. Adam et al. , “Global polarization of Λ hyperons in Au+Au collisions at 
+
+√sN N = 200 GeV,” Phys. Rev. C 98 (2018) 014910 ,
+
+arXiv:1805.04400 [nucl-ex] .[3] STAR Collaboration, J. Adam et al. , “Polarization of Λ ( ¯Λ) hyperons along the beam direction in Au+Au collisions at √sN N = 200 GeV,” 
+
+Phys. Rev. Lett. 123 no. 13, (2019) 132301 ,
+
+arXiv:1905.11917 [nucl-ex] .[4] ALICE Collaboration, S. Acharya et al. , “Global polarization of Λ ¯Λ hyperons in Pb-Pb collisions at √sNN = 2.76 and 5.02 TeV,” 
+
+Phys. Rev. C 101 no. 4, (2020) 044611 ,
+
+arXiv:1909.01281 [nucl-ex] .[5] HADES Collaboration, F. J. Kornas, “Λ Polarization in Au+Au Collisions at √sNN = 2 .4 GeV Measured with HADES,” 
+
+Springer Proc. Phys. 250 (2020) 435–439 .[6] Z.-T. Liang and X.-N. Wang, “Globally polarized quark-gluon plasma in non-central A+A collisions,” 
+
+Phys. Rev. Lett. 94 (2005) 102301 ,
+
+arXiv:nucl-th/0410079 [nucl-th] . [Erratum: Phys. Rev. Lett.96,039901(2006)]. [7] F. Becattini, F. Piccinini, and J. Rizzo, “Angular momentum conservation in heavy ion collisions at very high energy,” Phys. Rev. C77 (2008) 024906 ,
+
+arXiv:0711.1253 [nucl-th] .[8] J.-H. Gao, S.-W. Chen, W.-T. Deng, Z.-T. Liang, Q. Wang, and X.-N. Wang, “Global quark polarization in non-central A+A collisions,” 
+
+Phys. Rev. C77 (2008) 044902 ,
+
+arXiv:0710.2943 [nucl-th] .[9] X.-G. Huang, P. Huovinen, and X.-N. Wang, “Quark Polarization in a Viscous Quark-Gluon Plasma,” 
+
+Phys. Rev. C 84 (2011) 054910 ,
+
+arXiv:1108.5649 [nucl-th] .[10] F. Becattini, V. Chandra, L. Del Zanna, and E. Grossi, “Relativistic distribution function for particles with spin at local thermodynamical equilibrium,” 
+
+Annals Phys. 338 (2013) 32–49 ,
+
+arXiv:1303.3431 [nucl-th] .[11] R.-H. Fang, L.-G. Pang, Q. Wang, and X.-N. Wang, “Polarization of massive fermions in a vortical fluid,” 
+
+Phys. Rev. C94 no. 2, (2016) 024904 ,
+
+arXiv:1604.04036 [nucl-th] .[12] S. A. Voloshin, “Polarized secondary particles in unpolarized high energy hadron-hadron collisions?,” 
+
+arXiv:nucl-th/0410089 [nucl-th] .[13] B. Betz, M. Gyulassy, and G. Torrieri, “Polarization probes of vorticity in heavy ion collisions,” 
+
+Phys. Rev. C76 (2007) 044901 ,
+
+arXiv:0708.0035 [nucl-th] .[14] F. Becattini, G. Inghirami, V. Rolando, A. Beraudo, L. Del Zanna, A. De Pace, M. Nardi, G. Pagliara, and V. Chandra, “A study of vorticity formation in high energy nuclear collisions,” 
+
+Eur. Phys. J. C75 no. 9, (2015) 406 ,
+
+arXiv:1501.04468 [nucl-th] . [Erratum: Eur. Phys. J.C78,no.5,354(2018)]. [15] F. Becattini, “Spin and polarization: a new direction in relativistic heavy ion physics,” 
+
+Rept. Prog. Phys. 85 no. 12, (2022) 122301 ,
+
+arXiv:2204.01144 [nucl-th] .[16] L. Del Zanna, V. Chandra, G. Inghirami, V. Rolando, A. Beraudo, A. De Pace, G. Pagliara, A. Drago, and F. Becattini, “Relativistic viscous hydrodynamics for heavy-ion collisions with ECHO-QGP,” 
+
+Eur. Phys. J. C 73 (2013) 2524 ,
+
+arXiv:1305.7052 [nucl-th] .[17] I. Karpenko, P. Huovinen, and M. Bleicher, “A 3+1 dimensional viscous hydrodynamic code for relativistic heavy ion collisions,” 
+
+Comput. Phys. Commun. 185 (2014) 3016–3027 ,
+
+arXiv:1312.4160 [nucl-th] .[18] Y. B. Ivanov, V. D. Toneev, and A. A. Soldatov, “Estimates of hyperon polarization in heavy-ion collisions at collision energies √sNN = 4–40 GeV,” 
+
+Phys. Rev. C 100 no. 1, (2019) 014908 ,
+
+arXiv:1903.05455 [nucl-th] .[19] H. Li, L.-G. Pang, Q. Wang, and X.-L. Xia, “Global Λ polarization in heavy-ion collisions from a transport model,” Phys. Rev. C96 no. 5, (2017) 054908 ,
+
+arXiv:1704.01507 [nucl-th] .[20] O. Vitiuk, L. V. Bravina, and E. E. Zabrodin, “Is different Λ and ¯Λ polarization caused by different spatio-temporal freeze-out picture?,” 
+
+Phys. Lett. B 803 (2020) 135298 ,
+
+arXiv:1910.06292 [hep-ph] .[21] Y. Sun and C. M. Ko, “Λ hyperon polarization in relativistic heavy ion collisions from a chiral kinetic approach,” Phys. Rev. C96 no. 2, (2017) 024906 ,
+
+arXiv:1706.09467 [nucl-th] .[22] F. Becattini and M. A. Lisa, “Polarization and Vorticity in the Quark–Gluon Plasma,” 
+
+Ann. Rev. Nucl. Part. Sci. 70 (2020) 395–423 ,
+
+arXiv:2003.03640 [nucl-ex] .[23] F. Becattini, M. Buzzegoli, and A. Palermo, “Spin-thermal shear coupling in a relativistic fluid,” 
+
+Phys. Lett. B 820 (2021) 136519 ,
+
+arXiv:2103.10917 [nucl-th] .[24] S. Y. F. Liu and Y. Yin, “Spin polarization induced by the hydrodynamic gradients,” JHEP 07 (2021) 188 ,
+
+arXiv:2103.09200 [hep-ph] .[25] F. Becattini, M. Buzzegoli, G. Inghirami, I. Karpenko, and A. Palermo, “Local Polarization and Isothermal Local Equilibrium in Relativistic Heavy Ion Collisions,” 
+
+Phys. Rev. Lett. 127 no. 27, (2021) 272302 ,
+
+arXiv:2103.14621 [nucl-th] .[26] B. Fu, S. Y. F. Liu, L. Pang, H. Song, and Y. Yin, “Shear-Induced Spin Polarization in Heavy-Ion Collisions,” Phys. Rev. Lett. 127 no. 14, (2021) 142301 ,
+
+arXiv:2103.10403 [hep-ph] .[27] W. Florkowski, A. Kumar, and R. Ryblewski, “Relativistic hydrodynamics for spin-polarized fluids,” 
+
+Prog. Part. Nucl. Phys. 108 (2019) 103709 ,
+
+arXiv:1811.04409 [nucl-th] .[28] W. Florkowski, A. Kumar, and R. Ryblewski, “Thermodynamic versus kinetic approach to 16 
+
+polarization-vorticity coupling,” 
+
+Phys. Rev. C98 (2018) 044906 ,
+
+arXiv:1806.02616 [hep-ph] .[29] W. Florkowski, B. Friman, A. Jaiswal, R. Ryblewski, and E. Speranza, “Spin-dependent distribution functions for relativistic hydrodynamics of spin-1/2 particles,” Phys. Rev. D97 no. 11, (2018) 116017 ,
+
+arXiv:1712.07676 [nucl-th] .[30] W. Florkowski, B. Friman, A. Jaiswal, and E. Speranza, “Relativistic fluid dynamics with spin,” 
+
+Phys. Rev. C97 no. 4, (2018) 041901 ,
+
+arXiv:1705.00587 [nucl-th] .[31] W. Florkowski, A. Kumar, R. Ryblewski, and R. Singh, “Spin polarization evolution in a boost invariant hydrodynamical background,” 
+
+Phys. Rev. C99 no. 4, (2019) 044910 ,
+
+arXiv:1901.09655 [hep-ph] .[32] W. Florkowski, A. Kumar, R. Ryblewski, and A. Mazeliauskas, “Longitudinal spin polarization in a thermal model,” Phys. Rev. C100 no. 5, (2019) 054907 ,
+
+arXiv:1904.00002 [nucl-th] .[33] K. Hattori, M. Hongo, X.-G. Huang, M. Matsuo, and H. Taya, “Fate of spin polarization in a relativistic fluid: An entropy-current analysis,” 
+
+Phys. Lett. B795 (2019) 100–106 ,
+
+arXiv:1901.06615 [hep-th] .[34] K. Fukushima and S. Pu, “Spin hydrodynamics and symmetric energy-momentum tensors – A current induced by the spin vorticity –,” 
+
+Phys. Lett. B 817 (2021) 136346 ,
+
+arXiv:2010.01608 [hep-th] .[35] S. Li, M. A. Stephanov, and H.-U. Yee, “Nondissipative Second-Order Transport, Spin, and Pseudogauge Transformations in Hydrodynamics,” 
+
+Phys. Rev. Lett. 127 no. 8, (2021) 082302 ,
+
+arXiv:2011.12318 [hep-th] .[36] D. She, A. Huang, D. Hou, and J. Liao, “Relativistic viscous hydrodynamics with angular momentum,” 
+
+Sci. Bull. 67 (2022) 2265–2268 ,
+
+arXiv:2105.04060 [nucl-th] .[37] D. Montenegro, L. Tinti, and G. Torrieri, “Sound waves and vortices in a polarized relativistic fluid,” 
+
+Phys. Rev. D96 no. 7, (2017) 076016 ,
+
+arXiv:1703.03079 [hep-th] .[38] D. Montenegro, L. Tinti, and G. Torrieri, “The ideal relativistic fluid limit for a medium with polarization,” 
+
+Phys. Rev. D96 no. 5, (2017) 056012 ,
+
+arXiv:1701.08263 [hep-th] .[39] W. Florkowski, E. Speranza, and F. Becattini, “Perfect-fluid hydrodynamics with constant acceleration along the stream lines and spin polarization,” 
+
+Acta Phys. Polon. B49 (2018) 1409 ,
+
+arXiv:1803.11098 [nucl-th] .[40] S. Bhadury, W. Florkowski, A. Jaiswal, A. Kumar, and R. Ryblewski, “Relativistic dissipative spin dynamics in the relaxation time approximation,” 
+
+Phys. Lett. B 814 (2021) 136096 ,
+
+arXiv:2002.03937 [hep-ph] .[41] S. Shi, C. Gale, and S. Jeon, “From Chiral Kinetic Theory To Spin Hydrodynamics,” 
+
+Nucl. Phys. A 1005 (2021) 121949 ,
+
+arXiv:2002.01911 [nucl-th] .[42] N. Weickgenannt, D. Wagner, E. Speranza, and D. H. Rischke, “Relativistic second-order dissipative spin hydrodynamics from the method of moments,” 
+
+Phys. Rev. D 106 no. 9, (2022) 096014 ,
+
+arXiv:2203.04766 [nucl-th] .[43] N. Weickgenannt, X.-L. Sheng, E. Speranza, Q. Wang, and D. H. Rischke, “Kinetic theory for massive spin-1/2 particles from the Wigner-function formalism,” 
+
+arXiv:1902.06513 [hep-ph] .[44] N. Weickgenannt, E. Speranza, X.-l. Sheng, Q. Wang, and D. H. Rischke, “Generating Spin Polarization from Vorticity through Nonlocal Collisions,” 
+
+Phys. Rev. Lett. 127 no. 5, (2021) 052301 ,
+
+arXiv:2005.01506 [hep-ph] .[45] S. K. Singh, R. Ryblewski, and W. Florkowski, “Spin dynamics with realistic hydrodynamic background for relativistic heavy-ion collisions,” 
+
+Phys. Rev. C 111 no. 2, (2025) 024907 ,
+
+arXiv:2411.08223 [hep-ph] .[46] Sapna, S. K. Singh, and D. Wagner, “Spin polarization of Λ hyperons from dissipative spin hydrodynamics,” 
+
+Phys. Rev. C 112 no. 5, (2025) 054902 ,
+
+arXiv:2503.22552 [hep-ph] .[47] S. Dey and A. Das, “Kubo formula for spin hydrodynamics: Spin chemical potential as the leading order term in a gradient expansion,” 
+
+Phys. Rev. D 111 no. 7, (2025) 074037 ,
+
+arXiv:2410.04141 [nucl-th] .[48] D.-L. Wang, S. Fang, and S. Pu, “Analytic solutions of relativistic dissipative spin hydrodynamics with Bjorken expansion,” Phys. Rev. D 104 no. 11, (2021) 114043 ,
+
+arXiv:2107.11726 [nucl-th] .[49] A. Daher, A. Das, W. Florkowski, and R. Ryblewski, “Canonical and phenomenological formulations of spin hydrodynamics,” 
+
+Phys. Rev. C 108 no. 2, (2023) 024902 ,
+
+arXiv:2202.12609 [nucl-th] .[50] G. Sarwar, M. Hasanujjaman, J. R. Bhatt, H. Mishra, and J.-e. Alam, “Causality and stability of relativistic spin hydrodynamics,” 
+
+Phys. Rev. D 107 no. 5, (2023) 054031 ,
+
+arXiv:2209.08652 [nucl-th] .[51] A. Daher, A. Das, and R. Ryblewski, “Stability studies of first-order spin-hydrodynamic frameworks,” 
+
+Phys. Rev. D 107 no. 5, (2023) 054043 ,
+
+arXiv:2209.10460 [nucl-th] .[52] R. Biswas, A. Daher, A. Das, W. Florkowski, and R. Ryblewski, “Boost invariant spin hydrodynamics within the first order in derivative expansion,” 
+
+Phys. Rev. D 107 no. 9, (2023) 094022 ,
+
+arXiv:2211.02934 [nucl-th] .[53] Z. Drogosz, W. Florkowski, N. Lygan, and R. Ryblewski, “Boost-invariant spin hydrodynamics with spin feedback effects,” 
+
+Phys. Rev. C 111 no. 2, (2025) 024909 ,
+
+arXiv:2411.06154 [hep-ph] .[54] W. Florkowski, Phenomenology of Ultra-Relativistic Heavy-Ion Collisions . 2010. [55] R. Vogt, Ultrarelativistic heavy-ion collisions . Elsevier, Amsterdam, 2007. [56] J. Alam, B. Sinha, and S. Raha, “Electromagnetic probes of quark gluon plasma,” 
+
+Phys. Rept. 273 (1996) 243–362 .[57] P. Kovtun, “First-order relativistic hydrodynamics is stable,” JHEP 10 (2019) 034 ,
+
+arXiv:1907.08191 [hep-th] .17 
+
+[58] R. Biswas, A. Daher, A. Das, W. Florkowski, and R. Ryblewski, “Relativistic second-order spin hydrodynamics: An entropy-current analysis,” 
+
+Phys. Rev. D 108 no. 1, (2023) 014024 ,
+
+arXiv:2304.01009 [nucl-th] .[59] D. Rindori, Entropy current in relativistic quantum statistical mechanics . PhD thesis, U. Florence (main), Florence U., 2020. arXiv:2110.07662 [hep-th] .[60] S. Coleman, 
+
+Lectures of Sidney Coleman on Quantum Field Theory .WSP, Hackensack, 12, 2018. [61] F. W. Hehl, “On the energy tensor of spinning massive matter in classical field theory and general relativity,” 
+
+Reports on Mathematical Physics 9 no. 1, (1976) 55–82 .[62] E. Speranza and N. Weickgenannt, “Spin tensor and pseudo-gauges: from nuclear collisions to gravitational physics,” Eur. Phys. J. A 57 no. 5, (2021) 155 ,
+
+arXiv:2007.00138 [nucl-th] .[63] F. Belinfante, “On the spin angular momentum of mesons,” Physica 6 no. 7, (1939) 887–898 .[64] F. Belinfante, “On the current and the density of the electric charge, the energy, the linear momentum and the angular momentum of arbitrary fields,” 
+
+Physica 7 no. 5, (1940) 449–474 .[65] L. Rosenfeld Mem. Acad. Roy. Bel. 18 no. 1, (1940) . [66] S. R. De Groot, W. A. Van Leeuwen, and C. G. Van Weert, Relativistic Kinetic Theory. Principles and Applications . North-Holland Publishing Company, 1980. [67] J. Hilgevoord and S. Wouthuysen, “On the spin angular momentum of the dirac particle,” 
+
+Nuclear Physics 40 (1963) 1 – 12 .[68] J. Hilgevoord and E. De Kerf, “The covariant definition of spin in relativistic quantum field theory,” 
+
+Physica 31 no. 7, (1965) 1002–1016 .[69] J. Weyssenhoff and A. Raabe, “Relativistic dynamics of spin-fluids and spin-particles,” Acta Phys. Polon. 9
+
+(1947) 7–18. [70] J. D. Bjorken, “Highly Relativistic Nucleus-Nucleus Collisions: The Central Rapidity Region,” 
+
+Phys. Rev. D27 (1983) 140–151 .[71] F. Reif, Fundamentals of Statistical and Thermal Physics . 1965. [72] M. S. Green, “Markoff Random Processes and the Statistical Mechanics of Time-Dependent Phenomena. II. Irreversible Processes in Fluids,” 
+
+J. Chem. Phys. 22 (1954) 398 .[73] R. Kubo, “Statistical mechanical theory of irreversible processes. 1. General theory and simple applications in magnetic and conduction problems,” 
+
+J. Phys. Soc. Jap. 12 (1957) 570–586 .[74] J. Hu, “Kubo formulae for first-order spin hydrodynamics,” 
+
+Phys. Rev. D 103 no. 11, (2021) 116015 ,
+
+arXiv:2101.08440 [hep-ph] .[75] D. She, Y.-W. Qiu, and D. Hou, “Relativistic second-order spin hydrodynamics: A Kubo-type formulation for the quark-gluon plasma,” 
+
+Phys. Rev. D 111 no. 3, (2025) 036027 ,
+
+arXiv:2410.15142 [nucl-th] .[76] A. Daher, X.-L. Sheng, D. Wagner, and F. Becattini, “Dissipative currents and transport coefficients in relativistic spin hydrodynamics,” 
+
+arXiv:2503.03713 [nucl-th] .[77] P. Romatschke and U. Romatschke, “Viscosity Information from Relativistic Nuclear Collisions: How Perfect is the Fluid Observed at RHIC?,” 
+
+Phys. Rev. Lett. 99 (2007) 172301 ,
+
+arXiv:0706.1522 [nucl-th] .[78] R. Baier, P. Romatschke, and U. A. Wiedemann, “Dissipative hydrodynamics and heavy ion collisions,” 
+
+Phys. Rev. C 73 (2006) 064903 ,
+
+arXiv:hep-ph/0602249 .[79] R. Ryblewski and M. Strickland, “Dilepton production from the quark-gluon plasma using (3+1)-dimensional anisotropic dissipative hydrodynamics,” 
+
+Phys. Rev. D 92 no. 2, (2015) 025026 ,
+
+arXiv:1501.03418 [nucl-th] .[80] G. Vujanovic, C. Young, B. Schenke, R. Rapp, S. Jeon, and C. Gale, “Dilepton emission in high-energy heavy-ion collisions with viscous hydrodynamics,” 
+
+Phys. Rev. C 89 no. 3, (2014) 034904 ,
+
+arXiv:1312.0676 [nucl-th] .[81] J. R. Bhatt, H. Mishra, and V. Sreekanth, “Cavitation and thermal dilepton production in QGP,” 
+
+Nucl. Phys. A 875 (2012) 181–196 ,
+
+arXiv:1101.5597 [hep-ph] .[82] B. Singh, J. R. Bhatt, and H. Mishra, “Probing vorticity in heavy ion collision with dilepton production,” Phys. Rev. D 100 no. 1, (2019) 014016 ,
+
+arXiv:1811.08124 [hep-ph] .
