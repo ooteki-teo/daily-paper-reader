@@ -1,0 +1,38 @@
+{
+  "version": 2,
+  "extractor": "pdffigures2",
+  "figures": [
+    {
+      "url": "assets/figures/arxiv/2604.10173v1/fig-001.webp",
+      "caption": "TABLE II. Top-12 descriptors ranked by mean absolute SHAP value S̄i (eV). The normalized contribution ratio Ri = S̄i/ ∑ k S̄k expresses each descriptor’s share of the model’s total explanatory budget; the cumulative fraction is the running sum of Ri. Both are computed relative to the total SHAP magnitude ( ∑ k S̄k = 0.4836 eV). The top three descriptors account for 37.4% of the model’s total attribution.",
+      "page": 6,
+      "index": 1,
+      "width": 514,
+      "height": 368
+    },
+    {
+      "url": "assets/figures/arxiv/2604.10173v1/fig-002.webp",
+      "caption": "TABLE III. Top BO candidates for each coordination class, their nearest structural prototypes, and independent DFT validation results. Structural similarity is quantified by cosine similarity c and Euclidean distance d in the normalized structural-descriptor space. For reference, the median pairwise Euclidean distance among the 323 parent prototypes in the dataset is d ≈ 7.8 in this space.",
+      "page": 11,
+      "index": 2,
+      "width": 1062,
+      "height": 354
+    },
+    {
+      "url": "assets/figures/arxiv/2604.10173v1/fig-003.webp",
+      "caption": "FIG. 4. Packing and covalency jointly govern SSE magnitude. (a) SSE versus nearest motif-centroid distance d (1) CC , colored by MPF. Large SSE (> 0.8 eV) requires high packing (MPF > 0.20) and short inter-motif separations (d(1)CC < 3.5 Å). (b) Hybridization spin asymmetry ∆H = |H↑ − H↓| versus maximum spin-resolved p–d hybridization max(H↑, H↓), colored by SSE. Black circles denote p/d < 1; red triangles denote p/d ≥ 1. Large SSE concentrates in the upper-right region (strong hybridization and large spin asymmetry, predominantly p/d < 1). VO and CrSb are annotated as case studies. (c) VO (p/d = 1, SSE = 0.165 eV): crystal structure in the P63/mmc prototype with spin orientations indicated (top), and spin-resolved p–d hybridization fatbands along L–Γ–L′ (bottom), showing weak, spin-symmetric hybridization. (d) CrSb (p/d = 0.667, SSE = 1.194 eV): crystal structure (top) and fatbands (bottom), displaying strong, spin-asymmetric hybridization. In (c) and (d), band opacity scales with Hσ; separate colorbars indicate spin-up (red) and spin-down (blue) channels. The band pair for which SSE is evaluated is highlighted with a thicker linewidth.",
+      "page": 10,
+      "index": 3,
+      "width": 1055,
+      "height": 607
+    },
+    {
+      "url": "assets/figures/arxiv/2604.10173v1/fig-004.webp",
+      "caption": "FIG. 5. DFT validation of BO-selected candidates. (a) Square-planar FeS and (b) NiAs-type NiS. Top panels show the relaxed crystal structures with spin order, and bottom panels show spin-resolved p–d hybridization fatbands along T2–Γ–U2 for FeS and L–Γ–L′ for NiS. The DFT-relaxed descriptors are FeS (MSBI = 0.871, MPF = 0.533, p/d = 0.571) and NiS (MSBI = 0.681, MPF = 0.333, p/d = 0.445), and both lie in the favorable regime identified by the SHAP analysis. Band opacity scales with Hσ, and the band pair used for SSE evaluation is highlighted.",
+      "page": 12,
+      "index": 4,
+      "width": 512,
+      "height": 655
+    }
+  ]
+}

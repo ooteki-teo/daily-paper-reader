@@ -1,0 +1,3017 @@
+Title: Topological Phase Transitions and Their Thermodynamic Fate in Arbitrary-$S$ Pyrochlore Spin Ice
+
+URL Source: https://arxiv.org/pdf/2604.04346v1
+
+Published Time: Tue, 07 Apr 2026 01:20:18 GMT
+
+Number of Pages: 37
+
+Markdown Content:
+Topological Phase Transitions and Their Thermodynamic Fate in Arbitrary-S
+
+Pyrochlore Spin Ice 
+
+Sena Watanabe, 1, ∗ Yukitoshi Motome, 1, † and Haruki Watanabe 2, 3, 4, 1, ‡
+
+> 1
+
+Department of Applied Physics, The University of Tokyo, Tokyo 113-8656, Japan 
+
+> 2
+
+Department of Physics, Hong Kong University of Science and Technology, Clear Water Bay, Hong Kong, China 
+
+> 3
+
+Institute for Advanced Study, Hong Kong University of Science and Technology, Clear Water Bay, Hong Kong, China 
+
+> 4
+
+Center for Theoretical Condensed Matter Physics, Hong Kong University of Science and Technology, Clear Water Bay, Hong Kong, China 
+
+(Dated: April 7, 2026) We develop a self-contained theoretical framework that classifies the topological phases and criti-cal phenomena of classical pyrochlore magnets with arbitrary spin S, subject to competing exchange and single-ion anisotropies. In the small-w regime, where the single-ion term favors low spin ampli-tudes, exact dualities reveal a dichotomy: integer spins exhibit a continuous 3D XY deconfinement transition, whereas half-integer spins remain in a U (1) Coulomb liquid without any transition. In the large-w regime, where the local spin amplitudes are maximized ( |Sz | = S), the macroscopic flux is quantized to multiples of 2 S. By mapping the defect structure to topological loop gases, we prove that the compatibility between the physical ice rule and the emergent Z2S flux conservation holds if and only if S ≤ 3/2. For S = 3 /2, this maps the system to the 3-state Potts model, whose symmetry-allowed cubic invariant drives a first-order transition. For S ≥ 2, monopole contamination breaks the discrete clock mapping. Using an exact decomposition of the partition function, we show that the hierarchical string fusion cascade exponentially suppresses the discrete perturbations, which act as a dangerously irrelevant operator at the 3D XY fixed point, protecting 3D XY criticality. Finally, incorporating thermal monopoles, we show that they act as a symmetry-breaking effective magnetic field that severs defect strings. Consequently, the continuous transitions are rounded into crossovers, whereas the first-order S = 3 /2 transition is predicted to survive at finite temperatures, terminating at a critical endpoint. Classical Monte Carlo simulations for S up to 7 /2 corroborate these analytical predictions. 
+
+I. INTRODUCTION 
+
+The study of geometrically frustrated magnetism on the pyrochlore lattice has been a fertile ground for dis-covering exotic states of matter, most notably classical and quantum spin liquids [1–4]. The quintessential exam-ple is classical spin ice, realized in rare-earth oxides such as Ho 2Ti 2O7 and Dy 2Ti 2O7 [5–8]. In these materials, strong crystalline electric fields acting on the large total angular momenta ( J = 8 for Ho 3+ , J = 15 /2 for Dy 3+ )isolate a low-energy doublet, allowing the magnetic mo-ments to be treated as effective S = 1 /2 Ising pseu-dospins oriented along the local ⟨111 ⟩ tetrahedral axes [9]. The frustrated exchange interactions force the spins into a two-in, two-out ice rule [10], mapping the low-energy physics to a fluctuating, divergence-free effective magnetic field. This emergent electromagnetism charac-terizes the U (1) Coulomb liquid phase, distinguished by algebraic spin correlations and pinch-point singularities [11–15]. Recent theoretical and numerical advances have pushed beyond the rigid S = 1/2 paradigm by ex-ploring S = 1 and higher-spin systems with competing anisotropies [16, 17]. For the S = 1 case, the competition    
+
+> ∗watanabe-sena397@g.ecc.u-tokyo.ac.jp
+> †motome@ap.t.u-tokyo.ac.jp
+> ‡hwatanabe@ust.hk
+
+between a dominant easy-axis exchange and a single-ion anisotropy μ(Sz )2 (μ > 0) that penalizes large |Sz | yields a rich phase diagram [18–20]. Unlike the S = 1 /2 model, the S = 1 spins can access a non-magnetic Sz = 0 state. Tuning the anisotropy drives the system through three distinct macroscopic phases: a trivial paramagnet, a U (1) Coulomb phase, and a Z2-confined Coulomb phase, sep-arated by continuous transitions in the 3D XY and 3D Ising universality classes. More recently, Pandey et al. investigated the S = 3 /2 case, uncovering a first-order 
+
+Z3 flux-confinement transition separating two distinct Coulomb liquids [21]. These developments connect to the broader understanding of fractionalization and magnetic fragmentation in pyrochlore systems [22–24]. These discoveries raise fundamental questions: How do the macroscopic topological structures and critical phe-nomena generalize to an arbitrary spin S? Why does the S = 3 /2 model exhibit a first-order transition while 
+
+S = 1 exhibits continuous transitions? What is the ulti-mate fate of the phase transitions and universality classes for S ≥ 2? Finally, what is the thermodynamic fate of these topological phase transitions at finite temperatures, where the strict ice rules are inevitably violated by ther-mally excited magnetic monopoles? In this paper, we address these questions by develop-ing a unified and self-contained theoretical framework for the spin-S pyrochlore magnet. Working initially in the monopole-free limit, we establish the completeness of the global phase diagram through a thermodynamic 
+
+> arXiv:2604.04346v1 [cond-mat.str-el] 6 Apr 2026
+
+2no-go theorem. We identify an integer vs. half-integer dichotomy in the small-w regime (where the single-ion anisotropy suppresses large spin amplitudes) via exact duality transformations. In the large-w regime (where 
+
+|Sz | = S is energetically favored), we map the defect structure to an emergent loop gas and demonstrate that 
+
+S = 3 /2 possesses a unique geometric compatibility that maps the system to the 3-state Potts model, driving a first-order transition. For S ≥ 2, we prove via an exact decomposition that a hierarchical string fusion cascade exponentially suppresses discrete perturbations, leading to 3D XY criticality. The resulting classification in the monopole-free limit is summarized in Tables I and II and the schematic phase diagram in Fig. 1. Finally, by in-corporating thermal monopoles into the partition func-tion, we show analytically that monopoles act as a string-severing field. This predicts that the S = 3 /2 first-order transition is the sole phase boundary that can persist at T > 0. We corroborate these analytical predictions with classical Monte Carlo simulations for S up to 7 /2, confirming that the monopole-free phase transitions are indeed rounded into smooth crossovers at finite tempera-ture. Beyond the specific context of spin ice, this work il-lustrates a general mechanism by which the proliferation of microscopic internal degrees of freedom geometrically suppresses discrete perturbations that act as dangerously irrelevant operators, thereby transmuting discrete topo-logical gauge structures into continuous emergent U (1) symmetry. This paper is organized as follows. In Sec. II we de-fine the model and derive the exact partition function. Section III establishes the macroscopic flux quantization and the thermodynamic no-go theorem. The small-w du-ality mapping and the integer vs. half-integer dichotomy are presented in Sec. IV, while the large-w loop-gas map-pings and the classification of deconfinement transitions are developed in Sec. V. The finite-temperature effects of thermal monopoles are analyzed in Sec. VI. Section VII presents the Monte Carlo verification, and Sec. VIII con-cludes with an outlook.  
+
+> II. MODEL FORMULATION AND EXACT PARTITION FUNCTION
+
+Before embarking on the generalized theory for arbi-trary spin S, we rigorously define the microscopic Hamil-tonian and introduce the exact representation of the par-tition function that forms the foundation of all subse-quent duality mappings.  
+
+> A. Lattice geometry and effective Hamiltonian
+
+The pyrochlore lattice is a network of corner-sharing tetrahedra whose sites lie at the midpoints of the links 
+
+ℓ = ⟨rA, rB ⟩ of an underlying bipartite diamond lattice [7, 16]. The diamond lattice comprises N vertices (equiv-                                            
+
+> FIG. 1. Schematic phase diagram in the ( μ, T ) plane for (a) integer S≥1, (b) S= 3 /2, and (c) half-integer S≥5/2. The single-ion fugacity is w:= e−μ/T , so the monopole-free transition lines μc=−Tln wcare straight lines emanating from the origin with slopes determined by wc(Tables I and II). For integer spins (a), the three phases are the trivial paramag-net ( μ > 0, small w), the U(1) Coulomb liquid, and the Z2S-confined Coulomb phase ( μ < 0, large w). For half-integer spins (b, c), the non-magnetic Sz= 0 state is absent, so the small-wphase is the U(1) Coulomb liquid rather than the triv-ial paramagnet. Dashed lines denote continuous transitions (crossovers at T > 0); the solid line in (b) denotes the first-order coexistence line that survives at finite temperature and terminates at a critical endpoint (open circle). The S= 1 /2case (not shown) has no transition and resides in the U(1) Coulomb phase for all μ.
+
+alently, N tetrahedra of the pyrochlore lattice) and 2 N
+
+links. We place on each site a discrete spin variable 
+
+Szℓ ∈ {− S, −S + 1 , . . . , S } with arbitrary positive inte-ger or half-integer magnitude S. The local quantization axis on every link is oriented from the A-sublattice vertex 
+
+rA toward the B-sublattice vertex rB .We study the generalized Blume–Capel Hamiltonian on this lattice [25, 26], which couples an antiferromag-netic nearest-neighbor exchange J > 0 with a single-ion anisotropy μ:
+
+H = J
+
+2
+
+X
+
+> r
+
+ X 
+
+> ℓ∈r
+
+Szℓ
+
+2
+
++ μ X
+
+> ℓ
+
+(Szℓ )2, (1) where the outer sum runs over every diamond-lattice ver-tex r and ℓ ∈ r labels its four incident links (coordination number z = 4). Since both terms are quadratic in Szℓ , the 3
+
+TABLE I. Phase diagram of integer-spin models in the monopole-free limit ( v = 0). The macroscopic polarization flux P serves as a topological invariant distinguishing the three phases. The transition out of the trivial paramagnet belongs to the 3D XY 
+
+universality class for all integer S. The deconfinement transition out of the Z2S -confined phase is 3D Ising for S = 1 and 3D 
+
+XY for S ≥ 2, the latter guaranteed by the exact decomposition and the irrelevance of the Z2S fusion cascade. The S = 1 critical fugacity is wc2 = 2 /(3 tanh KIsing  
+
+> c
+
+), where KIsing  
+
+> c
+
+is the 3D Ising critical coupling on the diamond lattice [20]. For S ≥ 2, 
+
+wc2 = [2 /(3 τ1)] 1/(2 S−1) with τ1 := I1(KXY c )/I 0(KXY c ) (see Sec. V C). At finite temperatures ( v > 0), thermal monopoles round all these transitions into continuous crossovers (see Sec. VI). Spin S Trivial Phase wc1 (Transition) U (1) Coulomb Phase wc2 (Deconfinement) Z2S -Confined Phase 1 P = 0 ≈ 0.344 (3D XY ) P ∈ Z3 23 tanh KIsing 
+
+> c
+
+≈ 1.88 (3D Ising) P ∈ (2 Z)3
+
+≥ 2 P = 0 ≈ 0.344 (3D XY ) P ∈ Z3
+
+ 23 τ1
+
+ 12S−1
+
+≈ (1 .859) 12S−1 (3D XY ) P ∈ (2 SZ)3
+
+TABLE II. Phase diagram of half-integer-spin models in the monopole-free limit ( v = 0). The absence of the non-magnetic 
+
+Sz = 0 state forbids the trivial paramagnetic phase, reducing the diagram to two phases (except for S = 1 /2, which has only one). For S = 1 /2, the single-ion anisotropy is a constant and the system resides in the U (1) Coulomb phase for all 
+
+w. The S = 3 /2 deconfinement transition is first-order, driven by Z3 defect-string fusion mapped to the 3-state Potts model. For S ≥ 5/2, the exponential suppression of the fusion cascade restores 3D XY criticality. At finite temperatures ( v > 0), the continuous transitions become crossovers, while the S = 3 /2 first-order transition is predicted to persist up to a critical endpoint (see Sec. VI). Spin S U (1) Coulomb Phase wc (Deconfinement) Z2S -Confined Phase 1/2 P ∈ Z3 None (always U (1) phase) —3/2 P ∈ Z3 ≈ 1.42 (first-order; 3-Potts) P ∈ (3 Z)3
+
+≥ 5/2 P ∈ Z3
+
+ 23 τ1
+
+ 12S−1
+
+≈ (1 .859) 12S−1 (3D XY ) P ∈ (2 SZ)3
+
+Hamiltonian is invariant under a simultaneous sign flip 
+
+Szℓ → − Szℓ on all links (global time-reversal symmetry). Moreover, because the exchange energy at each vertex is the squared divergence ( P 
+
+> ℓ∈r
+
+Szℓ )2 = ( − P 
+
+> ℓ∈r
+
+Szℓ )2,its value is independent of the sublattice sign conven-tion adopted for the link orientations. Accounting for the sublattice orientation of each link, the discrete lat-tice divergence is defined as ∇ · SrA := + P 
+
+> ℓ∈rA
+
+Szℓ and 
+
+∇ · SrB := − P 
+
+> ℓ∈rB
+
+Szℓ (the sign flip on the B sublattice arises because the local quantization axis on each link is oriented from A to B), which can be interpreted as a magnetic monopole charge [27]. 
+
+B. Exact partition function 
+
+At temperature T the canonical partition function is 
+
+Z := X 
+
+> {Szℓ}
+
+e−H/T . (2) We parameterize the Boltzmann weights by two dimen-sionless fugacities: w := e−μ/T , governing the single-ion cost, and v := e−J/ (2 T ), governing the monopole cost. Physically, μ > 0 ( w < 1) penalizes large spin amplitudes (easy-plane tendency), whereas μ < 0 ( w > 1) favors the maximal amplitude |Sz | = S (easy-axis tendency). Intro-ducing an independent monopole charge variable Qr ∈ Z
+
+at each vertex and enforcing Qr = ∇· Sr via a Kronecker delta, we rewrite the partition function as 
+
+Z = X 
+
+> {Qr}
+
+X 
+
+> {Szℓ}
+
+Y
+
+> r
+
+δ∇· Sr ,Q r
+
+!
+
+vP  
+
+> rQ2
+> r
+
+wP 
+
+> ℓ(Szℓ)2
+
+, (3) which cleanly separates the topological weight vQ2
+
+from the local anisotropy weight w(Sz )2
+
+and holds for arbitrary 
+
+S and T . This representation is the starting point for all analytical results derived below. 
+
+C. Monopole-free limit and macroscopic polarization flux 
+
+When T ≪ J the monopole fugacity v is exponentially small, so configurations with any Qr̸ = 0 carry a pro-hibitive Boltzmann penalty. Retaining only the Qr = 0 sector in Eq. (3) imposes the ice rule ∇ · Sr = 0 at every vertex. The ice-rule manifold further decomposes into topo-logically distinct sectors labeled by a macroscopic polar-ization flux P . Under periodic boundary conditions the component along a cubic axis z reads 
+
+Pz = X
+
+> ℓ∈Ck
+
+sgn( zB − zA) Szℓ , (4) where Ck denotes the set of links intersected by any plane of constant z cutting through the lattice. The sign fac-tor projects each local spin onto the global z-direction. 4Because the divergence-free condition forces all flux en-tering a slab to exit, Pz is independent of the choice of Ck
+
+and therefore constitutes a conserved topological quan-tum number [22, 28].     
+
+> D. Review of the foundational cases ( S= 1 /2and
+> S= 1 )
+
+For the foundational S = 1 /2 case, individual spins can only take values ±1/2. The single-ion anisotropy term evaluates to a constant: μ(Szℓ )2 = μ/ 4. Because this uniformly shifts the global energy, the parameter w
+
+is rendered physically irrelevant. The thermodynamics is dictated solely by the topological ice rule. The macro-scopic flux can freely take any integer value, P ∈ Z3
+
+(since any macroscopic plane intersects an even number of links, and summing an even number of half-integer spins yields an integer). The macroscopic state is the canonical U (1) Coulomb liquid phase [11, 14, 29]. The S = 1 limit introduces the non-magnetic state 
+
+Szℓ = 0. For w ≪ 1 ( μ > 0), the non-magnetic state is energetically favored, collapsing the system into a trivial paramagnet with P = 0. As w increases, defect strings of Szℓ = ±1 condense through a 3D XY continuous phase transition, yielding a U (1) Coulomb phase. For w ≫ 1 ( μ < 0), the energetic penalty forces the spins to maximize their amplitude, settling into Szℓ = ±1on all links. Because any macroscopic plane on the bi-partite diamond lattice is intersected by an even num-ber of links, summing an even number of ±1 states strictly quantizes the macroscopic flux to even integers, 
+
+P ∈ (2 Z)3, stabilizing a Z2-confined Coulomb phase. The elementary thermal defects in this regime are links with Szℓ = 0. Because 0 = −0, these defects lack internal orientation, mapping precisely to undirected loops and placing the deconfinement transition unambiguously in the 3D Ising universality class [19, 20, 29, 30].  
+
+> III. MACROSCOPIC FLUX QUANTIZATION AND THE THERMODYNAMIC NO-GO THEOREM
+
+When generalizing to arbitrary S ≥ 3/2, the expanded local Hilbert space raises the question of whether more complex phase structures—such as intermediate uni-form backgrounds or partial deconfinement cascades— can arise. We first characterize the macroscopic topology in both limiting regimes of w, and then prove a no-go the-orem that excludes any intermediate phases.  
+
+> A. Macroscopic flux quantization in the large-w
+> limit
+
+In the large-w limit, the vacuum resides exclusively at 
+
+Szℓ = Sσ ℓ with polarities σℓ ∈ {− 1, 1}. To characterize the macroscopic topology, we compute the global polar-ization flux Pz across a macroscopic cross-sectional plane 
+
+Ck:
+
+Pz = S X
+
+> ℓ∈Ck
+
+sgn( zB − zA)σℓ = S X
+
+> ℓ∈Ck
+
+˜σℓ, (5) where ˜ σℓ := sgn( zB − zA)σℓ ∈ {− 1, 1}.A macroscopic plane completely traverses the bipar-tite diamond lattice. The total number of links N⊥
+
+intersecting this plane is strictly an even integer (e.g., 
+
+N⊥ = 4 L2 for a plane orthogonal to a cubic axis in a periodic lattice of L3 unit cells). Let N+ be the number of links crossing the plane with positive projected po-larity (˜ σℓ = +1), and N− be the number with negative projected polarity (˜ σℓ = −1). We have the geometric identity N+ + N− = N⊥. The algebraic sum of the pro-jected polarities evaluates to: 
+
+X
+
+> ℓ∈Ck
+
+˜σℓ = N+(1) + N−(−1) = ( N⊥ − N−) − N− = N⊥ − 2N−. (6) Because N⊥ is an even integer, the quantity N⊥ − 2N− is manifestly an even integer, denoted as 2 k (k ∈ Z). Sub-stituting this topological constraint back into the macro-scopic flux equation yields: 
+
+Pz = S(2 k) = 2 Sk, and hence P ∈ (2 SZ)3. (7) This geometric proof establishes that the macroscopic flux in the large-w limit is universally quantized to multi-ples of 2 S, stabilizing an emergent Z2S -confined Coulomb phase for any S. This parity-based topological classifi-cation is analogous to the macroscopic loop parities that distinguish fractionalized phases in 3D Z2 lattice gauge theories [31, 32]. For S = 1, the P ∈ (2 Z)3 quantization reduces to the Z2 flux confinement identified numerically in Ref. [18] and derived analytically via geometric parity rules in Ref. [20]; for S = 3 /2, it yields the Z3 confine-ment of Ref. [21].  
+
+> B. Macroscopic flux quantization in the small-w
+> limit
+
+In the opposite limit w ≪ 1 ( μ > 0), the single-ion anisotropy favors the smallest accessible spin amplitude on every link. The nature of the resulting ground-state manifold depends qualitatively on whether S is an integer or a half-integer. For integer S, the unique minimum of the single-ion energy μm 2 is m = 0. In this regime every link is occu-pied by the non-magnetic state Szℓ = 0, giving Pz = 0 identically. Thermal excitations with |m| ≥ 1 are dilute (fugacity w ≪ 1) and form small, closed loops under the ice rule, so the macroscopic flux remains locked at P = 0.The system is a trivial correlated paramagnet. 5For half-integer S, the minimum amplitude is |m| =1/2, and the ground-state manifold consists of all ice-rule-satisfying configurations of Szℓ = ±1/2. This is pre-cisely the S = 1 /2 spin ice, irrespective of the original value of S. Substituting S → 1/2 into the large-w result 
+
+P ∈ (2 SZ)3 immediately yields P ∈ Z3. The small-w
+
+phase of any half-integer spin is therefore a fully decon-fined U (1) Coulomb liquid, topologically equivalent to the canonical S = 1 /2 spin ice [11, 14, 29]. To summarize, the two limiting regimes exhibit the fol-lowing macroscopic flux sectors: for integer S, the acces-sible sectors change from P = 0 (small w) to P ∈ (2 SZ)3
+
+(large w); for half-integer S, they change from P ∈ Z3
+
+(small w) to P ∈ (2 SZ)3 (large w). In both cases, the set of thermodynamically accessible flux sectors differs between the two limits, guaranteeing the existence of at least one phase boundary as w is varied: for inte-ger S, the nonzero sectors in (2 SZ)3 must be activated (deconfinement), while for half-integer S, the sectors in 
+
+Z3 \ (2 SZ)3 must be suppressed (confinement). The re-maining question is whether intermediate phases can in-tervene between these two extremes.  
+
+> C. Prohibition of intermediate background phases
+
+Let us evaluate whether a macroscopic uniform back-ground comprised predominantly of intermediate spin amplitudes ( |Szℓ | = m, where 0 < m < S ) can emerge as a thermodynamically stable phase. In the strict monopole-free limit ( v → 0), the ther-modynamic competition between different uniform back-grounds is dictated by the local single-ion anisotropy en-ergy function, E(m) ∝ μm 2. For the small-w regime (μ > 0), this is a strictly convex parabola, minimizing uniquely at the smallest possible amplitude (0 for inte-ger S, ±1/2 for half-integer S). For the large-w regime (μ < 0), the concave nature of E(m) places the minimum at the boundaries m = ±S.Because any intermediate spin state (0 < m < S ) car-ries an extensive energy penalty compared to either the minimal or maximal amplitude states, both intermediate uniform and mixed backgrounds are thermodynamically forbidden. The system must transit directly between the minimal and maximal amplitude backgrounds.  
+
+> D. Hierarchy of string tensions and the impossibility of partial deconfinement
+
+Even after excluding intermediate backgrounds, one might envision a cascade of partial deconfinement tran-sitions within the large-w regime, in which defect strings of successively higher topological charge ϕ condense at different fugacities. We now show that this scenario is also excluded. In the Z2S -confined phase ( μ < 0), the deconfinement transition out of the vacuum ( Szℓ = ±S) is driven by the thermal proliferation of topological defect strings. A defect string carrying a relative integer topological charge 
+
+ϕ incurs a string tension ∆ Eϕ:∆Eϕ = −| μ|(S − ϕ)2 −  −| μ|S2
+
+= |μ|(2 Sϕ − ϕ2), (1 ≤ ϕ ≤ 2S − 1) . (8) This tension forms an inverted parabola over ϕ ∈
+
+[1 , 2S − 1]. The absolute minimum tension is strictly achieved at the boundaries: the fundamental unit charge (ϕ = 1) and its dual ( ϕ = 2 S − 1). ∆E1 = ∆ E2S−1 = |μ|(2 S − 1) . (9) For S ≥ 2, any intermediate-charge defect (1 <ϕ < 2S − 1) incurs a strictly larger string tension (∆ Eϕ > ∆E1). (For S = 3/2, the only available charges are the fundamental string ϕ = 1 and its dual 
+
+ϕ = 2, which share the identical minimum tension and thus co-condense; no intermediate defect exists.) Con-sequently, the relative fugacity of higher-order defects, 
+
+xϕ/x 1 = exp( −(∆ Eϕ − ∆E1)/T ), is exponentially small in the large-w limit. The fundamental strings therefore condense first [33, 34]. Once they proliferate as wind-ing strings around the torus, each such string shifts the macroscopic flux across a cross-sectional plane by ±1, so P ∈ Z3—full deconfinement into the U (1) Coulomb liquid in a single step. More generally, condensation of charge-n defect strings would change the accessible flux sectors from (2 SZ)3 to (gcd( n, 2S) Z)3, since each winding string shifts the flux by ±n. For n = 1, gcd(1 , 2S) = 1 recovers Z3. Because the fundamental strings ( n = 1) carry the lowest tension and already achieve complete deconfinement, intermediate fraction-alized topological phases with partial flux quantization (e.g., P ∈ (SZ)3, which would require n ≥ 2 strings to condense before n = 1) are strictly precluded by the ther-modynamic dominance of the fundamental strings. Com-bining this result with the macroscopic flux quantization in both limits (Secs. IIIA–B) and the prohibition of in-termediate backgrounds (Sec. IIIC), we conclude that the global phase diagram is limited to exactly three phases for integer S (trivial paramagnet, U (1) Coulomb liquid, 
+
+Z2S -confined phase) and two phases for half-integer S
+
+(U (1) Coulomb liquid, Z2S -confined phase).   
+
+> IV. SMALL-wREGIME: EXACT DUALITY MAPPING AND THE SPIN PARITY DICHOTOMY
+
+When w ≪ 1 ( μ > 0), large spin amplitudes are en-ergetically penalized and the thermodynamics depends qualitatively on the parity of 2 S. We expose this inte-ger vs. half-integer dichotomy through an exact duality transformation of the monopole-free partition function [35, 36]. 6
+
+A. Exact dual representation 
+
+From Eq. (3), taking the exact limit v → 0, the par-tition function is restricted to the minimally frustrated manifold where Qr = 0 identically: 
+
+Zv=0 = X 
+
+> {Szℓ}
+
+Y
+
+> r
+
+δQr ,0
+
+! Y
+
+> ℓ
+
+w(Szℓ )2
+
+. (10) Each Kronecker delta is resolved by a Lagrange-multiplier phase θr ∈ [0 , 2π): 
+
+δQr ,0 =
+
+Z 2π
+
+> 0
+
+dθ r
+
+2π e−iθ r Qr . (11) Substituting into Zv=0 and exchanging the order of sum-mation and integration gives 
+
+Zv=0 = X 
+
+> {Szℓ}
+
+Z
+
+Dθ exp −i X
+
+> r
+
+θr Qr
+
+!
+
+wP 
+
+> ℓ(Szℓ)2
+
+, (12) with Dθ := Q 
+
+> r
+> dθ r
+> 2π
+
+.A discrete summation by parts converts the vertex sum in the exponent into a sum over oriented links 
+
+ℓ = ⟨rA, rB ⟩:
+
+X
+
+> r
+
+θr Qr = X
+
+> rA
+
+θrA
+
+ X 
+
+> ℓ∈rA
+
+Szℓ
+
+
+
+− X
+
+> rB
+
+θrB
+
+ X 
+
+> ℓ∈rB
+
+Szℓ
+
+
+
+= − X 
+
+> ℓ=⟨rA,rB⟩
+
+(θrB − θrA )Szℓ
+
+= − X
+
+> ℓ
+
+(∇θℓ)Szℓ , (13) where we have defined the phase difference along the link as ∇θℓ := θrB − θrA .This transformation decouples the global constraint, allowing the summation over Szℓ ∈ {− S, −S + 1 , . . . , S }
+
+to factorize into a product of independent local sums: 
+
+Zv=0 =
+
+Z
+
+Dθ Y
+
+> ℓ
+
+WS (∇θℓ), (14) where we define the exact local link weight function: 
+
+WS (∇θℓ) := 
+
+> S
+
+X
+
+> m=−S
+
+wm2
+
+eim ∇θℓ . (15) The macroscopic statistical mechanics of this exact dual continuous representation is thus governed by the effec-tive action Seff [θ] := − P 
+
+> ℓ
+
+ln WS (∇θℓ). 
+
+B. Integer spins: Protection of 3D XY universality 
+
+For integer spins ( S ∈ Z), the absolute minimum of the energy uniquely defines the trivial non-magnetic vac-uum state m = 0, which carries a weight of w0 = 1. The elementary thermal excitations are the fundamen-tal defects with m = ±1, carrying a suppressed weight 
+
+w ≪ 1. Higher-spin states, such as m = ±2, carry pe-nalized weights O(w4). For integer S ≥ 2, the exact link weight WS (∇θℓ) ex-pands as: 
+
+WS (∇θℓ) = 1 + 2 w cos( ∇θℓ) + 2 w4 cos(2 ∇θℓ) + . . . (16) Expanding ln WS = ln(1 + x) with x = WS −1, we obtain the effective action: 
+
+Seff [θ] = X
+
+> ℓ
+
+h
+
+− (2 w + 2 w3) cos( ∇θℓ) + w2 cos(2 ∇θℓ)
+
+− 23 w3 cos(3 ∇θℓ) + 12 w4 cos(4 ∇θℓ)
+
+i
+
++ O(w5).
+
+(17) The dominant term, −(2 w+2 w3) P 
+
+> ℓ
+
+cos( ∇θℓ), is inde-pendent of S (it holds for all integer S ≥ 1; see below) and maps the small-w regime to the classical 3D XY model [37] with an effective coupling Keff = 2 w + 2 w3 + O(w5). The critical point wc1 is determined by Keff (wc1) =
+
+KXY c , where KXY c is the 3D XY critical coupling on the diamond lattice. Our Monte Carlo simulations of the classical XY model on the diamond lattice (the ferro-magnetic and antiferromagnetic models share the same 
+
+Tc on this bipartite lattice) yield T XY c = 1.30032(3) [38], corresponding to KXY c = 1 /T XY c ≈ 0.769. Solving 2w + 2 w3 = KXY c to O(w3) gives wc1 ≈ 0.344, in good agreement with the numerical result wc1 = 0 .3609(1) ob-tained for S = 1 by Pandey and Damle [18]. All non-XY harmonics cos( p∇θℓ) ( p ≥ 2) are strongly irrelevant operators at the 3D XY fixed point [37, 39], so the small-w regime belongs to the 3D XY universality class for all integer S. Moreover, the leading XY cou-pling −(2 w + 2 w3) cos( ∇θℓ) is completely independent of 
+
+S for all integer S ≥ 1; only the irrelevant higher har-monics ( p ≥ 2) are sensitive to the available spin states. The critical point wc1 is therefore universal across all in-teger spins. For S = 1, the absence of m = ±2 states renders W1(∇θℓ) = 1 + 2 w cos( ∇θℓ) exact, so the higher-harmonic coefficients differ from Eq. (17) at subleading orders (e.g., cos(2 ∇θℓ) acquires an additional +2 w4 cor-rection). These differences are confined to the irrelevant sector and do not affect the universal XY critical behav-ior. 
+
+C. Half-integer spins: Rigorous absence of phase transitions 
+
+For half-integer spins ( S = 1 /2, 3/2, 5/2, . . . ), the non-magnetic integer state m = 0 is strictly forbidden. The lowest-energy states available to each link are the physi-cal doublets m = ±1/2, both carrying an identical Boltz-mann weight w1/4. The higher-spin thermal states (e.g., 
+
+m = ±3/2) carry weights w9/4, which are heavily sup-pressed by a factor of w2 ≪ 1. 7For S ≥ 3/2, evaluating the exact link weight function yields the analytical expansion: 
+
+WS (∇θℓ)= 2 w1/4 cos 
+
+ ∇θℓ
+
+2
+
+
+
++ 2 w9/4 cos 
+
+ 3∇θℓ
+
+2
+
+
+
++ O(w25 /4).
+
+(18) Factoring out 2w1/4 cos( ∇θℓ/2), expanding the log-arithm, and applying the identity cos(3 x)/ cos x =2 cos(2 x) − 1 with x = ∇θℓ/2, we obtain the effective action (up to constants): 
+
+Seff [θ] = − X
+
+> ℓ
+
+ln cos 
+
+ ∇θℓ
+
+2
+
+
+
+− 2w2 X
+
+> ℓ
+
+cos( ∇θℓ) + O(w4).
+
+(19) The physical tuning parameter w factors out of the leading action term as an overall global normaliza-tion constant. While this shifts the global energy scale, it does not lift the topological degeneracy of the system. The leading, w-independent effective action, 
+
+− P 
+
+> ℓ
+
+ln cos 
+
+ ∇θℓ
+
+> 2
+
+
+
+, is identical to the gauge theory for-mulation of the classical S = 1 /2 spin ice [11, 13]. This action describes the degenerate manifold of two-in, two-out configurations, which hosts the U (1) Coulomb liquid phase characterized by algebraic dipolar correlations and unconfined integer fluxes ( P ∈ Z3). The subleading O(w2) correction is a global U (1)-symmetric XY rotor coupling −2w2 cos( ∇θℓ)—the same functional form as the standard 3D XY model action. In the dual framework, this term strictly preserves the continuous U (1) symmetry and merely renormalizes the phase stiffness (corresponding to the photon stiffness of the emergent U (1) gauge field) without introduc-ing any symmetry-breaking relevant operator (such as a monopole potential cos θr ) that could generate a con-fining gap. More broadly, the 3D U (1) Coulomb phase is intrinsically robust against arbitrary small local per-turbations [11, 14], and the O(w2) perturbation does not generate any relevant operator that could confine the gauge field. Notably, this O(w2) photon stiffness vanishes identically in the pure S = 1 /2 limit, where 
+
+W1/2 = 2 w1/4 cos( ∇θℓ/2) contains no higher harmonics. It is the admixture of higher spin states ( |m| ≥ 3/2), available only for S ≥ 3/2, that generates the phase stiff-ness through virtual fluctuations. Consequently, this ex-act duality mapping provides a proof of the absence of any thermodynamic phase transition in the small-w limit for any half-integer spin S.In the case of S = 1 /2, the link weight W1/2(α) = 2w1/4 cos( α/ 2) is anti-periodic: W1/2(α + 2 π) =
+
+−W1/2(α), so the factor cos( ∇θℓ/2) changes sign when 
+
+|∇ θℓ| > π . This sign ambiguity is the gauge-theory mani-festation of the half-integer spin: just as a spin-1 /2 wave-function acquires a ( −1) phase under a 2 π rotation, the dual link weight acquires a sign flip under a 2 π shift of the phase variable—a geometric Berry phase. The dual in-tegrand Q 
+
+> ℓ
+
+cos( ∇θℓ/2) nonetheless remains single-valued under θr → θr + 2 π because each such shift simultane-ously flips exactly z = 4 incident link weights, producing an overall factor ( −1) z = +1. The 2 π periodicity of the integrand is thus guaranteed by the coordination number 
+
+z being even, not by the loop length; on a lattice with odd 
+
+z, the same construction would fail because ( −1) z = −1. The diamond lattice, with z = 4, provides the necessary geometric consistency for the half-integer dual represen-tation. Although the integrand can be negative for in-dividual high-gradient configurations, the partition func-tion (the full integral) is strictly real and positive.   
+
+> V. LARGE-wREGIME: EXACT GRAPHICAL MAPPINGS AND EMERGENT UNIVERSALITY
+
+In the large-w limit ( μ → −∞ ), the system uniquely resides in the highly confined vacuum state where all spins take their maximum absolute values, Szℓ = Sσ ℓ,with background polarities σℓ ∈ {− 1, 1}. Defect strings, characterized by a reduced spin amplitude |Sz | < S ,form topological graphs constrained by the local ice rule. In this section, we establish exact duality mappings to statistical loop gas models, revealing a topological di-chotomy between S ≤ 3/2 and S ≥ 2.   
+
+> A. Defect graphs, ice rule compatibility, and configurational entropy
+> 1. Ice rule compatibility theorem
+
+To analyze the macroscopic defect statistics, we map the physical spin variables into a discrete effective flux. For each link ℓ, we define the shifted non-negative vari-able ϕℓ := Szℓ + S ∈ { 0, 1, . . . , 2S}. In this representa-tion, the maximal-amplitude vacuum states correspond to ϕℓ ∈ { 0, 2S} ≡ 0 (mod 2 S). Consequently, any link hosting an elementary defect ( |Sz | < S ) carries a non-zero Z2S flux ϕℓ ∈ { 1, 2, . . . , 2S − 1}.At each vertex, P 
+
+> ℓ∈r
+
+ϕℓ = P 
+
+> ℓ∈r
+
+Szℓ + 4 S. The ice rule (∇ · Sr = 0) strictly fixes the first sum to zero on both sublattices, giving the exact constraint P 
+
+> ℓ∈r
+
+ϕℓ = 4 S.Taking this equation modulo 2 S yields a weaker, purely local conservation law: 
+
+X
+
+> ℓ∈r
+
+ϕℓ ≡ 0 (mod 2 S). (20) Because 4 S ≡ 0 (mod 2 S), the ice rule implies Eq. (20), but the converse need not hold: the modular condition admits solutions with P 
+
+> ℓ∈r
+
+ϕℓ = 2 S, 6S, . . . that violate 
+
+Qr = 0. Given a configuration of defect links (those with ϕℓ ∈{1, . . . , 2S−1}) satisfying Eq. (20) at every vertex, a nat-ural question arises: can one always choose the values of the remaining vacuum links ( ϕℓ ∈ { 0, 2S}) so that the 8                                   
+
+> TABLE III. Ice rule compatibility for a fully excited vertex (k= 4). The interval [4 ,4(2 S−1)] lists the allowed range of P
+> ℓ∈rϕℓ.The ice rule requires P
+> ℓ∈rϕℓ= 4 S; for S≥2, additional multiples of 2 Sappear in the interval, producing monopole contamination. Spin SInterval Multiples of 2 S
+> in the interval Compatible? 1[4 ,4] 4✓
+> 3/2[4 ,8] 6✓
+> 2[4 ,12] 4,8,12 ×≥5/2[4 ,4(2 S−1)] 2S, 4S, . . . ×
+
+strict ice-rule constraint P 
+
+> ℓ∈r
+
+ϕℓ = 4 S holds at every vertex? Such a choice is called an ice-rule-compatible vacuum assignment .The answer reveals a topological dichotomy: 
+
+Ice rule compatibility theorem. —A Z2S -conserving de-fect configuration on the diamond lattice admits an ice-rule-compatible vacuum assignment—i.e., a choice of ϕℓ ∈ {0, 2S} on every non-defect link such that P 
+
+> ℓ∈r
+
+ϕℓ = 4 S at every vertex—if and only if S ≤ 3/2. 
+
+Proof. —Let k denote the number of defect bonds ( ϕℓ ∈{1, . . . , 2S−1}) at a vertex, and write Σ def for their par-tial sum. The remaining 4 − k vacuum bonds each carry 
+
+ϕℓ ∈ { 0, 2S}; if n+ of them take the value 2 S, the ice rule P 
+
+> ℓ∈r
+
+ϕℓ = 4 S becomes 
+
+n+ = 4S − Σdef 
+
+2S = 2 − Σdef 
+
+2S , (21) which must be solved with n+ ∈ { 0, 1, . . . , 4−k}.(i) k < 4 (at least one vacuum bond exists, so n+ is adjustable). Case by case: k = 0: trivially Σ def = 0 and 
+
+n+ = 2. k = 1: Σdef ∈ [1 , 2S−1] is never a multiple of 2 S, so k = 1 is forbidden by Z2S conservation itself. 
+
+k = 2: Σ def ∈ [2 , 4S−2]; the unique multiple of 2 S is 2 S
+
+itself, giving n+ = 1 ≤ 2, which is satisfiable. k = 3: Σdef /(2 S) ∈ { 1, 2} with n+ ∈ { 1, 0}, both in [0 , 1], again satisfiable. Thus every vertex with k < 4 admits an ice-rule-compatible vacuum assignment for all S.(ii) k = 4 (all bonds excited; no adjustable vac-uum bonds). Since ϕℓ ∈ [1 , 2S−1], we have Σ def ∈
+
+[4 , 4(2 S−1)]. With no vacuum bonds available, Eq. (21) has no free variable, and the strict ice rule demands Σdef = 4 S. The modular conservation law Σ def ≡ 0(mod 2 S) guarantees this if and only if 4 S is the unique multiple of 2 S within the kinematically allowed interval [4 , 4(2 S−1)] (Table III). For S ≤ 3/2, 4 S is the unique multiple, so Z2S conservation guarantees Qr = 0. For 
+
+S ≥ 2, extra multiples of 2 S appear in the interval, sat-isfying Z2S conservation but giving Qr̸ = 0— monopole contamination .Combining (i) and (ii) completes the proof. □
+
+This theorem establishes a sharp dichotomy. For S ≤
+
+3/2, the Z2S conservation law and the ice rule are strictly equivalent, enabling an exact mapping to a discrete lat-tice gauge theory. For S ≥ 2, this equivalence breaks down. As a concrete illustration, consider S = 2: a ver-tex with ( ϕ1, ϕ 2, ϕ 3, ϕ 4) = (1 , 1, 1, 1) gives Σ def = 4 = 2 S,while (3 , 3, 3, 3) gives Σ def = 12 = 6 S. Both satisfy Z4
+
+conservation but violate the ice rule Σ def = 4 S = 8, producing monopole charges Qr = ±4. This irreducible monopole contamination, paired with the exponential hi-erarchy of defect tensions that creates a bond-fugacity mismatch (detailed in Sec. V C), precludes a mapping to any standard Z2S gauge theory [33, 36, 40].  
+
+> 2. Configurational entropy
+
+The Boltzmann weight of a single defect link rela-tive to the vacuum background changes by a factor of 
+
+w(S−1) 2−S2
+
+= w1−2S . To evaluate the full loop gas partition function, we must additionally account for the macroscopic configurational entropy of the background spins. We employ Pauling’s independent-vertex approxima-tion [10]. In the vacuum, each vertex has  42
+
+ = 6valid ice-rule configurations out of 24 = 16 uncon-strained binary assignments, yielding a Pauling fraction 
+
+p0 = 3 /8. We now compute, following Ref. [20], the ratio W (C)/W (∅), where W (C) denotes the number of ice-rule-satisfying background spin configurations in the presence of a defect loop C of length |C|, and W (∅) is the corresponding count in the defect-free vacuum. For S ≥ 3/2, the defect retains a non-zero ampli-tude [ Szℓ = ±(S − 1) ̸ = 0], so each defect link carries an internal arrow (the sign of Sz ), making the loops di-rected. For such a directed loop with a fixed orientation, the two defect links at each loop vertex are completely determined—their ϕ values are fixed by the loop’s flux charge—leaving only the two background links as free variables. Each background link carries ϕ ∈ { 0, 2S}, and the ice rule P 
+
+> ℓ∈r
+
+ϕℓ = 4 S constrains the pair: if the defect links contribute Σ def to the vertex sum, the two background links must sum to 4 S − Σdef = 2 S, which is uniquely satisfied by one link carrying 0 and the other 2 S.There are exactly two such assignments (either ordering), so out of 2 2 = 4 background configurations, exactly two satisfy the ice rule, giving a vertex fraction ploop = 1 /2. This holds uniformly for all S. In addition, each defect link replaces a two-state vacuum link ( Szℓ = ±S) with a single fixed state, contributing a link-degeneracy fac-tor of 1 /2 per defect link. Combining both factors, the Pauling entropy reduction per loop link is 
+
+W (C)
+
+W (∅) ≈
+
+ 12 × ploop 
+
+p0
+
+|C|
+
+=
+
+ 12 × 43
+
+|C|
+
+=
+
+ 23
+
+|C|
+
+.
+
+(22) Together with the bare Boltzmann weight w1−2S per de-fect link, the effective fundamental string fugacity eval-uates to (see Secs. I and II of the Supplemental Mate-rial [41] for detailed derivations): ˜x1 = 23 w−(2 S−1) . (23) 9
+
+FIG. 2. Ice rule compatibility at a single z = 4 diamond-lattice vertex. Arrows indicate the bipartite A →B link ori-entation along which ϕℓ is defined. (a) For S = 3 /2, three fundamental defects ( ϕ = 1) converge and annihilate simul-taneously: the defect sum is 1 + 1 + 1 = 3 = 2S ≡ 0(mod 2 S), and the remaining vacuum link carries ϕ = 2 S,so the exact ice rule P 
+
+> ℓ∈r
+
+ϕℓ = 1 + 1 + 1 + 2 S = 4 S is pre-served. (b) For S = 2, four fundamental defects ( ϕ = 1) converge: P 
+
+> ℓ∈r
+
+ϕℓ = 1 + 1 + 1 + 1 = 4 = 2 S. (c) The spin configuration Szℓ corresponding to (a); the vertex satis-fies P 
+
+> ℓ∈r
+
+Szℓ = 0, confirming that the ice rule is preserved. (d) The spin configuration corresponding to (b); the vertex gives P 
+
+> ℓ∈r
+
+Szℓ = −4̸ = 0, violating the ice rule despite the 
+
+Z2S modular condition being satisfied. The four bonds are drawn in a planar cross for clarity; on the diamond lattice they point toward the corners of a regular tetrahedron. 
+
+The internal degrees of freedom n hosted by each con-tinuous loop depend on S. For S = 1, the defect is 
+
+Szℓ = 0, yielding undirected loops ( n = 1). For S ≥ 3/2, as noted above, the non-zero defect amplitude preserves the sign of the displacement, yielding chiral, directed loops that host n = 2 distinct physical states. 
+
+B. Exact mapping to the 3-state Potts model for 
+
+S = 3 /2
+
+For the specific case of S = 3 /2, our ice rule com-patibility theorem guarantees that the geometric z = 4 lattice constraints and the topological Z3 flux conserva-tion are matched. There are no spurious monopoles; the exact Z3 discrete gauge theory operates unhindered. The fundamental defects Szℓ = ±1/2 naturally act as conjugate strings carrying fluxes ϕ = 1 and ϕ = 2 ≡−1 (mod 3). The strict Z3 conservation geometrically permits degree-2 pass-throughs, degree-4 crossings, and uniquely, degree-3 junctions where three fundamental strings converge [ P 
+
+> ℓ∈r
+
+ϕℓ = 1 + 1 + 1 = 3 ≡ 0 (mod 3)]. This geometry accommodates the simultaneous local an-nihilation of exactly three topological strings at a single vertex [Fig. 2(a,c)]. The vertex weights are determined by the ice-rule state counts at each vertex degree. In the defect-free vacuum (degree d0 = 0), each vertex has  42
+
+ = 6 valid config-urations out of 2 4 = 16 possibilities, giving a Pauling fraction z(0) = 6. At a degree-2 (pass-through) ver-tex, the two defect links are fixed by the loop direction, and the two remaining vacuum links must satisfy the ice rule, giving zdir (2) /z (0) = 2 /6 = 1 /3. At a degree-3 (cubic junction) vertex, the ice rule forces all three de-fect currents to have the same orientation ( |Σdef | = 3, i.e., all ingoing or all outgoing), which is more restric-tive than Z3 conservation alone; this halves the allowed configurations relative to the degree-2 baseline, giving 
+
+zdir (3) /z (0) = 1 /6. At a degree-4 (crossing) vertex, all four bonds are occupied by defects (no vacuum links re-main); the directed ice rule then uniquely fixes the de-fect configuration, giving zdir (4) /z (0) = 1 /6. The ver-tex fugacities, normalized relative to the degree-2 weight, are thus λ3 = (1 /6) /(1 /3) 3/2 = √3/2 ≈ 0.866 (penalty at cubic junctions) and λ4 = (1 /6) /(1 /3) 2 = 3 /2 [en-hancement at crossings; the denominator is (1 /3) 2 be-cause a crossing replaces two independent degree-2 ver-tices]. Utilizing the standard topological graph identity P d · Vd = 2 |G|, the complete monopole-free partition function evaluates exactly as: 
+
+Zv=0 = Zvac 
+
+X
+
+> G
+
+2Ncomp (G) ˜x|G| 
+
+> 1
+
+λV3(G)3 λV4(G)4 , (24) where Zvac is the partition function of the vacuum sector, in which every link carries maximum amplitude |Szℓ | =
+
+S subject to the ice rule. Each vacuum configuration contributes a Boltzmann weight w2N S 2
+
+, and the Pauling approximation (Sec. V A 2) yields an ice-rule degeneracy (3 /2) N , so that Zvac ≈ w2N S 2
+
+(3 /2) N . The sum runs over all graphs G on the diamond lattice whose edges carry directed Z3 fluxes satisfying the conservation law P 
+
+> ℓ∈r
+
+ϕℓ ≡ 0 (mod 3) at every vertex r [Eq. (20)]; |G|
+
+is the total number of edges, V3(G) and V4(G) are the numbers of degree-3 and degree-4 vertices, and Ncomp (G)is the number of connected components, each carrying two chiral orientations. This graph ensemble is isomorphic to the high-temperature graphical expansion of the classical 3-state Potts model on the diamond lattice [35] (see Secs. II and IV of the Supplemental Material [41] for detailed derivations), 
+
+Z3-Potts = X 
+
+> {σr∈Z3}
+
+exp 
+
+
+
+K X
+
+> ⟨rr ′⟩
+
+δσr ,σ r′
+
+
+
+. (25) The standard Fourier decomposition on Z3 expands each bond weight as eKδ σ,σ ′ = a0[1+ t(ωσ−σ′
+
++ω−(σ−σ′))] with 
+
+ω = e2πi/ 3, a0 = ( eK + 2) /3, and t = ( eK − 1) /(eK + 2). Summing over the spin variables, the Z3 flux conserva-tion at every vertex generates exactly the same graph ensemble as above, yielding 
+
+Z3-Potts = a2N 
+
+> 0
+
+· 3N X
+
+> G
+
+2Ncomp (G) t|G|. (26) 10                                    
+
+> FIG. 3. Hierarchical fusion cascade for S≥2. Arrows indicate the bipartite A →B link orientation along which ϕℓis defined. Because the exact ice rule on the z= 4 diamond lattice forbids simultaneous annihilation of 2 S≥4 fundamental defects at a single vertex [Fig. 2(b,d)], the defects must fuse sequentially through 2 S−2 intermediate vertices. At each vertex, an incoming fundamental defect ( ϕ= 1) merges with the accumulated intermediate defect, incrementing the effective charge by one. The displayed link labels ϕℓalternate between ϕand 2 S−ϕalong the chain because vertices alternate between A and B sublattices; on an A →B link where the effective defect charge ϕpropagates from B to A, one has ϕℓ= 2 S−ϕ. The figure illustrates the half-odd-integer case; for integer Sthe same cascade structure applies with uniform link orientations. The resulting bridge penalty Pbridge =Q2S−2
+> ϕ=2 xϕ[Eq. (28)] is exponentially suppressed in S.Open and filled circles denote A- and B-sublattice vertices, respectively. The cascade is drawn schematically as a linear chain; on the actual diamond lattice the backbone follows a zigzag path with tetrahedral bond angles.
+
+The identification with the spin-ice expansion is estab-lished by the correspondence t = ˜ x1; the local geometric weights λ3 and λ4 act merely as short-distance renor-malizations of the bare coupling and do not alter the universality class. Since the Kronecker delta on Z3 satis-fies δσ,σ ′ = 13 [1 + 2 cos(2 π(σ − σ′)/3)], the 3-state Potts model is equivalent to the 3-state clock model—the iden-tity cos(2 π/ 3) = cos(4 π/ 3) ensures that all non-identical spin pairs receive equal weight, making the clock interac-tion identical to the Potts Kronecker delta. This equiva-lence holds for q ≤ 3 but fails for q ≥ 4, where different angular separations yield distinct weights (cf. Sec. V C). In the continuum Landau-Ginzburg-Wilson effective action, the Z3 defect-string fusion generates a symmetry-allowed cubic invariant ( ∼ Φ3). By the Landau criterion, a cubic invariant precludes any continuous phase transi-tion; indeed, extensive Monte Carlo studies have estab-lished that the 3-state Potts model in three dimensions undergoes a first-order transition [42, 43]. The graph-ical mapping derived above thus provides a theoretical explanation for the first-order phase transition observed numerically by Pandey, Kundu, and Damle for S = 3 /2[21]. The location of the first-order transition can be esti-mated analytically via the Bethe–Peierls (cavity) approx-imation [44]. The idea is to replace the diamond lattice (z = 4) by the Bethe lattice (Cayley tree) with the same coordination number, on which the partition function of the q = 3 Potts model can be evaluated exactly via a single-variable cavity recursion. On this tree, each site has b = z − 1 = 3 “children”; the cavity message—the ratio r := P (σ = σ0)/P (σ = σ1) ( σ1̸ = σ0) of the proba-bility that a boundary spin matches a reference state σ0
+
+to that of any single non-reference state σ1 (the q−1 non-reference states are equivalent by the Sq symmetry of the Potts model)—satisfies the self-consistency equation 
+
+r =
+
+ eK r + 2 
+
+r + eK + 1 
+
+b
+
+, (27) where K is the Potts coupling and b = 3. The disordered solution r = 1 is always present; for the q = 3 Potts model, a second solution r∗ > 1 (the ordered phase) ap-pears discontinuously—a hallmark of a first-order tran-sition driven by the cubic Φ 3 invariant. Equating the Bethe free energies of the two solutions (see Sec. VII of the Supplemental Material [41]) determines the coexis-tence point tc ≈ 0.319, where t = ( eK − 1) /(eK + 2) is the Potts high-temperature parameter identified with the spin-ice fugacity via t = ˜ x1 = 23 w−2. Converting back to the spin-ice fugacity gives wc = p2/(3 tc) ≈ 1.45, or equivalently w2 ≈ 2.09 (note that Ref. [21] uses w to de-note what corresponds to w2 in our convention). This overestimates the Monte Carlo value w2 ≈ 2.02 [21] by only ∼ 3.5%, a level of accuracy expected for the Bethe approximation on a z = 4 lattice: at a first-order tran-sition the correlation length remains finite, so the ab-sence of loops on the Bethe lattice—its only structural deficiency—has a minor quantitative effect (see Sec. VII of the Supplemental Material [41] for the full derivation including free-energy evaluation).         
+
+> C. S≥2: Emergent XY universality
+> 1. Breakdown of the clock mapping and continuous U(1)
+> baseline
+
+For S ≥ 2, the situation changes qualitatively. As shown by the ice rule compatibility theorem (Sec. V A), the Z2S Gauss law no longer coincides with the physical 11 ice rule due to monopole contamination. Furthermore, the hierarchy of defect tensions creates a bond-fugacity mismatch. The natural comparison model is the Z2S
+
+clock model [37] (rather than the Potts model), because the defect charges ϕ = 1 , 2, . . . , 2S−1 naturally corre-spond to the clock-model current harmonics, which dis-tinguish different angular separations—a structure ab-sent in the Potts model that treats all non-identical states equally. In a standard Z2S clock model, higher-current harmonics yield polynomial fugacity decay ( tm ∼ Km/m !at high temperature), whereas in the spin-ice model each defect level carries an independent chemical potential with fugacities xϕ := w−ϕ(2 S−ϕ) (ϕ = 1 , . . . , 2S−1) that decay exponentially. A key consequence is the arithmetic prohibition of the cubic junction. For S = 3 /2 (2 S = 3), three fundamental strings satisfy 1+1+1 = 3 ≡ 0 (mod 3), permitting a cu-bic vertex that maps to the symmetry-breaking Φ 3 invari-ant driving the first-order Potts transition (Sec. V B). For 
+
+S ≥ 2 (2 S ≥ 4), however, 1 + 1 + 1 = 3 ̸ ≡ 0 (mod 2 S), so a cubic junction composed solely of fundamental strings is strictly forbidden by the Z2S conservation law itself. This arithmetic obstruction inherently suppresses the Φ 3
+
+invariant that would otherwise drive a first-order transi-tion. A second, purely geometric, obstruction emerges in the annihilation of fundamental strings. In a Z2S clock model, the modular conservation law P 
+
+> ℓ∈r
+
+nℓ ≡ 0(mod 2 S) allows up to z = 4 fundamental currents to merge at a single vertex whenever 2 S ≤ z; in particular, for S = 2 ( q = 4), all four fundamentals annihilate locally with no intermediate bonds and unit penalty (Table IV). Even for S > 2, a short cascade of only ⌈S−2⌉ intermedi-ate bonds carrying odd currents n = 3 , 5, . . . suffices (see Sec. V of the Supplemental Material [41]). In the spin-ice model, by contrast, the exact ice rule P 
+
+> ℓ∈r
+
+ϕℓ = 4 S is more restrictive than the modular condition: it forbids simultaneous merging even for 2 S = 4 [Fig. 2(b,d)] and forces a sequential one-at-a-time fusion through 2 S − 3intermediate bonds: the first two fundamental strings (ϕ = 1) merge at a vertex to produce a ϕ = 2 inter-mediate bond, a third fundamental merges with this to produce ϕ = 3, and so on until all 2 S fundamentals have been absorbed (Fig. 3). These combined obstructions— monopole contamination, exponential bond-fugacity mis-match, and the stringent cascade geometry—prevent a mapping to a discrete Z2S clock model and effectively promote the discrete Gauss law to a continuous U (1) con-servation law [45, 46]. Quantitatively, in the spin-ice cascade the 2 S funda-mental strings route through 2 S − 2 intermediate ver-tices, connected by 2 S − 3 intermediate bonds carrying progressively heavier defects ϕ = 2 , 3, . . . , 2S − 2 (Fig. 3; see Sec. I 3 of the Supplemental Material [41] for a self-contained derivation). Each intermediate bond incurs a fugacity xϕ = w−ϕ(2 S−ϕ), so the total statistical cost— the bridge penalty —is the product of all intermediate fu-                                               
+
+> TABLE IV. Number of intermediate bonds and total cascade penalty for annihilating 2 Sfundamental strings on the dia-mond lattice ( z= 4). Each row shows the number of inter-mediate bonds connecting the fusion vertices and the product of their fugacities (the “penalty”); a penalty of 1 means no intermediate bond is needed. For S≤3/2 the two models agree and no cascade is needed. For S≥2 they diverge: the clock model requires at most ⌈S−2⌉bonds with polynomially suppressed fugacities tn(Sec. III of the Supplemental Mate-rial [41]), while the spin-ice model requires 2 S−3 bonds with exponentially suppressed fugacities xϕ=w−ϕ(2 S−ϕ); see the text for details.
+> Z2Sclock Spin ice
+> Spin Sbonds penalty bonds penalty 101013/201012011w−4
+> 5/21t32w−12
+> 31t33w−25
+> 7/22t3t54w−44
+
+gacities: 
+
+Pbridge =
+
+> 2S−2
+
+Y
+
+> ϕ=2
+
+xϕ = w− P2S−2 
+
+> ϕ=2 ϕ(2 S−ϕ)
+
+= w−(2 S−3)(2 S−1)(2 S+4) /6. (28) For S = 2, Pbridge = w−4; for S = 5 /2, Pbridge = w−12 ;and the penalty grows rapidly with S, as ∼ e−c S 3
+
+at fixed w.In the Z2S clock model, by contrast, the weaker modu-lar conservation P 
+
+> ℓ∈r
+
+nℓ ≡ 0 (mod 2 S) (rather than the exact ice rule) permits a qualitatively shorter cascade. For 2 S ≤ z = 4 (i.e., S ≤ 2), all 2 S fundamental currents annihilate at a single vertex (1 + · · · + 1 
+
+| {z }
+
+> 2S
+
+= 2 S ≡ 0), so no intermediate bond is needed and the penalty is unity. For S > 2, a cascade is required but is shorter than in the spin-ice model. For example, at S = 3 ( q = 6), three fundamental currents ( n = 1 each) merge at the first ver-tex to produce an intermediate bond with current n = 3 (using three of the four links); at the second vertex, this intermediate bond meets three more fundamentals, and 3+1+1+1 = 6 ≡ 0 (mod 6) terminates the cascade with just one intermediate bond (carrying n = 3, with fugac-ity t3), compared to 2 S − 3 = 3 intermediate bonds in the spin-ice model. In general, the clock-model cascade requires only ⌈S − 2⌉ intermediate bonds with polynomi-ally suppressed fugacities (Sec. III of the Supplemental Material [41]). A comparison of the two cascade costs is given in Table IV. Because the cascade is exponentially suppressed by the spin stiffness, at leading order the active macroscopic 12 graph ensemble is stripped of degree-3 branching junc-tions and collapses to fundamental strings forming closed directed loops and degree-4 loop crossings. This re-stricted ensemble is topologically isomorphic to the high-temperature graphical expansion of the continuous clas-sical 3D XY model [39], differing only in short-distance vertex weights.    
+
+> 2. Exact decomposition and emergent 3D XY universality
+
+To elevate this continuous U (1) baseline into an ana-lytical proof of the 3D XY universality class for S ≥ 2, we construct an exact decomposition of the vacuum-normalized partition function ˜Zice := Zv=0 /Z vac , where 
+
+Zvac is the partition function restricted to the vacuum sector in which every link carries the maximal amplitude 
+
+|Szℓ | = S subject to the ice rule (i.e., the Z2S -confined phase with no defects). The ratio ˜Zice thus measures the total statistical weight of all defect configurations relative to the defect-free background. We decompose ˜Zice into a continuous U (1) sector and an exponentially suppressed discrete Z2S correction. To analytically isolate the continuous U (1) sector from the discrete Z2S perturbations, we note that at crossing vertices (degree 4), the S ≥ 2 spin ice evaluates to a uni-versal constant Pauling weight of λ4 = (1 /6) /(1 /3) 2 =3/2 relative to two independent passing strings. We thus analytically define a decorated XY model , denoted ˜Z(3 /2)  
+
+> XY
+
+,which employs the ice-model bond fugacities ˜ x|n| and ex-act U (1) current conservation at every vertex (the same Gauss law as the ice rule), while additionally enhancing every crossing vertex by a factor β = 3 /2. Since λ4 = 3 /2 is a universal constant independent of S and w, the crossing decoration acts as a short-range quartic composite operator whose bare coupling is the universal constant λ4 = 3 /2 and which flows to zero under the RG. Because ˜Z(3 /2)  
+
+> XY
+
+employs the same bond fugacities ˜ x|n| as the ice model, every non-cascade graph contributes identical weight in both partition func-tions. The only remaining microscopic configurations in the spin-ice model not captured by the decorated XY 
+
+model are the Z2S annihilation cascades analyzed above. Their total contribution δZ cascade is controlled by the bridge penalty Pbridge [Eq. (28)], which is exponentially suppressed in 1 /T . This establishes the exact decompo-sition (see Sec. VI of the Supplemental Material [41] for the complete graph-by-graph construction): ˜Zice = ˜Z(3 /2)  
+
+> XY
+
++ δZ cascade . (29) The physical content of this decomposition is as fol-lows. The decorated XY model ˜Z(3 /2)  
+
+> XY
+
+captures the en-tire U (1)-conserving sector of the spin-ice loop gas, and shares the 3D XY universality class (as shown below). The cascade contribution δZ cascade ≥ 0 is the sole source of discrete Z2S symmetry breaking, and its bare cou-pling is exponentially suppressed by the lattice geome-try. Combined with renormalization group (RG) theory, this decomposition establishes that ˜Zice belongs to the 3D XY universality class. First, the crossing decoration operator βV4 introduced in the decorated XY model preserves the continuous 
+
+U (1) current conservation at every vertex and therefore corresponds to a U (1)-symmetric irrelevant perturbation. At the 3D XY critical fixed point, the leading correction-to-scaling exponent is ω ≈ 0.79 [47], so the scaling di-mension of this operator is ∆ = 3 + ω ≈ 3.79 > 3. Like-wise, the differences between the ice-model bond fugac-ities ˜ x|n| and the Bessel ratios τ|n| are U (1)-symmetric short-range perturbations involving higher-current oper-ators ( |n| ≥ 2), which are even more strongly irrelevant at the XY fixed point. Being irrelevant, the RG flow guarantees that the decorated XY model flows to the 3D XY universality class. Second, the cascade correction δZ cascade is the sole mechanism breaking the emergent continuous U (1) sym-metry down to the discrete Z2S symmetry. At the 3D XY 
+
+fixed point, the leading discrete crystalline anisotropy cos(2 Sθ ) is a dangerously irrelevant operator [37, 48] with scaling dimension ∆ 2S ≥ ∆4 ≈ 3.11 > 3 (since ∆ p is a monotonically increasing function of p and 2 S ≥ 4 for 
+
+S ≥ 2; the value ∆ 4 ≈ 3.11 is established by Monte Carlo RG studies [48, 49]). The exact decomposition shows that the bare coupling of this dangerously irrelevant operator is exponentially suppressed [O(e−c/T )] by the lattice geometry [Eq. (28)]. The combination of this geometrically enforced initial suppression and the RG irrelevance washes out the un-derlying discreteness at macroscopic length scales, driv-ing the defect gas into the 3D XY fixed point. This provides strong analytical evidence that the deconfine-ment transitions of the S ≥ 2 pyrochlore spin ice belong to the 3D XY universality class.      
+
+> 3. Quantitative estimate of wcvia O(2) loop gas mapping
+
+Because the discrete anisotropy is highly suppressed and irrelevant for S ≥ 2, the system asymptotes to a continuous O(2) symmetry near criticality. We can thus quantitatively estimate the deconfinement transi-tion point by mapping the dilute directed-loop gas to the high-temperature graphical expansion of the clas-sical 3D XY model on the diamond lattice [39]. The transition occurs when the fundamental string fugac-ity ˜ x1 = 23 w−(2 S−1) reaches the critical fugacity τ1 := 
+
+I1(KXY c )/I 0(KXY c ), where KXY c is the 3D XY critical coupling on the diamond lattice. Equating ˜ x1 = τ1, we obtain the general scaling formula 
+
+wc(S) = 
+
+ 23 τ1
+
+ 12S−1
+
+, S ≥ 2. (30) From our Monte Carlo determination [38] KXY c ≈ 0.769 [i.e., T XY c = 1.30032(3)], we obtain τ1 ≈ 0.359 and 13 2/(3 τ1) ≈ 1.859, giving wc(S) ≈ (1 .859) 1/(2 S−1) . As 
+
+S → ∞ , the critical fugacity asymptotes to wc → 1(i.e., μ → 0), consistent with the classical continuous-spin limit: as S → ∞ the discrete spin variable Szℓ ∈{− S, . . . , S } approaches a continuous one, the Z2S flux quantization becomes infinitely fine, and the discrete 
+
+Z2S -confined phase vanishes; any infinitesimal anisotropy 0 < μ ≪ 1 (i.e., w ≲ 1) within the present model then suffices to stabilize the continuous U (1) Coulomb liquid. The geometric suppression of the Z2S fusion cascade, guaranteed by the exact decomposition, ensures that the continuous O(2) approximation underlying this formula remains accurate for all S ≥ 2. The complete classifica-tion of phases, flux quantization, and critical phenomena obtained in the monopole-free limit is collected in Ta-bles I and II and illustrated schematically in Fig. 1.  
+
+> VI. FINITE-TEMPERATURE EFFECTS: MAGNETIC MONOPOLES, STRING SEVERING, AND CROSSOVERS
+
+The analysis in the previous sections relied on the strict enforcement of the local ice rule, Qr = 0. This monopole-free limit is realized only at zero temperature with respect to the exchange coupling ( T /J → 0). At any realistic fi-nite temperature T > 0, the finite exchange J permits the thermal excitation of magnetic monopoles [8, 50], characterized by a small but strictly non-zero fugacity 
+
+v := exp( −J/ 2T ) ≪ 1. In this section, we return to the exact partition func-tion generated in Eq. (3). It is well established on gen-eral grounds that three-dimensional topological order is fragile against thermal fluctuations [27, 51, 52]. Building on this principle, we show concretely that the thermal excitation of monopoles breaks the emergent continuous symmetry in the small-w regime, and acts as a topo-logical severing of defect strings in the large-w regime [20, 53], destroying the macroscopic topological invari-ants and rounding the phase transitions into crossovers for all S (with the exception of S = 3 /2).   
+
+> A. Small-wregime: Emergence of a symmetry-breaking sine-Gordon field
+
+To properly capture the effect of thermal monopoles in the small-w limit (Sec. IV), we relax the constraint in the partition function by reinstating the sum over local divergences. The partition function in the dual phase field representation becomes: 
+
+Z = X 
+
+> {Qr}
+
+X 
+
+> {Szℓ}
+
+Z
+
+Dθ
+
+exp −i X
+
+> r
+
+θr (∇ · Sr − Qr )
+
+!
+
+vP  
+
+> rQ2
+> r
+
+wP 
+
+> ℓ(Szℓ)2
+
+.
+
+(31) Following the exact discrete integration by parts in-troduced previously, the exact spin sector decouples and maps to the local link weights WS (∇θℓ) as before. The new addition is the unconstrained independent summa-tion over the local discrete monopole charges Qr at every single site, which we define as the local site action M (θr ): 
+
+M (θr ) = X 
+
+> Qr∈Z
+
+vQ2 
+
+> r
+
+eiQ r θr . (32) Because each diamond lattice vertex connects exactly four links, the local divergence Qr is the algebraic sum of four spin variables. Even for half-integer spins, the sum of four half-integers is an integer, so Qr ∈ Z for all S.In the low-temperature regime v ≪ 1, this sum is dom-inated by the fundamental monopole excitations Qr =
+
+±1. Truncating at leading order: 
+
+M (θr ) ≈ 1 + ve iθ r + ve −iθ r + O(v4)= 1 + 2 v cos( θr ) ≈ exp(2 v cos θr ). (33) Taking the logarithm, we find that thermal monopoles generate a local sine-Gordon potential at every lattice vertex. For integer spins ( S ≥ 1), the effective action evaluates to: 
+
+Seff [θ] ≈ − 2w X
+
+> ℓ
+
+cos( ∇θℓ) − 2v X
+
+> r
+
+cos( θr ). (34) The generated term −2v cos( θr ) acts as a uniform ex-ternal magnetic field of strength h ∝ v applied along the 
+
+θ = 0 direction of the emergent 3D XY model. This field explicitly breaks the continuous U (1) symmetry and is a relevant perturbation that gaps the Goldstone modes and removes the thermodynamic singularity. Consequently, the 3D XY phase transition is rounded into a smooth crossover at any finite temperature T > 0 [20, 53]. For half-integer spins ( S ≥ 1/2), where the unper-turbed system resides in the U (1) Coulomb liquid phase, the effective action acquires the same term. This con-firms the standard Debye-H¨ uckel screening mechanism [50, 54]: the monopole plasma introduces a screening length that exponentially cuts off the algebraic dipo-lar correlations, smoothly converting the Coulomb liquid into a trivial paramagnet without a phase transition.   
+
+> B. Large-wregime: Generalized directed loop gas and topological string severing
+
+We now symmetrically generalize the large-w directed loop gas expansion to finite temperatures. The geomet-ric consequence of thermally activating local monopoles (Qr̸ = 0) is that the defect strings are no longer topo-logically forced to form closed continuous loops. The directed strings can now terminate, creating open end-points ∂G that correspond geometrically to the locations of the thermal monopoles [55, 56] (Fig. 4). The loop gas partition function now expands over all directed graphs G on the diamond lattice, which include 14                             
+
+> FIG. 4. Defect string topology on the diamond lattice. Ar-rows indicate the bipartite A →B link orientation along which
+> ϕℓis defined. Solid lines denote defect links carrying ϕℓ= 1 or
+> ϕℓ= 2 S−1 (alternating due to the A →B sublattice conven-tion); dashed lines denote vacuum links ( ϕℓ= 0 or ϕℓ= 2 S). (a) At v= 0 (monopole-free ice rule), defect strings form closed directed loops with Qr= 0 at every vertex. (b) At finite v > 0, thermal monopoles ( |Qr|= 1) act as string end-points, severing closed loops into open segments. This maps to an effective magnetic field heff ≈ √3vin the emergent O(2) (i.e., 3D XY ) spin model [Eq. (36)]. Open and filled circles denote A- and B-sublattice vertices, respectively. The hexag-onal loop shown is the shortest closed loop on the diamond lattice, drawn schematically in two dimensions; on the actual lattice it forms a chair-shaped six-membered ring.
+
+both closed loops and open string segments terminated by monopole endpoints. For S ≥ 3/2, the endpoint ver-tex weight is computed as follows. At a monopole end-point, one of the four links carries a fundamental defect (ϕ = 1, fixed), while the remaining three links are in the vacuum sector ( ϕ ∈ { 0, 2S}). The monopole condition P 
+
+> ℓ∈r
+
+ϕℓ = 4 S ± 1 (i.e., |Qr | = 1) constrains how many of the three vacuum links carry ϕ = 2 S versus ϕ = 0. In the defect-free vacuum, each vertex has  42
+
+ = 6 valid ice-rule configurations (those with exactly two links at 
+
+ϕ = 2 S and two at ϕ = 0). Of these 6 configurations, exactly ˆ z(1) = 3 are compatible with one link being pro-moted to a defect while maintaining |Qr | = 1 (see Sec. I of the Supplemental Material [41]). The endpoint vertex weight is therefore W1 = ˆ z(1) /6 = 1 /2. By the same nor-malization convention used for the junction and crossing weights ( λd = Wd/W d/ 22 ), the endpoint correction factor is λ1 = W1/√W2 = (1 /2) /p1/3 = √3/2. Including the monopole fugacity v, each endpoint contributes a factor 
+
+vλ 1 = √3 v/ 2, giving the generalized dilute loop gas par-tition function: 
+
+Zv> 0
+
+Zvac 
+
+= X
+
+> {G}
+
+2Ncomp (G) ˜x |G|
+
+> 1
+
+√3 v
+
+2
+
+!|∂G |
+
+, (35) where |G| is the total number of edges, |∂G | is the num-ber of monopole endpoints (string termination sites with 
+
+|Qr | = 1), and Ncomp (G) is the number of connected components—both closed loops and open strings—each carrying two chiral orientations on the directed diamond lattice. This graphical expansion maps exactly to the high-temperature expansion of a classical O(2) (i.e., 3D 
+
+XY ) spin model in the presence of a uniform external magnetic field h. In the standard O(2) high-temperature expansion, an external field h assigns a weight h/ 2 to each string endpoint. Equating h/ 2 = √3 v/ 2 immedi-ately yields the effective field strength: 
+
+heff ≈ √3 v. (36) This result extends to S = 1 ( n = 1, undirected loops mapping to the 3D Ising model). Unlike directed loops at 
+
+S ≥ 3/2, the S = 1 defect Szℓ = 0 is directionless: ϕ = 1 is its own conjugate under ϕ → 2S−ϕ, so a single defect link can terminate at either a Q = +1 or Q = −1 monopole. This doubles the valid vacuum configurations at each endpoint from ˆ z(1) = 3 to 3 + 3 = 6, and hence the end-point weight from W1 = 1 /2 to W1 = 1 (see Ref. [20] for the detailed S = 1 derivation). The resulting endpoint factor √3v (doubled relative to the directed case √3v/ 2) precisely compensates for the halved magnetic coupling in the Ising convention (exp( hσ ) ∝ 1 + tanh( h)σ), yield-ing the same universal effective field: heff ≈ √3v.Thus, irrespective of S, thermal monopoles act as a uniform external magnetic field applied to the emergent gauge variables. This field severs the defect strings, al-lowing the confined topological loops to terminate in the bulk. The macroscopic flux quantization laws established in Sec. III are thereby destroyed, rendering all topological sectors adiabatically connected [20, 57].  
+
+> C. Order-dependent fate of topological transitions
+
+The thermodynamic consequence of this string-severing field depends on the order of the monopole-free phase transition. On the one hand, for continuous tran-sitions ( S = 1 and S ≥ 2), any finite symmetry-breaking field conjugate to the order parameter destroys a second-order critical point [27, 45]; the continuous deconfinement transitions are therefore rounded into smooth crossovers for any v > 0. On the other hand, for the first-order transition ( S = 3 /2), the situation is qualitatively dif-ferent: because the transition involves a discontinuous jump between two macroscopic minima separated by a free-energy barrier (driven by the relevant cubic invari-ant), a coexistence line is expected to persist under a weak symmetry-breaking field. Therefore, the first-order transition unique to S = 3 /2is predicted to survive at finite temperatures as a genuine thermodynamic phase boundary [Fig. 1(b)]. The situa-tion is analogous to the liquid–gas transition: at zero external field ( v = 0), the free energy has two degen-erate minima (ordered and disordered phases) separated by a barrier. A weak symmetry-breaking field ( v > 0) tilts the free-energy landscape but cannot eliminate the barrier, so the coexistence line should persist. As the monopole fugacity v increases, the free-energy barrier shrinks and vanishes at a finite critical monopole density 
+
+vc, where the two minima merge into one. At this point, 15 the first-order line terminates at a critical endpoint, anal-ogous to the liquid-gas critical point and expected to be-long to the 3D Ising universality class. To estimate vc,we extend the Bethe–Peierls analysis of Sec. V B by in-cluding the monopole-induced symmetry-breaking field 
+
+h, which enters as s = ( eh − 1) /(eh + 2) = √3v/ 2 [cf. Eq. (35)]. The external field modifies the cavity recursion to r = eh[( eK r + 2) /(r + eK + 1)] b, where the prefactor eh
+
+biases the cavity message toward the field-favored state. The critical endpoint—the point at which the free-energy barrier just vanishes—is determined by three simultane-ous conditions on the iterative map g(r): (i) g(r) = r
+
+(self-consistency of the cavity message), (ii) g′(r) = 1 (the ordered and disordered fixed points have merged, i.e., marginal stability), and (iii) g′′ (r) = 0 (the inflection point of g(r) − r vanishes, signifying the disappearance of the intervening barrier). These three equations for the three unknowns ( Kc, h c, r c) can be solved in closed form, yielding eKc = ( √33 − 1) /2 and hc ≈ 0.010, corre-sponding to vc ≈ 0.004 or Tc/J ≈ 0.09 (see Sec. VII of the Supplemental Material [41] for the complete algebraic derivation). The small value of hc reflects the weakness of the first-order transition at q = 3: since q = 3 is the smallest integer for which the Potts model exhibits a first-order transition in three dimensions, the free-energy barrier is intrinsically shallow and easily destroyed by a weak perturbation. Indeed, the Bethe–Peierls approx-imation systematically overestimates the barrier height because it neglects the long-wavelength fluctuations that further erode the shallow free-energy landscape. Monte Carlo simulations of the 3D 3-state Potts model in an external ordering field on the simple cubic lattice [58, 59] have established that the first-order coexistence line ter-minates at a critical endpoint in the 3D Ising universality class at a critical field hc = 7 .75(10) × 10 −4—more than an order of magnitude smaller than the Bethe–Peierls es-timate hc ≈ 0.010. On the diamond lattice relevant to the present pyrochlore problem, where the lower coordi-nation number ( z = 4 vs. z = 6) amplifies thermal fluc-tuations, the true critical field is expected to be smaller still. This critical endpoint provides a distinctive exper-imental signature: in candidate S = 3 /2 pyrochlore ma-terials, the specific heat and susceptibility should exhibit Ising-like critical scaling at an isolated temperature, of-fering a direct thermodynamic probe of the underlying string-fusion physics. Notably, unlike the liquid-gas-type critical endpoints in conventional S = 1 /2 spin ice, which require a finely tuned external magnetic field [8], this crit-ical endpoint occurs at strictly zero external field. The symmetry-breaking field is intrinsically generated by the emergent monopole plasma, making the S = 3 /2 py-rochlore spin ice a rare example of a system that spon-taneously generates its own topological critical endpoint through thermal fluctuations alone.  
+
+> VII. MONTE CARLO VERIFICATION
+
+To test the analytical predictions of the preceding sec-tions at finite temperatures, we perform classical Monte Carlo (MC) simulations of the Hamiltonian (1) on finite pyrochlore lattices comprising 2 N = 16 L3 spins (where 
+
+N = 8 L3 is the number of diamond-lattice vertices) and periodic boundary conditions. Throughout this section we fix J = 1 as the energy unit.  
+
+> A. Simulation method
+
+A standard MC sweep consists of 2 N single-spin heat-bath updates. After 10 6 thermalization sweeps, measure-ments are accumulated over 5 × 10 6 sweeps. The primary thermodynamic observable is the specific heat per spin, 
+
+c := 12N
+
+⟨E2⟩ − ⟨ E⟩2
+
+T 2 , (37) whose peaks trace the crossover scales. To unambigu-ously distinguish collective topological phenomena from non-cooperative local single-ion physics, we systemati-cally compute the thermal occupancy fraction of each spin amplitude, 
+
+ns := 12N
+
+X
+
+> ℓ
+
+⟨δ|Szℓ |,s ⟩, (38) i.e., the fraction of links carrying amplitude |Szℓ | = s, av-eraged over all 2 N links and Monte Carlo configurations.     
+
+> B. Integer spins ( S= 1 ,2,3)
+
+We compute the specific heat as a function of μ at low temperatures ( T = 0 .2) for S = 1, 2, and 3 with sys-tem sizes L = 2, 4, and 8; Figs. 5(a) and 5(b) show the results for S = 2 and S = 3, respectively. In all three cases, c exhibits prominent peaks whose positions are in reasonable agreement with the analytically predicted crossover scales μ = −T ln wc1 and μ = −T ln wc2, where 
+
+wc1 and wc2 are the monopole-free critical fugacities es-timated in Secs. IV and V, respectively. Notably, the peak heights do not diverge with increasing L, confirm-ing that the monopole-free phase transitions are rounded into smooth crossovers at finite temperature, as predicted by the monopole-screening analysis of Sec. VI. For S = 1, the results are fully consistent with the detailed numeri-cal study of Ref. [20], which demonstrated that the spe-cific heat peaks saturate to finite values in the thermo-dynamic limit and that the Z2 deconfinement transition (which maps onto the ice-VII to ice-X transformation in high-pressure water ice) is a continuous crossover driven by Debye–H¨ uckel monopole screening. 16 For S ≥ 2, in addition to the cooperative crossover peaks, the specific heat exhibits a broad secondary shoul-der near μ ≈ 0.1, which is absent for S = 1 (because 
+
+S = 1 hosts only two amplitudes, |Sz | = 0 and 1, so no intermediate depopulation step exists). As established by the no-go theorem of Sec. III, this feature does not corre-spond to an intermediate thermodynamic phase. Rather, it is a non-cooperative Schottky anomaly driven by the single-ion anisotropy. The single-ion energy splitting be-tween the two highest-amplitude states, |Szℓ | = S and 
+
+|Szℓ | = S − 1, is ∆ E = μ[S2 − (S − 1) 2] = μ(2 S − 1). For μ > 0, the maximal-amplitude state |Szℓ | = S is the excited (higher-energy) state of this two-level sys-tem. Approximating this as an independent two-level system whose excited state |Szℓ | = S is thermally depop-ulated as μ increases, the Schottky specific heat peaks at ∆ E/T ≈ 2.4, yielding an estimated peak position 
+
+μSchottky ≈ 2.4T / (2 S − 1). This analytical estimate ac-curately captures the position and the 1 /(2 S − 1) scaling of the secondary humps observed in the MC data: as 
+
+S increases, the hump shifts closer to μ = 0 [Fig. 5(e)]. Furthermore, the explicitly computed microscopic spin occupancies ns [Fig. 5(c,d)] reveal that this shoulder coin-cides precisely with the continuous thermal depopulation from the maximal-amplitude state |Szℓ | = S (nS → 0) to the lower spin amplitudes ( nS−1 → 1). The absence of finite-size scaling for this shoulder, combined with the occupancy data, clearly decouples the local single-ion en-tropy release from the collective topological phenomena.     
+
+> C. Half-integer spins ( S= 3 /2,5/2,7/2)
+
+For half-integer spins, the analytical framework of Sec. IV predicts no transition in the small-w regime be-cause the half-integer link weights map directly onto the S = 1/2 Coulomb liquid. The only non-trivial topological crossover is therefore the large-w deconfine-ment crossover, whose monopole-free scale is set by 
+
+wc ≈ 1.42 for S = 3 /2 (from the 3-state Potts map-ping; see Sec. V B) and wc ≈ (1 .859) 1/(2 S−1) for S ≥ 5/2[Eq. (30)]. The MC specific heat at T = 0 .15 ( S = 3 /2) and 
+
+T = 0 .2 ( S = 5 /2, 7 /2) confirms this picture [Fig. 6(a,b)]: a sharp dominant peak associated with the topological crossover appears near μ = −T ln wc, and its height sat-urates with increasing L. In the large-positive-μ (small-
+
+w) limit, where the single-ion anisotropy μ(Sz )2 confines every spin to its minimal doublet Sz = ±1/2, the model reduces to an effective S = 1 /2 Ising spin ice whose exchange coupling is rescaled by (1 /2) 2 = 1 /4, yield-ing an effective temperature Teff = 4 T . The horizon-tal dashed lines in Fig. 6(a,b) show the specific heat of this effective S = 1 /2 model computed independently, and the MC data converge to these values at large μ for all half-integer spins, providing direct numerical confir-mation of the effective Hamiltonian mapping. Further-more, similar to the integer-spin case, a broader sec-ondary hump is clearly visible on the large-μ side for all S ≥ 3/2. As confirmed by the fractional occupancies 
+
+ns [Fig. 6(c,d)], which track the thermal depopulation cascade, this is the identical non-cooperative Schottky anomaly driven by ∆ E ∼ T . As predicted by our scaling formula μSchottky ≈ 2.4T / (2 S − 1), this Schottky peak gradually shifts toward μ = 0 and merges with the topo-logical crossover peak as S increases [Fig. 6(f)]. For S = 3 /2, the monopole-free limit ( T /J → 0) pre-dicts a first-order transition driven by the symmetry-allowed Z3 Potts cubic invariant. At the finite tempera-tures accessible to our simulations, however, the specific heat peak shows no sign of thermodynamic divergence with L, and the energy Binder cumulant exhibits no neg-ative dip characteristic of a first-order transition. This implies that the first-order coexistence line has either terminated at a critical endpoint below the simulated temperatures, or that exponentially larger system sizes are needed to resolve a weakly first-order nature. In-deed, a comparison of the specific heat at T = 0 .15 and 
+
+T = 0 .4 [Fig. 6(e)] reveals that while the peak sharpens upon cooling, it remains a crossover. Quantitatively, at 
+
+T = 0 .15, the monopole fugacity v = e−J/ (2 T ) ≈ 0.036 is an order of magnitude larger than the critical endpoint value vc ≈ 0.004 estimated from the Bethe–Peierls anal-ysis in Sec. VI (see Sec. VII of the Supplemental Ma-terial [41])—and likely two orders of magnitude larger than the true lattice value, given that the Bethe–Peierls approximation overestimates hc by more than a factor of ten relative to the exact Monte Carlo result for the 3D 3-state Potts model [58]. The simulation therefore un-ambiguously places the system well inside the crossover regime, confirming that thermal monopoles have com-pletely washed out the macroscopic phase coexistence.  
+
+> VIII. CONCLUSION AND OUTLOOK
+
+In this work, we have developed a self-contained the-oretical framework that classifies the macroscopic topo-logical phases, emergent gauge theories, and critical phe-nomena of classical spin-S pyrochlore magnets for arbi-trary S. The framework combines thermodynamic en-ergy convexity, the microscopic lattice geometry ( z = 4), exact graphical mappings, and RG analysis. In the monopole-free limit, we derived duality transfor-mations that establish a thermodynamic no-go theorem, precluding intermediate uniform background phases. Aspin parity dichotomy emerges in the small-w limit: half-integer spins reduce to the divergence-free Coulomb fluid, whereas integer spins map onto the 3D XY model. In the large-w limit, we proved geometrically that the macro-scopic polarization flux is quantized to multiples of 2 S,establishing an emergent Z2S -confined Coulomb phase. The resulting classification in this limit is summarized in Tables I and II. The nature of the deconfinement transitions reveals a further dichotomy. While S = 1 defects map to the 3D 17 <latexit sha1_base64="OZpJPJ9ybN2+xx06uNsGh8saDJk=">AAACZnichVFNSwJBGH7cvsxKrYiCLpIYnWSUsAgCqUtHP/IDTGR3m2xx3V12V8GkPxB0zUOngojoZ3TpD3TwHxQdDbp06HVdiJLqHWbmmWfe551nZiRDVSybsa5HGBkdG5/wTvqmpmf8geDsXN7SG6bMc7Ku6mZREi2uKhrP2Yqt8qJhcrEuqbwg1Xb7+4UmNy1F1/btlsHLdbGqKUeKLNpEZbPb8UowzKLMidAwiLkgDDdSevAWBziEDhkN1MGhwSasQoRFrYQYGAziymgTZxJSnH2OU/hI26AsThkisTUaq7QquaxG635Ny1HLdIpK3SRlCBH2xO5Yjz2ye/bCPn6t1XZq9L20aJYGWm5UAmdL2fd/VXWabRx/qf70bOMIm45XhbwbDtO/hTzQN086vexWJtJeZdfslfxfsS57oBtozTf5Js0zl/DRB8R+PvcwyMejsUQ0kV4PJ3fcr/BiGStYo/feQBJ7SCFH51Zxjgt0PM+CX1gQFgepgsfVzONbCKFP2ZKKYQ==</latexit> 
+
+S = 2 <latexit sha1_base64="9CuRnR5NEl5Xgt3G8/9jtIll4+s=">AAACZnichVHLSsNAFD2Nr1ofrYoouCmWiqsyVakiCEU3LvuwD6ilJHFaQ9MkJGmhFn9AcGsXrhRExM9w4w+46B8oLiu4ceFtGhAt6h1m5syZe+6cmZEMVbFsxjoeYWh4ZHTMO+6bmJya9gdmZrOWXjdlnpF1VTfzkmhxVdF4xlZslecNk4s1SeU5qbrX2881uGkpunZgNw1erIkVTSkrsmgTlU7vrJcCIRZhTgQHQdQFIbiR0AO3OMQRdMioowYODTZhFSIsagVEwWAQV0SLOJOQ4uxznMJH2jplccoQia3SWKFVwWU1WvdqWo5aplNU6iYpgwizJ3bHuuyR3bMX9vFrrZZTo+elSbPU13Kj5D9bTL//q6rRbOP4S/WnZxtlbDleFfJuOEzvFnJf3zhpd9PbqXBrhV2zV/J/xTrsgW6gNd7kmyRPXcJHHxD9+dyDILsWicYiseRGKL7rfoUXS1jGKr33JuLYRwIZOreCc1yg7XkWpoV5YaGfKnhczRy+hRD8BNuSimI=</latexit> 
+
+S = 3 
+
+(e) 
+
+(a) 
+
+(c) 
+
+(b) 
+
+(d) 
+
+FIG. 5. Monte Carlo results for integer spins at T = 0 .2 with L = 2, 4, 8. (a,b) Specific heat per spin c for S = 2 and S = 3. Vertical dashed lines indicate the analytically predicted crossover scales −T ln wc1 (purple), −T ln wc2 (dark yellow), and the Schottky peak position μSch = 2 .4T / (2 S − 1) (cyan). Insets zoom in on the μ < 0 peak region. The peak heights saturate with 
+
+L, confirming crossover rather than a true phase transition. (c,d) Thermal occupancy fractions ns = ⟨δ|Szℓ |,s ⟩ for S = 2 and 
+
+S = 3 ( L = 8), showing the sequential depopulation of higher spin amplitudes as μ increases. (e) Comparison of the specific heat across S = 1, 2, and 3 ( L = 8). The Schottky shoulder (visible for S ≥ 2 near μ ≈ 0.1) shifts toward μ = 0 with increasing 
+
+S, consistent with the 1 /(2 S − 1) scaling predicted analytically. 
+
+Ising class, all S ≥ 3/2 defects generate chiral, directed loops. The ice rule compatibility theorem shows that the Z2S Gauss law coincides with the physical ice rule if and only if S ≤ 3/2. Exploiting this geometric property, we mapped the S = 3 /2 defect gas to the 3-state Potts model, whose symmetry-allowed cubic invariant drives a first-order transition. For S ≥ 2, this discrete clock mapping breaks down due to monopole contamination. The system is instead forced into hierarchical fusion processes with exponen-tially suppressed intermediate defects. Using an exact decomposition of the partition function, we showed that the macroscopic graph ensemble reduces to the contin-uous U (1) 3D XY model at leading order. The resid-ual fusion cascade acts as a dangerously irrelevant op-erator at the 3D XY fixed point. The combination of exponentially suppressed bare coupling and RG irrele-vance washes out the underlying discreteness, placing all 
+
+S ≥ 2 deconfinement transitions in the 3D XY univer-sality class. Finally, by relaxing the strict ice rules, we showed that thermally excited monopoles act as an explicit symmetry-breaking field heff ≈ √3v in the emergent gauge the-ory. This field severs the topological defect strings and renders all topological sectors adiabatically connected. The consequences are order-dependent: the continuous 3D Ising ( S = 1) and 3D XY (S ≥ 2) transitions are rounded into crossovers for any v > 0, while the first-order S = 3 /2 transition is predicted to survive at finite temperatures, protected by a macroscopic free-energy 18 (e) 
+
+(a) 
+
+(c)  
+
+> <latexit sha1_base64="L+IXkQqrAX0g+cHa6LcAZa8ufL0=">AAACaHichVFNLwNBGH66vqq+igPiIpqKU802lEgkDRdHWtUm1cjumjLpdnezu21SjT/g4og4kYiIn+HiDzj0J+BI4uLg7XYTocE7mZlnnnmfd56ZUS1dOC5jjYDU0dnV3RPsDfX1DwwOhYdHth2zYms8o5m6aedUxeG6MHjGFa7Oc5bNlbKq86xaWmvuZ6vcdoRpbLk1ixfKyr4hikJTXKIy6ZWFufhuOMJizIupdiD7IAI/NszwDXawBxMaKiiDw4BLWIcCh1oeMhgs4gqoE2cTEt4+xxFCpK1QFqcMhdgSjfu0yvusQetmTcdTa3SKTt0m5RSi7JHdslf2wO7YE/v4tVbdq9H0UqNZbWm5tTt0PJ5+/1dVptnFwZfqT88uiljyvArybnlM8xZaS189PH1NL6ei9Rl2xV7I/yVrsHu6gVF90643eeoCIfoA+edzt4PteExOxBKb85Hkqv8VQUxiGrP03otIYh0byNC5Aic4w3ngWQpLY9JEK1UK+JpRfAtp+hPuJIrZ</latexit>
+
+S = 5 /2 
+
+> <latexit sha1_base64="xURVyMP5CoFxucrSwoomDEwDgxQ=">AAACaHichVFNLwNBGH66vqq+igPiIpqKU82WlEgkDRdHWtUm1cjumjLpdnezu21SjT/g4og4kYiIn+HiDzj0J+BI4uLg7XYTocE7mZlnnnmfd56ZUS1dOC5jjYDU0dnV3RPsDfX1DwwOhYdHth2zYms8o5m6aedUxeG6MHjGFa7Oc5bNlbKq86xaWmvuZ6vcdoRpbLk1ixfKyr4hikJTXKIy6ZX5ufhuOMJizIupdiD7IAI/NszwDXawBxMaKiiDw4BLWIcCh1oeMhgs4gqoE2cTEt4+xxFCpK1QFqcMhdgSjfu0yvusQetmTcdTa3SKTt0m5RSi7JHdslf2wO7YE/v4tVbdq9H0UqNZbWm5tTt0PJ5+/1dVptnFwZfqT88uiljyvArybnlM8xZaS189PH1NL6ei9Rl2xV7I/yVrsHu6gVF90643eeoCIfoA+edzt4PteExOxBKbC5Hkqv8VQUxiGrP03otIYh0byNC5Aic4w3ngWQpLY9JEK1UK+JpRfAtp+hPqIIrX</latexit>
+
+S = 3 /2
+
+(f) 
+
+(b) 
+
+(d) 
+
+FIG. 6. Monte Carlo results for half-integer spins. (a) Specific heat per spin c for S = 3 /2 at T = 0 .15 with L = 2, 4, 8. (b) Same for S = 5 /2 at T = 0 .2. Vertical dashed lines indicate the analytically predicted crossover scale −T ln wc (purple) and the Schottky peak position μSch (dark yellow). The horizontal dashed line (cyan) marks the specific heat of the effective 
+
+S = 1 /2 Ising spin ice at Teff = 4 T , to which the large-μ limit asymptotes. Insets zoom in on the peak region. (c,d) Thermal occupancy fractions ns for S = 3 /2 and S = 5 /2 ( L = 8), revealing the thermal depopulation cascade from higher to lower spin amplitudes. (e) Temperature comparison of the S = 3 /2 specific heat ( L = 8): the peak sharpens upon cooling from T = 0 .4to T = 0 .15 but remains a crossover, consistent with the monopole fugacity v ≈ 0.036 ≫ vc ≈ 0.004. (f) Comparison across 
+
+S = 3 /2, 5 /2, and 7 /2 at T = 0 .2 ( L = 8). The Schottky hump merges with the topological crossover peak as S increases. 
+
+barrier, and to terminate at a critical endpoint. Clas-sical Monte Carlo simulations for integer ( S = 1–3) and half-integer ( S = 3 /2–7 /2) spins confirm this crossover picture: the specific heat peaks saturate to finite values with increasing system size, and the crossover scales are in quantitative agreement with the analytically predicted fugacities. The spin-amplitude occupancies ns further identify a non-cooperative Schottky anomaly for S ≥ 2, clearly separating local single-ion physics from collective topological phenomena. This clear decoupling, governed by the analytically predicted 1 /(2 S − 1) scaling of the Schottky peak position, provides a practical diagnostic for experimentalists seeking to disentangle broad specific heat anomalies in candidate higher-spin pyrochlore mag-nets from the signatures of collective topological phenom-ena. Extending this framework to the quantum regime is a natural direction for future work. The interplay between quantum fluctuations, emergent discrete Z2S
+
+gauge fields, and the geometric properties unique to S =3/2 may give rise to novel fractionalized quantum spin liquids and higher-spin topological phases [2, 16, 32, 60– 62]. More broadly, the mechanism identified here— geometric suppression of discrete perturbations by the proliferation of internal degrees of freedom—may ap-ply to other frustrated lattice models where discrete gauge symmetries compete with continuous ones, includ-ing dimer models on non-bipartite lattices and higher-rank tensor gauge theories. 19 
+
+ACKNOWLEDGMENTS 
+
+The work of S.W. is supported by JST SPRING, Grant No. JPMJSP2108. The work of Y.M. is sup-ported by JSPS KAKENHI Grant No. JP25H01247. The work of H.W. is supported by JSPS KAKENHI Grant No. JP24K00541. 
+
+[1] L. Balents, Spin liquids in frustrated magnets, Nature 
+
+464 , 199 (2010). [2] L. Savary and L. Balents, Quantum spin liquids: a re-view, Rep. Prog. Phys. 80 , 016502 (2017). [3] J. Knolle and R. Moessner, A field guide to spin liquids, Annu. Rev. Condens. Matter Phys. 10 , 451 (2019). [4] C. Broholm, R. J. Cava, S. A. Kivelson, D. G. Nocera, M. R. Norman, and T. Senthil, Quantum spin liquids, Science 367 , eaay0668 (2020). [5] M. J. Harris, S. T. Bramwell, D. F. McMorrow, T. Zeiske, and K. W. Godfrey, Geometrical frustration in the fer-romagnetic pyrochlore Ho 2Ti 2O7, Phys. Rev. Lett. 79 ,2554 (1997). [6] S. T. Bramwell and M. J. P. Gingras, Spin ice state in frustrated magnetic pyrochlore materials, Science 294 ,1495 (2001). [7] A. P. Ramirez, A. Hayashi, R. J. Cava, R. Siddharthan, and B. S. Shastry, Zero-point entropy in ‘spin ice’, Nature 
+
+399 , 333 (1999). [8] C. Castelnovo, R. Moessner, and S. L. Sondhi, Magnetic monopoles in spin ice, Nature 451 , 42 (2008). [9] R. G. Melko, B. C. den Hertog, and M. J. P. Gingras, Long-range order at low temperatures in dipolar spin ice, Phys. Rev. Lett. 87 , 067203 (2001). [10] L. Pauling, The structure and entropy of ice and of other crystals with some randomness of atomic arrangement, J. Am. Chem. Soc. 57 , 2680 (1935). [11] M. Hermele, M. P. A. Fisher, and L. Balents, Pyrochlore photons: The U (1) spin liquid in a S = 1/2 three-dimensional frustrated magnet, Phys. Rev. B 69 , 064404 (2004). [12] S. V. Isakov, K. Gregor, R. Moessner, and S. L. Sondhi, Dipolar spin correlations in classical pyrochlore magnets, Phys. Rev. Lett. 93 , 167204 (2004). [13] C. L. Henley, Power-law spin correlations in pyrochlore antiferromagnets, Phys. Rev. B 71 , 014424 (2005). [14] C. L. Henley, The “Coulomb phase” in frustrated sys-tems, Annu. Rev. Condens. Matter Phys. 1, 179 (2010). [15] T. Fennell, P. P. Deen, A. R. Wildes, K. Schmalzl, D. Prabhakaran, A. T. Boothroyd, R. J. Aldus, D. F. Mc-Morrow, and S. T. Bramwell, Magnetic Coulomb phase in the spin ice Ho 2Ti 2O7, Science 326 , 415 (2009). [16] M. J. P. Gingras and P. A. McClarty, Quantum spin ice: a search for gapless quantum spin liquids in pyrochlore magnets, Rep. Prog. Phys. 77 , 056501 (2014). [17] N. Shannon, K. Penc, and Y. Motome, Nematic, vector-multipole, and plateau-liquid states in the classical o(3) pyrochlore antiferromagnet with biquadratic interactions in applied magnetic field, Phys. Rev. B 81 , 184409 (2010). [18] J. Pandey and K. Damle, S = 1 pyrochlore magnets with competing anisotropies: A tale of two Coulomb phases, Z2 flux confinement and XY-like transitions, arXiv preprint arXiv:2512.11623 (2025). [19] S. Kundu and K. Damle, Flux fractionalization transition in anisotropic S = 1 antiferromagnets and dimer-loop models, Phys. Rev. X 15 , 011018 (2025). [20] S. Watanabe, Y. Motome, and H. Watanabe, Dualities and topological classification of the S = 1 pyrochlore spin ice, arXiv preprint arXiv:2603.03852 (2026). [21] J. Pandey, S. Kundu, and K. Damle, Z3 confined and de-confined Coulomb liquids in Seff = 3 /2 pyrochlore mag-nets, arXiv preprint arXiv:2602.23041 (2026). [22] M. E. Brooks-Bartlett, S. T. Banks, L. D. C. Jaubert, A. Harman-Clarke, and P. C. W. Holdsworth, Magnetic-moment fragmentation and monopole crystallization, Phys. Rev. X 4, 011007 (2014). [23] S. Petit, E. Lhotel, S. Guitteny, O. Florea, J. Robert, P. Bonville, I. Mirebeau, J. Ollivier, H. Mutka, E. Ressouche, C. Decorse, M. Ciomaga Hatnean, and G. Balakrishnan, Observation of magnetic fragmentation in spin ice, Nat. Phys. 12 , 746 (2016). [24] J. Rehn, A. Sen, and R. Moessner, Fractionalized Z2
+
+classical Heisenberg spin liquids, Phys. Rev. Lett. 118 ,047201 (2017). [25] M. Blume, Theory of the first-order magnetic phase change in UO 2, Phys. Rev. 141 , 517 (1966). [26] H. W. Capel, On the possibility of first-order phase tran-sitions in Ising systems of triplet ions with zero-field split-ting, Physica 32 , 966 (1966). [27] C. Castelnovo and C. Chamon, Topological order in a three-dimensional toric code at finite temperature, Phys. Rev. B 78 , 155120 (2008). [28] L. D. C. Jaubert, M. J. Harris, T. Fennell, R. G. Melko, S. T. Bramwell, and P. C. W. Holdsworth, Topological-sector fluctuations and Curie-law crossover in spin ice, Phys. Rev. X 3, 011014 (2013). [29] D. A. Huse, W. Krauth, R. Moessner, and S. L. Sondhi, Coulomb and liquid dimer models in three dimensions, Phys. Rev. Lett. 91 , 167004 (2003). [30] R. Moessner and S. L. Sondhi, Three-dimensional resonating-valence-bond liquids and their excitations, Phys. Rev. B 68 , 184512 (2003). [31] J. Nasu, T. Kaji, K. Matsuura, M. Udagawa, and Y. Mo-tome, Phase transitions to fractionalized Mott insulators in an anisotropic 3d Kitaev model, Phys. Rev. B 89 ,115125 (2014). [32] A. Kitaev, Anyons in an exactly solved model and be-yond, Ann. Phys. 321 , 2 (2006). [33] E. Fradkin and S. H. Shenker, Phase diagrams of lattice gauge theories with Higgs fields, Phys. Rev. D 19 , 3682 (1979). 20 
+
+[34] T. Senthil and M. P. A. Fisher, Z2 gauge theory of electron fractionalization in strongly correlated systems, Phys. Rev. B 62 , 7850 (2000). [35] R. Savit, Duality in field theory and statistical systems, Rev. Mod. Phys. 52 , 453 (1980). [36] J. B. Kogut, An introduction to lattice gauge theory and spin systems, Rev. Mod. Phys. 51 , 659 (1979). [37] J. V. Jos´ e, L. P. Kadanoff, S. Kirkpatrick, and D. R. Nel-son, Renormalization, vortices, and symmetry-breaking perturbations in the two-dimensional planar model, Phys. Rev. B 16 , 1217 (1977). [38] S. Watanabe, Y. Motome, and H. Watanabe, Precision Monte Carlo determination of the critical temperature for the antiferromagnetic XY model on a diamond lattice (2026), in preparation. [39] A. Nahum, J. T. Chalker, P. Serna, M. Ortu˜ no, and A. M. Somoza, 3d loop models and the CP n−1 sigma model, Phys. Rev. Lett. 107 , 110601 (2011). [40] F. J. Wegner, Duality in generalized Ising models and phase transitions without local order parameters, J. Math. Phys. 12 , 2259 (1971). [41] See Supplemental Material for detailed derivations of the large-w expansions, clock-model high-temperature expansion, exact correspondences, exact decomposition framework, and Bethe–Peierls estimates. [42] H. W. J. Bl¨ ote and R. H. Swendsen, First-order phase transitions and the three-state Potts model, Phys. Rev. Lett. 43 , 799 (1979). [43] F. Y. Wu, The Potts model, Rev. Mod. Phys. 54 , 235 (1982). [44] R. J. Baxter, Exactly Solved Models in Statistical Me-chanics (Academic Press, London, 1982). [45] A. M. Polyakov, Quark confinement and topology of gauge theories, Nucl. Phys. B 120 , 429 (1977). [46] Z. Han and S. A. Kivelson, Emergent gauge fields in band insulators, Proc. Natl. Acad. Sci. U.S.A. 122 ,e2421778122 (2025). [47] M. Hasenbusch, Monte Carlo study of an improved clock model in three dimensions, Phys. Rev. B 100 , 224517 (2019). [48] J. Lou, A. W. Sandvik, and L. Balents, Emergence of 
+
+U (1) symmetry in the 3D XY model with Zq anisotropy, Phys. Rev. Lett. 99 , 207203 (2007). [49] H. Shao, W. Guo, and A. W. Sandvik, Monte Carlo renor-malization flows in the space of relevant and irrelevant operators: Application to three-dimensional clock mod-els, Phys. Rev. Lett. 124 , 080602 (2020). [50] I. A. Ryzhkin, Magnetic relaxation in rare-earth oxide pyrochlores, J. Exp. Theor. Phys. 101 , 481 (2005). [51] Z. Nussinov and G. Ortiz, Autocorrelations and thermal fragility of anyonic loops in topologically quantum or-dered systems, Phys. Rev. B 77 , 064302 (2008). [52] S.-T. Zhou, M. Cheng, T. Rakovszky, C. von Keyser-lingk, and T. D. Ellison, Finite-temperature quantum topological order in three dimensions, Phys. Rev. Lett. 
+
+135 , 040402 (2025). [53] S. Watanabe, Y. Motome, and H. Watanabe, Continu-ous crossover between high-pressure ice phases VII and X driven by monopole screening: a model study, arXiv preprint arXiv:2603.19620 (2026). [54] C. Castelnovo, R. Moessner, and S. L. Sondhi, Debye-H¨ uckel theory for spin ice at low temperature, Phys. Rev. B 84 , 144435 (2011). [55] D. J. P. Morris, D. A. Tennant, S. A. Grigera, B. Klemke, C. Castelnovo, R. Moessner, C. Czarnik, M. Meissner, K. C. Rule, J.-U. Hoffmann, K. Kiefer, S. Gerischer, D. Slobinsky, and R. S. Perry, Dirac strings and mag-netic monopoles in the spin ice Dy 2Ti 2O7, Science 326 ,411 (2009). [56] L. D. C. Jaubert and P. C. W. Holdsworth, Signature of magnetic monopole and Dirac string dynamics in spin ice, Nat. Phys. 5, 258 (2009). [57] G.-W. Chern and N. Nagaosa, Gauge field and the confinement-deconfinement transition in hydrogen-bonded ferroelectrics, Phys. Rev. Lett. 112 , 247602 (2014). [58] F. Karsch and S. Stickan, The three-dimensional, three-state Potts model in an external field, Phys. Lett. B 488 ,319 (2000). [59] T. Wada, M. Kitazawa, and K. Kanaya, Locating critical points using ratios of Lee-Yang zeros, Phys. Rev. Lett. 
+
+134 , 162302 (2025). [60] L. Savary and L. Balents, Coulombic quantum liquids in spin-1/2 pyrochlores, Phys. Rev. Lett. 108 , 037202 (2012). [61] N. Shannon, O. Sikora, F. Pollmann, K. Penc, and P. Fulde, Quantum ice: A quantum Monte Carlo study, Phys. Rev. Lett. 108 , 067204 (2012). [62] O. Benton, O. Sikora, and N. Shannon, Classical and quantum theories of proton disorder in hexagonal water ice, Phys. Rev. B 93 , 125143 (2016). Supplemental Material for “Topological Phase Transitions and Their Thermodynamic Fate in Arbitrary-S Pyrochlore Spin Ice” 
+
+Sena Watanabe, 1, ∗ Yukitoshi Motome, 1, † and Haruki Watanabe 2, 3, 4, 1, ‡
+
+> 1
+
+Department of Applied Physics, The University of Tokyo, Tokyo 113-8656, Japan 
+
+> 2
+
+Department of Physics, Hong Kong University of Science and Technology, Clear Water Bay, Hong Kong, China 
+
+> 3
+
+Institute for Advanced Study, Hong Kong University of Science and Technology, Clear Water Bay, Hong Kong, China 
+
+> 4
+
+Center for Theoretical Condensed Matter Physics, Hong Kong University of Science and Technology, Clear Water Bay, Hong Kong, China 
+
+(Dated: April 7, 2026) 
+
+I. LARGE-w EXPANSION OF THE SPIN-ICE MODEL ( S ≥ 2)
+
+In this section we present a self-contained derivation of the large-w expansion of the spin-S pyrochlore spin-ice model for S ≥ 2. The exceptional case S = 3 /2 is treated separately in Sec. II, and the S = 1 case in the Supple-mental Material of Ref. [1]. Each bond of the pyrochlore lattice carries a bounded spin Szℓ ∈ {− S, . . . , S }, and the coordination number z = 4 of the diamond lattice im-poses geometric constraints that are absent in the clock model and will be analyzed in detail below. 
+
+A. Notation and conventions 
+
+We adopt the model and notation introduced in Sec. II of the main text. For ease of reference within this sec-tion, we restate the key equations with local labels. The Hamiltonian [Eq. (1) of the main text] reads 
+
+H = J
+
+2
+
+X
+
+> r
+
+X 
+
+> ℓ∈r
+
+Szℓ
+
+2
+
++ μ X
+
+> ℓ
+
+(Szℓ )2, (1) and the exact partition function [Eq. (3) of the main text], expressed in terms of the fugacities w := e−μ/T 
+
+and v := e−J/ (2 T ), is 
+
+Zice = X 
+
+> {Qr}
+
+X 
+
+> {Szℓ}
+
+Y 
+
+> r
+
+δ∇· Sr , Q r
+
+
+
+vP  
+
+> rQ2
+> r
+
+wP 
+
+> ℓ(Szℓ)2
+
+, (2) with the sublattice-dependent lattice divergence 
+
+∇· Sr := 
+
+(+ P 
+
+> ℓ∈r
+
+Szℓ if r ∈ A, 
+
+− P 
+
+> ℓ∈r
+
+Szℓ if r ∈ B. (3)    
+
+> ∗watanabe-sena397@g.ecc.u-tokyo.ac.jp
+> †motome@ap.t.u-tokyo.ac.jp
+> ‡hwatanabe@ust.hk
+
+B. Monopole-free limit and loop-gas expansion 
+
+We now specialize to the monopole-free limit v = 0 (J/T → ∞ ), setting Qr = 0 at every site in Eq. (2): 
+
+Zice := Zice v=0 = X 
+
+> {Szℓ}
+
+Y 
+
+> r
+
+δ∇· Sr , 0
+
+ Y 
+
+> ℓ
+
+w(Szℓ )2
+
+. (4) From this point onward, all manipulations within the v =0 sector are exact. 
+
+1. Vacuum partition function 
+
+In the large-w limit ( μ → −∞ ), the dominant spin configuration on each link is the fully polarized state 
+
+Szℓ = ±S, with Boltzmann weight wS2
+
+per link. We call this the vacuum : every link carries |Szℓ | = S, and the remaining freedom is the sign σℓ := sgn( Szℓ ) ∈ { +1 , −1}.The ice-rule constraint ∇ · Sr = 0 [Eq. (3)] then reads 
+
+S P 
+
+> ℓ∈r
+
+er σℓ = 0 at every diamond-lattice site, which reduces to the two-in, two-out rule: exactly two of the four links at each vertex carry σℓ = +1 and two carry 
+
+σℓ = −1 (in the sublattice convention). The vacuum partition function is therefore 
+
+Zice ,vac = w|E| S2
+
+Ωice , (5) where Ω ice is the number of two-in, two-out sign config-urations on the diamond lattice. We evaluate Ω ice in the Pauling independent-vertex ap-proximation . Each vertex has 2 4 = 16 possible sign pat-terns on its four links, of which  42
+
+ = 6 satisfy the two-in, two-out rule. Treating the vertex constraints as indepen-dent, the fraction of the 2 |E| total sign configurations that is globally valid is (6 /16) N , giving Ωice ≈ 2|E|
+
+ 616 
+
+N
+
+= 2 2N
+
+ 38
+
+N
+
+=
+
+ 32
+
+N
+
+, (6) and hence 
+
+Zice ,vac = w2N S 2
+
+ 32
+
+N
+
+. (7) This is the Pauling entropy SP = N k B ln(3 /2) of the spin-ice manifold. 2
+
+2. Defect expansion and closed loops 
+
+Configurations with |Szℓ | < S on some links represent excitations above the vacuum. We define the defect num-ber on each link as 
+
+dℓ := S − | Szℓ | ∈ { 0, 1, . . . , S }, (8) so that dℓ = 0 is the vacuum and dℓ ≥ 1 is an excited state. This unsigned defect number is related to the shifted flux variable ϕℓ := Szℓ + S ∈ { 0, 1, . . . , 2S} used in the main text by dℓ = min( ϕℓ, 2S − ϕℓ). The Boltz-mann weight of a link with defect number d relative to the vacuum is 
+
+w(S−d)2
+
+wS2 = w−d(2 S−d), (9) which is exponentially small for w ≫ 1. In particular, the lightest excitation d = 1 carries the suppression factor 
+
+w−(2 S−1) , and all higher defects d ≥ 2 are exponentially heavier. The monopole-free constraint Qr = 0 imposes a strong geometric restriction: links excited to dℓ = 1 (i.e. |Szℓ | =
+
+S − 1) must form closed loops on the diamond lattice. In the dilute regime w ≫ 1, the dominant contribution comes from non-overlapping closed loops of fundamental (d = 1) defects. We now derive the effective fugacity per link of such a loop. 
+
+3. Loop-gas representation 
+
+Consider a configuration in which a subset G ⊆ E of links is excited to dℓ = 1 while all remaining links carry 
+
+dℓ = 0. For S ≥ 3/2, every link has a well-defined sign 
+
+σℓ := sgn( Szℓ ) ∈ { +1 , −1} (since Szℓ = ±(S − 1) ̸ = 0 on defect links). Let d0(r) denote the number of excited links incident to vertex r. At each vertex, the ice rule 
+
+∇· Sr = 0 constrains the signs via (S − 1) Σ def + S Σvac = 0 , (10) where Σ def := P 
+
+> ℓ∈r, ℓ ∈G
+
+σℓ and Σ vac := P 
+
+> ℓ∈r, ℓ / ∈G
+
+σℓ are the partial sums of defect-link and vacuum-link signs. We define the local state sum z(d0) as the number of sign configurations {σℓ} ∈ { +1 , −1}4 satisfying Eq. (10); by the bipartite symmetry of the diamond lattice, z(d0)depends only on d0.
+
+a. Evaluation of z(d0). Since S − 1 and S are co-prime and since Σ def and Σ vac are bounded integers, Eq. (10) is very restrictive. 
+
+d0 = 0 (vacuum): The constraint reduces to Σ vac = 0, giving z(0) =  42
+
+ = 6—the Pauling ice-rule count. 
+
+Odd d0 (monopole): For d0 = 1, the constraint gives Σvac = −(S − 1) σ1/S , so |Σvac | = ( S − 1) /S < 1; but 
+
+|Σvac | ≥ 1 for any three-sign sum, so z(1) = 0. For 
+
+d0 = 3, one similarly requires |σ4| = ( S − 1) |Σdef |/S with 
+
+|Σdef | ∈ { 1, 3}; since S ≥ 2, the right-hand side never equals 1, giving z(3) = 0. Physically, odd d0 means the vertex is a string endpoint ( Qr̸ = 0), forbidden at v = 0. 
+
+d0 = 2 (loop vertex): The constraint gives Σ vac =
+
+−(S − 1)Σ def /S . Since S − 1 and S are coprime for every integer or half-integer S ≥ 3/2, the coprimality forces S |
+
+Σdef . Combined with the bound |Σdef | ≤ 2 < 2S (which holds for all S ≥ 3/2), this leaves only Σ def = 0, and hence Σ vac = 0, for S̸ = 2. For the boundary case S = 2, the condition 2 | Σdef with |Σdef | ≤ 2 permits Σ def = ±2; however, Σ def = ±2 gives Σ vac = −(S − 1)Σ def /S = ∓1, which is odd, whereas Σ vac is the sum of two vacuum-link signs ( ±1 ± 1) ∈ {− 2, 0, 2} and must be even. This par-ity contradiction eliminates Σ def = ±2, leaving Σ def = 0 and Σ vac = 0 for all S ≥ 3/2. Σdef = 0 means the two defect-link signs are opposite at every loop vertex. This constraint propagates along a closed loop: the require-ment that consecutive defect-link signs alternate deter-mines all defect-link signs from a single global binary choice—the loop direction. These two directions will be accounted for by a factor n = 2 in the loop-gas formula below. With the direction fixed, only the vacuum-link signs remain free; Σ = 0 then requires one +1 and one 
+
+−1 among the two vacuum links (  21
+
+ = 2 ways): 
+
+z(2) = 2 . (11) 
+
+d0 = 4 (self-intersection): All four defect-link signs are fixed by the loop directions, so whether the ice rule is satisfied depends on the specific intersection geome-try. In the dilute-gas limit (non-overlapping loops), self-intersections do not arise. 
+
+b. Effective fugacity ˜x1. We evaluate the partition-function weight of a graph G in the Pauling independent-vertex approximation. With the loop direction fixed, the free sign variables live only on the 2 N − | G| vac-uum links. The total number of free configurations is 22N −| G|, and the fraction satisfying the ice rule at each vertex is z(d0)/24−d0 . Using P 
+
+> r
+
+(4 − d0(r)) = 4 N − 2|G|,the Pauling estimate of the number of valid sign config-urations (for a given direction) is Ω( G) ≈ 22N −| G| Y
+
+> r
+
+z d0(r)
+
+24−d0(r)
+
+= 2 |G|− 2N Y
+
+> r
+
+z d0(r). (12) Each excited link contributes w(S−1) 2
+
+and each vacuum link wS2
+
+, so the total weight of G is contrib( G) = wS2(2 N −| G|)+( S−1) 2|G| Ω( G)= w2N S 2
+
+w−(2 S−1) |G| Ω( G). (13) Dividing by the vacuum contribution Zice ,vac = w2N S 2
+
+·
+
+2−2N z(0) N , the prefactors cancel and we obtain contrib( G)
+
+Zice ,vac 
+
+= w−(2 S−1) |G| · 2|G| Y 
+
+> r:d0>0
+
+z d0(r)
+
+z(0) . (14) 3For closed, non-overlapping fundamental loops, d0(r) ∈{0, 2} at every vertex. A single loop of length |C| tra-verses |C| vertices with d0 = 2, giving (for one direction) contrib( C)
+
+Zice ,vac 
+
+= w−(2 S−1) |C| · 2|C|
+
+ z(2) 
+
+z(0) 
+
+|C|
+
+=
+
+ 23 w−(2 S−1) 
+
+|C|
+
+, (15) where we used z(2) /z (0) = 2 /6 = 1 /3. The effective per-link fugacity is therefore ˜x1 = 23 w−(2 S−1) . (16) 
+
+c. Loop-gas formula. Including the direction degen-eracy n = 2 per loop, the monopole-free partition func-tion in the dilute-gas limit (non-overlapping loops with 
+
+dℓ ≤ 1 on every link) is 
+
+Zice = Zice ,vac 
+
+X
+
+> {C}
+
+nNloop (C) ˜x|C| 
+
+> 1
+
+, (17) where Zice ,vac is given by (7) and the sum runs over all non-overlapping closed loop graphs C on the diamond lattice. Eq. (17) retains only fundamental ( d = 1) de-fects on non-overlapping loops. Configurations involving heavier defects d ≥ 2 —including the bridge process in which 2 S fundamental loops annihilate via 2 S − 2 ver-tices and 2 S − 3 intermediate bonds carrying effective charges ϕ = 2 , 3, . . . , 2S − 2 (see Sec. I C)—enter as sub-leading corrections of relative order w−(2 S−3) or higher. The effective fugacity ˜ x1 is unaffected by these higher-order processes; what changes is the topology of graphs that contribute to the partition function at a given order in w−1.  
+
+> C. Hierarchical fusion: (2 S−2) -vertex bridge process
+
+The loop-gas formula (17) involves only fundamental (d = 1) defects. Higher defects d ≥ 2 become relevant when 2 S fundamental loops annihilate; the cost of this process is the subject of this section.  
+
+> 1. Higher-defect fugacity and geometric obstruction
+
+The Boltzmann weight of a defect-d bond relative to the fundamental bond is 
+
+xd
+
+x1
+
+= w−(2 S−d)d+(2 S−1) = w−(d−1)(2 S−d−1) . (18) For d = 2, this gives x2/x 1 = w−(2 S−3) , which is expo-nentially suppressed for S ≥ 2. Can all 2 S fundamental strings annihilate at a sin-gle vertex? Each diamond-lattice vertex has exactly two outward background links ( σ′ 
+
+> ℓ, r
+
+= +1) and two inward background links ( σ′ 
+
+> ℓ, r
+
+= −1). Single-vertex annihila-tion requires k incoming fundamental defects ( d = 1) on the outward background links and m incoming anti-fundamental defects ( d = 2 S − 1) on the inward back-ground links, with k + m = 2 S and k = m(2 S − 1) (divergence-free condition: k · 1 − m · (2 S − 1) = 0), giving m = 1, k = 2 S − 1 ≥ 3; since the diamond lat-tice provides only k ≤ 2 outward links, single-vertex an-nihilation is forbidden by the exact ice rule for S ≥ 2. (Note that this obstruction is specific to the exact con-servation P 
+
+> ℓ∈r
+
+ϕℓ = 4 S; the weaker modular conserva-tion P 
+
+> ℓ∈r
+
+nℓ ≡ 0 (mod 2 S) of the Z2S clock model does permit single-vertex annihilation for 2 S ≤ z = 4; see Sec. V B for a detailed comparison.) The annihilation in the spin-ice model must therefore proceed through a 
+
+spatially extended bridge consisting of multiple vertices.  
+
+> 2. Sequential fusion cascade
+
+Consider 2 S fundamental loops ( ϕ = 1) that are to annihilate. Since at most two fundamental strings can be fused per vertex (using the two outward background links), the process requires a chain of 2 S − 2 diamond-lattice vertices r1, r2, . . . , r2S−2, connected by 2 S − 3 in-termediate bonds (see Fig. 2 of the main text). The hierarchical fusion proceeds as follows. 1. Vertex r1: Two incoming fundamental strings ( ϕ =1) arrive on the two outward background links. They fuse into a single outgoing intermediate string with effective charge ϕ = 2 on one inward back-ground link. The divergence-free condition is satis-fied: 2 × 1 − 1 × 2 = 0. 2. Vertex rj (2 ≤ j ≤ 2S − 3): One incoming inter-mediate string with ϕ = j arrives on an outward background link, together with one additional in-coming fundamental string ( ϕ = 1) on the other outward link. They fuse into a single outgoing intermediate string with ϕ = j + 1 on one in-ward link. The divergence-free condition reads: 1 × j + 1 × 1 − 1 × (j + 1) = 0. 3. Vertex r2S−2 (final fusion): One incoming inter-mediate string with ϕ = 2 S − 2 arrives together with one additional fundamental string ( ϕ = 1). They produce ϕ = 2 S − 1. Since ϕ = 2 S − 1 ≡−1 (mod 2 S), this final intermediate string car-ries the dual charge and is absorbed as the last remaining anti-string. The total charge absorbed is (2 S − 2) × 1 + 1 × 1 + 1 × 1 = 2 S ≡ 0 (mod 2 S). At each step, the vertex uses at most k = 2 outward links and m = 1 inward link, always respecting the geo-metric bound k ≤ 2, m ≤ 2. 4 
+
+> 3. Energetic cost of the bridge
+
+The bridge introduces 2 S − 3 intermediate bonds car-rying effective charges ϕ = 2 , 3, . . . , 2S − 2. Each in-termediate bond with charge ϕ carries the fugacity xϕ =
+
+w−ϕ(2 S−ϕ) [Eq. (9)]. The total bridge penalty—the prod-uct of all intermediate-bond fugacities—is 
+
+Pbridge =
+
+> 2S−2
+
+Y
+
+> ϕ=2
+
+xϕ = w− P2S−2 
+
+> ϕ=2 ϕ(2 S−ϕ)
+
+. (19) Evaluating the sum in the exponent by the standard iden-tities Pnd=1 d = n(n + 1) /2 and Pnd=1 d2 = n(n + 1)(2 n +1) /6 gives 
+
+Pbridge = w−(2 S−3)(2 S−1)(2 S+4) /6. (20) Let us verify this for small values. For S = 2 (2 S =4), the bridge uses 2 S − 2 = 2 vertices and 2 S − 3 = 1 intermediate bond (carrying d = 2); the exponent is 
+
+d(2 S − d) = 2 × 2 = 4, so Pbridge = w−4. For S = 5 /2(2 S = 5), the bridge uses 3 vertices and 2 intermediate bonds ( d = 2 and d = 3); the exponents are 2 × 3 = 6 and 3 × 2 = 6, giving Pbridge = w−12 . For S = 3 (2 S =6), the bridge uses 4 vertices and 3 intermediate bonds (d = 2 , 3, 4); the exponents are 2 × 4 = 8, 3 × 3 = 9, 4 × 2 = 8, giving Pbridge = w−25 . All three cases agree with Eq. (20), confirming the closed-form result. The bridge penalty is exponentially suppressed in w for all 
+
+S ≥ 2.  
+
+> D. Inclusion of thermal monopoles
+
+The results of Secs. I B and I C were derived in the monopole-free limit v = 0, where only configurations with Qr = 0 at every diamond site contribute to the partition function (2). We now relax this constraint and include thermal monopoles ( v > 0). At finite v, the monopole penalty vQ2 
+
+> r
+
+allows configu-rations with nonzero monopole charge Qr̸ = 0. Geomet-rically, monopoles act as endpoints of defect strings: the defect graph G is no longer restricted to closed loops but may contain open strings whose endpoints carry monopole charge.  
+
+> 1. Endpoint local state sum
+
+Consider a vertex r that serves as the endpoint of a sin-gle fundamental defect string, so that d0(r) = 1. In the direction-fixed Pauling approximation (Sec. I B), the sign of the defect link is determined by the string direction, and the three remaining vacuum links carry independent signs sℓ = ±1, each corresponding to Szℓ = ±S.Without loss of generality, suppose the string exits r
+
+on an outward background link with Sz = +( S − 1). The monopole charge (3) is then 
+
+Qr = ( S−1) + S(s1 − s2 − s3), (21) where s1 is the sign of the remaining outward vacuum link and s2, s 3 are the signs of the two inward vacuum links. The sum s1 − s2 − s3 takes values in {− 3, −1, 1, 3}
+
+with degeneracies 1 , 3, 3, 1 respectively, giving 
+
+Qr ∈ −(2 S+1) , −1, 2S−1, 4S−1 . (22) The minimum monopole charge is |Qr | = 1, achieved by the three vacuum-sign configurations with s1 − s2 − s3 =
+
+−1. The local state sum at the endpoint is therefore 
+
+zv (1) = 3 v + O
+
+
+
+v(2 S−1) 2 
+
+, (23) where the subleading term comes from the next small-est charge |Qr | = 2 S − 1, which carries the Boltzmann weight v(2 S−1) 2
+
+. An analogous calculation for the oppo-site string direction or for a defect on an inward back-ground link yields the same result.  
+
+> 2. Generalized loop-gas formula
+
+We extend the Pauling analysis of Sec. I B to gen-eral defect graphs G that may contain both closed loops and open strings. As before, for each connected compo-nent we fix the direction, which determines all defect-link signs; the 2 N − | G| vacuum-link signs remain as indepen-dent random variables. The local state sums at degree-0 and degree-2 vertices receive only exponentially small corrections, zv (0) = 6+ O(v4S2
+
+) and zv (2) = 2+ O(v4S2
+
+), and are unchanged at leading order. Let Nloop (G) and Nstring (G) denote the number of closed-loop and open-string components of G, respec-tively, and |∂G | = 2 Nstring the total number of endpoints. In the dilute gas (non-overlapping fundamental defects, 
+
+d0 ≤ 2 at interior vertices), the graph G consists of 
+
+V1 = |∂G | endpoint vertices (degree 1), V2 = |G|− Nstring 
+
+interior vertices (degree 2), and V0 = N − V1 − V2 vac-uum vertices (degree 0). The Pauling weight ratio (14) generalizes to Ωdir  
+
+> v
+
+(G)Ω( ∅) = 2 |G|
+
+ z(2) 
+
+z(0) 
+
+V2  zv (1) 
+
+z(0) 
+
+V1
+
+= 2 |G|
+
+ 13
+
+V2  v
+
+2
+
+|∂G |
+
+,
+
+(24) where the superscript “dir” indicates a single fixed direc-tion per component. Eliminating V2 = |G|−| ∂G |/2 via the degree-sum iden-tity 1 · V1 + 2 · V2 = 2 |G| (each edge contributes to the degree of its two endpoints): Ωdir  
+
+> v
+
+(G)Ω( ∅) =
+
+ 23
+
+|G|  3v2
+
+4
+
+|∂G |/2
+
+. (25) Each connected component admits two directions that give the same weight (for open strings, reversing the di-rection swaps Q → − Q at the endpoints, leaving vQ25unchanged). Including the direction factor 2 Nloop +Nstring 
+
+and the Boltzmann weight w−(2 S−1) |G|:contrib( G)
+
+Zice ,vac 
+
+= nNloop ˜x|G|
+
+> 1
+
+ 3v2
+
+2
+
+|∂G |/2
+
+= nNloop ˜x|G| 
+
+> 1
+
+y|∂G |, (26) where 
+
+y := v
+
+r 32 (27) is the monopole (endpoint) fugacity. Summing over all non-overlapping fundamental defect graphs, the partition function at finite v becomes 
+
+Zice = Zice ,vac 
+
+X
+
+> G
+
+nNloop (G) ˜x|G| 
+
+> 1
+
+y|∂G | , (28) with n = 2, ˜ x1 = 23 w−(2 S−1) (16), and y = vp3/2 (27). At v = 0 ( y = 0), only closed graphs ( |∂G | = 0) contribute, recovering the monopole-free loop-gas for-mula (17).     
+
+> II. LARGE-wEXPANSION OF THE S= 3 /2
+> SPIN-ICE MODEL
+
+In this section we derive the large-w expansion of the spin-S pyrochlore spin-ice model for S = 3 /2. The model definition and the Pauling vacuum [Secs. I A and I B, Eqs. (2)–(7)] carry over unchanged; here we focus on the aspects that are qualitatively different from the S ≥ 2case treated in Sec. I. For S = 3/2 (2 S = 3) the only defect levels are 
+
+d = 0 (vacuum, |Sz | = 3 /2) and d = 1 (fundamental, 
+
+|Sz | = 1 /2). The reversed fundamental d = 2 S − 1 = 2 corresponds to |Sz | = |S −2| = 1 /2, the same spin magni-tude as d = 1; its fugacity ratio is x2/x 1 = w−(2 S−3) = 1. Three fundamental strings carry total Z3 charge 3 ×1 ≡ 0(mod 3), and since each diamond-lattice vertex provides 
+
+k = 2 outward links, three strings can annihilate at a 
+
+single vertex without the spatially extended bridge pro-cess required for S ≥ 2. These features make the non-overlapping loop gas qualitatively insufficient.  
+
+> A. Direction-fixed local state sums
+
+As in the S ≥ 2 case (Sec. I B), we work in the 
+
+direction-fixed Pauling approximation: for each con-nected component of the defect graph we choose one of the two flow values f ∈ { 1, 2}, which fixes all defect-link signs; only the 2 N − | G| vacuum-link signs remain as free variables. The direction-fixed local state sum zdir (d0)counts the number of vacuum-link sign patterns at a ver-tex of degree d0 that satisfy the ice rule, given the fixed defect-link signs. 
+
+d0 = 0 (vacuum): All four links are vacuum; the ice-rule count is zdir (0) =  42
+
+ = 6. 
+
+d0 = 1 (endpoint): The constraint (S−1) σ1 +
+
+S(σ2+σ3+σ4) = 0 requires |σ2+σ3+σ4| = ( S−1) /S =1/3, but |σ2+σ3+σ4| ≥ 1. No solution exists: zdir (1) = 0 in the monopole-free sector. 
+
+d0 = 2 (loop vertex): With the direction fixed (Σ def =
+
+σ1 + σ2 = 0 forced by coprimality, as in Sec. I B), the two vacuum links must satisfy Σ vac = σ3 + σ4 = 0, giving 
+
+zdir (2) = 2 (one +, one −). 
+
+d0 = 3 (cubic vertex): Three defect links with |Sz | =1/2 and one vacuum link with |Sz | = 3 /2. The ice rule P 
+
+> ℓ
+
+Szℓ = 0 gives Σ def /2 + 3 σ4/2 = 0, where Σ def = σ1 +
+
+σ2 +σ3 ∈ {− 3, −1, 1, 3}. The only solutions have |Σdef | =3 (all three defect signs the same), fixing σ4 = −Σdef /3 = 
+
+∓1. Each flow choice f forces all three defect signs and hence also σ4; therefore 
+
+zdir (3) = 1 . (29) Compare the total (direction-summed) count ztotal (3) = 2 that appears in the odd-d0 paragraph of Sec. I B; the factor of 2 between these two conventions is precisely the direction degeneracy, which is accounted for by the overall factor nNcomp in the partition-function formula. 
+
+d0 = 4 (crossing vertex): All four links carry defects (|Sz | = 1 /2) and no vacuum links remain. The ice rule P 
+
+> ℓ
+
+Szℓ = 0 requires exactly two positive and two negative defect signs. At a crossing, two independent loops pass through the vertex; once the flows on both loops are fixed, all four defect signs are determined. The unique sign assignment satisfies the ice rule, giving 
+
+zdir (4) = 1 . (30) The Pauling probability at each active vertex is there-fore: 
+
+zdir (d0)24−d0 =
+
+
+
+2/4 = 1 /2 (d0 = 2) ,
+
+1/2 = 1 /2 (d0 = 3) ,
+
+1/1 = 1 (d0 = 4) .
+
+(31) The Pauling probabilities at degree-2 and degree-3 ver-tices coincide , but the direction-fixed local state sums do not: 
+
+zdir (2) 
+
+z(0) = 26 = 13 , zdir (3) 
+
+z(0) = 16 , zdir (4) 
+
+z(0) = 16 .
+
+(32) The difference between 1 /3 and 1 /6 at degree-3 vertices will produce a non-trivial vertex fugacity for cubic ver-tices; the coincidence zdir (4) /z (0) = zdir (3) /z (0) will pro-duce a distinct crossing fugacity at degree-4 vertices (see below).  
+
+> B. Direction factor
+
+The argument of Sec. I B shows that Σ def = 0 at every degree-2 vertex forces the Z3 flow f ∈ { 1, 2} to be con-stant along any path of degree-2 vertices. At a degree-3 6vertex, the constraint |Σdef | = 3 requires all three defect-link signs to be the same, which means all three branches meeting at the vertex carry the same flow f . Since revers-ing the global flow f → 3−f maps one valid configuration to the other, a connected component with any mixture of degree-2 and degree-3 vertices admits exactly two valid direction assignments. The direction factor for a general graph G is therefore 
+
+ν(G) = 2 Ncomp (G). (33) 
+
+C. Cubic vertex fugacity and the loop-gas formula 
+
+Consider a graph G with vertex degrees d0(r) ∈{0, 2, 3, 4} (no endpoints; the monopole-free case). Let 
+
+V2, V3, and V4 denote the numbers of degree-2, degree-3, and degree-4 (crossing) vertices, respectively. The degree-sum identity 2 V2 + 3 V3 + 4 V4 = 2 |G| (each edge contributes to the degree of its two endpoints) implies 
+
+V2 = |G| − 3V3/2 − 2V4. (In particular, V3 is always even for a closed graph, by the handshaking lemma.) Following the Pauling analysis of Sec. I B, the direction-fixed weight of G relative to the vacuum is Ωdir (G)Ω( ∅) = 2 |G|
+
+ zdir (2) 
+
+z(0) 
+
+V2  zdir (3) 
+
+z(0) 
+
+V3  zdir (4) 
+
+z(0) 
+
+V4
+
+= 2 |G|
+
+ 13
+
+V2  16
+
+V3  16
+
+V4
+
+. (34) Using V2 = |G| − 3V3/2 − 2V4:Ωdir (G)Ω( ∅) =
+
+ 23
+
+|G|
+
+·
+
+√32
+
+!V3
+
+·
+
+ 32
+
+V4
+
+, (35) where the exponents follow from |G| − V2 − V3 − V4 =
+
+V3/2 + V4 (obtained by substituting the degree-sum iden-tity). Including the direction factor (33) and the Boltz-mann weight w−(2 S−1) |G| = w−2|G|, the monopole-free partition function for S = 3 /2 becomes 
+
+Zice = Zice ,vac 
+
+X
+
+> G
+
+nNcomp (G) ˜x|G| 
+
+> 1
+
+λV3(G)3 λV4(G)4 (36) with n = 2, ˜ x1 = 23 w−2, the cubic vertex fugacity 
+
+λ3 := 
+
+√32 ≈ 0.866 , (37) and the crossing fugacity 
+
+λ4 := 32 . (38) The sum runs over all Z3-conserving graphs G on the di-amond lattice with vertex degrees d0(r) ≤ 4. This is a strict generalization of the non-overlapping loop gas (17): restricting to d0 ≤ 2 ( V3 = V4 = 0) recovers the stan-dard formula. The key distinction from the S ≥ 2 case is that cubic vertices enter at the same order in ˜ x1 as pass-through vertices, but with an additional geometric penalty λ3 = √3/2 < 1 per cubic vertex. For the sim-plest graphs with cubic vertices ( V3 = 2), this penalty is 
+
+λ23 = 3 /4. Crossing vertices ( d0 = 4), by contrast, carry an enhancement λ4 = 3 /2 > 1: the ice rule at a crossing is less restrictive relative to the vacuum than at a degree-2 vertex, because all four bonds are defect bonds and no vacuum-bond sign choices remain. In the dilute-gas limit ˜x1 → 0, crossings require at least two loops to overlap at a single vertex and therefore arise at total graph order 
+
+|G| ≥ | C1| + |C2|; they are thus geometrically subleading relative to simple loops and junctions. 
+
+D. Inclusion of thermal monopoles 
+
+At finite monopole fugacity v > 0, the defect graph may contain open strings whose endpoints carry monopole charge. At an endpoint vertex ( d0 = 1), the direction-fixed calculation of Sec. I D carries over: three of the four links are vacuum, and the minimum-charge configurations give zv (1) = 3 v + O(v(2 S−1) 2
+
+) = 3v + O(v4). For S = 3 /2, the defect graph may now include degree-1 (endpoint), degree-2 (pass-through), degree-3 (cubic), and degree-4 (crossing) vertices simultaneously. The degree-sum identity becomes V1 +2 V2 +3 V3 +4 V4 = 2 |G|,where V1 = |∂G | counts endpoints. Generalizing Eq. (34) to include endpoint weights: Ωdir  
+
+> v
+
+(G)Ω( ∅) = 2 |G|
+
+ 13
+
+V2  16
+
+V3  16
+
+V4  v
+
+2
+
+V1
+
+, (39) where v/ 2 = zv (1) /z (0) at leading order. From the degree-sum identity: Ωdir  
+
+> v
+
+(G)Ω( ∅) =
+
+ 23
+
+|G| v√32
+
+!|∂G | √32
+
+!V3  32
+
+V4
+
+. (40) Including the direction factor 2 Ncomp and the Boltzmann weight w−2|G|, and absorbing the direction factor of open-string components into the endpoint fugacity ˜ y (see below), the full partition function for S = 3 /2 at finite v
+
+is 
+
+Zice = Zice ,vac 
+
+X
+
+> G
+
+nNloop (G) ˜x|G| 
+
+> 1
+
+λV3(G)3 λV4(G)4 ˜y|∂G | ,
+
+(41) where Nloop (G) counts only the closed-loop components of G. When every open component of G has exactly two endpoints ( |∂G α| = 2), the direction factor of open-string components can be absorbed pairwise into the endpoint fugacity: 2 = ( √2) 2 per pair, giving 
+
+nNcomp v√32
+
+!|∂G |
+
+= nNloop ˜y |∂G |, (42) 7where the equality holds when |∂G α| = 2 for all open components, with ˜y := v
+
+r 32 = y, (43) the same endpoint fugacity as in the S ≥ 2 formula (27). A subtlety arises for S = 3 /2: the cubic vertex allows connected components with |∂G α|̸ = 2. By the hand-shaking lemma, |∂G α| and the number of cubic vertices 
+
+V3,α in a connected component share the same parity, so branched topologies can have |∂G α| = 3 , 4, 5, . . . 1. For any component with |∂G α|̸ = 2, the direction factor 2 per component is not equal to ( √2) |∂G α|, and the de-composition nNloop ˜y|∂G | acquires a correction factor of 21−| ∂G α|/2 per such component. However, all components with |∂G α|̸ = 2 require at least one cubic vertex and at least one monopole endpoint in the same connected com-ponent, and are therefore suppressed by both λ3 and v.At leading order in ˜ x1 and v, Eq. (41) is exact; sublead-ing corrections from branched components can be tracked systematically if needed. At v = 0 (˜ y = 0), only closed graphs ( |∂G | = 0) contribute and (41) reduces to the monopole-free for-mula (36). 
+
+III. EXACT PARTITION FUNCTION AND HIGH-TEMPERATURE EXPANSION OF THE Zq
+
+CLOCK MODEL 
+
+In this section we present a self-contained derivation of the high-temperature expansion (HTE) of the q-state clock model on the diamond lattice. The resulting graph-ical expansion—a sum over Zq -conserving flow config-urations weighted by normalized Fourier coefficients— provides the natural framework for analyzing string an-nihilation costs in the clock model. 
+
+A. Definition of the Zq clock model 
+
+Consider the diamond lattice with N sites and |E| =2N bonds (coordination number z = 4). Each site r
+
+carries a discrete angular variable 
+
+σr ∈ { 0, 1, 2, . . . , q − 1}, (44) representing angles θr = 2 πσ r /q on the unit circle. The partition function in the presence of a nearest-neighbor              
+
+> 1The value |∂G α|= 1 is excluded by the Z3flux conservation: each endpoint carries divergence D=±1, so PDend ≡0(mod 3) requires at least two (for opposite charges) or three (for equal charges) endpoints.
+
+coupling K and a symmetry-breaking field h is 
+
+Zclock := X 
+
+> {σr}
+
+exp 
+
+"
+
+K X
+
+> ⟨r,r′⟩
+
+cos 2π(σr − σr′ )
+
+q
+
++ hX
+
+> r
+
+cos 2πσ r
+
+q
+
+#
+
+. (45) The zero-field case is recovered by setting h = 0. Both the bond interaction and the site field share an identical functional form. We therefore introduce a uni-fied Boltzmann weight parametrized by a single coupling 
+
+κ:
+
+Bκ(∆) := exp 
+
+
+
+κ cos 2π∆
+
+q
+
+
+
+, ∆ ∈ Zq , (46) where all arithmetic in ∆ is understood modulo q. The bond weight corresponds to κ = K (coupling constant, 
+
+K = βJ , so K → 0 is the high-temperature limit), while the site weight corresponds to κ = h (symmetry-breaking field). Using this notation, the partition function (45) becomes 
+
+Zclock = X 
+
+> {σr}
+
+Y
+
+> r
+
+Bh(σr ) Y
+
+> ⟨r,r′⟩
+
+BK (σr − σr′ ). (47) The crucial analytic step is to expand Bκ(∆) in the discrete Fourier basis (characters) of Zq . Defining the primitive q-th root of unity ω := e2πi/q , the characters 
+
+{ωm∆}q−1 
+
+> m=0
+
+form a complete orthonormal set under the inner product (1 /q ) Pq−1∆=0 (·) ( ·). Accordingly, Bκ(∆) ad-mits the exact expansion 
+
+Bκ(∆) = 
+
+> q−1
+
+X
+
+> m=0
+
+ˆBκm ωm∆, (48) with Fourier coefficients ˆBκm = 1
+
+q
+
+> q−1
+
+X
+
+> ∆=0
+
+Bκ(∆) ω−m∆. (49) Since this expansion holds for any κ, it applies to both the bond weight ( κ = K) and the site weight ( κ = h). 
+
+B. Character expansion of the partition function 
+
+We now substitute the character expansion (48) into the partition function (47). For the bond weights, we set 
+
+κ = K; for the site weights, κ = h. Each bond ℓ acquires a bond current index nℓ ∈ { 0, 1, . . . , q − 1}, and each site 
+
+r a site character index mr ∈ { 0, 1, . . . , q − 1}:
+
+Zclock = X 
+
+> {σr}
+
+Y
+
+> r
+
+" q−1X 
+
+> mr=0
+
+ˆBhmr ωmr σr
+
+#
+
+× Y
+
+> ℓ
+
+" q−1X
+
+> nℓ=0
+
+ˆBKnℓ ωnℓ(σrA −σrB )
+
+#
+
+. (50) 8Here we have assigned a fixed orientation rA → rB to each bond (A-sublattice to B-sublattice on the bipartite diamond lattice). Exchanging the order of summation over {σr } and the Fourier indices {nℓ, m r }, we obtain 
+
+Zclock = X
+
+> {nℓ}
+
+X 
+
+> {mr}
+
+Y
+
+> ℓ
+
+ˆBKnℓ
+
+! Y
+
+> r
+
+ˆBhmr
+
+!
+
+× Y
+
+> r
+
+" q−1X 
+
+> σr=0
+
+ωσr (mr +Dr )
+
+#
+
+, (51) where the Zq divergence at each vertex r is 
+
+Dr := 
+
+(+ P 
+
+> ℓ∈r
+
+nℓ (mod q) if r ∈ A, 
+
+− P 
+
+> ℓ∈r
+
+nℓ (mod q) if r ∈ B. (52) The sign convention ensures that Dr measures the net outgoing bond current from r.The sum over the site variable σr at each vertex yields the orthogonality relation 
+
+> q−1
+
+X 
+
+> σr=0
+
+ωσr (mr +Dr ) = q δ mr +Dr ≡0 (mod q), (53) which fixes mr ≡ − Dr (mod q) at every vertex. In other words, the site character index mr is uniquely determined by the bond current divergence Dr , and the sum over 
+
+{mr } collapses. Applying Eq. (53) at all N sites, each site contributes a factor of q (from Pq−1 
+
+> σ=0
+
+1 = q), yielding an overall prefactor of qN . The constraint mr ≡ − Dr re-places the site Fourier coefficient ˆBhmr by ˆBh 
+
+> −Dr
+
+= ˆBhDr ,where the last equality follows from the conjugation sym-metry ˆBκm = ˆBκq−m (all subscripts are understood modulo 
+
+q). Factoring out ( ˆBK 
+
+> 0
+
+)|E| from the bond weights and ( ˆBh 
+
+> 0
+
+)N from the site weights, and defining the normal-ized fugacities 
+
+tn := ˆBKn
+
+ˆBK
+
+> 0
+
+, uD := ˆBhD
+
+ˆBh
+
+> 0
+
+, (54) with t0 = u0 = 1, we arrive at the exact result: 
+
+Zclock = qN ( ˆBh 
+
+> 0
+
+)N ( ˆBK 
+
+> 0
+
+)|E| X
+
+> {nℓ}
+
+Y
+
+> ℓ
+
+tnℓ
+
+Y
+
+> r
+
+uDr . (55) Equation (55) is exact at all temperatures ; no approxima-tion has been made. The character expansion is a com-plete discrete Fourier transform, the exchange of summa-tion order is algebraically exact, and the orthogonality relation is an identity. The sum P 
+
+> {nℓ}
+
+runs over all con-figurations nℓ ∈ { 0, 1, . . . , q − 1} without restriction; the constraint on the flow pattern is encoded in the vertex fugacities uDr .At h = 0 one has ˆBh 
+
+> 0
+
+= 1 and uD̸ =0 = 0, so the vertex fugacities impose a hard constraint and only Zq -conserving configurations survive, i.e. those satisfying 
+
+Dr ≡ 0 (mod q) ∀ r. (56) Eq. (55) then reduces to 
+
+Zclock h=0 = qN ( ˆBK 
+
+> 0
+
+)|E| X 
+
+> {nℓ}
+> Zq-conserving
+
+Y
+
+> ℓ
+
+tnℓ . (57) At finite h > 0, open strings whose endpoints carry Zq
+
+charges ( Dr̸ ≡ 0) are admitted, each penalized by the vertex fugacity uDr < 1. 
+
+C. Closed-form evaluation of the Fourier coefficients 
+
+Having established the exact HTE formula (55), we now derive useful closed-form expressions for the Fourier coefficients ˆBκm. The results in this subsection are exact for arbitrary κ; the “high-temperature” assumption is not used. The coefficients ˆBκm [Eq. (49)] admit a closed-form evaluation in terms of modified Bessel functions. The generating function for the modified Bessel functions of the first kind reads 
+
+eκ cos θ =
+
+> ∞
+
+X
+
+> n=−∞
+
+In(κ) einθ . (58) Substituting θ = 2 π∆/q into Eq. (58) and inserting into Eq. (49), we compute ˆBκm = 1
+
+q
+
+> q−1
+
+X
+
+> ∆=0
+
+" ∞X
+
+> n=−∞
+
+In(κ) ei2πn ∆/q 
+
+#
+
+e−i2πm ∆/q 
+
+=
+
+> ∞
+
+X
+
+> n=−∞
+
+In(κ) 1
+
+q
+
+> q−1
+
+X
+
+> ∆=0
+
+ei2π(n−m)∆ /q 
+
+| {z }
+
+= δn≡m (mod q)
+
+. (59) The orthogonality relation of the discrete Fourier trans-form yields a Kronecker delta that selects n = m + kq for all k ∈ Z. This gives the aliasing formula :ˆBκm =
+
+> ∞
+
+X
+
+> k=−∞
+
+Im+kq (κ). (60) We emphasize that this result is exact at all temperatures and holds for both κ = K (bond) and κ = h (site). 
+
+a. Properties. For κ > 0, the coefficients ˆBκm satisfy two important properties. (i) Conjugation symmetry : ˆBκm = ˆBκq−m for all m.This follows from I−n(κ) = In(κ) and the relabeling 
+
+k → − (k + 1) in the aliasing sum. (ii) Monotone decrease : ˆBκ 
+
+> 0
+
+> ˆBκ 
+
+> 1
+
+≥ ˆBκ 
+
+> 2
+
+≥ · · · ≥
+
+ˆBκ 
+
+> ⌊q/ 2⌋
+
+> 0. Each ˆBκm is a sum of strictly positive terms, with ˆBκ 
+
+> 0
+
+receiving the dominant I0(κ) contribution; in-creasing m shifts the dominant Bessel index further from the origin, reducing the sum. 9For the bond weight ( κ = K), the normalized bond fugacities tm := ˆBKm / ˆBK 
+
+> 0
+
+[already introduced in Eq. (54)] satisfy t0 = 1, tm = tq−m, and 1 = t0 > t1 ≥
+
+t2 ≥ · · · ≥ t⌊q/ 2⌋ > 0. The ⌊q/ 2⌋ independent fugaci-ties ( t1, t 2, . . . , t ⌊q/ 2⌋) parametrize the model. Likewise, the vertex fugacities uD := ˆBhD / ˆBh 
+
+> 0
+
+inherit the same monotone-decrease property with K replaced by h.   
+
+> 1. Explicit Fourier coefficients for q= 3
+
+For the case most relevant to the main text, we spe-cialize to q = 3 and κ = K. There is a single independent fugacity t1 = t2. The bond weights are 
+
+BK (0) = eK , BK (1) = BK (2) = e−K/ 2, (61) which gives the Fourier coefficients ˆBK 
+
+> 0
+
+= 13 (eK + 2 e−K/ 2), (62) ˆBK 
+
+> 1
+
+= ˆBK 
+
+> 2
+
+= 13 (eK − e−K/ 2), (63) so 
+
+t1 = eK − e−K/ 2
+
+eK + 2 e−K/ 2 = e3K/ 2 − 1
+
+e3K/ 2 + 2 . (64) In the high-temperature limit K → 0, the standard Bessel asymptotics Im(K) ∼ (K/ 2) m/m ! applied to the aliasing formula (60) yield tm ∼ Km/m !, so higher-current fugacities are increasingly suppressed. For gen-eral q ≥ 4, the explicit coefficients follow from the same aliasing formula; we refer to Ref. [2] for a comprehensive tabulation.  
+
+> D. Graph classification, loop gas, and annihilation cost
+
+We now return to the zero-field HTE formula (57) and explain why it constitutes a “high-temperature expan-sion,” and how the Zq -conserving graphs are classified. 
+
+a. Physical meaning of the high-temperature limit. 
+
+Bonds with nℓ = 0 contribute t0 = 1 and are inert. The active bonds ( nℓ̸ = 0) form a Zq -conserving graph 
+
+G, whose fugacity is Q 
+
+> ℓ∈G
+
+tnℓ . In the high-temperature limit K → 0, all fugacities tm → 0 ( tm ∼ Km/m !), so the dominant contribution to the partition function comes from the vacuum ( G = ∅), and configurations with a small number of active bonds |G| are suppressed as 
+
+t|G| 
+
+> 1
+
+∼ K|G|. This perturbative series structure in |G| is the essence of the “high-temperature expansion” : one sys-tematically enumerates contributions from small graphs (short loops) to large graphs (long loops) in increasing powers of K.
+
+b. Graph classification. The Zq -conserving con-straint (56) at each vertex with coordination z = 4 re-stricts the admissible current configurations. Any active vertex must have its four bond currents ( n1, n 2, n 3, n 4)summing to 0 (mod q), with the appropriate sign conven-tion from Eq. (52). For the simplest closed-loop configu-rations where each bond carries the fundamental current 
+
+nℓ = 1 (fugacity t1), the conservation law (56) requires exactly one incoming and one outgoing unit current at each active vertex. These are closed directed loops on the diamond lattice. 
+
+c. Annihilation channels. The key feature of the clock model is that higher current values nℓ =2, 3, . . . , ⌊q/ 2⌋ are available on each bond, with fugacity 
+
+tnℓ . The annihilation of q fundamental loops ( n = 1) on the diamond lattice is governed by the modular conser-vation law P 
+
+> ℓ∈r
+
+nℓ ≡ 0 (mod q), which is less restrictive 
+
+than the exact ice rule P 
+
+> ℓ∈r
+
+ϕℓ = 4 S of the spin-ice model (Sec. I C). This leads to qualitatively shorter cas-cades. For q ≤ z = 4 (i.e. S ≤ 2), all q fundamental strings can annihilate at a single z = 4 vertex: 1 + 1 + · · · + 1 
+
+| {z }
+
+> q
+
+=
+
+q ≡ 0 (mod q), so no intermediate bonds are needed and the annihilation penalty is trivially unity. In particu-lar, for q = 4 ( S = 2) the modular conservation allows single-vertex annihilation—in stark contrast to the spin-ice model, where the exact ice rule forces a spatially ex-tended cascade even for S = 2 (Table II of the main text). For q > 4 ( S > 2), single-vertex annihilation is im-possible since q > z , and a spatially extended cascade is required. However, because the modular conservation permits up to three fundamental currents to fuse at the first cascade vertex (using three of the four links), pro-ducing an intermediate bond with current n = 3, and two more fundamentals merge at each subsequent ver-tex, incrementing the intermediate current by 2, the in-termediate bonds carry odd currents n = 3 , 5, 7, . . . and the cascade terminates after only ⌈(q − 4) /2⌉ = ⌈S − 2⌉
+
+intermediate bonds. This is roughly half the length of the spin-ice cascade (2 S − 3 bonds; Sec. I C). A concrete illustration of the q = 6 ( S = 3) cascade is given in Sec. IV B 1 of the main text. The crucial point is that each intermediate bond car-ries current n ≥ 2 with weight tn. For general q, the leading Bessel asymptotics tm ≈ (K/ 2) m/m ! gives 
+
+tm
+
+t1
+
+≈ tm−11
+
+m! (K → 0) , (65) showing that the per-bond annihilation cost in the clock model is a polynomial (power-law) suppression in t1.     
+
+> IV. CORRESPONDENCE BETWEEN THE
+> S= 3 /2SPIN-ICE MODEL AND THE Z3CLOCK MODEL
+
+The results of the preceding two appendices—the Zq
+
+clock-model HTE (Sec. III) and the S = 3 /2 spin-ice ex-pansion (Sec. II)—share a common graphical structure. 10 In this section we make the correspondence precise, re-stricting throughout to the monopole-free sector ( v = 0 in the spin-ice model, h = 0 in the clock model).  
+
+> A. Same graph ensemble
+
+Both partition functions are expressed as sums over 
+
+Z3-conserving graphs on the diamond lattice. We recall the two formulas: 
+
+a. Clock model ( q = 3, h = 0). From Eq. (57) with q = 3, each Z3-conserving configuration {nℓ} is a set of bonds carrying fundamental current nℓ = 1or 2 (with nℓ = 2 ≡ − 1 (mod 3) acting as the reversed current). At every active vertex, the conservation law 
+
+Dr ≡ 0 (mod 3) [Eq. (56)] admits degree-2 (one incom-ing, one outgoing fundamental), degree-3 (all three in-coming or all three outgoing), and degree-4 (two incom-ing and two outgoing, i.e. a crossing ) vertices. (Degree-4 with all same-direction currents is forbidden because 4 × 1 = 4 ̸ ≡ 0 (mod 3), but the crossing configuration (n1, n 2, n 3, n 4) = (1 , 1, 2, 2) satisfies D = 1+1 −1−1 = 0.) Since the fugacities satisfy t2 = t1 [by ˆBKm = ˆBKq−m for 
+
+q = 3], every active bond receives the same weight t1
+
+irrespective of the current direction. Including the di-rection factor ν(G) = 2 Ncomp (one overall Z3-flow per component), the zero-field HTE reads 
+
+Zclock h=0 
+
+Zclock ,vac 
+
+= X
+
+> G
+
+2Ncomp (G) t|G| 
+
+> 1
+
+, (66) where the sum runs over all Z3-conserving graphs G on the diamond lattice with vertex degrees d0 ≤ 4. Note that the clock model assigns no vertex-dependent weight: junctions ( d0 = 3) and crossings ( d0 = 4) both enter with unit fugacity per vertex, just as degree-2 vertices do. 
+
+b. Spin-ice model ( S = 3 /2, v = 0 ). Eq. (36) gives 
+
+Zice 
+
+Zice ,vac 
+
+= X
+
+> G
+
+2Ncomp (G) ˜x|G| 
+
+> 1
+
+λV3(G)3 λV4(G)4 , (67) with ˜ x1 = (2 /3) w−2, λ3 = √3/2, and λ4 = 3 /2. The sum runs over the same set of Z3-conserving graphs on the diamond lattice with vertex degrees d0 ≤ 4. The Z3-conserving constraint is common to both mod-els because the allowed vertex degrees are identical ( d0 ∈{0, 2, 3, 4}), and in both cases a connected component admits exactly two global flow orientations ( f = 1 or 
+
+f = 2), contributing a direction factor 2 Ncomp . The graph ensembles therefore coincide term by term.  
+
+> B. Identification of fugacities
+
+Equating the fundamental-string fugacities in the two models provides the natural identification 
+
+t1 ←→ ˜x1 = 23 w−2 , (68) so that the large-w limit of the spin-ice model corre-sponds to the high-temperature limit ( K → 0, t1 → 0) of the clock model. Under this identification, both expan-sions are power series in the same small parameter.  
+
+> C. Key difference: vertex fugacities
+
+Comparing Eqs. (66) and (67), the spin-ice sum carries vertex-dependent factors λV3(G)3 λV4(G)4 that are absent in the clock model. The difference is summarized as follows: 
+
+ZZvac clock 
+
+= X
+
+> G
+
+2Ncomp t|G| 
+
+> 1
+
+,ZZvac ice 
+
+= X
+
+> G
+
+2Ncomp ˜x|G| 
+
+> 1
+
+λV3 
+
+> 3
+
+λV4 
+
+> 4
+
+. (69) The vertex fugacities act in opposite directions : λ3 =√3/2 < 1 penalizes cubic vertices (junctions), while λ4 =3/2 > 1 enhances crossing vertices relative to the clock model. For graphs with V3 = V4 = 0 (non-overlapping simple loops), the two models are term-by-term identical 
+
+under the substitution t1 = ˜ x1.
+
+a. Physical origin of λ3 and λ4. The physical ori-gin of these vertex fugacities—the degree-dependent ice-rule state counts and their ratios relative to the degree-2 baseline—is explained in Sec. IV A of the main text. These local factors aggregate, via the degree-sum iden-tity V2 = |G| − 3V3/2 − 2V4, into the vertex fugacities 
+
+λV3 
+
+> 3
+
+= ( √3/2) V3 and λV4 
+
+> 4
+
+= (3 /2) V4 as derived in Sec. II C. In summary, the ice rule P 
+
+> ℓ
+
+Szℓ = 0 is a strictly stronger constraint than Z3 conservation. The con-straints agree at degree-2 vertices, but differ at degree-3 vertices (penalty λ3 = √3/2 < 1) and at degree-4 cross-ings (enhancement λ4 = 3 /2 > 1). The Z3 clock model (at h = 0) may thus be viewed as the λ3 → 1, λ4 → 1
+
+limit of the S = 3 /2 spin-ice loop gas.  
+
+> D. Inclusion of monopoles at leading order
+
+We now extend the correspondence to include open strings (monopoles in the spin-ice language, Z3-charged vertices in the clock model), working at leading order in the respective endpoint fugacities. 
+
+a. Clock model ( q = 3, h > 0). At finite field strength h > 0, the exact HTE formula (55) admits open strings whose endpoints carry Z3 charge Dr̸ ≡ 0(mod 3). At a degree-1 vertex (one active bond), the net current is Dr = ±1, and the vertex fugacity is u1 = u2 =ˆBh 
+
+> 1
+
+/ ˆBh 
+
+> 0
+
+(by the conjugation symmetry ˆBκm = ˆBκq−m). Thus, each endpoint contributes a factor u1. Including the direction factor 2 Ncomp and the bond weights t|G| 
+
+> 1
+
+, and absorbing the direction factor of open-string components pairwise into the endpoint fugacity ˜ u1 := √2 u1 (exactly as in the S ≥ 2 case, Sec. V C), the partition function 11 becomes 
+
+Zclock 
+
+Zclock ,vac 
+
+= X
+
+> G
+
+nNloop (G) t|G| 
+
+> 1
+
+˜u|∂G | 
+
+> 1
+
+, (70) where |∂G | denotes the number of degree-1 (endpoint) vertices of G and Nloop counts only closed-loop compo-nents. Notice that the clock-model formula contains no vertex-degree-dependent weight beyond ˜ u1 at the end-points: cubic vertices ( d0 = 3) still enter with unit fu-gacity. 
+
+b. Spin-ice model ( S = 3/2, v > 0). At finite monopole fugacity, the spin-ice formula (41) reads 
+
+Zice 
+
+Zice ,vac 
+
+= X
+
+> G
+
+nNloop (G) ˜x|G| 
+
+> 1
+
+λV3(G)3 λV4(G)4 ˜y|∂G | , (71) with ˜ y = vp3/2 = y (43), the same endpoint fugacity as in the S ≥ 2 formula (27). Here Nloop counts only closed-loop components; the direction factor of open-string com-ponents is absorbed into ˜ y (Sec. II D). 
+
+c. Comparison. Both formulas (70) and (71) share the same graph ensemble and the same absorbed direc-tion factor nNloop , but differ in the vertex fugacities: 
+
+t|G| 
+
+> 1
+
+˜u|∂G |
+
+> 1
+
+| {z }
+
+> clock
+
+←→ ˜x|G| 
+
+> 1
+
+λV3 
+
+> 3
+
+λV4 
+
+> 4
+
+˜y|∂G |
+
+| {z }
+
+> spin ice
+
+. (72) The fugacity identification t1 ↔ ˜x1 [Eq. (68)] carries over unchanged. The endpoint fugacities are identified as ˜u1 = √2 u1 ←→ ˜y = vp3/2 . (73) The vertex fugacities λV3 
+
+> 3
+
+λV4 
+
+> 4
+
+again appear only in the spin-ice formula and are absent in the clock model, ex-actly as in the monopole-free case. Physically, the endpoint fugacities have different ori-gins: ˜u1 is controlled by the symmetry-breaking field h
+
+and vanishes as h → 0, while ˜ y is controlled by the monopole fugacity v = e−J/ (2 T ) and vanishes as T → 0. Despite this, their structural roles in the graphical expan-sion are identical—each penalizes the creation of open-string endpoints. The correspondence therefore extends cleanly to the monopole sector at leading order: the only additional differences between the two models are the vertex fugacities λ3 and λ4.A subtlety specific to S = 3 /2 is that the spin-ice model admits connected components containing both cu-bic vertices and endpoints simultaneously (Sec. II D). Such components can have |∂G α|̸ = 2, for which the pairwise absorption of the direction factor into ˜ y|∂G | ac-quires a correction factor of 2 1−| ∂G α|/2 per component. All such components require at least one cubic vertex 
+
+and at least one monopole endpoint; they are therefore doubly suppressed and do not affect the leading-order correspondence (72). 
+
+V. CORRESPONDENCE BETWEEN THE S ≥ 2
+
+SPIN-ICE MODEL AND THE Z2S CLOCK MODEL 
+
+We now establish the analogous correspondence for the general case S ≥ 2, where the spin-ice model maps to a 
+
+Zq clock model with q = 2 S. As in the S = 3 /2 case (Sec. IV), we begin with the monopole-free sector. 
+
+A. Non-overlapping loop gas: exact agreement at leading order 
+
+a. Clock model ( q = 2 S, h = 0 ). The zero-field HTE (57) sums over all Z2S -conserving current configu-rations. When every active bond carries the fundamental current nℓ = 1 (or the reversed nℓ = q − 1 = 2 S − 1), the conservation law (56) at each active vertex requires the number of incoming and outgoing unit currents to balance modulo q. For q = 2 S ≥ 4, this admits two types of active vertices using only fundamental currents: degree-2 (one incoming, one outgoing; 1 − 1 = 0) and degree-4 (two incoming, two outgoing; 1 + 1 − 1 − 1 = 0). Degree-3 vertices, by contrast, require at least one higher-current bond nℓ = 2 (since 1 + 1 + 1 = 3 ̸ ≡ 0 (mod q)for q ≥ 4), with fugacity t2 satisfying t2/t 1 → 0 as 
+
+K → 0 [Eq. (65)]; such configurations are energeti-cally subleading . Degree-4 vertices (loop crossings) carry weight t41 and are not energetically suppressed, but in the dilute-gas limit ( t1 → 0) they arise at higher total graph order |G| ≥ | C1| + |C2| and are therefore excluded in the leading-order expansion. Since t1 = tq−1 (conjugation symmetry), each non-overlapping loop of length |C| has weight t|C| 
+
+> 1
+
+and admits two orientations. The leading-order HTE is therefore 
+
+Zclock h=0 
+
+Zclock ,vac 
+
+= X
+
+> {C}
+
+2Nloop (C) t|C| 
+
+> 1
+
++ O(t1 t2) , (74) where the sum runs over non-overlapping closed loop con-figurations on the diamond lattice. 
+
+b. Spin-ice model ( S ≥ 2, v = 0 ). Eq. (17) gives 
+
+Zice 
+
+Zice ,vac 
+
+= X
+
+> {C}
+
+2Nloop (C) ˜x|C| 
+
+> 1
+
++ O(˜ x1 w−(2 S−3) ) , (75) with ˜ x1 = (2 /3) w−(2 S−1) (16). The sum runs over the same set of non-overlapping loop configurations. 
+
+c. Comparison. Under the fugacity identification 
+
+t1 ←→ ˜x1 = 23 w−(2 S−1) , (76) the two formulas (74) and (75) are term-by-term identical 
+
+at leading order. The direction factor n = 2 is the same in both models (since q = 2 S ≥ 4 implies 1 ̸ = q − 1, giv-ing two orientations per loop), and the underlying lattice (diamond, z = 4) is common. There is no analogue of the cubic vertex fugacity λ3 that distinguished the two mod-els in the S = 3 /2 case: since only d0 ≤ 2 vertices appear 12 at leading order, the Pauling weight zdir (2) /z (0) = 1 /3plays the same role as the clock-model fugacity t1, and both simply contribute ˜ x|C| 
+
+> 1
+
+or t|C| 
+
+> 1
+
+per loop. The correspondence between the S ≥ 2 spin-ice model and the Z2S clock model at leading order is thus ex-act and trivial —the two models generate the same non-overlapping loop gas on the same lattice with the same weights.  
+
+> B. Subleading corrections: exponential vs. polynomial
+
+The leading-order correspondence is exact, but the Z2S
+
+clock model is not the correct dual model beyond leading order. Two independent obstructions arise for q = 2 S ≥
+
+4, both absent for q ≤ 3 [1]: 1. Monopole contamination. The Zq Gauss law P 
+
+> ℓ∈r
+
+ϕℓ ≡ 0 (mod q) does not guarantee the ice rule Q = 0 for q ≥ 4. For example, at q = 4, the degree-4 configuration ( ϕ1, ϕ 2, ϕ 3, ϕ 4) = (1 , 1, 1, 1) satisfies 4 ≡ 0 (mod 4) but carries monopole charge Q = −4; the clock model counts it with the same weight as the ice-rule-satisfying crossing (1 , 3, 1, 3), whereas the spin-ice model suppresses it by vQ2
+
+.2. Bond-fugacity mismatch. For q ≥ 4 the clock model has a single coupling K that constrains the ⌊q/ 2⌋
+
+independent bond fugacities (e.g. t2 = t21 for q = 4). The spin-ice model, by contrast, has an indepen-dent energy scale μ controlling each defect level, so the fugacity ratios xd/x 1 = w−(d−1)(2 S−d−1) 
+
+cannot in general be reproduced by any single K.Physically, the clock model’s single coupling K
+
+rigidly locks all higher-current fugacities to powers of t1 (via the Bessel-function hierarchy td ∼ td
+
+> 1
+
+/d !), whereas the spin-ice model’s independent stiff-ness μ allows higher-defect bonds to be exponen-tially more costly ( xd/x 1 ∼ e−(d−1)(2 S−d−1) μ/T )than any power of x1 alone. This mismatch means that the clock model systematically over-estimates the weight of subleading (overlapping) graphs, explaining why the XY model—not the clock model—is the correct effective theory at sub-leading order. These obstructions do not affect the leading non-overlapping loop gas (which involves only degree-2 ver-tices with a single fugacity ˜ x1), but they preclude an exact matching at subleading order. The physically cor-rect dual model for S ≥ 2 is the XY model (continuous 
+
+U (1) symmetry), whose HTE employs exact conservation P 
+
+> ℓ∈r
+
+nℓ = 0 and thereby avoids the monopole contami-nation automatically [1]. Beyond these obstructions, the two models also differ in the geometry and cost of the annihilation cascade for higher-current (overlapping) bonds. 
+
+a. Cascade geometry. In the spin-ice model, the ex-act ice rule P 
+
+> ℓ∈r
+
+ϕℓ = 4 S forces a sequential one-at-a-time fusion of 2 S fundamental strings through 2 S −
+
+3 intermediate bonds carrying effective charges ϕ =2, 3, . . . , 2S − 2 (Sec. I C). In the clock model, the weaker modular conservation P 
+
+> ℓ∈r
+
+nℓ ≡ 0 (mod q) permits a qualitatively shorter cascade. For q ≤ z = 4 ( S ≤ 2), all q fundamentals annihilate at a single vertex with no intermediate bonds (Sec. III D). For q > 4 ( S > 2), the modular conservation allows up to three fundamentals to fuse at the first vertex and two more at each subsequent vertex, so the cascade requires only ⌈S − 2⌉ intermediate bonds carrying odd currents n = 3 , 5, 7, . . . —roughly half the spin-ice cascade length (Table II of the main text). 
+
+b. Per-bond costs. The two models also differ in the cost of each intermediate bond. In the clock model, the bond carrying current n has fugacity tn, with tn/t 1 ∼
+
+tn−11 /n ! [Eq. (65)], a polynomial function of the expan-sion parameter t1 ∝ K. In the spin-ice model, the bond carrying effective charge ϕ has fugacity xϕ = w−ϕ(2 S−ϕ),giving the excess cost 
+
+xϕ
+
+x1
+
+= w−(ϕ−1)(2 S−ϕ−1) , (77) which is an exponential function of the Boltzmann pa-rameter ln w = μ/T . The qualitative distinction “poly-nomial vs. exponential” refers to the dependence on the respective natural control parameters ( K for the clock model, μ/T for the spin-ice model). 
+
+c. Total cascade penalties. In the spin-ice model, the 2 S − 3 intermediate bonds ϕ = 2 , . . . , 2S − 2 yield the total bridge penalty 
+
+Pice bridge =
+
+> 2S−2
+
+Y
+
+> ϕ=2
+
+xϕ = w−(2 S−3)(2 S−1)(2 S+4) /6, (78) whose exponent grows as ∼ S3. In the clock model, the cascade involves only ⌈S − 2⌉ intermediate bonds with odd currents n = 3 , 5, . . . , 2⌈S−2⌉ + 1, giving 
+
+Pclock bridge =
+
+> ⌈S−2⌉
+
+Y
+
+> k=1
+
+t2k+1 . (79) Using tm ∼ tm 
+
+> 1
+
+/m ! [Eq. (65)], the leading asymptotic be-havior is Pclock bridge ∼ t  
+
+> P⌈S−2⌉
+> k=1 (2 k+1) 1
+
+, where the exponent in 
+
+t1 grows as ∼ S2 for large S. Thus the clock model bene-fits from both a shorter cascade and individually cheaper (polynomial) intermediate bonds. The annihilation cost structures are summarized in Ta-ble II of the main text. Despite the milder cascade cost, the spin-ice model’s subleading corrections carry an important structural dis-tinction. In the clock model, all corrections are controlled by a single expansion parameter t1 ∝ K: the cost of any intermediate bond is a power of t1 itself, so subleading graphs are merely higher-order terms in the same Tay-lor series. In the spin-ice model, the Boltzmann weight 13 
+
+w−(d−1)(2 S−d−1) introduces a separate energy scale—the spin stiffness μ—that suppresses intermediate bonds in-dependently of the loop fugacity ˜ x1. As a consequence, the non-overlapping loop gas (75) becomes an exponen-tially accurate approximation at large w, controlled by the Boltzmann gap ∆ = (2 S − 3) μ rather than by the loop fugacity alone. In the clock model, the analogous corrections vanish only as powers of t1 = ˜ x1 and there-fore enter at every polynomial order in the HTE. This structural difference is the physical origin of the stronger suppression of the bare coupling of the dangerously ir-relevant operator in the spin-ice model compared to the standard clock model.  
+
+> C. Inclusion of monopoles at leading order
+
+At finite monopole fugacity, the two models again ad-mit open strings (monopole endpoints). 
+
+a. Clock model (q = 2S, h > 0). The exact HTE (55) with finite h admits open strings whose end-points carry Z2S charge Dr̸ ≡ 0 (mod 2 S). At leading order, each bond carries the fundamental current nℓ = 1 (or q − 1), and endpoint vertices (degree 1) have net charge Dr = ±1 with vertex fugacity u1. Each open-string component admits two orientations, contributing a direction factor of 2. This factor is absorbed pairwise into the endpoint fugacity: 2 = ( √2) 2 per pair of endpoints, defining an effective endpoint fugacity ˜ u1 := √2 u1. The partition function at leading order is then 
+
+Zclock 
+
+Zclock ,vac 
+
+= X
+
+> G
+
+2Nloop (G) t|G| 
+
+> 1
+
+˜u|∂G | 
+
+> 1
+
++ O(t1t2), (80) where the sum runs over non-overlapping graphs G with vertex degrees d0 ≤ 2 (closed loops and open strings). 
+
+b. Spin-ice model ( S ≥ 2, v > 0). The generalized loop-gas formula (28) gives 
+
+Zice 
+
+Zice ,vac 
+
+= X
+
+> G
+
+nNloop (G) ˜x|G| 
+
+> 1
+
+y|∂G | + O(˜ x1 w−(2 S−3) ),
+
+(81) with y = vp3/2 (27). The sum runs over non-overlapping graphs with vertex degrees d0 ≤ 2. 
+
+c. Comparison. At leading order, the two formulas are again identical under the identifications 
+
+t1 ←→ ˜x1 = 23 w−(2 S−1) , ˜u1 ←→ y = vp3/2 .
+
+(82) In both models the direction factor for open-string com-ponents is absorbed into the endpoint fugacity in the same way (2 = ( √2) |∂G α| for each two-endpoint com-ponent), so the structural agreement is exact. Since the graph ensemble at leading order consists of non-overlapping loops and open strings (all vertex degrees 
+
+d0 ≤ 2), no cubic vertex fugacity appears, and the cor-respondence is exact. The only difference, as in the monopole-free case, arises at subleading order through the annihilation mechanism and through the obstructions identified in Sec. V B. Comparing with the S = 3 /2 correspondence (Sec. IV), the S ≥ 2 case is structurally simpler: the leading-order correspondence is exact with no additional vertex fugac-ity, because the non-overlapping loop gas with d0 ≤ 2is sufficient for both models. The vertex fugacities λ3
+
+and λ4 that distinguish the S = 3 /2 spin-ice model from the Z3 clock model have no counterpart for S ≥ 2, where the analogous higher-degree vertices are exponentially suppressed rather than entering at the same order as sim-ple loops.  
+
+> VI. EXACT DECOMPOSITION FRAMEWORK FOR THE SPIN-ICE UNIVERSALITY CLASS
+
+In this section we construct an exact decomposition of the vacuum-normalized partition function of the spin-S
+
+pyrochlore spin-ice model into a continuous U (1) sector (captured by a “decorated XY model”) and an expo-nentially suppressed discrete Z2S correction (the fusion-cascade contribution). This decomposition provides a 
+
+quantitative bound on the bare coupling of the discrete 
+
+Z2S anisotropy, establishing that it is exponentially sup-pressed. Combined with the renormalization-group (RG) irrelevance of this perturbation at the 3D XY fixed point, we argue that the S ≥ 2 spin-ice model belongs to the 3D XY universality class.  
+
+> A. Vacuum-normalized partition functions
+
+We define the vacuum-normalized partition function of the spin-ice model in terms of its high-temperature expansion (HTE) on the diamond lattice. The “vacuum” reference state is the configuration with no active bonds, and we normalize so that ˜Z = 1 for that state. 
+
+a. Spin-ice model ( S ≥ 2). From Eq. (75), ˜Zice = X
+
+> {C}
+
+2Nloop (C) ˜x|C| 
+
+> 1
+
++ O(˜ x1 w−(2 S−3) ) . (83) In the full (non-leading-order) expansion, the effective charge ϕℓ ∈ { 0, 1, . . . , 2S} on each bond can reach any value consistent with the ice rule Q = 0 at every vertex. The bond fugacity for charge ϕ is xϕ = w−ϕ(2 S−ϕ). Note that the ice rule is an exact U (1) conservation law—the same Gauss law as in the XY model—rather than the modular Z2S conservation of the clock model.    
+
+> B. Decorated XY model and the exact decomposition
+
+To analytically isolate the continuous U (1) sector of the ice-model partition function, we construct a “deco-rated XY model” that shares the XY graph ensemble 14 (exact U (1) conservation) but allows modified weights at crossing vertices.  
+
+> 1. Definition
+
+For a parameter β ≥ 1, define the decorated XY model 
+
+by ˜Z(β) 
+
+> XY
+
+:=  
+
+> U(1)
+
+X
+
+> {nℓ}
+
+hY 
+
+> ℓ
+
+˜x|nℓ|
+
+i
+
+βV4({nℓ}) , (84) where V4({nℓ}) denotes the number of degree-4 (crossing) vertices in the current configuration {nℓ}, i.e. vertices at which four bonds carry nonzero current. This model sums over the same U (1)-conserving graph ensemble as the standard XY model, but employs the ice-model bond fugacities ˜ x|n| and enhances each loop crossing by an ad-ditional fugacity factor β.The key feature of this model is that it sums over the same U (1)-conserving configurations as the standard XY 
+
+model—and hence excludes the Z2S cascade configura-tions that violate continuous current conservation—while using the ice-model bond fugacities ˜ x|n| that faithfully re-produce the microscopic weights of non-cascade graphs.  
+
+> 2. Exact decomposition of the ice model
+
+We now show that the ice-model partition function de-composes exactly into the decorated model (which cap-tures all non-cascade configurations) plus exponentially small cascade corrections. Since ˜Z(β) 
+
+> XY
+
+now employs the same ice-model bond fu-gacities ˜ x|n|, every non-cascade configuration in the ice model is represented with identical weight in ˜Z(3 /2)  
+
+> XY
+
+: the bond fugacities match by construction, and the crossing enhancement λ4 = 3 /2 (the universal Pauling weight ra-tio at degree-4 vertices, derived in Sec. I B) is universal for all S ≥ 3/2. For S ≥ 2, the ice model additionally includes cas-cade configurations (vertices of degree d0 = 3 connected by intermediate bonds of higher defect numbers). These cascade contributions are exponentially suppressed: as shown in Eq. (78), the total cascade penalty scales as 
+
+w−(2 S−3)(2 S−1)(2 S+4) /6, which is exponentially small in 
+
+μ/T for S ≥ 2. We denote the total cascade contribution by δZ cascade .Separating the crossing and cascade contributions, we obtain the exact decomposition for all S ≥ 3/2: ˜Zice = ˜Z(3 /2)  
+
+> XY
+
++ δZ cascade , (85) where the crossing enhancement λ4 = 3 /2 is universal (independent of S). For S = 3 /2, the cascade corrections vanish identically (2 S − 3 = 0), while for S ≥ 2 they are exponentially suppressed.  
+
+> 3. Irrelevance of the crossing decoration
+
+The decorated XY model (84) differs from the stan-dard XY model by the local factor βV4 at crossing ver-tices. We now argue that this decoration is irrelevant at the 3D XY fixed point in the RG sense. The crossing factor βV4 is a local interaction that acts at single vertices. In the loop-gas language, it modifies the weight of configurations in which two loops cross at the same site. Such a crossing can be written as a prod-uct of two loop operators at the same vertex, which has the form of a composite operator with scaling dimension ∆cross = 2∆ 1 + . . . , where ∆ 1 is the scaling dimension of the fundamental loop operator. More concretely, consider the operator Oβ := ( β −
+
+1) P 
+
+> r
+
+δV4(r),1 that generates the crossing decoration per-turbatively. At the 3D XY (i.e. O(2) Wilson–Fisher) fixed point, the crossing operator corresponds to a lo-cal modification of the quartic coupling u(ϕ∗ϕ)2 away from its fixed-point value. Being a local, analytic per-turbation, Oβ can be decomposed into contributions from singlet scalar operators s, s ′, s ′′ , . . . of the confor-mal field theory. The leading singlet s (the “energy” operator, with scaling dimension ∆ s ≈ 1.51 [3]) is rel-evant, but it merely shifts the critical temperature Tc
+
+without changing the universality class. The first op-erator capable of altering the nature of the transition is the subleading singlet s′, whose scaling dimension is ∆s′ = 3 + ω ≈ 3.79 > d = 3, where ω ≈ 0.79 is the lead-ing correction-to-scaling exponent determined by Monte Carlo studies [4], making s′ an irrelevant perturbation. All higher singlet scalars ( s′′ , . . . ) have even larger scaling dimensions and are therefore more strongly irrelevant. The physical reasoning is straightforward: at the 3D 
+
+XY critical point, the correlation length diverges and the long-distance physics is governed by the fluctuating phase field θ. A local modification of the crossing weight affects only the short-distance structure of the loop gas, producing at most a shift in Tc (from the relevant oper-ator s) and subleading corrections to scaling (from the irrelevant operator s′). The universality class itself is de-termined by the RG fixed point, which is insensitive to the value of β.Therefore, the decorated XY model ˜Z(β) 
+
+> XY
+
+belongs to the 3D XY universality class for all finite β. In particu-lar, ˜Z(3 /2)  
+
+> XY
+
+is in the 3D XY universality class.  
+
+> C. Complete exact decomposition and universality
+
+Combining the results of the previous subsections, we obtain the exact decomposition, valid for all S ≥ 3/2: ˜Zice = ˜Z(3 /2)  
+
+> XY
+
++ δZ cascade . (86) The crossing enhancement λ4 = 3 /2 is universal (inde-pendent of S), so the exact decomposition involves the 15 
+
+same decorated XY model ˜Z(3 /2)  
+
+> XY
+
+for all S. The only S-dependent quantity is the cascade correction δZ cascade :it vanishes identically for S = 3 /2 and is exponentially suppressed for S ≥ 2. For S ≥ 2, the free energy per site therefore satisfies 
+
+fice = f (3 /2)  
+
+> XY
+
++ O(e−c/T ) (87) for a positive constant c that depends on S, where f (3 /2) 
+
+> XY
+
+is the free energy of the decorated XY model with β =3/2. Since the crossing decoration is irrelevant at the 3D 
+
+XY fixed point (Sec. VI B 3), f (3 /2)  
+
+> XY
+
+has the same critical singularity as the standard 3D XY model. 
+
+a. From exact decomposition to universality. The exact decomposition (86) establishes that the bare cou-pling of the Z2S discrete anisotropy—carried by the cas-cade contribution δZ cascade —is exponentially suppressed: 
+
+O(e−c/T ). This is a non-perturbative bound on the ini-tial condition of the RG flow. We stress that the exact decomposition alone does not constitute a mathematical proof that the critical singularity is identical to that of the XY model; in principle, the exponentially small cor-rection could harbor a distinct (e.g. weakly first-order) singularity. However, the RG analysis of Sec. VI B 3 shows that the crossing decoration βV4 and the cascade-induced Z2S anisotropy are both irrelevant operators (∆ > d = 3) at the 3D XY fixed point. Combined with the exponential suppression of their bare couplings, the RG flow drives the system to the XY fixed point with no competing instabilities. The synergy between the exact decomposition and the RG irrelevance argument is the key strength of this approach: the exact decomposition provides a quanti-tative bound on the bare perturbation strength, while the RG provides the qualitative statement about the flow topology. Together, they establish that the S ≥ 2spin-ice model belongs to the 3D XY universality class (ν ≈ 0.672, η ≈ 0.038) with a degree of confidence that neither argument alone could achieve.    
+
+> VII. BETHE-PEIERLS ESTIMATE OF THE
+> S= 3 /2TRANSITION POINT
+
+The exact mapping of the S = 3 /2 spin-ice partition function to the 3-state Potts model [Eqs. (25) and (26) of the main text] enables an analytical estimate of the deconfinement fugacity wc via the Bethe–Peierls (cav-ity) approximation [5]. The diamond lattice has coor-dination number z = 4, and the Bethe lattice (Cayley tree) with the same coordination provides a controlled mean-field estimate. The Bethe approximation incorpo-rates nearest-neighbor correlations exactly—unlike sim-pler Weiss-type mean-field theory—and becomes exact in the limit z → ∞ . For a first-order transition, which is driven by local energetics rather than by divergent crit-ical fluctuations, the correlation length remains finite at the transition point; the only structural deficiency of the tree (the absence of loops) therefore produces only a mi-nor quantitative correction, making the Bethe approxi-mation particularly well-suited to this problem.  
+
+> A. Cavity recursion and fixed points
+
+Consider a q-state Potts model on a Bethe lattice with branching ratio b = z − 1 = 3. Each site has z = 4 neighbors, but on the tree one of these is the “parent” and the remaining b = 3 are “children.” The cavity method proceeds by computing the marginal probabil-ity that a given site takes spin state σ, conditional on the state of its parent, by iterating inward from the boundary of the tree. On the Bethe lattice, transla-tional invariance reduces these belief-propagation equa-tions to a single self-consistency condition. Specifically, let r := P (σ = σ0)/P (σ = σ1) ( σ1̸ = σ0) denote the ratio of the probability that a site adopts a reference ordered state σ0 to that of any other state; by the Sq symmetry of the Potts model, the q − 1 non-reference states are equivalent. A site’s cavity message r is determined by the b messages arriving from its children, each of which contributes a factor ( eK r + q − 1) /(r + eK + q − 2) via the Boltzmann weight eKδ σ,σ ′ ; the self-consistency condition is therefore 
+
+r =
+
+ eK r + q − 1
+
+r + eK + q − 2
+
+b
+
+. (88) The disordered fixed point r = 1 is always a solution and describes the paramagnetic phase in which all q states are equally populated. Linearizing Eq. (88) about r = 1 yields the Jacobian 
+
+dg dr r=1 
+
+= b t, t := eK − 1
+
+eK + q − 1 , (89) where t is the standard high-temperature expansion pa-rameter appearing in Eq. (26) of the main text. The disordered fixed point becomes locally unstable (the 
+
+disordered-phase spinodal ) at 
+
+tsp = 1
+
+b = 1
+
+z − 1 = 13 . (90)  
+
+> B. First-order coexistence
+
+For q = 2 (Ising), the ordered fixed point r∗ > 1 bifur-cates continuously from r = 1 at t = tsp , giving a stan-dard second-order transition. For q > 2, however, the cubic invariant ∼ Φ3 in the Landau free energy tilts the free-energy landscape asymmetrically, and the nontrivial (ordered) fixed point r∗ > 1 appears discontinuously at the ordered-phase spinodal tord < t sp —i.e., the ordered solution does not grow smoothly from r = 1 but jumps to a finite value, the hallmark of a first-order transition. To locate the thermodynamic coexistence point (as opposed 16 to the spinodal), we must compare the free energies of the two solutions. We evaluate the Bethe free energy per site via the Kikuchi cluster-variation formula [6, 7], 
+
+−βf = z
+
+2 ln Zbond − (z − 1) ln Zsite , (91) where the single-message ratio R := r1/(z−1) and the site and bond partition functions are determined by the cav-ity messages: 
+
+Zsite = Rz + ( q − 1) , (92) 
+
+Zbond = eK (r2 + q − 1) + 2 r(q − 1) + ( q − 1)( q − 2) .
+
+(93) Numerical solution for q = 3, z = 4 reveals that r∗
+
+jumps from 1 to approximately 2 .18 at tord ≈ 0.319, and the ordered phase has strictly lower free energy (ford < f dis ) immediately at this point. The equilib-rium first-order transition therefore coincides with the ordered-phase spinodal: 
+
+tc ≈ 0.319 (Bethe, q = 3 , z = 4) . (94)  
+
+> C. Mapping to the spin-ice fugacity
+
+The identification of the spin-ice loop-gas fugacity ˜ x1 = 
+
+> 23
+
+w−2 with the Potts high-temperature parameter t yields the Bethe-lattice estimate of the deconfinement fugacity: 
+
+wc =
+
+r 23 tc
+
+≈ 1.45 , w2 
+
+> c
+
+≈ 2.09 . (95) This overestimates the Monte Carlo result w2 ≈ 2.02 [8] (where Ref. [8] uses w to denote what corresponds to 
+
+w2 in our convention) by approximately 3.5%, consistent with the known tendency of the Bethe approximation to overestimate the stability of the ordered phase. A simpler—but less precise—bound follows from the disordered-phase spinodal alone: 
+
+wc ≥
+
+s
+
+23 tsp 
+
+= √2 ≈ 1.414 . (96) This lower bound already rules out a continuous 3D XY 
+
+transition at wc ≈ 1.36 predicted by the scaling formula 
+
+wc ≈ (1 .859) 1/(2 S−1) of the main text, providing indepen-dent analytical confirmation of the first-order character.  
+
+> D. Critical endpoint in a monopole field
+
+At finite temperature, thermal monopoles generate string endpoints with per-endpoint fugacity √3 v/ 2[Eq. (35) of the main text]. In the Potts language, this corresponds to a symmetry-breaking field h that ex-plicitly breaks the Z3 symmetry by favoring one of the three Potts states. The relationship between h and the monopole fugacity v is determined by the Z3 Fourier de-composition of the Potts field weight, giving the high-temperature parameter 
+
+s := eh − 1
+
+eh + 2 =
+
+√3 v
+
+2 . (97) At h = 0, the Bethe free energy (91) has two de-generate minima as a function of the cavity message r:the disordered solution r = 1 and the ordered solution 
+
+r = r∗ > 1, separated by a free-energy barrier. As h in-creases from zero, the field tilts the free-energy landscape, making one minimum deeper than the other. However, as long as the barrier persists, the first-order coexistence line survives [with a shifted coexistence coupling Kc(h)]. The critical endpoint is the value of h at which the bar-rier just vanishes and the two minima merge into a single minimum—beyond this point, the transition is replaced by a smooth crossover. On the Bethe lattice, the field modifies the cavity equa-tion (88) to 
+
+r = eh
+
+ eK r + q − 1
+
+r + eK + q − 2
+
+b
+
+. (98) The prefactor eh biases the cavity message: when h > 0, the iterative map favors r > 1 (the field-aligned state), breaking the symmetry between the q Potts states. To locate the critical endpoint, we seek the point in the ( K, h ) plane where the free-energy barrier between the ordered and disordered solutions disappears. In the language of the iterative map g(r) := ehf (r)b with 
+
+f (r) = ( eK r + q − 1) /(r + eK + q − 2), this requires three simultaneous conditions: (i) Fixed point: g(r) = r. The cavity message must be self-consistent. (ii) Marginal stability: g′(r) = 1. For h < h c, the map 
+
+g(r)−r has two stable zeros (the ordered and disor-dered fixed points) and one unstable zero between them. At the critical endpoint, two of these zeros— one stable and one unstable—coalesce, so the slope of g at the merged fixed point equals unity. (iii) Vanishing inflection: g′′ (r) = 0. This ensures that the coalescence is complete: the function g(r) − r
+
+has a cubic tangency (rather than a simple tan-gency with a residual barrier), confirming that the free-energy barrier has fully disappeared. These three equations determine the three unknowns (Kc, h c, r c) at the critical endpoint. From condition (iii), writing g′′ (r) = ehbf b−1[( b −
+
+1)( f ′)2 + f f ′′ ] = 0 and noting ehf b−1̸ = 0, the inflec-tion condition ( b − 1)( f ′)2 + f f ′′ = 0 (with b = 3, i.e., 2( f ′)2 + f f ′′ = 0) reduces to 
+
+r = e2K + eK − 4
+
+eK . (99) 17 Substituting into the remaining two conditions and elim-inating r and h yields, remarkably, a single quadratic equation for x := eK :
+
+x2 + x − 8 = 0 =⇒ eKc =
+
+√33 − 12 . (100) The remaining critical-endpoint parameters are deter-mined analytically: 
+
+rc =
+
+√33 + 1 4 , fc =
+
+√33 − 14 , (101) 
+
+ehc = rc
+
+f 3
+
+> c
+
+= 16( √33 + 1) 36 √33 − 100 ≈ 1.010 . (102) The critical field hc ≈ 0.010 is small, reflecting the weak-ness of the first-order transition at q = 3 (marginally above the tricritical value qc = 2). Translating back to the spin-ice monopole fugacity via Eq. (97): 
+
+vc = 2
+
+√3
+
+ehc − 1
+
+ehc + 2 ≈ 0.004 , Tc
+
+J = 12| ln vc| ≈ 0.09 .
+
+(103) This estimate indicates that the S = 3 /2 first-order tran-sition survives only in a narrow low-temperature window 
+
+T ≲ J/ 11, consistent with the expectation that the q = 3 Potts first-order transition is weak. Beyond vc, the tran-sition is rounded into a crossover, restoring the generic behavior shared by all other spin values. 
+
+[1] S. Watanabe, Y. Motome, and H. Watanabe, Dualities and topological classification of the S = 1 pyrochlore spin ice, arXiv preprint arXiv:2603.03852 (2026). [2] F. Y. Wu, The Potts model, Rev. Mod. Phys. 54 , 235 (1982). [3] S. M. Chester, W. Landry, J. Liu, D. Poland, D. Simmons-Duffin, N. Su, and A. Vichi, Carving out OPE space and precise O(2) model critical exponents, J. High Energy Phys. 2020 , 142. [4] M. Hasenbusch, Monte Carlo study of an improved clock model in three dimensions, Phys. Rev. B 100 , 224517 (2019). [5] R. J. Baxter, Exactly Solved Models in Statistical Mechan-ics (Academic Press, London, 1982). [6] R. Kikuchi, A theory of cooperative phenomena, Phys. Rev. 81 , 988 (1951). [7] J. S. Yedidia, W. T. Freeman, and Y. Weiss, Generalized belief propagation, Advances in Neural Information Pro-cessing Systems 13 , 689 (2001). [8] J. Pandey, S. Kundu, and K. Damle, Z3 confined and de-confined Coulomb liquids in Seff = 3 /2 pyrochlore mag-nets, arXiv preprint arXiv:2602.23041 (2026).

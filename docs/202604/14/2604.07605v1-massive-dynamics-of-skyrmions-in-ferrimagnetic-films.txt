@@ -1,0 +1,722 @@
+Title: Massive dynamics of skyrmions in ferrimagnetic films
+
+URL Source: https://arxiv.org/pdf/2604.07605v1
+
+Published Time: Fri, 10 Apr 2026 00:20:56 GMT
+
+Number of Pages: 15
+
+Markdown Content:
+# Massive dynamics of skyrmions in ferrimagnetic films 
+
+Dmitry A. Garanin and Eugene M. Chudnovsky 
+
+Physics Department, Herbert H. Lehman College and Graduate School, The City University of New York, 250 Bedford Park Boulevard West, Bronx, New York 10468-1589, USA 
+
+(Dated: April 10, 2026) Deformations of skyrmions arising from the presence of more than one magnetic sublattice lead to their massive dynamics in ferrimagnets as compared to the massless dynamics in 2D ferromagnets. This results in the gyroscopic motion of skyrmions, which manifests as skyrmion cyclotron resonance that can be excited by microwaves or spin currents. We investigate analytically and numerically the motion and resonant oscillations of individual skyrmions and skyrmion lattices in the presence of dissipation in a two-sublattice transition-metal – rare-earth (TM/RE) system. The focus is on the dependence of the skyrmion dynamics on the RE concentration. Parameters of the CoGd ferrimagnet are utilized in the numerical work. The massive dynamics of skyrmions in ferrimagnets, as well as the spectrum of their excitations, undergo significant changes near the angular momentum compensation point, which should not be difficult to detect in experiments. 
+
+I. INTRODUCTION 
+
+Frequencies of excitation modes in ferrimagnets have been studied for over 70 years, starting with the com-prehensive investigation by Wangsness [1] and the work of Kittel [2] on ferromagnetic resonance in rare-earth garnets. Later on, several authors re-derived their re-sults with a focus on the angular momentum compen-sation point (AMC) where excitation frequencies go up [3–10]. The latter was confirmed by numerous experi-ments [6, 11–14] and prompted the increased interest to the potential of ferrimagnets for applications. Similar to antiferromagnets, due to the hardening of spin exci-tations at the AMC, ferrimagnets permit fast dynamics required for the information processing [12, 14–28]. What makes them more suited for that purpose than antifer-romagnets is the possession of uncompensated magnetic moments at the AMC due to the different gyromagnetic ratios of atoms belonging to different magnetic sublat-tices. Within a certain range of parameters and magnetic fields, films of many ferrimagnetic materials possess topo-logical defects – skyrmions. The interest in skyrmions, besides their mathematical beauty, has been inspired by their potential for topologically protected informa-tion technology [29]. On changing the magnetic field, skyrmion lattices (SkL) often replace conventional mag-netic domain structures. Excitation modes of individual skyrmions and SkL have been studied in ferromagnets [30–37], but very scarcely, if at all, in ferrimagnets. In this connection, it is important to note that the dynam-ics of skyrmions depends on whether they are massive or massless. The mass of a magnetic skyrmion has been a puzzle of skyrmion physics [38–44]. While the finite mass of a ferromagnetic domain wall has been computed [45] and subsequently measured by various methods, the inertial mass associated with the motion of the center of the topo-logical charge of a skyrmion in a uniform 2D film has been rigorously shown to be exactly zero [46, 47] (see also Ref. [48]). It was demonstrated theoretically that 
+
+Figure 1. Two-sublattice skyrmion in a TM/RE ferrimagnet. Far from the skyrmion’s core, TM spins (larger cones) are directed down (green), and RE spins (smaller cones) are di-rected up (orange). 
+
+a nonzero skyrmion mass can arise from its confinement in a nanoring [49] or nanotrack [47], or it can be gen-erated by the interaction with other degrees of freedom, such as phonons [50]. Experiments on the skyrmion mass have been inconclusive so far, with various authors citing numbers from as small as 10 −27 kg to as large as 10 −22 kg. The question of the skyrmion mass acquires special im-portance when addressing the excitation spectrum of a ferrimagnet in the presence of skyrmions. The spin tex-ture of a ferrimagnetic skyrmion is illustrated in Fig. 1 for a transition metal (TM) – rare earth (RE) ferrimagnet having antiferromagnetic exchange interaction between the TM and RE sublattices. A specific deformation of the skyrmion corresponding to the tiny splitting of its spin texture into two shifted skyrmions belonging to dif-
+
+> arXiv:2604.07605v1 [cond-mat.mes-hall] 8 Apr 2026
+
+2ferent spin sublattices (shown by different colors in Fig. 1) has been shown to generate skyrmion inertia [51–54]. This results in the mass term in the Thiele equation [55] describing skyrmion dynamics. In this paper, we derive the Thiele equation for a ferrimagnet, taking into account the above mentioned deformations of the skyrmion and the dissipation of the skyrmion motion. The skyrmion mass has a universal form determined by the intersub-lattice exchange interaction, and is independent of the spin densities of the sublattices. In a ferrimagnetic film of finite thickness, it grows linearly with the number of atomic layers, with a typical value for one atomic layer in a TM/RE ferrimagnet being of the order of the proton mass. One of the consequences of the finite skyrmion mass is its gyroscopic motion, resembling the circular motion of the electron in the magnetic field. It can be excited for individual skyrmions by the spin currents or microwaves, similar to how electron cyclotron resonance is excited in metals [56]. For a Belavin-Polyakov (BP) pure-exchange skyrmion [57] the frequency of the skyrmion cyclotron resonance (SCR) in a two-sublattice ferrimagnet, that follows from our analytical model, is Ω = ( J′/ℏ)|S − cΣ|,where J′ is the intersublattice exchange interaction be-tween TM atoms of spin S and RE atoms of spin Σ > S ,and c is the ratio of their concentrations. Numerically, we find that this simple formula for the SCR frequency possesses high universality. It works remarkably well for individual skyrmions and skyrmion lattices when interac-tions other than the nearest-neighbor exchange, such as the magnetic anisotropy and the Dzyaloshinskii-Moriya interaction (DMI), are added to the Hamiltonian. Our model is based on a spin-lattice Hamiltonian tai-lored for a CoGd ferrimagnet. The numerical methods include the energy minimization and the computation of the dynamical evolution of the system described by the Landau-Lifshitz equation for a many-spin system on the lattice. While in the analytical approach, the dissipation is introduced phenomenologically, in the numerical ap-proach, it appears naturally due to the nonlinearity of the spin dynamics. We obtain the frequencies of spin ex-citations by computing the fluctuation spectrum (FS) of the system. Contrary to the uniform ferrimagnetic modes whose frequencies in the absence of skyrmions go up in the region of intermediate RE concentrations ( c ∼ S/ Σ)[10], the SCR frequency Ω = ( J′/ℏ)|S − cΣ| goes down and vanishes at the AMC point. In this region, in the presence of the DMI and the anisotropy, as in CoGd, the SCR mode strongly hybridizes with other ferrimagnetic modes, pushing them down. Such a dramatic change in the behavior of the ferrimagnetic modes in the presence of skyrmions should not be difficult to observe in exper-iments. The paper is structured as follows. The model and excitation spectrum of a TM/RE ferrimagnet without topological defects are discussed in Sec. II. Coupled dis-sipative Thiele equations for a ferrimagnetic skyrmion, which permit separation of skyrmion centers in the two sublattices, are presented in Sec. III. The massive Thiele equation describing the dynamics of the twin skyrmion, its effective mass, and the frequency of the cyclotron res-onance are obtained in Sec. IV. Section V is devoted to the analytical solution of the obtained massive Thiele equation. The numerical methods are introduced in Sec. VI. The numerical results on skyrmion trajectories and the dependence of the excitation spectrum of SkL on the RE concentration are presented in Sec. VII.  
+
+> II. THE MODEL
+
+Keeping ferrimagnetic films in mind, we consider a square lattice model of a TM/RE ferrimagnet with skyrmions, described by the Hamiltonian 
+
+H = − 12
+
+X
+
+> ij
+
+Jij Si · Sj + J′ X
+
+> i
+
+Si · piΣi
+
+− [H + h(t)] · X
+
+> i
+
+(gμ B Si + g′μB piΣi) − D
+
+2
+
+X
+
+> i
+
+S2
+
+> i,z
+
++ A X
+
+> i
+
+(Si × Si+δx )x + Si × Si+δy )y
+
+ . (1) Here Jij is the ferromagnetic nearest-neighbor exchange within the square TM-sublattice of spins Si with the cou-pling constant J > 0 and lattice spacing a. The RE spins 
+
+Σi occupy a similar square lattice and are coupled to the TM spins with the coupling constant J′ > 0. These spins are diluted, which is taken into account by the occupa-tion factors pi = 0 , 1, so that ⟨pi⟩ = c. As a variant, we also consider the no-disorder model, in which all RE spins have the same length cΣ. Other terms are the easy-axis anisotropy and the DMI of the Bloch type within the TM sublattice. This kind of DMI favors skyrmions with the counterclockwise orientation of the in-plane spin components for A > 0. The Néel-type DMI always yields identical results, so it will not be considered here. Having CoGd in mind, we chose S = 3 /2, Σ = 7 /2, J′/J = 0 .2,
+
+D/J = 0 .03 , g = 2 .2, g′ = 2 , and A/J = 0 .1. In the Zeeman term, H is the static applied magnetic field and 
+
+h(t) is the microwave (MW) field. The continuous version of this lattice model has the energy density given by 
+
+ϵ = ϵex + ϵZ + ϵA + ϵDMI + . . . , (2) where 
+
+ϵex = ad+2 J
+
+2 ∇ρS,α · ∇ρS,α + adJ′ρS · ρΣ
+
+ϵZ = −H · (gμ B ρS + g′μB ρΣ)
+
+ϵA = −ad D
+
+2 ρ2
+
+> S,z
+
+ϵDMI = −ad+1 AρS · (∇ × ρS ) , (3) where d is the hypercubic lattice dimension (here d =2), ρS = S/a d and ρΣ = Σ/a d are TM and RE spin 3densities, the summation over repeated indices is implied in the exchange energy ϵex , and in ϵDMI the derivatives over z should be discarded. The dynamics of the lattice spins is described by the Landau-Lifshitz (LL) equation, augmented by the spin-current term: 
+
+ℏ ∂Si
+
+∂t +ℏ (vS · ∇ ) Si = Si ×Heff ,S,i , −αSi ×(Si × Heff ,S,i )
+
+(4) where Heff ,S,i = −∂H/∂ Si is the effective field (in the energy units) acting on the TM sublattice, α is the phe-nomenological damping coefficient, and vS is the convec-tive velocity arising from the (time-dependent) electric current flowing in the film’s plane and acting on the TM spins Si. The electric current is initially non-polarized and it flows through the material carrying the spin po-larization from one site to the other. The equation of motion for the RE spins is similar, except vΣ is negligi-ble because RE spins are due to the f -electrons which are close to the atomic cores and effectively decoupled from the charge carriers. For the gradient of Si we use the finite-difference form on the lattice. This model differs from that including the spin-polarized current injected in the system. In the uniform state, the ferrimagnet possesses two spin-wave branches. Replacing pi ⇒ c (the no-disorder model) and using the linear spin-wave theory, for the en-ergies of the modes ε± = ω±/ℏ one obtains [10] 
+
+ε± = 12
+
+
+
+εT M + εRE ±
+
+q
+
+(εT M − εRE )2 − 4cΣSJ ′2
+
+
+
+,
+
+(5) where 
+
+εT M ≡ S (J0 − Jk + D) + gμ B H + cΣJ′ (6) 
+
+εRE ≡ g′μB H − J′S, (7) and Jk is the lattice Fourier transform of Jij and J0 ≡
+
+Jk=0. The signs of ε± are unimportant as they depend on the direction of spin precession. The DMI does not affect the linear excitation modes in the uniform state. Figure 2 shows the RE-concentration dependence of both modes at k = 0.For the H = 0 , the uniform modes cross at 
+
+c = S
+
+Σ
+
+
+
+1 − DJ′
+
+
+
+, (8) where 
+
+ε± = ±S√DJ ′. (9) At the angular-momentum compensation (AMC) point, 
+
+c = S/ Σ, one has 
+
+ε± = S
+
+2
+
+
+
+D ± pD (4 J′ + D)
+
+
+
+. (10) Typically J′ ≫ D, so that the second term under the square root is negligible. One can see that the mode split-ting at compensation is ε+ − | ε−| = SD. For the chosen  
+
+> Figure 2. Energies of the uniform modes in a ferrimagnet vs the RE concentration c, as given by Eq. (5).
+
+parameters one has ε+/(SJ ) = 0 .0925 and ε−/(SJ ) = 
+
+−0.0625 .Far from the AMC point, one can expand Eq. (5) considering J′ as large compared to D. One obtains 
+
+εLF ∼= S2 (J0 − Jk + D) + ( gS − cg ′Σ) μB HS − cΣ (11) for the low-frequency (acoustical) mode and εHF ∼=(cΣ − S) J′ for the high-frequency (exchange or optical) mode. Note that εHF = ε− and εLF = ε+ for smaller c
+
+and εHF = ε+ and εLF = ε− for larger c, see Fig. 2.  
+
+> III. THIELE EQUATIONS FOR RIGID TM AND RE SKYRMIONS
+
+Whereas the dynamics of skyrmions can be computed at the atomic level using Eq. (4), analytically it can be described by the Thiele equation [55] that has a topolog-ical background and provides a linear relation between the skyrmion velocity and the applied force, thus no in-ertia effects. There are at least three derivations of the Thiele equation. Two of them assume a rigid shape of the skyrmions and use (i) the Lagrangian approach and (ii) the LL equation in the Gilbert form (see, e.g., Ref. [61]). It was argued that the deformation of the skyrmion gives rise to inertia effects, and a phenomenological skyrmion-mass term was added to the Thiele equation. However, microscopic calculations, both analytical and numerical, show that these inertia effects are very small, at least for small skyrmions [62]. On the other hand, the third derivation of the Thiele equation using the definition of the skyrmion’s center R as the center of mass of its topo-logical charge [46, 47] 
+
+R = 1
+
+Q
+
+ˆ
+
+dxdy rq(x, y ), (12) 4    
+
+> Figure 3. The 116 ×132 of spins with a SS (top) and a SkL (bottom), with only TM spins shown. Orange/green – spins up/down. White arrows are in-plane spin components.
+
+where 
+
+q = 14π
+
+ ∂s
+
+∂x × ∂s
+
+∂y 
+
+
+
+· s (13) is the topological charge density and Q =´ dxdy q (x, y ) = 0, ±1, . . . is the topological charge of the skyrmion, is exact and insensitive to any skyrmion’s deformations. In our case of skyrmions created by the DMI, one has |Q| = 1 . As the difference between the positions of the skyrmion’s center defined in different ways is much smaller than the skyrmion’s size 
+
+λ, it is clear that the skyrmion’s trajectory cannot be significantly changed by using another definition of the skyrmion’s center, sensitive to the skyrmion deforma-tions. Thus, inertia effects for a ferromagnetic skyrmion are small or absent, and here is no place for the mass term in the Thiele equation. This is a consequence of the skyrmion having the topological charge. Conversely, the domain wall in a biaxial ferromagnet does not have a topological charge but has a mass. For a ferrimagnet, there are skyrmions in the TM and RE subsystems, and the shapes of them are assumed to be given by [51–54] 
+
+S(r) = Sf (r − RS ) , σ(r) = −Σf (r − RΣ) , (14) where f is a unit-vector function directed up in the skyrmion’s core and down at infinity. We anticipate that dynamically the skyrmions’ centers RS, Σ can be dis-placed by the vector d with respect to each other: 
+
+d ≡RS − RΣ, (15) and we neglect deformations of the TM and RE skyrmions [51–54]. This approximation is justified by the accuracy of the Thiele equation and by the fact that the interaction force between the two skyrmions is an in-tegral quantity in which the effect of deformations should be averaged out to the lowest order. The system of two coupled Thiele equations [55] for the skyrmions in the TM and RE subsystems, augmented by the spin-current terms, has the form 
+
+¯FS = −GS × (VS − vS ) + Γ S (VS − vS )
+
+¯FΣ = GΣ × (VΣ − vΣ) + Γ Σ (VΣ − vΣ) . (16) Here ¯FS and ¯FΣ are total forces acting on the TM and RE skyrmions, GS = GS ez and GΣ = GΣez are gyrovec-tors, 
+
+GS, Σ = 4 πℏρS, Σ, ρS = S/a 2, ρΣ = cΣ/a 2, (17) 
+
+ρS, Σ are 2D spin densities defined in Eq. (3). ΓS, Σ =
+
+αDℏρS, Σ are damping coefficients (see, e.g., the Ap-pendix in Ref. [61]) where 
+
+D ≡ 12
+
+ˆ
+
+dxdy 
+
+" ∂f
+
+∂x 
+
+2
+
++
+
+ ∂f
+
+∂y 
+
+2#
+
+. (18) For the BP skyrmion, which is realized for a small DMI and small anisotropy, the exchange dominates and D is equal to 4π|Q|, so that 
+
+ΓS
+
+GS
+
+= ΓΣ
+
+GΣ
+
+= αD
+
+4π ≡ Λ (19) is of the order of the damping constant α (for simplicity, we assume the same α in the TM and RE subsystems). 5Note that operating with the RE spin density cΣ/a 2 we neglect the effect of disorder. Although vΣ is negligible, we keep it for generality. The forces acting on the skyrmions are given by 
+
+¯FS = FS + FSΣ
+
+¯FΣ = FΣ + FΣS , (20) where FS and FΣ are external forces, whereas FSΣ and 
+
+FΣS are the interaction forces. The former can be, e.g., due to the interaction of the skyrmion with boundaries or due to the magnetic-field gradient. The latter follow from the TM-RE skyrmion interaction energy USΣ. Replacing summation by integration for λ ≫ a, one obtains 
+
+USΣ = J′
+
+a2
+
+ˆ
+
+dxdy S(r) · Σ(r)= −ρS ρΣJ ′
+
+ˆ
+
+dxdy f (r) · f (r + d) , (21) where J ′ ≡ a2J′ is the intersublattice coupling of spin densities in Eq. (3). Expanding this for d ≪ λ, one obtains 
+
+USΣ = 12 ρS ρΣJ ′Dd2 + const , (22) where D is given by Eq. (18). Notice that the exchange energy associated with the separation of the centers of sublattice skyrmions is of the order of J′(d/a )2, so that in practice one should always expect d ≪ a. Now the interaction forces are given by 
+
+FSΣ = −FΣS = − ∂U SΣ
+
+∂RS
+
+= −ρS ρΣJ ′Dd. (23) 
+
+IV. SKYRMION MASS AND CYCLOTRON RESONANCE 
+
+The interaction between the shifted TM and RE skyrmions results in their motion in the same direc-tion, that is, in the ballistic motion of the system of the TM-RE skyrmions. Away from the angular-momentum compensation point, the velocities of the TM and RE skyrmions are different, thus the motion of the ferrimag-netic skyrmion is curved. If an external force is applied, the skyrmion shift d increases with time and the system accelerates in the direction of the applied force. The dy-namics of the ferrimagnetic skyrmion is explained in Fig. 4. Below, we will obtain a massive equation of motion for a ferrimagnetic skyrmion by rearranging the two Thiele equations into a single equation for a combination of the skyrmions’ velocities VS, Σ = ˙RS, Σ. Resolving Eq. (16) for the velocities, one obtains 
+
+VS − vS = GS × ¯FS + Γ S ¯FS
+
+G2 
+
+> S
+
++ Γ 2
+
+> S
+
+VΣ − vΣ = −GΣ × ¯FΣ + Γ Σ ¯FΣ
+
+G2Σ + Γ 2Σ
+
+. (24) 
+
+Figure 4. Dynamics of a ferrimagnetic skyrmion explained. The forces FS, Σ,... are related to the velocities VS, Σ,... by the Thiele equation. On the left, shifting of the TM and RE skyrmions (exaggerated) gives rise to the pair of interaction forces FSΣ and FΣS that result in the ballistic motion of both skyrmions in the same perpendicular direction. Since in gen-eral the velocities VSΣ and VΣS are different, the TM and RE skyrmions are circling each other. On the right, external forces FS and FΣ cause the increasing skyrmion shift that, in turn, results in the accelerated motion in the direction of the applied forces. 
+
+Separating the terms with the external forces and spin currents and using Eq. (23), one obtains 
+
+VS − US = −ρS ρΣJ ′D GS × d + Γ S d
+
+G2 
+
+> S
+
++ Γ 2
+
+> S
+
+(25) 
+
+VΣ − UΣ = −ρS ρΣJ ′D GΣ × d − ΓΣd
+
+G2Σ + Γ 2Σ
+
+, (26) where 
+
+US ≡ vS + GS × FS + Γ S FS
+
+G2 
+
+> S
+
++ Γ 2
+
+> S
+
+UΣ ≡ vΣ + −GΣ × FΣ + Γ ΣFΣ
+
+G2Σ + Γ 2Σ
+
+(27) are external terms. Obtaining the equation of motion for the skyrmions’ velocities is possible within the vector formalism in the absence of damping. In the presence of damping, one needs to use the more powerful matrix formalism and to rewrite the resolved Thiele equations above as 
+
+VS, Σ − US, Σ = −ρS ρΣJ ′DMS, Σ · d (28) where 
+
+MS = 1
+
+G2 
+
+> S
+
++ Γ 2
+
+> S
+
+ ΓS −GS
+
+GS ΓS
+
+
+
+=
+
+ ΓS GS
+
+−GS ΓS
+
+−1
+
+MΣ = 1
+
+G2Σ + Γ 2Σ
+
+ −ΓΣ −GΣ
+
+GΣ −ΓΣ
+
+
+
+(29) 6or, with the use of Eq. (19), 
+
+MS = 1
+
+GS (1 + Λ 2)
+
+ Λ −11 Λ
+
+
+
+MΣ = 1
+
+GΣ (1 + Λ 2)
+
+ −Λ −11 −Λ
+
+
+
+. (30) Also, 
+
+US ≡ vS + MS · FS , UΣ ≡ vΣ − MΣ · FΣ. (31) Next, we define the weighted position of the skyrmion’s center: 
+
+R = pS RS + pΣRΣ, (32) where pS + pΣ = 1 . Similarly, one defines V = ˙R and the time derivative of V. For V one has 
+
+V = U − ρS ρΣJ ′D (pS MS + pΣMΣ) · d, (33) where, similarly, U = pS US +pΣUΣ. On the other hand, 
+
+˙d = VS − VΣ = US − UΣ − ρS ρΣJ ′D (MS − MΣ) · d.
+
+(34) Manipulating these two equations, one can obtain a closed equation of motion for V as follows. One differen-tiates Eq. (33) over time and substitutes ˙d given by Eq. (34), thus relating ˙V to d. In the resulting equation, one substitutes d expressed via V by the resolution of Eq. (33). The resulting equation of motion has the form 
+
+M ˙V + G · V = K, (35) where the mass is given by 
+
+M = GS GΣ
+
+ 1 + Λ 2
+
+ρS ρΣJ ′D = (4 πℏ)2  1 + Λ 2
+
+J ′D , (36) the matrix G has the form 
+
+G =  1 + Λ 2 GS GΣ (pS MS + pΣMΣ)
+
+· (MS − MΣ) · (pS MS + pΣMΣ)−1 . (37) This simplifies to 
+
+G =
+
+ ΓS + Γ Σ GS − GΣ
+
+− (GS − GΣ) ΓS + Γ Σ
+
+
+
+, (38) which is independent of the weights pS, Σ. The external term K after matrix multiplications becomes 
+
+K = M ˙U+FS +FΣ +Γ S vS +Γ ΣvΣ −GS ×vS +GΣ ×vΣ.
+
+(39) Finally, Eq. (35) can be rewritten in the vector form as 
+
+M ˙V − (GS − GΣ) × V + (Γ S + Γ Σ) V = K. (40) The expression for the skyrmion mass M was obtained from the condition that K contains the total external force FS +FΣ without any coefficient. The gyration term in this equation defines to the cyclotron frequency vector 
+
+Ω = GS − GΣ
+
+M = J′
+
+ℏ
+
+D
+
+4π |S − cΣ| ez . (41) The cyclotron frequency simplifies to 
+
+Ω = J′
+
+ℏ |S − cΣ| (42) in the BP limit, D = 4 π. The SCR frequency vanishes at the AMC point. Correspondingly, the cyclotron radius 
+
+Rcyc = V / Ω diverges. In this case, for the no-disorder model, the skyrmion can perform a straight ballistic mo-tion with reflections from the boundaries of the system. This motion, obtained by the numerical solution in terms of lattice spins with the rigid-wall boundary condition is illustrated in Fig. 5. However, for the realistic model with disorder, ballistic motion of the skyrmion follows a random trajectory depending on the distribution of the RE atoms in the system, see Fig. 6. It is remarkable that for D = 4 π the only model parameter in the cyclotron frequency is the intersublattice coupling J′. The initial condition to Eq. (40) is given by Eq. (33), that is, by the Thiele equation. Using Eq. (36), it can be rewritten in the form 
+
+V = U − GS GΣ
+
+ 1 + Λ 2
+
+M (pS MS + pΣMΣ) · d (43) and further, using Eq. (30), as 
+
+V = U + 1
+
+M
+
+ A B
+
+−B A
+
+
+
+· d, (44) where 
+
+A = ( −pS GΣ + pΣGS ) Λ , B = pS GΣ + pΣGS . (45)  
+
+> V. ANALYSIS OF THE SKYRMION’S EQUATION OF MOTION
+
+The equation of motion for the ferrimagnetic skyrmion (40) has a similarity with the equation of motion of a charge q in the magnetic field B, i.e., (GS − GΣ) × V ⇔
+
+qV × B. However, the time-dependent term M ˙U in Eq. (39) makes the behavior of the skyrmion different in the presence of a time-dependent force and/or spin current. In this section some solutions of Eq. (40) will be shown. One can expect that the mass of the ferrimagnetic skyrmion goes to zero in the ferromagnetic limit c → 0,because the mass of the ferromagnetic skyrmion is zero. However, M in Eq. (36) does not depend on spins and is a constant. What is the resolution of this puzzle? First, for the realistic model with disorder, the analyt-ical approach used above can be only valid if there are a sufficient number of RE spins in the region of the TM skyrmion, π (λ/a )2 c ≫ 1. For λeff /a = 18 for our single 7 
+
+> Figure 5. Ballistic motion of the ferrimagnetic skyrmion in the no-disorder model at the AMC point, showing reflections from the boundaries. In the initial state, RE and TM skyrmions are shifted with respect to each other to initiate their motion.
+
+skyrmion in CoGd, this translates into c ≫ 10 −3. If this condition is not satisfied, there should be a large data scatter. The numerical calculations reported below were performed down to c = 10 −2, and the data scatter re-mained moderate with no significant deviations from the analytical predictions detected. The idealized no-disorder model in which all RE spins have the length cΣ is self-consistent for any c, and it di-rectly corresponds to our analytical approach. For this model, in the limit c → 0, the ferrimagnetic skyrmion does not show any inertia, despite M being nonzero. That is, as the RE sublattice gradually disappears, its action on the remaining TM sublattice disappears, too, than leads to the conventional Thiele equation for the TM spins, as it should be. Indeed, the interaction force 
+
+FSΣ given by Eq. (23) vanishes if one of the two spin den-sities vanish, and in this case the two Thiele equations decouple. As an example, one can create an initial displacement 
+
+d, say, by a short pulse of a spin current, and then the skyrmion will move ballistically in the absence of forces and spin currents, making circles. What happens with this motion if c → 0? Note that there are only S − Σ
+
+cross-terms in the matrix in Eq. (44). When the RE sublattice disappears, one must look exclusively at the TM sublattice, setting pS = 1 and pΣ = 0 . But in all terms pS multiplies by GΣ that goes to zero, so the whole expression for V(with U = 0 ) vanishes whatever is the displacement d. As the initial condition for Eq. (40) with K = 0 is V(0) = 0 , the solution is V = 0 at all times, that is, there is no ballistic motion. More general, Eq. (40) can be rewritten in terms of  
+
+> Figure 6. Ballistic motion of the ferrimagnetic skyrmion in the realistic model with disorder at the AMC point. Top and bottom: different realizations of the disorder.
+
+the complex variable ξ ≡ Vx + iV y as 
+
+M ˙ξ − iM ˜Ωξ = Kx + iK y , (46) where 
+
+˜Ω = GS − GΣ + i (Γ S + Γ Σ)
+
+M = Ω + iΛ ( GS + GΣ)
+
+M (47) is the damped SRC frequency. For K = const the solu-tion of this equation reads 
+
+ξ(t) = ξ(0) ei ˜Ωt +
+
+
+
+1 − ei ˜Ωt iK x − Ky
+
+M ˜Ω , (48) where ξ(0) is the initial value. In the presence of damping the exponentials vanish at large times, which leads to the asymptotic solution ξ(∞) = ( iK x − Ky ) /
+
+
+
+M ˜Ω
+
+
+
+. If the 8damping is small, the skyrmion is asymptotically moving in the direction perpendicular to the vector K, similarly to the electric charge in the perpendicular electric and magnetic fields. In the absence of damping for K = 0,the skyrmion is making a circle with the cyclotron radius 
+
+Rcyc = |ξ|
+
+Ω = d pΣGS + pS GΣ
+
+|GS − GΣ| = d pΣS + pS cΣ
+
+|S − cΣ| , (49) where Eq. (44) was used. As the TM and RE skyrmions have different velocities, Rcyc depends on the definition of the ferrimagnetic-skyrmion center via the weight factors 
+
+pS and pΣ. However, the difference between different def-initions remains as small as d even near the AMC point where Rcyc diverges. It becomes clear if one rewrites Rcyc 
+
+using pS + pΣ = 1 as 
+
+Rcyc = d cΣ + pΣ (S − cΣ) 
+
+|S − cΣ| . (50) Here, the divergent part of Rcyc does not depend on the definition of the skyrmion’s center. In the limit c → 0,one should focus on the TM skyrmion and set pS = 1 and 
+
+pΣ = 0 . In this case, Rcyc ∝ c and goes to zero for c → 0.This is an expected result as there is no inertia effects and hence no cyclotron resonance for the ferromagnetic skyrmion. Another example is the dynamics due to the time-dependent spin current applied in the absence of forces. In this case, one has U = pS vS + pΣvΣ, and one can rewrite Eq. (40) as 
+
+M
+
+ ˙V − pS ˙vS − pΣ ˙vΣ
+
+
+
+−GS × (V − vS ) + GΣ × (V − vΣ)+Γ S (V − vS ) + Γ Σ (V − vΣ) = 0. (51) If the RE sublattice disappears, GΣ → 0 and ΓΣ → 0,then one sets pS = 1 and pΣ = 0 , and the equation becomes 
+
+M
+
+ ˙V − ˙vS
+
+
+
+−GS ×(V − vS )+Γ S (V − vS ) = 0. (52) The obvious solution is V(t) = vS (t), same as the so-lution for the ferromagnetic skyrmion, describing trans-porting the TM skyrmion by the spin current. In this case there is no inertia as well. The bottom line is that in our analytical model the mass of the ferrimagnetic skyrmion does not go to zero but becomes hidden in the ferromagnetic limit c → 0.In the general case, the linear response to the oscillat-ing spin current vS (t) = vS, 0ex sin ( ωt ) and vΣ(t) = 0 ,calculated using Eq. (40) has the form 
+
+Vx + iV y = A sin ( ωt ) + B cos ( ωt ) , (53) where 
+
+A = vS, 0
+
+1 −
+
+˜Γ − iΩ
+
+  ˜ΓΣ + iΩΣ
+
+
+
+ω2 − Ω2 − 2iΩ˜Γ + ˜Γ2
+
+ (54) and 
+
+B = vS, 0
+
+ω
+
+˜ΓΣ + iΩΣ
+
+
+
+ω2 − Ω2 − 2iΩ˜Γ + ˜Γ2 . (55) Here ΩΣ ≡ GΣ/M and 
+
+˜Γ ≡ (Γ S + Γ Σ) /M, ˜ΓΣ ≡ ΓΣ/M (56) are relaxation frequencies. In the limit c → 0, one has 
+
+ΩΣ → 0 and ˜ΓΣ → 0, so that the terms describing the cyclotron motion vanish and the dynamics becomes triv-ial: Vx(t) = vS, 0 sin ( ωt ) = vS (t) and Vy (t) = 0 . If the RE subsystem is present, the solution above describes the cyclotron resonance at the frequency ω ∼= Ω, where 
+
+Ω is given by Eq. (41). In this example, the terms with the time derivatives in K given by Eq. (39) are crucial.  
+
+> VI. NUMERICAL METHODS
+
+The numerical procedures employed here are (i) energy minimization at T = 0 and (ii) solving the undamped Landau-Lifshitz equation (4) for our many-spin model. The energy minimization [63] combines aligning the spin 
+
+si with its effective field Heff ,i = −∂H/∂ Si with the prob-ability η and flipping the spin around the effective field, 
+
+Si ⇒ 2 ( Si · Heff ,i ) Heff ,i /H 2eff ,i − Si with the probability 
+
+1 − η (the so-called overrelaxation). The algorithm uses vectorized updates of columns of spins in checkered sub-lattices that allows parallelization of the computation. For the different-site interactions, such as exchange and DMI, overrelaxation is a kind of conservative pseudody-namics, which allows for better exploration of the phase space of the system. Choosing a small value of η that has a meaning of the damping in this procedure (the main choice being η = 0 .03 ) allows achieving a much faster and deeper energy minimization then just the field align-ment, η = 1 . For the model with single-site interactions, such as the uniaxial anisotropy, overrelaxation leads to the energy decrease (see Eq. (8) of Ref. [64]), so that one can use η = 0 (which turns to be much more effi-cient than η = 1 ). Still we use η = 0 .03 in all cases for the uniformity of the approach. This method of energy minimization is much faster then solving the damped LL equation implemented in micromagnetic packages. To compute the dynamical evolution of the system, we employed the fifth-order Butcher’s Runge-Kutta ordinary differential equation (ODE) solver, RK5, which makes six function evaluations per integration step (see, e.g., the Appendix in Ref. [65]). It is much more precise than the classical RK4 solver. Precision in dynamical com-putation is important, since numerical errors accumulate over a large evolution period, leading to the energy drift in conservative systems under consideration. If the com-putation is long, as the computation of the spectrum of the absorbed power using the fluctuation-dissipation the-orem (FDT) [10, 37, 66], one needs to perform the energy correction [67] from time to time. 9
+
+Figure 7. Fluctuation spectrum of the TM skyrmion position, 
+
+XS , in the 116 × 132 ferrimagnetic system with the RE con-centration c = 0 .7 excited by a sinc spin current. The biggest peak corresponds to the skyrmion cyclotron resonance, while two small peaks correspond to the ferrimagnetic k = 0 spin-wave modes ε± shown in Fig. 2. 
+
+In this paper, only the excitation spectrum of the sys-tem at T = 0 is investigated, and this can be done much faster if one computes the fluctuation spectrum (FS) of the dynamical quantity of interest F (t). The FS is de-fined by 
+
+FS( ω) = 1
+
+tmax 
+
+> tmax
+
+ˆ
+
+> 0
+
+F (t)eiωt dt 
+
+> 2
+
+. (57) In this case, tmax does not need to be very long, as in the FDT computations, thus one does not need to perform the energy correction. To initiate the dynam-ics, one could create a deviation of F from its equi-librium value with Monte Carlo at a low temperature 
+
+T . However, there is a much more elegant and effi-cient method using the sinc excitation of the system. In the case of the excitation by the spin current it is 
+
+vS (t) = vS, 0 sin ( ωmax t) / (ωmax t). The Fourier spectrum of this function is a constant up to the cutoff frequency 
+
+ωmax and zero above it, so that it excites all modes in the interval 0 < ω < ω max . As the quantity F we used either the X displacement of the skyrmion (or the av-erage displacement of skyrmions in the SkL) in the TM subsystem, XS , from its equilibrium position or the x
+
+component of the normalized magnetic moment per site 
+
+μ = 1
+
+N
+
+X
+
+> i
+
+
+
+Si + g′
+
+g piΣi
+
+
+
+. (58) The modes’ frequencies were searched for as the res-onances in FS( ω). One dynamical computation pro-vided the results for the excitations at all frequencies within the interval of interest. We used the system size 
+
+116 × 132 in lattice units (with periodic boundary con-ditions) that neatly comprises a skyrmion lattice (SkL) 
+
+Figure 8. The RE-concentration dependence of the frequen-cies of the excitation modes in the model of CoGd ferrimagnet. The system containing a single skyrmion in a 116 × 132 sys-tem was excited by the sinc spin current, and the fluctuation spectrum of the TM skyrmion position, XS , was observed. The theoretical result for the SCR frequency (42) is shown by the light-blue line. Uniform ferrimagnetic modes ε± are also shown. Top: the realistic model with disorder; Bottom: the idealized no-disorder model. 
+
+Figure 9. Heights of resonance peaks in the FS in Fig. 8. 10            
+
+> Figure 10. The RE-concentration dependence of the frequen-cies of the excitation modes in the model of CoGd ferrimagnet. The 116 ×132 no-disorder system with SkL was excited by the sinc spin current, and the fluctuation spectrum of the TM skyrmion position, XS, was observed. Top: J′/J = 0 .2(the standard choice). Bottom: J′/J = 0 .1.
+
+of 12 skyrmions, as shown in Fig. 3. This system size is sufficient to find the excitation spectrum of the system in the cases of a single skyrmion (SS) and the SkL. We generated a random distribution of RE atoms with the concentration c.Also, we numerically studied the no-disorder model in which all RE spins were assigned the length cΣ. This model uses the same simplification as our analytical ap-proach, in which disorder effects are ignored and the RE concentration c enters only in the combination cΣ. This model does not show the scatter due to the disorder in the realistic model. As a justification of the no-disorder model, one can mention that in the presence of disorder there are localized excitation modes [68]. For uniform fer-rimagnets, this leads to the splitting of the peaks in the FS into many subpeaks, as shown in Fig. 9 of Ref. [10]. This is the source of the data scatter for our 116 × 132 
+
+model if the original model with disorder is used. For large systems, there are many subpeaks that merge and form a broadened line, see Fig. 10 of Ref. [10]. In this case, the data scatter disappears. However, performing computations for larger systems for many values of c re-quires too much computing time. The no-disorder model is an approximation that neglects the effect of localized modes and line broadening, allowing to obtain smooth results for moderate-size systems. The position of the TM skyrmion’s center R was de-fined with the help of the skyrmion-locator formula [69] 
+
+R = X 
+
+> Sj,z >0
+
+rj S2
+
+> j,z
+
+, X 
+
+> Sj,z >0
+
+S2 
+
+> j,z
+
+, (59) where j ∈ Skyrmion are all lattice sites that belong to the skyrmion. Here the weight factor S2 
+
+> z,j
+
+favors the sites closer to the skyrmion’s top. The same formula was used for the SkL to describe the motion of all skyrmions. The skyrmion size λeff was computed as [70] 
+
+λ2eff = n − 12nπN S
+
+X
+
+> i
+
+
+
+1 + Si,z 
+
+S
+
+n
+
+(60) for the TM skyrmion and a similar formula for the RE skyrmion. Here NS is the number of skyrmions, in our case NS = |Q|. This formula yields the exact skyrmion size λ for the Belavin-Polyakov pure-exchange skyrmion for any n. We use n = 4 to effectively cut the skyrmion’s tails and focus on the skyrmion core. For our CoGd parameters set, the skyrmion size is λeff /a ≈ 18 .4 for SS and λeff /a ≈ 8.9 for the SkL, see Fig. 3. Computations were performed using our own compiled, vectorized, and parallelized codes written in Wolfram Mathematica. For the number crunching we employed prosumer-grade computers available to our group. In the computations, we used moderate integration times such as tmax ≈ 6000 with SJ ⇒ 1 and ℏ ⇒ 1, as usual. As the system size was not large and the computation times were not long, the numerical part of the work was not tough, given that we adopted the codes used in our preceding projects.  
+
+> VII. NUMERICAL RESULTS
+
+The main numerical experiment was exciting the sys-tem at T = 0 with the sinc spin current and extracting the frequencies of the excitation modes from the fluctu-ation spectrum of the skyrmion’s displacement, defined by Eq. (59). Computations were done on the system containing a single skyrmion and the skyrmion lattice, obtained by the energy minimization. It turned out that the cyclotron motion of the skyrmion is coupled to the magnetization precession in the system. Thus, one can also excite the system by microwaves and extract the modes’ frequencies from the FS of the in-plane compo-nents of the magnetization, Eq. (58). This gives four different numerical experiments altogether. On top of it, one can experiment with a single skyrmion and the skyrmion lattice. 11           
+
+> Figure 11. Top: The RE-concentration dependence of the frequencies of the excitation modes in the model of CoGd ferrimagnet. The system containing a single skyrmion in a
+> 116 ×132 system was excited by the sinc spin current, and the fluctuation spectrum of the transverse magnetization com-ponent, μx, was observed. The theoretical result for the SCR frequency (42) is shown by the light-blue line. Uniform ferri-magnetic modes ε±are also shown. Bottom: the heights of the peaks in the top panel.
+
+Figure 7 shows the fluctuation spectrum of the TM skyrmion displacement XS of a single skyrmion excited by the sinc spin current for the RE concentration c = 0 .7.There are three peaks, which can be identified as the 
+
+k = 0 spin-wave modes ε±, Eq. (5), and the skyrmion cyclotron mode with the frequency Ω, Eq. (42). Figure 8 shows the RE-concentration dependence of the frequencies of the excitation modes for the realistic model with disorder (top) and the idealized no-disorder model (bottom). In this figure, one can see the two fer-rimagnetic modes ε± and the SCR mode. However, the modes are hybridized, forming a gap. There is the up-per part of the cyclotron mode (black) and its lower part (red) that is strongly hybridized with the LF ferromag-netic mode. The frequency of this lower mode goes to zero at the AMC point, as predicted by Eq. (41). The results for the no-disorder model are smoother, as ex-          
+
+> Figure 12. The RE-concentration dependence of the lower-mode frequenciy in the model of CoGd ferrimagnet. The
+> 116 ×132 system was excited by the sinc microwaves, and the fluctuation spectrum of the TM skyrmion displacement, XS,was observed. The results are presented for a single skyrmion (SS) and the SkL, with and without disorder, and for the in-tersublattice coupling J′/J = 0 .2and 0.1.
+
+pected. The c-dependence of the peak heights in Fig. 9 shows that the lower mode becomes strong in the vicin-ity of the AMC point. This is expected because here the cyclotron radius of the skyrmion diverges. For c → 0 all FS peak heights become small. The results for the model with disorder are more scattered, and at some values of 
+
+c the data for the modes’ frequencies are missing. Also disorder decreases the frequencies, especially those of the HF and SCR modes at small c.For the CoGd parameters, the numerically computed value of D, Eq. (18) is D ≃ 20 .2 that substantially ex-ceeds the BP value D = 4 π ≃ 12 .6. The reason for a larger D is that in the presence of the anisotropy the skyrmion shape becomes flat-topped with a wall sepa-rating the interior and exterior of the magnetic bubble. Large gradients inside the wall increase D. The theoret-ical SCR line with the numerically computed D in Fig. 8 substantially deviates from the numerical results, so it is not shown. In the contrary, the theoretical SCR line with D = 4 π is in a good agreement with the numerical data and is shown by the light-blue line in Fig. 8 and other figures. This suggests that the universal Eq. (42) for the SCR frequency is for some reason better than Eq. (41) in which Ω depends of other model parameters via the non-universal quantity D.Similar results were obtained for the skyrmion lattice, see Fig. 10. Even for the no-disorder model, the results are less regular than for a single skyrmion, and for some 
+
+c-values some FS peaks could not be found. The top panel of this figure shows the results for our standard choice J′/J = 0 .2, whereas the lower panel shows the results for a smaller value of the intersublattice coupling 
+
+J′/J = 0 .1. In the latter case, the cyclotron frequency far from the AMC point is exactly twice as lower, in 12         
+
+> Figure 13. Top: The RE-concentration dependence of the frequencies of the excitation modes in the model of CoGd ferrimagnet. The 116 ×132 system with SkL was excited by the sinc microwaves, and the fluctuation spectrum of the transverse magnetization component, μx, was observed. The regions, where the modes are strong, are shown by bigger markers. Bottom: the heights of the peaks in the top panel.
+
+accordance with Eq. (41). Observing the fluctuation spectrum of the skyrmion’s displacement might be difficult because in the linear regime the displacement is very small. However, since the cyclotron motion is coupled to the ferrimagnetic modes, one also can extract the modes’ frequencies from the FS of the transverse magnetization, as shown in Fig. 11. Since the process is indirect, FS peaks are less well de-fined and it is more difficult to extract the excitation fre-quencies. For this reason, we show only the results for the no-disorder model. Here one can see the same modes as in Fig. 8, plus the unperturbed LF ferrimagnetic branch (yellow). Again, the lower part of the spectrum (red) is overall the strongest, although at c ≈ 1 the HF ferrimag-netic mode (green) is the strongest. Summarizing the results presented above, the most in-teresting of the excitation modes, the lower mode, is ro-bust, especially around the angular-momentum compen-sation point where its frequency goes to zero.  
+
+> Figure 14. Skyrmion trajectory under MW excitation close to the AMC point.
+
+Because of the coupling of the SCR mode to the fer-rimagnetic resonance, the former can also be excited by the microwaves. Figure 12 shows the RE concentration dependence of the frequency of the lower mode in the model of CoGd ferrimagnet excited by the sinc MW. Here the FS of the TM skyrmion displacement XS was used to obtain the results for a single skyrmion (SS) and the SkL, with and without disorder, and for the inter-sublattice coupling J′/J = 0 .2 and 0.1. In all cases, the frequency goes to zero at the AMC point. For the SkL the frequency is somewhat higher than for a SS. For the lower J’, the depression around the AMC point is broader, as expected. Finally, the realistic system with disorder shows the scatter that is absent in the idealized no-disorder model. Figure 13 shows the excitation modes’ frequencies and the FS peak heights for a 116 × 132 system with SkL no disorder in the case when the system is excited by a sinc MW and the FS of the transverse magnetization compo-nent μx is used to extract the frequencies. In this case, the SCR mode was detected only in the region around the AMC point, whereas the ferrimagnetic modes ε± are seen at all c. Near the AMC point, the LF mode hybridizes with the SCR and its frequency goes to zero. However, the height of the FS peak corresponding to this mode be-comes small near the AMC point, because here the SCR is dominating in the mixture of the modes, and the con-tribution of the magnetization precession becomes small. The regions, where the modes are strong, are shown by bigger markers in the top panel, while the concentration dependence of the peaks’ heights is shown in the bottom panel. Figure 14 illustrates the dynamics of the excitation of the cyclotron mode close to the angular-momentum compensation point, c = 0 .45 by the microwave field 13 with the amplitude hx/ (SJ ) = 0 .001 at the frequency 
+
+ℏω/ (SJ ) = 0 .005953 for the models with and without disorder. For the no-disorder model, the skyrmion tra-jectory is a regular spiral with the radius increasing with time. For the realistic model with disorder, the skyrmion is cycling, too, but the center of the curvature is wonder-ing and the amplitude is not regularly increasing. Appar-ently, in the presence of disorder the skyrmion is losing its energy into other types of excitations, that is, disorder causes additional damping in the system. Exactly at the AMC point, the SCR frequency is zero, and the skyrmion motion cannot be excited by a har-monic perturbation. In this case, one can apply a spin-current pulse to initiate the skyrmions’ shift d, and after that the skyrmion will move ballistically, as shown in Figs. 5 and 6. For the no-disorder model, ballistic mo-tion is straight with reflections from the boundaries. In the realistic model with disorder, ballistic motion follows a random trajectory.  
+
+> VIII. DISCUSSION
+
+We have shown analytically and numerically that the dynamics of a skyrmion in a two-sublattice ferrimagnet differs significantly from its dynamics in a ferromagnet. The differences arise from the possibility of a specific de-formation of the ferrimagnetic skyrmion that corresponds to the separation of centers of skyrmions belonging to dif-ferent sublattices. Such a deformation of the ferrimag-netic skyrmions results in its finite mass as compared to zero mass associated with the motion of the center of topological charge of a skyrmion in a ferromagnet. We have studied coupled Thiele equations for ferimag-netic sublattices and obtained the dynamics of skyrmions in limiting cases. The finite skyrmion mass generates its gyroscopic motion, which manifests as a spin excitation specific to ferrimagnets – skyrmion cyclotron resonance (SCR)– similar to electron cyclotron resonance (ECR) in metals. The frequency of the SCR is given by a uni-versal formula that we derived analytically and tested in a numerical experiment on a discrete spin lattice. Our numerical model is based on a Hamiltonian tailored for parameters of the CoGd ferrimagnet, for which our pre-dictions can be tested by real experiments. The frequency of the SCR goes to zero on approach-ing the angular momentum compensation (AMC) point. In a TM/RE ferrimagnet, the AMC is achieved at a certain concentration of the RE atoms. The hybridiza-tion of the SCR with other ferrimagnetic modes dramat-ically changes the spectrum of the excitations modes of the ferrimagnet in the presence of skyrmions. With the skyrmion lattice in the background, the frequency of the acoustic ferrimagnetic mode decreases at the AMC in-stead of going up as it does in the absence of skyrmions. When RE atoms are distributed randomly, the excita-tion modes are affected by disorder. However, even in this case, the SCR is well defined and has an amplitude comparable to that in a system with no disorder. Sim-ilarly, the hybridization effects mentioned above remain pronounced in the presence of disorder. They can be ob-served by exciting the SCR with microwaves or by a spin current. Measurements of the SCR must permit an un-ambiguous determination of the skyrmion mass, similar to how the ECR in metals permits determination of the electron effective mass. We also studied ballistic and gyroscopic trajectories of skyrmions in a ferrimagnet. Skyrmion cyclotron or-bits must typically have a small radius. For that reason, they may be difficult to visualize in experiments, unless studied very close to the AMC, where their radius di-verges. In the presence of disorder, the cyclotron orbits of skyrmions resemble the diffusive motion of electron cyclotron orbits in metals. We hope that this work inspires experiments on mas-sive dynamics of skyrmions in ferrimagnets, and the skyrmion cyclotron resonance in particular. While our analytical and numerical methods have been de-veloped for a two-sublattice uniform ferrimagnetic film, we expect our results for the dynamics of ferrimagnetic skyrmions and the excitation spectrum of a ferrimagnet with skyrmions to be qualitatively valid for synthetic fer-rimagnets constructed of adjacent ferromagnetic layers [58–60]. 
+
+> ACKNOWLEDGMENTS
+
+This work has been supported by Grants No. FA9550-24-1-0090 and FA9550-24-1-0290, funded by the Air Force Office of Scientific Research.                  
+
+> [1] R. K. Wangsness, Sublattice effects in magnetic reso-nance, Physical Review 91 , 1085-1091 (1953). [2] C. Kittel, Theory of ferromagnetic resonance in rare earth garnets. III. Giant anisotropy anomalies, Physical Review B 117 , 681-687 (1960). [3] D. L. Lin and H. Zheng, Spin waves of two-sublattice Heisenberg ferrimagnets, Physical Review B 37 , 5394-5400 (1988). [4] Z.-D. Zzang and T. Zhao, Spin waves at low tempera-tures in two-sublattice Heisenberg ferromagnets and fer-rimagnets with different sublattice anisotropies, Journal of Physics: Condensed Matter 9, 8101-8118 (1997). [5] N. Karchev, Towards the theory of ferrimagnetism, Jour-nal of Physics: Condensed Matter 20 , 325219(2008). [6] T. Okuno, S. K. Kim, T. Moriyama, D.-H. Kim, H. Mizuno, T. Ikebuchi, Y. Hirata, H. Yoshikawa, A. Tsukamoto, K.-J. Kim, Y. Shiota, K.-J Lee, and T. Ono,
+
+14 
+
+Temperature dependence of magnetic resonance in fer-rimagnetic GdFeCo alloys, Applied Physics Express 12 ,093001 (20198). [7] E. Haltz, J. Sampaio, S. Krishnia, L. Berges, R. Weil, A. Mougin, and A. Thiaville, Quantitative analysis of spin wave dynamics in ferrimagnets across compensation points, Physical Review Letters 105 , 104414-(8) (2022). [8] C. E. Zaspel , E. G. Galkina, and B. A. Ivanov, Fer-rimagnetic magnon drop solitons close to the angular momentum compensation point, Physical Review B 108, 064403-(8) (2023). [9] L. Sánchez-Tejerina, D. Osuna Ruiz, V. Raposo, E. Martínez, L. López Díaz, and O. Alejos, Analytical dis-persion relation for forward volume spin waves in ferri-magnets near the angular momentum compensation con-dition, Physical Review B 112 , 104414 (2025). [10] D. A. Garanin and E. M. Chudnovsky, Magnetiza-tion, excitations, and microwave power absorption in transition-metal/rare-earth ferrimagnets with disorder, Physical Review B, 113 , 054447 (2026). [11] M. Pardavi-Horvath, Microwave applications of soft fer-rites, Journal of Magnetism and Magnetic Materials 215-215 , 171-183 (2000). [12] M. Binder, A. Weber, O. Mosendz, G. Woltersdorf, M. Izquierdo, I. Neudecker, J. R. Dahn, T. D. Hatchard, J.-U. Thiele, C. H. Back, and M. R. Scheinfein, Mag-netization dynamics of the ferrimagnet CoGd near the compensation of magnetization and angular momentum, Physical Review B 74 , 134404 (2006). [13] C. D. Stanciu, A. V. Kimel, F. Hansteen, A. Tsukamoto, A. Itoh, A. Kirilyuk, and Th. Rasing, Ultrafast spin dynamics across compensation points in ferrimagnetic GdFeCo: The role of angular momentum compensation, Physical Review B 73 , 220402(R)(2006). [14] C. Kim, S. Lee, H.-G. Kim, J.-Ho. Park, K.-W. Moon, J. Y. Park, J. M. Yuk, K.-J. Lee, B.-G. Park, S. K. Kim, K.-J. Kim, and C. Hwang, Distinct handedness of spin wave across the compensation temperatures of ferrimagnets, Nature Materials 19 , 980-985 (2020). [15] M. E. Jamer, Y. J. Wang, G. M. Stephen, I. J. McDon-ald, A. J. Grutter, G. E. Sterbinsky, D. A. Arena, J. A. Borchers, B. J. Kirby, L. H. Lewis, B. Barbiellini, A. Bansil, and D. Heiman, Compensated ferrimagnetism in the zero-Moment Heusler alloy Mn3 3Al, Physical Review Applied 7, 064036 (2017). [16] S. A. Siddiqui, J. Han, J. T. Finley, C. A. Ross, and L. Liu, Current-induced domain wall motion in a compen-sated ferrimagnet, Physical Review Letters 121 , 057701 (2018). [17] B. A. Ivanov, Ultrafast spin dynamics and spintronics for ferrimagnets close to the spin compensation point (Re-view), Low Temperature Physics 45 , 935-962 (2019). [18] G. Bonfiglio, K. Rode, K. Siewerska, J. Besbas , G. Y. P. Atcheson, P. Stamenov, J. M. D. Coey, A. V. Kimel, Th. Rasing, and A. Kirilyuk, Magnetization dynamics of the compensated ferrimagnet Mn 2Ru xGa, Physical Review B 100 , 104438 (2019). [19] M. D. Davydova, K. A. Zvezdin, A. V. Kimel, and A. K. Zvezdin, Ultrafast spin dynamics in ferrimagnets with compensation point, Journal of Physics: Condensed Mat-ter 32 , 01LT01 (2020). [20] V. V. Yurlov, K. A. Zvezdin, P. N. Skirdkov, and A. K. Zvezdin, Domain wall dynamics of ferrimagnets influ-enced by spin current near the angular momentum com-pensation temperature, Physical Review Letters 103 ,134442(2021). [21] A. Chanda, J. E. Shoup, N. Schulz, D. A. Arena, and H. Srikanth, Tunable competing magnetic anisotropies and spin reconfigurations in ferrimagnetic Fe 100 −xGd x alloy films, Physical Review B 104 , 094404 (2021). [22] S. Joo, R. S. Alemayehu, J.-G. Choi, B.-G. Park, and G.-M. Choi, Magnetic anisotropy and damping constant of ferrimagnetic GdCo alloy near compensation point, Ma-terials 14 , 2604 (2021). [23] S. K. Kim, G. S. D. Beach, K.-J. Lee, T. Ono, T. Rasing, and H. Yang, Ferrimagnetic spintronics, Nature Materi-als 21 , 24-34 (2022). [24] M. Guo, H. Zhang, and R. Cheng, Manipulating ferri-magnets by fields and currents, Physical Review B 105 ,064410 (2022). [25] X. Zhang, B. Cai, J. Ren, Z. Yuan, Z. Xu, Y. Yang, G. Liang, and Z. Zhu, Spatially nonuniform oscillations in ferrimagnets based on an atomistic model, Physical Review B 106 , 184419 (2022). [26] C. Chen, C. Zheng, S. Hu, J. Zhang, and Y. Liu, Temperature-dependent compensation points in Gd xFe 1−x ferrimagnets, Materials 18 , 1193 (2025). [27] R. Moreno, P. G. Bercoff, U. Atxitia, R. F. L. Evans, and O. Chubykalo-Fesenko, Temperature dependence of exchange stiffness and energy barrier in compensated fer-rimagnets, Physical Review B 111 , 184416 (2025). [28] C. Ciccarelli, G. Nava Antonio, and J. Barke, Spin emis-sion from antiferromagnets and compensated ferrimag-nets, Applied Physics Reviews 12 , 041306 (2025). [29] S. Luo and L. You, Skyrmion devices for memory and logic applications, APL Materials 9, 050901 (2021). [30] M. Mochizuki, Spin-wave modes and their intense excita-tion effects in skyrmion crystals, Physical Review Letters 
+
+108 , 017601-(5) (2012). [31] Y. Onose,Y. Okamura, S. Seki, S. Ishiwata, and Y. Tokura, Observation of magnetic excitations of skyrmion crystal in a helimagnetic insulator Cu 2OSeO 3, Physical Review Letters 109 , 037603-5 (2012). [32] D. A. Garanin, R. Jaafar, and E. M. Chudnovsky, Breathing mode of a skyrmion on a lattice, Physical Re-view B 101 , 014418 (2020). [33] A. Aqeel, J. Sahliger, T. Taniguchi, S. Mändl, D. Mettus, H. Berger, A. Bauer, M. Garst, C. Pfleiderer, and C. H. Back, Microwave Spectroscopy of the Low-Temperature Skyrmion State in Cu 2OSeO 3, Physical Review Letters 
+
+126 , 017202-(7) (2021). [34] B. Satywali, V. P. Kravchuk, L. Pan, M. Raju, S. He, F. Ma, A. P. Petrović, M. Garst, and C. Panagopoulos, Nature Communications 12 , 1909-(8) (2021). [35] O. Lee, J. Sahliger, A. Aqeel , S. Khan, S. Seki, H. Kure-bayashi, and C. H. Back, Tunable gigahertz dynamics of low-temperature skyrmion lattice in a chiral magnet, Journal of Physics: Condensed Matter 34 , 095801-(10) (2022). [36] Y. Li, X. Wang, and L. Ma, Instability of skyrmion lattice under microwave magnetic field due to single-q helimag-netic excitation mode. Journal of Physics: Condensed Matter 35 , 105801-(7) (2023). [37] D. A. Garanin and E. M. Chudnovsky, Skyrmion crys-tal in a microwave field, Physical Review B 112 , 024422 (2025). [38] I. Makhfudz, B. Kruger, and O. Tchernyshyov, Inertia and chiral edge modes of a skyrmion magnetic bubble, 15 
+
+Physical Review Letters 109 , 217201 (2012). [39] F. B ¨uttner, C. Moutafis, M. Schneider, B. Kr ¨uger, C. M. G¨unther, J. Geilhufe, C. v. Korff Schmising, J. Mohanty, B. Pfau, S. Schaffert, A. Bisig, M. Foerster, T. Schulz, C. A. F. Vaz, J. H. Franken, H. J. M. Swagten, M. Kl ¨uui, and S. Eisebitt, Dynamics and inertia of skyrmionic spin structures, Nature Physics 11 , 225 (2015). [40] T. Shiino, K.-J. Kim, K.-S. Lee, and B.-G. Park, Inertia-driven resonant excitation of a magnetic skyrmion, Na-ture Scientific Reports 7, 13993 (2017). [41] S.-Z. Lin, Dynamics and inertia of a skyrmion in chi-ral magnets and interfaces: A linear response approach based on magnon excitations, Physical Review B 96 ,014407 (2017). [42] C. Psaroudaki, S. Hoffman, J. Klinovaja, and D. Loss, Quantum dynamics of skyrmions in chiral magnets, Physical Review X 7, 041045 (2017). [43] V. P. Kravchuk, D. D. Sheka, U. K. R ¨oßler, J. van den Brink, and Y. Gaididei, Spin eigenmodes of magnetic skyrmions and the problem of the effective skyrmion mass, Physical Review B 97 , 064403 (2018). [44] Z.-X. Li, C. Wang, Y. Cao, and P. Yan, Edge states in a two-dimensional honeycomb lattice of massive magnetic skyrmions, Physical Review B 98 , 180407(R) (2018). [45] W. Döring, Über die Trägheit der Wände zwischen Weißschen Bezirken, Zeitschrift für Naturforschung A 3 ,373-379 (1948). [46] S. Komineas and N. Papanicolaou, Skyrmion dynamics in chiral ferromagnets, Physical Review B 92 , 064412 (2015). [47] E. M. Chudnovsky and D. A. Garanin, Europhysics Letters, Magnetic skyrmion as Schrödinger’s cat, Euro-physics Letters 151 , 46001 (2025). [48] X. Wu and O. Tchernyshyov, How a skyrmion can ap-pear both massive and massless, SciPost Physics 12 , 159 (2022). [49] Y. Liu and Z. Liang, Measurement of skyrmion mass by using simple harmonic oscillation, Journal of Magnetism and Magnetic Materials 500 , 166382 (2020). [50] D. Capic, E. M. Chudnovsky, and D. A. Garanin, Skyrmion mass from spin-phonon interaction, Physical Review B 102 , 060404R (2020). [51] Sujit Panigrahy, Sougata Mallick, João Sampaio, and Stanislas Rohart, Skyrmion inertia in synthetic antifer-romagnets, Physical Review B 106 , 144405 (2022). [52] M. Weißenhofer and U. Nowak, Temperature dependence of current-driven and Brownian skyrmion dynamics in ferrimagnets with compensation point, Physical Review B 107 , 0644423 (2023). [53] Michael Lau, Wolfgang Häusler, and Michael Thorwart, Moving skyrmions in antiferromagnets by sublattice dis-placements, Physical Review B 111 , 144411 (2025). [54] E. M. Chudnovsky and D. A. Garanin, Skyrmion cy-clotron resonance in ferrimagnets, arXiv: 2603.06477. [55] A. A. Thiele, Steady-state motion of magnetic domains, Physical Review Letters 30, 230-232 (1973). [56] Ya. Azbel’ and E. A. Kaner, Theory of cyclotron res-onance in metals, Zh. Eksp. Teor. Fiz. 30, 811 (1956) [Soviet Phys.-JETP 3, 772 (1956)]. [57] A. A. Belavin and A. M. Polyakov, Metastable states of two-dimensional isotropic ferromagnets, Pis’ma Zh. Eksp.Teor. Fiz 22 , 503-506 (1975) [JETP Lett. 22 , 245-248 (1975)]. [58] A. Soumyanarayanan, M. Raju, A. L. Gonzalez Oyarce, A. K. C. Tan, M.-Y. Im, A. P. Petrovic, P. Ho, K. H. Khoo, M. Tran, C. K. Gan, F. Ernult, and C. Panagopou-los, Tunable room-temperature magnetic skyrmions in Ir/Fe/Co/Pt multilayers, Nature Materials 16, 898-905 (2017). [59] J. Xia, X. Zhang, K.-Y. Mak, M. Ezawa, O. A. Tretiakov, Y. Zhou, G. Zhao, and X. Liu, Current-induced dynamics of skyrmion tubes in synthetic antiferromagnetic multi-layers, Physical Review B 103 , 174408 (2021). [60] S. Mallick, Y. Sassi, N. Figueiredo Prestes, S. Krish-nia, F. Gallego, L. M. Vicente Arche, T. Denneulin , S. Collin, K. Bouzehouane, A. Thiaville, R. E. Dunin-Borkowski, V. Jeudy, A. Fert, N. Reyren, and V. Cros, Driving skyrmions in flow regime in synthetic ferrimag-nets, Nature Communications 15 , 8472 (2024). [61] D. Capic, D. A. Garanin, and E. M. Chudnovsky, Skyrmion–skyrmion interaction in a magnetic film, Jour-nal of Physics: Condensed Matter 32 , 415803 (2020). [62] D. A. Garanin and E. M. Chudnovsky, unpublished (2025). [63] D. A. Garanin, E. M. Chudnovsky, and T. Proctor, Ran-dom field xy model in three dimensions, Physical Review B 88 , 224418 (2013). [64] D. A. Garanin, Energy minima and ordering in ferromag-nets with static randomness, Journal of Physics: Con-densed Matter 37 , 385803 (2025). [65] D. A. Garanin, Pulse-noise approach for classical spin systems, Physical Review B 95 , 013306 (2017). [66] D. A. Garanin and E. M. Chudnovsky, Nonlinear and thermal effects in the absorption of microwaves by ran-dom magnets, Physical Review B 105 , 064402 (2022). [67] D. A. Garanin, Energy balance and energy correction in dynamics of classical spin systems, Physical Review E 
+
+104 , 055306 (2021). [68] D. A. Garanin and E. M. Chudnovsky, Localized spin-wave modes and microwave absorption in random-anisotropy ferromagnets, Physical Review B 107 , 134411 (2023). [69] D. A. Garanin and E. M. Chudnovsky, Solid–liquid tran-sition in a skyrmion matter, Journal of Magnetism and Magnetic Materials, 606 , 172395 (2024). [70] Liufei Cai, E. M. Chudnovsky, and D. A. Garanin, Col-lapse of skyrmions in two-dimensional ferromagnets and antiferromagnets, Physical Review B 86 , 024429 (2012).

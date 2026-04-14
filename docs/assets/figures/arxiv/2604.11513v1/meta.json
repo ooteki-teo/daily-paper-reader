@@ -1,0 +1,78 @@
+{
+  "version": 2,
+  "extractor": "pdffigures2",
+  "figures": [
+    {
+      "url": "assets/figures/arxiv/2604.11513v1/fig-001.webp",
+      "caption": "FIG. 8. (a) Schematic diagram of neural-network (NN) force-field model for out-of-equilibrium itinerant spin system. A descriptor transforms the neighborhood spin configuration Ci to effective coordinates {Gℓ} which are then fed into a NN. The two output nodes of the NN correspond to the local energy ϵi = ε(Ci) and γi = χ(Ci) associated with site-i. The corresponding total potential energies E and G are obtained from summation of these local energies. Automatic differentiation is employed to compute the derivatives ∂E/∂Si and ∂G/∂Si, from which the local exchange fields Hi are obtained according to the generalized force expression Eq.(21).",
+      "page": 11,
+      "index": 1,
+      "width": 1002,
+      "height": 385
+    },
+    {
+      "url": "assets/figures/arxiv/2604.11513v1/fig-002.webp",
+      "caption": "FIG. 3. Top panels: (a) The non-collinear 120◦ magnetic order with the tripled unit cell of the half-filled triangular-lattice s–d model. (b) Benchmark of ML-predicted torques, TML = S × HML, evaluated for the 120◦ state. (c) Ensemble-averaged spin structure factor S(q) obtained from ML-LLG simulations. Bottom panels: Results for the non-coplanar tetrahedral order at filling fraction f ≈ 1/4: (d) real-space spin configuration with a quadrupled magnetic unit cell; (e) ML torque-prediction benchmark; and (f) the corresponding ensemble-averaged spin structure factor.",
+      "page": 7,
+      "index": 2,
+      "width": 930,
+      "height": 438
+    },
+    {
+      "url": "assets/figures/arxiv/2604.11513v1/fig-003.webp",
+      "caption": "FIG. 12. (a) Average position of FM-AFM domain, obtained from NEGF-LLG and ML-LLG simulations, as a function of time during the voltage-driven insulator to metal transition of the s-d model. (b) histogram of the ratio |Tneq i |/|Teq i | predicted by the NN model for the simulation of domainwall propagation. Here Teq i = Si × ∂E/∂Si is the quasiequilibrium torque, and Tneq i = Si × (Si × ∂G/∂Si) is the non-equilibrium torque in the generalized LLG Eq. (22).",
+      "page": 13,
+      "index": 3,
+      "width": 503,
+      "height": 249
+    },
+    {
+      "url": "assets/figures/arxiv/2604.11513v1/fig-004.webp",
+      "caption": "FIG. 11. Domain wall propagation in a s-d system driven by an external voltage eV = 3.2tnn. Comparison between (a) NEGF-LLG simulations and (b) ML-LLG simulations. The lattice size is 30×24. The color bar indicates the local nearestneighbor spin correlation bij = Si · Sj . Blue (red) area corresponds to AFM (FM) domains. The NEGF-LLG simulation was carried out at a low temperature of kBT = 0.01 tnn, while the ML simulation was performed without Langevin noise.",
+      "page": 13,
+      "index": 4,
+      "width": 508,
+      "height": 527
+    },
+    {
+      "url": "assets/figures/arxiv/2604.11513v1/fig-005.webp",
+      "caption": "FIG. 4. (a) ML-predicted exchange fields compared against exact values from the test dataset. (b) Distribution of the force difference δ = HML −Hexact, which is well described by a normal distribution (red curve) with variance σ2 = 0.035.",
+      "page": 8,
+      "index": 5,
+      "width": 506,
+      "height": 246
+    },
+    {
+      "url": "assets/figures/arxiv/2604.11513v1/fig-006.webp",
+      "caption": "FIG. 1. Schematic diagram of ML force-field model for itinerant electron magnets. A descriptor transforms the neighborhood spin configuration Ci to effective coordinates {Gℓ} which are then fed into a neural network (NN). The output node of the NN correspond to the local energy ϵi = ε(Ci) associated with spin Si. {x(1) m } and {x(2) n } denote feature variables associated with neurons of the first and second hidden layers, respectively. The corresponding total potential energies Eis obtained from summation of these local energies. Automatic differentiation is employed to compute the derivatives ∂E/∂Si from which the local exchange fields Hi are obtained.",
+      "page": 4,
+      "index": 6,
+      "width": 1036,
+      "height": 440
+    },
+    {
+      "url": "assets/figures/arxiv/2604.11513v1/fig-007.webp",
+      "caption": "FIG. 10. (a) The ML predicted forces versus the exact solution from the NEGF calculation for the s-d model with exchange coupling J = 3.8tnn. (b) Normalized distribution of the prediction error of the perpendicular components of the forces.",
+      "page": 12,
+      "index": 7,
+      "width": 512,
+      "height": 236
+    },
+    {
+      "url": "assets/figures/arxiv/2604.11513v1/fig-008.webp",
+      "caption": "FIG. 5. (Top) Density plots of the local nearest-neighbor spin correlation bi ≡ (Si · Si+x + Si · Si−x + Si · Si+y + Si · Si−y)/4 at four representative times during the ML-LLG simulation on a 200 × 200 lattice. (Bottom) Corresponding ML-predicted",
+      "page": 9,
+      "index": 8,
+      "width": 1032,
+      "height": 547
+    },
+    {
+      "url": "assets/figures/arxiv/2604.11513v1/fig-009.webp",
+      "caption": "FIG. 6. Average linear size L = ⟨s⟩1/2 of ferromagnetic (FM) clusters as a function of time following a thermal quench. The dash–dot line marks the power-law growth L(t) ∼ t1/3, while the dashed line shows a sublogarithmic form L(t) ∼ (log t)β with β = 0.11. The inset displays the corresponding time evolution of the average cluster size ⟨s⟩.",
+      "page": 9,
+      "index": 9,
+      "width": 457,
+      "height": 269
+    }
+  ]
+}

@@ -6,98 +6,110 @@
 </div>
 
 ## 每次日报
-- 最新运行日期：2026-04-13
-- 运行时间：2026-04-13 20:59:50 UTC
+- 最新运行日期：2026-04-14
+- 运行时间：2026-04-14 20:06:08 UTC
 - 运行状态：成功
-- 本次总论文数：26
-- 精读区：15
+- 本次总论文数：30
+- 精读区：19
 - 速读区：11
 
 ### 今日简报（AI）
-今日聚焦新型交变磁体与拓扑自旋态研究。正交扭转双层CrPS₄中涌现d波交变磁性，Lieb晶格中实现自旋偏压量子自旋霍尔效应。建议关注交变磁体在低维异质结构与拓扑器件中的新突破。
-- 详情：[/202604/13/README](/202604/13/README)
+今日聚焦新型反铁磁“交变磁体”的量子自旋霍尔效应与轨道输运。交变磁体中的自旋偏压与轨道驱动机制展现出变革性的电子调控潜力。建议关注交变磁性这一新兴领域，其可能成为下一代自旋电子学的核心材料平台。
+- 详情：[/202604/14/README](/202604/14/README)
 
 ### 精读区论文标签
-1. [Emergent $d$-wave altermagnetism in orthogonally twisted bilayer CrPS$_4$](/202604/13/2604.04072v1-emergent-d-wave-altermagnetism-in-orthogonally-twisted-bilayer-crps4)  
+1. [Spin-biased quantum spin Hall effect in altermagnetic Lieb lattice](/202604/14/2604.05311v1-spin-biased-quantum-spin-hall-effect-in-altermagnetic-lieb-lattice)  
+   标签：评分：10.0/10、query:q7
+   evidence：Lieb晶格中交错磁态和量子自旋霍尔效应的理论研究
+2. [Orbital-driven emergent transport in altermagnets](/202604/14/2604.05322v1-orbital-driven-emergent-transport-in-altermagnets)  
+   标签：评分：10.0/10、query:q7
+   evidence：交错磁体中的轨道驱动输运
+3. [Nonlinear thermal gradient induced magnetization in $d^{\prime }$, $g^{\prime }$ and $i^{\prime }$ altermagnets](/202604/14/2604.05454v1-nonlinear-thermal-gradient-induced-magnetization-in-dprime--gprime--and-iprime--altermagnets)  
+   标签：评分：10.0/10、query:q7
+   evidence：d、g和i波交错磁体中磁化强度的理论研究
+4. [Key Role of Charge Disproportionation in Monoclinic Semiconducting Fe$_2$PO$_5$, a Room-Temperature d-Wave Altermagnet Candidate](/202604/14/2604.06114v1-key-role-of-charge-disproportionation-in-monoclinic-semiconducting-fe2po5-a-room-temperature-d-wave-altermagnet-candidate)  
    标签：评分：10.0/10、query:q6
-   evidence：展示了扭曲双层CrPS4中的d波交错磁性
-2. [Spin-biased quantum spin Hall effect in altermagnetic Lieb lattice](/202604/13/2604.05311v1-spin-biased-quantum-spin-hall-effect-in-altermagnetic-lieb-lattice)  
+   evidence：室温d波交错磁候选材料
+5. [Strain continuously rotates the Néel vector in altermagnetic MnTe](/202604/14/2604.07653v1-strain-continuously-rotates-the-nel-vector-in-altermagnetic-mnte)  
    标签：评分：10.0/10、query:q7
-   evidence：交错磁序与自旋偏置量子自旋霍尔效应
-3. [Nonlinear thermal gradient induced magnetization in $d^{\prime }$, $g^{\prime }$ and $i^{\prime }$ altermagnets](/202604/13/2604.05454v1-nonlinear-thermal-gradient-induced-magnetization-in-dprime--gprime--and-iprime--altermagnets)  
+   evidence：关于应变下交错磁体MnTe中尼尔矢量旋转的实验研究
+6. [Symmetry-guided and AI-accelerated design of intercalated transition metal dichalcogenides for antiferromagnetic spintronics](/202604/14/2604.07689v1-symmetry-guided-and-ai-accelerated-design-of-intercalated-transition-metal-dichalcogenides-for-antiferromagnetic-spintronics)  
+   标签：评分：10.0/10、query:q6
+   evidence：AI加速框架在插层TMD中识别出35种交错磁构型
+7. [Higher-order topological insulators in two-dimensional antiferromagnetic and altermagnetic chromium-based group-IV chalcogenides](/202604/14/2604.08907v1-higher-order-topological-insulators-in-two-dimensional-antiferromagnetic-and-altermagnetic-chromium-based-group-iv-chalcogenides)  
+   标签：评分：10.0/10、query:profile-1
+   evidence：Janus铬基硫族化物中的交错磁基态
+8. [Pressure-Induced Superconducting-like Transition in the $\it d$-wave Altermagnet Candidate CsV$_2$Se$_2$O](/202604/14/2604.09457v1-pressure-induced-superconducting-like-transition-in-the-it-d-wave-altermagnet-candidate-csv2se2o)  
+   标签：评分：10.0/10、query:profile-1
+   evidence：对d波交错磁体候选材料CsV2Se2O的实验与理论研究
+9. [Continuous PT-Symmetry Breaking as a Design Variable for Giant Altermagnetic Spin Splitting](/202604/14/2604.10173v1-continuous-pt-symmetry-breaking-as-a-design-variable-for-giant-altermagnetic-spin-splitting)  
    标签：评分：10.0/10、query:q7
-   evidence：交错磁体中非线性热梯度诱导的磁化
-4. [Key Role of Charge Disproportionation in Monoclinic Semiconducting Fe$_2$PO$_5$, a Room-Temperature d-Wave Altermagnet Candidate](/202604/13/2604.06114v1-key-role-of-charge-disproportionation-in-monoclinic-semiconducting-fe2po5-a-room-temperature-d-wave-altermagnet-candidate)  
+   evidence：巨交错磁自旋分裂的设计变量
+10. [Two-Dimensional Spin-Antiferroelectric Altermagnets with Giant Spin Splitting: From Model to Material Realization](/202604/14/2604.10612v1-two-dimensional-spin-antiferroelectric-altermagnets-with-giant-spin-splitting-from-model-to-material-realization)  
+   标签：评分：10.0/10、query:profile-1
+   evidence：具有巨自旋分裂的二维自旋反铁电交错磁体
+11. [Surface ferrimagnetic order in RuO2 film](/202604/14/2604.10659v1-surface-ferrimagnetic-order-in-ruo2-film)  
+   标签：评分：10.0/10、query:profile-1
+   evidence：对RuO2作为典型交错磁体及其表面磁性的研究
+12. [Structural Reconstruction Induced d-wave Altermagnetism in $\mathrm{V_{2}X_2}$ ($X = \mathrm{S, Se}$) monolayer](/202604/14/2604.10768v1-structural-reconstruction-induced-d-wave-altermagnetism-in-mathrmv2x2-x--mathrms-se-monolayer)  
    标签：评分：10.0/10、query:q8
-   evidence：d波交错磁候选材料Fe2PO5的理论与实验研究
-5. [Strain continuously rotates the Néel vector in altermagnetic MnTe](/202604/13/2604.07653v1-strain-continuously-rotates-the-nel-vector-in-altermagnetic-mnte)  
-   标签：评分：10.0/10、query:q7
-   evidence：交错磁MnTe中应变诱导尼尔矢量旋转的实验研究
-6. [Symmetry-guided and AI-accelerated design of intercalated transition metal dichalcogenides for antiferromagnetic spintronics](/202604/13/2604.07689v1-symmetry-guided-and-ai-accelerated-design-of-intercalated-transition-metal-dichalcogenides-for-antiferromagnetic-spintronics)  
+   evidence：重构单层结构中d波交错磁性的理论研究
+13. [Unconventional alternating out-of-plane spin polarization in the coplanar kagome antiferromagnet](/202604/14/2604.11057v1-unconventional-alternating-out-of-plane-spin-polarization-in-the-coplanar-kagome-antiferromagnet)  
+   标签：评分：10.0/10、query:profile-1
+   evidence：非共线kagome反铁磁体中的类交错磁自旋分裂
+14. [Ultrafast ghost Hall states in a 2d altermagnet](/202604/14/2604.11361v1-ultrafast-ghost-hall-states-in-a-2d-altermagnet)  
    标签：评分：10.0/10、query:q6
-   evidence：AI加速框架识别出35种交错磁构型
-7. [Higher-order topological insulators in two-dimensional antiferromagnetic and altermagnetic chromium-based group-IV chalcogenides](/202604/13/2604.08907v1-higher-order-topological-insulators-in-two-dimensional-antiferromagnetic-and-altermagnetic-chromium-based-group-iv-chalcogenides)  
-   标签：评分：10.0/10、query:q6
-   evidence：铬基硫族化合物中的交错磁基态
-8. [Pressure-Induced Superconducting-like Transition in the $\it d$-wave Altermagnet Candidate CsV$_2$Se$_2$O](/202604/13/2604.09457v1-pressure-induced-superconducting-like-transition-in-the-it-d-wave-altermagnet-candidate-csv2se2o)  
-   标签：评分：10.0/10、query:q7
-   evidence：对d波交错磁候选材料CsV2Se2O的实验和理论研究
-9. [Orbital-driven emergent transport in altermagnets](/202604/13/2604.05322v1-orbital-driven-emergent-transport-in-altermagnets)  
-   标签：评分：9.0/10、query:profile-1
-   evidence：交错磁体中轨道驱动的输运和涌现场
-10. [Cholesteric Fingers from a Magnetic Perspective: Topology, Energetics, and Interactions](/202604/13/2604.06660v1-cholesteric-fingers-from-a-magnetic-perspective-topology-energetics-and-interactions)  
+   evidence：二维交错磁体中的超快幽灵霍尔态与谷电子学
+15. [Microscopic evidence of spin-driven multiferroicity and topological spin textures in monolayer NiI2](/202604/14/2604.06959v1-microscopic-evidence-of-spin-driven-multiferroicity-and-topological-spin-textures-in-monolayer-nii2)  
    标签：评分：9.0/10、query:q4
-   evidence：手性磁体中的拓扑孤子与双荷子
-11. [Microscopic evidence of spin-driven multiferroicity and topological spin textures in monolayer NiI2](/202604/13/2604.06959v1-microscopic-evidence-of-spin-driven-multiferroicity-and-topological-spin-textures-in-monolayer-nii2)  
+   evidence：非共线自旋结构与拓扑半子/反半子对
+16. [Massive dynamics of skyrmions in ferrimagnetic films](/202604/14/2604.07605v1-massive-dynamics-of-skyrmions-in-ferrimagnetic-films)  
    标签：评分：9.0/10、query:q4
-   evidence：拓扑自旋结构与非共线自旋螺旋态
-12. [Alterelectricity: Electrical Analogue of Altermagnetism](/202604/13/2604.07112v1-alterelectricity-electrical-analogue-of-altermagnetism)  
-   标签：评分：9.0/10、query:q6
-   evidence：交错电性作为交错磁性的电学类比
-13. [Exploring the conventional and anomalous Josephson effects at arbitrary disorder strength in systems with spin-dependent fields](/202604/13/2604.08231v1-exploring-the-conventional-and-anomalous-josephson-effects-at-arbitrary-disorder-strength-in-systems-with-spin-dependent-fields)  
-   标签：评分：9.0/10、query:q7
-   evidence：具有交错磁性系统中的约瑟夫森电流
-14. [Antitopological magnetic textures in an antiferromagnetically coupled bilayer with frustration](/202604/13/2604.08845v1-antitopological-magnetic-textures-in-an-antiferromagnetically-coupled-bilayer-with-frustration)  
+   evidence：亚铁磁薄膜中斯格明子及其点阵的质量动力学
+17. [Exchange Frustration and Topological Magnetism in Electrostatically Doped SrRuO3](/202604/14/2604.10019v1-exchange-frustration-and-topological-magnetism-in-electrostatically-doped-srruo3)  
    标签：评分：9.0/10、query:q4
-   evidence：双层斯格明子中的反拓扑磁结构
-15. [Topology-constrained spin-wave modes of asymmetric antibimerons and their clusters](/202604/13/2604.09178v1-topology-constrained-spin-wave-modes-of-asymmetric-antibimerons-and-their-clusters)  
+   evidence：通过交换挫折工程化拓扑自旋结构
+18. [Topological Magnon-Phonon Hybrid Bands in Ferromagnetic Skyrmion Crystals](/202604/14/2604.10483v1-topological-magnon-phonon-hybrid-bands-in-ferromagnetic-skyrmion-crystals)  
    标签：评分：9.0/10、query:q4
-   evidence：拓扑磁结构与集体自旋波激发
+   evidence：斯格明子晶体中的拓扑磁振子-声子杂化带
+19. [Machine-learning modeling of magnetization dynamics in quasi-equilibrium and driven metallic spin systems](/202604/14/2604.11513v1-machine-learning-modeling-of-magnetization-dynamics-in-quasi-equilibrium-and-driven-metallic-spin-systems)  
+   标签：评分：9.0/10、query:q5
+   evidence：金属自旋系统中磁化动力学的机器学习建模
 
 ### 速读区论文标签
-1. [Interplay of Anisotropy, Dzyaloshinskii Moriya Interaction and Symmetry breaking Fields in a 2D XY Ferromagnet](/202604/13/2604.04104v1-interplay-of-anisotropy-dzyaloshinskii-moriya-interaction-and-symmetry-breaking-fields-in-a-2d-xy-ferromagnet)  
-   标签：评分：8.0/10、query:q4
-   evidence：2D XY铁磁体中的DMI相互作用与自旋倾斜
-2. [Ultrafast Néel vector switching](/202604/13/2604.04203v1-ultrafast-nel-vector-switching)  
+1. [Temperature evolution of orbital states with successive phase transitions in FeV2O4](/202604/14/2604.04398v2-temperature-evolution-of-orbital-states-with-successive-phase-transitions-in-fev2o4)  
    标签：评分：8.0/10、query:q5
-   evidence：手性反铁磁体中的超快自旋动力学与切换
-3. [Topological Phase Transitions and Their Thermodynamic Fate in Arbitrary-$S$ Pyrochlore Spin Ice](/202604/13/2604.04346v1-topological-phase-transitions-and-their-thermodynamic-fate-in-arbitrary-s-pyrochlore-spin-ice)  
+   evidence：强关联尖晶石氧化物中的轨道态与磁相变
+2. [Novel Light-Induced States in Triangular Metallic Magnet](/202604/14/2604.05457v1-novel-light-induced-states-in-triangular-metallic-magnet)  
    标签：评分：8.0/10、query:q4
-   evidence：烧绿石磁体中的拓扑相与临界现象
-4. [Temperature evolution of orbital states with successive phase transitions in FeV2O4](/202604/13/2604.04398v2-temperature-evolution-of-orbital-states-with-successive-phase-transitions-in-fev2o4)  
+   evidence：光诱导的涡旋态与长程磁序
+3. [Magnon harmonic generation in antiferromagnets: Dynamical symmetry enriched by symmetry breaking](/202604/14/2604.06700v1-magnon-harmonic-generation-in-antiferromagnets-dynamical-symmetry-enriched-by-symmetry-breaking)  
    标签：评分：8.0/10、query:q5
-   evidence：强关联FeV2O4中耦合的结构和磁性相变
-5. [Temperature evolution of orbital states with successive phase transitions in FeV2O4](/202604/13/2604.04398v1-temperature-evolution-of-orbital-states-with-successive-phase-transitions-in-fev2o4)  
+   evidence：反铁磁体中的非线性自旋动力学和磁振子激发
+4. [Exact Solution for Current-Driven Domain-Wall Dynamics Beyond Lorentz Contraction in Antiferromagnets with Dzyaloshinskii-Moriya Interaction](/202604/14/2604.06730v1-exact-solution-for-current-driven-domain-wall-dynamics-beyond-lorentz-contraction-in-antiferromagnets-with-dzyaloshinskii-moriya-interaction)  
+   标签：评分：8.0/10、query:q5
+   evidence：具有DMI的反铁磁体中电流驱动的磁畴壁动力学
+5. [Temperature evolution of orbital states with successive phase transitions in FeV2O4](/202604/14/2604.04398v1-temperature-evolution-of-orbital-states-with-successive-phase-transitions-in-fev2o4)  
    标签：评分：7.0/10、query:q5
-   evidence：强关联材料中的轨道态
-6. [Light-modulated exchange bias in multiferroic heterostructures](/202604/13/2604.04555v1-light-modulated-exchange-bias-in-multiferroic-heterostructures)  
-   标签：评分：7.0/10、query:q5
-   evidence：多铁性异质结中的光调制交换偏置与磁各向异性
-7. [Broken Symmetry-driven Weyl Semimetal Phase in Zn-Substituted EuMn$_2$Sb$_2$](/202604/13/2604.04574v1-broken-symmetry-driven-weyl-semimetal-phase-in-zn-substituted-eumn2sb2)  
+   evidence：关联材料中耦合的结构和磁性相变
+6. [Broken Symmetry-driven Weyl Semimetal Phase in Zn-Substituted EuMn$_2$Sb$_2$](/202604/14/2604.04574v1-broken-symmetry-driven-weyl-semimetal-phase-in-zn-substituted-eumn2sb2)  
    标签：评分：7.0/10、query:q4
-   evidence：向具有复杂磁交换作用的磁性外尔半金属转变
-8. [QCommute: a tool for symbolic computation of nested commutators in quantum many-body spin-1/2 systems](/202604/13/2604.04778v2-qcommute-a-tool-for-symbolic-computation-of-nested-commutators-in-quantum-many-body-spin-12-systems)  
+   evidence：从反铁磁到具有对称性破缺的磁性外尔半金属的转变
+7. [Effects of Spin Fluctuation and Disorder on Topological States of Quasi 2D Ferromagnet Fe1/5CrTe2](/202604/14/2604.04864v1-effects-of-spin-fluctuation-and-disorder-on-topological-states-of-quasi-2d-ferromagnet-fe15crte2)  
    标签：评分：7.0/10、query:q5
-   evidence：强关联自旋1/2系统中的量子动力学
-9. [Temperature Dependent Magnetic and Structural Properties of Al Substituted Nanostructured Ferrites with Large Coercive Fields](/202604/13/2604.04152v1-temperature-dependent-magnetic-and-structural-properties-of-al-substituted-nanostructured-ferrites-with-large-coercive-fields)  
+   evidence：铁磁体中传导电子与局域自旋的耦合
+8. [Three-dimensional zigzag correlations in the van der Waals Kitaev magnet RuBr$_3$](/202604/14/2604.05346v1-three-dimensional-zigzag-correlations-in-the-van-der-waals-kitaev-magnet-rubr3)  
+   标签：评分：7.0/10、query:q4
+   evidence：研究Kitaev磁体中的锯齿状反铁磁序和三维磁相关性
+9. [Topological Phase Transitions and Their Thermodynamic Fate in Arbitrary-$S$ Pyrochlore Spin Ice](/202604/14/2604.04346v1-topological-phase-transitions-and-their-thermodynamic-fate-in-arbitrary-s-pyrochlore-spin-ice)  
    标签：评分：6.0/10、query:q4
-   evidence：取代六角铁氧体中的磁性能与交换耦合
-10. [Dissipative spin hydrodynamics in Bjorken flow and thermal dilepton production](/202604/13/2604.04533v1-dissipative-spin-hydrodynamics-in-bjorken-flow-and-thermal-dilepton-production)  
+   evidence：烧绿石磁体中的拓扑相与临界现象
+10. [Light-modulated exchange bias in multiferroic heterostructures](/202604/14/2604.04555v1-light-modulated-exchange-bias-in-multiferroic-heterostructures)  
+   标签：评分：6.0/10、query:q4
+   evidence：光诱导的交换偏置和磁各向异性调制
+11. [Phonon-driven tuning of exchange interactions in Y3Fe5O12](/202604/14/2604.04557v1-phonon-driven-tuning-of-exchange-interactions-in-y3fe5o12)  
    标签：评分：6.0/10、query:q5
-   evidence：自旋流体动力学框架与自旋扩散输运
-11. [Phonon-driven tuning of exchange interactions in Y3Fe5O12](/202604/13/2604.04557v1-phonon-driven-tuning-of-exchange-interactions-in-y3fe5o12)  
-   标签：评分：6.0/10、query:q5
-   evidence：铁磁体Y3Fe5O12中声子驱动的交换相互作用调控
+   evidence：声子驱动的交换相互作用调控和自旋波动力学
 
 
 <div class="dpr-home-promo-card">
