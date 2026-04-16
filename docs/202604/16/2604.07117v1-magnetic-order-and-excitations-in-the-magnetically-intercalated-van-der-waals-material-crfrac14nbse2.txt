@@ -1,0 +1,781 @@
+Title: Magnetic order and excitations in the magnetically intercalated van der Waals material Cr$_{\frac{1}{4}}$NbSe$_2$
+
+URL Source: https://arxiv.org/pdf/2604.07117v1
+
+Published Time: Thu, 09 Apr 2026 01:23:01 GMT
+
+Number of Pages: 13
+
+Markdown Content:
+## Magnetic order and excitations in the magnetically intercalated van der Waals material Cr 1
+
+> 4
+
+## NbSe 2
+
+Ryota Yamaoka, 1 Hiraku Saito, 1 Yuki Settai, 2 Xiang Huang, 2 Daisuke Nishio-Hamane, 1 Shingo Takahashi, 1 Daichi Ueta, 3 Tatsuro Oda, 1 Hodaka Kikuchi, 4 Tao Hong, 4 Masaki Nakano, 5 Shinichiro Seki, 2, 6 and Taro Nakajima 1, 3, 7, ∗
+
+> 1
+
+The Institute for Solid State Physics, University of Tokyo, Kashiwa, Chiba 277-8581, Japan. 
+
+> 2
+
+Department of Applied Physics, University of Tokyo, Tokyo 113-8654, Japan. 
+
+> 3
+
+Institute of Materials Structure Science, High Energy Accelerator Research Organization, Tsukuba, Ibaraki 305-0801, Japan. 
+
+> 4
+
+Neutron Scattering Division, Oak Ridge National Laboratory, Oak Ridge, TN 37831-6393, U.S.A. 
+
+> 5
+
+College of Engineering, Shibaura Institute of Technology, Tokyo 135-8548, Japan. 
+
+> 6
+
+Research Center for Advanced Science and Technology, University of Tokyo, Komaba, Tokyo 153-8904, Japan. 
+
+> 7
+
+RIKEN Center for Emergent Matter Science (CEMS), Wako 351-0198, Japan. 
+
+(Dated: April 9, 2026) Cr 1
+
+> 4
+
+NbSe 2 is a triangular lattice magnet in which magnetic Cr 3+ ions are intercalated to form triangular lattices between NbSe 2 van der Waals layers stacked along the c axis. By unpolarized and polarized neutron scattering experiments, we have revealed that the magnetic ground state of this system is a 120 ◦ -type antiferromagnetic order characterized by the magnetic propagation wave vector of q = ( 1 
+
+> 3
+
+, 1 
+
+> 3
+
+, 0). We also performed inelastic neutron scattering measurements using co-aligned single crystals, and determined dispersion relations of magnetic excitations at low temperatures. Comparing the observed spectra with calculations based on the linear spin-wave theory, we revealed that the out-of-plane ferromagnetic interaction is fairly strong as compared to the in-plane nearest neighbor antiferromagnetic interaction. Although the crystal structure of this system is composed of two-dimensional van der Waals layers, the magnetic order has a three dimensional character, which would be attributed to long-range magnetic interactions mediated by conduction electrons. 
+
+I. INTRODUCTION 
+
+Van der Waals (vdW) materials with magnetic ions have attracted considerable attention as platforms for exploring two-dimensional magnetism[1]. These systems are often termed vdW magnets, and typically consist of two-dimensional layers of magnetic ions. These layers are weakly coupled with each other by the vdW force, and thus exfoliable down to a monolayer or few layers. One of the famous vdW magnets is the transition-metal phosphorus trisulfide family MPS 3 (M = Fe, Ni, Mn)[2– 5], which provides various magnetic properties depend-ing on the magnetic atoms; for instance, Ising, XY, and Heisenberg spin characters are realized in FePS 3, NiPS 3
+
+and MnPS 3, respectively. Another examples are CrI 3 and Cr 2Ge 2Te 6, which were investigated by Magneto-Optical Kerr Effect (MOKE) measurements, demonstrating that ferromagnetic order persists down to the monolayer or bilayer limit[6, 7]. Furthermore, it was also shown that the magnetic transition temperature of a monolayer of the metallic vdW ferromagnet Fe 3GeTe 2 can be tuned by gate voltage[8]. These results have expanded the scope of vdW magnets and their applications. One of the most straightforward ways to design vdW magnets is to find materials having two-dimensional lay-ers of magnetic ions decorated with nonmagnetic lig-ands, which are the cases for the materials mentioned above. Another strategy is to intercalate magnetic ions  
+
+> ∗taro.nakajima@issp.u-tokyo.ac.jp
+
+into nonmagnetic vdW materials such as NbS 2, NbSe 2,TaS 2, and TaSe 2, which are known as transition-metal dichalcogenides (TMDs). These materials consist of triangular-lattice vdW layers and can accommodate mag-netic ions in the vdW gaps. The intercalated mag-netic ions are regularly arranged to form superstructures depending on the amount of the intercalation. Thus, the chemical formulas of the magnetically intercalated TMDs are described as M xTX 2[9] (M=Fe, Cr, Ni, T=Nb, Ta, and X=S, Se). Among them, the x = 1 /3 com-pounds in which the intercalated magnetic ions form a √3a × √3a superlattice structure have been extensively investigated since they exhibit nontrivial magnetic or-ders. A combination between the host structure and the superstructure leads to a chiral crystal structure belonging to the space group of P 6322. This struc-tural chirality induces helimagnetic orders and chiral soliton lattices in Cr 1/3NbS 2[10] and Cr 1/3TaS 2[11]. It has also been recently shown that a commensurate non-coplanar triple-Q antiferromagnetic order in Co 1/3TaS 2
+
+induces a large spontaneous anomalous Hall effect in zero field[12, 13]. Moreover, colinear antiferromagnetic order in Fe 1/3NbS 2[14] and Ni 1/3NbS 2[15] and ferromagnetic order in Cr 1/3NbSe 2[16] and Fe 1/3TaS 2[17] were also re-ported. Despite the fact that they are originally de-rived from two-dimensional vdW materials, these mag-netic orders are considered as three-dimensional long-range orders, indicating the presence of substantial in-terlayer interactions between the magnetic moments. In fact, recent first-principles calculations on M xTX 2 sys-tems suggested the existence of relatively large interlayer exchange interactions[18]. To confirm this scenario, ex-
+
+> arXiv:2604.07117v1 [cond-mat.str-el] 8 Apr 2026
+
+2
+
+perimental studies to determine the exchange parameters are necessary. However, they have been carried out only a limited number of systems thus far [12]. Furthermore, while the magnetic orders of the x = 1 /3 compounds have been extensively studied as mentioned above, those in the x = 1 /4 systems were reported for a limited num-ber of compounds[19, 20]. In the present study, we focus on Cr 1/4NbSe 2, which is a member of the x = 1 /4 systems. In the following, we refer to this compound as CrNb 4Se 8. In previous studies, the crystal structure of this compound was stud-ied by X-ray powder diffraction measurements[21], and the magnetic susceptibility measurements suggested an antiferromagnetic transition at around 60–70 K[22, 23]. However, the detailed refinements of the crystal struc-ture and the determination of the magnetic structure have not been carried out. We thus performed unpo-larized and polarized neutron scattering measurements on a single crystal of CrNb 4Se 8, determining the crys-tal structural parameters and the magnetic structure at low temperatures. We also performed neutron inelastic scattering measurements using co-aligned single crystals, evaluating the in-plane and interlayer exchange interac-tions. The present results provide a quantitative basis for understanding the three-dimensional character of the magnetic orders in the magnetically intercalated TMDs.   
+
+> II. EXPERIMENTAL DETAILS A. Sample preparation and characterization
+
+Single crystals of CrNb 4Se 8 were grown by the chem-ical vapor transport (CVT) method. We have checked temperature dependence of the magnetic susceptibilities of the selected single crystals picked up from the samples grown in the same processes, confirming that the there is no obvious sample dependence. We performed chemical analysis for one of the single crystals using SEM–EDX (JEOL IT-100) under operat-ing conditions of 15 kV accelerating voltage and a probe current of 0.8 nA. Data were corrected using the ZAF method, and pure metals of Cr, Nb, and Se were used as standards. The results of the measurements are sum-marized in Appendix. The amount of the intercalation was determined to be x = 0 .74(4). We fixed this value in the crystal structure analysis by the neutron diffraction measurements mentioned in the following. We also performed magnetization measurements using a commercial SQUID magnetometer, Magnetic Property Measurement System (MPMS, Quantum Design inc.). We measured temperature variations of the magnetiza-tion for several samples picked up from the same growth batch as those used for neutron scattering, confirming that there is no obvious sample dependence in terms of the magnetization and the transition temperature.  
+
+> B. Neutron scattering
+
+Unpolarized and polarized neutron elastic scattering experiments were carried out at the POlarized Neutron Triple-Axis spectrometer PONTA installed at the 5G beamhole of Japan Research Reactor 3 (JRR-3) [24]. As for the unpolarized measurements, the incident neutrons with the energy of 34 .05 meV was obtained by a pyrolytic graphite (PG) monochromator. The spectrometer was operated in a two-axis diffraction mode. A single crystal of CrNb 4Se 8 with a mass of 10 mg was loaded in an Al cell with a small amount of He gas for thermal exchange. We performed three experiment for the same crystal with three different horizontal scattering planes, specifically, (H, H, L ), ( H, 0, L ), and ( H, 2H, L ) planes. The sample cell was attached to the cold head of a 4He closed-cycle refrigerator and was cooled to the lowest temperature of 2.3 K. As for the polarized neutron scattering measurements, the polarized incident neutron beam was obtained by a Heusler (111) monochromator. The spectrometer was operated in a triple-axis mode. The spin states and the energy of the scattered neutrons were analyzed by a Heusler (111) analyzer. The sample was cooled to low temperatures in the same manner as that in the unpolar-ized measurements. The directions of the neutron spins were controlled by a spin flipper and guide fields from a Helmholtz coil. The magnetic field at the sample position was approximately 5 mT. We also performed neutron inelastic scattering mea-surements at the high-resolution chopper spectrometer HRC[25] in the Materials and Life-science experimental Facility (MLF) of Japan Proton Acceleration Research Complex (J-PARC). We used 10 pieces of single crystals (total mass of 1.4 g), which were co-aligned on Al plates with the ( H, H, L ) horizontal scattering plane. The Al plates with the samples were loaded in an Al cell, which was attached to a 4He closed-cycle refrigerator. The pulsed incident neutron beam with the energy of Ei = 15 meV was obtained by a Fermi chopper rotating with the frequency of 100 Hz. The energy resolution at the elastic position was approximately 5.5%. We obtained time-of-flight neutron scattering data with rotating the ω angle of the sample, and processed the data by MSlice software in DAVE program package[26]. To further investigate low-energy magnetic excitations, we carried out additional inelastic neutron scattering measurements on the cold neutron triple-axis spectrome-ter (CTAX) at the High Flux Isotope Reactor, Oak Ridge National Laboratory. The measurements were performed using the same co-aligned crystals as in the HRC exper-iment. The spectrometer was operated with the fixed final neutron energy of 3.0 meV. The incident and final neutron energies were selected by a PG(002) monochro-mator and a PG(002) analyzer, respectively. A cooled Be-filter was placed in front of the analyzer to suppress the high energy neutrons coming from the higher order reflections at the monochromator. The energy resolution 3                                     
+
+> TABLE I. Refined crystallographic parameters for CrNb 4Se 8at 2.3 K.
+> Atom Occ xyzUiso Site
+> Cr 0.74 (fixed) 0000.025(2) 2a Nb1 1001/4 0.002(1) 2b Nb2 10.5085(1) 0.0169(2) 1/4 0.0086(9) 6h Se1 11/3 2/3 0.6118(1) 0.0021(9) 4f Se2 10.16761(6) 0.3352(1) 0.11857(5) 0.0051(3) 12k
+
+at the elastic condition was 0.116 meV. To examine possible spin fluctuations near the mag-netic phase transition temperature, we also performed neutron spin-echo spectroscopy at iNSE spectrometer in JRR-3. The incident neutron with the wavelength of 7.3 ˚A was obtained by a neutron velocity selector. The reso-lution was approximately dλ/λ = 10%. Similarly to the CTAX experiment, we used the same co-aligned crys-tals as that in the HRC experiment. A 4He closed-cycle refrigerator was used to control the temperature of the sample.   
+
+> III. RESULTS AND DISCUSSIONS A. Crystal structure
+
+CrNb 4Se 8 has a layered structure derived from 2H– NbSe 2. As shown in Fig. 1(a), Nb atoms form triangular lattice layers, and Se atoms coordinate around each Nb atom in a trigonal-prismatic geometry. This NbSe 2 layer works as the main structural unit of the crystal. Cr atoms are intercalated in the vdW gaps between the layers, and forms the 2 a×2a superlattice structure. The space group of this compound is P 63/mmc , which preserves inversion symmetry in contrast to the x = 1 /3 systems having the chiral crystal structures. In the present unpolarized neutron diffraction mea-surements, we measured 65 nuclear Bragg reflections, among which 41 reflections are independent, at 2.3 K. We refined the atomic coordinates and the isotropic displace-ment parameters Uiso by the non-linear least-squares method, while fixing the Cr-site occupancy at the value obtained from SEM–EDX measurements, namely 0.74. The calculated structure factors show good agreement with the observed ones, giving an R(F )-factor of 3.7%, as shown in Fig. 1(c). The refined atomic positions are listed in Table I. The lattice constants were also deter-mined to be a = b = 6 .900(3) ˚ A and c = 12 .52(1) ˚ A. From the refinement, it was found that the averaged structure of the NbSe 2 layers is nearly the same as that in pristine NbSe 2. This would infer that the system still has two-dimensional character from the viewpoint of crystal structure. By looking at the local atomic coordinates near Cr atoms, we found that the Cr intercalation in-troduce slight displacements of Se and Nb atoms. As schematically illustrated in Fig. 1(b), the Se2 sites are slightly moved away from the nearest Cr site in both in-            
+
+> (a) (b) 0.25 < z< 0.5
+> Cr Se Nb
+> Cr Nb2 Se1 Se2
+> 0
+> 50
+> 100
+> 150
+> 200
+> 050 100 150 200
+> |Fobs | (arb. unit) |Fcal | (arb. unit)
+> (c) CrNb 4Se 8
+> Nuclear reflections
+> T=2.3 K
+> R(F)=0.037
+> FIG. 1. (a) Crystal structure of CrNb 4Se 8.(b) Schematic illustration showing the atomic displacements near Cr atoms obtained from the structural refinement. (c) Comparison be-tween the observed and calculated nuclear structure factors,
+> |Fobs |and |Fcal |, respectively.
+
+plane and out-of-plane directions. Accordingly, Nb2 po-sitions shifted in-plane directions compensating the Se2-Nb2 distance. Finally, Se1 sites, which are surrounded by Nb2 sites, are slightly moved along the c axis, be-cause the in-plane positions of Se1 are fixed by the site symmetry. We note here that the nuclear reflections having odd numbers of H and/or K indices were clearly observed in the present experiment. The existence of these re-flections indicates that the intercalated Cr atoms indeed consitute the 2 a × 2a structure despite the imperfect oc-cupancy. We observed no additional nuclear superlattice peaks, suggesting that the vacancies of the Cr sites are randomly distributed in the sample. 4
+
+> 0
+> 5
+> 10
+> 15
+> 20
+> 25
+> 30
+> χ (x10  cm /g)
+> -6  3
+
+# (a) (b) 
+
+H || c (FC) 
+
+H || c (ZFC) 
+
+H c (FC) 
+
+H c (ZFC) 
+
+H || c (FC) 
+
+H || c (ZFC) 
+
+H c (FC) 
+
+H c (ZFC)       
+
+> χ -1
+> 0
+> 0.05
+> 0.10
+> 0.15
+> 0.20
+> 050 100 150 200 250 300
+
+Temperature (K)     
+
+> 0
+> 0.5
+> 1.0
+> 1.5x10 -3
+> 0100 200 300
+> T(K)
+> d(χ )/ dT -1
+
+FIG. 2. (a) Temperature variations of mass-normalized mag-netic susceptibilities of CrNb 4Se 8 measured under different field directions. All the data were measured on heating under an external field of 100 Oe after FC and ZFC. (b) Temperature variations of inverse susceptibilities. The dashed line shows the Curie-Weiss fit for the data in the temperature range of 
+
+T > 200 K. Inset shows the temperature derivative of the in-verse susceptibility for the data labeled ” H ⊥ c (ZFC)”. 
+
+B. Magnetic susceptibility 
+
+We measured temperature variations of magnetic sus-ceptibility, χ, using a single crystal CrNb 4Se 8 sample un-der an external magnetic field of 100 Oe. All the data were collected on heating after zero-field cooling (ZFC) and field cooling (FC) for two field directions, H ‖ c and 
+
+H ⊥ c. The results are shown in Fig. 2(a). At high temperatures, the susceptibilities for the two field directions almost overlap with each other. This in-dicates that the magnetic anisotropy in this system is relatively small and that the magnetic moments in this system can be approximated to be Heisenberg spins. At low temperatures, a kink anomaly of the suscepti-bility was observed at around TN = 65 K, indicating the presence of a magnetic phase transition at this tempera-ture. No significant difference between the FC and ZFC curves was found, suggesting the absence of spin-glass-like irreversibility in the measured temperature range. To estimate an averaged magnetic interactions in this        
+
+> -0.5
+> 0
+> 0.5
+> 00.2 0.4 0.6 0.8 11.2 1.4
+> (K,-K,0) (r. l. u.) (H,H,0) (r. l. u)
+> 100 010 110 210 120
+
+(a) (b)      
+
+> -2
+> -1
+> 0
+> 1
+> 2
+> 3
+> -0.5 00.5 11.5
+> (0,0, L) (r. l. u.) (H,H,0) (r. l. u)
+> 110
+> 112
+> Intensity (arb. unit)
+> 0510 15 20 25 Intensity (arb. unit)
+> 0510 15 20 25
+
+FIG. 3. [(a),(b)] Magnetic elastic scattering intensity maps for the (a) ( H, K, 0) and (b) (0 , 0, L ) planes measured at HRC. White (dotted) lines are guides to the eyes. 
+
+system, the inverse susceptibility χ−1(T ) is plotted in Fig. 2(b). The inset shows the temperature derivative of the inverse susceptibility measured under the field perpendicular to the c axis, indicating that it becomes nearly constant above approximately 200 K. By fitting the Curie-Weiss (CW) law to the data measured in the temperature range, we obtained Θ CW ∼ 60 K, which in-dicates, within the mean-field picture, that the exchange interactions in this material is ferromagnetic in average. We also estimated the effective magnetic moment from the CW fit. Taking into account the Cr-site occupancy of 0.74, the effective magnetic moment is μeff ≃ 4.05 μB/Cr .
+
+This value is comparable to the spin moment expected for Cr 3+ (3 d3, S = 3 /2, g = 2), μfree eff = g√S(S + 1) = 3.87 μB.
+
+C. Magnetic structure 
+
+Figures 3(a) and 3(b) show the elastic intensity maps measured at 5 K at HRC. We observed nuclear Bragg reflections indexed as HKL where H, K and L are all integers. In addition, possible magnetic reflections char-acterized by a wavevector of q = (1 /3, 1/3, 0) were ob-served on L = 2 n planes where n is an integer. To examine whether the additional reflections are of magnetic origin, we performed polarized neutron scat-tering measurements at PONTA. In the following, we 5           
+
+> (a) Pxx
+> (b) Pzz
+> (c) Screw model (d) In-plane model (e) Cycloidal model
+> In-plane
+> Cycloid Screw
+> (1/3,1/3,0)
+> 0
+> 50
+> 100
+> 7.5 88.5 99.5
+> SF
+> NSF
+> Intensity (counts/600 s)
+> ω(deg)
+> -1
+> -0.5
+> 0
+> 0.5
+> 1
+> 030 60 90
+> P/P0
+> α(deg.)
+> c*
+> (1,1,0)
+> Q
+
+α
+
+FIG. 4. (a) Scattering profiles of the magnetic Bragg reflec-tions at (1 /3, 1/3, 0) measured in the Pxx longitudinal po-larization analysis. (b) Polarization of the scattered neutron beam measured in the Pzz longitudinal polarization analysis. The data are normalized to the instrument beam polarization 
+
+P0 and plotted as function of α. Inset shows the definition of the angle α on the ( H, H, L ) horizontal scattering plane. Yellow circles show the positions of the magnetic Bragg reflec-tions measured in the Pzz setup. [(c)-(e)] Magnetic structure models characterized by the magnetic modulation wave vec-tor of q = (1 /3, 1/3, 0). 
+
+employ the Cartesian coordinate xyz in which the x and 
+
+z axes are defined to be parallel to the scattering vector 
+
+Q(= ki − kf ) and perpendicular to the scattering plane, respectively. Note that ki and kf are wavevectors for the incident and scattered neutrons, respectively. The y
+
+axis is defined so as to complete the right-hand coordi-nate system. The spectrometer was first operated in the 
+
+Pxx longitudinal polarization analysis mode, in which the neutron polarization was set to be parallel to the x axis. In this mode, the nuclear and magnetic scattering intensi-ties are observed in the non-spin-flip (NSF) and spin-flip (SF) channels, respectively [24]. Figure 4(a) shows the polarized neutron scattering profiles of the reflection at (1 /3, 1/3, 0). We found that the intensity was dominated by the SF scattering, revealing that this reflection is a pure magnetic reflection. The magnetic reflection with the q-vector of (1 /3, 1/3, 0) implies that the magnetic structure is a 120 ◦-type antiferomagnetic order. Similarly to other trian-gular lattice antiferromagnets showing 120 ◦-type orders, the magnetic moments are expected to be in the ab plane. However, the Pxx measurements do not provide any in-formation on the direction of the magnetic moments. We thus performed Pzz longitudinal polarization anal-ysis measurements, in which the neutron polarization was set to be parallel to the z axis. Recalling that a 
+
+(a) (b) CrNb 4Se 8      
+
+> Mag. reflections
+> T=2.3 K
+> R(F)=0.071
+> 0
+> 1
+> 2
+> 3
+> 4
+> 5
+> 6
+> 0123456
+> |Fobs | (arb. unit) |Fcal | (arb. unit)
+
+FIG. 5. (a) The in-plane 120 ◦ -type magnetic structure of CrNb 4Se 8. (b) Comparison between the observed and cal-culated magnetic structure factors, |Fobs | and |Fcal |, respec-tively. 
+
+magnetic scattering intensity is proportional to an ab-solute square of Fourier-transformed magnetic moments projected onto the plane perpendicular to the scattering vector, |M⊥(Q)|2, Pzz configuration enables us to sep-arate the y and z components of M⊥(Q) into the SF and NSF intensities, respectively. Thus, the polarization of neutrons scattered by a magnetic Bragg reflection is written as follows: 
+
+P = INSF − ISF 
+
+INSF + ISF 
+
+= |M ⊥ 
+
+> z
+
+(Q)|2 − | M ⊥ 
+
+> y
+
+(Q)|2
+
+|M ⊥ 
+
+> z
+
+(Q)|2 + |M ⊥ 
+
+> y
+
+(Q)|2 , (1) 
+
+where INSF and ISF are the integrated intensities of the magnetic Bragg reflection measured in the NSF and SF channels, respectively. We performed the Pzz polar-ization analysis for the magnetic Bragg reflections at (1 /3, 1/3, 0) and (1 /3, 1/3, 2). Figure 4(b) shows the po-larization of the observed magnetic reflection as func-tion of α, which is an angle between the ( H, H, 0) di-rection and the Q-vector when measuring the magnetic reflection. The data are normalized to the instrument beam polarization P0 measured by nuclear reflections. We also show calculated curves for the possible 120 ◦-type structures with different orientations of the mag-netic moments. The experimental data agree with the model in which the Cr magnetic moments lie in the ab 
+
+plane. We should recall here that the magnetic reflec-tions were observed only on L =even planes, indicating that the magnetic modulations on the two Cr layers in the unit cell are ferromagnetically coupled. From these results, we obtained the model for the magnetic structure as shown in Fig. 5(a). Finally, we performed unpolarized neutron diffraction measurements at 2.3 K at PONTA to determine the mag-nitude of the ordered magnetic moments. Figure 5(b) shows a comparison between the observed and calcu-lated magnetic structure factors. We obtained a reason-ably good R(F ) factor of 7.1%. Taking into account the Cr-site occupancy of 0 .74(4) obtained from the SEM– EDX analysis, the ordered moment was estimated to be 1.96(2) μB/Cr . This value is significantly smaller than the effective magnetic moment estimated from the Curie– 6                                                
+
+> Norm. Int. (arb. unit)
+> 0.16 0.12 0.08 0.04 0
+> Norm. Int. (arb. unit)
+> 0.16 0.12 0.08 0.04 0
+> Norm. Int. (arb. unit)
+> 0.16 0.12 0.08 0.04 00
+> 0.05
+> 0.1
+> 0.15
+> 0.2
+> 0.1 0.2 0.3 0.4 0.5
+> (g) hω= 1.50 ±0.25 meV
+> (H,H,0) (r. l. u.)
+> 0
+> 0.05
+> 0.1
+> 0.15 (f) hω= 2.00 ±0.25 meV
+> 0
+> 0.05
+> 0.1 (e) hω= 2.50 ±0.25 meV
+> Normalized Intensity (arb. unit)
+> 0
+> 0.05
+> 0.1 (d) hω= 3.00 ±0.25 meV
+> 0
+> 0.05
+> 0.1 (c) hω= 3.50 ±0.25 meV
+> 0
+> 20
+> 40
+> 60
+> 0.0 0.1 0.2 0.3 0.4 0.5 0.6 0.7 0.8
+> (b) = 0.00 ±0.25 meV
+> Norm. Int. (arb. unit) (H,H,0) (r. l. u.)
+> 0
+> 1
+> 2
+> 3
+> 4
+> 5
+> 6
+> 7
+> 8
+> 9
+> 10
+> 11
+> hω (meV)
+> 0
+> 1
+> 2
+> 3
+> 4
+> 5
+> 6
+> −1.0 −0.5 0.0 0.5 1.0
+> hω (meV) (1/3,1/3, L) (r. l. u.)
+> 0
+> 1
+> 2
+> 3
+> 4
+> 5
+> 6
+> −1.0 −0.5 0.0 0.5 1.0
+> hω (meV) (1/3+ K,1/3− K,0) (r. l. u.)
+> (a) (h) (i)
+> hω
+
+FIG. 6. (a) Magnetic excitation spectrum along the ( H, H, 0) in CrNb 4Se 8 measured at 5 K. [(b)-(g)] Constant-energy cuts of the excitation spectra along the ( H, H, 0) line at different energies. Dotted and solid lines are Gaussian functions fitted to the data. [(h),(i)] Magnetic excitation spectra along the (h) (1 /3 + K, 1/3 − K, 0) and (i) (0 , 0, L ) directions. 
+
+Weiss fit, which was comparable to the spin moment of Cr 3+ , namely S = 3 /2 (3 μB). A similar discrepancy between the ordered and effective moments has been reported in Co 1/3TaS 2[12], and may be attributed to screening effects by itinerant electrons in the host metal-lic layers. 
+
+D. Magnetic excitations 
+
+To investigate the magnetic interactions in CrNb 4Se 8,we measured magnetic excitations at HRC in MLF of J-PARC. Figure 6(a) shows the observed spectrum along the ( H, H, 0) direction. We observed dispersive spin-wave excitations emerging from the elastic magnetic Bragg peaks on the elastic line shown in Fig. 6(b). Figures 6(c)-6(g) show the constant-energy cuts near H = 1 /3, re-vealing that the two peaks corresponding to the magnon excitations are gradually moving away from each other as the energy transfer ℏω is increased. To extract the peak positions, we fitted two Gaussian functions to the data. Similar spin-wave dispersion was also observed in the ex-citation spectrum for the (1 /3 + K, 1/3 − K, 0) direction, as shown in Fig. 6(h). Importantly, we also observed a steep spin-wave dispersion along the (1 /3, 1/3, L ) direc-tion, as shown in Fig. 6(i). This clearly demonstrates that this system has sizable magnetic interactions along the c axis. The constant-energy cuts for the intensity maps in Figs. 6(h) and 6(i) are shown in Appendix. We note here that these inelastic scattering signals were rather weak and broad, and that the signal-to-noise ratio of the present experiment was not high enough to observe the signals in the high energy regions. This is partly because the density of the magnetic moments is relatively low in this compound. Another reason could be the effect of randomness in the magnetic Cr sites. As we discussed in Sec. III A, the triangular lattice layers of the intercalated Cr atoms contain 26% of atomic vacan-cies. The randomly distributed vacancies would affect coherent propagations of the spin waves, leading to the broadening of the excitation spectra. We also mention that the previous study on Co 1/3TaS 2[12] also presented neutron inelastic scattering spectra, in which the inelas-tic scattering signals also seem to be smeared in high energy regions. To observe the low-energy part of the inelastic scatter-ing spectra below 1 meV, which could not be resolved by the measurements with Ei = 15 meV at HRC, we per-formed additional neutron inelastic scattering measure-ments at CTAX in HFIR. Figure 7(a) shows the mag-netic excitation spectra measured along the ( H, H, 0) line at 1.5 K. In Fig. 7(b), we also show constant-energy-transfer cuts replotted from the data shown in Fig. 7(a). The spin-wave excitations are emerging from the mag-netic elastic Bragg peak at (1 /3, 1/3, 0). We did not ob-serve an energy gap in the spin wave spectra within the energy resolution of this experiment, which is consistent with the Nambu-Goldstone mode expected in a classical Heisenberg model for a triangular lattice antiferromag-net. 7    
+
+> hω=0.35 0.05 meV
+> hω=0.55 0.05 meV
+> hω=0.75 0.05 meV
+
+(a) (b) hω (meV)       
+
+> (offset +0.04)
+> (offset +0.08)
+> 0.05
+> 0.1
+> 0.25 0.30 0.35 0.40
+> Norm. Int. (arb. unit) (H,H,0) (r. l. u.)
+> 0.4
+> 0.6
+> 0.8
+> 1
+> 0.25 0.30 0.35 0.40
+> (H,H,0) (r. l. u.)
+> 00.01 0.02 0.03 0.04 0.05
+> Norm. Int. (arb. unit)
+
+FIG. 7. (a) The intensity map of the magnetic excitation spec-tra measured along the ( H, H, 0) direction at 1.5 K at CTAX spectrometer in HFIR. (b) The constant-energy-transfer pro-files extracted from the intensity map shown in (a). To en-hance the visibility, we summed up the intensities measured at 0.3 and 0.4 meV. Similarly, the intensities at 0.5 and 0.6 meV (0.7 and 0.8 meV) were also summed up. Each profile is shifted by 0.04 along the vertical direction. 
+
+To analyze the observed data, we employed the min-imal Heisenberg model which includes only the in-plane nearest-neighbor (NN) interaction J1 and the interlayer nearest-neighbor interaction Jc, as shown in Fig. 8(a). The Hamiltonian is written as 
+
+H = ∑
+
+> 〈i,j 〉intra
+
+J1 Si · Sj + ∑
+
+> 〈i,j 〉inter
+
+Jc Si · Sj , (2) where 〈i, j 〉intra and 〈i, j 〉inter stand for intra- and inter-layer nearest-neighbor spin pairs, respectively. By applying the linear spin-wave approximation to this Hamiltonian and the 120 ◦-type antiferromagnetic ground state, the excitation energy is written as follows. 
+
+ℏωq = S
+
+[ {
+
+J1
+
+(
+
+3 + 2 γ(1) 
+
+> q
+
+)
+
++ 2 Jc
+
+(
+
+−1 + γ(2) 
+
+> q
+
+)} 
+
+×
+
+{
+
+J1
+
+(
+
+3 − γ(1) 
+
+> q
+
+)
+
++ 2 Jc
+
+(
+
+−1 + γ(2) 
+
+> q
+
+)} ]1/2
+
+,
+
+(3) where                
+
+> 0
+> 5
+> 10
+> 15
+> 20
+> -1 -0.5 00.5 1
+> hω (meV) (1/3,1/3, L) (r. l. u.)
+> 0
+> 2
+> 4
+> 6
+> 00.2 0.4 0.6 0.8 1
+> hω (meV) (H,H,0) (r. l. u.)
+> (a) (b) (c) (d)
+> 0
+> 2
+> 4
+> 6
+> -1 -0.5 00.5 1
+> hω (meV) (1/3+ K,1/3– K,0) (r. l. u.)
+
+FIG. 8. (a) The definition of the intra-layer and inter-layer magnetic interactions J1 and Jc, respectively. [(b)-(c)] Cal-culated spin-wave dispersion relations fitted to the observed data points for the (b) ( H, H, 0), (c) (1 /3 + K, 1/3 − K, 0) and (d) (1 /3, 1/3, L ) lines. 
+
+γ(1)  
+
+> q
+
+= cos 2 πH + cos 2 πK + cos 2 π(H + K), (4) 
+
+γ(2)  
+
+> q
+
+= cos πL. (5) We fitted the calculated dispersions to the peak posi-tions observed along the ( H, H, 0), (1 /3 + K, 1/3 − K, 0) and (1 /3, 1/3, L ) lines, as shown in Figs. 8(b)-8(d). As a result, the exchange interactions were estimated to be 
+
+J1S = 1 .80 ± 0.05 meV and JcS = −4.30 ± 0.64 meV. These values qualitatively agree with the results of the magnetic susceptibility measurements which pointed out the existence of relatively large ferromagnetic interac-tions in this system. Although the crystal structure of this system consists of the two-dimensional vdW layers, the present results show that the magnetic Cr ions sepa-rated by the layers are strongly coupled with each other by long-range interactions. In fact, the previous ab −intio 
+
+calculation[18] predicated that the inter-layer magnetic interaction is stronger than the intra-layer interaction in CrNb 4Se 8.We note that the energy range of the observed peak positions along the (1 /3, 1/3, L ) line is rather limited as compared to the energy scale of the dispersion rela-tion predicted by the calculation. Although the observed steep spin-wave dispersion along the L direction unequiv-ocally showed the existence of the strong magnetic inter-action along the c axis, the magnitude of Jc would be further refined by examining other models with distant interactions and by measuring the spectra in the high energy region in more detail in the future. Let us compare the present results with the other vdW magnets reported in the previous studies. Table II sum-marizes the ratios of the inter-layer magnetic interac-8                                                                         
+
+> TABLE II. Comparison of the ratio |Jc|/|J1|for representative van der Waals magnets. All exchange parameters were taken from the previous inelastic neutron scattering studies cited in the Ref. column.
+> Family Material J1(meV) Jc(meV) |Jc|/|J1|(%) Ref.
+> MPS 3FePS 31.46 −0.0073 0.50 [3] NiPS 31.9 00[4] MnPS 3−0.77 0.0019 0.25 [5] CoPS 3−1.37 00[27]
+> MX3CrCl 3−0.94 00[28] CrI 3−2.11 0.048 2.3 [29] CrBr 3−1.485 00[30]
+> CrPS 4−2.89 0.153 5.3 [31] MnBi 2Te 4a−0.475 0.087 18.3 [32]
+> MxTX 2Co 1/3TaS 2b0.561 0.42 74.9 [12] CrNb 4Se 8a1.8 −4.3238.9 [This work]
+> aJ1and Jcare given as JS .
+> bJ1and Jcare given as JS 2.
+
+tions to the strongest in-plane interactions, which are referred to as Jc and J1 in this paper, respectively, for representative vdW magnets and related layered mag-nets. Although some of them were analyzed by assum-ing the existence of the second- or third-nearest-neighbor in-plane interactions, we picked up only the strongest in-teraction for simplicity. In typical vdW magnets such as 
+
+M PS 3 [3–5], CrPS 4 [31] and M X3 [28–30], the ratio is less than 10% or assumed to be zero, meaning that the two-dimensional magnetic layers are nearly isolated from each other. This agrees with the original expectation for the vdW magnets. As for the layered antiferromagnetic topological insulator MnBi 2Te 4 [32], the ratio is approx-imately ∼20% and thus relatively larger than those for the vdW magnets mentioned above. By contrast, magnetically intercalated TMDs, such as Co 1/3TaS 2 [12] and the presently studied CrNb 4Se 8, ex-hibit remarkably large ratios of 75–240%, highlighting the strong interlayer magnetic coupling. One possible explanation for this trend is the existence or absence of conduction electrons. Specifically, M PS 3 and M X3 are insulators, in which magnetic interactions are often medi-ated by short-range direct exchange or super exchange in-teractions. On the other hand, Co 1/3TaS 2 and CrNb 4Se 8
+
+are metals, in which couplings between conduction elec-trons and local magnetic moments would yield long-range magnetic interactions. It is also worth mentioning that a recent ARPES study on Cr 1/3NbSe 2 observed disper-sive electron bands along the c axis[33]. These results imply that Ruderman-Kittel-Kasuya-Yoshida (RKKY)-type long-range interactions account for the inter-layer coupling in the magnetically-intercalated TMDs. To ver-ify this scenario, it would be necessary to carry out further systematic studies on magnetic interactions in MxTX 2 systems.  
+
+> E. Temperature dependence of the magnetic correlations
+
+Figure 9(a) shows temperature variations of the in-tegrated intensities of the magnetic Bragg reflections at (1 /3, 1/3, 0) and (1 /3, 1/3, 2) at PONTA in JRR-3. These intensities are normalized to those at the lowest temperature. They monotonically decrease and nearly coincide with each other at all the temperatures below 
+
+TN . This suggests that the 120 ◦-type magnetic struc-ture is maintained up to temperatures near TN . We also measured the widths of these magnetic Bragg peaks, which are inversely proportional to the magnetic corre-lation lengths, with varying temperature. Taking into account the ellipsoidal shape of the resolution function of a triple-axis neutron spectrometer (see inset of Fig. 9(b)), the width along the (1 , 1, 0) direction ( W110 ) was measured by the ( H, H, 2) scan for the magnetic reflec-tion at (1 /3, 1/3, 2). Similarly, the width along the c∗
+
+axis ( Wc) was measured by the (1 /3, 1/3, L ) scan for the magnetic reflection at (1 /3, 1/3, 0). Figure 9(b) displays the temperature variations of W110 and Wc, which are defined as the full widths at half maxima of the observed scan profiles of the magnetic reflections. For both di-rections, the widths remain comparable to the resolution limits estimated by measuring nuclear Bragg reflections, and no appreciable broadenings were observed even up to temperatures close to TN. This demonstrates that the magnetic order retains long-range correlations in both the in-plane and out-of-plane directions even near TN.This is in contrast to the case of the two-dimensional triangular-lattice antiferromagnet NiGa 2S4, in which the magnetic correlation length increases significantly as the temperature is increased.[34] We also performed neutron spin-echo measurements at iNSE in JRR-3. We focused on the signals near the mag-9        
+
+> 00.5 1.0 1/3 1/3 0 1/3 1/3 2
+> Norm. Int. (arb. unit)
+> 0.000
+> 0.005
+> 0.010
+> 0.015
+> 0.020
+> 010 20 30 40 50 60 70 80
+> Wc
+> W110
+> resolution for W c
+> resolution for W 110
+> W110 , Wc (r. l. u.)
+
+Temperature (K) (a) (b)           
+
+> c*
+> (1,1,0)
+> Q
+> FIG. 9. (a) Temperature dependence of the integrated in-tensities of the magnetic Bragg reflections at (1 /3,1/3,0) and (1 /3,1/3,2). These data are normalized to their lowest-temperature values. (b) Temperature dependence of W110
+> and Wc.Solid lines show the resolution widths. Inset is a schematic drawing for the resolution function of a triple-axis neutron spectrometer. Orange ellipse qualitatively shows the shape of the resolution functions, and yellow circles denote the positions of magnetic Bragg reflections.
+
+netic Bragg peak of (1 /3, 1/3, 0) and measured them with varying temperature. Figure 10 shows the intermediate scattering functions I(Q, t ) normalized to that at the low-est temperature of 2.2 K. While the intensity of the mag-netic Bragg peak becomes weaker as the temperature is increased, the I(Q, t ) curve does not show a discernible decay within the spin-echo time range of up to 15 ns. This means that the Fourier component at around (1 /3, 1/3, 0) corresponds to a static order. It should be noted that the decay of I(Q, t ) curve, which is indicative of spin fluctuations, was sometimes observed in two-dimensional frustrated magnets such as NiGa 2S4[35] and CuCrO 2[36]. Although this kind of spin fluctuations should exist even in non-frustrated systems in principle, the above ex-amples demonstrated that they could be enhanced by the low-dimensionality and/or magnetic frustration and that they are detectable by neutron spin echo measure-ments. The present results show that CrNb 4Se 8 does not have such a strong magnetic fluctuations near TN,which is distinct from the other systems having strong two-dimensionality.   
+
+> 0.0
+> 0.5
+> 1.0
+> 1.5
+> 2.0
+> 2.5
+> 0.1 110
+> 40 K
+> 50 K
+> 60 K
+> 62 K
+> I(Q,t )
+
+t (ns)    
+
+> FIG. 10. I(Q, t ) profiles measured by neutron spin-echo mea-surements at 40, 50, 60 and 62 K. These values are normalized to the I(Q, t ) curve measured at the lowest temperature of 2.2 K.
+> IV. SUMMARY
+
+In this study, we have investigated the magnetic or-der and excitations of the magnetically-intercalated vdW compound CrNb 4Se 8 by neutron scattering measure-ments. As for the crystal structure, the present single-crystal neutron diffraction measurements revealed that, despite the intercalation of Cr atoms, the NbSe 2 lay-ers retain their structure in average, while the atoms near the intercalated Cr show slight displacements. The polarized and unpolarized neutron scattering measure-ments demonstrated that the magnetic structure at low temperatures is the in-plane 120 ◦-type antiferromagnetic structure with magnetic moment lying in the ab plane. These magnetic moments are stacked ferromagnetically along the c axis. The inelastic neutron scattering mea-surements revealed steep spin-wave dispersions emerg-ing from the magnetic Bragg peaks. By fitting the cal-culated dispersion relations, which were derived by ap-plying the linear spin-wave approximation to the model Hamiltonian, to the observed data, we estimated the exchange constants as J1 = 1.80 ± 0.05 meV , J c =
+
+−4.30 ± 0.64 meV . The fairly large ferromagnetic inter-action along the c axis shows that this system exhibits the three-dimensional magnetic correlation, which is also consistent with the recent theoretical prediction[18]. The measurements on temperature dependence of the mag-netic correlation lengths and temporal spin correlations further confirmed this scenario. We propose that the cou-pling between the conduction electrons and local mag-netic moments could be the origin of the strong inter-layer magnetic interaction in this system. This work pro-vides insights into both the static and dynamical prop-erties of the magnetism in CrNb 4Se 8, and contributes to the understanding of the mechanisms by which three-dimensional magnetic order can emerge in van der Waals magnetic materials. 10 
+
+> ACKNOWLEDGEMENTS
+
+The authors are grateful to T. Hatanaka, T. Nomoto, R. Arita and K. Ishizaka for fruitful discussions. The neu-tron scattering experiments at PONTA and the neutron spin-echo measurements at iNSE in JRR-3 were carried out along the proposals (No. 24401 and 25405, respec-tively) and partly supported by the institute for solid state physics of the university of Tokyo. The neutron inelastic scattering experiments at HRC in the Mate-rials and Life Science Experimental Facility of the J-PARC was performed under a user program (Proposal No. 2025S01). A portion of this research used resources at the High Flux Isotope Reactor, a DOE Office of Sci-ence User Facility operated by the Oak Ridge National Laboratory. The beam time was allocated to CTAX on proposal number IPTS-35059. The neutron scatter-ing measurement at CTAX in HFIR was also supported by the US-Japan cooperative research program on neu-tron scattering (Proposal No. 2025-9). This work was supported by JSPS KAKENHI (Grant Nos. 21H04990, 22H01949, 22H04965, 24H02235, 25H00611, 25H00846), JST CREST (Grant No. JPMJCR23O4), JST FOREST (Grant No. JPMJFR223W), Murata Science Founda-tion, Asahi Glass Foundation. The part of this study was carried out by the joint research of the Cryogenic Research Center, the University of Tokyo. S. T. was supported by JSPS KAKENHI (Grant No. 25KJ0050). M. N. was partly supported by The Mitsubishi Founda-tion and by SIT Supporting Program for Innovative Re-search (S-SPIRE). The images of the crystal and mag-netic structures in this paper were depicted using the software VESTA[37]. 
+
+> APPENDIX:SEM-EDX MEASUREMENTS
+
+Figure 11(a) shows a backscattered electron image of a single crystal of CrNb 4Se 8, which displays the spatial distribution the electron density. The uniform contrast of this image indicates that there is no significant inho-mogeneity in chemical composition. Figure 11(b) shows an enlarged view on the sample surface. We focused on the 10 positions indicated by the cross marks, and per-formed chemical analyses by measuring characteristic X-rays emitted from the sample. The results are summa-rized in Table III, revealing that the ratios of the three elements is nearly independent of the positions. By nor-malizing the amount of Se to 8, the amounts of Cr and Nb are determined to be 0.74(4) and 3.98(8), respectively. 
+
+> APPENDIX: CONSTANT-ENERGY CUTS OF THE NEUTROBN INELASTIC SCATTERING SPECTRA
+
+Figures 12(a) and 12(b) show the constant-energy pro-files along the (1 /3+ K, 1/3−K, 0) and (1 /3, 1/3, L ) lines,                                                
+
+> TABLE III. Results of SEM-EDX measurements.
+> Position Cr Nb Se Total(wt%)
+> 13.95 61.49 35.34 100.79 23.79 61.16 36.40 101.34 33.70 60.96 36.11 100.77 43.95 60.89 36.74 101.58 53.71 60.97 35.77 100.44 63.36 60.89 36.16 100.41 73.92 61.38 35.88 101.18 83.81 60.90 35.84 100.55 93.38 61.24 35.41 100.03 10 3.92 61.61 34.69 100.22
+> ave. 0.74(4) 3.98(8) 8
+
+which are extracted from the observed spectra shown in Figs. 6(h) and 6(i), respectively. For both directions, we observed two peaks moving away from each other as the energy transfer increases, being consistent with the Nambu-Goldstone modes emerging from the magnetic elastic Bragg peak at (1 /3, 1/3, 0). 
+
+# (a) (b)  
+
+> FIG. 11. (a) The backscattered electron image of a single crystal CrNb 4Se 8. (b) The magnified view of the sample sur-face showing the positions where the chemical analyses were performed.
+
+11 
+
+0
+
+0.05 
+
+0.1 
+
+0.15 
+
+0.2 
+
+-0.6 -0.4 -0.2 0 0.2 0.4 0.6 
+
+= 1.50 ± 0.25 meV 
+
+(1/3,1/3, L) (r. l. u.) 
+
+0
+
+0.05 
+
+0.1 
+
+0.15 = 2.00 ± 0.25 meV 
+
+0
+
+0.05 
+
+0.1 = 2.50 ± 0.25 meV 
+
+> Normalized Intensity (arb. unit)
+
+0
+
+0.05 
+
+0.1 = 3.00 ± 0.25 meV 
+
+0
+
+0.05 
+
+0.1 = 3.50 ± 0.25 meV 
+
+0
+
+0.05 
+
+0.1 
+
+0.15 
+
+0.2 
+
+-0.4 -0.3 -0.2 -0.1 0 0.1 0.2 0.3 0.4 
+
+= 1.50 ± 0.25 meV 
+
+(1/3+ K,1/3-K,0) (r. l. u.) 
+
+0
+
+0.05 
+
+0.1 
+
+0.15 = 2.00 ± 0.25 meV 
+
+0
+
+0.05 
+
+0.1 = 2.50 ± 0.25 meV 
+
+> Normalized Intensity (arb. unit)
+
+0
+
+0.05 
+
+0.1 hω = 3.00 ± 0.25 meV 
+
+0
+
+0.05 
+
+0.1 = 3.50 ± 0.25 meV 
+
+(a) (1/3+ K,1/3-K,0) direction (b) (1/3,1/3, L) direction 
+
+hω
+
+hω
+
+hω
+
+hω
+
+hω hω
+
+hω
+
+hω
+
+hω
+
+hω
+
+FIG. 12. Constant-energy cuts of the excitation spectra along the (a) (1 /3 + K, 1/3 − K, 0) and (b) (1 /3, 1/3, L ) lines at dif-ferent energies. Dotted and solid lines are Gaussian functions fitted to the data. 12 
+
+REFERENCES 
+
+[1] J.-G. Park, K. Zhang, H. Cheong, J. H. Kim, C. A. Belvin, D. Hsieh, H. Ning, and N. Gedik, 2D van der Waals magnets: From fundamental physics to applica-tions, Rev. Mod. Phys. , (2026). 
+
+[2] J.-U. Lee, S. Lee, J. H. Ryoo, S. Kang, T. Y. Kim, P. Kim, C.-H. Park, J.-G. Park, and H. Cheong, Ising-Type Magnetic Ordering in Atomically Thin FePS 3,Nano Letters 16 , 7433 (2016). 
+
+[3] D. Lan¸ con, H. C. Walker, E. Ressouche, B. Oulad-diaf, K. C. Rule, G. J. McIntyre, T. J. Hicks, H. M. Rønnow, and A. R. Wildes, Magnetic structure and magnon dynamics of the quasi-two-dimensional antifer-romagnet FePS 3, Phys. Rev. B 94 , 214407 (2016). 
+
+[4] D. Lan¸ con, R. A. Ewings, T. Guidi, F. Formisano, and A. R. Wildes, Magnetic exchange parameters and anisotropy of the quasi-two-dimensional antiferromagnet NiPS 3, Phys. Rev. B 98 , 134414 (2018). 
+
+[5] A. R. Wildes, B. Roessli, B. Lebech, and K. W. Godfrey, Spin waves and the critical behaviour of the magneti-zation in MnPS 3, J. Phys.: Condens. Matter 10 , 6417 (1998). 
+
+[6] B. Huang, G. Clark, E. Navarro-Moratalla, D. R. Klein, R. Cheng, K. L. Seyler, D. Zhong, E. Schmidgall, M. A. McGuire, D. H. Cobden, W. Yao, D. Xiao, P. Jarillo-Herrero, and X. Xu, Layer-Dependent Ferromagnetism in a van der Waals Crystal down to the Monolayer Limit, Nature 546 , 270 (2017). 
+
+[7] C. Gong, L. Li, Z. Li, H. Ji, A. Stern, Y. Xia, T. Cao, W. Bao, C. Wang, Y. Wang, Z. Q. Qiu, R. J. Cava, S. G. Louie, J. Xia, and X. Zhang, Discovery of Intrinsic Ferro-magnetism in Two-Dimensional van der Waals Crystals, Nature 546 , 265 (2017). 
+
+[8] Y. Deng, Y. Yu, Y. Song, J. Zhang, N. Z. Wang, Z. Sun, Y. Yi, Y. Z. Wu, S. Wu, J. Zhu, J. Wang, X. H. Chen, and Y. Zhang, Gate-tunable Room-Temperature Ferro-magnetism in Two-Dimensional Fe 3GeTe 2, Nature 563 ,94 (2018). 
+
+[9] B. van Laar, H. M. Rietveld, and D. J. W. Ijdo, Mag-netic and Crystallographic Structures of Me xNbS 2 and Me xTaS 2, J. Solid State Chem. 3, 154 (1971). 
+
+[10] Y. Togawa, T. Koyama, K. Takayanagi, S. Mori, Y. Kousaka, J. Akimitsu, S. Nishihara, K. Inoue, A. S. Ovchinnikov, and J.-i. Kishine, Chiral Magnetic Soliton Lattice on a Chiral Helimagnet, Phys.l Rev. Lett. 108 ,107202 (2012). 
+
+[11] C. Obeysekera, K. A. H. Gamage, D. H. Patabendige, H. Dissanayake, G. Zhong, A. Miura, K. Yoshimura, and R. Ang, The Magneto-Transport Properties of Cr 1/3 TaS 2
+
+with Chiral Magnetic Solitons, Adv. Electron. Mater. 7,2100031 (2021). 
+
+[12] P. Park, W. Cho, C. Kim, Y. An, Y.-G. Kang, M. Avdeev, R. Sibille, K. Iida, R. Kajimoto, K. H. Lee, W. Ju, E.-J. Cho, H.-J. Noh, M. J. Han, S.-S. Zhang, C. D. Batista, and J.-G. Park, Tetrahedral triple-Q mag-netic ordering and large spontaneous Hall conductivity in the metallic triangular antiferromagnet Co 1/3 TaS 2, Nat. Commun. 14 , 8346 (2023). 
+
+[13] H. Takagi, R. Takagi, S. Minami, T. Nomoto, K. Ohishi, M.-T. Suzuki, Y. Yanagi, M. Hirayama, N. D. Khanh, K. Karube, H. Saito, D. Hashizume, R. Kiyanagi, Y. Tokura, R. Arita, T. Nakajima, and S. Seki, Sponta-neous topological Hall effect induced by non-coplanar an-tiferromagnetic order in intercalated van der Waals ma-terials, Nat. Phys. 19 (2023). 
+
+[14] S. Wu, Z. Xu, S. C. Haley, S. F. Weber, A. Acharya, E. Maniv, Y. Qiu, A. A. Aczel, N. S. Settineri, J. B. Neaton, J. G. Analytis, and R. J. Birgeneau, Highly tun-able magnetic phases in transition-metal dichalcogenide Fe 1/3+ δ NbS 2, Physical Review X 12 , 021003 (2022). 
+
+[15] Y. An, P. Park, C. Kim, K. Zhang, H. Kim, M. Avdeev, J. Kim, M.-J. Han, H.-J. Noh, S. Seong, J.-S. Kang, H.-D. Kim, and J.-G. Park, Bulk properties of the chi-ral metallic triangular antiferromagnets Ni 1/3 NbS 2 and Ni 1/3 TaS 2, Phys. Rev. B 108 , 054418 (2023). 
+
+[16] A. F. Gubkin, E. P. Proskurina, Y. Kousaka, E. M. Sherokalova, A. N. Vasiliev, M. Matsuda, A. V. Malishev, H. Ueda, G. Ehlers, A. Podlesnyak, and J. Akimitsu, Crystal and Magnetic Structures of Cr 1/3NbSe 2 from Neutron Diffraction, J. Appl. Phys. 119 , 013903 (2016). 
+
+[17] S. Husremovi´ c, C. K. Groschner, K. Inzani, I. M. Craig, K. C. Bustillo, P. Ercius, N. P. Kazmierczak, J. Syndikus, M. Van Winkle, S. Aloni, T. Taniguchi, K. Watanabe, S. M. Griffin, and D. K. Bediako, Hard Ferromagnetism Down to the Thinnest Limit of Iron-Intercalated Tanta-lum Disulfide, J. Am. Chem. Soc. 144 , 12167 (2022). 
+
+[18] T. Hatanaka, T. Nomoto, and R. Arita, Magnetic inter-actions in intercalated transition metal dichalcogenides: A study based on ab initio model construction, Phys.l Rev. B 107 , 184429 (2023). 
+
+[19] H. C. Mandujano, G. S. Salas, T. Li, P. Y. Zavalij, A. Manj´ on-Sanz, N. P. Butch, and E. E. Rodriguez, Itinerant A-type antiferromagnetic order in Co 1/4TaSe 2,Phys. Rev. B 110 , 144420 (2024). 
+
+[20] L. S. Xie, S. S. Fender, C. Mollazadeh, W. Fang, M. D. Frontzek, S. Husremovi´ c, K. Li, I. M. Craig, B. H. Goodge, M. P. Erodici, J. D. Gonzalez, Oscar Denlinger, Y. Ping, and D. K. Bediako, Anomalous hall effect from inter-superlattice scattering in a noncollinear antiferro-magnet, Nat. Commun. 16 , 5711 (2025). 
+
+[21] J. M. Voorhoeve, N. G. E. van den Berg, and M. Robbins, Intercalation of the Niobium-Diselenide Layer Structure by First-Row Transition Metals, J. Solid State Chem. 1,134 (1970). 
+
+[22] J. Voorhoeve-van Den Berg and R. Sherwood, Low-temperature magnetic susceptibilities of NbSe 2 contain-ing the first-row transition metals, J. Phys. Chem. Solids 
+
+32 , 167 (1971). 
+
+[23] N. M. Toporova, E. M. Sherokalova, N. V. Selezneva, V. V. Ogloblichev, and N. V. Baranov, Crystal struc-ture, properties and Griffiths-like phase in niobium dis-elenide intercalated with chromium, J. Alloys Compd. 
+
+848 , 156534 (2020). 
+
+[24] T. Nakajima, H. Saito, N. Kobayashi, T. Kawasaki, T. Nakamura, H. Kawano-Furukawa, S. Asai, and T. Ma-suda, Polarized and Unpolarized Neutron Scattering for Magnetic Materials at the Triple-axis Spectrometer PONTA in JRR-3, J. Phys. Soc. Jpn. 93 , 091002 (2024). 
+
+[25] S. Itoh, T. Yokoo, S. Satoh, S. ichiro Yano, D. Kawana, J. Suzuki, and T. J. Sato, High Resolution Chopper Spec-trometer (HRC) at J-PARC, Nucl. Instrum. Methods Phys. Res., Sect. A 631 , 90 (2011). 
+
+[26] R. Azuah, L. Kneller, P. Qiu, Y.and Tregenna-Piggott, C. Brown, J. Copley, and R. Dimeo, DAVE: A compre-hensive software suite for the reduction, visualization, and analysis of low energy neutron spectroscopic data, 13 
+
+J. Res. Natl. Inst. Stan. Technol. 114 , 341 (2009). 
+
+[27] A. R. Wildes, B. F˚ ak, U. B. Hansen, M. Enderle, J. R. Stewart, L. Testa, H. M. Rønnow, C. Kim, and J.-G. Park, Spin wave spectra of single crystal CoPS 3 , Phys. Rev. B 107 , 054438 (2023). 
+
+[28] J. A. Schneeloch, Y. Tao, Y. Cheng, L. Daemen, G. Xu, Q. Zhang, and D. Louca, Gapless Dirac magnons in CrCl 3 , npj Quantum Mater. 7 (2022). 
+
+[29] L. Chen, J. Zhang, X. Zhong, B. Li, and H. Wang, Mag-netic exchange interactions in the layered ferromagnet CrI 3, J. Phys. D: Appl. Phys. 51 , 054002 (2018). 
+
+[30] S. E. Nikitin, B. F˚ ak, K. W. Kr¨ amer, T. Fennell, B. Nor-mand, A. M. L¨ auchli, and C. R¨ uegg, Thermal evolution of dirac magnons in the honeycomb ferromagnet crbr 3,Phys. Rev. Lett. 129 , 127201 (2022). 
+
+[31] S. Calder, A. V. Haglund, Y. Liu, D. M. Pajerowski, H. B. Cao, T. J. Williams, V. O. Garlea, and D. Mandrus, Mag-netic structure and exchange interactions in the layered semiconductor CrPS 4, Phys. Rev. B 102 , 024408 (2020). 
+
+[32] B. Li, J.-Q. Yan, D. M. Pajerowski, E. Gordon, A.-M. Nedi´ c, Y. Sizyuk, L. Ke, P. P. Orth, D. Vaknin, and R. J. McQueeney, Competing Magnetic Interactions in the Antiferromagnetic Topological Insulator MnBi 2Te 4,Phys. Rev. Lett. 124 , 167204 (2020). 
+
+[33] B. K. Saika, S. Hamao, Y. Majima, X. Huang, H. Matsuoka, S. Yoshida, M. Kitamura, M. Sakano, T. Hatanaka, T. Nomoto, M. Hirayama, K. Horiba, H. Kumigashira, R. Arita, Y. Iwasa, M. Nakano, and K. Ishizaka, Signature of topological band crossing in fer-romagnetic Cr 1/3NbSe 2 epitaxial thin film, Phys. Rev. Res. 4, L042021 (2022). 
+
+[34] C. Stock, S. Jonas, C. Broholm, S. Nakatsuji, Y. Nambu, K. Onuma, Y. Maeno, and J.-H. Chung, Neutron-Scattering Measurement of Incommensurate Short-Range Order in Single Crystals of the S=1 Triangular Antiferromagnet NiGa 2S4, Phys. Rev. Lett. 105 , 037402 (2010). 
+
+[35] Y. Nambu, J. S. Gardner, D. E. MacLaughlin, C. Stock, H. Endo, S. Jonas, T. J. Sato, S. Nakatsuji, and C. Bro-holm, Spin Fluctuations from Hertz to Terahertz on a Triangular Lattice, Phys. Rev. Lett. 115 , 127202 (2015). 
+
+[36] G. Ehlers, A. A. Podlesnyak, M. Frontzek, R. S. Freitas, L. Ghivelder, J. S. Gardner, S. V. Shiryaev, and S. Bar-ilo, A detailed study of the magnetic phase transition in CuCrO 2, J. Phys.: Condens. Matter 25 , 496009 (2013). 
+
+[37] K. Momma and F. Izumi, VESTA 3 for three-dimensional visualization of crystal, volumetric and morphology data, J. Appl. Crystallogr. 44 , 1272 (2011).

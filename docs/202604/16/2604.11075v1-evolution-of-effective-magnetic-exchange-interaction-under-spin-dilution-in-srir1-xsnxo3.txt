@@ -1,0 +1,347 @@
+Title: Evolution of effective magnetic exchange interaction under spin dilution in SrIr$_{1-x}$Sn$_x$O$_3$
+
+URL Source: https://arxiv.org/pdf/2604.11075v1
+
+Published Time: Tue, 14 Apr 2026 01:49:25 GMT
+
+Number of Pages: 6
+
+Markdown Content:
+IOP Publishing Journal vv (yyyy) aaaaaa Author et al 
+
+# Journal Name 
+
+> LETTER
+
+Crossmark 
+
+> RECEIVED
+
+dd Month yyyy 
+
+> REVISED
+
+dd Month yyyy 
+
+# Evolution of effective magnetic exchange interaction under spin dilution in SrIr 1−xSn xO3
+
+Xiang Li 1 , Yifan Jiang 1 , Yuan Wan 2 and Xuerong Liu 1,3,∗  
+
+> 1School of Physical Science and Technology, ShanghaiTech University, Shanghai, China
+> 2Institute of Physics, Chinese Academy of Sciences, Beijing, China
+> 3Center for Transformative Science, ShanghaiTech University, Shanghai, China
+> ∗Author to whom any correspondence should be addressed.
+> E-mail: liuxr@shanghaitech.edu.cn
+> Keywords: strongly electron-correlated systems, spin dilution, magnetic exchange interaction, iridates
+
+Abstract 
+
+Resonant inelastic X-ray scattering measurements reveal robust magnetic excitations in the perovskite iridates SrIr 1−xSn xO3. We analyzed the dispersions of the magnetic excitation with spin-dilution ratio x = 0, 0.03, 0.06, 0.1, and 0.2, crossing from semi-metal to spin-diluted while antiferromagnetically ordered insulators. The extracted effective magnetic exchange interactions decrease continuously upon increasing spin dilution, and their evolution follows a simple spin-dilution scaling law. These results not only verify the strong electron-correlation nature of the metallic parent SrIrO 3, but also reveal the entanglement of the charge and spin dynamics in this system. 
+
+1 Introduction 
+
+Nonmagnetic substitution provides an effective route to tune the spin dynamics in materials and to drive emergent phenomena [1], such as spin dilution induced suppression of superconductivity [2, 3] and the emergence of spin-glass behavior in frustrated magnetic systems [4, 5]. In an antiferromagnetic (AFM) ordered system, a direct consequence of spin dilution is the reduction of magnetic ordering temperature, eventually leading to the breakdown of long-range AFM order after reaching the percolation threshold [6, 7]. This behavior has been widely observed in the Zn doped parent compounds of cuprate superconductors [8, 9, 10, 11], serving as a probe to explore the relation between the superconductivity and the spin dynamics. The magnetic moments are found to be preserved in the dilution process [12, 13, 14], while the magnetic ordering temperature is almost linearly decreasing under spin dilution at low dilution region [9, 10]. Thus the local exchange driven by strong electron correlation is still a proper physical picture. Another route to suppress the AFM ordering is by introducing charge carriers, which strongly entangle the charge and spin dynamics and lead to competition between the local and itinerant magnetism [15, 16]. On the other hand, if nonmagnetic impurities are further introduced, they could suppress the motion of charge carriers and instead help restore the long-range magnetic order [1], as observed in Zn doped superconducting cuprates La 1−x[Sr/Ba] x[Cu 1−y Zn y ]O 4 [2, 17] and YBa 2[Cu 1−y Zn y ]3O6+ x [3]. Such interesting intertwinement of the carrier doping and nonmagnetic substitution provides a rich playground to explore new physics in materials. Comparing to the mostly investigated cuprates, the perovskite iridate SrIrO 3 is naturally self-doped due to the Dirac semi-metal nature [18, 19, 20, 21]. This makes the perovskite iridates a cleaner electron-doped Mott system to investigate the evolution of magnetic exchange interaction under spin dilution, without the complexity from introducing carriers and spin dilution through two different processes. With the itinerant carriers from self-doping and further spin dilution by substituting Ir with nonmagnetic Sn, SrIr 1−xSn xO3 shows quite interesting physical behaviors. The parent compound SrIrO 3 is a paramagnetic (PM) semi-metal [22, 21]. The substitution with nonmagnetic Sn actually drives an order-by-disorder magnetic transition from paramagnetic to long-range AFM order [23, 24, 25], and the AFM order is robust beyond 50% Sn substitution [23]. We have systematically investigated the magnetic excitation in SrIr 1−xSn xO3 with resonant inelastic X-ray scattering (RIXS) from the PM semi-metal parent compound to heavily spin diluted while AFM ordered compound at x = 0, 0.03, 0.06, 0.1 and 0.2. The experimental data is reported 1
+
+> arXiv:2604.11075v1 [cond-mat.str-el] 13 Apr 2026
+
+IOP Publishing Journal vv (yyyy) aaaaaa Author et al 
+
+elsewhere [26]. In this work, we focused on building a linear spin-wave theory (LSWT) model to extract the effective exchange interaction strength. For x = 0, 0.03, 0.06 and 0.1, the extracted effective magnetic exchange strength follows a linear spin-dilution law, i.e. Jeff (x) = J0(1 − 2x), where J0 is the exchange interaction of the parent compound SrIrO 3. Upon heavy substitution of x
+
+= 0.2, Jeff deviates from linear scaling, likely due to clustering of the Sn dopants. These results not only reveal the robustness of the electron correlation effect in SrIr 1−xSn xO3 and establish the parent compound SrIrO 3 as a strongly electron-correlated metal, but also provide microscopic information to understand the interplay of the charge and the spin dynamics in this system. 
+
+2 Experiment Results And Modeling 
+
+SrIr 1−xSn xO3 are of P bnm space group, a distorted perovskite structure with oxygen atom displacements. In our previous work [27], the anisotropic AFM structure of SrIr 0.8Sn 0.2O3 has been determined to be of G-type with the magnetic moments along the c direction. Since the magnetic atom Ir forms a cubic sublattice [28], here we index the reciprocal space with P 4mmm symmetry of this sublattice for simplicity. Fig.1(a) shows the dispersions of magnetic exchange interaction along the K and L directions, extracted from our RIXS data [26]. The band gap is located at 
+
+Qgap = (1/2 1/2 1/2), corresponding to the AFM Brillouin zone center. The band top sits at 
+
+Qtop = (1/2 0 1/2), which is the zone boundary along the K direction. Upon Sn substitution, the magnetic excitation energies at both the band top and band gap systematically decrease, indicating a reduction of effective magnetic exchange interaction. (12 0 12 ) (121212 ) (1212 0)                 
+
+> 0.10
+> 0.15
+> 0.20
+> Energy Loss (eV)
+> (a)
+> x= 0.00
+> x= 0.03
+> x= 0.06
+> x= 0.10
+> x= 0.20
+> (12012)(121212)(12120)
+> (b)
+> LSWT ( Jin/out = 60meV, Gin/out = 5meV)
+> Figure 1. (a) Experimental dispersions of magnetic excitations of SrIr 1−xSn xO3. (b) Simulated dispersions by LSWT. The in-phase pair and out-of-phase pair are represented by the solid and dashed lines respectively.
+
+Based on the magnetic dispersions and the determined magnetic structure [27], we constructed a minimum exchange interaction model to extract the effective nearest-neighbor magnetic exchange interactions of SrIr 1−xSn xO3. As the P bnm space group of SrIr 1−xSn xO3 has two independent symmetry operations: in-plane b-glide and out-of-plane m-reflection, the model contains the exchange interactions for both the in-plane bond along b direction and out-of-plane bond along c
+
+direction. Within the Hamiltonian, AFM Heisenberg interactions are included to reproduce the observed G-type AFM structure. Besides, to account for the observed anisotropy evidenced by the large gap, Ising terms are also included. The spin is set to be Sz = 1 /2 due to the singly occupied hole in t2g orbitals of the Ir-O octahedral [29, 30, 31], and the spins are set to be along the crystallographic c direction according to the determined magnetic structure. The Hamiltonian of this minimum model can be written as below: 
+
+Hin = X
+
+> ⟨i,j ⟩
+
+Jij  
+
+> in
+
+(⃗Si ·⃗ Sj ) + Gij 
+
+> in
+
+Szi Szj
+
+Hout = X
+
+> ⟨i,j ⟩
+
+Jij 
+
+> out
+
+(⃗ Si ·⃗ Sj ) + Gij 
+
+> out
+
+Szi Szj
+
+We applied LSWT to calculate the magnetic excitation dispersions [32]. The four nonequivalent Ir sites in the unit cell of SrIr 1−xSn xO3 give rise to four magnon branches, which form two doubly degenerate pairs in our minimal model. These two pairs are distinguished by the in-phase and out-of-phase motions of spin with the same orientation. Since the RIXS cross-sections of the branch n are given by In,Q ∝ P 
+
+> i
+
+M in,Q 
+
+> 2
+
+, where M in,Q is the motion vector of the ith spin in the unit cell of SrIrO 3 [32], these two pairs are of different scattering strength. For example, by setting 
+
+Jin /out = 60 meV and Gin /out = 5 meV, the magnon dispersions and their RIXS spectral weights 2IOP Publishing Journal vv (yyyy) aaaaaa Author et al 
+
+are calculated and the results are shown in Fig.1(b). The in-phase pair has finite intensity in the RIXS measurements, whereas the scattering cross-section of the out-of-phase pair is zero. Therefore, we focus on the in-phase branches. To quantify the simulated dispersion and compare it with the experimental data, we discuss the calculated energies at three high symmetry points, namely Qgap , Qtop , and QL = (1/2 1/2 0). At 
+
+Qgap and Qtop , the energies are expressed as 
+
+E2gap = (2 Jin + 2 Gin + Jout + Gout )2 − (2 Jin + Jout )2
+
+and 
+
+E2top = E2gap + 4 Jin Jout + (2 Jin )2
+
+respectively. The energy at QL is expressed as 
+
+E2 
+
+> L
+
+= E2gap + 8 Jin Jout 
+
+These expressions show that the anisotropic Ising terms G open the band gap, and determine the band gap energy Egap together with the mixed terms G · J. Away from band gap, the isotropic exchange Jin dominants Etop . The energy EL is determined analogously. In the experimental observations, the dispersion strength along K direction is much stronger than along L direction. Therefore, stronger Jin than Jout is expected. To further simplify this model, we confine 
+
+Gout /G in = Jout /J in . Under this constraint, the three free parameters Jin , Gin , and Jout can be uniquely determined from the experimentally measured dispersions. 
+
+3 Results 
+
+With above minimum model and LSWT, we fit the experimental dispersions of all spin-dilution ratios. The fitting results are shown in Fig.2, and the extracted exchange interaction parameters are listed in Table 1. 0.10                        
+
+> 0.15
+> 0.20
+> (a)
+> x= 0.00
+> LSWT
+> (b)
+> x= 0.03
+> LSWT
+> 0.10
+> 0.15
+> 0.20
+> (c)
+> x= 0.06
+> LSWT
+> (12012)(121212)(12120)
+> (d)
+> x= 0.10
+> LSWT
+> (12012)(121212)(12120)
+> 0.10
+> 0.15
+> 0.20
+> (e)
+> x= 0.20
+> LSWT
+> Energy Loss (eV)
+> Figure 2. (a)-(e) LSWT fit to the experimental dispersions of SrIr 1−xSn xO3with x= 0, 0.03, 0.06, 0.1 and 0.2.
+
+The doping evolution of dispersions are well described by the model. The gradually reduced dispersion energy upon Sn doping is reflected in the reduction of leading term Jin from 75.5 to 56.5 meV. We adopt a simple percolation model to understand the evolution of effective magnetic exchange interaction under spin dilution [33, 34]. For the in-plane Ir sublattice with n × n Ir sites, the number of in-plane exchange interaction bonds are 2 n2 when n is large. In the case with spin-dilution ratio x, 4 n2x bonds are broken at most. As a result, the ratio of the broken bonds are 2x at most. Thus the effective exchange interaction of SrIr 1−xSn xO3 is expected to be 
+
+Jeff (x) = J0(1 − 2x) at least, with J0 the in-plane exchange interaction of parent compound SrIrO 3
+
+3IOP Publishing Journal vv (yyyy) aaaaaa Author et al                                                                  
+
+> Table 1. Effective magnetic exchange interactions (meV) of SrIr 1−xSn xO3.
+> xJin Gin Jout Gout
+> 075.5 ±3.1 14.2 ±1.4 12.7 ±3.3 2.4 ±0.7 0.03 75.6 ±2.8 17.3 ±1.4 4.4 ±1.7 1.0 ±0.4 0.06 68.1 ±2.8 16.7 ±1.2 10.4 ±3.1 2.6 ±0.8 0.1 62.3 ±1.1 11.2 ±0.5 20.4 ±1.0 3.7 ±0.3 0.2 56.5 ±2.2 8.3 ±2.1 27.0 ±6.8 3.9 ±1.4
+
+whose exchange paths are not disrupted. Fig.3 shows the agreement of the evolution of the leading exchange term Jin to this simple broken-bond counting scenario. Upon spin-dilution, Jin indeed follows a linear behavior from x = 0 to x = 0.1. Further increasing the concentration to x = 0 .2, the effective Jin deviates from the linear scaling, likely due to the increased possibility of clustering of Sn dopants which induces less broken bonds. 0.0 0.1 0.2 
+
+Spin Dilution Ratio x
+
+40 
+
+50 
+
+60 
+
+70 
+
+80 
+
+90          
+
+> Jin  (meV)
+> Jin
+> J0(1 − 2 x)
+> Figure 3. Evolution of the leading effective exchange interaction Jin with spin-dilution ratio x. The spin-dilution scaling law Jeff (x) = J0(1 −2x) is shown by the gray line.
+
+4 Discussion 
+
+The SrIr 1−xSn xO3 system is of interest with its peculiar phase diagram. The parent SrIrO 3 is a paramagnetic semi-metal, while spin-dilution with Sn drives a strong AFM insulator transition with the ordering temperature reaching ∼ 280 K [23]. The metallic behavior of SrIrO 3 has been shown to be from the symmetry protected Dirac node in its topological band structure [18, 20]. Our results show that its average magnetic exchange interaction is linearly extrapolated from SrIr 0.9Sn 0.1O3, which is deeply in the AFM insulating phase with a transition temperature of 
+
+∼ 225 K [23]. The agreement to the simple spin-dilution picture, where only broken exchange path counting is considered, clearly proves that the Dirac semi-metal SrIrO 3 hosts local electron-correlation strength and spin exchange interaction strength as strong as those in the SrIr 1−xSn xO3 AFM insulators. The existence of highly mobile Dirac electrons likely introduces long range perturbation to the spin dynamics, thus suppresses an AFM transition. Locally, the spins are fluctuating with strong exchange interactions. In conclusion, we analyzed the dispersions of magnetic excitation in spin diluting SrIr 1−xSn xO3
+
+system measured by RIXS. The effective exchange interaction decreases with Sn concentration following the simple spin-dilution scaling law, Jeff (x) = J0(1 − 2x). This behavior indicates the exist of strong electron-correlation effect in the Dirac semi-metal SrIrO 3. We conclude the spin dilution disentangles the intertwined charge and spin dynamics and thus helps restore the long-range magnetic order, driving the order-by-disorder magnetic transition in SrIr 1−xSn xO3.
+
+Funding 
+
+Xiang Li and Xuerong Liu were supported by the MOST of China under Grant No. 2022YFA1603900 and the startup fund from ShanghaiTech University. Y. J. was supported in part by the National Key R&D Program of China under Grant No. 2022YFA1402703, NSFC under Grant No. 12347107 and 12574160. Y. W. was supported by the National Key R&D Program of China under Grant No. 2022YFA1403800. 4IOP Publishing Journal vv (yyyy) aaaaaa Author et al 
+
+Author contributions 
+
+Conceptualization and Investigation, X. Liu; Methodology, Y. J., Y. W., and X. Li; Writing, X. Liu and X. Li. 
+
+Data availability 
+
+The data are available from the authors upon reasonable request. 
+
+References 
+
+[1] Alloul H, Bobroff J, Gabay M and Hirschfeld P J 2009 Rev. Mod. Phys. 81 (1) 45–108 URL 
+
+https://link.aps.org/doi/10.1103/RevModPhys.81.45 
+
+[2] Kimura H, Kofu M, Matsumoto Y and Hirota K 2003 Phys. Rev. Lett. 91 (6) 067002 URL 
+
+https://link.aps.org/doi/10.1103/PhysRevLett.91.067002 
+
+[3] Suchaneck A, Hinkov V, Haug D, Schulz L, Bernhard C, Ivanov A, Hradil K, Lin C T, Bourges P, Keimer B and Sidis Y 2010 Phys. Rev. Lett. 105 (3) 037207 URL 
+
+https://link.aps.org/doi/10.1103/PhysRevLett.105.037207 
+
+[4] Ramirez A P, Espinosa G P and Cooper A S 1990 Phys. Rev. Lett. 64 (17) 2070–2073 URL 
+
+https://link.aps.org/doi/10.1103/PhysRevLett.64.2070 
+
+[5] Manni S, Tokiwa Y and Gegenwart P 2014 Phys. Rev. B 89 (24) 241102 URL 
+
+https://link.aps.org/doi/10.1103/PhysRevB.89.241102 
+
+[6] Chernyshev A L, Chen Y C and Castro Neto A H 2002 Phys. Rev. B 65 (10) 104407 URL 
+
+https://link.aps.org/doi/10.1103/PhysRevB.65.104407 
+
+[7] Sandvik A W 2002 Phys. Rev. B 66 (2) 024418 URL 
+
+https://link.aps.org/doi/10.1103/PhysRevB.66.024418 
+
+[8] Vajk O, Mang P, Greven M, Gehring P and Lynn J 2002 Science 295 1691–1695 URL 
+
+https://www.science.org/doi/10.1126/science.1067110 
+
+[9] Cheong S W, Cooper A S, Rupp L W, Batlogg B, Thompson J D and Fisk Z 1991 Phys. Rev. B 44 (17) 9739–9742 URL https://link.aps.org/doi/10.1103/PhysRevB.44.9739 
+
+[10] Keimer B, Aharony A, Auerbach A, Birgeneau R J, Cassanho A, Endoh Y, Erwin R W, Kastner M A and Shirane G 1992 Phys. Rev. B 45 (13) 7430–7435 URL 
+
+https://link.aps.org/doi/10.1103/PhysRevB.45.7430 
+
+[11] Kakurai K, Shamoto S, Kiyokura T, Sato M, Tranquada J M and Shirane G 1993 Phys. Rev. B 48 (5) 3485–3490 URL https://link.aps.org/doi/10.1103/PhysRevB.48.3485 
+
+[12] Vajk O, Greven M, Mang P and Lynn J 2003 Solid state communications 126 93–101 URL 
+
+https://doi.org/10.1016/S0038-1098(02)00708-1 
+
+[13] Horsley E, Rao X, Yi S B and Kim Y J 2022 Journal of Physics: Condensed Matter 34 135803 URL https://doi.org/10.1088/1361-648X/ac484c 
+
+[14] Kataoka K, Wulferding D, Yajima T, Nishio-Hamane D, Hirai D, Lee S, Choi K Y and Hiroi Z 2022 Journal of the Physical Society of Japan 91 014801 URL 
+
+https://doi.org/10.7566/JPSJ.91.014801 
+
+[15] Lee P A, Nagaosa N and Wen X G 2006 Rev. Mod. Phys. 78 (1) 17–85 URL 
+
+https://link.aps.org/doi/10.1103/RevModPhys.78.17 
+
+[16] Nagaoka Y 1966 Phys. Rev. 147 (1) 392–405 URL 
+
+https://link.aps.org/doi/10.1103/PhysRev.147.392 
+
+[17] Lozano P M, Gu G D, Tranquada J M and Li Q 2021 Phys. Rev. B 103 (2) L020502 URL 
+
+https://link.aps.org/doi/10.1103/PhysRevB.103.L020502 
+
+[18] Nie Y F, King P D C, Kim C H, Uchida M, Wei H I, Faeth B D, Ruf J P, Ruff J P C, Xie L, Pan X, Fennie C J, Schlom D G and Shen K M 2015 Phys. Rev. Lett. 114 (1) 016401 URL 
+
+https://link.aps.org/doi/10.1103/PhysRevLett.114.016401 
+
+5IOP Publishing Journal vv (yyyy) aaaaaa Author et al 
+
+[19] Liu Z, Li M, Li Q, Liu J, Li W, Yang H, Yao Q, Fan C, Wan X, Wang Z et al. 2016 Scientific Reports 6 30309 URL https://doi.org/10.1038/srep30309 
+
+[20] Sen K, Fuchs D, Heid R, Kleindienst K, Wolff K, Schmalian J and Le Tacon M 2020 Nature Communications 11 4270 URL https://doi.org/10.1038/s41467-020-18092-6 
+
+[21] Fujioka J, Okawa T, Yamamoto A and Tokura Y 2017 Phys. Rev. B 95 (12) 121102 URL 
+
+https://link.aps.org/doi/10.1103/PhysRevB.95.121102 
+
+[22] Zeb M A and Kee H Y 2012 Phys. Rev. B 86 (8) 085149 URL 
+
+https://link.aps.org/doi/10.1103/PhysRevB.86.085149 
+
+[23] Cui Q, Cheng J G, Fan W, Taylor A E, Calder S, McGuire M A, Yan J Q, Meyers D, Li X, Cai Y Q, Jiao Y Y, Choi Y, Haskel D, Gotou H, Uwatoko Y, Chakhalian J, Christianson A D, Yunoki S, Goodenough J B and Zhou J S 2016 Phys. Rev. Lett. 117 (17) 176603 URL 
+
+https://link.aps.org/doi/10.1103/PhysRevLett.117.176603 
+
+[24] Negishi M, Hiraoka N, Nishio-Hamane D and Takagi H 2019 APL Materials 7 URL 
+
+https://doi.org/10.1063/1.5129235 
+
+[25] Fujioka J, Okawa T, Masuko M, Yamamoto A and Tokura Y 2018 Journal of the Physical Society of Japan 87 123706 URL https://doi.org/10.7566/JPSJ.87.123706 
+
+[26] Li X, Li X, Lin J, Dong P, Li J, Upton M H, Jiang Y, Shen D, Guo H and Liu X 2026 Suppression of the tendency toward antiferromagnetic order in the Dirac semimetal SrIrO 3
+
+(Preprint 2604.02140 ) URL https://arxiv.org/abs/2604.02140 
+
+[27] Li X, Li X, Lin J, Islam Z, Upton M H, Thampy V, Jiang Y, Wan Y, Guo H and Liu X 2025 Phys. Rev. Res. 7(4) L042044 URL https://link.aps.org/doi/10.1103/bcp9-zg8f 
+
+[28] Zhao J G, Yang L X, Yu Y, Li F Y, Yu R C, Fang Z, Chen L C and Jin C Q 2008 Journal of Applied Physics 103 103706 ISSN 0021-8979 URL https://doi.org/10.1063/1.2908879 
+
+[29] Kim B J, Jin H, Moon S J, Kim J Y, Park B G, Leem C S, Yu J, Noh T W, Kim C, Oh S J, Park J H, Durairaj V, Cao G and Rotenberg E 2008 Phys. Rev. Lett. 101 (7) 076402 URL 
+
+https://link.aps.org/doi/10.1103/PhysRevLett.101.076402 
+
+[30] Kim J, Casa D, Upton M H, Gog T, Kim Y J, Mitchell J F, van Veenendaal M, Daghofer M, van den Brink J, Khaliullin G and Kim B J 2012 Phys. Rev. Lett. 108 (17) 177003 URL 
+
+https://link.aps.org/doi/10.1103/PhysRevLett.108.177003 
+
+[31] Kim J, Said A H, Casa D, Upton M H, Gog T, Daghofer M, Jackeli G, van den Brink J, Khaliullin G and Kim B J 2012 Phys. Rev. Lett. 109 (15) 157402 URL 
+
+https://link.aps.org/doi/10.1103/PhysRevLett.109.157402 
+
+[32] Lin J Q, Villar Arribi P, Fabbris G, Botana A S, Meyers D, Miao H, Shen Y, Mazzone D G, Feng J, Chiuzb˘ aian S G, Nag A, Walters A C, Garc´ ıa-Fern´ andez M, Zhou K J, Pelliciari J, Jarrige I, Freeland J W, Zhang J, Mitchell J F, Bisogni V, Liu X, Norman M R and Dean M P M 2021 Phys. Rev. Lett. 126 (8) 087001 URL 
+
+https://link.aps.org/doi/10.1103/PhysRevLett.126.087001 
+
+[33] Ulmke M, Denteneer P, Janiˇ s V, Scalettar R, Singh A, Vollhardt D and Zimanyi G 2007 Disorder and impurities in hubbard-antiferromagnets Advances in Solid State Physics 38 (Springer) pp 369–381 URL https://doi.org/10.1007/BFb0107630 
+
+[34] Singh A, Ulmke M and Vollhardt D 1998 Phys. Rev. B 58 (13) 8683–8693 URL 
+
+https://link.aps.org/doi/10.1103/PhysRevB.58.8683 
+
+6

@@ -1,0 +1,38 @@
+{
+  "version": 2,
+  "extractor": "pdffigures2",
+  "figures": [
+    {
+      "url": "assets/figures/arxiv/2604.06841v1/fig-001.webp",
+      "caption": "FIG. 4: Energy and total spin during the VMC optimization using SA-NNBF and NNBF for prototypical strongly correlated systems including stretched H12, [2Fe(III,III)-2S] and [2Fe(II,III)-2S]. The energy results are averaged over the last 100 iterations for the ease of visibility. The reference energy for H12 (−5.66540065 Ha) is obtained by full configuration interaction (FCI) and the ones for [2Fe(III,III)-2S] (−116.605609 Ha) and [2Fe(II,III)-2S] (−116.374853 Ha) are obtained by SA-DMRG. Results by SA-NNBF and NNBF are plotted with saturated and light colors, respectively. Curves with the same hue (red/light red etc.) correspond to a similar number of variational parameters. The shaded areas in a-c represent the chemical accuracy (<1 kcal/mol). The insets in d-f show the absolute value of the total spin error in logarithmic scale.",
+      "page": 6,
+      "index": 1,
+      "width": 1062,
+      "height": 572
+    },
+    {
+      "url": "assets/figures/arxiv/2604.06841v1/fig-002.webp",
+      "caption": "FIG. 5: VMC results for the H50 chain. (a) Energy optimization curves of SA-NNBF and NNBF. The results are averaged over the last 100 iterations for the ease of visibility. The reference energy −26.92609 Ha is taken from Ref. 30. The shaded area shows the chemical accuracy (<1 kcal/mol). (b) Spin correlation function ⟨Ŝ1 · Ŝn⟩ as a function of n estimated with the optimized NQS’s (h = 128), in comparison with the DMRG result as reference. The error bars in this subplot are smaller than the marks and thus are not shown for clarity. The inset shows the diagram of the full 50 × 50 spin correlation between different atoms calculated with the optimized SA-NNBF, where the main plot is the first row of it. (c) The 2-Rényi entropy S2 as a function of the number of atoms in the first subregion starting from the leftmost hydrogen along the hydrogen chain.",
+      "page": 6,
+      "index": 2,
+      "width": 1062,
+      "height": 273
+    },
+    {
+      "url": "assets/figures/arxiv/2604.06841v1/fig-003.webp",
+      "caption": "FIG. 6: Results for the LLDUC model of FeMoco. (a) Energy optimization curves of SA-NNBF and NNBF in the basis of LMOs, where the SA-NNBF optimization switches from h = 256 to h = 512 at the 9100-th step. The results are averaged over the last 500 iterations for the ease of visibility. The energies labeled at the end points are estimated with additional 819200 samples from the optimized states, where the standard errors are 8.3×10−4 and 8.6×10−4 Ha for NNBF and SA-NNBF, respectively. The SA-DMRG results with LMOs and EMOs24 are shown for comparison. (b) Results of the total spin error. For SA-NNBF, only data at several checkpoints are calculated. The insets shows the diagram of the spin correlation function ⟨ŜA · ŜB⟩ with the orbitals split into 9 groups, where the first 7 groups each corresponds to a Fe atom, the 8-th group to the Mo atom, and the last group to the rest of atoms. The left panel shows the results obtained from the optimized SA-NNBF state, while the right panel shows the difference between the NNBF and SA-NNBF results. (c) The 2-Rényi entropy S2 against the number of atoms in the first subregion starting from the left most orbitals in the MPS chain. Results for MPS obtained by DMRG with different bond dimensions in the LMO basis are shown for comparison.",
+      "page": 7,
+      "index": 3,
+      "width": 1062,
+      "height": 291
+    },
+    {
+      "url": "assets/figures/arxiv/2604.06841v1/fig-004.webp",
+      "caption": "FIG. 7: Benchmark for different hyperparameters ϵ and Nϵ in the semistochastic local energy evaluation for the molecules involved in this work. For each combination of ϵ and Nϵ, we generate 100 batches of samples, where each batch contains 4096 samples for H12, [2Fe(III,III)-2S], and H50, and 8192 samples for FeMoco, and evaluate the error between the resulting mean local energy of each batch and the exact mean local energy of this batch. The mean error of all the batches (in milli-Hartree) and the percentage of computational cost relative to the original exact algorithm are labeled around each set of markers. The green boxes shows the final hyperparameters for each molecule, where the speedup is also displayed in green. For H12, [2Fe(III,III)-2S] and H50, the results are obtained for an optimized SA-NNBF state, and the results for FeMoco are for an NNBF state.",
+      "page": 9,
+      "index": 4,
+      "width": 956,
+      "height": 489
+    }
+  ]
+}

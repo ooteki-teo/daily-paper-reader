@@ -1,0 +1,733 @@
+Title: Exact Solution for Current-Driven Domain-Wall Dynamics Beyond Lorentz Contraction in Antiferromagnets with Dzyaloshinskii-Moriya Interaction
+
+URL Source: https://arxiv.org/pdf/2604.06730v1
+
+Published Time: Thu, 09 Apr 2026 00:35:46 GMT
+
+Number of Pages: 9
+
+Markdown Content:
+# Exact Solution for Current-Driven Domain-Wall Dynamics Beyond Lorentz Contraction in Antiferromagnets with Dzyaloshinskii-Moriya Interaction 
+
+Mu-Kun Lee ∗,1 Rubén M. Otxoa, 2 and Masahito Mochizuki †1
+
+> 1
+
+Department of Applied Physics, Waseda University, Okubo, Shinjuku-ku, Tokyo 169-8555, Japan 
+
+> 2
+
+Hitachi Cambridge Laboratory, J. J. Thomson Avenue, Cambridge CB3 0HE, United Kingdom 
+
+We study current-driven domain-wall (DW) dynamics in antiferromagnets (AFMs) with Dzyaloshinskii-Moriya interaction (DMI). We obtain an exact analytical solution for spiral DW dynamics, applicable to both head-to-head DWs under bulk DMI and up-down DWs under in-terfacial DMI when the magnetic easy axis is aligned with the DMI vector. For the latter case experimentally relevant to synthetic AFMs with in-plane anisotropy, the solution predicts a con-stant DW velocity driven by nonadiabatic spin-transfer torque together with a steady rotation of the DW tilt angle induced by damping-like spin-orbit torque. Remarkably, the DW width shows unconventional current dependence, either pure elongation or contraction followed by elongation depending on damping and torque parameters, in sharp contrast to the Lorentz-type contraction known for antiferromagnetic (AF) DWs without DMI. These results provide an exact description of current-driven AF-DW dynamics and suggest experimentally accessible signatures of DMI-modified DW dynamics in synthetic AFMs. 
+
+Introduction. —Solitons are localized solutions of non-linear field equations characterized by finite energy and translationally invariant center coordinates, which endow them with particle-like properties [1, 2]. In magnetic systems, domain walls (DWs) represent such topological solitons connecting oppositely magnetized domains [3, 4] and can be driven by electric currents or magnetic fields, forming the basis of spintronic devices such as racetrack memory, logic, and neuromorphic computing architec-tures [5–10]. In recent years, antiferromagnetic (AF) DWs have at-tracted growing attention owing to their advantages over ferromagnets, including the absence of stray fields and ul-trafast dynamics [11, 12]. Their dynamics are governed by the Néel vector n = ( MA − MB)/2 with magnetiza-tion unit vector Mj for each sublattice j = A, B. The Lagrangian of n contains a second-order time derivative. As a consequence, AF DWs exhibit relativistic dynamics analogous to field-theoretical kinks and undergo Lorentz-like boosts accompanied by a width contraction [13–18]. In magnets lacking inversion symmetry, spin-orbit coupling induces the Dzyaloshinskii-Moriya interaction (DMI) [19, 20], which stabilizes spiral DWs [21, 22] and other chiral magnetic textures such as skyrmions [3, 23– 26]. However, when electric currents or magnetic fields drive these textures, their dynamics generally cannot be solved exactly. Instead, one must rely on approximate analytical treatments or numerical simulations [4, 28– 33]. Exact solutions for current-driven magnetic textures therefore remain rare. In this Letter, we show that the current-driven dy-namics of DWs in AFMs with DMI admits an exact analytical solution under experimentally relevant condi-tions, namely synthetic AFMs with in-plane easy-axis anisotropy [1, 2, 36, 38–43]. The solution predicts an un-conventional current dependence of the DW width, ex-hibiting either monotonic elongation or contraction fol-lowed by elongation depending on system parameters, in  
+
+> ∗Contact author: mukunlee01@gmail.com
+> †Contact author: masa_mochizuki@waseda.jp x(easy axis)
+
+(a) n1
+
+> x
+
+(b)  
+
+> y(easy axis)
+
+n2DxDx DxDx
+
+> z
+
+(c) (d) 
+
+> Elongation only
+> Contract
+> then
+> elongat e
+> Lorentz contraction
+
+FIG. 1: (a)–(b) Schematics of two types of DW profiles. Blue arrows indicate local Néel vectors, and green arrows show the DM vectors. (c) Domain wall width ∆ and (d) tilt-angle wavevector Γ versus (v − u)/c . Blue (red) curve indicates the case without (with) DMI. Parameters are A = 6 .5 pJ/m, 
+
+K = 0 .1 MJ/m 3, and D = 1 .2 (0 .6) mJ/m 2 for the red dashed (solid) curves, with D2 − 2AK > 0 (< 0). 
+
+sharp contrast to the Lorentz contraction known for AF DWs without DMI. These results establish an exact the-oretical framework for current-driven DW dynamics in AFMs with DMI and suggest experimentally accessible signatures of DMI-modified soliton dynamics. 
+
+Model. —We first consider two types of one-dimensional systems and demonstrate their equivalence under an ap-propriate coordinate transformation. The first system consists of an AF texture with both the spatial variation and the easy axis oriented along the ˆx direction [e.g., a head-to-head DW shown in Fig. 1(a)] in the presence of bulk DMI [21, 22]. The corresponding Hamiltonian density for the Néel vector is given by, 
+
+H1(n) = A(∂xn)2 − Kn 2 
+
+> x
+
+− D(n · ∇ × n), (1) where A is the intra-sublattice ferromagnetic (FM) ex-change constant, K is the easy-axis anisotropy energy density, and D characterizes the strength of the bulk DMI. In the discrete representation, the DMI is written as HDMI = ∑ 
+
+> i,μ
+
+Dμ · (ni × ni+μ) with the DM vector 
+
+> arXiv:2604.06730v1 [cond-mat.mes-hall] 8 Apr 2026
+
+2
+
+Dμ = δμx Dˆx (δμν denotes the Kronecker delta). This model describes, for example, an AF nanowire aligned along the direction of the DM vector. The second system corresponds to AFMs with the easy axis oriented along the ˆy direction in the presence of in-terfacial DMI arising from broken inversion symmetry along the ˆz direction. Examples include noncentrosym-metric magnets such as K 2V3O8 [44, 45] and synthetic AFMs, which consist of two FM layers stacked along ˆz
+
+direction and coupled via the Ruderman-Kittel-Kasuya-Yosida interaction mediated by a nonmagnetic spacer layer [1, 2, 36, 38–43]. Assuming, for instance, an up-down DW configuration as shown in Fig. 1(b), the Hamil-tonian density takes the form 
+
+H2(n) = A(∂xn)2 − Kn 2 
+
+> y
+
+− D(nx∂xnz − nz ∂xnx), (2) where D now represents the strength of the interfacial DMI with the DM vector Dμ = δμx Dˆy.Despite the different microscopic origins of the DMI, both Hamiltonians can be expressed in a unified form as H = A(∂xn)2 − K(n · ˆek)2 + Dˆek · n × ∂xn, where 
+
+ˆek denotes the easy-axis direction. Introducing the parametrization n · ˆek = cos θ, the anisotropy term takes an identical form regardless of the direction of 
+
+ˆek. The DMI can be written as ∑ 
+
+> ij
+
+Dϵ ijk ni∂xnj ,where 
+
+ϵijk is the Levi-Civita symbol. Therefore, using the parametrizations n1 ≡ (cos θ, sin θ sin ϕ, sin θ cos ϕ) for 
+
+H1 and n2 ≡ (sin θ cos ϕ, cos θ, sin θ sin ϕ) for H2, both Hamiltonians reduce to the identical form H1(n1) =
+
+H2(n2) = A[( θ′)2 + sin 2 θ(ϕ′)2] − K cos 2 θ − D sin 2 θ(ϕ′),where the prime denotes differentiation with respect to x.Therefore, these two systems are mathematically equiv-alent and can be treated within a unified framework. In particular, the static spiral DW solution for D2 < 4AK 
+
+coincides with the well-known exact solution in ferromag-nets obtained by Tretiakov and Abanov, who analyzed 
+
+H1(M) in terms of the magnetization M [21]. In the present work, we focus on the regime D2 < 4AK .
+
+Results. —To obtain the dynamic soliton solution, we first consider the simplest case of an AF DW driven by the current-induced adiabatic spin-transfer torque (STT), which originates from the conservation of angular momentum between conduction electron spins and the lo-cal magnetization [3, 46]. In the exchange limit, where the AF exchange interaction is the dominant energy scale, the Lagrangian density can be written as [3, 4, 12– 15] 
+
+L = Ac2 ( ˙ n + un′)2 − H , (3) where ˙n denotes the time derivative of n, c is the max-imum magnon group velocity, which plays the role of an effective speed of light in magnetic systems, and 
+
+u = pa 30je/(2 e) is the spin-drift velocity associated with the electric current. Here, je is the current density, p
+
+is the spin polarization of conduction electrons, a0 is the lattice constant, and e is the elementary charge. The adi-abatic STT gives rise to the convective derivative term in the expression ( ˙ n + un′) in Eq. (3) [3]. We now consider the Hamiltonian H = H2(n2) and assume a rigidly translating texture described by θ =
+
+θ(x − vt ) and ϕ = ϕ(x − vt ) with velocity v. This implies 
+
+˙θ = −vθ ′ and ˙ϕ = −vϕ ′, and the corresponding Euler-Lagrange equations are 
+
+Aγ 2 
+
+> v
+
+sin θ ϕ ′′ = cos θ θ ′(D − 2Aγ 2 
+
+> v
+
+ϕ′),
+
+2Aγ 2 
+
+> v
+
+θ′′ = sin 2 θ(K − Dϕ ′ + Aγ 2 
+
+> v
+
+ϕ′2), (4) where γv ≡ √1 − (v − u)2/c 2 is the inverse Lorentz-like factor. This factor emerges naturally from the combined effect of the convective derivative in Eq. (3) and the rigid-translation condition ˙n = −vn′. Substituting this relation into Eq. (3) yields A( ˙ n + un′)2/c 2 = A ˙n2/¯c2
+
+with ¯c = cv/ (v − u). The Lagrangian then takes the form L = A [ ˙n2/¯c2 − (n′)2] − H DMI − H ani , with the first term formally resembling the Lorentz-invariant field theory with an effective speed of light ¯c. This structure supports the Lorentz-like boost characterized by the fac-tor γv = √1 − v2/¯c2 = √1 − (v − u)2/c 2. Importantly, this apparent Lorentz invariance is only emergent and does not represent a fundamental symmetry of the sys-tem. The true characteristic velocity c remains fixed, and the presence of STT explicitly breaks Lorentz in-variance. The emergence of the factor γv reflects instead the relative motion between the DW and the spin cur-rent. Consequently, it is the relative velocity (v − u)
+
+between the DW and conduction electrons that governs the modulation of the DW profile. When ϕ′′ = 0 , we obtain an exact spiral DW solution, 
+
+ϕ = Γ( v)( x − vt ) + ϕ0, Γ( v) = D
+
+2Aγ 2
+
+> v
+
+, (5) 
+
+θ = 2 tan −1
+
+[
+
+exp 
+
+( x − vt 
+
+∆( v)
+
+)] 
+
+, (6) with a relativistic-like DW width given by 
+
+∆( v) = γv
+
+√
+
+AK − (D2/4Aγ 2 
+
+> v
+
+) . (7) In the static limit with v = u = 0 and γv = 1 , this solu-tion reduces to the well-known Tretiakov-Abanov result for FM DWs with bulk DMI [21], yielding the renormal-ized DW width ∆(0) = √A/ (K − D2/4A) and a linear spatial variation of the tilt angle ϕ(x) = Dx/ 2A + ϕ0.These results provide a direct experimental signature of interfacial DMI in synthetic AFMs with in-plane anisotropy, enabling quantitative determination of DMI strength from static DW profiles. Such characterization has remained largely unexplored, as most previous exper-imental and theoretical studies have focused on systems with perpendicular magnetic anisotropy [1, 2, 36, 38–40]. In the absence of DMI ( D = 0 ), the solution reduces to the conventional Lorentz-contracted DW width ∆ = 
+
+γv
+
+√A/K , which is the well-known result for current-driven AF DWs [15–17]. A striking effect of DMI is that, in addition to the overall Lorentz-like factor γv ,additional γv dependence appears inside the square root in Eq. (7). As shown in Fig. 1(c), when the relative velocity (v − u)/c ≡ ¯v increases from zero, the DW width exhibits two qualitatively distinct behaviors, that is, (i) monotonic elongation (red dashed curve), and (ii) an initial contraction followed by rapid elongation 3(red solid curve). The criterion distinguishing these be-haviors can be obtained from the ¯v-derivatives of ∆,that is, d∆/d ¯v|¯v=0 = 0 and d2∆/d ¯v2|¯v=0 = 4 A(D2 −
+
+2AK )/(4 AK − D2)3/2. When D2 > 2AK , the curva-ture is positive, and the DW width increases monotoni-cally with ¯v, corresponding to behavior (i). In contrast, when D2 < 2AK , the curvature is negative, leading to an initial contraction followed by subsequent elongation, corresponding to behavior (ii). For the latter case (red solid curve), the denominator inside the square root in Eq. (7) vanishes at a critical velocity [e.g., ¯v ≈ 0.93 in Fig. 1(c)], indicating the loss of stability of the DW so-lution. Consequently, the DW width diverges, and the solution ceases to exist beyond this point. Furthermore, the tilt-angle wavevector Γ also increases monotonically with ¯v according to Eq. (5), as shown in Fig. 1(d). These results demonstrate that DMI induces pronounced and experimentally observable modifications to the current-driven DW dynamics in AFMs, providing clear signa-tures of DMI in systems such as synthetic AFMs and bulk noncentrosymmetric AFMs when adiabatic STT is the dominant driving mechanism. We now extend the above minimal model to a real-istic synthetic AFM with in-plane magnetic anisotropy. In this system, the bottom heavy-metal layer injects a vertical spin current via the spin Hall effect [47, 48], which exerts damping-like spin-orbit torque (SOT) in the FM layers [49]. We assume that the damping-like SOT has equal magnitude in the two FM layers, which is a good approximation when the FM-layer thickness is smaller than the spin coherence length. For general-ity, we also include a sublattice-symmetric field-like SOT arising from the Rashba spin-orbit coupling in the FM layers due to the broken inversion symmetry of the mul-tilayer structure [50, 51]. This symmetry breaking also gives rise to interfacial DMI of equal strength in both FM layers [52]. In addition, we incorporate sublattice-symmetric adiabatic and nonadiabatic STTs. The dynamics of each sublattice magnetization Mj
+
+(j=A,B) obeys the Landau-Lifshitz-Gilbert-Slonczewski (LLGS) equation [53–55], 
+
+˙Mj = γHeff  
+
+> j
+
+× Mj + αMj × ˙Mj + Tj , (8) where γ and α are the gyromagnetic ratio and the Gilbert damping constant, respectively. The effective magnetic field is defined as Heff  
+
+> j
+
+= −(δW/δ Mj )/(Msa30) with the total magnetic energy given by W = ∫ d3x[∑ 
+
+> j
+
+H2(Mj )+ (JAF /a 30)MA · MB], where JAF denotes the interlayer AF exchange coupling, and Ms is the saturation magnetiza-tion. The torque term Tj includes adiabatic and nonadi-abatic STTs [56–59], as well as damping-like and field-like SOTs, which is given by, 
+
+Tj = −uM′ 
+
+> j
+
++ βu Mj × M′
+
+> j
+
++ uc HMj × Mj × ˆy + uc Hfso Mj × ˆy, (9) where β is the nonadiabatic STT parameter. The co-efficient cH characterizes the strength of the spin Hall torque, which is given by cH = γℏθSH /(MstLpa 30), where 
+
+θSH is the spin Hall angle, tL is the FM-layer thickness, 
+
+ℏ is the reduced Planck constant, and fso is the ratio be-tween field-like and damping-like SOT components [49]. In the strong AF exchange limit, the equation of mo-tion for the Néel vector n can be derived from the LLGS equation as shown in our previous work [3], which is given by, 
+
+0 = n ×
+
+{
+
+D2n + 2 λso ˆy × D n + λ2so ny ˆy
+
+}
+
++ γ¯a
+
+2 n ×
+
+[
+
+α ˙n + βu n′ + uc Hn × ˆy − γ
+
+2 fn
+
+]
+
+, (10) where 
+
+fn = 2
+
+Ms
+
+(
+
+An′′ + Kn y ˆy + D(n′ 
+
+> z
+
+ˆx − n′
+
+> x
+
+ˆz)
+
+)
+
+, (11) 
+
+λso = uc H(fso − α)1 + α2 , ¯a = 4JAF 
+
+Msa30
+
+. (12) Here ¯a has the dimension of magnetic field (Tesla). The convective derivative is defined as D ≡ (∂t + ˜ u∂ x) with the effective drift velocity ˜u = u(1 + αβ )/(1 + α2). This renormalized velocity arises from the interplay between STT and Gilbert damping in the Landau-Lifshitz formu-lation of the LLGS equation [3]. We find that Eq. (10) admits an exact dynamic DW solution of the form θ(x, t ) = −2 tan −1 exp[( x − q(t)) /∆] 
+
+and ϕ(x, t ) = Γ( x − q(t)) + ϕ0(t), where q(t) denotes the DW center and n = (sin θ cos ϕ, cos θ, sin θ sin ϕ). The so-lution yields closed expressions for the DW width ∆, the tilt-angle wavevector Γ, the DW velocity v = ˙ q, and the angular frequency ω = ˙ϕ0 of the uniform tilt component [see Supplemental Material (SM)]: 
+
+∆ = γv
+
+√A/F , (13) 
+
+F = K − D2
+
+4Aγ 2
+
+> v
+
++ (1 + αf so )[ A(1 + αf so )cH + D(β − α)] u2cH
+
+u2(α − β)2 − α2(1 + α2)2γ2A¯a/ 2Ms
+
+, (14) 
+
+Γ = 12Aγ 2
+
+> v
+
+[
+
+D + 4Ms(β − α)(1 + αf so )
+
+α2(1 + α2)2γ2¯a u2cH
+
+]
+
+. (15) Here γv = √1 − (v − ˜u)2/c 2 is the inverse Lorentz-like factor with c = γ√A¯a/ 2Ms, identical to the charac-teristic velocity obtained previously [4]. This provides the first exact analytical solution for current-driven DW dynamics in AFMs with DMI and SOT. In the limit 
+
+cH, β → 0 and ˜u ≈ u for small α, these expressions re-duce exactly to Eqs. (5) and (7). Within the above DW ansatz, the collective-coordinate equations for v and ω
+
+decouple as 
+
+2
+
+γ¯a
+
+( ˙v
+
+˙ω
+
+)
+
+=
+
+( −α 00 −α
+
+) ( vω
+
+)
+
++
+
+( βu 
+
+−uc H
+
+)
+
+, (16) revealing particle-like DW dynamics with effective mass 
+
+2/γ ¯a and drag coefficient α.In the steady state with ˙v = ˙ ω = 0 , we obtain 
+
+v = βu α , ω = −uc H
+
+α = −γℏθSH 
+
+2αeM stL
+
+je. (17) Thus, while the DW velocity corresponds to the conven-tional spin-drift velocity multiplied by β/α [31, 32], the 4SOT generates constant rotation of the tilt angle, peri-odically transforming the DW between Néel and Bloch types with period T = 4 παeM stL/(γℏθSH je) in the ps-ns range. This behavior contrasts with the Walker or Walker-breakdown dynamics in both FM DWs [31, 32] and AF DWs [4, 33], where v and ω become oscillatory above the breakdown threshold. Linearizing Eq. (16) around the steady state yields perturbations decaying as 
+
+exp( −αγ ¯at/ 2) , confirming the stability of the solution. The resulting dynamical DW configuration is given by 
+
+n(x, t ) = ( nx, n y , n z ) where, 
+
+nx = sech [( x − vt )/∆] cos[Γ( x − vt ) + ωt ],ny = tanh[( x − vt )/∆] ,nz = sech [( x − vt )/∆] sin[Γ( x − vt ) + ωt ]. (18) For comparison, the coupled equations for the collec-tive coordinates cannot in general be solved exactly and are usually treated using projection methods such as the Thiele approach [16, 28–30] or approximate evaluations at the DW center [4, 31]. Even for FM DWs with DMI, only the static Tretiakov-Abanov solution is exactly solv-able, while current-driven dynamics requires perturba-tive treatments of the LLGS equation [21]. Notably, the present DW solution is nonchiral, as its handedness is not fixed by the sign of the DMI constant 
+
+D. For a general DW profile θ = 2 ζ tan −1 exp[ s(x −
+
+q)/∆] with ζ, s = ±1, the solutions for v, ω, ∆, and Γ
+
+are identical for all (ζ, s ). Substituting the DW ansatz into the DMI energy EDMI = − ∫ dx D (nx∂xnz −nz ∂xnx)
+
+yields EDMI = −2DΓ∆ , which is independent of (ζ, s )
+
+and constant in time. The energy becomes negative when 
+
+DΓ > 0, which can be satisfied irrespective of the sign of 
+
+D if the second term in the brackets of Eq. (15) is small in the strong AF coupling and small-current regimes. On the other hand, in synthetic AFMs with perpendicular anisotropy, interfacial DMI prefers Néel-type DWs with chirality fixed by the sign of D [1, 36, 60, 61]. The reason why damping-like SOT does not contribute to the DW velocity, while inducing tilt-angle rotation, can be intuitively understood from the AF exchange torque [1, 3, 4, 36]. Upon applying a current, the ini-tial MA,B = ±(sech (x) cos ϕ, tanh( x), sech (x) sin ϕ) is ro-tated after an infinitesimal time δt by the damping-like SOT to ˜Mj = Mj +( uc Hδt ) Mj ×(Mj × ˆy)+ O(δt 2). The AF coupling then induces a torque τA,B ∝ − JAF ˜MB,A ×
+
+˜MA,B ∝ JAF (uc Hδt )ˆ y × MA,B + O(δt 2), which tends to rotate Mj around the ˆy axis and leads to ω ∝ uc H in Eq. (17). Since τj has no component along the easy axis ( ˆy), it cannot drive the translational motion of DW. When the easy axis lies along ˆx or ˆz, Eq. (10) no longer permits exact DW solutions. Instead, a Thiele-equation approach predicts a DW velocity dependent on SOT and nonlinear in current due to the nonlinear dependence of 
+
+∆ [4, 16, 62]. Figure 2 shows ∆ and Γ versus je for α = 0 .1 [1], 
+
+β = 1 .5α, fso = 0 , a0 = 1 nm, tL = 10 a0, p = 0 .5, Ms =0.5 MA/m, A = AAF = 6 .5 pJ/m with JAF = a0AAF ,
+
+K = 0 .1 MJ/m 3, and D = 0 .6 mJ/m 2 (D2 < 2AK in this case). For various θSH , Γ increases monotonically with current in Fig. 2(b), while ∆ exhibits either monotonic (a) (b)                     
+
+> FIG. 2: (a) DW width ∆and (b) tilt-angle wavevector Γ
+> versus current density for different values of θSH . The inset of (a) shows an enlarged view of the small-current regime. Black horizontal dashed lines indicate the values at zero current.
+> FIG. 3: Current density jeat which the DW width ∆becomes minimal for D2<2AK .For each color corresponding to different θSH ,∆shows pure elongation when d−< β/α < d +,while it first contracts and then elongates when β/α > d +or
+> < d −.
+
+elongation for θSH ≥ 0.5 or contraction followed by elon-gation for θSH < 0.5, as seen in the inset of Fig. 2(a). For moderate currents je < 3 × 10 12 A/m 2, ∆ shows abrupt increase by nearly an order of magnitude. The curves terminate at the current density where F in Eq. (14) changes from positive to negative, indicating the thresh-old current for the DW stability. Figure 3 shows numerical solutions of je at which ∆ be-comes minimal as a function of β/α , marking the tran-sition between contraction and elongation of ∆. Using 
+
+d± derived in the SM from the curvature of ∆ at je = 0 ,when D2 < 2AK , ∆ contracts and then elongates for 
+
+β/α > d + or β/α < d − for each θSH , whereas only elongation occurs for d− < β/α < d +, consistent with the absence of numerical solutions for minimal ∆ in this regime. When 4AK > D 2 > 2AK , these two regimes of 
+
+β/α interchange together with an exchange of d+ ↔ d−.
+
+Experimental relevance. —The predicted DW dynamics should be experimentally accessible in synthetic AFMs where the two FM layers possess a slightly uncompen-sated net magnetization. In such systems, the Néel vec-5tor can be reconstructed by combining magnetic force mi-croscopy (MFM) with scanning electron microscopy with polarization analysis (SEMPA) [63]. While the conven-tional DW-width contraction expected for AFMs with-out DMI is difficult to observe because it occurs on sub-
+
+μm length scales during ultrafast DW motion, the un-conventional DW-width elongation predicted here can reach nearly an order-of-magnitude increase, providing a clear experimental signature. Another characteristic feature is the constant DW velocity predicted in our theory, in contrast to the nonlinear velocity saturation observed in ferrimagnetic systems [18], which may be measured using magneto-optic Kerr microscopy (MOKE) with pulsed current injection [1]. Even in compensated AFMs, the current-induced averaged magnetization is ex-pected to exhibit characteristic oscillatory dynamics de-tectable by time-resolved X-ray magnetic circular dichro-ism (XMCD) [5]. Details of this analysis and quantitative estimates are provided in SM. These considerations indi-cate a feasible route for experimental verification of the predicted DW dynamics. 
+
+Conclusion. —We have investigated current-driven DW dynamics in AFMs with DMI. Starting from a general Lagrangian formulation including adiabatic STT, we re-vealed an unconventional DMI-induced modulation of the DW width, exhibiting either monotonic elongation or contraction followed by elongation with increasing cur-rent. Extending the analysis to synthetic AFMs with in-plane anisotropy, we obtained exact solutions for spi-ral DW dynamics characterized by unconventional width modulation, constant DW velocity driven by nonadia-batic STT, and steady tilt-angle rotation induced by damping-like SOT. These features provide experimen-tally accessible signatures and a predictive framework for current-driven soliton dynamics in antiferromagnets. 
+
+Acknowledgements. —This work is supported by JSPS KAKENHI (No. 20H00337 and No. 25H00611), JST CREST (No. JP- MJCR20T1), and Waseda University Grant for Special Research Project (Grants No. 2024C-153, No. 2025C-133, and No. 2025C-134). 
+
+[1] A. Zee, Quantum field theory in a nutshell, Princeton uni-versity press (2010). [2] T. Lancaster and S. J. Blundell, Quantum field theory for the gifted amateur. OUP Oxford (2014). [3] G. Tatara, H. Kohno, and J. Shibata, Microscopic ap-proach to current-driven domain wall dynamics, Phys. Rep. 468 , 213 (2008). [4] H. B. Braun, Topological effects in nanomagnetism: From superparamagnetism to chiral quantum solitons, Adv. Phys. 61 , 1 (2012). [5] S. S. P. Parkin, M. Hayashi, and L. Thomas, Magnetic domain-wall racetrack memory, Science 320 , 190 (2008). [6] D. A. Allwood, G. Xiong, C. C. Faulkner, D. Atkinson, D. Petit, and R. P. Cowburn, Magnetic domain-wall logic, Science 309 , 1688 (2005). [7] Z. Luo, A. Hrabec, T. P. Dao, G. Sala, S. Finizio, J. Feng, S. Mayr, J. Raabe, P. Gambardella, and L. J. Heyderman, Current-driven magnetic domain-wall logic, Nature 579 ,214 (2020). [8] R. V. Ababei, M. O. A. Ellis, I. T. Vidamour, D. S. De-vadasan, D. A. Allwood, E. Vasilaki, and T. J. Hayward, Neuromorphic computation with a single magnetic domain wall, Sci. Rep. 11 , 15587 (2021). [9] J. A. Vélez, M.-K. Lee, G. Tatara, P.-I. Gavriloaea, J. Ross, D. Laroze, U. Atxitia, R. F. L. Evans, R. W. Chantrell, M. Mochizuki, and R. M. Otxoa, Chaotic pro-liferation of relativistic domain walls for reservoir comput-ing, npj Spintronics 3, 14 (2025). [10] J. Godinho, P. K. Rout, R. Salikhov, O. Hellwig, Z. Šobáň, R. M. Otxoa, K. Olejník, T. Jungwirth, and J. Wunderlich, Antiferromagnetic domain wall memory with neuromorphic functionality, npj Spintronics 2, 39 (2024). [11] T. Jungwirth, X. Marti, P. Wadley, and J. Wunderlich, Antiferromagnetic spintronics, Nat. Nanotechnol. 11 , 231 (2016). [12] E. V. Gomonay and V. M. Loktev, Spintronics of anti-ferromagnetic systems, Low Temp. Phys. 40 , 17 (2014). [13] F. D. M. Haldane, Nonlinear field theory of large-spin Heisenberg antiferromagnets: semiclassically quantized solitons of the one-dimensional easy-axis Néel state, Phys. Rev. Lett. 50 , 1153 (1983). [14] S. K. Kim, Y. Tserkovnyak, and O. Tchernyshyov, Propulsion of a domain wall in an antiferromagnet by magnons, Phys. Rev. B 90 , 104406 (2014). [15] G. Tatara, C. A. Akosa, and R. M. Otxoa de Zuazola, Magnon pair emission from a relativistic domain wall in antiferromagnets, Phys. Rev. Res. 2, 043226 (2020). [16] T. Shiino, S.-H. Oh, P. M. Haney, S.-W. Lee, G. Go, B.-G. Park, and K.-J. Lee, Antiferromagnetic domain wall motion driven by spin-orbit torques, Phys. Rev. Lett. 117 ,087203 (2016). [17] R. M. Otxoa, U. Atxitia, P. E. Roy, and O. Chubykalo-Fesenko, Giant localised spin-Peltier effect due to ultrafast domain wall motion in antiferromagnetic metals, Com-mun. Phys. 3, 31 (2020). [18] L. Caretta, S.-H. Oh, T. Fakhrul, D.-K. Lee, B. H. Lee, S. K. Kim, C. A. Ross, K.-J. Lee, and G. S. D. Beach, Relativistic kinematics of a magnetic soliton, Science 370 ,1438 (2020). [19] I. Dzyaloshinsky, A thermodynamic theory of “weak” fer-romagnetism of antiferromagnetics, J. Phys. Chem. Solids 
+
+4, 241 (1958). [20] T. Moriya, Anisotropic superexchange interaction and weak ferromagnetism, Phys. Rev. 120 , 91 (1960). [21] O. A. Tretiakov and A. Abanov, Current Driven Mag-netization Dynamics in Ferromagnetic Nanowires with a Dzyaloshinskii-Moriya Interaction, Phys. Rev. Lett. 105 ,157201 (2010). [22] W. Wang, M. Albert, M. Beg, M.-A. Bisotti, D. Chernyshenko, D. Cortés-Ortuño, I. Hawke, and H. Fangohr, Magnon-driven domain-wall motion with the Dzyaloshinskii-Moriya interaction, Phys. Rev. Lett. 114 ,087203 (2015). [23] N. Nagaosa and Y. Tokura, Topological properties and dynamics of magnetic skyrmions, Nat. Nanotechnol. 8,899 (2013). [24] S. Seki and M. Mochizuki, Skyrmions in Magnetic Mate-rials (Springer, Switzerland, 2015). [25] K. Everschor-Sitte, J. Masell, R. M. Reeve, and M. Kläui, Perspective: Magnetic skyrmions: Overview of recent progress in an active research field, J. Appl. Phys. 124, 240901 (2018). [26] Y. Ohki and M. Mochizuki, Fundamental theory of current-induced motion of magnetic skyrmions, J. Phys.: Condens. Matter 37 , 023003 (2025). [27] M.-K. Lee, J. A. Vélez, R. M. Otxoa, and M. Mochizuki, Skyrmion Hall effect and shape deformation of current-driven bilayer skyrmions in synthetic antiferromagnets, Phys. Rev. B 112 , 184402 (2025). [28] A. A. Thiele, Steady-state motion of magnetic domains, Phys. Rev. Lett. 30 , 230 (1973). 6
+
+[29] A. Thiaville, Y. Nakatani, J. Miltat, and Y. Suzuki, Mi-cromagnetic understanding of current-driven domain wall motion in patterned nanowires, Europhys. Lett. 69 , 990 (2005). [30] S.-W. Jung, W. Kim, T.-D. Lee, K.-J. Lee, and H.-W. Lee, Current-induced domain wall motion in a nanowire with perpendicular magnetic anisotropy, Appl. Phys. Lett. 
+
+92 , 202508 (2008). [31] A. Mougin, M. Cormier, J. P. Adam, P. J. Metaxas, and J. Ferré, Domain wall mobility, stability and Walker breakdown in magnetic nanowires, Europhys. Lett. 78 ,57007 (2007). [32] J. Yang, C. Nistor, G. S. D. Beach, and J. L. Erskine, Magnetic domain-wall velocity oscillations in permalloy nanowires, Phys. Rev. B 77 , 014413 (2008). [33] R. M. Otxoa, P. E. Roy, R. Rama-Eiroa, J. Godinho, K. Y. Guslienko, and J. Wunderlich, Walker-like domain wall breakdown in layered antiferromagnets driven by stag-gered spin–orbit fields, Commun. Phys. 3, 190 (2020). [34] M.-K. Lee, R. M. Otxoa, and M. Mochizuki, Predicted multiple Walker breakdowns for current-driven domain wall motion in antiferromagnets, Phys. Rev. B, 110 ,L020408 (2024). [35] S. H. Yang, K. S. Ryu, and S. Parkin, Domain-wall ve-locities of up to 750 m s −1 driven by exchange-coupling torque in synthetic antiferromagnets, Nat. Nanotechnol. 
+
+10 , 221 (2015). [36] S. H. Yang and S. Parkin, Novel domain wall dynamics in synthetic antiferromagnets, J. Phys.: Condens. Matter 
+
+29 , 303001 (2017). [37] R. A. Duine, K.-J. Lee, S. S. P. Parkin, and M. D. Stiles, Synthetic antiferromagnetic spintronics, Nat. Phys. 14 ,217 (2018). [38] C. Bi, H. Almasi, K. Price, T. Newhouse-Illige, M. Xu, S. R. Allen, X. Fan, and W. Wang, Anomalous spin-orbit torque switching in synthetic antiferromagnets, Phys. Rev. B 95 , 104434 (2017) [39] S. Mallick, N. Reyren, A. Thiaville, P. Ohresser, N. Jaouen, V. Cros, and V. Jeudy, Effects of antiferromag-netic coupling and pinning on domain wall dynamics in synthetic ferrimagnets, Phys. Rev. B 112 , 014437 (2025) [40] Y. M. Hung, Y. Shiota, S. Yamada, M. Ohta, T. Shibata, T. Sasaki, R. Hisatomi, T. Moriyama, and T. Ono, Posi-tive correlation between interlayer exchange coupling and the driving current of domain wall motion in a synthetic antiferromagnet, Appl. Phys. Lett. 119 , 032407 (2021). [41] K. Wang, V. Bheemarasetty, and G. Xiao, Spin textures in synthetic antiferromagnets: Challenges, opportunities, and future directions, APL Mater. 11 , 070902 (2023). [42] H. Saarikoski, H. Kohno, C. H. Marrows, and G. Tatara, Current-driven dynamics of coupled domain walls in a syn-thetic antiferromagnet, Phys. Rev. B 90 , 094411 (2014). [43] E. Haltz, S. Krishnia, L. Berges, A. Mougin, and J. Sam-paio, Domain wall dynamics in antiferromagnetically cou-pled double-lattice systems, Phys. Rev. B 103 , 014444 (2021). [44] A. N. Bogdanov, U. K. Rößler, M. Wolf, and K.-H. Müller, Magnetic structures and reorientation transitions in noncentrosymmetric uniaxial antiferromagnets, Phys. Rev. B 66 , 214410 (2002). [45] H. Velkov, O. Gomonay, M. Beens, G. Schwiete, A. Brataas, J. Sinova, and R. A. Duine, Phenomenology of current-induced skyrmion motion in antiferromagnets, New J. Phys. 18 , 075016 (2016). [46] A. Brataas, A. D. Kent, and H. Ohno, Current-induced torques in magnetic materials, Nat. Mater. 11 , 372 (2012). [47] J. E. Hirsch, Spin Hall Effect, Phys. Rev. Lett. 83 , 1834 (1999). [48] J. Sinova, D. Culcer, Q. Niu, N. A. Sinitsyn, T. Jung-wirth, and A. H. MacDonald, Universal Intrinsic Spin Hall Effect, Phys. Rev. Lett. 92 , 126603 (2004). [49] A. Manchon, J. Železný, I. M. Miron, T. Jungwirth, J. Sinova, A. Thiaville, K. Garello, and P. Gambardella, Current-induced spin-orbit torques in ferromagnetic and antiferromagnetic systems, Rev. Mod. Phys. 91 , 035004 (2019). [50] A. Manchon and S. Zhang, Theory of nonequilibrium in-trinsic spin torque in a single nanomagnet, Phys. Rev. B 
+
+78 , 212405 (2008). [51] A. Manchon and S. Zhang, Theory of spin torque due to spin-orbit coupling, Phys. Rev. B 79 , 094422 (2009). [52] T. Kikuchi, T. Koretsune, R. Arita, and G. Tatara, Dzyaloshinskii-Moriya interaction as a consequence of a Doppler shift due to spin-orbit-induced intrinsic spin cur-rent, Phys. Rev. Lett. 116 , 247201 (2016). [53] L. D. Landau and E. M. Lifshitz, On the theory of the dispersion of magnetic permeability in ferromagnetic bod-ies, Phys. Z. Sowjetunion 8, 153 (1935). [54] T. L. Gilbert, A phenomenological theory of damping in ferromagnetic materials, IEEE Trans. Magn. 40 , 3443 (2004). [55] J. C. Slonczewski, Current-driven excitation of magnetic multilayers, J. Magn. Magn. Mater. 159 , L1-L7 (1996). [56] S. Zhang and Z. Li, Roles of nonequilibrium conduction electrons on the magnetization dynamics of ferromagnets, Phys. Rev. Lett. 93 , 127204 (2004). [57] G. Tatara, H. Kohno, J. Shibata, Y. Lemaho, and K.-J. Lee, Spin torque and force due to current for general spin textures, J. Phys. Soc. Jpn. 76 , 054707 (2007). [58] G. Tatara and H. Kohno, Theory of current-driven do-main wall motion: Spin transfer versus momentum trans-fer, Phys. Rev. Lett. 92 , 086601 (2004). [59] L. Berger, Exchange interaction between ferromagnetic domain wall and electric current in very thin metallic films, J. Appl. Phys. 55 (1984). [60] S. Krishnia, P. Sethi, W. L. Gan, F. N. Kholid, I. Pur-nama, M. Ramu, T. S. Herng, J. Ding, and W. S. Lew, Role of RKKY torque on domain wall motion in synthetic antiferromagnetic nanowires with opposite spin Hall an-gles, Sci. Rep. 7, 11715 (2017). [61] L. Chen, M. Shen, Y. Peng, X. Liu, W. Luo, X. Yang, L. You, and Y. Zhang, Voltage-induced high-speed DW motion in a synthetic antiferromagnet, J. Phys. D: Appl. Phys. 52 , 495001 (2019). [62] C. A. Akosa, M.-K. Lee, A. Manchon, and M. Mochizuki, 
+
+unpublished .[63] M. Bhukta, T. Dohi, V. K. Bharadwaj, R. Zarzuela, M.-A. Syskaki, M. Foerster, M. A. Ni no, J. Sinova, R. Frömter, and M. Kläui, Homochiral antiferromagnetic merons, antimerons and bimerons realized in synthetic an-tiferromagnets, Nat. Commun. 15 , 1641 (2024). [64] K. Takubo, K. Yamamoto, Y. Hirata, Y. Yokoyama, Y. Kubota, S. Yamamoto, S. Yamamoto, I. Matsuda, S. Shin, T. Seki, K. Takanashi, and H. Wadati, Capturing ultrafast magnetic dynamics by time-resolved soft x-ray magnetic circular dichroism, Appl. Phys. Lett. 110 , 162401 (2017). 7
+
+# Supplemental Material: Exact Solution for Current-Driven Domain-Wall Dynamics Beyond Lorentz Contraction in Antiferromagnets with Dzyaloshinskii-Moriya Interac-tion 
+
+Mu-Kun Lee 1, Rubén M. Otxoa 2, and Masahito Mochizuki 1
+
+> 1Department of Applied Physics, Waseda University, Okubo, Shinjuku-ku, Tokyo 169-8555, Japan
+> 2Hitachi Cambridge Laboratory, J. J. Thomson Avenue, Cambridge CB3 0HE, United Kingdom
+
+Contents 
+
+References 5
+
+Domain wall solution of staggered magnetization 7
+
+Criterion for two types of DW width modulation 8
+
+Averaged magnetization and its possible detection by XMCD 8
+
+References 9
+
+DOMAIN WALL SOLUTION OF STAGGERED MAGNETIZATION 
+
+For a synthetic antiferromagnet (AFM) [1, 2] with sublattice-equivalent spin-orbit torques (SOTs) and spin-transfer torques (STTs), we have derived the equation of motion for staggered magnetization n from the Landau-Lifshitz form of LLGS equation in Ref. [3] in the exchange limit with strong interlayer antiferromagnetic (AF) exchange interaction as Eq. (10) in the main text, rewritten here as 
+
+0 = n × D 2n + γ˜a
+
+2 n ×
+
+[
+
+α ˙n + βu n′ + uc Hn × y − γ
+
+2 fn
+
+]
+
++ n ×
+
+{
+
+2λso y × D n + λ2so ny y
+
+}
+
+≡ V, (19) 
+
+fn = 2
+
+Ms
+
+[
+
+An′′ + Kn y y + D(n′ 
+
+> z
+
+x − n′
+
+> x
+
+z)
+
+]
+
+. (20) We can roughly check the ratio of magnitudes of the terms in the curly brackets to other terms as follows. Suppose the magnetization is oscillating with a frequency ω0 and has a texture with a dependence nμ = nμ(( x − q)/∆) such that n′ 
+
+> μ
+
+∼ 1/∆ and n′′  
+
+> μ
+
+∼ 1/∆2 (μ = x, y, z ), then the equation gives ¨nμ ∼ ω20 ∼ (γ˜a)[ O(αω 0) + O(βu/ ∆) + O(uc H) + 
+
+O(γA/ ∆2) + O(K) + O(D/ ∆)] . For typical DWs, ∆/a 0 ∼ 10 1. If we consider αω 0 as the largest frequency scale in the bracket, then ω0 ∼ αγ ˜a. Since λso = uc H(α − fso )/(1 + α2) and both α and fso are assumed much smaller than one, the terms in {... } of the above equation are then much smaller compared to the cH term in [... ].To solve n, we define n = (sin θ cos ϕ, cos θ, sin θ sin ϕ), and assume the dynamically steady motion of DW by taking 
+
+θ(x, t ) = θ(x − q(t)) , ϕ(x, t ) = Γ( x − q(t)) + ϕ0(t). With the presumed form θ = −2 tan −1[exp( x−q(t)∆ )] , we can get two independent equations by taking 0 = ( V · x) sin ϕ − (V · z) cos ϕ and 0 = ( V · y) with V defined in Eq. (19) as 
+
+0 = sin(2 θ)
+
+[ 2γ2¯aA/M s − 4( v − ˜u)2
+
+∆2 − 2γ2¯aMs
+
+[K + Γ(Γ A − D)] + 4[Γ(˜ u − v) + ω]2 − 8λso [Γ(˜ u − v) + ω] + 4 λ2so 
+
+]
+
+(21) 
+
++ 4 sin θ
+
+∆
+
+[
+
+γ¯a(αv − βu ) + 2 ˙ v
+
+]
+
+, (22) 
+
+0 = cos θ
+
+[
+
+8Γ( v − ˜u)2 + 2γ2¯aMs
+
+(D − 2Γ A) − 8( v − ˜u)( ω − λso )
+
+]
+
+(23) 
+
++ 2∆ 
+
+[
+
+γ¯a[uc H − Γ( αv − βu ) + αω ] − 2(Γ ˙ v − ˙ω)
+
+]
+
+. (24) Since θ(x − q(t)) depends on x, actually we have four locally independent equations as the requirements of vanishing for coefficients of sin(2 θ), sin θ, cos θ, and the constant term on the right-hand sides of these two equations, which can be solved to give the unknown ∆, Γ, v ≡ ˙q, and ω ≡ ˙ϕ0. The coefficients of sin(2 θ) in Eq. (21) and cos θ in Eq. (23) give 
+
+∆ = γv
+
+√A/F , (25) 
+
+Γ = 12Aγ 2
+
+> v
+
+[
+
+D − 4Ms(v − ˜u)( ω − λso )
+
+γ2¯a
+
+]
+
+, (26) 
+
+F = K − Γ( D − ΓA) − 2Ms[Γ( v − ˜u) − ω + λso ]2
+
+γ2¯a , (27) 8with γv = √1 − (v − ˜u)2/c 2 and c = γ√A¯a/ 2Ms. The vanishing of the other two coefficients in Eqs. (22) and (24) gives Eq. (16) in the main text. Substituting the steady solutions of v and ω in Eq. (17) of main text into above Eqs. (25)–(27), we get Eqs. (13)–(15) in the main text. 
+
+> CRITERION FOR TWO TYPES OF DW WIDTH MODULATION
+
+In this section, we derive an analytical formula for the model parameters in the realistic synthetic AFM case that sets a criterion to distinguish whether the DW width will only elongate or will first contract then elongate as the current increases from zero. From Eq. (13) in the main text, after some algebra we can find that d∆( u)/du |u=0 = 0 ,which means the slope of ∆( u) is zero at zero current. Therefore, we need to calculate the sign of second derivative 
+
+d2∆( u)/du 2|u=0 to check whether the slope d∆( u)/du |u=0 concaves upwards or downwards at an infinitesimal u, with the former or later situation indicating that the DW width will first elongate or contract when u increases from zero, respectively. Interestingly, one can find d2∆/du 2|u=0 is quadratic in β/α and has the form 
+
+d2∆
+
+du 2
+
+∣∣∣u=0 
+
+∝ − (2 AK − D2)
+
+( βα − d−
+
+)( βα − d+
+
+)
+
+, (28) 
+
+d± = 1 + 
+
+Ac H
+
+(
+
+D ± √4AK − D2
+
+)
+
+(1 + αf so )
+
+α(2 AK − D2) . (29) The other multiplication factors in Eq. (28) are all positive thus we did not show them in the equation. In this work we consider 4AK > D 2 to stabilize the spiral DW at static state as found in the Tretiakov-Abanov solution. In the case of 2AK > D 2, the above equations indicate the two distinct behaviors of ∆ as: (i) βα > d + or βα < d − ⇒ ∆ contracts at infinitesimal u, (30) (ii) d− < βα < d + ⇒ ∆ elongates at infinitesimal u. (31) In the other case of 4AK > D 2 > 2AK , the above behaviors of ∆ in (i) and (ii) switch, together with an exchange of d+ ↔ d− since d± in Eq. (29) also depends on the sign of (2 AK − D2). Although there is no simple solution of 
+
+u at which d∆/du = 0 that enables one to find the turning points of ∆, this analysis of the concaving behaviors at 
+
+u = 0 turns out to give us the criterion of β/α that distinguishes whether ∆ will contract then elongate or will only elongate as current increases, as shown in Fig. 3 in the main text. 
+
+> AVERAGED MAGNETIZATION AND ITS POSSIBLE DETECTION BY XMCD
+
+The averaged magnetization m = ( MA + MB)/2 is a slave variable controlled by the dynamics of n in the exchange limit with large interlayer AF exchange interaction. It can be nonzero even in compensated AFMs. Since in AFMs the detection of n is challenging, here we calculate the dynamics of m for the purpose of experimental observation of our DW solution. As derived in our previous work [3], the dominant part of m in the zeroth orders of Gilbert damping, external magnetic field, and field-like SOT, has the form 
+
+m ≈ − 2¯aγ n × (∂t + ˜ u∂ x)n. (32) Substituting n in Eq. (18) of the main text into this equation gives 
+
+m = 2¯aγ sech 
+
+( x − vt 
+
+∆
+
+)
+
+×
+
+(
+
+− v − ˜u
+
+∆ sin[Γ( x − vt ) + ωt ] + [ ω − Γ( v − ˜u)] cos[Γ( x − vt ) + ωt ] tanh 
+
+( x − vt 
+
+∆
+
+)
+
+,
+
+sech 
+
+( x − vt 
+
+∆
+
+)
+
+[ω − Γ( v − ˜u)] ,v − ˜u
+
+∆ cos[Γ( x − vt ) + ωt ] − [ω − Γ( v − ˜u)] sin[Γ( x − vt ) + ωt ] tanh 
+
+( x − vt 
+
+∆
+
+)) 
+
+. (33) Since it is challenging to experimentally detect the local profile of m due to the DW motion by, e.g., Magneto-optic Kerr effect (MOKE), here we calculate the spatial average of m through the quasi-one-dimensional synthetic AFM, ∫ ∞−∞ midx , which may be detected by e.g., time-resolved X-ray magnetic circular dichroism (Tr-XMCD). Define L as 9the sample length, we obtain 
+
+⟨mx⟩ = 1
+
+L
+
+∫
+
+mxdx = 2¯aγL 
+
+∫
+
+dx 
+
+{
+
+sech 
+
+( x − vt 
+
+∆
+
+) −v + ˜ u
+
+∆
+
+(
+
+sin[Γ( x − vt )] cos ωt + cos[Γ( x − vt )] sin ωt 
+
+)
+
++ sech 
+
+( x − vt 
+
+∆
+
+)
+
+tanh 
+
+( x − vt 
+
+∆
+
+)
+
+[ω − Γ( v − ˜u)] 
+
+(
+
+cos[Γ( x − vt )] cos ωt − sin[Γ( x − vt )] sin ωt 
+
+)} 
+
+= − 2π
+
+¯aγL 
+
+{
+
+v − ˜u + Γ∆ 2[ω − Γ( v − ˜u)] 
+
+}
+
+sech 
+
+( πΓ∆ 2
+
+)
+
+sin ωt ≡ ⟨ mx0⟩ sin ωt, (34) 
+
+⟨my ⟩ = 1
+
+L
+
+∫
+
+my dx = 4∆ ¯aγL [ω − Γ( v − ˜u)] , (35) 
+
+⟨mz ⟩ = 1
+
+L
+
+∫
+
+mz dx = 2π
+
+¯aγL 
+
+{
+
+v − ˜u − Γ∆ 2[ω − Γ( v − ˜u)] 
+
+}
+
+sech 
+
+( πΓ∆ 2
+
+)
+
+cos ωt ≡ ⟨ mz0⟩ cos ωt. (36) While ⟨my ⟩ is time-independent, ⟨mx⟩ and ⟨mz ⟩ show oscillations in time proportional to sin ωt and cos ωt , respectively. Since the period 2π/ω is in the ps–ns timescale and is inversely proportional to current, the oscillations of ⟨mx⟩, ⟨mz ⟩
+
+and static behavior of ⟨my ⟩ may be detectable in synthetic AFMs by Tr-XMCD, which can achieve a time resolution under 50 ps with a moderate X-ray beam size of ∼ 10 4 μm2 to marginally cover the whole quasi-one-dimensional system [5]. In order to measure these data, the static DW width is preferable to be smaller than μm scale, such that the DW center will remain in the bulk sample with length L ∼ 10 2μm during its motion, to fulfill the validity of the above spatial integrals that have relied on a change of variable as x − vt → x′ followed by integration over x′. In Supplementary Fig. 1, we show the trends of amplitudes of ⟨mi⟩ versus current taking the same model parameters for Fig. 2 in the main text with θSH = 0 .5, β = 2 α and 0.4α in (a) and (b), respectively. The behaviors of ⟨mx0⟩ and ⟨mz0⟩
+
+switches when β/α becomes from larger to less than 1, while ⟨my ⟩ always shows a monotonic decrease with current. These trends of ⟨mi⟩, together with DW velocity v measured by MOKE using pulsed currents [1], and ω extracted from temporal oscillations of ⟨mx,z ⟩, may be used to indirectly infer the dependence of ∆ and Γ on current. Note that ¯a can be tuned in synthetic AFMs by varying the thickness of the intermediate nonmagnetic layer. Reducing ¯a
+
+while maintaining the approximate dynamics in exchange limit enhances the amplitude of m, thereby improving the potential feasibility of experimental detection.

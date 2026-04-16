@@ -1,0 +1,46 @@
+{
+  "version": 2,
+  "extractor": "pdffigures2",
+  "figures": [
+    {
+      "url": "assets/figures/arxiv/2604.13872v1/fig-001.webp",
+      "caption": "Fig. 4: Initialisation of a domain wall. (a) Schematic for the implementation of the domain wall. A focused laser with a beam waist on the order of the ion-ion spacing (∼ 30 µm) is used to selectively perform optical repumping. The natural rotation of the ion crystal causes the beam to interact with all ions at a targeted radius over a rotation period of the crystal Tr = 2π/ωr. An acousto-optical modulator is used to move the beam radially along the crystal to target ions at a different radius. (b) Pulse sequence for the domain wall initialisation. Here, H̃init is driven for a duration of ΩRt = π/10 to initialise a small order parameter. A π/2|y pulse is used to rotate the texture to the regular spin basis and selective optical pumping (OP) is then applied to the outer ions with rj ≥ R/2. Next, a −π/2|y pulse rotates all spins back to the rotated basis before measurement.(c) Spin state probability P (|↑⟩) as a function of ion radius after selective optical pumping (black) and without (red). The dashed black line is the fit to a Gaussian error function. Inset: experimental image of the ion crystal containing ≈ 220 ions after optical pumping and a π/2|y readout pulse. The scale bar is 100µm. (d) Experimental probability distribution of the Z-projection domain wall, and (e) the corresponding reconstructed spin texture. (f) and (g) show the theoretical Z-projection and reconstructed spin texture, respectively.",
+      "page": 6,
+      "index": 1,
+      "width": 1052,
+      "height": 476
+    },
+    {
+      "url": "assets/figures/arxiv/2604.13872v1/fig-002.webp",
+      "caption": "Fig. 1: Experimental setup and skyrmion initialisation. (a) Schematic overview of the experiment using a 2D ion crystal, rotating at ωr in the lab frame due to a magnetic field B0 along z. Global coherent spin rotations, |↓⟩ ↔ |↑⟩, are driven with microwaves near 55GHz at Rabi rate Ω. Two off-resonant lasers at optical frequencies of ω0 and ω0 + ωr + Ω cross the ion crystal at an angle θODF to create a spin-dependent ODF. The ODF difference wavevector δk is tilted by δθ relative to the crystal-plane normal to create a travelling intensity gradient in the x− y plane. Spin-state-dependent fluorescence is captured by a single-photon-timestamping detector (TPX3CAM) capable of resolving individual ions. (b) Pulse sequence for preparing the skyrmion spin texture. The ions are initialised to |↑⟩ and a reference image of the crystal is taken to determine all ion positions. Next, all spins are rotated to the equator of the Bloch sphere with a π/2|y pulse and H̃init is driven for a duration of t = π/ΩR. Three axes projections along j = {x, y, z} are used to reconstruct the spin texture. The reference image and the corresponding experimental images are shown above the pulse sequence diagram, consisting of an ≈ 160 ion crystal. (c) Spin state evolution under the initialisation Hamiltonian, H̃init, is shown with texture arrows representing the nominal spin orientation of each ion. The colour scale represents the probability of measuring a spin in the |↑⟩ state. The target spin texture is realised at the condition ΩRt = π, where the outermost spins undergo a π-rotation. Bloch sphere trajectories show four marked outer ions undergoing a π rotation about azimuth-dependent axes: spins at ϕj = 0 (light green) and ϕj = π (pink) precess about Z, while those at ϕj = π/2 (purple) and ϕj = −π/2 (dark green) precess about Y . For all other ions, the precession axis is a combination of Y and Z components, determined by the ion’s azimuthal angle ϕj within the crystal. The precession rate scales with radial distance, decreasing to zero at the crystal centre. (d) The skyrmion spin texture can be visualised by a transformation of the Bloch basis at ΩRt = π. This is equivalent to rotating the Bloch sphere by π/2 about the Y -axis.",
+      "page": 2,
+      "index": 2,
+      "width": 1065,
+      "height": 491
+    },
+    {
+      "url": "assets/figures/arxiv/2604.13872v1/fig-003.webp",
+      "caption": "Fig. 7: Impact of magnetic field noise on skyrmion texture. (a) Accumulated phase ϕSE of the spins undergoing a Ramsey spin echo sequence as a function of total precession time T . Black data points represent the average experimental accumulated phase reconstructed from ⟨σx⟩ and ⟨σy⟩ measurements. The red dashed line shows a fit to the spin-echo phase evolution model from Equation 18, identifying a dominant 100Hz magnetic field fluctuation. (b) Order parameter decay of the skyrmion spin texture under a Ramsey spin-echo experiment. The skyrmion state is first initialised before allowing the spins to freely precess within the trap’s magnetic field for time T/2. Next, a global π|x pulse is applied and spins precess further for time T/2 before being projected along X ,Y, and Z. The experimental results (black points) show the order parameter retaining ≈ 73% of its initial value after 12ms. This is in close agreement with the simulated time evolution (red dashed line), suggesting that the identified 100Hz is the primary source of decoherence on this timescale.",
+      "page": 10,
+      "index": 3,
+      "width": 535,
+      "height": 235
+    },
+    {
+      "url": "assets/figures/arxiv/2604.13872v1/fig-004.webp",
+      "caption": "Fig. 2: Experimental reconstruction of the skyrmion spin texture. (a) Experimental and (b) theoretical probability distributions of the skyrmion spin texture taken along the X ,Y, and Z bases. To resolve the spatial structure, ions are grouped into 220 polar bins. Experimental values are averaged over 200 repetitions per projection. The X and Y projections reveal characteristic dipole patterns, a signature of the azimuthal spin winding, while the Z projection shows a radially symmetric gradient. The reconstructed (c) experimental and (d) theoretical spin textures show high qualitative agreement. Below the full reconstructions, a vertical cross-section around x = 0 illustrates the inversion of the Z component as a function of radius.",
+      "page": 3,
+      "index": 4,
+      "width": 1050,
+      "height": 457
+    },
+    {
+      "url": "assets/figures/arxiv/2604.13872v1/fig-005.webp",
+      "caption": "Fig. 5: Programmable initialisations of various topological spin textures. Theoretical plots of various spin textures that can be reached by modifying the skyrmion initialisation protocol, with the pulse sequence modification and state projections in the rotated (X ,Y,Z) basis shown alongside. (a-c) Spin textures with Q = ±1, initialised from the Néel skyrmion via global basis transformations. Specifically, (a) a Bloch skyrmion is realised by a ±π/2|x rotation; the choice of rotation determines the helicity γ. Similarly, the (b) bimeron and (c) anti-skyrmion texture are obtained by applying a π/2|y and π|y pulse, respectively. (d-e) Additional spin textures generated by modulating the duration of the initialisation drive. The (d) meron and (e) skyrmionium are obtained by driving H̃init for t = π/2ΩR and t = 2π/ΩR, respectively.",
+      "page": 8,
+      "index": 5,
+      "width": 518,
+      "height": 956
+    }
+  ]
+}
