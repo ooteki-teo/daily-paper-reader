@@ -1,0 +1,1395 @@
+Title: Fluctuation Mechanism of Single-Ion Anisotropy of Topological Insulator MnBi$_2$Te$_4$
+
+URL Source: https://arxiv.org/pdf/2604.07852v1
+
+Published Time: Fri, 10 Apr 2026 00:45:29 GMT
+
+Number of Pages: 11
+
+Markdown Content:
+JETP 
+
+# FLUCTUATION MECHANISM OF SINGLE-ION ANISOTROPY OF TOPOLOGICAL INSULATOR MnBi 2Te 4
+
+V. V. Val’kov a*, A. O. Zlotnikov a, A. Gamov a 
+
+> aKirensky Institute of Physics, Federal Research Center KSC SB RAS, Siberian Branch, Russian Academy of Sciences, Krasnoyarsk, Russia
+
+We demonstrate that charge fluctuations induced by electron hopping, combined with spin-orbit coupling, lift the sixfold degeneracy of the orbital singlet 6S of Mn ions in the topological insulator MnBi 2Te 4, resulting in single-ion anisotropy. To solve the problem, a multiplet representation is introduced for the creation operators of atomic-state fermions in terms of the operators describing transitions between many-body wavefunctions. Using the operator form of perturbation theory up to the second order, we derive expressions for the populations nM
+
+of Mn ion states with spin projections M of the 6S term and determine the single ion anisotropy constants. The calculations reveal that the fluctuation mechanism ensures the possibility of implementing the easy-axis anisotropy observed in MnBi 2Te 4. Notably, the range of anisotropy constants D2 obtained by varying the model parameters includes the value D2 = −0.0095 meV, required to reproduce the critical field of the spin-flop transition Hsf , known from the experiment . The proposed mechanism has a wide range of applicability for describing the anisotropy in compounds where the ground state of a magnetic ion in a weak crystal field is described by an orbital singlet. 
+
+1. INTRODUCTION 
+
+Experimental data on the magnetic properties of antiferromagnetic topological insulator MnBi 2Te 4 [1– 4] show that in the low-temperature area, the value of g-factor of divalent Mn ions is close to 2, and the magnitude of spin S = 5 /2. Since the nominal state of Mn 2+ ion in the marked compound corresponds to the electronic configuration 3d5, the given values of g-factor and spin indicate the realization of the regime of weak crystal field [5, 6]. In this case, the intraatomic Coulomb interaction of electrons prevails over the inter-site interaction. Therefore, the ground state of the Mn 2+ ion corresponds to the term 6S [7] with orbital moment L = 0 .The equality to zero of the orbital moment for the ground term of the manganese ion leads to the fact that there should be no single-ion anisotropy (SIA) in MnBi 2Te 4 in the linear in spin-orbit interaction (SOI) parameter approximation. Meanwhile, the magnetic properties of this compound in the antiferromagnetic phase suggest otherwise. In particular, the observation in the low temperature region of the spin-flop transition at increasing magnetic field applied along the trigonal axis indicates the presence of a rather strong uniaxial anisotropy of the “easy axis” type [1, 3, 8, 9]. This  
+
+> *E-mail: vvv@iph.krasn.ru
+
+conclusion correlates also with the results of other experimental studies [10]. The problem of microscopic description of SIA for ions with orbital singlet has been discussed in the theory of electron paramagnetic resonance [11, 12]. One scenario for the occurrence of SIA is related to the addition to the term 6S of a term of high-energy configuration 3d44s1, for which the orbital momentum is different from zero [11]. In this approach it is assumed that the influence of the environment of the ion in question can be reduced to the analysis of its energy spectrum in the external field. In reality, the ion, being in a crystal lattice, is able to give and receive electrons due to electron hopping. Due to such charge fluctuations, an orbital moment will be induced on the ion. When the SOI is taken into account, this will lead to a partial removal of the degeneracy of the orbital singlet. In the paper [13], the density functional theory (DFT) method was used to calculate the SIA parameter at different values of the SOI intensity in Mn and Te ions. The main conclusion was that the desired value of the SIA constant appeared only in the case when the SOI was taken into account simultaneously on Te and Mn ions. At the same time, the mechanism of SIA formation was associated with a change in the electron density distribution on Mn ions, induced by the modification of the charge distribution on Te ions, 
+
+1
+
+> arXiv:2604.07852v1 [cond-mat.str-el] 9 Apr 2026
+
+VAL’KOV et al. JETP 
+
+arising from the consideration of the electron SOI. In the electronic ensemble condensed in the form of many-electron states of Te and Mn ions, the characteristic Coulomb interaction energy of fermions significantly exceeds the average SOI energy. Under these conditions, charge fluctuations become more significant and lead to changes in the electronic configurations of the marked ions, initiating the mixing of states in which the orbital moments are different from zero. Due to the SOI, this causes a partial removal of the degeneracy of the orbital singlet of the Mn 2+ 
+
+ion and provides the appearance of SIA. The described scenario of charge transfer between Mn and Te ions forms the basis of the fluctuation mechanism of SIA induction in MnBi 2Te 4. The development of theoretical insights in this direction forms the subject of this work. The results of the study are summarized as follows. In Sect. 2 we describe the system under consideration and formulate the Hamiltonian in the atomic representation including the most essential fermion interactions. In Sect. 3 we introduce the multiplet representation for the Fermi operators via many-electron functions. Section 4 contains results of the operator form of perturbation theory in the multiplet representation. Section 5 is devoted to the derivation of an additional selection rule due to the consideration of the symmetry of the crystal structure. Renormalized expressions for the filling numbers of single-ion states with different values of the spin projections of Mn ions are given in Sect. 6. The obtained dependences of the SIA constant on the spin-orbit coupling parameters in tellurium and manganese ions are also discussed here. The results of the studies are summarized in the Conclusion. 
+
+2. HAMILTONIAN OF THE ELECTRONIC SUBSYSTEM OF THE “TRILAYER” Te–Mn–Te 
+
+In MnBi 2Te 4, a layer of Mn ions lies between two layers of Te ions. In each of these layers, the ions are ordered in a triangular lattice. The Te ions in the layer above (below) the layer of Mn ions are displaced relative to the position of the Mn ions as shown in Fig. 1. We will solve the problem of the fluctuation mechanism of SIA by taking into account the electronic states of Mn and Te ions, which are part of the Te–Mn–Te trilayer, as well as the basic interactions. Let us write down the Hamiltonian of the system in the form 
+
+H = H0 + Vmix , (1) where the term 
+
+Fig. 1: Fragment of the crystal structure of the Te–Mn–Te trilayer. The positions of Mn 2+ ions, indicated by dark circles, form a triangular lattice in the middle plane of the trilayer. Above and below them are Te 2− ions, ordered according to the triangular lattice scheme. The projections of the centers of the upper Te 2− ions onto the Mn 2+ arrangement plane are shown by red crosses. Light circles indicate projections of the positions of Te 2− ions lying in the lower plane of the trilayer onto the midplane. 
+
+H0 = ∑
+
+> f
+
+∑ 
+
+> mdσ
+
+(εd − μ)d† 
+
+> f m dσ
+
+df m d σ + V dc + HdSO +1
+
+2
+
+∑
+
+> f δ
+
+∑ 
+
+> mpσ
+
+(εp − μ)p†   
+
+> f+δ,m pσ
+
+pf +δ,m p σ + HpSO , (2) describes non-interacting electronic subsystems of Mn and Te ions, εd is energy of d level, μ is chemical potential of the system, df m d σ (d†  
+
+> f m dσ
+
+) is annihilation (creation) operator of d electron on Mn ion located in the site with number f , in the state with orbital momentum projection md (md = −2, −1, 0, 1, 2) and spin projection σ (σ = ±1/2) .The Coulomb interaction operator of d electrons 
+
+V dc induces a splitting of the energy level of a given electronic configuration [7]. As a result, for the 3d5
+
+configuration the lowest energy term corresponds to the orbital singlet 6S, while for the electronic configuration 
+
+3d6 the lowest energy term 5D with orbital momentum 
+
+L = 2 and spin S = 2 has the lowest energy. The states of these two terms will be taken into account in the following. The SOI operator for manganese ions that have the state with the electronic configuration 3d6 (term 5D) is written in the following form 
+
+2JETP FLUCTUATION MECHANISM OF SINGLE-ION ANISOTROPY OF . . . MnBi 2Te 4
+
+HdSO = − ∑
+
+> f
+
+λd (Lf Sf ), (3) where Lf is the orbital momentum operator (Ld = 2) ,
+
+Sf is the spin operator (Sd = 2) , for the above mentioned term of the Mn ion located at the site f .The fourth summand in (2) corresponds to the account of electrons occupying 5p states of Te ions located in sites with the number f + δ, where δ is the vector connecting the Mn ion to the nearest Te ion ( δ
+
+takes 6 values as shown in Fig. 1). In this summand, 
+
+εp is the energy of 5p orbital of the Te 2− ion, plmp σ
+
+(p†  
+
+> lmpσ
+
+) is the annihilation(creation) operator of the electron in the state with orbital momentum projection 
+
+mp = ±1, 0 and spin projection σ = ±1/2 on the Te ion occupying the position with the number l.The spin-orbit coupling operator for the subsystem of Te 1− ions, which are in the electronic configuration 
+
+5p5, term 2P with orbital momentum Lp = 1 and spin Sp = 1 /2 is written similarly to the operator for manganese ions: 
+
+HpSO = − ∑
+
+> l
+
+λp (LlSl). (4) The parameters λd and λp determine the spin-orbit coupling intensities of Mn and Te ions for the marked terms, respectively. In the considered mechanism of SIA formation, charge fluctuations due to hybridization of p and 
+
+d electronic states, described by the operator, are important. 
+
+Vmix = ∑
+
+> f δ
+
+∑  
+
+> mpmdσ
+
+[
+
+tmd mp (δ)d†  
+
+> f m dσ
+
+pf +δ,m p σ + H.c. 
+
+]
+
+, (5) in which the matrix element tmd mp (δ) defines the amplitude of the intensity of the electron transition from p state |mp σ〉 on the Te ion occupying the position with the number f + δ, to d state |md σ〉 on the Mn ion located in the site with the number f .
+
+3. HAMILTONIAN OF THE TRILAYER IN THE SPACE OF MULTIPLET STATES 
+
+The transition of an electron from the Te ion to the Mn ion changes the state of that ion: 6S → 5D.Since the states of the term with fixed values of the orbital momentum projection and spin when the SOI is included are not eigenstates of the Hamiltonian describing isolated ions, in order to apply perturbation theory to the degenerate level, it is necessary to go to the well-known description in which the states of the ion are reflected by the multiplet basis [7]. Such a description is based on the atomic representation [14], in which the Hamiltonian of the non-interacting between each other electronic subsystems of the Mn and Te ions, but taking into account spin-orbit coupling, takes a diagonal form: 
+
+H0 = ∑
+
+> f
+
+
+
+> 5/2
+
+∑
+
+> M=−5/2
+
+(Ed 
+
+> 5
+
+− 5μ)ZM;Mf +
+
+∑
+
+> Jd
+
+∑
+
+> MJ
+
+[Ed 
+
+> 6
+
+(Jd ) − 6μ]ZJd MJ ;Jd MJ
+
+> f
+
+ + (6) 
+
+∑
+
+> l
+
+{
+
+(Ep 
+
+> 6
+
+− 6μ)X0;0  
+
+> l
+
++
+
+∑
+
+> Jp
+
+∑
+
+> mJ
+
+[Ep 
+
+> 5
+
+(Jp ) − 5μ]XJp MJ ;Jp MJ
+
+> l
+
+ .
+
+In this expression, the Hubbard operator 
+
+ZM;Mf = |f, M 〉〈 f, M |
+
+is a projection operator on the orbital singlet state 6S of the Mn ion located at the site f , with the spin projection Sz = M taking the values 
+
+−5/2, −3/2, ..., 5/2. The vector |f, 5/2〉 is defined by the expression 
+
+|f, 5/2〉 = d†
+
+> 2↑
+
+d†
+
+> 1↑
+
+d†
+
+> 0↑
+
+d†
+
+> 1↑
+
+d†
+
+> 2↑
+
+|f, 0〉 (7) in which |f, 0〉 is the vacuum state, m = −m.Five other states with M = 3 /2, 1/2, ..., −5/2 are described by vectors obtained from (7) by successive application of the operator 
+
+S− 
+
+> f
+
+=
+
+> 2
+
+∑
+
+> m=2
+
+d†
+
+> f m ↓
+
+df m ↑
+
+to the vector |f, 5/2〉 while taking into account the relation 
+
+S− 
+
+> f
+
+|f, M 〉 = √(5 /2 + M )(5 /2 − M + 1) |f, M − 1〉.
+
+In (6) the energy of the sixfold degenerate term 6S
+
+is denoted by Ed 
+
+> 5
+
+.The second summand in the first curly brackets of the operator H0 (6) corresponds to the consideration of the states of Mn ions in the configuration 3d6 with orbital momentum L = 2 and spin S = 2 . It is taken into account that due to the SOI the 25-fold degenerate term 5D is split into five multiplets . Each multiplet is characterized by the total momentum Jd = 4 , 3, 2, 1, 0
+
+and energy 
+
+Ed 
+
+> 6
+
+(Jd ) = E6(5D) − λd [Jd (Jd + 1) /2 − 6] , (8) 
+
+3VAL’KOV et al. JETP 
+
+where E6(5D) is the energy of the term 5D of the configuration 3d6.The diagonal Hubbard operators 
+
+ZJd MJ ;Jd MJ 
+
+> f
+
+= |f, J d MJ 〉〈 f, J d MJ |
+
+realize the projection of Hilbert space vectors onto the multiplet state of the Mn ion, which has an electronic configuration 3d6, an orbital momentum L = 2 , a spin 
+
+S = 2 , a total momentum Jd and a projection of this momentum MJ .The summands H0, standing in the second curly brackets in (6), reflect the presence of Te ions having electron configurations 5p6 and 5p5. The energy of the singlet configuration is denoted by Ep 
+
+> 6
+
+. The operator 
+
+X0;0  
+
+> l
+
+= |l, p 6〉〈 l, p 6|
+
+projects the Hilbert space vector onto the state of the Te ion with a fully filled 5p-shell: 
+
+|l, p 6〉 = p†
+
+> l1↑
+
+p†
+
+> l1↓
+
+p†
+
+> 0↑
+
+p†
+
+> 0↓
+
+p†
+
+> 1↑
+
+p†
+
+> 1↓
+
+|0〉.
+
+The second summand, standing in the second curly brackets in the Hamiltonian (6), accounts for the Te ion states appearing when one electron from the |5p6〉
+
+state moves to the Mn ion. The state |l; Jp MJ 〉 arising at the site l is characterized by the total momentum 
+
+Jp , which can take two values: Jp = 3 
+
+> 2
+
+and Jp = 1 
+
+> 2
+
+, as well as its projection MJ .The energy of a multiplet with a given value Jp is defined by the expression 
+
+Ep 
+
+> 5
+
+(Jp ) = Ep 
+
+> 5
+
+− λp
+
+[Jp (Jp + 1) /2 − 11 /8] .
+
+Let us introduce a multiplet representation for the operators d†
+
+> f mσ
+
+,
+
+d† 
+
+> f mσ
+
+= ∑
+
+> JM
+
+Dmσ (J; M )ZJ,M +m+σ;Mf , (9) which allows us to consider the process of electron appearance on the Mn 2+ ion as a coherent superposition of partial transitions of this ion from the state |f ; M 〉 to the state |f ; JM J 〉. Each of such transitions in the atomic representation is described by a non-diagonal Hubbard operator 
+
+ZJM J ;Mf = |f ; JM J 〉〈 f ; M |.
+
+The parameters of the representation (9) can be written as the product 
+
+Dmσ (J; M ) = Γ σ(M )CJ (m, M + σ) (10) of the function 
+
+Γσ (M ) = −2σ
+
+√ 1
+
+2 − 2M σ 
+
+5 (11) and the Clebsch-Gordan coefficient CJ (m, M + σ) [7], which is a matrix element defining the decomposition of the basis functions of the term 5D by the basis functions of the multiplets: 
+
+|m, M + σ〉 = ∑
+
+> J
+
+CJ (m, M + σ)|J, M + m + σ〉. (12) The annihilation operator of the electron on the Te ion located at the site number l, from a state with orbital momentum projection m = ±1, 0 and spin projection σ has a simpler form of multiplet representation: 
+
+plmσ = ∑
+
+> Jp
+
+KJp (m, σ )XJp ,m+σ;0  
+
+> l
+
+. (13) In this expression, the operator 
+
+XJp,m +σ;0  
+
+> l
+
+= |l; Jp, m + σ〉〈 l, 0| (14) describes the change of the state of the Te ion at the site l from the electronic configuration 5p6 (such state corresponds to the Hilbert space vector |l, 0〉) to the multiplet with the total momentum Jp = 3 /2, 1/2
+
+and its projection m + σ, related to the electronic configuration 5p5.The coefficients in (13) are defined by the expressions 
+
+K3/2(mσ ) = 
+
+√ 2 + 2 mσ 
+
+3 ,K1/2(mσ ) = −2σ
+
+√ 1 − 2mσ 
+
+3 . (15) The use of the obtained expressions allows us to write down the operator Vmix in the multiplet representation necessary to apply the operator form of perturbation theory for the degenerate level: 
+
+Vmix = ∑
+
+> f δ
+
+∑  
+
+> mpmdσ
+
+∑  
+
+> JdJpM
+
+{
+
+tmp md (δ)××Γσ(m)CJd (md , M + σ)KJp (mp , σ )× (16) 
+
+×ZJd ,M +md +σ;Mf XJp ,mp +σ;0   
+
+> f+δ
+
++ H.c. 
+
+}
+
+.
+
+4. SPLITTING OF THE ORBITAL SINGLET 6S OF THE ION Mn 2+ 
+
+The ground state Hamiltonian H0 (6) corresponds to the nominal charge values of the Mn 2+ and Te 2−
+
+ions. In this case, the energy level Ed 
+
+> 5
+
+of each manganese ion is sixfold degenerate. Consequently, the charge 
+
+4JETP FLUCTUATION MECHANISM OF SINGLE-ION ANISOTROPY OF . . . MnBi 2Te 4
+
+fluctuations can be accounted for only in the framework of perturbation theory for the degenerate level [7]. For this purpose it is convenient to use the operator form of perturbation theory [15]. Let us introduce a projection operator 
+
+P =
+
+∏
+
+> f
+
+∑
+
+> M
+
+ZMM f
+
+(∏
+
+> l
+
+X0;0 
+
+> l
+
+)
+
+(17) projecting the Hilbert space of the system under study onto the subspace of nominal states of the Hamiltonian 
+
+H0.Considering Vmix as a perturbation, we obtain that in the second order of perturbation theory the effective Hamiltonian of the trilayer Te–Mn–Te is written in the form of 
+
+Hef f = ∑
+
+> f
+> 5/2
+
+∑
+
+> M=−5/2
+
+Ed 
+
+> 5
+
+ZM;Mf + ∑
+
+> l
+
+Ep 
+
+> 6
+
+X0;0  
+
+> l
+
++ H(2)  
+
+> ef f
+
+, (18) where the second-order contribution, defined by the expression 
+
+H(2)  
+
+> ef f
+
+= −P V mix 
+
+( 1
+
+H0 − E0
+
+)
+
+Vmix P, (19) leads to a partial removal of the degeneracy of the term 6S, which, in accordance with the Wigner Eckart theorem, can be described in terms of SIA. To obtain the SIA Hamiltonian in explicit form, we substitute into (19) the hybridization operator in the multiplet representation (16) and consider the expression for the projection operator. Omitting simple intermediate calculations, we find the operator H(2)  
+
+> ef f
+
+:
+
+H(2)  
+
+> ef f
+
+= − ∑
+
+> f
+
+∑ 
+
+> M′M
+
+V (2)   
+
+> M′M
+
+ZM′ 
+
+> Mf
+
+, (20) where the matrix elements are of the form 
+
+V (2)   
+
+> M′M
+
+= ∑ 
+
+> mpmd
+
+∑ 
+
+> m′
+> pm′
+> d
+
+{∑
+
+> δ
+
+t∗ 
+
+> m′
+> dm′
+> p
+
+(δ)tmd mp (δ)
+
+}
+
+×
+
+∑  
+
+> JpJdσσ ′
+
+Γσ′ (M ′
+
+)Γ σ (M )KJp (m′ 
+
+> p
+
+, σ ′
+
+)KJp (mp , σ )
+
+∆dp + EdSO (Jd ) + EpSO (Jp ) ×
+
+CJd (m′ 
+
+> d
+
+, M ′
+
++ σ′
+
+)CJd (md , M + σ) ×
+
+∆
+
+(
+
+m′ 
+
+> p
+
++ σ′
+
+− mp − σ
+
+)
+
+× (21) 
+
+∆
+
+(
+
+m′ 
+
+> d
+
++ M ′
+
++ σ′
+
+− md − M − σ
+
+)
+
+.
+
+In this expression 
+
+∆dp = E(5D) − Ed 
+
+> 5
+
++ Ep 
+
+> 5
+
+− Ep
+
+> 6
+
+defines the excitation energy at the transition of an electron from the Te ion to the Mn ion without taking into account the spin-orbit interaction, ∆( x − x′) is the Kronecker symbol. The values EdSO (Jd ) and EpSO (Jp ) denote the SOI energies for manganese and tellurium ions, respectively: 
+
+EdSO (Jd ) = −λd [Jd (Jd + 1) /2 − 6] ,EpSO (Jp ) = −λp
+
+[Jp (Jp + 1) /2 − 11 /8] .
+
+5. TRIGONAL SYMMETRIES AND ADDITIONAL SELECTION RULES 
+
+The previously noted triangular lattice type ordering of tellurium and manganese ions, as well as their mutual arrangement (see Fig. 1), lead to important symmetry properties of the hopping integrals tmd mp (δ). To describe these properties, we introduce the following notations. The three vectors connecting the Mn ion with the three nearest Te ions located in the plane above the Mn ion plane will be denoted as δ1, δ2 and δ3. The increasing vector number corresponds to counterclockwise motion. The other three vectors connecting the Mn ion with the three nearest Te ions located under the Mn ion plane will be denoted by the symbols δ′
+
+> 1
+
+, δ′
+
+> 2
+
+, δ′
+
+> 3
+
+. The correspondence between the vector number δ′ 
+
+> i
+
+and its orientation is the same as for the vectors δi.The laws of transformations for spherical functions at rotations about the third order axis lead to the following 
+
+tmd mp (δn) = exp 
+
+{
+
+− i2π
+
+3 (md − mp)( n − 1) 
+
+}
+
+tmd mp (δ1),tmd mp (δ′
+
+> n
+
+) = exp 
+
+{
+
+− i2π
+
+3 (md − mp)( n − 1) 
+
+}
+
+tmd mp (δ′
+
+> 1
+
+),
+
+(22) where n = 1 , 2, 3.These relations give additional “selection rules” since 
+
+( 2
+
+Z
+
+) ∑
+
+> δ
+
+t∗ 
+
+> m′
+> dm′
+> p
+
+(δ)tmd mp (δ) = 
+
+[
+
+t∗ 
+
+> m′
+> dm′
+> p
+
+(δ1)tmd mp (δ1) + t∗ 
+
+> m′
+> dm′
+> p
+
+(δ′
+
+> 1
+
+)tmd mp (δ′
+
+> 1
+
+)
+
+]
+
+××
+
+[
+
+∆( md − m′ 
+
+> d
+
+− mp + m′ 
+
+> p
+
++ 3 NP )
+
+]
+
+, (23) where Z=6 is the number of nearest neighbors for the manganese ion, NP = 0, ±1, ±2, ... . The case where NP 6 = 0 , corresponds to the consideration of 
+
+5VAL’KOV et al. JETP 
+
+transfer processes, the origin of which, as usual, is a consequence of a discrete group of transformations. In our consideration, these processes do not contribute. 
+
+6. HOPPING INTEGRALS 
+
+It is known that first-principles calculations of the electronic structure based on DFT methods allow us to obtain the set of Bloch functions ψnk (r) and the energy spectrum of the system in K-space. With their help it is possible to define a set of Wannier functions φmR(r), where R specifies the coordinates of the localization center of these functions. On the basis of such a basis, the hopping parameters are calculated as averages of the DFT Hamiltonian over the φmR basis and the effective Hamiltonian in the strong coupling approximation is determined. However, finding the φmR functions is difficult for a multiband electronic structure due to the presence of overlapping bands, and because there is uncertainty in the choice of the phase factor for different ψnk functions at a fixed k. As a result, the obtained Wannier functions may not be localized, generally speaking. To overcome this, a numerical method has been proposed in which the Wannier functions are found based on certain combinations of functions ψnk , providing maximum localization φmR near R (see reviews [16, 17]). For MnBi 2Te 4 the maximally localized Wannier functions have been used in calculations of the electronic structure of surface states and topological invariants [1,18,19] (including the use of the topological materials software package presented in [20]), as well as the Hall conductivity [21, 22] and the linear magnetoelectric effect coefficient [23]. Note that often the constructed effective Hamiltonians for MnBi 2Te 4
+
+take into account only p − p hoppings between Te–Te, Bi–Bi, and Te-Bi ions [19, 22] since these states exist near the Fermi level and are important for describing the properties noted above. However, to the best of our knowledge, the calculation of the parameters of p − d
+
+hoppings for MnBi 2Te 4, which play a determining role in the formation of magnetic ordering in it (see also [24]), has not been carried out on the basis of the described approaches. When finding the hopping integrals tmd mp (δ1)
+
+and tmd mp (δ′
+
+> 1
+
+), let us take into account that the Bloch functions of the electronic states of the ions of the Te–Mn–Te trilayer are given by solutions of the Schr¨ odinger equation with a Hamiltonian 
+
+ˆh = − ℏ2
+
+2m △ + Vef f (r), (24) in which m is the electron mass, △ is the Laplace operator, Vef f (r) is the effective periodic potential created by the ionic cores and the self-consistent field arising from the Coulomb interaction of electrons. Using the strong coupling method first applied by Wilson to analyze the splitting of degenerate electronic 
+
+p levels [25], we obtain that the integral of hoppings between the manganese ion and the tellurium ion occupying with respect to the Mn ion the position characterized by the vector δ, is determined by the expression 
+
+tmd mp (δ) = 
+
+∫
+
+Φ∗
+
+> dm d
+
+(r)ˆhΦpm p (r − δ)dr, (25) where Φ∗
+
+> dm d
+
+(r) is the Wannier function corresponding to d state of the Mn ion located at the origin of the coordinate system with orbital momentum projection 
+
+md, Φpm p (r − δ) is the Wannier function corresponding to p state of the Te ion located at the site defined by the vector δ, with orbital momentum projection mp.Since the periodic potential and Wannier functions included in the definition of the hopping integral can be found only approximately, we will further use an approximation scheme. In accordance with it, hydrogen-like functions for 3d and 5p states of electrons participating in filling the electron shells of manganese and tellurium ions, respectively, will be used as functions Φ∗
+
+> dm d
+
+(r) and Φpm p (r − δ). In this case, the mean-field potential created by the ionic shells and the Coulomb repulsion potential of electrons is used as 
+
+Vef f (r).It should be emphasized that the values of tmd mp (δ)
+
+obtained by this approach can correspond to the true values only with an accuracy up to a coefficient of the order of one. It is significant, however, that when this coefficient is changed, the resulting range of values of the single-ion anisotropy parameter corresponds to the value known from experimental data on the spin-flop transition. It is also important that the applied method of calculation fully preserves the above mentioned symmetry properties of the integrals tmd mp (δ).Table 1 summarizes the hopping integrals for different values of md and mp, if δ = δ1. In a Cartesian coordinate system with the axis x, directed along the vector a1, (see Fig. 1) and the axis z, oriented perpendicular to the Mn ion layer, this vector is defined by the expression δ1 = ( a/ 2, −a/ (2 √3) , h), where 
+
+a = 4 .28 ˚A is the distance between the nearest Mn ions, h = 1 .66 ˚A is the distance between the Mn and Te ion planes. The values of the hopping integrals for the vector δ′ 
+
+> 1
+
+= ( a/ 2, a/ (2 √3) , −h) are summarized in Table 2. The values of tmd,m p (δ) for other δ satisfy the conditions noted above (22). 
+
+6JETP FLUCTUATION MECHANISM OF SINGLE-ION ANISOTROPY OF . . . MnBi 2Te 4
+
+md\mp 1 0 -1 
+
+2 -0.31 + 0.54 i 0.05 - 0.03 i -0.06 
+
+1 - 0.37 i 0.20 - 0.35 i 0.07 - 0.04 i
+
+0 -0.13 - 0.22 i 0.53 i -0.13 + 0.22 i
+
+-1 -0.07 - 0.04 i 0.20 + 0.35 i -0.37 i
+
+-2 -0.06 -0.05 - 0.03 i -0.31 - 0.54 i
+
+Table 1: Values of the hopping integrals tmd mp (δ1) in electronvolts between the Mn ion and the nearest Te ion in the upper plane of the Te–Mn–Te trilayer occupying the position characterized by the vector δ1.
+
+md\mp 1 0 -1 
+
+2 0.31 + 0.54 i 0.05 + 0.03 i 0.06 
+
+1 0.37 i -0.20 - 0.35 i 0.07 + 0.04 i
+
+0 0.13 - 0.22 i -0.53 i 0.13 + 0.22 i
+
+-1 -0.07 + 0.04 i -0.20 + 0.35 i 0.37 i
+
+-2 0.06 -0.05 + 0.03 i 0.31 - 0.54 i
+
+Table 2: Values of hopping integrals tmd mp (δ′
+
+> 1
+
+) in electronvolts between the Mn ion and the nearest Te ion in the lower plane of the Te–Mn–Te trilayer occupying the position characterized by the vector δ′
+
+> 1
+
+.
+
+7. UNIAXIAL ANISOTROPY CONSTANT AND RENORMALIZATION OF THE ENERGY THERM 6S
+
+When the additional selection rule (23) is taken into account, the operator H(2)  
+
+> ef f
+
+is diagonalized by indices 
+
+M and M ′
+
+:
+
+H(2)  
+
+> ef f
+
+= ∑
+
+> f
+
+∑
+
+> M
+
+E(2)  
+
+> M
+
+ZMM f ,
+
+where 
+
+E(2)  
+
+> M
+
+= −
+
+( Z
+
+2
+
+) ∑
+
+> σσ ′
+
+Γσ′ (M )Γ σ (M ) ∑ 
+
+> mpmd
+
+T σ,σ ′  
+
+> mdmp
+
+×
+
+∑ 
+
+> JpJd
+
+{ KJp (mp + σ − σ′, σ ′)KJp (mp , σ )
+
+∆dp + EdSO (Jd ) + EpSO (Jp ) ×
+
+CJd (md + σ − σ′, M + σ′)CJd (md , M + σ)
+
+}
+
+. (26) In this expression, T σ,σ ′  
+
+> mdmp
+
+is a combination of products of hopping integrals 
+
+T σ,σ ′  
+
+> mdmp
+
+= t∗    
+
+> md+σ−σ′,m p+σ−σ′
+
+(δ1)tmd ,m p (δ1) + 
+
+t∗    
+
+> md+σ−σ′,m p+σ−σ′
+
+(δ′
+
+> 1
+
+)tmd ,m p (δ′
+
+> 1
+
+). (27) From the symmetry properties of the Clebsch–Gordan coefficients, the function Γσ (M ) and the hopping integrals tmd mp , it follows that E(2)  
+
+> M
+
+= E(2)  
+
+> −M
+
+. This corresponds to the character of the term splitting with 
+
+S = 5 /2 in the uniaxial anisotropy field. Taking into account the sum rule 
+
+∑
+
+> M
+
+ZMM f = 1 
+
+we obtain that the operator expression 
+
+Rf = ∑
+
+> M
+
+E(2)  
+
+> M
+
+ZMM f
+
+can be represented in the form 
+
+Rf = ∆ E(2) ˆI6f + B02 O02f + B04 O04f , (28) where 
+
+O02f = 3 (Szf
+
+)2 − S(S + 1) , (29) 
+
+O04f = 35 (Szf
+
+)4 − [30 S(S + 1) − 25] (Szf
+
+)2 ++3 S2(S + 1) 2 − 6S(S + 1) 
+
+are the Stevens operators [26], used in the description of anisotropy on the basis of the equivalent Hamiltonian [27]. By means of ˆI6f , we denote a unit matrix of size 
+
+6 × 6, related to the site number f .The fluctuation shift ∆E(2) defines the renormalization of the energy of the term 6S, arising in the second order of perturbation theory and leading to a lowering of the energy of this term. Its magnitude and the values of the SIA parameters B02 and B04 are related to the energies E(2)  
+
+> M
+
+by linear equations: 
+
+∆E(2) = ( E(2) 1/2 + E(2) 3/2 + E(2) 5/2)/3,B02 = (5 E(2) 5/2 − 4E(2) 1/2 − E(2) 3/2)/84 , (30) 
+
+B04 = ( E(2) 5/2 + 2 E(2) 1/2 − 3E(2) 3/2)/840 .
+
+Using the data of Tables 1 and 2, as well as the expressions (26) and (30) allows us to find the dependences of the value D2 (this parameter corresponds to writing the anisotropy energy operator in the form HA = D2(Sz )2, with the following relation 
+
+D2 = 3 B02 ) on spin-orbit coupling constants λd and 
+
+λp. The value of ∆dp = 10 eV. The results of the calculations are presented graphically in Figs. 2 and 3. The first of them shows the dependences of the value of D2 on the spin orbit coupling constant λd at three values of the SOI parameter λp = −0.02 eV, λp = 0 , λp = 0 .02 eV. If λp = 0 , only anisotropy of the “easy-axis” type is realized at all λd, when D2 < 0. The dependence of 
+
+7VAL’KOV et al. JETP     
+
+> −0.2 −0.1 00.1 0.2
+> −0.06
+> −0.05
+> −0.04
+> −0.03
+> −0.02
+> −0.01
+> 0
+> 0.01
+> λd, eV D2, meV
+
+Fig. 2: Dependences of the anisotropy parameter D2 on 
+
+λd at three values of λp. The black solid line is plotted for λp = 0 . The red dashed line corresponds to the value λp = 0 .02 eV. The blue dashed line is plotted for 
+
+λp = −0.02 eV. The horizontal dashed line indicates the value of D2 = −0.0095 meV corresponding to the value of the SIA parameter of MnBi 2Te 4, determined from spin-flop field data. 
+
+D2(λd) for this case is shown in Fig. 2 by the black line. The dashed horizontal line in this figure corresponds to the value D2 = D(exp )2 = −0.0095 meV, which is obtained from the processing of experimental data on the spin-flop transition in MnBi 2Te 4 [1,3,8–10,28]. The two points of intersection of this line and the black curve indicate that the value D2 < 0 required for the experiment takes place both at λd > 0 and at λd < 0.Note that in this case the marked intersections occur at a sufficiently large value of the absolute value of λd.When including even weak SOI for the excited term of the Te ion (|λp| = 0.02 eV), there is aqualitative change in the dependence D2(λd). First of all, the symmetry with respect to the change of sign λd
+
+disappears, since there is a shift of the curve relative to the origin of coordinates. At positive λp the graph shifts upward and to the right (red dashed line in Fig. 2). This leads to a significant modification of the phase diagram of the system, since in the right vicinity of the point λd = 0 
+
+there appears an interval of change λd, within which anisotropy of the “easy-plane” type is realized. At that, “easy-axis” anisotropy takes place only starting from some value λd > 0.In the region of negative λd, “easy-axis” anisotropy is realized at all λd. For practical purposes it is essential that in this case the value of D2 = D(exp) 2 is reached at a smaller value of |λd| compared to the case of λp = 0 .At negative λp (blue dashed line in Fig. 2) the graph shifts upward and to the left. It is easy to see that in this case there appears a small interval of negative values 
+
+λd, within which “easy-plane” anisotropy is realized . Beyond this interval, anisotropy of the “easy-axis” type takes place. As in the first case, the following regularity takes place: if the product λd · λp < 0, then the value 
+
+D2 = D(exp) 2 is reached at smaller |λd|. If λd · λp > 0 ,then to obtain the required value of D2 = D(exp )2 , it is necessary to take larger |λd|.The modification of the dependences D2(λd) at significant intensity of SOI on the excited states of Te ions is shown in Fig.3. The main conclusion is that for values of |λp| ≃ 0.1 eV the “easy-axis” anisotropy is realized only when the condition λd · λp < 0 is fulfilled, since the second branch of the parabola crosses the line 
+
+D2 = 0 at unrealistically large constants |λd|.    
+
+> −0.2 −0.1 00.1 0.2
+> −0.15
+> −0.1
+> −0.05
+> 0
+> 0.05
+> 0.1
+> λd, eV D2, meV
+
+Fig. 3: Dependencies of D2(λd) at five values of the 
+
+λp parameter: λp = −0.1 eV (red dashed line), 
+
+λp = −0.05 eV (red solid line), λp = 0 .1 eV (blue solid line), up to λp = 0 .1 eV (blue dashed line). The black solid line corresponds to the value of λp = 0 .The horizontal dashed line has the same meaning as in Fig. 2. The presented results correlate with the conclusions obtained on the basis of numerical DFT calculations [13]. In this paper it was noted that the agreement with the experimental data occurs when both λp and λd
+
+8JETP FLUCTUATION MECHANISM OF SINGLE-ION ANISOTROPY OF . . . MnBi 2Te 4
+
+are simultaneously different from zero. In our case this conclusion has to be made because for λp = 0 the value of λd, which yields D2 = −0.0095 meV, is too large. At the same time, for λp 6 = 0 the necessary value of the anisotropy parameter is achieved at much smaller λd.Parameter B04 = 0, since in second-order perturbation theory, irreducible summands of degree four do not arise. The fluctuation shift ∆E(2) , corresponding to the reduction of the single-ion energy in the second order perturbation theory, is of the order of ∼ − 1 eV at the chosen values of the system parameters. 
+
+8. PARAMETER D2 AND SHIFT ∆E(2) AT 
+
+∆dp ≫ Eso 
+
+At real values of ∆dp , λ d, λ p the ratio 
+
+|EdSO (Jd ) + EpSO (Jp )|/∆dp ≡ ǫ ≪ 1 (31) forms a parameter of smallness. Therefore, the denominator of the expression (26) can be decomposed into a series by ǫ. The summation over σ, σ ′, J p and 
+
+Jd can then be done explicitly. Taking into account the orthonormalization relations of the Clebsch-Gordon coefficients, their symmetry properties, as well as the equality 
+
+|tmd mp (δ)| = |tmd mp (δ′)|, the validity of which is easy to establish on the basis of the data of Tables 1 and 2, we obtain that the dependences of the values of E(2)  
+
+> M
+
+on the spin-orbit coupling constants with quadratic accuracy on the parameter ǫ are determined by the expressions 
+
+E(2) 5/2 = −A − Bλ 2 
+
+> p
+
++ Cλ pλd − F5/2λ2
+
+> d
+
+,E(2) 3/2 = −A − Bλ 2 
+
+> p
+
++ Cλ pλd/5 − F3/2λ2
+
+> d
+
+, (32) 
+
+E(2) 1/2 = −A − Bλ 2 
+
+> p
+
+− Cλ pλd/5 − F1/2λ2
+
+> d
+
+,
+
+where 
+
+A = Z ∑ 
+
+> mdmp
+
+|tmd mp |2
+
+∆dp 
+
+, B = A
+
+2∆ 2
+
+> dp
+
+, (33) 
+
+C = 4 Z
+
+(
+
+|t1,1|2 − | t−1,1|2 + 2 |t2,1|2 − 2|t−2,1|2
+
+∆3
+
+> dp
+
+)
+
+, (34) and the M -dependent coefficients of FM are represented as follows 
+
+F5/2 = 6Z
+
+∆3
+
+> dp
+
+∑
+
+> mp
+
+(
+
+6|t2,m p |2 + 3 |t1,m p |2 + |t0,m p |2)
+
+,F3/2 = 6Z
+
+5∆ 3
+
+> dp
+
+∑
+
+> mp
+
+(18 |t2,m p |2 + 21 |t1,m p |2 + 11 |t0,m p |2),F1/2 = 12 Z
+
+5∆ 3
+
+> dp
+
+∑
+
+> mp
+
+(6 |t2,m p |2 + 12 |t1,m p |2 + 7 |t0,m p |2).
+
+Using the relation (30), as well as the obtained expressions for FM allows us to obtain a simple formula for the anisotropy parameter 
+
+D2 = −F λ 2 
+
+> d
+
++ C
+
+5 λpλd, (35) in which 
+
+F = 9Z
+
+5∆ 3
+
+> dp
+
+∑
+
+> mp
+
+(
+
+2|t2,m p |2 − | t1,m p |2 − | t0,m p |2)
+
+. (36) Since the coefficients at the summands ∼ λ2 
+
+> p
+
+in (32) are the same, according to (30), D2 is independent of 
+
+∼ λ2
+
+> p
+
+. However, such summands give a contribution to the renormalization of the energy of the term 6S, which can be written as 
+
+∆E(2) = −A
+
+(
+
+1 + 1
+
+2
+
+λ2
+
+> p
+
+∆2
+
+> dp
+
++ 12 λ2
+
+> d
+
+∆2
+
+> dp
+
+)
+
++ C
+
+3 λpλd. (37) Tables 1 and 2 show that for the considered case 
+
+|t1,1| ≫ | t−1,1|, |t2,1| ≫ | t−2,1|. (38) Therefore, the value 
+
+C ≃ 4Z
+
+(
+
+|t1,1|2 + 2 |t2,1|2
+
+∆3
+
+> dp
+
+)
+
+≃
+
+(
+
+4Z
+
+∆3
+
+> dp
+
+)
+
+0.91 (39) is obviously positive. On the other hand, for the value F , the contribution of the summands with negative signs in (36) is commensurate with the contribution of the positive summands. As a result, compensation occurs so that a small multiplier appears in the expression for F :
+
+F ≃ 9Z
+
+5∆ 3
+
+> dp
+
+· 0.089 . (40) From a comparison of the expressions (39) and (40), the inequality C ≫ F which explains the correlation of the results obtained with the results of calculations of the parameter D2 by the DFT method [13]. It was noted in [13] that λd and λp must be different from zero to obtain the required value of the uniaxial anisotropy parameter. In our case at λp = 0, the uniaxial anisotropy parameter is determined by the expression D2 = −F λ 2
+
+> d
+
+.Since the value of F is relatively small, the necessary value of D2 arises only at large values of λd.The situation is different at λp 6 = 0, when the second summand in (35) is included. Since C ≫ F , the required value of the parameter D2 even at relatively small λp is achieved at much smaller values of λd.
+
+9VAL’KOV et al. JETP 
+
+The analysis of analytical expressions is fully consistent with the results of [13], as well as with the above graphs defining the dependences of D2 on λp
+
+and λd, which were obtained on the basis of numerical calculations without using the above mentioned series expansion. Note also that the obtained analytical formulas allowed us to trace in detail the influence of spin-orbit coupling parameters on the region of realization of anisotropy of the “easy-axis” and “easy-plane” types. It should be emphasized that the values of F and C
+
+in (35) depend significantly on the hopping integrals, which in turn change with the change of the geometrical arrangement of ions with respect to each other. The obtained results suggest the possibility of a wider application of the proposed fluctuation mechanism of SIA formation in insulators with magnetically active ions in the orbital singlet state. 
+
+CONCLUSION 
+
+The fluctuation mechanism of single-ion anisotropy in antiferromagnetic topological insulator MnBi 2Te 4
+
+proposed in this paper is based on the use of the following statements. 1. The states with nominal valence of Mn 2+ and Te 2− ions correspond to electronic configurations 3d5
+
+and 5p6 with terms 6S and 0S, respectively. In this case, the term 6S is sixfold degenerate. 2. Electron hopping between Te and Mn ions initiates charge fluctuations. As a result, there is an admixture to the states of the basic terms of the marked ions of the states of excited terms with non zero orbital moments. 3. To account for these processes, the operator form of perturbation theory is applied with the involvement of the atomic representation, which allows us to write down the multiplet states in diagonal form. In the second order of perturbation theory the effective Hamiltonian is obtained, in which the partial removal of degeneracy of the term 6S corresponds to the appearance of single-ion anisotropy. 4. Simple analytical expressions describing the dependence of the single-ion anisotropy constant on the parameters of spin-orbit interactions for Te and Mn ions are obtained using a smallness parameter. 5. The interval of values of the anisotropy constant arising from varying the initial model parameters is found to be important for applications and includes that value D2, which is required for the interpretation of experimental data on the spin-flop transition in MnBi 2Te 4.6. The fluctuation mechanism of SIA considered in this work is not fundamentally limited to application only to MnBi 2Te 4, but can be obviously adapted to other compounds containing magnetically active ions with orbital singlet as the main term. 
+
+FUNDING 
+
+This study was supported by the grant of the Russian Science Foundation No. 23-22-10021, 
+
+https://rscf.ru/project/23-22-10021/ and the Krasnoyarsk Regional Science Foundation 
+
+## REFERENCES 
+
+1. M. M. Otrokov, I. I. Klimovskikh, H. Bentmann, et al. (Collaboration), Nature 576 , 416 (2019). 
+
+2. J.-Q. Yan, Q. Zhang, T. Heitmann, Z. Huang, K. Y. Chen, J.-G. Cheng, W. Wu, D. Vaknin, B. C. Sales, and R. J. McQueeney, Phys. Rev. Mater. 3,064202 (2019). 
+
+3. Y.-J. Hao, P. Liu, Y. Feng, et al. (Collaboration), Phys. Rev. X 9, 041038 (2019). 
+
+4. B. Li, J.-Q. Yan, D. M. Pajerowski, E. Gordon, A.-M. Nedi, Y. Sizyuk, L. Ke, P. P. Orth, D. Vaknin, and R. J. McQueeney, Phys. Rev. Lett. 
+
+124 , 167204 (2020). 
+
+5. J. B. Goodenough Magnetism and the Chemical Bond (Interscience Publishers, New York –London, 1963). 
+
+6. Eremenko V.V., Kharchenko N.F., Litvinenko Y.G. and Naumenko V.M. Magneto-Optics and Spectroscopy of Antiferromagnets (New York: Springer-Verlag, 1992). 
+
+7. L. D. Landau and E. M. Lifshitz Quantum Mechanics: Non-Relativistic Theory (Pergamon Press, 1977). 
+
+8. J.-Q. Yan, S. Okamoto, M. A. McGuire, A. F. May, R. J. McQueeney, and B. C. Sales, Phys. Rev. B 
+
+100 , 104409 (2019). 
+
+9. Y. Lai, L. Ke, J. Yan, R. D. McDonald, and R. J. McQueeney, Phys. Rev. B 103 , 184429 (2021). 
+
+10 . S. Li, T. Liu, C. Liu, Y. Wang, H.-Z. Lu, and X. C. Xie, National Science Review nwac296 (2023). 
+
+11 . C. J. Ballhausen, Introduction to Ligand Field Theory (McGraw-Hill Book, New York, 1962). 
+
+10 JETP FLUCTUATION MECHANISM OF SINGLE-ION ANISOTROPY OF . . . MnBi 2Te 4
+
+12 . S. A. Al’tshuler and B. M. Kozyrev, Electron Paramagnetic Resonance in Compounds of Transition Elements (Wiley, New York, 1974; Nauka, Moscow, 1972). 
+
+13 . Y. Li, Z. Jiang, J. Li, S. Xu, and W. Duan, Phys. Rev. B 100 , 134438 (2019). 
+
+14 . J. Hubbard, Proc. Roy. Soc., A 285 , 542 (1965). 
+
+15 . N. N. Bogolubov Introduction to Quantum Statistical Mechanics , (Springer, World Scientific, 2010) 
+
+16 . N. Marzari, A. A. Mostofi, J. R. Yates, I. Souza, and D. Vanderbilt, Rev. Mod. Phys. 84 , 1419 (2012). 
+
+17 . G. Pizzi, V. Vitale, R. Arita et al. (Collaboration), J. Phys.: Condens. Matter 32 , 165902 (2020). 
+
+18 . J. Li, Y. Li, S. Du, Z. Wang, B.-L. Gu, S.-C. Zhang, K. He, W. Duan, and Y. Xu, Sci. Adv. 5, eaaw5685 (2019). 
+
+19 . S. Xiao, X. Xiao, F. Zhan, J. Fan, X. Wu, and R. Wang, Phys. Rev. B 105 , 125126 (2022). 
+
+20 . Q.Sh. Wu, Sh.N. Zhang, H.-F. Song, M. Troyer, A.A. Soluyanov, Computer Physics Communications 224 , 405 (2018). 
+
+21 . R. Gao, G. Qin, S. Qi, Z. Qiao, and W. Ren, Phys. Rev. Mater. 5, 114201 (2021). 
+
+22 . W.-T. Guo, Z. Huang, and J.-M. Zhang, Commun Phys 8, 1 (2025). 
+
+23 . T. Zhu, H. Wang, H. Zhang, and D. Xing, Npj Comput Mater 7, 1 (2021). 
+
+24 . J. Li, J. Y. Ni, X. Y. Li, H.-J. Koo, M.-H. Whangbo, J. S. Feng, and H. J. Xiang, Phys. Rev. B 101 , 201408 (2020). 
+
+25 . A. H. Wilson, Proc. Roy. Soc., London, 133 , 458 (1931). 
+
+26 . K.W.H. Stewens, Proc.Phys.Soc. Ams., v. A65 ,209 (1952). 
+
+27 . A. K. Zvezdin, V. M. Matveev, A. A. Mukhin, and A. I. Popov, Rare-Earth Ions in Magnetically Ordered Crystals (Nauka, Moscow, 1985) [in Russian]. 
+
+28 . V. V. Val’kov, A. O. Zlotnikov, A. Gamov, N. A. Fedorova, and F. N. Tomilin, JETP Lett. 120 , 499 (2024). 
+
+Translated by Nauka Publishing House. 
+
+11

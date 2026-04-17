@@ -1,0 +1,432 @@
+Title: Geometric Spin Degeneracy in Spin-Orbit-Free Compensated Magnets
+
+URL Source: https://arxiv.org/pdf/2604.13266v1
+
+Published Time: Thu, 16 Apr 2026 00:11:34 GMT
+
+Number of Pages: 13
+
+Markdown Content:
+# Geometric Spin Degeneracy in Spin-Orbit-Free Compensated Magnets 
+
+Seung Hun Lee 1,2,3,4,∗, Yuting Qian 1,2,3,∗,†, Xi Dai 4, and Bohm-Jung Yang 1,2,3,‡
+
+> 1
+
+Department of Physics and Astronomy, Seoul National University, Seoul 08826, Korea 
+
+> 2
+
+Center for Theoretical Physics (CTP), Seoul National University, Seoul 08826, Korea 
+
+> 3
+
+Institute of Applied Physics, Seoul National University, Seoul 08826, Korea 
+
+> 4
+
+Department of Physics and Center for Complex Quantum Systems, The University of Texas at Austin, Austin, Texas, 78712, USA. and 
+
+> 5
+
+Department of Physics, Hong Kong University of Science and Technology, Clear Water Bay, Kowloon 999077, Hong Kong 
+
+(Dated: April 16, 2026) Compensated magnets with vanishing net magnetization can exhibit both pronounced spin split-ting and unconventional band degeneracies. In altermagnets, such degeneracies are enforced by crystal and magnetic symmetries. In compensated ferrimagnets, however, they may arise even in the absence of the corresponding symmetry protection, raising a fundamental question about the origin of spin degeneracy in spin-orbit-free magnetic systems. Here, we develop a theoretical frame-work for spin-orbit-free compensated magnets in which spin degeneracies are protected by geometric constraints rather than by spin symmetry. We show that zero net magnetization imposes a strong condition for the emergence of nodes formed by formally spin-degenerate bands, even when no con-ventional spin symmetry is present. Our analysis, applicable in the weak-interaction regime, identi-fies a general mechanism for spin degeneracy beyond group-theoretical protection. The framework accounts for the unconventional spin degeneracies recently reported in compensated ferrimagnets and provides a unified description of band degeneracies across a broad class of magnetic phases with negligible spin-orbit coupling. 
+
+Introduction. — Broken time-reversal symmetry allows spin-up and spin-down electrons in magnetic metals to behave differently, thereby shaping their electronic prop-erties. In ferromagnets (FMs), spin splitting gives rise to spin-dependent transport phenomena and unconven-tional superconducting phases [1, 2]. In conventional antiferromagnets (AFMs), by contrast, such effects are typically absent because the bands remain fully spin de-generate [Fig. 1(a,d)]. Recently, however, new classes of magnetic materials have emerged that combine compen-sated magnetic moments with spin-split band structures. A prominent example is altermagnets (AMs), collinear antiferromagnets with broken Kramers degeneracy [3, 4], which have opened new avenues for spin-dependent phe-nomena in materials with zero net magnetization. Compensated ferrimagnets (cFiMs) [5–14] provide another such platform with potentially useful spin-dependent functionality arising from large spin splitting. Their magnetic sublattices carry unequal local moments, yet the net magnetization vanishes either under specific conditions, such as at a compensation temperature [11], or identically because of electronic constraints, for exam-ple those associated with the Luttinger theorem [3, 14]. These systems are also attractive for applications [15–22] because they produce no stray field and are less sensitive to external magnetic fields. Unlike AFMs [Fig. 1(a,d)] and AMs [Fig. 1(b,e)], where symmetries constrain spin degeneracy, cFiMs generally lack a well-defined symme-   
+
+> ∗These authors contributed equally to this work.
+> †yuting_qian@snu.ac.kr
+> ‡bjyang@snu.ac.kr
+
+try relating the spin-up and spin-down sectors, render-ing conventional group-theoretical approaches inapplica-ble [23–25]. Nevertheless, cFiMs can exhibit even larger spin splitting than altermagnets while retaining spin de-generacies in parts of momentum space [Fig. 1(c,f)]. Whether these degeneracies are accidental or reflect a deeper underlying principle remains unclear, calling for a framework beyond symmetry-based analysis. In this work, motivated by the spin degeneracies ob-served in cFiMs, we develop a geometric theory of spin degeneracy in spin-orbit-free magnets that does not rely on spin symmetry. We show that vanishing net magne-tization imposes a strong condition for the existence of nodes formed by formally spin-degenerate bands, even in the absence of conventional spin symmetry. Our the-ory applies in the weak-interaction regime, where the electron-electron interaction is small compared with the gap separating the bands of interest from adjacent bands in the nonmagnetic limit. Importantly, the framework is not restricted to ferrimagnetic systems, but extends more broadly to magnetic materials with negligible spin-orbit coupling, providing a unified understanding of band degeneracies across a wide range of magnetic phases. 
+
+Geometric condition for degeneracy in spin-orbit-free magnets. — To describe the spin splitting in spin-orbit-free magnets, we introduce effective Zeeman field , whose precise definition is given below. We define a spin-degenerate band in a given non-magnetic system as a parent band, and refer to the two spin-split bands that emerge from this parent band upon magnetic ordering as a formal Kramers pair. Below, we show that van-ishing net magnetization is an important condition that guarantees the existence of nodes in the band structure 
+
+> arXiv:2604.13266v1 [cond-mat.mes-hall] 14 Apr 2026
+
+2
+
+FIG. 1. Comparison of nodal structures in different types of spin-orbit-free compensated magnets. The red and blue surfaces represent magnetic atoms with oppo-site spins. (a) In conventional antiferromagnets (AFMs), sub-lattices with opposite spins are related by translation or in-version symmetry. (b) In altermagnets (AMs), sublattices with opposite spins are not related by translation or inversion, but by other crystalline symmetries, such as rotation. (c) In compensated ferrimagnets (cFiMs), sublattices with opposite spins are not related by any symmetry. (d–f) Nodal structures of AFM, AM, and cFiM, respectively. The red and blue lines represent Fermi surfaces of spin-up and spin-down electrons, respectively. Black lines and dots indicate degenerate points between spin-up and spin-down Fermi surfaces. 
+
+composed of the formal Kramers pair. Let us consider a tight-binding Hamiltonian ˆH that describes a spin-orbit-free magnet. In momentum space, we write ˆH = P 
+
+> k
+
+ˆc†
+
+> k
+
+H(k)ˆ ck where we take the ba-sis ˆc† 
+
+> k
+
+= (ˆ c†
+
+> k1↑
+
+, ˆc†
+
+> k2↑
+
+, ..., ˆc† 
+
+> kN↑
+
+, ˆc†
+
+> k1↓
+
+, ˆc†
+
+> k2↓
+
+, ..., ˆc† 
+
+> kN↓
+
+) and 
+
+H(k) = H0(k) ⊗ σ0 + Hm − μI 2N . H0(k) is the ki-netic part of H(k) and describes the spin-independent electron hopping with an identity matrix σ0 in the spin space. μ is the chemical potential and I2N is an 2N × 2N
+
+identity matrix. Hm = P 
+
+> α=x,y,z
+
+hαm ⊗ σα describes the coupling of electrons to local spin moments at N sub-lattice sites in a unit cell. hαm is a diagonal matrix in the form of hαm = diag (aα 
+
+> 1
+
+, a α 
+
+> 2
+
+, ..., a αN ) in which the real diagonal entries indicate the local spin’s α-component at each sublattice site. 
+
+H0(k) can be diagonalized by a unitary transforma-tion as U † 
+
+> 0
+
+(k)H0(k)U0(k) = diag (ε1(k), ε 2(k), ..., ε N (k)) ,where U0(k) = (|u1(k)⟩, |u2(k)⟩, ..., |uN (k)⟩) and 
+
+H0(k)|ui(k)⟩ = εi(k)|ui(k)⟩. Let us assume that the bandwidth of each band εi(k) is much larger than aαn .To analyze the contribution of Hm, we project it onto the band basis of H0(k) and obtain an effective Hamil-tonian 
+
+Hi, eff (k) ≡
+
+⟨ui, ↑|H|ui, ↑⟩ ⟨ui, ↑|H|ui, ↓⟩⟨ui, ↓|H|ui, ↑⟩ ⟨ui, ↓|H|ui, ↓⟩
+
+
+
+= εi(k)σ0 + fi(k) · σ (1) for each i-th band, where σ is the vector of spin Pauli ma-
+
+FIG. 2. Geometric approach to band degeneracies in representative magnetic states. Hilbert polygon (green plane) and different ZEZF planes (brown plane) with normal vector a. (a) FM. Green and brown planes are parallel. (b) An intermediate critical state with a = (1 , 0, 0) , or (0 , 1, 0) , or 
+
+(0 , 0, 1) . (c) AFM/AM/cFiM with zero magnetization. Here, FM: ferromagnet; AFM: antiferromagnet; AM: altermagnet; cFiM: compensated ferrimagnet. 
+
+trices with components σα(α = x, y, z ). Since Hm trans-forms as U †(k)HmU (k) = P 
+
+> α
+
+U † 
+
+> 0
+
+(k)hαmU0(k)⊗σα under the unitary matrix U (k) = U0(k) ⊗ σ0, the influence of 
+
+Hm on the i-th band can be captured by a momentum-dependent effective Zeeman field (EZF) P 
+
+> α
+
+f αi (k)σα,where f αi (k) ≡ [U0(k)†hαmU0(k)] ii = PNn=1 aαn u∗
+
+> in
+
+uin =
+
+PNn=1 aαn ∥uin ∥2. Here, f αi (k) quantifies the effective Zee-man splitting experienced by an electron in the i-th band, determined by the electron wavefunctions in the non-magnetic limit. Specifically, the quantity ∥uin ∥2, which represents the sublattice-resolved probability weight in the wavefunction of the i-th band, directly determines how much of the local spin moment at sublattice n con-tributes to the spin expectation value of the wavefunc-tion. With the EZF defined, we can now determine the spin-degenerate momenta. The spin degeneracy appears within the formal Kramers pair when the EZF vanishes even after the introduction of magnetism. We can find the momenta at which EZF vanishes through a geomet-ric approach as follows. We first define a map from the Hilbert space H to the real coordinate space RN , where 
+
+N is the dimension of the sublattice degree-of-freedom, as 
+
+H → RN : |ui(k)⟩ 7 → Vi where Vi = ( Vi1, V i2, ..., V iN ) = (∥ui1∥2, ∥ui2∥2, ..., ∥uiN ∥2). From the EZF equation in-troduced above, we find that the condition for vanishing EZF is given by f αi = P 
+
+> n
+
+aαn Vin = 0 for α = x, y, z . In 
+
+RN , these are equations of (N − 1) -dimensional hyper-planes containing the origin. We name these hyperplanes as zero EZF (ZEZF) planes, whose normal vectors are 
+
+aα = ( aα 
+
+> 1
+
+, a α 
+
+> 2
+
+, ..., a αN ). For each spin direction α = x, y, z ,we obtain one corresponding hyperplane in RN .In addition to the set of ZEZF hyperplane equa-tions that correspond to different αs, we have a con-straint related to the normalization of |ui(k)⟩. That is, P 
+
+> n
+
+∥uin ∥2 = P 
+
+> n
+
+Vin = 1 . In the space of Vi, this con-straint is represented by a regular N -polygon whose ver-tices are at (1 , 0, ..., 0) , (0 , 1, ..., 0) ,..., (0 , ..., 0, 1) , respec-3tively. We name this polygon as the Hilbert polygon, since it is nothing but the image of the full Hilbert space generated by the map. The Hilbert polygon and ZEZF planes with corresponding normal vector a are schemat-ically illustrated in Fig. 2 for different magnetic configu-rations. Finding spin degeneracy amounts to identifying solutions of coupled equations f αi = 0 (α = x, y, z ) and P 
+
+> n
+
+Vin = 1 , which is equivalent to stating that EZF vanishes at the intersection of these ZEZF planes and the Hilbert polygon. Next, by taking the kagome lattice as an example, we demonstrate that the zero net mag-netization condition, i.e., P 
+
+> i
+
+aαi = 0 , serves as a strong condition to guarantee the existence of such solutions. 
+
+Kagome lattice with collinear magnetism. — To demon-strate our theory, we consider a single s-orbital kagome lattice model with nearest-neighbor hopping described by the Hamiltonian 
+
+H0(k) = −t
+
+
+
+0 cos k·e1 
+
+> 2
+
+cos k·e3
+
+> 2
+
+cos k·e1 
+
+> 2
+
+0 cos k·e2
+
+> 2
+
+cos k·e3 
+
+> 2
+
+cos k·e2 
+
+> 2
+
+0
+
+ , (2) where t is the hopping parameter, k = ( kx, k y ) and the lattice vectors ei : (1 , 0) , (−1/2, √3/2) , (−1/2, −√3/2) 
+
+for i = 1 , 2, 3, respectively. Let us first consider a ferromagnetic ordering by using 
+
+Hm in the form of mI 3 ⊗σα where I3 is the 3-dimensional identity matrix corresponding to N = 3 sublattice sites. This implies that the ZEZF plane has the normal vector 
+
+(1 , 1, 1) . Consequently, a ferromagnetic ZEZF plane pass-ing through the origin is always parallel to the Hilbert polygon as shown in Fig. 2 (a). As a result, these ZEZF planes never intersect with the Hilbert polygon, and spin-degenerate nodes within a formal Kramers pair are there-fore forbidden in ferromagnets. As the magnetic order-ing pattern continuously evolves from the purely ferro-magnetic limit, the ZEZF plane also tilts gradually, and across a critical intermediate state described in Fig. 2 (b), it will begin to intersect the Hilbert polygon. When the system finally reaches the magnetic configuration with vanishing net magnetization, the corresponding ZEZF plane always intersects the Hilbert polygon, as depicted in Fig. 2 (c). To demonstrate the evolution of the geometric con-ditions, we next consider compensated magnetic con-figuration described by hxm = hzm = 0 and hym =
+
+diag (−m, −m, 2m), shown in Fig. 3 (a), which corre-sponds to spin space group 65.1.1.1.L [23]. In this con-figuration, sites 1 and 2 (blue atoms) are related by C2y
+
+without spin rotation, whereas the moment at site 3 (red atoms) is not symmetry-related to those at sites 1 and 2. Because opposite spin sublattices are not symmetry-related, it describes a cFiM in which spin degeneracies are generally not protected by spin space group. Nevertheless, the cFiM model exhibits spin degener-ate nodal lines in its band structure. Fig. 3 (b) shows the energy dispersion of the two lowest bands obtained                                
+
+> FIG. 3. A cFiM model on the kagome lattice. (a) The tight-binding model for a collinear spin-orbit-free mag-net on a kagome lattice with hxm=hzm=diag (0 ,0,0) and
+> hym=diag (−m, −m, 2m).tdescribes the nearest-neighbor hopping strength. (b) Energy dispersion of the two low-est bands obtained from the tight-binding model in (a) with
+> t= 1 .0and m= 0 .4. Red (Blue) band structures are for spin-up (spin-down) bands of H(k), and the black dotted lines indi-cate the band structure of the effective Hamiltonian Heff (k).(c) The spin-up (red) and spin-down (blue) Fermi surfaces for different chemical potentials with the magenta lines rep-resenting the ZEZF momenta. (d) The ZEZF plane (brown) and the Hilbert polygon (green) for a collinear magnet on the kagome lattice, with the normal vector ay= ( −1,−1,2) . (e) The blue line represents the incircle, corresponding to the im-age of all possible linear combinations of the two degenerate eigenstates of H0(k)at the Kpoint.
+
+from both the full tight-binding model and the effective Hamiltonian Hi, eff (k) in Eq. (1). We note that f αi (k)
+
+can approximately describe the strength of spin splitting between the i-th formal Kramers pair at momentum k
+
+[see also Supplementary Material (SM.) S1]. To show the spin degeneracy, we plot the Fermi surfaces of the kagome lattice model for different values of μ in Fig. 3 (c) in which the magenta lines represent the momenta where the EZF vanishes. Notably, for varying μ, the intersections of the two Fermi surfaces consistently lie on these magenta lines. The existence of ZEZF solu-tions can be understood geometrically in R3 space, as explained above. The intersection of the ZEZF plane and the Hilbert triangle appears as a line segment on the triangle [see Fig. 3 (d)]. By following this line, one can trace the degeneracies across the band. Our geometric approach also successfully extends to AMs. For instance, consider hxm = hzm = 0 and hym =
+
+diag (m, 0, −m), for which the system realizes an AM phase: sites 1 and 3 are related by a two-fold spin-space rotation symmetry C2110 , while site 2 remains invari-ant. As a consequence, along the C2110 -invariant lines in momentum space, the Bloch eigenstates can be cho-sen as simultaneous eigenstates of the symmetry opera-tor. This enforces equal weights of the wave function on symmetry-related sublattices, i.e., |ui1(k)|2 = |ui3(k)|2,which directly leads to the vanishing of the EZF, f yi (k) = 
+
+|ui1|2 − | ui3|2 = 0 . From the geometric viewpoint, the 4images of these eigenstates on the C2110 -invariant lines lie along the intersection of the Hilbert polygon and the ZEZF plane where the spin degeneracy exists.           
+
+> FIG. 4. Spin degeneracy observed in compensated fer-rimagnets Mn 3Ga. (a) Crystal structure of Mn 3Ga. Ar-rows indicate magnetic moments. (b) Spin-resolved electronic band structure, spin-resolved density of states (DOS), and energy-integrated DOS of Mn 3Ga without SOC from DFT calculations. For comparison, the lowest two bands from the effective Hamiltonian are overlaid as dashed black lines. (c) ZEZF momenta on the ΓW K and ΓLK planes (orange planes), indicated by magenta lines, obtained from the Heff
+> of the two lowest bands.
+
+Geometric constraint from compensated magnetiza-tion. —Let us describe the geometric meaning of the van-ishing net magnetization condition. For the kagome lattice model, zero net magnetization implies P 
+
+> i
+
+aα =
+
+aα · (1 , 1, 1) = 0 , where aα = ( aα 
+
+> 1
+
+, a α 
+
+> 2
+
+, a α 
+
+> 3
+
+) and (1 , 1, 1) 
+
+are the normal vectors of the ZEZF plane and the Hilbert triangle, respectively. This orthogonality con-dition, aα ⊥ (1 , 1, 1) , implies that the ZEZF plane is perpendicular to the Hilbert triangle. As illustrated in Fig. 3 (d), any plane that is perpendicular to the Hilbert triangle and passes through the origin (0 , 0, 0) 
+
+must also pass through the center of the triangle, located at (1 /3, 1/3, 1/3) . In the kagome lattice, the wave func-tion of the lowest-energy parent band at the Γ point is 
+
+|u1(Γ) ⟩ = (1 /√3, 1/√3, 1/√3) , which maps to the center of the Hilbert triangle due to the three-fold rotation C3z
+
+symmetry. Consequently, a spin degeneracy appears at the Γ point as shown in Fig. 3 (b). The K and K′ points are also invariant under C3z . However, because the low-est parent band is degenerate with another parent band, forming a linear Dirac band crossing, the corresponding eigenstates do not map to a single point but instead lie along the incircle of the Hilbert triangle, as illustrated in Fig. 3 (e) [see details in SM. S2]. More generally, if the nonmagnetic Hamiltonian H0(k) possesses symme-tries that relate all sublattices, these symmetries enforce equal weight of the eigenstate on each sublattice, caus-ing the wave function to map exactly to the center of the Hilbert polygon. In such cases, vanishing net magnetiza-tion becomes a sufficient condition for spin degeneracy, as the degeneracy is realized geometrically at the inter-section between the ZEZF plane and the Hilbert poly-gon. At high-symmetry momenta where these conditions are satisfied, spin degeneracy can therefore emerge even in the absence of explicit spin-space group symmetries in the full magnetic Hamiltonian H(k). This argument generalizes naturally to an N -sublattice system. In SM. S3, we provide a couple of examples to illustrate the ex-tended applications of our theory. 
+
+Spin degeneracy observed in compensated magnets. —As a representative material example, let us consider the bulk Heusler compound Mn 3Ga. Mn 3Ga/Al with par-ent space group F m ¯3m are predicted to be half-metallic cFiMs [7]. The magnetic lattice, described by the spin space group 225.1.1.1.L [23], indicates that the two types of Mn atoms are not symmetry-related. In cubic Heusler compounds, the total magnetic moment m follows the Slater–Pauling rule, an empirical relation that connects the total spin magnetic moment per formula unit with the total number of valence electrons: m = NV − 24 ,where NV is the number of valence electrons per unit cell, and 24 corresponds to twice the number of elec-trons required to fill the minority-spin orbitals to form a closed shell [26–30]. For the cubic phase of Mn 3Ga where 
+
+NV = 24 (21 from three Mn atoms and 3 from Ga), this yields an electron-filling-enforced compensated ferrimag-net with m = 0 . As shown in Fig. 4 (a), this band-filling picture manifests in real space: the two Mn atoms at Wyckoff position 8 c develop local moments that are anti-ferromagnetically aligned with the Mn atom at Wyckoff position 4 b. Our density functional theory (DFT) cal-culations confirm this site-resolved moment cancellation: the central Mn carries –2.880 μB , the two neighboring Mn atoms each carry 1.457 μB , and the Ga atom has –0.041 μB . The total magnetic moment sums to –0.007 
+
+μB , effectively zero. The resulting band structure, displayed in Fig. 4(b), clearly reveals the material’s half-metallic charac-ter. Meanwhile, the energy-integrated density of states (DOS), shown in the right panel of Fig. 4 (b), reveals that despite the overall imbalance between spin-up and spin-down contributions across the energy range, the two spin channels are exactly matched at the Fermi level. This precise compensation ensures exactly zero total magne-tization. Furthermore, we observe that below E = −3
+
+eV, the exchange interactions between the two spin sec-tors are relatively weak compared to the bandwidth, as evidenced by the nearly symmetric spin-polarized DOS, and thus our EZF based approach is well suited. This behavior can be attributed to the fact that these states are predominantly derived from the p orbitals of the Ga atoms. In this energy range, spin degeneracies are ob-served between the two lowest bands along the Γ–K,and Γ–L directions, as highlighted by the green circles 5in Fig. 4 (b), whereas no such degeneracy occurs along 
+
+Γ-X.To clarify this behavior, we construct an effective Hamiltonian Heff by incorporating the EZF into the non-magnetic Hamiltonian [see SM. S4-5 in detail]. While the degeneracy described by Heff forms a nodal surface, for direct comparison with the DFT band structure we eval-uate the ZEZF momenta of the two lowest bands on the 
+
+ΓW K and ΓLK planes. The intersections of the nodal surface with these planes give rise to the magenta lines shown in Fig. 4 (c), which appear as point degeneracies along the Γ–K and Γ–L paths in Fig. 4 (b). In contrast, no such intersections occur along the Γ–X direction, and accordingly no degeneracies are found in either the effec-tive model or the DFT band structure. We note that our EZF framework can also capture symmetry-protected spin degeneracy, as demonstrated in the altermagnetic material RuF 4 (see SM. S6). 
+
+Discussion. —We have demonstrated that the spin splitting and degeneracy structure of compensated fer-rimagnets (cFiMs) can be understood in terms of the geometry of their eigenstates. In the regime where the mean-field exchange coupling to local moments is small compared to the bandwidth, the eigenstates of the non-magnetic Hamiltonian largely determine the spin split-ting in the magnetically ordered phase. In particular, when the net magnetization vanishes, a spin degeneracy emerges within each formal Kramers pair, even in the ab-sence of a symmetry relating the spin-up and spin-down sectors. We note that cFiMs have recently attracted con-siderable attention in spintronics due to their unique combination of antiferromagnetic-like behavior and ferromagnetic-like electrical read/write capabilities [16]. Representative examples include rare-earth–transition-metal alloys [18–20, 31], where high efficiency of spin-orbit torque has been observed. In addition, several Heusler compounds with vanishing net magnetization ex-hibit half-metallicity [7, 12, 32–34], making them promis-ing candidates for large tunnel magnetoresistance and high-performance spintronic devices [35]. Rare-earth iron garnets [17, 31, 36] provide another important class, fea-turing magnetization compensation and favorable prop-erties for spin transport. More recently, filling-enforced cFiMs have also been identified [14], further expanding the landscape of candidate materials. Despite this broad materials platform, a comprehen-sive theoretical framework for understanding spin degen-eracy in cFiMs has remained lacking. Our results provide such a framework by linking spin degeneracy directly to the geometric structure of eigenstates. We anticipate that this perspective will be useful for analyzing spin-dependent phenomena in cFiMs, including the anoma-lous Hall effect [37–39], spin–torque responses [18–20], and the possible emergence of superconductivity driven by complex spin textures [40], analogous to proposals in antiferromagnetic systems [41, 42]. S.L., Y. Q., B.-J.Y. were supported by Samsung Science and Technology Foundation under project no. SSTF-BA2002-06, National Research Foundation of Ko-rea (NRF) funded by the Korean government (MSIT), grant no. RS-2021-NR060087 and RS-2025-00562579, Global Research Development-Center (GRDC) Coopera-tive Hub Program through the NRF funded by the MSIT, grant no. RS-2023-00258359, Global-LAMP program of the NRF funded by the Ministry of Education, grant no. RS-2023-00301976.                                                                
+
+> [1] T. Jungwirth, X. Marti, P. Wadley, and J. Wunder-lich, Antiferromagnetic spintronics, Nature nanotechnol-ogy 11 , 231 (2016). [2] V. Baltz, A. Manchon, M. Tsoi, T. Moriyama, T. Ono, and Y. Tserkovnyak, Antiferromagnetic spintronics, Re-views of Modern Physics 90 , 015005 (2018). [3] I. Mazin (The PRX Editors), Editorial: Altermagnetism—a new punch line of fundamental magnetism, Phys. Rev. X 12 , 040002 (2022). [4] L. Šmejkal, J. Sinova, and T. Jungwirth, Emerging re-search landscape of altermagnetism, Phys. Rev. X 12 ,040501 (2022). [5] R. A. de Groot, Half-metallic magnetism in the 1990s, Physica B: Condensed Matter 172 , 45 (1991). [6] H. van Leuken and R. A. de Groot, Half-metallic antifer-romagnets, Phys. Rev. Lett. 74 , 1171 (1995). [7] S. Wurmehl, H. C. Kandpal, G. H. Fecher, and C. Felser, Valence electron rules for prediction of half-metallic compensated-ferrimagnetic behaviour of heusler com-pounds with complete spin polarization, Journal of Physics: Condensed Matter 18 , 6171 (2006). [8] M. Ogura, Y. Hashimoto, and H. Akai, Half-metallic di-luted antiferromagnetic semiconductors, physica status solidi c 3, 4160 (2006). [9] H. Akai and M. Ogura, Half-metallic diluted antiferro-magnetic semiconductors, Phys. Rev. Lett. 97 , 026401 (2006). [10] R. Stinshoff, A. K. Nayak, G. H. Fecher, B. Balke, S. Ouardi, Y. Skourski, T. Nakamura, and C. Felser, Completely compensated ferrimagnetism and sublattice spin crossing in the half-metallic heusler compound Mn 1.5FeV 0.5Al, Physical Review B 95 , 060410 (2017). [11] S. Geprägs, A. Kehlberger, F. D. Coletta, Z. Qiu, E.-J. Guo, T. Schulz, C. Mix, S. Meyer, A. Kamra, M. Al-thammer, et al., Origin of the spin seebeck effect in com-pensated ferrimagnets, Nature communications 7, 10452 (2016). [12] R. Stinshoff, G. H. Fecher, S. Chadov, A. K. Nayak, B. Balke, S. Ouardi, T. Nakamura, and C. Felser, Half-metallic compensated ferrimagnetism with atunable compensation point over a wide temperature range in the Mn-Fe-V-Al heusler system, AIP Advances 7(2017). [13] S. Semboshi, R. Y. Umetsu, Y. Kawahito, and H. Akai, A new type of half-metallic fully compensated ferrimagnet, Scientific reports 12 , 10687 (2022). [14] Y. Liu, S.-D. Guo, Y. Li, and C.-C. Liu, Two-dimensional fully compensated ferrimagnetism, Phys. Rev. Lett. 134 ,
+
+6
+
+116703 (2025). [15] W. E. Pickett, Single spin superconductivity, Phys. Rev. Lett. 77 , 3185 (1996). [16] J. Finley and L. Liu, Spintronics with compensated fer-rimagnets, Applied Physics Letters 116 , 110501 (2020). [17] E. R. Rosenberg, L. Beran, C. O. Avci, C. Zeledon, B. Song, C. Gonzalez-Fuentes, J. Mendil, P. Gam-bardella, M. Veis, C. Garcia, et al., Magnetism and spin transport in rare-earth-rich epitaxial terbium and eu-ropium iron garnet films, Physical Review Materials 2,094405 (2018). [18] J. Finley and L. Liu, Spin-orbit-torque efficiency in com-pensated ferrimagnetic cobalt-terbium alloys, Physical Review Applied 6, 054001 (2016). [19] L. Caretta, M. Mann, F. Büttner, K. Ueda, B. Pfau, C. M. Günther, P. Hessing, A. Churikova, C. Klose, M. Schneider, et al., Fast current-driven domain walls and small skyrmions in a compensated ferrimagnet, Na-ture nanotechnology 13 , 1154 (2018). [20] K. Cai, Z. Zhu, J. M. Lee, R. Mishra, L. Ren, S. D. Pol-lard, P. He, G. Liang, K. L. Teo, and H. Yang, Ultrafast and energy-efficient spin–orbit torque switching in com-pensated ferrimagnets, Nature Electronics 3, 37 (2020). [21] S. A. Egorov and R. A. Evarestov, Colossal spin split-ting in the monolayer of the collinear antiferromagnet MnF 2, The Journal of Physical Chemistry Letters 12 ,2363 (2021). [22] T. Kawamura, K. Yoshimi, K. Hashimoto, A. Kobayashi, and T. Misawa, Compensated ferrimagnets with colossal spin splitting in organic compounds, Phys. Rev. Lett. 
+
+132 , 156502 (2024). [23] Y. Jiang, Z. Song, T. Zhu, Z. Fang, H. Weng, Z.-X. Liu, J. Yang, and C. Fang, Enumeration of spin-space groups: Toward a complete description of symmetries of magnetic orders, Phys. Rev. X 14 , 031039 (2024). [24] Z. Xiao, J. Zhao, Y. Li, R. Shindou, and Z.-D. Song, Spin space groups: Full classification and applications, Phys. Rev. X 14 , 031037 (2024). [25] X. Chen, J. Ren, Y. Zhu, Y. Yu, A. Zhang, P. Liu, J. Li, Y. Liu, C. Li, and Q. Liu, Enumeration and representa-tion theory of spin space groups, Phys. Rev. X 14 , 031038 (2024). [26] J. C. Slater, The ferromagnetism of nickel. ii. tempera-ture effects, Phys. Rev. 49 , 931 (1936). [27] L. Pauling, The nature of the interatomic forces in met-als, Phys. Rev. 54 , 899 (1938). [28] J. Kübler, First principle theory of metallic magnetism, Physica B+C 127 , 257 (1984), proceedings of the 4th General Conference of the Condensed Matter Division of the EPS. [29] I. Galanakis, P. H. Dederichs, and N. Papanikolaou, Slater-pauling behavior and origin of the half-metallicity of the full-heusler alloys, Phys. Rev. B 66 , 174429 (2002). [30] H.-W. Bang, W. Yoo, C. Kim, S. Lee, J. Gu, Y. Park, K. Lee, and M.-H. Jung, Structural, magnetic, and elec-trical properties of collinear antiferromagnetic heteroepi-taxy cubic Mn 3Ga thin films, Applied Physics Letters 
+
+115 (2019). [31] P. J. Grundy, High density magneto-optical recording materials, Materials Science and Technology (2006). [32] H. Kurt, K. Rode, P. Stamenov, M. Venkatesan, Y.-C. Lau, E. Fonda, and J. Coey, Cubic Mn 2Ga thin films: Crossing the spin gap with ruthenium, Physical review letters 112 , 027201 (2014). [33] Y. He, J. Coey, and Z. Gercsi, A fully compensated ferri-magnetic half metal Co 1−xCr xS2 with curie temperature above room temperature, Journal of Applied Physics 133 
+
+(2023). [34] P. Midhunlal, J. A. Chelvane, U. A. Krishnan, D. Prabhu, R. Gopalan, and N. H. Kumar, Near total magnetic moment compensation with high curie temperature in Mn 2V0.5Co 0.5Z (Z= Ga, Al) heusler alloys, Journal of Physics D: Applied Physics 51 , 075002 (2018). [35] J. Jeong, Y. Ferrante, S. V. Faleev, M. G. Samant, C. Felser, and S. S. Parkin, Termination layer com-pensated tunnelling magnetoresistance in ferrimagnetic heusler compounds with high perpendicular magnetic anisotropy, Nature Communications 7, 10276 (2016). [36] S. Geprägs, A. Kehlberger, F. D. Coletta, Z. Qiu, E.-J. Guo, T. Schulz, C. Mix, S. Meyer, A. Kamra, M. Al-thammer, et al., Origin of the spin seebeck effect in com-pensated ferrimagnets, Nature communications 7, 10452 (2016). [37] T. Matsuda, N. Kanda, T. Higo, N. Armitage, S. Nakat-suji, and R. Matsunaga, Room-temperature terahertz anomalous hall effect in weyl antiferromagnet Mn 3Sn thin films, Nature communications 11 , 909 (2020). [38] S. Nakatsuji, N. Kiyohara, and T. Higo, Large anoma-lous hall effect in a non-collinear antiferromagnet at room temperature, Nature 527 , 212 (2015). [39] N. Kiyohara, T. Tomita, and S. Nakatsuji, Giant anoma-lous hall effect in the chiral antiferromagnet Mn 3Ge, Physical Review Applied 5, 064009 (2016). [40] K. Manna, Y. Sun, L. Muechler, J. Kübler, and C. Felser, Heusler, weyl and berry, Nature Reviews Materials 3, 244 (2018). [41] S. H. Lee, Y. Qian, and B.-J. Yang, Fermi surface spin texture and topological superconductivity in spin-orbit free noncollinear antiferromagnets, Phys. Rev. Lett. 132 ,196602 (2024). [42] R. González-Hernández, L. Šmejkal, K. Výborný, Y. Ya-hagi, J. Sinova, T. c. v. Jungwirth, and J. Železný, Efficient electrical spin splitter based on nonrelativis-tic collinear antiferromagnetism, Phys. Rev. Lett. 126 ,127701 (2021). [43] G. Kresse and J. Furthmüller, Efficiency of ab-initio total energy calculations for metals and semiconductors using a plane-wave basis set, Comput. Mater. Sci. 6, 15 (1996). [44] G. Kresse and J. Furthmüller, Efficient iterative schemes for ab initio total-energy calculations using a plane-wave basis set, Phys. Rev. B 54 , 11169 (1996). [45] J. P. Perdew, K. Burke, and M. Ernzerhof, Generalized gradient approximation made simple, Phys. Rev. Lett. 
+
+77 , 3865 (1996). [46] J. Perdew, K. Burke, and M. Ernzerhof, Perdew, Burke, and Ernzerhof reply, Phys. Rev. Lett. 80 , 891 (1998). [47] S. L. Dudarev, G. A. Botton, S. Y. Savrasov, C. Humphreys, and A. P. Sutton, Electron-energy-loss spectra and the structural stability of nickel oxide: An LSDA+ U study, Physical Review B 57 , 1505 (1998). [48] A. A. Mostofi, J. R. Yates, G. Pizzi, Y.-S. Lee, I. Souza, D. Vanderbilt, and N. Marzari, An updated version of wannier90: A tool for obtaining maximally-localised Wannier functions, Comput. Phys. Commun. 185 , 2309 (2014). [49] M. Milivojević, M. Orozović, S. Picozzi, M. Gmitra, and S. Stavrić, Interplay of altermagnetism and weak ferro-magnetism in two-dimensional RuF 4, 2D Materials 11 ,7
+
+035025 (2024). [50] N. Wang, J. Chen, N. Ding, H. Zhang, S. Dong, and S.-S. Wang, Magneto-optical kerr effect and magnetoelasticity in a weakly ferromagnetic RuF 4 monolayer, Phys. Rev. B 106 , 064435 (2022). 1
+
+# Supplemental Material for “ Geometric Spin Degeneracy in Spin-Orbit-Free Compensated Magnets ” 
+
+In this Supplemental Material, we provide detailed discussions on the results presented in the main text. The sections are organized as follows. 
+
+S1. Method 1
+
+S2. Comparation of H(k) and Heff (k) in Kagome lattice 1
+
+S3. Role of degeneracies in parent bands 2
+
+S4. Extended application of zero net magnetization theory 2
+
+S5. ZEZF analysis on ferrimagnet Mn 3Ga 4
+
+S6. ZEZF analysis on 2D altermagnet RuF 4 5
+
+> S1. Method
+
+Vienna Ab initio Simulation Package (VASP) package [43, 44] based on the density functional theory (DFT) is employed for the first-principles calculations. We obtain the crystal structure of Mn 3Ga from the paper [7]. The generalized gradient approximation (GGA) of the Perdew-Burke-Ernzerhof type is employed for exchange-correlation potential [45, 46]. LSDA [47] is performed to obtain the magnetic electronic band structure of Mn 3Ga and RuF 4. The kinetic energy cutoff was set to 500 eV. For Brillouin zone (BZ) sampling in the self-consistent calculation of Mn 3Ga, a 7 × 7 × 7 k-point mesh was adopted for self-consistent calculations, and 15 × 15 × 15 k-point for calculations of the density of states. For RuF 4, 9 × 9 × 1 k-point mesh was adopted for self-consistent calculations. The Wannier tight-binding model for Mn 3Ga is constructed based on d orbitals of Mn and p orbitals of Ga p-orbitals, while that for RuF 4 is constructed from Ru d orbitals, by the Wannier90 package [48].            
+
+> S2. Comparation of H(k)and Heff (k)in Kagome lattice
+> FIG. S1. Comparation of band structure from H(k)and Heff (k).Red (Blue) band structures are for spin-up (spin-down) bands of H(k), and black bands are the band structure of the effective Hamiltonian Heff (k).
+
+Let’s recall the form of Hamiltonian H(k) = H0(k)⊗σ0 +Hm −μI 2N . H0(k) is the kinetic part of H(k) and describes the electron hopping. Hm = P 
+
+> α=x,y,z
+
+hαm ⊗ σα describes the coupling due to local spin moments at sublattice sites. 2As we mentioned in the main text, the effective Zeeman field (EZF) is an approximation that is valid for relatively small spin splitting compared to the separation between parent bands. As shown in Fig. S1, the band structure from 
+
+Heff (k) well capture the global band structure of H(k). However, there are some discrepancies near the momenta 
+
+K point along M − K and Γ point along M − Γ due to the degeneracy of the parent band. From the result, we found that the Heff (k) from the effective Zeeman field theory underestimates the band gap between different formal Kramers pairs when magnetic exchange interaction is considered. This can be understood because we neglect some coupling terms between different formal Kramers pairs originating from different parent bands in our approximation process. Nevertheless, within each formal Kramers pair, EZF theory can still capture the most important features of spin degeneracy, as we have discussed in the main text. 
+
+> S3. Role of degeneracies in parent bands
+
+Since the EZF is an approximation valid when the spin splitting is small compared to the interband gap of parent bands, deviations between H(k) and the effective Hamiltonian may arise near the degeneracies of parent bands. For instance, in the kagome lattice, as shown in Fig. 3 (b) and Fig. S2, the mismatch between the dispersions obtained from 
+
+H(k) and Heff (k) becomes larger near the Γ and K points. Despite the limitation, the EZF analysis at and near the degeneracies of parent bands still provides useful insights. At a degeneracy, the orthonormal basis for the eigenstates of H0(k) is not uniquly defined. Let us consider an Nd-fold degeneracy at kd. Starting from an arbitrary choice of basis for the degenerate eigenstates |ui(kd)⟩ (i = 1 , 2, ..., N d), infinitely many equivalent bases can be generated by linear combination. When mapped to the space of Vi, the set of such eigenstates forms an ( Nd − 1)-dimensional closed manifold in RN . As an example, the Dirac nodes at the K (K′) point in the band structure of the kagome lattice an incircle on the Hilbert triangle, as shown in Fig. 3 (e). This can be shown as follows: one possible choice of two orthonormal eigenstates of H0(k) at K (K′) is (1 /√2, −1/√2, 0) and (−1/√6, −1/√6, −2/√6) . Their linear combination can be written as cos θ(1 /√2, −1/√2, 0) + sin θ(−1/√6, −1/√6, −2/√6) where θ is real. Mapping this to the Vi space yields (1 + cos 2 θ − √3 cos ϕ sin 2 θ, 1 + cos 2 θ + √3 cos ϕ sin 2 θ, 2 sin 2 θ)/3, which corresponds to the points on the blue circle in Fig. 3 (e). The Vi images of eigenstates at momenta near the Dirac nodes lie close to this incircle. The area enclosed by the incircle ( π/ 6) is larger than the half of the area of the Hilbert triangle ( √3/4). This implies that the ZEZF planes are highly likely intersect with the incircle, making spin degeneracies near the K (K′)points. We emphasize that for any magnet with zero net magnetization, the corresponding ZEZF plane passes not only through the incircle spanned by the degenerate wavefunctions at K and K′, but also through the center of the Hilbert triangle, as illustrated in Fig. 3 (d,e). Consequently, as shown in Fig. 3 (c), the two magenta ZEZF-momenta lines connecting the K and K′ points intersect at the Γ point. These two ZEZF-momenta lines simultaneously connect the K (K′) points and the Γ point, forming two continuous line segments in the Brillouin zone. This connectivity ensures spin degeneracy at any chemical potentials, in sharp contrast to magnets without zero net magnetization, where such degeneracy appears only within limited chemical potential ranges. 
+
+> S4. Extended application of zero net magnetization theory
+
+In this section, we now show that our theory provides a general framework for understanding spin degeneracy in all types of magnetic systems [see Fig. 2 (a-c)]. In this section, we present four additional examples to illustrate extended applications of our theory and examine the consequences when the zero net magnetization condition is violated. We also demonstrate that spin degeneracy can persist under certain conditions, even in the presence of symmetry-breaking perturbations. 
+
+Altermagnet. – Let us first discuss a altermagnet (AM) with hxm = hzm = diag (0 , 0, 0) and hym = diag (m, 0, −m)
+
+as shown in Fig. S2 (a), which is described by spin space group 65.1.2.5.L [23]. In this configuration, the spin-up and -down sectors are related by the operation {Mx|| C2110 }, where Mx and C2110 are operations that act on spin and lattice space, respectively. This symmetry classifies the system as an altermagnet. In such cases, we expect spin degeneracy to emerge at momenta satisfying k = C2110 k. Indeed, our calculations of the Fermi surface and zero effective Zeeman field (ZEZF) solutions confirm this expectation, as illustrated in Fig. S2 (b). The magenta lines indicate the ZEZF momenta coinciding with high symmetric momenta where k = C2110 k.
+
+Near-antiferromagnets : As we discussed in the main text, the ZEZF planes always intersect with Hilbert polygon for antiferromagnet (AFM), AM, and compensated ferrimagnet (cFiM) due to zero net magnetization. Here, we introduce the concept of near-antiferromagnets (near-AFM). A system is classified as a near-antiferromagnet (or antiferro-like magnet) if, for all spin components α, at least one diagonal element aαn is negative. In such cases, the 3ZEZF planes generally intersect with the Hilbert polygon [see Fig. 2 (c)], indicating a high likelihood of spin degeneracy. The near-AFM can be viewed as a perturbation of the antiferromagnet (AFM), where the strict condition of zero net magnetization is slightly broken. As we will show in detail below, spin degeneracy can still persist even if the zero net magnetization condition is slightly violated.                                                    
+
+> FIG. S2. Fermi surfaces and ZEZF momenta of AM and near-AFM. (a) AM lattice model with hxm=hzm=
+> diag (0 ,0,0) and hym=diag (m, 0,−m)at m= 0 .2.(b) Fermi surface and ZEZF momenta for AM. Left and right panels for
+> μ=−2and μ=−3, respectively. (c) Fermi surfaces and ZEZF momenta for near-AFM with hxm=hzm=diag (0 ,0,0) and
+> hym=diag (−m, −m, 2m(1 + δ)) at m= 0 .2and μ=−2. Left and right panels for δ= 0 .2and δ=−0.1, respectively.
+
+Fig. S2 (c) shows two cases with different values of the parameter δ. Compared to the cFiM case shown in the middle panel of Fig. 2 (c), several interesting features emerge. At first glance, the Fermi surfaces in the cFiM and near-AFM cases appear quite similar. However, in the cFiM case, two ZEZF-momenta lines pass through both the 
+
+Γ and K points and intersect at Γ. In contrast, for the near-AFM case, these ZEZF-momenta lines are no longer connected and do not pass through the Γ point. Instead, they either form two closed loops passing through the K/K ′
+
+points and encircling the M points, or form two disconnected lines passing through K/K ′.Interestingly, the connectivity difference between near-AFM and cFiM can be easily interpreted by wavefunction geometric way. As discussed in the main text, the condition of zero net magnetization implies that the normal vector of the EZF plane, denoted as v1, is perpendicular to the vector (1,1,...,1). Consequently, the ZEZF plane, which contains the origin (0,0,...,0) and has normal vector v1, always intersects the center of the Hilbert triangle. In particular, the eigenstate at the Γ point of a cFiM in the kagome lattice is mapped to the center of the Hilbert triangle. Therefore, the ZEZF-momenta lines of a cFiM necessarily pass through the Γ point. In contrast, for a general near-AFM system with nonzero net magnetization, the normal vector of the ZEZF plane, denoted as v2, is no longer perpendicular to (1,1,...,1). Consequently, since v2 deviates from v1, the ZEZF plane defined by normal vector v2 and containing the origin no longer intersects the Γ point. On the other hand, the eigenstates at the K/K ′ points of the kagome lattice are mapped onto the incircle of the Hilbert triangle, as illustrated in Fig. 2 (e). As a result, the ZEZF planes in both cases intersect the incircle, and the corresponding ZEZF-momenta lines necessarily pass through the K/K ′ points. More importantly, this difference in connectivity reflects a key condition for whether spin degeneracy is preserved. When the ZEZF-momenta lines are connected, as in the cFiM case, spin degeneracy is maintained at any chemical potential μ. When they are disconnected, as in near-AFM, spin degeneracy is generally not guaranteed. This distinction is clearly illustrated in Fig. S3: at μ = −3.54 , the spin-up and spin-down Fermi surfaces in near-AFM are not degenerate, whereas they remain degenerate in the cFiM case. 
+
+Near-ferromagnets : If one can find a basis for hαms in which every diagonal element aαn is positive for any one of 
+
+αs, we call it near-ferromagnet (or ferro-like-magnet). Although the EZF planes of such a system are not parallel to the Hilbert polygon, the ferro-like condition forbids the intersection between the EZF planes and the Hilbert polygon due to the limited size of the Hilbert polygon. So similar to ferromagnets, ferro-like-magnets cannot have degeneracy. Interestingly, within our geometric framework for identifying spin degeneracy, a clear phase boundary emerges between ferro-like and antiferro-like magnets. As illustrated in Fig. 2 (b), the three ZEZF planes in the N = 3 case with normal vectors (1 , 0, 0) , (0 , 1, 0) , and (0 , 0, 1) , form this boundary. Ferromagnets and ferro-like-magnets that fall entirely on one side of the boundary do not support spin degeneracy. In contrast, those intersecting the ZEZF planes, including zero net magnets and antiferro-like magnets, are naturally inclined toward spin-degenerate states. This framework provides a new lens for classifying magnetic order: for instance, a canted two-sublattice antiferromagnet with a small net moment may fall into the ferro-like regime. Fig. 2 illustrates this classification, offering a unified geometric view of spin degeneracies across diverse magnetic systems. 
+
+Kagome lattice with non-collinear magnetism: For non-collinear but coplanar configurations, determining 4spin degeneracy requires solving two independent ZEZF-plane equations. In general non-coplanar magnets, three equations (one per spin component) are required. However, particularly when the system has N = 3 sublattices, the three local spin moments are always coplanar [see Fig. S4 (a)] if their total magnetization is zero, because three vectors whose sum is zero must lie on the same plane. Therefore, in the N = 3 case with zero net magnetization, only two ZEZF plane equations are sufficient. As shown in Fig. S4 (b), the intersection of two ZEZF planes and the Hilbert polygon reduces to a single point. For a wave function mapped to this point, the only remaining degree-of-freedom is the U(1) phase rotation of each wave-function component, which preserves their magnitudes. However, in the kagome lattice model, infinitesimal changes in momentum inevitably modify the relative amplitudes of the components. As a result, it is impossible to move continuously in momentum space while preserving the ZEZF condition. Consequently, the spin degeneracy manifests as isolated nodal points as illustrated in Fig. S4 (c). This is in agreement with the observations in Ref. [41].                           
+
+> FIG. S3. Fermi surfaces and ZEZF momenta of near-AFM and cFiM. Fermi surface and ZEZF momenta for hym=
+> hzm=diag (0 ,0,0) and hxm=diag (−m, m, 2m(1 + δ)) at m= 0 .2and μ=−3.54 . (a) and (b) for δ= 0 .2(near-AFM) and δ= 0
+> (cFiM), respectively.
+> S5. ZEZF analysis on ferrimagnet Mn 3Ga
+
+In this section, we demonstrate that our ZEZF theory effectively captures the spin degeneracy of the two lowest bands observed along the Γ–K and Γ–L directions in Fig. 4 (b). We focus on these two bands because their exchange splitting is small compared to their bandwidth, making them well-suited for the ZEZF framework. As illustrated in Fig. S5 (a), these low-energy bands are primarily derived from the p orbitals of Ga. Since Ga is nonmagnetic, the effective exchange field induced by neighboring Mn atoms leads to only a modest band splitting. Fig. S5 (b) demonstrates that the four lowest bands obtained from the effective Hamiltonian successfully capture the spin degeneracies present in the DFT calculations. Let us now demonstrate how these results are derived from our theoretical framework. We begin by constructing a nonmagnetic Wannier Hamiltonian, H0(k), for Mn 3Ga without considering magnetic ordering. This Hamiltonian includes the Mn d orbitals and Ga p orbitals. The corresponding parent band structure is shown in Fig. S6 (a). To incorporate magnetism, we introduce a Zeeman term and build the full spin-polarized Hamiltonian as H(k) = 
+
+H0(k) ⊗ σ0 + Hm, where the magnetic term is written as Hm = P 
+
+> α=x,y,z
+
+hαm ⊗ σα, as introduced earlier. In the case of Mn 3Ga, magnetic moments are applied only to the Mn atoms, with Mn atoms at the 4b and 8c Wyckoff positions carrying opposite spin orientations. The resulting magnetic structure is illustrated in Fig. S6 (b). Although the full band structure obtained from this effective Hamiltonian does not exactly match the DFT result, the bands below E = −3 eV show very good agreement in Fig. S5 (b). By solving the eigenstates of the parent nonmagnetic Hamiltonian H0(k), we obtain the transformation matrix U0(k) = ( |u1(k)⟩, |u2(k)⟩, . . . , |uN (k)⟩) . Using U0(k) and the magnetic field matrix hm, we compute the EZF for each i-th band as fi(k) = 
+
+h
+
+U † 
+
+> 0
+
+(k) hm U0(k)
+
+i
+
+> ii
+
+. The resulting four bands, obtained from the effective Hamiltonian Heff (k) by applying the EZF to the nonmagnetic Hamiltonian 
+
+H0(k), are shown in Fig. S5 (b). Since the band structure obtained from the effective Hamiltonian Heff (k) accurately captures the spin degeneracies observed in the DFT calculations, this indicates that these degeneracies arise from 5
+
+FIG. S4. Coplanar-non-collinear spin-orbit-free on a kagome lattice. (a) A coplanar-non-collinear magnet on the kagome lattice with hxm = diag (−√3/2, √3/2, 0) and hym = diag (−1/2, −1/2, 1) . (b) The ZEZF planes for the non-collinear magnet in (a). The normal vectors of the two ZEZF planes are indicated by blue and orange arrows, respectively. The two planes and the Hilbert polygon intersect at a single point rather than along a line. (c) The band dispersion and spin texture near the Γ point of the lowest band of the non-collinear magnet in (a). The degeneracy between two spin-split bands occurs at 
+
+Γ as a point. 
+
+FIG. S5. Comparison of band structure of Mn 3Ga from DFT and effective Hamiltonian Heff (k). (a) Orbital-resolved band structure of Mn 3Ga considering magnetic ordering. (b) Red (Blue) band structures are for spin-up (spin-down) bands of H(k) directly obtained from DFT, and black bands are the band structure of the effective Hamiltonian Heff (k).
+
+vanishing effective Zeeman fields between the formal Kramers bands. 
+
+S6. ZEZF analysis on 2D altermagnet RuF 4
+
+Here, we consider monolayer RuF 4 as a second example to explicitly demonstrate how our theory accounts for spin degeneracy in another class of compensated magnets–altermagnets. Monolayer RuF 4 is reported as a 2D d-wave altermagnet [49, 50], with spin space group 14.1.2.3.L [23]. As shown in Fig. S7 (a), two Ru atoms with opposite magnetic moments are related by the spatial operator R. Specifically, R can be either {C2x|( 12 , 12 )}, denoting a 180 ◦ rotation about the x axis followed by a translation of ( 12 , 12 ), or {Mx|( 12 , 12 )}, representing a mirror reflection with respect to the plane perpendicular to x combined with the same translation. These symmetries protect spin degeneracies at k = R · k, ie., along Γ–X, X–S, Γ–Y , and Y –S [49], consistent with the DFT results in Fig. S7 (b). We now examine the validity of our EZF theory. To this end, we start from the nonmagnetic Hamiltonian [Fig. S7 (c)] and construct an effective Hamiltonian by adding an EZF term. The effective Hamiltonian for the lowest band of RuF 4 is constructed following the same procedure as for Mn 3Ga. Specifically, after we first obtain the nonmagnetic band structure from DFT and derive the Wannier Hamiltonian H0(k) for the nonmagnetic case, we add a Zeeman term into the Hamiltonian. For RuF 4, the Zeeman term can be written as σx for one Ru and −σx for the other Ru. 6  
+
+> FIG. S6. Effective band structures of Mn 3Ga. (a) Nonmagnetic band structure of Mn 3Ga from Wannier and (b) spin-polarized band structure after adding Zeeman term. Red (Blue) band structures are for spin-up (spin-down) bands.
+
+Thus, the magnetic contribution takes the form Hxm = hxm ⊗ σx with 
+
+hxm = diag(1 , −1, 0, 0, 0, 0, 0, 0, 0, 0) .
+
+We then project it onto the band basis of H0(k). By solving the eigenstates of the parent nonmagnetic Hamiltonian 
+
+H0(k), we obtain the transformation matrix U0(k) = ( |u1(k)⟩, |u2(k)⟩, . . . , |uN (k)⟩) . Using U0(k) and the magnetic field matrix hm, we compute the EZF for each i-th band as f xi (k) = 
+
+h
+
+U † 
+
+> 0
+
+(k) hm U0(k)
+
+i
+
+> ii
+
+. By adding the EZF to the nonmagnetic Hamiltonian, we obtain the effective Hamiltonian Heff = H0(k) ⊗ σ0 + f xi ⊗ σx. The band structure obtained from the effective Hamiltonian Heff for the lowest band is shown as black dashed lines in Fig. S7 (b). We note that the nonmagnetic band structure is very different from the altermagnetic one due to the large exchange splitting. On the other hand, line degeneracies between pairs of parent bands occur along the X–S and S–Y directions [see Fig. S7 (c)]. Despite this limitation, our EZF analysis can still capture some essential degeneracies. As shown by the lowest band in Fig. S7 (b), the corresponding effective band structure (black dashed lines) obtained by introducing an effective Zeeman field into the nonmagnetic Hamiltonian reproduces the spin degeneracies along Γ–X and Γ–Y ,as well as the spin splitting along Γ–S and Y –X.

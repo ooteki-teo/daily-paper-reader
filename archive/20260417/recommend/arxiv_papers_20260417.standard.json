@@ -1,0 +1,1497 @@
+{
+  "mode": "standard",
+  "generated_at": "2026-04-17T20:11:35.481864+00:00",
+  "stats": {
+    "mode": "standard",
+    "tag_count": 1,
+    "deep_divecandidates": 40,
+    "deep_cap": 6,
+    "deep_selected": 25,
+    "quick_candidates": 38,
+    "quick_skim_target": 11,
+    "quick_selected": 11
+  },
+  "deep_dive": [
+    {
+      "id": "2604.07653v1",
+      "source": "arxiv",
+      "title": "Strain continuously rotates the Néel vector in altermagnetic MnTe",
+      "abstract": "Altermagnetism has recently emerged as a distinct class of collinear antiferromagnets that break time-reversal symmetry, exhibiting a host of novel properties. Applied strain has attracted particular attention as a key tuning parameter for altermagnets. Although several experimental studies have demonstrated the preparation of single-domain states through a combination of applied strain and magnetic field, the route to such states remains unclear. Here, we use magneto-optical measurements on single crystals of MnTe under applied strain to show that, in contrast to previous reports, strain acts primarily to rotate the Néel vector L continuously. Since the orientation of L determines the magnetic point group symmetry, this continuous rotation effectively tunes the symmetry and its associated physical properties. Furthermore, we demonstrate that built-in strain in free-standing crystals is sufficient to pin L into continuous textures over millimeter length scales. Together, these results provide guidance for future device design and open the door to leveraging the Néel vector orientation as a tunable degree of freedom in spintronic applications.",
+      "authors": [
+        "Alex Liebman-Peláez",
+        "Jon Kruppe",
+        "Resham Babu Regmi",
+        "Nirmal J. Ghimire",
+        "Yue Sun",
+        "Igor I. Mazin",
+        "Hilary M. L. Noad",
+        "James Analytis",
+        "Veronika Sunko",
+        "Joseph Orenstein"
+      ],
+      "primary_category": "cond-mat.mtrl-sci",
+      "categories": [
+        "cond-mat.mtrl-sci"
+      ],
+      "published": "2026-04-08T23:37:24+00:00",
+      "link": "https://arxiv.org/pdf/2604.07653v1",
+      "tags": [
+        "keyword:交错磁",
+        "query:交错磁"
+      ],
+      "llm_score": 10.0,
+      "llm_evidence_en": "Experimental magneto-optical study of altermagnetic MnTe",
+      "llm_evidence_cn": "交错磁MnTe的磁光实验研究",
+      "llm_evidence": "交错磁MnTe的磁光实验研究",
+      "canonical_evidence": "交错磁MnTe的磁光实验研究",
+      "llm_tldr_en": "Demonstrates continuous rotation of the Neel vector in altermagnetic MnTe via applied strain.",
+      "llm_tldr_cn": "通过磁光测量证明了应变可以连续旋转交错磁体MnTe中的奈尔矢量。",
+      "llm_tldr": "通过磁光测量证明了应变可以连续旋转交错磁体MnTe中的奈尔矢量。",
+      "llm_tags": [
+        "query:q7"
+      ],
+      "matched_query_tag": "query:q7",
+      "matched_query_text": "latest theoretical and experimental studies on altermagnetism",
+      "matched_requirement_id": "req-7",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "id": "2604.07689v1",
+      "source": "arxiv",
+      "title": "Symmetry-guided and AI-accelerated design of intercalated transition metal dichalcogenides for antiferromagnetic spintronics",
+      "abstract": "The advancement of antiferromagnetic spintronics depends on quantum materials with target symmetry-dictated functionalities, however, their systematic discovery is hindered by the immense configurational complexity of the available material space. Here, we introduce a symmetry-guided, AI-accelerated framework incorporating graph neural networks with high generalization ability to overcome this bottleneck. Based on fully intercalated transition metal dichalcogenides (iTMDs) and using only 200 relaxed partially intercalated structures for transfer learning, our model effectively explores more than 100,000 partially intercalated configurations and identifies 35 altermagnetic and 20 $Tτ$-antiferromagnetic ground-state candidates. Interestingly, we show that tuning spin-group symmetry through intercalant arrangement or magnetic ordering realizes a series of d-wave altermagnets in these hexagonal systems with high spin-charge conversion efficiency. Furthermore, we reveal plentiful $Tτ$-antiferromagnets enabling efficient Néel spin-orbit torque switching, driven by giant $T$-odd spin Edelstein susceptibilities. These results establish iTMDs as a versatile platform for spintronics and provide a general strategy for the accelerated design of symmetry-enforced quantum materials.",
+      "authors": [
+        "Yu Pang",
+        "Yue Gu",
+        "Runsheng Zhong",
+        "Liyang Zou",
+        "Xiaobin Chen",
+        "Xiaolong Zou",
+        "Wenhui Duan"
+      ],
+      "primary_category": "cond-mat.mtrl-sci",
+      "categories": [
+        "cond-mat.mtrl-sci"
+      ],
+      "published": "2026-04-09T01:21:38+00:00",
+      "link": "https://arxiv.org/pdf/2604.07689v1",
+      "tags": [
+        "keyword:交错磁",
+        "query:交错磁"
+      ],
+      "llm_score": 10.0,
+      "llm_evidence_en": "AI-accelerated discovery of altermagnetic intercalated transition metal dichalcogenides",
+      "llm_evidence_cn": "AI加速发现交错磁插层过渡金属硫族化合物",
+      "llm_evidence": "AI加速发现交错磁插层过渡金属硫族化合物",
+      "canonical_evidence": "AI加速发现交错磁插层过渡金属硫族化合物",
+      "llm_tldr_en": "Uses a symmetry-guided AI framework to identify 35 new altermagnetic materials in iTMD configurations.",
+      "llm_tldr_cn": "利用对称性引导的AI框架在iTMD配置中识别出35种新型交错磁材料。",
+      "llm_tldr": "利用对称性引导的AI框架在iTMD配置中识别出35种新型交错磁材料。",
+      "llm_tags": [
+        "query:profile-1:composite"
+      ],
+      "matched_query_tag": "query:profile-1:composite",
+      "matched_query_text": "Papers central to 帮我查找交错磁的最新相关论文, especially work that connects or combines: m; t; j; complex spin textures and magnetic structures; spin dynamics in correlated systems; recent research on altermagnetic structures; latest theoretical and experimental studies on altermagnetism; current progress in understanding altermagnetic ordering.",
+      "matched_requirement_id": "req-composite-profile-1",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "id": "2604.09457v1",
+      "source": "arxiv",
+      "title": "Pressure-Induced Superconducting-like Transition in the $\\it d$-wave Altermagnet Candidate CsV$_2$Se$_2$O",
+      "abstract": "Altermagnetism generates exchange-type spin splitting without net magnetization and, in its $\\it d$-wave form, resembles the angular symmetry of unconventional $\\it d$-wave superconductivity. Whether this correspondence bears directly on superconducting instabilities in real correlated materials remains open. Here we study the quasi-two-dimensional vanadium oxychalcogenide CsV$_2$Se$_2$O (CVSO), a square-net $\\it d$-wave altermagnet candidate, through combined experimental and theoretical investigation of its lattice structure, electronic structure and transport properties. At ambient pressure, CVSO is a weakly insulating parent state with a density-wave-like anomaly near 100 K, and its bulk properties are most consistent with a G-type compensated antiferromagnetic background. Under compression, the density-wave-like feature is suppressed, the magnetoresistance evolves from predominantly negative to positive, and a superconducting-like resistive downturn emerges below about 3 K. This low-temperature anomaly is reproducible across samples and pressure media, and is suppressed by magnetic field. Room-temperature X-ray diffraction reveals no symmetry lowering, whereas does show a pronounced compressibility anomaly over the same pressure range. CVSO thus reveals a pressure-tuned phase diagram in which a reconstructed weakly insulating parent state gives way to strange-metal-like transport and superconducting-like behavior, echoing broader phenomenology associated with unconventional superconductors, including cuprates and nickelates.",
+      "authors": [
+        "Yuanzhe Li",
+        "Yilin Han",
+        "Liu Yang",
+        "Wanli He",
+        "Pengda Ye",
+        "Wencheng Huang",
+        "Jiabin Qiao",
+        "Yuemei Li",
+        "Xiaodong Sun",
+        "Tingli He",
+        "Jiayi Han",
+        "Yuxiang Chen",
+        "Ruifeng Tian",
+        "Hao Sun",
+        "Yuwei Liu",
+        "Feng Wu",
+        "Baoshan Song",
+        "Zhengtai Liu",
+        "Mao Ye",
+        "Yaobo Huang",
+        "Kenichi Ozawa",
+        "Ji Dai",
+        "Massimo Tallarida",
+        "Shengtao Cui",
+        "Jie Chen",
+        "Meiling Jin",
+        "Wayne Zheng",
+        "Chaoyu Chen",
+        "Zhiwei Wang",
+        "Zhi-Ming Yu",
+        "Xiang Li",
+        "Yugui Yao"
+      ],
+      "primary_category": "cond-mat.supr-con",
+      "categories": [
+        "cond-mat.supr-con",
+        "cond-mat.mtrl-sci",
+        "cond-mat.str-el"
+      ],
+      "published": "2026-04-10T16:16:07+00:00",
+      "link": "https://arxiv.org/pdf/2604.09457v1",
+      "tags": [
+        "keyword:交错磁",
+        "query:交错磁"
+      ],
+      "llm_score": 10.0,
+      "llm_evidence_en": "d-wave altermagnet candidate CsV2Se2O and its spin splitting",
+      "llm_evidence_cn": "d波交错磁候选材料 CsV2Se2O 及其自旋分裂",
+      "llm_evidence": "d波交错磁候选材料 CsV2Se2O 及其自旋分裂",
+      "canonical_evidence": "d波交错磁候选材料 CsV2Se2O 及其自旋分裂",
+      "llm_tldr_en": "Investigates the d-wave altermagnet candidate CsV2Se2O and its pressure-induced transitions.",
+      "llm_tldr_cn": "研究 d 波交错磁候选材料 CsV2Se2O 的电子结构及压力诱导的超导类转变。",
+      "llm_tldr": "研究 d 波交错磁候选材料 CsV2Se2O 的电子结构及压力诱导的超导类转变。",
+      "llm_tags": [
+        "query:profile-1:composite"
+      ],
+      "matched_query_tag": "query:profile-1:composite",
+      "matched_query_text": "Papers central to 帮我查找交错磁的最新相关论文, especially work that connects or combines: m; t; j; complex spin textures and magnetic structures; spin dynamics in correlated systems; recent research on altermagnetic structures; latest theoretical and experimental studies on altermagnetism; current progress in understanding altermagnetic ordering.",
+      "matched_requirement_id": "req-composite-profile-1",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "id": "2604.10173v1",
+      "source": "arxiv",
+      "title": "Continuous PT-Symmetry Breaking as a Design Variable for Giant Altermagnetic Spin Splitting",
+      "abstract": "Magnetic point-group analysis classifies altermagnets but returns only a binary symmetry verdict, leaving spin-splitting energy (SSE) inaccessible without spin-polarized density functional theory (DFT). This binary ceiling is not fundamental. Sublattice symmetry breaking is promoted here to a continuous, DFT-free scalar -- the Motif Symmetry-Breaking Index (MSBI) -- that quantifies $\\mathcal{PT}$-symmetry breaking between antiparallel magnetic motifs directly from crystal coordinates. SHAP analysis of an XGBoost surrogate trained on 3,851 DFT-labeled binary structures identifies three dominant descriptors: MSBI (symmetry-breaking axis), motif packing fraction MPF (superexchange axis), and the $p/d$ electron ratio (covalency axis), each mapping onto a directly tunable experimental handle. A controlled VO--CrSb comparison within the same P$6_3$/mmc host lattice demonstrates that composition alone boosts SSE sevenfold. Bayesian optimization over this three-axis space, followed by independent DFT validation, recovers $α$-NiS (SSE $= 0.823$\\,eV) as cross-validation against an independent symmetry-based prediction and identifies three previously unrecognized high-SSE candidates -- square-planar FeS (1.297\\,eV), octahedral CoS (1.103\\,eV), and FeAs (1.089\\,eV) -- all matching or exceeding CrSb. Square-planar Fe--S is proposed as a transferable coordination motif for giant altermagnetic spin splitting, advancing altermagnet design from symmetry classification to continuous quantitative optimization.",
+      "authors": [
+        "Kichan Chun",
+        "Gunn Kim"
+      ],
+      "primary_category": "cond-mat.mtrl-sci",
+      "categories": [
+        "cond-mat.mtrl-sci",
+        "cs.LG",
+        "physics.comp-ph"
+      ],
+      "published": "2026-04-11T11:44:59+00:00",
+      "link": "https://arxiv.org/pdf/2604.10173v1",
+      "tags": [
+        "keyword:交错磁",
+        "query:交错磁"
+      ],
+      "llm_score": 10.0,
+      "llm_evidence_en": "Design variable for giant altermagnetic spin splitting using symmetry breaking",
+      "llm_evidence_cn": "利用对称性破缺作为巨交错磁自旋分裂的设计变量",
+      "llm_evidence": "利用对称性破缺作为巨交错磁自旋分裂的设计变量",
+      "canonical_evidence": "利用对称性破缺作为巨交错磁自旋分裂的设计变量",
+      "llm_tldr_en": "Introduces a continuous scalar index to quantify PT-symmetry breaking and predict altermagnetic spin splitting.",
+      "llm_tldr_cn": "引入连续标量指标来量化PT对称性破缺并预测交错磁自旋分裂。",
+      "llm_tldr": "引入连续标量指标来量化PT对称性破缺并预测交错磁自旋分裂。",
+      "llm_tags": [
+        "query:q7"
+      ],
+      "matched_query_tag": "query:q7",
+      "matched_query_text": "latest theoretical and experimental studies on altermagnetism",
+      "matched_requirement_id": "req-7",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "id": "2604.10612v1",
+      "source": "arxiv",
+      "title": "Two-Dimensional Spin-Antiferroelectric Altermagnets with Giant Spin Splitting: From Model to Material Realization",
+      "abstract": "The realization of multiferroic altermagnets featuring giant intrinsic spin splitting, hold great promise for next-generation spintronics. In this work, based on the recently proposed concept of spin-antiferroelectric (spin-AFE), we construct a class of two-dimensional (2D) multiferroic altermagnets, termed 2D spin-antiferroelectric altermagnets (2D spin-AFEAMs), enabling electrical control of spin polarization via a gate field. Furthermore, we propose a general design strategy for constructing 2D spin-AFEAMs with large intrinsic spin splitting. Guided by this strategy, we predict monolayer $(\\mathrm{CoCl})_2\\mathrm{Te}$ and its family materials as potential candidates of 2D spin-AFEAM. We uncover a highly tunable transport regime in monolayer $(\\mathrm{CoCl})_2\\mathrm{Te}$, where the spin current can be switched via the in-plane electric field angle when hole-doped, and via the gate field polarity when electron-doped. Our work enriches the family of 2D multiferroics and provides a blueprint for realizing high-performance, electrically switchable altermagnetic spintronic devices.",
+      "authors": [
+        "Zesen Fu",
+        "Aolin Li",
+        "Wenzhe Zhou",
+        "Fangping Ouyang",
+        "Fawei Zheng",
+        "Yugui Yao"
+      ],
+      "primary_category": "cond-mat.mtrl-sci",
+      "categories": [
+        "cond-mat.mtrl-sci"
+      ],
+      "published": "2026-04-12T12:33:00+00:00",
+      "link": "https://arxiv.org/pdf/2604.10612v1",
+      "tags": [
+        "keyword:交错磁",
+        "query:交错磁"
+      ],
+      "llm_score": 10.0,
+      "llm_evidence_en": "design strategy for 2D spin-antiferroelectric altermagnets with giant spin splitting",
+      "llm_evidence_cn": "具有巨大自旋分裂的二维自旋反铁电交错磁体设计策略",
+      "llm_evidence": "具有巨大自旋分裂的二维自旋反铁电交错磁体设计策略",
+      "canonical_evidence": "具有巨大自旋分裂的二维自旋反铁电交错磁体设计策略",
+      "llm_tldr_en": "Proposes 2D spin-antiferroelectric altermagnets allowing electrical control of giant spin splitting.",
+      "llm_tldr_cn": "提出了允许电控巨大自旋分裂的二维自旋反铁电交错磁体。",
+      "llm_tldr": "提出了允许电控巨大自旋分裂的二维自旋反铁电交错磁体。",
+      "llm_tags": [
+        "query:q8"
+      ],
+      "matched_query_tag": "query:q8",
+      "matched_query_text": "current progress in understanding altermagnetic ordering",
+      "matched_requirement_id": "req-8",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "id": "2604.10659v1",
+      "source": "arxiv",
+      "title": "Surface ferrimagnetic order in RuO2 film",
+      "abstract": "RuO2, widely proposed as a prototypical altermagnet, remains intensely debated with regard to its magnetic nature. Here, we demonstrate that RuO2 is non-magnetic in the bulk, but possesses a spontaneous surface ferrimagnetic order. Using spin- and angle-resolved photoemission spectroscopy, we directly detect a narrow surface state with identical spin polarizations at opposite momenta and at the Brillouin-zone center, incompatible with the spin texture of any altermagnetic order. First-principles calculations identify the non-magnetic bulk state and reveal that the detected magnetism is confined to the fully oxygen-terminated surface, where the charge transfer from Ru to O at surface triggers a ferrimagnetic alignment between adjacent Ru sublattices with antiparallel moments of +0.48 uB and -0.04 uB. Our findings provide a unified explanation reconciling debating reports on the magnetism of RuO2, establishing surface ferrimagnetism as the origin of the observed magnetic signals, and distinguishing it unambiguously from altermagnetism.",
+      "authors": [
+        "Jiahua Lu",
+        "Huangzhaoxiang Chen",
+        "Zhe Zhang",
+        "Xinyue Wang",
+        "Donghang Xie",
+        "Bo Liu",
+        "Liang He",
+        "Yao Li",
+        "Jun Du",
+        "Zhi Wang",
+        "Junwei Luo",
+        "Rong Zhang",
+        "Yongbing Xu",
+        "Xuezhong Ruan"
+      ],
+      "primary_category": "cond-mat.mtrl-sci",
+      "categories": [
+        "cond-mat.mtrl-sci",
+        "cond-mat.other"
+      ],
+      "published": "2026-04-12T14:22:29+00:00",
+      "link": "https://arxiv.org/pdf/2604.10659v1",
+      "tags": [
+        "keyword:交错磁",
+        "query:交错磁"
+      ],
+      "llm_score": 10.0,
+      "llm_evidence_en": "RuO2 as a prototypical altermagnet and its surface magnetic nature",
+      "llm_evidence_cn": "RuO2 作为典型交错磁体及其表面磁性本质",
+      "llm_evidence": "RuO2 作为典型交错磁体及其表面磁性本质",
+      "canonical_evidence": "RuO2 作为典型交错磁体及其表面磁性本质",
+      "llm_tldr_en": "Reveals that RuO2 is bulk non-magnetic but has surface ferrimagnetism, challenging its altermagnetic status.",
+      "llm_tldr_cn": "揭示 RuO2 体相无磁性但表面存在亚铁磁序，对其交错磁性本质提出了挑战。",
+      "llm_tldr": "揭示 RuO2 体相无磁性但表面存在亚铁磁序，对其交错磁性本质提出了挑战。",
+      "llm_tags": [
+        "query:q6"
+      ],
+      "matched_query_tag": "query:q6",
+      "matched_query_text": "recent research on altermagnetic structures",
+      "matched_requirement_id": "req-6",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "id": "2604.10768v1",
+      "source": "arxiv",
+      "title": "Structural Reconstruction Induced d-wave Altermagnetism in $\\mathrm{V_{2}X_2}$ ($X = \\mathrm{S, Se}$) monolayer",
+      "abstract": "Altermagnetism, featuring momentum-dependent spin splitting without relativistic effects, holds promise for next generation spintronic applications. In this study, we investigate the momentum-dependent spin splitting in the electronic band structure of a reconstructed $V_{2}X_{2}$ ($X=\\mathrm{S, Se}$) lattice, achieved by introducing chalcogen cluster vacancies in trigonal $VX_{2}$ ($X=\\mathrm{S, Se}$) monolayer. The reconstructed structure forms an inverse Lieb lattice of vanadium atoms, comprising two magnetic sublattices related by $C_{4}$ lattice rotational symmetry and $C_{2}$ magnetic symmetry, resulting in zero net magnetization despite the breaking of time-reversal ($\\mathcal{T}$) and combined inversion time-reversal ($\\mathcal{PT}$) symmetries. The electronic structure exhibits strongly anisotropic spin splitting on the Fermi surface, pronounced along $Γ\\!-\\!X$ and $Γ\\!-\\!Y$ and vanishing near $M$ point, revealing symmetry-enforced nodal features. The spin splitting follows a fourfold angular modulation consistent with $d_{x^{2}-y^{2}}$-type altermagnetism, while the real-space spin density exhibits a corresponding $d$-wave pattern localized on vanadium sites. Our findings demonstrate that vacancy-driven reconstruction provides an effective route realizing two-dimensional d-wave altermagnets, opening a new avenue for advanced spintronic technologies.",
+      "authors": [
+        "Geethanjali S",
+        "Sasmita Mohakud"
+      ],
+      "primary_category": "cond-mat.str-el",
+      "categories": [
+        "cond-mat.str-el",
+        "cond-mat.mes-hall",
+        "cond-mat.mtrl-sci"
+      ],
+      "published": "2026-04-12T18:34:42+00:00",
+      "link": "https://arxiv.org/pdf/2604.10768v1",
+      "tags": [
+        "keyword:交错磁",
+        "query:交错磁"
+      ],
+      "llm_score": 10.0,
+      "llm_evidence_en": "d-wave altermagnetism in reconstructed V2X2 monolayer",
+      "llm_evidence_cn": "重构V2X2单层中的d波交错磁性",
+      "llm_evidence": "重构V2X2单层中的d波交错磁性",
+      "canonical_evidence": "重构V2X2单层中的d波交错磁性",
+      "llm_tldr_en": "Identifies d-wave altermagnetism in reconstructed V2X2 monolayers induced by chalcogen cluster vacancies.",
+      "llm_tldr_cn": "研究了由硫族簇空位诱导的重构V2X2单层中的d波交错磁性。",
+      "llm_tldr": "研究了由硫族簇空位诱导的重构V2X2单层中的d波交错磁性。",
+      "llm_tags": [
+        "query:q6"
+      ],
+      "matched_query_tag": "query:q6",
+      "matched_query_text": "recent research on altermagnetic structures",
+      "matched_requirement_id": "req-6",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "id": "2604.11361v1",
+      "source": "arxiv",
+      "title": "Ultrafast ghost Hall states in a 2d altermagnet",
+      "abstract": "Two-dimensional materials that exhibit optically active spin and valley degrees of freedom represent one of the most fascinating -- and potentially most technologically useful -- platforms for the ultrafast interaction of light and matter. Here we show, via the example of Cr$_2$SO, that two dimensional altermagnets host valley states controllable by femtosecond laser light: linearly polarized light pulses excite charge at one of two inequivalent valleys, with which valley charge is excited at determined by the polarization vector direction. This underpins a rich spin and valley physics including: (i) valleytronics $-$ the generation of nearly 100$\\%$ spin polarized valley currents, as well as (ii) a \"ghost Hall\" effect $-$ the ultrafast creation of states in which spin and charge currents are orthogonal without invoking Hall physics. Our findings establish 2d altermagents as a platform providing a new route for the control of spin- and charge currents at ultrafast times.",
+      "authors": [
+        "Ruikai Wu",
+        "Deepika Gill",
+        "Sangeeta Sharma",
+        "Sam Shallcross"
+      ],
+      "primary_category": "cond-mat.mes-hall",
+      "categories": [
+        "cond-mat.mes-hall",
+        "cond-mat.mtrl-sci",
+        "cond-mat.other",
+        "physics.comp-ph",
+        "quant-ph"
+      ],
+      "published": "2026-04-13T12:01:57+00:00",
+      "link": "https://arxiv.org/pdf/2604.11361v1",
+      "tags": [
+        "keyword:交错磁",
+        "query:交错磁"
+      ],
+      "llm_score": 10.0,
+      "llm_evidence_en": "Ultrafast interaction of light and matter in 2D altermagnets",
+      "llm_evidence_cn": "二维交错磁体中光与物质的超快相互作用",
+      "llm_evidence": "二维交错磁体中光与物质的超快相互作用",
+      "canonical_evidence": "二维交错磁体中光与物质的超快相互作用",
+      "llm_tldr_en": "Demonstrates ultrafast control of valley states and ghost Hall effects in 2D altermagnets using laser pulses.",
+      "llm_tldr_cn": "展示了利用激光脉冲在二维交错磁体中超快控制谷态和幽灵霍尔效应。",
+      "llm_tldr": "展示了利用激光脉冲在二维交错磁体中超快控制谷态和幽灵霍尔效应。",
+      "llm_tags": [
+        "query:q7"
+      ],
+      "matched_query_tag": "query:q7",
+      "matched_query_text": "latest theoretical and experimental studies on altermagnetism",
+      "matched_requirement_id": "req-7",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "id": "2604.12695v1",
+      "source": "arxiv",
+      "title": "Robust realization of spin-polarized specular Andreev reflection in V$_2$O-based altermagnets",
+      "abstract": "We theoretically investigate charge transport in a junction between a conventional superconductor and a V$_2$O-based altermagnet exhibiting distinctive spin-split quasi-one-dimensional Fermi surfaces. The altermagnet is described by a microscopically motivated six-orbital model that incorporates sublattice degrees of freedom associated with both V and O sites. Based on calculations performed under various boundary conditions, we demonstrate the robust emergence of specular Andreev reflection with a distinctive spin polarization. Furthermore, we propose an efficient multiterminal setup to detect this specular Andreev reflection through nonlocal conductance measurements. Our results establish V$_2$O-based altermagnets as a promising platform for realizing spin-resolved Cooper pair splitting, which is essential for generating energy-entangled electron pairs.",
+      "authors": [
+        "Yutaro Nagae",
+        "Andreas P. Schnyder",
+        "Satoshi Ikegaya"
+      ],
+      "primary_category": "cond-mat.supr-con",
+      "categories": [
+        "cond-mat.supr-con",
+        "cond-mat.mes-hall"
+      ],
+      "published": "2026-04-14T13:05:36+00:00",
+      "link": "https://arxiv.org/pdf/2604.12695v1",
+      "tags": [
+        "keyword:交错磁",
+        "query:交错磁"
+      ],
+      "llm_score": 10.0,
+      "llm_evidence_en": "theoretical investigation of charge transport in V2O-based altermagnets",
+      "llm_evidence_cn": "V2O基交错磁体中电荷输运的理论研究",
+      "llm_evidence": "V2O基交错磁体中电荷输运的理论研究",
+      "canonical_evidence": "V2O基交错磁体中电荷输运的理论研究",
+      "llm_tldr_en": "Demonstrates robust spin-polarized specular Andreev reflection in V2O-based altermagnets for spintronics.",
+      "llm_tldr_cn": "证明了V2O基交错磁体中稳健的自旋极化镜面安德烈夫反射，可用于自旋电子学。",
+      "llm_tldr": "证明了V2O基交错磁体中稳健的自旋极化镜面安德烈夫反射，可用于自旋电子学。",
+      "llm_tags": [
+        "query:q7"
+      ],
+      "matched_query_tag": "query:q7",
+      "matched_query_text": "latest theoretical and experimental studies on altermagnetism",
+      "matched_requirement_id": "req-7",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "id": "2604.12726v1",
+      "source": "arxiv",
+      "title": "Third-order optical response in d-wave altermagnets: Analytical and numerical results from microscopic model",
+      "abstract": "Altermagnets represent a novel category of magnetic materials characterized by zero net magnetization yet featuring spin-split band structures, and they demonstrate distinctive orbital-spin locking phenomena. Commencing from the minimal multi-orbital tight-binding Hamiltonian of d-wave altermagnets, we conduct an analysis of the general formulas for the third-order injection and shift currents. These currents are solely determined by the quantum metric and quantum connection, being free from Berry curvature contamination. In the ideal scenario where the $δ$-bond hopping $V_δ$ approaches zero ($V_δ= 0$), we derive closed-form analytical solutions for the third-order photoconductivities. For the general situation with a finite value of $V_δ$, we present a perturbative analytical solution within the limit of $V_δ\\ll V_π$, and this solution is verified through numerical calculations. Our research establishes a comprehensive theoretical description of the third-order optospintronic responses in d-wave altermagnets based on a microscopic model. Moreover, it offers a viable approach for the experimental observation of pure quantum geometric effects.",
+      "authors": [
+        "Shihao Zhang"
+      ],
+      "primary_category": "cond-mat.mes-hall",
+      "categories": [
+        "cond-mat.mes-hall",
+        "cond-mat.mtrl-sci"
+      ],
+      "published": "2026-04-14T13:41:41+00:00",
+      "link": "https://arxiv.org/pdf/2604.12726v1",
+      "tags": [
+        "keyword:交错磁",
+        "query:交错磁"
+      ],
+      "llm_score": 10.0,
+      "llm_evidence_en": "Third-order optical response in d-wave altermagnets from microscopic model",
+      "llm_evidence_cn": "基于微观模型的d波交错磁体三阶光学响应",
+      "llm_evidence": "基于微观模型的d波交错磁体三阶光学响应",
+      "canonical_evidence": "基于微观模型的d波交错磁体三阶光学响应",
+      "llm_tldr_en": "Analyzes third-order injection and shift currents in d-wave altermagnets using a tight-binding model.",
+      "llm_tldr_cn": "利用紧束缚模型分析了d波交错磁体中的三阶注入电流和位移电流。",
+      "llm_tldr": "利用紧束缚模型分析了d波交错磁体中的三阶注入电流和位移电流。",
+      "llm_tags": [
+        "query:profile-1:composite"
+      ],
+      "matched_query_tag": "query:profile-1:composite",
+      "matched_query_text": "Papers central to 帮我查找交错磁的最新相关论文, especially work that connects or combines: m; t; j; complex spin textures and magnetic structures; spin dynamics in correlated systems; recent research on altermagnetic structures; latest theoretical and experimental studies on altermagnetism; current progress in understanding altermagnetic ordering.",
+      "matched_requirement_id": "req-composite-profile-1",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "id": "2604.12824v1",
+      "source": "arxiv",
+      "title": "All optical ultrafast pure spin current in the altermagnet Cr$_2$SO",
+      "abstract": "All-optical generation of pure spin current -- the flow of spin in the absence of a corresponding charge flow -- relies on a symmetry based compensation of valley charge. The 2d $d$-wave altermagnets, ideal spintronics materials due to a very low spin-orbit coupling, possess a magnetic point group and highly anisotropic valley manifolds that would appear to preclude such current compensation, excluding them as materials for the ultrafast generation of pure spin current. Here we show that infra-red valley excitation combined with a THz pulse envelope allows the generation of large and nearly 100\\% pure spin currents in the altermagnet Cr$_2$SO. Our approach is based on a valley selection rule coupling linearly polarized light to spin opposite valleys, along with the intrinsic momentum shift that a co-occurring THz pulse imbues a valley spin excitation with. These results thus provide a practical and all-optical route to the generation of pure spin current in $d$-wave 2d altermagnets, opening a route to lightwave control of spin in an environment with very low intrinsic spin mixing.",
+      "authors": [
+        "Deepika Gill",
+        "Ruikai Wu",
+        "Peter Elliott",
+        "Sangeeta Sharma",
+        "Sam Shallcross"
+      ],
+      "primary_category": "cond-mat.mtrl-sci",
+      "categories": [
+        "cond-mat.mtrl-sci",
+        "cond-mat.other",
+        "physics.comp-ph",
+        "physics.optics",
+        "quant-ph"
+      ],
+      "published": "2026-04-14T14:48:12+00:00",
+      "link": "https://arxiv.org/pdf/2604.12824v1",
+      "tags": [
+        "keyword:交错磁",
+        "query:交错磁"
+      ],
+      "llm_score": 10.0,
+      "llm_evidence_en": "Ultrafast pure spin current generation in altermagnet Cr2SO",
+      "llm_evidence_cn": "交错磁体Cr2SO中超快纯自旋流的产生",
+      "llm_evidence": "交错磁体Cr2SO中超快纯自旋流的产生",
+      "canonical_evidence": "交错磁体Cr2SO中超快纯自旋流的产生",
+      "llm_tldr_en": "Proposes a method to generate 100% pure spin currents in d-wave altermagnets using optical pulses.",
+      "llm_tldr_cn": "提出了一种利用光脉冲在d波交错磁体中产生100%纯自旋流的方法。",
+      "llm_tldr": "提出了一种利用光脉冲在d波交错磁体中产生100%纯自旋流的方法。",
+      "llm_tags": [
+        "query:q6"
+      ],
+      "matched_query_tag": "query:q6",
+      "matched_query_text": "recent research on altermagnetic structures",
+      "matched_requirement_id": "req-6",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "id": "2604.13893v1",
+      "source": "arxiv",
+      "title": "Giant Room-Temperature Third-Order Electrical Transport in a Thin-Film Altermagnet Candidate",
+      "abstract": "Quantum geometry, a quantum mechanical quantity comprised of Berry curvature and quantum metric, describes the geometric structure of the electronic bands in solids. The correlation between nontrivial quantum geometry and quantum materials leads to new findings in condensed matter systems. Here we demonstrate that altermagnets, with spontaneously broken time-reversal (T)- half-lattice-translation and parity-time symmetry, host both T-odd and T-even quantum geometric quantities that simultaneously manifest themselves despite the vanishing net magnetization. Consequently, giant room-temperature third-order electrical transport responses with sizable quantum geometric contributions are observed in (101)-oriented RuO2 thin films, an altermagnetic candidate; in particular, the third-order Hall effect is intimately correlated with altermagnetic order and can serve as a promising tool for detecting the Neel vector. Our work not only supports the existence of altermagnetism in 8-nm-thick RuO2 thin films, but also shows altermagnets as a versatile platform for exploring quantum geometry and constructing quantum electronic and spintronic devices.",
+      "authors": [
+        "Hongyu Chen",
+        "Peixin Qin",
+        "Ziang Meng",
+        "Guojian Zhao",
+        "Kai Chen",
+        "Chuanying Xi",
+        "Xiaoning Wang",
+        "Li Liu",
+        "Zhiyuan Duan",
+        "Sixu Jiang",
+        "Jingyu Li",
+        "Xiaoyang Tan",
+        "Jinghua Liu",
+        "Jianfeng Wang",
+        "Huiying Liu",
+        "Chengbao Jiang",
+        "Zhiqi Liu"
+      ],
+      "primary_category": "cond-mat.mes-hall",
+      "categories": [
+        "cond-mat.mes-hall",
+        "cond-mat.mtrl-sci",
+        "cond-mat.str-el",
+        "cond-mat.supr-con",
+        "physics.app-ph"
+      ],
+      "published": "2026-04-15T14:00:51+00:00",
+      "link": "https://arxiv.org/pdf/2604.13893v1",
+      "tags": [
+        "keyword:交错磁",
+        "query:交错磁"
+      ],
+      "llm_score": 10.0,
+      "llm_evidence_en": "experimental study of third-order electrical transport in RuO2 altermagnet candidate",
+      "llm_evidence_cn": "RuO2交错磁候选材料中三阶电输运的实验研究",
+      "llm_evidence": "RuO2交错磁候选材料中三阶电输运的实验研究",
+      "canonical_evidence": "RuO2交错磁候选材料中三阶电输运的实验研究",
+      "llm_tldr_en": "Observes giant room-temperature third-order transport in RuO2 thin films driven by altermagnetic symmetry.",
+      "llm_tldr_cn": "在RuO2薄膜中观察到由交错磁对称性驱动的巨大室温三阶输运响应。",
+      "llm_tldr": "在RuO2薄膜中观察到由交错磁对称性驱动的巨大室温三阶输运响应。",
+      "llm_tags": [
+        "query:q7"
+      ],
+      "matched_query_tag": "query:q7",
+      "matched_query_text": "latest theoretical and experimental studies on altermagnetism",
+      "matched_requirement_id": "req-7",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "id": "2604.14776v1",
+      "source": "arxiv",
+      "title": "Spin-Valley-Mismatched Altermagnet for Giant Tunneling Magnetoresistance",
+      "abstract": "Altermagnet-based heterojunctions have demonstrated magnetoresistive effects in experiments, however, a predictive theoretical model for non-ferromagnetic structures has remained elusive. In this work, we develop a tunneling-based spin-transport theory that explicitly incorporates the transverse-wavevector ($\\bf{k}_\\|$)-dependent spin polarization of an altermagnet's transport channels, enabling the prediction of giant tunneling magnetoresistance (TMR). Based on the theory, we predict that the altermagnet KV$_2$Se$_2$O can reach the extreme limit of magnetoresistance. By performing first-principles transport calculations, we verify that magnetic tunnel junctions using the metallic KV$_2$Se$_2$O as the electrodes and few-layer MgO as the spacer exhibit zero-bias magnetoresistance larger than $7.57\\times10^7$\\%, which is robust against the bias and thickness of the spacer. Our research provides a quantitative design principle for next-generation spin-electronic devices and establishes KV$_2$Se$_2$O/MgO/KV$_2$Se$_2$O as a leading candidate material system for room-temperature ultra-high-density non-volatile memory.",
+      "authors": [
+        "Kun Yan",
+        "Yizhi Hu",
+        "Wei-Hua Xiao",
+        "Xiaolong Zou",
+        "Xiaobin Chen",
+        "Wenhui Duan"
+      ],
+      "primary_category": "cond-mat.mtrl-sci",
+      "categories": [
+        "cond-mat.mtrl-sci"
+      ],
+      "published": "2026-04-16T08:38:35+00:00",
+      "link": "https://arxiv.org/pdf/2604.14776v1",
+      "tags": [
+        "keyword:交错磁",
+        "query:交错磁"
+      ],
+      "llm_score": 10.0,
+      "llm_evidence_en": "Theoretical model for altermagnet-based tunneling magnetoresistance",
+      "llm_evidence_cn": "交错磁体隧道磁阻的理论模型",
+      "llm_evidence": "交错磁体隧道磁阻的理论模型",
+      "canonical_evidence": "交错磁体隧道磁阻的理论模型",
+      "llm_tldr_en": "Develops a spin-transport theory for altermagnets to predict giant tunneling magnetoresistance in KV2Se2O.",
+      "llm_tldr_cn": "开发了交错磁体自旋输运理论，预测了KV2Se2O中的巨隧道磁阻效应。",
+      "llm_tldr": "开发了交错磁体自旋输运理论，预测了KV2Se2O中的巨隧道磁阻效应。",
+      "llm_tags": [
+        "query:q7"
+      ],
+      "matched_query_tag": "query:q7",
+      "matched_query_text": "latest theoretical and experimental studies on altermagnetism",
+      "matched_requirement_id": "req-7",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "id": "2604.14817v1",
+      "source": "arxiv",
+      "title": "Layer-dependent quantum transport in KV2Se2O-based altermagnetic tunnel junctions",
+      "abstract": "Magnetic tunnel junction (MTJ) is the key component to enable information access and increasing number of MTJs is integrated to develop high-density spintronic devices. However, continuous miniaturization of the conventional MTJs is hindered by stray magnetic fields. Altermagnets, combining the advantages of both ferromagnets and antiferromagnets, provide a promising alternative to fabricate versatile MTJs with exotic properties, such as giant spin splitting, high intrinsic frequency, and absence of stray fields. Inspired by the altermagnetic metal candidate KV2Se2O reported recently, we design an altermagnetic tunnel junction (AMTJ) based on KV2Se2O/SrTiO3/KV2Se2O. Using density functional theory combined with non-equilibrium Green's function, we investigate the layer-dependent quantum transport properties and the tunneling magnetoresistance (TMR) of such AMTJ device. Our calculated results reveal that the transmission of the AMTJ device exhibits a pronounced oscillation behavior dependent on the number of layers of the SrTiO3 semiconductor, which is attributed to the interface configuration determined by parity of the layer number. In odd-layer devices, the electron-rich O-Se interface exhibits a smooth effective potential and enables transverse momentum (k||) transport channels, leading to enhanced transmission. In contrast, in even-layer devices, the Ti-Se interface presents a steeper effective potential, impeding quantum transport through transverse momentum (k||) channels. A giant TMR of 4.6*10^7% is predicted to be realized by using a 4-layer SrTiO3. Our findings not only provide physical understanding relevant to the quantum transport in AMTJs, but also unveil that the barrier interface engineering is a strategy to tune the magnetoelectric performance.",
+      "authors": [
+        "Yue Zhao",
+        "Bin Xiao",
+        "Jiawei Liu",
+        "Hui Zeng",
+        "Jun Zhao"
+      ],
+      "primary_category": "cond-mat.mes-hall",
+      "categories": [
+        "cond-mat.mes-hall",
+        "cond-mat.mtrl-sci"
+      ],
+      "published": "2026-04-16T09:37:01+00:00",
+      "link": "https://arxiv.org/pdf/2604.14817v1",
+      "tags": [
+        "keyword:交错磁",
+        "query:交错磁"
+      ],
+      "llm_score": 10.0,
+      "llm_evidence_en": "altermagnetic tunnel junctions based on KV2Se2O",
+      "llm_evidence_cn": "基于KV2Se2O的交错磁隧道结",
+      "llm_evidence": "基于KV2Se2O的交错磁隧道结",
+      "canonical_evidence": "基于KV2Se2O的交错磁隧道结",
+      "llm_tldr_en": "Designs and simulates altermagnetic tunnel junctions using the candidate material KV2Se2O.",
+      "llm_tldr_cn": "利用候选材料KV2Se2O设计并模拟了交错磁隧道结。",
+      "llm_tldr": "利用候选材料KV2Se2O设计并模拟了交错磁隧道结。",
+      "llm_tags": [
+        "query:q7"
+      ],
+      "matched_query_tag": "query:q7",
+      "matched_query_text": "latest theoretical and experimental studies on altermagnetism",
+      "matched_requirement_id": "req-7",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "id": "2604.14947v1",
+      "source": "arxiv",
+      "title": "Magneto-optical imaging of macroscopic altermagnetic domains in MnTe",
+      "abstract": "Altermagnets are a new class of magnets accompanying global time-reversal symmetry breaking (TRSB) without net magnetization. The TRSB results in formation of novel altermagnetic domains. Features of altermagnetic domains, in particular their responses to external stimuli, are essentially important but yet unexplored. Here, we report visualization of bulk altermagnetic domains in MnTe based on scanning magneto-optical Kerr-effect microscopy using telecom infrared wavelength. We found two distinct TRSB domains with large Kerr rotations that do not scale with its tiny bulk magnetization. We also revealed controllability and stability of domains against magnetic or thermal perturbations. Our first observation of altermagnetic domains using a laboratory-scale simple optical technique showing their movable nature provide firm bases for future fundamental and application studies of altermagnets.",
+      "authors": [
+        "Gakuto Watanabe",
+        "Soichiro Yamane",
+        "Ryotaro Maki",
+        "Atsutoshi Ikeda",
+        "Akimitsu Kirikoshi",
+        "Junya Otsuki",
+        "Takuya Aoyama",
+        "Kenya Ohgushi",
+        "Shingo Yonezawa"
+      ],
+      "primary_category": "cond-mat.mtrl-sci",
+      "categories": [
+        "cond-mat.mtrl-sci",
+        "cond-mat.other",
+        "cond-mat.str-el",
+        "physics.app-ph",
+        "physics.optics"
+      ],
+      "published": "2026-04-16T12:44:01+00:00",
+      "link": "https://arxiv.org/pdf/2604.14947v1",
+      "tags": [
+        "keyword:交错磁",
+        "query:交错磁"
+      ],
+      "llm_score": 10.0,
+      "llm_evidence_en": "Experimental visualization of macroscopic altermagnetic domains in MnTe",
+      "llm_evidence_cn": "MnTe中宏观交错磁畴的实验可视化",
+      "llm_evidence": "MnTe中宏观交错磁畴的实验可视化",
+      "canonical_evidence": "MnTe中宏观交错磁畴的实验可视化",
+      "llm_tldr_en": "Reports the first magneto-optical imaging of bulk altermagnetic domains and their response to perturbations.",
+      "llm_tldr_cn": "首次报道了体相交错磁畴的磁光成像及其对扰动的响应。",
+      "llm_tldr": "首次报道了体相交错磁畴的磁光成像及其对扰动的响应。",
+      "llm_tags": [
+        "query:q8"
+      ],
+      "matched_query_tag": "query:q8",
+      "matched_query_text": "current progress in understanding altermagnetic ordering",
+      "matched_requirement_id": "req-8",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "id": "2604.15204v1",
+      "source": "arxiv",
+      "title": "Abrikosov vortices in altermagnetic superconductors",
+      "abstract": "We study the penetration of an external magnetic field into a superconductor with collinear $d$-wave altermagnetic order. We demonstrate that instead of circular Abrikosov vortices, the magnetic field generates elliptical vortices with their major axis oriented along one of the crystallographic axis, along which the altermagnetic spin splitting is maximal. Upon reversing the component of the magnetic field parallel to the altermagnetic Néel vector, the vortices reorient towards the other crystallographic axis with maximal spin splitting. We demonstrate that this effect originates from an altermagnetism-induced anisotropy of the effective mass, which is controlled by the coupling between the external magnetic field and the Néel vector. As a consequence, a superconducting film hosting such altermagnetic order and containing pinning defects exhibits nonreciprocal magnetization curves under reversal of the magnetic field parallel to its Néel vector, due to the different vortex--vortex interaction energies for the two field orientations. Our results broaden the understanding of the coexistence of altermagnetism and superconductivity, both in materials hosting these orders intrinsically or in superconductor/altermagnet hybrid structures, and open new experimental avenues for exploring supercurrent vortices in these systems.",
+      "authors": [
+        "A. A. Mazanik",
+        "F. S. Bergeret"
+      ],
+      "primary_category": "cond-mat.supr-con",
+      "categories": [
+        "cond-mat.supr-con"
+      ],
+      "published": "2026-04-16T16:30:47+00:00",
+      "link": "https://arxiv.org/pdf/2604.15204v1",
+      "tags": [
+        "keyword:交错磁",
+        "query:交错磁"
+      ],
+      "llm_score": 10.0,
+      "llm_evidence_en": "Theoretical study of vortices in altermagnetic superconductors",
+      "llm_evidence_cn": "交错磁超导中涡旋的理论研究",
+      "llm_evidence": "交错磁超导中涡旋的理论研究",
+      "canonical_evidence": "交错磁超导中涡旋的理论研究",
+      "llm_tldr_en": "Predicts elliptical Abrikosov vortices in altermagnetic superconductors due to spin-splitting induced anisotropy.",
+      "llm_tldr_cn": "预测了交错磁超导体中由于自旋分裂诱导的各向异性而产生的椭圆形阿布里科索夫涡旋。",
+      "llm_tldr": "预测了交错磁超导体中由于自旋分裂诱导的各向异性而产生的椭圆形阿布里科索夫涡旋。",
+      "llm_tags": [
+        "query:q7"
+      ],
+      "matched_query_tag": "query:q7",
+      "matched_query_text": "latest theoretical and experimental studies on altermagnetism",
+      "matched_requirement_id": "req-7",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "id": "2604.08907v1",
+      "source": "arxiv",
+      "title": "Higher-order topological insulators in two-dimensional antiferromagnetic and altermagnetic chromium-based group-IV chalcogenides",
+      "abstract": "Based on first-principles calculations combined with theoretical analysis, we identify a family of monolayer chromium-based group-IV chalcogenides as a new class of two-dimensional (2D) magnetic higher-order topological insulators (HOTIs). Specifically, the CrC$X_3$ ($X=$ S, Se, Te) and CrSiS$_3$ monolayers are found to host conventional antiferromagnetic ground states with $\\mathcal{PT}$ symmetry, whereas the Janus compounds Cr$_2$C$_2$S$_3$Se$_3$ and Cr$_2$Si$_2$S$_3$Se$_3$ exhibit altermagnetic ground states. We demonstrate that all these monolayer magnetic materials realize 2D HOTI phases, in which the nontrivial topology is protected by lattice $C_3$ rotational symmetry and manifests as zero-dimensional corner states carrying quantized fractional charges. Moreover, upon inclusion of spin-orbit coupling, these systems remain in the HOTI phase and continue to host robust corner-localized states, confirming the stability of their higher-order topological nature. Our results reveal an intrinsic connection between higher-order topology and magnetic order in 2D antiferromagnetic and altermagnetic systems, identifying chromium-based group-IV chalcogenide monolayers as promising platforms for exploring higher-order topological phases and their potential relevance for future topological and spintronic applications.",
+      "authors": [
+        "Ruo-Yu Ning",
+        "Yong-Kun Wang",
+        "Shifeng Qian",
+        "Si Li",
+        "Wen-Li Yang"
+      ],
+      "primary_category": "cond-mat.mtrl-sci",
+      "categories": [
+        "cond-mat.mtrl-sci"
+      ],
+      "published": "2026-04-10T03:14:15+00:00",
+      "link": "https://arxiv.org/pdf/2604.08907v1",
+      "tags": [
+        "keyword:交错磁",
+        "query:交错磁"
+      ],
+      "llm_score": 9.0,
+      "llm_evidence_en": "Altermagnetic ground states in Janus Cr-based chalcogenides",
+      "llm_evidence_cn": "Janus铬基硫族化合物中的交错磁基态",
+      "llm_evidence": "Janus铬基硫族化合物中的交错磁基态",
+      "canonical_evidence": "Janus铬基硫族化合物中的交错磁基态",
+      "llm_tldr_en": "Identifies altermagnetic ground states and higher-order topological phases in 2D chromium-based chalcogenides.",
+      "llm_tldr_cn": "在二维铬基硫族化合物中发现了交错磁基态和高阶拓扑物态。",
+      "llm_tldr": "在二维铬基硫族化合物中发现了交错磁基态和高阶拓扑物态。",
+      "llm_tags": [
+        "query:q6"
+      ],
+      "matched_query_tag": "query:q6",
+      "matched_query_text": "recent research on altermagnetic structures",
+      "matched_requirement_id": "req-6",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "id": "2604.11057v1",
+      "source": "arxiv",
+      "title": "Unconventional alternating out-of-plane spin polarization in the coplanar kagome antiferromagnet",
+      "abstract": "The emergence of spin-polarized currents in nonrelativistic platforms continues to attract significant interest in spintronics. Here we demonstrate that a noncollinear kagome antiferromagnet can generate an alternating out-of-plane spin polarization originating from the spin chirality of the magnetic unit cell, in the absence of relativistic spin--orbit coupling. Under spatial confinement, the system develops distinct real-space spin separation patterns whose structure is governed by the symmetry of the lattice termination. In particular, breaking the transverse mirror symmetry of the ribbon produces an altermagnetic-like spin splitting in the band structure. Furthermore, we uncover a spin--edge locking mechanism in which propagating edge states acquire an unconventional spin polarization. These results highlight how magnetic symmetry and confinement can generate spin-polarized transport in coplanar antiferromagnets without relying on relativistic interactions.",
+      "authors": [
+        "Ousmane Ly",
+        "Satoru Hayami"
+      ],
+      "primary_category": "cond-mat.mes-hall",
+      "categories": [
+        "cond-mat.mes-hall"
+      ],
+      "published": "2026-04-13T06:34:22+00:00",
+      "link": "https://arxiv.org/pdf/2604.11057v1",
+      "tags": [
+        "keyword:交错磁",
+        "query:交错磁"
+      ],
+      "llm_score": 9.0,
+      "llm_evidence_en": "altermagnetic-like spin splitting in noncollinear kagome antiferromagnets",
+      "llm_evidence_cn": "非共线kagome反铁磁体中的类交错磁自旋分裂",
+      "llm_evidence": "非共线kagome反铁磁体中的类交错磁自旋分裂",
+      "canonical_evidence": "非共线kagome反铁磁体中的类交错磁自旋分裂",
+      "llm_tldr_en": "Shows how spatial confinement in kagome antiferromagnets generates altermagnetic-like spin splitting.",
+      "llm_tldr_cn": "展示了kagome反铁磁体中的空间限制如何产生类交错磁的自旋分裂。",
+      "llm_tldr": "展示了kagome反铁磁体中的空间限制如何产生类交错磁的自旋分裂。",
+      "llm_tags": [
+        "query:q6"
+      ],
+      "matched_query_tag": "query:q6",
+      "matched_query_text": "recent research on altermagnetic structures",
+      "matched_requirement_id": "req-6",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "id": "2604.11075v1",
+      "source": "arxiv",
+      "title": "Evolution of effective magnetic exchange interaction under spin dilution in SrIr$_{1-x}$Sn$_x$O$_3$",
+      "abstract": "Resonant inelastic X-ray scattering measurements reveal robust magnetic excitations in the perovskite iridates SrIr$_{1-x}$Sn$_x$O$_3$. We analyzed the dispersions of the magnetic excitation with spin-dilution ratio $x$ = 0, 0.03, 0.06, 0.1, and 0.2, crossing from semi-metal to spin-diluted while antiferromagnetically ordered insulators. The extracted effective magnetic exchange interactions decrease continuously upon increasing spin dilution, and their evolution follows a simple spin-dilution scaling law. These results not only verify the strong electron-correlation nature of the metallic parent SrIrO$_3$, but also reveal the entanglement of the charge and spin dynamics in this system.",
+      "authors": [
+        "Xiang Li",
+        "Yifan Jiang",
+        "Yuan Wan",
+        "Xuerong Liu"
+      ],
+      "primary_category": "cond-mat.str-el",
+      "categories": [
+        "cond-mat.str-el"
+      ],
+      "published": "2026-04-13T06:57:03+00:00",
+      "link": "https://arxiv.org/pdf/2604.11075v1",
+      "tags": [
+        "keyword:交错磁",
+        "query:交错磁"
+      ],
+      "llm_score": 9.0,
+      "llm_evidence_en": "Entanglement of charge and spin dynamics in iridates",
+      "llm_evidence_cn": "铱氧化物中电荷与自旋动力学的纠缠",
+      "llm_evidence": "铱氧化物中电荷与自旋动力学的纠缠",
+      "canonical_evidence": "铱氧化物中电荷与自旋动力学的纠缠",
+      "llm_tldr_en": "Analyzes magnetic excitations and exchange interactions in spin-diluted perovskite iridates.",
+      "llm_tldr_cn": "分析了自旋稀释钙钛矿铱氧化物中的磁激发和交换相互作用。",
+      "llm_tldr": "分析了自旋稀释钙钛矿铱氧化物中的磁激发和交换相互作用。",
+      "llm_tags": [
+        "query:q5"
+      ],
+      "matched_query_tag": "query:q5",
+      "matched_query_text": "spin dynamics in correlated systems",
+      "matched_requirement_id": "req-5",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "id": "2604.12674v1",
+      "source": "arxiv",
+      "title": "Origin of multiple skyrmion phases in EuAl4",
+      "abstract": "The Dzyaloshinskii-Moriya (DM) interaction has been considered essential for skyrmion formation, however, the discovery of skyrmion lattices (SkLs) in nominally centrosymmetric materials where the DM interaction is forbidden, such as Eu(Ga$_{1-x}$Al$_x$)$_4$, has challenged this established view. Recent structural investigations of Eu(Ga$_{1-x}$Al$_x$)$_4$ have further complicated this issue by revealing that the charge-density wave breaks local symmetry, theoretically allowing DM interaction. This raises a fundamental question: are the complex magnetic phases driven by the DM interaction or by alternative mechanisms? Here, using soft-x-ray angle-resolved photoemission spectroscopy, we determine the three-dimensional bulk electronic structure of Eu(Ga$_{1-x}$Al$_x$)$_4$, and elucidate the electronic origins of its rich magnetic orders. We directly observe an x-dependent Lifshitz transition leading to the emergence of a Fermi-surface pocket. Importantly, multiple nesting vectors derived from this pocket match the symmetries and periodicities of the multiple SkLs. Moreover, these nesting vectors can also account for other magnetic orders, such as the zero-field helical magnetism, suggesting a common electronic origin of the complex magnetic phases. These findings suggest that competing nesting-induced Ruderman-Kittel-Kasuya-Yosida interactions and their engineering can generate and control various SkLs and related topological spin textures.",
+      "authors": [
+        "Y. Arai",
+        "K. Nakayama",
+        "A. Honma",
+        "S. Souma",
+        "D. Shiga",
+        "H. Kumigashira",
+        "T. Takahashi",
+        "K. Segawa",
+        "T. Sato"
+      ],
+      "primary_category": "cond-mat.str-el",
+      "categories": [
+        "cond-mat.str-el",
+        "cond-mat.mtrl-sci"
+      ],
+      "published": "2026-04-14T12:44:41+00:00",
+      "link": "https://arxiv.org/pdf/2604.12674v1",
+      "tags": [
+        "keyword:交错磁",
+        "query:交错磁"
+      ],
+      "llm_score": 9.0,
+      "llm_evidence_en": "multiple skyrmion phases and complex magnetic phases",
+      "llm_evidence_cn": "多种斯格明子相与复杂磁相",
+      "llm_evidence": "多种斯格明子相与复杂磁相",
+      "canonical_evidence": "多种斯格明子相与复杂磁相",
+      "llm_tldr_en": "Investigates the origin of skyrmion lattices in centrosymmetric EuAl4 using bulk electronic structure analysis.",
+      "llm_tldr_cn": "通过体电子结构分析研究了中心对称材料EuAl4中斯格明子晶格的起源。",
+      "llm_tldr": "通过体电子结构分析研究了中心对称材料EuAl4中斯格明子晶格的起源。",
+      "llm_tags": [
+        "query:q4"
+      ],
+      "matched_query_tag": "query:q4",
+      "matched_query_text": "complex spin textures and magnetic structures",
+      "matched_requirement_id": "req-4",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "id": "2604.13266v1",
+      "source": "arxiv",
+      "title": "Geometric Spin Degeneracy in Spin-Orbit-Free Compensated Magnets",
+      "abstract": "Compensated magnets with vanishing net magnetization can exhibit both pronounced spin splitting and unconventional band degeneracies. In altermagnets, such degeneracies are enforced by crystal and magnetic symmetries. In compensated ferrimagnets, however, they may arise even in the absence of the corresponding symmetry protection, raising a fundamental question about the origin of spin degeneracy in spin-orbit-free magnetic systems. Here, we develop a theoretical framework for spin-orbit-free compensated magnets in which spin degeneracies are protected by geometric constraints rather than by spin symmetry. We show that zero net magnetization imposes a strong condition for the emergence of nodes formed by formally spin-degenerate bands, even when no conventional spin symmetry is present. Our analysis, applicable in the weak-interaction regime, identifies a general mechanism for spin degeneracy beyond group-theoretical protection. The framework accounts for the unconventional spin degeneracies recently reported in compensated ferrimagnets and provides a unified description of band degeneracies across a broad class of magnetic phases with negligible spin-orbit coupling.",
+      "authors": [
+        "Seung Hun Lee",
+        "Yuting Qian",
+        "Xi Dai",
+        "Bohm-Jung Yang"
+      ],
+      "primary_category": "cond-mat.mes-hall",
+      "categories": [
+        "cond-mat.mes-hall"
+      ],
+      "published": "2026-04-14T19:56:11+00:00",
+      "link": "https://arxiv.org/pdf/2604.13266v1",
+      "tags": [
+        "keyword:交错磁",
+        "query:交错磁"
+      ],
+      "llm_score": 9.0,
+      "llm_evidence_en": "Theoretical framework for spin degeneracy in altermagnets and compensated magnets",
+      "llm_evidence_cn": "交错磁体和补偿磁体中自旋简并的理论框架",
+      "llm_evidence": "交错磁体和补偿磁体中自旋简并的理论框架",
+      "canonical_evidence": "交错磁体和补偿磁体中自旋简并的理论框架",
+      "llm_tldr_en": "Develops a theory for geometric spin degeneracy in spin-orbit-free compensated magnets including altermagnets.",
+      "llm_tldr_cn": "开发了无自旋轨道耦合补偿磁体（包括交错磁体）中几何自旋简并的理论框架。",
+      "llm_tldr": "开发了无自旋轨道耦合补偿磁体（包括交错磁体）中几何自旋简并的理论框架。",
+      "llm_tags": [
+        "query:q8"
+      ],
+      "matched_query_tag": "query:q8",
+      "matched_query_text": "current progress in understanding altermagnetic ordering",
+      "matched_requirement_id": "req-8",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "id": "2604.13497v1",
+      "source": "arxiv",
+      "title": "Confinement-controlled pathways to complex skyrmionic textures in Co/W/Pt multilayers",
+      "abstract": "Magnetic skyrmions and higher-order topological spin textures offer rich opportunities for multi-level information encoding, yet their deterministic stabilization and transformation under geometric confinement at room temperature remain poorly understood. Here, we demonstrate that geometric confinement acts as a robust and universal control parameter that governs a hierarchical transformation pathway of chiral spin textures in Pt/Co/W multilayer micro-tracks. As the confinement increases, extended labyrinth domains fragment into isolated skyrmions, followed by the systematic suppression of skyrmion pairs and the preferential stabilization of compact higher-order textures. We find that confinement strongly enhances the formation of skyrmioniums via recombination and promotes their subsequent evolution into uniform skyrmion bags by capturing additional skyrmions. Statistical analysis reveals a confinement-driven redistribution of topological populations, with skyrmion bags emerging as the dominant state in the narrowest tracks. Supported by micromagnetic simulations, our results establish geometric confinement as a deterministic selector of complex topological textures and reveal a previously unexplored route for engineering higher-order skyrmionic states at room temperature. These findings provide a scalable materials strategy for multistate skyrmion-based spintronic and memory architectures.",
+      "authors": [
+        "Y. Al Sadi",
+        "R. Sbiaa",
+        "W. Al Saidi",
+        "M. Souier",
+        "G. Lezier",
+        "O. Marbouh",
+        "M. T. Z. Myint",
+        "Y. Dusch",
+        "S. Al Harthi",
+        "A. Talbi",
+        "N. Tiercelin",
+        "S. N. Piramanayagam"
+      ],
+      "primary_category": "physics.app-ph",
+      "categories": [
+        "physics.app-ph",
+        "cond-mat.mtrl-sci"
+      ],
+      "published": "2026-04-15T05:36:20+00:00",
+      "link": "https://arxiv.org/pdf/2604.13497v1",
+      "tags": [
+        "keyword:交错磁",
+        "query:交错磁"
+      ],
+      "llm_score": 9.0,
+      "llm_evidence_en": "Complex skyrmionic textures and chiral spin textures in multilayers",
+      "llm_evidence_cn": "多层膜中的复杂斯格明子织构与手性自旋织构",
+      "llm_evidence": "多层膜中的复杂斯格明子织构与手性自旋织构",
+      "canonical_evidence": "多层膜中的复杂斯格明子织构与手性自旋织构",
+      "llm_tldr_en": "Explores how geometric confinement controls the transformation of complex skyrmionic spin textures.",
+      "llm_tldr_cn": "研究了几何限制如何控制复杂斯格明子自旋织构的演化路径。",
+      "llm_tldr": "研究了几何限制如何控制复杂斯格明子自旋织构的演化路径。",
+      "llm_tags": [
+        "query:q4"
+      ],
+      "matched_query_tag": "query:q4",
+      "matched_query_text": "complex spin textures and magnetic structures",
+      "matched_requirement_id": "req-4",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "id": "2604.13931v1",
+      "source": "arxiv",
+      "title": "Magnetic Microscopy of Skyrmions in Magnetic Thin Films with Chiral Overlayers",
+      "abstract": "Topologically nontrivial magnetic textures such as skyrmions offer promising opportunities for spintronic applications. In recent years, it has been shown that the magnetic properties of layered materials can be affected by depositing chiral molecules on the surface, while the influence of chiral overlayers on skyrmion properties such as their stability and interactions remains largely unexplored. To address this challenge, we employ wide-field nitrogen-vacancy (NV) magnetometry to directly image skyrmions in chiral-molecule-functionalized magnetic thin films, enabling quantitative mapping of magnetic stray fields over extended areas under ambient conditions. Using pixel-resolved optically detected magnetic resonance (ODMR) combined with controlled magnetic fields, we reproducibly nucleate and probe skyrmion states in CoFeB ferromagnetic samples, enabling quantitative investigation of their properties. We find evidence for enantioselective and magnetic-field-polarity-dependent modifications of skyrmion diameter, spacing, and shape, pointing to a possibility of molecular control of topological spin textures via magneto-chiral coupling.",
+      "authors": [
+        "Buddhika Hondamuni",
+        "Théo Balland",
+        "Fabian Kammerbauer",
+        "Ashish Moharana",
+        "Bindu",
+        "Amandeep Singh",
+        "Meital Ozeri",
+        "Shira Yochelis",
+        "Yossi Paltiel",
+        "Omkar Dhungel",
+        "Zeeshawn Kazi",
+        "Kai-Mei C. Fu",
+        "Hideyuki Watanabe",
+        "Mathias Kläui",
+        "Arne Wickenbrock",
+        "Nir Bar-Gill",
+        "Angela Wittmann",
+        "Dmitry Budker"
+      ],
+      "primary_category": "cond-mat.mtrl-sci",
+      "categories": [
+        "cond-mat.mtrl-sci"
+      ],
+      "published": "2026-04-15T14:42:29+00:00",
+      "link": "https://arxiv.org/pdf/2604.13931v1",
+      "tags": [
+        "keyword:交错磁",
+        "query:交错磁"
+      ],
+      "llm_score": 9.0,
+      "llm_evidence_en": "Imaging skyrmions in magnetic thin films",
+      "llm_evidence_cn": "磁性薄膜中斯格明子的成像",
+      "llm_evidence": "磁性薄膜中斯格明子的成像",
+      "canonical_evidence": "磁性薄膜中斯格明子的成像",
+      "llm_tldr_en": "Uses NV magnetometry to image skyrmions in films with chiral overlayers, exploring stability and interactions.",
+      "llm_tldr_cn": "利用NV磁强计对具有手性覆盖层的薄膜中的斯格明子进行成像，探索其稳定性和相互作用。",
+      "llm_tldr": "利用NV磁强计对具有手性覆盖层的薄膜中的斯格明子进行成像，探索其稳定性和相互作用。",
+      "llm_tags": [
+        "query:q4"
+      ],
+      "matched_query_tag": "query:q4",
+      "matched_query_text": "complex spin textures and magnetic structures",
+      "matched_requirement_id": "req-4",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "id": "2604.14039v1",
+      "source": "arxiv",
+      "title": "Hole and spin dynamics in an anti-ferromagnet close to half filling",
+      "abstract": "The interplay between charge and spin dynamics is at the heart of strongly correlated materials. Inspired by recent quantum simulation experiments, we develop a conserving diagrammatic method to describe the Fermi-Hubbard model for strong repulsion and small hole doping away from the half-filled anti-ferromagnetic ground state. We show that doping leads to four hole pockets in the Brillouin zone formed by magnetic polarons, which become increasingly damped with hole concentration. Likewise, the magnon spectrum of the anti-ferromagnet softens and dampens with doping due to hole-induced magnetic frustration. This gives rise to a suppression of the anti-ferromagnetic correlations in agreement with recent experiments. We then calculate the response of the system to a lattice modulation and recover the qualitative difference between in-phase and out-of-phase modulations seen in experiments, which was interpreted as signs of pseudogap physics. Our results indicate that the complex competition between spin and charge degrees of freedom and the emergence of the pseudogap phase may be usefully analyzed for small dopings, where systematic theories can be developed.",
+      "authors": [
+        "Magnus Callsen",
+        "Jens H. Nyhegn",
+        "Kristian Knakkergaard Nielsen",
+        "Georg M. Bruun"
+      ],
+      "primary_category": "cond-mat.quant-gas",
+      "categories": [
+        "cond-mat.quant-gas",
+        "cond-mat.str-el"
+      ],
+      "published": "2026-04-15T16:20:35+00:00",
+      "link": "https://arxiv.org/pdf/2604.14039v1",
+      "tags": [
+        "keyword:交错磁",
+        "query:交错磁"
+      ],
+      "llm_score": 9.0,
+      "llm_evidence_en": "Spin dynamics in doped anti-ferromagnets",
+      "llm_evidence_cn": "掺杂反铁磁体中的自旋动力学",
+      "llm_evidence": "掺杂反铁磁体中的自旋动力学",
+      "canonical_evidence": "掺杂反铁磁体中的自旋动力学",
+      "llm_tldr_en": "Analyzes hole and spin dynamics in the Fermi-Hubbard model away from half-filling using diagrammatic methods.",
+      "llm_tldr_cn": "利用图符法分析了费米-哈伯德模型在偏离半满时的空穴与自旋动力学。",
+      "llm_tldr": "利用图符法分析了费米-哈伯德模型在偏离半满时的空穴与自旋动力学。",
+      "llm_tags": [
+        "query:q5"
+      ],
+      "matched_query_tag": "query:q5",
+      "matched_query_text": "spin dynamics in correlated systems",
+      "matched_requirement_id": "req-5",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "id": "2604.15234v1",
+      "source": "arxiv",
+      "title": "Universal magnetic energy scale in the doped Fermi-Hubbard model",
+      "abstract": "Magnetic correlations of doped Mott insulators hold the key to the unusual characteristics of many quantum materials. Recent experiments with ultracold atoms in optical lattices have provided new information about the magnetic properties of the Fermi-Hubbard model on a square lattice. We demonstrate that recent measurements indicate that a single doping-dependent energy scale determines both static correlations and dynamical response of these systems. To understand these experimental findings, we employ a self-consistent formalism to describe the coupling between antiferromagnetic magnons and doped holes, and we uncover the emergence of a universal magnetic energy scale at finite doping, which we denote by $J^*$. We present the single- and two-magnon spectral properties at finite doping and discuss the appearance of a bimagnon peak in lattice-modulation spectroscopy, at frequencies set by $J^*$. Furthermore, we argue that this same energy scale sets the onset of pseudogap phenomena, leading to the hypothesis $k_BT^* = c J^*$, with $c$ an order one number. We identify another low-energy scale emerging from our analysis of magnetic excitations, and argue that it controls the stability of Néel order at the lowest temperatures, ultimately driving a transition to an incommensurate spin-density-wave at finite doping. We discuss the relation between this low-energy scale and the nature of fermionic quasiparticles. Our analysis suggests that stability of the commensurate antiferromagentic phase at finite doping can be controlled experimentally by introducing additional quasiparticle broadening via disorder or low-frequency noise.",
+      "authors": [
+        "Radu Andrei",
+        "Ivan Morera",
+        "Jonathan B. Curtis",
+        "Immanuel Bloch",
+        "Eugene Demler"
+      ],
+      "primary_category": "cond-mat.str-el",
+      "categories": [
+        "cond-mat.str-el",
+        "cond-mat.quant-gas"
+      ],
+      "published": "2026-04-16T17:10:32+00:00",
+      "link": "https://arxiv.org/pdf/2604.15234v1",
+      "tags": [
+        "keyword:交错磁",
+        "query:交错磁"
+      ],
+      "llm_score": 9.0,
+      "llm_evidence_en": "Coupling between antiferromagnetic magnons and doped holes in Fermi-Hubbard model",
+      "llm_evidence_cn": "费米-哈伯德模型中反铁磁磁振子与掺杂空穴的耦合",
+      "llm_evidence": "费米-哈伯德模型中反铁磁磁振子与掺杂空穴的耦合",
+      "canonical_evidence": "费米-哈伯德模型中反铁磁磁振子与掺杂空穴的耦合",
+      "llm_tldr_en": "Identifies a universal magnetic energy scale J* governing static and dynamic correlations in doped Mott insulators.",
+      "llm_tldr_cn": "确定了决定掺杂莫特绝缘体静态和动态关联的通用磁能标J*。",
+      "llm_tldr": "确定了决定掺杂莫特绝缘体静态和动态关联的通用磁能标J*。",
+      "llm_tags": [
+        "query:q5"
+      ],
+      "matched_query_tag": "query:q5",
+      "matched_query_text": "spin dynamics in correlated systems",
+      "matched_requirement_id": "req-5",
+      "selection_source": "fresh_fetch"
+    }
+  ],
+  "quick_skim": [
+    {
+      "id": "2604.08163v1",
+      "source": "arxiv",
+      "title": "Switching magnetic spin-states using small magnetic fields in compositionally complex Sm(M7)O$_3$",
+      "abstract": "High-entropy perovskites (HEPs) offer a unique platform for exploring magnetic phenomena arising from extreme B-site chemical disorder. In Sm(M7)O$_3$, where there are 7 cations in equal amounts at the B-site; M = Ti, Cr, Mn, Fe, Co, Ni, Cu), we observe long-range antiferromagnetic ordering near 105 K accompanied by a small but robust excess magnetic moment intrinsic to the chemically disordered lattice. This uncompensated moment is evident from ZFC-FC irreversibility, shifts in the isothermal M(H) loops, and discrete remanent states identified through direct-current-demagnetization measurements. Remarkably, cooling fields as small as $\\pm$ 20 Oe are sufficient to select the direction of the excess moment, and the chosen magnetic state remains stable against applied fields up to 50 kOe. A low-temperature anomaly in the remanent magnetization further reveals a secondary contribution from the Sm$^{3+}$ sublattice, although the primary origin of the excess moment resides in the B-site AFM sublattice.",
+      "authors": [
+        "R. K. Dokala",
+        "M. Geers",
+        "P. Nordblad",
+        "R. Clulow",
+        "R. Mathieu"
+      ],
+      "primary_category": "cond-mat.mtrl-sci",
+      "categories": [
+        "cond-mat.mtrl-sci"
+      ],
+      "published": "2026-04-09T12:24:30+00:00",
+      "link": "https://arxiv.org/pdf/2604.08163v1",
+      "tags": [
+        "keyword:交错磁",
+        "query:交错磁"
+      ],
+      "llm_score": 8.0,
+      "llm_evidence_en": "Magnetic spin-states and antiferromagnetic ordering in complex perovskites",
+      "llm_evidence_cn": "复杂钙钛矿中的磁自旋态和反铁磁有序",
+      "llm_evidence": "复杂钙钛矿中的磁自旋态和反铁磁有序",
+      "canonical_evidence": "复杂钙钛矿中的磁自旋态和反铁磁有序",
+      "llm_tldr_en": "Explores magnetic phenomena and moment switching in compositionally complex high-entropy perovskites.",
+      "llm_tldr_cn": "探索了成分复杂的高熵钙钛矿中的磁现象和磁矩切换。",
+      "llm_tldr": "探索了成分复杂的高熵钙钛矿中的磁现象和磁矩切换。",
+      "llm_tags": [
+        "query:q4"
+      ],
+      "matched_query_tag": "query:q4",
+      "matched_query_text": "complex spin textures and magnetic structures",
+      "matched_requirement_id": "req-4",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "8plus"
+    },
+    {
+      "id": "2604.08143v1",
+      "source": "arxiv",
+      "title": "Equivariant Many-body Message Passing Interatomic Potentials for Magnetic Materials",
+      "abstract": "Magnetism governs key properties of materials used in energy, data storage, and spintronic technologies, yet its complex coupling to lattice and electronic degrees of freedom challenges conventional first-principles approaches. We introduce an equivariant message-passing graph neural network that embeds atomic magnetic moments as explicit degrees of freedom, enabling the learning of magnetic interactions beyond collinear approximations. The model learns physically consistent and transferable representations of magnetic behaviour and can incorporate spin-orbit coupling, achieving near density-functional-theory accuracy with strong data efficiency across diverse magnetic systems by fine-tuning from a pre-trained model. Applications to structural transformations, finite-temperature magnetic phenomena, and materials screening for strongly spin-orbit coupled materials demonstrate transferable magnetic behaviour, establishing a practical foundation for data-driven, high-throughput discovery of complex magnetic materials.",
+      "authors": [
+        "Cheuk Hin Ho",
+        "Cas van der Oord",
+        "James P. Darby",
+        "Theo Keane",
+        "Raz L. Benson",
+        "Cristian Rebolledo Espinoza",
+        "Rutvij Kulkarni",
+        "Elina Spinu",
+        "Michail Papanikolaou",
+        "Richard Tomsett",
+        "Robert M. Forrest",
+        "Jonathan J. Bean",
+        "Gábor Csányi",
+        "Christoph Ortner"
+      ],
+      "primary_category": "cond-mat.mtrl-sci",
+      "categories": [
+        "cond-mat.mtrl-sci"
+      ],
+      "published": "2026-04-09T12:05:30+00:00",
+      "link": "https://arxiv.org/pdf/2604.08143v1",
+      "tags": [
+        "keyword:交错磁",
+        "query:交错磁"
+      ],
+      "llm_score": 7.0,
+      "llm_evidence_en": "learning magnetic interactions beyond collinear approximations for complex systems",
+      "llm_evidence_cn": "学习复杂系统中超越共线近似的磁相互作用",
+      "llm_evidence": "学习复杂系统中超越共线近似的磁相互作用",
+      "canonical_evidence": "学习复杂系统中超越共线近似的磁相互作用",
+      "llm_tldr_en": "Introduces equivariant graph neural networks to model complex magnetic interactions and spin-orbit coupling.",
+      "llm_tldr_cn": "引入等变图神经网络来模拟复杂的磁相互作用和自旋轨道耦合。",
+      "llm_tldr": "引入等变图神经网络来模拟复杂的磁相互作用和自旋轨道耦合。",
+      "llm_tags": [
+        "query:q4"
+      ],
+      "matched_query_tag": "query:q4",
+      "matched_query_text": "complex spin textures and magnetic structures",
+      "matched_requirement_id": "req-4",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "7"
+    },
+    {
+      "id": "2604.07731v1",
+      "source": "arxiv",
+      "title": "Geometric Phases and Persistent Spin Currents from nonminimal couplings",
+      "abstract": "We investigate a class of nonminimal derivative couplings between fermions and electromagnetic fields that generate Rashba-like spin--orbit interactions in one-dimensional quantum rings. Starting from a generalized Dirac Lagrangian containing two independent axial structures built from the field strength $F_{μν}$ and its dual $\\tilde{F}_{μν}$, we perform a systematic nonrelativistic expansion and show that both couplings induce effective Hamiltonians of the form $\\boldsymbol{\\mathcal{F}}\\cdot(\\boldsymbol{p}\\times\\boldsymbolσ)$. This reveals that magnetic as well as electric background fields may give rise to Rashba-type interactions, in contrast with standard condensed-matter scenarios. Before passing to the nonrelativistic limit, we analyze the relativistic content of the model in detail: the canonical structure of the deformed Dirac operator, the admissible background classes, the effective bilinear current, and the branch splitting of the relativistic dispersion relation, which constitutes the primary relativistic signature of the theory. We derive exact analytical energy levels and normalized eigenspinors for the resulting ring Hamiltonian, compute Aharonov--Anandan geometric phases, and analyze persistent spin currents together with the associated differential spin response $\\mathcal{G}_s = \\partial\\mathcal{J}_\\varphi^z/\\partialξ$. Exploiting the analytical control offered by the model, we derive the first systematic order-of-magnitude bounds on the two Lorentz-invariant couplings $\\mathfrak{g}_1$ and $\\mathfrak{g}_2$ from both spectroscopic and mesoscopic scenarios, identifying the experimental channels most sensitive to the new physics encoded in these operators. We discuss physical implications, signatures, and possible experimental analogs, and outline several promising directions involving disorder, noise, and nonequilibrium spin dynamics.",
+      "authors": [
+        "Edilberto O. Silva",
+        "João A. A. S. Reis",
+        "L. Lisboa-Santos"
+      ],
+      "primary_category": "hep-th",
+      "categories": [
+        "hep-th",
+        "cond-mat.other"
+      ],
+      "published": "2026-04-09T02:28:49+00:00",
+      "link": "https://arxiv.org/pdf/2604.07731v1",
+      "tags": [
+        "keyword:交错磁",
+        "query:交错磁"
+      ],
+      "llm_score": 6.0,
+      "llm_evidence_en": "Spin currents and spin-orbit interactions from magnetic background fields",
+      "llm_evidence_cn": "磁背景场产生的自旋流与自旋轨道相互作用",
+      "llm_evidence": "磁背景场产生的自旋流与自旋轨道相互作用",
+      "canonical_evidence": "磁背景场产生的自旋流与自旋轨道相互作用",
+      "llm_tldr_en": "Investigates nonminimal couplings generating Rashba-like spin-orbit interactions and persistent spin currents.",
+      "llm_tldr_cn": "研究了产生类拉什巴自旋轨道相互作用和持久自旋流的非最小耦合。",
+      "llm_tldr": "研究了产生类拉什巴自旋轨道相互作用和持久自旋流的非最小耦合。",
+      "llm_tags": [
+        "query:q5"
+      ],
+      "matched_query_tag": "query:q5",
+      "matched_query_text": "spin dynamics in correlated systems",
+      "matched_requirement_id": "req-5",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "6"
+    },
+    {
+      "id": "2604.08233v1",
+      "source": "arxiv",
+      "title": "Odd-parity Magnetism from the Generalized Bloch Theorem",
+      "abstract": "In the non-relativistic limit, helimagnetic order is always associated with odd-parity magnetism. That is, for single-particle states the expectation value of the electronic spin is odd in crystal momentum, which implies direct control of the spin by means of electric fields. However, the theoretical description of helimagnets is hindered by the fact that the spiral pitch may require large super cells or even be incommensurate with the lattice. In the this letter we show that such issues may be remedied by use of the Generalized Bloch theorem. It allows one to describe (by models or first principles) the system in terms of the primitive unit cell, from which all relevant properties can be obtained by downfolding in reciprocal space. We exemplify the procedure using MnI$_2$ and NiI$_2$, which are known type II multiferroics having spiral order and the helimagnetic metal MnTe$_2$. We analyze how the magnitude of spin splitting depends on orbital composition of bands, and we show that spin splitting is maximized for states having large odd-orbital ($p$-type) character. It is straightforward to generalize the framework to handle response functions for helimagnets using only the primitive unit cell and the present downfolding procedure thus strongly facilitate theoretical progress in the field.",
+      "authors": [
+        "Mikkel Christian Larsen",
+        "Thomas Olsen"
+      ],
+      "primary_category": "cond-mat.mtrl-sci",
+      "categories": [
+        "cond-mat.mtrl-sci"
+      ],
+      "published": "2026-04-09T13:25:28+00:00",
+      "link": "https://arxiv.org/pdf/2604.08233v1",
+      "tags": [
+        "keyword:交错磁",
+        "query:交错磁"
+      ],
+      "llm_score": 8.0,
+      "llm_evidence_en": "Odd-parity magnetism and helimagnetic order related to altermagnetic symmetry properties",
+      "llm_evidence_cn": "奇宇称磁性与螺旋磁序，涉及交错磁相关的对称性属性",
+      "llm_evidence": "奇宇称磁性与螺旋磁序，涉及交错磁相关的对称性属性",
+      "canonical_evidence": "奇宇称磁性与螺旋磁序，涉及交错磁相关的对称性属性",
+      "llm_tldr_en": "Uses Generalized Bloch theorem to describe odd-parity magnetism and helimagnets in primitive unit cells.",
+      "llm_tldr_cn": "利用广义布洛赫定理在原胞内描述奇宇称磁性和螺旋磁体。",
+      "llm_tldr": "利用广义布洛赫定理在原胞内描述奇宇称磁性和螺旋磁体。",
+      "llm_tags": [
+        "query:profile-1:composite"
+      ],
+      "matched_query_tag": "query:profile-1:composite",
+      "matched_query_text": "Papers central to 帮我查找交错磁的最新相关论文, especially work that connects or combines: m; t; j; complex spin textures and magnetic structures; spin dynamics in correlated systems; recent research on altermagnetic structures; latest theoretical and experimental studies on altermagnetism; current progress in understanding altermagnetic ordering.",
+      "matched_requirement_id": "req-composite-profile-1",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "8plus"
+    },
+    {
+      "id": "2604.09794v1",
+      "source": "arxiv",
+      "title": "Ferromagnetic interlayer exchange coupling in a few layers of CrSBr on a gold thin film",
+      "abstract": "The two-dimensional character of van der Waals magnets allows for efficient control of their properties via proximity effects and electrical stimuli, making them promising candidates for application in spin-electronics. We use spin-polarized low energy electron microscopy to directly image the magnetic texture of thin CrSBr on top of a Au film, uncovering a ferromagnetic ground state for CrSBr thicknesses smaller than 11 nm. We argue that the stabilization of the ferromagnetic ordering - as compared to the conventional antiferromagnetic one - is obtained via electron transfer from the Au film to the CrSBr flakes, in agreement with ab-initio density functional theory calculations. Reflected-electron spectroscopy shows clear differences in the unoccupied density of states between a few layers of CrSBr on Au and bulk CrSBr, pointing towards electronic band structure modification in thin CrSBr. This work sheds light on the possibility to tune magnetic properties of two-dimensional magnets via substrate engineering.",
+      "authors": [
+        "Rixt Bosma",
+        "Darius A. Pacurar",
+        "Daniel Sade",
+        "Jingbo Wang",
+        "Nicholas Dale",
+        "Cameron W. Johnson",
+        "Sergii Grytsiuk",
+        "Alexander Rudenko",
+        "Alexander Stibor",
+        "Malte Roesner",
+        "Marcos H. D. Guimaraes",
+        "Roberto Lo Conte"
+      ],
+      "primary_category": "cond-mat.mtrl-sci",
+      "categories": [
+        "cond-mat.mtrl-sci",
+        "cond-mat.mes-hall"
+      ],
+      "published": "2026-04-10T18:14:55+00:00",
+      "link": "https://arxiv.org/pdf/2604.09794v1",
+      "tags": [
+        "keyword:交错磁",
+        "query:交错磁"
+      ],
+      "llm_score": 7.0,
+      "llm_evidence_en": "magnetic texture in van der Waals magnets",
+      "llm_evidence_cn": "范德华磁体中的磁纹理",
+      "llm_evidence": "范德华磁体中的磁纹理",
+      "canonical_evidence": "范德华磁体中的磁纹理",
+      "llm_tldr_en": "Images magnetic textures in CrSBr and finds thickness-dependent ferromagnetic stabilization.",
+      "llm_tldr_cn": "对CrSBr中的磁纹理进行成像，并发现了厚度相关的铁磁稳定机制。",
+      "llm_tldr": "对CrSBr中的磁纹理进行成像，并发现了厚度相关的铁磁稳定机制。",
+      "llm_tags": [
+        "query:q4"
+      ],
+      "matched_query_tag": "query:q4",
+      "matched_query_text": "complex spin textures and magnetic structures",
+      "matched_requirement_id": "req-4",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "7"
+    },
+    {
+      "id": "2604.07852v1",
+      "source": "arxiv",
+      "title": "Fluctuation Mechanism of Single-Ion Anisotropy of Topological Insulator MnBi$_2$Te$_4$",
+      "abstract": "We demonstrate that charge fluctuations induced by electron hopping, combined with spin-orbit coupling, lift the sixfold degeneracy of the orbital singlet $^{6}S$ of Mn ions in the topological insulator MnBi$_2$Te$_4$, resulting in single-ion anisotropy. To solve the problem, a multiplet representation is introduced for the creation operators of atomic-state fermions in terms of the operators describing transitions between many-body wavefunctions. Using the operator form of perturbation theory up to the second order, we derive expressions for the populations $n_M$ of Mn ion states with spin projections $M$ of the $^{6}S$ term and determine the single ion anisotropy constants. The calculations reveal that the fluctuation mechanism ensures the possibility of implementing the easy-axis anisotropy observed in MnBi$_2$Te$_4$. Notably, the range of anisotropy constants $D_2$ obtained by varying the model parameters includes the value $D_2 = -0.0095$ meV, required to reproduce the critical field of the spin-flop transition $H_{\\text{sf}}$, known from the experiment. The proposed mechanism has a wide range of applicability for describing the anisotropy in compounds where the ground state of a magnetic ion in a weak crystal field is described by an orbital singlet.",
+      "authors": [
+        "V. V. Val'kov",
+        "A. O. Zlotnikov",
+        "A. Gamov"
+      ],
+      "primary_category": "cond-mat.str-el",
+      "categories": [
+        "cond-mat.str-el"
+      ],
+      "published": "2026-04-09T06:11:04+00:00",
+      "link": "https://arxiv.org/pdf/2604.07852v1",
+      "tags": [
+        "keyword:交错磁",
+        "query:交错磁"
+      ],
+      "llm_score": 6.0,
+      "llm_evidence_en": "single-ion anisotropy in topological insulator MnBi2Te4",
+      "llm_evidence_cn": "拓扑绝缘体 MnBi2Te4 中的单离子各向异性",
+      "llm_evidence": "拓扑绝缘体 MnBi2Te4 中的单离子各向异性",
+      "canonical_evidence": "拓扑绝缘体 MnBi2Te4 中的单离子各向异性",
+      "llm_tldr_en": "Explains the origin of single-ion anisotropy in MnBi2Te4 through charge fluctuations and spin-orbit coupling.",
+      "llm_tldr_cn": "通过电荷涨落和自旋轨道耦合解释了 MnBi2Te4 中单离子各向异性的物理机制。",
+      "llm_tldr": "通过电荷涨落和自旋轨道耦合解释了 MnBi2Te4 中单离子各向异性的物理机制。",
+      "llm_tags": [
+        "query:q4"
+      ],
+      "matched_query_tag": "query:q4",
+      "matched_query_text": "complex spin textures and magnetic structures",
+      "matched_requirement_id": "req-4",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "6"
+    },
+    {
+      "id": "2604.09178v1",
+      "source": "arxiv",
+      "title": "Topology-constrained spin-wave modes of asymmetric antibimerons and their clusters",
+      "abstract": "Collective modes are a defining signature of coupled degrees of freedom, forming a bridge between understanding of interactions in condensed-matter systems and emergent functionality. Topological magnetic textures provide a natural platform to realize and control such collective modes at the nanoscale. Here we theoretically identify and characterize low-energy collective spin-wave excitations of isolated asymmetric antibimerons and their clusters in ultrathin ferromagnetic films. We demonstrate that an isolated asymmetric antibimeron supports a discrete spectrum of localized modes, reflecting its internal degrees of freedom. When multiple asymmetric antibimerons form a cluster, inter-texture coupling leads to the splitting of these modes into $N$-fold multiplets, where $N$ denotes the number of asymmetric antibimerons. To rationalize these findings, we introduce an effective coupled-oscillator model based on meron pairs that captures the essential collective dynamics of the system. This emergent classical mechanics description reveals that the motion of asymmetric antibimeron clusters can be understood in terms of well-defined normal modes governed by topology-constrained particle-like degrees of freedom. These results establish coupled asymmetric antibimerons as a tunable platform for spin-wave based nano-oscillators, whose normal-mode spectrum is controllable through cluster size, thus providing a programmable set of low-lying resonances for these nano-oscillators.",
+      "authors": [
+        "Pavel A. Vorobyev",
+        "Daichi Kurebayashi",
+        "Oleg A. Tretiakov"
+      ],
+      "primary_category": "cond-mat.mes-hall",
+      "categories": [
+        "cond-mat.mes-hall",
+        "cond-mat.mtrl-sci"
+      ],
+      "published": "2026-04-10T10:02:33+00:00",
+      "link": "https://arxiv.org/pdf/2604.09178v1",
+      "tags": [
+        "keyword:交错磁",
+        "query:交错磁"
+      ],
+      "llm_score": 8.0,
+      "llm_evidence_en": "Spin-wave modes of asymmetric antibimerons",
+      "llm_evidence_cn": "非对称反双分子的自旋波模式",
+      "llm_evidence": "非对称反双分子的自旋波模式",
+      "canonical_evidence": "非对称反双分子的自旋波模式",
+      "llm_tldr_en": "Characterizes collective spin-wave excitations of topological antibimeron textures in ferromagnetic films.",
+      "llm_tldr_cn": "表征了铁磁薄膜中拓扑反双分子结构的集体自旋波激发特性。",
+      "llm_tldr": "表征了铁磁薄膜中拓扑反双分子结构的集体自旋波激发特性。",
+      "llm_tags": [
+        "query:q4"
+      ],
+      "matched_query_tag": "query:q4",
+      "matched_query_text": "complex spin textures and magnetic structures",
+      "matched_requirement_id": "req-4",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "8plus"
+    },
+    {
+      "id": "2604.10576v1",
+      "source": "arxiv",
+      "title": "Microscopic model for the ground state, 1/3 plateau and excitations of $γ$-Mn$_3$(PO$_4$)$_2$",
+      "abstract": "We present a magnetic model for an antiferromagnetic compound $γ$-Mn$_3$(PO$_4$)$_2$, which was previously shown to exhibit a 1/3 magnetization plateau due to the trimer-based structure of the lattice of magnetic Mn$^{2+}$ ions with $S=5/2$. An exchange Hamiltonian that yields observed field transitions is obtained from fitting magnetization data. It is shown that both biquadratic coupling and single-ion anisotropy are necessary to be present in the magnetic model to explain multiple phase transitions in the magnetic susceptibility data. The calculated magnetic spectrum is in agreement with the low-temperature specific heat data.",
+      "authors": [
+        "P. A. Maksimov",
+        "L. V. Shvanskaya",
+        "O. S. Volkova",
+        "A. N. Vasiliev"
+      ],
+      "primary_category": "cond-mat.str-el",
+      "categories": [
+        "cond-mat.str-el"
+      ],
+      "published": "2026-04-12T10:49:02+00:00",
+      "link": "https://arxiv.org/pdf/2604.10576v1",
+      "tags": [
+        "keyword:交错磁",
+        "query:交错磁"
+      ],
+      "llm_score": 7.0,
+      "llm_evidence_en": "Magnetic model and excitations of an antiferromagnetic compound",
+      "llm_evidence_cn": "反铁磁化合物的磁性模型与激发",
+      "llm_evidence": "反铁磁化合物的磁性模型与激发",
+      "canonical_evidence": "反铁磁化合物的磁性模型与激发",
+      "llm_tldr_en": "Develops an exchange Hamiltonian to explain the magnetization plateau and excitations in Mn3(PO4)2.",
+      "llm_tldr_cn": "开发了一个交换哈密顿量来解释Mn3(PO4)2中的磁化平台和激发。",
+      "llm_tldr": "开发了一个交换哈密顿量来解释Mn3(PO4)2中的磁化平台和激发。",
+      "llm_tags": [
+        "query:q5"
+      ],
+      "matched_query_tag": "query:q5",
+      "matched_query_text": "spin dynamics in correlated systems",
+      "matched_requirement_id": "req-5",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "7"
+    },
+    {
+      "id": "2604.08989v1",
+      "source": "arxiv",
+      "title": "Reciprocity of Charge-Orbital-Spin Transport in Normal-Metal/Ferromagnet Heterostructures",
+      "abstract": "Orbital angular momentum has recently emerged as an important carrier of angular momentum in solids, offering new pathways for spin orbitronic functionality beyond conventional spin transport. Here, we investigate the orbital Hall effect which generates orbital torques and their reciprocal process viz orbital pumping and the inverse orbital Hall effect (iOHE) in non-magnet/ferromagnet heterostructures. Using two port scattering parameter measurements on Ru/Ni, Ru/Pt/CoFeB and Co/Cu/SiO2 devices, we directly probe both orbital torque driven magnetization dynamics and orbital pumping within the same device platform. We observe that the transmission coefficients satisfy the symmetry relations required by Onsager reciprocity, demonstrating reciprocal conversion between charge, orbital and spin angular momenta. Our results establish orbital pumping as the reciprocal counterpart of orbital torque. Our experimental findings provide a unified framework for orbital transport phenomena.",
+      "authors": [
+        "Abhishek Erram",
+        "Akanksha Chouhan",
+        "Ashwin A. Tulapurkar"
+      ],
+      "primary_category": "cond-mat.mes-hall",
+      "categories": [
+        "cond-mat.mes-hall"
+      ],
+      "published": "2026-04-10T05:50:13+00:00",
+      "link": "https://arxiv.org/pdf/2604.08989v1",
+      "tags": [
+        "keyword:交错磁",
+        "query:交错磁"
+      ],
+      "llm_score": 6.0,
+      "llm_evidence_en": "orbital torque driven magnetization dynamics",
+      "llm_evidence_cn": "轨道转矩驱动的磁化动力学",
+      "llm_evidence": "轨道转矩驱动的磁化动力学",
+      "canonical_evidence": "轨道转矩驱动的磁化动力学",
+      "llm_tldr_en": "Investigates the reciprocity of charge-orbital-spin transport and orbital torque driven dynamics in heterostructures.",
+      "llm_tldr_cn": "研究了异质结构中电荷-轨道-自旋输运的互惠性以及轨道转矩驱动的动力学。",
+      "llm_tldr": "研究了异质结构中电荷-轨道-自旋输运的互惠性以及轨道转矩驱动的动力学。",
+      "llm_tags": [
+        "query:q5"
+      ],
+      "matched_query_tag": "query:q5",
+      "matched_query_text": "spin dynamics in correlated systems",
+      "matched_requirement_id": "req-5",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "6"
+    },
+    {
+      "id": "2604.10019v1",
+      "source": "arxiv",
+      "title": "Exchange Frustration and Topological Magnetism in Electrostatically Doped SrRuO3",
+      "abstract": "Magnetism in transition-metal systems emerges from exchange interactions that depend sensitively on carrier density. Yet leveraging this sensitivity to deliberately engineer exchange frustration and associated topological spin textures remains largely unexplored. Here, combining first-principles calculations with atomistic Monte Carlo simulations, we demonstrate that ferroelectric polarization enables electrostatic control of exchange frustration in the itinerant ferromagnet SrRuO3. We show that electrostatic hole doping renormalizes competing exchange interactions, driving SrRuO3 away from its bulk ferromagnetic ground state toward frustrated regimes, whereas electron doping largely preserves ferromagnetism. At BaTiO3/SrRuO3 interfaces, polarization-induced charge depletion modulates layer dependent exchange couplings, enhancing competition among J1, J2 and J3. The resulting exchange frustration stabilizes a sequence of magnetic phases as a function of thickness and applied magnetic field, including stripe and spiral states, topological meron and bimeron textures, and diverse skyrmionic objects. A minimal spin model identifies exchange frustration as the primary control parameter governing these crossovers, with magnetic anisotropy, Dzyaloshinskii-Moriya interaction, and external field selecting the emergent topology. Our results establish electrostatic doping as a route to engineer frustrated and topological magnetism in itinerant oxide metals.",
+      "authors": [
+        "Naafis Ahnaf Shahed",
+        "Himanshu Mavani",
+        "Zhonglin He",
+        "Kai Huang",
+        "Mohamed Elekhtiar",
+        "Evgeny Y. Tsymbal"
+      ],
+      "primary_category": "cond-mat.mtrl-sci",
+      "categories": [
+        "cond-mat.mtrl-sci"
+      ],
+      "published": "2026-04-11T04:13:19+00:00",
+      "link": "https://arxiv.org/pdf/2604.10019v1",
+      "tags": [
+        "keyword:交错磁",
+        "query:交错磁"
+      ],
+      "llm_score": 8.0,
+      "llm_evidence_en": "engineering exchange frustration and topological spin textures",
+      "llm_evidence_cn": "工程化交换挫折和拓扑自旋结构",
+      "llm_evidence": "工程化交换挫折和拓扑自旋结构",
+      "canonical_evidence": "工程化交换挫折和拓扑自旋结构",
+      "llm_tldr_en": "Demonstrates electrostatic control of exchange frustration and topological magnetism in SrRuO3.",
+      "llm_tldr_cn": "展示了SrRuO3中交换挫折和拓扑磁性的静电控制。",
+      "llm_tldr": "展示了SrRuO3中交换挫折和拓扑磁性的静电控制。",
+      "llm_tags": [
+        "query:q4"
+      ],
+      "matched_query_tag": "query:q4",
+      "matched_query_text": "complex spin textures and magnetic structures",
+      "matched_requirement_id": "req-4",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "8plus"
+    },
+    {
+      "id": "2604.10773v1",
+      "source": "arxiv",
+      "title": "Explosive Synchronization and Magnetic Chimeras via the Simplicial Bridge in Helimagnetic Lattices",
+      "abstract": "The macroscopic dynamics of topological defects in magnetic materials are traditionally modeled using pairwise interactions, universally yielding continuous thermodynamic phase transitions. In this work, we extend the helimagnetic continuum model to include multi-spin biquadratic exchange. Using the Karpman-Solov'ev adiabatic perturbation theory, we rigorously map the non-linear Landau-Lifshitz partial differential equations onto a generalized Kuramoto network operating on a simplicial complex. This \"Simplicial Bridge\" reveals that higher-order, triadic phase couplings induce explosive, first-order synchronization transitions characterized by a massive bistable hysteresis loop. Furthermore, spectral analysis of these networks on bipartite honeycomb lattices demonstrates the evasion of geometric frustration and the emergence of macroscopic magnetic chimera states-spontaneous spatial domains of coexisting frozen and fluctuating spin textures. We discuss the physical manifestation of these states in strongly correlated van der Waals heterostructures and their potential application in reconfigurable magnonic reservoir computing.",
+      "authors": [
+        "Alok Yadav"
+      ],
+      "primary_category": "nlin.PS",
+      "categories": [
+        "nlin.PS",
+        "cond-mat.mes-hall",
+        "cond-mat.stat-mech",
+        "nlin.AO"
+      ],
+      "published": "2026-04-12T18:47:13+00:00",
+      "link": "https://arxiv.org/pdf/2604.10773v1",
+      "tags": [
+        "keyword:交错磁",
+        "query:交错磁"
+      ],
+      "llm_score": 7.0,
+      "llm_evidence_en": "Dynamics of topological defects in helimagnetic lattices",
+      "llm_evidence_cn": "螺旋磁格点中拓扑缺陷的动力学",
+      "llm_evidence": "螺旋磁格点中拓扑缺陷的动力学",
+      "canonical_evidence": "螺旋磁格点中拓扑缺陷的动力学",
+      "llm_tldr_en": "Maps helimagnetic dynamics to simplicial networks, revealing explosive synchronization and magnetic chimeras.",
+      "llm_tldr_cn": "将螺旋磁动力学映射到单纯复形网络，揭示了爆发式同步和磁性奇美拉态。",
+      "llm_tldr": "将螺旋磁动力学映射到单纯复形网络，揭示了爆发式同步和磁性奇美拉态。",
+      "llm_tags": [
+        "query:q4"
+      ],
+      "matched_query_tag": "query:q4",
+      "matched_query_text": "complex spin textures and magnetic structures",
+      "matched_requirement_id": "req-4",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "7"
+    }
+  ]
+}

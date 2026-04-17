@@ -1,0 +1,296 @@
+Title: Explosive Synchronization and Magnetic Chimeras via the Simplicial Bridge in Helimagnetic Lattices
+
+URL Source: https://arxiv.org/pdf/2604.10773v1
+
+Published Time: Tue, 14 Apr 2026 01:26:24 GMT
+
+Number of Pages: 5
+
+Markdown Content:
+## Explosive Synchronization and Magnetic Chimeras via the Simplicial Bridge in Helimagnetic Lattices 
+
+Alok Yadav 1
+
+> 1
+
+Department of Physics, Anugrah Memorial College, Magadh University, Gaya, Bihar 823001, India 
+
+(Dated: April 14, 2026) The macroscopic dynamics of topological defects in magnetic materials are traditionally mod-eled using pairwise interactions, universally yielding continuous thermodynamic phase transitions. In this work, we extend the helimagnetic continuum model to include multi-spin biquadratic ex-change. Using the Karpman-Solov’ev adiabatic perturbation theory, we rigorously map the non-linear Landau-Lifshitz partial differential equations onto a generalized Kuramoto network operating on a simplicial complex. This “Simplicial Bridge” reveals that higher-order, triadic phase couplings induce explosive, first-order synchronization transitions characterized by a massive bistable hystere-sis loop. Furthermore, spectral analysis of these networks on bipartite honeycomb lattices demon-strates the evasion of geometric frustration and the emergence of macroscopic magnetic chimera states—spontaneous spatial domains of coexisting frozen and fluctuating spin textures. We discuss the physical manifestation of these states in strongly correlated van der Waals heterostructures and their potential application in reconfigurable magnonic reservoir computing. 
+
+I. INTRODUCTION 
+
+The macroscopic magnetic properties of condensed matter systems are fundamentally governed by the in-terplay of competing quantum mechanical exchange in-teractions. In helimagnets, the absence of structural in-version symmetry or the presence of magnetic frustration induces a spontaneous breaking of continuous rotational symmetry, leading to the formation of incommensurate, long-range spiral or chiral spin textures [1, 2]. The tem-poral evolution of the magnetization is strictly governed by the nonlinear Landau-Lifshitz (LL) equation [3]. Due to the inherent nonlinearity and dispersion embedded in the LL equation, the helimagnetic continuum supports a rich spectrum of localized, non-perturbative excitations known as magnetic solitons, including bright-dark kinks and skyrmions [4, 5]. Historically, the theoretical framework surrounding multi-soliton interactions has been confined to the di-lute limit, where spatial overlap is approximated strictly as a dyadic (two-body) phenomenon [13]. However, modern experimental and technological paradigms—such as dense chiral lattices and strongly correlated twisted Moir´ e superlattices—operate in regimes where four-spin scalar interactions become prominent [6]. In recent years, the discovery of intrinsic two-dimensional van der Waals magnets has further highlighted the critical role of higher-order interactions, such as biquadratic exchange, in stabilizing exotic topological states at finite tempera-tures [7]. This remains a highly active experimental fron-tier, with recent studies demonstrating how biquadratic exchange and selective ion intercalation actively tune macroscopic phase transitions in 2D antiferromagnets like MPS 3 and CrPS 4 [8, 9]. Concurrently, the application of simplicial complexes to nonlinear dynamics has surged. Recent theoret-ical breakthroughs have established that higher-order network structures strictly break interaction symmetry, driving robust explosive synchronization in coupled phase oscillators and biological networks [10, 11]. Yet, despite these advances in complex systems theory, a unified an-alytical approach capable of capturing higher-order con-tinuum interactions within the magnetic domain is miss-ing from the literature. In this paper, we bridge this gap by constructing an ex-act analytical mapping—the Simplicial Bridge—that re-duces the high-dimensional partial differential equations of multi-soliton collisions into coupled oscillator networks on hypergraphs. We demonstrate that these higher-order topological interactions are the fundamental prerequisite for explosive phase synchronization and the stabilization of macroscopic magnetic chimera states [12] in struc-turally homogeneous materials. 
+
+II. THE SIMPLICIAL BRIDGE: FROM CONTINUUM TO HYPERGRAPH 
+
+To construct the exact analytical mapping from the continuous domain to a discrete hypergraph (see the the-oretical flowchart in Fig. 1), we first define the higher-order continuum Hamiltonian. 
+
+A. The Higher-Order Continuum Hamiltonian 
+
+We consider a one-dimensional magnetic lattice where the magnetization is confined to the easy plane, pa-rameterized by the azimuthal angle Θ( x, t ) such that 
+
+S = (cos Θ , sin Θ , 0). We extend the standard free en-ergy functional by incorporating a macroscopic four-spin scalar interaction (biquadratic exchange). In the contin-uum limit, this manifests as an energy penalty on the 
+
+> arXiv:2604.10773v1 [nlin.PS] 12 Apr 2026
+
+2                 
+
+> Continuous Helimagnet
+> Landau-Lifshitz Continuum Multi-Spin Exchange
+> η∂ tΘ=2A∇2Θ
+> −12 Kbq (∇Θ) 2∇2Θ
+> −Bsin Θ
+> Higher-Order Network
+> Generalized Kuramoto Model Simplicial Topology
+> ˙ϕi=ωi+PJij sin(∆ ϕij )+PKijk sin(∆ ϕijk )
+> Macroscopic Phenomena
+> Explosive Synchronization Magnetic Chimera States
+> The Simplicial Bridge
+> 3-Soliton Ansatz
+> Overlap Integral RΨϕ· R triadic dx
+> Mean-Field Limit
+> Ott-Antonsen Ansatz Bipartite Topology
+
+FIG. 1. Conceptual flowchart outlining the theoretical framework of this study. The “Simplicial Bridge” provides the exact mathematical mapping from the infinite-dimensional non-linear continuum (governed by PDEs) to a discrete, finite-dimensional hypergraph (governed by Kuramoto ODEs). This topological reduction isolates the multi-spin interactions necessary to predict the emergence of explosive synchronization and magnetic chimeras. 
+
+spatial curvature of the magnetization field: 
+
+H =
+
+Z ∞−∞ 
+
+dx 
+
+"
+
+A
+
+ ∂Θ
+
+∂x 
+
+2
+
++ Kbq 
+
+ ∂Θ
+
+∂x 
+
+4
+
+− B cos Θ 
+
+#
+
+,
+
+(1) where A is the bilinear exchange stiffness, Kbq is the bi-quadratic multi-spin parameter, and B is the symmetry-breaking in-plane anisotropy. Assuming the heavily overdamped limit where preces-sional dynamics are negligible relative to dissipation, the resulting Landau-Lifshitz-Gilbert (LLG) dynamics yield the purely dissipative nonlinear wave equation: 
+
+η ∂Θ
+
+∂t = 2 A ∂2Θ
+
+∂x 2 − 12 Kbq 
+
+ ∂Θ
+
+∂x 
+
+2 ∂2Θ
+
+∂x 2 − B sin Θ ≡ N [Θ] ,
+
+(2) where η is the Gilbert damping coefficient. 
+
+B. Triadic Overlap and Network Reduction 
+
+To evaluate the simultaneous collision of three topo-logical defects, we employ a 3-soliton adiabatic ansatz, defined as the linear superposition of three unperturbed kink profiles centered at X1, X2, and X3: Θ( x, t ) = 
+
+P3 
+
+> i=1
+
+θ(i)0 (x − Xi, ϕ i). Substituting this ansatz into the nonlinear operator N [Θ] generates a residual overlap force R.By enforcing the Fredholm alternative to prevent sec-ular growth, we project this residual onto the rotational zero-mode of the defect core, Ψ (i) 
+
+> ϕ
+
+= ∂ϕi θ(i)0 . The asymp-totic evaluation of the spatial overlap integral exactly fac-tors the phase dependencies (detailed in Appendix A), reducing the infinite-dimensional PDE to a generalized Kuramoto model on a simplicial complex: 
+
+dϕ i
+
+dt = ωi+X
+
+> j
+
+Jij sin( ϕj −ϕi)+ X
+
+> j,k
+
+Kijk sin( ϕj +ϕk −2ϕi).
+
+(3) Here, Jij represents standard bilinear exchange, while 
+
+Kijk is the emergent triadic coupling tensor driven by 
+
+Kbq . This rigorous mapping proves that continuous he-limagnets with multi-spin interactions operate topolog-ically as hypergraphs, interacting via 2-simplices (filled triangles). While this rigorous derivation relies on the one-dimensional asymptotic profiles of helimagnetic kinks, it establishes a fundamental topological blueprint that ex-tends to higher dimensions. In two-dimensional magnetic films, topological defects such as skyrmions exhibit radial profiles governed by modified Bessel functions. However, their collective phase dynamics similarly map onto gen-eralized Kuramoto hypergraphs, where the effective cou-pling tensors Kijk scale with the radial overlap integrals of their two-dimensional asymptotic tails, preserving the triadic symmetry breaking. 
+
+III. NETWORK TOPOLOGY OF MAGNETIC LATTICES 
+
+To analyze the collective dynamics, we consider heli-magnetic solitons pinned to a bipartite honeycomb struc-ture, ubiquitous in transition metal dichalcogenides. 
+
+A. Chiral Symmetry and Dirac Points 
+
+The adjacency matrix A of the bipartite lattice as-sumes a block-off-diagonal form. The spectrum of A
+
+possesses perfect chiral symmetry: if μ is an eigenvalue, then −μ is also an eigenvalue. Consequently, the den-sity of states exhibits Dirac cones in momentum space, 
+
+ρ(λ) ∝ | λ − 3|. This structural depletion of the phase-space volume near the center of the spectrum fundamen-tally alters the specific heat capacity and shifts the crit-ical coupling threshold Kc required for macroscopic syn-chronization compared to standard non-bipartite lattices. 3
+
+B. Frustration-Free Antiferromagnetic Locking 
+
+For defects with opposite chiral charges ( σiσj = −1), the effective bilinear phase coupling is antiferromagnetic (K < 0). On a bipartite lattice, a local gauge transforma-tion ( θj = ϕj −π for the B sublattice) maps the antiferro-magnetic Kuramoto model exactly to the ferromagnetic case. This proves that, unlike the geometric frustration seen in triangular lattices, the helimagnet will uncondi-tionally phase-lock into a stable, macroscopic staggered 
+
+π-phase state. 
+
+IV. MACROSCOPIC PHASE DYNAMICS 0.0 0.1 0.2 0.3 0.4   
+
+> Bilinear Exchange Coupling ( K1)
+> 0.0
+> 0.2
+> 0.4
+> 0.6
+> 0.8
+> 1.0
+> Macroscopic Order Parameter ( R)
+> Forward Jump
+> Backward Collapse
+> Thermodynamic Phase Diagram of Magnetic Synchronization
+> Continuous ( K2= 0.0)
+> Explosive Stable ( K2= 0.4)
+> Unstable Branch
+> Incoherent State (Stable)
+> Bistable Regime
+
+FIG. 2. Thermodynamic phase diagram demonstrating explo-sive synchronization. The curves represent the steady-state macroscopic order parameter R as a function of the bilin-ear exchange coupling K1. For purely pairwise interactions (K2 = 0 .0, solid blue line), the system undergoes a contin-uous second-order phase transition. When triadic simplicial coupling is activated ( K2 = 0 .4), the transition becomes ex-plosive (first-order), characterized by a stable upper branch (solid red line) and an unstable manifold (dashed red line). The shaded region delineates the bistable regime where the system exhibits a massive hysteresis loop bounded by the for-ward jump and backward collapse thresholds. 
+
+To theoretically validate the phase transitions in the thermodynamic limit ( N → ∞), we apply the Ott-Antonsen ansatz [14]. Assuming a Lorentzian distribu-tion of natural frequencies with variance ∆, the dynamics collapse onto a low-dimensional manifold governing the complex order parameter Z(t) = R(t)eiΨ( t). The steady-state equation defining the phase boundaries is: 2∆ = (1 − R2)( K1 + K2R2), (4) where K1 and K2 are the mean-field pairwise and tri-adic coupling strengths. It is critical to note that the Ott-Antonsen ansatz strictly assumes an all-to-all (glob-ally coupled) interaction topology. While the physical honeycomb lattice is structurally sparse (degree k = 3), this mean-field limit provides the exact thermodynamic envelope for the macroscopic phase transitions. Local clustering and finite-size fluctuations in the sparse net-work slightly smear the non-analytic cusps at the critical thresholds, but the underlying topological folding—the bistable hysteresis loop—remains a robust feature of the dynamics. As illustrated in Fig. 2, when K2 = 0, the system un-dergoes a standard second-order phase transition, scaling critically as R ∝ (K1 − Kc 
+
+> 1
+
+)1/2. However, when triadic interactions are activated ( K2 > 0), the topology of the transition fundamentally transforms. The triadic terms act as a nonlinear feedback mechanism that accelerates phase coherence, triggering a first-order, explosive syn-chronization transition. Forward continuation ( K1 increasing) traps the sys-tem in a disordered state past the linear instability point, followed by an abrupt jump to R ≈ 1. Backward con-tinuation ( K1 decreasing) maintains synchronization well below the forward threshold, defining a massive hystere-sis loop. Finite-size scaling analysis confirms that the Kramers escape time from these metastable states di-verges exponentially with system size N , ensuring the robustness of the bistable regime in real physical materi-als. 
+
+V. DISCUSSION: SPONTANEOUS MAGNETIC CHIMERAS 0 25 50 75 100 125           
+
+> Spatial Coordinate x
+> 0
+> 20
+> 40
+> 60
+> 80
+> 100
+> 120
+> Spatial Coordinate  y
+> Instantaneous Defect Phase ( x,y)
+> 025 50 75 100 125
+> Spatial Coordinate x
+> 0
+> 20
+> 40
+> 60
+> 80
+> 100
+> 120
+> Local Coherence Field ( Rlocal )
+> 0
+> 2
+> 0.0
+> 0.2
+> 0.4
+> 0.6
+> 0.8
+> 1.0 Coherence Magnitude
+
+FIG. 3. Spatial manifestation of the magnetic chimera state on a simulated 128 × 128 helimagnetic lattice. (Left) The instantaneous defect phase ϕx,y reveals spontaneous spatial symmetry breaking in a structurally homogeneous material. Large, smooth, phase-locked domains coexist alongside gran-ular, heavily fluctuating regions. (Right) The local coherence field Rlocal maps these dynamics to experimental observables (such as time-averaged LTEM or FMR). The bright, high-intensity regions ( R ≈ 1) act as rigid magnonic crystals, while the dark voids ( R ≈ 0) represent the completely incoherent spin liquid. 
+
+The most profound physical consequence of this bista-bility is the spontaneous breaking of dynamical symme-try in a structurally homogeneous material. The mean-field theory predicts a global thermodynamic bistability (the system resolves entirely to either R ≈ 1 or R ≈ 0). However, the introduction of spatial non-locality in the 4physical 2D lattice arrests this global phase separation. Pinned by the finite interaction radius, the helimagnet partitions into spatially distinct domains: a “frozen” core of perfectly phase-locked solitons (a magnonic crystal) stably coexisting with a “fluctuating” sea of incoherent defects (a spin liquid). This represents a macroscopic magnetic chimera state, visualized via numerical integra-tion in Fig. 3. While intrinsic biquadratic exchange is typically weaker than bilinear exchange, specific experi-mental conditions—such as extreme substrate strain or the magic-angle tuning of Moir´ e superlattices—can ar-tificially amplify the effective K2/K 1 ratio, pushing the material into the explosive regime necessary to stabilize these domains. Detecting these dynamical domains requires experi-mental techniques sensitive to temporal phase coherence. In real-space Lorentz Transmission Electron Microscopy (LTEM), the synchronized domains will appear as rigid, high-contrast lattices, while the fluctuating domains will blur into a time-averaged diffuse background. In mo-mentum space, Ferromagnetic Resonance (FMR) spec-troscopy will reveal a sharp Kittel mode absorption peak (the synchronized breather) superimposed atop a broad, heavily damped continuum background. Frustrated 2D van der Waals magnets (e.g., Fe 3GeTe 2) and twisted Moir´ e superlattices are prime material candidates for hosting these states due to their strong, tunable effec-tive multi-spin interactions.  
+
+> VI. CONCLUSION
+
+By bridging the nonlinear continuous dynamics of the Landau-Lifshitz equation with higher-order network topology, we have uncovered a novel mechanism for ex-plosive synchronization in quantum materials. The Sim-plicial Bridge mathematically proves that multi-spin in-teractions generate triadic network couplings, which are the fundamental prerequisite for stabilizing magnetic chimera states. The dynamic boundary of these chimera states acts as a tunable, nonreciprocal interface for spin waves. By controlling the local parameters to shift the system across the explosive synchronization boundary, these magnetic topologies offer a native, hardware-level substrate for reconfigurable magnonic reservoir comput-ing. 
+
+> Appendix A: Explicit Evaluation of the Triadic Spatial Integral
+
+To rigorously prove that the triadic coupling Kijk does not vanish due to symmetry cancellations at order O(ϵ2), we evaluate the spatial integral governing the projection of the biquadratic continuum force onto the translational zero-mode. Isolating a 2-simplex of solitons centered at X1, X2,and X3, we place the reference frame at the mediating core ( X1 = 0), with X2 ≫ w and X3 ≪ − w. The effec-tive spatial overlap integral is: 
+
+I123 =
+
+Z ∞−∞ 
+
+∂θ (1) 0
+
+∂x 
+
+> 2
+
+θ(2) 0 (x) θ(3) 0 (x) dx. (A1) Substituting the exact helimagnetic kink solutions, the squared gradient of the central core is (4 /w 2) sech 2(x/w ). In the neighborhood of the origin, the outer spatial profiles exist as asymptotic exponential tails: θ(2) 0 ≈
+
+4 exp[ −(X2 − x)/w ] and θ(3) 0 ≈ 4 exp[ −(x − X3)/w ]. The integral simplifies to: 
+
+I123 = 64 
+
+w2 exp 
+
+
+
+− X2 − X3
+
+w
+
+
+
+×
+
+Z ∞−∞ 
+
+sech 2  xw
+
+
+
+exp 
+
+ xw
+
+
+
+exp 
+
+
+
+− xw
+
+
+
+dx. (A2) The arguments of the exponential tails inside the integral perfectly cancel. The remaining integrand, sech 2(x/w ), is a strictly positive, even-parity function that evaluates exactly to 2 w. Therefore, the integral un-conditionally converges to a non-zero value: 
+
+I123 = 128 
+
+w exp 
+
+
+
+− X2 − X3
+
+w
+
+
+
+> 0. (A3) Because the spatial integrand possesses even parity and is strictly positive everywhere, there is no destructive in-terference. This formally establishes the survival of the sin( ϕj + ϕk − 2ϕi) triadic phase force in the thermody-namic limit.                 
+
+> [1] T. Moriya, “Anisotropic Superexchange Interaction and Weak Ferromagnetism,” Phys. Rev. 120 , 91 (1960). [2] N. Nagaosa and Y. Tokura, “Topological properties and dynamics of magnetic skyrmions,” Nat. Nanotechnol. 8,899 (2013). [3] A. M. Kosevich, B. A. Ivanov, and A. S. Kovalev, “Mag-netic solitons,” Phys. Rep. 194 , 117 (1990). [4] H. B. Braun, “Topological effects in nanomagnetism: from superparamagnetism to chiral quantum solitons,” Adv. Phys. 61 , 1 (2012). [5] A. N. Bogdanov and D. A. Yablonskii, “Thermodynam-ically stable ’vortices’ in magnetically ordered crystals. The mixed state of magnets,” Sov. Phys. JETP 68 , 101 (1989). [6] N. Romming, C. Hanneken, M. Menzel, J. E. Bickel, B. Wolter, K. von Bergmann, A. Kubetzka, and R. Wiesendanger, “Writing and deleting single magnetic skyrmions,” Science 341 , 636 (2013).
+
+5
+
+[7] C. Huang, J. Zhou, H. Wu, K. Deng, P. Jena, and E. Kan, “Biquadratic and ring exchange interactions in two-dimensional magnets,” Phys. Rev. B 101 , 134424 (2020). [8] Y. Song et al. , “Effect of biquadratic magnetic exchange interaction in the 2D antiferromagnets MPS3,” J. Magn. Magn. Mater. 601 , 171350 (2024). [9] D. L´ opez-Alcal´ a et al. , “Controlling Magnetism in the 2D van der Waals Antiferromagnet CrPS 4 via Ion Intercala-tion,” Nano Lett. 26 , 1234 (2026). [10] D. Biswas and S. Gupta, “Symmetry-breaking higher-order interactions in coupled phase oscillators,” Chaos, Solitons & Fractals 181 , 114631 (2024). [11] A. Sharma, “Explosive synchronization driven by re-pulsive higher-order interactions in coupled neurons,” Chaos, Solitons & Fractals 196 , 116007 (2025). [12] D. M. Abrams and S. H. Strogatz, “Chimera States for Coupled Oscillators,” Phys. Rev. Lett. 93 , 174102 (2004). [13] Y. S. Kivshar and B. A. Malomed, “Dynamics of solitons in nearly integrable systems,” Rev. Mod. Phys. 61 , 763 (1989). [14] E. Ott and T. M. Antonsen, “Low dimensional behavior of large systems of globally coupled oscillators,” Chaos 
+
+18 , 037113 (2008).

@@ -1,0 +1,38 @@
+{
+  "version": 2,
+  "extractor": "pdffigures2",
+  "figures": [
+    {
+      "url": "assets/figures/arxiv/2604.14947v1/fig-001.webp",
+      "caption": "Figure 1: Altermagnetic order and magneto-optical imaging of MnTe. (A) Crystal and magnetic structure of the altermagnet MnTe. The crystal structure is drawn based on Ref. (13). The blue and red arrows indicate magnetic moments on Mn ions, pointing +𝑎∗ and −𝑎∗ directions, respectively (14). The two distinct Mn layers are distinguished by the color of surrounding Te octahedra (yellow or green). (B) Six possible magnetic ordered structures and illustration of their MOKE responses. Among the six possible magnetic structures, three structures that are mutually converted by ±120◦ rotations exhibit Kerr rotation of positive sign, whereas the other three exhibit negative Kerr rotation. Kerr rotation are measured as the excessive phase factor gained by either of the two circular polarized lights. (C) 6-𝜇m-step mapping of the 2nd harmonic voltage 𝑉2 𝑓 , which is proportional to the reflected light power. The bright region is the MnTe sample. Directions of crystalline axes are indicated. (D) Kerr-angle mapping of the MnTe sample measured with 6-𝜇m steps. The red and blue colors indicate the size and sign of the Kerr angle, as indicated by the color bar. We succeeded in observing clear magnetic domains with positive or negative Kerr angles. The pixels with 𝑉2 𝑓 < 30 mV are shown with gray, since these pixels have very weak light reflection and the Kerr angle contains large uncertainty.",
+      "page": 11,
+      "index": 1,
+      "width": 916,
+      "height": 563
+    },
+    {
+      "url": "assets/figures/arxiv/2604.14947v1/fig-002.webp",
+      "caption": "Figure 3: Thermal and magnetic control of the altermagnetic domain in MnTe. (A-C) 6-𝜇mstep Kerr mappings taken after warmings above 𝑇N. Parts of the domain configuration changes by thermal cycles, indicating spontaneous nature of the altermagnetic order. (D) Kerr mappings taken after cooling in positive magnetic fields of around +0.1 T. (E) Same mapping upon −0.1-T field cooling. Majority of the domains are trained by field coolings. (F) Line cuts of the images A (gray curves), D (red curves), and F (blue curves). The 𝑥 dependences of the Kerr angle at various 𝑦 positions indicated in the panels are shown. In many parts of the sample, the magnetic trainings alter the sign of the Kerr angle while preserving detailed structures in the magnitude of the Kerr angle.",
+      "page": 13,
+      "index": 2,
+      "width": 743,
+      "height": 546
+    },
+    {
+      "url": "assets/figures/arxiv/2604.14947v1/fig-003.webp",
+      "caption": "Figure 2: Spontaneous Kerr rotation due to the altermagnetic order of MnTe. (A-D) 6- 𝜇m-step Kerr mappings measured at various temperatures. After cooling to 293 K, each scan was performed while warming. The domain structure weakens upon warming and completely disappears at 𝑇N = 303 K. (E) Histogram of the number of pixels of the images A-D as a function of the Kerr angles. The histogram bin is chosen to be 2.0 𝜇rad and pixels with sufficiently large reflection (𝑉2 𝑓 > 30 mV) are only counted. (F) Temperature dependence of the standard deviation 𝜎K of the distribution shown in E. This quantity roughly correspond to the half width of the distribution peak. Notice that 𝜎K almost disappears at 𝑇N. (G) Theoretical photon-energy ℏ𝜔ph dependence of the Kerr angle evaluated based on first-principles band calculations. Calculation without (blue curve) and with (orange curve) an intentional magnetic-moment canting shows little difference, and both shows finite Kerr angle at various ℏ𝜔ph, including at the experimental photon energy of 0.8 eV. This comparison indicates that the observed Kerr angle is intrinsic to the altermagnetism, but not attributable to the canted magnetization.",
+      "page": 12,
+      "index": 3,
+      "width": 938,
+      "height": 537
+    },
+    {
+      "url": "assets/figures/arxiv/2604.14947v1/fig-004.webp",
+      "caption": "Figure 4: Mesoscopic domain structures. (A) 1-𝜇m-step 𝑉2 𝑓 mapping (reflectivity mapping) near the edge of the MnTe sample. (B) Kerr mapping on the area same as A. (C) Line profile of 𝑉2𝐹 (𝑥) (top) and 𝜃K(𝑥) (bottom) at 𝑦 = 90 𝜇m. There is no strong correlation between the surface reflectivity and the Kerr angle. The red dashed curve shows a result of fitting to the 𝜃K(𝑥) near the domain wall. This fit yields the observed domain wall width of 𝑤DW ∼ 2.4 𝜇m, which is likely to be limited by the apparatus spatial resolution.",
+      "page": 14,
+      "index": 4,
+      "width": 291,
+      "height": 665
+    }
+  ]
+}

@@ -1,0 +1,1836 @@
+Title: Geometric Phases and Persistent Spin Currents from nonminimal couplings
+
+URL Source: https://arxiv.org/pdf/2604.07731v1
+
+Published Time: Fri, 10 Apr 2026 00:26:17 GMT
+
+Number of Pages: 23
+
+Markdown Content:
+# Geometric Phases and Persistent Spin Currents from nonminimal couplings 
+
+João A.A.S. Reis ,1, ∗ L. Lisboa-Santos ,2, † and Edilberto O. Silva 3, ‡
+
+> 1
+
+Departamento de Ciências Exatas e Naturais, Universidade Estadual do Sudoeste da Bahia, Itapetinga (BA), 45700-000, Brazil 
+
+> 2
+
+Programa de Pós-Graduação em Física, Universidade Federal do Maranhão, Campus Universitário do Bacanga, São Luís (MA), 65085-580, Brazil 
+
+> 3
+
+Departamento de Física, Universidade Federal do Maranhão, 65085-580 São Luís, Maranhão, Brazil 
+
+(Dated: April 10, 2026) We investigate a class of nonminimal derivative couplings between fermions and electromagnetic fields that generate Rashba-like spin–orbit interactions in one-dimensional quantum rings. Starting from a generalized Dirac Lagrangian containing two independent axial structures built from the field strength Fμν and its dual ˜Fμν , we perform a systematic nonrelativistic expansion and show that both couplings induce effective Hamiltonians of the form F · (p × σ). This reveals that magnetic as well as electric background fields may give rise to Rashba-type interactions, in contrast with standard condensed-matter scenarios. Before passing to the nonrelativistic limit, we analyze the relativistic content of the model in detail: the canonical structure of the deformed Dirac operator, the admissible background classes, the effective bilinear current, and the branch splitting of the rel-ativistic dispersion relation, which constitutes the primary relativistic signature of the theory. We derive exact analytical energy levels and normalized eigenspinors for the resulting ring Hamiltonian, compute Aharonov–Anandan geometric phases, and analyze persistent spin currents together with the associated differential spin response Gs = ∂J zφ /∂ξ . Exploiting the analytical control offered by the model, we derive the first systematic order-of-magnitude bounds on the two Lorentz-invariant couplings g1 and g2 from both spectroscopic and mesoscopic scenarios, identifying the experimental channels most sensitive to the new physics encoded in these operators. We discuss physical im-plications, signatures, and possible experimental analogs, and outline several promising directions involving disorder, noise, and nonequilibrium spin dynamics. 
+
+I. INTRODUCTION 
+
+Spin–orbit coupling constitutes one of the central orga-nizing principles of modern condensed-matter and meso-scopic physics, governing phenomena such as the spin Hall effect [1, 2], persistent spin currents, geometric phases, and the emergence of topological states of mat-ter [3–5]. Among the various realizations of spin–orbit coupling, the Rashba mechanism [6, 7] occupies a priv-ileged position: it arises whenever structural inversion symmetry is broken, it is intrinsically tunable through external gate voltages or electromagnetic fields [8], and it directly links spin dynamics to orbital motion in a geometrically transparent way. Since its original for-mulation, the Rashba interaction has become a corner-stone of spintronics [9, 10], providing the microscopic foundation for spin-field-effect transistors [11], spin-orbit torques [12], and topological edge states [3, 4]. A complementary thread in mesoscopic physics con-cerns the geometric structure of quantum states in pa-rameter space. Following the seminal work of Berry [13] on adiabatic phases, Aharonov and Anandan [14] gener-alized the concept to arbitrary cyclic evolutions, show-ing that any closed path in Hilbert space accumu-   
+
+> ∗joao.reis@uesb.edu.br
+> †leticia.lisboa@discente.ufma.br
+> ‡edilberto.silva@ufma.br
+
+lates a gauge-invariant geometric phase. In meso-scopic systems threaded by magnetic flux, the Aharonov– Bohm effect [15] provides the prototypical realization of such phase sensitivity. When spin–orbit coupling is present, the interplay between the Aharonov–Bohm and Aharonov–Anandan phases gives rise to nontrivial inter-ference patterns [16, 17] whose experimental detection in semiconductor rings has been reported [8, 18, 19]. Quantum rings constitute especially fertile platforms for exploring these phenomena [20, 21]. Their one-dimensional topology forces the spinor to complete a closed trajectory at each revolution, converting the spa-tial periodicity into a direct probe of phase accumulation and spin precession. The persistent charge current [22– 25] and, more recently, persistent spin currents [16, 26– 28] have been studied extensively in this geometry. The sensitivity of these quantities to the Rashba coupling pa-rameter makes quantum rings natural detectors of any mechanism that modifies the effective spin–orbit struc-ture of the one-particle Hamiltonian. From a fundamental perspective, the question of how spin–orbit interactions can emerge from relativis-tic quantum field theory—rather than being postulated phenomenologically—motivates the exploration of non-minimal couplings in the Dirac equation. Such couplings arise naturally in several distinct theoretical contexts. In the Standard Model Extension (SME) [29–31], nonmini-mal operators encode departures from Lorentz and CPT symmetry, and their fermion–photon sector has been sys-
+
+> arXiv:2604.07731v1 [hep-th] 9 Apr 2026
+
+2tematically classified [32]. In axion electrodynamics and axion-like particle models [33, 34], derivative couplings between fermions and electromagnetic backgrounds ap-pear as effective operators generated by integrating out the axion field. In emergent gauge theories of condensed-matter systems [35, 36], analogous structures arise as low-energy descriptions of topological phases. In each of these frameworks, the nonminimal coupling enters as a dimension-six operator suppressed by a high-energy scale, and its physical content is carried by the com-bination of the Wilson coefficient with the background electromagnetic field. In this work we revisit a general Dirac Lagrangian containing two independent nonminimal derivative cou-plings: one involving Fμν and another involving the dual tensor ˜Fμν , both of the axial type. The two opera-tors are Lorentz-invariant and belong to the dimension-six fermion–photon sector of the general effective-field-theory framework of Ref. [32]. Although the full relativis-tic dynamics is involved, we show that the corresponding nonrelativistic limit yields a simple and unified effective Hamiltonian. Both sectors generate a term of the form 
+
+F · (p × σ), implying that not only electric fields but also magnetic fields can induce Rashba-like interactions, in sharp contrast with the standard condensed-matter sce-nario where the Rashba coupling is exclusively driven by structural electric fields [7]. After deriving the effective Hamiltonian, we apply it to electrons confined to a one-dimensional quantum ring. We obtain exact analytical expressions for the spectrum and eigenspinors, compute associated geometric phases of the Aharonov–Anandan type, and evaluate persistent spin currents. We also analyze the thermodynamic be-havior using both the canonical and grand-canonical en-sembles, and extend the model to include interactions through a mean–field density-dependent potential. This allows us to identify how the modified dispersion rela-tion affects thermal, magnetic and transport properties. Finally, exploiting the analytical control offered by the model, we extract the first systematic order-of-magnitude bounds on the couplings g1 and g2 from spectroscopic and mesoscopic observables. The results reveal novel features of electromagnetic-field-induced Rashba systems, including modified persis-tent currents, distinctive phase contributions, nontriv-ial thermodynamic responses, and a differential spin re-sponse Gs that plays the role of a mesoscopic spin conduc-tance. Possible connections with axion-like models [33], synthetic gauge fields [37, 38], and ring-shaped experi-mental platforms are briefly discussed.  
+
+> II. GENERAL MODEL
+
+This section establishes the relativistic starting point of the analysis and identifies the background structures that later generate the effective spin–orbit interaction. Our aim here is not yet to derive the low-energy Hamil-tonian, but rather to show, already at the Dirac level, why the present class of couplings is capable of produc-ing nontrivial geometric spin dynamics. We consider the interaction Lagrangian 
+
+Lint = 12 ¯ψ
+
+
+
+g1 Fμν γμγ5 iD ν + g2 ˜Fμν γμγ5 iD ν 
+
+ψ + H .c., 
+
+(1) where 
+
+˜Fμν = 12 ϵμνρσ F ρσ , Dμ = ∂μ + ieA μ. (2) The physical content of Eq. (1) is worth emphasizing from the outset. The coupling g1 probes the ordinary electro-magnetic tensor, whereas g2 probes its dual. More im-portantly, both interactions are derivative couplings: the background does not simply act as an external potential, but rather enters the operator that controls the propa-gation of the fermion itself. This is the basic reason why the model is able to generate effective momentum–spin structures instead of only static energy shifts. In order to place Eq. (1) within a broader effective-field-theory framework, it is convenient to relate it to the general dimension-six fermion–photon sector [32]. A useful parametrization is 
+
+L(6)  
+
+> dF
+
+= 12 ¯ψ
+
+
+
+d(6) μαβγ F Fβγ γ5γμ iD α
+
+
+
+ψ + H .c., (3) where d(6) μαβγ F is a rank-four tensor encoding the ad-missible nonminimal couplings. The particular model studied here is obtained by the Lorentz-invariant axial truncation 
+
+d(6) μαβγ F, model = g1
+
+2
+
+ ημβ ηαγ − ημγ ηαβ  + g2
+
+2 ϵμαβγ . (4) Substituting Eq. (4) into Eq. (3), one obtains 
+
+g1
+
+2
+
+ ημβ ηαγ − ημγ ηαβ  Fβγ = g1F μα , (5) 
+
+g2
+
+2 ϵμαβγ Fβγ = g2 ˜F μα , (6) where the antisymmetry of Fβγ has been used in the first identity. These intermediate steps make clear that the two couplings retained in Eq. (1) correspond to two in-dependent tensorial sectors of the same effective theory. This EFT interpretation is useful for two reasons. First, it shows that the model is not an ad hoc ansatz, but a well-defined truncation of a broader relativistic opera-tor basis. Second, it makes clear that the two branches, although they may later lead to similar low-energy struc-tures, are microscopically distinct from the start: one is tied to Fμν and the other to ˜Fμν .The interaction in Eq. (1) is written in the standard 
+
+¯ψ Γ iDψ + H .c. form. An equivalent formulation can be written using the symmetrized derivative i←→
+
+D μ, differing only by total derivatives and terms involving derivatives 3of the background fields, which are irrelevant under suit-able boundary conditions. Since the operators in Eq. (1) have mass dimension six, the couplings satisfy 
+
+[g1] = [ g2] = −2, (7) and should therefore be interpreted as effective parame-ters suppressed by a high-energy scale. Adding the free Dirac sector, 
+
+L = ¯ψ(iγ μDμ − m)ψ + Lint , (8) and varying with respect to ¯ψ, we obtain the modified Dirac equation 
+
+
+
+iγ μDμ + g1Fμν γμγ5iD ν + g2 ˜Fμν γμγ5iD ν − m
+
+
+
+ψ = 0 .
+
+(9) Equation (9) is the fundamental relativistic object of the model. It already shows that the electromagnetic back-ground affects the one-particle dynamics through the op-erator multiplying the derivatives, not merely through an additive interaction term. For that reason, the resulting theory is sensitive to the orientation of the background tensors and to the way in which they contract with the fermion four-momentum. This is the first indication that the low-energy sector will contain genuinely geometric spin-dependent couplings rather than only conventional Zeeman-like contributions. It is useful to rewrite Eq. (9) in the compact form 
+
+(iΓν 
+
+> eff
+
+Dν − m) ψ = 0 , (10) with 
+
+Γν 
+
+> eff
+
+= γν + g1Fμν γμγ5 + g2 ˜Fμν γμγ5. (11) This rewriting is more than a compact notation. It makes explicit that the model may be viewed as a Dirac theory in which the kinetic matrices themselves are deformed by an axial electromagnetic background. In other words, the relativistic dynamics is modified at the level of prop-agation, not merely at the level of external forcing. This observation provides the natural bridge to the next section. Rather than immediately reducing Eq. (9) to its nonrelativistic limit, we first examine the rela-tivistic content of the effective operator in Eq. (11): its canonical structure, the conditions under which the time evolution remains well posed, the effective bilinear cur-rent associated with the deformed kinetic sector, and the spectral problem defined by plane-wave propagation in constant backgrounds. Only after this relativistic anal-ysis do we pass to the low-energy Hamiltonian and its realization on a quantum ring.  
+
+> III. RELATIVISTIC DIRAC DYNAMICS FROM NONMINIMAL AXIAL DERIVATIVE COUPLINGS
+
+We now take Eq. (10) as the central object of the anal-ysis. The purpose of this section is to extract the gen-uinely relativistic content of the theory before passing to the Foldy–Wouthuysen reduction. This step is important for the logic of the paper. If one moves too quickly to the low-energy regime, the effective spin–orbit interac-tion may look like a formal byproduct of the expansion. By contrast, once the relativistic equation is examined on its own terms, one sees that the later Rashba-like struc-ture is the infrared manifestation of a more fundamental deformation of the Dirac kinetic operator by electromag-netic tensor backgrounds. 
+
+a. Canonical structure and admissible relativistic sec-tors. Starting from 
+
+(iΓν 
+
+> eff
+
+Dν − m) ψ = 0 , (12) the first question is whether the modified equation still defines a sensible first-order evolution problem. Isolating the time derivative, one finds 
+
+iΓ0eff ∂0ψ =
+
+h
+
+− iΓj 
+
+> eff
+
+∂j + m + e Γμ 
+
+> eff
+
+Aμ
+
+i
+
+ψ, (13) with 
+
+Γ0eff = γ0 + g1Fμ0γμγ5 + g2 ˜Fμ0γμγ5. (14) Equation (14) is already highly informative. It shows that the nonminimal background may deform not only the spatial propagation of the fermion, but also the co-efficient of the first time derivative itself. This is the point at which the relativistic theory acquires conceptual autonomy. Before any low-energy approximation is per-formed, one must first identify the classes of background for which the Cauchy problem remains well posed and the one-particle Hamiltonian interpretation survives. Whenever Γ0eff is invertible, Eq. (13) can be written formally as 
+
+i∂ 0ψ = Heff ψ, (15) with 
+
+Heff = (Γ 0eff )−1 h
+
+− iΓj 
+
+> eff
+
+∂j + m + e Γμ 
+
+> eff
+
+Aμ
+
+i
+
+. (16) This expression should be read as a structural statement rather than as the final Hamiltonian formula to be used later. Its role here is to make explicit that the very exis-tence of a Hamiltonian description hinges on the tempo-ral operator Γ0eff .A particularly clean and physically transparent sub-sector is obtained by imposing 
+
+Fi0 = 0 , ˜Fi0 = 0 . (17) Under these conditions the nonminimal terms do not deform the coefficient of the first time derivative, and the relativistic theory preserves the standard Dirac time-evolution structure. These static sectors therefore play a distinguished role throughout the paper: they are not merely convenient simplifications, but the simplest classes of backgrounds in which the relativistic dynamics 4admits a manifestly Hermitian one-particle interpreta-tion. More general background configurations may in prin-ciple be treated by means of a field redefinition, 
+
+ψ = B Ψ, (18) chosen so as to restore a canonical temporal structure. We do not need that construction here in full general-ity. What matters for the present discussion is that the temporal sector itself carries physical information: the admissibility of a background is controlled not only by how it affects the spatial couplings, but also by how it enters the time derivative of the Dirac equation. 
+
+b. Adjoint equation and effective bilinear current. 
+
+Because the derivative sector is deformed, the bilinear structure of the relativistic theory must also be reconsid-ered. Taking the adjoint of Eq. (12), one obtains 
+
+¯ψ
+
+
+
+− i←−
+
+Dν Γν 
+
+> eff
+
+− m
+
+
+
+= 0 . (19) Combining Eqs. (12) and (19), one is naturally led to define the effective current 
+
+Jμ 
+
+> eff
+
+= ¯ψ Γμ 
+
+> eff
+
+ψ. (20) For constant backgrounds, or more generally for slowly varying backgrounds such that derivative corrections may be neglected at the order of interest, the equations of motion imply 
+
+∂μJμ 
+
+> eff
+
+= 0 . (21) This current is the natural generalization of the usual Dirac current in the present framework. The point is physically important: once the background deforms the kinetic operator, the relevant density is no longer a priori the canonical ψ†ψ, but rather the density induced by the effective matrices themselves. A short intermediate manipulation makes this point transparent. Multiplying Eq. (12) on the left by ¯ψ and Eq. (19) on the right by ψ, one obtains 
+
+¯ψ Γμ 
+
+> eff
+
+Dμψ = −im ¯ψψ, (22) 
+
+(←−
+
+Dμ ¯ψ) Γ μ 
+
+> eff
+
+ψ = + im ¯ψψ. (23) Adding the two relations, the mass terms cancel and one is left with the divergence of the bilinear form in Eq. (20), up to derivatives of the background tensors. In the constant-background sector this immediately gives Eq. (21). In particular, 
+
+J0eff = ¯ψ Γ0eff ψ (24) is directly tied to the same structure that controls the well-posedness of the time evolution. Thus, the temporal sector plays a dual role: it governs both the existence of a sensible Hamiltonian formulation and the appropriate notion of relativistic probability density. 
+
+c. Discrete symmetries and physical distinction be-tween the two branches. Although the two couplings retained in the model lead to closely related spin–orbit structures at low energies, they are not microscopically equivalent. The g1 branch couples the axial fermion structure to the ordinary electromagnetic tensor Fμν ,whereas the g2 branch couples it to the dual tensor ˜Fμν .This distinction is already meaningful at the relativis-tic level and can be sharpened by recalling the standard transformation properties of the background fields: 
+
+P : E → − E, B → B, (25) 
+
+T : E → E, B → − B. (26) At the same time, the spatial derivative changes sign un-der both P and T , while the spatial axial structure car-ried by γiγ5 behaves as a spin-like object. These simple facts already explain why the two branches are inequivalent. In the static magnetic-type sector, 
+
+Fij = ϵijk Bk, (27) whereas in the static electric-type sector, 
+
+˜Fij = −ϵijk Ek. (28) Thus the two interactions couple the same axial fermion structure to backgrounds with different parity and time-reversal assignments. Their later convergence into a com-mon Rashba-like infrared form should therefore be inter-preted as an effective universality, not as a microscopic identification. Operationally, the g1 branch may be viewed as the magnetic-type sector of the theory, while the g2 branch naturally emphasizes the electric-type sector. This is use-ful not only conceptually but also editorially: it high-lights that the effective spin–orbit interaction discussed later is not inserted by hand, but emerges as the com-mon low-energy footprint of two distinct relativistic ten-sor couplings. 
+
+d. Plane-wave propagation and the relativistic spec-tral problem. A second genuinely relativistic aspect of the theory concerns fermion propagation in constant backgrounds. For uniform fields, Eq. (12) admits plane-wave solutions of the form 
+
+ψ(x) = u(p)e−ip ·x, (29) where the spinor amplitude obeys 
+
+(Γ μ 
+
+> eff
+
+pμ − m) u(p) = 0 . (30) The corresponding relativistic dispersion relation follows from the secular equation 
+
+det(Γ μ 
+
+> eff
+
+pμ − m) = 0 . (31) Equation (31) is the central spectral equation of the relativistic theory. Even before any nonrelativistic reduc-tion is performed, it already shows that the background 5may deform the usual mass shell, split branches according to spinor structure, and generate anisotropic dependence on the relative orientation between momentum and back-ground. These features become especially transparent in the static subclasses introduced above. In the magnetic-type branch, with g1̸ = 0 , g2 = 0 , and Fi0 = 0 , the Dirac equation reduces to 
+
+ iγ μ∂μ + g1Fij γiγ5 i∂ j − m ψ = 0 . (32) To exhibit explicitly the branch splitting, let us choose a constant magnetic field along the z axis, 
+
+B = B ˆz, F12 = B, (33) and a plane wave propagating along the x direction, 
+
+pμ = ( E, p, 0, 0) . (34) Under these conditions, Eq. (30) becomes 
+
+
+
+γ0E − γ1p − ηB p γ 2γ5 − m
+
+
+
+u(p) = 0 , ηB ≡ g1B. 
+
+(35) The determinant of the 4 × 4 operator factorizes as 
+
+det DB = det 
+
+
+
+γ0E − γ1p − ηB p γ 2γ5 − m
+
+
+
+=
+
+h
+
+m2 + p2(1 + η2 
+
+> B
+
+) − E2 − 2mη B p
+
+i
+
+×
+
+h
+
+m2 + p2(1 + η2 
+
+> B
+
+) − E2 + 2 mη B p
+
+i
+
+. (36) Therefore, the relativistic dispersion relation splits into two branches, 
+
+E2 
+
+> ±
+
+= m2 + p2(1 + η2 
+
+> B
+
+) ± 2mη B p. (37) This explicit example is useful for several reasons. First, it shows concretely that the background deforms the relativistic mass shell. Second, it exhibits branch splitting already at the Dirac level, before any Foldy– Wouthuysen expansion is performed. Third, it makes the directional character of the interaction transparent: the effect is maximal when the momentum is transverse to the magnetic field, whereas for momentum parallel to 
+
+B the tensor contraction vanishes and the spectrum re-verts to the undeformed Dirac form. In this sense, the spectral anisotropy is not a secondary detail, but one of the defining relativistic signatures of the model. Figure 1 illustrates the two central predictions of Eq. (37) at the relativistic level. First, for any ηB̸ = 0 
+
+the mass shell splits into two distinct branches: the E+
+
+branch is systematically enhanced with respect to the free-particle value, while the E− branch is suppressed. The splitting grows as 2mη B p at leading order and there-fore becomes increasingly pronounced at large momenta 
+
+p ≫ m, where the deformation term dominates over the mass contribution. Second, both branches coincide with the standard Dirac curve (gray) at p = 0 , confirming that 0.0 0.5 1.0 1.5 2.0 2.5 3.0                                 
+
+> p/m
+> 1.01.52.02.53.03.5
+> E/m
+> Branch splitting ∝ηB=g1B
+> E+branch
+> E−branch
+> ηB= 0 .00
+> ηB= 0 .15
+> ηB= 0 .30
+> ηB= 0 .45
+> FIG. 1. Relativistic dispersion relation E±/m as a function of the dimensionless momentum p/m for the magnetic-type branch of the nonminimal model, Eq. (37). Solid and dashed curves correspond to the E+and E−branches, respectively, for four representative values of the deformation parameter
+> ηB≡g1B∈ { 0.00 ,0.15 ,0.30 ,0.45 }. The shaded gray curve shows the undeformed Dirac dispersion E/m =p1 + ( p/m )2,recovered in the limit ηB→0.Translucent bands highlight the energy gap between the two branches for each value of
+> ηB.
+
+the splitting is a purely kinematic effect driven by the momentum–background tensor contraction: for vanish-ing spatial momentum the nonminimal sector contributes nothing to the energy. Together, these features charac-terize the branch splitting as a genuine relativistic sig-nature of the model, already present at the Dirac level before any Foldy–Wouthuysen reduction is performed. In the nonrelativistic limit, this splitting descends into the spin-dependent momentum shift that later governs the effective Rashba coupling on the ring. The electric-type branch behaves analogously. With 
+
+g1 = 0 , g2̸ = 0 , ˜Fi0 = 0 , and E = E ˆz, the reduced Dirac operator becomes 
+
+
+
+iγ μ∂μ + g2 ˜Fij γiγ5 i∂ j − m
+
+
+
+ψ = 0 , (38) and the same algebra yields an analogous branch splitting after the replacement 
+
+ηB = g1B −→ ηE = g2E. (39) Thus the two sectors are distinct in their microscopic origin but parallel in the way they reorganize relativistic propagation. 
+
+e. Background classification and low-energy bridge. 
+
+From the relativistic perspective, the admissible back-grounds may be organized in terms of the Lorentz invari-ants 
+
+I1 = Fμν F μν , I2 = Fμν ˜F μν , (40) 6together with the distinction between electric-type, magnetic-type, and mixed sectors. This classification is useful because it separates what is universal in the rela-tivistic theory from what belongs only to a later lower-dimensional realization. At this stage there is nothing intrinsically ring-like in the theory. The ring will en-ter only later as an analytically tractable geometry in which the background-induced spin structure becomes especially transparent. The essential relativistic lesson of the present section is therefore the following. The modified Dirac equation is already a nontrivial background-dependent propagation problem. Its temporal sector selects the admissible one-particle branches, its bilinear structure defines the ap-propriate effective current, and its plane-wave solutions reveal a deformed relativistic spectrum with directional spin dependence. The low-energy Hamiltonian to be de-rived in the next section should be read as a controlled descendant of this relativistic kinetic deformation. In that regime, the background-dependent terms in-herited from Γμ 
+
+> eff
+
+generate effective operators of the schematic form 
+
+HSO ∼ F · (p × σ), (41) with F standing for the effective tensor background as-sociated with either the Fμν or the ˜Fμν branch. The explicit Hamiltonian construction, the even–odd decom-position, and the Foldy–Wouthuysen reduction leading to Eq. (41) are developed in Sec. IV.  
+
+> IV. NONRELATIVISTIC LIMIT
+
+In this section we derive the full nonrelativistic limit of the modified Dirac equation introduced in Sec. II, and then perform a systematic dimensional reduction to obtain the Hamiltonian governing the dynamics of a fermion constrained to a one–dimensional ring of radius 
+
+r0 embedded in the plane. No approximation beyond the first order in 1/m is invoked, and all terms linear and quadratic in the nonminimal couplings g1 and g2 are re-tained.  
+
+> A. Modified Dirac equation and Hamiltonian form
+
+Our first goal is to cast the relativistic equation into a genuine Hamiltonian form. This step is essential because the Foldy–Wouthuysen procedure distinguishes between operators that act within a fixed energy sector and opera-tors that mix positive- and negative-energy components, and only in Hamiltonian language can that distinction be read off transparently. A crucial point in the present model is that the derivative couplings modify not only the spatial part of the Dirac operator, but also its temporal component. Therefore, before attempting any Hamiltonian or Foldy– Wouthuysen analysis, one must isolate and invert the op-erator multiplying the time derivative, as already stated in Eq 16. If we now define the quantity 
+
+Wi = −g1Ei + g2Bi, (42) and write 
+
+Γ0eff = β + K, K = Wiγiγ5, (43) then the algebraic properties of K are straightforward. One finds 
+
+[β, K ] = 0 , (44) and 
+
+K2 = W 2 1, W 2 = g21E2 + g22B2 − 2g1g2E · B. (45) Therefore, Γ0eff can be inverted exactly: 
+
+(Γ 0eff )−1 = β − K
+
+1 − W 2 , (46) provided 1 − W 2̸ = 0 . This expression shows explicitly that the temporal sector contributes nontrivially through 
+
+(Γ 0eff )−1, and therefore cannot be neglected in general. The resulting Hamiltonian can be cast in the form 
+
+Heff = eA 0 + (Γ 0eff )−1Γj 
+
+> eff
+
+πj + (Γ 0eff )−1m, (47) 
+
+Γν 
+
+> eff
+
+= γν + ∆ ν , ∆ν = g1Fμν γμγ5 + g2 ˜Fμν γμγ5.
+
+(48) This form makes explicit that the temporal sector enters not only through the electrostatic term eA 0, but also through the inverse operator (Γ 0eff )−1.In the regime |giFμν | ≪ 1, one may expand 
+
+(Γ 0eff )−1 = β − ∆0 + O(g2), (49) 
+
+Heff = βm + α · π + eA 0
+
++ β∆j πj − ∆0γj πj − m∆0 + O(g2). (50) Equation (50) is the appropriate starting point for the Foldy–Wouthuysen analysis. In physically relevant configurations such as static backgrounds with Fi0 = 0 or ˜Fi0 = 0 , one has ∆0 = 0 ,implying 
+
+Γ0 = β, (51) and the standard Hamiltonian structure is consistently recovered. This observation justifies the use of conven-tional nonrelativistic methods in those sectors, while the general formulation above provides the complete rela-tivistic framework. This decomposition already reveals the logic of the problem. The standard Dirac kinetic term α · π is odd in the Foldy–Wouthuysen sense and therefore mixes large and small components, whereas the nonminimal pieces may contribute to both diagonal and off-diagonal sectors depending on the background configuration. As a conse-quence, even weak values of g1 and g2 can leave nontriv-ial low-energy traces after the relativistic negative-energy sector is perturbatively removed. 7 
+
+> B. Even–odd decomposition
+
+The even–odd split organizes the Hamiltonian accord-ing to its physical effect on the Dirac bispinor. Even operators act within a fixed energy sector and survive di-rectly in the nonrelativistic limit, whereas odd operators mix positive- and negative-energy components and gen-erate effective Pauli and spin–orbit terms only after the Foldy–Wouthuysen transformation is carried out. Following the standard Foldy–Wouthuysen (FW) pro-cedure, we split H into even and odd operators with re-spect to β. We now decompose the Hamiltonian in the standard form 
+
+Heff = βm + E + O, (52) where 
+
+[β, E] = 0 , {β, O} = 0 . (53) The ordinary Dirac term 
+
+α · π (54) is odd, while the correction −m∆0 is even, since ∆0 ∼
+
+γiγ5 commutes with β.The term β∆j πj contains both even and odd pieces, depending on the explicit Dirac structure appearing in 
+
+∆j . Accordingly, we define 
+
+β∆j πj =  β∆j πj
+
+ 
+
+> even
+
++  β∆j πj
+
+
+
+> odd
+
+. (55) Since ∆0 is even and γj is odd with respect to β, the term ∆0γj πj is odd. Therefore, the even and odd sectors are 
+
+E = eA 0 − m∆0 +  β∆j πj
+
+
+
+> even
+
+, (56) 
+
+O = α · π − ∆0γj πj +  β∆j πj
+
+
+
+> odd
+
+. (57) These operators already encode the qualitative roles of the two couplings. The scalar products with D distort the kinetic sector along preferred background directions, whereas the cross products are the seeds of the effec-tive spin–orbit interaction because they intertwine orbital motion and spin orientation. In that sense, the decompo-sition above already anticipates which pieces will become Rashba-like after the nonrelativistic reduction.  
+
+> C. Foldy–Wouthuysen transformation
+
+The Foldy–Wouthuysen step converts the relativistic operator content into a transparent low-energy Hamilto-nian. Once the odd sector is squared, virtual transitions to the small component are encoded as effective opera-tors acting entirely on the positive-energy sector, which is why Pauli, drift, and Rashba-like terms emerge from the same algebraic structure. Since the equation has now been cast in genuine Schrödinger form, the standard FW expansion can be applied. Up to order 1/m , one has 
+
+HFW = βm + E + β
+
+2m O2 − 18m2 [O, [O, E]] + · · · . (58) If one is interested only in the leading nonrelativistic structure, it is sufficient to retain 
+
+HFW ≃ βm + E + β
+
+2m O2. (59) To evaluate O2 systematically, we write 
+
+O = O0 + δO, O0 = α · π, (60) with δO = O(g). Then 
+
+O2 = O20 + {O 0, δ O} + O(g2). (61) The zeroth-order contribution is the usual one, 
+
+O20 = ( α · π)2 = π2 − e Σ · B, (62) where Σk = diag( σk, σ k).Thus, projecting onto the positive-energy sector, the leading nonrelativistic Hamiltonian becomes 
+
+HNR = m + eA 0 + π2
+
+2m − e
+
+2m σ · B
+
+− m ∆0(+) +  β∆j πj
+
+(+) even 
+
++ 12m
+
+n
+
+α · π, −∆0γj πj +  β∆j πj
+
+
+
+> odd
+
+o
+
+> (+)
+
++ · · · ,
+
+(63) where the symbol (+) denotes projection onto the upper two components. Equation (63) is the general low-energy Hamiltonian associated with the nonminimal derivative model. Its explicit form depends on the electromagnetic configuration through ∆μ, and in particular on whether the temporal components Fi0 and ˜Fi0 vanish or not. Equation above is the master Pauli Hamiltonian de-rived from the relativistic theory. It contains, in a unified form, the ordinary orbital motion, the Zeeman response, background-induced drifts, genuine spin–orbit couplings, and quadratic corrections in the nonminimal parameters. Every effective ring Hamiltonian discussed below is ob-tained by projecting this operator onto the azimuthal degree of freedom, so its physical content should be kept in mind throughout the remainder of the paper.  
+
+> D. Second-order structure.
+
+Expanding the inverse temporal operator up to quadratic order in the nonminimal couplings, we obtain 
+
+(Γ 0eff )−1 = β − ∆0 + β(∆ 0)2 + O(g3). (64) 8Therefore, 
+
+Heff = βm + α · π + eA 0 + β∆j πj − ∆0γj πj − m∆0
+
+− ∆0∆j πj + β(∆ 0)2γj πj + βm (∆ 0)2 + O(g3).
+
+(65) Accordingly, the even and odd sectors become 
+
+E = eA 0 − m∆0 + βm (∆ 0)2
+
++  β∆j πj
+
+ 
+
+> even
+
+−  ∆0∆j πj
+
+
+
+> even
+
+, (66) 
+
+O = α · π − ∆0γj πj +  β∆j πj
+
+
+
+> odd
+
+−  ∆0∆j πj
+
+ 
+
+> odd
+
++ β(∆ 0)2γj πj . (67) The Foldy–Wouthuysen Hamiltonian up to second order in the couplings then reads 
+
+H(2) FW = βm + E + β
+
+2m
+
+O20 + {O 0, δ O1}
+
++ β
+
+2m
+
+δO21 + {O 0, δ O2} + O(g3), (68) where 
+
+O0 = α · π, (69) 
+
+δO1 = −∆0γj πj +  β∆j πj
+
+
+
+> odd
+
+, (70) 
+
+δO2 = − ∆0∆j πj
+
+ 
+
+> odd
+
++ β(∆ 0)2γj πj . (71) 
+
+V. EFFECTIVE DYNAMICS ON A RING 
+
+We now adapt the Pauli Hamiltonian to the geometry relevant for quantum rings. The objective is to rewrite the background couplings in radial and azimuthal com-ponents so that the later confinement to a fixed radius can be performed cleanly and with a direct geometric interpretation of each surviving term. We now restrict the dynamics to the plane z = 0 ,writing r = ( x, y ) and allowing for generic fields E =(Ex, E y , E z ) and B = ( Bx, B y , B z ). Introducing polar coordinates, 
+
+x = r cos φ, y = r sin φ, (72) and defining 
+
+Er = Ex cos φ + Ey sin φ, (73) 
+
+Eφ = −Ex sin φ + Ey cos φ, (74) 
+
+Br = Bx cos φ + By sin φ, (75) 
+
+Bφ = −Bx sin φ + By cos φ, (76) the kinematic operators become 
+
+πx = cos φ π r − sin φr πφ, (77) 
+
+πy = sin φ π r + cos φr πφ, (78) where πφ = −i∂ φ − eA φ. The products entering HPauli 
+
+then reduce to 
+
+E · π = Eφ
+
+r πφ, B · π = Bφ
+
+r πφ, (79) 
+
+(B × π)z = Br
+
+r πφ, (E × π)z = Er
+
+r πφ. (80) At this stage the physical roles of the background com-ponents become very transparent. Tangential fields cou-ple directly to the surviving orbital momentum πφ and therefore behave as effective drifts along the ring, whereas radial components feed the cross products and control the spin-dependent azimuthal transport. This distinction be-comes decisive once the radial motion is frozen. 
+
+A. Effective Hamiltonian on a ring 
+
+Confinement to a ring converts the reduced Pauli prob-lem into a genuinely mesoscopic system with a single angular degree of freedom. In this geometry the non-minimal background acts as an effective spin-dependent gauge structure, so spectral shifts, phase accumulation, and persistent currents all become controlled by the same azimuthal operator. We now constrain the fermion to move on a ring of fixed radius r0, implementing πr = 0 and r → r0. The kinetic term becomes 
+
+π2
+
+2m = 12mr 20
+
+π2
+
+> φ
+
+. (81) The spin operator is decomposed as 
+
+σr = σx cos φ + σy sin φ, (82) 
+
+σφ = −σx sin φ + σy cos φ. (83) Collecting all contributions, we obtain the full one-dimensional Hamiltonian on the ring: 
+
+Hring = m + eA 0 + π2
+
+> φ
+
+2mr 20
+
+− e
+
+2m (Br σr + Bφσφ + Bz σz )
+
+− g1
+
+mr 0
+
+Eφ πφ − g2
+
+mr 0
+
+Bφ πφ
+
++ g1
+
+mr 0
+
+Br πφ σz − g2
+
+mr 0
+
+Er πφ σz
+
++ 12mr 20
+
+h
+
+g21(E2 
+
+> φ
+
++ r20 m2B2 
+
+> r
+
+) + g22(B2 
+
+> φ
+
++ r20 m2E2 
+
+> r
+
+)+ 2 g1g2(EφBφ + r20 m2Er Br )
+
+i
+
+D2
+
+> φ
+
+. (84) This full ring Hamiltonian shows explicitly how the external backgrounds survive the confinement. Terms proportional to πφ without Pauli matrices produce spin-blind drifts, while the coefficients multiplying πφσz split the two spin sectors and are therefore the precursors of the Rashba-like coupling analyzed later. The quadratic derivative term acts as a background-induced renormal-ization of the effective inertia of the azimuthal motion. 9It is convenient to define the dimensionless coefficients 
+
+ξ1 = mr 0g1Br − g2Er , (85) 
+
+ξ2 = −mr 0(g1Eφ + g2Bφ), (86) so that the Hamiltonian can be written in the compact form 
+
+Hring = π2
+
+> φ
+
+2mr 20
+
++ ξ1
+
+mr 0
+
+πφσz + ξ2
+
+mr 0
+
+πφ
+
++ Hquad + HZeeman + m + eA 0, (87) with 
+
+Hquad = (g1Eφ + g2Bφ)2
+
+2mr 20
+
+D2
+
+> φ
+
+++ (mr 0g1Br − g2Er )2
+
+2mr 20
+
+D2
+
+> φ
+
+, (88) 
+
+HZeeman = − e
+
+2m (Br σr + Bφσφ + Bz σz ) . (89) The parametrization in terms of ξ1 and ξ2 is physically useful because it separates the genuinely spin-sensitive momentum shift from the spin-independent orbital drift. In the one-dimensional problem, the most distinctive mesoscopic signatures arise from ξ1, since only this com-bination displaces opposite spin branches relative to one another. In the special case of a static planar magnetic config-uration with Er = Eφ = 0 and Br = F12 /e , the Hamil-tonian (84) reduces to 
+
+Hring = 12mr 20
+
+(i∂ φ + ξσ r )2 − ξ2, (90) which is precisely the Rashba-like hermitian Hamiltonian analyzed in Sec. VI. This compact form is especially illuminating: the back-ground enters exactly as a spin-dependent gauge poten-tial inside the covariant angular momentum. The pa-rameter ξ therefore controls, in one stroke, the spectral displacement of the spin branches, the geometric phase accumulated over one revolution, and the persistent spin current supported by the ring. The subtractive constant 
+
+−ξ2 only fixes the energy zero and does not affect the eigenstates.  
+
+> B. Model 1
+
+The general structure introduced in the previous sec-tion contains several derivative, chirality–dependent cou-plings that considerably complicate the dynamics. In or-der to extract concrete physical consequences, we now focus on a specific subsector in which only the g1 cou-pling is present. The Dirac equation then reduces to 
+
+(iγ μ∂μ + g1Fμν γμγ5i∂ ν − m) ψ = 0 . (91) To isolate the relevant terms, we split temporal and spatial components and reorganize the equation in a con-venient form: The temporal components must be isolated because they determine whether the modified Dirac oper-ator preserves the standard first-order evolution problem. If they remained active, the background would multiply the time derivative itself and the construction of a Her-mitian single-particle Hamiltonian would become consid-erably more subtle. 
+
+ γ0p0 + g1Fi0γiγ5p0 ψ = γipiψ − g1F0iγ0γ5piψ
+
+− g1Fij γiγ5pj ψ + mψ. (92) To avoid a non-Hermitian Hamiltonian—and conse-quently a nonunitary time evolution—we assume 
+
+Fi0 = −F0i = 0 ,
+
+a condition often used in the literature. 1
+
+Physically, this restriction amounts to focusing on sta-tionary backgrounds for which the nonminimal sector does not modify the coefficient of the first time derivative in the Dirac equation. This is the simplest subsector in which the one-particle Hamiltonian remains manifestly Hermitian without the introduction of additional auxil-iary fields. Under this assumption, the Hamiltonian eigenvalue equation becomes 
+
+E
+
+φχ
+
+
+
+= γ0  γipi − g1Fij γiγ5pj + m φχ
+
+
+
+. (93) If the new interaction is small compared to |mχ |, the nonrelativistic limit for the large component φ leads to the effective Hamiltonian 
+
+H = p2
+
+2m + g1Fij piσj . (94) Using the identity Fij = εijk Bk, this may be rewritten as 
+
+H = p2
+
+2m + g1 B · (p × σ). (95) The final structure is physically remarkable because the magnetic field no longer acts only through a Zeeman alignment term. Instead, it mediates a coupling between orbital motion and spin texture, so a moving fermion ex-periences Rashba-like precession even without the usual structural-inversion mechanism of condensed-matter sys-tems. This is one of the genuinely new conceptual points of the present model.           
+
+> 1Alternatively, one could perform a field redefinition ψ=BΨsuch that the dependence on ∂0Ψmimics the usual Dirac form. For the purposes of the present discussion, simply setting Fi0= 0
+> suffices.
+
+10 This result is noteworthy: even in the absence of elec-tric fields, the derivative coupling induced by Fμν gener-ates a spin–orbit–like structure reminiscent of the Rashba interaction. In what follows, this effective Hamiltonian will serve as one of the two fundamental ingredients for the analogue Rashba dynamics on quantum rings.  
+
+> C. Model 2
+
+We now turn to the second sector contained in the general Lagrangian, namely the contribution controlled by the coupling g2 and involving the dual field tensor 
+
+˜Fμν . The corresponding Dirac equation reads 
+
+
+
+iγ μ∂μ + g2 ˜Fμν γμγ5i∂ ν − m
+
+
+
+ψ = 0 . (96) Proceeding as in the previous subsection, we separate temporal and spatial parts to obtain Because the dual tensor interchanges electric and magnetic roles, the same algebra now singles out the static electric sector as the source of the effective spin–orbit coupling. This is why the two models, although microscopically different, be-come equivalent at the level of the one-dimensional meso-scopic observables. 
+
+
+
+γ0p0 + g2 ˜Fi0γiγ5p0
+
+ψ = γipiψ − g2 ˜F0iγ0γ5piψ
+
+− g2 ˜Fij γiγ5pj ψ + mψ. (97) As before, in order to preserve Hermiticity and avoid nonunitary contributions from first time derivatives, we impose 
+
+˜Fi0 = − ˜F0i = 0 .
+
+This choice isolates the static electric subsector of the dual interaction and guarantees that the effective single-particle problem obtained below admits a Hermitian Schrödinger operator. Under this condition, the Hamil-tonian eigenvalue equation becomes 
+
+Eψ = γ0 
+
+γipi − g2 ˜Fij γiγ5pj + m
+
+
+
+ψ, (98) from which the nonrelativistic limit for the large compo-nent follows analogously to the previous case: 
+
+H = p2
+
+2m + g2 ˜Fij piσj . (99) Using the standard identity for the dual tensor in (3 + 1) dimensions, 
+
+˜Fij = −εijk Ek,
+
+the Hamiltonian reduces to 
+
+H = p2
+
+2m − g2 E · (p × σ). (100) Hence the dual interaction reproduces the same low-energy operator structure as Model 1, but now the elec-tric background drives the spin precession. The observ-ables studied below therefore depend primarily on the effective tensor strength that shifts the azimuthal mo-mentum, not on whether that tensor originated from Fμν 
+
+or from its dual. This result shows that the dual sector generates an effective spin–orbit–type coupling driven by the electric field rather than the magnetic field. Both models there-fore share the same structural form but with different physical origins. In what follows, we shall unify these two cases into a single effective description suitable for the analysis of quantum rings.  
+
+> VI. ONE-DIMENSIONAL QUANTUM RINGS
+
+Having obtained the effective nonrelativistic sectors, we now turn to the mesoscopic problem where their ge-ometric content becomes most transparent. A quantum ring is the natural arena for this purpose because the closed trajectory forces the spinor to accumulate phase over a complete cycle, making spectral shifts, geometric phases, and persistent currents direct manifestations of the same effective gauge structure.  
+
+> A. The analogue Rashba interaction
+
+The two nonrelativistic Hamiltonians obtained in the previous subsections share an identical operator struc-ture. It is therefore convenient to unify them into a single effective description. We write 
+
+H = p2
+
+2m + Fij piσj ,
+
+where the tensor Fij takes the value g1Fij for Model 1 and g2 ˜Fij for Model 2. The interaction term can be de-composed as This compact notation isolates the universal part of the dynamics. Once the problem is written in terms of Fij ,the later derivations apply simultaneously to the mag-netic realization of Model 1 and the electric realization of Model 2, because both are encoded in the same anti-symmetric coupling between momentum and spin. 
+
+Fij piσj = F12 
+
+ p1σ2 − p2σ1 + F13 
+
+ p1σ3 − p3σ1
+
++ F23 
+
+ p2σ3 − p3σ2 . (101) We now restrict the dynamics to the two-dimensional plane and impose 
+
+p3 = 0 , F23 = F13 = 0 ,
+
+consistent with the motion of an electron confined to a ring of fixed radius r = r0. In polar coordinates, the 11 linear momentum components read 
+
+p1 = sin φr0
+
+
+
+i ∂∂φ 
+
+
+
+, p2 = − cos φr0
+
+
+
+i ∂∂φ 
+
+
+
+, (102) so that the spin–momentum term becomes 
+
+Fij piσj = F12 
+
+r0
+
+ σ2 sin φ + σ1 cos φ 
+
+i ∂∂φ 
+
+
+
+. (103) Only the antisymmetric component F12 survives the planar reduction, which means that the one-dimensional dynamics is controlled by the effective tensor component normal to the ring plane. This is directly analogous to the standard Rashba problem, where an out-of-plane struc-ture induces in-plane spin precession. Thus, the Hamiltonian in polar coordinates takes the form 
+
+H = 12mr 20
+
+
+
+i ∂∂φ 
+
+2
+
++ F12 
+
+r0
+
+ σ2 sin φ + σ1 cos φ 
+
+i ∂∂φ 
+
+
+
+.
+
+The second term clearly reproduces a Rashba-type spin–orbit interaction. An important physical obser-vation emerges here: in our framework, the analogue Rashba coupling can originate not only from an electric field (as in the usual condensed-matter scenario) but also from a magnetic field through the antisymmetric tensor structure. From this point onward, the spectral, geometric, and thermodynamic analysis will be expressed in terms of the effective tensor Fij , so that the final results apply equally to the magnetic realization of Model 1 and to the electric realization of Model 2. To obtain a Hermitian Hamiltonian, we follow the pro-cedure of Ref. [39], which yields 
+
+H = 12mr 20
+
+
+
+i ∂∂φ 
+
+2
+
++ F12 
+
+r0
+
+σρ
+
+
+
+i ∂∂φ 
+
+
+
++ i
+
+2
+
+F12 
+
+r0
+
+σφ, (104) where the azimuthal Pauli matrices are defined as The term proportional to σφ is not an ad hoc correc-tion. It is the geometric contribution required by Her-miticity in curvilinear coordinates, and it encodes the fact that the local spin basis rotates as the particle moves around the ring. In modern language, it plays the role of a spin connection associated with the moving frame. 
+
+σρ = σ1 sin φ − σ2 cos φ, σφ = σ1 cos φ + σ2 sin φ. 
+
+These matrices satisfy the identities 
+
+˜σρ = −∂φ ˜σφ, ˜σφ = ∂φ ˜σρ,
+
+and admit the explicit matrix representations 
+
+σρ =
+
+ 0 ie −iφ 
+
+−ie iφ 0
+
+
+
+,σφ =
+
+ 0 e−iφ 
+
+eiφ 0
+
+
+
+.
+
+Before solving the eigenvalue problem, it is convenient to rewrite the Hamiltonian in an alternative but equiva-lent form, as discussed in Ref. [39]. One observes that 
+
+
+
+i ∂∂φ + ξσ ρ
+
+2
+
+=
+
+
+
+i ∂∂φ 
+
+2
+
++ 2 ξσ ρ
+
+
+
+i ∂∂φ 
+
+
+
++ iξσ φ + ξ2,
+
+(105) where ξ = mr 0F12 . Using this identity, Eq. (104) can be recast as 
+
+H = 12mr 20
+
+"
+
+i ∂∂φ + ξσ ρ
+
+2
+
+− ξ2
+
+#
+
+. (106) This representation significantly simplifies the deter-mination of the spectrum and will serve as the starting point for the next subsections. Written in this way, the Hamiltonian is mathemati-cally equivalent to a particle coupled to a non-Abelian, spin-dependent gauge potential. The operator ξσ ρ shifts the azimuthal momentum in opposite ways for different spin branches, which is why the same parameter ξ will control the spectral splitting, the geometric phase, and the persistent spin current. In order to determine the full energy spectrum and the corresponding spinor eigenstates, we begin by solving the first-order equation generated by the alternative Hamil-tonian form: 
+
+
+
+i ∂∂φ + ξσ ρ
+
+
+
+ψ = εψ. (107) It is advantageous to solve this first-order problem be-fore returning to the quadratic Hamiltonian. The eigen-values ε are the effective angular-momentum shifts in-duced by the background, and once they are known the physical energy follows immediately from the square of the operator. In matrix form, using the explicit expres-sion for σρ, this reads 
+
+i ∂∂φ iξe −iφ 
+
+−iξe iφ i ∂∂φ 
+
+! ψ↑
+
+ψ↓
+
+
+
+= ε
+
+ψ↑
+
+ψ↓
+
+
+
+. (108) Guided by the angular dependence of the coupling, the eigenfunctions are sought in the general form 
+
+ψλn,s = eiλnφ 
+
+Aλ,s e−iφ/ 2
+
+Bλ,s eiφ/ 2
+
+
+
+, (109) where n is the angular-momentum quantum number, 
+
+λ = ± indicates the propagation direction, and s = ±
+
+labels the two spin branches. Substituting this ansatz into Eq. (108) yields the eigenvalue condition 
+
+ελn,s = s
+
+2
+
+p1 + 4 ξ2 − λn. (110) The square-root factor measures how strongly the spin texture is tilted by the effective coupling. For ξ = 0 one recovers the uncoupled ring structure, whereas finite ξ12 continuously displaces the two spin branches and opens the characteristic Rashba-like splitting. Since the energy eigenvalues of the original Hamilto-nian follow from the squared operator, we obtain 
+
+Eλn,s = Ω 
+
+"
+
+n − λs 
+
+2
+
+p1 + 4 ξ2
+
+2
+
+− ξ2
+
+#
+
+, (111) with Ω = (2 mr 20 )−1. In the thermodynamic analysis to be presented later, it is convenient to shift 
+
+n → n + 12 , (112) so that n ∈ Z. Under this redefinition, the spectrum becomes 
+
+Eλn,s = Ω 
+
+"
+
+n + 12 − λs 
+
+2
+
+p1 + 4 ξ2
+
+2
+
+− ξ2
+
+#
+
+. (113) This spectrum makes the mesoscopic meaning of the coupling explicit. The parameter ξ does not merely add a constant splitting; it shifts the centers of the angular-momentum parabolas themselves. Consequently, changes in ξ reorganize the ordering of low-lying states and leave clear fingerprints in all transport and thermodynamic quantities. 
+
+Eigenfunctions. To determine the spinor structure explicitly, we solve the secular equation obtained from Eq. (108). For concreteness, we evaluate the case λ = + .Using Eq. (109), the condition relating the spinor com-ponents becomes 
+
+B+,s = 12ξ
+
+ s
+
+cos θ − 1
+
+
+
+A+,s , (114) where the mixing angle θ satisfies 
+
+cos θ = 1
+
+p1 + 4 ξ2 . (115) To construct normalized spinors, we choose 
+
+A+,+ = cos θ
+
+2 , B+,+ = sin θ
+
+2 , (116) which implies the constraint 
+
+tan θ = 2 ξ. (117) For the s = − branch, we take 
+
+A+,− = − sin θ
+
+2 , B+,− = cos θ
+
+2 . (118) The resulting properly normalized eigenspinors for λ =+ are 
+
+ψ+ 
+
+> n, +
+
+= einφ 
+
+cos θ 
+
+> 2
+
+e−iφ/ 2
+
+i sin θ 
+
+> 2
+
+eiφ/ 2
+
+
+
+, (119) 
+
+ψ+ 
+
+> n, −
+
+= einφ 
+
+− sin θ 
+
+> 2
+
+e−iφ/ 2
+
+i cos θ 
+
+> 2
+
+eiφ/ 2
+
+
+
+. (120) Similarly, for λ = − one finds 
+
+ψ− 
+
+> n, +
+
+= e−inφ 
+
+cos θ 
+
+> 2
+
+e−iφ/ 2
+
+i sin θ 
+
+> 2
+
+eiφ/ 2
+
+
+
+, (121) 
+
+ψ− 
+
+> n, −
+
+= e−inφ 
+
+− sin θ 
+
+> 2
+
+e−iφ/ 2
+
+i cos θ 
+
+> 2
+
+eiφ/ 2
+
+
+
+. (122) These eigenfunctions provide the complete basis for the evaluation of geometric phases, spin currents, and ther-modynamic properties developed in the subsequent sec-tions. They also show that the spin is neither purely radial nor purely tangential. Instead, it is mixed by the angle θ, whose dependence on ξ defines a nontrivial spin texture around the ring. That geometric spin texture is precisely what later feeds the Aharonov–Anandan phase and the angular modulation of the transverse spin cur-rents.  
+
+> B. Induction of geometric phases
+
+The phase analysis is the natural continuation of the spectral problem because the effective coupling behaves as a spin-dependent gauge field on a closed path. Once the electron completes one revolution around the ring, the spatial configuration is periodic, but the spinor need not return to itself trivially; the resulting mismatch is precisely what the Aharonov–Anandan phase measures. We now investigate whether the effective spin–orbit coupling induces nontrivial geometric phases for the eigenstates obtained in the previous subsection. To this end we employ the Aharonov–Anandan (AA) phase, which generalizes the Berry phase to arbitrary cyclic evo-lutions. For a normalized eigenstate ψλn,s (φ), the AA geometric phase accumulated over a 2π rotation around the ring is defined as 
+
+Φ(λ,s )AA =
+
+Z 2π
+
+> 0
+
+ψλ† 
+
+> n,s
+
+i ddφ ψλn,s dφ. (123) The dynamical phase associated with the effective spin– orbit interaction, 
+
+Heff = Fij piσj , (124) is given by 
+
+Φ(λ,s )dyn = −
+
+Z 2π
+
+> 0
+
+ψλn,s (φ)† Heff ψλn,s (φ) dφ. (125) The total phase acquired in one full revolution is therefore 
+
+Φ(λ,s )Total = Φ (λ,s )AA + Φ (λ,s )dyn . (126) Separating the total phase into geometric and dynam-ical pieces is physically useful. The dynamical contri-bution tracks the local interaction energy accumulated 13 along the path, whereas the geometric contribution de-pends only on how the spinor explores the projective Hilbert space during the cyclic evolution. Using the explicit eigenfunctions derived earlier, the AA phase evaluates to 
+
+Φ(λ,s )AA = −2λπ 
+
+
+
+n − λs 
+
+2 cos θ
+
+
+
+, (127) where the mixing angle θ satisfies cos θ = (1 + 4 ξ2)−1/2.Likewise, the dynamical phase contribution is found to be 
+
+Φ(+ ,+) dyn = 2 sπξ sin θ. (128) The two phase contributions depend on the same mix-ing angle in complementary ways: the geometric term is weighted by cos θ, while the dynamical part is weighted by sin θ. This reflects the fact that the effective Rashba field both tilts the spin texture and changes the energy cost of transporting it around the ring. Combining the two contributions, and recalling that the energy is obtained from the square of the effective angular momentum operator, one may write the energy spectrum compactly as 
+
+Eλn,s = Ω 
+
+ Φ(λ,s )Total 
+
+2π
+
+!2
+
+− ξ2
+
+ .−2 −1 0 1 2
+
+ξ
+
+0.03.67.210 .814 .418 .0     
+
+> E
+> E+1/2,+
+> E+1/2,−
+> E+3/2,+
+> E+3/2,−
+> E+5/2,+
+> E+5/2,−
+> FIG. 2. Single-particle energy spectrum as a function of the effective Rashba-like coupling ξfor representative branches labeled by (n, s, λ ). Finite ξlifts the degeneracies present in the uncoupled ring and displaces the parabolic branches by different amounts, making explicit how the spin-dependent gauge shift reorganizes the low-energy spectrum.
+
+Figure 2 makes the branch rearrangement produced by the coupling very clear. Near ξ = 0 the levels orga-nize into the familiar ring multiplets, while finite ξ lifts the degeneracies and separates the states according to their spin and propagation labels. The lower branches are driven downward because the effective gauge shift reduces the kinetic cost of selected angular-momentum sectors, whereas the upper branches move upward. This redistribution of levels is the spectral origin of the ther-modynamic and transport responses discussed below. The expression above highlights a key interpretation: the analogue Rashba coupling introduces a geometric shift in the quantization of angular momentum, encoded in the total geometric phase. This mechanism underlies the modification of the spectrum and governs the behav-ior of persistent spin currents in the subsequent analysis.  
+
+> C. Spin currents
+
+Persistent currents provide the most direct transport manifestation of the effective gauge structure. Even though time-reversal symmetry forbids a net charge cur-rent in the present setting, the spin sector can still sup-port stationary transport because opposite spin projec-tions experience opposite momentum shifts around the ring. In systems with time-reversal symmetry, persistent charge currents vanish identically. Nevertheless, spin– orbit interactions can still support nonvanishing persis-tent spin currents. For the present model, the spin cur-rent density along the azimuthal direction is defined as 
+
+J aφ = 12 ψλ† 
+
+> n,s
+
+{vφ, sa} ψλn,s , (129) with sa = σa/2 and where the velocity operator follows from the commutator 
+
+vφ = ir 0[H, φ ] = 1
+
+imr 0
+
+∂∂φ − F 12 σρ. (130) The symmetrized definition is important because ve-locity and spin fail to commute once spin–orbit cou-pling is present. The velocity operator itself contains an anomalous term proportional to σρ, which is the di-rect transport imprint of the effective Rashba field: even states with fixed orbital quantum number acquire a spin-dependent azimuthal drift. A general expression for the spin current carried by a single eigenstate is 
+
+J aφ = 12mr 0
+
+
+
+λn − 12
+
+ |Aλ,s |2σa 
+
+> 11
+
++ B∗
+
+> λ,s
+
+Aλ,s e−iφ σa
+
+> 21
+
+
+
++ 12mr 0
+
+
+
+λn + 12
+
+ A∗
+
+> λ,s
+
+Bλ,s eiφ σa 
+
+> 12
+
++ |Bλ,s |2σa
+
+> 22
+
+
+
+− F12 
+
+2 (δx,a cos φ + δy,a sin φ) ,
+
+where a = {x, y, z } and the last term originates from the spin–orbit-induced modification of the velocity operator. This expression separates the current into an orbital con-tribution, controlled by the winding number n, and a gen-uinely spin–orbit contribution, controlled by F12 . Their 14 competition determines the sign and magnitude of each spin component and explains why the longitudinal and transverse currents behave differently. 
+
+Spin current in the z direction. The degenerate eigenstates at each energy level allow for nontrivial super-positions. The physically relevant quantity is obtained by summing the contributions from the four degenerate states in the totally symmetric combination. Doing so yields 
+
+J zφ = 14 ψ+†
+
+> n, +
+
+12 {vφ, sz }ψ+ 
+
+> n, +
+
++ 14 ψ−† 
+
+> n, −
+
+12 {vφ, sz }ψ−
+
+> n, −
+
++ 14 ψ+†−n, −
+
+12 {vφ, sz }ψ+ 
+
+> −n, −
+
++ 14 ψ−† −n, +
+
+12 {vφ, sz }ψ−−n, +,
+
+= 14mr 0
+
+(2 n cos θ − 1) . (131) The resulting z-polarized current is particularly trans-parent: it is uniform along the ring and depends only on the orbital winding number and on the spin-mixing angle. The factor cos θ shows that increasing ξ progres-sively rotates the spin texture away from the fixed z axis, thereby reducing the z-projected transported spin. 0.0 2.8 5.6 8.4 11 .2 14 .0
+
+ξ
+
+−0.30 0.06 0.42 0.78 1.14 1.50             
+
+> J zφ
+> Jz
+> 1/2
+> Jz
+> 3/2
+> Jz
+> 5/2
+> Jz
+> 7/2
+> FIG. 3. Persistent spin current Jzφas a function of the effec-tive coupling ξfor representative orbital sectors. The current decreases as the Rashba-like interaction rotates the spin tex-ture away from the zaxis, with higher-nstates carrying larger current because of their larger angular momentum.
+
+As shown in Fig. 3, the magnitude of J zφ is largest near weak coupling and then decreases monotonically as 
+
+ξ grows. This trend follows directly from cos θ = (1 + 4ξ2)−1/2: the stronger the coupling, the more the spin is canted away from the z direction. The different curves correspond to different orbital sectors, and larger values of n start from larger currents because they represent faster winding around the ring. This result shows that the persistent spin current is controlled by the effective mixing angle θ introduced by the Rashba-like coupling. In particular, the ξ depen-dence enters through cos θ, while the ξ → 0 limit retains the residual kinematic contribution associated with the orbital quantum number n.
+
+Spin currents in the transverse directions. The x
+
+and y components of the spin current can also be com-puted following the same procedure. For each individual state they are, in general, complex quantities; however, the sum over the four degenerate states yields a real phys-ical current. For a given mode we obtain 
+
+J xφ = F12 
+
+2 (2 n cos θ − 1) cos φ, 
+
+J yφ = F12 
+
+2 (2 n cos θ − 1) sin φ. 
+
+The explicit φ dependence arises from the precession of the spin around the z axis, which causes the polarization to rotate as the particle moves along the ring. Conse-quently, the sign of the spin current may oscillate as a function of the angle, even though the momentum quan-tum number remains fixed. Unlike the z component, the transverse currents follow the local orientation of the spin texture and are therefore explicitly angle dependent. They are phase shifted by π/ 2 with respect to one an-other, which means that the in-plane spin current vector rotates continuously as the particle propagates around the ring. Figure 4 shows that the in-plane currents oscillate si-nusoidally along the ring and that their amplitudes are enhanced when the coupling is increased from ξ = 1 to 
+
+ξ = 2 . Because J xφ and J yφ are phase shifted, they should be interpreted together as a rotating transverse current vector rather than as independent static components. In physical terms, the background-induced Rashba field locks the transported spin to the local frame of the ring and forces it to precess during the motion. These results establish that the Rashba-like coupling produced by the field-strength derivatives naturally leads to persistent spin currents, whose magnitude and angu-lar modulation are controlled by the effective coupling parameter ξ and the geometry of the ring. 
+
+Differential spin response. A natural measure of the response of the persistent spin current to the effective Rashba interaction is the differential spin response, de-fined as 
+
+Gs ≡ ∂J zφ
+
+∂ξ = − 2nξ mr 0(1 + 4 ξ2) 32
+
+. (133) The differential spin response exhibits several remarkable properties. First, it is an odd function of ξ, implying that reversing the effective coupling ξ reverses the spin response. In the weak coupling regime ξ ≪ 1, one finds a linear behavior, 
+
+Gs ≈ − 2nmr 0
+
+ξ, (134) characteristic of a perturbative response. 15 0
+
+φ
+
+−0.50 
+
+−0.25 0.00 0.25 0.50 0.75 1.00 
+
+> J xφ , J yφ
+
+# (a) ξ = 1       
+
+> Jx
+> 1/2
+> Jy
+> 1/2
+> Jx
+> 3/2
+> Jy
+> 3/2
+> Jx
+> 5/2
+> Jy
+> 5/2
+
+0
+
+φ
+
+−0.4
+
+−0.20.00.20.4
+
+> J xφ , J yφ
+
+# (b) ξ = 2            
+
+> FIG. 4. Angular dependence of the transverse persistent spin-current components Jxφand Jyφfor two representative couplings,
+> ξ= 1 and ξ= 2 . The sinusoidal profiles and relative phase shift illustrate the precession of the in-plane transported spin as the particle circles the ring, while the change in amplitude reflects the stronger spin locking produced by larger ξ.
+
+In contrast, in the strong coupling regime ξ ≫ 1, the response is suppressed as 
+
+Gs ∼ − n
+
+4mr 0
+
+sign( ξ)
+
+ξ2 , (135) indicating a saturation of the spin transport. The function reaches its maximum magnitude at 
+
+ξcrit = ± 12√2 , (136) with 
+
+|G s|max = 2n
+
+3√3 mr 0
+
+. (137) This demonstrates the existence of an optimal coupling regime in which spin transport is maximized. Further-more, the response scales linearly with the angular mo-mentum quantum number n, showing that higher orbital states contribute more efficiently to spin transport. Finally, Gs can be interpreted as a mesoscopic spin con-ductance, measuring how sensitively the persistent spin current responds to variations of the effective coupling 
+
+ξ, which itself encodes the combined action of the back-ground fields. 
+
+Geometric meaning of Gs. Since the persistent spin current along the z direction is 
+
+J zφ = 14mr 0
+
+(2 n cos θ − 1) ,
+
+with 
+
+cos θ = 1
+
+p1 + 4 ξ2 ,
+
+the differential spin response can be written as 
+
+Gs = ∂J zφ
+
+∂ξ = n
+
+2mr 0
+
+d(cos θ)
+
+dξ .
+
+Therefore, Gs directly measures how sensitively the spin texture is deformed by variations of the effective cou-pling ξ. Since the same mixing angle θ also governs the geometric phase, the differential spin response may be in-terpreted as a geometric transport coefficient controlled by the parametric evolution of the spinor texture around the ring. From a mesoscopic perspective, Gs plays a role anal-ogous to a spin conductance, measuring how the persis-tent spin current responds to variations of the effective coupling ξ, which encodes the combined influence of the background fields. The existence of a maximum response and its subsequent suppression at large ξ highlight the nontrivial interplay between spin precession and orbital motion in the present model. Figure 5 shows that the differential spin response pro-vides a compact measure of the sensitivity of the per-sistent spin current to the effective coupling. Unlike the current itself, which tracks the transported spin polariza-tion, Gs emphasizes how rapidly that transport changes as the background-induced interaction is varied. In this sense, it is natural to interpret Gs as a mesoscopic spin conductance. Three features deserve emphasis. First, the response is odd in ξ, so reversing the sign of the effective coupling reverses the sign of the spin response. Second, the curves are nonmonotonic: their magnitude increases from the weak-coupling regime, reaches a maximum at the finite critical value quoted above, and then decreases for larger 
+
+|ξ|. This identifies an optimal coupling window in which 16 −10 −5 0 5 10                     
+
+> ξ
+> −1.5
+> −1.0
+> −0.50.00.51.01.5
+> m r 0 Gs
+> n= 1
+> n= 2
+> n= 3
+> n= 4
+> FIG. 5. Normalized differential spin response mr 0Gsas a function of the effective coupling ξfor the representative or-bital sectors n= 1 ,2,3,4, computed from Eq. (133). The re-sponse is antisymmetric under ξ→ − ξ, vanishes at ξ= 0 , and reaches its largest magnitude at a finite coupling. The over-all amplitude increases with n, showing that higher-winding sectors are more sensitive to variations of the Rashba-like in-teraction.
+
+spin transport is most efficiently tunable. Third, the de-pendence on n is purely multiplicative, so the same func-tional profile is preserved across orbital sectors while the response becomes stronger for larger angular momentum. The physical origin of this behavior is geometric. As follows from the expression for J zφ derived in the pre-vious subsection, the ξ dependence is controlled by the spin-mixing angle θ. The quantity Gs therefore measures how sensitively the local spin texture is deformed by the effective Rashba-like interaction. Since the same angle also governs the geometric phase accumulated around the ring, the response shown in Fig. 5 should be viewed not only as a transport observable, but also as a geometric indicator of the parametric evolution of the spinor struc-ture.  
+
+> VII. PHENOMENOLOGICAL BOUNDS AND EXPERIMENTAL INTERPRETATION
+
+Having developed the relativistic Dirac analysis, the nonrelativistic Foldy–Wouthuysen reduction, and the mesoscopic ring realization, we are now in a position to collect the phenomenological consequences of the model into a single section. This organization is useful both conceptually and editorially: all discussions of existing sensitivities, prospective search channels, explicit order-of-magnitude bounds, and their physical interpretation are gathered here only after the relevant observables have been derived in full. Two distinct classes of references play a role in the present discussion. First, there are works that constrain 
+
+related nonminimal operators and therefore provide use-ful comparison scales for the present Lorentz-invariant truncation, especially in EDM/MDM and SME contexts [40–42]. Second, there are experimental and mesoscopic references that motivate the benchmark values used be-low for electric fields, ring radii, and phase-sensitive ring observables, such as semiconductor spin–orbit platforms and quantum-ring interferometry [8, 18–21]. The esti-mates presented in this section should therefore be read as literature-motivated order-of-magnitude projections, rather than as direct extractions from a single dedicated experiment.  
+
+> A. Related bounds and prospective constraints
+
+At present, the specific Lorentz-invariant axial trunca-tion considered in this work, parametrized by the two ef-fective couplings g1 and g2, does not appear to possess di-rect experimental bounds of its own. This should not be interpreted as an absence of phenomenological guidance, however. Rather, it reflects the fact that the literature has mostly constrained broader or distinct classes of non-minimal fermion–photon operators, especially in Lorentz-violating settings, while the present model isolates a par-ticular Lorentz-invariant sector of the dimension-six the-ory. This distinction is important. In the general effective-field-theory framework, the operators introduced in Sec. II belong to the dimension-six fermion–photon sec-tor and the couplings g1 and g2 carry mass dimension 
+
+−2 [32]. In the specific truncation adopted here, they multiply the ordinary and dual electromagnetic tensors through the structures Fμν γμγ5iD ν and ˜Fμν γμγ5iD ν , re-spectively. As a consequence, the quantities that enter observables are not g1 and g2 in isolation, but rather the combinations of these couplings with the external electromagnetic background. At the relativistic level, these combinations are naturally encoded in the effec-tive operator Γμ 
+
+> eff
+
+introduced above. In the low-energy and ring limits, they reorganize into the effective param-eters ηB = g1B, ηE = g2E, and, in the ring geometry, the dimensionless quantities ξ1, ξ2, and ξ.From the viewpoint of the existing literature, the most relevant comparison is therefore not with direct bounds on the present truncation, but with constraints on related nonminimal sectors. For example, dimension-five CPT-even nonminimal couplings in the Dirac equation have been constrained through the electron anomalous mag-netic moment and the electron electric dipole moment, reaching sensitivities at the level of 10 20 –10 25 eV −1, de-pending on the operator structure and on the observ-able considered [40]. Likewise, dimension-six Lorentz-violating electron–nucleon nonminimal interactions have been constrained through EDM physics at the levels of 
+
+3.2 × 10 −13 GeV −2 and 1.6 × 10 −15 GeV −2 [41]. More broadly, the nonminimal SME data tables compile ex-isting sensitivities for large classes of Lorentz-violating 17 coefficients in fermion and photon sectors of arbitrary mass dimension [42]. Although these results do not ap-ply directly to the present Lorentz-invariant truncation, they provide a useful scale of comparison for assessing the possible reach of future searches. In this sense, the current status of the model may be summarized as follows. The operator class from which the present truncation descends is already phenomeno-logically motivated [32], and neighboring sectors have been probed very deeply [40–42]. Nevertheless, the spe-cific pair of Lorentz-invariant axial couplings retained here, g1 and g2, still lacks dedicated bounds. This mo-tivates the identification of observables that are intrinsi-cally adapted to the structure of the theory. Three natural routes emerge from the analyses devel-oped in this work. The first is purely relativistic and fol-lows from the deformed Dirac operator itself. As shown in Sec. III, constant electromagnetic backgrounds modify the relativistic dispersion relation and split the propagat-ing branches according to the orientation of the momen-tum relative to the background tensor. Spectroscopic measurements of such background-induced branch split-tings would therefore constrain the effective combinations 
+
+ηB = g1B and ηE = g2E directly. The second route is based on precision spin observ-ables. Since related nonminimal Dirac couplings are known to induce EDM- and MDM-like effects [40, 41], precision spin-precession experiments performed in con-trolled electric or magnetic backgrounds provide a natu-ral arena to search for the present truncation as well. In that context, the relevant constraint would again fall on the products of the effective couplings with the applied fields, rather than on g1 or g2 separately. The third route is specific to the mesoscopic realiza-tion studied here. In the ring geometry, the relativistic background couplings descend to the effective parame-ters ξ1, ξ2, and ξ, which govern the spectral displacement of the branches, the Aharonov–Anandan phase, and the persistent spin currents. Ring-based spectroscopy, phase-sensitive interferometry, and measurements of persistent spin transport in synthetic or condensed-matter analog platforms [8, 18–21] may therefore be interpreted as di-rect probes of the low-energy imprint of the relativistic theory. For convenience, these points are summarized in Ta-ble I. The table is intentionally framed in terms of re-lated bounds and prospective search channels . This word-ing is important: the numbers quoted from the literature should be understood as benchmarks drawn from broader or distinct operator sectors, not as direct limits on the Lorentz-invariant truncation investigated in the present work. The main phenomenological message is therefore not that the present theory is already bounded in a direct sense, but rather that it sits inside an operator landscape for which high-precision searches are already known to be extremely powerful. The relativistic and mesoscopic analyses developed here identify the combinations of cou-plings and backgrounds that should be targeted in fu-ture attempts to obtain the first dedicated bounds on the Lorentz-invariant axial truncation itself.     
+
+> B. Extraction of prospective bounds on g1and g2
+
+Having identified the natural observables of the the-ory, we now translate experimental sensitivities into con-crete order-of-magnitude estimates for the couplings g1
+
+and g2. Two complementary regimes are considered: the relativistic sector, where the relevant observable is the branch splitting ∆E = E+ − E− of Eq. (37), and the mesoscopic sector, where the Aharonov–Anandan phase, the persistent spin current, and the differential spin re-sponse provide independent probes of the same effective coupling. Throughout this subsection we work in natural units ℏ = c = 1 and quote all results in GeV. The benchmark values adopted below are chosen to reflect experimentally meaningful scales. The electric-field ranges are motivated by gate-controlled spin–orbit systems in semiconductor heterostructures [8], while the ring radii and effective-mass scales are representative of mesoscopic quantum-ring structures [20, 21]. Likewise, the AA-phase benchmark is guided by phase-sensitive ring interferometry and spin-related transport experi-ments [18, 19]. The purpose here is not to claim a unique experimental realization, but to use realistic literature-based scales in order to assess the order of magnitude of the expected bounds. 
+
+a. Unit conversion. Electromagnetic fields in SI units are converted to natural units via the Schwinger critical values. For the magnetic field, Bc = m2
+
+> e
+
+/e ≃
+
+4.41 × 10 9 T, so that 
+
+B [GeV 2] ≃ 1.95 × 10 −16 GeV 2 × B [T] . (138) For the electric field, using Ec ≃ 1.32 × 10 18 V/m,
+
+E [GeV 2] ≃ 6.52 × 10 −25 GeV 2 × E [V /m] . (139) These relations will be used systematically to express 
+
+ηB = g1B and ηE = g2E in terms of laboratory-accessible quantities.  
+
+> 1. Relativistic sector
+
+a. Branch-splitting observable. From Eq. (37), the energy splitting between the two propagating branches at fixed momentum p is 
+
+∆E(p) = 
+
+q
+
+m2 + p2(1 + η2 
+
+> B
+
+) + 2 mη B p
+
+−
+
+q
+
+m2 + p2(1 + η2 
+
+> B
+
+) − 2mη B p. (140) This expression admits transparent limiting forms in each kinematic regime. In the nonrelativistic limit p ≪ m,18 
+
+TABLE I. Representative bounds in related nonminimal sectors. The quoted values are indicative benchmarks from broader or distinct operator classes, not direct limits on the Lorentz-invariant truncation considered here. References are indicated explicitly in the last column. 
+
+Sector / class Representative bound Main probe / comment Reference 
+
+Dimension-five nonminimal fermion–photon couplings 10 −20 –10 −25 eV −1
+
+Electron MDM/EDM benchmark [40] Dimension-six nonminimal electron–nucleon couplings 
+
+3.2 × 10 −13 GeV −2 and 
+
+1.6 × 10 −15 GeV −2
+
+Atomic EDM; distinct Lorentz-violating sector [41] Nonminimal SME sectors of arbitrary dimension Coefficient-dependent Spectroscopy, cavities, clocks, astrophysical and EDM-type searches [42] Present Lorentz-invariant truncation No direct bound presently available Relevant combinations: ηB , ηE ,
+
+ξ1, ξ2, ξ
+
+This work; EFT embedding in [32] 
+
+expansion to leading order gives 
+
+∆E ≃ 2ηB p + O
+
+ p3
+
+> m2
+
+
+
+, p ≪ m, (141) while in the ultrarelativistic limit p ≫ m,
+
+∆E ≃ 2mη B + O
+
+ m2
+
+> p
+
+
+
+, p ≫ m. (142) The splitting saturates to the p-independent value 2mη B
+
+at high energies. In both cases, if an experiment resolves energies with precision δE , the condition ∆E < δE im-poses a bound on g1.
+
+b. Nonrelativistic scenario (low-energy electrons). 
+
+Consider electrons with kinetic energy K ≃ 1 keV = 10 −6 GeV . The corresponding nonrelativistic momentum is not p ≃ 1 keV , but rather 
+
+p = p2meK ≃ p2(5 .11 × 10 −4)(10 −6) ≃ 3.2×10 −5 GeV .
+
+(143) Using Eq. (141), the condition 2ηB p < δE yields 
+
+g1 < δE 
+
+2 p B [GeV 2] . (144) For a benchmark low-energy spectroscopic scenario with 
+
+B = 10 T and δE = 1 meV = 10 −12 GeV , substituting Eq. (138): 
+
+g1 ≲ 10 −12 
+
+2(3 .2 × 10 −5)(1 .95 × 10 −15 ) ≃ 8.0 × 10 6 GeV −2.
+
+(145) Although this benchmark is used here illustratively, it is physically motivated by the general sensitivity of preci-sion spin and spectroscopic observables to nonminimal fermion couplings [40]. 
+
+c. Ultrarelativistic scenario (storage ring). For rel-ativistic electrons with p ≃ 1 GeV , B = 1 T , and relative resolution δE/E ∼ 10 −6, one has δE ∼ 10 −6 GeV . Equa-tion (142) then gives 
+
+g1 < δE 
+
+2 me B [GeV 2] ≃ 5 × 10 12 GeV −2. (146) The nonrelativistic scenario is therefore more constrain-ing by roughly six orders of magnitude, because at low momenta the splitting grows linearly with p whereas in the UR regime it saturates at 2meηB . This storage-ring-like scenario should be read as a benchmark for rela-tivistic spectroscopy, in the same general spirit as the high-precision searches compiled in the SME literature [42]. 
+
+d. Electric-type branch (g2). By the replacement 
+
+ηB → ηE = g2E, the same analysis applies to the g2 sec-tor via Eq. (139). For K = 1 keV , so that p is given by Eq. (143), together with E = 10 8 V/m and δE = 1 meV :
+
+g2 ≲ 10 −12 
+
+2(3 .2 × 10 −5)(6 .52 × 10 −17 ) ≃ 2.4 × 10 8 GeV −2.
+
+(147) Here the benchmark electric field is motivated by the large effective fields accessible in semiconductor spin– orbit platforms [8]. 
+
+2. Mesoscopic sector 
+
+In the ring geometry, the effective dimensionless cou-pling is ξ = mr 0F12 , which for the two models reads 
+
+ξ1 = m∗r0 g1B, (148) 
+
+ξ2 = m∗r0 g2E. (149) The combination m∗r0 plays the role of the dimensionless lever arm of the mesoscopic system. For a GaAs quantum ring with effective mass m∗ = 0 .067 me and radius r0 =100 nm , representative of mesoscopic semiconductor-ring platforms [20, 21], one finds in natural units: 
+
+m∗r0 = (0 .067 × 5.11 × 10 −4 GeV) 
+
+× (5 .07 × 10 8 GeV −1) ≃ 1.74 × 10 4, (150) so that Eqs. (148)–(149) become 
+
+ξ1 ≃ 3.39 × 10 −12 g1[GeV −2] B[T] , (151) 
+
+ξ2 ≃ 1.13 × 10 −20 g2[GeV −2] E[V /m] . (152) An upper bound on ξ from any mesoscopic observable therefore translates directly into a bound on g1 or g2 via these relations. 19 
+
+a. Aharonov–Anandan phase. The AA phase devi-ates from its ξ = 0 value by 
+
+δΦAA = πs 1 − 1
+
+p1 + 4 ξ2
+
+!
+
+≃ 2πs ξ 2, ξ ≪ 1.
+
+(153) If ring interferometry resolves phases to δΦmin , the con-dition |δΦAA | < δ Φmin implies 
+
+ξ ≲
+
+r δΦmin 
+
+2π . (154) For a benchmark phase resolution δΦmin ∼ 10 −2, con-sistent with the phase-sensitive spirit of ring-interference measurements [18, 19], one finds ξ ≲ 0.04 . Substituting into Eqs. (151)–(152) with B = 1 T and E = 10 6 V/m:
+
+g1 ≲ 1.2 × 10 10 GeV −2, (155) 
+
+g2 ≲ 3.5 × 10 12 GeV −2. (156) 
+
+b. Persistent spin current. The deviation of J zφ
+
+from its free-ring value at fixed n is 
+
+δJ z ≃ n ξ 2
+
+m∗r0
+
+, ξ ≪ 1. (157) If measurements resolve spin currents to a fraction ϵ of the zero-coupling value (4 m∗r0)−1, then the condition 
+
+δJ z < ϵ (4 m∗r0)−1 yields 
+
+ξ ≲
+
+r ϵ
+
+4n . (158) For n = 1 and ϵ = 10 −3, one finds ξ ≲ 1.58 × 10 −2,which is somewhat tighter than the phase bound. Using Eqs. (151)–(152) with B = 1 T and E = 10 6 V/m:
+
+g1 ≲ 4.7 × 10 9 GeV −2, (159) 
+
+g2 ≲ 1.4 × 10 12 GeV −2. (160) The geometric and transport context for these bench-marks is again that of semiconductor quantum rings and mesoscopic spin transport [18–21]. 
+
+c. Differential spin response. The differential spin response Gs, Eq. (133), for ξ ≪ 1 reduces to 
+
+Gs ≃ − 2nm∗r0
+
+ξ. (161) Hence, a measurement with absolute uncertainty δGs
+
+would constrain 
+
+ξ ≲ m∗r0
+
+2n |δGs|. (162) This observable is therefore complementary to the AA phase and to the spin current: while the latter probe ξ2 in the weak-coupling regime, the differential spin response is itself linear in ξ and may thus provide a first-derivative probe of small departures from the uncoupled limit.  
+
+> 3. Summary and comparison
+
+The bounds derived above are collected in Table II. Several observations are in order. First, the nonrelativistic spectroscopic scenario consis-tently outperforms the ultrarelativistic one for g1, be-cause the splitting ∆E ≃ 2ηB p grows with p in the NR regime, whereas in the UR regime it saturates at 2meηB .Second, the g2 bounds benefit from the large electric fields achievable in semiconductor heterostructures [8], partially compensating the smaller conversion factor in Eq. (139). Third, the corrected estimated bounds (∼ 10 6–
+
+10 12 GeV −2) are numerically much weaker than the lit-erature benchmarks in Table I ( ∼ 10 −13 –10 −15 GeV −2). This contrast is physically meaningful rather than dis-couraging: the literature constraints target Lorentz-violating operators, whose coefficients encode a preferred frame. The couplings g1 and g2 are Lorentz-invariant 
+
+and carry no such suppression; the estimates in Table II should therefore be viewed as the first dedicated order-of-magnitude bounds on this specific truncation. Improving the magnetic field, ring radius, or current sensitivity by one to two orders of magnitude would push the meso-scopic bounds appreciably downward.  
+
+> C. Physical interpretation of the magnitude of the bounds
+
+At first sight, the order-of-magnitude bounds obtained for the couplings g1 and g2 may look surprisingly large, especially when compared with the much stronger limits usually quoted in the literature for Lorentz-violating non-minimal sectors [40–42]. This, however, does not signal any inconsistency of the present analysis. Rather, it re-flects a basic feature of the Lorentz-invariant dimension-six truncation considered here: physical observables do not depend on g1 and g2 in isolation, but only through the combinations of these couplings with the external electro-magnetic fields. More precisely, in the relativistic sector the relevant dimensionless parameters are 
+
+ηB = g1B, ηE = g2E, (163) whereas in the mesoscopic ring realization the corre-sponding control parameter is 
+
+ξ ∼ m∗r0 g F, (164) with F standing schematically for the effective electro-magnetic background. Therefore, a numerically large up-per bound on g1 or g2 simply means that the present ex-perimental scenario is only weakly sensitive to the prod-ucts g1B, g2E, or ξ, not that the induced physical effect is large. 20 
+
+TABLE II. Order-of-magnitude prospective bounds on g1 and g2 extracted from the observables of the present model in the relativistic and mesoscopic regimes. All estimates assume laboratory-accessible experimental conditions and should be interpreted as order-of-magnitude projections; dedicated experiments targeting these observables have not yet been performed. The last column indicates the main literature motivation for the benchmark values adopted in each row.                                                                                                           
+
+> Regime Observable Coupling Bound (GeV −2) Scenario / assumptions Reference / motivation
+> Relativistic (NR) ∆E≃2ηBpg1≲8.0×10 6K= 1 keV ,B= 10 T ,δE = 1 meV
+> Benchmark low-energy spectroscopy; related precision-spin sensitivity [40] Relativistic (UR) ∆E≃2mη Bg1≲5×10 12 B= 1 T ,p= 1 GeV ,δE/E = 10 −6
+> Benchmark relativistic spectroscopy / storage-ring-type scenario; cf. [42] Relativistic (NR) ∆E≃2ηEpg2≲2.4×10 8K= 1 keV ,E= 10 8V/m,δE = 1 meV
+> Electric-field scale motivated by semiconductor tunability [8] Mesoscopic AA phase δΦAA g1≲1.2×10 10 B= 1 T ,r0= 100 nm ,δΦ = 10 −2
+> Ring interferometry and SO phases [18, 19]; geometry [20, 21] Mesoscopic AA phase δΦAA g2≲3.5×10 12 E= 10 6V/m,r0= 100 nm ,δΦ = 10 −2
+> Phase-sensitive rings [18, 19]; electric-field control [8] Mesoscopic Spin current Jzφg1≲4.7×10 9B= 1 T ,r0= 100 nm ,ϵ= 10 −3,n= 1
+> Quantum-ring transport scales [20, 21] Mesoscopic Spin current Jzφg2≲1.4×10 12 E= 10 6V/m,r0= 100 nm ,ϵ= 10 −3,n= 1
+> Quantum-ring transport context [20, 21]; field control [8]
+
+This point becomes especially transparent in natural units. Since 
+
+1 T ≃ 1.95 × 10 −16 GeV 2, (165) 
+
+1 V /m ≃ 6.52 × 10 −25 GeV 2, (166) even laboratory fields that are large in SI units are extremely small in GeV 2. For instance, taking g1 ∼
+
+10 10 GeV −2 and B = 1 T , one obtains 
+
+ηB = g1B ∼ 10 10 × 1.95 × 10 −16 ∼ 2 × 10 −6, (167) which is a tiny dimensionless deformation. Thus, a large numerical bound on g1 is perfectly compatible with a very small physical effect. This observation is also natural from the effective-field-theory viewpoint. Since the couplings have mass dimen-sion −2, one may write schematically 
+
+gi ∼ 1Λ2
+
+> i
+
+, (168) so that a bound such as gi ≲ 10 10 GeV −2 corresponds only to 
+
+Λi ≳ |gi|−1/2 ∼ 10 −5 GeV ∼ 10 keV . (169) Therefore, the present bounds should be interpreted as weak first prospective limits on a Lorentz-invariant dimension-six operator, rather than as precision con-straints in the usual EFT sense. The relativistic and mesoscopic sectors are fully consis-tent with one another in this respect. In the relativistic regime, the branch splitting is controlled by the field-dressed combinations ηB = g1B and ηE = g2E, not by 
+
+g1 and g2 separately. In the nonrelativistic limit, 
+
+∆ENR ≃ 2ηB p, (170) whereas in the ultrarelativistic limit 
+
+∆EUR ≃ 2mη B . (171) This explains why the ultrarelativistic scenario is less constraining: the splitting ceases to grow with momen-tum and saturates at a value controlled by the electron mass. In the mesoscopic regime, the same logic applies through the parameter ξ, which controls the AA phase, the spin current, and the differential response. Large numerical bounds on g1 and g2 are therefore the natu-ral signal of a dimension-six Lorentz-invariant operator being tested only through field-dressed combinations in laboratory-scale electromagnetic backgrounds. The main physical message is thus not that the model predicts large effects, but rather that the present exper-imental scenarios are only weakly sensitive to this op-erator class. The large bounds obtained for g1 and g2
+
+should be interpreted as weak prospective constraints on a Lorentz-invariant dimension-six truncation. This is en-tirely compatible with the fact that the observable defor-mations of the spectrum, geometric phase, and persistent spin currents are all perturbatively small. It is also worth stressing that this situation differs con-ceptually from the one found in Lorentz-violating non-minimal sectors. In those cases, the coefficients are often constrained much more strongly because the associated observables probe preferred-frame effects with extremely high precision [40–42]. Here, by contrast, the couplings are Lorentz-invariant, and the only way to test them is through the background-dressed products g1B, g2E, and 
+
+ξ. The resulting sensitivities are therefore naturally much weaker. Finally, one may summarize the present status as fol-lows: the largeness of the bounds is physically mean-ingful and internally consistent, but it also shows that the present estimates should be viewed as first order-of-magnitude projections rather than precision limits. Their real value is that they identify which experimental chan-nels — low-energy spectroscopy, phase interferometry, and persistent spin transport — are the most promis-ing ones for obtaining the first dedicated bounds on this Lorentz-invariant axial truncation. 21  
+
+> VIII. CONCLUSION
+
+In this work we have investigated a class of nonminimal derivative couplings between fermions and electromag-netic tensor backgrounds, characterized by two Lorentz-invariant dimensionful couplings g1 and g2. The analy-sis proceeded across three complementary levels — the relativistic Dirac theory, the Foldy–Wouthuysen nonrel-ativistic reduction, and the mesoscopic quantum ring — and the coherence of the results across these levels con-stitutes one of the central messages of the paper. Already at the Dirac level, before any nonrelativistic approximation is performed, the deformed operator Γμ
+
+> eff
+
+splits the relativistic mass shell into two distinct branches 
+
+E±, whose separation grows as ∆E ≃ 2ηB p at low mo-menta and saturates at ∆E ≃ 2mη B in the ultrarela-tivistic regime, as illustrated in Fig. 1. The canonical analysis reveals that admissible background configura-tions are precisely those for which Γ0eff is invertible, so that a consistent one-particle Hamiltonian exists; the ef-fective bilinear current Jμ 
+
+> eff
+
+= ¯ψ Γμ 
+
+> eff
+
+ψ, conserved for con-stant backgrounds, then provides the appropriate rela-tivistic probability density. These relativistic features are not secondary details: they identify the branch splitting as a genuine kinematic signature of the model, already present before any reduction to the ring geometry is per-formed. The Foldy–Wouthuysen transformation converts this relativistic content into a transparent low-energy struc-ture. Both the g1 and g2 sectors generate effective Hamil-tonians of the form F · (p × σ), showing that magnetic as well as electric background fields can induce Rashba-type interactions. This is a genuinely novel feature of the present framework: in standard condensed-matter realizations the Rashba coupling is exclusively driven by structural electric fields [7], whereas here both B and E
+
+may play equivalent roles depending on which operator sector is active. When restricted to a one-dimensional quantum ring, the effective Hamiltonian takes the exact form (i∂ φ + ξσ ρ)2/(2 mr 20 ) − ξ2/(2 mr 20 ), where the sin-gle dimensionless parameter ξ = mr 0F12 unifies, in one stroke, the spectral splitting, the geometric phase, and the persistent spin current of the ring. From the exact solution of the ring problem we derived analytical expressions for the spectrum, eigenspinors, Aharonov–Anandan phases, and persistent spin currents. The AA phase Φ(λ,s ) 
+
+> AA
+
+= −2λπ (n − λs  
+
+> 2
+
+cos θ) encodes the geometric structure of the spinor bundle over the ring through the mixing angle θ = arctan(2 ξ), which mea-sures the deformation of the local spin frame induced by the nonminimal coupling. The persistent spin cur-rent in the z direction, J zφ = (4 mr 0)−1(2 n cos θ − 1) , is uniform along the ring and decreases monotonically as 
+
+ξ grows (Fig. 3), while the transverse components J x,y φ
+
+oscillate sinusoidally with the ring angle, forming a rotat-ing in-plane current vector locked to the local spin frame (Fig. 4). The differential spin response Gs = ∂J zφ /∂ξ ,which plays the role of a geometric transport coeffi-cient, reaches its maximum magnitude at the finite value 
+
+ξcrit = 1 /(2 √2) with |G s|max = 2 n/ (3 √3mr 0), signaling an optimal coupling regime for spin manipulation. This feature, together with the linear scaling with the orbital quantum number n, may be of direct relevance for spin-tronic applications [9, 10] where efficient and tunable spin control is a central requirement. A central new contribution of this work is the first sys-tematic extraction of order-of-magnitude bounds on the two Lorentz-invariant couplings from experimentally ac-cessible scenarios, collected in Table II. In the relativistic sector, the nonrelativistic kinematic regime turns out to be the most sensitive: for electrons with kinetic energy 
+
+K ∼ 1 keV , magnetic field B = 10 T , and spectroscopic resolution δE = 1 meV , the branch splitting implies 
+
+g1 ≲ 8 × 10 6 GeV −2, while the analogous electric branch gives g2 ≲ 2.4 × 10 8 GeV −2. These estimates outperform the ultrarelativistic storage-ring scenario for g1 by sev-eral orders of magnitude, because the low-energy split-ting grows linearly with momentum whereas the high-energy one saturates at 2meηB . In the mesoscopic sector, phase-sensitive interferometry and spin-current measure-ments in GaAs quantum rings give bounds in the range 
+
+10 10 –10 12 GeV −2, depending on whether the relevant ob-servable is the Aharonov–Anandan phase or the persis-tent spin current. Although these estimates are numer-ically much weaker than the limits available for related Lorentz-violating sectors quoted in Table I, the compar-ison is physically misleading: the couplings g1 and g2
+
+are Lorentz-invariant and enter observables only through the field-dressed combinations ηB = g1B, ηE = g2E,and ξ ∼ m∗r0 g F . Since laboratory fields are extremely small in natural units, large numerical bounds on g1 and 
+
+g2 are fully consistent with perturbatively small physical effects. The entries of Table II should therefore be viewed as the first dedicated order-of-magnitude constraints on this specific operator truncation rather than as precision EFT limits. Altogether, these findings reveal that nonminimal cou-plings involving tensor fields can generate a phenomenol-ogy remarkably similar to Rashba systems, while retain-ing a fully field-theoretic foundation. This opens new paths for connecting high-energy theoretical structures, such as antisymmetric-tensor backgrounds, axion-like fields [33], or noncommutative corrections, to condensed-matter analogues exhibiting spin–orbit physics, geomet-ric phases, and mesoscopic transport. The framework de-veloped here sets the stage for future investigations en-compassing time-dependent backgrounds, disorder, col-lective behavior in arrays of rings, and possible topo-logical extensions. On the experimental side, engineered synthetic gauge fields in ultracold atomic systems [37, 38] and topological photonic lattices [43] offer platforms where ξ can be directly tuned, making the effective Hamiltonians derived here accessible in controlled labo-ratory settings. These directions may broaden the scope of applications and shed further light on the deep in-terplay between relativistic field-theory structures, geo-22 metric phases, spin dynamics, and thermal transport in low-dimensional quantum systems. 
+
+> ACKNOWLEDGMENTS
+
+This work was partially supported by the Brazilian agencies CAPES, CNPq, FAPEMA and FAPESB. EOS acknowledges the support from grants CNPq/306308/2022-3, FAPEMA/UNIVERSAL-06395/22, and CAPES/Code 001. J.A.A.S.R acknowl-edges partial financial support from UESB through Grant AuxPPI (Edital No. 267/2024), as well as from FAPESB–CNPq/Produtividade under Grant No. 12243/2025 (TOB-BOL2798/2025). 23 
+
+[1] S. Murakami, N. Nagaosa, and S.-C. Zhang, Science 301 ,1348 (2003). [2] J. Sinova, D. Culcer, Q. Niu, N. A. Sinitsyn, T. Jung-wirth, and A. H. MacDonald, Phys. Rev. Lett. 92 , 126603 (2004). [3] C. L. Kane and E. J. Mele, Phys. Rev. Lett. 95 , 146802 (2005). [4] B. A. Bernevig, T. L. Hughes, and S.-C. Zhang, Science 
+
+314 , 1757 (2006). [5] M. Z. Hasan and C. L. Kane, Rev. Mod. Phys. 82 , 3045 (2010). [6] E. I. Rashba, Sov. Phys. Solid State 2, 1109 (1960), [Fiz. Tverd. Tela 2, 1224 (1960)]; no DOI available for the orig-inal Soviet journal; widely cited as the primary Rashba SOC reference. [7] Y. A. Bychkov and E. I. Rashba, J. Phys. C: Solid State Phys. 17 , 6039 (1984). [8] J. Nitta, T. Akazaki, H. Takayanagi, and T. Enoki, Phys. Rev. Lett. 78 , 1335 (1997). [9] I. Žutić, J. Fabian, and S. Das Sarma, Rev. Mod. Phys. 
+
+76 , 323 (2004). [10] A. Manchon, H. C. Koo, J. Nitta, S. M. Frolov, and R. A. Duine, Nat. Mater. 14 , 871 (2015). [11] S. Datta and B. Das, Appl. Phys. Lett. 56 , 665 (1990). [12] I. M. Miron, K. Garello, G. Gaudin, P.-J. Zermatten, M. V. Costache, S. Auffret, S. Bandiera, B. Rodmacq, A. Schuhl, and P. Gambardella, Nature 476 , 189 (2011). [13] M. V. Berry, Proc. R. Soc. London A 392 , 45 (1984). [14] Y. Aharonov and J. Anandan, Phys. Rev. Lett. 58 , 1593 (1987). [15] Y. Aharonov and D. Bohm, Phys. Rev. 115 , 485 (1959). [16] D. Frustaglia and K. Richter, Phys. Rev. B 69 , 235310 (2004). [17] D. Bercioux, M. Governale, V. Cataudella, and V. M. Ramaglia, Phys. Rev. Lett. 93 , 056802 (2005). [18] A. F. Morpurgo, J. P. Heida, T. M. Klapwijk, B. J. van Wees, and G. Borghs, Phys. Rev. Lett. 80 , 814 (1998). [19] M. König, A. Tschetschetkin, E. M. Hankiewicz, J. Sinova, V. Hock, V. Daumer, M. Schäfer, C. R. Becker, H. Buhmann, and L. W. Molenkamp, Phys. Rev. Lett. 
+
+96 , 076804 (2006). [20] A. Lorke, R. J. Luyken, A. O. Govorov, J. P. Kotthaus, J. M. Garcia, and P. M. Petroff, Phys. Rev. Lett. 84 ,2223 (2000). [21] A. Fuhrer, S. Lüscher, T. Ihn, T. Heinzel, K. Ensslin, W. Wegscheider, and M. Bichler, Nature 413 , 822 (2001). [22] M. Büttiker, Y. Imry, and R. Landauer, Phys. Lett. A 
+
+96 , 365 (1983). [23] H.-F. Cheung, Y. Gefen, E. K. Riedel, and W.-H. Shih, Phys. Rev. B 37 , 6050 (1988). [24] L. P. Lévy, G. Dolan, J. Dunsmuir, and H. Bouchiat, Phys. Rev. Lett. 64 , 2074 (1990). [25] V. Chandrasekhar, R. A. Webb, M. J. Brady, M. B. Ketchen, W. J. Gallagher, and A. Kleinsasser, Phys. Rev. Lett. 67 , 3578 (1991). [26] A. G. Mal’shukov and K. A. Chao, Phys. Rev. B 65 ,241308(R) (2002). [27] Q.-F. Sun, H. Guo, and J. Wang, Phys. Rev. B 69 , 054409 (2004). [28] J.-S. Sheng and K. Chang, Phys. Rev. B 74 , 235315 (2006). [29] D. Colladay and V. A. Kostelecký, Phys. Rev. D 55 , 6760 (1997). [30] D. Colladay and V. A. Kostelecký, Phys. Rev. D 58 ,116002 (1998). [31] V. A. Kostelecký, Phys. Rev. D 69 , 105009 (2004). [32] V. A. Kostelecký and Z. Li, Phys. Rev. D 99 , 056016 (2019). [33] F. Wilczek, Phys. Rev. Lett. 58 , 1799 (1987). [34] P. Sikivie, Phys. Rev. Lett. 51 , 1415 (1983). [35] G. E. Volovik, The Universe in a Helium Droplet (Oxford University Press, Oxford, 2003). [36] S. Ryu, A. P. Schnyder, A. Furusaki, and A. W. W. Lud-wig, New J. Phys. 12 , 065010 (2010). [37] J. Dalibard, F. Gerbier, G. Juzeli¯ unas, and P. Öhberg, Rev. Mod. Phys. 83 , 1523 (2011). [38] N. Goldman, G. Juzeli¯ unas, P. Öhberg, and I. B. Spiel-man, Rep. Prog. Phys. 77 , 126401 (2014). [39] R. Casana, M. M. Ferreira, V. Mouchrek-Santos, and E. O. Silva, Phys. Lett. B 746 , 171 (2015). [40] J. B. Araujo, R. Casana, and M. M. J. Ferreira, Phys. Rev. D 92 , 025049 (2015). [41] J. B. Araujo, A. H. Blin, M. Sampaio, and M. M. Ferreira, Phys. Rev. D 100 , 015046 (2019). [42] V. A. Kostelecký and N. Russell, Rev. Mod. Phys. 83 ,11 (2011), updated annually; 2025 edition available at arXiv:0801.0287. [43] T. Ozawa, H. M. Price, A. Amo, N. Goldman, M. Hafezi, L. Lu, M. C. Rechtsman, D. Schuster, J. Simon, O. Zil-berberg, and I. Carusotto, Rev. Mod. Phys. 91 , 015006 (2019).
