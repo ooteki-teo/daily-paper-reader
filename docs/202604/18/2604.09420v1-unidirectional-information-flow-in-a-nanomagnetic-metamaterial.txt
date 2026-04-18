@@ -1,0 +1,637 @@
+Title: Unidirectional information flow in a nanomagnetic metamaterial
+
+URL Source: https://arxiv.org/pdf/2604.09420v1
+
+Published Time: Mon, 13 Apr 2026 01:15:48 GMT
+
+Number of Pages: 35
+
+Markdown Content:
+# Unidirectional information flow in a nanomagnetic metamaterial 
+
+## Johannes H. Jensen 1* †, Ida Breivik 1†, Arthur Penty 1,Anders Strømberg 1, Henrik Tidemann Kaarbø 1,Dheerendra S. Bhandari 1, Thea M. Dale 1, Michael Foerster 2,Miguel Angel Ni˜ no 2, Deepak Dagur 2, Magnus Sj¨ alander 1,Gunnar Tufte 1, Erik Folven 1
+
+> 1
+
+Norwegian University of Science and Technology, Trondheim, Norway. 
+
+> 2
+
+ALBA Synchrotron Light Facility, Carrer de la Llum 2 – 26, Cerdanyola del Vall´ es, 08290, Barcelona, Spain. *Corresponding author(s). E-mail(s): johannes.jensen@ntnu.no; 
+
+> †
+
+These authors contributed equally to this work. 
+
+Abstract 
+
+Artificial spin ice (ASI) are metamaterials composed of interacting nanomagnets. Although ASI hold promise for low-power computing, the ability to transmit information through these two-dimensional systems has been limited. Inspired by non-reciprocal transport in nature, we develop a framework for non-reciprocal influence between nanomagnets. Using the framework we discover a family of ASI geometries with inherent directionality. Directional ASI have the property that, when driven by an external field protocol, domains grow and reverse in the same direction, illustrating an emergent non-reciprocity of the system. Com-bining growth and reversal results in unidirectional domain movement through the metamaterial. We focus on one member of the directional ASI family, and demonstrate unidirectional domain growth experimentally. Furthermore, we show that the direction of growth is reconfigurable by tuning the external field strengths. Finally, we demonstrate how the directionality of the system signif-icantly improves memory capabilities in a reservoir computing framework. Our work is the first demonstration of an ASI with inherent directionality, offering a magnetic computing platform that combines memory and computation within a single neuromorphic substrate. 
+
+Keywords: Artificial spin ice, directionality, non-reciprocity, neuromorphic computing, reservoir computing 
+
+1
+
+> arXiv:2604.09420v1 [cond-mat.mes-hall] 10 Apr 2026
+
+# Introduction 
+
+Many systems in nature have an inherent direction, enabling reliable transport of energy, matter or information. For example, ion pumps in biological membranes enable ions to cross the membrane one way but not the other. Directionality is also essential in engineered systems, e.g., digital computing is rooted in the unidirectional conduction of the p-n junction. Non-reciprocity is closely related to directionality, and has been reported in a range of optical [1, 2], mechanical [3–5], superconducting [6, 7] and magnonic [8–10] systems. All of these systems rely on broken inversion symmetries, giving the systems an inherent sense of “forward” and “backward”. Artificial spin ice (ASI) are metamaterials composed of interacting nanomagnets arranged on a two-dimensional lattice, which exhibit a wide variety of emergent behavior [11]. Non-reciprocity, however, has not yet been explored in ASI systems. Although ASI have been proposed as viable substrates for low-power neuromorphic computing [12, 13], the ability to transmit information within these two-dimensional systems has remained limited. Non-reciprocal phenomena in ASI could provide means for directional information transport, which would significantly increase their poten-tial. Although unidirectional information transmission has been demonstrated in 1D chains of nanomagnets [14], it has not been extended to 2D systems. More recently, we demonstrated how magnetic domains of specific shapes can break the symmetry in ASI and result in unidirectional domain propagation [15]. Here, we consider sym-metry breaking in the ASI geometry itself, resulting magnetic metamaterials with an 
+
+intrinsic directionality. We present a family of directional ASI geometries, in which magnetic domains propagate in a single direction. First, we develop a framework for non-reciprocal influ-ences between nanomagnets, which we exploit to create ASI geometries where the total influences are directional. We show that, when driven by an external field pro-tocol, such geometries exhibit unidirectional magnetic domain growth and reversal. When growth and reversal is combined, magnetic domains propagate in a single direc-tion through the metamaterial. Furthermore, tuning the field protocol can alter the direction of growth, suggesting a viable path towards reconfigurability. Finally, we demonstrate how directional ASI can be exploited for reservoir computing, where uni-directional domain movement enables significant memory capacity and computation in a single magnetic substrate. 
+
+# Spin influence 
+
+The dipolar interaction between two magnets is symmetric: the magnets exert an equal and opposite force on each other. However, how the magnets react to a force can be asymmetric. When subject to a magnetic field, a nanomagnet will switch its magneti-zation if the field exceeds its switching threshold. The switching threshold depends on the angle of the field, and can be described by a characteristic switching curve [16, 17]. This angle-dependence can give rise to a non-reciprocal switching response, where one magnet influences another more than vice versa. To capture such asymmetries, we introduce spin influence , which measures how much a magnet promotes or prevents the switching of another. Here, we consider 2si      
+
+> sj
+> rij
+> θi
+> θj
+> hext
+> a
+> −60 −40 −20 0
+> h‖
+> −40
+> −20 020 40
+> h⊥
+> hi
+> ext
+> +hij
+> dip
+> −hij
+> dip
+> hj
+> ext
+> +hji
+> dip
+> −hji
+> dip
+> bcd
+> ef
+> −0.6
+> −0.3 0.0 0.3 0.6 Influence  Iij  (a.u.)
+
+Fig. 1 Spin influence. a Two nanomagnet spins i (blue) and j (orange), with states si, s j ∈{− 1, 1}, orientations θi and θj , separated by some displacement rij , subject to an external field 
+
+hext . b Closeup of the switching astroid (black curve), and magnetic fields for spin i (blue) and j
+
+(orange). Fields are decomposed into the parallel h∥ and perpendicular h⊥ components with respect to each spin axis, representing the local reference frame of each spin. A spin will switch if subject to a magnetic field that crosses the astroid boundary. The magnetic fields are composed of a global external field hext and the dipolar field from the other spin hij 
+
+> dip
+
+. Two possible dipolar fields are possible, depending on the state of the other spin, as indicated as closed circle ( sj = +1) and open circle ( sj = −1). The dashed lines from the circles indicate the shortest distance to the astroid. Note that the dipolar fields have been amplified for illustration purposes. c-d Influence maps for a 2D system of spins based on a. Neighbor spins are colored according to their influence on the center spin, where blue represents a stabilizing influence and red a destabilizing influence. The influence has been normalized. e-f Influence vectors for the spins in c-d . The length of each vector corresponds to the influence from each neighbor. 
+
+elongated single-domain nanomagnets which have two stable states (artificial spins). In the following, we will refer to these nanomagnets simply as spins. Fig. 1a shows two spins i and j, with states si, s j ∈ {− 1, 1}, orientations θi and θj , separated by some displacement rij . In this example, a global external field hext is applied in the opposite direction of the spin states. Fig. 1b shows a closeup of the characteristic switching astroid of the nanomagnet spins [17]. A spin i will flip (switch) if subject to a magnetic field hi that crosses the astroid boundary (black curve). In the figure, the fields are decomposed into h∥ and 
+
+h⊥, which represent the field components parallel and perpendicular to the axis of each spin, respectively. Thus, we are showing the astroid in the local reference frame of each spin. In the isolated two-spin case, the total field hi = hext + hij 
+
+> dip
+
+, where hext is a global external magnetic field and hij  
+
+> dip
+
+is the dipolar field from spin j. As illustrated by hi
+
+> ext
+
+(blue) and hj 
+
+> ext
+
+(orange) in Fig. 1b, the external field is different in the local reference frames of each spin. In other words, the spins experience a global hext differently due to their relative orientation. The direction of the dipolar field hij  
+
+> dip
+
+depends on the state of the neighbor spin 
+
+sj = ±1. Flipping spin sj → − sj results in a 180 ° rotation of the dipolar field ( hij  
+
+> dip
+
+→−hij 
+
+> dip
+
+). These two possible dipolar fields are illustrated in Fig. 1a as closed circle 3(sj = +1) and open circle ( sj = −1). In the particular example shown in Fig. 1, we can see that si = +1 effectively makes spin j (orange) harder to switch, by increasing the distance to the astroid boundary (dashed lines in the figure). Conversely, if si = −1, the opposite is true, and the dipolar field effectively reduces the astroid distance, and would in this case push spin j beyond the boundary and cause switching. This is not true for the other spin i, however, where the dipolar field from j neither increases nor reduces the distance to the astroid. In this case, the dipolar field is parallel to the astroid boundary, meaning si is effectively unaffected by the state of the neighbor spin sj . We have uncovered an asymmetry between the two spins, where spin i exerts a large influence on the state of spin j, whereas spin j has no influence on the state of spin i.Given this intuition, we define spin influence based on how the distance to the astroid changes, when considering the possible dipolar fields from a neighbor spin. Let 
+
+di(hi) be the shortest distance from the total field hi to the astroid boundary for spin 
+
+i (dotted lines in Fig. 1b). Furthermore, let di be negative if hi is inside the astroid boundary, and positive outside. Then, the spin influence Iij from spin j to spin i is 
+
+Iij = di(hext − hij 
+
+> dip
+
+) − di(hext + hij 
+
+> dip
+
+), (1) where the first term corresponds to the neighbor state sj = −1, and the second term corresponds to sj = +1. The magnitude of Iij describes how much a neighbor spin j can affect the astroid distance for spin i. By taking into account both possible neighbor states sj = ±1, the magnitude is made independent of the neighbor state sj . A positive Iij indicates that the dipolar field from j nudges spin i to take the same value, while a negative 
+
+Iij indicates the opposite. Non-reciprocity occurs when the influence between magnets is asymmetrical, i.e., |Iji |̸ = |Iij |. Asymmetries exist for many combinations of spin orientations (see Supplementary information). Note that Iij is very much dependent on the state of the spin being influenced, since flipping si will align the spin with hext , making h∥ positive, which is a stable configuration. Furthermore, the astroid distance di is only really meaningful when hi
+
+is close to the astroid boundary. Fig. 1c-d depicts influence maps for a 2D geometry based on the non-reciprocal pair of spins in Fig. 1a. As can be seen, there is an asymmetry between the neighbor influ-ence for the two sublattices; the spins with orientation θi (Fig. 1c) experience a weaker influence from their neighbors compared to spins with orientation θj (Fig. 1d). How-ever, the local non-reciprocity between pairs of spins cancels out on a larger scale due to the symmetries of the 2D geometry. The system as a whole is thus still reciprocal. 
+
+## Emergent ferromagnetism 
+
+ASI geometries may exhibit collective ferromagnetism [18] or antiferromagnetism [19]. Experimental results indicate that ferromagnetic systems may be more robust com-pared to antiferromagnetic systems, which tend to more easily get stuck in local energy minima [20, 21]. 4When the spins are aligned, we can interpret a positive influence as describing a ferromagnetic relationship between the spins, and a negative influence as an anti-ferromagnetic relationship. In other words, a ferromagnetic relationship is when the state sj = si results in a dipolar field that acts to prevent switching. Conversely, an antiferromagnetic relationship is when the state sj = si results in a dipolar field that promotes switching. Influence can hence be used to measure the amount of ferromagnetic or antifer-romagnetic interactions in a system of spins. The per-spin influence Ii = P  
+
+> j̸=i
+
+Iij 
+
+provides an overall measure of the influences on a spin i. In an ensemble of spins, the average per-spin influence F provides a total measure of (anti)ferromagnetism: 
+
+F = 1
+
+N
+
+> N
+
+X
+
+> i
+
+Ii (2) For instance, the predominance of positive influence values in Fig. 1c-d indicates a ferromagnetic bias and hence a positive F .
+
+## Directionality 
+
+We have seen how spin influence provides a measure of how much one spin affects the state of another. Here, we extend the measure to capture the direction of influence. Given some spin i and neighbor j, the influence vector from j → i is given by 
+
+Iij = |Iij |ˆrij , (3) where ˆrij is the normalized distance vector from spin j to i. In other words, Iij is simply the distance vector rescaled by the influence Iij .The per-spin influence vector Ii = P  
+
+> j̸=i
+
+Iij indicates the direction from which a spin i is most influenced. The magnitude of Ii is a measure of directional asymmetry in the influences on spin i. A zero magnitude indicates that the influence is symmetric, e.g., if spin i is influenced equally by neighbors from all directions. A positive mag-nitude, on the other hand, indicates some amount of spatial asymmetry is present, where spin i is influenced more from one direction than the others. Finally, the directionality vector D provides an overall measure of directionality in an ensemble of spins: 
+
+D = X
+
+> i
+
+Ii. (4) This provides a metric to evaluate and compare different ASI geometries. Fig. 1e-f depicts the influence vectors corresponding to Fig. 1c-d. Due to the sym-metries of the geometry, all influence vectors will eventually cancel, resulting in a total directionality vector D = 0. A directional geometry is characterized by a nonzero D,which we explore next. 5a
+
+θA θB θC θA θB θC θA
+
+θC θA θB θC θA θB θC
+
+θB θC θA θB θC θA θB
+
+θA θB θC θA θB θC θA
+
+θC θA θB θC θA θB θC
+
+θB θC θA θB θC θA θB
+
+θA θB θC θA θB θC θA           
+
+> 0.0 0.1 0.2 0.3 0.4 0.5 Directionality |D|
+> 0.0 0.2 0.4 0.6 0.8 1.0 1.2 1.4 Ferromagnetism  FT2T4
+> T18
+> T22
+> T34
+> T48
+> b
+> T2
+> c
+> T4T18 T22 T34 T48
+> LA
+> LB
+> LC
+
+Fig. 2 Directional ASI family. a Directional tile template. The tile template is composed of three magnet orientations {θA, θ B , θ C }, arranged along the diagonal. b Space of directional geometries. All combinations of magnet orientations are considered, plotted according to their directionality |D|
+
+and ferromagnetism F . Each point in the plot corresponds to a 12 × 12 geometry and a three clock fields. The number of possible clock fields per tile depends on the magnet orientations (see Methods). The Pareto front of the search space is highlighted in orange, with six example tiles highlighted as 
+
+Ti according to the order they appear along the Pareto front. c Tiles and their corresponding time-evolution. Six example tiles from the Pareto front are shown. The top row depicts the tile, while the bottom row shows time-evolution maps of the corresponding geometry. An initial center domain is gradually grown over time using astroid clocking. The shade of gray indicates the time step of growth, from black at initialization time to light gray towards the end, with white indicating no activity. 
+
+# Directional ASI geometries 
+
+Based on spin influence, we investigate whether it is possible to have a directional ASI geometry. In other words, is there an arrangement of nanomagnets that tile the plane and results in a directional asymmetry in the spin influences? In this work, we consider a tile-based geometry on the square lattice, as depicted in Fig. 2a. The geometry is constructed by tiling the square lattice with a W × H tile template. The tile template defines the spin orientations θi of the geometry. We allow the tile to contain at most three unique orientations (three sublattices). With these constraints, the geometry is defined by a set of orientations {θk} and a mapping of the orientations onto the tile template. Influence depends on the applied external field, in addition to spin orientations. We consider astroid clocking to drive domain dynamics, where a set of field pulses 6selectively switch magnets from each sublattice [20]. Each sublattice in the system is therefore associated with a specific external clock field with angle ϕi and strength Hi.Using stochastic optimization, we first search for a tile template that maximizes directionality |D| (see Methods). The resulting tile is shown in Fig. 2a, which we refer to as the directional tile template, with the three spin orientations {θA, θ B , θ C }
+
+arranged along the diagonal in an alternating fashion. Repeated optimization always results in some variant of the directional tile template. Furthermore, optimization fails (|D| ≈ 0) with fewer than three angles or a smaller tile. In the Supplementary informa-tion, we outline a proof of why the directional tile template maximizes directionality. Notice how the resulting geometry is rotational asymmetric. We first explore the possible geometries that arise from the directional tile template (Fig. 2a). Specifically, we are interested in the interplay between directionality ( |D|)and ferromagnetism ( F ). Fig. 2b shows the result of exhaustively searching all angle combinations {θA, θ B , θ C } (see Methods). Each point in the plot corresponds to a geometry and a combination of clock fields (the number of clock field combinations per tile depends on the set of spin orientations {θi}, see Methods). As can be seen, there is an apparent tradeoff between directionality ( |D|) and ferromagnetism ( F ). As directionality increases beyond 0 .35, there is a marked drop in ferromagnetism. At maximum directionality, ferromagnetism is roughly half of its maximum. The Pareto front of Fig. 2b is highlighted in orange, from which we have sam-pled some tiles which are shown in Fig. 2c. Tiles are labeled as Ti according to the order they appear along the Pareto front. The top row of Fig. 2c shows the tile, whereas the bottom row depicts the domain evolution of the corresponding geometry. Each geometry starts with an initial center domain, which is gradually grown using astroid clocking. The shade of black indicates the time step of growth, from black at initialization time to light gray at the end, with white indicating no activity. A vari-ety of different behaviors are observed, ranging from symmetric ferromagnetic growth (T2), directional ferromagnetic growth ( T4, T 18 , T 22 ) to directional anti-ferromagnetic growth ( T34 , T 48 ). Most of the geometries along the Pareto front display some degree of directional domain growth. The most directional geometries ( T34 , T 48 ) exhibit anti-ferromagnetic order, and tend to get stuck in local energy minima, prohibiting further domain growth. In contrast, the directional ferromagnetic geometries ( T4, T 18 and T22 ) appear to offer more robust domain growth, while at the same time displaying directional behavior. Our measures of directionality and ferromagnetism correspond fairly well to dynamic behavior, where directional growth is more prevalent at higher |D| values, and anti-ferromagnetic domains are more prevalent at lower F values. However, we also observe behavior that contradicts our measures, such as anti-ferromagnetic domains in a seem-ingly ferromagnetic system ( T2). Such behavior can be explained by details in the neighbor influences, which are not captured in the overall influence measures. In any case, the directional tile template results in a family of ASI geometries with a rich variety of emergent behavior. 7a                  
+
+> D
+> LALBLC
+> −50 050
+> hx[mT]
+> −50 050
+> hy [mT]  ABCabc
+> bcLA, A-field
+> dLB, B-field eLC, C-field
+> −5.0 −2.5 0.0 2.5 5.0 Neighbor influence [mT]
+
+Fig. 3 The T18 geometry. a A close-up of a T18 ASI. The three sublattices, LA, LB and LC are marked with solid, dashed and dotted outlines, respectively. In the top half, the colors correspond to the state of the magnets, as indicated by the white arrows. In the bottom half, the per spin influence vector Ii is shown for each magnet. The total directionality vector D is shown in the inset. b The six clock fields used to grow ( A, B and C) and shrink ( a, b and c) domains. The switching astroids of the three sublattices are also shown. c-e Influence maps for the reference magnet (gray) belonging to each of the three sublattices, subject to their respective clock field. The blue magnets have a stabilizing effect on the reference, while red magnets have a destabilizing effect. The influence maps correspond to the polarized state. 
+
+# The T18 directional ASI 
+
+For the remainder of this paper, we focus on the ASI geometry based on the T18 
+
+tile shown in Fig. 2c, which appeared particularly promising in simulations. The T18 
+
+geometry is shown in Fig. 3, where the three sublattices LA, LB and LC are highlighted by the solid, dashed and dotted outlines, respectively. The corresponding angles θA =
+
+−70 ◦, θB = −60 ◦ and θC = 5 ◦. We refer to the state of the magnets by their color, as indicated in Fig. 3a(top). The system is polarized when all magnets are in their pink-red state. Fig. 3a(bottom) shows the per spin influence vectors Ii for the magnets. As can be seen, the magnets in the LA and LB sublattices experience a significantly directional influence, with magnitudes of around 3 .5 mT for LA and 4 .6 mT for LB . Magnets in sublattice LC also have a nonzero per spin influence, although it is considerably smaller at around 0 .8 mT. The net directionality D points in the southeasterly direction, as shown in the inset. To evaluate the T18 geometry, we employ astroid clocking to grow and reverse domains in the array. From the exhaustive sweep we obtain six clock fields, as shown in Fig. 3b. We use the A, B and C fields for domain growth, and the a, b and c fields, 8Fig. 4 Directional domain growth, reversal and movement. Starting from an initial domain (0), we apply three full ABC clock cycles (1-4), growing the domain in the southeasterly direction. (1) shows the domain after the first two full ABC cycles, while (2-4) show the domain after three subsequent field pulses, A, B and C. We then apply three full abc cycles (5-8), reversing the domain from the northwest. By alternating cycles of growth and reversal (9-12), we can move the domain in the southeast direction. The shaded regions highlight the initial domain. 
+
+of the same angles but with opposite polarity, for domain reversal. The A and a fields selectively switch magnets in the LA sublattice, and similarly for B, b, C and c.Fig. 3c-e shows influence maps for the sublattices LA, LB and LC when subject to their respective clock fields. Since spin influence is predominantly positive in all three sublattices, the neighborhood has a net stabilizing effect on the reference magnet. Magnets in LA are are most strongly influenced by their western nearest neighbor, while magnets in LB are primarily influenced by their northern nearest neighbor. In contrast, the influence is more evenly distributed for LC magnets, resulting in a less directional influence vector. Fig. 4 shows the time-evolution of the T18 geometry during astroid clocking. Snapshot 0 shows the initial state, an octagonal domain (blue-green) on a polarized background (pink-red). Snapshots 1-4 show how growth of the blue-green domain is predominantly in the southeasterly direction. This directional growth is in agreement with D. Following growth, we reverse the domain using the abc protocol, as shown in snapshots 5-8. When reversing, notice how magnets along the northwestern edge of the domain switch. As a result, the domain center shifts towards the southeast. Snapshots 9-12 demonstrate how alternating growth and reversal results in domain movement in the southeasterly direction. Note how the domain in snapshot 12 has clearly moved to the southeast from its initial state, as highlighted by the shaded region. 9The underlying mechanism behind the directional domain movement can be under-stood by considering the influence maps in Fig. 3c-e. We choose the A-field strength so that it is just strong enough to flip an isolated LA magnet. However, the influence from the neighboring magnets stabilize the LA magnets when in the pink-red state (Fig. 3c). Consequently, LA magnets will only flip in close proximity to a blue-green domain. A blue western neighbor is sufficient to destabilize the LA magnet, which will then flip when the A field is applied. In other words, LA magnets within a pink-red domain are locked, but may be unlocked by first flipping their western nearest neighbor. The B-field is chosen so that it is not strong enough to flip isolated LB magnets. For the LB magnets to flip, the neighborhood must contribute with a significant destabilizing influence. As can be seen in Fig. 3d, the northern nearest neighbor must be green to unlock the LB magnets. Hence the A-field can unlock LB magnets, which may flip by the subsequent B-field. We choose the C-field in a similar manner to the A-field, so that it is strong enough to flip isolated LC magnets. Once again, in a pink-red domain, the influence from the neighboring magnets stabilizes the LC magnets. However, as seen in Fig. 3c, the influence in the neighborhood of the LC magnets is more evenly distributed compared to LA magnets. Consequently, there are several combinations of neighboring magnets which may unlock LC magnets. In our simulations (Fig. 4(4)), the LC magnets are unlocked by combinations of their western, northwestern and northern neighbors. Only magnets along a domain wall can flip, as a result of the locking/unlocking mechanism of the ABC clock protocol. Furthermore, growth is limited to the south-easterly domain walls due to the asymmetrical distribution of influence, in particular for LA and LB magnets. Repeated ABC cycles thus results in step-wise domain growth in the southeasterly direction. Note that the three clock fields should be applied in the ABC order, due to the locking/unlocking mechanism. Changing the order of the clock fields will slow down the domain growth, as some clock fields will be unable to switch locked magnets. Pure southeasterly growth of the domain is observed from the third clock cycle onward. In the two first clock cycles, the initial domain grows slightly to the northwest in addition to the growth in the southeast direction, as shown in Fig. 4(1). However, the domain quickly reaches an equilibrium (Fig. 4(2-4)), where only magnets along the southeastern edge of the domain flip, resulting in consistent growth in the southeasterly direction. Domain reversal follows a similar mechanism to that of growth. Reversal can be understood as growth of the outer pink-red domain in the southeasterly direction. Due to the rotational symmetry of the clock fields and switching astroids, the influence maps for reversal are identical to those for growth (Fig. 3c-e). By following the same analysis as for growth, we see that the three reversal fields, applied in abc order, will flip magnets along the northwestern edge of the blue-green domain, as shown in Fig. 4(5-8). Hence, domain growth and reversal will both move the center of mass of a blue-green domain in the southeasterly direction. Alternating growth and reversal produces domain movement, as in Fig. 4(9-12) based on the same principles. To balance the activity during growth and reversal, we 10 a b d f                  
+
+> cegFig. 5 Experimental directional domain growth of T18 . a Average intensity of 31 XMCD-PEEM images of 10 ABC clock cycles (30 field pulses), starting from the polarized (white) state. The intensity of the magnets indicate when the magnets switch in the series, where the dark magnets switch first and the light magnets switch last. The imaged area is 19 μm×19 μm. b-g Snapshots of the blue and orange regions of the array, at three intervals in the clock series: after b-c three, d-e
+> six and f-g nine clock cycles. The centers of mass of the tracked domains are marked by colored dots in all snapshots, and its movement from the previous snapshot is shown by the white arrows.
+
+note that the abc fields are all slightly smaller in magnitude then the ABC fields, see Methods. The domain movement is not invariant under time-reversal, as the domain will not retrace its path if we reverse all magnet states and clock fields. When reversing the initial state and the clock fields, the domain moves in the same, southeasterly direction as before (see Supplementary information). Technically, we must also reverse the order of the clock protocol to exemplify true time-reversal. However, due to the unlocking mechanism of the clock fields, the clock fields which appear out of order have no effect on the system, resulting in the domain simply moving more slowly in the same, southeasterly direction. As the domain continues to move in the southeasterly direction, it can not return to its starting point by time reversal. We thus observe an emergent non-reciprocity in the domain dynamics of the directional ASI. Interestingly, this emergent non-reciprocity is different from many other non-reciprocal systems, where reversing the magnetic fields also reverses the direction of the non-reciprocity [1, 6, 10]. 
+
+# Experimental domain growth 
+
+Next, we demonstrate directional growth experimentally.Between each applied clock field, we image the system using x-ray magnetic circular dichroism photoemission microscopy (XMCD-PEEM). Fig. 5a shows the average intensity of 31 images from ten cycles of the ABC clock protocol (see also Supplementary information for the full series). Nanomagnets that switch first appear darkest, while nanomagnets that switch in later steps appear lighter. Thus, by following the gradient in the magnetic domains from dark to light, we can see that the domains predominantly grow in the southeasterly direction. 11 In the first experimental clock cycle, single magnets nucleate several places in the array. Single magnet nucleation can be attributed to natural variations in the coercive fields of the nanomagnets. When we apply additional clock cycles, domains start grow-ing from these nucleation sites. While growth is predominantly in the southeasterly direction, there is also some growth in other directions during the first few clock cycles. In later clock cycles, growth in the southeasterly direction is clearly most prevalent. Fig. 5b-g shows two regions of the array (blue and orange in Fig. 5a) at three intervals throughout the clock series. We start from the highlighted domains shown in b and c, which is three clock cycles after polarization. d-e and f-g show the domains after three and six more clock cycles, respectively. The center of mass of each domain moves in the southeasterly direction throughout the series, as indicated by the movement of the colored dots in b-g. The three highlighted domains show some variation in their direction of growth throughout the series. As there is some variation in the coercivity of the magnets, the experimental domains may stop growing at magnetically hard magnets, or grow by multiple magnets at magnetically soft magnets. Consequently, the experimental domains appear more organic than the ones observed in simulation. We also observe deviations in the direction of growth when domains grow into each other. Nevertheless, the predominance of southeasterly growth demonstrates that directional growth in T18 
+
+is robust to experimental conditions. When reversing the clock fields in experiment, we are not able to reproduce the clear reversal from the northwesterly direction as seen in simulation. The observed reversal regime is characterized by domains shrinking from all directions. This discrep-ancy between experiment and simulation suggests that there may be some aspects that are not captured by the dipole model. For example, in tightly coupled nanomagnet arrays, dipole interactions may affect the uniformity of their magnetization, resulting in changes in their switching thresholds [22, 23]. However, domain movement may still be possible using a combination of directional domain growth and symmetric domain reversal. Although the experimental southeasterly growth is only shown with a single set of field strengths, simulations indicate that similar results occur for a range of field strengths. The observed directional domain growth should thus be robust not only to natural variations of the coercive fields of the individual magnets, but also to variations in the experimental set-up, for example temperature effects. This further suggests that the T18 geometry has potential in applications beyond the lab. 
+
+# Northwesterly domain growth 
+
+We now explore the possibility of driving the system outside the field range in which we observe southeasterly domain growth and movement. Increasing the field strengths could cause avalanches, where several nanomagnets will switch in a single clock field. While large avalanches will cause the growth to be come uncontrolled, small avalanches may be taken advantage of to create a wider range of possible domain dynamics. Remarkably, we find a new growth regime in which the domains of T18 grow in the northwesterly direction, i.e., in the opposite direction as before. Fig. 6a shows a 12 a(0)                          
+
+> ABC ×2
+> (1)
+> A
+> (2)
+> B
+> (3)
+> C
+> (4)
+> bceg
+> dfhFig. 6 Northwesterly domain growth of T18 . a Simulated domain growth in the northwest regime. Starting from the initial state in (0), we apply three ABC clock cycles (1-4). The position of the initial domain is marked by the shaded region in (4). b-h Experimental domain growth in the northwest regime. bAverage intensity of 31 XMCD-PEEM images of 10 full cycles (30 field pulses) of astroid clocking, starting from the polarized state. The imaged area is 19 μm×19 μm. c-h Snapshots of the blue and orange regions of the array, at three intervals in the series, after c-d one, e-f three and
+> g-h five clock cycles. The center of mass of the domain is marked by colored dots in all snapshots, and its movement from the previous snapshot is shown by the white arrows.
+
+simulated series of domain growth in this regime. We find this growth regime when we apply weaker A-fields and stronger B - and C -fields. In this regime, the B - and 
+
+C -fields switch magnets in more than one sublattice, an effect we term “overclocking”. The first two clock cycles of the simulation (Fig. 6a(1)) are characterized by avalanches that switch a large area of nanomagnets to the northwest of the initial domain. This avalanche leaves behind some holes (unflipped LA nanomagnets) which are filled in by the subsequent A-field in Fig. 6a(2). Next, the B -field flips a few mag-nets along the northern edge of the domain, including a small avalanche consisting of magnets from both LA and LB . When the C -field is applied in Fig. 6(4), magnets in both the LB and LC sublattices flip. The resulting domain after another full clock cycle has grown mainly in the northwest direction, but still has some holes which can be filled by more clock cycles. We are able to experimentally reproduce the northwest growth, as seen from the direction of the gradients in the average XMCD-PEEM image in Fig. 6b. For the full clock series, see Supplementary information. The experimental demonstra-tion of northwesterly growth in the same array as the southeasterly growth rules out that systematic fabrication defects, e.g., causing a gradient in the coercivity of the nanomagnets in the array, contribute to the directional growth. 13 In Fig. 6c-h, we take a closer look at two regions of the array. Starting from the domains shown in c and d, one clock cycle after polarization, we apply two clock cycles, resulting in the domains shown in e-f. Applying two more clock cycles results in the domains shown in g-h. The center of mass of the domain marked in orange moves steadily northwest as the domain grows. The domain highlighted in blue also grows generally in the northwesterly direction, but not in a straight line. As growth in the northwest direction is dependent on small avalanches, it also seems more prone to uncontrolled switching in other directions, such as the growth to the east between c and e. When overclocking, growth in the northwest direction is faster than in the south-east direction, as the B and C -fields also flip magnets outside their corresponding sublattices. This is apparent from the experimental data, where clocking the blue domain in the southeast regime for 9 clock cycles results in Fig. 5f, which is approxi-mately the same size as the orange domain after only 5 clock cycles in the northwest regime (Fig. 6h). In this case, the B and C -fields overclock the T18 geometry, and the A-field fills in the remaining nanomagnets. For this particular choice of fields, the resulting domain growth is in the northwest direction. However, by adjusting the field strengths, the direction of domain growth can be altered significantly. 
+
+# Phase space of directional growth 
+
+By sweeping the field strengths of the three clock fields in simulation, we find a wide range of different types of domain growth in T18 , including directional and symmetric regimes. We classify the growth regimes by tracking how the domain center of mass moves. Fig. 7 shows three slices of the resulting phase diagram, where the color represents the direction of domain growth, and the lightness represents the growth speed. In the white areas of the phase diagram, the center of mass of the domain does not move, as the fields are too weak to flip any nanomagnets. In the black areas, the fields are so strong that the domain quickly avalanches to the edge of the domain, growing in an uncontrolled manner. Between these two types of growth, we find a variety of growth speeds. Slow growth occurs when domains which stop growing after only a few clock cycles, or through symmetric growth, which will also result in little movement of the center of mass. Fast growth stems from overclocked regimes, where small avalanches make the domains grow faster than in regimes where only one sublattice switches at a time. Remarkably, we can grow domains in almost any direction by adjusting the field strengths of the clock protocol. The right side of Fig. 7 shows eight examples of domain growth found in the T18 phase space. The northwest and southeast growth regimes are found in 1 and 8. We also find similar regimes in other regions of the phase space, such as the regimes shown in 2, 4 and 7. In 3 and 6, growth in the southeasterly and northwesterly direction is combined, resulting in movement of the center of mass in the northeasterly and southwesterly directions, respectively. There are also areas in the phase diagram where growth is less directional, such as in 5, where the domain 14 a            
+
+> 44 46 48
+> B [mT]
+> 48
+> 50
+> 52
+> C [mT]
+> b
+> 2
+> 4
+> 5
+> 8
+> A = 49.5
+> 46 48 50 52
+> A [mT]
+> 48
+> 50
+> 52
+> C [mT]
+> c
+> 1
+> 3
+> 6
+> 7
+> B = 48.5
+> 44 46 48
+> B [mT]
+> 46
+> 48
+> 50
+> 52
+> A [mT]
+> d
+> 28
+> C = 49.5
+> 123
+> 45
+> 678
+
+Fig. 7 Phase space of directional growth. a Schematic of the 3D phase space of directional growth in the T18 directional ASI, where hue represents direction and lightness represents the speed of growth (light is slow/no growth and dark is fast/avalanching growth). The three slices shown in 
+
+b-d are marked in gray in a. 1-8 show examples of the variation of growth we find using varying field strengths, where the growth starts from the black initial domain and follows the gradient. The colored arrow marks the direction of movement of the center of mass. 1 and 8 are the northwest and southeast growth regimes, respectively. 
+
+grows only slightly more to the east than west, resulting in only a small change in the position of the center of mass. The wide range of growth regimes found in T18 shows that the directionality of the system may be reconfigured simply by changing the field strength of the clock protocol. Unfortunately, the phase space for reversal is not as varied, and is largely dominated by reversal in the southeasterly direction (see Supplementary information). 
+
+## Computation 
+
+Finally, we demonstrate the utility of directionality for information processing, by considering T18 in a reservoir computing framework [24, 25]. Fig. 8a shows simulation snapshots from our T18 reservoir as it receives a binary input sequence. As illustrated, each input bit is encoded as domains along the left edge of the 50 × 50 array. A binary ’1’ is encoded as five circular blue-green domains on an pink-red background, whereas a ’0’ is encoded by reversing the circular regions to the pink-red state. After input has been encoded ( t = 0), it is shifted (moved) one step southeast with astroid clocking (t = 1). We shift domains southeast with three cycles of the ABCabcabc clock protocol. The protocol has one step of growth ( ABC ) and two steps of reversal ( abcabc ) in order for the domains to maintain a consistent size. With only one step of reversal (as in Fig. 4), the domains would increase in size and over time overwrite any gaps representing ’0’ bits. 15 a                                 
+
+> 11
+> t=0
+> 010
+> t=1
+> 1011
+> t=2
+> 101011011
+> t=7
+> 1357911 13 15 Delay k
+> 0.0 0.2 0.4 0.6 0.8 1.0
+> R2
+> bMC = 7.6
+> PARITY 2= 6.5
+> PARITY 3= 5.6
+> PARITY 4= 2.2 Fig. 8 Reservoir computing with T18 . a Time evolution of T18 subject to a binary input time series. Input bits are encoded along the left edge, as indicated by the arrows into the shaded regions. An astroid clocking protocol is applied between each input to move information southeast (ABCabcabc ×3). Denoted below each snapshot are the input bits which have been encoded so far.
+> bReservoir computing performance on two benchmark tasks: memory capacity ( MC ) and delayed
+> n-bit parity ( PARITY n).
+
+The bottom of each snapshot indicates the sequence of input bits that have been applied at the corresponding time step. As the input domains propagate through the system, the reservoir maintains a fading memory of the input sequence ( t = 2). With this particular reservoir size, input reaches the right edge of the array after seven steps (t = 7). We deliberately place the domains close together to facilitate interactions. As we will see, domain interactions can be exploited for computations on the input sequence. In some rows, domains only survive by merging with the next domain in the sequence, i.e., only when there are two subsequent ’1’ bits in the input. For example, at t = 2 the two topmost domains from t = 1 have vanished as a consequence of the alternating input bits. At t = 7, however, an elongated domain survives in the second row from the top as the result of the bit sequence 11. In other words, domain interactions enable computations based on subsequent bits. Note how each row of domains represent some transformation of the input sequence. We evaluate the capabilities of the T18 reservoir on a set of reservoir benchmark tasks, where the goal is to compute some function on the input bits after a variable delay k (see Methods). Each task thus requires a combination of memory and compu-tation. Fig. 8b shows task performance ( R2) as a function of delay k, where R2 = 1 .0is a perfect score, and task performance is the sum of scores across delays. The first task is memory capacity ( MC ), where the goal is to recover the input bit after each delay k, and is thus a measure of short-term memory. As can be seen, T18 
+
+has perfect memory for delays k = 1 − 7. T18 maintains in its domains an input history of the previous seven input bits ( MC = 7 .6). Note that the MC of the T18 reservoir can be increased arbitrarily by scaling the width of the system, e.g., a 100 ×100 system obtains a MC = 15 .4 (see Supplementary information). As a comparison, MC ≈ 5 was 16 reported for pinwheel geometry [26], whereas MC ≈ 3.5 was reported for a kagome system [27]. The second benchmark task is the delayed n-bit parity task, denoted by PARITY n .The goal of PARITY n is to compute the parity of n subsequent bits after each delay 
+
+k. In contrast to MC , PARITY n requires a combination of short-term memory and computation (non-linearity) in the reservoir. As seen in Fig. 8b, T18 obtains excellent performance on both the 2-bit and 3-bit parity tasks. Both tasks are bounded by the 
+
+MC of the system. For n = 4 bits and beyond, performance stagnates due to limited long range interactions between the input domains. With the T18 reservoir, we have demonstrated how unidirectional domain move-ment can be exploited for short-term memory and computation. While we have previously demonstrated short-term memory in ASI with the “snake” glider [15], the directional reservoir is the first to exhibit significant memory and computa-tion capabilities within the same substrate. The significant directionality of the T18 
+
+geometry results in a reservoir in which memory is maximized. However, maximiz-ing memory comes at a cost of reduced computing capacity, due to the universal memory-nonlinearity tradeoff in reservoir computing [28]. Other dynamic regimes of T18 may offer a different balance between memory and computing. It is also likely that other directional geometries offer distinct capa-bilities, e.g., by considering tiles with lower directionality (Fig. 2). Regardless, T18 
+
+demonstrates the existence of ASI geometries with significant memory capacity. The directionality continuum remains largely unexplored, and more work is needed to uncover the computational capabilities of directional ASI. 
+
+# Discussion 
+
+In this work, we have presented a family of ASI geometries with intrinsic directionality. These systems have the property that, when driven by an external field protocol, domains will grow and reverse in a single direction. Combining growth and reversal results in unidirectional domain movement. In these systems, directionality emerges from non-reciprocal influence between the nanomagnets. To the best of our knowledge, this is the first study of non-reciprocity in ASI. It is also the first demonstration of domain translation in ASI without the need for specific domain shapes. Compared to other non-reciprocal magnetic systems such as spin waves [10], directional ASI offer significant control over the time-scales of domain propagation. Through astroid clocking, domain growth and reversal proceeds in discrete steps in response to each clock field, which means the process can be stopped and started at will. Hence the speed of the growth and reversal process can be controlled directly by tuning the speed of the field protocol. As a computing substrate, directional ASI offers information flow which can be readily adapted to different input time scales. For the T18 geometry, domain growth can be tuned by varying the field strengths of the external field protocol. Remarkably, we find growth regimes for a variety of alternate directions, even the opposite of the nominal southeasterly direction. Field strengths have significant influence on the direction of growth, which presents a practical route towards reconfigurability. 17 Finally, we demonstrated how unidirectional domain movement can be exploited for information transmission and memory in a computing substrate. Our T18 reser-voir computer obtains obtains a memory capacity which far exceeds previous ASI reservoirs. Useful computations arise through domain interactions, offering a physi-cal reservoir that combines memory and computing in a single substrate. Information transmission is a fundamental computational property [29], and our work readily applies to other computing paradigms such as nanomagnetic logic and neuromorphic computing. The T18 geometry explored here is only one member of a large family of direc-tional ASI. Within the family we find geometries with varying degrees of directionality. Geometries with less directionality will offer a different balance between memory and nonlinearity, and might be better suited for less memory-intensive tasks. In addition, tuning the field strengths or modifying the input encoding is sure to affect com-putational properties, presenting a viable route towards a reconfigurable magnetic computing substrate. Beyond computing, directional ASI has a variety of potential applications, such as guiding magnetic nanoparticles along predefined paths [30], e.g., in lab-on-a-chip devices. The emergent non-reciprocity also suggests that directional ASI geome-tries may be viable as model systems for studying non-reciprocal phenomena. Our results demonstrate the potential for unusual emergent properties when symmetry is systematically broken at the geometry level. Ultimately, our work lays the foundation for information flow in ASI computing substrates. As we have demonstrated, controlling information flow is crucial for the memory capabilities of such systems. When memory is combined with the rich nonlin-ear dynamics of nanomagnetic metamaterials, the result is a highly potent all-magnetic substrate for ultra-low power computing devices. 
+
+# Methods 
+
+## flatspin simulations 
+
+Simulations were carried out using the flatspin point-dipole ASI simulator [31]. Switching parameters for the nanomagnets were hk = 0 .1303 T, b = 0 .404, c =1.0, β = 1 .73, and γ = 3 .52. The values of b, c, β, γ and hk were taken from the astroid database provided with flatspin, for stadium magnets of size 220 nm × 80 nm ×
+
+10 nm, with a saturation magnetisation value of 860 kA m −1. Other parameters include coupling strength α = 0 .0013, a lattice spacing of 1 and no disorder. For the initial evolutionary search and subsequent exhaustive search of the direc-tional tile template (Fig. 2), systems of 12 × 12 nanomagnets were evaluated. To avoid edge effects, a neighbor distance of 3 was used in the evolutionary search and exhaustive sweep. For all other simulations, larger systems (50 × 50 for computing and 100 × 100 elsewhere) with a neighbor distance of 10 were used. To prevent edge nucleation, we add three layers of buffer magnets (one 3 × 3 tile) around the edge of the array which are made harder to switch by doubling hk.In the simulations presented in Fig. 4 the directional ASI was clocked using clock fields with ϕA = −55 ◦, ϕB = −79 ◦ and ϕC = −7◦. For growth, we use HA = 49 .5 mT, 18 HB = 46 .5 mT and HC = 49 .5 mT. The domain is reversed using Ha = 49 mT, Hb =46 mT and Hc = 49 mT. To prevent switching from the edges, the three outermost layers of magnets (a full unit cell) have twice as large hk. Domain growth in the northwesterly regime (Fig. 6) is done using a similar system and the same simulation parameters, but with HA = 47 .5 mT, HB = 48 .5 mT and HC = 51 mT. The phase diagram shown in Fig. 7 is based sweeps of all three clock field strengths.The angles of the clock fields are the same for all phases. 
+
+## Influence 
+
+When computing the influence Iij from the neighbors j of each spin i, only spins within a radius of three lattice constants are considered neighbors (28 magnets). The shortest distance to the astroid di(hi) is computed numerically. 
+
+## Evolutionary search 
+
+The 3 ×3 directional tile template (Fig. 2a) was discovered using a ( μ+λ) evolutionary strategy (ES). The ES begins with a random population of individuals (solutions). For each generation of the algorithm, λ offspring are produced from a random sample of the μ parents, and added to the population. Offspring are produced as either a muta-tion of one parent, or a crossover of two parents. Next, the fitness of the individuals in the population are evaluated (see below). Finally, the best μ individuals are selected (according to their fitness) to survive to the next generation. Thus, through a process akin to natural evolution, the population undergoes iterative improvement. A popu-lation size of 100 and 50 generations was sufficient for convergence. Other parameters include a mutation probability of 0 .6, crossover probability 0 .4, μ = 50 and λ = 50. Each individual represents a W × H tile, namely a set of K spin orientations and a mapping from the set of orientations to each cell in the tile. For the genome we use a simple list of K +W H numbers to be optimized by the ES. The set of spin orientations are constrained to the range [ −90 °, 90 °]. To evaluate an individual, its tile is used as the basis of a 12 × 12 geometry. Since there are K spin orientations in the tile, the resulting geometry will have K sublattices. As fitness function we use the magnitude of the directionality vector |D| (higher is better). For spin influence to capture (anti-)ferromagnetic interactions, spins should have their positive orientation ( si = +1) aligned in the same general direction. For example, a ferromagnetic interaction arises when two spins are positioned along their easy axis (r01 = [0 , 1] with θ1 = θ2 = 90 °). Since the meaning of si = ±1 is arbitrary, we are free to rotate any spin by 180 ° without affecting the behavior of the system. However, two spins with (near-)opposite orientations ( θ1 = 90 ° and θ2 = −90 °) would result in a negative influence Iij and incorrectly considered anti-ferromagnetic. To counter such cases, we apply a simple algorithm to automatically detect a sensible “spin axis” for the geometry. For the unique orientations θi in the geometry, we try all possible combinations of 180 ° rotations of the spins. For each combination, we calculate the total magnitude of the resulting spin vectors. Then we pick the combination with the highest magnitude, i.e., we rotate spins by 180 ° such that their positive orientation is aligned in the same general direction. 19 Influence depends both on the geometry and the external field hext . In astroid clocking, each sublattice is addressed by a specific clock field. A tile is thus associated with K clock fields, which are not known apriori. The set of K sublattices are asso-ciated with K overlapping switching astroids (see Fig. 3b for an example with three astroids). A sublattice k is addressable iff there exists a gap between the astroids such that the astroid boundary for k is inside all other astroids. If this is the case, a clock field can be applied to exclusively switch spins from sublattice k without affecting any other spins. For each sublattice, we sample clock field candidates where the distance to the next (outer) astroid is at least 2 mT. For each individual, we search over all possible combinations of clock field candidates, and use the combination which results in the highest fitness. 
+
+## Exhaustive search for directional tiles 
+
+We exhaustively search all possible spin orientations {θA, θ B , θ C } in the directional tile template (Fig. 2b). Orientations are constrained to the range [ −90 °, 90 °]. Due to translational and rotational symmetry of the tile, we only need to consider cases where 
+
+θA < θ B < θ C .For each tile, we construct a 12 × 12 geometry and evaluate its ferromagnetism F
+
+and directionality |D| (Fig. 2b). We apply the same “spin axis” algorithm as described for the ES. Similarly, for each geometry, we consider a range of potential clock fields and their combinations. The number of clock fields depends on the spin orientations, i.e., the number of overlaps in the switching astroids. Like the ES, we require clock fields to have at least 2 mT of spacing to the next (outer) astroid. Hence, each point in Fig. 2b corresponds to a set of spin orientations {θA, θ B , θ C } and three clock field strenghts {HA, H B , H C }. The number of clock field combinations per tile range from 1 − 64 with a mean of 21 .5. The pareto front of Fig. 2 is further investigated by simulating their time evolution with astroid clocking (bottom row of Fig. 2c). Here we use a larger system of 50 × 50 spins, initialized with an octagonal domain in the center of an oppositely polarized background. We employ a simple auto tuning algorithm which adjusts the strengths of the clock fields such that the number of spin flips per field is in the range [2 , 12]. Then we clock the system with the tuned fields for 20 clock cycles and record the time evolution. 
+
+## Sample fabrication 
+
+We fabricated a 100 × 100 directional ASI with tile T18 . The ASI consists of 220 nm ×
+
+80 nm × 10 nm stadium-shaped nanomagnets with a lattice spacing of 205 nm. To prevent nucleation along the edges of the array, the three outermost layers of the ASI consist of 220 nm × 70 nm × 10 nm nanomagnets, which have a higher coercive field. The three outermost layers of nanomagnets are not included in Fig. 5a or Fig. 6b. Samples are fabricated using an electron beam lithography lift-off process. We coat the Si substrate with a 95 nm layer of electron resist, by spin-coating a 1:2 CSAR62:anisole mixture onto the substrate at 2500 rpm. The sample is soft-baked at 150 ◦C for 1 min, before it is exposed using the Elionix ELS-G100 EBL system. 20 We then develop the resist layer in AR600-546 e-beam developer for 40 sec. A 10 nm Permalloy (Ni 0.81 Fe 0.19 ) layer, followed by a 2 nm Al layer, is deposited using the K.J. Lesker E-beam evaporator, and ultrasound-assisted lift-off is performed in AR600-71 resist remover. 
+
+## XMCD-PEEM and astroid clocking 
+
+We perform astroid clocking experimentally by applying global field pulses, using an in-plane quadrupole magnet [32]. Between pulses, we image the magnetic state of the ASI using X-ray magnetic circular dichroism photoemission electron microscopy (XMCD-PEEM) [33]. We use the signal at the Fe L 3 edge for ferromagnetic XMCD contrast. To obtain sufficient magnetic contrast in all three sublattices of the ASI, we orient the array so that the incoming light is at an angle −41 .6◦ with respect to the x-axis of the ASI, resulting in magnetic contrast along the same angle. We start from the polarized state, which we obtain by applying a −54 .5 mT field at a −42 ◦ angle. We grow the magnetic domains by employing astroid clocking, where we apply a series of in-plane global field pulses along specific clock field angles. For growth in the southeast direction, we use the field strengths HA = 42 .7 mT, HB = 40 mT and HC = 42 .7 mT. For growth in the northwest direction, we use the field strengths 
+
+HA = 40 mT, HB = 40 .9 mT and HC = 47 .7 mT. 
+
+## Computation 
+
+For reservoir computing, we generate a random input sequence u(t) of 1000 bits as input. Each input bit is applied at five circular regions along the left edge of the T18 
+
+array (see Fig. 8a). The five regions are separated by three rows of magnets, creating some diversity through different edge terminations. A binary ’1’ is encoded by setting the five regions to the blue-green state, whereas a ’0’ is encoded by reversing the circular regions to the pink-red state. The initial state of the array is fully polarized (pink-red state). Between each input bit, the encoded domains are shifted southeast with three cycles of the ABCabcabc clock protocol. Field strengths were tuned to allow robust propagation of these smaller domains: HA = 49 .0 mT, HB = 47 .4 mT, HC = 49 .7 mT, 
+
+Ha = 50 .3 mT, Hb = 48 .3 mT and Hc = 48 .3 mT. As reservoir output x(t), we sample the state of all the magnets after the three clock cycles, i.e., immediately before the next input bit is applied. The trained output ytrain = Wout x(t), where Wout is obtained with ridge regression using regularization parameter α = 1 .0. Performance is measured as the Pearson correlation coefficient ( R2) between the trained output ˆ y(t) and the target signal y(t). Ten-fold cross-validation was used on the entire reservoir output sequence x(t), and we report mean R2 over the ten-fold CV. Memory capacity MC measures the ability of the reservoir to recall delayed versions of the input sequence u(t). For a given delay k the target signal is simply yk(t) = 
+
+u(t − k), and the corresponding memory capacity MC k is simply the R2 for the target he delay k. The total memory capacity is then MC = P 
+
+> k
+
+MC k.21 The delayed n-bit parity PARITY n is similar to memory capacity, but requires both memory and computation. Here, the target signal is yk(t) = u(t − k − 1) ⊕ u(t −
+
+k − 2) ⊕ · · · ⊕ u(t − k − n), i.e., yk(t) = 1 if the last n bits had an odd number of 1’s and yk(t) = 0 otherwise. 
+
+# Acknowledgments 
+
+Experiments were performed at the CIRCE beamline at ALBA Synchrotron with the collaboration of ALBA staff. This work was funded in part by the Norwegian Research Council TEKNOKONVERGENS project SPrINTER (Grant no. 331821), and in part by the EU FET-Open RIA project SpinENGINE (Grant no. 861618). Simulations were executed on the NTNU EPIC compute cluster [34]. The Research Council of Norway is acknowledged for the support to the Norwegian Micro- and Nano-Fabrication Facility, NorFab, project number 349807. 
+
+# Author contributions 
+
+JHJ and IB conceived and designed the study and contributed equally to this work. JHJ developed the spin influence framework, discovered the directional geometries and did the theoretical study, in collaboration with AP. IB fabricated the samples, assisted by TMD. IB, AS, DSB and TMD conducted initial experiments. IB led the XMCD-PEEM experiments and AP, HTK, DSB, TMD, GT and EF contributed to these measurements. MF, MAN and DD provided support during XMCD-PEEM measure-ments and PEEM vector magnet operation. IB performed the phase space exploration. JHJ performed the reservoir computing study. HTK provided the mathematical proof for the directional tile template. MS, GT and EF oversaw the project and provided feedback and direction throughout. JHJ and IB wrote the manuscript with input from all authors. 
+
+# Competing interests 
+
+The authors declare no competing interests. 
+
+# References 
+
+[1] Floess, D., Chin, J.Y., Kawatani, A., Dregely, D., Habermeier, H.-U., Weiss, T., Giessen, H.: Tunable and switchable polarization rotation with non-reciprocal plasmonic thin films at designated wavelengths. Light: Science & Applications 
+
+4(5), 284–284 (2015) https://doi.org/10.1038/lsa.2015.57 [2] Wang, Z.-B., Zhang, Y.-L., Hu, X.-X., Chen, G.-J., Li, M., Yang, P.-F., Zou, X.-B., Zhang, P.-F., Dong, C.-H., Li, G., Zhang, T.-C., Guo, G.-C., Zou, C.-L.: Self-induced optical non-reciprocity. Light: Science & Applications 14 (1), 23 (2025) https://doi.org/10.1038/s41377-024-01692-y 22 [3] Brandenbourger, M., Locsin, X., Lerner, E., Coulais, C.: Non-reciprocal robotic metamaterials. Nature Communications 10 (1), 4608 (2019) https://doi.org/10. 1038/s41467-019-12599-3 [4] Chen, Y., Li, X., Scheibner, C., Vitelli, V., Huang, G.: Realization of active meta-materials with odd micropolar elasticity. Nature Communications 12 (1), 5935 (2021) https://doi.org/10.1038/s41467-021-26034-z [5] Veenstra, J., Gamayun, O., Guo, X., Sarvi, A., Meinersen, C.V., Coulais, C.: Non-reciprocal topological solitons in active metamaterials. Nature 627 (8004), 528–533 (2024) https://doi.org/10.1038/s41586-024-07097-6 [6] Pal, B., Chakraborty, A., Sivakumar, P.K., Davydova, M., Gopi, A.K., Pandeya, A.K., Krieger, J.A., Zhang, Y., Date, M., Ju, S., Yuan, N., Schr¨ oter, N.B.M., Fu, L., Parkin, S.S.P.: Josephson diode effect from Cooper pair momentum in a topological semimetal. Nature Physics 18 (10), 1228–1233 (2022) https://doi.org/ 10.1038/s41567-022-01699-5 [7] Nagata, U., Aoki, M., Daido, A., Kasahara, S., Kasahara, Y., Ohshima, R., Ando, Y., Yanase, Y., Matsuda, Y., Shiraishi, M.: Field-Free Superconducting Diode Effect in Layered Superconductor FeSe. Physical Review Letters 134 (23), 236703 (2025) https://doi.org/10.1103/PhysRevLett.134.236703 [8] Chen, J., Yu, T., Liu, C., Liu, T., Madami, M., Shen, K., Zhang, J., Tu, S., Alam, M.S., Xia, K., Wu, M., Gubbiotti, G., Blanter, Y.M., Bauer, G.E.W., Yu, H.: Excitation of unidirectional exchange spin waves by a nanoscale magnetic grating. Physical Review B 100 (10), 104427 (2019) https://doi.org/10.1103/PhysRevB. 100.104427 [9] Jiang, M., Xu, G., Sun, L., Niu, H., Li, C., Yang, X., Ji, T., Yang, M., Cheng, J., Ma, J., Chen, G., Chai, G., Miao, B., Ding, H.: Realizing nonreciprocal spin-wave propagation with large tunability in SmCo/Fe bilayers. Physical Review B 
+
+112 (2), 020409 (2025) https://doi.org/10.1103/l93m-gb54 [10] Xu, M., Deenen, A.J.M., Guo, H., Morales-Fern´ andez, P., Wintz, S., Zhakina, E., Weigand, M., Donnelly, C., Grundler, D.: Geometry-induced spin chirality in a non-chiral ferromagnet at zero field. Nature Nanotechnology, 1–7 (2025) https://doi.org/10.1038/s41565-025-02055-3 [11] Skjærvø, S.H., Marrows, C.H., Stamps, R.L., Heyderman, L.J.: Advances in artifi-cial spin ice. Nature Reviews Physics 2(1), 13–28 (2020) https://doi.org/10.1038/ s42254-019-0118-3 [12] Jensen, J.H., Tufte, G.: Reservoir Computing in Artificial Spin Ice. In: The 2020 Conference on Artificial Life, pp. 376–383. MIT Press, Online (2020). https://doi.org/10.1162/isal a 00268 .
+
+https://www.mitpressjournals.org/doi/abs/10.1162/isal a 00268 
+
+23 [13] Gartside, J.C., Stenning, K.D., Vanstone, A., Holder, H.H., Arroo, D.M., Dion, T., Caravelli, F., Kurebayashi, H., Branford, W.R.: Reconfigurable training and reservoir computing in an artificial spin-vortex ice via spin-wave finger-printing. Nature Nanotechnology 17 (5), 460–469 (2022) https://doi.org/10.1038/ s41565-022-01091-7 . Number: 5 [14] Nomura, H., Yoshioka, N., Miura, S., Nakatani, R.: Controlling operation timing and data flow direction between nanomagnet logic elements with spatially uniform clock fields. Applied Physics Express 10 (12), 123004 (2017) https://doi.org/10. 7567/APEX.10.123004 [15] Penty, A., Jensen, J.H., Breivik, I., Strømberg, A., Folven, E., Tufte, G.: Con-trollable gliders in a nanomagnetic metamaterial. Nature Communications 16 (1), 7500 (2025) https://doi.org/10.1038/s41467-025-62515-1 [16] Stoner, E.C., Wohlfarth, E.P.: A mechanism of magnetic hysteresis in heteroge-neous alloys | Philosophical Transactions of the Royal Society of London. Series A, Mathematical and Physical Sciences (1948). https://royalsocietypublishing. org/doi/10.1098/rsta.1948.0007 [17] Breivik, I., Folven, E.: Tuning the angular dependence of the switching field of thin film nanomagnets. Physical Review B 113 (1), 014423 (2026) https://doi. org/10.1103/rmpq-ft74 . Accessed 2026-01-22 [18] Macˆ edo, R., Macauley, G.M., Nascimento, F.S., Stamps, R.L.: Apparent ferro-magnetism in the pinwheel artificial spin ice. Physical Review B 98 (1), 014437 (2018) https://doi.org/10.1103/PhysRevB.98.014437 . Accessed 2026-03-17 [19] Zhang, S., Gilbert, I., Nisoli, C., Chern, G.-W., Erickson, M.J., O’Brien, L., Leighton, C., Lammert, P.E., Crespi, V.H., Schiffer, P.: Crystallites of mag-netic charges in artificial spin ice. Nature 500 (7464), 553–557 (2013) https: //doi.org/10.1038/nature12399 . Accessed 2026-03-17 [20] Jensen, J.H., Strømberg, A., Breivik, I., Penty, A., Ni˜ no, M.A., Khaliq, M.W., Foerster, M., Tufte, G., Folven, E.: Clocked dynamics in artificial spin ice. Nature Communications 15 (1), 964 (2024) https://doi.org/10.1038/s41467-024-45319-7 . Number: 1 Publisher: Nature Publishing Group [21] Bhandari, D.S., Strømberg, A., Breivik, I., Penty, A., Jensen, J.H., Foerster, M., Tufte, G., Folven, E.: Clocking emergent magnetic monopoles in square artifi-cial spin ice. Physical Review B 112 (9), 094428 (2025) https://doi.org/10.1103/ qwx8-kkt9 [22] Leo, N., Pancaldi, M., Koraltan, S., Gonz´ alez, P.V., Abert, C., Vogler, C., Slanovc, F., Bruckner, F., Heistracher, P., Hofhuis, K., Menniti, M., Suess, D., Vavas-sori, P.: Chiral switching and dynamic barrier reductions in artificial square ice. New Journal of Physics 23 (3), 033024 (2021) https://doi.org/10.1088/1367-2630/ 24 abe3ad . Accessed 2025-02-17 [23] Strandqvist, N., Fitez, G., Heinonen, O., Schiffer, P.: Nanomagnet shape effects on magnetic reversal in artificial spin ice. Physical Review B 111 (18), 184420 (2025) https://doi.org/10.1103/PhysRevB.111.184420 . Accessed 2025-08-21 [24] Jaeger, H.: The “echo state” approach to analysing and training recurrent neu-ral networks - with an Erratum note. Technical Report 148, German National Research Center for Information Technology (2001) [25] Maass, W., Natschl¨ ager, T., Markram, H.: Real-time computing without sta-ble states: A new framework for neural computation based on perturba-tions. Neural computation 14 (11), 2531–2560 (2002) https://doi.org/10.1162/ 089976602760407955 [26] Stenning, K.D., Gartside, J.C., Manneschi, L., Cheung, C.T.S., Chen, T., Van-stone, A., Love, J., Holder, H., Caravelli, F., Kurebayashi, H., Everschor-Sitte, K., Vasilaki, E., Branford, W.R.: Neuromorphic overparameterisation and few-shot learning in multilayer physical neural networks. Nature Communications 15 (1), 7377 (2024) https://doi.org/10.1038/s41467-024-50633-1 [27] Hon, K., Kuwabiraki, Y., Goto, M., Nakatani, R., Suzuki, Y., Nomura, H.: Numer-ical simulation of artificial spin ice for reservoir computing. Applied Physics Express 14 (3), 033001 (2021) https://doi.org/10.35848/1882-0786/abdcd8 [28] Dambre, J., Verstraeten, D., Schrauwen, B., Massar, S.: Information Processing Capacity of Dynamical Systems. Scientific Reports 2, 514 (2012) https://doi.org/ 10.1038/srep00514 [29] Langton, C.G.: Computation at the edge of chaos: Phase transitions and emergent computation. Physica D: Nonlinear Phenomena 42 (1-3), 12–37 (1990) https:// doi.org/10.1016/0167-2789(90)90064-V arXiv:adap-org/9306003 [30] Gunnarsson, K., Roy, P.E., Felton, S., Pihl, J., Svedlindh, P., Berner, S., Lidbaum, H., Oscarsson, S.: Programmable Motion and Separation of Single Magnetic Par-ticles on Patterned Magnetic Surfaces. Advanced Materials 17 (14), 1730–1734 (2005) https://doi.org/10.1002/adma.200401880 [31] Jensen, J.H., Strømberg, A., Lykkebø, O.R., Penty, A., Leliaert, J., Sj¨ alander, M., Folven, E., Tufte, G.: flatspin: A large-scale artificial spin ice simulator. Physical Review B 106 (6), 064408 (2022) https://doi.org/10.1103/PhysRevB.106.064408 . Publisher: American Physical Society [32] Foerster, M., Prat, J., Massana, V., Gonzalez, N., Fontsere, A., Molas, B., Matilla, O., Pellegrin, E., Aballe, L.: Custom sample environments at the ALBA XPEEM. Ultramicroscopy 171 , 63–69 (2016) https://doi.org/10.1016/j.ultramic.2016.08. 016 25 [33] Aballe, L., Foerster, M., Pellegrin, E., Nicolas, J., Ferrer, S.: The ALBA spectroscopic LEEM-PEEM experimental station: layout and performance. Jour-nal of Synchrotron Radiation 22 (3), 745–752 (2015) https://doi.org/10.1107/ S1600577515003537 [34] Sj¨ alander, M., Jahre, M., Tufte, G., Reissmann, N.: EPIC: An Energy-Efficient, High-Performance GPGPU Computing Research Infrastructure. arXiv:1912.05848 [cs] (2019) arXiv:1912.05848 [cs] 26 Supplementary information: Unidirectional information flow in a nanomagnetic metamaterial 
+
+## Johannes H. Jensen 1* †, Ida Breivik 1†, Arthur Penty 1,Anders Strømberg 1, Henrik Tidemann Kaarbø 1,Dheerendra S. Bhandari 1, Thea M. Dale 1, Michael Foerster 2,Miguel Angel Ni˜ no 2, Deepak Dagur 2, Magnus Sj¨ alander 1,Gunnar Tufte 1, Erik Folven 1
+
+> 1
+
+Norwegian University of Science and Technology, Trondheim, Norway. 
+
+> 2
+
+ALBA Synchrotron Light Facility, Carrer de la Llum 2 – 26, Cerdanyola del Vall´ es, 08290, Barcelona, Spain. *Corresponding author(s). E-mail(s): johannes.jensen@ntnu.no; 
+
+> †
+
+These authors contributed equally to this work. 
+
+> 1
+
+# Supplementary Discussion 
+
+## Directional tile maximizes directionality 
+
+The aim of this section is to illuminate why the directional tile maximizes direction-ality, and why directionality requires at least three magnet orientations.  
+
+> Proposition 1 A directional ASI must have broken inversion symmetry.
+
+The spin influence from magnet j onto magnet i is denoted by Iij , and given by 
+
+Iij = di(hext − hij 
+
+> dip
+
+) − di(hext + hij 
+
+> dip
+
+), (1) where di(h) is a scalar function fully determined by the properties of magnet i, hext is the external magnetic field, and hij  
+
+> dip
+
+is the magnetic dipole field generated by magnet 
+
+j at the position of magnet i. Explicitly, the dipole field hij  
+
+> dip
+
+is given by 
+
+hij  
+
+> dip
+
+= α ∑ 
+
+> j̸=i
+
+3rij (mj · rij )
+
+|rij |5 − mj
+
+|rij |3 , (2) where rij = ri − rj is the distance vector from magnet i → j, mj is the unit vector parallel to the magnetization of magnet j, and α scales the dipolar coupling strength. Furthermore, the influence vector from j → i is given by 
+
+Iij = |Iij |ˆrij . (3) The inversion rij → − rij leaves Eq. (2) and consequently Iij unchanged. Therefore, 
+
+Iij is antisymmetric under the same inversion. Thus, the per-spin influence vector 
+
+Ii = ∑ Iij = 0 for any spin in an infinite ASI with inversion symmetry. While edge effects may result in local directionality in a finite system, we disregard these small effects here. An ASI with net directionality D = ∑ Ii̸ = 0 must therefore have broken inversion symmetry.  
+
+> Proposition 2 A directional ASI based on the square lattice must have more than two nanomagnet orientations.
+
+First, we consider a 1D chain of nanomagnets with only two nanomagnet orienta-tions, A and B. When traversing the 1D chain, being at a magnet of type A, there are only two possibilities for the next magnet in the chain, A or B. The combination AA 
+
+is trivially mirror symmetric, causing directional cancellation, and thus, we are forced to have at least one AB pairing for there to be nonzero directionality. However, as crystals are periodic, and we started at a magnetic type A, we know that we must at some point return to an A type from a B type. Thus, in a crystal, for each A → B
+
+pair, we must have a B → A pair. Due to the antisymmetry of Iij , any directional influence contribution made by the AB -pair will exactly cancel the contribution from 2the BA -pair. Thus, the net directionality D in a 1D crystal with only two nanomagnet orientations must sum to zero. Notably, the seemingly 1D nanomagnet shift register [1] does have a net directional-ity. However, the arrangement of nanomagnets break inversion symmetry by spatially offsetting one sublattice in the second dimension, so that IAB ̸ = IBA . It is thus not truly 1D. The 2D square lattice can be considered as a cartesian product of 1D chains. There-fore, in a square lattice with two magnet orientations, there can be no accumulation of directionality. The argument above holds for any line drawn through the points of the lattice. By adding a third nanomagnet orientation to the system, it is possible to break the local symmetries preventing accumulation of directionality.      
+
+> Proposition 3 Any 3×3directional tile must follow the directional tile template.
+
+There are several ways of placing nanomagnets with three separate orientations on a 3 × 3 square tile. However, to maximize directionality, we should be able to accumulate directionality (in the same direction) in all rows and all columns of the tile. Thus, we must place the nanomagnets so that all rows and all columns of the tile include all three nanomagnet orientations (satisfying theorem 2), and so that the final tile has no inversion symmetry (satisfying theorem 1). Interestingly, the only way of achieving this is by placing the nanomagnets as specificed by the directional tile template. 3Supplementary Figures 
+
+## Influence asymmetry −50 0 50 
+
+> θi
+> −75
+> −50
+> −25 025 50 75
+> θj
+> 0.0 0.1 0.2 0.3 0.4 0.5 0.6 0.7 Influence asymmetry:  |Iji  | − | Iij  |(a.u.)
+
+Fig. 1 : Heatmap of the influence asymmetry |Iji | − | Iij | between two spins i and j,as a function of their orientation θi and θj . For each θi, θ j pair, we find the external field where the influence asymmetry is maximized. In other words, the heatmap shows where the influence from i → j is greater than j → i. Dark areas in the heatmap corre-spond to spin orientations that do not allow for asymmetry i → j. We see immediately that there can be no asymmetry when the spins have the same orientation θi = θj .This is due to the mirror symmetry of the dipolar fields, where hij  
+
+> dip
+
+= hji 
+
+> dip
+
+. The diag-onal symmetry seen in the heatmap stem from the mirror symmetry of the astroid around the horizontal axis, obtained by the transformation ( θi, θ j ) → (−θi, −θj ). 4Reversal phase diagram a             
+
+> 44 46 48
+> B [mT]
+> 48
+> 50
+> 52
+> C [mT]
+> b
+> 13
+> 68
+> A = 49.5
+> 46 48 50 52
+> A [mT]
+> 48
+> 50
+> 52
+> C [mT]
+> c
+> 24
+> 5
+> 6
+> B = 48.5
+> 44 46 48
+> B [mT]
+> 46
+> 48
+> 50
+> 52
+> A [mT]
+> d
+> 6
+> 7
+> 8
+> C = 49.5
+> 123
+> 45
+> 678
+
+Fig. 2 : a Schematic of the 3D phase space of directional reversal in geometry T18 ,where hue represents direction and lightness represents the speed of growth (light is slow/no growth and dark is fast/avalanching growth). The three slices shown in b-d are marked in gray in a. 1-8 show examples of the variations of reversal we find using varying field strengths, where the reversal starts from a large circular domain and follows the gradients in the snapshots. The colored arrows show the direction of movement of the center of mass. 5Simulations with oppositely oriented magnetization (0) 
+
+> 2*abc
+> (1)
+> a
+> (2)
+> b
+> (3)
+> c
+> (4)
+> 2*ABC
+> (5)
+> A
+> (6)
+> B
+> (7)
+> C
+> (8)
+> abcabc ABCABC
+> (9)
+> abcabc ABCABC
+> (10)
+> abcabc ABCABC
+> (11)
+> abcabc ABCABC
+> (12)
+
+Fig. 3 : Simulated directional domain growth with inverted magnetization. Starting from the initial state in (0) we apply three full abc clock cycles (1-4), growing the domain in the southeasterly direction. (1) shows the domain after the first two full 
+
+abc cycles, while (2-4) show the domain after three subsequent field pulses, a, b and c.We then apply three full ABC cycles (5-8), reversing the domain from the northwest. By alternating cycles of growth and reversal (9-12), we can move the domain in the southeasterly direction. Note that the domain movement is in the same direction even with inverted magnetization and clock fields. The outline of the initial state is marked by the dotted line. 6XMCD-PEEM images 0. 5 μm x-ray                        
+
+> 1. 2. 3. 4.
+> 5. 6. 7. 8. 9.
+> 10. 11. 12. 13. 14.
+> 15. 16. 17. 18. 19.
+> 20. 21. 22. 23. 24.
+> 25. 26. 27. 28. 29.
+> 30.
+
+Fig. 4 : A full series of XMCD-PEEM images showing domain growth in the southeast growth regime. Growth starts from the polarized state (white) and domains appear black. Images show the full 100 × 100 directional ASI based on tile T18 consisting of 220 nm × 80 nm × 10 nm stadium-shaped nanomagnets. Note that the three outermost layers of magnets are slimmer (220 nm × 70 nm × 10 nm) and thus never switch. The ASI is imaged after every field pulse for 10 full ABC cycles. 70. 5 μm x-ray                        
+
+> 1. 2. 3. 4.
+> 5. 6. 7. 8. 9.
+> 10. 11. 12. 13. 14.
+> 15. 16. 17. 18. 19.
+> 20. 21. 22. 23. 24.
+> 25. 26. 27. 28. 29.
+> 30.
+
+Fig. 5 : A full series of XMCD-PEEM images showing domain growth in the northwest growth regime. Growth starts from the polarized state (white) and domains appear black. Images show the full 100 × 100 directional ASI based on tile T18 consisting of 220 nm × 80 nm × 10 nm stadium-shaped nanomagnets. Note that the three outermost layers of magnets are slimmer (220 nm × 70 nm × 10 nm) and thus never switch. The ASI is imaged after every field pulse for 10 full ABC cycles. 8Computational scalability a              
+
+> 1
+> t=0
+> 1 1 0 1
+> t=3
+> 1 1 0 1 0 1 1 0 1
+> t=8
+> 1 0 1 0 1 1 0 1 1 0 1 0 1 1 0 1
+> t=15
+> 1357911 13 15 17 19 Delay k
+> 0.0 0.2 0.4 0.6 0.8 1.0
+> R2
+> b
+> MC = 15.4
+> PARITY 2= 14.3
+> PARITY 3= 13.3
+> PARITY 4= 4.4
+
+Fig. 6 : Reservoir computing with 100 × 100 T18 . a Time evolution of T18 subject to a binary input time series. Input bits are encoded along the left edge, as indicated by the arrows into the shaded regions. An astroid clocking protocol is applied between each input to move information southeast ( ABCabcabc × 3). Denoted below each snapshot are the input bits which have been encoded so far. b Reservoir computing performance on two benchmark tasks: memory capacity ( MC ) and delayed n-bit parity (PARITY n ). 
+
+# References 
+
+[1] Nomura, H., Yoshioka, N., Miura, S., Nakatani, R.: Controlling operation timing and data flow direction between nanomagnet logic elements with spatially uniform clock fields. Applied Physics Express 10 (12), 123004 (2017) https://doi.org/10. 7567/APEX.10.123004 9
