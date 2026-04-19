@@ -1,0 +1,295 @@
+Title: The Simplicial Bridge: Mapping quantum multi-spin exchange to higher-order topological networks in continuous magnetic fields
+
+URL Source: https://arxiv.org/pdf/2604.10773v2
+
+Published Time: Thu, 16 Apr 2026 00:08:28 GMT
+
+Number of Pages: 6
+
+Markdown Content:
+## The Simplicial Bridge: Mapping quantum multi-spin exchange to higher-order topological networks in continuous magnetic fields 
+
+Alok Yadav 1
+
+> 1
+
+Department of Physics, Anugrah Memorial College, Magadh University, Gaya, Bihar 823001, India 
+
+(Dated: April 16, 2026) The macroscopic dynamics of topological defects in magnetic materials are traditionally mod-eled using pairwise interactions. However, higher-order quantum exchange mechanisms—such as biquadratic and 4-spin ring exchange—play a critical role in strongly correlated systems. In this work, we introduce the “Simplicial Bridge,” an exact analytical framework that maps these high-dimensional, non-linear Landau-Lifshitz partial differential equations onto generalized Kuramoto phase-oscillator networks operating on abstract simplicial complexes. We rigorously demonstrate that spatial overlap in the continuous limit natively generates higher-order topological forces without requiring a supportive discrete atomic lattice. Specifically, the overlap of 1D helimagnetic kinks gen-erates 2-simplices (triadic forces), while the spatial compression of 2D skyrmion tails—governed by modified Bessel function asymptotics—generates true 3-simplices (tetradic forces). Furthermore, we establish that the higher-order spatial derivatives inherent to these multi-spin interactions provide an intrinsic energetic barrier that bypasses Derrick’s Theorem, stabilizing 2D topological solitons without the strict need for Dzyaloshinskii-Moriya Interaction (DMI). 
+
+I. INTRODUCTION 
+
+The macroscopic magnetic properties of condensed matter systems are fundamentally governed by the in-terplay of competing quantum mechanical exchange in-teractions. In helimagnets and chiral magnetic films, the absence of structural inversion symmetry or the presence of magnetic frustration induces a spontaneous breaking of continuous rotational symmetry, leading to the forma-tion of incommensurate spin textures [1, 2]. The tem-poral evolution of these systems is strictly governed by the nonlinear Landau-Lifshitz (LL) equation [3], which supports a rich spectrum of localized, non-perturbative excitations such as magnetic kinks and skyrmions [4, 5]. Historically, the theoretical framework surrounding multi-soliton interactions has been confined to the dilute limit, where spatial overlap is approximated strictly as a dyadic (two-body) phenomenon [6]. However, mod-ern experimental paradigms—such as dense skyrmion lattices and strongly correlated twisted Moir´ e superlat-tices—operate in regimes where macroscopic multi-spin scalar interactions become prominent [7]. In recent years, the discovery of intrinsic two-dimensional van der Waals magnets has highlighted the critical role of higher-order interactions, such as biquadratic exchange, in stabiliz-ing exotic topological states at finite temperatures [8]. This remains a highly active frontier, with recent studies demonstrating the outsized role of multi-spin exchange in 2D antiferromagnets like FePS 3 and CrI 3 [9, 10]. Concurrently, the application of abstract simplicial complexes to nonlinear dynamics has surged in the field of network science. Recent mathematical breakthroughs establish that higher-order hypergraph structures strictly break interaction symmetry, driving generalized phase networks into exotic thermodynamic states [11]. Yet, de-spite these advances, simplicial complexes are typically applied abstractly; a unified analytical approach map-ping these higher-order continuum interactions directly to a physical magnetic origin has been missing from the literature. In this paper, we bridge this gap by constructing an exact analytical mapping—the Simplicial Bridge . We re-duce the high-dimensional PDEs of multi-soliton colli-sions into coupled oscillator networks on topological hy-pergraphs. By formally extending this framework from 1D strings to the 2D continuum, we demonstrate how de-fect density directly dictates the topology of the emergent network, yielding n-simplices through continuous spatial overlap. 
+
+II. MICROSCOPIC ORIGINS: FROM HUBBARD TO RING EXCHANGE 
+
+We begin with the fundamental quantum mechanical origin of higher-order interactions. In strongly correlated magnetic materials, fourth-order expansions of the elec-tron hopping term in the Hubbard model yield multi-spin exchange Hamiltonians alongside standard Heisen-berg bilinear exchange. The dominant non-pairwise term governing a triad of spins (a 1D frustrated chain or 2D triangular motif) takes the biquadratic form: 
+
+Hbq = −Kbq (S2 · S1)( S1 · S3). (1) Furthermore, on 2D square lattices and 3D structurally symmetric crystals, the cyclic motion of an electron around a closed geometric loop yields the 4-spin ring ex-change: 
+
+Hring = −Kring [( S1 · S2)( S3 · S4) + . . . 
+
+−(S1 · S3)( S2 · S4)] . (2) These non-linear operators are irreducible; they entangle 3 or 4 spins in a single coherent event that cannot be 
+
+> arXiv:2604.10773v2 [nlin.PS] 14 Apr 2026
+
+2              
+
+> Magnetic Continuum
+> LLG PDEs & Defect Overlap Multi-Spin Exchange
+> η∂ tΘ∝∇2Θ
+> −Kbq (∇Θ) 2∇2Θ
+> Simplicial Bridge
+> Trigonometric Reduction Asymptotic Integration
+> R|∇ Θ|2Θ(i)
+> tail Θ(j)
+> tail dr
+> Topological Network
+> Generalized Kuramoto ODEs Higher-Order Simplices
+> 2-Simplex: K2sin(Σ ϕ−2ϕi)
+> 3-Simplex: K3sin(Σ ϕ−3ϕi)
+> Adiabatic Ansatz Dimensional Collapse
+
+FIG. 1. Conceptual flowchart of the Simplicial Bridge. The framework provides the exact mathematical mapping from the infinite-dimensional non-linear continuum to a discrete hypergraph. Continuous spatial overlap of magnetic defects (governed by PDEs) strictly translates to higher-order topological simplices (governed by ODEs). 
+
+factored into a linear superposition of individual pairwise bonds. 
+
+III. THE SIMPLICIAL BRIDGE: MAPPING SPIN TO PHASE 
+
+In the semi-classical continuum limit, we map these discrete spin operators to a continuous vector field con-fined to the easy plane, parameterized by the azimuthal angle Θ( x, t ) such that S = S(cos Θ , sin Θ , 0). To evaluate the defect interactions, we employ an adi-abatic ansatz where the total phase field is a superposi-tion of isolated defect profiles, each possessing an internal precessional phase ϕi(t). Evaluating the multi-spin dot products using this parameterization yields trigonomet-ric products. For the biquadratic triad, we apply the product-to-sum identity: cos( ϕ1−ϕ2) cos( ϕ1−ϕ3) = 12 [cos(2 ϕ1−ϕ2−ϕ3)+cos( ϕ3−ϕ2)] .
+
+(3) The dynamics of the collective coordinates are gov-erned by the dissipative Landau-Lifshitz-Gilbert (LLG) equations. The generalized phase velocity ˙ϕ1 is derived from the negative gradient of the energy potential with respect to its internal phase: 
+
+− ∂∂ϕ 1
+
+ 12 cos(2 ϕ1 − ϕ2 − ϕ3)
+
+
+
+= − sin( ϕ2 + ϕ3 − 2ϕ1).
+
+(4) This rigorously establishes the topological reduction. We define the generalized n-simplex Kuramoto force as: ˙ϕi ∝ K(n) X
+
+> j1,...,j n
+
+sin 
+
+> n
+
+X
+
+> m=1
+
+ϕjm − nϕ i
+
+!
+
+. (5) Under this nomenclature, n = 1 yields standard pair-wise exchange (the 1-simplex edge), n = 2 yields the triadic force (the 2-simplex triangle), and n = 3 yields the tetradic force (the 3-simplex tetrahedron). For future numerical integration of these generalized networks, it is crucial to note that while mean-field the-ories often assume a Lorentzian distribution of frequen-cies, preserving the structural mathematical balance of the continuous lattice strictly requires generating intrin-sic precessional frequencies linearly proportional to the local simplicial degree ( ωi ∝ || q|| ). 
+
+IV. THE CONTINUUM LIMIT IN 1D: EMERGENCE OF THE 2-SIMPLEX 
+
+To prove that the effective coupling tensor Kijk sur-vives the continuum limit, we project the continuum force onto the translational zero-modes. In 1D, overlapping helimagnetic kinks possess heavily localized spatial gra-dients ∂xθ(1) 0 .The effective triadic overlap integral I123 places the reference frame at the mediating core ( X1 = 0), evalu-ating the intersection of the squared gradient of the core with the asymptotic exponential tails of the outer defects (θ0 ≈ 4e−| x|/w ). The integral reduces to: 
+
+I123 ∝
+
+Z ∞−∞ 
+
+sech 2  xw
+
+
+
+exp 
+
+ xw
+
+
+
+exp 
+
+
+
+− xw
+
+
+
+dx. (6) The arguments of the exponential tails inside the inte-gral perfectly cancel. The even-parity sech 2(x/w ) func-tion evaluates strictly positive. This establishes that in 1D, continuous spatial overlap alone generates a mathe-matically robust 2-simplex, entirely superseding the un-derlying discrete atomic bonds. 
+
+V. THE CONTINUUM LIMIT IN 2D: EMERGENCE OF THE 3-SIMPLEX 
+
+We now formally extend this logic to two dimensions. We consider a 2D continuum populated by magnetic skyrmions. To evaluate the simultaneous collision of four topological defects, we place four skyrmions in a rhom-bus geometry. We define a 2D integration plane centered on a mediating skyrmion (Node 1) at r = (0 , 0). The ad-jacent skyrmions (Nodes 2, 3, and 4) reside at symmetric distances |R2| = |R3| = |R4| = a.The spatial interaction energy driving the tetradic Ku-ramoto force requires projecting the 4-spin ring exchange 3onto the localized zero-mode of Node 1. The master over-lap integral over the 2D plane R2 is: 
+
+I2D 1234 =
+
+Z Z 
+
+> R2
+
+|∇ Θ1|2 Θ(2) tail Θ(3) tail Θ(4) tail d2r. (7) In a 2D continuum, the asymptotic tail of a skyrmion decays according to the modified Bessel function of the second kind, Θ tail (r) ∝ K1(r/w ). As derived in Ap-pendix A, evaluating the spatial integral under the as-sumption of a highly localized core yields the exact macroscopic tetradic coupling constant: 
+
+I2D 1234 ≈ Ecore 
+
+ πw 
+
+2a
+
+3/2
+
+exp 
+
+
+
+− 3aw
+
+
+
+. (8) This demonstrates a profound principle: spatial com-pression in 2D forces the overlap of four topological tails, generating a true 3-simplex (a mathematical tetrahe-dron) purely based on defect density, despite the system residing in a flat two-dimensional space.  
+
+> VI. SIMPLICIAL MAPPING OF CRYSTALLINE TOPOLOGIES
+
+To fully contextualize the Simplicial Bridge, we clas-sify known magnetic materials according to the highest-order topological simplex they naturally support. As summarized in Table I and visualized in Figure 2, this mathematical mapping reveals that disparate physical systems—such as a 1D frustrated zig-zag chain and a 2D continuous string of overlapping kinks—collapse into the identical 2-simplex universality class, rendering their macroscopic nonlinear dynamics mathematically isomor-phic.  
+
+> VII. STABILIZING TOPOLOGICAL DEFECTS: BYPASSING DERRICK’S THEOREM
+
+A historic limitation of 2D isotropic Heisenberg mod-els is Derrick’s Theorem, which prohibits the exis-tence of stable, static solitonic solutions (like skyrmions) in continuous fields unless symmetry-breaking interac-tions, predominantly the Dzyaloshinskii-Moriya Interac-tion (DMI), are explicitly introduced. However, our con-tinuous multi-spin mapping reveals a distinct, intrinsic stabilization mechanism. The inclusion of biquadratic and ring-exchange multi-spin interactions naturally introduces higher-order spa-tial derivatives into the energy functional (e.g., |∇ Θ|4). Under Derrick’s spatial scaling transformation ( r → λr ), the integrated energy of these quartic gradient terms scales as ∝ 1/λ 2 in two dimensions. As the defect radius shrinks ( λ → 0), this provides a steeply rising, diver-gent energy barrier ( E → ∞ ) against the collapse of the soliton core. Thus, higher-order simplicial interactions provide a native topological stabilization mechanism for skyrmions, circumventing the strict requirement for chi-ral DMI in centrosymmetric magnetic lattices.  
+
+> VIII. CONCLUSION AND OUTLOOK
+
+By constructing the Simplicial Bridge, we have success-fully mapped the microscopic origins of quantum multi-spin exchange directly into the macroscopic topology of generalized Kuramoto networks. We have analytically proven that spatial overlap in the continuum limit effec-tively acts as a topological forge—allowing 1D helimag-nets to support 2-simplices, and 2D skyrmion lattices to support dense 3-simplices, decoupled from the con-straints of their underlying discrete atomic grids. Fur-thermore, these higher-order spatial derivatives act as a natural topological anchor, bypassing Derrick’s Theo-rem to stabilize 2D solitons without external symmetry breaking. Formalizing these dynamics as n-simplex Kuramoto hypergraphs opens an entirely new avenue for analyzing magnetic phase transitions. Because these generalized phase networks are subject to exact mean-field dimen-sionality reduction (via the Ott-Antonsen ansatz), they project onto highly nonlinear macroscopic polynomial manifolds. In future work, we will apply this topological reduction to explore the emergence of macroscopic ther-modynamic degeneracies—specifically, how 2-simplices and 3-simplices induce explosive bistability and hyper-explosive cusp catastrophes in bulk magnetic materials. 
+
+> DATA AND CODE AVAILABILITY
+
+The analytical frameworks supporting the integration of the modified Bessel functions and the subsequent topo-logical tensor mappings are contained fully within this manuscript. 
+
+> ACKNOWLEDGMENTS
+
+A.Y. acknowledges the institutional support provided by the Department of Physics at Anugrah Memorial Col-lege, Magadh University. The author also expresses grat-itude for foundational academic mentorship received dur-ing doctoral studies with Prof. Sarika Jalan at the Com-plex Systems Lab, Indian Institute of Technology (IIT) Indore, which shaped the mathematical approaches uti-lized in this work. 
+
+> Appendix A: Evaluation of the 2D Tetradic Overlap Integral
+
+To analytically determine the tetradic coupling con-stant K3 governing the 3-simplex interaction in a two-dimensional continuum, we evaluate the spatial overlap 4
+
+(a) 1D Linear Chain 
+
+> 1-Simplex (Line)
+
+(b) 1D Frustrated Chain 
+
+> 2-Simplex (Triangle)
+
+(c) 1D Overlapping Kinks 
+
+x
+
+> Emergent 2-Simplex
+
+(d) 2D Square Lattice 
+
+> 4-Cycle (Plaquette)
+
+(e) 2D Triangular Lattice 
+
+> 2-Simplex (Triangle)
+
+(f ) 2D Square (Frust.)  
+
+> 3-Simplex ( K4Graph)
+
+(g) 2D Skyrmion Lattice 
+
+> Emergent 3-Simplex
+
+(h) 3D BCC Lattice 
+
+> 4-Cycle (Plaquette)
+
+(i) 3D FCC / Pyrochlore 
+
+> 3-Simplex (Tetrahedron)
+
+(j) 3D Hopfion Gas 
+
+> Emergent 3-Simplex
+
+FIG. 2. Visual representation of the fundamental geometric topologies supporting higher-order magnetic interactions. The continuous phase mappings established herein perfectly correspond to the discrete topologies native to these physical crystalline grids. 
+
+of four magnetic skyrmions. We position the reference skyrmion (Node 1) at the origin r = 0, surrounded sym-metrically by Nodes 2, 3, and 4 at a radial distance a.The master integral over the 2D plane dictates the pro-jection of the multi-spin 4-body exchange onto the local-ized zero-mode of the central skyrmion: 
+
+I2D 1234 =
+
+Z Z 
+
+> R2
+
+|∇ Θ1(r)|2 Θ2(r) Θ 3(r) Θ 4(r) d2r. (A1) For a standard magnetic skyrmion, the radial profile of the azimuthal angle Θ( r) is heavily localized at the core ( r < w ) and decays exponentially in the far-field 5
+
+TABLE I. Topological hierarchy of magnetic interactions across spatial dimensions and physical regimes. The highest supported simplex dictates the nonlinear order of the macroscopic phase dynamics. 
+
+Dim. Physical Geometry Schematic Highest Topology Material Candidates 1D Linear Chain (Discrete) Fig. 2a 1-Simplex (Line) Sr 2CuO 3 [13] Zig-Zag Chain (Frustrated) Fig. 2b 2-Simplex (Triangle) LiCuVO 4 [14] Overlapping Kinks (Continuum) Fig. 2c 2-Simplex (Triadic) Co/Ni Nanowires [15] 
+
+2D Square Lattice (Discrete) Fig. 2d 4-Cycle (Plaquette) La 2CuO 4 [16] Triangular Lattice (Discrete) Fig. 2e 2-Simplex (Triangle) FePS 3, CrPS 4 [9, 10] Square Lattice (Frustrated) Fig. 2f 3-Simplex ( K4 Graph) Sr 2CuWO 6 [17] Skyrmion Lattice (Continuum) Fig. 2g 3-Simplex ( K4 Hub) Fe 3GeTe 2, MnSi [18] 
+
+3D BCC Lattice (Discrete) Fig. 2h 4-Cycle (Plaquette) Solid 3He [12] FCC / HCP (Discrete) Fig. 2i 3-Simplex (Tetrahedron) UO 2, MnO [19] Pyrochlore (Frustrated) Fig. 2i 3-Simplex Network Dy 2Ti 2O7 (Spin Ice) [20] Hopfion Gas (Continuum) Fig. 2j 3-Simplex (Volumetric) Bulk FeGe [21] 
+
+(r ≫ w). This far-field tail is mathematically described by the modified Bessel function of the second kind: Θtail (r) = c0K1
+
+ rw
+
+
+
+, (A2) where c0 is a normalization constant and w is the charac-teristic domain wall width. For large arguments ( r ≫ w), the asymptotic expansion of the Bessel function is: 
+
+K1
+
+ rw
+
+
+
+≈
+
+r πw 
+
+2r exp 
+
+
+
+− rw
+
+
+
+. (A3) The gradient squared term |∇ Θ1|2 characterizes the energy density of the central skyrmion’s core. Because this energy is overwhelmingly concentrated near the ori-gin, we can treat it as a Dirac delta function scaled by the total core exchange energy Ecore :
+
+|∇ Θ1(r)|2 ≈ Ecore δ(2) (r). (A4) Substituting the Dirac delta approximation into the master integral forces the evaluation of the three sur-rounding skyrmion tails exactly at the origin ( r = 0). Since the surrounding skyrmions are located at a dis-tance a from the origin, their tail contributions evaluated at the central core are identically Θ i(0) = c0K1(a/w ). The integral strictly evaluates to: 
+
+I2D 1234 ≈ Ecore 
+
+h
+
+c0K1
+
+ aw
+
+i 3
+
+. (A5) Applying the asymptotic expansion from Eq. A3 for well-separated skyrmions ( a ≫ w), we obtain the exact scaling law for the tetradic coupling constant: 
+
+I2D 1234 ∝ Ecore 
+
+ πw 
+
+2a
+
+3/2
+
+exp 
+
+
+
+− 3aw
+
+
+
+. (A6) This confirms that the effective network coupling K3 de-cays exponentially with respect to three times the lat-tice spacing, formally validating the emergence of the 3-simplex through density-driven spatial overlap in the 2D continuum. 
+
+[1] T. Moriya, “Anisotropic Superexchange Interaction and Weak Ferromagnetism,” Phys. Rev. 120 , 91 (1960). [2] N. Nagaosa and Y. Tokura, “Topological properties and dynamics of magnetic skyrmions,” Nat. Nanotechnol. 8,899 (2013). [3] A. M. Kosevich, B. A. Ivanov, and A. S. Kovalev, “Mag-netic solitons,” Phys. Rep. 194 , 117 (1990). [4] H. B. Braun, “Topological effects in nanomagnetism: from superparamagnetism to chiral quantum solitons,” Adv. Phys. 61 , 1 (2012). [5] A. N. Bogdanov and D. A. Yablonskii, “Thermodynam-ically stable ’vortices’ in magnetically ordered crystals,” Sov. Phys. JETP 68 , 101 (1989). [6] Y. S. Kivshar and B. A. Malomed, “Dynamics of solitons in nearly integrable systems,” Rev. Mod. Phys. 61 , 763 (1989). [7] N. Romming et al. , “Writing and deleting single magnetic skyrmions,” Science 341 , 636 (2013). [8] C. Huang et al. , “Biquadratic and ring exchange inter-actions in two-dimensional magnets,” Phys. Rev. B 101 ,134424 (2020). [9] A. R. Wildes et al. , “Evidence for biquadratic exchange in the quasi-two-dimensional antiferromagnet FePS 3,” Phys. Rev. B 102 , 024410 (2020). [10] A. Kartsev et al. , “Biquadratic exchange interactions in two-dimensional magnets,” npj Comput. Mater. 6, 66 (2020). [11] P. S. Skardal and A. Arenas, “Abrupt Desynchronization 6
+
+and Extensive Multistability in Globally Coupled Oscil-lator Simplexes,” Phys. Rev. Lett. 122 , 248301 (2019). [12] M. Roger, J. H. Hetherington, and J. M. Delrieu, “Mag-netism in solid 3He,” Rev. Mod. Phys. 55 , 1 (1983). [13] N. Motoyama, H. Eisaki, and S. Uchida, “Magnetic sus-ceptibility of spin-1/2 one-dimensional antiferromagnets Sr 2CuO 3 and Ca 2CuO 3,” Phys. Rev. Lett. 76 , 3212 (1996). [14] M. Enderle et al. , “Quantum helimagnetism of the frus-trated spin-1/2 chain LiCuVO 4,” Europhys. Lett. 70 , 237 (2005). [15] T. Koyama et al. , “Observation of the intrinsic pinning of a magnetic domain wall in a ferromagnetic nanowire,” Nat. Mater. 10 , 194 (2011). [16] R. Coldea et al. , “Spin waves and electronic interactions in La 2CuO 4,” Phys. Rev. Lett. 86 , 5377 (2001). [17] H. C. Walker et al. , “Spin wave excitations in the tetrag-onal double perovskite Sr 2CuWO 6,” Phys. Rev. B 94 ,014411 (2016). [18] S. M¨ uhlbauer et al. , “Skyrmion Lattice in a Chiral Mag-net,” Science 323 , 915 (2009). [19] P. Santini et al. , “Multipolar interactions in f -electron systems: The paradigm of actinide dioxides,” Rev. Mod. Phys. 81 , 807 (2009). [20] S. T. Bramwell and M. J. P. Gingras, “Spin Ice State in Frustrated Magnetic Pyrochlore Materials,” Science 294 ,1495 (2001). [21] F. N. Rybakov et al. , “Magnetic hopfions in solids,” Na-ture 610 , 485 (2022).

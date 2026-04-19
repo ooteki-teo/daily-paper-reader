@@ -1,0 +1,1928 @@
+Title: Topological Kondo Insulator from Spin Loop Currents
+
+URL Source: https://arxiv.org/pdf/2604.11739v1
+
+Published Time: Tue, 14 Apr 2026 02:51:55 GMT
+
+Number of Pages: 13
+
+Markdown Content:
+## Topological Kondo Insulator from Spin Loop Currents 
+
+Andreas Gleis, 1 Kevin Lucht, 1 Po-Jui Chen, 1 Daniele Guerci, 2 Andrew J Millis, 3, 4 and J. H. Pixley 1, 4 
+
+> 1
+
+Department of Physics and Astronomy, Rutgers University, Piscataway, NJ 08854, USA 
+
+> 2
+
+Department of Physics, Massachusetts Institute of Technology, Cambridge, MA 02139,USA 
+
+> 3
+
+Department of Physics, Columbia University, New York, NY 10027, USA 
+
+> 4
+
+Center for Computational Quantum Physics, Flatiron Institute, 162 5th Avenue, New York, NY 10010 
+
+(Dated: April 14, 2026) We demonstrate that interacting electrons in AB-stacked MoTe 2/WSe 2 realize a topological Kondo insulator at hole filling ν = 2 per moir´ e unit cell. In the presence of only local correlations, a symmetry of the moir´ e-scale bandstructure enforces a compensated topological semimetal by tying band inversion to band overlap. We show that non-local interactions change the physics qualitatively, since they allow intrinsic, quantum-geometry-induced spin loop currents to feed back on the effective bandstructure, which lift the remaining accidental degeneracies and open a full gap in the spectrum, leading to a fully gapped topological Kondo insulator. We establish this using real-frequency dynamical mean-field theory to capture Kondo physics alongside Hartree-Fock for non-local interactions. The topological Kondo insulator emerges at intermediate displacement fields, where strong correlations manifest through an enhanced spin susceptibility, a suppressed charge susceptibility, and a stronger thermal dependence of the resistivity. Our results are in good agreement with recent experiments on MoTe 2/WSe 2 bilayers demonstrating topological to trivial phase transitions controlled by the displacement field. 
+
+Introduction.— In recent years, bilayer transition metal dichalcogenide (TMD) moir´ e materials have emerged as highly tunable and versatile platforms for realiz-ing strongly correlated and topological electron sys-tems [ 1, 2]. Moir´ e patterns emerge either from twisting in homobilayers, such as twisted MoTe 2 [3– 5] or WSe 2 [6 –10 ], or from lattice mismatch in heterobilayers such as WSe 2/WS 2 [11 , 12 ] or MoTe 2/WSe 2 [ 13 – 28 ]. Monolayer TMDs exhibit Ising spin-orbit coupling that leads to spin-valley locking, which is particularly strong in the valence band [ 29 ]. As a result, the moir´ e-scale physics of hole-doped TMD bilayers is governed by spin–valley–locked carriers [ 30 , 31 ], effectively realizing a generalized Kane– Mele model [32]. Recently, MoTe 2/WSe 2 bilayer systems have been pro-posed as a platform to realize a chiral Kondo lattice model [ 23 ], in which the interlayer exchange coupling between local moments and itinerant carriers exhibits a nontrivial winding. In this system, first-principles calcula-tions [ 33 ] have shown that holes in MoTe 2 are much more strongly affected by the moir´ e potential than those in WSe 2, due to their larger effective mass. As a result, the MoTe 2 moir´ e band is strongly correlated, exhibiting a pro-nounced tendency toward a Mott (or charge-transfer) in-sulating state and the formation of local moments [ 13 , 24 ]. When the more itinerant and weakly correlated WSe 2
+
+moir´ e band is tuned to the Fermi level by an applied dis-placement field, interlayer hybridization induces a chiral antiferromagnetic exchange between localized moments and itinerant carriers, realizing the chiral Kondo lattice. This scenario was proposed in Ref. [ 23 ] and observed experimentally in Refs. [24–28]. The chiral Kondo exchange originates from the opposite eigenvalues under three-fold rotations around z (C3) of the two lowest energy bands at the high-symmetry points where band inversion takes place [ 20 , 33 , 34 ]. The result-ing mismatch in angular momentum enforces nodes in the interlayer hybridization, enabling a displacement-field-induced band inversion and, consequently, the emergence of nontrivial band topology [ 22 ]. When strong correla-tions are taken into account, MoTe 2/WSe 2 bilayers may therefore realize a tunable two-dimensional topological Kondo insulator (TKI) platform [ 35 , 36 ] at hole filling 
+
+ν = 2, providing a controlled setting to elucidate several long-standing mysteries in candidate three-dimensional TKIs such as SmB 6 [37–41] and YbB 12 [42–44]. Theoretically, the emergence of a TKI phase in MoTe 2/WSe 2 bilayers has been investigated in Refs. [ 34 ,45 , 46 ]. These studies predict a compensated topological semimetal (CTSM) in a clean material, although interlayer strain inhomogeneity can induce a TKI [ 34 ]. The compen-sated semimetal nature of the phase is a consequence of a symmetry of the band-structure of the moir´ e-scale model that ties band inversion to band overlap ([cf. Eqs. (5) – (8) ]below). It is an open question whether in the presence of general interactions the band symmetries remain robust, or whether a gapped TKI phase can occur intrinsically in a clean system. In this letter, we show that due to the presence of non-local interactions the aforementioned symmetry is not protected, which will have general consequences for stacked and twisted TMDs. Here, we focus on MoTe 2/WSe 2bilayers, where the quantum geometry arises from interlayer hybridization and induces symmetry-allowed spin loop currents (SLCs). Through Fock ex-change from non-local interactions, these SLCs qualita-tively alter the effective bandstructure, which leads to an intrinsic TKI. Starting from a realistic microscopic Hamiltonian, we obtain quantitative results using real-frequency dynamical mean-field theory (DMFT) [ 47 , 48 ]
+
+> arXiv:2604.11739v1 [cond-mat.str-el] 13 Apr 2026
+
+2together with Hartree-Fock (HF) to capture SLC-induced feedback from non-local interactions, which is crucial to obtain a TKI. At hole density ν = 2, we investigate the evolution of the gap under displacement-field tuning. This evo-lution is governed by the interplay between electronic correlations and proximity to a topological phase transi-tion, enabling controlled tuning from the chiral Kondo regime into a topological band-insulating regime as mixed-valence charge fluctuations in the local-moment layer are enhanced. As a result, DMFT is essential to accurately capture this crossover from strong to weak coupling. Fur-thermore, our theory predicts a strong temperature sensi-tivity of the TKI, where thermal fluctuations destroy the SLC-induced topological gap, with direct consequences for electronic transport. 
+
+Model.— Our work is based on a tight-binding parametrization of the two highest-energy valence bands of AB-stacked MoTe 2/WSe 2 [16 , 34 ]. These form a honey-comb lattice with lattice vectors a1/2 = aM (±√3/2, 1/2) T
+
+and moir´ e lattice constant aM ≃ 4.65 nm . The two sites in the moir´ e unit cell reside in the MoTe 2 and WSe 2 lay-ers, respectively; throughout the remainder of this work, we refer to them as f and c orbitals. The tight-binding Hamiltonian is 
+
+H = X
+
+> kσ
+
+ξc 
+
+> kσ
+
+c† 
+
+> kσ
+
+ckσ + U c
+
+> loc
+
+X
+
+> i
+
+nci↑nci↓ (1) + X
+
+> kσ
+
+ξf 
+
+> k
+
+f † 
+
+> kσ
+
+fkσ + U f
+
+> loc
+
+X
+
+> i
+
+nfi↑nfi↓ + U fnn 
+
+X
+
+> ⟨⟨ i,j ⟩⟩
+
+nfi nfj
+
++ X
+
+> kσ
+
+(Vkc† 
+
+> kσ
+
+fkσ + h .c.) + U cf n
+
+X
+
+> ⟨i,j ⟩
+
+nfi ncj ,
+
+where ckσ and fkσ annihilate a momentum k, spin 
+
+σ hole in the c and f band, respectively. Further, 
+
+ξf 
+
+> kσ
+
+= ϵf k − ∆2 − μ and ξc 
+
+> kσ
+
+= ϵckσ + ∆2 − μ, with chemical potential μ, displacement field ∆ and dis-persions ϵckσ = −2tc
+
+P 
+
+> n
+
+cos (kγn + ϕcσ ) and ϵf k =
+
+−2tf
+
+P 
+
+> n
+
+cos (kγn), where γn = Cn−13z a2, ϕcσ = 2 πs σ /3, and s↑ = −s↓ = 1. The k-dependent interlayer hybridiza-tion is Vk = −t⊥
+
+P 
+
+> n
+
+eiku n , with u1 = aM (1 , 0) T /√3 and 
+
+un = Cn−13 u1. Below the f and c hole densities are denoted by νf and νc, respectively, and the total hole density by ν = νf + νc.We consider local interactions U f 
+
+> loc
+
+and U c 
+
+> loc
+
+in the f and 
+
+c layers, a nearest-neighbor density interaction U cf n and a next-nearest-neighbor density interaction in the f layer, 
+
+U fnn . As we will show, U fnn is responsible for opening a full topological gap at ν = 2. Other interactions are smaller and not considered here for simplicity. We choose tc =8.3 meV , tf = 4 meV , and t⊥ = 2 meV for the hoppings, and U f 
+
+> loc
+
+= 90 meV , U c 
+
+> loc
+
+= 65 meV , U cf n = 45 meV , and 
+
+U fnn = 20 meV for the interactions. These choices are in reasonable agreement with ab-initio estimates [34]. 
+
+Method.— We treat U f 
+
+> loc
+
+within DMFT to capture the dynamics of local-moment formation and Kondo screening in the f -band, while both the non-local and the c-band interactions are treated within HF, to keep computations manageable. We use the QSpace-based [ 49 –51 ] MuNRG implementation [ 52 – 54 ] of the Numerical Renormaliza-tion Group (NRG) [ 55 – 57 ] to solve the impurity model, which provides real-frequency dynamics at arbitrary tem-peratures; see the Supplemental Material (SM) [ 58 ] for details. The resulting retarded self-energy has the form 
+
+Σkσ (ω) = 
+
+Σf
+
+> loc
+
+(ω) + Σ f 
+
+> kσ
+
+Σf c 
+
+> k
+
+Σcf  
+
+> k
+
+Σc
+
+
+
+, (2) where Σ f
+
+> loc
+
+(ω) includes both the DMFT contribution and the local Hartree terms from U cf n and U fnn , while all other HF terms are static and given by Σf 
+
+> kσ
+
+= −2U fnn χf f 
+
+> 3
+
+X
+
+> n=1
+
+cos( γnk + sσ ϕf ) (3) Σf c  
+
+> k
+
+= −U cf n χf c 
+
+> 3
+
+X
+
+> n=1
+
+eiku n , Σc = U c
+
+> loc
+
+2 νc + 3 U cf n νf .
+
+Here, we have defined the bond expectation values 
+
+χf c = ⟨f † 
+
+> iσ
+
+cjσ ⟩ , χf f eisσ νℓℓ ′ ϕf
+
+= ⟨f † 
+
+> ℓσ
+
+fℓ′σ ⟩ , (4) where ( i, j ) and ( ℓ, ℓ ′) are nearest and next-nearest neigh-bors, respectively, νℓℓ ′ = ±1 if the bond points along ±γn,
+
+n ∈ { 1, 2, 3}, and χf f = |⟨ f † 
+
+> ℓσ
+
+fℓ′σ ⟩| . Importantly, a spin and bond direction dependent phase sσ νℓℓ ′ ϕf on ⟨f † 
+
+> ℓσ
+
+fℓ′σ ⟩
+
+does not break the C3z or time reversal symmetries of the model. Therefore, ϕf will generically be non-zero, which implies the presence of SLCs, as discussed below. 
+
+Phase diagram at ν = 2 .— The resulting displacement field driven phase diagram at fixed ν = νf + νc = 2 and 
+
+T = 0 is shown in Fig. 1. Figure 1(a) shows the the gap Eg
+
+and anomalous spin-Hall conductance σxy s = 12 (σxy  
+
+> ↑
+
+−σxy  
+
+> ↓
+
+), which indicate whether the system is insulating or semi-metallic and whether it is topological, respectively. Fig-ure 1(b) shows the local f -orbital spin and charge sus-ceptibilities χs and χc, respectively. These are indicators for the degree of correlations, since χc = 4 χs in the non-interacting limit, while χc ≪ 4χs in the Kondo limit where local moments form in the f orbitals. As we vary the displacement field, we find four different regimes at ν = 2. Most importantly, around νf ≃ νc ≃ 1, we find an intrinsic TKI regime that does not require disorder or symmetry breaking, which appears to be the most consistent with recent experiments [ 27 ]. The TKI exhibits an (indirect) gap of Eg ≃ 1 meV , a quantized spin-Hall conductance σxy s = e2/h , and a local f -band spin susceptilility clearly exceeding the charge suscepti-bility, χc ≪ 4χs, which places it well within the Kondo regime. As we tune away from νf ≃ 1, we find that correlations weaken and the gap increases while the spin-Hall conductance remains quantized, resulting in a more 3
+
+FIG. 1. Phase diagram of MoTe 2/WSe 2 at hole filling ν = νf +
+
+νc = 2 and T = 0 with varying displacement field ∆. The top abscissa shows the displacement field δ∆ = ∆( νf ) − ∆( νf = 1) relative to νf = 1, while all other abscissas show the equivalent 
+
+f -band filling νf . The relation between δ∆ and νf is shown in the inset. In (a), we show the gap Eg and the anomalous spin-Hall conductance σxy s , while (b) shows the local f -band spin and charge susceptibilities χs and χc, respectively. The latter are an indication of the degree of correlations, since 
+
+χc = 4 χs in the non-interacting limit and χc ≪ 4χs in the Kondo limit. Based on those quantities, we distinguish four different regimes. A topological Kondo insulator (TKI, orange) with quantized σxy s = e2/h and strong correlations ( χc ≪ 4χs)around νf = 1, a more weakly correlated topological insulator (TI, green) with σxy s = e2/h further away from νf = 1, a trivial band insulator (BI, gray) with σxy s = 0 far away from νf = 1, and a compensated topological semimetal (CTSM, blue) with 
+
+Eg = 0 and non-zero but non-quantized σxy s , separating TI from BI in the νf < 1 region. TI and TKI correspond to the same phase and are only qualitatively distinguished by the degree of their correlations. We use 4 χs/χ c > 20 for the TKI and 4 χs/χ c < 10 for the TI, with a crossover region in between. 
+
+weakly correlated topological insulator (TI). Note that the TI and TKI belong to the same phase and are only qualitatively distinguished by the degree of their correla-tions. For both the TKI and TI regime, it is absolutely crucial that (i) MoTe 2/WSe 2 intrinsically supports SLCs and (ii) that the next-nearest neighbor interaction in the 
+
+f -band, U fnn , is non-zero. This allows SLCs to feed back on the effective bandstructure, which ultimately leads to an intrinsic full topological gap, as will be discussed in more detail below. Tuning further away from νf ≃ νc ≃ 1 deep into the TI regime, the charge gap Eg reaches a maximum and subsequently narrows, even as correlations continue to weaken and σxy s remains quantized. This reduction of the gap signals an impending topological phase transition. As 
+
+|νf − 1| → 1, the system must ultimately evolve into a weakly-correlated trivial band insulator (BI) with σxy s = 0. Because the TI and BI states are topologically distinct, the gap must close between them. For νf > 1, this transition occurs at a single critical point near νf ≃ 1.94. In contrast, for νf < 1, the transition occurs via an intermediate CTSM region (0 .65 <
+
+∼ νf <
+
+∼ 0.7) featuring a non-zero but non-quantized anomalous spin-Hall conductance. 
+
+Importance of non-local interactions.— Above, we have shown that MoTe 2/WSe 2 supports an intrinsic (symmet-ric and disorder-free) TKI around νf ≃ νc ≃ 1, in stark contrast to previous findings in Refs. [ 34 , 46 ], which in-trinsically found a CTSM. These previous findings are due to a symmetry of the non-interacting bandstructure of MoTe 2/WSe 2, which is not a symmetry of the full interacting Hamiltonian. We will see below that non-local interactions in the presence of quantum geometry explicitly break this symmetry and enable an intrinsic TKI. This symmetry arises from two basic properties of the non-interacting bandstructure, (i) a 6-fold rotation sym-metry of the continuum model moir´ e bands of MoTe 2
+
+and WSe 2 around their band minima [ 65 ], and (ii) the presence of nodes in the interlayer hybridization Vk and their location in k-space due to the different C3z eigenval-ues of the low-energy MoTe 2 and WSe 2 moir´ e bands [ 33 ]. Both properties are present in the continuum model and respected by the tight-binding fit. Property (i) relates the f -band dispersion ϵf k (minimum at γ = (0 , 0) T ) at 
+
+κ = 4π 
+
+> 3aM
+
+(√3/2, −1/2) T and κ′ = 4π 
+
+> 3aM
+
+(√3/2, 1/2) T ,
+
+ϵf κ = ϵf κ′ . (5) It holds to a very good approximation at the moir´ e scale, but is weakly broken beyond the quadratic single-valley band approximation. Property (ii) is exact and, in our gauge choice with real interlayer hopping, leads to hy-bridization nodes at κ and κ′,
+
+Vκ = Vκ′ = 0 . (6) Therefore, the nodes of Vk align with the maxima of ϵf k.Tuning ∆ such that the f and c bands overlap triggers band inversion, with hybridized bands featuring spin-contrasting Chern numbers. Denoting the upper and lower band dispersions by E+ 
+
+> kσ
+
+and E− 
+
+> kσ
+
+, respectively, band inversion and Eq. (6) necessarily lead to 
+
+E+ 
+
+> κσ
+
+= ϵf κ E− 
+
+> κ′σ
+
+= ϵf κ′ , (7) or vice versa. Combining this with Eq. (5), we find 
+
+E+ 
+
+> κσ
+
+= E− 
+
+> κ′σ
+
+, (8) i.e. the bands overlap if they are inverted, i.e. topological. This aligns with the findings in Refs. [ 34 , 46 ], which generically found a CTSM at νf = νc = 1. Ref. [ 45 ] imple-mented a Hamiltonian which strongly violates Eq. (5) and is therefore not compatible with the continuum models of 4
+
+FIG. 2. (a) spin loop currents (blue) and gap (orange) versus 
+
+U fnn . (b) spin Hall conductance versus U fnn . (c,d) Total spectral function Ak↑(ω) = Af k↑(ω) + Ack↑(ω), in (c) the CTSM and (d) the TKI phase. The insets show Ak↑(0) (Fermi surface). All results are obtained at T = 0. 
+
+Refs. [ 33 , 65 ]. In Ref. [ 34 ], Eq. (6) was lifted on average by introducing disorder to open a full band gap. Since Eq. (8) is accidental, i.e. not enforced by the 
+
+C3z or time reversal symmetries of H, it can be lifted, without symmetry-breaking, by interaction effects that effectively break the accidental 6-fold symmetry of ϵf k
+
+in Eq. (5) . A physical quantity that does not respect this accidental symmetry is SLCs in the f band. Their presence is described by the spin current operator for bond ( ℓ, ℓ ′), ˆJsℓℓ ′ = i tf νℓℓ ′
+
+X
+
+> σ
+
+sσ
+
+h
+
+f † 
+
+> ℓσ
+
+fℓ′σ − h.c.
+
+i
+
+, (9) with bond orientation dependent direction convention via 
+
+νℓℓ ′ . If, in Eq. (4), 0 < ϕ f < π , its expectation value 
+
+Js = ⟨ ˆJsℓℓ ′ ⟩ = 4 tf χf f sin ϕf (10) is non-zero and bond-independent, implying SLCs that run around triangles in the f sublattice [66]. Feedback of the SLCs on the effective bandstructure requires a non-zero non-local f -band interaction U fnn and, on the HF level, occurs via Eq. (3) , which lifts property (5) and thereby enables an intrinsic TKI. For concreteness, consider the interacting retarded Green’s function 
+
+G−1 
+
+> kσ
+
+(ω) = ω −
+
+ξf k Vk
+
+V ∗ 
+
+> k
+
+ξckσ
+
+
+
+− Σkσ (ω) . (11) Topology is encoded in the effective Hamiltonian [67] 
+
+Heff  
+
+> kσ
+
+= − 12
+
+ G−1 
+
+> kσ
+
+(0) + [ G−1 
+
+> kσ
+
+(0)] † . (12) Its effective f -band dispersion 
+
+ϵeff   
+
+> fkσ
+
+= ϵf k + Σ f
+
+> loc
+
+(0) + Σ f 
+
+> kσ
+
+, ϵeff  
+
+> fκσ
+
+̸ = ϵeff   
+
+> fκ′σ
+
+(13) does not fulfill Eq. (5) if U fnn ̸ = 0 and ϕf̸ = 0. To show how a non-zero U fnn induces a TKI we have per-formed DMFT+HF calculations at filling ν = νf + νc = 2 
+
+FIG. 3. (a) the gap Eg , the SLCs Js, and the f band scat-tering rate τ −1 
+
+> f
+
+= −Im Σf
+
+> loc
+
+(ω = 0) versus temperature. (b) Resistivity (blue) and spin Hall conductance (orange) versus temperature. The red dashed line: Arrhenius fit for T ≤ 2 K. (c) Total spectral function Ak↑(ω) = Af k↑(ω) + Ack↑(ω) at 
+
+T = 15 K; the inset shows Ak↑(0). (d) real part of det G−1 
+
+> k↑
+
+(0) and (e) valence-band Berry curvature of Heff  
+
+> k↑
+
+[c.f. Eq. (12)]. 
+
+and νf ≃ νc ≃ 1 with varying U fnn , while the remaining parameters are fixed as specified below Eq. (1) . Fig-ure 2(a,b) shows the resulting Js, gap Eg , and spin-Hall conductance σxy s = 12 (σxy  
+
+> ↑
+
+− σxy  
+
+> ↓
+
+). At U fnn = 0, Js is non-zero, while Eg = 0 and σxy s ≃ 0.9e2/h is not quantized, i.e. the system is a CTSM, consistent with Refs. [ 34 , 46 ]. However, from the corresponding spectral function, shown in Fig. 2(c), we can infer that the system is very close to a TKI. Spectral features in the vicinity of the Fermi level are extremely flat due to strong correlations, and the bands only overlap in a narrow energy window. Further, the inset of Fig. 2(c) shows that the electron and hole pockets occupy only a tiny fraction of the Brillouin zone. Once U fnn is increased to non-zero values, Js moder-ately increases while σxy s rises steeply until σxy s = e2/h is reached around U fnn = 13 meV , where a full topological gap opens. This gap increases with increasing U fnn and remains topological for U fnn ≥ 13 meV . Realistic values for U fnn are in the 20-30 meV range, where Eg ≃ 1-4 meV ,thus it is reasonable that AB-stacked MoTe 2/WSe 2 may be a SLC-induced TKI. However, even though our Hamil-tonian parameters are reasonable, there are uncertainties, also due to dynamical screening from remote bands or even phonons [ 68 ]. Since AB-stacked MoTe 2/WSe 2 is at the boundary between CTSM and TKI, a definitive prediction is therefore not possible. Figure 2(d) shows the spectral function at U fnn =20 meV , our value of choice for the results shown in Figs. 1 and 3. Compared to U fnn = 0, changes in the spectral function are only visible at low energies, where we find that non-zero U fnn leads to more dispersive and coherent features, and a full gap. 
+
+Temperature dependence.— Last, we study the tempera-ture dependence of the SLC-induced TKI, focusing on the gap and transport coefficients, which are experimentally 5accessible. In Fig. 3(a), we show the temperature depen-dence of the gap Eg , alongside Js, χf f [c.f. Eq. (4) ], and the imaginary part of Σ f
+
+> loc
+
+(ω = 0), which corresponds to the f -band scattering rate at the Fermi level. Figure 3(b) shows the corresponding resistivity ρxx (T ) and σxy s (T ), see the SM [ 58 ] for computational details. At T = 0, the gap is Eg = 1 .16 meV , which corresponds to 13 .5 K, while 
+
+σxy s (0) = e2/h is quantized, and ρxx (T → 0) → ∞ .When the system is heated, both the gap and the SLCs are almost temperature independent for T <
+
+∼ 2 K. In the same temperature region, σxy s (T ) is quantized and the resistivity has Arrhenius behavior, ρxx (T ) ∝ eEa/k BT , i.e. it behaves as a thermally activated rigid-gap insulator. We find an activation energy of 2 Ea = 1 .22 meV , in reasonable agreement with Eg = 1 .16 meV. When heating beyond T ∼ 2 K, thermal fluctuations start to significantly reduce the SLCs with increasing tem-perature, which causes the gap to collapse over a relatively small temperature window 2 K <
+
+∼ T <
+
+∼ 5 K. In that tem-perature window, χf f decreases less drastically than Js,i.e. the Js reduction is driven largely by a reduction of ϕf .Once the gap collapses, the resistivity deviates from its rigid-gap ∝ eEa/k BT behavior above 2 K, becomes almost temperature independent between 2 and 30 K, and slowly decreases further towards even higher temperatures. Surprisingly, even though the gap rapidly collapses for 
+
+T >
+
+∼ 2 K, the resistivity is larger than what would be expected from an extrapolation of the low-temperature 
+
+∝ eEa/k BT dependence, even though there should be more mobile charge carriers. This counterintuitive behavior is due to (i) a strong increase of the f -band scattering rate 
+
+τ −1 
+
+> f
+
+= −Im Σf
+
+> loc
+
+(0) and (ii) a decrease of SLCs, which decreases the effective f -band velocity vαf kσ = ∂kα ϵeff   
+
+> fkσ
+
+.Therefore, increasing temperature strongly decreases the mean free path lf ∼ vf τf in the f -band, which contributes most of the activated charge carriers at the Fermi level. The dominant f content at the Fermi level is apparent from the spectral function at T = 15 K, shown in Fig. 3(c). By contrasting this with T = 0 [Fig. 2(d)], the decreased coherence and dispersiveness at T = 15 K is also clearly visible. This decrease in the mean free path counteracts charge carrier activation, leading to the resistivity plateau. The spectral function, together with the valence-band Berry curvature Ω −↑ (k) of Heff  
+
+> k↑
+
+[Fig. 3(e)] and the real part of the determinant of G−1 
+
+> k↑
+
+(0) [Fig. 3(d)] also help to understand the behavior of σxy s (T ). The latter slightly deviates from its quantized T → 0 value once the gap col-lapses, becomes almost constant for 5 K <
+
+∼ T <
+
+∼ 30 K, and shows significant temperature dependence only beyond 30 K. This is due to the distribution of Berry curvature in the Brillouin zone, which is concentrated in regions somewhat separated from the unoccupied region around 
+
+κ′ where Re det G−1 
+
+> k↑
+
+(0) > 0 [red in Fig. 3(d)]. The spec-tral weight in the region where Ω −↑ (k) is large is well below the Fermi level, with significant thermal activation occurring only beyond 30 K. 
+
+Conclusion and Outlook.— We have studied a tight-binding model relevant to AB-stacked MoTe 2/WSe 2 using real-frequency DMFT plus HF. Our calculations show that the interplay between quantum geometry and non-local interactions qualitatively changes the physics and enables an SLC-induced TKI in an experimentally relevant parameter regime. At ν = 2, displacement-field tuning first drives a crossover from a strongly correlated TKI near 
+
+νf ≃ 1 to a more weakly correlated TI as mixed-valence fluctuations grow, and then a topological transition to a trivial BI: for νf > 1 via a single gap closing near 
+
+νf ≃ 1.94, and for νf < 1 via an intermediate CTSM window, 0 .65 <
+
+∼ νf <
+
+∼ 0.7. Further, we find that the gap of the TKI at νf ≃ 1 collapses at temperatures much lower than the gap scale, with observable consequences for ρxx (T ). Interestingly, similar behavior has been found in recent experiments on AA-stacked MoTe 2/WSe 2 [ 27 ]. In its TKI regime, it has a topological gap slightly larger than 1 meV , which closes around 2 K as indicated by the edge contribution to the resistance. Tuning away from the TKI regime by displacement-field reveals an increase of the gap, followed by a gap closing, a metallic region, and a subsequent opening of a trivial gap, which mirrors our findings for νf < 1. It is an interesting future direction to conduct a similar study on AA-stacked MoTe 2/WSe 2.Another interesting direction for future work on MoTe 2/WSe 2 would be to identify a parameter regime where Kondo breakdown [ 69 – 74 ] physics occurs. One particularly interesting issue would be its interplay with topology, which arises from a p-wave interlayer hybridiza-tion in this system. 
+
+Acknowledgements.— We thank Andrei Bernevig, Piers Coleman, Kin-Fai Mak, Juan Felipe Mendez-Valderrama, and Jie Shan for useful discussions. AG is supported by the Abrahams Postdoctoral Fellowship of the Cen-ter for Materials Theory at Rutgers University. K.P.L. and J.H.P. are partially supported by NSF Career Grant No. DMR-1941569, and J.H.P. has been supported in part by the US Department of Energy Office of Science, Basic Energy Sciences, under Award No. DE-SC0026023 (work involved the conceptualization and construction of the project, as well as the interpretation of results and the presentation). PJ was supported by Office of Basic Energy Sciences, Material Sciences and Engineering Divi-sion, U.S. Department of Energy (DOE) under Contract DE-FG02-99ER45790. The work of AJM was supported in part by the National Science Foundation (NSF) Ma-terials Research Science and Engineering Centers (MR-SEC) program through Columbia University under the Precision-Assembled Quantum Materials (PAQM) Grant No. DMR-2011738. The Flatiron Institute is a division of the Simons Foundation. 6
+
+[1] D. M. Kennes, M. Claassen, L. Xian, A. Georges, A. J. Millis, J. Hone, C. R. Dean, D. N. Basov, A. N. Pasupathy, and A. Rubio, Moir´ e heterostructures as a condensed-matter quantum simulator, Nature Physics 17 , 155 (2021). [2] K. F. Mak and J. Shan, Semiconductor moir´ e materials, Nature Nanotechnology 17 , 686 (2022). [3] J. Cai, E. Anderson, C. Wang, X. Zhang, X. Liu, W. Holtz-mann, Y. Zhang, F. Fan, T. Taniguchi, K. Watanabe, Y. Ran, T. Cao, L. Fu, D. Xiao, W. Yao, and X. Xu, Signatures of fractional quantum anomalous hall states in twisted mote2, Nature 622 , 63 (2023). [4] Y. Jia, T. Song, Z. J. Zheng, G. Cheng, A. J. Uzan, G. Yu, Y. Tang, C. J. Pollak, F. Yuan, M. Onyszczak, K. Watanabe, T. Taniguchi, S. Lei, N. Yao, L. M. Schoop, N. P. Ong, and S. Wu, Anomalous superconductivity in twisted mote 2 nanojunctions, Science Advances 11 ,10.1126/sciadv.adq5712 (2025). [5] F. Xu, Z. Sun, J. Li, C. Zheng, C. Xu, J. Gao, T. Jia, K. Watanabe, T. Taniguchi, B. Tong, L. Lu, J. Jia, Z. Shi, S. Jiang, Y. Zhang, Y. Zhang, S. Lei, X. Liu, and T. Li, Signatures of unconventional superconductivity near reen-trant and fractional quantum anomalous hall insulators (2025). [6] A. Ghiotto, E.-M. Shih, G. S. S. G. Pereira, D. A. Rhodes, B. Kim, J. Zang, A. J. Millis, K. Watanabe, T. Taniguchi, J. C. Hone, L. Wang, C. R. Dean, and A. N. Pasupathy, Quantum criticality in twisted transition metal dichalco-genides, Nature 597 , 345 (2021). [7] L. Wei, Q. Xu, Y. He, Q. Li, Y. Huang, W. Zhu, K. Watan-abe, T. Taniguchi, M. Claassen, D. A. Rhodes, D. M. Kennes, L. Xian, A. Rubio, and L. Wang, Linear resis-tivity at van hove singularities in twisted bilayer wse 2, Proceedings of the National Academy of Sciences 121 ,10.1073/pnas.2321665121 (2024). [8] Y. Xia, Z. Han, K. Watanabe, T. Taniguchi, J. Shan, and K. F. Mak, Superconductivity in twisted bilayer wse2, Nature 637 , 833 (2024). [9] Y. Guo, J. Pack, J. Swann, L. Holtzman, M. Cothrine, K. Watanabe, T. Taniguchi, D. G. Mandrus, K. Barmak, J. Hone, A. J. Millis, A. Pasupathy, and C. R. Dean, Superconductivity in 5.0 ° twisted bilayer wse2, Nature 
+
+637 , 839 (2025). [10] Y. Xia, Z. Han, J. Zhu, Y. Zhang, P. Kn¨ uppel, K. Watan-abe, T. Taniguchi, K. F. Mak, and J. Shan, Simulating high-temperature superconductivity in moir´ e wse2 (2025). [11] E. C. Regan, D. Wang, C. Jin, M. I. Bakti Utama, B. Gao, X. Wei, S. Zhao, W. Zhao, Z. Zhang, K. Yumigeta, M. Blei, J. D. Carlstr¨ om, K. Watanabe, T. Taniguchi, S. Tongay, M. Crommie, A. Zettl, and F. Wang, Mott and generalized wigner crystal states in wse2/ws2 moir´ e superlattices, Nature 579 , 359 (2020). [12] H. Li, S. Li, E. C. Regan, D. Wang, W. Zhao, S. Kahn, K. Yumigeta, M. Blei, T. Taniguchi, K. Watanabe, S. Ton-gay, A. Zettl, M. F. Crommie, and F. Wang, Imaging two-dimensional generalized wigner crystals, Nature 597 ,650 (2021). [13] T. Li, S. Jiang, L. Li, Y. Zhang, K. Kang, J. Zhu, K. Watanabe, T. Taniguchi, D. Chowdhury, L. Fu, J. Shan, and K. F. Mak, Continuous mott transition in semicon-ductor moir´ e superlattices, Nature 597 , 350 (2021). [14] T. Li, S. Jiang, B. Shen, Y. Zhang, L. Li, Z. Tao, T. De-vakul, K. Watanabe, T. Taniguchi, L. Fu, J. Shan, and K. F. Mak, Quantum anomalous hall effect from inter-twined moir´ e bands, Nature 600 , 641 (2021). [15] H. Pan, M. Xie, F. Wu, and S. Das Sarma, Topological phases in ab-stacked mote2/wse2 : Z2 topological insu-lators, chern insulators, and topological charge density waves, Physical Review Letters 129 , 056804 (2022). [16] T. Devakul and L. Fu, Quantum anomalous hall effect from inverted charge transfer gap, Physical Review X 12 ,021031 (2022). [17] Y.-M. Xie, C.-P. Zhang, J.-X. Hu, K. F. Mak, and K. Law, Valley-polarized quantum anomalous hall state in moir´ emote2/wse2 heterobilayers, Physical Review Letters 128 ,026402 (2022). [18] M. Xie, H. Pan, F. Wu, and S. Das Sarma, Nematic excitonic insulator in transition metal dichalcogenide moir´ e heterobilayers, Physical Review Letters 131 , 046402 (2023). [19] Z. Dong and Y.-H. Zhang, Excitonic chern insulator and kinetic ferromagnetism in a mote2/wse2 moir´ e bilayer, Physical Review B 107 , l081101 (2023). [20] Y.-M. Xie, C.-P. Zhang, and K. T. Law, Topological px+ipy intervalley coherent state in moir´ e mote2/wse2 heterobilayers, Physical Review B 110 , 045115 (2024). [21] Z. Tao, B. Shen, S. Jiang, T. Li, L. Li, L. Ma, W. Zhao, J. Hu, K. Pistunova, K. Watanabe, T. Taniguchi, T. F. Heinz, K. F. Mak, and J. Shan, Valley-coherent quantum anomalous hall state in ab-stacked mote2/wse2 bilayers, Physical Review X 14 , 011004 (2024). [22] W. Zhao, K. Kang, Y. Zhang, P. Kn¨ uppel, Z. Tao, L. Li, C. L. Tschirhart, E. Redekop, K. Watanabe, T. Taniguchi, A. F. Young, J. Shan, and K. F. Mak, Realization of the haldane chern insulator in a moir´ e lattice, Nature Physics 
+
+20 , 275 (2024). [23] D. Guerci, J. Wang, J. Zang, J. Cano, J. H. Pix-ley, and A. Millis, Chiral kondo lattice in doped mote 2/wse 2 bilayers, Science Advances 9, eade7701 (2023), https://www.science.org/doi/pdf/10.1126/sciadv.ade7701. [24] W. Zhao, B. Shen, Z. Tao, Z. Han, K. Kang, K. Watanabe, T. Taniguchi, K. F. Mak, and J. Shan, Gate-tunable heavy fermions in a moir´ e kondo lattice, Nature 616 , 61 (2023). [25] W. Zhao, B. Shen, Z. Tao, S. Kim, P. Kn¨ uppel, Z. Han, Y. Zhang, K. Watanabe, T. Taniguchi, D. Chowdhury, J. Shan, and K. F. Mak, Emergence of ferromagnetism at the onset of moir´ e kondo breakdown, Nature Physics 20 ,1772 (2024). [26] Y. Zhang, W. Zhao, Z. Han, K. Watanabe, T. Taniguchi, J. Shan, and K. F. Mak, Thermoelectricity of moir´ e heavy fermions in mote2/wse2 bilayers (2025). [27] Z. Han, Y. Xia, Z. Xia, W. Zhao, Y. Zhang, K. Watan-abe, T. Taniguchi, J. Shan, and K. F. Mak, Evidence of topological kondo insulating state in mote2/wse2 moir´ ebilayers (2025). [28] W. Zhao, Z. Tao, Y. Zhang, B. Shen, Z. Han, P. Kn¨ uppel, Y. Zeng, Z. Xia, K. Watanabe, T. Taniguchi, J. Shan, and K. F. Mak, Emergence of chern metal in a moir´ e kondo lattice (2025). [29] A. Korm´ anyos, G. Burkard, M. Gmitra, J. Fabian, V. Z´ olyomi, N. D. Drummond, and V. Fal’ko, k · p the-ory for two-dimensional transition metal dichalcogenide semiconductors, 2D Materials 2, 022001 (2015). [30] F. Wu, T. Lovorn, E. Tutuc, and A. MacDonald, Hubbard model physics in transition metal dichalcogenide moir´ ebands, Physical Review Letters 121 , 026402 (2018). 7
+
+[31] T. Devakul, V. Cr´ epel, Y. Zhang, and L. Fu, Magic in twisted transition metal dichalcogenide bilayers, Nature Communications 12 , 10.1038/s41467-021-27042-9 (2021). [32] C. L. Kane and E. J. Mele, Quantum spin hall effect in graphene, Phys. Rev. Lett. 95 , 226801 (2005). [33] Y. Zhang, T. Devakul, and L. Fu, Spin-textured chern bands in ab-stacked transition metal dichalcogenide bi-layers, Proceedings of the National Academy of Sciences 
+
+118 , e2112673118 (2021). [34] D. Guerci, K. P. Lucht, V. Cr´ epel, J. Cano, J. H. Pixley, and A. Millis, Topological kondo semimetal and insula-tor in ab-stacked heterobilayer transition metal dichalco-genides, Phys. Rev. B 110 , 165128 (2024). [35] M. Dzero, K. Sun, V. Galitski, and P. Coleman, Topo-logical kondo insulators, Physical Review Letters 104 ,106408 (2010). [36] M. Dzero, K. Sun, P. Coleman, and V. Galitski, Theory of topological kondo insulators, Physical Review B 85 ,045130 (2012). [37] A. Menth, E. Buehler, and T. H. Geballe, Magnetic and semiconducting properties of smb6, Physical Review Let-ters 22 , 295 (1969). [38] G. Li, Z. Xiang, F. Yu, T. Asaba, B. Lawson, P. Cai, C. Tinsman, A. Berkley, S. Wolgast, Y. S. Eo, D.-J. Kim, C. Kurdak, J. W. Allen, K. Sun, X. H. Chen, Y. Y. Wang, Z. Fisk, and L. Li, Two-dimensional fermi surfaces in kondo insulator smb 6, Science 346 , 1208 (2014). [39] W. Phelan, S. Koohpayeh, P. Cottingham, J. Freeland, J. Leiner, C. Broholm, and T. McQueen, Correlation between bulk thermodynamic measurements and the low-temperature-resistance plateau insmb6, Physical Review X 4, 031012 (2014). [40] B. S. Tan, Y.-T. Hsu, B. Zeng, M. C. Hatnean, N. Harri-son, Z. Zhu, M. Hartstein, M. Kiourlappou, A. Srivastava, M. D. Johannes, T. P. Murphy, J.-H. Park, L. Balicas, G. G. Lonzarich, G. Balakrishnan, and S. E. Sebastian, Unconventional fermi surface in an insulating state, Sci-ence 349 , 287 (2015). [41] L. Li, K. Sun, C. Kurdak, and J. W. Allen, Emergent mystery in the kondo insulator samarium hexaboride, Nature Reviews Physics 2, 463 (2020). [42] H. Liu, M. Hartstein, G. J. Wallace, A. J. Davies, M. C. Hatnean, M. D. Johannes, N. Shitsevalova, G. Balakr-ishnan, and S. E. Sebastian, Fermi surfaces in kondo insulators, Journal of Physics: Condensed Matter 30 ,16LT01 (2018). [43] Y. Sato, Z. Xiang, Y. Kasahara, T. Taniguchi, S. Kasa-hara, L. Chen, T. Asaba, C. Tinsman, H. Murayama, O. Tanaka, Y. Mizukami, T. Shibauchi, F. Iga, J. Sin-gleton, L. Li, and Y. Matsuda, Unconventional thermal metallic state of charge-neutral fermions in an insulator, Nature Physics 15 , 954 (2019). [44] K.-W. Chen, Y. Zhu, D. Ratkovski, G. Zheng, D. Zhang, A. Chan, K. Jenkins, J. Blawat, T. Asaba, F. Iga, C. M. Varma, Y. Matsuda, J. Singleton, A. F. Bangura, and L. Li, Quantum oscillations in the heat capacity of kondo insulator ybb12, Physical Review Letters 135 ,10.1103/ms3x-pjsk (2025). [45] J. F. Mendez-Valderrama, S. Kim, and D. Chowdhury, Correlated topological mixed-valence insulators in moir´ eheterobilayers, Phys. Rev. B 110 , L201105 (2024). [46] F. Xie, L. Chen, Y. Fang, and Q. Si, Topological kondo semimetals emulated in heterobilayer transition metal dichalcogenides, Phys. Rev. Res. 7, 033093 (2025). [47] A. Georges, G. Kotliar, W. Krauth, and M. J. Rozen-berg, Dynamical mean-field theory of strongly correlated fermion systems and the limit of infinite dimensions, Re-views of Modern Physics 68 , 13 (1996). [48] G. Kotliar, S. Y. Savrasov, K. Haule, V. S. Oudovenko, O. Parcollet, and C. A. Marianetti, Electronic structure calculations with dynamical mean-field theory, Reviews of Modern Physics 78 , 865 (2006). [49] A. Weichselbaum, Non-abelian symmetries in tensor net-works: A quantum symmetry space approach, Annals of Physics 327 , 2972 (2012). [50] A. Weichselbaum, X-symbols for non-abelian symmetries in tensor networks, Physical Review Research 2, 023385 (2020). [51] A. Weichselbaum, Codebase release 4.0 for qspace, Sci-Post Physics Codebases 10.21468/scipostphyscodeb.40-r4.0 (2024). [52] S.-S. B. Lee and A. Weichselbaum, Adaptive broadening to improve spectral resolution in the numerical renormal-ization group, Physical Review B 94 , 235127 (2016). [53] S.-S. B. Lee, J. von Delft, and A. Weichselbaum, Doublon-holon origin of the subpeaks at the hubbard band edges, Physical Review Letters 119 , 236402 (2017). [54] F. B. Kugler, S.-S. B. Lee, and J. von Delft, Multipoint correlation functions: Spectral representation and numer-ical evaluation, Phys. Rev. X 11 , 041006 (2021). [55] K. G. Wilson, The renormalization group: Critical phe-nomena and the kondo problem, Reviews of Modern Physics 47 , 773 (1975). [56] A. Weichselbaum and J. von Delft, Sum-rule conserving spectral functions from the numerical renormalization group, Physical Review Letters 99 , 076402 (2007). [57] R. Bulla, T. A. Costi, and T. Pruschke, Numerical renor-malization group method for quantum impurity systems, Reviews of Modern Physics 80 , 395 (2008). [58] See Supplemental Material at [url] for technical details of our dynamical mean-field theory plus Hartree-Fock approach and the numerical evaluation of the conductivity tensor. The Supplemental Material includes Refs. [ 59 – 64 ]. [59] R. ˇZitko, Convergence acceleration and stabilization of dynamical mean-field theory calculations, Phys. Rev. B 
+
+80 , 125125 (2009). [60] F. B. Kugler, Improved estimator for numerical renormal-ization group calculations of the self-energy, Phys. Rev. B 105 , 245132 (2022). [61] V. Bonbien and A. Manchon, Symmetrized decomposi-tion of the kubo–bastin formula, Physical Review B 102 ,085113 (2020). [62] A. Bastin, C. Lewiner, O. Betbeder-Matibet, and P. Nozieres, Quantum oscillations of the hall effect of a fermion gas with random impurity scattering, Journal of Physics and Chemistry of Solids 32 , 1811 (1971). [63] L. Smrcka and P. Streda, Transport coefficients in strong magnetic fields, Journal of Physics C: Solid State Physics 
+
+10 , 2153 (1977). [64] L. Van Mu˜ noz, J. Kaye, A. Barnett, and S. Beck, High-order and adaptive optical conductivity calculations using wannier interpolation, Phys. Rev. B 111 , 195162 (2025). [65] L. Rademaker, Spin-orbit coupling in transition metal dichalcogenide heterobilayer flat bands, Phys. Rev. B 
+
+105 , 195428 (2022). [66] The interlayer hybridization leads to spin loop currents 
+
+both in the f and the c layer. However, as a result of the bandwidth mismatch, they are much weaker in the 8
+
+latter, compared to the kinetic energy. The reason is that the kinetic energy due to an f -f bond is −4tf χf f cos ϕf ,i.e. it is minimized for ϕf = 0, and likewise for c. Since 
+
+|tf | ≪ | tc|, a phase mismatch between hopping amplitude and bond expectation value is energetically much more costly in the c band than in the f band. As a result, such phase mismatches and therefore spin loop currents are most prominent in the f band. [67] Z. Wang and S.-C. Zhang, Simplified topological invariants for interacting insulators, Phys. Rev. X 2, 031008 (2012). [68] L. L. H. Lau, A. Gleis, D. Kaplan, P. Chandra, and P. Coleman, Oscillate and renormalize: Fast phonons reshape the kondo effect in flat-band systems, Physical Review B 111 , 10.1103/xxyt-4bql (2025). [69] Q. Si, S. Rabello, K. Ingersent, and J. L. Smith, Locally critical quantum phase transitions in strongly correlated metals, Nature 413 , 804 (2001). [70] P. Coleman, C. P´ epin, Q. Si, and R. Ramazashvili, How do fermi liquids get heavy and die?, Journal of Physics: Condensed Matter 13 , R723 (2001). [71] T. Senthil, S. Sachdev, and M. Vojta, Fractionalized fermi liquids, Physical Review Letters 90 , 216403 (2003). [72] T. Senthil, M. Vojta, and S. Sachdev, Weak magnetism and non-fermi liquids near heavy-fermion critical points, Physical Review B 69 , 035111 (2004). [73] A. Gleis, S.-S. B. Lee, G. Kotliar, and J. von Delft, Emer-gent properties of the periodic anderson model: A high-resolution, real-frequency study of heavy-fermion quan-tum criticality, Physical Review X 14 , 041036 (2024). [74] A. Gleis, S.-S. B. Lee, G. Kotliar, and J. von Delft, Dy-namical scaling and planckian dissipation due to heavy-fermion quantum criticality, Physical Review Letters 134 ,106501 (2025). Supplemental Material for “Topological Kondo Insulator from Spin Loop Currents” 
+
+Andreas Gleis, 1 Kevin Lucht, 1 Po-Jui Chen, 1 Daniele Guerci, 2 Andrew J Millis, 3, 4 and J. H. Pixley 1, 4 
+
+> 1Department of Physics and Astronomy, Rutgers University, Piscataway, NJ 08854, USA
+> 2Department of Physics, Massachusetts Institute of Technology, Cambridge, MA 02139,USA
+> 3Department of Physics, Columbia University, New York, NY 10027, USA
+> 4Center for Computational Quantum Physics, Flatiron Institute, 162 5th Avenue, New York, NY 10010
+> (Dated: April 14, 2026)
+
+In this supplemental material, we provide technical details on the dynamical mean-field theory plus Hartree-Fock calculations in Sec. S-I and details on the numerical evaluation of the conductivity tensor in Sec. S-II.  
+
+> S-I. DYNAMICAL MEAN-FIELD THEORY PLUS HARTREE FOCK
+
+In this section, we briefly summarize the dynami-cal mean-field theory (DMFT) plus Hartree-Fock (HF) scheme used in this work. Since DMFT and HF are well-known methods, the discussion below only focuses on technical details specific to this work. The self-consistency loop is organized as follows. For a given self-energy, we compute the local lattice Green’s functions, extract the DMFT hybridization function from those, and first update the DMFT contribution to Σ f
+
+> loc
+
+(ω)by solving the corresponding effective Anderson impurity model with the numerical renormalization group (NRG). Using the resulting lattice Green’s functions, we then recompute the expectation values entering the HF self-energies and update the HF contributions. The chemical potential is updated during self-consistency to fix the filling ν. This procedure is iterated to self-consistency, and Broyden mixing [ 59 ] is used to accelerate convergence. Typically, between 30 and 50 iterations are required to reach a self-consistent solution. The hybridization function of the effective Anderson impurity model is ∆f (ω) = ω + μ − ∆2 − Σf
+
+> loc
+
+(ω) − [Gf
+
+> loc
+
+(ω)] −1 . (S1) Here, 
+
+Gf
+
+> loc
+
+(ω) = 
+
+Z
+
+> BZ
+
+d2k
+
+VBZ 
+
+Gf 
+
+> kσ
+
+(ω) , (S2) is the local f -band Green’s function, obtained from the momentum-resolved lattice Green’s function Gf 
+
+> kσ
+
+(ω) by integration over the Brillouin zone of volume VBZ . Since time-reversal symmetry is preserved in all calculations discussed in this work, both Gf
+
+> loc
+
+(ω) and ∆ f (ω) are in-dependent of σ. The corresponding impurity problem, therefore, exhibits SU(2) spin symmetry. We solve the resulting effective Anderson impurity model using NRG, employing the QSpace-based MuNRG package. Throughout this work, we use a logarithmic discretization parameter Λ = 2 and nz = 4 z-shifts to im-prove spectral resolution. During the iterative diagonaliza-tion, we keep up to 4000 low-energy SU(2) multiplets. Dy-namical correlation functions of the discretized impurity model are evaluated with the standard full-density-matrix NRG procedure. The impurity self-energy is computed using the symmetric improved estimator of Ref. [60]. A minor technical complication is that the DMFT hy-bridization function of a Kondo insulator typically con-tains an isolated pole close to the real-frequency axis in the vicinity of ω = 0. To more reliably capture this pole, we slightly modify our discretization procedure. Instead of directly logarithmically discretizing ∆ f (ω), we rewrite it as ∆f (ω) = t20
+
+ω − ϵ0 − ∆1(ω) , (S3) with 
+
+t20 = − 1
+
+π Im 
+
+Z ∞−∞ 
+
+dω∆f (ω) (S4a) 
+
+ϵ0 = − 1
+
+t20π Im 
+
+Z ∞−∞ 
+
+dω ω ∆f (ω) . (S4b) In this representation, a pole of ∆ f (ω) captured by a near-zero of ω − ϵ0 − ∆1(ω), while ∆ 1(ω) itself is con-siderably smoother. We therefore apply the logarithmic discretization to ∆ 1(ω) rather than directly to ∆ f (ω).  
+
+> S-II. NUMERICAL EVALUATION OF THE CONDUCTIVITY TENSOR
+
+In this section, we describe how we evaluate the dc conductivity tensor on the real-frequency axis. We use the symmetrized decomposition of Ref. [ 61 ], which separates the conductivity into a Fermi-surface and a Fermi-sea contribution [62, 63]. The spin-resolved conductivity is 
+
+σαβ σ = σαβ  
+
+> surf ,σ
+
++ σαβ  
+
+> sea ,σ
+
+, (S5) see Eqs. (S12) and (S13) for explicit formulas. The full conductivity is obtained by summing over σ. Throughout this section, 
+
+Z
+
+> k
+
+≡
+
+Z
+
+> BZ
+
+d2k
+
+(2 π)2 , f (ω) = 1
+
+eω/k BT + 1 . (S6) S2 The retarded Green’s function is given by (cf. Eqs. (2) and (11) of the main text) 
+
+Gr 
+
+> kσ
+
+(ω) = [( ω + μ)1 − hkσ − Σr 
+
+> kσ
+
+(ω)] −1 , (S7) 
+
+hkσ =
+
+ϵf k − ∆2 Vk
+
+V ∗ 
+
+> k
+
+ϵckσ + ∆2
+
+
+
+, (S8) where 1 is the 2 ×2 identity matrix. We use the superscript r in this section to distinguish Gr from the advanced Green’s function, 
+
+Ga 
+
+> kσ
+
+(ω) =  Gr 
+
+> kσ
+
+(ω)†. (S9) The current vertices are given by 
+
+jα 
+
+> kσ
+
+= −evα 
+
+> kσ
+
+(S10) 
+
+vα 
+
+> kσ
+
+= − ∂[Gr 
+
+> kσ
+
+(ω)] −1
+
+∂k α = ∂hkσ
+
+∂k α + ∂Σr 
+
+> kσ
+
+(ω)
+
+∂k α , (S11) where α ∈ { x, y } and e is the elementary charge. Be-cause the momentum-dependent part of the self-energy is frequency independent, the velocities vα 
+
+> kσ
+
+and current vertices jα 
+
+> kσ
+
+are also frequency-independent. Both vα
+
+> kσ
+
+and jα 
+
+> kσ
+
+are renormalized from their non-interacting val-ues only due to the non-local Fock contributions to the self-energy. The Fermi-surface term is [61, Eq. (9)] 
+
+σαβ  
+
+> surf ,σ
+
+= ℏ
+
+4π
+
+Z
+
+> k
+
+Z ∞−∞ 
+
+dω ∂ ω f (ω)
+
+× tr 
+
+h
+
+jα
+
+> kσ
+
+ Gr 
+
+> kσ
+
+(ω) − Ga 
+
+> kσ
+
+(ω)jβ
+
+> kσ
+
+×  Gr 
+
+> kσ
+
+(ω) − Ga 
+
+> kσ
+
+(ω)i
+
+.
+
+(S12) while the Fermi-sea term is [61, Eq. (10)] 
+
+σαβ  
+
+> sea ,σ
+
+= − ℏ
+
+4π
+
+Z
+
+> k
+
+Z ∞−∞ 
+
+dω f (ω)
+
+× tr 
+
+hn 
+
+jα
+
+> kσ
+
+ ∂ω Gr 
+
+> kσ
+
+(ω) + ∂ω Ga 
+
+> kσ
+
+(ω)jβ
+
+> kσ
+
+− jβ
+
+> kσ
+
+ ∂ω Gr 
+
+> kσ
+
+(ω) + ∂ω Ga 
+
+> kσ
+
+(ω)jα
+
+> kσ
+
+o
+
+×  Gr 
+
+> kσ
+
+(ω) − Ga 
+
+> kσ
+
+(ω)i
+
+.
+
+(S13) Here and below, R 
+
+> k
+
+denotes the Brillouin-zone integral introduced in Eq. (S6). The numerical evaluation of Eqs. (S12) and (S13) is challenging because the integrands develop sharp struc-tures when the imaginary part of the self-energy is small. We use a modified form of the iterated adaptive integra-tion method used in Ref. [ 64 ]. In contrast to Ref. [ 64 ], we evaluate the frequency integral first. For that, we use the fact that the self-energy is computed on a predefined logarithmic frequency grid using NRG; self-energy values in between grid points are obtained with linear inter-polation. Due to that, [ Gr,a(ω)] −1 is a linear function on intervals between grid points, which we can use to evaluate the frequency integrals exactly on each of these intervals. The remainder of this section is devoted to this exact evaluation of the frequency integrals. The remain-ing momentum integrals are evaluated with an iterative adaptive integrator, using MATLAB’s integral2 with the option ’Method’,’iterated’ .
+
+A. Piecewise-linear representation of G −1
+
+Let {ωi} be our logarithmic real-frequency grid. On each interval 
+
+Ii = [ ωi, ω i+1 ], ∆ωi = ωi+1 − ωi, (S14) we know the retarded self-energy at the endpoints and interpolate linearly in between, 
+
+Σr 
+
+> kσ
+
+(ω) ≈ Σr 
+
+> kσ,i
+
++ ( ω − ωi) Si,
+
+Si = Σr 
+
+> kσ,i +1
+
+− Σr
+
+> kσ,i
+
+∆ωi
+
+. (S15) Here Σr 
+
+> kσ,i
+
+≡ Σr 
+
+> kσ
+
+(ωi). In the present calculations, only the local DMFT part of the self-energy depends on fre-quency. Hence Si is independent of k and σ. The deriva-tion below does not rely on this simplification. Equation (S15) implies that on Ii the inverse Green’s function is linear in ω,
+
+Gr 
+
+> kσ
+
+(ω)−1 = Ai, kσ + ω Bi, kσ , (S16) with 
+
+Bi, kσ = 1 − Si,
+
+Ai, kσ = μ 1 − hkσ − Σr 
+
+> kσ,i
+
++ ωiSi. (S17) Since the matrix dimension is 2 × 2, the inverse can be written analytically as 
+
+Gr 
+
+> kσ
+
+(ω) = adj  Ai, kσ + ωBi, kσ
+
+
+
+det  Ai, kσ + ωBi, kσ
+
+ ≡ Ni, kσ (ω)
+
+pi, kσ (ω) . (S18) For 2 × 2 matrices the adjugate is linear in its argument, so 
+
+Ni, kσ (ω) = N0,i, kσ + ω N1,i, kσ ,
+
+N0,i, kσ = adj  Ai, kσ
+
+,
+
+N1,i, kσ = adj  Bi, kσ
+
+,
+
+(S19) while the determinant is quadratic, 
+
+pi, kσ (ω) = α2,i, kσ ω2 + α1,i, kσ ω + α0,i, kσ , (S20) with 
+
+α2,i, kσ = det  Bi, kσ
+
+,α1,i, kσ = tr 
+
+h
+
+N1,i, kσ Ai, kσ
+
+i
+
+,α0,i, kσ = det  Ai, kσ
+
+.
+
+(S21) S3 Factoring the determinant gives 
+
+pi, kσ (ω) = α2,i, kσ
+
+ ω − r1,i, kσ
+
+  ω − r2,i, kσ
+
+, (S22) This defines the two complex poles r1,i, kσ and r2,i, kσ
+
+associated with the interval. On the real axis, the advanced Green’s function and self-energy follow from 
+
+Ga 
+
+> kσ
+
+(ω) =  Gr 
+
+> kσ
+
+(ω)† and Σa 
+
+> kσ
+
+(ω) =  Σr 
+
+> kσ
+
+(ω)†. Accord-ingly, the unstarred quantities Ai, kσ , Bi, kσ , Ni, kσ , pi, kσ ,
+
+αm,i, kσ , and rj,i, kσ below refer to the retarded branch, while advanced quantities are written explicitly through Hermitian and complex conjugation. For later use, we define 
+
+Li(z) = log 
+
+ ωi+1 − zωi − z
+
+
+
+(S23) 
+
+R(1)  
+
+> i
+
+(z) = 1
+
+ωi+1 − z − 1
+
+ωi − z , (S24) 
+
+R(2)  
+
+> i
+
+(z) = 1(ωi+1 − z)2 − 1(ωi − z)2 (S25) for complex z.In the remainder of this section, we suppress the mo-mentum and spin indices to avoid clutter. 
+
+B. Fermi-surface contribution 
+
+On a given interval, we write the Fermi-surface inte-grand in terms of the two kernels Φrr  
+
+> αβ
+
+(ω) = tr 
+
+h
+
+jαGr(ω)jβ Gr(ω)
+
+i
+
+, (S26) Φar  
+
+> αβ
+
+(ω) = tr 
+
+h
+
+Ga(ω)jαGr(ω)jβ i
+
+. (S27) The trace in Eq. (S12) then becomes tr 
+
+h
+
+jα Gr − Gajβ  Gr − Gai
+
+= 2 Re Φ rr  
+
+> αβ
+
+− Φar  
+
+> αβ
+
+− Φar 
+
+> βα
+
+.
+
+(S28) Because N(ω) is linear and p(ω) is quadratic, Φrr  
+
+> αβ
+
+(ω) = qαβ (ω)
+
+p(ω)2 , qαβ (ω) = q2,αβ ω2 +q1,αβ ω+q0,αβ ,
+
+(S29) with 
+
+q0,αβ = tr jαN0 jβ N0
+
+,q1,αβ = tr jαN0 jβ N1 + jαN1 jβ N0
+
+,q2,αβ = tr jαN1 jβ N1
+
+. (S30) Its partial-fraction decomposition is Φrr  
+
+> αβ
+
+(ω) = 
+
+> 2
+
+X
+
+> j=1
+
+ Aj,αβ 
+
+(ω − rj )2 + Bj,αβ 
+
+ω − rj
+
+
+
+, (S31) with 
+
+Aj,αβ = qαβ (rj )
+
+α 22 (rj − r3−j )2 , (S32) 
+
+Bj,αβ = q′ 
+
+> αβ
+
+(rj )( rj − r3−j ) − 2qαβ (rj )
+
+α 22 (rj − r3−j )3 . (S33) Similarly, Φar  
+
+> αβ
+
+(ω) = uαβ (ω)
+
+p(ω) p(ω)∗ ,uαβ (ω) = u2,αβ ω2 + u1,αβ ω + u0,αβ ,
+
+(S34) with 
+
+u0,αβ = tr N†
+
+> 0
+
+jαN0jβ ,u1,αβ = tr N†
+
+> 0
+
+jαN1jβ + N†
+
+> 1
+
+jαN0jβ ,u2,αβ = tr N†
+
+> 1
+
+jαN1jβ . (S35) We write the interval integral as 
+
+Z
+
+> Ii
+
+dω w (ω) Φ ar  
+
+> αβ
+
+(ω) = 2 Re 
+
+> 2
+
+X
+
+> j=1
+
+Cj,αβ 
+
+Z
+
+> Ii
+
+dω w(ω)
+
+ω − rj
+
+,
+
+(S36) the residues are 
+
+Cj,αβ = uαβ (rj )
+
+|α2|2(rj − r3−j )( rj − r∗ 
+
+> 1
+
+)( rj − r∗ 
+
+> 2
+
+) . (S37) Finally, on Ii we approximate 
+
+∂ω f (ω) = f ′(ω) ≈ w(surf) 0,i + w(surf) 1,i ω, w(surf) 1,i = f ′(ωi+1 ) − f ′(ωi)∆ωi
+
+,w(surf) 0,i = f ′(ωi) − w(surf) 1,i ωi.
+
+(S38) Here f ′(ω) = −4kBT cosh 2 ω/ (2 kBT ) −1. The corre-sponding interval integrals are 
+
+Irr 0,αβ (i) = 
+
+> 2
+
+X
+
+> j=1
+
+h
+
+−Aj,αβ R(1)  
+
+> i
+
+(rj ) + Bj,αβ Li(rj )
+
+i
+
+, (S39) 
+
+Irr 1,αβ (i) = 
+
+> 2
+
+X
+
+> j=1
+
+h
+
+Aj,αβ 
+
+
+
+Li(rj ) − rj R(1)  
+
+> i
+
+(rj )
+
+
+
++ Bj,αβ 
+
+
+
+∆ωi + rj Li(rj )
+
+i 
+
+, (S40) 
+
+Iar 0,αβ (i) = 2 Re 
+
+> 2
+
+X
+
+> j=1
+
+Cj,αβ Li(rj ), (S41) 
+
+Iar 1,αβ (i) = 2 Re 
+
+> 2
+
+X
+
+> j=1
+
+Cj,αβ 
+
+ ∆ωi + rj Li(rj ). (S42) The contribution of interval Ii to the surface term is 
+
+Ssurf  
+
+> i,αβ
+
+= w(surf) 0,i 
+
+h
+
+2 Re Irr 0,αβ (i) − Iar 0,αβ (i) − Iar 0,βα (i)
+
+i
+
++ w(surf) 1,i 
+
+h
+
+2 Re Irr 1,αβ (i) − Iar 1,αβ (i) − Iar 1,βα (i)
+
+i
+
+.
+
+(S43) Summing Eq. (S43) over all intervals yields the frequency integral in Eq. (S12). S4 
+
+C. Fermi-sea contribution 
+
+For the sea term, we first note that, on each interval, 
+
+∂ω Gr(ω) = − Gr(ω) B G r(ω)= N1p − Np′
+
+p2 ,∂ω Ga(ω) = N†
+
+> 1
+
+p∗ − N†p′∗ 
+
+(p∗)2 ,
+
+(S44) with N = N(ω), p = p(ω), and p′ = ∂ω p(ω). We then define Ψrr  
+
+> αβ
+
+(ω) = tr jα(∂ω Gr)jβ Gr = Rrr  
+
+> αβ
+
+(ω)
+
+p(ω)3 , (S45) Ψra  
+
+> αβ
+
+(ω) = tr jα(∂ω Gr)jβ Ga = Rra  
+
+> αβ
+
+(ω)
+
+p(ω)2 p(ω)∗ , (S46) Ψar  
+
+> αβ
+
+(ω) = tr jα(∂ω Ga)jβ Gr = Rar  
+
+> αβ
+
+(ω)
+
+p(ω) ( p(ω)∗)2 , (S47) Ψaa  
+
+> αβ
+
+(ω) = tr jα(∂ω Ga)jβ Ga = Raa  
+
+> αβ
+
+(ω)(p(ω)∗)3 . (S48) The numerators are cubic polynomials that follow directly from Eq. (S44), 
+
+Rrr  
+
+> αβ
+
+(ω) = tr jα N1p − Np′jβ N, (S49) 
+
+Rra  
+
+> αβ
+
+(ω) = tr jα N1p − Np′jβ N†, (S50) 
+
+Rar  
+
+> αβ
+
+(ω) = tr jα N†
+
+> 1
+
+p∗ − N†p′∗ jβ N, (S51) 
+
+Raa  
+
+> αβ
+
+(ω) = tr jα N†
+
+> 1
+
+p∗ − N†p′∗ jβ N†. (S52) The sea integrand can then be written as 
+
+Ksea  
+
+> αβ
+
+(ω) = Ψrr  
+
+> αβ
+
+− Ψra  
+
+> αβ
+
++ Ψ ar  
+
+> αβ
+
+− Ψaa 
+
+> αβ
+
+
+
+− Ψrr  
+
+> βα
+
+− Ψra  
+
+> βα
+
++ Ψ ar  
+
+> βα
+
+− Ψaa 
+
+> βα
+
+. (S53) The corresponding pole structure is 
+
+• Ψrr has triple poles at r1 and r2;
+
+• Ψaa has triple poles at r∗ 
+
+> 1
+
+and r∗ 
+
+> 2
+
+;
+
+• Ψra has double poles at r1, r 2 and simple poles at 
+
+r∗ 
+
+> 1
+
+, r ∗ 
+
+> 2
+
+;
+
+• Ψar has simple poles at r1, r 2 and double poles at 
+
+r∗ 
+
+> 1
+
+, r ∗ 
+
+> 2
+
+.For Ψ rr we use Ψrr  
+
+> αβ
+
+(ω) = 
+
+> 2
+
+X
+
+> j=1
+
+" A(3) 
+
+> j,αβ
+
+(ω − rj )3 + B(3) 
+
+> j,αβ
+
+(ω − rj )2 + C(3) 
+
+> j,αβ
+
+ω − rj
+
+#
+
+,
+
+(S54) where 
+
+A(3)  
+
+> j,αβ
+
+= Rrr  
+
+> αβ
+
+(rj )
+
+α 32 (rj − r3−j )3 , (S55) 
+
+B(3)  
+
+> j,αβ
+
+=
+
+ Rrr 
+
+> αβ
+
+′(rj )( rj − r3−j ) − 3Rrr  
+
+> αβ
+
+(rj )
+
+α 32 (rj − r3−j )4 , (S56) 
+
+C(3)  
+
+> j,αβ
+
+=
+
+ Rrr 
+
+> αβ
+
+′′ (rj )( rj − r3−j )2
+
+2 α 32 (rj − r3−j )5 .
+
+− 6 Rrr 
+
+> αβ
+
+′(rj )( rj − r3−j ) − 12 Rrr  
+
+> αβ
+
+(rj )2 α 32 (rj − r3−j )5 . (S57) The coefficients for Ψ aa follow from the substitutions 
+
+rj → r∗ 
+
+> j
+
+and α2 → α∗
+
+> 2
+
+, together with Rrr → Raa .For Ψ ra we write Ψra  
+
+> αβ
+
+(ω) = 
+
+> 2
+
+X
+
+> j=1
+
+ aj,αβ 
+
+(ω − rj )2 + bj,αβ 
+
+ω − rj
+
+
+
++
+
+> 2
+
+X
+
+> j=1
+
+c∗
+
+> j,αβ
+
+ω − r∗
+
+> j
+
+,
+
+(S58) with 
+
+aj,αβ = Rra  
+
+> αβ
+
+(rj )
+
+α 22 α∗
+
+> 2
+
+(rj − r3−j )2(rj − r∗ 
+
+> 1
+
+)( rj − r∗ 
+
+> 2
+
+) , (S59) 
+
+bj,αβ =
+
+ Rra 
+
+> αβ
+
+′(rj )
+
+α 22 α∗
+
+> 2
+
+(rj − r3−j )2(rj − r∗ 
+
+> 1
+
+)( rj − r∗ 
+
+> 2
+
+) ,
+
+−
+
+Rra  
+
+> αβ
+
+(rj )
+
+h 2  
+
+> rj−r3−j
+
++ 1 
+
+> rj−r∗
+> 1
+
++ 1 
+
+> rj−r∗
+> 2
+
+i
+
+α 22 α∗
+
+> 2
+
+(rj − r3−j )2(rj − r∗ 
+
+> 1
+
+)( rj − r∗ 
+
+> 2
+
+) , (S60) 
+
+c∗ 
+
+> j,αβ
+
+= Rra  
+
+> αβ
+
+(r∗ 
+
+> j
+
+)
+
+p(r∗ 
+
+> j
+
+)2 p′∗ (r∗ 
+
+> j
+
+) . (S61) For Ψ ar we analogously use Ψar  
+
+> αβ
+
+(ω) = 
+
+> 2
+
+X
+
+> j=1
+
+dj,αβ 
+
+ω − rj
+
++
+
+> 2
+
+X
+
+> j=1
+
+" ˆa∗
+
+> j,αβ
+
+(ω − r∗ 
+
+> j
+
+)2 +ˆb∗
+
+> j,αβ
+
+ω − r∗
+
+> j
+
+#
+
+,
+
+(S62) with 
+
+dj,αβ = Rar  
+
+> αβ
+
+(rj )
+
+p′(rj ) p∗(rj )2 , (S63) ˆa∗ 
+
+> j,αβ
+
+= Rar  
+
+> αβ
+
+(r∗ 
+
+> j
+
+)
+
+α2α∗22 (r∗ 
+
+> j
+
+− r∗ 
+
+> 3−j
+
+)2(r∗ 
+
+> j
+
+− r1)( r∗ 
+
+> j
+
+− r2) , (S64) ˆb∗ 
+
+> j,αβ
+
+=
+
+ Rar 
+
+> αβ
+
+′(r∗ 
+
+> j
+
+)
+
+α2α∗22 (r∗ 
+
+> j
+
+− r∗ 
+
+> 3−j
+
+)2(r∗ 
+
+> j
+
+− r1)( r∗ 
+
+> j
+
+− r2) .
+
+−
+
+Rar  
+
+> αβ
+
+(r∗ 
+
+> j
+
+)
+
+h 2 
+
+> r∗
+> j−r∗
+> 3−j
+
++ 1  
+
+> r∗
+> j−r1
+
++ 1 
+
+> r∗
+> j−r2
+
+i
+
+α2α∗22 (r∗ 
+
+> j
+
+− r∗ 
+
+> 3−j
+
+)2(r∗ 
+
+> j
+
+− r1)( r∗ 
+
+> j
+
+− r2) . (S65) The required integrals are 
+
+Z w0 + w1ω
+
+(ω − r)3 dω = − w0
+
+2( ω − r)2S5 + w1
+
+
+
+− 1
+
+ω − r − r
+
+2( ω − r)2
+
+
+
+, (S66) 
+
+Z w0 + w1ω
+
+(ω − r)2 dω = −w0
+
+1
+
+ω − r
+
++ w1
+
+
+
+log( ω − r) − r 1
+
+ω − r
+
+
+
+, (S67) 
+
+Z w0 + w1ωω − r dω = w0 log( ω − r)+ w1 [( ω − r) + r log( ω − r)] , (S68) which are evaluated between ωi and ωi+1 . On Ii, we further approximate 
+
+f (ω) ≈ w(sea) 0,i + w(sea) 1,i ω , (S69) with 
+
+w(sea) 1,i = f (ωi+1 ) − f (ωi)∆ωi
+
+,w(sea) 0,i = f (ωi) − w(sea) 1,i ωi.
+
+(S70) The contribution of interval Ii to the sea term is 
+
+Ssea  
+
+> i,αβ
+
+= w(sea) 0,i Isea 0,i,αβ + w(sea) 1,i Isea 1,i,αβ , (S71) where 
+
+Isea  
+
+> m,i,αβ
+
+= Irr  
+
+> m,i,αβ
+
+− Ira  
+
+> m,i,αβ
+
++ Iar  
+
+> m,i,αβ
+
+− Iaa 
+
+> m,i,αβ
+
+
+
+− Irr  
+
+> m,i,βα
+
+− Ira  
+
+> m,i,βα
+
++ Iar  
+
+> m,i,βα
+
+− Iaa 
+
+> m,i,βα
+
+ (S72) = 2Re Irr  
+
+> m,i,αβ
+
+− Ira  
+
+> m,i,αβ
+
++ Iar  
+
+> m,i,αβ
+
+− Iaa 
+
+> m,i,αβ
+
+ .
+
+for m = 0 , 1. Summing Eq. (S71) over all intervals yields the frequency integral in Eq. (S13).

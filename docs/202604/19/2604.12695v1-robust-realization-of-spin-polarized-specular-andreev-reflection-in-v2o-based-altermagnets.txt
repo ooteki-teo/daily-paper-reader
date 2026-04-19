@@ -1,0 +1,948 @@
+Title: Robust realization of spin-polarized specular Andreev reflection in V$_2$O-based altermagnets
+
+URL Source: https://arxiv.org/pdf/2604.12695v1
+
+Published Time: Wed, 15 Apr 2026 01:06:40 GMT
+
+Number of Pages: 12
+
+Markdown Content:
+## Robust realization of spin-polarized specular Andreev reflection in V 2O-based altermagnets 
+
+Yutaro Nagae, 1 Andreas P. Schnyder, 2 and Satoshi Ikegaya 3
+
+> 1
+
+Department of Applied Physics, Nagoya University, Nagoya 464-8603, Japan 
+
+> 2
+
+Max-Planck-Institut f¨ ur Festk¨ orperforschung, Heisenbergstraße 1, D-70569 Stuttgart, Germany 
+
+> 3
+
+Department of Applied Physics, Hokkaido University, Sapporo 060-8628, Japan 
+
+(Dated: April 15, 2026) We theoretically investigate charge transport in a junction between a conventional superconductor and a V 2O-based altermagnet exhibiting distinctive spin-split quasi-one-dimensional Fermi surfaces. The altermagnet is described by a microscopically motivated six-orbital model that incorporates sublattice degrees of freedom associated with both V and O sites. Based on calculations performed under various boundary conditions, we demonstrate the robust emergence of specular Andreev reflection with a distinctive spin polarization. Furthermore, we propose an efficient multiterminal setup to detect this specular Andreev reflection through nonlocal conductance measurements. Our results establish V 2O-based altermagnets as a promising platform for realizing spin-resolved Cooper pair splitting, which is essential for generating energy-entangled electron pairs. 
+
+I. INTRODUCTION 
+
+Andreev reflection (AR) is a fundamental scattering process at normal-metal–superconductor interfaces, in which an incident electron is reflected as a hole, while a Cooper pair is injected into the superconductor [1]. Conventional AR is retroreflective, meaning that the re-flected hole retraces the trajectory of the incoming elec-tron. This is in contrast to nonretroreflective AR pro-cesses, namely crossed AR (CAR) [2, 3] and specular AR (SAR) [4]. In CAR, an electron from one lead is converted into a hole in a spatially separated lead, whereas in SAR, the electron is specularly reflected, due to the unconventional band structure of the nor-mal segment. The reverse processes of these nonretrore-flective ARs correspond to Cooper-pair splitting, which is of great interest as a source of nonlocal entangled electron pairs for quantum technologies [5, 6]. While CAR has been experimentally demonstrated in vari-ous semiconductor–superconductor hybrid systems [7– 16], SAR remains largely unexplored. This is likely be-cause SAR has thus far been predicted only in a limited class of systems, such as Dirac or Weyl semimetals with finely tuned chemical potentials [4, 17–20]. To overcome this limitation, we theoretically demon-strated in our previous work [21] that SAR can occur at junctions between a conventional superconductor and an altermagnet, a novel class of magnetic materials [22– 31]. Remarkably, SAR in an altermagnet is accompa-nied by a distinctive spin polarization, giving rise to a novel functionality that combines a Cooper-pair split-ter with a spin beam splitter. However, in that study, the altermagnet was modeled within a minimal single-orbital framework, in which the anisotropic spin-split band structure originates merely from an anisotropic ex-change potential. Thus, the intrinsic collinear magnetic order—characterized by spin-point-group symmetry and representing the true origin of the anisotropic spin-split bands [23, 30]—was not explicitly included. Although transport in altermagnet–superconductor junctions has been widely discussed [32–38], calculations that explic-itly incorporate the magnetic order remain extremely limited. Meanwhile, it has been suggested that trans-port in antiferromagnet–superconductor junctions can be highly sensitive to the magnetic configuration at the in-terface [39–42]. In this context, developing a transport theory for altermagnet–superconductor junctions that explicitly accounts for the intrinsic magnetic order is es-sential to establish a firm theoretical foundation for fu-ture experimental investigations in this emerging field. In this paper, we focus on V2O-based metal-lic altermagnets, including KV 2Se 2O, Rb 1−δ V2Te 2O, Cs 1−δV2Te 2O, and CsV 2Se 2O, as promising candidate materials [43–51]. In these compounds, distinctive spin-split quasi-one-dimensional Fermi surfaces, originating primarily from d-orbital electrons in the V 2O planes, have been reported. Here we employ a microscopically motivated six-orbital model that explicitly describes the V2O plane, incorporating not only the magnetic vana-dium sites hosting d-orbital electrons, but also the oxy-gen sites with p-orbital electrons. By performing exten-sive calculations of scattering coefficients under various boundary conditions, we demonstrate that spin-polarized SAR emerges robustly at the junction between the V 2O-based altermagnet and a conventional superconductor. In addition, we propose a multiterminal setup to experi-mentally detect SAR via nonlocal conductance measure-ments. Importantly, by tuning the bias-voltage configu-ration, our proposed setup enables access to both regimes in which SAR either contributes or does not contribute to nonlocal charge currents, thereby allowing direct com-parison between the SAR signature and a trivial control signal. Consequently, our results demonstrate that V 2O-based altermagnets constitute a promising platform for realizing spin-resolved Cooper-pair splitting, represent-ing an important step toward the creation of energy-entangled electron pairs [5]. 
+
+> arXiv:2604.12695v1 [cond-mat.supr-con] 14 Apr 2026
+
+2
+
+II. MODEL AND FORMULATION A. V2O-based Altermagnet 
+
+First, we introduce the model employed to describe the V 2O-based altermagnet. The structure of the V 2Oplane, which forms a Lieb lattice, is summarized in Figs. 1(a) and 1(b). Nearest-neighbor vanadium (V) sites carry opposite spins aligned along the c axis. In the following, we denote these magnetic vanadium sites as V ↑
+
+and V ↓. The edge-centered oxygen (O) sites break the ro-tational symmetry of the magnetic V sublattice, while the magnetic structure preserves a combined spin–lattice C4z
+
+symmetry, characteristic of d-wave altermagnetism [52]. For example, angle-resolved photoemission spectroscopy measurements on KV 2Se 2O report four distinctive Fermi surfaces (FSs) [43], as shown in Fig. 1(c): a spin-down (spin-up) quasi-one-dimensional FS extending along ky
+
+(kx) direction, primarily formed by dxz orbital ( dyz or-bital) electrons at V ↓ (V ↑) sites; and a spin-down (spin-up) quasi-two-dimensional FS surrounding the Y (X) point at the Brillouin-zone boundary, primarily formed by dxy orbital electrons at V ↓ (V ↑) sites. To reproduce these Fermi surfaces, we employ a two-dimensional six-orbital tight-binding model that includes the dxz orbital at the V ↓ sites, the dyz orbital at the V ↑ sites, the dxy 
+
+orbitals at both V ↑ and V ↓ sites (denoted as dxy V↑ and 
+
+dxy V↓ orbitals, respectively), as well as the px, py , and 
+
+pz orbitals at the O sites. Although the oxygen p or-bitals contribute less to the FSs, we explicitly describe these O sites because they can affect the boundary con-ditions at the interface. Considering a minimal set of hopping integrals up to essential second-nearest neigh-bors, the Hamiltonian in momentum space is given by: 
+
+HAM = HAM ,1 + HAM ,2, (1) with 
+
+HAM ,1 = ∑
+
+> k
+
+∑
+
+> σ
+
+Ψ†
+
+> k,σ, 1
+
+Hk,σ, 1Ψk,σ, 1,
+
+Ψk,σ, 1 = [ck,σ,p z , c k,σ,d yz , c k,σ,d xz 
+
+]T,
+
+Hk,σ, 1 =
+
+
+
+−ε1 − μ hpz -dyz hpz -dxz 
+
+h∗  
+
+> pz-dyz
+
+−sσm1 − μ 0
+
+h∗  
+
+> pz-dxz
+
+0 sσ m1 − μ
+
+,hpz -dyz = 2 it 1e− iky a  
+
+> 2
+
+sin ky a
+
+2 ,hpz -dxz = 2 it 1e− ikx a  
+
+> 2
+
+sin kxa
+
+2 ,
+
+(2) 
+
+(a) (b) 
+
+(c) 
+
+FIG. 1. (a), (b) Schematic illustration of the hopping integrals in the V 2O plane described by HAM ,1 and HAM ,2, respectively. (c) FSs obtained by diagonalizing the full Hamiltonian HAM .The solid (dashed) lines indicate the spin-up (spin-down) FSs. 
+
+and 
+
+HAM ,2 = ∑
+
+> k
+
+∑
+
+> σ
+
+Ψ†
+
+> k,σ, 2
+
+Hk,σ, 2Ψk,σ, 2,
+
+Ψk,σ, 2 = [ck,σ,p x , c k,σ,p y , c k,σ,d xy V↑ , c k,σ,d xy V↓
+
+]T,
+
+Hk,σ, 2 =
+
+
+
+−ε2 − μ 0 0 hpx-dxy 
+
+0 −ε2 − μ hpy -dxy 00 h∗  
+
+> py-dxy
+
+−sσm2 − μ hdxy -dxy 
+
+h∗ 
+
+> px-dxy
+
+0 h∗  
+
+> dxy -dxy
+
+sσ m2 − μ
+
+,hpy -dxy = 2 it 2e− iky a  
+
+> 2
+
+sin ky a
+
+2 ,hpx-dxy = 2 it 2e− ikxa  
+
+> 2
+
+sin kxa
+
+2 ,hdxy -dxy = −4t3e− i(kx −ky )a 
+
+> 2
+
+cos kxa
+
+2 cos ky a
+
+2 , (3) where the Hamiltonian can be divided into two subspaces describing, respectively, the quasi-one-dimensional FSs extending along the kx and ky directions (i.e., 
+
+HAM ,1) and the quasi-two-dimensional FSs located at the Brillouin-zone boundary (i.e., HAM ,2). Here 3
+
+c†
+
+> k,σ,α
+
+(ck,σ,α ) represents the creation (annihilation) oper-ator of an electron with momentum k, spin σ, and orbital 
+
+α. μ is the chemical potential, ε1(2) denotes the onsite potential for the pz orbital ( px and py orbitals) at the O sites, and m1(2) represents the exchange potential at the V σ sites for the dxz and dyz orbitals ( dxy orbital). 
+
+t1 is the nearest-neighbor hopping integral between the 
+
+pz -orbital at the O site and the dxz orbital at the V ↑
+
+site or the dyz -orbital at the V ↓ site, t2 is the nearest-neighbor hopping integral between the px or py orbitals at the O sites and dxy orbital at the V σ sites, t3 is the next-nearest-neighbor hopping integral between dxy or-bitals at the V σ sites, and s↑(↓) = +1( −1). The lattice constant is denoted by a. In the following, we fix the parameters as μ = −0.8t1, ε 1 = 5 t1, m 1 = 1 .1t1, t 2 =0.5t1, ε 2 = −0.5t1, m 2 = 0 .7t1, and t3 = 0 .4t1, which are used to generate Fig. 1(c). Note that the FSs obtained from HAM well reproduce those observed in experiments and first-principles calculations of KV 2Se 2O [43].  
+
+> B. Multiterminal setup
+
+In this paper, we study the transport properties of a multiterminal setup consisting of three normal metal leads, the V 2O-based altermagnet, and a conventional spin-singlet s-wave superconductor, shown in Fig. 2(a). To realize SAR at the altermagnet–superconductor in-terface, following our previous study, the altermagnet is tilted by 45 ◦ with respect to the a axis of the V 2O plane, as shown in Fig. 2(b). As discussed later, the normal-metal leads are attached to detect SAR in this setup. As illustrated in Fig. 2(a), the first normal-metal lead is po-sitioned at a distance Wb1 from the bottom edge of the altermagnet. The second and third leads are attached at intervals of Wb2 and Wb3 , respectively. The width of the normal metal leads, the altermagnet, and the supercon-ductor are denoted by WN, WAM , and WS, respectively. The length of the altermagnet segment is LAM . As shown in Figs. 2(c) and 2(d), we assume that the normal metals and the superconductor are described by square lattice tight-binding models with lattice constants aN = a′ and 
+
+aS = a′/2 with a′ = √2a, respectively. Note that, as demonstrated later, the qualitative results are insensitive to the details of the junction interfaces. We describe the present setup by the two-dimensional tight-binding Hamiltonian H = HAM,tilted +HN +HS +HAM-N +HS-AM ,whose explicit form is given in Appendix A. In the cal-culations below, the nearest-neighbor hopping integrals (chemical potentials) in the normal and superconducting segments are fixed to tN = tS = t1 (μN = μS = −t1), and the spin-singlet s-wave pair potential in the super-conducting segment is fixed to ∆ = 0 .001 t1. The terms 
+
+HN-AM and HAM-S describe the interfaces between the normal metals and the altermanget, and between the altermagnet and the superconductor, respectively. We assume the hopping terms in HN-AM (HAM-S ) connect the outermost sites of the normal metal (superconduc-
+
+(a) 
+
+> a axis
+
+(b) (c) (d)     
+
+> FIG. 2. (a) Schematic illustration of the multiterminal setup consisting of three normal-metal leads, the V 2O-based alter-magnet, and an s-wave superconductor. (b) Schematic il-lustration of the altermagnet tilted by 45 ◦.(c), (d) Lattice structures at the interfaces between the normal metal and the altermagnet, and between the altermagnet and the supercon-ductor, respectively.
+
+tor) to the outermost O sites and magnetic V sites of the altermagnet, as indicated by the dashed lines in Figs. 2(c) and 2(d), respectively. In practical experimen-tal conditions, some degree of surface roughness, crystal misorientation, and lattice mismatch is inevitable. To effectively capture such effects, we assume the hopping integrals between the normal metal (superconductor) and 4
+
+FIG. 3. (a)–(d) FSs of the altermagnet tilted by 45 ◦. Panels (a) [(b)] show the quasi-one-dimensional [quasi-two-dimensional] FSs of spin-up electrons and spin-down holes, while (c) [(d)] show those of spin-down electrons and spin-up holes. The solid and dashed lines represent the FSs of electrons and holes, respectively, and the arrows indicate the directions of the corresponding group velocities. (e)–(h) Schematic illustrations of the possible scattering processes in the present device. In (e) and (f) [(g) and (h)], spin-up [spin-down] electrons are incident from the second normal lead. 
+
+the altermagnet, tJN(S) ,α ;r,r′ , are randomly distributed as 
+
+tJN(S) ,α ;r,r′ = ¯ tJN(S) ,α + δt JN(S) ,α ;r,r′ , (4) for the allowed hoppings. Here, ¯tJN(S) ,α denotes the mean value of the hopping amplitude to the α orbital, while δt JN(S) ,α ;r,r′ is uniformly distributed in the interval [−δt JN(S) ,α /2, δt JN(S) ,α /2]. For more details regarding the Hamiltonian, see Appendix A. 
+
+C. Formulation 
+
+In this paper, we discuss the differential conductance in the present setup. The bias voltage V is applied to the second normal lead, while the other normal leads and the superconductor are grounded. The differential conduc-tance in the α-th lead is defined as Gα = dI α/dV , where 
+
+Iα denotes the charge current flowing in the α-th nor-mal metal lead. Within the Blonder-Tinkham-Klapwijk (BTK) formalism, the differential conductance at zero temperature is calculated as [54, 55], 
+
+Gα(eV ) = Gα, ↑(eV ) + Gα, ↓(eV ),Gα,σ (eV ) = e2
+
+h Tr 
+
+[
+
+δα, 2 ˆ1 − ˆReα2,σ + ˆRhα2,σ 
+
+] 
+
+> E=eV
+
+,
+
+ˆRναβ,σ = ∑
+
+> σ′
+
+ˆsνe αβ,σ 
+
+(ˆsνe αβ,σσ ′
+
+)†, (ν = e, h ),
+
+(5) where ˆ 1 is the Nc × Nc identity matrix with Nc denot-ing the number of propagating channels per spin in the normal metal lead, and ˆ see αβ,σσ ′ (ˆ she αβ,σσ ′ ) is an Nc × Nc
+
+matrix containing the scattering coefficients from an elec-tron with spin σ′ in the β-th normal metal lead to an electron (hole) with spin σ in the α-th normal metal lead at energy E. The scattering coefficients are calculated using the recursive Green’s function technique [56, 57]. Note that the BTK formalism is quantitatively justified for bias voltages well below the superconducting gap, where the effect of voltage drop inside the altermagnet segment is negligible. We emphasize that the nonlo-cal conductance G1 and G3 become positive only when interlead Andreev scattering, originating from SAR at the altermagnet–superconductor interface, dominates the transport between the leads. 5
+
+III. RESULTS A. Positive nonlocal conductance 
+
+In this section, we investigate the transport properties when the normal leads are symmetrically positioned, as illustrated in the lower panels of Fig. 3, where Wb2 = Wb3
+
+and 2( Wb1 + Wb2 ) = WAM . In the upper panels of Fig. 3, we show the FSs of the altermagnet tilted by 45 ◦. The solid and dashed lines represent the FSs of electrons and holes, respectively. The arrows indicate the directions of the corresponding group velocity. Figures 3(a) and 3(b) show the FSs for spin-up electrons and for spin-down holes. For both quasi-one-dimensional FSs in Fig. 3(a) and the quasi-two-dimensional FSs in Fig. 3(b), right-moving spin-up electrons tend to have group velocities along the ( x + y) direction, whereas left-moving spin-up electrons tend to have group velocities along the −(x+y)direction. Meanwhile, left-moving spin-down holes tend to have group velocities along the −(x − y) direction. Given this configuration, as illustrated in Fig. 3(e), the normal reflection at the altermagnet–superconductor in-terface becomes retroreflective. In contrast, remarkably, SAR occurs at the altermagnet–superconductor inter-face, giving rise to inter-lead Andreev scattering from the second lead to the third lead. Similarly, for a spin-down incident electron, SAR leads to inter-lead Andreev scat-tering from the second lead to the first lead, while the normal reflection remains retroreflective, as illustrated in Figs. 3(g) and 3(h), respectively. Consequently, the charge current from the second to the third (first) lead is governed by spin-polarized SAR, resulting in a positive nonlocal conductance, G3 ∼ G3,↓ > 0 ( G1 ∼ G1,↑ > 0). Importantly, this behavior follows solely from the char-acteristic structure of the spin-split Fermi surfaces of the altermagnet and does not depend on the microscopic de-tails of the junction interface. Thus, the realization of positive nonlocal conductance is expected to be insensi-tive to the specific boundary conditions of the junction. Figure 4 shows the numerical results for the nonlo-cal differential conductance as a function of the bias voltage. In Fig. 4(a) [4(b)], we present G1 [G3], while the spin-resolved conductances G1,σ [G3,σ ] are shown in Fig. 4(c) [4(d)]. The parameters are chosen as WAM =140 a′, L AM = 25 a′, W N = 20 a′, W S = 139 a′, W b1 =(41 /√2) a′, W b2 = Wb3 = 50 a′. The hopping integrals at the junction interfaces are assumed to be independent of the orbital degrees of freedom, with ¯ tJN(S) ,α = 0 .7t1
+
+and δt JN(S) ,α = 0 .5t1. In Figs. 4(a) and 4(b), the solid curves represent the averages, and the shaded regions show the associated standard deviations, obtained from 10 3 independent realizations of the interface hopping in-tegral, δt JN(S) ,α ;r,r′ . In accordance with our expectation, we clearly observe significant positive nonlocal conduc-tances, i.e., G1 ∼ G1,↑ and G3 ∼ G3,↓. Figure 5 shows the nonlocal conductance G1 for various boundary con-
+
+FIG. 4. (a), (b) Nonlocal differential conductances G1 and 
+
+G3 as functions of the bias voltage eV . The spin-resolved nonlocal conductances G1,σ and G3,σ are shown in (c) and (d), respectively. The solid lines and shaded regions in (a) and (b) represent the averages and the standard deviations, respectively, obtained from 1000 realizations of the surface roughness. 
+
+ditions. In Fig. 5(a), we assume that the normal-metal and superconducting leads couple only to the dxz or-bital at the V ↓ sites, the dyz orbital at the V ↑ sites, and the pz orbital at the O sites. In this case transport in the altermagnet segment is governed by the quasi-one-dimensional FSs. Specifically, we set ¯ tJN(S) ,α = 0 .7t1 and 
+
+δt JN(S) ,α = 0 .5t1 for α = pz , d xz , d yz , while ¯ tJN(S) ,α =
+
+δt JN(S) ,α = 0 for all other orbitals. We confirm that the positive nonlocal conductance remains robust even in this case. Note that the orbitals forming the quasi-one-dimensional FSs extend substantially along the out-of-plane direction. Accordingly, although our analysis is restricted to two-dimensional planar junctions for nu-merical tractability, the positive nonlocal conductance may also be realized when the normal-metal and super-conducting leads are attached to the top surface of the V2O-based altermagnet. In Fig. 5(b), the normal-metal and superconducting leads couple only to the magnetic V sites, with ¯ tJN(S) ,α = 0 .7t1 and δt JN(S) ,α = 0 .5t1 for 
+
+α = dxz , d yz , d xy V↑, d xy V↓, while ¯ tJN(S) ,α = δt JN(S) ,α = 0 for the other orbitals. In this case, the magnitude of the nonlocal conductance is suppressed, whereas its sign re-6
+
+FIG. 5. Nonlocal differential conductance G1 under various boundary conditions. In (a), ¯ tJN(S) ,α = 0 .7t1 and δt JN(S) ,α = 0 .5t1
+
+for α = pz , d xz , d yz , while ¯ tJN(S) ,α = δt JN(S) ,α = 0 for all other orbitals. In (b), ¯ tJN(S) ,α = 0 .7t1 and δt JN(S) ,α = 0 .5t1 for 
+
+α = dxz , d yz , d xy V↑, d xy V↓, while ¯ tJN(S) ,α = δt JN(S) ,α = 0 for all other orbitals. In (c), ¯ tJN(S) ,α = 0 .7t1 and δt JN(S) ,α = 0 .5t1 for 
+
+α = px, p y , p z , while ¯ tJN(S) ,α = δt JN(S) ,α = 0 for all other orbitals. In (d), ¯ tJN ,α = 0 .7t1 and δt JN ,α = 0 .5t1, while ¯ tJS,α = 0 .3t1
+
+and δt JS,α = 0 .5t1 for all orbitals, respectively. The solid lines and shaded regions represent the averages and the standard deviations, respectively. 
+
+mains positive. This suppression likely originates from the reduced participation of the O sites, which weak-ens the coupling between the V ↓ and V ↑ sites near the interface, thereby allowing magnetism to suppress An-dreev reflection more efficiently. Nevertheless, even in this extreme case, our proposal remains valid, since the presence of SAR can be identify solely from the pos-itive sign of the nonlocal conductance. In Fig. 5(c), the normal-metal and superconducting leads couple only to the O sites, with ¯ tJN(S) ,α = 0 .7t1 and δt JN(S) ,α =0.5t1 for α = px, p y , p z , while ¯ tJN(S) ,α = δt JN(S) ,α = 0 for the other orbitals. Figure 5(d) shows the results when the hopping integrals exhibit a significant imbal-ance between the normal-metal–altermagnet interfaces and the altermagnet–superconductor interface, where we set ¯ tJN,α = 0 .7t1 and δt JN ,α = 0 .5t1 while ¯ tJS,α = 0 .3t1
+
+and δt JS,α = 0 .5t1 for all orbitals, respectively. In both cases, we obtain a positive nonlocal conductance, provid-ing a clear signature of SAR in the present setup. 
+
+B. Dependence on lead positions 
+
+In this section, we investigate how the placement of the normal leads affects the nonlocal conductance. As suggested by Figs. 3(e)–(h), spin-up (spin-down) holes generated via SAR can be efficiently extracted into the normal leads when Wb2 /L AM ∼ 2 ( Wb3 /L AM ∼ 2). For example, when the third lead is either too close to or too far from the second lead, the reflected holes fail to en-ter the third lead, as illustrated in Figs. 6(a) and 6(b), respectively. Figure 6(c) shows the numerically com-puted nonlocal conductance at zero bias voltage as a function of the distance between the second and third leads (i.e., Wb3 ), where the position of first lead is fixed to satisfy Wb2 /L AM ∼ 2 for comparison. Specifically, we choose the parameters WN = 5 a′, W AM = 600 a′, W S =599 a′, L AM = 50 a′, W b1 = 200 a′, and Wb2 = 100 a′. At the interface, we assume orbital-independent hopping in-tegrals, ¯ tJN(S) ,α = 0 .7t1 and δt JN(S) ,α = 0 .5t1. The non-local conductance G1 is positive and almost independent of Wb3 . In contrast, G3 exhibits a significant depen-dence on Wb3 and takes substantial positive values only around Wb3 /L AM ∼ 2. When the distance between the third and second leads becomes small, electrons undergo-ing retroreflective normal reflection at the altermagnet– superconductor interface can leak into the third lead. This leakage likely accounts for the negative sign of G3
+
+and the slight reduction in G1 for smaller Wb3 . The con-ductance Gα also exhibits rapid, irregular oscillations, which may arise from quantum interference effects sensi-tive to the system configuration [58]. In practical exper-iments, more than three normal leads can be attached. Positive nonlocal conductance appears only when the dis-tance between the biased lead (through which electrons are injected) and the probed lead (where the nonlocal current is measured), δW , satisfies δW/L AM ∼ 2. By modifying the bias-voltage configuration, one can inter-change the roles of the biased and probed leads with-out altering the device geometry. Consequently, both the presence and absence of SAR channels can be tested within a single multiterminal device, corresponding to the primary and control experiments, respectively. 
+
+IV. DISCUSSION AND CONCLUSION 
+
+A recent neutron diffraction experiment reports the ab-sence of altermagnetism in bulk KV 2Se 2O [59], suggest-ing that surface altermagnetism may instead be realized in this compound [60]. As demonstrated in Fig. 5(a), we observe substantial positive nonlocal conductance when 7
+
+# (a) (b) 
+
+# (c)     
+
+> FIG. 6. (a), (b) Schematic illustrations of scattering processes when the distance between the second and third leads deviates from Wb3/L AM ∼2. (c) Zero-bias differential conductance as a function of the distance between the second and third leads.
+
+the normal and superconductor leads are coupled only to the dxz , dyz , and pz orbitals that extend along the out-of-plane direction. Thus, we expect that SAR can be realized even with surface altermagnetism by attaching the normal and superconducting leads to the top sur-face of KV 2Se 2O. However, a detailed validation of this idea, which requires explicit three-dimensional calcula-tions, will be addressed in future work. In this paper, we neglect spin-flip scattering induced by weak spin–orbit coupling. Previous studies based on a minimal single-orbital model suggest that SAR is not immediately sup-pressed by weak spin–orbit coupling[21]. A quantitative analysis of spin–orbit coupling effects is left for future work. In summary, we study the transport properties of a junction between a V 2O-based altermagnet and a con-ventional superconductor, where the altermagnet is de-scribed by a microscopically motivated six-orbital model that explicitly incorporates both magnetic V sites and O sites. By calculating the nonlocal differential con-ductance under various boundary conditions, we demon-strate the robust emergence of spin-polarized SAR at the junction interface. The proposed setup allows us to probe both the presence and absence of SAR channels within a single device, providing an efficient platform for pri-mary and control experiments. We anticipate that this work will motivate future experimental efforts toward re-alizing spin-resolved Cooper-pair splitting in V 2O-based altermagnets. 
+
+> ACKNOWLEDGMENTS
+
+We thank Y. Maeno for the insightful discussions. Y.N. is supported by JST SPRING (Grant No. JPMJSP2125) and thanks the THERS Make New Standards Program for the Next Generation Researchers. S.I. is supported by a Grant-in-Aid for Early-Career Scientists (JSPS KAK-ENHI Grant No. JP24K17010). A.P.S. is funded by the Deutsche Forschungsgemeinschaft (DFG, German Re-search Foundation) – TRR 360 – 492547816. 
+
+> DATA AVAILABILITY
+
+The data that support the findings of this paper are openly available[61]. 
+
+> Appendix A: BdG Hamiltonian for the multiterminal setup
+
+In this appendix, we present the explicit form of the Hamiltonian used to compute the differential conduc-tance. The Hamiltonian in the altermagnet region shown in Fig. 2(a) is given by 8
+
+HAM = ∑
+
+σ=↑,↓
+
+HAM ,σ ,HAM ,σ =
+
+NL−1∑
+
+j=0 
+
+[( 
+
+Ψ†
+
+j+ 1 
+
+> 2
+
+,σ,B ˇTBA Ψj,σ,A + H .c.
+
+)
+
++
+
+(
+
+Ψ†
+
+j+1 ,σ,A ˇTAB Ψj+ 1 
+
+> 2
+
+,σ,B + H .c.
+
+)
+
++ Ψ†
+
+j+ 1 
+
+> 2
+
+,σ,B ˇEB,σ Ψj+ 1 
+
+> 2
+
+,σ,B 
+
+]
+
++
+
+NL∑
+
+j=0 
+
+Ψ†
+
+j,σ,A ˇEA,σ Ψj,σ,A ,
+
+Ψ†
+
+j,σ,A (B) =
+
+[
+
+Ψ†
+
+σ,A (B),p z ,j , Ψ†
+
+σ,A (B),V,j + 1
+
+> 4
+
+, Ψ†
+
+σ,A (B),p x,j , Ψ†
+
+σ,A (B),p y ,j , Ψ†
+
+j+ 1 
+
+> 4
+
+,σ,A (B),d xy 
+
+]
+
+,
+
+Ψ†
+
+j,σ,A (B),p η =
+
+[
+
+c†
+
+j, 0( 1 
+
+> 2
+
+)σ,p η
+
+, . . . , c †
+
+j,N W −1 ( NW − 3 
+
+> 2
+
+)σ,p η
+
+]
+
+,
+
+Ψ†
+
+j,σ,A (B),V =
+
+[
+
+c†
+
+j, 1 
+
+> 4
+
+σ,d yz (xz )
+
+, c †
+
+j, 3 
+
+> 4
+
+,σ,d xz (yz )
+
+, . . . , c †
+
+j,N W − 7 
+
+> 4
+
+,σ,d yz (xz )
+
+, c †
+
+j,N W − 5 
+
+> 4
+
+,σ,d xz (yz )
+
+]
+
+,
+
+Ψ†
+
+j,σ,A (B),d xy =
+
+[
+
+c†
+
+j, 1 
+
+> 4
+
+,σ,d xy V↑(↓)
+
+, c †
+
+j, 3 
+
+> 4
+
+,σ,d xy V↓(↑)
+
+, . . . , c †
+
+j,N W − 7 
+
+> 4
+
+,σ,d xy V↑(↓)
+
+, c †
+
+j,N W − 5 
+
+> 4
+
+,σ,d xy V↓(↑)
+
+]
+
+,
+
+ˇEσ,A =
+
+
+
+ˆEpz ,A ˆT †
+
+V -pz ,A 0 0 0ˆTV -pz ,A ˆEσ,V,A 0 0 00 0 ˆEpx,A 0 ˆT †
+
+dxy -px,A 
+
+0 0 0 ˆEpy ,A ˆT †
+
+dxy -py ,A 
+
+0 0 ˆTdxy -px,A ˆTdxy -py ,A ˆEσ,d xy ,A 
+
+
+
+,
+
+ˇEσ,B =
+
+
+
+ˆEpz ,B ˆT †
+
+V -pz ,B 0 0 0ˆTV -pz ,B ˆEσ,V,B 0 0 00 0 ˆEpx,B 0 ˆT †
+
+dxy -px ,B 
+
+0 0 0 ˆEpy ,B ˆT †
+
+dxy -py ,B 
+
+0 0 ˆTdxy -px,B ˆTdxy -py ,B ˆEσ,d xy ,B 
+
+
+
+,
+
+ˇTBA =
+
+
+
+0 ˆTpz -V,BA 0 0 00 0 0 0 00 0 0 0 ˆTpx-dxy ,BA 
+
+0 0 0 0 ˆTpy -dxy ,BA 
+
+0 0 0 0 ˆTdxy -dxy ,BA 
+
+, ˇTAB =
+
+
+
+0 ˆTpz -V,AB 0 0 00 0 0 0 00 0 0 0 ˆTpx-dxy ,AB 
+
+0 0 0 0 ˆTpy -dxy ,AB 
+
+0 0 0 0 ˆTdxy -dxy ,AB 
+
+,
+
+( ˆEpz ,A (B))k,l = ( −ε1 − μ)δk,l , ( ˆEpx(y) ,A (B))k,l = ( −ε2 − μ)δk,l ,
+
+( ˆEσ,V,A (B))k,l = ( −sksαsσm1 − μ)δk,l , ( ˆEσ,d xy ,A (B))k,l = ( −sksαsσ m2 − μ)δk,l − t3δ|k−l|,1,
+
+( ˆTV -pz ,A )k,l = t1(δk−2l, −1 + δk−2l, −2) = ( − ˆTpz -V,AB )l,k , ( ˆTdxy -px ,A )k,l = t2δk−2l, −1 = ( − ˆTpx-dxy ,AB )l,k ,
+
+( ˆTpy -dxy ,A )k,l = t2δk−2l, −2 = ( − ˆTpy -dxy ,AB )l,k , ( ˆTV -pz ,B )k,l = t1(δk−2l, −1 + δk−2l, 0) = ( − ˆTpz -V,BA )l,k ,
+
+( ˆTdxy -px ,B )k,l = t2δk−2l, −1 = ( − ˆTpx-dxy ,BA )l,k , ( ˆTdxy -py ,B )k,l = t2δk−2l, 0 = ( − ˆTpy -dxy ,BA )l,k ,
+
+( ˆTdxy -dxy ,BA (AB ))k,l = −t3δk,l ,
+
+(A1) 
+
+where, c†
+
+j,m,σ,α (cj,m,σ,α ) denotes the creation (annihi-lation) operator for an electron with spin σ and or-bital α (= px, p y, p z , d xz , d yz , d xy V ↑, d xy V ↓) at position 
+
+r = ja′
+
+x + ma′
+
+y . We define the primitive lattice vectors as a′
+
+x = ax + ay and a′
+
+y = −ax + ay. The system size is specified by integers NL and NW , such that LAM = a′NL
+
+and WAM = a′NW . We introduce sk = +1 , (−1) for odd (even) k, sα = +1 , (−1) for α = A, (B), and 
+
+sσ = +1 , (−1) for σ =↑, (↓). ˆEpη ,A (B) is an NW × NW
+
+([ NW −1] ×[NW −1]) matrix for η = x, y, z . ˆEV (dxy ),A (B),σ 
+
+is a 2( NW − 1) × 2( NW − 1) matrix. ˆTV -pz (dxy -pη ),A is a 2( NW − 1) × NW matrix for η = x, y . ˆTV -pz (dxy -pη ),B is a 2( NW −1) ×(NW −1) matrix for η = x, z . ˆTpz -V (pη -dxy ),BA 
+
+is an ( NW − 1) × 2( NW − 1) matrix for η = x, y .ˆTdxy -dxy ,BA (AB ) is a 2( NW − 1) × 2( NW − 1) matrix. 9ˆTpz -V (pη -dxy ),AB is an NW × 2( NW − 1) matrix. The Hamiltonian for the normal metals is given by, 
+
+HN = ∑
+
+> σ
+
+∑
+
+> j
+
+[( 
+
+Ψ† 
+
+> j+1 ,σ, N
+
+ˇTNΨj,σ, N + H .c.
+
+)
+
++ Ψ† 
+
+> j,σ, N
+
+ˇENΨj,σ, N
+
+]
+
+,
+
+Ψ† 
+
+> j,σ, N
+
+=
+
+[
+
+Ψ† 
+
+> j,σ, N1
+
+, Ψ† 
+
+> j,σ, N2,
+
+, Ψ†
+
+> j,σ, N3
+
+]
+
+,
+
+Ψ† 
+
+> j,σ, Nn
+
+=
+
+[
+
+b†
+
+> j, 1,σ,n
+
+, . . . , b †
+
+> j,N N,σ,n
+
+]
+
+,
+
+ˇEN =
+
+
+
+ˆEN
+
+ˆEN
+
+ˆEN
+
+, ˇTN =
+
+
+
+ˆTN
+
+ˆTN
+
+ˆTN
+
+,
+
+( ˆEN)k,l = −μNδk,l − tNδ|k−l|,1, ( ˆTN)k,l = −tNδk,l ,
+
+(A2) 
+
+where b†
+
+> j,m,σ,n
+
+(bj,m,σ,n ) represents the creation (annihi-lation) operator of an electron with spin σ at r =
+
+ja′ 
+
+> x
+
++ ma′ 
+
+> y
+
+in the n-th lead, μN is the chemical poten-tial and tN denotes the hopping integral. ˆEN and ˆTN are 
+
+NN × NN matrices, where we define NN ≡ WN/a N. The Hamiltonian for the superconductor is given by, 
+
+HS = 1
+
+2
+
+∑
+
+> σ
+
+∑
+
+> j
+
+[( [
+
+Ψ†
+
+> j+1 ,σ, S
+
+, ΨT
+
+> j+1 ,¯σ, S
+
+][ ˆTS
+
+− ˆT ∗
+
+> S
+
+][ Ψj,σ, S
+
+Ψ∗
+
+> j, ¯σ, S
+
+]
+
++ H .c.
+
+)
+
++
+
+[
+
+Ψ†
+
+> j,σ, S
+
+, ΨT
+
+> j, ¯σ, S
+
+][ ˆES sσ ˆ∆
+
+sσ ˆ∆ − ˆE∗
+
+> S
+
+][ Ψj,σ, S
+
+Ψ∗
+
+> j, ¯σ, S
+
+]] 
+
+,
+
+Ψ† 
+
+> j,σ, S
+
+=
+
+[
+
+b†
+
+> j, 1,σ, S
+
+, . . . , b †
+
+> j,N S,σ, S
+
+]
+
+,
+
+( ˆES)k,l = −μSδk,l − tSδ|k−l|,1, ˆ∆k,l = ∆ δk,l , ( ˆTS)k,l = −tSδk,l ,
+
+(A3) 
+
+where b†
+
+> j,m,σ, S
+
+(bj,m,σ, S) represents the creation (annihi-lation) operator of an electron with spin σ at r =(j/ 2) a′
+
+> x
+
++( m/ 2) a′ 
+
+> y
+
+in the superconductor, μS is the chem-ical potential, tS denotes the hopping integral and ∆ is the pair potential. sσ = +1( −1) for σ =↑ (↓). ˆES, ˆTS and ˆ∆ are NS × NS matrices, where we define NS ≡ WS/a S.The Hamiltonian at the interfaces between the normal metals and the altermagnet is given by, 10 
+
+HN-AM = ∑
+
+> σ=↑,↓
+
+(
+
+Ψ† 
+
+> 0,σ,A
+
+ˇTAM-N Ψ−1,σ, N + H .c.
+
+)
+
+,
+
+ˇTAM-N =
+
+
+
+ˆTAM-N 1,p z ˆTAM-N 2 ,p z ˆTAM-N 3 ,p z
+
+ˆTAM-N 1,V ˆTAM-N 2,V ˆTAM-N 3,V 
+
+ˆTAM-N 1,p x ˆTAM-N 2,p x ˆTAM-N 3,p x
+
+ˆTAM-N 1 ,p y ˆTAM-N 2 ,p y ˆTAM-N 3 ,p y
+
+ˆTAM-N 1,d xy ˆTAM-N 2,d xy ˆTAM-N 3,d xy 
+
+,
+
+( ˆTAM-N 1,p η )k,l = −tJN,p η ;r,r′ δk−l,N b1 ,
+
+( ˆTAM-N 2,p η )k,l = −tJN,p η ;r,r′ δk−l,N b1 +Nb2 +NN ,
+
+( ˆTAM-N 3,p η )k,l = −tJN,p η ;r,r′ δk−l,N b1 +Nb2 +Nb3 +2 NN ,
+
+( ˆTAM-N 1,V (dxy ))k,l = −tJN,V (dxy ); r,r′
+
+(
+
+δk−2l, 2( Nb1 −1) + δk−2l, 2Nb1 −1
+
+)
+
+,
+
+( ˆTAM-N 2,V (dxy ))k,l = −tJN,V (dxy ); r,r′
+
+(
+
+δk−2l, 2( Nb1 +Nb2 +NN −1) + δk−2l, 2( Nb1 +Nb2 +NN)−1
+
+)
+
+,
+
+( ˆTAM-N 3,V (dxy ))k,l = −tJN,V (dxy ); r,r′
+
+(
+
+δk−2l, 2( Nb1 +Nb2 +Nb3 +2 NN−1) + δk−2l, 2( Nb1 +Nb2 +Nb3 +2 NN)−1
+
+)
+
+,
+
+(A4) 
+
+where we define Nb1 , Nb2 and Nb3 as Wb1 − WN/2 = 
+
+Nb1 a′, Wb2 − WN = Nb2 a′, and Wb3 − WN = Nb3 a′.ˆTAM-N n ,p η is an NW × NN matrix for η = x, y, z .ˆTAM-N n ,V (dxy ) is a 2( NW − 1) × NN matrix. The Hamil-tonian at the interface between the altermagnet and the superconductor is given by, 
+
+HS-AM = ∑
+
+> σ=↑,↓
+
+(
+
+Ψ†  
+
+> NL+1 ,σ, S
+
+ˇTAM-N ΨNL ,σ,A + H .c.
+
+)
+
+,
+
+ˇTS-AM = [ ˆTS-AM ,p z ˆTS-AM ,V ˆTS-AM ,p x ˆTS-AM ,p y ˆTS-AM ,d xy 
+
+],
+
+( ˆTS-AM ,p η )k,l = −tJS,p η ;r,r′ (δk−2l+1 ,0 + δk−2l+2 ,0),
+
+( ˆTS-AM ,V (dxy ))k,l = −tJS,V (dxy ); r,r′ δk−l, 0,
+
+(A5) 
+
+where ˆTS-AM ,p η is a 2( NS −1) ×NW matrix for η = x, y, z . ˆTS-AM ,V (dxy ) is a 2( NS − 1) × 2( NW − 1) matrix. 
+
+[1] A. F. Andreev, Thermal conductivity of the intermedi-ate state of superconductors, Sov. Phys. JETP 46, 1823 (1964). [2] G. Deutscher and D. Feinberg, Coupling superconducting-ferromagnetic poing contact by Andreev reflections, Appl. Phys. Lett. 76 , 487 (2000). [3] P. Recher, E. V. Sukhorukov, and D. Loss, Andreev tun-neling, Coulomb blockade, and resonant transport of non-local spin-entangled electrons, Phys. Rev. B 63 , 165314 (2001). [4] C. W. J. Beenakker, Specular Andreev reflection in graphen, Phys. Rev. Lett. 97 , 067007 (2006). [5] G. B. Lesovik, T. Martin, and G. Blatter, Electronic entanglement in the vicinity of a superconductor, Eur. Phys. J. B 24 , 287 (2001). [6] N. M. Chtchelkatchev, G. Blatter, G. B. Lesovik, and T. Martin, Bell inequalities and entanglement in solid-state devices, Phys. Rev. B 66 , 161320(R) (2002). [7] L. Hofstteter, S. Csonka, J. Nygøard, and C. Sch¨ onenberger, Cooper pair splitter realized in a two-quantum-dot Y-junction, Nature 461 , 960-963 (2009). [8] L. Hofstetter, S. Csonka, A. Baumgartner, G. F¨ ul¨ op, S. d’Hollosy, J. Nygøard, and C. Sch¨ onenberger, Finite-Bias Cooper Pair Splitting, Phys. Rev. Lett. 107 , 136801 (2011). [9] J. Schindele, A. Baumgartner, and C. Sch¨ onenberger, Near-Unity Cooper Pair Splitting Efficiency, Phys. Rev. 11 
+
+Lett. 109 , 157002 (2012). [10] A. Das, Y. Ronen, M. Heiblum, D. Mahalu, A. V. Kre-tinin, and H. Shtrikman, High-efficiency Cooper pair splitting demonstrated by two-partivle conductance res-onance and positive noise cross-corelation, Nat. Comm. 
+
+3, 1165 (2012). [11] G. F¨ ul¨ op, S. d’Hollosy, A. Baumgartner, P. Makk, V. A. Guzenko, M. H. Madsen, J. Nygøard, C. Sch¨ onenberger, and S. Csonka, Local electrical tuning of the nonlocal signals in a Cooper pair splitter, Phys. Rev. B 90 , 235412 (2014). [12] G. F¨ ul¨ op, F. Dom´ ınguez, S. d’Hollosy, A. Baumgartner, P. Makk, M. H. Madsen, V. A. Guzenko, J. Nygøard, C. Schn¨ onenberger, A. L. Yeyati, and S. Csonka, Mag-netic Field Tuning and Quantum Interference in a Cooper Pair Splitter, Phys. Rev. Lett. 115 , 227003 (2015). [13] S. Baba, C. J¨ unger, S. Matsuo, A. Baumgartner, Y. Sato, H. Kamata, K. Li, S. Jeppesen, L. Samuelson, H. Q. Xu, C. Sch¨ onenberger, and S. Tarucha, Cooper-pair splitting in two parallel InAs nanowires, New J. Phys. 20 , 063012 (2018). [14] G. Wang, T. Dvir, G. P. Mazur, C. -X. Liu, N. van Loo, S. L. D. ten Haaf, A. Bordin, S. Gazibegovic, G. Badawy, E. P. A. M. Bakkers, M. Wimmer, and L. P. Kouwen-hoven, Singlet and triplet Cooper pair splitting in hybrid superconducting nanowires, Nature 612 , 448-453 (2022). [15] A. Bordoloi, V. Zannier, L. Sorba, C. Sch¨ onenberger, and A. Baumgartner, Spin cross-correlation experiments in an electron entangler, Nature 612 , 454-458 (2022). [16] D. de Jong, C. G. Prosko, L. Han, F. K. Malinowski, Y. Liu, L. P. Kouwenhoven and W. Pfaff, Controllable Single Cooper Pair Splitting in Hybrid Quantum Dot Systems, Phys. Rev. Lett. 131 , 157001 (2023). Phys. Rev. Lett. 108 , 106603 (2012). [17] W. Chen, L. Jiang, R. Shen, L. Sheng, B. G. Wang, and D. Y. Xing, Specular Andreev reflection in inversion-symmetric Weyl semimetals, Europhys. Lett. 103 , 27006 (2013). [18] L. Majidi and R. Asgari, Specular Andreev reflection in thin films of topological insulators, Phys. Rev. B 93 ,195404 (2016). [19] Z. Hou and Q.-F. Sun, Double Andreev reflections in type-II Weyl semimetal-superconductor junctions, Phys. Rev. B 96 , 155305 (2017). [20] Q. Cheng, Z. Hou, and Q.-F. Sun, Double Andreev reflections and double normal reflections in nodal-line semimetal-superconductor junctions, Phys. Rev. B 101 ,094508 (2020). [21] Y. Nagae, A. P. Schnyder, and S. Ikegaya, Spin-polarized specular Andreev reflections in altermagnets, Phys. Rev. B 111 , L100507 (2025). [22] M. Naka, S. Hayami, H. Kusunose, Y. Yanagi, Y. Mo-tome, and H. Seo, Spin current generation in organic an-tiferromagnets, Nat. Commun., 10 , 4305 (2019). [23] S. Hayami, Y. Yanagi, and H. Kusunose, Momentum-Dependent Spin Splitting by Collinear Antiferromagnetic Ordering, J. Phys. Soc. Jpn. 88 , 123702 (2019). [24] S. Hayami, Y. Yanagi, and H. Kusunose, Bottom-up de-sign of spin-split and reshaped electronic band structures in antiferromagnets without spin-orbit coupling: Proce-dure on the basis of augmented multipoles, Phys. Rev. B 102, 144441 (2020). [25] M. Naka, S. Hayami, H. Kusunose, Y. Yanagi, Y. Mo-tome, and H. Seo, Anomalous Hall effect in κ-type organic antiferromagnets, Phys. Rev. B 102 , 075112 (2020). [26] L. ˇSmejkal, R. Gonz´ alez-Hern´ andez, T. Jungwirth, and J. Sinova, Crystal Time-Reversal Symmetry Breaking and Spontaneous Hall Effect in Collinear Antiferromagnets, Sci. Adv. 6, eaaz8809 (2020). [27] M. Naka, Y. Motome, H. Seo, Perovskite as a spin current generator, Phys. Rev. B 103 , 125114 (2021). [28] I. I. Mazin, K. Koepernik, M. D. Johannes, and L. ˇSmejkal, Prediction of unconventional magnetism in doped FeSb 2, Proc. Natl. Acad. Sci. U. S. A. 118 ,e2108924118 (2021). [29] H. Seo, and M. Naka, Antiferromagnetic State in κ-type Molecular Conductors: Spin Splitting and Mott Gap, J. Phys. Soc. Jpn. 90 , 064713 (2021). [30] L. ˇSmejkal, J. Sinova, and T. Jungwirth, Beyond Con-ventional Ferromagnetism and Antiferromagnetism: APhase with Nonrelativistic Spin and Crystal Rotation Symmetry, Phys. Rev. X 12 , 031042 (2022) [31] L. ˇSmejkal, J. Sinova, and T. Jungwirth, Emerging Re-search Landscape of Altermagnetism, Phys. Rev. X 12 ,040501 (2022). [32] C. Sun, A. Brataas, and J. Linder, Andreev reflection in altermagnets, Phys. Rev. B 108 , 054511 (2023). [33] C. W. J. Beenakker, and T. Vakhtel, Phase-shifted An-dreev levels in an altermagnet Josephson junction, Phys. Rev. B 108 , 075425 (2023). [34] M. Papaj, Andreev reflection at the altermagnet-superconductor interface, Phys. Rev. B 108 , L060508 (2023). [35] H. G. Giil, B. Brekke, J. Linder, and A. Brataas, Qua-siclassical theory of superconducting spin-splitter effects and spin-filtering via altermagnets, Phys. Rev. B 110 ,L140506 (2024). [36] D. Y. Kazmin, V. D. Esin, Y. S¿ Barash, A. V. Timonina, N. N. Kolesnikov, and E. V. Deviatov, Andreev reflection for MnTe altermagnet candidate, Physica B: Condensed Matter 696 , 416602 (2025). [37] Y. Fukaya, K. Maeda, K. Yada, J. Cayao, Y. Tanaka, and B. Lu, Josephson effect and odd-frequency pairing in superconducting junctions with unvonventional magnets, Phys. Rev. B 111, 064502 (2025). [38] Y. Fukaya, B. Lu, K. Yada, Y. Tanaka, and J. Cayao, Superconducting phenomena in systems with unconven-tional magnets, J. Phys.: Condens. Matter 37, 313003 (2025). [39] I. V. Bobkova, P. J. Hirschfeld, and Yu. S. Barash, Spin-Dependent Quasiparticle Reflection and Bound States at Interfaces with Itinerant Antiferromagnets, Phys. Rev. Lett. 94 , 037005 (2005). [40] B. M. Andersen, I. V. Bobkova, P. J. Hirschfeld, and Y. S. Barash, Bound states at the interface between an-tiferromagnets and superconductors, Phys. Rev. B 72 ,184510 (2005). [41] B. M. Andersen, I. V. Bobkova, P. J. Hirschfeld, and Y. S. Barash, Bound states at the interface between an-tiferromagnets and superconductors, Phys. Rev. B 72 ,184510 (2005). 0– π Transitions in Josephson Junctions with Antiferromagnetic Interlayers, Phys. Rev. Lett. 96 ,117005(2006). [42] G. A. Bobkov, I. V. Bobkova, A. M. Bobkov, and A. Kamra, N´ eel proximity effect at antiferromag-net/superconductor interfaces, Phys. Rev. B 106 , 144512 (2022). 12 
+
+[43] B. Jiang, M. Hu, J. Bai, Z. Song, C. Mu, G. Qu, W. Li, W. Zhu, H. Pi, Z. Wei, Y, -J. Sun, Y. Huang, X. Zheng, Y. Peng, L. He, S. Li, J. Luo, Z. Li, G. Chen, H. Weng, and T. Qian, A metallic room-temperature d-wave altermagnet, Nat. Phys. 21 , 754-759 (2025). [44] F. Zhang, X. Cheng, Z. Yin, C. Liu, L. Deng, Y. Qiao, Z. Shi, S. Zhang, J. Lin, Z. Liu, M. Yeo, Y. Huang, X. Meng, C. Zhang, T. Okuda, K. Shimada, S. Cui, Y. Zhao, G. -H. Cao, S. Qiao, J. Liu, and C. Chen, Crystal-symmetry-paired spin–valley locking in a layered room-temperature metallic altermagnet candidate, Nat. Phys. 21 , 760-767 (2025). [45] J. Lai, T. Yu, P. Liu, L. Liu, C. Xing, X. -Q. Chen, and Y. Sun, d-wave Flat Fermi Surface in Altermagnets Enables Maximum Charge-to-Spin Conversion, Phys. Rev. Lett. 
+
+135 , 256702 (2025). [46] C. -C. Liu, J. Li, J. -Y. Liu, J. -Y. Lu, H. -X. Li, Y. Liu, and G. -H. Cao, Physical properties and first-principles calculations of an altermagnet candidate Cs 1−δ V2Te 2O, Phys. Rev. B 112 , 224439 (2025). [47] W. Zhang, E. Zhu, Z. Li, and H. Lv, Strain-tunable spin-valley locking and the influence of spin-orbit coupling in the two-dimensional altermagnet V 2Te 2O, Phys. Rev. B 
+
+112 , 144427 (2025). [48] Z. Wang, S. Yu, X. Cheng, X. Xiao, W. Ma, F. Quan, H. Song, K. Zhang, Y. Zhang, Y. Ma, W. Liu, P. Yadav, X. Shi, Z. Wang, Q. Niu, Y. Gao, B. Xiang, J. Liu, Z. Wang, and X. Chen, Atomic-scale spin sensing of a 2D d-wave altermagnet via helical tunneling, arXiv:2512.23290 (2025). [49] D. Fu, L. Yang, K. Xiao, Y. Wang, Z. Wang, Y. Yao, Q. -K. Xue, and W. Li, Atomic-scale visualization of d-wave altermagnetism, arXiv:2512.24114 (2025). [50] Q. Hu, X. Cheng, Q. Duan, Y. Hu, B. Jiang, Y. Xiao, Y. Li, M. Pan, L. Deng, C. Liu, G. Cao, Z. Liu, M. Ye, S. Qiao, Z. Liu, Z. Sun, A. Gao, Y. Huang, R. Zhong, J. Liu, B. Lv, and H. Ding, Observation of spin-valley locked nodal lines in a quasi-2D altermagnet, arXiv:2601.02883 (2026). [51] X. Cheng, Y. Gao, J. Pengand, and J. Liu, Realitic tight-binding model for V2Se 2O-family altermagnets, arXiv:2602.09465 (2026). [52] B. Brekke, A. Brataas, and A. Sudbø, Two-dimensional altermagnets: Superconductivity in a minimal micro-scopic model, Phys. Rev. B, 108 , 224421 (2023). [53] J. Bai, B. Ruan, Q. Dong, L. Zhang, Q. Liu, J. Cheng, P. Liu, C. Li, Y. Sun, Y. Huang, Z. Ren, and G. Chen, Absense of long-range order in the vanadium oxychalco-genide KV 2Se 2O with nontrivial band topology, Phys. Rev. B, 110 , 165151 (2024). [54] G. E. Blonder, M. Tinkham, and T. M. Klapwijk, Tran-sition from metallic to tunneling regimes in supercon-ducting microconstrictions: Excess current, charge im-balance, and supercurrent conversion, Phys. Rev. B 25 ,4515 (1982). [55] M. P. Anantram, and S. Datta, Current fluctuations in mesoscopic systems with Andreev scattering, Phys. Rev. B 53 , 16390 (1996). [56] P. A. Lee, and D. S. Fisher, Anderson Localization in Two dimensions,Phys. Rev. Lett. 47 , 882 (1981). [57] T. Ando, Quantum point contacts in magnetic fields, Phys. Rev. B 44 , 8017 (1991). [58] R. A. Jalabert, H. U. Baranger, and A. D. Stone, Con-ductance fluctuations in the ballistic regime: A probe of quantum chaos?, Phys. Rev. Lett. 65 , 2442 (1990). [59] Y. Sun, Y. Huang, J. Cheng, S. Zhang, Z. Li, H. Luo, X. Ma, W. Yang, J. Yang, D. Chen, K. Sun, M. Gut-mann, S. C. Capelli, F. Shen, J. Hao, L. He, G. Chen, and S. Li, Antiferromagnetic structure of KV 2Se 2O: A neu-tron diffraction study, Phys. Rev. B 112 , 184416 (2025). [60] C. Lange, R. Jaeschke-Ubiergo, A. Chakraborty, X. H. Verbeek, L. ˇSmejkal, J. Sinova, and A. Moo, Emergent altermagnetism at surfaces of antiferromag-nets: full symmetry classification and material identi-fication, arXiv:2602.08773 (2026). [61] https://github.com/nagaephysics0204-ops/datasets V2OAM.

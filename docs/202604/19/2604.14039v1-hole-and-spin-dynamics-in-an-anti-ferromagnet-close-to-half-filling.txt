@@ -1,0 +1,986 @@
+Title: Hole and spin dynamics in an anti-ferromagnet close to half filling
+
+URL Source: https://arxiv.org/pdf/2604.14039v1
+
+Published Time: Thu, 16 Apr 2026 01:10:48 GMT
+
+Number of Pages: 11
+
+Markdown Content:
+# Hole and spin dynamics in an anti-ferromagnet close to half filling 
+
+Magnus Callsen, 1 Jens H. Nyhegn, 2, 3 Kristian Knakkergaard Nielsen, 3 and Georg M. Bruun 1
+
+> 1
+
+Department of Physics and Astronomy, Aarhus University, Ny Munkegade 120, DK-8000 Aarhus C, Denmark 
+
+> 2
+
+Kavli Institute for Theoretical Physics, University of California, Santa Barbara, California 93106-4030, USA 
+
+> 3
+
+Niels Bohr Institute, University of Copenhagen, Jagtvej 128, DK-2200 Copenhagen, Denmark 
+
+(Dated: April 16, 2026) The interplay between charge and spin dynamics is at the heart of strongly correlated materials. Inspired by recent quantum simulation experiments, we develop a conserving diagrammatic method to describe the Fermi-Hubbard model for strong repulsion and small hole doping away from the half-filled anti-ferromagnetic ground state. We show that doping leads to four hole pockets in the Brillouin zone formed by magnetic polarons, which become increasingly damped with hole concentration. Likewise, the magnon spectrum of the anti-ferromagnet softens and dampens with doping due to hole-induced magnetic frustration. This gives rise to a suppression of the anti-ferromagnetic correlations in agreement with recent experiments. We then calculate the response of the system to a lattice modulation and recover the qualitative difference between in-phase and out-of-phase modulations seen in experiments, which was interpreted as signs of pseudogap physics. Our results indicate that the complex competition between spin and charge degrees of freedom and the emergence of the pseudogap phase may be usefully analyzed for small dopings, where systematic theories can be developed. 
+
+Analyzing charge motion in a background of strongly correlated spins represents a key challenge for under-standing two-dimensional (2D) materials, where it gives rise to a wealth of phenomena including charge and den-sity order as well as high-temperature ( Tc) superconduc-tivity. While some features depend on the specific mate-rial, many are robust and exist across different families of compounds [1]. The single band Fermi-Hubbard model offers a minimal model for describing such generic effects in strongly correlated materials, and its phase diagram continues to be intensely investigated numerically [2, 3]. Quantum simulation experiments with atoms in optical lattices provide a powerful alternative way to explore the Fermi-Hubbard model under pristine conditions [4– 11], and two such experiments have recently reported intriguing results regarding the effects of hole doping. In the first, spin and charge correlations were observed with quantum gas microscopy [12]. In the second, lattice modulation spectroscopy combined with a new powerful cooling technique was used to measure the particle-hole excitation spectrum in the first Brillouin zone (BZ) [13]. Both experiments were interpreted in terms of pseudogap physics where the density-of-states is suppressed at the Fermi level in certain regions of the BZ. The pseudogap is observed in many 2D materials including the cuprates both in transport [14] and in angle-resolved photoemis-sion spectroscopy where it gives rise to the famous Fermi arcs [15], but its physical origin remains highly debated and it is believed to hold the key for understanding high-
+
+Tc superconductivity [1, 16]. Here, we theoretically investigate the single band near-est neighbour Fermi-Hubbard model for small hole dop-ings away from half-filling (one fermion per site) where the ground state exhibits long range anti-ferromagnetic (AFM) order. Using a conserving diagrammatic ap-proach based on a self-consistent Born approximation combined with a random phase approximation includ-ing anomalous propagators, we show that hole doping gives rise to the formation of magnetic polarons resid-ing in four elliptical hole pockets in the BZ. The magnon (spin wave) spectrum softens with hole doping and both the magnons and the magnetic polarons become increas-ingly damped. This is shown to lead to a decrease in the AFM correlations, and we finally analyze the response of the system to lattice modulations. Our results agree with recent quantum simulation experiments [12, 13], suggest-ing that the competition between charge motion and spin correlations and the onset of pseudogap physics can be usefully analyzed from the small doping side. 
+
+Model.– Consider spin σ =↑, ↓ fermions in a square lattice as described by the Fermi-Hubbard model with nearest neighbour hopping t and on-site interaction U .For strong repulsion U/t ≫ 1 and close to half-filling, the low-energy physics is well-described by the t-J model [17] ˆH = −t X
+
+> ⟨i,j⟩,σ
+
+
+
+˜c† 
+
+> iσ
+
+˜cjσ +h.c. 
+
+
+
++J X
+
+> ⟨i,j⟩
+
+ˆSi · ˆSj − ˆni ˆnj
+
+4
+
+
+
+, (1) where ⟨i, j⟩ denotes nearest neighbour lattice sites, ˜ c† 
+
+> iσ
+
+=ˆc† 
+
+> iσ
+
+(1 − ˆni) with ˆ c† 
+
+> iσ
+
+creating a fermion with spin σ at site 
+
+i, and ˆ ni = ˆ c† 
+
+> i↑
+
+ˆci↑ + ˆ c† 
+
+> i↓
+
+ˆci↓ the number of fermions at site 
+
+i. The spin operators are ˆSi = 12
+
+P 
+
+> σ,σ ′
+
+ˆc† 
+
+> i,σ
+
+σσσ ′ ˆci,σ ′ with the Pauli matrices σ = ( σx, σ y , σ z ), and J = 4 t2/U is the anti-ferromagnetic super-exchange coupling. Close to half-filling, the ground state is an AFM with spins on sublattices i ∈ A and j ∈ B predominantly pointing parallel/anti-parallel to the z-direction, respec-tively. Using a Holstein-Primakoff transformation gener-alized to take holes into account, we write ˆSz 
+
+> i
+
+= 1 /2 −
+
+> arXiv:2604.14039v1 [cond-mat.quant-gas] 15 Apr 2026
+
+2ˆh† 
+
+> i
+
+ˆhi/2 − ˆs† 
+
+> i
+
+ˆsi, ˆS+ 
+
+> i
+
+= (1 − ˆh† 
+
+> i
+
+ˆhi − ˆs† 
+
+> i
+
+ˆsi)ˆ si, ˜ ci↓ = ˆh† 
+
+> i
+
+ˆsi, and ˜ci↑ = ˆh† 
+
+> i
+
+(1 − ˆs† 
+
+> i
+
+ˆsi) for sites on sublattice i ∈ A. Here, ˆhi/ˆsi is a fermionic/bosonic operator removing a spinless hole/charge-less spin excitation at site i, and we have used a Newton expansion [18] to simplify the usual slave fermion representation [19]. The transformation on sub-lattice j ∈ B is obtained from the above by swapping spin ↑ and ↓. Keeping terms up to third order in ˆhi and ˆsi, Eq. (1) becomes [19, 20] ˆH ≃ X
+
+> k
+
+ωk ˆσ† 
+
+> k
+
+ˆσk + X
+
+> k,q
+
+g(q, k)( ˆh†
+
+> k+q
+
+ˆhq ˆσ†−k + h.c.) , (2) where we omit the constant ground state energy term. Here, ˆ σ† 
+
+> k
+
+creates a bosonic magnon with crystal momen-tum k and energy ωk = 2 Jp1 − γ2 
+
+> k
+
+where γk = (cos kx +cos ky )/2 within linear spin-wave theory (LSWT) [21]. The vertex g(q, k) = 4 tN −1/2(ukγk+q − vkγq) gives the amplitude for the emission/absorption of magnons by the holes, which clearly shows the competition between charge motion and magnetic order. Here, uk = ([(1 −
+
+γ2
+
+> k
+
+)−1/2 + 1] /2) 1/2, vk = sgn( γk)([(1 − γ2
+
+> k
+
+)−1/2 − 1] /2) 1/2,and N is the number of lattice sites. Finally, ˆhk =
+
+N −1/2 P 
+
+> i
+
+e−ik·iˆhi removes a hole with momentum k.
+
+Diagrammatic theory.– The Hamiltonian in Eq. (2) cannot be solved exactly and we must, therefore, re-sort to approximations to analyze the charge and spin dynamics. To do this, we employ a diagrammatic ap-proach based on the finite temperature hole Green’s function G(k, τ ) = − ⟨ Tτ {ˆhk(τ ), ˆh†
+
+> k
+
+(0) }⟩ . Here, ˆ a(τ ) = 
+
+e+ ˆHτ ˆae − ˆHτ with the imaginary time τ ∈ [−1/T, 1/T [ for temperature T , Tτ is time ordering, and ⟨· · ·⟩ denotes the thermal expectation value at a given hole concen-tration. We calculate the hole Green’s function using a self-consistent Born approximation (SCBA), which in-cludes all non-crossing diagrams for the self-energy to infinite order. The SCBA was first introduced to de-scribe a single hole in a half-filled AFM [19], where it turns out to agree remarkably well with Monte-Carlo cal-culations [22], and it has recently been shown to accu-rately describe non-equilibrium quantum simulation ex-periments as well [23]. Here, we generalize the SCBA to the case of a non-zero hole concentration. To describe the effects of the holes on the magnons, we define the normal and anomalous magnon Green’s functions D11 (k, τ ) = 
+
+−⟨ Tτ {ˆσk(τ ), ˆσ†
+
+> k
+
+(0) }⟩ , D12 (k, τ ) = −⟨ Tτ {ˆσk(τ ), ˆσ−k(0) }⟩ 
+
+and D21 (k, τ ) = −⟨ Tτ {ˆσ†−k(τ ), ˆσ†
+
+> k
+
+(0) }⟩ . The anomalous propagators arise because magnon pairs are created by the holes. We employ a self-consistent random-phase-approximation (RPA) for the magnon self-energy. The resulting Dyson equations are shown diagrammatically in Fig. 1(a), and the mathematical expressions are given in Supplemental Material [24], where it is also shown that our approach is conserving [25–27]. The electron filling fraction is ⟨ˆni⟩ = 1 − ⟨ ˆh† 
+
+> i
+
+ˆhi⟩ = 1 − δ, where the hole dop-ing δ = N −1 P
+
+> k
+
+⟨ˆh†
+
+> k
+
+ˆhk⟩ = N −1 P
+
+> k
+
+R ∞−∞ dωf (ω)Ah(k, ω )b)  c) 
+
+## a)         
+
+> FIG. 1. (a) Feynman diagrams for the conserving approxima-tion: thick (thin) straight and wavy lines denote full (bare) hole and magnon propagators, respectively. Oppositely di-rected arrows indicate anomalous magnon propagators. (b) Hole spectral function at momenta p= (0 ,0) and ( π/ 2, π/ 2) for dopings δ= 0 and 0 .06. (c) Hole occupation in the BZ for
+> δ= 0 .06.
+
+is controlled by the hole chemical potential μ. Here, 
+
+Ah(k, ω ) = −2Im G(k, ω ) is the hole spectral function obtained by the analytical continuation iω n → ω + i0+,and f (ω) = 1 /[exp( ω/T )+1] is the Fermi-Dirac function. The t − J model has been studied for small hole dop-ings using similar approaches based on the SCBA and the RPA, combined with additional approximations for the Green’s functions [28–30] or with the omission of anoma-lous magnon propagators [31]. Compared to this, we present a fully self-consistent treatment including anoma-lous propagators, and our focus on new quantum sim-ulation experiments that probe the pristine single-band Fermi–Hubbard model in ways beyond the reach of solid-state experiments, is also quite different from these ear-lier works. In the following, we assume zero temperature 
+
+T = 0 and take U/t = 7 giving J/t = 4 /7, which is equal or close to what is realised in the recent quantum simulation experiments [12, 13] and also similar to what is found in the cuprates [1]. We solve the Dyson equa-tions iteratively on a 20 × 20 lattice until convergence is obtained adding a small imaginary part η = 0 .04 t to the frequencies. Both the hole and magnon spectral func-tions fulfill R dωA (ω)/2π = 1 within a few percent for the small dopings explored here, illustrating the conserving nature of our theory and accuracy of the numerics. 
+
+Holes and magnons.– In Fig. 1(b), we show the hole spectral function at half-filling ( δ = 0) and hole doping 
+
+δ = 0 .06 at crystal momenta p = (0 , 0) and ( π/ 2, π/ 2). For zero doping, there is a prominent quasiparticle peak for both momenta corresponding to magnetic polarons with energies ω ≃ − 1.9J and ω ≃ − 3.4J. The p =(π/ 2, π/ 2) polaron remains well-defined also for δ = 0 .06 with a slightly higher energy and smaller residue, whereas 3the p = (0 , 0) polaron becomes overdamped. The rea-son is that a finite concentration of holes causes mag-netic frustration corresponding to a finite magnon popu-lation on which the holes can scatter. This most strongly affects the polaron for p = (0 , 0) where the energy is maximal, whereas magnetic polaron is more robust for p = ( ±π/ 2, ±π/ 2) where we find its energy to be minimal consistent with earlier findings for zero dop-ing [19, 20, 22, 32]. Figure 1(c) plots the hole population ⟨ˆh†
+
+> p
+
+ˆhp⟩ in the BZ for the doping δ = 0 .06. This clearly shows the presence of four elliptic hole pockets centered around the momenta (±π/ 2, ±π/ 2) [31, 33], which can be understood as aris-ing from Fermi seas of magnetic polarons. Figure 2(a) shows the magnon spectral function 
+
+A11 (k, ω ) = −2Im D11 (k, ω ) for different momenta along the kx-direction and hole doping δ = 0 .06. This shows that the presence of holes gives rise to a softening and broadening of the magnon dispersion, whose width van-ishes for zero doping where the magnons have an infinite life-time within LSWT. The significant spectral weight around ω = 0 for small momenta has been suggested to indicate an instability to a stripe or spiral order [31]. We plot in Fig. 2(b) the magnon dispersion along the kx-direction as obtained from the peak positions of A11 (ω)for different dopings, and in Fig. 2(c) the maximum magnon energy at k = ( π, 0) is shown. Both plots further illustrate the softening of the magnon spectrum. 
+
+Spin correlations.– We now turn our attention to the spin correlations, which were recently probed using quan-tum gas microscopy [12]. Due to the SU(2) spin symme-try in the experiment, the magnetic order at T = 0 will point in an arbitrary direction from shot to shot. To take this into account, we therefore calculate the aver-aged spin-spin correlator 
+
+C2(d) = 43
+
+ ⟨ˆSi+d · ˆSi⟩ − ⟨ ˆSi+d⟩ · ⟨ ˆSi⟩. (3) A consistent calculation of C2(d) for a non-zero doping is very challenging. It is however known that LSWT agrees very well with Monte-Carlo results for ⟨ ˆSz 
+
+> i
+
+⟩ [34, 35], and higher order corrections are also found to be rather small for the equal time spin correlations for δ = 0, especially for high momenta corresponding to small distances d [36]. We, therefore, calculate C2(d) keeping only the dominant lowest order terms in the hole and magnon populations as detailed in Supplemental Material [24]. Figure 3 plots C2(d) for two different dopings together with the experimental results [12]. We see that the cor-relations decrease from the value 1 − δ at d = 0 over a few lattice distances. The theory predicts this decrease to be non-monotonic with a small maximum at d = 3, which we attribute to the fact that C2(d) is C4 and not circular symmetric. There is reasonable agreement be-tween our theory and the experiment, and in both cases the correlations decrease with doping. The experimen-a) 
+
+## b)  c)                                   
+
+> FIG. 2. (a) Magnon spectral function for hole doping δ=0.06 and different momenta along the kxdirection in the BZ. Vertical lines give the magnon energies at δ= 0. (b) Magnon dispersion for k= (0 ,0) to k= ( π, 0) in steps of π/ 10 and different hole dopings. (c) The magnon energy for k= ( π, 0) as a function of δin units of its value for δ= 0. The red squares show how the frequency position of the experimentally measured peak response to an out-of-phase lattice modulation decreases with doping relative to its value at δ= 0 [13].
+> FIG. 3. The correlation function C2(d) for two dopings; crosses denote experimental data from Ref. [12]. For clar-ity, C2(0) = 1 −δis not shown. The inset shows 4 ⟨ˆSz
+> i+dˆSz
+> i⟩.
+
+tal data lie consistently above our theory, which is likely because the experiment was conducted at the tempera-ture T /t = 0 .27 where there is no long range AFM order. In the inset, we plot ⟨ ˆSz 
+
+> i+d
+
+ˆSz 
+
+> i
+
+⟩, which decreases with δ
+
+reflecting the decrease in magnetic order. As detailed in Supplemental Material[24], this gives give rise to a de-crease in the magnetic structure factor in agreement with the experiment [12]. 
+
+Lattice modulation spectroscopy.– The suppression of the density-of-states at the Fermi level along the nodal directions of the BZ is a hallmark of the pseudogap phase [1]. Lattice modulation spectroscopy with 6Li 4atoms in an optical lattice was recently used to explore this in the Fermi-Hubbard model close to half filling [13]. These experiments probe the imaginary part of the re-tarded correlation function χ±(ω), where ω is the angu-lar frequency of the modulation and χ±(ω) the Fourier transform of χ±(τ ) = −iθ (τ )⟨[ ˆT±(τ ), ˆT±(0)] ⟩ (here τ de-notes real time). The modulation operator is ˆT± = X
+
+> lσ
+
+(ˆ c† 
+
+> lσ
+
+ˆcl+exσ ± ˆc† 
+
+> lσ
+
+ˆcl+ey σ ) + h.c. (4) with l + ex the nearest neighbour site in the x-direction (likewise for l + ey ). The ± sign corresponds to the x
+
+and y lattice depths modulated in- or out-of-phase [13]. In the slave-fermion representation, Eq. (4) reads ˆT eff + = X
+
+> k,q
+
+g+(q, k)( ˆh†
+
+> k+q
+
+ˆhq ˆσ†−k +h.c.)+ 2
+
+t
+
+X
+
+> k
+
+ωk ˆσ† 
+
+> k
+
+ˆσk
+
+ˆT eff  
+
+> −
+
+= X
+
+> k,q
+
+g−(q, k)( ˆh†
+
+> k+q
+
+ˆhq ˆσ†−k +h.c.) + 2Jt
+
+X
+
+> k
+
+˜γk
+
+p1 − γ2
+
+> k
+
+(ˆ σk ˆσ−k + ˆ σ†−k ˆσ† 
+
+> k
+
+−2γk ˆσ† 
+
+> k
+
+ˆσk), (5) where g+(q, k) = g(q, k)/t , g−(q, k) =4N −1/2(uk ˜γk+q − vk ˜γq), and ˜ γk = (cos kx − cos ky )/2. We have defined ˆT eff  
+
+> ±
+
+= ˆPLe ˆS ˆT±e− ˆS ˆPL where e ˆS is the unitary Schrieffer-Wolf transformation, which together with the projection ˆPL onto states with maximally one particle per site is used to map the Hubbard model onto the t − J model, see Supplemental Material [24]. A conserving calculation of χ±(ω) is challenging, and we therefore use perturbation theory instead keeping the lowest order contributions in the hole and magnon popu-lations as explained in Supplemental Material [24]. The left and right columns of Fig. 4 plot the response to an in-phase/out-of-phase lattice modulation respectively for different dopings. Consider first δ = 0 where the out-of-phase response comes only from the creation of magnon pairs due to the ˆ σ†−k ˆσ† 
+
+> k
+
+term in Eq. (5). The maximum of this response is at ω = 4 J corresponding to the creation of two magnons with maximal energy 2 J. As discussed in connection with solid-state Raman scattering experi-ments [37, 38], since the magnons are created in pairs, interactions between them reduce their energy to 3 .3J.This effect is not taken into account by LSWT, and we, therefore, include it approximately by rescaling the spin coupling as 4 J → 3.3J, when calculating the response. Note that the response to an in-phase lattice modulation vanishes for δ = 0 (not shown), since this simply cor-responds to a global modulation of the spin coupling J
+
+leaving the AFM ground state undisturbed. As the hole doping increases, Fig. 5 shows that the response to the out-of-phase modulation moves to lower energies. This is caused by two effects: First, the energy cost of creating magnons decreases with doping as we saw above; second, a new low-energy continuum emerges from the rest of the terms in Eq. (5) describing the scat-tering of magnons and holes. Like for δ = 0, the re-sponse is suppressed for small energies and is maximum close to the energy required to create two k = ( π, 0) magnons with maximal energy in the BZ, which decreases with doping as discussed above. The peak also broadens and decreases in height with doping due to damping of the magnons. Figure 4 shows that there is qualitative agreement between our theory and the experimental re-sults of Ref. [13]. The experimental response is generally broader and at lower energies, which likely is because it is measured at a non-zero temperature where there is no long range AFM order. However, the energies giving the peak experimental and theoretical response exhibit essen-tially the same relative decrease with doping as shown in Fig. 2(c). The response to the in-phase modulation increases from zero with doping and is generally much weaker and broader than the out-of-phase response with no dominant peak. Again, this is consistent with the ex-perimental results where this difference was interpreted as signs of the pseudogap. The theoretical response can in fact be matched even better with the experimental data using a simple rescaling of the spin coupling J, see Supplemental Material [24]. Importantly, the scaling fac-tor of J is the same for the in-phase and the out-of-phase modulation and for all dopings. It can therefore be re-garded as an ad-hoc way to include temperature effects. As for the spin correlations discussed above, these results indicate that the observed T > 0 response is inherited from an AFM ground state. The agreement between the-ory and experiment breaks down for larger doping where the system is expected to enter a cross-over region to a Fermi liquid, Supplemental Material [24]. 
+
+Discussion and conclusions.– We used a conserving diagrammatic approach based on a self-consistent Born approximation combined with a self-consistent random phase approximation to analyze the t−J model for small hole doping, where the ground state is an AFM. Dop-ing was shown to lead to damped magnetic polarons forming four elliptical hole pockets in the BZ, and the magnon spectrum was likewise shown to be softened and damped. The AFM spin correlations were demonstrated to decrease with hole doping, and we also calculated the response of the system to lattice modulations finding a qualitative difference between an in-phase and an out-of-phase modulation in the x- and y-directions. Our theo-retical results were shown to agree with results from two recent quantum simulation experiments, which were both interpreted as being connected to pseudogap physics. From a broader perspective, the interplay between charge and spin dynamics, and in particular the phys-ical origin of the pseudogap phase is presently highly debated [39–41]. Our results suggest that this question, central for our understanding of high Tc superconduc-tivity, may be fruitfully approached from the small hole doping side where systematic theories can be developed. 50
+
+> 0.002
+> 0.004
+> 0
+> 0.5
+> 1.0
+
+0 2 4
+
+> 0
+> 0.01
+> 0.02
+
+0 2 4
+
+> 0
+> 0.15
+> 0.3
+
+/ J
+
+= 0.02 
+
+= 0 
+
+= 0.06 = 0.04 
+
+> +
+
+Theory Exp 2 ( , 0) 
+
+FIG. 4. The left/right column show the response χ±(ω) to an in-phase/out-of-phase lattice modulation for different dopings normalised by the maximal value for δ = 0. Vertical lines indicate the maximal energy 2 ω(π, 0) required to create two magnons. Data points are experimental results from Ref. [13] normalised to have the same area as the theoretical curves. 
+
+An interesting but also challenging future research direc-tion is, therefore, to generalize our theoretical framework to the case of a non-zero temperature where there is no long-range AFM order. Another intriguing question concerns the transition between the small doping regime where magnetic polarons are the main charge carriers, to the large doping regime where the system is a Fermi liquid of electrons [6], which will require including terms beyond the regime of LSWT and small hole doping. Aconserving calculation of the response to lattice modula-tions is also an important but complicated problem, and it would finally be highly interesting to explore possible Cooper pairing instabilities as a function of doping. G.M.B. thanks Martin Lebrat and Eugene Demler for useful discussions. M.C. and G.M.B. acknowledge support from the Novo Nordisk Foundation (grant no. NNF23OC0086599). K.K.N. acknowledges support from the Carlsberg Foundation through a Carlsberg Reinte-gration Fellowship (Grant no. CF24-1214). J.H.N ac-knowledge support from the Independent Research Fund Denmark (grant no. 5341-00014B). 
+
+[1] B. Keimer, S. A. Kivelson, M. R. Norman, S. Uchida, and J. Zaanen, Nature 518 , 179 (2015). [2] J. P. F. LeBlanc, A. E. Antipov, F. Becca, I. W. Bulik, G. K.-L. Chan, C.-M. Chung, Y. Deng, M. Ferrero, T. M. Henderson, C. A. Jim´ enez-Hoyos, E. Kozik, X.-W. Liu, A. J. Millis, N. V. Prokof’ev, M. Qin, G. E. Scuseria, H. Shi, B. V. Svistunov, L. F. Tocchio, I. S. Tupitsyn, S. R. White, S. Zhang, B.-X. Zheng, Z. Zhu, and E. Gull (Simons Collaboration on the Many-Electron Problem), Phys. Rev. X 5, 041041 (2015). [3] D. P. Arovas, E. Berg, S. A. Kivelson, and S. Raghu, An-nual Review of Condensed Matter Physics 13 , 239 (2022). [4] W. S. Bakr, Z. Ba, and M. L. Prichard, Mi-croscopy of ultracold fermions in optical lattices (2025), arXiv:2507.04042 [cond-mat.quant-gas]. [5] J. Koepsell, J. Vijayan, P. Sompet, F. Grusdt, T. A. Hilker, E. Demler, G. Salomon, I. Bloch, and C. Gross, Nature 572 , 358 (2019). [6] J. Koepsell, D. Bourgund, P. Sompet, S. Hirthe, A. Bohrdt, Y. Wang, F. Grusdt, E. Demler, G. Salomon, C. Gross, and I. Bloch, Science 374 , 82 (2021). [7] G. Ji, M. Xu, L. H. Kendrick, C. S. Chiu, J. C. Br¨ uggenj¨ urgen, D. Greif, A. Bohrdt, F. Grusdt, E. Dem-ler, M. Lebrat, and M. Greiner, Phys. Rev. X 11 , 021022 (2021). [8] T. Hartke, B. Oreg, C. Turnbaugh, N. Jia, and M. Zwier-lein, Science 381 , 82 (2023). [9] M. Xu, L. H. Kendrick, A. Kale, Y. Gang, G. Ji, R. T. Scalettar, M. Lebrat, and M. Greiner, Nature 620 , 971 (2023). [10] M. L. Prichard, B. M. Spar, I. Morera, E. Demler, Z. Z. Yan, and W. S. Bakr, Nature 629 , 323 (2024). [11] M. Lebrat, M. Xu, L. H. Kendrick, A. Kale, Y. Gang, P. Seetharaman, I. Morera, E. Khatami, E. Demler, and M. Greiner, Nature 629 , 317 (2024). [12] T. Chalopin, P. Bojovi´ c, S. Wang, T. Franz, A. Sinha, Z. Wang, D. Bourgund, J. Obermeyer, F. Grusdt, A. Bohrdt, L. Pollet, A. Wietek, A. Georges, T. Hilker, and I. Bloch, Proceedings of the Na-tional Academy of Sciences 123 , e2525539123 (2026), https://www.pnas.org/doi/pdf/10.1073/pnas.2525539123. [13] L. H. Kendrick, A. Kale, Y. Gang, A. D. Deters, M. Lebrat, A. W. Young, and M. Greiner, Pseu-dogap in a fermi-hubbard quantum simulator (2025), arXiv:2509.18075 [cond-mat.quant-gas]. [14] M. K. Chan, K. A. Schreiber, O. E. Ayala-Valenzuela, E. D. Bauer, A. Shekhter, and N. Harrison, Nature Physics 21 , 1753 (2025). [15] J. A. Sobota, Y. He, and Z.-X. Shen, Rev. Mod. Phys. 
+
+93 , 025006 (2021). [16] P. M. Bonetti, M. Christos, A. Nikolaenko, A. A. Patel, and S. Sachdev, arXiv e-prints , arXiv:2508.20164 (2025), arXiv:2508.20164 [cond-mat.str-el]. [17] A. Auerbach, Interacting Electrons and Quantum Mag-netism , edited by J. L. Birman, H. Faissner, and J. W. Lynn (Springer-Verlag, New York, 1994). [18] J. K¨ onig and A. Hucht, SciPost Phys. 10 , 007 (2021). [19] C. L. Kane, P. A. Lee, and N. Read, Phys. Rev. B 39 ,6880 (1989). [20] K. K. Nielsen, M. A. Bastarrachea-Magnani, T. Pohl, and G. M. Bruun, Phys. Rev. B 104 , 155136 (2021). [21] We use units where the reduced Planck constant, the lattice spacing, and the Boltzmann constant are set to unity, ℏ, a, k B = 1. [22] N. Diamantis and E. Manousakis, New Journal of Physics (2021). [23] K. K. Nielsen, T. Pohl, and G. M. Bruun, Phys. Rev. Lett. 129 , 246601 (2022). 6
+
+[24] See Supplemental Material online for additional details. [25] G. Baym and L. P. Kadanoff, Phys. Rev. 124 , 287 (1961). [26] G. Baym, Phys. Rev. 127 , 1391 (1962). [27] G. Stefanucci and R. van Leeuwen, Green’s functions for nonequilibrium fermion–boson systems, in Nonequilib-rium Many-Body Theory of Quantum Systems: A Mod-ern Introduction (Cambridge University Press, 2025) p. 451–520. [28] J.-i. Igarashi and P. Fulde, Phys. Rev. B 45 , 12357 (1992). [29] G. Khaliullin and P. Horsch, Phys. Rev. B 47 , 463 (1993). [30] A. Sherman and M. Schreiber, Phys. Rev. B 48 , 7492 (1993). [31] S. Kar and E. Manousakis, Phys. Rev. B 84 , 205107 (2011). [32] P. Massignan, R. Schmidt, G. E. Astrakharchik, A. ˙Imamoglu, M. Zwierlein, J. J. Arlt, and G. M. Bruun, Polarons in atomic gases and two-dimensional semicon-ductors (2025), arXiv:2501.09618 [cond-mat.quant-gas]. [33] B. Kyung, Solid State Communications 106 , 475 (1998). [34] A. W. Sandvik, Phys. Rev. B 56 , 11678 (1997). [35] G. E. Castilla and S. Chakravarty, Phys. Rev. B 43 ,13687 (1991). [36] J.-i. Igarashi and A. Watabe, Phys. Rev. B 43 , 13456 (1991). [37] T. P. Devereaux and R. Hackl, Rev. Mod. Phys. 79 , 175 (2007). [38] E. Demler, Private Communication. [39] B. Keimer, S. A. Kivelson, M. R. Norman, S. Uchida, and J. Zaanen, Nature 518 , 179 (2015). [40] J. H. Nyhegn, K. K. Nielsen, L. Balents, and G. M. Bruun, PRX Quantum 6, 040347 (2025). [41] P. M. Bonetti, M. Christos, A. Nikolaenko, A. Patel, and S. Sachdev, Reports on Progress in Physics (2026). Supplemental Material Hole and spin dynamics in an anti-ferromagnet close to half filling 
+
+CONTENTS 
+
+A: Luttinger-Ward functional for SCBA+RPA 1B: Spin Correlations 2C: Lattice Modulation 3D: Numerical analysis 4References 5
+
+A: LUTTINGER-WARD FUNCTIONAL FOR SCBA+RPA 
+
+FIG. S1. Normal (Φ N ) and anomalous (Φ A) contributions to the Luttinger-Ward functional, Φ = Φ N +Φ A, for the SCBA+RPA. 
+
+Here, we construct the Luttinger-Ward functional that gives rise to the self-consistent Dyson equations in Fig. 1(a) of the main text. We start from the Dyson equations 
+
+G(k) = G0(k) + G0(k)Σ h(k)G(k), D(k) = D0(k) + D0(k)Π(k)D(k). (S1) Here, k = ( k, iω k) and we define the propagators as in the main text, with 
+
+D(k) = 
+
+D11 (k) D12 (k)
+
+D21 (k) D22 (k)
+
+
+
+, Π(k) = 
+
+Π11 (k) Π 12 (k)Π21 (k) Π 22 (k)
+
+
+
+. (S2) Using that D012 = D021 = 0, we obtain the scalar Dyson equations for the magnons 
+
+D11 (k) = D011 (k) [1 + Π 11 (k)D11 (k) + Π 12 (k)D21 (k)] ,D12 (k) = D011 (k) [Π 11 (k)D12 (k) + Π 12 (k)D22 (k)] . (S3) Now, we define the Luttinger-Ward functional [1–4] as the sum of the two terms, Φ = Φ N + Φ A, in Fig. S1. Explicitly, ΦN = 1
+
+β2
+
+X
+
+> p,q
+
+g2(p, q)G(p)D11 (−q)G(p + q),
+
+ΦA = 12β2
+
+X
+
+> p,q
+
+g(p, q)g(p + q, −q)G(p) [ D12 (−q) + D21 (+ q)] G(p + q). (S4) From this, we derive the hole self-energy as the functional derivative with respect to G(k) [intuitively, this corresponds to cutting a hole propagator line in Φ] Σh(k) = −β δΦ
+
+δG (k) = − 1
+
+β
+
+X
+
+> q
+
+G(k+q) g2(k+q, −q)D11 (q)+ g2(k, q)D11 (−q)
+
+− 1
+
+β
+
+X
+
+> q
+
+g(k, q)g(k + q, −q)G(k+q) [ D12 (−q) + D21 (+ q)] . (S5) 2Similarly, the magnon self-energies are [again, intuitively corresponding to cutting magnon propagator lines in Fig. S1] Π11 (k) = β δΦ
+
+δD 11 (k) = 1
+
+β
+
+X
+
+> p
+
+g2(p, −k)G(p)G(p − k).
+
+Π12 (k) = β
+
+ δΦ
+
+δD 12 (k) + δΦ
+
+δD 12 (−k)
+
+
+
+= 12β
+
+X
+
+> p
+
+
+
+g(p, −k)g(p−k, k)G(p)G(p−k)+ g(p, k)g(p+k, −k)G(p)G(p+k)
+
+
+
+= 1
+
+β
+
+X
+
+> p
+
+g(p, k)g(p + k, −k)G(p)G(p + k). (S6) Note that the anomalous magnon self-energy Π 12 follows from a symmetrized derivative. This comes about, because of the symmetry D12 (k) = D12 (−k), whereby one cannot independently vary with respect to D12 (k) and D12 (−k) [3]. These self-energies correspond to the self-consistent Born approximation (SCBA) for the holes and the self-consistent rotating phase approximation (RPA) for the magnons, see Fig. S2. As they are derived from a Luttinger-Ward functional, the applied SCBA+RPA scheme is a conserving approximation [1–3]. 
+
+FIG. S2. The magnon self-energies (top) in the self-consistent RPA, and the hole self-energy (bottom) in the SCBA. These are derived from the Luttinger-Ward functional in Fig. S1. 
+
+B: SPIN CORRELATIONS 
+
+Defining the staggered magnetisation as Mstag = 1
+
+> N
+
+P 
+
+> i
+
+ηiSzi for T = 0 with ηi being alternatively 1 and −1 for the A and B sublattice respectively, we find 
+
+Mstag = 12 (1 − δ) − 1
+
+N
+
+X
+
+> k
+
+
+
+v2 
+
+> k
+
++ n11 
+
+> k
+
+ u2 
+
+> k
+
++ v2
+
+> k
+
+ − 2ukvkn12 
+
+> k
+
+
+
+= 12 (1 − δ) − S0. (S7) Here, ni 
+
+> k
+
+= − R 0 
+
+> −∞
+
+Ai(k, ω )dω/ (2 π) for i ∈ [11 , 12], and S0 = P 
+
+> k
+
+Sv (k) = P
+
+> k
+
+(v2 
+
+> k
+
++ n11  
+
+> k
+
+(u2 
+
+> k
+
++ v2
+
+> k
+
+) − 2ukvkn12  
+
+> k
+
+). The staggered magnetisation is plotted against doping in Fig. S3. We clearly see how it decreases with δ as expected. For 
+
+δ = 0, we find ⟨Sz ⟩ ≃ 0.35 which is larger than the usual LSWT result ⟨Sz ⟩ ≃ 0.303 obtained in the limit N → ∞ of an infinite lattice [5]. This difference is due to finite size effects in our 20 × 20 lattice. We now calculate the longitudinal correlation function 4 ⟨Sz (d)Sz (0)⟩ = 4
+
+> N
+
+P 
+
+> i
+
+Szi+dSzi . Since the Pauli matrices satisfy σ2 
+
+> i
+
+= I, this gives 1 − δ for d = 0. For d̸ = 0, we apply the Boguliobov transformations and afterwards Wick’s theorem. After some algebra one finds 4 ⟨Sz (d)Sz (0)⟩ ≃ 4( −1) d
+
+ 14 (1 − δ)2 − S0(1 − δ − S0) + X
+
+> kq
+
+ei(k−q)d ˜S(k) ˜S(q) + X
+
+> kq
+
+ei(k−q)dSu(k)Sv (q)
+
+− 14 |H(d)|2
+
+ (S8) with 
+
+H(d) = 1
+
+N
+
+X
+
+> k
+
+D
+
+h†
+
+> k
+
+hk
+
+E
+
+eik·d, ˜S(k) = 1
+
+N
+
+−ukvk(2 n11  
+
+> k
+
++ 1) + n12  
+
+> k
+
+(u2 
+
+> k
+
++ v2
+
+> k
+
+)
+
+Su(k) = 1
+
+N
+
+u2 
+
+> k
+
++ n11  
+
+> k
+
+(u2 
+
+> k
+
++ v2
+
+> k
+
+) − 2ukvkn12 
+
+> k
+
+ , and Sv (k) = 1
+
+N
+
+v2 
+
+> k
+
++ n11  
+
+> k
+
+(u2 
+
+> k
+
++ v2
+
+> k
+
+) − 2ukvkn12 
+
+> k
+
+ .3b) a) 
+
+> FIG. S3. ( a) The staggered magnetisation for small dopings. ( b) The spin structure factor for two different dopings.
+
+Subtracting the mean we find 
+
+Cz (d) = 4 [ ⟨Sz (d)Sz (0)⟩ − ⟨ Sz (d)⟩ ⟨ Sz (0)⟩]= 4 
+
+X
+
+> kq
+
+ei(k−q)·d ˜S(k) ˜S(q) + X
+
+> kq
+
+ei(k−q)·dSu(k)Sv (q) − 14 |H(d)|2
+
+
+
+By applying inversion symmetry one can see that Cz (d) indeed is real. Taking the Fourier transform of ⟨Sz (d)S(0)⟩
+
+we determine the spin structure factor S(k) = 1
+
+> N
+
+P 
+
+> d
+
+⟨Sz (d)S(0)⟩ eik·d. Note that this approach using Wick’s theorem corresponds to LSWT, which ignores interactions between the magnons. We plot in Fig. S3(b) the spin structure factor at half-filling and at doping δ = 0 .075. We clearly see a peak at the AFM ordering vector ( π, π ) for both dopings. For δ = 0 .075, the peak is however broader and significantly lower (reduced by a factor ∼ 0.56) in agreement with what is observed experimentally [6]. We also calculate the transverse correlation function Cx(d) = Cy (d) = 4
+
+> N
+
+P 
+
+> i
+
+Sxi+dSxi , which is different from the longitudinal correlation function in the broken symmetry phase. In addition, we of course have ⟨Sxi ⟩ = ⟨Syi ⟩ = 0. As above, we use the Boguliubov transformation together with Wick’s theorem ignoring interactions between the magnons, which corresponds to LSWT. Including terms up to and including quartic order gives 
+
+Cx(d) = 2(1 − 2δ)
+
+N
+
+X
+
+> k
+
+cos( k · d)Ψ k
+
+n11  
+
+> k
+
++ n12  
+
+> k
+
++ 1 /2 + 4
+
+N
+
+X
+
+> k′
+
+cos( k′ · r)Sv (k′)
+
+− 4
+
+N
+
+X
+
+> k′k
+
+cos( k′ · r)
+
+
+
+2 ˜S(k′)Sv (k) + Sv (k′) ˜S(k) + Sv (k′)Sv (k) + ˜S(k′) ˜S(k) + Sv (k′)Su(k)
+
+
+
+with Ψ k = [(1 − γk)/(1 + γk)] 1/2. To compare with experiments where the magnetic order points in random directions from shot to shot, we define the average correlation function C2(d) = 13 Cz (d) + 23 Cx(d). 
+
+> C: LATTICE MODULATION
+
+In this section, we consider the response of the system to an in-phase ( T+) and out-of-phase ( T−) lattice modulation in the x- and y-directions as measured recently [7]. This experiment measures the heating rate caused by the lattice modulation in a sample of ultra-cold ( T /t < 0.15) 6Li atoms realising a nearest neighbour Hubbard model with U = 7 t
+
+and dopings 0 ≤ δ ≤ 0.30. The perturbation caused by the lattice modulation is 
+
+H′(τ ) = V cos( ωτ )T± with T± = X
+
+> iσ
+
+c† 
+
+> iσ
+
+ci+xσ ± c† 
+
+> iσ
+
+ci+yσ + h.c. (S9) This gives rise to the heating rate [7] 
+
+dQ dτ = 12 ω|V |2Im[ χ−(ω)] with χ±(ω) = −i
+
+Z ∞−∞ 
+
+Θ( t′) ⟨[T±(t′), T ±(0)] ⟩ e−iωt ′
+
+dt ′.
+
+Care has to be taken when calculating χ± from the t − J model, since the mapping from the Hubbard to the 
+
+t − J model involves a unitary Schrieffer-Wolff transformation eS , to systematically include doubly occupied states 4to lowest order [8]. Specifically, the t − J model is obtained from the Hubbard model ˆH = ˆHt + ˆHU with Ht =
+
+−t P 
+
+> <i,j>
+
+c† 
+
+> iσ
+
+cjσ + h.c. and HU = U P 
+
+> i
+
+ni, ↑ni, ↓ by the transformation PLeS He −S PL. Here PL projects onto states with maximally one particle per lattice site and S is chosen such that PLeS He −S PH = 0 to leading order in t. Defining 
+
+PL = Π i(1 − ni, ↑ni, ↓) and PH = 1 − PL, we may write S = −PH H−1 
+
+> U
+
+HtPL − PLHtH−1 
+
+> U
+
+PH [5]. The point is that this transformation also changes the operator T± to T eff  
+
+> ±
+
+= PLeS T±e−S PL. To first order in t/U , we find 
+
+T eff  
+
+> ±
+
+≈ PL (T± + [ S, T ±]) PL = T 0 
+
+> ±
+
++ T 1
+
+> ±
+
+.
+
+Rewriting this using the slave fermion representation and ignoring quartic terms then gives Eq. (5) in the main text. Having derived T eff  
+
+> ±
+
+, we then consider the Matsubara response function χmat  
+
+> ±
+
+(τ ) = −
+
+D
+
+Tτ [T ef f  
+
+> ±
+
+(τ ), T ef f  
+
+> ±
+
+(0)] 
+
+E
+
+with 
+
+τ = it ′ ∈ [−1/T ; 1 /T [ imaginary time [9]. The retarded correlation function can then be obtained from the Fourier transform 
+
+χmat  
+
+> ±
+
+(iω n) = 
+
+Z β
+
+> 0
+
+eiω nτ D
+
+T ef f  
+
+> ±
+
+(τ )T ef f  
+
+> ±
+
+(0) 
+
+E
+
+dτ ≃ χ00  
+
+> ±
+
++ χ01  
+
+> ±
+
++ χ10  
+
+> ±
+
++ χ11  
+
+> ±
+
+, (S10) by the analytic continuation χ±(ω) = χmat  
+
+> ±
+
+(iω n → ω + i0+). Here ωn = 2 nT is a bosonic Matsubara frequency. In the last equality of Eq. (S10), we have used Wick’s theorem corresponding to LSWT. We furthermore assume a small hole concentration δ < J/t so that the term χ00  
+
+> ±
+
+scaling as first order in δ and the term χ11  
+
+> ±
+
+scaling as second order in t/U are included whereas the terms χ01  
+
+> ±
+
+and χ10  
+
+> ±
+
+scaling as δ2 or δt/U are ignored. Equation (S10) is illustrated diagrammatically in Fig. S4. While this approximation includes the effect of magnon-hole interactions by using fully dressed Green’s functions, it would be very interesting but also challenging to go beyond the small doping assumption and LSWT to include magnon-magnon interactions in a conserving calculation of the response. In Fig. S4(c), we present the response to an in- and an out-of-phase lattice modulation for dopings δ = 0 .1 and 
+
+δ = 0 .09 respectively. There is less agreement between theory and experiment than for the dopings in the main manuscript. We speculate that this is due to the system being in the cross-over region between the pseudogap and the Fermi liquid phase for these higher hole dopings, where we do not expect our small doping theory to apply [7]. In Fig. S4(d), we show results for the same dopings as in the main manuscript but where we have now tuned the spin coupling coefficient J in the calculations to fit the theoretically predicted maxima with the experimental data. Importantly, we use the same rescaling of J for the in-phase and out-of-phase modulations and for all dopings. We see that there are now even better agreement between theory and experiment, and this rescaling procedure can therefore be regarded as an ad hoc way to incorporate finite temperature effects. 
+
+> D: NUMERICAL ANALYSIS
+
+Achieving self-consistent solutions for the Green’s functions in this article is computationally expensive and the convergence is slow. We have used differentiated frequency resolutions with finest resolution for ω ∈ [−t, 3t]. For most of our calculations, the grid has been truncated outside −6t and 8 t. To ensure that peaks are fully captured, we have used the frequency steps ∆ ω < η/ 2. In all calculations we have taken η = 0 .04 t except in Fig. S4(c) where have used 
+
+η = 0 .08 t. To achieve convergence we have updated the self-energies partially so that the self-energy Σ n at iteration 
+
+n is given by Σ n = (1 − α)Σ n−1 + αf (Σ) where f (Σ) is the result from calculating the self-energy expressions and 
+
+α ≃ 0.10. Similar computational tricks have been applied in Refs. [10, 11]. For all integrals we have used the trapezoidal integration method and exploited symmetries such as D12 (k, iq n) = D21 (k, iq n), (DA
+
+> 11
+
+)† = DR
+
+> 11
+
+, (GAh )† = GRh , and (DA
+
+> 22
+
+)† = DR
+
+> 22
+
+, which are preserved through the iteration process [11]. We have also used that all Greens functions are invariant under C4 transformations and under the transformation k → k + ( π, π ), with the exception of D12 (k, iω n)where D12 (k+( π, π ), iω n) = −D12 (k, iω n). This allows us to restrict the 20 ×20 lattice points to 36 unique momentum states. For pairs of momentum states related both by a C4 transformation and k → k+( π, π ) up to an integer multiple of reciprocal lattice vectors, such as ( π, 0) and (0 , π ) or ( π/ 2, π/ 2) and (3 π/ 2, 3π/ 2), we find D12 (k, iω n) = 0. 5c) 
+
+## a) 
+
+## b) 
+
+## d) 
+
+FIG. S4. ( a) Diagrams corresponding to our calculation of the out-of-phase response function χmat  
+
+> −
+
+. Grey vertices correspond to the factor g−(q, k), where q is the incoming hole momentum and −k is the outgoing magnon momentum. Brown vertices correspond to the factor g−(k + q, −k), where k and q is the incoming magnon and hole momentum respectively. Blue vertices correspond to the factor 2 J ˜γk/(tp1 − γ2
+
+> k
+
+) and green vertices to −4γkJ ˜γk/(tp1 − γ2
+
+> k
+
+). For T = 0 and δ = 0, only the first diagram in the second line is non-zero, and it gives rise to the two magnon peak. ( b) Diagrams corresponding to our calculation of the in-phase response function χmat + . Teal vertices correspond to the factor g+(q, k), where q is the incoming hole momentum and −k is the outgoing magnon momentum. Pink vertices correspond to the factor g+(k+q, −k) where k and q is the incoming magnon and hole momentum respectively. Orange vertices correspond to the factor 2 ωk/t . All diagrams vanish for T = 0 and 
+
+δ = 0. ( c) Response to an in-phase (left) and out-of-phase (right) lattice modulation for dopings δ = 0 .1 and δ = 0 .09. The experimental points are taken from Ref. [7]. The calculation presented here is, unlike the other calculations presented in the article, made for a 16 × 16 grid with η = 0 .08. ( d) A calculation of the in-phase and out-of-phase lattice modulation responses for the same dopings as in Fig. 4 of the main text, but where we have rescaled J → (2 .35 /3.3) J.[1] G. Baym and L. P. Kadanoff, Phys. Rev. 124 , 287 (1961). [2] G. Baym, Phys. Rev. 127 , 1391 (1962). [3] G. Stefanucci and R. van Leeuwen, Green’s functions for nonequilibrium fermion–boson systems, in Nonequilibrium Many-Body Theory of Quantum Systems: A Modern Introduction (Cambridge University Press, 2025) p. 451–520. [4] A. Secchi, M. Polini, and M. I. Katsnelson, Annals of Physics 417 , 168100 (2020), eliashberg theory at 60: Strong-coupling superconductivity and beyond. [5] A. Auerbach, Interacting Electrons and Quantum Magnetism , edited by J. L. Birman, H. Faissner, and J. W. Lynn (Springer-Verlag, New York, 1994). [6] T. Chalopin, P. Bojovi´ c, S. Wang, T. Franz, A. Sinha, Z. Wang, D. Bourgund, J. Obermeyer, F. Grusdt, A. Bohrdt, L. Pollet, A. Wietek, A. Georges, T. Hilker, and I. Bloch, Proceedings of the National Academy of Sciences 123 , e2525539123 (2026), https://www.pnas.org/doi/pdf/10.1073/pnas.2525539123. [7] L. H. Kendrick, A. Kale, Y. Gang, A. D. Deters, M. Lebrat, A. W. Young, and M. Greiner, Pseudogap in a fermi-hubbard quantum simulator (2025), arXiv:2509.18075 [cond-mat.quant-gas]. [8] J. R. Schrieffer and P. A. Wolff, Physical Review 149 , 491 (1966). [9] H. Bruus and K. Flensberg, Many-body quantum theory in condensed matter physics – an introduction (Oxford University Press, 2016). [10] S. Kar and E. Manousakis, Phys. Rev. B 84 , 205107 (2011). [11] A. Sherman, Physical Review B 55 , 464 (1997).

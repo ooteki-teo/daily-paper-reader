@@ -1,0 +1,792 @@
+Title: 2604.10483v1.pdf
+
+URL Source: https://arxiv.org/pdf/2604.10483v1
+
+Published Time: Tue, 14 Apr 2026 01:03:05 GMT
+
+Number of Pages: 14
+
+Markdown Content:
+Topological Magnon -Phonon Hybrid Bands in Ferromagnetic Skyrmion Crystals   
+
+> Doried Ghader* 1and Bilal Jabakhanji 1
+> 1College of Engineering and Technology, American University of the Middle East, Egaila 54200, Kuwait
+> *doried.ghader@aum.edu.kw
+
+Abstract 
+
+We investigate magnon -phonon (MP) excitations in a Néel -type two -dimensional ferromagnetic 
+
+skyrmion crystal (SkX) stabilized on a triangular spin lattice by Dzyaloshinskii -Moriya interaction 
+
+(DMI) . Although the lowest two magnon bands of the bare SkX are topologically trivial, we show 
+
+that coupling to lattice vibrations reconstructs the low -energy sector and generates topological 
+
+MP hybrid bands. Starting from a spin -lattice Hamiltonian in which phonons couple to magnons 
+
+through fluctuations of the DM I vect ors, we derive the bosonic Hamiltonian for the SkX and 
+
+compute the hybrid band structure by Bogoliubov diagonalization. MP coupling opens gaps at 
+
+low -energy magnon -phonon crossings, lifts phonon degeneracies associated with supercell 
+
+folding, and yields nontrivial Chern numbers for the lowest hybrid bands . The resulting low -
+
+energy topology and associated edge states remain robust under magnetic -field variation, while 
+
+higher -energy hybrid bands can undergo field -driven topological phase transitions. These re sults 
+
+extend topological magnon -phonon hybridization to noncoplanar SkX s. 
+
+Introduction 
+
+Skyrmion crystals (SkXs) [1] are periodic superlattices formed by topological spin textures, giving 
+
+rise to effective gauge fields for collective excitations [2 –11] . Magnons in SkXs were shown to 
+
+acquire finite Berry curvature and nonzero Chern numbers [5 –7,12 –19] , accompanied by field -
+
+driven topological transitions and controllable chiral edge states [20 –23] . Yet an important 
+
+limitation of ferromagnetic (FM) SkXs stabilized on an underlying triangular spin lattice is that the 
+
+lowest magnon sector is typically topologically trivial. In particular, the first two bulk magnon 
+
+bands do not generally provide the low -energy topological window most naturally suited f or 
+
+transport and spectroscopic probes [12,21,23] .
+
+Meanwhile, magnon -phonon (MP) hybridization [24 –27] has emerged as a novel route to bosonic 
+
+band topology. The oretical studies showed that hybridization with lattice modes can reconstruct 
+
+band topology rather than merely renormalize a preexisting magnon spectrum. As such, MP 
+
+hybrid excitations can realize topological band structures even when the uncoupled magnon and 
+
+phonon bands are individually trivial [28,29] . Such topological hybrid excitations have been reported in various ground states, including ferromagnets [30,31] , collinear and noncollinear 
+
+antiferromagnets [32 –35] , and ferrimagnets [36] . A complementary direction has explored how 
+
+hybridization redistributes topological quantities when one sector is already topological [37 –39] .
+
+Additional theoretical works predicted the emergence of chiral MP edge states [40] and reported 
+
+field -driven magnetic phase transitions that strongly reshape MP Hall transport [41] .
+
+Experimental progress on MP hybridization has further reinforced these theoretical 
+
+predictions [42 –44] , including the observation of topological MP excitations induced by strong 
+
+Dzyaloshinskii -Moriya interaction (DMI) in the multiferroic  Fe2Mo3O8 [45] . Chirality -selective MP 
+
+hybridization and magnon -induced chiral phonons were also observed in the layered 
+
+antiferromagnet  FePSe 3 [46] .
+
+An open question at the intersection of these developments is whether MP coupling can activate 
+
+topology in the low -energy sector of a SkX whose pure magnon bands are themselves 
+
+topologically trivial. Here, we address this question for MP excitations in a Néel -type 2D FM SkX 
+
+on a triangular lattice stabilized by DMI. We show that coupling magnons and phonons through 
+
+fluctuations of the DMI vectors reconstructs the low -energy sector . Although the first two 
+
+magnon bands of the bare SkX are topologically trivial, their hybridization with phonons 
+
+generates topological MP bands and associated edge states at low energy . Our results thus 
+
+establish a route to activate topology in a spectral window that is trivial in the pure -magnon 
+
+problem .
+
+Model Hamiltonian 
+
+Our model system is a 2D FM SkX on a triangular lattice , described by the Hamiltonian 
+
+𝐻 = 𝐻 𝑚 + 𝐻 𝑝 + 𝐻 𝑚𝑝 
+
+(1) 
+
+where  𝐻 𝑚  and  𝐻 𝑝  denote the magnetic and elastic subsystems, respectively, while  𝐻 𝑚𝑝  describes 
+
+the magnetoelastic coupling between them. 
+
+The magnetic Hamiltonian is given by 
+
+𝐻 𝑚 = −𝐽 ∑ 𝓢 𝑖 ⋅ 𝓢 𝑗 
+
+> 〈𝑖 ,𝑗 〉
+
+− 𝑑 ∑ 𝒅 ̂𝑖𝑗 ⋅ 𝓢 𝑖 × 𝓢 𝑗 
+
+> 〈𝑖 ,𝑗 〉
+
+− 𝐵 ∑ 𝒮 𝒊 
+
+> 𝒛
+> 𝑖
+
+(2)where  𝓢 𝑖  denotes the spin operator at site  𝑖 , whose equilibrium position in the absence of lattice 
+
+vibrations is  𝒓 𝑖 . The first term describes the FM nearest -neighbor (NN) Heisenberg exchange 
+
+interaction, with  𝐽 > 0. The second term, with  𝑑 > 0, represents an interfacial -type NN 
+
+DMI [5,12,23] , with vectors  𝒅 ̂ 𝑖𝑗 = 𝒓 ̂ 𝑖𝑗 × 𝒛 ̂ evaluated at equilibrium, where  𝒓 ̂ 𝑖𝑗 = (𝒓 𝑗 − 𝒓 𝑖 )/∣ 𝒓 𝑗 −
+
+𝒓 𝑖 ∣. The third term is the Zeeman coupling to an external magnetic field applied along the  𝑧  axis, 
+
+normal to the triangular lattice. 
+
+The elastic Hamiltonian is given by 
+
+𝐻 𝑝 = ∑ 𝒑 𝑖 
+
+> 2
+
+2𝑀 
+
+> 𝑖
+
++ 1 
+
+> 2
+
+𝜅 ∑[(𝒖 𝑖 − 𝒖 𝑗 ) ⋅ 𝒓 ̂ 𝑖𝑗 ]2
+
+> 〈𝑖 ,𝑗 〉
+
+(3)
+
+where  𝒖 𝑖  is the displacement vector of site  𝑖  from its equilibrium position , 𝒑 𝑖  is the conjugate 
+
+momentum vector,  𝑀  is the ion mass, and  𝜅  is the NN spring constant. We restrict the lattice 
+
+vibrations to the  𝑥  direction, which is sufficient to capture all results of interest. 
+
+The magnetoelastic Hamiltonian  𝐻 𝑚𝑝  arises from fluctuations of the DMI vectors  𝒅 ̂𝑖𝑗  when the 
+
+sites deviate from their equilibrium positions. Assuming small lattice displacements and 
+
+expanding the DMI to leading order around the equilibrium positions [29,36] , we obtain 
+
+𝐻 𝑚𝑝 = 𝑑 
+
+𝑙 ∑{[𝒖 𝑖𝑗 + (𝒓 ̂ 𝑖𝑗 ⋅ 𝒖 𝑖𝑗 )𝒓 ̂ 𝑖𝑗 ] × 𝒛 ̂ } ⋅ (𝓢 𝑖 × 𝓢 𝑗 )
+
+> 〈𝑖 ,𝑗 〉
+
+(4) 
+
+where  𝒖 𝑖𝑗 = 𝒖 𝑗 − 𝒖 𝑖  and  𝑙 = |𝒓 𝑗 − 𝒓 𝑖 | is the distance between NN sites. 
+
+The magnon Hamiltonian in the present SkX phase has been derived previously [5,23] . It can be 
+
+obtained from  𝐻 𝑚  by performing a local spin -axis rotation [47] and applying the Holstein -
+
+Primakoff bosonization in the rotated frame, whereby the rotated spin operators are expressed 
+
+in terms of magnon creation (𝑎 𝑖 
+
+> †
+
+) and annihilation (𝑎 𝑖 ) operators. The SkX forms an ordered 
+
+triangular superlattice of skyrmions, with  𝑁 𝑠  spins per skyrmion. The skyrmion centers form a 
+
+triangular Bravais lattice in real space. Accordingly, in momentum space, one can define a magnon 
+
+Bloch wavevector  𝒌  in the SkX Brillouin zone (BZ), which constitutes a mini -BZ relative to that of 
+
+the underlying atomic lattice. After Fourier transforming the magnon operators to momentum 
+
+space, the quadratic magnon Hamiltonian takes the form 𝐻 𝑚 = 1 
+
+> 2
+
+∑ Ψ𝑚  
+
+> †
+
+(𝒌 ) ℎ𝑚 (𝒌 ) Ψ𝑚 (𝒌 )
+
+> 𝒌
+
+(5)
+
+with  Ψ𝑚  
+
+> †
+
+(𝒌 ) = (𝑎 𝒌 1 
+
+> †
+
+… 𝑎 𝒌 𝑁 𝑠  
+
+> †
+
+𝑎 −𝒌 1 … 𝑎 −𝒌 𝑁 𝑠 ).
+
+Since lattice vibrations couple to the spin at each site, the phonon derivation must likewise be 
+
+carried out by including the  𝑁 𝑠  sites of the supercell, i.e., one skyrmion. The Hamiltonian  𝐻 𝑝  can 
+
+then be Fourier transformed, in analogy with previous works on simpler ground states [30,31,36] ,
+
+introducing the phonon displacement and momentum operators  𝑢 𝑘𝑖  and  𝑝 𝑘𝑖 , respectively. These 
+
+operators can be expressed in terms of phonon creation and annihilation operators as 
+
+𝑢 𝒌 𝑖 = √ ℏ
+
+> 2𝑀 𝜔 0
+
+(𝑏 𝒌 𝑖 + 𝑏 −𝒌 𝑖  
+
+> †
+
+)
+
+𝑝 𝒌 𝑖 = −𝑖 √𝑀 ℏ𝜔 0 
+
+> 2
+
+(𝑏 −𝒌 𝑖 − 𝑏 𝒌 𝑖  
+
+> †
+
+)
+
+(6)
+
+where  𝜔 0 = √𝜅 /𝑀  is a reference oscillator frequency. In terms of these operators,  𝐻 𝑝  takes the 
+
+form 
+
+𝐻 𝑝 = 1 
+
+> 2
+
+∑ Ψ𝑝 
+
+> †
+
+(𝒌 )ℎ𝑝 (𝒌 ) Ψ𝑝 (𝒌 )
+
+> 𝒌
+
+(7)
+
+where  Ψ𝑝 
+
+> †
+
+(𝒌 ) = (𝑏 𝒌 1 
+
+> †
+
+… 𝑏 𝒌 𝑁 𝑠  
+
+> †
+
+𝑏 −𝒌 1 … 𝑏 −𝒌 𝑁 𝑠 ). Note that  ℎ𝑝 (𝒌 ) is not diagonal in this 
+
+basis. 
+
+At this stage,  𝐻 𝑚𝑝  can be treated similarly and expressed in terms of the magnon and phonon 
+
+operators as 
+
+𝐻 𝑚𝑝 = 1 
+
+> 2
+
+∑ Ψ𝑝 
+
+> †
+
+(𝒌 )ℎ𝑚𝑝 (𝒌 )Ψ𝑚 (𝒌 )
+
+> 𝒌
+
++ ℎ. 𝑐 .
+
+(8)
+
+Finally, using Eqs . (5), (7), and (8), the total Hamiltonian takes the form 𝐻 = 1 
+
+> 2
+
+∑ (Ψ𝑚  
+
+> †
+
+(𝒌 ) Ψ𝑝 
+
+> †
+
+(𝒌 )) ℎ(𝒌 ) (Ψ𝑚 (𝒌 )
+
+Ψ𝑝 (𝒌 ) )
+
+> 𝒌
+
+(9a)
+
+where 
+
+ℎ(𝒌 ) = ( ℎ𝑚 (𝒌 ) ℎ𝑚𝑝  
+
+> †
+
+(𝒌 )
+
+ℎ𝑚𝑝 (𝒌 ) ℎ𝑝 (𝒌 ) )
+
+(9b)
+
+Details of the derivation from Eq. (1) to Eq. (9) are presented in the Supplemental Material, where 
+
+the explicit forms of the different Hamiltonian blocks are also provided. 
+
+Topological magnon -phonon hybrid bands 
+
+We set the magnetic parameters to  𝐽 = 1 𝑚𝑒𝑉 , 𝑆 = 1, and  𝑑 = 2.16 𝑚𝑒𝑉 , and simulate the 
+
+ground state using the stochastic Landau -Lifshitz -Gilbert (sLLG) equations within the Vampire 
+
+software package [48] . Note that the problem is normalized with respect to  𝐽 , while its unit is 
+
+retained for transparency in the units of the remaining parameters. The relatively large value of 
+
+𝑑  is adopted from previous works [49,50] and can be physically motivated by mechanisms that 
+
+effectively renormalize the ratio  𝑑 /𝐽  in favor of DMI [51 –53] . We emphasize, however, that this 
+
+choice is primarily motivated by the need to generate small skyrmions (Fig. 1) and thereby 
+
+facilitate the numerical calculations, without affecting the general conclusions, as discussed later 
+
+in this section.          
+
+> Figure 1. Néel -type FM SkX on the triangular spin lattice at the minimum magnetic field ( 𝐵 𝑚𝑖𝑛 =26 .4𝑇 ) stabilizing
+> the SkX phase. Arrows represent the local spin directions on the lattice sites, with color indicating the out -of -plane
+> spin component. The SkX forms a periodic triangular superlattice with periodicity 6𝑙 . The black hexagon outlines the
+> magnetic unit cell containing 𝑁 𝑠 =36 spins.
+
+The sLLG simulations are initialized from random spin configurations at high temperature and 
+
+then gradually cooled to near zero temperature under an external magnetic field. A minimum 
+
+magnetic field is required to drive the ground state from the spiral pha se into the SkX phase. Note 
+
+that DMI -induced skyrmions do not generally form an ideal periodic SkX [54 –57] , which requires 
+
+some adjustment using appropriate functionals [16,21] . The resulting idealized SkX at the 
+
+minimum magnetic field is shown in Fig. 1. It has a periodicity of  6𝑙 , where  𝑙  is the distance 
+
+between nearest -neighbor sites, and contains  𝑁 𝑠 = 36  sites per unit cell. 
+
+The elastic parameters (𝜅  and  𝑀 ) are chosen such that, in the noninteracting limit, the lowest two 
+
+phonon bands cross their magnon counterparts. Note that the phonon Hamiltonian can be 
+
+written as  ℎ𝑝 (𝒌 ) = ℏ𝜔 0ℎ̃𝑝 (𝒌 ), with  𝜔 0 = √𝜅 /𝑀  and  ℎ̃𝑝 (𝑘 ) parameter -free (see Supplemental 
+
+Material). Therefore, the desired crossing condition is determined by the ratio  𝜅 /𝑀 . This 
+
+condition can be achieved for a wide range of (𝜅 , 𝑀 ) values, from which we choose  𝜅 =
+
+1 × 10 4 𝑚𝑒𝑉 /𝑛 𝑚 2 and  𝑀 = 5 × 10 13 𝑚𝑒𝑉 /𝑐 2. We also set  𝑙 = 0.5 𝑛𝑚  [36] in the MP coupling 
+
+Hamiltonian.        
+
+> Figure 2. Low energy magnon and phonon band structures at 𝐵 𝑚𝑖𝑛 =26 .4𝑇 . (a) Noninteracting bands, showing the
+> lowest two magnon bands (blue) and the lowest seven phonon bands (red) along the high -symmetry path of the SkX
+> BZ. The first and second magnon bands cross the first and second phonon bands, respectively. The uncouple d
+> magnon bands are topologically trivial, while the phonon bands exhibit degeneracies associated with the supercell
+> folding. (b) MP hybrid bands in the presence of MP coupling. The coupling opens gaps at the crossings and lifts the
+> phonon degeneracies, pro ducing topological hybrid bands with Chern numbers {0,1,0,2,1}for the lowest five bands.
+
+The band structure is calculated by diagonalizing the Hamiltonian  ℎ(𝒌 ) via a Bogoliubov 
+
+transformation following Colpa’s method [58] . Figure 2(a) shows the low energy magnon (blue) 
+
+and phonon (red) bands in the absence of MP coupling. In particular, we plot the lowest two 
+
+magnon bands and the lowest seven phonon bands along the high -symmetry lines of the Brillouin 
+
+zone (BZ). The first and second magnon bands cross the first and second phonon bands, 
+
+respectively. In the noninteracting limit, the two magnon bands are topologically trivial, with  𝐶 1 =
+
+𝐶 2 = 0. Likewise, the phonon bands are degenerate and topologically trivial. One can also notice 
+
+the folding of these bands due to the supercell treatment, which produces several nodal points 
+
+at  Γ, M, and  K. Moreover, the seven phonon bands are fully resolved only along the  KM  branch, 
+
+whereas twofold degeneracies leave only five independent bands along the  ΓK and  MΓ branches. 
+
+Figure 2(b) shows the MP hybrid bands when the MP coupling is included. This coupling drastically 
+
+reconstructs the band structure relative to the noninteracting case shown in Fig. 2(a). Gaps open 
+
+at the crossings between the pure magnon and phonon bands. M oreover, the MP coupling lifts 
+
+the degeneracies previously present in the pure phonon bands. The resulting gapped MP band 
+
+structure allows the calculation of Chern numbers. Using the numerical method developed by 
+
+Fukui et al . [59] , we compute the Chern numbers of the lowest five MP bands and obtain 
+
+{0,1,0,2,1} at the minimum magnetic field. Therefore, the MP hybrid excitations in the SkX exhibit 
+
+a topological band structure even though the uncoupled magnon and phonon bands are 
+
+individually trivial. 
+
+Magnetic fields are known to induce significant modifications of the pure magnon bands in 
+
+SkXs [16,20 –23] . We find a similar effect for the MP hybrid excitations. At the minimum magnetic 
+
+field [Fig. 2(b)], a small global gap separates the second and third MP bands. Increasing the 
+
+magnetic field enlarges this gap, as shown in Fig. 3(a), without changing the co rresponding Chern 
+
+numbers. Figure 3(b) shows the corresponding noninteracting bands for reference. Since  𝐶 1 +
+
+𝐶 2 = 1, this second global gap hosts genuine topological MP hybrid edge states [60] at the higher 
+
+magnetic field (see Supplemental Material). Figure 3 . Band structure at a higher magnetic field ( 33 𝑇 ). (a) MP hybrid bands, showing the enhancement of the      
+
+> global gap between the second and third bands relative to Fig. 2(b), while preserving the corresponding Chern
+> numbers. The shaded ribbon marks the global second gap. (b) Corresponding noninteracting ba nds at the same
+> magnetic field. The second global gap in panel (a) is topological, since 𝐶 1+𝐶 2=1, and therefore hosts MP hybrid
+> edge states (see Supplemental Material).
+
+The Chern numbers  𝐶 1 and  𝐶 2, and hence the associated topological edge states, remain robust 
+
+against variations in the magnetic field. Nevertheless, the magnetic field can induce topological 
+
+phase transitions in higher -energy MP bands. An example is illustrated in Fig. 4(a), which s hows a 
+
+gap closure between the fourth and fifth bands at a high magnetic field. Figure 4(b) shows the 
+
+corresponding noninteracting bands at the same field and highlights the significant 
+
+reconstruction produced by the MP coupling. This band closure changes the MP Chern numbers 
+
+from  𝐶 4 = 2 and  𝐶 5 = 1 to  𝐶 4 = 1 and  𝐶 5 = 2. Note that, at this relatively high magnetic field, 
+
+the second magnon band in the noninteracting limit hybridizes with several higher -energy 
+
+phonon bands [Fig. 4(b)]. Additional gap closures involving higher -energy bands may occur at still 
+
+larger magnetic fields. However, the low -energy topology, including  𝐶 1, 𝐶 2, and the topological 
+
+edge states in the second gap, remain s robust even for magnetic fields close to the SkX -to -FM 
+
+phase transition. Figure 4. Field -driven topological phase transition in the higher -energy MP bands. (a) MP hybrid bands at a critical                
+
+> magnetic field ( 𝐵 𝑐 ≈42 .6𝑇 ), showing a gap closure between the fourth and fifth bands (dashed circle). (b)
+> Corresponding noninteracting bands at the same field. The transition changes the Chern numbers from 𝐶 4=2,𝐶 5=
+> 1to 𝐶 4=1,𝐶 5=2, while the low -energy topology remains unchanged.
+
+We have presented our results for a relatively large DMI -to -exchange ratio,  𝑑 /𝐽 = 2.16 , as a 
+
+convenient parameter choice. Within the present formalism and provided umklapp scattering 
+
+remains negligible [16] , reducing the DMI primarily rescales the characteristic skyrmion size, the 
+
+magnetic -field scale, and the magnon energy window, while leaving the qualitative structure of 
+
+the spectrum and the associated physical conclusions unchanged [23] . We demonstrate this 
+
+explicitly for  𝑑 /𝐽 = 1 in the Supplemental Material. The present results should therefore be 
+
+understood in this generic, rescaled sense. 
+
+Conclusion 
+
+In conclusion, our results show that magnon -phonon coupling can generate low -energy 
+
+topological bands in a FM SkX whose bare low -energy magnon sector is topologically trivial. In 
+
+the present Néel -type triangular -lattice SkX, the coupling opens gaps at low -energy magnon -
+
+phonon crossings, removes supercell -induced phonon degeneracies, and produces nontrivial 
+
+Chern band s together with the corresponding topological edge states. We further found that this 
+
+low -energy topology remains robust over magnetic -field variation, whereas higher -energy hybrid 
+
+bands may still experience field -driven topological phase transitions. Thes e findings establish 
+
+noncoplanar SkX s as a platform for topological magnon -phonon hybrid bands and edge states .References 
+
+[1] S. Mühlbauer, B. Binz, F. Jonietz, C. Pfleiderer, A. Rosch, A. Neubauer, R. Georgii, and P. 
+
+Böni, Skyrmion lattice in a chiral magnet, Science (1979). 323 , 915 (2009). 
+
+[2] M. Garst, J. Waizner, and D. Grundler, Collective spin excitations of helices and magnetic 
+
+skyrmions: review and perspectives of magnonics in non -centrosymmetric magnets, J. 
+
+Phys. D Appl. Phys. 50 , 293002 (2017). 
+
+[3] O. Petrova and O. Tchernyshyov, Spin waves in a skyrmion crystal, Phys. Rev. B Condens. 
+
+Matter Mater. Phys. 84 , 214433 (2011). 
+
+[4] J. Iwasaki, A. J. Beekman, and N. Nagaosa , Theory of magnon -skyrmion scattering in chiral 
+
+magnets, Phys. Rev. B Condens. Matter Mater. Phys. 89 , 064412 (2014). 
+
+[5] A. Roldán -Molina, A. S. Nunez, and J. Fernández -Rossier, Topological spin waves in the 
+
+atomic -scale magnetic skyrmion crystal, New J. Phys. 18 , 045015 (2016). 
+
+[6] S. K. Kim, K. Nakata, D. Loss, and Y. Tserkovnyak, Tunable Magnonic Thermal Hall Effect in 
+
+Skyrmion Crystal Phases of Ferrimagnets, Phys. Rev. Lett. 122 , 057204 (2019). 
+
+[7] T. Weber et al., Topological magnon band structure of emergent Landau levels in a 
+
+skyrmion lattice, Science (1979). 375 , 1025 (2022). 
+
+[8] K. A. Van Hoogdalem, Y. Tserkovnyak, and D. Loss, Magnetic texture -induced thermal Hall 
+
+effects, Phys. Rev. B Condens. Matter Mater. Phys. 87 , 024402 (2013). 
+
+[9] M. Mochizuki, Spin -Wave Modes and Their Intense Excitation Effects in Skyrmion Crystals, 
+
+Phys. Rev. Lett. 108 , 017601 (2012). 
+
+[10] N. Nagaosa and Y. Tokura, Topological properties and dynamics of magnetic skyrmions, 
+
+Nature Nanotechnology 2013 8:12 8, 899 (2013). 
+
+[11] F. Zhuo, J. Kang, A. Manchon, and Z. Cheng, Topological Phases in Magnonics, Advanced 
+
+Physics Research 2300054 (2023). 
+
+[12] S. A. Díaz, J. Klinovaja, and D. Loss, Topological Magnons and Edge States in 
+
+Antiferromagnetic Skyrmion Crystals, Phys. Rev. Lett. 122 , 187203 (2019). 
+
+[13] T. Hirosawa, S. A. Diaz, J. Klinovaja, and D. Loss, Magnonic Quadrupole Topological 
+
+Insulator in Antiskyrmion Crystals, Phys. Rev. Lett. 125 , 207204 (2020). 
+
+[14] T. Hirosawa, A. Mook, J. Klinovaja, and D. Loss, Magnetoelectric Cavity Magnonics in 
+
+Skyrmion Crystals, (2022). [15] A. Mook, J. Klinovaja, and D. Loss, Quantum damping of skyrmion crystal eigenmodes due 
+
+to spontaneous quasiparticle decay, Phys. Rev. Res. 2, 033491 (2020). 
+
+[16] D. Ghader and B. Jabakhanji, Momentum -space theory for topological magnons in two -
+
+dimensional ferromagnetic skyrmion lattices, Phys. Rev. B 110 , 184409 (2024). 
+
+[17] V. E. Timofeev and D. N. Aristov, Magnon band structure of skyrmion crystals and 
+
+stereographic projection approach, Phys. Rev. B 105 , 024422 (2022). 
+
+[18] M. Akazawa, H. Y. Lee, H. Takeda, Y. Fujima, Y. Tokunaga, T. H. Arima, J. H. Han, and M. 
+
+Yamashita, Topological thermal Hall effect of magnons in magnetic skyrmion lattice, Phys. 
+
+Rev. Res. 4, 043085 (2022). 
+
+[19] H. Takeda et al., Magnon thermal Hall effect via emergent SU(3) flux on the 
+
+antiferromagnetic skyrmion lattice, Nature Communications 2024 15:1 15 , 566 (2024). 
+
+[20] V. E. Timofeev, Y. V. Baramygina, and D. N. Aristov, Magnon Topological Transition in 
+
+Skyrmion Crystal, JETP Lett. 118 , 911 (2023). 
+
+[21] D. Ghader and B. Jabakhanji, Impact of the honeycomb spin lattice on topological 
+
+magnons and edge states in ferromagnetic two -dimensional skyrmion crystals, Phys. Rev. 
+
+B 113 , 104430 (2026). 
+
+[22] V. E. Timofeev, D. A. Bedyaev, and D. N. Aristov, Topological Transition in Spectrum of 
+
+Skyrmion Crystal with Uniaxial Anisotropy, JETP Letters 2026 1 (2026). 
+
+[23] S. A. Diáz, T. Hirosawa, J. Klinovaja, and D. Loss, Chiral magnonic edge states in 
+
+ferromagnetic skyrmion crystals controlled by magnetic fields, Phys. Rev. Res. 2, 013231 
+
+(2020). 
+
+[24] T. Kikkawa, K. Shen, B. Flebus, R. A. Duine, K. I. Uchida, Z. Qiu, G. E. W. Bauer, and E. 
+
+Saitoh, Magnon Polarons in the Spin Seebeck Effect, Phys. Rev. Lett. 117 , 207203 (2016). 
+
+[25] B. Flebus, K. Shen, T. Kikkawa, K. I. Uchida, Z. Qiu, E. Saitoh, R. A. Duine , and G. E. W. 
+
+Bauer, Magnon -polaron transport in magnetic insulators, Phys. Rev. B 95 , 144420 (2017). 
+
+[26] S. Streib, N. Vidal -Silva, K. Shen, and G. E. W. Bauer, Magnon -phonon interactions in 
+
+magnetic insulators, Phys. Rev. B 99 , 184442 (2019). 
+
+[27] D. A. Bozhko, V. I. Vasyuchka, A. V. Chumak, and A. A. Serga, Magnon -phonon interactions 
+
+in magnon spintronics (Review article), Low Temperature Physics 46 , 383 (2020). 
+
+[28] R. Takahashi and N. Nagaosa , Berry Curvature in Magnon -Phonon Hybrid Systems, Phys. 
+
+Rev. Lett. 117 , 217205 (2016). [29] X. Zhang, Y. Zhang, S. Okamoto, and D. Xiao, Thermal Hall Effect Induced by Magnon -
+
+Phonon Interactions, Phys. Rev. Lett. 123 , 167202 (2019). 
+
+[30] G. Go, S. K. Kim, and K. J. Lee, Topological Magnon -Phonon Hybrid Excitations in Two -
+
+Dimensional Ferromagnets with Tunable Chern Numbers, Phys. Rev. Lett. 123 , 237207 
+
+(2019). 
+
+[31] P. Shen and S. K. Kim, Magnetic field control of topological magnon -polaron bands in two -
+
+dimensional ferromagnets, Phys. Rev. B 101 , 125111 (2020). 
+
+[32] S. Park and B. J. Yang, Topological magnetoelastic excitations in noncollinear 
+
+antiferromagnets, Phys. Rev. B 99 , 174435 (2019). 
+
+[33] S. Zhang, G. Go, K. J. Lee, and S. K. Kim, SU(3) Topology of Magnon -Phonon Hybridization 
+
+in 2D Antiferromagnets, Phys. Rev. Lett. 124 , 147204 (2020). 
+
+[34] B. Ma and G. A. Fiete, Antiferromagnetic insulators with tunable magnon -polaron Chern 
+
+numbers induced by in -plane optical phonons, Phys. Rev. B 105 , L100402 (2022). 
+
+[35] H. Huang and Z. Tian, Topological phonon -magnon hybrid excitations in a two -
+
+dimensional honeycomb ferromagnet, Phys. Rev. B 104 , 064305 (2021). 
+
+[36] S. Park, N. Nagaosa, and B. J. Yang, Thermal Hall Effect, Spin Nernst Effect, and Spin 
+
+Density Induced by a Thermal Gradient in Collinear Ferrimagnets from Magnon –Phonon 
+
+Interaction, Nano Lett. 20 , 2741 (2020). 
+
+[37] B. Sheikhi, M. Kargarian, and A. Langari, Hybrid topological magnon -phonon modes in 
+
+ferromagnetic honeycomb and kagome lattices, Phys. Rev. B 104 , 045139 (2021). 
+
+[38] W. Dong, H. Wang, M. Baggioli, and Y. Liu, Topological magnetic phases and magnon -
+
+phonon hybridization in the presence of strong Dzyaloshinskii -Moriya interaction, Phys. 
+
+Rev. B 113 , 064413 (2026). 
+
+[39] E. Thingstad, A. Kamra, A. Brataas, and A. Sudbø, Chiral Phonon Transport Induced by 
+
+Topological Magnons, Phys. Rev. Lett. 122 , 107201 (2019). 
+
+[40] J. D. Mella, L. E. F. F. Torres, and R. E. Troncoso, Chiral magnon -polaron edge states in 
+
+Heisenberg -Kitaev magnets, Phys. Rev. B 110 , 104433 (2024). 
+
+[41] G. Go, H. Yang, J. G. Park, and S. K. Kim, Topological magnon polarons in honeycomb 
+
+antiferromagnets with spin -flop transition, Phys. Rev. B 109 , 184435 (2024). 
+
+[42] S. Liu et al., Direct Observation of Magnon -Phonon Strong Coupling in Two -Dimensional 
+
+Antiferromagnet at High Magnetic Fields, Phys. Rev. Lett. 127 , 097401 (2021). [43] T. T. Mai, K. F. Garrity, A. McCreary, J. Argo, J. R. Simpson, V. Doan -Nguyen, R. V. Aguilar, 
+
+and A. R. Hight Walker, Magnon -phonon hybridization in 2D antiferromagnet MnPSe3, 
+
+Sci. Adv. 7, (2021). 
+
+[44] J. Luo et al., Evidence for Topological Magnon –Phonon Hybridization in a 2D 
+
+Antiferromagnet down to the Monolayer Limit, Nano Lett. 23 , 2023 (2023). 
+
+[45] S. Bao et al., Direct observation of topological magnon polarons in a multiferroic material, 
+
+Nat. Commun. 14 , 6093 (2023). 
+
+[46] J. Cui et al., Chirality selective magnon -phonon hybridization and magnon -induced chiral 
+
+phonons in a layered zigzag antiferromagnet, Nature Communications 2023 14:1 14 , 3396 
+
+(2023). 
+
+[47] J. Haraldsen and R. Fishman, Spin rotation technique for non -collinear magnetic systems: 
+
+application to the generalizedVillain model, Journal of Physics: Condensed Matter 21 ,
+
+216001 (2009). 
+
+[48] R. F. L. Evans, W. J. Fan, P. Chureemart, T. A. Ostler, M. O. A. Ellis, and R. W. Chantrell, 
+
+Atomistic spin model simulations of magnetic nanomaterials, Journal of Physics: 
+
+Condensed Matter 26 , 103202 (2014). 
+
+[49] K. Mæland and A. Sudbø, Quantum topological phase transitions in skyrmion crystals, 
+
+Phys. Rev. Res. 4, L032025 (2022). 
+
+[50] K. Mæland and A. Sudbø, Quantum fluctuations in the order parameter of quantum 
+
+skyrmion crystals, Phys. Rev. B 105 , 224416 (2022). 
+
+[51] E. A. Stepanov, S. A. Nikolaev, C. Dutreix, M. I. Katsnelson, and V. V. Mazurenko, 
+
+Heisenberg -exchange -free nanoskyrmion mosaic, Journal of Physics: Condensed Matter 
+
+31 , 17LT01 (2019). 
+
+[52] E. A. Stepanov, C. Dutreix, and M. I. Katsnelson, Dynamical and Reversible Control of 
+
+Topological Spin Textures, Phys. Rev. Lett. 118 , 157201 (2017). 
+
+[53] V. V. Mazurenko, Y. O. Kvashnin, A. I. Lichtenstein, and M. I. Katsnelson, A DMI Guide to 
+
+Magnets Micro -World, Journal of Experimental and Theoretical Physics 2021 132:4 132 ,
+
+506 (2021). 
+
+[54] M. Ma, Z. Pan, and F. Ma, Artificial skyrmion in magnetic multilayers, J. Appl. Phys. 132 ,
+
+043906 (2022). 
+
+[55] Y. Li et al., An Artificial Skyrmion Platform with Robust Tunability in Synthetic 
+
+Antiferromagnetic Multilayers, Adv. Funct. Mater. 30 , 1907140 (2020). [56] B. Jabakhanji and D. Ghader, Designing Layered 2D Skyrmion Lattices in Moiré Magnetic 
+
+Heterostructures, Adv. Mater. Interfaces 11 , 2300188 (2024). 
+
+[57] B. Jabakhanji and D. Ghader, Exploring moiré skyrmions in twisted double bilayer and 
+
+double trilayer ${ \mathbf{Cr}}{{ \mathbf{I}}_{ \mathbf{3}}}$, Journal of Physics: 
+
+Condensed Matter 37 , 075801 (2024). 
+
+[58] J. H. P. Colpa, Diagonalization of the quadratic boson hamiltonian, Physica A: Statistical 
+
+Mechanics and Its Applications 93 , 327 (1978). 
+
+[59] T. Fukui, Y. Hatsugai, and H. Suzuki, Chern numbers in discretized Brillouin zone: Efficient 
+
+method of computing (spin) Hall conductances, J. Physical Soc. Japan 74 , 1674 (2005). 
+
+[60] H. Katsura, N. Nagaosa, and P. A. Lee, Theory of the thermal hall effect in quantum 
+
+magnets, Phys. Rev. Lett. 104 , 066403 (2010).
