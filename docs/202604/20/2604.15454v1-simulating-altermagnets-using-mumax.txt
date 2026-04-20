@@ -1,0 +1,416 @@
+Title: Simulating altermagnets using mumax+
+
+URL Source: https://arxiv.org/pdf/2604.15454v1
+
+Published Time: Mon, 20 Apr 2026 00:05:41 GMT
+
+Number of Pages: 6
+
+Markdown Content:
+Simulating altermagnets using mumax +
+
+# Simulating altermagnets using mumax +
+
+Lars Moreels, 1 Nicolai Bechler, 2 Bartel Van Waeyenberge, 1 Jonathan Leliaert, 1 and Jan Masell 2
+
+> 1)
+
+DyNaMat, Department of Solid State Sciences, Ghent University, 9000 Ghent, Belgium 
+
+> 2)
+
+Institute of Theoretical Solid State Physics, Karlsruhe Institute of Technology (KIT), 76049 Karlsruhe, Germany 
+
+(*Electronic mail: Lars.Moreels@UGent.be) 
+
+In this paper, we demonstrate how altermagnets can be simulated in the recently released micromagnetic simulation package mumax +. We have added a new magnet class for d-wave altermagnets and demonstrate how mumax + is able to reproduce the analytical solutions for line profiles of the Néel vector and net magnetization for a Bloch domain wall. Next, we show simulation results of the magnon dispersion relation and its dependence on the anisotropic nature of the exchange interaction. Finally, we study the motion of a Néel skyrmion by applying a spin transfer torque. This new feature was implemented by extending the pre-existing code base for antiferromagnetic simulations. The object-oriented design of mumax + allows for a correct calculation of the magnetostatic field in multi-sublattice systems, a feature that many other micromagnetic simulators lack. 
+
+I. INTRODUCTION 
+
+Altermagnets 1,2 have recently been identified as a new class of magnetic order, where the breaking of time-reversal sym-metry is combined with compensated magnetic moments of antiferromagnetic order. This emerging research field in con-densed matter physics has offered many promising results for the use of altermagnets in spintronic and magnonic applica-tions 1,3,4 . Numerical studies of altermagnets often utilize ab initio, atomistic DFT calculations 5–9 or micromagnetic mod-eling of spin dynamics 10–12 by exchange-coupling two ferro-magnetic layers, representing two sublattices. However, when using the latter method, the magnetostatic interactions are cal-culated incorrectly. This is an important shortcoming, because in contrast to antiferromagnets, stray fields of altermagnetic textures are not always negligible 10,11,13 . This demonstrates the need for updated micromagnetic tools to properly simu-late altermagnets. In the current work, we present the im-plementation, verification, and usage of a new Altermagnet 
+
+class in the micromagnetic simulation package mumax +14 ,a recently released GPU-accelerated finite-difference solver. First, we outline the foundation and implementation of the added physics. Next, we verify its correctness by matching the simulation results to theoretical models for the static do-main wall profile and the magnon dispersion relation. Finally, we simulate the motion of a Néel skyrmion under the influ-ence of a spin transfer torque. 
+
+II. IMPLEMENTATION AND VERIFICATION 
+
+Extensibility is the core design feature of mumax +14 ,meaning the package is built to facilitate easy addition of new physics in order to keep up with the quickly evolving re-search field of magnetism. By treating a ferromagnet as an in-stance from a Ferromagnet class, mumax + is able to couple multiple ferromagnets behind the scenes, effectively creating multi-sublattice systems, such as antiferromagnets, ferrimag-nets and non-collinear antiferromagnets containing multiple coinciding ferromagnetic sublattices. Exchange-coupled sub-lattice spins reside in the same simulation cell, allowing for a correct calculation of the magnetostatic field. This makes mumax + the right platform for the implementation of d-wave altermagnets. 
+
+A. Implementation of 2D d-wave altermagnets in mumax +
+
+The implementation of altermagnets builds upon the one of antiferromagnets, and contains an additional anisotropic ex-change field, which arises from a broken symmetry in the local environment of magnetic sublattice moments 6,10,15 . The re-sulting spin order has d-wave symmetry in both real and recip-rocal space 5. In a micromagnetic framework, the anisotropic nature of the exchange interaction boils down to a differ-ent value of the exchange constant along the different prin-cipal axes of the simulation grid. In general, one can de-fine the symmetric, positive definite matrix A to capture the spin stiffness 16 . The exchange field Hex is then calculated with Ai j ∂i∂ jm(s), where m(s) is the magnetization field of a single ferromagnetic sublattice s normalized to the saturation magnetization, ∂i denotes a spatial partial derivative along the principal direction i (i, j = x, y) of the simulation grid and a summation over repeated indices is implied. An important observation is that the basis in which A is diagonal, does not necessarily coincide with the simulation grid directions. Since mumax + calculates derivatives along the latter, one can in general rotate the matrix A from its eigenbasis using a stan-dard rotation matrix R(φ ). Explicitly, the matrix to be used in the calculation of Hex is given by 
+
+A φ = R(φ )A R (φ )T ,
+
+=
+
+A1 cos 2 φ + A2 sin 2 φ cos φ sin φ (A1 − A2)
+
+cos φ sin φ (A1 − A2) A2 cos 2 φ + A1 sin 2 φ
+
+
+
+, (1) where A1 and A2 are the diagonal elements of A in its eigenbasis (i.e., its eigenvalues). The full exchange field in a d-wave altermagnet is then calculated in mumax + using 
+
+A φ 
+
+> i j
+
+∂i∂ jm(s) and the user is able to set the values of A1, A2
+
+and φ as shown in this minimal working example 
+
+> arXiv:2604.15454v1 [cond-mat.mes-hall] 16 Apr 2026
+
+Simulating altermagnets using mumax + 2    
+
+> from mumaxplus import World, Grid, Altermagnet world = World((1e-9, 1e-9, 1e-9)) grid = Grid((32, 32, 1)) magnet = Altermagnet(world, grid) magnet.alterex_1 = 15e-12 magnet.alterex_2 = 5e-12 magnet.alterex_angle = 2
+
+The d-wave symmetry of the altermagnetic spin ordering im-plies that the eigenbasis of A is rotated by 90 ◦ between the two sublattices, thereby interchanging the roles of A1 and A2.This is done automatically behind the scenes. It should also be noted that the matrix in Eq. (1) is diagonal in every orthogonal basis if A1 = A2, as it reduces to the case of isotropic exchange interaction. When the exchange matrix eigenbasis coincides with the sim-ulation grid, φ = 0 and the rotated matrix in Eq. (1) reduces to a diagonal form, leading to an exchange field given by 
+
+H(A) 
+
+> ex
+
+= A1
+
+μ0MS
+
+∂ 2m(A)
+
+∂ x2 + A2
+
+μ0MS
+
+∂ 2m(A)
+
+∂ y2 ,
+
+H(B) 
+
+> ex
+
+= A2
+
+μ0MS
+
+∂ 2m(B)
+
+∂ x2 + A1
+
+μ0MS
+
+∂ 2m(B)
+
+∂ y2 ,
+
+(2) for sublattice A and B respectively. This clearly illustrates the anisotropic nature of the exchange interaction, with different exchange strengths along different directions. In Eq. (2), μ0 is the vacuum permeability and MS is the saturation magnetiza-tion. The calculation of the diagonal elements A φ 
+
+> ii
+
+∂i∂im(s) was readily available in mumax + and utilizes a second-order central difference scheme. The off-diagonal elements 
+
+A φ 
+
+> i j
+
+∂i∂ jm(s) (with i̸ = j) introduce mixed first-order deriva-tives. These were implemented using the second-order stencil 
+
+∂ m(s) 
+
+> i,j
+
+∂ x∂ y ≈ m(s)  
+
+> i+1,j+1
+
+− m(s)  
+
+> i+1,j−1
+
+− m(s)  
+
+> i−1,j+1
+
++ m(s) 
+
+> i−1,j−1
+
+4∆x∆y , (3) where the subscripts indicate cell coordinates and ∆x and ∆y
+
+denote the cell size in the x and y directions respectively. The remainder of this section is devoted to three test cases to verify the implementation of d-wave altermagnets in mumax +. The first example explores the static domain wall profile of the Néel vector and the net magnetization. A sec-ond test case investigates the magnon dispersion relation and its dependence on the angle φ between the exchange eigen-basis and the simulation grid. Finally, we study the motion of a Néel skyrmion by applying a spin transfer torque. In these sections, a detailed description of code snippets from the Python input script is given as a showcase of the use of mumax + in simulating d-wave altermagnets. The complete Python input scripts can be found in the supplementary ma-terial and can be run using version 1.2 of mumax +, which is freely available on Github (https://github.com/mumax/plus) under the GPLv3 license.  
+
+> B. Static domain wall profile
+
+As discussed thoroughly in Ref. 10 , the anisotropic ex-change stiffness leads to a non-vanishing net magnetization in a static domain wall. This can be understood intuitively as follows: we explained above that the eigenvalues of the ex-change matrix A are interchanged between both sublattices, meaning that when A1̸ = A2 the exchange stiffness in some directions is different for each sublattice. This leads to a dif-ferent domain wall width, as illustrated in Fig. 1 for the case of uncoupled sublattices. When the sublattices are exchange-coupled, the imperfect compensation of sublattice magnetiza-tion vectors leads to a non-vanishing net magnetic moment inside the domain wall. Starting from a Lagrangian description, Gomonay et al. 10 
+
+derived an expression for line profiles of the Néel vector n and the net magnetization m perpendicular to a domain wall sepa-rating two out-of-plane domains. The Néel vector follows the well known Walker solution in terms of the azimuthal angle ϕ
+
+and the polar angle θ 10,17 :
+
+θ = 2 arctan epξ , ϕ = const. , (4) where p = ±1 is the topological charge of the domain wall and 
+
+ξ = x/∆ with ∆ the domain wall width. The net magnetization is given by 10 
+
+m(ξ ) = C
+
+ sinh 2 ξ
+
+cosh 3 ξ (ex cos ϕ + ey sin ϕ) + p sinh ξ
+
+cosh 3 ξ ez
+
+
+
+, (5) where ei (i = x, y, z) denote the principal directions along the simulation grid and C is a constant depending on the magnetocrystalline anisotropy, the homogeneous exchange field (between sublattice spins in the same simulation cell) and the exchange matrix in Eq. (1). To validate our implementation, we create an instance from the Altermagnet class:     
+
+> from mumaxplus import World, Grid, Altermagnet cs = 0.5e-9 length = 256e-9 Nx = int(length / cs) world = World((cs, cs, cs)) grid = Grid((Nx, 1, 1)) magnet = Altermagnet(world, grid)
+
+The different material parameters in mumax + are defined as class properties 14 . Consequently, they can be set for each cre-ated instance individually. Here we choose some prototypical values:   
+
+> magnet.msat = 2.9e5 magnet.alpha = 0.01 magnet.ku1 = 2e5 magnet.anisU = (0, 0, 1) # homogeneous sublattice coupling magnet.afmex_cell = -5e-13
+
+Simulating altermagnets using mumax + 3−30 −20 −10 0 10 20 30  
+
+> x(nm)
+> −1.0
+> −0.50.00.51.0
+> mz
+> 2 ∆ 1
+> 2 ∆ 2
+> Sublattice 1 Sublattice 2
+
+FIG. 1: Domain wall profiles of the z-component of the sublattice magnetizations of an altermagnet with uncoupled sublattices. The double arrows and dashed lines indicate twice the domain wall widths ∆1 and ∆2 for sublattice 1 and 2 respectively, obtained from fitting the Walker solution Eq. (4). The exchange matrix eigenvalues are chosen as A1 = 50 pJ /m = 10 A2 to clearly visualize the difference in the domain wall widths. Further details are explained in Section II B. 
+
+# inhomogeneous sublattice coupling magnet.afmex_nn = -2.5e-13 # exchange matrix eigenvalues magnet.alterex_1 = 25e-12 magnet.alterex_2 = 15e-12 # exchange eigenbasis aligns with # the simulation grid magnet.alterex_angle = 0 
+
+Now we can create a two-domain state and let it relax to an energy minimum. 
+
+import numpy as np dw = 10 # initial guess of DW width (in cells) m = np.zeros(magnet.sub1.magnetization.shape) m[2, :, :, 0:Nx//2 - dw] = 1 m[1, :, :, Nx//2 - dw:Nx//2 + dw] = -1 m[2, :, :, Nx//2 + dw: ] = -1 magnet.sub1.magnetization = m magnet.sub2.magnetization = -m magnet.minimize() 
+
+After minimizing, we extract the profiles of the Néel vector and the net magnetization and compare them to the theoreti-cal solutions in Eqs (4) and (5) as shown in Fig. 2. Our sim-ulation data agree very well with the theoretical Lagrangian model, with a maximal deviation of about 0 .05% and 3% for the Néel vector (order of unity) and the net magnetization (or-der of 10 −4) respectively. 
+
+C. Magnon dispersion relation 
+
+The anisotropic nature of the exchange interaction has its effect on propagation properties and dispersion of magnons. −1.0    
+
+> −0.50.00.51.0N´ eel vector  n
+> Model
+> ny
+> nz
+> −10 −50510
+> x/ ∆
+> −10
+> −50510 Net magnetization  m (×10 −4) Model
+> my
+> mz
+
+FIG. 2: Profiles of the Néel vector (top) and the net magnetization (bottom) of an altermagnet as modeled by Gomonay et al. 10 (dashed line) and simulated using mumax + (points) for a Bloch domain wall ( ϕ = −π/2) with width ∆. More details are explained in Section II B. More precisely, magnons with large momenta k (small wave-lengths) are mostly localized on individual sublattices 10 and therefore will experience two different exchange couplings in some directions, leading to a different effective magnon veloc-ity. This lifts the degeneracy usually present in uniaxial anti-Simulating altermagnets using mumax + 4ferromagnets and creates two separate branches in the disper-sion relation. Gomonay et al. 10 derived an analytical expres-sion for the magnon frequency ω in terms of the wave vector 
+
+k starting from a spin Hamiltonian in reciprocal space. This result can also be obtained by linearizing the Landau-Lifshitz-Gilbert equation and imposing a wave-like perturbation on the ground state. We arrived at 
+
+ω± = ±ωmag ± (ωext + ωalt ) , (6) where the + and − sign correspond to the two different fre-quency branches. The first term represents the antiferromag-netic magnon frequency with an averaged exchange stiffness 
+
+Aav = ( A1 + A2) /2, given by: 
+
+ωmag = γμ0MS
+
+q
+
+2K + ( Aav − A12 ) k2
+
+×
+
+r
+
+2K + ( Aav + A12 ) k2 − 8A0
+
+a2 ,
+
+(7) where γ is the gyromagnetic ratio, k the norm of the wave vec-tor k, K is the uniaxial anisotropy constant, and a is a fixed typical lattice constant 14 . The antiferromagnetic exchange stiffness constant A12 < 0 J /m describes exchange between nearest-neighboring spins from different sublattices, while the antiferromagnetic exchange constant A0 < 0 J /m describes a homogeneous exchange interaction between sublattice spins in the same simulation cell 14 . An external field Hext lifts the degeneracy by causing branch splitting with a magnitude of 
+
+ωext = γ Hext . The anisotropic character of altermagnetism causes an additional splitting, given by 
+
+ωalt = γμ0MS
+
+A1 − A2
+
+2
+
+cos 2 φ  k2 
+
+> x
+
+− k2
+
+> y
+
+ + 2 sin 2 φ kxky
+
+ . (8) Here, kx and ky are the components of the wave vector k along the principal directions of the simulation grid. The expres-sion derived in Ref. 10 corresponds to Eq. (8) for the case of 
+
+φ = 45 ◦. In this case, magnons traveling along one of the principal axes of the simulation grid will experience an aver-aged exchange stiffness that is the same for both sublattices, which can also be seen by the diagonal elements in Eq. (1). This leads to a degenerate dispersion and no branch splitting. To further validate our implementation of d-wave altermag-nets, we use the above dispersion as a second test case. Here, we simulate a 1D altermagnet using mumax +. 
+
+> from mumaxplus import Altermagnet, Grid, World nx, ny, nz = 6000, 1, 1 cs = 0.5e-9 world = World((cs, cs, cs)) magnet = Altermagnet(world, Grid((nx, ny, nz))) magnet.sub1.magnetization = (0, 0, 1) magnet.sub2.magnetization = (0, 0, -1)
+
+We choose the same set of prototypical material parameters as in Section II B, apart from the Gilbert damping constant 
+
+α: we decrease it to the value of 0 .001 to facilitate magnon propagation. The magnons are excited by an external field pulse with a sinc time profile in the middle of the simulation domain.    
+
+> import numpy as np fmax = 1e13 # maximum excitation frequency T= 20e-12 # total simulation time B = lambda t: (1e2 * np.sinc(2 * f * (t-T/2)),0,0) # Put signal at the center of the simulation box mask = np.zeros(shape=(nz, ny, nx)) mask[:, :, nx // 2 - 1:nx // 2 + 1] = 1 for sub in magnet.sublattices: sub.bias_magnetic_field.add_time_term(Bt, mask)
+
+We save the sublattice magnetization states at a sampling rate of 2 fmax and perform a spatiotemporal Fourier transform on this data so the results can be analyzed in reciprocal space 
+
+(k, ω). The resulting dispersion relations are shown in Fig. 3, along with the model discussed above and derived in Ref. 10 .The deviation between the model and the simulation data for large values of |k| (small wavelengths) is to be expected, since a micromagnetic theory no longer forms an adequate descrip-tion at such length scales. Our simulation data also confirm the prediction of mode degeneracy when φ = 45 ◦, as shown in the bottom panel of Fig. 3. Fig. 4a shows the frequency gap between both branches at a fixed value of |k| for varying angles φ . Gomonay et al. 10 also derived an expression for the relative magnon intensity between both sublattices along the two different branches. We calculated the same quantity, which is shown in Fig. 4b. The simulation data obtained with mumax + agree very well with the model, with a maximal de-viation of approximately 1 .5% and 2 .5% for the data in Fig. 4a and Fig. 4b respectively.  
+
+> D. The skyrmion Hall effect
+
+There have been recent reports of altermagnets exhibiting a skyrmion Hall effect induced by the anisotropic nature of the exchange interaction 11,18–20 when applying a Zhang-Li spin transfer torque 21 . However, Bechler and Masell 22 at-tributed this observed effect to a numerical artefact, scaling with the simulation cell size. They showed that the rounding error induced by the finite-difference implementation of the spin transfer torque in micromagnetic simulators gives rise to a transverse skyrmion velocity, and thus an apparent skyrmion Hall effect. When taking higher order finite-difference terms into account, the skyrmion Hall effect vanishes. Moreover, the observed transverse velocity scales with the cell size of the discretized grid, reducing for smaller cell sizes 22 .We use the scaling relation derived in Ref. 22 as a third show-case of the altermagnet implementation in mumax +. We cre-ate an Altermagnet instance as shown in Section II B and initialize a Néel skyrmion: Simulating altermagnets using mumax + 5−1.0 −0.5 0.0 0.5 1.0      
+
+> k(1/nm) 0510 15 20 25 30
+> ω (rad/ns) −1.0−0.50.00.51.0
+> k(1/nm) 0510 15 20 25 30
+> ω (rad/ns)
+
+FIG. 3: The dispersion relation of magnons in a 1D altermagnet as described in Section II C. The angle φ
+
+between the exchange matrix eigenbasis and the simulation grid is set to 0 ◦ in the top panel and 45 ◦ in the bottom panel. The wave vector k lies along the length axis of the magnet. The dashed lines correspond to the model Eq. (6), while the intensity plot data is obtained with mumax +.
+
+from mumaxplus.util import neelskyrmion as NSk skyrmion = NSk(position = magnet.center, radius = 10e-9, charge = -1, polarization = 1) sub1, sub2 = magnet.sublattices sub1.magnetization = skyrmion sub2.magnetization = - sub1.magnetization() magnet.minimize() 
+
+We choose material and excitation parameters as used in Ref. 20 and monitor the position of the skyrmion in a time frame of 2 ns. The calculated velocity is shown in Fig. 5 for varying cell sizes. The model derived in Ref. 22 is also shown, confirming our altermagnet implementation in mumax +. The transverse skyrmion velocity decreases for decreasing cell sizes and its scaling is in agreement to the predictions in Ref. 22 .
+
+(a) 0° 
+
+> 45 °
+> 90 °
+> 135 °
+> 180 °
+> 225 °
+> 270 °
+> 315 °
+> 2
+> 3
+> Model ∆ω(rad/ns)
+
+(b) 0.0 0.2 0.4 0.6 0.8 1.0Wavevector k (1 / nm) 1234Peak intensity ratio 
+
+> Model
+> ω+
+> ω−
+
+FIG. 4: Frequency gap ∆ω at k = 0.75 nm −1 (a) and intensity ratio between both sublattices along the two different branches (b) of the magnon dispersion relation. The model (dashed lines) is described in Section II C and Ref. 10 , while data points are obtained with mumax +. The angular coordinate in (a) corresponds to the relative angle φ between the exchange matrix eigenbasis and the simulation grid. Simulation details are described in Section II C, but the total simulation time T is increased to 200 ps to improve the frequency resolution. 
+
+III. CONCLUSIONS 
+
+We have outlined the implementation of a new magnet class in the mumax + simulation package to support the modeling of 2D d-wave altermagnets. This was done by the addition of an anisotropic exchange field term to the pre-existing code base designed to simulate antiferromagnets. The object-oriented design of mumax + allows for multiple sublattice spins to re-side within the same simulation cell and, consequently, an ac-curate calculation of the magnetostatic field. We have showcased this new feature by comparing the Néel and net magnetization profiles of a Bloch domain wall to an analytical model. Next, we derived and showed the magnon dispersion relation in a 1D altermagnet. Finally, we showed the cell size scaling of the skyrmion Hall effect. All three test cases showed excellent agreement between the results of mumax + and analytical models, thereby verifying its im-plementation. This also establishes the extensible nature of mumax +, where minimal effort was necessary in order to support d-wave altermagnets in a micromagnetic framework. This addition to the package is now able to nurture numeri-cal studies in the emerging research field of altermagnetism. Simulating altermagnets using mumax + 60.0 0.5 1.0 1.5 2.0Cell size (nm) 
+
+> −100
+> −80
+> −60
+> −40
+> −20
+> 0Velocity (m/s)
+> Bechler et al.
+> vx
+> vy
+> Jin et al.
+
+FIG. 5: Skyrmion velocity components in function of the simulation cell size. The dashed lines represent the model in Ref. 22 , datapoints show simulated results using mumax +, and the crosses represent data taken from Ref. 20 . Simulation details are given in Section II D. Further generalizations are to be expected in future release of mumax +, such as support for other exchange symmetries, for example f - and g-wave, and three dimensional altermagnetic simulations. 
+
+> 1
+
+L. Šmejkal, J. Sinova, and T. Jungwirth, “Emerging research landscape of altermagnetism,” Phys. Rev. X 12 , 040501 (2022). 
+
+> 2
+
+R. Tamang, S. Gurung, D. Rai, S. Brahimi, and S. Lounis, “Newly dis-covered magnetic phase: A brief review on altermagnets,” arXiv preprint arXiv:2412.05377 (2024). 
+
+> 3
+
+T. Jungwirth, J. Sinova, P. Wadley, D. Kriegner, H. Reichlova, F. Krizek, H. Ohno, and L. Smejkal, “Altermagnetic spintronics,” (2025), arXiv:2508.09748 [cond-mat.mtrl-sci]. 
+
+> 4
+
+C. Song, H. Bai, Z. Zhou, L. Han, H. Reichlova, J. H. Dil, J. Liu, X. Chen, and F. Pan, “Altermagnets as a new class of functional materials,” Nature Reviews Materials 10 , 473–485 (2025). 
+
+> 5
+
+R. Jaeschke-Ubiergo, V.-K. Bharadwaj, W. Campos, R. Zarzuela, N. Biniskos, R. M. Fernandes, T. Jungwirth, J. Sinova, and L. Šmejkal, “Atomic altermagnetism,” (2025), arXiv:2503.10797. 
+
+> 6
+
+L. Šmejkal, A. Marmodoro, K.-H. Ahn, R. González-Hernández, I. Turek, S. Mankovsky, H. Ebert, S. W. D’Souza, O. Šipr, J. Sinova, and T. Jung-wirth, “Chiral magnons in altermagnetic RuO 2,” Physical Review Letters 
+
+131 (2023), 10.1103/physrevlett.131.256703. 
+
+> 7
+
+S. Rooj, S. Saxena, and N. Ganguli, “Altermagnetism in the orthorhombic 
+
+pnma structure through group theory and dft calculations,” Phys. Rev. B 
+
+111 , 014434 (2025). 
+
+> 8
+
+E. D. Chernov and A. V. Lukoyanov, “Electronic correlations in al-termagnet mnte in hexagonal crystal structure,” Materials 18 (2025), 10.3390/ma18112637. 
+
+> 9
+
+L. M. Sandratskii, K. Carva, and V. M. Silkin, “Direct ab initio calculation of magnons in altermagnets: Method, spin-space symmetry aspects, and application to mnte,” Phys. Rev. B 111 , 184436 (2025). 
+
+> 10
+
+O. Gomonay, V. P. Kravchuk, R. Jaeschke-Ubiergo, K. V. Yershov, T. Jung-wirth, L. Šmejkal, J. v. d. Brink, and J. Sinova, “Structure, con-trol, and dynamics of altermagnetic textures,” npj Spintronics 2 (2024), 10.1038/s44306-024-00042-3. 
+
+> 11
+
+H. Vakili, E. Schwartz, and A. A. Kovalev, “Spin-transfer torque in alter-magnets with magnetic textures,” Phys. Rev. Lett. 134 , 176401 (2025). 
+
+> 12
+
+Z. Jin, T. Gong, J. Liu, H. Yang, Z. Zeng, Y. Cao, and P. Yan, “Strong coupling of chiral magnons in altermagnets,” Phys. Rev. Lett. 135 , 126702 (2025). 
+
+> 13
+
+S. Sorn and Y. Mokrousov, “Activation of anomalous hall effect and orbital magnetization by domain walls in altermagnets,” Physical Review B 112 
+
+(2025), 10.1103/vzmh-mxlz. 
+
+> 14
+
+L. Moreels, I. Lateur, D. D. Gusem, J. Mulkers, J. Maes, M. V. Miloševi´ c, J. Leliaert, and B. V. Waeyenberge, “mumax+: extensible gpu-accelerated micromagnetics and beyond,” (2024), arXiv:2411.18194. 
+
+> 15
+
+E. Sasioglu, I. Mertig, and S. Lounis, “ d-wave surface altermagnetism in centrosymmetric collinear antiferromagnets,” (2026), arXiv:2602.08790. 
+
+> 16
+
+K. M. D. Hals and K. Everschor-Sitte, “New boundary-driven twist states in systems with broken spatial inversion symmetry,” Physical Review Letters 
+
+119 (2017), 10.1103/physrevlett.119.127203. 
+
+> 17
+
+Z. Zeng, Z. Jin, and P. Yan, “Alignment-dependent gapless chiral split magnons in altermagnetic domain walls,” (2026). 
+
+> 18
+
+K. Dou, Z. He, W. Du, Y. Dai, B. Huang, and Y. Ma, “Altermagnetic skyrmions in two-dimensional lattices exhibiting the anisotropic skyrmion hall effect,” Phys. Rev. B 113 , 104402 (2026). 
+
+> 19
+
+J. C. B. Souza, C. J. O. Reichhardt, A. Saxena, and C. Reichhardt, “Dynam-ics and pinning for skyrmions in altermagnets,” (2026), arXiv:2602.19258 [cond-mat.mes-hall]. 
+
+> 20
+
+Z. Jin, Z. Zeng, Y. Cao, and P. Yan, “Skyrmion hall effect in altermagnets,” Phys. Rev. Lett. 133 , 196701 (2024). 
+
+> 21
+
+S. Zhang and Z. Li, “Roles of Nonequilibrium Conduction Electrons on the Magnetization Dynamics of Ferromagnets,” Physical Review Letters 93 ,127204 (2004). 
+
+> 22
+
+N. T. Bechler and J. Masell, In preparation.

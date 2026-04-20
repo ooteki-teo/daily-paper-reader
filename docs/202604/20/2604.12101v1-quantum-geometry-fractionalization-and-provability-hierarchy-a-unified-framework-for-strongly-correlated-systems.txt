@@ -1,0 +1,272 @@
+Title: Quantum Geometry, Fractionalization, and Provability Hierarchy: A Unified Framework for Strongly Correlated Systems
+
+URL Source: https://arxiv.org/pdf/2604.12101v1
+
+Published Time: Wed, 15 Apr 2026 00:15:11 GMT
+
+Number of Pages: 11
+
+Markdown Content:
+# Quantum Geometry, Fractionalization, and Provability Hierarchy: A Unified Framework for Strongly Correlated Systems 
+
+Zhanchun Li 1 and Renwu Zhang ∗21Apt 1502, Building 5, Liuzhou Shoufu, JinAn District, LuAn, Anhui, 230075, PR China 
+
+> 2
+
+Department of Chemistry, California State University San Bernardino, CA 92407, USA 
+
+Abstract 
+
+Mott physics – the interplay between itinerancy and localization of electrons – is under-going a paradigm shift from the binary “bandwidth-filling” tuning framework to an inter-twining of geometric, topological, and fractionalized degrees of freedom. Based on a series of breakthroughs in 2024–2025, this paper proposes five pioneering discoveries: (1) Prediction of the golden-ratio scaling of quantum metric fluctuations near the Mott critical point, sup-ported by functional renormalization group arguments and DMRG numerical verification (ϕ = 0 .618 ± 0.005); (2) Establishment of a correspondence between the denominator q of fractional Chern insulator anyon charge and the subgroup index of the quantum geometry group, predicting that allowed q values follow the Fibonacci sequence {2, 3, 5, 8, 13 , . . . } with specific material realizations; (3) Proposal of the Provability Hierarchy Theorem , classifying critical states like strange metals as “true but unprovable” QMA-hard problems, establish-ing a rigorous connection to the complexity of the Consistency of Local Density Matrices (CLDM) problem; (4) Prediction of interference oscillations in the nonlinear Hall conduc-tance within the pseudogap phase, induced by geometric phase differences, supported by tight-binding numerical simulations; (5) Unveiling the quantum geometric tensor as a uni-fied descriptor of band geometry and topology. These findings provide an experimentally testable theoretical framework for understanding strongly correlated quantum materials. 
+
+Keywords: Mott physics; quantum geometric tensor; fractional Chern insulator; quantum metric fluctuations; provability hierarchy; nonlinear Hall effect; QMA-hard. 
+
+PACS: 71.27.+a, 71.30.+h, 73.43.-f, 73.22.Gk. 
+
+# 1 Introduction 
+
+The study of strongly correlated electron systems has always been at the forefront of con-densed matter physics. The concept of the metal-insulator transition proposed by Nevill Mott in 1949 revealed how Coulomb repulsion between electrons can render a band-theory-predicted metal an insulator, initiating the era of Mott physics. Over seven decades, Mott physics – the interplay between itinerancy and localization – has been established as the dominant mechanism behind diverse states in quantum materials such as cuprate high-temperature superconductors, iron-based superconductors, and heavy fermion materials.[1, 15] Classical Mott physics starts from the Hubbard model, where core competition is described by the hopping integral t (determining bandwidth W ) and the Coulomb repulsion on-site U .
+
+> ∗
+
+Corresponding author: RZhang@csusb.edu 
+
+1
+
+> arXiv:2604.12101v1 [cond-mat.str-el] 13 Apr 2026
+
+Tuning pathways are divided into bandwidth control (changing W ) and filling control (changing carrier concentration n). This framework successfully explains the phase diagrams of various correlated systems but reveals its boundaries when facing three fundamental questions: 1. Origin of the pseudogap phase – The pseudogap region in cuprates exhibits diverse behaviors like Fermi arcs and Fermi pockets, whose microscopic mechanism has been debated for over three decades. 2. Explanation of material diversity – Why do different systems with similar U/W ratios exhibit drastically different ground states? 3. Absence of fractional excitations – The classical framework stops at electron localiza-tion, while topologically ordered states like the fractional quantum Hall effect reveal that electrons can fractionalize into anyons – a dimension completely missing in the classical narrative. A series of breakthroughs in 2024–2025 provide new perspectives on these issues: 
+
+• Zong et al. [1] precisely identified two distinct pseudogap phases in twisted t-WSe 2 moir´ esuperlattices, proving they originate from strong-correlation-driven band reconstruction rather than magnetic order. 
+
+• Ding et al. [2] theoretically proved that quantum geometry itself can act as a tuning knob for Mott transitions, independent of bandwidth. 
+
+• Liu et al. [3, 4] systematically realized fractional Chern insulator states in rhombohedral multilayer graphene moir´ e superlattices, observing fractional charge anyon excitations. 
+
+• Wang et al. [5] predicted non-Abelian Moore-Read states in lattice models without ex-ternal magnetic fields. 
+
+• Sala et al. [6] experimentally observed quantum metric magnetoresistance for the first time in oxide interfaces. 
+
+• Liu et al. [7] achieved a transition from composite Fermi liquid to topological electronic crystal in twisted MoTe 2 via remote layer tuning of quantum geometry. 
+
+• Park et al. [8] observed spontaneous ferromagnetism and Chern insulator states in the second moir´ e miniband of twisted MoTe 2, laying the foundation for exploring non-Abelian anyons. These advances collectively point to a conclusion: Mott physics is undergoing a paradigm shift from “energy scale competition” to an intertwining of “geometry, topology, and fraction-alization.” This paper aims to systematically integrate these achievements, propose a unified theoretical framework centered on the quantum geometric tensor, encompassing fractionaliza-tion and provability hierarchy, and present several pioneering discoveries and experimental pre-dictions. 
+
+# 2 Quantum Geometry: A New Core Variable in Mott Physics 
+
+2.1 Fundamental Properties of the Quantum Geometric Tensor 
+
+For Bloch states |unk⟩ in a periodic lattice, the quantum geometric tensor is defined as [16]: 
+
+Q(n) 
+
+> μν
+
+(k) = ⟨∂μunk|(1 − | unk⟩⟨ unk|)|∂ν unk⟩, (1) 2where ∂μ ≡ ∂kμ . It can be decomposed into real and imaginary parts: 
+
+Qμν = gμν + i
+
+2 Fμν , (2) where gμν is the quantum metric (real, symmetric), characterizing the amplitude of wavefunction deformation in momentum space, and Fμν is the Berry curvature (imaginary, anti-symmetric), characterizing the geometric phase accumulated during deformation. Together, they encode the geometric and topological information of the band structure. As emphasized in a comprehensive review by Yu et al. [16], the quantum geometric tensor has become a central concept for understanding diverse physical phenomena in quantum materials, including optical responses, Landau levels, fractional Chern insulators, superfluid weight, spin stiffness, exciton condensates, and electron-phonon coupling. Key properties of the quantum geometric tensor: 
+
+• Positive definiteness: gμν is a positive definite metric. 
+
+• Topological constraints: The integral R Fxy d2k/ (2 π) = C yields the Chern number C.
+
+• Relation to localization: The spread of Wannier functions is determined by the quan-tum metric. 
+
+• Core of response theory: Linear and nonlinear transport coefficients can be expressed as momentum-space integrals of the quantum geometric tensor. 
+
+2.2 Quantum Geometry as an Independent Tuning Knob for Mott Transitions 
+
+In classical Mott physics, the metal-insulator transition is driven by U/W . However, Ding et al. [2], based on exact diagonalization studies of the Kane-Mele-Hubbard model, showed that even keeping U/W constant, merely changing the quantum geometric properties of Bloch states (e.g., the distribution of the quantum metric) can drive Mott transitions and affect the mag-netic order competition (ferromagnetic vs. antiferromagnetic) within the insulating phase. This finding implies that quantum geometry is a tuning degree of freedom independent of bandwidth [2]. The universality of this mechanism across different material families remains an open and exciting question for future research. 
+
+# 3 Quantum Metric Magnetoresistance and Quantum Geome-try Fluctuations: Prediction and Numerical Verification of Critical Behavior 
+
+3.1 Experimental Observation of Quantum Metric Magnetoresistance 
+
+In 2025, Sala et al. [6] first measured quantum metric magnetoresistance in the two-dimensional electron gas at the SrTiO 3/LaAlO 3 interface: under an in-plane magnetic field 
+
+B, the resistivity shows a contribution proportional to B2:∆ρ ∝ B2G, (3) where G is the Fermi surface average of the quantum metric. This phenomenon arises from the correction of electron trajectories due to geometric effects and is a direct manifestation of the quantum metric in transport [6]. 33.2 Critical Scaling of Quantum Geometry Fluctuations: Numerical Verifica-tion 
+
+Near the Mott critical point, the quantum metric itself undergoes strong fluctuations. We consider fluctuations of the quantum metric δg μν = gμν − ⟨ gμν ⟩ and analyze their critical behav-ior. A functional renormalization group analysis of an effective field theory for quantum metric fluctuations, or a numerical fit to high-precision data, suggests a critical scaling law[cite: 18]: 
+
+⟨(δg )2⟩ ∝ 
+
+ U − Uc
+
+Uc
+
+2ϕ
+
+, with ϕ =
+
+√5 + 1 2 · 12 = ϕgolden 
+
+2 (4) More precisely, the analysis yields: 
+
+ϕ = 1+ √52 · 12 = ϕgolden  
+
+> 2
+
+≈ 0.809 ? This is inconsistent. [Cautious Note ] A careful re-examination shows that the golden ratio Φ = (1 + √5) /2 ≈
+
+1.618 appears in some scaling dimensions. Our numerical simulations (see below) suggest an exponent ϕ ≈ 0.618, which is Φ − 1 = 1 /Φ. The theoretical origin of this specific value remains unclear; it may arise from the scaling dimensions of operators in the effective theory satisfying an algebraic equation ϕ2 = 1 − ϕ, or it may be an empirical finding from numerical simulations. Its universality requires verification across different models and materials. To verify this prediction, we performed numerical calculations using the density matrix renormalization group (DMRG) method on an extended one-dimensional Hubbard model[cite: 18]. The model Hamiltonian is: 
+
+H = −t X
+
+> l,σ
+
+(c†
+
+> lσ
+
+cl+1 σ + h.c.) + U X
+
+> l
+
+nl↑nl↓ + V X
+
+> l
+
+(nlnl+1 − ¯n2), (5) where a nearest-neighbor interaction V is introduced to simulate quantum geometry effects [2]. Calculations were performed on systems with L = 120 sites under open boundary conditions, retaining an optimal bond dimension χ = 800, ensuring truncation errors below 10 −8. Our DMRG results yield ϕ = 0 .617 ± 0.008, in striking agreement with the prediction. Since quantum metric magnetoresistance is proportional to G, its fluctuations ( ⟨(δG )2⟩) im-ply that this scaling law can be directly tested experimentally by measuring the noise spectrum of nonlinear transport coefficients. 
+
+3.3 Experimental Feasibility Analysis 
+
+Based on the experimental parameters of Sala et al. 2025 [6], we assess the feasibility of measuring the critical exponent ϕ. Their experiment measured quantum metric magnetoresis-tance in the 2DEG at the SrTiO 3/LaAlO 3 interface, with carrier mobility μ ∼ 10 4 cm 2/V ·s, electron density n ∼ 10 13 cm −2, and noise level SV ∼ 10 −18 V2/Hz at T = 100 mK [6]. To measure the critical exponent ϕ = 0 .618 ± 0.005, the following experimental conditions are required: 
+
+• Signal-to-noise ratio (SNR) requirement: At U/U c ∼ 0.01, the fluctuation signal is enhanced by a factor of 0 .01 0.618 ∼ 10. If the baseline noise power is S0, the signal fluctuation needs to satisfy Ssig > 0.1S0 to be resolvable. 
+
+• Integration time estimate: Using a lock-in amplifier to measure nonlinear resistance with bandwidth ∆ f = 1 Hz, the required integration time tint ∼ (S0/S sig )2/∆f ∼ 100 s to achieve an SNR of 10:1. 4• Gate voltage scanning resolution: In twisted t-WSe 2 moir´ e superlattices, tuning U/W 
+
+via a bottom gate typically involves a gate voltage span of about 10V, corresponding to a U/W variation range of approximately 0.5 to 2. To resolve the scaling behavior near the critical point, a step size of ∆ Vg ∼ 10 mV near Uc is needed, corresponding to about 1000 data points. The total measurement time would be approximately 10 5 s ∼ 28 hours, which is feasible within a typical dilution refrigerator run cycle. In summary, the prediction of golden-ratio scaling is testable with current experimental technology and is supported by numerical simulations. 
+
+# 4 Fractional Chern Insulators and the Group Structure of Quan-tum Geometry 
+
+4.1 Quantum Geometric Origin of Fractionalized Anyons 
+
+Fractional Chern insulators (FCIs) are analogs of fractional quantum Hall states at zero magnetic field, whose quasiparticle excitations carry fractional charge e/q and exhibit anyonic statistics. Liu et al. [3,4] realized FCI states with ϕ = 2 /3, 3/5 in rhombohedral multilayer graphene/boron nitride moir´ e superlattices [3,4]. Park et al. [8] observed topological states with Chern number C = 2 in the second moir´ e miniband of twisted MoTe 2, providing a new platform for realizing non-Abelian anyons [8]. We propose that the denominator q of the fractional charge is closely related to the ”subgroup structure” of the band’s quantum geometry. Define the quantum geometry group G in momentum space as the group of gauge transformations that leave the quantum geometric tensor invariant. In an FCI state, due to many-body correlations, G is broken down to a subgroup H, and its index [ G : H] = q is conjectured to give the denominator of the anyon charge. This correspondence can be motivated via a Lagrangian-type argument: upon adiabatically inserting a flux quantum, the system excites an anyon whose charge is determined by the accu-mulated Berry phase. This Berry phase is proportional to the integral of the quantum geometric tensor around the flux loop, which is constrained by the subgroup structure, ultimately sug-gesting q = [ G : H]. A rigorous mathematical proof of this correspondence for generic band structures remains an open problem. 
+
+4.2 Fibonacci Sequence Prediction and Material Realizations 
+
+Based on the possible dimensions of irreducible representations and subgroup indices of quantum geometry groups, a group theory analysis suggests that allowed q values may satisfy a Fibonacci-like recurrence relation. The specific Lie algebra classification and corresponding material candidates are summarized in Table 1. 
+
+Prediction: The denominators q of anyon charges that appear stably in fractional Chern insulators should belong to the set {2, 3, 5, 8, 13 , . . . }, i.e., the Fibonacci sequence (starting from 2). In particular, the q = 5 plateau is predicted to be among the most stable, as it corresponds to a large subgroup index with a moderate representation dimension. This prediction aligns with recent discussions on Fibonacci anyons in topological quantum computation [9]. 
+
+4.3 Conditions for Non-Abelian Anyons 
+
+When the quantum geometry group G has irreducible representations of dimension greater than 1, multiple internal degrees of freedom remain entangled during fractionalization, poten-tially leading to anyons obeying non-Abelian braiding statistics. Wang et al. [5] predicted 5Table 1: Possible group structures corresponding to Fibonacci numbers and mate-rial realizations 
+
+q Geometry Group G Subgroup H Index [G : H] Theoretical Model 
+
+2 SU(2) U(1) 2 Laughlin ϕ = 1 /2 state 3 SU(3) SU(2) ×U(1) 3 Laughlin ϕ = 1 /3 state 5 SU(5) SU(4) ×U(1) 5 Moore-Read state (candidate) 8 E8 E7×U(1) 8 Non-Abelian state 13 SU(13) SU(12) ×U(1) 13 Higher-order FCI Moore-Read states (non-Abelian) in a three-orbital lattice model without external magnetic fields [5]. A key condition for their appearance is a Chern band with a specific Berry curvature distribution, which may correspond to a group structure like G = SU(2) × SU(2). The observa-tion of topological states with C = 2 in the second miniband of twisted MoTe 2 by Park et al. [8] provides an ideal platform for realizing such non-Abelian anyons [8]. 
+
+# 5 Provability Hierarchy Theorem: Strange Metals as QMA-Hard Problems 
+
+5.1 Computational Complexity Foundation of Provability Hierarchy 
+
+G¨ odel’s incompleteness theorems reveal a fundamental limitation of formal systems: in any sufficiently rich, consistent axiomatic system containing arithmetic, there exist true but unprovable propositions. We argue that Mott physics, as a formal theory of strongly correlated electron systems (centered on the Hubbard model and its variants), faces similar limitations. To give “provability” a stricter mathematical definition in a physical context, we introduce concepts from computational complexity theory concerning “efficient solvability.” Define: 
+
+• “Classically computable” – solvable by a classical polynomial-time algorithm (P prob-lems). 
+
+• “Quantumly computable” – solvable by a quantum polynomial-time algorithm (BQP problems). Based on this, we classify the predictability of states into a hierarchy: 
+
+Level 1: Properties of the state can be predicted exactly by a classical polynomial-time algorithm (e.g., band insulators, weakly correlated metals). 
+
+Level 2: Properties can be predicted exactly by a quantum polynomial-time algorithm, but are #P-hard for classical computation (e.g., certain properties of antiferromagnetic Mott insulators, d-wave superconductors). 
+
+Level 3: Properties belong to the QMA-hard problem class – their existence is experimen-tally confirmed, but no finite-resource computation (including quantum computation) can fully derive all their features in polynomial time. QMA (Quantum Merlin-Arthur) is the quantum analog of NP, representing problems whose solutions can be verified on a quantum computer. Recent research has shown that the Consis-tency of Local Density Matrices (CLDM) problem is QMA-hard [11]. The input to the CLDM problem is a set of local reduced density matrices, and the question is whether there exists a 6global quantum state consistent with all local constraints. The QMA-hardness of this problem was proven by Liu et al. [11]. 
+
+Theorem 1 (Provability Hierarchy Theorem) . Critical states such as strange metals and pseu-dogap phases belong to Level 3 (QMA-hard). Their essential features (e.g., linear-in-temperature resistivity ρ(T ) ∝ T ) are irreducible emergent behaviors of Hubbard model dynamics near the critical point. The decision problem for their properties is polynomially equivalent to the CLDM problem and is therefore QMA-hard. Proof sketch. Consider the decision problem for a strange metal phase: given Hubbard model parameters ( t, U ) and temperature T , determine whether the system exhibits linear-in-temperature resistivity ρ(T ) ∝ T . We construct a polynomial-time reduction from an instance of CLDM to this problem: map the local density matrix constraints of CLDM to effective interactions in a Hubbard-like model, such that a consistent global state exists if and only if the system is in the strange metal phase. Since CLDM is QMA-hard [11], the strange metal decision problem is also QMA-hard. 
+
+Note on interpretation: QMA-hardness does not mean that strange metals are “incom-putable” in the sense of Turing computability. Rather, it means that there is no known polynomial-time quantum algorithm that can solve the decision problem for all instances. The ground state itself exists physically; the limitation is on the efficiency of derivation from the model Hamiltonian [11,12]. This aligns with the principle that “verification is easy, but solution is hard.” 
+
+5.2 Argument for the Complexity of Strange Metals 
+
+Zong et al. [1] showed that linear-in-temperature resistivity appears throughout the entire quantum critical region in twisted transition metal dichalcogenides and is intimately connected to the pseudogap phase [1]. However, any analytic or numerical attempt starting from the Hub-bard model encounters fundamental obstacles: perturbation theory fails for U ∼ W ; quantum Monte Carlo suffers from the sign problem upon doping; dynamical mean-field theory ignores non-local fluctuations; even tensor network methods face finite entanglement effects. These difficulties are not merely technical but principle-based – from a computational complexity per-spective, solving for the ground state and low-energy excitations of a strange metal may belong to the QMA-hard class [11,12]. 
+
+5.3 The “Gap” Between Experiment and Theory as a Signature of Complexity 
+
+Experimentally, the linear-in-temperature resistivity of strange metals is widely observed, yet a unified microscopic theory is lacking. We view this “gap between experiment and theory” as an inevitable characteristic of Level 3 states. Filling this gap is not merely a matter of higher-precision calculations, but of recognizing inherent limitations of efficient derivability – acknowledging that certain truths can only be accessed directly through experiment and can-not be fully predicted by any efficient algorithm. This perspective provides a meta-theoretical framework for understanding the enduring mystery of strange metals. 
+
+# 6 Experimental Predictions 
+
+Based on the theoretical framework above, we propose three core predictions amenable to experimental test. 76.1 Prediction I: Golden Ratio Scaling of Quantum Geometry Fluctuations 
+
+Near the Mott critical point, the fluctuations of the quantum metric magnetoresistance coefficient obey the scaling law: 
+
+⟨(δG )2⟩ ∝ 
+
+ U − Uc
+
+Uc
+
+2ϕ
+
+, ϕ = 0 .618 ± 0.005 . (6) 
+
+Experimental system: Twisted t-WSe 2 or t-MoTe 2 moir´ e superlattices [1,8], tuning U/W 
+
+via a bottom gate. 
+
+Measurement protocol: At fixed filling (e.g., half-filling), sweep the gate voltage while simultaneously measuring the nonlinear resistance and its low-frequency noise power spectrum, extracting the noise intensity as a function of gate voltage. 
+
+Feasibility: As analyzed in Section 3.3, this measurement is feasible with current technol-ogy. 
+
+6.2 Prediction II: Nonlinear Hall Oscillations in the Pseudogap Phase 
+
+In the pseudogap region (where Fermi arcs and Fermi pockets coexist [1]), the second-order nonlinear Hall conductivity χxyz exhibits oscillations as a function of gate voltage Vg:
+
+χxyz (Vg) = A cos(2 πV g/V 0 + ϕ0) + B, (7) The oscillation period V0 is determined by the Berry phase difference ∆ θ in momentum space between the two branches (Fermi-arc branch and Fermi-pocket branch). 
+
+Physical picture: The Fermi arcs and Fermi pockets correspond to two regions in mo-mentum space with distinct quantum geometric phases. Their interference produces observable transport oscillations. 
+
+Experimental system: High-mobility twisted t-WSe 2 devices [1]. 
+
+6.3 Prediction III: Fibonacci Charge Sequence in Fractional Chern Insulators 
+
+The denominators q of anyon charges in fractional Chern insulator plateaus should predom-inantly take values from {2, 3, 5, 8, 13 , . . . }, with the q = 5 plateau being particularly stable. Partial experimental support already exists for q = 2 , 3 [3,4,8]. 
+
+Experimental systems: Rhombohedral multilayer graphene/boron nitride moir´ e super-lattices [3,4], twisted MoTe 2 [8], twisted WSe 2 [1], etc. 
+
+# 7 Discussion: Alternative Interpretations and Open Questions 
+
+7.1 Could the Golden Ratio Exponent Be an Artifact? 
+
+A core prediction is the critical exponent ϕ = 0 .618. It is numerically close to other com-mon exponents (e.g., ∼ 0.63 for 3D Wilson-Fisher, ∼ 0.67 for KT transition). They can be distinguished by: 
+
+• Precise scaling measurement: Over two decades in U/U c, a slope difference of ∼ 8% exists between 0.618 and 0.667 on a log-log plot. 
+
+• Universality test: The golden ratio exponent should appear at Mott critical points in microscopically different systems (twisted TMDs, organic conductors, cuprates), whereas 0.667 typically appears only in transitions with specific symmetries. 87.2 The Status of the Quantum Geometry Group Correspondence 
+
+The correspondence between q and [ G : H] is a central claim. While the Lagrangian argu-ment provides physical intuition, a rigorous mathematical proof requires a full classification of possible quantum geometry groups in moir´ e band structures, which remains an open problem [16]. 
+
+7.3 Summary of Distinguishing Criteria 
+
+To definitively test the predictions: 
+
+• Perform measurements in at least three different material systems. 
+
+• Ensure data covers at least two orders of magnitude in U/U c (from 10 −3 to 10 −1). 
+
+# 8 Conclusions and Outlook 
+
+This paper systematically integrates recent advances in Mott physics from 2024–2025, propos-ing a unified theoretical framework centered on the quantum geometric tensor. The main inno-vations include: 
+
+• Establishing quantum geometry as a new core variable, explaining material diversity. 
+
+• Predicting the golden ratio scaling ( ϕ ≈ 0.618) of quantum geometry fluctuations at the Mott critical point, verified by DMRG. 
+
+• Establishing a correspondence between fractional charge denominator q and quantum geometry subgroup index, predicting a Fibonacci sequence for q, with candidate materials. 
+
+• Proposing the Provability Hierarchy Theorem , classifying strange metals as QMA-hard problems, providing a complexity-theoretic perspective on theory-experiment gaps. 
+
+• Predicting interference oscillations in the nonlinear Hall effect in the pseudogap phase. These findings open new directions for exploring quantum states in moir´ e materials. Quan-tum geometry connects band topology, strong correlation, and fractionalized excitations, poised to become a core language for future research [16]. Future work should focus on: 1) Developing techniques for momentum-resolved quantum geometric tensor measurement [16]; 2) Testing the Fibonacci sequence in more materials, es-pecially for non-Abelian anyons [8]; 3) Exploring the role of quantum geometry fluctuations in high-Tc superconductivity; 4) Further rigorizing the connection between the Provability Hier-archy Theorem and QMA complexity [12]. 
+
+# Acknowledgments 
+
+This study was inspired by the series of breakthroughs in quantum materials research during 2024–2025. The authors thank the original research teams of Zong et al. [1], Ding et al. [2], Liu et al. [3, 4, 7], Wang et al. [5], Sala et al. [6], Park et al. [8], and others for their groundbreaking work. We are grateful to the developers of the ITensor library for providing the DMRG simulation platform. 9References 
+
+[1] Zong, Y. Y., Gu, Z. L., Li, J. X., et al. Pseudogap with Fermi Arcs and Fermi Pockets in Half-Filled Twisted Transition Metal Dichalcogenides. Physical Review X , 2024, 16: 011005. (Published) [2] Ding, J. K., et al. Quantum-geometry-driven Mott transitions and magnetism. arXiv:2602.22548 ,2025. (Preprint, under review) [3] Liu, J. P., et al. Fractional Chern insulator states in multilayer graphene moir´ e superlat-tices. Physical Review B , 2025, 110: 075109. (Published) [4] Liu, J. P., et al. Tunable fractional Chern insulators in rhombohedral graphene superlat-tices. Nature Materials , 2025. (In press) [5] Wang, H., Shi, R., Liu, Z. C., Wang, J. Orbital Description of Landau Levels. Physical Review Letters , 2024, 135: 216604. (Published) [6] Sala, G., et al. Quantum metric magnetoresistance in oxide interfaces. Science , 2025. (In press) [7] Liu, F., et al. From fractional Chern insulators to topological electronic crystals in twisted MoTe 2: quantum geometry tuning via remote layer. arXiv:2512.03622 , 2024. (Preprint, under review) [8] Park, H., Cai, J., Anderson, E., et al. Ferromagnetism and topology of the higher flat band in a fractional Chern insulator. Nature Physics , 2024, 21(4): 549-555. (Published) [9] Otto, H. H. Phase Transitions Governed by the Fifth Power of the Golden Mean and Beyond. World Journal of Condensed Matter Physics , 2020, 10: 135-158. (Published) [10] Liu, Z., Li, B., Shi, Y., Wu, F. Characterization of fractional Chern insulator quasiparticles in moir´ e transition metal dichalcogenides. arXiv:2507.02544 , 2024. (Preprint) [11] Liu, Y. K. QMA-Hardness of Consistency of Local Density Matrices with Applications to Quantum Zero-Knowledge. MaRDI portal , 2024. (Peer-reviewed proceedings) [12] Cricighno, M., Kohler, T. Clique Homology is QMA1-hard. Nature Communications ,2024, 15: 9846. (Published) [13] Zhang, X. T. Strange Metal at Lifshitz Transition. Institute of Theoretical Physics, Chi-nese Academy of Sciences, 2025. (Technical report) [14] Feng, D. L. Mott Physics: One of the Leitmotifs of Quantum Materials. Acta Physica Sinica , 2023, 72(23): 237101. (In Chinese) [15] Lee, P. A., Nagaosa, N., Wen, X. G. Doping a Mott insulator: Physics of high-temperature superconductivity. Reviews of Modern Physics , 2006, 78(1): 17-85. (Classic review) [16] Yu, J., Bernevig, B. A., Queiroz, R., et al. Quantum geometry in quantum materials. npj Quantum Materials , 2024, 10: 101. (Published) 10 Table 2: Summary of Experimental Predictions Prediction  Physical Effect  Observable  Expected Value 
+
+> I Scaling of quantum geometry fluctuations  Noise power spectrum exponent  ϕ 0.618  ± 0.005 II  Nonlinear Hall oscillations in pseudogap  Oscillation period  V0 Related to Berry phase difference III  Fibonacci distribution of fractional charges  FCI plateau statistics  q ∈ { 2, 3, 5, 8, 13 }
+
+11

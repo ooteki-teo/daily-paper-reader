@@ -1,0 +1,1431 @@
+Title: Machine-learning modeling of magnetization dynamics in quasi-equilibrium and driven metallic spin systems
+
+URL Source: https://arxiv.org/pdf/2604.11513v1
+
+Published Time: Tue, 14 Apr 2026 02:47:39 GMT
+
+Number of Pages: 19
+
+Markdown Content:
+Machine-learning modeling of magnetization dynamics in quasi-equilibrium and driven metallic spin systems 
+
+Gia-Wei Chern, 1 Yunhao Fan, 1 Sheng Zhang, 1 and Puhan Zhang 1
+
+> 1
+
+Department of Physics, University of Virginia, Charlottesville, VA 22904, USA 
+
+We review recent advances in machine-learning (ML) force-field methods for large-scale Landau-Lifshitz-Gilbert (LLG) simulations of metallic spin systems. We generalize the Behler-Parrinello (BP) ML architecture—originally developed for quantum molecular dynamics—to construct scal-able and transferable ML models capable of capturing the intricate dependence of electron-mediated exchange fields on the local magnetic environment characteristic of itinerant magnets. A central in-gredient of this framework is the implementation of symmetry-aware magnetic descriptors based on group-theoretical bispectrum formalisms. Leveraging these ML force fields, LLG simulations faith-fully reproduce hallmark non-collinear magnetic orders—such as the 120 ◦ and tetrahedral states—on the triangular lattice, and successfully capture the complex spin textures emerging in the mixed-phase states of a square-lattice double-exchange model under thermal quench. We further discuss a generalized potential theory that extends the BP formalism to incorporate both conservative and nonconservative electronic torques, thereby enabling ML models to learn nonequilibrium exchange fields from computationally demanding microscopic approaches such as nonequilibrium Green’s-function techniques. This extension yields quantitatively accurate predictions of voltage-driven domain-wall motion and establishes a foundation for quantum-accurate, multiscale modeling of nonequilibrium spin dynamics and spintronic functionalities. 
+
+I. INTRODUCTION 
+
+Over the past two decades, machine learning (ML) has transformed a wide range of disciplines, spanning in-dustrial applications, data-driven engineering, and fun-damental scientific research. In physics and materi-als sciences, the integration of ML techniques has not only yielded numerous remarkable successes but has also opened entirely new paradigms for exploring complex physical phenomena and accelerating theoretical discov-ery [1–15]. The transformative power of ML arises from its ability to act as a universal approximator for high-dimensional, nonlinear mappings. This capability allows ML models to capture intricate structure–property re-lationships, learn effective representations directly from data, and generalize to previously unseen regimes. Con-sequently, ML has greatly enhanced the efficiency, scala-bility, and predictive accuracy of complex numerical sim-ulations, enabling new levels of realism and precision in modeling physical systems. Among these developments, one of the most prominent milestones has been the application of ML to ab initio 
+
+or quantum molecular dynamics (QMD)—in particular, the accurate prediction of atomic energies and forces [16– 30]. Unlike classical molecular dynamics based on empir-ical force fields, QMD computes atomic forces by explic-itly integrating out the electronic degrees of freedom as the atomic configurations evolve [31]. While this first-principles approach—often relying on many-body elec-tronic structure methods such as density functional the-ory (DFT)—yields high fidelity, its substantial compu-tational cost severely limits the accessible temporal and spatial scales. Machine-learning force-field models pro-vide a powerful solution to this bottleneck by emulat-ing the underlying electronic-structure calculations with near-quantum accuracy at a fraction of the cost. This synergy between ML and QMD has opened the door to large-scale, high-accuracy atomistic simulations, effec-tively bridging the gap between ab initio precision and mesoscale modeling. Here, we review recent advances in scalable ML frame-works for simulating adiabatic magnetization dynamics in metallic spin systems, exemplified by the s-d exchange, double-exchange, and Kondo-lattice models [32–37]. In such itinerant magnets, spin dynamics are primarily gov-erned by exchange interactions mediated by conduction electrons, leading to computational demands comparable to those of QMD. To evaluate the local effective magnetic fields that drive spin evolution, one must, in principle, solve the real-space electronic Hamiltonian correspond-ing to each instantaneous spin configuration at every in-tegration step—a task that becomes prohibitively expen-sive for large systems. The ML force-field paradigm offers an efficient alternative by learning the mapping between spin configurations and their corresponding electronic en-ergies or torques, enabling linear-scaling simulations with near–quantum accuracy at a computational cost compa-rable to classical spin dynamics. Metallic spin systems are of great interest owing to their rich variety of coupled spin–charge textures stabi-lized by competing exchange interactions and electron-mediated correlations. These materials host emer-gent mesoscale structures—such as magnetic vortices, skyrmions, and stripe-like modulations—arising from the delicate balance between localized spins and itin-erant electrons. Among these, magnetic vortices and skyrmions have attracted particular attention for their topological stability, particle-like dynamics, and poten-tial applications in next-generation spintronic and neuro-morphic devices [38–44]. The associated Berry-phase ef-fects act as emergent magnetic fields on conduction elec-trons, giving rise to unconventional transport responses 
+
+> arXiv:2604.11513v1 [cond-mat.str-el] 13 Apr 2026
+
+2such as the topological and anomalous Hall effects. A striking example of electronically driven self-organization occurs in colossal magnetoresistance (CMR) manganites, where ferromagnetic metallic and antifer-romagnetic or charge-ordered insulating domains coex-ist within a nanoscale mosaic [45–53]. These inho-mogeneous textures are highly susceptible to external perturbations—magnetic field, pressure, or carrier dop-ing—leading to dramatic, often nonlinear, changes in transport and magnetization. This intricate interplay among spin, charge, and lattice degrees of freedom exem-plifies the emergent phenomena characteristic of strongly correlated itinerant magnets. Taken together, these developments underscore the growing need for computational frameworks that can capture the full complexity of itinerant magnetism while remaining scalable to experimentally relevant length and time scales. ML force fields—building on the successes of their atomic counterparts—offer a powerful route toward this goal, enabling quantum-accurate simulations of mag-netic textures, phase competition, and nonequilibrium spin dynamics at unprecedented scales. In this review, we survey the emerging methodologies, underlying theo-retical principles, and representative applications of these ML-driven approaches, with the aim of providing both a unifying perspective and a roadmap for future advances at the interface of spin dynamics, electronic structure, and machine learning. The remainder of this article is organized as follows. Section II introduces the ML force-field framework based on the Behler-Parrinello (BP) architecture for modeling spin dynamics in quasi-equilibrium systems. Section III presents the construction of symmetry-aware magnetic descriptors—an essential component of the framework— designed to preserve the symmetries of the underlying electronic Hamiltonian. Applications of the ML approach to representative noncollinear and noncoplanar magnetic orders are discussed in Sec. IV. A dynamical example is provided in Sec. V, where the ML framework is used to model the thermal-quench evolution of mixed-phase states comprising coexisting ferromagnetic clusters and a N’eel-ordered background. Section VI introduces the extension of the BP architecture to include nonconserva-tive forces, relevant for driven nonequilibrium systems, and Sec. VII demonstrates this extended formalism in the context of a voltage-driven magnetic transition. Finally, Sec. VIII offers concluding remarks and an outlook.   
+
+> II. MACHINE LEARNING ARCHITECTURE FOR CONSERVATIVE FIELD A. Spin dynamics of itinerant electron magnets
+
+We begin by formulating the governing equations for itinerant electron magnets. As a prototypical exam-ple, we consider the s-d exchange model, which captures the interaction between localized magnetic moments— typically originating from d or f electrons—and itiner-ant conduction electrons from the s band. The general form of the single-band s-d exchange Hamiltonian can be written as ˆH = − X
+
+> ij,α
+
+tij ˆc† 
+
+> iα
+
+ˆcjβ − J X
+
+> i,αβ
+
+Si · σαβ ˆc† 
+
+> iα
+
+ˆciβ , (1) where ˆ c† 
+
+> iα
+
+(ˆ ciα ) denotes the creation (annihilation) oper-ator for a conduction electron with spin α =↑, ↓ at lattice site i. The first term in Eq. (1) describes the Hamilto-nian of the itinerant s electrons, while the second term represents their local exchange interaction—also known as the Hund’s-rule coupling—of strength J with the lo-calized magnetic moment Si arising from the d electrons. The electron operators in this term define the local spin density of the conduction electrons, ˆ si = ℏ
+
+> 2
+
+ ˆc†
+
+> iα
+
+σαβ ˆciβ 
+
+.In most spintronic materials, the localized moments are sufficiently large that quantum fluctuations can be ne-glected, allowing them to be treated as classical spins of fixed magnitude |Si| = S. For convenience, the spin length is set to unity, S = 1, in the following. The dynamics of the localized spins Si are described by the Landau-Lifshitz-Gilbert (LLG) equation [54, 55]: 
+
+dSi
+
+dt = −γSi × Hi + αSi × dSi
+
+dt , (2) where γ is the gyromagnetic ratio, α is an effective damp-ing parameter, and Hi is a local magnetic field. In anal-ogy with the molecular dynamics, this local electron-mediated exchange field can be viewed as a force acting on spin Si. For a conservative exchange field, which was considered in the original works of LL, this local field is given by 
+
+Hi = − ∂E ∂Si
+
+, (3) where E = E({Si}) is the total energy of the system. For small Hund’s coupling JH ≪ t, by integrating out elec-trons using second-order perturbation theory, one obtains an effective interaction 
+
+E = J2
+
+W
+
+X
+
+> ij
+
+J (ri − rj ) Si · Sj , (4) where W is the bandwidth of the electron tight-binding model, and J (r) is a (dimensionless) function which de-cays with the distance between the two spins, analo-gous to the well-known Ruderman-Kittel-Kasuya-Yosida (RKKY) interaction [56–58]. For intermediate and strong Hund’s coupling, however, no simple perturbative form exists; instead, the effective energy required in the force calculation of Eq. (3) must be obtained by integrat-ing out the electrons on the fly: 
+
+E = ˆH({Si}) = Tr  ˆρe ˆH, (5) where ˆ ρe = exp( − ˆH/k B T )/Z is the equilibrium electron density matrix with respect to the instantaneous spin 3configurations, and Z is the partition function. For the s-d model in Eq. (1), the local field in the adiabatic approx-imation can be computed using the Hellmann-Feyman theorem [59, 60] Hi = −∂⟨ ˆH⟩ /∂ Si = −⟨ ∂ ˆH/∂ Si⟩, giving rise to 
+
+Hi = J X
+
+> αβ
+
+σαβ ⟨ˆc† 
+
+> jβ
+
+ˆciα ⟩ (6) = J X
+
+> m
+
+X
+
+> αβ
+
+σαβ fFD (εm)U (m)∗ 
+
+> jβ
+
+U (m) 
+
+> iα
+
+.
+
+The single-electron correlation function ⟨ˆc† 
+
+> jβ
+
+ˆciα ⟩ can be directly computed from the eigenstates of the s-d Hamil-tonian, as shown in the second equality above. Here 
+
+U (m) 
+
+> iα
+
+is the eigenvector of the s-d Hamiltonian with eigen-energy εm. Alternatively, it can also be solved using the more efficient kernel polynomial method (KPM) [61–63]. Quantum LLG simulations based on this framework have been used to investigate semiclassical spin-density-wave dynamics in Hubbard models [64] and anharmonic collective modes in double-exchange systems [65]. As discussed in Sec. I, this quantum LLG approach closely parallels quantum MD [31]: in both cases, the repeated evaluation of the electronic density matrix at each simu-lation step constitutes the dominant computational bot-tleneck. In the following, we introduce a scalable ML framework that eliminates this bottleneck and enables large-scale LLG dynamical simulations of s-d systems with near–quantum accuracy. It is worth emphasizing that real materials gener-ally also host short-range exchange interactions be-tween local moments, which can be written as Eex =P 
+
+> ij
+
+(Jij , Si · Sj + Dij · Si × Sj ). The corresponding contribution to the spin dynamics is straightforward to incorporate: the associated local field is obtained ana-lytically as Hex  
+
+> i
+
+= − P 
+
+> j
+
+(Jij Sj + Dij × Sj ), and can be added directly to the itinerant-electron field. Since the primary purpose of the ML framework developed here is to accelerate the computationally demanding evalua-tion of electron-mediated exchange fields, we restrict our attention throughout this paper to the s–d Hamiltonian.  
+
+> B. Behler-Parrinello ML architecture
+
+The ML force-field approach developed here provides an effectively classical force field, yet–owing to the remarkable expressive power of modern deep-learning models–it achieves accuracy comparable to full quantum calculations. To serve as a reliable surrogate for quan-tum dynamics, however, the ML framework must satisfy two key requirements: scalability and strict adherence to the underlying symmetry constraints. A central observa-tion, originally emphasized by W. Kohn [66], is that true linear-scaling electronic-structure methods become possi-ble only when the locality or “nearsightedness” principle holds [66, 67]. This principle reflects the fact that, in many-electron systems, the influence of distant degrees of freedom is strongly suppressed by wave-mechanical de-structive interference. Importantly, this form of locality is far more general than the existence of exponentially lo-calized Wannier functions, which are restricted to large-gap insulators. Instead, nearsightedness is an intrinsic property of interacting quantum systems and governs the spatial decay of electronic responses even in metals and correlated materials. Within this conceptual framework, ML force-field models provide an efficient and explicit way to harness lo-cality. By encoding short-range electronic correlations di-rectly into the ML architecture, these models implement the nearsightedness principle at the algorithmic level, en-abling practical O(N ) scaling in large-scale dynamical simulations. Indeed, the locality principle is the corner-stone of modern ML-based force-field approaches that now permit large-scale QMD simulations with the accu-racy of ab initio density-functional theory (DFT) calcu-lations [16–30]. In these methods, atomic forces–central to QMD simulations–are assumed to depend primarily on the local chemical environment. A fixed-size ML model is then trained to capture the highly nontrivial mapping be-tween an atom’s local environment and the corresponding force acting upon it. Practical implementations of this paradigm were first demonstrated in the pioneering works of Behler and Parrinello [16] and Bart´ ok et al. [17]. Sim-ilar ML frameworks have since been extended to a range of condensed-matter lattice systems, enabling large-scale modeling and simulation across diverse many-body set-tings [32–36, 68–74]. Here we generalize the Behler–Parrinello (BP) archi-tecture [20] to describe the magnetization dynamics of metallic spin systems; a schematic illustration is shown in Fig. 1. We begin by expressing the total energy E in Eq. (5) as a sum of local energy contributions, 
+
+E = X
+
+> i
+
+ϵi = X
+
+> i
+
+ε(Ci) , (7) As indicated by the second equality, we invoke the local-ity principle and assume that the site energy ϵi depends only on a local magnetic environment, denoted as Ci,through a universal function ε(·) which is determined by the underlying electron Hamiltonian. In practical imple-mentations, the neighborhood is defined as the collection of spins within a cutoff radius rc around the i-th site: 
+
+Ci = {Sj |rj − ri| < r c}. The complex functional depen-dence of the local energy on the magnetic environment is to be approximated by a feed-forward neural network. The feed-forward NN, shown in Fig. 1, consists of a collection of artificial neurons, or nodes, arranged in suc-cessive layers. The input to the NN is the set of gen-eralized coordinates describing the local spin environ-ment, and the output is the corresponding local energy 
+
+ϵi. As information propagates from left to right, each neuron receives inputs xi from the previous layer and produces an output through a nonlinear transformation 
+
+y = F (P 
+
+> i
+
+Wixi + b). Here Wi and b are the learn-able weights and biases associated with each neuron, and 4Si
+
+ A B
+
+ C  D
+
+Hi =   @E
+
+@Si
+
+local spin configuration  neural network 
+
+automatic di ↵erentiation 
+
+·
+
+·
+
+·
+
+> ·
+> ·
+> ·
+
+H1
+
+H2
+
+<latexit sha1_base64="l0rzTABcdwNsZ5AOZUgwtfqag80=">AAAB/HicbVC7TsMwFHXKq5RXoCOLRYXEVCUdCmMFC2ORaIvURpXj3LRWHSeyHaQoKr/CwgBCrHwIG3+D02aAliNZOj7n3mvf4yecKe0431ZlY3Nre6e6W9vbPzg8so9P+ipOJYUejXksH3yigDMBPc00h4dEAol8DgN/dlP4g0eQisXiXmcJeBGZCBYySrSRxna9uINmFAegqGSJjuXYbjhNZwG8TtySNFCJ7tj+GgUxTSMQmnKi1NB1Eu3lRJq5HOa1UaogIXRGJjA0VJAIlJcvPj/H50YJcBhLc4TGC/V3R04ipbLIN5UR0VO16hXif94w1eGVlzORpBoEXT4UphzrGBdJ4IBJoJpnhhCzeZEBnRJJqDZ51UwI7urK66TfarrtZvuu1ehcl3FU0Sk6QxfIRZeog25RF/UQRRl6Rq/ozXqyXqx362NZWrHKnjr6A+vzByIvlRk=</latexit> 
+
+magnetic descriptor 
+
+<latexit sha1_base64="fFK+utc6du9uMS56u4yszu5FumQ=">AAACGnicbVBNS8NAEN34WetX1KOXxSLUS0lEqseiF48V7Qc0pWy2m3btZhN2J0Ip/R1e/CtePCjiTbz4b9y0gWrrg4HHezPMzPNjwTU4zre1tLyyurae28hvbm3v7Np7+3UdJYqyGo1EpJo+0UxwyWrAQbBmrBgJfcEa/uAq9RsPTGkeyTsYxqwdkp7kAacEjNSxXS8k0PcDfNvh2KPdCIoz5R57wEOm8UwanHTsglNyJsCLxM1IAWWoduxPrxvRJGQSqCBat1wnhvaIKOBUsHHeSzSLCR2QHmsZKonZ2B5NXhvjY6N0cRApUxLwRP09MSKh1sPQN53pjXreS8X/vFYCwUV7xGWcAJN0uihIBIYIpznhLleMghgaQqji5lZM+0QRCibNvAnBnX95kdRPS265VL45K1Quszhy6BAdoSJy0TmqoGtURTVE0SN6Rq/ozXqyXqx362PaumRlMwfoD6yvH4ycn/M=</latexit> 
+
+Si · (Sj ⇥ Sk)
+
+<latexit sha1_base64="5C7iX4K4SFwzCtcIsJGL1eutlYo=">AAAB9HicbVDLSgNBEOz1GeMr6tHLYBA8hV2R6EUIevEYwTwgWcLsZJKMmZ1dZ3oDYcl3ePGgiFc/xpt/4yTZgyYWNBRV3XR3BbEUBl3321lZXVvf2Mxt5bd3dvf2CweHdRMlmvEai2SkmwE1XArFayhQ8masOQ0DyRvB8HbqN0ZcGxGpBxzH3A9pX4meYBSt5LfZQHRS8TickGvSKRTdkjsDWSZeRoqQodopfLW7EUtCrpBJakzLc2P0U6pRMMkn+XZieEzZkPZ5y1JFQ278dHb0hJxapUt6kbalkMzU3xMpDY0Zh4HtDCkOzKI3Ff/zWgn2rvxUqDhBrth8US+RBCMyTYB0heYM5dgSyrSwtxI2oJoytDnlbQje4svLpH5e8sql8v1FsXKTxZGDYziBM/DgEipwB1WoAYMneIZXeHNGzovz7nzMW1ecbOYI/sD5/AET/ZGp</latexit> 
+
+ ijk =
+
+<latexit sha1_base64="t18ZvYuUr4wS7SUxrZQ7fX4c2AI=">AAACBXicbVDLSsNAFJ34rPUVdamLwSK4KolIdVl047KifUAbwmQyacdOZsLMRCihGzf+ihsXirj1H9z5N07agNp64MLhnHu5954gYVRpx/myFhaXlldWS2vl9Y3NrW17Z7elRCoxaWLBhOwESBFGOWlqqhnpJJKgOGCkHQwvc799T6Sigt/qUUK8GPU5jShG2ki+fdCLkR4EEbzxKezhUOgf4c63K07VmQDOE7cgFVCg4dufvVDgNCZcY4aU6rpOor0MSU0xI+NyL1UkQXiI+qRrKEcxUV42+WIMj4wSwkhIU1zDifp7IkOxUqM4MJ35iWrWy8X/vG6qo3MvozxJNeF4uihKGdQC5pHAkEqCNRsZgrCk5laIB0girE1wZROCO/vyPGmdVN1atXZ9WqlfFHGUwD44BMfABWegDq5AAzQBBg/gCbyAV+vRerberPdp64JVzOyBP7A+vgGeKJgH</latexit> 
+
+Si · Sj
+
+<latexit sha1_base64="ruCkigEvciHsQiUi6Wys834HSCk=">AAAB8HicbVBNSwMxEJ2tX7V+VT16CRbBU9kVqV6EohePFeyHtEvJptk2NskuSVYoy/4KLx4U8erP8ea/MW33oK0PBh7vzTAzL4g508Z1v53Cyura+kZxs7S1vbO7V94/aOkoUYQ2ScQj1QmwppxJ2jTMcNqJFcUi4LQdjG+mfvuJKs0ieW8mMfUFHkoWMoKNlR6CfsoeM3SF+uWKW3VnQMvEy0kFcjT65a/eICKJoNIQjrXuem5s/BQrwwinWamXaBpjMsZD2rVUYkG1n84OztCJVQYojJQtadBM/T2RYqH1RAS2U2Az0oveVPzP6yYmvPRTJuPEUEnmi8KEIxOh6fdowBQlhk8swUQxeysiI6wwMTajkg3BW3x5mbTOql6tWrs7r9Sv8ziKcATHcAoeXEAdbqEBTSAg4Ble4c1Rzovz7nzMWwtOPnMIf+B8/gADdY/o</latexit> 
+
+bij =
+
+Si
+
+Ci
+
+<latexit sha1_base64="4eJrbzo+sAcMJNdDe5ykM2JK60M=">AAACJnicbVDLSgMxFM3UV62vUZdugkWooGVGpLop1FbBZQX7gLYMmUymDc1MhiQjlKFf48ZfceOiIuLOTzHTVtDqgXAP59zLzT1uxKhUlvVhZJaWV1bXsuu5jc2t7R1zd68peSwwaWDOuGi7SBJGQ9JQVDHSjgRBgctIyx3WUr/1QISkPLxXo4j0AtQPqU8xUlpyzHLX5cyTo0CXxB87N7AMC108oM4VPIVTUjuZ1eq3cH2cKh5X0jHzVtGaAv4l9pzkwRx1x5x0PY7jgIQKMyRlx7Yi1UuQUBQzMs51Y0kihIeoTzqahiggspdMzxzDI6140OdCv1DBqfpzIkGBTC/RnQFSA7nopeJ/XidW/mUvoWEUKxLi2SI/ZlBxmGYGPSoIVmykCcKC6r9CPEACYaWTzekQ7MWT/5LmWdEuFUt35/lKdR5HFhyAQ1AANrgAFXAL6qABMHgEz2ACXo0n48V4M95nrRljPrMPfsH4/AJHtaMs</latexit> 
+
+f E = (  A    C ,  B    D ), · · · 
+
+✏1
+
+✏2
+
+✏i <latexit sha1_base64="32oxboM8s0V47DcjNOCk0eDNdeQ=">AAAB6HicbVDLSgNBEOyNrxhfUY9eBoPgKeyKRI9BETwmYB6QLGF20puMmZ1dZmaFEPIFXjwo4tVP8ubfOEn2oIkFDUVVN91dQSK4Nq777eTW1jc2t/LbhZ3dvf2D4uFRU8epYthgsYhVO6AaBZfYMNwIbCcKaRQIbAWj25nfekKleSwfzDhBP6IDyUPOqLFS/a5XLLlldw6ySryMlCBDrVf86vZjlkYoDRNU647nJsafUGU4EzgtdFONCWUjOsCOpZJGqP3J/NApObNKn4SxsiUNmau/JyY00nocBbYzomaol72Z+J/XSU147U+4TFKDki0WhakgJiazr0mfK2RGjC2hTHF7K2FDqigzNpuCDcFbfnmVNC/KXqVcqV+WqjdZHHk4gVM4Bw+uoAr3UIMGMEB4hld4cx6dF+fd+Vi05pxs5hj+wPn8AZx/jNQ=</latexit> 
+
+E
+
+<latexit sha1_base64="RloLgjFC9uftVoLGlcRgaoHWlsA=">AAAB/3icbVC7SgNBFJ2Nr7i+VgUbm8EQsAq7FtFGCIpgGcE8IBuW2clsMmRmdpmZFcKawg+xsbFQxNbfsFE/xN7Jo9DEAxcO59zLvfeECaNKu+6XlVtYXFpeya/aa+sbm1vO9k5dxanEpIZjFstmiBRhVJCappqRZiIJ4iEjjbB/PvIbN0QqGotrPUhIm6OuoBHFSBspcPYu4Cn0VcoDCn2SKMqMSmHgFNySOwacJ96UFCrF78+Pe7tbDZx3vxPjlBOhMUNKtTw30e0MSU0xI0PbTxVJEO6jLmkZKhAnqp2N7x/ColE6MIqlKaHhWP09kSGu1ICHppMj3VOz3kj8z2ulOjppZ1QkqSYCTxZFKYM6hqMwYIdKgjUbGIKwpOZWiHtIIqxNZLYJwZt9eZ7Uj0peuVS+8gqVMzBBHuyDA3AIPHAMKuASVEENYHALHsATeLburEfrxXqdtOas6cwu+APr7QcE6Jk/</latexit> 
+
+E = P
+
+i ✏i
+
+<latexit sha1_base64="SWYzZ6/rI+BCy3bTb8UUrh2U15o=">AAAB7nicbVBNS8NAEJ3Ur1q/qh69LBbBU0lEqseiBz1WsB/QhLLZbtolu5uwuxFK6I/w4kERr/4eb/4bt20O2vpg4PHeDDPzwpQzbVz32ymtrW9sbpW3Kzu7e/sH1cOjjk4yRWibJDxRvRBrypmkbcMMp71UUSxCTrthfDvzu09UaZbIRzNJaSDwSLKIEWys1PXzu0HsTwfVmlt350CrxCtIDQq0BtUvf5iQTFBpCMda9z03NUGOlWGE02nFzzRNMYnxiPYtlVhQHeTzc6fozCpDFCXKljRorv6eyLHQeiJC2ymwGetlbyb+5/UzE10HOZNpZqgki0VRxpFJ0Ox3NGSKEsMnlmCimL0VkTFWmBibUMWG4C2/vEo6F3WvUW88XNaaN0UcZTiBUzgHD66gCffQgjYQiOEZXuHNSZ0X5935WLSWnGLmGP7A+fwBRiqPjA==</latexit> 
+
+{Gk}
+
+<latexit sha1_base64="W9qvBmf/peL1gPpuRC1RvOrdr4g=">AAAB9HicbVBNS8NAEJ34WetX1aOXxSLUS0lEqseiF48V7Ac0sWy2m3bpZhN3N8US8ju8eFDEqz/Gm//GbZuDtj4YeLw3w8w8P+ZMadv+tlZW19Y3Ngtbxe2d3b390sFhS0WJJLRJIh7Jjo8V5UzQpmaa004sKQ59Ttv+6Gbqt8dUKhaJez2JqRfigWABI1gbyXPTp4e04pxlPeFmvVLZrtozoGXi5KQMORq90pfbj0gSUqEJx0p1HTvWXoqlZoTTrOgmisaYjPCAdg0VOKTKS2dHZ+jUKH0URNKU0Gim/p5IcajUJPRNZ4j1UC16U/E/r5vo4MpLmYgTTQWZLwoSjnSEpgmgPpOUaD4xBBPJzK2IDLHERJuciiYEZ/HlZdI6rzq1au3uoly/zuMowDGcQAUcuIQ63EIDmkDgEZ7hFd6ssfVivVsf89YVK585gj+wPn8AUx2R1A==</latexit> 
+
+{x(1) 
+
+n }
+
+<latexit sha1_base64="rTIG8LY8qh8kfcH1XgOLlhTkVcc=">AAAB9HicbVBNT8JAEJ3iF+IX6tFLIzHBC2mJQY9ELx4xkY8EKtkuW9iwu627WyJp+ju8eNAYr/4Yb/4bF+hBwZdM8vLeTGbm+RGjSjvOt5VbW9/Y3MpvF3Z29/YPiodHLRXGEpMmDlkoOz5ShFFBmppqRjqRJIj7jLT98c3Mb0+IVDQU93oaEY+joaABxUgbyeslTw9JuXqe9nkv7RdLTsWZw14lbkZKkKHRL371BiGOOREaM6RU13Ui7SVIaooZSQu9WJEI4TEakq6hAnGivGR+dGqfGWVgB6E0JbQ9V39PJIgrNeW+6eRIj9SyNxP/87qxDq68hIoo1kTgxaIgZrYO7VkC9oBKgjWbGoKwpOZWG4+QRFibnAomBHf55VXSqlbcWqV2d1GqX2dx5OEETqEMLlxCHW6hAU3A8AjP8Apv1sR6sd6tj0VrzspmjuEPrM8fUyGR1A==</latexit> 
+
+{x(2) 
+
+m }
+
+FIG. 1. Schematic diagram of ML force-field model for itinerant electron magnets. A descriptor transforms the neighborhood spin configuration Ci to effective coordinates {Gℓ} which are then fed into a neural network (NN). The output node of the NN correspond to the local energy ϵi = ε(Ci) associated with spin Si. {x(1) 
+
+m } and {x(2) 
+
+n } denote feature variables associated with neurons of the first and second hidden layers, respectively. The corresponding total potential energies Eis obtained from summation of these local energies. Automatic differentiation is employed to compute the derivatives ∂E/∂ Si from which the local exchange fields Hi are obtained. 
+
+F (·) is the activation function, which mimics the nonlin-ear, threshold-like response of a biological neuron. As a concrete illustration, consider the simplified architecture with two hidden layers shown in Fig. 1. The local energy then takes the form 
+
+ϵi = X
+
+m
+
+W (2) 
+
+m x(2) 
+
+m = X
+
+m
+
+W (2) 
+
+m F
+
+X
+
+k
+
+W (1) 
+
+mn x(1) 
+
+n + b(1) 
+
+m
+
+
+
+(8) = X
+
+m
+
+W (2) 
+
+m F
+
+X
+
+k
+
+W (1) 
+
+mn F
+
+X
+
+k
+
+W (0) 
+
+nℓ Gℓ + b(0) 
+
+n
+
+
+
++ b(1) 
+
+m
+
+
+
+.
+
+Here x(1) 
+
+n and x(2) 
+
+m denote the activations of neurons in the first and second hidden layers, and {Gℓ} represents the set of input descriptors. The nested functional form on the right-hand side explicitly realizes the mapping ε(·)introduced in Eq. (7), with the full set of weights W and biases b serving as trainable parameters that encode the local energy landscape. Thanks to the universal approx-imation theorem, such neural networks are, in principle, capable of representing unknown multidimensional real-valued functions with arbitrary accuracy [75, 76]. The total energy E, given by the sum of local ener-gies, is obtained by applying the same NN model to each individual spin in the lattice. This process is analogous to assembling identical ML models into a “super neural network” that takes the entire spin configuration {Si} as input and outputs the total energy E at its final node, as shown in Fig. 1. The effective local field Hi, defined as the derivative of the total energy as shown in Eq. (1), can be efficiently computed using automatic differenti-ation techniques [77, 78]. In practice, however, due to the locality of the effective field, the calculation of Hi
+
+only requires contributions from local energies ϵj within a similar finite neighborhood around site-i
+
+III. MAGNETIC DESCRIPTOR 
+
+Another crucial component–already emphasized in the original works of Behler and Parrinello [16]–is the de-scriptors that faithfully represent the local chemical en-vironment. Despite the powerful approximation capabil-ities of modern learning models, particularly deep neu-ral networks, the symmetries of the underlying elec-tronic Hamiltonian can only be captured statistically un-less they are explicitly encoded in the input represen-tation. For molecular systems, the relevant symmetry group is the three-dimensional Euclidean group E(3), consisting of translations, rotations, and reflections, to-gether with permutations of atomic species. Over the past decade, numerous atomic descriptors have been pro-posed [16–18, 79–84], including the widely used atom-centered symmetry functions (ACSF) and the group-theoretical bispectrum coefficients. More recently, it has been recognized that many of these descriptors arise as special cases of the Atomic Cluster Expansion (ACE) formalism [84], which provides a systematic, hierarchi-cal, and in-principle complete framework for construct-ing symmetry-adapted representations of atomic environ-ments. In contrast, the situation for itinerant magnetic sys-tems is far less developed. Atom-based descriptors de-signed for molecular structures cannot be directly ap-plied to systems such as the s-d model, where additional symmetries associated with spin degrees of freedom must be respected. More broadly, descriptors for condensed-matter Hamiltonians containing internal variables–spins, orbitals, order parameters, or other field-like quantities– have yet to be systematically formulated. In such sys-tems, the local environment must be represented in a 5manner consistent with both the spatial symmetries of the lattice and the symmetry operations acting on the internal degrees of freedom. Here we introduce a group-theoretical framework to construct a comprehensive de-scriptor for the s-d model—one that naturally incorpo-rates these combined symmetries and can be generalized to a broad class of itinerant spin systems. The s-d Hamiltonian in Eq. (1) is invariant under two independent symmetry groups: (i) global SO(3)/SU(2) spin rotations and (ii) the point group characterizing the lattice site symmetry. The rotation symmetry refers to simultaneous transformations of the classical local mo-ments, Si → R · Si, and the electron spinor operators, ˆciα → ˆUαβ ˆciβ , where R is an orthogonal 3 × 3 rotation matrix and ˆU = ˆU (R) is the corresponding 2 × 2 unitary SU(2) operator acting on the electron spin. The effec-tive local-energy functional ε(Ci)—obtained conceptually by integrating out the electrons?must therefore preserve the global SO(3) symmetry of the classical spins. This requirement can be satisfied manifestly by constructing the energy only from rotationally invariant spin combina-tions. The fundamental building blocks are the two-spin bond variable and the three-spin scalar chirality, 
+
+bjk = Sj · Sk, χjmn = Sj · Sm × Sn. (9) which encode two-body and three-body spin correlations, respectively. Any higher-order rotational invariants can be expressed as products and nonlinear combinations of these two quantities. Next we examine the discrete lattice symmetries. Un-der any element of the lattice point group (rotations, re-flections, inversion, etc.), a bond variable bjk is mapped to another bond bj′k′ of the same bond length, and the chirality variables transform analogously. Conse-quently, the complete set of bond and chirality vari-ables surrounding site i, bjk , , χ jmn , furnishes the ba-sis of a high-dimensional representation ρ of the point group. To construct symmetry-invariant descriptors from these quantities, we first decompose this reducible rep-resentation into its irreducible components using stan-dard group-theoretical procedures. Importantly, because point-group operations preserve the distance from the central spin at site i, the representation matrices of ρ
+
+naturally acquire a block-diagonal structure when the variables are organized into shells of fixed radius. On the square lattice, these blocks have dimension 4 or 8, with some examples illustrated in Fig. 2. The full represen-tation matrix is therefore block-diagonal, which renders the subsequent decomposition particularly transparent. As a concrete example, consider the four chirality vari-ables in a size-4 block illustrated in Fig. 2(b). Their ir-reducible components under the D4 point group are 
+
+f (A1) = χA + χB + χC + χD ,f (B1) = χA − χB + χC − χD ,f (E)1 = χA − χC , f (E)2 = χB − χD ,
+
+corresponding to the one-dimensional A1 and B1 rep-<latexit sha1_base64="6g7OLSRK5ZOoDdn9ag4vaPPeirM=">AAAB6nicbVDLSgNBEOyNrxhfUY9eBoMQL2E3gnoM5OIxonlAsoTZyWwyZHZ2mekVQsgnePGgiFe/yJt/4yTZgyYWNBRV3XR3BYkUBl3328ltbG5t7+R3C3v7B4dHxeOTlolTzXiTxTLWnYAaLoXiTRQoeSfRnEaB5O1gXJ/77SeujYjVI04S7kd0qEQoGEUrPZTZZb9YcivuAmSdeBkpQYZGv/jVG8QsjbhCJqkxXc9N0J9SjYJJPiv0UsMTysZ0yLuWKhpx408Xp87IhVUGJIy1LYVkof6emNLImEkU2M6I4sisenPxP6+bYnjrT4VKUuSKLReFqSQYk/nfZCA0ZygnllCmhb2VsBHVlKFNp2BD8FZfXietasW7rlzdV0u1ehZHHs7gHMrgwQ3U4A4a0AQGQ3iGV3hzpPPivDsfy9ack82cwh84nz+N/o1T</latexit> 
+
+(c)  
+
+> <latexit sha1_base64="ly6jgfs0VfUj7pw9A24KflErB04=">AAAB6nicbVDLSgNBEOyNrxhfUY9eBoMQL2E3gnoM5OIxonlAsoTZyWwyZHZ2mekVQsgnePGgiFe/yJt/4yTZgyYWNBRV3XR3BYkUBl3328ltbG5t7+R3C3v7B4dHxeOTlolTzXiTxTLWnYAaLoXiTRQoeSfRnEaB5O1gXJ/77SeujYjVI04S7kd0qEQoGEUrPZTpZb9YcivuAmSdeBkpQYZGv/jVG8QsjbhCJqkxXc9N0J9SjYJJPiv0UsMTysZ0yLuWKhpx408Xp87IhVUGJIy1LYVkof6emNLImEkU2M6I4sisenPxP6+bYnjrT4VKUuSKLReFqSQYk/nfZCA0ZygnllCmhb2VsBHVlKFNp2BD8FZfXietasW7rlzdV0u1ehZHHs7gHMrgwQ3U4A4a0AQGQ3iGV3hzpPPivDsfy9ack82cwh84nz+K9I1R</latexit>
+
+(a)  <latexit sha1_base64="iBp+EUSTBvqKDKfW5WB1IYUgkLU=">AAAB6nicbVDLSgNBEOyNrxhfUY9eBoMQL2E3gnoM5OIxonlAsoTZSW8yZHZ2mZkVQsgnePGgiFe/yJt/4yTZgyYWNBRV3XR3BYng2rjut5Pb2Nza3snvFvb2Dw6PiscnLR2nimGTxSJWnYBqFFxi03AjsJMopFEgsB2M63O//YRK81g+mkmCfkSHkoecUWOlh3Jw2S+W3Iq7AFknXkZKkKHRL371BjFLI5SGCap113MT40+pMpwJnBV6qcaEsjEdYtdSSSPU/nRx6oxcWGVAwljZkoYs1N8TUxppPYkC2xlRM9Kr3lz8z+umJrz1p1wmqUHJlovCVBATk/nfZMAVMiMmllCmuL2VsBFVlBmbTsGG4K2+vE5a1Yp3Xbm6r5Zq9SyOPJzBOZTBgxuowR00oAkMhvAMr/DmCOfFeXc+lq05J5s5hT9wPn8AjHmNUg==</latexit> 
+
+(b) 
+
+Si Si
+
+bA
+
+bB
+
+bC
+
+bD
+
+bE
+
+bF bG
+
+bH
+
+bA
+
+bBbC
+
+bD
+
+Si
+
+ A B
+
+ C  D
+
+FIG. 2. (a) The four bond variables bA, b B , b C , b D , defined as the inner products between the central spin Si and its four equidistant nearest neighbors, form the basis of a four-dimensional reducible representation of the D4 point group. (b) The four scalar chiralities χA, χ B , χ C , χ D likewise span a four-dimensional reducible representation of D4. (c) The eight bond variables bA, b B , . . . , b H constitute the basis of an eight-dimensional reducible representation. 
+
+resentations and the two-dimensional E representation, respectively. Applying this decomposition procedure to all blocks, we obtain a set of basis vectors 
+
+f (Γ ,r ) =  f (Γ ,r )1 , f (Γ ,r )2 , · · · , f (Γ ,r )
+
+nΓ
+
+ (10) where Γ labels the irreducible representation, r indexes its multiplicity, and nΓ is the dimension of the IR. These IR basis functions play a role analogous to Fourier com-ponents for the O(2) group or the spherical harmon-ics Yℓ,m for SO(3). Importantly, the transformation of each vector f (Γ ,r ) under a point-group operation is fully determined by the known matrix representation D(Γ) :
+
+f (Γ ,r ) → D(Γ) · f (Γ ,r ). This property provides a system-atic and rigorous route to constructing all point-group invariants, which in turn form the symmetry-adapted de-scriptors used in the neural-network representation of the local energy. For example, analogous to ordinary Fourier analysis, the so-called power spectrum of irreducible representa-tions (IRs) is invariant under the symmetry operations of the point group: 
+
+p(Γ ,r ) = f (Γ ,r ) † · f (Γ ,r ) =
+
+nΓX
+
+μ=1 
+
+f (Γ ,r )
+
+μ
+
+2. (11) This invariance follows directly from the unitarity of the IR matrices, D(Γ) ,†D(Γ) = 1, which represent the sym-metry operations. However, descriptors based solely on the power spectrum possess artificial symmetries: they remain invariant even under independent transforma-tions of individual IR vectors. What such descriptors fail to capture are the relative phases between different IR channels—quantities that are themselves invariant under the point group. To illustrate, consider two doublet IRs, 
+
+f (E, 1) and f (E, 2) . Under point-group operations they each transform as 2D vectors. Hence, not only are their magnitudes |f (E,r )| invariant, but so is their relative an-gle, encoded in cos θ12 ∝ f (E, 1) · f (E, 2) . Capturing this additional relational information requires extending be-yond the power spectrum. 6A complete symmetry-invariant descriptor is provided by the bispectrum coefficients [81, 85], 
+
+b(Γ ,Γ1,Γ2) 
+
+> r,r 1,r 2
+
+= X
+
+> κ,μ,ν
+
+C(Γ ,Γ1,Γ2) 
+
+> κ,μν
+
+f (Γ ,r ) ∗ 
+
+> κ
+
+f (Γ 1,r 1) 
+
+> μ
+
+f (Γ 2,r 2) 
+
+> ν
+
+, (12) where C(Γ ,Γ1,Γ2) 
+
+> κ,μν
+
+are the Clebsch–Gordan coefficients of the point group. These bispectrum components are the group-theoretical analogs of scalar triple products among vectors and encode the relative phases between different IR channels. For the D 4 point group—the symmetry group of the square lattice—the IRs are low-dimensional but exhibit large multiplicities (indexed by r), leading to an enor-mous number of potential bispectrum coefficients. More-over, the full set of coefficients in Eq. (12) is overcom-plete. To keep the descriptor compact and computation-ally tractable, we introduce a reference-basis construc-tion, g(Γ) , for each IR Γ. These reference vectors are chosen to be insensitive to small variations in the local en-vironment. For instance, one may construct a reducible representation from bond variables averaged over a large neighborhood and then project it onto the target IR to obtain g(Γ) .Given these reference bases, the phase information for each IR channel can be encoded through simple projec-tions, 
+
+η(Γ ,r ) = g(Γ) · f (Γ ,r ), (13) while the relative phases between IRs are fully captured by the bispectrum coefficients constructed from the ref-erence IRs, b(Γ ,Γ1,Γ2)ref = P 
+
+> κ,μ,ν
+
+C(Γ ,Γ1,Γ2) 
+
+> κ,μν
+
+g(Γ) ∗ 
+
+> κ
+
+g(Γ 1) 
+
+> μ
+
+g(Γ 2) 
+
+> ν
+
+.The feature variables of our descriptor are given by the combined set of amplitudes and relative phases asso-ciated with each IR, 
+
+{Gℓ} = {p(Γ ,r ), η (Γ ,r ), b (Γ ,Γ1,Γ2)ref }. (14) Crucially, these feature variables are invariant under both global SO(3) spin rotations and the D4 lattice symmetry operations. The full construction of the descriptor pro-ceeds through the sequence 
+
+{Sj } → {bjk , χ jmn } → {f (Γ ,r )} → {Gℓ}.
+
+where Gℓ serves as a set of effective coordinates that com-pactly characterize the local spin environment. These symmetry-preserving coordinates form the input to the feed-forward neural network; see Fig. 1. Since the local energy is expressed as Ei = ε(Gℓ), depending exclusively on these invariant coordinates, the resulting ML energy function automatically respects all symmetries of the un-derlying Hamiltonian.  
+
+> IV. ML MODELS FOR NON-COLLINEAR MAGNETIC ORDERS
+
+As a first application, we employ the BP force-field model to the s-d system on a triangular lattice, where geometric frustration naturally promotes complex non-collinear magnetic orders. For the electronic Hamilto-nian in Eq. (1), we use a nearest-neighbor tight-binding model. Given a classical spin configuration Si, the s-d Hamiltonian is solved via either exact diagonalization (ED) or the kernel polynomial method (KPM) to gener-ate the training dataset. The triangular-lattice s-d model has been widely studied [86–91]; the interplay of frustra-tion and long-range electron-mediated interactions yields a rich phase diagram with non-collinear orders controlled by the Hund’s coupling J and electron filling. To incorporate lattice symmetries, we construct de-scriptors that explicitly preserve the D6 point-group sym-metry of the triangular lattice [36]. All neural-network models are implemented in PyTorch [92] using fully con-nected architectures. The network consists of eight hid-den layers with neuron counts 2048 → 1024 → 512 →
+
+256 → 128 → 64 → 64 → 64. The input dimension is set to 1806, corresponding to the number of symmetry-preserving descriptor variables Gℓ within a neighborhood of radius rc = 6 a and depth lc = 2 a, where a is the lat-tice constant. The output layer has a single neuron that predicts the local site energy ϵi. Rectified Linear Unit (ReLU) activations [93] are used throughout. Because the spin dynamics is drive by the torque Ti =
+
+Si ×Hi in LLG equation, the loss function includes mean-square errors for both torques and total energy, 
+
+L(θ) = 
+
+> N
+
+X
+
+> i=1
+
+Ti − ˆTi 
+
+> 2
+
++ ηE E −
+
+> N
+
+X
+
+> i
+
+ˆϵi
+
+> 2
+
+. (15) where hatted quantities denote ML predictions depen-dent on trainable parameters θ = {W, b } of the neural network. Optimization is performed using the Adam algorithm [94] with an exponentially decaying learning rate, starting from 0.1 and ending at 0.0001. The train-ing set consists of 40,000 snapshots obtained from exact electronic-structure calculations. The model is trained for 200 epochs, and to reduce overfitting we employ 5-fold cross-validation [95]. The trained ML force fields were incorporated into stochastic LLG simulations and benchmarked against ref-erence simulations using KPM- or ED-computed local fields. We integrate the LLG equation using a standard semi-implicit scheme [96]. Because the spins have fixed length |Si| = 1, the effective field carries units of en-ergy, and the gyromagnetic ratio γ has units of 1 /ℏ. In practice, we set γ = 1 and the nearest-neighbor hopping 
+
+tnn = 1, so time is measured in units of τ0 = ( γt nn )−1.Unless otherwise noted, all simulations use a timestep ∆t = 0 .025 τ0 and a dissipation coefficient α = 0 .075. We begin with the nearest-neighbor s-d model at half filling and strong Hund’s coupling, J = 6 tnn , which serves as a benchmark for our ML force-field approach. In the limit J ≫ tnn , the half-filled s-d model reduces to a classical antiferromagnetic Heisenberg model on any lat-tice [64]. At tnn = 0, each site hosts one electron aligned with the local moment Si, yielding a massively degen-7-0.6 
+
+-0.3 
+
+0
+
+0.3 
+
+0.6 
+
+-0.6 -0.3 0 0.3 0.6 
+
+train 
+
+test 
+
+-0.1 
+
+-0.05 
+
+0
+
+0.05 
+
+0.1 
+
+-0.1 -0.05 0 0.05 0.1 
+
+train 
+
+test 
+
+<latexit sha1_base64="Kbrafg3NveE5LetCxrKs/JAXNMg=">AAAB8XicbVBNSwMxEJ2tX7V+VT16CRbBU9kVaT0WvXhQqNAvbJeSTbNtaJJdkqxQlv4LLx4U8eq/8ea/MW33oK0PBh7vzTAzL4g508Z1v53c2vrG5lZ+u7Czu7d/UDw8aukoUYQ2ScQj1QmwppxJ2jTMcNqJFcUi4LQdjG9mfvuJKs0i2TCTmPoCDyULGcHGSo+NftpTAt3fTfvFklt250CrxMtICTLU+8Wv3iAiiaDSEI617npubPwUK8MIp9NCL9E0xmSMh7RrqcSCaj+dXzxFZ1YZoDBStqRBc/X3RIqF1hMR2E6BzUgvezPxP6+bmPDKT5mME0MlWSwKE45MhGbvowFTlBg+sQQTxeytiIywwsTYkAo2BG/55VXSuih7lXLl4bJUu87iyMMJnMI5eFCFGtxCHZpAQMIzvMKbo50X5935WLTmnGzmGP7A+fwBDkGQiA==</latexit> 
+
+TML 
+
+<latexit sha1_base64="HUOXawGxU+YckVypAyOoj3V19eI=">AAAB9HicbVDLSgNBEOz1GeMr6tHLYBA8hV2R6DHoxWOEvCBZwuykkwyZnV1nZoNhyXd48aCIVz/Gm3/jJNmDJhY0FFXddHcFseDauO63s7a+sbm1ndvJ7+7tHxwWjo4bOkoUwzqLRKRaAdUouMS64UZgK1ZIw0BgMxjdzfzmGJXmkayZSYx+SAeS9zmjxkp+rZt2VEjwiTIz7RaKbsmdg6wSLyNFyFDtFr46vYglIUrDBNW67bmx8VOqDGcCp/lOojGmbEQH2LZU0hC1n86PnpJzq/RIP1K2pCFz9fdESkOtJ2FgO0NqhnrZm4n/ee3E9G/8lMs4MSjZYlE/EcREZJYA6XGFzIiJJZQpbm8lbEiVTcDmlLcheMsvr5LGZckrl8oPV8XKbRZHDk7hDC7Ag2uowD1UoQ4MHuEZXuHNGTsvzrvzsWhdc7KZE/gD5/MHyiKSIg==</latexit> 
+
+Texact 
+
+<latexit sha1_base64="Kbrafg3NveE5LetCxrKs/JAXNMg=">AAAB8XicbVBNSwMxEJ2tX7V+VT16CRbBU9kVaT0WvXhQqNAvbJeSTbNtaJJdkqxQlv4LLx4U8eq/8ea/MW33oK0PBh7vzTAzL4g508Z1v53c2vrG5lZ+u7Czu7d/UDw8aukoUYQ2ScQj1QmwppxJ2jTMcNqJFcUi4LQdjG9mfvuJKs0i2TCTmPoCDyULGcHGSo+NftpTAt3fTfvFklt250CrxMtICTLU+8Wv3iAiiaDSEI617npubPwUK8MIp9NCL9E0xmSMh7RrqcSCaj+dXzxFZ1YZoDBStqRBc/X3RIqF1hMR2E6BzUgvezPxP6+bmPDKT5mME0MlWSwKE45MhGbvowFTlBg+sQQTxeytiIywwsTYkAo2BG/55VXSuih7lXLl4bJUu87iyMMJnMI5eFCFGtxCHZpAQMIzvMKbo50X5935WLTmnGzmGP7A+fwBDkGQiA==</latexit> 
+
+TML 
+
+<latexit sha1_base64="HUOXawGxU+YckVypAyOoj3V19eI=">AAAB9HicbVDLSgNBEOz1GeMr6tHLYBA8hV2R6DHoxWOEvCBZwuykkwyZnV1nZoNhyXd48aCIVz/Gm3/jJNmDJhY0FFXddHcFseDauO63s7a+sbm1ndvJ7+7tHxwWjo4bOkoUwzqLRKRaAdUouMS64UZgK1ZIw0BgMxjdzfzmGJXmkayZSYx+SAeS9zmjxkp+rZt2VEjwiTIz7RaKbsmdg6wSLyNFyFDtFr46vYglIUrDBNW67bmx8VOqDGcCp/lOojGmbEQH2LZU0hC1n86PnpJzq/RIP1K2pCFz9fdESkOtJ2FgO0NqhnrZm4n/ee3E9G/8lMs4MSjZYlE/EcREZJYA6XGFzIiJJZQpbm8lbEiVTcDmlLcheMsvr5LGZckrl8oPV8XKbRZHDk7hDC7Ag2uowD1UoQ4MHuEZXuHNGTsvzrvzsWhdc7KZE/gD5/MHyiKSIg==</latexit> 
+
+Texact 
+
+<latexit sha1_base64="ceSnznLVqEVO5CUHaMokoXO9dn8=">AAAB6nicbVDLTgJBEOzFF+IL9ehlIjHxRHaJryOJF48Y5ZEAIbNDL0yYnV1nZo1kwyd48aAxXv0ib/6NA+xBwUo6qVR1p7vLjwXXxnW/ndzK6tr6Rn6zsLW9s7tX3D9o6ChRDOssEpFq+VSj4BLrhhuBrVghDX2BTX90PfWbj6g0j+S9GcfYDelA8oAzaqx099B76hVLbtmdgSwTLyMlyFDrFb86/YglIUrDBNW67bmx6aZUGc4ETgqdRGNM2YgOsG2ppCHqbjo7dUJOrNInQaRsSUNm6u+JlIZaj0PfdobUDPWiNxX/89qJCa66KZdxYlCy+aIgEcREZPo36XOFzIixJZQpbm8lbEgVZcamU7AheIsvL5NGpexdlM9vz0rVShZHHo7gGE7Bg0uowg3UoA4MBvAMr/DmCOfFeXc+5q05J5s5hD9wPn8AaxKN2g==</latexit> 
+
+qx
+
+<latexit sha1_base64="oB7JinuXX55wVQiWiNbA+Pf+yOs=">AAAB6nicbVDLSgNBEOz1GeMr6tHLYBA8hd3g6xjw4jGieUCyhNlJbzJkdnadmRXCkk/w4kERr36RN//GSbIHTSxoKKq66e4KEsG1cd1vZ2V1bX1js7BV3N7Z3dsvHRw2dZwqhg0Wi1i1A6pRcIkNw43AdqKQRoHAVjC6mfqtJ1Sax/LBjBP0IzqQPOSMGivdP/bGvVLZrbgzkGXi5aQMOeq90le3H7M0QmmYoFp3PDcxfkaV4UzgpNhNNSaUjegAO5ZKGqH2s9mpE3JqlT4JY2VLGjJTf09kNNJ6HAW2M6JmqBe9qfif10lNeO1nXCapQcnmi8JUEBOT6d+kzxUyI8aWUKa4vZWwIVWUGZtO0YbgLb68TJrVindZubg7L9eqeRwFOIYTOAMPrqAGt1CHBjAYwDO8wpsjnBfn3fmYt644+cwR/IHz+QNslo3b</latexit> 
+
+qy
+
+<latexit sha1_base64="ceSnznLVqEVO5CUHaMokoXO9dn8=">AAAB6nicbVDLTgJBEOzFF+IL9ehlIjHxRHaJryOJF48Y5ZEAIbNDL0yYnV1nZo1kwyd48aAxXv0ib/6NA+xBwUo6qVR1p7vLjwXXxnW/ndzK6tr6Rn6zsLW9s7tX3D9o6ChRDOssEpFq+VSj4BLrhhuBrVghDX2BTX90PfWbj6g0j+S9GcfYDelA8oAzaqx099B76hVLbtmdgSwTLyMlyFDrFb86/YglIUrDBNW67bmx6aZUGc4ETgqdRGNM2YgOsG2ppCHqbjo7dUJOrNInQaRsSUNm6u+JlIZaj0PfdobUDPWiNxX/89qJCa66KZdxYlCy+aIgEcREZPo36XOFzIixJZQpbm8lbEgVZcamU7AheIsvL5NGpexdlM9vz0rVShZHHo7gGE7Bg0uowg3UoA4MBvAMr/DmCOfFeXc+5q05J5s5hD9wPn8AaxKN2g==</latexit> 
+
+qx
+
+<latexit sha1_base64="oB7JinuXX55wVQiWiNbA+Pf+yOs=">AAAB6nicbVDLSgNBEOz1GeMr6tHLYBA8hd3g6xjw4jGieUCyhNlJbzJkdnadmRXCkk/w4kERr36RN//GSbIHTSxoKKq66e4KEsG1cd1vZ2V1bX1js7BV3N7Z3dsvHRw2dZwqhg0Wi1i1A6pRcIkNw43AdqKQRoHAVjC6mfqtJ1Sax/LBjBP0IzqQPOSMGivdP/bGvVLZrbgzkGXi5aQMOeq90le3H7M0QmmYoFp3PDcxfkaV4UzgpNhNNSaUjegAO5ZKGqH2s9mpE3JqlT4JY2VLGjJTf09kNNJ6HAW2M6JmqBe9qfif10lNeO1nXCapQcnmi8JUEBOT6d+kzxUyI8aWUKa4vZWwIVWUGZtO0YbgLb68TJrVindZubg7L9eqeRwFOIYTOAMPrqAGt1CHBjAYwDO8wpsjnBfn3fmYt644+cwR/IHz+QNslo3b</latexit> 
+
+qy
+
+<latexit sha1_base64="6dgriocvSuY/ogjz7MQWUQZhqgI=">AAAB/3icbVDLSsNAFJ3UV62vqODGzdAiVISSuKgug25cVrQPaEKZTCft0MkkzkyEELvwH/wCNy4UcetvuOvfOE270OqBgcM593LPHD9mVCrLmhiFpeWV1bXiemljc2t7x9zda8koEZg0ccQi0fGRJIxy0lRUMdKJBUGhz0jbH11O/fY9EZJG/FalMfFCNOA0oBgpLfXMAzdEaogRy27G1Zz7Abw77pkVq2blgH+JPScVp+yePE2ctNEzv9x+hJOQcIUZkrJrW7HyMiQUxYyMS24iSYzwCA1IV1OOQiK9LM8/hkda6cMgEvpxBXP150aGQinT0NeT04Ry0ZuK/3ndRAXnXkZ5nCjC8exQkDCoIjgtA/apIFixVBOEBdVZIR4igbDSlZV0Cfbil/+S1mnNrtfq13bFuQAzFMEhKIMqsMEZcMAVaIAmwOABPINX8GY8Gi/Gu/ExGy0Y85198AvG5zeVoJjP</latexit> 
+
+S(q)
+
+<latexit sha1_base64="b9HYkLaZPRjRVfAoSDgBQ5jQIuo=">AAAB6nicbVDLSgNBEOyNrxhfUY9eBoMQL2E3YPQY8OIxonlAsoTZSW8yZHZ2mZkVQsgnePGgiFe/yJt/4yTZgyYWNBRV3XR3BYng2rjut5Pb2Nza3snvFvb2Dw6PiscnLR2nimGTxSJWnYBqFFxi03AjsJMopFEgsB2Mb+d++wmV5rF8NJME/YgOJQ85o8ZKD2V62S+W3Iq7AFknXkZKkKHRL371BjFLI5SGCap113MT40+pMpwJnBV6qcaEsjEdYtdSSSPU/nRx6oxcWGVAwljZkoYs1N8TUxppPYkC2xlRM9Kr3lz8z+umJrzxp1wmqUHJlovCVBATk/nfZMAVMiMmllCmuL2VsBFVlBmbTsGG4K2+vE5a1YpXq1zdV0v1WhZHHs7gHMrgwTXU4Q4a0AQGQ3iGV3hzhPPivDsfy9ack82cwh84nz+Hr41G</latexit> 
+
+(a) 
+
+<latexit sha1_base64="GjHdu9KKiU1w+f7cMYaldPimEDc=">AAAB6nicbVDLSgNBEOyNrxhfUY9eBoMQL2E3YPQY8OIxonlAsoTZSW8yZHZ2mZkVQsgnePGgiFe/yJt/4yTZgyYWNBRV3XR3BYng2rjut5Pb2Nza3snvFvb2Dw6PiscnLR2nimGTxSJWnYBqFFxi03AjsJMopFEgsB2Mb+d++wmV5rF8NJME/YgOJQ85o8ZKD+Xgsl8suRV3AbJOvIyUIEOjX/zqDWKWRigNE1Trrucmxp9SZTgTOCv0Uo0JZWM6xK6lkkao/eni1Bm5sMqAhLGyJQ1ZqL8npjTSehIFtjOiZqRXvbn4n9dNTXjjT7lMUoOSLReFqSAmJvO/yYArZEZMLKFMcXsrYSOqKDM2nYINwVt9eZ20qhWvVrm6r5bqtSyOPJzBOZTBg2uowx00oAkMhvAMr/DmCOfFeXc+lq05J5s5hT9wPn8AiTSNRw==</latexit> 
+
+(b) 
+
+<latexit sha1_base64="k6I87QVgSiDyT+UoKO2qo/jsKUA=">AAAB6nicbVDLSgNBEOyNrxhfUY9eBoMQL2E3YPQY8OIxonlAsoTZSW8yZHZ2mZkVQsgnePGgiFe/yJt/4yTZgyYWNBRV3XR3BYng2rjut5Pb2Nza3snvFvb2Dw6PiscnLR2nimGTxSJWnYBqFFxi03AjsJMopFEgsB2Mb+d++wmV5rF8NJME/YgOJQ85o8ZKD2V22S+W3Iq7AFknXkZKkKHRL371BjFLI5SGCap113MT40+pMpwJnBV6qcaEsjEdYtdSSSPU/nRx6oxcWGVAwljZkoYs1N8TUxppPYkC2xlRM9Kr3lz8z+umJrzxp1wmqUHJlovCVBATk/nfZMAVMiMmllCmuL2VsBFVlBmbTsGG4K2+vE5a1YpXq1zdV0v1WhZHHs7gHMrgwTXU4Q4a0AQGQ3iGV3hzhPPivDsfy9ack82cwh84nz+KuY1I</latexit> 
+
+(c) 
+
+<latexit sha1_base64="cUZ8QSCjSQySBuGfjfwjq5qhMA4=">AAAB6nicbVBNSwMxEJ2tX7V+VT16CRahXspuweqx4MVjRfsB7VKy2WwbmmSXJCuUpT/BiwdFvPqLvPlvTNs9aOuDgcd7M8zMCxLOtHHdb6ewsbm1vVPcLe3tHxwelY9POjpOFaFtEvNY9QKsKWeStg0znPYSRbEIOO0Gk9u5332iSrNYPpppQn2BR5JFjGBjpYdqeDksV9yauwBaJ15OKpCjNSx/DcKYpIJKQzjWuu+5ifEzrAwjnM5Kg1TTBJMJHtG+pRILqv1sceoMXVglRFGsbEmDFurviQwLracisJ0Cm7Fe9ebif14/NdGNnzGZpIZKslwUpRyZGM3/RiFTlBg+tQQTxeytiIyxwsTYdEo2BG/15XXSqde8Ru3qvl5pNvI4inAG51AFD66hCXfQgjYQGMEzvMKbw50X5935WLYWnHzmFP7A+fwBjD6NSQ==</latexit> 
+
+(d) 
+
+<latexit sha1_base64="wWKuqU5bgULLIlFX/oW91ZfvvgM=">AAAB6nicbVDLSgNBEOyNrxhfUY9eBoMQL2E3YPQY8OIxonlAsoTZSW8yZHZ2mZkVQsgnePGgiFe/yJt/4yTZgyYWNBRV3XR3BYng2rjut5Pb2Nza3snvFvb2Dw6PiscnLR2nimGTxSJWnYBqFFxi03AjsJMopFEgsB2Mb+d++wmV5rF8NJME/YgOJQ85o8ZKD2W87BdLbsVdgKwTLyMlyNDoF796g5ilEUrDBNW667mJ8adUGc4Ezgq9VGNC2ZgOsWuppBFqf7o4dUYurDIgYaxsSUMW6u+JKY20nkSB7YyoGelVby7+53VTE974Uy6T1KBky0VhKoiJyfxvMuAKmRETSyhT3N5K2IgqyoxNp2BD8FZfXietasWrVa7uq6V6LYsjD2dwDmXw4BrqcAcNaAKDITzDK7w5wnlx3p2PZWvOyWZO4Q+czx+Nw41K</latexit> 
+
+(e) 
+
+<latexit sha1_base64="7/TU8xJPeLySqgdpsUTgd8zvYfo=">AAAB6nicbVDLSgNBEOyNrxhfUY9eBoMQL2E3YPQY8OIxonlAsoTZSW8yZHZ2mZkVQsgnePGgiFe/yJt/4yTZgyYWNBRV3XR3BYng2rjut5Pb2Nza3snvFvb2Dw6PiscnLR2nimGTxSJWnYBqFFxi03AjsJMopFEgsB2Mb+d++wmV5rF8NJME/YgOJQ85o8ZKD+Xwsl8suRV3AbJOvIyUIEOjX/zqDWKWRigNE1Trrucmxp9SZTgTOCv0Uo0JZWM6xK6lkkao/eni1Bm5sMqAhLGyJQ1ZqL8npjTSehIFtjOiZqRXvbn4n9dNTXjjT7lMUoOSLReFqSAmJvO/yYArZEZMLKFMcXsrYSOqKDM2nYINwVt9eZ20qhWvVrm6r5bqtSyOPJzBOZTBg2uowx00oAkMhvAMr/DmCOfFeXc+lq05J5s5hT9wPn8Aj0iNSw==</latexit> 
+
+(f) 
+
+<latexit sha1_base64="6dgriocvSuY/ogjz7MQWUQZhqgI=">AAAB/3icbVDLSsNAFJ3UV62vqODGzdAiVISSuKgug25cVrQPaEKZTCft0MkkzkyEELvwH/wCNy4UcetvuOvfOE270OqBgcM593LPHD9mVCrLmhiFpeWV1bXiemljc2t7x9zda8koEZg0ccQi0fGRJIxy0lRUMdKJBUGhz0jbH11O/fY9EZJG/FalMfFCNOA0oBgpLfXMAzdEaogRy27G1Zz7Abw77pkVq2blgH+JPScVp+yePE2ctNEzv9x+hJOQcIUZkrJrW7HyMiQUxYyMS24iSYzwCA1IV1OOQiK9LM8/hkda6cMgEvpxBXP150aGQinT0NeT04Ry0ZuK/3ndRAXnXkZ5nCjC8exQkDCoIjgtA/apIFixVBOEBdVZIR4igbDSlZV0Cfbil/+S1mnNrtfq13bFuQAzFMEhKIMqsMEZcMAVaIAmwOABPINX8GY8Gi/Gu/ExGy0Y85198AvG5zeVoJjP</latexit> 
+
+S(q)
+
+FIG. 3. Top panels: (a) The non-collinear 120 ◦ magnetic order with the tripled unit cell of the half-filled triangular-lattice s–d model. (b) Benchmark of ML-predicted torques, TML = S × HML , evaluated for the 120 ◦ state. (c) Ensemble-averaged spin structure factor S(q) obtained from ML-LLG simulations. Bottom panels: Results for the non-coplanar tetrahedral order at filling fraction f ≈ 1/4: (d) real-space spin configuration with a quadrupled magnetic unit cell; (e) ML torque-prediction benchmark; and (f) the corresponding ensemble-averaged spin structure factor. 
+
+erate manifold analogous to the large-U half-filled Hub-bard model [97]. Treating the hopping perturbatively, the leading second-order process generates an effective exchange Eij = −2( teff 
+
+ij )2/J , where the effective hopping is teff 
+
+ij = tnn sin( θij /2). This leads to a Heisenberg Hamil-tonian E = Jeff 
+
+P
+
+⟨ij ⟩ Si · Sj , with Jeff = 4 t2nn /J > 0. On the triangular lattice, this frustration stabilizes the 120 ◦
+
+spin order with ordering wave vector K = (4 π/ 3a, 0). To test our ML force field, we trained a neural network using 40,000 configurations obtained from KPM-based ED-LLG simulations on a 48 × 48 lattice. As shown in Fig. 3(a), the predicted torques agree extremely well with ground truth, reaching a MSE of 8 .8 × 10 −8 with no no-ticeable overfitting. Using this model, we performed ML-LLG simulations of a thermal quench on a 150 × 150 sys-tem. The late-time state [Fig. 3(b)] exhibits the expected three-sublattice 120 ◦ pattern. This is further confirmed by the computation of structure factor defined as 
+
+S(q, t ) = 
+
+*
+
+1
+
+N
+
+X
+
+i
+
+Si(t)eiq·ri
+
+2
+
++
+
+(16) where ⟨· · · ⟩ denotes ensemle average. As shown in Fig. 3(c), the structure factor obtained from ML-LLG shows clear Bragg peaks at the six BZ corners corre-sponding to the ordering wavevector K.We next turn to the noncoplanar tetrahedral order, the ground state of the triangular-lattice s-d model near fillings f = 3 /4 and f ∼ 1/4 [86–90]. This state is a triple-Q structure, 
+
+Si = X
+
+η=1 ,2,3
+
+∆η eiMη ·ri , (17) with M1 = (2 π/a, 0) and M2,3 = (−π/a, ±√3π/a ). Choosing orthogonal ∆η of equal amplitude produces the highly symmetric tetrahedral configuration on a quadru-pled unit cell. At 3 /4 filling, the tetrahedral order arises from perfect Fermi-surface nesting [86, 90]. Near 1 /4 fill-ing, however, the mechanism is different: although the Lindhard susceptibility χ(q) computed to second order in J shows only weak maxima at Mη , the triple-Q de-generacy is lifted at fourth order. A positive biquadratic term B(Si · Sj )2 (B ∼ J4/t 3nn > 0) favors the tetra-hedral state [98]. This enhancement originates from a Fermi-surface geometry in which the three wave vectors 
+
+Mη connect nearly parallel-tangent points, producing a singularity analogous to the 2 kF Kohn anomaly. To model this regime, we trained an ML force field for J/t nn = 3 using KPM data generated in the grand-canonical ensemble with chemical potential μ = −3.2tnn 
+
+(near quarter filling). The force prediction benchmark [Fig. 3(d)] yields a MSE of 7 .8×10 −7 without overfitting; additional dynamical benchmarks are given in Ref. [36]. ML-LLG quenches produce a clear four-sublattice struc-ture with small fluctuations [Fig. 3(e)], and the corre-sponding structure factor [Fig. 3(f)] shows sharp peaks at the six M points, confirming the triple-Q tetrahedral ordering. It is worth noting that the tetrahedral state also breaks a Z2 chiral symmetry, reflected in a nonzero scalar chi-rality χijk = Si · (Sj × Sk) on each triangular plaquette. This noncoplanar order yields a quantized Hall response of ±e2/h , with the sign set by the chirality [86, 90]. Although long-range tetrahedral order is thermally un-stable in two dimensions, the Z2 chiral order—an Ising-like degree of freedom—remains robust at finite tempera-tures. Remarkably, our ML-enabled large-scale LLG sim-ulations reveal a linear growth of domain size [36], in sharp contrast to the Allen-Cahn t1/2 law expected for a nonconserved Ising order parameter [99–101]. This ac-8celerated growth originates from the strong orientational anisotropy of the chiral domain boundaries. 
+
+V. RELAXATION DYNAMICS OF MIXED-PHASE STATES 
+
+As a second application, we use the ML force-field framework to investigate the relaxation of complex spin textures that emerge in the mixed-phase states of the s-d model on a square lattice [32, 33]. In the strong-coupling limit—often referred to as the double-exchange regime—the s-d model develops a thermodynamically stable mixed-phase state when doped slightly away from half-filling [102–104]. Phase separation of this type is a common feature of strongly correlated electron systems and often plays a central role in determining their macro-scopic transport and magnetic responses [45–50, 105– 108]. A prototypical example is found in manganites and related magnetic semiconductors that exhibit colossal magnetoresistance (CMR). Across a wide doping range, these materials host intricate nanoscale textures [45–50] consisting of hole-rich ferromagnetic (FM) clusters em-bedded in nearly half-filled antiferromagnetic (AFM) re-gions. Scanning-probe and spectroscopic techniques have provided direct evidence for such spatially inhomoge-neous states [51–53]. The s-d model captures the es-sential physics of this competition and therefore serves as an ideal testing ground for ML-driven simulations of mixed-phase dynamics. Because the carrier density is conserved, the evolu-tion of these inhomogeneous states is expected to fol-low the classical Lifshitz-Slyozov-Wagner (LSW) theory of conserved-order-parameter coarsening [109, 110]. In such systems, domain growth is controlled by the diffu-sive redistribution of doped holes, leading to the charac-teristic scaling law L(t) ∼ tα with the universal exponent 
+
+α = 1 /3. The double-exchange s-d model thus provides a natural platform for examining whether ML-based force-field models faithfully capture mesoscale phase separa-tion, dynamical scaling, and late-time coarsening kinet--4 -2 0 2 4
+
+-6
+
+-4
+
+-2
+
+0
+
+2
+
+4
+
+6
+
+0<latexit sha1_base64="ravGwJX5RToDLcW9CG47phZuDg8=">AAAB6HicbVBNS8NAEJ3Ur1q/qh69LBbBU0mqoMeCF48t2A9oQ9lsJ+3azSbsboQS+gu8eFDEqz/Jm//GbZuDtj4YeLw3w8y8IBFcG9f9dgobm1vbO8Xd0t7+weFR+fikreNUMWyxWMSqG1CNgktsGW4EdhOFNAoEdoLJ3dzvPKHSPJYPZpqgH9GR5CFn1Fip6Q7KFbfqLkDWiZeTCuRoDMpf/WHM0gilYYJq3fPcxPgZVYYzgbNSP9WYUDahI+xZKmmE2s8Wh87IhVWGJIyVLWnIQv09kdFI62kU2M6ImrFe9ebif14vNeGtn3GZpAYlWy4KU0FMTOZfkyFXyIyYWkKZ4vZWwsZUUWZsNiUbgrf68jpp16reVbXWvK7U63kcRTiDc7gED26gDvfQgBYwQHiGV3hzHp0X5935WLYWnHzmFP7A+fwBec2Mtg==</latexit> 
+
+2<latexit sha1_base64="FMz8wW6MQPvIOOAyeSVoI2fVzJ0=">AAAB6HicbVBNS8NAEJ3Ur1q/qh69LBbBU0mqoMeCF48t2A9oQ9lsJ+3azSbsboQS+gu8eFDEqz/Jm//GbZuDtj4YeLw3w8y8IBFcG9f9dgobm1vbO8Xd0t7+weFR+fikreNUMWyxWMSqG1CNgktsGW4EdhOFNAoEdoLJ3dzvPKHSPJYPZpqgH9GR5CFn1FipWRuUK27VXYCsEy8nFcjRGJS/+sOYpRFKwwTVuue5ifEzqgxnAmelfqoxoWxCR9izVNIItZ8tDp2RC6sMSRgrW9KQhfp7IqOR1tMosJ0RNWO96s3F/7xeasJbP+MySQ1KtlwUpoKYmMy/JkOukBkxtYQyxe2thI2poszYbEo2BG/15XXSrlW9q2qteV2p1/M4inAG53AJHtxAHe6hAS1ggPAMr/DmPDovzrvzsWwtOPnMKfyB8/kDfNWMuA==</latexit> 
+
+4<latexit sha1_base64="NvCpSfYxaXFC7w8diCKn8HZR5mo=">AAAB6HicbVBNS8NAEJ34WetX1aOXxSJ4Kkkt6LHgxWML9gPaUDbbSbt2swm7G6GE/gIvHhTx6k/y5r9x2+agrQ8GHu/NMDMvSATXxnW/nY3Nre2d3cJecf/g8Oi4dHLa1nGqGLZYLGLVDahGwSW2DDcCu4lCGgUCO8Hkbu53nlBpHssHM03Qj+hI8pAzaqzUrA1KZbfiLkDWiZeTMuRoDEpf/WHM0gilYYJq3fPcxPgZVYYzgbNiP9WYUDahI+xZKmmE2s8Wh87IpVWGJIyVLWnIQv09kdFI62kU2M6ImrFe9ebif14vNeGtn3GZpAYlWy4KU0FMTOZfkyFXyIyYWkKZ4vZWwsZUUWZsNkUbgrf68jppVyvedaXarJXr9TyOApzDBVyBBzdQh3toQAsYIDzDK7w5j86L8+58LFs3nHzmDP7A+fwBf92Mug==</latexit> 
+
+6<latexit sha1_base64="ujKyE2e0da0HtTGhc0T4MLQFD8w=">AAAB6HicbVBNS8NAEJ3Ur1q/qh69LBbBU0mqqMeCF48t2FpoQ9lsJ+3azSbsboQS+gu8eFDEqz/Jm//GbZuDtj4YeLw3w8y8IBFcG9f9dgpr6xubW8Xt0s7u3v5B+fCoreNUMWyxWMSqE1CNgktsGW4EdhKFNAoEPgTj25n/8IRK81jem0mCfkSHkoecUWOl5lW/XHGr7hxklXg5qUCORr/81RvELI1QGiao1l3PTYyfUWU4Ezgt9VKNCWVjOsSupZJGqP1sfuiUnFllQMJY2ZKGzNXfExmNtJ5Ege2MqBnpZW8m/ud1UxPe+BmXSWpQssWiMBXExGT2NRlwhcyIiSWUKW5vJWxEFWXGZlOyIXjLL6+Sdq3qXVRrzctKvZ7HUYQTOIVz8OAa6nAHDWgBA4RneIU359F5cd6dj0VrwclnjuEPnM8fguWMvA==</latexit> 
+
+ 2<latexit sha1_base64="C+w6Nz7RX9zxXJcLkBBXKGdpTEM=">AAAB6XicbVBNS8NAEJ3Ur1q/qh69LBbBiyWpgh4LXjxWsR/QhrLZTtqlm03Y3Qgl9B948aCIV/+RN/+N2zYHbX0w8Hhvhpl5QSK4Nq777RTW1jc2t4rbpZ3dvf2D8uFRS8epYthksYhVJ6AaBZfYNNwI7CQKaRQIbAfj25nffkKleSwfzSRBP6JDyUPOqLHSw0WtX664VXcOskq8nFQgR6Nf/uoNYpZGKA0TVOuu5ybGz6gynAmclnqpxoSyMR1i11JJI9R+Nr90Ss6sMiBhrGxJQ+bq74mMRlpPosB2RtSM9LI3E//zuqkJb/yMyyQ1KNliUZgKYmIye5sMuEJmxMQSyhS3txI2oooyY8Mp2RC85ZdXSatW9S6rtfurSr2ex1GEEziFc/DgGupwBw1oAoMQnuEV3pyx8+K8Ox+L1oKTzxzDHzifP+YajO8=</latexit> 
+
+ 4<latexit sha1_base64="mNDqj2Yj0NU4XcIuiO3aO/fzYX4=">AAAB6XicbVBNS8NAEJ34WetX1aOXxSJ4sSS1oMeCF49V7Ae0oWy2k3bpZhN2N0IJ/QdePCji1X/kzX/jts1BWx8MPN6bYWZekAiujet+O2vrG5tb24Wd4u7e/sFh6ei4peNUMWyyWMSqE1CNgktsGm4EdhKFNAoEtoPx7cxvP6HSPJaPZpKgH9Gh5CFn1Fjp4bLWL5XdijsHWSVeTsqQo9EvffUGMUsjlIYJqnXXcxPjZ1QZzgROi71UY0LZmA6xa6mkEWo/m186JedWGZAwVrakIXP190RGI60nUWA7I2pGetmbif953dSEN37GZZIalGyxKEwFMTGZvU0GXCEzYmIJZYrbWwkbUUWZseEUbQje8surpFWteFeV6n2tXK/ncRTgFM7gAjy4hjrcQQOawCCEZ3iFN2fsvDjvzseidc3JZ07gD5zPH+kijPE=</latexit> 
+
+> Prediction
+
+-0.5 0.0 0.5 1.0 
+
+0.0 
+
+0.5 
+
+1.0 
+
+1.5 
+
+2.0 
+
+ <latexit sha1_base64="5zkUX8CJO/QmitiOixTBBs3/wfM=">AAAB7XicbVBNS8NAEJ34WetX1aOXxSJ4KkkV9Fjw4rGC/YA2lM1m0q7dbMLuRiih/8GLB0W8+n+8+W/ctjlo64OBx3szzMwLUsG1cd1vZ219Y3Nru7RT3t3bPzisHB23dZIphi2WiER1A6pRcIktw43AbqqQxoHATjC+nfmdJ1SaJ/LBTFL0YzqUPOKMGiu1+yEKQweVqltz5yCrxCtIFQo0B5WvfpiwLEZpmKBa9zw3NX5OleFM4LTczzSmlI3pEHuWShqj9vP5tVNybpWQRImyJQ2Zq78nchprPYkD2xlTM9LL3kz8z+tlJrrxcy7TzKBki0VRJohJyOx1EnKFzIiJJZQpbm8lbEQVZcYGVLYheMsvr5J2veZd1ur3V9VGo4ijBKdwBhfgwTU04A6a0AIGj/AMr/DmJM6L8+58LFrXnGLmBP7A+fwBkkCPHg==</latexit> 
+
+0.5<latexit sha1_base64="oghhmrsKldh/I8tka8Yco6NdcmU=">AAAB6nicbVBNS8NAEJ3Ur1q/qh69LBbBU0iqoseCF48V7Qe0oWy2k3bpZhN2N0Ip/QlePCji1V/kzX/jts1BWx8MPN6bYWZemAqujed9O4W19Y3NreJ2aWd3b/+gfHjU1EmmGDZYIhLVDqlGwSU2DDcC26lCGocCW+Hodua3nlBpnshHM04xiOlA8ogzaqz04LlXvXLFc705yCrxc1KBHPVe+avbT1gWozRMUK07vpeaYEKV4UzgtNTNNKaUjegAO5ZKGqMOJvNTp+TMKn0SJcqWNGSu/p6Y0FjrcRzazpiaoV72ZuJ/Xicz0U0w4TLNDEq2WBRlgpiEzP4mfa6QGTG2hDLF7a2EDamizNh0SjYEf/nlVdKsuv6FW72/rNRqeRxFOIFTOAcfrqEGd1CHBjAYwDO8wpsjnBfn3flYtBacfOYY/sD5/AFaQI0t</latexit> 
+
+1.0<latexit sha1_base64="5Q5SXvw07UylicOK+OPhOLzUfb0=">AAAB6nicbVBNS8NAEJ34WetX1aOXxSJ4CkkV9Fjw4rGi/YA2lM120y7dbMLuRCihP8GLB0W8+ou8+W/ctjlo64OBx3szzMwLUykMet63s7a+sbm1Xdop7+7tHxxWjo5bJsk0402WyER3Qmq4FIo3UaDknVRzGoeSt8Px7cxvP3FtRKIecZLyIKZDJSLBKFrpwXe9fqXqud4cZJX4BalCgUa/8tUbJCyLuUImqTFd30sxyKlGwSSflnuZ4SllYzrkXUsVjbkJ8vmpU3JulQGJEm1LIZmrvydyGhsziUPbGVMcmWVvJv7ndTOMboJcqDRDrthiUZRJggmZ/U0GQnOGcmIJZVrYWwkbUU0Z2nTKNgR/+eVV0qq5/qVbu7+q1utFHCU4hTO4AB+uoQ530IAmMBjCM7zCmyOdF+fd+Vi0rjnFzAn8gfP5A1QyjSk=</latexit> 
+
+0.0<latexit sha1_base64="jtXRJh+R6Z2IFjP5B7snM+yp6G8=">AAAB6nicbVBNSwMxEJ2tX7V+VT16CRbBU9mtBT0WvHisaD+gXUo2zbah2eySzApl6U/w4kERr/4ib/4b03YP2vog4fHeDDPzgkQKg6777RQ2Nre2d4q7pb39g8Oj8vFJ28SpZrzFYhnrbkANl0LxFgqUvJtoTqNA8k4wuZ37nSeujYjVI04T7kd0pEQoGEUrPbhVd1Cu2H8Bsk68nFQgR3NQ/uoPY5ZGXCGT1Jie5yboZ1SjYJLPSv3U8ISyCR3xnqWKRtz42WLVGbmwypCEsbZPIVmovzsyGhkzjQJbGVEcm1VvLv7n9VIMb/xMqCRFrthyUJhKgjGZ302GQnOGcmoJZVrYXQkbU00Z2nRKNgRv9eR10q5Vvatq7b5eaTTyOIpwBudwCR5cQwPuoAktYDCCZ3iFN0c6L86787EsLTh5zyn8gfP5A1KsjSg=</latexit> 
+
+ 0.5<latexit sha1_base64="4MNTAbPTOEFcmqbvDpG7m1zRyE8=">AAAB63icbVBNS8NAEJ3Ur1q/qh69LBbBiyGpih4LXjxWsB/QhrLZbtqlu5uwuxFK6F/w4kERr/4hb/4bN20O2vpg4PHeDDPzwoQzbTzv2ymtrW9sbpW3Kzu7e/sH1cOjto5TRWiLxDxW3RBrypmkLcMMp91EUSxCTjvh5C73O09UaRbLRzNNaCDwSLKIEWxy6cJzrwfVmud6c6BV4hekBgWag+pXfxiTVFBpCMda93wvMUGGlWGE01mln2qaYDLBI9qzVGJBdZDNb52hM6sMURQrW9Kgufp7IsNC66kIbafAZqyXvVz8z+ulJroNMiaT1FBJFouilCMTo/xxNGSKEsOnlmCimL0VkTFWmBgbT8WG4C+/vEradde/dOsPV7VGo4ijDCdwCufgww004B6a0AICY3iGV3hzhPPivDsfi9aSU8wcwx84nz/D441k</latexit> 
+
+ 1.0<latexit sha1_base64="TDsHOnd5l4dvGsjNvWdgAwZAZfQ=">AAAB63icbVBNS8NAEJ3Ur1q/qh69LBbBiyFpBT0WvHisYD+gDWWz3bRLdzdhdyOU0L/gxYMiXv1D3vw3btoctPXBwOO9GWbmhQln2njet1Pa2Nza3invVvb2Dw6PqscnHR2nitA2iXmseiHWlDNJ24YZTnuJoliEnHbD6V3ud5+o0iyWj2aW0EDgsWQRI9jk0pXvesNqzXO9BdA68QtSgwKtYfVrMIpJKqg0hGOt+76XmCDDyjDC6bwySDVNMJniMe1bKrGgOsgWt87RhVVGKIqVLWnQQv09kWGh9UyEtlNgM9GrXi7+5/VTE90GGZNJaqgky0VRypGJUf44GjFFieEzSzBRzN6KyAQrTIyNp2JD8FdfXieduus33PrDda3ZLOIowxmcwyX4cANNuIcWtIHABJ7hFd4c4bw4787HsrXkFDOn8AfO5w+91Y1g</latexit> 
+
+0.0<latexit sha1_base64="jtXRJh+R6Z2IFjP5B7snM+yp6G8=">AAAB6nicbVBNSwMxEJ2tX7V+VT16CRbBU9mtBT0WvHisaD+gXUo2zbah2eySzApl6U/w4kERr/4ib/4b03YP2vog4fHeDDPzgkQKg6777RQ2Nre2d4q7pb39g8Oj8vFJ28SpZrzFYhnrbkANl0LxFgqUvJtoTqNA8k4wuZ37nSeujYjVI04T7kd0pEQoGEUrPbhVd1Cu2H8Bsk68nFQgR3NQ/uoPY5ZGXCGT1Jie5yboZ1SjYJLPSv3U8ISyCR3xnqWKRtz42WLVGbmwypCEsbZPIVmovzsyGhkzjQJbGVEcm1VvLv7n9VIMb/xMqCRFrthyUJhKgjGZ302GQnOGcmoJZVrYXQkbU00Z2nRKNgRv9eR10q5Vvatq7b5eaTTyOIpwBudwCR5cQwPuoAktYDCCZ3iFN0c6L86787EsLTh5zyn8gfP5A1KsjSg=</latexit> 
+
+1.5<latexit sha1_base64="g0rqlvInU52IRxYoxIltf9XgKYA=">AAAB6nicbVBNS8NAEJ3Ur1q/qh69LBbBU0iqoseCF48V7Qe0oWy2m3bpZhN2J0Ip/QlePCji1V/kzX/jts1BWx8MPN6bYWZemEph0PO+ncLa+sbmVnG7tLO7t39QPjxqmiTTjDdYIhPdDqnhUijeQIGSt1PNaRxK3gpHtzO/9cS1EYl6xHHKg5gOlIgEo2ilB9+96pUrnuvNQVaJn5MK5Kj3yl/dfsKymCtkkhrT8b0UgwnVKJjk01I3MzylbEQHvGOpojE3wWR+6pScWaVPokTbUkjm6u+JCY2NGceh7YwpDs2yNxP/8zoZRjfBRKg0Q67YYlGUSYIJmf1N+kJzhnJsCWVa2FsJG1JNGdp0SjYEf/nlVdKsuv6FW72/rNRqeRxFOIFTOAcfrqEGd1CHBjAYwDO8wpsjnRfn3flYtBacfOYY/sD5/AFbxo0u</latexit> 
+
+2.0<latexit sha1_base64="15RCX3LTBy2X/pTSCWMMbluJCNI=">AAAB6nicbVBNS8NAEJ34WetX1aOXxSJ4CkkV9Fjw4rGi/YA2lM120i7dbMLuRiihP8GLB0W8+ou8+W/ctjlo64OBx3szzMwLU8G18bxvZ219Y3Nru7RT3t3bPzisHB23dJIphk2WiER1QqpRcIlNw43ATqqQxqHAdji+nfntJ1SaJ/LRTFIMYjqUPOKMGis91FyvX6l6rjcHWSV+QapQoNGvfPUGCctilIYJqnXX91IT5FQZzgROy71MY0rZmA6xa6mkMeogn586JedWGZAoUbakIXP190ROY60ncWg7Y2pGetmbif953cxEN0HOZZoZlGyxKMoEMQmZ/U0GXCEzYmIJZYrbWwkbUUWZsemUbQj+8surpFVz/Uu3dn9VrdeLOEpwCmdwAT5cQx3uoAFNYDCEZ3iFN0c4L86787FoXXOKmRP4A+fzB1W4jSo=</latexit> 
+
+0.5<latexit sha1_base64="oghhmrsKldh/I8tka8Yco6NdcmU=">AAAB6nicbVBNS8NAEJ3Ur1q/qh69LBbBU0iqoseCF48V7Qe0oWy2k3bpZhN2N0Ip/QlePCji1V/kzX/jts1BWx8MPN6bYWZemAqujed9O4W19Y3NreJ2aWd3b/+gfHjU1EmmGDZYIhLVDqlGwSU2DDcC26lCGocCW+Hodua3nlBpnshHM04xiOlA8ogzaqz04LlXvXLFc705yCrxc1KBHPVe+avbT1gWozRMUK07vpeaYEKV4UzgtNTNNKaUjegAO5ZKGqMOJvNTp+TMKn0SJcqWNGSu/p6Y0FjrcRzazpiaoV72ZuJ/Xicz0U0w4TLNDEq2WBRlgpiEzP4mfa6QGTG2hDLF7a2EDamizNh0SjYEf/nlVdKsuv6FW72/rNRqeRxFOIFTOAcfrqEGd1CHBjAYwDO8wpsjnBfn3flYtBacfOYY/sD5/AFaQI0t</latexit> 
+
+1.0<latexit sha1_base64="5Q5SXvw07UylicOK+OPhOLzUfb0=">AAAB6nicbVBNS8NAEJ34WetX1aOXxSJ4CkkV9Fjw4rGi/YA2lM120y7dbMLuRCihP8GLB0W8+ou8+W/ctjlo64OBx3szzMwLUykMet63s7a+sbm1Xdop7+7tHxxWjo5bJsk0402WyER3Qmq4FIo3UaDknVRzGoeSt8Px7cxvP3FtRKIecZLyIKZDJSLBKFrpwXe9fqXqud4cZJX4BalCgUa/8tUbJCyLuUImqTFd30sxyKlGwSSflnuZ4SllYzrkXUsVjbkJ8vmpU3JulQGJEm1LIZmrvydyGhsziUPbGVMcmWVvJv7ndTOMboJcqDRDrthiUZRJggmZ/U0GQnOGcmIJZVrYWwkbUU0Z2nTKNgR/+eVV0qq5/qVbu7+q1utFHCU4hTO4AB+uoQ530IAmMBjCM7zCmyOdF+fd+Vi0rjnFzAn8gfP5A1QyjSk=</latexit> 
+
+> Probability Density
+
+0<latexit sha1_base64="ravGwJX5RToDLcW9CG47phZuDg8=">AAAB6HicbVBNS8NAEJ3Ur1q/qh69LBbBU0mqoMeCF48t2A9oQ9lsJ+3azSbsboQS+gu8eFDEqz/Jm//GbZuDtj4YeLw3w8y8IBFcG9f9dgobm1vbO8Xd0t7+weFR+fikreNUMWyxWMSqG1CNgktsGW4EdhOFNAoEdoLJ3dzvPKHSPJYPZpqgH9GR5CFn1Fip6Q7KFbfqLkDWiZeTCuRoDMpf/WHM0gilYYJq3fPcxPgZVYYzgbNSP9WYUDahI+xZKmmE2s8Wh87IhVWGJIyVLWnIQv09kdFI62kU2M6ImrFe9ebif14vNeGtn3GZpAYlWy4KU0FMTOZfkyFXyIyYWkKZ4vZWwsZUUWZsNiUbgrf68jpp16reVbXWvK7U63kcRTiDc7gED26gDvfQgBYwQHiGV3hzHp0X5935WLYWnHzmFP7A+fwBec2Mtg==</latexit> 
+
+2<latexit sha1_base64="FMz8wW6MQPvIOOAyeSVoI2fVzJ0=">AAAB6HicbVBNS8NAEJ3Ur1q/qh69LBbBU0mqoMeCF48t2A9oQ9lsJ+3azSbsboQS+gu8eFDEqz/Jm//GbZuDtj4YeLw3w8y8IBFcG9f9dgobm1vbO8Xd0t7+weFR+fikreNUMWyxWMSqG1CNgktsGW4EdhOFNAoEdoLJ3dzvPKHSPJYPZpqgH9GR5CFn1FipWRuUK27VXYCsEy8nFcjRGJS/+sOYpRFKwwTVuue5ifEzqgxnAmelfqoxoWxCR9izVNIItZ8tDp2RC6sMSRgrW9KQhfp7IqOR1tMosJ0RNWO96s3F/7xeasJbP+MySQ1KtlwUpoKYmMy/JkOukBkxtYQyxe2thI2poszYbEo2BG/15XXSrlW9q2qteV2p1/M4inAG53AJHtxAHe6hAS1ggPAMr/DmPDovzrvzsWwtOPnMKfyB8/kDfNWMuA==</latexit> 
+
+4<latexit sha1_base64="NvCpSfYxaXFC7w8diCKn8HZR5mo=">AAAB6HicbVBNS8NAEJ34WetX1aOXxSJ4Kkkt6LHgxWML9gPaUDbbSbt2swm7G6GE/gIvHhTx6k/y5r9x2+agrQ8GHu/NMDMvSATXxnW/nY3Nre2d3cJecf/g8Oi4dHLa1nGqGLZYLGLVDahGwSW2DDcCu4lCGgUCO8Hkbu53nlBpHssHM03Qj+hI8pAzaqzUrA1KZbfiLkDWiZeTMuRoDEpf/WHM0gilYYJq3fPcxPgZVYYzgbNiP9WYUDahI+xZKmmE2s8Wh87IpVWGJIyVLWnIQv09kdFI62kU2M6ImrFe9ebif14vNeGtn3GZpAYlWy4KU0FMTOZfkyFXyIyYWkKZ4vZWwsZUUWZsNkUbgrf68jppVyvedaXarJXr9TyOApzDBVyBBzdQh3toQAsYIDzDK7w5j86L8+58LFs3nHzmDP7A+fwBf92Mug==</latexit> 
+
+6<latexit sha1_base64="ujKyE2e0da0HtTGhc0T4MLQFD8w=">AAAB6HicbVBNS8NAEJ3Ur1q/qh69LBbBU0mqqMeCF48t2FpoQ9lsJ+3azSbsboQS+gu8eFDEqz/Jm//GbZuDtj4YeLw3w8y8IBFcG9f9dgpr6xubW8Xt0s7u3v5B+fCoreNUMWyxWMSqE1CNgktsGW4EdhKFNAoEPgTj25n/8IRK81jem0mCfkSHkoecUWOl5lW/XHGr7hxklXg5qUCORr/81RvELI1QGiao1l3PTYyfUWU4Ezgt9VKNCWVjOsSupZJGqP1sfuiUnFllQMJY2ZKGzNXfExmNtJ5Ege2MqBnpZW8m/ud1UxPe+BmXSWpQssWiMBXExGT2NRlwhcyIiSWUKW5vJWxEFWXGZlOyIXjLL6+Sdq3qXVRrzctKvZ7HUYQTOIVz8OAa6nAHDWgBA4RneIU359F5cd6dj0VrwclnjuEPnM8fguWMvA==</latexit> 
+
+ 2<latexit sha1_base64="C+w6Nz7RX9zxXJcLkBBXKGdpTEM=">AAAB6XicbVBNS8NAEJ3Ur1q/qh69LBbBiyWpgh4LXjxWsR/QhrLZTtqlm03Y3Qgl9B948aCIV/+RN/+N2zYHbX0w8Hhvhpl5QSK4Nq777RTW1jc2t4rbpZ3dvf2D8uFRS8epYthksYhVJ6AaBZfYNNwI7CQKaRQIbAfj25nffkKleSwfzSRBP6JDyUPOqLHSw0WtX664VXcOskq8nFQgR6Nf/uoNYpZGKA0TVOuu5ybGz6gynAmclnqpxoSyMR1i11JJI9R+Nr90Ss6sMiBhrGxJQ+bq74mMRlpPosB2RtSM9LI3E//zuqkJb/yMyyQ1KNliUZgKYmIye5sMuEJmxMQSyhS3txI2oooyY8Mp2RC85ZdXSatW9S6rtfurSr2ex1GEEziFc/DgGupwBw1oAoMQnuEV3pyx8+K8Ox+L1oKTzxzDHzifP+YajO8=</latexit> 
+
+ 4<latexit sha1_base64="mNDqj2Yj0NU4XcIuiO3aO/fzYX4=">AAAB6XicbVBNS8NAEJ34WetX1aOXxSJ4sSS1oMeCF49V7Ae0oWy2k3bpZhN2N0IJ/QdePCji1X/kzX/jts1BWx8MPN6bYWZekAiujet+O2vrG5tb24Wd4u7e/sFh6ei4peNUMWyyWMSqE1CNgktsGm4EdhKFNAoEtoPx7cxvP6HSPJaPZpKgH9Gh5CFn1Fjp4bLWL5XdijsHWSVeTsqQo9EvffUGMUsjlIYJqnXXcxPjZ1QZzgROi71UY0LZmA6xa6mkEWo/m186JedWGZAwVrakIXP190RGI60nUWA7I2pGetmbif953dSEN37GZZIalGyxKEwFMTGZvU0GXCEzYmIJZYrbWwkbUUWZseEUbQje8surpFWteFeV6n2tXK/ncRTgFM7gAjy4hjrcQQOawCCEZ3iFN2fsvDjvzseidc3JZ07gD5zPH+kijPE=</latexit> 
+
+ 6<latexit sha1_base64="A5LW0J7PFrOKJvSfUdA+0vba51A=">AAAB6XicbVBNS8NAEJ34WetX1aOXxSJ4sSRV1GPBi8cq9gPaUDbbSbt0swm7G6GE/gMvHhTx6j/y5r9x2+agrQ8GHu/NMDMvSATXxnW/nZXVtfWNzcJWcXtnd2+/dHDY1HGqGDZYLGLVDqhGwSU2DDcC24lCGgUCW8Hoduq3nlBpHstHM07Qj+hA8pAzaqz0cH7VK5XdijsDWSZeTsqQo94rfXX7MUsjlIYJqnXHcxPjZ1QZzgROit1UY0LZiA6wY6mkEWo/m106IadW6ZMwVrakITP190RGI63HUWA7I2qGetGbiv95ndSEN37GZZIalGy+KEwFMTGZvk36XCEzYmwJZYrbWwkbUkWZseEUbQje4svLpFmteBeV6v1luVbL4yjAMZzAGXhwDTW4gzo0gEEIz/AKb87IeXHenY9564qTzxzBHzifP+wqjPM=</latexit> 
+
+Reference 
+
+ 6<latexit sha1_base64="A5LW0J7PFrOKJvSfUdA+0vba51A=">AAAB6XicbVBNS8NAEJ34WetX1aOXxSJ4sSRV1GPBi8cq9gPaUDbbSbt0swm7G6GE/gMvHhTx6j/y5r9x2+agrQ8GHu/NMDMvSATXxnW/nZXVtfWNzcJWcXtnd2+/dHDY1HGqGDZYLGLVDqhGwSU2DDcC24lCGgUCW8Hoduq3nlBpHstHM07Qj+hA8pAzaqz0cH7VK5XdijsDWSZeTsqQo94rfXX7MUsjlIYJqnXHcxPjZ1QZzgROit1UY0LZiA6wY6mkEWo/m106IadW6ZMwVrakITP190RGI63HUWA7I2qGetGbiv95ndSEN37GZZIalGy+KEwFMTGZvk36XCEzYmwJZYrbWwkbUkWZseEUbQje4svLpFmteBeV6v1luVbL4yjAMZzAGXhwDTW4gzo0gEEIz/AKb87IeXHenY9564qTzxzBHzifP+wqjPM=</latexit> 
+
+(a) <latexit sha1_base64="X/qnRvMwhjWbXpmRy4/PIWPyG6U=">AAAB6nicbVA9TwJBEJ3DL8Qv1NJmIzHBhtxhoSXRxhKjIAlcyN6yBxv29i67cybkwk+wsdAYW3+Rnf/GBa5Q8CWTvLw3k5l5QSKFQdf9dgpr6xubW8Xt0s7u3v5B+fCobeJUM95isYx1J6CGS6F4CwVK3kk0p1Eg+WMwvpn5j09cGxGrB5wk3I/oUIlQMIpWuq/S83654tbcOcgq8XJSgRzNfvmrN4hZGnGFTFJjup6boJ9RjYJJPi31UsMTysZ0yLuWKhpx42fzU6fkzCoDEsbalkIyV39PZDQyZhIFtjOiODLL3kz8z+umGF75mVBJilyxxaIwlQRjMvubDITmDOXEEsq0sLcSNqKaMrTplGwI3vLLq6Rdr3kXtfpdvdK4zuMowgmcQhU8uIQG3EITWsBgCM/wCm+OdF6cd+dj0Vpw8plj+APn8weJWY1M</latexit> 
+
+(b) <latexit sha1_base64="+ztJnr+tGUTNHl6HB1D2mRcIYE0=">AAAB6nicbVA9TwJBEJ3DL8Qv1NJmIzHBhtxhoSXRxhKjIAlcyN6yBxv29i67cybkwk+wsdAYW3+Rnf/GBa5Q8CWTvLw3k5l5QSKFQdf9dgpr6xubW8Xt0s7u3v5B+fCobeJUM95isYx1J6CGS6F4CwVK3kk0p1Eg+WMwvpn5j09cGxGrB5wk3I/oUIlQMIpWuq8G5/1yxa25c5BV4uWkAjma/fJXbxCzNOIKmaTGdD03QT+jGgWTfFrqpYYnlI3pkHctVTTixs/mp07JmVUGJIy1LYVkrv6eyGhkzCQKbGdEcWSWvZn4n9dNMbzyM6GSFLlii0VhKgnGZPY3GQjNGcqJJZRpYW8lbEQ1ZWjTKdkQvOWXV0m7XvMuavW7eqVxncdRhBM4hSp4cAkNuIUmtIDBEJ7hFd4c6bw4787HorXg5DPH8AfO5w+K3o1N</latexit> 
+
+Hi<latexit sha1_base64="C79J60kIRQfM/c2Y0ns2mjfkJRY=">AAAB7HicbVBNS8NAEJ3Ur1q/qh69LBbBU0mqoMeilx4rmLbQhrLZbtulm03YnQgl9Dd48aCIV3+QN/+N2zYHbX0w8Hhvhpl5YSKFQdf9dgobm1vbO8Xd0t7+weFR+fikZeJUM+6zWMa6E1LDpVDcR4GSdxLNaRRK3g4n93O//cS1EbF6xGnCg4iOlBgKRtFKfqOfiVm/XHGr7gJknXg5qUCOZr/81RvELI24QiapMV3PTTDIqEbBJJ+VeqnhCWUTOuJdSxWNuAmyxbEzcmGVARnG2pZCslB/T2Q0MmYahbYzojg2q95c/M/rpji8DTKhkhS5YstFw1QSjMn8czIQmjOUU0so08LeStiYasrQ5lOyIXirL6+TVq3qXVVrD9eV+l0eRxHO4BwuwYMbqEMDmuADAwHP8ApvjnJenHfnY9lacPKZU/gD5/MH3SyOuA==</latexit> 
+
+> Hi<latexit  sha1_base64="C79J60kIRQfM/c2Y0ns2mjfkJRY=">AAAB7HicbVBNS8NAEJ3Ur1q/qh69LBbBU0mqoMeilx4rmLbQhrLZbtulm03YnQgl9Dd48aCIV3+QN/+N2zYHbX0w8Hhvhpl5YSKFQdf9dgobm1vbO8Xd0t7+weFR+fikZeJUM+6zWMa6E1LDpVDcR4GSdxLNaRRK3g4n93O//cS1EbF6xGnCg4iOlBgKRtFKfqOfiVm/XHGr7gJknXg5qUCOZr/81RvELI24QiapMV3PTTDIqEbBJJ+VeqnhCWUTOuJdSxWNuAmyxbEzcmGVARnG2pZCslB/T2Q0MmYahbYzojg2q95c/M/rpji8DTKhkhS5YstFw1QSjMn8czIQmjOUU0so08LeStiYasrQ5lOyIXirL6+TVq3qXVVrD9eV+l0eRxHO4BwuwYMbqEMDmuADAwHP8ApvjnJenHfnY9lacPKZU/gD5/MH3SyOuA==</latexit>
+
+FIG. 4. (a) ML-predicted exchange fields compared against exact values from the test dataset. (b) Distribution of the force difference δ = HML − Hexact , which is well described by a normal distribution (red curve) with variance σ2 = 0 .035. 
+
+ics. The static and thermodynamic properties of the square-lattice double-exchange model have been exten-sively investigated [111–115]. At small hole doping, a mixed-phase state comprising FM puddles embedded in an AFM insulating background emerges as a robust ground state at strong Hund’s coupling [112–114]. De-spite this detailed understanding of the equilibrium tex-tures, the nonequilibrium kinetics of correlation-driven phase separation—particularly the scaling behavior and the mechanism of late-stage growth—remain largely un-explored. The scalability and efficiency of the ML force-field approach enable large-scale dynamical simulations capable of addressing these open questions. To construct the ML force field, we trained a fully connected six-layer neural network implemented in Py-Torch [92, 93] using 3500 snapshots of spin configurations and local exchange fields obtained from ED–LLG simu-lations on a 30 × 30 lattice. Fig. 4(a) compares the NN-predicted exchange fields Hi with exact values from ED, while Fig. 4(b) shows that the deviation δ = HML −Hexact 
+
+is well-described by a Gaussian distribution with variance 
+
+σ2 = 0 .035. The approximately normal distribution of δ
+
+suggests that ML uncertainty effectively acts as a small stochastic field, akin to a thermal noise term in Langevin dynamics. We then combined the trained network with LLG time evolution to simulate quenches from random initial con-figurations at T = 0 .022 and filling f = 0 .485 (1.5% hole doping). Using the trained model, we carried out large-scale quench simulations on a 200 × 200 lattice. The top panels of Fig. 5 shows snapshots of the local bond corre-lation bi = ( Si · Si+x + Si · Si−x + Si · Si+y + Si · Si−y)/4during the relaxation process of a thermal quench. Here positive (negative) values of bi indicate FM (AFM) re-gions. The ML-LLG dynamics relaxes into an inhomo-geneous configuration consisting of extended AFM do-mains interspersed with small FM droplets characteristic of weakly doped double-exchange systems. The double-exchange mechanism implies a strong cor-relation between spin order and carrier density: FM re-gions tend to coincide with doped holes, whereas the AFM background is favored at or near exact half-filling. To examine this relation more quantitatively, we trained a separate NN model to directly predict the on-site elec-tron density ni = P
+
+α⟨ˆc†
+
+iα ˆciα ⟩ from the neighborhood spin configuration Ci. As before, a symmetry-preserving descriptor is used to map Ci onto a set of invariant fea-tures {Gℓ}, which serve as inputs to the ML density model. As shown in the bottom panels of Fig. 5, doped holes cluster into small puddles characterized by predom-inantly FM spin correlations embedded within the AFM background at half-filling. Interestingly, the coarsening of these hole puddles appears to be quite sluggish, with their characteristic sizes remaining relatively small even at late times. To quantify the growth kinetics of hole puddles associ-ated with FM spin correlations, we define FM clusters as 9(a) time = 0 <latexit sha1_base64="PArx2gRqD4RvH+SSs85IFLSVXX0=">AAACBHicbZC7SgNBFIZn4y3GW9QyzWAQYhN2o6CNENDCMoK5QDaE2clJMmT2wsxZMSwpbHwVGwtFbH0IO9/GSbKFJv4w8PGfczhzfi+SQqNtf1uZldW19Y3sZm5re2d3L79/0NBhrDjUeShD1fKYBikCqKNACa1IAfM9CU1vdDWtN+9BaREGdziOoOOzQSD6gjM0VjdfKLkID5iwyYlL54jChwm9pHY3X7TL9kx0GZwUiiRVrZv/cnshj30IkEumdduxI+wkTKHgEiY5N9YQMT5iA2gbDJgPupPMjpjQY+P0aD9U5gVIZ+7viYT5Wo99z3T6DId6sTY1/6u1Y+xfdBIRRDFCwOeL+rGkGNJpIrQnFHCUYwOMK2H+SvmQKcbR5JYzITiLJy9Do1J2TsuV27Ni9TqNI0sK5IiUiEPOSZXckBqpE04eyTN5JW/Wk/VivVsf89aMlc4ckj+yPn8As42Xew==</latexit> 
+
+(c) time = 60 <latexit sha1_base64="Pt0zGQVxRfR6nUXvTmAKDktca3g=">AAACBXicbZC7SgNBFIZnvcZ4i1pqMRiE2ITdKGojBLSwjGAukA1hdnKSDJm9MHNWDMs2Nr6KjYUitr6DnW/j5FJo4g8DH/85hzPn9yIpNNr2t7WwuLS8sppZy65vbG5t53Z2azqMFYcqD2WoGh7TIEUAVRQooREpYL4noe4Nrkb1+j0oLcLgDocRtHzWC0RXcIbGaucOCi7CAyY8PXbpBFH4kNJLema3c3m7aI9F58GZQp5MVWnnvtxOyGMfAuSSad107AhbCVMouIQ068YaIsYHrAdNgwHzQbeS8RUpPTJOh3ZDZV6AdOz+nkiYr/XQ90ynz7CvZ2sj879aM8buRSsRQRQjBHyyqBtLiiEdRUI7QgFHOTTAuBLmr5T3mWIcTXBZE4Ize/I81EpF56RYuj3Nl6+ncWTIPjkkBeKQc1ImN6RCqoSTR/JMXsmb9WS9WO/Wx6R1wZrO7JE/sj5/ADedl70=</latexit> 
+
+0.35 <latexit sha1_base64="1U0lJixU+buJBeN7NVx54yhkF9o=">AAAB63icbVBNS8NAEJ3Ur1q/qh69LBbBU0haRY9FLx4r2FpoQ9lsN+3S3U3Y3Qgl9C948aCIV/+QN/+NmzYHbX0w8Hhvhpl5YcKZNp737ZTW1jc2t8rblZ3dvf2D6uFRR8epIrRNYh6rbog15UzStmGG026iKBYhp4/h5Db3H5+o0iyWD2aa0EDgkWQRI9jkkuc2LgfVmud6c6BV4hekBgVag+pXfxiTVFBpCMda93wvMUGGlWGE01mln2qaYDLBI9qzVGJBdZDNb52hM6sMURQrW9Kgufp7IsNC66kIbafAZqyXvVz8z+ulJroOMiaT1FBJFouilCMTo/xxNGSKEsOnlmCimL0VkTFWmBgbT8WG4C+/vEo6dddvuPX7i1rzpoijDCdwCufgwxU04Q5a0AYCY3iGV3hzhPPivDsfi9aSU8wcwx84nz/Nn41s</latexit> 
+
+0.4<latexit sha1_base64="g88CocwEnkllIxQ6pG+r3XTpgTc=">AAAB6nicbVBNS8NAEJ34WetX1aOXxSJ4Ckkt6LHoxWNF+wFtKJvtpl262YTdiVBKf4IXD4p49Rd589+4bXPQ1gcDj/dmmJkXplIY9LxvZ219Y3Nru7BT3N3bPzgsHR03TZJpxhsskYluh9RwKRRvoEDJ26nmNA4lb4Wj25nfeuLaiEQ94jjlQUwHSkSCUbTSg+dWe6Wy53pzkFXi56QMOeq90le3n7As5gqZpMZ0fC/FYEI1Cib5tNjNDE8pG9EB71iqaMxNMJmfOiXnVumTKNG2FJK5+ntiQmNjxnFoO2OKQ7PszcT/vE6G0XUwESrNkCu2WBRlkmBCZn+TvtCcoRxbQpkW9lbChlRThjadog3BX355lTQrrn/pVu6r5dpNHkcBTuEMLsCHK6jBHdShAQwG8Ayv8OZI58V5dz4WrWtOPnMCf+B8/gBZVo0u</latexit> 
+
+0.45 <latexit sha1_base64="znY/7t0hXr5pb2pQuzD7fNGvlWQ=">AAAB63icbVBNS8NAEJ34WetX1aOXxSJ4Ckmt6LHoxWMF+wFtKJvtpl26uwm7G6GE/gUvHhTx6h/y5r9x0+agrQ8GHu/NMDMvTDjTxvO+nbX1jc2t7dJOeXdv/+CwcnTc1nGqCG2RmMeqG2JNOZO0ZZjhtJsoikXIaSec3OV+54kqzWL5aKYJDQQeSRYxgk0ueW79alCpeq43B1olfkGqUKA5qHz1hzFJBZWGcKx1z/cSE2RYGUY4nZX7qaYJJhM8oj1LJRZUB9n81hk6t8oQRbGyJQ2aq78nMiy0norQdgpsxnrZy8X/vF5qopsgYzJJDZVksShKOTIxyh9HQ6YoMXxqCSaK2VsRGWOFibHxlG0I/vLLq6Rdc/1Lt/ZQrzZuizhKcApncAE+XEMD7qEJLSAwhmd4hTdHOC/Ou/OxaF1zipkT+APn8wfPJI1t</latexit> 
+
+0.5<latexit sha1_base64="cJMY6+PI9dH/F4Umn17uuiHlFu0=">AAAB6nicbVBNS8NAEJ34WetX1aOXxSJ4CklV9Fj04rGi/YA2lM120i7dbMLuRiilP8GLB0W8+ou8+W/ctjlo64OBx3szzMwLU8G18bxvZ2V1bX1js7BV3N7Z3dsvHRw2dJIphnWWiES1QqpRcIl1w43AVqqQxqHAZji8nfrNJ1SaJ/LRjFIMYtqXPOKMGis9eO5lt1T2XG8Gskz8nJQhR61b+ur0EpbFKA0TVOu276UmGFNlOBM4KXYyjSllQ9rHtqWSxqiD8ezUCTm1So9EibIlDZmpvyfGNNZ6FIe2M6ZmoBe9qfif185MdB2MuUwzg5LNF0WZICYh079JjytkRowsoUxxeythA6ooMzadog3BX3x5mTQqrn/uVu4vytWbPI4CHMMJnIEPV1CFO6hBHRj04Rle4c0Rzovz7nzMW1ecfOYI/sD5/AFa2o0v</latexit> 
+
+1.0<latexit sha1_base64="gX4OE2tCCD6rtIZEb02M3+ZtMRI=">AAAB6nicbVBNS8NAEJ3Ur1q/qh69LBbBU0iqoMeiF48V7Qe0oWy2m3bpZhN2J0Ip/QlePCji1V/kzX/jts1BWx8MPN6bYWZemEph0PO+ncLa+sbmVnG7tLO7t39QPjxqmiTTjDdYIhPdDqnhUijeQIGSt1PNaRxK3gpHtzO/9cS1EYl6xHHKg5gOlIgEo2ilB9/1euWK53pzkFXi56QCOeq98le3n7As5gqZpMZ0fC/FYEI1Cib5tNTNDE8pG9EB71iqaMxNMJmfOiVnVumTKNG2FJK5+ntiQmNjxnFoO2OKQ7PszcT/vE6G0XUwESrNkCu2WBRlkmBCZn+TvtCcoRxbQpkW9lbChlRThjadkg3BX355lTSrrn/hVu8vK7WbPI4inMApnIMPV1CDO6hDAxgM4Ble4c2Rzovz7nwsWgtOPnMMf+B8/gBUzI0r</latexit> 
+
+0.6<latexit sha1_base64="riyt+Mq3xklQkwKpU6+rtVJTIt4=">AAAB6nicbVBNS8NAEJ34WetX1aOXxSJ4CkkV9Vj04rGi/YA2lM120i7dbMLuRiilP8GLB0W8+ou8+W/ctjlo64OBx3szzMwLU8G18bxvZ2V1bX1js7BV3N7Z3dsvHRw2dJIphnWWiES1QqpRcIl1w43AVqqQxqHAZji8nfrNJ1SaJ/LRjFIMYtqXPOKMGis9eO5lt1T2XG8Gskz8nJQhR61b+ur0EpbFKA0TVOu276UmGFNlOBM4KXYyjSllQ9rHtqWSxqiD8ezUCTm1So9EibIlDZmpvyfGNNZ6FIe2M6ZmoBe9qfif185MdB2MuUwzg5LNF0WZICYh079JjytkRowsoUxxeythA6ooMzadog3BX3x5mTQqrn/uVu4vytWbPI4CHMMJnIEPV1CFO6hBHRj04Rle4c0Rzovz7nzMW1ecfOYI/sD5/AFcXo0w</latexit> 
+
+0.2<latexit sha1_base64="nT71qUd+FPjRxDu8sJFUtCQXDYg=">AAAB6nicbVBNS8NAEJ3Ur1q/qh69LBbBU0iqoMeiF48V7Qe0oWy2m3bpZhN2J0Ip/QlePCji1V/kzX/jts1BWx8MPN6bYWZemEph0PO+ncLa+sbmVnG7tLO7t39QPjxqmiTTjDdYIhPdDqnhUijeQIGSt1PNaRxK3gpHtzO/9cS1EYl6xHHKg5gOlIgEo2ilB8+t9soVz/XmIKvEz0kFctR75a9uP2FZzBUySY3p+F6KwYRqFEzyaambGZ5SNqID3rFU0ZibYDI/dUrOrNInUaJtKSRz9ffEhMbGjOPQdsYUh2bZm4n/eZ0Mo+tgIlSaIVdssSjKJMGEzP4mfaE5Qzm2hDIt7K2EDammDG06JRuCv/zyKmlWXf/Crd5fVmo3eRxFOIFTOAcfrqAGd1CHBjAYwDO8wpsjnRfn3flYtBacfOYY/sD5/AFWTo0s</latexit> 
+
+ 0.2<latexit sha1_base64="RmFeWRtL+UacFPRtkhLPXczRDGw=">AAAB63icbVBNS8NAEJ3Ur1q/qh69LBbBiyGpgh6LXjxWsB/QhrLZbtqlu5uwuxFK6F/w4kERr/4hb/4bN20O2vpg4PHeDDPzwoQzbTzv2ymtrW9sbpW3Kzu7e/sH1cOjto5TRWiLxDxW3RBrypmkLcMMp91EUSxCTjvh5C73O09UaRbLRzNNaCDwSLKIEWxy6cJz64NqzXO9OdAq8QtSgwLNQfWrP4xJKqg0hGOte76XmCDDyjDC6azSTzVNMJngEe1ZKrGgOsjmt87QmVWGKIqVLWnQXP09kWGh9VSEtlNgM9bLXi7+5/VSE90EGZNJaqgki0VRypGJUf44GjJFieFTSzBRzN6KyBgrTIyNp2JD8JdfXiXtuutfuvWHq1rjtoijDCdwCufgwzU04B6a0AICY3iGV3hzhPPivDsfi9aSU8wcwx84nz+/8Y1j</latexit> 
+
+ 0.6<latexit sha1_base64="KxwM3NNbqzYb6xN1ac76//zbb4g=">AAAB63icbVBNS8NAEJ34WetX1aOXxSJ4MSRV1GPRi8cK9gPaUDbbTbt0dxN2N0IJ/QtePCji1T/kzX/jps1BWx8MPN6bYWZemHCmjed9Oyura+sbm6Wt8vbO7t5+5eCwpeNUEdokMY9VJ8SaciZp0zDDaSdRFIuQ03Y4vsv99hNVmsXy0UwSGgg8lCxiBJtcOvfcq36l6rneDGiZ+AWpQoFGv/LVG8QkFVQawrHWXd9LTJBhZRjhdFrupZommIzxkHYtlVhQHWSzW6fo1CoDFMXKljRopv6eyLDQeiJC2ymwGelFLxf/87qpiW6CjMkkNVSS+aIo5cjEKH8cDZiixPCJJZgoZm9FZIQVJsbGU7Yh+IsvL5NWzfUv3NrDZbV+W8RRgmM4gTPw4RrqcA8NaAKBETzDK7w5wnlx3p2PeeuKU8wcwR84nz/GAY1n</latexit> 
+
+ 1.0<latexit sha1_base64="w6eqklF0PLhuH+OKQ1afMkZE2sA=">AAAB63icbVBNS8NAEJ3Ur1q/qh69LBbBiyGpgh6LXjxWsB/QhrLZbtqlu5uwuxFK6F/w4kERr/4hb/4bN20O2vpg4PHeDDPzwoQzbTzv2ymtrW9sbpW3Kzu7e/sH1cOjto5TRWiLxDxW3RBrypmkLcMMp91EUSxCTjvh5C73O09UaRbLRzNNaCDwSLKIEWxy6cJ3vUG15rneHGiV+AWpQYHmoPrVH8YkFVQawrHWPd9LTJBhZRjhdFbpp5ommEzwiPYslVhQHWTzW2fozCpDFMXKljRorv6eyLDQeipC2ymwGetlLxf/83qpiW6CjMkkNVSSxaIo5cjEKH8cDZmixPCpJZgoZm9FZIwVJsbGU7Eh+Msvr5J23fUv3frDVa1xW8RRhhM4hXPw4RoacA9NaAGBMTzDK7w5wnlx3p2PRWvJKWaO4Q+czx++b41i</latexit> 
+
+(d) time = 100 <latexit sha1_base64="mkhaeIwmGhxORsnktSUrJxhOlKc=">AAAB+nicbVC7TsMwFHXKq5RXCiOLRYtUliopAyxIFSyMRaIPqYkqx3Faq7YT2Q6oCv0UFgYQYuVL2Pgb3DYDtBzpSkfn3Kt77wkSRpV2nG+rsLa+sblV3C7t7O7tH9jlw46KU4lJG8cslr0AKcKoIG1NNSO9RBLEA0a6wfhm5ncfiFQ0Fvd6khCfo6GgEcVIG2lgl2vhmQc15cSD1SvXcaoDu+LUnTngKnFzUgE5WgP7ywtjnHIiNGZIqb7rJNrPkNQUMzIteakiCcJjNCR9QwXiRPnZ/PQpPDVKCKNYmhIaztXfExniSk14YDo50iO17M3E/7x+qqNLP6MiSTUReLEoShnUMZzlAEMqCdZsYgjCkppbIR4hibA2aZVMCO7yy6uk06i75/XGXaPSvM7jKIJjcAJqwAUXoAluQQu0AQaP4Bm8gjfryXqx3q2PRWvBymeOwB9Ynz/cYZHJ</latexit> 
+
+(b) time = 20 <latexit sha1_base64="OIoPKjZjTq+LatsBp6MmgzY3clU=">AAAB+XicbVBNS8NAEN3Ur1q/oh69LLZCvZQkHvQiFL14rGA/oAlls522S3eTsLsplNB/4sWDIl79J978N27bHLT1wcDjvRlm5oUJZ0o7zrdV2Njc2t4p7pb29g8Oj+zjk5aKU0mhSWMey05IFHAWQVMzzaGTSCAi5NAOx/dzvz0BqVgcPelpAoEgw4gNGCXaSD3broaXPtZMgI8rt55T6dllp+YsgNeJm5MyytHo2V9+P6apgEhTTpTquk6ig4xIzSiHWclPFSSEjskQuoZGRIAKssXlM3xhlD4exNJUpPFC/T2REaHUVISmUxA9UqveXPzP66Z6cBNkLEpSDRFdLhqkHOsYz2PAfSaBaj41hFDJzK2YjogkVJuwSiYEd/XlddLyau5VzXv0yvW7PI4iOkPnqIpcdI3q6AE1UBNRNEHP6BW9WZn1Yr1bH8vWgpXPnKI/sD5/AGiUkY4=</latexit> 
+
+FIG. 5. (Top) Density plots of the local nearest-neighbor spin correlation bi ≡ (Si · Si+x + Si · Si−x + Si · Si+y + Si · Si−y )/4at four representative times during the ML-LLG simulation on a 200 × 200 lattice. (Bottom) Corresponding ML-predicted distributions of the local electron number ni = P
+
+α⟨ˆc†
+
+iα ˆciα ⟩. The neural-network model is trained on datasets obtained from exact solutions for an L = 30 lattice with parameters tnn = 1, J = 7, and electron filling fraction n = 0 .485. 
+
+connected regions where all nearest-neighbor bonds sat-isfy bth > 0.5. The evolution of the characteristic domain size L(t) is shown in Fig. 6. As expected for a conserved-order-parameter system, the early-time growth follows the LSW prediction L(t) ∼ t1/3. However, at later times the coarsening slows markedly, and L(t) deviates from the LSW power law. Classical LSW theory describes growth through an evaporation-condensation mechanism in which larger domains grow by absorbing material from smaller ones via diffusive exchange. In the present con-text, this process corresponds to the migration of doped holes from small FM clusters into larger ones. The ini-tial t1/3 scaling likely reflects this early diffusive regime. As AFM order strengthens in the half-filled background, each doped hole becomes surrounded by parallel spins via the double-exchange mechanism, forming a self-trapped FM cloud. This localization suppresses hole evapora-tion, arrests further coarsening, and ultimately leads to a breakdown of the LSW scenario at late times. 
+
+VI. NON-CONSERVATIVE FIELD AND GENERALIZED BP ARCHITECTURE 
+
+The BP-type ML architecture developed in the pre-ceding sections enables linear-scaling, adiabatic dynami-cal simulations of large itinerant spin systems. Within the adiabatic approximation, the electronic subsystem is assumed to remain in quasi-equilibrium with the in-stantaneous spin configuration throughout the evolution. Consequently, the system energy in Eq. (5) is evaluated 20 40 60 80 100 120 140 160 
+
+2.8 
+
+3.0 
+
+3.2 
+
+3.4 
+
+3.6 
+
+3.8 
+
+t<latexit sha1_base64="btWuKJH9/rrCxCKL5tGKBdwWU5A=">AAAB6HicbVBNS8NAEJ3Ur1q/qh69LBbBU0mqoMeiF48t2FpoQ9lsN+3azSbsToQS+gu8eFDEqz/Jm//GbZuDtj4YeLw3w8y8IJHCoOt+O4W19Y3NreJ2aWd3b/+gfHjUNnGqGW+xWMa6E1DDpVC8hQIl7ySa0yiQ/CEY3878hyeujYjVPU4S7kd0qEQoGEUrNbFfrrhVdw6ySrycVCBHo1/+6g1ilkZcIZPUmK7nJuhnVKNgkk9LvdTwhLIxHfKupYpG3PjZ/NApObPKgISxtqWQzNXfExmNjJlEge2MKI7MsjcT//O6KYbXfiZUkiJXbLEoTCXBmMy+JgOhOUM5sYQyLeythI2opgxtNiUbgrf88ipp16reRbXWvKzUb/I4inACp3AOHlxBHe6gAS1gwOEZXuHNeXRenHfnY9FacPKZY/gD5/MH4XeM/A==</latexit> 
+
+t<latexit sha1_base64="btWuKJH9/rrCxCKL5tGKBdwWU5A=">AAAB6HicbVBNS8NAEJ3Ur1q/qh69LBbBU0mqoMeiF48t2FpoQ9lsN+3azSbsToQS+gu8eFDEqz/Jm//GbZuDtj4YeLw3w8y8IJHCoOt+O4W19Y3NreJ2aWd3b/+gfHjUNnGqGW+xWMa6E1DDpVC8hQIl7ySa0yiQ/CEY3878hyeujYjVPU4S7kd0qEQoGEUrNbFfrrhVdw6ySrycVCBHo1/+6g1ilkZcIZPUmK7nJuhnVKNgkk9LvdTwhLIxHfKupYpG3PjZ/NApObPKgISxtqWQzNXfExmNjJlEge2MKI7MsjcT//O6KYbXfiZUkiJXbLEoTCXBmMy+JgOhOUM5sYQyLeythI2opgxtNiUbgrf88ipp16reRbXWvKzUb/I4inACp3AOHlxBHe6gAS1gwOEZXuHNeXRenHfnY9FacPKZY/gD5/MH4XeM/A==</latexit> 
+
+⇠ (t   t0)0.33 
+
+<latexit sha1_base64="ybnrvBwOiNkxR6WPo7KK2UKl9C0=">AAAB/nicbVDLSsNAFJ3UV62vqLhyM1iEujAkraDLohuXFewD2hgm00k7dPJg5kYoIeCvuHGhiFu/w51/4/Sx0NYDFw7n3Mu99/iJ4Aps+9sorKyurW8UN0tb2zu7e+b+QUvFqaSsSWMRy45PFBM8Yk3gIFgnkYyEvmBtf3Qz8duPTCoeR/cwTpgbkkHEA04JaMkzj3qKh7gC5+Bldn72kNlWrZZ7Ztm27CnwMnHmpIzmaHjmV68f0zRkEVBBlOo6dgJuRiRwKlhe6qWKJYSOyIB1NY1IyJSbTc/P8alW+jiIpa4I8FT9PZGRUKlx6OvOkMBQLXoT8T+vm0Jw5WY8SlJgEZ0tClKBIcaTLHCfS0ZBjDUhVHJ9K6ZDIgkFnVhJh+AsvrxMWlXLqVnVu4ty/XoeRxEdoxNUQQ66RHV0ixqoiSjK0DN6RW/Gk/FivBsfs9aCMZ85RH9gfP4AIj2UTQ==</latexit> 
+
+hsi<latexit sha1_base64="O4k81/dq6gf8BY/LweTEDmUYs08=">AAAB+nicbZDLSsNAFIYn9VbrLdWlm8EiuCpJFXRZdOOygr1AE8pketIOnUzCzEQpsY/ixoUibn0Sd76N0zQLbf1h4OM/53DO/EHCmdKO822V1tY3NrfK25Wd3b39A7t62FFxKim0acxj2QuIAs4EtDXTHHqJBBIFHLrB5GZe7z6AVCwW93qagB+RkWAho0Qba2BXPU7EiANW2JM5DeyaU3dy4VVwC6ihQq2B/eUNY5pGIDTlRKm+6yTaz4jUjHKYVbxUQULohIygb1CQCJSf5afP8KlxhjiMpXlC49z9PZGRSKlpFJjOiOixWq7Nzf9q/VSHV37GRJJqEHSxKEw51jGe54CHTALVfGqAUMnMrZiOiSRUm7QqJgR3+cur0GnU3fN64+6i1rwu4iijY3SCzpCLLlET3aIWaiOKHtEzekVv1pP1Yr1bH4vWklXMHKE/sj5/AMe+k7A=</latexit> 
+
+hLi<latexit sha1_base64="zdNJBxTAXsCQsSGGIuzA0VqiIws=">AAAB+nicbZDLSsNAFIYnXmu9pbp0M1gEVyWpgi6Lbly4qGAv0IQymZ60QyeTMDNRSuyjuHGhiFufxJ1v4zTNQlt/GPj4zzmcM3+QcKa043xbK6tr6xubpa3y9s7u3r5dOWirOJUUWjTmsewGRAFnAlqaaQ7dRAKJAg6dYHw9q3ceQCoWi3s9ScCPyFCwkFGijdW3Kx4nYsgB32JP5tS3q07NyYWXwS2gigo1+/aXN4hpGoHQlBOleq6TaD8jUjPKYVr2UgUJoWMyhJ5BQSJQfpafPsUnxhngMJbmCY1z9/dERiKlJlFgOiOiR2qxNjP/q/VSHV76GRNJqkHQ+aIw5VjHeJYDHjAJVPOJAUIlM7diOiKSUG3SKpsQ3MUvL0O7XnPPavW782rjqoijhI7QMTpFLrpADXSDmqiFKHpEz+gVvVlP1ov1bn3MW1esYuYQ/ZH1+QOLapOJ</latexit> 
+
+0 50 100 150 
+
+0
+
+10 
+
+20 
+
+30 
+
+40 
+
+FIG. 6. Average linear size L = ⟨s⟩1/2 of ferromagnetic (FM) clusters as a function of time following a thermal quench. The dash–dot line marks the power-law growth L(t) ∼ t1/3, while the dashed line shows a sublogarithmic form L(t) ∼ (log t)β
+
+with β = 0 .11. The inset displays the corresponding time evolution of the average cluster size ⟨s⟩.
+
+using the Boltzmann distribution of the electron liquid corresponding to the current spin state. In this frame-work, the local magnetic fields Hi that govern the spin dynamics are obtained by differentiating the total energy constructed from the ML-predicted local energies. This procedure is made computationally efficient through the use of automatic differentiation techniques. However, the fact that forces are obtained as deriva-tives of the predicted energy also underscores a funda-mental limitation of the BP framework: it is intrinsi-cally restricted to representing conservative forces. Ex-change fields generated by out-of-equilibrium electrons 10 (a) <latexit sha1_base64="X/qnRvMwhjWbXpmRy4/PIWPyG6U=">AAAB6nicbVA9TwJBEJ3DL8Qv1NJmIzHBhtxhoSXRxhKjIAlcyN6yBxv29i67cybkwk+wsdAYW3+Rnf/GBa5Q8CWTvLw3k5l5QSKFQdf9dgpr6xubW8Xt0s7u3v5B+fCobeJUM95isYx1J6CGS6F4CwVK3kk0p1Eg+WMwvpn5j09cGxGrB5wk3I/oUIlQMIpWuq/S83654tbcOcgq8XJSgRzNfvmrN4hZGnGFTFJjup6boJ9RjYJJPi31UsMTysZ0yLuWKhpx42fzU6fkzCoDEsbalkIyV39PZDQyZhIFtjOiODLL3kz8z+umGF75mVBJilyxxaIwlQRjMvubDITmDOXEEsq0sLcSNqKaMrTplGwI3vLLq6Rdr3kXtfpdvdK4zuMowgmcQhU8uIQG3EITWsBgCM/wCm+OdF6cd+dj0Vpw8plj+APn8weJWY1M</latexit> 
+
+(b) <latexit sha1_base64="+ztJnr+tGUTNHl6HB1D2mRcIYE0=">AAAB6nicbVA9TwJBEJ3DL8Qv1NJmIzHBhtxhoSXRxhKjIAlcyN6yBxv29i67cybkwk+wsdAYW3+Rnf/GBa5Q8CWTvLw3k5l5QSKFQdf9dgpr6xubW8Xt0s7u3v5B+fCobeJUM95isYx1J6CGS6F4CwVK3kk0p1Eg+WMwvpn5j09cGxGrB5wk3I/oUIlQMIpWuq8G5/1yxa25c5BV4uWkAjma/fJXbxCzNOIKmaTGdD03QT+jGgWTfFrqpYYnlI3pkHctVTTixs/mp07JmVUGJIy1LYVkrv6eyGhkzCQKbGdEcWSWvZn4n9dNMbzyM6GSFLlii0VhKgnGZPY3GQjNGcqJJZRpYW8lbEQ1ZWjTKdkQvOWXV0m7XvMuavW7eqVxncdRhBM4hSp4cAkNuIUmtIDBEJ7hFd4c6bw4787HorXg5DPH8AfO5w+K3o1N</latexit> 
+
+(c) <latexit sha1_base64="Zg9SzxQYTZq3+U3BzjvxJ4sdGWU=">AAAB6nicbVA9TwJBEJ3DL8Qv1NJmIzHBhtxhoSXRxhKjIAlcyN6yBxv29i67cybkwk+wsdAYW3+Rnf/GBa5Q8CWTvLw3k5l5QSKFQdf9dgpr6xubW8Xt0s7u3v5B+fCobeJUM95isYx1J6CGS6F4CwVK3kk0p1Eg+WMwvpn5j09cGxGrB5wk3I/oUIlQMIpWuq+y83654tbcOcgq8XJSgRzNfvmrN4hZGnGFTFJjup6boJ9RjYJJPi31UsMTysZ0yLuWKhpx42fzU6fkzCoDEsbalkIyV39PZDQyZhIFtjOiODLL3kz8z+umGF75mVBJilyxxaIwlQRjMvubDITmDOXEEsq0sLcSNqKaMrTplGwI3vLLq6Rdr3kXtfpdvdK4zuMowgmcQhU8uIQG3EITWsBgCM/wCm+OdF6cd+dj0Vpw8plj+APn8weMY41O</latexit>  
+
+> <latexit sha1_base64="plgWUrdgzyUh1HUuWrU3Cb46xd0=">AAAB9XicbVDLSsNAFL2pr1pfUZduBovgqiRS1GXRjcuK9gFtLJPppB06mYSZiVJC/sONC0Xc+i/u/BsnbRbaemDgcM693DPHjzlT2nG+rdLK6tr6RnmzsrW9s7tn7x+0VZRIQlsk4pHs+lhRzgRtaaY57caS4tDntONPrnO/80ilYpG419OYeiEeCRYwgrWRHvoh1mM/SO+yQcqygV11as4MaJm4BalCgebA/uoPI5KEVGjCsVI914m1l2KpGeE0q/QTRWNMJnhEe4YKHFLlpbPUGToxyhAFkTRPaDRTf2+kOFRqGvpmMk+pFr1c/M/rJTq49FIm4kRTQeaHgoQjHaG8AjRkkhLNp4ZgIpnJisgYS0y0KapiSnAXv7xM2mc197xWv61XG1dFHWU4gmM4BRcuoAE30IQWEJDwDK/wZj1ZL9a79TEfLVnFziH8gfX5AxXukug=</latexit>
+
+Si
+
+heq 
+
+hneq 
+
+Tneq 
+
+Teq 
+
+FIG. 7. A tangential vector field on a sphere can be de-composed into (a) the curl-free component ∇s E and (b) the divergence-free component ∇s × G. (c) shows the gradi-ent field heq 
+
+i = −∂E/∂ Si, which can be viewed as a quasi-equilibrium exchange field, and the curl-field hneq 
+
+i = −Si ×
+
+∂G/∂ Si, which corresponds to the nonequilibrium force, and their respective torques Teq 
+
+i = heq 
+
+i × Si and Tneq 
+
+i = hneq 
+
+i × Si.
+
+or in open systems are generally non-conservative and therefore cannot, in general, be written as the gradient of any effective potential. In such settings, even the no-tion of a well-defined total energy E becomes ambiguous. Capturing these forces requires ML representations that go beyond the BP architecture. A well-known example is the current-induced force in molecular junctions [116–119], which has been explicitly shown to be nonconservative. Another important case is the spin-transfer torque [120–124] produced by polarized charge currents, a key mechanism in nanomagnetism and spintronics. These examples highlight the broader chal-lenge: it remains unclear how the extensive ML machin-ery developed for quasi-equilibrium QMD can be directly adapted to model electronic dynamics far from equilib-rium, where forces are neither conservative nor derived from an underlying potential landscape. We address this challenge in quantum LLG dynamics by showing that general nonconservative forces in itiner-ant magnets can be represented using two scalar poten-tials [34]. This reformulation reduces force prediction to learning two local energies. Using the locality principle, we construct a generalized BP architecture that predicts these energies, with forces obtained via automatic differ-entiation. The scalar outputs naturally incorporate sym-metry constraints and retain the advantages of BP-type models. As a demonstration, we train the framework on nonequilibrium exchange fields from Green’s-function calculations for the s–d model and show that it accurately reproduces voltage-driven domain-wall motion. 
+
+A. Generalized potentials for LLG 
+
+A defining feature of the LLG equation is the strict conservation of spin length. Consequently, the effective field H in Eq. (2) should be regarded as a vector field on the sphere S2 defined by |Si| = S. By the Helmholtz-Hodge decomposition on S2 [125–127], any such field 
+
+H(S) can be uniquely decomposed into radial, gradient, and solenoidal components. The radial part, being par-allel to S, produces no torque T = S × H and therefore behaves as a gauge freedom with no physical effect on the dynamics. The physically relevant exchange field thus consists only of the tangential gradient and solenoidal contributions, 
+
+H = −∇ s E(S) − ∇ s × G(S), (18) where E and G are scalar functions on the spin sphere. The surface gradient of a scalar f (S) is 
+
+∇sf = ∂f ∂S − S
+
+
+
+S · ∂f ∂S
+
+
+
+, (19) and the corresponding surface curl is 
+
+∇s × f = S × ∂f ∂S . (20) Here ∂f ∂S = P
+
+α=x,y,z ∂f ∂S α ˆeα denotes the ordinary three-dimensional gradient, prior to imposing the constraint 
+
+|S| = const. Notably, unlike the familiar Helmholtz de-composition in Euclidean space, V = −∇ ϕ + ∇ × A, the curl component on S2 is generated by a scalar poten-tial G.Since the second term in the surface gradient is par-allel to the spin direction, it does not contribute to the torque that drives LLG dynamics. Thus, the most gen-eral exchange field in the LLG equation can be written in terms of two scalar potentials as 
+
+Hi = − ∂E ∂Si
+
+− Si × ∂G ∂Si
+
+= heq 
+
+i + hneq 
+
+i . (21) The first term, analogous to a conservative force, defines the quasi-equilibrium exchange field, while the second term, arising from the curl component, is the nonequi-librium exchange field; see Fig. 7. The generalized LLG equation then becomes [34] 
+
+∂Si
+
+∂t = γ Si × ∂E ∂Si
+
++ γ Si ×
+
+
+
+Si × ∂G ∂Si
+
+
+
++ α Si × ∂Si
+
+∂t .
+
+(22) The first term describes the conventional precessional dy-namics of Eq. (2), with E serving as an effective conser-vative potential. The third term, proportional to the Gilbert damping constant α, accounts for the universal dissipation that monotonically decreases E. In contrast, the intermediate (toroidal) G term can represent either energy loss or energy injection, depending on the choice of G. For example, setting G = −λE with λ > 0 re-produces the dissipative contribution introduced in the original formulation of Landau and Lifshitz [54]. Con-versely, nonequilibrium spin-transfer torques of the Slon-czewski–Berger type [120, 121] arise from a potential of the form G = −K P
+
+i Mp · Si, where K is an effective exchange coupling and Mp denotes the magnetization of the fixed polarizing layer in a magnetic tunnel junc-tion. Although this interaction resembles a Zeeman cou-pling to an external magnetic field, the resulting torque, 
+
+hneq 
+
+i = KSi × (Si × Mp) drives the local spin toward alignment with Mp, rather than producing the preces-sional motion characteristic of a magnetic-field-induced Zeeman term. 11 Si
+
+ A B
+
+ C  D
+
+local spin configuration  neural network 
+
+automatic di ↵erentiation 
+
+> ·
+> ·
+> ·
+
+H1
+
+H2
+
+<latexit sha1_base64="l0rzTABcdwNsZ5AOZUgwtfqag80=">AAAB/HicbVC7TsMwFHXKq5RXoCOLRYXEVCUdCmMFC2ORaIvURpXj3LRWHSeyHaQoKr/CwgBCrHwIG3+D02aAliNZOj7n3mvf4yecKe0431ZlY3Nre6e6W9vbPzg8so9P+ipOJYUejXksH3yigDMBPc00h4dEAol8DgN/dlP4g0eQisXiXmcJeBGZCBYySrSRxna9uINmFAegqGSJjuXYbjhNZwG8TtySNFCJ7tj+GgUxTSMQmnKi1NB1Eu3lRJq5HOa1UaogIXRGJjA0VJAIlJcvPj/H50YJcBhLc4TGC/V3R04ipbLIN5UR0VO16hXif94w1eGVlzORpBoEXT4UphzrGBdJ4IBJoJpnhhCzeZEBnRJJqDZ51UwI7urK66TfarrtZvuu1ehcl3FU0Sk6QxfIRZeog25RF/UQRRl6Rq/ozXqyXqx362NZWrHKnjr6A+vzByIvlRk=</latexit> 
+
+magnetic descriptor 
+
+<latexit sha1_base64="fFK+utc6du9uMS56u4yszu5FumQ=">AAACGnicbVBNS8NAEN34WetX1KOXxSLUS0lEqseiF48V7Qc0pWy2m3btZhN2J0Ip/R1e/CtePCjiTbz4b9y0gWrrg4HHezPMzPNjwTU4zre1tLyyurae28hvbm3v7Np7+3UdJYqyGo1EpJo+0UxwyWrAQbBmrBgJfcEa/uAq9RsPTGkeyTsYxqwdkp7kAacEjNSxXS8k0PcDfNvh2KPdCIoz5R57wEOm8UwanHTsglNyJsCLxM1IAWWoduxPrxvRJGQSqCBat1wnhvaIKOBUsHHeSzSLCR2QHmsZKonZ2B5NXhvjY6N0cRApUxLwRP09MSKh1sPQN53pjXreS8X/vFYCwUV7xGWcAJN0uihIBIYIpznhLleMghgaQqji5lZM+0QRCibNvAnBnX95kdRPS265VL45K1Quszhy6BAdoSJy0TmqoGtURTVE0SN6Rq/ozXqyXqx362PaumRlMwfoD6yvH4ycn/M=</latexit> 
+
+Si · (Sj ⇥ Sk)
+
+<latexit sha1_base64="5C7iX4K4SFwzCtcIsJGL1eutlYo=">AAAB9HicbVDLSgNBEOz1GeMr6tHLYBA8hV2R6EUIevEYwTwgWcLsZJKMmZ1dZ3oDYcl3ePGgiFc/xpt/4yTZgyYWNBRV3XR3BbEUBl3321lZXVvf2Mxt5bd3dvf2CweHdRMlmvEai2SkmwE1XArFayhQ8masOQ0DyRvB8HbqN0ZcGxGpBxzH3A9pX4meYBSt5LfZQHRS8TickGvSKRTdkjsDWSZeRoqQodopfLW7EUtCrpBJakzLc2P0U6pRMMkn+XZieEzZkPZ5y1JFQ278dHb0hJxapUt6kbalkMzU3xMpDY0Zh4HtDCkOzKI3Ff/zWgn2rvxUqDhBrth8US+RBCMyTYB0heYM5dgSyrSwtxI2oJoytDnlbQje4svLpH5e8sql8v1FsXKTxZGDYziBM/DgEipwB1WoAYMneIZXeHNGzovz7nzMW1ecbOYI/sD5/AET/ZGp</latexit> 
+
+ ijk =
+
+<latexit sha1_base64="t18ZvYuUr4wS7SUxrZQ7fX4c2AI=">AAACBXicbVDLSsNAFJ34rPUVdamLwSK4KolIdVl047KifUAbwmQyacdOZsLMRCihGzf+ihsXirj1H9z5N07agNp64MLhnHu5954gYVRpx/myFhaXlldWS2vl9Y3NrW17Z7elRCoxaWLBhOwESBFGOWlqqhnpJJKgOGCkHQwvc799T6Sigt/qUUK8GPU5jShG2ki+fdCLkR4EEbzxKezhUOgf4c63K07VmQDOE7cgFVCg4dufvVDgNCZcY4aU6rpOor0MSU0xI+NyL1UkQXiI+qRrKEcxUV42+WIMj4wSwkhIU1zDifp7IkOxUqM4MJ35iWrWy8X/vG6qo3MvozxJNeF4uihKGdQC5pHAkEqCNRsZgrCk5laIB0girE1wZROCO/vyPGmdVN1atXZ9WqlfFHGUwD44BMfABWegDq5AAzQBBg/gCbyAV+vRerberPdp64JVzOyBP7A+vgGeKJgH</latexit> 
+
+Si · Sj
+
+<latexit sha1_base64="ruCkigEvciHsQiUi6Wys834HSCk=">AAAB8HicbVBNSwMxEJ2tX7V+VT16CRbBU9kVqV6EohePFeyHtEvJptk2NskuSVYoy/4KLx4U8erP8ea/MW33oK0PBh7vzTAzL4g508Z1v53Cyura+kZxs7S1vbO7V94/aOkoUYQ2ScQj1QmwppxJ2jTMcNqJFcUi4LQdjG+mfvuJKs0ieW8mMfUFHkoWMoKNlR6CfsoeM3SF+uWKW3VnQMvEy0kFcjT65a/eICKJoNIQjrXuem5s/BQrwwinWamXaBpjMsZD2rVUYkG1n84OztCJVQYojJQtadBM/T2RYqH1RAS2U2Az0oveVPzP6yYmvPRTJuPEUEnmi8KEIxOh6fdowBQlhk8swUQxeysiI6wwMTajkg3BW3x5mbTOql6tWrs7r9Sv8ziKcATHcAoeXEAdbqEBTSAg4Ble4c1Rzovz7nzMWwtOPnMIf+B8/gADdY/o</latexit> 
+
+bij =
+
+Si
+
+Ci
+
+<latexit sha1_base64="4eJrbzo+sAcMJNdDe5ykM2JK60M=">AAACJnicbVDLSgMxFM3UV62vUZdugkWooGVGpLop1FbBZQX7gLYMmUymDc1MhiQjlKFf48ZfceOiIuLOTzHTVtDqgXAP59zLzT1uxKhUlvVhZJaWV1bXsuu5jc2t7R1zd68peSwwaWDOuGi7SBJGQ9JQVDHSjgRBgctIyx3WUr/1QISkPLxXo4j0AtQPqU8xUlpyzHLX5cyTo0CXxB87N7AMC108oM4VPIVTUjuZ1eq3cH2cKh5X0jHzVtGaAv4l9pzkwRx1x5x0PY7jgIQKMyRlx7Yi1UuQUBQzMs51Y0kihIeoTzqahiggspdMzxzDI6140OdCv1DBqfpzIkGBTC/RnQFSA7nopeJ/XidW/mUvoWEUKxLi2SI/ZlBxmGYGPSoIVmykCcKC6r9CPEACYaWTzekQ7MWT/5LmWdEuFUt35/lKdR5HFhyAQ1AANrgAFXAL6qABMHgEz2ACXo0n48V4M95nrRljPrMPfsH4/AJHtaMs</latexit> 
+
+f E = (  A    C ,  B    D ), · · · 
+
+ i
+
+✏i
+
+··
+
+·
+
+✏1✏2
+
+> ··
+> ·
+
+ 1
+
+ 2
+
++
+
+<latexit sha1_base64="SWYzZ6/rI+BCy3bTb8UUrh2U15o=">AAAB7nicbVBNS8NAEJ3Ur1q/qh69LBbBU0lEqseiBz1WsB/QhLLZbtolu5uwuxFK6I/w4kERr/4eb/4bt20O2vpg4PHeDDPzwpQzbVz32ymtrW9sbpW3Kzu7e/sH1cOjjk4yRWibJDxRvRBrypmkbcMMp71UUSxCTrthfDvzu09UaZbIRzNJaSDwSLKIEWys1PXzu0HsTwfVmlt350CrxCtIDQq0BtUvf5iQTFBpCMda9z03NUGOlWGE02nFzzRNMYnxiPYtlVhQHeTzc6fozCpDFCXKljRorv6eyLHQeiJC2ymwGetlbyb+5/UzE10HOZNpZqgki0VRxpFJ0Ox3NGSKEsMnlmCimL0VkTFWmBibUMWG4C2/vEo6F3WvUW88XNaaN0UcZTiBUzgHD66gCffQgjYQiOEZXuHNSZ0X5935WLSWnGLmGP7A+fwBRiqPjA==</latexit> 
+
+{Gk}
+
+<latexit sha1_base64="W9qvBmf/peL1gPpuRC1RvOrdr4g=">AAAB9HicbVBNS8NAEJ34WetX1aOXxSLUS0lEqseiF48V7Ac0sWy2m3bpZhN3N8US8ju8eFDEqz/Gm//GbZuDtj4YeLw3w8w8P+ZMadv+tlZW19Y3Ngtbxe2d3b390sFhS0WJJLRJIh7Jjo8V5UzQpmaa004sKQ59Ttv+6Gbqt8dUKhaJez2JqRfigWABI1gbyXPTp4e04pxlPeFmvVLZrtozoGXi5KQMORq90pfbj0gSUqEJx0p1HTvWXoqlZoTTrOgmisaYjPCAdg0VOKTKS2dHZ+jUKH0URNKU0Gim/p5IcajUJPRNZ4j1UC16U/E/r5vo4MpLmYgTTQWZLwoSjnSEpgmgPpOUaD4xBBPJzK2IDLHERJuciiYEZ/HlZdI6rzq1au3uoly/zuMowDGcQAUcuIQ63EIDmkDgEZ7hFd6ssfVivVsf89YVK585gj+wPn8AUx2R1A==</latexit> 
+
+{x(1) 
+
+n }
+
+<latexit sha1_base64="rTIG8LY8qh8kfcH1XgOLlhTkVcc=">AAAB9HicbVBNT8JAEJ3iF+IX6tFLIzHBC2mJQY9ELx4xkY8EKtkuW9iwu627WyJp+ju8eNAYr/4Yb/4bF+hBwZdM8vLeTGbm+RGjSjvOt5VbW9/Y3MpvF3Z29/YPiodHLRXGEpMmDlkoOz5ShFFBmppqRjqRJIj7jLT98c3Mb0+IVDQU93oaEY+joaABxUgbyeslTw9JuXqe9nkv7RdLTsWZw14lbkZKkKHRL371BiGOOREaM6RU13Ui7SVIaooZSQu9WJEI4TEakq6hAnGivGR+dGqfGWVgB6E0JbQ9V39PJIgrNeW+6eRIj9SyNxP/87qxDq68hIoo1kTgxaIgZrYO7VkC9oBKgjWbGoKwpOZWG4+QRFibnAomBHf55VXSqlbcWqV2d1GqX2dx5OEETqEMLlxCHW6hAU3A8AjP8Apv1sR6sd6tj0VrzspmjuEPrM8fUyGR1A==</latexit> 
+
+{x(2) 
+
+m }
+
+<latexit sha1_base64="32oxboM8s0V47DcjNOCk0eDNdeQ=">AAAB6HicbVDLSgNBEOyNrxhfUY9eBoPgKeyKRI9BETwmYB6QLGF20puMmZ1dZmaFEPIFXjwo4tVP8ubfOEn2oIkFDUVVN91dQSK4Nq777eTW1jc2t/LbhZ3dvf2D4uFRU8epYthgsYhVO6AaBZfYMNwIbCcKaRQIbAWj25nfekKleSwfzDhBP6IDyUPOqLFS/a5XLLlldw6ySryMlCBDrVf86vZjlkYoDRNU647nJsafUGU4EzgtdFONCWUjOsCOpZJGqP3J/NApObNKn4SxsiUNmau/JyY00nocBbYzomaol72Z+J/XSU147U+4TFKDki0WhakgJiazr0mfK2RGjC2hTHF7K2FDqigzNpuCDcFbfnmVNC/KXqVcqV+WqjdZHHk4gVM4Bw+uoAr3UIMGMEB4hld4cx6dF+fd+Vi05pxs5hj+wPn8AZx/jNQ=</latexit> 
+
+E
+
+<latexit sha1_base64="8DsWlPjpfee24a6GpeHlh2caBls=">AAAB6HicbVDLSgNBEOyNrxhfUY9eBoPgKeyKRI9BD3pMwDwgWcLspDcZMzu7zMwKIeQLvHhQxKuf5M2/cZLsQRMLGoqqbrq7gkRwbVz328mtrW9sbuW3Czu7e/sHxcOjpo5TxbDBYhGrdkA1Ci6xYbgR2E4U0igQ2ApGtzO/9YRK81g+mHGCfkQHkoecUWOl+l2vWHLL7hxklXgZKUGGWq/41e3HLI1QGiao1h3PTYw/ocpwJnBa6KYaE8pGdIAdSyWNUPuT+aFTcmaVPgljZUsaMld/T0xopPU4CmxnRM1QL3sz8T+vk5rw2p9wmaQGJVssClNBTExmX5M+V8iMGFtCmeL2VsKGVFFmbDYFG4K3/PIqaV6UvUq5Ur8sVW+yOPJwAqdwDh5cQRXuoQYNYIDwDK/w5jw6L86787FozTnZzDH8gfP5A5+HjNY=</latexit> 
+
+G
+
+<latexit sha1_base64="ygAPjhWrGHBZUBjSPBfzO7ZeIt8=">AAACEHicbVDLSsNAFL3xWesr6tLNYBFdlUSkuiyK4LKifUATwmQ6aYdOHsxMhBL6CW78FTcuFHHr0p1/46QNqK0HBg7n3Hvn3uMnnEllWV/GwuLS8spqaa28vrG5tW3u7LZknApCmyTmsej4WFLOItpUTHHaSQTFoc9p2x9e5n77ngrJ4uhOjRLqhrgfsYARrLTkmUdOIDDJnAQLxTBHV+Mf7oRYDfwA3Xps7JkVq2pNgOaJXZAKFGh45qfTi0ka0kgRjqXs2lai3CwfTTgdl51U0gSTIe7TrqYRDql0s8lBY3SolR4KYqFfpNBE/d2R4VDKUejrynxHOevl4n9eN1XBuZuxKEkVjcj0oyDlSMUoTwf1mKBE8ZEmmAimd0VkgHVCSmdY1iHYsyfPk9ZJ1a5VazenlfpFEUcJ9uEAjsGGM6jDNTSgCQQe4Ale4NV4NJ6NN+N9WrpgFD178AfGxzcakZ1E</latexit> 
+
+@E
+
+@Si
+
+<latexit sha1_base64="RjZqciJ5Yc1HNeji0Nwr6gHkZcQ=">AAACEHicbVDLSsNAFL3xWesr6tLNYBFdlUSkuiy60GVF+4AmhMl00g6dPJiZCCX0E9z4K25cKOLWpTv/xkkbUFsPDBzOuffOvcdPOJPKsr6MhcWl5ZXV0lp5fWNza9vc2W3JOBWENknMY9HxsaScRbSpmOK0kwiKQ5/Ttj+8zP32PRWSxdGdGiXUDXE/YgEjWGnJM4+cQGCSOQkWimGOrsY/3AmxGvgBuvXY2DMrVtWaAM0TuyAVKNDwzE+nF5M0pJEiHEvZta1EuVk+mnA6LjuppAkmQ9ynXU0jHFLpZpODxuhQKz0UxEK/SKGJ+rsjw6GUo9DXlfmOctbLxf+8bqqCczdjUZIqGpHpR0HKkYpRng7qMUGJ4iNNMBFM74rIAOuElM6wrEOwZ0+eJ62Tql2r1m5OK/WLIo4S7MMBHIMNZ1CHa2hAEwg8wBO8wKvxaDwbb8b7tHTBKHr24A+Mj28dx51G</latexit> 
+
+@G
+
+@Si
+
+<latexit sha1_base64="3s7Pje7HbU+CdnRtBl4r1CmIPtQ=">AAACXXicdVFNSwMxFMyuVttaterBg5dgEbxYdkWqF6EoYo8V7Qd0y5JNs21o9oPkrVCW/klvevGvmG0r1VYfBCbzZpKXiRcLrsCy3g1zYzO3tZ0vFHdKu3v75YPDtooSSVmLRiKSXY8oJnjIWsBBsG4sGQk8wTre+D7rd16ZVDwKX2ASs35AhiH3OSWgKbcMTkBg5Pm44XJ8iy+w40tCUycmEjgR+GG6xN/SZ5dPM+Vyix3gAVOr5sd/zG65YlWtWeF1YC9ABS2q6ZbfnEFEk4CFQAVRqmdbMfTT7Ggq2LToJIrFhI7JkPU0DIkepp/O0pniM80MsB9JvULAM/anIyWBUpPA08psRrXay8i/er0E/Jt+ysM4ARbS+UV+IjBEOIsaD7hkFMREA0Il17NiOiI6IdAfUtQh2KtPXgfty6pdq9aerir1u0UceXSCTtE5stE1qqMGaqIWoujDQEbBKBqfZs4smXtzqWksPEfoV5nHX5lWtFM=</latexit> 
+
+Hi =   @E
+
+@Si
+
+  Si ⇥ @G
+
+@Si
+
+FIG. 8. (a) Schematic diagram of neural-network (NN) force-field model for out-of-equilibrium itinerant spin system. Adescriptor transforms the neighborhood spin configuration Ci to effective coordinates {Gℓ} which are then fed into a NN. The two output nodes of the NN correspond to the local energy ϵi = ε(Ci) and γi = χ(Ci) associated with site-i. The corresponding total potential energies E and G are obtained from summation of these local energies. Automatic differentiation is employed to compute the derivatives ∂E/∂ Si and ∂G/∂ Si, from which the local exchange fields Hi are obtained according to the generalized force expression Eq.(21). 
+
+B. Generalized Behler-Parrinello architecture 
+
+The above formulation of the generalized LLG dynam-ics in terms of two scalar potentials provides a natural pathway for extending the Behler-Parrinello (BP) archi-tecture to represent non-conservative exchange fields. As in the standard BP scheme, this generalized approach re-tains the important advantage of incorporating the sym-metry constraints of the underlying electronic Hamilto-nian directly into the ML model through an appropri-ately designed magnetic descriptor. A schematic illus-tration of this generalized BP framework is shown in Fig. 8. To construct such a model, we begin by de-composing the two scalar potentials into sums of local contributions, namely E = P
+
+i ϵi and G = P
+
+i γi. Invok-ing the principle of locality [66, 67], the corresponding local energies ϵi and γi are assumed to depend solely on the local magnetic environment Ci through two universal (model-dependent) functions. That is, for a given elec-tronic Hamiltonian, we posit ϵi = ε(Ci) and γi = χ(Ci). The resulting dependence of the total potentials on the full spin configuration Si can thus be written as 
+
+E = X
+
+i
+
+ϵi = X
+
+i
+
+ε(Ci),G = X
+
+i
+
+γi = X
+
+i
+
+χ(Ci). (23) Similar to the quasi-equilibrium BP model discussed in Sec. II, the magnetic environment Ci is defined as the set of spins located within a cutoff radius Rc of the i-th site, 
+
+Ci = Sj |rj − ri| ≤ Rc . The complicated functional dependences of the local energies on Ci are then approx-imated by a deep-learning neural network, as depicted in Fig. 8. Consistent with the construction of the origi-nal BP architecture, the combined SO(3) spin-rotation symmetry and the lattice point-group symmetries are encoded through the magnetic descriptor introduced in Sec. III. The resulting symmetry-invariant features {Gℓ}
+
+are fed into a fully connected neural network that outputs the pair of local energies ϵi and γi for each site. Once all local contributions are generated by the NN, the full scalar potentials E and G follow directly from Eq. (23). The corresponding local exchange fields Hi en-tering the generalized LLG equation are then computed from the functional derivatives of these potentials accord-ing to Eq. (21). These derivatives, ∂E/∂ Si and ∂G/∂ Si,are evaluated both efficiently and accurately using mod-ern automatic differentiation methods [77, 78]. This pro-cedure yields a unified, symmetry-preserving ML archi-tecture capable of modeling both conservative and non-conservative components of the exchange field within a single generalized BP framework. 
+
+VII. VOLTAGE-INDUCED MAGNETIC PHASE TRANSITION 
+
+The ML framework developed above is fully general and can be applied to represent exchange fields in a wide range of nonequilibrium electronic systems. As a con-crete demonstration, we apply it here to learn the forces obtained from nonequilibrium Green’s function (NEGF) calculations [128–130] for a voltage-driven s-d model. We consider a square-lattice s-d system coupled to two metal-lic electrodes arranged in a capacitor-like geometry, as illustrated in Fig. 9. The total Hamiltonian is written as Htot = Hs-d + Hres, where Hs-d is given in Eq. (1), 12 <latexit sha1_base64="L4mNDtV/LA86mwriyhQWQgM+4Pw=">AAAB6HicbVBNS8NAEJ34WetX1aOXxSJ4KomKeix68diC/YA2lM120q7dbMLuRiihv8CLB0W8+pO8+W/ctjlo64OBx3szzMwLEsG1cd1vZ2V1bX1js7BV3N7Z3dsvHRw2dZwqhg0Wi1i1A6pRcIkNw43AdqKQRoHAVjC6m/qtJ1Sax/LBjBP0IzqQPOSMGivVm71S2a24M5Bl4uWkDDlqvdJXtx+zNEJpmKBadzw3MX5GleFM4KTYTTUmlI3oADuWShqh9rPZoRNyapU+CWNlSxoyU39PZDTSehwFtjOiZqgXvan4n9dJTXjjZ1wmqUHJ5ovCVBATk+nXpM8VMiPGllCmuL2VsCFVlBmbTdGG4C2+vEya5xXvqnJRvyxXb/M4CnAMJ3AGHlxDFe6hBg1ggPAMr/DmPDovzrvzMW9dcfKZI/gD5/MHtU2M4g==</latexit> 
+
+V
+
+x
+
+y
+
+z
+
+FIG. 9. (Color online) Schematic diagram of the voltage-driven magnetic transition in the DE model sandwiched by two electrodes. In the initial state, spins in the DE model are arranged in a staggered N´ eel order. A voltage drop V is applied to the two electrodes. 
+
+and Hres describes the electronic degrees of freedom in the electrodes and reservoirs, as well as their coupling to the central s-d region. Within the NEGF formalism, the effects of the reservoir fermions enter through a retarded self-energy Σr (ϵ), which modifies the retarded Green’s function according to 
+
+Gr (ϵ) = [ ϵI − Hs-d − Σr (ϵ)] −1, (24) where Hs-d is the matrix representation of the s-d Hamil-tonian in the site–spin ( i, α ) basis. The lesser Green’s function G<, which is essential for computing physical observables in nonequilibrium steady states, follows from the Keldysh relation: 
+
+G<(ϵ) = Gr (ϵ) Σ<(ϵ) Ga(ϵ), (25) where Σ< is connected to Σr through the fluctua-tion–dissipation theorem. As an example, the on-site electron density is given by ni = P
+
+α⟨ˆc†
+
+iα ˆciα ⟩ =
+
+P
+
+α
+
+R dϵ 
+
+2πi G<iα,iα (ϵ). The exchange field acting on Si
+
+in Eq. (2) is obtained using the generalized Hell-mann–Feynman theorem and can be expressed directly in terms of the lesser Green’s function [131–134]: 
+
+Hi = −
+
+ ∂ ˆHs-d 
+
+∂Si
+
+
+
+= J X
+
+αβ 
+
+σβα 
+
+Z +∞−∞ 
+
+dϵ 
+
+2πi G<iα,iβ (ϵ). (26) To model the voltage-driven insulator-to-metal transition (IMT) in the s-d system [134], these NEGF-computed exchange fields are coupled to stochastic LLG dynamics. A small Langevin-type stochastic magnetic field is added at each site to incorporate finite-temperature effects and ensure proper sampling of thermal fluctuations. The real-space NEGF calculation for even moderately sized lattices (e.g., systems with fewer than ∼ 1000 spins) is already computationally demanding. The primary bot-tleneck is the evaluation of the retarded Green’s function 
+
+Gr (ϵ), which requires inverting a large matrix for each of thousands of energy points ϵ; see Eq. (24). In NEGF-LLG simulations of driven itinerant magnets, this entire NEGF procedure must be repeated at every time step of -0.010 -0.005 0.000 0.005 0.010 
+
+0
+
+50 
+
+100 
+
+150 
+
+200 
+
+250 
+
+300 
+
+-0.04 -0.02 0.00 0.02 0.04 
+
+-0.04 
+
+-0.02 
+
+0.00 
+
+0.02 
+
+0.04 
+
+ <latexit sha1_base64="5zkUX8CJO/QmitiOixTBBs3/wfM=">AAAB7XicbVBNS8NAEJ34WetX1aOXxSJ4KkkV9Fjw4rGC/YA2lM1m0q7dbMLuRiih/8GLB0W8+n+8+W/ctjlo64OBx3szzMwLUsG1cd1vZ219Y3Nru7RT3t3bPzisHB23dZIphi2WiER1A6pRcIktw43AbqqQxoHATjC+nfmdJ1SaJ/LBTFL0YzqUPOKMGiu1+yEKQweVqltz5yCrxCtIFQo0B5WvfpiwLEZpmKBa9zw3NX5OleFM4LTczzSmlI3pEHuWShqj9vP5tVNybpWQRImyJQ2Zq78nchprPYkD2xlTM9LL3kz8z+tlJrrxcy7TzKBki0VRJohJyOx1EnKFzIiJJZQpbm8lbEQVZcYGVLYheMsvr5J2veZd1ur3V9VGo4ijBKdwBhfgwTU04A6a0AIGj/AMr/DmJM6L8+58LFrXnGLmBP7A+fwBkkCPHg==</latexit> 
+
+(a) <latexit sha1_base64="X/qnRvMwhjWbXpmRy4/PIWPyG6U=">AAAB6nicbVA9TwJBEJ3DL8Qv1NJmIzHBhtxhoSXRxhKjIAlcyN6yBxv29i67cybkwk+wsdAYW3+Rnf/GBa5Q8CWTvLw3k5l5QSKFQdf9dgpr6xubW8Xt0s7u3v5B+fCobeJUM95isYx1J6CGS6F4CwVK3kk0p1Eg+WMwvpn5j09cGxGrB5wk3I/oUIlQMIpWuq/S83654tbcOcgq8XJSgRzNfvmrN4hZGnGFTFJjup6boJ9RjYJJPi31UsMTysZ0yLuWKhpx42fzU6fkzCoDEsbalkIyV39PZDQyZhIFtjOiODLL3kz8z+umGF75mVBJilyxxaIwlQRjMvubDITmDOXEEsq0sLcSNqKaMrTplGwI3vLLq6Rdr3kXtfpdvdK4zuMowgmcQhU8uIQG3EITWsBgCM/wCm+OdF6cd+dj0Vpw8plj+APn8weJWY1M</latexit> 
+
+(b) <latexit sha1_base64="+ztJnr+tGUTNHl6HB1D2mRcIYE0=">AAAB6nicbVA9TwJBEJ3DL8Qv1NJmIzHBhtxhoSXRxhKjIAlcyN6yBxv29i67cybkwk+wsdAYW3+Rnf/GBa5Q8CWTvLw3k5l5QSKFQdf9dgpr6xubW8Xt0s7u3v5B+fCobeJUM95isYx1J6CGS6F4CwVK3kk0p1Eg+WMwvpn5j09cGxGrB5wk3I/oUIlQMIpWuq8G5/1yxa25c5BV4uWkAjma/fJXbxCzNOIKmaTGdD03QT+jGgWTfFrqpYYnlI3pkHctVTTixs/mp07JmVUGJIy1LYVkrv6eyGhkzCQKbGdEcWSWvZn4n9dNMbzyM6GSFLlii0VhKgnGZPY3GQjNGcqJJZRpYW8lbEQ1ZWjTKdkQvOWXV0m7XvMuavW7eqVxncdRhBM4hSp4cAkNuIUmtIDBEJ7hFd4c6bw4787HorXg5DPH8AfO5w+K3o1N</latexit> 
+
+Hi<latexit sha1_base64="C79J60kIRQfM/c2Y0ns2mjfkJRY=">AAAB7HicbVBNS8NAEJ3Ur1q/qh69LBbBU0mqoMeilx4rmLbQhrLZbtulm03YnQgl9Dd48aCIV3+QN/+N2zYHbX0w8Hhvhpl5YSKFQdf9dgobm1vbO8Xd0t7+weFR+fikZeJUM+6zWMa6E1LDpVDcR4GSdxLNaRRK3g4n93O//cS1EbF6xGnCg4iOlBgKRtFKfqOfiVm/XHGr7gJknXg5qUCOZr/81RvELI24QiapMV3PTTDIqEbBJJ+VeqnhCWUTOuJdSxWNuAmyxbEzcmGVARnG2pZCslB/T2Q0MmYahbYzojg2q95c/M/rpji8DTKhkhS5YstFw1QSjMn8czIQmjOUU0so08LeStiYasrQ5lOyIXirL6+TVq3qXVVrD9eV+l0eRxHO4BwuwYMbqEMDmuADAwHP8ApvjnJenHfnY9lacPKZU/gD5/MH3SyOuA==</latexit> 
+
+> Hi<latexit  sha1_base64="C79J60kIRQfM/c2Y0ns2mjfkJRY=">AAAB7HicbVBNS8NAEJ3Ur1q/qh69LBbBU0mqoMeilx4rmLbQhrLZbtulm03YnQgl9Dd48aCIV3+QN/+N2zYHbX0w8Hhvhpl5YSKFQdf9dgobm1vbO8Xd0t7+weFR+fikZeJUM+6zWMa6E1LDpVDcR4GSdxLNaRRK3g4n93O//cS1EbF6xGnCg4iOlBgKRtFKfqOfiVm/XHGr7gJknXg5qUCOZr/81RvELI24QiapMV3PTTDIqEbBJJ+VeqnhCWUTOuJdSxWNuAmyxbEzcmGVARnG2pZCslB/T2Q0MmYahbYzojg2q95c/M/rpji8DTKhkhS5YstFw1QSjMn8czIQmjOUU0so08LeStiYasrQ5lOyIXirL6+TVq3qXVVrD9eV+l0eRxHO4BwuwYMbqEMDmuADAwHP8ApvjnJenHfnY9lacPKZU/gD5/MH3SyOuA==</latexit>
+
+ 0.01 <latexit sha1_base64="ddFd28c+IIXdDlR0onmALCtLvMc=">AAAB7HicbVBNTwIxEJ3FL8Qv1KOXRmLiRbKLJnokevGIiQsksCHdMgsN3e6m7ZoQwm/w4kFjvPqDvPlvLLAHBV/S9OW9mczMC1PBtXHdb6ewtr6xuVXcLu3s7u0flA+PmjrJFEOfJSJR7ZBqFFyib7gR2E4V0jgU2ApHdzO/9YRK80Q+mnGKQUwHkkecUWMl/8Ktul6vXLHfHGSVeDmpQI5Gr/zV7Scsi1EaJqjWHc9NTTChynAmcFrqZhpTykZ0gB1LJY1RB5P5slNyZpU+iRJlnzRkrv7umNBY63Ec2sqYmqFe9mbif14nM9FNMOEyzQxKthgUZYKYhMwuJ32ukBkxtoQyxe2uhA2poszYfEo2BG/55FXSrFW9y2rt4apSv83jKMIJnMI5eHANdbiHBvjAgMMzvMKbI50X5935WJQWnLznGP7A+fwBLOGNnA==</latexit> 
+
+ 0.005 <latexit sha1_base64="SoUfmDMWPd//ekxd/P4C/0dbO4k=">AAAB7XicbVDLSgMxFL1TX7W+qi7dBIvgxjJTFV0W3bisYB/QDiWTZtrYTDIkGaEM/Qc3LhRx6/+482/MtLPQ1gMhh3Pu5d57gpgzbVz32ymsrK6tbxQ3S1vbO7t75f2DlpaJIrRJJJeqE2BNORO0aZjhtBMriqOA03Ywvs389hNVmknxYCYx9SM8FCxkBBsrtc7cqute9suV7M+AlomXkwrkaPTLX72BJElEhSEca9313Nj4KVaGEU6npV6iaYzJGA9p11KBI6r9dLbtFJ1YZYBCqewTBs3U3x0pjrSeRIGtjLAZ6UUvE//zuokJr/2UiTgxVJD5oDDhyEiUnY4GTFFi+MQSTBSzuyIywgoTYwMq2RC8xZOXSatW9c6rtfuLSv0mj6MIR3AMp+DBFdThDhrQBAKP8Ayv8OZI58V5dz7mpQUn7zmEP3A+fwChiI3a</latexit> 
+
+0<latexit sha1_base64="rsPGDo38dCUrLsAt/ftnosrChUA=">AAAB6HicbVBNS8NAEJ3Ur1q/qh69LBbBU0mqoMeiF48t2FpoQ9lsJ+3azSbsboQS+gu8eFDEqz/Jm//GbZuDtj4YeLw3w8y8IBFcG9f9dgpr6xubW8Xt0s7u3v5B+fCoreNUMWyxWMSqE1CNgktsGW4EdhKFNAoEPgTj25n/8IRK81jem0mCfkSHkoecUWOlptsvV9yqOwdZJV5OKpCj0S9/9QYxSyOUhgmqdddzE+NnVBnOBE5LvVRjQtmYDrFrqaQRaj+bHzolZ1YZkDBWtqQhc/X3REYjrSdRYDsjakZ62ZuJ/3nd1ITXfsZlkhqUbLEoTAUxMZl9TQZcITNiYgllittbCRtRRZmx2ZRsCN7yy6ukXat6F9Va87JSv8njKMIJnMI5eHAFdbiDBrSAAcIzvMKb8+i8OO/Ox6K14OQzx/AHzucPemeMuA==</latexit> 
+
+0.005 <latexit sha1_base64="p8+iRme6g0excBBOWg9i3MpM92o=">AAAB7HicbVBNSwMxEJ3Ur1q/qh69BIvgqexWRY9FLx4ruG2hXUo2zbah2eySZIWy9Dd48aCIV3+QN/+N2XYP2vog5PHeDDPzgkRwbRznG5XW1jc2t8rblZ3dvf2D6uFRW8eposyjsYhVNyCaCS6ZZ7gRrJsoRqJAsE4wucv9zhNTmsfy0UwT5kdkJHnIKTFW8py641wNqrX8z4FXiVuQGhRoDapf/WFM04hJQwXRuuc6ifEzogyngs0q/VSzhNAJGbGepZJETPvZfNkZPrPKEIexsk8aPFd/d2Qk0noaBbYyImasl71c/M/rpSa88TMuk9QwSReDwlRgE+P8cjzkilEjppYQqrjdFdMxUYQam0/FhuAun7xK2o26e1FvPFzWmrdFHGU4gVM4BxeuoQn30AIPKHB4hld4QxK9oHf0sSgtoaLnGP4Aff4AN4eNow==</latexit> 
+
+0.01 <latexit sha1_base64="qwdErDBbtRO3grGovDj15i8QXKs=">AAAB63icbVDLSgMxFL3xWeur6tJNsAiuykwVdFl047KCfUA7lEyaaUOTzJBkhDL0F9y4UMStP+TOvzHTzkJbD4QczrmXe+8JE8GN9bxvtLa+sbm1Xdop7+7tHxxWjo7bJk41ZS0ai1h3Q2KY4Iq1LLeCdRPNiAwF64STu9zvPDFteKwe7TRhgSQjxSNOic0lr+b5g0rVfXPgVeIXpAoFmoPKV38Y01QyZakgxvR8L7FBRrTlVLBZuZ8alhA6ISPWc1QRyUyQzXed4XOnDHEUa/eUxXP1d0dGpDFTGbpKSezYLHu5+J/XS210E2RcJallii4GRanANsb54XjINaNWTB0hVHO3K6Zjogm1Lp6yC8FfPnmVtOs1/7JWf7iqNm6LOEpwCmdwAT5cQwPuoQktoDCGZ3iFNyTRC3pHH4vSNVT0nMAfoM8fwwCNZQ==</latexit> 
+
+0<latexit sha1_base64="rsPGDo38dCUrLsAt/ftnosrChUA=">AAAB6HicbVBNS8NAEJ3Ur1q/qh69LBbBU0mqoMeiF48t2FpoQ9lsJ+3azSbsboQS+gu8eFDEqz/Jm//GbZuDtj4YeLw3w8y8IBFcG9f9dgpr6xubW8Xt0s7u3v5B+fCoreNUMWyxWMSqE1CNgktsGW4EdhKFNAoEPgTj25n/8IRK81jem0mCfkSHkoecUWOlptsvV9yqOwdZJV5OKpCj0S9/9QYxSyOUhgmqdddzE+NnVBnOBE5LvVRjQtmYDrFrqaQRaj+bHzolZ1YZkDBWtqQhc/X3REYjrSdRYDsjakZ62ZuJ/3nd1ITXfsZlkhqUbLEoTAUxMZl9TQZcITNiYgllittbCRtRRZmx2ZRsCN7yy6ukXat6F9Va87JSv8njKMIJnMI5eHAFdbiDBrSAAcIzvMKb8+i8OO/Ox6K14OQzx/AHzucPemeMuA==</latexit> 
+
+50 <latexit sha1_base64="rJu83RzuBy9M+rTI7j0fUYwtmkM=">AAAB6XicbVBNS8NAEJ34WetX1aOXxSJ4KklV9Fj04rGK/YA2lM120y7dbMLuRCih/8CLB0W8+o+8+W/ctjlo64OBx3szzMwLEikMuu63s7K6tr6xWdgqbu/s7u2XDg6bJk414w0Wy1i3A2q4FIo3UKDk7URzGgWSt4LR7dRvPXFtRKwecZxwP6IDJULBKFrp4dLtlcpuxZ2BLBMvJ2XIUe+Vvrr9mKURV8gkNabjuQn6GdUomOSTYjc1PKFsRAe8Y6miETd+Nrt0Qk6t0idhrG0pJDP190RGI2PGUWA7I4pDs+hNxf+8TorhtZ8JlaTIFZsvClNJMCbTt0lfaM5Qji2hTAt7K2FDqilDG07RhuAtvrxMmtWKd16p3l+Uazd5HAU4hhM4Aw+uoAZ3UIcGMAjhGV7hzRk5L8678zFvXXHymSP4A+fzB+/UjPc=</latexit> 
+
+100 <latexit sha1_base64="+XXCPMj9XkYeSWUdUUxOGntcENg=">AAAB6nicbVBNS8NAEJ3Ur1q/qh69LBbBU0mqoMeiF48V7Qe0oWy2k3bpZhN2N0IJ/QlePCji1V/kzX/jts1BWx8MPN6bYWZekAiujet+O4W19Y3NreJ2aWd3b/+gfHjU0nGqGDZZLGLVCahGwSU2DTcCO4lCGgUC28H4dua3n1BpHstHM0nQj+hQ8pAzaqz04Lluv1xxq+4cZJV4OalAjka//NUbxCyNUBomqNZdz02Mn1FlOBM4LfVSjQllYzrErqWSRqj9bH7qlJxZZUDCWNmShszV3xMZjbSeRIHtjKgZ6WVvJv7ndVMTXvsZl0lqULLFojAVxMRk9jcZcIXMiIkllClubyVsRBVlxqZTsiF4yy+vklat6l1Ua/eXlfpNHkcRTuAUzsGDK6jDHTSgCQyG8Ayv8OYI58V5dz4WrQUnnzmGP3A+fwBX1o0t</latexit> 
+
+150 <latexit sha1_base64="kf5sY5Q8WVSYboshFnmbonTP5eo=">AAAB6nicbVBNS8NAEJ34WetX1aOXxSJ4KklV9Fj04rGi/YA2lM120i7dbMLuRiihP8GLB0W8+ou8+W/ctjlo64OBx3szzMwLEsG1cd1vZ2V1bX1js7BV3N7Z3dsvHRw2dZwqhg0Wi1i1A6pRcIkNw43AdqKQRoHAVjC6nfqtJ1Sax/LRjBP0IzqQPOSMGis9eJdur1R2K+4MZJl4OSlDjnqv9NXtxyyNUBomqNYdz02Mn1FlOBM4KXZTjQllIzrAjqWSRqj9bHbqhJxapU/CWNmShszU3xMZjbQeR4HtjKgZ6kVvKv7ndVITXvsZl0lqULL5ojAVxMRk+jfpc4XMiLEllClubyVsSBVlxqZTtCF4iy8vk2a14p1XqvcX5dpNHkcBjuEEzsCDK6jBHdShAQwG8Ayv8OYI58V5dz7mrStOPnMEf+B8/gBfb40y</latexit> 
+
+200 <latexit sha1_base64="WWJt+VIMhxcwQwbGXpUmCi3dmiY=">AAAB6nicbVBNS8NAEJ3Ur1q/qh69LBbBU0mqoMeiF48V7Qe0oWy2m3bpZhN2J0IJ/QlePCji1V/kzX/jts1BWx8MPN6bYWZekEhh0HW/ncLa+sbmVnG7tLO7t39QPjxqmTjVjDdZLGPdCajhUijeRIGSdxLNaRRI3g7GtzO//cS1EbF6xEnC/YgOlQgFo2ilh5rr9ssVt+rOQVaJl5MK5Gj0y1+9QczSiCtkkhrT9dwE/YxqFEzyaamXGp5QNqZD3rVU0YgbP5ufOiVnVhmQMNa2FJK5+nsio5ExkyiwnRHFkVn2ZuJ/XjfF8NrPhEpS5IotFoWpJBiT2d9kIDRnKCeWUKaFvZWwEdWUoU2nZEPwll9eJa1a1buo1u4vK/WbPI4inMApnIMHV1CHO2hAExgM4Rle4c2Rzovz7nwsWgtOPnMMf+B8/gBZXI0u</latexit> 
+
+250 <latexit sha1_base64="v63+yrhWLt2Rf7TeZ8FOxFzBqlg=">AAAB6nicbVBNS8NAEJ34WetX1aOXxSJ4KklV9Fj04rGi/YA2lM120i7dbMLuRiihP8GLB0W8+ou8+W/ctjlo64OBx3szzMwLEsG1cd1vZ2V1bX1js7BV3N7Z3dsvHRw2dZwqhg0Wi1i1A6pRcIkNw43AdqKQRoHAVjC6nfqtJ1Sax/LRjBP0IzqQPOSMGis9VC/dXqnsVtwZyDLxclKGHPVe6avbj1kaoTRMUK07npsYP6PKcCZwUuymGhPKRnSAHUsljVD72ezUCTm1Sp+EsbIlDZmpvycyGmk9jgLbGVEz1IveVPzP66QmvPYzLpPUoGTzRWEqiInJ9G/S5wqZEWNLKFPc3krYkCrKjE2naEPwFl9eJs1qxTuvVO8vyrWbPI4CHMMJnIEHV1CDO6hDAxgM4Ble4c0Rzovz7nzMW1ecfOYI/sD5/AFg9Y0z</latexit> 
+
+300 <latexit sha1_base64="BcZEcR5Sptfk+lpf9c/LAXMryvo=">AAAB6nicbVBNS8NAEJ3Ur1q/qh69LBbBU0laQY9FLx4r2lpoQ9lsJ+3SzSbsboQS+hO8eFDEq7/Im//GbZuDtj4YeLw3w8y8IBFcG9f9dgpr6xubW8Xt0s7u3v5B+fCoreNUMWyxWMSqE1CNgktsGW4EdhKFNAoEPgbjm5n/+IRK81g+mEmCfkSHkoecUWOl+7rr9ssVt+rOQVaJl5MK5Gj2y1+9QczSCKVhgmrd9dzE+BlVhjOB01Iv1ZhQNqZD7FoqaYTaz+anTsmZVQYkjJUtachc/T2R0UjrSRTYzoiakV72ZuJ/Xjc14ZWfcZmkBiVbLApTQUxMZn+TAVfIjJhYQpni9lbCRlRRZmw6JRuCt/zyKmnXql69Wru7qDSu8ziKcAKncA4eXEIDbqEJLWAwhGd4hTdHOC/Ou/OxaC04+cwx/IHz+QNa4o0v</latexit> 
+
+0.04 <latexit sha1_base64="OLYxHlNxkhITyUrOgHRR0x1RERw=">AAAB63icbVDLSgMxFL1TX7W+qi7dBIvgqszUgi6LblxWsA9oh5JJM21okhmSjFCG/oIbF4q49Yfc+TdmprPQ1gMhh3Pu5d57gpgzbVz32yltbG5t75R3K3v7B4dH1eOTro4SRWiHRDxS/QBrypmkHcMMp/1YUSwCTnvB7C7ze09UaRbJRzOPqS/wRLKQEWwyya27zVG1Zr8caJ14BalBgfao+jUcRyQRVBrCsdYDz42Nn2JlGOF0URkmmsaYzPCEDiyVWFDtp/muC3RhlTEKI2WfNChXf3ekWGg9F4GtFNhM9aqXif95g8SEN37KZJwYKslyUJhwZCKUHY7GTFFi+NwSTBSzuyIyxQoTY+Op2BC81ZPXSbdR967qjYdmrXVbxFGGMziHS/DgGlpwD23oAIEpPMMrvDnCeXHenY9lackpek7hD5zPH8eMjWg=</latexit> 
+
+0.02 <latexit sha1_base64="o+jm6nBICCpdwOyYVo6NKaS7Stg=">AAAB63icbVDLSgMxFL3xWeur6tJNsAiuykwVdFl047KCfUA7lEyaaUOTzJBkhDL0F9y4UMStP+TOvzHTzkJbD4QczrmXe+8JE8GN9bxvtLa+sbm1Xdop7+7tHxxWjo7bJk41ZS0ai1h3Q2KY4Iq1LLeCdRPNiAwF64STu9zvPDFteKwe7TRhgSQjxSNOic0lr+bVB5Wq++bAq8QvSBUKNAeVr/4wpqlkylJBjOn5XmKDjGjLqWCzcj81LCF0Qkas56gikpkgm+86w+dOGeIo1u4pi+fq746MSGOmMnSVktixWfZy8T+vl9roJsi4SlLLFF0MilKBbYzzw/GQa0atmDpCqOZuV0zHRBNqXTxlF4K/fPIqaddr/mWt/nBVbdwWcZTgFM7gAny4hgbcQxNaQGEMz/AKb0iiF/SOPhala6joOYE/QJ8/xISNZg==</latexit> 
+
+ 0.02 <latexit sha1_base64="qrLBv51SjSkXymnCC3qmbIN80fs=">AAAB7HicbVBNTwIxEJ3FL8Qv1KOXRmLiRbKLJnokevGIiQsksCHdMgsN3e6m7ZoQwm/w4kFjvPqDvPlvLLAHBV/S9OW9mczMC1PBtXHdb6ewtr6xuVXcLu3s7u0flA+PmjrJFEOfJSJR7ZBqFFyib7gR2E4V0jgU2ApHdzO/9YRK80Q+mnGKQUwHkkecUWMl/8KturVeuWK/Ocgq8XJSgRyNXvmr209YFqM0TFCtO56bmmBCleFM4LTUzTSmlI3oADuWShqjDibzZafkzCp9EiXKPmnIXP3dMaGx1uM4tJUxNUO97M3E/7xOZqKbYMJlmhmUbDEoygQxCZldTvpcITNibAllittdCRtSRZmx+ZRsCN7yyaukWat6l9Xaw1WlfpvHUYQTOIVz8OAa6nAPDfCBAYdneIU3RzovzrvzsSgtOHnPMfyB8/kDLmWNnQ==</latexit> 
+
+ 0.04 <latexit sha1_base64="s2RfaPGivPA+uB2yOOqwMxooDHM=">AAAB7HicbVBNSwMxEJ31s9avqkcvwSJ4sezWgh6LXjxWsB/QLiWbZtvQbHZJZoWy9Dd48aCIV3+QN/+NabsHbX0Q8nhvhpl5QSKFQdf9dtbWNza3tgs7xd29/YPD0tFxy8SpZrzJYhnrTkANl0LxJgqUvJNoTqNA8nYwvpv57SeujYjVI04S7kd0qEQoGEUrNS/dilvrl8r2m4OsEi8nZcjR6Je+eoOYpRFXyCQ1puu5CfoZ1SiY5NNiLzU8oWxMh7xrqaIRN342X3ZKzq0yIGGs7VNI5urvjoxGxkyiwFZGFEdm2ZuJ/3ndFMMbPxMqSZErthgUppJgTGaXk4HQnKGcWEKZFnZXwkZUU4Y2n6INwVs+eZW0qhXvqlJ9qJXrt3kcBTiFM7gAD66hDvfQgCYwEPAMr/DmKOfFeXc+FqVrTt5zAn/gfP4AMW2Nnw==</latexit> 
+
+0<latexit sha1_base64="rsPGDo38dCUrLsAt/ftnosrChUA=">AAAB6HicbVBNS8NAEJ3Ur1q/qh69LBbBU0mqoMeiF48t2FpoQ9lsJ+3azSbsboQS+gu8eFDEqz/Jm//GbZuDtj4YeLw3w8y8IBFcG9f9dgpr6xubW8Xt0s7u3v5B+fCoreNUMWyxWMSqE1CNgktsGW4EdhKFNAoEPgTj25n/8IRK81jem0mCfkSHkoecUWOlptsvV9yqOwdZJV5OKpCj0S9/9QYxSyOUhgmqdddzE+NnVBnOBE5LvVRjQtmYDrFrqaQRaj+bHzolZ1YZkDBWtqQhc/X3REYjrSdRYDsjakZ62ZuJ/3nd1ITXfsZlkhqUbLEoTAUxMZl9TQZcITNiYgllittbCRtRRZmx2ZRsCN7yy6ukXat6F9Va87JSv8njKMIJnMI5eHAFdbiDBrSAAcIzvMKb8+i8OO/Ox6K14OQzx/AHzucPemeMuA==</latexit> 
+
+ 0.04 <latexit sha1_base64="s2RfaPGivPA+uB2yOOqwMxooDHM=">AAAB7HicbVBNSwMxEJ31s9avqkcvwSJ4sezWgh6LXjxWsB/QLiWbZtvQbHZJZoWy9Dd48aCIV3+QN/+NabsHbX0Q8nhvhpl5QSKFQdf9dtbWNza3tgs7xd29/YPD0tFxy8SpZrzJYhnrTkANl0LxJgqUvJNoTqNA8nYwvpv57SeujYjVI04S7kd0qEQoGEUrNS/dilvrl8r2m4OsEi8nZcjR6Je+eoOYpRFXyCQ1puu5CfoZ1SiY5NNiLzU8oWxMh7xrqaIRN342X3ZKzq0yIGGs7VNI5urvjoxGxkyiwFZGFEdm2ZuJ/3ndFMMbPxMqSZErthgUppJgTGaXk4HQnKGcWEKZFnZXwkZUU4Y2n6INwVs+eZW0qhXvqlJ9qJXrt3kcBTiFM7gAD66hDvfQgCYwEPAMr/DmKOfFeXc+FqVrTt5zAn/gfP4AMW2Nnw==</latexit> 
+
+ 0.02 <latexit sha1_base64="qrLBv51SjSkXymnCC3qmbIN80fs=">AAAB7HicbVBNTwIxEJ3FL8Qv1KOXRmLiRbKLJnokevGIiQsksCHdMgsN3e6m7ZoQwm/w4kFjvPqDvPlvLLAHBV/S9OW9mczMC1PBtXHdb6ewtr6xuVXcLu3s7u0flA+PmjrJFEOfJSJR7ZBqFFyib7gR2E4V0jgU2ApHdzO/9YRK80Q+mnGKQUwHkkecUWMl/8KturVeuWK/Ocgq8XJSgRyNXvmr209YFqM0TFCtO56bmmBCleFM4LTUzTSmlI3oADuWShqjDibzZafkzCp9EiXKPmnIXP3dMaGx1uM4tJUxNUO97M3E/7xOZqKbYMJlmhmUbDEoygQxCZldTvpcITNibAllittdCRtSRZmx+ZRsCN7yyaukWat6l9Xaw1WlfpvHUYQTOIVz8OAa6nAPDfCBAYdneIU3RzovzrvzsSgtOHnPMfyB8/kDLmWNnQ==</latexit> 
+
+0<latexit sha1_base64="rsPGDo38dCUrLsAt/ftnosrChUA=">AAAB6HicbVBNS8NAEJ3Ur1q/qh69LBbBU0mqoMeiF48t2FpoQ9lsJ+3azSbsboQS+gu8eFDEqz/Jm//GbZuDtj4YeLw3w8y8IBFcG9f9dgpr6xubW8Xt0s7u3v5B+fCoreNUMWyxWMSqE1CNgktsGW4EdhKFNAoEPgTj25n/8IRK81jem0mCfkSHkoecUWOlptsvV9yqOwdZJV5OKpCj0S9/9QYxSyOUhgmqdddzE+NnVBnOBE5LvVRjQtmYDrFrqaQRaj+bHzolZ1YZkDBWtqQhc/X3REYjrSdRYDsjakZ62ZuJ/3nd1ITXfsZlkhqUbLEoTAUxMZl9TQZcITNiYgllittbCRtRRZmx2ZRsCN7yy6ukXat6F9Va87JSv8njKMIJnMI5eHAFdbiDBrSAAcIzvMKb8+i8OO/Ox6K14OQzx/AHzucPemeMuA==</latexit> 
+
+0.02 <latexit sha1_base64="o+jm6nBICCpdwOyYVo6NKaS7Stg=">AAAB63icbVDLSgMxFL3xWeur6tJNsAiuykwVdFl047KCfUA7lEyaaUOTzJBkhDL0F9y4UMStP+TOvzHTzkJbD4QczrmXe+8JE8GN9bxvtLa+sbm1Xdop7+7tHxxWjo7bJk41ZS0ai1h3Q2KY4Iq1LLeCdRPNiAwF64STu9zvPDFteKwe7TRhgSQjxSNOic0lr+bVB5Wq++bAq8QvSBUKNAeVr/4wpqlkylJBjOn5XmKDjGjLqWCzcj81LCF0Qkas56gikpkgm+86w+dOGeIo1u4pi+fq746MSGOmMnSVktixWfZy8T+vl9roJsi4SlLLFF0MilKBbYzzw/GQa0atmDpCqOZuV0zHRBNqXTxlF4K/fPIqaddr/mWt/nBVbdwWcZTgFM7gAny4hgbcQxNaQGEMz/AKb0iiF/SOPhala6joOYE/QJ8/xISNZg==</latexit> 
+
+0.04 <latexit sha1_base64="OLYxHlNxkhITyUrOgHRR0x1RERw=">AAAB63icbVDLSgMxFL1TX7W+qi7dBIvgqszUgi6LblxWsA9oh5JJM21okhmSjFCG/oIbF4q49Yfc+TdmprPQ1gMhh3Pu5d57gpgzbVz32yltbG5t75R3K3v7B4dH1eOTro4SRWiHRDxS/QBrypmkHcMMp/1YUSwCTnvB7C7ze09UaRbJRzOPqS/wRLKQEWwyya27zVG1Zr8caJ14BalBgfao+jUcRyQRVBrCsdYDz42Nn2JlGOF0URkmmsaYzPCEDiyVWFDtp/muC3RhlTEKI2WfNChXf3ekWGg9F4GtFNhM9aqXif95g8SEN37KZJwYKslyUJhwZCKUHY7GTFFi+NwSTBSzuyIyxQoTY+Op2BC81ZPXSbdR967qjYdmrXVbxFGGMziHS/DgGlpwD23oAIEpPMMrvDnCeXHenY9lackpek7hD5zPH8eMjWg=</latexit> 
+
+<latexit sha1_base64="DiusxSKMaJhsqsZ1pWJnz38GQ/c=">AAAB8HicbVDLSgMxFL3js9ZX1aWbYBFclZki6rLoxmUV+5B2KJn0ThuayQxJRihDv8KNC0Xc+jnu/BvTdhbaeiBwOOdecs8JEsG1cd1vZ2V1bX1js7BV3N7Z3dsvHRw2dZwqhg0Wi1i1A6pRcIkNw43AdqKQRoHAVjC6mfqtJ1Sax/LBjBP0IzqQPOSMGis93mOICiXDXqnsVtwZyDLxclKGHPVe6avbj1kaoTRMUK07npsYP6PKcCZwUuymGhPKRnSAHUsljVD72ezgCTm1Sp+EsbJPGjJTf29kNNJ6HAV2MqJmqBe9qfif10lNeOVnXCapsanmH4WpICYm0/SkzxUyI8aWUKa4vZWwIVWUGdtR0ZbgLUZeJs1qxbuonN9Vy7XrvI4CHMMJnIEHl1CDW6hDAxhE8Ayv8OYo58V5dz7moytOvnMEf+B8/gDM+5Bq</latexit> 
+
+Reference 
+
+> <latexit  sha1_base64="tecjUIKnx5bBscWSdUawR6/hjHo=">AAAB8XicbZBNS8NAEIYn9avWr6pHL8EieCpJEfVY9OKxgv3ANpTNZtIu3WzC7kYoof/CiwdFvPpvvPlv3LQ5aOsLCw/vzLAzr59wprTjfFultfWNza3ydmVnd2//oHp41FFxKim2acxj2fOJQs4EtjXTHHuJRBL5HLv+5Davd59QKhaLBz1N0IvISLCQUaKN9diSGDCa47Bac+rOXPYquAXUoFBrWP0aBDFNIxSacqJU33US7WVEakY5ziqDVGFC6ISMsG9QkAiVl803ntlnxgnsMJbmCW3P3d8TGYmUmka+6YyIHqvlWm7+V+unOrz2MiaSVKOgi4/ClNs6tvPz7YBJpJpPDRAqmdnVpmMiCdUmpIoJwV0+eRU6jbp7Wb+4b9SaN0UcZTiBUzgHF66gCXfQgjZQEPAMr/BmKevFerc+Fq0lq5g5hj+yPn8AutGQ9g==</latexit>
+> Prediction
+> <latexit  sha1_base64="7rNvzca/bjc0Txg/jhDitfA78/M=">AAAB+3icbVDLTgIxFL2DL8QX4tJNIzFxRWaIQZfER+ISE3kkMCGd0oGGTjtpO0Yy4VfcuNAYt/6IO//GArNQ8KxOzrk399wTxJxp47rfTm5tfWNzK79d2Nnd2z8oHpZaWiaK0CaRXKpOgDXlTNCmYYbTTqwojgJO28H4eua3H6nSTIoHM4mpH+GhYCEj2FipXyzdKiUVurGXFAuShVh2K+4caJV4GSlDhka/+NUbSJJEVBjCsdZdz42Nn2JlGOF0WuglmsaYjPGQdi0VOKLaT+fZp+jUKgMU2gyhFAbN1d8bKY60nkSBnYywGellbyb+53UTE176KRNxYqggi0NhwpGRaFYEGjBFieETSzBRzGZFZIQVJsbWVbAleMsvr5JWteLVKuf31XL9KqsjD8dwAmfgwQXU4Q4a0AQCT/AMr/DmTJ0X5935WIzmnGznCP7A+fwBNcaUkA==</latexit>
+> Error Distribution
+
+FIG. 10. (a) The ML predicted forces versus the exact solu-tion from the NEGF calculation for the s-d model with ex-change coupling J = 3 .8tnn . (b) Normalized distribution of the prediction error of the perpendicular components of the forces. 
+
+the dynamical evolution, leading to a substantial compu-tational burden. Consequently, only relatively small sys-tem sizes can be simulated, despite extensive paralleliza-tion efforts. As discussed above, the ML force-field ap-proach provides a powerful strategy for overcoming these limitations. By replacing the repeated, expensive Green’s function calculations with fast ML inference, one can dra-matically reduce the cost of multi-scale NEGF-LLG sim-ulations and enable large-scale modeling of nonequilib-rium itinerant magnets. To implement the generalized BP framework of Fig. 8, we construct a six-layer neural network trained di-rectly on the electronic exchange fields obtained from the NEGF calculations [34]. The training data consist of 3200 snapshots of nonequilibrium electronic states, each providing approximately 600 force components derived from the generalized exchange-field expression in Eq. (21). In contrast to the standard BP ap-proach—where both forces and total energies contribute to the training loss—we employ a force-only loss function. This choice reflects the fact that a well-defined total en-ergy functional does not exist for open, voltage-driven systems treated within the NEGF formalism. The per-formance of the trained model is illustrated in Fig. 10(a), which compares the componentwise torques Si × Hi pre-dicted by the neural network with the exact NEGF re-sults. The agreement is excellent, with a mean-squared error of 8 .97 ×10 −6. The inset of Fig. 10(b) shows the nor-malized distribution of prediction errors obtained from the validation dataset, exhibiting a narrow spread with a standard deviation of σ = 0 .0014. We next incorporate the NN-based exchange-field model into the LLG dynamics to simulate voltage-driven domain-wall propagation in the square-lattice s-d system. Figure 11 shows snapshots of the bond variable bi, which characterizes nearest-neighbor spin correlations, for both NEGF-LLG and ML-LLG simulations performed on a 30 × 24 lattice. Both simulations are initialized from the same configuration containing a well-formed FM-AFM domain wall. A small thermal noise is added to per-turb the unstable N’eel background in the driven regime, and the stochastic LLG evolution employs a Langevin 13 
+
+FIG. 11. Domain wall propagation in a s-d system driven by an external voltage eV = 3 .2tnn . Comparison between (a) NEGF-LLG simulations and (b) ML-LLG simulations. The lattice size is 30 ×24. The color bar indicates the local nearest-neighbor spin correlation bij = Si · Sj . Blue (red) area corre-sponds to AFM (FM) domains. The NEGF-LLG simulation was carried out at a low temperature of kB T = 0 .01 tnn , while the ML simulation was performed without Langevin noise. 
+
+thermostat corresponding to a low temperature kB T =0.01 tnn [135]. As discussed above, the kinetics of the nonequilibrium insulator-to-metal transition (IMT) is dominated by the motion of these FM-AFM domain walls. Accordingly, our ML model is trained to accurately predict forces in the interfacial region where the two magnetic phases coexist. In the voltage-driven IMT protocol, the system begins in an insulating antiferromagnetic state with an energy gap ∆ Eg = 2 J. An external bias V is applied across the two electrodes attached to the left and right boundaries of the sample. When the chemical potential of the right electrode is lowered into resonance with the in-gap edge states, electrons begin to drain from the system into the reservoir, destabilizing the AFM configuration and initi-ating ferromagnetic ordering at the boundary [134]. This process nucleates FM domains along the sample’s edge, producing a sharp interface separating two regions of dis-tinct electron density. The insulating AFM background remains half-filled with one electron per site, whereas the emerging FM regions exhibit a significantly reduced local electron density and tend to be metallic. As the applied voltage continues to drive electron extraction, the FM domains expand into the AFM bulk, leading to a pro-gressive growth of the metallic region and ultimately to the voltage-induced transition into a low-resistance state. Fig. 12(a) shows the time evolution of the domain-0 100 200 300 400 500 600 
+
+10 
+
+12 
+
+14 
+
+16 
+
+18 
+
+20 
+
+22 
+
+<latexit sha1_base64="Nrm/INbjutFXWkQfeWxU1JvlTt4=">AAAB6nicbVDLSgNBEOyNrxhfUY9eBoMQL2E3iHoMevEY0TwgWULvZDYZMju7zMwKIeQTvHhQxKtf5M2/cZLsQRMLGoqqbrq7gkRwbVz328mtrW9sbuW3Czu7e/sHxcOjpo5TRVmDxiJW7QA1E1yyhuFGsHaiGEaBYK1gdDvzW09MaR7LRzNOmB/hQPKQUzRWeijjea9YcivuHGSVeBkpQYZ6r/jV7cc0jZg0VKDWHc9NjD9BZTgVbFroppolSEc4YB1LJUZM+5P5qVNyZpU+CWNlSxoyV39PTDDSehwFtjNCM9TL3kz8z+ukJrz2J1wmqWGSLhaFqSAmJrO/SZ8rRo0YW4JUcXsroUNUSI1Np2BD8JZfXiXNasW7rFzcV0u1myyOPJzAKZTBgyuowR3UoQEUBvAMr/DmCOfFeXc+Fq05J5s5hj9wPn8AivmNUQ==</latexit> 
+
+(a) 
+
+<latexit sha1_base64="04jmFCh2+dGXSQdgpCBbohShRNo=">AAAB6nicbVDLSgNBEOyNrxhfUY9eBoMQL2E3iHoMevEY0TwgWcLsZDYZMju7zPQKIeQTvHhQxKtf5M2/cZLsQRMLGoqqbrq7gkQKg6777eTW1jc2t/LbhZ3dvf2D4uFR08SpZrzBYhnrdkANl0LxBgqUvJ1oTqNA8lYwup35rSeujYjVI44T7kd0oEQoGEUrPZSD816x5FbcOcgq8TJSggz1XvGr249ZGnGFTFJjOp6boD+hGgWTfFropoYnlI3ogHcsVTTixp/MT52SM6v0SRhrWwrJXP09MaGRMeMosJ0RxaFZ9mbif14nxfDanwiVpMgVWywKU0kwJrO/SV9ozlCOLaFMC3srYUOqKUObTsGG4C2/vEqa1Yp3Wbm4r5ZqN1kceTiBUyiDB1dQgzuoQwMYDOAZXuHNkc6L8+58LFpzTjZzDH/gfP4AjH6NUg==</latexit> 
+
+(b) 
+
+t<latexit sha1_base64="btWuKJH9/rrCxCKL5tGKBdwWU5A=">AAAB6HicbVBNS8NAEJ3Ur1q/qh69LBbBU0mqoMeiF48t2FpoQ9lsN+3azSbsToQS+gu8eFDEqz/Jm//GbZuDtj4YeLw3w8y8IJHCoOt+O4W19Y3NreJ2aWd3b/+gfHjUNnGqGW+xWMa6E1DDpVC8hQIl7ySa0yiQ/CEY3878hyeujYjVPU4S7kd0qEQoGEUrNbFfrrhVdw6ySrycVCBHo1/+6g1ilkZcIZPUmK7nJuhnVKNgkk9LvdTwhLIxHfKupYpG3PjZ/NApObPKgISxtqWQzNXfExmNjJlEge2MKI7MsjcT//O6KYbXfiZUkiJXbLEoTCXBmMy+JgOhOUM5sYQyLeythI2opgxtNiUbgrf88ipp16reRbXWvKzUb/I4inACp3AOHlxBHe6gAS1gwOEZXuHNeXRenHfnY9FacPKZY/gD5/MH4XeM/A==</latexit> 
+
+> domain wall position <latexit  sha1_base64="FbsOYlOp3+3XMgiqndvKFqL+/Ys=">AAAB/XicbVDLSgNBEJyNrxhf8XHzMhgET2E3HvQY9OIxgnlAsoTe2dlkyOzMMjOrxCX4K148KOLV//Dm3zhJ9qCJBQ1FVTfdXUHCmTau++0UVlbX1jeKm6Wt7Z3dvfL+QUvLVBHaJJJL1QlAU84EbRpmOO0kikIccNoORtdTv31PlWZS3JlxQv0YBoJFjICxUr98FMoYmMAPwDlOpGZzueJW3RnwMvFyUkE5Gv3yVy+UJI2pMISD1l3PTYyfgTKMcDop9VJNEyAjGNCupQJiqv1sdv0En1olxJFUtoTBM/X3RAax1uM4sJ0xmKFe9Kbif143NdGlnzGRpIYKMl8UpRwbiadR4JApSgwfWwJE2c8JJkNQQIwNrGRD8BZfXiatWtU7r9Zua5X6VR5HER2jE3SGPHSB6ugGNVATEfSIntErenOenBfn3fmYtxacfOYQ/YHz+QOcrZVS</latexit>
+
+NEGF simulation <latexit sha1_base64="R8bPSMDpqrWgqxnxx9VmnQxac08=">AAAB+HicbVDJSgNBEK2JW4xLoh69NAbBU5iJBz0GxeUkEcwCyRB6Oj1Jk56eoRchDvkSLx4U8eqnePNv7CRz0MQHBY/3qqiqFyScKe26305uZXVtfSO/Wdja3tktlvb2myo2ktAGiXks2wFWlDNBG5ppTtuJpDgKOG0Fo8up33qkUrFYPOhxQv0IDwQLGcHaSr1S8e7q5hopFhmeKWW34s6AlomXkTJkqPdKX91+TExEhSYcK9Xx3ET7KZaaEU4nha5RNMFkhAe0Y6nAEVV+Ojt8go6t0kdhLG0JjWbq74kUR0qNo8B2RlgP1aI3Ff/zOkaH537KRGI0FWS+KDQc6RhNU0B9JinRfGwJJpLZWxEZYomJtlkVbAje4svLpFmteKeV6n21XLvI4sjDIRzBCXhwBjW4hTo0gICBZ3iFN+fJeXHenY95a87JZg7gD5zPHy7Hksg=</latexit> 
+
+ML simulation <latexit sha1_base64="i9xEpFpcHVdHxccUQSs1FjR+Ntg=">AAAB9HicbVDLSgMxFL1TX7W+qi7dBIvgqszUhS6LblwoVLAPaIeSSTNtaJIZk0yhDP0ONy4UcevHuPNvTKez0NYDF07OuZfce4KYM21c99sprK1vbG4Vt0s7u3v7B+XDo5aOEkVok0Q8Up0Aa8qZpE3DDKedWFEsAk7bwfhm7rcnVGkWyUczjakv8FCykBFsrOTf3yHNRMKzV79ccatuBrRKvJxUIEejX/7qDSKSCCoN4VjrrufGxk+xMoxwOiv1Ek1jTMZ4SLuWSiyo9tNs6Rk6s8oAhZGyJQ3K1N8TKRZaT0VgOwU2I73szcX/vG5iwis/ZTJODJVk8VGYcGQiNE8ADZiixPCpJZgoZndFZIQVJsbmVLIheMsnr5JWrepdVGsPtUr9Oo+jCCdwCufgwSXU4RYa0AQCT/AMr/DmTJwX5935WLQWnHzmGP7A+fwBmSOR/A==</latexit> 
+
+12 <latexit sha1_base64="Ig62fJWNTIDNEDscgFX4zyJq5+o=">AAAB6XicbVBNS8NAEJ3Ur1q/qh69LBbBU0mqoMeiF49V7Ae0oWy2m3bpZhN2J0IJ/QdePCji1X/kzX/jts1BWx8MPN6bYWZekEhh0HW/ncLa+sbmVnG7tLO7t39QPjxqmTjVjDdZLGPdCajhUijeRIGSdxLNaRRI3g7GtzO//cS1EbF6xEnC/YgOlQgFo2ilB6/WL1fcqjsHWSVeTiqQo9Evf/UGMUsjrpBJakzXcxP0M6pRMMmnpV5qeELZmA5511JFI278bH7plJxZZUDCWNtSSObq74mMRsZMosB2RhRHZtmbif953RTDaz8TKkmRK7ZYFKaSYExmb5OB0JyhnFhCmRb2VsJGVFOGNpySDcFbfnmVtGpV76Jau7+s1G/yOIpwAqdwDh5cQR3uoAFNYBDCM7zCmzN2Xpx352PRWnDymWP4A+fzB+zIjPU=</latexit> 
+
+14 <latexit sha1_base64="vqJKdwpws9VV0rW7enfQ4WOLySk=">AAAB6XicbVBNS8NAEJ34WetX1aOXxSJ4Kkkt6LHoxWMV+wFtKJvtpF262YTdjVBC/4EXD4p49R9589+4bXPQ1gcDj/dmmJkXJIJr47rfztr6xubWdmGnuLu3f3BYOjpu6ThVDJssFrHqBFSj4BKbhhuBnUQhjQKB7WB8O/PbT6g0j+WjmSToR3QoecgZNVZ68Gr9UtmtuHOQVeLlpAw5Gv3SV28QszRCaZigWnc9NzF+RpXhTOC02Es1JpSN6RC7lkoaofaz+aVTcm6VAQljZUsaMld/T2Q00noSBbYzomakl72Z+J/XTU147WdcJqlByRaLwlQQE5PZ22TAFTIjJpZQpri9lbARVZQZG07RhuAtv7xKWtWKd1mp3tfK9Zs8jgKcwhlcgAdXUIc7aEATGITwDK/w5oydF+fd+Vi0rjn5zAn8gfP5A+/QjPc=</latexit> 
+
+16 <latexit sha1_base64="qkt+7STpzwvsBXQU/O0v4TAKHu8=">AAAB6XicbVBNS8NAEJ34WetX1aOXxSJ4KkkV9Vj04rGK/YA2lM120y7dbMLuRCih/8CLB0W8+o+8+W/ctjlo64OBx3szzMwLEikMuu63s7K6tr6xWdgqbu/s7u2XDg6bJk414w0Wy1i3A2q4FIo3UKDk7URzGgWSt4LR7dRvPXFtRKwecZxwP6IDJULBKFrpwbvslcpuxZ2BLBMvJ2XIUe+Vvrr9mKURV8gkNabjuQn6GdUomOSTYjc1PKFsRAe8Y6miETd+Nrt0Qk6t0idhrG0pJDP190RGI2PGUWA7I4pDs+hNxf+8TorhtZ8JlaTIFZsvClNJMCbTt0lfaM5Qji2hTAt7K2FDqilDG07RhuAtvrxMmtWKd16p3l+Uazd5HAU4hhM4Aw+uoAZ3UIcGMAjhGV7hzRk5L8678zFvXXHymSP4A+fzB/LYjPk=</latexit> 
+
+18 <latexit sha1_base64="Be8nOjziTighU7nFVLqBZbKJxE4=">AAAB6XicbVBNS8NAEJ34WetX1aOXxSJ4KkkV7LHoxWMV+wFtKJvtpl262YTdiVBC/4EXD4p49R9589+4bXPQ1gcDj/dmmJkXJFIYdN1vZ219Y3Nru7BT3N3bPzgsHR23TJxqxpsslrHuBNRwKRRvokDJO4nmNAokbwfj25nffuLaiFg94iThfkSHSoSCUbTSg1frl8puxZ2DrBIvJ2XI0eiXvnqDmKURV8gkNabruQn6GdUomOTTYi81PKFsTIe8a6miETd+Nr90Ss6tMiBhrG0pJHP190RGI2MmUWA7I4ojs+zNxP+8bophzc+ESlLkii0WhakkGJPZ22QgNGcoJ5ZQpoW9lbAR1ZShDadoQ/CWX14lrWrFu6xU76/K9Zs8jgKcwhlcgAfXUIc7aEATGITwDK/w5oydF+fd+Vi0rjn5zAn8gfP5A/XgjPs=</latexit> 
+
+10 <latexit sha1_base64="9+NBhEQslqWivqaDXXJDMvQILFk=">AAAB6XicbVBNS8NAEJ3Ur1q/qh69LBbBU0mqoMeiF49V7Ae0oWy2k3bpZhN2N0IJ/QdePCji1X/kzX/jts1BWx8MPN6bYWZekAiujet+O4W19Y3NreJ2aWd3b/+gfHjU0nGqGDZZLGLVCahGwSU2DTcCO4lCGgUC28H4dua3n1BpHstHM0nQj+hQ8pAzaqz04Ln9csWtunOQVeLlpAI5Gv3yV28QszRCaZigWnc9NzF+RpXhTOC01Es1JpSN6RC7lkoaofaz+aVTcmaVAQljZUsaMld/T2Q00noSBbYzomakl72Z+J/XTU147WdcJqlByRaLwlQQE5PZ22TAFTIjJpZQpri9lbARVZQZG07JhuAtv7xKWrWqd1Gt3V9W6jd5HEU4gVM4Bw+uoA530IAmMAjhGV7hzRk7L86787FoLTj5zDH8gfP5A+nAjPM=</latexit> 
+
+<latexit sha1_base64="7LLke21eBGd3U/++Douw7WnsCvY=">AAAB6XicbVBNS8NAEJ3Ur1q/qh69LBbBU0lKUY9FLx6r2FpoQ9lsN+3SzSbsToQS+g+8eFDEq//Im//GbZuDtj4YeLw3w8y8IJHCoOt+O4W19Y3NreJ2aWd3b/+gfHjUNnGqGW+xWMa6E1DDpVC8hQIl7ySa0yiQ/DEY38z8xyeujYjVA04S7kd0qEQoGEUr3dfcfrniVt05yCrxclKBHM1++as3iFkacYVMUmO6npugn1GNgkk+LfVSwxPKxnTIu5YqGnHjZ/NLp+TMKgMSxtqWQjJXf09kNDJmEgW2M6I4MsveTPzP66YYXvmZUEmKXLHFojCVBGMye5sMhOYM5cQSyrSwtxI2opoytOGUbAje8surpF2rehfV+l290rjO4yjCCZzCOXhwCQ24hSa0gEEIz/AKb87YeXHenY9Fa8HJZ47hD5zPH+zljPk=</latexit> 
+
+20 
+
+0<latexit sha1_base64="rsPGDo38dCUrLsAt/ftnosrChUA=">AAAB6HicbVBNS8NAEJ3Ur1q/qh69LBbBU0mqoMeiF48t2FpoQ9lsJ+3azSbsboQS+gu8eFDEqz/Jm//GbZuDtj4YeLw3w8y8IBFcG9f9dgpr6xubW8Xt0s7u3v5B+fCoreNUMWyxWMSqE1CNgktsGW4EdhKFNAoEPgTj25n/8IRK81jem0mCfkSHkoecUWOlptsvV9yqOwdZJV5OKpCj0S9/9QYxSyOUhgmqdddzE+NnVBnOBE5LvVRjQtmYDrFrqaQRaj+bHzolZ1YZkDBWtqQhc/X3REYjrSdRYDsjakZ62ZuJ/3nd1ITXfsZlkhqUbLEoTAUxMZl9TQZcITNiYgllittbCRtRRZmx2ZRsCN7yy6ukXat6F9Va87JSv8njKMIJnMI5eHAFdbiDBrSAAcIzvMKb8+i8OO/Ox6K14OQzx/AHzucPemeMuA==</latexit> 
+
+200 <latexit sha1_base64="WWJt+VIMhxcwQwbGXpUmCi3dmiY=">AAAB6nicbVBNS8NAEJ3Ur1q/qh69LBbBU0mqoMeiF48V7Qe0oWy2m3bpZhN2J0IJ/QlePCji1V/kzX/jts1BWx8MPN6bYWZekEhh0HW/ncLa+sbmVnG7tLO7t39QPjxqmTjVjDdZLGPdCajhUijeRIGSdxLNaRRI3g7GtzO//cS1EbF6xEnC/YgOlQgFo2ilh5rr9ssVt+rOQVaJl5MK5Gj0y1+9QczSiCtkkhrT9dwE/YxqFEzyaamXGp5QNqZD3rVU0YgbP5ufOiVnVhmQMNa2FJK5+nsio5ExkyiwnRHFkVn2ZuJ/XjfF8NrPhEpS5IotFoWpJBiT2d9kIDRnKCeWUKaFvZWwEdWUoU2nZEPwll9eJa1a1buo1u4vK/WbPI4inMApnIMHV1CHO2hAExgM4Rle4c2Rzovz7nwsWgtOPnMMf+B8/gBZXI0u</latexit> 
+
+<latexit sha1_base64="W5aToOHWDQ1p7GnoOcn+4BUcW5U=">AAAB6nicbVBNS8NAEJ3Ur1q/qh69LBbBU0m0qMeiF48V7Qe0oWy2m3bpZhN2J0IJ/QlePCji1V/kzX/jts1Bqw8GHu/NMDMvSKQw6LpfTmFldW19o7hZ2tre2d0r7x+0TJxqxpsslrHuBNRwKRRvokDJO4nmNAokbwfjm5nffuTaiFg94CThfkSHSoSCUbTS/bnr9ssVt+rOQf4SLycVyNHolz97g5ilEVfIJDWm67kJ+hnVKJjk01IvNTyhbEyHvGupohE3fjY/dUpOrDIgYaxtKSRz9edERiNjJlFgOyOKI7PszcT/vG6K4ZWfCZWkyBVbLApTSTAms7/JQGjOUE4soUwLeythI6opQ5tOyYbgLb/8l7TOqt5FtXZXq9Sv8ziKcATHcAoeXEIdbqEBTWAwhCd4gVdHOs/Om/O+aC04+cwh/ILz8Q1cgo00</latexit> 
+
+300 100 <latexit sha1_base64="+XXCPMj9XkYeSWUdUUxOGntcENg=">AAAB6nicbVBNS8NAEJ3Ur1q/qh69LBbBU0mqoMeiF48V7Qe0oWy2k3bpZhN2N0IJ/QlePCji1V/kzX/jts1BWx8MPN6bYWZekAiujet+O4W19Y3NreJ2aWd3b/+gfHjU0nGqGDZZLGLVCahGwSU2DTcCO4lCGgUC28H4dua3n1BpHstHM0nQj+hQ8pAzaqz04Lluv1xxq+4cZJV4OalAjka//NUbxCyNUBomqNZdz02Mn1FlOBM4LfVSjQllYzrErqWSRqj9bH7qlJxZZUDCWNmShszV3xMZjbSeRIHtjKgZ6WVvJv7ndVMTXvsZl0lqULLFojAVxMRk9jcZcIXMiIkllClubyVsRBVlxqZTsiF4yy+vklat6l1Ua/eXlfpNHkcRTuAUzsGDK6jDHTSgCQyG8Ayv8OYI58V5dz4WrQUnnzmGP3A+fwBX1o0t</latexit> 
+
+0 2 4 6 8
+
+0.00 
+
+0.05 
+
+0.10 
+
+0.15 
+
+0.20 
+
+0.25 
+
+0.30 
+
+0.35 
+
+<latexit sha1_base64="SvEw9j+G6/nNSZebhlvQwRvlSiI=">AAAB6HicbVBNS8NAEJ3Ur1q/qh69LBbBU0mkqMeiF48t2FpoQ9lsJ+3azSbsboQS+gu8eFDEqz/Jm//GbZuDtj4YeLw3w8y8IBFcG9f9dgpr6xubW8Xt0s7u3v5B+fCoreNUMWyxWMSqE1CNgktsGW4EdhKFNAoEPgTj25n/8IRK81jem0mCfkSHkoecUWOlptsvV9yqOwdZJV5OKpCj0S9/9QYxSyOUhgmqdddzE+NnVBnOBE5LvVRjQtmYDrFrqaQRaj+bHzolZ1YZkDBWtqQhc/X3REYjrSdRYDsjakZ62ZuJ/3nd1ITXfsZlkhqUbLEoTAUxMZl9TQZcITNiYgllittbCRtRRZmx2ZRsCN7yy6ukfVH1Lqu1Zq1Sv8njKMIJnMI5eHAFdbiDBrSAAcIzvMKb8+i8OO/Ox6K14OQzx/AHzucPfAeMvQ==</latexit> 
+
+0 <latexit sha1_base64="SvEw9j+G6/nNSZebhlvQwRvlSiI=">AAAB6HicbVBNS8NAEJ3Ur1q/qh69LBbBU0mkqMeiF48t2FpoQ9lsJ+3azSbsboQS+gu8eFDEqz/Jm//GbZuDtj4YeLw3w8y8IBFcG9f9dgpr6xubW8Xt0s7u3v5B+fCoreNUMWyxWMSqE1CNgktsGW4EdhKFNAoEPgTj25n/8IRK81jem0mCfkSHkoecUWOlptsvV9yqOwdZJV5OKpCj0S9/9QYxSyOUhgmqdddzE+NnVBnOBE5LvVRjQtmYDrFrqaQRaj+bHzolZ1YZkDBWtqQhc/X3REYjrSdRYDsjakZ62ZuJ/3nd1ITXfsZlkhqUbLEoTAUxMZl9TQZcITNiYgllittbCRtRRZmx2ZRsCN7yy6ukfVH1Lqu1Zq1Sv8njKMIJnMI5eHAFdbiDBrSAAcIzvMKb8+i8OO/Ox6K14OQzx/AHzucPfAeMvQ==</latexit> 
+
+0 <latexit sha1_base64="YMsxORc1qROyZt/Sshecb25Lu40=">AAAB6HicbVDLTgJBEOzFF+IL9ehlIjHxRHYJUY9ELx4hkUcCGzI79MLI7OxmZtaEEL7AiweN8eonefNvHGAPClbSSaWqO91dQSK4Nq777eQ2Nre2d/K7hb39g8Oj4vFJS8epYthksYhVJ6AaBZfYNNwI7CQKaRQIbAfju7nffkKleSwfzCRBP6JDyUPOqLFSo9IvltyyuwBZJ15GSpCh3i9+9QYxSyOUhgmqdddzE+NPqTKcCZwVeqnGhLIxHWLXUkkj1P50ceiMXFhlQMJY2ZKGLNTfE1MaaT2JAtsZUTPSq95c/M/rpia88adcJqlByZaLwlQQE5P512TAFTIjJpZQpri9lbARVZQZm03BhuCtvrxOWpWyd1WuNqql2m0WRx7O4BwuwYNrqME91KEJDBCe4RXenEfnxXl3PpatOSebOYU/cD5/AH8PjL8=</latexit> 
+
+2 <latexit sha1_base64="y+WDoqttszdexELZg6EJPDYoWM8=">AAAB5HicbVBNS8NAEJ3Urxq/qlcvi0XwVBIp6rHoxWMF+wFtKJvtpF272YTdjVBCf4EXD4pXf5M3/43bNgdtfTDweG+GmXlhKrg2nvftlDY2t7Z3yrvu3v7B4VHFPW7rJFMMWywRieqGVKPgEluGG4HdVCGNQ4GdcHI39zvPqDRP5KOZphjEdCR5xBk1VnqoDypVr+YtQNaJX5AqFGgOKl/9YcKyGKVhgmrd873UBDlVhjOBM7efaUwpm9AR9iyVNEYd5ItDZ+TcKkMSJcqWNGSh/p7Iaaz1NA5tZ0zNWK96c/E/r5eZ6CbIuUwzg5ItF0WZICYh86/JkCtkRkwtoUxxeythY6ooMzYb14bgr768TtqXNf+qVq82boswynAKZ3ABPlxDA+6hCS1ggPACb/DuPDmvzseyseQUEyfwB87nDxedi5c=</latexit> 
+
+4 <latexit sha1_base64="Zdb79L+zknig4R9axIVCooBH2pQ=">AAAB6HicbVDLTgJBEOzFF+IL9ehlIjHxRHYNQY9ELx4hkUcCGzI79MLI7OxmZtaEEL7AiweN8eonefNvHGAPClbSSaWqO91dQSK4Nq777eQ2Nre2d/K7hb39g8Oj4vFJS8epYthksYhVJ6AaBZfYNNwI7CQKaRQIbAfju7nffkKleSwfzCRBP6JDyUPOqLFSo9ovltyyuwBZJ15GSpCh3i9+9QYxSyOUhgmqdddzE+NPqTKcCZwVeqnGhLIxHWLXUkkj1P50ceiMXFhlQMJY2ZKGLNTfE1MaaT2JAtsZUTPSq95c/M/rpia88adcJqlByZaLwlQQE5P512TAFTIjJpZQpri9lbARVZQZm03BhuCtvrxOWldlr1quNCql2m0WRx7O4BwuwYNrqME91KEJDBCe4RXenEfnxXl3PpatOSebOYU/cD5/AIUfjMM=</latexit> 
+
+6 <latexit sha1_base64="qjx5Wi/1Ezam6+aUF3Y4Q+9B0Xg=">AAAB6HicbVDLTgJBEOzFF+IL9ehlIjHxRHYNUY5ELx4hkUcCGzI79MLI7OxmZtaEEL7AiweN8eonefNvHGAPClbSSaWqO91dQSK4Nq777eQ2Nre2d/K7hb39g8Oj4vFJS8epYthksYhVJ6AaBZfYNNwI7CQKaRQIbAfju7nffkKleSwfzCRBP6JDyUPOqLFSo9ovltyyuwBZJ15GSpCh3i9+9QYxSyOUhgmqdddzE+NPqTKcCZwVeqnGhLIxHWLXUkkj1P50ceiMXFhlQMJY2ZKGLNTfE1MaaT2JAtsZUTPSq95c/M/rpias+lMuk9SgZMtFYSqIicn8azLgCpkRE0soU9zeStiIKsqMzaZgQ/BWX14nrauyd12uNCql2m0WRx7O4BwuwYMbqME91KEJDBCe4RXenEfnxXl3PpatOSebOYU/cD5/AIgnjMU=</latexit> 
+
+8
+
+<latexit sha1_base64="14KXdd/pIGYqEzJcuUBzzmh2Pb4=">AAAB6nicbVBNS8NAEJ3Ur1q/qh69LBbBU0ikqMeiF48V7Qe0oWy2m3bpZhN2J0Ip/QlePCji1V/kzX/jts1BWx8MPN6bYWZemEph0PO+ncLa+sbmVnG7tLO7t39QPjxqmiTTjDdYIhPdDqnhUijeQIGSt1PNaRxK3gpHtzO/9cS1EYl6xHHKg5gOlIgEo2ilB8/1e+WK53pzkFXi56QCOeq98le3n7As5gqZpMZ0fC/FYEI1Cib5tNTNDE8pG9EB71iqaMxNMJmfOiVnVumTKNG2FJK5+ntiQmNjxnFoO2OKQ7PszcT/vE6G0XUwESrNkCu2WBRlkmBCZn+TvtCcoRxbQpkW9lbChlRThjadkg3BX355lTQvXP/Srd5XK7WbPI4inMApnIMPV1CDO6hDAxgM4Ble4c2Rzovz7nwsWgtOPnMMf+B8/gBWao0w</latexit> 
+
+0.1
+
+<latexit sha1_base64="mZZt6LVkjIwjS2SoraIHjJ10wbw=">AAAB6nicbVBNS8NAEJ3Ur1q/qh69LBbBU0hKUY9FLx4r2lpoQ9lsJ+3SzSbsboRS+hO8eFDEq7/Im//GbZuDtj4YeLw3w8y8MBVcG8/7dgpr6xubW8Xt0s7u3v5B+fCopZNMMWyyRCSqHVKNgktsGm4EtlOFNA4FPoajm5n/+IRK80Q+mHGKQUwHkkecUWOle8+t9soVz/XmIKvEz0kFcjR65a9uP2FZjNIwQbXu+F5qgglVhjOB01I305hSNqID7FgqaYw6mMxPnZIzq/RJlChb0pC5+ntiQmOtx3FoO2NqhnrZm4n/eZ3MRFfBhMs0MyjZYlGUCWISMvub9LlCZsTYEsoUt7cSNqSKMmPTKdkQ/OWXV0mr6voXbu2uVqlf53EU4QRO4Rx8uIQ63EIDmsBgAM/wCm+OcF6cd+dj0Vpw8plj+APn8wdX7o0x</latexit> 
+
+0.2
+
+<latexit sha1_base64="T9QksgC+Aa43sj/TdAAcWUtAQ+8=">AAAB6nicbVBNS8NAEJ3Ur1q/qh69LBbBU0i0qMeiF48V7Qe0oWy2m3bpZhN2J0Ip/QlePCji1V/kzX/jts1Bqw8GHu/NMDMvTKUw6HlfTmFldW19o7hZ2tre2d0r7x80TZJpxhsskYluh9RwKRRvoEDJ26nmNA4lb4Wjm5nfeuTaiEQ94DjlQUwHSkSCUbTSveee98oVz/XmIH+Jn5MK5Kj3yp/dfsKymCtkkhrT8b0UgwnVKJjk01I3MzylbEQHvGOpojE3wWR+6pScWKVPokTbUkjm6s+JCY2NGceh7YwpDs2yNxP/8zoZRlfBRKg0Q67YYlGUSYIJmf1N+kJzhnJsCWVa2FsJG1JNGdp0SjYEf/nlv6R55voXbvWuWqld53EU4QiO4RR8uIQa3EIdGsBgAE/wAq+OdJ6dN+d90Vpw8plD+AXn4xtZco0y</latexit> 
+
+0.3
+
+> <latexit  sha1_base64="IN7ZFjPsuqpXYDV7WOkdfWuaCB0=">AAAB8HicbVDLSgNBEOyNrxhfUY9eBoPgKexGUI9BLx4jmIckS5idzCZD5rHMzAphyVd48aCIVz/Hm3/jJNmDJhY0FFXddHdFCWfG+v63V1hb39jcKm6Xdnb39g/Kh0cto1JNaJMornQnwoZyJmnTMstpJ9EUi4jTdjS+nfntJ6oNU/LBThIaCjyULGYEWyc9jtwGNdRY9MsVv+rPgVZJkJMK5Gj0y1+9gSKpoNISjo3pBn5iwwxrywin01IvNTTBZIyHtOuoxIKaMJsfPEVnThmgWGlX0qK5+nsiw8KYiYhcp8B2ZJa9mfif101tfB1mTCappZIsFsUpR1ah2fdowDQllk8cwUQzdysiI6wxsS6jkgshWH55lbRq1eCyenFfq9Rv8jiKcAKncA4BXEEd7qABTSAg4Ble4c3T3ov37n0sWgtePnMMf+B9/gAtmZCo</latexit>
+> histogram
+
+|Tneq 
+
+i |/|Teq 
+
+i |
+
+FIG. 12. (a) Average position of FM-AFM domain, obtained from NEGF-LLG and ML-LLG simulations, as a function of time during the voltage-driven insulator to metal transition of the s-d model. (b) histogram of the ratio |Tneq 
+
+i |/|Teq 
+
+i |
+
+predicted by the NN model for the simulation of domain-wall propagation. Here Teq 
+
+i = Si × ∂E/∂ Si is the quasi-equilibrium torque, and Tneq 
+
+i = Si × (Si × ∂G/∂ Si) is the non-equilibrium torque in the generalized LLG Eq. (22). 
+
+wall position, averaged over the transverse y direction, for LLG simulations using NEGF-computed forces and ML-predicted forces. The two trajectories exhibit ex-cellent agreement, with only minor deviations arising from the stochastic Langevin noise in the LLG dynam-ics and the small residual force-prediction error of the ML model. While the close correspondence might sug-gest that the ML prediction error effectively acts as an additional source of thermal noise, a more plausible inter-pretation is that thermal fluctuations of this magnitude play only a secondary role. Their primary function is to provide an initial perturbation that destabilizes the N’eel background, whereas the subsequent domain-wall propa-gation dynamics are largely governed by the underlying nonequilibrium electronic forces. An important advantage of our NN-based formulation is that it naturally decomposes the electron-mediated ex-change field into quasi-equilibrium and nonequilibrium components, heq and hneq , following Eq. (21). Such a separation is generally not accessible in microscopic cal-culations. For instance, the NEGF expression in Eq. (26) yields only the total exchange field, with no clear way to distinguish conservative from non-conservative contribu-tions. In contrast, introducing the two scalar potentials 
+
+E and G in the generalized BP model plays a role anal-ogous to the site energies ϵi in the standard BP frame-work: although these local quantities cannot be extracted directly from quantum-mechanical calculations such as DFT, the trained ML model can infer them and reveal additional physical structure. This decomposition en-ables a direct analysis of the two torque components, 
+
+Teq 
+
+i = heq 
+
+i × Si and Tneq 
+
+i = hneq 
+
+i × Si. Fig. 12(b) shows the histogram of the ratio |Tneq 
+
+i |/|Teq 
+
+i | for spins near the FM–AFM domain interface. As expected, the nonequi-librium torque dominates in this region, confirming that voltage-driven domain-wall propagation is largely con-trolled by nonequilibrium electronic forces. The physical roles of the two torque components are 14 illustrated in Fig. 7(c). The quasi-equilibrium torque 
+
+Teq  
+
+> i
+
+= Si × (∂E/∂ Si) drives precessional motion along contours of constant E. The nonequilibrium torque 
+
+Tneq  
+
+> i
+
+= Si × [Si × (∂G/∂ Si)] often acts against the con-ventional Landau–Lifshitz damping torque Tdamping  
+
+> i
+
+=
+
+λ, Si × Teq  
+
+> i
+
+, where λ = γα/ (1 + α2) is the effective damping strength. This is supported by the histogram of ( Tneq  
+
+> i
+
+· heq  
+
+> i
+
+) in Fig. 11(e): its predominantly nega-tive values show that the nonequilibrium torque tends to push spins away from the conservative field direction 
+
+heq  
+
+> i
+
+= −∂E/∂ Si, acting in a manner similar to the anti-damping torques discussed in Refs. [122–124].  
+
+> VIII. CONCLUSION AND OUTLOOK
+
+In summary, we have presented a unified frame-work for machine-learning (ML) force fields capable of modeling Landau-Lifshitz-Gilbert (LLG) spin dynam-ics in itinerant electron systems under both quasi-equilibrium and strongly driven conditions. Building on the Behler-Parrinello (BP) paradigm—originally devel-oped for quantum molecular dynamics—we generalized the notion of locality to magnetization dynamics by as-suming that the electron-mediated forces acting on each spin depend primarily on its local magnetic environment. This locality principle enables the construction of deep neural networks that accurately encode the highly non-linear mapping between local spin configurations and ef-fective magnetic fields. A central ingredient of our approach is the design of symmetry-invariant magnetic descriptors, which provide differentiable and rotationally invariant representations of the local spin environment. We discussed their theo-retical underpinnings, emphasized the importance of pre-serving both lattice point-group and SO(3) spin-rotation symmetries, and presented a practical implementation based on reference irreducible representations. This for-mulation draws inspiration from group-theoretical power-spectrum and bispectrum methods while remaining com-putationally efficient. A key advance of this work is the generalization of the BP architecture to systems driven far from equi-librium. Exploiting the constraint that the magnitude of each spin is conserved in LLG dynamics, we intro-duced a generalized potential theory that treats both con-servative and non-conservative electronic forces on the same footing. This formulation naturally extends BP-type models to nonequilibrium settings and allows ML force fields to represent voltage-driven or current-driven exchange torques in itinerant magnets. As a demonstra-tion, we constructed a neural network that accurately reproduces the electron-mediated forces computed using nonequilibrium Green’s functions (NEGF) for a driven s-d model. The resulting ML-LLG simulations capture the full voltage-induced domain-wall propagation and quan-titatively match the NEGF-LLG benchmark results. Beyond the specific case studied here, the proposed ML framework provides a pathway toward accurate and scal-able modeling of spin-transfer torques (STT) [120–123], which lie at the core of many spintronic technologies. Ex-isting LLG simulations typically employ empirical STT formulas [120–123, 136–138], but these phenomenologi-cal models cannot capture the subtle spin–electron cou-plings present in real devices. On the other hand, first-principles approaches such as NEGF-based STT calcu-lations are considerably more accurate but remain com-putationally prohibitive for large spatial domains [131– 133, 139–143]. ML-based STT models capable of emu-lating NEGF-level accuracy while retaining linear scaling therefore represent a compelling direction for enabling large-scale dynamical simulations of magnetic textures, device operation, and spintronic architectures. While we have focused primarily on BP-type construc-tions, several other ML architectures provide comple-mentary and potentially more flexible routes for mod-eling itinerant spin systems. Convolutional neural net-works (CNNs) naturally reflect local interactions due to their finite receptive fields and have already been applied to scalable spin force-field modeling [35, 37]. Recent developments in equivariant neural networks [144–146] embed symmetry directly into the network architecture, while graph neural networks (GNNs) achieve linear scal-ing through message passing and symmetry-preserving graph transformations [147–150]. Extending these archi-tectures to model LLG dynamics in itinerant magnets is a particularly promising direction for future exploration. Finally, the advent of fully SO(3)-equivariant neu-ral networks [151–153] offers a powerful alternative to descriptor-based models. Recent work demonstrates that spin-rotation symmetry can be enforced directly within an equivariant convolutional architecture [154]. How-ever, an outstanding challenge remains: how to treat both continuous spin-rotation symmetry and discrete lat-tice point-group symmetry in a unified equivariant frame-work. Addressing this question represents an important frontier for developing next-generation ML force fields for magnetic materials. 
+
+> ACKNOWLEDGMENTS
+
+This work was supported by the US Department of Energy Basic Energy Sciences under Contract No. DE-SC0020330. The authors acknowledge Research Comput-ing at The University of Virginia for providing compu-tational resources and technical support that have con-tributed to the results reported within this publication. 
+
+> [1] G. Carleo, I. Cirac, K. Cranmer, L. Daudet, M. Schuld, N. Tishby, L. Vogt-Maranto, and L. Zdeborov´ a, Ma-chine learning and the physical sciences, Rev. Mod.
+
+15 
+
+Phys. 91 , 045002 (2019). [2] S. Das Sarma, D.-L. Deng, and L.-M. Duan, Machine learning meets quantum physics, Physics Today 72 , 48 (2019). [3] D. Morgan and R. Jacobs, Opportunities and challenges for machine learning in materials science, Annual Re-view of Materials Research 50 , 71 (2020). [4] E. Bedolla, L. C. Padierna, and R. Casta˜ neda-Priego, Machine learning for condensed matter physics, Journal of Physics: Condensed Matter 33 , 053001 (2020). [5] G. Karagiorgi, G. Kasieczka, S. Kravitz, B. Nachman, and D. Shih, Machine learning in the search for new fundamental physics, Nature Reviews Physics 4, 399 (2022). [6] G. E. Karniadakis, I. G. Kevrekidis, L. Lu, P. Perdikaris, S. Wang, and L. Yang, Physics-informed machine learn-ing, Nature Reviews Physics 3, 422 (2021). [7] J. Carrasquilla and R. G. Melko, Machine learning phases of matter, Nature Physics 13 , 431 (2017). [8] G. Carleo and M. Troyer, Solving the quantum many-body problem with artificial neural networks, Science 
+
+355 , 602 (2017). [9] R. Ramprasad, R. Batra, G. Pilania, A. Mannodi-Kanakkithodi, and C. Kim, Machine learning in ma-terials informatics: recent applications and prospects, npj Computational Materials 3, 54 (2017). [10] J. E. Gubernatis and T. Lookman, Machine learn-ing in materials design and discovery: Examples from the present and suggestions for the future, Phys. Rev. Mater. 2, 120301 (2018). [11] K. T. Butler, D. W. Davies, H. Cartwright, O. Isayev, and A. Walsh, Machine learning for molecular and ma-terials science, Nature 559 , 547 (2018). [12] J. Schmidt, M. R. G. Marques, S. Botti, and M. A. L. Marques, Recent advances and applications of machine learning in solid-state materials science, npj Computa-tional Materials 5, 83 (2019). [13] R. Batra, L. Song, and R. Ramprasad, Emerging mate-rials intelligence ecosystems propelled by machine learn-ing, Nature Reviews Materials 6, 655 (2021). [14] A. Boehnlein, M. Diefenthaler, N. Sato, M. Schram, V. Ziegler, C. Fanelli, M. Hjorth-Jensen, T. Horn, M. P. Kuchera, D. Lee, W. Nazarewicz, P. Ostroumov, K. Orginos, A. Poon, X.-N. Wang, A. Scheinker, M. S. Smith, and L.-G. Pang, Colloquium: Machine learning in nuclear physics, Rev. Mod. Phys. 94 , 031003 (2022). [15] A. Y.-T. Wang, R. J. Murdock, S. K. Kauwe, A. O. Oliynyk, A. Gurlo, J. Brgoch, K. A. Persson, and T. D. Sparks, Machine learning for materials scientists: An introductory guide toward best practices, Chemistry of Materials 32 , 4954 (2020). [16] J. Behler and M. Parrinello, Generalized neural-network representation of high-dimensional potential-energy sur-faces, Phys. Rev. Lett. 98 , 146401 (2007). [17] A. P. Bart´ ok, M. C. Payne, R. Kondor, and G. Cs´ anyi, Gaussian approximation potentials: The accuracy of quantum mechanics, without the electrons, Phys. Rev. Lett. 104 , 136403 (2010). [18] Z. Li, J. R. Kermode, and A. De Vita, Molecular dy-namics with on-the-fly machine learning of quantum-mechanical forces, Phys. Rev. Lett. 114 , 096405 (2015). [19] A. V. Shapeev, Moment tensor potentials: A class of systematically improvable interatomic potentials, Mul-tiscale Modeling & Simulation 14 , 1153 (2016). [20] J. Behler, Perspective: Machine learning potentials for atomistic simulations, The Journal of Chemical Physics 
+
+145 , 170901 (2016). [21] V. Botu, R. Batra, J. Chapman, and R. Ramprasad, Machine learning force fields: Construction, validation, and outlook, The Journal of Physical Chemistry C 121 ,511 (2017). [22] J. S. Smith, O. Isayev, and A. E. Roitberg, Ani-1: an extensible neural network potential with dft accuracy at force field computational cost, Chem. Sci. 8, 3192 (2017). [23] L. Zhang, J. Han, H. Wang, R. Car, and W. E, Deep potential molecular dynamics: A scalable model with the accuracy of quantum mechanics, Phys. Rev. Lett. 
+
+120 , 143001 (2018). [24] V. L. Deringer, M. A. Caro, and G. Csanyi, Ma-chine learning interatomic potentials as emerging tools for materials science, Advanced Materials 31 , 1902765 (2019). [25] R. T. McGibbon, A. G. Taube, A. G. Donchev, K. Siva, F. Hernandez, C. Hargus, K.-H. Law, J. L. Klepeis, and D. E. Shaw, Improving the accuracy of m¨ oller-plesset perturbation theory with neural networks, The Journal of Chemical Physics 147 , 161725 (2017). [26] H. Suwa, J. S. Smith, N. Lubbers, C. D. Batista, G.-W. Chern, and K. Barros, Machine learning for molecular dynamics with strongly correlated electrons, Phys. Rev. B 99 , 161107 (2019). [27] S. Chmiela, A. Tkatchenko, H. E. Sauceda, I. Poltavsky, K. T. Sch¨ utt, and K.-R. M¨ uller, Machine learning of ac-curate energy-conserving molecular force fields, Science Advances 3, e1603015 (2017). [28] S. Chmiela, H. E. Sauceda, K.-R. M¨ uller, and A. Tkatchenko, Towards exact molecular dynamics sim-ulations with machine-learned force fields, Nature Com-munications 9, 3887 (2018). [29] H. E. Sauceda, M. Gastegger, S. Chmiela, K.-R. M¨ uller, and A. Tkatchenko, Molecular force fields with gradient-domain machine learning (GDML): Comparison and synergies with classical force fields, The Journal of Chemical Physics 153 , 124109 (2020). [30] O. T. Unke, S. Chmiela, H. E. Sauceda, M. Gastegger, I. Poltavsky, K. T. Sch¨ utt, A. Tkatchenko, and K.-R. M¨ uller, Machine learning force fields, Chemical Reviews 
+
+121 , 10142 (2021). [31] D. Marx and J. Hutter, Ab initio molecular dynamics: basic theory and advanced methods (Cambridge Univer-sity Press, 2009). [32] P. Zhang, P. Saha, and G.-W. Chern, Machine learn-ing dynamics of phase separation in correlated electron magnets (2020), arXiv:2006.04205 [cond-mat.str-el]. [33] P. Zhang and G.-W. Chern, Arrested phase separation in double-exchange models: Large-scale simulation en-abled by machine learning, Phys. Rev. Lett. 127 , 146401 (2021). [34] P. Zhang and G.-W. Chern, Machine learning nonequi-librium electron forces for spin dynamics of itinerant magnets, npj Computational Materials 9, 32 (2023). [35] X. Cheng, S. Zhang, P. C. H. Nguyen, S. Azarfar, G.-W. Chern, and S. S. Baek, Convolutional neural networks for large-scale dynamical modeling of itinerant magnets, Phys. Rev. Res. 5, 033188 (2023). [36] Y. Fan, S. Zhang, and G.-W. Chern, Coarsening of chi-ral domains in itinerant electron magnets: A machine 16 
+
+learning force-field approach, Phys. Rev. B 110 , 245105 (2024). [37] A. Tyberg, Y. Fan, and G.-W. Chern, Machine learn-ing force field model for kinetic monte carlo simulations of itinerant ising magnets, Phys. Rev. B 111 , 235132 (2025). [38] A. N. Bogdanov and D. Yablonskii, Thermodynamically stable “vortices” in magnetically ordered crystals. the mixed state of magnets, Zh. Eksp. Teor. Fiz 95 , 178 (1989). [39] U. K. R¨ oßler, A. N. Bogdanov, and C. Pfleiderer, Spon-taneous skyrmion ground states in magnetic metals, Na-ture 442 , 797 (2006). [40] S. M¨ uhlbauer, B. Binz, F. Jonietz, C. Pfleiderer, A. Rosch, A. Neubauer, R. Georgii, and P. B¨ oni, Skyrmion lattice in a chiral magnet, Science 323 , 915 (2009). [41] X. Z. Yu, Y. Onose, N. Kanazawa, J. H. Park, J. H. Han, Y. Matsui, N. Nagaosa, and Y. Tokura, Real-space ob-servation of a two-dimensional skyrmion crystal, Nature 
+
+465 , 901 (2010). [42] X. Z. Yu, N. Kanazawa, Y. Onose, K. Kimoto, W. Z. Zhang, S. Ishiwata, Y. Matsui, and Y. Tokura, Near room-temperature formation of a skyrmion crystal in thin-films of the helimagnet fege, Nature Materials 10 ,106 (2011). [43] S. Seki, X. Z. Yu, S. Ishiwata, and Y. Tokura, Obser-vation of skyrmions in a multiferroic material, Science 
+
+336 , 198 (2012). [44] N. Nagaosa and Y. Tokura, Topological properties and dynamics of magnetic skyrmions, Nature Nanotechnol-ogy 8, 899 (2013). [45] E. Dagotto, Nanoscale phase separation and colossal magnetoresistance (Springer Verlag, Berlin, 2002). [46] E. Dagotto, Complexity in strongly correlated electronic systems, Science 309 , 257 (2005). [47] A. Moreo, S. Yunoki, and E. Dagotto, Phase separa-tion scenario for manganese oxides and related materi-als, Science 283 , 2034 (1999). [48] E. Dagotto, T. Hotta, and A. Moreo, Colossal magne-toresistant materials: the key role of phase separation, Physics Reports 344 , 1 (2001). [49] N. Mathur and P. Littlewood, Mesoscopic texture in manganites, Physics Today 56 , 25 (2003). [50] E. L. Nagaev, Colossal Magnetoresistance and Phase Separation in Magnetic Semiconductors (Imperial Col-lege Press, London, 2002). [51] M. F¨ ath, S. Freisem, A. A. Menovsky, Y. Tomioka, J. Aarts, and J. A. Mydosh, Spatially inhomogeneous metal-insulator transition in doped manganites, Science 
+
+285 , 1540 (1999). [52] C. Renner, G. Aeppli, B.-G. Kim, Y.-A. Soh, and S.-W. Cheong, Atomic-scale images of charge ordering in a mixed-valence manganite, Nature 416 , 518 (2002). [53] M. B. Salamon and M. Jaime, The physics of mangan-ites: Structure and transport, Rev. Mod. Phys. 73 , 583 (2001). [54] L. D. Landau and L. E. M., Theory of the dispersion of magnetic permeability in ferromagnetic bodies, Phys. Z. Sowjetunion. 8, 153 (1935). [55] T. Gilbert, A phenomenological theory of damping in ferromagnetic materials, IEEE Transactions on Magnet-ics 40 , 3443 (2004). [56] M. A. Ruderman and C. Kittel, Indirect Exchange Cou-pling of Nuclear Magnetic Moments by Conduction Electrons, Phys. Rev. 96 , 99 (1954). [57] T. Kasuya, A Theory of Metallic Ferro- and Antiferro-magnetism on Zener’s Model, Prog. Theor. Phys. 16 , 45 (1956). [58] K. Yosida, Magnetic properties of Cu-Mn alloys, Phys. Rev. 106 , 893 (1957). [59] H. Hellmann, Einf¨ uhrung in die Quantenchemie (Franz Deuticke, Leipzig, 1937). [60] R. P. Feynman, Forces in molecules, Phys. Rev. 56 , 340 (1939). [61] A. Weiße, G. Wellein, A. Alvermann, and H. Fehske, The kernel polynomial method, Rev. Mod. Phys. 78 ,275 (2006). [62] K. Barros and Y. Kato, Efficient langevin simulation of coupled classical fields and fermions, Phys. Rev. B 88 ,235101 (2013). [63] Z. Wang, G.-W. Chern, C. D. Batista, and K. Bar-ros, Gradient-based stochastic estimation of the density matrix, The Journal of Chemical Physics 148 , 094107 (2018). [64] G.-W. Chern, K. Barros, Z. Wang, H. Suwa, and C. D. Batista, Semiclassical dynamics of spin density waves, Phys. Rev. B 97 , 035120 (2018). [65] S. Bhattacharyya, S. S. Bakshi, S. Pradhan, and P. Ma-jumdar, Strongly anharmonic collective modes in a cou-pled electron-phonon-spin problem, Phys. Rev. B 101 ,125130 (2020). [66] W. Kohn, Density functional and density matrix method scaling linearly with the number of atoms, Phys. Rev. Lett. 76 , 3168 (1996). [67] E. Prodan and W. Kohn, Nearsightedness of electronic matter, Proceedings of the National Academy of Sci-ences 102 , 11635 (2005). [68] P. Zhang, S. Zhang, and G.-W. Chern, Descriptors for machine learning model of generalized force field in con-densed matter systems (2022), arXiv:2201.00798 [cond-mat.str-el]. [69] S. Zhang, P. Zhang, and G.-W. Chern, Anomalous phase separation in a correlated electron system: Machine-learning enabled large-scale kinetic monte carlo simula-tions, Proceedings of the National Academy of Sciences 
+
+119 , e2119957119 (2022). [70] C. Cheng, S. Zhang, and G.-W. Chern, Machine learn-ing for phase ordering dynamics of charge density waves, Phys. Rev. B 108 , 014301 (2023). [71] S. Ghosh, S. Zhang, C. Cheng, and G.-W. Chern, Kinet-ics of orbital ordering in cooperative jahn-teller models: Machine-learning enabled large-scale simulations, Phys. Rev. Mater. 8, 123602 (2024). [72] J. Ma, P. Zhang, Y. Tan, A. W. Ghosh, and G.-W. Chern, Machine learning electron correlation in a disor-dered medium, Phys. Rev. B 99 , 085118 (2019). [73] Y.-H. Liu, S. Zhang, P. Zhang, T.-K. Lee, and G.-W. Chern, Machine learning predictions for local elec-tronic properties of disordered correlated electron sys-tems, Phys. Rev. B 106 , 035131 (2022). [74] Z. Tian, S. Zhang, and G.-W. Chern, Machine learning for structure-property mapping of Ising models: Scala-bility and limitations, Phys. Rev. E 108 , 065304 (2023). [75] G. Cybenko, Approximation by superpositions of a sig-moidal function, Mathematics of Control, Signals and Systems 2, 303 (1989). [76] K. Hornik, M. Stinchcombe, and H. White, Multilayer 17 
+
+feedforward networks are universal approximators, Neu-ral Networks 2, 359 (1989). [77] A. Paszke, S. Gross, S. Chintala, G. Chanan, E. Yang, Z. DeVito, Z. Lin, A. Desmaison, L. Antiga, and A. Lerer, Automatic differentiation in pytorch, in NIPS 2017 Workshop on Autodiff (2017). [78] A. G. Baydin, B. A. Pearlmutter, A. A. Radul, and J. M. Siskind, Automatic differentiation in machine learning: a survey, Journal of Machine Learning Research 18 , 1 (2018). [79] J. Behler, Atom-centered symmetry functions for con-structing high-dimensional neural network potentials, The Journal of Chemical Physics 134 , 074106 (2011). [80] L. M. Ghiringhelli, J. Vybiral, S. V. Levchenko, C. Draxl, and M. Scheffler, Big data of materials sci-ence: Critical role of the descriptor, Phys. Rev. Lett. 
+
+114 , 105503 (2015). [81] A. P. Bart´ ok, R. Kondor, and G. Cs´ anyi, On represent-ing chemical environments, Phys. Rev. B 87 , 184115 (2013). [82] L. Himanen, M. O. J¨ ager, E. V. Morooka, F. Fed-erici Canova, Y. S. Ranawat, D. Z. Gao, P. Rinke, and A. S. Foster, Dscribe: Library of descriptors for ma-chine learning in materials science, Computer Physics Communications 247 , 106949 (2020). [83] H. Huo and M. Rupp, Unified representation of molecules and crystals for machine learning, Machine Learning: Science and Technology 3, 045017 (2022). [84] R. Drautz, Atomic cluster expansion for accurate and transferable interatomic potentials, Phys. Rev. B 99 ,014104 (2019). [85] R. Kondor, A novel set of rotationally and transla-tionally invariant features for images based on the non-commutative bispectrum (2007), arXiv:cs/0701127 [cs.CV]. [86] I. Martin and C. D. Batista, Itinerant Electron-Driven Chiral Magnetic Ordering and Spontaneous Quantum Hall Effect in Triangular Lattice Models, Phys. Rev. Lett. 101 , 156402 (2008). [87] Y. Akagi and Y. Motome, Spin chirality ordering and anomalous hall effect in the ferromagnetic kondo lattice model on a triangular lattice, Journal of the Physical Society of Japan 79 , 083711 (2010). [88] Y. Kato, I. Martin, and C. D. Batista, Stability of the spontaneous quantum hall state in the triangular kondo-lattice model, Phys. Rev. Lett. 105 , 266405 (2010). [89] M. Azhar and M. Mostovoy, Incommensurate spiral or-der from double-exchange interactions, Phys. Rev. Lett. 
+
+118 , 027203 (2017). [90] G.-W. Chern and C. D. Batista, Spontaneous quantum hall effect via a thermally induced quadratic fermi point, Phys. Rev. Lett. 109 , 156801 (2012). [91] R. Nandkishore, G.-W. Chern, and A. V. Chubukov, Itinerant half-metal spin-density-wave state on the hexagonal lattice, Phys. Rev. Lett. 108 , 227204 (2012). [92] A. Paszke, S. Gross, F. Massa, A. Lerer, J. Bradbury, G. Chanan, T. Killeen, Z. Lin, N. Gimelshein, L. Antiga, 
+
+et al. , Pytorch: An imperative style, high-performance deep learning library, Advances in neural information processing systems 32 (2019). [93] V. Nair and G. E. Hinton, Rectified linear units improve restricted boltzmann machines, in Proceedings of the 27th International Conference on International Confer-ence on Machine Learning , ICML’10 (Omnipress, Madi-son, WI, USA, 2010) p. 807–814. [94] D. P. Kingma and J. Ba, Adam: A method for stochastic optimization (2014), arXiv:1412.6980 [cs.LG]. [95] M. Stone, Cross-validatory choice and assessment of sta-tistical predictions, Journal of the royal statistical soci-ety: Series B (Methodological) 36 , 111 (1974). [96] J. H. Mentink, M. V. Tretyakov, A. Fasolino, M. I. Kat-snelson, and T. Rasing, Stable and fast semi-implicit integration of the stochastic landau–lifshitz equation, Journal of Physics: Condensed Matter 22 , 176001 (2010). [97] P. Fazekas, Lecture Notes on Electron Correlation and Magnetism (WORLD SCIENTIFIC, 1999). [98] Y. Akagi, M. Udagawa, and Y. Motome, Hidden Multiple-Spin Interactions as an Origin of Spin Scalar Chiral Order in Frustrated Kondo Lattice Models, Phys. Rev. Lett. 108 , 096401 (2012). [99] A. J. Bray, Theory of phase-ordering kinetics, Advances in Physics 43 , 357 (1994). [100] S. Puri and V. Wadhawan, Kinetics of phase transitions 
+
+(CRC press, 2009). [101] A. Onuki, Phase Transition Dynamics (Cambridge Uni-versity Press, 2002). [102] C. Zener, Interaction between the d-shells in the transi-tion metals. ii. ferromagnetic compounds of manganese with perovskite structure, Phys. Rev. 82 , 403 (1951). [103] P. W. Anderson and H. Hasegawa, Considerations on double exchange, Phys. Rev. 100 , 675 (1955). [104] P. G. de Gennes, Effects of double exchange in magnetic crystals, Phys. Rev. 118 , 141 (1960). [105] Schulz, H.J., Domain walls in a doped antiferromagnet, J. Phys. France 50 , 2833 (1989). [106] V. J. Emery, S. A. Kivelson, and H. Q. Lin, Phase sepa-ration in the t-j model, Phys. Rev. Lett. 64 , 475 (1990). [107] S. R. White and D. J. Scalapino, Phase separation and stripe formation in the two-dimensional t − j model: A comparison of numerical results, Phys. Rev. B 61 , 6320 (2000). [108] J. M. Tranquada, B. J. Sternlieb, J. D. Axe, Y. Naka-mura, and S. Uchida, Evidence for stripe correlations of spins and holes in copper oxide superconductors, Nature 
+
+375 , 561 (1995). [109] I. Lifshitz and V. Slyozov, The kinetics of precipitation from supersaturated solid solutions, Journal of Physics and Chemistry of Solids 19 , 35 (1961). [110] C. Wagner, Theorie der alterung von niederschlagen durch umlosen, Z. Elektrochem 65 , 581 (1961). [111] C. M. Varma, Electronic and magnetic states in the gi-ant magnetoresistive compounds, Phys. Rev. B 54 , 7328 (1996). [112] S. Yunoki, J. Hu, A. L. Malvezzi, A. Moreo, N. Fu-rukawa, and E. Dagotto, Phase separation in electronic models for manganites, Phys. Rev. Lett. 80 , 845 (1998). [113] E. Dagotto, S. Yunoki, A. L. Malvezzi, A. Moreo, J. Hu, S. Capponi, D. Poilblanc, and N. Furukawa, Ferro-magnetic kondo model for manganites: Phase diagram, charge segregation, and influence of quantum localized spins, Phys. Rev. B 58 , 6414 (1998). [114] A. Chattopadhyay, A. J. Millis, and S. Das Sarma, t =0 phase diagram of the double-exchange model, Phys. Rev. B 64 , 012416 (2001). [115] D. Pekker, S. Mukhopadhyay, N. Trivedi, and P. M. Goldbart, Double-exchange model for noninteracting electron spins coupled to a lattice of classical spins: 18 
+
+Phase diagram at zero temperature, Phys. Rev. B 72 ,075118 (2005). [116] J.-T. L¨ u, M. Brandbyge, P. Hedeg˚ ard, T. N. Todorov, and D. Dundas, Current-induced atomic dynamics, in-stabilities, and raman signals: Quasiclassical langevin equation approach, Phys. Rev. B 85 , 245444 (2012). [117] T. N. Todorov, D. Dundas, and E. J. McEniry, Noncon-servative generalized current-induced forces, Phys. Rev. B 81 , 075416 (2010). [118] D. Dundas, E. J. McEniry, and T. N. Todorov, Current-driven atomic waterwheels, Nature Nanotechnology 4,99 (2009). [119] M. Di Ventra and S. T. Pantelides, Hellmann-feynman theorem and the definition of forces in quantum time-dependent and transport problems, Phys. Rev. B 61 ,16207 (2000). [120] J. Slonczewski, Current-driven excitation of magnetic multilayers, Journal of Magnetism and Magnetic Mate-rials 159 , L1 (1996). [121] L. Berger, Emission of spin waves by a magnetic mul-tilayer traversed by a current, Phys. Rev. B 54 , 9353 (1996). [122] A. Brataas, A. D. Kent, and H. Ohno, Current-induced torques in magnetic materials, Nature Materials 11 , 372 (2012). [123] D. Ralph and M. Stiles, Spin transfer torques, Journal of Magnetism and Magnetic Materials 320 , 1190 (2008). [124] S. Salahuddin, D. Datta, and S. Datta, Spin trans-fer torque as a non-conservative pseudo-field (2008), arXiv:0811.3472 [cond-mat.mes-hall]. [125] J. F. Adams, Vector fields on spheres, Annals of Math-ematics 75 , 603 (1962). [126] P. N. Swarztrauber, The approximation of vector func-tions and their derivatives on the sphere, SIAM Journal on Numerical Analysis 18 , 191 (1981). [127] M. Fan, D. Paul, T. C. M. Lee, and T. Matsuo, Model-ing tangential vector fields on a sphere, Journal of the American Statistical Association 113 , 1625 (2018). [128] S. Datta, Electronic Transport in Mesoscopic Systems 
+
+(Cambridge University Press, Cambridge, 1995). [129] H. Haug and A.-P. Jauho, Quantum Kinetics in Trans-port and Optics of Semiconductors , Springer Series in Solid-State Sciences, Vol. 123 (Springer-Verlag, Berlin, 2008). [130] M. D. Ventra, Electrical Transport in Nanoscale Systems 
+
+(Cambridge University Press, Cambridge, 2008). [131] M. Stamenova, S. Sanvito, and T. N. Todorov, Current-driven magnetic rearrangements in spin-polarized point contacts, Phys. Rev. B 72 , 134407 (2005). [132] S. Salahuddin and S. Datta, Self-consistent simulation of quantum transport and magnetization dynamics in spin-torque based devices, Applied Physics Letters 89 ,153504 (2006). [133] Y. Xie, J. Ma, S. Ganguly, and A. W. Ghosh, From materials to systems: a multiscale analysis of nanomag-netic switching, Journal of Computational Electronics 
+
+16 , 1201 (2017). [134] G.-W. Chern, Spatiotemporal dynamics of voltage-induced resistance transition in the double-exchange model, Phys. Rev. B 106 , 245146 (2022). [135] J. L. Garc´ ıa-Palacios and F. J. L´ azaro, Langevin-dynamics study of the dynamical properties of small magnetic particles, Phys. Rev. B 58 , 14937 (1998). [136] Y. B. Bazaliy, B. A. Jones, and S.-C. Zhang, Mod-ification of the landau-lifshitz equation in the pres-ence of a spin-polarized current in colossal- and giant-magnetoresistive materials, Phys. Rev. B 57 , R3213 (1998). [137] S. Zhang and Z. Li, Roles of nonequilibrium conduction electrons on the magnetization dynamics of ferromag-nets, Phys. Rev. Lett. 93 , 127204 (2004). [138] G. Tatara, H. Kohno, and J. Shibata, Microscopic ap-proach to current-driven domain wall dynamics, Physics Reports 468 , 213 (2008). [139] M. O. A. Ellis, M. Stamenova, and S. Sanvito, Multi-scale modeling of current-induced switching in magnetic tunnel junctions using ab initio spin-transfer torques, Phys. Rev. B 96 , 224410 (2017). [140] M. D. Petrovi´ c, B. S. Popescu, U. Bajpai, P. Plech´ aˇ c, and B. K. Nikoli´ c, Spin and charge pumping by a steady or pulse-current-driven magnetic domain wall: A self-consistent multiscale time-dependent quantum-classical hybrid approach, Phys. Rev. Appl. 10 , 054038 (2018). [141] K. Dolui, M. D. Petrovi´ c, K. Zollner, P. Plech´ aˇ c, J. Fabian, and B. K. Nikoli´ c, Proximity spin–orbit torque on a two-dimensional magnet within van der waals heterostructure: Current-driven antiferromagnet-to-ferromagnet reversible nonequilibrium phase transi-tion in bilayer cri3, Nano Letters 20 , 2288 (2020). [142] S.-H. Chen, C.-R. Chang, J. Q. Xiao, and B. K. Nikoli´ c, Spin and charge pumping in magnetic tunnel junctions with precessing magnetization: A nonequilibrium green function approach, Phys. Rev. B 79 , 054424 (2009). [143] B. K. Nikoli´ c, K. Dolui, M. D. Petrovi´ c, P. Plechac, T. Markussen, and K. Stokbro, First-principles quan-tum transport modeling of spin-transfer and spin-orbit torques in magnetic multilayers, in Handbook of Ma-terials Modeling , edited by W. Andreoni and S. Yip (Springer-Verlag, 2020). [144] N. Thomas, T. Smidt, S. Kearnes, L. Yang, L. Li, K. Kohlhoff, and P. Riley, Tensor field networks: Rotation- and translation-equivariant neural networks for 3d point clouds (2018), arXiv:1802.08219 [cs.LG]. [145] B. Anderson, T.-S. Hy, and R. Kondor, Cormorant: co-variant molecular neural networks, in Proceedings of the 33rd International Conference on Neural Information Processing Systems (Curran Associates Inc., Red Hook, NY, USA, 2019). [146] R. J. L. Townshend, B. Townshend, S. Eismann, and R. O. Dror, Geometric prediction: Moving beyond scalars (2020), arXiv:2006.14163 [cs.LG]. [147] F. Scarselli, M. Gori, A. C. Tsoi, M. Hagenbuchner, and G. Monfardini, The graph neural network model, IEEE Transactions on Neural Networks 20 , 61 (2009). [148] P. Reiser, M. Neubert, A. Eberhard, L. Torresi, C. Zhou, C. Shao, H. Metni, C. van Hoesel, H. Schopmans, T. Sommer, and P. Friederich, Graph neural networks for materials science and chemistry, Communications Materials 3, 93 (2022). [149] S. Batzner, A. Musaelian, L. Sun, M. Geiger, J. P. Mailoa, M. Kornbluth, N. Molinari, T. E. Smidt, and B. Kozinsky, E(3)-equivariant graph neural networks for data-efficient and accurate interatomic potentials, Na-ture Communications 13 , 2453 (2022). [150] I. Batatia, S. Batzner, D. P. Kov´ acs, A. Musaelian, G. N. C. Simm, R. Drautz, C. Ortner, B. Kozinsky, and G. Cs´ anyi, The design space of e(3)-equivariant atom-centred interatomic potentials, Nature Machine Intelli-19 
+
+gence 7, 56 (2025). [151] M. Weiler, M. Geiger, M. Welling, W. Boomsma, and T. S. Cohen, 3d steerable cnns: Learning rotationally equivariant features in volumetric data, Advances in Neural Information Processing Systems 31 (2018). [152] S. Batzner, A. Musaelian, L. Sun, M. Geiger, J. P. Mailoa, M. Kornbluth, N. Molinari, T. E. Smidt, and B. Kozinsky, E(3)-equivariant graph neural networks for data-efficient and accurate interatomic potentials, Na-ture Communications 13 , 2453 (2022). [153] X. Gong, H. Li, N. Zou, R. Xu, W. Duan, and Y. Xu, General framework for e(3)-equivariant neural network representation of density functional theory hamiltonian, Nature Communications 14 , 2848 (2023). [154] Y. Miyazaki, Equivariant neural networks for spin dynamics simulations of itinerant magnets, Machine Learning: Science and Technology 4, 045006 (2023).
