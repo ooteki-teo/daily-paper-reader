@@ -1,0 +1,138 @@
+Title: Unconventional alternating out-of-plane spin polarization in the coplanar kagome antiferromagnet
+
+URL Source: https://arxiv.org/pdf/2604.11057v1
+
+Published Time: Tue, 14 Apr 2026 01:48:24 GMT
+
+Number of Pages: 6
+
+Markdown Content:
+# Unconventional alternating out-of-plane spin polarization in the coplanar kagome antiferromagnet 
+
+O. Ly 1, ∗ and S. Hayami 2
+
+> 1
+
+Université de Nouakchott, Faculté des Sciences et Techniques, Département de Physique, Avenue du Roi Faiçal, 2373, Nouakchott, Mauritania 
+
+> 2
+
+Graduate School of Science, Hokkaido University, Sapporo 060-0810, Japan. 
+
+The emergence of spin-polarized currents in nonrelativistic platforms continues to attract sig-nificant interest in spintronics. Here we demonstrate that a noncollinear kagome antiferromagnet can generate an alternating out-of-plane spin polarization originating from the spin chirality of the magnetic unit cell, in the absence of relativistic spin–orbit coupling. Under spatial confinement, the system develops distinct real-space spin separation patterns whose structure is governed by the symmetry of the lattice termination. In particular, breaking the transverse mirror symmetry of the ribbon produces an altermagnetic-like spin splitting in the band structure. Furthermore, we uncover a spin–edge locking mechanism in which propagating edge states acquire an unconventional spin polarization. These results highlight how magnetic symmetry and confinement can generate spin-polarized transport in coplanar antiferromagnets without relying on relativistic interactions. 
+
+I. INTRODUCTION 
+
+The electronic spin degree of freedom underlies a wide range of phenomena that continue to drive the develop-ment of spintronics [1–3]. Early advances in this field largely relied on relativistic spin–orbit coupling (SOC) [4], which is responsible for fundamental effects such as the anomalous Hall effect and the spin Hall effect (SHE) [5, 6]. More recently, similar transport phenomena have been predicted and observed in a class of noncollinear antiferromagnets, where a nonvanishing Berry curvature leads to anomalous [7–9] and spin Hall [10, 11] responses. In these systems, nontrivial magnetic textures can induce effective spin–momentum locking and give rise to a vari-ety of topological transport effects [12, 13]. While the real-space manifestation of the conventional spin Hall effect—namely the accumulation of opposite spin polarizations at the edges of a conductor—has been investigated in paramagnetic systems [6, 14], its coun-terpart in non-collinear antiferromagnets remains largely unexplored. Although the emergence of unconventional out-of-plane spin currents in the coplanar setup has been studied [11], it remains unclear how such momentum-space spin responses manifest themselves in real space, particularly under spatial confinement. In this work, we investigate the real-space behavior of out-of-plane spin polarization in a kagome antiferromag-net with a coplanar 120 ◦ magnetic configuration. We per-form numerical simulations of the electronic spin polar-ization in confined ribbon geometries. We find that spin Hall currents in these topological magnets exhibit uncon-ventional behavior both in momentum and in real space. Under appropriate confinement symmetries, the spin po-larization develops alternating spatial patterns across the ribbon, leading to a nontrivial spin separation within the system.  
+
+> ∗ousmanebouneoumar@gmail.com
+
+A notable feature of the symmetric geometry is that a single propagating mode exhibits spatial spin sepa-ration across the ribbon. In contrast to the conven-tional quantum spin Hall effect, where two spin-polarized channels propagate along opposite edges of the sam-ple [15, 16], here a single transport channel develops a position-dependent spin polarization that changes sign across the wire. This behavior reflects the spin–sublattice entanglement induced by the non-collinear magnetic tex-ture. Furthermore, when the ribbon termination be-comes asymmetric in the transverse direction, the sys-tem develops an altermagnetic-like spin splitting. This provides an example of how altermagnetic splitting can emerge from real-space confinement. Our results reveal an overlooked spin separation mech-anism in non-collinear kagome antiferromagnets and highlight the role of magnetic symmetry and confinement in shaping spin transport. More broadly, we establish topological antiferromagnetic systems as promising plat-forms for realizing unconventional non-relativistic spin phenomena relevant for future spintronic applications. 
+
+II. MODEL AND METHODOLOGY 
+
+To study spin transport in the kagome antiferromag-netic system, we start from a tight-binding Hamiltonian 
+
+H = −γ X
+
+> ⟨i,j ⟩
+
+c† 
+
+> i
+
+cj + J X
+
+> i
+
+c† 
+
+> i
+
+(mi · σ)ci, (1) where mi denotes the local magnetic moments coupled to the itinerant electrons via an s–d exchange interaction with coupling strength J. The operators ci and c† 
+
+> i
+
+are the annihilation and creation operators at lattice site i,while γ is the nearest-neighbor hopping amplitude. For the coplanar 120 ◦ magnetic configuration, the local moments on the three kagome sublattices can be chosen as mi = (cos ϕi, sin ϕi, 0) , such that each two of them 
+
+> arXiv:2604.11057v1 [cond-mat.mes-hall] 13 Apr 2026
+
+2 
+
+> FIG. 1. A sketch of the investigated ribbon with symmet-ric (a) and antisymmetric (b) edge terminations. The corre-sponding ribbon band structures are shown.
+
+make an angle of 120 ◦. Because the three magnetic mo-ments point along different directions, one assumes that no global spin quantization axis is preserved and the elec-tronic eigenstates are intrinsically spin mixed. The resulting Bloch Hamiltonian therefore cannot be decomposed into independent spin sectors, and the eigen-states correspond to magnetic Bloch spinors defined in the combined sublattice-spin space. In a ribbon geometry, the confined wave functions can display nontrivial spin-resolved spatial modulations. Even a single propagating mode corresponds to an eigen-vector of the Bloch Hamiltonian whose projection onto a fixed (↑, ↓) basis generally involves position-dependent interference between spin and sublattice components. As a consequence, the resulting real-space spin polarization is difficult to analyze analytically. Therefore, we resort to a numerical analysis. To this end, we use the quantum transport framwork 
+
+Kwant [17]. Our interest will be in the calculation of local out-of-plane spin polarization generated by an incoming mode (m) from lead (l) at transport energy E. This is ob-tained from the corresponding scattering wave functions 
+
+ψlm (E) as 
+
+⟨sz ⟩ = X
+
+> n
+
+ψ†
+
+> ln
+
+(E) σz ψln (E), (2) where the sum runs over all propagating modes in the considered lead, at transport energy E. To further connect the local spin polarization to spin transport, one may also introduce the real-space resolved spin-current associated with the α-spin component flowing along the bond i → j as 
+
+Jαij = 2 Im[ ψ† 
+
+> i
+
+σαHij ψj ], (3) where Hij is the hoping matrix between i and j. In par-ticular, the out-of-plane spin transport is characterized by Jzij . Although spin current is not generally conserved in the presence of spin-dependent hopping, this quantity provides a useful measure of spin-resolved transport in the present noncollinear magnetic system.  
+
+> III. RESULTS
+
+Conventionally, the emergence of spin currents in mag-netic systems requires relativistic spin–orbit coupling (SOC). However, the essential ingredient underlying this phenomenon is simply the breaking of spin rotational symmetry as argued in ref. [11]. In the presence of a coplanar magnetic order, the circulation of electronic wave functions within the unit cell acquires a nontrivial topological phase induced by the chirality of the mag-netic arrangement. More formally, this effect can be understood as an emergent gauge field generated by the noncollinear magnetic texture, which gives rise to a spin-dependent phase in the electron hopping processes. In this framework, the effective hopping acquires an ad-ditional term proportional to the vector spin chirality, 
+
+κij = mi × mj , leading to an effective Hamiltonian of the form 
+
+Heff ∼ X
+
+> ⟨ij ⟩
+
+c† 
+
+> i
+
+[γ + iλ (κij · σ)] cj , (4) which plays a role analogous to a spin–orbit interaction. As a consequence, the magnetic texture breaks the elec-tronic spin rotational symmetry and allows for the emer-gence of an out-of-plane spin polarization, a hallmark of the spin Hall effect, even in the absence of relativis-tic SOC [18, 19]. Here, our focus will be on the real-space manifestation of spin densities and currents in the kagome antiferromagnet. We note that the local out-of-plane spin density is not identical to the spin current, but reflects the spin character of nonequilibrium propagating states. Its relation to transport can be inferred from the corresponding current distribution. To investigate the real-space character of this uncon-ventional, non-relativistic out-of-plane spin polarization, we consider a finite ribbon geometry that confines trans-port to a quasi-one-dimensional setup. The geometry is illustrated in Fig. 1 for two different lattice termina-tions. Figure 1(a) shows the band structure of the ribbon together with the expectation value of the out-of-plane spin polarization. Small regions of finite spin polariza-tion emerge. However, the antisymmetric out-of-plane polarization should vanish when averaged over the un-derlying degenerate subspace, which can be understood from the spatial inversion symmetry. This corresponds to the case where the upper and lower edges of the ribbon are symmetric (see Fig. 1). When the two terminations are inequivalent, the top– bottom symmetry of the ribbon is broken, leading to the appearance of an antisymmetric spin splitting charac-teristic of an altermagnetic state. A similar antisym-metric spin splitting has been predicted previously in kagome systems, although it typically requires asymmet-ric breathing of the lattice [20]. In the present case, however, the altermagnetic behavior is purely induced by asymmetric confinement, which breaks the spatial in-version symmetry of the ribbon. As a consequence, the symmetry constraint that enforces the cancellation of the 3        
+
+> FIG. 2. Real-space spin densities in the ribbon for different transport energies, corresponding to the propagation of 20 modes (a) and 2modes (b) for the reflection symmetric ribbon. In the right panel the spin polarization in the asymmetric ribbon is displayed for two different energies corresponding to 2(c) and 3(d) propagating modes.
+
+out-of-plane spin polarization is lifted, thereby allowing for a finite antisymmetric spin splitting [21]. We further investigate the real-space transport in these two geometries. Figure 2 displays the spatial distribution of the out-of-plane spin density in the symmetric kagome ribbon for different transport energies. In panel (a), the ribbon supports 20 open modes. Due to the symmetric confinement, the spin density alternates between up and down in a perfectly symmetric manner across the ribbon. In panel (b), only two electronic modes are available in the leads. In this regime, the spin density penetrates deeply into the bulk of the ribbon. Although the spin density is spatially extended, it averages to zero when integrated over the entire sample due to the preserved reflection symmetry. However, the opposite spin densities remain well separated in real space. Further, we consider the complementary situation, where an asymmetric termination (depicted in Fig. 1) is rather considered. The corresponding spin densities are shown in Fig. 2(c)-(d) for two different energies. In this configuration, the real space out-of-plane spin pro-jection apparently remains symmetric. However, due to the asymmetry of the upper and lower edges, the spin re-sponse no longer averages to zero since the top–bottom symmetry is violated. In this inequivalent-termination scenario, no exact re-flection symmetry across the ribbon midline survives. In particular, the transverse spatial reflection y → − y does not map the lattice onto itself because the upper and lower edge terminations differ. Consequently, no com-bined magnetic mirror operation leaves the ribbon Hamil-tonian invariant. The out-of-plane spin density is there-fore not constrained to be either even or odd under re-flection. In this situation, the two edges must instead be re-garded as independent magnetic boundaries, each impos-ing its own local spin texture on the confined modes. As a result, isolated spin-polarized edge states can emerge, as illustrated in Fig. 3(a). By contrast, in the symmetric case, even a single trans-
+
+> FIG. 3. Spin resolved edge states for both top-bottom sym-metric (a) and asymmetric (b) ribbons. The energy is tuned such that only a single transport mode is enabled.
+
+port channel must appear in pairs in order to satisfy the ribbon symmetry. The symmetric confinement forces the emergence of the polarized mode at both edges of the ribbon, as shown in Fig. 3(b). This distinction becomes clearer when compared with the corresponding current distribution shown below. While Fig. 3 visualizes the spatial structure of the out-of-plane spin polarization, the current density demonstrates that these spin-polarized regions are associated with propagating edge channels, indicating their relevance for spin transport. In Fig. 4, the current densities of the edge transport are also dis-played. Although this behavior may appear unusual, it follows naturally from the combination of spin-rotational symmetry breaking and the mirror symmetry of the rib-bon. When the ribbon is attached to normal leads, the translational symmetry of the 120 ◦ kagome magnetic tex-ture along the ribbon direction is broken. As a result, the symmetry of the periodic ribbon is reduced, and the mirror symmetry that previously enforced a strictly an-tisymmetric sz (x, y ) profile across the ribbon midline is no longer exact. The magnetic region becomes further left-right symmetric, leading to the emergence of an al-4
+
+> FIG. 4. Spin current distribution in the ribbon for the edge states transport considered in Fig. 3. The edge spin currents within the asymmetric (symmetric) ribbons are shown in (a) and (b) respectively.
+
+ternating spin polarization pattern around an effective axis combining both transversal and longitudinal sym-metries of the ribbon. This is shown in Fig. 5. A key distinction must be made between the local out-of-plane spin texture and the band-resolved spin polar-ization. In all ribbon terminations considered here, the confined states develop an alternating real-space sz pat-tern, indicating that the generation of local out-of-plane spin density is a generic consequence of confinement in the 120 ◦ kagome phase. However, the visibility of this texture in the band structure depends strongly on the edge termination. Symmetric terminations tend to pro-duce substantial cancellations between opposite edges and between different sublattice contributions, so that the net band-resolved expectation value of σz remains weak even though the local sz texture is pronounced. By contrast, the inequivalent termination suppresses these cancellations, making the antisymmetric spin polariza-tion directly visible in the ribbon band structure. Finally, it is important to highlight that of out-of-plane spin polarization has been recently argued to emerge from p-wave altermagnets [22, 23], where the polarization is related to the vector product of the coplanar magnetic moments. In the case of the kagome system, this relation cannot be directly applied as more than two magnetic moments are involved. Nevertheless, this argument can be presumably extended considering a superposition of different moment products, leading finally to an effective three sub-lattices out-of-plane magnetic order.  
+
+> IV. DISCUSSION
+
+The results presented above demonstrate that out-of-plane spin polarization can emerge in kagome antifer-romagnets even in the absence of relativistic spin–orbit coupling. This behavior originates from the noncollinear 
+
+120 ◦ magnetic texture, which breaks spin rotational sym-metry and gives rise to an effective spin-dependent elec-tronic motion. In contrast to previous studies that pri-marily focused on momentum-space properties such as Berry curvature and spin currents, our results highlight how these effects manifest in real space under confine-ment. In particular, the ribbon geometry reveals an al-ternating spatial pattern of the out-of-plane spin polar-ization across the sample. The emergence and visibility of this spin texture are strongly governed by symmetry. In the symmetric rib-bon, the presence of inversion symmetry enforces a can-cellation of the out-of-plane spin polarization upon spa-tial averaging, even though a pronounced local texture exists. When this symmetry is broken by asymmet-ric edge termination, the cancellation is lifted, allowing a finite out-of-plane spin polarization to appear. This provides a direct symmetry-based understanding of the altermagnetic-like spin splitting observed in the system. A distinctive feature of the confined system appears in the single-mode transport regime. In this case, a single propagating mode exhibits a spatial separation of spin polarization across the ribbon, with opposite spin char-acter localized at opposite edges. This behavior differs from the conventional spin Hall effect, where separate spin channels propagate along different edges. Here, in-stead, a single mode carries a spatially varying spin tex-ture. Importantly, the real-space spin polarization identified here is closely connected to transport properties. Al-though the local spin density is not identical to the spin current, its spatial distribution reflects the spin character of propagating states. Combined with the corresponding current distribution, this indicates that the observed spin textures are associated with conducting channels, partic-ularly along the edges of the ribbon. Overall, our results identify spatial confinement as a key ingredient that en-ables and reshapes spin polarization in noncollinear an-tiferromagnets without spin–orbit coupling. This estab-lishes a direct link between magnetic texture, symmetry, and boundary geometry, providing a new perspective for engineering spin-dependent phenomena in nonrelativistic magnetic systems.  
+
+> V. CONCLUSION
+
+We have demonstrated that out-of-plane spin polar-ization can emerge in a kagome antiferromagnet with a coplanar 120 ◦ magnetic texture in the absence of rela-tivistic spin–orbit coupling. The effect originates from the breaking of spin rotational symmetry and the ge-5
+
+FIG. 5. The real-space spin densities in the symmetric ribbon configuration with broken translational symmetry is shown for 
+
+E = −2.8γ (E = −2.75 γ) in (a) and (b) respectively. 
+
+ometric phase acquired by electrons circulating in the chiral magnetic background, which effectively generates a spin-dependent hopping mechanism. In ribbon geome-tries, spatial confinement reveals a pronounced real-space alternating sz texture. While symmetric terminations lead to strong cancellations that suppress the net band-resolved spin polarization, inequivalent edge terminations lift these cancellations and produce an antisymmetric spin splitting reminiscent of altermagnetic states. Impor-tantly, our results suggest that spin polarized edge states in the kagome antiferromagnet appears with a concep-tual difference from edge transport in conventional spin Hall effect. Finally, our results suggest that asymmetric confinement provides a route to altermagnetic-like spin splitting in coplanar antiferromagnets. 
+
+ACKNOWLEDGMENTS 
+
+O. L thanks A. Manchon, U. Schwingenschlögl, H. Ab-dullah, A. Abbout, S. Murakami for useful discussions. S. H was supported by JSPS KAKENHI (Grants Nos. JP22H00101 and JP23H04869), and JST CREST (Grant No. JPMJCR23O4), and JST FOREST (Grant No. JP-MJFR2366). 
+
+[1] I. Žutić, J. Fabian, and S. Das Sarma, Spintronics: Fun-damentals and applications, Rev. Mod. Phys. 76 , 323 (2004). [2] S. A. Wolf, D. D. Awschalom, R. A. Buhrman, J. M. Daughton, S. von Molnár, M. L. Roukes, A. Y. Chtchelkanova, and D. M. Treger, Spintronics: A spin-based electronics vision for the future, Science 294 , 1488 (2001). [3] A. Hirohata, K. Yamada, Y. Nakatani, I.-L. Prejbeanu, B. Diény, P. Pirro, and B. Hillebrands, Review on spin-tronics: Principles and device applications, Journal of Magnetism and Magnetic Materials 509 , 166711 (2020). [4] A. Manchon, H. C. Koo, J. Nitta, S. M. Frolov, and R. A. Duine, New perspectives for rashba spin–orbit coupling, Nature Materials 14 , 871 (2015). [5] N. Nagaosa, J. Sinova, S. Onoda, A. H. MacDonald, and N. P. Ong, Anomalous hall effect, Rev. Mod. Phys. 82 ,1539 (2010). [6] J. Sinova, S. O. Valenzuela, J. Wunderlich, C. H. Back, and T. Jungwirth, Spin hall effects, Rev. Mod. Phys. 87 ,1213 (2015). [7] H. Chen, Q. Niu, and A. H. MacDonald, Anomalous hall effect arising from noncollinear antiferromagnetism, Phys. Rev. Lett. 112 , 017205 (2014). [8] S. Nakatsuji, N. Kiyohara, and T. Higo, Large anoma-lous hall effect in a non-collinear antiferromagnet at room temperature, Nature 527 , 212 (2015). [9] A. K. Nayak, J. E. Fischer, Y. Sun, B. Yan, J. Karel, A. C. Komarek, C. Shekhar, N. Kumar, W. Schnelle, J. Kübler, C. Felser, and S. S. P. Parkin, Large anomalous hall effect driven by a nonvanishing berry curvature in the noncolinear antiferromagnet mn<sub>3</sub>ge, Sci-ence Advances 2, e1501870 (2016). [10] J. Železný, Y. Zhang, C. Felser, and B. Yan, Spin-polarized current in noncollinear antiferromagnets, Phys. Rev. Lett. 119 , 187204 (2017). [11] Y. Zhang, J. Železný, Y. Sun, J. van den Brink, and B. Yan, Spin hall effect emerging from a noncollinear magnetic lattice without spin–orbit coupling, New Jour-nal of Physics 20 , 073028 (2018). [12] V. Baltz, A. Manchon, M. Tsoi, T. Moriyama, T. Ono, and Y. Tserkovnyak, Antiferromagnetic spintronics, Rev. Mod. Phys. 90 , 015005 (2018). [13] V. Bonbien, F. Zhuo, A. Salimath, O. Ly, A. Abbout, and A. Manchon, Topological aspects of antiferromag-nets, Journal of Physics D: Applied Physics 55 , 103002 (2021). [14] B. K. Nikolić, L. P. Zârbo, and S. Souma, Imaging meso-scopic spin hall flow: Spatial distribution of local spin currents and spin densities in and out of multiterminal spin-orbit coupled semiconductor nanostructures, Phys. Rev. B 73 , 075303 (2006). [15] C. L. Kane and E. J. Mele, Quantum spin hall effect in graphene, Phys. Rev. Lett. 95 , 226801 (2005). [16] B. A. Bernevig, T. L. Hughes, and S.-C. Zhang, Quantum spin hall effect and topological phase transition in hgte quantum wells, Science 314 , 1757 (2006). [17] C. W. Groth, M. Wimmer, A. R. Akhmerov, and X. Waintal, Kwant: a software package for quantum transport, New Journal of Physics 16 , 063065 (2014). [18] H. Katsura, N. Nagaosa, and A. V. Balatsky, Spin current and magnetoelectric effect in noncollinear magnets, Phys. Rev. Lett. 95 , 057205 (2005). [19] S. Hayami, Mechanism of antisymmetric spin polariza-tion in centrosymmetric multiple-q magnets based on ef-fective chiral bilinear and biquadratic spin cross prod-ucts, Phys. Rev. B 105 , 024413 (2022). [20] S. Hayami, Y. Yanagi, and H. Kusunose, Bottom-up de-sign of spin-split and reshaped electronic band structures in antiferromagnets without spin-orbit coupling: Proce-dure on the basis of augmented multipoles, Phys. Rev. B 
+
+102 , 144441 (2020). 6
+
+[21] S. Hayami, Y. Yanagi, and H. Kusunose, Spontaneous antisymmetric spin splitting in noncollinear antiferro-magnets without spin-orbit coupling, Phys. Rev. B 101 ,220403 (2020). [22] Y. Yu, M. B. Lyngby, T. Shishidou, M. Roig, A. Kreisel, M. Weinert, B. M. Andersen, and D. F. Agterberg, Odd-parity magnetism driven by antiferromagnetic exchange, Phys. Rev. Lett. 135 , 046701 (2025). [23] J. Mitscherling, J. Priessnitz, C. K. Geschner, and L. Šmejkal, Microscopic origin of p-wave magnetism (2026).

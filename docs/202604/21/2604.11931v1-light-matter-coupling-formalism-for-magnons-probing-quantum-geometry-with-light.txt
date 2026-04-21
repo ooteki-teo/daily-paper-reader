@@ -1,0 +1,2171 @@
+Title: Light-Matter-Coupling formalism for magnons: probing quantum geometry with light
+
+URL Source: https://arxiv.org/pdf/2604.11931v1
+
+Published Time: Wed, 15 Apr 2026 00:07:48 GMT
+
+Number of Pages: 16
+
+Markdown Content:
+## Light-Matter-Coupling formalism for magnons: probing quantum geometry with light 
+
+Ying Shing Liu, 1 Emil Viñas Boström, 2 Michael A. Sentef, 3, 2 and Silvia Viola Kusminskiy 1, 4, ∗
+
+> 1
+
+Institute for Theoretical Solid State Physics, RWTH Aachen University, 52074 Aachen, Germany 
+
+> 2
+
+Max Planck Institute for the Structure and Dynamics of Matter, Center for Free Electron Laser Science, 22761 Hamburg, Germany. 
+
+> 3
+
+Institute for Theoretical Physics and Bremen Center for Computational Materials Science, University of Bremen, 28359 Bremen, Germany 
+
+> 4
+
+Max Planck Institute for the Science of Light, Staudtstraße 2, 91058 Erlangen, Germany 
+
+(Dated: April 15, 2026) Nontrivial quantum geometry is a key feature of the wavefunctions of collective magnetic exci-tations in topological systems, but accessing it experimentally remains an open challenge. While Raman circular dichroism (RCD) has emerged as a promising probe, the fundamental link between the RCD and magnon quantum geometry has remained unsettled, and complicated by the fact that magnons are charge neutral. Here, we identify when and why this link exists. We show that, under broad conditions, the Fleury-Loudon Raman vertex can be obtained directly from a light-matter coupling expansion of the effective magnon Hamiltonian, bypassing the conventional microscopic derivation based on virtual electronic processes. This yields an analytical connection between the RCD and the Berry curvature of magnon bands. Applied to monolayer CrI 3, our theory predicts finite temperature signatures of topological magnons in the RCD. These results establish a general route to quantum-geometry sensitive optical probes in magnonic systems. 
+
+Introduction . Raman scattering is a versatile optical probe that non-invasively reveals the vibrational, struc-tural, and magnetic properties of materials. This makes it an indispensable tool in condensed matter research, in particular for elucidating phonon and magnon dynamics, and their interplay [1–8]. In two-magnon Raman scat-tering, an optical photon is inelastically scattered by a magnetic material through the creation or annihilation of a pair of magnons, leading to the appearance of char-acteristic Stokes and anti-Stokes peaks at twice the sin-gle magnon frequency. Two-magnon Raman scattering can be used to probe e.g. antiferromagnets (AFM) [9– 13] and spin liquids [14–16], giving insight into physi-cal processes which cannot be probed via single-magnon scattering [2, 17–21]. For magnetic systems predicted to have topological magnon bands, where standard methods used in electronic systems to directly probe the quantum geometry [22–29] are not available due to the lack of a Fermi energy, two-magnon Raman scattering in combi-nation with the Raman circular dichroism (RCD) has emerged as a promising alternative [30]. Recently, this mechanism has also been proposed to probe the quantum geometric properties of unconventional magnets, such as chiral quantum spin liquids [31] and altermagnets [32], as well as for probing spectral signatures of anyonic quasi-particles [33]. The Fleury-Loudon (FL) formalism is a well estab-lished framework to describe two-magnon Raman scat-tering [34–37]. The so-called FL Raman scattering vertex is governed by the exchange interaction, and can be de-rived microscopically from a Mott-Hubbard Hamiltonian coupled to light [38, 39]. The question arises whether it is possible to derive the same vertex directly from the ef-fective magnon model, thereby bypassing complex light-matter interactions at the microscopic level, by using a method similar to the minimal coupling substitution for electronic systems: There, the coupling to light can be captured by the replacement k → k − eA where k and 
+
+e are the electronic momentum and charge, and A is the vector potential [40, 41]. However, since magnons do not have an electric charge, it is not clear whether this is at all possible. Nonetheless, it was recently shown that such a substitution is possible for a particular system, namely a two-dimensional (2D) canted antiferromagnet on the honeycomb lattice [30, 42]. Further, the effective model has been applied successfully to other spin systems [31]. In this work, we show that the FL Raman vertex can be obtained directly from the magnon Hamiltonian, when-ever this can be written in the presence of light as 
+
+H(k, e A) = 12 [H(k − eA) + H(k + eA)] . (1) We further provide the conditions under which Eq. (1) is valid, namely, for effective spin models arising from a microscopic Hubbard model where only direct hopping terms are considered, up to second order in a t/U ex-pansion. Under these conditions, optical observables as-sociated with the FL Raman vertex can be immediately obtained in terms of light-matter couplings (LMCs) [30], in direct analogy to the case of electronic systems [41, 43]. The LMCs are defined in terms of derivatives of the ef-fective magnon Hamiltonian in the absence of light, re-ducing the complexity of the calculations enormously. To illustrate the method, we apply our results to 2D honeycomb van der Waals ferromagnets (FM), describ-ing a class of materials predicted to host topolological magnon bands. Examples include Cr X3 (X = I or Br) [44–46] and Kitaev topological ferromagnets Cr XTe 3
+
+(X = Si or Ge) [47]. Using the LMC formalism to cal-culating the FL Raman vertex, we show that starting 
+
+> arXiv:2604.11931v1 [cond-mat.mes-hall] 13 Apr 2026
+
+2from a thermally populated state, the two-magnon RCD gives information on the underlying quantum geometry of the magnon bands. Specifically, we show that the RCD in momentum space is directly proportional to the Berry curvature, and that the contribution of the quantum met-ric is stored in a weighting function. The signal vanishes in the topologically trivial case. 
+
+Fleury-Loudon vertex and the shortcut . The standard microscopic route to obtain the FL vertex starts (in the single-orbital case) from the Hubbard model 
+
+Hmicr = − X
+
+> ⟨ij ⟩σ
+
+tij (c† 
+
+> iσ
+
+cjσ + h.c. ) + U X
+
+> i
+
+ni↑ni↓. (2) The system is assumed to be in the Mott-insulator limit 
+
+tij ≪ U , with tij the amplitude for an electron to hop between sites i and j, and with U the onsite Coulomb interaction. Here, ci,σ is the annihilation operator of an electrons with spin σ, and ni,σ = c† 
+
+> i,σ
+
+ci,σ is the num-ber operator. Using second order perturbation theory in 
+
+t/U , an effective spin Hamiltonian can be obtained, here generally denoted as H0 [48–51]. The light-matter in-teraction is introduced via Peierls substitution, amount-ing to electron hopping processes between different sites 
+
+c† 
+
+> iσ
+
+cjσ → c† 
+
+> iσ
+
+cjσ eiθ ij (t) acquiring a phase θij (t) [34–36], which is given by 
+
+θij (t) = − e
+
+ℏ
+
+ˆ ij
+
+dr A (r, t ). (3) By applying a Jordan map, 
+
+c† 
+
+> iσ
+
+ciσ ′ = 12 niδσ′σ + ( Si · τ )σ′σ , (4) where τ = ( τx, τ y , τ z ) is the vector of Pauli matrices and ni = ni↑ + ni↓, the effective coupling Hamiltonian can be written in terms of spin operators. A useful ap-proach is to use a time-dependent Schrieffer-Wolff trans-formation [52], which is a time-dependent perturbative approach to second order in t/U .For a Hamiltonian H0 with only pairwise spin interac-tions, one obtains 
+
+Hc(k, e A) = Iij (t)H0(k) (5) where we have written the result in Fourier k-space and in the basis of the spin operators. Here 
+
+H0 = 12
+
+X
+
+> k
+
+H0(k)Sk · S−k , (6) where Sk is the Fourier transform of the local spin oper-ators. The time-dependent coefficient reads 
+
+Iij (t) = Im 
+
+ˆ t
+
+> −∞
+
+dt ′ei(U +iη )( t−t′) cos ( θij (t) − θij (t′)) ,
+
+(7) where e−η(t−t′) with η → 0+ is a convergence factor. The FL vertex is obtained by second order perturbation theory in the vector potential [34–36]. Using the dipole and rotating wave approximations, Eq. (7) is given to second order in A by 
+
+Iij (t) = e2
+
+ℏ2
+
+1
+
+U − ωin 
+
+(A∗ 
+
+> sc
+
+· dij )( Ain · dij )ei(ωin −ωsc )t. (8) Here Ain eiω in t (Asc eiω sc t) is the vector potential field of the incident (scattered) photon with frequency ωin (ωsc ), and dij = Ri − Rj with Ri lattice site i. Using ωin −
+
+ωsc ≪ ωin , ω sc we can approximate ωin ≈ ωsc to obtain the standard FL Hamiltonian [34–36] 
+
+HFL (k, e A) = e2
+
+ℏ2
+
+1
+
+U − ωin 
+
+(A∗ 
+
+> sc
+
+· dij )( Ain · dij )H0(k) .
+
+(9) As reported in Ref. [39], only direct electronic hopping processes lead to a vertex of the form of Eq. (9). Other hopping processes in a multiorbital model, for example ligand-mediated hopping processes, generate additional terms. Those non-FL terms can be important for strong spin-orbit coupling materials, for instance, in Kitaev ma-terials, where the Raman scattering intensity differs from the one obtained by the FL mechanism by at least two orders of magnitude [39]. In this work we consider only the FL terms. We note that if the spin Hamiltonian coupled to light (Eq. (5)) can be written as 
+
+Hc(k, e A) = 12
+
+H0(k − eA) + H0(k + eA) , (10) Eq. (9) can be obtained by replacing dij by momentum derivatives, 
+
+HFL (k, e A) = e2
+
+ℏ2
+
+1
+
+U − ωin 
+
+(A∗ 
+
+> sc
+
+· ∇ k)( Ain · ∇ k)H0(k) .
+
+(11) In the Supplementary Material (SM) [53], making use of the results from Refs. [49, 52, 54], we show that as long as only direct hopping terms are considered, Eq. (10) is valid to all orders in the vector potential for a sec-ond order expansion in t/U , consistent with the degree of approximation that we are using in this work. For higher orders in t/U , Eq. (10) breaks down due to con-catenated virtual hopping processes which do not fall on a straight line, in particular by the magnetic flux enclosed by closed-loop hopping processes (see SM [53]). Our re-sults are consistent with previous studies in the static field limit [55, 56]. Therefore, to second order in t/U , we can define light-matter couplings (LMCs) in a way analogous to that of electronic systems [41] 
+
+Hc(k, e A) = H0(k) + X
+
+> n=1
+
+X
+
+> μ··· ν
+
+L(n) 
+
+> μ··· ν
+
+(k)( eA μ) · · · (eA ν ).
+
+(12) 3Here Aμ is the μth component of vector potential, and we have defined the nth order LMC as 
+
+L(n) 
+
+> μ...ν
+
+(k) = 1
+
+n! ∂{eA μ} . . . ∂ {eA ν }
+
+| {z }
+
+> n
+
+Hc(k, e A)|A=0 . (13) For Hamiltonians of the form of Eq. (10), only terms of even order in A are present in the expansion, such that for even-order LMCs we can replace the vector potential derivatives with momentum derivatives, 
+
+L(2 n) 
+
+> μ...ν
+
+(k) = 12n! ∂μ . . . ∂ ν
+
+| {z }
+
+> n
+
+H0(k) . (14) Here we have introduced the notation ∂kμ → ∂μ. Rele-vant optical observables resulting from the scattering of an even number of photons can be obtained from these LMCs. In particular, the FL vertex in terms of the LMCs simply reads 
+
+HFL (k, e A) = 2e2
+
+ℏ2(U − ωin )
+
+X
+
+> μν
+
+A∗μ 
+
+> sc
+
+Aν
+
+> in
+
+L(2)  
+
+> μν
+
+(k). (15) We therefore conclude that, to second order in t/U ,the FL vertex can be obtained by means of a minimal-substitution like transformation, at the level of the effec-tive spin Hamiltonian. 
+
+Case study: 2D honeycomb ferromagnets . We now apply the LMC formalism to compute the two-magnon RCD for a 2D honeycomb ferromagnet, see Fig. 1a. We show that a non-vanishing circular dichroism signal indi-cates a nontrivial topology of the magnon bands, similar to the result reported in Ref. [30] for a canted AFM on the honeycomb lattice. Differently from Ref. [30], the relevant RCD processes for the FM are vertical inter-band transitions, which are activated at finite tempera-ture. The temperature dependence of the two-magnon RCD signal serves to pinpoint the topological nature of the magnon bands. Using a Holstein-Primakoff (HP) transformation for the spin operators, the magnon Hamiltonian can be ob-tained from the spin Hamiltonian [44, 57] 
+
+H0 = −
+
+> 3
+
+X
+
+> r=1
+
+X
+
+> ⟨i,j ⟩r
+
+Jr Si · Sj − X
+
+> ⟨i,j ⟩2
+
+Dij · (Si × Sj ) (16) 
+
+− X
+
+> i
+
+Az (Szi )2.
+
+Here ⟨i, j ⟩r denotes a sum over sites that are rth nearest neighbors (n.n.), Jr is the rth n.n. exchange coefficient, 
+
+Dij is the DMI vector between sites i and j, and Az is an easy-axis anisotropy. One can show that both the exchange and DMI inter-actions satisfy Eq. (10) to second order in t/U [53]. The anisotropy term plays no role in the k- or A-dependence. Hence, we can apply the LMCs formalism to Eq. (16). In 
+
+FIG. 1: (a) Setup: incident circularly polarized light is scattered from a two-dimensional honeycomb ferromag-net. (b) Upper and lower magnon bands calculated from Eq. (17). (c,d) Berry curvatures of the upper (c) magnon band and the lower (d) magnon band. Parameters are taken from Ref. [44], and are J1 = 2 .01 meV, J2 = 0 .16 meV, 
+
+J3 = −0.08 meV, Az = 0 .49 meV, and D = 0 .31 meV. The length of the spin vector is S = 3 /2.
+
+the spin-wave limit, Eq. (16) reduces to a Hamiltonian of the form [44, 53, 58] 
+
+H0 ≈ 12
+
+X
+
+> k
+
+ψ†
+
+> k
+
+H0
+
+> M
+
+(k)ψk . (17) The basis of bosonic operators is given by ψ† 
+
+> k
+
+= ( a†
+
+> k
+
+, b †
+
+> k
+
+)
+
+where a† 
+
+> k
+
+≈ S−
+
+> A, −k
+
+/√2S and a†
+
+> k
+
+ak ≈ S − SzA, k for oper-ators on sub-lattice A, and similarly for the operators on sub-lattice B. Here S is the spin quantum num-ber of the magnetic ion. The two-magnon FL Raman scattering vertex can be now obtained using Eqs. (14) and (15). The setup, calculated magnon bands and as-sociated Berry curvature are all illustrated in Fig. 1. Let us now consider for definiteness the scattering of light at normal incidence, for a 2D sample lying in the 
+
+xy -plane. We define the basis of circular polarization as 
+
+es = 1√2 (ex + ise y ), with s = ±1, and ez is the propaga-tion direction. Using Eq. (15) we obtain the two-magnon Raman scattering Hamiltonian 
+
+Hss ′ 
+
+> R
+
+= 12
+
+X
+
+> k
+
+ψ†
+
+> k
+
+Hss ′
+
+> R, k
+
+ψk, (18) where s (s′) labels the incident (scattered) polarization of light, and 
+
+Hss ′ 
+
+> R, k
+
+= K0
+
+2
+
+h
+
+L(2)  
+
+> xx
+
+(k) + ss ′L(2)  
+
+> yy
+
+(k) + i(s − s′)L(2)  
+
+> xy
+
+(k)
+
+i
+
+.
+
+(19) Here K0 = 2 e2Asc Ain /[ℏ2(U −ωin )] , and the explicit form of L(2)  
+
+> μν
+
+is obtained by applying Eq. (14) to H0
+
+> M
+
+(k). These expressions are given in the SM [53]. 4As we see in Fig. 1, the Berry curvature is maximal at the edges of the Brillouin zone (BZ). Hence, to probe it, we need Raman processes covering the full BZ. Due to conservation of linear momentum, only vertical tran-sitions are allowed. At finite temperature, the thermal population activates processes at finite k. At a given temperature T , the Raman scattering cross-section is [59] 
+
+Pss ′
+
+(ω, T ) = X
+
+> mn
+
+e−βE m
+
+Z |⟨ Ψn|Hss ′ 
+
+> R
+
+|Ψm⟩| 2δ(ℏω − Enm ),
+
+(20) where β = ( kB T )−1 is the inverse of the temperature T ,
+
+ω = ωsc − ωin is the frequency difference between scat-tered and incident light, and Enm = En −Em is the tran-sition energy from the initial state to the final state. The initial states |Ψm⟩ are weighted by the Boltzmann factor 
+
+e−βE m , and the partition function is Z = P 
+
+> m
+
+e−βE m .Since the FL vertex is diagonal in k, we can label the eigenstates by |Ψm⟩ = |mkα⟩, where |mkα⟩ contains m
+
+magnons with momentum k in band α. In the follow-ing discussion, we restrict our attention to processes in which a magnon undergoes an interband transition from the lower, thermally occupied band, to the upper magnon band. We assume that the upper magnon band is initially unoccupied, which is usually valid for temperatures below the Curie temperature [60, 61]. The Raman cross-section can then be written as 
+
+Pss ′
+
+(ω, T ) = X
+
+> mk
+
+e−βmϵ k−
+
+Z |⟨ 1k+|Hss ′
+
+> R,k
+
+|mk−⟩| 2 (21) 
+
+× δ(ℏω − ∆k),
+
+where ϵk+ (ϵk−)is the magnon energy of the upper (lower) band, and ∆k = ϵk+ − ϵk− is the magnon band gap. The finite-temperature RCD, referred as thermal RCD (TRCD) in the following, is defined as χ(ω, T ) =P 
+
+> s′
+
+P Rs ′
+
+(ω, T )−P Ls ′
+
+(ω, T ) and can be explicitly written as 
+
+χ(ω, T ) = X
+
+> mk
+
+K20
+
+e−βmϵ k−
+
+Z χk,+−δ(ℏω − ∆k), (22) where 
+
+χk = X
+
+> s′
+
+
+
+|⟨ 1k,+|HRs ′
+
+> R, k
+
+|mk,−⟩| 2 − |⟨ 1k,+|HLs ′
+
+> R, k
+
+|mk,−⟩| 2
+
+.
+
+(23) Using Eq. (22) together with the parameters for CrI 3
+
+measured in Ref. [44], the TRCD can be immediately obtained after transforming the LMCs into the magnon basis [30, 53]. The model predicts a topological ferro-magnetic magnon insulator for finite DMI. The TRCD is shown as a function of frequency and temperature in Fig. 2, remaining below the Curie temperature Tc = 45 Kfor CrI 3 [44]. The TRCD consists of a peak dominated by the K and K′ points, and a broadband component arising from thermally weighted contributions across the                    
+
+> FIG. 2: Thermal Raman circular dichroism as a function of frequency, for a topological monolayer of the ferromagnet CrI 3for temperatures below the Curie temperature Tc=45 K. (a) Results for different temperatures for D= 0 .31
+> meV. The positive peak indicates the topological band gap at the Kand K′points. The negative broadband signal originates from the high thermal population at the energy minimum around Γpoint. (b) Signal for different Dat T=35 K. The signal vanishes at D= 0 , corresponding to the topologically trivial limit. Model parameters are taken from Ref. [44].
+
+Brillouin zone. The entire TRCD signal vanishes in the topologically trivial phase ( D = 0 ). The TRCD in momentum space is related to the Berry curvature of the lower magnon band Ω−(k) [30, 53, 62] via 
+
+χk = −Ω−(k)ϱk, (24) where ϱk is a weighting function that depends on the local geometry of the energy gap (see SM [53] for details). This result is analogous to what was found in Ref. [30] for a canted AFM at zero temperature. Assuming that the local geometry of the energy gap is inversion symmetric, i.e., ϱ−k = ϱk, the TRCD will always vanish when the system possesses time-reversal symmetry. 
+
+Conclusion and discussion . In this work, we have demonstrated that the FL vertex can be obtained via an LMC formalism, akin to electronic systems, by tak-ing momentum derivatives of the quadratic spin Hamil-tonian H0 
+
+> M
+
+(k). This method is valid whenever the con-dition in Eq. (10) is satisfied, and allows for the inclu-sion of quadratic spin interactions beyond the Heisen-berg exchange, such as DMI and symmetric anisotropic exchange. Crucially, this shortcut is generally applicable to Mott insulating materials. It remains applicable to Mott-Hund insulators, provided that the Raman opera-tor arises from direct hopping (see Ref. [39]). Many fer-romagnetic insulators, such as pyrochlore ferromagnets 
+
+Lu 2V2O7 [63] and CrI 3 [44], fall into this Mott-Hund in-sulator class. While assessing the magnitude of this con-tribution compared to ligand-mediated hopping terms is beyond the scope of this work, a detailed discussion of such "non-FL" terms in the specific case of β-Li 2IrO 3
+
+can be found in Ref. [39]. We applied our method to calculate the TRCD of a topological ferromagnetic magnon insulator described by 5Heisenberg exchange, DMI, and easy-axis anisotropy. We found that the TRCD vanishes whenever the system is in a topologically trivial regime. We showed that the TRCD is connected to the Berry curvature by a weight-ing function ϱk containing information on the quantum geometry of the bands. This is consistent with recent re-sults in spin liquids showing that the RCD in momentum space is related to quantum metric and second derivatives of the eigenstates [31]. The link between RCD and the quantum geometry of magnon bands is most explicit in the two-band limit [30]. In multi-band systems, such as the four-band canted AFM in a honeycomb lattice, this connection becomes more intricate due to the presence of multiple scattering channels. Nevertheless, a compre-hensive relationship can be established by accounting for all scattering processes [42]. Recently, bicircular Raman spectroscopy has been proposed to probe the quantum geometry of altermagnetic magnon bands [32]. In the broader context of electronic systems, alternative probes of quantum geometry have also been identified, includ-ing magnetic circular dichroism [64] and quantum optical measurement schemes [65]. We expect that a full anal-ogy between the optical response and quantum geometry – similar to that developed for electronic systems [41, 66] – should extend to bosonic systems. We leave this explo-ration for future work. Lastly, we address the treatment of the external elec-tromagnetic field. The standard approach typically em-ploys a quantized vector potential in the Peierls substi-tution before employing a perturbation scheme [36, 38, 39, 67], whereas we used a classical time-dependent field and quantized the field at the very end of the deriva-tion. These two frameworks are expected to converge in the limit of weak light-matter interaction. However, this equivalence is not universal, as discussed in Ref. [68]. In-vestigating the discrepancies between semiclassical and fully quantum mechanical descriptions of optical observ-ables in magnon systems remains an open and interest-ing question. We note that while the Peierls coupling re-mains the dominant mechanism for Raman spectroscopy, other light-matter couplings in a magnetic system – such as the Aharonov-Casher effect – could in principle be considered. However, the (k, E) relation is structurally trivial in these cases, so we have omitted them. In summary, this Letter introduces a shortcut for de-riving the FL vertex in quadratic spin models, providing a practical route to evaluate the optical observables in-volving two-photon two-magnon processes. This work lays the foundation for a geometric understanding of the optical response in magnonic systems. 
+
+Acknowledgments .— We thank Johannes Knolle and Achim Rosch for fruitful discussions. SVK and MAS acknowledge funding by the Deutsche Forschungs-gemeinschaft (DFG, German Research Foundation)-531215165 (Research Unit ‘OPTIMAL’)). YSL and SVK acknowledge funding by the DFG Project-ID 541503763 (Research Unit ‘ChiPS’,). MAS was funded by the European Union (ERC, CAVMAT, project no. 101124492). EVB acknowledges support from the Clus-ter of Excellence “CUI: Advanced Imaging of Mat-ter”–EXC 2056–project ID 390715994, SFB-925 “Light induced dynamics and control of correlated quantum sys-tems”–project ID 170620586 of the Deutsche Forschungs-gemeinschaft (DFG), and the European Research Coun-cil (ERC-2024-SyG-UnMySt–101167294). Views and opinions expressed are however those of the author(s) only and do not necessarily reflect those of the European Union or the European Research Council. Neither the European Union nor the European Research Council can be held responsible for them.                                            
+
+> ∗kusminskiy@physik.rwth-aachen.de [1] R. Loudon, The Raman effect in crys-tals, Advances in Physics 13 ,423 (1964), https://doi.org/10.1080/00018736400101051. [2] T. P. Devereaux and R. Hackl, Inelastic light scatter-ing from correlated electrons, Rev. Mod. Phys. 79 , 175 (2007). [3] H. Li, Q. Zhang, C. C. R. Yap, B. K. Tay, T. H. T. Edwin, A. Olivier, and D. Baillargeat, From bulk to monolayer
+> MoS 2:Evolution of raman scattering, Advanced Func-tional Materials 22 , 1385 (2012). [4] W. Weber and R. Merlin, Raman Scattering in Materials Science , Springer Series in Materials Science (Springer Berlin Heidelberg, 2013). [5] X. Zhang, X.-F. Qiao, W. Shi, J.-B. Wu, D.-S. Jiang, and P.-H. Tan, Phonon and raman scattering of two-dimensional transition metal dichalcogenides from mono-layer, multilayer to bulk material, Chem. Soc. Rev. 44 ,2757 (2015). [6] E. Smith and G. Dent, Modern Raman Spectroscopy: A Practical Approach (Wiley, 2019). [7] J. Cui, E. V. Boström, M. Ozerov, F. Wu, Q. Jiang, J.-H. Chu, C. Li, F. Liu, X. Xu, A. Rubio, and Q. Zhang, Chirality selective magnon-phonon hybridiza-tion and magnon-induced chiral phonons in alay-ered zigzag antiferromagnet, Nature Communications 14 ,10.1038/s41467-023-39123-y (2023). [8] R. Kumawat, S. Farswan, S. Kaur, S. Bhatia, and K. Sen, Potential of raman scattering in probing magnetic exci-tations and their coupling to lattice dynamics, Journal of Physics: Condensed Matter 36 , 493001 (2024). [9] R. J. Elliott and M. F. Thorpe, The effects of magnon-magnon interaction on the two-magnon spectra of anti-ferromagnets, Journal of Physics C: Solid State Physics
+> 2, 1630 (1969). [10] M. G. Cottam, Theory of two-magnon raman scatter-ing in antiferromagnets at finite temperatures, Journal of Physics C: Solid State Physics 5, 1461 (1972). [11] D. J. Lockwood and M. G. Cottam, Light scattering from magnons in mnf 2, Phys. Rev. B 35 , 1973 (1987). [12] D. Lockwood, M. Cottam, and J. Baskey, One- and two-magnon excitations in nio, Journal of Magnetism and Magnetic Materials 104-107 , 1053 (1992), proceedings
+
+6
+
+of the International Conference on Magnetism, Part II. [13] D. J. Lockwood and M. G. Cottam, Magnetooptic cou-pling coefficients for one- and two-magnon raman scat-tering in rutile-structure antiferromagnets FeF 2, MnF 2,
+
+CoF 2, and NiF 2, Low Temperature Physics 38 , 549 (2012). [14] J. Knolle, G.-W. Chern, D. L. Kovrizhin, R. Moessner, and N. B. Perkins, Raman scattering signatures of kitaev spin liquids in A2IrO 3 iridates with A = Na or Li, Phys. Rev. Lett. 113 , 187201 (2014). [15] S. Yamamoto and T. Kimura, Raman scattering po-larization and single spinon identification in two-dimensional Kitaev quantum spin liquids, Journal of the Physical Society of Japan 89 , 063701 (2020), https://doi.org/10.7566/JPSJ.89.063701. [16] Y. Choi, S. Lee, J.-H. Lee, S. Lee, M.-J. Seong, and K.-Y. Choi, Bosonic spinons in anisotropic triangular antiferro-magnets, Nature Communications 12 , 6453 (2021). [17] A. Sahasrabudhe, D. A. S. Kaib, S. Reschke, R. Ger-man, T. C. Koethe, J. Buhot, D. Kamenskyi, C. Hickey, P. Becker, V. Tsurkan, A. Loidl, S. H. Do, K. Y. Choi, M. Grüninger, S. M. Winter, Z. Wang, R. Valentí, and P. H. M. van Loosdrecht, High-field quantum disordered state in α − RuCl 3: Spin flips, bound states, and multi-particle continuum, Phys. Rev. B 101 , 140410 (2020). [18] S. Trebst and C. Hickey, Kitaev materials, Physics Re-ports 950 , 1 (2022), kitaev materials. [19] C. Calderon Filho, P. Gomes, A. García-Flores, G. Bar-beris, and E. Granado, Two-magnon raman scattering in limnpo4, Journal of Magnetism and Magnetic Materials 
+
+377 , 430 (2015). [20] D. Rigitano, D. Vaknin, G. E. Barberis, and E. Granado, Raman scattering from one and two magnons in magne-toelectric linipo 4, Phys. Rev. B 101 , 024417 (2020). [21] S. Ghosh, C. Lygouras, Z. Feng, M. Fu, S. Nakatsuji, and N. Drichko, Raman spectroscopic evidence for linearly dispersed nodes and magnetic ordering in the topologi-cal semimetal V1/3NbS 2 (2025), arXiv:2504.04590 [cond-mat] version: 1. [22] K. v. Klitzing, G. Dorda, and M. Pepper, New Method for High-Accuracy Determination of the Fine-Structure Con-stant Based on Quantized Hall Resistance, Phys. Rev. Lett. 45 , 494 (1980). [23] Y. Zhang, Y.-W. Tan, H. L. Stormer, and P. Kim, Ex-perimental observation of the quantum Hall effect and Berry’s phase in graphene, Nature 438 , 201 (2005), pub-lisher: Nature Publishing Group. [24] M. Z. Hasan and C. L. Kane, Colloquium: Topological insulators, Rev. Mod. Phys. 82 , 3045 (2010). [25] C.-Z. Chang, J. Zhang, X. Feng, J. Shen, Z. Zhang, M. Guo, K. Li, Y. Ou, P. Wei, L.-L. Wang, Z.-Q. Ji, Y. Feng, S. Ji, X. Chen, J. Jia, X. Dai, Z. Fang, S.-C. Zhang, K. He, Y. Wang, L. Lu, X.-C. Ma, and Q.-K. Xue, Experimental observation of the quantum anomalous hall effect in a magnetic topological insulator, Science 340 ,167 (2013). [26] X.-L. Qi and S.-C. Zhang, Topological insulators and su-perconductors, Rev. Mod. Phys. 83 , 1057 (2011). [27] Q. Ma, A. G. Grushin, and K. S. Burch, Topology and geometry under the nonlinear electromagnetic spotlight, Nat. Mater. 20 , 1601 (2021), publisher: Nature Publish-ing Group. [28] P. Törmä, Essay: Where can quantum geometry lead us?, Phys. Rev. Lett. 131 , 240001 (2023). [29] M. Kang, S. Kim, Y. Qian, P. M. Neves, L. Ye, J. Jung, D. Puntel, F. Mazzola, S. Fang, C. Jozwiak, A. Bost-wick, E. Rotenberg, J. Fuji, I. Vobornik, J.-H. Park, J. G. Checkelsky, B.-J. Yang, and R. Comin, Measurements of the quantum geometric tensor in solids, Nat. Phys. 21 ,110 (2025), publisher: Nature Publishing Group. [30] E. Viñas Boström, T. S. Parvini, J. W. McIver, A. Ru-bio, S. V. Kusminskiy, and M. A. Sentef, Direct optical probe of magnon topology in two-dimensional quantum magnets, Phys. Rev. Lett. 130 , 026701 (2023). [31] E. Koller, V. Leeb, N. B. Perkins, and J. Knolle, Raman circular dichroism and quantum geometry of chiral quan-tum spin liquids (2025), arXiv:2503.14091 [cond-mat.str-el]. [32] R. Yuan, W. J. Jankowski, K. Shen, and R.-J. Slager, Quantum geometry of altermagnetic magnons probed by light (2025), arXiv:2508.02781 [cond-mat.mes-hall]. [33] A. P. Joy and A. Rosch, Raman spectroscopy of anyons in generic kitaev spin liquids, Phys. Rev. B 112 , 184411 (2025). [34] P. A. Fleury and R. Loudon, Scattering of light by one-and two-magnon excitations, Phys. Rev. 166 , 514 (1968). [35] B. S. Shastry and B. I. Shraiman, Theory of raman scat-tering in mott-hubbard systems, Phys. Rev. Lett. 65 ,1068 (1990). [36] B. S. Shastry and B. I. Shraiman, Raman scat-tering in mott-hubbard systems, International Journal of Modern Physics B 05 , 365 (1991), https://doi.org/10.1142/S0217979291000237. [37] P. J. Freitas and R. R. P. Singh, Two-magnon raman scattering in insulating cuprates: Modifications of the effective raman operator, Phys. Rev. B 62 , 5525 (2000). [38] W.-H. Ko, Z.-X. Liu, T.-K. Ng, and P. A. Lee, Raman signature of the U (1) dirac spin-liquid state in the spin- 12
+
+kagome system, Phys. Rev. B 81 , 024414 (2010). [39] Y. Yang, M. Li, I. Rousochatzakis, and N. B. Perkins, Non-loudon-fleury raman scattering in spin-orbit coupled mott insulators, Phys. Rev. B 104 , 144412 (2021). [40] M. Schüler, U. D. Giovannini, H. Hübener, A. Rubio, M. A. Sentef, and P. Werner, Local berry curvature sig-natures in dichroic angle-resolved photoelectron spec-troscopy from two-dimensional materials, Science Ad-vances 6, eaay2730 (2020). [41] G. E. Topp, C. J. Eckhardt, D. M. Kennes, M. A. Sen-tef, and P. Törmä, Light-matter coupling and quantum geometry in moiré materials, Phys. Rev. B 104 , 064306 (2021). [42] Y. S. Liu, E. Viñas Boström, M. A. Sentef, and S. V. Kusminskiy, in preparation. [43] D. J. Passos, G. B. Ventura, J. M. V. P. Lopes, J. M. B. L. d. Santos, and N. M. R. Peres, Nonlinear optical responses of crystalline systems: Results from a velocity gauge analysis, Phys. Rev. B 97 , 235446 (2018). [44] L. Chen, J.-H. Chung, B. Gao, T. Chen, M. B. Stone, A. I. Kolesnikov, Q. Huang, and P. Dai, Topological spin excitations in honeycomb ferromagnet CrI 3, Phys. Rev. X 8, 041028 (2018). [45] L. Chen, J.-H. Chung, M. B. Stone, A. I. Kolesnikov, B. Winn, V. O. Garlea, D. L. Abernathy, B. Gao, M. Au-gustin, E. J. G. Santos, and P. Dai, Magnetic field effect on topological spin excitations in cri 3, Phys. Rev. X 11 ,031047 (2021). [46] Z. Cai, S. Bao, Z.-L. Gu, Y.-P. Gao, Z. Ma, Y. Shang-guan, W. Si, Z.-Y. Dong, W. Wang, Y. Wu, D. Lin, 7
+
+J. Wang, K. Ran, S. Li, D. Adroja, X. Xi, S.-L. Yu, X. Wu, J.-X. Li, and J. Wen, Topological magnon insula-tor spin excitations in the two-dimensional ferromagnet 
+
+crbr 3, Phys. Rev. B 104 , L020402 (2021). [47] F. Zhu, L. Zhang, X. Wang, F. J. dos Santos, J. Song, T. Mueller, K. Schmalzl, W. F. Schmidt, A. Ivanov, J. T. Park, J. Xu, J. Ma, S. Lounis, S. Blügel, Y. Mokrousov, Y. Su, and T. Brückel, Topologi-cal magnon insulators in two-dimensional van der Waals ferromagnets CrSiTe 3 and CrGeTe 3: Toward intrinsic gap-tunability, Sci. Adv. 7, eabi7532 (2021), https://www.science.org/doi/pdf/10.1126/sciadv.abi7532. [48] A. H. MacDonald, S. M. Girvin, and D. Yoshioka, tU
+
+expansion for the hubbard model, Phys. Rev. B 37 , 9753 (1988). [49] T. Yildirim, A. B. Harris, A. Aharony, and O. Entin-Wohlman, Anisotropic spin Hamiltonians due to spin-orbit and Coulomb exchange interactions, Phys. Rev. B 
+
+52 , 10239 (1995). [50] M. Takahashi, Half-filled hubbard model at low temper-ature, Journal of Physics C: Solid State Physics 10 , 1289 (1977). [51] H. Tasaki, Physics and Mathematics of Quantum Many-Body Systems , Graduate Texts in Physics (Springer, 2020). [52] M. Eckstein, J. H. Mentink, and P. Werner, Designing spin and orbital exchange Hamiltonians with ultrashort electric field transients, arXiv 10.48550/arXiv.1703.03269 (2017). [53] Supplementary material, see supplemental material at [url will be inserted by publisher] for detailed derivation, computation of Berry curvature for magnon bands can be found in the SM. [54] S. Kitamura, T. Oka, and H. Aoki, Probing and control-ling spin chirality in mott insulators by circularly polar-ized laser, Phys. Rev. B 96 , 014406 (2017). [55] D. Sen and R. Chitra, Large-U limit of a hubbard model in a magnetic field: Chiral spin interactions and param-agnetism, Phys. Rev. B 51 , 1922 (1995). [56] O. I. Motrunich, Orbital magnetic field effects in spin liquid with spinon fermi sea: Possible application to 
+
+κ−(ET) 2Cu 2(CN) 3, Phys. Rev. B 73 , 155115 (2006). [57] T. Holstein and H. Primakoff, Field dependence of the intrinsic domain magnetization of a ferromagnet, Phys. Rev. 58 , 1098 (1940). [58] S. A. Owerre, A first theoretical realization of honeycomb topological magnon insulator, J. Phys.: Cond. Matt. 28 ,386001 (2016). [59] S. Bacci and E. Gagliano, Temperature dependence of the raman scattering in the two-dimensional heisenberg antiferromagnet, Phys. Rev. B 43 , 6224 (1991). [60] J. Cenker, B. Huang, N. Suri, P. Thijssen, A. Miller, T. Song, T. Taniguchi, K. Watanabe, M. A. McGuire, D. Xiao, and X. Xu, Direct observation of two-dimensional magnons in atomically thin CrI3, Nat. Phys. 
+
+17 , 20 (2021). [61] B. Huang, G. Clark, E. Navarro-Moratalla, D. R. Klein, R. Cheng, K. L. Seyler, D. Zhong, E. Schmidgall, M. A. McGuire, D. H. Cobden, W. Yao, D. Xiao, P. Jarillo-Herrero, and X. Xu, Layer-dependent ferromagnetism in a van der Waals crystal down to the monolayer limit, Nature 546 , 270 (2017). [62] D. Xiao, M.-C. Chang, and Q. Niu, Berry phase effects on electronic properties, Rev. Mod. Phys. 82 , 1959 (2010). [63] Y. Onose, T. Ideue, H. Katsura, Y. Shiomi, N. Nagaosa, and Y. Tokura, Observation of the magnon hall effect, Science 329 , 297 (2010), https://www.science.org/doi/pdf/10.1126/science.1188260. [64] B. Ghosh, Y. Onishi, S.-Y. Xu, H. Lin, L. Fu, and A. Ban-sil, Probing quantum geometry through optical conduc-tivity and magnetic circular dichroism, Science Advances 
+
+10 , eado1761 (2024), publisher: American Association for the Advancement of Science. [65] M. Lysne, M. Schüler, and P. Werner, Quantum optics measurement scheme for quantum geometry and topo-logical invariants, Phys. Rev. Lett. 131 , 156901 (2023). [66] J. Ahn, G.-Y. Guo, N. Nagaosa, and A. Vishwanath, Rie-mannian geometry of resonant optical responses, Nature Physics 18 , 290 (2022). [67] B. S. Shastry and B. I. Shraiman, Theory of raman scat-tering in mott-hubbard systems, Phys. Rev. Lett. 65 ,1068 (1990). [68] M. A. Sentef, J. Li, F. Künzel, and M. Eckstein, Quantum to classical crossover of floquet engineering in correlated quantum systems, Phys. Rev. Res. 2, 033033 (2020). S1 
+
+## Supplementary Material for "Light-Matter-Coupling formalism for magnons: probing quantum geometry with light"  
+
+> I. OUTLINE
+
+In this Supplementary Material, we present detailed derivations that demonstrate the validity of Eq. (10) in the main text and establish the connection between RCD and Berry curvature given by Eq. (24) in the main text. Specifically, in Sec. II, we apply a time-dependent Schrieffer-Wolff transformation to the Mott-Hubbard model and perform a perturbation expansion in powers of t/U with a time-dependent Peierls phase, following the approaches of Kitamura et al. [54] and Eckstein et al. [52]. In Sec. III, we apply our formalism to calculate the Fleury Loudon (FL) Raman vertex to a two-band ferromagnetic magnon Hamiltonian that fulfills the condition in Eq. (S1) and derive an expression of the RCD in terms of the Berry curvature of the magnon bands in Eq. (S63). The details of the model of a monolayer CrI 3 used in the main text are shown in Sec. IV.  
+
+> II. PERTURBATIVE EXPANSION OF THE MOTT-HUBBARD MODEL WITH PEIERLS PHASE
+
+In this section, we provide a derivation that demonstrates the validity of the condition 
+
+H(k, e A) = 12 [H(k − eA) + H(k + eA)] , (S1) up to the second order in the perturbation expansion of t/U for a spin Hamiltonian coupled to light. Furthermore, we show that this condition generally breaks down at higher orders. We begin with a single-band Hubbard model (Eq. (2) in the main text), 
+
+Hmicr = − X
+
+> ⟨ij ⟩σ
+
+tij 
+
+
+
+c† 
+
+> iσ
+
+cjσ + h.c. 
+
+
+
++ U X
+
+> i
+
+ni↑ni↓ , (S2) in the Mott limit 0 < t ij ≪ U , where tij ∈ R is the hopping amplitude between site i and j, and U is the on-site Coulomb potential. In the presence of an external electromagnetic field, a standard approach to treat the coupling is to introduce a Peierls phase, 
+
+bH(t) = − X
+
+> ⟨ij ⟩σ
+
+
+
+tij e−ie ´ ji A(r,t )·drc† 
+
+> iσ
+
+cjσ + h.c. 
+
+
+
++ U X
+
+> i
+
+ni↑ni↓. (S3) Here, we have set ℏ = 1 . Let θij (t) = −e ´ ji A(r, t ) · dr. Applying the dipole approximation, that is, the vector potential is slowly varying between two sites i and j, we can re-write θij (t) as −eA(t) · dij and define an effective hopping amplitude ˜tij (t) := tij eiθ ij (t) ∈ C. Following the Floquet-Magnus expansion used in Ref. [54], we first re-write the time-dependent Schrieffer-Wolff (SW) transformation eH(t) = ei bS(t)( bH(t) − i∂ t)e−i bS(t) into a recursive relation with a unitary operator ei bS(t)
+
+eH(t) + ∂ bS∂t = bH(t) −
+
+> ∞
+
+X
+
+> n=1
+
+Bn
+
+n! ad ni bS(t)
+
+
+
+(−1) n−1 bH(t) + eH(t)
+
+
+
+, (S4) where Bn is the Bernoulli’s number, bS(t) is the SW transformation generator and ad i bS(t)· =
+
+h
+
+i bS(t), ·
+
+i
+
+. In the Mott limit |˜tij | = |tij | ≪ U , we can split the Hamiltonian bH(t) = −λ bT (t) + bU (t) into a hopping term bT (t) = 
+
+P
+
+> ijσ
+
+˜tij c† 
+
+> iσ
+
+cjσ + h.c 
+
+
+
+and an on-site potential term bU = U P 
+
+> i
+
+ni↑ni↓, where λ is a parameter to keep track of the order of expansion. We relax the constraint of nearest-neighbor hopping to study the general contribution from the hopping term. Analogously for the transformed Hamiltonian eH(t) = ˜H(t) + bU (t), we obtain Eq. (5) in Ref. [54] 
+
+˜H(t) + 
+
+h bU , i bS(t)
+
+i
+
++ ∂t bS(t) = −λ bT (t) −
+
+> ∞
+
+X
+
+> n=1
+
+Bn
+
+n! ad ni bS(t)
+
+h
+
+(−1) nλ bT (t) + ˜H(t)
+
+i
+
+. (S5) S2 By expanding ˜H(t) and bS(t) in order of λ to keep track of the perturbation order, 
+
+˜H(t) = 
+
+> ∞
+
+X
+
+> n=1
+
+λn ˜H(n)(t), bS(t) = 
+
+> ∞
+
+X
+
+> n=1
+
+λn bS(n)(t), (S6) and defining cM (n) = ˜H(n) +
+
+h bU , i bS(n)(t)
+
+i
+
++ ∂t bS(n)(t), we have cM (n) up to fourth order (with λ = 1 )
+
+cM (1) = − bT (t) (S7) 
+
+cM (2) = − 12
+
+h
+
+i bS(1) (t), bT (t) − ˜H(1) (t)
+
+i
+
+, (S8) 
+
+cM (3) = − 12
+
+h
+
+i bS(2) (t), bT (t) − ˜H(1) (t)
+
+i
+
++ 12
+
+h
+
+i bS(1) (t), ˜H(2) (t)
+
+i
+
+− 112 
+
+h
+
+i bS(1) (t),
+
+h
+
+i bS(1) (t), bT (t) + ˜H(1) (t)
+
+ii 
+
+, (S9) 
+
+cM (4) = − 12
+
+h
+
+i bS(3) (t), bT (t) − ˜H(1) (t)
+
+i
+
++ 12
+
+h
+
+i bS(2) (t), ˜H(2) (t)
+
+i
+
++ 12
+
+h
+
+i bS(1) (t), ˜H(3) (t)
+
+i
+
+− 112 
+
+h
+
+i bS(1) (t),
+
+h
+
+i bS(1) (t), ˜H(2) (t)
+
+ii 
+
+− 112 
+
+h
+
+i bS(1) (t),
+
+h
+
+i bS(2) (t), bT + ˜H(1) (t)
+
+ii 
+
+− 112 
+
+h
+
+i bS(2) (t),
+
+h
+
+i bS(1) (t), bT + ˜H(1) (t)
+
+ii 
+
+. (S10) These equations are Eqs. (6-9) of Ref. [54]. Since the procedure of the SW transformation consists in removing the off-diagonal terms present in bS(n)(t) at order n, we have to identify what terms are off-diagonal, that is, coupling between low-energy and high-energy subspaces. At half-filling, the low-energy subspace is the space of configurations with only a single electron occupying each site, while the high-energy subspace is the space of configurations with any double occupancy. Any hopping term inducing a double occupancy is thus off-diagonal. Therefore, bS(n)(t)
+
+can be decomposed into bS(n) 
+
+> −1
+
+(t) + bS(n)+1 (t) (diagonal terms can be absorbed in ˜H(n)(t)); while the hopping operator corresponding to a single electron hopping can be written as 
+
+bT (t) = bT−1(t) + bT0(t) + bT+1 (t). (S11) Here, the notation ±1 indicates the addition or removal of double occupancy by the operator. For the subindex 0,the operator does not add or remove any double occupancy. Further, at half-filling, we expect the following commutation relation 
+
+h bU , bS(n)
+
+> ±1
+
+i
+
+= ±U bS(n) 
+
+> ±1
+
+(S12) holds. Before going into the details of expansion, we note a general fact: since the effective Hamiltonian ˜H(t) describes the effective picture of the original system in the low-energy subspace, at all orders the expansion must start with creating a double occupancy bT+1 (t) and end with destroying a double occupancy bT−1(t). See Fig. S1 for possible virtual hopping paths at second, third, and fourth orders. 
+
+tij 
+
+tji 
+
+(a) 
+
+tij 
+
+tjk 
+
+tki 
+
+(b) 
+
+tij 
+
+tjk 
+
+tkm 
+
+tmi 
+
+(c) 
+
+tij 
+
+tjk 
+
+tkj tji 
+
+FIG. S1: Possible hopping paths for second, third, and fourth order perturbation of Hubbard-Mott model at half-filling. 
+
+A. First order expansion 
+
+To first order, the corresponding equation is Eq. (S7), which gives 
+
+˜H(1) (t) + 
+
+h bU , i bS(1) +1 (t)
+
+i
+
++
+
+h bU , i bS(1)  
+
+> −1
+
+(t)
+
+i
+
++ ∂t bS(1) +1 (t) + ∂t bS(1)  
+
+> −1
+
+(t) = − bT+1 (t) − bT−1(t) − bT0(t). (S13) S3 By matching the number of double occupancy of each term, we have three separate equations 
+
+˜H(1) (t) = − bT0(t), (S14) 
+
+[∂t ± iU ] bS(1)  
+
+> ±1
+
+(t) = − bT±1(t). (S15) By restricting these to the low-energy subspace via the projection operator bP = Q 
+
+> i
+
+(1 − ni↑ni↓), we have bP ˜H(1) (t) bP =0 because no single electron hopping in the low-energy subspace is possible without creating a double occupancy. To obtain a solution that is well-defined up to time t, we use the retarded Green’s function corresponding to the differential operators ∂t ± iU as 
+
+GR(t, t ′) = −ie −η(t−t′)e−idU (t−t′)θ(t − t′) = −ie ηt ′
+
+e−idU (t−t′)θ(t − t′). (S16) with η → 0+ and d = ±1. The convergence factor eηt ′
+
+is to ensure that the solution vanishes at t′ → −∞ . The second equality is obtained because we consider only finite time t. Then the SW generator to first order is obtained as the convolution of retarded Green’s function and the function on the right hand side of Eq. (S7), that is, 
+
+bS(1)  
+
+> ±1
+
+(t) = −i
+
+ˆ +∞−∞ 
+
+GR(t, t ′) bT±1(t′)dt ′ = −
+
+ˆ +∞−∞ 
+
+θ(t − t′)eηt ′
+
+e∓iU (t−t′) bT±1(t′)dt ′. (S17) As a result of the low-energy subspace projection, the effective Hamiltonian in the low-energy subspace always starts at second order 
+
+˜H(t) = X
+
+> n=2
+
+˜H(n)(t). (S18) 
+
+B. Second order expansion 
+
+To second order, the corresponding equation is Eq. (S8). The procedure is exactly the same as for the first order calculation, by matching the number of occupancy between the two sides. We then obtain three separate equations as 
+
+˜H(2) (t) = − i
+
+2
+
+h bS(1)  
+
+> −1
+
+(t), bT+1 (t)
+
+i
+
+− i
+
+2
+
+h bS(1) +1 (t), bT−1(t)
+
+i
+
+, (S19) 
+
+∂t bS(2)  
+
+> ±1
+
+(t) ± iU bS(2)  
+
+> ±1
+
+(t) = −i
+
+h bS(1)  
+
+> ±1
+
+(t), bT0(t)
+
+i
+
+. (S20) Using Eq. (S17), the above equations read 
+
+˜H(2) (t) = i
+
+2
+
+ˆ +∞−∞ 
+
+θ(t − t′)eηt ′ 
+
+eiU (t−t′) h bT−1(t′), bT+1 (t)
+
+i
+
++ e−iU (t−t′) h bT+1 (t′), bT−1(t)
+
+i 
+
+dt ′ (S21) 
+
+bS(2)  
+
+> ±
+
+(t) = i
+
+ˆ +∞−∞ 
+
+ˆ +∞−∞ 
+
+θ(t − t′)θ(t′ − t′′ )eη(t′+t′′ )e∓iU (t−t′)e∓iU (t′−t′′ )[ bT±1(t′′ ), bT0(t′)] dt ′′ dt ′. (S22) To get a closed form of the Hamiltonian in Eq. (S20), we first re-write the hopping term as 
+
+bT (t) = X
+
+> ij
+
+X
+
+> σσ ′
+
+c† 
+
+> iσ
+
+M ij σσ ′ cjσ ′ eiθ ij (t) + h.c , M ij σσ ′ = ( −tij 1)σσ ′ . (S23) Then, we have 
+
+bT−1(t′) bT+1 (t) = X
+
+> ij
+
+X
+
+> σ1σ2σ3σ4
+
+c† 
+
+> iσ 1
+
+M ij σ1σ2 cjσ 2 eiθ ij (t′)c† 
+
+> jσ 3
+
+M ij σ3σ4 ciσ 4 eiθ ji (t) + h.c. 
+
+= 2 X
+
+> ij
+
+tr 
+
+
+
+M ij M ji 
+
+ 12 + Si · τ
+
+
+
+cos( θij (t′) − θij (t)) 
+
+
+
++ 2 X
+
+> ij
+
+tr 
+
+
+
+M ij 
+
+ 12 + Sj · τ
+
+
+
+M ji 
+
+ 12 + Si · τ
+
+
+
+cos( θij (t′) − θij (t)) 
+
+
+
+, (S24) S4 where we have applied the Jordan map c† 
+
+> iσ
+
+ciσ ′ =   12 ni + Si · τ  
+
+> σ′σ
+
+=   12 1 + Si · τ  
+
+> σ′σ
+
+where in the second equality we have re-written the sum in the spin index into a trace. After the low-energy subspace projection, we obtain 
+
+˜H(2) (t) = X
+
+> ij
+
+Im 
+
+ˆ +∞−∞ 
+
+θ(t − t′)eηt ′
+
+eiU (t−t′) bT−1(t′) bT+1 (t)dt ′. (S25) After some steps for computing the trace, we obtain the second order effective spin Hamiltonian 
+
+˜H(2) (t) = X
+
+> ij
+
+Jij (t)Si · Sj (S26) with the modified Heisenberg coefficient Jij (t) as 
+
+Jij (t) = 4 |tij |2Iij (t), Iij (t) = Im 
+
+ˆ +∞−∞ 
+
+θ(t − t′)eηt ′
+
+eiU (t−t′) cos( θij (t′) − θij (t)) dt ′. (S27) This is the result derived in Ref. [52]. If we compute the integral and take the limit A → 0, this Hamiltonian recovers the standard second order SW transformation of the single band Hubbard-Mott model with coefficient 4t2/U when 
+
+tij = t is uniform. After a Fourier transform, for a bipartite sublattice the pair-wise spin terms become P 
+
+> ij
+
+SA,i ·SB,j =
+
+P
+
+> k
+
+P 
+
+> dij
+
+SA, k · SB, −ke−ik·dij (if tij = t for all sites i and j), where A,B label the sublattices. The cosine factor can be recast into an exponential form, which gives a (k − eA) and (k + eA) dependence. Hence, the condition for the shortcut Eq. (S1) holds for the low-energy effective spin Hamiltonian to second order in t/U . We are then allowed to replace the vector potential derivatives by k-derivatives, and the Fleury-Loudon vertex is recovered. Here, we considered only electron hopping −tij δσσ ′ in the tensor M ij σσ ′ for simplicity. However, one can see that the derivation holds for a general M ij σσ ′ . For example, we can add a Rashba spin-orbit term M ij σσ ′ = ( −tij 1 + αij · τ )σσ ′ with Rashba coupling vector αij . This gives the Dzyaloshinskii–Moriya interaction term and symmetric anistropic interaction term with the same time-integral correction Iij (t) [42]. Hence, a spin model consisting only terms obtainable from M ij σσ ′ are deemed to satisfy the condition Eq. (S1) for the shortcut, where terms which play no role in the ( k, e A) dependence are omitted. 
+
+C. Third order expansion 
+
+To the third order, following the same procedure, 
+
+˜H(3) (t) = − i
+
+2
+
+h bS(2)  
+
+> −1
+
+(t), bT+1 (t)
+
+i
+
+− i
+
+2
+
+h bS(2) +1 (t), bT−1(t)
+
+i
+
+(S28) 
+
+∂t bS(3)  
+
+> ±1
+
+(t) ± iU bS(3)  
+
+> ±1
+
+(t) = −
+
+h
+
+i bS(2)  
+
+> ±1
+
+(t), bT0(t)
+
+i
+
++ 12
+
+h
+
+i bS(1)  
+
+> ±1
+
+(t), ˜H(2) (t)
+
+i
+
+− 112 
+
+h
+
+i bS(1)  
+
+> ∓1
+
+(t),
+
+h
+
+i bS(1)  
+
+> ±1
+
+(t), bT±1(t)
+
+ii 
+
+− 112 
+
+h
+
+i bS(1)  
+
+> ±1
+
+(t),
+
+h
+
+i bS(1)  
+
+> ±1
+
+(t), bT∓1(t)
+
+ii 
+
+− 112 
+
+h
+
+i bS(1)  
+
+> ±1
+
+(t),
+
+h
+
+i bS(1)  
+
+> ∓1
+
+(t), bT±1(t)
+
+ii 
+
+. (S29) By substituting the second order SW generator bS(2) (t) and second order low-energy effective Hamiltonian, we obtain 
+
+˜H(3) (t) = 12
+
+ˆ +∞−∞ 
+
+ˆ +∞−∞ 
+
+θ(t − t′)θ(t′ − t′′ )eη(t′+t′′ )e+iU (t−t′)e+iU (t′−t′′ ) hh bT−1(t′′ ), bT0(t′)
+
+i
+
+, bT+1 (t)
+
+i
+
+dt ′′ dt ′
+
++ 12
+
+ˆ +∞−∞ 
+
+ˆ +∞−∞ 
+
+θ(t − t′)θ(t′ − t′′ )eη(t′+t′′ )e−iU (t−t′)e−iU (t′−t′′ ) hh bT+1 (t′′ ), bT0(t′)
+
+i
+
+, bT−1(t)
+
+i
+
+dt ′′ dt ′, (S30) 
+
+bS(3)  
+
+> ±1
+
+(t) = 
+
+˚
+
+dt 3dt 2dt 1eη(t1+t2+t3)
+
+
+
+θ(t − t1)θ(t1 − t2)θ(t2 − t3)e−iU (t−t3) hh bT±1(t3), bT0(t2)
+
+i
+
+, bT0(t1)
+
+i
+
+− 13 θ(t − t1)θ(t1 − t2)θ(t1 − t3)e−iU (t−t2)e−iU (t1−t3) h bT±1(t2),
+
+h bT±1(t3), bT∓1(t1)
+
+ii 
+
+− 13 θ(t − t1)θ(t1 − t2)θ(t1 − t3)e−iU (t−t2)e−iU (t1−t3) h bT±1(t2),
+
+h bT∓1(t3), bT±1(t1)
+
+ii 
+
+. (S31) S5 After applying the low-energy subspace projection on Eq. (S30), the commutators of hopping terms reduce to 
+
+hh bT−1(t′′ ), bT0(t′)
+
+i
+
+, bT+1 (t)
+
+i
+
+→ bT−1(t′′ ) bT0(t′) bT+1 (t), (S32) 
+
+hh bT+1 (t′′ ), bT0(t′)
+
+i
+
+, bT−1(t)
+
+i
+
+→ − bT−1(t) bT0(t′) bT+1 (t′′ ). (S33) These products of hopping terms can be treated as in the previous section 
+
+bT−1(t′′ ) bT0(t′) bT1(t) = X
+
+> ijk
+
+X
+
+> σ1σ2σ3σ4σ5σ6
+
+c† 
+
+> iσ 1
+
+M ik σ1σ2 eiθ ik (t′′ )ckσ 2 c† 
+
+> kσ 3
+
+M kj σ3σ4 eiθ kj (t′)cjσ 4 c† 
+
+> jσ 5
+
+M ji σ5σ6 eiθ ji (t)ciσ 6 + h.c. 
+
+= X
+
+> ijk
+
+
+
+tr 
+
+
+
+M ik M kj M ji 
+
+ 12 + Si · τ
+
+ 
+
+− tr 
+
+
+
+M ik M kj 
+
+ 12 + Sj · τ
+
+
+
+M ji 
+
+ 12 + Si · τ
+
+ 
+
+− tr 
+
+
+
+M ik 
+
+ 12 + Sk · τ
+
+
+
+M kj M ji 
+
+ 12 + Si · τ
+
+ 
+
++ tr 
+
+
+
+M ik 
+
+ 12 + Sk · τ
+
+
+
+M kj 
+
+ 12 + Sj · τ
+
+
+
+M ji 
+
+ 12 + Si · τ
+
+  
+
+ei(θik (t′′ )+ θkj (t′)+ θji (t)) + h.c. 
+
+= − X
+
+> ijk
+
+2Re (˜ tik ˜tkj ˜tji )( Si · Sk + Sj · Si + −Sk · Sj ) + 4 Im (˜ tik ˜tkj ˜tji )( Sk × Sj ) · Si
+
+ . (S34) Eventually, the third order low-energy effective Hamiltonian reads 
+
+˜H(3) (t) = X
+
+> ijk
+
+I(3)  
+
+> ijk
+
+(t)Bijk + X
+
+> ijk
+
+J(3)  
+
+> ijk
+
+(t)χkji , (S35) where we have defined Bijk = Si · Sk + Sj · Si − Sk · Sj and the scalar spin chirality χkji = ( Sk × Sj ) · Si with the time-dependent coefficients 
+
+I(3)  
+
+> ijk
+
+(t) = −Re 
+
+ˆ +∞−∞ 
+
+ˆ +∞−∞ 
+
+θ(t − t′)θ(t′ − t′′ )eη(t′+t′′ )e+iU (t−t′′ )tik tkj tji 
+
+× [cos( θik (t′′ ) + θkj (t′) + θji (t)) + cos( θik (t) + θkj (t′) + θji (t′′ ))] dt ′′ dt ′, (S36) 
+
+J(3)  
+
+> ijk
+
+(t) = −2Re 
+
+ˆ +∞−∞ 
+
+ˆ +∞−∞ 
+
+θ(t − t′)θ(t′ − t′′ )eη(t′+t′′ )e+iU (t−t′′ )tik tkj tji 
+
+× [sin( θik (t′′ ) + θkj (t′) + θji (t)) + sin( θik (t) + θkj (t′) + θji (t′′ ))] dt ′′ dt ′. (S37) In the static field limit and undoing the dipole approximation, a flux term emerges from close loop virtual hopping 
+
+I(3)  
+
+> ijk
+
+(t) → 2tik tkj tji cos(2 πΦB /Φ0)/U 2 and J(3)  
+
+> ijk
+
+(t) → 4tik tkj tji sin(2 πΦB /Φ0)/U 2, which agrees with the literature, see e.g. Refs. [54–56]. These originate from an external field coupled to the magnetic moment created in a closed loop virtual hopping, and are incompatible with a dependence of the type (k − eA) and (k + eA) in the Hamiltonian. If we first make a dipole approximation, which is equivalent to treating zero magnetic flux ΦB = 0 , we still have a finite correction 2tik tkj tji /U 2 to the Heisenberg exchange coefficient [54–56]. Moreover, the spin interaction terms which emerge with the imaginary part of the product of effective hopping amplitudes ˜tij (t) are so-called non-Fleury-Loudon terms, which are absent if we set the external field to zero. A dependence of the type (k − eA) and (k + eA) can only be recovered for Fleury-Loudon terms in third order considering exclusively virtual hopping on a straight line and between sites with the same magnitude |dij | = · · · = |djk |. This kind of virtual hopping is unavailable for odd order expansion. Therefore, the dependence of (k − eA) and (k + eA) in a spin Hamiltonian already does not hold at the level of the third order in the expansion in t/U .
+
+D. Fourth order expansion 
+
+The results and combinations of virtual hopping paths are more complicated and lengthy at fourth order, whilst the expansion procedure is standard, i.e., same as the procedure in previous orders. We will simply give an example for a particular hopping path, where one can see that only some specific terms are compatible with a dependence on the vector potential of the type (k − eA) and (k + eA). According to Eq. (S10), the fourth order low-energy effective S6 Hamiltonian reads (we do not need the equation for the fourth order SW generator because we are not going to derive the fifth order result) 
+
+˜H(4) = − 12
+
+h
+
+i bS(3) +1 , bT−1(t)
+
+i
+
+− 12
+
+h
+
+i bS(3)  
+
+> −1
+
+(t), bT+1 (t)
+
+i
+
+(S38) 
+
++ 124 
+
+h
+
+i bS(1) +1 (t),
+
+h
+
+i bS(1)  
+
+> −1
+
+(t),
+
+h
+
+i bS(1) +1 (t), bT−1(t)
+
+iii 
+
++ 124 
+
+h
+
+i bS(1) +1 (t),
+
+h
+
+i bS(1)  
+
+> −1
+
+(t),
+
+h
+
+i bS(1)  
+
+> −1
+
+(t), bT+1 (t)
+
+iii 
+
++ 124 
+
+h
+
+i bS(1)  
+
+> −1
+
+(t),
+
+h
+
+i bS(1) +1 (t),
+
+h
+
+i bS(1) +1 (t), bT−1(t)
+
+iii 
+
++ 124 
+
+h
+
+i bS(1)  
+
+> −1
+
+(t),
+
+h
+
+i bS(1) +1 (t),
+
+h
+
+i bS(1)  
+
+> −1
+
+(t), bT+1 (t)
+
+iii 
+
+.
+
+After projecting into low-energy subspace and substituting SW generators bS(3) (t) and bS(1) (t), the fourth order low-energy effective Hamiltonian reads 
+
+˜H(4) (t) = −i
+
+˚
+
+dt 3dt 2dt 1eη(t1+t2+t3)
+
+
+
+− 12 θ(t − t1)θ(t1 − t2)θ(t2 − t3)e−iU (t−t3) bT−1(t) bT0(t1) bT0(t2) bT+1 (t3)+ 16 θ(t − t1)θ(t1 − t2)θ(t1 − t3)e−iU (t−t2)e−iU (t1−t3) bT−1(t) bT−1(t1) bT+1 (t3) bT+1 (t2)
+
+− 16 θ(t − t1)θ(t1 − t2)θ(t1 − t3)e−iU (t−t2)e−iU (t1−t3) bT−1(t) bT−1(t3) bT+1 (t1) bT+1 (t2)+ 12 θ(t − t1)θ(t1 − t2)θ(t2 − t3)e+iU (t−t3) bT−1(t3) bT0(t2) bT0(t1) bT+1 (t)
+
+− 16 θ(t − t1)θ(t1 − t2)θ(t1 − t3)e+iU (t−t2)e+iU (t1−t3) bT−1(t2) bT−1(t3) bT+1 (t1) bT+1 (t)+ 16 θ(t − t1)θ(t1 − t2)θ(t1 − t3)e+iU (t−t2)e+iU (t1−t3) bT−1(t2) bT−1(t1) bT+1 (t3) bT+1 (t)
+
+− 124 θ(t − t1)θ(t − t2)θ(t − t3)e−iU (t−t1)e+iU (t−t2)e−iU (t−t3) bT−1(t2) bT−1(t) bT+1 (t3) bT+1 (t2)+ 124 θ(t − t1)θ(t − t2)θ(t − t3)e−iU (t−t1)e+iU (t−t2)e+iU (t−t3) bT−1(t2) bT−1(t3) bT+1 (t) bT+1 (t2)
+
+− 124 θ(t − t1)θ(t − t2)θ(t − t3)e+iU (t−t1)e−iU (t−t2)e−iU (t−t3) bT−1(t1) bT−1(t) bT+1 (t3) bT+1 (t2)+ 124 θ(t − t1)θ(t − t2)θ(t − t3)e+iU (t−t1)e−iU (t−t2)e+iU (t−t3) bT−1(t1) bT−1(t3) bT+1 (t) bT+1 (t2)
+
+
+
+. (S39) We can study the general product of the hopping terms 
+
+bT (t) bT (t1) bT (t2) bT (t3) = X
+
+> ijkl
+
+ei[θij (t)+ θjk (t1)+ θkl (t2)+ θli (t3)] 
+
+( X
+
+> σ1··· σ8
+
+c† 
+
+> iσ 1
+
+M ij σ1σ2 cjσ 2 c† 
+
+> jσ 3
+
+M jk σ3σ4 ckσ 4
+
+× c† 
+
+> kσ 5
+
+M kl σ5σ6 clσ 6 c† 
+
+> lσ 7
+
+M li σ7σ8 ciσ 8
+
+)
+
++ h.c. (S40) 
+
+= X
+
+> ijkl
+
+2Re 
+
+ ˜tij ˜tjk ˜tkl ˜tli 
+
+U 3
+
+  
+
+(Sl · Si + Sk · Si + Sj · Si − Sk · Sl − Sj · Sl − Sj · Sk)+ 4 [( Sj · Sk) ( Sl · Si) − (Sj · Sl)( Sk · Si) + ( Sk · Sl)( Sj · Si)] 
+
+
+
++ X
+
+> ijkl
+
+2Im 
+
+ ˜tij ˜tjk ˜tkl ˜tli 
+
+U 3
+
+
+
+(χkli + χjli + χjki − χjkl ) . (S41) As in the previous case, we have spin terms with real and imaginary parts of a product of hopping amplitudes. Even if we ignore those non-Fleury-Loudon terms, only terms arose from hopping paths with sites lying on a straight line and having the same type of bonding could lead to dependence of (k − eA) and (k + eA) in the low-energy effective spin Hamiltonian. That is, to conclude, the minimal-coupling-like dependence is valid only to second order in t/U 
+
+for the low-energy effective spin Hamiltonian, and at most for some particular terms in higher order expansions. See Fig. S2 for visualizing the hopping paths with sites lying on a straight line. S7 
+
+tij 
+
+tji 
+
+(a) 
+
+tij 
+
+tji 
+
+tjk 
+
+tkj 
+
+(b) 
+
+tij 
+
+tji 
+
+tjk 
+
+tkj 
+
+tkl 
+
+tlk 
+
+(c) 
+
+FIG. S2: Virtual electron hopping paths between sites lying on a straight line with the same magnitude |dij | = · · · = |djk | .(a) The simplest closed loop hopping path which must be on a line. (b) Closed loop hopping path in the fourth order expan-sion with same type of bonding for sites lying on a straight line. (c) Closed loop hopping path in the sixth order expansion with same type of bonding for sites lying on a straight line. Similarly for higher even-order terms. 
+
+III. TWO-DIMENSIONAL HONEYCOMB FERROMAGNETIC TOPOLOGICAL MAGNON INSULATOR 
+
+In this section, we compute the Berry curvature for the honeycomb ferromagnet (FM) following the standard procedure and derive an analytic relation between RCD and the Berry curvature shown in Eq. (24) in the main text. Recall that after a linearized Holstein-Primakoff (HP) transformation for the spin operators, the magnon Hamiltonian 
+
+H0 
+
+> M
+
+(k) can be obtained from the spin Hamiltonian H0(k) in k-space [57]. That is, we have 
+
+H0 
+
+> M
+
+= 12
+
+X
+
+> k
+
+ψ†
+
+> k
+
+H0 
+
+> M
+
+(k)ψk (S42) with the basis ψ† 
+
+> k
+
+= ( a†
+
+> k
+
+, b †
+
+> k
+
+), where ak and bk are the HP bosonic operators in 2 different sublattices. For a ferromagnet (FM), the Berry curvature expression for ferromagnetic magnon bands is the same as the standard form for electronic bands. Further, a two-band Hermitian Hamiltonian can be represented by a 2 × 2 Hermitian matrix which admits a decomposition as 
+
+H0 
+
+> M
+
+(k) = h0(k)12 + h(k) · τ , (S43) where τ = ( τx, τ y , τ z ) is the vector of Pauli matrices, h0(k) and h(k) = ( hx(k), h y (k), h z (k)) are the corresponding parameters for such decomposition. We can then apply the well-known two-band expression to obtain the Berry curvature [62] 
+
+Ω±(k) = ∓ 12|h(k)|3 h(k) · ∂xh(k) × ∂y h(k) (S44) without calculating the eigenenergies and eigenvectors. Consider a general Hamiltonian describing a two-dimensional FM in the form of Eq. (S43), the eigenenergies and diagonalization transformation matrix Uk are 
+
+ϵ±,k = h0(k) ± | h(k)|, Uk = ( u+,k, u −,k) = 
+
+cos ψkeiφ k − sin ψkeiφ k
+
+sin ψk cos ψk
+
+
+
+, (S45) where u±,k are the eigenvectors that correspond to ϵ±,k. The trigonometric parameters are defined as 
+
+cos ψk =
+
+s
+
+|h(k)| + hz (k)2|h(k)| , sin ψk =
+
+s
+
+|h(k)| − hz (k)2|h(k)| , e−iφ k = 1
+
+q
+
+h2
+
+> x
+
+(k) + h2 
+
+> y
+
+(k)(hx(k) + ih y (k)) = rk
+
+|rk| , (S46) where rk = hx(k) + ih y (k). With these equations, we can derive the general relation between RCD and Berry curvature in FMs once the Hamiltonian in Eq. (S44) satisfies the condition in Eq. (S1). 
+
+A. RCD and Berry curvature in FM 
+
+Applying the shortcut as per Eq. (11) in the main text, for a two-band ferromagnetic magnon Hamiltonian in 
+
+k-space (Eq. (S43)) that fulfills the condition Eq. (S1), which we have proved its validity in the previous section, the FL vertex for circularly polarized light is obtained as 
+
+Hss ′ 
+
+> R, k
+
+= K0
+
+2 ˆOss ′
+
+(h0 + h · σ), (S47) S8 where we defined a differential operator 
+
+ˆOss ′
+
+= ∂2 
+
+> x
+
++ ss ′∂2 
+
+> y
+
++ i(s − s′)∂x∂y = ˆAss ′
+
++ i ˆBss ′
+
+(S48) such that ˆORR = ˆOLL = ∂2 
+
+> x
+
++ ∂2 
+
+> y
+
+= ˆARR , ˆORL = ∂2 
+
+> x
+
+− ∂2 
+
+> y
+
+− 2i∂ x∂y = ˆARL + i ˆBRL and ˆOLR = ( ˆORL )∗ = ˆARL − i ˆBRL 
+
+with ˆAss ′
+
+= ˆAs′s and ˆBRL = − ˆBLR . Here, we have dropped the explicit dependence on k for brevity, s = ±1 denotes left (L) and right (R) circularly polarized light and K0 = 2e2  
+
+> ℏ2(U−ωin )
+
+Asc Ain . We then denote Ass ′
+
+= ( Ass ′ 
+
+> x
+
+, A ss ′ 
+
+> y
+
+, A ss ′ 
+
+> z
+
+) = ˆAss ′
+
+h and Bss ′
+
+= ( Bss ′ 
+
+> x
+
+, B ss ′ 
+
+> y
+
+, B ss ′ 
+
+> z
+
+) = ˆBss ′
+
+h. The diagonal term is invariant under the basis transformation, and hence we denote Ass ′ 
+
+> 0
+
+= ˆAss ′
+
+h0 and Bss ′ 
+
+> 0
+
+= ˆBss ′
+
+h0. Then, the FL vertex in Eq. (S47) in terms of A and B reads 
+
+Hss ′ 
+
+> R, k
+
+= K0
+
+2
+
+h
+
+Ass ′ 
+
+> 0
+
++ iB ss ′ 
+
+> 0
+
++ ( Ass ′
+
++ iBss ′
+
+) · σ
+
+i
+
+. (S49) We first note several identities before moving on. In the magnon basis, the diagonalization means that u†±(h · σ)u± =
+
+h0 ± | h| = ϵ±,k. Hence, we have the identities 
+
+u†
+
+> +
+
+(σ)u+ = h
+
+|h| = n and u†−(σ)u− = − h
+
+|h| = −n. (S50) Furthermore, we define a complex-valued vector as 
+
+Λ = u†
+
+> +
+
+(σ)u− and Λ∗ = u†−(σ)u+, (S51) which is orthogonal to h in the sense of h · Λ = 0 . Then the cross product of its complex-conjugated vector will be the normal vector (Λ × Λ∗) = 2 in. We are interested in only interband transitions for an FM, which are given by the transition amplitude 
+
+u†
+
+> +
+
+Hss ′
+
+> R, k
+
+u− = K0
+
+2 (Ass ′
+
++ iBss ′
+
+) · Λ. (S52) Since we are computing the difference of the square of the transition amplitude for RCD, the terms corresponding to 
+
+s = s′ will be equal and cancel, that is, 
+
+χk = X
+
+> s′
+
+u†
+
+> +
+
+HRs ′
+
+> R, k
+
+u−
+
+> 2
+
+− u†
+
+> +
+
+HLs ′
+
+> R, k
+
+u−
+
+> 2
+
+= u†
+
+> +
+
+HRL ′ 
+
+> R, k
+
+u−
+
+> 2
+
+− u†
+
+> +
+
+HLR R, ku−
+
+> 2
+
+. (S53) Hence, it suffices to compute the case s̸ = s′, which gives 
+
+u†
+
+> +
+
+HRL R, ku− = K0
+
+2 (ARL + iBRL ) · Λ and u†
+
+> +
+
+HLR R, ku− = K0
+
+2 (ARL − iBRL ) · Λ. (S54) Therefore, the terms in Eq. (S53) can be re-written as 
+
+u†
+
+> +
+
+HRL R, ku−
+
+> 2
+
+= K20
+
+4
+
+|ARL · Λ|2 + |BRL · Λ|2 + i(ARL · Λ∗)( BRL · Λ) − i(ARL · Λ)( BRL · Λ∗) (S55) 
+
+u†
+
+> +
+
+HLR R, ku−
+
+> 2
+
+= K20
+
+4
+
+|ARL · Λ|2 + |BRL · Λ|2 + i(ARL · Λ)( BRL · Λ∗) − i(ARL · Λ∗)( BRL · Λ) . (S56) The RCD becomes χk = iK 20
+
+> 2
+
+(ARL · Λ∗)( BRL · Λ) − (ARL · Λ)( BRL · Λ∗). Using the standard vector algebra identity (a × b) · (c × d) = ( a · c)( b · d) − (a · d)( b · c) for some vectors a, b, c and d, the RCD can be written as a scalar triple product similar to the two-band expression of the Berry curvature in Eq. (S44) 
+
+χk = K20 n · (ARL × BRL ). (S57) In order to extract the relation between the RCD and the Berry curvature, we re-write the vector h as |h|n in vectors 
+
+ARL and BRL 
+
+ARL = ( ∂2 
+
+> x
+
+− ∂2 
+
+> y
+
+)( |h|n) = ( ∂2
+
+> x
+
+|h| − ∂2 
+
+> y
+
+|h|)n + |h|(∂2
+
+> x
+
+n − ∂2 
+
+> y
+
+n) + 2( ∂x|h|)( ∂xn) − 2( ∂y |h|)( ∂y n) (S58) 
+
+BRL = ( −2∂x∂y )( |h|n) = −2( ∂x∂y |h|)n − 2|h|(∂x∂y n) − 2( ∂x|h|)( ∂y n) − 2( ∂y |h|)( ∂xn). (S59) S9 We can use n · n = 1 to re-write the second derivative of n in terms of first derivative by the quantum metric 
+
+n · ∂μn = 0 ⇒ 4gμν = ∂μn · ∂ν n = −n · ∂μ∂ν n. (S60) Next, with the help of differential geometry, we use that the second derivative of n can be decomposed into a tangential part with the Christoffel symbol Γλμν and a normal part with the quantum metric 
+
+∂μ∂ν n = X
+
+> λ
+
+Γλμν ∂λn − 4gμν n. (S61) Using Eqs. (S60) and (S61), we can see that the contribution of quantum metric is stored in the Christoffel symbol as 
+
+Γλμν = X
+
+> ρ
+
+gλρ Γρμν = 2 ( ∂μgνλ + ∂ν gλμ − ∂λgμν ) . (S62) Eventually, using Eqs. (S57), (S58), (S59) and (S61), we arrive at a clean relation between the RCD and Berry curvature 
+
+χk = ±K20 Ω±(k){2 |∇ (∆ k)|2 + ∆ 2
+
+> k
+
+(Γ xxx − Γxyy )Γ yxy + (Γ yxx − Γyyy )Γ xxy 
+
+
+
++ ∆ k
+
+(∂x∆k)(Γ xxx − Γxyy + 2Γ xxy ) − (∂y ∆k)(Γ yxx − Γyyy − 2Γ yxy ) , (S63) 
+
+= ±Ω±(k)ϱk (S64) where ∆k = ϵ+,k − ϵ−,k is the energy gap and ∇ = ∂2 
+
+> x
+
++ ∂2 
+
+> y
+
+is the gradient operator in k-space. The RCD is indeed directly proportional to the Berry curvature in momentum space with a weighting function ϱk related to the local geometry of the energy gap, i.e., 
+
+ϱk/K 20 = 2 |∇ (∆ k)|2 + ∆ 2
+
+> k
+
+(Γ xxx − Γxyy )Γ yxy + (Γ yxx − Γyyy )Γ xxy 
+
+
+
++ ∆ k
+
+(∂x∆k)(Γ xxx − Γxyy + 2Γ xxy ) − (∂y ∆k)(Γ yxx − Γyyy − 2Γ yxy ) . (S65) This connection is more general in the sense that whenever we can replace the vector potential derivatives by the momentum derivatives of a two-band Hermitian Hamiltonian in momentum space at second order, all steps should follow analogously. 
+
+IV. AN EXAMPLE OF 2D FERROMAGNET ON THE HONEYCOMB LATTICE 
+
+Here, we show explicitly the workflow of the established machinery in the main text and in the previous section with the spin model of CrI 3 obtained from Ref. [44], which reads 
+
+H0 = −
+
+> 3
+
+X
+
+> r=1
+
+X
+
+> ⟨i,j ⟩r
+
+Jr Si · Sj − X
+
+> ⟨i,j ⟩2
+
+Dij · (Si × Sj ) − X
+
+> i
+
+Az (Szi )2, (S66) where ⟨i, j ⟩r denotes the sites between rth nearest neighbors (n.n.). Az is the easy-axis anisotropy, Jr is the exchange coefficient between the rth n.n. and Dij is the DMI vector between sites i and j. The corresponding magnon model in the representation of Eq. (S43) reads 
+
+h0 = M + 2 Az S − γ2,k, hx = −Re (γ1,k + γ3,k) , hy = Im (γ1,k + γ3,k) , hz = λk, (S67) where M = 3 J1S + 6 J2S + 3 J3S, γ1,k = J1S P 
+
+> ⟨i,j ⟩1
+
+eik·δ(1) 
+
+, γ2,k = 2 J2S P 
+
+> ⟨ij ⟩2
+
+cos( k · δ(2) ), γ1,k = J3S P 
+
+> ⟨i,j ⟩3
+
+eik·δ(3) 
+
+and λk = 2 DS P 
+
+> ⟨ij ⟩2
+
+sin( k·δ(2) ). With the vector h, one can obtain the magnon bands, eigenvectors, Berry curvature, RCD in momentum space immediately using Eqs. (S44), (S45), (S46) and (S63). The second-order LMCs are given by 
+
+L(2)  
+
+> μν
+
+(k) = 12 ∂μ∂ν
+
+γ2,k + dz, k γ1,k + γ3,k
+
+γ∗ 
+
+> 1,k
+
++ γ∗ 
+
+> 3,k
+
+γ2,k − dz, k
+
+
+
+, (S68) where we remind the reader that the derivatives are taken with respect to the components of the momentum k.

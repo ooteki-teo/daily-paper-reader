@@ -1,0 +1,3209 @@
+Title: Classification and correlation signatures of chiral spin liquids on the pyrochlore lattice
+
+URL Source: https://arxiv.org/pdf/2604.11880v1
+
+Published Time: Wed, 15 Apr 2026 00:02:56 GMT
+
+Number of Pages: 28
+
+Markdown Content:
+## Classification and correlation signatures of chiral spin liquids on the pyrochlore lattice 
+
+Chunxiao Liu, 1, ∗ Leon Balents, 2, 3, 4, † and Yasir Iqbal 5, ‡
+
+> 1
+
+Universit´ e Paris-Saclay, CNRS, Laboratoire de Physique des Solides, 91405 Orsay, France 
+
+> 2
+
+Kavli Institute for Theoretical Physics, University of California, Santa Barbara, CA 93106-4030, USA 
+
+> 3
+
+Canadian Institute for Advanced Research, Toronto, Ontario, Canada 
+
+> 4
+
+French American Center for Theoretical Science, CNRS, KITP, Santa Barbara, CA 93106-4030, USA 
+
+> 5
+
+Department of Physics, Indian Institute of Technology Madras, Chennai 600036, India 
+
+(Dated: April 15, 2026) We present a systematic classification and variational study of chiral quantum spin liquids on the pyrochlore lattice based on fermionic parton constructions. Focusing on chiral U(1) and Z2
+
+spin-liquid Ans¨ atze , we characterize their symmetry properties, flux structures, and low-energy spinon spectra within a projective symmetry group framework, and incorporate gauge fluctua-tions through Gutzwiller-projected wave functions studied by variational Monte Carlo. From the equal-time spin structure factor, we develop correlation-based diagnostics that distinguish gauge-dominated Coulomb phases from states with substantial matter-field and short-range contributions. Distinct chiral flux sectors, though close in energy, exhibit markedly different degrees of emergent U(1) gauge-field dominance, reflected in the geometry and contrast of pinch-point singularities. Al-though these states are not competitive ground states of the nearest-neighbor Heisenberg model, they define a physically meaningful family of proximate chiral phases relevant to extended pyrochlore Hamiltonians. 
+
+CONTENTS 
+
+I. Introduction 1II. Symmetries, partons, and fluxes 3A. Lattice, time-reversal, and chiral symmetries 3B. Projective symmetry group 4C. General mean-field Ans¨ atze 5D. SU(2) flux of parton states 5III. Complete U(1) and Z2 chiral Ans¨ atze from PSG 7A. PSG: algebraic classes 7B. U(1) and Z2 mean-field Ans¨ atze from PSG 7C. Flux classification of NN singlet Ans¨ atze 10 D. PT theorem and its (in)applicability to Z2
+
+states 10 IV. Nearest-neighbor singlet U(1) chiral Ans¨ atze 11 A. Spectrum of the 12 U(1) singlet states 12 B. Monopole fluxes and two notable states 13 1. Monopole flux state and nodal line spin liquids 13 2. Staggered flux state and gapped U(1) spin liquids 13 C. Variational Monte Carlo framework 14 1. Energetics 15 2. Equal-time spin structure factors 15 V. Discussion and Outlook 20    
+
+> ∗chunxiao.liu@universite-paris-saclay.fr
+> †balents@spinsandelectrons.com
+> ‡yiqbal@physics.iitm.ac.in
+
+Acknowledgments 21 Data Availability Statement 21 A. Staggered flux state is the ( π, π 
+
+> 2
+
+, 0) state: gauge transformation 21 B. Chiral Ans¨ atze from PSG: 2nd and 3rd neighbor amplitudes 22 C. Unprojected equal-time spin structure factor for U(1) spin-singlet Ans¨ atze 22 References 26 
+
+I. INTRODUCTION 
+
+The pyrochlore lattice has long served as a paradig-matic platform for exploring key concepts in frustrated magnetism. Coulomb spin liquids [1], the order-by-disorder mechanism [2, 3], the three-dimensional quan-tum spin liquid paradigm [4, 5], and, more recently, higher-rank gauge theories [6]—to name only a few—have all found natural realization within this iconic geometry. Beyond the nearest-neighbor Heisenberg limit, a wide va-riety of extensions, including further-neighbor exchange interactions, anisotropic spin–orbit–coupled terms, and ring-exchange processes, are now known to substantially enrich the phase structure of pyrochlore magnets; see also Ref. [7] for a recent broader overview of classical pyrochlore spin-liquid regimes. In parallel, continued progress in materials synthesis has brought renewed at-tention to pyrochlore compounds in which competing in-teractions and strong spin–orbit coupling coexist. De-
+
+> arXiv:2604.11880v1 [cond-mat.str-el] 13 Apr 2026
+
+2spite this broad activity, the potential of the pyrochlore lattice as a platform for hosting three-dimensional chi-ral quantum spin liquids remains essentially unexplored. This naturally raises the question of whether the py-rochlore lattice can once again serve as the stage on which a new paradigm in frustrated magnetism emerges. A particularly important theme in this broader con-text is chirality . While two-dimensional chiral spin liq-uids [8, 9] have been extensively studied and are now well understood as Chern–Simons topological phases [10], their three-dimensional counterparts remain largely mys-terious. Their field-theoretic descriptions remain com-paratively underdeveloped [11–14], the very nature of fully gapped versus algebraic “3D chiral spin liquids” remains under active debate, and concrete microscopic realizations remain scarce. From a classical perspec-tive, however, chirality arises quite naturally on the py-rochlore lattice: competing interactions readily stabi-lize noncoplanar magnetic orders characterized by finite scalar spin chirality [15]. Such states may be viewed as classical analogues of chiral quantum phases, suggesting a natural route toward three-dimensional chiral spin liq-uids through quantum disordering. The connectivity of the pyrochlore lattice, which can be viewed as alternating layers of kagome and triangular planes, is particularly well suited for stabilizing noncopla-nar magnetic orders. These include stacked analogs of the cuboctahedral spin configurations [15] familiar from the kagome lattice [16–18], novel alternating conic spiral states [15], and incommensurate noncoplanar spirals [19]. As demonstrated in Ref. [15], such states arise already in classical ( S → ∞ ) Heisenberg models with competing long-range interactions, possibly of mixed ferromagnetic and antiferromagnetic type. This raises the intriguing possibility that for small spin S, quantum fluctuations destroy conventional dipolar magnetic order while allow-ing long-range correlations of the scalar spin chirality to survive [19]. The resulting quantum-disordered states break time-reversal symmetry and, when combined with fractionalized excitations, provide a natural setting for three-dimensional chiral spin liquids. This route of “melting” noncoplanar magnetic orders through strong quantum fluctuations has been exten-sively explored in two-dimensional frustrated magnets, most notably on the kagome lattice, where it has yielded a rich landscape of chiral spin liquids [20–24]. These in-clude both gapless and gapped chiral phases with emer-gent U(1) or Z2 gauge fields, with the former often asso-ciated with the melting of commensurate spin structures and the latter with incommensurate orders. These de-velopments naturally motivate the search for an analo-gous classification of chiral quantum phases in three di-mensions. The pyrochlore lattice is a particularly natu-ral setting for this extension, combining geometric mo-tifs familiar from kagome physics with genuinely three-dimensional gauge dynamics. In this setting, chirality may coexist with gapless U(1) gauge fields and Coulom-bic correlations, and may also allow qualitatively new phenomena–such as three-dimensional topological tex-tures including hopfions [25, 26]—that have no direct two-dimensional counterpart. Motivated by these considerations, in this work we con-struct and study a systematic family of chiral U(1) spin-liquid Ans¨ atze on the pyrochlore lattice using fermionic parton wave functions and variational Monte Carlo, ex-tending earlier fermionic-parton studies of pyrochlore U(1) and Z2 spin liquids [27, 28]. Although our clas-sification encompasses both chiral U(1) and chiral Z2
+
+spin liquids, we emphasize U(1) states in the present work because their gapless gauge fields lead to sharp and experimentally relevant signatures in equal-time corre-lations; for a complementary Schwinger-boson classifica-tion of chiral Z2 spin liquids on the pyrochlore lattice, see Ref. [29]. Our focus is not on identifying the lowest-energy state of the nearest-neighbor spin- 12 Heisenberg antiferromag-net, whose ground-state character remains actively de-bated in the recent literature [30–36], but rather on elu-cidating how different chiral flux patterns control the emergent gauge structure and correlation signatures of U(1) spin liquids. By analyzing equal-time spin struc-ture factors—particularly the geometry and contrast of pinch-point singularities—we develop correlation-based diagnostics that distinguish gauge-dominated states from those in which matter-field and short-range correlations contribute a substantial background. In this sense, our work should be viewed as a classification of chiral U(1) spin liquids on the pyrochlore lattice based on emer-gent gauge structure and correlation fingerprints, rather than solely on variational energetics. Although the varia-tional energies of these Ans¨ atze are not competitive with the best available ground-state estimates for the nearest-neighbor model, they define a narrow and physically meaningful family of proximate phases. We argue that such chiral U(1) states are natural candidates for more general pyrochlore Hamiltonians with further-neighbor exchange, ring-exchange, or explicit chiral interactions, and that the present study provides a framework for ex-ploring these regimes. The paper is structured as follows. In Sec. II we discuss the lattice and chiral symmetries of the pyrochlore lat-tice and introduce the framework of projective symmetry groups. In Sec. III A we present the results of the PSG classification. In Secs. III B–III D we construct quadratic spinon Hamiltonians for the different PSGs and discuss the corresponding mean-field ground states, flux struc-tures, and the applicability of the PT theorem in these three-dimensional CSLs. In Sec. IV we focus on the study of the 12 nearest-neighbor singlet U(1) Ans¨ atze , includ-ing the eight chiral states. After showing their spectra in Sec. IV A, we conduct a case study in Sec. IV B of two Ans¨ atze with particularly interesting monopole flux patterns. In Sec. IV C we assess the impact of gauge fluctuations via Gutzwiller-projected wave functions an-3    
+
+> FIG. 1. Pyrochlore lattice. The sites occupy the vertices of corner-sharing tetrahedra. The conventional cubic unit cell, with edge length a, is indicated.
+
+alyzed within a variational Monte Carlo framework, and present the equal-time spin structure factors of the chi-ral Ans¨ atze . We also obtain their variational energies for the spin- 12 nearest-neighbor Heisenberg antiferromagnet. Section V concludes with a summary and outlook.   
+
+> II. SYMMETRIES, PARTONS, AND FLUXES A. Lattice, time-reversal, and chiral symmetries
+
+In this section, we introduce the lattice convention and provide a brief description of the symmetries of the pyrochlore lattice. A more detailed analysis of the py-rochlore symmetry group is presented in Ref. [37]. The pyrochlore lattice is shown in Fig. 1. It consists of four FCC-type sublattices which we label by μ =0, 1, 2, 3. We define the following sublattice-dependent coordinate: (r1, r 2, r 3)μ ≡ rμ ≡ r1e1 + r2e2 + r3e3 + 12 eμ , (1) where e0 = 0, and 
+
+e1 = a
+
+2 (ˆ y + ˆ z) , (2a) 
+
+e2 = a
+
+2 (ˆ z + ˆ x) , (2b) 
+
+e3 = a
+
+2 (ˆ x + ˆ y) (2c) are lattice vectors defined in terms of the cubic lattice constant a [see Fig. 1]. The pyrochlore lattice symmetry is described by the No. 227 space group F d 3m. A convenient choice for the generators of this group is 
+
+T1, T2, T3, C3, I, S, (3) where T1, T2, and T3 are translations along the lattice vectors e1, e2, and e3, respectively, C3 is the threefold rotation around the [111] axis that contains the origin, I
+
+the inversion about the origin, and S is a nonsymmorphic screw operation which is the composition of a twofold rotation around e3 and a translation by e3/2. It is useful to introduce the sixfold rotoreflection C6 := C3I.A complete set of relations for F d 3m can be chosen to be 
+
+TiTi+1 T −1 
+
+> i
+
+T −1 
+
+> i+1
+
+= 1 , i = 1 , 2, 3 , (4a) 
+
+C66 = 1 , (4b) 
+
+S2T −13 = 1 , (4c) 
+
+C6TiC−16 Ti+1 = 1 , i = 1 , 2, 3 , (4d) 
+
+ST iS−1T −13 Ti = 1 , i = 1 , 2 , (4e) 
+
+ST 3S−1T −13 = 1 , (4f) (C6S)4 = 1 , (4g) (C36S)2 = 1 , (4h) where it is implicitly understood that i + 3 ≡ i.In addition to spatial operations, time-reversal oper-ation T is also crucial to the description of chiral spin liquids. It commutes with all space-group operations but acts nontrivially on a spin-S state: 
+
+T OT −1O−1 = 1 , O ∈ { T1, T 2, T 3, C 6, S } , (5a) 
+
+T 2 = ( −1) S , (5b) Eq. (5b) means that half-integer spins carry a projective representation of time-reversal operation. Modulo this subtlety, Eqs. (4) and (5) define a full group of operations which is precisely the No. 1629 magnetic space group (MSG) [38] 
+
+F d 3m1′ = F d 3m × ZT 
+
+> 2
+
+, (6) where the MSG symbol F d 3m1′ is used. Chiral spin liquids by definition break time-reversal symmetry ZT 
+
+> 2
+
+, but may leave certain combinations of time-reversal T and spatial operation O invariant. In this work, we explore chiral spin liquids that are maxi-mally symmetric, where all spatial operations leave the chiral spin liquid state invariant up to time-reversal sym-metry. Under this assumption, for any spatial operation 
+
+O, either itself or the product OT (but not both) belongs to the symmetry group of chiral spin liquid, and we term the symmetry operation OT chiral following Ref. [39]. Not all spatial operation O can be transformed into its chiral counterpart: the relation (5b) of T restricts chiral operators OT to just order-2 elements O of the generat-ing set (3), namely O = I or S, and this generates all the possible realizations of chiral symmetries of a chiral spin liquid, irrespective of the generating set chosen. We can then label these four types of chiral spin liquids with their associated MSG counterparts [38]: 4
+
+• Type ( I, S ), corresponding to MSG No. 1628. This is the case when full lattice symmetry is pre-served but time-reversal symmetry is either not im-posed [27] or explicitly broken; 
+
+• Type ( IT , S ), corresponding to MSG No. 1630 (“ F d ′3′m”); 
+
+• Type ( I, S T ), corresponding to MSG No. 1631 (“ F d 3m′”); 
+
+• Type ( IT , S T ), corresponding to MSG No. 1632 (“ F d ′3′m′”). These four types of chiral spin liquids are further subject to the constraints of projective symmetry group, which we present in the next section.  
+
+> B. Projective symmetry group
+
+In this section we introduce the main ideas underlying the framework of the projective symmetry group (PSG), with an emphasis on the classification of chiral spin liq-uids. We rewrite the spin operator in terms of the Abrikosov fermionic partons ˆSrμ = 14 Tr(Ψ † 
+
+> rμ
+
+σΨrμ ) , (7a) Ψrμ = frμ,↑ f †
+
+> rμ,↓
+
+frμ,↓ −f †
+
+> rμ,↑
+
+!
+
+, (7b) where σ = (σ1, σ 2, σ 3) are the Pauli matrices. The Abrikosov fermionic partons f are arranged into the 2 ×2matrix Ψ. These partons describe the fermionic spinon excitations of interest. The parton Hilbert space enlarges the physical spin Hilbert space, which is recovered by im-posing the single-occupancy constraint 
+
+X
+
+> σ=↑,↓
+
+f † 
+
+> rμ,σ
+
+frμ,σ = 1 , ∀ rμ . (8) The parton representation introduces an SU(2) gauge invariance: any site-dependent SU(2) gauge transforma-tion 
+
+G : Ψ rμ → Ψrμ W (rμ) , W (rμ) ∈ SU(2) , (9) leaves the physical spins ˆSrμ invariant. Because of this gauge redundancy in the parton description, the physical symmetries of the spin liquid act projectively on the par-ton operators. Physically distinct parton Hamiltonians cannot be related by gauge transformations and there-fore correspond to different projective representations of the physical symmetry. The classification of projective symmetry groups (PSGs) thus provides a classification of symmetric quantum spin liquids. We derive the PSG equations as follows. Under a space-group operation O, the spins transform as 
+
+O : ˆSrμ → UO ˆSO(rμ)U †O ,
+
+where UO is the SU(2) rotation matrix associated with the operation O. The partons transform projectively ac-cording to 
+
+eO = GO ◦ O : Ψ rμ → U †O ΨO(rμ)WO [O(rμ)] , (10) where the symbol “ ◦” indicates that the projective op-eration eO is the composition of the physical symmetry operation O and the gauge transformation GO .The same procedure applies to the time-reversal oper-ation T . The spins transform under T as ˆSrμ
+
+> T
+
+−→ K †UT ˆSrμ U †T K ,
+
+where UT = iσ 2 and K = K† = K−1 denotes complex conjugation acting on all operators to its right. Using a special property of the SU(2) algebra, the projective action of T on Ψ can be written in a unitary form [27]: 
+
+eT = GT ◦ T : Ψ rμ → UT Ψrμ WT (rμ) , (11) while the antiunitary nature of T will manifest itself at the level of the mean-field Ans¨ atze [see Eq. (23) below]. For any chiral operator X = OT , its projective action eX
+
+is simply the product of eO and eT .The classification of PSGs generated by the projective operations eX amounts to finding all gauge-inequivalent solutions for the gauge transformations GX that are con-sistent with the symmetry group of the system. Any group relation of Eq. (4) (or its chiral version, obtained by replacing O with OT )
+
+X1 ◦ X 2 ◦ · · · = 1 , (12) leads to a gauge-enriched group relation 
+
+eX1 ◦ eX2 ◦ · · · = ( GX1 ◦ X 1) ◦ (GX2 ◦ X 2) ◦ · · · = G , (13) where G represents pure gauge transformations that leave the parton Hamiltonian invariant, known as the invariant gauge group (IGG). The IGG on each site is a subgroup of SU(2), typically Z2 or U(1). A gauge choice can always be made such that G = eiσ 3χ with some constant χ. In this paper we classify both Z2 and U(1) spin liquids, cor-responding to IGG = Z2 and U(1), for which χ = {0, π }
+
+and χ ∈ [0 , 2π), respectively. Using the general conjugation rule 
+
+Xi ◦ GXj ◦ X −1 
+
+> i
+
+: Ψ rμ → Ψrμ WXj [X −1 
+
+> i
+
+(rμ)] , (14) which follows directly from Eq. (10), Eq. (13) can be converted to an SU(2) equation 
+
+WX1 (rμ)WX2 [X −11 (rμ)] WX3 {X −12 [X −11 (rμ)] } · · · = G .5(15) The PSG classification is obtained by listing all group relations and solving the corresponding SU(2) equations (15) up to gauge equivalence. A general gauge transfor-mation G as in Eq. (9) transforms the gauge-enriched relations in Eq. (13) according to (G◦GX1 ◦X 1 ◦G−1)◦(G◦GX2 ◦X 2 ◦G−1)◦· · · = G , (16) which transforms WXi (rμ) by 
+
+WXi (rμ) → W (rμ)WXi (rμ)W −1[X −1 
+
+> i
+
+(rμ)] . (17) Such gauge transformations are used to eliminate du-plicate PSG solutions that are gauge equivalent to each other, yielding the final PSG classification. As the group equations for the chiral cases remain the same as for the nonchiral cases, the PSG classification ob-tained for the latter also applies to the former. In particu-lar, the PSGs for each of the chiral types ( IT , S ), ( I, S T ), and ( IT , S T ) are in one-to-one correspondence with the nonchiral PSGs. The corresponding chiral and nonchi-ral classes therefore share the same PSG solutions, while the distinction between unitary and antiunitary symme-try operations appears only at the level of the mean-field 
+
+Ans¨ atze .
+
+C. General mean-field Ans¨ atze 
+
+The most general mean-field Hamiltonian for fermionic spinons is written as 
+
+H = X
+
+> α=0 ,x,y,z
+
+Hα, Hα = X
+
+> rμ,r′
+> ν
+
+Hα 
+
+> rμ,r′
+> ν
+
+(18) with 
+
+Hα 
+
+> rμ,r′
+> ν
+
+= Tr[ σαΨrμ u(α) 
+
+> rμ,r′
+> ν
+
+Ψ† 
+
+> r′
+> ν
+
+] , (19) where σi, i = x, y, z are the three Pauli matrices, σ0 is the identity matrix, and Ψ rμ is defined as in Eq. (7b). Here our convention follows that of Ref. [27]: for the bond rμ ← r′ 
+
+> ν
+
+,
+
+u(0)  
+
+> rμ,r′
+> ν
+
+= iRe t(0)  
+
+> rμ,r′
+> ν
+
+1 − Re χ(0)  
+
+> rμ,r′
+> ν
+
+σ1
+
+− Im χ(0)  
+
+> rμ,r′
+> ν
+
+σ2 − Im t(0)  
+
+> rμ,r′
+> ν
+
+σ3 , (20a) 
+
+u(i) 
+
+> rμ,r′
+> ν
+
+= Re t(i) 
+
+> rμ,r′
+> ν
+
+1 + i(Re χ(i) 
+
+> rμ,r′
+> ν
+
+σ1
+
++ Im χ(i) 
+
+> rμ,r′
+> ν
+
+σ2 + Im t(i) 
+
+> rμ,r′
+> ν
+
+σ3) , (20b) where i = x, y, z . Explicitly, we have 
+
+H0 
+
+> rμ,r′
+> ν
+
+=i(t(0)  
+
+> rμ,r′
+> ν
+
+)∗(f †
+
+> rμ,↑
+
+fr′  
+
+> ν,↑
+
++ f †
+
+> rμ,↓
+
+fr′ 
+
+> ν,↓
+
+)+ χ(0) 
+
+> rμ, r′
+> ν
+
+(f †
+
+> rμ,↑
+
+f †  
+
+> r′
+> ν,↓
+
+− f †
+
+> rμ,↓
+
+f † 
+
+> r′
+> ν,↑
+
+) + h.c. , (21a) 
+
+Hx 
+
+> rμ,r′
+> ν
+
+= − (t(x) 
+
+> rμ,r′
+> ν
+
+)∗(f †
+
+> rμ,↓
+
+fr′  
+
+> ν,↑
+
++ f †
+
+> rμ,↑
+
+fr′ 
+
+> ν,↓
+
+)
+
+− iχ (x) 
+
+> rμ,r′
+> ν
+
+(f †
+
+> rμ,↑
+
+f †  
+
+> r′
+> ν,↑
+
+− f †
+
+> rμ,↓
+
+f † 
+
+> r′
+> ν,↓
+
+) + h.c. , 
+
+(21b) 
+
+Hy 
+
+> rμ,r′
+> ν
+
+= − i(t(y) 
+
+> rμ,r′
+> ν
+
+)∗(f †
+
+> rμ,↓
+
+fr′  
+
+> ν,↑
+
+− f †
+
+> rμ,↑
+
+fr′ 
+
+> ν,↓
+
+)
+
+− χ(y) 
+
+> rμ,r′
+> ν
+
+(f †
+
+> rμ,↑
+
+f †  
+
+> r′
+> ν,↑
+
++ f †
+
+> rμ,↓
+
+f † 
+
+> r′
+> ν,↓
+
+) + h.c. , (21c) 
+
+Hz 
+
+> rμ,r′
+> ν
+
+= − (t(z) 
+
+> rμ,r′
+> ν
+
+)∗(f †
+
+> rμ,↑
+
+fr′  
+
+> ν,↑
+
+− f †
+
+> rμ,↓
+
+fr′ 
+
+> ν,↓
+
+)+ iχ (z) 
+
+> rμ,r′
+> ν
+
+(f †
+
+> rμ,↑
+
+f †  
+
+> r′
+> ν,↓
+
++ f †
+
+> rμ,↓
+
+f † 
+
+> r′
+> ν,↑
+
+) + h.c. (21d) We introduce ah, b h, c h, d h, a p, b p, c p, d p to parametrize the 8 complex hopping and pairing t(0) , t(x), t(y),
+
+t(z), χ(0) , χ(x), χ(y), and χ(z) of the nearest-neighbor bond (0 , 0, 0) 0 ← (0 , 0, 0) 1. For the onsite terms at 
+
+rμ = r′ 
+
+> ν
+
+= (0 , 0, 0) 0, only four complex parameters (t(0) , χ (x), χ (y), χ (z)) are nonzero due to fermion anticom-mutativity and hermiticity of the Hamiltonian, and we parameterize them as ( αh, β p, γ p, δ p). Note that for U(1) PSG Ans¨ atze , we only have hopping bilinears and no pairing, therefore the parameters with subscript “ p” (hence the σ1 and σ2 terms) vanish. We then simplify the notation of the hopping parameters by omitting the subscript “ h” and write 
+
+u(0)  
+
+> 00,01
+
+= iRe a1 − Im aσ 3 ,u(x) 
+
+> 00,01
+
+= Re b1 + iIm bσ 3 ,u(y) 
+
+> 00,01
+
+= Re c1 + iIm cσ 3 ,u(z) 
+
+> 00,01
+
+= Re d1 + iIm dσ 3 .
+
+(22) For any space-group elements X , the singlet and the triplet sectors transform as 
+
+WX [X (rμ)] u(0)  
+
+> rμ,r′
+> ν
+
+W †X [X (r′ 
+
+> ν
+
+)] = ( −1) cX u(0)     
+
+> X(rμ),X(r′
+> ν)
+
+,WX [X (rμ)] u(i) 
+
+> rμ,r′
+> ν
+
+RX 
+
+> ij
+
+W †X [X (r′ 
+
+> ν
+
+)] = ( −1) cX u(j)    
+
+> X(rμ),X(r′
+> ν)
+
+,
+
+(23) where RX is the SO (3) matrix describing the transfor-mation of the vector r under X . The new ingredient is the sign factor ( −1) cX : when X is chiral (nonchiral) we have cX = 1 ( cX = 0). The negative sign in the chiral case comes from a special gauge fixing and accounts for the antiunitarity of X .
+
+D. SU(2) flux of parton states 
+
+A U(1) spin-singlet Ansatz as considered in Refs. [40, 41] is parameterized by a single complex hopping t(0)  
+
+> ij
+
+,where we abbreviate the lattice sites rμ, r′ 
+
+> ν
+
+, ... by i, j, ... 
+
+For the diamond (i.e., the translation cycles), the trian-gle / (on the up and down tetrahedra) and the hexagon plaquettes (in the kagome planes), one naively defines their fluxes ϕ , ϕ / and ϕ to be the phase of the product of nearest-neighbor bonds tij that border the plaquettes: 
+
+eiϕ p ∼ Q  
+
+> ij ∈N N (p)
+
+t(0)  
+
+> ij
+
+. We will call such defined flux ϕ6
+
+FIG. 2. Brillouin zones for the (i) 0-flux ( ε = 1), (ii) π-flux ( ε = 2), and (iii) π/ 2-flux ( ε = 4) states. Here, ε denotes the enlargement factor of the parton Brillouin zone: the parton primitive cell is spanned by e1, εe2, and εe3, where e1,2,3 are the FCC lattice vectors defined in Eq. (2). 
+
+the U(1) flux, since it is invariant under the U(1) gauge transformations fi → eiϕ i fi, t(0)  
+
+> ij
+
+→ t(0)  
+
+> ij
+
+ei(ϕi−ϕj ).The flux ϕ as defined above, however, is not invari-ant under the projective transformations of PSG, which operates in an enlarged space of SU(2) transformations allowing fi and f † 
+
+> i
+
+to rotate to each other. Including also the singlet pairings, a spin-singlet Ansatz has the general form [see Eq. (19)] 
+
+H0 = X
+
+> ⟨ij ⟩
+
+Tr 
+
+h
+
+Ψiu(0)  
+
+> ij
+
+Ψ†
+
+> j
+
+i
+
+. (24) Correspondingly, we define the SU(2) flux Φ p for a pla-quette p to be 
+
+Fp ∼ eiΦp , Fp ≡ Tr 
+
+ Y 
+
+> ij ∈N N (p)
+
+u(0) 
+
+> ij
+
+ , (25) here Fp is defined via the product of the matrix u(0) 
+
+> ij
+
+along the NN bonds that enclose the plaquette p. It serves as the lattice version of the SU (2) Wilson loop, which is invariant under the SU(2) gauge transformation Ψi → ΨiWi, u(0)  
+
+> ij
+
+→ Wiu(0)  
+
+> ij
+
+W † 
+
+> j
+
+. The flux Φ p is then defined as the phase of Fp.We make the following remarks: 
+
+• The Wilson loop Fp may vanish in some cases. In such cases, the SU(2) flux Φ p is not well-defined, which we write as Φ p = ∀.
+
+• When Φ p is well-defined, the special form of u(0) 
+
+(an imaginary factor times an SU(2) matrix) con-strains F and F to be real and F / to be purely imaginary. Consequently, the only possible values of Φ and Φ are 0, π, and Φ / = ± π 
+
+> 2
+
+.
+
+• For a U(1) Ansatz , χij = 0, we can further express Φp in terms of ϕp:
+
+eiΦ ∼ F ∼ cos( ϕ ) , (26a) 
+
+eiΦ / ∼ F / ∼ i sin( ϕ / ) , (26b) 
+
+eiΦ ∼ F ∼ cos( ϕ ) . (26c) We see that the U(1) flux ϕp provides a convenient de-scription for a U(1) Ansatz . As we shall explain in the next section, the U(1) fluxes ϕ , / , fully determine all non-chiral and chiral spin-singlet states at the NN level. The description of NN Z2 Ans¨ atze in terms of the fluxes is more involved, which we will show in Table V. Before combining the flux information with the results of PSG, let us first look at the general symmetry proper-ties of the SU(2) flux Φ p. By definition, Φ p is odd under time-reversal operation; it is also a pseudoscalar that is odd under inversion. Further taking into account the transformation of the normal vectors of the plaquette, we obtain the transformation rule of Φ p under ( I, S, T )as given in Table I 1:
+
+I S T Value of (Φ p, ϕ p)Φ Φ −Φ −Φ (0 , 0) , (π, π ), (∀, π 
+
+> 2
+
+)Φ / −Φ / Φ / −Φ / (∀, 0) , (∀, π ), ( π 
+
+> 2
+
+, ± π 
+
+> 2
+
+)Φ Φ −Φ −Φ (0 , 0) , (π, π ), (∀, π 
+
+> 2
+
+)TABLE I. Transformation properties of the SU(2) gauge-invariant fluxes Φ , / , under inversion I, screw S, and time reversal T , together with the relation between Φ p and the corresponding U(1) flux ϕp, and their allowed values.                                   
+
+> 1By definition, a pseudoscalar is odd under parity transforma-tion (i.e., inversion I), which seems to impose ˜ΦI()=−Φand ˜ΦI()=−Φ, at odds with Table I. This naive claim is based on the fact that Φ ≡B·nwhere Bis a pseudovector (even under parity: ˜B(I(x)) = B(x)) and nis a vector (odd under parity: ˜n(I(x)) = −n(x)). However, we adopt a uniform orientation n
+> for all translation plaquettes (and similarly for all the hexagon plaquettes), as a consequence Φ I()=−˜ΦI(), Φ I()=−˜Φ.This explains the parity rule in Table I.
+
+7From Table I, we see that the only well-defined values of Φ / , i.e., ± π 
+
+> 2
+
+, break time-reversal symmetry, and can only appear in the ( IT , S,  @T ) and ( I, S T , @T ) classes. In order to preserve all the three symmetries I, S, T , we must have Φ / = ∀.We will consider states preserving the following sym-metries: (I, S ), (IT , S ), (I, S T ), and ( IT , S T ). As we shall see, for spin singlet states at the NN bond level, both ( I, S ) and ( IT , S T ) imply ( I, S, T ), i.e., time-reversal symmetry is restored. 
+
+III. COMPLETE U(1) AND Z2 CHIRAL ANS ¨ATZE 
+
+FROM PSG A. PSG: algebraic classes 
+
+Here, we present the results of the PSG classifications of U(1) and Z2 chiral spin liquids for the different chiral symmetry classes, and discuss how they connect to the fully symmetric spin liquids that were previously classi-fied in Ref. [27]. A complementary projective-symmetry-group classification of chiral Z2 spin liquids on the py-rochlore lattice within a Schwinger-boson framework was given in Ref. [29]. The consequences of the PT theorem for U(1) spin liquids and lack thereof for Z2 spin liquids are discussed. The PSG classifications of U(1) and Z2 PSGs for the non-chiral classes were given in Ref. [27]. For each chi-ral type, ( IT , S ), ( I, S T ), or ( IT , S T ), the number of PSG classes is exactly the same as their corresponding non-chiral types. Below we quote the PSG solution from Ref. [27]: 
+
+WTi (rμ) = eiσ 3ϕTi (rμ), i = 1 , 2, 3 , (27a) 
+
+WC6 (rμ) = WC6,μ eiσ 3ϕC6 (rμ) , (27b) 
+
+WS (rμ) = WS,μ eiσ 3ϕS (rμ) , (27c) with 
+
+ϕT1 (rμ) = 0 , (28a) 
+
+ϕT2 (rμ) = −χ1r1 , (28b) 
+
+ϕT3 (rμ) = χ1(r1 − r2) , (28c) 
+
+ϕC6 (rμ) = −χ1r1(r2 − r3)
+
+− [2 χST 1 + 2 χ1 + ( δμ, 2 − δμ, 3)χ1]r1
+
++ δμ, 2χ1r3 , (28d) 
+
+ϕS (rμ) = χ1
+
+ (r1 + 1) r1
+
+2 − (r2 + 1) r2
+
+2 − r1r2
+
+
+
++ [( δμ, 1 − δμ, 2)χ1 + (2 χ1 − χST 1 )] r1
+
++ [(2 δμ, 1 − δμ, 2)χ1 + 3 χST 1 ]r2
+
++ [( δμ, 1 − δμ, 2) + 2] χ1r3 , (28e) the parameters χ1 and χST 1 label elements of the IGG. 
+
+Class ϕ1-( mC6 mS ) Nonzero onsite parameter in class -nST 1 -nC6S (I, S ) ( I, S T ) ( IT , S ) (IT , S T )0- or π-(00)-0-0 Im α – – –0- or π-(00)-0-1 Im α – – –0- or π-(01)-0-0 – Im α – –0- or π-(01)-0-1 – Im α – –0- or π-(10)-0-0 – – Im α –0- or π-(10)-0-1 – – Im α –0- or π-(11)-0-0 – – – Im α
+
+0- or π-(11)-0-1 – – – Im α 
+
+> π
+> 2
+
+-(01)-1-0 – Im α – – 
+
+> π
+> 2
+
+-(01)-1-1 – Im α – –TABLE II. Independent onsite mean-field parameters allowed by the projective symmetry group (PSG) for U(1) chiral spin liquids on the pyrochlore lattice. Each row corresponds to a PSG class labeled by the parameters ϕ1-( mC6 mS )-nST 1 -nC6S
+
+introduced in Sec. III. The columns indicate which onsite sin-glet parameters are permitted in the four chiral symmetry classes ( I, S ), ( IT , S ), ( I, S T ), and ( IT , S T ). Entries list the independent complex amplitudes allowed by symmetry, while “–” indicates that no independent onsite parameter is allowed in that class. These parameters serve as building blocks for constructing quadratic spinon Hamiltonians consistent with the corresponding PSG. 
+
+Recall that the PSG parameter for translation is χ1 =0, π, and π/ 2, which defines the so-called 0-flux, π-flux, and π 
+
+> 2
+
+-flux parton Ans¨ atze . This label still applies to the chiral states and we will extensively study them be-low. The π-flux and π 
+
+> 2
+
+states have an enlarged primitive cell that is 2 and 4 times that of the pyrochlore lattice, respectively. We show their parton Brillouin zones in Fig. 2. 
+
+B. U(1) and Z2 mean-field Ans¨ atze from PSG 
+
+In this section, we construct quadratic parton Hamilto-nians realizing different U(1) and Z2 PSGs, whose ground states then serve as variational mean-field wave-functions for chiral spin liquids. We give in Tables II and III the U(1) classification and Tables IV and V the Z2 classification for the ( I, S ), (IT , S ), ( I, S T ), and ( IT , S T ) PSGs including both the spin singlet and triplet parameters up to nearest neighbor (NN) level. We specify all the 12 singlet states of Table VI in these PSGs. We also label the singlet states in terms of the fluxes (Φ , Φ , Φ ) defined in Sec. II D. The bond results for further neighbors are given in Appendix B. 8
+
+(I, S ) and ( IT , S T ), Nonzero Constraints Restrict to spin singlet: ( ϕ , ϕ , ϕ ) states Class ϕ1-( mC6 mS )-nST 1 -nC6S NN parameters (I, S ) type (IT , S T ) type 0- or π-(00)-0-0 Im a, Im c Im c = −Im d (0 , 0, 0) and ( π, 0, π ) (0 , 0, π ) and ( π, 0, 0) 0- or π-(00)-0-1 Im b, Re c Re c = Re d N/A N/A 0- or π-(01)-0-0 Im c Im c = Im d N/A N/A 0- or π-(01)-0-1 Re c Re c = Re d N/A N/A 0- or π-(10)-0-0 Im c Im c = Im d N/A N/A 0- or π-(10)-0-1 Re c Re c = Re d N/A N/A 0- or π-(11)-0-0 Im a, Im c Im c = −Im d (0 , 0, π ) and ( π, 0, 0) (0 , 0, 0) and ( π, 0, π )0- or π-(11)-0-1 Im b, Re c Re c = Re d N/A N/A  
+
+> π
+> 2
+
+-(01)-1-0 Im c Im c = Im d N/A N/A  
+
+> π
+> 2
+
+-(01)-1-1 Re c Re c = Re d N/A N/A (I, S T ) and ( IT , S ), Nonzero Constraints Restrict to spin singlet: ( ϕ , ϕ , ϕ ) states Class ϕ1-( mC6 mS )-nST 1 -nC6S NN parameters (IT , S ) type (I, S T ) type 0- or π-(00)-0-0 Re b, Im c Im c = Im d N/A N/A 0- or π-(00)-0-1 Re a, Re c Re c = −Re d (0 , π/ 2, 0) [40], ( π, π/ 2, π ) (0 , π/ 2, π ), ( π, π/ 2, 0) [41] 0- or π-(01)-0-0 Im a, Re b, Im c Im c = −Im d (0 , 0, π ) and ( π, 0, 0) (0 , 0, 0) and ( π, 0, π )0- or π-(01)-0-1 Re a, Im b, Re c Re c = −Re d (0 , π/ 2, 0) [40], ( π, π/ 2, π ) (0 , π/ 2, π ), ( π, π/ 2, 0) [41] 0- or π-(10)-0-0 Im a, Re b, Im c Im c = −Im d (0 , 0, 0) and ( π, 0, π )‡ (0 , 0, π ) and ( π, 0, 0) 0- or π-(10)-0-1 Re a, Im b, Re c Re c = −Re d (0 , π/ 2, 0) [40], ( π, π/ 2, π ) (0 , π/ 2, π ), ( π, π/ 2, 0) [41] 0- or π-(11)-0-0 Re b, Im c Im c = Im d N/A N/A 0- or π-(11)-0-1 Re a, Re c Re c = −Re d (0 , π/ 2, 0) [40], ( π, π/ 2, π ) (0 , π/ 2, π ), ( π, π/ 2, 0) [41]  
+
+> π
+> 2
+
+-(01)-1-0 Im a, Re b, Im c Im c = −Im d ( π 
+
+> 2
+
+, π 
+
+> 2
+
+, π 
+
+> 2
+
+) ( π 
+
+> 2
+
+, π 
+
+> 2
+
+, − π 
+
+> 2
+
+) 
+
+> π
+> 2
+
+-(01)-1-1 Re a, Im b, Re c Re c = −Re d ( π 
+
+> 2
+
+, 0, − π 
+
+> 2
+
+) ( π 
+
+> 2
+
+, 0, π 
+
+> 2
+
+)TABLE III. Independent nearest-neighbor (NN) mean-field parameters and symmetry constraints for U(1) chiral spin liquids in the four PSG symmetry classes ( I, S ), ( IT , S ), ( I, S T ), and ( IT , S T ). For each PSG class (first column), the table lists the allowed NN hopping amplitudes together with the algebraic relations imposed by the PSG. The entries specify the independent parameters from which all other NN amplitudes can be generated by symmetry operations. These NN parameters determine the quadratic spinon Hamiltonians and the associated gauge-flux configurations discussed in Sec. III. In the last column, the 12 nearest-neighbor spin-singlet Ans¨ atze are highlighted (see Table VI for further details on these 12 states). Class ( χ1χST 1 )–( χC6S χSC 6 χC6 )j
+
+Independent onsite parameters (I, S ) (I, S T ) (IT , S ) (IT , S T )(00)– or ( ππ )–(000) Im αh, α p - - -(00)– or ( ππ )–( π00) Im αh, α p - - -(00)– or ( ππ )–(0 ππ ) Re αp - Im αh, Im αp -(00)– or ( ππ )–( πππ ) Re αp - Im αh, Im αp -(0 π)– or ( π0)–(0 π0) 1 - Im αh - -(0 π)– or ( π0)–(0 π0) 3 Re αp Im αh, Im αp - -(0 π)– or ( π0)–( ππ 0) 0 Re αp Im αh, Im αp - -(0 π)– or ( π0)–( ππ 0) 2 - Im αh - -(0 π)– or ( π0)–(00 π) Re αp - - Im αh, Im αp
+
+(0 π)– or ( π0)–( π0π) Re αp - - Im αh, Im αp
+
+(0 π)– or ( π0)–(0 ππ )0 - Im αh - -(0 π)– or ( π0)–( πππ )0 - Im αh - -(0 π)– or ( π0)–(0 ππ )1 - Im αh Re αp Im αp
+
+(0 π)– or ( π0)–( πππ )1 - Im αh Re αp Im αp
+
+TABLE IV. Independent onsite mean-field parameters for Z2 chiral spin liquids in the four symmetry classes ( I, S ), ( IT , S ), (I, S T ), and ( IT , S T ) obtained from the PSG classification. Compared with the U(1) case, additional pairing terms are allowed once the invariant gauge group is reduced to Z2. All other onsite terms are fixed by the PSG constraints. 9
+
+(I, S ) and ( IT , S T ) Classes Independent Constraints Restrict to spin singlet: (Φ , Φ , Φ ) states (χ1χST 1 )–( χC6S χSC 6 χC6 )j NN parameters (I, S ) type (IT , S T ) type (00)– or ( ππ )–(000) Im ah, a p, Im ch, c p Im ch = −Im dh, c p = −dp (0 , ∀, 0) and ( π, ∀, π ) (0 , ∀, π ) and ( π, ∀, 0) (00)– or ( ππ )–( π00) Im bh, b p, Re ch Re ch = Re dh NA NA (00)– or ( ππ )–(0 ππ ) Re ah, c h, Im cp ch = −d∗
+
+> h
+
+, Im cp = Im dp (0 , ∀, 0) and ( π, ∀, π ) (0 , ∀, π ) and ( π, ∀, 0) (00)– or ( ππ )–( πππ ) Re bh, Re cp Re cp = Re dp NA NA (0 π)– or ( π0)–(0 π0) 1 Re bh, Re cp Im bh = √3Re bh, +2 § NA NA (0 π)– or ( π0)–(0 π0) 3 Re bh, Re cp Re cp = Re dp NA NA (0 π)– or ( π0)–( ππ 0) 0 Re ah, c h, Im cp ch = −d∗
+
+> h
+
+, Im cp = Im dp (0 , ∀, 0) and ( π, ∀, π ) (0 , ∀, π ) and ( π, ∀, 0) (0 π)– or ( π0)–( ππ 0) 2 Re ah, c h, Re cp Im ah = −√3Re ah, +3 ∗ (0 , ∀, 0) and ( π, ∀, π ) (0 , ∀, π ) and ( π, ∀, 0) (0 π)– or ( π0)–(00 π) Im ah, a p, Im ch, cp Im ch = −Im dh, c p = −dp (0 , 0, Θ) a and ( π, 0, Θ) a (0 , 0, Θ) a and ( π, 0, Θ) a
+
+(0 π)– or ( π0)–( π0π) Im bh, b p, Re ch Re ch = Re dh NA NA (0 π)– or ( π0)–(0 ππ )0 Re bh, Re cp Im bh = −√3Re bh, +2 §§ NA NA (0 π)– or ( π0)–( πππ )0 Re ah, c h, Re cp Im ah = −√3Re ah, +3 ∗∗ (0 , ∀, π ) and ( π, ∀, 0) (0 , ∀, 0) and ( π, ∀, π )(0 π)– or ( π0)–(0 ππ )1 Re bh, Im cp Im cp = Im dp NA NA (0 π)– or ( π0)–( πππ )1 Re ah, c h, Re cp ch = −d∗
+
+> h
+
+, Re dp = Re cp (0 , ∀, π ) and ( π, ∀, 0) (0 , ∀, 0) and ( π, ∀, π )(I, S T ) and ( IT , S ) Classes Independent Constraints Restrict to spin singlet: (Φ , Φ , Φ ) states (χ1χST 1 )–( χC6S χSC 6 χC6 )j NN parameters (IT , S ) type (I, S T ) type (00)– or ( ππ )–(000) Re bh, Im ch, c p Im ch = Im dh, cp = dp NA NA (00)– or ( ππ )–( π00) Re ah, Re ch Re ch = −Re dh (0 , π 
+
+> 2
+
+, 0) and ( π, π 
+
+> 2
+
+, π ) (0 , π 
+
+> 2
+
+, π ) and ( π, π 
+
+> 2
+
+, 0) (00)– or ( ππ )–(0 ππ ) Im ah, Im ap, ch = d∗
+
+> h
+
+, Im cp = −Im dp (0 , ∀, 0) and ( π, ∀, π ) (0 , ∀, π ) and ( π, ∀, 0) Re bp, c h, Im cp
+
+(00)– or ( ππ )–( πππ ) Re ap, Im bh, Im bp, Re cp Re cp = −Re dp (0 , π 
+
+> 2
+
+, 0) and ( π, π 
+
+> 2
+
+, π ) (0 , π 
+
+> 2
+
+, π ) and ( π, π 
+
+> 2
+
+, 0) (0 π)– or ( π0)–(0 π0) 1 Re ap, Re bh, Re bp, Re cp Im ap = √3Re ap,+4 † (0 , π 
+
+> 2
+
+, 0) and ( π, π 
+
+> 2
+
+, π ) (0 , π 
+
+> 2
+
+, π ) and ( π, π 
+
+> 2
+
+, 0) (0 π)– or ( π0)–(0 π0) 3 Re ap, Im bh, Im bp, Re cp Re cp = −Re dp (0 , π 
+
+> 2
+
+, 0) and ( π, π 
+
+> 2
+
+, π ) (0 , π 
+
+> 2
+
+, π ) and ( π, π 
+
+> 2
+
+, 0) (0 π)– or ( π0)–( ππ 0) 0
+
+Im ah, Im ap, ch = d∗
+
+> h
+
+, Im cp = −Im dp (0 , ∀, π ) and ( π, ∀, 0) (0 , ∀, 0) and ( π, ∀, π )Re bp, c h, Im cp
+
+(0 π)– or ( π0)–( ππ 0) 2
+
+Re ah, Re ap, Im ah = 1√3 Re ah, (0 , π 
+
+> 2
+
+, Θ) a and ( π, π 
+
+> 2
+
+, Θ) a (0 , π 
+
+> 2
+
+, Θ) a and ( π, π 
+
+> 2
+
+, Θ) a
+
+Re bp, c h, Re cp Im ap = 1√3 Re ap,+4 ‡
+
+(0 π)– or ( π0)–(00 π) Re bh, Im ch, c p Im ch = Im dh, cp = dp NA NA (0 π)– or ( π0)–( π0π) Re ah, Re ch Re ch = −Re dh (0 , π 
+
+> 2
+
+, 0) and ( π, π 
+
+> 2
+
+, π ) (0 , π 
+
+> 2
+
+, π ) and ( π, π 
+
+> 2
+
+, 0) (0 π)– or ( π0)–(0 ππ )0 Re ap, Re bh, Re cp Im ap = 1√3 Re ap,+4 # (0 , π 
+
+> 2
+
+, 0) and ( π, π 
+
+> 2
+
+, π ) (0 , π 
+
+> 2
+
+, π ) and ( π, π 
+
+> 2
+
+, 0) (0 π)– or ( π0)–( πππ )0
+
+Re ah, Re ap, Im ah = 1√3 Re ah, (0 , π 
+
+> 2
+
+, Θ) a and ( π, π 
+
+> 2
+
+, Θ) a (0 , π 
+
+> 2
+
+, Θ) a and ( π, π 
+
+> 2
+
+, Θ) a
+
+Re bp, c h, Re cp Im ap = −√3Re ap,+4 ## 
+
+(0 π)– or ( π0)–(0 ππ )1 Im ap, Im bh, Re bp, Im cp Im cp = −Im dp (0 , π 
+
+> 2
+
+, 0) and ( π, π 
+
+> 2
+
+, π ) (0 , π 
+
+> 2
+
+, π ) and ( π, π 
+
+> 2
+
+, 0) (0 π)– or ( π0)–( πππ )1
+
+Im ah, Re ap, ch = d∗
+
+> h
+
+, Re dp = −Re cp (0 , 0, Θ) a and ( π, 0, Θ) a (0 , 0, Θ) a and ( π, 0, Θ) a
+
+Im bp, c h, Re cp
+
+TABLE V. Independent nearest-neighbor (NN) mean-field parameters and symmetry constraints for Z2 chiral spin liquids in the four PSG symmetry classes ( I, S ), ( IT , S ), ( I, S T ), and ( IT , S T ). Both hopping and pairing amplitudes are included, as well as the algebraic relations required by symmetry. Spin-singlet parameters are underlined. All other NN matrix elements of the mean-field Hamiltonian follow from these parameters by applying the PSG operations.  
+
+> a
+
+Θ = 0 , π . 
+
+> §
+
+Im cp = √3Re cp, cp = dp. 
+
+> §§
+
+Im cp = 1√3 Re cp, cp = dp. 
+
+> ∗
+
+Im cp = 1√3 Re cp, dh = e π 
+
+> 3i
+
+c∗
+
+> h
+
+, cp = dp. 
+
+> ∗∗
+
+dh = e π 
+
+> 3i
+
+c∗
+
+> h
+
+, Im cp = −√3Re cp, cp = dp. 
+
+> †
+
+Im bh = − 1√3 Re bh, Im bp = − 1√3 Re bp, Im cp = √3Re cp, cp = −dp. 
+
+> ‡
+
+Im bp = −√3Re bp, Im cp = 1√3 Re cp, dh = −e π 
+
+> 3i
+
+c∗
+
+> h
+
+, cp = −dp. 
+
+> #
+
+Im bh = 1√3 Re bh, Im bp = −√3Re bp, Im cp = 1√3 Re cp, cp = −dp. 
+
+> ##
+
+Im bp = 1√3 Re bp, Im cp = −√3Re cp, dh = −e π 
+
+> 3i
+
+c∗
+
+> h
+
+, cp = −dp.10   
+
+> C. Flux classification of NN singlet Ans¨ atze
+
+Here we restrict our consideration to nearest-neighbor (NN), spin-singlet Ans¨ atze . While these states are sub-ject to the classification of PSG, we will show that several PSG classes can give rise to the same state, as a conse-quence of restricting to NN hopping and pairing param-eters. A separate argument in terms of the symmetry properties of the fluxes can instead effectively classify these states, thereby providing a more physically trans-parent interpretation of the PSG parameters. As explained in detail in Sec. II D, for U(1) Ans¨ atze 
+
+the gauge invariant SU(2) flux Φ p are determined by the U(1) flux ϕp. A U(1) flux ϕp is abelian and its values on the diamond , triangle / and hexagon plaquettes completely determine the spin singlet states at the NN level. The results are summarized in Table VI. We arrive at these results as follows: 1. Due to three-fold rotation symmetries 2, all four tri-angle faces of a tetrahedron must have the same flux ( ϕ for up tetrahedron and ϕ for down tetra-hedron). Given that the sum of four triangle fluxes must be multiples of 2 π, the triangle flux can only be ϕ , = 0 , π or ϕ , = ±π/ 2 ( ϕ and ϕ are inde-pendent at this point), corresponding to Φ , = ∀
+
+in the former case and Φ , = ±π/ 2 in the latter. 2. We see from Table I that Φ = π/ 2 breaks time-reversal symmetry, and can only appear in the classes (IT , S,  @T ) and (I, S T , @T ). Specifi-cally, Φ = Φ = ±π/ 2 can only appear in class (IT , S,  @T ), while Φ = −Φ = ±π/ 2 can only ap-pear in class ( I, S T , @T ). 3. ϕ , ϕ / , and ϕ are not all independent; they are constrained by 
+
+ϕ = ϕ + ϕ − ϕ , (29) here the minus sign in front of ϕ is due to the orien-tation of the normal vector for the “down” triangle faces, which is opposite to that for the “up” triangle faces. 4. We can then enumerate all the possible values for ϕ , , to obtain the complete set of NN spin-singlet states: (ϕ , ϕ , ϕ ) = ( ϕ1, 0, 0), ( ϕ1, 0, π ), (ϕ1, π 
+
+> 2
+
+, π 
+
+> 2
+
+), ( ϕ1, π 
+
+> 2
+
+, − π 
+
+> 2
+
+) with ϕ1 = 0, π, or π 
+
+> 2
+
+.The NN spin-singlet states resulting from these general rules are given in Table VI. The U(1) PSG classification correctly produces these states, as shown in Table III.    
+
+> 2Note that all the three-fold symmetries can be obtained from C3
+> composed with translations and even numbers of screw S.
+
+A Z2 Ansatz generally contains both hopping and pair-ing terms. The projective symmetry transformation gen-erally contains particle-hole transformation, therefore the U(1) flux ϕp is no longer a meaningful quantity and we should only study the SU(2) flux Φ p. Unlike ϕp in the U(1) Ans¨ atze which obeys Eq. (29), the SU(2) flux Φ p
+
+instead obeys a slightly more loosened constraint Φ ≡ Φ + Φ − Φ (mod π) . (30) As mentioned before, Φ and Φ , when well-defined, can only be 0 or π, and Φ / when well-defined can only be 
+
+± π 
+
+> 2
+
+. Therefore the only possible values for (Φ , Φ , Φ ) are ( ϕ1, ∀, 0), ( ϕ1, ∀, π ), ( ϕ1, π 
+
+> 2
+
+, 0), ( ϕ1, π 
+
+> 2
+
+, π ) for ϕ1 = 0 or π. Again Φ = Φ = π 
+
+> 2
+
+appears only in an ( IT , S,  @T )state and Φ = −Φ = π 
+
+> 2
+
+appears only in an ( I, S T , @T )state. Now it is crucial to realize that, within one Z2 PSG class, the flux Φ can still change: for example, in the class ( I, S )–(0 π)–(00 π), Φ can be either 0 or π, depend-ing on the relative strength of Im ah, Re ap and Im ap. We use the notation Φ = Θ to label such classes, where Θ = 0 or π.We note that Φ can change between 0 and π within one Z2 PSG class. This is a consequence of the absence of time-reversal symmetry: recall that time-reversal opera-tion maps Φ to −Φ , and therefore pins Φ to a definite value being either 0 or π. The lack of time-reversal sym-metry allows the value of Φ to change in certain PSG classes. The change of Φ in such classes is exactly due to the fact that we have several independent spin-singlet parameters. In fact, if only the hopping Im ah is present, we will have Φ = 0, whereas if we only have pairing 
+
+ap, then Φ = π. Remember that the Z2 PSG classes further split upon adding time-reversal symmetry. The parameters ap and Im ah precisely represent two ways of adding time-reversal symmetry, which leads to two dis-tinct time-reversal invariant PSG classes, with Φ = 0 and Φ = π, respectively. Furthermore, remember that the U(1) PSG classes do not split upon adding time-reversal symmetry. We can then infer the following: upon switching some mean-field parameters, a Z2 PSG (without imposing time-reversal symmetry) may reduce to a U(1) PSG class; exactly which U(1) PSG class depends on the way the mean-field parameters are switched off. In the current gauge choice, quite often a hopping parameter is mapped under projective symmetries to a pairing parameter, making it hard to track the dependence relation between U(1) and 
+
+Z2 Ans¨ atze . In general, it is possible for a Z2 PSG class to have several parent U(1) PSG classes.    
+
+> D. PT theorem and its (in)applicability to Z2states
+
+An important constraining principle for singlet par-ton mean-field theories is the “PT theorem” [42]. In 11                                               
+
+> Type Class labeled by ( ϕ , ϕ , ϕ )Relation between ϕand ϕCorresponding (Φ ,Φ,Φ,Φ ) (I, S, T)(0 ,0,0) a, ( π, 0, π )bϕ=ϕ= 0 (0 ,∀,∀,0), ( π, ∀,∀, π )(I, S, T)(0 ,0, π ), ( π, 0,0) ϕ= 0 , ϕ =π(0 ,∀,∀, π ), ( π, ∀,∀,0) (IT, S,
+
+ZT ) (0 , π                               
+
+> 2,0) c, ( π, π
+> 2, π )d, ( π
+> 2,π
+> 2,π
+> 2)ϕ=ϕ=π/ 2(0 ,π
+> 2,π
+> 2,0), ( π, π
+> 2,π
+> 2, π ), ( ∀,π
+> 2,π
+> 2,∀)(IT, S,
+
+ZT ) ( π                
+
+> 2,0,−π
+> 2)ϕ= 0, ϕ=π(∀,∀,∀,∀)(I, TS,
+
+ZT ) (0 , π                                    
+
+> 2, π ), ( π, π
+> 2,0) e, ( π
+> 2,π
+> 2,−π
+> 2)ϕ=−ϕ=π/ 2(0 ,π
+> 2,−π
+> 2, π ), ( π, π
+> 2,−π
+> 2,0), ( ∀,π
+> 2,−π
+> 2,∀)(I, TS,
+
+ZT ) ( π                                                     
+
+> 2,0,π
+> 2)ϕ=ϕ= 0 (∀,∀,∀,∀)TABLE VI. The 12 U(1) spin singlet states at the NN bond level (non-chiral/chiral), classified by the U(1) fluxes on the diamond plaquettes ϕ, triangle plaquettes ϕ/, and hexagon plaquettes ϕ.
+> a(0 ,0,0): This Ansatz is labelled as [0 ,0,0] in Ref. [41], and referred to as the uniform state in Ref. [40].
+> b(π, 0, π ): This Ansatz is labelled as [0 ,0, π ] in Ref. [41], and as ( π, π ) in Table I of Ref. [40].
+> c(0 , π/ 2,0): This Ansatz is referred to as the monopole flux state in Ref. [40]. In Ref. [41], this state is labelled as [ π
+> 2,π
+> 2,0] and is referred to as the uniform flux state.
+> d(π, π/ 2, π ): This Ansatz is labelled as ( π/ 2, π ) in Table I of Ref. [40].
+> e(π, π/ 2,0): This Ansatz is referred to as the staggered flux state and labelled [ π
+> 2,−π
+> 2,0] in Ref. [41].
+
+many U(1) spin liquids, time-reversal symmetry T and a spatial operation P that reverses loop orientation (e.g., inversion or a mirror) impose equivalent constraints on gauge-invariant fluxes. As a result, breaking T typically forces the breaking of P, while the combined antiunitary 
+
+PT may remain a symmetry. Within the PSG framework this is naturally phrased in terms of SU(2) Wilson loops. Following Ref. [42], the gauge-invariant flux through a loop p is characterized by an SU(2) matrix Wp, whose trace defines a flux angle Φ p
+
+via Tr Wp = 2 cos Φ p. Under time reversal one has Φ p →−Φp, and any spatial operation P that reverses the loop orientation produces the same sign change. A genuine PT theorem corresponds to the situation in which T and 
+
+P therefore enforce identical constraints on Φ p for all relevant loops. Ref. [42] shows that this equivalence holds quite gen-erally for U(1) spin liquids. In that case, all Wilson loops can be gauge-rotated into a common Abelian U(1) subgroup: the loop matrices commute and the associ-ated flux angles are strictly additive under loop compo-sition. For the pyrochlore lattice this additivity is re-flected, for example, in the Abelian loop-flux relation 
+
+ϕ = ϕ + ϕ − ϕ [Eq. (29)], while for Z2 IGG the corre-sponding SU(2) fluxes obey only the weaker congruence Φ ≡ Φ + Φ − Φ (mod π) [Eq. (30)]. This additivity enforces a one-to-one correspondence between T and P constraints, implying that a state which breaks T necessarily breaks P as well. Consequently, chiral U(1) spin liquids must preserve PT , and purely 
+
+T -breaking states are excluded at the singlet mean-field level. The situation changes qualitatively for Z2 spin liq-uids. Pairing terms render Wilson loops genuinely non-Abelian: flux “directors” on different loops need not be collinear, loop matrices need not commute, and flux an-gles need not be strictly additive [42]. Therefore, the equivalence between T and orientation-reversing P con-straints that underlies the PT theorem need not hold for 
+
+Z2 IGG. In contrast to the U(1) case, breaking T does 
+
+not generically force the breaking of parity, and genuinely 
+
+T -breaking Z2 spin liquids are therefore allowed. In particular, starting from a fully symmetric, gapped singlet Z2 state with real pairing, one may generate a chiral descendant by introducing an imaginary singlet pairing component (proportional to σ2 in our conven-tion), e.g., on-site and on third-neighbor bonds in our construction. This deformation changes the SU(2) flux pattern and breaks T while remaining compatible with lattice symmetries, realizing a legitimate chiral Z2 state with no counterpart among U(1) Ans¨ atze constrained by the PT theorem [42].    
+
+> IV. NEAREST-NEIGHBOR SINGLET U(1)
+> CHIRAL ANS ¨ATZE
+
+The PSG classification in principle allows us to con-struct symmetric mean-field Ans¨ atze for chiral spin liq-uids up to arbitrary neighbors, the physical Ans¨ atze con-sist mainly of spinons with short-range hopping. In this section, we restrict ourselves to the 12 U(1) chiral Ans¨ atze 
+
+with only NN singlet hoppings, and conduct a detailed study of their spectral signatures. The choice of U(1) states is motivated by quantum spin ice which features a U(1) field. As we will show, the 12 NN singlet states already exhibit rich physics, with unique band struc-tures and gauge field dependence. They lead to distinct features in their equal-time spin structure factors which serve as an initial diagnostic in distinguishing spin liquid states. 12                                                    
+
+> (a) (0 ,0,0) state (b) (0 ,0, π ) state (c) (0 ,π
+> 2,0) state (d) (0 ,π
+> 2, π ) state
+> (e) ( π, 0, π ) state (f) ( π, 0,0) state (g) ( π, π
+> 2, π ) state (h) ( π, π
+> 2,0) state
+> (i) ( π
+> 2,π
+> 2,π
+> 2) state (j) ( π
+> 2,0,−π
+> 2) state (k) ( π
+> 2,π
+> 2,−π
+> 2) state (l) ( π
+> 2,0,π
+> 2) state
+
+FIG. 3. Nearest-neighbor hopping patterns for the 12 U(1) spin-singlet Ans¨ atze listed in Table VI. Solid bonds represent real hopping amplitudes and dashed bonds purely imaginary ones. Blue (red) bonds denote positive (negative) real hoppings, while a dashed black arrow denotes a purely imaginary hopping with phase + i along the arrow direction. 
+
+A. Spectrum of the 12 U(1) singlet states 
+
+We first show in Fig. 3 the phase of the NN singlet bands of the 12 states. The bond phases are chosen with a particular gauge fixing; the invariant data are the SU(2) phases on the triangle, hexagon, and diamond plaquettes as labeled in Table VI. We plot the band structure for the 12 NN singlet hop-ping states with chosen bond phase of Table VI, assuming that the hopping amplitude is unity. Their spectra along high symmetry paths are shown in Fig. 4: the high sym-metry points for the 0-flux, π-flux, and π/ 2-flux Ans¨ atze 
+
+are given in Fig. 2. First we note that several spectra exhibit spectral symmetry upon reverting the sign of en-ergy E ↔ − E. This can happen whenever the inversion 
+
+I exists as a (projective) symmetry that conjugate the spinon U(1) charge f → f †, or the chiral inversion IT
+
+exists as a symmetry that does not conjugate the spinon charge f → eiθ f (here a possibe nonzero phase θ is al-lowed by IT ). On the other hand, the spectral symmetry E(k) ↔−E(k) is manifestly absent for the ( π 
+
+> 2
+
+, π 
+
+> 2
+
+, π 
+
+> 2
+
+) and the ( π 
+
+> 2
+
+, 0, − π 
+
+> 2
+
+) states. In fact, these two states are in the  
+
+> π
+> 2
+
+-(01)-1-∗ classes with mC6 = 0 and symmetry IT .This means that they have the property WIT H(k)W † 
+
+> IT
+
+=
+
+−H (−k), here the minus sign in −k comes from the effect of inversion, whereas the minus sign in front of −H (−k)comes from the effect of T (after factoring out this minus sign, T operates as a unitary symmetry in PSG). This means that the energy has the usual particle-hole sym-metry E(k) = −E(−k), which is not necessarily manifest in the plots. A second notable feature is the existence of flat bands for the (0 , 0, 0), (0 , 0, π ), ( π, 0, 0), and the ( π 
+
+> 2
+
+, 0, − π 
+
+> 2
+
+). We have checked that these flat bands acquire dispersion when further hopping are included. The state (0 , π 
+
+> 2
+
+, 0) has a gapless nodal star band structure, which is robust against adding further hopping parameters as along as 13 the projective symmetry holds.  
+
+> B. Monopole fluxes and two notable states
+
+Among the 12 NN U(1) singlet Ans¨ atze classified in Table VII, chirality can arise only through a nontrivial triangle flux. As discussed in Sec. III C, the SU(2) flux on diamond and hexagon plaquettes is restricted to 0 or 
+
+π, while the only time-reversal-odd possibility at the NN level is Φ / = ± π
+
+2 . (31) Because the four triangular faces of a tetrahedron form a closed surface, their U(1) fluxes obey the lattice con-straint (29), so assigning |ϕ / | = π/ 2 corresponds to inserting a quantized 2 π gauge flux through each tetra-hedron. In this sense, the π/ 2 triangle flux may be inter-preted as threading an effective monopole of the emergent U(1) gauge field through every tetrahedron. Once this local monopole flux structure is imposed, there are two maximally symmetric global realizations compatible with the space group and the chiral symmetry classes identified in Sec. II. First, one may assign the same chirality to all tetrahedra, 
+
+ϕ = ϕ = π
+
+2 , (32) yielding the monopole flux state [40]. Alternatively, one may assign opposite chiralities to up- and down-tetrahedra, 
+
+ϕ = −ϕ = π
+
+2 , (33) yielding the staggered flux state [41]. Although both states share the same local monopole magnitude |Φ / | = π/ 2, they differ in the global arrange-ment of monopole charge and therefore belong to distinct chiral symmetry families. The monopole flux state pre-serves chiral inversion IT and nonchiral screw S, while the staggered flux state preserves inversion I and chiral screw ST . Their symmetry properties are summarized in Table VII. Importantly, at the NN singlet level these states appear across several PSG classes (see Table III) as an artifact of restricting to NN hoppings. All such realizations share 
+
+nST 1 = 0 and nC6S = 1, irrespective of the values of 
+
+mC6 , m S = 0 , 1. The physical distinction between the two states is therefore not encoded in short-range ener-getics but in the structure of their emergent gauge flux and its consequences for the spinon band topology. As we now show, the two realizations lead to qualitatively different low-energy spinon and gauge-field regimes.  
+
+> 1. Monopole flux state and nodal line spin liquids
+
+The (0 , π/ 2, 0) state corresponds to the monopole flux state introduced in Ref. [40] and further analyzed in Ref. [27]. In this configuration all triangular plaquettes carry the same chiral flux π/ 2, while the hexagon flux vanishes. As a result, each tetrahedron encloses a net 2π gauge flux, which can be interpreted as an effective monopole of the emergent U(1) gauge field located at the center of the tetrahedron. The flux pattern is therefore uniform across the lattice. At the mean-field level this flux pattern produces a gapless spinon spectrum characterized by nodal lines in momentum space. The origin of these nodal structures can be traced to the combination of lattice symmetry and the projective implementation of inversion and time-reversal operations. In particular, the preserved symme-try IT constrains the spinon Hamiltonian such that band crossings along one-dimensional manifolds are protected, leading to nodal loops rather than isolated Dirac points. The resulting nodal structure forms characteristic star-shaped patterns in the Brillouin zone, and was referred to as a nodal star U(1) spin liquid in Ref. [27]. Here we claim that the nodal star structure exists for all U(1) Ans¨ atze in the ( IT , S ) chiral class 0-(11)-0-1: it is protected by the projective symmetry group, and is robust against the ad-dition of arbitrarily long-range neighbor hoppings. The proof exactly parallels the one in Ref. [27]. The low-energy theory therefore consists of gapless fermionic spinons residing on these nodal lines coupled to a dynamical U(1) gauge field. This combination realizes a three-dimensional gapless U(1) spin liquid. Compared with conventional Coulomb phases with gapped matter, the presence of nodal spinons modifies the low-energy density of states and produces additional contributions to thermodynamic and correlation functions. Notably, the nodal-line density of states vanishes linearly, ρ(E) ∝ | E|,which implies parametrically weak Landau damping of the emergent photon and supports the stability of the deconfined U(1) gauge field. The low-energy field theory is minimally described by a two-band nodal star disper-sion coupled to a dynamical U(1) gauge field. Such a field theory was studied in detail i Ref. [27] and was pre-dicted to have a T 3/2/ ln T subleading term in the specific heat, in addition to the specific heat due to the emergent photon modes.    
+
+> 2. Staggered flux state and gapped U(1) spin liquids
+
+The ( π, π/ 2, 0) state defined here can be identified with the staggered flux (SF) state introduced in Ref. [41], up to unitary transformations (see Appendix A). The feature of this state is that the triangular plaquettes on up and down tetrahedra carry opposite chiral fluxes ±π/ 2, while the hexagon flux vanishes. This staggered arrangement distinguishes it from the monopole-flux state, where the 14 Γ X W K L Γ
+
+> −2
+> −10123456
+
+(a) (0 , 0, 0) state Γ X W K L Γ 
+
+> −4
+> −3
+> −2
+> −101234
+
+(b) (0 , 0, π ) state Γ X W K L Γ 
+
+> −3
+> −2
+> −10123
+
+(c) (0 , π 
+
+> 2
+
+, 0) state Γ X W K L Γ 
+
+> −3
+> −2
+> −10123
+
+(d) (0 , π 
+
+> 2
+
+, π ) state Γ XS RA Z Γ YX 1 A1T Y|Z T 
+
+> −5
+> −4
+> −3
+> −2
+> −1012
+
+(e) ( π, 0, π ) state Γ XS RA Z Γ YX 1 A1T Y|Z T  
+
+> −4
+> −3
+> −2
+> −101234
+
+(f) ( π, 0, 0) state Γ XS RA Z Γ YX 1 A1T Y|Z T  
+
+> −3
+> −2
+> −10123
+
+(g) ( π, π 
+
+> 2
+
+, π ) state Γ XS RA Z Γ YX 1 A1T Y|Z T  
+
+> −3
+> −2
+> −10123
+
+(h) ( π, π 
+
+> 2
+
+, 0) state ΓX S YΓ ZURT Z|Y T|U X|S R
+
+> −3
+> −2
+> −10123
+
+(i) ( π 
+
+> 2
+
+, π 
+
+> 2
+
+, π 
+
+> 2
+
+) state ΓX S YΓ ZURT Z|Y T|U X|S R 
+
+> −4
+> −3
+> −2
+> −101234
+
+(j) ( π 
+
+> 2
+
+, 0, − π 
+
+> 2
+
+) state ΓX S YΓ ZURT Z|Y T|U X|S R 
+
+> −3
+> −2
+> −10123
+
+(k) ( π 
+
+> 2
+
+, π 
+
+> 2
+
+, − π 
+
+> 2
+
+) state ΓX S YΓ ZURT Z|Y T|U X|S R 
+
+> −5
+> −4
+> −3
+> −2
+> −1012
+
+(l) ( π 
+
+> 2
+
+, 0, π 
+
+> 2
+
+) state 
+
+FIG. 4. Spinon band structures for the 12 nearest-neighbor spin-singlet U(1) Ans¨ atze on the pyrochlore lattice listed in Table VI. The spectra are plotted along the high-symmetry momentum paths shown in Fig. 2 for the corresponding parton Brillouin zones. Eight of these states are chiral, while the remaining four are fully symmetric. 
+
+triangle flux has the same sign on all tetrahedra. Corre-spondingly, the two states belong to different chiral sym-metry classes, summarized in Table VII. At the mean-field level the staggered flux pattern pro-duces a fully gapped spinon spectrum. In contrast to the monopole-flux state, where the flux configuration en-forces nodal structures, the alternating chirality removes the band degeneracies and opens a gap throughout the Brillouin zone. The resulting phase therefore realizes a gapped fermionic parton sector coupled to a dynamical U(1) gauge field. In three dimensions such a theory naturally gives rise to a stable Coulomb phase: the spinons are massive, while the low-energy sector is governed by the emergent photon of the U(1) gauge field. Consequently the univer-sal long-wavelength physics is dominated by gauge fluctu-ations, with the spinon sector contributing only through activated processes. Just as the monopole flux state, the staggered flux state also exhibits a spectral symmetry under E(k) ↔
+
+E(−k), which can be understood by restricting to PSG classes with mC6 = 1. 
+
+C. Variational Monte Carlo framework 
+
+Within the VMC approach, the variational state is ob-tained by projecting (to the spin Hilbert space) a Slater 15                          
+
+> State (ϕ , ϕ , ϕ )Preserves Breaks Monopole flux state (0 ,π
+> 2,0) T1,2,3,C3,IT,SI,T
+> Staggered flux state (π, π
+> 2,0) T1,2,3,C3,I,STS,T
+> TABLE VII. Symmetry properties of the monopole flux state [40, 41] and the staggered flux state [41].
+
+determinant, |Φ0⟩, which is the ground state of an auxil-iary quadratic Hamiltonian 
+
+H0 = X
+
+> i,j
+
+tij (f †
+
+> i, ↑
+
+fj, ↑ + f †
+
+> i, ↓
+
+fj, ↓) . (34) The projection, which enforces the single fermionic oc-cupation of each lattice site, is achieved by means of a Gutzwiller-projector ˆP∞
+
+> G
+
+ˆP∞ 
+
+> G
+
+= Y
+
+> i
+
+(f †
+
+> i, ↑
+
+fi, ↑ − f †
+
+> i, ↓
+
+fi, ↓)2 , (35) and can be performed exactly by an appropriate Monte Carlo sampling [43]. Here, we are interested in obtain-ing the spin structure factors of the variational Ans¨ atze 
+
+for U(1) chiral spin liquids and their energetics for the spin-1 /2 Heisenberg antiferromagnet. Thus, we restrict ourselves to NN singlet hopping terms as in Eq. (34). The parameters tij (hoppings) are complex with the phases determined by the PSGs, and thus the resulting wave functions have no free variational parameters (with 
+
+|tij | = 1 as reference). The Gutzwiller projection is then performed on these systematically enumerated fermionic 
+
+Ans¨ atze .We use VMC to obtain the energy of the variational states. The result is listed in Table VIII.  
+
+> 1. Energetics
+
+We now turn to the variational Monte Carlo (VMC) evaluation of the ground-state energies of the eight U(1) chiral spin-liquid Ans¨ atze introduced above. The result-ing energies, summarized in Table VIII, are systemati-cally higher than those obtained from state-of-the-art nu-merical approaches such as exact diagonalization, tensor-network methods, or large-scale variational optimizations tailored specifically to the NN S = 12 Heisenberg antifer-romagnet on the pyrochlore lattice [31, 32, 34, 35, 44–47]. This observation is neither unexpected nor problematic in the present context. Our primary goal is not to establish the lowest vari-ational energy for the NN model, but rather to con-struct and characterize a controlled family of chiral U(1) spin liquids and to elucidate their emergent gauge struc-ture, correlation signatures, and systematic dependence on flux patterns. In this sense, the variational energies serve as a diagnostic of proximity between competing quantum phases rather than as a decisive criterion for ground-state selection. Indeed, Table VIII reveals that the different chiral 
+
+Ans¨ atze form a relatively narrow energy manifold, de-spite exhibiting markedly distinct behavior in their equal-time spin structure factors and gauge-sector dominance (Sec. IV B 1 and Table IX). This separation between en-ergetic ranking and correlation structure highlights an important point: variational states that are not ener-getically optimal for the pure NN model may never-theless provide particularly clean realizations of specific emergent gauge phenomena, such as strongly anisotropic pinch points associated with a Coulomb phase. From a broader perspective, the chiral U(1) Ans¨ atze 
+
+studied here should be viewed as natural ground-state candidates for a wider class of pyrochlore Hamiltoni-ans. It is well established that further-neighbor ex-change interactions, ring-exchange terms, or symmetry-allowed Dzyaloshinskii–Moriya interactions can substan-tially modify the energetic landscape on the pyrochlore lattice. Such perturbations are expected to selectively stabilize different flux configurations and may favor chi-ral spin-liquid phases even when they are not energeti-cally competitive in the pure NN limit. Within this ex-tended parameter space, the relative ordering of energies in Table VIII provides a useful guide to which chiral U(1) states are most proximate and therefore most likely to be realized. Finally, we emphasize that the present VMC results should be interpreted in conjunction with the detailed analysis of correlation functions and structure factors presented below. Taken together, these results estab-lish the chiral U(1) spin liquids as well-defined quantum phases with robust gauge-field signatures, independent of their precise energetic placement within the NN Heisen-berg model. In this sense, the present study complements energy-focused numerical approaches by providing a sys-tematic variational characterization of chiral U(1) spin liquids and their distinct correlation fingerprints.  
+
+> 2. Equal-time spin structure factors
+
+The equal-time spin structure factor 
+
+S(q) = 1
+
+N
+
+X
+
+> i,j
+
+e−iq·(ri−rj )⟨ˆSi · ˆSj ⟩ (36) provides a principal probe of magnetic correlations in frustrated quantum magnets and plays a particularly im-portant role in diagnosing Coulomb phases on the py-rochlore lattice. In contrast to magnetically ordered states, which exhibit Bragg peaks signaling spontaneous symmetry breaking, quantum spin liquids display diffuse yet highly structured scattering patterns encoding emer-gent constraints and gauge-field physics. A defining feature of U(1) Coulomb spin liquids is the appearance of pinch-point (bow-tie) singularities in the equal-time structure factor. These features originate 16 
+
+Symmetry (Φ , Φ , Φ ) (Φ , Φ ) Energy Proper/improper symmetries (I, S, T )(0 , 0, 0) a [40, 41] Φ = Φ = 0 −0.37502(6) All symmetries nonchiral (π, 0, π )b [40, 41] Φ = Φ = 0 −0.37511(8) (0 , 0, π ) Φ = 0 , Φ = π −0.37457(5) (π, 0, 0) Φ = 0 , Φ = π −0.37499(8) (IT , S, ZT )(0 , π 
+
+> 2
+
+, 0) c [40, 41] Φ = Φ = π 
+
+> 2
+
+−0.45756(1) nonchiral: 8 C3, 3C2, 6 ˜C4, 6 ˜C2
+
+(π, π 
+
+> 2
+
+, π )d [40] Φ = Φ = π 
+
+> 2
+
+−0.43457(1) ( π 
+
+> 2
+
+, π 
+
+> 2
+
+, π 
+
+> 2
+
+) Φ = Φ = π 
+
+> 2
+
+−0.43457(1) chiral: 6 σd,6 S4,3˜ σh,8 ˜S6
+
+( π 
+
+> 2
+
+, 0, − π 
+
+> 2
+
+) Φ = 0 , Φ = π −0.29753(1) (I, S T ,ZT )(0 , π 
+
+> 2
+
+, π ) Φ = −Φ = π 
+
+> 2
+
+−0.43735(1) nonchiral: 8 C3, 3C2, 3˜ σh, 8 ˜S6
+
+(π, π 
+
+> 2
+
+, 0) e [41] Φ = −Φ = π 
+
+> 2
+
+−0.45930(1) ( π 
+
+> 2
+
+, π 
+
+> 2
+
+, − π 
+
+> 2
+
+) Φ = −Φ = π 
+
+> 2
+
+−0.44930(1) chiral: 6 σd,6 S4,6 ˜C4, 6 ˜C2
+
+( π 
+
+> 2
+
+, 0, π 
+
+> 2
+
+) Φ = Φ = 0 −0.37462(1) TABLE VIII. For the nearest-neighbor spin-1 /2 Heisenberg antiferromagnet, the energies per site E/J of the twelve distinct U(1) Ans¨ atze which feature non-vanishing nearest-neighbor singlet amplitudes. The proper and improper symmetries which become chiral or are nonchiral are listed in the last column using the notation of Ref. [40]. The VMC calculations are done on a 2048-site (= 4 × 8 × 8 × 8) cluster which preserves the full symmetry of the pyrochlore lattice.  
+
+> a
+
+(0 , 0, 0): This Ansatz is labelled as [0 , 0, 0] in Ref. [41], and referred to as the uniform state in Ref. [40].  
+
+> b
+
+(π, 0, π ): This Ansatz is labelled as [0 , 0, π ] in Ref. [41], and as ( π, π ) in Table I of Ref. [40].  
+
+> c
+
+(0 , π/ 2, 0): This Ansatz is referred to as the monopole flux state in Ref. [40]. In Ref. [41], this state is labelled as [ π 
+
+> 2
+
+, π 
+
+> 2
+
+, 0] and is referred to as the uniform flux state.  
+
+> d
+
+(π, π/ 2, π ): This Ansatz is labelled as ( π/ 2, π ) in Table I of Ref. [40].  
+
+> e
+
+(π, π/ 2, 0): This Ansatz is referred to as the staggered flux state and labelled [ π 
+
+> 2
+
+, − π 
+
+> 2
+
+, 0] in Ref. [41]. 
+
+from a local constraint enforcing a divergence-free condi-tion on coarse-grained spin or flux variables, which leads to dipolar correlations in real space and a transverse projector structure in momentum space. This mecha-nism was first elucidated in the context of classical spin ice and Coulomb phases on the pyrochlore lattice [48– 50], and subsequently extended to quantum spin liquids and three-dimensional frustrated magnets [51]. Neutron-scattering signatures of such pinch points, including their characteristic angular anisotropy, have been extensively discussed in both classical and quantum pyrochlore sys-tems. From the gauge-theory perspective, pinch points re-flect the presence of an emergent U(1) gauge field obeying Gauss’ law. At long wavelengths, the equal-time correla-tions take the universal form 
+
+⟨Ba(q)Bb(−q)⟩ ∝ δab − qaqb
+
+q2 , (37) which directly produces the bow-tie geometry in momen-tum space [49, 51]. Crucially, this structure is a property of the gauge sector and does not arise from the dynamics of the fractionalized matter fields alone. Within fermionic parton constructions, this distinc-tion becomes particularly transparent. At the mean-field level, only the spinon (matter-field) contribution is re-tained, and the resulting structure factor is governed by particle-hole processes set by the spinon band structure. As illustrated by the unprojected results in Appendix C and Fig. 6 therein, this contribution provides a compar-atively smooth background on the momentum scales of interest, although weak nonanalyticities may arise when the spinon spectrum is gapless. The enforcement of the local single-occupancy constraint (implemented here via Gutzwiller projection) is therefore essential. Projection restores gauge-field fluctuations, including the temporal component enforcing Gauss’ law, and thereby generates the Coulombic correlations responsible for pinch points. This separation between comparatively smooth matter-field backgrounds (possibly with subleading weak non-analytic corrections) and the dominant pinch-point sin-gularity of the gauge sector is a hallmark of U(1) spin liquids in three dimensions [41, 43, 51]. In Fig. 5 we present the equal-time spin structure fac-tors for the projected NN U(1) chiral spin-liquid Ans¨ atze 
+
+discussed in Sec. IV A. The first two rows show two-dimensional cuts in the [ hhl ] and [ hk 0] planes, while the third row displays one-dimensional cuts through the pinch point at (0 , 0, 2) along two orthogonal directions, together with a cut along a representative high-symmetry path. Several robust features emerge. First, all projected U(1) chiral states exhibit well-defined pinch points at (0 , 0, 2) and symmetry-related reciprocal lattice vectors. The appearance of these pinch points at (0 , 0, 2), rather than at the zone center, is a well-understood conse-quence of the pyrochlore basis and neutron-scattering 17 form factors: interference between the four sublattices suppresses intensity at certain reciprocal vectors while enhancing it at others, making (0 , 0, 2)-type positions the most visible locations for Coulomb-phase signatures in the conventional cubic Brillouin zone [52–54]. The angu-lar anisotropy of the bow-tie patterns, clearly visible in both planar cuts and one-dimensional slices, is consistent with the transverse projector expected for a U(1) gauge field. Second, while the geometry of the pinch points is uni-versal, their spectral weight and contrast vary between different chiral Ans¨ atze . This reflects the coexistence of gauge-field correlations with Ansatz -dependent matter-field contributions. Schematically, the structure factor can be decomposed as 
+
+S(q) ≃ Sgauge (q) + Smatter (q) + Sshort-range (q) , (38) where the first term encodes the Coulombic pinch-point singularity, while the latter two provide a comparatively smooth background (on the momentum scales resolved in Fig. 5) arising from spinon particle-hole excitations and short-range RVB correlations [41, 51]. Depending on the underlying spinon dispersion and flux pattern, this background may either enhance the apparent intensity near the pinch point or partially fill in the pinched direc-tions, reducing contrast without altering the underlying angular structure. In particular, gapless spinon mani-folds (e.g., nodal lines) may, in principle, contain weak nonanalytic corrections in Smatter (q), but in the present numerics with the given momentum resolution they do not produce any obvious divergent or pinch-point-like singularity; the dominant nonanalytic cusp and angu-lar “pinch” structure are controlled by the gauge sector. This effect is particularly evident in the one-dimensional cuts of Fig. 5, where different Ans¨ atze show distinct cur-vatures and slopes approaching (0 , 0, 2). A useful way to disentangle these contributions is to analyze the local line shape of the 1d cuts in the imme-diate vicinity of the pinch point. Writing q = G + k
+
+with G = (0 , 0, 2) and small k along the cut direction, the gauge sector produces the characteristic nonana-lytic, strongly direction-dependent approach governed by the transverse projector, i.e., the intensity is suppressed along the “pinched” direction and enhanced along the transverse direction [49, 51]. By contrast, the matter and short-range sectors provide a comparatively smooth background on the scales shown in Fig. 5, but need not be strictly analytic to all orders when the spinon spectrum is gapless. More generally, one may write Smatter (G + k) + 
+
+Sshort-range (G+k) = A0 +A1·k+kT A2k+· · · +δS weak (k), where the first terms are analytic and δS weak (k) denotes possible weak nonanalytic corrections associated with gapless spinons. The Appendix C numerics show that, on the momentum cuts considered here, these matter-field contributions do not produce any obvious divergent or pinch-point-like singularity, and are therefore sub-leading compared with the dominant gauge-sector pinch-point structure. It is also useful to note that the com-ponent symmetric about the pinch point predominantly reflects the gauge-induced anisotropy, while asymmet-ric deviations are largely associated with nonuniversal background contributions. We use this observation only heuristically here, as the matter sector may itself contain weak nonanalytic corrections when the spinon spectrum is gapless. The separation of the universal pinch-point form fixed by Gauss’ law from nonuniversal background contribu-tions with possible weak nonanalytic correlations is im-plicit in the Coulomb-phase description; here we make this separation operational for projected parton wave-functions and use it comparatively to quantify ‘gauge dominance’ across distinct chiral flux sectors. We now apply this diagnostic explicitly to the one-dimensional cuts shown in the bottom row of Fig. 5 for all eight U(1) chiral Ans¨ atze . For each state, two orthogonal cuts through the pinch point G = (0 , 0, 2) are shown: a ver-tical cut (00 kz ) probing variations along the pinched di-rection and a horizontal cut ( kk 2) probing the transverse direction. Within the three-sector decomposition, the gauge contribution is identified by a strong, direction-dependent nonanalytic approach to G, while matter-field and short-range contributions enter as backgrounds with possible weak nonanalyticities but cannot generate the pinch-point anisotropy by themselves. A first robust observation is that all eight Ans¨ atze 
+
+exhibit a pronounced enhancement upon approaching 
+
+G along the vertical (00 kz ) cut, demonstrating that a Coulombic gauge sector is present in every case. How-ever, the sharpness of this enhancement varies signifi-cantly. The (0 , π/ 2, π ) and ( π, π/ 2, π ) states show the largest cusp-like increase in the (00 kz ) direction, indicat-ing a strong gauge-sector signal, whereas the ( π/ 2, 0, π/ 2) state displays a noticeably more rounded approach, con-sistent with a larger contribution from the matter and short-range sectors partially masking the singular con-tribution. The remaining states, (0 , π/ 2, 0), ( π, π/ 2, 0), (π/ 2, 0, −π/ 2), (π/ 2, π/ 2, π/ 2), and (π/ 2, π/ 2, −π/ 2), exhibit intermediate behavior, with clearly visible cusps but varying degrees of rounding near G.The horizontal ( kk 2) cut provides a particularly sen-sitive probe of the relative importance of smooth back-grounds, since the pure gauge-sector contribution is sup-pressed in this direction. Here the eight Ans¨ atze separate into three qualitatively distinct groups. The ( π, π/ 2, 0) and (π/ 2, π/ 2, −π/ 2) states exhibit a suppression or near-flat behavior at G in the ( kk 2) cut, i.e., a local minimum or very weak maximum. This indicates that the matter-field and short-range contributions are rel-atively small, allowing the gauge-sector anisotropy to dominate the local line shape. At the opposite ex-treme, the (0 , π/ 2, π ) state shows a pronounced peak even along the kk 2 direction, while the ( π/ 2, π/ 2, π/ 2) state also retains a clear enhancement. In these cases, the background is sufficiently large to partially fill in the 18 −2.5 0.0 2.5
+
+[hh 0] 
+
+−4
+
+−2024
+
+> [00 l]
+
+(0 , π 
+
+> 2
+
+, 0) 
+
+−2.5 0.0 2.5
+
+[hh 0] 
+
+−4
+
+−2024
+
+> [00 l]
+
+(0 , π 
+
+> 2
+
+, π )
+
+−2.5 0.0 2.5
+
+[hh 0] 
+
+−4
+
+−2024
+
+> [00 l]
+
+(π, π 
+
+> 2
+
+, 0) 
+
+−2.5 0.0 2.5
+
+[hh 0] 
+
+−4
+
+−2024
+
+> [00 l]
+
+(π, π 
+
+> 2
+
+, π )
+
+−2.5 0.0 2.5
+
+[h00] 
+
+−4
+
+−2024
+
+> [0 k0]
+
+−2.5 0.0 2.5
+
+[h00] 
+
+−4
+
+−2024
+
+> [0 k0]
+
+−2.5 0.0 2.5
+
+[h00] 
+
+−4
+
+−2024
+
+> [0 k0]
+
+−2.5 0.0 2.5
+
+[h00] 
+
+−4
+
+−2024
+
+> [0 k0]
+
+−2.5 0.0 2.5
+
+[hh 0] 
+
+−4
+
+−2024
+
+> [00 l]
+
+(π 
+
+> 2
+
+, π 
+
+> 2
+
+, π 
+
+> 2
+
+)
+
+−2.5 0.0 2.5
+
+[hh 0] 
+
+−4
+
+−2024
+
+> [00 l]
+
+(π 
+
+> 2
+
+, π 
+
+> 2
+
+, −π 
+
+> 2
+
+)
+
+−2.5 0.0 2.5
+
+[hh 0] 
+
+−4
+
+−2024
+
+> [00 l]
+
+(π 
+
+> 2
+
+, 0, π 
+
+> 2
+
+)
+
+−2.5 0.0 2.5
+
+[hh 0] 
+
+−4
+
+−2024
+
+> [00 l]
+
+(π 
+
+> 2
+
+, 0, −π 
+
+> 2
+
+)
+
+−2.5 0.0 2.5
+
+[h00] 
+
+−4
+
+−2024
+
+> [0 k0]
+
+−2.5 0.0 2.5
+
+[h00] 
+
+−4
+
+−2024
+
+> [0 k0]
+
+−2.5 0.0 2.5
+
+[h00] 
+
+−4
+
+−2024
+
+> [0 k0]
+
+−2.5 0.0 2.5
+
+[h00] 
+
+−4
+
+−2024
+
+> [0 k0]
+
+1.0 1.5 2.0 2.5 3.0
+
+[00 l]
+
+0.20.30.4                            
+
+> S(0 , 0, k z)
+> (0 ,π
+> 2,0) (0 ,π
+> 2, π )(π, π
+> 2,0) (π, π
+> 2, π )(π
+> 2,π
+> 2,π
+> 2)(π
+> 2,π
+> 2,−π
+> 2)(π
+> 2,0,π
+> 2)(π
+> 2,0,−π
+> 2)
+
+−1.0 −0.5 0.0 0.5 1.0
+
+[hh 2] 
+
+0.25 0.30 0.35 0.40 0.45 
+
+> S(kx = ky, 2)
+
+Γ X W L Γ K W U X 
+
+0.00.10.20.30.40.5
+
+> S(k)
+
+min max 
+
+FIG. 5. Equal-time spin structure factors of the Gutzwiller-projected nearest-neighbor U(1) chiral spin-liquid Ans¨ atze . The top and middle rows show two-dimensional momentum cuts in the [ hhl ] and [ hk 0] planes, respectively. The bottom row shows one-dimensional cuts through the pinch point at G = (0 , 0, 2) along the vertical (00 kz ) and transverse ( kk 2) directions. While all states exhibit the characteristic pinch-point geometry of a three-dimensional U(1) gauge field, the contrast and apparent sharpness vary substantially across flux sectors because of differing background contributions from matter-field and short-range correlations. 19 pinched direction, substantially reducing the apparent contrast despite the continued presence of a strong gauge-sector cusp in the vertical cut. The remaining Ans¨ atze ,(0 , π/ 2, 0), ( π/ 2, 0, π/ 2), ( π/ 2, 0, −π/ 2), and ( π, π/ 2, π ), display nearly flat or weakly peaked behavior along kk 2, corresponding to an intermediate regime in which back-grounds are present but do not overwhelm the directional anisotropy. Taken together, the bottom-row cuts of Fig. 5 re-veal that while the pinch-point geometry is universal across all U(1) chiral Ans¨ atze , the relative weights of the gauge, matter, and short-range sectors vary substan-tially with the flux pattern. States such as ( π, π/ 2, 0) and (π/ 2, π/ 2, −π/ 2) represent the most gauge-dominated cases, exhibiting strong anisotropy with minimal fill-ing of the pinched direction, whereas (0 , π/ 2, π ) and (π/ 2, π/ 2, π/ 2) show the strongest backgrounds from the matter field and short-range sectors, leading to more rounded pinch points. The remaining Ans¨ atze interpo-late continuously between these limits, highlighting how changes in the underlying flux configuration primarily re-distribute spectral weight without destroying the emer-gent Coulomb-phase correlations. For clarity, we summarize in Table IX a qualitative ranking of the U(1) chiral Ans¨ atze according to the rel-ative visibility of the gauge-sector contribution near the pinch point, as inferred from the one-dimensional cuts through (0 , 0, 2). We now comment on the relationship between the spinon band structures shown in Fig. 4 and the hierar-chy of gauge dominance summarized in Table IX. While the emergent U(1) gauge structure is fixed at the level of the projective symmetry group, the detailed distribution of low-energy spinon states differs substantially between distinct chiral flux sectors. These differences affect how strongly matter-field fluctuations compete with long-wavelength gauge-field correlations once the Gutzwiller projection is imposed. In particular, Ans¨ atze whose mean-field band struc-tures feature extended nodal manifolds, multiple symmetry-related band touchings, or an enhanced low-energy phase space tend to generate sizable background contributions to the equal-time spin structure factor. In such cases, gauge-field correlations, though present, are partially obscured by matter-induced short-range corre-lations, leading to reduced pinch-point contrast. Con-versely, flux sectors whose band structures are more dis-persive or possess fewer low-energy spinon channels allow gauge-field fluctuations to dominate the equal-time cor-relations more clearly, resulting in sharper and higher-contrast pinch-point features. We emphasize that this connection is not a simple one-to-one correspondence between band topology and gauge dominance, nor is it captured by variational energetics alone. Rather, it reflects a competition between matter and gauge fluctuations that becomes manifest only at the level of projected wave functions and equal-time correla-tions. From this perspective, Fig. 4 and Table IX provide complementary information: the former characterizes the low-energy spinon content of a given flux sector, while the latter quantifies how effectively emergent gauge-field correlations survive projection in equal-time observables. The behavior observed here contrasts sharply with that expected for gapped Z2 spin liquids on the pyrochlore lattice. In Z2 phases, the gauge field is gapped and equal-time correlations are short-ranged; as a result, true pinch-point singularities are absent in the equal-time structure factor, even though diffuse maxima reflecting short-range correlations may still appear [55, 56]. The persistence of pinch points in all projected states studied here therefore provides strong evidence that these chiral spin liquids retain a gapless U(1) gauge sector. Finally, we note that the equal-time spin structure fac-tor is even under time-reversal symmetry and therefore does not directly probe chirality. The similarity of pinch-point features across different chiral Ans¨ atze is thus ex-pected; signatures of time-reversal symmetry breaking must instead be sought in time-reversal-odd observables such as scalar spin chirality correlations or thermal trans-port responses [57, 58]. Moreover, the pinch points ob-served here are point-like singularities characteristic of rank-1 U(1) gauge theories and should be clearly distin-guished from pinch-line features associated with higher-rank gauge structures [59–61]. The equal-time spin structure factors presented above reveal that chiral U(1) spin liquids belonging to differ-ent flux sectors can display markedly different correla-tion profiles, despite sharing the same emergent gauge group and closely related mean-field energetics. In par-ticular, some states exhibit sharp, high-contrast pinch-point singularities characteristic of a gauge-dominated Coulomb phase, while others show substantially reduced pinch-point visibility accompanied by a large, relatively smooth background contribution. This observation moti-vates a distinction between gauge-dominated and matter-dominated chiral U(1) spin liquids at the level of equal-time correlations. Operationally, this distinction may be viewed as re-flecting the relative weight of long-wavelength trans-verse gauge-field fluctuations versus short-range spinon and constraint-induced correlations in the projected wave function. In gauge-dominated states, the pinch-point geometry is sharply resolved and largely controls the momentum-space structure of S(q), closely resembling the correlations of a three-dimensional Coulomb phase. In contrast, in matter-dominated states the same gauge structure is present but masked by sizable contributions from the matter and short-range sectors, leading to re-duced pinch-point contrast and a less distinctive Coulom-bic signature. Importantly, this distinction is not encoded at the level of projective symmetry group classification or U(1) gauge structure alone, nor is it reliably captured by variational energies. Rather, it emerges only upon analyzing equal-20                                        
+
+> Flux tuple ( ϕ , ϕ , ϕ )Gauge dominance Characteristic features in 1 dcuts (π, π/ 2,0) Strong Sharp cusp in 00 kz; suppression / near-flatness in kk 2(π/ 2, π/ 2,−π/ 2) Strong Pronounced anisotropy; minimal filling of pinched direction (0 , π/ 2,0) Intermediate Clear cusp in 00 kz; weak peak in kk 2(π/ 2,0,−π/ 2) Intermediate Visible anisotropy with moderate background (π, π/ 2, π )Intermediate Cusp present; partial filling in kk 2(π/ 2,0, π/ 2) Intermediate–weak Rounded approach to pinch point (π/ 2, π/ 2, π/ 2) Weak Strong background; peak persists in kk 2(0 , π/ 2, π )Weak Largest background; pinch-point contrast strongly reduced TABLE IX. Qualitative ranking of the eight U(1) chiral spin-liquid Ans¨ atze by the relative dominance of the gauge-sector contribution near the pinch point at G= (0 ,0,2). The classification is based on the one-dimensional cuts shown in the bottom row of Fig. 5, comparing the sharpness of the cusp in the vertical (00 kz) direction and the degree to which the pinched ( kk 2) direction is filled in by matter-field and short-range contributions.
+
+time correlations of the fully projected wave functions. In this sense, equal-time correlation functions provide an experimentally relevant and theoretically robust di-agnostic that distinguishes proximate chiral spin liquids which are otherwise difficult to separate. The results pre-sented here demonstrate that different chiral flux sectors on the pyrochlore lattice realize distinct realizations of emergent gauge physics, even within the same U(1) spin-liquid framework.  
+
+> V. DISCUSSION AND OUTLOOK
+
+The present work establishes a systematic classifica-tion of chiral U(1) and chiral Z2 spin liquids on the py-rochlore lattice and introduces correlation-based diagnos-tics that sharply distinguish gauge-dominated Coulomb phases from states with substantial backgrounds that are relatively smooth. Several open directions naturally fol-low from these results, many of which touch on funda-mental questions concerning the infrared structure of chi-ral quantum phases in three dimensions. The perspective developed in this work suggests sev-eral broader implications. First, it highlights that chi-ral quantum spin liquids in three dimensions should be viewed not as isolated phases but as manifolds of proxi-mate states whose physical character can vary substan-tially depending on flux sector, even when symmetry and gauge structure are identical. Second, it shows that equal-time correlation functions—particularly the geometry and contrast of pinch-point features—provide a powerful way to distinguish such phases, complementing symmetry-based classifications and variational energet-ics. This is especially relevant for experimental probes such as neutron scattering, where static structure factors are directly accessible and may distinguish chiral spin liq-uids with otherwise similar thermodynamic properties. The present framework opens the door to system-atic studies of chiral U(1) and Z2 spin liquids in ex-tended pyrochlore Hamiltonians beyond the nearest-neighbor Heisenberg model. Further-neighbor ex-change [15, 19, 30, 62], ring-exchange processes [63–65], spin-anisotropic [61, 66, 67] or chiral interactions [68] provide concrete routes to favor particular flux patterns and noncoplanar tendencies identified here. Since such interactions already stabilize noncoplanar ground states in corresponding classical models, it is natural to ask whether quantum fluctuations for S = 1 /2 can restore spin-rotation symmetry while preserving time-reversal breaking, thereby yielding chiral spin liquids. In this broader setting, the correlation-based diagnostics intro-duced here may be especially useful for distinguishing regimes in which emergent gauge-field physics remains dominant from those in which it is partially masked by short-range contributions. We therefore expect the clas-sification and diagnostics developed in this work to be applicable well beyond the nearest-neighbor model, and to provide a useful bridge between microscopic realiza-tion and the broader theoretical description of three-dimensional chiral quantum spin liquids. A promising avenue concerns the construction of three-dimensional chiral spin liquids from lower-dimensional building blocks. The pyrochlore lattice may be viewed as an arrangement of interpenetrating kagome and triangu-lar planes, each of which is known to host chiral spin liq-uids in two dimensions [8, 10, 20]. This suggests the pos-sibility of controlled coupled-plane constructions, analo-gous in spirit to coupled-wire approaches [69, 70], also de-veloped for other strongly correlated and topological set-tings [71, 72], but now with genuinely three-dimensional gauge dynamics. More broadly, one may also envision complementary coupled-chain or coupled-wire formula-tions built from quasi-one-dimensional chiral ingredients. In either language, the essential question is whether the inter-unit coupling stabilizes a true three-dimensional U(1) Coulomb phase, or instead drives confinement or Higgsing into a Z2 phase [14, 73, 74]. The correlation diagnostics developed here—most notably the geometry and contrast of pinch-point singularities—provide a con-crete way to address this question. 21 A second set of questions concerns the relationship be-tween energetic proximity and gauge-sector purity. Our variational results demonstrate that Ans¨ atze which are energetically close can exhibit markedly different de-grees of gauge dominance in their equal-time correla-tions. This separation suggests that phase transitions between chiral spin liquids may be driven primarily by changes in the gauge sector rather than by conventional energetic considerations alone, consistent with earlier in-sights from gauge-theoretic studies of quantum spin liq-uids [51, 75, 76]. Understanding whether such transitions admit universal descriptions [77, 78], and how charac-teristic features such as pinch-point singularities evolve or collapse across them, constitutes an important open problem. The coexistence of chiral U(1) and chiral Z2 spin liq-uids within a single classification framework further mo-tivates a systematic study of Higgs transitions between these phases. In particular, it would be valuable to eluci-date how time-reversal symmetry breaking is encoded in Higgsed phases, how chirality survives the loss of a gap-less gauge field, and how these changes are reflected in both static and dynamical correlation functions [73, 74]. The present PSG classification provides a natural start-ing point for formulating continuum field theories that capture these transitions. More broadly, a fundamental open problem concerns the infrared structure of genuinely three-dimensional chi-ral spin liquids. In contrast to two dimensions, where chiral phases admit a well-defined Chern–Simons de-scription [10], there is currently no established low-energy field theory that universally characterizes time-reversal–breaking spin liquids in 3+1D. This issue is particularly acute for gapless chiral U(1) phases, where fermionic matter fields coexist with a dynamical three-dimensional gauge field [1, 51]. Determining whether such phases flow to stable infrared fixed points, and if so how they should be characterized in terms of contin-uum gauge theories, remains an open theoretical chal-lenge. Closely related questions concern the existence and nature of topological response terms [79], the role of boundary anomalies [80], and the structure of surface states in three-dimensional chiral spin liquids. An additional feature emerging from our PSG analysis is the presence of symmetry-protected nodal stars in sev-eral chiral U(1) spin-liquid Ans¨ atze . These consist of mul-tiplets of symmetry-related band touchings enforced by the projective realization of the pyrochlore space group on the fermionic spinons. Unlike isolated Dirac points familiar from two-dimensional spin liquids, nodal stars form extended low-energy structures in momentum space whose multiplicity and geometry are fixed by symmetry rather than fine tuning, paralleling recent developments in symmetry-enforced band topology [81]. The existence of nodal stars in three dimensions raises a number of important open questions. In particular, their stability in the presence of a gapless U(1) gauge field is far from obvious, as gauge fluctuations may cou-ple more strongly to an extended nodal manifold than to isolated point nodes [1]. Understanding the resulting low-energy field theories—and whether they define universal-ity classes distinct from Dirac or spinon–Fermi–surface spin liquids—represents a promising direction for fu-ture work. It would also be interesting to determine how symmetry-breaking perturbations, either explicit or spontaneous, can gap, split, or transmute nodal stars into other types of gapless or gapped chiral phases. Fi-nally, identifying experimental signatures that distin-guish nodal-star spin liquids from other gapless quantum spin liquids remains an open challenge. This work shows how the interplay of emergent gauge structure, time-reversal–breaking chirality, and three-dimensional lattice geometry gives rise to quantum spin liquids whose properties, diagnostics, and low-energy physics extend well beyond two-dimensional paradigms. 
+
+> ACKNOWLEDGMENTS
+
+We thank Francesco Ferrari, Federico Becca, Hee Se-ung Kim, SungBin Lee, Joel Moore, and Johannes Reuther for helpful discussions. L.B. is supported by the NSF CMMT program under Grant No. DMR-2419871, and the Simons Collaboration on Ultra-Quantum Mat-ter, which is a grant from the Simons Foundation (Grant No. 651440). The work of Y.I. was per-formed in part at the Aspen Center for Physics, which is supported by a grant from the Simons Founda-tion (1161654, Troyer). This research was also sup-ported in part by grant NSF PHY-2309135 to the Kavli Institute for Theoretical Physics. Y.I. acknowl-edges support from the Abdus Salam International Cen-tre for Theoretical Physics through the Associates Pro-gramme, from the Simons Foundation through Grant No. 284558FY19, from IIT Madras through the Insti-tute of Eminence program for establishing QuCenDiEM (Project No. SP22231244CPETWOQCDHOC), and the International Centre for Theoretical Sciences for partici-pation in the Discussion Meeting — Fractionalized Quan-tum Matter (code: ICTS/DMFQM2025/07). 
+
+> DATA AVAILABILITY STATEMENT
+
+The data generated during the current study are avail-able from the corresponding author upon reasonable re-quest.     
+
+> Appendix A: Staggered flux state is the (π, π
+> 2,0)
+> state: gauge transformation
+
+The ( π, π 
+
+> 2
+
+, 0) chiral state is the same as the staggered flux (SF) state defined in Ref. [41] up to unitary trans-22 formations. Below we provide the exact mapping of their momentum space Hamiltonian: 
+
+HSF state (k) = U † 
+
+> 3
+
+(k)H(π, π 
+
+> 2,0)
+
+(k′)U3(k) , (A1) here HSF state (k) is the Hamiltonian of the SF state defined according to its bond configurations shown in Fig. 1 of Ref. [41], and H(π, π  
+
+> 2,0)
+
+is the Hamltonian of the ( π, π 
+
+> 2
+
+, 0) state defined according to the bond config-urations shown in Fig. 3h. We defined k = ( kx, k y , k z )and k′ = ( k′
+
+> x
+
+, k ′ 
+
+> y
+
+, k ′ 
+
+> z
+
+), with 
+
+k′ 
+
+> x
+
+= − 23 (3 kx − √3ky + √6kz ) + π
+
+2 ,k′ 
+
+> y
+
+= − 23 (3 kx + √3ky − √6kz ) − π
+
+2 ,k′ 
+
+> z
+
+= − 23 (2 √3ky + √6kz ) + π
+
+2 .
+
+(A2) The unitary matrix U3(k) has the form U3(k) =
+
+Up(k)UbUg , where Up(k) is the “form factor” matrix 
+
+Up(k) = 1 4×4 ⊗ Diag(1 , e i   
+
+> 4(ky+kz)
+
+, e i  
+
+> 4(kz+kx)
+
+, e i  
+
+> 4(kx+ky)
+
+), 
+
+Ub is the permutation matrix Ub = 1 4×4 ⊗
+
+ 1 11 1
+
+
+
+,and Ug is a gauge transformation matrix 
+
+Ug = diag(1 , −1, −1, e 3πi  
+
+> 4
+
+, 1, −1, −1, e 3πi  
+
+> 4
+
+,i, i, i, e πi  
+
+> 4
+
+, −i, −i, −i, e 5πi  
+
+> 4
+
+) . (A3) 
+
+Appendix B: Chiral Ans¨ atze from PSG: 2nd and 3rd neighbor amplitudes 
+
+Above sets the convention for the NN bond 00 ← 01.All other NN bonds can be obtained by performing cer-tain PSG operation from this bond. The convention car-ries over to other bonds in a natural way. More generally, for other types of bonds, we define 
+
+• Onsite bond (0 , 0, 0) 0 ← (0 , 0, 0) 0:(αh, 0, 0, 0, 0, β p, γ p, δ p),
+
+• NN bond (0 , 0, 0) 0 ← (0 , 0, 0) 1:(ah, b h, c h, d h, a p, b p, c p, d p),
+
+• 2nd NN bond (0 , 0, 0) 1 ← (0 , −1, 0) 2:(Ah, B h, C h, D h, A p, B p, C p, D p),
+
+• 3rd NN bond Type I (0 , 0, 0) 0 ← (1 , 0, 0) 0:(A3h, B 3h, C 3h, D 3h, A 3p, B 3p, C 3p, D 3p),
+
+• 3rd NN bond Type II (0 , 0, 0) 0 ← (1 , −1, 0) 0:(A′
+
+> 3h
+
+, B ′
+
+> 3h
+
+, C ′
+
+> 3h
+
+, D ′
+
+> 3h
+
+, A ′
+
+> 3p
+
+, B ′
+
+> 3p
+
+, C ′
+
+> 3p
+
+, D ′
+
+> 3p
+
+)Note that for onsite bond, we have βh = γh = δh =
+
+αp = 0 due to fermion anticommutativity and hermiticity of the Hamiltonian. The independent 2nd NN and 3rd NN bonds for the U(1) states are given in Table X. The independent 2nd NN bonds for the Z2 states are given in Table XI. 
+
+Appendix C: Unprojected equal-time spin structure factor for U(1) spin-singlet Ans¨ atze 
+
+Below we rewrite the equal-time spin structure factor, Eq. (36), in terms of Abrikosov partons: 
+
+S(q)= 1
+
+N
+
+X
+
+> rμ,r′
+> ν
+
+e−iq·(rμ−r′  
+
+> ν)
+
+DˆSrμ · ˆSr′
+
+> ν
+
+E
+
+= 14N 3
+
+X
+
+> rμ,r′
+> ν
+
+X
+
+> k1,k2,k3,k4
+
+e−iq·(rμ−r′ 
+
+> ν)
+
+ei(k2−k1)·rμ ei(k4−k3)·r′
+
+> ν
+
+X
+
+> α,σ 1,σ 2,σ 3,σ 4
+
+(σα)σ1,σ 2 (σα)σ3,σ 4
+
+D
+
+f † 
+
+> k1,μσ 1
+
+fk2,μσ 2 f † 
+
+> k3,νσ 3
+
+fk4,νσ 4
+
+E
+
+= 14N
+
+X
+
+> k1,k3
+
+X
+
+> μ,ν
+
+e−iq·(ˆ εμ−ˆεν ) X
+
+> α,σ 1,σ 2,σ 3,σ 4
+
+(σα)σ1,σ 2 (σα)σ3,σ 4
+
+D
+
+f † 
+
+> k1,μσ 1
+
+fk1−q,μσ 2 f † 
+
+> k3,νσ 3
+
+fk3+q,νσ 4
+
+E
+
+.
+
+(C1) where r labels the (0-flux, π-flux, or π 
+
+> 2
+
+-flux) parton prim-itive cell, Greek symbols such as μ, ν label the sublattices in the unit cell, and ˆ εμ labels the sublattice displacements in the primitive cell. σ1,2,3,4 =↑, ↓, and α = x, y, z . We write the fermions in the eigen-energy basis: 
+
+fk,μσ = X
+
+> ρ
+
+X 
+
+> τ=↑,↓
+
+(U (k)) μσ,ρτ efk,ρτ . (C2) Using Wick’s theorem, we have 23 
+
+Chiral class ( I, S ) Nonzero 2nd NN Constraint Nonzero 3rd NN parameters Constraints 
+
+ϕ1-( mC6 mS )-nST 1 -nC6S parameters 0-(00)-0-0 or 0-(00)-0-1 Im A, B, Im D B = −C∗ Im A3, Re C3, Im A′
+
+> 3
+
+, Re B′ 
+
+> 3
+
+C3 = −D3, B ′ 
+
+> 3
+
+= −C′
+
+> 3
+
+π-(00)-0-0 or π-(00)-0-1 Im A, B, Im D B = −C∗ Im A3, Re C3, Im B′
+
+> 3
+
+, Im D′ 
+
+> 3
+
+C3 = −D3, B ′ 
+
+> 3
+
+= C′
+
+> 3
+
+0-(01)-0-0 or 0-(01)-0-1 B B = −C Re C3, Re B′ 
+
+> 3
+
+C3 = −D3, B ′ 
+
+> 3
+
+= −C′
+
+> 3
+
+π-(01)-0-0 or π-(01)-0-1 B B = −C Re C3, Im B′ 
+
+> 3
+
+C3 = −D3, B ′ 
+
+> 3
+
+= −C′
+
+> 3
+
+0-(10)-0-0 or 0-(10)-0-1 Im A, B, Im D B = −C∗ Im B3, C 3, B ′ 
+
+> 3
+
+C3 = −D∗ 
+
+> 3
+
+, B ′ 
+
+> 3
+
+= −C′
+
+> 3
+
+π-(10)-0-0 or π-(10)-0-1 Im A, B, Im D B = −C∗ Im B3, C 3 C3 = −D∗
+
+> 3
+
+0-(11)-0-0 or 0-(11)-0-1 B B = −C C3, B ′
+
+> 3
+
+, Im D′ 
+
+> 3
+
+C3 = −D3, B ′ 
+
+> 3
+
+= −C′∗ 
+
+> 3
+
+π-(11)-0-0 or π-(11)-0-1 B B = −C C3, Im A′ 
+
+> 3
+
+C3 = −D3 
+
+> π
+> 2
+
+-(01)-1-0 or π 
+
+> 2
+
+-(01)-1-1 B B = −C Im C3, Re B′ 
+
+> 3
+
+C3 = −D3, Re B′ 
+
+> 3
+
+= −Im B′
+
+> 3
+
+, B ′ 
+
+> 3
+
+= −C′
+
+> 3
+
+Chiral class ( IT , S ) Nonzero 2nd NN Constraint Nonzero 3rd NN parameters Constraints 
+
+ϕ1-( mC6 mS )-nST 1 -nC6S parameters 0-(00)-0-0 or 0-(00)-0-1 Im A, B, Im D B = −C∗ Im B3, Im C3, Re A′
+
+> 3
+> ∗
+
+, Im B′ 
+
+> 3
+
+C3 = −D∗ 
+
+> 3
+
+, B ′ 
+
+> 3
+
+= −C′
+
+> 3
+
+π-(00)-0-0 or π-(00)-0-1 Im A, B, Im D B = −C∗ Im B3, Im C3, Re B′
+
+> 3
+
+, Re D′ 
+
+> 3
+
+C3 = −D∗ 
+
+> 3
+
+, B ′ 
+
+> 3
+
+= C′
+
+> 3
+
+0-(01)-0-0 or 0-(01)-0-1 B B = −C Im C3, Re A′
+
+> 3∗
+
+, Im B′
+
+> 3
+
+, Im D′ 
+
+> 3
+
+C3 = −D3, B ′ 
+
+> 3
+
+= C′
+
+> 3
+
+π-(01)-0-0 or π-(01)-0-1 B B = −C Im C3, Im A′
+
+> 3
+
+, Re B′
+
+> 3
+
+, Re D′ 
+
+> 3
+
+C3 = −D3, B ′ 
+
+> 3
+
+= C′
+
+> 3
+
+0-(10)-0-0 or 0-(10)-0-1 Im A, B, Im D B = −C∗ Im A3, A ′ 
+
+> 3∗
+
+None 
+
+π-(10)-0-0 or π-(10)-0-1 Im A, B, Im D B = −C∗ Im A3, B ′
+
+> 3
+
+, D ′ 
+
+> 3
+
+B′ 
+
+> 3
+
+= C′
+
+> 3
+
+0-(11)-0-0 or 0-(11)-0-1 B B = −C Re A′ 
+
+> 3∗
+
+None 
+
+π-(11)-0-0 or π-(11)-0-1 B B = −C B′
+
+> 3
+
+, Re D′ 
+
+> 3
+
+B′ 
+
+> 3
+
+= C′∗  
+
+> 3
+> π
+> 2
+
+-(01)-1-0 or π 
+
+> 2
+
+-(01)-1-1 B B = −C Re C3, Re A′
+
+> 3
+
+, Re B′
+
+> 3
+
+, Re D′
+
+> 3
+
+C3 = −D3, Re A′ 
+
+> 3
+
+= −Im A′
+
+> 3
+
+, Re B′
+
+> 3
+
+= Im B′
+
+> 3
+
+, B ′ 
+
+> 3
+
+= C′
+
+> 3
+
+, Re D′ 
+
+> 3
+
+= Im D′
+
+> 3
+
+Chiral class ( I, S T ) Nonzero 2nd NN Constraint Nonzero 3rd NN parameters Constraints 
+
+ϕ1-( mC6 mS )-nST 1 -nC6S parameters 0-(00)-0-0 or 0-(00)-0-1 Re A, B, Re D B = C∗ Re B3, Re C3, Re B′
+
+> 3
+
+, Re D′ 
+
+> 3
+
+C3 = D3, B ′ 
+
+> 3
+
+= C′
+
+> 3
+
+π-(00)-0-0 or π-(00)-0-1 Re A, B, Re D B = C∗ Re B3, Re C3, Re A′
+
+> 3†
+
+, Im B′ 
+
+> 3
+
+C3 = D3, B ′ 
+
+> 3
+
+= −C′
+
+> 3
+
+0-(01)-0-0 or 0-(01)-0-1 A, B, D B = C Im A3, Re B3, Re C3, C3 = D3, B ′ 
+
+> 3
+
+= C′
+
+> 3
+
+Im A′
+
+> 3
+
+, Re B′
+
+> 3
+
+, Re D′
+
+> 3
+
+π-(01)-0-0 or π-(01)-0-1 A, B, D B = C Im A3, Re B3, Re C3, C3 = D3, B ′ 
+
+> 3
+
+= C′
+
+> 3
+
+Re A′
+
+> 3†
+
+, Im B′
+
+> 3
+
+, Im D′
+
+> 3
+
+0-(10)-0-0 or 0-(10)-0-1 Re A, B, Re D B = C∗ Re B3, C 3, B ′
+
+> 3
+
+, D ′ 
+
+> 3
+
+C3 = D∗ 
+
+> 3
+
+, B ′ 
+
+> 3
+
+= C′
+
+> 3
+
+π-(10)-0-0 or π-(10)-0-1 Re A, B, Re D B = C∗ Re B3, C 3, A ′ 
+
+> 3†
+
+C3 = D∗
+
+> 3
+
+0-(11)-0-0 or 0-(11)-0-1 A, B, D B = C B3, C 3, B ′
+
+> 3
+
+, Re D′ 
+
+> 3
+
+C3 = D3, B ′ 
+
+> 3
+
+= C′∗ 
+
+> 3
+
+π-(11)-0-0 or π-(11)-0-1 A, B, D B = C B3, C 3, Re A′ 
+
+> 3†
+
+C3 = D3 
+
+> π
+> 2
+
+-(01)-1-0 or π 
+
+> 2
+
+-(01)-1-1 A, B, D B = C Re A3, Im B3, Im C3, C3 = D3, Re A′ 
+
+> 3
+
+= Im A′
+
+> 3
+
+, Re B′
+
+> 3
+
+Re A′
+
+> 3
+
+, Re B′
+
+> 3
+
+, Re D′ 
+
+> 3
+
+= −Im B′
+
+> 3
+
+, B ′ 
+
+> 3
+
+= C′
+
+> 3
+
+, Re D′ 
+
+> 3
+
+= −Im D′
+
+> 3
+
+Chiral class ( IT , S T ) Nonzero 2nd NN Constraint Nonzero 3rd NN parameters Constraints 
+
+ϕ1-( mC6 mS )-nST 1 -nC6S parameters 0-(00)-0-0 or 0-(00)-0-1 Re A, B, Re D B = C∗ Re A3, Im C3, Im B′
+
+> 3
+
+, Im D′ 
+
+> 3
+
+C3 = −D3, B ′ 
+
+> 3
+
+= C′
+
+> 3
+
+π-(00)-0-0 or π-(00)-0-1 Re A, B, Re D B = C∗ Re A3, Im C3, Im A′
+
+> 3
+
+, Re B′ 
+
+> 3
+
+C3 = −D3, B ′ 
+
+> 3
+
+= −C′
+
+> 3
+
+0-(01)-0-0 or 0-(01)-0-1 A, B, D B = C Re A3, Im B3, Im C3, Im B′ 
+
+> 3
+
+C3 = D3, B ′ 
+
+> 3
+
+= −C′
+
+> 3
+
+π-(01)-0-0 or π-(01)-0-1 A, B, D B = C Re A3, Im B3, Im C3, Re B′ 
+
+> 3
+
+C3 = D3, B ′ 
+
+> 3
+
+= −C′
+
+> 3
+
+0-(10)-0-0 or 0-(10)-0-1 Re A, B, Re D B = C∗ Re A3 None 
+
+π-(10)-0-0 or π-(10)-0-1 Re A, B, Re D B = C∗ Re A3, B ′ 
+
+> 3
+
+B′ 
+
+> 3
+
+= −C′
+
+> 3
+
+0-(11)-0-0 or 0-(11)-0-1 A, B, D B = C A3, Im A′ 
+
+> 3
+
+None 
+
+π-(11)-0-0 or π-(11)-0-1 A, B, D B = C A3, B ′
+
+> 3
+
+, Im D′ 
+
+> 3
+
+B′ 
+
+> 3
+
+= −C′∗  
+
+> 3
+> π
+> 2
+
+-(01)-1-0 or π 
+
+> 2
+
+-(01)-1-1 A, B, D B = C Im A3, Re B3, Re C3, Re B′ 
+
+> 3
+
+C3 = D3, Re B′ 
+
+> 3
+
+= Im B′
+
+> 3
+
+, B ′ 
+
+> 3
+
+= −C′
+
+> 3
+
+TABLE X. Independent 2nd NN and 3rd NN mean-field parameters and constraints for the ( I, S ), ( IT , S ), ( I, S T ), and (IT , S T ) U(1) spin liquids. The spin-singlet parameters are underlined. The parameters labeled with a “ †” is for the staggered flux state, i.e., the ( π, π/ 2, 0) state. The parameters in color are the further neighbor singlet bonds that can be added to the nearest-neighbor states in Table VI labeled by the same color. 24 
+
+(I, S ) and ( IT , S ), Class Independent 2nd NN parameters Constraints (χ1χST 1 )–( χC6S χSC 6 χC6 )j
+
+(00)– or ( ππ )–(000) Im Ah, Ap, Bh, Bp, Im Dh, Dp Im Ch = Im Bh, Cp = Bp
+
+(00)– or ( ππ )–( π00) Im Ah, Ap, Bh, Bp, Im Dh, Dp Im Ch = Im Bh, Cp = Bp
+
+(00)– or ( ππ )–(0 ππ ) Ah, Im Ap, Bh, Bp, Dh, Im Dp Ch = Bh, Cp = −B∗
+
+> p
+
+(00)– or ( ππ )–( πππ ) Ah, Im Ap, Bh, Bp, Dh, Im Dp Ch = Bh, Cp = −B∗
+
+> p
+
+(0 π)– or ( π0)–(0 π0) 1 Re Ap, Bh, Bp, Re Dp
+
+Im Ap = −√3Re Ap, Ch = −Bh,
+
+Cp = e− 2π 
+
+> 3i
+
+B∗ 
+
+> p
+
+, Im Dp = −√3Re Dp
+
+(0 π)– or ( π0)–(0 π0) 3 Re Ap, Bh, Bp, Re Dp Ch = −Bh, Cp = B∗
+
+> p
+
+(0 π)– or ( π0)–( ππ 0) 0 Re Ap, Bh, Bp, Re Dp Ch = −Bh, Cp = B∗
+
+> p
+
+(0 π)– or ( π0)–( ππ 0) 2 Re Ap, Bh, Bp, Re Dp
+
+Im Ap = √3Re Ap, Ch = −Bh,
+
+Cp = e 2π 
+
+> 3i
+
+B∗ 
+
+> p
+
+, Im Dp = √3Re Dp
+
+(0 π)– or ( π0)–(00 π) Re Ah, Bh, Bp, Re Dh Ch = B∗
+
+> h
+
+, Cp = −Bp
+
+(0 π)– or ( π0)–( π0π) Re Ah, Bh, Bp, Re Dh Ch = B∗
+
+> h
+
+, Bp = −Cp
+
+(0 π)– or ( π0)–(0 ππ )0 Re Ap, Bh, Bp, Re Dp
+
+Im Ap = − 1√3 Re Ap, Ch = −Bh,
+
+Cp = e− π 
+
+> 3i
+
+B∗ 
+
+> p
+
+, Im Dp = − 1√3 Re Dp
+
+(0 π)– or ( π0)–( πππ )0 Re Ap, Bh, Bp, Re Dp
+
+Im Ap = − 1√3 Re Ap, Ch = −Bh,
+
+Cp = e− π 
+
+> 3i
+
+B∗ 
+
+> p
+
+, Im Dp = − 1√3 Re Dp
+
+(0 π)– or ( π0)–(0 ππ )1 Im Ap, Bh, Bp, Im Dp Ch = −Bh, Cp = −B∗
+
+> p
+
+(0 π)– or ( π0)–( πππ )1 Im Ap, Bh, Bp, Im Dp Ch = −Bh, Cp = −B∗
+
+> p
+
+(I, S T ) and ( IT , S T ), Class Independent 2nd NN parameters Constraints (χ1χST 1 )–( χC6S χSC 6 χC6 )j
+
+(00)– or ( ππ )–(000) Re Ah, B h, B p, Re Dh Im Ch = −Im Bh, Cp = −Bp
+
+(00)– or ( ππ )–( π00) Re Ah, B h, B p, Re Dh Im Ch = −Im Bh, Cp = −Bp
+
+(00)– or ( ππ )–(0 ππ ) Re Ah, B h, B p, Re Dh Ch = −Bh, Cp = B∗
+
+> p
+
+(00)– or ( ππ )–( πππ ) Re Ah, B h, B p, Re Dh Ch = −Bh, Cp = B∗
+
+> p
+
+(0 π)– or ( π0)–(0 π0) 1 Ah, Re Ap, B h, B p, D h, Re Dp
+
+Im Ap = 1√3 Re Ap, Ch = Bh,
+
+Cp = −e− 2π 
+
+> 3i
+
+B∗ 
+
+> p
+
+, Im Dp = 1√3 Re Dp
+
+(0 π)– or ( π0)–(0 π0) 3 Ah, Im Ap, B h, B p, D h, Im Dp Ch = Bh, Cp = −B∗
+
+> p
+
+(0 π)– or ( π0)–( ππ 0) 0 Ah, Im Ap, B h, B p, D h, Im Dp Ch = Bh, Cp = −B∗
+
+> p
+
+(0 π)– or ( π0)–( ππ 0) 2 Ah, Re Ap, B h, B p, D h, Re Dp
+
+Im Ap = − 1√3 Re Ap, Ch = Bh,
+
+Cp = −e 2π 
+
+> 3i
+
+B∗ 
+
+> p
+
+, Im Dp = − 1√3 Re Dp
+
+(0 π)– or ( π0)–(00 π) Im Ah, A p, B h, B p, Im Dh, D p Ch = −B∗
+
+> h
+
+, Cp = Bp
+
+(0 π)– or ( π0)–( π0π) Im Ah, A p, B h, B p, Im Dh, D p Ch = −B∗
+
+> h
+
+, Bp = Cp
+
+(0 π)– or ( π0)–(0 ππ )0 Ah, Re Ap, B h, B p, D h, Re Dp
+
+Im Ap = √3Re Ap, Ch = Bh,
+
+Cp = −e− π 
+
+> 3i
+
+B∗ 
+
+> p
+
+, Im Dp = √3Re Dp
+
+(0 π)– or ( π0)–( πππ )0 Ah, Re Ap, B h, B p, D h, Re Dp
+
+Im Ap = √3Re Ap, Ch = Bh,
+
+Cp = −e− π 
+
+> 3i
+
+B∗ 
+
+> p
+
+, Im Dp = √3Re Dp
+
+(0 π)– or ( π0)–(0 ππ )1 Ah, Re Ap, B h, B p, D h, Re Dp Ch = Bh, Cp = B∗
+
+> p
+
+(0 π)– or ( π0)–( πππ )1 Ah, Re Ap, B h, B p, D h, Re Dp Ch = Bh, Cp = B∗
+
+> p
+
+TABLE XI. Independent 2nd NN mean-field parameters and constraints for the ( I, S ), ( IT , S ), ( I, S T ), and ( IT , S T ) Z2 chiral spin liquids. 
+
+D
+
+f †
+
+k1,μσ 1 fk1−q,μσ 2 f †
+
+k3,νσ 3 fk3+q,νσ 4
+
+E
+
+= X
+
+ρ1,ρ 2
+
+X
+
+τ1,τ 2
+
+δk1,k3+q (U (k1)) ∗
+
+μσ 1,ρ 1τ1 (U (k1 − q)) μσ 2,ρ 2τ2 (U (k1 − q)) ∗
+
+νσ 3,ρ 2τ2 (U (k1)) νσ 4,ρ 1τ1 nk1,ρ 1τ1 (1 − nk1−q,ρ 2τ2 )+ δq,0 (U (k1)) ∗
+
+μσ 1,ρ 1τ1 (U (k1)) μσ 2,ρ 1τ1 (U (k3)) ∗
+
+νσ 3,ρ 2τ2 (U (k3)) νσ 4,ρ 2τ2 nk1,ρ 1τ1 nk3,ρ 2τ2 ,
+
+(C3) 25 −1.0 −0.5 0.0 0.5 1.0[00 l]0.325 0.350 0.375 0.400 0.425 0.450 0.475 0.500                                                                         
+
+> S(0 , 0, k z )
+> (0 ,π
+> 2,0) (0 ,π
+> 2, π )(π, π
+> 2,0) (π, π
+> 2, π )(π
+> 2,π
+> 2,π
+> 2)(π
+> 2,π
+> 2,−π
+> 2)(π
+> 2,0,π
+> 2)(π
+> 2,0,−π
+> 2)
+> −1.0−0.50.00.51.0[hh 2] 0.25 0.30 0.35 0.40 0.45 0.50
+> S(kx = ky , 2)
+> (0 ,π
+> 2,0) (0 ,π
+> 2, π )(π, π
+> 2,0) (π, π
+> 2, π )(π
+> 2,π
+> 2,π
+> 2)(π
+> 2,π
+> 2,−π
+> 2)(π
+> 2,0,π
+> 2)(π
+> 2,0,−π
+> 2)
+
+FIG. 6. One-dimensional cuts of the equal-time spin structure factors for the eight unprojected U(1) chiral spin-liquid Ans¨ atze ,taken along the two principal directions through the pinch point and along a representative high-symmetry path. The data are normalized such that P 
+
+> q
+
+S(q) = 1. 
+
+the 2nd term comes from the disconnected part D ˆSα
+
+> rμ
+
+E D ˆSα
+
+> r′
+> ν
+
+E
+
+and only contributes to the momentum 
+
+q = 0. As we will focus on q̸ = 0, we will drop this term. Now, since the parton Hamiltonian only contains spin singlet hoppings, U does not carry spin index σ or τ ,then we can perform the sum P
+
+> α
+
+(σα)σ1,σ 2 (σα)σ3,σ 4 =2δσ1σ4 δσ2σ3 − δσ1σ2 δσ3σ4 , and note that even for the term δσ1σ2 δσ3σ4 we will implicitly have the requirement 
+
+δσ1σ4 δσ2σ3 due to the SU(2) symmetry of the U matrix, so that when summing over σ1,2,3,4 we get a factor of 2 · 2 · 2 − 2 = 6. Now, we have 
+
+S(q) = 32N
+
+X
+
+> μ,ν
+
+e−iq·(ˆ εμ−ˆεν ) X
+
+> ρ1,ρ 2
+
+X
+
+> k1
+
+(U (k1)) ∗ 
+
+> μ,ρ 1
+
+(U (k1 − q)) μ,ρ 2 (U (k1 − q)) ∗ 
+
+> ν,ρ 2
+
+(U (k1)) ν,ρ 1 nk1,ρ 1 (1 − nk1−q,ρ 2 )= 32N
+
+X
+
+> ρ1,ρ 2
+
+X
+
+> k1
+
+|[U †(k1)Λ( q)U (k1 − q)] ρ1,ρ 2 |2nk1,ρ 1 (1 − nk1−q,ρ 2 ) ,
+
+(C4) where we defined the diagonal matrix Λ( q) =diag( e−iq·ˆεμ ); note that Λ( q) and U are 4 ε2 × 4ε2 matri-ces, where the enlargement factor ε = 1 , 2, 4 for 0-flux, 
+
+π-flux, and π/ 2-flux states. nk,ρ is the Fermi–Dirac dis-tribution function for the eigen energy Ek,ρ of the parton Hamiltonian at an appropriately chosen temperature. In Fig. 6, we plot the equal-time spin structure fac-tor S(q) for the eight unprojected U(1) chiral spin liquid 
+
+Ans¨ atze along directions [00 l] and [ hh 2]. The mean-field 
+
+Ans¨ atze assume a particular gauge fixing, and the struc-ture factor S(q) for these unprojected mean-field states only contains contribution from the matter field (spinons) and not the U(1) gauge field. The results are obtained on a 32 × 32 × 32 meshing of momenta in the Brillouin zone. We have verified that changing the momentum meshing does not qualitatively alter the results. This indicates that the unprojected spinon contribution does not exhibit any obvious divergent or pinch-point-like singularity on the cuts shown here. While weak nonanalyticities associ-ated with gapless spinons cannot be completely excluded on the basis of these numerics alone, they are subleading on the present scales and do not account for the pro-nounced pinch-point structure observed in the projected data. 26 
+
+[1] M. Hermele, M. P. A. Fisher, and L. Balents, Py-rochlore Photons: The U (1) spin Liquid in a S = 12
+
+Three-Dimensional Frustrated Magnet, Phys. Rev. B 69 ,064404 (2004). [2] C. L. Henley, Ordering due to Disorder in a Frus-trated Vector Antiferromagnet, Phys. Rev. Lett. 62 , 2056 (1989). [3] J. N. Reimers, A. J. Berlinsky, and A.-C. Shi, Mean-Field Approach to Magnetic Ordering in Highly Frustrated Py-rochlores, Phys. Rev. B 43 , 865 (1991). [4] B. Canals and C. Lacroix, Pyrochlore Antiferromagnet: A Three-Dimensional Quantum Spin Liquid, Phys. Rev. Lett. 80 , 2933 (1998). [5] B. Canals and C. Lacroix, Quantum Spin Liquid: The Heisenberg Antiferromagnet on the Three-Dimensional Pyrochlore Lattice, Phys. Rev. B 61 , 1149 (2000). [6] H. Yan, O. Benton, L. D. C. Jaubert, and N. Shannon, Rank–2 u(1) spin liquid on the breathing pyrochlore lat-tice, Phys. Rev. Lett. 124 , 127203 (2020). [7] D. Lozano-G´ omez, O. Benton, M. J. P. Gingras, and H. Yan, An Atlas of Classical Pyrochlore Spin Liquids (2025), arXiv:2411.03547 [cond-mat.str-el]. [8] V. Kalmeyer and R. B. Laughlin, Equivalence of the resonating-valence-bond and fractional quantum Hall states, Phys. Rev. Lett. 59 , 2095 (1987). [9] X. G. Wen, F. Wilczek, and A. Zee, Chiral spin states and superconductivity, Phys. Rev. B 39 , 11413 (1989). [10] X. G. Wen, Mean-field theory of spin-liquid states with finite energy gap and topological orders, Phys. Rev. B 
+
+44 , 2664 (1991). [11] R. B. Laughlin and Z. Zou, Properties of the chiral-spin-liquid state, Phys. Rev. B 41 , 664 (1990). [12] A. Tikofsky, S. Libby, and R. Laughlin, Gauge theory of the three-dimensional chiral spin liquid, Nucl. Phys. B 
+
+413 , 579 (1994). [13] T. Si and Y. Yu, Anyonic loops in three-dimensional spin liquid and chiral spin liquid, Nucl. Phys. B 803 , 428 (2008). [14] X. Wu and Y. Zhang, Two-dimension to three-dimension transition of chiral spin liquid and fractional quantum Hall phases (2023), arXiv:2307.06366 [cond-mat.str-el]. [15] M. F. Lapa and C. L. Henley, Ground States of the Clas-sical Antiferromagnet on the Pyrochlore Lattice (2012), arXiv:1210.6810 [cond-mat.str-el]. [16] J.-C. Domenge, P. Sindzingre, C. Lhuillier, and L. Pierre, Twelve Sublattice Ordered Phase in the J1-J2 Model on the Kagom´ e Lattice, Phys. Rev. B 72 , 024433 (2005). [17] J.-C. Domenge, C. Lhuillier, L. Messio, L. Pierre, and P. Viot, Chirality and Z2 vortices in a Heisenberg spin model on the kagome lattice, Phys. Rev. B 77 , 172413 (2008). [18] L. Messio, C. Lhuillier, and G. Misguich, Lattice symme-tries and regular magnetic orders in classical frustrated antiferromagnets, Phys. Rev. B 83 , 184401 (2011). [19] Y. Iqbal, T. M¨ uller, K. Riedl, J. Reuther, S. Rachel, R. Valent´ ı, M. J. P. Gingras, R. Thomale, and H. O. Jeschke, Signatures of a Gearwheel Quantum Spin Liq-uid in a Spin- 12 Pyrochlore Molybdate Heisenberg Anti-ferromagnet, Phys. Rev. Mater. 1, 071201 (2017). [20] S.-S. Gong, W. Zhu, L. Balents, and D. N. Sheng, Global phase diagram of competing ordered and quantum spin-liquid phases on the kagome lattice, Phys. Rev. B 91 ,075112 (2015). [21] W.-J. Hu, W. Zhu, Y. Zhang, S. Gong, F. Becca, and D. N. Sheng, Variational Monte Carlo study of a chi-ral spin liquid in the extended Heisenberg model on the kagome lattice, Phys. Rev. B 91 , 041124 (2015). [22] A. Wietek and A. M. L¨ auchli, Chiral spin liquid and quantum criticality in extended S = 12 Heisenberg mod-els on the triangular lattice, Phys. Rev. B 95 , 035141 (2017). [23] C. Hickey, L. Cincio, Z. Papi´ c, and A. Paramekanti, Emergence of chiral spin liquids via quantum melting of noncoplanar magnetic orders, Phys. Rev. B 96 , 115115 (2017). [24] T. Cookmeyer, J. Motruk, and J. E. Moore, Four-Spin Terms and the Origin of the Chiral Spin Liquid in Mott Insulators on the Triangular Lattice, Phys. Rev. Lett. 
+
+127 , 087201 (2021). [25] Y. Liu, W. Hou, X. Han, and J. Zang, Three-Dimensional Dynamics of a Magnetic Hopfion Driven by Spin Transfer Torque, Phys. Rev. Lett. 124 , 127204 (2020). [26] C. Naya, D. Schubring, M. Shifman, and Z. Wang, Skyrmions and hopfions in three-dimensional frustrated magnets, Phys. Rev. B 106 , 094434 (2022). [27] C. Liu, G. B. Hal´ asz, and L. Balents, Symmetric U(1) and Z2 spin liquids on the pyrochlore lattice, Phys. Rev. B 104 , 054401 (2021). [28] K. C. Sahu and S. Sanyal, U(1) quantum spin liquids in dipolar-octupolar pyrochlore magnets: A fermionic par-ton approach, Phys. Rev. B 110 , 115144 (2024). [29] B. Schneider, J. C. Halimeh, and M. Punk, Projective symmetry group classification of chiral Z2 spin liquids on the pyrochlore lattice: Application to the spin- 12 XXZ Heisenberg model, Phys. Rev. B 105 , 125122 (2022). [30] Y. Iqbal, T. M¨ uller, P. Ghosh, M. J. P. Gingras, H. O. Jeschke, S. Rachel, J. Reuther, and R. Thomale, Quan-tum and Classical Phases of the Pyrochlore Heisenberg Model with Competing Interactions, Phys. Rev. X 9,011005 (2019). [31] I. Hagym´ asi, R. Sch¨ afer, R. Moessner, and D. J. Luitz, Possible Inversion Symmetry Breaking in the S = 1 /2Pyrochlore Heisenberg Magnet, Phys. Rev. Lett. 126 ,117204 (2021). [32] N. Astrakhantsev, T. Westerhout, A. Tiwari, K. Choo, A. Chen, M. H. Fischer, G. Carleo, and T. Neu-pert, Broken-Symmetry Ground States of the Heisen-berg Model on the Pyrochlore Lattice, Phys. Rev. X 11 ,041021 (2021). [33] M. Hering, V. Noculak, F. Ferrari, Y. Iqbal, and J. Reuther, Dimerization tendencies of the pyrochlore Heisenberg antiferromagnet: A functional renormaliza-tion group perspective, Phys. Rev. B 105 , 054426 (2022). [34] R. Sch¨ afer, B. Placke, O. Benton, and R. Moessner, Abundance of Hard-Hexagon Crystals in the Quan-tum Pyrochlore Antiferromagnet, Phys. Rev. Lett. 131 ,096702 (2023). [35] R. Pohle, Y. Yamaji, and M. Imada, Ground state of the S = 1 /2 pyrochlore Heisenberg antiferromagnet: A quantum spin liquid emergent from dimensional reduc-27 
+
+tion (2023), arXiv:2311.11561 [cond-mat.str-el]. [36] R. Cheng and T. Li, Closely competing valence bond crystal orders in the ground state of the spin- 12 anti-ferromagnetic Heisenberg model on the pyrochlore lat-tice: a large scale unrestricted variational study (2025), arXiv:2509.13746 [cond-mat.str-el]. [37] C. Liu, G. B. Hal´ asz, and L. Balents, Competing orders in pyrochlore magnets from a Z2 spin liquid perspective, Phys. Rev. B 100 , 075125 (2019). [38] D. B. Litvin, Magnetic group tables, International Union of Crystallography 10 , 9780955360220001 (2013). [39] S. Bieri, L. Messio, B. Bernu, and C. Lhuillier, Gapless chiral spin liquid in a kagome Heisenberg model, Phys. Rev. B 92 , 060407 (2015). [40] F. J. Burnell, S. Chakravarty, and S. L. Sondhi, Monopole Flux State on the Pyrochlore Lattice, Phys. Rev. B 79 , 144432 (2009). [41] J. H. Kim and J. H. Han, Chiral Spin States in the Pyrochlore Heisenberg Magnet: Fermionic Mean-Field Theory and Variational Monte Carlo Calculations, Phys. Rev. B 78 , 180410 (2008). [42] S. Bieri, C. Lhuillier, and L. Messio, Projective Sym-metry Group Classification of Chiral Spin Liquids, Phys. Rev. B 93 , 094437 (2016). [43] F. Becca and S. Sorella, Quantum Monte Carlo Ap-proaches for Correlated Systems (Cambridge University Press, Cambridge, England, 2017). [44] V. R. Chandra and J. Sahoo, Spin- 12 Heisenberg antifer-romagnet on the pyrochlore lattice: An exact diagonal-ization study, Phys. Rev. B 97 , 144407 (2018). [45] P. M¨ uller, A. Lohmann, J. Richter, and O. Derzhko, Thermodynamics of the pyrochlore-lattice quantum Heisenberg antiferromagnet, Phys. Rev. B 100 , 024424 (2019). [46] R. Sch¨ afer, I. Hagym´ asi, R. Moessner, and D. J. Luitz, Pyrochlore S = 12 Heisenberg antiferromagnet at finite temperature, Phys. Rev. B 102 , 054408 (2020). [47] O. Derzhko, T. Hutak, T. Krokhmalskii, J. Schnack, and J. Richter, Adapting Planck’s route to investigate the thermodynamics of the spin-half pyrochlore Heisenberg antiferromagnet, Phys. Rev. B 101 , 174426 (2020). [48] S. V. Isakov, K. Gregor, R. Moessner, and S. L. Sondhi, Dipolar Spin Correlations in Classical Pyrochlore Mag-nets, Phys. Rev. Lett. 93 , 167204 (2004). [49] C. L. Henley, The Coulomb Phase in Frustrated Systems, Annu. Rev. Condens. Matter Phys. 1, 179 (2010). [50] C. Castelnovo, R. Moessner, and S. L. Sondhi, Magnetic monopoles in spin ice, Nature (London) 451 , 42 (2008). [51] L. Savary and L. Balents, Quantum spin liquids: a re-view, Rep. Prog. Phys. 80 , 016502 (2017). [52] T. Fennell, S. T. Bramwell, D. F. McMorrow, P. Manuel, and A. R. Wildes, Pinch Points and Kasteleyn Transi-tions in Kagome Ice, Nat. Phys. 3, 566 (2007). [53] O. Benton, O. Sikora, and N. Shannon, Seeing the Light: Experimental Signatures of Emergent Electromagnetism in a Quantum Spin Ice, Phys. Rev. B 86 , 075154 (2012). [54] L. Savary and L. Balents, Coulombic Quantum Liquids in Spin-1 /2 Pyrochlores, Phys. Rev. Lett. 108 , 037202 (2012). [55] X.-G. Wen, Quantum Orders and Symmetric Spin Liq-uids, Phys. Rev. B 65 , 165113 (2002). [56] S. Sachdev and N. Read, Large N Expansion for Frus-trated and Doped Quantum Antiferromagnets, Int. J. Mod. Phys. B 05 , 219 (1991). [57] X. G. Wen, Topological Orders in Rigid States, Int. J. Mod. Phys. B 04 , 239 (1990). [58] S. H. Lee, C. Broholm, W. Ratcliff, G. Gasparovic, Q. Huang, T. H. Kim, and S. W. Cheong, Emergent ex-citations in a geometrically frustrated magnet, Nature (London) 418 , 856 (2002). [59] O. Benton, L. D. C. Jaubert, H. Yan, and N. Shannon, A Spin-Liquid with Pinch-Line Singularities on the Py-rochlore Lattice, Nat. Commun. 7, 11572 (2016). [60] N. Niggemann, Y. Iqbal, and J. Reuther, Quantum Ef-fects on Unconventional Pinch Point Singularities, Phys. Rev. Lett. 130 , 196601 (2023). [61] L. Gresista, D. Lozano-G´ omez, M. Vojta, S. Trebst, and Y. Iqbal, Quantum effects on pyrochlore higher-rank U(1) spin liquids: Pinch-line singularities, spin nematics, and connections to oxide materials, Phys. Rev. Res. 7, 033109 (2025). [62] T. Okubo, T. H. Nguyen, and H. Kawamura, Cubic and Noncubic Multiple-q States in the Heisenberg Antifer-romagnet on the Pyrochlore Lattice, Phys. Rev. B 84 ,144432 (2011). [63] P. Kr´ anitz and K. Penc, Rigorous Anderson-type lower bounds on the ground-state energy of the py-rochlore Heisenberg antiferromagnet, Z. Naturforsch. A doi:10.1515/zna-2026-0009. [64] O. I. Motrunich, Variational study of triangular lattice spin-1/2 model with ring exchanges and spin-liquid state, Phys. Rev. B 72 , 045105 (2005). [65] L. Balents, Spin liquids in frustrated magnets, Na-ture (London) 464 , 199 (2010). [66] V. Noculak, D. Lozano-G´ omez, J. Oitmaa, R. R. P. Singh, Y. Iqbal, M. J. P. Gingras, and J. Reuther, Classi-cal and quantum phases of the pyrochlore S = 12 magnet with Heisenberg and Dzyaloshinskii-Moriya interactions, Phys. Rev. B 107 , 214414 (2023). [67] L. Gresista, D. Lozano-G´ omez, M. Vojta, S. Trebst, and Y. Iqbal, Quantum Coulomb Liquids of Different Rank in the Breathing Pyrochlore Antiferromagnet (2026), arXiv:2602.15662 [cond-mat.str-el]. [68] D. Lozano-G´ omez, Y. Iqbal, and M. Vojta, A classi-cal chiral spin liquid from chiral interactions on the py-rochlore lattice, Nat. Commun. 15 , 10162 (2024). [69] T. Meng, T. Neupert, M. Greiter, and R. Thomale, Coupled-wire construction of chiral spin liquids, Phys. Rev. B 91 , 241106 (2015). [70] R. G. Pereira and S. Bieri, Gapless chiral spin liquid from coupled chains on the kagome lattice, SciPost Phys. 4,004 (2018). [71] C. L. Kane, R. Mukhopadhyay, and T. C. Lubensky, Fractional Quantum Hall Effect in an Array of Quantum Wires, Phys. Rev. Lett. 88 , 036401 (2002). [72] J. C. Y. Teo and C. L. Kane, From Luttinger liquid to non-Abelian quantum Hall states, Phys. Rev. B 89 ,085101 (2014). [73] E. Fradkin and S. H. Shenker, Phase diagrams of lattice gauge theories with Higgs fields, Phys. Rev. D 19 , 3682 (1979). [74] T. Senthil and M. P. A. Fisher, Z2 Gauge Theory of Elec-tron Fractionalization in Strongly Correlated Systems, Phys. Rev. B 62 , 7850 (2000). 28 
+
+[75] T. Senthil, A. Vishwanath, L. Balents, S. Sachdev, and M. P. A. Fisher, Deconfined Quantum Critical Points, Science 303 , 1490 (2004). [76] A. Feuerpfeil, L. Shackleton, A. Maity, R. Thomale, S. Sachdev, and Y. Iqbal, Unifying Dirac Spin Liquids on Square and Shastry-Sutherland Lattices via Fermionic Deconfined Criticality (2026), arXiv:2601.19980 [cond-mat.str-el]. [77] A. Maity, A. Feuerpfeil, R. Thomale, S. Sachdev, and Y. Iqbal, Unified gauge-theory description of quantum spin liquids on square-based frustrated lattices (2026), arXiv:2603.15745 [cond-mat.str-el]. [78] A. Feuerpfeil, A. Maity, R. Thomale, Y. Iqbal, and S. Sachdev, Higgs criticality of Dirac spin liquids on de-pleted triangular lattices (2026), arXiv:2603.28860 [cond-mat.str-el]. [79] X.-L. Qi, T. L. Hughes, and S.-C. Zhang, Topological field theory of time-reversal invariant insulators, Phys. Rev. B 78 , 195424 (2008). [80] A. Vishwanath and T. Senthil, Physics of Three-Dimensional Bosonic Topological Insulators: Surface-Deconfined Criticality and Quantized Magnetoelectric Effect, Phys. Rev. X 3, 011016 (2013). [81] B. Bradlyn, J. Cano, Z. Wang, M. G. Vergniory, C. Felser, R. J. Cava, and B. A. Bernevig, Beyond Dirac and Weyl fermions: Unconventional quasiparticles in conventional crystals, Science 353 , aaf5037 (2016).

@@ -1,0 +1,721 @@
+Title: Orbital-selective correlations and angular momentum coupling in heavy actinides Am, Cm, Bk, and Cf under pressure: A many-body perspective
+
+URL Source: https://arxiv.org/pdf/2604.12249v1
+
+Published Time: Wed, 15 Apr 2026 00:37:06 GMT
+
+Number of Pages: 18
+
+Markdown Content:
+# Orbital-selective correlations and angular momentum coupling in heavy actinides Am, Cm, Bk, and Cf under pressure: A many-body perspective 
+
+Haiyan Lu 1, ∗
+
+> 1
+
+Institute of Materials, China Academy of Engineering Physics, Huafengxincun No. 9, Mianyang 621907, Sichuan, China We systematically investigate the electronic structures of americium (Am), curium (Cm), berke-lium (Bk), and californium (Cf) in both the ambient-pressure double hexagonal close-packed (dhcp) and high-pressure face-centered cubic (fcc) phases, using density functional theory combined with embedded dynamical mean-field approach. Our results reveal that Am exhibits moderate corre-lation strength and localized 5 f states dominated by j j angular momentum coupling scheme. In Cm and Bk, strong electron correlations drive the system into a localized regime, characterized by Hubbard band formation, large effective electron masses, and non-Fermi liquid behavior. Their mag-netic ground states are governed by exchange interactions within an intermediate coupling scheme that shifts toward LS coupling. Remarkably, Cf reenters a j j coupling regime while exhibiting the strongest orbital-selective correlations among the series. Atomic eigenstate probabilities show moderate configurational mixing in Am, whereas Cm, Bk, and Cf maintain nearly fixed trivalent configurations, indicating localized 5 f states. Compared with the dhcp phase, the fcc structure gen-erally enhances correlation effects, as evidenced by wider Hubbard bandgaps and increased valence state fluctuation in Am. Analyses of kinetic energy, potential energy, spin susceptibility, and charge susceptibility further corroborate the progressive localization of 5 f electrons and the emergence of orbital-selective correlations from Am to Cf. This work establishes a unified picture of 5 f electron evolution across the Am-Cf series, elucidating the interplay between spin–orbit coupling, electron correlation, and crystal structure in heavy actinides and offering insights into their behavior under high pressure. I. INTRODUCTION 
+
+Actinides have attracted significant interest in both physics and chemistry due to the unique physical prop-erties arising from their partially filled 5 f subshells. In lighter actinides, such as uranium (U) and neptunium (Np), 5 f electrons exhibit itinerancy, while plutonium (Pu) lies at the boundary between itinerant and local-ized 5 f states. In stark contrast, for transplutonium ele-ments specifically americium (Am), curium (Cm), berke-lium (Bk), and californium (Cf), the 5 f electrons be-come increasingly localized with rising atomic number. This trend leads to predominantly localized 5 f states in these heavier elements, resulting in electronic structures and physical properties that are distinctly different from those of their lighter counterparts 1,2 . In transplutonium elements, the partially filled 5 f shells give rise to strong electron correlations, which intertwine with the inherent strong spin-orbit coupling (SOC) characteristic of nuclei and the crystal field splitting imposed by complex crystal structures. Together, these factors produce exceptionally intricate electronic structures and lead to abundant novel quantum phenomena 3–6 .Am, Cm, Bk, and Cf constitute the first four transplu-tonium elements, spanning a gradual increase in 5 f elec-tron count from 5 f 6 to 5 f 10 and capturing the crossover from non-magnetic local-moment behavior to valence fluctuations. Am represents the first transplutonium ac-tinide in which the 5 f electrons form a closed relativistic subshell. Under strong spin–orbit coupling, the 5 f or-bitals split into j = 5/2 and j = 7/2 manifolds. The six 5 f electrons predominantly occupy the j = 5/2 subshell, resulting in a non-magnetic, atomic-like 5 f 6 configura-tion. This produces a 7 F0 singlet ground state within the j j angular momentum coupling scheme, character-ized by total angular momentum J = 04,7 . Under high pressure, Am exhibits four allotropes under pressures up to 100 GPa 8–10 . Especially, superconductivity emerges near 0.8 K at ambient pressure, reaches a maximum Tc
+
+of 2.3 K around 10 GPa, and then declines upon fur-ther compression 3,11,12 , making it the only experimen-tally confirmed transplutonium superconductor to date. Despite extensive studies,a central unresolved question concerns whether and under what pressure the 5 f elec-trons become itinerant upon compression 8,9,13–16 .Cm exhibits five allotropes and undergoes four succes-sive phase transitions up to 100 GPa 5,17 . These tran-sitions involve significant volume collapses of approxi-mately 4.5% for the Cm (II-III) transition and 11.7% for Cm (IV-V) transition, reflecting the delocalization of 5 f
+
+electrons under compression. Typically, Cm deviates to-ward the intermediate coupling regime with a strong bias toward LS coupling, as evidenced by electron energy-loss spectroscopy, x-ray absorption spectroscopy and x-ray magnetic circular dichroism measurements 7,18,19 . The seven 5 f electrons form a half-filled shell stabilized by ex-change interaction, resulting in a large spin moment and a magnetic ground state 5,18 . However, resonant x-ray experiments have failed to detect any diffraction peaks, leaving the antiferromagnetic ground state of Cm an open question 20 .The initial dhcp structure of Bk first transforms to the fcc structure at 8 GPa, which above 22 GPa con-verts to an orthorhombic α-uranium-type structure, fol-
+
+> arXiv:2604.12249v1 [cond-mat.str-el] 14 Apr 2026
+
+2lowed by a sudden volume decrease of about 12%. This collapse indicates the onset of 5 f electrons delocaliza-tion and their active participation in bonding under high pressure 21,22 . Furthermore, Bk falls into the intermedi-ate coupling regime with a shift towards LS coupling, as revealed by electron energy-loss spectroscopy measure-ments 19 . In this regime, exchange interactions dominate over the comparatively weak spin–orbit coupling, lead-ing to a magnetic ground state characterized by a large spin moment arising from the parallel alignment of spins according to Hund’s rule 1.Cf also possesses a rich phase diagram, exhibiting three progressive high-pressure phases up to 100 GPa 6,23 .Notably, Cf exhibit distinct valence state fluctuations, including divalent, trivalent, and intermediate valence states 24 . Under applied pressure, the decreasing inter-atomic distances enhance hybridization between the ini-tially localized 5 f electrons and conduction electrons, thereby promoting a gradual transition toward itiner-ancy. This process is often coupled with significant struc-tural phase transitions and volume collapses, stabiliz-ing low-symmetry structures such as monoclinic and or-thorhombic phases at high pressures 5,6,25 . More broadly, theoretical predictions and experimental indications sug-gest that transplutonium systems may harbor a wealth of exotic quantum states, including heavy-fermion behav-ior, valence state fluctuations, quantum criticality, and topological phases 26–29 .Experimental investigations of transplutonium ele-ments face formidable challenges due to their intense ra-dioactivity, severe chemical toxicity, high reactivity, and extreme difficulty of sample preparation. These materials can only be synthesized in minute quantities and at pro-hibitively high costs 30 . Consequently, our understand-ing of the condensed matter physics of transplutonium elements remains severely limited. To date, experimen-tal efforts have made progress on high-pressure crystal structures by using synchrotron x-ray diffraction 2,5,6,25 .In addition, a variety of spectroscopic techniques includ-ing x-ray absorption spectroscopy (XAS), inelastic x-ray scattering, x-ray magnetic circular dichroism (XMCD), electron energy-loss spectroscopy (EELS), electrical re-sistivity, infrared spectroscopy, photoluminescence, Ra-man spectroscopies, and photoemission spectroscopy have been applied to probe charge distribution, den-sity of states, crystal field splitting, magnetic proper-ties, and atomic configuration distributions 7,13,18–20,31 .These investigations have yielded several key findings. Temperature-driven phase transitions have been iden-tified in Am and Cm, and high-pressure structural phases have been characterized for Am, Cm, Bk, and Cf 5,6,8,9,17,21 . Superconductivity has been observed in Am 3,11,12 , while magnetic properties have been explored in Cm and Bk 1,18 . Furthermore, pressure-induced va-lence state fluctuations have been reported in Cf 1,6,24 .In the realm of chemistry, breakthroughs have eluci-dated the complex bonding behavior of elements such as Cf 32 . Despite these advances, direct experimental data remain scarce for many fundamental physical properties of transplutonium elements, including electronic band structures, Fermi surfaces, mechanical behavior, thermo-dynamic properties, lattice dynamics, optical responses, and magnetic ordering 1,4,20,33 .The strongly correlated 5 f electrons in transplutonium elements challenge conventional density functional the-ory (DFT) and its DFT+ U extensions within a single-particle picture, which fail to reproduce the experimen-tal photoemission spectrum of Am-I 34–38 and frequently predict magnetic ground states for Am-I and Am-II, con-tradicting the observed non-magnetic behavior 15,16,39,40 .Hybrid density functionals 41 improve the agreement with photoemission data 42 , yet they remain insufficient for fully capturing the many-body correlations inherent to 5 f electrons. For Cm, the lowest energy of the antiferro-magnetic state using the full potential linear muffin-tin orbital (FPLMTO) method shows that spin polarization of the 5 f electrons stabilizes the high-pressure phase Cm-III 5.A more sophisticated framework, DFT combined with dynamical mean-field theory (DFT + DMFT) has proven successful in describing strongly correlated materials and reproducing key spectroscopic features 43–45 . Early ap-plications of DFT + DMFT implementations to Am, however, involved several simplifications. These include the lack of self-consistent total energy calculations 46,47 ,the use of the one-crossing approximation (OCA) for the quantum impurity problem 48 , and a reliance on idealized fcc lattices rather than experimentally determined crys-tal structures. Beyond Am, previous DFT + DMFT in-vestigations have revealed quasiparticle multiplets in the Cm-III phase 49 and predicted a pressure-induced orbital-selective localized-itinerant transition in Cf, which is as-sociated with valence state fluctuations 24 .Despite substantial experimental and theoretical ef-forts, a unified physical picture of the electronic structure evolution across the Am, Cm, Bk and Cf series remains elusive 2. Until now, the evolution of 5 f states across Am, Cm, Bk and Cf has been investigated using conventional density functional theory and various theoretical models. These studies have elucidated the critical role of f − c
+
+hybridization and itinerant-localized nature of 5 f states in determining structural stability 50 . Furthermore, high-pressure investigations on Cm, Bk and Cf have revealed pressure-induced delocalization of 5 f states, although the behavior of the still-localized 5 f states in Am-IV remains under debate 51–53 . However, while most existing theo-retical work has focused on lighter actinides such as U, Np, and Pu 27,54–56 , systematic research dedicated to Am, Cm, Bk and Cf remains scarce. Several critical gaps persist. First, the continuous evo-lution of the 5 f electronic states with increasing elec-tron count, encompassing the transition from localized to itinerant behavior, the evolution of strong electron correlation, and the change in angular momentum cou-pling schemes, has yet to be systematically elucidated. Second, the intrinsic relationship between 5 f bonding 3behavior and lattice stability under ambient-pressure double hexagonal close-packed (dhcp) and high-pressure face-centered cubic (fcc) structures remains insufficiently explored. These gaps are further underscored by ex-perimental controversies that demand deep theoretical insight 8,9,13,14,20,57,58 . The ambient-pressure dhcp and high-pressure fcc structures serve as two representative prototypes, dhcp represents the equilibrium structure at ambient conditions, while fcc is the common high-pressure phase shared by all four elements, enabling a systematic comparison of structural effects on 5 f elec-tron correlations. In particular, the debated antiferro-magnetic ground state of Cm and the pressure-induced valence state fluctuation observed in Cf call for a uni-versal theoretical understanding grounded in the micro-scopic mechanisms of electron correlation. This situation gives rise to several pressing questions. First, how do the correlation strength, degree of local-ization, orbital-selective correlation, electron occupancy, and angular momentum coupling of 5 f electrons system-atically evolve with increasing atomic number from Am to Cf? Second, how does the electronic structure give rise to the diverse behaviors observed across this series, from the high-pressure superconductivity of Am, to the magnetic ground states of Cm and Bk, and to the valence state fluctuations in Cf? Third, how do the dhcp struc-ture at ambient pressure and the fcc structure under pres-sure finely modulate the correlation strength and bond-ing behavior of 5 f electrons? Answering these questions is essential for constructing a unified physical picture that connects the microscopic electronic structure to the macroscopic properties of heavy actinides, for predicting their behavior under extreme conditions, and for under-standing their material performance in actinide-related applications. To address the above questions, we systematically in-vestigate the electronic structures of Am, Cm, Bk, and Cf in both dhcp and fcc structures using a charge fully self-consistent DFT + DMFT approach 59–61 , implemented with the continuous-time hybridization expansion quan-tum Monte Carlo (CT-HYB) impurity solver. Key physi-cal quantities including the density of states, band struc-tures, hybridization functions, self-energy functions, va-lence state fluctuations, quasiparticle weights, effective electron masses, and x-ray branching ratios have been studied. The remainder of this paper is organized as fol-lows. Section II outlines the computational framework of the DFT + DMFT methodology. In Section III, we aim to delineate a complete physical picture of the contin-uous evolution of 5 f electron correlation strength from Am to Cf, and to reveal the orbital-selective correlation between the j = 5/2 and j = 7/2 electronic states. We further elucidate the modulation mechanisms of crystal structure (dhcp vs. fcc) on electron correlation strength, quantitatively characterize the strength of valence state fluctuations, and establish its intrinsic connection with the degree of 5 f electron localization. In addition, we an-alyze the angular momentum coupling schemes and the microscopic origins of magnetic ground states, thereby providing a theoretical foundation for understanding the competition between spin-orbit coupling and exchange interactions in transplutonium metals. Section IV dis-cusses the kinetic energy, potential energy, spin suscep-tibility, and charge susceptibility for the dhcp and fcc phases to trace the progressive localization of 5 f elec-trons from Am to Cf. Finally, a concise summary is presented in Section V.  
+
+> II. METHODS
+
+The density functional theory combined with the em-bedded dynamical mean-field theory (DFT + DMFT) is used to investigate the correlated 5 f electrons of transplutonium elements Am, Cm, Bk and Cf. This ap-proach reformulates the many-body correlation problem as a self-consistent quantum impurity model, enabling an accurate treatment of strong Coulomb interactions while retaining the realistic band structure of the material 59,60 .DFT calculations. DFT calculations were carried out using the WIEN2K code, which implements a full-potential linearized augmented plane-wave formalism 62 .The experimental crystal structure of the dhcp and fcc phases were adopted for Am, Cm, Bk and Cf 5,6,8,21 . In these calculations, the muffin-tin sphere radii for these elements were set to 2.50 a.u., and the plane-wave cutoff parameter of RMT KMAX = 8.0. The valence states for each element consisted of the 5 f , 6d, and 7s orbitals. The exchange-correlation potential was treated using the generalized gradient approximation (GGA) with the Perdew-Burke-Ernzerhof (PBE) functional 63 , while spin-orbit coupling was included variationally. In accordance with high-pressure experimental results at 290 K, Am, Cm, Bk, and Cf were all treated as nonmagnetic. DFT + DMFT calculations. We performed the DFT + DMFT calculations using the eDMFT software pack-age 61 . The inverse temperature was set to β=40 in units of (kB · T )−1, corresponding to T ≈ 290 K. The correlated nature of the 5 f orbitals was treated within the DMFT formalism. The Coulomb interaction matrix for 5 f or-bitals was constructed using Slater integrals. For Am, we employed a Coulomb repulsion interaction parameter 
+
+U=5.0 eV and Hund’s exchange interaction parameter 
+
+JH=0.6 eV. For Cm, Bk and Cf, we used U=7.0 eV and 
+
+JH=0.6 eV. The local impurity Hamiltonian was formu-lated in the |J, Jz⟩ basis. The DMFT projectors, which map the Kohn-Sham states onto the localized impurity basis, were constructed within a large energy window spanning from -10 eV to 10 eV relative to the Fermi level. The constructed multi-orbital Anderson impurity models were solved using the hybridization expansion continuous-time quantum Monte Carlo impurity solver (dubbed as CT-HYB) 64–66 . This approach stochastically samples diagrams arising from the expansion of the par-tition function in powers of the impurity-bath hybridiza-tion. At each Monte Carlo step, the partition function is 4expressed as a sum over configurations of imaginary-time creation and annihilation operators, with the statistical weight of each configuration given by the determinant of a hybridization function matrix. The local impurity Green’s function G(iωn) and self-energy Σ(iωn) are ob-tained by averaging over these configurations retaining fourteen 5 f orbitals. The DMFT self-consistency condi-tion is then applied to update the local Green’s function via G−1
+
+> loc
+
+(iωn) = G−10 (iωn) − Σ(iωn), where G0 is the bath Green’s function, followed by an update of the hybridiza-tion function ∆(iωn). The entire cycle is repeated until convergence is achieved. To maintain computational tractability, the local Hilbert space was truncated by retaining only atomic eigenstates with electron occupancies N ∈ [5 , 7] for Am, 
+
+N ∈ [6 , 9] for Cm, N ∈ [7 , 10] for Bk, and N ∈ [8 , 11] 
+
+for Cf. A double-counting correction is required to avoid including electron–electron interactions both in the DFT exchange-correlation functional and in the explic-itly added Hubbard term. Here we adopted the fully localized limit (FLL) scheme 67 , which is derived from the atomic limit and is widely considered appropriate for strongly correlated electron systems. The fully localized limit double-counting term is given by 
+
+Σdc = U
+
+(
+
+n5 f − 12
+
+)
+
+− JH
+
+2
+
+(n5 f − 1) , (1) where n5 f = 6.0, 7.0, 8.0, 9.0 were chosen as the nomi-nal occupancy of 5 f orbitals for Am, Cm, Bk, and Cf, respectively, consistent with theoretical studies 24,46,49 .Charge fully self-consistent DFT + DMFT calculations were performed, requiring approximately 60 ∼ 80 DFT + DMFT iterations to achieve good convergence. The convergence criteria for charge density and total energy were set to 10 −4 e and 10 −4 Ry, respectively. The final output were Matsubara self-energy function Σ(iωn) and impurity Green’s function G(iωn), which were then uti-lized to obtain the integral spectral functions A(ω) and momentum-resolved spectral functions A(k, ω ). In addi-tion, analysis of the atomic eigenstate probabilities pro-vided key insights into the 5 f valence state fluctuations and the underlying electronic configurations.  
+
+> III. RESULTS A1. Quasiparticle resonance peaks in dhcp phase
+
+The valence-band spectra of Cm-I, investigated using photoemission spectroscopy, are presented in Fig. 1(a). Under He-I excitation, the spectrum is predominantly contributed by 6 d electrons. In contrast, both He-II and He-II-β sources primarily detect the 5 f states, which manifest as a prominent feature around -5 eV 68 . Our calculations successfully reproduce this key experimen-tal observation, capturing a distinct 5 f -derived peak at around -5 eV, thereby further validating the reliability of our computational approach. A minor discrepancy in the precise peak position exists, which is mainly at-tributed to the inherent limitations of the single-site dy-namical mean-field framework, specifically, the neglect of non-local spatial correlations. This neglect also leads to an underestimation of the spectral weight distribution at high energies and the full extent of lifetime broaden-ing. Nevertheless, the reproduction of the characteristic 5 f peak confirms the effectiveness and robustness of our theoretical methodology. The calculated total and partial density of states (DOS) of 5 f electrons for Am, Cm, Bk, and Cf in the double-hexagonal close-packed (dhcp) [Fig. 1] and face-centered cubic (fcc) [Fig. 2] phase reveal a continuous evolution of 5 f states with increasing atomic number from Am to Cf. The density of states not only provides energy distribution of electrons but also offers insights into underlying properties such as conductivity, mag-netism, correlation strength, orbital hybridization, and many-body quantum phenomena. The trend is vividly illustrated across the actinide series. Am displays local-ized 5 f electrons with well-separated spin-orbit-split sub-bands. Cm and Bk enter a regime characterized by dis-tinct Hubbard bands driven by strong correlations, and Cf displays a sharp resonance peak signaling valence state fluctuations and Kondo-like many-body effects. For the dhcp phase of Am, the total density of states [Fig. 1 (a)] exhibits substantial spectral weight near the Fermi level, characteristic of metallic behavior. However, the 5 f partial density of states around the Fermi level is nearly negligible, consistent with a non-magnetic ground state of total angular momentum J = 0. The spectrum is dominated by five quasiparticle resonance peaks located at P1 (-7.0 eV), P2 (-2.8 eV), P3 (1.0 eV), P4 (3.0 eV), and P5 (7.0 eV). As shown in Fig. 1 (b) and (c), the 5 f
+
+states are split by spin-orbit coupling into j = 5/2 and j
+
+= 7/2 manifolds, located predominantly below and above the Fermi level, respectively. The 5 f electrons are highly localized, manifesting as a sharp peak ( P2) that arises al-most exclusively from the occupied j = 5/2 states, corre-sponding to the 5 f 6(7 F0) → 5 f 5(6 H5/2) transition. Above the Fermi level, three weaker peaks ( P3, P4 and P5) orig-inate mainly from unoccupied j = 7/2 states. Peaks P3
+
+and P4 are associated with the transitions 5 f 6(7 F0) →
+
+5 f 7(8S 7/2) and 5 f 6(7 F0) → 5 f 7(6 P7/2), respectively. The electronic structure of the dhcp phase of Cm un-dergoes a fundamental change. The density of states demonstrates a well-defined upper and lower Hubbard band structure: the lower Hubbard band (LHB) spans the energy range from -6 to -3 eV, while the upper Hub-bard band (UHB) lies between 3 and 9 eV. Orbital-resolved analysis reveals that the LHB is primarily com-posed of j = 5/2 states, whereas the UHB originates mainly from j = 7/2 states. This contrasts sharply with the quasiparticle peaks features observed in the dhcp phase of Am, indicating that the 5 f electrons are strongly localized. For the dhcp phase of Bk, the overall spectral features resemble those of Cm, with a gapped Hubbard 510 5 0 5 10 15 Energy (eV) 010 20 30 40         
+
+> A( ) (arb. units)
+> Am Cm Bk Cf
+> 9630Energy (eV) 04812 16
+> A 5f ( ) (arb. units)
+> 630369Energy (eV)
+
+(b) 5f5/2 5f7/2 (c) (a)                            
+
+> ×0.3
+> P3
+> P1
+> P2
+> P4
+> P5
+> FIG. 1. (Color online) Total and 5 fpartial density of states for dhcp phase of Am, Cm, Bk and Cf at T=290 K by DFT + DMFT calculations. (a) Total density of states A( ω) (solid lines) and 5 fpartial density of states A 5f(ω) (colored shaded regions). Experimental spectra for Cm-I are also presented. Blue right-pointing triangles and filled green five-pointed stars represent the valence-band photoemission spectra measured using He-I (21.22 eV) and He-II (40.81 eV) radiation, respectively. The red solid circles denote the 5 fcontribution to the valence-band photoemission spectrum of Cm derived from He-II-β(48.4 eV) radiation data. (b) and (c) Orbital-resolved (or j-resolved) 5 fpartial density of states j= 5/2 and j= 7/2, respectively. The Fermi level EFis indicated by the vertical dashed lines.
+
+band structure. Nevertheless, the Hubbard bands shift systematically to lower and higher energies. The LHB moves to energy range of -8 to -3.5 eV, and the UHB ap-pears between 2 and 7 eV. This progressive band narrow-ing, marked by the shift of Hubbard bands toward more negative energies, reflects the strengthening of electron correlations with increasing atomic number. Unlike the Hubbard bands in Cm and Bk, this sharp resonance appears at a significantly lower binding en-ergy, indicating a distinct electronic excitation mecha-nism. The total density of states presents a remarkably sharp resonance peak near -7.7 eV, accompanied by a pronounced transfer of spectral weight from the UHB toward the LHB. Orbital decomposition attributes this sharp feature and the transferred weight primarily to the j = 5/2 states. This behavior is a hallmark of va-lence state fluctuations in strongly correlated systems. The sharp resonance corresponds to a heavy quasipar-ticle state arising from a Kondo regime, suggesting that the ground state of Cf lies in a region where strong corre-lations coexist with moderate valence state fluctuations, distinct from the fully localized 5 f states observed in Cm and Bk. 
+
+> A2. Quasiparticle resonance peaks in fcc phase
+
+For the fcc phase of Am [Fig. 2 (a)], the main peak P2
+
+of total density of states shifts slightly toward the Fermi level to –2.6 eV, accompanied by a gradual transfer of spectral weight to energies closer to the Fermi level. The 5 f electrons remain predominantly localized. Addition-ally, a finite total density of states at the Fermi level confirms metallic behavior. Similar to the dhcp phase of Am, P3 and P4 peaks emerge above the Fermi level around 0.9 and 3.0 eV, again attributed to unoccupied 
+
+j = 7/2 states, with the P4 peak exhibiting a broader spectral envelope. For fcc phase of Cm, a profound change in the elec-tronic structure is observed. The total density of states is characterized by well-separated lower and upper Hub-bard bands. The LHB spans from -6 to -4 eV, while the UHB lies between 3 and 9 eV. The vanishing spectral weight at the Fermi level signals the presence of local-ized 5 f states. The LHB is dominated by j = 5/2 states with only minor j = 7/2 admixture, whereas the UHB arises primarily from j = 7/2 states. Compared to the dhcp phase, the Hubbard bands in the fcc phase of Cm shift to higher energies and exhibit a wider bandgap, in-dicating a modulation of electron correlation strength by crystal structure. For fcc phase of Bk, the overall density of states re-sembles that of fcc phase of Cm, but with the Hubbard bands shifted systematically to lower energies. The LHB moves downward to the range of -8 to -6 eV, and the UHB appears between 2 and 7 eV. Relative to the fcc phase of Cm, the LHB is lowered by approximately 2 eV, accom-panied by a further widening of the bandgap. The orbital character remains largely unchanged, with the LHB pri-marily composed of j = 5/2 states and the UHB derived mainly from j = 7/2 states. In comparison with the dhcp phase, the fcc phase of Bk exhibits Hubbard bands shifted to lower energies and a broader gap, reflecting enhanced electron correlations in the fcc structure. 610 5 0 5 10 15 Energy (eV) 010 20 30 40              
+
+> A( ) (arb. units)
+> P1P2P3P4
+> Am Cm Bk Cf
+> 9630Energy (eV) 04812 16
+> A 5f ( ) (arb. units)
+> 630369Energy (eV)
+
+(b) 5f 5/2 5f7/2 (c) (a)                      
+
+> FIG. 2. (Color online) Total and 5 fpartial density of states for fcc phase of Am, Cm, Bk and Cf at T=290 K by DFT + DMFT calculations. (a) Total density of states A( ω) (solid lines) and 5 fpartial density of states A 5f(ω) (colored shaded regions). (b) and (c) Orbital-resolved (or j-resolved) 5 fpartial density of states j= 5/2 and j= 7/2, respectively. The Fermi level EFis indicated by the vertical dashed lines.
+
+For fcc phase of Cf, the density of states displays evidently different features from those of Cm and Bk. An exceptionally sharp, high-intensity resonance peak emerges near -7.7 eV, accompanied by a weak shoulder around -3.0 eV. The UHB spans the range of 1.5 to 5.0 eV, with considerable spectral weight transferred from the UHB to the LHB region. Orbital-resolved analysis at-tributes this sharp resonance and the transferred weight predominantly to the j = 5/2 states. A comparative analysis of the fcc and dhcp phases reveals that while the evolution of 5 f electronic behavior with atomic number follows a parallel trajectory, transitioning from metallic behavior (Am) to strongly localized 5 f states (Cm, Bk and Cf), the fcc phase consistently exhibits stronger cor-relation effects. Specifically, in the fcc structure, Cm, Bk and Cf manifest wider Hubbard bandgaps and more pronounced shifts of the Hubbard bands. These findings underscore that crystal structure plays a critical role in modulating 5 f electron localization, with the fcc phase favoring enhanced correlation strength compared to the dhcp phase. 
+
+> B. Band structure
+
+The evolution of the electronic band structure along high-symmetry paths in the Brillouin zone accords with the calculated density of states. Figures 3(a)–(d) illus-trate the electronic bands along high-symmetry k-points for dhcp phase of Am, Cm, Bk, and Cf, respectively. Among these, the band structure of Am stands out as markedly different from the other three elements. Near the Fermi level, the spectral weight of the 5 f electrons is minimal; instead, it is mainly found around –2.8 eV be-low the Fermi level, as well as near 0.9 and 3.0 eV above it. Owing to c- f hybridization, the lower and upper Hub-bard bands broaden into relatively flat humps, reflecting the many-body character of the electronic states. With increasing pressure, the system stabilizes in the fcc struc-ture [Fig. 4(a)–(d)]. Our calculated band shapes align closely with the earlier study 46 , indicating that the 5 f
+
+bands continue to be concentrated around –2.8 eV be-low the Fermi level and near 1.0 and 3.0 eV above it. Even under moderate pressure, the 5 f electrons stay far from the Fermi level, preserving their strongly localized nature. In the dhcp phase, Cm, Bk, and Cf exhibit highly sim-ilar electronic band structures. All three present charac-teristic features: tiny 5 f electrons spectral weight near the Fermi level, with lower and upper Hubbard bands forming below and above the Fermi level, respectively, signaling strong 5 f electron localization. Despite the overall similarity in band profiles, subtle differences ex-ist in the spectral weight distribution of the conduction bands. Specifically, Cm exhibits relatively high conduc-tion band spectral weight at approximately 2 eV above the Fermi level, whereas in Bk and Cf, the conduction band weight is primarily distributed across the energy range of 1 to 4 eV above the Fermi level. The the fcc phase, Cm, Bk, and Cf share a highly sim-ilar electronic band structure, all exhibiting the strongly correlated 5 f states. In each case, the 5 f spectral weight vanishes at the Fermi level, with well-defined lower and upper Hubbard bands forming on either side, which is clear evidence of strong localization of 5 f electron. De-spite this overarching similarity, subtle variations emerge in the conduction band spectral weight distribution. In Cm, the conduction band weight is concentrated in a relatively narrow feature around 2 eV above the Fermi level. In contrast, for Bk and Cf, this weight is more 7(a) (b) (c) (d) 
+
+FIG. 3. (Color online). Momentum-resolved spectral functions A( k, ω) of dhcp phase for Am, Cm, Bk and Cf at T = 290 K by the DFT + DMFT method. (a) Am. (b) Cm. (c) Bk. (d) Cf. The horizontal dashed lines denote the Fermi levels. (a) (b) (c) (d) 
+
+FIG. 4. (Color online). Momentum-resolved spectral functions A( k, ω) of fcc phase for Am, Cm, Bk and Cf at T = 290 K by the DFT + DMFT method. (a) Am. (b) Cm. (c) Bk. (d) Cf. The horizontal dashed lines denote the Fermi levels. 
+
+broadly distributed across the energy range from 1 and 4 eV above the Fermi level. 8
+
+> C. Hybridization function
+
+The hybridization function ∆(ω) describes the coupling strength between localized 5 f electrons and the surround-ing conduction electron bath, serving as a key quan-tity for understanding charge fluctuations and itinerancy in correlated systems. We evaluated the impurity hy-bridization function ˜∆(ω) for the 5 f orbitals as follows: 
+
+˜∆(ω) = − Im ∆(ω)
+
+π . (2) Figure 5 presents the impurity hybridization functions for the 5 f5/2 and 5 f7/2 states for the dhcp and fcc phases. For the j = 5/2 states [Fig. 5(a)], the hybridization inten-sity near the Fermi level follows the sequence Am ≈ Cm > Bk > Cf. Meanwhile, for the j = 7/2 states [Fig. 5(b)], the order becomes to Cm > Am > Bk > Cf. Notably, Cm exhibits stronger hybridization than Am in the j = 7/2 states, suggesting an orbital-dependent coupling to con-duction electrons. This asymmetry may originate from the dominant j = 7/2 states in the upper Hubbard band and their associated many-body effects. For the fcc phase [Fig. 5(c) and (d)], pressure strik-ingly affects the hybridization strength. In Am, the hy-bridization intensities of both j = 5/2 and j = 7/2 states increase considerably compared to the dhcp phase, con-sistent with the expected pressure-induced enhancement of orbital overlap and band broadening. For Cm, Bk, and Cf, the relative order of hybridization intensity in the j = 5/2 states and j = 7/2 states remains Am > Cm ≈ Bk > Cf, but the absolute values change to vary-ing degrees relative to the dhcp phase. In particular, Cm shows reduced hybridization in both j = 5/2 and j = 7/2 states under pressure. Across both dhcp and fcc phases, the hybridization intensity near the Fermi level is gener-ally stronger for the j = 7/2 states than for the j = 5/2 states. This demonstrates that j = 7/2 electrons couple strongly to the conduction electrons and may therefore be more susceptible to charge fluctuations, offering in-sight into the orbital-selective behavior observed later in the self-energy functions. 
+
+> D. Atomic eigenstate probabilities
+
+The atomic eigenstate probability, or equivalently va-lence state histogram, provides a powerful probe for in-vestigating the valence state fluctuation in strongly cor-related materials 27 . This quantity, denoted as pΓ, rep-resents the probability of finding the valence electrons in a particular atomic eigenstate |ψΓ⟩, typically labeled by good quantum numbers such as electron occupancy 
+
+N or total angular momentum J. When only one or two atomic eigenstates dominate (i.e., exhibit high prob-abilities), the system experiences weak or confined va-lence state fluctuations 24 . Conversely, strong valence state fluctuations correspond to a broad distribution over many eigenstates without a dominant electronic con-figuration 69 . To analyze the valence state fluctuations and mixed-valence behavior, we extract the 5 f electron atomic eigenstates from the output of DMFT ground states. Here pΓ measures the probability for 5 f electrons to reside in a given atomic eigenstate Γ. The average 5 f
+
+occupancy is given by ⟨n5 f ⟩ = ∑Γ pΓnΓ, where nΓ is the electron count in each atomic eigenstate Γ. Finally, the probability of a specified 5 f n configuration is defined as 
+
+w(5 f n) = ∑Γ pΓδ(n − nΓ).In the dhcp phase[Fig. 6(a)–(d)], the 5 f electronic configurations for Am, Cm, Bk, and Cf are dominated overwhelmingly by a single primary occupation number. These dominant electronic configurations correspond pre-cisely to their respective trivalent ionic states: 5 f 6 for Am 3+, 5 f 7 for Cm 3+, 5 f 8 for Bk 3+, and 5 f 9 for Cf 3+. Nev-ertheless, the width of these distributions and the result-ing valence state fluctuations differ dramatically across the series. As shown in Table I, although the 5 f 6 elec-tronic configuration is dominant (86.9%) in Am, it is ac-companied by substantial admixtures of 5 f 5 (10.1%) and 
+
+5 f 7 (2.9%), indicating moderate valence state fluctua-tions. In contrast, the electronic configurations of Cm, Bk, and Cf are remarkably localized. The probability of the primary electronic configuration surpasses 90% in each case 90.8% for Cm (5 f 7), 90.5% for Bk (5 f 8), and 90.5% for Cf (5 f 9), with all other configurations collec-tively accounting for less than 10%. This points to a nearly singular and well-defined electronic configuration. Accordingly, the valence state fluctuation strength pa-rameter is defined as V = ∑n Pn(1 − Pn), where Pn denotes the occupancy number of 5 f electrons. Am exhibits a substantially larger V value of 0.265, signaling a ten-dency toward mixed-valence behavior. The lower and mutually similar V values for Cm (0.184), Bk (0.202), and Cf (0.202) reflect well-defined 5 f occupation num-bers, minimal valence state fluctuations, and nearly lo-calized 5 f states. Moreover, the average total angular momentum ⟨J⟩ increases progressively with the 5 f elec-tron count, consistent with the growing orbital and spin magnetic moments. Thus Am occupies a pivotal position at the threshold where 5 f electron behavior in the actinide series tran-sitions from itinerant to localized. Its 5 f wave func-tions retain sufficient spatial extent for weak hybridiza-tion with neighboring atoms, fostering the observed con-figuration mixing and valence state fluctuations. By con-trast, Cm epitomizes localization, its 5 f electrons being tightly bound by the exceptional quantum mechanical stability of the half-filled 5 f 7 shell. For the heavier Bk and Cf, the actinide contraction draws the 5 f orbitals closer to the nucleus, and the enhanced Coulomb poten-tial further deepens their localization, cementing their stable, trivalent ground states. Hence, while Cm, Bk, and Cf are archetypes of localized 5 f electron systems, Am stands apart. Its residual 5 f itinerancy marks it as a unique demarcation point in the electronic structure and physical properties of the actinide elements. 90.2 0.1 0.0 0.1 0.2 Energy (eV) 00.02 0.04 0.06 0.08 0.10 -Im  ( ) /  (arb. units)             
+
+> Am Cm Bk Cf 0.2 0.1 0.0 0.1 0.2 Energy (eV) 00.02 0.04 0.06 0.08 0.10 -Im  ( ) /  (arb. units)
+> Am Cm Bk Cf 0.2 0.1 0.0 0.1 0.2 Energy (eV) 00.05 0.10 0.15 0.20 -Im  ( ) /  (arb. units)
+> Am Cm Bk Cf 0.2 0.1 0.0 0.1 0.2 Energy (eV) 00.05 0.10 0.15 0.20 -Im  ( ) /  (arb. units)
+> Am Cm Bk Cf
+
+(b) (a) (d) (c) 5f 5/2 5f7/2 5f 5/2 5f7/2 
+
+FIG. 5. (Color online) Hybridization functions of dhcp and fcc phases for Am, Cm, Bk and Cf at T = 290 K by the DFT + DMFT method. (a) For the 5 f j = 5/2 states of dhcp phase. (b) For the 5 f j = 7/2 states of dhcp phase. (c) For the 5 f j =5/2 states of fcc phase. (d) For the 5 f j = 7/2 states of fcc phase. TABLE I. The weights for 5 f electronic configurations w(5 f n), 5 f orbital occupancy ( n5 f , n5/2 and n7/2), total angular momentum 
+
+⟨J⟩, valence state fluctuation strength V and x-ray absorption branching ratio B for dhcp phase for Am, Cm, Bk and Cf at 
+
+T = 290 K. Element w(5 f n−1) w(5 f n) w(5 f n+1) n5 f n5/2 n7/2 ⟨J⟩ V B
+
+Am ( n=6) 10.1% (5 f 5) 86.9% (5 f 6) 2.9% (5 f 7) 5.928 5.303 0.625 0.424 0.265 0.919 Cm ( n=7) 7.5% (5 f 6) 90.8% (5 f 7) 1.6% (5 f 8) 6.941 4.357 2.584 3.525 0.184 0.783 Bk ( n=8) 7.4% (5 f 7) 90.5% (5 f 8) 2.1% (5 f 9) 7.947 5.196 2.751 5.920 0.202 0.876 Cf ( n=9) 6.5% (5 f 8) 90.5% (5 f 9) 3.0% (5 f 10 ) 8.964 5.663 3.301 7.420 0.202 0.938 TABLE II. The weights for 5 f electronic configurations w(5 f n), 5 f orbital occupancy ( n5 f , n5/2 and n7/2), total angular momentum 
+
+⟨J⟩, valence state fluctuation strength V and x-ray absorption branching ratio B for fcc phase for Am, Cm, Bk and Cf at 
+
+T = 290 K. Element w(5 f n−1) w(5 f n) w(5 f n+1) n5 f n5/2 n7/2 ⟨J⟩ V B
+
+Am ( n=6) 11.7% (5 f 5) 82.7% (5 f 6) 5.5% (5 f 7) 5.938 5.236 0.702 0.634 0.365 0.912 Cm ( n=7) 6.4% (5 f 6) 92.4% (5 f 7) 1.2% (5 f 8) 6.947 4.351 2.596 3.518 0.153 0.782 Bk ( n=8) 7.6% (5 f 7) 90.2% (5 f 8) 2.2% (5 f 9) 7.944 5.192 2.752 5.917 0.208 0.875 Cf ( n=9) 5.3% (5 f 8) 92.5% (5 f 9) 2.2% (5 f 10 ) 8.971 5.673 3.298 7.440 0.158 0.939 
+
+In the fcc phase[Fig. 7(a)–(d)], the 5 f electron configu- ration distributions of Am, Cm, Bk, and Cf remain domi-10 0.0 0.2 0.4 0.6 0.8 1.0    
+
+> p
+> J = 2.5,  = 0
+> J = 2.5,  = 1
+> J = 0.0,  = 0
+> J = 3.5,  = 0
+> J = 3.5,  = 1
+> N= 5
+> N= 6
+> N= 7
+
+0.0 0.2 0.4 0.6 0.8 1.0    
+
+> p
+> J = 4.0,  = 0
+> J = 5.0,  = 0
+> J = 3.5,  = 0
+> J = 6.0,  = 0
+> N= 6
+> N= 7
+> N= 8
+
+|
+
+0.0 0.2 0.4 0.6 0.8 1.0    
+
+> p
+> J = 3.5,  = 0
+> J = 8.5,  = 0
+> J = 6.0,  = 0
+> J = 7.5,  = 0
+> N= 7
+> N= 8
+> N= 9
+
+|
+
+0.0 0.2 0.4 0.6 0.8 1.0    
+
+> p
+> J = 6.0,  = 0
+> J = 10.0,  = 0
+> J = 7.5,  = 0
+> J = 8.0,  = 0
+> N= 8
+> N= 9
+> N= 10
+
+(a) (c) (b) (d) 
+
+FIG. 6. (Color online) (a)–(d) Valence state histograms of dhcp phase for Am, Cm, Bk and Cf at T = 290 K by the DFT + DMFT method. The atomic eigenstates are denoted by using good quantum numbers N (total occupancy), J (total angular momentum) and γ (the rest of the good quantum numbers), i.e., |ψΓ⟩ = |N, J, γ ⟩. The distributions of atomic eigenstate probabilities with respect to different N are displayed in the legends. 0.0 0.2 0.4 0.6 0.8 1.0    
+
+> p
+> J = 2.5,  = 0
+> J = 2.5,  = 1
+> J = 0.0,  = 0
+> J = 1.0,  = 0
+> J = 6.0,  = 0
+> J = 3.5,  = 0
+> J = 3.5,  = 1
+> N= 5
+> N= 6
+> N= 7
+
+0.0 0.2 0.4 0.6 0.8 1.0    
+
+> p
+> J = 4.0,  = 0
+> J = 5.0,  = 0
+> J = 3.5,  = 0
+> J = 6.0,  = 0
+> N= 6
+> N= 7
+> N= 8
+
+|
+
+0.0 0.2 0.4 0.6 0.8 1.0    
+
+> p
+> J = 3.5,  = 1
+> J = 8.5,  = 0
+> J = 6.0,  = 0
+> J = 7.5,  = 0
+> N= 7
+> N= 8
+> N= 9
+
+|
+
+0.0 0.2 0.4 0.6 0.8 1.0    
+
+> p
+> J = 6.0,  = 0
+> J = 10.0,  = 0
+> J = 7.5,  = 0
+> J = 8.0,  = 0
+> N= 8
+> N= 9
+> N= 10
+
+(a) (c) (b) (d) 
+
+FIG. 7. (Color online) (a)–(d) Valence state histograms of fcc phase for Am, Cm, Bk and Cf at T = 290 K by the DFT + DMFT method. The atomic eigenstates are denoted by using good quantum numbers N (total occupancy), J (total angular momentum) and γ (the rest of the good quantum numbers), i.e., |ψΓ⟩ = |N, J, γ ⟩. The distributions of atomic eigenstate probabilities with respect to different N are displayed in the legends. 
+
+nated by a single primary configuration, which continues to correspond to their respective trivalent ionic states: 5 f 6 for Am 3+, 5 f 7 for Cm 3+, 5 f 8 for Bk 3+, and 5 f 9 for Cf 3+. However, compared to the dhcp phase, the width of these distributions and the associated valence state fluc-tuations exhibit notable changes. As listed in Table II, although the 5 f 6 electronic configuration remains leading in Am (82.7%), the admixtures of 5 f 5 (11.7%) and 5 f 711 (5.5%) have increased relative to the dhcp phase, indicat-ing more pronounced valence mixing. By contrast, the distributions for Cm, Bk, and Cf remain highly concen-trated, with the probability of the dominant electronic configuration reaching 92.4% for Cm’s 5 f 7, 90.2% for Bk’s 5 f 8, and 92.5% for Cf’s 5 f 9. The remaining configu-rations (such as Cm’s 5 f 6 and 5 f 8, Bk’s 5 f 7 and 5 f 9, and Cf’s 5 f 8 and 5 f 10 ) each account for a minimal proportion, reflecting nearly a single electronic configuration. From the perspective of valence state fluctuations, the 
+
+V value for Am in the fcc phase (0.365) is higher than in the dhcp phase (0.265), implying that the itinerancy of its 5 f electrons is further enhanced in the fcc struc-ture, allowing for more active fluctuations between dif-ferent valence states. This increase is directly correlated with the larger proportions of the 5 f 5 and 5 f 7 electronic configurations in the fcc phase, highlighting the signif-icant influence of crystal structure on electronic behav-ior. In comparison, the V value for Cm in the fcc phase (0.153) is lower than in the dhcp phase (0.184), demon-strating stronger 5 f electron localization. The V value for Bk (0.208) remains essentially unchanged relative to the dhcp phase (0.202), showing only a slight increase. The V value for Cf (0.158) is saliently lower than in the dhcp phase (0.202), exhibiting a more stable electronic configuration. Overall, the V values for Cm, Bk, and Cf in the fcc phase remain at low levels, signifying that their 5 f electron occupation numbers are relatively fixed, valence state fluctuations are minimal, and they display highly localized states. Moreover, the trend of increas-ing average total angular momentum ⟨J⟩ with increasing 5 f electron count is consistently maintained in the fcc phase, in accordance with the physical principles govern-ing orbital and spin magnetic moments. In the fcc phase, Am remains situated in the critical region of the actinide series, where 5 f electrons transi-tion from itinerant to localized behavior. Even though the valence state fluctuations in fcc phase of Am are enhanced relative to the dhcp phase, the 5 f electrons remain predominantly localized. Cm, due to the excep-tional stability of its half-filled 5 f 7 shell, demonstrates even stronger electron localization in the fcc phase (as ev-idenced by its reduced V value), with its 5 f electrons be-ing tightly bound to the nucleus. Similarly, the localiza-tion of Bk’s 5 f electrons remains largely stable in the fcc phase, with only minor valence state fluctuations. For Cf, the contraction of the 5 f orbitals due to increased atomic number (actinide contraction) is fully realized in the fcc phase, where the Coulomb potential further localizes the electrons, thereby yielding a more stable electronic con-figuration than in the dhcp phase. Consequently, Cm, Bk, and Cf all exhibit distinctly localized 5 f character in the fcc phase. Nevertheless, valence state fluctuation strength in Am is enhanced in the fcc phase compared to the dhcp phase, further solidifying its unique position as a demarcation point in the electronic behavior of the actinide elements.                                            
+
+> E. Self-energy functions TABLE III. Calculated orbital-dependent quasiparticle weights Z, effective electron masses m∗and fitting parameter
+> αfor dhcp and fcc phases of Am, Cm, Bk and Cf at T=290 K. Element Z5/2Z7/2m∗
+> 5/2m∗
+> 7/2Rα5/2α7/2
+> Am (dhcp) 0.555 0.505 1.801 me1.980 me1.099 0.500 0.443 Cm (dhcp) 0.036 0.019 27.153 me51.133 me1.895 0.417 0.263 Bk (dhcp) 0.038 0.021 25.987 me47.422 me1.810 0.110 0.180 Cf (dhcp) 0.073 0.025 13.700 me39.950 me2.920 0.011 0.155 Am (fcc) 0.468 0.481 2.139 me2.079 me0.973 0.730 0.670 Cm (fcc) 0.033 0.018 30.682 me55.332 me1.833 0.120 0.140 Bk (fcc) 0.039 0.021 25.503 me48.627 me1.857 0.050 0.060 Cf (fcc) 0.096 0.029 10.443 me34.065 me3.310 0.030 0.320
+
+The self-energy functions encapsulate the strength of electron correlations. Figure 8 presents the imaginary part of the self-energy functions for the j = 5/2 and j
+
+= 7/2 states of Am, Cm, Bk, and Cf in both the dhcp and fcc phases. Notably, the behaviors in the two phases are highly similar across all elements, suggesting that the observed physical trends are intrinsic to the 5 f electron count and its inherent correlation strength, with the spe-cific crystal structure (dhcp and fcc) playing only a minor and quantitative role. Americium serves as a moderately correlated reference point in the series. As shown in Fig. 8, the imaginary parts of the Matsubara self-energy for the j = 5/2 and 
+
+j = 7/2 states approach zero in the low-frequency limit, implying long-lived quasiparticles and good metallicity. This behavior is consistent across the dhcp and fcc struc-tures. Furthermore, the self-energy curves are smooth and featureless, lacking the pronounced “checkmark” or “upward convex” curvature observed in the more corre-lated elements to follow. The Cm system significantly deviates from Fermi liq-uid behavior, entering a strongly correlated metallic regime. Here, the LS coupling scheme prevails: Hund’s rule in the half-filled 5 f 7 shell forces a parallel spin align-ment, generating local magnetic moments. This result corroborates with those previously reported by Moore et al. 7. Consequently, in both dhcp and fcc phases, the imaginary parts of the Matsubara self-energy for both j
+
+= 5/2 and j = 7/2 states display distinct “checkmark” shapes. Crucially, these self-energies remain finite in the zero-frequency limit, indicating strong scattering be-tween local moments and itinerant electrons that sub-stantially suppresses quasiparticle lifetimes. Orbital dif-ferentiation is already evident at this stage. The absolute value of Im Σ(0) for the j = 7/2 state is approximately twice that of the j = 5/2 state. This disparity reveals that the j = 7/2 electrons experience noticeably stronger 12 0 1 2 3         
+
+> n
+> 8
+> 6
+> 4
+> 2
+> 0Im  (i n )
+> Am Cm Bk Cf 0123
+> n
+> 8
+> 6
+> 4
+> 2
+> 0Im  (i n )
+> 0123
+> n
+> 8
+> 6
+> 4
+> 2
+> 0Im  (i n )
+> 0123
+> n
+> 8
+> 6
+> 4
+> 2
+> 0Im  (i n )
+
+(b) (a) (d) (c) 5f 5/2 5f7/2 5f5/2 5f7/2                    
+
+> FIG. 8. (Color online) Imaginary parts of the Matsubara self-energy functions of Am, Cm, Bk and Cf at T=290 K in the low-frequency regime by DFT + DMFT calculations. (a) For the 5 fj= 5/2 states of dhcp phase. (b) For the 5 fj= 7/2 states of dhcp phase. (c) For the 5 fj= 5/2 states of fcc phase. (d) For the 5 fj= 7/2 states of fcc phase.
+
+scattering, leading to even shorter quasiparticle lifetimes and evincing the emergence of orbital-selective correla-tions in Cm. The Bk system marks a significant escalation in both the strength of electron correlations and the degree of orbital-selective differentiation. Relative to the half-filled Cm configuration, the additional electron in Bk is forced into the j = 7/2 orbital, thereby intensifying orbital po-larization. This electronic configuration yields distinct orbital dynamics: in both dhcp and fcc structures, the imaginary part of the self-energy Im Σ(iωn) for the j = 5/2 state develops a slight “upward convex” curve at low fre-quencies, while the j = 7/2 state exhibits a “checkmark” shape. This stark contrast identifies the j = 7/2 orbital as the primary carrier of the local magnetic moments and the dominant source of localization. Both orbitals main-tain finite zero-frequency self-energies, with the magni-tude for the j = 7/2 state consistently exceeding that of the j = 5/2 state. This disparity confirms that the intense scattering of itinerant electrons originates pre-dominantly from the j = 7/2 orbital, establishing Bk as a prototypical metal with pronounced orbital-selective cor-relations. Building on this trend, the Cf system represents an extreme culmination of this evolution. Remarkably, the angular momentum coupling scheme reverts to the j j 
+
+coupling framework. In both dhcp and fcc structures, the j = 5/2 state retains a slight “upward convex” curve at low frequencies, qualitatively similar to Bk but with key quantitative differences discussed below. Concur-rently, the j = 7/2 state displays a sharp “checkmark” shape with zero-frequency absolute values much larger than those of j = 5/2, establishing it as the epicenter of strong scattering. This configuration drives the system toward the brink of metallicity, underscoring the persis-tent and even intensified role of the j = 7/2 subshell in dictating the correlated electron behavior. In the low-frequency regime, the data reveal quasi-linear behavior, extrapolating to zero as ωn → 0. To quantify this trend, we employ the empirical formula: 
+
+Im Σ(iωn) = c(iωn)α + b, (3) where b, c, and α are fitting parameters. For Am, the extracted exponents α are approximately 0.5 in the dhcp 13 phase and 0.7 in the fcc phase, deviating from the lin-ear frequency dependence expected from Landau’s Fermi-liquid theory 59 . In Cm, the exponents α are 0.417 ( j =5/2) and 0.263 ( j = 7/2) in the dhcp phase, and 0.120 ( j
+
+= 5/2) and 0.140 ( j = 7/2) in the fcc phase, all character-istic of non-Fermi liquid behavior. This trend continues in Bk, where α reaches 0.11 ( j = 5/2) and 0.18 ( j = 7/2) in the dhcp phase, and further drops to 0.05 ( j = 5/2) and 0.06 ( j = 7/2) in the fcc phase, again signaling a clear departure from Fermi-liquid ground states. In Cf, the exponents α for j = 5/2 states approach zero (0.011 for dhcp phase and 0.030 for fcc phase), while those for 
+
+j = 7/2 states are 0.155 for dhcp phase and 0.320 for fcc phase. Both orbitals retain finite zero-frequency self-energies, and the near-vanishing exponents signify a com-plete breakdown of Fermi-liquid theory, placing the sys-tem at the very edge of metallicity. To further quantify the correlation strength, the self-energy function Σ(ω) is utilized to determine both the quasiparticle weight Z and effective electron masses m∗ for Am-5 f electrons 59 :
+
+Z−1 = m∗
+
+me
+
+= 1 − ∂Im Σ(iω0)
+
+∂ω 0
+
+, (4) where ω0 ≡ π/β and me is the bare electron mass. The calculated orbital-resolved quasiparticle weights Z and effective electron masses m∗ for the dhcp and fcc phases of Am, Cm, Bk and Cf are summarized in Table III. These quantities provide a quantitative measure of the electron correlation strength and its orbital dependence across the series. To capture the orbital differentiation between the 5 f5/2 and 5 f7/2 manifolds, we define the ratio 
+
+R ≡ Z5/2/Z7/2, where a value deviating from unity signifies the emergence of orbital-selective correlations. In line with the self-energy analysis, Am resides in the moderate correlation regime. Its quasiparticle weights 
+
+Z range from 0.47 to 0.56, with corresponding effective electron masses m∗ of approximately 1.8 me to 2.1 me, in-dicating moderate electron renormalization. The R val-ues are 1.099 for the dhcp phase and 0.973 for the fcc phase, both close to unity. This confirms that the j =5/2 and j = 7/2 states experience comparable correlation strengths, with only a slight deviation from perfect or-bital degeneracy. This behavior stands in contrast to the moderately orbital-selective correlations observed in the 
+
+5 f electrons of plutonium, where a clear differentiation between the 5 f5/2 and 5 f7/2 states has been reported 43,70 .Moving to Cm, the correlation strength increases dra-matically. The quasiparticle weights Z plummet to a range of 0.02 to 0.04, while the effective electron masses 
+
+m∗ are correspondingly enhanced to 27 me ∼ 55 me. This order-of-magnitude change signals a transition into the strongly correlated regime with pronounced electron lo-calization. Furthermore, the R values of 1.895 (dhcp) and 1.833 (fcc) now deviate significantly from unity, provid-ing clear evidence that orbital-resolved correlation char-acteristics begin to emerge in Cm. This trend of orbital differentiation intensifies in Bk, which exhibits even more pronounced inter-orbital dis-parity. Here, the quasiparticle weights are approximately 0.038 ∼ 0.039 for the j = 5/2 state and 0.021 for the j
+
+= 7/2 state, yielding effective electron masses m∗ of ap-proximately 26 me and 47 me ∼ 48 me, respectively. The substantial difference between the two orbitals is quan-tified by the R values of 1.810 (dhcp) and 1.857 (fcc), robustly confirming the establishment of orbital-selective correlations in Bk. The Cf system represents the extreme endpoint of this evolutionary path. Despite the reversion to a j j coupling scheme, its correlation strength reaches a critical point. The quasiparticle weights Z are 0.073 ∼ 0.096 for the j
+
+= 5/2 orbital but only 0.025 ∼ 0.029 for the j = 7/2 orbital, corresponding to effective electron masses m∗ of 10 ∼ 14 me and 34 me ∼ 40 me, respectively. The inter-orbital disparity is the most pronounced in the series, with R values soaring to 2.920 (dhcp) and 3.310 (fcc). This indicates that the j = 7/2 electrons are approaching complete localization. In summary, the dhcp and fcc phases exhibit highly consistent physical trends across all elements, with only minor quantitative differences in their Z, m∗, and R val-ues. This consistency confirms that the observed evolu-tion from Am to Cf is an intrinsic property of the 5 f
+
+electron system as a function of electron count. Cf re-veals a counterintuitive physical picture: although its coupling scheme reverts to the j j limit, the higher 5 f elec-tron count drives the system into a j j -framework quan-tum critical state through intra-orbital correlation effects within the j = 7/2 subshell. This represents the ultimate outcome of the competition between metallicity and lo-cality in the heavy actinide series. 
+
+> F. Angular momentum coupling scheme
+
+As the 5 f electron count increases from Am to Cf, the occupancy gradually shifts between the j = 5/2 and j
+
+= 7/2 manifolds. This evolution determines the angu-lar momentum coupling scheme and, consequently, influ-ences chemical bonding and related physical properties. In multielectron systems, a competition arises between spin-orbit coupling and Coulomb interactions, leading to three distinct coupling regimes: Russell-Saunders (LS) coupling, j j coupling, and intermediate coupling (IC) 1.Although intermediate coupling is often adopted to de-scribe the ground states of late actinides 71 , how these sys-tems behave under high pressure remains an open ques-tion. Understanding the evolution of both 5 f occupancy and the associated angular momentum coupling in the high-pressure phases of late actinides is therefore essen-tial, as it provides direct insight into the interplay be-tween localization, itinerancy, magnetism, and relativis-tic effects under extreme compression. Core-level spectroscopic techniques, such as electron energy-loss spectroscopy and x-ray absorption spec-troscopy, offer a direct probe of the 5 f electronic states in actinides 7. In both methods, a core electron is ex-14 cited above the Fermi level, allowing access to the un-occupied density of states. When the excitation origi-nates from the 4 d core level, the spin-orbit interaction per hole in the 5 f shell can be quantified using the spin-orbit sum rule. In such analyses, the branching ratio is extracted from the spin-orbit-split core edges, where dipole selection rules permit two types of transitions: 
+
+4d5/2 → 5 f5/2,7/2 (N5) and 4d3/2 → 5 f5/2 (N4). Because an excited 4 d core electron can only populate specific 5 f
+
+final states, the resulting variation in the branching ratio provides a measurable signature that can be rigorously interpreted within the spin-orbit sum-rule formalism. A key quantity derived from these measurements is the x-ray absorption branching ratio B, defined as the rela-tive intensity of the 4d5/2 absorption line 72 . This ratio serves as a direct experimental indicator of the spin-orbit coupling strength in the 5 f shell. Under the approxima-tion that core-valence electrostatic interactions are ne-glected, B can be expressed analytically 27 .
+
+B = 35 − 415 114 − n5/2 − n7/2
+
+( 32 n7/2 − 2n5/2
+
+)
+
+, (5) where n5/2 and n7/2 indicate the 5 f occupation numbers for the 5 f5/2 and 5 f7/2 states, respectively. The calculated results are summarized in Tables I and II, where x-ray absorption branching ratio B exhibits a similar behavior for both the dhcp and fcc phases. So we illustrate here using the dhcp phase as a representative example. Our results are in excellent agreement with those previously reported by Moore et al. 7. Their x-ray branching ratio of B=0.93 corresponds to occupancies of n5/2=5.38 and 
+
+n7/2=0.62, while our calculations yield n5/2=5.303 and 
+
+n7/2=0.625, corresponding to B=0.919. The close con-sistency between the two datasets validates the reliabil-ity of our computational approach and provides strong evidence that the angular momentum coupling in Am approaches the j j coupling limit. It is worth mentioning that the dominant occupancy of the 5 f5/2 subshell and predominant spin-orbit coupling over exchange interac-tion drives the system toward the j j coupling regime. Particularly, the EELS branching ratio is sensitive to the degree of 5 f electron delocalization, and the observed val-ues reflect the localized nature of the 5 f electrons in Am. The x-ray absorption branching ratio can be experimen-tally probed using techniques such as electron energy-loss spectroscopy, x-ray absorption spectroscopy, and x-ray magnetic circular dichroism. In late actinides, the interplay between spin-orbit cou-pling and exchange interaction generally leads to an in-termediate coupling. For Cm, as the 5 f count increases from six to seven, a pronounced shift occurs in favor of the exchange interaction, marking the transition from op-timal spin-orbit stabilization for 5 f 6 to optimal exchange interaction stabilization for 5 f 7. Thus, Cm achieves max-imum energy stabilization through exchange interaction. This stabilization requires all spins to be parallel via Hund’s rule coupling, a condition inherently satisfied in LS coupling. Consequently, Cm shifts toward the in-termediate coupling regime with a strong bias toward LS coupling, as evidenced by x-ray absorption and x-ray magnetic circular dichroism measurements 20 .This deviation results in a dramatic redistribution of 5 f electrons. Compared with Am, the dhcp phase of Cm transfers more than one electron into the 5 f7/2 level, yielding calculated occupation numbers of n5/2=4.357 and n7/2=2.584. These values correspond to the x-ray branching ratio of B=0.783, which aligns closely with pre-viously reported values 7 (B=0.794 corresponding to oc-cupancies of n5/2=4.41 and n7/2=2.59). Additionally, Cm exhibits a modest orbital moment aligned parallel to the large spin moment, a consequence of nonvanishing spin– orbit coupling within the intermediate coupling regime. Together, these features elucidate the mechanism under-lying the magnetic stabilization of Cm through the in-terplay between exchange interaction and spin-orbit cou-pling 18 .A similar trend persists in Bk, which has a nominal 5 f 8
+
+configuration. Bk falls almost directly in the intermedi-ate coupling regime, shifted towards LS coupling, con-sistent with electron energy-loss spectroscopy measure-ments 19 . In this regime, Hund’s rule coupling requires all spins to be aligned in parallel, giving rise to a large spin moment, in agreement with previous results 1. In contrast, 5 f electrons in Cf are predominantly localized, leading to angular momentum coupling that approaches the j j coupling limit. This indicates that spin-orbit cou-pling dominates over exchange interaction, in accordance with experimental findings 19 . Thus, Am and Cf both ap-proach the j j coupling limit, where spin-orbit coupling prevails. Cm and Bk where exchange interaction domi-nates over spin-orbit coupling reside in an intermediate coupling regime with a strong bias toward LS coupling. This contrast reflects the competing influences of spin– orbit coupling and exchange stabilization, with the latter playing a more significant role in Cm and Bk 73 . 
+
+> IV. DISCUSSION
+
+Evolution of energy scales and magnetic response with 5 f occupancy from Am to Cf. To trace the incremental localization of 5 f electrons from Am to Cf, we analyze the kinetic energy ( Ekin ), po-tential energy ( Epot ), spin susceptibility ( χS0 ) and charge susceptibility ( χD) for dhcp and fcc phases, as listed in Table IV. We begin with the evolution of energy scales. From Am to Cf, the absolute magnitude of the kinetic en-ergy Ekin remains consistently small, on the order of 0.7 
+
+∼ 0.8 eV for dhcp phase and 0.6 ∼ 1.2 eV for fcc phase. This reflects the intrinsically narrow bandwidth of the 5 f
+
+electrons, a prerequisite for strong correlation effects. As the 5 f electron count rises from Am to Cf, the kinetic en-ergy shows a gradual but systematic decrease, signaling a progressive suppression of electron hopping, a direct indicator of enhanced 5 f electron localization. Mean-15                                                                    
+
+> TABLE IV. Calculated kinetic energy ( Ekin ), potential energy (Epot ), spin susceptibility ( χS0 ) and charge susceptibility ( χD)for dhcp and fcc phases of Am, Cm, Bk and Cf at T=290 K. Element nominal 5 fcount Ekin (eV) Epot (eV) χS0 χD
+> Am (dhcp) 5f6-0.86 66.72 0.296 +0.01 Cm (dhcp) 5f7-0.82 137.1 110.8 -3.16 Bk (dhcp) 5f8-0.71 186.5 553.6 -1.30 Cf (dhcp) 5f9-0.73 243.2 769.7 -3.60 Am (fcc) 5f6-1.24 67.21 0.543 +0.01 Cm (fcc) 5f7-0.62 137.2 203.6 -0.29 Bk (fcc) 5f8-0.78 186.4 354.9 -4.92 Cf (fcc) 5f9-0.57 243.5 811.1 -4.42
+
+while, for dhcp and fcc phases, the potential energy Epot 
+
+undergoes a dramatic increase, escalating from 67 eV in Am to 243 eV in Cf, representing a more than threefold rise. This surge stems from the growing Coulomb repul-sion interaction and Hund’s exchange interaction, both of which intensify as electrons become increasingly confined to the atomic site. As the 5 f shell fills, the concurrent de-crease in kinetic energy and rapid rise in potential energy signify enhanced electron localization and strengthening electron correlations. Magnetic response functions provide a complementary perspective on this localized state. The spin susceptibil-ity χS0 , which quantifies the system’s tendency to form magnetic moments and respond to external fields, un-dergoes a qualitative transformation across the series. In Am, spin susceptibility χS0 is very small (0.296 for dhcp phase and 0.543 for fcc phase), consistent with a non-magnetic ground state dominated by strong spin-orbit coupling 4,7 . A dramatic change occurs at Cm, where χS0 
+
+surges by more than two orders of magnitude, reaching 110.8 for the dhcp phase and 203.6 for the fcc phase. This abrupt surge signals the emergence of robust lo-cal moments, in agreement with magnetic susceptibility measurements on Cm and Bk metals, which report ef-fective moments 7.58 μB/atom for Cm-I and Cm-II 20,74 
+
+and around 8 μB/atom for Bk 1. In Cm, the 5 f 7 config-uration fills the j = 5/2 subshell and begins populating the j = 7/2 states. Hund’s rule aligns the spins in par-allel, yielding a half-filled shell with maximal spin. The resulting high spin susceptibility reflects the high respon-siveness of these moments, which are easily polarized by external perturbations such as temperature or magnetic field. This trend intensifies in the heavier elements: χS0 
+
+climbs to 553.6 (dhcp) and 354.9 (fcc) in Bk, and further to 769.7 (dhcp) and 811.1 (fcc) in Cf. The continued growth of spin susceptibility confirms that local moments not only persist but become increasingly dominant as the 5 f count advances. The charge susceptibility χD offers insight into the evo-lution of orbital degrees of freedom. In Am, χD is pos-itive (0.01 for dhcp and fcc phases), indicating the ab-sence of orbital order or magnetic frustration. Begin-ning with Cm, however, χD for the dhcp phase abruptly turns negative, taking values of –3.16, –1.30, and –3.60 for Cm, Bk, and Cf, respectively. A similar trend is ob-served for the fcc phase, with values of –0.29, –4.92, and –4.42 across the same elements. This sign reversal is a key fingerprint of emerging orbital-selective correlations. A negative charge susceptibility reflects either a partial quenching of orbital angular momentum or the develop-ment of a preferential orbital occupation. In the present context, this corresponds to the progressively differenti-ated roles of the j = 5/2 and j = 7/2 subshells. The negative values observed from Cm onward directly con-firm the onset of orbital selectivity, meaning that the j
+
+= 5/2 and j = 7/2 manifolds begin to participate differ-ently in both local moment formation and the scattering of itinerant electrons. In summary, increasing 5 f elec-tron count drives the system from Am, a non-magnetic metal, to Cm and Bk, where local moments and orbital selectivity govern the low-energy physics. The systematic decrease in kinetic energy, the explosive rise in potential energy and spin susceptibility, and the sign reversal of charge susceptibility all lead to a conclusion that higher 5 f occupancy gradually enhances electron localization, correlation strength, and orbital differentiation.  
+
+> V. CONCLUSIONS
+
+In this study, the electronic structures of Am, Cm, Bk, and Cf in both dhcp and fcc phases have been com-prehensively investigated using density functional theory combined with the embedded dynamical mean-field the-ory. From Am to Cf, the 5 f electrons exhibit progressive localization, accompanied by weakened valence state fluc-tuations, enhanced correlation strength, and the emer-gence of orbital-selective correlations between the j =5/2 and j = 7/2 manifolds. Am exhibits moderate cor-relation strength and a nonmagnetic ground state. In contrast, Cm and Bk fall into a strongly correlated lo-calized regime, characterized by Hubbard band forma-tion and substantial effective electron masses. Strikingly, Cf displays the strongest orbital-selective correlations in the series. Although the fcc structure generally amplifies correlation effects relative to the dhcp phase, the bond-ing behavior of the 5 f electrons remains largely similar across both structures, underscoring a close link between 5 f electron correlation and lattice stability. The compe-tition between exchange interaction and spin–orbit cou-pling, driven by variations in 5 f occupancy across the 
+
+j = 5/2 and j = 7/2 manifolds, leads to distinct an-gular momentum coupling schemes. When exchange in-teraction prevails, as in Cm and Bk, the system adopts an intermediate coupling scheme biased toward LS cou-pling. Under Hund’s rule, the 5 f spins align in parallel, resulting in magnetic ground states. When spin-orbit 16 coupling dominates, as in Am and Cf, the system is gov-erned by j j coupling and manifests nonmagnetic ground states. Analyses of energy, spin and charge susceptibil-ity further corroborate the progressive localization of 5 f
+
+electrons and the emergence of orbital-selective correla-tions from Am to Cf. Our findings therefore provide a unified description of 5 f electron evolution from Am to Cf, linking electronic structure, magnetic ground states, and lattice stability, while laying the groundwork for un-derstanding heavy-actinide behavior under extreme con-ditions and guiding future actinide-based applications. 
+
+ACKNOWLEDGMENTS 
+
+This work is supported by the National Natural Sci-ence Foundation of China (under Grant No. 12474241), the National Key Research and Development Program of China (under Grant No. 2024YFA1408600), and the Presidential Foundation of CAEP (under Grant No. YZJJZQ2024014).  
+
+> ∗
+
+hyluphys@163.com  
+
+> 1
+
+K. T. Moore and G. v. der Laan, “Nature of the 5 f states in actinide metals,” Rev. Mod. Phys. 81, 235–298 (2009).  
+
+> 2
+
+Tyler W. Hines, Nicholas B. Beck, Kacy N. Mendoza, Joseph M. Sperling, and Thomas E. Albrecht, “Pressure effects on metals, alloys, and compounds of transplutonium elements,” Rev. Mod. Phys. 98, 015004 (2026).  
+
+> 3
+
+J. L. Smith and R. G. Haire, “Superconductivity of ameri-cium,” Science 200, 535 (1978).  
+
+> 4
+
+J.-C. Griveau, J. Rebizant, G. H. Lander, and G. Kotliar, “Superconductivity in the americium metal as a function of pressure: Probing the mott transition,” Phys. Rev. Lett. 94, 097002 (2005).  
+
+> 5
+
+S. Heathman, R. G. Haire, T. Le Bihan, A. Lindbaum, M. Idiri, P. Normile, S. Li, R. Ahuja, B. Johansson, and G. H. Lander, “A high-pressure structure in curium linked to magnetism,” Science 309, 110–113 (2005).  
+
+> 6
+
+S. Heathman, T. Le Bihan, S. Yagoubi, B. Johansson, and R. Ahuja, “Structural investigation of californium under pressure,” Phys. Rev. B 87, 214111 (2013).  
+
+> 7
+
+K. T. Moore, G. van der Laan, M. A. Wall, A. J. Schwartz, and R. G. Haire, “Rampant changes in 5 f52 and 5 f72 fill-ing across the light and middle actinide metals: Electron energy-loss spectroscopy, many-electron atomic spectral calculations, and spin-orbit sum rule,” Phys. Rev. B 76, 073105 (2007).  
+
+> 8
+
+S. Heathman, R. G. Haire, T. Le Bihan, A. Lindbaum, K. Litfin, Y. Méresse, and H. Libotte, “Pressure induces major changes in the nature of americium’s 5f electrons,” Phys. Rev. Lett. 85, 2961 (2000).  
+
+> 9
+
+A. Lindbaum, S. Heathman, K. Litfin, Y. Méresse, R. G. Haire, T. Le Bihan, and H. Libotte, “High-pressure stud-ies of americium metal: Insights into its position in the actinide series,” Phys. Rev. B 63, 214101 (2001).  
+
+> 10
+
+A. Lindbaum, S. Heathman, T. Le Bihan, R. G. Haire, M. Idiri, and G. H. Lander, “High-pressure crystal struc-tures of actinide elements to 100 GPa,” J. Phys.: Condens. Matter 15, S2297 (2003).  
+
+> 11
+
+P. Link, D. Braithwaite, J. Wittig, U. Benedict, and R. G. Haire, “Resistivity and superconductivity of americium metal under pressure up to 25 GPa,” J. Alloys Compd. 213-214, 148–152 (1994), international Conference on Ac-tinides.  
+
+> 12
+
+J.-C. Griveau, J. Rebizant, R. G. Haire, G. Kotliar, and G. H. Lander, “Americium under pressure,” J. Alloys Compd. 444-445, 84–87 (2007).  
+
+> 13
+
+S. Heathman, J.-P. Rueff, L. Simonelli, M. A. Denecke, J.-C. Griveau, R. Caciuffo, and G. H. Lander, “Resonant x-ray emission spectroscopy at the L3 edge of americium up to 23 GPa,” Phys. Rev. B 82, 201103 (2010).  
+
+> 14
+
+A. V. Kolomiets, J.-C. Griveau, S. Heathman, A. B. Shick, F. Wastin, P. Faure, V. Klosek, C. Genestier, N. Baclet, and L. Havela, “Pressure-induced americium valence fluc-tuations revealed by electrical resistivity,” Europhys. Lett. 82, 57007 (2008).  
+
+> 15
+
+M. Pénicaud, “Localization of 5 f electrons and phase tran-sitions in americium,” J. Phys.: Condens. Matter 17, 257 (2004).  
+
+> 16
+
+P. Söderlind and A. Landa, “Crystal stability and equation of state for Am: Theory,” Phys. Rev. B 72, 024109 (2005).  
+
+> 17
+
+S. Heathman, R. G. Haire, T. Le Bihan, R. Ahuja, S. Li, W. Luo, and B. Johansson, “The unique high-pressure behavior of curium probed further using alloys,” J. Alloys Compd. 444-445, 138–141 (2007), proceedings of the Plu-tonium Futures - The Science 2006 Conference.  
+
+> 18
+
+K. T. Moore, G. van der Laan, R. G. Haire, M. A. Wall, A. J. Schwartz, and P. Söderlind, “Emergence of strong ex-change interaction in the actinide series: The driving force for magnetic stabilization of curium,” Phys. Rev. Lett. 98, 236402 (2007).  
+
+> 19
+
+A. Müller, Gauthier J.-P. Deblonde, P. Ercius, S. E. Zelt-mann, R. J. Abergel, and A. M. Minor, “Probing elec-tronic structure in berkelium and californium via an elec-tron microscopy nanosampling approach,” Nat. Commun. 12, 948 (2021).  
+
+> 20
+
+G. H. Lander, J.-C. Griveau, R. Eloirdi, N. Magnani, E. Colineau, F. Wilhelm, S. D. Brown, D. Wermeille, A. Rogalev, R. G. Haire, and R. Caciuffo, “Measurements related to the magnetism of curium metal,” Phys. Rev. B 99, 224419 (2019).  
+
+> 21
+
+R. G. Haire, J. R. Peterson, U. Benedict, and C. Dufour, “X-ray diffraction of berkelium metal under pressure to 57 GPa,” J. Less-Common Met. 102, 119–126 (1984).  
+
+> 22
+
+U. Benedict, J. R. Peterson, R. G. Haire, and C. Du-four, “Delocalisation of 5 f electrons in berkelium and cali-fornium metals under pressure,” J. Phys. F 14, L43 (1984).  
+
+> 23
+
+R. G. Haire and R. D. Baybarz, “Crystal structure and melting point of californium metal,” Inorg. Nucl. Chem. Lett. 36, 1295–1302 (1974).  
+
+> 24
+
+L. Huang and H.-Y. Lu, “Pressure-driven 5 f localized-itinerant transition and valence fluctuation in cubic phase californium,” Phys. Rev. B 99, 045109 (2019).  
+
+> 25
+
+S. Heathman, R. G. Haire, T. Le Bihan, A. Lindbaum, K. Litfin, Y. Méresse, and H. Libotte, “Pressure induces major changes in the nature of americium’s 5 f electrons,” Phys. Rev. Lett. 85, 2961–2964 (2000). 17  
+
+> 26
+
+J. L. Sarrao, L. A. Morales, J. D. Thompson, B. L. Scott, G. R. Stewart, F. Wastin, J. Rebizant, P. Boulet, E. Col-ineau, and G. H. Lander, “Plutonium-based superconduc-tivity with a transition temperature above 18 K,” Nature 420, 297 (2002).  
+
+> 27
+
+J. H. Shim, K. Haule, and G. Kotliar, “Fluctuating valence in a correlated solid and the anomalous properties of δ-plutonium,” Nature 446, 513 (2007).  
+
+> 28
+
+X.-Y. Deng, K. Haule, and G. Kotliar, “Plutonium hex-aboride is a correlated topological insulator,” Phys. Rev. Lett. 111, 176404 (2013).  
+
+> 29
+
+E. D. Bauer and J. D. Thompson, “Plutonium-based heavy-fermion systems,” Annu. Rev. Condens. Matter Phys. 6, 137 (2015).  
+
+> 30
+
+Necia Grant Cooper, “Challenges in plutonium science,” Los Alamos Science 26, 1–493 (2000).  
+
+> 31
+
+M. T. Butterfield, K. T. Moore, G. van der Laan, M. A. Wall, and R. G. Haire, “Understanding the O4,5 edge struc-ture of actinide metals: Electron energy-loss spectroscopy and atomic spectral calculations of Th, U, Np, Pu, Am, and Cm,” Phys. Rev. B 77, 113109 (2008).  
+
+> 32
+
+Conrad A. P. Goodwin, J. Su, Lauren M. Stevens, Frankie D. White, Nickolas H. Anderson, John D. Aux-ier, Thomas E. Albrecht-Schönzart, Enrique R. Batista, Sasha F. Briscoe, Justin N. Cross, William J. Evans, Alyssa N. Gaiser, Andrew J. Gaunt, Michael R. James, Michael T. Janicke, Tener F. Jenkins, Zachary R. Jones, Stosh A. Kozimor, Brian L. Scott, Joseph. M. Sperling, Justin C. Wedal, Cory J. Windorff, Ping Yang, and Joseph W. Ziller, “Isolation and characterization of a cali-fornium metallocene,” Nature 599, 421–424 (2021).  
+
+> 33
+
+R. Caciuffo, G. H. Lander, and G. van der Laan, “Syn-chrotron radiation techniques and their application to ac-tinide materials,” Rev. Mod. Phys. 95, 015001 (2023).  
+
+> 34
+
+P. Söderlind, K. T. Moore, A. Landa, B. Sadigh, and J. A. Bradley, “Pressure-induced changes in the electronic structure of americium metal,” Phys. Rev. B 84, 075138 (2011).  
+
+> 35
+
+A. Shick, L. Havela, J. Kolorenč, D. Václav, G. Thomas, and M. O. Peter, “Electronic structure and nonmagnetic character of δ-Pu-Am alloys,” Phys. Rev. B 73, 104415 (2006).  
+
+> 36
+
+V. I. Anisimov, A. O. Shorikov, and J. Kuneš, “Magnetic state and electronic structure of plutonium from “first prin-ciples” calculations,” J. Alloys Compd. 444, 42–49 (2007).  
+
+> 37
+
+M. Fhokrul Islam and Asok K. Aay, “A LDA+ U study of the photoemission spectra of the double hexagonal close packed phases of Am and Cm,” Solid State Commun. 150, 938–942 (2010).  
+
+> 38
+
+Ashok K. Verma, P. Modak, Surinder M. Sharma, and S. K. Sikka, “Investigation of equation of states and elec-tronic properties of Am and Cm metals in their gamma plutonium phase using GGA+SO+ U method,” Solid State Commun. 164, 22–26 (2013).  
+
+> 39
+
+M. Pénicaud, “Calculated structural stabilities of U, Np, Pu and Am; new high-pressure phases for Am and Pu,” J. Phys.: Condens. Matter 14, 3575 (2002).  
+
+> 40
+
+O. Eriksson and J. M. Wills, “Theoretical aspects of the 5 f
+
+delocalization of americium under pressure,” Phys. Rev. B 45, 3198–3203 (1992).  
+
+> 41
+
+A. F. Raymond and K. Ray Asok, “Probing the 5 f elec-trons in Am-I by hybrid density functional theory,” Chem. Phys. Lett. 482, 223–227 (2009).  
+
+> 42
+
+T. Gouder, P. M. Oppeneer, F. Huber, F. Wastin, and J. Rebizant, “Photoemission study of the electronic struc-ture of Am, AmN, AmSb, and Am 2O3 films,” Phys. Rev. B 72, 115122 (2005).  
+
+> 43
+
+L. Huang and H.-Y. Lu, “Nature of the 5 f electronic struc-ture of plutonium,” Phys. Rev. B 101, 125123 (2020).  
+
+> 44
+
+H.-Y. Lu and L. Huang, “Temperature-driven 5 f itinerant– localized crossover in the heavy-fermion compound PuIn 3,” Phys. Rev. B 103, 205134 (2021).  
+
+> 45
+
+L. Huang and H.-Y. Lu, “Collapse of quasiparticle multi-plets and 5 f itinerant-localized crossovers in cubic phase Pu 3Ga,” Phys. Rev. B 109, 205132 (2024).  
+
+> 46
+
+S. Y. Savrasov, K. Haule, and G. Kotliar, “Many-body electronic structure of americium metal,” Phys. Rev. Lett. 96, 036404 (2006).  
+
+> 47
+
+B. Amadon, “First-principles DFT+DMFT calculations of structural properties of actinides: Role of hund’s exchange, spin-orbit coupling, and crystal structure,” Phys. Rev. B 94, 115148 (2016).  
+
+> 48
+
+K. Haule, S. Kirchner, J. Kroha, and P. Wölfle, “Anderson impurity model at finite coulomb interaction U: General-ized noncrossing approximation,” Phys. Rev. B 64, 155111 (2001).  
+
+> 49
+
+L. Huang, R.-F. Chen, and H.-Y. Lu, “Emergence of quasi-particle multiplets in curium,” Phys. Rev. B 101, 195123 (2020).  
+
+> 50
+
+A. K. McMahan, “Pressure effects on the electronic struc-ture of 4 f and 5 f materials,” J. Less-Common Met. 149, 1–11 (1989).  
+
+> 51
+
+R. G. Haire, “Important new insights into f -electron be-havior via ultra-high pressure studies of transplutonium elements,” AIP Conf. Proc. 532, 369–370 (2000).  
+
+> 52
+
+R. G. Haire and S. Heathman, “Using correlations to un-derstand changes in actinide bonding,” MRS Proceedings 986 (2006), 10.1557/proc-986-0986-oo04-01.  
+
+> 53
+
+J. Börje, “Crystal and electronic structure connections be-tween the 4 f and 5 f transition metals,” J. Alloys Compd. 223, 211–215 (1995).  
+
+> 54
+
+J.-X. Zhu, R. C. Albers, K. Haule, G. Kotliar, and J. M. Wills, “Site-selective electronic correlation in α-plutonium metal,” Nat. Commun. 4, 2644 (2013).  
+
+> 55
+
+X. Dai, S. Y. Savrasov, G. Kotliar, A. Migliori, H. Led-better, and E. Abrahams, “Calculated phonon spectra of plutonium at high temperatures,” Science 300, 953 (2003).  
+
+> 56
+
+Y. S. Sergej, G. Kotliar, and E. Abrahams, “Correlated electrons in δ-plutonium within a dynamical mean-field picture,” Nature 410, 793–795 (2001).  
+
+> 57
+
+R. G. Haire, “Insights into the bonding and electronic na-ture of heavy element materials,” J. Alloys Compd. 444-445, 63–71 (2007).  
+
+> 58
+
+R. G. Haire, “Probing the bonding and electronic nature of actinides using pressure,” J. Phys. Soc. Jpn. 75, 130–136 (2006).  
+
+> 59
+
+A. Georges, G. Kotliar, W. Krauth, and M. J. Rozen-berg, “Dynamical mean-field theory of strongly correlated fermion systems and the limit of infinite dimensions,” Rev. Mod. Phys. 68, 13 (1996).  
+
+> 60
+
+G. Kotliar, S. Y. Savrasov, K. Haule, V. S. Oudovenko, O. Parcollet, and C. A. Marianetti, “Electronic structure calculations with dynamical mean-field theory,” Rev. Mod. Phys. 78, 865 (2006).  
+
+> 61
+
+K. Haule, C. H. Yee, and K. Kim, “Dynamical mean-field theory within the full-potential methods: Electronic structure of CeIrIn 5, CeCoIn 5, and CeRhIn 5,” Phys. Rev. 18 
+
+B 81, 195107 (2010).  
+
+> 62
+
+P. Blaha, K. Schwarz, G. Madsen, D. Kvasnicka, and J. Luitz, WIEN2k, an augmented plane wave + local or-bitals program for calculating crystal properties (Karlheinz Schwarz, Technische Universität Wien, Vienna, 2001).  
+
+> 63
+
+John P. Perdew, K. Burke, and M. Ernzerhof, “Gener-alized gradient approximation made simple,” Phys. Rev. Lett. 77, 3865 (1996).  
+
+> 64
+
+E. Gull, Andrew J. Millis, Alexander I. Lichtenstein, Alexey N. Rubtsov, M. Troyer, and P. Werner, “Continuous-time monte carlo methods for quantum im-purity models,” Rev. Mod. Phys. 83, 349–404 (2011).  
+
+> 65
+
+P. Werner, A. Comanac, L. de’Medici, M. Troyer, and An-drew J. Millis, “Continuous-time solver for quantum impu-rity models,” Phys. Rev. Lett. 97, 076405 (2006).  
+
+> 66
+
+K. Haule, “Quantum monte carlo impurity solver for clus-ter dynamical mean-field theory and electronic structure calculations with adjustable cluster base,” Phys. Rev. B 75, 155113 (2007).  
+
+> 67
+
+V. I. Anisimov, F. Aryasetiawan, and A. I. Lichtenstein, “First-principles calculations of the electronic structure and spectra of strongly correlated systems: the LDA + 
+
+U method,” J. Phys.: Condens. Matter 9, 767 (1997).  
+
+> 68
+
+T. Gouder, G. van der Laan, A. B. Shick, R. G. Haire, and R. Caciuffo, “Electronic structure of elemental curium studied by photoemission,” Phys. Rev. B 83, 125111 (2011).  
+
+> 69
+
+J. M. Lawrence, P. S. Riseborough, and R. D. Parks, “Valence fluctuation phenomena,” Rep. Prog. Phys. 44, 1 (1981).  
+
+> 70
+
+W. H. Brito and G. Kotliar, “Site and orbital selective correlations in β-Pu,” Phys. Rev. B 99, 125113 (2019).  
+
+> 71
+
+H.-Y. Lu and L. Huang, “Quasiparticle multiplets and 5 f
+
+electronic correlation in prototypical plutonium borides,” J. Phys.: Condens. Matter 34, 215601 (2022).  
+
+> 72
+
+B. T. Thole and G. van der Laan, “Linear relation be-tween x-ray absorption branching ratio and valence-band spin-orbit expectation value,” Phys. Rev. A 38, 1943–1947 (1988).  
+
+> 73
+
+B. T. Thole and G. van der Laan, “Branching ratio in x-ray absorption spectroscopy,” Phys. Rev. B 38, 3158–3171 (1988).  
+
+> 74
+
+B. Kanellakopulos, A. Blaise, J. M. Fournier, and W. Müller, “The magnetic susceptibility of Americium and curium metal,” Solid State Commun. 17, 713–715 (1975).

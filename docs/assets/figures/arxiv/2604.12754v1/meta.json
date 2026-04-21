@@ -1,0 +1,54 @@
+{
+  "version": 2,
+  "extractor": "pdffigures2",
+  "figures": [
+    {
+      "url": "assets/figures/arxiv/2604.12754v1/fig-001.webp",
+      "caption": "Figure 8. Comparison of the critical exponents ν (panel (a)) and β (panel (b)), including uncertainties from the scaling analysis, for the Haldane-to-U(1)-CSB and large-D-to-U(1)CSB transitions as a function of the decay exponent σ = α−d, where d = 1. The exponents associated with the large-D-toU(1)-CSB transition display smoothly varying exponents with a sharp increase at σ ≈ 2, whereas those of the Haldane-toU(1)-CSB transition increase smoothly around σ ≈ 2.",
+      "page": 11,
+      "index": 1,
+      "width": 489,
+      "height": 258
+    },
+    {
+      "url": "assets/figures/arxiv/2604.12754v1/fig-002.webp",
+      "caption": "Figure 11. Representative data collapses probing the Ising, SU(2), and U(1) continuous symmetry breaking (CSB) transitions at values α = 5, D ∈ {0, 0.4, 1.25}, and α = 1.75. Top row: Staggered magnetization curves of ⟨M2 z ⟩ for the Ising transition and ⟨M2 ⊥⟩ for the CSB transitions between Lmin = 100 and Lmax = 340 versus the tuning parameters D, α, and λ = 1/D. Bottom row: The data collapses associated to the magnetization curves in the top row yielding the critical point (Dc, αc, or λc) and the corresponding critical exponents β and ν of the second-order quantum phase transitions.",
+      "page": 15,
+      "index": 2,
+      "width": 1047,
+      "height": 446
+    },
+    {
+      "url": "assets/figures/arxiv/2604.12754v1/fig-003.webp",
+      "caption": "Figure 7. Critical exponents ν and β and their errors obtained from the scaling procedure in the different critical regimes as a function of the anisotropy parameter D. The D-axis is linear for D ≤ 1, while for D > 1 it is uniformly spaced in 1/D. The results are obtained from three different finite-size scaling procedures using MPS: standard data collapse in D and λ, biased collapse using the critical point λpCUT",
+      "page": 10,
+      "index": 3,
+      "width": 494,
+      "height": 619
+    },
+    {
+      "url": "assets/figures/arxiv/2604.12754v1/fig-004.webp",
+      "caption": "Figure 10. Constant term c of the entanglement entropy as a function of the decay exponent α for D = −0.5, 0, 0.5, and 1.25 in panels (a), (b), (c), and (d), respectively. Data points include errorbars from the extrapolation procedure. The ground state in the mz = 0 sector is used to compute the entanglement entropy, except in the Haldane phase, where the mz = 1 ground state is taken to avoid the residual ln 2 contribution from edge-state entanglement. Fitting the entanglement entropy to SVN = b ln L + c yields the constant c, which displays a non-trivial behavior close to the critical points αc. Gray dashed lines indicate critical points in the thermodynamic limit determined by the data-collapse and extrapolation procedure in Appendix B.",
+      "page": 14,
+      "index": 4,
+      "width": 482,
+      "height": 739
+    },
+    {
+      "url": "assets/figures/arxiv/2604.12754v1/fig-005.webp",
+      "caption": "Figure 9. Scaling behavior of the entanglement entropy SVN for D ∈ {−0.5, 0, 0.5, 1.25} at various decay exponents α. Left column: Entanglement entropy as a function of system size L, fitted to SVN = b ln(L) + c (dashed lines). Right column: Logarithmic coefficients b plotted versus 1/Lmin, where Lmin is the lower bound of a ‘sliding’ fitting window. Each window contains N = 10 data points to which the logarithmic fit is applied, and the window is shifted sequentially to larger system sizes. Dashed lines show linear fits of b(1/Lmin) used to extrapolate the thermodynamic value b(1/Lmin = 0).",
+      "page": 13,
+      "index": 5,
+      "width": 495,
+      "height": 734
+    },
+    {
+      "url": "assets/figures/arxiv/2604.12754v1/fig-006.webp",
+      "caption": "Figure 12. Scaling of the critical points Dc, αc, and λc = 1/Dc (first row), the critical exponents ν (second row), and β (third row) obtained from data collapses at α = 5, D ∈ {0, 0.4, 1.25}, and α = 1.75, plotted versus the inverse system size 1/Lmin. The minimal system size Lmin corresponds to the lower bound of a sliding window used for the collapses, with each window containing eight system sizes and shifted sequentially to larger system sizes. Finite-size behavior is shown for data window sizes between 40–60 data points. A quadratic function f(1/Lmin) = κ + u (1/Lmin) + v (1/Lmin)2 is fitted to the last five data points (gray dashed lines) to estimate the bulk value f(1/Lmin = 0) = κ. The black data points at 1/Lmin = 0 represent the weighted average of the critical quantity in the thermodynamic limit including statistical and systematic uncertainties.",
+      "page": 16,
+      "index": 6,
+      "width": 1047,
+      "height": 582
+    }
+  ]
+}

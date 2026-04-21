@@ -1,0 +1,1088 @@
+Title: Unconventional entanglement scaling and quantum criticality in the long-range spin-one Heisenberg chain with single-ion anisotropy
+
+URL Source: https://arxiv.org/pdf/2604.12754v1
+
+Published Time: Wed, 15 Apr 2026 01:33:21 GMT
+
+Number of Pages: 20
+
+Markdown Content:
+# Unconventional entanglement scaling and quantum criticality in the long-range spin-one Heisenberg chain with single-ion anisotropy 
+
+Patrick Adelhardt, 1, 2, 3 Sean R. Muleady, 2, 3 Kai P. Schmidt, 1 and Alexey V. Gorshkov 2, 3 
+
+> 1
+
+Friedrich-Alexander-Universit¨ at Erlangen-N¨ urnberg (FAU), Department Physik, Staudtstraße 7, D-91058 Erlangen, Germany 
+
+> 2
+
+Joint Center for Quantum Information and Computer Science, National Institute of Standards and Technology and University of Maryland, College Park, Maryland 20742, USA 
+
+> 3
+
+Joint Quantum Institute, National Institute of Standards and Technology and University of Maryland, College Park, Maryland 20742, USA 
+
+(Dated: April 15, 2026) Long-range interactions can fundamentally reshape the low-energy properties of low-dimensional quantum matter, altering both continuous symmetry breaking and topological phenomena. However, their impact on the quantum criticality separating these regimes remains poorly understood. We de-termine the ground-state phase diagram and critical properties of the spin-one Heisenberg chain with single-ion anisotropy and staggered antiferromagnetic power-law interactions, using matrix-product state (MPS) calculations complemented by high-order series expansions (pCUT+MC). Such long-range, non-frustrated interactions circumvent the Hohenberg-Mermin-Wagner theorem, thereby sta-bilizing continuous symmetry breaking (CSB) phases in direct competition with the Haldane phase. We map out the resulting phase diagram and analyze the entanglement entropy scaling behavior in the U(1) and SU(2) CSB phases, finding logarithmic corrections beyond the short-range, universal contributions expected from linearly dispersed Goldstone modes. We further characterize all critical boundaries through finite-size scaling of either the entanglement entropy or the staggered magne-tization. In particular, the large-D-to-U(1)-CSB transition exhibits unconventional, continuously varying critical exponents as a function of the long-range decay exponent with a strong dependence on the imposed boundary conditions leading to distinct finite-size scalings for sufficiently long-range potentials. Remarkably, the Haldane-to-U(1)-CSB transition likewise displays unconventional quan-tum criticality with distinct continuously varying critical exponents. Our work positions this model as a target for near-term atomic platforms with tunable long-range couplings and exhibiting natural single-ion anisotropy, offering a minimal playground for exploring the interplay between long-range interactions, continuous symmetry breaking, and topology. 
+
+I. INTRODUCTION 
+
+The spin-one Heisenberg chain is a paradigmatic model for the interplay between topology, symmetry, and quan-tum fluctuations. With nearest-neighbor antiferromag-netic couplings, it hosts not only trivial and antiferro-magnetically ordered phases, but also the celebrated Hal-dane phase: a symmetry-protected phase predicted by the Haldane conjecture [1–6]. In particular, this phase is a manifestation of the fact that integer-spin systems host a gapped spectrum and localized, stable edge ex-citations, in stark contrast to their gapless, half-integer spin counterparts well-described by spin-wave theory [7]. A broad issue concerns how this structure is altered by the addition of long-range couplings, which can evade the constraints of the Hohenberg-Mermin-Wagner theorem [8, 9], thereby allowing spontaneous breaking of continu-ous symmetries in low dimensions. This raises a central question regarding the fate of the Haldane phase in the presence of long-range interactions, and its competition with continuous symmetry breaking [10, 11]. Such issues are also timely from the standpoint of quantum simulation. In recent years, significant progress in the realization and control of atomic and molecu-lar platforms for quantum science—including trapped ions [12, 13], Rydberg atom arrays [14, 15], dipolar mag-nets [16], and polar molecules [17]—has provided increas-ing access to the physics of long-range interacting sys-tems [18]. For instance, these systems have led to the recent observation of entanglement generation [19–21], non-local transport properties [22–24], and continuous-symmetry breaking [25, 26]. While such systems nat-urally host interactions that monotonically decay alge-braically with distance between particles, recent experi-ments in trapped ion and cavity-based neutral atom plat-forms have also demonstrated the ability to engineer not only tunable interaction ranges, but also non-trivial sign structures [27, 28]. Of particular relevance here, several proposals and experiments have focused on realizing spin-one Heisenberg-type models with tunable interactions in dipolar species [29, 30], trapped ions [31–33], and Ry-dberg platforms [34, 35], typically with the addition of single-ion anisotropy terms arising naturally as quadratic Zeeman terms. While some numerical studies have explored long-range Heisenberg and XXZ interactions in S = 1 systems [10, 11, 36, 37], including cases with ferromagnetic [11, 37] or frustrated antiferromagnetic couplings [10, 11] and single-ion anisotropy [36], the interplay with staggered (unfrustrated) antiferromagnetic long-range interactions remains largely unexplored. In contrast to frustrated long-range interactions, which tend to suppress conven-tional magnetic ordering [10, 11, 36], unfrustrated long-range couplings allow one to circumvent the consequences of the Hohenberg-Mermin-Wagner theorem [8, 9, 38, 39] 
+
+> arXiv:2604.12754v1 [cond-mat.str-el] 14 Apr 2026
+
+2in one-dimensional systems and ensure stable ordered phases with breaking of both continuous SU(2) and U(1) symmetries, thereby enabling a direct investigation of their interplay with the Haldane phase. Here, we characterize the ground state and critical properties of the spin-one Heisenberg model, with stag-gered, long-range interactions and single-ion anisotropy. Employing large-scale matrix product state [40, 41] calculations using the density matrix renormalization group [42, 43], as well as high-order series expansions (pCUT+MC) [44, 45], we map out the relevant ground-state phase diagram in terms of both the correlation func-tions and the scaling of the entanglement entropy with system size. Our results reveal several unconventional features. Most notably, the transition between the dis-ordered “large-D” and U(1) symmetry-broken phases ex-hibits continuously varying critical exponents as a func-tion of the interaction decay exponent and boundary-dependent finite-size scalings for sufficiently strong long-range potentials. The transition from the Haldane to the U(1) symmetry-broken phase demonstrates a distinct, continuously varying dependence on the model param-eters. In all, our work establishes this model as a rich playground for exploring the complex interplay of long-range interactions, topology, and continuous symmetry breaking. These results provide a direct route for ex-periments harnessing controllable spin-spin interactions in higher spin systems to explore unconventional critical behavior in near-term quantum simulators. The remainder of this paper is organized as follows. In Sec. II, we introduce the model Hamiltonian and briefly outline the methodological aspects of this work. In Sec. III, we present and discuss the ground-state phase diagram, followed in Sec. IV by a detailed discussion of all second-order quantum phase transitions. Finally, Sec. V summarizes our results and presents our conclusions.  
+
+> II. MODEL AND METHODS
+
+We study the following one-dimensional spin-one Heisenberg Hamiltonian with single-ion anisotropy and staggered (non-frustrated) antiferromagnetic long-range interactions: 
+
+H = D ∑
+
+> i
+
+(Szi )2 + 12
+
+∑
+
+> i̸=j
+
+J(j − i)Si · Sj . (1) Here, Si = ( Sxi , S yi , S zi )T where Sσi are spin-one opera-tors at a site i with σ ∈ { x, y, z }. The strength of the single-ion anisotropy is given by D, and the long-range interaction strength is denoted as J(j − i), which de-pends on the distance between the interacting sites i and 
+
+j. We denote the eigenstates of the spin-one operator Szi
+
+as |κi⟩ with the eigenvalue κi ∈ { 0, ±1}. The model with nearest-neighbor interactions ( J(j − i) ∝ δj,i +1 ) and its generalization to XXZ interactions has been thoroughly investigated in recent decades [46–56]. Here, we consider the case of staggered (non-frustrated) antiferromagnetic interactions 
+
+J(j − i) ≡ (−1) j−i+1 
+
+|j − i|α , (2) where the long-range decay exponent α controls the power-law falloff with distance. In the limit α = ∞,the system exhibits antiferromagnetic nearest-neighbor interactions. For α ≤ 1, the system becomes superex-tensive, approaching a uniform staggered all-to-all cou-pling in the limiting case α = 0. In contrast to uni-formly decaying long-range interactions, the unfrustrated nature of the couplings (2) circumvents the Hohenberg-Mermin-Wagner theorem [8, 9, 38, 39], allowing spon-taneous breaking of continuous symmetries. This en-ables the realization of an SU(2) continuous symmetry-breaking (CSB) phase at D = 0 and a U(1) CSB phase for D > 0. We note that such interactions have been previously considered in the absence of the single-ion anisotropy term [10]; a related study has also consid-ered uniformly decaying power-law interactions with a generalized staggered single-ion anisotropy [36]. For D = + ∞, the ground state of the nearest-neighbor model is given by the product state ∏ 
+
+> i
+
+|0i⟩ as |0⟩ is the lowest lying state of a single D(Sz )2 term. In the thermo-dynamic limit, the phase at large D is still adiabatically connected to this product state and is referred to as the “large-D” phase. In the opposite limit D → −∞ , the system exhibits a staggered antiferromagnetic order in the z-direction (Z 2 AF), since a negative D flips the en-ergy spectrum of the single-ion anisotropy, so that |± 1⟩
+
+become the lowest lying states. For D = 0, we are left with the spin-one Heisenberg chain exhibiting a gapped ground state, the so-called Haldane phase [57, 58]. In this work, we use matrix product states [40, 41] to calculate the entanglement entropy SVN , the staggered longitudinal magnetization Mz and transverse magneti-zation M⊥ as well as various spin-spin correlations for finite system sizes up to L = 340. Finite-size scaling [59– 64] allows us to determine the ground-state phase dia-gram and the properties of the critical lines. To efficiently represent the algebraically decaying long-range interac-tions f (r) ≡ r−α in the MPS formalism, we approximate the power law with a sum of N exponential functions by ˜f (r) ≡ ∑Nl=1 al br−1 
+
+> l
+
+[65, 66], minimizing the cost func-tion 
+
+ϑ({al}, {bl}) = 
+
+> L
+
+∑
+
+> r=1
+
+(f (r) − ˜f (r))2 (3) and keeping the error below ε ≤ 10 −9 with up to N = 49 exponential terms for the largest system size L = 340. To find the ground state of the system, we employ the density matrix renormalization group (DMRG) al-gorithm [42, 43]. We use a maximal bond dimension between χmax = 500 and χmax = 2000. Throughout, we restrict ourselves to the mz = 0 symmetry sector when 3−0.5 0.0 0.5 1.0
+
+D         
+
+> 0.00.20.40.60.81.0
+> 1/α
+> 5/45/35/25∞
+> MPS – SvN sym. sectors in D
+> MPS – data collapse in Dor λ
+> MPS – data collapse in α
+> pCUT+MC – series expansion
+
+D              
+
+> Haldane SPT Z2AF large D U(1) CSB SU(2) CSB
+> Figure 1. Quantum phase diagram as a function of the single-ion anisotropy Dand long-range decay exponent α. The D-axis is linear for D≤1, while for D > 1 it is uniformly spaced in 1 /D . Five phases appear: the z-antiferromagnetic (Z 2AF) phase, the Haldane symmetry protected topological (Haldane SPT) phase, the large-D phase, and the U(1) and SU(2) continuous-symmetry-breaking (CSB) phases. Diago-nal crosses mark the points where correlations are evaluated in Fig. 2. Transition lines are obtained from the indicated meth-ods and are distinguished by color and marker style. The gray line at D= 0 is a high-symmetry line with SU(2) CSB.
+
+not stated otherwise, where mz is the eigenvalue of the total spin operator Sz 
+
+> tot
+
+= ∑ 
+
+> i
+
+Szi .We complement the MPS approach with high-order series expansions, expanding from the non-interacting limit D = ∞ in powers of the perturbation parameter 
+
+λ = 1 /D . To handle long-range interactions, we use the pCUT+MC approach based on a linked-cluster expan-sion via a full graph decomposition [45]. This approach combines the method of perturbative continuous unitary transformations (pCUT) [67, 68] for the calculation of perturbative contributions on so-called white graphs [69] with a Monte Carlo (MC) summation algorithm to embed the white-graph contributions in the long-range chain to determine the physical quantities of interest in the ther-modynamic limit [44, 45, 70–74]. We calculate the ele-mentary excitation gap and the corresponding spectral weight to orders 10 and 9 in the perturbation parameter 
+
+λ, respectively. For technical details, we refer the reader to Ref. [45].  
+
+> III. QUANTUM PHASE DIAGRAM
+
+In this section, we investigate the ground-state phase diagram, as a function of the single-ion anisotropy D
+
+and the long-range decay exponent α, as depicted in Fig. 1. As we described above, the Hamiltonian (1) realizes an antiferromagnetic phase (‘Z 2 AF’) for suffi-ciently negative values of D, a Haldane phase (‘Haldane SPT’) for small D around the origin, and a trivial disor-dered phase (‘large D’) for large D values. The Haldane phase falls into the category of one-dimensional topologi-cal phases referred to as symmetry-protected topological phases (SPTs) [75–80]. As we make the interactions stronger by decreasing the value of the decay exponent α, we induce antiferro-magnetic ordering by the non-frustrated nature of the staggered long-range interactions, leading to continu-ous symmetry breaking (CSB). For D = 0, the Hamil-tonian in the thermodynamic limit is invariant under global SU(2) spin rotations, i. e. , [ H, Stot ] = 0, where 
+
+Stot = ∑ 
+
+> i
+
+Si. Thus, the ordered ground state spon-taneously breaks the full SU(2) symmetry. For a finite anisotropy ( D̸ = 0), the anisotropy explicitly reduces the symmetry to global U(1) rotations about the z-axis, gen-erated by Sz 
+
+> tot
+
+= ∑ 
+
+> i
+
+Szi , i. e. , [ H, S z
+
+> tot
+
+] = 0 still holds, but [ H, S x/y  
+
+> tot
+
+]̸ = 0. In this case, sufficiently strong long-range interactions lead to spontaneous breaking of this remaining U(1) symmetry.  
+
+> A. Spin-spin correlations
+
+To unambiguously characterize the aforementioned quantum phases, we probe the spin-spin correlations 
+
+⟨Sσ 
+
+> 1
+
+Sσj ⟩ of the spin components σ between the first site and an arbitrary site j, as well as the non-local string order correlator 
+
+Oz 
+
+> 1,j
+
+= −Sz
+
+> 1
+
+(j−1∏
+
+> i=2
+
+e−iπS zi
+
+)
+
+Szj , (4) which we can use to locate the Haldane phase [81]. Note that ⟨Sx 
+
+> 1
+
+Sxj ⟩ = ⟨Sy 
+
+> 1
+
+Syj ⟩ always holds due to the U(1) sym-metry of the Hamiltonian. In Fig. 2, we show the spin-spin correlations and the string order correlator within each phase. We observe the expected exponentially de-caying spin-spin correlations in the disordered large-D and Haldane phases. The two phases can be unambigu-ously distinguished by the string order correlator which vanishes exponentially in the trivial large-D phase but remains finite in the Haldane phase. The Z 2 AF phase is characterized by finite staggered correlations in the z component with values close to ≈ ± 1, exponentially van-ishing correlations in the transverse direction, and a triv-ially finite string-order correlator. The CSB phases ex-hibit staggered correlations distributed over two (three) components with values ≈ ± 0.43 ( ≈ ± 0.28) for U(1) (SU(2)) CSB. These values are close to the classical N´ eel limits 1 /2 (1 /3) for S = 1, indicating a nearly saturated ordered moment. The proximity to the classical values reflects the suppression of long-wavelength quantum fluc-tuations by the unfrustrated long-range interactions, sta-bilizing the ordered state. 4−1.0   
+
+> −0.50.00.51.0
+> large D ( D= 1 .4, α = 10 .0) ·
+
+(a)      
+
+> −1.0
+> −0.50.00.51.0
+> Z2AF ( D=−0.3, α = 1 .5) ·
+
+(b)    
+
+> −1.0
+> −0.50.00.51.0
+> SU(2) CSB ( D= 0 .0, α = 1 .5) ·
+
+(c)    
+
+> −1.0
+> −0.50.00.51.0
+> U(1) CSB ( D= 1 .0, α = 1 .5) ·
+
+(d)      
+
+> 020 40 60 80 100
+
+site j   
+
+> −1.0
+> −0.50.00.51.0
+> Haldane ( D= 0 .0, α = 10 .0) ·
+
+(e)                            
+
+> Oz
+> 1,j 〈Sx
+> 1Sxj〉〈Sz
+> 1Szj〉
+> Figure 2. Spin-spin correlations ⟨Sσ
+> 1Sσj⟩for the σ=x, z spin components, as well as the string-order correlator Oz
+> 1,j be-tween site 1 and an arbitrary site j. The trivial large-D phase (a) is characterized by exponentially decaying correlations for all quantities. The Z 2AF phase (b) exhibits finite staggered spin correlations in the zcomponent, the U(1) CSB phase (c) in the x(and y) component, and the SU(2) CSB phase (d) in all three components. The Haldane phase (e) shows expo-nentially decaying spin correlations but a finite string-order correlator. Results are shown for a chain with L= 100 for all five quantum phases of the model. Diagonal crosses in the labels indicate cross-references to the phase diagram in Fig. 1, marking the parameter points at which the correlations were evaluated.
+> B. Entanglement scaling
+
+We study the scaling behavior of the von Neumann en-tanglement entropy SVN in the various quantum phases as a function of the decay exponent α. In most settings, the entanglement entropy obeys a leading area-law scal-ing with linear system size L,
+
+SVN ∼ a L d−1 + b ln L + c, (5) where d is the spatial dimension, a the coefficient of the dominant area-law contribution, b the prefactor of the logarithmic correction, and c a constant offset [82]. Note, for one-dimensional systems ( d = 1), the leading area-law contribution is constant and is therefore absorbed into the offset c. The origin of these contributions often depend directly on the nature of the phase. Of particu-lar relevance for the model here are the following cases. In gapped ordered phases resulting from discrete sym-metry breaking, the entanglement entropy obeys an area law with a constant correction given by the ground-state degeneracy [82]. In gapless phases associated with con-tinuous symmetry breaking, b = NG/2 is directly linked to the number of Goldstone modes NG [82]. Finally, in one-dimensional critical phases described by conformal field theory, the logarithmic term is governed by an ef-fective central charge ceff [82, 83]. We calculate the entanglement entropy for 
+
+D ∈ {− 0.5, 0, 0.5, 1.25 } for various values of α and use a systematic fitting and extrapolation procedure to determine b and c as described in Appendix A. We show the results for b as a function of the decay exponent α in Fig. 3. A supplementary discussion of the constant term 
+
+c can be found in Appendix A. As expected, for the Z2 AF phase (D = −0.5, Fig. 3 (a)), we observe a constant behavior of the entan-glement entropy such that b ≈ 0 for all α values due to the gapped nature of the phase. Interestingly, for α ≲ 2, the coefficient b becomes negative. We attribute this to finite-size effects: within the accessible system sizes, the entanglement entropy slightly decreases with increasing 
+
+L, leading to a small negative slope in the logarithmic fit, while the entropy is expected to approach a positive value in the thermodynamic limit (c. f. Fig. 9 in Appendix A). The behavior in the gapped Haldane phase is more sub-tle, owing to its nature as a topologically protected phase. This phase is characterized by the existence of effective spin-1/2 degrees of freedom at the edges of the chain. These edge spins are governed by the effective Hamil-tonian Hedge = Jedge S1 · SN , for spin-1/2 operators Si
+
+and effective coupling Jedge > 0 that decays exponen-tially with the system size [84]. In the ground state with 
+
+mz = 0, the edge spins form a singlet state |s⟩ with non-vanishing correlations that span the extent of the chain. This produces a constant ln(2) contribution to the entan-glement entropy arising from edge-state entanglement. In practice, this contribution persists in our simulations as long as the effective edge-spin coupling Jedge exceeds the numerical tolerance. For finite long-range interac-tions ( α < ∞), the edge spins couple directly, resulting in a power-law decay of Jedge rather than the exponential decay observed in the nearest-neighbor model, thereby stabilizing the edge-spin entanglement. This issue can be overcome by working in the mz = 1 sector, where the ground state of the edge spins is the spin-polarized triplet state. This state is a product state with no inter-spin correlations, allowing us to cleanly observe the bulk behavior of the entanglement entropy at small system 51 2 3 4 5 6
+
+α  
+
+> 0.00.2
+> b
+> D=−0.5
+
+(a)         
+
+> Z2AF
+> mz= 0
+> mz= 1 123456
+
+α 
+
+> 0.00.51.0
+> b
+> D= 0 .0
+
+(b)   
+
+> D= 0 .0SU(2) CSB Haldane SPT
+
+αc     
+
+> 123456
+
+α 
+
+> 0.00.20.4
+> b
+> D= 0 .5
+
+(c)   
+
+> D= 0 .5U(1) CSB Haldane SPT
+
+αc     
+
+> 123456
+
+α 
+
+> 0.00.20.4
+> b
+> D= 1 .25
+
+(d)  
+
+> U(1) CSB large D
+
+αc                                   
+
+> Figure 3. Logarithmic coefficient bof the entangle-ment entropy as a function of the decay exponent αfor
+> D=−0.5, 0, 0 .5, and 1 .25 in panels (a), (b), (c), and (d), respectively. Data points include errorbars from the extrap-olation procedure. The ground state in the mz= 0 sector is used to compute the entanglement entropy, except in the Haldane phase, where the mz= 1 ground state is taken to avoid the residual ln 2 contribution from edge-state entangle-ment. Fitting the entanglement entropy to SVN =bln L+c
+> yields the logarithmic coefficient b, which displays a smoothly varying, unconventional scaling within the CSB phases (pan-els (b), (c), and (d)), while remaining constant in all other phases. For α→1, the coefficients approach b=NG/2, determined by the number of Goldstone modes NG, where
+> NG= 1 for U(1) CSB in (c) and (d) and NG= 2 for SU(2) CSB in (b). Gray dashed lines indicate critical points in the thermodynamic limit determined by the data-collapse and ex-trapolation procedure in Appendix B.
+
+sizes. In panels (b) and (c) of Fig. 3 we plot the entanglement entropy using the ground state in the mz = 1 sector for the Haldane phase, and the ground state in the mz = 0 sector for small α values in the U(1) and SU(2) CSB phases. For large enough D ≳ 1 (see Fig. 3 (d)), we return to calculating the ground state in the mz = 0 sector for all α values as the large-D phase emerges. When comparing the behavior of D ∈ { 0, 0.5, 1.25 }, we find that the logarithmic coefficient is zero in the Haldane and large-D phases for α ≳ αc and increases smoothly in the CSB phases for α ≲ αc, where αc is the critical value of the decay exponent α. The distinct scaling be-havior of the entanglement entropy in the CSB phases was found relatively recently in the long-range spin-1/2 Heisenberg chain [85, 86]. This α-dependent behavior of the logarithmic correction goes beyond the scenario of CSB in nearest-neighbor antiferromagnetic models where Goldstone modes exhibit a linear dispersion, and reflects the modification of the low-energy behavior by the long-range interactions, which leads to a sublinear dispersion that continuously varies with α [74, 87, 88]. We also observe that the scaling behavior in the SU(2) CSB phase differs from that in the U(1) CSB phase. We can understand this difference as the result of the number of Goldstone modes NG in the limiting case 
+
+α → 1, where we expect a logarithmic contribution with b = NG/2 [82, 85, 86, 89, 90]. At α = 0, where the system exhibits all-to-all staggered interac-tions, the system is well-described by a collective spin-
+
+S model, with S = N/ 2, where CSB is the result of a canonical tower of states structure [85]. For SU(2) symmetry breaking it was shown for the Lieb-Mattis model [91] that b(α = 0) = 1 [89], and for U(1) symme-try breaking the Lipkin–Meshkov–Glick model [92, 93] yields b(α = 0) = 1 /2 [89]. These results are expected to remain valid throughout the super-extensive regime 0 ≤ α ≤ 1 [86]. We find b(α = 1) ≈ 0.92 for SU(2) CSB and b(α = 1) ≈ 0.47 for U(1) CSB, consistent with the fact that NG = 2 for SU(2) CSB and NG = 1 for U(1) CSB. We attribute the slight underestimation of these values to errors arising from the restricted bond dimension at small α, where the formation of long-range correlations drastically increases the computational cost of MPS. Finally, we determine the coefficient b at the critical point in Fig. 3 (b), (c), and (d). Analogously to Ref. [86], we expect an abrupt change of b from zero to a finite value at the quantum phase transition. Here, we ob-serve a smooth crossover with a plateau close to the ex-pected transition. We attribute this smooth behavior of b across the transition to finite-size effects which can mask sharp features expected at the phase transition in the thermodynamic limit. At the critical decay expo-nent αc—determined via data collapses and the rigor-ous extrapolation procedure described in Appendix B— we determine the effective critical logarithmic coefficients 
+
+bc = b(αc) ≈ 0.24 , 0.16 , 0.18 for D = 0 , 0.5, 1.25, respec-tively. These values show a noticeable variation with the anisotropy D. Note that the critical value bc = 0 .275(9) found in the long-range spin-1/2 Heisenberg chain with SU(2) CSB [86] also differs from the value found in our model at D = 0. At D = 0 .5, we observe pronounced fea-tures in both symmetry sectors— mz = 0 and mz = 1— next to the critical point αc, at slightly larger values 6of the decay exponent. Such features can arise from stronger scaling corrections in the critical region. More-over, the shift is consistent with the notion of a finite-size pseudo-critical point, where extrema of observables are shifted relative to the thermodynamic transition [60]. 
+
+IV. QUANTUM PHASE TRANSITIONS 
+
+In this section, we investigate the quantum phase tran-sition lines obtained in Fig. 1 by analyzing their finite-size behavior. We focus on the transitions identified as second order, while the high-symmetry line at D = 0 be-tween Z 2 AF and U(1) CSB phases is first order and not considered further. We begin with the Gaussian transi-tion between the Haldane and large-D phases, where the topological character of the transition requires an entan-glement entropy scaling analysis in different symmetry sectors. We then examine the Ising transition between the Haldane and the Z 2 AF phase, using data collapses of the magnetization curves for various system sizes to establish the critical behavior and to benchmark our ap-proach. Finally, we analyze the various CSB transitions, again employing data collapses and comparing the result-ing behavior across distinct parameter regimes. 
+
+A. Gaussian transition 
+
+We start by analyzing the Gaussian transition between the Haldane and large-D phases. As neither the Haldane phase nor the large-D phase breaks any global symmetry of the Hamiltonian, the transition cannot be described within the Landau-Ginzburg-Wilson framework [94, 95]. Instead, this corresponds to a topological quantum phase transition. The low-energy field theory of the spin-one chain with single-ion anisotropy can be mapped, after in-tegrating out massive modes, to an effective Sine-Gordon model, 
+
+L = 12 (∂μϕ)2 + g cos( βϕ ), (6) where the first term describes a Gaussian free boson field [49, 96, 97]. In the renormalization group sense, the cosine interaction is relevant for β2 < 8π [97], in which case the coupling g flows to strong coupling, the field ϕ becomes pinned and a spectral gap opens. This occurs in both the Haldane and large-D phases. At the critical point Dc, the coupling becomes marginal, so the effective theory reduces to a gapless Gaussian model with central charge ceff = 1, which defines the Gaussian tran-sition [96, 97]. In Sec. III B, we discussed the drop in the entanglement entropy upon increasing the system size. A similar behavior can be observed in our calculations when increasing the anisotropy D (see also Ref. [84]). Therefore, we follow the ideas in Ref. [84] and calcu-late the entanglement entropy in both symmetry sectors 0.8 1.0 1.2
+
+D 
+
+> 1.01.21.41.61.82.0
+> SVN
+> α= 5 .0
+
+(a) mz = 0 , L = 60          
+
+> mz= 0 , L = 300
+> mz= 1 , L = 60
+> mz= 1 , L = 300
+> 0.000 0.005 0.010 0.015
+
+1/L   
+
+> 0.9785 0.9790 0.9795 0.9800 0.9805
+> Dc
+> α= 5 .0
+> Dc= 0 .980223 ±0.000005
+
+(b)      
+
+> 2×10 23×10 2
+
+log( L) 
+
+> 1.40 1.45 1.50 1.55 1.60 1.65
+> SVN
+> α= 5 .0
+
+(c) α = 3 .125      
+
+> α=∞
+> 0.00.10.20.3
+
+1/α 
+
+> 0.80.91.01.11.2
+> ceff
+
+(d) 
+
+Figure 4. Analysis of the Gaussian transition between the Haldane and large-D phases exploiting the crossing points of entanglement entropy SVN from different symmetry sec-tors with eigenvalues mz ∈ { 0, 1} of the total spin operator 
+
+Sz 
+
+> tot
+
+= ∑ 
+
+> i
+
+Szi . (a) Crossing points of the entanglement en-tropy SVN between the ground states in the mz = 0 and 
+
+mz = 1 sectors for various system sizes L from L = 60 to 
+
+L = 300 identify the maximum of the entanglement entropy and thus provide an estimate of the critical point. (b) The crossing points plotted versus the inverse system size 1 /L and fitted with Dc(L) = Dc + aL −b yield the critical point Dc in the thermodynamic limit (here, we find Dc = 0 .980223(5) for 
+
+α = 5). (c) At the critical point, the entanglement entropy scales as ( ceff /3) ln L, consistent with a conformal field theory description of the Gaussian transition. The effective central charge ceff is extracted from the slope of the logarithmic scal-ing. (d) The central charge ceff is unity as a function of the decay exponent α, with deviations appearing as the Gaussian transition approaches another critical line towards the U(1) CSB phase. 
+
+mz = 0 and mz = 1 around the quantum phase transi-tion. Within the symmetry sector mz = 1, we can cleanly access the bulk ground-state properties with unentangled edge spins of the Haldane phase at small system sizes for 
+
+D < D c, while the mz = 0 sector gives access to the bulk ground-state properties of the large-D phase for D > D c.As in Ref. [84], the crossing points of both entanglement entropies then determine the location of the maximum of the entanglement entropy at the quantum phase transi-tion, which allows us to determine the critical point very accurately, since the maximum is almost invariant with respect to the system size L as shown in Fig. 4. To ex-tract the critical point in the thermodynamic limit, we fit the crossing points to the function Dc(L) = Dc + aL −b,where a, b, and Dc are free fit parameters. We can now 7calculate the entanglement entropy exactly at the criti-cal point for various system sizes and determine the slope on the logarithmic scale that reveals the central charge 
+
+ceff (see Fig. 4 (c) and (d)). We find a central charge of unity, as expected from a free boson field theory, and that long-range interactions have no effect on the cen-tral charge. In the vicinity of the CSB transition, the central charge seems to increase. We attribute this to the presence of a junction where the Haldane line and the U(1) CSB transition meet (c. f. Fig. 1). We did not check whether long-range interactions alter the universal-ity or the order of the transition analogous to the XXZ anisotropy [53, 54, 84], and we leave this to future inves-tigations.  
+
+> B. Ising transition
+
+We investigate the critical properties of the second-order quantum phase transition between the Z2 AF and Haldane phases to benchmark our finite-size scal-ing approach. We compute the squared staggered z-magnetization 
+
+⟨M 2 
+
+> z
+
+⟩ = 1
+
+N 2
+
+> N
+
+∑
+
+> i,j
+
+(−1) i+j ⟨Szi Szj ⟩ (7) as a function of the anisotropy D. Near the critical point Dc, the magnetization obeys the finite-size scaling form [59–63] 
+
+⟨M 2 
+
+> z
+
+⟩D,L = L−2β/ν f (L1/ν (D − Dc)) , (8) which follows from the scaling hypothesis [64], where f
+
+is a fifth-order polynomial function and β and ν are the critical exponents of the order parameter and the corre-lation length, respectively. We can exploit the finite-size scaling form by performing a multidimensional fit in the anisotropy D and system size L that determines Dc, ν,and β. With proper rescaling of the data with the fit parameters following Eq. (8), all data points should col-lapse onto the same curve [60, 61, 64]. We then obtain the critical quantities in the thermodynamic limit by ex-trapolating their values from finite system sizes. More information on the data-collapse and extrapolation pro-cedure can be found in Appendix B. For nearest-neighbor interactions ( α = ∞), we find a critical value of Dc = −0.31405(5), which is in per-fect agreement with the literature values in Refs. [50– 52, 54, 55]. By increasing the strength of the long-range interactions, the Z 2 AF phase stabilizes and the criti-cal line bends towards smaller D values, terminating at 
+
+D = 0 where the criticality changes to SU(2) CSB as can be inferred from Fig. 1. As the quantum phase transition from the Haldane to the Z 2 AF phase breaks the Hamil-tonian’s Z2 symmetry, we expect a 2D Ising transition with ν = 1 and β = 1 /4. We show the results for the critical exponents ν and β from the data-collapse and 0.0 0.1 0.2 0.3 0.4
+
+1/α 
+
+> 0.60.81.01.21.4
+> ν
+
+(a)     
+
+> 0.00.10.20.30.4
+
+1/α 
+
+> 0.00 0.05 0.10 0.15 0.20 0.25 0.30
+> β
+
+(b)           
+
+> Figure 5. Critical exponents ν(panel (a)) and β(panel (b)) and the corresponding errors from the extrapolation proce-dure of the Ising transition between the Haldane and Z 2AF phase from data collapses of the staggered Mzmagnetization curves for various decay exponents α.Gray lines represent the expected critical values for a 2D Ising transition. The critical exponents are close to the expected values but start to deviate when the critical Ising line approaches the SU(2) CSB critical point.
+
+extrapolation procedure in Fig. 5. The exponents are in excellent agreement with the expectations, although we slightly overestimate (underestimate) the critical expo-nent ν (β). In addition, we see that the presence of the SU(2) CSB transition at D = 0 spoils the quality of the Ising exponents at smaller α values.  
+
+> C. Continuous symmetry breaking
+
+We now turn to the CSB transitions at D ≥ 0. For values of D ≲ 1, the critical line divides the Haldane phase from the SU(2) CSB phase at D = 0 and from the U(1) CSB phase for D̸ = 0. At larger values D ≳ 1, the transition occurs between the U(1) CSB and large-D phases. In the limit D → ∞ , the CSB phase eventually vanishes for α > 1 as the D-term becomes dominant (c. f. Fig. 1). Analogously to the Ising transition, we now calculate the staggered transverse magnetization 
+
+⟨M 2
+
+> ⊥
+
+⟩ = 1
+
+N 2
+
+> N
+
+∑
+
+> i,j
+
+(−1) i+j ⟨S+ 
+
+> i
+
+S− 
+
+> j
+
+⟩ (9) as a function of the parameters λ and α to probe the critical lines along two different directions. Performing a data collapse of the staggered-magnetization curves M⊥
+
+of different system sizes yields the critical parameters λc
+
+or αc, and exponents β and ν according to the finite-size scaling forms 
+
+⟨M 2
+
+> ⊥
+
+⟩λ,L = L−2β/ν f (L1/ν (λ − λc)) ,
+
+⟨M 2
+
+> ⊥
+
+⟩α,L = L−2β/ν f (L1/ν (α − αc)) . (10) We again refer the reader to Appendix B for more de-tails on the data-collapse and finite-size extrapolation procedure. Moreover, we complement the MPS data 8with high-order series expansions using the pCUT+MC approach [45] in the perturbation parameter λ = 1 /D 
+
+about the large-D limit. Using pCUT+MC, we determine the critical line from the closing of the elementary one-quasiparticle (1qp) excitation gap, ∆ = ω1qp (kc), where 
+
+kc = π is the critical gap momentum. This line agrees very well with the critical line obtained from the data collapse of the MPS data along both the λ and α axes, as shown in Fig. 1. We can determine the critical expo-nent zν associated with the closing of the elementary gap at the critical point λc:∆ ∼ | λ − λc|zν . (11) The divergence of the associated one-quasiparticle spec-tral weight, S1qp (kc), defines the critical exponent γ
+
+through the Fisher scaling relation γ = (2 − η)ν and the gap exponent zν :
+
+S1qp (kc) ∼ | λ − λc|−(2 −z−η)ν . (12) See Ref. [45] for more information on the pCUT+MC approach itself and the extraction of critical properties. In the following, we discuss the phase transition lines of the large-D-to-U(1)-CSB transition and then the Haldane-to-CSB transitions. 
+
+1. Large-D-to-U(1)-CSB transition 
+
+We first turn our attention to the large-D-to-U(1)-CSB transition at D ≳ 1, which spans a wide range of different long-range couplings, characterized by the decay expo-nent α. In many long-range spin models, the long-range coupling is a relevant parameter in the renormalization-group sense and can significantly alter the critical behav-ior of these systems. For instance, in the ferromagnetic transverse-field Ising model and various models with un-frustrated Heisenberg interactions [45], the decay expo-nent is often parameterized in terms of σ = α − d for spatial dimension d. This parameter σ quantifies the de-viation from marginality at σ⋆ and determines the scaling properties of the long-range interaction under renormal-ization, thereby controlling its relevance and the resulting critical behavior [98–100]. For σ ≥ σ⋆, long-range inter-actions are irrelevant and the quantum phase transition belongs to the same universality class as the correspond-ing nearest-neighbor model. Below an upper critical ex-ponent σ ≤ σuc , the transition exhibits Gaussian (long-range mean-field) behavior. Between these two regimes, 
+
+σuc < σ < σ ⋆, the system displays unconventional long-range criticality with continuously varying critical expo-nents [98–100]. For our model in d = 1, σ⋆ plays the role of a lower critical exponent, marking the boundary above which a nearest-neighbor critical regime cannot oc-cur. This is a consequence of the Hohenberg-Mermin-Wagner theorem, which rules out such a regime for one-dimensional systems with continuous symmetries [38, 98– 100]. 0.0 0.5 1.0 1.5 2.0
+
+σ  
+
+> 0.00.51.01.52.0
+> zν  σ≤σuc
+
+(a)     
+
+> 0.00.51.01.52.0
+
+σ  
+
+> 0.51.01.52.02.53.03.5
+> γ σ≤σuc
+
+(b)     
+
+> 0.00.51.01.52.0
+
+σ  
+
+> 0.51.01.52.02.53.0
+> ν
+> σ≤σuc
+
+(c)     
+
+> 0.00.51.01.52.0
+
+σ
+
+> 0.00 0.25 0.50
+> Θ
+> PBC OBC
+
+(d)    
+
+> pCUT+MC – series expansion MPS – data collapse in λ
+> MPS – biased data collapse MPS – data collapse in α
+> ED – biased data collapse in λ
+
+Figure 6. Critical exponents zν (a), γ (b), ν (c), and Θ (d) and their errors obtained from the data-collapse extrapolation procedure for the large-D-to-U(1)-CSB transition determined from pCUT+MC (panels (a) and (b)), MPS and ED (panels (c) and (d)) as a function of the decay exponent σ = α − d,where d = 1. Gray lines indicate the expected long-range mean-field values from the long-range O(2) quantum rotor model above the upper critical dimension σ ≤ σuc = 2 /3 in-dicated by the blue shaded region, where σuc is the corre-sponding upper critical exponent. Dash-dotted and dashed gray lines indicate the distinct scaling behavior for systems with open (OBC) and periodic boundary conditions (PBC), respectively. Data collapses were performed with respect to 
+
+λ = 1 /D (unbiased and biased with the pCUT+MC critical point), as well as with respect to σ. The exponents show continuously varying behavior for σ ≳ 0.5, while the long-range mean-field behavior is recovered for smaller σ, which is consistent with σuc = 2 /3. The scaling exponent Θ shows distinct behavior depending on the boundary conditions em-ployed (OBC for MPS and PBC for ED). 
+
+Using pCUT+MC and MPS, we now probe the critical exponents as a function of the decay exponent to see whether we can replicate a similar behavior as described above. In the following, we use the exponent σ = α − d
+
+for d = 1, following standard field-theoretic notation. In Fig. 6, we show both critical exponents zν and γ as functions of the decay exponent σ. For sufficiently small 
+
+σ ≤ σuc , i. e. , below the upper critical value, we observe the expected long-range mean-field behavior, with zν ≈
+
+0.5 and γ ≈ 1; for σ ≳ 0.5, both exponents increase continuously. This behavior is consistent with the upper critical exponent σuc = 2 /3 and the divergence of critical exponents predicted for long-range O(N) quantum rotor models [98–100]. Similar behavior has been reported in long-range Heisenberg ladders [45, 73, 101], which are 9described exactly by this effective field theory. The critical exponent ν from the data collapse of the MPS magnetization curves following the finite-size scaling forms (10) supports the same scenario as the pCUT+MC results. The exponent ν matches the diver-gent behavior expected in the Gaussian regime at small values of σ. Overall, it shows a similar u-shaped behavior as in long-range Heisenberg ladders [45, 99–101] as well as the long-range Bose-Hubbard model [102]. As it turns out, it is not possible to extract the expo-nent β above the upper critical dimension directly at the critical point for systems with open boundary conditions as used in our MPS approach [103, 104]. Instead, we gen-eralize the finite-size scaling forms (10) to incorporate a dependence on the boundary conditions of the system. We can write the scaling forms in λ as 
+
+⟨M 2
+
+> ⊥
+
+⟩λ,L =
+
+{
+
+L−2Θ f (L1/ν (λ − λc)) OBC ,L−2ϙΘf (Lϙ/ν (λ − λc)) PBC , (13) with different dependence for open boundary conditions (OBC) and periodic boundary conditions (PBC), where we introduced the general scaling exponent Θ and the pseudocritical exponent ϙ. For decay exponents σ > σ uc ,i. e. , below the upper critical dimension ( d < d uc ), we have ϙ = 1, so both scaling forms are identical, and we recover Eqs. (10) where Θ = β/ν . However, for σ ≤ σuc 
+
+above the upper critical dimension ( d ≥ duc ), the finite-size scaling forms about the critical point fundamentally differ depending on the boundary conditions of the sys-tem under investigation [103–105]. For PBC, the scaling formalism above the upper criti-cal dimension is known as Q finite-size scaling [63, 106– 108] with subtle differences between classical and quan-tum models. For the classical long-range case, the pseu-docritical exponent is given by ϙ = dcl. /d cl. uc = dcl. /2σ,where we used dcl. uc = 2σ [106–108]. In contrast, for the quantum long-range case, ϙ = d/d uc = 2 d/ 3σ,where duc = 3σ/ 2 [63]. In both cases the exponent Θ = β/ν , appearing in the scaling forms, remains un-changed. For OBC, however, the scaling behavior is modified [103, 104]. In Ref. [103] it was shown that for classical long-range O(N) vector models the exponent becomes Θ = ( dcl. − σ)/2. Using the quantum-classical mapping dcl. = d + z [109, 110] and z = σ/ 2, this yields Θ = ( d − σ/ 2) /2 for the corresponding quantum model. In short, above the upper critical dimension σ ≤ σuc 
+
+we expect a distinct scaling behavior for our model de-pending on the boundary conditions: for OBC, we antici-pate Θ = (1 − σ/ 2) /2, whereas for PBC, Θ = β/ν = σ/ 2together with a pseudocritical exponent ϙ = 3σ/ 2. Since DMRG typically employs OBC, this prediction im-plies that critical exponents from such approaches can-not be directly compared to periodic-boundary or field-theoretical predictions without accounting for boundary effects. To demonstrate these differences in the finite-size scal-ing above the upper critical dimension, we complement the MPS simulations with OBC by exact diagonaliza-tion (ED) calculations using PBC. For the ED calcu-lations, we use renormalized long-range couplings ob-tained via Ewald summation [62, 111, 112]. We apply the same data-collapse and extrapolation procedure as for the MPS data, considering system sizes from L = 6 to L = 20. To mitigate the limitations of small acces-sible system sizes, we perform biased data collapses by fixing the critical parameter to λpCUT  
+
+> c
+
+obtained from the pCUT+MC approach, which is directly formulated in the thermodynamic limit. This reduces the number of free fitting parameters and incorporates an accurate estimate of the transition point, thereby improving the reliability of the extracted critical exponents. As conjectured, all approaches yield a consistent scal-ing exponent Θ for σ > σ uc that monotonously decreases from σ = 2 /3 to σ = 1 .75 (c. f. Fig 6). Above the up-per critical dimension σ ≤ σuc , we observe the boundary condition dependence of the exponent Θ: for OBC, Θ linearly increases with decreasing σ, while for PBC it linearly approaches zero. Both results agree well with our theoretical predictions (Θ = (1 /2 − σ/ 4) for OBC and Θ = σ/ 2 for PBC). This clearly demonstrates that boundary conditions are a relevant property in finite-size scaling above the upper critical dimension, rather than a numerical detail or artifact. Failure to account for the boundary-dependent scaling may therefore lead to a sys-tematic misidentification of universality classes in long-range systems. Note that we also performed biased MPS data collapses with the critical point fixed to the value λpCUT  
+
+> c
+
+; we use these as a consistency check. The quantitative agree-ment between data obtained from pCUT+MC, MPS, and ED, together with their consistency with the predictions of the long-range O(N) quantum rotor model—including the overall qualitative behavior and the location of the upper critical dimension as well as the distinct boundary-dependent scaling behavior above it—provides consistent evidence that the phase transition for sufficiently small decay exponents σ is described by a long-range ϕ4-theory with O(2) symmetry.  
+
+> 2. Haldane-to-CSB transitions
+
+We now turn our attention to the Haldane-to-CSB transitions. To examine the relevant critical line, we show in Fig. 7 the critical exponents ν and β as a function of the anisotropy parameter D over the entire parameter range and indicate the different critical regimes by dif-ferent background colors. For D ≲ −0.31, there is no transition as the system has a Z 2 AF ground state for any decay exponent. For −0.31 ≲ D < 0, the Ising transition between the Haldane and Z 2 AF phase yields critical exponents ν ≈ 1 and β ≈ 1/8, although these values begin to vary as D → 0. At exactly D = 0, there is a second-order quantum phase transition between the Haldane and SU(2) CSB phases, while for D > 0 a tran-10 D        
+
+> 0.00.51.01.52.02.53.03.54.0
+> ν
+> MPS – data collapse in Dor λ
+> MPS – biased data collapse in λ
+> MPS – data collapse in α
+> −0.50.00.51.0
+
+D    
+
+> 0.00.20.40.60.8
+> β
+> 5/45/35/25∞
+
+D      
+
+> No Criticality Ising Haldane  ↔ SU(2) CSB Haldane ↔U(1) CSB Gaussian large D ↔U(1) CSB
+
+D      
+
+> No Criticality Ising Haldane  ↔ SU(2) CSB Haldane ↔U(1) CSB Gaussian large D ↔U(1) CSB
+
+Figure 7. Critical exponents ν and β and their errors obtained from the scaling procedure in the different critical regimes as a function of the anisotropy parameter D. The D-axis is lin-ear for D ≤ 1, while for D > 1 it is uniformly spaced in 1/D . The results are obtained from three different finite-size scaling procedures using MPS: standard data collapse in D
+
+and λ, biased collapse using the critical point λpCUT  
+
+> c
+
+from the pCUT+MC approach, and a data collapse in the decay exponent α. Shaded background regions mark the different transitions: no criticality ( D < −0.31, Z 2 AF ground state), the Ising transition between the Haldane and Z 2 AF phases (−0.31 ≤ D < 0), continuous-symmetry-breaking (CSB) transitions from the Haldane phase (SU(2) CSB at D = 0 and U(1) CSB for 0 < D < 1), the Gaussian transition near 
+
+D ≈ 1 separating the Haldane and large-D phases, and the large-D–to–U(1) CSB transition. For D > 1, the exponents 
+
+ν and β vary continuously and follow a qualitative u-shaped behavior that is consistent with field-theoretical predictions from the long-range O(2) quantum rotor model [45, 100]. The gray line at large D values ( β = 0 .5) indicates the expected mean-field value of the exponent β. Data points obtained from the three approaches largely agree with each other. In the intermediate Haldane-to-U(1)-CSB region (0 < D < 1), the system also exhibits unconventional critical behavior with continuously varying exponents as a function of D.
+
+sition towards the U(1) CSB phase occurs. The distinct symmetry breaking is reflected by an apparent jump of the critical exponents at D = 0. For D > 0, we find that the critical exponents vary continuously as a func-tion of the anisotropy D with a pronounced maximum at 
+
+D ≈ 1, where the Gaussian transition terminates in the U(1) CSB critical line. For the range 1 < D ≲ 5, we again have our large-D-to-U(1)-CSB transition, and the exponent β (ν) con-tinuously decreases from β ≈ 0.5 ( ν ≈ 4.0) to β ≈ 0.25 (ν ≈ 1.3). Moreover, we find a minimum somewhere be-tween 5 /3 and 5 and a continuous increase for D ≳ 5/2. Note that the critical exponents are fundamentally con-trolled by the decay exponent σ. However, along the phase boundary the parameters are related through the critical line Dc(σ). Consequently, when plotting the ex-ponents as a function of the anisotropy D, one effectively evaluates them along this line, i. e. , β(Dc) = β(Dc(σ)) and ν(Dc) = ν(Dc(σ)). The observed D-dependence of the critical exponents, therefore, reflects the varia-tion of σ along the critical line. Thus, the described behavior of critical exponents is in line with the ex-pected behavior of the long-range O(2) quantum rotor model [98–100] predicting a u-shaped behavior as a func-tion of σ [45, 100, 101]. For sufficiently large anisotropies (D ≳ 7), the exponents approach their long-range mean-field values. Note that the discrepancies in ν between the different approaches at D ≈ 2 may arise because, for a data collapse in λ direction, an accurate determination of the critical point Dc is more difficult due to the very flat critical line (see Fig. 1) and can therefore significantly affect the quality of the predictions of critical exponent. For the Haldane-to-U(1)-CSB transition in the range 0 < D ≲ 1, we find continuously changing critical expo-nents as well, varying from ν ≈ 1.5 to ≈ 4.0 and from 
+
+β ≈ 0.25 to ≈ 0.5 (see Fig. 7). Although the continuously varying behavior of critical exponents along the large-D to the U(1) CSB phase can be consistently explained by the long-range O(2) quantum rotor model, the origin of the behavior observed along the Haldane-to-U(1)-CSB transition is unclear. One possible interpretation of this behavior is that the continuously varying critical exponents along the Haldane-to-U(1)-CSB transition arise from an effective “reparameterization” of the critical anisotropy Dc in terms of the decay exponent σ analogous to the situation for the large-D-to-U(1)-CSB transition. If both critical lines (Haldane-to-U(1)-CSB and large-D-to-U(1)-CSB) were governed by the same underlying effective long-range field theory, where the long-range coupling fixed by 
+
+σ is the relevant parameter in the renormalization-group sense, then the critical exponents should collapse onto a single curve when expressed as functions of the relevant coupling parameter σ. To test this scenario, we plot the critical exponents ν and β for both transitions as func-tions of σ (see Fig. 8). However, the data clearly separate into two distinct branches, demonstrating that the two transitions do not share a common σ-dependent scaling behavior. While the critical exponents of the Haldane-to-U(1)-CSB transition vary almost linearly over a small pa-rameter range around σ ≈ 2, the critical exponents of the large-D-to-U(1)-CSB transition vary smoothly for σ ≲ 2in qualitative agreement with the expectation of the long-range O(2) quantum rotor model but additionally show 11 1 2
+
+σ
+
+> 234
+> ν
+
+(a)  
+
+> 12
+
+σ
+
+> 0.30.40.5
+> β
+
+(b)                 
+
+> Haldane to U(1) CSB large D to U(1) CSB
+> Figure 8. Comparison of the critical exponents ν(panel (a)) and β(panel (b)), including uncertainties from the scaling analysis, for the Haldane-to-U(1)-CSB and large-D-to-U(1)-CSB transitions as a function of the decay exponent σ=α−d,where d= 1. The exponents associated with the large-D-to-U(1)-CSB transition display smoothly varying exponents with a sharp increase at σ≈2, whereas those of the Haldane-to-U(1)-CSB transition increase smoothly around σ≈2.
+
+a pronounced, almost jump-like, increase near σ ≈ 2. In particular, this feature is not observed when the expo-nents are analyzed as a function of the anisotropy D,where they vary more smoothly. We attribute this jump-like behavior in the large-D-to-U(1)-CSB transition to the proximity to the junc-tion with the Gaussian and Haldane-to-U(1)-CSB tran-sition lines (see Fig. 1). Along this transition only the proximity in terms of the decay exponent σ matters as the long-range coupling is a relevant parameter in the renormalization-group sense in long-range quantum rotor models, while the anisotropy D primarily parameterizes the position along the critical line in terms of σ. This explains why we observe a jump as a function of σ but smoothly varying exponents as a function of D.In contrast, the Haldane-to-U(1)-CSB transition re-mains well-behaved upon approaching the junction, ex-hibiting smoothly varying exponents as a function of both 
+
+σ and D. This asymmetry suggests an intrinsic difference in the way the two transitions respond to competing crit-ical fluctuations. If the critical behavior towards the U(1) CSB phase is indeed intrinsically different for the two regimes, this points to qualitatively distinct underlying mechanisms. Notably, the Haldane phase constitutes a SPT phase, whereas the large-D phase is topologically trivial. Al-though both transitions involve the breaking of the same U(1) symmetry, the presence of nontrivial topology in the Haldane phase may influence the critical theory and lead to deviations from the conventional Ginzburg-Landau-Wilson paradigm [94, 95]. Within this interpretation, the large-D-to-U(1)-CSB transition is described by the long-range O(2) quantum rotor model, whereas the Haldane-to-U(1)-CSB transition may belong to a distinct critical theory potentially influenced by the topological nature of the Haldane phase. Related speculations in the context of Heisenberg lad-ders were previously put forward in Ref. [113], invoking a potential deconfined-quantum-critical scenario between a disordered rung-dimer phase with a finite string-order parameter—just as in the Haldane phase—and an SU(2) CSB phase with conventional order. While our results are consistent with such an unconventional scenario, the present analysis does not provide direct evidence. In further support of the notion that the underlying disordered phases play a crucial role, we further con-sider the high-symmetry point D = 0, where SU(2) CSB occurs. To characterize this transition, we com-pare our critical exponents with those reported for the spin-1/2 Heisenberg chain in Ref. [86]. Although the symmetry of the ordered phase is the same in both cases, the transitions originate from qualitatively differ-ent disordered phases. In the present spin-one model, the transition occurs between an SPT Haldane phase and a CSB phase, whereas in the spin-1/2 model it connects a quasi-long-range-ordered (QLRO) phase to a CSB phase. We find critical exponents β = 0 .2724(13) and ν = 1 .584(9), which differ significantly from the val-ues reported in the spin-1/2 model, β = 0 .57(2) and 
+
+ν = 2 .16(1) [86]. This difference reinforces our inter-pretation that the topological character of the Haldane phase may alter the criticality leading to distinct criti-cal exponents for the Haldane-to-SU(2)-CSB transition compared to the QLRO-to-SU(2)-CSB transition. Interestingly, the QLRO-to-SU(2)-CSB transition in the spin-1/2 chain is characterized by a dynamical criti-cal exponent z < 1 [114], while the transition between a QLRO and a U(1) CSB phase is of Berezinskii-Kosterlitz-Thouless type [115], signaling unconventional criticality in these cases as well. Taken together, these results highlight the multifaceted nature of continuous symme-try breaking in one-dimensional systems and support the view that the nature of the disordered phase can qual-itatively affect the resulting critical behavior. In this context, our results suggest that the topological nature of the Haldane phase may play an important role for the Haldane-to-CSB transitions in our model, motivating fur-ther numerical and field-theoretical studies to clarify its precise nature.  
+
+> V. CONCLUSIONS AND OUTLOOK
+
+In this work, we investigated the spin-one Heisenberg chain with single-ion anisotropy and staggered long-range interactions. Using MPS, we determined the ground-state phase diagram as a function of the long-range de-cay exponent α and anisotropy D, identifying the vari-ous phases by computing different spin-spin correlations and the entanglement entropy. Within the CSB phases, long-range interactions give rise to an unconventional α-dependent scaling behavior of the logarithmic correction of the entanglement entropy, with distinct behavior for U(1) and SU(2) CSB. In addition, we characterized the 12 critical properties of the second-order quantum phase transitions by analyzing their finite-size behavior. For the topological Gaussian transition, we used the crossing points of the entanglement entropy in different magneti-zation sectors and the logarithmic scaling at the critical point to determine the critical properties at the quantum phase transition. For the transitions involving conven-tional order (Z 2 AF, SU(2) CSB, and U(1) CSB phases), we used staggered-magnetization curves to perform data collapses and extracted the critical properties as a func-tion of the decay exponent σ = α − 1 and the anisotropy 
+
+D. Complementing the MPS results with high-order se-ries expansions using the pCUT+MC approach yielded consistent predictions for the critical line of the large-D-to-U(1)-CSB transition. We found that the critical exponents vary continuously with the decay exponent σ, in agreement with effective quantum field theory predictions for the long-range O(2) quantum rotor model [98–100]. Furthermore, our results demonstrate that the finite-size scaling of critical expo-nents above the upper critical dimension is strongly in-fluenced by boundary conditions: comparison of MPS results with OBC and ED results with PBC reveals sig-nificant differences. To account for this, we extended the finite-size scaling framework for open boundary condi-tions previously established for classical long-range sys-tems in Ref. [103] to the quantum setting. To our knowl-edge, this provides the first quantitative investigations of the influence of boundary conditions on quantum long-range critical scaling above the upper critical dimen-sion complementing a recent work on the finite-size scal-ing above the upper critical dimension of quantum sys-tems [63]. Our work further highlights that accounting for the correct boundary conditions is crucial to correctly extract critical properties in quantum systems above the upper critical dimension. Despite mapping out the phase diagram with high pre-cision, several open questions remain. These include the precise properties of the quantum phase transition along the Gaussian line as well as the mechanism underlying the continuously varying critical exponents from the Hal-dane to the U(1) and SU(2) CSB phases. Addressing these questions in future studies will be essential to better understand and test the unconventional critical behavior in one-dimensional quantum spin systems. Beyond these theoretical challenges, our results iden-tify this model as a minimal and versatile playground for studying unconventional quantum criticality. Re-cent advances in atomic and molecular platforms pro-vide realistic routes toward its implementation. Its defin-ing ingredients—spin-one degrees of freedom, single-ion anisotropy, and tunable long-range interactions—are be-coming available in state-of-the-art experiments, includ-ing trapped ions [31–33], ultracold atoms [29], and Ry-dberg atom arrays [34, 35, 116]. In particular, trapped-ion platforms allow tunable power-law interactions over a wide range of decay exponents [28, 117], which is es-sential for accessing the different critical regimes iden-tified here, while neutral atoms in a cavity have demon-strated tunable interaction potentials in spin-one systems with single-ion anisotropy terms [27]. Moreover, Rydberg atom platforms have demonstrated that a quantitative finite-size scaling analysis to probe the critical behavior similar to our theoretical approach is already experimen-tally viable [118]. Taken together, these developments establish a direct connection between theory and experi-ment, positioning the present model as a concrete setting to study the interplay of long-range interactions, contin-uous symmetry breaking, and topology and to test the unconventional critical behavior identified in our work. 
+
+> ACKNOWLEDGMENT
+
+Tensor network calculations were performed using the TeNPy library [119, 120] and exact diagonalization cal-culations with the QuSpin library [121, 122]. P.A. thanks Alexander Schuckert, Anantha Rao, Jan Koziol, Calvin Kr¨ amer, and Anja Langheld for fruitful discussions. P.A. gratefully acknowledges A.V.G. for hosting a four-month research stay in Maryland and for a highly stimulating collaboration and welcoming research environment in his group. P.A. and K.P.S. gratefully acknowledge the support by the Deutsche Forschungsgemeinschaft (DFG, German Research Foundation) – Project-ID 429529648 – TRR 306 QuCoLiMa (“Quantum Cooperativity of Light and Matter”) and the Munich Quantum Valley, which is sup-ported by the Bavarian state government with funds from the Hightech Agenda Bayern Plus. P.A. and K.P.S. gratefully acknowledge the scientific support and HPC resources provided by the Erlangen National High Perfor-mance Computing Center (NHR@FAU) of the Friedrich-Alexander-Universit¨ at Erlangen-N¨ urnberg (FAU) under the NHR project b177dc (“SELRIQS”). NHR funding is provided by federal and Bavarian state authorities. NHR@FAU hardware is partially funded by the German Research Foundation (DFG) – 440719683. S.R.M. is sup-ported by the NSF QLCI (award No. OMA-2120757). A.V.G. was supported in part by the NSF STAQ pro-gram, DoE ASCR Quantum Testbed Pathfinder pro-gram (award No. DE-SC0024220), AFOSR MURI, NSF QLCI (award No. OMA-2120757), ARL (W911NF-24-2-0107), ONR MURI, DARPA SAVaNT ADVENT, and NQVL:QSTD:Pilot:FTL. A.V.G. also acknowledges sup-port from the U.S. Department of Energy, Office of Sci-ence, National Quantum Information Science Research Centers, Quantum Systems Accelerator (award No. DE-SCL0000121) and from the U.S. Department of En-ergy, Office of Science, Accelerated Research in Quantum Computing, Fundamental Algorithmic Research toward Quantum Utility (FAR-Qu). 13 
+
+Appendix A: Scaling of the entanglement entropy 
+
+In this Appendix, we present the procedure for de-termining the scaling behavior in more detail and also discuss the constant scaling term c as a function of the decay exponent α. The spin-one Heisenberg chain ex-hibits a logarithmic scaling of the entanglement entropy following Eq. (5), where the leading area-law term be-comes trivially a constant in one-dimensional systems. In CSB phases, the low-lying tower-of-states structure of the entanglement spectrum leads to an additive logarith-mic correction to the area-law scaling [82, 85, 86]. Thus, we use a logarithmic function, 
+
+SVN (L) = b ln( L) + c , (A1) to perform a least-squares fit to the entanglement entropy as a function of the system size L with b and c as free fit parameters. In the left column of Fig. 9 we show the entanglement entropy as it increases with the system size 
+
+L and the logarithmic fit function for selected values of the decay exponent α for D ∈ {− 0.5, 0, 0.5, 1.25 }. Note that for α = 1 .1 at D = 0, the data points are limited to L ≤ 220. Due to enhanced entanglement in the SU(2) CSB phase, we cannot push to the maximal system size (L = 340) for small α-values with a bond dimension lim-ited to χmax = 2000. We aim to account for finite-size effects by succes-sively performing least-squares fits in a ‘sliding win-dow’ with a fixed number of system sizes. Thus, we slide the window with the initial set of system sizes L = {60 , 80 , 100 , 120 , . . . , 240 } to the final one 
+
+L = {160 , 180 , 200 , 220 , . . . , 340 }, i. e. , from Lmin = 60 to Lmin = 160 resulting in six data points for the loga-rithmic coefficient b. In the right column of Fig. 9, we show the logarithmic coefficients b(1 /L min ) as a function of the minimal system size of the ‘sliding window’. To extract the bulk value, we use a linear fit function 
+
+f (1 /L min ) = b∞ + u (1 /L min ) (A2) in the range Lmin = [80 , 160], where b∞ and u are the free fit parameters. The coefficient of the logarithmic correction in the thermodynamic limit is then given by 
+
+f (0) = b with the fitting error σb.In the main text we discussed the logarithmic coeffi-cient b as a function of the decay exponent α from the expected entanglement entropy 
+
+SVN = b ln( L) + c . (A3) Here, we analogously discuss the behavior of the con-stant term c as a function of the decay exponent α as shown in Fig. 10. The constant is obtained from the same fits used in the main text. In contrast to the log-arithmic coefficient b, the constant term c is, in general, not universal and typically more prone to finite-size ef-fects. Consequently, the results should be interpreted with more caution, especially the behavior close to the 100 200 300 012                            
+
+> SVN
+> D=−0.5α=1.10
+> α=2.11
+> α=3.11
+> α=4.12
+> α=5.12 0.000 0.005 0.010 0.015
+> −0.02
+> −0.01 0.00
+> b
+> 100 200 300 01234
+> SVN
+> D= 0 .00.000 0.005 0.010 0.015 0.00.20.40.60.8
+> b
+> 100 200 300 01234
+> SVN
+> D= 0 .50.000 0.005 0.010 0.015 0.00.20.4
+> b
+> 100 200 300
+> L
+> 01234
+> SVN
+> D= 1 .25 0.000 0.005 0.010 0.015
+> 1/L min
+> 0.00.20.4
+> b
+
+Figure 9. Scaling behavior of the entanglement entropy SVN 
+
+for D ∈ {− 0.5, 0, 0.5, 1.25 } at various decay exponents α. Left column: Entanglement entropy as a function of system size 
+
+L, fitted to SVN = b ln( L) + c (dashed lines). Right column: 
+
+Logarithmic coefficients b plotted versus 1 /L min , where Lmin 
+
+is the lower bound of a ‘sliding’ fitting window. Each window contains N = 10 data points to which the logarithmic fit is applied, and the window is shifted sequentially to larger system sizes. Dashed lines show linear fits of b(1 /L min ) used to extrapolate the thermodynamic value b(1 /L min = 0). 
+
+critical point. In the Z 2 AF phase at D = −0.5 (panel (a)), the constant term varies smoothly, decreasing con-tinuously from α = 6 to α ≈ 2. For α ≲ 2, c increases again. This behavior coincides with the regime where the logarithmic coefficient b becomes negative. In this regime, the entanglement entropy slightly decreases with increasing system size, which leads to a negative loga-rithmic slope in the fit and a compensating increase of the constant term c. For D = 0 in panel (b), the con-stant term is positive and approximately constant in the Haldane phase ( α ≳ 2.5), while it becomes negative in the SU(2) CSB phase ( α ≲ 2.5). Near the critical point, 
+
+c increases from both sides and exhibits a pronounced peak. Such peaks are expected close to the transition 14 1 2 3 4 5 6
+
+α  
+
+> 0.00.20.4
+> c
+> D=−0.5
+
+(a)         
+
+> Z2AF mz= 0
+> mz= 1 123456
+
+α 
+
+> 02
+> c
+> D= 0 .0
+
+(b)  
+
+> D= 0 .0SU(2) CSB Haldane SPT
+
+αc     
+
+> 123456
+
+α 
+
+> 012
+> c
+> D= 0 .5
+
+(c)  
+
+> D= 0 .5U(1) CSB Haldane SPT
+
+αc     
+
+> 123456
+
+α 
+
+> 0.00.51.01.5
+> c
+> D= 1 .25
+
+(d)  
+
+> U(1) CSB large D
+
+αc                                  
+
+> Figure 10. Constant term cof the entanglement en-tropy as afunction of the decay exponent αfor
+> D=−0.5, 0, 0 .5, and 1 .25 in panels (a), (b), (c), and (d), respectively. Data points include errorbars from the extrap-olation procedure. The ground state in the mz= 0 sector is used to compute the entanglement entropy, except in the Haldane phase, where the mz= 1 ground state is taken to avoid the residual ln 2 contribution from edge-state entangle-ment. Fitting the entanglement entropy to SVN =bln L+c
+> yields the constant c, which displays a non-trivial behavior close to the critical points αc.Gray dashed lines indicate critical points in the thermodynamic limit determined by the data-collapse and extrapolation procedure in Appendix B.
+
+where scaling corrections are strongest and the simple logarithmic form provides only an approximate descrip-tion of the finite-size data. For D = 0 .5 in panel (c), the constant remains positive and approximately constant in both the Haldane and U(1) CSB phases. In addition, a pronounced peak in c appears on the Haldane side of the transition ( αc ≈ 3). Finally, for D = 1 .25 in panel (d), the behavior across the large-D and U(1) CSB phases is qualitatively similar to the previous cases. The constant increases on the large-D side of the transition, reaches a maximum around α ≈ 4, and slowly decreases for larger 
+
+α values. 
+
+> Appendix B: Data-collapse and extrapolation of critical properties
+
+In this Appendix, we present the data-collapse and extrapolation procedure which we apply to extract the critical properties of the second-order transition lines in the phase diagram to high accuracy. Extracting critical properties—most notably critical exponents—is a very challenging task. A very accurate and proven approach is to use the finite-size scaling of observables and perform a data collapse exploiting the universal critical behavior about second-order quantum phase transitions [59–64]. However, systems governed by long-range interactions can give rise to increased entanglement and long-range correlations leading to stronger finite-size effects, which makes the determination of critical properties even more challenging. To get accurate results, we apply a two-step procedure. First, we perform several data collapses for different sets of system sizes, which allows us to extract the critical point and exponents. Second, we analyze the behavior of the critical point and exponents as a function of the inverse system size and extrapolate the data to the ther-modynamic limit. In the following, we describe these two steps in more detail. We calculate the staggered-magnetization curves for 
+
+L = {60 , 100 , 140 , 160 , 180 , 200 , . . . , 340 } in the vicinity of all second-order phase transitions (except the topolog-ical Gaussian transition). We use the following finite-size scaling forms 
+
+⟨M 2 
+
+> z
+
+⟩D,L = L−2β/ν f (L1/ν (D − Dc)) ,
+
+⟨M 2
+
+> ⊥
+
+⟩λ,L = L−2β/ν f (L1/ν (λ − λc)) ,
+
+⟨M 2
+
+> ⊥
+
+⟩α,L = L−2β/ν f (L1/ν (α − αc)) ,
+
+(B1) where f is a fifth-order polynomial function. The critical points Dc, λc or αc and critical exponents β and ν are additional free parameters that we determine by a multi-dimensional least-squares fit in the parameters L and D,
+
+λ = 1 /D , or α. For the Ising transition, we use the stag-gered z-magnetization Mz (7), while for the transitions toward the CSB phases, we use the staggered transverse magnetization M⊥ (9). Depending on the critical line, we apply a data collapse in the direction along α for the CSB transitions or in the opposite direction along D for the Ising transition and along λ for large D values to-wards the U(1) CSB transition. Moreover, we perform biased data collapses in λ, where we fix the critical point 
+
+λc to the pCUT+MC value λpCUT  
+
+> c
+
+, which is determined independently using the high-order series-expansion ap-proach. This reduces the number of free fit parameters to two, β and ν, serving as a biased fit to check the con-sistency of our results. Above the upper critical dimension d ≥ duc —or like-wise below the upper critical exponents σ ≤ σuc , where 15 −0.28 −0.26 
+
+D   
+
+> 0.25 0.30 0.35 0.40
+> 〈M 2
+> z 〉
+> Lmax = 340
+> Lmin = 100 2.42.6
+
+α   
+
+> 0.15 0.20 0.25 0.30
+> 〈M 2
+> ⊥〉
+> Lmax = 340
+> Lmin = 100 2.83.0
+
+α   
+
+> 0.35 0.40 0.45
+> 〈M 2
+> ⊥〉
+> Lmax = 340
+> Lmin = 100 3.03.2
+
+α   
+
+> 0.30 0.35 0.40 0.45 0.50
+> 〈M 2
+> ⊥〉
+> Lmax = 340
+> Lmin = 100 0.16 0.17
+
+λ    
+
+> 0.04 0.06 0.08 0.10
+> 〈M 2
+> ⊥〉
+> Lmax = 340
+> Lmin = 100
+> −101
+
+L1/ν (D − Dc)       
+
+> 0.80 0.85 0.90 0.95 1.00
+> L2β/ν 〈M 2
+> z 〉
+> Dc=−0.27234 ±0.00001
+> ν= 1 .1324 ±0.0004
+> β= 0 .1174 ±0.0001 Haldane ↔z-AF
+> αfixed = 5 .0
+> 05
+
+L1/ν (α − αc)      
+
+> 1.21.41.6
+> L2β/ν 〈M 2
+> ⊥〉
+> αc= 2 .51362 ±0.00043
+> ν= 1 .2969 ±0.0007
+> β= 0 .2283 ±0.0003 Haldane ↔SU(2) CSB
+> Dfixed = 0 .0
+> −20
+
+L1/ν (α − αc)     
+
+> 1.45 1.50 1.55 1.60 1.65
+> L2β/ν 〈M 2
+> ⊥〉
+> αc= 2 .97758 ±0.00087
+> ν= 1 .7824 ±0.0003
+> β= 0 .2378 ±0.0005 Haldane ↔U(1) CSB
+> Dfixed = 0 .4
+> −20
+
+L1/ν (α − αc)     
+
+> 1.41.51.61.71.8
+> L2β/ν 〈M 2
+> ⊥〉
+> αc= 3 .19500 ±0.00336
+> ν= 2 .4260 ±0.0002
+> β= 0 .3257 ±0.0014 Large-D ↔U(1) CSB
+> Dfixed = 1 .25
+> 0.00.2
+
+L1/ν (λ − λc)    
+
+> 1.41.61.82.0
+> L2β/ν 〈M 2
+> ⊥〉
+> λc= 0 .16112 ±0.00001
+> ν= 1 .4985 ±0.0002
+> β= 0 .4839 ±0.0005
+> Large-D ↔U(1) CSB
+> αfixed = 1 .75
+
+Figure 11. Representative data collapses probing the Ising, SU(2), and U(1) continuous symmetry breaking (CSB) transitions at values α = 5, D ∈ { 0, 0.4, 1.25 }, and α = 1 .75. Top row: Staggered magnetization curves of ⟨M 2 
+
+> z
+
+⟩ for the Ising transition and ⟨M 2
+
+> ⊥
+
+⟩ for the CSB transitions between Lmin = 100 and Lmax = 340 versus the tuning parameters D, α, and λ = 1 /D .
+
+Bottom row: The data collapses associated to the magnetization curves in the top row yielding the critical point ( Dc, αc, or 
+
+λc) and the corresponding critical exponents β and ν of the second-order quantum phase transitions. 
+
+we use an alternative decay exponent σ = α − d with 
+
+d being the dimension of the system—the above finite-size scaling forms must be modified. Interestingly, the finite-size scaling forms differ depending on the bound-ary conditions. Hence, we use the following more general finite-size scaling forms: 
+
+⟨M 2
+
+> ⊥
+
+⟩λ,L =
+
+{
+
+L−2Θ f (L1/ν (λ − λc)) OBC ,L−2ϙΘf (Lϙ/ν (λ − λc)) PBC , (B2) for open boundary conditions (OBC) and periodic boundary conditions (PBC), respectively. We introduce the general scaling exponent Θ and the pseudocritical exponent ϙ. For σ ≥ σuc , we have ϙ = 1, both scaling forms are identical, and we recover Eqs. (B1) where we introduce the critical exponent Θ = β/ν . However, if 
+
+σ ≤ σuc , we have ϙ = 2 /3σ and Θ = β/ν for PBC, and Θ = ( d − σ/ 2) /2 for OBC, which is now independent of 
+
+β and ν. To test this behavior, we performed the data collapses using Θ as a free parameter. After performing least-squares fits to the MPS data points with critical exponents (and critical point) as free parameters, the established approach is to collapse the magnetization curves of different system sizes onto a sin-gle curve using the final fit parameters and proper rescal-ing according to the finite-size scaling forms (B1). In Fig. 11, we show the magnetization curves for different system sizes and the associated data collapse represen-tative for different transitions. As we can see, the data points perfectly collapse onto a single curve as expected at second-order quantum phase transitions. To get a rea-sonable error estimate of the critical values it is not suf-ficient to only consider the uncertainty from the least-squares fit, as we are limited to small system sizes. In reality, corrections to the dominant power-law scaling are to be expected, and long-range interactions further am-plify finite-size effects. To systematically account for finite-size effects, we perform multiple data collapses using a ‘sliding win-dow’ with several system sizes. We fix the num-ber of system sizes for the data collapse to eight and ‘slide’ the window from L = {60 , 100 , 140 , 160 , . . . , 240 }
+
+to L = {200 , 220 , 240 , 260 , . . . , 340 }, i. e. , from Lmin = 60 to Lmin = 200 resulting in six data points. In Fig. 12, we show the behavior of the three critical quantities as a function of the minimal system size of the ‘sliding’ win-dow. We use a quadratic fit function 
+
+f (1 /L min ) = κ + u (1 /L min ) + v (1 /L min )2 (B3) to extrapolate their values to the thermodynamic limit, which is given by f (0) = κ with the associated fitting error σκ. Here, the parameter κ represents the critical point ( Dc, αc, and λc) or a critical exponent ( β and ν). We use a least-squares fit in the range [100 , 200]. To further improve the error estimate, we repeat the data-collapse and extrapolation procedure with N = 6 different data windows where the number of data points ranges between 40 −60 per system size. We obtain several estimates for the bulk values κi and calculate the mean 16 0.00 0.01                  
+
+> −0.273
+> −0.272
+> −0.271
+> Dc
+> Haldane ↔z-AF
+> αfixed = 5 .0window size = 60 window size = 40
+> 0.00 0.01 2.50 2.51 2.52
+> αc
+> Haldane ↔SU(2) CSB
+> Dfixed = 0 .0
+> 0.00 0.01 2.95 2.96 2.97 2.98 2.99
+> αc
+> Haldane ↔U(1) CSB
+> Dfixed = 0 .4
+> 0.00 0.01 3.03.13.2
+> αc
+> Large-D ↔U(1) CSB
+> Dfixed = 1 .25
+> 0.00 0.01 0.1610 0.1612 0.1614
+> λc
+> Large-D ↔U(1) CSB
+> αfixed = 1 .75
+> 0.00 0.01 1.05 1.10 1.15
+> ν
+> 0.00 0.01 1.21.31.41.51.6
+> ν
+> 0.00 0.01 1.82.02.2
+> ν
+> 0.00 0.01 2.25 2.50 2.75 3.00 3.25
+> ν
+> 0.00 0.01 1.49 1.50 1.51
+> ν
+> 0.00 0.01
+
+1/L min  
+
+> 0.116 0.118 0.120 0.122
+> β
+> 0.00 0.01
+
+1/L min  
+
+> 0.22 0.24 0.26
+> β
+> 0.00 0.01
+
+1/L min  
+
+> 0.22 0.24 0.26 0.28
+> β
+> 0.00 0.01
+
+1/L min  
+
+> 0.30 0.32 0.34 0.36 0.38
+> β
+> 0.00 0.01
+
+1/L min 
+
+> 0.480 0.485
+> β
+
+Figure 12. Scaling of the critical points Dc, αc, and λc = 1 /D c (first row), the critical exponents ν (second row), and β (third row) obtained from data collapses at α = 5, D ∈ { 0, 0.4, 1.25 }, and α = 1 .75, plotted versus the inverse system size 1 /L min .The minimal system size Lmin corresponds to the lower bound of a sliding window used for the collapses, with each window containing eight system sizes and shifted sequentially to larger system sizes. Finite-size behavior is shown for data window sizes between 40–60 data points. A quadratic function f (1 /L min ) = κ + u (1 /L min ) + v (1 /L min )2 is fitted to the last five data points (gray dashed lines) to estimate the bulk value f (1 /L min = 0) = κ. The black data points at 1 /L min = 0 represent the weighted average of the critical quantity in the thermodynamic limit including statistical and systematic uncertainties. 
+
+and associated spread with ¯κ = 1
+
+N
+
+> N
+
+∑
+
+> i=1
+
+κi , (B4) 
+
+σspread =
+
+√√√√ 1
+
+N − 1
+
+> N
+
+∑
+
+> i=1
+
+(κi − ¯κ)2 . (B5) As the individual quadratic fits to the different data win-dows lead to different uncertainties σκ,i where κi ± σκ,i ,it is better to compute the weighted average ¯κw =
+
+∑Ni=1 wiκi
+
+∑Ni=1 wi
+
+, σw = 1
+
+√∑Ni=1 wi
+
+, (B6) where we define the weights as wi = 1 /σ 2
+
+> κ,i
+
+. The weighted average minimizes the variance under the assumption that the individual κi values are independent measure-ments governed by their respective uncertainties. To test the consistency of the weighted average with the reported errors, we use the (reduced) chi-squared value defined as 
+
+χ2 =
+
+> N
+
+∑
+
+> i=1
+
+(κi − ¯κw)2
+
+σ2
+
+> κ,i
+
+, χ2red = χ2
+
+N − 1 . (B7) If χ2red ≤ 1, the scatter among the κi values is compatible with the fitting uncertainties. When χ2red > 1, the ob-served fluctuations exceed those expected from the errors 
+
+σκ,i , indicating that the statistical uncertainties must be inflated. We therefore obtain a statistical error 
+
+σstat = σw
+
+√
+
+max( χ2red , 1) . (B8) In addition to the statistical uncertainty, varying the window size introduces correlations among the data and leads to a systematic spread that is not captured by the individual fit errors. We therefore interpret 
+
+σsyst = σspread (B9) as an additional systematic contribution. We combine this systematic error with the previous statistical error to a total error estimate 
+
+σtotal =
+
+√
+
+σ2stat + σ2syst , (B10) 17 for our final estimation of the critical quantities given by κw ± σtotal . In Fig. 12, we depict the extrapolations and the final estimates for the critical point and the crit-ical exponents ν and β. The finite-size behavior is well-behaved and allows for decent fits to the quadratic fit function. We see that the critical exponents for the Ising transition ν = 1 .0228(25) and β = 0 .12218(26) at α = 5 agree closely with the expected values in literature ν = 1 and β = 0 .125. 
+
+[1] F. D. M. Haldane, Continuum dynamics of the 1-D Heisenberg antiferromagnet: Identification with the O(3) nonlinear sigma model, Phys. Lett. A 93 , 464 (1983). [2] F. D. M. Haldane, Nonlinear Field Theory of Large-Spin Heisenberg Antiferromagnets: Semiclassically Quan-tized Solitons of the One-Dimensional Easy-Axis N´ eel State, Phys. Rev. Lett. 50 , 1153 (1983). [3] I. Affleck and E. H. Lieb, A proof of part of Haldane’s conjecture on spin chains, Lett. Math. Phys. 12 , 57 (1986). [4] I. Affleck and F. D. M. Haldane, Critical theory of quan-tum spin chains, Phys. Rev. B 36 , 5291 (1987). [5] C.-K. Chiu, J. C. Y. Teo, A. P. Schnyder, and S. Ryu, Classification of topological quantum matter with sym-metries, Rev. Mod. Phys. 88 , 035005 (2016). [6] F. D. M. Haldane, Nobel Lecture: Topological quantum matter, Rev. Mod. Phys. 89 , 040502 (2017). [7] P. W. Anderson, An Approximate Quantum Theory of the Antiferromagnetic Ground State, Phys. Rev. 86 , 694 (1952). [8] N. D. Mermin and H. Wagner, Absence of Ferro-magnetism or Antiferromagnetism in One- or Two-Dimensional Isotropic Heisenberg Models, Phys. Rev. Lett. 17 , 1133 (1966). [9] P. C. Hohenberg, Existence of Long-Range Order in One and Two Dimensions, Phys. Rev. 158 , 383 (1967). [10] Z.-X. Gong, M. F. Maghrebi, A. Hu, M. L. Wall, M. Foss-Feig, and A. V. Gorshkov, Topological phases with long-range interactions, Phys. Rev. B 93 (2016). [11] Z.-X. Gong, M. Maghrebi, A. Hu, M. Foss-Feig, P. Richerme, C. Monroe, and A. Gorshkov, Kaleido-scope of quantum phases in a long-range interacting spin-1 chain, Phys. Rev. B 93 (2016). [12] R. Blatt and C. F. Roos, Quantum simulations with trapped ions, Nat. Phys. 8, 277 (2012). [13] C. Monroe, W. C. Campbell, L.-M. Duan, Z.-X. Gong, A. V. Gorshkov, P. W. Hess, R. Islam, K. Kim, N. M. Linke, G. Pagano, P. Richerme, C. Senko, and N. Y. Yao, Programmable quantum simulations of spin sys-tems with trapped ions, Rev. Mod. Phys. 93 , 025001 (2021). [14] A. Browaeys and T. Lahaye, Many-body physics with individually controlled Rydberg atoms, Nat. Phys. 16 ,132 (2020). [15] A. M. Kaufman and K.-K. Ni, Quantum science with optical tweezer arrays of ultracold atoms and molecules, Nat. Phys. 17 , 1324 (2021). [16] L. Chomaz, I. Ferrier-Barbut, F. Ferlaino, B. Laburthe-Tolra, B. L. Lev, and T. Pfau, Dipolar physics: A re-view of experiments with magnetic quantum gases, Rep. Prog. Phys. 86 , 026401 (2023). [17] J. L. Bohn, A. M. Rey, and J. Ye, Cold molecules: Progress in quantum engineering of chemistry and quan-tum matter, Science 357 , 1002 (2017). [18] N. Defenu, T. Donner, T. Macr` ı, G. Pagano, S. Ruffo, and A. Trombettoni, Long-range interacting quantum systems, Rev. Mod. Phys. 95 , 035002 (2023). [19] G. Bornet, G. Emperauger, C. Chen, B. Ye, M. Block, M. Bintz, J. A. Boyd, D. Barredo, T. Comparin, F. Mezzacapo, T. Roscilde, T. Lahaye, N. Y. Yao, and A. Browaeys, Scalable spin squeezing in a dipolar Ryd-berg atom array, Nature 621 , 728 (2023). [20] J. Franke, S. R. Muleady, R. Kaubruegger, F. Kranzl, R. Blatt, A. M. Rey, M. K. Joshi, and C. F. Roos, Quantum-enhanced sensing on optical transi-tions through finite-range interactions, Nature 621 , 740 (2023). [21] W. J. Eckner, N. Darkwah Oppong, A. Cao, A. W. Young, W. R. Milner, J. M. Robinson, J. Ye, and A. M. Kaufman, Realizing spin squeezing with Rydberg inter-actions in an optical clock, Nature 621 , 734 (2023). [22] P. Richerme, Z. X. Gong, A. Lee, C. Senko, J. Smith, M. Foss-Feig, S. Michalakis, A. V. Gorshkov, and C. Monroe, Non-local propagation of correlations in quantum systems with long-range interactions, Nature 
+
+511 , 198 (2014), 25008525. [23] P. Jurcevic, B. P. Lanyon, P. Hauke, C. Hempel, P. Zoller, R. Blatt, and C. F. Roos, Quasiparticle en-gineering and entanglement propagation in a quantum many-body system, Nature 511 , 202 (2014). [24] M. K. Joshi, F. Kranzl, A. Schuckert, I. Lovas, C. Maier, R. Blatt, M. Knap, and C. F. Roos, Observing emer-gent hydrodynamics in a long-range quantum magnet, Science 376 , 720 (2022), 35549407. [25] L. Feng, O. Katz, C. Haack, M. Maghrebi, A. V. Gor-shkov, Z. Gong, M. Cetina, and C. Monroe, Continuous symmetry breaking in a trapped-ion spin chain, Nature 
+
+623 , 713 (2023). [26] C. Chen, G. Bornet, M. Bintz, G. Emperauger, L. Leclerc, V. S. Liu, P. Scholl, D. Barredo, J. Hauschild, S. Chatterjee, M. Schuler, A. M. L¨ auchli, M. P. Zaletel, T. Lahaye, N. Y. Yao, and A. Browaeys, Continuous symmetry breaking in a two-dimensional Rydberg ar-ray, Nature 616 , 691 (2023). [27] A. Periwal, E. S. Cooper, P. Kunkel, J. F. Wienand, E. J. Davis, and M. Schleier-Smith, Programmable in-teractions and emergent geometry in an array of atom clouds, Nature 600 , 630 (2021). [28] O. Katz, L. Feng, D. Porras, and C. Monroe, Flo-quet control of interactions and edge states in a pro-grammable quantum simulator, Nat. Commun. 16 , 8815 (2025). [29] W. C. Chung, J. de Hond, J. Xiang, E. Cruz-Col´ on, and W. Ketterle, Tunable Single-Ion Anisotropy in Spin-1 Models Realized with Ultracold Atoms, Phys. Rev. Lett. 
+
+126 (2021). [30] P. Sompet, S. Hirthe, D. Bourgund, T. Chalopin, 18 
+
+J. Bibo, J. Koepsell, P. Bojovi´ c, R. Verresen, F. Poll-mann, G. Salomon, C. Gross, T. A. Hilker, and I. Bloch, Realizing the symmetry-protected Haldane phase in Fermi–Hubbard ladders, Nature 606 , 484–488 (2022). [31] I. Cohen and A. Retzker, Proposal for Verification of the Haldane Phase Using Trapped Ions, Phys. Rev. Lett. 
+
+112 (2014). [32] I. Cohen, P. Richerme, Z.-X. Gong, C. Monroe, and A. Retzker, Simulating the Haldane phase in trapped-ion spins using optical fields, Phys. Rev. A 92 (2015). [33] C. Senko, P. Richerme, J. Smith, A. Lee, I. Cohen, A. Retzker, and C. Monroe, Realization of a Quan-tum Integer-Spin Chain with Controllable Interactions, Phys. Rev. X 5, 021026 (2015). [34] K. Brechtelsbauer, J. M¨ ogerle, and H. P. B¨ uchler, Quan-tum simulation of spin-1 XXZ Heisenberg models and the Haldane phase with dysprosium, Phys. Rev. A 111 
+
+(2025). [35] J. M¨ ogerle, K. Brechtelsbauer, A. Gea-Caballero, J. Prior, G. Emperauger, G. Bornet, C. Chen, T. La-haye, A. Browaeys, and H. B¨ uchler, Spin-1 Haldane Phase in a Chain of Rydberg Atoms, PRX Quantum 
+
+6 (2025). [36] J. Ren, W.-L. You, and A. M. Ole´ s, Quantum phase transitions in a spin-1 antiferromagnetic chain with long-range interactions and modulated single-ion anisotropy, Phys. Rev. B 102 (2020). [37] D. Kawasaki and I. Danshita, Higgs and Nambu-Goldstone modes in a spin-1 XY model with long-range interactions (2025), arXiv:2512.24557. [38] L. Pitaevskii and S. Stringari, Uncertainty principle, quantum fluctuations, and broken symmetries, J. Low Temp. Phys. 85 , 377 (1991). [39] P. Bruno, Absence of Spontaneous Magnetic Order at Nonzero Temperature in One- and Two-Dimensional Heisenberg and XY systems with Long-Range Interac-tions, Phys. Rev. Lett. 87 , 137203 (2001), 11580623. [40] U. Schollw¨ ock, The density-matrix renormalization group in the age of matrix product states, Ann. Phys. 
+
+326 , 96–192 (2011). [41] M. Fishman, S. White, and E. Stoudenmire, The ITen-sor Software Library for Tensor Network Calculations, SciPost Phys. Codebases , 4 (2022). [42] S. R. White, Density matrix formulation for quan-tum renormalization groups, Phys. Rev. Lett. 69 , 2863 (1992). [43] S. R. White and D. A. Huse, Numerical renormalization-group study of low-lying eigenstates of the antiferro-magnetic S=1 Heisenberg chain, Phys. Rev. B 48 , 3844 (1993). [44] S. Fey, S. C. Kapfer, and K. P. Schmidt, Quantum Criticality of Two-Dimensional Quantum Magnets with Long-Range Interactions, Phys. Rev. Lett. 122 , 017203 (2019). [45] P. Adelhardt, J. A. Koziol, A. Langheld, and K. P. Schmidt, Monte Carlo Based Techniques for Quantum Magnets with Long-Range Interactions, Entropy 26 
+
+(2024). [46] R. Botet, R. Jullien, and M. Kolb, Finite-size-scaling study of the spin-1 Heisenberg-Ising chain with uniaxial anisotropy, Phys. Rev. B 28 , 3914–3921 (1983). [47] T. Sakai and M. Takahashi, Effect of the Haldane gap on quasi-one-dimensional systems, Phys. Rev. B 42 ,4537–4543 (1990). [48] T. Tonegawa, T. Nakao, and M. Kaburagi, Ground-State Phase Diagram and Magnetization Curves of the Spin-1 Antiferromagnetic Heisenberg Chain with Bond Alternation and Uniaxial Single-Ion-Type Anisotropy, J. Phys. Soc. Jpn. 65 , 3317–3330 (1996). [49] W. Chen, K. Hida, and B. Sanctuary, Critical Prop-erties of Spin-1 Antiferromagnetic Heisenberg Chains with Bond Alternation and Uniaxial Single-Ion-Type Anisotropy, J. Phys. Soc. Jpn. 69 , 237–241 (2000). [50] W. Chen, K. Hida, and B. C. Sanctuary, Ground-state phase diagram of S = 1 XXZ chains with uniaxial single-ion-type anisotropy, Phys. Rev. B 67 (2003). [51] L. Campos Venuti, C. Degli Esposti Boschi, E. Ercolessi, G. Morandi, F. Ortolani, S. Pasini, and M. Roncaglia, Stable particles in anisotropic spin-1 chains, Eur. Phys. J. B 53 , 11–18 (2006). [52] Y.-C. Tzeng and M.-F. Yang, Scaling properties of fi-delity in the spin-1 anisotropic model, Phys. Rev. A 77 
+
+(2008). [53] Y.-C. Tzeng, H.-H. Hung, Y.-C. Chen, and M.-F. Yang, Fidelity approach to Gaussian transitions, Phys. Rev. A 77 (2008). [54] H. Ueda, H. Nakano, and K. Kusakabe, Finite-size scal-ing of string order parameters characterizing the Hal-dane phase, Phys. Rev. B 78 (2008). [55] A. F. Albuquerque, C. J. Hamer, and J. Oitmaa, Quantum phase diagram and excitations for the one-dimensional s = 1 Heisenberg antiferromagnet with single-ion anisotropy, Phys. Rev. B 79 (2009). [56] P. Adelhardt, J. Gritsch, M. Hille, D. A. Reiss, and K. P. Schmidt, Quantum phase transitions to topological Hal-dane phases in spin-one chains studied by linked-cluster expansions, Phys. Rev. B 96 (2017). [57] F. D. M. Haldane, Nonlinear Field Theory of Large-Spin Heisenberg Antiferromagnets: Semiclassically Quan-tized Solitons of the One-Dimensional Easy-Axis N´ eel State, Phys. Rev. Lett. 50 , 1153–1156 (1983). [58] F. Haldane, Continuum dynamics of the 1-D Heisenberg antiferromagnet: Identification with the O(3) nonlinear sigma model, Phys. Lett. A 93 , 464–468 (1983). [59] M. E. Fisher and M. N. Barber, Scaling theory for finite-size effects in the critical region, Phys. Rev. Lett. 28 ,1516–1519 (1972). [60] K. Binder, Finite size effects on phase transitions, Fer-roelectrics 73 , 43–67 (1987). [61] J. L. Cardy, ed., Finite-Size Scaling , Current Physics -Sources & Comments (Elsevier Science, London, Eng-land, 1988). [62] J. A. Koziol, A. Langheld, S. C. Kapfer, and K. P. Schmidt, Quantum-critical properties of the long-range transverse-field Ising model from quantum monte carlo simulations, Phys. Rev. B 103 (2021). [63] A. Langheld, J. A. Koziol, P. Adelhardt, S. Kapfer, and K. P. Schmidt, Scaling at quantum phase transitions above the upper critical dimension, SciPost Phys. 13 
+
+(2022). [64] H. E. Stanley, Scaling, universality, and renormaliza-tion: Three pillars of modern critical phenomena, Rev. Mod. Phys. 71 , S358–S366 (1999). [65] G. M. Crosswhite, A. C. Doherty, and G. Vidal, Ap-plying matrix product operators to model systems with long-range interactions, Phys. Rev. B 78 (2008). [66] B. Pirvu, V. Murg, J. I. Cirac, and F. Verstraete, Ma-trix product operator representations, New J. Phys. 12 ,19 
+
+025012 (2010). [67] C. Knetter and G. Uhrig, Perturbation theory by flow equations: dimerized and frustrated S = 1/2 chain, Eur. Phys. J. B 13 , 209 (2000). [68] C. Knetter, K. P. Schmidt, and G. S. Uhrig, The struc-ture of operators in effective particle-conserving models, J. Phys. A: Math. Gen. 36 , 7889 (2003). [69] K. Coester and K. P. Schmidt, Optimizing linked-cluster expansions by white graphs, Phys. Rev. E 92 (2015). [70] S. Fey and K. P. Schmidt, Critical behavior of quantum magnets with long-range interactions in the thermody-namic limit, Phys. Rev. B 94 , 075156 (2016). [71] J. Koziol, S. Fey, S. C. Kapfer, and K. P. Schmidt, Quan-tum criticality of the transverse-field Ising model with long-range interactions on triangular-lattice cylinders, Phys. Rev. B 100 (2019). [72] P. Adelhardt, J. A. Koziol, A. Schellenberger, and K. P. Schmidt, Quantum criticality and excitations of a long-range anisotropic XY chain in a transverse field, Phys. Rev. B 102 , 174424 (2020). [73] P. Adelhardt and K. P. Schmidt, Continuously varying critical exponents in long-range quantum spin ladders, SciPost Phys. 15 , 087 (2023). [74] P. Adelhardt, A. Duft, and K. P. Schmidt, Quantum-critical and dynamical properties of the XXZ bilayer with long-range interactions, Phys. Rev. B 111 , 024409 (2025). [75] S. Ejima and H. Fehske, Comparative density-matrix renormalization group study of symmetry-protected topological phases in spin-1 chain and Bose-Hubbard models, Phys. Rev. B 91 (2015). [76] F. Pollmann, A. M. Turner, E. Berg, and M. Oshikawa, Entanglement spectrum of a topological phase in one dimension, Phys. Rev. B 81 (2010). [77] X. Chen, Z.-C. Gu, and X.-G. Wen, Classification of gapped symmetric phases in one-dimensional spin sys-tems, Phys. Rev. B 83 (2011). [78] X. Chen, Z.-C. Gu, and X.-G. Wen, Complete classi-fication of one-dimensional gapped quantum phases in interacting spin systems, Phys. Rev. B 84 (2011). [79] F. Pollmann and A. M. Turner, Detection of symmetry-protected topological phases in one dimension, Phys. Rev. B 86 (2012). [80] G.-H. Liu, W. Li, W.-L. You, G. Su, and G.-S. Tian, En-tanglement spectrum and quantum phase transitions in one-dimensional S=1 XXZ model with uniaxial single-ion anisotropy, Physica B 443 , 63 (2014). [81] M. Den Nijs and K. Rommelse, Preroughening tran-sitions in crystal surfaces and valence-bond phases in quantum spin chains, Phys. Rev. B 40 , 4709 (1989). [82] N. Laflorencie, Quantum entanglement in condensed matter systems, Phys. Rep. 646 , 1–59 (2016). [83] P. Calabrese and J. Cardy, Entanglement entropy and quantum field theory, J. Stat. Mech.: Theory Exp. 2004 
+
+(06), P06002. [84] S. Hu, B. Normand, X. Wang, and L. Yu, Accurate de-termination of the Gaussian transition in spin-1 chains with single-ion anisotropy, Phys. Rev. B 84 (2011). [85] I. Fr´ erot, P. Naldesi, and T. Roscilde, Entanglement and fluctuations in the XXZ model with power-law interac-tions, Phys. Rev. B 95 , 245111 (2017). [86] J. Zhao, N. Laflorencie, and Z. Y. Meng, Unconventional Scalings of Quantum Entropies in Long-Range Heisen-berg Chains, Phys. Rev. Lett. 134 (2025). [87] O. K. Diessel, S. Diehl, N. Defenu, A. Rosch, and A. Chiocchetta, Generalized Higgs mechanism in long-range-interacting quantum systems, Phys. Rev. Res. 5,033038 (2023). [88] M. Song, J. Zhao, C. Zhou, and Z. Y. Meng, Dynamical properties of quantum many-body systems with long-range interactions, Phys. Rev. Res. 5, 033046 (2023). [89] J. Vidal, S. Dusuel, and T. Barthel, Entanglement en-tropy in collective models, J. Stat. Mech.: Theory Exp. 
+
+2007 (01), P01015–P01015. [90] G. Misguich, V. Pasquier, and M. Oshikawa, Finite-size scaling of the Shannon-R´ enyi entropy in two-dimensional systems with spontaneously broken contin-uous symmetry, Phys. Rev. B 95 (2017). [91] E. Lieb and D. Mattis, Ordering Energy Levels of Inter-acting Spin Systems, J. Math. Phys. 3, 749–751 (1962). [92] H. Lipkin, N. Meshkov, and A. Glick, Validity of many-body approximation methods for a solvable model: (i). Exact solutions and perturbation theory, Nucl. Phys. 
+
+62 , 188–198 (1965). [93] N. Meshkov, A. Glick, and H. Lipkin, Validity of many-body approximation methods for a solvable model: (ii). Linearization procedures, Nucl. Phys. 62 , 199–210 (1965). [94] K. Wilson, The renormalization group and the ε expan-sion, Phys. Rep. 12 , 75–199 (1974). [95] K. G. Wilson, The renormalization group and critical phenomena, Rev. Mod. Phys. 55 , 583–600 (1983). [96] C. Degli Esposti Boschi, E. Ercolessi, F. Ortolani, and M. Roncaglia, On c = 1 critical phases in anisotropic spin-1 chains, Eur. Phys. J. B 35 , 465–473 (2003). [97] A. Gogolin, A. Nersesyan, and A. Tsvelik, Bosonization and Strongly Correlated Systems (Cambridge University Press, 2004). [98] A. Dutta and J. K. Bhattacharjee, Phase transitions in the quantum Ising and rotor models with a long-range interaction, Phys. Rev. B 64 , 184106 (2001). [99] N. Defenu, A. Trombettoni, and S. Ruffo, Criticality and phase diagram of quantum long-range O( N ) mod-els, Phys. Rev. B 96 , 104432 (2017). [100] N. Defenu, A. Codello, S. Ruffo, and A. Trombettoni, Criticality of spin systems with weak long-range inter-actions, J. Phys. A: Math. Theor. 53 , 143001 (2020). [101] F. Simon, Quantum-critical properties of long-range Heisenberg ladders with quantum Monte Carlo simula-tions , Master’s thesis, Friedrich-Alexander-Universit¨ at Erlangen-N¨ urnberg (2024). [102] T. Gupta, N. V. Prokof’ev, and G. Pupillo, Bose-hubbard model with power-law hopping in one dimen-sion (2024), arXiv:2412.01571. [103] E. Flores-Sola, B. Berche, R. Kenna, and M. Weigel, Role of Fourier Modes in Finite-Size Scaling above the Upper Critical Dimension, Phys. Rev. Lett. 116 (2016). [104] B. Berche, T. Ellis, Y. Holovatch, and R. Kenna, Phase transitions above the upper critical dimension, SciPost Phys. Lect. Notes (2022). [105] M. Wittmann and A. P. Young, Finite-size scaling above the upper critical dimension, Phys. Rev. E 90 (2014). [106] B. Berche, R. Kenna, and J.-C. Walter, Hyperscaling above the upper critical dimension, Nucl. Phys. B 865 ,115–132 (2012). [107] Kenna and Berche, A new critical exponent “coppa” and its logarithmic counterpart “hat coppa”, Condens. Matter Phys. 16 , 23601 (2013). 20 
+
+[108] R. Kenna and B. Berche, Fisher’s scaling relation above the upper critical dimension, Europhys. Lett. 105 ,26005 (2014). [109] M. Vojta, Quantum phase transitions, Rep. Prog. Phys. 
+
+66 , 2069 (2003). [110] S. Sachdev, Quantum Phase Transitions (Cambridge University Press, 2011). [111] K. Fukui and S. Todo, Order-N cluster Monte Carlo method for spin systems with long-range interactions, J. Comput. Phys. 228 , 2629–2642 (2009). [112] S. Humeniuk, Thermal Kosterlitz–Thouless transitions in the 1 /r 2 long-range ferromagnetic quantum Ising chain revisited, J. Stat. Mech.: Theory Exp. 2020 (6), 063105. [113] L. Yang, P. Weinberg, and A. Feiguin, Topological to magnetically ordered quantum phase transition in anti-ferromagnetic spin ladders with long-range interactions, SciPost Phys. 13 (2022). [114] N. Laflorencie, I. Affleck, and M. Berciu, Critical phe-nomena and quantum phase transition in long range Heisenberg antiferromagnetic chains, J. Stat. Mech.: Theory Exp. 2005 (12), P12001–P12001. [115] M. F. Maghrebi, Z.-X. Gong, and A. V. Gorshkov, Con-tinuous symmetry breaking in 1d long-range interacting quantum systems, Phys. Rev. Lett. 119 (2017). [116] V. S. Liu, M. Bintz, M. Block, R. Samajdar, J. Kemp, and N. Y. Yao, Supersolidity and Simplex Phases in Spin-1 Rydberg Atom Arrays (2024), arXiv:2407.17554. [117] J. W. Britton, B. C. Sawyer, A. C. Keith, C.-C. J. Wang, J. K. Freericks, H. Uys, M. J. Biercuk, and J. J. Bollinger, Engineered two-dimensional Ising inter-actions in a trapped-ion quantum simulator with hun-dreds of spins, Nature 484 , 489 (2012). [118] S. Ebadi, T. T. Wang, H. Levine, A. Keesling, G. Semeghini, A. Omran, D. Bluvstein, R. Samajdar, H. Pichler, W. W. Ho, S. Choi, S. Sachdev, M. Greiner, V. Vuleti´ c, and M. D. Lukin, Quantum phases of mat-ter on a 256-atom programmable quantum simulator, Nature 595 , 227–232 (2021). [119] J. Hauschild and F. Pollmann, Efficient numerical simu-lations with Tensor Networks: Tensor Network Python (TeNPy), SciPost Phys. Lect. Notes (2018). [120] J. Hauschild, J. Unfried, S. Anand, B. Andrews, M. Bintz, U. Borla, S. Divic, M. Drescher, J. Geiger, M. Hefel, K. H´ emery, W. Kadow, J. Kemp, N. Kirchner, V. S. Liu, G. Moller, D. Parker, M. Rader, A. Romen, S. Scalet, L. Schoonderwoerd, M. Schulz, T. Soejima, P. Thoma, Y. Wu, P. Zechmann, L. Zweng, R. Mong, M. Zaletel, and F. Pollmann, Tensor network python (tenpy) version 1, SciPost Phys. Codebases (2024). [121] P. Weinberg and M. Bukov, Quspin: a Python pack-age for dynamics and exact diagonalisation of quantum many body systems part I: spin chains, SciPost Phys. 2
+
+(2017). [122] P. Weinberg and M. Bukov, Quspin: a Python pack-age for dynamics and exact diagonalisation of quan-tum many body systems. Part II: bosons, fermions and higher spins, SciPost Phys. 7 (2019).

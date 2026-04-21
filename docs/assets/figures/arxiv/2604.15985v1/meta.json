@@ -1,0 +1,86 @@
+{
+  "version": 2,
+  "extractor": "pdffigures2",
+  "figures": [
+    {
+      "url": "assets/figures/arxiv/2604.15985v1/fig-001.webp",
+      "caption": "Figure 4. Visualization of the Topogivity heuristic across the periodic table. The heatmap illustrates the machine-learned tendency of chemical elements to form topological bands, as",
+      "page": 11,
+      "index": 1,
+      "width": 1024,
+      "height": 506
+    },
+    {
+      "url": "assets/figures/arxiv/2604.15985v1/fig-002.webp",
+      "caption": "Figure 2. From Invariance to Equivariance in Graph Neural Networks. (a) Standard GNNs (e.g., SchNet) are rotationally invariant; rotating the input crystal structure leaves the predicted scalar property (e.g., Energy, E) unchanged (𝑓(𝑅𝑥) = 𝑓(𝑥)). This is suitable for potential energy surfaces. (b) E(3)Equivariant GNNs (e.g., NequIP, MagNet) explicitly encode rotation matrices into the message passing. Rotating the input results in a concomitant rotation of the output vector field (e.g., Forces, F, or Magnetic Spins, S), such that 𝑓(𝑅𝑥) = 𝑅𝑓(𝑥). This geometric fidelity is crucial for correctly modeling",
+      "page": 7,
+      "index": 2,
+      "width": 979,
+      "height": 535
+    },
+    {
+      "url": "assets/figures/arxiv/2604.15985v1/fig-003.webp",
+      "caption": "Figure 7. The Interpretability-Accuracy Trade-Off: Symbolic Regression (SISSO) vs. Black Box Models.",
+      "page": 22,
+      "index": 3,
+      "width": 976,
+      "height": 536
+    },
+    {
+      "url": "assets/figures/arxiv/2604.15985v1/fig-004.webp",
+      "caption": "Figure 3. The high-throughput computational workflow employed for the discovery of magnetic topological materials. Starting from experimental magnetic structures in the MAGNDATA database, the pipeline utilizes",
+      "page": 10,
+      "index": 4,
+      "width": 976,
+      "height": 502
+    },
+    {
+      "url": "assets/figures/arxiv/2604.15985v1/fig-005.webp",
+      "caption": "Figure 5. Classification of Magnetic Order via Momentum-Space Splitting. (a) Ferromagnet (FM): Exhibits macroscopic magnetization and isotropic (s-wave) spin splitting of the bands. (b) Antiferromagnet (AFM): Zero net magnetization with spin-degenerate bands (protected by PT symmetry). (c) Altermagnet: Exhibits zero net magnetization like an AFM, but features large, anisotropic spin splitting in momentum space. The figure illustrates a characteristic d-wave splitting pattern (e.g., in MnTe or RuO2), where the spin polarization reverses sign across nodal planes, driven by crystal rotation symmetries rather than relativistic Spin-Orbit Coupling.",
+      "page": 14,
+      "index": 5,
+      "width": 976,
+      "height": 535
+    },
+    {
+      "url": "assets/figures/arxiv/2604.15985v1/fig-006.webp",
+      "caption": "Figure 8. The Era of Inverse Design and Self-Driving Labs. A closed-loop Active Learning workflow. (1) Prediction: An ML agent (e.g., Bayesian Neural Network) selects candidate materials with high uncertainty or optimized properties (e.g., high Tc or Coercivity). (2) Synthesis: Robotic platforms execute the synthesis recipe automatically. (3) Characterization: Automated XRD or spectroscopy validates the structure. (4) Feedback: Results are fed back into the model to refine the decision boundary, reducing the number of experiments required by orders of magnitude.",
+      "page": 23,
+      "index": 6,
+      "width": 976,
+      "height": 506
+    },
+    {
+      "url": "assets/figures/arxiv/2604.15985v1/fig-007.webp",
+      "caption": "Table 1. Comparison of Neural Network Architectures in Quantum Materials",
+      "page": 8,
+      "index": 7,
+      "width": 982,
+      "height": 554
+    },
+    {
+      "url": "assets/figures/arxiv/2604.15985v1/fig-008.webp",
+      "caption": "Figure 1. High-Throughput Discovery of Topological Phases.",
+      "page": 4,
+      "index": 8,
+      "width": 976,
+      "height": 502
+    },
+    {
+      "url": "assets/figures/arxiv/2604.15985v1/fig-009.webp",
+      "caption": "Table 2: The AI-Discovered i-wave and g-wave Candidates",
+      "page": 20,
+      "index": 9,
+      "width": 982,
+      "height": 470
+    },
+    {
+      "url": "assets/figures/arxiv/2604.15985v1/fig-010.webp",
+      "caption": "Figure 6. The MatAltMag Discovery Pipeline. The workflow integrates large-scale pre-training with symmetry-aware fine-tuning. (1) Ingestion: The model ingests crystal structures from the ICSD. (2) Pretraining: A Graph Neural Network (GNN) learns general chemistry via self-supervised learning. (3) Screening: A physics-based filter removes candidates with PT symmetry (which forbids altermagnetism). (4) Fine-tuning: The model is refined on a small, curated dataset of known altermagnets. (5) Discovery: The engine identifies new candidates, including the elusive i-wave phases.",
+      "page": 16,
+      "index": 10,
+      "width": 976,
+      "height": 233
+    }
+  ]
+}
