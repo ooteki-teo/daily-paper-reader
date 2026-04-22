@@ -1,0 +1,671 @@
+Title: Directional selection of field-induced phases by weak anisotropy in triangular-lattice K$_2$Mn(SeO$_3$)$_2$
+
+URL Source: https://arxiv.org/pdf/2604.12489v1
+
+Published Time: Wed, 15 Apr 2026 01:02:58 GMT
+
+Number of Pages: 12
+
+Markdown Content:
+Directional selection of field-induced phases by weak anisotropy in triangular-lattice K2Mn(SeO 3)2
+
+Bin Wang, 1, 2, 3 Yantao Cao, 4, 3 Andi Liu, 5, 3 Guoliang Wu, 6 Jin Zhou, 5 Xiaobai Ma, 7 Wenyun Yang, 8 Takashi Ohhara, 9 Akiko Nakao, 10 Koji Munakata, 10 Bing Shen, 1 Zhendong Fu, 3
+
+Zhaoming Tian, 5 Qian Tao, 11 Zhu-an Xu, 11 Wei Li, 6 Jinkui Zhao, 2, ∗ and Hanjie Guo 3, †
+
+> 1
+
+Guangdong Provincial Key Laboratory of Magnetoelectric Physics and Devices, Center for Neutron Science and Technology, School of Physics, Sun Yat-Sen University, Guangzhou 510275, China 
+
+> 2
+
+School of Physical Sciences, Great Bay University, Dongguan 523808, China 
+
+> 3
+
+Songshan Lake Materials Laboratory, Dongguan 523808, China 
+
+> 4
+
+Institute of Physics, Chinese Academy of Sciences, Beijing 100190, China 
+
+> 5
+
+School of Physics and Wuhan National High Magnetic Field Center, Huazhong University of Science and Technology, Wuhan 430074, China 
+
+> 6
+
+Institute of Theoretical Physics, Chinese Academy of Sciences, Beijing 100190, China 
+
+> 7
+
+Neutron Scattering Laboratory, Department of Nuclear Physics, China Institute of Atomic Energy, Beijing 102413, P. R. China 
+
+> 8
+
+State key Laboratory of Artificial Microstructure and Mesoscopic PhysicsSchool of Physics, Peking University, Beijing 100871, P. R. China 
+
+> 9
+
+J-PARC Center, Japan Atomic Energy Agency, Tokai, Ibaraki 319-1195, Japan 
+
+> 10
+
+Neutron Science and Technology Center, CROSS, Tokai, Ibaraki 319-1106, Japan 
+
+> 11
+
+School of Physics, Zhejiang University, Hangzhou 310027, China 
+
+(Dated: April 15, 2026) Triangular-lattice systems host a variety of ground states, ranging from quantum spin liquids to magnetically ordered phases, the latter of which can exhibit a sequence of magnetic phase transitions under applied magnetic fields. Here, we report magnetic and thermodynamic measurements, combined with powder and single-crystal neutron diffraction, on a high-spin, nearly isotropic Mn 2+ 
+
+triangular-lattice system K 2Mn(SeO 3)2. The compound undergoes long-range magnetic ordering below TN ∼ 4 K in zero field. Contrary to expectations for an ideal Heisenberg system, the compound adopts an up-down-zero (UD0) magnetic structure down to the lowest temperature (0.05 K), rather than the commonly expected Y-type structure. This UD0 state is, however, highly sensitive to external magnetic fields. For fields applied along the c axis, it is readily destabilized and replaced by the Y-type structure, followed by an up-up-down (UUD) phase corresponding to the 1/3 magnetization plateau. In contrast, when the field is applied within the triangular plane, the system evolves into a canted Y state at a higher critical field. These results reveal that weak anisotropy, though small in magnitude, exerts a strongly orientation-dependent influence, playing a key role in selecting the field-induced phases in this frustrated magnet. 
+
+I. INTRODUCTION 
+
+Two-dimensional triangular-lattice antiferromagnets are prototypical frustrated systems that can host avariety of intriguing phases, such as spin liquids and spin supersolids. In a seminal work, Wannier showed that Ising spins on a triangular lattice form a highly degenerate ground state with a residual entropy of 0.3383 R [1]. Anderson, on the other hand, suggested that the Heisenberg spins would pair to form a resonant valence state (RVB), resisting ordering even at zero kelvin [2, 3]. Although later studies favored a 120 ◦
+
+ordered state both classically and quantum mechanically for the nearest-neighbor Heisenberg model [4], inclusion of next-nearest-neighbor interactions [5] or anisotropy [6] may still give rise to a RVB or quantum spin liquid   
+
+> ∗jkzhao@gbu.edu.cn
+> †hjguo@sslab.org.cn
+
+state. On the ordered side, depending on the anisotropy and the application of magnetic field along different directions, the triangular-lattice system can show rich phases such as the so-called Y state, the up-up-down (UUD) state, and the V state [7–10]. Notably, in a uniaxial system, the z and xy spin components of the Y and V states break the translation and U(1) rotation symmetries, respectively, representing a magnetic analog of the supersolid state [11]. However, experimental realization of the easy-axis anisotropy in the triangular-lattice transition-metal systems remains scarce until the discovery of Na 2BaCo(PO 4)2 [12–16] and K 2Co(SeO 3)2
+
+[17, 18] systems recently. At low temperatures, these systems exhibit a 1/3 magnetization plateau in modest magnetic fields, where the excitation spectra obtained from neutron scattering measurements can be well de-scribed by an XXZ model with easy-axis anisotropy. Upon decreasing the field, however, the sharp magnon dispersions evolve into continua, the origin of which remains under active debate, with possible explanations including two-magnon excitation and proximity to a
+
+> arXiv:2604.12489v1 [cond-mat.str-el] 14 Apr 2026
+
+2quantum spin liquid phase [13, 16–18]. The zero-field magnetic ground state for these systems is suggested to be the Y state, thus, forming a spin supersolid phase. However, we note that there is no unambiguous determi-nation of the magnetic structure in Na 2BaCo(PO 4)2 and K2Co(SeO 3)2. In Na 2BaCo(PO 4)2, up to five different magnetic structures, including the Y structure, can account for the observed experimental data due to the limited number of reflections [13]. Similarly, no definitive refinement of the magnetic structure of K 2Co(SeO 3)2 has been reported to date. In such a context, studies on relevant systems may provide new insights into the nature of the ground state and unusual excitation spectra. Neutron diffraction measurements on a high-spin analog of Na 2BaCo(PO 4)2,i.e., Na 2BaMn(PO 4)2 single crystal reveal complex spin structures under magnetic fields [19], and the importance of the interlayer interaction in stabilizing the different phases. A recent report of the magnetic excitations of K 2Mn(SeO 3)2 showed a similar excitation continuum coexisting with single magnon excitations, which is at-tributed to magnon-magnon interactions for the high-spin system [20]. Also, in this work, a non-collinear Y state is proposed for the zero-field ground state. In this paper, we perform comprehensive magnetic and thermodynamic, together with powder and single-crystal neutron diffraction measurements on K2Mn(SeO 3)2,demonstrating that the zero-field ground state is an up-down-zero (UD0) spin structure where one third of the moments remain disordered down to the lowest temper-ature. Such a partially disordered state is unexpected for a nearly Heisenberg triangular-lattice system and suggests a subtle interplay of competing interactions. We argue that it is stabilized by a weak single-ion anisotropy together with interlayer couplings that promote three-dimensional ordering, as indicated by the critical behav-ior of the phase boundary. This UD0 phase is, however, highly sensitive to external fields. A small magnetic field applied along the c axis rapidly overcomes the anisotropy and drives the system toward Heisenberg-like behavior. In contrast, for in-plane fields, the system evolves into a canted Y phase rather than the inverted-Y state expected for an ideal Heisenberg model. These results highlight that even weak anisotropy, though seemingly negligible, can play a decisive role in selecting magnetic ground states and governing their evolution in frustrated systems.  
+
+> II. EXPERIMENT
+
+Single crystals of K 2Mn(SeO 3)2 were synthesized using the flux method. High-purity K 2CO 3 (99.99%), MnO (99.5%), and SeO 2 (99.99%) were mixed and ground in a molar ratio of 1.2 : 0.95 : 2.2. The mixture was then loaded into a vacuum-sealed quartz tube and heated in a box furnace at a rate of 1 ◦C/min to 600 ◦C, and dwelled for 13 hours. Subsequently, the temperature was (a) (b) (c) abacb       
+
+> FIG. 1. (a) Crystal structure of K 2Mn(SeO 3)2.(b) Trian-gular network of the MnO 6within the ab plane. (c) Laue pattern of the single crystal with X-ray beam along the c
+> axis. The inset shows a photograph of the single crystal.
+
+lowered at a rate of 0.5 ◦C/min to 300 ◦C, followed by natural cooling to room temperature. Finally, plate-like single crystals with hexagonal facets were obtained after dissolving the flux in distilled water. The typical crystal dimension is approximately 4 × 3 × 1 mm 3, as shown in the inset of Fig. 1(c). The sharp spots in the Laue pattern indicate a high quality of the crystals; see Fig. 1(c). Single-crystal X-ray diffraction (XRD) measurements were performed on a D8 VENTURE diffractometer (Bruker) equipped with a Mo X-ray source. The data reduction was performed using the APEX5 software. The dc and ac magnetic susceptibility were measured using a Physical Property Measurement System (PPMS, Quantum Design). Heat capacity was measured on the same PPMS using the relaxation method. Neutron powder diffraction measurements were per-formed on the High Intensity Powder Diffractometer (PKU-HIPD) at China Advanced Research Reactor, Beijing. About 2 g of pulverized K 2Mn(SeO 3)2 single crystals were loaded into a vanadium can and cooled down to 2.2 K. The incident neutron wavelength was 1.477 ˚ A. Neutron single-crystal diffraction measurements were carried out on the SENJU time-of-flight (TOF) diffractometer in J-PARC, Japan. Two pieces of single crystals were aligned with their crystallographic c and [1 -1 0] axes, respectively, along the vertical field (max. 6.8 T) direction. The neutron wavelength ranges from 0.7 to 4.4 ˚ A. The data reduction and integration were per-formed using the in-house program of the beamline. The (magnetic) structure refinements were performed using the Jana2020 [21] and FullProf suite [22]. Additional magnetic symmetry analyses were conducted using the Bilbao Crystallographic Server (BCS) [23, 24] and the ISODISTORT website [25]. 30100 200 300 0.00 0.05 0.10 0.15 0.20 240.12 0.16 0.20 0510 01230246810 12 0.1 0.2 0.3 0.4 0.5 0.1 110 0.0 0.2 0.4 0.6 0.8 04812 0.0 0.5 1.0 246810 12 0.12 0.16 0.20     ( e m u ⋅O e - 1 ⋅m o l - 1 )
+
+> T
+> (K)
+> H
+> ||
+> c
+> H
+> ||
+> a* C W F i t
+> 0.1TZFC
+
+(a) 4K    
+
+> M
+> (
+> μB / M n )
+> μ0H(T)
+> 0.1K,H||c,integrated
+> 2K,H||c,integrated
+> 2K,H||c,dc
+> 2K,H||a*,dc
+> m
+> c
+> net
+> m
+> a*
+> net
+
+(b)    
+
+> dM/dH
+> (emu
+> ⋅m o l - 1 ⋅T - 1 )
+> μ0H(T)
+> 2K,
+> H
+> ||c
+> 2K,
+> H
+> ||a*
+
+(c)
+
+> H
+> c1
+> H
+> c2
+> H
+> c3
+>  ' ( e m u ⋅m o l - 1 ⋅O e - 1 )
+
+T
+
+(K) H | | c 2 9 H z
+
+> 9984Hz
+> H
+> ||a*
+> 29Hz
+> 9984Hz
+
+(d)
+
+>  ' ( e m u ⋅O e - 1 ⋅m o l - 1 )
+
+μ0 H ( T )
+
+> H
+> ||
+> c
+
+(e)    
+
+> 0.1K
+> 3.5K
+> 2.5K
+> 2K
+> 1K
+> 0.5K
+>  ' ( e m u ⋅m o l - 1 ⋅O e - 1 )
+> μ0H(T)
+> H
+> ||
+> a*
+
+(f)
+
+> 2K
+> 3.5K
+> 3K
+> 2.5K
+> 2.2K
+> 0.0
+> 0.2
+> 0.4
+> 0.6
+> 0.8
+> 0.00
+> 0.05
+> 0.10
+> 0.15
+> 2K
+> H||a*
+> H||c
+
+FIG. 2. (Color online) (a) Temperature dependence of the magnetic susceptibility measured with magnetic field applied along the c and a∗ directions. The inset highlights the low-temperature region. (b) Isothermal magnetization for the fields applied along the c and a∗ directions. The blue and cyan curves are obtained by integrating the ac susceptibility over magnetic field, as described in the text. The inset is an enlargement of the low-field region. (c) Magnetic field dependence of dM/dH. (d) Temperature dependence of the real component of the ac susceptibility, χ′. (e,f) Magnetic field dependence of χ′ measured at various temperatures with a driving frequency of 1429 Hz. 
+
+III. RESULTS 
+
+Single-crystal X ray diffraction data reveal that K2Mn(SeO 3)2 crystallizes in the trigonal space group 
+
+R¯3m (No.166), with lattice parameters a = b =5.5977(3) ˚ A, c = 18.5758(9)˚ A, and angles α = β =90 ◦, γ = 120 ◦ at room temperature. The detailed experimental conditions and structural parameters can be found in the Supporting Information (SI). All atomic sites are fully occupied without indication of anti-site disorder or partial occupancy. The quality of the single crystals was further confirmed by powder X-ray and neutron diffraction measurements on crushed crystals, with no trace of any impurity phases. The K 2Mn(SeO 3)2
+
+compound consists of magnetic triangular networks of Mn 2+ ions, which are ABC-stacked along the crystallo-graphic c axis, as shown in Fig. 1(a) and 1(b). The Mn 2+ 
+
+ions are coordinated by six equivalent O atoms with a trigonal distortion, forming octahedra elongated along the c axis. These MnO 6 octahedra are isolated from one another, sharing neither corners, edges, nor faces, and constitute the framework of the structure. Each Se 4+ 
+
+ion is coordinated by three O atoms to form a typical SeO 3 trigonal pyramid, with Se-O bond lengths of about 1.689 ˚ A, consistent with those observed in common selen-ite (SeO 2− 
+
+> 3
+
+) compounds [26–28]. The SeO 3 units exhibit pronounced non-centrosymmetric character, likely due to the stereochemically active lone pair on Se 4+ . The K +
+
+ions reside between the Mn-Se-O layers, serving both to balance charge and stabilize the structure. Figure 2 summarizes the magnetic property measure-ments. Fig. 2(a) presents the temperature dependence of the dc magnetic susceptibility, χ = M/H , under a magnetic field of 0.1 T applied along the a∗ and c
+
+directions. No bifurcation between the zero-field-cooled (ZFC) and field-cooled (FC) curves is observed. Thus, only the ZFC curves are shown. At high temperatures, the susceptibilities along the c and a∗ directions overlap and increase gradually upon cooling. Below around 4 K, 
+
+χc increases sharply, whereas χa∗ decreases slightly, and then is almost temperature independent. Curie-Weiss (CW) fits, χ(T ) = C/ (T −θCW ), to the high-temperature data (150–350 K) yield μeff = 6 .06 μB and θCW = -28.6 K for H ∥ a∗, and μeff = 6 .09 μB and θCW =-28.3 K for H ∥ c. The effective moment is consistent with the expected value (5.92 μB ) for the high-spin d5
+
+configuration of Mn 2+ (L = 0 and S = 5/2). The nearly identical CW temperatures indicate that the system is close to a Heisenberg limit with a nearest-neighbor antiferromagnetic exchange energy J = 3 θCW /nS (S + 1) of 1.62 K (0.14 meV), where n is the number of nearest-neighbor Mn 2+ ions within the plane. These results are consistent with a recent report [20]. The isotherms are shown in Fig. 2(b). When H ∥ c, a distinct magnetization plateau can be identified between 
+
+∼6 and 10 T at 2 K. The magnetization of the plateau 4amounts to about 1.64 μB/Mn, very close to 1/3 of the theoretical saturation moment (1.67 μB/Mn), indicating the presence of a UUD state. Such behavior is absent when H ∥ a∗, indicating the existence of anisotropy below TN. A closer inspection of the low-field data reveals additional features, with an abrupt increase of the magnetization around zero field when H ∥ c, and a kink at about 0.5 T when H ∥ a∗; see the inset of Fig. 2(b). These meta magnetic transitions become more obvious in dM/dH as shown in Fig. 2(c). Although there is no obvious magnetization plateau in the MH curve when 
+
+H ∥ a∗, a broad peak can be identified in dM/dH at about 7.5 T and 2 K. To probe further possible magnetic transitions below 2 K, we performed ac susceptibility measurements down to 50 mK. As shown in Fig. 2(d), the real component of the ac susceptibility, χ′, shows a sharp increase below 
+
+TN, and becomes almost temperature independent below about 1 K when the field is along the c direction. Similar temperature-independent behavior is also observed when the field is applied along the a∗ direction, albeit with a magnitude of about 1/7 of that of χ′
+
+> c
+
+, suggesting an easy-axis anisotropy along the c axis. Moreover, it can be found that there is no frequency dependence along both directions, indicating that it is a long-range magnetically ordered state, rather than a spin glass state. Since there is no frequency dependence, we performed additional ac susceptibility measurements as a function of dc fields, from which the critical fields can be extracted as shown in Fig. 2(e) and 2(f). In addition, the integration of χ′ over 
+
+H gives rise to the magnetization. As shown in Fig. 2(b), the magnetization obtained in this way coincides with that from the dc measurements at 2 K. The 0.1 K data show that the plateau retains a magnetization of 1.84 
+
+μB/Mn, which is larger than that expected for 1/3 of the saturation moment, probably arising from the presence of van Vleck paramagnetism. To get more insights into the phase transitions, we per-formed specific heat measurements under different fields, as shown in Fig. 3. A sharp peak can be observed at TN
+
+= 3.9 K, in line with the susceptibility measurements. A careful inspection of the temperature response curve around the transition temperature reveals a kink during the heating and cooling processes, suggesting a first-order transition with latent heat. The magnetic specific heat, 
+
+Cm, is obtained by subtracting the phonon contributions using K2Mg(SeO 3)2 as a nonmagnetic analog. The entropy change, ∆ Sm, is obtained then by integrating 
+
+Cm/T over temperature and shown in Fig. 3(b). ∆Sm
+
+tends to saturate at 40 K to 14.5 J/(mol-K), close to the expected value for an S = 5/2 state, indicating no further transitions are expected below 300 mK. Note that the entropy released above TN amounts to 56% of 
+
+Rln6, suggesting that short-range correlations develop well above TN.When a field is applied along the c axis, the peak at 
+
+TN splits into two peaks, with one moving toward higher temperatures and the other toward the opposite side.                    
+
+> TABLE I. Irreducible representations together with basis vectors ψνfor Mn ions at the 3 asite with space group R¯3m
+> and propagation vector k= (1/3 1/3 0). IRs ψνMn Γ1ψ1(1 1 0) Γ2ψ2(1 -1 0)
+> ψ3(0 0 1)
+
+The low-temperature peak is more sensitive to the field and is almost indiscernible above 8 T. On the other hand, the high-temperature peak shifts to high temperatures first, and moves downward above 8 T, forming a dome shape in the phase diagram, as shown in Fig. 3(e). Also note that the high-temperature peaks at 0 and 12 T are sharper than that in-between, indicating different nature for these transitions. Similar splitting is also observed when the field is applied along the a∗ direction, albeit at higher critical fields. Moreover, the high-temperature peak remains sharp in this field direction. Combining the specific heat and magnetization measurements, atentative phase diagram is drawn in Fig. 3(e) and 3(f) for fields along the c and a∗ directions, respectively. Notably, the UUD phase region in Fig. 3(e) expands at higher temperature, suggesting that it is stabilized by thermal fluctuations. The persistence of a finite field range for the UUD phase down to near-zero temperature indicates that quantum fluctuations and/or magnetic anisotropy also play an important role [9]. To unveil the nature of these different phases, we performed powder and single-crystal neutron diffraction measurements at different fields. Fig. 4 shows the neutron powder diffraction pattern collected at 2.2 K. Compared to the 50-K data, additional reflections can be observed at 2.2 K, indicating a long-range magnetic ordering. These additional reflections can be indexed with a commensurate propagation vector k = (1/3 1/3 0); see Fig. 4(b). For magnetic symmetry analysis, we use the BasIreps program within the FullProf package. For the Mn ions at the 3 a site, the magnetic representation is decomposed into two irreducible representations (IRs) as: Γ = Γ 1 ⊕ 2Γ 2. The basis vectors for these IRs are shown in Tab. I. As can be seen, the moments are constrained along the [1 1 0] direction for Γ 1, while they are within the planes spanned by the [1 -1 0] and [0 0 1] directions for Γ 2.The experimental data can be best described by Γ 2
+
+with a combination of the two basis vectors. However, the propagation vector k = (1/3 1/3 0) can result in certain ambiguity in the magnetic structure. This can be best seen by considering that the moment at the l
+
+lattice can be expressed as ml = m0cos(2 πk · Rl + φ0), where Rl is the lattice vector and φ0 is an initial phase. When φ0 = 0, it will give rise to a magnetic structure of the up-down-down (U D 
+
+> 2
+> D
+> 2
+
+) type with the size of the down moment half that of the up moment. On the other hand, if φ0 = π/2, a partial disordered phase is realized, in which one third of the moments are disordered, while the 5110 025 50 100 225 350 3.85 3.90 3.95 010 20 30 40 0510 15 01234560246810 12 01234560246810 Cp (J mol -1  K -1 )T (K)  K 2Mn(SeO 3)2 K 2Mg(SeO 3)2H = 0 T (a) Tplat  (K) Time(s)  S m ( J m o l - 1 K - 1 )
+
+T
+
+(K)
+
+> R
+> ln(6)
+> H
+> =0T
+
+(b)
+
+> C
+> m
+> /
+> T
+> (Jmol
+> -1
+> K
+> -2
+> )
+
+T
+
+(K)
+
+> H
+> ||c
+> 12T
+> 10T
+> 9T
+> 8T
+> 6T
+> 4T
+> 3T
+> 0T
+
+(c)
+
+> C
+> m
+> /
+> T
+> (Jmol
+> -1
+> K
+> -2
+> )
+
+T
+
+(K)
+
+> H
+> ||a*
+> 12T
+> 10T
+> 8T
+> 7T
+> 4T
+> 2T 0 T
+
+(d)
+
+> 0
+> 2
+> 4
+> 6
+> 8
+> 10
+> 12
+> 0
+> 2
+> 4
+> 6
+> 8
+> C
+> m
+> /
+> T
+> d
+> M
+> /d
+> H
+> χ'
+> T
+> (K)
+
+μ0 (Τ) 
+
+> 0.0
+> 4.0
+> C
+> m
+> /
+> T
+> (J/mol-K
+> 2
+> )
+> H
+> ||
+> c
+
+(f)        
+
+> Y
+> ?
+> cantedY
+> V?
+> UUD
+> UD0
+> UD0
+> PM
+> φ=0.61(4)
+> 0
+> 2
+> 4
+> 6
+> 8
+> 10
+> 12
+> 0
+> 2
+> 4
+> 6
+> 8
+> C
+> m
+> /
+> T
+> d
+> M
+> /d
+> H
+> χ'
+> C
+> m
+> (H)
+> T
+> (K)
+
+μ0 (Τ) 
+
+> H
+> ||
+> a*
+
+(e)         
+
+> PM
+> φ=1.089(8)
+
+FIG. 3. (a) Temperature dependence of the zero-field specific heat for K 2Mn(SeO 3)2. The data of K 2Mg(SeO 3)2 is also shown as a phonon reference. The inset shows the temperature response curve near the first-order transition temperature during the specific heat measurement. (b) Magnetic entropy change obtained by integrating the magnetic specific heat Cm/T 
+
+over temperature. (c,d) Temperature dependence of the magnetic specific heat measured under different field strengths. (e,f) Magnetic phase diagram of K 2Mn(SeO 3)2 for field applied along the c and a∗ directions, respectively. The circles indicate the positions where single-crystal neutron diffraction measurements were performed. The blue dashed line in (f) is an extrapolation based on the observation above 2 K. The violet dashed lines in (e) and (f) are critical fits as described in the text. 
+
+remaining two thirds have equal magnitude but point in opposite directions – dubbed as a UD0 phase. The former and latter structures would correspond to a magnetic space group C2′/m ′ and C2′/m , respectively, as obtained from the BCS. A refinement based on the U D 
+
+> 2
+> D
+> 2
+
+model yields an up moment of 5.5(2) μB/Mn. This is larger than the maximum value for Mn 2+ (5 μB/Mn). On the other hand, the UD0 model gives rise to an equal size of moment for the U and D spins of 4.8(2) μB/Mn. Therefore, based on the argument of moment size, the system is believed to order in the UD0 structure at zero field. Such a model differs from that expected for the triangular lattice Heisenberg model, which predicts a Y-type structure at zero field [7]. The Y phase can be constructed by a linear combination of the basis vectors of Γ 2 such that ψ = Aψ 2 + iBψ 3 with B/A = 1 .73. More generally, the spiral will have an elliptical envelope if B/A ̸ = 1.73. Such a model cannot describe the experimental data satisfactorily, especially for the (1/3 -2/3 1) peak at 2Θ = 11 .08 ◦; see the SI for more details. Single-crystal neutron diffraction measurements con-firm the propagation vector k = (1/3 1/3 0) at zero field. When H ∥ c, the propagation vector remains unchanged up to 6.8 T; see Fig. S2 in the SI. On the other hand, when a field larger than 0.7 T is applied along the [1 -1 0] direction, an additional propagation vector k∗=(1/3 1/3 3/2) appears, indicating a modulation of the magnetic structure along the c axis, and nonnegligible interactions between the triangular planes. Refinement of the zero-field magnetic structure against the single-crystal data confirms the powder results, namely a UD0 structure rather than a U D 
+
+> 2
+> D
+> 2
+
+or Ystructure. Moreover, our refinements show the presence of three K domains, which are connected to the three arms of the star [ k1 = (1/3 1/3 0), k2 = (1/3 -2/3 0), and k3 = (-2/3 1/3 0)]. To solve the magnetic structure in fields, we first consider the possible realization of a UUD phase at 6.8 T when the field is parallel to the c
+
+axis. Such a model would require the disordered moment at zero field to attain a nonzero moment. Moreover, our angular dependence of the magnetization in a field of 2 T indicates that the moment is nearly isotropic within the bc plane at high fields; see Fig. S1 in the SI. Therefore, it could be expected that all the moments are along the c axis, either parallel or antiparallel to the field direction. Such a state would be consistent with the magnetic structure with magnetic space group C2′
+
+based on the BCS analysis. This structure allows non-zero magnetic moments on the three sublattices, while remaining constrained within the [1 -1 0]-c plane. We impose further constraints that the moments are of the same size and parallel to the magnetic field direction 620 40 60 80 100 120 140 Intensity (arb. u.) 2Θ ( d e g . )
+
+> I
+> obs.
+> I
+> cal.
+> I
+> diff.
+> nucl.
+> mag.
+> T
+> =2.2K
+> R
+> mag
+> =9.85%
+> T
+> =2.2K
+> 10
+> 20
+> 30
+> 40
+> 50
+> I
+> obs.
+> I
+> cal.
+> I
+> diff.
+> nucl.
+> mag.
+> 50K
+> Intensity(arb.u.)
+
+2
+
+Θ ( d e g . )
+
+(a)
+
+(b)
+
+FIG. 4. (a) Simultaneous nuclear and magnetic structure refinements against the powder neutron diffraction pattern for K 2Mn(SeO 3)2 collected at 2.2 K. (b) Enlargement of the low-2 θ region. The 50-K dataset is also shown for comparison. 
+
+(along the c axis). The calculated intensities are found to be in good agreement with the observed ones. Moreover, the net moment is close to the magnetization measured at 2 K, as shown in Fig. 2(b). In fact, the magnitude of the net moment imposes strong constraints on the magnetic structure. For example, such a collinear UUD structure can also describe the 4-T data. However, this would give rise to a net moment of 1.35 μB/Mn, much larger than the experimental observation. Thus, the two U moments should rotate away from the c axis, resulting in the so-called Y structure. The refinement is satisfactory, and the net moment is in excellent agreement with the experiment; see Fig. 2(b) and the SI for more details. Moving to the H ∥ [1 -1 0] case. First we note that the applied magnetic field breaks the three-fold rotation, thus, no signature of domain formation is observed. Symmetry analysis by incorporating both the 
+
+k1 = (1/3 1/3 0) and k∗ = (1/3 1/3 3/2) propagation vectors results in sixteen maximal subgroups. Careful examination of these magnetic structures, excluding the ones with zero net moment etc. finally shows that only the magnetic space group C2′/c ′ can describe the exper-imental data satisfactorily. The moments on the three sublattices are constrained to have the same size, but free to rotate within the [1 -1 0]-c plane. The best refinements H (4 T) || c, 2 K H (6.8 T) || c, 2 K H (6.8 T) || [1-1 0], 2 K cababbacc0 T, 2.2 K (a) (d) (c) (b) cabbaUD0 YUUD canted Y H = 4 T H = 6 T 
+
+FIG. 5. Representative magnetic structures. (a) The UD0 structure at zero field. (b) The Y-type structure at 4 T when 
+
+H ∥ c. (c) The UUD-type structure at 6.8 T when H ∥ c. (d) The canted Y-type structure at 6.8 T when H ∥ [1 -1 0]. The lower insets show the rotation of the spins with increasing fields. 
+
+show that one of the three sublattice moments lies almost within the triangular plane, while the other two are nearly antiparallel and orient close to the c axis. With increasing fields, these two moments progressively tilt toward the field direction. The representative magnetic structures can be found in Fig. 5. 
+
+IV. DISCUSSION 
+
+A high-spin Mn 2+ system is expected to behave isotropically as a result of the quenched orbital moment to the first-order approximation. This seems also to be the case for K 2Mn(SeO 3)2, as evidenced by the nearly identical Curie-Weiss temperatures along and perpendic-ular to the c axis, and the weak angular dependence of the magnetization at 10 K. For such an isotropic high-spin system, classical Monte Carlo simulations suggest a 120 ◦ structure in zero field, followed by successive transitions to a UUD state, a V state, and finally a fully polarized state in fields [7]. Similar phase transitions are also predicted for the Ising-like XXZ model both for the quantum and classical spins [9]. In addition, a UD0 or U D 
+
+> 2
+> D
+> 2
+
+state can also be stabilized in the intermediate temperature range between the paramagnetic and Ystates in an easy-axis system [29–31]. Such a UD0 state has also been observed in VCl 2 and VBr 2 [32], 7and in EuCo 2Al 9 [33] recently. It is interesting to note that all these systems have a relatively large spin number and the orbital moment is quenched. In such systems, the single-ion anisotropy is suggested to be more significant than the anisotropic exchange interactions [31]. In K 2Mn(SeO 3)2, the elongated trigonal distortion of the MnO 6 octahedra is expected to give rise to an easy-axis single-ion anisotropy term DS 2 
+
+> z
+
+with anegative D [34], favoring moment alignment along the 
+
+c axis. However, our magnetic structure refinement shows that the moments are canted away from the c
+
+axis by about 33 ◦, consistent with the angular-dependent magnetization measurements. Since the value of D is expected to be very small (in the order of 0.001 meV for O6 coordination) [35, 36], we propose that the interlayer interactions cannot be neglected; instead, they compete with the single-ion anisotropy and ultimately determine the moment orientation. Evidence of the three-dimensional (3D) ordering can be drawn from the phase boundary analysis. In auniaxial symmetry system, by mapping the long-range magnetically ordered state into a lattice of bosons, the UUD state corresponds to a 1/3-filled bosonic crystal, while the transverse (XY) ordering in the Y phase is associated with a Bose-Einstein condensation (BEC) [37]. The phase boundary should follow BEC universality such that Tc ∝ |Hc(0) − Hc(T )|ϕ, where ϕ = z/d with dynamic exponent z = 2, and d the spatial dimensionality [37]. Analysis in the vicinity of the critical point when 
+
+H ∥ c yields ϕ = 0.61(4), and Hc(0) = 7.18(5) T. The value of ϕ is close to the expected value of 2/3 for a three-dimensional ( d = 3) BEC. Similar analysis for 
+
+H ∥ a∗ yields ϕ = 1.089(8). However, the application of a magnetic field along the a∗ direction breaks the uniaxial symmetry explicitly, and the magnetic structure above the critical field is unknown in the present study. Therefore, the nature of this nearly linear behavior when H ∥ a∗ remains unclear, which deserves further investigations in the future. The 3D character of the system may stabilize the UD0 phase down to the mea-sured lowest temperature in zero field, as no additional apparent anomaly is observed in the specific heat and ac susceptibility. As a comparison, similar systems such as EuCo 2Al 9 [33, 38] and Na 2BaMn(PO 4)2 [19, 39, 40] display a second anomaly below TN in the specific heat, corresponding to the ordering of the XY component. Upon application of a magnetic field, however, the UD0 phase is rapidly suppressed, as evidenced by the abrupt changes of the isothermal magnetization curves at Hc1;see Fig. 2(c). Note that the transition at Hc1 is much sharper than those at Hc2 and Hc3, indicating that the former is likely first-order, whereas the latter are second-order transitions. In addition, the critical field Hc1 along the c axis is significantly smaller than that along the a∗
+
+direction, indicating that despite the expected weakness of the anisotropy, it can still govern the field-induced behavior of the system.  
+
+> V. CONCLUSIONS
+
+In summary, we have performed a detailed investi-gation on the phase diagram of the nearly Heisenberg system K 2Mn(SeO 3)2 characterized by almost identical Curie-Weiss temperatures along and perpendicular to the 
+
+c axis. In zero field, the system adopts a UD0 magnetic structure down to the lowest temperature, rather than the Y-type structure expected for an ideal Heisenberg system. When a field is applied along the c axis, the UD0 state is readily destabilized and gives way to the Y phase, followed by the UUD phase, and possibly the V phase at higher fields. When the field is applied within the triangular plane, the system evolves into a canted Y structure, also distinct from the inverted-Y structure expected for the ideal Heisenberg system. Moreover, we identify a three-dimensional BEC when the field is applied along the c axis. These results indicate that despite the weakness of the anisotropy in K 2Mn(SeO 3)2 with quenched orbital moment, the anisotropy plays a vital role in governing the magnetic behavior across the phase diagram. Our study highlights the rich variety of phases accessible in this classical spin system and suggests that real quantum magnets can exhibit unexpected behavior beyond idealized models. It will also be interesting to explore how the remaining disordered moments in the UD0 phase will affect the spin dynamics. Specifically, will it give rise to excitation continua as observed in several related systems? Future studies on Na 2BaCo(PO 4)2 and K 2Co(SeO 3)2, aiming at unambiguously determining their magnetic structures are highly desirable.  
+
+> VI. ACKNOWLEDGEMENT
+
+We thank Shang Gao for valuable discussions. This work was supported by the Guangdong Ba-sic and Applied Basic Research Foundation (Grant No. 2022B1515120020, 2023B151520013), the National Research and Development Program of China (No. 2023YFF0718400, 2023YFA406501) and the Guangdong Provincial Quantum Science Strategic Initiative (Grant No. GDZX2501006). We gratefully acknowledge the neutron beamtime at the Materials and Life Science Ex-perimental Facility of the J-PARC under a user program (Proposal No. 2025A0236).   
+
+> [1] G. H. Wannier, Antiferromagnetism. the triangular ising net, Phys. Rev. 79 , 357 (1950). [2] P. W. Anderson, Resonating valence bonds: A new kind of insulator?, Mat. Res. Bull. 8, 153 (1973).
+
+8
+
+[3] P. W. Anderson, The resonating valence bond state in la2cuo4 and superconductivity, Science 235 , 1196 (1987). [4] L. Capriotti, A. E. Trumper, and S. Sorella, Long-Range N´ eel Order in the Triangular Heisenberg Model, Phys. Rev. Lett. 82 , 3899 (1999). [5] Y. Iqbal, W.-J. Hu, R. Thomale, D. Poilblanc, and F. Becca, Spin liquid nature in the Heisenberg J1 − J2
+
+triangular antiferromagnet, Phys. Rev. B 93 , 144411 (2016). [6] Z. Zhu, P. A. Maksimov, S. R. White, and A. L. Chernyshev, Topography of spin liquids on a triangular lattice, Phys. Rev. Lett. 120 , 207203 (2018). [7] H. Kawamura and S. Miyashita, Phase transition of the heisenberg antiferromagnet on the triangular lattice in a magnetic field, J. Phys. Soc. Jpn. 54 , 4530 (1985). [8] A. V. Chubukov and D. I. Golosov, Quantum theory of an antiferromagnet on a triangular lattice in a magnetic field, J. Phys.: Condens. Matter 3, 69 (1991). [9] D. Yamamoto, G. Marmorini, and I. Danshita, Quantum phase diagram of the triangular-lattice xxz model in a magnetic field, Phys. Rev. Lett. 112 , 127203 (2014). [10] D. Yamamoto, G. Marmorini, M. Tabata, K. Sakakura, and I. Danshita, Magnetism driven by the interplay of fluctuations and frustration in the easy-axis triangular xxz model with transverse fields, Phys. Rev. B 100 ,140410 (2019). [11] M. Boninsegni and N. V. Prokofev, Colloquium: Super-solids: What and where are they?, Rev. Mod. Phys. 84 ,759 (2012). [12] R. Zhong, S. Guo, G. Xu, Z. Xu, and R. J. Cava, Strong quantum fluctuations in a quantum spin liquid candidate with a co-based triangular lattice, Proc. Natl. Acad. Sci. 
+
+116 , 14505 (2019). [13] J. Sheng, L. Wang, A. Candini, W. Jiang, L. Huang, B. Xi, J. Zhao, H. Ge, N. Zhao, Y. Fu, J. Ren, J. Yang, P. Miao, X. Tong, D. Yu, S. Wang, Q. Liu, M. Kofu, R. Mole, G. Biasiol, D. Yu, I. A. Zaliznyak, J.-W. Mei, and L. Wu, Two-dimensional quantum universality in the spin-1/2 triangular-lattice quantum antiferromagnet na2baco(po4)2, Proc. Natl. Acad. Sci. 119 , e2211193119 (2022). [14] Y. Gao, Y.-C. Fan, H. Li, F. Yang, X.-T. Zeng, X.-L. Sheng, R. Zhong, Y. Qi, Y. Wan, and W. Li, Spin supersolidity in nearly ideal easy-axis triangular quantum antiferromagnet na2baco(po4)2, npj Quantum Mater. 7,89 (2022). [15] J. Xiang, C. Zhang, Y. Gao, W. Schmidt, K. Schmalzl, C.-W. Wang, B. Li, N. Xi, X.-Y. Liu, H. Jin, G. Li, J. Shen, Z. Chen, Y. Qi, Y. Wan, W. Jin, W. Li, P. Sun, and G. Su, Giant magnetocaloric effect in spin supersolid candidate na2baco(po4)2, Nature 625 , 270 (2024). [16] J. Sheng, L. Wang, W. Jiang, H. Ge, N. Zhao, T. Li, M. Kofu, D. Yu, W. Zhu, J.-W. Mei, Z. Wang, and L. Wu, Continuum of spin excitations in an ordered magnet, The Innovation 6, 100769 (2025). [17] M. Zhu, V. Romerio, N. Steiger, S. D. Nabi, N. Mu-rai, S. Ohira-Kawamura, K. Y. Povarov, Y. Skourski, R. Sibille, L. Keller, Z. Yan, S. Gvasaliya, and A. Zhe-ludev, Continuum excitations in a spin supersolid on a triangular lattice, Phys. Rev. Lett. 133 , 186704 (2024). [18] T. Chen, A. Ghasemi, J. Zhang, L. Shi, Z. Tagay, Y. Chen, L. Chen, E. S. Choi, M. Jaime, M. Lee, Y. Hao, H. Cao, B. L. Winn, A. A. Podlesnyak, D. M. Pajerowski, R. Zhong, X. Xu, N. P. Armitage, R. Cava, and C. Bro-holm, Phase diagram and spectroscopic signatures of a supersolid in the quantum ising magnet k2co(seo3)2, Nat. Commun. 17 , 2914 (2026). [19] N. Biniskos, F. J. d. Santos, M. Stekiel, K. Schmalzl, E. Ressouche, D. Svit´ ak, A. Labh, M. Valiˇ ska, N. Marzari, and P. ˇCerm´ ak, Spin structures and phase diagrams of the spin-5/2 triangular lattice antiferromag-net na2bamn(po4)2 under magnetic field, Phys. Rev. B 
+
+112 , 174429 (2025). [20] M. Zhu, V. Romerio, D. Moser, K. Y. Povarov, R. Sibille, R. Wawrzynczak, Z. Yan, S. Gvasaliya, A. L. Cherny-shev, and A. Zheludev, Dynamics and thermodynamics of the s = 5/2 almost-heisenberg triangular lattice anti-ferromagnet k2mn(seo3)2, arXiv , 2602.11983 (2026). [21] V. Petˇ r´ ıˇ cek, L. Palatinus, J. Pl´ aˇ sil, and M. Duˇ sek, Jana2020?c a new version of the crystallographic com-puting system jana, Z. Kristallogr. 238 , 271 (2023). [22] J. Rodr´ ıguez-Carvajal, Recent advances in magnetic structure determination by neutron powder diffraction, Physica B 192 , 55 (1993). [23] M. I. Aroyo, A. Kirov, C. Capillas, J. M. Perez-Mato, and H. Wondratschek, Bilbao Crystallographic Server. II. Representations of crystallographic point groups and space groups, Acta Cryst. 62 , 115 (2006). [24] J. Perez-Mato, S. Gallego, E. Tasci, L. Elcoro, G. de la Flor, and M. Aroyo, Symmetry-based computational tools for magnetic crystallography, Annu. Rev. Mater. Res. 45 , 217 (2015). [25] H. T. Stokes, D. M. Hatch, B. J. Campbell, and D. E. Tanner, Isodisplace: a web-based tool for exploring structural distortions, J. Appl. Cryst. 39 , 607 (2006). [26] H. Jo, S. Lee, K. Y. Choi, and K. M. Ok, Li6m(seo3) 4 (m= co, ni, and cd) and li2zn (seo3) 2: selenites with late transition-metal cations, Inorganic Chemistry 57 , 3465 (2018). [27] S.-J. Oh, D. W. Lee, and K. M. Ok, Influence of the cation size on the framework structures and space group centricities in amo2o5 (seo3) 2 (a= sr, pb, and ba), Inorganic Chemistry 51 , 5393 (2012). [28] S. V. Krivovichev, E. Y. Avdontseva, and P. C. Burns, Synthesis and crystal structure of pb3o2 (seo3), Zeitschrift f¨ ur anorganische und allgemeine Chemie 630 ,558 (2004). [29] S. Miyashita and H. Kawamura, Phase transitions of anisotropic heisenberg antiferromagnets on the triangular lattice, J. Phys. Soc. Jpn. 54 , 3385 (1985). [30] S. Miyashita, Magnetic properties of ising-like heisenberg antiferromagnets on the triangular lattice, J. Phys. Soc. Jpn. 55 , 3605 (1986). [31] P. E. Melchy and M. E. Zhitomirsky, Interplay of anisotropy and frustration: Triple transitions in atriangular-lattice antiferromagnet, Phys. Rev. B 80 ,064411 (2009). [32] K. Hirakawa, H. Kadowaki, and K. Ubukoshi, Study of frustration effects in two-dimensional triangular lattice antiferromagnetscneutron powder diffraction study of vx2, xcl, br and i, J. Phys. Soc. Jpn. 52 , 1814 (1983). [33] S. Xu, J.-F. Zhang, S.-X. Li, J. Lin, X. Ma, W. Yang, J.-J. Mi, Z. Li, T.-H. Li, Y.-Y. Wu, J. Ma, Q. Tao, W.-H. Jiao, X. Xu, Z. Zhu, Y. Xu, H. Guo, T.-L. Xia, and Z.-A. Xu, Giant anomalous hall conductivity in frustrated magnet euco2al9, Materials Today 95 , 103285 (2026). [34] J. C. Hempel, Trigonal ligand field and zero field split-ting diagrams for the d5 configuration, The Journal of 9
+
+Chemical Physics 64 , 4307 (1976). [35] C. Duboc, M.-N. Collomb, and F. Neese, Understanding the zero-field splitting of mononuclear manganese(ii) complexes from combined epr spectroscopy and quantum chemistry, Applied Magnetic Resonance 37 , 229 (2009). [36] M. Shu, W. Dong, J. Jiao, J. Wu, G. Lin, Y. Kamiya, T. Hong, H. Cao, M. Matsuda, W. Tian, S. Chi, G. Ehlers, Z. Ouyang, H. Chen, Y. Zou, Z. Qu, Q. Huang, H. Zhou, and J. Ma, Static and dynamical properties of the spin- 52 nearly ideal triangular lattice antiferromagnet ba 3mnsb 2o9, Phys. Rev. B 108 , 174424 (2023). [37] V. Zapf, M. Jaime, and C. D. Batista, Bose-einstein condensation in quantum magnets, Rev. Mod. Phys. 86 ,563 (2014). [38] M. Shu, X. Xu, N. Xi, M. He, J. Xiang, G. Qu, D. Khalyavin, P. Manuel, J. G. Nakamura, J. Jiao, Y. Liu, G. Wu, K. Guo, H. Zhao, W. Xu, Q. Duan, R. Zhong, X. Wang, Y. Han, L. Ling, X. Sun, D. Song, Y. Gao, Z. Wang, X. Chen, T. Qian, S. Jia, H. Du, G. Su, W. Li, J. Ma, and Z. Qu, Giant magnetocaloric effect and spin supersolid in a metallic dipolar magnet, Nature 651 ,61 (2026). [39] J. Kim, K. Kim, E. Choi, Y. Joon Ko, D. Woo Lee, S. Ho Lim, J. Hoon Jung, and S. Lee, Magnetic phase diagram of a 2-dimensional triangular lattice antiferro-magnet Na 2BaMn(PO 4)2, J. Phys.: Condens. Matter 34 ,475803 (2022). [40] C. Zhang, J. Xiang, C. Su, D. Sheptyakov, X. Liu, Y. Gao, P. Sun, W. Li, G. Su, and W. Jin, Successive magnetic transitions in the spin- 52 easy-axis triangular-lattice antiferromagnet na 2BaMn(PO 4)2: A neutron diffraction study, Phys. Rev. B 110 , 214405 (2024). 10 
+
+SUPPORTING INFORMATION FOR “DIRECTIONAL SELECTION OF FIELD-INDUCED PHASES BY WEAK ANISOTROPY IN TRIANGULAR-LATTICE K2MN(SEO 3)2”VII. SINGLE-CRYSTAL XRD 
+
+Single-crystal X-ray diffraction measurement condi-tions are listed in Tab. S1. The refined crystal structure parameters are tabulated in Tab. S2. 
+
+TABLE S1. Experimental conditions for the single crystal XRD measurements, and agreement factors for the refine-ment. Formula K2Mn(SeO 3)2
+
+Space group R ¯3m (No. 166) 
+
+a, b (˚ A) 5.5977(3) 
+
+c (˚ A) 18.5758(9) 
+
+V (˚ A3) 504.08(5) 
+
+Z 2
+
+T (K) 293 
+
+λ (˚ A) 0.71073 
+
+F (000) 537 
+
+θ (deg) 3.29 - 28.19 
+
+μ (mm −1) 14.007 No. reflections 4335 No. independent reflections, Rint 186, 6.03% No. of parameters 16 Index ranges −7 ≤ h ≤ 7, 
+
+−7 ≤ k ≤ 7, 
+
+−24 ≤ l ≤ 24 
+
+R, wR 2 [I > 3σ(I)] 1.71%, 4.13% 
+
+R, wR 2 [all data] 2.05%, 4.29% Goodness of fit on F 2 1.3387 Largest difference peak/hole (e/˚ A3) 0.53/-0.34 TABLE S2. Refined crystal structural parameters for K2Mn(SeO 3)2.Atom x y z Occ. Ueq (˚ A2)K (6 c) 0 1 0.19511(6)1.00 0.0122(3) Mn (3 a) 0 1 0 1.00 0.0051(3) Se (6 c) 0.333333 0.666667 0.03858(2)1.00 0.0057(2) O (18 h) 0.1749(2) 0.8251(2) 0.07640(11) 1.00 0.0099(7) Atom U11 (˚ A2)U22 (˚ A2)U33 (˚ A2)U23 (˚ A2)U13 (˚ A2)U12 (˚ A2)K (6 c) 0.0141(4) 0.0141(4) 0.0086(5) 0 0 0.0070(2) Mn (3 a)0.0047(3) 0.0047(3) 0.0058(5) 0 0 0.00237(17) Se(6 c) 0.0054(2) 0.0054(2) 0.0063(3) 0 0 0.00271(12) O (18 h) 0.0129(8) 0.0128(8) 0.0090(9) 0.0002(4) -0.0002(4) 0.0103(9) 030 60 90 120 150 180 210 240 270 300 330 0.08 0.12 0.16 0.08 0.12 0.16 030 60 90 120 150 180 210 240 270 300 330 0.08 0.12 0.16 0.08 0.12 0.16 χ( e m u ⋅m o l - 1 ⋅O e - 1 )
+
+> 3K0.1T
+> 3K2T
+> 10K0.1T
+> H
+> ||
+> ab
+
+(a)
+
+> χ( e m u ⋅m o l - 1 ⋅O e - 1 )
+> 3K0.1T
+> 3K2T
+> 10K0.1T
+> H
+> ||
+> bc
+
+(b)
+
+c
+
+b
+
+> 25
+> °
+
+FIG. S1. Angular dependence of the magnetic susceptibility with magnetic fields applied (a) within the ab plane, and (b) within the bc plane. 0 T                              
+
+> -2.5 -2 -1.5 -1 -0.5
+> H in (H H 0) (r.l.u.)
+> -2 -1 0123
+> K in (K -K 0) (r.l.u.)
+> 1E+01 1E+02 1E+03 1E+04 1E+05
+> 6.8 T, H || c
+> -2.5 -2 -1.5 -1 -0.5 0
+> H in (H H 0) (r.l.u.)
+> -2 -1 0123
+> K in (K -K 0) (r.l.u.)
+> 1E+01 1E+02 1E+03 1E+04 1E+05
+> -1.5 -1 -0.5
+> H in (H H 1) (r.l.u.)
+> 00.5 11.5 2
+> Intensity (arb. u.)
+> 10 4
+> 0 T 4 T 6.8 T
+> 0 T
+> -2.5 -2 -1.5 -1 -0.5 0
+> H in (H H 0) (r.l.u.)
+> 012345
+> L in (0, 0, L) (r.l.u.)
+> 1E+01 1E+02 1E+03 1E+04 1E+05
+> 012345
+> L in (-2/3 -2/3 L) (r.l.u.)
+> 0123456
+> Intensity (arb. u.)
+> 10 4
+> 0 T 1 T 4 T 6.8 T
+> 1 T, H || [1 -1 0]
+> -2.5 -2 -1.5 -1 -0.5 0
+> H in (H H 0) (r.l.u.)
+> 012345
+> L in (0, 0, L) (r.l.u.)
+> 1E+01 1E+02 1E+03 1E+04 1E+05
+> (e) (f) (a) (b) (c) (d)
+
+FIG. S2. Reciprocal spaces for magnetic fields applied (a,b) along the c axis, and (d,e) along the [1 -1 0] axis. (c) Intensity changes at different fields ( ∥ c) for a cut along the (H H 1) direction. (f) Intensity changes at different fields ( ∥ [1 -1 0]) for a cut along the (-2/3 -2/3 L) direction. 
+
+VIII. ANGULAR DEPENDENT MAGNETIC SUSCEPTIBILITY 
+
+Angular dependence of the dc magnetic susceptibility is presented in Fig. S1. As the field is rotated within the 
+
+ab plane, no apparent anisotropy could be observed, as shown in Fig. S1(a). The anisotropy parameter, defined as A = ( χmax − χmin )/(χmax + χmin ), amounts to 2.8% at 3 K and 0.1 T, and 1.6% at 10 K and 0.1 T. The small value of A could arise from a slight deviation of the sample from the rotation center. In contrast, when the field is applied within the bc plane, a large anisotropy is observed at low fields, reaching 17.6% at 3 K and 0.1 T. However, upon increasing field, the anisotropy is significantly suppressed, with A decreasing to 3.0% at 3 K and 2 T, which is comparable to that for the field applied within the ab plane. Also note that the maximum of χ
+
+at 0.1 T tilts about 25 ◦ away from the c axis, consistent with our magnetic structure refinement at zero field. 11 10 20 30 40 Intensity (arb. u.) 2Θ ( d e g . )
+
+I
+
+obs.
+
+I
+
+cal.
+
+mag.
+
+nucl.
+
+(a)
+
+(b)
+
+FIG. S3. (a) Refinement based on a Y-type structure. (b) The Y-type magnetic structure. 0100 200 300 400 0100 200 300 400 0100 200 300 400 0100 200 300 400 F2cal.  (arb. u.) F2obs.  (arb. u.) 0 T "UD0" 0 T "Y" (a) (b) RF2 =  14.4% F2cal.  (arb. u.) F2obs.  (arb. u.) RF2 =  41.0% 
+
+FIG. S4. Magnetic structure refinements based on (a) a UD0 and (b) a Y-type structure against the zero-field neutron single-crystal diffraction data. 
+
+IX. NEUTRON DIFFRACTION 
+
+Single-crystal neutron diffraction measurements con-firm that the propagation vector is k1 = (1/3 1/3 0) and persists up to 6.8 T when a field is applied along the c
+
+axis; see Fig. S4(a) and S4(b). On the other hand, a second propagation vector k∗ = (1/3 1/3 3/2) appears when a field larger than 0.7 T is applied along the [1 -1 0] direction, indicating that the magnetic structure is modulated along the c axis; see Fig. S4(d) and S4(e). As mentioned in the main text, the commonly expected Y state at zero field cannot describe the experimental data satisfactorily, which can be seen from the refinement against both the powder and single crystal data, as shown in Fig. S3 and S4. Refinements of the nuclear and magnetic structures against the single-crystal data are summarized in Fig. S5. Moreover, it is found that there exists three K domains which are related to the three arms of the star [ k1 =(1/3 1/3 0), k2 = (1/3 -2/3 0), and k3 = (-2/3 1/3 0)]. This can be easily seen from Tab. S3 that one reflection corresponds uniquely to one arm. 0100 200 300 400 0100 200 300 400 0200 400 600 0200 400 600 0200 400 600 0200 400 600 0200 400 600 0200 400 600 0250 500 750 1000 0250 500 750 1000 0200 400 600 800 1000 1200 0200 400 600 800 1000 1200 0200 400 600 800 1000 1200 0200 400 600 800 1000 1200 0200 400 600 800 1000 0200 400 600 800 1000 0200 400 0200 400 F2cal.  (10 2 arb. u.) F2obs.  (10 2 arb. u.) H(0 T) || [1 -1 0] nuclear (h) (e) (g) (f) (e) (d) (c) (b) RF2 =  8.04% F2cal.  (arb. u.) F2obs.  (arb. u.) H(0 T) || [1 -1 0] magnetic  k 1 = (1/3 1/3 0) k2 = (1/3 -2/3 0) k3 = (-2/3 1/3 0) RF2 =  14.4% F2cal.  (arb. u.) F2obs.  (arb. u.) H(1 T) || [1 -1 0] magnetic  k 1 = (1/3 1/3 0) k4 = (1/3 1/3 3/2) RF2 =  18.4% F2cal.  (arb. u.) F2obs.  (arb. u.) H(4 T) || [1 -1 0] magnetic  k 1 = (1/3 1/3 0) k4 = (1/3 1/3 3/2) RF2 =  14.6% F2cal.  (arb. u.) F2obs.  (arb. u.) H(6.8 T) || [1 -1 0] magnetic  k 1 = (1/3 1/3 0) k4 = (1/3 1/3 3/2) RF2 =  18.4% F2cal.  (10 2 arb. u.) F2obs.  (10 2 arb. u.) H(0 T) || c nuclear RF2 =  8.98% F2cal.  (arb. u.) F2obs.  (arb. u.) H(0 T) || c magnetic  k 1 = (1/3 1/3 0) k2 = (1/3 -2/3 0) k3 = (-2/3 1/3 0) RF2 =  15.2% F2cal.  (arb. u.) F2obs.  (arb. u.) H(4 T) || c magnetic  k 1 = (1/3 1/3 0) k2 = (1/3 -2/3 0) k3 = (-2/3 1/3 0) RF2 =  12.2% F2cal.  (arb. u.) F2obs.  (arb. u.) H(6.8 T) || c magnetic  k 1 = (1/3 1/3 0) k2 = (1/3 -2/3 0) k3 = (-2/3 1/3 0) (a) RF2 =  17.2% 
+
+FIG. S5. F 2obs . vs. F 2cal . for the single-crystal refinements at different fields. 12 
+
+TABLE S3: Part of the zero-field experimental intensities against the calculated values based on the structures corresponding to different arms of the k-star [ k1 = (1/3 1/3 0), k2 = (1/3 -2/3 0), and k3 = (-2/3 1/3 0)]. The indices are based on a magnetic supercell which is 3 ×3×1 larger than that of the nuclear unit cell. h k l F 2obs F2cal (k 1) F2cal (k 2) F2cal (k 3)2 -7 0 355.5266 345.3424 0.0000 0.0000 -2 -8 0 96.4208 0.0000 0.0000 101.6039 -2 -5 0 234.3764 0.0000 281.3656 0.0000 1 -8 0 210.3471 243.1102 0.0000 0.0000 -2 -8 -1 161.2369 141.4094 0.0000 0.0000 -2 -8 0 83.2086 0.0000 0.0000 101.6133 -1 -7 -1 274.7253 245.9569 0.0000 0.0000 -1 -7 0 256.1853 0.0000 198.0493 0.0000 -7 -4 -1 99.9465 125.7241 0.0000 0.0000 -7 -4 0 80.0350 0.0000 72.8453 0.0000 -7 -4 1 97.4491 0.0000 0.0000 90.6923 -4 -7 -1 101.0632 0.0000 74.8448 0.0000 -4 -7 0 96.9614 0.0000 0.0000 88.2686 -2 -5 -1 387.3164 0.0000 0.0000 323.6774 -2 -5 0 442.7822 0.0000 281.6173 0.0000 -2 -5 1 552.8165 413.8557 0.0000 0.0000 -8 -2 -2 168.0940 145.5193 0.0000 0.0000 -8 -2 -1 141.2554 0.0000 0.0000 135.1183 -8 -2 0 110.4151 0.0000 83.8636 0.0000 -8 -2 1 157.9107 141.4244 0.0000 0.0000 -8 -2 2 107.4942 0.0000 0.0000 105.9314 -4 -1 -1 548.1560 642.4387 0.0000 0.0000 -4 -1 0 323.5958 0.0000 356.9034 0.0000 -4 -1 1 449.6404 0.0000 0.0000 467.3441 -5 -5 -1 158.7025 0.0000 99.6657 0.0000 -5 -5 0 274.6740 186.1052 0.0000 0.0000 -5 -5 1 157.7628 0.0000 0.0000 120.7677 -4 -4 -1 262.5706 0.0000 0.0000 274.7761 -4 -4 0 402.0521 340.3418 0.0000 0.0000 -4 -4 1 296.9849 0.0000 226.7707 0.0000 -2 -2 0 767.2415 821.3732 0.0000 0.0000 -4 -4 -1 327.5015 0.0000 0.0000 274.8106 -4 -4 0 477.3079 340.4058 0.0000 0.0000 -4 -4 1 358.2898 0.0000 226.7915 0.0000 -2 -2 -1 454.5192 0.0000 361.0761 0.0000 -2 -2 0 1008.9041 824.3594 0.0000 0.0000 -2 -2 1 468.0671 0.0000 0.0000 437.5054 -1 -1 0 1035.1201 1038.7485 0.0000 0.0000

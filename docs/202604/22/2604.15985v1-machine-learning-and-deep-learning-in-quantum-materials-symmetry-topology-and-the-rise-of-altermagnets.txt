@@ -1,0 +1,2106 @@
+Title: 2604.15985v1.pdf
+
+URL Source: https://arxiv.org/pdf/2604.15985v1
+
+Published Time: Mon, 20 Apr 2026 00:49:54 GMT
+
+Number of Pages: 30
+
+Markdown Content:
+Machine Learning and Deep Learning in Quantum 
+
+# Materials: Symmetry, Topology, and the Rise of 
+
+# Altermagnets       
+
+> Mahyar Hassani -Vasmejani 1,Hosein Alavi -Rad 2* ,Meysam Bagheri Tagani 3
+> 1Department of Computer Engineering, Lan.C., Islamic Azad University, Langarud, Iran
+> mahyar.hassanivasmejani@iau.ir
+> 2Department of Electrical Engineering, Lan.C., Islamic Azad University, Langarud, Iran
+> ho.alavirad@iau.ac.ir
+> 3Department of Physics, University of Guilan, P.O. Box 41335 -1914, Rasht, Iran
+> m_bagheri @guilan .ac.ir
+
+Abstract 
+
+The contemporary landscape of condensed matter phy sics is currently navigating a data deluge of 
+
+unprecedented scale, driven by the proliferation of high -throughput ab initio calculations and the 
+
+exponential growth of experimental datasets from large -scale facilities. While traditional first -
+
+principles methods like Density Functional Theory (DFT) have served as the bedrock of materials 
+
+science for decades, their intrinsic cubic scaling with system size (O(N 3)) creates an 
+
+insurmountable bottleneck when attempting to scan the vast, combinatorial chemical space of 
+
+potential quantum materials. This rev iew provides an exhaustive analysis of how Machine 
+
+Learning (ML) and Deep Learning (DL) are transcending these computational limitations to 
+
+accelerate the discovery of exotic phases of matter. We critically examine the transition from rigid, 
+
+descriptor -bas ed approaches to flexible, symmetry -aware architectures, such as E(3) -equivariant 
+
+Graph Neural Networks (GNNs), which respect the fundamental physical laws of rotation and 
+
+translation. A central focus is placed on the automated discovery of topological pha ses, where ML 
+
+models leverage symmetry indicators and elementary band representations to diagnose non -trivial 
+
+topology without the need for expensive band structure integration. The narrative culminates i n a 
+
+detailed case study of the Altermagnet, a newly identified third branch of magnetism that defies 
+
+the conventional ferromagnetic -antiferromagnetic dichotomy. We detail how specialized AI 
+
+search engines, integrating graph theory with crystallographic symmetry analysis, have 
+
+successfully identified d -wave, g-wave, and the elusive i -wave altermagnets, fundamentally 
+
+expanding our understanding of magnetic order. The report concludes by addressing the critical 
+
+interpretability gap, advocating for symbolic regression and active learning workflows to bridge 
+
+the divide between black -box predictions and experimental verification. 
+
+Keywords: Quantum Materials , Graph Neural Networks , Altermagnetism , Topological Phases ,
+
+Symmetry -aware Learning 1. Introduction 
+
+# 1.1 The Quantum Many -Body Problem and the Data Bottleneck 
+
+The central intellectual challenge in modern condensed matter physics is the quantum many -body 
+
+problem: predicting the collective behavior of interacting electrons within a crystal lattice. This 
+
+problem is defined by a level of complexity that scales exponentially with the number of particles, 
+
+making exact solutions impossible for macroscopic systems. For the past half -century, the Kohn -
+
+Sham formulation of Density Functional Theory (DFT) has provided a pragmatic and remarkably 
+
+successful solutio n, reducing the interacting many -body problem to a system of non -interacting 
+
+particles moving in an effective mean field. DFT has become the standard model of materials 
+
+science, allowing researchers to predict ground -state energies, lattice constants, and electronic 
+
+band structures with high accuracy [1 -3] .
+
+However, the success of DFT has birthed a new crisis. The computational cost of standard DFT 
+
+calculations scales roughly as the cu be of the number of electrons (O(N 3)), rendering the 
+
+simulation of large supercells, disordered systems, or complex magnetic textures prohibitively 
+
+expensive [4] . While ML offers a surrogate, high -fidelity ground truth data remains essential; 
+
+recent advances [5] demonstrate that many -body Quantum Monte Carlo (QMC) methods can 
+
+surpass standard DFT in property prediction for 2D materials, providing a higher -accuracy tier of 
+
+training data for future architectures. When one considers the combinato rial vastness of chemical 
+
+space, estimated to contain upwards of 10 60 possible distinct pharmacological molecules and an 
+
+equally daunting number of stable inor ganic crystal structures, it becomes evident that traditional 
+
+me thods are insufficient for comprehensive exploration [6, 7] . The search for materials with 
+
+specific, exotic functionalities, such as high -temperature superconductivity or non -trivial 
+
+topology, requires scanning this space with a speed and efficiency that DFT simply cannot provide. 
+
+Simultaneously, th e scientific communit y faces a data deluge of petabyte -scale proportions. Large -
+
+scale experimental facilities, such as the Large Hadron Collider (LHC) and the Square Kilometre 
+
+Array (SKA), generate data rates that exceed global internet traffic, requiring automated p ipelines 
+
+for real -time analysis [8, 9] . In the realm of materials science, this is paralleled by the creation of 
+
+massive computational databases like the Materials Project, AFLOW, and the Topological 
+
+Materials Database. These repositories contain electronic structure data for hundreds of thousands 
+
+of compou nds, yet they represent only a fraction of the chemically feasible space. The sheer 
+
+volume of data has outpaced human intuition, necessitating algorithmic approaches to identify 
+
+hidden patterns and correlations that are invisible to the naked eye [10] .
+
+This bottleneck has spurred the widespread adoption of Machine Learning (ML) as a surrogate for 
+
+quantum mechanics. By learning the non -linear mapping from atomic structure to physical property (structure -property relationships) or from potential to energy (potential energy surfaces), 
+
+ML models can predict material properties orders of magnitude faster than DFT [11, 12] . Ho wever, 
+
+the application of ML to quantum materials is distinct from standard computer vision or natural 
+
+language processing tasks; it requires a rigorous adherence to physical symmetries and constraints 
+
+[13, 14] . The f ield is currently witnessing a turf battle and a convergence between classical AI and 
+
+quantum computing, where A I models trained on classical data are beginning to outperform 
+
+quantum simulations for weakly correlated systems, while quantum algorithms promise eventual 
+
+supremacy for strongly correlated regimes [15, 16] .
+
+# 1.2 The Symmetry -Topology Connection 
+
+A transformative development in condensed matter physics over the last two decades has been the 
+
+classification of materials not just by their symmetry breaking (the Landau paradigm) but by their 
+
+quantum topology [17, 18] . Topological phases of matter, such as Topological Insulators (TIs), 
+
+Weyl Semimetals (WSMs), and Axion Insulators, are defined by global inva riants, such as Chern 
+
+numbers or ℤ2 indices , that remain robust against local perturbations and disorder [19] . These 
+
+phases host exotic boundary states, such as the conducting surface states of a TI or the Fermi arcs 
+
+of a WSM, which are protected by the bulk topology. 
+
+The connection between crystal symmetry and topology is profound and has become the linchpin 
+
+of modern materials discovery. The theory of Topological Quantum Chemistry (TQC) and 
+
+Symmetry -Based Indicators (SIs) established that the topological character of a band structure is 
+
+largely determined by the symmetry representations of the occupied bands at high -symmetry 
+
+points in the Brillouin zone [20, 21] . This realization converted the search for topological materials 
+
+from a problem requiring full Brillouin zone integration (calculation of Berry curvature) to a 
+
+discrete classification problem based on space group data [22] . As summarized in Figure 1 , this 
+
+reduction in complexity makes topological phase discovery an ideal candidate for ML approaches, 
+
+which can rapidly process crystallographic data to predict topological invariants without running 
+
+expensive wave -function calculations [23] .Figure 1. High -Throughput Discovery of Topological Phases. 
+
+# 1.3 The Rise of Altermagnets 
+
+While ferromagnetism and antiferromagnetism have been known for centuries and nearly a 
+
+century, respectively, a third fundamental branch of magnetism has recently emerged: 
+
+Altermagnetism. This discovery fundamentally disrupts the conventional binary classification of 
+
+magnetic order. Altermagnets defy the traditional dichotomy: like antiferromagnets (AFMs), they 
+
+possess zero net macroscopic magnetization; however, unlike AFMs, they exhibit large, spin -split 
+
+Fermi surfaces characteristic of ferromagnets (FMs) [24] .
+
+This unique phenomenology arises from a specific interplay of crystal symmetries, typically 
+
+involving rotation symmetries combined with time -reversal translation , that enforce anisotropic 
+
+spin splitting in momentum space [25] . This splitting can take the form of d -wave, g -wave, or even 
+
+i-wave patterns, analogous to the unconventional order p arameters found in high -temperature 
+
+superconductors [26] . The discovery of altermagnets was not acciden tal but the result of rigorous 
+
+symmetry analysis and group theory. However, identifying candidate materials within the vast 
+
+database of known magnetic structures requires the high -dimensional pattern -matching 
+
+capabilities of deep learning. ML models, speci fically designed to be sensitive to the subtle 
+
+symmetry operations defining spin groups, are now driving the exploration of this new magnetic 
+
+frontier [27] .
+
+# 1.4 Scope o f this Review 
+
+This report provides a comprehensive examination of the intersection between machine learning 
+
+and quantum materials, with a specific focus on the role of symmetry and topology. Section 2 details the evolution of neural network architectures in physics, emphasizing the shift from 
+
+invariant descriptors to equivariant Gra ph Neural Networks (GNNs) that know physics. Section 3 
+
+explores the application of these architectures to the automated discovery of topological phases, 
+
+highlighting the success of symmetry -based machine learning in classifying thousands of 
+
+materials. Section 4 presents a deep dive into altermagnets, discussing the physics of anisotropic 
+
+spin splitting and the specific ML workflows used to discover new candidates like MnTe and 
+
+Ru O2. Finally, Section 5 addresses the critical challenges of interpretability and data scarcity, 
+
+proposing active learning and symbolic regression as necessary paths forward. 
+
+# 2. ML/DL in Condensed Matte r Physics 
+
+The success of any machine learning model in the physical sciences depends critically on how the 
+
+physical system is represented. Unlike images, which are defined on a regular pixel grid, molecules 
+
+and crystals are defined by continuous atomic coordinates and discrete chemical species, subject 
+
+to fund amental permutation, rotation, and translation symmetries. A model that predicts different 
+
+energies for a molecule when it is merely rotated is physically invalid [28] .
+
+# 2.1 Data Representation and Feature Engineering 
+
+Early approaches to materials ML relied heavily on feature engineering, where domain expertise 
+
+was used to construct fixed -length vectors (descriptors) representing the material. These 
+
+descriptors aimed to encode the relevant physics while satisfying invar iance requirements [29] .
+
+The Coulomb Matrix is one of the earliest global descriptors, designed to encode the electrostatic 
+
+interaction between at oms. For a molecule with atoms i and j , the matrix elements are defined as :
+
+𝐶 𝑖𝑗 = 𝑍 𝑖 𝑍 𝑗 /|𝑅 𝑖 − 𝑅 𝑗 | (1) 
+
+Where Z is the nucle ar charge, and R is the position vector. Diag onal elements typically encode 
+
+the atomic potential energy, 𝐶 𝑖𝑖 = 0.5𝑍 𝑖 
+
+> 2.4
+
+. While conceptually simple, the Coulomb matrix suffers 
+
+from a lack of invariance to atom indexing (permutation). If the rows and columns are permuted, 
+
+the matrix changes, but the molecule remains the same. To address this, the sorted eigenspectrum 
+
+of the matrix is often used as the input feature vector, but this compression results in a loss of 
+
+geometric information [30] .
+
+For periodic systems like crystals, the Sine Matrix extends this concept. It interacts atoms not just 
+
+with their neighbors in the unit cell, but with their periodic images, replacing the Euclidean 
+
+distance with a sine function of the coordinates relati ve to the lattice vectors [31] . This captures 
+
+the periodicity inherent in crystalline solid s but still struggles with the curse of dimensionality as 
+
+system sizes grow. 
+
+To capture the nuances of chemical bonding, specifically for d - and f -block elements crucial in 
+
+magnetism, the Orbital Field Matrix (OFM) was developed. The OFM represents the material based on the distribution of valence shell electrons, utilizing the Vor onoi polyhedron to define the 
+
+local environment [32, 33] . By encoding the coordination number and the specific atomic species 
+
+of the neighbors into a matrix representation, the OFM has proven highly effective for predicting 
+
+local magnetic moments and formation energies in lanthanide -transition metal alloys. It 
+
+outperforms simple geometric descriptors by explicitly accounting for the angular distribution of 
+
+neighbors, which dictates the crystal field splitting responsible for magnetic anisotropy [32] .
+
+While descriptors like the Coulomb matrix, OFM, and the Smooth Overlap of Atomic Positions 
+
+(SOAP) are useful for scalar predictions (e.g., formation energy, band gap), they often discard 
+
+cri tical geometric information required for predicting vector or tensor quantities (e.g., forces, spin 
+
+textures, polarizability) [34] . Furthermore, they decouple the representation from the learning 
+
+process. In a deep learning paradigm, it is often preferable for the model to learn its own features 
+
+from the raw atomic graph , allowing it to identify non -intuitive but physically relevant correlations 
+
+that human -engineered descriptors might miss [35] .
+
+# 2.2 Architectures for Quantum Materials (CNNs, GNNs, Equivariant GNNs) 
+
+The field has largely moved toward Deep Learning architectures that learn representations directly 
+
+from the atomic structure graphs, evolving from image -based analogies to rigorous geometric deep 
+
+learning [36] .
+
+Standard CNNs, the workhorses of computer vision, are ill -suited for the irregular, non -Euclidean 
+
+geometry of crystals [37] . A crystal lattice is not a grid of pixels. However, for specific tasks like 
+
+classifying quantum phases from wavefunction snapshots or Density Matrix Renormalization 
+
+Group (DMRG) outputs, m apping techniques can be used [38] . Qubism is one such technique that 
+
+maps quantum states or reduced density matrices into 2D images, allowing standard CNN 
+
+architectures (like LeNet -5 or ResNet) to classify phases such as the Quantum Ising or Heisenberg 
+
+models [39] . While effective for model Hamiltonians on regular lattices, this approach scales 
+
+poorly to complex, continuous crystalline materials where atoms can be at arbitrary positions [40] .
+
+Graph Neural Networks (GNNs) represent materials naturally as graphs where atoms are nodes 
+
+and chemical bonds are edges. Information is pr opagated through the graph via message passing 
+
+operations.  
+
+> 
+
+Nodes: Embed atomic features (atomic number, electronegativity, group number).  
+
+> 
+
+Edges: Embed interatomic distances and bond angles.  
+
+> 
+
+Update Rule: Nodes update their internal state vector by aggregating messages from their 
+
+neighbors. This allows local chemical information to propagate globally across the molecule 
+
+or crystal after several layers of message passing [41, 42] .
+
+Standard GNNs (like SchNet or CGCNN) are invariant to rotation. This means if you rotate the 
+
+input molecule, the output scalar (energy) remains unchanged. This is correct for energy, but insufficient for vector properties [43] .
+
+A critical advancement in the last few years is the development of E(3) -equivariant GNNs [44 -
+
+46] . For predicting forces (vectors) or magnetic spins (pseudovectors), the output must rotate 
+
+concomitantly with the input (Figure 2) . Th is property is called equivariance. Architectures like 
+
+NequIP, Allegro, MACE, MagNet, and ChargE3Net explicitly build rotation matrices (Wigner -D
+
+matrices) into the network layers [47] . 
+
+> 1.
+
+ChargE3Net: This architecture focuses on predicting the electron density distribution, a scalar 
+
+field that must respect the underlying symmetry of the lattice. It enables the learning of higher -
+
+order equivariant features, allowing for high -fidelity predictions of ele ctronic structure with 
+
+relatively small training datasets [47] . 
+
+> 2.
+
+MagNet and SpinGNN: These models extend equivariance to magnetic materials. MagNet 
+
+learns magnet ic force vectors by mapping combined atomic and spin configurations to forces 
+
+computed via DFT. It embeds E(3) -equivariance to ensure that spin configurations transform 
+
+consistently with atomic rotations, which is essential for correctly modeling spin -latt ice 
+
+coupling and magnon dynamics [48] . SpinGNN introduces specialized architectures like the 
+
+Heisenberg Edge GNN (HEGNN) to model spin -spin interactions explicitly [49] .       
+
+> Figure 2. From Invariance to Equivariance in Graph Neural Networks. (a) Standard GNNs (e.g., SchNet)
+> are rotationally invariant; rotating the input crystal structure leaves the predicted scalar property (e.g.,
+> Energy, E) unchanged ( 𝑓 (𝑅𝑥 )=𝑓 (𝑥 )). This is suitable for potential energy surfaces. (b) E(3) -
+> Equivariant GNNs (e.g., NequIP, MagNet) explicitly encode rotation matrices into the message passin g.
+> Rotating the input results in a concomitant rotation of the output vector field (e.g., Forces, F, or
+> Magnetic Spins, S), such that 𝑓 (𝑅𝑥 )=𝑅𝑓 (𝑥 ). This geometric fidelity is crucial for correctly modeling spin -lattice coupling and magnetic textures.
+
+# 2.3 Hamiltonian Learning and Band Structure Prediction 
+
+Beyond predicting scalar properties, deep learning is now being used to predic t the Hamiltonian 
+
+matrix itself, the fundamental operator governing the quantum system [50] .
+
+Models like DeepH predict the tight -bindi ng Hamiltonian elements Hij based on the local 
+
+environment of atoms i and j . These approaches have demonstrated high accuracy in predicting 
+
+Hamiltonian blocks, which is essential for capturing electronic properties , including Spin -Orbit 
+
+Coupling (SOC) effects [51] . By predicting the Hamiltonian, these models allow for the derivation 
+
+of all electronic properties (band structure, Density of States, Berry curvature, topological 
+
+invariants) at a fraction of the computational cost of DFT [52] . Th e model essentially learns the 
+
+rules of constructing the Hamiltonian from the atomic geometry, byp assing the iterative self -
+
+consistent field (SCF) cycles of DFT. 
+
+Other approaches map structure directly to the Density of States (DOS). For example, approaches 
+
+using discretized Hamiltonians or Principal Component Analysis (PCA) on the DOS vector allow 
+
+for the rapid screening of materials with desired band gaps or van Hove singularities [53 -55] .
+
+These models are particularly useful for screening for specific electroni c features, such as the flat 
+
+bands required for heavy fermion behavior or superconductivity.           
+
+> Table 1. Comparison of Neural Network Architectures in Quantum Materials
+> Architecture Input
+> Representation
+> Symmetry
+> Handling
+> Best Application Key Example
+> Standard CNN 2D Image / Grid
+> (Qubism)
+> Translational
+> (pixel grid)
+> Phase
+> classification in
+> model
+> Hamiltonians
+> Qubism
+> GNN (SchNet,
+> CGCNN)
+> Graph
+> (Nodes/Edges)
+> Permutation
+> Invariant
+> Scalar properties
+> (Energy, Band
+> Gap)
+> Materials Project
+> API (CGCNN)
+> E(3) -GNN
+> (NequIP,
+> MagNet)
+> Geometric Graph Rotation/Translati
+> on Equivariant
+> Vector/Tensor
+> fields (Forces,
+> Spins, Electron
+> Density)
+> MagNet ,
+> ChargE3Net
+> Deep Local Atomic Gauge Equivariant Electronic Band
+
+DeepH Hamiltonian NN  Environment  Structure, 
+
+> Hamiltonian
+> Matrix
+
+# 3. Topological Phase Discovery with ML 
+
+Topological materials are defined by global geometric properties of their wavefunctions, making 
+
+them robust to disorder but difficult to detect with local descriptors. However, the connection 
+
+between symmetry and topology has enabled a massive acceleration in their discovery via ML 
+
+[56] .
+
+# 3.1 Learning Topological Invariants 
+
+The direct prediction of topological invariants ( integers like the Chern number C or the ℤ2 index 
+
+𝜐 from the Hamiltonian is a classification task.  
+
+> 
+
+Supervised Learning: Neural networks have been trained on millions of random Hamiltonians 
+
+to compute the winding number (for 1D AIII class) and Chern number (for 2D A class). 
+
+Surprisingly, the intermediate layers of these networks have been shown to learn quantities 
+
+resembling the loca l Berry curvature, effectively rediscovering the mathematical formula for 
+
+the invariant through backpropagation [57, 58] . 
+
+> 
+
+Unsupervised Learning: Techniques like k -means clustering and Variational Autoencoders 
+
+(VAEs) have been applied to time -resolved ARPES data and single -particle form factors to 
+
+distinguish between trivial and topological phases without labeled training data. For instance, 
+
+VAEs c an distinguish Fractional Chern Insulators (FCIs) from Charge Density Waves 
+
+(CDWs) by analyzing the distribution of Berry curvature in the Brillouin zone. The latent 
+
+space of th e VAE captures the topological connectedness of the phase space, allowing for t he 
+
+generation of new topological Hamiltonians via interpolation [59] .
+
+# 3.2 Symmetry Indicators and TQC 
+
+The most prolific discovery workflows utilize Symmetry -Based Indicators (SIs). The theory of 
+
+Topological Quantum Chemistry (TQC) posits that the topology of a material is constrained by its 
+
+crystal symmetry. Specifically, if the symmetry representations of the occupied electronic bands 
+
+at high -symmetry momenta do not form a localized atomic lim it (Elementary Band 
+
+Representation), the material must be topological [20] .
+
+Claussen, Bernevig, and Regnault [60] demonstrated that a Gradient Boosted Tree (GBT) classifier 
+
+could predict the topological class (TI, Topological Semimetal, Trivial) with >90% accuracy using 
+
+only coarse -grained features. These features included:  
+
+> 1.
+
+Space Group Number: The fundamental symmetry setting.  
+
+> 2.
+
+Stoichiometry: The count of atoms per element. 3. Wyckoff Positions: The symmetry multiplicity of atomic sites.  
+
+> 4.
+
+Atomic Number: A proxy for Spin -Orbit Coupling strength. 
+
+Crucially, the exact atomic coordinates were found to be less important than the symmetry 
+
+constraints. This implies that topology is a robust property largely dictated by the chemical 
+
+composition and the crystal lattice type (symmetry setting). This ML app roach is orders of 
+
+magnitude faster than running DFT calculations to check compatibility relations, allowing for the 
+
+screening of the entire Inorganic Crystal Structure Database (ICSD) in minutes rather than years 
+
+[61] .
+
+# 3.3 Case Studies in ML -Driven Discovery 
+
+The application of Machine Learning (ML) has matured from reproducing known labels to the 
+
+active discovery of materials with targeted, exotic functionalities. Recent campaigns have 
+
+successfully navigated the complex landscape of magnetic and spin -resolved topology, yielding 
+
+candidates that were previously computationally inaccessible. 
+
+3.3.1 Magnetic Topology and the Discovery of UAsS 
+
+The search for magnetic topological materials, such as Magnetic Weyl Semimetals and Axion 
+
+Insulators, is significantly more complex due to the breaking of time -reversal symmetry, which 
+
+expands the number of possible magne tic space groups to 1,651. 
+
+Robredo et al. [62] addressed this challenge by conducting a high -throughput search on 522 new 
+
+magnetic structures from the MAGNDATA database. By automating the calculation of symmetry 
+
+indicators for magnetic space groups and training ML models on electronic structure feature s, they 
+
+successfully identified 250 non -trivial materials (Figure 3). 
+
+> Figure 3. The high -throughput computational workflow employed for the discovery of magnetic topological
+> materials. Starting from experimental magnetic structures in the MAGNDATA database, the pipeline utilizes DFT+U calculations (via VASP) to generate self -consistent electronic structures. Symmetry indicators
+> (magnetic corepresentations) are then computed using MVASP2Trace to diagnose topological phases such as
+> Axion Insulators or Weyl Semimetals .
+
+Notable discoveries from this campaign include: 
+
+ UAsS: Identified as a 5f -orbital Weyl semimetal. This discovery is particularly significant 
+
+as it demonstrates ML's ability to handle heavy -fermion systems where f -electrons drive 
+
+the topology. 
+
+ CaMnSi: Identified as a narrow -gap Axion Insulator, a phase characte rized by the 
+
+quantized topological magnetoelectric effect. 
+
+ Mn2AlB2: Found to exhibit a phase transition from a Nodal Line Semimetal to a 
+
+Topological Insulator driven by Spin -Orbit Coupling (SOC) strength. 
+
+3.3.2 Topogivity and High -Temperature QAHE 
+
+Taking a different approach, Xu, Jiang, and Wang [63] dev eloped a heuristic rule termed 
+
+Topogivity, a machine -learned numerical value for each chemical element that captures its 
+
+tendency to form topological bands (Figure 4) . Usin g this heuristic within a neural network 
+
+framework, they screened the 2D materials database and discovered 6 new classes of Chern 
+
+insulators. 
+
+Crucially, among these discoveries, 4 classes (comprising 7 materials) were predicted to have full 
+
+band gaps. This filtering capability is essential, as these materials are prime candidates for the 
+
+experimental observation of the Quantum Anomalous Hall Effect (QAHE) at potentially higher 
+
+temperatures. 
+
+Figure 4. V isualization of the Topogivity heuristic across the periodic table. The heatmap 
+
+illustrates the machine -learned tendency of chemical elements to form topological band s, as proposed by Xu et al. [63] . Darker reg ions (e.g., Bi, Pb, Te) indicate elements with high spin -
+
+orbit coupling and specific orbital characteristics that are statistically favored in Chern insulators. 
+
+This distribution allows for the rapid screening of chemical space without full DFT calculation s. 
+
+(Data simulated for illustrative purposes based on trends reported in [63] ). 
+
+3.3.3 Inverse Design of Bosonic Topology (Photonics & Phononics) 
+
+While most ML efforts focus on fer mionic (electronic) systems, recent work has expanded to 
+
+bosonic topology, targeting the control of light and sound waves [64] . Unlike electrons, photons 
+
+and phonons do not naturally experience the Fermi -Dirac statistics or spin -orbit coupling required 
+
+for standard topological phases, necessitating precise geometric engineering of the lattice [65] .
+
+Topology optimization based on the adjoint variable method has been the standard for designing 
+
+these devices, but it suffers from two critical flaws: it frequently gets trapped in local minima, and 
+
+the resultin g freeform structures remain a black box to human understanding. 
+
+To overcome these limitations, Yeung et al. introduced a framework that integrates adjoint 
+
+optimization with Automated Machine Learning (AutoML) and Explainable AI (XAI) [66] .
+
+Instead of treating the optimizer as an opaque oracle, the framework uses XAI to generate 
+
+importance maps that reveal which specific structural features contribute most to the Figure -of -
+
+Merit (FOM). This allows the algorithm to identify and escape low -performance local minima by 
+
+understanding the underlying p hysics of the geometry. 
+
+When applied to the desig n of waveguide splitters, this white -box approach achieved performance 
+
+increases of 39% to 74% relative to state -of -the -art adjoint optimization across telecom 
+
+wavelengths [66] .
+
+Parallel advances have been made in phononics for acou stic wave control. Han et al. utilized a 
+
+deep learning framework combining Convolutional Neural Networks (CNNs) with Generative 
+
+Adversarial Networks (GANs) to inversely design phononic crystals. This approach successfully 
+
+predicted complex band structures and identified topologies with maximized spatial attenuation 
+
+for vibration isolation, a key requirement for topological acoustic logic [67] .
+
+3.3.4 Unsupervised Learning of Interacting Phases 
+
+Perhaps the greatest challenge in condensed mat ter physics is classifying interacting topological 
+
+phases, where strong electron -electron correlations render standard single -particle topological 
+
+invariants (like TQC) invalid. In these regimes, labeled training data is scarce because classical 
+
+simulation s often fail, and the very existence of certain phases is debated. 
+
+To circumvent the need for theoretical Hamiltonians or labeled data, researchers are t urning to 
+
+Unsupervised Learning algorithms that cluster data based on intrinsic structure without human 
+
+guidance. 
+
+A critical bottleneck has been the reliance on wavefunction snapshots, which are hard to measure 
+
+experimentally. Yu et al. proposed a framework to classify interacting topological phases directly 
+
+from Green’s functions derived from spectral func tions, which are measurable via momentum -
+
+resolved Raman spectroscopy [68] .
+
+They utilized Diffusion Maps, a nonlinear dimensionality reduction technique, to analyze these observables. The algorithm successfully clustered distinct symmetry -protected topological phases 
+
+in a 1D interacting topological insulator model without a priori knowledge. This effectively treats 
+
+the AI as an autonomous experimentalist, capable of identifying phase boundaries solel y from 
+
+spectroscopic data [68] .
+
+Unsupervised learning is also settling the oretical debates regarding the Non -Ergodic Extended 
+
+(NEE ) phase in quasiperiodic chains, a controversial state between localizatio n and thermalization 
+
+[69] .
+
+Beveridge et al. developed an unsupervised approach to quantify the mutual independence of 
+
+phases using eigenstate entanglement spectra (E S). Contrary to the belief that NEE is a distinct 
+
+stable phase, their ML analysis revealed it is mutually dependent on the Many -Body Localized 
+
+(MBL) and thermal regimes, suggesting it may be a prethermal crossover rather than a true phase. 
+
+This nuance was only visible through the high -dimensional pattern matching of the ES [70] .
+
+Another strategy involves training models on simple, non -interacting systems and applying them 
+
+to complex, interacting ones. Tibaldi et al. demonstrated that Principal Component Analysis (PCA) 
+
+and Convolutional Neural Networks (CNNs) trained on single -particle correlation functions of a 
+
+non -interacting wire could correctly reconstruct the phase diagram of an interacting 
+
+supercon ductor. This suggests that the fingerprints of topological order persist even when 
+
+interactio ns are turned on, allowing solvable models to serve as proxies for training AI to hunt for 
+
+strongly correlated matter [71] .
+
+# 4. Altermagnetism: Symmetry Origins and Topological Classification 
+
+The recent identification of altermagnetism as a distinct, third branch of magnetic order, sta nding alongside 
+
+ferromagnetism (F M) and antiferromagnetism (AFM), constitutes one of the most significant conceptual 
+
+revisions in condensed matter physics of the twenty -first century [72, 73] . This discovery has fundamentally 
+
+disrupted the established binary classification that has governed magnetism for nearly a century. 
+
+Historically, the absence of a net macroscopic magnetization ( M = 0 ) was cons idered a sufficient condition 
+
+to classify a material as an antiferromagnet, a state wherein the internal magnetic moments compensate 
+
+perfectly. Under the prevailing Landau paradigm, it was implicitly assumed that such compensated 
+
+magnetic order, in the pre sence of PT (parity -time) symmetry or the combination of time -reversal and 
+
+translation symmetries ( 𝑇 𝜏 ), would enforce Kramers degeneracy , the spin -degeneracy of electronic bands 
+
+throughout the Brillouin zone (BZ) [74] .
+
+Altermagnets shatter this assumption. They represent a class of collinear compensated magnets that possess 
+
+zero net magnetization, indistinguishable from AFMs in standard magnetometry, yet they exhibit a colossal, 
+
+momentum -dependent spin splitting of the electronic bands that is non -relativistic in origin [75] (Figure 5).
+
+This spin splitting, often exceeding 1 eV in magnitude, rivals or surpasses that found in ferromagnets, but 
+
+it arises from the crystal field envi ronment rather than the relativistic Spin -Orbit Coupling (SOC) that drives 
+
+the Rashba or Dresselhaus effects [76] .Figure 5. Classification of Magnetic Order via Momentum -Space Splitting. (a) Ferromagnet (FM): 
+
+Exhibits macroscopic magnetization and isotropic (s -wave) spin splitting of the bands. (b) 
+
+Antiferromagnet (AFM): Zero net magnetization with spin -degenerate bands (protected by PT symmetry). 
+
+(c) Altermagnet: Exhibits zero net magnetization like an AFM, but features large, anisotropic spin 
+
+splitting in momentum space. The figure illustrates a characteristic d -wave splitting pattern (e.g., in MnTe 
+
+or RuO 2), where the spin polarization reverses sign across nodal planes, driven by crystal rotation 
+
+symmetries rather than relativistic Spin -Orbit Coupling. 
+
+The phenomenology of altermagnetism is dictated by a specific subset of spin space groups (or spin Laue 
+
+groups), where the sublattices with opposite spins are connected by crystal rotation symmetries (proper or 
+
+improper) rather than the translations or inversions characteristic of conventional AFMs. This unique 
+
+symmetry enforcement results in an alternating spin polarization in reciprocal space, where the spin -up and 
+
+spin -down bands are degenerate only along specific nodal planes or lines , a topology mathematically 
+
+analogous to the gap functions of unconventional d-wave or g-wave superconductors [77] .
+
+The experimental verification of this phase has trig gered a global race to map the altermagnet ic landscape. 
+
+Howeve r, this undertaking presents a needle in a haystack problem of immense complexity. While over 
+
+1,651 magnetic space groups exist, only a fraction host the requisite symmetries for altermagnetism, and 
+
+identifying these within the database of over 200,000 known inorganic compounds is a task ill -suited for 
+
+brute -force Density Functional Theory (DFT), w hich scales computationally as O(N 3). This computational 
+
+bottleneck has necessitated the deployment of advanced Artificial Intelligence (AI) a nd Machine Learning 
+
+(ML) architectures, specifically designed to encode crystallographic symmetry and magnetic topology, to 
+
+accelerate the discovery process [78 , 79] .
+
+This section provides an exhaustive, expert -level analysis of the recent AI -accelerated discoveries in the 
+
+field of altermagnetism. We detail the architecture of the MatAltMag search engine developed by Gao et al. (2025), which successfully identified the elusive i-wave altermagnets for the first time [80 , 81] . We 
+
+critically examine the physical properties of these new candidates, such a s CrF 3, NiF 3, and Mg 2NiIr 5B2, and 
+
+contrast them with the experimentally validated g-wave altermagnet MnTe and the controversial d-wave 
+
+candidate RuO 2 [82] . Finally, we address the formidable challenges discussed in recent reviews by Tamang 
+
+et al. (2025) [24] , including the crisis of data scarcity, the black box interpretability gap, and the difficulties 
+
+in distinguishing intrinsic altermagnetic signals from experimen tal artifacts in thin -film heterostructures. 
+
+# 4.1. Mechanisms of Anisotropic Spin Splitting 
+
+To understand the target variable that machine learning models are tasked with predicting, one must first 
+
+rigorously define the physical origin of the altermagnetic order parameter. The central feature is Non -
+
+Relativistic Spin Splitting (NRSS). 
+
+4.1.1. Non -Relativistic Lifting of Kramers Degeneracy 
+
+In a conventional crystal, the electronic bands En(k ) are doubly degenerate in spin (Kramers degeneracy) if 
+
+the system possesses PT symmetry (the combination of spatial inversion P and time -reversal T). In a 
+
+standard antiferromagnet like NiO, while T is broken by the magnetic moments, the combined symmetry 
+
+PT is preserved because the inversion operation maps th e spin -up sublattice A onto the spin -down sublattice 
+
+B, and time -reversal flips the spins, restoring the original state. This protects the degeneracy of the bands: 
+
+𝐸 𝑛 ↑(𝑘 ) = 𝐸 𝑛 ↓(𝑘 ).
+
+Altermagnets break PT symmetry. However, unlike ferromagnets , which break T macroscopically 
+
+(resulting in a net moment ), altermagnets preserve a more subtle symmetry operation: a spin -flip combined 
+
+with a crystal rotation (point group operation). If we denote a rotat ion operation as C n and a spin -fl ip (time -
+
+reversal) as T, an altermagnet is invariant under the combined operation Cn|T . This symmetry imposes a 
+
+specific constraint on the band structure in reciprocal space (k -space). It dictates that the spi n-up bands at 
+
+momentum k must be degenerate with the spin -down bands a t the rotated momentum Rk :
+
+𝐸 ↑(𝑘 ) = 𝐸 ↓(𝑅𝑘 )
+
+Crucially, if 𝑘 ≠ 𝑅𝑘 , then 𝐸 ↑(𝑘 ) ≠ 𝐸 ↓(𝑘 ). This results in a spin splitting ∆𝐸 (𝑘 ) = 𝐸 ↑(𝑘 ) − 𝐸 ↓(𝑘 ) that is 
+
+non -zero at generic points in the Brillouin zone but must vanish along high -symmetry lines or planes (nodal 
+
+surfaces ) defined by the rotation axis. 
+
+4.1.2. Symmetry -Based Classification : d, g, and i-wave Channels 
+
+Because the spin splitting depends on the angle in reciprocal space, it can be classified using spherical 
+
+harmonics, exactly analogous to the classification of atomic orbitals or superconducting gap parameters. 
+
+● d-wave Altermagnetism ( L=2 ): The spin splitting follows a quadrupolar distribution, reversing sign 
+
+four times (+, -, +, -) as one rotates around the center of the Brillouin zone. The splitting vanishes on 
+
+two nodal planes. The prototypical example theoretically proposed was RuO 2 (rutile structure), where 
+
+the specific arrangement of the RuO 6 octahedra creates a local environm ent for the spin -up Ru atom 
+
+that is a 90° rotation of the environment for the spin -down Ru atom. 
+
+● g-wave Altermagnetism ( L=4 ): The spin splitting follows a hexadecapolar distribution, reversing sign 
+
+eight times. This order parameter is found in hexagonal sy stems like MnTe and CrSb, where the magnetic sublattices are connected by six -fold screw axes or glide planes that enforce higher -order 
+
+nodal topology. There are four nodal planes in the BZ. 
+
+● i-wave Altermagnetism ( L=6 ): This represents the frontier of topological complexity in c ollinear 
+
+magnetism. An i-wave altermagnet exhibits a spin polarization that reverses sign twelve times (+, -,
+
++, -,... ) around the rotation axis. This requires an exceptionally high degree of crystal symmetry, 
+
+typically involving C6 rotations or complex non -symmorphic operations in rhombohedral or 
+
+hexagonal lattices. Until the advent of AI screening, this phase was largely hypothetical, with no 
+
+confirmed material realizations in the standard databases .
+
+The magnitude of this splitting is governed by the strength of the crystal field and the exchange interaction, 
+
+often reaching 1.0 eV, which is orders of magnitude larger than the relativistic Zeeman splitting (~1 -10 
+
+meV) typically accessible in laborator y magnetic fields. This colossal, non -relativistic splitting is the key 
+
+property that makes altermagnet s attractive for spin -splitter applications [75] .
+
+4.2. Computational Discovery via The MatAltMag Framework 
+
+The search for altermagnets is fundamentally a problem of geometric pattern recognition. One must identify 
+
+crystal structures where the magnetic sublattices are related by the specific rotational symmetries described 
+
+above. However, experimentally determined magnetic structures are rare; the MAGNDATA database 
+
+contains only a few thousand entries compared to the hundreds of thousands of structural entries in the 
+
+ICSD or Materials Project [82] . Brute -force calculation of the magnetic ground state for every known 
+
+crystal using DFT is computationally intractable due to the combinator ial explosion of possible magnetic 
+
+orderings (FM, AFM -A, AFM -C, AFM -G, non -collinear, etc.). 
+
+To bridge this gap, Gao et al. (2025) introduced MatAltMag, a bespoke AI search engine designed to predict 
+
+altermagnetism directly from crystal structure data, bypassing the need for a priori knowledge of the 
+
+magnetic ground state [81] . As illustrated in Figure 6, the search engine employs a multi -stage 
+
+discovery pipeline.   
+
+> Figure 6. The MatAltMag Discovery Pipeline. The workflow integrates large -scale pre -training with
+> symmetry -aware fine -tuning. (1) Ingestion: The model ingests crystal structures from the ICSD. (2) Pre -
+> training: A Graph Neural Network (GNN) learns general chemistry via self -supervised learning. (3) Screening:
+> A physics -base d filter removes candidates with PT symmetry (which forbids altermagnetism). (4) Fine -tuning:
+> The model is refined on a small, curated dataset of known altermagnets. (5) Discovery: The engine identifies
+> new candidates, including the elusive i -wave phases.
+
+4.2.1 . Comparative Analysis: Heuristic vs. Data -Driven Screening 
+
+While the search for altermagnets is fundamentally a geometric pattern recognition problem, researchers 
+
+have attacked it using distinct computational philosophies. One approach, exemplified by the MatAltMag 
+
+engine developed by Gao et al., treats discovery as a graph classification task, utilizing pre -trained GNNs 
+
+to predict candidates before validation [81] .
+
+However, parallel efforts have utilized more direct, albeit computationally heavier, screening workflows. 
+
+For instance, Sødequist and Olsen (2024) [83] employed a brute -force h igh -throughput screening of the 
+
+Computation al 2D Materials Database (C2DB) . Rather than predicting the phase via AI, they calculated 
+
+spin -spiral ground states for over 3,0 00 materials directly using DFT. This physics -first approach 
+
+successfully identified the 2D altermagnet FeBr 3, demonstrating that while AI accelerates screening, 
+
+rigorous high -throughput DFT remains essential for validating lo w-dimensional magnetic topology .
+
+Similarly, Wan et al. (2025) [78] tackled the challenge of metallic altermagnets, where electron correlations 
+
+are critical. They developed a workflow integrating Embedded Dynamical Mean Field Theory (DMFT) to 
+
+screen for candidates, addressing the limita tions of standard DFT in correctly predicting the Fermi surface 
+
+splitting in correlated metals. 
+
+4.2.2 . Transfer Learning Strategies for Magnetic Materials 
+
+The central innovation of MatAltMag lies in its departure from standard supervised learning. In a typical 
+
+materials informatics workflow, a model is trained on labeled data (Structure → Property). However, with 
+
+only ~100 confirmed altermagnets known at the project's inception, a supervised model would immediately 
+
+succumb to overfitting. Gao et al. addr essed this via a Pre -training/Fine -tuning strategy adapted from Large 
+
+Language Models (LLMs) but specialized for geometric graphs [81] .
+
+1. Crys tal Graph Convolutional Neural Network (CGCNN) Encoder: 
+
+The core of the model is a GNN where atoms are nodes (embedded with atomic number, 
+
+electronegativity, group, period) and bonds are edges (embedded with distance, angle). The GNN 
+
+performs message passing to update the atom embeddings based on their local environments. This 
+
+architecture is naturally permutation -invariant, ensuring that the model respects the peri odicity of the 
+
+crystal lattice [84, 85] .
+
+2. Self -Supervised Pre -training via CTBarlow: 
+
+The model was pre -trained on the entire Materials Project database (~150,000 structures) using a self -
+
+supervise d contrastive learning objective known as CTBarlow (Cross -Correlation Barlow Twins) 
+
+[86] .
+
+○ Mechanism: The net work takes a crystal structure X, ge nerates two augmented versions X A and 
+
+XB (via random perturbations, atom masking, or rotation), and passes them through the encoder. 
+
+○ Loss Function: The objective function minimizes the difference between the cross -correlation 
+
+matrix of the output embeddings and the identity matrix. This forces the network to learn 
+
+representations that are invariant to noise and rotation (diagonal terms) while decorrelating the 
+
+feature dimensions (off -diagonal terms) [86] .
+
+○ Outcome: Through this process, the GNN learned the fundament al grammar of crystallography, 
+
+how atoms pack, how coordination polyhedra form, and how symmetry operates, without 
+
+requiring any mag netic labels. Thi s pre -trained crystallographic intelligence served as the 
+
+foundation for the subsequent task [86] .
+
+3. Symmetry -Informed Fine -Tuning: 
+
+The pre -trained encoder was then attached to a classification head and fine -tuned on a small, high -
+
+quality dataset consisting of 148 known altermagnets (positive class) and 25,591 non -altermagnets (negative class). 
+
+○ The Physics Filter: A critical step in th e workflow was the application of a domain -knowledge 
+
+filter before the AI training. The authors utilized symmetry group analysis to identify ma terials 
+
+with PT symmetry. Since PT symmetry strictly forbids altermagnetism (by enforcing band 
+
+degeneracy), all m aterials possessing this symmetry were automatically labeled as negatives or 
+
+removed from the candidate pool. This phy sics -informed data cleaning reduced the search space 
+
+by orders of magnitude and significantly alleviated the class imbalance problem [81] .
+
+○ Handling Imbalance: To further address the scarcity of positive samples, the team employed 
+
+geometric up -sampling techniques, generating synthetic positive samples by applying crystal 
+
+rotations and supercell expansions to the known altermagnets, ensuring the classifier did not bias 
+
+towards the majority negative class [81] .
+
+4.2.3 . Outcomes of High -Throughput Candidate Identification 
+
+The fine -tuned MatAltMag engine was deployed to screen a candidate set of 42,377 materials . The model 
+
+assigned an altermagnetism probability to each candidate. The top -ranked candidates were then subjected 
+
+to rigorous first -principles validation using DFT with the GGA+U functional to account f or electron 
+
+correlation in the d- and f-orbitals [81] .
+
+The pipeline successfully identified 50 new altermagnetic materials that had never been reported before. 
+
+This represents a massive expansion of the known materials space. The discoveries were not limited to a 
+
+single structural family but spanned a diverse chemical space including: 
+
+● Transition Metal Borides and Nitrides (e.g., Nb 2FeB 2, CaMnN 2). 
+
+● Complex Oxides (e.g., NaFeO 2, Ba 2FeGe 2O7). 
+
+● Halides (e.g., CrF 3, NiF 3). 
+
+● Intermetallics (e.g., Mg 2NiIr 5B2). 
+
+Crucially, the model demonstrated the ability to distinguish between the subtle structural motifs that give 
+
+rise to different wave types of spin splitting, leading to the historic identification of the i-wave phase [81] .
+
+4.3. Prediction of High -Order Topological Candidates 
+
+The most impactful scientific result of the AI campaign was the discovery of i-wave altermagnetism. Prior 
+
+to the pub lication of Gao et al. (2025), d-wave and g-wave altermagnets were the only established classes. 
+
+The i-wave state, characteri zed by an order parameter with L=6 angular momentum, corresponds to a spin 
+
+polarization that reverses sign 12 times along a closed path around the BZ center. This requires a crystal 
+
+lattice with hexagonal or rhombohedral symmetry where the magnetic sublattices are connected by specific 
+
+hig h-order rotation or screw operations (C 6 or S 6) [24, 81] .
+
+The MatAltMag engine identified four specific candidates that realize this exotic phase. We analyze the 
+
+most prominent of these below. 
+
+4.3.1. CrF 3: Altermagnetism in Light -Element Fluorides 
+
+One of the headline discoveries is CrF 3, which crystallizes in the rhom bohedral space group R 3̅ c (No. 167) 
+
+[81] .● Structure: The structure consists of corner -sharing CrF 6 octahedra. The key to its altermagnetism lies 
+
+in the rotational distortio n of these octahedra along the c-axis. 
+
+● Symmetry Origin: The AI correctly identified that t he magnetic sublattices in CrF 3 are related by a 
+
+non -symmorp hic symmetry involving a glide plane an d a rotation that enforces the i-wave nodal 
+
+topology. 
+
+● Physical Significance: CrF 3 is an insulator composed entirely of light elements (Cr, F). In conventional 
+
+spintronics, large spin -splitting phenomena (like the Spin Hall Effect) usually require heavy elements 
+
+(Pt, W, Au) to provide strong Spin -Orbit Cou pling. The discovery of giant (>0.5 eV) spin splitting in 
+
+CrF 3 proves that altermagnetism can decouple spin phenomena from relativistic mass, ope ning the 
+
+door to light -element spintronics based on abundant, sustainable materials [81] .
+
+4.3.2. NiF 3: Anomalies in Effective Spin -Orbit Coupling 
+
+Parallel to CrF 3, the engine identified NiF 3 as another i-wave candidate in the same R3̅ c space group. 
+
+However, DFT validation revealed a surprising anomaly: despite being a light -element compound, NiF 3
+
+exhibits an extremely strong effective SOC [81] .
+
+ Mechanism: Detailed analysis suggests this arises from a cooperative effect between the crystal 
+
+symmetry, electron correlation (Hubbard U), and the intrinsic altermagnetic exchange field. The 
+
+alter magnetic splitting effectively amplifies the weak intrinsic SOC of the Nickel and Fluorine atoms. 
+
+ Application: This makes NiF 3 a prime candidate for converting spin currents into charge currents (and 
+
+vice versa) with high efficiency, challenging the dogma that high atomic number Z is a prerequisite 
+
+for strong spin -orbit effects [81] .
+
+4.3.3. Mg 2NiIr 5B2: Metallic Phases with Hybrid Wave Character 
+
+Another exotic candidate identified is Mg2NiIr5B2 (Space Group P4/mbm , No. 127). 
+
+● Electronic Structure: Unlike the insulating fluorides, this material is metallic. DFT calculations reveal 
+
+a complex Fermi surface with multiple nodal lines. 
+
+● Topological Features: The material is predicted to host odd -under -time -reversal Dirac fermions 
+
+protected by spin symmetries E | | C 4z and C2⊥ || M x. This places it at the intersection of altermagnetism 
+
+and topological semimetals, suggesting it may host quantized transport responses like a gian t
+
+Anomalous Hall Conductivity [81] .
+
+4.3.4. FeBr 3: Two -Dimensional Limits and Moiré Engineering 
+
+While the AI -driven campaign by Gao et al. [81] focused predomin antly on 3D bulk crystals like CrF 3 and 
+
+NiF 3, concurrent research has expanded the altermagnetic landscape into two dim ensions. In independent 
+
+work using high -throughput spin -spiral DFT, Sødequist and Olsen [79] identified monolayer FeBr 3 (in the 
+
+2H phase) as a stable i -wave altermagnet . The material exhibits the characteristic high -order topology, with 
+
+spin splitting of the valence bands showing exactly 12 polarization reversals alon g a path encircling the Γ
+
+point . Crucially, this discovery unlocks the field of altermagnetic twistroni cs. Unlike the bulk fluorides, 
+
+FeBr 3 is a va n der Waals material, allowing for the stacking of monola yers with specific twist angles . This 
+
+architecture creates moiré potentials that interfere with the i -wave nodal lines, a mechanism predicted to 
+
+generate flat bands with non -tr ivial topological Chern numbers . This highlights that while AI models like MatAltMag are adept at mining the ICSD for bulk candidates, physics -based screening remains vital for 
+
+identifying low -dimensional platforms suitable for quantum device engineering Table 2 summarizes the 
+
+key properties of the newly identified candidates discussed above. 
+
+Table 2 : The AI -Discovered i-wave and g-wave Candidates 
+
+Material 
+
+Formula 
+
+Crystal 
+
+System 
+
+Space Group  Spin Wave 
+
+Type 
+
+Electronic 
+
+State 
+
+Discovery 
+
+Source 
+
+CrF 3 Rhombohedral  R3̅ c (167)  i-wave  Insulator  MatAltMag 
+
+[81] 
+
+NiF 3 Rhombohedral  R3̅ c (167)  i-wave  Insulator  MatAltMag 
+
+Mg 2NiIr 5B2 Tetragonal  P4/mbm (127)  g-wave  Metal  MatAltMag 
+
+Sc 2MnIr 5B2 Tetragonal  P4/mbm (127)  g-wave  Metal  MatAltMag 
+
+FeBr 3 (2D)  Hexagonal  p3̅ 1m (162)  i-wave  Semiconductor  High -
+
+throughput 
+
+DFT [79] 
+
+BaMnO 3 Hexagonal  P6 3/mmc (194)  g-wave  Insulator  MatAltMag/Sy 
+
+mmetry 
+
+4.4. Experimental Status and Open Challenges 
+
+While AI has successfully populated the theoretical landscape of altermagnets, the transition to 
+
+experimental verification has proven fraught with challen ges. The distinction between a predicted 
+
+altermagnet and a real one often hinges on subtle thermodynamic factors that standard DFT (and by 
+
+extension, AI models trained on DFT data) fails to capture. 
+
+4.4.1. Validation of Chiral Magnons in MnTe 
+
+a-MnTe (Hexagonal Manganese Telluride) stands as the gold standard for validated altermagnetism. 
+
+ Prediction: Symmetry analysis classified it as a g-wave altermagnet. 
+
+ Electronic Validation: Angle -Resolved Photoemission Spectroscopy (ARPES) experiments have 
+
+unambiguously visualized the spin -split bands. The splitting reaches ma gnitudes of 0.6 eV to 0.8 eV 
+
+along high -symmetry cuts (e.g., Γ−K ), confirming the non -relativistic origin [87] .
+
+ Magnonic Validation: In a landmark 2024 study, Liu et al. used Inelastic Neutron Scattering (INS) to 
+
+observe chiral split magnons in MnTe [82] . In conventional antiferromagnets, spin waves (magnons) 
+
+are doubly degenerate (spin -up and spin -down modes have the same energy). In MnTe, the 
+
+alterm agnetic symmetry lifts this degeneracy, creating non -reciprocal magnon bands with an energy 
+
+splitting of approximately 2 meV. T his observation is the dynamic smoking gun of altermagnetism, 
+
+proving that the broken time -reversal symmetry ex tends to collectiv e excitations [88] .
+
+4.4.2. Structural Ambiguities and Magnetic Symmetry in RuO 2
+
+RuO 2 (Ruthenium Dioxide) serves as a critical cautionary tale. Initially celebrated as the prototypical metallic d-wave altermagnet, its status has been severely challenged by recent high -precision experiments 
+
+[89, 90] .
+
+ The Prediction: DF T calculations predicted giant d-wave spin splitting (~1 eV) driven by the rutile 
+
+P4 2/mnm symmetry. Early transport measurements reported a nonzero Anomalous Hall Effect (AHE) 
+
+and Spin -Splitter Torque (SST), which were interpreted as evidence of intrinsic altermagnetism [81] .
+
+ The Counter -Evidence: Subsequent studies using Muon Spin Rotation ( μSR ) and Neutron Diffraction ,
+
+probes highly sensitive to microscopic magnetic moments, found no evidence of long -range magnetic 
+
+order in high -quality bulk single crystals of RuO 2 down to base temperature [91] .
+
+ The Resolution: The community is converg ing on the hypothesis that the altermagneti c signals 
+
+observed in thin films were likely extrinsic. They may arise from strain -induced symmetry breaking 
+
+at the substrate interface, or from Ru vacancies that stabilize a magnetic state locally, distinct from the 
+
+bulk [92] . A 2025 study by Ho et al. suggests that even if the bulk is non -magnet ic, the (110) surface 
+
+of RuO 2 breaks symmetry in a way that induces spontaneous surface magnetization, mimicking 
+
+altermagnetic transport signatures [93] .
+
+ Implication for AI: This case study highlights a major blind spot for AI models like MatAltMag. The 
+
+model c orrectly identified that RuO 2 has the symmetry capacity to be altermagnetic, but it could not 
+
+predict that the non -magnetic ground state is thermodynamically preferred in the bulk. Future AI 
+
+model s must incorporate energetic stability and competing phase analysis to avoid such false positives. 
+
+# 5. Challenges and Future Directions 
+
+While the discovery of i-wave altermagnetism stands as a triumph of AI -guided sc ience, the path 
+
+to a universal Google of Magnet ic Topology is obstructed by fundamental hurdles [94] . These 
+
+challenges are not merely computational but strike at the core of how we model quantum validity. 
+
+# 5.1 The Interpretability Gap 
+
+A recurring criticism of deep learning in physics is the black box nature of neural networks. A 
+
+Graph Neural Network (GNN) may predict with 99% accuracy that a crystal is an altermagnet, but 
+
+it does not explicitly state why. It cannot tell a physicist which specific bond angle or orbital 
+
+overlap is driving the spin split ting [95] . Cu rrent models map Structure → Property. They do not 
+
+map Structure → Mechanism → Property. This prevents the extraction of new phenomenological 
+
+laws that could guide manual intuition. 
+
+ Symbolic Regression (SR): To address this, researchers are turning to Symbolic 
+
+Regression methods like SISSO (Sure Independence Screening and Sparsifying Operator). 
+
+SISSO iteratively constructs mathematical expressions from a pool of primary features 
+
+(atomic radius, ionization ene rgy, volume) to find the simplest equation that correlates with 
+
+the target property [96] . As illustrated in Figure 7, this approach allows researchers to 
+
+identify the Pareto frontier, the optimal boundary w here physical interpretability is 
+
+maximized without significantly compromising accuracy, unlike deep neural networks, 
+
+which prioritize error minimization at the cost of complexity. Figure 7. The Interpretability -Accuracy Trade -Off : Symbolic Regression (SISSO) vs. Black Box 
+
+Models.  
+
+> 
+
+Methodology: SISSO selects features that maximize correlation with the residual of the 
+
+model, building up a complex f unction from simple operators ( +, -, ×, ÷, exp, sin ).  
+
+> 
+
+Application: SR has been used to find interpretable descriptors for the band gap of 
+
+perovskites and the stability of single -atom alloy catalysts. In the contex t of topology, 
+
+heuristics like Topogivity are essentially simple symbolic models that distill the complex non -
+
+linear knowledge of a deep neural network into a human -readable physical rule [97] .
+
+# 5.2 Data Scarcity in Magnetic Materials 
+
+Magnetic datasets are sparse compared to non -magnetic ones. Calculating the ground state 
+
+magnetic order requires comparing the energy of Ferromagnetic (FM), Antiferromagnetic (AFM), 
+
+and Non -Collinear configurations, often with multiple values of the Hubbar d U parameter to 
+
+account for electron correlation. This makes generating training data extremely expensive [83] .
+
+Active Learning (AL): To mitigate high computational costs, Active Learning workflows are 
+
+employed. Instead of randomly selecting materials to simulate (random sampling), an ML model 
+
+(often a Gaussian Process or Bayesian Neural Network) selects candidates from the pool that have 
+
+the highest uncertainty or the highest probability of optimizing a target property (e.g., maximizing 
+
+coercive field) [98] . 
+
+> ●
+
+Success Story: An active learning workflow applied to Fe -Co -Ni thin films reduced the 
+
+number of experiments required to optimize magnetic coercivity by a factor of five. By intelligently sampling the phase diagram, the algorithm focused its attention on the phase 
+
+bounda ries where the interesting physics occurred [99] .
+
+● Li 2AuH 6 Discovery: The discovery of the superconductor Li2AuH6 , with a predicted T c of 
+
+140 K, was driven by an active learning agent navigating the chemical space of hydrides. The 
+
+agent learned to prioritize structures that favored high phonon frequencies and strong 
+
+electron -phonon coupling [100] .
+
+# 5.3 Experimental Verification 
+
+The ultimate test of any ML prediction is synthesis. There is often a significant gap between the 
+
+theoretical stability predicted by convex hull calculations (thermodynamics) and the actual 
+
+synthesizability of a compound (kinetics). A material might be stable at 0K but impossible to form 
+
+due to high energy barriers or competing metastable phases [101] .
+
+● Self -Driving Labs: The future direction lies in integrating ML with automated synthesis labs, 
+
+often referred to as Self -Driving Labs (Figure 8). In these setups, the AI not only predicts the 
+
+material but also plans the synthesis recipe (precursors, tempera ture, time). Robotic platforms 
+
+then execute the synthesis, characterize the product (via XRD), and feed the result back to the 
+
+AI, closing the loop [102] .   
+
+> Figure 8. The Era of Inverse Design and Self -Driving Labs. A closed -loop Active Learning workflow. (1)
+> Prediction: An ML agent (e.g., Bayesian Neural Network) selects candidate materials with high uncertainty or
+> optimized properties (e.g., high T cor Coercivity). (2) Synthesis: Robotic platforms execute the synthesis recipe
+> automatically. (3) Characteri zation: Automated XRD or spectroscopy validates the structure. (4) Feedback:
+> Results are fed back into the model to refine the decision boundary, reducing the number of experiments
+> required by orders of magnitude.
+
+● Virtual Scattering: Computational workflows are being developed to simulate experimental 
+
+signatures (like Inelastic Neutron Scattering spectra or ARPES maps) directly from ML 
+
+potentials. This allows for a direct comparison between the virtual material and experimental 
+
+data, bridging the gap between theory and observation [103] .
+
+# 6. Conclusion 
+
+The integration of Machine Learning and Deep Learning into condensed matter physics has 
+
+fundamentally altered the trajectory of materials discovery. We have moved beyond the era of 
+
+simple, invariant descriptors to a new paradigm of symmetry -aware architectures. E(3) -equivariant 
+
+Graph Neural Networks and Deep Hamiltonian models now allow researchers to probe the subtle 
+
+interplay of geometry, topology, and magnetism with unprecedented speed and fidelity. 
+
+The discovery of Altermagnets stands as a testament to this new capability. A phase of matter t hat 
+
+remained hidden for decades, obscured by the assumption that zero magnetizat ion implied zero 
+
+spin splitting, was brought to light through a combination of group -theoretical insight and the high -
+
+dimensional pattern -matching power of AI. With ML models now ca pable of identifying d -wave 
+
+and i -wave magnetism, learning topological invariants from coarse -grained data, and guiding 
+
+autonomous experiments via active learning, we are entering an era of Inverse Design. In this era, 
+
+the central question is no longer "Wh at are the properties of this crystal?" but "Which crystal 
+
+realizes this specific Hamiltonian?" As the interpretability of these models improves via symbolic 
+
+regression and their integration with experimental feedback loops tightens, the dream of on -
+
+demand quantum material design draws ever closer to reality. 
+
+REFERENCES 
+
+[1] B. Huang, G. F. von Rudorff, and O. A. von Lilienfeld, "The central role of density 
+
+functional theory in the AI age," Science, vol. 381, pp. 170 -175, 2023. 
+
+https://doi.org/10.1126/science.abn3445 
+
+[2] J. A. Alarco and I. D. R. Mackinnon, "DFT techniques for resolution of significant 
+
+practical materials problems," Journal of Physics: Conference Series, vol. 2678, p. 
+
+012005, 2023/12/01 2023. 10.1088/ 1742 -6596/2678/1/012005 
+
+[3] S. M. Kastuar, C. Rzepa, S. Rangarajan, and C. E. Ekuma, "A high -throughput and data -
+
+driven computational framework for novel quantum materials," APL Machine Learning, 
+
+vol. 2, p. 046108, 2024. 10.1063/5.0221823 
+
+[4] T. Ko, X. Li, and C. Wang, "Ground -State Energy and Related Properties Estimation in 
+
+Quantum Chemistry with Linear Dependence on the Number of Atoms," in 2024 IEEE 
+
+International Conference on Quantum Computing and Engineering (QCE) , 2024, pp. 
+
+669 -680. 10.1109/QCE60285. 2024.00084 
+
+[5] D. Wines, J. Ahn, A. Benali, P. R. C. Kent, J. T. Krogel, Y. Kwon , et al. , "Toward 
+
+improved property prediction of 2D materials using many -body quantum Monte Carlo 
+
+methods," Applied Physics Reviews, vol. 12, p. 031317, 2025. 10.1063/5.022025 7
+
+[6] J. J. Naveja, F. I. Saldívar -González, D. L. Prado -Romero, A. J. Ruiz -Moreno, M. 
+
+Velasco -Velázquez, R. A. Miranda -Quintana , et al. , "Visualization, Exploration, and Screening of Chemical Space in Drug Discovery," in Computational Drug Discovery , ed, 
+
+2024, pp. 365 -393.  https://doi.org/10.1002/9783527840748.ch16 
+
+[7] E. Ren, P. Guilbaud, and F. -X. Coudert, "High -throughput computational screening of 
+
+nanoporous materials in targeted applications," Digital Discovery, vol. 1, pp. 355 -374, 
+
+2022.  https://doi. org/10.1039/D2DD00018K 
+
+[8] V. E. Padulano, I. D. Kabadzhov, E. Tejedor Saavedra, E. Guiraud, and P. Alonso -
+
+Jordá, "Leveraging State -of -the -Art Engines for Large -Scale Data Analysis in High 
+
+Energy Physics," Journal of Grid Computing, vol. 21, p. 9, 2023/02/ 10 2023. 
+
+10.1007/s10723 -023 -09645 -2
+
+[9] T. Maeno, A. Alekseev, F. H. Barreiro Megino, K. De, W. Guan, E. Karavakis , et al. ,
+
+"PanDA: Production and Distributed Analysis System," Computing and Software for Big 
+
+Science, vol. 8, p. 4, 2024/01/23 2024. 10.1007/ s41781 -024 -00114 -3
+
+[10] G. R. Schleder, A. C. M. Padilha, A. Reily Rocha, G. M. Dalpian, and A. Fazzio, "Ab 
+
+Initio Simulations and Materials Chemistry in the Age of Big Data," Journal of Chemical 
+
+Information and Modeling, vol. 60, pp. 452 -459, 2020/02/24 2 020. 
+
+10.1021/acs.jcim.9b00781 
+
+[11] I. Novikov, O. Kovalyova, A. Shapeev, and M. Hodapp, "AI -accelerated materials 
+
+informatics method for the discovery of ductile alloys," Journal of Materials Research, 
+
+vol. 37, pp. 3491 -3504, 2022/11/01 2022. 10.1557/s4357 8-022 -00783 -z
+
+[12] B. G. del Rio, B. Phan, and R. Ramprasad, "A deep learning framework to emulate 
+
+density functional theory," npj Computational Materials, vol. 9, p. 158, 2023/08/29 2023. 
+
+10.1038/s41524 -023 -01115 -3
+
+[13] M. Naseri, S. Gusarov, and D. R. Sa lahub, "Quantum Machine Learning in Materials 
+
+Prediction: A Case Study on ABO3 Perovskite Structures," The Journal of Physical 
+
+Chemistry Letters, vol. 14, pp. 6940 -6947, 2023/08/10 2023. 
+
+10.1021/acs.jpclett.3c01703 
+
+[14] E. Cignoni, D. Suman, J. Nigam, L. C upellini, B. Mennucci, and M. Ceriotti, "Electronic 
+
+excited states from physically constrained machine learning," ACS Central Science, vol. 
+
+10, pp. 637 -648, 2024.  https://doi.org/10.1021/acscentsci.3c01480 
+
+[15] S. Johnston, E. Khatami, and R. Scalettar, "A perspective on machine learning and data 
+
+science for strongly correlated electron problems," Carbon Trends, vol. 9, p. 100231, 
+
+2022/10/01/ 2022.  https://doi.org/10.1016/j.cartre.2022.100231 
+
+[16] A. Sharma and Z. Ali, "Integration of Quantum Computing with Artificial Intelligence: A 
+
+Systematic Review," Journal of Engineering Research and Reports, vol. 27, pp. 329 -
+
+343, 2025.  https://doi.org/10.9734/jerr/2025/v27i91644 
+
+[17] J. McGreevy, "Generalized Symmetries in Condensed Matter," Annual Review of 
+
+Condensed Matter Physics, vol. 14, pp. 57 -82, 2023.  https://doi.org/10.1146/annurev -
+
+conmatphys -040721 -021029 
+
+[18] H. Chorsi, B. Cheng, B. Zhao, J. Toudert, V. Asadchy, O. F. Shoron , et al. , "Topological 
+
+Materials for Functional Optoelectronic Devices," Advanced Func tional Materials, vol. 
+
+32, p. 2110655, 2022.  https://doi.org/10.1002/adfm.202110655 
+
+[19] R. González -Hernández, C. Pinilla, and B. Uribe, "Axion insulators protected by 
+
+${C}_{2} \mathbb{T}$ symmetry, their $K$ -theory invariants, and material realizations," 
+
+Physical Review B, vol. 106, p. 195144, 11/23/ 2022. 10.1103/PhysRevB.106.195144 
+
+[20] B. J. Wieder, B. Bradlyn, J. Cano, Z. Wang, M. G. Vergniory, L. Elcoro , et al. ,
+
+"Topological materials discovery from crystal symmetry," Nature Reviews Materials, vol. 
+
+7, pp. 196 -216, 2022/03/01 2022. 10.1038/s41578 -021 -00380 -2
+
+[21] M. G. Vergniory, B. J. Wieder, L. Elcoro, S. S. P. Parkin, C. Felser, B. A. Bernevig , et al. ,
+
+"All topological bands of all nonmagnetic stoichiometric materials," Science, vol. 376, p. 
+
+eabg9094 , 2022. doi:10.1126/science.abg9094 
+
+[22] Y. Xu, L. Elcoro, Z. -D. Song, B. J. Wieder, M. G. Vergniory, N. Regnault , et al. , "High -throughput calculations of magnetic topological materials," Nature, vol. 586, pp. 702 -707, 
+
+2020/10/01 2020. 10.1038/s41586 -020 -2837 -0
+
+[23] N. C. Frey, M. K. Horton, J. M. Munro, S. M. Griffin, K. A. Persson, and V. B. Shenoy, 
+
+"High -throughput search for magnetic and topological order in transition metal oxides," 
+
+Science Advances, vol. 6, p. eabd1076, 2020. doi:10.1126/sciadv.abd1076 
+
+[24] R. Tamang, S. Gurung, D. P. Rai, S. Brahimi, and S. Lounis. (2025, Altermagneti sm and 
+
+Altermagnets: A Brief Review. Magnetism 5(3), 17. 10.3390/magnetism5030017 
+
+[25] T. Kobayashi, Y. Toichi, K. Yaji, Y. Nakata, Y. Yaoita, M. Iwaoka , et al. , "Revealing the 
+
+Hidden Spin -Polarized Bands in a Superconducting Tl Bilayer Crystal," Nano Lett ers, 
+
+vol. 23, pp. 7675 -7682, 2023/08/23 2023. 10.1021/acs.nanolett.3c02387 
+
+[26] T. Kawamura, K. Yoshimi, K. Hashimoto, A. Kobayashi, and T. Misawa, "Compensated 
+
+Ferrimagnets with Colossal Spin Splitting in Organic Compounds," Physical Review 
+
+Letters, vol. 132, p. 156502, 04/10/ 2024. 10.1103/PhysRevLett.132.156502 
+
+[27] Z. F. Gao, S. Qu, B. Zeng, Y. Liu, J. R. Wen, H. Sun , et al. , "AI -accelerated discovery of 
+
+altermagnetic materials," Natl Sci Rev, vol. 12, p. nwaf066, Apr 2025. 
+
+10.1093/nsr/nwaf066 
+
+[28] H. K usunose, R. Oiwa, and S. Hayami, "Symmetry -adapted modeling for molecules and 
+
+crystals," Physical Review B, vol. 107, p. 195118, 05/11/ 2023. 
+
+10.1103/PhysRevB.107.195118 
+
+[29] M. Kusaba, Y. Hayashi, C. Liu, A. Wakiuchi, and R. Yoshida, "Representation of 
+
+ma terials by kernel mean embedding," Physical Review B, vol. 108, p. 134107, 10/16/ 
+
+2023. 10.1103/PhysRevB.108.134107 
+
+[30] J. Schrier, "Can One Hear the Shape of a Molecule (from its Coulomb Matrix 
+
+Eigenvalues)?," Journal of Chemical Information and Modeling , vol. 60, pp. 3804 -3811, 
+
+2020/08/24 2020. 10.1021/acs.jcim.0c00631 
+
+[31] L. Himanen, M. O. J. Jäger, E. V. Morooka, F. Federici Canova, Y. S. Ranawat, D. Z. 
+
+Gao , et al. , "DScribe: Library of descriptors for machine learning in materials science," 
+
+Computer Physics Communications, vol. 247, p. 106949, 2020/02/01/ 2020. 
+
+https://doi.org/10.1016/j.cpc.2019.106949 
+
+[32] T. Lam Pham, H. Kino, K. Terakura, T. Miyake, K. Tsuda, I. Takigawa , et al. , "Machine 
+
+learning reveals orbital interaction in materials," Sci Tech nol Adv Mater, vol. 18, pp. 756 -
+
+765, 2017. 10.1080/14686996.2017.1378060 
+
+[33] M. Higashi and H. Ikeno, "Extraction of Local Structure Information from X -ray 
+
+Absorption Near -Edge Structure: A Machine Learning Approach," MATERIALS 
+
+TRANSACTIONS, vol. 64, pp. 2179 -2184, 2023. 10.2320/matertrans.MT -MG2022028 
+
+[34] J. Wang, Y. Wang, H. Zhang, Z. Yang, Z. Liang, J. Shi , et al. , "E(n) -Equivariant cartesian 
+
+tensor message passing interatomic potential," Nature Communications, vol. 15, p. 
+
+7607, 2024/09/01 2024. 10.103 8/s41467 -024 -51886 -6
+
+[35] F. Musil, A. Grisafi, A. P. Bartók, C. Ortner, G. Csányi, and M. Ceriotti, "Physics -Inspired 
+
+Structural Representations for Molecules and Materials," Chemical Reviews, vol. 121, 
+
+pp. 9759 -9815, 2021/08/25 2021. 10.1021/acs.chemrev. 1c00021 
+
+[36] S. Georgousis, M. P. Kenning, and X. Xie, "Graph Deep Learning: State of the Art and 
+
+Challenges," IEEE Access, vol. 9, pp. 22106 -22140, 2021. 
+
+10.1109/ACCESS.2021.3055280 
+
+[37] T. Kirstein, L. Petrich, R. R. Purushottam Raj Purohit, J. -S. Micha, and V. Schmidt. 
+
+(2023, CNN -Based Laue Spot Morphology Predictor for Reliable Crystallographic 
+
+Descriptor Estimation. Materials 16(9), 3397. 10.3390/ma16093397 
+
+[38] "Real -Space DMRG," in Density Matrix and Tensor Network Renormalization , T. Xiang, 
+
+Ed., ed Cambridge: Cambridge University Press, 2023, pp. 103 -122. DOI: 
+
+10.1017/9781009398671.008 
+
+[39] J. Rodríguez -Laguna, P. Migdał, M. I. Berganza, M. Lewenstein, and G. Sierra, "Qubism: self -similar visualization of many -body wavefunctions," New Journal of Phys ics, vol. 14, 
+
+p. 053028, 2012/05/22 2012. 10.1088/1367 -2630/14/5/053028 
+
+[40] L. C. Sander, N. A. McMahon, P. Zapletal, and M. J. Hartmann, "Quantum convolutional 
+
+neural network for phase recognition in two dimensions," Physical Review Research, vol. 
+
+7, p. L042032, 11/07/ 2025. 10.1103/vpyw -nszk 
+
+[41] P. Reiser, M. Neubert, A. Eberhard, L. Torresi, C. Zhou, C. Shao , et al. , "Graph neural 
+
+networks for materials science and chemistry," Communications Materials, vol. 3, p. 93, 
+
+2022/11/26 2022. 10.1038/s43246 -022 -00315 -6
+
+[42] V. c. G. Satorras, E. Hoogeboom, and M. Welling, "E(n) Equivariant Graph Neural 
+
+Networks," presented at the Proceedings of the 38th International Conference on 
+
+Machine Learning, Proceedings of Machine Learning Research, 2021. 
+
+[43] J. Martink a, M. Pederzoli, M. Barbatti, P. O. Dral, and J. Pittner, "A simple approach to 
+
+rotationally invariant machine learning of a vector quantity," The Journal of Chemical 
+
+Physics, vol. 161, p. 174104, 2024. 10.1063/5.0230176 
+
+[44] R. Roche, B. Moussad, M. H. Sh uvo, and D. Bhattacharya, "E(3) equivariant graph 
+
+neural networks for robust and accurate protein -protein interaction site prediction," PLOS 
+
+Computational Biology, vol. 19, p. e1011435, 2023. 10.1371/journal.pcbi.1011435 
+
+[45] S. Batzner, A. Musaelian, L. S un, M. Geiger, J. P. Mailoa, M. Kornbluth , et al. , "E(3) -
+
+equivariant graph neural networks for data -efficient and accurate interatomic potentials," 
+
+Nature Communications, vol. 13, p. 2453, 2022/05/04 2022. 10.1038/s41467 -022 -
+
+29939 -5
+
+[46 ] A. A. Duval, V. Schmidt, A. Hernández -Garc ı́ a, S. Miret, F. D. Malliaros, Y. Bengio , et 
+
+al. , "FAENet: Frame Averaging Equivariant GNN for Materials Modeling," presented at 
+
+the Proceedings of the 40th International Conference on Machine Learning, Proceedi ngs 
+
+of Machine Learning Research, 2023. 
+
+[47] T. Koker, K. Quigley, E. Taw, K. Tibbetts, and L. Li, "Higher -order equivariant neural 
+
+networks for charge density prediction in materials," npj Computational Materials, vol. 
+
+10, p. 161, 2024/07/26 2024. 10.103 8/s41524 -024 -01343 -1
+
+[48] L. Yifan, Z. Xiuying, L. Mingkang, and S. Lei, "A critical review of machine learning 
+
+interatomic potentials and Hamiltonian," Journal of Surveillance, Security and Safety, 
+
+vol. 5, p. 43, 2025. 10.20517/jmi.2025.17 
+
+[49] H. Yu, Y. Zhong, L. Hong, C. Xu, W. Ren, X. Gong , et al. , "Spin -dependent graph neural 
+
+network potential for magnetic materials," Physical Review B, vol. 109, p. 144426, 04/26/ 
+
+2024. 10.1103/PhysRevB.109.144426 
+
+[50] S. Yin, X. Pan, X. Zhu, T. Gao, H. Zhang, F. Wu , e t al. , "Towards harmonization of 
+
+SO(3) -equivariance and expressiveness: a hybrid deep learning framework for 
+
+electronic -structure Hamiltonian prediction," Machine Learning: Science and 
+
+Technology, vol. 5, p. 045038, 2024/11/12 2024. 10.1088/2632 -2153/ad8d3 0
+
+[51] H. Li, Z. Wang, N. Zou, M. Ye, R. Xu, X. Gong , et al. , "Deep -learning density functional 
+
+theory Hamiltonian for efficient ab initio electronic -structure calculation," Nature 
+
+Computational Science, vol. 2, pp. 367 -377, 2022/06/01 2022. 10.1038/s43588 -022 -
+
+00265 -6
+
+[52] M. Su, J. -H. Yang, H. -J. Xiang, and X. -G. Gong, "Efficient determination of the 
+
+Hamiltonian and electronic properties using graph neural network with complete local 
+
+coordinates," Machine Learning: Science and Technology, vol. 4, p. 035010 , 2023/07/24 
+
+2023. 10.1088/2632 -2153/accb26 
+
+[53] Z. Chen, N. Andrejevic, T. Smidt, Z. Ding, Q. Xu, Y. -T. Chi , et al. , "Direct Prediction of 
+
+Phonon Density of States With Euclidean Neural Networks," Advanced Science, vol. 8, 
+
+p. 2004214, 2021/06/01 2021.  htt ps://doi.org/10.1002/advs.202004214 
+
+[54] V. Fung, P. Ganesh, and B. G. Sumpter, "Physically Informed Machine Learning 
+
+Prediction of Electronic Density of States," Chemistry of Materials, vol. 34, pp. 4848 -4855, 2022/06/14 2022. 10.1021/acs.chemmater.1c0425 2
+
+[55] A. Aryanpour and A. Sadeghi, "Machine learning the local electronic density of states," 
+
+Physical Review B, vol. 112, p. 115101, 09/02/ 2025. 10.1103/91sg -6ydl 
+
+[56] A. Sangeetha, K. Reivanth, T. Thrupthika, S. Ramya, and D. Nataraj, "Strong coupling of 
+
+hybrid states of light and matter in cavity -coupled quantum dot solids," Scientific 
+
+Reports, vol. 13, p. 16662, 2023.  https://doi.org/10.1038/s41598 -023 -42105 -1
+
+[57] P. Zhang, H. Shen, and H. Zhai, "Machine Learning Topological Invariants with Neural 
+
+Ne tworks," Physical Review Letters, vol. 120, p. 066401, 02/06/ 2018. 
+
+10.1103/PhysRevLett.120.066401 
+
+[58] N. Sun, J. Yi, P. Zhang, H. Shen, and H. Zhai, "Deep learning topological invariants of 
+
+band insulators," Physical Review B, vol. 98, p. 085402, 08/02/ 2018. 
+
+10.1103/PhysRevB.98.085402 
+
+[59] S. Park, Y. Hwang, and B. -J. Yang, "Unsupervised learning of topological phase diagram 
+
+using topological data analysis," Physical Review B, vol. 105, p. 195115, 05/10/ 2022. 
+
+10.1103/PhysRevB.105.195115 
+
+[60] N. Claussen , B. A. Bernevig, and N. Regnault, "Detection of topological materials with 
+
+machine learning," Physical Review B, vol. 101, p. 245117, 06/03/ 2020. 
+
+10.1103/PhysRevB.101.245117 
+
+[61] A. S. Parackal, R. E. A. Goodall, F. A. Faber, and R. Armiento, "Identifyin g crystal 
+
+structures beyond known prototypes from x -ray powder diffraction spectra," Physical 
+
+Review Materials, vol. 8, p. 103801, 10/02/ 2024. 10.1103/PhysRevMaterials.8.103801 
+
+[62] I. Robredo, Y. Xu, Y. Jiang, C. Felser, B. A. Bernevig, L. Elcoro , et al. , "New magnetic 
+
+topological materials from high -throughput search," Science Advances, vol. 11, p. 
+
+eadv8780. 10.1126/sciadv.adv8780 
+
+[63] H. Xu, Y. Jiang, H. Wang, and J. Wang, "Discovering two -dimensional magnetic 
+
+topological insulators by machine learning, " Physical Review B, vol. 109, p. 035122, 
+
+01/11/ 2024. 10.1103/PhysRevB.109.035122 
+
+[64] N. Lambert, T. Raheja, S. Cross, P. Menczel, S. Ahmed, A. Pitchford , et al. , "QuTiP -
+
+BoFiN: A bosonic and fermionic numerical hierarchical -equations -of -motion library wi th 
+
+applications in light -harvesting, quantum control, and single -molecule electronics," 
+
+Physical Review Research, vol. 5, p. 013181, 03/15/ 2023. 
+
+10.1103/PhysRevResearch.5.013181 
+
+[65] M. Kim, Z. Wang, Y. Yang, H. T. Teo, J. Rho, and B. Zhang, "Three -dimens ional 
+
+photonic topological insulator without spin –orbit coupling," Nature Communications, vol. 
+
+13, p. 3499, 2022/06/17 2022. 10.1038/s41467 -022 -30909 -0
+
+[66] C. Yeung, D. Ho, B. Pham, K. T. Fountaine, Z. Zhang, K. Levy , et al. , "Enhancing Adjoint 
+
+Optimizati on -Based Photonic Inverse Design with Explainable Machine Learning," ACS 
+
+Photonics, vol. 9, pp. 1577 -1585, 2022/05/18 2022. 10.1021/acsphotonics.1c01636 
+
+[67] S. Han, Q. Han, and C. Li, "Deep -learning -based inverse design of phononic crystals for 
+
+anticipate d wave attenuation," Journal of Applied Physics, vol. 132, p. 154901, 2022. 
+
+10.1063/5.0111182 
+
+[68] L. -W. Yu, S. -Y. Zhang, P. -X. Shen, and D. -L. Deng, "Unsupervised learning of 
+
+interacting topological phases from experimental observables," Fundamental Resea rch, 
+
+vol. 4, pp. 1086 -1091, 2024/09/01/ 2024.  https://doi.org/10.1016/j.fmre.2022.12.016 
+
+[69] A. Ahmed and N. Roy, "Supervised and unsupervised learning of the many -body critical 
+
+phase, phase transitions, and critical exponents in dis ordered quantum systems," 
+
+Physical Review B, vol. 111, p. 195151, 05/22/ 2025. 10.1103/PhysRevB.111.195151 
+
+[70] C. Beveridge, K. Hart, C. R. Cristani, X. Li, E. Barbierato, and Y. -T. Hsu, "Unsupervised 
+
+machine learning for detecting mutual independence amo ng eigenstate regimes in 
+
+interacting quasiperiodic chains," Physical Review B, vol. 111, p. L140202, 04/25/ 2025. 
+
+10.1103/PhysRevB.111.L140202 [71] S. Tibaldi, G. Magnifico, D. Vodola, and E. Ercolessi, "Unsupervised and supervised 
+
+learning of interacting topological phases from single -particle correlation functions," 
+
+SciPost Physics, vol. 14, p. 005, 2023. 10.21468/SciPostPhys.14.1.005 
+
+[72] L. Šmejkal, J. Sinova, and T. Jungwirth, "Emerging Research Landscape of 
+
+Altermagnetism," Physical Review X, vol. 12, p. 040501, 12/08/ 2022. 
+
+10.1103/PhysRevX.12.040501 
+
+[73] C. -C. Wei, E. Lawrence, A. Tran, and H. Ji, "Crystal Chemistry and Design Principles of 
+
+Altermagnets," ACS Organic & Inorganic Au, vol. 4, pp. 604 -619, 2024/12/04 2024. 
+
+10.1021/acsorginorgau.4c00064 
+
+[74] S. Ghara, E. Barts, K. Vasin, D. Kamenskyi, L. Prodan, V. Tsurkan , et al. , "Magnetization 
+
+reversal through an antiferromagnetic state," Nature Communications, vol. 14, p. 5174, 
+
+2023/08/24 2023. 10.1038/s41467 -023 -40722 -y
+
+[75] S. Santhosh, P. Corbae, W . J. Yánez -Parreño, S. Ghosh, C. J. Jensen, A. V. Fedorov , et 
+
+al. , "Altermagnetic Band Splitting in 10 nm Epitaxial CrSb Thin Films," Advanced 
+
+Materials, vol. 37, p. e08977, 2025/11/01 2025.  https://doi.org/10.1002/adma.202508977 
+
+[76] Y. -P. Zhu, X. Chen, X .-R. Liu, Y. Liu, P. Liu, H. Zha , et al. , "Observation of plaid -like spin 
+
+splitting in a noncoplanar antiferromagnet," Nature, vol. 626, pp. 523 -528, 2024/02/01 
+
+2024. 10.1038/s41586 -024 -07023 -w
+
+[77] M. Mostovoy, "Phenomenology of altermagnets," Applied Phy sics Letters, vol. 127, p. 
+
+060501, 2025. 10.1063/5.0283630 
+
+[78] X. Wan, S. Mandal, Y. Guo, and K. Haule, "High -Throughput Search for Metallic 
+
+Altermagnets by Embedded Dynamical Mean Field Theory," Physical Review Letters, 
+
+vol. 135, p. 106501, 09/02/ 2025. 10.1103/k47t -23gp 
+
+[79] J. Sødequist and T. Olsen, "Two -dimensional altermagnets from high throughput 
+
+computational screening: Symmetry requirements, chiral magnons, and spin -orbit 
+
+effects," Applied Physics Letters, vol. 124, p. 182409, 2024. 10.1063/5.0198 285 
+
+[80] X. -Q. Han, X. -D. Wang, M. -Y. Xu, Z. Feng, B. -W. Yao, P. -J. Guo , et al. , "AI -Driven 
+
+Inverse Design of Materials: Past, Present, and Future," Chinese Physics Letters, vol. 
+
+42, p. 027403, 2025/03/01 2025. 10.1088/0256 -307X/42/2/027403 
+
+[81] Z. -F. Gao, S. Qu, B. Zeng, Y. Liu, J. -R. Wen, H. Sun , et al. , "AI -accelerated discovery of 
+
+altermagnetic materials," National Science Review, vol. 12, p. nwaf066, 2025. 
+
+10.1093/nsr/nwaf066 
+
+[82] Z. Liu, M. Ozeki, S. Asai, S. Itoh, and T. Masuda, "Chiral Split Magnon in Altermagnetic 
+
+MnTe," Physical Review Letters, vol. 133, p. 156702, 10/08/ 2024. 
+
+10.1103/PhysRevLett.133.156702 
+
+[83] J. Sødequist and T. Olsen, "Magnetic order in the computational 2D materials database 
+
+(C2DB) from high throughput spin spiral calculation s," npj Computational Materials, vol. 
+
+10, p. 170, 2024/08/04 2024. 10.1038/s41524 -024 -01318 -2
+
+[84] Z. Yang, Q. Yu, Y. Zhan, and J. Liu, "Incorporating edge convolution and correlative self -
+
+attention into graph neural network for material properties predict ion," Machine Learning: 
+
+Science and Technology, vol. 6, p. 015020, 2025/01/29 2025. 10.1088/2632 -2153/ad9fcf 
+
+[85] N. Qureshi, J. Bang, and J. Doh, "Deep learning in -depth analysis of crystal graph 
+
+convolutional neural networks: A new era in materials disco very and its applications," 
+
+vol. 14, 2025. doi:10.1515/ntrev -2025 -0200 
+
+[86] X. -Q. Han, X. -D. Wang, M. -Y. Xu, Z. Feng, B. -W. Yao, P. -J. Guo , et al. , "AI -Driven 
+
+Inverse Design of Materials: Past, Present, and Future," Chin. Phys. Lett., vol. 42, p. 
+
+027403, 2 025. 10.1088/0256 -307X/42/2/027403 
+
+[87] T. Osumi, S. Souma, T. Aoyama, K. Yamauchi, A. Honma, K. Nakayama , et al. ,
+
+"Observation of a giant band splitting in altermagnetic MnTe," Physical Review B, vol. 
+
+109, p. 115102, 03/01/ 2024. 10.1103/PhysRevB.109.1151 02 
+
+[88] N. Biniskos, M. Dos Santos Dias, S. Agrestini, D. Sviták, K. J. Zhou, J. Pospíšil , et al. ,"Systematic mapping of altermagnetic magnons by resonant inelastic X -ray circular 
+
+dichroism," Nat Commun, vol. 16, p. 9311, Oct 21 2025. 10.1038/s41467 -025 -64322 -0
+
+[89] F. Pawula, A. Fakih, R. Daou, S. Hébert, N. Mordvinova, O. Lebedev , et al. , "Multiband 
+
+transport in ${ \mathrm{RuO}}_{2}$," Physical Review B, vol. 110, p. 064432, 08/26/ 
+
+2024. 10.1103/PhysRevB.110.064432 
+
+[90] D. Q. Ho, D. Q. To, R. Hu, G. W. Br yant, and A. Janotti, "Symmetry -breaking induced 
+
+surface magnetization in nonmagnetic ${ \mathrm{RuO}}_{2}$," Physical Review 
+
+Materials, vol. 9, p. 094406, 09/08/ 2025. 10.1103/6fxv -153y 
+
+[91] P. Keßler, L. Garcia -Gassull, A. Suter, T. Prokscha, Z. Salman, D . Khalyavin , et al. ,
+
+"Absence of magnetic order in RuO2: insights from μSR spectroscopy and neutron 
+
+diffraction," npj Spintronics, vol. 2, p. 50, 2024/10/05 2024. 10.1038/s44306 -024 -00055 -y
+
+[92] A. Smolyanyuk, I. I. Mazin, L. Garcia -Gas sull, and R. Valentí, "Fragility of the magnetic 
+
+order in the prototypical altermagnet ${ \mathrm{RuO}}_{2}$," Physical Review B, vol. 
+
+109, p. 134424, 04/16/ 2024. 10.1103/PhysRevB.109.134424 
+
+[93] Q. D. Ho, Q. To, R. Hu, G. Bryant, and A. Janotti, "Symmetry -breaking induced surface 
+
+magnetization in non -magnetic RuO2," 2025 -09 -08 04:09:00 2025. 
+
+https://doi.org/10.1103/6fxv -153y 
+
+[94] L. Bai, W. Feng, S. Liu, L. Šmejkal, Y. Mokrousov, and Y. Yao, "Altermagnetism: 
+
+Exploring New Frontiers in Magnetism and Spintro nics," Advanced Functional Materials, 
+
+vol. 34, p. 2409327, 2024/12/01 2024.  https://doi.org/10.1002/adfm.202409327 
+
+[95] A. Dawid, P. Huembeli, M. Tomza, M. Lewenstein, and A. Dauphin, "Phase detection 
+
+with neural networks: interpreting the black box," New Journal of Physics, vol. 22, p. 
+
+115001, 2020/11/12 2020. 10.1088/1367 -2630/abc463 
+
+[96] T. A. R. Purcell, M. Scheffler, and L. M. Ghiringhelli, "Recent advances in the SISSO 
+
+method and their implementation in the SISSO++ code," The Journal of Chemical 
+
+Physi cs, vol. 159, p. 114110, 2023. 10.1063/5.0156620 
+
+[97] Z. Guo, S. Hu, Z. K. Han, and R. Ouyang, "Improving Symbolic Regression for 
+
+Predicting Materials Properties with Iterative Variable Selection," J Chem Theory 
+
+Comput, vol. 18, pp. 4945 -4951, Aug 9 2022. 10.1021/acs.jctc.2c00281 
+
+[98] D. E. Farache, J. C. Verduzco, Z. D. McClure, S. Desai, and A. Strachan, "Active 
+
+learning and molecular dynamics simulations to find high melting temperature alloys," 
+
+Computational Materials Science, vol. 209, p. 111386, 2022/ 06/15/ 2022. 
+
+https://doi.org/10.1016/j.commatsci.2022.111386 
+
+[99] A. Wang, H. Liang, A. McDannald, I. Takeuchi, and A. G. Kusne, "Benchmarking active 
+
+learning strategies for materials optimization and discovery," Oxford Open Materials 
+
+Science, vol. 2, p. i tac006, 2022. 10.1093/oxfmat/itac006 
+
+[100] X. -Q. Han, P. -J. Guo, Z. -F. Gao, H. Sun, and Z. -Y. Lu, "InvDesFlow -AL: active learning -
+
+based workflow for inverse design of functional materials," npj Computational Materials, 
+
+vol. 11, p. 364, 2025/11/24 2025. 10. 1038/s41524 -025 -01830 -z
+
+[101] C. J. Bartel, "Review of computational approaches to predict the thermodynamic stability 
+
+of inorganic solids," Journal of Materials Science, vol. 57, pp. 10475 -10498, 2022/06/01 
+
+2022. 10.1007/s10853 -022 -06915 -4
+
+[102] M. Harwan i, J. C. Verduzco, B. H. Lee, and A. Strachan, "Accelerating active learning 
+
+materials discovery with FAIR data and workflows: A case study for alloy melting 
+
+temperatures," Computational Materials Science, vol. 249, p. 113640, 2025/02/05/ 2025. 
+
+https://doi .org/10.1016/j.commatsci.2024.113640 
+
+[103] E. Lindgren, A. J. Jackson, E. Fransson, E. Berger, G. Škoro, S. Rudić , et al. , "Predicting 
+
+neutron experiments from first principles: a workflow powered by machine learning," 
+
+Journal of Materials Chemistry A, vol . 13, pp. 25509 -25520, 2025. 
+
+https://doi.org/10.1039/D5TA03325J

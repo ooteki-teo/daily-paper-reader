@@ -1,0 +1,857 @@
+Title: Probing the real-space density of spin-entangled electrons
+
+URL Source: https://arxiv.org/pdf/2604.13751v1
+
+Published Time: Thu, 16 Apr 2026 01:00:31 GMT
+
+Number of Pages: 25
+
+Markdown Content:
+# Probing the real-space density of spin-entangled electrons 
+
+Federico Pisani, 1, ∗ Leonie Spitz, 2, 3, ∗ Libor Voj´ aˇ cek, 4, 5, ∗ Flaviano Jos´ e dos Santos, 4, 5, 6 Alberto Carta, 4, 5 
+
+Bastien Dalla Piazza, 7 Stanislav E. Nikitin, 8 Karl W. Kr¨ amer, 8, 9 Bj¨ orn F˚ ak, 10, † Taro Nakajima, 11, 12, 13 
+
+Daichi Ueta, 12 Hiraku Saito, 11 Jian-Rui Soh, 14, 15 Nicola Marzari, 4, 16, 17 and Henrik M. Rønnow 1
+
+> 1
+
+Laboratory for Quantum Magnetism, Institute of Physics, Ecole Polytechnique F´ ed´ erale de Lausanne (EPFL), CH-1015 Lausanne, Switzerland 
+
+> 2
+
+Quantum Criticality and Dynamics Group, Paul Scherrer Institute, CH-5232 Villigen-PSI, Switzerland 
+
+> 3
+
+Institute for Quantum Electronics, ETH Zurich, CH-8093 H¨ onggerberg, Switzerland 
+
+> 4
+
+PSI Center for Scientific Computing, Theory and Data, Paul Scherrer Institute, CH-5232 Villigen-PSI, Switzerland 
+
+> 5
+
+National Centre for Computational Design and Discovery of Novel Materials (MARVEL), CH-5232 Villigen PSI, Switzerland 
+
+> 6
+
+Brazilian Center For Research in Physics (CBPF), Rua Dr. Xavier Sigaud 150, Urca, Rio de Janeiro - RJ, 22290-180, Brazil 
+
+> 7
+
+Institute of Physics, Ecole Polytechnique F´ ed´ erale de Lausanne (EPFL), CH-1015 Lausanne, Switzerland 
+
+> 8
+
+PSI Center for Neutron and Muon Sciences, Paul Scherrer Institut, CH-5232 Villigen-PSI, Switzerland 
+
+> 9
+
+Department of Chemistry, Biochemistry, and Pharmaceutical Sciences, University of Bern, CH-3012 Bern, Switzerland 
+
+> 10
+
+Institut Laue-Langevin, 71 avenue des Martyrs, CS 20156, 38042 Grenoble cedex 9, France 
+
+> 11
+
+Institute for Solid State Physics, The University of Tokyo, Kashiwa 277-8581, Japan 
+
+> 12
+
+Institute of Materials Structure Science, High Energy Accelerator Research Organization, Tsukuba, Ibaraki 305-0801, Japan 
+
+> 13
+
+RIKEN Center for Emergent Matter Science, Wako 351-0198, Japan 
+
+> 14
+
+Quantum Innovation Centre (Q.InC), Agency for Science, Technology and Research (A*STAR), 2 Fusionopolis Way, Innovis #08-03, Singapore 138634, Singapore 
+
+> 15
+
+Centre for Quantum Technologies, National University of Singapore, 3 Science Drive 2, Singapore 117543, Singapore 
+
+> 16
+
+Theory and Simulation of Materials (THEOS), and National Centre for Computational Design and Discovery of Novel Materials (MARVEL), ´Ecole Polytechnique F´ ed´ erale de Lausanne (EPFL), CH-1015 Lausanne, Switzerland 
+
+> 17
+
+U Bremen Excellence Chair, Bremen Center for Computational Materials Science, MAPEX Center for Materials and Processes, University of Bremen, D-28359 Bremen, Germany 
+
+On the textbook example of an isolated antiferromagnetic Heisenberg dimer, we demonstrate that the magnetic form factor and the magnetic electron density distribution can be extracted from the momentum-dependence of the inelastic neutron scattering (INS) intensity of a magnetic excitation. We measure the three-dimensional (3D) magnetic structure factor of the singlet-to-triplet excitation in Cu(II) acetate monohydrate with INS. Using a minimal parametrization of the magnetic electron density, we deduce the real-space density of the spin-entangled electrons and the transfer of magnetic electron density between metal and ligand atoms from the experimental data. Density functional theory (DFT) calculations reproduce the measured structure factor quantitatively, providing a direct validation of DFT broken-symmetry spin densities against full 3D INS data. The quantitative agreement between experiment, parametrization, and theory establishes a robust framework for determining magnetic form factors and the magnetic electron density in a broad range of magnetic materials and demonstrates INS as a probe of the envelope of spatial electronic wavefunctions. 
+
+I. INTRODUCTION 
+
+Quantum magnetic insulators host a remarkably di-verse range of magnetic phases and phenomena span-ning from relatively conventional behavior to highly ex-otic states [1]. Some develop long-ranged magnetic or-der, others remain disordered even at lowest tempera-tures, and some display a complex coexistence of both order and disorder [2–4]. The primary tools for captur-ing the magnetic ground state and the excitation spectra of quantum phases are spin Hamiltonians, which encode    
+
+> ∗These authors contributed equally to this work.
+> †Deceased. We acknowledge Bj¨ orn’s contributions to this work, in particular his support as instrument scientist during the ex-periment.
+
+the mutual interactions among spins in the underlying many body systems. They often provide an excellent de-scription of the macroscopic many-body states realized in real materials, but in some cases, e.g. in the pres-ence of non-negligible quantum fluctuations, they can fail to reproduce the experimental ordering behavior of the magnetic moments precisely [4, 5]. Achieving a deeper understanding of why one particular compound devel-ops long-ranged magnetic order while in another fluctu-ations dominate, calls for moving beyond this effective description. This entails reducing the level of abstrac-tion and examining the microscopic observables behind the model. While the spin operators ˆS in the model Hamiltonians stand for effective spins localized on spe-cific lattice sites, the magnetic interactions between them originate from the delocalization of the electron spins be-tween the atoms. Their foundation lies in the distribution 
+
+> arXiv:2604.13751v1 [cond-mat.str-el] 15 Apr 2026
+
+2(a)                  
+
+> (b)
+> (c)
+> (d)
+> (e)
+> (f)
+> (j)
+> (k)
+> (l)
+> (h)
+> (g)
+> (i)
+> ψ(r)
+> |F| 2
+> 𝑦 𝑦 𝑦
+> FIG. 1. Systematic analysis of the impact of the shape of a spatial electronic wavefunction on the shape of the magnetic form factor in momentum space for a sorbital (a-c), the dX2−Y 2orbital (d-f), 3 d-2 phybrid orbitals in a plaquette geometry (g-i), and 3 d- 2 sp hybrid orbitals in a plaquette geometry (j-l). The upper row shows a two-dimensional (2D) projection of the wavefunction in real space. The middle row shows the corresponding absolute square of the magnetic structure factor in reciprocal space, which is given by the absolute square of the Fourier transform of the magnetic electron density ρ=|ψ|2. The bottom row shows a one-dimensional (1D) cut along QXat QY= 0. The metal-ligand distance in panels (j-l) is 1 .97 ˚ A, which corresponds to the average Cu-O distance in a CuO 4unit of Cu(II) acetate monohydrate.
+
+of charge density over the magnetic orbitals which we re-fer to as the magnetic electron density. In polarized mag-netic phases, this corresponds to the spin density. The magnetic electron density distribution ρ(r) = |ψ(r)|2 is determined by the spatial parts of the electronic wave-functions ψ(r) linking the fundamental electronic prop-erties and the macroscopic magnetic state of correlated electron systems. The connection between microscopic electronic properties, the magnetic electron density dis-tribution and the macroscopic spin Hamiltonian calls for methods to characterize the magnetic electron density with qualitative and quantitative accuracy and promises answers to the question why one material hosts an exotic quantum many body state, while another is a conven-tional magnet beyond the classic geometry arguments. Apart from the established problems of quantum mag-netism, determining the magnetic electron density dis-tribution recently gained relevance in the study of al-termagnets which carry a zero net magnetization – like antiferromagnets – and are characterized by the spatial separation of orbitals with opposite spin resulting in the presence of an anisotropy of the local spin density [6]. The neutron magnetic form factor, F (Q), is related to the real-space distribution of the magnetic electron density by a Fourier transform. Hence, the momentum (Q)-space distribution of neutron scattering intensities 
+
+I(Q) ∝ | F (Q)|2 contains quantitative information about the 3D real-space distribution of the charge density in magnetic orbitals and consequently about the envelope of the underlying electronic wavefunctions. An estab-lished method to measure the magnetic form factor with neutrons involves polarized neutron diffraction on nu-clear Bragg peaks, where interference between nuclear and magnetic scattering enables extraction of the mag-3netic scattering amplitude. While this is a property in-trinsic to ferromagnets and ferrimagnets, application of a magnetic field to induce a net magnetic moment extends the utility of the method to many systems lacking sponta-neous magnetization. Because the magnetic form factor is determined completely, including its phase, the spin-density distribution can then be extracted by a Fourier transform [7]. In our work, we show that the dependence of the mag-netic form factor on the scattering vector Q can also be measured directly by INS on the magnetic excitations of a spin system and that the scattered intensities contain information about the magnetic electron density distri-bution of the excited state. This method does not require the presence of a net magnetic moment and is therefore convenient for antiferromagnets. The loss of the phase of the magnetic form factor in this approach is compensated for by theoretical methods. Because the Q-dependence of INS intensities of magnetic excitations is not only deter-mined by the Q-dependence of the magnetic form factor but also by the dispersion of the excitation, we provide the proof of principle on a very simple system, the zero-dimensional isolated dimer of two spins on two atomic sites, before discussing the generalization of the concept to more complex materials. The antiferromagnetic Heisenberg dimer is described by the spin Hamiltonian ˆH = −2J ˆS1 · ˆS2, (1) where J is the magnetic exchange coupling constant. For antiferromagnetic coupling, the ground state is the non-magnetic singlet, the simplest example of an entangled state. The only excitation of the system is a sharp, dis-persionless, paramagnetic triplet which is separated from the ground state by a gap of size ∆ = |2J|.Cu(II) acetate monohydrate is a prototypical isolated Heisenberg dimer material with a spin excitation gap ∆ = 37 meV that neither shows significant temperature-dependence nor is affected by deuteration [8, 9]. The magnetic susceptibility follows the Bleaney-Bowers equa-tion for isolated dimers [10, 11]. A previous DFT study confirmed that the magnetic exchange is dominated by a superexchange process mediated by the O and C atoms of the acetate groups linking the Cu sites and reproduced the experimental value of J [12]. The magnetic electron density distribution of transition-metal oxides is dominated by hybrid metal-3 d
+
+and ligand-2 sp orbitals. In the plaquette-like arrange-ments of Cu and ligand atoms common in copper oxides, the 3 d9 electronic configuration yields a half-filled dX 2−Y 2 orbital directed towards the surrounding ligands. The hybridization enables superexchange interactions between neighboring metal ions via virtual electron hopping processes. The covalent character of the bonding leads to a substantial delocalization of the magnetic electron density over the entire metal–ligand network. This delocalization has profound consequences for the Q-dependent spin–spin correlations probed by inelastic neutron scattering, motivating experimental and theoretical investigations [13, 14]. The effect of the shape of the hybrid wavefunctions on the neutron magnetic form factor F (Q) is demon-strated in Fig. 1 by comparing the form factor of iso-lated s and d orbitals with the form factor of a CuO 4
+
+plaquette. The ionic picture, in which the magnetic or-bital is isotropic and centred on the Cu site, results in an isotropic Gaussian-like magnetic form factor with a width that corresponds to the extent of the assumed or-bital (Figs. 1(a-c)). If the unpaired spin is located pri-marily in a d orbital, the magnetic form factor reflects the anisotropic shape of the orbital (Figs. 1(d-f)). The fine structure of the d-orbital which introduces short-length modulations in real space leads to additional contribu-tions to the magnetic form factor at large Q-vectors in reciprocal space as visible in Fig. 1(e). Around the ori-gin of reciprocal space it is still dominated by a central peak due to the fact that the magnetic form factor is the Fourier transform of the absolute square of the wavefunc-tion – a purely positive function with a finite mean. If covalent metal-ligand hybridization is taken into account (Figs. 1(g-i)), the magnetic electron density is delocalized over the hybrid orbital, resulting in an anisotropic mag-netic form factor with a multi-peak structure. The rel-ative height of these peaks can be further affected when the hybrid character of the oxygen 2 sp orbitals is taken into account (Figs. 1(j-l)). Although the anisotropic Q-dependence of F (Q) in insulators with covalent metal-ligand bonding has been pointed out in multiple studies [14, 15], the majority of inelastic neutron scattering ex-periments still assume the isotropic form factor of the metal ion, here Cu 2+ . In our work, we demonstrate methods with which the magnetic form factor can be ac-counted for more precisely. A powerful tool for investigating the hybridization of wavefunctions and for predicting the resulting magnetic electron density distribution is DFT. A study of the ef-fect of covalency on the neutron magnetic form factor in cuprates was presented by Mazurenko et al. [15]. Using a Wannier function based approach [16], the authors show on the quasi-2D quantum spin system BaCuSi 2O6 with one selected 1D cut in reciprocal space at the energy of the magnetic excitation that the magnetic orbital struc-ture determines the Q-dependence of the magnetic form factor. However, the study covers a very limited part of the reciprocal space and does not draw quantitative conclusions on the underlying magnetic electron density distribution. Using the textbook example of an isolated Heisenberg dimer, we demonstrate that the neutron magnetic form factor of a singlet-to-triplet transition can be measured directly by INS. From the experimental data, we re-construct the magnetic electron density distribution and the underlying spatial electronic wavefunction quantita-tively. While previous studies were limited to one di-mension only and did not make quantitative statements, our work provides a fully quantitative comparison be-4tween magnetic electron density distributions calculated in DFT and the measured INS intensities in 3D in a cor-related quantum material. To facilitate a simple recon-struction of the magnetic electron density distribution without resource-intensive calculations, we further intro-duce an analytical parametrization based on anisotropic Gaussians which describes the neutron magnetic form factor of copper oxides with a high accuracy. This estab-lishes a robust, accessible method for the characterization of the magnetic electron density distribution in quantum magnets and sets a gold standard for extracting neutron magnetic form factors. The structure of this article is as follows: In Sec. II, we provide an introduction to the material Cu(II) acetate monohydrate, to our state-of-the-art INS experiments, and to the analytical and numerical methods we use to calculate and interpret the neutron magnetic form fac-tor. In Sec. III, we compare the results and retrieve a quantitative description of the magnetic electron density distribution. In Sec. IV, we propose and parametrize an extended Hubbard dimer model that captures the inter-actions between the magnetic orbitals of Cu(II) acetate monohydrate faithfully. In Sec. V, we discuss the gener-ality and the consequences of our results before drawing a brief conclusion in Sec. VI.   
+
+> II. MATERIAL AND METHODS A. Material
+
+The single crystal of deuterated Cu(II) acetate hy-drate Cu 2(CD 3COO) 4(D 2O) 2 used in INS experiments is shown in Fig. 2(a). The crystal growth is described in the Supplemental Material [17]. Cu 2(CD 3COO) 4(D 2O) 2
+
+crystallizes in the inversion-symmetric monoclinic space group C2/c (no. 15). We used single-crystal X-ray diffraction to determine the lattice parameters at room temperature to be a = 13 .1722(2) ˚ A, b = 8 .5615(1) ˚ A, c = 13 .8610(2) ˚ A and β = 117 .026(2) ◦ in close agree-ment with the literature [18]. The unit cell hosts four Cu dimers, which are characterized by the short intradimer distance of 2 .61 ˚ A. The dimer unit is shown in Fig. 2(b). Each Cu ion is coordinated by four O atoms, forming a CuO 4 plaquette. O and C atoms of the acetate ions bridge two Cu centers. Notably, the Cu centers are re-lated by inversion symmetry, but not by mirror symme-try. As illustrated in Fig. 2(c), the dimers adopt one of two orientations within the plane perpendicular to the [101] direction, their projections onto the ac plane being identical as shown in Fig. 2(d). Finally, a water molecule is connected to each Cu atom along the Cu–Cu axis, but is positioned outside the dimer. Hydrogen bonds link neighboring molecules, stabilizing the three-dimensional crystal structure. When describing the reciprocal space, the plane of in-terest is defined by the lattice vectors a and c (or equiv-alently a∗ and c∗). For convenience in analyzing the ex-a           
+
+> c
+> c*
+> a*
+> x
+> zy
+> (a)
+> (d)(c)
+> Cu
+> O
+> C
+> H
+> b
+> (b)
+> (0 0 2)
+> (2 0 0)
+> b
+> 0c 0.5c 1c
+> c
+> a
+> FIG. 2. (a) Single crystal of deuterated Cu(II) acetate mono-hydrate used in INS experiments. The facettes perpendicular to the Hand Ldirections are normal to the (200) and (002) faces. The ˆb-axis is parallel to the edge between these facettes, as indicated in gray. (b) Atomic structure of the Cu(II) ac-etate monohydrate molecule. (c) Projection showing the two orientations of the Cu-Cu dimers in the monoclinic unit cell. The blue connector between Cu ions represents the orienta-tion of the vector between them, not a chemical bond. Planes indicate the position of the dimers along the ˆ c-axis. (d) Pro-jection of the Cu-Cu dimers on the ac plane of the monoclinic unit cell. Orange arrows indicate the directions of the in-plane reciprocal-lattice vectors. The out-of-plane vector, ˆb∗,is parallel to ˆb. Pink arrows indicate the Cartesian coordinate system used in the discussion of the data.
+
+perimental data, we introduce a new coordinate system: 
+
+Qz is aligned with the projection of the Cu–Cu dimers onto the ac plane, while Qx is defined as the direction perpendicular to Qz within the same plane. The direc-tion out-of the plane, Qy , is taken along b (or b∗). All relevant vectors are shown in Fig. 2(c,d). For reference, the components of Qx and Qz in reciprocal lattice units (r.l.u.) are Qx = [0 .9091 , 0, 1] and Qz = [0 .9786 , 0, −1].  
+
+> B. Inelastic neutron scattering
+
+For neutron spectroscopy experiments, the deuterated single crystal with mass 3 .45 g shown in Fig. 2(a) was mounted on an aluminum sample holder equipped with a two-axis goniometer, allowing precise orientation of the crystal. The sample was aligned with the b-axis vertical, such that the ac plane defined the horizontal scattering plane. The crystal orientation was verified using an X-ray Laue camera and neutron diffraction, the latter also confirming the single-crystallinity of the bulk. Preliminary measurements were performed at the High Resolution Chopper Spectrometer (HRC) at the Ma-terials and Life Science Experimental Facility (MLF), 5J-PARC [19–21]. The crystal was sealed in an alu-minum can and cooled to a base temperature of 10 K in a 1 K refrigerator. Two chopper configurations were employed (i) incident energy Ei = 100 meV with chop-per frequency f = 300 Hz, and (ii) Ei = 150 meV with 
+
+f = 400 Hz. During this measurement, the sample was rotated through 180 ◦ in 1 ◦ steps within the neutron beam. The experiment revealed the singlet-to-triplet ex-citation at approximately 37 meV and provided informa-tion on its Q-dependence, which allowed us to optimize the Q-coverage in subsequent experiments. The relevant plots from HRC measurements are shown in the Supple-mental Material [17]. The subsequent INS experiments were performed on the same crystal using PANTHER, the thermal neutron time-of-flight (TOF) spectrometer at the Institut Laue– Langevin (ILL) [22]. The sample was placed in an Orange cryostat and data were collected at a base temperature of 1 .5 K. Empty-can scans were recorded under identi-cal conditions to serve as the background reference. The sample was rotated through 350 ◦ in 1 ◦ steps during the measurement. An incident energy of Ei = 76 meV and a chopper frequency of f = 270 Hz were chosen, with a graphite (004) monochromator. With this configuration, we obtained an energy resolution of 4 .5 meV at the elas-tic line and 3 .9 meV at the singlet-triplet excitation en-ergy. The Horace software was used for visualizing and analyzing the four-dimensional S(Q, ω ) data [23]. The single-crystal TOF data were symmetrized with respect to the symmetry operation C2 of the space group. The datasets display a dispersionless feature centered around E = (37 .1 ± 0.3) meV, which can be attributed to the transition from the singlet ground state to the triplet excited state, in agreement with previous studies [8]. Be-cause phonon scattering becomes relevant for larger wave vectors Q, we modeled and subtracted the phonon back-ground. Details of the background treatment are pre-sented in the Supplemental Material [17].  
+
+> C. Analytical parametrization
+
+We introduce a simple analytical parametrization of the magnetic electron density to describe the neutron cross-section of Cu(II) acetate monohydrate. Cu ions, with a 3 d9 electronic configuration, are the primary mag-netic centers. In the ionic picture they carry spin 12 . Due to covalent bonding, the Cu magnetic electron density is delocalized onto the ligand O atoms. On the basis of the fit of the parametrization to the experimental data, we gain quantitative insight into the fraction of spin charge migrating on the ligands and on the extent of the spatial wavefunction. To maintain generality, we begin by introducing the neutron scattering formalism for arbitrary magnetic elec-tron density distributions. The magnetic scattering cross-section for the transition from the ground state ψi
+
+to a final excited state ψf can be expressed as 
+
+Sαα (Q) = X
+
+> ψi,ψ f
+
+D
+
+ψf ˆV α(Q) ψi
+
+E 2
+
+, α = x, y, z, (2) where the spin-only neutron scattering operator is de-fined as ˆV α(Q) = X
+
+> j
+
+ˆSαj
+
+Z
+
+ρj (r − Rj ) eiQ·r dr. (3) Here, ρj (r) is the real-space magnetic electron density distribution associated with spin Sj and centered at Rj ,without any assumption about its functional form. For Cu(II) acetate monohydrate, the relevant spin states are the singlet ground state 
+
+|S⟩ = 1
+
+√2 (|↑↓⟩ − |↓↑⟩ ) ,
+
+and the three excited triplet states 
+
+|T+⟩ = |↑↑⟩ , |T0⟩ = 1
+
+√2 (|↑↓⟩ + |↓↑⟩ ) , |T−⟩ = |↓↓⟩ .
+
+Considering the two CuO 4 plaquettes forming the dimer, Eq. (3) becomes ˆV α(Q) = ρCu 1 (Q) eiQ·RCu 1 +
+
+> 4
+
+X
+
+> k=1
+
+ρOk1 (Q) eiQ·ROk1 
+
+!
+
+ˆSα
+
+> Cu 1
+
++ ρCu 2 (Q) eiQ ·RCu 2 +
+
+> 4
+
+X
+
+> k=1
+
+ρOk2 (Q) eiQ·ROk2 
+
+!
+
+ˆSα 
+
+> Cu 2
+
+,
+
+(4) where each ρ(Q) denotes the Fourier transform of the magnetic electron density ρ(r) associated with the spec-ified atom. Note that only single-spin operators related to the two Cu ions, ˆSα 
+
+> Cu 1
+
+and ˆSα 
+
+> Cu 2
+
+, are used here be-cause Cu atoms are the sole sources of magnetically ac-tive electrons. Because the singlet and triplet states have opposite parity under exchange of the two Cu spins, the matrix elements lead to a relative minus sign between the two CuO 4 units. Rewriting (4) as ˆV α(Q) = V1(Q) ˆSα 
+
+> Cu 1
+
++ V2(Q) ˆSα 
+
+> Cu 2
+
+, (5) the magnetic scattering cross-section of one dimer be-comes 
+
+S(Q) = X
+
+> α=x,y,z
+
+Sαα (Q) = 34 |V1(Q) − V2(Q)|2 . (6) In our parametrization, we neglect the small fraction of magnetic electron density that may reside on the C atoms. These atoms are shared nearly symmetrically be-tween the two CuO 4 plaquettes. Consequently, due to the relative minus sign between the two contributions, their net contribution largely cancels out. Any residual 6       
+
+> TABLE I. Parameters of the triaxial Gaussians on each atomic site in the analytical parametrization of the magnetic electron density, together with their interpretation and the best-fit values for a voxel of size dQ = 0 .15 ˚ A−1.
+> Parameter Interpretation Best-fit value
+> AScaling factor
+> ρO
+> ρCu + 4 ρO
+> Fraction of magnetic electron density on each O site 5.28(5) %
+
+# σCu ⊥ Gaussian width along the Cu–Cu axis 0.184(1) ˚ A
+
+# σCu ∥ Gaussian width within the CuO 4 plaquette 0.230(1) ˚ A
+
+# σO∥ Gaussian width along the Cu–O bond 0.427(6) ˚ A
+
+# σO⊥ Gaussian width perpendicular to the Cu–O bond 0.270(6) ˚ A
+
+asymmetry in the molecular structure may in principle give rise to a small signal in the neutron cross-section. However, the Cu–C distances in the molecule are com-parable to the Cu–O separations, making it difficult to disentangle such a weak contribution from the dominant Cu–O signal. Finally, we need to consider that the system contains two symmetry-inequivalent dimer orientations. Because the two dimers are magnetically isolated, their contribu-tions to the total neutron structure factor can be added. Taking into account a second dimer, Cu 3−Cu 4, we obtain 
+
+S(Q) = 34
+
+
+
+|V1(Q) − V2(Q)|2 + |V3(Q) − V4(Q)|2
+
+.
+
+(7) To obtain closed-form analytic expressions for the func-tions ρj (Q), we have to introduce an analytical approxi-mation for the magnetic electron density. From Fig. 1, we infer that the magnetic form factor is dominated by the interference of the contributions from the atomic sites, whereas the contributions of the details of the underly-ing atomic orbitals are weak. Neutron scattering exper-iments probe the magnetic electron density only over a finite range of momentum transfer Q, which limits sensi-tivity to fine real-space features of the underlying atomic orbitals. Deviations from the true atomic-orbital form at very short length scales therefore do not affect the quantities accessible in the experiment. Hence, a good approximation must capture the extent and anisotropy of the orbitals, whereas the fine structure of the orbital shape can be neglected given the limits of the experi-ment. We parametrize the magnetic electron density on each atomic site as a triaxial Gaussian. Within the re-stricted Q-range, a triaxial Gaussian provides an accu-rate and well-behaved representation of the spatial ex-tent and anisotropy of the local magnetic electron den-sity, while allowing an analytical evaluation of its Fourier transform. A general Gaussian centered at the origin with princi-pal axes aligned to ( x, y, z ) is 
+
+ρ(r) = ρ
+
+(2 π)3/2σxσy σz
+
+exp 
+
+
+
+− x2
+
+2σ2
+
+> x
+
+− y2
+
+2σ2
+
+> y
+
+− z2
+
+2σ2
+
+> z
+
+
+
+, (8) where ρ is the integrated magnetic electron density, and 
+
+σx, σy , and σz are the respective Gaussian widths. The Fourier transform retains the Gaussian form, 
+
+ρ(Q) = ρ exp 
+
+
+
+− 12 (Q2
+
+> x
+
+σ2 
+
+> x
+
++ Q2 
+
+> y
+
+σ2 
+
+> y
+
++ Q2 
+
+> z
+
+σ2 
+
+> z
+
+)
+
+
+
+. (9) The Gaussian parameters are adjusted according to the local geometry of the CuO 4 plaquettes. For Cu sites, one principal axis is aligned with the Cu–Cu separation; the other two axes lie in the approximately planar CuO 4
+
+environment. For the O sites, the first principal axis points towards the bonded Cu atom, while the remaining two axes lie within the plane perpendicular to the Cu–O axis. All Gaussian spin densities are inserted into Eq. (4) using the reciprocal-space expression (9). The resulting function, multiplied by a scaling factor A to match the experimental intensity, was fitted with standard least-squares algorithms to the experimental data over a large volume of reciprocal space, with Qx ∈ [−5, 5] ˚ A−1, Qy ∈
+
+[−1, 2] ˚ A−1, and Qz ∈ [−5, 5] ˚ A−1. Each experimental data point corresponds to the intensity averaged over a small cubic voxel of size dQ in the reciprocal space. The fit yields consistent results for different choices of dQ ,as reported in Table S2 (Supplemental Material [17]). Table I provides a summary of all parameters and the best-fit values for dQ = 0 .15 ˚ A−1.  
+
+> D. Ab initio calculations
+
+The electronic structure calculations consist of two parts: (1) a simple yet powerful symmetry-broken collinear DFT+ U in Sec. III to obtain the magnetic form factor and (2) a more exact treatment of the many-body physics that provides the full spectrum of the magnetic orbitals in Sec. IV. The DFT calculations in Section III were performed using Quantum ESPRESSO v.7.3 [24, 25] with the PBEsol functional [26] and the optimized norm-conserving Van-derbilt pseudopotentials [27]. A Hubbard correction U =7.3 eV was applied to the Cu 3 d electrons, calculated using the linear-response theory [28] within the density-functional perturbation theory [29] implemented in the 
+
+HP code [30] (see the Supplemental Material [17]). A uni-form Gamma-centered 2 × 2 × 2 k-point grid was used to sample the Brillouin zone. The magnetic electron density was directly obtained in the form of a broken-symmetry spin density, where the two Cu atoms within the same molecule were initial-ized with opposite magnetic moments. The total absolute magnetic moment converged to 2.04 μB per dimer, close to the experimental value [31]. See Appendix VII C for a 7detailed discussion of the use of broken-symmetry DFT for open shell systems. The kinetic energy cut-off for the charge density, 
+
+Ecut ,ρ = 1440 Ry, ensures a real-space resolution of 
+
+λ = 2 π/k max = 2 π/ 
+
+q
+
+2meEcut ,ρ /¯h2 = 0 .043 ˚ A in the spin density Gaussian cube file representation. The spin density was kept only within muffin-tin spheres around selected sites with a cutoff radius of 1 .1 ˚ Afor Cu and 0 .9 ˚ A for O. The form factor was then calculated as the Fourier transform of this filtered broken-symmetry spin density. Higher resolution in the reciprocal space was ensured by increasing the real-space data array with zero-padded values to 4 times the dimensions of the original unit cell. All of the post-processing tools were implemented in the publicly available fft electronic spin density 
+
+Python package [32]. The Hubbard dimer model [33, 34] we present in Sec. IV was parametrized with maximally localized Wan-nier functions (WFs) [35] representing the frontier or-bitals (HOMO/LUMO) and computed with non-spin-polarized DFT using norm-conserving pseudopotentials from the ONCV library [27] and Wannier90 [36] in an energy window between −0.265 eV and 0.255 eV with respect to the Fermi level by initially projecting onto one 3d orbital per Cu atom, resulting in 8 WFs for the 4 f.u. unit cell, which hosts 4 dimer molecules. We remark that the resulting frontier WFs extend beyond the initial pro-jections on the Cu atomic centers and contain both the Cu 3 d and the O 2 sp character, as shown in Fig. 5(c). Constrained random-phase approximation (cRPA) cal-culations were performed starting from these frontier WFs using RESPACK [37] version v0201117 with a 2 ×2×2
+
+k-grid, 288 empty bands, and a convergence sweep over the energy cutoff as shown in the Supplemental Mate-rial [17]. We compared the exchange coupling parameters from the Hubbard dimer model with the results of the mag-netic force theorem (also known as the Liechtenstein-Katsnelson-Antropov-Gubanov, or LKAG, method) im-plemented in the TB2J package [38]. The LKAG method was applied on WFs derived from DFT+( U = 7 .3 eV). We note that these WFs contain the correlation effects in-trinsically through the effective Hubbard U and they are distinct from the non-magnetic Wannier functions used for the Hubbard dimer model, where the correlation ef-fects enter a posteriori through the four-point screened Coulomb parameters Wii , W ij , and Jdir . 
+
+> III. MAGNETIC FORM FACTOR
+
+The magnetic form factor encodes the spatial distri-bution of the magnetic electron density in reciprocal space and provides a direct link between neutron scatter-ing measurements, analytical parametrization, and elec-tronic structure calculations. In this section, INS data are combined with DFT and an analytical parametriza-tion of the magnetic electron density to obtain a con-sistent and quantitative picture of the magnetic orbitals in Cu(II) acetate monohydrate, with particular emphasis on the role of ligand contributions. For symmetrical dimers with S1 = S2, the Szz compo-nent of the diagonal cross-section of the singlet ( S = 0) to triplet ( S = 1) transition is given by 
+
+Szz (Q, ω ) = |E10 (Q)|2δ(¯ hω − (E1 − E0)) , (10) where the scattering amplitude involves the ma-trix element E10 = ⟨ψ1(r1, r2)| eiQ·r1 |ψ0(r1, r2)⟩ =
+
+− ⟨ ψ1(r1, r2)| eiQ·r2 |ψ0(r1, r2)⟩ and ψ0 (ψ1) denotes the singlet (triplet) spatial parts of the wavefunction, re-spectively. The energy E1 − E0 corresponds to the sin-glet–triplet gap. Within the form factor approximation this becomes [8, 39–41] 
+
+Szz (Q, ω ) = 12 |F (Q)|2(1 − cos( Q · R)) δ(¯ hω − (E1 − E0)) ,
+
+(11) with F (Q) the magnetic form factor, defined as the Fourier transform of the real-space magnetic electron density ρ(r). The vector R indicates the dimer sepa-ration. The INS data are shown in the central column of Fig. 3. Because neutrons probe spin–spin correlations in recip-rocal space, the real-space magnetic electron density is not accessible directly; instead, the neutron structure factor is obtained by integrating the scattering inten-sity over an excitation-energy window centered around 37 meV. The resulting three-dimensional isosurface and its projection onto the equatorial ( Qz , Q x)–plane, shown respectively in Figs. 3(b) and (c), reveal a pronounced os-cillatory intensity pattern, reflecting the (1 − cos( Q · R)) interference term of Eq. (11). The intensity modulation, of which a representative cut is shown in Fig. 3(d), is aligned with Qz , i.e., the reciprocal-space direction cor-responding to the dimer axis (see Fig. 2). The measured periodicity is 2 .75 ˚ A−1. Using the unit-cell parameters, the projection of the Cu–Cu distance onto the ac plane is 
+
+dac  
+
+> Cu −Cu
+
+= 2 .19 ˚ A, yielding the expected oscillation period 2πdac 
+
+> Cu −Cu
+
+= 2 .87 ˚ A−1, (12) in good agreement with our measurements. A slight re-duction of the observed periodicity is expected due to the decay of the magnetic form factor, which shifts intensity maxima towards the Γ point. Note that the intensity os-cillations at large Q should not be mistaken for magnetic electron density at large r (e.g., on the H 2O ligand). The magnetic electron density is located around the Cu and O atoms only. While the oscillatory dimer structure factor dominates the intensity along the Cu–Cu direction, it does not modulate the scattering perpendicular to the dimer axis, that is along Qx. This allows the magnetic form factor 8
+
+FIG. 3. Magnetic electron density and magnetic form factor of Cu(II) acetate monohydrate from DFT calculations, INS measurements, and analytical parametrization. (a) Broken-symmetry spin density, ρ, of the magnetic orbitals. (b-e) The magnetic form factor in reciprocal space (a Fourier transform of ρ) represented (b) as a 3D isosurface, (c) as a 2D cut in the equatorial Qz –Qx plane ( ac plane), and (d-e) as 1D cuts along the lines marked in panel (c). Note that part of the out-of-plane data is masked to enable comparison with the DFT results and analytical parametrization, which here are computed for a single dimeric unit and therefore do not include the interference effects arising from the two symmetry-inequivalent dimers present in the experiment (see VII B). The inset in (d) indicates the reciprocal of the Cu-Cu distance projection onto the xz plane. 
+
+along this direction to be extracted directly, as shown in Fig. 3(e). The corresponding intensity profile exhibits a central peak accompanied by two satellite peaks at ap-proximately ±3 ˚ A−1, with shallow dips in between. The asymmetry of the profile arises because the cut does not pass through the inversion center at the Γ point. The presence of the satellite peaks indicates a partial delo-calization of the Cu magnetic electron density onto the ligand O atoms. Considering the geometry of a sin-gle CuO 4 plaquette, only two Cu–O bonds have a sig-nificant projection along Qx, with an effective distance 
+
+dCu −O = 1 .97 ˚ A. This corresponds to a characteristic 9   
+
+> FIG. 4. Magnetic form factor from DFT and the impact of ligands. (a) The magnetic electron density, ρ, and the resulting form factor in (b) 3D, (c) 2D, and (d-e) 1D representations for (a1-e1) the Cu dorbital alone with ligand density filtered out, (a2-e2) the full magnetic electron density of a single magnetic orbital, and (a3-e3) the complete broken-symmetry DFT spin density of the dimer. The comparison of the dark and light-colored cuts exemplifies the mirror asymmetry yet the inversion symmetry of Cu(II) acetate monohydrate. These panels realize the schematic program of Fig. 1 for the specific case of Cu(II) acetate monohydrate.
+
+reciprocal-space scale 2πdCu −O
+
+= 3 .19 ˚ A−1, (13) consistent with the observed satellite positions and sup-porting the presence of a finite ligand magnetic electron density. These experimental findings are corroborated both by analytical parametrization and DFT+ U calculations. The analytical parametrization of the 3D magnetic elec-tron density introduced in Sec. II C yields a ligand spin fraction of ρO/(ρCu + 4 ρO) ≃ 5.3 %. The total magnetic electron density is depicted on top of the dimer unit in the right panel of Fig. 3 (a). Based on the best-fit values in Tab. I, the Cu contribution to the magnetic electron density is described well by an oblate spheroidal distri-bution, with a larger extent within the CuO 4 plane than along the dimer axis ( σCu ∥ > σ Cu ⊥). This is consistent with the 3 dx2−y2 character of the 3 d9 electron configura-tion in Cu(II) acetate monohydrate. In contrast, the O contributions to the magnetic electron density are elon-gated along the Cu–O bonds ( σO∥ > σ O⊥), reflecting their dominant 2 p character. The resulting isosurfaces and reciprocal-space projections, shown in Figs. 3(b,c), reproduce the experimental features both qualitatively and quantitatively. The cuts in Figs. 3(d,e) show how the fitted parametrization matches the positions of the maxima and minima, the overall decay with increasing 
+
+|Q|, and the satellite peaks, although the asymmetry is underestimated slightly. This effect is presumably a re-sult of the Gaussian approximation and the assumption of a planar Cu environment, despite the Cu–O bonds be-ing slightly tilted towards the center of the dimer unit. A more extended comparison between the experiment and the analytical parametrization is shown in Figs. S3, S4 and S5 in the Supplemental Material [17]. Independent confirmation is provided by the broken-symmetry DFT+ U calculations, which expose the mag-netic orbitals of the singlet state as shown in the left panel of Fig. 3(a). The magnetic structure factor in Figs. 3(b– e) is obtained directly as a Fourier transform of this real-space magnetic electron density. The dominant Cu–Cu interference term, with a period of d−1Cu −Cu ≃ 2.63 ˚ A−1,matches the experimental modulation. Cuts perpen-10 dicular to the dimer axis, containing the information about the magnetic form factor of the CuO 4 unit, re-produce the satellite peaks and their asymmetry, con-firming that these features originate from ligand contri-butions. The asymmetry stems from the absence of an inversion center on the Cu sites themselves. Integrating the DFT magnetic electron density within spheres cen-tered on the atomic sites yields a ligand contribution of 
+
+ρO/(ρCu + 4 ρO) = 8 .0%, which is in reasonable agree-ment with the value extracted from the analytical fit to the experimental data (Tab. I). The systematic impact on the magnetic form factor of delocalization of magnetic electron density to the ligand is illustrated further in Fig. 4, where successive inclusion of ligand contributions in the DFT spin density demon-strates their role in generating the observed modulation and satellite peaks. The cuts in the Cu-O plane (dark blue lines) in Figs. 4(e1,e2) should be compared side-by-side with Figs. 1(f,l). In summary, the INS experiment, analytical parametrization, and DFT calculations consistently demonstrate that the magnetic structure factor of Cu(II) acetate monohydrate is governed by strong Cu–Cu interference resulting in the oscillating pattern along Qz , while the magnetic form factor is altered by an appreciable magnetic electron density on the ligand O atoms. The combined analysis provides aquantitative estimate of the ligand contribution and demonstrates that subtle features of the reciprocal-space intensity reflect directly the real-space distribution of the magnetic orbitals, as expected from the analysis of the exemplary wavefunctions in Fig. 1. The close agreement between theory and experiment shows that quantitative information on the magnetic electron density distribution can be extracted from the INS intensities of a magnetic excitation.  
+
+> IV. MAGNETIC ORBITALS AND INTERACTIONS
+
+We can further represent the magnetic orbitals as max-imally localized Wannier functions [35], capturing their full spatial wavefunction instead of only their density. In this section, we construct these Wannier functions and show how the interactions between them lead to a singlet ground state and the singlet-triplet splitting observed ex-perimentally. In this way we describe the low-energy physics of the system in terms of an effective Hubbard dimer model (HDM) in the basis of Wannier functions parametrized by cRPA [33, 34]. This is motivated by the fact that, in the crystal structure, the Cu-Cu dimer unit is iso-lated structurally from other dimers and the electronic structure near the Fermi level is characterized primar-ily by two molecular orbitals, with dominant Cu dx2−y2
+
+character, at a relatively short separation of 2 .62 ˚ A. The many-body effects due to the strong interactions between electrons inhabiting these orbitals are therefore expected to be significant. Similar physics has been observed re-cently in other bulk materials, such as VO 2 [42] and the triniobium octahalide family Nb 3Cl 8 [43–45]. It is therefore instructive to write down a model Hamil-tonian for the Cu-Cu dimer unit as 
+
+HHDM = − t X
+
+> σ∈{↑ ,↓}
+
+(c† 
+
+> iσ
+
+cjσ + c† 
+
+> jσ
+
+ciσ )+ Wii (ni↑ni↓ + nj↑nj↓)+ Wij ninj
+
+− Jdir 
+
+X
+
+> σσ ′
+
+c† 
+
+> iσ
+
+c† 
+
+> jσ ′
+
+ciσ ′ cjσ ,
+
+(14) where i and j label the two different Cu dx2−y2 orbitals, which are connected by a hopping integral, t. The elec-trons in the dimer interact through the four-point inte-grals 
+
+Wijkl ≡ ⟨ ij |W |kl ⟩ (15) =
+
+Z Z 
+
+w∗ 
+
+> i
+
+(r)wk(r)W (r, r′)w∗ 
+
+> j
+
+(r′)wl(r′) dr dr′,
+
+(16) which represent the effective screened Coulomb and ex-change interactions of the electrons in the dimer or-bitals wm. We consider the on-site Hubbard interac-tions, Wii ≡ ⟨ ii |W |ii ⟩, the inter-site Hubbard interac-tions Wij ≡ ⟨ ij |W |ij ⟩, and the direct exchange, Jdir ≡⟨ij |W |ji ⟩ [37]. The dimer Hamiltonian is expressed in matrix form as 
+
+Hdim =
+
+
+
+|↑ , ↓⟩ |↓ , ↑⟩ |↑↓ , 0⟩ |0, ↑↓⟩ |↑ , ↑⟩ |↓ , ↓⟩ ⟨↑ , ↓| Wij −Jdir −t t 0 0
+
+⟨↓ , ↑| −Jdir Wij t −t 0 0
+
+⟨↑↓ , 0| −t t Wii 0 0 0
+
+⟨0, ↑↓| t −t 0 Wii 0 0
+
+⟨↑ , ↑| 0 0 0 0 Wij − Jdir 0
+
+⟨↓ , ↓| 0 0 0 0 0 Wij − Jdir 
+
+
+
+, (17) where we have chosen the two-electron site-occupation basis {|↑ , ↓⟩ , |↓ , ↑⟩ , |↑↓ , 0⟩ , |0, ↓↑⟩ , |↑ , ↑⟩ , |↓ , ↓⟩} , in which 11 
+
+TABLE II. Spectrum of the extended Hubbard dimer model Eq. (17) assuming Wii = 4.94 eV, Wij = 2.45 eV, 
+
+t = 0.24 eV and Jdir = 0.024 eV. The double-occupancy admixture δ ≈ 2tWii −Wij = 0.193, or precisely δ =
+
+> 14t
+
+p(Wii − Wij − Jdir )2 + (4 t)2 − (Wii − Wij − Jdir )
+
+
+
+= 0 .188. The double occupancy state with parity P = +1 is a singlet which mixes with the singly occupied singlet. The double occupancy state with parity P = −1, on the other hand, does not mix with the single occupied states and has an exact energy of Wii .
+
+eigenstate energy energy (eV) 
+
+d. occ. P = +1  
+
+> 1√2
+
+(|↑↓ , 0⟩ − | 0, ↑↓⟩ ) 12
+
+
+
+Wii + Wij + Jdir + p(Wii − Wij − Jdir )2 + (4 t)2
+
+
+
+5.030 
+
+− δ√2 (|↑ , ↓⟩ − |↓ , ↑⟩ ) ≈ Wii + 4t2 
+
+> Wii −Wij
+
+≈ 5.032 d. occ. P = −1 1√2 (|↑↓ , 0⟩ + |0, ↑↓⟩ ) Wii 4.940 triplet 
+
+|↑ , ↑⟩ 
+
+Wij − Jdir 2.426 1√2 (|↑ , ↓⟩ + |↓ , ↑⟩ )
+
+|↓ , ↓⟩ 
+
+singlet  
+
+> 1√2
+
+(|↑ , ↓⟩ − |↓ , ↑⟩ ) 12
+
+
+
+Wii + Wij + Jdir − p(Wii − Wij − Jdir )2 + (4 t)2
+
+
+
+2.384 + δ√2 (|↑↓ , 0⟩ − | 0, ↑↓⟩ ) ≈ Wij − 4t2 
+
+> Wii −Wij
+
++ Jdir ≈ 2.381 
+
+the first (second) arrow in the ket denotes the spin value on the Cu site i(j). The state vector |↑↓ , 0⟩ therefore rep-resents a double occupation of site i with no electron on j.The Hamiltonian is block-diagonal, dividing into two sub-spaces {|↑ , ↓⟩ , |↓ , ↑⟩ , |↑↓ , 0⟩ , |0, ↓↑⟩} and {|↑ , ↑⟩ , |↓ , ↓⟩} .The on-site Hubbard interaction, Wii , penalizes the two doubly occupied states |↑↓ , 0⟩ and |0, ↑↓⟩ . The inter-site Hubbard term, Wij , denotes the interaction energy from equal occupation of the two Cu sites. In the first block, the direct exchange Jdir acts as a spin-flip term connecting |↑ , ↓⟩ with |↓ , ↑⟩ . Jdir also contributes to the on-site energies of the ferromagnetic triplets |↑ , ↑⟩ and 
+
+|↓ , ↓⟩ .By a direct diagonalization of Eq. (17) we obtain its energy spectrum given in Table II. The ground state of the Hubbard dimer is mainly of singlet character 1√2 (|↑ , ↓⟩ − |↓ , ↑⟩ ) with minor admixture of the symmetrical double occupancy state 1, and its total energy is decreased by 4 t2/(Wii − Wij ). This term favors the antiferromagnetic configuration of the singlet, which manifests as an antiferromagnetic superexchange (kinetic exchange). The triplet, on the other hand, is favored by the direct exchange, Jdir , because its antisymmetric spatial wave-function minimizes the Coulomb repulsion. By contrast, the symmetric spatial wavefunction of the singlet ren-ders its Coulomb repulsion higher. One can show that the triplet energy is therefore lowered by approximately 2Jdir relative to the singlet. Overall, the singlet-triplet    
+
+> 1The symmetrical double occupancy state acquires an equal ad-mixture of the ( |↑ ,↓⟩−|↓ ,↑⟩ )/√2 singlet and its energy increases, which is the usual band repulsion.
+
+splitting ∆ = ET − ES (18) 
+
+≈ 4t2
+
+Wii − Wij 
+
+− 2Jdir (19) takes the approximate form of the sum of the antifer-romagnetic superexchange and the ferromagnetic direct exchange. We define the total exchange interaction con-sistent with the Heisenberg Hamiltonian of Eq. (1) as ∆ ≡ − 2JHDM tot , (20) resulting in the total exchange interaction 
+
+JHDM tot ≈ − 2t2
+
+Wii − Wij 
+
+| {z }
+
+> Jsuper
+
++Jdir . (21) To connect these model considerations with Cu(II) acetate monohydrate, we perform constrained random-phase approximation (cRPA) calculations. cRPA relies on the well defined energetic separation of the target states (in this case the Cu dx2−y2 states) from the rest of the states in the crystal [46]. The effective Coulomb inter-action acting on the electron in the target states is then screened by all particle-hole excitations that occur out-side these states [46]. From these calculations we obtain the Hubbard dimer model parameters Wii = 4 .94 eV, 
+
+Wij = 2 .45 eV, and Jdir = 0 .024 eV, while the hopping integral t = 0 .24 eV can be inferred from the Wannier-ization procedure. The interdimer hopping is t′ = 0 .018 eV, introduc-ing a negligible dispersion of the singlet-triplet excita-tion J′/J ∼ t′2/t 2 = 6 × 10 −3 relative to the singlet-triplet gap, consistent with no measurable dispersion of the singlet-triplet mode in INS. 12                       
+
+> FIG. 5. Singlet-triplet splitting from the experiment and theory. (a) Energy-momentum neutron scattering plane. The momentum Qcorresponds to the light blue dashed line in Fig. 3(c). The spectrum of the Hubbard dimer model (Eq. (17)) is displayed on the right, showing the singlet ( |S⟩), triplet ( |T⟩) and doubly-occupied states ( |D⟩) with their respective energy splittings. (b) Exchange interaction from the Hubbard dimer model, JHDM tot =Jsuper +Jdir =−46 .3 meV + 24 .0 meV =
+> −22 .3 meV, compared with the result of the LKAG method, JLKAG =−22 .4 meV, and the experimental value Jexp =
+> −18 .5 meV. The singlet-triplet splitting ∆ = |2J|is then twice the exchange coupling in the convention of Eq. (1). (c) Entangled magnetic orbitals in the form of their maximally localized Wannier functions.
+
+The fundamental excitation between the upper and lower Hubbard bands of the Hubbard dimer model ≈
+
+Wii − Wij = 2 .43 eV agrees well with the band gap be-tween the frontier bands in the DFT+ U calculation with 
+
+U = 7 .3 eV, which is approximately 2 .41 eV (see the Supplemental Material [17]). From Eq. (21) we obtain a total exchange coupling 
+
+JHDM tot ≈ Jsuper + Jdir = −46 .3 meV + 24 .0 meV =
+
+−22 .3 meV, which is reasonably close to the experimen-tal value of Jexp = −18 .5 meV, as shown in Figs. 5(a-b). We confirm that a similar value JLKAG = −22 .4 meV is obtained with the LKAG method. Also from the dif-ference of the broken-symmetry and the high-spin (HS) state energies [47] JBS = ( EBS − EHS )/2 = −25 .5 meV. Note that the partitioning of the total exchange into superexchange and direct exchange depends on the choice of representation for the magnetic orbitals. In the basis of the canonical maximally localized WFs representing the natural magnetic orbitals the direct exchange is sizable, 
+
+∼ 50% of the antiferromagnetic superexchange. We thus demonstrate that a Hubbard dimer model ap-plied to Cu(II) acetate monohydrate captures the inter-actions between its magnetic orbitals quantitatively and can complement the calculations of their magnetic elec-tron density based on broken-symmetry DFT. This fur-ther underlines the consistency between the presented experimental and theoretical methods.  
+
+> V. DISCUSSION
+
+We discuss our findings in three steps. First, we reflect on the results and then we discuss their generalization and applicability to other magnetic systems. Finally, we comment on their broader context and impact. We have demonstrated that the Q-dependence of the INS intensities of a magnetic excitation reflects the real-space distribution of the magnetically active electrons, and thus contains microscopic information about the un-derlying spatial wavefunction envelope of the electrons. We presented a minimal parametrization to extract the delocalization of Cu magnetic electron density over lig-and O atoms quantitatively and provided a description of the magnetic form factor within DFT. The construction of the maximally localized Wannier functions provides in-sight into the full spatial wavefunctions and reproduces the magnetic properties of Cu(II) acetate monohydrate. Beyond the isolated Heisenberg dimer Cu(II) acetate monohydrate, the approach is directly applicable to mag-netic systems that host local or weakly dispersive exci-tations for which the momentum dependence of the INS intensity can be reliably modeled. The central require-ment is that the dominant Q-dependence of the magnetic scattering cross section originates from a known, or mini-mally parametrizable, structure factor. Under this condi-tion, the magnetic form factor – and thus the real-space magnetic electron density – can be extracted quantita-tively. Any localized clusters of spins (dimers, trimers, and larger finite units) fall in principle within this frame-work, including cases where weak inter-cluster interac-tions are present and can be treated perturbatively. A first natural class of systems comprises all other iso-lated ferromagnetic or antiferromagnetic dimers, largely independent of their chemical composition or bridging ligands. Cu(II) acetate monohydrate represents a canon-ical example, but numerous related Cu-based molecu-lar dimers have been studied and characterized exten-sively [48–51]. Dimer physics is by no means restricted to Cu(II) ions: well-established examples include dimers based on Fe, Ni, Mn, Co, and Cr ions in both molec-ular and inorganic compounds [52–56]. These systems provide clean realizations of localized magnetic excita-tions, for which the present methodology is ideally suited. If the center of inversion between the two metal ions 13 in the dimer is broken, additional interactions such as the Dzyaloshinskii-Moriya interaction (DMI) are allowed [57–59]. Extending our approach to asymmetric Heisen-berg dimers with different amplitudes and sign of the DM vector promises insight into the way weakly ferromag-netic behavior in an antiferromagnet is reflected in the magnetic electron density distribution. This could po-tentially develop into a new route to capturing the DMI, which has been notoriously difficult to quantify experi-mentally [60]. A second broad class of relevant systems is that of single-molecule magnets (SMMs) [61]. INS has long been employed to probe local spin excitations and crystal-field levels in single-ion magnets, including lanthanide complexes [62–64], as well as in transition-metal molec-ular clusters such as Mn 12 and Cr 8 [65, 66]. In these systems, local magnetic excitations encode detailed in-formation about the underlying spin Hamiltonian and magnetic anisotropy, making them particularly attractive targets for real-space spin-density reconstruction. For crystal-field excitations in single-ion magnets, the pre-sented strategy is straightforward because the momen-tum dependence of the INS intensity is determined en-tirely by the magnetic form factor. In SMMs containing multiple magnetic ions, the finite size of the system al-lows excitation eigenstates and structure factors to be computed accurately using numerical approaches such as exact diagonalization. Alternatively, as demonstrated in Ref. [66], the measured neutron cross section can be fit-ted directly using a minimal parametrization, from which the magnetic form factor can be extracted. With appropriate care, the method can also be extended to strongly dimerized or frustrated quan-tum magnets that support predominantly local or nearly dispersionless modes. Examples of materials in which flat excitations have been observed include the Shastry–Sutherland system SrCu 2(BO 3)2 [67, 68] and the fully frustrated magnet Ba 2CoSi 2O6Cl 2 [69], the triangular lattice antiferromagnet BaLaCoTeO 6
+
+[70] and the square-kagome lattice antiferromagnet KCu 6AlBiO 4(SO 4)5Cl [71]. In these cases, applicability depends on whether the structure factor in the localized-spin limit can be independently constrained or reliably modeled. The application of an external magnetic field provides an additional probe of crystal-field excitations. By lift-ing degeneracies via the Zeeman interaction, the field ren-ders excitation energies field-dependent and redistributes INS spectral weight, while leaving the magnetic form fac-tor, and thus the real space magnetic electron density, to a good approximation unchanged. This enables the isolation of individual transitions and provides indepen-dent constraints on the magnetic electron density. This approach naturally reconnects to half-polarized neutron diffraction, where a field-polarized state allows recon-struction of the magnetic electron density from Bragg intensities. A similar strategy applies within the INS framework: in the limit of weakly interacting spins, tran-sitions between Zeeman-split levels give rise to disper-sionless excitations whose intensity is governed by the magnetic form factor, providing direct access to the un-derlying magnetic electron density. Finally, we may consider systems with dispersive excitations for which the INS intensities also reflect the Q-dependence of the magnetic excitation. Hence, dispersion-related contributions have to be separated be-fore the magnetic form factor can be extracted. If the spin Hamiltonian is well established, the structure factor of the magnetic excitations can be calculated with well-established methods including linear spin-wave theory and the density matrix renormalization group (DMRG). For large dispersions, the integration of the experimen-tal data over a large energy window poses a challenge to the extraction of reliable structure factors. Because instrumental resolution effects and background contribu-tions depend on the energy transfer, larger systematic uncertainties could be introduced. Therefore, quanti-tative statements rely on the precise knowledge of the background and instrument parameters over the whole bandwidth of the magnetic excitation studied. Although the primary focus of the presented study was to measure the magnetic form factor of a benchmark quantum magnet and to extract information about the microscopic electronic wavefunctions behind the macro-scopic magnetic state, the impact of the approach ex-tends further. A comprehensive understanding of the microscopic state is the prerequisite for engineering the electronic and magnetic properties in and out of equilib-rium. DFT calculations are used extensively to explain out-of-equilibrium behavior [72, 73], underlining the im-portance of thorough benchmarking against experiments. This is especially important if the true magnetic state of the system cannot be captured by DFT, as is the case for quantum magnets. In the specific case of Cu(II) ac-etate monohydrate, our DFT calculations form the basis for predicting and understanding the non-equilibrium re-sponses of the magnetic system to external stimuli, open-ing the path for nonequilibrium experiments investigat-ing phenomena such as the modulation of the superex-change path by coherent phonon excitation or hydrostatic pressure.  
+
+> VI. CONCLUSION
+
+On the textbook example of the singlet-to-triplet ex-citation of Cu(II) acetate monohydrate we demonstrated that the magnetic form factor can be extracted directly from the INS intensities of a magnetic excitation. We provided the proof of concept by extracting microscopic properties such as the 3D magnetic electron density dis-tribution and the shape of the spatial electronic wave-function on which it is based from the experimental data. Our state-of-the-art DFT calculations exhibit quanti-tative agreement with the experiment and provide in-sight into the microscopic electronic properties under-14 lying the experimentally-observed magnetic form factor. This underscores the potential of broken-symmetry DFT calculations to determine spin-density distributions and magnetic form factors for explaining INS intensities in complex quantum magnets, thereby opening new per-spectives on their exotic behavior. The Hubbard dimer model parametrized from DFT and cRPA calculations provides a simple yet complete view of the entangled magnetic orbital spectrum, correctly predicting the ex-perimentally observed singlet-triplet splitting. Beyond INS and the textbook example of the isolated Heisen-berg dimer, this benchmarking has a profound impact on experiments that rely heavily on DFT for their interpre-tation, first and foremost the study of magnetic exchange interactions out of equilibrium. Our minimal analytical parametrization of the exper-imental data demonstrates that the magnetic electron density distribution can be reconstructed with quantita-tive precision from the Q−dependence of the INS inten-sity of a magnetic excitation. Owing to its simplicity and low computational cost, this approach sets a gold stan-dard for the quantification and treatment of the mag-netic form factor in INS experiments. It can be ap-plied easily to other magnetic systems with excitations whose structure factor can be parametrized reliably, of-fering new insight into the microscopic parameters be-hind quantum magnetic phenomena. Magnetic systems of intense interest – ranging from quantum magnets to altermagnets – motivate addressing the challenge of dis-persive excitations in the future, which includes obtain-ing high-resolution INS data with minimal background over large energy windows. 
+
+> ACKNOWLEDGMENTS
+
+We acknowledge Mark de Vries for his contribution to the initial idea of this paper. We thank Nicola Colonna, Kristjan Eimre, Alfredo Fiorentino, Edward Baxter Lin-scott, Bruce Normand, Christian R¨ uegg, and Iurii Tim-rov for fruitful discussions. We acknowledge the Institut Laue Langevin (ILL), Grenoble, France for the provision of neutron beam time at PANTHER under Proposal No. 4-05-879 and the Materials and Life Science Experimen-tal Facility (MLF) of the J-PARC, Tokai, Japan for the provision of neutron beam time at BL12 HRC under a user program (Proposal No. 2023B0236). This research was supported by the NCCR MARVEL, a National Cen-tre of Competence in Research, funded by the Swiss Na-tional Science Foundation (grant number 205602). This research was supported by the Swiss National Science Foundation under grant 10001789. Computer time was provided by the Swiss National Supercomputing Centre (CSCS) under project No. lp18 and mr33.     
+
+> FIG. 6. Model-extrapolated contributions of the Cu-Cu, O-O and Cu-O interferences to the in-plane magnetic form factor shown in Fig. 3(e). The mixed term (green) plays a crucial role in shaping the momentum dependence.
+> VII. APPENDIX A. Roles of Cu–Cu, O–O, and Cu–O interferences
+
+From the analytical parametrization, we can readily separate the contributions to the neutron scattering cross section arising from the pure Cu–Cu and O–O terms, as well as the mixed Cu–O terms. Indeed, the total neutron cross section can be seen as 
+
+S(Q) = SCu −Cu (Q) + SO−O(Q) + SCu −O(Q). (22) It is instructive to analyze how these three terms shape the in-plane form factor along Qx (Fig. 3(e)). Aplot showing each individual contribution is provided in Fig. 6. The Cu–Cu form factor produces only a broad, Gaussian-like curve. At the center, the Cu-Cu peak is enhanced and narrowed by SCu −O(Q), which generates both the dips at ± 1.75 ˚ A−1 and the two satellite peaks at ± 3 ˚ A−1.The magnitude of each term is proportional to the cor-responding localized charge density. Specifically, 
+
+SCu −Cu ∝ (ρCu )2, SO−O ∝ (ρO)2, SCu −O ∝ ρCu ρO.
+
+This explains why the O–O contribution is essentially negligible, whereas the Cu–O term can significantly affect the total structure factor.  
+
+> B. Out-of-plane structure factor
+
+Considering a simplified picture with point-like spin densities localized at the Cu sites, the magnetic neutron 15 scattering for the singlet-to-triplet transition takes the form 
+
+S(Q) = 32 [1 − cos ( Q · d12 )] + 32 [(1 − cos( Q · d34 )] ,
+
+(23) where d12 and d34 denote two dimers with distinct ori-entations within the unit cell. In the horizontal scattering ( Qz , Q x)–plane, the struc-ture factor is modulated only along a single direction. This follows directly from Eq. (23) when the scattering vector is of the form Q = [ Qx, 0, Q z ]: 
+
+S(Q) = 3 1 − cos  Qz dac 
+
+> Cu −Cu
+
+ . (24) However, the inclusion of a finite Qy component in the scattering vector introduces an additional momentum-space modulation. This arises because the y-component of the dimer separation, dy , changes sign between the two dimers. The structure factor then becomes 
+
+S(Q) = 32
+
+1 − cos  Qz dac  
+
+> Cu −Cu
+
++ Qy dy
+
+ 
+
++ 32
+
+1 − cos  Qz dac  
+
+> Cu −Cu
+
+− Qy dy
+
+ , (25) which can be compactly rewritten using trigonometric identities as 
+
+S(Q) = 3 1 − cos  Qz dac 
+
+> Cu −Cu
+
+ cos ( Qy dy ) . (26) This additional modulation along Qy is visible in the neutron-scattering data thanks to the vertical coverage of PANTHER detector. In Fig. 7(a) we show the neutron intensity in a selected ( Qz , Qy )–plane. The checkerboard pattern clearly reveals the double modulation. The ana-lytical parametrization reproduces this behavior well, as demonstrated by the corresponding simulated plane in Fig. 7(b). Finally, we show the direct comparison of a line cut in Fig. 7(c). The reduction in intensity along the cut comes from the combined effect of the cosine modu-lation along Qy and the magnetic form factor.  
+
+> C. Singlet and broken-symmetry DFT
+
+The singlet state 
+
+|S⟩ = 1
+
+√2 (|↑ , ↓⟩ − |↓ , ↑⟩ ) (27) is a superposition of two broken-symmetry (BS) states 
+
+|↑ , ↓⟩ and |↓ , ↑⟩ , each of them being a single Slater determinant of the spin orbitals on the left and right Cu sites. For instance, |↓ , ↑⟩ = |Lβ Rα | = 
+
+> 1√2
+
+(L(r1)β(r1)R(r2)α(r2) + R(r1)α(r1)L(r2)β(r2)) de-notes a single Slater determinant with the left magneti-cally active orbital L in minority spin β times the right magnetically active orbital R in majority spin α. 
+
+> FIG. 7. (a) Neutron intensity in a plane perpendicular to the equatorial plane, with the dark pink dashed line in Fig. 3(c) as the horizontal axis. The checkerboard intensity pattern is the result of the interference between the two dimers in the unit cell. (b) The same plane simulated using the analytical parametrization. (c) Comparison between experiment and parametrization along the orange dashed line in panel (b).
+
+This means that the singlet spin density is zero every-where, which does not hold for the broken-symmetry so-lutions individually [74]. 2 Such spin contamination leads to an incorrect nonzero spin density in space, even though the integrated spin density is still zero. This breaks the symmetry of the physical Hamiltonian. Indeed, in open-shell systems, the Kohn-Sham (KS) Hamiltonian and the KS determinant (the resulting wavefunction) both present a lower symmetry than the physical Hamiltonian and the physical wavefunction [74]. The KS formalism is still formally correct, but the sym-metry lowering alters the partitioning of the total en-ergy into a part obtained by the KS determinant and the correlation energy (the remainder). This can lead to errors due to the approximations in practical DFT calculations [74]. Note that in the hypothetical case of an exact DFT calculation, the symmetry breaking would not occur [74]. In practical calculations, however, ap-proximations are always made. On the other hand, the BS solutions provide a substan-tial insight, because they expose in a static way the states between which the true ground state fluctuates [76, 77]. Moreover, the BS calculation actually leads to a better total energy prediction than a DFT calculation where the spin density is forced to be zero everywhere (spin polarization is switched off) [74]. This is exemplified in the calculation of the exchange constant, which can be obtained from the broken-symmetry energy EBS and a high-spin (HS) state energy EHS as [47]  
+
+> 2The alternative view of this freezing is that of collective excita-tions in a solid (a charge-density wave or a spin-density wave) softening under a varying external potential with their frequency tending to zero until they appear as a static symmetry-broken wave [75].
+
+16 0    
+
+> 50
+> 1D  (Å  1)
+> 42024
+
+Distance (Å) 
+
+> 0.00
+> 0.05
+> 1D  (Å  1)
+
+FIG. 8. Top panel: The DFT+ U -calculated charge density of the |↑↑⟩ and |↑↓⟩ states along the Cu-Cu direction (integrated in the plane perpendicular to that direction) and (bottom panel) their difference, illustrating Eq. (31). 
+
+2J = EBS − EHS 
+
+2S1S2 + S2
+
+(28) which for Cu(II) acetate monohydrate with S1 = S2 =1/2 leads to JBS = ( EBS − EHS )/2 = −25 .5 meV, com-paring to the experimental value Jexp = −18 .5 meV, while the non-spin-polarized (NS) calculation would lead to a completely incorrect prediction of ( ENS − EHS )/2 = 
+
+−330 .5 meV. Finally, the electron density resulting from a broken-symmetry calculation is correct if the overlap density be-tween the Cu 1 and Cu 2 localized states is negligible. This can be shown as follows: We analyze how the charge density varies depending on the particle-exchange symmetry of the orbital wave-function Ψ( r1, r2) of two interacting particles, which we assume can be written as: Ψ( r1, r2)± = 1
+
+√2 [L(r1)R(r2) ± L(r2)R(r1)] , (29) where L and R are real single particle orbitals centered around Cu 1 and Cu 2 sites, respectively. Ψ+ goes with the spin singlet state and Ψ − with the triplet state. The charge density for the first particle is: 
+
+ρ1(r) = e
+
+Z
+
+dr1dr2δ(r − r1)|Ψ±(r1, r2)|2
+
+=e
+
+Z
+
+dr2|Ψ±(r, r2)|2
+
+= e
+
+2 |L(r)|2
+
+Z
+
+dr2|R(r2)|2 + e
+
+2 |R(r)|2
+
+Z
+
+dr2|L(r2)|2
+
+± eL (r)R(r)
+
+Z
+
+dr2R(r2)L(r2)= e
+
+2
+
+ |L(r)|2Aa + |R(r)|2Ab
+
+ ± eL (r)R(r)SLR .
+
+(30) Here, SLR = R dr2R(r2)L(r2) is the overlap integral. If 
+
+ϕ is normalized Aa = Ab = R dr2|ϕ(r2)|2 = 1, and 
+
+ρ1(r) = e
+
+2
+
+ |L(r)|2 + |R(r)|2 ± eL (r)R(r)SLR . (31) That is, the charge density at a point r is the average of the probability densities from the two orbitals ± the over-lap term, which is only finite in the region of space where the two orbitals overlap and is weighted by the overlap integral SLR . The charge density for the second particle is the same, which is a property of the indistinguishabil-ity of the particles: |Ψ±(r1, r2)|2 = |Ψ±(r2, r1)|2. This implies that the spin density ρs = ρ1 − ρ2 is always zero for both symmetrizations of the wavefunction. Finally, if we consider that the orbital wavefunction is a broken-symmetry Hartree product Ψ( r1, r2) = L(r↑
+
+> 1
+
+)R(r↓
+
+> 2
+
+), the overlap term in Eq. (31) vanishes, and a finite spin den-sity is possible. This is demonstrated numerically in Figure 8. 
+
+[1] S. Sachdev, Quantum magnetism and criticality, Nat. Phys. 4, 173 (2008). [2] P. A. Lee, An end to the drought of quantum spin liquids, Science 321 , 1306 (2008). [3] A. Vasiliev, O. Volkova, E. Zvereva, and M. Markina, Milestones of low-d quantum magnetism, npj Quantum Mater. 3, 18 (2018). [4] E. Manousakis, The spin-1/2 Heisenberg antiferromagnet on a square lattice and its application to the cuprous oxides, Rev. Mod. Phys. 63 , 1 (1991). [5] P. W. Anderson, Limits on the energy of the antiferro-magnetic ground state, Phys. Rev. 83 , 1260 (1951). [6] T. Jungwirth, J. Sinova, R. M. Fernandes, Q. Liu, H. Watanabe, S. Murakami, S. Nakatsuji, and L. ˇSmejkal, Symmetry, microscopy and spectroscopy signatures of al-termagnetism, Nature 649 , 837 (2026). [7] A. T. Boothroyd, Principles of Neutron Scattering from Condensed Matter (Oxford University Press, 2020). [8] H. U. G¨ udel, A. Stebler, and A. Furrer, Direct obser-vation of singlet-triplet separation in dimeric copper(II) acetate by neutron inelastic scattering spectroscopy, In-org. Chem. 18 , 1021 (1979). [9] H. U. G¨ udel, A. Stebler, and A. Furrer, Inelastic neutron scattering from single crystals of dimeric copper acetate, J. Phys. C: Solid State Phys. 13 , 3817 (1980). [10] B. Bleaney and K. Bowers, Anomalous paramagnetism of copper acetate, Proc. R. Soc. of Lond. Ser. A 214 , 451 (1952). [11] A. Elmali, The magnetic super-exchange coupling in cop-per(II) acetate monohydrate and a redetermination of the 17 
+
+crystal structure, Turk. J. Phys. 24 , 667 (2000). [12] M. Kyuzou, W. Mori, and J. Tanaka, Electronic structure and spectra of cupric acetate mono-hydrate revisited, In-org. Chim. Acta 363 , 930 (2010). [13] T. Freltoft, G. Shirane, S. Mitsuda, J. P. Remeika, and A. S. Cooper, Magnetic form factor of Cu in La 2CuO 4,Phys. Rev. B 37 , 137 (1988). [14] A. C. Walters, T. G. Perring, J.-S. Caux, A. T. Savici, G. D. Gu, C.-C. Lee, W. Ku, and I. A. Zaliznyak, Effect of covalent bonding on magnetism and the missing neutron intensity in copper oxide compounds, Nat. Phys. 5, 867 (2009). [15] V. V. Mazurenko, I. V. Solovyev, and A. A. Tsirlin, Cova-lency effects reflected in the magnetic form factor of low-dimensional cuprates, Phys. Rev. B 92 , 245113 (2015). [16] P. W. Anderson, New approach to the theory of superex-change interactions, Phys. Rev. 115 , 2 (1959). [17] See Supplemental Material [URL will be inserted by pub-lisher] for more details on the sample fabrication, exper-imental measurements and DFT calculations. [18] P. de Meester, S. R. Fletcher, and A. C. Skapski, Refined crystal structure of tetra-μ-acetato-bisaquodicopper(II), J. Chem. Soc., Dalton Trans. , 2575 (1973). [19] S. Itoh, T. Yokoo, S. Satoh, S.-i. Yano, D. Kawana, J. Suzuki, and T. J. Sato, High resolution chopper spec-trometer (HRC) at j-PARC, Nucl. Instrum. Methods in Phys. Res. A 631 , 90 (2011). [20] S. Itoh, T. Yokoo, T. Masuda, S. Asai, H. Saito, D. Kawana, R. Sugiura, T. Asami, and Y. Ihata, Progress in high resolution chopper spectrometer HRC by improv-ing collimator and Fermi chopper, Physica B 568 , 76 (2019). [21] D. Ueta, S. Itoh, T. Masuda, T. Yokoo, T. Nakajima, S. Asai, H. Saito, D. Kawana, R. Sugiura, T. Asami, S. Yamauchi, S. Torii, Y. Ihata, and H. Tanino, Sam-ple environment of the HRC spectrometer at J-PARC, in Proceedings of 11th International Workshop on Sam-ple Environment at Scattering Facilities (ISSE Workshop Nasu 2022) (J. Phys. Soc. Jpn., 2024). [22] B. F˚ ak, S. Rols, G. Manzin, and O. Meulien, Panther — the new thermal neutron time-of-flight spectrometer at the ILL, EPJ Web Conf. 272 , 02001 (2022). [23] R. Ewings, A. Buts, M. Le, J. van Duijn, I. Bustin-duy, and T. Perring, Horace: Software for the analysis of data from single crystal spectroscopy experiments at time-of-flight neutron instruments, Nucl. Instrum. Meth-ods Phys. Res. A 834 , 132 (2016). [24] P. Giannozzi, S. Baroni, N. Bonini, M. Calandra, R. Car, C. Cavazzoni, D. Ceresoli, G. L. Chiarotti, M. Cococ-cioni, I. Dabo, A. Dal Corso, S. De Gironcoli, S. Fabris, G. Fratesi, R. Gebauer, U. Gerstmann, C. Gougoussis, A. Kokalj, M. Lazzeri, L. Martin-Samos, N. Marzari, F. Mauri, R. Mazzarello, S. Paolini, A. Pasquarello, L. Paulatto, C. Sbraccia, S. Scandolo, G. Sclauzero, A. P. Seitsonen, A. Smogunov, P. Umari, and R. M. Wentz-covitch, QUANTUM ESPRESSO: a modular and open-source software project for quantum simulations of ma-terials, J. Phys. Condens. Matter 21 , 395502 (2009). [25] P. Giannozzi, O. Andreussi, T. Brumme, O. Bunau, M. Buongiorno Nardelli, M. Calandra, R. Car, C. Cavaz-zoni, D. Ceresoli, M. Cococcioni, N. Colonna, I. Carn-imeo, A. Dal Corso, S. De Gironcoli, P. Delugas, R. A. DiStasio, A. Ferretti, A. Floris, G. Fratesi, G. Fugallo, R. Gebauer, U. Gerstmann, F. Giustino, T. Gorni, J. Jia, M. Kawamura, H.-Y. Ko, A. Kokalj, E. K¨ u¸ c¨ ukbenli, M. Lazzeri, M. Marsili, N. Marzari, F. Mauri, N. L. Nguyen, H.-V. Nguyen, A. Otero-de-la Roza, L. Paulatto, S. Ponc´ e, D. Rocca, R. Sabatini, B. Santra, M. Schlipf, A. P. Seitsonen, A. Smogunov, I. Timrov, T. Thon-hauser, P. Umari, N. Vast, X. Wu, and S. Baroni, Ad-vanced capabilities for materials modelling with Quan-tum ESPRESSO, J. Phys. Condens. Matter 29 , 465901 (2017). [26] J. P. Perdew, A. Ruzsinszky, G. I. Csonka, O. A. Vydrov, G. E. Scuseria, L. A. Constantin, X. Zhou, and K. Burke, Restoring the density-gradient expansion for exchange in solids and surfaces, Phys. Rev. Lett. 100 , 136406 (2008). [27] D. R. Hamann, Optimized norm-conserving Vanderbilt pseudopotentials, Phys. Rev. B 88 , 239906 (2013). [28] M. Cococcioni and S. de Gironcoli, Linear response ap-proach to the calculation of the effective interaction pa-rameters in the LDA+U method, Phys. Rev. B 71 ,035105 (2005). [29] I. Timrov, N. Marzari, and M. Cococcioni, Hubbard parameters from density-functional perturbation theory, Phys. Rev. B 98 , 085127 (2018). [30] I. Timrov, N. Marzari, and M. Cococcioni, HP – A code for the calculation of Hubbard parameters using density-functional perturbation theory, Comput. Phys. Commun. 
+
+279 , 108455 (2022). [31] G. M. Brown and R. Chidambaram, Dinuclear copper(II) acetate monohydrate: a redetermination of the structure by neutron-diffraction analysis, Acta Cryst. B 29 , 2393 (1973). [32] L. Voj´ aˇ cek, liborvojacek/fft electronic spin density (2026), gitHub repository, accessed 2026-02-04. [33] V. V. Mazurenko, S. L. Skornyakov, A. V. Kozhevnikov, F. Mila, and V. I. Anisimov, Wannier functions and ex-change integrals: The example of LiCu 2O2, Phys. Rev. B 75 , 224408 (2007). [34] T. Miyake and F. Aryasetiawan, Screened Coulomb inter-action in the maximally localized Wannier basis, Physical Review B 77 , 085122 (2008). [35] N. Marzari and D. Vanderbilt, Maximally localized gen-eralized Wannier functions for composite energy bands, Phys. Rev. B 56 , 12847 (1997). [36] G. Pizzi, V. Vitale, R. Arita, S. Bl¨ ugel, F. Freimuth, G. G´ eranton, M. Gibertini, D. Gresch, C. Johnson, T. Koretsune, J. Iba˜ nez-Azpiroz, H. Lee, J.-M. Lihm, D. Marchand, A. Marrazzo, Y. Mokrousov, J. I. Mustafa, Y. Nohara, Y. Nomura, L. Paulatto, S. Ponc´ e, T. Pon-weiser, J. Qiao, F. Th¨ ole, S. S. Tsirkin, M. Wierzbowska, N. Marzari, D. Vanderbilt, I. Souza, A. A. Mostofi, and J. R. Yates, Wannier90 as a community code: new fea-tures and applications, J. Phys. Condens. Matter 32 ,165902 (2020). [37] K. Nakamura, Y. Yoshimoto, Y. Nomura, T. Tadano, M. Kawamura, T. Kosugi, K. Yoshimi, T. Misawa, and Y. Motoyama, RESPACK: An ab initio tool for deriva-tion of effective low-energy model of material, Comp. Phys. Commun. 261 , 107781 (2021). [38] X. He, N. Helbig, M. J. Verstraete, and E. Bousquet, TB2J: A python package for computing magnetic inter-action parameters, Comp. Phys. Commun. 264 , 107938 (2021). [39] A. Furrer and H. U. G¨ udel, Interference effects in neutron scattering from magnetic clusters, Phys. Rev. Lett. 39 ,657 (1977). 18 
+
+[40] H. G¨ udel and A. Furrer, Neutron inelastic scatter-ing study of exchange interactions in a chromium(III) dimer: μ-hydroxo-bis[pentaamminechromium-(III)] chlo-ride monohydrate, Mol. Phys. 33 , 1335 (1977). [41] A. Furrer and O. Waldmann, Magnetic cluster excita-tions, Rev. Mod. Phys. 85 , 367 (2013). [42] L. Haas, P. Mlkvik, N. A. Spaldin, and C. Ederer, Incor-porating static intersite correlation effects in vanadium dioxide through DFT+V, Phys. Rev. Res. 6 (2024). [43] J. Aretz, S. Grytsiuk, X. Liu, G. Feraco, C. Knekna, M. Waseem, Z. Dan, M. Bianchi, P. Hofmann, M. N. Ali, M. I. Katsnelson, A. Grubiˇ si´ c- ˇCabo, H. U. R. Strand, E. G. C. P. van Loon, and M. R¨ osner, From strong to weak correlations in breathing-mode kagome van der waals materials: Nb 3(F, Cl, Br, I) 8 as a robust and ver-satile platform for many-body engineering, Phys. Rev. X 
+
+15 (2025). [44] S. Grytsiuk, M. I. Katsnelson, E. G. van Loon, and M. R¨ osner, Nb 3Cl 8: a prototypical layered Mott-Hubbard insulator, npj Quantum Mater. 9 (2024). [45] A. Carta, P. Mlkvik, F. Grahlow, M. Str¨ obele, H. J. Meyer, C. P. Romao, N. A. Spaldin, and C. Ederer, Hubbard dimer physics and the magnetostructural tran-sition in the correlated cluster material Nb 3Cl 8 (2025), arXiv:2509.03988. [46] F. Aryasetiawan, M. Imada, A. Georges, G. Kotliar, S. Biermann, and A. I. Lichtenstein, Frequency-dependent local interactions and low-energy effective models from electronic structure calculations, Phys. Rev. B 70 (2004). [47] E. Ruiz, J. Cano, S. Alvarez, and P. Alemany, Broken symmetry approach to calculation of exchange coupling constants for homobinuclear and heterobinuclear transi-tion metal complexes, Journal of Computational Chem-istry 20 , 1391 (1999). [48] F. Cariati, L. Erre, G. Micera, L. Menabue, M. Saladini, and P. Prampolini, Magnetic investigations on some cop-per(II) N-acetyl- and N-benzoyl-alaninates, Inorg. Chim. Acta 63 , 85 (1982). [49] B. Sarkar, M. Drew, M. Estrader, C. D´ ıaz, and A. Ghosh, CuII acetate complexes involving N,N,O donor schiff base ligands: Mono-atomic oxygen bridged dimers and alter-nating chains of the dimers and Cu 2(OAc) 4, Polyhedron 
+
+27 , 2625 (2008). [50] M. Stylianou, C. Drouza, Z. Viskadourakis, J. Giapintza-kis, and A. Keramidas, Synthesis, structure, magnetic properties and aqueous solution characterization of p-hydroquinone and phenol iminodiacetate copper(II) com-plexes, Dalton transactions 44 , 6188 (2008). [51] M. Shrivastava, G. Swarnabala, S. Khatavkar, G. S. Sadana, and A. Bharadwaj, Synthesis and characteriza-tion of some oximino metal complexes using magnetic and spectral data predicting anticipated geometry, Asian J. Chem. Sci. 15 , 96 (2025). [52] I. P. Moseley, C.-Y. Lin, D. Z. Zee, and J. M. Zadrozny, Synthesis and magnetic characterization of a dinuclear complex of low-coordinate iron(II), Polyhedron 175 ,114171 (2020). [53] X.-Y. Liu, P. Cen, L.-Z. Wu, F. Li, W. Song, G. Xie, and S. Chen, Tuning of exchange coupling and switchable magnetization dynamics by displacing the bridging lig-ands observed in two dimeric manganese(III) compounds, Sci. Rep. 7, 44982 (2017). [54] C. Mennerich, H. Klauss, M. Broekelmann, F. Litterst, C. Golze, R. Klingeler, V. Kataev, B. Buchner, S. Großjo-hann, W. Brenig, M. Goiran, H. Rakoto, J. Broto, O. Kataeva, and D. J. Price, Antiferromagnetic dimers of Ni(II) in the S=1 spin-ladder Na 2Ni 2(C 2O4)3 (H 2O) 2,Phys. Rev. B 73 , 174415 (2006). [55] Z. Zhang, A. P. Porter, Y. Sun, K. Belashchenko, G. Viswanathan, A. Sarkar, E. H. Gamage, K. Kovnir, K.-M. Ho, and V. Antropov, Unveiling a family of dimer-ized quantum magnets, conventional antiferromagnets, and nonmagnets in ternary metal borides, J. Am. Chem. Soc. 146 , 16878 (2024). [56] S. Mameri, D. Specklin, and R. Welter, Dinuclear man-ganese, iron, chromium, and cobalt complexes derived from aroylhydrazone ligands: Synthetic strategies, crys-tal structures, and magnetic properties, C. R. Chim. 18 ,1370 (2015). [57] T. Moriya, Anisotropic Superexchange Interaction and Weak Ferromagnetism, Physical Review 120 , 91 (1960). [58] I. Dzyaloshinsky, A thermodynamic theory of “weak” fer-romagnetism of antiferromagnetics, Journal of Physics and Chemistry of Solids 4, 241 (1958). [59] R. Valent´ ı, C. Gros, and W. Brenig, Dzyaloshinskii-moriya interaction in NaV 2O5 : A microscopic study, Physical Review B 62 , 14164 (2000). [60] M. Kuepferling, A. Casiraghi, G. Soares, G. Durin, F. Garcia-Sanchez, L. Chen, C. H. Back, C. H. Mar-rows, S. Tacchi, and G. Carlotti, Measuring interfacial Dzyaloshinskii-Moriya interaction in ultrathin magnetic films, Rev. Mod. Phys. 95 , 015003 (2023). [61] E. Moreno-Pineda and W. Wernsdorfer, Measuring molecular magnets for quantum technologies, Nat. Rev. Phys. 3, 645 (2021). [62] M. Vonci, M. Giansiracusa, W. V. den Heuvel, R. Gable, B. Moubaraki, K. Murray, D. Yu, R. Mole, A. Soncini, and C. Boskovic, Magnetic excitations in polyoxotungstate-supported lanthanoid single-molecule magnets: An inelastic neutron scattering and ab initio study, Inorg. Chem. 56 , 378 (2017). [63] M. A. Dunstan, R. Mole, and C. Boskovic, Inelastic neutron scattering of lanthanoid complexes and single-molecule magnets, Eur. J. Inorg. Chem. 2019 , 1090 (2019). [64] A. M. Atkin, M. Giansiracusa, S. Calvello, E. Rous-set, R. Gable, W. Phonsri, K. Murray, J. K. Howard, A. Soncini, R. Mole, and C. Boskovic, Inelastic neutron scattering measurement of the ground state tunneling gap in Tb and Ho analogues of a Dy field-induced single-molecule magnet, Inorg. Chem. 62 , 1141 (2023). [65] M. Hennion, L. Pardi, I. Mirebeau, E. Suard, R. Sessoli, and A. Caneschi, Neutron study of mesoscopic magnetic clusters: Mn 12 O12 , Phys. Rev. B 56 , 8819 (1997). [66] E. Garlatti, A. Chiesa, T. Guidi, G. Amoretti, P. Santini, and S. Carretta, Unravelling the spin dynamics of molec-ular nanomagnets with four-dimensional inelastic neu-tron scattering, Eur. J. Inorg. Chem. 2019 , 1106 (2019). [67] B. Sriram Shastry and B. Sutherland, Exact ground state of a quantum mechanical antiferromagnet, Physica B+C 
+
+108 , 1069 (1981). [68] H. Kageyama, M. Nishi, N. Aso, K. Onizuka, T. Yosi-hama, K. Nukui, K. Kodama, K. Kakurai, and Y. Ueda, Direct evidence for the localized single-triplet exci-tations and the dispersive multitriplet excitations in SrCu 2(BO 3)2, Phys. Rev. Lett. 84 , 5876 (2000). [69] N. Kurita, D. Yamamoto, T. Kanesaka, N. Furukawa, 19 
+
+S. Ohira-Kawamura, K. Nakajima, and H. Tanaka, Lo-calized magnetic excitations in the fully frustrated dimer-ized magnet Ba 2CoSi 2O6Cl 2, Phys. Rev. Lett. 123 ,027206 (2019). [70] P. Park, E. A. Ghioldi, A. F. May, J. A. Kolopus, A. A. Podlesnyak, S. Calder, J. A. M. Paddison, A. E. Trumper, L. O. Manuel, C. D. Batista, M. B. Stone, G. B. Hal´ asz, and A. D. Christianson, Anomalous continuum scattering and higher-order van hove singularity in the strongly anisotropic S=1/2 triangular lattice antiferro-magnet, Nat. Commun. 15 , 7264 (2024). [71] M. Fujihala, K. Morita, R. Mole, S. Mitsuda, T. To-hyama, S.-i. Yano, D. Yu, S. Sota, T. Kuwai, A. Koda, H. Okabe, H. Lee, S. Itoh, T. Hawai, T. Masuda, H. Sagayama, A. Matsuo, K. Kindo, S. Ohira-Kawamura, and K. Nakajima, Gapless spin liquid in a square-kagome lattice antiferromagnet, Nat. Commun. 11 , 3429 (2020). [72] M. Fechner, A. Sukhov, L. Chotorlishvili, C. Kenel, J. Be-rakdar, and N. A. Spaldin, Magnetophononics: Ultrafast spin control through the lattice, Phys. Rev. Mater. 2,064401 (2018). [73] F. Giorgianni, B. Wehinger, S. Allenspach, N. Colonna, C. Vicario, P. Puphal, E. Pomjakushina, B. Normand, and Ch. R¨ uegg, Ultrafast frustration breaking and mag-netophononic driving of singlet excitations in a quantum magnet, Phys. Rev. B 107 , 184440 (2023). [74] E. Trushin and A. G¨ orling, Avoiding spin contamination and spatial symmetry breaking by exact-exchange-only optimized-effective-potential methods within the sym-metrized Kohn–Sham framework, J. Chem. Phys. 159 ,244109 (2023). [75] J. P. Perdew, A. Ruzsinszky, J. Sun, N. K. Nepal, and A. D. Kaplan, Interpretations of ground-state symme-try breaking and strong correlation in wavefunction and density functional theories, Proc. Nat. Acad. Sci. 118 ,e2017850118 (2021). [76] F. Neese, Definition of corresponding orbitals and the diradical character in broken symmetry DFT calculations on spin coupled systems, J. Phys. Chem. Solids 65 , 781 (2004). [77] P. W. Anderson, More is different, Science 177 , 393 (1972). 20  
+
+> SUPPLEMENTAL MATERIAL S1. CRYSTAL GROWTH
+
+Deuterated copper acetate hydrate Cu 2(CD 3COO) · 4 (D 2O) 2 crystallizes in the monoclinic space group C2/c (no. 15) with lattice parameters a = 13 .168 ˚ A, b = 8 .564 ˚ A, c = 13 .858 ˚ A, and β = 117 .02 ◦ [18]; it is also known as the mineral Hoganite. Cu 2(CD 3COO) · 4 (D 2O) 2 was synthesized from copper(II) oxide (CuO, 99 .995 %, Thermo Scientific), deuterated acetic acid (CD 3COOD, 99 .5 % D, Thermo Scientific), and deuterated water (D 2O, 99 .8 % D, Armar). CuO (25 g) was filled into a 250 mL flask equipped with an air-cooled condenser. Under argon atmosphere, acetic acid (50 g) and water (50 g) were added. The mixture was stirred and heated on an oil bath to 90 ◦C until the CuO had dissolved completely. After about two days, the product was cooled to room temperature, filtered off, and recrystallized from D 2O for purification. For crystal growth, a saturated solution was prepared by dissolving the material in D 2O at 60 ◦C. A few drops of CD 3COOD were added, just enough to avoid hydrolysis. The saturated solution was filtered and slowly cooled to room temperature in a closed flask. Small millimeter size crystals were selected and used as seed crystals in further crystallizations. Crystals of 3 .5 g and 2 cm size could be obtained within one week. The best results were achieved in close-to-neutral solutions. Fully faceted crystals were obtained with 200, 002, 110, 110, and 111, 11-2 faces, in order of decreasing surface area. The specimen used in the experiments described in the main text is shown in Fig. 2(a). The crystal quality was verified by single-crystal X-ray diffraction, from which the parameters of the unit cell at ambient temperature were refined to a = 13 .1722(2) ˚ A, b = 8 .5615(1) ˚ A, c = 13 .8610(2) ˚ A and β = 117 .026(2) ◦, in close agreement with the literature values mentioned above.  
+
+> S2. PRELIMINARY NEUTRON DATA
+
+Fig. S1 provides an overview of neutron scattering data collected using the High Resolution Chopper Spectrometer (HRC) at the Materials and Life Science Experimental Facility (MLF), J-PARC [19–21]. An incident neutron energy of 100 meV was used, and the sample was cooled to 10 K. The ( Qx, E)–plane in Fig. S1(a), which shows the triplet excitation at approximately 37 meV, is directly comparable to Fig. 5(a) of the main text. Fig. S1(b) displays the momentum dependence of the magnetic mode in the equatorial ( Qz , Q x)–plane, while Figs. S1(c, d) show line cuts along the purple and blue dashed lines of Fig. S1(b), respectively. The HRC data are in agreement with the corresponding measurements done on PANTHER (Fig. 2 of the main text).   
+
+> S3. ANALYTICAL PARAMETRIZATION A. Experimental background
+
+To isolate the magnetic structure factor of the singlet-to-triplet excitation in the INS data collected on PANTHER, the phonon-dominated background was modeled using a function quadratic in the magnitude of the scattering vector 
+
+Q, consistent with the typical |Q|2 dependence of neutron structure factors for lattice vibrations background( Q) = a |Q|2 + b, (32) where a and b are the free parameter of the model. Neutron data were integrated in an energy window immediately above the singlet-to-triplet excitation, thus empty of any magnetic signal, and given as input to the fitting routine. Two representative line cuts are shown in Fig. S2. Subsequently, we subtracted the modeled background from the INS signal integrated in the excitation-energy window at about 37 meV.  
+
+> B. Best-fit values as a function of the voxel side
+
+The analytical parametrization described in Sec. II C was fitted to the experimental data after background sub-traction. Each experimental intensity point corresponds to an integration over a reciprocal-space voxel of side dQ ,
+
+I(exp) (Q) = 
+
+Z dQ  
+
+> 2
+> −dQ
+> 2
+
+Z dQ  
+
+> 2
+> −dQ
+> 2
+
+Z dQ  
+
+> 2
+> −dQ
+> 2
+
+I(Q + q) d qx dqy dqz . (33) 21 
+
+FIG. S1. (a) ( Qx, E)–plane, where the x-axis corresponds to the blue dashed line of panel (b). The singlet-to-triplet excitation is visible at about 37 meV. (b) Intensity in the equatorial ( Qz , Q x)–plane obtained by integrating over an energy window centered at the excitation energy. (c) Line cut along the pink dashed line of panel (b) showing the cosine modulation arising from the dimer geometry. (d) In-plane form factor extrapolated along the blue dashed line of panel (b). 
+
+FIG. S2. (a) Purple: the same line cut as in Fig. 3(d) of the main text prior to background subtraction. Blue: data used for background modeling, together with the best-fit model (dashed line). (b) Purple: the same line cut as in Fig. 3(e) of the main text prior to background subtraction. Blue: data used for background modeling, together with the best-fit model (dashed line). 
+
+To improve the accuracy of the fit, the model intensity was evaluated at multiple reciprocal-space points within each voxel and averaged. Table S1 summarizes the best-fit values of the parameters for the different choices of dQ , which show only minor variations. We performed the fit employing two different masks for the experimental data, one being more strict in removing spurious scattering signal. In addition, we tested the inclusion of a flat background term as an extra parameter. The refined ρO 
+
+> ρCu +4 ρO
+
+remains essentially unaffected under these variations, while the σ parameters show only minor changes, preserving the inequalities σCu ∥ > σ Cu ⊥ and σO∥ > σ O⊥.22 
+
+TABLE S1. Best-fit values of the parameters as a function of dQ . Uncertainties correspond to one standard deviation. 
+
+dQ (˚ A−1) A ρO
+
+ρCu + 4 ρO
+
+(%) σCu ⊥ (˚ A−1) σCu ∥ (˚ A−1) σO∥ (˚ A−1) σO⊥ (˚ A−1)0.100 7.05(3) ×10 −5 5.31(4) 0.196(1) 0.237(1) 0.403(5) 0.286(5) 0.125 6.91(3) ×10 −5 5.29(5) 0.183(1) 0.230(1) 0.430(5) 0.271(5) 0.150 6.91(4) ×10 −5 5.28(5) 0.184(1) 0.230(1) 0.427(6) 0.270(6) 0.175 6.85(4) ×10 −5 5.28(5) 0.178(1) 0.226(1) 0.440(7) 0.268(7) 0.200 6.96(5) ×10 −5 5.33(8) 0.176(1) 0.225(1) 0.447(8) 0.259(8) 0.225 6.80(6) ×10 −5 5.20(8) 0.176(1) 0.225(1) 0.441(9) 0.255(9) 0.250 6.66(6) ×10 −5 5.03(8) 0.174(2) 0.224(1) 0.43(1) 0.25(1) 0.275 6.78(8) ×10 −5 5.2(1) 0.175(2) 0.224(1) 0.44(1) 0.26(1) 0.300 6.84(8) ×10 −5 5.3(1) 0.178(2) 0.223(1) 0.46(1) 0.28(1) 
+
+FIG. S3. Three replicas of the excitation momentum dependence in the equatorial ( Qz , Q x)–plane, together with a finite set of line cuts selected for comparison between the experiment and the analytical parametrization. 
+
+C. Extended comparison between the experiment and the model 
+
+Figure S3 shows the same replica of the magnetic structure factor of the excitation in the equatorial plane. Afinite set of line cuts is selected to illustrate the behavior of the analytical parametrization over a broad region of reciprocal space. The dashed lines in Fig. S3(a) probe the direction along the dimer axis in the equatorial plane, and the corresponding line cuts are shown in Fig. S4. The dashed lines in Fig. S3(b) probe the direction perpendicular to the cosine modulation, with the corresponding line cuts shown in Fig. S5. Finally, Fig. S6 collects a set of line cuts along the Qy direction, corresponding to the points indicated in Fig. S3(c). 23 
+
+FIG. S4. Cuts along the dashed lines in Fig. S3(a). The red number indicates the corresponding cut. Data relevant for the fit are in light blue, whereas those neglected are in black. 
+
+FIG. S5. Cuts along the dashed lines in Fig. S3(b). The red number indicates the corresponding cut. Data relevant for the fit are in light blue, whereas those neglected are in black. 24      
+
+> FIG. S6. Cuts along the direction perpendicular to the equatorial plane, i.e. Qy, passing through the red diamonds in Fig. S3(c). The red number indicates the corresponding diamond.
+> S4. AB INITIO CALCULATIONS DETAILS A. The choice of pseudopotential for spin density calculations
+
+The PAW pseudopotentials, while representing the core orbitals in a more accurate manner, when used by con-sidering only the pseudo-charge density instead of the all-electron density, can result in an incorrect spin density for the central regions; see Fig. S7. The norm-conserving (NC) pseudopotential results are most faithful to the Wannier function density, even though the Wannier functions were obtained for the PAW pseudopotentials.    
+
+> B. The effective Hubbard Ufrom linear response theory
+
+The Hubbard U for the DFT+ U calculations is obtained from linear response theory (LRT) [28–30] using the HP 
+
+code and PAW pseudopotentials in a two-step procedure: with a starting point of Ustart = 0 .0 eV we obtain a value of 
+
+ULRT = 8 .2 eV. In a second step, starting from Ustart = 4 .5 eV we obtain a value of ULRT = 7 .3 eV, used throughout the work. In Figure S8 we show the evolution of the effective gap between the frontier Hubbard bands from the DFT, Wannier bands and the Hubbard dimer model values, which all coincide near the ab initio -calculated Ueff = 7 .3 eV, confirming the validity of this choice.  
+
+> C. cRPA calculations
+
+We converge the screened 4-point integrals computed by RESPACK [37] within cRPA with respect to the cutoff energy for the dielectric matrix εcutoff by fitting an exponential Wij (εcutoff ) = c + a · e−bε cutoff and identifying the converged 
+
+Wij with the fitted c parameter, as shown in Fig. S9. 25 
+
+FIG. S7. Choice of pseudopotential and the resulting spin density displayed for a small (0.015) and large (0.100) value of the electron density isosurface. The PAW pseudopotentials, when used without care, can exhibit a spurious density in the center of the Cu d orbital. Using the all-electron density ( plot num=17 in pp.x ) with PAW redeems this issue (see the 0.100 isosurface). 
+
+FIG. S8. The gap between the frontier bands EDFT gap of the DFT+ Ueff coincides well with the effective gap of the Wannier bands 
+
+EWann gap as well as the gap in the Hubbard dimer model ≈ Wii − Wij near the ab initio -calculated Ueff = 7 .3 eV. The hopping integral t ≈ 0.24 eV is almost constant with Ueff .
+
+FIG. S9. Convergence of the 4-body integrals with respect to the cutoff energy for the dielectric matrix εcutoff .
