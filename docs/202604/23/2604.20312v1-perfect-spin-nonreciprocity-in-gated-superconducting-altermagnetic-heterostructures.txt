@@ -1,0 +1,868 @@
+Title: Perfect spin nonreciprocity in gated superconducting altermagnetic heterostructures
+
+URL Source: https://arxiv.org/pdf/2604.20312v1
+
+Published Time: Thu, 23 Apr 2026 00:43:12 GMT
+
+Number of Pages: 15
+
+Markdown Content:
+# Perfect spin nonreciprocity in gated superconducting altermagnetic heterostructures 
+
+Pei-Hao Fu, 1, ∗ Jun-Feng Liu, 2 Luca Chirolli, 1 and Jorge Cayao 3, †
+
+> 1
+
+Department of Physics and Astronomy, University of Florence, I-50019 Sesto Fiorentino, Italy 
+
+> 2
+
+School of Physics and Materials Science, Guangzhou University, Guangzhou 510006, China 
+
+> 3
+
+Department of Physics and Astronomy, Uppsala University, Box 516, S-751 20 Uppsala, Sweden 
+
+(Dated: April 23, 2026) We consider a superconducting altermagnet heterostructure and demonstrate that the interplay between altermagnetism and a selective filter of transverse momentum channels enables perfect nonreciprocal spin-polarized currents. We demonstrate that this nonreciprocity manifests in both local and nonlocal spin currents, signalling the emergence of directionally selective local and nonlocal spin behaviors. We show that the selective filter of transverse momentum channels is realized by gating a finite normal region between the superconducting altermagnet and the metallic reservoir, which then directionally selects transport channels that match the momentum-dependent spin-split superconducting altermagnetic states, allowing for nonreciprocal spin-polarized currents. We discover that the local and nonlocal spin nonreciprocity features a highly tunable polarity and nearly perfect quality factors, respectively, which is achieved by means of gate voltages and by varying the length of the finite region. Moreover, we find that local and nonlocal charge currents also develop a nonreciprocal behavior, whose quality factors can also reach perfect values. In all cases, the spin and charge currents are sensitive to variations of the altermagnetic field, a functional dependence that can be exploited to identify the type of altermagnetism. Our findings put forward an electrically controllable route towards nonreciprocal superconducting spintronic devices based on altermagnets. 
+
+INTRODUCTION 
+
+The recent discovery of altermagnetism has opened new opportunities for emergent superconducting phases without requiring finite net magnetization [1, 2]. This is in great part because altermagnets (AMs) support spin-split Fermi surfaces as in ferromagnets [3, 4], yet exhibit vanishing net magnetization and stray fields due to com-pensated magnetic ordering, similar to antiferromagnets [5]. The spin splitting in AMs is of nonrelativistic ori-gin and exhibits an anisotropic behavior, leading to spin-polarized Fermi surfaces with spin-degenerate nodes de-pending on the type of AM [6–16]. These intriguing spin properties of AMs have been shown to be the key for re-alizing several novel superconducting phases [1, 2], such as anomalous Josephson effects [17–26], spin-triplet su-perconductivity [27–38], and nonreciprocal currents [39– 50]; see also Ref. [51]. In this regard, nonreciprocal cur-rents are particularly important because they define el-ements with a direction-dependent current flow known as diodes [51–55], which are the key for superconducting circuits and electronics [56, 57]. To date, nonreciproc-ity in superconducting AMs has been reported mainly in charge currents but requiring extra ingredients such as spin-orbit coupling or magnetic fields [39–50]. This not only leaves charge nonreciprocity solely from altermag-netism an open question but it also shows that spin non-reciprocity in superconducting AMs has so far remained seldom studied. In this work, we consider heterostructures formed by a superconducting AM and a finite normal region [Fig. 1(a)   
+
+> ∗phy.phfu@gmail.com
+> †jorge.cayao@physics.uu.se
+
+and Fig. 4(a)], and demonstrate that it is possible to real-ize perfect spin nonreciprocity at vanishing net magneti-zation and stray fields. In particular, we focus on d-wave AMs with spin-singlet s-wave superconductivity, which can be induced by the proximity effect. We show that gating the finite confined normal region acts as a mo-mentum filter that directionally selects transverse modes matching the spin-split states in the superconducting AM, thereby enabling local and nonlocal nonreciprocal spin-polarized currents. We find that the nonreciprocal spin currents can be controlled by a gate voltage and the length of the finite confined region, thereby notably per-mitting the achievement of perfect spin nonreciprocity and a highly tunable polarity, in both local and nonlo-cal transport. For instance, a finite (vanishing) forward (backward) current is generated under positive (negative) bias and is predominantly carried by spin-up (spin-down) electrons, as shown in Figs. 1(a) and 4(a) for the local and nonlocal currents, respectively. Besides spin currents, we also obtain that charge currents are nonreciprocal and acquire perfect quality factor. Yet another consequence of our results is that the spin and charge currents exhibit signatures that can help identify the type and strength of altermagnetism. Our results offer a way for spin and charge nonreciprocity based on superconducting AMs, which can be useful for superconducting spintronic with vanishing magnetization. 
+
+> arXiv:2604.20312v1 [cond-mat.supr-con] 22 Apr 2026
+
+2
+
+FIG. 1. Junction geometry, energy dispersions and contours, and sketch of the spin nonreciprocity. (a) Illustration of the studied heterostructure formed by a su-perconducting altermagnet (AM) coupled to a nonaltermag-netic normal region N2 (orange) of finite length d, which is connected to a left metallic lead (gray). The superconduct-ing altermagnet appears due to an altermagnet (orange) and proximity induced superconductivity from a conventional s-wave superconductor (blue). The left lead is subjected to a voltage bias VL, while the chemical potential of the normal re-gion N2 is controlled by a gate voltage VG. The red thick solid (blue thin) arrow denotes the current I↓ 
+
+> L
+
+(I↑
+
+> L
+
+) predominantly carried by spin-↓ (↑) electrons. (b) Energy dispersions in the three regions of the junction at ky = 0, where the shaded regions in the rightmost panel indicate the partially gapped regions in the superconducting AM. (c) Equal-energy con-tours in the kx-ky plane for the three regions of the junction at E > 0, while (d) the same at E < 0; here, E lies within the red/blue regions in the rightmost panel of (b), which are par-tially gapped regions of the superconducting AM. The black curves in (b-d) denote spin-degenerate bands in N L and N 2,while blue (red) curves in the rightmost panel indicate the spin split energy bands in the superconducting AM, where quasiparticle states are formed by spin-↑ (↓) electrons paired with spin-↓ (↑) holes. Solid (dashed) arrows in (c,d) denote allowed (blocked) transport channels. 
+
+RESULTS Intrinsic asymmetric spin splitting in superconducting AMs 
+
+We start by showing that the spin splitting of AMs exhibits an intrinsic asymmetry, which is useful for spin nonreciprocity. For pedagogical purposes but without loss of generality, we focus on a d-wave AM with conven-tional spin-singlet s-wave superconductivity, modelled by an effective Bogoliubov-de Gennes Hamiltonian in the ba-sis of ( ck, ↑, c k, ↓, c †−k, ↑, c †−k, ↓)T, which reads 
+
+Hk = ξkτz − ∆ σy τy + Mkσz τz . (1) Here σj (τj ) denotes the jth Pauli matrix in spin (Nambu) space, ξk = ℏ2k2/(2 m) − μ is the kinetic energy with chemical potential μ, k = ( kx, k y ) is the crystal mo-mentum, ∆ is the spin-singlet s-wave pair potential ex-pected to be induced by proximity effect [1, 58–60], and 
+
+Mk represents the d-wave altermagnetic field. Explicitly, 
+
+Mk takes the form [1, 61, 62] 
+
+Mk = J(k/k F)2 cos(2 θk − 2θJ ) , (2) where kF = √2mμ/ ℏ is the Fermi wave vector, J denotes the altermagnetic strength, θJ specifies the orientation of the altermagnetic axis relative to the kx direction, and 
+
+θk = arctan( ky /k x) denotes crystalline momentum direc-tion. Thus, for θJ = 0 ( θJ = π/ 4), Eq. (2) describes a 
+
+dx2−y2 -wave ( dxy -wave) AM. The altermagnetic spin splitting is directly revealed in the quasiparticle spectrum of Eq. (1), which reads 
+
+Eγ,β  
+
+> k
+
+= γM k + β
+
+q
+
+ξ2 
+
+> k
+
++ ∆ 2 , (3) where β = ± labels the electron- and hole-like quasipar-ticle branches. The index γ = + ( −) denotes the sector of Eq. (1) with spin-↑ (↓) electrons pairing with spin-↓ (↑)holes. The first term in Eq. (3) shows that a finite alter-magnetic field Mk [Eq. (2)] generates the spin splitting, resulting in E+,β 
+
+> k
+
+̸ = E−,β  
+
+> k
+
+.The spin splitting manifests itself both in energy and momentum space. The rightmost panel of Fig. 1(b) schematically shows the dispersion of Eq. (3) as a func-tion of kx for θJ = 0 and ky = 0 ( θk = 0). In this case, 
+
+Mk > 0 for kx̸ = 0, which shifts the branches with γ = + (γ = −) upward (downward), producing the energy split-ting between opposite spin sectors. Furthermore, the al-termagnetic field Mk induces anisotropic spin splitting that depends on the crystalline momentum direction θk.Specifically, Mk reaches positive (negative) extrema at 
+
+θk = θJ + nπ [θk = θJ + (2 n + 1) π/ 2] and vanishes at 
+
+θk = θJ + (2 n + 1) π/ 4, where n ∈ Z. Fig. 1(b) is the case with θJ = θk = 0 having maximal Mk. Hence, Mk gen-erates an anisotropic spin-dependent spectrum in d-wave AMs that depends strongly on the momentum direction. Further insight into the anisotropic spin splitting can be obtained from the band edges of Eq. (3), which occur at k = kF where the superconducting gap opens and are given by 
+
+Eγ,β 
+
+> edge
+
+(θk) = γM kF,θ k + β∆ . (4) Here MkF,θ k = J cos(2 θJ − 2θk) is the altermagnetic field given by Eq. (2) with k → kF while retaining the angular dependence on θk. For θk = θJ + (2 n + 1) π/ 4, one has 3
+
+MkF,θ k = 0, which yields spin-degenerate band edges at 
+
+±∆. In contrast, at θk = θJ + nπ/ 2 the field MkF,θ k is maximal and determines the upper and lower bounds of the positive-energy band edges, 
+
+Eγ, +edge (θJ + nπ ) ≡ ∆γ = |∆ + γJ | , (5) which are indicated by the short dashed gray horizon-tal lines in the rightmost panel of Fig. 1(b). These cor-respond to the highest ( γ = +) and lowest ( γ = −)band edges at positive energies, with symmetric counter-parts at negative energies. Thus, Eq. (5) defines three distinct energy regimes in the quasiparticle spectrum, as indicated by the shaded areas in the rightmost panel of Fig. 1(b): (i) For |E| < ∆−, the system is fully gapped without quasiparticle excitations. (ii) For ∆ − < |E| <
+
+∆+, the gap becomes direction dependent and quasipar-ticle states emerge in opposite spin sectors: In particular, for E > 0, quasiparticle states around ky = 0 ( kx = 0) are dominated by the spin-↑ (↓) sector; for E < 0, the spin character is reversed, see Figs. 1(c) and 1(d). (iii) For |E| > ∆+, the spectrum becomes gapless with quasi-particles occupying all momentum directions. As a result, the characteristic gaps ∆ ± and band edges 
+
+Eγ,β  
+
+> edge
+
+encode the energy- and momentum-dependent and asymmetric spin splitting of the quasiparticle spectrum arising from the interplay between d-wave altermag-netism and conventional superconductivity. The result-ing asymmetric spectrum with respect to E = 0 in each spin sector , akin to what occurs in ferromagnetic junc-tions [58, 63], has been experimentally identified as a key ingredient for nonreciprocal transport [64–68]. Despite this similarity, the anisotropic and asymmetric spin split-ting due to altermagnetism is a distinctive feature of AM-superconductor hybrids without a ferromagnetic analog. As we show below, these spin asymmetries are useful for realizing spin-polarized transport in junctions based on superconducting AMs, as illustrated in Fig. 1(a). 
+
+> Gate-controlled local spin-polarized currents
+
+After showing that superconducting AMs harbor an intrinsic asymmetric spin splitting under dx2−y2 -wave al-termagnetism, in this part, we explore how it can be exploited for obtaining spin-polarized currents. While the altermagnetic spin splitting might be seen to be suf-ficient [right panel of Fig. 1(b)], realizing spin-polarized transport is not a trivial task. This is because both spin channels contribute to transport, leading to compensated spin currents [see rightmost panels of Figs. 1(c,d)]. How-ever, owing to the momentum-dependent spin splitting in AMs, spin-polarized transport can be achieved by se-lecting transverse momentum channels, while maintain-ing the altermagnetic properties. To implement such a momentum selection mechanism, we insert a nonalter-magnetic normal region of finite length (N 2) between the superconducting AM and the normal metallic reservoir (N L) needed for transport, resulting in the heterostruc-ture shown in Fig. 1(a). The finite normal region N 2
+
+has a Fermi surface that can be controlled by means of a gate voltage via its chemical potential. This makes 
+
+N2 as a momentum filter that selects transverse modes with propagation directions almost aligned with the junc-tion. Therefore, the transmitted modes match the spin-split states in the superconducting AM, enabling spin-polarized currents [see Fig. 1(b-d)]. In the following, we discuss the calculation of current flowing through the de-vice shown in Fig. 1(a) and the effect of gating for real-izing spin polarization and nonreciprocity. 
+
+Current through the device of Fig. 1(a). To prop-erly inspect the momentum filtering effect and the result-ing spin transport, we model the junction in Fig. 1(a) by discretizing Eq. (1) on a lattice along the x direc-tion, while keeping ky as a good quantum number. The nearest-neighbor hopping amplitude is t = ℏ2/(2 ma 2), where a is the lattice constant. Details of the junction model are provided in the Methods section. In the fol-lowing, for simplicity we set t = 1 as the energy unit and assume identical hopping in all regions. The chemi-cal potentials in N L and the superconducting region are taken to be equal to μ ≫ { ∆, J }, such that transport is primarily controlled by the gated region and the in-terface transparency, characterized by the dimensionless parameter tc/t . The gate voltage in the N 2 region is the key ingredient controlling the transport, which shifts the electrostatic potential in the N 2 region. In principle, the electrostatic potential is obtained by solving the BdG-Poisson equation for the NS junction geometry [69–74] and may spatially depend on the applied bias voltage [75, 76]. For simplicity, we approximate the gate effect by setting μN2 = eV G [77]. This approximation cap-tures the essential momentum filtering induced by the gate [Fig. 1(b-d)], and the qualitative results presented below are expected to remain valid when a more detailed electrostatic modeling is included. The gate-defined spin-polarized transport in the junc-tion is characterized by the relation between the local current flowing in N L driven by bias eV L, which is [78] 
+
+Iσ 
+
+> L
+
+(eV L) = 1
+
+e
+
+Z
+
+dE G σ
+
+> L
+
+(E) [ fL(E, eV L) − fS(E)] , (6) where Gσ
+
+> L
+
+(E) is the spectral conductance for incident electrons with spin σ ∈ {↑ , ↓} , while fL(E, eV L) =
+
+f (E − eV L) and fS(E) = f (E) ≡ [1 + eE/ (κBT )]−1 are the Fermi-Dirac distributions in the N L and S regions, respectively; here T is the temperature and κB is the Boltzmann constant. In Eq. (6), Gσ
+
+> L
+
+(E) is given by 
+
+Gσ
+
+> L
+
+(E) = G0
+
+X
+
+> ky
+
+gσ 
+
+> L
+
+(E, k y ), (7) where G0 = e2W/ (2 πℏ) is the conductance unit in the sample with width W and 
+
+gσ 
+
+> L
+
+(E, k y ) = 1 − Rσ 
+
+> N
+
++ Rσ
+
+> A
+
+, (8) 4                                                  
+
+> FIG. 2. Gate-controlled local conductance and currents. (a-d) Local conductance and currents at eV G=μ= 50∆ in a junction having dx2−y2-wave altermagnetism. (a,b) Energy- and momentum-resolved dimensionless conductance gσ
+> Lfor incident spin-↑and spin-↓electrons, respectively. (c) Energy-resolved local spectral conductances Gγ
+> Las a function of E. (d) Local spin and charge currents Iγ
+> Lversus eV L, with the right yaxis showing the spin polarization PL. In (c,d), γ∈ {↑ ,↓,C,S}
+> denotes the spin-↑, spin-↓, charge, and spin conductances as well as the respective currents. The yellow shaded, unshaded, and red shaded regions in (c,d) correspond to the gapped, partially gapped, and gapless regimes of the BdG spectrum defined by Eq. (5). (e-h): The same as (a-d) but with eV G= 0 .5∆. Parameters: μ=t, ∆ = 0 .02 μ,J= 0 .5∆, θJ= 0, d= 5 a,tc= 1,
+> κBT= 0 .01∆, a= 1, t= 1, and ∆ ±= (1 ±0.5)∆.
+
+is the energy- and momentum-resolved dimensionless conductance determined by the normal ( Rσ
+
+> N
+
+) and An-dreev reflection ( Rσ
+
+> A
+
+) probabilities. Here, Rσ 
+
+> N
+
+and Rσ
+
+> A
+
+are obtained using lattice Green’s functions [79–86], as detailed in the Methods section. From Eqs. (7) and (6), the charge (C) and spin (S) conductances are found as 
+
+GCL (E) = G↑
+
+> L
+
+(E) + G↓
+
+> L
+
+(E), (9a) 
+
+GSL(E) = G↑
+
+> L
+
+(E) − G↓
+
+> L
+
+(E), (9b) and the corresponding currents as 
+
+ICL (eV L) = I↑
+
+> L
+
+(eV L) + I↓
+
+> L
+
+(eV L), (10a) 
+
+ISL (eV L) = |I↑
+
+> L
+
+(eV L)| − | I↓
+
+> L
+
+(eV L)|, (10b) which are the measurable observables of the junction. The spin transport is further characterized by the spin polarization [58, 63], 
+
+PL(eV L) = ISL (eV L)
+
+|ICL (eV L)| , (11) which is defined by normalizing the spin current to the charge current. Here, PL > 0 ( < 0) corresponds to spin-↑ (spin-↓) polarization. Perfect spin polarization is achieved when PL = ±1, indicating that the current is solely carried by spin-↑ (↓) electrons [58, 63]. In the fol-lowing, we investigate transport in the junction and the effect of gating by analyzing the spin-resolved conduc-tance gσ 
+
+> L
+
+(E, k y ) [Eq. (8)] and the resulting conductance and current defined in Eqs. (7) and (6), respectively. 
+
+Effect of gating on spin polarization. To reveal the effect of the gate voltage, in Figs. 2(a-d) we first as-sess transport in a not gated case eV G = μ at distinct energies as a benchmark for comparison with dx2−y2 -wave altermagnetism. In this case, gσ 
+
+> L
+
+(E, k y ) versus ky in Figs. 2(a,b) shows that all transverse modes with different 
+
+ky from the N L lead are injected into the superconduct-ing lead. The ky dependence of the spin-resolved con-ductance gσ 
+
+> L
+
+(E, k y ) [Figs. 2(a,b)] is therefore determined by the three distinct regimes in the spectrum of the su-perconducting AM illustrated in Fig. 1(b-d). In the fully gapped region |E| < ∆−, the dotted lines in Figs. 2(a,b) show that g↑
+
+> L
+
+(E, k y ) = g↓
+
+> L
+
+(E, k y ) = 2 due to perfect An-dreev reflections and the absence of normal reflections. After summing over all transverse modes [Eq. (7)], the total spin-resolved conductances G↑ 
+
+> L
+
+and G↓ 
+
+> L
+
+are degener-ate. The resulting charge conductance exhibits a plateau while the spin conductance vanishes, as shown by the yellow shaded region in Fig. 2(c). Spin-dependent transport emerges in the partially gapped region ∆ − < |E| < ∆+, as shown by solid curves in Figs. 2(a,b): here, the high conductance state for spin-
+
+↑ (↓) with g↑(↓)L = 2 or ky close to (away from) 0. This behavior can be understood from the schematic equal-energy contour shown in Fig. 1(c): For ky ≈ 0, the spin-↑
+
+spectrum is gapped, and the Andreev reflection domi-nates transport, yielding g↑
+
+> L
+
+(E, k y ) = 2; in contrast, the spin-↓ states are gapless, so that the injected electrons are transmitted into the superconductor, reducing the An-dreev reflection and thus the conductance [Figs. 2(a,b)]. When ky moves away from 0, the momentum-dependent 5spin splitting reverses in the AM-superconductor hybrid, resulting in reduced (enhanced) conductance for spin-↑
+
+(spin-↓) electrons. As a result, the total conductance ob-tained from Eq. (7) becomes spin dependent, resulting in a finite spin conductance GSL in the unshaded region of Fig. 2(c). For |E| > ∆+, both spin subbands in the AM-superconductor hybrid become gapless, and the resulting transport in this regime is dominated by single-particle processes that lead to g↑
+
+> L
+
+(E, k y ) ≈ g↓
+
+> L
+
+(E, k y ) ≈ 1, see dashed curves in Figs. 2(a,b). Thus, spin-resolved con-ductances Gσ 
+
+> L
+
+become nearly degenerate, with a negligi-ble GSL, as shown in the red shaded region of Fig. 2(c). The behavior of the conductances exposed above has a direct effect on the local charge ( ICL ) and spin ( ISL ) cur-rents defined by Eqs. (10). To unveil this, in Fig. 2(d) we present ICL and ISL versus eV L at eV G = μ; therein, we also show the spin-resolved components Iσ 
+
+> L
+
+and spin polarization PL obtained from Eq. (6) and Eq. (11), re-spectively. We observe that, for |eV L| < ∆−, the identi-cal spin-resolved currents result in a vanishing spin cur-rent ( ISL = 0) and spin polarization ( PL = 0), see the inset of Fig. 2(d). In the partially gapped region, with ∆− < |eV L| < ∆+, both the spin current ISL and the spin polarization PL become finite; this originates due to the spin-dependent conductance in Fig. 2(c), as a result of the momentum-dependent spin-split equal-energy con-tours in the superconducting AM [Fig. 1(a)]. In the gap-less regime, when |eV L| > ∆+, the spin polarization PL
+
+decreases as the spin current saturates, while the charge current continues to increase with the applied bias eV L.At this point, we emphasize that, in spite of the spin-splitting due to altermagnetism, the spin polarization PL
+
+is almost negligible, with a maximum value of PL ≈ 5%, see right y axis in Fig. 2(d). This, of course, reflects that, albeit there is an overall spin current due to AMs, the charge current is entirely dominant when the finite re-gion N2 is not gated. We have also verified that quali-tatively identical spin and charge current behavior is ob-tained in the absence of the N 2 region, demonstrating that spin-polarized transport is negligible in a gate-free NS junction formed by superconducting AMs. We now assess the regime with a gated N2 region by tuning its gate voltage VG to a value comparable to the superconducting gap, eV G = 0.5∆ = μ/ 100. As already anticipated at the beginning of this section, this regime permits filtering momentum states such that the asymmetric momentum-dependent spin splitting of AMs is fully exploited for inducing strong spin-polarized currents. This is demonstrated in Figs. 2(e-h), where we present the ky dependence of gσ 
+
+> L
+
+(E, k y ) as well as 
+
+Gγ
+
+> L
+
+(eV L), Iγ 
+
+> L
+
+(eV L) and PL(eV L) versus eV L. The first observation is that the momentum-resolved conductance 
+
+gσ 
+
+> L
+
+(E, k y ) in Figs. 2(e,f) exhibits dependences on ky , E,and spin σ that are stronger than when the finite re-gion N2 was not gated in Figs. 2(a,b). Because of the small Fermi surface restricted by the gated N2 region [Figs. 1(c,d)], the conductances now exhibit peaked pro-files with dominant contributions from the transverse modes around ky ∼ 0, see Figs. 2(e,f). Furthermore, for |E| < ∆−, the conductances gσ 
+
+> L
+
+(E, k y ) gain a spin-dependent suppression, due to enhanced normal reflec-tions, which occur because the small Fermi surface in the N2 region drastically mismatches those in the N L and the superconducting AM regions. In contrast, in the gapless regime |E| > ∆+, conductances gσ 
+
+> L
+
+(E, k y ) are enhanced due to the quasiparticle transmission. This enhancement is spin-dependent, as revealed by the different values of 
+
+g↑
+
+> L
+
+(E, k y ) and g↓
+
+> L
+
+(E, k y ) at ky ∼ 0. Interestingly, the role of the gate becomes most signif-icant in the partially gapped energy window ∆ − < |E| <
+
+∆+, as revealed by the solid curves in Figs. 2(e,f): in this regime, the momentum resolved conductance gσ 
+
+> L
+
+(E, k y )for up spin electrons is strongly suppressed, while it re-mains finite for spin down electrons. This peculiar be-havior of gσ 
+
+> L
+
+(E, k y ) originates because the gated region selects transverse momenta ky close to 0, which match the spin-↓ (↑) states in the superconducting AM region and allow electrons with spin -↓ (↑) to flow for eV L > 0(eV L < 0), see Fig. 1(c,d). In contrast, the spin-↑ (-↓)states require larger ky values that are blocked by the small equal-energy contour in the gated region. The striking behavior of gσ 
+
+> L
+
+(E, k y ) when N2 is gated therefore strongly influences the spectral conductances 
+
+Gγ
+
+> L
+
+(eV L) and currents Iγ 
+
+> L
+
+(eV L), as shown in Figs. 2(g,h). In fact, the reduced values of gσ 
+
+> L
+
+(E, k y ) for |E| < ∆−
+
+lead to negligible values of Gγ
+
+> L
+
+(eV L), see yellow shaded region in Figs. 2(g,h), respectively. We note that, al-though the currents in this bias window are negligible, they exhibit spin-dependent behavior, giving rise to a fi-nite spin polarization, see the inset of Fig. 2(h). This contrasts with the non-gated case, where the currents are spin degenerate, see inset of Fig. 2(d). Interestingly, af-ter increasing the bias within the partially gapped energy window ∆ − < |E| < ∆+, the conductance gσ 
+
+> L
+
+(E, k y ) is mostly carried by spin down electrons, making Gγ
+
+> L
+
+(eV L)and Iγ 
+
+> L
+
+(eV L) in this region to be almost entirely car-ried by such a single spin channel, see unshaded re-gions of Figs. 2(g,h). This behavior signals spin-polarized transport that is characterized by the spin polarization [Eq. (11)] reaching PL ∼ ± 1 only in the partially gapped regime, see yellow curve in Fig. 2(h). By further increas-ing the bias into the gapless regime |E| > ∆+, the spin polarization is slightly reduced and saturates due to fi-nite spin-dependent quasiparticle transmission. Thus, by comparing Fig. 2(h) with Fig. 2(d), the interplay between gating N2 and superconducting AM gives rise to spin-polarized currents. In addition to inducing spin-polarized transport, gat-ing introduces two further measurable consequences. First, the spectral conductance Gγ
+
+> L
+
+(E) provides a direct way to measure the altermagnetic strength. In fact, com-paring Fig. 2(c) and Fig. 2(g), we see that reducing the value of eV G suppresses the conductance plateau and pro-duces sharp peaks at the band edges Ec1 = ∆ − = ∆ − J
+
+and Ec2 = ∆ + = ∆ + J, marked by vertical gray dashed lines in Fig. 2(g). These characteristic energies are inde-6pendent of the altermagnetic orientation θJ [see Eq. (5)] and therefore provide a direct transport probe of the al-termagnetic strength, J = ( Ec2 − Ec1)/2. It is worth noting that, since the superconducting gap ∆ in the con-sidered superconducting AM is proximity induced and in-evitably differs from the parent superconductor gap ∆ ′,the peaks of Gγ
+
+> L
+
+(E) also allow to quantify the proxim-ity efficiency as q = ∆ /∆′, where ∆ = ( Ec2 + Ec1)/2 A second effect introduced by the gate is the emergence of nonzero spin and charge current nonreciprocities, which originate as a result of the spin and charge currents pos-sessing different magnitudes when the bias polarity is re-versed. This is an emergent diode behavior [54, 85, 87– 94], sometimes referred to as rectification [95–98], which resembles a transistor [77] and can be controlled by the applied gate voltage, as discussed below. 
+
+> Local spin and charge nonreciprocity
+
+To quantify the nonreciprocity of the local spin and charge currents IC(S) L driven by eV L, here we investigate the charge and spin quality factors defined as [64, 95, 99] 
+
+Qγ
+
+> L
+
+(eV L) = |Iγ 
+
+> L
+
+(+ eV L)| − | Iγ 
+
+> L
+
+(−eV L)||Iγ 
+
+> L
+
+(+ eV L)| + |Iγ 
+
+> L
+
+(−eV L)| , (12) where Iγ (eV L) corresponds to the charge ( γ = C) and spin ( γ = S) currents under bias VL obtained from Eq. (6) and discussed in previous section. The quality factors Qγ
+
+> L
+
+characterize the charge (spin) nonreciprocal efficiency. In particular, a QC(S) L̸ = 0 indicates that the charge (spin) currents have different magnitudes under reversed biases. The limiting values Qγ 
+
+> L
+
+= ±1 correspond to perfect non-reciprocity, where a finite current flows in one direction while it vanishes in the opposite direction. Also, the sign of Qγ 
+
+> L
+
+determines the polarity of the nonreciprocal trans-port. Together with the spin polarization PL [Eq. (11)], these quantities characterize the local spin and charge nonreciprocities of the device shown in Fig. 1(a). We start by inspecting in Fig. 3 the spin polarization 
+
+PL and the quality factors Qγ 
+
+> L
+
+as functions of eV L for dis-tinct values of eV G and length of the N 2 region d. By tuning the gate voltage eV G from high to values of the order of ∆ at fixed short d as in Fig. 2(h), the spin polar-ization PL develops greatly enhanced values for eV L in the partially gapped regime, see Fig. 3(a). This enhancement originates from the momentum filtering effect illustrated in Fig. 1(b-d), and discussed together with Figs. 2(d,h) in the previous section. Furthermore, the spin and charge nonreciprocal quality factos QSL and QCL exhibit nonzero values and depend on eV G, especially at large bias volt-ages, as shown in Figs. 3(b,c). This nonreciprocal be-havior follows from the asymmetric conductances (cur-rents) with respect to zero energy (zero bias) shown in Fig. 2(g,h), and can be understood from the schemat-ics of Fig. 1(b-d). In the N 2 region with eV G ∼ ∆, the equal-energy contour for E > 0 is significantly larger                    
+
+> FIG. 3. Gate-controlled local spin and charge nonre-ciprocity. (a-c) Spin polarization PLand local spin (charge) quality factors QS(C) Las functions of eV Lfor different gate voltages eV Gat fixed short length d= 5 ain a junction hav-ing dx2−y2-wave altermagnetism. (d-f) The same as in (a-c) but for different values of dat fixed gate voltage eV G= 0 .5∆. Parameters: The same as in Fig. 2.
+
+than that for E < 0, allowing more transverse modes to contribute under positive bias [Fig. 1(c,d)]. Conse-quently, together with the spin polarization caused by the mometum-filtering effect, the current for positive bias is dominated by spin-↓ electrons, whereas under negative bias, fewer transverse modes contribute and the current is dominated by spin-↑ electrons. Therefore, a larger spin-↓ polarized current flows for positive bias, while a smaller spin-↑ polarized current appears for negative bias. As a result, the nonzero difference between positive and negative charge currents leads to charge nonreciproc-ity, while the corresponding directional difference for the spin current produces spin nonreciprocity, as shown in Figs. 3(b,c). Note, however, that Figs. 3(b,c) show qual-ity factors of the order of QC/S L ∼ 0.2, which occurs be-cause the difference between the currents under opposite biases is moderate [Fig. 2(h)]. Extending the length of the gated region can further enhance the nonreciprocal effect, although at the cost of reducing the spin polarization, as shown in Figs. 3(d-f). In fact, when the length of the N 2 region increases, the spin polarization of the negative-bias current is strongly reduced, while the positive-bias current remains highly spin polarized with PL > 0.5, see Figs. 3(d). Impor-tantly, both the spin and charge nonreciprocal efficien-cies can approach QC/S L = ±1, indicating nearly perfect nonreciprocity. Unlike the high spin polarization that appears only in the partially gapped regime [Fig. 3(d)], the directional-selective effect occurs over a wider bias range when eV L > eV G and the N 2 region is sufficiently long [Fig. 3(e,f)]. The enhancement of the nonreciproc-ity can be understood from the schematic spectrum in Fig. 1(b). When the energy of the incident electron lies below the band bottom of the gated region, i.e., 
+
+E < −eV G < 0, quantum tunneling occurs through 7evanescent modes in the N 2 region. From the quantum scattering picture, the transmission probability scales as 
+
+e−κd with κ = p2m(eV G − E)/ℏ, which decays exponen-tially with the length d of the gated region. Therefore, the current is strongly suppressed when the bias enters this regime. In contrast, for positive bias, propagating states are always available in the N 2 region, so that a fi-nite current persists. Hence, increasing the length of the gated region strongly suppresses the negative-bias spin-
+
+↑ current, while the positive-bias current remains nearly unaffected. Since the spin-↓ current is already small, the two spin contributions become comparable under neg-ative bias, leading to a reduction of the spin polariza-tion [Fig. 3(d)]. At the same time, the strong suppression of the negative-bias current enhances both the spin and charge nonreciprocal quality factors [Fig. 3(e,f)]. To further inspect the robustness of the gate-controlled charge and spin nonreciprocity, in Fig. 4 we present the quality factors QC(S) L and spin polarization PL as func-tions of the gate voltage eV G, bias eV L, altermagnetic strength J, and altermagnetic orientation θJ , all for a 
+
+N2 region of length d = 20 a. The charge quality fac-tor QCL demonstrates that its polarity depends on the bias VL direction and reaches a nearly perfect value with 
+
+QCL ≈ ± 1 when eV Gis comparable to the superconduct-ing gap, see Fig. 4(a). Moreover, as long as the gate voltage is within this range, the high QCL remains in a wide range of bias eV L and is roughly insensitive to the altermagnetic strength J, and orientation θJ , pro-vided the bias is fixed at eV L/∆ = 1, see Fig. 4(b,c). A similarly nearly perfect spin nonreciprocal behaviour with QSL = ±1 appears when eV G is comparable to the superconducting gap, which is also featured by a bias-direction-dependent polarity, see Fig. 4(d). We note that, for low gate voltage eV G/∆ ≪ 0, however, QSL be-comes ill-defined because of the negligible current. No-tably, QSL exhibits a strong dependence on the altermag-netic strength J and and can even reverse its polarity [Fig. 4(e)]. Specifically, for a fixed eV G, enhancing the altermagnetic strength J also reverses the spin nonre-ciprocal polarity at around J/ ∆ ∼ ± 1. We attribute this polarity reversal to the switching of spin-polarized states in the superconducting AM. For a fixed eV G, we have confirmed that as J increases, the energy of the spin-↑ sector of the spectrum [blue curve in Fig. 1(b)] shifts upward, while the spin-↓ sector shifts downward [red curve in Fig. 1(b)]. Consequently, the equal-energy contours shown in Fig. 1(c,d) interchange, reversing the spin polarization and thereby changing the polarity of 
+
+QSL. This polarity reversal signals the exchange of the equal-energy contours in the altermagnet and is related to the emergence of the Bogoliubov-Fermi surface in su-perconducting AMs [100, 101]. Futhermore,, the polar-ity reversal also occurs by changing the gate voltage eV G
+
+[Fig. 4(e)]; also, while QSL seems almost insensitive to the altermagnetic orientation θJ, it develops an oscillatory pattern with a polarity reversal at large eV G [Fig. 4(f)]. This gate-voltage-induced polarity reversal might be at-                  
+
+> FIG. 4. Robustness of local spin and charge nonre-ciprocity. (a-c) Charge quality factor as a function of eV G
+> and eV L(a), J(b), and θJ(c). (d-f) and (g-i) are the same as (a-c) but for the spin quality factor and spin polarization, respectively. Parameters: same as in Fig. 3 with d= 20 a;
+> eV L= ∆, θJ= 0, and J= 0 .5∆ unless variable.
+
+tributed to the gated-controlled resonant tunneling pro-cess that occurs in the confined N 2 region [102]. A similar behavior is exhibited by the spin polarization 
+
+PL in Figs. 4(g-i), which demonstrate a large spin polar-ization as eV G ∼ ∆ and sign reversal as J increases due to the switching of spin-polarized states in the supercon-ducting AM, see Fig. 4(g,h). An intriguing behavior of PL
+
+is that it develops an oscillatory behavior as a function of the altermagnetic orientation θJ. Specifically, PL = −1(PL = +1) occurs for θJ = nπ [θJ = (2 n + 1) π/ 2] when 
+
+eV G ∼ ∆, corresponding to the directions of maximal spin splitting of the AM Fermi surface. In contrast, 
+
+PL = 0 occurs at θJ = (2 n + 1) π/ 4, where transport oc-curs along the spin-degenerate nodes of the AM. The θJ
+
+dependence of PL, therefore, provides strong signatures that allow to identify the type of altermagnetism. Before ending, we emphasize that, despite the pres-ence of a spin-split Fermi surface in superconducting AM hybrids, the absence of gating leads to vanishing spin-polarized transport due to the compensation between different spin channels. Gating N2 induces a momen-tum filtering effect, such that only modes with momenta matching the spin-polarized states in the superconduct-ing AM contribute to transport, thereby enabling a fi-nite spin-polarized current. The gating further induces a nonreciprocity in the local current, which, combined with the momentum-selective spin filtering, gives rise to both spin and charge quality factors reaching nearly perfect values. Beyond the d-wave altermagnetism considered here, the spin and charge nonreciprocities are expected 8to extend to other even-parity unconventional magnets, such as g-wave and i-wave systems. This follows from the presence of analogous spin-split spectra in these sys-tems when proximitized by conventional s-wave super-conductivity [1, 33, 34]. Consequently, the same gate-controlled momentum-filtering mechanism illustrated in Fig. 1 can be applied to a broader class of even-parity un-conventional magnets. In contrast, for odd-parity mag-nets such as p- and f -wave systems, although spin-split equal-energy contours remain, the spin-dependent energy shift in the spectrum [Fig. 1(b)] is absent. As a result, spin-polarized transport is suppressed, while we antici-pate that nonreciprocal charge current can still arise by gating. 
+
+> Nonlocal spin and charge nonreciprocity
+
+The gate-induced momentum filtering mechanism dis-cussed in the previous section also enables nonreciprocal nonlocal charge and spin currents. To study these non-local nonreciprocities, we consider the junction shown in Fig. 5(a), where we attach a normal metallic lead (N R)on the right side of the superconducting AM of Fig. 1(a). Then, the resulting current in N R depends nonlocally on the bias eV L applied in N L, and is obtained as [103–105] 
+
+Iσ
+
+> R
+
+(eV L) = 1
+
+e
+
+Z
+
+dE G σ
+
+> R
+
+(E) [ fL(E, eV L) − fR(E)] . (13) Here, fL(E, eV L) and fR(E) = fS(E) are the Fermi-Dirac distributions in N L and N R, respectively, with bias eV L
+
+applied to N L and N R grounded. As before, Gσ
+
+> R
+
+(E) is the spectral nonlocal conductance given by 
+
+Gσ
+
+> R
+
+(E) = G0
+
+X
+
+> ky
+
+gσ
+
+> R
+
+(E, k y ), (14) with G0 = e2W/ (2 πℏ) and 
+
+gσ
+
+> R
+
+(E, k y ) = T σe (E, k y ) − T σh (E, k y ). (15) where T σe (T σh ) represents the spin-resolved electron-electron cotunneling (crossed Andreev reflection) prob-ability for an electron incident from N L with energy E
+
+and transverse momentum ky transmitted as an electron (hole) into N R. Thus, the nonlocal current in Eq. (13) results from the competition between electron and hole transmission processes, and can be either positive or neg-ative depending on the dominant transport channel. Apositive (negative) Iσ
+
+> R
+
+(eV L) corresponds to current flow-ing from the superconducting AM region into N R (from NR into the superconducting AM region). Thus, the cur-rent between N R and the superconducting AM region is controlled by the bias applied to the left lead N L, hence unveiling its nonlocal character. Following the quantities defined for the local currents [see Eq. (6) and Methods Section], Eq. (13) allows us to define nonlocal transport observables, including the nonlocal charge (C) and spin                         
+
+> FIG. 5. Nonlocal spin and charge nonreciprocities.
+> (a) Top: Schematic illustration of superconducting AM junc-tion having dx2−y2-wave altermagnetism and hosting nonlocal spin and charge currents, with the nonlocal up and down cur-rents ( Iσ
+> R) indicated by horizontal red and blue arrows. The left lead is subjected to a bias voltage VL, while the finite region N2is gated by VG. The superconducting AM is of fi-nite length dsc .Bottom: Energy dispersions in each region of the junction, with the shaded regions indicating the par-tially gapped energy windows in the superconducting AM. (b) Non-local current as a function of eV L, while the spin polar-ization PR(eV L) is shown in the right yaxis. The yellow and red shaded areas indicate gapped and fully gapless regions in the superconducting AM, respectively, while the white re-gion between them corresponds to the partially gapped energy windows. (c-e) Spin polarization, spin, and charge quality factor as functions of eV Lfor different gate voltages at fixed
+> d= 5 a. (f-h) The same as in (c-e) but for different dat fixed
+> eV G= 0 .5∆. Parameters: dsc = 500 a, while the rest is the same as in Fig. 2.
+
+(S) conductances: GC(S) R = G↑ 
+
+> R
+
+±G↓
+
+> R
+
+, and the correspond-ing nonlocal currents IC(S) R = I↑ 
+
+> R
+
+± I↓
+
+> R
+
+. Furthermore, the nonlocal transport is characterized by the spin polariza-tion PR(eV L) and the charge (spin) nonreciprocal quality factor QC(S) R (eV L) in N R, defined as in Eqs. (11) and (12) but with the currents given by Eq. (13). With the above considerations, we obtain the nonlocal spin and charge currents and show them in Fig. 5(b) as functions of eV L at eV G = ∆ /2; to complement, we also present the spin-resolved components Iσ 
+
+> R
+
+and the cur-rent spin polarization PR. Although the nonlocal cur-rents are weak, the spin-resolved nonlocal currents de-velop distinct values I↑
+
+> R
+
+̸ = I↓
+
+> R
+
+. This gives rise to a fi-nite spin current ISR and thereby to a finite spin polariza-tion PR within the gapped regime |eV L| < ∆− shown in 9the inset of Fig. 5(b). Remarkably, at |eV L| = ∆ −, one spin component is almost negligible while the other re-mains measurable, resulting in perfect spin polarization 
+
+PR(±∆−) = ∓1. This can be attributed to the intrinsic spin-split Fermi surface of the superconducting AM, in-stead of the gating effect. More specifically, at eV L = ∆ −,only the corresponding transverse modes contribute to transport since ∆ − occurs at θk = 0 ( θk = ±π/ 2) for the spin-↓ (spin-↑) subband [see Fig. 1(b-d)]. However, the spin-↑ modes at θk = ±π/ 2 propagate parallel to the interface and therefore do not contribute to trans-mission, leaving only the spin-↓ channel active and yield-ing PR(+∆ −) = −1. For eV L = −∆−, the situation is reversed, giving PR(−∆−) = +1. Thus, this perfect non-local spin polarization is almost independent of the gate-induced momentum filtering, as confirmed in Fig. 5(c). We have verified that this occurs even without the N 2
+
+region, but then PR = ±1 is achieved at one point. For 
+
+|eV L| > ∆−, the distinction between the spin-resolved nonlocal currents remains, but their difference reduces because both spin channels are engaged in the transport, resulting in decreasing spin polarization [Fig. 5(b)]. As the spin polarization is almost independent to the gate voltage, the presence of N 2 becomes more apparent when increasing its length in Fig. 4(f) at small eV G. In fact, in-creasing the length of the N 2 region stabilizes the spin po-larization, leading to PR(eV L) = ∓1 over a range within the partially gapped regime ∆ − < |eV L| < ∆+, as shown in Fig. 4(f). This robust and perfect spin polarization of the nonlocal currents is absent in their local counterparts, see Fig. 3(d,h) for comparison. Although gating the N2 region weakly affects the spin polarization, it does play a crucial role in the nonlocal spin and charge nonreciprocities. We demonstrate this in Figs. 4(d,e) by presenting QC(S) R (eV L) for distinct val-ues of eV G at fixed short d, while in Figs. 4(g,h) we in-stead vary d at fixed eV G comparable to ∆. The first ob-servation is that overall QC(S) R (eV L)̸ = 0, implying that both nonlocal spin and charge currents exhibit a clear nonreciprocity. By tuning the gate voltage VG and the length d of the N 2 region, the spin quality factor is sig-nificantly enhanced once the bias exceeds the lower gap edge |eV L| > ∆−, as seen in Figs. 4(d,g). In this re-gard, while lowering eV G enhances QSR(eV L) [Fig. 4(d)], increasing d notably leads to perfect spin quality factor 
+
+QSR(eV L) = ±1 [Fig. 4(g)]. The increase of d also in-duces an oscillating structure before reaching constant perfect values; this structure comes from confinement ef-fects [102, 106–108] as a result of the finite length and lead to an oscillating conductance pattern. Furthermore, 
+
+eV G and d also permit control of the polarity of the spin nonreciprocity; this originates from the competition be-tween electron cotunneling and crossed Andreev reflec-tion processes, allowing the net current to change sign depending on the dominant process. Similar perfect non-reciprocal behavior and controllable polarity are observed for the charge current in Figs. 4(e,g). Compared to the local current shown in Figs. 2 and 3, the nonlocal trans-port directly reflects the intrinsic spin-split Fermi surface of the AM, resulting in robust and perfect spin polariza-tion. At the same time, both charge and spin nonrecip-rocal effects remain strong and can reach the ideal limit under suitable conditions for the gated region. 
+
+> CONCLUSIONS
+
+In conclusion, we have demonstrated that perfect spin and charge nonreciprocity is achieved in superconduct-ing altermagnet heterostructures due to the interplay be-tween altermagnetism and gate-controlled momentum fil-tering. Focusing on d-wave altermagnets proximitized by conventional s-wave superconductivity, we showed that a finite gated normal region acts as a momentum fil-ter that directionally selects transverse modes matching the momentum-dependent spin-split states in the super-conducting altermagnet. As a result, local and nonlocal spin currents exhibit nearly perfect and perfect, respec-tively, with highly tunable polarity, by means of tuning gate voltages and varying the length of the finite region. Moreover, we find that local and nonlocal charge cur-rents also develop a nonreciprocal behavior, with quality factors approaching perfect values. Beyond nonreciproc-ity, the spin and charge currents are sensitive to varia-tions of the altermagnetic field, a functional dependence that helps identify the strength and type of the altermag-netism. Given that similar device architectures have been realized in ferromagnet-superconductor hybrids [64], our proposal is experimentally accessible. Candidate plat-forms include d-wave altermagnets such as RuO 2 films [109], as well as systems hosting even-parity unconven-tional magnetism proximitized by s-wave superconduc-tors [1, 33, 34], including In-MnTe [110], Co 1/4NbSe 2
+
+[111], In-CrSb [49], and noncollinear altermagnets such as Mn 3Pt/Nb heterostructures [112, 113]. Our results establish a mechanism for generating nonreciprocal su-perconducting spin transport without net magnetization or external magnetic fields, providing a practical route toward electrically controlled superconducting spintronic devices based on altermagnets. 
+
+> METHODS
+
+In this section, we present the calculation of the spin-resolved local and nonlocal currents defined in Eqs. (6) and (13), respectively. These currents are obtained from the corresponding spectral conductances, Eqs. (7) and (14), which are expressed in terms of scattering coef-ficients. For the local current, these include the spin-resolved normal and Andreev reflection probabilities Rσ
+
+> N
+
+and Rσ
+
+> A
+
+, while for the nonlocal current they include electron–electron cotunneling and crossed Andreev reflec-tion processes, characterized by T σe and T σh . The scat-tering coefficients are computed numerically using the lattice Green’s-function method [82]. In the following, 10 we detail the implementation of this approach for the NL-N 2-S junction shown in Fig. 1(a), starting from the construction of the tight-binding Hamiltonian. 
+
+> Tight-binding Hamiltonian of the junction in Fig. 1(a)
+
+The N L-N 2-S junction is modulated by the Hamilto-nian 
+
+HJ =
+
+
+
+HL TLN 0
+
+T † 
+
+> LN
+
+HN TNS 
+
+0 T † 
+
+> NS
+
+HS
+
+ , (16) where HL, HN, and HS describe the left normal-metal lead (N L), the central gated region (N 2), and the right lead of d-wave altermagnets with s-wave superconduc-tivity, respectively. The off-diagonal blocks TLN and TNS 
+
+denote the N L-N 2 and N 2-S couplings, respectively. We first construct the superconducting block HS. Since the junction is oriented along the x direction, translational symmetry along y is preserved, and ky remains a good quantum number. Discretizing Eq. (1) along x direction, we obtain 
+
+HS =
+
+
+
+h0(ky ) hx(ky ) 0 · · · 
+
+h†
+
+> x
+
+(ky ) h0(ky ) hx(ky ) · · · 
+
+0 h†
+
+> x
+
+(ky ) . . . . . .... ... . . . . . .
+
+ , (17) which is an infinite-dimensional matrix with elements 
+
+h0(ky ) = (4 t − μ)τz σ0 − ∆τy σy
+
+−2[ tτ z σ0 − J cos(2 θJ )τz σz ]cos( ky ), (18) 
+
+hx(ky ) = −tτ z σ0 − J cos(2 θJ )τz σz
+
++iJ sin(2 θJ ) sin( ky ). (19) Here σj (τj ) is the j-th Pauli matrix in spin (Nambu) space, t = ℏ2/(2 ma 2) is the nearest-neighbor hopping amplitude, and a is the lattice constant. Throughout this work, we set a = 1 and t = 1 as the units of length and energy. Eqs. (18) and (19) are obtained by Fourier transforming Eq. (1) after substituting ak i → sin ak i and (ak i)2 → 2(1 − cos ak i) ( i = x, y ). The normal-metal Hamiltonian HL follows from Eq. (17) by setting J =∆ = 0, which gives 
+
+HL =
+
+
+
+. . . . . . ... .... . . . . . hL,x (ky ) 0
+
+· · · h†
+
+> L,x
+
+(ky ) hL,0(ky ) hL,x (ky )
+
+· · · 0 h†
+
+> L,x
+
+(ky ) hL,0(ky )
+
+ , (20) with 
+
+hL,0(ky ) = (4 t − μ)τz σ0 − 2t cos( ky )τz σ0, (21) 
+
+hL,x (ky ) = −tτ z σ0. (22) We assume an identical chemical potential μ and hopping strength in the normal and superconducting leads. Then, the central scattering region of length d is described by 
+
+HN =
+
+
+
+hN,0(ky ) hN,x (ky ) 0 · · · 
+
+h†
+
+> N,x
+
+(ky ) . . . . . . 00 . . . hN,0(ky ) hN,x (ky )
+
+· · · 0 h†
+
+> N,x
+
+(ky ) hN,0(ky )
+
+ , (23) with 
+
+hN,0(ky ) = (4 t − eV G)τz σ0 − 2t cos( ky )τz σ0, (24) 
+
+hN,x (ky ) = hL,x (ky ). (25) where the gate voltage eV G plays the same role as the chemical potential, shifting the bands. The N L-N 2 cou-pling in modulated by 
+
+TLN = ( tc/t )
+
+
+
+... ... · · · 
+
+0 0 · · · 
+
+hL,x (ky ) 0 · · · 
+
+ , (26) and the N 2-S coupling is 
+
+TNS = ( tc/t )
+
+
+
+... ... · · · 
+
+0 0 · · · 
+
+hN,x (ky ) 0 · · · 
+
+ , (27) where tc is the interface coupling strength. The lim-its tc/t = 1 and tc/t ≪ 1 correspond to ballistic and tunneling transport regimes, respectively. In Eq. 16, HL
+
+and HS describe semi-infinite leads, whereas HN has a finite dimension 4 d × 4d, where the factor 4 accounts for the spin and Nambu degrees of freedom. More-over, we assume that the hopping amplitude and chem-ical potential are identical in N L and S regions. Con-sequently, scattering arises solely from (i) Fermi-surface mismatch in N 2 induced by gating eV G, and (ii) the inter-face transparency controlled by the tunneling parameter 
+
+tc/t , where tc/t = 1 ( tc/t ≪ 1) corresponds to the ballis-tic (tunneling) transport regime. 
+
+> Scattering coefficients
+
+After constructing the junction Hamiltonian [Eq. (16)], the scattering matrix can be is obtained using the lattice Green’s function technique [114]. Employing the Fisher-Lee relation [115], the scattering matrix of the junction reads [84–86, 116, 117] 11 
+
+S(σ,α ),(σ′,β ) 
+
+> q,p
+
+(E, k y ) = −δp,q δα,β δσ,σ ′ + i[Γ σ,α q (ky )] 1/2G(σ,α ),(σ′,β ) 
+
+> q,p
+
+(ky )[Γ σ′,β p (ky )] 1/2. (28) Here α, β ∈ { e, h } label electron and hole sectors with spin σ, σ ′, and p, q ∈ {L, S} denote the N L and su-perconducting leads, respectively. The matrix element 
+
+S(σ,α ),(σ′,β ) 
+
+> q,p
+
+(E, k y ) represents the scattering amplitude for an incident quasiparticle of type ( σ′, β ) from lead 
+
+p being scattered into ( σ, α ) in lead q. The linewidth function is defined as Γ p(ky ) = i[Σ rp(ky ) − Σap (ky )], where Σr/a p (ky ) is the retarded/advanced self-energy due to cou-pling to lead p, calculated numerically via the recursive method [79–81]. The retarded Green’s function of the scattering region is 
+
+Gr (E, k y ) = [ E − HN − Σr
+
+> L
+
+(ky ) − Σr
+
+> S
+
+(ky )] −1. (29) The normal- and Andreev-reflection probabilities enter-ing the conductance formulas in the main text are then obtained as 
+
+Rσ
+
+> N
+
+(E, k y ) = Tr 
+
+h
+
+S(σ,e ),(σ,e )† 
+
+> L,L
+
+S(σ,e ),(σ,e )L,L
+
+i
+
+, (30) 
+
+Rσ
+
+> A
+
+(E, k y ) = Tr 
+
+h
+
+S(¯ σ,h ),(σ,e )† 
+
+> L,L
+
+S(¯ σ,h ),(σ,e )L,L
+
+i
+
+, (31) where ¯ σ = −σ. Eqs. (30) and (31) describe the probabil-ities of an incident electron reflected as a backscattering electron with equal spin and Andreev reflected into an opposite-spin hole, injecting Cooper pairs into the super-conductors, respectively. Then, by substituting Eqs. (30) and (31) into Eq. (8), the spin-resolved spectral conduc-tance [Eq. (7)], and subsequently the current [Eq. (6)] are obtained. 
+
+Calculation of the nonlocal current in Fig. 4(a) 
+
+Next, we present the details of the nonlocal current flowing in the setup given in Fig. 4(a). The nonlocal current defined in Eq. (13) can be obtained following a procedure analogous to the above-mentionsed local case. The Hamiltonian describing the junction in Fig. 4(a) re-tains the block-diagonal structure of Eq. (16), with two key modifications: First, the superconducting region is described by a 4 dS × 4dS matrix, where dS denotes the length of the superconducting altermagnets. Sec-ond, an additional normal lead N R is attached to the right of the superconducting region, described by a semi-infinite tight-binding Hamiltonian identical to that of N L
+
+[Eq. (20)]. Within the Fisher-Lee formalism [Eq. (28)], the lead indices are now extended to p, q ∈ { L, R} to ac-count for transport between the two normal leads. The spin-resolved electron-electron cotunneling and crossed Andreev reflection probabilities are then given by 
+
+T σe (E, k y ) = Tr 
+
+h
+
+S(σ,e ),(σ,e )† 
+
+> R,L
+
+S(σ,e ),(σ,e )R,L
+
+i
+
+, (32) 
+
+T σh (E, k y ) = Tr 
+
+h
+
+S(¯ σ,h ),(σ,e )† 
+
+> R,L
+
+S(¯ σ,h ),(σ,e )R,L
+
+i
+
+, (33) respectively. Substituting Eqs. (32) and (33) into Eq. (15), the nonlocal conductance is obtained, and the corresponding nonlocal current follows from Eq. (13). 
+
+DATA AVAILABILITY 
+
+The data supporting the findings of this study are available from the corresponding authors upon reason-able request. 
+
+ACKNOWLEDGEMENTS 
+
+P. H. F. thanks the support from W. X.. P. H. F. and L. C. acknowledge financial support from the Fon-dazione Cariplo under the grant 2023-2594. J.-F. L. ac-knowledges financial support from the National Natural Science Foundation of China (Grant No. 12174077). J. C. acknowledges financial support from the Swedish Re-search Council (Vetenskapsr˚ adet Grant No. 2021-04121) and from the Olle Engkvist Foundation (Grant No. 243-1026). 
+
+AUTHOR CONTRIBUTIONS 
+
+P.-H. F. and J. C. conceived the idea. P.-H. F. carried out the analytical and numerical calculations, made the figures, and prepared the manuscript. J.-F. L. provided calculation resources, valuable insights, and contributed to the analysis and interpretation of the results. L. C. and J. C. supervised the project, contributed to the in-terpretation of results, and helped write the final version of the manuscript. All authors discussed the results and contributed to the final version of the manuscript. 
+
+COMPETING INTERESTS 
+
+The authors declare no competing interests. 
+
+[1] Y. Fukaya, B. Lu, K. Yada, Y. Tanaka, and J. Cayao, Superconducting phenomena in systems with unconven-tional magnets, J. Phys.: Condens. Matter 37 , 313003 12 
+
+(2025). [2] Z. Liu, H. Hu, and X.-J. Liu, Altermagnetism and superconductivity: A short historical review, arXiv , 2510.09170 (2025). [3] M. Brando, D. Belitz, F. M. Grosche, and T. R. Kirk-patrick, Metallic quantum ferromagnets, Rev. Mod. Phys. 88 , 025006 (2016). [4] P. Huang, P. Zhang, S. Xu, H. Wang, X. Zhang, and H. Zhang, Recent advances in two-dimensional ferro-magnetism: materials synthesis, physical properties and device applications, Nanoscale 12 , 2309 (2020). [5] A. Hirohata, D. C. Lloyd, T. Kubota, T. Seki, K. Takanashi, H. Sukegawa, Z. Wen, S. Mitani, and H. Koizumi, Antiferromagnetic films and their applica-tions, IEEE Access 11 , 117443 (2023). [6] Y. Noda, K. Ohno, and S. Nakamura, Momentum-dependent band spin splitting in semiconducting MnO 2:a density functional calculation, Phys. Chem. Chem. Phys. 18 , 13294 (2016). [7] M. Naka, S. Hayami, H. Kusunose, Y. Yanagi, Y. Mo-tome, and H. Seo, Spin current generation in organic antiferromagnets, Nat. Commun. 10 , 4305 (2019). [8] S. Hayami, Y. Yanagi, and H. Kusunose, Momentum-dependent spin splitting by collinear antiferromagnetic ordering, J. Phys. Soc. Jpn. 88 , 123702 (2019). [9] K.-H. Ahn, A. Hariki, K.-W. Lee, and J. Kuneˇ s, Anti-ferromagnetism in RuO 2 as d-wave Pomeranchuk insta-bility, Phys. Rev. B 99 , 184432 (2019). [10] L.-D. Yuan, Z. Wang, J.-W. Luo, E. I. Rashba, and A. Zunger, Giant momentum-dependent spin splitting in centrosymmetric low-Z antiferromagnets, Phys. Rev. B 102 , 014422 (2020). [11] L. ˇSmejkal, R. Gonz´ alez-Hern´ andez, T. Jungwirth, and J. Sinova, Crystal time-reversal symmetry breaking and spontaneous Hall effect in collinear antiferromagnets, Sci. Adv. 6, eaaz8809 (2020). [12] M. Naka, S. Hayami, H. Kusunose, Y. Yanagi, Y. Mo-tome, and H. Seo, Anomalous Hall effect in κ-type organic antiferromagnets, Phys. Rev. B 102 , 075112 (2020). [13] L.-D. Yuan, Z. Wang, J.-W. Luo, and A. Zunger, Prediction of low-Z collinear and noncollinear antifer-romagnetic compounds having momentum-dependent spin splitting even without spin-orbit coupling, Phys. Rev. Mater. 5, 014409 (2021). [14] L. ˇSmejkal, J. Sinova, and T. Jungwirth, Beyond con-ventional ferromagnetism and antiferromagnetism: Aphase with nonrelativistic spin and crystal rotation sym-metry, Phys. Rev. X 12 , 031042 (2022). [15] L. ˇSmejkal, J. Sinova, and T. Jungwirth, Emerging re-search landscape of altermagnetism, Phys. Rev. X 12 ,040501 (2022). [16] I. Mazin, Editorial: Altermagnetism—a new punch line of fundamental magnetism, Phys. Rev. X 12 , 040002 (2022). [17] S.-B. Zhang, L.-H. Hu, and T. Neupert, Finite-momentum Cooper pairing in proximitized altermag-nets, Nat. Commun. 15 , 1801 (2024). [18] J. A. Ouassou, A. Brataas, and J. Linder, dc Joseph-son effect in altermagnets, Phys. Rev. Lett. 131 , 076003 (2023). [19] G. Z. Yang, Z.-T. Sun, Y.-M. Xie, and K. Law, Topological altermagnetic Josephson junctions, arXiv:2502.20283 (2025). [20] B. Lu, K. Maeda, H. Ito, K. Yada, and Y. Tanaka, φ
+
+Josephson junction induced by altermagnetism, Phys. Rev. Lett. 133 , 226002 (2024). [21] Q. Cheng and Q.-F. Sun, Orientation-dependent Josephson effect in spin-singlet superconductor/altermagnet/spin-triplet supercon-ductor junctions, Phys. Rev. B 109 , 024517 (2024). [22] Y. Fukaya, K. Maeda, K. Yada, J. Cayao, Y. Tanaka, and B. Lu, Josephson effect and odd-frequency pairing in superconducting junctions with unconventional mag-nets, Phys. Rev. B 111 , 064502 (2025). [23] H.-P. Sun, S.-B. Zhang, C.-A. Li, and B. Trauzettel, Tunable second harmonic in altermagnetic Josephson junctions, Phys. Rev. B 111 , 165406 (2025). [24] W. Zhao, Y. Fukaya, P. Burset, J. Cayao, Y. Tanaka, and B. Lu, Orientation-dependent transport in junc-tions formed by d-wave altermagnets and d-wave su-perconductors, Phys. Rev. B 111 , 184515 (2025). [25] M. Alipourzadeh and Y. Hajati, Andreev bound states and supercurrent in an unconventional superconductor-altermagnet Josephson junction, Phys. Rev. B 111 ,214515 (2025). [26] A. Pal, D. Mondal, T. Nag, and A. Saha, Josephson current signature of Floquet Majorana and topological accidental zero modes in altermagnet heterostructures, Phys. Rev. B 112 , L201408 (2025). [27] K. Maeda, Y. Fukaya, K. Yada, B. Lu, Y. Tanaka, and J. Cayao, Classification of pair symmetries in supercon-ductors with unconventional magnetism, Phys. Rev. B 
+
+111 , 144508 (2025). [28] D. Chakraborty and A. M. Black-Schaffer, Con-straints on superconducting pairing in altermagnets, arXiv:2408.03999 (2024). [29] M. Khodas, S. Mu, I. I. Mazin, and K. D. Belashchenko, Tuning of altermagnetism by strain, arXiv:2506.06257 (2025). [30] X. Feng and Z. Zhang, Superconducting order parame-ters in spin space groups: Methodology and application, Phys. Rev. B 111 , 054520 (2025). [31] K. Parshukov and A. P. Schnyder, Exotic superconduct-ing states in altermagnets, arXiv:2507.10700 (2025). [32] I. I. Mazin, Notes on altermagnetism and superconduc-tivity, AAPPS Bull. 35 , 18 (2025). [33] P.-H. Fu, S. Mondal, J.-F. Liu, and J. Cayao, Light-induced Floquet spin-triplet Cooper pairs in unconven-tional magnets, SciPost Phys. 20 , 059 (2026). [34] P.-H. Fu, S. Mondal, J.-F. Liu, Y. Tanaka, and J. Cayao, Floquet engineering spin triplet states in unconventional magnets, Phys. Rev. Lett. 136 , 066703 (2026). [35] T. Yokoyama, Floquet engineering triplet superconduc-tivity in superconductors with spin-orbit coupling or al-termagnetism, Phys. Rev. B 112 , 024512 (2025). [36] K. Mukasa and Y. Masaki, Finite-momentum su-perconductivity in two-dimensional altermagnets with a Rashba-type spin-orbit coupling, arXiv:2409.08972 (2025). [37] N. Heinsdorf and M. Franz, Proximitizing altermagnets with conventional superconductors, arXiv:2509.03774 (2025). [38] K. Monkman, J. Weng, N. Heinsdorf, A. Nocera, and M. Franz, Persistent spin currents in superconducting altermagnets, arXiv:2507.22139 (2025). [39] Q. Cheng, Y. Mao, and Q.-F. Sun, Field-free Josephson diode effect in altermagnet/normal metal/altermagnet 13 
+
+junctions, Phys. Rev. B 110 , 014518 (2024). [40] G. Sim and J. Knolle, Pair density waves and super-current diode effect in altermagnets, Phys. Rev. B 112 ,L020502 (2025). [41] S. Banerjee and M. S. Scheurer, Altermagnetic super-conducting diode effect, Phys. Rev. B 110 , 024503 (2024). [42] Y. Jiang, H.-L. Liu, and J. Wang, Josephson diode effect in altermagnet-based s-wave superconductor junction, Chinese Phys. B 34 , 107803 (2025). [43] D. Chakraborty and A. M. Black-Schaffer, Perfect su-perconducting diode effect in altermagnets, Phys. Rev. Lett. 135 , 026001 (2025). [44] L. Sharma and M. Thakurathi, Tunable Josephson diode effect in singlet superconductor-altermagnet-triplet superconductor junctions, Phys. Rev. B 112 ,104506 (2025). [45] D. Debnath, A. Saha, and P. Dutta, Spin-polarization and diode effect in thermoelectric current through altermagnet-based superconductor heterostructures, arXiv:2509.12198 (2025). [46] S. V. S. Sai Ruthvik and T. Nag, Field-free diode effects in one-dimensional superconductor: a complex inter-play between Fulde-Ferrell pairing and altermagnetism, arXiv:2512.01415 (2025). [47] L. Sharma, B. Ghimire, and M. Thakurathi, p-wave magnet driven field-free Josephson diode effect, arXiv:2602.16677 (2026). [48] D. Debnath, A. Saha, and P. Dutta, Spin polar-ization and diode effect in thermoelectric current through altermagnet-based superconductor heterostruc-tures, Phys. Rev. B 113 , 104508 (2026). [49] V. D. Esin, D. Y. Kazmin, Y. S. Barash, A. V. Timo-nina, N. N. Kolesnikov, and E. V. Deviatov, Josephson diode and spin-valve effects on the surface of altermag-net CrSb, arXiv:2602.08766 (2026). [50] S. Mondal and J. Cayao, Spin-polarized andreev molecules and anomalous nonlocal Josephson effects in altermagnetic junctions, arXiv:2603.04954 (2026). [51] D. Shaffer and A. Levchenko, Theories of superconduct-ing diode effects, arXiv:2510.25864 (2025). [52] N. Nagaosa and Y. Yanase, Nonreciprocal transport and optical phenomena in quantum materials, Annu. Rev. Condens. Matter Phys. 15 , 63 (2024). [53] Y. Tokura and N. Nagaosa, Nonreciprocal responses from non-centrosymmetric quantum materials, Nat. Commun. 9, 3740 (2018). [54] M. Nadeem, M. Fuhrer, and X. Wang, The supercon-ducting diode effect, Nat. Rev. Phys. 5, 558 (2023). [55] R. Wakatsuki, Y. Saito, S. Hoshino, Y. M. Itahashi, T. Ideue, M. Ezawa, Y. Iwasa, and N. Nagaosa, Nonre-ciprocal charge transport in noncentrosymmetric super-conductors, Sci. Adv. 3, e1602390 (2017). [56] A. I. Braginski, Superconductor electronics: Status and outlook, J. Supercond. Nov. Magn. 32 , 23 (2019). [57] D. Kochan and C. Strunk, Low-loss electronics with su-perconducting diodes: Superconducting devices, Nat. Electron. 8, 380 (2025). [58] A. I. Buzdin, Proximity effects in superconductor-ferromagnet heterostructures, Rev. Mod. Phys. 77 , 935 (2005). [59] J. Cayao, C. Triola, and A. M. Black-Schaffer, Odd-frequency superconducting pairing in one-dimensional systems, Eur. Phys. J. Special Topics 229 , 545 (2020). [60] Y. Tanaka, S. Tamura, and J. Cayao, Theory of Ma-jorana zero modes in unconventional superconductors, Prog. Theor. Exp. Phys. 2024 , 08C105 (2024). [61] L. ˇSmejkal, J. Sinova, and T. Jungwirth, Beyond con-ventional ferromagnetism and antiferromagnetism: Aphase with nonrelativistic spin and crystal rotation sym-metry, Phys. Rev. X 12 , 031042 (2022). [62] L. ˇSmejkal, J. Sinova, and T. Jungwirth, Emerging re-search landscape of altermagnetism, Phys. Rev. X 12 ,040501 (2022). [63] F. Giazotto and F. Taddei, Superconductors as spin sources for spintronics, Phys. Rev. B 77 , 132501 (2008). [64] E. Strambini, V. N. Golovach, G. De Simoni, J. S. Moodera, F. S. Bergeret, and F. Giazotto, Supercon-ducting spintronic tunnel diode, Nat. Commun. 13 ,2431 (2022). [65] C. I. L. de Araujo, P. Virtanen, M. Spies, C. Gonz´ alez-Orellana, S. Kerschbaumer, M. Ilyn, C. Rogero, T. T. Heikkil¨ a, F. Giazotto, and E. Strambini, Superconduct-ing spintronic heat engine, Nat. Commun. 15 , 4823 (2024). [66] F. Giazotto, P. Solinas, A. Braggio, and F. S. Bergeret, Ferromagnetic-insulator-based superconducting junc-tions as sensitive electron thermometers, Phys. Rev. Appl. 4, 044016 (2015). [67] Z. Geng, A. Hijano, S. Ili´ c, M. Ilyn, I. J. Maasilta, A. Monfardini, M. Spies, E. Strambini, P. Virta-nen, M. Calvo, C. Gonz´ alez-Orell´ ana, A. P. Helenius, S. Khorshidian, C. I. L. de Araujo, F. Levy-Bertrand, C. Rogero, F. Giazotto, F. S. Bergeret, and T. T. Heikkil¨ a, Superconductor-ferromagnet hybrids for non-reciprocal electronics and detectors, Supercond. Sci. Technol. 36 , 123001 (2023). [68] A. V. Putilov, S. V. Mironov, and A. I. Buzdin, Nonre-ciprocal electron transport in finite-size superconduc-tor/ferromagnet bilayers with strong spin-orbit cou-pling, Phys. Rev. B 109 , 014510 (2024). [69] F. Dom´ ınguez, J. Cayao, P. San-Jose, R. Aguado, A. L. Yeyati, and E. Prada, Zero-energy pinning from inter-actions in majorana nanowires, npj Quantum Mater. 2,13 (2017). [70] A. E. Antipov, A. Bargerbos, G. W. Winkler, B. Bauer, E. Rossi, and R. M. Lutchyn, Effects of gate-induced electric fields on semiconductor Majorana nanowires, Phys. Rev. X 8, 031041 (2018). [71] B. D. Woods, T. D. Stanescu, and S. Das Sarma, Effec-tive theory approach to the Schr¨ odinger-Poisson prob-lem in semiconductor Majorana devices, Phys. Rev. B 
+
+98 , 035428 (2018). [72] A. E. G. Mikkelsen, P. Kotetes, P. Krogstrup, and K. Flensberg, Hybridization at superconductor-semiconductor interfaces, Phys. Rev. X 8, 031040 (2018). [73] G. W. Winkler, A. E. Antipov, B. van Heck, A. A. Soluyanov, L. I. Glazman, M. Wimmer, and R. M. Lutchyn, Unified numerical approach to topological semiconductor-superconductor heterostructures, Phys. Rev. B 99 , 245408 (2019). [74] C.-X. Liu, S. Schuwalow, Y. Liu, K. Vilkelis, A. L. R. Manesco, P. Krogstrup, and M. Wimmer, Electronic properties of InAs/EuS/Al hybrid nanowires, Phys. Rev. B 104 , 014516 (2021). [75] G. B. Lesovik, A. L. Fauch´ ere, and G. Blatter, Non-linearity in normal-metal–superconductor transport: 14 
+
+Scattering-matrix approach, Phys. Rev. B 55 , 3146 (1997). [76] A. Melo, C.-X. Liu, P. Ro˙ zek, T. O. Rosdahl, and M. Wimmer, Conductance asymmetries in mesoscopic superconducting devices due to finite bias, SciPost Phys. 
+
+10 , 037 (2021). [77] S. Datta, Quantum Transport: Atom to Transistor (Cambridge University Press, Cambridge, 2005). [78] G. E. Blonder, M. Tinkham, and T. M. Klapwijk, Tran-sition from metallic to tunneling regimes in supercon-ducting microconstrictions: Excess current, charge im-balance, and supercurrent conversion, Phys. Rev. B 25 ,4515 (1982). [79] M. P. Lopez Sancho, J. M. Lopez Sancho, and J. Ru-bio, A nonorthogonal-basis calculation of the spectral density of surface states for the (100) and (110) faces of tungsten, J. Phys. F: Met. Phys. 15 , 851 (1985). [80] M. P. Lopez Sancho, J. M. Lopez Sancho, and J. Rubio, Quick iterative scheme for the calculation of transfer matrices: Application to Mo (100), J. Phys. F: Met. Phys. 14 , 1205 (1984). [81] M. P. Lopez Sancho, J. M. Lopez Sancho, and J. Rubio, Highly convergent schemes for the calculation of bulk and surface Green functions, J. Phys. F: Met. Phys. 15 ,851 (1985). [82] M. P. Anantram, M. S. Lundstrom, and D. E. Nikonov, Modeling of nanoscale devices, Proc. IEEE 96 , 1511 (2008). [83] P. San-Jose, J. Cayao, E. Prada, and R. Aguado, Multi-ple andreev reflection and critical current in topological superconducting nanowire junctions, New J. Phys. 15 ,075019 (2013). [84] P.-H. Fu, Y. Xu, X.-L. Yu, J.-F. Liu, and J. Wu, Elec-trically modulated Josephson junction of light-dressed topological insulators, Phys. Rev. B 105 , 064503 (2022). [85] P.-H. Fu, Y. Xu, S. A. Yang, C. H. Lee, Y. S. Ang, and J.-F. Liu, Field-effect Josephson diode via asymmetric spin-momentum locking states, Phys. Rev. Applied 21 ,054057 (2024). [86] P.-H. Fu, J.-F. Liu, and J. Wu, Transport properties of Majorana drumhead surface states in topological nodal-ring superconductors, Phys. Rev. B 102 , 075430 (2020). [87] K. Misaki and N. Nagaosa, Theory of the nonreciprocal Josephson effect, Phys. Rev. B 103 , 245302 (2021). [88] M. Davydova, S. Prembabu, and L. Fu, Universal Josephson diode effect, Sci. Adv. 8, eabo0309 (2022). [89] J. Cayao, N. Nagaosa, and Y. Tanaka, Enhancing the Josephson diode effect with Majorana bound states, Phys. Rev. B 109 , L081405 (2024). [90] S. Mondal, P.-H. Fu, and J. Cayao, Josephson diode effect with Andreev and Majorana bound states, Phys. Rev. B 112 , 144506 (2025). [91] L. Chirolli, A. Greco, A. Crippa, E. Strambini, M. Cuoco, L. Amico, and F. Giazotto, Diode effect in the Fraunhofer pattern of disordered planar Josephson junctions, Commun. Phys. 8, 483 (2025). [92] J. Cayao and M. Sato, Nonlocal josephson diode effect in minimal kitaev chains, Phys. Rev. Res. 8, 013326 (2026). [93] Y. Yerin and I. Askerzade, Superconducting diode effect in fractal superconductors: fractional-order ginzburg-landau theory for josephson junctions, arXiv:2601.02187 (2026). [94] M. Nadeem and X. Wang, Quantum landscape of su-perconducting diodes, arXiv:2604.14623 (2026). [95] T. Ideue, K. Hamamoto, S. Koshikawa, M. Ezawa, S. Shimizu, Y. Kaneko, Y. Tokura, N. Nagaosa, and Y. Iwasa, Bulk rectification effect in a polar semicon-ductor, Nat. Phys. 13 , 578 (2017). [96] T. O. Rosdahl, A. Vuik, M. Kjaergaard, and A. R. Akhmerov, Andreev rectifier: A nonlocal conductance signature of topological phase transitions, Phys. Rev. B 
+
+97 , 045421 (2018). [97] A. Zazunov, J. Rech, T. Jonckheere, B. Gr´ emaud, T. Martin, and R. Egger, Approaching ideal rectification in superconducting diodes through multiple andreev re-flections, arXiv:2307.14698 (2024). [98] P.-H. Fu, Y. Xu, J.-F. Liu, C. H. Lee, and Y. S. Ang, Im-plementation of a transverse Cooper-pair rectifier using an N-S junction, Phys. Rev. B 111 , L020507 (2025). [99] M.-K. L. Simon M. Sze, Semiconductor devices: physics and technology (Wiley, New York, 2012). [100] B. Lu, P. Mercebach, P. Burset, K. Yada, J. Cayao, Y. Tanaka, and Y. Fukaya, Engineering sub-gap states in superconductors by altermagnetism, arXiv:2508.03364v2 (2025). [101] Y. Fukaya, B. Lu, K. Yada, Y. Tanaka, and J. Cayao, Crossed surface flat bands in three-dimensional super-conducting altermagnets, arXiv:2510.14724 (2026). [102] P. Fu, Q. Lv, Y. Xu, J. Cayao, J. Liu, and X. Yu, All-electrically controlled spintronics in altermagnetic het-erostructures, npj Quantum Mater. 10 , 111 (2025). [103] M. P. Anantram and S. Datta, Current fluctuations in mesoscopic systems with Andreev scattering, Phys. Rev. B 53 , 16390 (1996). [104] S. G. den Hartog, C. M. A. Kapteyn, B. J. van Wees, T. M. Klapwijk, and G. Borghs, Transport in multiter-minal normal-superconductor devices: Reciprocity rela-tions, negative and nonlocal resistances, and reentrance of the proximity effect, Phys. Rev. Lett. 77 , 4954 (1996). [105] L. Pierattelli, F. Taddei, and A. Braggio, ∆ T -noise in multiterminal hybrid systems, Phys. Rev. Res. 7,023321 (2025). [106] J. Cayao, E. Prada, P. San-Jose, and R. Aguado, SNS junctions in nanowires with spin-orbit coupling: Role of confinement and helicity on the subgap spectrum, Phys. Rev. B 91 , 024514 (2015). [107] J. Cayao and A. M. Black-Schaffer, Distinguishing triv-ial and topological zero-energy states in long nanowire junctions, Phys. Rev. B 104 , L020501 (2021). [108] J. Cayao and P. Burset, Confinement-induced zero-bias peaks in conventional superconductor hybrids, Phys. Rev. B 104 , 134507 (2021). [109] A. J. Howzen, S. Gupta, G. Burnell, and N. Satchell, Transport spin polarization in RuO 2 films, arXiv:2601.19052 (2026). [110] D. Y. Kazmin, V. D. Esin, Y. S. Barash, A. V. Tim-onina, N. N. Kolesnikov, and E. V. Deviatov, Andreev reflection for MnTe altermagnet candidate, Physica B: Condensed Matter 696 , 416602 (2025). [111] A. De Vita, C. Bigi, D. Romanin, M. D. Watson, V. Polewczyk, M. Zonno, F. Bertran, M. B. Petersen, F. Motti, G. Vinai, M. Tuniz, F. Cilento, M. Cuoco, B. M. Andersen, A. Kreisel, L. J. D’Onofrio, O. J. Clark, M. T. Edmonds, C. Candelora, M. Xu, S. Cheng, A. LaFleur, T. Antonelli, G. Sangiovanni, L. Del Re, 15 
+
+I. Vobornik, J. Fujii, F. Miletto Granozio, A. Sambri, E. Di Gennaro, J. B. Jacobsen, H. Jacobsen, R. Ernstor-fer, I. Zeljkovic, Y. Hwang, M. Calandra, J. A. Miwa, and F. Mazzola, Optical switching in a layered alter-magnet, arXiv:2502.20010 (2025). [112] C. Schrade, S. Manna, and M. S. Scheurer, Altermag-netic superconducting diode effect from non-collinear compensated magnetism in Mn 3Pt, arXiv:2601.03348 (2026). [113] S. Sachin, M. S. Scheurer, C. Schrade, and S. Manna, Altermagnetic superconducting diode ef-fect in Mn 3Pt/Nb heterostructures, arXiv:2601.03366 (2026). [114] S. Datta, Electronic Transport in Mesoscopic Systems, reprinted edition ed., Cambridge Studies in Semicon-ductor Physics and Microelectronic Engineering (Cam-bridge University Press, Cambridge, UK, 1997). [115] D. S. Fisher and P. A. Lee, Relation between conduc-tivity and transmission matrix, Phys. Rev. B 23 , 6851 (1981). [116] Y. Xu, P.-H. Fu, L. Chen, J.-F. Liu, J. Wang, and H. Xu, Electrically modulated anomalous phase shift in Andreev bound states mediated by chiral Majorana modes, Phys. Rev. B 105 , 075409 (2022). [117] Y.-T. Zhang, Z. Hou, X. C. Xie, and Q.-F. Sun, Quan-tum perfect crossed Andreev reflection in top-gated quantum anomalous Hall insulator–superconductor junctions, Phys. Rev. B 95 , 245433 (2017).

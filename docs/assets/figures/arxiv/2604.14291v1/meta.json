@@ -1,0 +1,38 @@
+{
+  "version": 2,
+  "extractor": "pdffigures2",
+  "figures": [
+    {
+      "url": "assets/figures/arxiv/2604.14291v1/fig-001.webp",
+      "caption": "FIG. 6. Heatmap on the (k, q) Lattice. Results are shown for N = 5 and Γ/Ω = 0.5 (panel a) and Γ/Ω = 2 (panel b). Weights wkq are shown for each site on the (k, q) lattice, illustrating the spherical tensor modes contributing to a given eigenmode and their relative amplitudes. The eigenmode analyzed is marked by a red cross in Fig. 5 panels (a, c) respectively. Numerical labels are shown only for weights larger than 0.01. The quantum number q is defined with respect to a quantization axis rotated along the x direction, such that q ≡ qx.",
+      "page": 10,
+      "index": 1,
+      "width": 1054,
+      "height": 271
+    },
+    {
+      "url": "assets/figures/arxiv/2604.14291v1/fig-002.webp",
+      "caption": "FIG. 1. Schematic Representation of the Spherical Tensor Decomposition of the Density Operator. a) The density operator expanded into irreducible tensor multiplets of rank k, where each multiplet contains 2k + 1 components labeled by q = −k, . . . ,+k. b) The same decomposition may be viewed as a triangular lattice in operator space, where each node corresponds to a spherical tensor mode T k q . Orange horizontal arrows indicate intra-rank (q) mixing, while grey arrows indicate inter-rank (k) mixing.",
+      "page": 4,
+      "index": 2,
+      "width": 990,
+      "height": 272
+    },
+    {
+      "url": "assets/figures/arxiv/2604.14291v1/fig-003.webp",
+      "caption": "FIG. 5. Hybridization of Spherical Tensor Modes. Results are shown for N = 5 with Γ/Ω = 0.5 (panels a, b) and Γ/Ω = 2 (panels c, d). Panels (a, c) display the Liouvillian eigenvalues (filled circles) in the (Re(λ), Im(λ)) plane, where the color indicates the k-resolved participation ratio PRk of each eigenmode. The eigenmode analyzed in panels (b, d) is marked by a red cross. Panels (b, d) show the corresponding distribution of weights across rank sectors, wk, as a function of k. The bar heights and accompanying numerical labels indicate the total weight in each sector, with labels shown only for weights larger than 0.01.",
+      "page": 9,
+      "index": 3,
+      "width": 1059,
+      "height": 295
+    },
+    {
+      "url": "assets/figures/arxiv/2604.14291v1/fig-004.webp",
+      "caption": "FIG. 2. Operator Space Classification of Collective Spin Dynamics. When a weak symmetry is present, either q is conserved (with k mixing), leading to non-reciprocal inter-rank transport and pure relaxation, or k is conserved (with q mixing), yielding reciprocal intra-rank transport and collective precession. In the absence of weak symmetries, both k and q mix, leading to transport across the full operator space lattice and the emergence of the BTC phase. The pure relaxation regime need not be treated separately, as it is obtained as the Ω = 0 limit of the BTC model, which is analyzed here in full generality. Our discussion applies to non-trivial weak symmetries, i.e. symmetries that are not also strong symmetries.",
+      "page": 5,
+      "index": 4,
+      "width": 873,
+      "height": 236
+    }
+  ]
+}

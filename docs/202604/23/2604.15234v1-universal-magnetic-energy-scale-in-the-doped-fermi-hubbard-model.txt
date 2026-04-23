@@ -1,0 +1,3952 @@
+Title: Universal magnetic energy scale in the doped Fermi-Hubbard model
+
+URL Source: https://arxiv.org/pdf/2604.15234v1
+
+Published Time: Fri, 17 Apr 2026 01:16:08 GMT
+
+Number of Pages: 39
+
+Markdown Content:
+# Universal magnetic energy scale in the doped Fermi-Hubbard model 
+
+Radu Andrei, 1 Ivan Morera, 1 Jonathan B. Curtis, 1 Immanuel Bloch, 2, 3, 4 and Eugene Demler 1
+
+> 1
+
+Institute for Theoretical Physics, ETH Z¨ urich, 8093 Z¨ urich, Switzerland 
+
+> 2
+
+Max-Planck-Institut f¨ ur Quantenoptik, 85748 Garching, Germany 
+
+> 3
+
+Munich Center for Quantum Science and Technology, 80799 Munich, Germany 
+
+> 4
+
+Fakult¨ at f¨ ur Physik, Ludwig-Maximilians-Universit¨ at, 80799 Munich, Germany 
+
+(Dated: April 17, 2026) Magnetic correlations of doped Mott insulators hold the key to the unusual characteristics of many quantum materials. Recent experiments with ultracold atoms in optical lattices have pro-vided new information about the magnetic properties of the Fermi-Hubbard model on a square lattice. We demonstrate that recent measurements indicate that a single doping-dependent energy scale determines both static correlations and dynamical response of these systems. To understand these experimental findings, we employ a self-consistent formalism to describe the coupling between antiferromagnetic magnons and doped holes, and we uncover the emergence of a universal magnetic energy scale at finite doping, which we denote by J∗. We present the single- and two-magnon spec-tral properties at finite doping and discuss the appearance of a bimagnon peak in lattice-modulation spectroscopy, at frequencies set by J∗. Furthermore, we argue that this same energy scale sets the onset of pseudogap phenomena, leading to the hypothesis kB T ∗ = cJ ∗, with c an order one number. We identify another low-energy scale emerging from our analysis of magnetic excitations, and argue that it controls the stability of N´ eel order at the lowest temperatures, ultimately driving a tran-sition to an incommensurate spin-density-wave at finite doping. We discuss the relation between this low-energy scale and the nature of fermionic quasiparticles. Our analysis suggests that stability of the commensurate antiferromagentic phase at finite doping can be controlled experimentally by introducing additional quasiparticle broadening via disorder or low-frequency noise. 
+
+Introduction —In strongly correlated magnetic insula-tors, the motion of itinerant carriers is intimately coupled to collective magnetic excitations [1–3]. This coupling profoundly reshapes many-body correlations and is com-monly expected to underlie the enigmatic properties of strongly correlated electron systems, including the pseu-dogap and strange metal regimes of high-Tc cuprates [4– 8], heavy fermion systems [9, 10], layered organic ma-terials [11], and moir´ e systems [12, 13]. Whether these phenomena are material-specific or represent a universal outcome of doping a strongly correlated insulator remains a topic of intense debate. The Fermi-Hubbard model provides a minimal frame-work for describing doped magnetic insulators. While the dynamics of itinerant carriers in this model have been extensively studied, leading to the conclusion that strongly renormalized magnetic polarons emerge at low doping [14–31], the fate of magnetic correlations in the presence of doping remains unclear. The development of controllable and tunable quantum simulators [32–34], such as ultracold atoms in optical lattices, has opened new avenues for tackling this question. In particular, single-site resolution has enabled direct imaging of the spatial structure of magnetic polarons [35–37] and the evolution of many-body correlations upon doping [38– 41]. Combined with recent breakthroughs enabling ex-periments to reach cryogenic temperatures [42], these ad-vances provide a fresh perspective on the emergence of unconventional phases upon doping. Notably, two recent studies [43, 44] have investigated the onset of the pseu-dogap state and its connection to spin correlations [45], highlighting that a detailed understanding of magnetism in doped systems is essential for elucidating the nature of the pseudogap. In this work, we identify the emergence of a univer-sal magnetic energy scale in the doped Fermi–Hubbard model. Denoted by J∗, this scale decreases linearly with doping, and arises from the competition between anti-ferromagnetic superexchange and frustration induced by dopant motion. Additionally, it controls both the ther-modynamic and dynamical magnetic properties of the system, for all but the lowest frequencies. First, we show that J∗ controls the equilibrium long-distance decay of spin–spin correlation functions, recently explored in [43]. Second, we demonstrate that the same energy scale dic-tates the single- and two-magnon spectral functions, giv-ing rise to a universal dynamical response in lattice-modulation spectroscopy experiments [44]. Within our formalism, we thus establish that these two seemingly disparate probes—one accessing equilibrium properties and the other dynamical responses—are governed by the same underlying energy scale J∗. Moreover, we address the fate of long-range antiferromagnetic N´ eel order at ultra-low temperatures. Our framework reveals a sepa-ration of energy scales, whereby a distinct, low-energy 
+
+Jρ controls the stability of magnetic order at finite dop-ing. Unlike J∗, this latter scale depends sensitively on the quasiparticle nature of the dopants, with their life-time determining the critical doping at which N´ eel order melts. Finally, we argue that J∗ sets a natural frequency cutoff for optical Raman-type probes: below this scale, contributions from charge degrees of freedom are sup-
+
+> arXiv:2604.15234v1 [cond-mat.str-el] 16 Apr 2026
+
+2pressed, since hole motion inevitably disturbs the anti-ferromagnetic background through which it propagates. This leads to the hypothesis kB T ∗ = cJ ∗, and strongly suggests that short-range magnetic correlations play a crucial role in shaping the experimental signatures of the pseudogap regime. 
+
+> UNIVERSAL SCALING
+
+In the absence of doping, and in the strong-coupling regime U/t ≫ 1, the magnetic correlations and low-energy dynamics of the Hubbard model are essentially described by the superexchange energy J = 4 t2/U . On the one hand, the spin-stiffness ρ ∝ J governs the ther-modynamic properties of the system; for example, at any finite temperature T , the spin correlations exhibit an ex-ponential decay at long distances, characterized by the correlation length ξ(T ) ∝ e2πρ/T [46]. On the other hand, high-energy magnetic excitations also reside at frequen-cies set by J. These modes in turn govern the short-range magnetic correlations, which can be accessed by probes such as Raman [47, 48] or inelastic neutron [49–52] scat-tering. The former typically shows a bimagnon resonant absorption feature at frequency ω2M (0) ≈ 3.3J/ ℏ [53]. For an undoped system, it is indeed expected that all of these properties should be controlled by J, as it is the only energy scale in the problem. However, upon doping the Hubbard model, an a priori new scale t enters the low-energy description. In this work, we show that J and 
+
+t combine to yield an universal doping-dependent scale 
+
+J∗(δ), which governs the thermodynamic as well as dy-namical magnetic properties in the underdoped regime: 
+
+J∗(δ)
+
+J0
+
+= 1 − a U δ t , (1) with a an O(1) prefactor [54], and J0 ≡ (1 + r0)J the bare superexchange together with the so-called Oguchi correction r0 ∼ 0.157, which encodes the effect of quan-tum zero-point fluctuations on the single-magnon excita-tion spectrum in antiferromagnets [55]. For clarity, the principal magnetic energy scales discussed in this work are summarized in Table I of the SM. To demonstrate the emergence of this universal scale, we consider data from two recent quantum simulation ex-periments, probing different aspects of the doped Fermi-Hubbard model, see Fig. 1(a). The first one extracts the spin-stiffness ρ from the temperature dependence of the correlation length ξ(T ), and shows that ρ follows a linear dependence on doping [43]. In contrast, the sec-ond experiment uses lattice modulation spectroscopy to probe the dynamics of the Fermi-Hubbard model [44]. Interestingly, it reveals the presence of a resonant ab-sorption peak which closely mimics the bimagnon signa-ture in the undoped, Heisenberg case, but at a renor-malized frequency ω2M (δ). This is emphasized further                     
+
+> FIG. 1. Universal renormalization of magnetic energy scales as a function of doping. (a) Comparison between equilibrium measurements [43] of the finite-temperature spin stiffness ρ
+> (dashed line, error bounds shaded in grey) at U/t = 6 .5; dy-namical probing [44] of high-energy magnon dispersion via the bimagnon peak frequency ω2M (U/t = 7, circles); and theoretical calculation of J∗(U/t = 6 .5, squares). Scaling the doping axis by U/t leads to collapse of data, cf. Eq. (1). (b) Experimental Raman-type bimagnon spectra (blue-yellow colorplot, see Fig. 3a for measurement protocol), at U/t = 7, as a function of doping δand frequency ω/ω 2M (0), compared to theoretical calculations of J∗(δ)/J 0(white squares) and
+> T= 0 bimagnon Raman spectrum (dark red color; width in the frequency direction represents peak FWHM). Experi-mental data reproduced with permission, based on Fig. 3f of Ref. [43], and Fig. 3b of Ref. [44]; see SM for details.
+
+in Fig. 1(b), where we overlay the experimental absorp-tion spectrum from Ref. [44] with the theoretical predic-tions for the bimagnon peak position and spread derived in this manuscript. We remark that the redshift of the bimagnon peak upon doping is in close analogy to B1g
+
+Raman scattering in underdoped cuprates [56]. In order to meaningfully compare doping-induced modifications of the spin-stiffness ρ and bimagnon peak frequency ω2M – two energy scales which are vastly dif-ferent in the absence of doping – in Fig. 1(a) we divide out the zero-doping values, and plot ρ(δ)/ρ (0) as well as ω2M (δ)/ω 2M (0). Despite probing dramatically differ-ent frequency regimes, using different experimental pro-tocols, and even different values of U/t , we see that both data sets are excellently described by the same renor-malized superexchange interaction J∗(δ), which depends linearly on the scaled doping δeff = U/t × δ, cf. Eq. (1). We will now show that these phenomenological obser-vations can be explained using a single microscopic treat-ment, describing the self-consistent interactions between doped holes and magnons in the Fermi-Hubbard model. This allows us to predict without any free parameters the scaling of J∗(δ) in terms of δeff , finding excellent agreement with the two different experimental observa-tions. Furthermore, we use this theoretical analysis to make additional predictions for the evolution of magnetic properties of the Fermi-Hubbard model with doping, and discuss how to relate our findings to the general picture of the pseudogap regime. 3
+
+> THEORETICAL FRAMEWORK
+
+We consider the Fermi-Hubbard model on a 2D square lattice, given by the Hamiltonian ˆH = −t X
+
+> ⟨j,k ⟩,σ
+
+
+
+ˆc† 
+
+> jσ
+
+ˆckσ + h .c.
+
+
+
++ U X
+
+> j
+
+ˆnj↑ ˆnj↓, (2) where ˆ cjσ and ˆnjσ are the electron annihilation and number operators on site j, with spin σ ∈ {↑ , ↓} ;
+
+⟨j, k ⟩ denotes summation over nearest neighbors j and 
+
+k; the hopping amplitude is t, and U represents the on-site repulsion. We focus on the strongly correlated regime U/t ≫ 1, where the low-energy behavior of the Fermi–Hubbard model can be mapped onto the extended 
+
+t − J model, including the so-called three-site terms [57]. We employ a zero-temperature, real-time diagrammatic formalism combined with a Luttinger-Ward functional approach (see Fig. 2a), to develop a self-consistent de-scription of spin waves coupled to the motion of doped holes. Within this framework, we solve the Dyson equa-tion to obtain the single-particle properties, as well as the Bethe–Salpeter equation (BSE) to compute the two-magnon response probed in Raman-type and lattice-modulation spectroscopy experiments. For details of the mapping from the t − J model to the diagrammatic for-malism, including the auxiliary-particle representation and the unitary transformation to the staggered rotation frame, we refer the reader to the Supplementary Ma-terial. Additionally, to verify the applicability of our diagrammatic technique, we perform large-scale unbi-ased tensor network simulations for the zero-doping case (S = 1 /2 Heisenberg model). In particular, we study the dynamical bimagnon response to lattice modulations using a density-matrix renormalization group (DMRG) approach, combined with the time-dependent variational principle (TDVP). The excellent agreement between the two methods confirms the validity of our diagrammatic approach, see Fig. 3(b). 
+
+> KINETIC REDUCTION OF SPIN EXCHANGE
+
+The renormalization of the magnetic energy scale in Eq. (1) fundamentally arises from the competition be-tween antiferromagnetic superexchange at half-filling and the spin reshuffling caused by hole motion, in accordance with the Nagaoka–Thouless mechanism [58–60]. Inter-estingly, such a scaling was previously proposed in the context of kinetic magnetism [61, 62] at large U/t , and has been confirmed for the triangular lattice [36, 37, 63]. More recently, similar renormalizations have been ob-served in the dynamical spin structure factor near full polarization at intermediate U/t [64], as well as in ul-trafast dynamics following photodoping of an insulator [65]. Our work demonstrates that this renormalization                   
+
+> FIG. 2. Magnon spectrum renormalization due to dopants. (a) Luttinger-Ward functional Φ[ D, G ], magnon and holon self-energies Πand Σ respectively, and bimagnon Raman re-sponse Λ. (b) Typical single-magnon spectral function at
+> U/t =8 and finite doping δ=8.5%, together with the renormalized Heisenberg dispersion ωk= 2 J∗ϵk(dashed line). Note the excellent agreement at all but the lowest energies, as well as the significant spectral broadening at the top of the magnon band. (c) Detail of dispersion around the gapless Γ point, where deviations from J∗(dashed white line) are de-scribed by a distinct energy scale Jρ(solid green line). For clarity, white stars mark the location of the spectral function peak at each momentum.
+
+remains relevant all the way down to the regime U/t ∼ 7, where it universally governs the finite-doping magnetic properties. It is not obvious a priori that the magnon dispersion, in the presence of doped holes, should closely resemble that of the Heisenberg model at half filling – and, in particular, that it would be described by a single en-ergy scale J∗. For example, while the delocalization of charge carriers throughout the lattice generally sup-presses long-range antiferromagnetic order, it is estab-lished that robust short-range correlations persist even at finite doping. One might therefore expect more pro-nounced modifications of the low-energy magnon spec-trum, compared to the high-energy part. To investigate the shape of single-magnon spectra in the presence of dopants, we employ our self-consistent approach to cal-culate the transverse dynamical spin structure factor, 
+
+A(k, ω ) = Re 
+
+Z
+
+dt Θ( t)
+
+D ˆS+ 
+
+> k
+
+(t) ˆS− 
+
+> k
+
+(0) 
+
+E
+
+eiωt , (3) which is directly accessible in ultracold atom experi-ments, by using a two-photon Raman-type process [64]. In magnetically ordered states, A(k, ω ) is primarily given by the single-magnon spectral function, thus providing a direct probe for the dispersion of these excitations. Figure 2(b) depicts a typical finite-doping result for the one-magnon spectral function, along a 1D cut through the Brillouin zone. As emphasized in panel (c), a narrow region surrounding the gapless Γ and M points indeed exhibits a distinct behavior compared to the rest of the spectrum, which we will later analyze in detail. Remark-4ably, however, the majority of the magnon dispersion is well described by a single renormalized exchange scale 
+
+J∗, as highlighted in panel (b). In order to understand the origin of this apparently simple description, we must examine the spectral properties of doped holes. The dynamics of dopants in a quantum antiferromag-net have been the subject of extensive theoretical and numerical investigations [6–8, 14–31, 39–41, 45]. A key outcome of these studies — and of our approach (see Fig. 10 in the SM for representative spectral functions) — is that spin excitations dress a doped hole to form a magnetic polaron, whose dispersion exhibits minima at momenta ( ±π/ 2, ±π/ 2). Away from these points, the hole spectral function broadens substantially, reflecting processes in which the polaron decays to the aforemen-tioned minima via emission of magnons. At even higher energies, broad ‘string-like’ excitations appear across the entire Brillouin zone. The key takeaway is that, aside from the bottom of the polaron band, the hole spectral function is predominantly incoherent. This observation is essential for understanding the magnon spectrum renor-malization, as it motivates the consideration of a simpli-fied model based on purely incoherent holes, remarkably reproducing the qualitative scaling of Eq. (1). Here, we highlight the underlying physical mechanism, while full calculation details can be found in the SM. Within our self-consistent formalism, doped holes modify the magnon spectrum through an RPA self-energy correction, taking the form of a polarization bub-ble i R 
+
+> q,ϵ
+
+Gq(ϵ) Gk+q(ω + ϵ), see Fig. 2(a). For external momenta k and frequencies ω that are not too small, the two hole spectral functions entering the bubble are sufficiently shifted in energy such that their sharp, co-herent features do not overlap, since the polaron band-width is given by J and thus narrow; on the other hand, the incoherent parts of the hole spectral function extend over a broad range of frequencies ( ∼ 8t), yielding a dom-inant contribution to the polarization bubble which is only weakly dependent on k. To leading order in doping 
+
+δ, the bubble therefore scales as g(ω) × δ/t , with g(ω) a dimensionless function of order unity. Substituting this result into the magnon propagator shows that the net effect of the holes is to induce a renormalized exchange interaction, 
+
+J∗(ω) = Jδ − 2g(ω) × tδ. (4) Here, Jδ ≡ (1 − δ)2[1 + r(δ)] J encompasses both a trivial reduction (1 − δ)2 of the local magnetic moments upon doping, as well as the the finite-doping Oguchi correc-tion r(δ). Meanwhile, the second term captures the ki-netic renormalization of J∗ induced by the motion of the doped holes. We emphasize the close similarity of (4) to the typical Anderson-Shastry expression encountered in treatments of kinetic magnetism. For ω ≪ t, one may replace g(ω) by the positive constant g(0); the approxi-mation is reasonable even in the middle of the magnon              
+
+> FIG. 3. Quantum simulation of Raman scattering. (a) Lat-tice modulation protocol for d−wave spectroscopy experi-ments [44]. With respect to the standard square configura-tion, hosting an isotropic hopping amplitude t, the lattice is compressed in the xdirection and stretched along y; this yields a d-wave modulation of t, analogous to optical Ra-man experiments in the B1gchannel. (b) Theoretical Ra-man intensity of bimagnon (blue) and estimated charge back-ground (brown) contributions, at three different dopings. At half-filling, the peak position is in excellent agreement with DMRG+TDVP calculations (pink). See SM for computation details.
+
+spectrum. This immediately leads to a single effective exchange J∗, which obeys the universal scaling, Eq. (1) [66]. On the other hand, for ω ∼ t, relevant for the top of the magnon band, the main effect is that g(ω) acquires a substantial imaginary part, which leads to the consid-erable broadening visible in Fig. 2(b). While these ar-guments successfully capture the qualitative structure of the magnon spectra, they do not provide a controlled way to compute the value of g(0), or equivalently the prefac-tor a in Eq. (1). Quantitative predictions still require the full self-consistent solution of the coupled hole–magnon problem, which we achieve numerically. 
+
+> TWO-MAGNON RAMAN SCATTERING
+
+Having analyzed the behavior of single magnons in doped systems, we turn our attention to the two-magnon Raman scattering process [48], as well as its quantum simulation in ultracold atom systems. By modulating the hopping amplitude t with a d-wave spatial profile (Fig. 3a), the spin degrees of freedom are perturbed with the Loudon-Fleury operator [67], ˆHLF ∝ X
+
+> j
+
+⃗Sj · (⃗ Sj+ˆ y +⃗ Sj−ˆy −⃗ Sj+ˆ x −⃗ Sj−ˆx). (5) In the solid state, this modulation is typically realized by applying an external electric field in the context of Raman scattering, while in optical lattices the hopping amplitude can be directly controlled by adjusting the po-tential barrier between neighboring sites [44]. In both cases, the applied perturbation (5) creates local pairs of spin flips [48, 67], which makes bimagnon Raman scat-tering an invaluable tool for probing the dynamics of 5short-range magnetic correlations. Owing to the local nature of these excitation pairs, the interaction between magnons also plays a crucial role in determining the Ra-man spectrum. In undoped systems, the magnetic Ra-man signal can be understood as follows [53]: an applied perturbation at zero total momentum will create ( k, −k)magnon pairs. Since the single-magnon density of states is peaked at the top of the band (energy 2 J0), one may expect a sharp Raman peak at 4 J0; in fact, the attractive magnon-magnon interaction broadens the resonance, and redshifts it to 2 .9J0 ≃ 3.3J.Using a ladder approximation to the two-magnon BSE (Fig. 2a, see SM for details), we compute the spin contri-bution to Raman scattering intensity at arbitrary doping; typical curves are shown in Fig. 3(b). At zero doping, we benchmark the BSE result against DMRG+TDVP simu-lations and find excellent agreement in the peak position. Upon increasing δ, the bimagnon peak redshifts and loses spectral weight, the latter effect also being a consequence of the trivial spin depletion (1 − δ)2 introduced earlier. Finally, as highlighted in Fig. 1(b), the relative redshift of the bimagnon peak closely follows that of J∗, indi-cating that this dynamical observable is governed by the same universal energy scale that controls equilibrium spin probes. 
+
+> LONG-WAVELENGTH MAGNONS
+
+While the effect of dopants on high-energy magnons is dominated by the incoherent part of the hole spectral function, and is therefore largely insensitive to precise details of the magnetic polaron dispersion and lifetime, the situation is markedly different for low-energy magnon modes. Expanding the magnon self-energy Πk(ω) at low (k, ω ) yields an expression for the spin stiffness that dif-fers qualitatively from Eq. (4), 
+
+Jρ = p[Jδ − tA (δ)][ Jδ − tB (δ)] , (6) where Jδ is the same as in (4), and A, B > 0 are obtained from integrating the diagrammatic bubble i R 
+
+> ϵ
+
+G2
+
+> q
+
+(ϵ) over momentum, with certain q−dependent prefactors (see SM). In practice, we find that A ≪ B, implying that the long-wavelength spin stiffness – and, consequently, the stability of antiferromagnetic order at T = 0 – is con-trolled by the competition between Jδ and the kinetic term tB (δ). Crucially, because the hole bubble i R 
+
+> ϵ
+
+G2
+
+> q
+
+(ϵ)involves no relative shifts in frequency or momentum, the coefficient B(δ) is now directly sensitive to sharp features in the magnetic polaron dispersion. If the hole spectral function displays quasiparticle peaks at the dispersion minima, it can be shown that 
+
+B(δ) is proportional to the density of states at the Fermi level. Then, the AFM stability condition Jδ − tB (δ) > 0translates to a Stoner-type criterion [68], which is easily violated owing to the large effective mass of the magnetic polaron. Such a line of reasoning leads to the conclusion that, at any infinitesimal doping, AFM order is unsta-ble [68, 69] towards e.g. spin-spiral states. On the other hand, a number of theoretical and numerical studies have found a finite critical doping δAFM > 0 [27–29], which is also supported by experimental investigations [70]; the fate of long-range order in doped antiferromagnets has remained a controversial question. In order to clarify some of these disagreements, as well as to reflect experimental reality, we additionally introduce a polaron broadening ηF > 0 which makes its lifetime finite even at the bottom of the band. With this modification, the characteristic low-doping behavior 
+
+B(δ) ∝ δ/ √ηF emerges, which in turn stabilizes AFM order up to δAFM ∝ √ηF . Moreover, for dopings slightly below this critical value, we find Jρ ∝ √δAFM − δ. We also remark that, in our approach with U/t = 8, very small broadenings ηF /t ≃ 0.05 are sufficient to yield the typical values δAFM ≃ 4 − 5%. Regardless of whether [31, 71, 72] or not [73, 74] spectral function δ−peaks with finite weight Z > 0 arise from the idealized Fermi-Hubbard or t−J models, nonzero broadening is expected in any experimental setting, making ηF an important control parameter to consider. The consequences of having a distinct scale Jρ < J ∗
+
+for low-energy magnons are presented in the top part of Fig. 4. Panel (a) schematically depicts the expected tem-perature dependence of the spin-spin correlation length ξ,which in the 2D Heisenberg model obeys ln ξ ∝ J/T [46]. For the relatively high temperatures T ∼ J currently accessible in quantum simulators, we have seen that J∗
+
+is the only relevant energy scale; however, upon further cooling which should be accessible in the near future, we expect that the slope will tend to a lower value set by 
+
+Jρ. For example, with U/t = 8 and ηF /t ≃ 0.15 − 0.2, we expect that for doping levels δ ≃ 8 − 10%, the ra-tio Jρ/J ∗ ≃ 0.65 will be small enough to make the two energy scales experimentally distinguishable on temper-ature scales T /t ≃ 0.1 and below. As shown in Fig. 4(b), further control over the relation between J∗ and Jρ is offered by the broadening ηF ; by tuning the amount of static disorder present in ultracold atom arrays (e.g. from an optical speckle pattern), or the low-frequency noise, one could adjust the value of Jρ and even the stability of long-range AFM order. On the other hand, we remark that the high-temperature magnetic properties, governed by J∗, are completely insensitive to ηF .
+
+> INSTABILITY OF THE AFM PHASE TOWARDS INCOMMENSURATE ORDER
+
+For doping values beyond the stability threshold of AFM order, δ > δ AFM , we find no self-consistent solution for the hole and magnon propagators. This indicates an 6                                                            
+
+> FIG. 4. Implications of asecond magnetic energy scale
+> Jρ, and instability towards incommensurate magnetic order. (a) Schematic behavior of spin-spin correlation length versus inverse temperature, in the weakly-doped 2D Fermi-Hubbard model. At low enough temperatures, a crossover between
+> J∗and Jρbehaviors is expected. (b) Doping dependence of
+> J∗(blue) and Jρ(orange), at different values of the inverse polaronic lifetime ηF.While J∗is insensitive to ηFand de-pends linearly on doping, the stiffness Jρshows the character-istic √δAFM −δshape, with δAFM sensitive to ηF. The strik-ing similarity of ηF>0 cuts with the underdoped region of cuprate phase diagrams leads to the hypothesis that TN∝Jρ
+> while T∗∝J∗. (c) Estimated doping dependence of incom-mensuration kIC ≡ | (π, π )−˜Q|, for dopings δ > δ AFM beyond AFM instability, at six different values of ηF.(d) Doping dependence of magnetic energy scales J∗and Jρ, illustrated at ηF/t = 0 .1. Squares denote values extracted from self-consistent numerical solutions, lines are extrapolations based on Eqs. (1) and (6). Purple line represents the rate Γ IC of instability towards the incommensurate order.
+
+instability of the AFM state at wavevector Q = ( π, π ), signaling a doping-induced transition to an incommensu-rate phase characterized by a wavevector ˜Q. The goal of this section is to estimate, through the study of this instability, the doping dependence of ˜Q, as well as the typical energy (and thus, temperature) scale at which signatures of incommensurate magnetic order should be observable. To understand the commensurate-to-incommensurate (C-IC) magnetic transition qualitatively, we can extend the low-momentum expansion of Πk(ω) of the previous section to fourth order, yielding 
+
+ω2 
+
+> k
+
+= −A (δ − δAFM ) k2 + K k4, (7) where A and K are smooth, positive functions of doping. For dopings above the transition point, δ > δ AFM , the magnon spectrum exhibits an instability at small mo-menta; however, the quartic term stabilizes the disper-sion at larger k. This results in a characteristic wavevec-tor kIC ∝ √δ − δAFM at which the instability rate is maximal, Γ IC ≡ Im( ωkIC ) ∝ δ − δAFM . As the strongest instability dictates the new state towards which the sys-tem tends, we identify kIC as the difference between the new ordering wavevector ˜Q and the N´ eel one Q. We explicitly verified that the instability is always strongest for momenta parallel to a crystal axis, i.e. we obtain ˜Q = ( π ± kIC , π ) and respectively ( π, π ± kIC ). Further-more, the instability rate is proportional to the energy density difference between the unstable and stable phases [75–78], meaning that Γ IC is expected to set the temper-ature scale at which signatures of incommensurate order become experimentally visible. While the qualitative conclusions given by Eq. (7) are correct, we go beyond this approximation by expanding the magnon self-energy Π k(ω) to second order in fre-quency, and determining the magnon dispersion numeri-cally to all orders in k (see SM for details). In Fig. 4(c) and (d), we present the incommensurate wavevector kIC 
+
+and the instability rate Γ IC as functions of doping, re-spectively. The results of the full numerical solution are in qualitative agreement with the low-momentum expan-sion, supporting its validity. Additionally, we have ver-ified that by taking the clean limit ηF → 0 the (C-IC) transition point reaches zero doping, in agreement with previous zero-temperature calculations [79–88]. While our analysis focuses on the incommensurate magnetic properties above δAFM , the accompanying charge distri-bution and possible stripe formation are left as a topic for future studies. 
+
+> IMPLICATIONS FOR MAGNETIC RESPONSE IN THE PSEUDOGAP REGIME
+
+One puzzling feature of the pseudogap state is that its signatures are present in both charge and magnetic re-sponses, which raises numerous questions about the un-derlying mechanism. Here, we argue that the magnetic scale J∗ can govern responses to both of these seemingly disparate probes. On the one hand, the uniform spin susceptibility χ(T ) experimentally displays a maximum at the pseudogap temperature T ∗(δ). In the undoped case, the spin susceptibility of the 2D Heisenberg model is theoretically known to have a maximum, at a temper-ature given by kB T ∗ 
+
+> 0
+
+= cJ 0, with c ∼ O (1) [89–93]. Since we have argued that most of the magnon spectrum in the doped case is practically a scaled-down version of the Heisenberg one, we expect that the same maximum will be seen at finite doping, namely when kB T ∗(δ) = cJ ∗(δ). This hypothesis is strongly supported by the linear de-pendence of J∗ with δ, Eq. (1), which for U/t = 8 in-tercepts the doping axis at δ∗ = t/aU ∼ 20%, in good agreement with typical cuprate values [94]. Moreover, for layered materials, any interlayer exchange coupling 
+
+J⊥ ≪ Jρ will stabilize N´ eel order up to some finite 7temperature proportional to the in-plane spin stiffness, 
+
+TN ∝ Jρ. Comparing ηF > 0 cuts of Fig. 4(b) with the underdoped region of typical cuprate phase diagrams, we find excellent qualitative agreement. On the other hand, with regard to charge response, the typical signature of the pseudogap regime is spectral weight suppression at low frequency. In our approach, the kinetic term of the Hubbard model gets mapped at leading order to the hopping of a hole with the simulta-neous creation of a local magnon, ˆHkin → √2S t
+
+2
+
+X
+
+> n,δ
+
+hˆh† 
+
+> n+δ
+
+ˆhn (ˆbn+δ + ˆb†
+
+> n
+
+) + h .c.
+
+i
+
+. (8) In the momentum-space Hamiltonian, the matrix ele-ment for this process vanishes as the magnon momentum 
+
+q → 0, while the magnon density of states is moreover reduced at low energies. As hole hopping primarily oc-curs via the creation or annihilation of a short-wavelength magnon, one naturally obtains a lower energy cutoff for charge response on the order of J∗.To illustrate this mechanism, in Fig. 3(b) we estimate the charge background contribution to Raman scatter-ing, in the absence of vertex corrections (see SM for de-tails). While the hole bubble yields the expected flat re-sponse over a frequency window of approximately 8 t, con-volution with the additional magnon propagator indeed suppresses this weight below a few J∗. Similar mech-anisms should give rise to pseudogap signatures in the other probes sensitive to motion of charges, suggesting that J∗ may indeed govern a wide range of experimental observables in the pseudogap regime. 
+
+> CONCLUSIONS AND OUTLOOK
+
+Motivated by recent ultracold atom experiments ex-ploring the pseudogap phenomenology, we demonstrate that the doped Fermi–Hubbard model exhibits a uni-versal energy scale J∗ with a simple doping dependence (1), which governs both equilibrium and dynamical mag-netic responses. To elucidate the origin of this scale, we develop a diagrammatic framework based on the Lut-tinger–Ward functional and obtain self-consistent solu-tions of the coupled hole–magnon problem in the two-dimensional Fermi–Hubbard model. In addition, we pre-dict a secondary scale Jρ < J ∗, which controls the lowest-temperature physics and determines the stability of an-tiferromagnetic order at T = 0 against the formation of an incommensurate spin-density-wave state. We show that the critical doping δAFM for the commensurate-to-incommensurate transition is intimately linked to the magnetic polaron lifetime, providing a new tuning knob for the phase diagram of the Fermi-Hubbard model. Fi-nally, we argue that the magnetic susceptibility should exhibit a maximum at temperatures T ∗ ∝ J∗, suggest-ing that the pseudogap behavior arises from strong short-range antiferromagnetic correlations—a prediction that can be tested in near-term ultracold-atom experiments. 
+
+> ACKNOWLEDGMENTS
+
+The authors would like to acknowledge helpful discus-sions with Andrei Bernevig, Annabele Bohrdt, Petar Bo-jovi´ c, Thomas Chalopin, Tom Devereaux, Titus Franz, Antoine Georges, Markus Greiner, Alex G´ omez Sal-vador, Fabian Grusdt, Anant Kale, Lev Kendrick, Ehsan Khatami, Gil Refael, Duilio de Santis, Si Wang, and Aaron Young. RA, IM, JBC and ED acknowledge sup-port from the SNSF project 200021 212899, the Swiss State Secretariat for Education, Research and Innovation (contract number UeM019-1), the SNSF Sinergia grant CRSII–222792, NCCR SPIN, a National Centre of Com-petence in Research, funded by the Swiss National Sci-ence Foundation (grant number 225153).                                                
+
+> [1] A. Auerbach, Interacting electrons and quantum mag-netism , 1st ed., Graduate Texts in Contemporary Physics (Springer, New York, NY, 1998). [2] D. J. Scalapino, A common thread: The pairing inter-action for unconventional superconductors, Rev. Mod. Phys. 84 , 1383 (2012). [3] B. Keimer, S. A. Kivelson, M. R. Norman, S. Uchida, and J. Zaanen, From quantum matter to high-temperature superconductivity in copper oxides, Nature 518 ,179 (2015). [4] P. A. Lee, N. Nagaosa, and X.-G. Wen, Doping a mott in-sulator: Physics of high-temperature superconductivity, Rev. Mod. Phys. 78 , 17 (2006). [5] T. Timusk and B. Statt, The pseudogap in high-temperature superconductors: an experimental survey, Reports on Progress in Physics 62 , 61 (1999). [6] A. V. Chubukov and D. K. Morr, Electronic structure of underdoped cuprates, Physics Reports 288 , 355 (1997), cond-mat/9701196. [7] P. A. Lee and N. Nagaosa, Gauge theory of the normal state of high-Tc superconductors, Physical Review B 46 ,5621 (1992). [8] X.-G. Wen and P. A. Lee, Theory of Underdoped Cuprates, Physical Review Letters 76 , 503 (1996), cond-mat/9506065. [9] P. Gegenwart, Q. Si, and F. Steglich, Quantum criticality in heavy-fermion metals, Nature Physics 4, 186 (2008). [10] Q. Si and F. Steglich, Heavy fermions and quan-tum phase transitions, Science 329 ,1161 (2010), https://www.science.org/doi/pdf/10.1126/science.1191195. [11] B. J. Powell and R. H. McKenzie, Quantum frustration in organic mott insulators: from spin liquids to unconven-tional superconductors, Reports on Progress in Physics
+> 74 , 056501 (2011). [12] L. Balents, C. R. Dean, D. K. Efetov, and A. F. Young, Superconductivity and strong correlations in moir´ e flat bands, Nature Physics 16 , 725 (2020).
+
+8
+
+[13] E. Y. Andrei and A. H. MacDonald, Graphene bilayers with a twist, Nature Materials 19 , 1265 (2020). [14] E. L. N. L. N. Bulaevskii and D. I. Khomskii, A new type of auto-localized state of a conduction electron in an antiferromagnetic semiconductor, Zh. Eksp. Teor. Fiz. 
+
+54 , 1562 (1968). [15] W. F. Brinkman and T. M. Rice, Single-particle excita-tions in magnetic insulators, Phys. Rev. B 2, 1324 (1970). [16] S. A. Trugman, Interaction of holes in a hubbard antifer-romagnet and high-temperature superconductivity, Phys. Rev. B 37 , 1597 (1988). [17] S. Schmitt-Rink, C. M. Varma, and A. E. Ruckenstein, Spectral function of holes in a quantum antiferromagnet, Phys. Rev. Lett. 60 , 2793 (1988). [18] B. I. Shraiman and E. D. Siggia, Mobile vacancies in a quantum heisenberg antiferromagnet, Phys. Rev. Lett. 
+
+61 , 467 (1988). [19] S. Sachdev, Hole motion in a quantum n´ eel state, Phys. Rev. B 39 , 12232 (1989). [20] C. L. Kane, P. A. Lee, and N. Read, Motion of a single hole in a quantum antiferromagnet, Phys. Rev. B 39 ,6880 (1989). [21] E. Dagotto, A. Moreo, and T. Barnes, Hubbard model with one hole: Ground-state properties, Phys. Rev. B 
+
+40 , 6721 (1989). [22] S. A. Trugman, Spectral function of a hole in a hubbard antiferromagnet, Phys. Rev. B 41 , 892 (1990). [23] A. Auerbach and B. E. Larson, Small-polaron theory of doped antiferromagnets, Phys. Rev. Lett. 66 , 2262 (1991). [24] G. Martinez and P. Horsch, Spin polarons in the t-J model, Physical Review B 44 , 317 (1991). [25] Z. Liu and E. Manousakis, Spectral function of a hole in the t-j model, Phys. Rev. B 44 , 2414 (1991). [26] G. Martinez and P. Horsch, Spin polarons in the t-j model, Phys. Rev. B 44 , 317 (1991). [27] G. Khaliullin and P. Horsch, Doping dependence of long-range magnetic order in the t-J model, Physical Review B 47 , 463 (1993). [28] A. Sherman and M. Schreiber, Evolution of hole and magnon spectra of the two-dimensional t-J model with doping, Physical Review B 50 , 12887 (1994). [29] M. Vojta and K. W. Becker, Cumulant approach to weakly doped antiferromagnets, Physical Review B 54 ,15483 (1996), cond-mat/9609098. [30] F. Grusdt, M. K´ anasz-Nagy, A. Bohrdt, C. S. Chiu, G. Ji, M. Greiner, D. Greif, and E. Demler, Parton theory of magnetic polarons: Mesonic resonances and signatures in dynamics, Phys. Rev. X 8, 011046 (2018). [31] A. Bohrdt, E. Demler, F. Pollmann, M. Knap, and F. Grusdt, Parton theory of angle-resolved photoemis-sion spectroscopy spectra in antiferromagnetic mott in-sulators, Phys. Rev. B 102 , 035139 (2020). [32] I. Bloch, J. Dalibard, and S. Nascimb` ene, Quantum sim-ulations with ultracold quantum gases, Nat. Phys. 8, 267 (2012). [33] R. Blatt and C. F. Roos, Quantum simulations with trapped ions, Nat. Phys. 8, 277 (2012). [34] A. Browaeys and T. Lahaye, Many-body physics with individually controlled rydberg atoms, Nat. Phys. 16 , 132 (2020). [35] J. Koepsell, J. Vijayan, P. Sompet, F. Grusdt, T. A. Hilker, E. Demler, G. Salomon, I. Bloch, and C. Gross, Imaging magnetic polarons in the doped fermi–hubbard model, Nature 572 , 358 (2019). [36] M. L. Prichard, B. M. Spar, I. Morera, E. Demler, Z. Z. Yan, and W. S. Bakr, Directly imaging spin polarons in a kinetically frustrated Hubbard system, Nature 629 , 323 (2024). [37] M. Lebrat, M. Xu, L. H. Kendrick, A. Kale, Y. Gang, P. Seetharaman, I. Morera, E. Khatami, E. Demler, and M. Greiner, Observation of Nagaoka polarons in a Fermi– Hubbard quantum simulator, Nature 629 , 317 (2024). [38] J. Koepsell, D. Bourgund, P. Sompet, S. Hirthe, A. Bohrdt, Y. Wang, F. Grusdt, E. Demler, G. Sa-lomon, C. Gross, and I. Bloch, Microscopic evo-lution of doped mott insulators from polaronic metal to fermi liquid, Science 374 , 82 (2021), https://www.science.org/doi/pdf/10.1126/science.abe7165. [39] E. Gull, O. Parcollet, and A. J. Millis, Superconduc-tivity and the Pseudogap in the Two-Dimensional Hub-bard Model, Physical Review Letters 110 , 216405 (2013), 1207.2490. [40] P. Werner and A. J. Millis, Doping-driven Mott transition in the one-band Hubbard model, Physical Review B 75 ,085108 (2007), cond-mat/0610401. [41] B. Kyung, S. S. Kancharla, D. S´ en´ echal, A. M. S. Trem-blay, M. Civelli, and G. Kotliar, Pseudogap induced by short-range spin correlations in a doped Mott in-sulator, Physical Review B 73 , 165114 (2006), cond-mat/0502565. [42] M. Xu, L. H. Kendrick, A. Kale, Y. Gang, C. Feng, S. Zhang, A. W. Young, M. Lebrat, and M. Greiner, A neutral-atom hubbard quantum simulator in the cryo-genic regime, Nature 642 , 909 (2025). [43] T. Chalopin, P. Bojovi´ c, S. Wang, T. Franz, A. Sinha, Z. Wang, D. Bourgund, J. Obermeyer, F. Grusdt, A. Bohrdt, L. Pollet, A. Wietek, A. Georges, T. Hilker, and I. Bloch, Observation of emergent scaling of spin–charge correlations at the onset of the pseudogap, Proceedings of the National Academy of Sciences 123 ,e2525539123 (2026). [44] L. H. Kendrick, A. Kale, Y. Gang, A. D. Deters, M. Lebrat, A. W. Young, and M. Greiner, Pseu-dogap in a fermi-hubbard quantum simulator (2025), arXiv:2509.18075 [cond-mat.quant-gas]. [45] A. J. Millis, H. Monien, and D. Pines, Phenomenolog-ical model of nuclear relaxation in the normal state of YBa2Cu3O7, Physical Review B 42 , 167 (1990). [46] S. Chakravarty, B. I. Halperin, and D. R. Nelson, Two-dimensional quantum Heisenberg antiferromagnet at low temperatures, Physical Review B 39 , 2344 (1989). [47] G. Blumberg, P. Abbamonte, M. V. Klein, W. C. Lee, D. M. Ginsberg, L. L. Miller, and A. Zibold, Resonant two-magnon raman scattering in cuprate antiferromag-netic insulators, Phys. Rev. B 53 , R11930 (1996). [48] T. P. Devereaux and R. Hackl, Inelastic light scattering from correlated electrons, Reviews of Modern Physics 79 ,175 (2007), cond-mat/0607554. [49] R. Coldea, S. M. Hayden, G. Aeppli, T. G. Perring, C. D. Frost, T. E. Mason, S.-W. Cheong, and Z. Fisk, Spin Waves and Electronic Interactions in La2CuO4, Physical Review Letters 86 , 5377 (2001), cond-mat/0006384. [50] N. S. Headings, S. M. Hayden, R. Coldea, and T. G. Perring, Anomalous High-Energy Spin Excitations in the High-Tc Superconductor-Parent Antiferromagnet La2CuO4, Physical Review Letters 105 , 247001 (2010), 1009.2915. 9
+
+[51] K. Yamada, K. Kakurai, Y. Endoh, T. R. Thurston, M. A. Kastner, R. J. Birgeneau, G. Shirane, Y. Hidaka, and T. Murakami, Spin dynamics in the two-dimensional quantum antiferromagnet La2CuO4, Physical Review B 
+
+40 , 4557 (1989). [52] S. M. Hayden, G. Aeppli, R. Osborn, A. D. Taylor, T. G. Perring, S.-W. Cheong, and Z. Fisk, High-energy spin waves in La2CuO4, Physical Review Letters 67 , 3622 (1991). [53] C. M. Canali and S. M. Girvin, Theory of Raman scat-tering in layered cuprate materials, Physical Review B 
+
+45 , 7127 (1992). [54] The slope a in Eq. (1) does have a weak dependence on the Hamiltonian parameters t and U , entering at orders 
+
+t/U and higher; in the strong-coupling regime t/U ≪ 1this is however unimportant. [55] T. Oguchi, Theory of Spin-Wave Interactions in Ferro-and Antiferromagnetism, Physical Review 117 , 117 (1960). [56] S. Sugai, H. Suzuki, Y. Takayanagi, T. Hosokawa, and N. Hayamizu, Carrier-density-dependent momentum shift of the coherent peak and the lo phonon mode in p-type high-Tc superconductors, Phys. Rev. B 68 , 184504 (2003). [57] B. Ammon, M. Troyer, and H. Tsunetsugu, Effect of the three-site hopping term on the t-j model, Phys. Rev. B 
+
+52 , 629 (1995). [58] Y. Nagaoka, Ferromagnetism in a narrow, almost half-filled s band, Phys. Rev. 147 , 392 (1966). [59] D. J. Thouless, Exchange in solid 3He and the Heisenberg Hamiltonian, Proceedings of the Physical Society 86 , 893 (1965). [60] M. Kan´ asz-Nagy, I. Lovas, F. Grusdt, D. Greif, M. Greiner, and E. A. Demler, Quantum correlations at infinite temperature: The dynamical nagaoka effect, Phys. Rev. B 96 , 014303 (2017). [61] J. O. Haerter and B. S. Shastry, Kinetic antiferromag-netism in the triangular lattice, Phys. Rev. Lett. 95 ,087202 (2005). [62] I. Morera, M. Kan´ asz-Nagy, T. Smolenski, L. Ciorciaro, A. Imamo˘ glu, and E. Demler, High-temperature kinetic magnetism in triangular lattices, Phys. Rev. Res. 5,L022048 (2023). [63] L. Ciorciaro, T. Smole´ nski, I. Morera, N. Kiper, S. Hies-tand, M. Kroner, Y. Zhang, K. Watanabe, T. Taniguchi, E. Demler, and A. ˙Imamo˘ glu, Kinetic magnetism in tri-angular moir´ e materials, Nature 623 , 509 (2023). [64] M. L. Prichard, Z. Ba, I. Morera, B. M. Spar, D. A. Huse, E. Demler, and W. S. Bakr, Magnon-polarons in the fermi–hubbard model, Nature Physics 21 , 1548 (2025). [65] V. Radovskaia, R. Andrei, J. R. Hortensius, R. V. Mikhaylovskiy, R. Citro, S. Chattopadhyay, M. X. Na, B. A. Ivanov, E. Demler, A. V. Kimel, A. D. Caviglia, and D. Afanasiev, Photoengineering the magnon spec-trum in an insulating antiferromagnet, Nature Physics 10.1038/s41567-026-03230-6 (2026). [66] Ignoring the difference between Jδ and J0, as well as the 
+
+U/t dependence of g(0), yields Eq. (1) with a constant slope a = g(0) /2(1 + r0). Taking these two effects into account will introduce corrections to the slope a at order 
+
+t/U and above, as mentioned before. [67] P. A. Fleury and R. Loudon, Scattering of Light by One-and Two-Magnon Excitations, Physical Review 166 , 514 (1968). [68] B. I. Shraiman and E. D. Siggia, Spiral phase of a doped quantum antiferromagnet, Physical Review Letters 62 ,1564 (1989). [69] A. Auerbach and B. E. Larson, Doped antiferromagnet: The instability of homogeneous magnetic phases, Physi-cal Review B 43 , 7800 (1991). [70] K. Yamada, C. H. Lee, K. Kurahashi, J. Wada, S. Waki-moto, S. Ueki, H. Kimura, Y. Endoh, S. Hosoya, G. Shi-rane, R. J. Birgeneau, M. Greven, M. A. Kastner, and Y. J. Kim, Doping dependence of the spatially modulated dynamical spin correlations and the superconducting-transition temperature in La2-xSrxCuO4, Physical Re-view B 57 , 6165 (1998). [71] M. Brunner, F. F. Assaad, and A. Muramatsu, Single-hole dynamics in the t − j model on a square lattice, Phys. Rev. B 62 , 15480 (2000). [72] A. S. Mishchenko, N. V. Prokof’ev, and B. V. Svistunov, Single-hole spectral function and spin-charge separation in the t − j model, Phys. Rev. B 64 , 033101 (2001). [73] D. N. Sheng, Y. C. Chen, and Z. Y. Weng, Phase string effect in a doped antiferromagnet, Phys. Rev. Lett. 77 ,5102 (1996). [74] D. N. Sheng, Y. C. Chen, and Z. Y. Weng, Phase string effect in a doped antiferromagnet, Phys. Rev. Lett. 77 ,5102 (1996). [75] D. Pekker, M. Babadi, R. Sensarma, N. Zinner, L. Pollet, M. W. Zwierlein, and E. Demler, Competition between pairing and ferromagnetic instabilities in ultracold fermi gases near feshbach resonances, Phys. Rev. Lett. 106 ,050402 (2011). [76] E. A. Yuzbashyan, O. Tsyplyatyev, and B. L. Altshuler, Relaxation and persistent oscillations of the order pa-rameter in fermionic condensates, Phys. Rev. Lett. 96 ,097005 (2006). [77] R. A. Barankov, L. S. Levitov, and B. Z. Spivak, Col-lective rabi oscillations and solitons in a time-dependent bcs pairing problem, Phys. Rev. Lett. 93 , 160401 (2004). [78] A. Abrikosov, L. Gorkov, I. Dzyaloshinski, and R. Sil-verman, Methods of Quantum Field Theory in Statistical Physics , Dover Books on Physics (Dover Publications, 2012). [79] S. R. White and D. J. Scalapino, Density matrix renor-malization group study of the striped phase in the 2d 
+
+t − J model, Phys. Rev. Lett. 80 , 1272 (1998). [80] S. R. White and D. J. Scalapino, Stripes on a 6-leg hub-bard ladder, Phys. Rev. Lett. 91 , 136403 (2003). [81] G. Hager, G. Wellein, E. Jeckelmann, and H. Fehske, Stripe formation in doped hubbard ladders, Phys. Rev. B 71 , 075108 (2005). [82] C.-C. Chang and S. Zhang, Spin and charge order in the doped hubbard model: Long-wavelength collective modes, Phys. Rev. Lett. 104 , 116402 (2010). [83] B.-X. Zheng, C.-M. Chung, P. Corboz, G. Ehlers, M.-P. Qin, R. M. Noack, H. Shi, S. R. White, S. Zhang, and G. K.-L. Chan, Stripe order in the underdoped region of the two-dimensional hubbard model, Science 358 , 1155 (2017), https://www.science.org/doi/pdf/10.1126/science.aam7127. [84] G. Ehlers, S. R. White, and R. M. Noack, Hybrid-space density matrix renormalization group study of the doped two-dimensional hubbard model, Phys. Rev. B 95 ,125125 (2017). [85] E. W. Huang, C. B. Mendl, H.-C. Jiang, B. Moritz, and T. P. Devereaux, Stripe order from the perspective of the 10 
+
+hubbard model, npj Quantum Materials 3, 22 (2018). [86] Y.-F. Jiang, J. Zaanen, T. P. Devereaux, and H.-C. Jiang, Ground state phase diagram of the doped hub-bard model on the four-leg cylinder, Phys. Rev. Res. 2,033073 (2020). [87] A. Wietek, Y.-Y. He, S. R. White, A. Georges, and E. M. Stoudenmire, Stripes, Antiferromagnetism, and the Pseudogap in the Doped Hubbard Model at Fi-nite Temperature, Physical Review X 11 , 031007 (2021), 2009.10736. [88] M. Qin, C.-M. Chung, H. Shi, E. Vitali, C. Hubig, U. Schollw¨ ock, S. R. White, and S. Zhang (Simons Col-laboration on the Many-Electron Problem), Absence of superconductivity in the pure two-dimensional hubbard model, Phys. Rev. X 10 , 031016 (2020). [89] S. Miyashita, Thermodynamic Properties of Spin 1/2 An-tiferromagnetic Heisenberg Model on the Square Lattice, Journal of the Physical Society of Japan 57 , 1934 (1988). [90] G. Gomez-Santos, J. D. Joannopoulos, and J. W. Negele, Monte Carlo study of the quantum spin-(1/2 Heisenberg antiferromagnet on the square lattice, Physical Review B 
+
+39 , 4435 (1989). [91] M. S. Makivi´ c and H.-Q. Ding, Two-dimensional spin-1/2 Heisenberg antiferromagnet: A quantum Monte Carlo study, Physical Review B 43 , 3562 (1991). [92] J.-K. Kim and M. Troyer, Low Temperature Behavior and Crossovers of the Square Lattice Quantum Heisen-berg Antiferromagnet, Physical Review Letters 80 , 2705 (1998). [93] Y. Okabe and M. Kikuchi, Quantum Monte Carlo Simu-lation of the Spin 1/2 XXZ Model on the Square Lattice, Journal of the Physical Society of Japan 57 , 4351 (1988). [94] J. Tallon and J. Loram, The doping dependence of t* – what is the real high-tc phase diagram?, Physica C: Superconductivity 349 , 53 (2001). [95] T. Chalopin, P. Bojovi´ c, S. Wang, T. Franz, A. Sinha, Z. Wang, D. Bourgund, J. Obermeyer, F. Grusdt, A. Bohrdt, L. Pollet, A. Wietek, A. Georges, T. Hilker, and I. Bloch, Probing the magnetic origin of the pseu-dogap using a fermi-hubbard quantum simulator (2024), arXiv:2412.17801 [cond-mat.str-el]. [96] This step is not strictly necessary: one may keep the full exchange terms (S22) and use them to write diagrams. When the legs corresponding to holes, originating from a single vertex, are contracted with each other, the result is equivalent to taking the approximate form (S25). On the other hand, having multiple such vertices and joining their hole legs to each other would give rise to higher-order terms, which we will ignore. [97] The linear fit returns a small, nonzero intercept - and so the dahsed line in Fig. 15 (b) does not go exactly through the origin. This is likely an artifact of our frequency grid discretization. [98] From the definition (S77), the time-ordered self-energies Π0
+
+> k
+
+(ω) and Π 1
+
+> k
+
+(ω) are even functions of frequency. How-ever, they are not analytic: the imaginary parts start as 
+
+|ω|. We can make the functions analytic near the origin by working with the retarded versions, i.e. flipping the sign of the imaginary part at negative frequencies. Then the real parts are even in ω, while the imaginary ones are odd, yielding the expansion from the text. Of course, this mapping does not change the ω > 0 values of the self-energy. 11 
+
+SUPPLEMENTARY MATERIAL Notation for magnetic energy scales 
+
+Here, we summarize all the different magnetic energy scales defined throughout the paper, together with their intuitive interpretations. 
+
+Scale Definition Interpretation 
+
+J 4t2/U Bare superexchange coupling in the t − J model. Not directly accessible in experiments. 
+
+J0 (1 + r0)J
+
+Effective superexchange in the Heisenberg (undoped) case. Includes renormalization due to quantum zero-point fluctuations in the AFM state (Oguchi correction), r0 ∼ 0.157. Note that J0 rather than J sets the Heisenberg single-magnon spectrum, via 
+
+ωk(δ = 0) = 2 J0εk. Therefore, J0 is the scale directly accessible in experiments such as inelastic neutron scattering, or temperature dependence of spin-spin correlation length. 
+
+Jδ (1 − δ)2[1 + r(δ)] J
+
+Doping-induced renormalization of exchange, including the effects of local moment depletion (1 − δ)2, as well as the finite-doping Oguchi correction r(δ). Crucially, the definition of Jδ ignores kinetic effects , meaning that it does not fully capture magnetic response in doped systems, and thus Jδ by itself is not accessible experimentally .
+
+J∗(δ)
+
+ωk(δ) ≈ 2J∗(δ) εk
+
+for high-energy magnons Universal magnetic energy scale in doped systems, governing a vast array of one- and two-magnon experimental signatures . Controls short-range magnetic correlations , and obeys the universal scaling, Eq. (1). Obtained numerically by extracting a single energy scale from the upper part of the magnon spectrum, Fig. 14. Understood analytically to be dominated by kinetic effects, see Eq. (4), as well as (S113) and (S114) in the SM. 
+
+Jρ(δ)
+
+ωk(δ) ≈ √2 Jρ(δ) |k|
+
+for low-energy magnons Secondary magnetic energy scale in doped systems, controlling long-range magnetic correlations . Unlike J∗, Jρ is sensitive to details of the polaron dispersion, and yields a square-root doping dependence, see Eqs. (S126) and (S127). Thought to control the stability of long-range AFM order in 2D or layered systems, for T = 0. TABLE I. Magnetic energy scales defined in this work and their interpretations. 
+
+Comparison to experimental data 
+
+In Figure 1(a), we compare our theoretical calculation for J∗(δ) against two recent experiments, probing different magnetic observables in doped systems: spin stiffness ρ [95] and bimagnon peak position ω2M in Raman-type spectra [44]. In undoped systems, both ρ and ω2M are directly proportional to J, albeit with very different numerical prefactors. These prefactors have been extensively studied in the past, and their numerical values are well-understood for the Heisenberg case. In order to meaningfully compare doping behavior of ρ and ω2M , we divide out their zero-doping values, and focus on the relative scaling with δ. Therefore, our objects of interest are ρ(δ)/ρ (0) and respectively ω2M (δ)/ω 2M (0). As the experimental data in Refs. [44, 95] are not presented in this way, we describe here the procedure by which we obtain the values depicted in Fig. 1(a). 
+
+Spin stiffness. We rely on the data presented in Fig. 3f of Ref. [95]. Although denoted by Θ( δ) in the original work, we use the notation ρ(δ) for simplicity. As done in the original work, we fit a quadratic polynomial ρ(δ) ≈ ρ0+ρ1δ+ρ2δ2
+
+to the experimental measurements of ( ρ, δ ) pairs. Dividing out the zero-doping value, and plugging in δeff = U/t × δ,we arrive at 
+
+ρ(δ)
+
+ρ(0) ≈ 1 + ρ1
+
+ρ0
+
+tU δeff + ρ2
+
+ρ0
+
+ tU
+
+2
+
+δ2eff . (S1) The two resulting coefficients tρ 1/U ρ 0 and t2ρ2/U 2ρ0 are obtained by combining the result of the quadratic fit, described previously, with the Hamiltonian parameter ratio U/t = 6 .5 ± 0.5, as given in the original work. All error bounds are propagated using the uncertainties package in python. The result, in the form given by Eq. (S1), is the curve labeled ρ in Fig. 1(a). 12 
+
+Bimagnon peak position. We use the Raman-type spectra shown in Fig. 3b of Ref. [44]. For every doping value in the dataset, we fit to the experimental spectrum a symmetric double-Lorentzian curve plus background, 
+
+f (ω) = C1
+
+ γ2
+
+(ω − ω2M )2 + γ2 + γ2
+
+(ω + ω2M )2 + γ2
+
+
+
++ C0, (S2) from which we extract the parameters ω2M , γ, C0, and C1. From the list of ( ω2M , δ ) pairs, we divide all frequencies the value of ω2M (0), multiply all dopings by U/t = 7, and plot the results as the circles labeled ω2M in Fig. 1(a). 
+
+Extended t − J model and Raman vertices 
+
+In this section, we briefly review the derivation of the extended t − J model as a low-energy effective description of the Hubbard one, at strong interactions U ≫ t. Starting from a spatio-temporal modulation of the hopping amplitude t, as may be implemented in optical lattices, we extract the corresponding perturbation within the low-energy manifold. Finally, we argue that it is analogous to optical Raman experiments in solid-state systems. The starting point is the Hamiltonian ˆH(τ ) = ˆT + ˆHint + ˆV (τ ), (S3) where τ denotes time, as t is reserved for hopping amplitude. The Hubbard term is ˆHint = U P 
+
+> j
+
+ˆnj↑ ˆnj↓, with U > 0the on-site repulsion strength; the electron number operator for site j and spin σ is ˆ njσ = ˆ c† 
+
+> jσ
+
+ˆcjσ ; and the time-dependent perturbation ˆV (τ ) encodes the optical lattice modulation, which will only be considered in eq. (S10) after introducing the Schrieffer-Wolff transformation. Meanwhile, the kinetic term ˆT = −t P
+
+> ⟨j,k ⟩σ
+
+
+
+ˆc† 
+
+> jσ
+
+ˆckσ + h .c.
+
+
+
+can be separated into operators that preserve, decrease, and respectively increase the double occupancy. With δ ∈ {± ˆx, ±ˆy}
+
+denoting nearest-neighbor directions, we write ˆT = −t P
+
+> δ
+
+ ˆT δ 
+
+> 0
+
++ ˆT δ 
+
+> −1
+
++ ˆT δ
+
+> 1
+
+
+
+, where the individual terms are ˆT δ 
+
+> 0
+
+≡ X
+
+> j,σ
+
+h
+
+nj,¯σ c† 
+
+> j,σ
+
+cj+δ,σ nj+δ, ¯σ + (1 − nj,¯σ ) c† 
+
+> j,σ
+
+cj+δ,σ (1 − nj+δ, ¯σ )
+
+i
+
+, (S4a) ˆT δ 
+
+> −1
+
+≡ X
+
+> j,σ
+
+(1 − nj,¯σ ) c† 
+
+> j,σ
+
+cj+δ,σ nj+δ, ¯σ , (S4b) ˆT δ 
+
+> 1
+
+≡ X
+
+> j,σ
+
+nj,¯σ c† 
+
+> j,σ
+
+cj+δ,σ (1 − nj+δ, ¯σ ) . (S4c) Here, ¯ σ denotes the spin opposite to σ. The split is advantageous, since we may write [ ˆHint , ˆT δα] = αU ˆT δα and [ ˆT δα]† = ˆT −δ 
+
+> −α
+
+for α ∈ {− 1, 0, 1}. We now change the basis via the transformation ˆU = ei ˆS , where ˆS is picked to cancel, at leading order, the coupling between different double-occupancy sectors. To second order in t/U , and ignoring ˆV (τ ), the transformed Hamiltonian is ˆHeff = ˆU † ˆH ˆU ≈ ˆHint + ˆT + i[ ˆHint , ˆS] + i[ ˆT , ˆS] − 12
+
+h
+
+[ ˆHint , ˆS], ˆS
+
+i
+
++ . . . , (S5) and imposing −t
+
+ ˆT−1 + ˆT1
+
+
+
++ i[ ˆHint , ˆS] = 0, we use the aforementioned commutators to find the solution ˆS = −i tU
+
+ ˆT1 − ˆT−1
+
+
+
+. (S6) Without loss of generality, we will focus on the hole-doped case. Thus, to extract the low-energy theory, the remaining terms in the rotated Hamiltonian (S5) must be projected into the sector of no double occupancies. With ˆP the projector achieving this, we can plug (S6) into (S5) to arrive at ˆHeff → ˆP
+
+−t ˆT0 + t2
+
+U
+
+X
+
+> δ,ϵ
+
+[ ˆT δ 
+
+> 1
+
+, ˆT −ϵ 
+
+> −1
+
+]
+
+ ˆP . (S7) 13 The first term −t ˆP ˆT0 ˆP represents the usual restricted hopping of the t − J model, while the ϵ = δ component of the second one gives superexchange: 
+
+t2
+
+U ˆP X
+
+> δ
+
+[ ˆT δ 
+
+> 1
+
+, ˆT −δ 
+
+> −1
+
+]
+
+!
+
+ˆP = 4t2
+
+U
+
+X
+
+> ⟨j,k ⟩
+
+
+
+Sj · Sk − 14 ˆnj ˆnk
+
+
+
+, (S8) where the spin operators are defined by Sj = 12 ˆc†
+
+> j,α
+
+σαβ ˆcj,β , while the total number operators are ˆ nj = ˆ nj, ↑ + ˆ nj, ↓. The remaining ϵ̸ = δ contributions, often neglected in spite of appearing at the same order in t/U as the superexchange, yield the so-called 3-site correlated hopping terms: 
+
+t2
+
+U ˆP
+
+X 
+
+> δ̸=ϵ
+
+[ ˆT δ 
+
+> 1
+
+, ˆT −ϵ 
+
+> −1
+
+]
+
+ ˆP = − t2
+
+U ˆP
+
+" X 
+
+> j,σ δ̸=ϵ
+
+
+
+ˆc† 
+
+> j,σ
+
+ˆc† 
+
+> j−ϵ, ¯σ
+
+ˆcj−ϵ, ¯σ ˆcj+δ−ϵ,σ − ˆc† 
+
+> j,σ
+
+ˆc† 
+
+> j−ϵ, ¯σ
+
+ˆcj−ϵ,σ ˆcj+δ−ϵ, ¯σ
+
+ #
+
+ˆP . (S9) Combining these three contributions, one recovers the extended t − J model, Eq. (S14). We now turn our attention to the perturbation ˆV (τ ); for spatially uniform modulations of the hopping amplitude, it can be expressed as ˆV (τ ) = −∆t X
+
+> δ
+
+f δ (τ )
+
+ ˆT δ 
+
+> 0
+
++ ˆT δ 
+
+> −1
+
++ ˆT δ
+
+> 1
+
+
+
+. (S10) In the case of ultracold atom arrays, this is directly achieved by modulating the height of the energy barrier between neighboring optical lattice sites. For example, modulating the ˆ x− and ˆ y−hoppings with equal intensity ∆ t and frequency ω, one may achieve either an s−wave driving when the two directions are modulated in phase, 
+
+f ±ˆx(τ ) = f ±ˆy (τ ) = sin( ωτ ), (S11) or otherwise a d−wave perturbation if the modulations are perfectly out of phase: 
+
+f ±ˆx(τ ) = −f ±ˆy (τ ) = sin( ωτ ). (S12) This latter approach will allow us to access the bimagnon peak. We also note that for optical Raman experiments in the solid state, one would couple the probe to the system via Peierls coupling t → te ieA ·δ , which at first order gives form factors f δ 
+
+> (1)
+
+∝ iA · δ, at second order f δ 
+
+> (2)
+
+∝ (A · δ)2, etc. As with the original kinetic Hamiltonian, the perturbation ˆV (τ ) has a contribution which does not connect subspaces of different double-occupancy, and therefore can be directly projected as −∆t ˆP
+
+P 
+
+> δ
+
+f δ (τ ) ˆT δ
+
+> 0
+
+ ˆP . The rest is plugged into the Schrieffer-Wolff transformation. Combining both, and omitting the explicit τ dependence on ˆVeff as well as on the form factors for brevity, the end result is ˆVeff → − ∆t ˆP
+
+" X
+
+> δ
+
+f δ X
+
+> j,σ
+
+ˆc† 
+
+> j,σ
+
+ˆcj+δ,σ − 2tU
+
+X
+
+> δ
+
+ f δ + f −δ  X 
+
+> j
+
+
+
+Sj · Sj+δ − 14 ˆnj ˆnj+δ
+
+
+
++ tU
+
+X 
+
+> δ̸=ϵ
+
+ f δ + f −ϵ X 
+
+> j,σ
+
+
+
+ˆc† 
+
+> j,σ
+
+ˆc† 
+
+> j−ϵ, ¯σ
+
+ˆcj−ϵ, ¯σ ˆcj+δ−ϵ,σ − ˆc† 
+
+> j,σ
+
+ˆc† 
+
+> j−ϵ, ¯σ
+
+ˆcj−ϵ,σ ˆcj+δ−ϵ, ¯σ
+
+ #
+
+ˆP , (S13) from which one may extract the charge and spin Raman vertices, as we will do in the next section. 
+
+Separating spin and charge degrees of freedom 
+
+The goal of this section is to introduce an auxiliary-boson transformation which makes the distinction between spin and charge at the operator level. Then, we write the Hamiltonian governing the evolution of these coupled degrees of freedom, as well as the corresponding Raman vertices. 14 We begin by considering the extended t − J model on a 2D square lattice, ˆH = − t X
+
+> j,δ,σ
+
+ˆPj ˆc† 
+
+> j,σ
+
+ˆcj+δ,σ ˆPj+δ + J
+
+2
+
+X
+
+> j,δ
+
+
+
+Sj · Sj+δ − 14 ˆnj ˆnj+δ
+
+
+
+− J
+
+4
+
+X 
+
+> j,σ δ̸=ϵ
+
+ˆPj
+
+
+
+ˆc† 
+
+> j,σ
+
+ˆc† 
+
+> j−ϵ, ¯σ
+
+ˆcj−ϵ, ¯σ ˆcj+δ−ϵ,σ − ˆc† 
+
+> j,σ
+
+ˆc† 
+
+> j−ϵ, ¯σ
+
+ˆcj−ϵ,σ ˆcj+δ−ϵ, ¯σ
+
+ ˆPj+δ−ϵ, (S14) where we introduce the superexchange coupling J = 4 t2/U , and the on-site projector ˆPj = (1 − ˆnj,↑ ˆnj,↓). Since we are working with a bipartite lattice, define the sublattice-rotated fermion operators ˆfj,σ ≡
+
+(
+
+ˆcj,σ j ∈ A, 
+
+ˆcj,σ j ∈ B, (S15) such that an AFM arrangement in the original basis translates to an FM one in the new frame. The original Hamiltonian (S14) now becomes ˆH = − t X
+
+> j,δ,σ
+
+ˆPj ˆf † 
+
+> j,σ
+
+ˆfj+δ,σ ˆPj+δ − J
+
+2
+
+X
+
+> j,δ
+
+
+
+˜Sz 
+
+> j
+
+˜Sz 
+
+> j+δ
+
+− 12
+
+ ˜S+ 
+
+> j
+
+˜S+ 
+
+> j+δ
+
++ ˜S− 
+
+> j
+
+˜S−
+
+> j+δ
+
+
+
++ 14 ˆnj ˆnj+δ
+
+
+
+− J
+
+4
+
+X 
+
+> j,σ δ̸=ϵ
+
+ˆPj
+
+ ˆf † 
+
+> j,σ
+
+ˆf † 
+
+> j−ϵ,σ
+
+ˆfj−ϵ,σ ˆfj+δ−ϵ,σ − ˆf † 
+
+> j,σ
+
+ˆf † 
+
+> j−ϵ,σ
+
+ˆfj−ϵ, ¯σ ˆfj+δ−ϵ, ¯σ
+
+ ˆPj+δ−ϵ, (S16) where the rotated spin operators are analogously defined through ˜Sj = 12 ˆf †
+
+> j,α
+
+σαβ ˆfj,β .We aim to separate the charge and spin degrees of freedom by introducing the auxiliary-boson transformation ˆf † 
+
+> j,σ
+
+= ˆb† 
+
+> j,σ
+
+ˆhj. Here, ˆhj (ˆh† 
+
+> j
+
+) is a spinless fermionic operator annihilating (creating) a hole at site j, while the bosonic spin-wave operator ˆbj,σ (ˆb† 
+
+> j,σ
+
+) represents the annihilation (creation) of a Schwinger boson. The auxiliary-boson mapping is faithful, provided that the local constraint 
+
+X
+
+> σ
+
+ˆb†
+
+> j,σ
+
+ˆbj,σ + ˆh† 
+
+> j
+
+ˆhj = 2 S (S17) is always satisfied at every site j. Since we are describing the AFM ordered state (corresponding to FM in the rotated frame), we can condense one of the boson species. In the rotated frame, take the order along the positive ˆ z direction, and carry out the replacement ˆbj,↑, ˆb† 
+
+> j,↑
+
+→
+
+q
+
+2S − ˆb†
+
+> j,↓
+
+ˆbj,↓ − ˆh† 
+
+> j
+
+ˆhj. (S18) After performing this procedure, the only remaining boson operators are ˆb†
+
+> j,↓
+
+, ˆbj,↓. For convenience, we will drop the spin index, and denote these simply by ˆb† 
+
+> j
+
+, ˆbj from now on. Using the local constraint (S17), as well as 
+
+ˆh†
+
+> j
+
+2
+
+= 0, the ˆz−component of the rotated spin operator can be directly expressed as ˜Sz 
+
+> j
+
+= ˆhjˆh†
+
+> j
+
+
+
+S − ˆb† 
+
+> j
+
+ˆbj
+
+
+
+, (S19) while the transverse components can be expanded by ˜S+ 
+
+> j
+
+= √2S ˆhjˆh†
+
+> j
+
+s
+
+1 −
+
+ˆb† 
+
+> j
+
+ˆbj
+
+2S −
+
+ˆh† 
+
+> j
+
+ˆhj
+
+2S ˆbj
+
+= √2S ˆhjˆh†
+
+> j
+
+s
+
+1 −
+
+ˆb† 
+
+> j
+
+ˆbj
+
+2S ˆbj
+
+= √2S ˆhjˆh†
+
+> j
+
+
+
+ˆbj − 14S ˆb† 
+
+> j
+
+ˆbjˆbj + O(S−2)
+
+
+
+, (S20) 15 and respectively ˜S− 
+
+> j
+
+= [ ˜S+ 
+
+> j
+
+]†. Going from the first line to the second, the hole number operator ˆh† 
+
+> j
+
+ˆhj inside the square root can be eliminated by expanding in a series, and observing that the prefactor of ˆhjˆh† 
+
+> j
+
+annihilates all resulting terms, except for the zeroth-order one. The second step is a typical expansion in the magnon density ˆb† 
+
+> j
+
+ˆbj/2S; in the Hamiltonian, we will only keep terms up to quartic order in ˆbj operators. Plugging everything in, the superexchange term in (S16) can be expressed order-by-order in S as ˆHexchange = ˆHcholes + ˆHcLSWT + ˆHcint + O(S−1), (S21) where the individual terms are ˆHcholes = −JS 2 X
+
+> j,δ
+
+ˆhjˆh† 
+
+> j
+
+ˆhj+δ ˆh† 
+
+> j+δ
+
+, (S22a) ˆHcLSWT = JS 
+
+2
+
+X
+
+> j,δ
+
+ˆhjˆh† 
+
+> j
+
+ˆhj+δ ˆh†
+
+> j+δ
+
+ˆb† 
+
+> j
+
+ˆbj + ˆb†
+
+> j+δ
+
+ˆbj+δ + ˆbjˆbj+δ + ˆb† 
+
+> j
+
+ˆb†
+
+> j+δ
+
+
+
+, (S22b) ˆHcint = − J
+
+2
+
+X
+
+> j,δ
+
+ˆhjˆh† 
+
+> j
+
+ˆhj+δ ˆh†
+
+> j+δ
+
+"
+
+ˆb†
+
+> j+δ
+
+ˆb† 
+
+> j
+
+ˆbjˆbj+δ + 14
+
+
+
+ˆb†
+
+> j+δ
+
+ˆbj+δˆbj+δˆbj + ˆb† 
+
+> j
+
+ˆbjˆbjˆbj+δ + ˆb† 
+
+> j
+
+ˆb†
+
+> j+δ
+
+ˆb†
+
+> j+δ
+
+ˆbj+δ + ˆb†
+
+> j+δ
+
+ˆb† 
+
+> j
+
+ˆb† 
+
+> j
+
+ˆbj
+
+#
+
+.
+
+(S22c) Assuming translational invariance for any expectation values involving only hole operators, we can effectively decouple the hole and magnon degrees of freedom [96] in all terms of (S22). Defining the quantities 
+
+αh ≡
+
+Dˆhjˆh† 
+
+> j
+
+ˆhj+δ ˆh†
+
+> j+δ
+
+E
+
+, (S23a) 
+
+α(1)  
+
+> m
+
+≡
+
+Dˆb† 
+
+> j
+
+ˆbj + ˆb†
+
+> j+δ
+
+ˆbj+δ + ˆbjˆbj+δ + ˆb† 
+
+> j
+
+ˆb†
+
+> j+δ
+
+E
+
+, (S23b) 
+
+α(2)  
+
+> m
+
+≡
+
+
+
+ˆb†
+
+> j+δ
+
+ˆb† 
+
+> j
+
+ˆbjˆbj+δ + 14
+
+
+
+ˆb†
+
+> j+δ
+
+ˆbj+δˆbj+δˆbj + ˆb† 
+
+> j
+
+ˆbjˆbjˆbj+δ + ˆb† 
+
+> j
+
+ˆb†
+
+> j+δ
+
+ˆb†
+
+> j+δ
+
+ˆbj+δ + ˆb†
+
+> j+δ
+
+ˆb† 
+
+> j
+
+ˆb† 
+
+> j
+
+ˆbj
+
+ 
+
+, (S23c) we find up to an irrelevant constant term ˆHexchange ≈ ˆHholes + ˆHLSWT + ˆHint + constant + O(S−1), (S24) where the components now read ˆHholes = −JS 2
+
+
+
+1 − 12S α(1)  
+
+> m
+
++ 12S2 α(2) 
+
+> m
+
+ X
+
+> j,δ
+
+ˆhjˆh† 
+
+> j
+
+ˆhj+δ ˆh† 
+
+> j+δ
+
+, (S25a) ˆHLSWT = αhJS 
+
+2
+
+X
+
+> j,δ
+
+ˆb† 
+
+> j
+
+ˆbj + ˆb†
+
+> j+δ
+
+ˆbj+δ + ˆbjˆbj+δ + ˆb† 
+
+> j
+
+ˆb†
+
+> j+δ
+
+
+
+, (S25b) ˆHint = − αhJ
+
+2
+
+X
+
+> j,δ
+
+"
+
+ˆb†
+
+> j+δ
+
+ˆb† 
+
+> j
+
+ˆbjˆbj+δ + 14
+
+
+
+ˆb†
+
+> j+δ
+
+ˆbj+δˆbj+δˆbj + ˆb† 
+
+> j
+
+ˆbjˆbjˆbj+δ + ˆb† 
+
+> j
+
+ˆb†
+
+> j+δ
+
+ˆb†
+
+> j+δ
+
+ˆbj+δ + ˆb†
+
+> j+δ
+
+ˆb† 
+
+> j
+
+ˆb† 
+
+> j
+
+ˆbj
+
+#
+
+. (S25c) The last two terms resemble the usual spin-wave Hamiltonian that one obtains from a Holstein-Primakoff approach in the absence of doping. We remark that αh = (1 −δ)2 encodes the trivial reduction in average local magnetic moments, due to the probability δ of finding a hole on any given site. In momentum space, the magnetic terms in (S25) read ˆHLSWT = αhzJS 
+
+2
+
+X
+
+> k
+
+hˆb†
+
+> k
+
+ˆbk + ˆb†−kˆb−k + γk
+
+ˆb−kˆbk + ˆb†
+
+> k
+
+ˆb†−k
+
+i 
+
+, (S26a) ˆHint = − αhzJ 
+
+2N
+
+X
+
+> k,p,q
+
+
+
+γq ˆb†
+
+> k+q
+
+ˆb†
+
+> p−q
+
+ˆbpˆbk + 12
+
+
+
+γk ˆb†
+
+> k+q
+
+ˆbq−pˆbpˆbk + γk+q ˆb†
+
+> k+q
+
+ˆb†
+
+> p−q
+
+ˆb†−pˆbk
+
+
+
+, (S26b) where z = 4 is the coordination number, and γk = 1
+
+> z
+
+P 
+
+> δ
+
+eikδ the square-lattice form factor. Meanwhile, the nearest-neighbor hole interaction (S25a) is ˆHholes = −zJS 2
+
+
+
+1 − 12S α(1)  
+
+> m
+
++ 12S2 α(2) 
+
+> m
+
+ N − 2 X
+
+> k
+
+ˆh†
+
+> k
+
+ˆhk + 1
+
+N
+
+X
+
+> k,q,p
+
+γq ˆh†
+
+> k+q
+
+ˆh†
+
+> p−q
+
+ˆhpˆhk
+
+ , (S27) 16 so that it contains an (irrelevant) overall constant, a chemical potential correction, as well as an actual normal-ordered interaction term. For brevity, we will define the following quantity, 
+
+λ ≡ 1 − 12S α(1)  
+
+> m
+
++ 12S2 α(2)  
+
+> m
+
+, (S28) which however contributes only to a renormalization of the hole chemical potential, and is therefore irrelevant for our current discussion, where we always fix doping. Shifting focus to the kinetic term of (S16), note that the typical contribution ˆf † 
+
+> j,σ
+
+ˆfj+δ,σ = ˆb† 
+
+> j,σ
+
+ˆhjˆh†
+
+> j+δ
+
+ˆbj+δ,σ involves a spin flip with respect to the rotated frame. Upon condensing via (S18), the leading-order term will therefore contain a single magnon operator. Specifically, it yields ˆHkin = √2S t
+
+2
+
+X
+
+> j,δ
+
+hˆh† 
+
+> j+δ
+
+ˆhj (ˆbj+δ + ˆb† 
+
+> j
+
+) + ˆh† 
+
+> j
+
+ˆhj+δ (ˆb† 
+
+> j+δ
+
++ ˆbj)
+
+i
+
++ O(S−1/2), (S29) or equivalently in momentum space ˆHkin =
+
+r 2SN zt X
+
+> k,q
+
+ˆh†
+
+> k+q
+
+ˆhk
+
+
+
+γkˆbq + γk+qˆb†−q
+
+
+
++ O(S−1/2). (S30) This term therefore describes the process through which a hole scatters by annihilating or creating a magnon. On the other hand, we discard higher-order terms in S, which couple the hole to continua of 3 magnons, 5 magnons, etc. Finally, let us consider the 3-site terms in the extended t − J model. Their main effect will be to give the holes a bare dispersion, which the usual kinetic and superexchange terms fail to do, as evidenced by (S27) and (S30). Beyond this, they will also introduce higher-order couplings between magnons and holes (i.e. 2 holes scattering on 2 magnons, and above), which we will neglect in the same spirit as when we took only the leading term in (S30). The summand in (S16) becomes ˆf † 
+
+> j,σ
+
+ˆf †
+
+> j−ϵ,σ
+
+ ˆfj−ϵ,σ ˆfj+δ−ϵ,σ − ˆfj−ϵ, ¯σ ˆfj+δ−ϵ, ¯σ
+
+
+
+= ˆb†
+
+> j,σ
+
+ˆb† 
+
+> j−ϵ,σ
+
+ˆhjˆhj−ϵˆh†
+
+> j−ϵ
+
+ˆh†
+
+> j+δ−ϵ
+
+ˆbj−ϵ,σ ˆbj+δ−ϵ,σ − ˆbj−ϵ, ¯σˆbj+δ−ϵ, ¯σ
+
+
+
+. (S31) Abbreviating the spatial indices of the magnon operators by {1, 2, 3, 4}, we see that upon condensation, they yield 
+
+X
+
+> σ
+
+ˆb†
+
+> 1σ
+
+ˆb†
+
+> 2σ
+
+ˆb3σˆb4σ − ˆb3¯ σˆb4¯ σ
+
+
+
+→ (2 S)2 − S
+
+"
+
+2ˆb†
+
+> 1
+
+ˆb† 
+
+> 2
+
++ 2 ˆb3ˆb4 +
+
+> 4
+
+X
+
+> α=1
+
+ˆb†
+
+> α
+
+ˆbα
+
+#
+
++ O(S0), (S32) and we are interested in the first term, which gives rise to an effective hole Hamiltonian ˆH3−site = −JS 2 X 
+
+> j,δ ̸=ϵ
+
+ˆhjˆhj−ϵˆh†
+
+> j−ϵ
+
+ˆh† 
+
+> j+δ−ϵ
+
+= JS 2 X 
+
+> j,δ ̸=ϵ
+
+ˆh†
+
+> j+δ−ϵ
+
+ˆhj − JS 2 X 
+
+> j,δ ̸=ϵ
+
+ˆh†
+
+> j+δ−ϵ
+
+ˆh†
+
+> j−ϵ
+
+ˆhj−ϵˆhj. (S33) In momentum space, this reads ˆH3−site = 4 JS 2 X
+
+> k
+
+χk ˆh†
+
+> k
+
+ˆhk − 4JS 2
+
+N
+
+X
+
+> k,p,q
+
+ξk,q ˆh†
+
+> k+q
+
+ˆh†
+
+> p−q
+
+ˆhpˆhk, (S34) where we have defined the form factors 
+
+χk = 14
+
+X 
+
+> δ̸=ϵ
+
+eik(δ−ϵ) = cos(2 kx) + 4 cos( kx) cos( ky ) + cos(2 ky )2 , (S35a) 
+
+ξk,q = 14
+
+X 
+
+> δ̸=ϵ
+
+eik(δ−ϵ)eiqδ . (S35b) As promised, (S34) contains a bare dispersion 4 JS 2χk, but it also contributes to the interaction between holes. To sum up, the Hamiltonian that we will work with is the combination of terms (S26), (S27), (S30), and (S34): ˆH ≈ ˆHLSWT + ˆHint + ˆHholes + ˆH3−site + ˆHkin + . . . , (S36) 17 where the . . . denote constant as well as higher-order terms, which will be ignored. For completeness, we also present the Raman vertices resulting from applying the auxiliary-boson transformation to the perturbation (S13). As the operators involved in ˆVeff are identical to those in the Hamiltonian, while only the form factors differ, we will skip the detailed derivations. Furthermore, we specialize to the d−wave form factors discussed in (S12). The kinetic part of ˆVeff , analogously to (S30), will contain two hole operators and a magnon one, ˆVkin =
+
+r 2SN z∆t X
+
+> k,q
+
+ˆh†
+
+> k+q
+
+ˆhk
+
+h
+
+˜γkˆbq + ˜ γk+qˆb†−q
+
+i
+
+. (S37) Crucially, the presence of the ˆb operators suppresses low-frequency response. Indeed, a hole-only contribution of the type ˆh†
+
+> k+q
+
+ˆhk could yield finite weight at low frequencies; but when the magnons are included, we are confronted with their vanishing density of states at the bottom of the band. This implies that the magnon itself must carry a finite frequency in order to obtain a sizable overall response, which means that said total response will be significantly suppressed as ω → 0. As discussed in the main text, this strongly reminds of pseudogap behavior. The spin exchange term in ˆVeff is of Loudon-Fleury form, and under the d−wave driving it maps to ˆV2M = αh (2 S) 2zt ∆tU
+
+X
+
+> k
+
+˜γk
+
+ˆbkˆb−k + ˆb†
+
+> k
+
+ˆb†−k
+
+
+
+, (S38) mirroring the optical Raman vertex for the B1g symmetry channel in the solid state. Finally, the lowest-order contribution from the 3-site term is ˆV3−site = (2 S)2 8t∆tU
+
+X
+
+> k
+
+˜χk ˆh†
+
+> k
+
+ˆhk, (S39) where we defined the form factor ˜χk = cos(2 kx) − cos(2 ky )2 . (S40) We remark, however, that the lack of any momentum transfer in (S39) means that this vertex will not contribute to our estimation of the charge Raman response in the following sections. 
+
+> Single-particle properties: Green’s functions, symmetries, and diagrammatic approach
+
+In this section, we define the single-particle Green’s functions that form the basis of our analysis. We highlight their symmetry properties arising from the assumption of AFM order, as well as the point group of the square lattice. Then, we introduce the Luttinger-Ward functional and describe the self-consistent procedure used in calculating single-particle propagators and self-energies. 
+
+> Propagator definitions
+
+The linear spin-wave Hamiltonian (S26a) can be simplified by defining the Nambu spinor ˆΨk = ˆbk
+
+ˆb†−k
+
+!
+
+, (S41) in terms of which we have ˆHLSWT = Ω2
+
+X
+
+> k
+
+ˆΨ† 
+
+> k
+
+[τ0 + γkτ1] ˆΨk + constant . (S42) Here, τj denote the Pauli matrices, and we defined the spin-wave energy scale Ω = αhzJS . The above is straightforward to diagonalize via a Bogoliubov transformation, ˆΨk =
+
+r 1 + εk
+
+2εk
+
+τ0 − sgn( γk)
+
+r 1 − εk
+
+2εk
+
+τ1
+
+  ˆαk
+
+ˆα†−k
+
+
+
+, (S43) 18 where the dimensionless dispersion is given by εk = p1 − γ2
+
+> k
+
+. We find ˆHLSWT = Ω X
+
+> k
+
+εk ˆα† 
+
+> k
+
+ˆαk + constant , (S44) with the usual excitation spectrum Ek = Ωεk. However, this approach will no longer work at finite doping. Indeed, the dynamical interaction between holes and magnons will introduce nontrivial frequency dependence in the propagators of the latter, such that a single Bogoliubov transformation will not be able to simultaneously diagonalize the magnon Green’s function at all frequencies. We therefore work with a 2 × 2 matrix propagator for the magnons, in the original ˆb basis. Employing the zero-temperature, real-time formalism, we will need to calculate the time-ordered Green’s functions 
+
+Gk(t − t′) = −i
+
+D
+
+T ˆhk(t)ˆh†
+
+> k
+
+(t′)
+
+E
+
+, (S45a) 
+
+Dk(t − t′) = −i
+
+D
+
+T ˆΨk(t) ˆΨ†
+
+> k
+
+(t′)
+
+E
+
+= −i ⟨T ˆbk(t)ˆb†
+
+> k
+
+(t′)⟩ ⟨T ˆbk(t)ˆb−k(t′)⟩⟨T ˆb†−k(t)ˆb†
+
+> k
+
+(t′)⟩ ⟨T ˆb†−k(t)ˆb−k(t′)⟩
+
+!
+
+, (S45b) or, in the frequency domain, 
+
+Dk(ω) = 
+
+Z
+
+dt e iωt Dk(t), (S46) and analogously for the holes. Note that nontrivial (anti–)commutation relations of ˆh and respectively ˆb operators will yield discontinuities of (S45) at t − t′ = 0. Specifically, we have the instantaneous correlations at t − t′ = 0 +,
+
+Gk(0 +) = −i
+
+Dˆhkˆh†
+
+> k
+
+E
+
+, (S47a) 
+
+Dk(0 +) = −i ⟨ˆbkˆb†
+
+> k
+
+⟩ ⟨ˆbkˆb−k⟩⟨ˆb†−kˆb†
+
+> k
+
+⟩ ⟨ ˆb†−kˆb−k⟩
+
+!
+
+, (S47b) while in the opposite case t − t′ = 0 −, the ordering is reversed: 
+
+Gk(0 −) = + i
+
+Dˆh†
+
+> k
+
+ˆhk
+
+E
+
+, (S48a) 
+
+Dk(0 −) = −i ⟨ˆb†
+
+> k
+
+ˆbk⟩ ⟨ˆb−kˆbk⟩⟨ˆb†
+
+> k
+
+ˆb†−k⟩ ⟨ ˆb−kˆb†−k⟩
+
+!
+
+. (S48b) We adopt a symmetrized convention for the zero-time value of the magnon propagator, 
+
+Dk(0) = 12
+
+Dk(0 −) + Dk(0 +) , (S49) which will be important when computing the Oguchi correction down the line. In order to analyze the single-particle response, it is also useful to define the spectral functions 
+
+Bk(ω) = − sgn( ω − μ)
+
+π Im Gk(ω − μ), (S50a) 
+
+Ak(ω) = − sgn( ω)
+
+π Im Dk(ω), (S50b) as well as a scalar version for the magnons, 
+
+Ak(ω) = 12 tr [ τ3 Ak(ω)] . (S51) For each momentum k, both Ak(ω) and Bk(ω) are normalized such that their frequency integral yields 1. 19 
+
+Symmetry properties 
+
+Throughout the following derivations, symmetry properties of the propagators will be helpful. We list them here, and discuss along the way why they hold true; the spirit of the proof is inductive, and for simplicity we will do it directly in the limit. Namely, we will first show that the properties hold true for the bare propagators. Afterwards, we will self-consistently prove them for the dressed ones. Starting with the point group of the lattice, let R represent a 90-degree rotation acting on momentum, 
+
+R(kx, k y ) = ( ky , −kx), (S52) which squares to the inversion operation: R2k = −k. Both the hole and magnon Green’s functions will be invariant under R,
+
+GRk (ω) = Gk(ω), (S53a) 
+
+DRk (ω) = Dk(ω). (S53b) The other important operation is shifting the momentum by QAFM = ( π, π ). The hole propagator, as well as the diagonal components of the magnon one, are even under this: 
+
+Gk+QAFM (ω) = Gk(ω), (S54a) 
+
+Dab  
+
+> k+QAFM
+
+(ω) = Dab  
+
+> k
+
+(ω) ∀a = b, (S54b) while the off-diagonal magnon components are odd, 
+
+Dab  
+
+> k+QAFM
+
+(ω) = −Dab  
+
+> k
+
+(ω) ∀a̸ = b. (S55) Previously, we have defined the square lattice form factor γk = (cos kx +cos ky )/2, which can be seen to obey γRk = γk
+
+as well as γk+QAFM = −γk. It is also useful to consider the modified version ˜ γk = (cos kx − cos ky )/2, which instead will have ˜ γRk = −˜γk but still ˜ γk+QAFM = −˜γk. Note the convenient identity, following from the definitions of γ, ˜γ:
+
+γk+q + γk−q = 2 ( γkγq + ˜ γk ˜γq) . (S56) Moreover, it is straightforward to see that, for any function f which is even under the QAFM shift, fk+QAFM = fk,and for any other momentum q, we have 
+
+Z
+
+> k
+
+γk+qfk =
+
+Z
+
+> k
+
+γ(k+QAFM )+ qfk+QAFM =
+
+Z
+
+> k
+
+(−γk+q) fk = 0 . (S57) Similarly, for an odd function under this shift, gk+QAFM = −gk, we find 
+
+Z
+
+> k
+
+gk =
+
+Z
+
+> k
+
+gk+QAFM =
+
+Z
+
+> k
+
+(−gk) = 0 . (S58) Returning to the point group, for any function h obeying the lattice symmetry hRk = hk, its integral against ˜ γk
+
+vanishes, since the latter is odd under R:
+
+Z
+
+> k
+
+˜γkhk = 0 . (S59) Finally, note that the dimensionless SW dispersion εk = p1 − γ2 
+
+> k
+
+is invariant under both R and QAFM shifts. 
+
+Diagram conventions 
+
+Since we will employ diagrammatic perturbation theory for the calculations, we now introduce all the relevant conventions. When labeling diagrams, we use four-momentum notation k = ( k, ω ). As depicted in Figure 5, we represent hole propagators by dashed lines. Magnons are in turn denoted by solid lines, and the propagators have one Nambu index at each end. The magnon interaction (S26b) gives rise to a vertex V abcd  
+
+> Q,k,q
+
+with four Nambu indices, 20 
+
+> FIG. 5. Propagator and vertex conventions for diagrammatic computations.
+
+whose structure will be discussed in more detail later; to keep V dimensionless, the overall energy scale is extracted as 
+
+g = αhzJ/ 4, and we explicitly keep a minus sign in front to emphasize the attractive nature of the interaction. The hole-magnon vertex arising from (S30) has a single Nambu index, and can be directly written in vector form. Lastly, we have the two hole-hole interaction terms, eqns. (S27) and (S34), which we combine into the last vertex. Again keeping a minus sign to emphasize the attractive character, and taking out the dimensionful scale J, we have: 
+
+W NN  
+
+> Q,k,q
+
+= zS 2λ(γQ + γk−q), (S60a) 
+
+W 3S  
+
+> Q,k,q
+
+= 2 S2 (ξq,k−q + ξk+Q,q−k + ξq,Q + ξk+Q,−Q) . (S60b) Note that writing the magnon-magnon and hole-hole interaction vertices with a single dot is shorthand for including all possible decouplings, e.g. Hartree as well as Fock in the case of the holes. This is reflected in the structure of 
+
+W 3S  
+
+> Q,k,q
+
+, eq. (S60b), as well as V abcd  
+
+> Q,k,q
+
+, see Table II. In terms of other Feynman rules, we have one prefactor of i for each appearance of the magnon-magnon and respectively hole-hole vertices, as well as for every two hole-magnon interactions. Each fermion loop gets a −1 as usual. 
+
+> Conserving calculation
+
+From the Hamiltonian (S36), one can extract the bare propagators for magnons and holes. The linear spin-wave term (S42) yields 
+
+D0
+
+> k
+
+(ω) = 
+
+h
+
+[ω + iη B sgn( ω)] τ3 − Ω[ τ0 + γkτ1]
+
+i−1
+
+, (S61) where ηB = 0 + is a positive infinitesimal giving the time-ordering prescription, τ0 is the 2 × 2 identity matrix, and 
+
+τ1... 3 are the Pauli matrices. The only momentum dependence comes through the γk factor, which is invariant under the action of R defined in (S52); then, the property (S53b) clearly follows at the level of D0. As for the behavior under QAFM shifts, note that direct inversion of (S61) yields 
+
+D0
+
+> k
+
+(ω) = − [ω + iη B sgn( ω)] τ3 + Ω[ τ0 − γkτ1][Ω εk]2 − [ω + iη B sgn( ω)] 2 . (S62) The denominator is invariant under shifting by QAFM since εk is, while in the numerator we have momentum-independent coefficients for τ0 and τ3. So the diagonal components of D0 indeed obey (S54b). On the other hand, the coefficient of τ1 contains a single factor of γk, which changes sign upon the QAFM shift; it follows that (S55) also holds true at this level. Meanwhile, the holes only have a bare dispersion as a result of the three-site terms, eq. (S34); besides this, they can hop via (S30), which however couples them to the magnons. On the other hand, the quadratic term in (S27) only provides a correction of −2zJS 2λ to the chemical potential. Defining ˜ μ = μ − 2zJS 2λ and ηF = 0 +, we have 
+
+G0
+
+> k
+
+(ω) = 
+
+h
+
+ω − 4JS 2χk + iη F sgn( ω) + ˜ μ
+
+i−1
+
+. (S63) Since the momentum dependence of the above arises purely from χk, which is invariant under both R and QAFM 
+
+translations, as can be seen directly from eq. (S35a), we find that (S53a) and (S54a) hold true at this point. We employ the Luttinger-Ward functional to self-consistently determine dressed single-particle propagators for the magnons and holes, as well as the bimagnon Raman response. As shown in Figure 6, included are the lowest-order diagrams that can be constructed using each type of vertex introduced in the previous section. 21 
+
+> FIG. 6. Luttinger-Ward functional used in the calculations.
+> Magnon self-energy
+
+Begin by computing the magnon self-energy, which corresponds to cutting a single solid line from the diagrams depicted in Figure 6. The resulting contributions are presented in Figure 7, and can be interpreted as follows: 
+
+> FIG. 7. Diagrams for magnon self-energy.
+
+• The effect of magnon-magnon interactions on the single-particle propagator. In the absence of doping, this is known as the Oguchi correction, and is particularly well-behaved since it only scales the overall energy of the magnon response, without modifying its shape. It can therefore be understood as a renormalization of 
+
+J = 4 t2/U to J0 = (1 + r0)J, where in 2D we know r0 ≈ 0.157 [55]. We will argue that this convenient property continues to hold even in the presence of holes, although the correction will become doping-dependent, r(δ). 
+
+• An RPA-type contribution due to a hole polarization bubble. It encodes the kinetic effect of carrier delocalization trying to frustrate AFM order, and will be the main driver of magnon softening upon increasing the hole concentration. Writing the self-energy as Πk(ω) = ΠO 
+
+> k
+
+(ω) + ΠRPA  
+
+> k
+
+(ω), we have 
+
+ΠO 
+
+> k
+
+(ω)ab = −ig 
+
+Z
+
+> q,ε
+
+V badc 0,k,q Dcd  
+
+> q
+
+(ε), (S64a) 
+
+ΠRPA  
+
+> k
+
+(ω) = −2iSz 2t2
+
+Z
+
+> q,ε
+
+ γq γk+q
+
+  γq
+
+γk+q
+
+
+
+Gq(ε) Gk+q(ω + ε), (S64b) where the Einstein summation convention was used in the first line. Start with the Oguchi correction; to find it, we need the values of VQ,k,q at Q = 0, which are listed in Table II. Since the magnon-magnon interaction is instantaneous, the vertex in principle depends only on momenta, but not on frequencies. However, extra care must be taken when two legs from the same vertex are contracted with each other, as is the case in Oguchi-type diagrams. The frequency integral over a single propagator corresponds to its value at zero time difference, Z
+
+d¯ε Dk(ϵ) = Dk(0) , (S65) which, as we have seen, is a point of discontinuity in (S45) due to the nontrivial commutation relation [ ˆb, ˆb†] = 1. Since (S26b) is in fact normal-ordered, we should respect this by evaluating D00  
+
+> k
+
+(t = 0 −) but D11  
+
+> k
+
+(t = 0 +). The off-diagonal components do not suffer from this issue, as they are continuous at t = 0. Therefore, we obtain 
+
+Z
+
+d¯ε V badc 0,k,q Dcd  
+
+> q
+
+(ε) = V badc 0,k,q
+
+Z
+
+d¯ε exp iτ cd 3 ε0+ Dcd  
+
+> q
+
+(ε). (S66) 22 
+
+a b c d V abcd 0,k,q
+
+0 0 0 0 2γk−q + 2 0 0 0 1 γk + 2 γq
+
+0 0 1 0 γk + 2 γq
+
+0 0 1 1 2γk+q + 2 0 1 0 0 2γk + γq
+
+0 1 0 1 2γk−q + 2 γk+q
+
+0 1 1 0 00 1 1 1 2γk + γq
+
+1 0 0 0 2γk + γq
+
+1 0 0 1 01 0 1 0 2γk−q + 2 γk+q
+
+1 0 1 1 2γk + γq
+
+1 1 0 0 2γk+q + 2 1 1 0 1 γk + 2 γq
+
+1 1 1 0 γk + 2 γq
+
+1 1 1 1 2γk−q + 2 TABLE II. Magnon-magnon vertex entries, for all possible Nambu index combinations, at Q = 0. Note the symmetries 
+
+V abcd = V badc and V abcd = V abcd , where we denote j = 1 − j.
+
+Under the symmetrized convention (S49), we have D00  
+
+> k
+
+(0 −) = D00  
+
+> k
+
+(0) + i/ 2, as well as D11  
+
+> k
+
+(0 +) = D11  
+
+> k
+
+(0) + i/ 2, so that the above simplifies to 
+
+V badc 0,k,q
+
+Z
+
+d¯ε exp iτ cd 3 ε0+ Dcd  
+
+> q
+
+(ε) = V badc 0,k,q
+
+ iτ cd 0
+
+2 +
+
+Z
+
+d¯ε Dcd  
+
+> q
+
+(ε)
+
+
+
+= iV abcd 0,k,q
+
+ τ cd 0
+
+2 + Im 
+
+Z
+
+d¯ε Dcd  
+
+> q
+
+(ε)
+
+
+
+, (S67) where in the second step we have used the symmetry V badc = V abcd , as well as the fact that Dq(0) is purely imaginary. One may now write the individual components of the Oguchi self-energy, by integrating (S67) over q and multiplying by −ig ; we will only deal with the 00 and 01 ones explicitly, since the remaining two follow in a completely analogous manner, owing to the symmetry of V :
+
+ΠO 
+
+> k
+
+(ω)00 = g
+
+Z
+
+> q
+
+
+
+(2 + γk+q + γk−q) + Im 
+
+Z
+
+d¯ε
+
+h
+
+(2 γk−q + 2) D00  
+
+> q
+
+(ε)+ ( γk + 2 γq) D01  
+
+> q
+
+(ε) + D10  
+
+> q
+
+(ε) + (2 γk+q + 2) D11  
+
+> q
+
+(ε)
+
+i
+
+, (S68a) 
+
+ΠO 
+
+> k
+
+(ω)01 = g
+
+Z
+
+> q
+
+
+
+(2 γk + γq) + Im 
+
+Z
+
+d¯ε
+
+h
+
+(2 γk + γq) D00  
+
+> q
+
+(ε)+ (2 γk−q + 2 γk+q) D01  
+
+> q
+
+(ε) + (2 γk + γq) D11  
+
+> q
+
+(ε)
+
+i
+
+. (S68b) Momentum integrals of the form R 
+
+> q
+
+γk±q D00 /11  
+
+> q
+
+(ε) vanish due to the integrand’s behavior under QAFM shifts, as evidenced by Eqns. (S54b) and (S57). Similarly, we have γk
+
+R 
+
+> q
+
+D01 /10  
+
+> q
+
+(ε) = 0, via (S55) and (S58). Momentum integrals over a single factor of γ vanish by (S58) as well, so we arrive at 
+
+ΠO 
+
+> k
+
+(ω)00 = 2 g
+
+
+
+1 + Im 
+
+Z
+
+> q,ε
+
+h
+
+D00  
+
+> q
+
+(ε) + γq
+
+D01  
+
+> q
+
+(ε) + D10  
+
+> q
+
+(ε) + D11  
+
+> q
+
+(ε)
+
+i
+
+, (S69a) 
+
+ΠO 
+
+> k
+
+(ω)01 = 2 g
+
+
+
+γk + Im 
+
+Z
+
+> q,ε
+
+h
+
+γk
+
+D00  
+
+> q
+
+(ε) + D11  
+
+> q
+
+(ε) + ( γk−q + γk+q) D01  
+
+> q
+
+(ε)
+
+i
+
+. (S69b) In the second line, use the identity (S56) to rewrite the prefactor of D01  
+
+> q
+
+(ε), and the lattice symmetry (S59) to eliminate the ˜ γ terms. This leaves us with 2 γkγqD01  
+
+> q
+
+(ε), and since the frequency ε is integrated over to yield instantaneous correlation functions, we can make the replacement 2 D01  
+
+> q
+
+(ε) → D01  
+
+> q
+
+(ε) + D10  
+
+> q
+
+(ε). Indeed, 
+
+Dˆbˆb
+
+E
+
+and 
+
+Dˆb†ˆb†
+
+E
+
+are complex conjugates, but can in fact be gauged to purely real, equal values; we will always do so throughout 23 this work. It then becomes clear that ΠO 
+
+> k
+
+(ω)01 = γk
+
+ΠO 
+
+> k
+
+(ω)00 , and an identical derivation reveals ΠO 
+
+> k
+
+(ω)10 = ΠO 
+
+> k
+
+(ω)01 ,as well as ΠO 
+
+> k
+
+(ω)11 = ΠO 
+
+> k
+
+(ω)00 . The conclusion is compactly expressed as 
+
+ΠO 
+
+> k
+
+(ω) = 2 g [τ0 + γkτ1]
+
+
+
+1 + Im 
+
+Z
+
+> q,ε
+
+tr 
+
+h
+
+[τ0 + γqτ1] Dq(ε)
+
+i
+
+, (S70) and by comparison with (S61), we extract the doping-dependent Oguchi correction to J:
+
+r(δ) = 12S
+
+
+
+1 + Im 
+
+Z
+
+> q,ε
+
+tr 
+
+h
+
+[τ0 + γqτ1] Dq(ε)
+
+i
+
+. (S71) An alternative form can be found by relating the frequency integral of the magnon propagator to the instantaneous correlation functions via (S47)–(S49), 
+
+r(δ) = 12S
+
+
+
+1 −
+
+Z
+
+> q
+
+hD ˆb†
+
+> q
+
+ˆbq
+
+E
+
++
+
+Dˆb−qˆb†−q
+
+E
+
++ γq
+
+D ˆb−qˆbq
+
+E
+
++
+
+Dˆb†
+
+> q
+
+ˆb†−q
+
+Ei 
+
+. (S72) As a check, we can consider the zero-doping case. From the Bogoliubov approach (S43) we know 
+
+Dˆb†
+
+> q
+
+ˆbq
+
+E
+
+> 0
+
++
+
+Dˆb−qˆb†−q
+
+E
+
+> 0
+
+= 2 v2 
+
+> q
+
+= 1
+
+εq
+
+, (S73a) 
+
+Dˆb−qˆbq
+
+E
+
+> 0
+
++
+
+Dˆb†
+
+> q
+
+ˆb†−q
+
+E
+
+> 0
+
+= 2 uqvq = − γq
+
+εq
+
+, (S73b) which upon plugging back into (S72) and using 1 − γ2 
+
+> q
+
+= ε2
+
+> q
+
+, yields the familiar expression 
+
+r(0) = 12S
+
+
+
+1 −
+
+Z
+
+> q
+
+εq
+
+
+
+. (S74) Now consider the RPA term (S64b). Since the γ factors have no frequency dependence, we can rearrange it as 
+
+ΠRPA  
+
+> k
+
+(ω) = −2iSz 2t2
+
+Z
+
+> q
+
+ γ2 
+
+> q
+
+γqγk+q
+
+γqγk+q γ2
+
+> k+q
+
+ Z 
+
+d¯ε G q(ε) Gk+q(ω + ε). (S75) Its matrix structure can be highlighted by writing 
+
+ΠRPA  
+
+> k
+
+(ω) = Π 0
+
+> k
+
+(ω) τ0 + Π 1
+
+> k
+
+(ω) τ1 + Π 3
+
+> k
+
+(ω) τ3, (S76) with the corresponding coefficients Π0
+
+> k
+
+(ω) = −iSz 2t2
+
+Z
+
+> q
+
+ γ2 
+
+> q
+
++ γ2
+
+> k+q
+
+ Z
+
+d¯ε G q(ε) Gk+q(ω + ε), (S77a) Π1
+
+> k
+
+(ω) = −iSz 2t2
+
+Z
+
+> q
+
+2γqγk+q
+
+Z
+
+d¯ε G q(ε) Gk+q(ω + ε), (S77b) Π3
+
+> k
+
+(ω) = −iSz 2t2
+
+Z
+
+> q
+
+ γ2 
+
+> q
+
+− γ2
+
+> k+q
+
+ Z
+
+d¯ε G q(ε) Gk+q(ω + ε). (S77c) 
+
+Hole self-energy 
+
+We turn to the corresponding calculation for the holes. Cutting one dashed line from the Luttinger-Ward functional of Fig. 6, we arrive at the two diagrams depicted in Fig. 8, with the following physical interpretations: 
+
+• Scattering of a hole to different momentum states, via the emission / absorption of a magnon, through the coupling given by the kinetic term (S30) in the Hamiltonian. This describes the tendency of the hole to delocalize in the lattice, working against the energy cost of frustrating the AFM background. This term captures the essential polaronic physics which arises from the competition of kinetic and exchange terms in the t − J
+
+model. 24 
+
+FIG. 8. Diagrams for hole self-energy. 
+
+• The effect of hole-hole interactions, as described in eqns. (S27) and (S34). We will see that this only leads to a renormalization of the bare hole dispersion by (1 − δ), as well as some doping-dependent chemical potential corrections. The latter are completely irrelevant for this work, as we always consider fixed doping. We separate the contributions as Σ k(ω) = Σ SCBA  
+
+> k
+
+(ω) + Σ NN  
+
+> k
+
+(ω) + Σ 3S  
+
+> k
+
+(ω), and write for the kinetic term ΣSCBA  
+
+> k
+
+(ω) = 2 iSz 2t2
+
+Z
+
+> q,ε
+
+Gk+q(ω + ε)  γk γk+q
+
+ Dq(ε)
+
+ γk
+
+γk+q
+
+
+
+. (S78) For the hole-hole interactions, one must take into account the factor of two arising from the possible ways of contracting a pair of legs from the vertex. The nearest-neighbor interaction −J W NN  
+
+> Q,k,q
+
+yields a self-energy ΣNN  
+
+> k
+
+(ω) = 2 izJS 2λ
+
+Z
+
+> q,ε
+
+(γ0 + γk−q) Gq(ε), (S79) which can in turn be understood to consist of a Hartree contribution, arising from the γ0 ≡ 1 factor, and a Fock one, due to the γk−q term. The latter will vanish due to the QAFM shift properties (S54a) and (S57), while the former has no k or ω dependence and therefore renormalizes the chemical potential: ΣNN = 2 izJS 2λ
+
+Z
+
+> q,ε
+
+Gq(ε) = −2zJS 2λδ. (S80) Meanwhile, the three-site interaction −J W 3S  
+
+> Q,k,q
+
+gives Σ3S  
+
+> k
+
+(ω) = 4 iJS 2
+
+Z
+
+> q,ε
+
+Gq(ε) ( ξq,k−q + ξk,q−k + ξq,0 + ξk,0) , (S81) and we also aim to simplify this using the QAFM shift properties. From the definition (S35b), it follows that ξ
+
+is invariant under QAFM shifts of its first argument, but changes sign under shifting the second. Therefore, upon 
+
+q → q + QAFM , the terms involving ξq,k−q and ξk,q−k will flip sign, making their integrals vanish. Meanwhile, the contribution involving ξq,0 has no k or ω dependence, so it again renormalizes the chemical potential. By comparing (S35a) and (S35b), we see that ξq,0 ≡ χq, so we find Σ3S  
+
+> μ
+
+= 4 iJS 2
+
+Z
+
+> q,ε
+
+χq Gq(ε). (S82) Finally, the ξk,0 ≡ χk term is independent of q and ε, so it can be taken out of the integral. It yields a simple doping-dependent renormalization to the bare hole dispersion, Σ3S  
+
+> χ;k
+
+= 4 iJS 2χk
+
+Z
+
+> q,ε
+
+Gq(ε) = −4JS 2χk δ. (S83) 
+
+Single-particle propagators 
+
+We may now collect all the results above, and write self-consistent expressions for the dressed propagators of holes and magnons. Incorporating (S80) and (S82) into a doping-dependent effective chemical potential ˜μ(δ) = μ − 2zJS 2λ(1 − δ) − Σ3S  
+
+> μ
+
+, (S84) 25 and recalling that the Oguchi correction (S70) can be understood as an overall renormalization (S71) of J, we find 
+
+Gk(ω) = 
+
+h
+
+ω − 4JS 2(1 − δ)χk + iη F sgn( ω) + ˜ μ(δ) − ΣSCBA  
+
+> k
+
+(ω)
+
+i−1
+
+, (S85a) 
+
+Dk(ω) = 
+
+h
+
+[ω + iη B sgn( ω)] τ3 − Ω [1 + r(δ)] [ τ0 + γkτ1] − ΠRPA  
+
+> k
+
+(ω)
+
+i−1
+
+. (S85b) Starting from the noninteracting initial guesses (S61) and (S63), we employ an iterative approach to self-consistently solve the system formed by Eqns. (S71), (S75), (S78), and (S85). Namely, at the nth step, we start with a set of guesses G(n), D(n) for the propagators. Based on these, we find the self-energies Σ (n), r (n), Π(n). From the new self-energies, we compute new propagators ˜G(n), ˜D(n) using Eqns. (S85). At this point, we adjust the effective chemical potential ˜ μ in order to fix the doping δ to the desired value. Then, we pick the new propagator guesses to be fed into the next step as linear combinations of the old guess and the new result: G(n+1) = θ ˜G(n) + (1 − θ) G(n), and respectively D(n+1) = θ ˜D(n) + (1 − θ) D(n). The weight θ is dynamically chosen in order to accelerate convergence, based on the difference between ˜G(n) and G(n), and respectively between ˜D(n) and D(n). These differences, together with changes in ˜ μ, are also used to track solver convergence. All propagators and self-energies are sampled on a frequency grid of width 30 t and step size ∆ ω/t = 5 × 10 −3.Momentum space is discretized using a 32 × 32 or 64 × 64 grid, and the converged results are later extended to larger system sizes, if necessary for detailed plots. This extension works as follows: from the converged solution of the self-consistent equations, we take the self-energies Σ SCBA , ΠRPA and Fourier transform them in the spatial directions to obtain Σ SCBA  
+
+> r
+
+(ω), ΠRPA  
+
+> r
+
+(ω). With respect to r, the self-energies are finite-range; namely, they exponentially decay over characteristic length scales on the order of 10 sites (see the example in Fig. 9). With square lattice sizes of 32 or 64, the self-energies at the real-space grid edge are negligible. We may then further pad Σ SCBA and ΠRPA with zeros up to any desired size for plotting (e.g. 128 or 256), Fourier transform back to momentum space, and calculate the corresponding propagators.                      
+
+> FIG. 9. Absolute values of self-energies |ΣSCBA
+> r(ω)|and |ΠRPA
+> r(ω)|versus spatial separation r, at frequency ω=t/ 2, doping
+> δ= 7%, interaction strength U/t = 8, and broadenings ηF/t = 0 .2 respectively ηB/t = 0 .025. Note that the color scale is logarithmic, highlighting the exponential decay of the self-energies with the separation r.
+
+We note that, as seen in the main text, our self-consistent approach leads to nonperturbative results which capture the essential polaronic physics at low doping, as well as its modifications manifesting at higher dopant densities. Typical results for hole and magnon spectral functions, at U/t = 7 and along a Γ → M → X → Γ cut in the BZ, are presented in Fig. 10. It remains to argue that the symmetry properties (S53) – (S55) indeed hold for the dressed propagators (S85). With regard to holes, the momentum dependence arising from χk has already been discussed. The only new feature 26 
+
+FIG. 10. Typical single-particle spectral functions for holes (top row) and magnons (bottom row), at U/t = 7 and three different doping values δ ∈ { 3% , 9% , 15% }. Calculations performed for a 64 × 64 square lattice, on a frequency grid with spacing ∆ ω/t = 5 × 10 −3. Broadenings are ηB /t = 0 .025 and ηF /t = 0 .25, the latter being necessary for convergence at high dopings. We observe gradual closing of the gap in the polaron dispersion upon doping, as the magnons soften. Note also the appearance at high doping of hole spectral weight below the conventional polaron band bottom, as well as the broadening of magnons. 
+
+is the dependence due to Σ SCBA  
+
+> k
+
+(ω), which obeys ΣSCBA  
+
+> Rk
+
+(ω) = 2 iSz 2t2
+
+Z
+
+> q,ε
+
+GRk +q(ω + ε)  γRk γRk +q
+
+ Dq(ε)
+
+ γRk 
+
+γRk +q
+
+
+
+= 2 iSz 2t2
+
+Z
+
+> q,ε
+
+GR(k+q)(ω + ε)  γRk γR(k+q)
+
+ DRq (ε)
+
+ γRk 
+
+γR(k+q)
+
+
+
+, (S86) where in going from the first to the second line we have changed the integration variable q → Rq . All γ factors and propagators are assumed to be invariant under R, so the RHS indeed reduces to Σ SCBA  
+
+> k
+
+(ω), which self-consistently results in (S53a). Under shifting k → k + QAFM , we use the change in sign of γ to write ΣSCBA  
+
+> k+QAFM
+
+(ω) = 2 iSz 2t2
+
+Z
+
+> q,ε
+
+Gk+QAFM +q(ω + ε)  −γk −γk+q
+
+ Dq(ε)
+
+ −γk
+
+−γk+q
+
+
+
+, (S87) so the sign flips due to γ factors cancel out, and under the assumption that G is invariant, so is Σ SCBA ; the property (S54a) follows. Moving on to the magnons, we note that the scalar description of the Oguchi correction, via r(δ), does not affect the symmetry properties at all. We consider instead ΠRPA , which is clearly invariant under the action of R by the same argument as (S86): all of the propagators and form factors entering its expression are not affected by R. With (S53b) settled, it remains to focus on the shift by QAFM , which is slightly complicated by the matrix structure of D.Investigation of (S77) shows that Π 0
+
+> k
+
+(ω) and Π 3
+
+> k
+
+(ω) are even, while Π 1
+
+> k
+
+(ω) is odd under this shift. Indeed, all the hole propagators are assumed to be even, and γ2 
+
+> q
+
+± γ2 
+
+> k+q
+
+is also invariant due to the squaring of individual γ factors. On the other hand, γqγk+q is odd since the shift only applies to k. Without inverting (S85b) explicitly, we can still see that the diagonal entries in [ Dk(ω)] −1 are even under the QAFM shift, while the off-diagonal ones are odd. By the same argument as for the bare propagator, then, we arrive at the properties (S54b) and (S55). 
+
+Bimagnon spectrum and Raman-type probing 
+
+In this section, we compute the bimagnon Raman response at finite doping, consistent with the single-particle behavior found in the previous part. We also describe a simple estimate of the charge contribution to Raman-type 27 spectra, which features suppressed response below a threshold set by J∗.We apply the d-wave perturbation ˆHLF ∝ X
+
+> n
+
+⃗Sn · (⃗ Sn+ˆ y +⃗ Sn−ˆy −⃗ Sn+ˆ x −⃗ Sn−ˆx), (S88) and also measure the same correlation function. This corresponds to the B 1g channel in optical Raman measure-ments, which for e.g. cuprates displays the usual bimagnon peak. With the sublattice rotation and auxiliary-boson transformation, we found in eq. (S38) the vertex ˆV2M = 4 αhzS tU ∆t X
+
+> k
+
+˜γk
+
+ˆbkˆb−k + ˆb†
+
+> k
+
+ˆb†−k
+
+
+
+. (S89) Compared to the usual spin-wave Hamiltonian (S26a), which had s−wave symmetry, the d−wave nature of (S88) leads to the cancellation of diagonal ˆb†
+
+> k
+
+ˆbk terms, as well as to the replacement γk → ˜γk. Diagrammatically, this gives rise to a Raman vertex Γ 0, creating or annihilating a pair of magnons at zero total momentum. Making for brevity the notation ζ = 4 αhzSt ∆t/U , we have the Nambu structure [Γ 0]ab  
+
+> k
+
+= ζ
+
+ 0 ˜γk
+
+˜γk 0
+
+ab 
+
+= ζ ˜γkτ ab 1 . (S90) 
+
+Ladder Bethe-Salpeter equation 
+
+FIG. 11. Definition of the dressed Raman vertex for bimagnons. 
+
+It is well-known that magnon-magnon interactions are crucial for recovering the correct position of the bimagnon peak in Raman response. In consequence, we also define a dressed vertex Γ, shown in Figure 11, which contains the corrections resulting from such interactions. Using the ladder approximation for the Bethe-Salpeter equation governing this vertex, depicted in Figure 12, we arrive at Γab  
+
+> k
+
+(ω, ε ) = [Γ 0]ab  
+
+> k
+
+(ω, ε ) − ig 
+
+Z
+
+> q,ν
+
+Γcd  
+
+> q
+
+(ω, ν ) Ddf  
+
+> q
+
+(ν) Dec  
+
+> q
+
+(ν + ω) V efab 0,q,k. (S91) Here, we have already used the fact that magnon-magnon interactions V efab 0,q,k are instantaneous, and therefore do not 
+
+FIG. 12. Bethe-Salpeter equation for the dressed bimagnon Raman vertex. 
+
+depend on any of the frequencies associated with their legs. The bare vertex Γ 0, given in (S90), is also frequency-independent. It follows that the RHS of (S91) does not contain any ε, and with regard to the LHS, this means that the dressed vertex Γ only depends on the external frequency ω. We arrive at Γab  
+
+> k
+
+(ω) = [Γ 0]ab  
+
+> k
+
+(ω) − ig 
+
+Z
+
+> q
+
+V efab 0,q,k Γcd  
+
+> q
+
+(ω)
+
+Z
+
+d¯ν Ddf  
+
+> q
+
+(ν) Dec  
+
+> q
+
+(ν + ω), (S92) 28 and for simplicity make the following notation of the magnon bubble frequency integral: 
+
+Lcdef  
+
+> q
+
+(ω) = Ω 
+
+Z
+
+d¯ν Ddf  
+
+> q
+
+(ν) Dec  
+
+> q
+
+(ν + ω). (S93) One factor of the spin-wave energy scale Ω has been included in the definition, to keep Lq dimensionless. In turn, we define the dimensionless magnon-magnon coupling constant, ˜g = g
+
+Ω = 14S . (S94) We must now deal with the momentum integral in (S92). The important observation is that the bare vertex [Γ 0]k
+
+has d−wave symmetry with respect to k, and the interaction V0,q,k does not mix different symmetry channels. The magnon bubble Lcdef  
+
+> q
+
+is invariant under the action of R because each magnon propagator is, and it is also even under the QAFM shift since it contains two magnon propagtors. As Lq does not affect symmetry properties of Γ, it follows that we can separate the momentum dependence of the dressed Raman vertex as Γab  
+
+> k
+
+(ω) = ζ ˜γkXab (ω). (S95) The rigorous proof is, just as for the symmetry properties of single-particle propagators, achieved by induction. The base case is the bare vertex (S90), which of course obeys the desired property. One may then define a sequence Γ n
+
+of vertices dressed with n magnon interactions, using an equation akin to (S92) to relate Γ n+1 to Γ n. To avoid such steps which bring no additional enlightenment, we again work directly in the limit (S92). Plugging (S90) and (S95) into the RHS, we find Γab  
+
+> k
+
+(ω) = ζ ˜γkτ ab 1 − i˜gζX cd (ω)
+
+Z
+
+> q
+
+V efab 0,q,k ˜γq Lcdef  
+
+> q
+
+(ω), (S96) and we need to plug in the vertex V efab 0,q,k. Individual entries are already presented in Table II, and the information can be reformulated as 
+
+V efab 0,q,k = Cefab + γkKefab + γqQefab + 12 (γk+q − γk−q)Aefab + 12 (γk+q + γk−q)Sefab , (S97) where each of {C , K, Q, A, S} is a constant tensor with four Nambu indices. Upon integrating over q in (S96), all but the last of these terms will give vanishing contributions. Indeed, recalling that Lq is invariant under all relevant symmetry operations, 
+
+• the C and γkK terms have no q dependence and can be taken out of the integral, leaving the integrand as ˜ γq Lq.Since this is odd under the action of R, the result is zero; 
+
+• from the term containing Q, an additional γq remains in the integrand. However, this is even under R and the rest is still odd, so it will vanish; 
+
+• for the contribution with A, note that ( γk+q − γk−q) is odd under inversion of q, i.e. two actions of R. But the rest of the integrand is even under this, so we again get zero.         
+
+> a b c d Sabcd
+> 0 0 0 0 20 0 1 1 20 1 0 1 41 0 1 0 41 1 0 0 21 1 1 1 2TABLE III. Individual nonzero components of the constant tensor S, which governs the d-wave bimagnon states.
+
+29 The S tensor is explicitly presented in Table III. We indeed see that only its contribution in (S97) survives integration, and furthermore can be re-expressed using the identity (S56) as 12 (γk+q + γk−q)Sefab = ( γkγq + ˜ γk ˜γq) Sefab , (S98) and the contribution of γkγq will also vanish by the same arguments as above. We obtain Γab  
+
+> k
+
+(ω) = ζ ˜γk
+
+
+
+τ ab 1 − i˜gX cd (ω) Sefab 
+
+Z
+
+> q
+
+˜γ2 
+
+> q
+
+Lcdef  
+
+> q
+
+(ω)
+
+
+
+, (S99) which not only completes the proof of (S95), but also yields the self-consistency equation for X. Making the notation 
+
+Lcdef (ω) = 
+
+Z
+
+> q
+
+˜γ2 
+
+> q
+
+Lcdef  
+
+> q
+
+(ω), (S100) we obtain 
+
+Xab (ω) = τ ab 1 − i˜gX cd (ω)Lcdef (ω)Sefab . (S101) The remaining linear algebra problem is straightforward to solve if we define the flattened indices 
+
+x → (a, b ), (S102a) 
+
+y → (c, d ), (S102b) 
+
+z → (e, f ), (S102c) in terms of which X and τ1 become vectors, while L and S matrices. We have 
+
+Xx(ω) = τ x1 − i˜gX y(ω)Lyz (ω)Szx , (S103) with the solution 
+
+X(ω) = τ1 [1 + i˜gL (ω)S]−1 . (S104) 
+
+Bimagnon response 
+
+Knowing the dressed vertex Γ k(ω), we may now extract the two-magnon spectrum as − Im Λ( ω), where Λ( ω) is the correlation function depicted in Fig. 13: 
+
+FIG. 13. Bimagnon Raman spectrum, as a function of the dressed vertex. 
+
+Λ( ω) = i
+
+Z
+
+> k,ε
+
+Γab  
+
+> k
+
+(ω) [Γ ∗
+
+> 0
+
+]cd  
+
+> k
+
+Dbd  
+
+> k
+
+(ε) Dca  
+
+> k
+
+(ε + ω). (S105) Using the notation from before, this simplifies to Λ( ω) = i ζ2
+
+Ω Xab (ω)
+
+Z 
+
+> k
+
+˜γ2 
+
+> k
+
+Labcd  
+
+> k
+
+(ω)
+
+
+
+τ cd 1 = i ζ2
+
+Ω X(ω)L(ω) τ1, (S106) and together with (S104), we find the final answer Λ( ω) = i ζ2
+
+Ω τ1 [1 + i˜gL (ω)S]−1 L(ω) τ1. (S107) 30 
+
+> Estimation of Raman-type charge contribution
+
+In order to illustrate the interplay between magnetic and charge responses in doped systems – in particular, how the energy scale J∗ controls pseudogap-like behavior in observables primarily related to charge DOF – we estimate the charge contribution to Raman-type spectra at finite doping. Recall that a hopping modulation (S10) in the Hubbard model maps, under the Schrieffer-Wolff and auxiliary-boson transformations, to three effective Raman vertices: the Loudon-Fleury one (S38) governing spin response, a kinetic one (S37) describing hole scattering together with magnon creation / annihilation, as well as a 3-site one (S39) which concerns only the charge DOF at leading order. Previously, we have considered in detail the Loudon-Fleury contribution to the Raman spectrum, and found an RPA-type solution (S107) to the two-magnon Bethe-Salpeter equation, yielding the well-known bimagnon Raman peak. Here, we turn to the contributions from the remaining two vertices. In solid-state systems such as certain underdoped cuprates, a rather flat and featureless continuum appears in the Raman spectrum at finite doping, with total weight proportional to the doping level. Its intensity is negligible at very low energy transfers, it typically picks up weight around the frequency where the bimagnon peak is located, and then extends up to much higher energies (see for example Fig. 1 of Ref. [48]). The continuum is attributed to charge response, and the reduced weight at low frequencies is a typical signature of the pseudogap regime. Owing to the practically featureless nature of this continuum, we are motivated to estimate it even in the absence of vertex corrections. We therefore consider the direct contraction of two kinetic Raman vertices ˆVkin with the self-consistent single-particle propagators for holes and magnons. The resulting charge-charge contribution to the signal has the expression Λkin (ω) = 2 S (z∆t)2
+
+Z
+
+> q,ν
+
+tr [ Hq(ω + ν) Dq(ν)] , (S108) where we have defined the hole bubble contracted with d−wave vertices, 
+
+Hq(ω + ν) ≡ i
+
+Z
+
+> k,ε
+
+ ˜γk
+
+˜γk+q
+
+
+
+Gk+q(ε + ω + ν) Gk(ε)  ˜γk ˜γk+q
+
+ . (S109) In practice, the appearance of the magnon propagator Dq(ν) in (S108) will favor q lying on the diamond of the BZ, as well as the frequency condition ν ∼ 2J∗, since this is where the single-magnon DOS is peaked. The hole bubble 
+
+H, on the other hand, yields a rather flat response with characteristic width 8 t, due to the markedly incoherent nature of G. Bringing the two together, we obtain a flat continuum starting at a frequency comparable to that of the bimagnon peak (and thus dictated by J∗), extending to much higher frequencies, and enclosing total weight proportional to δ (See Fig. 3 in the main text). It is thus in good qualitative agreement with the typical experimental features discussed above, and motivates the understanding of low-frequency response suppression – the signature of the pseudogap regime – as being intimately connected to the magnetic energy scale J∗.Finally, let us comment on other possible combinations of vertices. If we take mixed terms between ˆVkin and ˆV2M ,we should use the dressed vertex Γ ab  
+
+> k
+
+(ω) for the Loudon-Fleury part. As this has a strong resonance at ω = ω2M (δ), the result will have most of its weight concentrated around the bimagnon peak. This amounts to a doping-dependent renormalization of the bimagnon peak weight, but should not yield important qualitative changes. The contraction of ˆV3−site with itself (again in the absence of vertex corrections) yields a contribution which we have numerically found to be negligible, while the pairing of ˆV3−site with ˆVkin or ˆV2M is also expected to be unimportant, owing to the very small amplitude of ˆV3−site itself. We are led to the conclusion that Eqns. (S107) and (S108) capture the essential features of Raman-type spectra in doped systems, and highlight further connections between J∗ and pseudogap behavior. 
+
+> Emergent magnetic energy scales in the RPA approach
+
+In this section, we closely investigate the magnon self-energy ΠRPA  
+
+> k
+
+(ω), Eq. (S75), which is the essential driver of the physics explored in our work. We argue why the magnon modes naturally split into two categories, namely the ones in the immediate vicinity of the gapless points Γ and M, and respectively everything else; and why they are governed by two different energy scales Jρ and respectively J∗. We provide further insight into how the hole spectral function determines the distinct doping behavior of these two magnetic energy scales. 31 In the main text, we take t > 0 for simplicity; here, we relax that assumption in order to provide a more general argument. This simply amounts to making the replacement t → | t| in most of the final results. 
+
+> Kinetic renormalization of exchange at high energies
+
+We begin by noting that all three components of the RPA self-energy ΠRPA  
+
+> k
+
+(ω), described in Eqns. (S77), contain the same frequency integral over the hole bubble, 
+
+i
+
+Z
+
+d¯ε G q(ε) Gk+q(ω + ε). (S110) Our self-consistent solution for the hole spectral function shows that the polaron is coherent only within a narrow range of momenta around its dispersion minimum (see Fig. 10). Therefore, in order to obtain an overlap of two such sharp features in the integral (S110), the frequency transfer ω must be small, on the order of the coherent hole bandwidth. Further restrictions arise from the condition that the momentum transfer k connects two low-energy pockets in the polaron dispersion, i.e. it must be close enough to one of (0 , 0), ( π, 0), (0 , π ), or ( π, π ). For the purpose of finding the magnon dispersion, we are interested in ΠRPA  
+
+> k
+
+(ω) at the new pole location, i.e. ( k, ω ) must be on-shell with the (renormalized) magnons. Since the ( π, 0) and (0 , π ) magnons are very high-energy, values of k around these points are immediately disqualified. The conclusion is that, in order to have any relevant overlap of coherent features from hole spectral functions, we are restricted to low ω, as well as momenta k close to the gapless points of the magnon dispersion (Γ or M). This region of momentum space is extremely narrow, as the hole excitation must be nearly on-shell with a magnon. That condition is difficult to satisfy because the polaron is very heavy, whereas the magnon is massless. In the next subsection, we will take a close look at this narrow region of low-energy magnons, and indeed find that their behavior upon doping is drastically different from the universal scaling (1). Here, however, we focus on the vast majority of magnon modes, which are not immediately near Γ or M. For them, it is an excellent approximation to ignore overlap of coherent hole features in (S110). When the sharp peaks in hole spectral functions do not overlap, even the existence of such features is completely irrelevant: a narrow peak integrated against a featureless, almost-flat background will only yield the product of the background height and the peak weight. We may therefore vastly simplify our approach by retaining the hole bandwidth, but otherwise ignoring the particular dispersion details. In fact, we can entirely replace the propagator 
+
+Gq(ε) by a dispersionless , fully incoherent approximation (e.g. box or semicircle spectral function), with characteristic width set by |t|; we find that qualitative conclusions are the same regardless of the shape of this incoherent substitute. As the spectral function is normalized, R dε B (ε) = 1, typical values of B(ε) will be on the order of |t|−1. The frequency integral of G(ε) G(ω + ε), for |ω| ≪ | t|, will then scale with |t|−1. Moreover, it should be proportional to 
+
+δ, at least for small dopings. We arrive at the approximation 
+
+i
+
+Z
+
+d¯ε G q(ε) Gk+q(ω + ε) → δ
+
+|t| g(ω), (S111) which has no dependence on the momentum k. Here, the dimensionless function g(ω) obeys g(|ω| ≪ | t|) ∼ O (1) real and positive, as well as g(|ω| ≫ | t|) → 0. Note that in the intermediate regime |ω| ∼ | t|, the function g(ω) can acquire a significant imaginary part, as the scattering of charge excitations can damp magnon modes. The momentum integrals in (S77) can be performed analytically, giving 
+
+Z
+
+> q
+
+ γ2 
+
+> q
+
++ γ2
+
+> k+q
+
+ = 12 , (S112a) 2
+
+Z
+
+> q
+
+γqγk+q = γk
+
+2 , (S112b) 
+
+Z
+
+> q
+
+ γ2 
+
+> q
+
+− γ2
+
+> k+q
+
+ = 0 . (S112c) Since Π 3
+
+> k
+
+(ω) = 0 and Π 1
+
+> k
+
+(ω) = γkΠ0
+
+> k
+
+(ω), we again have a self-energy contribution whose Nambu and momentum structure are summarized as [ τ0 + γkτ1]. We have seen that this can be understood as a (scalar) correction to J.32 By including the finite-doping Oguchi correction (S71) and comparing with (S61), we find the effective exchange interaction, 
+
+J∗(ω) = Jδ −
+
+ zg (ω)2
+
+
+
+|t| δ, (S113) where Jδ ≡ αh[1 + r(δ)] J. The above recovers the Anderson-type competition between the superexchange J on the one hand, and the delocalization tendency of charge carriers, quantified by |t|δ, on the other. As discussed in the main text, the middle of the magnon spectrum is typically low enough in energy to make the further approximation 
+
+g(ω) ≈ g(0) > 0, which directly yields a frequency-independent effective exchange. Dividing (S113) by J0 = (1 + r0)J,and plugging in J = 4 t2/U , we find in this case 
+
+J∗
+
+J0
+
+≈ αh
+
+1 + r(δ)1 + r0
+
+−
+
+ zg (0) 8(1 + r0)
+
+ U
+
+|t| δ, (S114) which is identical to the universal scaling (1) if we ignore the doping dependence of αh and r(δ). In practice, these effects are subleading, while most of the reduction in J upon doping indeed comes from the kinetic term. As discussed in a footnote to the main text, including these subleading effects will only correct the slope a in Eq. (1) at orders t/U and above. We also note that towards the top of the magnon spectrum, the approximation g(ω) ≈ g(0) begins to lose some of its accuracy. The main deviation consists in g(ω) acquiring an imaginary part, which in turn leads to visible damping of high-energy magnons. Although those peaks in the magnon spectral function are broadened, their position still retains the same linear behavior with doping as described by the universal scaling (1). The simple picture described in this section remarkably reproduces the linear scaling of J∗ with doping δ, in agreement with the full numerical calculation as well as experiments. It further reveals that the origin of this magnetic energy scale renormalization – and so perhaps of the pseudogap regime boundary – is fundamentally kinetic in nature. The foundations of this reasoning – the shape of polaron dispersion, its incoherence away from the band bottom, and the dispersion mismatch between polaron and magnon – are general, and transcend the specific assumptions of our current approach. We therefore expect this line of argumentation to be generally applicable to a wide range of systems. 
+
+> Low-energy magnons
+
+Having established the doping-induced renormalization of magnons at intermediate frequencies, we now consider the modes around the gapless points Γ and M. For simplicity, we focus on low ( k, ω ) in the vicinity of Γ, while the results around M are identical due to the symmetry properties (S54) and (S55). The full inverse propagator for the magnons, eq. (S85b), with the RPA self-energy separated as in (S76), gives 
+
+D−1 
+
+> k
+
+(ω) = [ ω + iη B sgn( ω) − Π3
+
+> k
+
+(ω)] τ3 − zJ δ S + Π 0
+
+> k
+
+(ω) τ0 − zJ δ S γ k + Π 1
+
+> k
+
+(ω) τ1. (S115) Note that the magnon dispersion ωk is set by the solution of det D−1 
+
+> k
+
+(ωk) = 0. This translates to 0 = zJ δ S(1 − γk) + Π 0
+
+> k
+
+(ωk) − Π1
+
+> k
+
+(ωk)  zJ δ S(1 + γk) + Π 0
+
+> k
+
+(ωk) + Π 1
+
+> k
+
+(ωk) − ωk + iη B − Π3
+
+> k
+
+(ωk)2 . (S116) In general, the solution ωk cannot be extracted directly. However, by expanding at |k| ≪ 1 and 0 ≤ ωk ≪ J, we can determine the spin stiffness. Based on symmetry considerations, we can write the lowest terms in the series: Π0
+
+> k
+
+(ω) ≈ ˜Π00 + ω ˜Π0 
+
+> ω, 1
+
++ ω2 ˜Π0 
+
+> ω, 2
+
++ |k|2 ˜Π0 
+
+> k
+
++ . . . , (S117a) Π1
+
+> k
+
+(ω) ≈ ˜Π10 + ω ˜Π1 
+
+> ω, 1
+
++ ω2 ˜Π1 
+
+> ω, 2
+
++ |k|2 ˜Π1 
+
+> k
+
++ . . . , (S117b) Π3
+
+> k
+
+(ω) ≈ ω |k|2 ˜Π3 + . . . . (S117c) The reasoning for these forms, based on the properties of the definitions (S77), is as follows: 
+
+• All components of Πk(ω) must have the symmetries of the lattice with respect to k, by the definition of the self-energy. So with respect to momentum they can only contain even-order terms. Furthermore, due to the symmetry between the ˆ x and ˆ y axes, the only allowed term at second order is k2 
+
+> x
+
++ k2 
+
+> y
+
+= |k|2.
+
+• Π3 starts linear in ω since it is an odd function in frequency. However, since it identically vanishes at zero momentum, Π 30(ω) = 0, the lowest term in its expansion has to be ω |k|2.33 Furthermore, it is clear from their definition that the first two components of Π are identical for zero momentum, Π00(ω) = Π 10(ω). In particular, this means that in the expansion we have the following equalities between coefficients: ˜Π00 = ˜Π10 ≡ ˜Π0, together with ˜Π0 
+
+> ω, 1
+
+= ˜Π1 
+
+> ω, 1
+
+≡ ˜Πω, 1, as well as ˜Π0 
+
+> ω, 2
+
+= ˜Π1 
+
+> ω, 2
+
+≡ ˜Πω, 2.We now plug the expansion (S117) into equation (S116), and find the spin-wave velocity. The goal is to find an expression for the dispersion relation ωk related to the low-energy exchange Jρ as follows: 
+
+ωk = zS 
+
+√2 Jρ |k|. (S118) This confirms that ωk and |k| appear at the same order, and the simultaneous expansion in both variables is well-defined. To second order in the expansion, then, the result is 0 = det D−1 
+
+> k
+
+(ωk) ≈ 12 |k|2 
+
+zJ δ S + ˜Π0
+
+ h 
+
+zJ δ S + 4 
+
+ ˜Π0 
+
+> k
+
+− ˜Π1
+
+> k
+
+i 
+
+− ω2
+
+> k
+
+, (S119) whose positive-frequency solution is straightforwardly extracted, and yields the linear dispersion (S118) with 
+
+Jρ =
+
+vuut Jδ + ˜Π0
+
+zS 
+
+! 
+
+Jδ + 4
+
+zS 
+
+ ˜Π0 
+
+> k
+
+− ˜Π1
+
+> k
+
+
+
+. (S120) It remains to find the coefficients ˜Π0 and respectively ˜Π0 
+
+> k
+
+− ˜Π1
+
+> k
+
+. Recall from Eq. (S117) and the following paragraph that ˜Π0 is just the ( k = 0, ω = 0) value of Π 0
+
+> k
+
+(ω) as well as Π 1
+
+> k
+
+(ω), i.e. by comparing with (S77) we find ˜Π0 = −2iSz 2t2
+
+Z
+
+> q
+
+γ2
+
+> q
+
+Z
+
+d¯ε G 2
+
+> q
+
+(ε). (S121) It is advantageous to define the frequency integral 
+
+Bq(δ) ≡ i|t|
+
+Z
+
+d¯ε G 2
+
+> q
+
+(ε) ∈ R, (S122) where we emphasized the doping dependence by writing δ as an argument. In terms of this, we then find ˜Π0
+
+zS = −2z|t|
+
+Z
+
+> q
+
+γ2 
+
+> q
+
+Bq(δ). (S123) On the other hand, to find ˜Π0 
+
+> k
+
+− ˜Π1
+
+> k
+
+, we must investigate the momentum dependence of Π 0
+
+> k
+
+(ω) − Π1
+
+> k
+
+(ω) for vanishing frequency, ω = 0. Using the definitions (S77), we write this difference as Π0
+
+> k
+
+(0) − Π1
+
+> k
+
+(0) = −iSz 2t2
+
+Z
+
+> q
+
+(γk+q − γq)2
+
+Z
+
+d¯ε G q(ε) Gk+q(ε). (S124) By writing γk+q − γq ≈ k · (∇qγq) + . . . , we see that the momentum prefactor in (S124) is already at order |k|2. This means that for the second-order momentum contribution we can already take k = 0 for hole propagators inside the frequency integral. After basic manipulations, and using the symmetry property (S53a), we arrive at 4
+
+zS 
+
+ ˜Π0 
+
+> k
+
+− ˜Π1
+
+> k
+
+
+
+= −z|t|
+
+Z
+
+> q
+
+sin 2 qx + sin 2 qy
+
+2 Bq(δ). (S125) Combining the above, we have the expression for Jρ corresponding to eq. (6) in the main text: 
+
+Jρ =
+
+s
+
+Jδ − 2z|t|
+
+Z
+
+> q
+
+γ2 
+
+> q
+
+Bq(δ)
+
+  
+
+Jδ − z|t|
+
+Z
+
+> q
+
+sin 2 qx + sin 2 qy
+
+2 Bq(δ)
+
+
+
+. (S126) When both terms inside the square root have the same sign, we find a real and positive Jρ. However, if they have opposite signs, Jρ becomes imaginary, signaling a simultaneous instability of all low-energy magnon modes, and therefore a collapse of AFM order. In practice, the second term inside the square root of (S126) will dominate the doping dependence, and thus determine the collapse. The reasoning is as follows: 34 
+
+• The polaron dispersion has minima at ( ±π/ 2, ±π/ 2), and is rather dispersionless on the entire diamond of the Brillouin zone. These low-energy regions have strong quasiparticle peaks, which will get doped first, and give rise to strong contributions in Bq. Points such as (0 , 0) and ( π, π ) will have much broader features lying at higher energies, so their corresponding Bq will be less relevant. 
+
+• The form factor γ2
+
+> q
+
+, appearing in the first integral, vanishes on the entire diamond and peaks at (0 , 0) as well as ( π, π ). Therefore, it has weak overlap with Bq, and yields a small integral. 
+
+• In contrast, sin 2 qx + sin 2 qy peaks at ( ±π/ 2, ±π/ 2) and vanishes at (0 , 0) as well as ( π, π ), having very strong overlap with Bq. Thus, the corresponding momentum integral will be much larger. So, in the regime of low dopings, it is a reasonable approximation to take 
+
+Jρ ≈
+
+s
+
+Jδ
+
+
+
+Jδ − z|t|
+
+Z
+
+> q
+
+sin 2 qx + sin 2 qy
+
+2 Bq(δ)
+
+
+
+, (S127) and the stability condition for AFM order can be summarized as 
+
+Jδ − z|t|
+
+Z
+
+> q
+
+sin 2 qx + sin 2 qy
+
+2 Bq(δ) > 0. (S128) As discussed above, for very small dopings, the bubble Bq(δ) only acquires nontrivial values near the polaron band minima q = ( ±π/ 2, ±π/ 2), where the momentum form factor (sin 2 qx + sin 2 qy )/2 is equal to 1; we can therefore define B(δ) ≡ R 
+
+> q
+
+Bq(δ) and simplify the above condition to 
+
+Jδ − z|t|B (δ) > 0. (S129) This expression allows us to reexamine the fate of long-range AFM order at zero temperature and small δ. If the polaron was a perfectly coherent quasiparticle, B(δ) would be given by the Lindhard function at zero momentum and frequency. Since the latter is related to the density of states at the Fermi level, Eq. (S129) translates to a Stoner-type stability condition. In practice, due to the high polaron mass, we tend to obtain a large DOS which violates the inequality. This has led to the theoretical suggestion that AFM order is unstable upon any infinitesimal doping. On the other hand, if the polaron spectral function is broadened by any means, the low-doping behavior of our bubble will instead tend to be B(δ) ∝ δ. The connection between this regime and the Stoner one described above, which is an issue closely related to the order of limits when we consider ηF → 0, is beyond the scope of this work. In general, however, the B(δ) ∝ δ behavior leads to a stability condition of the form Jδ − b δ > 0, where we defined the constant b ≡ z|t|B (δ)/δ . For very small dopings the difference between Jδ and J0 is negligible, and we can therefore estimate the critical doping δAFM ≈ J0/b . This not only yields a finite range of dopings supporting AFM order, but also gives rise to the following approximate behavior for Jρ:
+
+Jρ ≈ pJ0 (J0 − b δ ) = J0
+
+r
+
+1 − δδAFM 
+
+, (S130) in agreement with previous theoretical approaches. In our calculations, a straightforward way to implement such broadening is to take ηF > 0, in which case we obtain δAFM ∝ √ηF (see Fig. 15). As mentioned in the main text, when U/t = 8, typical values for the AFM critical doping δAFM ∼ 4−5% are obtained from relatively small broadening 
+
+ηF /t ∼ 0.05. Since even the existence of perfectly sharp, δ−like quasiparticle peaks for polarons in the t − J model is contested (see Refs. [31, 71, 72] versus [73, 74]), and real-world experimental systems will always include sources of decoherence and broadening, we may indeed expect to find finite δAFM . Moreover, the conclusion of our approach is that by tuning ηF experimentally, one may indeed control the range of dopings over which long-range AFM order survives. 
+
+> Numerical results of self-consistent approach
+
+Having gathered analytical intuition about the two magnetic energy scales which emerge upon doping, we compare our approximate results with the full numerical solution of the self-consistent problem, Eq. (S85). Using Eqns. (S50b) 35 and (S51), we can obtain for every doping δ the magnon spectral function Ak(ω). Then, at every momentum k, we extract the (positive) frequency ωk of the peak in Ak(ω), which gives the magnon dispersion. Recalling that spin-wave theory for the undoped case predicts ωk = 2 Jε k, where εk = p1 − γ2
+
+> k
+
+, we are motivated to define 
+
+Jk(δ) = ωk(δ)2εk
+
+. (S131) If a single energy scale indeed governs an entire region of the Brillouin zone, all the corresponding momentum points should yield the same value of Jk. Figure 14(a) presents numerical results for Jk(δ) at U/t = 8 and three different dopings. In order to meaningfully include data from the entire 2D Brillouin zone within this plot, the ˆ x−axis represents the εk value of the 2D momentum k, i.e. each magnon energy contour of the undoped system gets mapped to a single horizontal coordinate. We can see that, for low dopings, the entire spectrum is governed by one energy scale. On the other hand, upon increasing δ, a clear distinction appears between the low-energy modes, which are governed by a smaller Jρ, and the higher ones, whose dispersion is set by the larger J∗.                                             
+
+> FIG. 14. Extracting magnetic energy scales from the self-consistent numerical solution for the magnon and hole propagators, at U/t = 8 and ηB/t = 0 .025. (a) Momentum-resolved effective exchange, defined by Jk=ωk/2ϵk, at three representative dopings, for ηF/t = 0 .2. Dashed lines denote the Jρcalculated using the hole propagator, cf. Eq. (S126). For the higher dopings, we see a clear distinction between J∗governing the top of the magnon spectrum, and Jρdetermining the bottom. (b) Doping dependence of J∗for various fermion broadenings ηF/t ∈ { 0.03 ,0.05 ,0.075 ,0.1,0.15 ,0.2}. Note the linear behavior and complete independence on ηF. Here, J∗(δ) is numerically extracted by the best fit of ωk(δ) = 2 J∗(δ)εkto the high-energy magnon modes εk∈[0 .2,0.8]. (c) Doping dependence of Jρ, for the same parameters as above. Note the ηFdependence of the critical doping δAFM for AFM collapse.
+
+We independently calculate Jρ based on the solution for the hole propagator, from Eq. (S126), and depict it by the dashed horizontal lines in Fig. 14(a). The excellent agreement with Jk in the low-energy region of the magnon spectrum confirms the validity of the analytic expansion, and motivates us to use Eq. (S126) for extracting Jρ
+
+from now on. This avoids the numerical issue of the alternative approach – fitting Jρ to the very small number of momentum points near Γ and M. To extract J∗, on the other hand, we fit the expression ωk(δ) = 2 J∗(δ) εk to the upper part of the magnon spectrum, which corresponds to the vast majority of momentum points in the BZ (recall that the linear spin-wave theory DOS vanishes at zero energy and strongly peaks at the top of the magnon band). In practice, the significant broadening at the top of the magnon band negatively impacts the extraction of J∗; for this reason, we fit it using ωk(δ) = 2 J∗(δ) εk in the range εk ∈ [0 .2, 0.8]. Having extracted the two scales J∗ and Jρ from single-particle propagators, we turn to investigating their dependence on doping, as well as on system parameters. Of particular interest is the polaron broadening ηF , which by the arguments of the previous section should play a crucial role in the stability of AFM order. On the other hand, we have numerically verified that varying ηB /t within the range [0 .025 , 0.2] does not lead to quantitative changes in the aforementioned results, and therefore we fix it to the lowest value compatible with our frequency grid, ηB /t = 0 .025. In Figure 14 (b) and (c) we show the doping dependence of J∗ and respectively Jρ, for six distinct values of 
+
+ηF . We find for J∗ a clear linear dependence on doping, completely independent of ηF , in excellent qualitative agreement with (S114) and the arguments preceding it. On the other hand, Jρ curves down and collapses much earlier than J∗, with typical behavior Jρ ∝ √δAFM − δ, and exhibiting a dependence of δAFM on ηF . We remark that our self-consistent solver never converges for J2 
+
+> ρ
+
+< 0, and therefore we require higher ηF to access higher doping values. In order to confirm the square-root scaling Jρ ∝ √δAFM − δ and also pinpoint δAFM , we plot in Fig. 15 (a) the doping dependence of J2 
+
+> ρ
+
+near the collapse point. The visible linear trend is consistent with Eq. (S130), and allows 36 
+
+FIG. 15. AFM critical doping δAFM and its relation to the polaron broadening ηF . (a) Doping dependence of J2 
+
+> ρ
+
+near the AFM collapse point. The observed linear behavior confirms the scaling (S130) and facilitates the extraction of the collapse point 
+
+δAFM , highlighted by vertical dashed lines. (b) Values of the critical doping δAFM for different broadenings ηF /t , together with a square root fit (dashed line), suggesting the scaling δAFM ∝ √ηF .
+
+for the extraction of δAFM . We then plot the latter versus ηF in Fig. 15 (b), together with a square-root curve, which we have obtained by performing a linear fit of δAFM against √ηF [97]. The significant tunability of δAFM via changes in ηF highlights the powerful role of the latter as an experimental tuning knob of the antiferromagnetic phase. 
+
+FIG. 16. Behavior of magnetic energy scale J∗ as a function of Hubbard interaction strength U/t . (a) Doping dependence of 
+
+J∗(δ), for U/t ∈ { 7, 8, 9, 10 , 11 }, together with linear fits (dashed lines). The trends are almost parallel, in accordance with the kinetic picture, where the slope of J∗(δ) is set by t but not by U . (b) Relative slope ˜ a, defined by J∗(δ)/J 0 = 1 − ˜a δ , as a function of U/t . Note the linear behavior ˜ a ≈ a × U/t , which immediately leads to the universal scaling (1). The presence of a small intercept, on the other hand, signifies the presence of O(t/U ) corrections to the prefactor a, which is thus not a perfect constant. Calculations for both panels performed with ηF /t = 0 .25 in order to access higher dopings. 
+
+Turning our attention back to the high-energy scale J∗, it remains to investigate its doping dependence at different interaction strengths U/t , in order to fully obtain the universal scaling, Eq. (1). We plot the behavior of J∗ versus 
+
+δ in Figure 16 (a), for five different values of U/t , together with linear fits. Recall that the kinetic picture of J∗
+
+renormalization predicts J∗ ≈ Jδ − 2g(0) × tδ . Excluding subleading effects from Jδ , the slope should then be set exclusively by t, and thus independent of U . Visually, the linear trends in Figure 16 (a) are almost parallel, in agreement with our expectation. To analyze this in more detail, we divide out the intercept from the linear fits, to extract a single scaling parameter ˜ a, defined by 
+
+J∗(δ)
+
+J0
+
+= 1 − ˜a δ. (S132) Upon comparison with Eq. (S114), we expect that the relative slope ˜ a consists of a strong kinetic contribution, given by 2g(0) 1+ r0 
+
+> tJ
+
+∝ Ut , as well as a subleading effect obtained from expanding αh 1+ r(δ)1+ r0 to linear order in δ. The latter need not be proportional to U/t , and can indeed give an offset to the dependence of ˜ a on U/t . Figure 16 (b) shows the extracted relative slopes ˜ a for our five values of U/t , which indeed display a clear linear behavior. Upon writing ˜a ≈ a × U/t , Eq. (S132) immediately yields the universal scaling (1). On the other hand, the linear fit in Fig. 16 (b) 37 does yield a small intercept, which leads to the conclusion that a ≡ ˜a × t/U is not fully independent of the Hubbard interaction strength, but rather contains corrections at O(t/U ). In practice, however, in the strongly-interacting regime U/t ≫ 1, this is a subleading effect. We also remark that the universal scaling (1) smoothly connects to Nagaoka’s result: for U/t → ∞ , any infinitesimal doping δ = 0 + will effectively turn J∗ ferromagnetic. 
+
+> Instability of AFM state towards incommensurate magnetic ordering
+
+In the previous section, we have shown that including a finite ηF will stabilize AFM ordering, at wavevector 
+
+Q = ( π, π ), up to a finite critical doping δAFM . Nevertheless, for larger doping values δ > δ AFM , we find our self-consistent approach to be unstable, signaling that magnetic order should instead appear at a different, incom-mensurate wavevector ˜Q. In principle, an extension of our self-consistent diagrammatic expansion, allowing for the underlying magnetic order to emerge at arbitrary wavevectors, is expected to capture the correct behavior; however, this approach is left as a subject of future studies. Here, we aim to learn about the incommensurate ordered state by studying the instability towards it from our initial AFM ansatz. Recall that the result of expanding the magnon dispersion equation (S116) to second order in k and ω was 
+
+ω2 
+
+> k
+
+= (zS )2
+
+2 J2 
+
+> ρ
+
+(δ) |k|2, (S133) with the doping dependence of Jρ near the critical value δAFM obeying (zS )2
+
+2 J2 
+
+> ρ
+
+(δ) ≈ A (δAFM − δ). (S134) Simply plugging δ > δ AFM into the above will yield J2 
+
+> ρ
+
+< 0, signaling a simultaneous instability of all low-lying magnon modes. The solution of (S133) will be 
+
+ωk = ±i pA (δ − δAFM ) |k|, (S135) meaning that the instability rate of a given mode is directly proportional to its momentum |k|. However, this cannot continue to arbitrarily high momenta, as the high-energy magnons should be well described by J∗(δ), thus surviving well beyond δAFM . Of course, the resolution lies in expanding the self-energies to higher order in k, which will cut off the instability at some finite momentum. By lattice symmetry, the next allowed terms are of the form k4
+
+> x
+
+, k4 
+
+> y
+
+, and respectively k2
+
+> x
+
+k2 
+
+> y
+
+. Focusing for simplicity on momenta parallel to a coordinate axis, e.g. k = ( k, 0), one can envision extending (S133) to the Ginzburg-Landau-type expression 
+
+ω2 
+
+> k
+
+= −A (δ − δAFM ) k2 + K k4, (S136) where K > 0, and in the vicinity of δAFM we may neglect the doping dependence of A and K. In this case, we find a finite range of unstable modes with ω2 
+
+> k
+
+< 0, extending from k = 0 to a finite momentum kS = p(δ − δAFM )A/K. Crucially, since ω2 
+
+> k
+
+now has a minimum, there exists a momentum kIC whose instability rate is highest. It is then natural to conclude that the strongest instability wins, and incommensurate magnetic order will emerge at the wavevector ˜Q = Q ± kIC . We can find the incommensuration kIC by straightforward differentiation of (S136), yielding 
+
+kIC =
+
+r
+
+(δ − δAFM ) A
+
+2K , (S137) while the corresponding maximal instability rate is ΓIC = |ωkIC | = A
+
+2√K (δ − δAFM ). (S138) While the qualitative conclusions of the above reasoning are correct, one should do the self-energy expansion more carefully in order to be consistent. Namely, reducing (S116) to a condition of the simple form ω2 
+
+> k
+
+= f (k)relied on the cancellation of frequency derivatives in Π 0
+
+> k
+
+(ω) and Π 1
+
+> k
+
+(ω), see Eq. (S117). This cancellation, in turn, was only possible because we simultaneously expanded to second order in k and ω, together with the equality Π 0
+
+> k
+
+(ω) = Π 1
+
+> k
+
+(ω) at zero momentum. When performing the momentum expansions to higher order, as 38 necessary for (S136), these simplifying cancellations no longer occur. We turn to a detailed extraction of ωk in this case. For simplicity, we will fix the doping δ > δ AFM and one momentum of interest k, and omit the corresponding indices on Π and ω in the following derivation. With ηB → 0, the dispersion condition to be solved for ω is 0 = zJ δ S(1 − γk) + Π 0(ω) − Π1(ω)  zJ δ S(1 + γk) + Π 0(ω) + Π 1(ω) − ω − Π3(ω)2 . (S139) Since the last term generates an ω2 contribution, we should expand the entire equation (S139) to second order in ω
+
+at least. On the other hand, in the vicinity of δAFM , all the relevant instability rates are expected to be small, so we can indeed stop at order ω2. We write the frequency expansions for ω ≥ 0 as Π0(ω) ≈ ˜Π00 + iω ˜Π01 + ω2 ˜Π02 + . . . , (S140a) Π1(ω) ≈ ˜Π10 + iω ˜Π11 + ω2 ˜Π12 + . . . , (S140b) Π3(ω) ≈ ω ˜Π31 + . . . , (S140c) where we no longer have any particular relation between the coefficients of Π 0(ω) and Π 1(ω), since we are working at an arbitrary k. The factor of i in the linear coefficients of Π 0(ω) and Π 1(ω) was added because the real parts of these two functions only contain even powers of ω, while the imaginary parts only have odd powers; thus, with the expansion defined as above, all the ˜Π coefficients on the RHS are real [98]. To second order in frequency, Eq. (S139) yields the quadratic equation 
+
+−C2 ω2 + 2 iC 1 ω + C0 = 0 , (S141) which has the solutions 
+
+ω± = iC 1 ± pC0C2 − C21
+
+C2
+
+. (S142) The coefficients C0... 2, implicitly depending on δ and k, are purely real and given by: 
+
+C0 =
+
+h
+
+zJ δ S(1 − γk) + ˜Π00 − ˜Π10
+
+i h 
+
+zJ δ S(1 + γk) + ˜Π00 + ˜Π10
+
+i
+
+, (S143a) 
+
+C1 = ˜Π00 ˜Π01 − ˜Π10 ˜Π11 + zJ δ S
+
+h ˜Π01 − γk ˜Π11
+
+i
+
+, (S143b) 
+
+C2 =
+
+h
+
+1 − ˜Π31
+
+i2
+
+− 2zJ δ S
+
+h ˜Π02 − γk ˜Π12
+
+i
+
+− 2
+
+h ˜Π00 ˜Π02 − ˜Π10 ˜Π12
+
+i
+
++
+
+h ˜Π01
+
+i2
+
+−
+
+h ˜Π11
+
+i2
+
+. (S143c) Note that, if we were to consider the momentum expansion of each such coefficient, we would find C0, C 1 ∼ O (|k|2), while C2 ∼ 1 + O(|k|2). Therefore, to leading order in |k|, the solution (S142) is just given by the leading term in √C0, which precisely recovers Eq. (S120). Moreover, the proposed extension (S136) would arise from continuing to assume C2 ≈ 1 and C1 ≈ 0, but expanding C0 to order k4. As one can see from the previous arguments, this would not be a consistent expansion in k, and we should use the solution (S142) instead. Since C0... 2 are real, we can distinguish three regimes in (S142): 1. Stable magnon regime C0C2 > C 21 . The square-root is real, and we find a pair of solutions with opposite-sign real parts ±pC0C2 − C21 /C 2. Since our expansion focused on ω ≥ 0, we take the positive solution in this regime. The imaginary part is C1/C 2, which should be negative, and in practice we indeed find C1 < 0 < C 2.2. Overdamped regime C21 > C 0C2 > 0. The square-root is imaginary, but its magnitude is less than |C1|. Thus, both solutions in (S142) are negative imaginary, and no instability arises yet. 3. Unstable regime C0C2 < 0. Both solutions are imaginary, with one of them positive, yielding the instability rate of that mode: Γ = C1 + pC21 − C0C2
+
+C2
+
+. (S144) 39 The boundary of the unstable regime is given by the condition C0C2 = 0, which in practice occurs when C0 vanishes. Note that setting C0 = 0 is how we found kS in our previous simplified approach. We indeed expect the answers to be identical, since kS is defined as the momentum where ω = 0 is a solution to our original determinant equation. In that case, no frequency expansion of the self energies is needed, and plugging ω = 0 into (S139) directly yields the exact condition C0 = 0. While the range of unstable modes is captured correctly by Eq. (S136), the momentum dependence of the instability rate Γ k will be slightly renormalized in the improved expansion (S142). Thus, to improve the precision of our numerical estimations, we directly work with Eqs. (S142) and (S144). The procedure for numerically estimating Γk(δ) at arbitrary momenta k and dopings δ >
+
+∼ δAFM beyond the AFM instability is the following: 
+
+• From self-consistent calculation results at dopings just below the instability, δ <
+
+∼ δAFM , we extract the magnon self-energy components Π 0
+
+> k
+
+(ω), Π1
+
+> k
+
+(ω), Π3
+
+> k
+
+(ω) as well as the Oguchi self-energy r.
+
+• For every available doping δ and momentum k, we perform the frequency expansions to second order for Π 0
+
+> k
+
+(ω)and Π 1
+
+> k
+
+(ω), respectively to first order for Π 3
+
+> k
+
+(ω), see Eq. (S140). This gives us the ˜Π coefficients at dopings 
+
+δ <
+
+∼ δAFM and momenta k on the original calculation grid. 
+
+• We rely on the smooth behavior of the RPA self-energy with doping (Fig. 17) to extrapolate the ˜Π coefficients and Oguchi self-energy r, at every k on the original calculation grid, to dopings δ >
+
+∼ δAFM .
+
+• For a given doping δ >
+
+∼ δAFM , we interpolate ˜Π to arbitrary momenta k by relying on the exponential decay of self-energies with real-space separation (see Fig. 9 and surrounding discussion). 
+
+• Once we have the ˜Π coefficients and Oguchi self-energy r for arbitrary k and dopings δ >
+
+∼ δAFM , we calculate 
+
+Jδ , the C0... 2 coefficients defined in Eq. (S143), and extract the instability rate Γ k(δ) from Eq. (S144).      
+
+> FIG. 17. Doping extrapolation of RPA self-energy coefficients ˜Π and Oguchi self-energy r, into the regime δ >
+> ∼δAFM . Squares denote results of self-consistent calculation. Orange squares are used for fitting a second-degree polynomial in δ, and the dashed orange lines represent the resulting extrapolation beyond δAFM .
+
+Once momentum-dependent instability rates are calculated, we can look for the maximum value Γ IC , as well as its location kIC . Since Γ k should have the lattice symmetries with respect to k, its maxima must lie along high-symmetry directions, e.g. Γ → M or Γ → X. In practice, the latter case occurs, and the four maxima are found at 
+
+kIC = ( ±kIC , 0) and (0 , ±kIC ). In the main text, we directly refer to the scalar value kIC .

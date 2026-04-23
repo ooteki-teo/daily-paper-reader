@@ -1,0 +1,1181 @@
+Title: Operator Space Transport and the Emergence of Boundary Time Crystals
+
+URL Source: https://arxiv.org/pdf/2604.14291v1
+
+Published Time: Fri, 17 Apr 2026 00:05:52 GMT
+
+Number of Pages: 16
+
+Markdown Content:
+# Operator Space Transport and the Emergence of Boundary Time Crystals 
+
+Dominik Nemeth, ∗ Ahsan Nazir, Robert-Jan Slager, and Alessandro Principi 
+
+Department of Physics and Astronomy, The University of Manchester, Oxford Road, Manchester M13 9PL, United Kingdom 
+
+(Dated: April 17, 2026) Boundary time crystals (BTCs) are prominent examples of continuous time crystals in collec-tive spin systems governed by Lindbladian evolution. To date, their analysis has mostly relied on semiclassical and numerical approaches. Here, we develop a fully quantum-compatible frame-work to classify collective spin dynamics and show that BTC behavior emerges from the absence of non-trivial weak symmetries of the Liouvillian. To this end, we introduce an irreducible tensor representation of operator space, in which the Lindbladian dynamics maps onto a non-Hermitian hopping problem. Within this picture, the dynamics corresponds to the transport of operator weight across tensor sectors. This mapping allows an identification of distinct dynamical regimes, including collective precession, pure relaxation, and the BTC phase, within a single unified framework. We show that BTCs arise from non-reciprocal transport in operator space, which delocalizes Liouvillian eigenmodes across multiple tensor sectors. This non-reciprocal transport provides a microscopic mechanism for the insensitivity to initial conditions of BTC oscillations. More broadly, our re-sults establish operator space transport as a perspective for understanding dissipative many-body dynamics and highlights connections to non-Hermitian phenomena. 
+
+I. INTRODUCTION 
+
+Open quantum many-body dynamics has become a central arena for uncovering novel phases of matter be-yond equilibrium, a particular example of which is a time crystal phase. While time crystals were originally proposed in closed, periodically driven systems [1–15], their extension to open quantum systems has revealed new mechanisms by which persistent oscillations can arise under dissipation in macroscopic systems [16–19]. A paradigmatic example is the boundary time crystal (BTC) [20], observed in collective spin systems weakly coupled to a Markovian environment. Early studies of boundary time crystals have largely relied on semiclassical and mean-field descriptions [20, 21], where the dynamics is reduced to nonlinear equations of motion and time crystal behavior is identified through linear stability analysis. However, the validity of such mean-field approximations in open many-body systems has been actively debated [22–25]. Recent works that go beyond mean-field theory [25–29] have revealed that BTCs possess genuinely many-body features that are not fully captured within semiclassical descriptions. These developments highlight the need for a micro-scopic, fully quantum framework capable of describing collective spin Lindbladians beyond mean-field approxi-mations. In particular, such a framework should allow one to systematically classify the resulting dynamical regimes and provide a natural basis for analytical cal-culations, thereby offering deeper insight into the origin and properties of BTC behavior. In problems involving spin systems or angular momen-tum degrees of freedom, it is customary to work in the angular momentum eigenbasis, expanding operators in  
+
+> ∗dominik.nemeth@manchester.ac.uk
+
+terms of matrix elements between states |j m ⟩, where j
+
+and m denote the total angular momentum and its pro-jection along the z-axis, respectively. However, an alter-native and often more physically transparent approach— ubiquitous in nuclear magnetic resonance (NMR) [30–32] and atomic, molecular, and optical (AMO) physics [33– 35]—makes use of the spherical tensor operator formal-ism. In this representation, operators are expanded in terms of irreducible tensor operators T kq , characterized by tensor rank k and component q, which transform under rotations via the adjoint action of the SU(2) group. For fixed k, these operators form a spin-k multiplet [36, 37]. Beyond providing a symmetry-adapted basis, such de-compositions often reveal additional structure in the dy-namics. For example, in NMR and related settings, an-gular momentum sectors can support effective rate-like descriptions of population dynamics [38]. In parallel, quadratic fermionic and bosonic open systems can be formulated in operator space, where the Liouvillian acts on a Fock space of operators and can be expressed in terms of ladder superoperators [39, 40]. These observa-tions raise the question of whether Lindbladian collective spin dynamics admit an effective description in terms of structured couplings between distinct operator space sub-spaces. In this work, we develop a fully quantum framework for collective spin dynamics based on the irreducible decom-position of operator (Liouville) space. We show that this decomposition gives rise to emergent weak symmetries of the Liouvillian, which are not captured within con-ventional state-based or semiclassical descriptions. This construction exploits the tensor product structure of op-erator space, where the action of the underlying SU(2) symmetry is generated by adjoint (commutator) opera-tors that induce rotations in the space of operators. As a result, the dynamics can be organized in terms of a new set of quantum numbers, namely the tensor rank k and 
+
+> arXiv:2604.14291v1 [quant-ph] 15 Apr 2026
+
+2its component q.Within this representation, collective spin dynamics can be systematically classified according to whether these quantum numbers define weak symmetries of the Liouvillian. This leads to a clear distinction between dynamical regimes: collective precession corresponds to dynamics constrained within a fixed irreducible sector, whereas BTCs arise in the absence of non-trivial weak symmetries, where such constraints are lifted. Moreover, this framework provides an intuitive physi-cal picture in which the Liouvillian dynamics maps onto a local hopping problem on an emergent operator space lattice, with the quantum numbers ( k, q ) playing the role of lattice coordinates. In this picture, BTC behavior cor-responds to non-reciprocal transport of operator weight across the lattice, leading to delocalization of Liouvil-lian eigenmodes over many tensor sectors. This non-reciprocal transport provides a microscopic explanation for the insensitivity to initial conditions of BTC oscilla-tions. The resulting effective description closely resem-bles free-fermion models with non-Hermitian hopping, thereby establishing a direct connection between collec-tive open quantum systems and non-Hermitian transport phenomena. In addition, the operator space representa-tion provides a simple setting for fully analytical per-turbative calculations, particularly in the extreme time crystal regime, where it captures many-body correlations that are inaccessible within mean-field approaches. The paper is organized as follows. In Sec. II we in-troduce the class of collective spin Lindbladians consid-ered throughout. In Sec. III we review the representa-tion theory of collective spins and show how the relevant irreducible representations emerge in operator space. In Sec. IV we develop the classification of collective spin dy-namics based on weak symmetry constraints by expand-ing the density operator in the spherical tensor basis. Within this framework, we analyze collective precession and BTC dynamics, highlighting their fundamental dif-ferences, and introduce a mapping to local hopping mod-els in operator space. In Sec. V we extend this approach to fully analytical perturbative calculations and contrast it with conventional mean-field treatments. Finally, in Sec. VI we examine how dissipation drives the hybridiza-tion of spherical tensor modes, which can be interpreted as a delocalization in operator space. Throughout this work we employ natural units. The terms irreducible tensor operators and spherical tensor operators, as well as irreducible representations (irreps) and spherical tensor sectors, are used interchangeably.  
+
+> II. COLLECTIVE SPIN DYNAMICS UNDER MARKOVIAN DISSIPATION
+
+We consider open quantum systems governed by a Lindblad master equation for the density operator ρ(t)(ℏ = 1), 
+
+dρ dt = L[ρ] = −i[H, ρ ] + D[ρ],
+
+D[ρ] = Γ
+
+N
+
+X
+
+> μ
+
+
+
+LμρL † 
+
+> μ
+
+− 12 {L†
+
+> μ
+
+Lμ, ρ }
+
+
+
+, (1) where L is the Liouvillian superoperator generating Markovian evolution and D is the Lindblad dissipator. We consider collective spin models in which the Hamil-tonian H and jump operators Lμ are constructed from spin-j operators Jα (α = x, y, z ), with a uniform collec-tive rate Γ /N . These operators satisfy the su (2) commu-tation relations [ Jα, J β ] = iϵ αβγ Jγ , with ladder operators 
+
+J± = Jx ± iJ y .For the class of models considered here, the total spin 
+
+J2 is conserved, allowing each fixed-j sector to be ana-lyzed independently. Such models arise naturally in cav-ity systems with cooperative emission [41–43], where N
+
+spin- 12 degrees of freedom behave collectively as a single spin with j = N/ 2. In this work, we focus on collective spin models with 
+
+H = Jx and Lμ = Jz or J−, corresponding respectively to the collective precession and BTC models. In the preces-sion case, the spin components Jy and Jz undergo single-frequency oscillations that generally depend on the initial state [27, 28]. This behavior arises from a simple Liouvil-lian structure dominated by a single oscillatory mode. In contrast, BTC dynamics exhibit qualitatively richer be-havior: the oscillations display multiple frequency com-ponents and, crucially, persist independently of the ini-tial state [20]. We demonstrate that this robustness origi-nates from emergent non-reciprocal transport in operator space. In the thermodynamic limit ( N → ∞ ), the decay rate vanishes and these oscillations persist indefinitely, giving rise to the BTC phase [20, 21, 27, 28]. The operators Jα generate a su (2) Lie algebra, and their representation theory leads to the well-known ba-sis of angular momentum eigenstates {| j m ⟩} , with m =
+
+−j, . . . , j . The dynamics can then be formulated in terms of a density matrix in the {| j m ⟩} basis as, 
+
+ρ = X
+
+> m,m ′
+
+ρmm ′ |j m ⟩ ⟨ j m ′| , (2) for fixed j. This usual approach has been employed in Ref. [27], which performed a perturbative treatment of collective spin Lindbladians. However, for open quantum systems governed by a Li-ouvillian superoperator, this state-based representation is no longer the most symmetry-adapted description. In the following section, we introduce an operator-based for-mulation using the adjoint representation of su (2).  
+
+> III. REPRESENTATION THEORY FOR COLLECTIVE SPINS
+
+In closed quantum systems the fundamental dynamical object is the state vector |ψ⟩ ∈ H . For systems whose de-3grees of freedom furnish a representation of the su (2) Lie algebra, which in the case of collective spins is generated by the operators Jα, it is natural to adopt a state-based representation in which these generators act on H. Rep-resentation theory then organizes the Hilbert space into irreps. Concretely, one diagonalizes the Casimir operator 
+
+J2 = J2 
+
+> x
+
++ J2 
+
+> y
+
++ J2 
+
+> z
+
+(together with Jz ), obtaining sectors labeled by total spin j and magnetic quantum numbers 
+
+m = −j, . . . , j , such that 
+
+H = M
+
+> j
+
+Hj , dim Hj = 2 j + 1 . (3) This decomposition provides the conventional state-based quantum numbers typically used to describe spin systems. Note, by working in the maximally polarized subsector, we fix j = N/ 2 and constrain our discussion to this single irrep. Conversely, in open quantum systems the fundamen-tal dynamical object is the density operator ρ. In the collective spin case, ρ belongs to the operator space 
+
+B(Hj ), which is isomorphic to a tensor-product space. This can be seen from the fact that any operator may be constructed from the outer products of kets {| j m ⟩} 
+
+and bras {⟨ j m ′|} . Following the Choi-Jamiolkowski iso-morphism (vectorization) [44–46], one applies the map-ping |j m ⟩ ⟨ j m ′| 7 → | j m ⟩ ⊗ | j m ′⟩∗ , so that operators are represented as vectors in the tensor-product space 
+
+Hj ⊗ H ∗ 
+
+> j
+
+. Since tensor-product spaces are generally re-ducible, it is natural to instead decompose Hj ⊗ H ∗ 
+
+> j
+
+into the irreps of B(Hj ). This decomposition introduces op-erator space quantum numbers and yields a symmetry-adapted basis particularly suited to describing dissipative dynamics. For collective spins, this reducibility takes the explicit form 
+
+B(Hj ) ∼= Hj ⊗ H ∗ 
+
+> j
+
+∼=
+
+> 2j
+
+M
+
+> k=0
+
+Bk, (4) where each Bk transforms irreducibly under SU(2). The allowed values of k follow from the Clebsch-Gordan decomposition of two spin-j representations, j ⊗ j =
+
+L2jk=0 k. Physically, this tensor-product structure may be viewed as the combination of two independent spin spaces. In the present case, however, the second space corresponds to the dual Hilbert space H∗ 
+
+> j
+
+, which has im-portant consequences for perturbative calculations (see Sec. V). This decomposition highlights a key structural feature of open quantum dynamics: operator space splits into symmetry-resolved sectors that are not visible in a state-based description. The generators of collective rotations in operator space are the superoperators implementing infinitesimal conju-gation, 
+
+Kα[A] ≡ [Jα, A ], α = x, y, z, (5) commonly referred to as the adjoint generators (see Ap-pendix A). These generate rotations of operators rather than states. The adjoint generators obey the same su (2) algebra as the collective spin operators, [Kα, Kβ ] = iϵ αβγ Kγ , (6) and define the Casimir superoperator 
+
+K2 = X
+
+> α=x,y,z
+
+K2
+
+> α
+
+. (7) Within each irreducible sector Bk, the Casimir superop-erator acts diagonally with eigenvalue k(k +1), providing the quantum number that labels the operator irreps. The operator space analogues of angular momentum eigenstates are the spherical tensor operators T kq [35–37]. These form a basis of simultaneous eigenoperators of both 
+
+K2 and Kz ,
+
+K2[T kq ] = X
+
+> α=x,y,z
+
+[Jα, [Jα, T kq ]] = k(k + 1) T kq ,
+
+Kz [T kq ] = [ Jz , T kq ] = q T kq .
+
+(8) The quantum numbers k and q correspond to the spher-ical tensor rank k and its magnetic component q. For a fixed k, the allowed values of q form a multiplet with 
+
+q = −k, −k + 1 , . . . , +k, giving (2 k + 1) operators in each sector. These quantum numbers admit an interpretation in terms of multipole moments, where k denotes the order of the multipole [35]. In this sense, k labels the effec-tive complexity of many-body operators. For example, the sector k = 1 contains the dipole operators Jx, Jy ,and Jz , which are captured by mean-field descriptions. Higher values of k correspond to operators encoding pro-gressively higher-order spin correlations. Expanding the density operator in the spherical tensor basis therefore amounts to decomposing it into contributions of increas-ing multipole order. In semiclassical approximations, this hierarchy is truncated by retaining only polynomial ex-pectation values of k = 1 operators (see Sec. V). Thus, this framework introduces a set of operator space quantum numbers that label operators independently of a state-based description. It also provides a symmetry-adapted operator basis that can be used for practical calculations. In the following section, we demonstrate the utility of this framework. Throughout our work calligraphic symbols ( A) are used for superoperators acting on the Hilbert space of operators B(Hj ), whereas double-lined symbols ( A) are used for superoperators acting on the vectorized, Liou-ville space Hj ⊗ H ∗ 
+
+> j
+
+[46]. In addition, the vectorized form of an operator O is denoted via |O⟩⟩ . 
+
+> IV. CLASSIFICATION OF COLLECTIVE SPIN DYNAMICS
+
+The quantum numbers k and q encode the symmetry structure of operator space and determine the qualita-tive form of collective spin dynamics. In this section, 4
+
+a) b) 
+
+ρ = T 00 k = 0 
+
++ T 1 
+
+> −1
+
+T 10 T 11 k = 1 
+
++ T 2 
+
+> −2
+
+T 2 
+
+> −1
+
+T 20 T 21 T 22 k = 2 
+
++ ...
+
+mapped to 
+
+q
+
+k
+
+T 00
+
+T 1 
+
+> −1
+
+T 10 T 11
+
+T 2 
+
+> −2
+
+T 2 
+
+> −1
+
+T 20 T 21 T 22
+
+FIG. 1. Schematic Representation of the Spherical Tensor Decomposition of the Density Operator. a) The density operator expanded into irreducible tensor multiplets of rank k, where each multiplet contains 2 k + 1 components labeled by q =
+
+−k, . . . , +k. b) The same decomposition may be viewed as a triangular lattice in operator space, where each node corresponds to a spherical tensor mode T kq . Orange horizontal arrows indicate intra-rank ( q) mixing, while grey arrows indicate inter-rank (k) mixing. 
+
+we show that these quantum numbers are not merely labels, but control the emergence of distinct dynamical behaviors. We first demonstrate that coherent mixing of q within a fixed k sector generates oscillatory dynam-ics corresponding to collective spin precession. We then show that mixing between different k sectors couples op-erator irreps and allows operator weight to spread across tensor ranks, marking a genuinely open system effect. Fi-nally, we establish that the combined presence of q- and 
+
+k-mixing yields a case where the BTC phase emerges. In this work, we focus on weak symmetries of the Liouvil-lian L, defined as superoperators A satisfying [ L, A] = 0 [47, 48]. We analyze the dynamics by expanding ρ in the spher-ical tensor basis {T kq } as, 
+
+ρ(t) = 
+
+> 2j
+
+X
+
+> k=0 +k
+
+X
+
+> q=−k
+
+ak,q (t) T kq , (9) as shown in Fig. 1 a). The master equation ddt ρ = Lρ can be expressed in terms of the expansion coefficients {ak,q } as 
+
+ddt ak,q (t) = 
+
+> 2j
+
+X
+
+> k′=0 +k′
+
+X
+
+> q′=−k′
+
+L(k,q )( k′,q ′) ak′,q ′ (t), (10) with matrix elements 
+
+L(k,q )( k′,q ′) ≡ Tr 
+
+h
+
+(T kq )† L T k′
+
+> q′
+
+i
+
+. (11) Introducing a composite index α ≡ (k, q ), this can be written compactly as 
+
+ddt aα(t) = X
+
+> β
+
+Lαβ aβ (t), (12) which has the form of a non-Hermitian tight-binding model. In this representation, the coefficients aα play the role of amplitudes on an emergent operator space lattice, whose sites are labeled by the spherical tensor modes. The matrix elements Lαβ therefore act as effective hop-ping amplitudes from site β to site α on the lattice. As we show below, the structure of the Liouvillian leads to short-range couplings in ( k, q ), giving rise to a local hop-ping model on the operator lattice [see Fig. 1b)]. For a derivation of Eq. (10) see Appendix C. We now classify the dynamics of collective spin systems into distinct regimes based on their symmetry structure, as summarized in Fig. 2. In the following, we focus on the non-trivial cases, namely the collective precession and BTC cases. A purely relaxational regime is recovered as a limiting case of the BTC model, when Ω → 0 (see Eqs. (15) and (19)). 
+
+A. Collective Precession 
+
+We first examine the case where the quantum number 
+
+q within a fixed k sector is not conserved, which arises when the Liouvillian fails to commute with Kz while still preserving the adjoint Casimir superoperator, [L, K2] = 0 , [L, Kz ]̸ = 0 . (13) Under these conditions, the dynamics remains confined to a single irrep, but the Liouvillian acquires off-diagonal matrix elements in this subspace, dynamically coupling different q components. Therefore, sectors with different k evolve indepen-dently, and Eq. (10) reduces to a block-diagonal form, 
+
+ddt a(k)(t) = L(k) a(k)(t), (14) where a(k) = ( ak, −k, . . . , a k,k )T , and L(k) denotes the restriction of L(k,q )( k′,q ′) to the subspace with fixed k,i.e., the (2 k + 1)-dimensional block with matrix elements 5                        
+
+> Symmetry Constraint Transport Dynamics
+> Weak symmetry present
+> Weak symmetry absent
+> qconserved,
+> kmixed
+> kconserved,
+> qmixed
+> k, q mixing
+> Non-reciprocal inter-rank
+> Reciprocal intra-rank
+> Reciprocal (intra-rank) + non-reciprocal (inter-rank)
+> Pure relaxation
+> Collective precession
+> BTC
+> FIG. 2. Operator Space Classification of Collective Spin Dynamics. When a weak symmetry is present, either qis conserved (with kmixing), leading to non-reciprocal inter-rank transport and pure relaxation, or kis conserved (with qmixing), yielding reciprocal intra-rank transport and collective precession. In the absence of weak symmetries, both kand qmix, leading to transport across the full operator space lattice and the emergence of the BTC phase. The pure relaxation regime need not be treated separately, as it is obtained as the Ω = 0 limit of the BTC model, which is analyzed here in full generality. Our discussion applies to non-trivial weak symmetries, i.e. symmetries that are not also strong symmetries.
+
+ L(k) 
+
+> qq ′
+
+= L(k,q )( k,q ′). This block contains coherent cou-plings between different q components. Oscillatory be-havior in this regime therefore originates from the re-distribution of operator weight within a given k sec-tor, rather than from independent phase accumulation of fixed-q modes. A minimal realisation of coherent q-mixing at fixed k is provided by a transverse collective field, H = Ω Jx, with a jump operator along the quantization axis, 
+
+L[ρ] = −iΩ[ Jx, ρ ] + Γ
+
+N
+
+ Jz ρJ z − 12 {J2 
+
+> z
+
+, ρ } . (15) The Hamiltonian term generates rotations about the x
+
+axis and explicitly breaks conservation of q with respect to Jz . As a result, k remains a good quantum number, but q is dynamically mixed within each fixed-k sector. In the {T kq } basis, the dynamics maps onto a local, non-Hermitian hopping model, 
+
+ddt ak,q = −iΩ Wk,q − Γ2N q2 ak,q , (16) with 
+
+Wk,q = w+(k, q − 1) ak,q −1 + w−(k, q + 1) ak,q +1 . (17) Here, w±(k, q ) ≡ 12
+
+pk(k + 1) − q(q ± 1) are position-dependent couplings generated by Kx. The terms in Wk,q 
+
+admit a hopping interpretation: the first term describes transport from ( k, q − 1) to ( k, q ) with amplitude ak,q −1
+
+and coupling strength w+(k, q −1), while the second term describes transport from ( k, q + 1) to ( k, q ) with ampli-tude ak,q +1 and coupling w−(k, q + 1). These couplings are reciprocal in q, satisfying w+(k, q ) = w−(k, q + 1). Consequently, within each fixed-k sector the dynamics corresponds to nearest-neighbor hopping along the q-direction, with q-dependent on-site contributions from the dissipator. For a detailed derivation of this mapping see Appendix D. Since Jx, J y , J z form the k = 1 operator multiplet, the operator space dynamics for these observables is related to the k = 1 and q ∈ {− 1, 0, +1 } subspace. The expan-sion coefficients ( a1,−1, a 1,0, a 1,1) can be then obtained by solving the following set of differential equations: 
+
+ddt a1,0(t) = − iΩ
+
+√2 (a1,1(t) + a1,−1(t)) ,ddt a1,1(t) = − iΩ
+
+√2 a1,0(t) − Γ2N a1,1(t),ddt a1,−1(t) = − iΩ
+
+√2 a1,0(t) − Γ2N a1,−1(t).
+
+(18) For a complete discussion of the eigenvalues and eigen-vectors of this system see Appendix E. When viewed in terms the observables Jx, J y and Jz , this results in a dynamics where Jx is decoupled and exhibits exponen-tial decay. ( Jy , J z ) are coupled together and exhibit de-caying oscillations with frequency Ω p1 − (κ/ 2) 2, where 
+
+κ ≡ Γ/(2 N Ω). The decay factor is given by Γ /(4 N ), which vanishes in the thermodynamic limit ( N → ∞ ). In this limit, both Jy and Jz exhibit persistent oscilla-tions, leading to collective precession. An exceptional point emerges at κ = 2, where oscillatory eigenmodes coalesce and the dynamics becomes pure relaxation [28]. In this case, the dynamics is initial state dependent since each fixed-k subspace evolves independently. Each higher-k subspace has increasing dimensionality, sup-porting a larger number of oscillatory modes and excep-tional points. When these subspaces are coupled, the exceptional points emerge sequentially across k. This behavior is not realized in the present case; however, it does emerge in BTCs [27, 28, 49], which we discuss in the following section. In the next subsection, we show how allowing [ L, K2]̸ = 0 couples different subspaces and gives rise to BTC dynamics. 6
+
+B. BTC Dynamics 
+
+So far, we have restricted our analysis to the case where 
+
+K2 is conserved, which allowed us to characterize the dynamics within individual k sectors and the associated oscillatory behavior. We now consider the more general situation in which K2 is not conserved, allowing different 
+
+k sectors to mix. The canonical form of the BTC model is given by [20] 
+
+L[ρ] = −iΩ[ Jx, ρ ] + Γ
+
+N
+
+ J−ρJ + − 12 {J+J−, ρ } , (19) where the spin system undergoes collective decay through the jump operator J−. This operator modifies the action of the dissipator D as evolution under D does not con-serve the adjoint Casimir superoperator, [D, K2]̸ = 0 , (20) and consequently [L, K2]̸ = 0 , [L, Kz ]̸ = 0 . (21) Therefore, L possesses no weak symmetries that are not also strong symmetries, e.g. total spin J2 or PT [27, 49]. Strong symmetries are fundamentally different from purely weak symmetries since these are preserved by 
+
+H and each Lμ separately, such that [ H, J 2] = 0 and [Lμ, J 2] = 0 , ∀μ [47, 48]. Different k sectors become coupled through the ac-tion of the dissipator D, allowing the dynamics to ex-plore the full operator space. In particular, D generates on-site contributions together with nearest-neighbor hop-ping along the k direction (see Appendix F). The Liouvillian dynamics can therefore be reinter-preted as a local, non-Hermitian hopping problem, where 
+
+k and q act as effective coordinates on an emergent two-dimensional operator lattice. In this representation, Eq. (19) maps to 
+
+ddt ak,q = −iΩ Wk,q + Γ
+
+N Tk,q , (22) with 
+
+Tk,q = t+(k − 1, q ) ak−1,q + t−(k + 1 , q ) ak+1 ,q 
+
+− γ(k, q ) ak,q . (23) Here, γ(k, q ) denotes an on-site term at the coordinate (k, q ), while t±(k, q ) describe hopping between ( k, q ) and (k ± 1, q ). The hopping along the k direction is generally non-reciprocal, t+(k, q )̸ = t−(k + 1 , q ) (see Fig. 3), giving rise to an effective non-Hermitian transport problem in 
+
+k.In contrast, the coherent contribution remains identi-cal to the collective precession case, with w±(k, q ) gen-erating reciprocal hopping along the q direction between (k, q ) and ( k, q ± 1). The corresponding hopping ampli-tudes are obtained directly from the Liouvillian matrix elements in the {T kq } basis. 0 1 2 3 4 5 6 7
+
+k′
+
+01234567             
+
+> k
+> 0.7 1.4 0.5 1.4 3.2 1.1 2.1 5.5 1.7 2.9 8.4 2.3 3.5 11.7 2.7 3.7 15.6 2.5 3.4 20.2
+
+04812 16 
+
+> C(k′→k)
+
+FIG. 3. Rank Coupling Matrix. A numerical visualization of the coupling strengths between irreducible sectors k′ →
+
+k, quantified by C(k′→k) [Eq. (25)] and represented by the color scale. Results are shown for a system size N = 7 ( k =0, 1, . . . , 7) with Γ /Ω = 1. Numerical values are displayed for non-zero entries to highlight the allowed transitions between sectors. 
+
+A numerical visualization of the coupling strengths between different ranks k′ and k, C(k′→k), is shown in Fig. 3. To construct C(k′→k), we first define the projec-tors onto the eigenspace of K2 with eigenvalues k(k + 1) as P(k). Then, by introducing 
+
+L(k′→k) = P(k) L P (k′) (24) as the flow of operator weight from the sector k′ to k
+
+generated by the Liouvillian L (acting on the vectorized 
+
+|ρ⟩⟩ ), we define C(k′→k) as 
+
+C(k′→k) =
+
+sX
+
+> qq ′
+
+(L(k′→k))qq ′ 
+
+> 2
+
+(25) such that we sum over all possible q-channels to go from 
+
+k′ to k. Therefore, this represents a measure of the over-all coupling strength between the two irreps. For fur-ther details on the construction of the projectors, see Appendix G. In Fig. 3, the first off-diagonal elements encode nearest-neighbor couplings between sectors. These couplings are asymmetric, giving rise to non-reciprocal hopping with amplitudes t+(k, q ) and t−(k, q ), where t+(k, q ) >t−(k, q ). The diagonal elements correspond to dissipative contributions that preserve k, captured by the on-site de-cay rates γ(k, q ). As shown in Fig. 4, these decay rates increase monotonically with k, indicating progressively stronger local damping in higher-rank sectors. Therefore, BTC dynamics can be understood as a local transport process of operator weight ak,q on the effective 70 1 2 3 4 5 6 7
+
+k
+
+01234                   
+
+> γ(k, q )
+> FIG. 4. Diagonal On-site Decay Coefficients. The numeri-cal values of γ(k, q ) = −Re
+> 
+> Tr (Tkq)†L| Tkq
+> 
+> are shown as a function of rank kfor a system size N= 7 ( k= 0 ,1, . . . , 7) with Γ /Ω = 1. Points denote individual ( k, q ) modes and the solid line shows the mean over q. The systematic increase of
+> γ(k, q ) with kdemonstrates that higher-rank sectors experi-ence stronger local damping.
+
+(k, q ) lattice. Since transport occurs along both coor-dinates, the dynamics can, in principle, explore the full operator space. To characterize universal features, it is useful to decompose an arbitrary initial state as 
+
+ρ(0) = 1
+
+N + 1 1 +
+
+> 2j
+
+X
+
+> k=1
+> k
+
+X
+
+> q=−k
+
+ak,q T kq . (26) For k ≥ 1, spherical tensor operators are traceless (see Appendix B), implying that any physical state with Tr[ ρ(0)] = 1 must have a0,0̸ = 0. While initial states may differ in their higher-rank components, they generi-cally share a finite overlap with the identity sector. Con-sequently, any universal behavior in the BTC model is determined by how operator weight is transported away from the k = 0 sector. At intermediate times, the dynamics remains sensi-tive to the full distribution {ak,q }, reflecting transport across all sectors. In particular, high-k sectors contribute significantly during transients. However, these sectors also experience the strongest local decay (see Fig. 4) and are therefore suppressed at long times. As a result, the asymptotic dynamics is controlled by the least damped modes, which reside close to the k = 0 sector. Crucially, the non-reciprocal couplings induce a net flow of operator weight away from the k = 0 sector into slowly decaying oscillatory sectors (see Fig. 3). This transport mechanism renders the dynamics non-unital, 
+
+L[1]̸ = 0 (see Appendix F), and enables the population of long-lived oscillatory modes. Since all initial states have finite overlap with the identity, this leads to the observed initial state insensitivity of the long-time dynamics. In this context, non-unitality can be interpreted as a source term that drives the dynamics within the traceless subspace. To make this structure explicit, we decompose the density matrix into a generalized Bloch (coherence) vector form [50–53] as 
+
+ρ(t) = 1
+
+N + 1 1 + δρ (t), (27) where δρ (t) is traceless. Since the Liouvillian is trace-preserving, i.e. Tr  L[O] = 0 ∀ O, (28) it follows that the traceless subspace is invariant under the dynamics, 
+
+L(δρ ) ∈ { traceless operators }. (29) In contrast, the identity operator is not generally pre-served, L[1]̸ = 0 (see Appendix F), and moreover L[1] is itself traceless. As a result, L maps the identity sector into the traceless subspace, but not vice versa. This induces a block-triangular structure of the Liou-villian, 
+
+L =
+
+0 0
+
+S M
+
+
+
+, (30) where M acts entirely within the traceless subspace, while S encodes the non-unital contribution associated with the identity sector, generated by L[1] = S[1]. Substituting the decomposition of ρ(t) into the master equation ddt ρ = Lρ, we obtain an inhomogeneous evolu-tion equation for the traceless component, 
+
+ddt δρ (t) = 1
+
+N + 1 S[1] + M δρ (t). (31) To analyze this evolution, we expand δρ (t) in the biorthogonal eigenbasis of M,
+
+δρ (t) = X
+
+> α
+
+cα(t) Rα, (32) where Rα is the αth right eigenoperator of M with eigen-value λα. The time-dependent coefficients cα(t) satisfy the inhomogeneous equation 
+
+ddt cα(t) − λα cα(t) = sα, (33) where 
+
+sα = 1
+
+N + 1 Tr  L† 
+
+> α
+
+S[1] , (34) and Lα denotes the αth left eigenoperator of M,biorthogonally normalized with the right eigenoperators 8
+
+Rα according to Tr  L†
+
+> α
+
+Rβ
+
+ = δαβ . Finally, the time-dependent coefficients take the form 
+
+cα(t) = eλαt cα(0) + eλαt − 1
+
+λα
+
+sα. (35) The first term represents the homogeneous contribution and describes the decay and oscillations inherited from the initial state. In contrast, the second term is an ini-tial state independent contribution generated by the non-unital source. Crucially, this expression shows that oscil-latory behavior need not be present in the initial state. Even if a given mode has zero initial overlap, cα(0) = 0, it is dynamically populated whenever sα̸ = 0. Physically, the non-unital term acts as a continuous drive that injects weight into the traceless subspace, se-lectively feeding the eigenmodes supported by the dy-namics. As a result, oscillations can emerge as a purely source-driven effect, sustained by an ongoing balance be-tween decay and injection. In this way, non-unitality provides a simple and general mechanism for generating oscillatory dynamics that are robust and independent of the initial state. Finally, we emphasize that this is a purely dissipative effect and cannot arise from unitary Hamiltonian dynam-ics. Indeed, for any Hermitian Hamiltonian H, one has [H, 1] = 0, so the identity sector remains invariant un-der coherent evolution. Consequently, the non-reciprocal transport discussed here originates entirely from the dis-sipative (Lindbladian) contribution.  
+
+> V. PERTURBATIVE APPROACH IN THE EXTREME TIME CRYSTAL PHASE
+
+The above framework can be extended to a pertur-bative description of the dynamics. In this section, we outline how the adjoint representation can be used to construct an effective Liouvillian valid deep in the time crystal regime. To this end, we perform a perturbative expansion, treating the dissipative contribution to first order in Γ /N .Following the Choi–Jamiolkowski isomorphism [44, 45], we vectorize the density operator as ρ 7 → | ρ⟩⟩ [46]. Under this mapping, the adjoint generators transform as 
+
+Kα 7 → Sα ≡ Jα ⊗ 1 − 1 ⊗ JTα , (36) where Sα (α = x, y, z ) define the components of an effective “superspin” representation, as introduced in Ref. [28]. In that work, the notion of a superspin was introduced by observing that the tensor-product space Hj ⊗ H ∗
+
+> j
+
+can be interpreted as describing two coupled subsystems. The second subsystem corresponds to the dual Hilbert space, such that spin operators act as Jα ⊗ 1 on the orig-inal space and −1 ⊗ JTα on the dual space. In the limit Γ → 0, Eq. (19) reduces to purely unitary evolution generated by these two contributions, which can be combined into a single effective degree of freedom. This emergent object is referred to as the superspin [28]. For Γ ̸ = 0, the dissipator induces an effective coupling between these subsystems and renormalizes their energy levels. Nevertheless, as shown in Ref. [28], the dynamics can still be captured by an effective description in terms of the superspin to first order in Γ /N ,
+
+Leff = −iΩ Sx − Γ4N
+
+h
+
+S2 
+
+> x
+
++ S2i
+
+. (37) This framework has since been used to derive precision bounds for frequency estimation in continuously moni-tored BTCs and to show that these systems can surpass the Heisenberg limit [54, 55]. Here we show that the superspin method emerges di-rectly from the adjoint representation and working in the spherical tensor basis. As shown in Eq. (36), the super-spin components are equivalent to the adjoint genera-tors, expressed in a form that acts on vectorized Liouville space. Consequently, Eq. (37) can be written as 
+
+Leff = −iΩKx − Γ4N
+
+h
+
+K2 
+
+> x
+
++ K2i
+
+. (38) Its eigenoperators are given by T kqx with eigenvalues 
+
+λk,q x = iΩ qx − Γ
+
+N
+
+q2 
+
+> x
+
++ k(k + 1) , (39) where the quantization axis has been rotated along x. To first order in Γ, the eigenvalues therefore form multiplets labeled by k = 0 , 1, . . . , 2j and qx = −k, . . . , +k. This structure explains the eigenspectrum of L observed in numerics [20, 27, 28]. In addition, the superspin basis 
+
+{| s, s x⟩⟩} is equivalent to the vectorized spherical tensor basis such that T kqx 7 → | k, q x⟩⟩ .Finally, we provide a brief comparison between our framework and mean-field descriptions. When perform-ing the mean-field approximation, one assumes expec-tation values of collective spin operators factorize, i.e. 
+
+⟨JαJβ ⟩ ≃ ⟨ Jα⟩⟨ Jβ ⟩. Translated into the spherical tensor language, this approximation replaces higher-order cor-relations ( k ≥ 2), which are inherently built from many-body (spin-k) operators, with coarse-grained, spin-1 op-erators. It has been shown that for initially uncorre-lated states the mean-field approximation remains exact [22, 23], however, for correlated states one must retain terms beyond mean-field [25]. Our framework naturally incorporates these contributions since we do not trun-cate operators beyond a given tensor rank. Therefore, our symmetry analysis, together with the perturbative approach presented here, fully captures the many-body correlated dynamics, with the perturbative treatment be-ing valid in the extreme time crystal limit.  
+
+> VI. DISSIPATION-DRIVEN HYBRIDIZATION IN OPERATOR SPACE
+
+In Sec. IV B it was demonstrated how the BTC model can be mapped to a local hopping problem, which de-9a) b) c) d)              
+
+> FIG. 5. Hybridization of Spherical Tensor Modes. Results are shown for N= 5 with Γ /Ω = 0 .5 (panels a, b) and Γ /Ω = 2 (panels c, d). Panels (a, c) display the Liouvillian eigenvalues (filled circles) in the (Re( λ),Im( λ)) plane, where the color indicates the k-resolved participation ratio PR kof each eigenmode. The eigenmode analyzed in panels (b, d) is marked by a red cross. Panels (b, d) show the corresponding distribution of weights across rank sectors, wk, as a function of k.The bar heights and accompanying numerical labels indicate the total weight in each sector, with labels shown only for weights larger than 0 .01.
+
+scribes the transport of operator weight across a two-dimensional operator lattice. Eq. (22) highlights that the dissipator drives transport across k, therefore, in general, we expect the Liouvillian eigenmodes to be a superposi-tion of many spherical tensor modes. We demonstrate this numerically in Fig. 5. We quantify how delocalized each eigenmode is in k
+
+via the k-resolved participation ratio, PR (n) 
+
+> k
+
+, which we define as PR (n) 
+
+> k
+
+= 1
+
+P
+
+> k
+
+ w(n)
+
+> k
+
+2 , w(n) 
+
+> k
+
+= X
+
+> q
+
+c(n)
+
+> kq
+> 2
+
+. (40) This measures the effective number of rank sectors con-tributing to the nth right eigenvector of L. Here, ckq =
+
+⟨⟨ k q |r(n)⟩⟩ are the expansion coefficients of this right eigenvector in the vectorized spherical tensor basis and q
+
+is defined with respect to the quantization axis rotated along the x direction, such that q ≡ qx. If PR k = 1, then only a single sector contributes and the eigenmode is localized. Alternatively, if an eigenmode is highly de-localized and has equal weights across all sectors then PR k = N + 1. To further characterize this hybridization, we examine the distributions wk and wkq = |ckq |2 for an eigenmode belonging to the slowest-decaying oscillatory pair. These are shown in Fig. 5 (panels b, d) and Fig. 6 respectively. The dynamics of the model are governed by two com-peting mechanisms that dominate in opposite limits. The purely unitary evolution generated by the Hamiltonian localizes the dynamics in k, such that the unperturbed eigenmodes are given by the vectorized spherical tensors 
+
+|k q x⟩⟩ . In contrast, the Lindblad dissipator induces de-localization through non-reciprocal hopping in k. These two limits are illustrated in both Fig. 5 and Fig. 6. The BTC phase corresponds to an intermediate regime in which dissipation is neither dominant nor negligible, leading to appreciable hybridization with higher tensor ranks. However, when dissipation becomes too strong, operator weight spreads towards the highest rank sec-tors, which experience the strongest decay and therefore relax most rapidly into the environment. This delocalization in k (and q) allows ⟨Jz (t)⟩ to overlap with modes belonging to higher-order multiplets whose allowed q values extend beyond q = −1, 0, +1. As seen from Eqs. (22) and (39), it is the quantum number 
+
+q that determines the oscillation frequencies of the Li-ouvillian eigenmodes. Consequently, even when focusing on ⟨Jz (t)⟩, whose dynamics is governed by the operator weight a1,0(t), the coupling to higher-rank sectors causes 
+
+ρ(t) to acquire contributions from multiplets with larger 
+
+q. As a result, the observable inherits oscillatory frequen-cies originating from these higher-order sectors. Thus, BTC dynamics can be understood as a conse-quence of operator weight transport across the opera-tor space lattice, allowing observables such as ⟨Jz (t)⟩, as well as more general observables, to inherit oscillatory frequencies originating from higher-order multiplets.  
+
+> VII. DISCUSSION
+
+Our results show that dissipative collective spin dy-namics is most naturally understood in the spherical ten-sor operator basis, where the Lindbladian evolution can be mapped onto a local hopping model on an operator space lattice. Within this representation, the dynamics corresponds to the transport of operator weight across sectors labeled by the quantum numbers ( k, q ). BTC be-havior arises when non-reciprocal hopping along one co-ordinate couples distinct operator sectors, placing BTC dynamics in the class of Liouvillians that possess no non-trivial weak symmetries. This operator space perspective makes clear that col-lective spin precession and BTC oscillations are funda-mentally different phenomena. While precession corre-sponds to dynamics confined within a single irreducible sector, BTC oscillations emerge from transport across multiple sectors. This picture also provides an expla-10 a) b)             
+
+> FIG. 6. Heatmap on the ( k, q ) Lattice. Results are shown for N= 5 and Γ /Ω = 0 .5 (panel a) and Γ /Ω = 2 (panel b). Weights
+> wkq are shown for each site on the ( k, q ) lattice, illustrating the spherical tensor modes contributing to a given eigenmode and their relative amplitudes. The eigenmode analyzed is marked by a red cross in Fig. 5 panels (a, c) respectively. Numerical labels are shown only for weights larger than 0 .01. The quantum number qis defined with respect to a quantization axis rotated along the xdirection, such that q≡qx.
+
+nation for the insensitivity of the BTC phase to initial conditions, as the long-time dynamics is governed by the general structure of the operator space transport rather than the specific initial operator configuration. More specifically, we have shown that non-unitality acts as a source term that drives dynamics within the traceless subspace. Oscillatory behaviour arises when-ever sα̸ = 0, i.e., when the source operator has fi-nite overlap with the corresponding eigenmode. In the BTC model, this condition is generically satisfied due to dissipation-induced hybridization of spherical tensor sec-tors, which produces eigenmodes that are extended in k.As a result, these modes acquire a finite overlap with the source, sα ∝ Tr  L†
+
+> α
+
+T 10
+
+̸ = 0, ensuring that they are continuously populated. We emphasize that while this mechanism is completely general, the BTC model provides a particularly trans-parent realization of it. In this case, the damping rates increase monotonically with k, so that low-k modes are the least damped and therefore dominate the long-time dynamics. Consequently, oscillatory modes that are con-tinuously fed by the source remain robust and long-lived, as they are both preferentially populated and weakly damped. More generally, however, such a simple ordering of decay rates need not hold, and the resulting compe-tition between driving and damping can lead to more complex behavior. Since our framework maps the collective spin dynamics directly onto a lattice model in operator space, it natu-rally suggests connections with topological lattice sys-tems, including free-fermion models. Given the progress in categorizing topology in such systems both from a Hermitian [56–61] as well as non-Hermitian Hamiltonian point of view [62–68], this provides a direct area of re-search in topological features, for example, to address the robustness of BTC oscillations [69]. Our framework naturally connects to the literatures on operator spreading, operator entanglement, and op-erator complexity. In these settings, one studies how an initially simple operator—typically expanded in a local basis such as Pauli strings—evolves under Heisenberg dy-namics into increasingly complex operators with broader support in operator space [70–74]. In collective spin sys-tems, operator spreading can be described as the redis-tribution of operator weight across spherical tensor rank sectors [75]. This identifies the tensor rank as a coarse-grained coordinate in operator space. Within our frame-work, this perspective is elevated to a dynamical one: op-erator spreading is interpreted as transport in operator space, while robust dynamical behavior is associated with the delocalization of Liouvillian eigenmodes across these sectors. In an accompanying work, we further show that this transport can be topologically enforced [69]. More-over, the spherical tensor rank k provides a physically meaningful measure of operator complexity in collective spin systems.  
+
+> VIII. CONCLUSIONS
+
+In this work, we have developed a symmetry-motivated framework for studying collective spin dynamics gov-erned by a Lindbladian superoperator. This framework allows the dynamics to be expressed in the spherical ten-sor operator basis, where the Liouvillian evolution maps onto a local hopping model on an operator space lat-tice. Within this picture, we identify two fundamentally distinct classes of collective dynamics: conventional col-lective precession and BTC dynamics. We have also shown how this representation enables fully analytical, perturbative calculations in the extreme time crystal regime. The operator space transport picture developed here may also provide a useful perspective for other classes of open many-body systems beyond collective spins. More broadly, our results suggest that dissipative many-body dynamics may be understood as a transport problem in operator space, providing a general framework for ana-11 lyzing non-equilibrium phases and their possible relations to topology in open quantum systems. 
+
+ACKNOWLEDGMENTS 
+
+Acknowledgements. — D.N. acknowledges support from The University of Manchester under the Dean’s Doctoral Scholarship. A.P. acknowledges support from the Lever-hulme Trust under the grant agreement RPG-2023-253. R.-J.S. acknowledges funding from an EPSRC ERC un-derwrite Grant No. EP/X025829/1. 
+
+Appendix A: Adjoint Generators 
+
+Under a symmetry transformation generated by Jα,the density operator transforms as 
+
+ρ 7 → U ρU †, (A1) where 
+
+U = e−iθJ α ∈ SU(2) (A2) in the spin-j representation. Expanding for infinitesimal 
+
+θ,
+
+U ρU † = ( 1 − iθJ α) ρ (1 + iθJ α)= ρ − iθ [Jα, ρ ] + O(θ2), (A3) which shows that the induced symmetry action on oper-ators is generated by the adjoint (commutator) action, 
+
+Kα[O] ≡ ad Jα [O] = [ Jα, O ]. (A4) The operators {K α} therefore define a representation of the su (2) algebra on the operator space B(Hj ). In direct analogy with the closed-system case, one may con-struct the corresponding Casimir superoperator, 
+
+K2 = K2 
+
+> x
+
++ K2 
+
+> y
+
++ K2 
+
+> z
+
+. (A5) Simultaneous diagonalization of K2 and Kz yields the operator space quantum numbers ( k, q ), which label ir-reducible multiplets. For each fixed k, the allowed values of q are 
+
+q = −k, −k + 1 , . . . , k, (A6) forming a (2 k + 1)-dimensional irrep. 
+
+Appendix B: Spherical Tensor Operators 
+
+In this appendix, we summarize standard results on spherical tensor operators used throughout the main text. A spherical tensor operator of rank k and component q,denoted T kq , is defined through its transformation under the adjoint action of the collective spin generators [36, 37], 
+
+Kz [T kq ] ≡ [Jz , T kq ] = q T kq ,
+
+K±[T kq ] ≡ [J±, T kq ] = pk(k + 1) − q(q ± 1) T kq±1. (B1) For a collective spin system with fixed total spin j, the operators T kq furnish an explicit basis for the irreducible representations appearing in the decomposition 
+
+j ⊗ j∗ =
+
+> 2j
+
+M
+
+> k=0
+
+k. (B2) An explicit construction in terms of angular momentum eigenstates {| j m ⟩} jm=−j is given by 
+
+T kq =
+
+> j
+
+X
+
+> m,m ′=−j
+
+(−1) j−m⟨j m ′; j −m|k q ⟩ | j m ′⟩ ⟨ j m | ,
+
+(B3) where ⟨j m ′; j −m|k q ⟩ are Clebsch–Gordan coeffi-cients [35]. The spherical tensor operators are chosen to be or-thonormal with respect to the Hilbert–Schmidt inner product [35], Tr 
+
+h
+
+(T kq )†T k′
+
+> q′
+
+i
+
+= δkk ′ δqq ′ , (B4) and therefore form a complete orthonormal basis for op-erators acting within the spin-j sector. Using the orthonormality of spherical tensor operators, one can show that all tensors with ( k ≥ 1) are trace-less. Recall that the identity operator corresponds to the unique rank-zero tensor T 00 = 1√2j+1 1. Then, Tr  T kq
+
+ = Tr (1)†T kq
+
+
+
+= p2j + 1 Tr (T 00 )†T kq
+
+
+
+= p2j + 1 δk0 δq0
+
+= 0 for k ≥ 1.
+
+(B5) Irreducible tensor operators obey angular momentum coupling rules analogous to those for state vectors. In particular, given two irreducible tensor operators V k1
+
+> q1
+
+and U k2 
+
+> q2
+
+, one can construct a tensor of rank k and com-ponent q via 
+
+T kq = X
+
+> q1,q 2
+
+⟨k1 q1; k2 q2|k q ⟩ V k1 
+
+> q1
+
+U k2 
+
+> q2
+
+, (B6) which is equivalently written as the irreducible tensor product 
+
+T kq ≡ [V k1 × U k2 ]kq . (B7) Conversely, the direct product of two irreducible tensor operators decomposes as 
+
+V k1 
+
+> q1
+
+U k2 
+
+> q2
+
+=
+
+> k1+k2
+
+X
+
+> k=|k1−k2|
+
+⟨k1 q1; k2 q2|k q ⟩ T kq , (B8) 12 where the allowed values of k satisfy the triangle rule 
+
+k = |k1 − k2|, |k1 − k2| + 1 , . . . , k 1 + k2, q = q1 + q2.
+
+Thus, the composition of irreducible tensor operators fol-lows the same algebra as the addition of angular mo-menta. This construction extends straightforwardly to products of three or more tensors by successive applica-tion of Eq. (B8); see Ref. [36] for further details. 
+
+Appendix C: General Form of Evolution Equation in the Spherical Tensor Basis 
+
+Eq. (10) follows directly by expanding the density op-erator in the spherical tensor basis [Eq. (9)] and inserting this into the master equation ddt ρ = Lρ. Explicitly, 
+
+ddt 
+
+X 
+
+> k′q′
+
+ak′,q ′ (t) T k′
+
+> q′
+
+
+
+= L
+
+X 
+
+> k′q′
+
+ak′,q ′ (t) T k′
+
+> q′
+
+
+
+=⇒ X
+
+> k′q′
+
+ ddt ak′,q ′ (t)
+
+
+
+T k′ 
+
+> q′
+
+= X
+
+> k′q′
+
+ak′,q ′ (t) L T k′ 
+
+> q′
+
+.
+
+(C1) Projecting onto a given spherical tensor mode by mul-tiplying from the left with ( T kq )† and taking the trace yields 
+
+X
+
+> k′q′
+
+  ddt ak′,q ′ (t) Tr 
+
+
+
+(T kq )†T k′
+
+> q′
+
+
+
+= X
+
+> k′q′
+
+ak′,q ′ (t) Tr 
+
+
+
+(T kq )† L T k′
+
+> q′
+
+
+
+.
+
+(C2) Using the orthonormality relation [Eq. (B4)], we obtain 
+
+ddt ak,q (t) = X
+
+> k′q′
+
+L(k,q )( k′,q ′) ak′,q ′ (t), (C3) where the matrix elements of the Liouvillian in the spher-ical tensor basis are given by 
+
+L(k,q )( k′,q ′) ≡ Tr 
+
+h
+
+(T kq )† L T k′
+
+> q′
+
+i
+
+. (C4) 
+
+Appendix D: Mapping to a Non-Hermitian Hopping Model (Collective Precession) 
+
+In this section we derive Eq. (16) by expressing the Liouvillian L in the spherical tensor basis {T kq }
+
+[cf. Eq. (11)]. The unitary contribution may be written in terms of the adjoint generators as Kx[·] = [ Jx, ·], using Eq. (5). For Hermitian jump operators, the dissipator admits the double-commutator form 
+
+Jz T kq Jz − 12 {J2 
+
+> z
+
+, T kq } = − 12 [Jz , [Jz , T kq ]] . (D1) Using the defining relations of spherical tensors [Eq. (B1)], we obtain [Jz , [Jz , T kq ]] = Kz
+
+Kz [T kq ] = q2 T kq , (D2) which shows that the dissipator contributes a diagonal term proportional to q2.The Liouvillian therefore takes the compact form 
+
+L = −iΩ Kx − Γ2N K2 
+
+> z
+
+. (D3) We now evaluate the matrix elements in Eq. (11). The unitary contribution reads Tr 
+
+h
+
+(T kq )†KxT k′
+
+> q′
+
+i
+
+= 12 Tr 
+
+h
+
+(T kq )†[J+, T k′ 
+
+> q′
+
+]
+
+i
+
++ 12 Tr 
+
+h
+
+(T kq )†[J−, T k′ 
+
+> q′
+
+]
+
+i
+
+,
+
+(D4) where we used Jx = 12 (J+ + J−). Applying Eq. (B1) yields 
+
+> 12
+
+pk′(k′ + 1) − q′(q′ + 1) Tr 
+
+h
+
+(T kq )†T k′
+
+> q′+1
+
+i
+
++ 12
+
+pk′(k′ + 1) − q′(q′ − 1) Tr 
+
+h
+
+(T kq )†T k′
+
+> q′−1
+
+i
+
+.
+
+(D5) Using the orthonormality relation [Eq. (B4)], this reduces to 
+
+w+(k′, q ′) δk,k ′ δq,q ′+1 + w−(k′, q ′) δk,k ′ δq,q ′−1, (D6) where we defined 
+
+w±(k, q ) = 12
+
+pk(k + 1) − q(q ± 1) .
+
+Including the dissipative contribution, we obtain the Liouvillian matrix elements 
+
+L(k,q )( k′,q ′) = − iΩ
+
+h
+
+w+(k′, q ′) δk,k ′ δq,q ′+1 
+
++ w−(k′, q ′) δk,k ′ δq,q ′−1
+
+i
+
+− Γ2N q2 δk,k ′ δq,q ′ .
+
+(D7) Substituting this result into Eq. (10) yields the hopping model in Eq. (16). 
+
+Appendix E: Eigensystem in the k = 1 Subspace (Collective Precession) 
+
+We now derive the equations of motion for the expan-sion coefficients ak,q (t) [cf. Eq. (18)]. Substituting into the master equation yields 
+
+ddt ak,q (t) = − iΩ2
+
+hp k(k + 1) − (q − 1) q a k, q −1(t)+ pk(k + 1) − q(q + 1) ak, q +1 (t)
+
+i
+
+− Γ2N q2 ak,q (t).
+
+(E1) 13 To diagonalize this system, we focus on the k = 1 sector and introduce symmetric and antisymmetric com-binations, 
+
+a±(t) = 1√2
+
+ a1,1(t) ± a1,−1(t). (E2) In this basis, the antisymmetric mode decouples, 
+
+ddt a−(t) = − Γ2N a−(t), (E3) with solution 
+
+a−(t) = a−(0) e− Γ2N t. (E4) The remaining components ( a1,0, a +) satisfy 
+
+ddt 
+
+a1,0(t)
+
+a+(t)
+
+
+
+=
+
+ 0 −iΩ
+
+−iΩ − Γ2N
+
+  a1,0(t)
+
+a+(t)
+
+
+
+. (E5) The corresponding eigenvalues are 
+
+λ± = − Γ4N ± iΩ
+
+r
+
+1 −
+
+ κ
+
+2
+
+2
+
+, (E6) where κ ≡ Γ/(2 N Ω). To connect to physical observables, we use the relations between spherical tensors and spin operators (following Ref. [35]), 
+
+T 10 = N1(j) Jz , T 1 
+
+> ±1
+
+= ∓ N1(j)
+
+√2 J±, (E7) with normalization 
+
+N1(j) = 
+
+ 3(2 j + 1)( j + 1) j
+
+1/2
+
+. (E8) This implies that the symmetric and antisymmetric com-binations correspond to 
+
+T+ = −√2 N1(j) iJ y ,T− = −√2 N1(j) Jx. (E9) We therefore conclude that Jx decouples and exhibits purely exponential decay with rate Γ /(2 N ), while Jy and 
+
+Jz form a coupled pair undergoing damped oscillations with decay rate Γ /(4 N ) and frequency Ω p1 − (κ/ 2) 2.This matches the results presented in Ref. [28].  
+
+> Appendix F: Dissipator-Induced k-hopping (BTC)
+
+Here, we show that the dissipator in Eq. (19) couples spherical tensor operators with different tensor rank k. A simple way to see this is to evaluate its action on low-rank tensors. The k = 0 sector is one-dimensional, with T 00 =
+
+1/√2j + 1. Acting with the dissipator yields 
+
+D[1] = J−1J+ − 12 (J+J−1 + 1J+J−)= J−J+ − J+J−
+
+= [ J−, J +]= −2Jz ∝ T 10 ,
+
+(F1) showing that the identity operator (rank k = 0) is mapped to a rank-1 tensor. Next, consider the action on Jz ∝ T 10 . A straightfor-ward calculation gives 
+
+D[Jz ] = J−Jz J+ − 12 (J+J−Jz + Jz J+J−)= J2 − Jz − 2J2 
+
+> z
+
+, (F2) where we have used [ Jz , J −] = −J− and [ J2, J z ] = 0. This expression can be decomposed into spherical tensor components as 
+
+D[Jz ] = 13 J2 − Jz − 23 (3 J2 
+
+> z
+
+− J2). (F3) Here, J2 = j(j + 1) 1 ∝ T 00 , Jz ∝ T 10 , and (3 J2 
+
+> z
+
+− J2) ∝
+
+T 20 . Thus, the dissipator maps a rank-1 tensor onto a superposition of tensors with ranks k = 0 , 1, 2. These examples demonstrate that the dissipator pre-serves the quantum number q, while inducing nearest-neighbor coupling in k. In particular, it generates tran-sitions k → k ± 1, implying that [D, K2]̸ = 0 . (F4) This structure admits a representation-theoretic in-terpretation. Since the jump operators J± transform as rank-1 irreducible tensors, the product J−T kq corre-sponds to the coupling of tensors with ranks 1 and k.By angular momentum addition, this decomposes into irreducible tensors with ranks K = k − 1, k, k + 1. Act-ing subsequently with J+ produces tensors with ranks 
+
+K′ = k − 2, k − 1, k, k + 1 , k + 2, while the component remains fixed at q, since Q′ = −1 + q + 1 = q.However, for the specific Lindblad structure in Eq. (19), cancellations between the jump term and the anti-commutator remove the K′ = k ± 2 contributions. As a result, the dissipator couples only the neighboring ranks k − 1, k, and k + 1. This establishes the selection rules of the dissipator: it preserves the component q and induces nearest-neighbor couplings in the rank coordinate k. Consequently, the dynamics admits a local hopping description on the emer-gent operator lattice. While the corresponding hopping amplitudes can, in principle, be obtained from Clebsch-Gordan algebra, their closed-form expressions are cumbersome [35–37]. In practice, we extract these coefficients directly from the matrix elements of the Liouvillian in the {T kq } basis. We note that nearest-neighbor hoppings arising from dissipators with collective jump operators J± have also been identified in Ref. [76]. However, that work is re-stricted to models with a conserved charge, in contrast to the present setting. 14 
+
+Appendix G: Projectors for K2 Eigenspaces 
+
+In this section, we provide further details on the pro-jectors used in the main text. In the vectorized Liouville space, the spherical tensor basis {| k q ⟩⟩} satisfies the completeness relation 
+
+I =
+
+> 2j
+
+X
+
+> k=0 +k
+
+X
+
+> q=−k
+
+|k q ⟩⟩⟨⟨ k q |
+
+=
+
+> 2j
+
+X
+
+> k=0
+
+ +kX
+
+> q=−k
+
+|k q ⟩⟩⟨⟨ k q |
+
+| {z }
+
+> P(k)
+
+=
+
+> 2j
+
+X
+
+> k=0
+
+P(k).
+
+(G1) where P(k) =  P(k)† projects onto the eigenspace of K2
+
+with eigenvalue k(k + 1). Using these projectors, the Liouvillian can be decom-posed into blocks connecting different tensor sectors, 
+
+L(k′→k) ≡ P(k) L P (k′)
+
+=
+
+> +k
+
+X
+
+> q=−k
+> +k′
+
+X
+
+> q′=−k′
+
+|k q ⟩⟩⟨⟨ k q | L |k′ q′⟩⟩⟨⟨ k′ q′|
+
+=
+
+> +k
+
+X
+
+> q=−k
+> +k′
+
+X
+
+> q′=−k′
+
+|k q ⟩⟩  L(k′→k) 
+
+> qq ′
+
+⟨⟨ k′ q′| .
+
+(G2) This operator describes the transfer of operator weight from the k′ sector to the k sector under the action of L.To quantify the strength of this coupling, we define 
+
+C(k′→k) ≡
+
+r
+
+Tr 
+
+h L(k′→k)†L(k′→k)
+
+i
+
+=
+
+sX
+
+> q,q ′
+
+ L(k′→k)
+
+> qq ′
+> 2
+
+,
+
+(G3) which corresponds to the Hilbert-Schmidt (Frobenius) norm of the block L(k′→k).
+
+[1] F. Wilczek, Quantum Time Crystals, Phys. Rev. Lett. 
+
+109 , 160401 (2012). [2] P. Bruno, Impossibility of Spontaneously Rotating Time Crystals: A No-Go Theorem, Phys. Rev. Lett. 111 ,070402 (2013). [3] H. Watanabe and M. Oshikawa, Absence of Quantum Time Crystals, Phys. Rev. Lett. 114 , 251603 (2015). [4] V. Khemani, A. Lazarides, R. Moessner, and S. L. Sondhi, Phase Structure of Driven Quantum Systems, Phys. Rev. Lett. 116 , 250401 (2016). [5] V. Khemani, R. Moessner, and S. L. Sondhi, A Brief History of Time Crystals (2019), arXiv:1910.10745 [cond-mat.str-el]. [6] K. Sacha, Modeling spontaneous breaking of time-translation symmetry, Phys. Rev. A 91 , 033617 (2015). [7] K. Sacha and J. Zakrzewski, Time crystals: a review, Reports on Progress in Physics 81 , 016401 (2017). [8] D. V. Else, B. Bauer, and C. Nayak, Floquet Time Crys-tals, Phys. Rev. Lett. 117 , 090402 (2016). [9] D. V. Else, B. Bauer, and C. Nayak, Prethermal Phases of Matter Protected by Time-Translation Symmetry, Phys. Rev. X 7, 011026 (2017). [10] D. V. Else, C. Monroe, C. Nayak, and N. Y. Yao, Dis-crete Time Crystals, Annual Review of Condensed Mat-ter Physics 11 , 467 (2020). [11] C. W. von Keyserlingk, V. Khemani, and S. L. Sondhi, Absolute stability and spatiotemporal long-range order in Floquet systems, Phys. Rev. B 94 , 085112 (2016). [12] N. Y. Yao, A. C. Potter, I.-D. Potirniche, and A. Vish-wanath, Discrete Time Crystals: Rigidity, Criticality, and Realizations, Phys. Rev. Lett. 118 , 030401 (2017). [13] A. Lazarides and R. Moessner, Fate of a discrete time crystal in an open system, Phys. Rev. B 95 , 195135 (2017). [14] M. P. Zaletel, M. Lukin, C. Monroe, C. Nayak, F. Wilczek, and N. Y. Yao, Colloquium: Quantum and classical discrete time crystals, Rev. Mod. Phys. 95 ,031001 (2023). [15] J. Zhang, P. W. Hess, A. Kyprianidis, P. Becker, A. Lee, J. Smith, G. Pagano, I. D. Potirniche, A. C. Potter, A. Vishwanath, N. Y. Yao, and C. Monroe, Observation of a discrete time crystal, Nature 543 , 217 (2017). [16] K. Seibold, R. Rota, and V. Savona, Dissipative time crystal in an asymmetric nonlinear photonic dimer, Phys. Rev. A 101 , 033839 (2020). [17] C. Lled´ o and M. H. Szyma´ nska, A dissipative time crystal with or without Z2 symmetry breaking, New Journal of Physics 22 , 075002 (2020). [18] C. Booker, B. Buˇ ca, and D. Jaksch, Non-stationarity and dissipative time crystals: spectral properties and finite-size effects, New Journal of Physics 22 , 085007 (2020). [19] G. Passarelli, P. Lucignano, R. Fazio, and A. Russo-manno, Dissipative time crystals with long-range Lind-bladians, Phys. Rev. B 106 , 224308 (2022). [20] F. Iemini, A. Russomanno, J. Keeling, M. Schir` o, M. Dal-monte, and R. Fazio, Boundary Time Crystals, Phys. Rev. Lett. 121 , 035301 (2018). [21] G. Piccitto, M. Wauters, F. Nori, and N. Shammah, Sym-metries and conserved quantities of boundary time crys-tals in generalized spin models, Phys. Rev. B 104 , 014307 (2021). [22] T. Mori, Exactness of the mean-field dynamics in optical cavity systems, Journal of Statistical Mechanics: Theory and Experiment 2013 , P06005 (2013). [23] F. Carollo and I. Lesanovsky, Exactness of Mean-Field Equations for Open Dicke Models with an Application to Pattern Retrieval Dynamics, Phys. Rev. Lett. 126 ,230601 (2021). [24] E. Fiorelli, M. M¨ uller, I. Lesanovsky, and F. Carollo, Mean-field dynamics of open quantum systems with col-15 
+
+lective operator-valued rates: validity and application, New Journal of Physics 25 , 083010 (2023). [25] A. Mukherjee, Y. Ibrahim, M. Hajduˇ sek, and S. Vin-janampathy, Symmetries and correlations in continuous time crystals, Phys. Rev. A 110 , 012220 (2024). [26] F. Carollo and I. Lesanovsky, Exact solution of a bound-ary time-crystal phase transition: Time-translation sym-metry breaking and non-Markovian dynamics of correla-tions, Phys. Rev. A 105 , L040202 (2022). [27] Y. Nakanishi and T. Sasamoto, Dissipative time crys-tals originating from parity-time symmetry, Phys. Rev. A 107 , L010201 (2023). [28] D. Nemeth, A. Principi, and A. Nazir, Analytical solution of boundary time crystals via the superspin basis (2026), arXiv:2507.06998 [quant-ph]. [29] Z. Liu, Y. Li, Z. Fei, and X. Wang, Boundary Time Crystals: Beyond Mean-Field Theory (2025), arXiv:2510.03028 [quant-ph]. [30] P. Callaghan, Principles of Nuclear Magnetic Reso-nance Microscopy , Oxford science publications (Claren-don Press, 1993). [31] A. Abragam, The Principles of Nuclear Magnetism , In-ternational series of monographs on physics (Clarendon Press, 1961). [32] C. Slichter, Principles of Magnetic Resonance , Springer Series in Solid-State Sciences (Springer Berlin Heidel-berg, 1996). [33] U. Fano, Description of States in Quantum Mechanics by Density Matrix and Operator Techniques, Rev. Mod. Phys. 29 , 74 (1957). [34] W. Happer, Optical Pumping, Rev. Mod. Phys. 44 , 169 (1972). [35] K. Blum, Irreducible Components of the Density Matrix, in Density Matrix Theory and Applications (Springer Berlin Heidelberg, Berlin, Heidelberg, 2012) pp. 115–163. [36] D. A. Varshalovich, A. N. Moskalev, and V. K. Kher-sonskii, Quantum Theory of Angular Momentum (World Scientific, Singapore, 1988). [37] K. T. Hecht, Spherical Tensor Operators, in Quantum Mechanics (Springer New York, New York, NY, 2000) pp. 294–298. [38] C. J. Wood, T. W. Borneman, and D. G. Cory, Cavity cooling of an ensemble spin system, Phys. Rev. Lett. 112 ,050501 (2014). [39] T. Prosen, Third quantization: a general method to solve master equations for quadratic open Fermi systems, New Journal of Physics 10 , 043026 (2008). [40] T. Prosen and T. H. Seligman, Quantization over boson operator spaces, Journal of Physics A: Mathematical and Theoretical 43 , 392004 (2010). [41] D. F. Walls, P. D. Drummond, S. S. Hassan, and H. J. Carmichael, Non-Equilibrium Phase Transitions in Cooperative Atomic Systems, Progress of Theoretical Physics Supplement 64 ,307 (1978), https://academic.oup.com/ptps/article-pdf/doi/10.1143/PTPS.64.307/5292058/64-307.pdf. [42] P. Drummond and H. Carmichael, Volterra cycles and the cooperative fluorescence critical point, Optics Com-munications 27 , 160 (1978). [43] P. D. Drummond, Observables and moments of coop-erative resonance fluorescence, Phys. Rev. A 22 , 1179 (1980). [44] M.-D. Choi, Completely positive linear maps on complex matrices, Linear Algebra and its Applications 10 , 285 (1975). [45] A. Jamiolkowski, Linear transformations which preserve trace and positive semidefiniteness of operators, Reports on Mathematical Physics 3, 275 (1972). [46] J. A. Gyamfi, Fundamentals of quantum mechanics in Liouville space, European Journal of Physics 41 , 063002 (2020). [47] B. Buˇ ca and T. Prosen, A note on symmetry reductions of the Lindblad equation: transport in constrained open spin chains, New Journal of Physics 14 , 073007 (2012). [48] V. V. Albert and L. Jiang, Symmetries and conserved quantities in Lindblad master equations, Phys. Rev. A 
+
+89 , 022118 (2014). [49] Y. Nakanishi, R. Hanai, and T. Sasamoto, Continuous time crystals as a PT symmetric state and the emergence of critical exceptional points (2025), arXiv:2406.09018 [quant-ph]. [50] M. S. Byrd and N. Khaneja, Characterization of the pos-itivity of the density matrix in terms of the coherence vector representation, Phys. Rev. A 68 , 062322 (2003). [51] R. A. Bertlmann and P. Krammer, Bloch vectors for qu-dits, Journal of Physics A: Mathematical and Theoretical 
+
+41 , 235303 (2008). [52] M. S. Byrd, C. A. Bishop, and Y.-C. Ou, General open-system quantum evolution in terms of affine maps of the polarization vector, Phys. Rev. A 83 , 012301 (2011). [53] G. Kimura, The Bloch vector for N-level systems, Physics Letters A 314 , 339 (2003). [54] E. O’Connor, V. Montenegro, F. Albarelli, M. G. A. Paris, A. Bayat, and M. G. Genoni, Attaining Quantum Sensing Enhancement from Monitored Dissipative Time Crystals (2026), arXiv:2508.15448 [quant-ph]. [55] M. Jirasek, I. Lesanovsky, and A. Cabot, The Bound-ary Time Crystal as a light source for quantum en-hanced sensing beyond the Heisenberg Limit (2025), arXiv:2511.23416 [quant-ph]. [56] J. Kruthoff, J. de Boer, J. van Wezel, C. L. Kane, and R. Slager, Topological Classification of Crystalline In-sulators through Band Structure Combinatorics, Phys. Rev. X 7, 041069 (2017). [57] B. Bradlyn, L. Elcoro, J. Cano, M. G. Vergniory, Z. Wang, C. Felser, M. I. Aroyo, and B. A. Bernevig, Topological quantum chemistry, Nature 547 , 298 (2017). [58] R.-J. Slager, A. Mesaros, V. Juriˇ ci´ c, and J. Zaanen, The space group classification of topological band-insulators, Nat. Phys. 9, 98 (2013). [59] A. Bouhon, T. Bzdusek, and R. Slager, Geometric ap-proach to fragile topology beyond symmetry indicators, Phys. Rev. B 102 , 115135 (2020). [60] H. C. Po, A. Vishwanath, and H. Watanabe, Symmetry-based indicators of band topology in the 230 space groups, Nature Communications 8, 50 (2017). [61] P. W. Brouwer and V. Dwivedi, Homotopic classifica-tion of band structures: Stable, fragile, delicate, and sta-ble representation-protected topology, Phys. Rev. B 108 ,155137 (2023). [62] N. Hatano and D. R. Nelson, Localization Transitions in Non-Hermitian Quantum Mechanics, Phys. Rev. Lett. 
+
+77 , 570 (1996). [63] C. M. Bender, Making sense of non-hermitian Hamilto-nians, Reports on Progress in Physics 70 , 947 (2007). [64] E. J. Bergholtz, J. C. Budich, and F. K. Kunst, Ex-ceptional topology of non-Hermitian systems, Rev. Mod. Phys. 93 , 015005 (2021). 16 
+
+[65] H. Zhou and J. Y. Lee, Periodic table for topological bands with non-Hermitian symmetries, Phys. Rev. B 99 ,235112 (2019). [66] K. Kawabata, K. Shiozaki, M. Ueda, and M. Sato, Sym-metry and Topology in Non-Hermitian Physics, Phys. Rev. X 9, 041015 (2019). [67] D. S. Borgnia, A. J. Kruchkov, and R.-J. Slager, Non-Hermitian Boundary Modes and Topology, Phys. Rev. Lett. 124 , 056802 (2020). [68] N. Okuma, K. Kawabata, K. Shiozaki, and M. Sato, Topological Origin of Non-Hermitian Skin Effects, Phys. Rev. Lett. 124 , 086801 (2020). [69] D. Nemeth, A. Nazir, A. Principi, and R.-J. Slager, Topological Boundary Time Crystal Oscillations (2026), arXiv:2602.17765 [quant-ph]. [70] T. Prosen and I. Piˇ zorn, Operator space entanglement entropy in a transverse Ising chain, Phys. Rev. A 76 ,032316 (2007). [71] A. Nahum, S. Vijay, and J. Haah, Operator Spreading in Random Unitary Circuits, Phys. Rev. X 8, 021014 (2018). [72] C. W. von Keyserlingk, T. Rakovszky, F. Pollmann, and S. L. Sondhi, Operator Hydrodynamics, OTOCs, and Entanglement Growth in Systems without Conservation Laws, Phys. Rev. X 8, 021013 (2018). [73] V. Khemani, A. Vishwanath, and D. A. Huse, Oper-ator Spreading and the Emergence of Dissipative Hy-drodynamics under Unitary Evolution with Conservation Laws, Phys. Rev. X 8, 031057 (2018). [74] D. E. Parker, X. Cao, A. Avdoshkin, T. Scaffidi, and E. Altman, A Universal Operator Growth Hypothesis, Phys. Rev. X 9, 041017 (2019). [75] S. Omanakuttan, K. Chinni, P. D. Blocher, and P. M. Poggi, Scrambling and quantum chaos indicators from long-time properties of operator distributions, Phys. Rev. A 107 , 032418 (2023). [76] P. Ribeiro and T. Prosen, Integrable Quantum Dynamics of Open Collective Spin Models, Phys. Rev. Lett. 122 ,010401 (2019).

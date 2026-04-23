@@ -1,0 +1,174 @@
+Title: Dynamics of spin glasses in two dimensions
+
+URL Source: https://arxiv.org/pdf/2604.13480v1
+
+Published Time: Thu, 16 Apr 2026 00:33:58 GMT
+
+Number of Pages: 5
+
+Markdown Content:
+## Dynamics of spin glasses in two dimensions 
+
+Hongze Li and Raymond L. Orbach ∗
+
+Texas Materials Institute, The University of Texas at Austin, Austin, Texas 78712, USA 
+
+Gregory G. Kenning 
+
+Madia Department of Chemistry, Biochemistry, Physics and Engineering, Indiana University of Pennsylvania, Indiana, Pennsylvania 15705, USA 
+
+(Dated: April 16, 2026) Spin glass dynamics is a strong function of spatial dimensionality D. The lower critical dimension is close to 2.5, so that, in two dimensions, the condensation temperature Tg = 0, and only fluctuations are present at finite temperatures. However, by using thin film multilayers, one can explore the dynamics in both D = 3 and D = 2 dimensions. Spin glass thin film multilayers transition from 
+
+D = 3 dynamics at short to intermediate times to D = 2 dynamics at long times. Correlation lengths of CuMn 4.5 nm multilayers at long times are shown to be grow more rapidly in D = 2 as compared to D = 3, and for the longest measurement time, experimentally reach equilibrium in qualitative agreement with simulations. 
+
+Spin glass dynamics are extraordinarily sensitive to spatial dimensions. For Ising spin glasses, a finite transition temperature Tg exists for D = 3, while Tg = 0 K in D = 2. This is a consequence of the lower critical dimension D ∼ 2.5 lying between D = 3 and D = 2 [1–4]. As a consequence, the growth of the coherence length in bulk samples (i.e. D = 3) has been extracted from theory, simulations, and experiments [5]. However, the properties of the correlation length for D = 2 spin glasses are only known experimentally in the limit 
+
+T → 0 [6–9] because only fluctuations are present for 
+
+T > T g = 0. However, multilayer spin glasses provide a stable D = 2 configuration, allowing experimental measurement of the correlation length dynamics at finite temperatures. This paper reports D = 2 dynamics utilizing amultilayer sample of thin CuMn layers separated by thick Cu layers. Multilayers are used to enhance the total magnetic moment to a reasonably high level. Their overall dynamics have been analyzed previously, both experimentally [10–14] and theoretically [15] in terms of an initial D = 3 growth from nucleation for short times, “crossing over” at a time tco to D = 2 when the spin glass coherence length becomes comparable to the CuMn layer thickness. The correlated region has been described as “pancake-like” [13] in that the thickness is constrained by the dimensions of the CuMn thin film (typically in the 4.5 to 20 nm range), but allowed to grow in the transverse direction, i.e. in D = 2. Fig. 1represents a pictorial view of the time evolution of the correlated state. By making measurements at longer times than previous [12, 13], and with a judicious selection of measurement temperatures, we are able to track the growth of the correlation length in D = 2 from tco to its equilibrium value ξeq (T ) ∼ a0(Tg/T )ν2d , where a0 is of the order of the average separation of Mn ions, and ν2d is the critical exponent for the correlation length in D = 2. 
+
+FIG. 1. (a) Nucleation at t = 0. (b) Growth as in D =3 before crossover ( t < t co ). (c) Growth hits the thin film thickness at crossover ( t = tco ). (d) Growth in the parallel direction after crossover ( t > t co ) with dynamics in D = 2. 
+
+The correlated volume for a thin film of thickness L after crossover is described in detail in [13]. The correlation lengths perpendicular and parallel to the film are given by [16, 17], 
+
+ξ⊥(tco , T ) = L
+
+ξ∥ = b
+
+ Tg
+
+T
+
+ν2d
+
+L (1) where b is a constant of order unity. The correlated vol-ume is, 
+
+Vcorr = π b 2 L3
+
+ Tg
+
+T
+
+2ν2d
+
+. (2) The fitted variable constant b is found to be 1.6, 3.45, or 2.46 for Ising, Heisenberg spins, or chiral correlation lengths, respectively [13]. We adopt the notation of the simulations [18] for the temperature and time dependence of the coherence length (before crossover) and the correlation length (after crossover): 
+
+ξ(tw, T ) = a0c1
+
+ tw
+
+τ0
+
+T / (TgZc)
+
+(3) 
+
+> arXiv:2604.13480v1 [cond-mat.dis-nn] 15 Apr 2026
+
+2where tw is the aging (waiting) time, τ0 is an exchange time, a0 is the average distance between Mn ions, and c1
+
+a constant of order unity. The rate of growth is then set by the value of Zc which itself is temperature dependent in D = 3. See for example Fig. 4 of [18] where Zc is plotted against T /T g, rising from a value of 6.69(6) at 
+
+T = Tg to values as large as 10 - 15 at T = 0 .5 Tg for 
+
+T ∼ Tg/2 depending on the model dynamics. When the coherence length is less than L (i.e. in the D = 3 time domain before crossover) Zc ∼ 9.6 [12]. However, for D = 2 spin glasses, a scaling study by Fernandez et al. [19] finds, 
+
+ξ(tw) ∼ a0
+
+ tw
+
+τ0
+
+1/Z c
+
+, (4) 
+
+independent of temperature T with Zc ≈ 7.14. This im-plies that the correlation length grows more rapidly in D = 2 than the coherence length in D = 3 because Zc is much larger than 7 in D = 3 [18].                        
+
+> FIG. 2. (a) Typical MZFC (t) and MFC (t) at T= 23 .75 K and
+> H= 40 Oe. (b) Typical MTRM (t) at T= 23 .75 K and H= 40 Oe, obtained through MTRM (t) = αfMFC (t)−MZFC (t) with
+> αf= 1 .000. The calculated tco = 5 .83 ×10 3s at T= 23 .75 K is labeled in panel (b).
+
+CuMn/Cu multilayer samples consisting of 40 bilayers (4.5 nm of CuMn and 60 nm of Cu) were DC sputtered from a 99.999% CuMn target with a nominal Mn concentration of 13.5 at.% and a 99.999% Cu target. 
+
+Tg obtained from “bulk” CuMn/Cu multilayer samples with the CuMn layer thickness of ∼ 1 μm translates to a Mn concentration of 11.7 at.% [20, 21]. The freezing temperature Tf of the CuMn/Cu multilayer samples is determined by the onset of irreversibility from field-cooled (FC) and zero-field-cooled (ZFC) magnetization measurements: Tf ≈ 24 K for the 4.5 nm sample. Our measurement temperatures are set below Tf.Our protocol measures the time dependence of the ZFC and FC magnetizations, MZFC (t, T ) and MFC (t, T ), at a time scale longer than 2 × 10 5 s as displayed in Fig. 2(a). We can extract the thermoremanent magnetization, MTRM (t, T ), from the extended principle of superposition [22], as shown in Fig. 2(b): 
+
+MZFC (t, T ) + MTRM (t, T ) = MFC (t, T ) (5) Following [12], we also introduce a scaling factor 
+
+α = MZFC (t, T )/M FC (t, T ) and its limit αf at long time scale, typically at t > 2 × 10 5 s, to adjust 
+
+MTRM (t, T ) = αf MFC (t, T ) − MZFC (t, T ) when equi-librium is reached (see our later discussion). The adjustments using αf are subtle, with ϵ = 1 − αf < 0.003 in our measurements. We extract a crossover time, tco , where D = 3 dy-namics change to D = 2 dynamics, as shown in Fig. 1(c), from 
+
+ξ(tco , T ) = a0c1(tco /τ 0)T / (TgZc) = L. (6) Here, a0 = 0 .523 nm, c1 ≈ 1.448, and Zc ≈ 9.62 from [12]. For example, at Tm = 23 K, tco ≈ 2.04 × 10 4 s; at 
+
+Tm = 23 .75 K, tco ≈ 5.86 × 10 3 s. The αf -adjusted MTRM (t, T ) shown in Fig. 3(a) demonstrates the temperature dependent dynamics in 
+
+D = 3 at short time scales. The different rates for the magnetic moment decay reflect the different growth rates of ξ(t, T ) at different temperatures, which result in different tco . Fig. 3(b) shows the growth in D = 2 using 
+
+αf -adjusted MTRM (t − tco , T ). The overlap of magnetic moment decays at t > t co is consistent with temperature independent dynamics in D = 2 at long time scales. The deviation of decays at t < t co aligns with the temperature dependent dynamics in D = 3. In our analysis, we adopt the power law growth rate, Eq. (3), to fit MTRM (t, T ) obtained from Eq. (5) to extract the growth rate T / (TgZc) in D = 3 and 1 /Z c in D = 2. The exchange rate 1 /τ 0 is ∼ kBTg/ℏ ≈ 6.9 × 10 12 s−1. A cubic spline interpolation was used to reduce our data size to 1000 points. Typical power growth law fits for 
+
+D = 3 and D = 2 are shown in Fig. 4(a). For growth in D = 3, i.e., when t ≤ tco , we have 
+
+MTRM (t, T ) = MTRM (t = 0 , T ) − m3D [ξ3D (t, T )] D (7) where m3D is the amplitude to correlate the growth volume with the magnetic moment. When using Eq. 73
+
+FIG. 3. αf -adjusted (a) MTRM (t, T ) at short time scales and (b) MTRM (t − tco , T ) at long time scales for different mea-surement temperatures. The data size is reduced to (a) 4000 points and (b) 1000 points over the entire measurement time using cubic spline interpolation to better demonstrate the dif-ferences as a function of temperature. 
+
+to fit our experimental data at t ≤ tco , we fix c1 = 1 .448 and make Zc a fitting parameter. When t > tco , the growth is in D = 2, and we have 
+
+MTRM (t, T ) = m2D 
+
+[ξeq 2D ]D − [ξ2D (tadj , T )] D
+
+[ξeq 2D ]D (8) where m2D is the amplitude to correlate the growth vol-ume with the magnetic moment. tadj is an adjusted time, assuming a hypothetical growth in D = 2 starting from 
+
+ξ = 0. tadj is calculated using 
+
+tadj = t − tco + t2D (9) where t2D is the time needed in the hypothetical growth in D = 2 to reach ξ = L, i.e., 
+
+ξ2D (t2D ) = a0c1(t2D /τ 0)1/Z 2D  
+
+> c
+
+= L (10) In the fit to our data at t > t co , we assume c1 = 1 as there is no experimental value for c1 in D = 2, and make Zc a fitting parameter. t2D is obtained from the fit result using an initial value, then the fit is iterated with the new t2D value until t2D converges. The temperature dependence of the growth rate in 
+
+D = 3 and D = 2 is shown in Fig. 4(b). The tempera-ture independent D = 2 growth rate is faster than the 
+
+temperature dependent D = 3 growth rate. Although we find a growth rate in D = 2 greater than in D = 3, the ratio is less than that generated through the scaling approach [19]. 
+
+FIG. 4. (a) Typical MTRM (t) at T = 23 .75 K and H = 40 Oe with the fit in D = 3 using Eq. 7 and the fit in D = 2 using Eq. 8 overlay. The fit in D = 3 starts at t = 0 and ends at t = tco ; the fit in D = 2 starts at t = 3 × 10 4 s and ends at our longest measurement time. (b) The temperature dependence of the growth rate T / (TgZc) in D = 3 and 1 /Z c
+
+in D = 2. The red dashed line shows the theoretical growth rate parameter Zc in D = 2 with Zc ≈ 7.14 [19]. 
+
+Equilibrium is reached when the growth of ξ completes (∼ ξeq ), indicated by constant magnetic moments, and the difference between MZFC (t, T ) and MFC (t, T )diminishes. Fig. 5 shows the typical MZFC (t, T ) and 
+
+MFC (t, T ) data at our measurement temperatures. It is clearly shown in Fig. 5(a) that equilibrium has not been reached at Tm = 23 .00 K: both MZFC (t, T ) and 
+
+MFC (t, T ) are still changing at long time scale. However, the system does reach equilibrium at Tm = 23 .75 K within our experimental time scale as shown in Fig. 5(c): MZFC (t, T ) and MFC (t, T ) stay constant at the same level at long time scale. The fit at Tm = 23 .00 K and 23 .75 K using unadjusted MTRM (t, T ) yields the 
+
+temperature independent growth rate 1 /Z c ≈ 0.069 in 
+
+D = 2. Using the experimentally extracted D = 2 growth rate, we can calculate the total time required to reach equilibrium teq :
+
+teq = teq 2D − t2D + tco (11) 4where tco is the crossover time obtained previously, t2D 
+
+and teq 2D are the calculated times for ξ2D = 0 to reach L
+
+and ξeq 2D , respectively, using the power growth law with a growth rate 1 /Z c ≈ 0.069 in D = 2. The growth rate indicates that equilibrium should be reached at Tm =23 .50 K within our experimental time scale, which aligns with our data shown in Fig. 5(b). Although MZFC (t, T )and MFC (t, T ) stay constant at long time scale for Tm =23 .50 K, there is still a finite difference between them. This prompts us to use αf -adjusted MTRM (t, T ) at Tm =23 .50 K to obtain the results shown in Fig. 4(b). Table I lists teq at all Tm, and αf is used to adjust MTRM (t, T )for our measurements that reach equilibrium. 
+
+FIG. 5. MZFC (t, T ) and MFC (t, T ) at (a) Tm = 23 .00 K, (b) Tm = 23 .50 K, and (c) Tm = 23 .75 K for L = 4 .5 nm CuMn/Cu multilayer sample with H = 40 Oe. The data of 
+
+MZFC (t, T ) and MFC (t, T ) is reduced to 1000 points using cu-bic spline interpolation to better demonstrate the differences at different temperatures. TABLE I. The total time to reach equilibrium teq , whether the equilibrium is reached in our experimental time scale, the scaling factor at long time scale αf , and whether αf is used to adjust MTRM (t) at different measurement temperatures Tm.
+
+Tm(K) teq (s) Equilibrium αf Adjusted 23.00 5.32 × 10 5 N 0.997 N23.50 1.79 × 10 5 Y 0.997 Y23.75 1.05 × 10 5 Y 1.000 Y
+
+To summarize, we have been able to probe the growth rate of the correlation function for spin glasses in 
+
+D = 2. We have shown that it is faster than in D = 3, but less fast than predicted from a scaling approach. Further, we have demonstrated that we can achieve equilibrium for the correlation function in D = 2 at sufficiently long measurement times. Both of these achievements are unique, and a consequence of using thin film multilayers to reach a stable D = 2 spin glass. Our approach can be generalized to other systems where the spatial dimension is less than the lower critical di-mension, generating new opportunities for investigations. This work was supported by the U.S. Department of Energy, Office of Science, Basic Energy Sciences, Division of Materials Science and Engineering, under Award No. DE-SC0013599. H.L. acknowledges the partial support by the National Science Foundation through the Center for Dynamics and Control of Ma-terials, an NSF MRSEC under Cooperative Agreement No. DMR-2308817.  
+
+> ∗
+
+Contact author: orbach@utexas.edu [1] A. J. Bray, M. A. Moore, and A. P. Young, Lower criti-cal dimension of metallic vector spin-glasses, Phys. Rev. Lett. 56 , 2641 (1986). [2] S. Franz, G. Parisi, and M. Virasoro, Interfaces and lou-ver critical dimension in a spin glass model, J. Phys (France) 4 (1994). [3] S. Boettcher, Stiffness of the Edwards-Anderson model in all dimensions, Phys. Rev. Lett. 95 , 197205 (2005). [4] A. Maiorano and G. Parisi, Support for the value 5/2 for the spin glass lower critical dimension at zero magnetic field, Proc. Natl. Acad, Sci. USA 115 (2018). [5] E. D. Dahlberg, I. Gonz´ alez-Adalid Pemart´ ın, E. Mari-nari, G. Parisi, F. Ricci-Tersenghi, V. Martin-Mayor, J. Moreno-Gordo, R. L. Orbach, I. Paga, J. J. Ruiz-Lorenzo, and D. Yllanes, Spin-glass dynamics: Exper-iment, theory, and simulation, Rev. Mod. Phys. 97 ,045005 (2025). [6] C. Dekker, A. Arts, and H. de Wijn, Rb 2Cu 1−xCo xF4,a two-dimensional ising spin glass, Journal of Applied Physics 63 (1988). [7] C. Dekker, A. F. M. Arts, H. W. de Wijn, A. J. van Duyn-eveldt, and J. A. Mydosh, Activated dynamics in the two-dimensional ising spin-glass Rb 2Cu 1−xCo xF4, Phys. Rev. Lett. 61 , 1780 (1988). [8] C. Dekker, A. F. M. Arts, and H. W. de Wijn, Static critical behavior of the two-dimensional ising spin glass Rb 2Cu 1−xCo xF4, Phys. Rev. B 38 , 8985 (1988). [9] C. Dekker, A. F. M. Arts, H. W. de Wijn, A. J. van Duyneveldt, and J. A. Mydosh, Activated dynamics in a two-dimensional ising spin glass: Rb 2Cu 1−xCo xF4, Phys. Rev. B 40 , 11243 (1989). [10] S. Guchhait, G. G. Kenning, R. L. Orbach, and G. F. Rodriguez, Spin glass dynamics at the mesoscale, Phys. Rev. B 91 , 014434 (2015). 5
+
+[11] G. G. Kenning, J. Bass, W. P. Pratt, D. Leslie-Pelecky, L. Hoines, W. Leach, M. L. Wilson, R. Stubi, and J. A. Cowen, Finite-size effects in Cu-Mn spin glasses, Phys. Rev. B 42 , 2393 (1990). [12] Q. Zhai, D. C. Harrison, D. Tennant, E. D. Dahlberg, G. G. Kenning, and R. L. Orbach, Glassy dynamics in CuMn thin-film multilayers, Phys. Rev. B 95 , 054304 (2017). [13] Q. Zhai, D. C. Harrison, and R. L. Orbach, Effect of magnetic fields on spin glass dynamics, Phys. Rev. B 96 ,054408 (2017). [14] Q. Zhai and R. Orbach, Toward understanding the di-mensional crossover of canonical spin-glass films, Fron-tiers in Physics 12 (2024). [15] L. A. Fernandez, E. Marinari, V. Martin-Mayor, I. Paga, and J. J. Ruiz-Lorenzo, Dimensional crossover in the ag-ing dynamics of spin glasses in a film geometry, Phys. Rev. B 100 , 184412 (2019). [16] A. P. Young, private communication (2014). [17] V. Martin-Mayor, private communication (2016). [18] M. Baity-Jesi, E. Calore, A. Cruz, L. A. Fernandez, J. M. Gil-Narvion, A. Gordillo-Guerrero, D. I˜ niguez, A. Maio-rano, E. Marinari, V. Martin-Mayor, J. Moreno-Gordo, A. Mu˜ noz Sudupe, D. Navarro, G. Parisi, S. Perez-Gaviro, F. Ricci-Tersenghi, J. J. Ruiz-Lorenzo, S. F. Schi-fano, B. Seoane, A. Tarancon, R. Tripiccione, and D. Yl-lanes (Janus Collaboration), Aging rate of spin glasses from simulations matches experiments, Phys. Rev. Lett. 
+
+120 , 267203 (2018). [19] L. Fernandez, E. Marinari, V. Martin-Mayor, G. Parisi, and J. Ruiz-Lorenzo, An experimental-oriented analysis of 2D spin-glass dynamics: a twelve time-decades scaling study, J. Phys. A: Math. Theor. 52 , 224002 (2019). [20] D. C. Vier and S. Schultz, Evidence for multiple mech-anisms contributing to the transition temperature in metallic spin-glasses, Phys. Rev. Lett. 54 , 150 (1985). [21] U. Larsen, Saturation of Ruderman-Kittel-Kasuya-Yosida interaction damping in high-resistivity spin glasses, Phys. Rev. B 33 , 4803 (1986). [22] P. Nordblad and P. Svedlindh, Experiments on spin glasses, in Spin Glasses and Random Fields (World Sci-entific Publishing, 1997) pp. 1–27.

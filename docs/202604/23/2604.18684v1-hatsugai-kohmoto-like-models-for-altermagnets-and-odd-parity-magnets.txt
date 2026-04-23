@@ -1,0 +1,2921 @@
+Title: Hatsugai-Kohmoto-like Models for Altermagnets and Odd-Parity Magnets
+
+URL Source: https://arxiv.org/pdf/2604.18684v1
+
+Published Time: Wed, 22 Apr 2026 00:09:24 GMT
+
+Number of Pages: 17
+
+Markdown Content:
+## Hatsugai-Kohmoto-like Models for Altermagnets and Odd-Parity Magnets 
+
+Konstantin Rickelt, 1, ∗ Denis Sedov, 1, ∗ and Mathias S. Scheurer 1
+
+> 1
+
+Institute for Theoretical Physics III, University of Stuttgart, 70550 Stuttgart, Germany 
+
+We introduce a generalized Hatsugai-Kohmoto multi-orbital model and study its phase diagram and physical properties in the additional presence of perturbations that lift any extensive ground-state degeneracies. The unperturbed, exactly solvable model already displays a rich set of spectral functions, including regimes reminiscent of unconventional magnets. We map the first-order study of additional spatially local multi-orbital Hubbard interactions to a Heisenberg model in momen-tum space, which leads to symmetry-breaking instabilities already at weak coupling. Interestingly, translational-symmetry breaking orders, such as antiferromagnetism, are excluded. Instead, in ad-dition to ferromagnetism, unconventional p-wave and d-wave magnets occur, characterized by spin order on the bonds of the underlying square lattice. Adding another type of momentum-space inter-action, which still allows to solve the model exactly, is shown to stabilize a non-degenerate singlet ground state that retains the spin splitting characteristic of unconventional magnets. We discuss its impact on the spin structure factor. Taken together, our findings show that Hatsugai-Kohmoto-like models provide a rich playground for unconventional magnetism. 
+
+The impact of strong interactions and symmetry breaking in itinerant electronic systems is one of the most challenging problems of quantum many-body physics but at the same time associated with remarkably rich phe-nomenology [1–4]. In that regard, the Hastugai-Kohmoto (HK) model [5, 6], which is local in momentum space, provides an interesting route to analyzing Mott and non-Fermi liquid physics in a fine-tuned and spatially non-local, yet solvable way [7–9]. The interest in the HK and closely related models, with modifications in the quadratic part [10–13], such as spin-orbit coupling [14, 15] or magnetism/magnetic fields [12, 14] and pe-riodic Anderson models [16–18], or where each momen-tum is coupled to finitely many other momenta [19–21], has recently been revived significantly; for instance, HK-like models have been employed to study the interplay of correlations with pairing [18, 22–28] or topology [13– 15, 17, 29–32], to address Fermi arcs [19, 33], and beyond [32, 34–41]. In this work, we start from a two-orbital HK-like model, where—similar to what was dubbed “orbital HK models” in Ref. 10—the interaction and the kinetic terms do not commute. However, we still obtain parame-ter regimes with extensive ground-state degeneracies in momentum-space regions that are shaped by the inter-play of interactions and hopping processes. The asso-ciated correlation-driven changes in the spectral func-tions can be similar to those of unconventional mag-nets, another recent development in the field of itiner-ant magnetism [42–45]. Treating local interactions as a perturbation, we also find that the two major classes of unconventional magnets, altermagnets and odd-parity magnets, naturally arise. Besides long-range order, we consider an additional interaction term that does not  
+
+> ∗These two authors contributed equally
+
+spoil the exact solvability and stabilizes a unique ground state. This shows how momentum-dependent splittings of the spectral function, reminiscent of unconventional magnets, and in the absence of long-range order or ex-tensive ground-state degeneracies can be obtained in a theoretically controlled way. 
+
+Model and ground state —We consider a two-orbital HK model on the checkerboard lattice with two sublat-tices l = A, B shown in Fig. 1a. Denoting the annihila-tion operator of an electron on the sublattice l with spin 
+
+σ and momentum k by ck,l,σ , the Hamiltonian reads 
+
+HHK = X
+
+> k,l,l ′,σ
+
+c† 
+
+> k,l,σ
+
+hl,l ′ 
+
+> k
+
+ck,l ′,σ 
+
++ U X
+
+> k,l
+
+nk,l, ↑nk,l, ↓ + U ′ X
+
+> k,σ,σ ′
+
+nk,A,σ nk,B,σ ′ ,
+
+(1) where hk = pk(τ0 +τz )+ gk(τ0 −τz )+[ rk(τx −iτ y )+ H.c. ]−
+
+μτ 0 is the Bloch Hamiltonian, pk = −t2 cos( kx), g k =
+
+−t2 cos( ky ), r k = −2t1 cos( kx/2) cos( ky /2) ; τj are Pauli matrices in the sublattice space. We will set t1 = 1 in the following. HK models are characterized by the full decoupling of different momenta, a feature reminiscent of non-interaction systems. In each k-sector, the Hilbert space of the considered model is 24-dimensional, which allows for exact diagonalization. Furthermore, due to the conservation of the number of particles, [HHK , n k] = 0 ,
+
+nk = P 
+
+> l,σ
+
+nk,l,σ , the closed-form expressions for eigenen-ergies can be found analytically [46]. We choose t2, μ such that the occupation of the ground state satisfies ⟨nk⟩ ∈ { 0, 1, 2}, for all k, while occupa-tions of 3 and 4 do not occur; we denote the regions of the Brillouin zone (BZ) with m electrons by Sm. In 
+
+S0,2, the ground state is non-degenerate, while the singly-occupied region S1 is spin-degenerate which leads to an exponential ( 2|S 1|-fold) degeneracy of the ground state. Each of the ground states can be parametrized by the 
+
+> arXiv:2604.18684v1 [cond-mat.str-el] 20 Apr 2026
+
+2
+
+FIG. 1. (a) Checkerboard lattice with two sublattices ( ◦ = A;
+
+• = B), nearest ( t1) and next-nearest neighbor hopping ( t2). 
+
+(b) Momentum-space occupation of the ground state of HHK 
+
+in the ld regime, for U = −1.0, U ′ = 4 .0. (c) Phase diagram of the different ground state occupation configurations ld, lv
+
+and ring (see main text and insets for definition). We took 
+
+μ = −1.0 and t2 = 0 .5.
+
+spin-configuration as follows 
+
+|{ σk}⟩ = Y
+
+> k∈S 1
+
+f † 
+
+> k,σ k
+
+|S 2⟩ , (2) where f † 
+
+> k,σ
+
+is the creation operator of the lower one-particle band of the Bloch Hamiltonian hk, and |S 2⟩ cor-responds to the non-degenerate doubly occupied region in the BZ. Depending on U and U ′, S1 assumes different shapes. It can be a simply connected filled disk (when S2 is a null set), ring or consist of four separated lobes. The lobes are located either along the ΓM path as shown in Fig. 1b, to which we will refer as ld, or along ΓX 
+
+(see inset of Fig. 1c)—denoted by lv . The occupation of the ground state for the ring- and disk-shaped S1 re-sembles the occupation of the ferromagnet, whilst lv/d -regimes share similarities with unconventional magnets. Figure 1c presents the phase diagram of the ground-state occupation. Having established the properties of the de-generate HK model ground states, we will next study different perturbations lifting the degeneracy and discuss the resulting physical properties. 
+
+Long-range order —We will first explore how a con-ventional, spatially local perturbation can lead to spin-rotational symmetry breaking and magnetic long-range order. Specifically, we consider a Hubbard-like Hamilto-nian with on-site V and nearest-neighbors V ′ interaction which reads 
+
+∆H = V X
+
+> R,l
+
+nR+al,↑nR+al,↓ + V ′
+
+4
+
+X 
+
+> R,δj,σ,σ ′
+
+nR,σ nR+δj ,σ ′
+
+= 1
+
+N
+
+X
+
+> q,l,l ′,σ,σ ′
+
+Vl,l ′ 
+
+> q
+
+: ρq,l,σ ρ−q,l ′,σ ′ :, (3) where aA = (0 , 0) , aB = (1 /2, 1/2) are A, B sites po-sitions in the unit cell, δj = Cj 
+
+> 4z
+
+aB are four vectors connecting nearest A and B sites, cf. Fig. 1a; ρq,l,σ =
+
+P 
+
+> k
+
+c† 
+
+> k+q,l,σ
+
+ck,l,σ ; VAA  
+
+> q
+
+= VBB  
+
+> q
+
+= V / 2, VAB  
+
+> q
+
+= VBA  
+
+> q
+
+=
+
+V ′/2 cos( qx/2) cos( qy /2) . We will see how the bare HK ground states act as a precursor for unconventional mag-netism induced by the perturbation Eq. (3). One can also think of the following analysis as a perturbative solution of the deformed Hubbard model, in which the k-local part is enhanced artificially to dominate the non-local contri-butions. Motivated by this picture, we choose V = λU 
+
+and V ′ = λU ′ with λ being the control parameter. Treating ∆H via first order perturbation theory, the ground state of HHK + ∆ H is obtained by diagonalizing 
+
+P ∆HP , where P = P 
+
+> |{ σk}⟩
+
+|{ σk}⟩ ⟨{ σk}| is the projec-tor onto the degenerate HK ground state. This subspace, characterized by fixed occupation at each momentum, can be thought of as the flat band for k-local spin-flip excitations within S1. Therefore, we naturally find that the projected Hamiltonian contains only the effective ex-change part of Eq. (3) which can be mapped onto the following quantum spin-1/2 Heisenberg model in momen-tum space [46] 
+
+P ∆HP 7 → X 
+
+> k,k′∈S 1,k̸=k′
+
+−Jk,k′ σk · σk′ ,Jk,k′ = 12N
+
+X
+
+> l,l ′
+
+Vl,l ′ 
+
+> k−k′
+
+ϕ∗
+
+> k,l
+
+ϕk,l ′ ϕ∗ 
+
+> k′,l ′
+
+ϕk′,l ,
+
+(4) where σk = ( σx
+
+> k
+
+, σ y
+
+> k
+
+, σ z
+
+> k
+
+) are Pauli matrices, and ϕk,l 
+
+are the wavefunctions of the lower band of hk (see also [33] where a different HK model was studied). This mapping holds for an arbitrary HK model and inter-action of the form of Eq. (3) as long as the degener-acy of the ground state is determined only by the spin-degenerate region S1 of the BZ. In general, the obtained Heisenberg model is frustrated and dense, which could induce highly-entangled ground states, including states without magnetic order. This, however, will be our focus for the second type of perturbation studied be-low, and we will therefore use mean-field (MF) theory here to demonstrate the emergence of magnetic phases. Limiting the discussion to collinear states, the problem of finding the MF ground state of the Hamiltonian re-duces to the minimization of the classical Ising model, 
+
+E[{σk = ±} ] = − PS1  
+
+> k,k′,k̸=k′
+
+Jk,k′ σkσk′ . The ground state corresponding to the optimal spin-configuration is obtained from Eq. (2). It is worth mentioning that any 3−3 −2 −1 0 1 2 3              
+
+> kx
+> −3
+> −2
+> −10123
+> ky
+> (a) Spin ↑
+> Spin ↓
+> −3−2−10123
+> kx
+> −3
+> −2
+> −10123
+> ky
+> (c)
+> 24
+> Aσ(k, ω  = 0)
+> (b)
+> −3−2−10123
+> kx
+> −3
+> −2
+> −10123
+> ky
+> (d)
+> 24
+> A↑(k, ω  = 0)
+
+FIG. 2. (a) d-wave spin configuration stabilized by ∆H in Eq. (3) in the ld regime, denoted by ld-d. The associated alter-magnetic real-space bond order is displayed in (b) . (c) Spec-tral function Aσ (k, ω = 0) for the bare HK Hamiltonian in the ld regime, which obeys A↑ = A↓ = Aσ . (d) Spin-up spec-tral function A↑(k, ω = 0) for the perturbed HK in the ld-d
+
+phase of (a); A↓(k, 0) is be obtained from A↑(k, 0) by π/ 2
+
+rotation around the center of the BZ. For all figures, we chose 
+
+U = −1.0, U ′ = 4 .0, μ = −1.0, and t2 = 0 .5.
+
+many-body state |{ σk}⟩ breaks PT symmetry. Addition-ally, since the HK ground state is characterized by a fixed number of electrons at each momentum, the translation invariance is conserved for all the states (also beyond the aforementioned MF states) within this subspace. This means that antiferromagnetism is not accessible by first order perturbation theory in the discussed setting. We first specifically consider the ld regime of the ground state occupation. For (U, U ′) = ( −1, 4) , the min-imization of the Ising model yields the spin-configuration presented in Fig. 2a. This alternating magnetic tex-ture breaks time-reversal ( T ) but preserves inversion ( P)symmetry, which makes it an altermagnet [45]; specifi-cally of d-wave form. Interestingly, this does not trans-late into the conventional on-site altermagnetic order, as ⟨c† 
+
+> R+al
+
+σz cR+al ⟩ = 0 , but rather leads to the spin-bond texture with real-valued non-vanishing spins on the nearest-neighbor bonds, ⟨c†
+
+> R
+
+σz cR+δj ⟩̸ = 0 , forming the alternating magnetic pattern shown in Fig. 2b. To demonstrate how the discussed symmetry break-ing affects the spectral properties of the system, we con-struct the MF version of the Hamiltonian (via Hartree-Fock decomposition) based on the correlations and or-der parameters of the MF ground state |{ σk}min ⟩ ob-tained by minimizing the Ising model. The spin-splitting magnetic part of the MF Hamiltonian can be written 
+
+FIG. 3. (a) A↑(k, ω = 0) for the perturbed HK Hamilto-nian in the ld-p phase, i.e., p-wave magnetism in the ld regime (U = −1.0, U ′ = 9 .0). (b) Same quantity for the ld-FM state, with interactions U = −1.75 , U ′ = 20 .0. (c) Phase diagram of the different magnetic phases, defined by the combination of the type of S1 region for the underlying unperturbed HK model ( ld, lv , ring, and disk) and the form of magnetic or-der (FM, d, and p) obtained through energetic minimization. Throughout, we chose μ = −1.0, t2 = 0 .5.
+
+as ∆HmMF [{σk}min ] = P
+
+> k,l,l ′
+
+ Sl,l ′ 
+
+> k,z
+
+Bl′,l  
+
+> k
+
+[{σk}min ] + H.c. ,where Sl,l ′ 
+
+> k
+
+= 12 c†
+
+> k,l
+
+σz ck,l ′ , and Bl′,l  
+
+> k
+
+is the effective (al-ter)magnetic order parameter [46]. Taking only this term into account (and neglecting additional terms that simply renormalize the bands), we compute the spin-resolved spectral function Aσ (k, ω ) corresponding to 
+
+HHK + ∆ HmMF ; it is shown for σ =↑ in Fig. 2d, and con-trasted with the spectral function of the unperturbed HK model displayed in Fig. 2c. We clearly see that the long-range order significantly modifies Aσ (k, 0) by making it anisotropic in each pocket, following the d-wave symme-try of the altermagnet: the outer (inner) boundaries of the S1 lobes occupied by electrons with spin σ (spin −σ)become more pronounced in Aσ (k, 0) .Remarkably, ld lobes can also accommodate other phases: a ferromagnet (FM) [ σk independent of k in Eq. (2)] and a p-wave magnet, where the spin polariza-tion is opposite at opposite momenta, i.e., σk = −σ−k.The p-wave state conserves T , but breaks both P and PT 
+
+symmetries. This results in purely imaginary spin-bonds, 
+
+Im ⟨c†
+
+> R
+
+σz cR+δj ⟩̸ = 0 , Re ⟨c†
+
+> R
+
+σz cR+δj ⟩ = 0 with vanishing on-site magnetization. Therefore, we can associate this order with emerging spin-orbit coupling and spontaneous generation of spin-currents. For the FM, the uniform spin polarization of the lobes manifests as conventional on-site order with ⟨c† 
+
+> R+al
+
+σz cR+al ⟩̸ = 0 . This state even 4becomes exact (beyond MF) when Jk,k′ > 0, ∀k, k′ ∈ S 1
+
+(e.g., when there is only on-site repulsive interaction) [47]. We present the corresponding spin-resolved spec-tral functions in Fig. 3(a-b), respectively. Finally, Fig. 3c shows the phase diagram capturing the different combinations of ground state occupation and magnetic phase. Since the ground state depends sen-sitively on the behavior of the coupling constant Jk,k′
+
+within S1, the phase diagram is susceptible to changes in μ and hk in general. For instance, if S1 ∈ { k : |ki| <π/ 2}, the coupling constants Jk,k′ become positive for arbitrary U, U ′ > 0, and therefore, only FM can appear regardless of the form of S1. We also find that the stan-dard single-orbital HK model can host all the above men-tioned MF states [46]. The corresponding phase diagram is, however, less rich, as there is less control of the shape and position of the singly occupied region, which can only be either a ring or a disk. 
+
+Non-magnetic regime —We have seen that conventional interactions Eq. (3) projected onto the degenerate HK ground state map to effective spin models. Being dense and generally frustrated, these models lead to complex phase diagrams but require approximate techniques for diagonalization. In analogy to extended HK models with density-density couplings across a finite numbers of mo-menta [19–21], we replace Eq. (4) by 
+
+δH = − X
+
+> C
+
+X
+
+> k,k′∈C
+
+X
+
+> l1,l 2,l ′
+> 1,l ′
+> 2
+
+˜Jl1l2l′ 
+
+> 1l′
+> 2
+> k,k′
+
+Sl1,l 2 
+
+> k
+
+· Sl′ 
+
+> 1,l ′
+> 2
+> k′
+
+, (5) where the summation P 
+
+> C
+
+goes over non-overlapping finite-size clusters C of coupled momenta. For small clus-ter sizes |C|, the combined model HHK + δH is still read-ily diagonalized exactly. As we will see next, such addi-tional interactions can substantially modify the ground-state and spin-spin correlations. We first focus on the specific example where each k is only coupled with −k and δH 2S = −J P 
+
+> k,l
+
+Sl,l  
+
+> k
+
+· Sl,l 
+
+> −k
+
+. It is straightforward to see that the ground-state degener-acy of HHK is fully lifted already in first order perturba-tion theory in J < 0; it leads to a non-magnetic ground state consisting of decoupled singlet states formed from electrons with k and −k within S1,
+
+|GS ⟩ = Y
+
+> k∈S 1,k x>0
+
+1
+
+√2
+
+h
+
+f †
+
+> k,↑
+
+f †−k,↓ − f †
+
+> k,↓
+
+f †−k,↑
+
+i
+
+|S 2⟩ . (6) Since |C| is only two, it is straightforward to numeri-cally compute the spectral properties of HHK + δH 2S ex-actly, i.e., beyond perturbation theory. As can be seen in Fig. 4a, where we took the same parameters for HHK as in Fig. 2c, the low-energy spectral weight is suppressed between Γ and M . While this suppression comes from the gap induced by J, it still allows for peaks in Aσ (k, ω = 0) 
+
+for finite temperature T (and for finite ω). As shown in                                   
+
+> FIG. 4. (a) Spectral function Aσ(k, ω )of HHK +δH 2Salong high symmetry paths in kspace and (b) its momentum de-pendence at ω= 0 , i.e., Aσ(k, ω = 0) .Note that the per-turbation δH 2Sleads to the emergence of a gap but does not break spin-rotation symmetry, A↑=A↓=Aσ. Both spectral functions are computed at finite temperature T= 0 .05 and coupling J=−1.The parameters of the bare HK model are chosen to match those of the spectral function in Fig. 2c.
+
+Fig. 4b, these peaks look similar to those of P 
+
+> σ
+
+Aσ (k, ω )
+
+of the related ordered unconventional magnets stabilized by Eq. (4). We have therefore constructed an exactly solvable scenario with a unique, non-magnetic ground state and spectral properties reminiscent of unconven-tional magnets. This is phenomenologically reminiscent of the “fractionalized itinerant altermagnets” envisioned in Ref. 48, where it was discussed on the level of an ef-fective parton theory. We note that the theory [49] un-derlying [48] also has a gap around ω = 0 for T → 0.Finally, we address the static spin-structure factor, 
+
+S(q) = N −1 ⟨M q · M −q ⟩, M q = 12
+
+P 
+
+> k,l
+
+c†
+
+> k+q,l
+
+σck,l ,which can be compactly expressed for the general form Eq. (5) of δH , using that only spins in the same cluster are correlated. For instance, for q = 0 , one finds 
+
+S(q = 0) = 1
+
+N
+
+X
+
+> C
+
+*X
+
+> k∈C
+
+Sk
+
+2+
+
+, (7) where Sk = P 
+
+> l
+
+Sl,l  
+
+> k
+
+. We can thus immediately see that, e.g., P δH 2S P fully suppresses S(q = 0) due to the sin-glet formation in Eq. (6). For general q, P δHP yields a contribution if there are k ∈ S 1 with k + q ∈ S 1 ∩ Ck
+
+where Ck is the cluster with k ∈ Ck.For our example δH 2S , this is the case for k with 
+
+k = q/2, which again lowers S(q) due to singlet for-mation. This effect, however, vanishes in the ther-modynamic limit as only finitely many momenta con-tribute at given q̸ = 0 . This is different for interactions like δH Q = −J P 
+
+> k,l
+
+Sl,l  
+
+> k
+
+· Sl,l  
+
+> k+Q
+
+that generate clusters 
+
+Ck = {k + mQ|m ∈ Z} (modulo reciprocal lattice vec-tors), which for J < 0 can coherently suppress S(mQ) at integer m.
+
+Conclusion —We have shown how HK-inspired models can be used as a transparent starting point to capture the formation of and interaction effects in itinerant un-5conventional magnets and related non-magnetic states. We believe that our work can further provide the start-ing for many interesting follow-up works, e.g., on the interplay of pairing with altermagnetism in the strong-coupling regime. 
+
+ACKNOWLEDGMENTS 
+
+M.S.S. thanks B. Putzer and J. Sobral for discus-sions. D.S. and M.S.S. acknowledge funding by the European Union (ERC-2021-STG, Project 101040651— SuperCorr). Views and opinions expressed are however those of the authors only and do not necessarily reflect those of the European Union or the European Research Council Executive Agency. Neither the European Union nor the granting authority can be held responsible for them. 
+
+[1] N. P. Armitage, P. Fournier, and R. L. Greene, “Progress and perspectives on electron-doped cuprates,” Rev. Mod. Phys. 82 , 2421 (2010). [2] S. Sachdev, “Colloquium: Order and quantum phase transitions in the cuprate superconductors,” Rev. Mod. Phys. 75 , 913 (2003). [3] Q. Si, R. Yu, and E. Abrahams, “High-temperature su-perconductivity in iron pnictides and chalcogenides,” Na-ture Reviews Materials 1, 16017 (2016). [4] J. M. Santiago, C.-L. Huang, and E. Morosan, “Itinerant magnetic metals,” Journal of Physics: Condensed Matter 
+
+29 , 373002 (2017). [5] Y. Hatsugai and M. Kohmoto, “Exactly solvable model of correlated lattice electrons in any dimensions,” Journal of the Physical Society of Japan 61 , 2056 (1992). [6] M. Zhao, W.-W. Yang, and Y. Zhong, “Hatsugai– kohmoto models: exactly solvable playground for mot-tness and non-fermi liquid,” Journal of Physics: Con-densed Matter 37 , 183005 (2025). [7] M. A. Continentino and M. D. Coutinho-Filho, “Scaling close to a mott transition in an exactly soluble model,” Solid State Communications 90 , 619 (1994). [8] D. Lidsky, J. Shiraishi, Y. Hatsugai, and M. Kohmoto, “Simple exactly solvable models of non-fermi-liquids,” Phys. Rev. B 57 , 1340 (1998). [9] C. Vitoriano, L. B. Bejan, A. M. S. Macêdo, and M. D. Coutinho-Filho, “Metal-insulator transition with infinite-range coulomb coupling: Fractional statistics and quan-tum critical properties,” Phys. Rev. B 61 , 7941 (2000). [10] D. Manning-Coe and B. Bradlyn, “Ground state stability, symmetry, and degeneracy in mott insulators with long-range interactions,” Phys. Rev. B 108 , 165136 (2023). [11] G. Tenkila, J. Zhao, and P. W. Phillips, “Dynamical spectral weight transfer in the orbital hatsugai-kohmoto model,” Phys. Rev. B 111 , 045126 (2025). [12] Á. Bácsi and B. Dóra, “Dynamical spin susceptibility of 
+
+d-wave Hatsugai-Kohmoto altermagnet,” arXiv e-prints (2025), arXiv:2511.04141 [cond-mat.str-el]. [13] C. Setty, F. Xie, S. Sur, L. Chen, M. G. Vergniory, and Q. Si, “Electronic properties, correlated topology, and green’s function zeros,” Phys. Rev. Res. 6, 033235 (2024). [14] M. M. Wysokiński and W. Brzezicki, “Quantum anoma-lous hall insulator in ionic rashba lattice of correlated electrons,” Phys. Rev. B 108 , 035121 (2023). [15] J. Skolimowski, W. Brzezicki, and C. Autieri, “Impact of correlations on topology in the kane-mele model deco-rated with impurities,” Phys. Rev. B 109 , 075147 (2024). [16] Y. Zhong, “Solvable periodic anderson model with infinite-range hatsugai-kohmoto interaction: Ground-states and beyond,” Phys. Rev. B 106 , 155119 (2022). [17] K. Jabłonowski, J. Skolimowski, W. Brzezicki, K. By-czuk, and M. M. Wysokiński, “Topological mott in-sulator in the odd-integer filled anderson lattice model with hatsugai-kohmoto interactions,” Phys. Rev. B 108 ,195145 (2023). [18] J. Wang, Y. Li, and Y.-f. Yang, “Simple solvable model for heavy-fermion superconductivity from the two-fluid normal state,” Phys. Rev. B 109 , 064517 (2024). [19] P. Worm, M. Reitner, K. Held, and A. Toschi, “Fermi and luttinger arcs: Two concepts, realized on one sur-face,” Phys. Rev. Lett. 133 , 166501 (2024). [20] P. Mai, J. Zhao, G. Tenkila, N. A. Hackner, D. Kush, D. Pan, and P. W. Phillips, “Twisting the hubbard model into the momentum-mixing hatsugai–kohmoto model,” Nature Physics 22 , 81 (2026). [21] D. Manning-Coe and B. Bradlyn, “Decomposing mo-mentum scales in the Hubbard Model: From Hatsugai-Kohmoto to Aubry-André,” arXiv e-prints (2026), arXiv:2604.06588 [cond-mat.str-el]. [22] P. W. Phillips, L. Yeo, and E. W. Huang, “Exact theory for superconductivity in a doped mott insulator,” Nat. Phys. 16 , 1175 (2020). [23] J. Zhao, L. Yeo, E. W. Huang, and P. W. Phillips, “Ther-modynamics of an exactly solvable model for supercon-ductivity in a doped mott insulator,” Phys. Rev. B 105 ,184509 (2022). [24] Y. Li, V. Mishra, Y. Zhou, and F.-C. Zhang, “Two-stage superconductivity in the hatsugai–kohomoto-bcs model,” New Journal of Physics 24 , 103019 (2022). [25] A. Bácsi and B. Dóra, “Nonequilibrium dynamics of su-perconductivity in the hatsugai-kohmoto model,” Phys. Rev. B 111 , 075115 (2025). [26] H.-S. Zhu and Q. Han, “Effects of electron correlation on superconductivity in the hatsugai–kohmoto model*,” Chinese Physics B 30 , 107401 (2021). [27] C. E. S. Corsino and H. Freire, “Exact analysis of the interplay of charge order and unconventional pairings in the 2d hatsugai-kohmoto model,” Physics Letters A 563 ,131070 (2025). [28] K. Chen and P. Hosur, “Enhanced Superconducting 6
+
+Diode Effect in the Asymmetric Hatsugai-Kohmoto Model,” arXiv e-prints (2025), arXiv:2510.17452 [cond-mat.supr-con]. [29] P. Mai, J. Zhao, B. E. Feldman, and P. W. Phillips, “1/4 is the new 1/2 when topology is intertwined with mottness,” Nature Communications 14 , 5999 (2023). [30] P. Mai, B. E. Feldman, and P. W. Phillips, “Topological mott insulator at quarter filling in the interacting haldane model,” Phys. Rev. Res. 5, 013162 (2023). [31] J. Zhao, P. Mai, B. Bradlyn, and P. Phillips, “Failure of topological invariants in strongly correlated matter,” Phys. Rev. Lett. 131 , 106601 (2023). [32] J. Skolimowski, “Real-space analysis of hatsugai-kohmoto interaction,” Phys. Rev. B 109 , 165129 (2024). [33] K. Yang, “Exactly solvable model of fermi arcs and pseu-dogap,” Phys. Rev. B 103 , 024529 (2021). [34] L. Yeo and P. W. Phillips, “Local entropies across the mott transition in an exactly solvable model,” Phys. Rev. D 99 , 094030 (2019). [35] Y. Zhong, “Notes on quantum oscillation for Hatsugai-Kohmoto model,” Modern Physics Letters B 38 (2024), arXiv:2301.09377 [cond-mat.str-el]. [36] N. A. Hackner, P. Mai, and P. W. Phillips, “Solving the su( n) orbital hatsugai-kohmoto model,” Phys. Rev. A 111 , 063316 (2025). [37] D. Guerci, G. Sangiovanni, A. J. Millis, and M. Fabrizio, “Electrical transport in the hatsugai-kohmoto model,” Phys. Rev. B 111 , 075124 (2025). [38] Y. Ma, J. Zhao, E. W. Huang, D. Kush, B. Bradlyn, and P. W. Phillips, “Charge susceptibility and kubo response in hatsugai-kohmoto-related models,” Phys. Rev. B 112 ,045109 (2025). [39] M. Zhao, W.-W. Yang, H.-G. Luo, and Y. Zhong, “Friedel oscillation in non-fermi liquid: lesson from exactly solvable hatsugai–kohmoto model,” Journal of Physics: Condensed Matter 35 , 495603 (2023). [40] R. Wang and K. Yang, “Non-fermi liquid behavior in a simple model of fermi arcs and pseudogap,” Modern Physics Letters B 37 , 2350119 (2023). [41] C. Setty, S. Sur, L. Chen, F. Xie, H. Hu, S. Paschen, J. Cano, and Q. Si, “Symmetry constraints and spectral crossing in a mott insulator with green’s function zeros,” Phys. Rev. Res. 6, L032018 (2024). [42] L. Šmejkal, J. Sinova, and T. Jungwirth, “Emerging re-search landscape of altermagnetism,” Phys. Rev. X 12 ,040501 (2022). [43] R. Tamang, S. Gurung, D. P. Rai, S. Brahimi, and S. Lounis, “Altermagnetism and altermagnets: A brief re-view,” Magnetism 5 (2025), 10.3390/magnetism5030017. [44] Z. Liu, H. Hu, and X.-J. Liu, “Altermagnetism and Su-perconductivity: A Short Historical Review,” arXiv e-prints (2025), arXiv:2510.09170 [cond-mat.supr-con]. [45] T. Jungwirth, R. M. Fernandes, E. Fradkin, A. H. Mac-Donald, J. Sinova, and L. Šmejkal, “Altermagnetism: An unconventional spin-ordered phase of matter,” Newton 1
+
+(2025). [46] See Supplementary Material. [47] To be precise, our perturbative approach requires first setting λ → 0 before taking the thermodynamic limit so that the finite size gap close to the boundary of S1
+
+is large compared to λV (′). However, even in the ther-modynamic limit, the fraction of S1 where our approach is uncontrolled vanishes for λ → 0 and so we expect no qualitative changes in the ordering tendencies reported in Figs. 2 and 3. [48] J. A. Sobral, S. Mandal, and M. S. Scheurer, “Frac-tionalized altermagnets: From neighboring and alter-magnetic spin liquids to spin-symmetric band splitting,” Phys. Rev. Res. 7, 023152 (2025). [49] M. S. Scheurer, S. Chatterjee, W. Wu, M. Ferrero, A. Georges, and S. Sachdev, “Topological order in the pseudogap metal,” Proceedings of the National Academy of Sciences 115 , E3665 (2018). 
+
+Appendix A: Solving the altermagnetic HK model 1. Finding the spectrum of the altermagnetic HK model 
+
+Let us consider the HK Hamiltonian of our system 
+
+HHK = X
+
+> k
+
+X
+
+> l,l ′,σ
+
+c† 
+
+> k,l,σ
+
+hl,l ′ 
+
+> k
+
+ck,l ′,σ − μ X
+
+> k,l,σ
+
+nk,l,σ + U X
+
+> k,l
+
+nk,l, ↑nk,l, ↓ + U ′ X
+
+> k
+
+X
+
+> σ,σ ′
+
+nk,A,σ nk,B,σ ′ . (A1) We obtain the tight binding matrix hl,l ′ 
+
+> k
+
+by considering nearest neighbor hopping ( t1) between atoms A and B as well as direction dependent next-nearest neighbor hopping ( t2) between atoms of the same sublattice. Atoms of the sublattice A can hop with amplitude t2 in the ex direction whereas atoms of the sublattice B hop in the ey direction. The tight binding matrix is then given as 
+
+hl,l ′ 
+
+> k
+
+=
+
+ p(kx) f (kx, k y )
+
+f (kx, k y ) g(ky )
+
+
+
+> (l,l ′)
+
+=
+
+ −2t2 cos ( kx) −4t1 cos   kx
+
+> 2
+
+ cos 
+
+ ky
+
+> 2
+
+
+
+−4t1 cos   kx
+
+> 2
+
+ cos 
+
+ ky
+
+> 2
+
+
+
+−2t2 cos ( ky )
+
+
+
+> (l,l ′)
+
+(A2) where the Fourier transformation is defined as 
+
+c† 
+
+> R+al,σ
+
+= 1
+
+N
+
+X
+
+> k
+
+e−ik·(R+al)c† 
+
+> k,l,σ
+
+and cR+al,σ = 1
+
+N
+
+X
+
+> k
+
+eik·(R+al)ck,l,σ . (A3) 7Here R are Bravais square lattice vectors, and aA = 0 , aB = (1 , 1) T /2 are the positions of the sublattices’ atoms in the unit cell. Using that HHK = P 
+
+> k
+
+Hk is block-diagonal in momentum k, we can diagonalize it independently for every mo-mentum. This equates to diagonalizing a 16 × 16 (16 = 2 4, where 4 is the number of modes: two orbital and two spin) matrix at every momentum. With [Hk, N k] = 0 this can be further diagonalized in total particle number Nk blocks (Nk = P 
+
+> l,σ
+
+nk,l,σ ), which allows us to find analytic expressions for the eigenvalues of Hk.For this, let us define the new quantities 
+
+Ω( kx, k y ) := p − g
+
+2f , Q(kx, k y ) := − ∆U 2
+
+9 − 43 f 2(1 + Ω 2), (A4) 
+
+R(kx, k y ) := − ∆U 3
+
+27 − 23 f 2∆U (1 − 2Ω 2), θ(kx, k y ) := arccos R
+
+p−Q3
+
+!
+
+. (A5) Then the eigenenergies in the different particle-number blocks are given as: 
+
+• N = 0 
+
+E0 = 0 (A6) 
+
+• N = 1 
+
+E11 = p + g
+
+2 − pf 2(1 + Ω 2) − μ (A7) 
+
+E21 = p + g
+
+2 − pf 2(1 + Ω 2) − μ (A8) 
+
+E31 = p + g
+
+2 + pf 2(1 + Ω 2) − μ (A9) 
+
+E41 = p + g
+
+2 + pf 2(1 + Ω 2) − μ (A10) 
+
+• N = 2 
+
+E02 (kx, k y ) = p + g + U ′ − 2μ (A11) 
+
+E12 = E02 (A12) 
+
+E22 = E02 (A13) 
+
+E32 = 2 p−Q cos 
+
+ θ
+
+3
+
+
+
++ 2∆ U
+
+3 + E02 (A14) 
+
+E42 = 2 p−Q cos 
+
+ θ + 2 π
+
+3
+
+
+
++ 2∆ U
+
+3 + E02 (A15) 
+
+E52 = E02 (A16) 
+
+E62 = 2 p−Q cos 
+
+ θ + 4 π
+
+3
+
+
+
++ 2∆ U
+
+3 + E02 (A17) 
+
+• N = 3 
+
+E03 (kx, k y ) = p + g + U + 2 U ′ − 3μ (A18) 
+
+E13 = p + g
+
+2 − pf 2(1 + Ω 2) + E03 (A19) 
+
+E23 = p + g
+
+2 − pf 2(1 + Ω 2) + E03 (A20) 
+
+E33 = p + g
+
+2 + pf 2(1 + Ω 2) + E03 (A21) 
+
+E43 = p + g
+
+2 + pf 2(1 + Ω 2) + E03 (A22) 8
+
+• N = 4 
+
+E4 = 2 p + 2 g + 2 U + 4 U ′ − 4μ (A23) 
+
+2. Band basis of the checker board lattice 
+
+Up to this point, the creation and annihilation operators act on the different sublattices l ∈ { A, B }. They can be transformed with a unitary transformation U into the band basis of the Bloch Hamiltonian hk where they act on the two bands α ∈ {±} ,
+
+U T (k)hkU (k) = 
+
+λ−(k) 00 λ+(k)
+
+
+
+(A24) with the eigenvalues λ± of the Bloch Hamiltonian hk. The eigenvalues are given as 
+
+λ± = p + g
+
+2 ±
+
+s
+
+f 2 +
+
+ g − p
+
+2
+
+2
+
+(A25) and with this, the transformation matrix can be written as 
+
+Ul,α =
+
+UA, − UA, +
+
+UB, − UB, +
+
+
+
+=
+
+> fN−
+> fN+
+> λ−−pN−
+> λ+−pN−
+
+!
+
+(A26) where the normalizations are given as N± = pf 2 + ( λ± − p)2. It can be clearly seen that the transformation matrix elements depend on the momentum k. With the transformation matrix, we can then express the orbital basis operators (c†/c ) in terms of the new band operators (f †/f ). With this we can write the ground state as in Eq. 2 of the main text. The mapping is given as 
+
+c(†) 
+
+> k,l,σ
+
+= X
+
+> α
+
+Ul,α (k)f (†) 
+
+> k,α,σ
+
+. (A27) Note that there is no need for complex conjugation as the transformation matrix U is real. 
+
+Appendix B: Derivation of the Heisenberg model 
+
+In this section, we show that the Coulomb-like interaction projected on the degenerate ground state of the HK model can be mapped onto the spin-1/2 quantum Heisenberg model. 
+
+1. One-site HK model 
+
+We first consider the one-site HK model, 
+
+HHK = X
+
+> k,σ
+
+ξk ˆnk,σ + X
+
+> k
+
+ˆnk,↑ ˆnk,↓. (B1) The degenerate ground states of this model are given by 
+
+|{ σk}⟩ = Y
+
+> k∈S 1
+
+c†
+
+> k,σ k
+
+Y
+
+> k′∈S 2
+
+c†
+
+> k,↑
+
+c† 
+
+> k,↓
+
+|0⟩ , (B2) where S1,2 denote the singly and doubly occupied regions of the BZ, respectively. Let us consider the following Coulomb-like interaction 
+
+∆H = 1
+
+N
+
+X
+
+> k,k′,q,σ,σ ′
+
+Vq : c† 
+
+> k+q,σ
+
+ck,σ c† 
+
+> k′−q,σ ′
+
+ck′,σ ′ :, (B3) 9where : ˆA : denotes normal ordering. We want to project the Hamiltonian (B3) onto the degenerate HK ground state. Let P be the corresponding projector, P = P 
+
+> {σk}
+
+|{ σk}⟩ ⟨{ σk}| . Since this subspace is characterized by a fixed number of electrons at each momentum k, the projected Hamiltonian conserves the number of particles ˆnk = P 
+
+> σ
+
+ˆnk,σ .Therefore, only the terms with q = 0 and q = k′ − k̸ = 0 in (B3) survive after the projection, P ∆HP . Let us study these two contributions separately, 
+
+P ∆HP = ∆ ˜Hq=0 + ∆ ˜Hq=k′−k, (B4) where 
+
+∆ ˜Hq=0 = P V0
+
+N
+
+X
+
+> k,k′,σ,σ ′
+
+: c† 
+
+> k,σ
+
+ck,σ c† 
+
+> k′,σ ′
+
+ck′,σ ′ : P = V0
+
+N
+
+X
+
+> k,k′
+
+P : ˆ nk ˆnk′ : P = const .P, (B5) and 
+
+∆ ˜Hq=k′−k = P 1
+
+N
+
+X 
+
+> k,k′,k̸=k′,σ,σ ′
+
+Vk′−k : c† 
+
+> k′,σ
+
+ck,σ c† 
+
+> k,σ ′
+
+ck′,σ ′ : P
+
+= −P 1
+
+N
+
+X 
+
+> k,k′,k̸=k′,σ,σ ′
+
+Vk′−kc† 
+
+> k′,σ
+
+ck′,σ ′ c† 
+
+> k,σ ′
+
+ck,σ P (B6) We can rewrite the remaining non-trivial term in the following way, 
+
+−P X 
+
+> k,k′,k̸=k′,σ,σ ′
+
+Vk′−kc† 
+
+> k′,σ
+
+ck′,σ ′ c† 
+
+> k,σ ′
+
+ck,σ P = − X 
+
+> k,k′,k̸=k′
+
+2Vk′−kP
+
+ 14 ˆnk ˆnk′ + Sk · Sk′
+
+
+
+P
+
+= const .P − X 
+
+> k,k′,k̸=k′
+
+2Vk′−kP Sk · Sk′ P, (B7) where Sk = 12 c†
+
+> k
+
+σck. The second term is nonzero only when k, k′ ∈ S 1, where it can be directly mapped onto the spin-1/2 quantum Heisenberg model. Thus, 
+
+P ∆HP 7 → − 12N
+
+X 
+
+> k,k′∈S 1,k̸=k′
+
+Vk−k′ σk · σk′ + const . (B8) 
+
+2. Multiorbital HK model 
+
+We now generalize the obtained mapping to the multiorbital HK models, 
+
+HHK = X
+
+> k,σ,α,β
+
+c† 
+
+> k,α,σ
+
+hαβ  
+
+> k
+
+ck,β,σ + X
+
+> k,α,β,σ,σ ′
+
+ˆnk,α,σ U αβ ˆnk,β,σ ′ , (B9) where hαβ  
+
+> k
+
+is a one-particle Hamiltonian in the orbital basis, and U αβ is an interaction matrix. We limit our analysis to the case when the ground states have a non-degenerate doubly-occupied region S2 and a spin-degenerate singly occupied region S1. The degenerate ground states are then given by 
+
+|{ σk}⟩ = Y
+
+> k∈S 1
+
+f † 
+
+> k,1,σ k
+
+|S 2⟩ , (B10) where |S 2⟩ is the doubly-occupied part of the ground state, and f † 
+
+> k,1,σ k
+
+is the creation operator of the lowest band of the Bloch Hamiltonian hαβ  
+
+> k
+
+. Note that we do not need to know the exact structure of the ground state wavefunction in the doubly occupied region. We consider the multiorbital Hubbard model with the Coulomb-like interaction, 
+
+∆H = 1
+
+N
+
+X
+
+> k,k′,q,σ,σ ′
+
+Vαβ  
+
+> q
+
+: c† 
+
+> k+q,α,σ
+
+ck,α,σ c† 
+
+> k′−q,β,σ ′
+
+ck′,β,σ ′ :, (B11) 10 where the summation over orbitals α, β is assumed. Due to the conservation of ˆnk, only two terms survive the projection onto the degenerate ground states in Eq. (B10). Let us analyze the first term 
+
+∆ ˜Hq=0 = Vαβ 
+
+> 0
+
+N
+
+X
+
+> k,k′
+
+P : ˆ nk,α ˆnk′,β : P, (B12) where ˆnk,α = P 
+
+> σ
+
+ˆnk,α,σ . In the subspace of interest, different k momenta lying in S2 are uncorrelated; hence, for these momenta, 
+
+P : ˆ nk,α ˆnk′,β : P = δk,k′ [⟨ˆnk,α ˆnk,β ⟩ − δα,β ⟨ˆnk,α ⟩] P + (1 − δk,k′ ) ⟨ˆnk,α ⟩ ⟨ ˆnk′,β ⟩ P, k, k′ ∈ S 2. (B13) When one or both of the momenta lie in the singly occupied region, the projection requires more accurate treatment. Let fk,i be band operators, with fk,1 corresponding to the lowest one-particle band. In the following calculations, we denote the wavefunctions of this band by ϕk,α . For k ∈ S 1, fk,i P ∝ δi, 1, P f † 
+
+> k,i
+
+∝ δi, 1, therefore, 
+
+P : ˆ nk,α ˆnk′,β : P = |ϕk,α |2 ⟨ˆnk′,β ⟩ P ˆnk,f 1 P = |ϕk,α |2 ⟨ˆnk′,β ⟩ P, k′ ∈ S 2, k ∈ S 1, (B14) and 
+
+P : ˆ nk,α ˆnk′,β : P = |ϕk,α |2|ϕk′,β |2P ˆnk,f 1 ˆnk′,f 1 P − δk,k′ δα,β |ϕk,α |2P ˆnk,f 1 P
+
+= |ϕk,α |2|ϕk′,β |2P − δk,k′ δα,β |ϕk,α |2P, k, k′ ∈ S 1. (B15) Thus, expression (B13) holds for an arbitrary combination of momenta. The second term that survives projection reads 
+
+∆ ˜Hq=k′−k = P 1
+
+N
+
+X 
+
+> k,k′,k̸=k′,σ,σ ′
+
+Vαβ  
+
+> k′−k
+
+: c† 
+
+> k′,α,σ
+
+ck,α,σ c† 
+
+> k,β,σ ′
+
+ck′,β,σ ′ : P. (B16) We can rewrite it in the convenient way, 
+
+X 
+
+> k,k′,k̸=k
+
+X
+
+> σ,σ ′
+
+Vαβ  
+
+> k′−k
+
+: c† 
+
+> k′,α,σ
+
+ck,α,σ c† 
+
+> k,β,σ ′
+
+ck′,β,σ ′ : = − X 
+
+> k,k′,k̸=k
+
+X
+
+> σ,σ ′
+
+Vαβ 
+
+> k′−k
+
+c† 
+
+> k′,α,σ
+
+ck′,β,σ ′ c† 
+
+> k,β,σ ′
+
+ck,α,σ 
+
+= − X 
+
+> k,k′,k̸=k
+
+Vαβ 
+
+> k′−k
+
+ 12 Cαβ  
+
+> k′
+
+Cβα  
+
+> k
+
++ 2 Sαβ  
+
+> k′
+
+· Sβα 
+
+> k
+
+
+
+, (B17) where Cαβ  
+
+> k
+
+= P 
+
+> σ
+
+c† 
+
+> k,α,σ
+
+ck,β,σ , Sαβ  
+
+> k
+
+= 12 c†
+
+> k,α
+
+σck,β Following the same argument as before, for k̸ = k′, we get 
+
+P C αβ  
+
+> k′
+
+Cβα  
+
+> k
+
+P = ⟨Cαβ  
+
+> k′
+
+⟩ ⟨ Cβα  
+
+> k
+
+⟩ P, (B18) and 
+
+P Sαβ  
+
+> k′
+
+· Sβα  
+
+> k
+
+P =
+
+(
+
+ϕ∗
+
+> k′,α
+
+ϕk′,β ϕ∗ 
+
+> k′,β
+
+ϕk′,α P Sk′,f 1 · Sk,f 1 P, k, k′ ∈ S 1,
+
+0, otherwise , (B19) where Sk,f 1 = 12 f †
+
+> k,1
+
+σfk,1. Thus, we can again map the projected Hamiltonian onto the spin-1/2 quantum Heisenberg model, 
+
+P ∆HP 7 → X 
+
+> k,k′∈S 1,k̸=k′
+
+−Jk,k′ σk · σk′ , Jk,k′ = 12N
+
+X
+
+> α,β
+
+Vαβ  
+
+> k−k′
+
+ϕ∗
+
+> k,α
+
+ϕk,β ϕ∗ 
+
+> k′,β
+
+ϕk′,α . (B20) 
+
+3. Checkerboard model and mean-field solution 
+
+We now specifically discuss the Hubbard interaction projected onto the degenerate ground state of the checkerboard lattice model introduced earlier in Eq. (A1). Let us consider on-site and nearest-neighbors interactions which are given by 
+
+∆H = HV + HV ′ , (B21a) 11 
+
+HV = V X
+
+> R,l
+
+nR+al,↑nR+al,↓ = V
+
+2
+
+X
+
+> R,σ,σ ′
+
+: nR+al,σ nR+al,σ ′ : (B21b) 
+
+HV ′ = V ′
+
+4
+
+X
+
+> R,σ,σ ′
+
+nR,σ 
+
+> 3
+
+X
+
+> j=0
+
+nR+Cj   
+
+> 4zaB,σ ′
+
+. (B21c) Following the convention (A3) of the Fourier transform, we can rewrite the interaction in k-space in the form of (B11) with the following interaction functions, 
+
+VAA  
+
+> q
+
+= VBB  
+
+> q
+
+= V
+
+2 , VAB  
+
+> q
+
+= VBA  
+
+> q
+
+= V ′
+
+2 cos 
+
+ qx
+
+2
+
+
+
+cos 
+
+ qy
+
+2
+
+
+
+. (B22) Recalling that the lower-band wavefunctions of the non-interacting model are real (A26), ϕk,l = Ul, −(k), we obtain the coupling constants of the effective spin-1/2 Heisenberg model (which is equivalent to the projected Hamiltonian 
+
+P ∆HP ) as 
+
+Jk,k′ = V
+
+4N
+
+ϕ2
+
+> k,A
+
+ϕ2 
+
+> k′,A
+
++ ϕ2 
+
+> k,B
+
+ϕ2
+
+> k′,B
+
+ + V ′
+
+2N cos 
+
+ kx − k′
+
+> x
+
+2
+
+
+
+cos 
+
+ ky − k′
+
+> y
+
+2
+
+
+
+ϕk,A ϕk′,A ϕk,B ϕk′,B . (B23) We now solve this effective spin model in the mean-field approximation. If we further focus on collinear solutions, the problem of finding the MF ground state of the effective spin-model reduces to obtaining the ground state of the classical Ising model, 
+
+E[{σk}] = X 
+
+> k,k′∈S 1,k̸=k′
+
+−Jk,k′ σkσk′ , {σk}min = argmin 
+
+> {σk=±}
+
+E[{σk}]. (B24) From the spin-configuration {σk}min , we straightforwardly construct the corresponding fermionic state of the original model, 
+
+|ΩP+MF ⟩ = |{ σk}min ⟩ = Y
+
+> k∈S 1
+
+f †
+
+> k,σ min
+> k
+
+|S 2⟩ , (B25) where we associate ± values of σmin  
+
+> k
+
+with ↑ / ↓ spin-projection of the fermions. This state is a collinear MF ground state of P ∆HP .
+
+4. Construction of the one-shot MF Hamiltonian 
+
+Having found the MF ground state |ΩP+MF ⟩, we now want to demonstrate how the corresponding long-range order affects the spectral properties of the electrons. To do that, we herein construct the one-shot quadratic MF Hamiltonian based on the correlations of |ΩP+MF ⟩.Let us first isolate the k-local part of the Hamiltonian (B11), 
+
+∆H = 1
+
+N
+
+X
+
+> k,k′,q
+
+Vαβ  
+
+> q
+
+: c†
+
+> k+q,α
+
+ck,α c† 
+
+> k′−q,β
+
+ck′,β : = 1
+
+N Vαβ  
+
+> 0
+
+: c†
+
+> k,α
+
+ck,α c† 
+
+> k,β
+
+ck,β :+ 1
+
+N
+
+X
+
+> k,k′,q
+> (k,q)̸=( k′,0)
+
+Vαβ  
+
+> q
+
+: c†
+
+> k+q,α
+
+ck,α c† 
+
+> k′−q,β
+
+ck′,β :, (B26) where we suppressed the spin index for notations simplicity. Imposing translational invariance, we perform the MF decomposition (Hartree-Fock) of the second term. Then the MF version of the Hamiltonian ∆H reads 
+
+∆HMF = 1
+
+N Vαβ  
+
+> 0
+
+: c†
+
+> k,α
+
+ck,α c† 
+
+> k,β
+
+ck,β :+ 1
+
+N
+
+X 
+
+> k,k′,k̸=k′
+
+Vαβ 
+
+> 0
+
+ˆnk′,α ⟨ˆnk,β ⟩ + ⟨ˆnk′,α ⟩ ˆnk,β − ⟨ ˆnk′,α ⟩ ⟨ ˆnk,β ⟩ (B27a) 
+
+− 12N
+
+X 
+
+> k,k′,k̸=k′
+
+Vαβ 
+
+> k′−k
+
+h
+
+⟨Cαβ  
+
+> k′
+
+⟩ Cβα  
+
+> k
+
++ Cαβ  
+
+> k′
+
+⟨Cβα  
+
+> k
+
+⟩ − ⟨ Cαβ  
+
+> k′
+
+⟩ ⟨ Cβα  
+
+> k
+
+⟩
+
+i
+
+(B27b) 12 
+
+− 2
+
+N
+
+X 
+
+> k,k′,k̸=k′
+
+Vαβ 
+
+> k′−k
+
+h
+
+⟨Sαβ  
+
+> k′
+
+⟩ · Sβα  
+
+> k
+
++ Sαβ  
+
+> k′
+
+· ⟨ Sβα  
+
+> k
+
+⟩ − ⟨ Sαβ  
+
+> k′
+
+⟩ · ⟨ Sβα  
+
+> k
+
+⟩
+
+i
+
+. (B27c) This Hamiltonian is consistent with our prior projection and MF calculations. Let us elaborate on what we mean by consistency. The projection and MF decomposition do not generally commute, nonetheless, the expectation value of the constructed Hamiltonian in the state |ΩP+MF ⟩ coincides with the energy of this state obtained after projection and MF, 
+
+⟨ΩP+MF |∆HMF [|ΩP+MF ⟩]|ΩP+MF ⟩ = EP+MF . (B28) An exact treatment of the k-local part is required because the obtained MF state is the product state only at the k-level, |ΩP+MF ⟩ = Q 
+
+> k
+
+|Ψk⟩, while each |Ψk⟩ can generally exhibit orbital mixing/entanglement in the doubly occupied region S2.Our primary reason for constructing the MF Hamiltonian is to demonstrate the spin-splitting in the spectral function. Hence, we neglect the spin-diagonal band renormalization terms, and consider only the SU(2) breaking part of the MF Hamiltonian. In the main text, we use the following spin-splitting Hamiltonian constructed from the MF solution |ΩP+MF ⟩,
+
+∆Hspin-splitting  
+
+> MF
+
+[|ΩP+MF ⟩] = − 2
+
+N
+
+X
+
+> k
+
+Vαβ  
+
+> k−k′
+
+Sαβ  
+
+> k
+
+· X 
+
+> k′∈S 1,k′̸=k
+
+D
+
+ΩP+MF Sβα  
+
+> k′
+
+ΩP+MF 
+
+E
+
+− 2
+
+N
+
+X
+
+> k
+
+Vαβ 
+
+> k′−k
+
+Sβα  
+
+> k
+
+· X 
+
+> k′∈S 1,k′̸=k
+
+D
+
+ΩP+MF Sαβ  
+
+> k′
+
+ΩP+MF 
+
+E
+
+.
+
+(B29) 
+
+Appendix C: Expression for the static spin correlator 
+
+In this section, we consider the HK model with an additional interaction term δH , that still allows the exact diagonalization of the full Hamiltonian, H = HHK + δH . For simplicity, let us first focus on the one-site HK model. We are interested in the interactions that fully or partially remove the degeneracy of the HK ground state. One example of such an interaction is 
+
+δH 2S = −J X
+
+> k
+
+Sk · S−k, (C1) which fully lifts the degeneracy when J < 0. The ground state in the singly occupied region then consists of decoupled singlets formed by electrons at k and −k,
+
+|GS ⟩ = Y
+
+> k∈S 1,k x>0
+
+1
+
+√2
+
+h
+
+c†
+
+> k,↑
+
+c†−k,↓ − c†
+
+> k,↓
+
+c†−k,↑
+
+i Y
+
+> k′∈S 2
+
+c†
+
+> k′,↑
+
+c† 
+
+> k′,↓
+
+|0⟩ . (C2) Note that δH modifies the singly and doubly occupied regions. The subsequent calculations are based on the as-sumption that ˆnk = P 
+
+> σ
+
+ˆnk,σ is conserved. It means that we either treat δH as a perturbation (by diagonalizing 
+
+P δHP ) or we diagonalize the full Hamiltonian HHK + δH , and require that [δH, ˆnk] = 0 . Finally, we denote the set of momenta that are coupled by the interaction δH to a given k by C(k), which includes k as well. For example, the interaction (C1) couples only two momenta, k and −k. Momenta from different clusters C are uncorrelated. 
+
+1. Spin correlator 
+
+We want to understand how the additional interaction δH affect the spin correlations, 
+
+⟨Sz (0)Sz (R)⟩ = 14N 2
+
+X
+
+> k1,k2,k,q
+
+D
+
+c† 
+
+> k1
+
+σz ck2 c† 
+
+> k+q
+
+σz ck
+
+E
+
+e−iqR . (C3) Since ˆnk is conserved, only the terms corresponding to the following combination of momenta give non-vanishing contribution, 
+
+q = 0, k1 = k2; (C4a) 13 
+
+k + q = k2, k1 = k. (C4b) Therefore, 
+
+⟨Sz (0)Sz (R)⟩ = 1
+
+N 2
+
+X
+
+> k,k′
+
+⟨Sz
+
+> k
+
+Sz 
+
+> k′
+
+⟩ + 14N 2
+
+X 
+
+> k,k′,k̸=k′
+
+⟨c†
+
+> k
+
+σz ck′ c† 
+
+> k′
+
+σz ck⟩ e−i(k′−k)R. (C5) It is useful to split the summation over k′ into correlated and uncorrelated parts. The first term then reads 
+
+X
+
+> k,k′
+
+⟨Sz
+
+> k
+
+Sz 
+
+> k′
+
+⟩ = X
+
+> k;k′∈C(k)
+
+⟨Sz
+
+> k
+
+Sz 
+
+> k′
+
+⟩ + X
+
+> k;k′∈BZ \C(k)
+
+⟨Sz
+
+> k
+
+Sz 
+
+> k′
+
+⟩
+
+= X
+
+> k;k′∈C(k)
+
+⟨Sz
+
+> k
+
+Sz 
+
+> k′
+
+⟩ + X
+
+> k;k′∈BZ \C(k)
+
+⟨Sz
+
+> k
+
+⟩ ⟨ Sz 
+
+> k′
+
+⟩
+
+= X
+
+> k;k′∈C(k)
+
+⟨Sz
+
+> k
+
+Sz 
+
+> k′
+
+⟩
+
+= 13
+
+X
+
+> k;k′∈C(k)
+
+⟨Sk · Sk′ ⟩ , (C6) where we exploited SU(2) symmetry, ⟨Sj
+
+> k
+
+⟩ = 0 , ⟨Sj
+
+> k
+
+Sj 
+
+> k′
+
+⟩ = 1 /3 ⟨Sk · Sk′ ⟩.We now rewrite the expectation value in the second term of Eq. (C5), 
+
+⟨c†
+
+> k
+
+σz ck′ c† 
+
+> k′
+
+σz ck⟩ = − X
+
+> σ
+
+ˆnk,σ ˆnk′,σ + ⟨nk⟩ + X
+
+> σ
+
+⟨c† 
+
+> k,σ
+
+ck,σ c† 
+
+> k′,σ
+
+ck′,σ ⟩
+
+= − 12 ⟨ˆnk ˆnk′ ⟩ + ⟨nk⟩ − 2 ⟨Sz
+
+> k
+
+Sz 
+
+> k′
+
+⟩ + 2 ⟨Sx 
+
+> k
+
+Sx 
+
+> k′
+
+⟩ + 2 Sy
+
+> k
+
+Sy
+
+> k′
+
+= − 12 ⟨ˆnk⟩ ⟨ ˆnk′ ⟩ + ⟨nk⟩ + 23 ⟨Sk · Sk′ ⟩ . (C7) Using the same splitting as in (C6) and again exploiting SU(2), we finally obtain 
+
+⟨S(0) · S(R)⟩ = − 38N 2
+
+X
+
+> k
+
+⟨ˆnk⟩ eikR 
+
+> 2
+
++ δR,0
+
+34N
+
+X
+
+> k
+
+⟨ˆnk⟩
+
++ 12N 2
+
+X
+
+> k,k′∈C(k)
+
+⟨Sk · Sk′ ⟩
+
+
+
+2 + cos[( k′ − k)R]
+
+
+
+− 34N 2
+
+X
+
+> k∈S 1
+
+1. (C8) Thus, we can clearly see that the all the information about the perturbation δH is encoded in the spin-spin correlations 
+
+⟨Sk · Sk′ ⟩. If δH couples finite number (independent of the system size N ) of momenta (e.g. the interaction (C1) couples two momenta), the interaction-induced correlation vanish in the thermodynamic limit, and spin-correlator is fully determined by the fermionic statistics, 
+
+⟨S(0) · S(R)⟩ = − 38
+
+1(2 π)d
+
+Z
+
+> BZ
+
+ddk ⟨ˆnk⟩ eikR 
+
+> 2
+
++ δ(R) 341(2 π)d
+
+Z
+
+> BZ
+
+ddk ⟨ˆnk⟩ . (C9) This expression coincides with the result for the Fermi sea, which is the consequence of the fact that the HK model inherits a lot of properties from non-interacting systems. 
+
+2. Static spin structure factor 
+
+From Eq. (C8), we can straightforwardly obtain the static spin-structure factor, 
+
+S(q) = X
+
+> R
+
+⟨S(0) · S(R)⟩ eiqR 
+
+= − 38N
+
+X
+
+> k
+
+nknk+q + 34N
+
+X
+
+> k
+
+nk + 1
+
+N
+
+X
+
+> k,k′∈C(k)
+
+⟨Sk · Sk′ ⟩
+
+
+
+δq,0 + 12 δk′,k+q
+
+
+
+− 34N δq,0
+
+X
+
+> k∈S 1
+
+114 
+
+= 38N
+
+X
+
+> k
+
+nk(2 − nk+q ) + 1
+
+N
+
+X
+
+> k,k′∈C(k)
+
+⟨Sk · Sk′ ⟩
+
+
+
+δq,0 + 12 δk′,k+q
+
+
+
+− 34N δq,0
+
+X
+
+> k∈S 1
+
+1. (C10) The ferromagnetic structure factor then reads 
+
+S(q = 0) = 1
+
+N
+
+X
+
+> k;k′∈C(k)
+
+⟨Sk · Sk′ ⟩ = 1
+
+N
+
+X
+
+> C
+
+X
+
+> k,k′∈C
+
+⟨Sk · Sk′ ⟩
+
+= 1
+
+N
+
+X
+
+> C
+
+*X
+
+> k∈C
+
+Sk
+
+2+
+
+, (C11) where P 
+
+> C
+
+denotes the summation over clusters of coupled momenta. We can see that depending on the perturbation we can modify the ferromagnetic correlations, even enhance them or fully suppress. For example, the four-spin perturbation, 
+
+δH = −J X
+
+> k
+> 3
+
+X
+
+> j=0
+
+SCj  
+
+> 4zk
+
+· SCj+1 4z k, (C12) removes the degeneracy and results in the unique ground state when J < 0. The ground state is now a singlet state which fully suppresses the ferromagnetic structure factor. Note that J > 0 would enhance S(q = 0).The finite momentum spin structure factor is given by 
+
+S(q̸ = 0) = 12N
+
+X
+
+> k∈S 1
+
+1S1 (k + q)
+
+ 34 + 1C(k)(k + q) ⟨Sk · Sk+q ⟩
+
+
+
+, (C13) where 1A(x) is the indicator function. Analogously to the ferromagnetic correlations, the perturbation δH =
+
+−J P 
+
+> k
+
+Sk · Sk+Q with Q = ( π, π ) fully suppresses the antiferromagnetic correlations S(Q) when J < 0. This interaction, however, does not lift the degeneracy for an arbitrary filling. 
+
+3. Multiorbital case 
+
+We now generalize the calculations of the spin-spin correlations to the multi-orbital HK model of the form (B9) with an additional perturbation that modifies spin-spin correlations of the unperturbed HK ground state while conserving SU(2) symmetry and the number of particles at each momentum k. It is instructive to consider the following spin-spin perturbation 
+
+δH = − X
+
+> C
+
+X
+
+> k,k′∈C
+
+X
+
+> α,β,α ′,β ′
+
+˜Jαβα ′β′ 
+
+> k,k′
+
+Sαβ  
+
+> k
+
+· Sα′β′ 
+
+> k′
+
+, (C14) where the summation P 
+
+> C
+
+goes over non-overlapping finite-size clusters C of coupled momenta. The spin-spin correlator reads 
+
+D
+
+Sαβ z (0)Sα′β′ 
+
+> z
+
+(R)
+
+E
+
+= 1
+
+N
+
+X
+
+> k,k′
+
+D
+
+Sαβ  
+
+> k,z
+
+Sα′β′
+
+> k′,z
+
+E
+
++ 14N 2
+
+X 
+
+> k,k′,k̸=k′
+
+D
+
+c†
+
+> k,α
+
+σz ck′,β c† 
+
+> k′,α ′
+
+σz ck,β ′
+
+E
+
+e−i(k′−k)R, (C15) where we use the following convention for the Fourier transform, cR,α = N −1/2 P 
+
+> k
+
+eikR ck,α . The first term can be again split into correlated and uncorrelated parts. The uncorrelated part vanishes due to SU(2) symmetry, hence, 
+
+D
+
+Sαβ  
+
+> k,z
+
+Sα′β′
+
+> k′,z
+
+E
+
+= 1C(k)(k′)
+
+D
+
+Sαβ  
+
+> k,z
+
+Sα′β′
+
+> k′,z
+
+E
+
++  1 − 1C(k)(k′) D
+
+Sαβ 
+
+> k,z
+
+E D 
+
+Sα′β′
+
+> k′,z
+
+E
+
+= 1C(k)(k′)
+
+D
+
+Sαβ  
+
+> k,z
+
+Sα′β′
+
+> k′,z
+
+E
+
+. (C16) The second term can be rewritten in the convenient way, 
+
+c†
+
+> k,α
+
+σz ck′,β c† 
+
+> k′,α ′
+
+σz ck,β ′ = X
+
+> σ
+
+h
+
+δα′,β c† 
+
+> k,α,σ
+
+ck,β ′,σ − c† 
+
+> k,α,σ
+
+ck,β ′,σ c† 
+
+> k′,α ′,σ
+
+ck′,β,σ + c† 
+
+> k,α,σ
+
+ck,β ′,σ c† 
+
+> k′,α ′,σ
+
+ck′,β,σ 
+
+i15 
+
+= δα′,β Cαβ ′ 
+
+> k
+
+− 12 Cαβ ′ 
+
+> k
+
+Cα′β 
+
+> k′
+
+− 2Sαβ ′ 
+
+> k,z
+
+Sα′β 
+
+> k′,z
+
++ 2 Sαβ ′ 
+
+> k,x
+
+Sα′β 
+
+> k′,x
+
++ 2 Sαβ ′ 
+
+> k,y
+
+Sα′β 
+
+> k′,y
+
+. (C17) Due to the SU(2) symmetry, we get 
+
+D
+
+c†
+
+> k,α
+
+σz ck′,β c† 
+
+> k′,α ′
+
+σz ck,β ′
+
+E
+
+= δα′,β 
+
+D
+
+Cαβ ′
+
+> k
+
+E
+
+− 12
+
+D
+
+Cαβ ′ 
+
+> k
+
+Cα′β
+
+> k′
+
+E
+
++ 23
+
+D
+
+Sαβ ′ 
+
+> k
+
+· Sα′β
+
+> k′
+
+E
+
+= δα′,β 
+
+D
+
+Cαβ ′
+
+> k
+
+E
+
++ 1C(k)(k′)
+
+ 23
+
+D
+
+Sαβ ′ 
+
+> k
+
+· Sα′β
+
+> k′
+
+E
+
+− 12
+
+D
+
+Cαβ ′ 
+
+> k
+
+Cα′β
+
+> k′
+
+E
+
+−  1 − 1C(k)(k′) 12
+
+D
+
+Cαβ ′
+
+> k
+
+E D 
+
+Cα′β
+
+> k′
+
+E
+
+.
+
+(C18) Thus, 
+
+D
+
+Sαβ (0) · Sα′β′
+
+(R)
+
+E
+
+= δα′,β 
+
+34N
+
+X
+
+> k
+
+D
+
+Cαβ ′
+
+> k
+
+E 
+
+δR,0 − 1
+
+N
+
+
+
+− 38N 2
+
+X 
+
+> k;k′̸∈C(k)
+
+D
+
+Cαβ ′
+
+> k
+
+E D 
+
+Cα′β
+
+> k′
+
+E
+
+ei(k−k′)R
+
++ 1
+
+N 2
+
+X
+
+> k;k′∈C(k)
+
+D
+
+Sαβ  
+
+> k
+
+· Sα′β′
+
+> k′
+
+E
+
++ 12N 2
+
+X 
+
+> k;k′∈C(k)
+> k̸=k′
+
+D
+
+Sαβ ′ 
+
+> k
+
+· Sα′β
+
+> k′
+
+E
+
+− 34
+
+D
+
+Cαβ ′ 
+
+> k
+
+Cα′β
+
+> k′
+
+E
+
+ei(k−k′)R.
+
+(C19) Taking the Fourier transform, we find the static spin structure factor, Sαβα ′β′
+
+(q) = P
+
+> R
+
+D
+
+Sαβ (0) · Sα′β′
+
+(R)
+
+E
+
+e−iqR .As in the single-orbital case, for q = 0, it is again determined solely by the perturbation-induced spin-correlations, 
+
+Sαβα ′β′
+
+(q = 0) = 1
+
+N
+
+X
+
+> C
+
+*X
+
+> k∈C
+
+Sαβ  
+
+> k
+
+· X
+
+> k′∈C
+
+Sα′β′
+
+> k′
+
++
+
+. (C20) The finite-momentum spin-structure factor reads 
+
+Sαβα ′β′
+
+(q̸ = 0) = δα′,β 
+
+34N
+
+X
+
+> k
+
+D
+
+Cαβ ′
+
+> k
+
+E
+
+− 38N
+
+X
+
+> k
+
+1 − 1C(k)(k + q) D
+
+Cαβ ′
+
+> k
+
+E D 
+
+Cα′β
+
+> k+q
+
+E
+
++ 12N
+
+X
+
+> k
+
+1C(k)(k + q)
+
+D
+
+Sαβ ′ 
+
+> k
+
+· Sα′β
+
+> k+q
+
+E
+
+− 34
+
+D
+
+Cαβ ′ 
+
+> k
+
+Cα′β
+
+> k+q
+
+E
+
+.
+
+(C21) Although the multiorbital nature of this expression makes it generally difficult to analyze, we clearly see that the perturbation δH induces spin-correlations at finite momentum q only if there exists k such that both k and k + q lie in the same cluster C.
+
+Appendix D: Further spectral functions 
+
+Following the calculations described in the long-range order section of the main text, we compute the spin-split spectral functions for the cases: lv -FM, ring-p, ring-d and ring-FM. They are shown in Fig. 5(e-h). We also show the corresponding spin configurations that we obtain via minimization in S1. They are shown in Fig. 5(a-d). The interactions U and U ′ for the calculations are chosen as: 
+
+• lv -FM: U = 1 .0, U ′ = −1.0
+
+• ring-p: U = 0 .2, U ′ = 2 .6
+
+• ring-d: U = 0 .003 , U ′ = 0 .5
+
+• ring-FM: U = 1 .0, U ′ = −0.1 .All shown spectral functions (in main text and appendix) share the same chemical potential μ = −1.0 and next nearest-neighbor hopping t2 = 0 .5. We use a system with size 200 × 200 and zero temperature T = 0 .The ring spin up spectral functions A↑(k, ω = 0) in Fig. 5 show the symmetries discussed in the main text. The respective spin down spectral functions A↓(k, ω = 0) of the p-wave and d-wave altermagnet can be obtained via 16 −3 −2 −1 0 1 2 3
+
+kx
+
+−3
+
+−2
+
+−10123
+
+> ky
+> (a)
+
+Spin ↑
+
+Spin ↓
+
+−3 −2 −1 0 1 2 3
+
+kx
+
+−3
+
+−2
+
+−10123
+
+> ky
+> (b)
+
+Spin ↑
+
+Spin ↓
+
+−3 −2 −1 0 1 2 3
+
+kx
+
+−3
+
+−2
+
+−10123
+
+> ky
+> (c)
+
+Spin ↑
+
+Spin ↓
+
+−3 −2 −1 0 1 2 3
+
+kx
+
+−3
+
+−2
+
+−10123
+
+> ky
+> (d)
+
+Spin ↑
+
+Spin ↓
+
+−3 −2 −1 0 1 2 3
+
+kx
+
+−3
+
+−2
+
+−10123
+
+> ky
+> (e)
+> lv-FM
+
+−3 −2 −1 0 1 2 3
+
+kx
+
+−3
+
+−2
+
+−10123
+
+> ky
+> (f) ring-p
+
+−3 −2 −1 0 1 2 3
+
+kx
+
+−3
+
+−2
+
+−10123
+
+> ky
+> (g) ring-d
+
+−3 −2 −1 0 1 2 3
+
+kx
+
+−3
+
+−2
+
+−10123
+
+> ky
+> (h) ring-FM
+
+12345
+
+> A↑(k, ω  = 0)
+
+FIG. 5. Different spin configurations (a-d) of ring and lv S1, that are obtained from the minimization, and their corresponding spin up spectral functions A↑(k, ω = 0) (e-h). Combined with the spectral functions shown in the long range order section of the main text, the shown spectral functions give examples for all phases in the phase diagram Fig. 3c. −3 −2 −1 0 1 2 3
+
+kx
+
+−3
+
+−2
+
+−10123
+
+> ky
+
+(a) 
+
+Spin ↑
+
+Spin ↓
+
+−3 −2 −1 0 1 2 3
+
+kx
+
+−3
+
+−2
+
+−10123
+
+> ky
+
+(b) 
+
+Spin ↑
+
+Spin ↓
+
+−3 −2 −1 0 1 2 3
+
+kx
+
+−3
+
+−2
+
+−10123
+
+> ky
+
+(c) 
+
+Spin ↑
+
+Spin ↓
+
+−3 −2 −1 0 1 2 3
+
+kx
+
+−3
+
+−2
+
+−10123
+
+> ky
+
+(d) ring-FM 
+
+−3 −2 −1 0 1 2 3
+
+kx
+
+−3
+
+−2
+
+−10123
+
+> ky
+
+(e) ring-d 
+
+−3 −2 −1 0 1 2 3
+
+kx
+
+−3
+
+−2
+
+−10123
+
+> ky
+
+(f) ring-p 
+
+0123
+
+> A↑(k, ω  = 0)
+
+FIG. 6. Spin configurations of the three magnetic phases in the ring regime of the single-orbtial HK model and their corre-sponding spin up spectral functions A↑(k, ω = 0) . The single-orbital HK model only allows ring and disk S1. Therefore, the spectral functions shown constitute a comprehensive set of non-trivial spectral functions. 
+
+rotation of A↑(k, ω = 0) . For p-wave this is a rotation by π and for d-wave this is a rotation by π 
+
+> 2
+
+.17 For the single-orbital HK model 
+
+HHK ,1 = X
+
+> k,σ
+
+(ξk − μ)ˆ nk,σ + U X
+
+> k
+
+ˆnk,↑ ˆnk,↓ + U ′ X
+
+> k,σ,σ ′
+
+ˆnk,σ ˆnk,σ ′ (D1) we follow the calculations of the two-orbital HK model, that are described in appendix B. We find the same magnetic phases in the single-orbital model that where already present in the two-orbital model. The spin-up spectral functions 
+
+A↑(k, ω = 0) of the ring-FM, ring-d and ring-p configuration are shown in Fig. 6d to f. For this we use the equivalent of Eq. (B29). We also show the corresponding spin configurations in S1 that are obtained via minimization Fig. 6(a-c). The corresponding spin-down spectral functions behave as expected and can be generated with rotations of π 
+
+> 2
+
+/π in the p/d -wave case. For the single-orbital spectral functions we chose a system size of 200 × 200 and temperature 
+
+T = 0 , chemical potential μ and interactions U and U ′ are varied to obtain the different configurations.
