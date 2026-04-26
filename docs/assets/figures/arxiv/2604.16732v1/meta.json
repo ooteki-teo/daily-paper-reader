@@ -1,0 +1,78 @@
+{
+  "version": 2,
+  "extractor": "pdffigures2",
+  "figures": [
+    {
+      "url": "assets/figures/arxiv/2604.16732v1/fig-001.webp",
+      "caption": "FIG. 2. (a)-(c): The amplitudes |ψ0(x,E)| of the mF = 0 component of the spinor wavefunction in the energy-space domain, normalized as a fraction of the peak value [the legend on the right applies to all three panels; note that |ψ0(x,E)| is—due to the chosen scaling— dimensionless]. The parameters for the results in the left, middle, and right columns are the same as those in Fig. 1. The dash-dotted lines on the left edges of panels (a)–(c) indicate, in accordance with the resonance condition derived in Sec. IIID, multiples of 2q. The dashed lines and dotted lines on the right edges of panels (a)–(c) indicate the eigenenergies of the Bogoliubov Hamiltonian derived from Hscalar(r, t); the dashed lines correspond to the spin-perpendicular excitations while the dotted lines correspond to spin-parallel excitations (see the discussion in Sec. III for details). The red boxes in panels (a)-(c) highlight the regions around the expected resonance positions. The second-most occupied slices, which lie within the red boxes, have energies that coincide to a good approximation with the estimated resonance condition. (d)-(f): Panels (d) and (e) compare the real part of the wavefunctions ψ0(x,E) (blue solid lines), selected from slices within the red boxes in (a) and (b), with the real spatial part of the eigenmodes u(x) and v∗(x) of the Bogoliubov Hamiltonian derived in Sec. III for the spin-perpendicular excitations (orange dashed lines). Panel (f) compares the real part of both the maximally occupied positive-energy slice (blue solid line) and the negative-energy slice (orange dashed line) with the corresponding Bogoliubov spatial wavefunctions for the spin-parallel excitations [green dash-dotted line for the positive-energy component u(x) and red dotted line for the negative-energy component v∗(x)]. The Bogoliubov wavefunctions and FFT slices are normalized according to Eq. (62). The FFT slices show good agreement with the Bogoliubov wavefunctions, although small discrepancies are observed in panel (f) for the spatial part of the mode with particle–hole correlations.",
+      "page": 6,
+      "index": 1,
+      "width": 1062,
+      "height": 627
+    },
+    {
+      "url": "assets/figures/arxiv/2604.16732v1/fig-002.webp",
+      "caption": "FIG. 5. Resonance positions as a function of the trap frequency ω obtained from SGPE simulations. The first, second, and third columns correspond to ω = 2π × 38 Hz, 2π × 196 Hz, and 2π × 294 Hz, respectively. Panels (a)–(c) and (e)–(g) show the time traces of 1−F+(t), signaling spin-perpendicular resonances, and D(t), signaling spin-parallel resonances, respectively, as a function of q. The red lines below (b) and (f) indicate the vertical cuts corresponding to the SGPE simulation results shown in Fig. 1. The solid red triangles above (b) and (c) indicate resonance peaks corresponding to the spin-perpendicular excitations, while the blue hollow triangles above (f) and (g) indicate resonance peaks corresponding to spin-parallel excitations. The green crosses above (b), (f), and (g) mark spin-parallel, spin-perpendicular, and spin-perpendicular excitations, respectively. Panels (d) and (h) compare the SGPE resonance positions extracted from the peak maxima (blue dots and green crosses) with the Bogoliubov theory predictions [the orange dashed and red dotted lines show qres(ω) = E⊥2(ω)/2 and qres(ω) = E∥2(ω)/2 for the spin-perpendicular excitations and spin-parallel excitations, respectively]. The pink-shaded regions in panels (d) and (h) indicate the “weak-trap” regimes in which no sharp resonance positions can be identified. Inside the weak-trap regimes for each resonance type, the maxima align with the SMA spin-separatrix value of q/cs = 1 (the black horizontal dashed line). Outside of the weak-trap regime, the resonance positions extracted from the SGPE results show excellent agreement with the Bogoliubov theory predictions.",
+      "page": 15,
+      "index": 2,
+      "width": 1062,
+      "height": 412
+    },
+    {
+      "url": "assets/figures/arxiv/2604.16732v1/fig-003.webp",
+      "caption": "FIG. 6. Zoomed view of Fig. 5(b) showing 1 − F+(t) in the region around the q/cs ≈ 3 resonance. The red vertical lines above and below the plot show the location of the resonance predicted from the E⊥4 = 4qres resonance condition for ℏω/cs = 6.668. The white dashed box encloses the region where the state fidelity map shows indications of a crossing between the side peaks and a vertical feature due to the E⊥4 = 4qres resonance.",
+      "page": 15,
+      "index": 3,
+      "width": 514,
+      "height": 313
+    },
+    {
+      "url": "assets/figures/arxiv/2604.16732v1/fig-004.webp",
+      "caption": "FIG. 3. Comparison of the spatial part of the resonant mode obtained from the Fourier transform of the SGPE results with the predictions of different Bogoliubov theories for the parameters of Fig. 2(f). As in Fig. 2(f), the solid blue and orange dashed lines correspond to the real spatial parts of the maximally occupied positive-energy and negative-energy excitations obtained by Fourier transforming the SGPE results. The green dash-dotted and red dotted lines correspond to the spatial part of the particle-component of the eigenmodes of the U(1)-symmetry–conserving Bogoliubov theory for the positive-energy and negative-energy modes, respectively, developed in this work. The additional lines correspond to the spatial parts of the positive-energy (purple double–dash–dotted) and negative-energy (brown short–dash–dotted) particle-components of the eigenmodes obtained from the standard Bogoliubov theory that breaks the U(1) symmetry. The U(1)-symmetry–conserving theory provides a significantly better description of the resonant modes than the standard Bogoliubov theory.",
+      "page": 7,
+      "index": 4,
+      "width": 514,
+      "height": 314
+    },
+    {
+      "url": "assets/figures/arxiv/2604.16732v1/fig-005.webp",
+      "caption": "FIG. 8. The dynamics of the population of the mF = 0 spin component with ω = 2π × 196 Hz at two different q values, (a) q = h × 60 Hz and (b) q ≈ h × 171 Hz. The blue solid, orange dashed, and green dash-dotted lines correspond to the results obtained from SGPE simulations, the truncated Λmodel using 19 states with no beyond-Bogoliubov terms, and the two-state truncated Λ-model with no beyond-Bogoliubov terms, respectively. The inset within (b) shows the late-time resonance in the excited amplitude b2 of the two-state model. All the other parameters are the same as the ones used in Fig. 1. The truncated models fail to capture the SGPE dynamics accurately for cst/h ≳ 0.8.",
+      "page": 18,
+      "index": 5,
+      "width": 479,
+      "height": 443
+    },
+    {
+      "url": "assets/figures/arxiv/2604.16732v1/fig-006.webp",
+      "caption": "FIG. 4. Bogoliubov spectrum of the Hamiltonian L̃scalar(r, r ′) as a function of the trap frequency ω. Only eigenenergies corresponding to eigenmodes with even spatial symmetry are shown. The blue solid and orange dashed lines denote spin-perpendicular and spin-parallel excitations, respectively. The value of gs is adjusted for each ω such that cs has the same value as used in Figs. 1 and 2, namely, cs = h × 29.39 Hz. The ratio gn/gs is kept fixed at 28.10 for all calculations.",
+      "page": 13,
+      "index": 6,
+      "width": 514,
+      "height": 319
+    },
+    {
+      "url": "assets/figures/arxiv/2604.16732v1/fig-007.webp",
+      "caption": "FIG. 1. Near-resonant spin and spatial dynamics for a spin-1 BEC in a 1D harmonic trap at quadratic Zeeman shifts q = h×60 Hz (first column), q = h×90 Hz (middle column), and q ≈ h×171 Hz (third column). The first, second, and third rows show the time traces of ρ0(t), the density |ψ0(x, t)|2 of themF = 0 component, and the total density ntot(x, t) = Ψ†(x, t)Ψ(x, t), respectively. The solid blue lines, orange dashed lines, and green dash-dotted lines in panels (a)-(c) correspond to the results of SGPE simulations, the SMA model, and the Λ-model developed in this work with 19 states, respectively. The SGPE and Λ-model show near-identical dynamics, while the SMA fails to capture the resonance-driven dynamics. The second and third rows show SGPE results. The values of the angular trap frequency ω, the Thomas-Fermi radius RTF, and the spin-dependent collision energy cs can be found in the main text.",
+      "page": 4,
+      "index": 7,
+      "width": 1062,
+      "height": 656
+    },
+    {
+      "url": "assets/figures/arxiv/2604.16732v1/fig-008.webp",
+      "caption": "FIG. 9. The dynamics of the population of the mF = 0 spin component with ω = 2π × 196 Hz for (a-b) q just above h × 60 Hz [see Fig. 8(a)] and (c-d) q just below h × 171 Hz [see Fig. 8(b)]. The values of the quadratic Zeeman shifts are (a) q = h × 75 Hz, (b) q = h × 70 Hz, (c) q = h × 150 Hz, and (d) q = h × 160 Hz. All other parameters are the same as the ones used in Fig. 1. In (a) and (c), the blue solid, orange dashed, and green dash-dotted lines correspond to the results obtained from SGPE simulations, SMA, and Λ-model with all terms using two spatial wavefunctions, respectively. The SGPE and Λ-models produce similar results, while the SMA fails to capture the slow resonant oscillation. In (b) and (d), the blue solid, green dash-dotted, and red dotted lines correspond to the results obtained from SGPE simulations, Λ-model with all terms using two spatial wavefunctions, and Λ-model with all terms using 10 spatial wavefunctions, respectively. The Λ-model with 10 states reproduces the SGPE results, while the two-state model fails to capture the amplitude and frequency of the slow resonant oscillation. The slow oscillation frequencies appear to decrease in amplitude for the values of q further away from the resonant values.",
+      "page": 19,
+      "index": 8,
+      "width": 512,
+      "height": 316
+    },
+    {
+      "url": "assets/figures/arxiv/2604.16732v1/fig-009.webp",
+      "caption": "FIG. 7. Spatial dynamics obtained from the SGPE in the weak-trap regime with ω = 2π × 38 Hz and q = h × 15 Hz (q/cs = 0.512). Panel (a) shows the time evolution of the mF = 0 component density |ψ0(x, t)|2. Panel (b) shows the time evolution of the total condensate density ntot(x, t) = Ψ†(x, t)Ψ(x, t). Despite strong dynamics in the individual spin components, the total density is approximately stationary throughout the evolution.",
+      "page": 16,
+      "index": 9,
+      "width": 514,
+      "height": 477
+    }
+  ]
+}

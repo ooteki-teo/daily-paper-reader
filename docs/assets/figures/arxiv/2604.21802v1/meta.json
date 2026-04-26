@@ -1,0 +1,38 @@
+{
+  "version": 2,
+  "extractor": "pdffigures2",
+  "figures": [
+    {
+      "url": "assets/figures/arxiv/2604.21802v1/fig-001.webp",
+      "caption": "Figure 1| Near-field photocurrent detection of the optical nl-AHE in CuMnAs.",
+      "page": 4,
+      "index": 1,
+      "width": 917,
+      "height": 344
+    },
+    {
+      "url": "assets/figures/arxiv/2604.21802v1/fig-002.webp",
+      "caption": "Figure 2 | Current-induced control of the Néel vector and detection of the optical nl-AHE. a, AFM topography of the 5 µm‑wide CuMnAs cross, acquired simultaneously with the oNA‑voltage using an illuminated s‑SNOM tip. The white scale bar corresponds to 2 µm. b, Schematic of the initial state: nanoscale domains with randomly oriented Néel vectors (green). c, Initial oNA‑voltage map 𝛥𝑉 = (𝑉𝐴+ − 𝑉𝐴−) − (𝑉𝐵+ − 𝑉𝐵−) , showing little contrast due to spatial averaging. d, Simulated current‑density distribution for a 40 𝑚𝐴 writing pulse (arrow: average pulse direction), with enhanced current density at the two inner corners transverse to the pulse direction. e, Schematic of local current‑induced Néel vector reorientation: where the current density exceeds the switching threshold, the Néel vector aligns perpendicular to the local current. f, oNA‑voltage map after pulsing, showing corner‑localised signals consistent with the Hall-like current orientation expected for the pulse-written high-symmetry states along <110>. g, Simulated current density for the opposite pulse polarity. h, Corresponding reversed Néel vector configuration. i, oNA‑voltage map after the reversed‑polarity pulse, showing sign reversal of the optical nl‑AHE signal and confirming Néel vector reversal at both corners (time‑reversal‑odd response).",
+      "page": 6,
+      "index": 2,
+      "width": 708,
+      "height": 869
+    },
+    {
+      "url": "assets/figures/arxiv/2604.21802v1/fig-003.webp",
+      "caption": "Figure 3 | Microscopic origin and quantitative modelling of the optical nonlinear anomalous Hall effect. a, First-principles band dispersion of CuMnAs for 𝑵 ∥ [110], shown for opposite crystal momenta +𝒌 (solid) and −𝒌 (dashed) along the highsymmetry path 𝛭 – 𝛤 – 𝛭′ (inset: magnified view). A pronounced +𝒌 versus −𝒌 asymmetry appears for momenta perpendicular to N, yielding a time-reversal-odd interband injection current whose transverse component dominates for this high-symmetry in-plane orientation. b, Calculated injection-current conductivity components 𝜎𝑎𝑏𝑏 (2) (𝜔) relevant to the s-SNOM geometry, evaluated with a common phenomenological broadening ℏ 𝜏⁄ ~ 3 𝑚𝑒𝑉 corresponding to 𝜏 = 235 𝑓𝑠 . The components generating current perpendicular to the Néel vector are finite, whereas the corresponding parallel component vanishes within numerical accuracy for this orientation. The vertical dotted line marks the photon energy of the MIR excitation (𝜆 = 10 𝜇𝑚). c, Simulated oNA-voltage map obtained by combining the computed conductivity tensor with the FEM near-field distribution and a pulse-written texture with uniformly switched inner-corner regions, in quantitative agreement with measurements.",
+      "page": 9,
+      "index": 3,
+      "width": 950,
+      "height": 260
+    },
+    {
+      "url": "assets/figures/arxiv/2604.21802v1/fig-004.webp",
+      "caption": "Figure 4 | Optical nl-AHE imaging and Néel-texture reconstruction in a 1 µm-wide CuMnAs crossbar. a, Presets: virgin state and single diagonal writing pulses of opposite polarity along each diagonal (arrows). The simultaneously recorded diagonal voltages are 𝑉𝐴 = 𝑉𝐴+ − 𝑉𝐴− and 𝑉𝐵 = 𝑉𝐵+ − 𝑉𝐵− . b, c, oNA-voltage maps for the presets, shown as 𝑉𝐴 + 𝑉𝐵 (b) and 𝑉𝐴 − 𝑉𝐵) (c). Dashed outlines highlight the inner corners with highest current density and strongest polarity dependence; oNA maps with bold (light) dashed outlines are sensitive to the potential difference along (orthogonal to) the writing‑pulse axis. The affected regions swap between channels when the writing diagonal is rotated by 90°, consistent with the same dominant Hall-like current orientation for the high-symmetry <110> states relevant here. (scale bar, 500 nm).",
+      "page": 10,
+      "index": 4,
+      "width": 927,
+      "height": 483
+    }
+  ]
+}

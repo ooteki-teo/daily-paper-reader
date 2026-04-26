@@ -1,0 +1,1912 @@
+Title: Dynamics of spinor Bose-Einstein condensates close to spin-spatial resonances
+
+URL Source: https://arxiv.org/pdf/2604.16732v1
+
+Published Time: Tue, 21 Apr 2026 00:25:08 GMT
+
+Number of Pages: 22
+
+Markdown Content:
+# Dynamics of spinor Bose-Einstein condensates close to spin-spatial resonances 
+
+W. Wills, 1 D. Blume, 2, 3 and Q. Guan 1
+
+> 1
+
+Department of Physics and Astronomy, Washington State University, Pullman, WA 99164-2814, USA 
+
+> 2
+
+Homer L. Dodge Department of Physics and Astronomy, The University of Oklahoma, Norman, Oklahoma 73019, USA 
+
+> 3
+
+Center for Quantum Research and Technology, The University of Oklahoma, Norman, Oklahoma 73019, USA 
+
+(Dated: April 21, 2026) We develop a coupled-channel framework to describe the dynamics of spinor Bose-Einstein con-densates (BECs), with particular emphasis on the behavior near resonances between spin dynam-ics and spatial excitations. Taking advantage of the disparity between the spin-dependent and spin-independent scattering lengths in typical spinor BECs, the Bogoliubov modes of the spin-independent part of the full system Hamiltonian provide an efficient set of basis functions for de-scribing the system dynamics in a coupled-channel framework. For quadratic Zeeman shifts far from any resonance, the system can be described by a single spatial wavefunction during the spin dynamics, i.e., the so-called single-mode approximation holds. By tuning the quadratic Zeeman shift, we find resonant excitations of the Bogoliubov modes, which can be classified into two cate-gories: those with particle–hole correlations and those without particle-hole correlations. We show that the beyond-quadratic-order terms that are neglected in standard Bogoliubov theories become increasingly important for capturing the long-time dynamics of the system near resonances. The coupled-channel framework is benchmarked against results from 1D Gross–Pitaevskii equation sim-ulations. The framework developed in this work not only provides a numerically efficient tool for describing spinor BEC dynamics governed by different length scales, but also provides a clean phys-ical interpretation of resonance phenomena in spinor BECs. Applications of this approach to other systems and extensions to the beyond-mean-field regime are also discussed. 
+
+I. INTRODUCTION 
+
+Spinor Bose–Einstein condensates (BECs), i.e., BECs with multiple internal spin degrees of freedom, are unique platforms due to the presence of intrinsic elastic and in-elastic spin collisions, which, for example, are crucial for generating spin entanglement and realizing SU(1,1) interferometers [1, 2]. Spinor BECs are frequently re-alized in 23 Na and 87 Rb quantum gases [2], for which the spin-dependent scattering length is much smaller than the spin-independent one. The disparity between the two associated energy scales implies that the spa-tial part of the wavefunction is essentially frozen even when the spin degrees of freedom are in highly non-equilibrium states, providing a clean platform for study-ing pure spin physics [3]. Within the single-mode ap-proximation (SMA), the spin dynamics are governed by the spin-interaction energy and the quadratic Zeeman shift [4–6]. With magnetic fields and microwave dress-ing [7, 8], the latter can be tuned over a wide range, which further enhances the system’s tunability and en-ables the study of diverse quantum phenomena, including equilibrium and non-equilibrium quantum phase tran-sitions [9–18], quantum state engineering [19–21], and quantum metrology [21–25]. Recent work by two of us and collaborators shows that the SMA can be extended to scenarios where the spin components share a single common time-dependent (as opposed to time-independent) spatial wavefunction that may undergo surprisingly strong dynamics over timescales that are long compared to the coherent spin evolution [26]. In this dynamical single-mode approxi-mation (dSMA), the spin and spatial degrees of freedom are asymmetrically coupled: the spin dynamics depend on the spatial part of the wavefunction, while the spa-tial part of the wavefunction remains largely independent of the spin dynamics. Exploiting the dynamical spatial wavefunction as an additional control knob, we used the 
+
+> 23
+
+Na spinor BEC as a quantum simulator to study Lan-dau–Zener tunneling during Bloch oscillations [27] and to engineer the dynamical phase diagram under periodic modulation of the trap frequency [28]. Similar to the SMA, the validity of the dSMA stems from the energy scale separation between the spin-dependent and spin-independent parts of the spinor BEC Hamiltonian. A natural follow-up question is whether the spatial dynamics can be affected by the non-equilibrium nature of the spin degrees of freedom. Indeed, this occurs in multiple scenarios. An iconic example is the forma-tion of spin domains induced by quenching a parameter of the spinor BEC across a quantum phase transition, where the condensate size is much larger than the spin healing length [29–32]. In such large spinor BECs, recent work has also demonstrated that spin chaos enhances the turbulent behavior of the spatial dynamics [33, 34]. For trapped spinor BECs whose size is much smaller than the spin healing length, spatial excitations can be, as has been confirmed experimentally, resonantly triggered by the spin dynamics when the quadratic Zeeman shift is close to certain characteristic values [35–38]. The mean-field Gross–Pitaevskii equation and Bogoli-ubov theory are powerful theoretical tools for under-standing non-equilibrium phenomena in spinor BECs, such as dynamical instabilities [1]. Several works, in-
+
+> arXiv:2604.16732v1 [cond-mat.quant-gas] 17 Apr 2026
+
+2cluding those by two of us and our collaborators, have shown that the resonant value of the quadratic Zeeman shift for trapped spinor BECs can be predicted using the spectrum of a particle confined in an effective po-tential formed by the external trap and the background atomic density distribution [37, 39]. This paper extends previous work by developing a Bogoliubov-theory-based framework that captures both the resonance conditions and the long-time dynamics near such resonances. Going beyond the effective potential picture, which corresponds to excitations with no particle–hole correlations, our the-ory also predicts a new class of resonances that exhibit particle-hole correlations. By studying the long-time dy-namics of the system near resonances, we identify the contributions of higher-order terms, which are neglected in standard Bogoliubov theory and represent interac-tions between quasi-particles. These effective excitation-excitation interactions have previously been found to be important for describing different damping mechanisms such as Beliaev damping in spinor BECs [40]. In general, Bogoliubov theory is particularly useful for describing collective excitations on top of an unper-turbed many-body background. In this work, we con-sider spinor BECs in which the spin degrees of freedom are in far-from-equilibrium states, while the spatial de-grees of freedom are approximately frozen, except near resonances. We find that the Bogoliubov eigenmodes of the spin-independent part of the full many-body Hamil-tonian provide a convenient basis. One challenge in us-ing Bogoliubov eigenmodes, particularly those with par-ticle–hole correlations, is that the particle number is not conserved. This is the case because standard Bogoliubov theory is non-Hermitian and breaks the U (1) symme-try [41]. These features make it challenging to describe the long-time dynamics of systems with such a basis. Sev-eral approaches to overcome this challenge have been dis-cussed in the literature, such as consistently including the back-action of the excitations on the background [42–44] or introducing an additional mode that corresponds to phase fluctuations of the background [45]. A modified version of standard Bogoliubov theory, which preserves the U (1) symmetry, has also been developed in the lit-erature [41, 46]. The framework developed in our work builds on the U (1)-symmetry-preserving Bogoliubov the-ory of Refs. [41, 46]. While our paper focuses on the mean-field regime, extensions to the beyond-mean-field regime are expected to follow an analogous derivation. The remainder of the paper is organized as follows. Section II introduces the system Hamiltonian, outlines the main logic behind the derivation of the coupled-channel model developed in this work, and places our key results into context. Section III reviews the Bogoliubov theory and presents the derivation of the coupled-channel model and the resonance conditions. Finally, Section IV presents conclusions and an outlook. Numerical details are relegated to Appendix A.   
+
+> II. SYSTEM OVERVIEW AND SUMMARY OF KEY RESULTS A. Mean-field theory for spin-1 BECs
+
+The mean-field energy functional for spin-1 BECs described by the spinor wave function Ψ(r, t ) =[ψ1(r, t ), ψ 0(r, t ), ψ −1(r, t )] T is 
+
+H = Hscalar + Hs, (1) where the spin-independent energy functional Hscalar and the spin-dependent energy functional Hs are 
+
+Hscalar =
+
+Z
+
+drΨ †(r, t )×
+
+
+
+− ℏ2
+
+2m ∇2 + V (r) + gn
+
+2 |Ψ(r, t )|2
+
+
+
+Ψ(r, t ) (2) and 
+
+Hs =
+
+Z
+
+dr
+
+n
+
+qΨ†(r, t )F2 
+
+> z
+
+Ψ(r, t )+ gs
+
+2
+
+X
+
+> j=x,y,z
+
+h
+
+Ψ†(r, t )Fj Ψ(r, t )
+
+i2
+
+ , (3) respectively. Here, V (r) denotes an external single-particle potential, the spin-1 Pauli matrices Fj take the forms 
+
+Fx = 1
+
+√2
+
+0 1 0 1 0 1 0 1 0 
+
+ , Fx = 1
+
+√2
+
+0 −i 0
+
+i 0 −i
+
+0 i 0
+
+ ,
+
+Fz =
+
+1 0 00 0 00 0 −1
+
+ ,
+
+(4) and m, ℏ, and q denote the atomic mass, the reduced Planck constant, and the quadratic Zeeman shift, respec-tively. Using the normalization 
+
+Z
+
+drΨ †(r, t )Ψ(r, t ) = 1 , (5) the nonlinear coupling constants gn and gs for a 3D spinor BEC are related to the spin-independent scatter-ing length an, the spin-dependent scattering length as,and the total particle number N via 
+
+gn/s = 4πℏ2an/s (N − 1) 
+
+m . (6) For typical spinor BECs, the value of gs is much smaller than that of gn (e.g., gs/g n ≈ 1/28 .10 for 23 Na [47]), which leads to a clear scale separation between the dy-namics of the spin degrees of freedom and those of the spatial components. This scale separation underlies the widely-used SMA treatment of spinor BECs [4–6]. 3At the mean-field level, the equation of motion for 
+
+ψj (r, t ) is determined by varying the mean-field energy functional H [see Eq. (1)] with respect to ψ∗ 
+
+> j
+
+(r, t ), yield-ing the spinor Gross-Pitaevskii equation (SGPE) [1] 
+
+iℏ ∂Ψ(r, t )
+
+∂t = HSGP (r, t )Ψ(r, t ), (7) with 
+
+HSGP (r, t ) = Hscalar (r, t ) + Hs(r, t ), (8) 
+
+Hscalar (r, t ) = − ℏ2∇2
+
+2m + V (r) + gn|Ψ(r, t )|2, (9) and 
+
+Hs(r, t ) = qF2 
+
+> z
+
++ gs
+
+X
+
+> j=x,y,z
+
+h
+
+Ψ†(r, t )Fj Ψ(r, t )
+
+i
+
+Fj . (10) The SMA assumes that a common spatial wavefunction 
+
+ϕ0(r) is shared by all spin components, i.e., 
+
+Ψ(r, t ) ≈ ϕ0(r)s0(t), (11) where s0(t) denotes the spin wavefunction and ϕ0(r) is normalized to 1: 
+
+Z
+
+dr|ϕ0(r)|2 = 1 . (12) The spatial wavefunction ϕ0(r) can be determined by minimizing the scalar energy functional Hscalar .We use HSMA scalar (r) and HSMA  
+
+> s
+
+(r, t ) to denote the mean-field Hamiltonians Hscalar (r, t ) and Hs(r, t ) under the SMA: HSMA scalar (r) and HSMA  
+
+> s
+
+(r, t ) are obtained by replac-ing Ψ(r, t ) in Eqs. (9) and (10) with ϕ0(r)s0(t). After this replacement, the only dynamical variable left is the spin vector s0(t), for which the SMA equation of motion reads 
+
+iℏ ∂s0(t)
+
+∂t = [ hSMA  
+
+> s
+
+(t) + μn]s0(t), (13) where 
+
+hSMA  
+
+> s
+
+(t) = qF2 
+
+> z
+
++ cs
+
+X
+
+> j=x,y,z
+
+h
+
+s†
+
+> 0
+
+(t)Fj s0(t)
+
+i2
+
+, (14) 
+
+μn =
+
+Z
+
+drϕ∗
+
+> 0
+
+(r)HSMA scalar (r)ϕ0(r), (15) and 
+
+cs = gs
+
+Z
+
+dr|ϕ0(r)|4. (16)  
+
+> B. Dynamics near resonances
+
+Because of the separation of energy scales between the spin and spatial degrees of freedom, one can expect that the spatial dynamics are typically only weakly coupled to the spin. This means that if one starts from an initial state that satisfies the SMA assumption in Eq. (11), the state retains, to a good approximation, the spin-spatial-decoupled form throughout the far-from-equilibrium spin dynamics. It turns out, however, that the SMA is not always valid, even if a scale separation between the spa-tial and spin degrees of freedom exists. For instance, as shown in Refs. [38, 39], significant spatial dynamics can arise at certain resonant values of the quadratic Zeeman shift q, thereby breaking the SMA assumption. In this section, we aim, through SGPE simulations, to identify the parameter regimes in which the spinor BEC exhibits substantial spatial dynamics. Through-out, the initial state is prepared to be of the SMA form given in Eq. (11), with ϕ0(r) being the ground state of 
+
+Hscalar (r, t ). The system starts in a non-equilibrium spin state and subsequently undergoes spin dynamics. We probe the spatial dynamics by examining the density of a single hyperfine component as well as the total density of the condensate. For illustrative purposes, we perform SGPE simulations for 1D systems. The SGPE simula-tions reveal several resonances; the underlying nature of these resonances is described in Sec. III. As an example, Fig. 1 shows SGPE simulation re-sults for 23 Na atoms in a 1D harmonic trap with 
+
+V (x) = mω 2x2/2 for the initial spin state s0(0) =(√0.25 , √0.5, √0.25) T for three q values, i.e., for q =
+
+h × 60 Hz, q = h × 90 Hz, and q ≈ h × 171 Hz. To ob-tain the 1D-equivalents gn/s, 1D of the coupling constants 
+
+gn and gs, we first choose an experimentally-accessible scalar chemical potential μn. We then use the 1D expres-sion for the density distribution of a scalar BEC given by the Thomas-Fermi approximation and solve for gn, 1D , re-ferred to from here on as gn for notational convenience (there should not be any confusion since all concrete ex-amples in this work utilize a 1D geometry), under the constraint that the density is normalized to unity. We obtain 
+
+gn = 43
+
+r 2μ3
+
+> n
+
+mω 2 . (17) For ω = 2 π×196 Hz and μn = 5 .368 Eho , as used in Fig. 1, this yields the scalar coupling constant gn = 23 .21 Eho aho 
+
+and the Thomas-Fermi radius RTF = p2μn/(mω 2) = 3.276 aho . The 1D spin-dependent-coupling constant gs
+
+is subsequently set to gs = gn/28 .10, which yields the spin-dependent collision energy cs = 0 .1500 Eho . Here, 
+
+aho and Eho denote the harmonic oscillator length and energy, respectively, aho = pℏ/(mω ) and Eho = ℏω. The values of ω, cs, and μn lie in the typical parameter regime for standard 23 Na BECs prepared in the laboratory [2]. The scale separation is satisfied since μn is much larger than cs.4                     
+
+> FIG. 1. Near-resonant spin and spatial dynamics for a spin-1 BEC in a 1D harmonic trap at quadratic Zeeman shifts
+> q=h×60 Hz (first column), q=h×90 Hz (middle column), and q≈h×171 Hz (third column). The first, second, and third rows show the time traces of ρ0(t), the density |ψ0(x, t )|2of the mF= 0 component, and the total density ntot (x, t ) = Ψ†(x, t )Ψ(x, t ), respectively. The solid blue lines, orange dashed lines, and green dash-dotted lines in panels (a)-(c) correspond to the results of SGPE simulations, the SMA model, and the Λ-model developed in this work with 19 states, respectively. The SGPE and
+> Λ-model show near-identical dynamics, while the SMA fails to capture the resonance-driven dynamics. The second and third rows show SGPE results. The values of the angular trap frequency ω, the Thomas-Fermi radius RTF , and the spin-dependent collision energy cscan be found in the main text.
+
+Figures 1(a)–1(c) show the time traces of the popula-tion fraction ρ0(t) = R dx |ψ0(x, t )|2 of the mF = 0 com-ponent. Significant differences between the SGPE results (blue solid lines, which lie underneath the green dash-dotted line) and the SMA results (orange dashed lines) indicate a breakdown of the assumption that the dynam-ics is governed by a single spatial orbital. The SGPE results exhibit slow oscillations modulated by fast oscil-lations, indicating the presence of multiple time scales. The fast oscillation with a period of roughly 0 .25 h/c s is consistent with the SMA spin dynamics, while the slow oscillation, with a much longer period of approximately 5.0h/c s, is determined by the coupling between the back-ground state, which is proportional to ϕ0(x), and the modes that are associated with spatial excitations. The green dot-dashed lines in Figs. 1(a)-1(c), which repro-duce the SGPE results essentially exactly, correspond to the results obtained from the beyond-SMA model, i.e., the Λ-model, which is newly developed in our work (see the discussion in Sec. III). Figures 1(d)–1(f) show the spatial densities |ψ0(x, t )|2
+
+of the mF = 0 component for the same three q values as used in Figs. 1(a)–1(c). For q = h × 60 Hz [Fig. 1(d)], 
+
+|ψ0(x, t )|2 exhibits oscillations between a wavefunction with two peaks near the edges and a wavefunction with a single peak at the center. In contrast, for q ≈ h × 171 Hz [Fig. 1(f)], the dynamics of |ψ0(x, t )|2 display breathing in which the condensate component expands and shrinks with non-negligible density at x = 0 throughout the dy-namics, clearly distinct from the q = h × 60 Hz case. For q = h × 90 Hz [Fig. 1(e)], the spatial dynamics of 
+
+|ψ0(x, t )|2 is much weaker and exhibits a mixed behavior intermediate between the cases shown in Figs. 1(d) and 1(f). The distinct oscillatory behavior of ρ0 at frequen-cies that deviate from the SMA oscillation frequency can be attributed to spin-spatial resonances. To fur-ther highlight the distinct features near these reso-nances, Figs. 1(g)–1(i) show the total density ntot (x, t ) = 
+
+Ψ†(x, t )Ψ(x, t ) for the same three values of q. For the 5resonances at q = h × 60 Hz and q = h × 90 Hz, 
+
+ntot (x, t ) is approximately time independent. In con-trast, for q ≈ h × 171 Hz, ntot (x, t ) exhibits pronounced breathing dynamics similar to those of |ψ0(x, t )|2. There-fore, the former two resonances correspond primarily to excitations within the spin degrees of freedom, associ-ated with oscillating spin textures across the condensate, whereas the latter corresponds to a scalar density excita-tion. The origin of these modes is discussed in Sec. III C. To unambiguously identify the spatial parts of the modes involved in the dynamics shown in Fig. 1, we com-pute the energy-space spinor wavefunction ψmF (x, E ) by performing a Fourier transform of ψmF (x, t ) over time, 
+
+ψmF (x, E ) = 1
+
+√2πℏ
+
+Z ∞−∞ 
+
+ψmF (x, t )e− iEt  
+
+> ℏ
+
+dt. (18) Since the SGPE simulations provide ψmF (x, t ) only within a finite time window, we apply a Hamming win-dow (see Appendix A) to mitigate finite-window effects that arise from truncating the time integral at finite lim-its. Figure 2 shows ψ0(x, E ) for the three near-resonant 
+
+q-values used in Fig. 1. It is evident that multiple spa-tial wavefunctions with distinct energies E contribute to the spectrum. We take the energy slice with the domi-nant population, which corresponds to the ground state of Hscalar (r, t ), as a reference and shift it to E = 0. The red boxes in Figs. 2(a)-2(c) identify the second-most oc-cupied energy slices (the background state at E = 0 has the highest occupation). For q = h × 60 Hz, the second-most occupied energy is E ≈ h × 120 Hz, which is ap-proximately equal to 2 q. In each case, we refer to this second-most occupied energy as the resonant energy. For 
+
+q = h × 90 Hz, the resonant energy is E ≈ h × 360 Hz, which is approximately equal to 4 q. For q ≈ h × 171 Hz, the resonant energies are E ≈ ± h × 340 Hz, which is ap-proximately equal to ±2q. A key difference is that, for the 
+
+q = h × 60 Hz and q = h × 90 Hz cases, resonant excita-tions appear only in the positive-energy region, whereas for q ≈ h × 171 Hz resonant excitations emerge in both the positive-energy region and the negative-energy re-gion. Correspondingly, the former two cases (with a res-onant mode at positive energy) correspond to resonances for which the modes lack particle–hole correlations, while the latter case (positive and negative energy modes) cor-responds to resonances for which particle–hole correla-tions play a role. Figures 2(d)-2(f) compare the resonant spatial wavefunctions obtained by Fourier-transforming the SGPE results with the spatial part of the eigenmodes of the Bogoliubov Hamiltonian derived in Sec. III C. The agreement is very good. The observation that only a few resonant spatial modes are involved, together with the very good agreement between the FFT wavefunctions and the Bogoliubov eigenmodes, indicates that Bogoli-ubov eigenmodes provide an effective basis for a coupled-channel description of the resonance dynamics. These observations form the backbone of the theory framework developed in this paper.  
+
+> C. Framing of our results
+
+This paper develops a coupled-channel framework based on a particle-number-preserving Bogoliubov theory to describe the dynamics of spinor BECs. Our frame-work is designed to accurately capture resonances be-tween spin and spatial degrees of freedom. Aligned with our goal of describing spatial excitations atop the SMA solutions of spinor BECs, our Bogoliubov theory is for-mulated around a vacuum state that is expressed as a di-rect product of a spatial wavefunction and a spin vector, where the former is given by the spatial part of the scalar mean-field ground state and the latter is determined on the fly [see the discussion later in this section, especially Eq. (23)]. The channel functions are constructed from the corresponding Bogoliubov eigenmodes. We find that the Bogoliubov spectrum can be divided into two uncou-pled sectors: one with spin parallel to the background and the other with spin perpendicular to the background. The former corresponds to excitations with particle–hole correlations, while the latter corresponds to excitations without such correlations. These findings uncover the na-ture of the two types of resonances observed in Figs. 1(a) and 1(c). To overcome the non-hermiticity issue in the stan-dard Bogoliubov theory that leads to non-conserved nor-malization of the wavefunction and makes the coupled-channel treatment diverge in the long-time limit, this work develops a modified Bogoliubov theory. Our Bo-goliubov Hamiltonian Lscalar (r, r′, t ) (see Sec. IIIC for the full mathematical form) is related to the standard Bogoliubov Hamiltonian Lstd scalar (r, t ) via 
+
+Lscalar (r, r′, t ) = 
+
+Z
+
+dr′′ 
+
+Q(r, r′′ ) 00 Q∗(r, r′′ )
+
+
+
+× (19) 
+
+Lstd scalar (r′′ , t )
+
+Q(r′′ , r′) 00 Q∗(r′′ , r′)
+
+
+
+,
+
+where the spatial projection operator is 
+
+Q(r, r′) = δ(r, r′) − ϕ0(r)ϕ∗
+
+> 0
+
+(r′). (20) We show that this construction yields equations of mo-tion for the excitation modes or perturbations that are only dependent on the populations of the background state and independent of the background phase. The relative phase between the perturbation and the back-ground determines the current that governs the transfer of population from the background state to the perturba-tions. In standard Bogoliubov theory, this current must be treated self-consistently order by order, together with the dynamics of the background state, when truncating the number of channels to ensure that the normalization of the wavefunction does not diverge. Our construction avoids this complication and enables us to treat the dy-namics of the excitation modes without explicitly solving for the dynamics of the background phase and occupa-tion. 6
+
+FIG. 2. (a)-(c): The amplitudes |ψ0(x, E )| of the mF = 0 component of the spinor wavefunction in the energy-space domain, normalized as a fraction of the peak value [the legend on the right applies to all three panels; note that |ψ0(x, E )| is—due to the chosen scaling— dimensionless]. The parameters for the results in the left, middle, and right columns are the same as those in Fig. 1. The dash-dotted lines on the left edges of panels (a)–(c) indicate, in accordance with the resonance condition derived in Sec. III D, multiples of 2 q. The dashed lines and dotted lines on the right edges of panels (a)–(c) indicate the eigenenergies of the Bogoliubov Hamiltonian derived from Hscalar (r, t ); the dashed lines correspond to the spin-perpendicular excitations while the dotted lines correspond to spin-parallel excitations (see the discussion in Sec. III for details). The red boxes in panels (a)-(c) highlight the regions around the expected resonance positions. The second-most occupied slices, which lie within the red boxes, have energies that coincide to a good approximation with the estimated resonance condition. (d)-(f): Panels (d) and (e) compare the real part of the wavefunctions ψ0(x, E ) (blue solid lines), selected from slices within the red boxes in (a) and (b), with the real spatial part of the eigenmodes u(x) and v∗(x) of the Bogoliubov Hamiltonian derived in Sec. III for the spin-perpendicular excitations (orange dashed lines). Panel (f) compares the real part of both the maximally occupied positive-energy slice (blue solid line) and the negative-energy slice (orange dashed line) with the corresponding Bogoliubov spatial wavefunctions for the spin-parallel excitations [green dash-dotted line for the positive-energy component u(x) and red dotted line for the negative-energy component v∗(x)]. The Bogoliubov wavefunctions and FFT slices are normalized according to Eq. (62). The FFT slices show good agreement with the Bogoliubov wavefunctions, although small discrepancies are observed in panel (f) for the spatial part of the mode with particle–hole correlations. 
+
+It can be shown that the spectrum of Lscalar (r, r′, t ) is identical to that of Lstd scalar (r, t ), with eigenmodes that are related to each other by the projection operator Q(r, r′). For modes without particle–hole correlations, the spatial wavefunction of the standard Bogoliubov mode is “au-tomatically” orthogonal to the background state; in this case, both Bogoliubov theories predict the same spatial parts of the modes. For modes with particle–hole corre-lations, however, the eigenmodes of our modified Bogoli-ubov theory differ from those of the standard Bogoliubov theory. Figure 3 compares the spatial part of the particle-hole-correlated resonant mode, obtained from the FFT of the SGPE results [also shown in Fig. 2(f)], with the spatial part of the corresponding modes obtained from our modified Bogoliubov theory and the standard Bo-goliubov linearization of Hscalar for the resonance near 
+
+q = h × 171 Hz. It can be seen clearly that the modified Bogoliubov theory agrees with the FFT results signifi-cantly better than the standard Bogoliubov theory. The extension developed in this work is related to the existing U (1)-symmetry–preserving Bogoliubov the-ory developed in Refs. [41, 46]. In particular, the pro-jection operator Q(r, r′) bears a nearly identical form to that used in Ref. [41]. Making an analogy to the ap-proach developed in Ref. [41], their projection operator 7                         
+
+> FIG. 3. Comparison of the spatial part of the resonant mode obtained from the Fourier transform of the SGPE re-sults with the predictions of different Bogoliubov theories for the parameters of Fig. 2(f). As in Fig. 2(f), the solid blue and orange dashed lines correspond to the real spa-tial parts of the maximally occupied positive-energy and negative-energy excitations obtained by Fourier transforming the SGPE results. The green dash-dotted and red dotted lines correspond to the spatial part of the particle-component of the eigenmodes of the U(1)-symmetry–conserving Bo-goliubov theory for the positive-energy and negative-energy modes, respectively, developed in this work. The additional lines correspond to the spatial parts of the positive-energy (purple double–dash–dotted) and negative-energy (brown short–dash–dotted) particle-components of the eigenmodes obtained from the standard Bogoliubov theory that breaks the
+> U(1) symmetry. The U(1)-symmetry–conserving theory pro-vides a significantly better description of the resonant modes than the standard Bogoliubov theory.
+
+for the spinor system reads 
+
+Q′(r, r′, t ) = δ(r, r′) − Ψ(r, t )Ψ†(r′, t ). (21) The fundamental difference is that the time-dependent projection operator in Ref. [41] projects out the time-dependent background wavefunction Ψ(r, t ), which de-scribes the mean-field dynamics of the full system and thus requires the full SGPE solution. Instead, our time-independent projector Q(r, r′) projects out a time-independent spatial wavefunction, which is determined apriori as the time-independent solution of the scalar part of the full spinor BEC Hamiltonian. By looking at ex-citations orthogonal to a specified time-independent spa-tial background wavefunction, we are able to study how the common spatial wavefunction of the spin components changes the time evolution, thereby facilitating beyond-SMA corrections to be accounted for systematically and efficiently. Since the operator Q(r, r′) in this work acts only on the spatial degrees of freedom, we treat the partition of the spatial Hilbert space separately from that of the spin space. We define the time-dependent spin projection op-erator as 
+
+Qs(t) = I − s0(t)s†
+
+> 0
+
+(t), (22) where I is the 3 × 3 identity matrix. Akin to the re-sulting expression from the SMA ansatz in Eq. (11), the background spin s0(t) is obtained via 
+
+s0(t) = 1
+
+N0(t)
+
+Z
+
+dr ϕ∗
+
+> 0
+
+(r)Ψ(r, t ), (23) with the background population N0(t) given by 
+
+N0(t) = 
+
+Z
+
+drdr′ Ψ†(r, t )ϕ0(r)ϕ∗
+
+> 0
+
+(r′)Ψ(r′, t ). (24) Importantly, the background spin s0(t), and correspond-ingly the spin projection operator, is not specified a pri-ori but is, instead, treated as a dynamical variable that is determined self-consistently by the coupling between the spin and spatial degrees of freedom. Our approach is motivated by the observation that the spin degrees of freedom undergo non-equilibrium dynamics in which spin excitations can become resonant with spatial excitations, leading to significant modifications of the time evolution of the spin dynamics compared to a predetermined spin trajectory. The time-varying coupling between the back-ground spin and the perturbation is therefore central to our analysis. Our approach of dividing the Hilbert space and treat-ing the spatial and spin degrees of freedom separately exploits the scale separation in spinor BECs and pro-vides deep insights into the physics near resonances. Within our approach, the scalar Bogoliubov Hamiltonian is time-dependent due to the time-evolving background spin state. By rotating away this time dependence and neglecting contributions from the spin-dependent Bogoli-ubov Hamiltonian, we can derive explicit resonance con-ditions (see Sec. III D). Comparing with the full time evolution, our treatment enables us to see the contribu-tions of the terms neglected in deriving the resonance conditions. The approximation used to derive those con-ditions relies on the scale separation between the spin-dependent Bogoliubov Hamiltonian and the energy spac-ing of the scalar Bogoliubov Hamiltonian. For “weak” confinement (see Sec. III for details), this scale separa-tion may not hold. Our SGPE simulations indicate, that the breakdown of scale separation can lead to dynamical instabilities. Section III outlines our Bogoliubov theory and the resulting “ Λ-model”, namely, a coupled-channel model that provides a U (1)-symmetric particle-conserving de-scription of the dynamics near resonances without the need of solving the full SGPE. Even though the exact equations of motion for the mode amplitudes contain a multitude of terms due to the nonlinearities of the sys-tem, the model is highly versatile in that it can be trun-cated at various orders to examine the significance of dif-ferent classes of terms. For example, despite being moti-vated by Bogoliubov theory, the Λ-model includes terms that go beyond standard Bogoliubov theory due to the Bogoliubov modes serving as a basis. In Section III D, we show that a truncation of the Λ-model to an order 8comparable to what is typically done in standard Bogoli-ubov theory, while retaining the coupling between the background spin and the spatial excitation modes, ex-plains the resonance conditions of the SGPE. The ability to systematically vary the truncation order of both the modes included and the terms retained in the equations of motion provides a powerful tool for understanding the nature of the excitations in the system and the signifi-cance of beyond-Bogoliubov effects in the long-time dy-namics. In addition, although our framework is applied to the mean-field regime of the system, extending this approach beyond the mean-field regime is conceptually straightforward.   
+
+> III. BOGOLIUBOV THEORY AND THE Λ-MODEL A. General formalism
+
+This section seeks to elucidate the origin of the modes discussed in Sec. II B for a spinor Bose–Einstein conden-sate using a Bogoliubov theory-based framework. To introduce perturbations about the background spatial wavefunction ϕ0(r), we write the mean-field spinor wave-function as 
+
+Ψ(r, t ) = a0(t)ϕ0(r)s0(t) + δΨ(r, t ), (25) where the complex coefficient a0(t) describes the time evolution of the population and phase of atoms occupying the spatial wavefunction ϕ0(r), s0(t) describes the inter-nal spin dynamics, and δΨ(r, t ) accounts for the dynam-ics of the perturbations. Importantly, the background spin s0(t) is not, in general, taken to be the SMA solu-tion, i.e., it is not predetermined, but instead must be determined alongside the perturbation δΨ(r, t ). If s0(t)was taken to be the SMA solution alongside a predeter-mined a0(t), then Eq. (25) would serve as the starting point for developing what we are referring to as standard Bogoliubov theory throughout this paper. We impose that δΨ(r, t ) is spatially orthogonal to ϕ0(r) for each spin component, i.e., 
+
+Z
+
+dr ϕ∗
+
+> 0
+
+(r)δΨ(r, t ) = 0. (26) With this choice, s0(t) fully captures the internal spin dynamics associated with the spatial wavefunction ϕ0(r), i.e., there is no ambiguity in distinguishing the internal spin dynamics of the background state from that of the excited spatial modes. In what follows, we introduce separate projection oper-ators for the spatial and spin degrees of freedom. We de-fine the spatial projection operator Q(r, r′) via Eq. (20). Using Q(r, r′), the perturbed and background compo-nents of the spinor wavefunction can be written as 
+
+δΨ(r, t ) = 
+
+Z
+
+dr′ Q(r, r′)Ψ(r′, t ) (27) and 
+
+a0(t)ϕ0(r)s0(t) = 
+
+Z
+
+dr′ [δ(r, r′) − Q(r, r′)] Ψ(r′, t ),
+
+(28) respectively. This shows that the operator Q(r, r′) parti-tions the spatial Hilbert space into the subspace spanned by ϕ0(r) and the subspace spanned by spatial functions orthogonal to ϕ0(r). We normalize s0(t) such that 
+
+s†
+
+> 0
+
+(t)s0(t) = 1 . (29) There is a gauge freedom in choosing the overall phase of s0(t). It is straightforward to verify that Eq. (29) im-plies ˙ s†
+
+> 0
+
+(t)s0(t) + s†
+
+> 0
+
+(t)˙ s0(t) = 0, where the dot above the background spin s0(t) denotes the time derivative. This implies that ˙ s†
+
+> 0
+
+(t)s0(t) is purely imaginary. We therefore impose the gauge condition ˙s†
+
+> 0
+
+(t)s0(t) = 0 . (30) This choice implies that a0(t) describes the overall phase and the population fraction of the background state 
+
+a0(t)ϕ0(r)s0(t), while s0(t) describes the internal spin structure within this background state. The dynamics of δΨ(r, t ) are closely tied to the Bogoli-ubov spectrum of perturbations about the background state a0(t)ϕ0(r)s0(t). A major challenge in the deriva-tion is that this background state depends non-trivially on time, which reduces the direct usefulness of the Bo-goliubov spectrum for our purposes. In a scalar system with a well-defined stationary background state, the only time dependence of the background arises from the phase evolution that is governed by the predetermined chemical potential, which can be gauged away. In contrast, in our treatment, as discussed above, neither the time evolution of a0(t) nor that of s0(t) are known a priori ; instead, they are part of the solution to be determined. This makes it impossible to fully rotate away the time dependence of the Bogoliubov Hamiltonian. To simplify the theory and establish a connection to Bogoliubov theory, we leverage the characteristic time scales of a0(t) and s0(t). Since the phase evolution of the background state is fully captured by a0(t), it is natural to expect that a0(t) evolves on timescales that are set by the scalar Hamiltonian, such as the timescale associ-ated with the chemical potential or the spin-independent mean-field energy. These timescales are much shorter than the characteristic timescales of s0(t), which are set by the spin-dependent Hamiltonian. These considera-tions suggest that the dynamics of s0(t) are “more adia-batic” than that of a0(t). Motivated by this observation, we define the perturbation Λ(r, t ) as 
+
+Λ(r, t ) = a∗
+
+> 0
+
+(t)δΨ(r, t ). (31) In terms of Λ(r, t ), the expansion of Ψ(r, t ) becomes 
+
+Ψ(r, t ) = a0(t)
+
+
+
+ϕ0(r)s0(t) + 1
+
+N0(t) Λ(r, t )
+
+
+
+, (32) 9where N0(t) = |a0(t)|2 is the population of the back-ground state. The key benefit of working with Λ(r, t ) as opposed to δΨ(r, t ) is that the redefinition of the per-turbation [Eq. (31)] enables, as will be shown below, the time-dependent phase of a0(t) be removed from the equa-tions of motion. Equation (32) also clearly separates the phase dynamics and spin dynamics of the background state, with the phase dynamics captured by a0(t) being much faster than the spin dynamics captured by s0(t). The perturbation Λ(r, t ) then is only sensitive to the slower time scales that are associated with the population and spin structure of the background state. As men-tioned in Sec. II C, our definition of Λ(r, t ) bears close similarity to the perturbations introduced in Refs. [41, 46] and, to leading order, the Bogoliubov Hamiltonian for 
+
+Λ(r, t ) has an analogous form as the Bogoliubov Hamilto-nian obtained in particle–number–conserving Bogoliubov theory. With these definitions in place, the main objective is to derive equations of motion for Λ(r, t ), a0(t), and s0(t). One approach is to treat a0(t), s0(t), and δΨ(r, t ) as in-dependent dynamical variables and to express the full Hamiltonian H in terms of these dynamical variables. From this representation, the equations of motion for 
+
+a0(t), s0(t), and δΨ(r, t ) can be derived. The equation of motion for Λ(r, t ) subsequently follows from Eq. (31) together with the identity 
+
+∂Λ(r, t )
+
+∂t = 1
+
+a∗
+
+> 0
+
+(t)
+
+∂a ∗
+
+> 0
+
+(t)
+
+∂t Λ(r, t ) + a∗
+
+> 0
+
+(t) ∂δ Ψ(r, t )
+
+∂t . (33) For the gauge convention defined in Eq. (30), we find that the equations of motion for a0(t), s0(t), and Λ(r, t ) are 
+
+iℏ ∂a 0(t)
+
+∂t =a0(t)s†
+
+> 0
+
+(t)
+
+Z
+
+drϕ∗
+
+> 0
+
+(r)HSGP (r, t )×
+
+
+
+ϕ0(r)s0(t) + Λ(r, t )
+
+N0(t)
+
+
+
+,
+
+(34) 
+
+iℏ ∂s0(t)
+
+∂t =Qs(t)
+
+Z
+
+drϕ∗
+
+> 0
+
+(r)HSGP (r, t )×
+
+
+
+ϕ0(r)s0(t) + Λ(r, t )
+
+N0(t)
+
+
+
+,
+
+(35) and 
+
+iℏ ∂Λ(r, t )
+
+∂t =
+
+N0(t)
+
+Z
+
+dr′Q(r, r′)HSGP (r′, t )ϕ0(r′)s0(t)+
+
+Z
+
+dr′Q(r, r′)HSGP (r′, t )Λ(r′, t )
+
+−
+
+Z 
+
+dr′s†
+
+> 0
+
+(t)ϕ∗
+
+> 0
+
+(r′)HSGP (r′, t )ϕ0(r′)s0(t)
+
+
+
+Λ(r, t )
+
+−
+
+Z 
+
+dr′Λ†(r′, t )HSGP (r′, t )ϕ0(r′)s0(t)
+
+ Λ(r, t )
+
+N0(t) . (36) In Eqs. (34)–(36), it is implied that the wavefunction 
+
+Ψ(r, t ) that is contained in HSGP (r, t ) [see Eqs. (8)-(10)] is given by Eq. (32). Equations (34)–(36) form a closed set of coupled differential equations for the three dynam-ical variables. The first term on the right-hand side of Eq. (36), which is independent of Λ(r, t ), acts as a seeding term for the growth of Λ(r, t ). This term is nonzero pro-vided ϕ0(r)s0(t) is, at fixed time t, not an eigenstate of 
+
+HSGP (r, t ) and the spatial integral does not vanish ac-cidentally. Since ϕ0(r)s0(t) is, for far-from-equilibrium states, not an eigenstate of HSGP (r, t ), coupling to ex-cited modes is, in general, present if the spatial degrees of freedom, the spin degrees of freedom, or both are out of equilibrium.     
+
+> B. Discussion on U(1) symmetry conservation
+
+By discretizing the perturbation Λ(r, t ) on a spatial grid, the coupled differential equations can be solved nu-merically, yielding results that are fully equivalent to those obtained by solving the SGPE. One advantage of the formalism summarized in Eqs. (34)–(36) is that it al-lows us to treat the background and the excitations sepa-rately, thereby facilitating a clear conceptual understand-ing of the nature of spin-spatial resonances and providing a route to engineer resonance conditions. Another tech-nical advantage is that it allows the perturbation Λ(r, t )to be expanded in a set of well-defined basis functions, namely the Bogoliubov modes, with the potential to cap-ture the main features of the dynamics using a relatively small number of modes. In standard Bogoliubov theory, the basis-expansion approach breaks the system’s U (1) symmetry and therefore suffers from the inability to pre-serve wavefunction normalization during the time evolu-tion. As discussed below, the formalism developed here resolves this issue. First, it can be shown that Eq. (35) preserves both the normalization of s0(t) and the gauge convention de-fined in Eq. (30), provided that the spin projection op-erator Qs(t) is retained on the right-hand side of the equation. Second, Eq. (36) can be shown to preserve the orthogonality between Λ(r, t ) and ϕ0(r), provided the spatial projection operator Q(r, r′) is retained in the first two terms on the right-hand side of the equation and HSGP (r, t ) is Hermitian. Third, since HSGP (r, t )depends on N0(t) rather than a0(t), the equations of mo-tion for s0(t) and Λ(r, t ) [Eqs. (35) and (36)] depend on 
+
+N0(t) but not on the phase of a0(t), i.e., the phase of the background state. This U (1)-symmetry–conserving property of the theory implies that the normalization of the wavefunction Ψ(r, t ) is conserved even if Λ(r, t ) is expanded in terms of a finite number of modes (an in-complete basis) as opposed to a complete basis. Using conservation of the normalization of Ψ(r, t ), 
+
+N0(t) + 1
+
+N0(t)
+
+Z
+
+drΛ †(r, t )Λ(r, t ) = 1 , (37) 10 
+
+N0(t) can be eliminated from Eqs. (35) and (36) by solv-ing Eq. (37), assuming N0(t) > 1/2, for N0(t), 
+
+N0(t) = 12 + 12
+
+
+
+1 − 4
+
+Z
+
+drΛ †(r, t )Λ(r, t )
+
+1/2
+
+. (38) Therefore, the dynamics of s0(t) and Λ(r, t ) can be de-termined without solving for a0(t). Given Λ(r, t ), N0(t)can be obtained from Eq. (38). Since |a0(t)| = pN0(t), it follows that a0(t) is determined up to an arbitrary phase. Since this overall phase does not enter into any physical observable, it is irrelevant for our purposes. It follows that there is no need to solve for a0(t) order by order, consistent with the approximations used for determin-ing s0(t) and Λ(r, t ). Instead, the U (1) symmetry guar-antees that determining |a0(t)| from the normalization condition yields a solution that is automatically accurate to the same order as s0(t) and Λ(r, t ). In the following analysis, we therefore focus on the equations of motion for s0(t) and Λ(r, t ). 
+
+C. Connection to “standard” Bogoliubov theory 
+
+To make the connection to standard Bogoliubov theory explicit, we Taylor expand the right-hand side of Eq. (35) up to linear order in Λ(r, t ). This yields 
+
+iℏ ∂s0(t)
+
+∂t ≈
+
+h
+
+hSMA  
+
+> s
+
+(t) − μs(t)
+
+i
+
+s0(t) + gsQs(t)× (39) 
+
+ X
+
+> j=x,y,z
+
+s†
+
+> 0
+
+(t)Fj s0(t)Fj
+
+Z
+
+drϕ∗
+
+> 0
+
+(r)ϕ20(r)Λ(r, t ),
+
+where the time-dependent spin chemical potential μs(t)is given by 
+
+μs(t) = s†
+
+> 0
+
+(t)hSMA  
+
+> s
+
+(t)s0(t). (40) Doing the same for Eq. (36), we find 
+
+iℏ ∂∂t 
+
+ Λ(r, t )
+
+Λ∗(r, t )
+
+
+
+≈
+
+S(r, t ) + 
+
+Z
+
+dr′LGP (r, r′, t )
+
+ Λ(r′, t )
+
+Λ∗(r′, t )
+
+
+
+, (41) where the driving term S(r, t ) is given by 
+
+S(r, t ) = 
+
+h
+
+HSMA  
+
+> s
+
+(r, t ) − hSMA  
+
+> s
+
+(t)
+
+i  ϕ0(r)s0(t)
+
+−ϕ∗
+
+> 0
+
+(r)s∗
+
+> 0
+
+(t)
+
+
+
+. (42) The full Bogoliubov Hamiltonian LGP (r, r′, t ) con-tains the scalar part Lscalar (r, r′, t ) and the spin part LS(r, r′, t ), i.e., LGP (r, r′, t ) = Lscalar (r, r′, t ) + 
+
+LS (r, r′, t ), where 
+
+Lscalar (r, r′, t ) = (43) 
+
+ HSMA scalar − μn
+
+ δ(r, r′) + gn
+
+ Q |ϕ0|2 Q s0(t)s†
+
+> 0
+
+(t) gn
+
+ Q ϕ20 Q∗ s0(t)sT 
+
+> 0
+
+(t)
+
+−gn
+
+ Q∗ ϕ∗20 Q s∗
+
+> 0
+
+(t)s†
+
+> 0
+
+(t) − HSMA scalar − μn
+
+ δ(r, r′) − gn
+
+ Q∗ |ϕ0|2 Q∗ s0(t)s†
+
+> 0
+
+(t)
+
+
+
+and 
+
+Ls(r, r′, t ) = 
+
+
+
+Q HSMA  
+
+> s
+
+(t) Q
+
+
+
+− μs(t) 00 −
+
+
+
+Q∗ HSMA  
+
+> s
+
+(t) Q∗
+
+
+
++ μs(t)
+
+ δ(r, r′) (44) + gs
+
+"   Q |ϕ0|2 Q P  
+
+> j=x,y,z
+
+Fj s0(t)s†
+
+> 0
+
+(t)Fj
+
+ Q ϕ20 Q∗ P  
+
+> j=x,y,z
+
+Fj s0(t)sT 
+
+> 0
+
+(t)FTj
+
+−  Q∗ ϕ∗20 Q P  
+
+> j=x,y,z
+
+FTj s∗
+
+> 0
+
+(t)s†
+
+> 0
+
+(t)Fj −  Q∗ |ϕ0|2 Q∗ P  
+
+> j=x,y,z
+
+Fj s0(t)s†
+
+> 0
+
+(t)Fj
+
+#
+
+.
+
+Here, expressions of the form (· · · |· · · | · · · ) should be understood as the (r, r′) matrix element of the triple matrix product; e.g., (Q |ϕ0|2 Q) =R dr′′ Q(r, r′′ )|ϕ0(r′′ )|2Q(r′′ , r′). Both Lscalar (r, r′, t ) and 
+
+Ls(r, r′, t ) are time dependent due to the time depen-dence of s0(t). To get rid of the time dependence of Lscalar (r, r′, t ), we move to the rotating frame of s0(t). Note that the Taylor-expanded equation of motion for s0(t) [Eq. (39)] is governed by two terms of different orders in Λ(r, t ), with the leading- and sub-leading-order terms proportional to 
+
+hSMA  
+
+> s
+
+(t) − μs(t) [this term is proportional to gs and in-11 dependent of Λ(r, t )] and gsΛ(r, t ), respectively. Since both gs and Λ(r, t ) are small, we neglect the gsΛ(r, t )term (for our current purposes, we are counting it as be-ing effectively of quadratic order) and find approximately 
+
+s0(t) = USMA  
+
+> s
+
+(t)s0(0) , (45) where 
+
+USMA  
+
+> s
+
+(t) = exp 
+
+
+
+−i
+
+Z t
+
+> 0
+
+h
+
+hSMA  
+
+> s
+
+(t′) − μs(t′)
+
+i
+
+dt ′/ℏ
+
+
+
+,
+
+(46) i.e., the time evolution is, at this order, governed by the SMA solution to s0(t). In the rotating frame of s0(t), we define the rotated perturbation ˜Λ(r, t ) via ˜Λ(r, t ) = 
+
+h
+
+USMA  
+
+> s
+
+(t)
+
+i−1
+
+Λ(r, t ). (47) The corresponding equation of motion up to linear order in ˜Λ(r, t ) is 
+
+iℏ ∂∂t 
+
+ ˜Λ(r, t )˜Λ∗(r, t )
+
+
+
+≈
+
+˜S(r, t ) −
+
+h
+
+hSMA  
+
+> s
+
+(t) − μs(t)
+
+i  ˜Λ(r, t )
+
+− ˜Λ∗(r, t )
+
+
+
++
+
+Z
+
+dr′ ˜LGP (r, r′, t )
+
+ ˜Λ(r′, t )˜Λ∗(r′, t )
+
+
+
+, (48) where the rotated driving term is given by ˜S(r, t ) = 
+
+ ˜H (r, t )ϕ0(r)s0(0) 
+
+− ˜H ∗(r, t )ϕ∗
+
+> 0
+
+(r)s∗
+
+> 0
+
+(0) 
+
+
+
+(49) with ˜H (r, t ) = 
+
+h
+
+USMA  
+
+> s
+
+(t)
+
+i−1 h
+
+HSMA  
+
+> s
+
+(r, t ) − hSMA  
+
+> s
+
+(t)
+
+i
+
+×
+
+USMA  
+
+> s
+
+(t). (50) The rotated full Bogoliubov Hamiltonian consists of the rotated scalar part and the rotated spin part, i.e., ˜LGP (r, r′, t ) = ˜Lscalar (r, r′) + ˜Ls(r, r′, t ). The rotated scalar part ˜Lscalar (r, r′) has the same form as Eq. (43) with s0(0) representing the spin state at t = 0. The ro-tated spin part ˜Ls(r, r′, t ) is obtained using the same strategy as the one we used to obtain Eq. (44). In addition, μs(t) is replaced by hSMA  
+
+> s
+
+(t). A key obser-vation is that HSMA  
+
+> s
+
+(r, t ) − hSMA  
+
+> s
+
+(t) is independent of single-particle terms such as the quadratic Zeeman shift term. Because of this, the contribution to the equation of motion of ˜Λ(r, t ) from the rotated spin Bogoliubov Hamiltonian is of the order gs ˜Λ(r, t ), which can be— consistent with our earlier counting of orders—neglected. With these approximations, the structure of ˜Λ(r, t ) is de-termined by the time-independent Bogoliubov Hamilto-nian ˜Lscalar (r, r′) with the time-dependent driving term ˜S(r, t ), i.e., 
+
+iℏ ∂∂t 
+
+ ˜Λ(r, t )˜Λ∗(r, t )
+
+
+
+≈
+
+˜S(r, t ) + 
+
+Z
+
+dr′ ˜Lscalar (r, r′)
+
+ ˜Λ(r′, t )˜Λ∗(r′, t )
+
+
+
+. (51) The eigenmodes of ˜Lscalar (r, r′) are obtained by solving 
+
+Z
+
+dr′ ˜Lscalar (r, r′)
+
+˜uk(r′)˜vk(r′)
+
+
+
+= Ek
+
+˜uk(r)˜vk(r)
+
+
+
+, (52) where ˜u(r) and ˜v(r) are spin-spatial wavefunctions that represent, respectively, the Bogoliubov particle-component and Bogoliubov hole-component. Note that ˜Lscalar (r, r′) depends on the initial background spin state 
+
+s0(0) through the spin operator s0(0) s†
+
+> 0
+
+(0); off-diagonal elements of ˜Lscalar (r, r′) vanish for a perturbation that is proportional to a spinor that is orthogonal to s0(0). The Bogoliubov eigenmodes for spin-perpendicular exci-tations therefore satisfy ˜ vk(r) = 0. The presence of the spin operator suggests a decomposition of the Bogoliubov spectrum into two subspaces. This motivates us to de-compose [ ˜Λ(r, t ), ˜Λ∗(r, t )] T via 
+
+ ˜Λ(r, t )˜Λ∗(r, t )
+
+
+
+=
+
+ ˜Λ⊥(r, t )˜Λ∗⊥(r, t )
+
+
+
++
+
+" ˜Λ∥(r, t )˜Λ∗∥(r, t )
+
+#
+
+, (53) where the perpendicular and parallel excitations can be further expanded into the two types of Bogoliubov eigen-modes via 
+
+ ˜Λ⊥(r, t )˜Λ∗⊥(r, t )
+
+
+
+= X
+
+> k> 0
+
+u⊥k(r)˜ sk(t)0
+
+
+
++
+
+ 0
+
+u∗⊥k(r)˜ s∗
+
+> k
+
+(t)
+
+
+
+(54) and 
+
+" ˜Λ∥(r, t )˜Λ∗∥(r, t )
+
+#
+
+= X
+
+> k> 0
+
+bk(t)
+
+u∥k(r)s0(0) 
+
+v∥k(r)s∗
+
+> 0
+
+(0) 
+
+
+
++b∗
+
+> k
+
+(t)
+
+v∗∥k(r)s0(0) 
+
+u∗∥k(r)s∗
+
+> 0
+
+(0) 
+
+
+
+,
+
+(55) where we have, by definition, ˜s†
+
+> k> 0
+
+(t)s0(0) = 0 . (56) Note that u⊥k> 0(r), u∥k> 0(r), and v∥k> 0(r) are scalar functions that satisfy 
+
+Z
+
+dr′ ˜L⊥(r, r′)
+
+u⊥k(r′)0
+
+
+
+= E⊥k
+
+u⊥k(r)0
+
+
+
+(57) and 
+
+Z
+
+dr′ ˜L∥(r, r′)
+
+u∥k(r′)
+
+v∥k(r′)
+
+
+
+= E∥k
+
+u∥k(r)
+
+v∥k(r)
+
+
+
+, (58) with the block ˜L⊥(r, r′) and the block ˜L∥(r, r′) of ˜Lscalar (r, r′) for perpendicular and parallel spin states, 12 respectively, given by ˜L⊥(r, r′) = 
+
+HSMA scalar (r) − μn 00 − HSMA scalar (r) − μn
+
+
+
+δ(r, r′) (59) and ˜L∥(r, r′) = 
+
+ HSMA scalar − μn
+
+ δ(r, r′) + gn
+
+ Q |ϕ0|2 Q gn
+
+ Q ϕ20 Q∗
+
+−gn
+
+ Q∗ ϕ∗20 Q − HSMA scalar − μn
+
+ δ(r, r′) − gn
+
+ Q∗ |ϕ0|2 Q∗
+
+. (60) The index k in Eqs. (54) and (55) runs only over positive values because contributions from the positive-energy and negative-energy eigenmodes are included explicitly in each term of the sum. In Eq. (56), we choose the normalization 
+
+Z
+
+dr |u⊥k> 0(r)|2 = 1 (61) and an unnormalized time-dependent spin part ˜ sk(t) with the quantity ˜ s†
+
+> k> 0
+
+(t)˜ sk> 0(t)/N 0(t) representing the occu-pation fraction of the excited state labeled by k. Since there exist two spin projections for a spin-1 system that are orthogonal to s0(0), there exist two degenerate modes with different spins that are associated with each spa-tial wavefunction u⊥k> 0(r). With time evolution, ˜ sk> 0(t)may precess in the spin plane that is orthogonal to ˜ s0(0), hence the explicit time dependence. In contrast, in Eq. (55), we choose the typical normal-ization Z
+
+dr |u∥k(r)|2 − | v∥k(r)|2 = 1 (62) with bk(t) and b∗
+
+> k
+
+(t) being the complex amplitudes cor-responding to the k-th pair of Bogoliubov eigenmodes. Since the excitations ˜Λ∥(r, t ) are, in spin space, parallel to s0(0), these excitations exhibit scalar-BEC-like behav-ior including the particle-hole-coupled structure charac-terized by the wavefunctions u∥k(r) and v∥k(r). Note that u⊥k(r) can be understood as an excitation in the effective potential V (r) + gn|ϕ0(r)|2 − μn, con-sistent with the effective potential picture introduced in Ref. [39]. The pair [ u∥k(r), v ∥k(r)] T , in contrast, cor-responds to excitations of a scalar BEC obtained using 
+
+U (1)-symmetry-preserving Bogoliubov theory [41]. Be-cause of the projection operators Q(r, r′) and Q∗(r, r′)that appear in each element of ˜L∥(r, r′), the spatial wave-functions of the particle-hole coupled modes are orthog-onal to the background spatial wavefunction, i.e., 
+
+Z
+
+drϕ∗
+
+> 0
+
+(r)u∥k> 0(r) = 0 , (63) 
+
+Z
+
+drϕ0(r)v∥k> 0(r) = 0 . (64) This is in contrast to standard Bogoliubov theory [48], where such orthogonality does not, in general, exist. Since the scalar wavefunctions ϕ0(r) and u⊥k(r) are non-degenerate eigenfunctions of the same scalar single-particle Hamiltonian, they must all be orthogonal to each other as well, and thus Eqs. (53)-(55) satisfy the orthogonality conditions set by Eq. (26), namely, R drϕ∗
+
+> 0
+
+(r)Λ(r, t ) = 0 for all excitations in the system. The energy-space results shown in Fig. 3 confirm that these spatial amplitudes that obey the orthogonality con-dition just discussed better match the numerics than those without it, suggesting that our extension of the standard Bogoliubov theory better captures the proper-ties of the particle-hole-correlated excitations. A complication arises in these modes in that the bases formed by them are not orthogonal, and thus spatial over-laps between the modes of the different excitation types do not vanish: Z
+
+dru∗⊥k> 0(r)u∥k′>0(r)̸ = 0 , (65) 
+
+Z
+
+dru⊥k> 0(r)v∥k′>0(r)̸ = 0 . (66) However, since by definition the Bogoliubov expan-sion diagonalizes the dominant Bogoliubov Hamiltonian ˜Lscalar (r, r′), the coupling between the states of different bases only arises from the excitations of the low-energy spin Bogoliubov Hamiltonian ˜Ls(r, r′) as well as terms of higher order in Λ(r, t ) that only become important at later times when the depletion of the background state is appreciable. Figure 4 shows the spectrum of the two types of exci-tations as a function of the trap frequency ω for a 1D system. For each ω, the nonlinear coupling constant is adjusted such that the value of cs is fixed. Under the Thomas-Fermi approximation, the chemical potential 
+
+μn = cs(3 gn/5gs) is the same for all ω/c s. The blue solid and orange dashed lines correspond to the eigenenergies of the spin-perpendicular and spin-parallel eigenmodes, respectively. Only the eigenmodes with even spatial sym-metry are shown, as the harmonic potential and initial state used in the numerics are both even in space. Since the spin-perpendicular excitations have no particle-hole correlations, it is expected that the energy depends on 13 
+
+L−1 
+
+> c
+
+quadratically, where Lc is the characteristic length scale of the system. Using the Thomas-Fermi approxi-mation, we obtain Lc ≈ pμn/(mω 2), which results in 
+
+E ∝ ω2. For the spin-parallel excitations, particle-hole correlations exist and the eigenenergies depend on L−1
+
+> c
+
+linearly, i.e., E ∝ ω, matching the length-scale depen-dence derived from the phonon dispersion relationship in free space [48].  
+
+> D. Resonance conditions
+
+To derive explicit conditions for where spin-spatial res-onances occur, we analyze the time-dependent driving term ˜S(r, t ). Resonant coupling to an eigenmode of ˜Lscalar (r, r′) is triggered when the frequency of ˜S(r, t )matches the corresponding eigenenergy of the eigenmode. In what follows, we restrict ourselves to the “far Zee-man regime,” i.e., the regime where the quadratic Zee-man shift dominates ( |q| ≫ cs). In this regime, according to Eqs. (13) and (14), we approximate the time evolution operator in Eq. (46) by 
+
+USMA  
+
+> s
+
+(t) ≈ exp 
+
+"
+
+−i
+
+ qF2 
+
+> z
+
++ μn
+
+
+
+ℏ t
+
+#
+
+. (67) Using this approximation, we find ˜S(r, t ) ≈ gs|ϕ0(r)|2 − cs
+
+ (  M(t)ϕ0(r)s0(0) 
+
+−M∗(t)ϕ∗
+
+> 0
+
+(r)s∗
+
+> 0
+
+(0) 
+
+
+
++
+
+ Cϕ0(r)s0(0) 
+
+−C∗ϕ∗
+
+> 0
+
+(r)s0(0) 
+
+ )
+
+, (68)                        
+
+> FIG. 4. Bogoliubov spectrum of the Hamiltonian ˜Lscalar (r,r′) as a function of the trap frequency ω.Only eigenenergies corresponding to eigenmodes with even spatial symmetry are shown. The blue solid and orange dashed lines denote spin-perpendicular and spin-parallel excitations, re-spectively. The value of gsis adjusted for each ωsuch that
+> cshas the same value as used in Figs. 1 and 2, namely,
+> cs=h×29 .39 Hz. The ratio gn/g sis kept fixed at 28 .10 for all calculations.
+
+where the matrix M(t) has the matrix elements [M(t)] αβ = [ Fx]αβ [s0(0)] 4−β [s∗
+
+> 0
+
+(0)] 4−α cos 
+
+ 2qt 
+
+ℏ
+
+
+
++[Fy ]αβ [s0(0)] 4−β [s∗
+
+> 0
+
+(0)] 4−α sin 
+
+ 2qt 
+
+ℏ
+
+
+
+(69) and the time-independent matrix C is given by 
+
+C = X
+
+> j=x,y,z
+
+h
+
+s†
+
+> 0
+
+(0) Fj s0(0) 
+
+i
+
+Fj − M(0) . (70) This analysis shows that the matrix elements of ˜S(r, t )contain terms that oscillate at the frequency 2 q/ ℏ, result-ing in the resonance conditions 2|qres | = E⊥k (71) and 2|qres | = E∥k, (72) where E⊥k and E∥k are the eigenenergies defined in Eqs. 57 and (58), respectively. Our derivation relies on three approximations: i) terms that are quadratic or of higher order in Λ(r, t ) are dropped, ii) linear terms that are proportional to 
+
+gsΛ(r, t ) are also neglected since they are effectively counted as being of quadratic order (see our discus-sion above), and iii) the resonance occurs in the large quadratic Zeeman shift regime, |q| ≫ cs. Condition i) holds until the excitation modes have a significant frac-tion of the population. This can occur if the system is exactly on resonance over very long time scales. Impor-tantly, signatures of the resonance should emerge before condition i) is violated. Condition ii) is almost always satisfied when condition i) is satisfied provided gs is much smaller than the other energy scales of the system. Re-call that this scale separation is a critical ingredient of our theory. Condition iii) tends to be satisfied in the reasonably strong trap regime (see below for additional discussion). The neglected nonlinear terms Λ(r, t ) in the equations of motion for Λ(r, t ) and s0(t) introduce frequencies that are integer multiples of the fundamental frequency [see Eqs. (71) and (72)]. Therefore, the more general reso-nance conditions are 2n|qres | = E⊥k, 2n|qres | = E∥k, (n = 1 , 2, 3, . . . )(73) where n = 1 corresponds to the fundamental resonance frequencies derived above, while n > 1 corresponds to higher-order parametric resonance frequencies. Fig-ure 1(b), e.g., corresponds to a parametric resonance with 
+
+n = 2. The analysis presented in the previous section shows that the resonances associated with the u∥k> 0(r) and 
+
+v∥k> 0(r) particle-hole-correlated spatial wavefunctions correspond to a spin structure s0(t) that is parallel to 14 the background spin state, whereas those associated with the u⊥k> 0(r) spatial wavefunctions correspond to a spin structure sk> 0(t) that is perpendicular to the background spin state. The former implies that different spin com-ponents share the same spatial wavefunction to leading order near the resonances and that the resulting dynam-ics resemble an overall density oscillation, whereas the latter implies that the resonances involve changing spin structures, leading to spin-dependent spatial wavefunc-tions. We use the state fidelity 
+
+F±(t) = 
+
+R dr ψ0(r, t ) ψ±1(r, t )
+
+pρ0(t)ρ±1(t) (74) to identify resonances that are associated with the spin-perpendicular modes and the integrated time difference in the total single-particle density 
+
+D(t) = 12
+
+Z
+
+dr |ntot (r, t ) − ntot (r, 0) | (75) to identify resonances that are associated with the particle-hole-coupled modes (the factor of 1 /2 ensures a maximum value of unity). Figure 5 shows the time traces of 1 − F +(t) and D(t)as functions of q for three different trap frequencies and a fixed value of cs = h × 29 .39 Hz for a 1D system. The resonance positions can be extracted by locating the maxima of 1 −F +(t) and D(t) depending on the nature of the resonances. Within the SMA, the dynamics changes, in classical phase space, from bound motion to unbound motion at q/c s = 1 [6]. Different features can be seen around the SMA “spin-separatrix value” of q/c s = 1 for all three trap frequencies. Figures 5(a)-5(c) and 5(e) show peaks, whose widths and intensities vary with the trap frequency, around q/c s = 1 [note the peak for (c) is very faint]. These peaks indicate spatial excitations near the spin separatrix. In Figs. 5(f) and 5(g), the role of 
+
+q/c s = 1 as a separatrix between two distinct regimes of dynamics is more obvious: for q/c s < 1, the striations in D(t) due to the breathing mode frequency are regular and roughly independent of q, while for q/c s > 1, the striations become much more intricate and q-dependent. The weak-trap regimes associated with the spin-perpendicular resonances and the spin-parallel reso-nances shown in Figs. 5(a) and 5(e), respectively, are characterized by broad features for q/c s ≳ 1, which lack signatures of isolated resonances; isolated resonances would appear as vertical peaks. For these parame-ters, the respective Bogoliubov spectra are comparatively dense (see Fig. 4), leading to overlapping resonances that cannot be individually resolved due to the excita-tion of multiple modes even for short times. In con-trast, in the strong-trap regimes associated with the spin-perpendicular and spin-parallel excitations, the spin-perpendicular Bogoliubov spectrum and spin-parallel Bogoliubov spectrum, respectively, are comparatively sparse. In these cases, the resonance widths are smaller, allowing for a clear identification of individual resonances that closely match the 2 qres = E⊥2 and 2 qres = E∥2
+
+predictions [see the orange dashed and red dotted lines in Figs. 5(d) and 5(h), respectively]. As mentioned at the end of Sec. III C and in Fig. 4, the solutions to Eqs. (57) and (58) with odd spatial symmetry cannot be excited given our potential and initial state and the lowest-lying resonances therefore correspond to the first 
+
+even excitations (hence the subscript “2” in E⊥2 and 
+
+E∥2). Figures 5(d) and 5(h) highlight the division be-tween the weak- and strong-trap regimes by plotting the resonance positions of the energetically lowest-lying spin-perpendicular resonance and spin-parallel resonance ex-tracted from the SGPE results against the trap frequency. The numerically determined resonance positions show a kink-like turnover, with the turnover from qres /c s being constant to qres /c s being proportional to a power of ℏω/c s
+
+occurring at different values of ℏω/c s for the spin-parallel and spin-perpendicular resonances. The turnover occurs roughly at the trap frequency for which the lowest Bo-goliubov excitation of the spectra has the energy of either 
+
+E⊥2 = 2 cs or E∥2 = 2 cs (see Fig. 4); these frequencies are then used to define the boundary between the two regimes for the two types of resonances. This implies in the strong-trap regime for the spin-parallel resonances and the spin-perpendicular resonances, qres scales with the first and second powers of ℏω/c s, respectively, as shown in Fig. 4. In Figs. 5(d) and 5(h), the trap fre-quency that delineates the two regimes for each excita-tion type can be identified by the frequency at which the orange dashed line or red dotted line, which mark 
+
+q = E⊥2/2 and q = E∥2/2, respectively, crosses the hori-zontal black dashed line, which marks q/c s = 1. In the strong-trap regime shown in Figs. 5(b)-5(c) and 5(f) and 5(g), several features that are common to 1 − F +(t) and D(t) can be identified. The widths in 
+
+q/c s of the strongest resonance peaks (marked by tri-angles) decrease with increasing t. The strongest peak is accompanied by less intense “side peaks,” whose po-sition changes with q/c s with increasing t. Since the main peak is very pronounced at later times, the res-onance positions can be extracted accurately. The re-sulting resonance positions show good agreement with our Bogoliubov theory based predictions [see triangles at the top of Figs. 5(b), 5(c), 5(f), and 5(g)]. It can be seen that the measure 1 − F +(t) shows a faint sig-nature of the spin-parallel excitation [green plus at the top of Fig. 5(b)] and that, likewise, the measure D(t)shows a faint signature of the spin-perpendicular exci-tation [green plus at the top of Fig. 5(f)]. Perform-ing simulations for various trapping frequencies, the cir-cles and pluses in Figs. 5(d) and 5(h) extracted from our SGPE simulations show good agreement with the predictions of the Bogoliubov theory for both types of resonances. We note that Fig. 5(f) also shows a some-what fainter isolated resonance at q/c s ≈ 11, which cor-responds to the second-even-excited spin-parallel mode with E∥4/c s ≈ 22 (see the energy of the spin-parallel resonances with ℏω/c s ≈ 6.7 in Fig. 4). 15 
+
+FIG. 5. Resonance positions as a function of the trap frequency ω obtained from SGPE simulations. The first, second, and third columns correspond to ω = 2 π × 38 Hz, 2 π × 196 Hz, and 2 π × 294 Hz, respectively. Panels (a)–(c) and (e)–(g) show the time traces of 1 − F +(t), signaling spin-perpendicular resonances, and D(t), signaling spin-parallel resonances, respectively, as a function of q. The red lines below (b) and (f) indicate the vertical cuts corresponding to the SGPE simulation results shown in Fig. 1. The solid red triangles above (b) and (c) indicate resonance peaks corresponding to the spin-perpendicular excitations, while the blue hollow triangles above (f) and (g) indicate resonance peaks corresponding to spin-parallel excitations. The green crosses above (b), (f), and (g) mark spin-parallel, spin-perpendicular, and spin-perpendicular excitations, respectively. Panels (d) and (h) compare the SGPE resonance positions extracted from the peak maxima (blue dots and green crosses) with the Bogoliubov theory predictions [the orange dashed and red dotted lines show qres (ω) = E⊥2(ω)/2 and qres (ω) = E∥2(ω)/2 for the spin-perpendicular excitations and spin-parallel excitations, respectively]. The pink-shaded regions in panels (d) and (h) indicate the “weak-trap” regimes in which no sharp resonance positions can be identified. Inside the weak-trap regimes for each resonance type, the maxima align with the SMA spin-separatrix value of q/c s = 1 (the black horizontal dashed line). Outside of the weak-trap regime, the resonance positions extracted from the SGPE results show excellent agreement with the Bogoliubov theory predictions. 
+
+The red vertical marks below Figs. 5(b) and 5(f) indi-cate the q/c s values used in Fig. 1. The marker in the middle corresponds to the q/c s ≈ 3 run, which is shown in the middle column of Fig. 1. This resonance is a para-metric excitation of the second even spin-perpendicular type, with resonance condition E⊥4 = 4 qres . Figure 6 shows a zoomed and rescaled view of Fig. 5(b). The red vertical marks in Fig. 6 indicate the location on the x-axis for which q = E⊥4/4. Unlike for several of the other resonances, this resonance has a particularly low ampli-tude, and thus no bright discernible peak is visible for 
+
+q/c s ≈ 3 in Fig. 6; instead, the resonance manifests as crossings with the side peaks that surround the larger nearby resonance at q/c s ≈ 2. The area enclosed by the white dashed box in Fig. 6 shows the region where the crossings occur. In the weak-trap regime the total density depends only weakly on time, as indicated by the comparatively small values of D(t) in Fig. 5(e). The individual spin com-ponents, however, show appreciable spatial dynamics, as indicated by the comparatively large values of 1 − F +(t)in Fig. 5(a). This can be understood as a partial con-sequence of the small ratio of the spin healing length to the system size in the weak-trap regime, which allows for spin-domain formation even when the total density dis-
+
+FIG. 6. Zoomed view of Fig. 5(b) showing 1 − F +(t) in the region around the q/c s ≈ 3 resonance. The red verti-cal lines above and below the plot show the location of the resonance predicted from the E⊥4 = 4 qres resonance condi-tion for ℏω/c s = 6 .668. The white dashed box encloses the region where the state fidelity map shows indications of a crossing between the side peaks and a vertical feature due to the E⊥4 = 4 qres resonance. 
+
+tribution remains relatively unchanged. Figure 7 shows an example of the formation of spin domains in the weak-16 trap regime. The simulation parameters are the same as those used in the first column of Fig. 5 with q/c s ≈ 0.511. Much later times are shown in Fig. 7 than in Fig. 5. It can be seen that the mF = 0 density [Fig. 7(a)] possesses, for 
+
+cst/h ≳ 3, “sharp” maxima and minima, many of which do not appear in the total density [Fig. 7(b)]. Specifically, the total density remains roughly unchanged throughout the dynamics, aside from some traveling deformations and small breathing oscillations (which are faint). We interpret the long-time dynamics as corresponding to the formation of spin domains. 
+
+FIG. 7. Spatial dynamics obtained from the SGPE in the weak-trap regime with ω = 2 π × 38 Hz and q = h × 15 Hz (q/c s = 0 .512). Panel (a) shows the time evolution of the 
+
+mF = 0 component density |ψ0(x, t )|2. Panel (b) shows the time evolution of the total condensate density ntot (x, t ) = 
+
+Ψ†(x, t )Ψ(x, t ). Despite strong dynamics in the individual spin components, the total density is approximately station-ary throughout the evolution. 
+
+E. Multiple-mode expansion of the Λ-model 
+
+To extend the commonly used SMA, we now use the spatial wavefunctions that form the eigenbases of ˜L⊥(r, r′) and ˜L∥(r, r′) shown in Eqs. (57) and (58) to construct a multiple-mode expansion of the perturbation 
+
+Λ(r, t ) in the unrotated frame. By direct substitution into the unrotated equivalents of Eqs. (53)-(55), we ob-tain 
+
+ Λ(r, t )
+
+Λ∗(r, t )
+
+
+
+=
+
+Λ⊥(r, t )
+
+Λ∗⊥(r, t )
+
+
+
++
+
+Λ∥(r, t )
+
+Λ∗∥(r, t )
+
+
+
+(76) with 
+
+Λ⊥(r, t )
+
+Λ∗⊥(r, t )
+
+
+
+= X
+
+> k> 0
+
+sk(t)u⊥k(r)0
+
+
+
++
+
+ 0
+
+s∗
+
+> k
+
+(t)u∗⊥k(r)
+
+
+
+(77) and 
+
+Λ∥(r, t )
+
+Λ∗∥(r, t )
+
+
+
+(78) = X
+
+> k> 0
+
+
+
+bk(t)
+
+s0(t)u∥k(r)
+
+s∗
+
+> 0
+
+(t)v∥k(r)
+
+
+
++ b∗
+
+> k
+
+(t)
+
+s0(t)u∗∥k(r)
+
+s∗
+
+> 0
+
+(t)u∗∥k(r)
+
+ 
+
+,
+
+where we have 
+
+Lscalar (r, r′, t )
+
+ Λ(r′, t )
+
+Λ∗(r′, t )
+
+
+
+= X
+
+> k> 0
+
+E⊥k
+
+ sk(t)u⊥k(r)
+
+−s∗
+
+> k
+
+(t)u∗⊥k(r)
+
+
+
++X
+
+> k> 0
+
+E∥k
+
+
+
+bk(t)
+
+s0(t)u∥k(r)
+
+s∗
+
+> 0
+
+(t)v∥k(r)
+
+
+
+− b∗
+
+> k
+
+(t)
+
+s0(t)v∗∥k(r)
+
+s∗
+
+> 0
+
+(t)u∗∥k(r)
+
+ 
+
+.
+
+(79) The terms on the right hand side of Eqs. (77) and (78) represent the dominant excitations of the system. These modes provide the dominant structure of the excitations of the system as suggested by Eq. (51). The neglected terms not present in Eq. (51) include higher-order terms and the action of the spin-part Ls(r, r, t ) of the full Bo-goliubov matrix LGP (r, r′, t ) on the perturbation, which together provide nonlinearities and mode couplings. Using othonormality of the basis states, the spin struc-ture associated with the j-th spin-perpendicular Bogoli-ubov mode can be written as 
+
+sk(t) = Qs(t)
+
+Z
+
+dru∗⊥k(r)Λ(r, t ), k > 0 (80) and the mode occupation for the k-th spin-parallel Bo-goliubov mode as 
+
+bk(t) = 
+
+Z
+
+u∗∥k(r)s†
+
+> 0
+
+(t)Λ(r, t )dr
+
+−
+
+Z
+
+Λ†(r, t )s0(t)v∗∥k(r)dr, k > 0. (81) Using the last two equations, we can obtain the corre-sponding equations of motion by taking time derivatives, remembering that the operators are time dependent and the spatial wavefunctions are time independent. We find 
+
+iℏ ∂∂t sk(t) = 
+
+s0(t)
+
+
+
+−iℏ ∂∂t s†
+
+> 0
+
+(t)
+
+
+
+sk(t)+
+
+Z
+
+dru∗⊥k(r)
+
+
+
+Qs(t)
+
+
+
+iℏ ∂∂t Λ(r, t )
+
+
+
+−
+
+
+
+iℏ ∂∂t s0(t)
+
+
+
+s†
+
+> 0
+
+(t)Λ∥(r, t )
+
+
+
+,k > 0, (82) 17 and 
+
+iℏ ∂∂t bk(t) = 
+
+Z
+
+dru∗∥k(r)
+
+
+
+s†
+
+> 0
+
+(t)
+
+
+
+iℏ ∂∂t Λ(r, t )
+
+
+
+−
+
+
+
+−iℏ ∂∂t s†
+
+> 0
+
+(t)
+
+
+
+Λ⊥(r, t )
+
+
+
++
+
+Z
+
+dr
+
+ 
+
+−iℏ ∂∂t Λ†(r, t )
+
+
+
+s0(t)
+
+−Λ†⊥(r, t )
+
+
+
+iℏ ∂∂t s0(t)
+
+ 
+
+v∗∥k(r),k > 0. (83) Equations (82) and (83) show that the parallel and per-pendicular subspaces are coupled via spin dynamics; this coupling arises from the non-orthogonality of the two subspaces [see Eqs. (65) and (66)]. While each mode of one subspace is, in principle, coupled to all modes of the other via spin dynamics, we find in practice that modes of significantly different energies are only very weakly coupled. To obtain closed-form expressions for the equations of motion for sj (t) and bk(t), one must: re-place the time derivatives within the square brackets in Eqs. (82) and (83), namely iℏ∂s0(t)/∂t and iℏ∂Λ(r, t )/∂t 
+
+and their adjoints, using the right hand sides of Eqs. (35) and (36) and their adjoints; replace N0(t), which en-ters as part of the elimination, by the right hand side of Eq. (38); and then lastly replace the remaining Λ(r, t )by the right hand side of Eqs. (76)-(78). Doing so yields a closed set of equations, namely we obtain ∂sj (t)/∂t 
+
+and ∂b k> 0(t)/∂t as functions of sj (t), bk> 0(t), and time-independent quantities. As one might imagine, the full expressions contain a multitude of terms and are not par-ticularly illuminating. In what follows, we focus on a truncated version of these expressions and analyze an unrotated “two-state” equivalent of the truncated model described in Sec. III C. We clarify that when we count the number of states included in this model, we explicitly count the number of unique mode amplitudes included, i.e., the number of sj (t) (including j = 0) and bk(t) terms but not their conjugates, which are implicitly assumed to be included in the expansion as well. Given that a description that only includes the terms shown in Eqs. (39) and (41) already abandons, due to the neglected quadratic terms in Λ(r, t ) in Eq. (39), Hermiticity and therefore particle number conservation, we assume N0(t) = 1 in what follows, i.e., we assume that the background serves as a particle reservoir, which seeds the dynamics of the resonant modes. Depending on the type of resonance, the resonant modes are those with the particle-components given by s2(t)u⊥2(r) or 
+
+s0(t)[ b2(t)u∥2(r) + b∗
+
+> 2
+
+(t)v∗∥2(r)]. If the resonant wavefunc-tion is s2(t)u⊥2(r), we obtain for the background spin 
+
+iℏ ∂s0(t)
+
+∂t ≈
+
+h
+
+hSMA  
+
+> s
+
+(t) − μs(t)
+
+i
+
+s0(t) + gsα∗Qs(t)×
+
+ X
+
+> j=x,y,z
+
+s†
+
+> 0
+
+(t)Fj s0(t)Fj
+
+ s2(t) (84) and for the resonant spinor amplitude 
+
+iℏ ∂s2(t)
+
+∂t ≈ gsαQs(t)
+
+ X
+
+> j=x,y,z
+
+s†
+
+> 0
+
+(t)Fj s0(t)Fj
+
+ s0(t)+ gsα
+
+ X
+
+> j=x,y,z
+
+s†
+
+> 0
+
+(t)Fj s0(t)s†
+
+> 2
+
+(t)Fj s2(t)
+
+ s0(t)+ s0(t)s†
+
+> 0
+
+(t)hSMA  
+
+> s
+
+(t)s2(t)+ qF2 
+
+> z
+
++ E⊥2 − μs(t) s2(t), (85) where 
+
+α =
+
+Z
+
+dru∗⊥2(r)|ϕ0(r)|2ϕ0(r). (86) If the resonant wavefunction is s0(t)[ b2(t)u∥2(r) + 
+
+b∗
+
+> 2
+
+(t)v∗∥2(r)], we obtain 
+
+iℏ ∂s0(t)
+
+∂t ≈
+
+h
+
+hSMA  
+
+> s
+
+(t) − μs(t)
+
+i
+
+s0(t)+ gs[β∗b2(t) + γ∗b∗
+
+> 2
+
+(t)] Qs(t)×
+
+ X
+
+> j=x,y,z
+
+s†
+
+> 0
+
+(t)Fj s0(t)Fj
+
+ s0(t) (87) and 
+
+iℏ ∂b 2(t)
+
+∂t ≈ gs(β +γ∗) X
+
+> j=x,y,z
+
+h
+
+s†
+
+> 0
+
+(t)Fj s0(t)
+
+i2
+
++E∥2b2(t)+
+
+h
+
+qs†
+
+> 0
+
+(t)F2 
+
+> z
+
+s0(t) − μs(t)
+
+i
+
+[ζ0b2(t) + ζ1b∗
+
+> 2
+
+(t)] , (88) where 
+
+β =
+
+Z
+
+dru∗∥2(r)|ϕ0(r)|2ϕ0(r), (89) 
+
+γ =
+
+Z
+
+drv∥2(r)|ϕ0(r)|2ϕ0(r), (90) 
+
+ζ0 =
+
+Z
+
+dr
+
+h
+
+u∥2(r) 2 + v∥2(r) 2i
+
+, (91) 
+
+ζ1 =
+
+Z
+
+dru∗∥2(r)
+
+h
+
+v∥2(r) + v∗∥2(r)
+
+i
+
+. (92) Figure 8 shows the dynamics of the mF = 0 population near two resonances obtained using different few-state models and the SGPE. The green dash-dotted curves show the results from the two-state models derived above, using Eqs. (84) and (85) for Fig. 8(a) and Eqs. (87) 18 and (88) for Fig. 8(b). The spin-perpendicular model (green dash-dotted line) reproduces the SGPE results (blue line) with decent agreement for cst/h ≲ 0.8. Some-what surprisingly, the 19-state model (orange dashed lines) agrees less well with the SGPE results than the two-state model. We interpret the somewhat better per-formance of the two-state model compared to the 19-state model as being accidental. Importantly, both truncated models neglect beyond-Bogoliubov terms, which are cru-cial for capturing the full SGPE dynamics. Specifically, the full Λ-model shown in Fig. 1 reproduces the SGPE results extremely well. This indicates that the beyond-Bogoliubov terms are significant in determining the dy-namics when the system parameters are tuned closely to these strong resonances. The neglected higher-order terms allow for transitions from the resonant modes to even higher energy modes, modifying the chemical po-tential and (to a lesser extent) the total density distribu-tion, which in turn may modify the resonance condition. Because N0(t) is fixed to unity in the truncated models used in Fig. 8, the background state remains undepleted, which reduces such a dynamically off-resonant effect and leads to larger excitation amplitudes at early times for the 19-state model compared to the SGPE results. Figure 8(b) shows results for a spin-parallel resonance using the same line styles as used in Fig. 8(a). In this case, the two-state model from Eqs. (87) and (88) (green dash-dotted line) shows no evidence of a resonance over the time scale shown while the 19-state model (orange dashed line) shows some evidence of a resonance. Impor-tantly, though, neither of these two models captures the resonant SGPE dynamics for cst/h ≳ 0.4. Interestingly, the two-state model displays resonant behavior at very late times, as shown by the large late-time values of |b2|2
+
+in the inset of Fig. 8(b). Importantly, both truncated models fail to capture the dynamics for cst/h ≳ 0.4, in-dicating that density fluctuations play a significant role in the dynamics of the spin-parallel resonance even at early times, likely due to the parametric nature of the resonance, which is driven by large fluctuations of the nonlinear terms. The higher-order terms are kept in the models shown in Fig. 9, and instead the system is probed with varying 
+
+q that is detuned from the resonance positions identi-fied in Fig. 5. Results from varying mode-truncations are shown for each q. The left column represents results for the q values for which the system is further detuned from the resonance peak, while the right column shows results for the q values closer to resonance. Figures 9(a) and 9(b) detune from the spin-perpendicular excitation at q ≈ h × 60 Hz, while Figs. 9(c) and 9(d) detune from the spin-parallel excitation at q ≈ h × 171 Hz. In the far detuned cases [Figs. 9(a) and 9(c)], a two-state model is sufficient to capture the dynamics to good accuracy, showing slight improvements over the SMA results via re-production of the slower resonant oscillation frequency, seen as a shift away from the SMA solution given by the orange dashed line with around 1 period shown in                             
+
+> FIG. 8. The dynamics of the population of the mF= 0 spin component with ω= 2 π×196 Hz at two different qvalues, (a) q=h×60 Hz and (b) q≈h×171 Hz. The blue solid, orange dashed, and green dash-dotted lines correspond to the results obtained from SGPE simulations, the truncated Λ-model using 19 states with no beyond-Bogoliubov terms, and the two-state truncated Λ-model with no beyond-Bogoliubov terms, respectively. The inset within (b) shows the late-time resonance in the excited amplitude b2of the two-state model. All the other parameters are the same as the ones used in Fig. 1. The truncated models fail to capture the SGPE dy-namics accurately for cst/h ≳0.8.
+
+Fig. 9(a) and 2 periods shown in Fig. 9(c). When q is closer to the resonance values [Figs. 9(b) and 9(d)], more modes are required to achieve similar accuracy, with 10-state model results shown as orange-dashed lines iden-tically reproducing the SGPE (solid blue lines), while the two-state models (green dash-dotted) show disagree-ments about the amplitude and frequency of the slow resonant oscillation. The agreement is especially poor given the parameters of Fig. 9(b), for which the two-state model seems to show a shifted resonance position closer to this detuned q-value of 70 Hz. Note the needed 10 states in the slightly detuned cases are fewer than the 19 states needed to reproduce the SGPE for the very low detuning cases shown in Fig. 1, suggesting a simple model with fewer states holds in the far-detuned parame-ter space while still capturing beyond-SMA physics. The slow oscillation frequencies visible in Fig. 9 also appear to decrease when q is closer to resonant values, which is consistent with the discussion of the cusps shown in Fig. 5. From the discussions above, it is clear that the nonlin-ear nature of the system obfuscates the role of the various terms in the equations of motion. Despite of this, insights into the dynamics can be gained from simplified and trun-cated treatments of the system. The fundamental reso-nance positions can be well predicted by the Bogoliubov 19                                          
+
+> FIG. 9. The dynamics of the population of the mF= 0 spin component with ω= 2 π×196 Hz for (a-b) qjust above
+> h×60 Hz [see Fig. 8(a)] and (c-d) qjust below h×171 Hz [see Fig. 8(b)]. The values of the quadratic Zeeman shifts are (a) q=h×75 Hz, (b) q=h×70 Hz, (c) q=h×150 Hz, and (d) q=h×160 Hz. All other parameters are the same as the ones used in Fig. 1. In (a) and (c), the blue solid, or-ange dashed, and green dash-dotted lines correspond to the results obtained from SGPE simulations, SMA, and Λ-model with all terms using two spatial wavefunctions, respectively. The SGPE and Λ-models produce similar results, while the SMA fails to capture the slow resonant oscillation. In (b) and (d), the blue solid, green dash-dotted, and red dotted lines correspond to the results obtained from SGPE simulations,
+> Λ-model with all terms using two spatial wavefunctions, and
+> Λ-model with all terms using 10 spatial wavefunctions, re-spectively. The Λ-model with 10 states reproduces the SGPE results, while the two-state model fails to capture the ampli-tude and frequency of the slow resonant oscillation. The slow oscillation frequencies appear to decrease in amplitude for the values of qfurther away from the resonant values.
+
+theory, with the quadratic Bogoliubov-like terms in the equations of motion defining the structure of the reso-nance modes and the resonant parameter regimes. The terms independent of Λ in the equations of motion for the resonant mode amplitudes seed occupation of the reso-nant modes due to nonequilibrium spin dynamics, while the nonlinear terms in Λ further enhance the resonance by allowing for transitions to higher energy modes and therefore stronger fluctuations in the mean-field interac-tion energies to drive parametric excitations. The reso-nances can be made (artificially) weaker by either remov-ing the higher-energy modes, equivalently truncating the nonlinear terms (which therefore reduces the number of modes that can be excited), or by detuning the system from the resonant regimes such that the nonlinear terms and higher-energy mode occupations are less significant in driving the dynamics.  
+
+> IV. CONCLUSION AND OUTLOOK
+
+In this work, we developed a general coupled-channel framework to describe resonant spatial excitations in-duced by the spin dynamics of a spinor Bose–Einstein condensate. Taking advantage of the scale separa-tion, our theory is closely related to the particle-number–conserving Bogoliubov theory for the spin inde-pendent part of the full spinor Hamiltonian, in which the eigenenergies and eigenstates determine the resonance conditions and the corresponding resonant spatial wave-functions. Depending on the nature of the spatial exci-tations at resonance, two types of resonances are iden-tified: one involving particle–hole correlations and the other without such particle-hole correlations. Our theory reveals that these two types of excitations are associated with distinct spin structures: the former corresponds to a spin structure parallel to the background spin, whereas the latter corresponds to a spin structure perpendicular to the background spin. For resonances involving per-pendicular spin excitations, spin-dependent spatial struc-tures emerge, indicating a breakdown of the single-mode approximation. In contrast, resonances involving paral-lel spin excitations behave more like total-density exci-tations with different spin components sharing common spatial orbitals. Owing to the nonlinear nature of the system, higher-order parametric resonances are observed for both types of resonances. The dynamics near resonances were studied in both the strong-trap and weak-trap regimes. Sharp resonances could be identified only in the strong-trap regime, where the energy spacing in the Bogoliubov spectrum is larger than the spin-changing collision energy. In the weak-trap regime, many spatial wavefunctions are involved, leading to more complicated spatial structures such as the devel-opment of spin domains. The behavior in the weak-trap regime more closely resembles that of homogeneous sys-tems where the Bogoliubov theory of the spin-dependent part of the full spinor Hamiltonian plays a role equally important as that of the spin-independent part, and is known to support dynamical instabilities in certain pa-rameter regimes [1]. Our theory smoothly connects the sharp-resonance regime, which requires comparatively large trapping frequencies, and the regime where dynam-ical instabilities dominate, which requires comparatively small trapping frequencies. The framework presented in this paper focuses on the mean-field limit and reproduces results obtained by solv-ing the spinor Gross–Pitaevskii equation. From a tech-nical perspective, the developed coupled-channel frame-work may enhance the efficiency of simulating higher-dimensional systems near resonances compared with full Gross–Pitaevskii simulations, since a fairly small num-ber of spatial orbitals is expected to capture the res-onant dynamics. In this work, we focused—for illus-trative purposes—on the resonant dynamics in a one-dimensional system. We found that the number of or-bitals required to reach convergence depends on sev-eral factors, including the detuning from the resonance, the relevant time scales, and the coupling strength to the resonant modes. A detailed investigation of higher-dimensional systems is an interesting direction for future 20 work. Extending our framework to include quantum fluc-tuations and quantum correlations should be fairly straightforward. Such an extension would involve de-riving equations of motion for correlation functions of the excitations order by order in terms of the second-quantized operator-equivalent of Λ(r, t ). Extensions of our framework along these lines are closely related to the Zaremba–Nikuni–Griffin formalism [49], which is useful for describing the dynamics of a condensate coupled to a thermal ensemble at finite temperature. In this con-text, our framework can be generalized to capture both single-particle–type excitations and excitations involving particle–hole correlations in the thermal bath. A natural and interesting question for future work is to investigate the robustness of the resonances against quantum and thermal fluctuations. Furthermore, this work opens broader avenues for us-ing spinor BECs as quantum simulators. For example, within the single-mode approximation, the spin dynam-ics of a spin-1 system is known to be integrable [6]. When multiple modes become involved near resonance, the in-tegrability of the spin Hamiltonian is broken, leading to chaotic dynamics [50] and enabling the exploration of richer nonequilibrium quantum physics. By carefully en-gineering the coupling between spin and spatial excita-tions, a trapped background condensate can mimic the role of a cavity in which the spin is coupled to tunable cavity modes, providing potential applications for sim-ulating various iconic spin–photon models. In addition, given the sensitivity of the spin dynamics near resonance and the scale separation of the system, the spin degrees of freedom may be used to probe quantum phenomena in spatial excitations, such as Beliaev damping induced by phonon–phonon collisions [40] or Landau damping, which arises from collisions between phonons and ther-mal atoms [51]. The current framework can also be applied to other cold-atom quantum simulators, including those based on Floquet engineering, synthetic spin–orbit coupling, or momentum-space lattices, where the pseudo-spin is en-coded in various ways and a simple frozen spatial wave-function is typically assumed [52, 53]. The framework can be directly used to verify the validity of these as-sumptions and to provide guidance on the tunability and stability of those systems.  
+
+> V. ACKNOWLEDGEMENTS
+
+W. W. and Q. G. acknowledge funding support from NSF through Grant No. PHY-2409600 and from the WSU Claire May & William Band Distinguished Pro-fessorship Award. D. B. acknowledges support by the Air Force Office of Scientific Research under Award No. FA9550-24-1-0106. 
+
+> Appendix A: Numerical details
+
+Our numerical simulations use 1D spatial grids with sizes and spacings that vary with the trap frequency to ensure convergence of the results, meaning the sim-ulations do not change further with larger and finer grids. For the angular trap frequency of ω = 2π ×
+
+196 Hz (this corresponds to ℏω = 6.668 cs) used in Figs. 1, 2, 3, 8, and 9, we use a spatial grid that contains 256 points and is 6 .114 RTF (30 μm) wide, i.e., x goes from 
+
+−(6 .114 /2) RTF to (6 .114 /2) RTF , with spin-dependent collision energy cs/h = 29 .39 Hz, spin-independent cou-pling constant gn = 47 .72 /(csRTF ), and the coupling constant ratio gn/g s = 28 .10. Figures 4, 5, and 7 use angular trapping frequencies different from the one used in Figs. 1, 2, 3, 8, and 9. For Figs. 4, 5, and 7, we set the angular trap frequency ω to the desired value and vary the spin-dependent coupling constant gs for each ω
+
+such that cs/h is equal to 29 .39 Hz (this value is always used). We then set gn via gn = 28 .10 gs. This implies that both gn and gs change while their ratio is kept fixed. The initial state ϕ0(x) is prepared via imaginary time propagation using the scalar Hamiltonian [Eq. (9)], until 
+
+τ = −it = −100 i ms (for the cs used in this work, this corresponds to −2.939 ih/c s) using the 4th-order Runge-Kutta method (we use 8273 time steps). The full initial condensate state is then created by multiplying the spa-tial wavefunction ϕ0(x) by the spinor s0(0) [see Eq. (11)]. The initial spinor s0(0) is chosen to be the mFx = +1 state, which is far from equilibrium in the spin domain for positive q and gs, as considered in this work. For the real time evolution, we employ periodic boundary condi-tions and evaluate the kinetic energy in the Hamiltonian of the SGPE via the FFT. The real time evolution of the full SGPE Hamiltonian uses the same time step as our imaginary time propagation. To calculate the amplitudes |ψ0(x, E )| shown in Fig. 2, we evolve the initial state under the full SGPE Hamilto-nian in real time until a final time of tf = 2 , 000 ms. This translates into a frequency resolution of 0 .5 Hz for the Fourier transform results shown in Fig. 2. The Fourier transform of the real-time SGPE orbitals ψmF (x, t ) uti-lizes a Hamming window [54] to mitigate artifacts, which arise from the finite time window of our simulation re-sults (the Fourier transform assumes periodicity of the time signal). The Hamming or “raised cosine” window forces the signal to smoothly approach zero at the edges of the time window, thereby removing the discontinuity at the edges and reducing the “spectral leakage” that would occur otherwise. The Hamming window has the form 
+
+w(l) = 0 .54 −0.46 cos 
+
+ 2πl Nt − 1
+
+
+
+, 0 ≤ l ≤ Nt −1 (A1) where Nt is the total number of time samples and l is the index of the time sample. The time-domain signal is mul-tiplied by the window element-wise before performing the Fourier transform, which tapers the signal at the edges 21 and widens the peaks in the Fourier spectrum while low-ering the amplitude of the spurious values between the peaks. The application of the Hamming window signifi-cantly improves the stability of the spinor wave functions in energy-space (i.e., the results are—for sufficiently large 
+
+tf —essentially independent of tf ). 
+
+[1] Y. Kawaguchi and M. Ueda, Spinor Bose–Einstein con-densates, Physics Reports 520 , 253 (2012). [2] D. M. Stamper-Kurn and M. Ueda, Spinor Bose gases: Symmetries, magnetism, and quantum dynamics, Rev. Mod. Phys. 85 , 1191 (2013). [3] S. Yi, O. E. M¨ ustecaplıo˘ glu, C. P. Sun, and L. You, Single-mode approximation in a spinor-1 atomic conden-sate, Phys. Rev. A 66 , 011601 (2002). [4] T.-L. Ho, Spinor Bose condensates in optical traps, Phys. Rev. Lett. 81 , 742 (1998). [5] C. V. Ciobanu, S.-K. Yip, and T.-L. Ho, Phase diagrams of f = 2 spinor Bose-Einstein condensates, Phys. Rev. A 
+
+61 , 033607 (2000). [6] W. Zhang, D. L. Zhou, M.-S. Chang, M. S. Chapman, and L. You, Coherent spin mixing dynamics in a spin-1 atomic condensate, Phys. Rev. A 72 , 013602 (2005). [7] F. Gerbier, A. Widera, S. F¨ olling, O. Mandel, and I. Bloch, Resonant control of spin dynamics in ultracold quantum gases by microwave dressing, Phys. Rev. A 73 ,041602 (2006). [8] L. Zhao, J. Jiang, T. Tang, M. Webb, and Y. Liu, Dy-namics in spinor condensates tuned by a microwave dress-ing field, Phys. Rev. A 89 , 023608 (2014). [9] L. E. Sadler, J. M. Higbie, S. R. Leslie, M. Vengalattore, and D. M. Stamper-Kurn, Spontaneous symmetry break-ing in a quenched ferromagnetic spinor Bose–Einstein condensate, Nature 443 , 312 (2006). [10] E. M. Bookjans, A. Vinit, and C. Raman, Quan-tum phase transition in an antiferromagnetic spinor Bose-Einstein condensate, Phys. Rev. Lett. 107 , 195306 (2011). [11] Y. Liu, S. Jung, S. E. Maxwell, L. D. Turner, E. Tiesinga, and P. D. Lett, Quantum phase transitions and contin-uous observation of spinor dynamics in an antiferromag-netic condensate, Phys. Rev. Lett. 102 , 125301 (2009). [12] P. Feldmann, C. Klempt, A. Smerzi, L. Santos, and M. Gessner, Interferometric order parameter for excited-state quantum phase transitions in Bose-Einstein con-densates, Phys. Rev. Lett. 126 , 230602 (2021). [13] H.-X. Yang, T. Tian, Y.-B. Yang, L.-Y. Qiu, H.-Y. Liang, A.-J. Chu, C. B. Da˘ g, Y. Xu, Y. Liu, and L.-M. Duan, Observation of dynamical quantum phase transitions in a spinor condensate, Phys. Rev. A 100 , 013622 (2019). [14] C. B. Da˘ g, S.-T. Wang, and L.-M. Duan, Classification of quench-dynamical behaviors in spinor condensates, Phys. Rev. A 97 , 023603 (2018). [15] L. Zhou, J. Kong, Z. Lan, and W. Zhang, Dynamical quantum phase transitions in a spinor Bose-Einstein con-densate and criticality enhanced quantum sensing, Phys. Rev. Res. 5, 013087 (2023). [16] J. O. Austin-Harris, P. Sigdel, C. Binegar, S. E. Begg, T. Bilitewski, and Y. Liu, Observation of phase memory and dynamical phase transitions in spinor gases (2025), arXiv:2511.03720 [cond-mat.quant-gas]. [17] T. Tian, H.-X. Yang, L.-Y. Qiu, H.-Y. Liang, Y.-B. Yang, Y. Xu, and L.-M. Duan, Observation of dynam-ical quantum phase transitions with correspondence in an excited state phase diagram, Phys. Rev. Lett. 124 ,043001 (2020). [18] Q. Guan, D. Blume, and R. J. Lewis-Swan, Controlling the dynamical phase diagram of a spinor Bose-Einstein condensate using time-dependent potentials, Phys. Rev. A 112 , 023306 (2025). [19] B. Evrard, A. Qu, J. Dalibard, and F. Gerbier, Observa-tion of fragmentation of a spinor Bose-Einstein conden-sate, Science 373 , 1340 (2021). [20] X.-Y. Luo, Y.-Q. Zou, L.-N. Wu, Q. Liu, M.-F. Han, M. K. Tey, and L. You, Deterministic entanglement gen-eration from driving through quantum phase transitions, Science 355 , 620 (2017). [21] T.-W. Mao, Q. Liu, X.-W. Li, J.-H. Cao, F. Chen, W.-X. Xu, M. K. Tey, Y.-X. Huang, and L. You, Quantum-enhanced sensing by echoing spin-nematic squeezing in atomic Bose–Einstein condensate, Nature Physics 19 ,1585 (2023). [22] J. P. Wrubel, A. Schwettmann, D. P. Fahey, Z. Glassman, H. K. Pechkis, P. F. Griffin, R. Barnett, E. Tiesinga, and P. D. Lett, Spinor Bose-Einstein-condensate phase-sensitive amplifier for SU(1,1) interferometry, Phys. Rev. A 98 , 023620 (2018). [23] D. Linnemann, H. Strobel, W. Muessel, J. Schulz, R. J. Lewis-Swan, K. V. Kheruntsyan, and M. K. Oberthaler, Quantum-enhanced sensing based on time reversal of nonlinear dynamics, Phys. Rev. Lett. 117 , 013001 (2016). [24] B. L¨ ucke, M. Scherer, J. Kruse, L. Pezz´ e, F. Deuret-zbacher, P. Hyllus, O. Topic, J. Peise, W. Ertmer, J. Arlt, L. Santos, A. Smerzi, and C. Klempt, Twin matter waves for interferometry beyond the classical limit, Science 334 ,773 (2011). [25] M. Gabbrielli, L. Pezz` e, and A. Smerzi, Spin-mixing in-terferometry with Bose-Einstein condensates, Phys. Rev. Lett. 115 , 163002 (2015). [26] Z. N. Hardesty-Shaw, Q. Guan, J. O. Austin, D. Blume, R. J. Lewis-Swan, and Y. Liu, Quench-induced nonequi-librium dynamics of spinor gases in a moving lattice, Phys. Rev. A 107 , 053311 (2023). [27] Z. N. Hardesty-Shaw, Q. Guan, J. O. Austin-Harris, D. Blume, R. J. Lewis-Swan, and Y. Liu, Nonlinear mul-tistate tunneling dynamics in a spinor Bose-Einstein con-densate, Phys. Rev. A 108 , 053307 (2023). [28] J. O. Austin-Harris, Z. N. Hardesty-Shaw, Q. Guan, C. Binegar, D. Blume, R. J. Lewis-Swan, and Y. Liu, Engineering dynamical phase diagrams with driven lat-tices in spinor gases, Phys. Rev. A 109 , 043309 (2024). [29] J. Stenger, S. Inouye, D. M. Stamper-Kurn, H.-J. Mies-ner, A. P. Chikkatur, and W. Ketterle, Spin domains in ground-state Bose–Einstein condensates, Nature 396 ,345 (1998). [30] K. Jim´ enez-Garc´ ıa, A. Invernizzi, B. Evrard, C. Frapolli, J. Dalibard, and F. Gerbier, Spontaneous formation and relaxation of spin domains in antiferromagnetic spin-1 condensates, Nature Communications 10 , 1422 (2019). 22 
+
+[31] S. Tojo, Y. Taguchi, Y. Masuyama, T. Hayashi, H. Saito, and T. Hirano, Controlling phase separation of binary Bose-Einstein condensates via mixed-spin-channel Fesh-bach resonance, Phys. Rev. A 82 , 033609 (2010). [32] A. Vinit, E. M. Bookjans, C. A. R. S´ a de Melo, and C. Raman, Antiferromagnetic spatial ordering in a quenched one-dimensional spinor gas, Phys. Rev. Lett. 
+
+110 , 165301 (2013). [33] J. Kim, J. Jung, J. Lee, D. Hong, and Y. Shin, Chaos-assisted turbulence in spinor Bose-Einstein condensates, Phys. Rev. Res. 6, L032030 (2024). [34] J. Lee, J. Kim, J. Jung, and Y. il Shin, Enhancement of damping in a turbulent atomic Bose-Einstein condensate (2025), arXiv:2502.07449 [cond-mat.quant-gas]. [35] M. Scherer, B. L¨ ucke, G. Gebreyesus, O. Topic, F. Deuretzbacher, W. Ertmer, L. Santos, J. J. Arlt, and C. Klempt, Spontaneous breaking of spatial and spin symmetry in spinor condensates, Phys. Rev. Lett. 105 ,135302 (2010). [36] M. Scherer, B. L¨ ucke, J. Peise, O. Topic, G. Gebreye-sus, F. Deuretzbacher, W. Ertmer, L. Santos, C. Klempt, and J. J. Arlt, Spontaneous symmetry breaking in spinor Bose-Einstein condensates, Phys. Rev. A 88 , 053624 (2013). [37] C. Klempt, O. Topic, G. Gebreyesus, M. Scherer, T. Hen-ninger, P. Hyllus, W. Ertmer, L. Santos, and J. J. Arlt, Parametric amplification of vacuum fluctuations in a spinor condensate, Phys. Rev. Lett. 104 , 195303 (2010). [38] J. Jie, S. Zhong, Q. Zhang, I. Morgenstern, H. G. Ooi, Q. Guan, A. Bhagat, D. Nematollahi, A. Schwettmann, and D. Blume, Dynamical mean-field-driven spinor-condensate physics beyond the single-mode approxima-tion, Phys. Rev. A 107 , 053309 (2023). [39] J. Jie, Q. Guan, S. Zhong, A. Schwettmann, and D. Blume, Mean-field spin-oscillation dynamics be-yond the single-mode approximation for a harmonically trapped spin-1 Bose-Einstein condensate, Phys. Rev. A 
+
+102 , 023324 (2020). [40] N. T. Phuc, Y. Kawaguchi, and M. Ueda, Beliaev theory of spinor Bose–Einstein condensates, Annals of Physics 
+
+328 , 158 (2013). [41] Y. Castin and R. Dum, Low-temperature Bose-Einstein condensates in time-dependent traps: Beyond the U (1) symmetry-breaking approach, Phys. Rev. A 57 , 3008 (1998). [42] G. Ciliberto, R. Balbinot, A. Fabbri, and N. Pavloff, Quantum backreaction in an analog black hole, Phys. Rev. A 112 , 063323 (2025). [43] S.-S. Baak, C. C. H. Ribeiro, and U. R. Fischer, Number-conserving solution for dynamical quantum backreaction in a Bose-Einstein condensate, Phys. Rev. A 106 , 053319 (2022). [44] R. Sch¨ utzhold, M. Uhlmann, Y. Xu, and U. R. Fischer, Quantum backreaction in dilute Bose-Einstein conden-sates, Phys. Rev. D 72 , 105005 (2005). [45] M. Lewenstein and L. You, Quantum phase diffusion of a Bose-Einstein condensate, Phys. Rev. Lett. 77 , 3489 (1996). [46] C. W. Gardiner, Particle-number-conserving Bogoliubov method which demonstrates the validity of the time-dependent Gross-Pitaevskii equation for a highly con-densed Bose gas, Phys. Rev. A 56 , 1414 (1997). [47] S. Knoop, T. Schuster, R. Scelle, A. Trautmann, J. App-meier, M. K. Oberthaler, E. Tiesinga, and E. Tiemann, Feshbach spectroscopy and analysis of the interaction po-tentials of ultracold sodium, Phys. Rev. A 83 , 042704 (2011). [48] A. J. Leggett, Bose-Einstein condensation in the alkali gases: Some fundamental concepts, Rev. Mod. Phys. 73 ,307 (2001). [49] E. Zaremba, T. Nikuni, and A. Griffin, Dynamics of trapped Bose gases at finite temperatures, Journal of Low Temperature Physics 116 , 277 (1999). [50] M. A. Garcia-March, S. v. Frank, M. Bonneau, J. Schmiedmayer, M. Lewenstein, and L. F. Santos, Relaxation, chaos, and thermalization in a three-mode model of a Bose–Einstein condensate, New Journal of Physics 20 , 113039 (2018). [51] G. Shchedrin, D. Jaschke, and L. D. Carr, Absence of Landau damping in driven three-component Bose– Einstein condensate in optical lattices, Scientific Reports 
+
+8, 11523 (2018). [52] I. M. Georgescu, S. Ashhab, and F. Nori, Quantum sim-ulation, Rev. Mod. Phys. 86 , 153 (2014). [53] E. Altman, K. R. Brown, G. Carleo, L. D. Carr, E. Dem-ler, C. Chin, B. DeMarco, S. E. Economou, M. A. Eriks-son, K.-M. C. Fu, M. Greiner, K. R. Hazzard, R. G. Hulet, A. J. Koll´ ar, B. L. Lev, M. D. Lukin, R. Ma, X. Mi, S. Misra, C. Monroe, K. Murch, Z. Nazario, K.-K. Ni, A. C. Potter, P. Roushan, M. Saffman, M. Schleier-Smith, I. Siddiqi, R. Simmonds, M. Singh, I. Spielman, K. Temme, D. S. Weiss, J. Vuˇ ckovi´ c, V. Vuleti´ c, J. Ye, and M. Zwierlein, Quantum simulators: Architectures and opportunities, PRX Quantum 2, 017003 (2021). [54] F. J. Harris, On the Use of Windows for Harmonic Anal-ysis with the Discrete Fourier Transform, IEEE Proceed-ings 66 , 51 (1978).

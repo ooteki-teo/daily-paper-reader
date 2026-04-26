@@ -1,0 +1,731 @@
+Title: Reevaluating Quantum Geometric Criteria for Itinerant Magnetic Instabilities
+
+URL Source: https://arxiv.org/pdf/2604.16782v1
+
+Published Time: Tue, 21 Apr 2026 00:27:16 GMT
+
+Number of Pages: 8
+
+Markdown Content:
+## Reevaluating Quantum Geometric Criteria for Itinerant Magnetic Instabilities 
+
+Min-Fong Yang ∗
+
+Department of Applied Physics, Tunghai University, Taichung 40704, Taiwan 
+
+(Dated: April 21, 2026) The interplay between quantum geometry and electron correlation has emerged as a compelling paradigm in quantum many-body physics. Recent studies have highlighted the diagnostic utility of quantum geometry in identifying magnetic instabilities within itinerant electron systems. In the present work, we critically re-examine these theoretical proposals. Using the Ginzburg–Landau framework within the Hartree–Fock mean-field approximation and accounting for multiple chan-nels of magnetic ordering, we formulate a rigorous matrix-based instability criterion in the channel representation for generic two-orbital systems. Our results demonstrate that magnetic phase tran-sitions are intricately governed by the interplay between the bare susceptibility tensor and the spin interaction matrix. Consequently, prior assertions that instabilities can be predicted solely from the quantum geometric structure of a single-channel susceptibility are valid only under complete channel decoupling in both the interaction and susceptibility matrices. By adopting the channel representation, our formulation achieves greater physical transparency and computational tractabil-ity compared to the conventional orbital-space approach, thereby furnishing a promising alternative for advancing theoretical studies of complex multiorbital systems. 
+
+I. INTRODUCTION 
+
+Quantum geometry of Bloch wave functions in momen-tum space has been recognized as a fundamental concept in condensed matter physics [1, 2]. Beyond the single-band approximation, Bloch electrons display nontriv-ial properties arising from their wave functions, thereby highlighting the relevance of quantum geometry. A rep-resentative measure is the Hilbert–Schmidt quantum dis-tance, 
+
+d2
+
+> nm
+
+(k, k + q) = 1 − |⟨ un(k)|um(k + q)⟩| 2 , (1) which quantifies the separation between two Bloch states, 
+
+|un(k)⟩ and |um(k + q)⟩, belonging to the n-th and m-th bands at momenta k and k + q, respectively. In close analogy with differential geometry, this quantum distance naturally gives rise to the definition of the quan-tum geometric tensor, whose real and imaginary parts correspond to the quantum metric and Berry curvature, respectively. These geometric quantities are deeply inter-twined with a wide range of phenomena, as evidenced by the extensive studies of quantum geometry in condensed matter physics [1–8]. Parallel to these developments, itinerant magnetism has long been a central theme in condensed matter physics, with significant theoretical efforts focused on elu-cidating its microscopic origins. Motivated by aforemen-tioned progress, recent studies have revisited the stabil-ity of ferromagnetic (FM) states from the perspective of quantum geometry [9–18]. Notably, it has been shown that a necessary condition for FM ordering in multi-band electronic systems can be formulated in terms of the quantum metric of non-interacting states [11], thereby es-tablishing a profound link between ferromagnetism and quantum geometry.  
+
+> ∗mfyang@thu.edu.tw
+
+This conclusion is based on the result that, within the random phase approximation (RPA) framework, FM or-dering in a multiband Hubbard model requires the static bare FM susceptibility χ(0) FM (q) to exhibit a peak at mo-mentum q = 0. Specifically, 
+
+χ(0) FM (q) = lim 
+
+> η→0+
+
+i
+
+Z ∞
+
+> 0
+
+dt e −ηt ⟨[S(q, t ), S (−q, 0)] ⟩0 , (2) where S(q) denotes the Fourier transform of the FM magnetization operator. At site i, the local magnetiza-tion is defined as Si = P 
+
+> σ
+
+σc † 
+
+> iσ
+
+ciσ , with σ labeling the spin index. In two dimensions, this condition for χ(0) FM (q)is mathematically equivalent to requiring the curvature tensor, Ωμν = lim  
+
+> q→0
+
+∂qμ ∂qν χ(0) FM (q) , (3) to satisfy det[Ω] > 0 and Tr[Ω] < 0. A valuable insight highlighted by Kitamura et al. in Ref. [11] is that the static bare FM susceptibility χ(0) FM (q) encodes the infor-mation of the quantum distance defined in Eq. (1). Con-sequently, the associated curvature tensor Ω μν acquires a geometric contribution originating from the quantum ge-ometry of the Bloch wave functions. Kitamura et al. fur-ther demonstrate that the component tied to the quan-tum metric typically yields a negative contribution to the curvature, thereby enhancing FM fluctuations. This implies that systems can be driven toward an FM in-stability by tuning the quantum distance and thus the corresponding quantum metric, even while keeping the energy spectrum unchanged [11–15]. Altermagnetism has recently emerged as a distinct symmetry class of collinear magnetic order, charac-terized by vanishing net magnetization together with momentum-dependent spin splitting [19–23]. (For recent reviews, see Refs. [24–26].) This unique property ren-ders altermagnets particularly attractive for future spin-tronics applications [27–29]. Extending the framework 
+
+> arXiv:2604.16782v1 [cond-mat.str-el] 18 Apr 2026
+
+2established in Ref. [11], the quantum-geometric perspec-tive on magnetic instabilities has recently been applied to altermagnetic (AM) ordering [30]. By analyzing the cur-vature tensor of the static bare AM susceptibility χ(0) AM (q)in non-interacting systems, specifically for collinear AM order defined by the operator ˜Si = P 
+
+> σ
+
+σc † 
+
+> iσ
+
+τ z ciσ , it has been concluded that a finite quantum metric intrinsically favors AM instabilities over FM ones. Here τ z represents the third Pauli matrix acting in orbital space for two-orbital models. This analytical insight is further corrob-orated by an effective relativistic model of MnTe, which confirms that AM fluctuations peak precisely in momen-tum regions where the quantum metric is large. Despite the conceptual appeal of the quantum-geometric perspectives discussed above, conclusions based solely on the behavior of bare susceptibilities in non-interacting systems are inherently incomplete. This is because, beyond the band structure (including the cor-responding wavefunctions) and the filling factor encoded in susceptibilities, interaction-induced magnetic instabil-ities depend critically on the microscopic details of the interactions. In fact, the specific form and strength of these interactions can reconfigure the hierarchy of com-peting orders, ultimately dictating the prevailing insta-bility. For example, under the repulsive on-site Hub-bard–Hund interaction [31] [see also Eq. (A9)], it has been shown that, even when the bare susceptibility peaks satisfy χ(0) AM (q = 0) > χ (0) FM (q = 0), the dominant in-stability can shift from AM to FM as Hund’s coupling increases [32, 33]. In this work, we employ Ginzburg–Landau theory to elucidate the role of quantum geometry in governing the magnetic instabilities of itinerant electron systems. This framework naturally incorporates various magnetic or-derings, facilitating a systematic investigation of their mutual competition. For simplicity, we focus on two-orbital models with on-site interactions, while noting that the extension to more general cases is straightfor-ward. To enhance physical transparency, we characterize the order parameters in terms of distinct channels for each spin component σ, defined as P 
+
+> α,β
+
+⟨c† 
+
+> iασ
+
+τ aαβ ciβσ ⟩,rather than working with the one-body reduced density matrices ⟨c† 
+
+> iασ
+
+ciβσ ⟩. Here τ a (a = 0 , x, y, z ) denote the Pauli matrices acting in orbital space, and α, β label the orbitals. In this representation, the uniform order-ing with a = 0 corresponds to the FM channel, while 
+
+a = x, y, z represent distinct AM channels. The coefficients of the Ginzburg–Landau energy func-tional are derived within the Hartree–Fock mean-field ap-proximation. From the leading quadratic terms, we find that a magnetic phase transition occurs when the min-imal eigenvalue of a stability matrix, constructed from the combination of the interaction-strength matrix and the bare magnetic susceptibility matrix, vanishes. This conclusion is fully consistent with results from multior-bital random phase approximation (RPA) analyses [32– 36] (see App. A), reflecting a fundamental equivalence between these two approaches. Our results place a stringent constraint on recent pro-posals that formulate instability criteria solely in terms of quantum geometry. Specifically, in the absence of complete channel decoupling, inferring a quantum phase transition from the geometric structure of an isolated sus-ceptibility component is theoretically unjustified. While standard on-site interactions may yield a diagonal inter-action matrix in the channel representation, channel de-coupling in the bare susceptibility matrix is not guar-anteed unless enforced by the symmetries of the non-interacting Hamiltonian. Thus, the reliability of predict-ing magnetic instabilities through the quantum geometry of an isolated channel hinges strictly on the simultaneous channel decoupling in both the interaction and suscepti-bility matrices. When this condition fails, a comprehen-sive analysis of the full stability matrix, which incorpo-rates all inter-channel mixing effects, becomes indispens-able. Furthermore, even under complete channel decoupling, the concavity of single-channel susceptibilities alone is in-sufficient to predict the ground state. Instead, the rela-tive peak magnitudes across competing channels must be assessed to identify the prevailing magnetic order. To illustrate, we analyze the two-orbital model with re-pulsive on-site Hubbard–Hund interactions discussed in Ref. [32], where both the interaction and susceptibility matrices are diagonal in the channel representation. In this setting, channel decoupling disentangles the insta-bility conditions into independent Stoner-like criteria for distinct magnetic sectors. In alignment with Ref. [32], we show that the dominant instability can shift from AM to FM as the Hund’s coupling JH is tuned. Notably, this transition occurs even when the bare AM susceptibility exceeds its FM counterpart, since the JH -driven enhance-ment of the effective FM interaction eventually outweighs the initial bias in the bare response. This result under-scores that the prevailing instability is dictated by the interplay between the bare magnetic response and the effective interaction strength, rather than relying solely on the quantum geometric features of a single channel. The remainder of this paper is organized as follows. In Sec. II, we formulate the Ginzburg–Landau energy func-tional and derive the free energy within the Hartree–Fock mean-field approximation, through which our matrix-based criterion for magnetic instabilities is established. Within this framework, we elucidate the fundamental limitations of previous criteria that rely exclusively on the quantum geometric structure of an isolated suscepti-bility channel. In Sec. III, we apply this formalism to a specific two-orbital model to investigate the competition between FM and AM instabilities, explicitly demonstrat-ing how the prevailing phase is dictated by the interplay between bare susceptibilities and interaction strengths. Finally, we conclude our paper in Sec. IV. The derivation of the interaction matrix in the channel representation is described in App. A for completeness 3 
+
+> II. FRAMEWORK OF GINZBURG-LANDAU THEORY
+
+In this section, we derive the Ginzburg–Landau free en-ergy within the Hartree–Fock mean-field approximation to investigate the onset of magnetic instabilities. Near a continuous phase transition, where the order parameters are infinitesimally small, the free energy can be systemat-ically expanded in powers of these parameters and retain only the lowest-order terms. The coefficients of leading quadratic terms are intrinsically linked to the magnetic susceptibility, which measures how strongly the system responds to an infinitesimal tendency toward magnetic ordering. To illustrate the formalism concretely, we fo-cus on a representative two-orbital model with on-site interactions. This choice ensures physical transparency while the generalization to more complex multi-orbital systems with finite-range interactions is straightforward. Assuming static collinear magnetic orderings, the local order parameters at site i are defined as 
+
+mai = X
+
+> σ
+
+σ⟨c† 
+
+> iσ
+
+τ aciσ ⟩ , (4) where τ a (a = 0 , x, y, z ) are the Pauli matrices acting in the orbital space. Within the Hartree–Fock approxima-tion, the interaction Hamiltonian becomes 
+
+Hint ≈ − X
+
+> i,a
+
+∆ai
+
+X
+
+> σ
+
+σc † 
+
+> iσ
+
+τ aciσ 
+
+!
+
++ E0 , (5) 
+
+E0 = 14
+
+X
+
+> i
+
+X
+
+> a,b
+
+[U (s)]ab mai mbi . (6) Here ∆ ai = (1 /2) P 
+
+> b
+
+[U (s)]ab mbi represents the effective field associated with the a-th magnetic channel, and [U (s)]ab is the spin interaction matrix that couples chan-nels a and b (refer to App. A for the explicit form of this matrix). Upon diagonalizing the resulting quadratic mean-field Hamiltonian, we obtain the energy spectrum 
+
+Eα,σ . The free energy is then given by 
+
+F = E0 − T X
+
+> α,σ
+
+ln  1 + e−βE α,σ  ≡ E0 + ˜F . (7) In the vicinity of the phase transition, where the order parameters are infinitesimally small ( mai ≃ 0 and thus ∆ai ≃ 0), the Ginzburg–Landau free energy functional can be systematically constructed by expanding F in a power series of mai . Utilizing the thermodynamic identity 
+
+∂ ˜F∂∆ai
+
+= − X
+
+> σ
+
+σ⟨c† 
+
+> iσ
+
+τ aciσ ⟩ = −mai , (8) we establish the link between the free energy and the order parameters. Within the paramagnetic phase, linear response theory gives that the induced order parameter 
+
+mai is proportional to the effective field ∆ bj via the non-interacting (bare) susceptibility 
+
+mai ≃ 2 X
+
+> j,b
+
+[χ(0) ]ab i,j ∆bj . (9) Consistent with this linear relationship, the bare sus-ceptibility [ χ(0) ]ab i,j of the non-interacting Hamiltonian is defined by the second-order variation of the free energy evaluated at ∆ ai = 0, [χ(0) ]ab i,j = − 12
+
+∂2 ˜F∂∆ai ∂∆bj
+
+. (10) Therefore, up to quadratic order in mai , the Ginzburg-Landau free energy reads 
+
+F ≃ 14
+
+X
+
+> i,j
+
+[U (s)]cb mbi
+
+
+
+δa,c δi,j − [χ(0) ]cd i,j [U (s)]da 
+
+
+
+maj
+
+= 14
+
+X
+
+> q
+
+[U (s)]cb mb
+
+> −q
+
+
+
+I − χ(0) (q) U (s) 
+
+> ca
+
+ma 
+
+> q
+
+. (11) Here the summation convention for channel indices is assumed. In deriving the final expression, translational symmetry of the non-interacting system is invoked, with 
+
+ma 
+
+> q
+
+defined as the Fourier transform of mai .According to the Ginzburg-Landau theory, a phase transition occurs when the determinant of the second-order coefficient matrix vanishes. From Eq. (11), it is evident that magnetic instability arises when the min-imal eigenvalue of the 4 × 4 stability matrix, M(q) = 
+
+I−χ(0) (q) U (s), becomes zero. This criterion is consistent with results obtained from the multiorbital random phase approximation (RPA) [32–36]. It demonstrates that the onset of instabilities is generally governed in a nontrivial manner by both the interaction strengths and the matrix elements of the bare susceptibility. A simplification arises only when both the interaction matrix U (s) and the bare susceptibility matrix χ(0) (q) become diagonal. In such a case, the instability condition reduces to the Stoner form, 1 − [χ(0) (q)] aa [U (s)]aa = 0 (no sum on a), for a given channel a. In this situation, a peak of [ χ(0) (q)] aa at the ordering momentum can signal instability if its product with [ U (s)]aa is indeed the largest value among all chan-nels. However, when the matrices cannot be reduced to diagonal forms, it becomes theoretically untenable to in-fer instability directly from the behavior (and thus the quantum geometric structure) of [ χ(0) (q)] aa . Under such circumstances, a comprehensive analysis of the whole sta-bility matrix M(q), which incorporates all inter-channel mixing effects, becomes indispensable. In certain interaction Hamiltonians widely adopted in the literature, the interaction matrices [ U (s)]ab are di-agonal within the channel representation, despite their non-diagonal form in the original orbital basis. This underscores that, beyond offering physical transparency, the channel representation facilitates representational conciseness. A concrete example is the on-site Hub-bard–Hund interaction [31], where the interaction matrix 4[U(s)]ab indeed adopts a diagonal form when expressed in the channel representation (see App. A for the explicit derivation). Nevertheless, the diagonal nature of the in-teraction matrix per se is insufficient to justify a single-channel analysis. To rigorously employ the quantum ge-ometric structure of a single component [ χ(0) (q)] aa as a criterion for quantum phase transitions, complete chan-nel decoupling within the bare susceptibility matrix is strictly requisite. Such decoupling is not a generic feature but is fundamentally dictated by the specific symmetries of the non-interacting Hamiltonian. We emphasize that, even with complete channel de-coupling, the concavity of a single-channel susceptibility is insufficient to uniquely determine the ground state. To illustrate this point, in the following section we ana-lyze the two-orbital model investigated in Ref. [32], where both the interaction and susceptibility matrices are diag-onal within the channel representation. Consistent with Ref. [32], we show that the dominant magnetic instability arises from the combined influence of bare susceptibilities and effective interaction strengths, rather than being dic-tated solely by single-channel susceptibility behavior.  
+
+> III. COMPETITION BETWEEN FM AND AM INSTABILITIES
+
+In the following, we examine the two-orbital model with the Hamiltonian given by 
+
+H0(k) = [ ε0(k) − μ] τ 0 + εx(k) τ x + εz (k) τ z , (12) where μ is the chemical potential and τ 0,x,z are the iden-tity and Pauli matrices acting in the orbital space. The corresponding energy eigenvalues are given by 
+
+E±(k) = ε0(k) ± pε2
+
+> x
+
+(k) + ε2 
+
+> z
+
+(k) − μ (13) with the associated eigenstates parameterized by a mix-ing angle θk,
+
+|u+(k)⟩ =
+
+cos θk
+
+> 2
+
+sin θk
+
+> 2
+
+
+
+, |u−(k)⟩ =
+
+− sin θk
+
+> 2
+
+cos θk
+
+> 2
+
+
+
+.
+
+The angle θk is uniquely determined by the relations, sin θk = εx(k)
+
+pε2
+
+> x
+
+(k) + ε2 
+
+> z
+
+(k) , cos θk = εz (k)
+
+pε2
+
+> x
+
+(k) + ε2 
+
+> z
+
+(k) .
+
+In the band basis, the static bare susceptibility matrix among channels reads [χ(0) (q)] ab = − X
+
+> k
+
+X
+
+> n,n ′=±
+
+⟨un(k)|τ a|un′ (k + q)⟩× ⟨ un′ (k + q)|τ b|un(k)⟩ f [En(k)] − f [En′ (k + q)] 
+
+En(k) − En′ (k + q) .
+
+(14) Following the insights of Refs. [11–15], each diagonal ele-ment of the susceptibility matrix [ χ(0) (q)] aa encodes in-formation regarding a “generalized” quantum distance [cf. Eq. (1) ]: ˜d2
+
+> nm
+
+(k, k + q) = 1 − |⟨ ˜un(k)|um(k + q)⟩| 2 , (15) where |˜un(k)⟩ ≡ exp( i π 
+
+> 2
+
+τ a)|un(k)⟩ denotes a transformed (“twisted”) Bloch state. This measure quantifies the geometric separation between the states |˜un(k)⟩ and 
+
+|um(k + q)⟩. Consequently, the associated curvature tensor Ω μν incorporates a geometric contribution arising from the quantum geometry of the Bloch wavefunctions under the operation of the generator τ a. Notably, this quantum-geometric perspective is generally restricted to the diagonal elements and does not readily extend to the off-diagonal components of the susceptibility matrix. The applicability of quantum geometry is therefore con-strained to specific systems where inter-channel fluctu-ations are decoupled. In more generic settings, how-ever, the intricate interplay among channels obscures any straightforward geometric interpretation. Furthermore, even in the case of complete channel de-coupling, the true instability cannot be reliably inferred solely from the susceptibility of a single channel. This sit-uation can happen if competing instabilities arise across different sectors, and thus a comparative analysis of all relevant channels becomes necessary. To illustrate this point, we adopt the model discussed in Ref. [32] to investigate the specific competition be-tween FM and AM instabilities. From Eq. (14), the static bare susceptibility matrix [ χ(0) (0)] ab at momen-tum q = 0 becomes [χ(0) (0)] ab = − X
+
+> k
+
+X
+
+> n=±
+
+⟨un(k)|τ a|un(k)⟩⟨ un(k)|τ b|un(k)⟩ f ′[En(k)] 
+
+− X
+
+> k
+
+X 
+
+> n,n ′=±
+> n′̸=n
+
+⟨un(k)|τ a|un′ (k)⟩⟨ un′ (k)|τ b|un(k)⟩ f [En(k)] − f [En′ (k)] 
+
+En(k) − En′ (k) . (16) The first term represents the intraband contribution aris- ing from states near the Fermi surface, while the second 5term accounts for the interband contribution involving transitions between different bands. For the model employed in Ref. [32], the dispersion components εa(k) in Eq. (12) are given by 
+
+ε0(k) = −2t0[cos( kx) + cos( ky )] − 2t1[cos(2 kx) + cos(2 ky )] 
+
+εx(k) = 4 t2 sin( kx) sin( ky )
+
+εz (k) = 2 t′
+
+> 0
+
+[cos( kx) − cos( ky )] + 2 t′
+
+> 1
+
+[cos(2 kx) − cos(2 ky )] .
+
+Here {t0, t 1} and {t′
+
+> 0
+
+, t ′
+
+> 1
+
+, t 2} represent the orbital-independent and orbital-dependent hopping parameters, respectively. Based on these expressions, we observe that sin θk transforms as an odd function under reflec-tion across either the x or y axis (i.e., kx → − kx or 
+
+ky → − ky ). In contrast, cos θk is antisymmetric under reflection across the diagonal line y = x (i.e., kx ↔ ky ). By evaluating the matrix elements ⟨un′ (k)|τ a|un(k)⟩ and performing the summation over the Brillouin zone, we find that the static bare susceptibility matrix in the chan-nel representation exhibits a diagonal form: [χ(0) (0)] ab =
+
+
+
+χ(0) 00 0 0 00 χ(0)  
+
+> xx
+
+0 00 0 χ(0)  
+
+> yy
+
+00 0 0 χ(0) 
+
+> zz
+
+ . (17) Here the vanishing of all off-diagonal elements during the momentum-space integration is fundamentally at-tributed to the symmetry properties of sin θk and cos θk.Consequently, the fluctuations of distinct channels de-couple for the model under consideration. The explicit expressions for the diagonal elements, representing FM, 
+
+τ x-type AM, τ y -type AM, and τ z -type AM fluctuations, respectively, are given by 
+
+χ(0) 00 = − X
+
+> k
+
+X
+
+> n=±
+
+f ′[En(k)] , (18) 
+
+χ(0)  
+
+> xx
+
+= χ(0) 00 − X
+
+> k
+
+cos 2 θk
+
+(
+
+2 f [E+(k)] − f [E−(k)] 
+
+E+(k) − E−(k)
+
+− X
+
+> n=±
+
+f ′[En(k)] 
+
+)
+
+, (19) 
+
+χ(0)  
+
+> yy
+
+= −2 X
+
+> k
+
+f [E+(k)] − f [E−(k)] 
+
+E+(k) − E−(k) , (20) 
+
+χ(0)  
+
+> zz
+
+= χ(0) 00 − X
+
+> k
+
+sin 2 θk
+
+(
+
+2 f [E+(k)] − f [E−(k)] 
+
+E+(k) − E−(k)
+
+− X
+
+> n=±
+
+f ′[En(k)] 
+
+)
+
+. (21) We note that the expressions for χ(0) 00 and χ(0)  
+
+> zz
+
+coincide with those derived in Sec. III of Ref. [37]. In contrast to the purely intraband FM channel χ(0) 00 ,the AM susceptibilities χ(0)  
+
+> xx
+
+and χ(0)  
+
+> zz
+
+comprise both in-traband and interband contributions. The competition between these two processes determines the leading insta-bility: altermagnetism is stabilized when the interband contribution predominates, whereas ferromagnetism pre-vails if the intraband term is dominant. Notably, for the 
+
+τ z -type AM instability, a non-vanishing εx(k) term in Eq. (12) (implying sin 2 θk > 0) is indispensable; oth-erwise, the FM and τ z -type AM instabilities become degenerate. Similarly, the realization of the τ x-type AM instability necessitates a finite εz (k) term (imply-ing cos 2 θk > 0) to lift the degeneracy between the FM and τ x-type AM sectors. Under the on-site Hubbard–Hund interaction [31], the interaction matrix becomes diagonal in the channel in-dices, as shown in App. A. From the results established in Sec. II, the criteria for magnetic instabilities in each channel are respectively determined by 12 (U + JH ) χ(0) 00 = 1 ,
+
+12 (U − JH ) χ(0)  
+
+> xx
+
+= 1 ,
+
+12 (V − J′) χ(0)  
+
+> yy
+
+= 1 ,
+
+12 (U − JH ) χ(0)  
+
+> zz
+
+= 1 .
+
+Here U denotes the intra-orbital Hubbard repulsion, V
+
+the inter-orbital density interaction, JH the Hund’s ex-change coupling, and J′ the pair-hopping term. Based on these conditions, it is evident that increasing the Hund’s coupling JH can drive a transition from an AM-type in-stability to an FM-type one. This occurs because a larger 
+
+JH simultaneously enhances the effective interaction in the FM channel while suppressing it in the AM chan-nels. Consequently, the FM instability can prevail even in regimes where the bare AM susceptibilities ( χ(0)  
+
+> xx
+
+or 
+
+χ(0)  
+
+> zz
+
+) exceed the FM one ( χ(0) 00 ). This conclusion is in ex-cellent agreement with the findings reported in Ref. [32]. This case clearly demonstrates that, rather than re-lying solely on the behavior (such as the concavity) of single-channel susceptibilities, one must account for the quantitative interplay between their peak magnitudes and the explicit structure of the interaction matrix. It is this combined effect of bare response and interaction strength that ultimately dictates the dominant instabil-ity among competing channels.  
+
+> IV. CONCLUSIONS
+
+In this work, we provide a critical re-evaluation of re-cent theoretical proposals that invoke quantum geom-etry to predict magnetic instabilities in itinerant elec-tron systems. Previous investigations have suggested that, through its intrinsic connection to the concavity of single-channel bare susceptibilities, the quantum met-ric of non-interacting states can elucidate the emergence of either FM or AM instabilities. However, we point 6out that such a geometric perspective is fundamentally incomplete. Its validity is strictly contingent upon the decoupling of channels in both electron interactions and fluctuations, a condition that is not always satisfied in generic multi-band systems. To systematically substantiate this claim, we con-struct a rigorous matrix-based criterion for magnetic in-stabilities, derived from a Ginzburg-Landau functional within the Hartree-Fock mean-field approximation for a generic two-orbital system. Specifically, a magnetic phase transition out of the paramagnetic state occurs when the minimum eigenvalue of the stability matrix, 
+
+M(q) = I − χ(0) (q) U (s), vanishes. This matrix incorpo-rates the interplay between the bare susceptibility ten-sor χ(0) (q) and the spin interaction matrix U (s), demon-strating that instabilities are governed by the coupled dynamics of multiple channels in a non-trivial manner. Consequently, analyzing quantum phase transitions via a single-channel susceptibility component (and its quan-tum geometric structure) is valid only if the interaction matrix and the bare susceptibility matrix are both diag-onal in the channel representation. We note that our established criterion for magnetic instabilities is consistent with results obtained via the standard multiorbital RPA formalism [34–36]. Neverthe-less, our derivation shows that the channel representa-tion offers a more physically transparent and computa-tionally convenient framework for analyzing multiorbital systems than the conventional orbital-space approach. This methodological observation provides a valuable al-ternative for future theoretical investigations into com-plex multiorbital materials. 
+
+ACKNOWLEDGMENTS 
+
+The author would like to thank Yu-Wen Lee for en-lightening discussions. This research was supported by Grant No. NSTC 114-2112-M-029-001 and NSTC 114-2112-M-029-006 of the National Science and Technology Council of Taiwan. 
+
+Appendix A: interaction matrices in channel representation 
+
+In the following discussions, we restrict our attention to on-site interactions within a two-orbital model. For notational conciseness, we suppress the site dependence of all physical quantities and omit the summations over site indices. Assuming collinear order, the Hartree-Fock mean-field decoupling leads to 
+
+Hint ≈ ⟨ c†
+
+> l1↑
+
+cl2↑⟩ [ ¯U↑↑ ]l1l2 
+
+> l3l4
+
+c†
+
+> l3↑
+
+cl4↑
+
++ ⟨c†
+
+> l1↑
+
+cl2↑⟩ [ ¯U↑↓ ]l1l2 
+
+> l3l4
+
+c†
+
+> l3↓
+
+cl4↓
+
++ ⟨c†
+
+> l1↓
+
+cl2↓⟩ [ ¯U↑↓ ]l1l2 
+
+> l3l4
+
+c†
+
+> l3↑
+
+cl4↑
+
++ ⟨c†
+
+> l1↓
+
+cl2↓⟩ [ ¯U↑↑ ]l1l2 
+
+> l3l4
+
+c†
+
+> l3↓
+
+cl4↓ . (A1) Here spin-inversion symmetry in Hint is assumed and the summation convention is adopted throughout. Hence-forth, symbols for the interaction and susceptibility ma-trices equipped with a bar (e.g., ¯U , ¯ χ(0) ) denote quanti-ties expressed in the orbital representation. Conversely, their unbarred counterparts represent the corresponding quantities defined within the channel representation. Define the particle–hole operators in the charge and spin sectors as nl1l2 = c†
+
+> l1↑
+
+cl2↑ + c†
+
+> l1↓
+
+cl2↓ and ml1l2 =
+
+c†
+
+> l1↑
+
+cl2↑ − c†
+
+> l1↓
+
+cl2↓, the mean-field interaction Hamiltonian thus becomes 
+
+HMF int = 12 ⟨nl1l2 ⟩ [ ¯U (c)]l1l2 
+
+> l3l4
+
+nl3l4 − 12 ⟨ml1l2 ⟩ [ ¯U (s)]l1l2 
+
+> l3l4
+
+ml3l4 .
+
+(A2) Here ¯U (c) = ¯U↑↓ + ¯U↑↑ and ¯U (s) = ¯U↑↓ − ¯U↑↑ represent the charge and the spin interaction matrices, respectively. To make the physical meaning more transparent, the particle–hole operators with orbital indices can be trans-formed into those for distinct channels, na = [ τ a]l1l2 nl1l2
+
+and ma = [ τ a]l1l2 ml1l2 , where τ a with a = 0 , x, y, z de-note the Pauli matrices acting in the orbital space. No-tice that the Pauli matrices satisfy a completeness rela-tion (also known as the Fierz identity [38]), which can be expressed using their Hermitian property: 12
+
+X
+
+> a
+
+[τ a]l1l2 [τ a]∗ 
+
+> l4l3
+
+= δl1l4 δl2l3 , (A3) where [ τ a]∗ denotes the complex conjugate of the Pauli matrix. By inserting this identity into Eq. (A2) on both the left- and right-hand sides of [ ¯U (c),(s)]l1l2 
+
+> l3l4
+
+, the mean-field interaction Hamiltonian can be rewritten as 
+
+HMF int = 12 ⟨na ⟩[U (c)]ab nb − 12 ⟨ma ⟩[U (s)]ab mb , (A4) where the transformed interaction matrices in the chan-nel representation are given by [U (c),(s)]ab = 14 [τ a]∗ 
+
+> l1l2
+
+[ ¯U (c),(s)]l1l2 
+
+> l3l4
+
+[τ b]∗ 
+
+> l3l4
+
+. (A5) Interestingly, the same conclusion can be reached within the matrix RPA framework. The bare suscep-tibility matrix [ χ(0) (q)] ab in the channel representation is defined as [χ(0) (q)] ab = [ τ a]l1l2 [τ b]l3l4 [χ(0) (q)] l1l2 
+
+> l3l4
+
+, (A6) 7where [ χ(0) (q)] l1l2 
+
+> l3l4
+
+is the bare susceptibility matrix in the orbital space. By inserting the identity of Eq. (A3) be-tween the matrices [ χ(0) (q)] l1l2 
+
+> l3l4
+
+and [ ¯U (s)]l1l2 
+
+> l3l4
+
+in each term of the matrix RPA perturbation series [34–36], 
+
+χRPA spin (q) = [ I − χ(0) (q) ¯U (s)]−1 χ(0) (q)= χ(0) (q) + χ(0) (q) ¯U (s) χ(0) (q) + · · · , (A7) the RPA susceptibility in terms of [ χ(0) (q)] ab can be ex-pressed as 
+
+χRPA spin (q) = χ(0) (q) + χ(0) (q) U (s) χ(0) (q) + · · · 
+
+= [ I − χ(0) (q) U (s)]−1 χ(0) (q) . (A8) Here the corresponding 4 × 4 spin interaction matrices [U (s)]ab in the channel representation is again given by Eq. (A5). In general, the interaction matrices in the orbital space are not diagonal, whereas their channel representation can be. The analysis can thus be simplified by work-ing with [U (c),(s)]ab , rather than the original orbital form. This occurs for the on-site Hubbard–Hund inter-action [31], 
+
+Hint = U X
+
+> i,l =x,y
+
+ni,l, ↑ni,l, ↓ + V X
+
+> i
+
+X
+
+> s,s ′
+
+ni,x,s ni,y,s ′
+
++ JH
+
+X
+
+> i
+
+X
+
+> s,s ′
+
+c†
+
+> i,x,s
+
+c† 
+
+> i,y,s ′
+
+ci,x,s ′ ci,y,s 
+
++ J′ X
+
+> i
+
+c†
+
+> i,x, ↑
+
+c†
+
+> i,x, ↓
+
+ci,y, ↓ci,y, ↑ + h.c. . (A9) Here U denotes the intra-orbital Hubbard repulsion, V
+
+the inter-orbital density interaction, JH the Hund’s ex-change coupling, and J′ the pair-hopping term. The cor-responding spin interaction matrix with indices ( l1l2) = (xx, yy, xy, yx ) reads [32, 33] [U (s)]l1l2 
+
+> l3l4
+
+=
+
+
+
+U JH 0 0
+
+JH U 0 00 0 J′ V
+
+0 0 V J′
+
+ . (A10) By using Eq. (A5), we find that the corresponding chan-nel representation becomes diagonal, [ U (s)]ab = ga δa,b 
+
+with the diagonal matrix elements ga for distinct chan-nels read (g0, g x, g y , g z ) = 
+
+ U + JH
+
+2 , V + J′
+
+2 , V − J′
+
+2 , U − JH
+
+2
+
+
+
+.
+
+For systems respecting rotation symmetry, the interac-tion parameters are constrained by the identity U =
+
+V + J′ + JH . In this case, we have gx = gz = U − JH .
+
+[1] R. Resta, Macroscopic polarization in crystalline di-electrics: The geometric phase approach, Rev. Mod. Phys. 66 , 899 (1994). [2] D. Xiao, M.-C. Chang, and Q. Niu, Berry phase effects on electronic properties, Rev. Mod. Phys. 82 , 1959 (2010). [3] E. Rossi, Quantum metric and correlated states in two-dimensional systems, Curr. Opin. Solid State Mater. Sci. 
+
+25 , 100952 (2021). [4] P. T¨ orm¨ a, S. Peotta, and B. A. Bernevig, Superconduc-tivity, superfluidity and quantum geometry in twisted multilayer systems, Nat. Rev. Phys. 4, 528 (2022). [5] P. T¨ orm¨ a, Essay: where can quantum geometry lead us?, Phys. Rev. Lett. 131 , 240001 (2023). [6] T. Liu, X.-B. Qiang, H.-Z. Lu, and X. C. Xie, Quan-tum geometry in condensed matter, Natl. Sci. Rev. 12 ,nwae334 (2025). [7] J. Yu, B. A. Bernevig, R. Queiroz, E. Rossi, P. T¨ orm¨ a, and B.-J. Yang, Quantum geometry in quantum materi-als, arXiv:2501.00098. [8] A. Gao, N. Nagaosa, N. Ni, and S.-Y. Xu, Quan-tum geometry phenomena in condensed matter systems, arXiv:2508.00469. [9] F. Wu and S. Das Sarma, Quantum geometry and stabil-ity of moir´ e flatband ferromagnetism, Phys. Rev. B 102 ,165118 (2020). [10] J. Kang, T. Oh, J. Lee, and B.-J. Yang, Quantum geometric bound for saturated ferromagnetism (2024), arXiv:2402.07171. [11] T. Kitamura, A. Daido, and Y. Yanase, Spin-triplet superconductivity from quantum-geometry-induced fer-romagnetic fluctuation, Phys. Rev. Lett. 132 , 036001 (2024). [12] T. Kitamura, H. Nakai, A. Daido, and Y. Yanase, Quan-tum geometric ferromagnetism by singular saddle point, arXiv:2505.01089. [13] K. Kudo and Y. Yanase, Odd-parity magnetism by quan-tum geometry, arXiv:2505.20907. [14] C.-g. Oh, T. Kitamura, A. Daido, J.-W. Rhim, and Y. Yanase, Magnetic phase transitions driven by quantum geometry, arXiv:2509.13618. [15] M. Shimizu, C.-g. Oh, and Y. Yanase, Magnetic fluctua-tions driven by quantum geometry, arXiv:2602.14511. [16] H. Hu, O. Vafek, K. Haule, and B. A. Bernevig, Ferro-magnetism vs. antiferromagnetism in narrow-band sys-tems: competition between quantum geometry and band dispersion, arXiv:2509.03575. [17] J. K. Ding and M. Claassen, Quantum-geometry-driven Mott transitions and magnetism, arXiv:2602.22548. [18] T. Kitamura, H. Nakai, H. Katsura, and R. Arita, Quantum-geometry-driven exact ferromagnetic ground 8
+
+state in a nearly flat band, arXiv:2603.01922. [19] S. Hayami, Y. Yanagi, and H. Kusunose, Momentum-dependent spin splitting by collinear antiferromagnetic ordering, J. Phys. Soc. Jpn. 88 , 123702 (2019). [20] L.-D. Yuan, Z. Wang, J.-W. Luo, E. I. Rashba, and A. Zunger, Giant momentum-dependent spin splitting in centrosymmetric low-Z antiferromagnets, Phys. Rev. B 
+
+102 , 014422 (2020). [21] I. I. Mazin, K. Koepernik, M. D. Johannes, R. Gonz´ alez-Hern´ andez, and L. ˇSmejkal, Preduction of unconven-tional magnetism in doped FeSb 2, Proc. Natl. Acad. Sci. U.S.A. 118 , e2108924118 (2021). [22] L. ˇSmejkal, J. Sinova, and T. Jungwirth, Beyond conven-tional ferromagnetism and antiferromagnetism: a phase with nonrelativistic spin and crystal rotation symmetry, Phys. Rev. X 12 , 031042 (2022). [23] L. ˇSmejkal, J. Sinova, and T. Jungwirth, Emerging Re-search Landscape of Altermagnetism, Phys. Rev. X 12 ,040501 (2022). [24] C. Song, H. Bai, Z. Zhou, L. Han, H. Reichlova, J. H. Dil, J. Liu, X. Chen, and F. Han, Altermagnets as a new class of functional materials, Nat. Rev. Mater. 10 , 473 (2025). [25] T. Jungwirth, R. M. Fernandes, E. Fradkin, A. H. Mac-Donald, J. Sinova, and L. ˇSmejkal, Altermagnetism: an unconventional spin-ordered phase of matter, Newton 1,100162 (2025). [26] T. Jungwirth, J. Sinova, R. M. Fernandes, Q. Liu, H. Watanabe, S. Murakami, S. Nakatsuji, and L. ˇSmejkal, Symmetry, microscopy and spectroscopy signatures of al-termagnetism, arXiv:2506.22860. [27] L. Bai, W. Feng, S. Liu, L. ˇSmejkal, Y. Mokrousov, and Y. Yao, Altermagnetism: exploring new frontiers in mag-netism and spintronics, Adv. Func. Mater. 34 , 2409327 (2024). [28] Z. Guo, X. Wang, W. Wang, G. Zhang, X. Zhou, and Z. Cheng, Spin-polarized antiferromagnets for spintronics, Adv. Mater. 37 , 2505779 (2025). [29] T. Jungwirth, J. Sinova, P. Wadley, D. Kriegner, H. Re-ichlov´ a, F. Krizek, H. Ohno, and L. ˇSmejkal, Altermag-netic spintronics, arXiv:2508.09748. [30] N. Heinsdorf, Altermagnetic instabilities from quantum geometry, Phys. Rev. B 111 , 174407 (2025). Notice that the expressions given in Eqs. (6) and (7) therein are not correct. [31] J. Kanamori, Electron correlation and ferromagnetism of transition metals, Progress of Theoretical Physics 30 ,275 (1963). [32] C. Lu, C. Cao, H. Yuan, P. Coleman, and L.-H. Hu, Breakdown of Stoner ferromagnetism by intrinsic alter-magnetism, arXiv:2510.00614. [33] C. Lu and L.-H. Hu, Van Hove singularity-induced multiple magnetic transitions in multi-orbital systems, arXiv:2602.00698. [34] K. Kubo, Pairing symmetry in a two-orbital Hubbard model on a square lattice, Phys. Rev. B 75 , 224509 (2007). [35] S. Graser, T. A. Maier, P. J. Hirschfeld, and D. J. Scalapino, Near-degeneracy of several pairing channels in multiorbital models for the Fe pnictides, New J. Phys. 
+
+11 , 025016 (2009). [36] M. Altmeyer, D. Guterding, P. J. Hirschfeld, T. A. Maier, R. Valent´ ı, and D. J. Scalapino, Role of vertex corrections in the matrix formulation of the random phase approxi-mation for the multiorbital Hubbard model, Phys. Rev. B 94 , 214515 (2016). [37] M. Roig, A. Kreisel, Y. Yu, B. M. Andersen, and D. F. Agterberg, Minimal models for altermagnetism, Phys. Rev. B 110 , 144412 (2024). [38] L. B. Okun, Leptons and Quarks (North-Holland, New York, 1982), appendix, 29.2.4, pp. 312.

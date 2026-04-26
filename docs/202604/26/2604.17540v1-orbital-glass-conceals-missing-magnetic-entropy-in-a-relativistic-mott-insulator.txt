@@ -1,0 +1,508 @@
+Title: Orbital glass conceals missing magnetic entropy in a relativistic Mott insulator
+
+URL Source: https://arxiv.org/pdf/2604.17540v1
+
+Published Time: Tue, 21 Apr 2026 01:44:38 GMT
+
+Number of Pages: 12
+
+Markdown Content:
+# Orbital glass conceals missing magnetic entropy in a relativistic Mott insulator 
+
+Ilija K. Nikolov, 1 Rong Cong, 1, ∗ Adrien Rosuel, 1 Stephen Carr, 1, 2 Ian R. Fisher, 3, 4 Dmitri E. Feldman, 1, 2 Adrian Del Maestro, 5, 6 Chandrasekhar Ramanathan, 7 and Vesna F. Mitrovi´ c1, †
+
+> 1
+
+Department of Physics, Brown University, Providence, Rhode Island 02912-1843, USA 
+
+> 2
+
+Brown Theoretical Physics Center, Brown University, Providence, Rhode Island 02912-1843, USA. 
+
+> 3
+
+Department of Applied Physics and Geballe Laboratory for Advanced Materials, Stanford University, Stanford, California 94305, USA. 
+
+> 4
+
+Stanford Institute for Materials and Energy Sciences, SLAC National Accelerator Laboratory, 2575 Sand Hill Road, Menlo Park, California 94025, USA 
+
+> 5
+
+Department of Physics and Astronomy, University of Tennessee, Knoxville, TN 37996, USA 
+
+> 6
+
+Min H. Kao Department of Electrical Engineering and Computer Science, University of Tennessee, Knoxville, TN 37996, USA 
+
+> 7
+
+Department of Physics and Astronomy, Dartmouth College, Hanover, NH 03755, USA 
+
+Coupling between different degrees of freedom (DOF) in an electronic material leads to exotic phases of matter characterized by complex and competing order parameters as well as emergent excitations. Building a microscopic understanding of these order parameters and their mutual relationship is hindered by the fact that different orders often mask each others’ response to conventional experimental probes. Here, we reveal how to disentangle responses from distinct orders that arise from the coupling between the spin and orbital DOF. Our method uses a phase sensitive technique that measures ground state properties by independently resolving interactions of different symme-tries. This allows us to directly detect an orbital glass state caused by competing interactions in the 5d1 relativistic Mott insulator Ba 2NaOsO 6. We observe short-range orbital order up to 380 K and a dramatic increase of orbital dispersion near the mag-netic phase transition. This orbital dispersion generates a directional ordering, i.e., it forms an orbital nematic state which breaks the rotational symmetry of the crystal. We establish that the orbital nematic state induces the magnetic ordering. The pres-ence of this short-range orbital order well above the magnetic phase transition solves the long-standing puzzle of missing entropy in this material. 
+
+Quantum materials can have complex electronic Hamiltonians with multiple unknown terms leading to different emergent phases of matter, each potentially characterized by an order parameter and its topology [1– 16]. A prime example of such complexity arises in strongly-correlated electron systems with strong spin-orbit coupling (SOC) [3, 10, 17–20]. While the single-particle picture along with perturbative corrections pro-vides an unexpectedly useful classification of correla-tion physics of many phenomena, e.g., nuclear struc-ture [21–23], it fails in the presence of strongly in-teracting electrons and SOC whose complex interplay induces non-trivial states of matter. Their descrip-tion remains a grand challenge of condensed matter physics [3, 10, 24, 25]. The emergent phases include quantum spin liquids [10, 26, 27], cooperative Jahn-Teller effects [10], multipolar orderings [28, 29], correlated topo-logical semi-metals [29], and topological superconductiv-ity [12, 25]. Most experimental probes are sensitive to only a single aspect of an emergent phase, i.e., a local order parameter [30–34] that couples to the applied field or quasi-particles used for the measurement. As such, it can be difficult to discern which of the potentially com-  
+
+> ∗current affiliation National High Magnetic Field Laboratory, Tal-lahassee, Florida & equal contribution with the first author
+> †corresponding author: vemi@brown.edu
+
+peting interactions drives an observed phase transition, as well as their mutual relationships [20, 35–39]. Con-sequently, important (hidden) order parameters and/or interactions can remain elusive [32, 40–43]. Such hid-den subdominant orders or interactions often manifest through the appearance of a so-called missing entropy in thermodynamic measurements [4, 20, 38, 40, 44–56]. A canonical example includes missing entropy problems arising in frustrated magnetic systems [1, 45, 57–59]. Here, we detect an orbital glass phase that evolves into an orbital nematic state on lowering temperature and solves the outstanding missing entropy problem in a Mott insulator with strong SOC, Ba 2NaOsO 6 (BNOO) [60, 64]. This nematic order drives unconventional magnetism in this supposedly nonmagnetic compound. The discov-ery of the novel orbital phases was achieved by directly identifying the distribution of an orbital order param-eter defined by spatial variations of orbital distortions. The orbital glass ground state is characterized by a spa-tially distributed orbital order parameter whose average value is zero. Even though, this short-range orbital glass [36, 65–67] persists up to at least 380 K, its zero mean-value explains why all previous experiments have failed to observe it [60, 64, 68–70] (Fig. 1a). Specifically, we identify the orbital order, and its associated crystal dis-tortions that generate finite local electrical field gradient (EFG) by way of the quadrupolar interaction between EFG and 23 Na nuclear spin, I2 
+
+> z
+
+(see Methods). We find 
+
+> arXiv:2604.17540v1 [cond-mat.str-el] 19 Apr 2026
+
+210 0 10 2 10 4Echo area  (a.u.) 
+
+2τ (μs) 
+
+5.1 K 10.5 K 320.0 K 
+
+TQTQTQ
+
+13.1 K 
+
+a cb
+
+> OOs Na Ba
+
+TcT*
+
+> H (T)
+
+Temperature (K) 20 15 10 50 0 320 20 15 10 57          
+
+> BLPS
+> −0.84 −0.64 −0.44 −0.24 −0.04
+> ω-ω0(MHz) Magnitude (a.u.)
+> 320.0 K 13.1 K 10.5 K 5.1 K
+> Echo π
+> τ
+> π
+> τ
+> distorted undistorted
+> 20 60 100
+
+5.1 K  
+
+> `
+> 2τ(μs) exp(-2 τ/T Q)exp(-2 τ/T Q)
+
+LRO & BLPS PM d    
+
+> -4 -2 0240.0 0.4 0.8 Distribution model
+
+ω (kHz) 
+
+2τ (μs) 
+
+> 380.0 K 11.1 K
+
+orbital decay 10 2 10 3 10 4Echo area (a.u.) 
+
+e   
+
+> T-1 223T-1 Q
+> magnetic decay
+
+FIG. 1. Orbital order in BNOO inferred from NMR spectra and bi-modal spectroscopy . (a) Illustration of the phase diagram of BNOO. At low temperatures the sample shows both magnetic long-range order (LRO) and broken local point symmetry (BLPS). The LRO disappears as the sample undergoes a magnetic phase transition at temperature Tc, but the BLPS is still observable in NMR spectra until temperature T ∗ [60]. Above T ∗ the system was characterized as a paramagnet (PM) in previous studies [60]. (b) Representative 23 Na spectra in different phases at the temperatures, denoted by stars in the phase diagram ( a), and a sketch of the local distortions that give rise to a finite electric field gradient (EFG) (upper inset) [61, 62]. Only one quadrupolar triplet from the two distinct magnetic sites is shown at 5.1 K for clarity. The zero (reference) frequency is defined by ω0 = 23 γH of Na nuclei, while the magnetic field is H = 7 T applied parallel to the [001] axis. (c)Spin-echo magnitude as a function of inter-pulse times (2 τ , with echo sequence in upper inset). The 5.1 K decay curve is divided into two sections from two different measurements, an attenuating modulation (lower left inset) and an exponential decay. The higher-temperature curves reveal two relaxation processes at different time scales, characterized by a “plateau” at time TQ. Error bars are smaller than the symbols used. (d) Solid symbols denote the spin-echo magnitude, measured from the integrated area of the signal in the frequency domain, as a function of the inter-pulse times (2 τ ). Solid lines are fits to the theoretical model [63]. The position of the plateau corresponds to the rate T −1 
+
+> Q
+
+. The site frequencies are given by the Lorentzian distribution model shown in ( e). 
+
+that the orbital order parameter has a zero mean in the high temperature ( T ) disordered/glassy phase while its variance increases upon lowering T , reaching the maxi-mum value in the vicinity of the transition temperature (Tc) into the long-range order (LRO) magnetic state. As the maximum variance is crossed on further lowering the temperature, T ≲ Tc, the mean of the orbital order pa-rameter acquires a finite value. This is deduced from the observation of a finite EFG that has a global well-defined principle axis, defining the nematic. Below Tc,magnetic LRO develops from this nematic state. This is a particular case where one of multiply coupled DOFs acquires LRO (magnetic) as a result of the anisotropic spatial variation of another (orbital) [36]. We establish that the remarkable consequence of strong SOC is to give rise to a nematic orbital state that acquires a directional order but preserves global spatial disorder of magnitude and/or anisotropy, reflected in the variance of the orbital order parameter, and acts as a field that induces LRO magnetism [16, 71–75]. To detect the orbital glass and nematic states, we im-plement a novel approach that concurrently and inde-pendently measures magnetic and orbital order parame-ters, as well as their distributions, which enables an un-precedented level of understanding of ground states of quantum materials with many plausible ordering chan-nels [63], as depicted in Figs. 1 a & b. This bi-modal approach is based on nuclear magnetic resonance (NMR) spin-echo technique. Here, for the first time, we use this method to measure the full spatial distribution of an or-der parameter without contamination from other cou-pled DOFs. In essence, we utilize nuclear spins as lo-cal interferometers to perform minimally invasive, phase sensitive measurements of electronic ground states. This technique is in stark contrast to conventional spectral measurements of matter, which measure the rate of re-3laxation caused by quasi-particle excitations. The local microscopic Hamiltonian, expressing weak coupling be-tween nuclear spins ( I) and electronic DOFs, is given by 
+
+H = HZ (Iz ) + HQ(I2 
+
+> z
+
+) + HN H . (1) The first term (Zeeman) captures magnetic interactions linear in Iz , the second those that couple to I2 
+
+> z
+
+via quadrupolar interactions, and the last denotes all dis-sipative interactions (see Methods for details). On a fundamental level, this new method directly probes the nuclear spin symmetry as a result of rotating different parts of this local Hamiltonian. The action of the nu-clear spin rotation operator is attained by a specific se-quence of radio frequency pulses, resonantly and coher-ently acting on a nuclear spin ensemble. More precisely, our pulse sequence is tailored to selectively refocus (tun-ing constructive/destructive interference conditions) the time evolution of the spins, i.e., even and odd spin op-erators in Eq. 1, Iz and I2 
+
+> z
+
+, respectively. Specifically, we refocuses one channel (magnetic) while leaving the other (orbital, which is time-reversal invariant) unfocused, and thus helps suppress magnetic inhomogeneities affecting the spins. The technique can even resolve the distri-bution of an order parameter that spatially averages to zero [63]. Standard scattering or resonance techniques are ineffective in resolving zero-centered order parameter distributions, especially in the presence of magnetic in-homogeneities, or with a large variance associated with other coupled DOFs. We apply this technique to study numerous remaining enigmas in a complex multi-flavor Mott insulator, BNOO [16, 60–62, 64, 69]. These puzzles clearly indicate the limitations of standard techniques to provide informa-tion on the nature of the ground state in materials with multiple strongly interacting DOFs. BNOO consists of 5d1 electrons that have a total angular moment, J = 3 /2, corresponding to four degenerate states. Theory suggests that potential distortions of the crystalline and electronic structure can introduce a multipole term in the electronic Hamiltonian of the form Jz n (n even), which reduces the number of degenerate electronic spin states from four to two (effective J = 1 /2) [64, 76]. In this situation, a low-temperature phase transition to magnetic ordering (one ground state, effective J = 0) usually occurs in one of three distinct ways [77]: a pure magnetic transition with one critical temperature Tc; the emergence of an octopo-lar term ( n = 4), where both the orbital and magnetic ordering lift the degeneracy at the same Tc; an orbital transition caused by a quadrupolar term ( n = 2) followed by magnetic orderings at two distinct temperatures, first in the quadrupolar channel, and then in the magnetic channel [77]. In BNOO, while a magnetic transition was visible at Tc (Fig. 1a), no evidence of a highly sought-after, higher-T quadrupolar phase transition has yet been ob-served [60, 64, 69, 70]. The natural argument is that BNOO must fall into one of the first two transition types, either a non-orbital or simultaneous magnetic and orbital transition. Conventional successive symmetry breaking due to orbital order has since been observed in other 5 d1
+
+and 5 d2 double perovskites [29, 78–82], but its role and nature in BNOO has remained a mystery. Nevertheless, specific-heat measurements [64, 69] found that the en-tropy loss associated with the magnetic phase transition was consistent with the breaking of a two-fold electronic degeneracy ( J = 1 /2) instead of four-fold ( J = 3 /2) – the missing entropy alluded to above. Our work solves this mystery by revealing that the entropy is hidden in the configurational entropy of the orbital glass phase, charac-terized by a spatially distributed zero-mean orbital order parameter, as illustrated in Fig. 2d. 
+
+Mysterious nature of high-T phase in BNOO. Aparamagnetic (PM) broken local point symmetry (BLPS) phase, characterized by local crystalline distortions in BNOO, as evidenced by conventional NMR, has only been observed in the vicinity of the magnetic transi-tion for T ≳ Tc [60, 61]. It was understood that a multipolar ordering of the electronic structure induces BLPS [60, 70]. The sequential onset of BLPS and then the LRO magnetic state are shown in the field-temperature phase diagram in Fig. 1a (compiled from references [60–62, 68]). The onset of BLPS was thought to occur in the PM state at a temperature T ∗, which does not denote a true phase transition [60, 61, 69]. The NMR spectra of 23 Na ( I = 3 /2), depicted in Fig. 1b, reveal the distribution of the hyperfine fields, induced by local magnetism, and the electronic charge distribu-tion (reflecting orbital order and/or lattice symmetry). A nuclear spin I = 3 /2 interacts via the quadrupolar in-teraction with a non-zero EFG (see Methods). At sites with cubic point symmetry, the EFG is zero, leading to vanishing quadrupolar interactions. A finite EFG and thus quadrupolar interaction is generated by both elec-tronic and atomic distortions [60–62]. This interaction, coupling the I2 
+
+> z
+
+term with the magnitude of the EFG, splits the otherwise single NMR line into 2 I lines, as illus-trated in Fig. 1b at T = 5 .1 K. However, for small finite values of the EFG, the three peaks are not discernible in conventional NMR spectra and only significant line broadening is observable ( e.g. , T = 10.5 K). In this case, the broadening associated with the EFG, i.e., charge dis-tribution, cannot be disentangled from that due to the magnetic DOFs, precluding gaining any further insight into the nature of BLPS above Tc by conventional tech-niques [60, 70]. To gain full understanding of both the missing magnetic entropy at T = Tc and, more gener-ally, the microscopic relationships between orbital and magnetic orders in BNOO [2, 16, 33, 83], we rely on the capability of the novel bi-modal phase sensitive tech-nique [63] to tune two distinct spin evolution times. 
+
+Novel probes of nature of the high-T phase. 
+
+Theoretical treatment of the spin dynamics predicts that spin terms of even power in the nuclear Hamil-tonian (Eq. 1) induce a multi-modal relaxation as one varies the time-delay between consecutive pulses ( τ ) [63] (Figs. 1 c-e). Whenever the strength of an even-power 4c
+
+> Decay rate (kHz)
+
+# Temperature (K) 
+
+Tc 
+
+2 / TQ
+
+## PM 
+
+> Order parameter mean (kHz)
+
+2 / T 2
+
+## OrG ab LRO + NOrG 
+
+ωQ
+
+> BLPS
+> 250 200 150 100 50 0
+
+10 100 4 5 6 7 4 5 6 7 2 3 4 52 310 410 310 210 110 010 -1 
+
+> 5.1 K  320 K 10.5 K
+
+# r Q-90° -45° 0° 90° 45° 
+
+# θQ
+
+OrG NOrG 
+
+FIG. 2. Order parameters and relaxation processes in BNOO . ( a) T dependence of the orbital order parameter mean, ωQ, ( a) and its distribution (2 /T Q) ( b). ( b) The magnetic (2 /T 2) and orbital (2 /T Q) distributions causing dephasing, as a function of temperature up to 380 K. The dashed line denotes Tc, the transition temperature below which the LRO magnetic state is formed. The orbital glass state, denoted as OrG, is characterized by the dominant distribution of the orbital order parameter (2 /T Q). A nematic orbital glass (NOrG) is stabilized in the LRO magnetic state. All data were measured in a 7 T magnetic field applied parallel to the [001] crystalline axis. When not discernible, error bars are smaller than the symbols used. The open red points are upper estimates using the spectral linewidth (See Suppl.). Thick shaded red and navy lines serve as a guide to the eye. ( c) The top panel displays possible in-plane distortions of BNOO’s unit cell. The angle of the distortion is given by θQ and its magnitude by rQ, yielding an order parameter of the form ωQ ≡ rQ(sin θQ, | cos θQ|). The following panels illustrate spatial variations in the BLPS phase above Tc and a global BLPS phase below, as inferred by this work. Each unit cell is represented by a colored rod to indicate the local BLPS structure. The angle of the rod and its hue indicate the local θQ, while the rod’s length and its opacity indicate the local rQ. For visualization purposes, we only show variations in a 2D plane, but in practice the variations should occur in 3D. 
+
+term in the Hamiltonian follows a distribution, the spin-spin relaxation will partially attenuate at a rate T −1
+
+> Q
+
+that is proportional to the linewidth of that distribu-tion. The critical precession time ( TQ) indicates when the quadrupolar-dependent part of the magnetic signal de-phases. This is followed by a second decay in the remain-ing quadrupolar-independent echo amplitude, caused by conventional magnetic decoherence on the time-scale T2,as depicted in Figs. 1 c-e and described by Eq. 3 in the Methods. Performing a T2-style relaxation measurement at 5.1 K, in the LRO phase (at T < Tc), reveals a sinusoidal modulation in the spin-echo caused by the quadrupolar ( ωQ) interaction (lower inset of Fig. 1c), an effect first observed by Abe et al . [84], and others [85, 86]. These oscillations are attenuated (red envelope of Fig. 1c) on a time scale TQ. The distribution of ωQ is centered at a finite frequency ωQ, which is determined from the spectral splitting and from the frequency in the sinusoidal oscillation (respectively 190 kHz and 184 kHz). The rela-tionship between the time TQ and the parameters of the microscopic Hamiltonian is detailed in the Methods. To sum up, we define the mean of orbital order parameter as the mean of the distribution of the quadrupolar inter-action term ( ωQ), while the full-width at half-maximum (FWHM) of its Lorentzian distribution is determined by 2/(3 TQ). The temperature dependence of the mean of the orbital order parameter ( ωQ) and the FWHM of its distribution are plotted in Fig. 2. A schematic for the formation of the BLPS sites, i.e., 
+
+orbital glass, across the sample is given in Fig. 2c. Even when the magnitude of the crystal distortions are uni-form throughout the sample, variations in the angle of the distortion relative to a global z-axis set by the ex-periment can cause variations in the effective scalar in-teraction strength ωQ. We find that the scalar order parameter has a non-trivial distribution at all measured 5temperatures, characterized by its FWHM. We directly measure the FWHM from the characteristic decay rate (T −1 
+
+> Q
+
+) of the NMR signal. Next, we analyze the temperature dependence of the distribution of the orbital order parameter ωQ, parame-terized by both its mean, ωQ, and variance, 2 T −1 
+
+> Q
+
+(see Methods). Results of this analysis are plotted in Fig. 2a-b. We infer that the mean of the orbital order parameter, 
+
+ωQ, is zero at all T > T c. On further lowering the tem-perature ( T ≲ Tc), the orbital order parameter acquires a finite mean. We point out that ωQ characterizes a ‘hidden’/subdominant order parameter, while thermody-namic measurements are dominated by a response to the magnetic order parameter [64]. Therefore, the T evo-lution of ωQ should not be used to infer the order of the phase transition and/or compare it to findings from specific heat measurements. The rate T −1 
+
+> Q
+
+is largely tem-perature independent, with only a noticeable growth on approaching Tc, i.e., when entering the BLPS inter-phase region ( Tc < T < T ∗). Specifically, we note that the variance, 2 /T Q, of ωQ, becomes larger as the tempera-ture approaches Tc from above, but 2 /T Q becomes small again below Tc. Moreover, the magnitude and growth rate of the quadrupolar parameter variations ( T −1 
+
+> Q
+
+) are much larger than those of the magnetic decoherence pro-cesses ( T −12 ), as shown in Fig. 2b. This serves as our key evidence that the orbital DOF drive magnetic LRO. We now proceed to discuss two important implications for the BLPS phase [60]: the nature of the short range order above Tc and its role in stabilizing the magnetic LRO at low temperature. 
+
+Orbital glass phase. The lack of oscillations in the bi-modal spectra bove Tc ∼ 10 K (Fig. 1c) implies that crystalline distortions exist, but no specific direction is preferred, leading to ωQ = 0 as shown in Fig. 2a. If the distortions only occurred along specific facets of the crys-tal, with sharp transitions between each orientation do-main, a handful of unique values of ωQ would be present at a given T . In this case, a finite number of frequencies would be visible in the spectral transform of the τ -decay curves, but we observe a decay which is well described by a Lorentzian distribution of a width proportional to T −1 
+
+> Q
+
+.We hypothesize that the system is composed of domains which may prefer specific facets, but that the regions be-tween them are smooth and have slowly varying transi-tions between distortion angles. While the nature of the spatial variations is predominantly angular, it is possible that there are some weak variations in the magnitude of the crystalline distortions as well. Strong variations in the magnitude would couple to the accessible energy of the phonons, which can lead to a strong temperature-dependence of T −1 
+
+> Q
+
+at higher temperatures. Neverthe-less, modulations in the magnitude can combine with the glassy variation in the distortion orientation to create a nearly perfect Lorentzian distribution of local ωQ values across the entire sample. This distribution of the orbital ordering is described as an orbital glass .By probing the local spin precession, our bi-modal technique is sensitive to fluctuations from μs to ms timescales, allowing us to rule out dynamical fluctua-tions across these scales. Thus, our measurements es-tablish that the quadrupolar distribution is caused by static variations rather than dynamic fluctuations. This is inferred from our ability to probe dynamical effects on multiple timescales ranging from slow ( > 1 ms) to fast (1 μs) and the lack of any significant T dependence of quadrupolar distribution ( T −1 
+
+> Q
+
+), away from Tc (see the Methods for more details). Insight into the orbital glass is gained by noting three key properties of both the orbital ( T −1 
+
+> Q
+
+) and mag-netic ( T −12 ) distribution variances (noise) near the phase transition (Fig. 2): (i) while the magnetic noise reduces by nearly an order of magnitude below the transition into LRO, the value of the rate T −1 
+
+> Q
+
+at 5 .1 K is identical to that at 50 K; (ii) in the BLPS inter-phase region, the relative growth of the distribution of orbital order pa-rameter, i.e., distribution of distortions, is much larger than that of the magnetic variations, ∝ T −12 ; (iii) near the phase transition T ∼ Tc, the width of the orbital glass distribution, FWHM ∝ T −1 
+
+> Q
+
+, diverges significantly faster than T −12 and well beyond its value on either side of the transition. These three observations, taken to-gether imply the BLPS distortions stabilize the magnetic fluctuations, ultimately driving the phase transition to a magnetic LRO. As the temperature is lowered to Tc, the variance of the orbital distortions grows over an order of magnitude, while those in the magnetic channel increase by less than a factor of two (Fig. 2b). Then, just after reaching the critical temperature Tc (T < T c), the mag-netic variations decrease to well below their high temper-ature value, while the orbital ones remain similar to their high temperature values. 
+
+Low-T orbital nematic state. The observation of comparable orbital variations below and above Tc demon-strate that orbital glass persists in the LRO magnetic state. The detection of a finite EFG, evident by the presence of oscillations in the bi-modal spectra, below Tc
+
+reveals that the sole effect of the spin ordering on the or-bital DOF is to impose preferred direction of distortions, which induced a finite ωQ, as depicted in Fig. 2a. These conclusions provide very stringent symmetry-based con-straints on possible microscopic models for systems with complex multipolar interactions. More importantly, the emergence of a preferred direction of the EFG below Tc
+
+reveals that the low-T magnetically ordered state coexists with an orbital nematic phase (the nematic-like liquid-crystal state of the orbitals) characterized by directional order, which preserves global spatial disorder, i.e., glassi-ness. Specifically, while the direction of the nematic or-der is well defined by the principle axis of the EFG, the magnitude and/or anisotropy of its order parameter re-mains spatially disordered as in a glass, as illustrated in Fig. 2b & c. This is a peculiar, purely orbital nematic state without accompanying spin fluctuations [72, 75]. By nature of our measurement, we directly observe this 6nematic orbital state without any variation of an external field ( e.g. , light, strain) [87, 88]. 
+
+Relationship between orbital nematic and LRO magnetism. To gain further insight into the nature of the orbital nematic state and its relationship to mag-netism, we perform a careful examination of the tem-perature evolution of the NMR spectra [60, 68] and ωQ
+
+(Figs. 2a). At high temperatures, a single peak is seen in the spectrum. At a lower temperatures below 10 K, the peak splits into three. This can be understood as quadrupolar splitting due to finite EFG and suggests the formation of nematic order. A striking feature of the data is the emergence of another triplet at still lower temperatures. We ascribe this feature to magnetic order-ing. Indeed, all crystallographically equivalent sites are equivalent magnetically in the absence of magnetic order, but two types of inequivalent sites are present in a mag-netically ordered system. It is thus natural to conclude that nematic order drives a transition to a magnetically ordered state. We deduce that the onset of the orbital nematic state precedes that into the LRO magnetism, because spectral signature of finite EFG is observed at 
+
+T > T c [60, 68]. Therefore, it is likely that two con-secutive phase transitions occur in BNOO on decreasing 
+
+T . First, the static disorder in the orbital glass phase induces an orbital nematic state. The nematic, charac-terized by a finite ωQ, acts as a uniaxial random field that drives the ferromagnetic ordering in the plane transverse to the nematic axis at lower T [60, 68]. In BNOO, the orbital nematic induced anisotropy, along the [001] crys-talline axis [60, 68], reduces magnetic fluctuations and thus promotes magnetic ordering. This resulting LRO magnetic state is a peculiar two sub-lattice ferromagnet whose spins are aligned in the [110] plane [60]. Evidently, the significant SOC in BNOO induces a more complex transverse magnetic ordering compared to that in pure magnetic systems [89, 90]. 
+
+Missing entropy elucidated. We have provided a clear answer to why BNOO has an effective J = 1 /2 en-tropy at the critical temperature Tc. Our measurements lead to the conclusion that the missing entropy is hid-den in the configurational entropy of an orbital glass phase and not in dynamical fluctuations of the magni-tude or directions of the crystal’s distortion. The mag-netic dephasing ( T2)−1 are comparable in magnitude to 
+
+T −1 
+
+> Q
+
+but cannot contribute to the entropy change because of their gradual T -dependence (see Supplementary Mate-rials). The missing entropy is therefore distributed over a wide temperature range in the electronic orbital DOF, 
+
+i.e., orbital glassiness. As missing entropy puzzles are of-ten associated with hidden-order phases, this technique should be transferable to the study of other challenging magnetic systems, such as those with frustrated geome-try [36, 41, 44, 45, 50, 58, 59, 64, 91, 92]. Frustration suppresses ordinary long-range order and in some cases stabilizes PM states down to ultra-low temperatures. In the presence of orbital degeneracy, a spin-orbital liquid and/or glass states, such as ones that we directly identi-ab Theory Theory 
+
+> Odd terms Even terms
+
+10 210 30.0 0.2 0.4 0.6 0.8 1.0 φTip angle (deg) Echo area (a.u.) 2τ (μS) 60 90 120 φ = 90 φ = 60 10 426 K          
+
+> 0.0 0.4 0.8 Magnitude (a.u.)
+> 23T-1 QT*-1 2
+> -140 -130 -120
+> ω-ω0(kHz) Echo Time
+> φ2φ
+> ττ
+
+# c-100 -50 050 525 45 2/T Q(kHz) Θ Angle from [001] (deg) 11.7 K 291 K θ HV ZZ 60 70 80 90 100 110 120 0.0 0.2 0.4 0.6 0.8 1.0 Fit params (a.u.) φ Tip angle (deg) 
+
+> 26 K 87.5 K 26 K 87.5 K ooooo
+
+FIG. 3. Angle and pulse dependence measurements .(a) Echo area as a function of the delay time 2 τ at different tip angles ϕ, at 26 K, fit with Eq. 5. Here, we take A = C as they are close in value around the perfect π/2 pulse [63]. The average value ωQ is zero. (b) Tip-angle ( ϕ) dependence of the prefactors in Eq. 5: A, C (associated with exponents of 2 τ
+
+and 0, labeled even) and B (associated with τ , labeled odd). Data is extracted from the fits given in ( a), with one standard deviation given by the error bars. Solid lines are theoretical predictions [63]. (C) Dependence of the rate 2 /T Q on the orientation of the sample ( θ) between its principal axis VZZ 
+
+(local EFG) and the applied field H = 7 T, at two temper-atures. Solid lines are a fit to Eq. 8, implying a distribution of quadrupole moments. When not discernible, error bars are smaller than the symbols used. 
+
+fied in this work, are plausible [2, 36, 93]. Identifying the ground state in frustrated spin systems via measurements of excitations is difficult as there often exists a highly de-generate manifold of possible ground states with similar spectra [2, 16, 30, 94]. 
+
+Orbital origin of disorder. Our proposed physical picture relies on the supposition that T −1 
+
+> Q
+
+is a measure of the scalar quadrupolar interaction’s distribution, which 7is generated by a distortion-induced EFG at the 23 Na sites [60–62]. To further test this interpretation, and ob-tain two independent confirmations of the orbital order, we expand our analysis of the bi-modal response to in-clude tip and tilt angles. The tip angle is the quantity of net nuclear spin rotation around the applied field given by the strength and duration of the first radio frequency pulse in the echo sequence. Therefore, the tip angle is a knob that controls the efficiency of refocusing of the orbital terms, Inz (n even). The tilt angle is the angle between the principal axis of the EFG and the applied magnetic field, and is achieved in the experiment by phys-ically rotating the sample. Although the TQ time scale encodes the most impor-tant information about the distribution of ωQ, the tip-angle dependence of the “plateau” height allows us to confirm the quadrupolar/orbital nature of the TQ decay. The relative plateau height as a function of ϕ is extracted in terms of the even and odd terms of the theoretical model (see the tip-angle dependence section in Methods). The tip-angle dependent plateau height shows excellent agreement between theory [63] and experiment (Fig. 3a) confirming that the TQ is a true measure of the orbital disorder. To independently confirm that the nature of the spa-tial variations is predominantly angular above Tc, we plot the T −1 
+
+> Q
+
+as a function of the tilt-angle θ in Fig. 3c. We note that a pure magnitude variation would be inconsis-tent with the large offset in T −1 
+
+> Q
+
+. That is, in addition to a uniaxial magnitude variations, there must be some angular variations as well to account for the offset in 
+
+T −1 
+
+> Q
+
+versus the til-angle in Fig. 3c. The rate T −1 
+
+> Q
+
+fol-lows the angle dependence resulting from the crystalline quadrupolar interaction with two key additional features. First, T −1 
+
+> Q
+
+close to the magic angle ( ≈ 54 .7◦) (see Meth-ods) is almost constant, which is well captured assuming at least two BLPS domains with differing principal axes (Eq. 8). In contrast, a uniform orientation of the mate-rial’s principal axis would result in a sharp minimum of 
+
+T −1 
+
+> Q
+
+at the magic angle [61]. Second, the θ-independent constant offset in T −1 
+
+> Q
+
+rules out dephasing caused by a dipolar interaction because such dephasing has a perfect averaged refocusing at the magic angle (discussed further in the Supplement). 
+
+Discussions. Our demonstration of selective refocus-ing of local spin terms, based on the symmetry of the spin interaction, can be applied to single spin systems with a high spin number, such as the molecular magnets embed-ded in solid matrices [95, 96], to achieve high fidelity of spin control. For strongly correlated spin-orbit materials, our symmetry-selective refocusing allows one to disentangle the role of orbital and magnetic interactions in poorly understood low-temperature phases [4, 10, 15, 97, 98]. Our observation of orbital nematic-induced magnetic or-der provides the first material platform to test theoretical models that aim to identify microscopic mechanisms that drive the emergence of complex phases in systems with multiple interacting DOF [89, 99]. The main objective of these theories is to establish a road map for tuning emergent/hidden orders by randomness engineering.  
+
+> I. METHODS
+
+NMR data acquisition. A state-of-the-art, custom-built NMR spectrometer with advanced quadrature detection capabilities in combination with a high-homogeneity superconducting 7 T magnet at Brown Uni-versity is used. The temperature control above room temperature (roughly 294 K) is achieved using a heater around the sample chamber, while cooling below room temperature is performed using a helium variable tem-perature inset. 
+
+Sample. We use the same high-quality single BNOO crystal, grown from a molten hydroxide flux, described and studied in previous work published in Ref. 60. Based on clear, sharp peaks in the NMR spectra, we are con-fident about the sample quality. The sample is aligned such that its [001] crystalline axis is parallel to the mag-netic field, which in this sample coincides with the prin-cipal axis of the electric field gradient (EFG) [60]. 
+
+Competing fluctuations. The Hamiltonian of the 
+
+> 23
+
+Na nuclei in BNOO in the principal axis system (PAS) of the EFG is given by 
+
+H = HZ + HQ + HN H ,HZ = ω0Iz ,HP AS Q = ωQ
+
+2
+
+(3 I′2 
+
+> z
+
+− I2) + η(I′2 
+
+> x
+
+− I′2 
+
+> y
+
+),
+
+(2) where ω0 = 23 γH is the Larmor precession frequency of 
+
+> 23
+
+Na, whose variations (magnetic noise) are character-ized by a broadening Γ Z , and ωQ is the magnitude of the nuclear quadrupolar interaction caused by a locally non-zero EFG and whose variations are characterized by the width of the distribution of the order parameter (DOP), ΓQ ≡ 23 T −1 
+
+> Q
+
+, primed spin operators are defined in the PAS frame, and η is the anisotropy. The distribution of quadrupolar interaction strengths, ωQ, is defined by its full-width at half maximum (FWHM), Γ Q, while its center is denoted by ωQ. The different spin operators be-tween the Zeeman and quadrupolar terms of the Hamil-tonian indicate that the two corresponding coordinates systems are not a priori aligned. The last term, HN H ,captures interactions with all other DOFs responsible for dissipation. Because we have restricted our Hamiltonian to a single nuclear site, HN H encompasses all other in-teractions with the environment, including weak interac-tions with nearby nuclei (spin-flips, I+, I −). We are com-paring the measured magnetic, spin-spin decoherence T2
+
+and 2 /T ∗ 
+
+> 2
+
+≡ ΓZ with the quadrupolar dephasing in terms of a characteristic dephasing time, given by TQ.The bi-modal method employed to measure TQ and T2
+
+is related to the spin-spin relaxation time measurement 8(T2) and, unlike the NMR relaxation rate ( T1T )−1, it does not involve energy transfer between nuclear spins and an electronic/phononic bath. 
+
+Spin-echo sequence. Raw data was acquired by signal-averaging a standard Hahn-echo sequence π/ 2 −
+
+τ − π. The repetition time between consecutive echos (ranging from around 1.25 s to 8 s) is 5 times larger then 
+
+T1 at corresponding temperatures to ensure that all nu-clear spins have relaxed back to their equilibrium by the time the next single spin-echo sequence starts. The delay time τ is modified on the exponential scale and is varied based on temperature from a few μs to 10’s of ms. The 
+
+π/ 2 pulse duration is also temperature dependent, rang-ing from 1 μs to 4 μs. Four-step phase cycling is used to eliminate any magnetic inhomogeneity contribution, Γ Z ,and enhance the signal-to-noise ratio. 
+
+Spin-echo modulation. The low temperature (∼5 K) decay curves of the echo amplitude intensity as a function of 2 τ are divided into two regions. In the small-
+
+τ region, inset of Fig. 1c, there is echo modulation due to the non-zero angular averaged quadrupole coupling con-stant ωQ̸ = 0 and the decay is dominated by quadrupole relaxation, Γ Q. We fit echo intensity, I(2 τ ), to the fol-lowing function [63]: 
+
+I(2 τ ) ∝
+
+
+
+A cos (3 ωQ2τ ) e−2τ /T Q + C
+
+
+
+e−(2 τ /T 2)α
+
+. (3) For the T2 decay, we use a stretching exponential decay fit. Typically, the stretching exponent α ranges from 1 (exponential decay) to 2 (Gaussian decay). 
+
+Bi-modal relaxation. Above the BLPS temperature (∼10 K), the average quadrupole coupling constant is zero, ωQ = 0. The model for the τ -dependent amplitude of the spin-echo then is: 
+
+I(2 τ ) ∝
+
+
+
+Ae −2τ /T Q + C
+
+
+
+e−(2 τ /T 2)α
+
+. (4) 
+
+Tip-angle dependence. The efficiency of the time-reversal pulsing is maximized at a spin tip angle of 
+
+ϕ = 90 ◦, which corresponds to a minimization of the BLPS (quadrupolar)-induced dephasing, Fig. 3c. We have shown in Ref. 63 that whenever the tip angle de-parts from a perfect π/ 2 pulse, the spin-echo decay curves in a sample with a distribution of quadrupolar ordering, assuming ωQ= 0, have a form given by : 
+
+I(2 τ, ϕ ) ∝
+
+
+
+Ae −2τ /T Q + Be −τ /T Q + C
+
+
+
+e−(2 τ /T 2)α
+
+. (5) Here, an extra term B with half the characteristic decay time-scale is needed to capture the tip-angle dependence. In the theoretical model that derives Eq. 5, the variables 
+
+A, B, and C are all dependent on the magnetization tip-angle ϕ and, to good approximation, we can take A ≈ C
+
+for |ϕ − 90 ◦| < 30 ◦ [63]. Experimentally, we have varied the tip angle from ϕ ≈ 60 ◦ up to ϕ ≈ 110 ◦ and fit the curves with Eq. 5 above, Fig. 3c. 
+
+Angle dependence. In the lab frame, the quadrupo-lar Hamiltonian up to first order is given by 
+
+HLAB Q = ω′
+
+> Q
+
+(θ)4 (3 I2 
+
+> z
+
+− I2), (6) 
+
+ω′
+
+> Q
+
+(θ) = ωQ(3 cos 2 θ − 1 − η cos 2 φ sin 2 θ) (7) where θ/φ is the polar/azimuthal angle between the ap-plied field H and the PAS, defined by the principal axes of the EFG. The nuclear magnetization dependence on the angle θ is thus fit to a form which assumes at least two domains of perpendicular PAS: 
+
+I(θ) = I1
+
+2
+
+3 cos 2(θ + δ) − 1
+
++ I2
+
+2
+
+3 cos 2(θ + π
+
+2 + δ) − 1 + I0.
+
+(8) We take the principal axis of the quadrupole tensor 
+
+Vzz to be parallel to the applied field at θ = 0 ◦, and assume the anisotropy is η = 0, reflecting a BLPS phase with tetragonal symmetry. For a single phase, there is a “magic angle” of θ = 54 .7◦ at which the signal would go to zero or a constant offset, I0 (Fig. 3c). The angle δ is a fitting parameter to account for slight misalignment in the orientation of the sample relative to the applied field. The sample is rotated on the ac plane from [001] axis to [ ±100] axes. 
+
+Dynamical effects Our conclusion that the observed quadrupolar distribution is caused by static variations rather than dynamic fluctuations is based on the follow-ing facts. First, as no evidence of structural distortion has been observed by scattering experiments above T ∗,we can rule out uniform but slowly varying ( >1 ms) changes as the origin of the distribution. We can also rule out dynamical fluctuations on a timescale similar to the typical experiment time (100 μs), because the plateau appearing in the multi-modal measurement relies on refocusing of time-independent local Hamiltonians. The dynamical fluctuations cannot be much faster than the typical experiment time, as then the plateau would have occurred before the probed τ values. In general, a dynamic origin of fluctuations is unlikely given that T −1
+
+> Q
+
+is only weakly temperature dependent above Tc. Our measurements do not rule out dynamic and spatially inhomogeneous fluctuations which occur on a time scale longer than T2, but those would not contribute to our measurement of T −1 
+
+> Q
+
+.
+
+Acknowledgements. We thank Z. Wang, and K. Plumb for helpful discussions. This work was sup-ported by the National Science Foundation under grant No. OIA-1921199 and grant No. DMR-1905532 (VFM). 9A.D. was partially supported by the U.S. Department of Energy, Office of Science, Office of Basic Energy Sciences, under Award Number DE-SC0022311. 
+
+Author Contributions. I.R.F. prepared the samples. R.C. and I.K.N. performed the experiments and basic NMR data analysis. I.K.N. and S.C. developed the MMS method and data analysis protocols. I.K.N., S.C., A.D., C.R., and V.F.M. analyzed the data and developed data interpretation. D.E.F. assisted with data interpretation. V.F.M. provided conceptual advice and supervised the project. I.K.N., A.R., S.C., A.D., C.R., and V.F.M. wrote the paper. All authors discussed the results, and commented and edited the manuscript. 
+
+[1] A. P. Ramirez, Strongly geometrically frustrated mag-nets, Annual Review of Materials Science 24 , 453 (1994). [2] Y. Tokura and N. Nagaosa, Orbital Physics in Transition-Metal Oxides, Science 288 , 462 (2000). [3] D. Pesin and L. Balents, Mott physics and band topology in materials with strong spin–orbit interaction, Nature Physics 6, 376 (2010). [4] P. Santini, S. Carretta, G. Amoretti, R. Caciuffo, N. Magnani, and G. H. Lander, Multipolar interactions in f -electron systems: The paradigm of actinide dioxides, Reviews of Modern Physics 81 , 807 (2009). [5] M. Z. Hasan and C. L. Kane, Colloquium: Topological insulators, Rev. Mod. Phys. 82 , 3045 (2010). [6] S. Onoda and Y. Tanaka, Quantum Melting of Spin Ice: Emergent Cooperative Quadrupole and Chirality, Physi-cal Review Letters 105 , 047201 (2010). [7] S. Lee, S. Onoda, and L. Balents, Generic quantum spin ice, Physical Review B 86 , 104412 (2012). [8] P. Chandra, P. Coleman, and R. Flint, Hastatic order in the heavy-fermion compound URu 2Si 2, Nature 493 , 621 (2013). [9] M. Tsujimoto, Y. Matsumoto, T. Tomita, A. Sakai, and S. Nakatsuji, Heavy-Fermion Superconductivity in the Quadrupole Ordered State of PrV 2Al 20 , Physical Review Letters 113 , 267001 (2014). [10] W. Witczak-Krempa, G. Chen, Y. B. Kim, and L. Ba-lents, Correlated Quantum Phenomena in the Strong Spin-Orbit Regime, Annual Review of Condensed Matter Physics 5, 57 (2014). [11] Editorial, The rise of quantum materials, Nature Physics 
+
+12 , 105 (2016). [12] X.-G. Wen, Colloquium : Zoo of quantum-topological phases of matter, Reviews of Modern Physics 89 , 041004 (2017). [13] D. I. Khomskii and S. V. Streltsov, Orbital effects in solids: basics, recent progress and opportunities, Chem-ical Reviews 121 , 2992 (2021). [14] D. I. Khomskii, Review—orbital physics: Glorious past, bright future, ECS Journal of Solid State Science and Technology 11 , 054004 (2022). [15] J.-X. Yin, B. Lian, and M. Z. Hasan, Topological kagome magnets and superconductors, Nature 612 , 647 (2022). [16] G. V. Chen and C. Wu, Multiflavor Mott insulators in quantum materials and ultracold atoms, npj Quantum Materials 9, 1 (2024). [17] R. J. Elliott, Theory of the effect of spin-orbit coupling on magnetic resonance in some semiconductors, Phys. Rev. 
+
+96 , 266 (1954). [18] A. Manchon, H. C. Koo, J. Nitta, S. M. Frolov, and R. A. Duine, New perspectives for Rashba spin-orbit coupling, Nature Materials 14 , 871 (2015). [19] A. Soumyanarayanan, N. Reyren, A. Fert, and C. Panagopoulos, Emergent phenomena induced by spin-orbit coupling at surfaces and interfaces, Nature 539 , 509 (2016). [20] D. Gotfryd, E. M. P¨ arschke, J. Chaloupka, A. M. Ole´ s, and K. Wohlfeld, How spin-orbital entanglement depends on the spin-orbit coupling in a Mott insulator, Phys. Rev. Res. 2, 013353 (2020). [21] M. Bender, P.-H. Heenen, and P.-G. Reinhard, Self-consistent mean-field models for nuclear structure, Rev. Mod. Phys. 75 , 121 (2003). [22] B. R. Barrett, P. Navr´ atil, and J. P. Vary, Ab initio no core shell model, Progress in Particle and Nuclear Physics 
+
+69 , 131 (2013). [23] G. Hagen, T. Papenbrock, M. Hjorth-Jensen, and D. J. Dean, Coupled-cluster computations of atomic nuclei, Reports on Progress in Physics 77 , 096302 (2014). [24] E. Tsymbal and P. Dowben, Grand challenges in con-densed matter physics: from knowledge to innovation, Frontiers in Physics 1, 10.3389/fphy.2013.00032 (2013). [25] J. G. Rau, E. K.-H. Lee, and H.-Y. Kee, Spin-Orbit Physics Giving Rise to Novel Phases in Correlated Sys-tems: Iridates and Related Materials, Annual Review of Condensed Matter Physics 7, 195 (2016). [26] L. Savary and L. Balents, Quantum spin liquids: a re-view, Reports on Progress in Physics 80 , 016502 (2016). [27] Y. Zhou, K. Kanoda, and T.-K. Ng, Quantum spin liquid states, Reviews of Modern Physics 89 , 025003 (2017). [28] J. W. Harter, Z. Y. Zhao, J.-Q. Yan, D. G. Mandrus, and D. Hsieh, A parity-breaking electronic nematic phase transition in the spin-orbit coupled metal Cd 2Re 2O7, Sci-ence 356 , 295 (2017). [29] T. Takayama, J. Chaloupka, A. Smerald, G. Khaliullin, and H. Takagi, Spin–Orbit-Entangled Electronic Phases in 4 d and 5 d Transition-Metal Compounds, Journal of the Physical Society of Japan 90 , 062001 (2021). [30] S. T. Bramwell and M. J. P. Gingras, Spin Ice State in Frustrated Magnetic Pyrochlore Materials, Science 294 ,1495 (2001). [31] R. Comin, R. Sutarto, E. H. da Silva Neto, L. Chau-viere, R. Liang, W. N. Hardy, D. A. Bonn, F. He, G. A. Sawatzky, and A. Damascelli, Broken translational and rotational symmetry via charge stripe order in under-doped YBa 2Cu 3O6+ y , Science 347 , 1335 (2015). [32] H.-H. Kung, R. E. Baumbach, E. D. Bauer, V. K. Thorsmølle, W.-L. Zhang, K. Haule, J. A. Mydosh, and G. Blumberg, Chirality density wave of the “hidden or-der” phase in URu 2Si 2, Science 347 , 1339 (2015). [33] A. S. Patri, A. Sakai, S. Lee, A. Paramekanti, S. Nakat-suji, and Y. B. Kim, Unveiling hidden multipolar orders with magnetostriction, Nature Communications 10 , 4092 10 
+
+(2019). [34] R. Zhou, D. D. Scherer, H. Mayaffre, P. Toulemonde, M. Ma, Y. Li, B. M. Andersen, and M.-H. Julien, Singular magnetic anisotropy in the nematic phase of FeSe, npj Quantum Materials 5, 93 (2020). [35] S. Tonegawa, S. Kasahara, T. Fukuda, K. Sugimoto, N. Yasuda, Y. Tsuruhara, D. Watanabe, Y. Mizukami, Y. Haga, T. D. Matsuda, E. Yamamoto, Y. Onuki, H. Ikeda, Y. Matsuda, and T. Shibauchi, Direct obser-vation of lattice symmetry breaking at the hidden-order transition in URu 2Si 2, Nature Communications 5, 4188 (2014). [36] K. Mitsumoto, C. Hotta, and H. Yoshino, Spin-Orbital Glass Transition in a Model of a Frustrated Pyrochlore Magnet without Quenched Disorder, Phys. Rev. Lett. 
+
+124 , 087201 (2020). [37] L. F. Feiner, A. M. Ole´ s, and J. Zaanen, Quantum Melt-ing of Magnetic Order due to Orbital Fluctuations, Phys. Rev. Lett. 78 , 2799 (1997). [38] Y. Chen, Z. D. Wang, Y. Q. Li, and F. C. Zhang, Spin-orbital entanglement and quantum phase transitions in a spin-orbital chain with SU(2) × SU(2) symmetry, Phys. Rev. B 75 , 195113 (2007). [39] E. Erge¸ cen, B. Ilyas, J. Kim, J. Park, M. B. Yilmaz, T. Luo, D. Xiao, S. Okamoto, J.-G. Park, and N. Gedik, Coherent detection of hidden spin–lattice coupling in a van der waals antiferromagnet, Proceedings of the Na-tional Academy of Sciences 120 , e2208968120 (2023). [40] J. A. Mydosh and P. M. Oppeneer, Colloquium : Hidden order, superconductivity, and magnetism: The unsolved case of URu 2Si 2, Reviews of Modern Physics 83 , 1301 (2011). [41] L. V. Pourovskii and S. Khmelevskyi, Hidden order and multipolar exchange striction in a correlated f-electron system, Proceedings of the National Academy of Sciences 
+
+118 , 10.1073/pnas.2025317118 (2021). [42] L. V. Pourovskii, D. F. Mosca, and C. Franchini, Ferro-octupolar Order and Low-Energy Excitations in d 2 Dou-ble Perovskites of Osmium, Physical Review Letters 127 ,237201 (2021). [43] R. Yu, J.-X. Zhu, and Q. Si, Orbital Selectivity Enhanced by Nematic Order in FeSe, Phys. Rev. Lett. 121 , 227003 (2018). [44] A. P. Ramirez, Geometric frustration: Magic moments, Nature 421 , 483 (2003). [45] D. Pomaranski, L. R. Yaraskavitch, S. Meng, K. A. Ross, H. M. L. Noad, H. A. Dabkowska, B. D. Gaulin, and J. B. Kycia, Absence of Pauling’s residual entropy in thermally equilibrated Dy 2Ti 2O7, Nature Physics 9, 353 (2013). [46] G. C. Lau, R. S. Freitas, B. G. Ueland, B. D. Muegge, E. L. Duncan, P. Schiffer, and R. J. Cava, Zero-point entropy in stuffed spin-ice, Nature Physics 2, 249 (2006). [47] C. Bareille, F. L. Boariu, H. Schwab, P. Lejay, F. Reinert, and A. F. Santander-Syro, Momentum-resolved hidden-order gap reveals symmetry breaking and origin of en-tropy loss in URu 2Si 2, Nature Communications 5, 4326 (2014). [48] S. Tonegawa, S. Kasahara, T. Fukuda, K. Sugimoto, N. Yasuda, Y. Tsuruhara, D. Watanabe, Y. Mizukami, Y. Haga, T. D. Matsuda, E. Yamamoto, Y. Onuki, H. Ikeda, Y. Matsuda, and T. Shibauchi, Direct obser-vation of lattice symmetry breaking at the hidden-order transition in URu 2Si 2, Nature Communications 5, 4188 (2014). [49] S. V. Syzranov and A. P. Ramirez, Eminuscent phase in frustrated magnets: a challenge to quantum spin liquids, Nature Communications 13 , 2993 (2022). [50] C. R. Wiebe, J. A. Janik, G. J. MacDougall, G. M. Luke, J. D. Garrett, H. D. Zhou, Y.-J. Jo, L. Balicas, Y. Qiu, J. R. D. Copley, Z. Yamani, and W. J. L. Buyers, Gapped itinerant spin excitations account for missing entropy in the hidden-order state of URu 2Si 2, Nature Physics 3, 96 (2007). [51] J. R. Jeffries, M. E. Manley, M. A. Wall, K. J. M. Blobaum, and A. J. Schwartz, Hidden disorder in the 
+
+α′ → δ transformation of Pu-1.9 at. % Ga, Phys. Rev. B 
+
+85 , 224104 (2012). [52] E. Ressouche, R. Ballou, F. Bourdarot, D. Aoki, V. Si-monet, M. T. Fernandez-Diaz, A. Stunault, and J. Flou-quet, Hidden order in URu 2Si 2 unveiled, Physical Review Letters 109 , 067202 (2012). [53] N. Harrison, J. B. Betts, M. R. Wartenbe, F. F. Bal-akirev, S. Richmond, M. Jaime, and P. H. Tobash, Phase stabilization by electronic entropy in plutonium, Nature Communications 10 , 10.1038/s41467-019-11166-0 (2019). [54] S. Martiniani, P. M. Chaikin, and D. Levine, Quantifying hidden order out of equilibrium, Physical Review X 9,011031 (2019). [55] J. P´ asztorov´ a, A. M. Tehrani, I. ˇZivkovi´ c, N. A. Spaldin, and H. M. Rønnow, Experimental and theoretical ther-modynamic studies in Ba 2MgRO 6 the ground state in the context of Jahn-Teller effect, Journal of Physics: Con-densed Matter 35 , 245603 (2023). [56] S. Chakravarty, R. Laughlin, D. K. Morr, and C. Nayak, Hidden order in the cuprates, Physical Review B 63 ,094503 (2001). [57] A. P. Ramirez, A. Hayashi, R. J. Cava, R. Siddharthan, and B. S. Shastry, Zero-point entropy in ‘spin ice’, Nature 
+
+399 , 333 (1999). [58] R. G. Melko, B. C. den Hertog, and M. J. P. Gingras, Long-Range Order at Low Temperatures in Dipolar Spin Ice, Phys. Rev. Lett. 87 , 067203 (2001). [59] O. A. Starykh, Unusual ordered phases of highly frus-trated magnets: a review, Reports on Progress in Physics 
+
+78 , 052502 (2015). [60] L. Lu, M. Song, W. Liu, A. P. Reyes, P. Kuhns, H. O. Lee, I. R. Fisher, and V. F. Mitrovi´ c, Magnetism and local symmetry breaking in a Mott insulator with strong spin orbit interactions, Nature Communications 8, 14407 (2017). [61] W. Liu, R. Cong, A. P. Reyes, I. R. Fisher, and V. F. Mitrovi´ c, Nature of lattice distortions in the cubic double perovskite Ba 2NaOsO6, Physical Review B 97 , 224103 (2018). [62] R. Cong, R. Nanguneri, B. Rubenstein, and V. F. Mitrovi´ c, Evidence from first-principles calculations for orbital ordering in Ba 2NaOsO 6: A Mott insulator with strong spin-orbit coupling, Physical Review B 100 ,245141 (2019). [63] S. Carr, I. K. Nikolov, R. Cong, A. Del Maestro, C. Ra-manathan, and V. F. Mitrovi´ c, Multimodal spectroscopy of order parameter distributions, Phys. Rev. B 108 ,054421 (2023). [64] A. S. Erickson, S. Misra, G. J. Miller, R. R. Gupta, Z. Schlesinger, W. A. Harrison, J. M. Kim, and I. R. Fisher, Ferromagnetism in the Mott Insulator Ba 2NaOsO 6, Physical Review Letters 99 , 016404 (2007). 11 
+
+[65] F. Mehran and K. W. H. Stevens, Possibility of Jahn-Teller glass formation, Physical Review B 27 , 2899 (1983). [66] V. Tsurkan, V. Fritsch, J. Hemberger, H.-A. K. von Nidda, N. B¨ uttgen, D. Samusi, S. K¨ orner, E.-W. Scheidt, S. Horn, R. Tidecks, and A. Loidl, Orbital fluctuations and orbital order in FeCr 2S4, Journal of Physics and Chemistry of Solids 66 , 2036 (2005). [67] R. Fichtl, V. Tsurkan, P. Lunkenheimer, J. Hemberger, V. Fritsch, H.-A. K. von Nidda, E.-W. Scheidt, and A. Loidl, Orbital freezing and orbital glass state in FeCr 2S4, Phys. Rev. Lett. 94 , 027601 (2005). [68] W. Liu, R. Cong, E. Garcia, A. Reyes, H. Lee, I. Fisher, and V. Mitrovi´ c, Phase diagram of Ba 2NaOsO 6, a Mott insulator with strong spin orbit interactions, Physica B: Condensed Matter 536 , 863 (2018). [69] K. Willa, R. Willa, U. Welp, I. R. Fisher, A. Rydh, W.-K. Kwok, and Z. Islam, Phase transition preceding magnetic long-range order in the double perovskite Ba 2NaOsO 6,Physical Review B 100 , 041108 (2019). [70] V. da Cruz Pinha Barbosa, J. Xiong, P. M. Tran, M. A. McGuire, J. Yan, M. T. Warren, R. V. Aguilar, W. Zhang, M. Randeria, N. Trivedi, D. Haskel, and P. M. Woodward, The Impact of Structural Distortions on the Magnetism of Double Perovskites Containing 5 d1Transition-Metal Ions, Chemistry of Materials 34 , 1098 (2022). [71] P. E. Lammert, D. S. Rokhsar, and J. Toner, Topology and nematic ordering, Phys. Rev. Lett. 70 , 1650 (1993). [72] E. Fradkin, S. A. Kivelson, M. J. Lawler, J. P. Eisen-stein, and A. P. Mackenzie, Nematic Fermi Fluids in Condensed Matter Physics, Annual Review of Condensed Matter Physics 1, 153 (2010). [73] S.-H. Baek, D. V. Efremov, J. M. Ok, J. S. Kim, J. van den Brink, and B. B¨ uchner, Orbital-driven ne-maticity in FeSe, Nature Materials 14 , 210 (2015). [74] J. Teyssier, E. Giannini, A. Stucky, R. ˇCern´ y, M. V. Eremin, and D. van der Marel, Jahn-Teller induced ne-matic orbital order in tetragonal Sr 2VO 4, Phys. Rev. B 
+
+93 , 125138 (2016). [75] B. Freelon, R. Sarkar, S. Kamusella, F. Br¨ uckner, V. Gri-nenko, S. Acharya, M. Laad, L. Craco, Z. Yamani, R. Fla-cau, I. Swainson, B. Frandsen, R. Birgeneau, Y. Liu, B. Karki, A. Alfailakawi, J. C. Neuefeind, M. Everett, H. Wang, B. Xu, M. Fang, and H. H. Klauss, Nematic fluctuations in iron-oxychalcogenide Mott insulators, npj Quantum Materials 6, 4 (2021). [76] J. B. Goodenough, Spin-orbit-coupling effects in transition-metal compounds, Phys. Rev. 171 , 466 (1968). [77] D. I. Khomskii, Metal-insulator transitions, in Transition Metal Compounds (Cambridge University Press, 2014) Chap. 10, pp. 378–432. [78] D. Hirai, H. Sagayama, S. Gao, H. Ohsumi, G. Chen, T.-h. Arima, and Z. Hiroi, Detection of multipolar orders in the spin-orbit-coupled 5 d Mott insulator Ba 2MgReO 6,Physical Review Research 2, 022063 (2020). [79] S. W. Lovesey and D. D. Khalyavin, Magnetic or-der and 5 d1 multipoles in a rhenate double perovskite Ba 2MgReO 6, Phys. Rev. B 103 , 235160 (2021). [80] A. Mansouri Tehrani and N. A. Spaldin, Untangling the structural, magnetic dipole, and charge multipolar orders in Ba 2MgReO 6, Phys. Rev. Materials 5, 104410 (2021). [81] H. Ishikawa, D. Hirai, A. Ikeda, M. Gen, T. Yajima, A. Matsuo, Y. H. Matsuda, Z. Hiroi, and K. Kindo, Phase transition in the 5 d1 double perovskite Ba 2CaReO 6 in-duced by high magnetic field, Phys. Rev. B 104 , 174422 (2021). [82] D. Hirai and Z. Hiroi, Successive symmetry breaking in a Jeff = 3/2 quartet in the spin–orbit coupled insulator Ba 2MgReO 6, Journal of the Physical Society of Japan 
+
+88 , 064712 (2019). [83] S. Voleti, K. Pradhan, S. Bhattacharjee, T. Saha-Dasgupta, and A. Paramekanti, Probing octupolar hid-den order via Janus impurities, npj Quantum Materials 
+
+8, 42 (2023). [84] H. Abe, H. Yasuoka, M. Matsuura, A. Hirai, and T. Shinjo, Spin echo modulation caused by the quadrupole interaction observed on boron nuclei in ferro-magnetic Fe 2B, Journal of the Physical Society of Japan 
+
+19 , 1491 (1964). [85] M.-A. Vachon, W. Kundhikanjana, A. Straub, V. F. Mitrovi´ c, A. P. Reyes, P. Kuhns, R. Coldea, and Z. Tylczynski, 133 Cs NMR investigation of 2D frustrated Heisenberg antiferromagnet, Cs 2CuCl 4, New Journal of Physics 8, 222 (2006). [86] Y. Tokunaga, D. Aoki, Y. Homma, S. Kambe, H. Sakai, S. Ikeda, T. Fujimoto, R. E. Walstedt, H. Yasuoka, E. Ya-mamoto, A. Nakamura, and Y. Shiokawa, NMR Evidence for Higher-Order Multipole Order Parameters in NpO 2,Physical Review Letters 97 , 257601 (2006). [87] T. Shimojima, Y. Suzuki, A. Nakamura, N. Mitsu-ishi, S. Kasahara, T. Shibauchi, Y. Matsuda, Y. Ishida, S. Shin, and K. Ishizaka, Ultrafast nematic-orbital exci-tation in FeSe, Nature Communications 10 , 1946 (2019). [88] T. Konstantinova, L. Wu, M. Abeykoon, R. J. Koch, A. F. Wang, R. K. Li, X. Shen, J. Li, J. Tao, I. A. Zal-iznyak, C. Petrovic, S. J. L. Billinge, X. J. Wang, E. S. Bozin, and Y. Zhu, Photoinduced dynamics of nematic order parameter in FeSe, Phys. Rev. B 99 , 180102 (2019). [89] E. M. Chudnovsky, W. M. Saslow, and R. A. Serota, Ordering in ferromagnets with random anisotropy, Phys. Rev. B 33 , 251 (1986). [90] D. E. Feldman, Exact zero-temperature critical be-haviour of the ferromagnet in the uniaxial random field, Journal of Physics A: Mathematical and General, 31 ,L177 (1998). [91] V. Tripathi, P. Chandra, and P. Coleman, Sleuthing hid-den order, Nature Physics 3, 78 (2007). [92] S. C. Riggs, M. C. Shapiro, A. V. Maharaj, S. Raghu, E. D. Bauer, R. E. Baumbach, P. Giraldo-Gallo, M. Wartenbe, and I. R. Fisher, Evidence for a nematic component to the hidden-order parameter in URu 2Si 2
+
+from differential elastoresistance measurements, Nature Communications 6, 6425 (2015). [93] A. M. Samarakoon, M. Takahashi, D. Zhang, J. Yang, N. Katayama, R. Sinclair, H. D. Zhou, S. O. Diallo, G. Ehlers, D. A. Tennant, S. Wakimoto, K. Yamada, G.-W. Chern, T. J. Sato, and S. H. Lee, Scaling of Memories and Crossover in Glassy Magnets, Scientific Reports 7,12053 (2017). [94] S. H. Lee, C. Broholm, W. Ratcliff, G. Gasparovic, Q. Huang, T. H. Kim, and S. W. Cheong, Emergent ex-citations in a geometrically frustrated magnet, Nature 
+
+418 , 856 (2002). [95] A. Chiesa, E. Macaluso, F. Petiziol, S. Wimberger, P. Santini, and S. Carretta, Molecular nanomagnets as qubits with embedded quantum-error correction, The Journal of Physical Chemistry Letters 11 , 8610 (2020). 12 
+
+[96] C.-J. Yu, S. von Kugelgen, D. W. Laorenza, and D. E. Freedman, A molecular approach to quantum sensing, ACS Central Science 7, 712 (2021). [97] L. Fu, Parity-Breaking Phases of Spin-Orbit-Coupled Metals with Gyrotropic, Ferroelectric, and Multipolar Orders, Physical Review Letters 115 , 026401 (2015). [98] A. S. Patri, A. Sakai, S. Lee, A. Paramekanti, S. Nakat-suji, and Y. B. Kim, Unveiling hidden multipolar or-ders with magnetostriction, Nature Communications 10 ,10.1038/s41467-019-11913-3 (2019). [99] D. A. Abanin, P. A. Lee, and L. S. Levitov, Randomness-Induced XY Ordering in a Graphene Quantum Hall Fer-romagnet, Phys. Rev. Lett. 98 , 156801 (2007).
