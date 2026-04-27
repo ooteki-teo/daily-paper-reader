@@ -1,0 +1,1039 @@
+Title: Superconductivity induced by altermagnetic spin fluctuations in high-pressure MnB$_4$
+
+URL Source: https://arxiv.org/pdf/2604.21561v1
+
+Published Time: Fri, 24 Apr 2026 00:53:38 GMT
+
+Number of Pages: 16
+
+Markdown Content:
+# Superconductivity induced by altermagnetic spin fluctuations in high-pressure MnB 4
+
+Danylo Radevych, 1, ∗ Merc` e Roig, 2, † Daniel F. Agterberg, 2, ‡ and Igor I. Mazin 1, 3, §
+
+> 1
+
+Department of Physics and Astronomy, George Mason University, Fairfax, VA 22030, USA 
+
+> 2
+
+Department of Physics, University of Wisconsin-Milwaukee, Milwaukee, WI 53201, USA 
+
+> 3
+
+Quantum Science and Engineering Center, George Mason University, Fairfax, VA 22030, USA 
+
+Recent experiments found superconductivity in nonmagnetic MnB 4 with a high critical tempera-ture ( Tc) reaching 14 K at 158 GPa. However, ab initio calculations of the electron-phonon coupling predict a Tc below 1 K, suggesting that a conventional mechanism cannot explain this phenomenon. In this Letter, we find that MnB 4 is close to an altermagnetic instability in density-functional theory calculations. We propose that the superconductivity is driven by altermagnetic spin fluctuations. To verify the pairing symmetry, we have constructed a two-orbital tight-binding model, where boron states at the Fermi level are integrated out. Using this model, we identify an extended-s symmetry as the leading pairing instability. If confirmed, this will be the first reported case of superconductivity driven by altermagnetic spin fluctuations. 
+
+Introduction — Following the introduction of alter-magnets as a new class of materials [1, 2], the question arose whether altermagnetism could drive superconduc-tivity [3]. Altermagnetic (AM) spin fluctuations are of particular interest since they can persist in phases lack-ing long-range magnetic order, as such order is typically detrimental to superconductivity [4]. Confirmed cases of superconductors with antiferromagnetic (AFM) spin fluctuations—characterized by the local magnetic order-ing vector q̸ = 0 and local net magnetization M = 0—have been reported [5–8]. Similarly, materials exhibiting ferromagnetic (FM) spin fluctuations with q = 0 and 
+
+M̸ = 0 have also been suggested [8–11]. Although a recent theoretical study [12] presented a superconduct-ing phase diagram for the remaining possibility of AM spin fluctuations ( q = 0 and M = 0) that induce mag-netic moments on two sites within the same primitive cell [13, 14], no specific material utilizing this mechanism has yet been identified. Recent resistivity measurements [15] in nonmagnetic (NM) P 21/c MnB 4 [see Figs. 1(a)–1(d) and Secs. I and V of the Supplemental Material (SM) [16] for crystal-lographic details] [17–32] demonstrated the emergence of superconductivity at pressures above 30 GPa, with a crit-ical temperature ( Tc) of 14.2 K at 158 GPa. Since con-ventional electron-phonon coupling (EPC) calculations based on density-functional perturbation theory (DFPT) predicted Tc < 1 K, the superconductivity was specu-lated to originate from an unconventional pairing mech-anism associated with Mn magnetic moments. However, the specific spin fluctuations driving the superconductiv-ity have not yet been identified. In this Letter, we demonstrate that spin fluctuations are, indeed, present in this system, and their altermag-netic symmetry leads to an unconventional extended-s
+
+superconductivity. This strongly suggests that MnB 4
+
+represents the first known material where superconduc-tivity originates from proximity to altermagnetism. Our density-functional theory (DFT) results supporting this picture are described in detail below, as is the effec-aaaa  
+
+> xxyyyzzz
+> bbbbccc
+
+## (a) (b) 
+
+## (c) (d)  
+
+> xz
+> 2.85 Å
+> Mn B
+> IIIIIIII
+
+FIG. 1. P 21/c MnB 4 primitive cell at 158 GPa viewed from several directions: (a) perspective view, (b) along the y-axis, (c) along the z-axis, and (d) along the x-axis. Cartesian axes: gray arrows; non-orthogonal lattice vectors a, b, and c: black arrows; Mn: purple; B: green; Mn–Mn dimer and inversion (I) centers: blue crosses. 
+
+tive minimal DFT-based two-orbital tight-binding (TB) model. The corresponding analysis of the superconduct-ing order parameter is also discussed. Additionally, the DFPT EPC calculations performed in this work are re-ported in Sec. III of the SM [16]. 
+
+Conventional mechanism — The electronic band structure and density of states (eDOS) of NM MnB 4 at 0 and 158 GPa are shown in Fig. 2. Under pressure, the semimetallic phase undergoes a transition to a metallic state. In particular, the eDOS at the Fermi level N (εF)increases from 0.07 eV −1 per Mn at 0 GPa to 0.57 eV −1
+
+per Mn at 158 GPa. Despite a notably higher N (εF), the results presented in Sec. III of the SM [16] show that the conventional critical temperature of MnB 4 due to EPC is below 1 K even at 158 GPa — significantly lower than the experimental value of 14 K. This large discrepancy 
+
+> arXiv:2604.21561v1 [cond-mat.supr-con] 23 Apr 2026
+
+20.26 2.27  
+
+> N(εF):
+> 158 GPa 0 GPa
+> ε - ε F (eV)
+
+FIG. 2. Electronic band structure and density of states (eDOS) of nonmagnetic P 21/c MnB 4 at 0 GPa (black) and 158 GPa (purple). The eDOS is shown for both spin channels, with corresponding values at the Fermi level N (εF) indicated near the horizontal dashed gray line. 
+
+between the calculated and experimentally measured val-ues strongly suggests that superconductivity in MnB 4 is not driven by electron-phonon coupling. 
+
+Spin fluctuations — Superconductivity driven by spin fluctuations typically emerges near a quantum crit-ical point (QCP) induced by pressure or doping [10, 12, 33–35]. The tendency of Mn ions to exhibit strong local magnetic moments in almost all their compounds [36–39] and the absence of long-range magnetic order in MnB 4
+
+at zero pressure [26, 27, 31] suggest that the QCP in MnB 4 is located at a slightly negative pressure. This is somewhat different from other spin-driven superconduc-tors, where superconductivity sets in right at the QCP, or even slightly before [40, 41]. Apparently, such behav-ior in MnB 4 is arrested by the anomalously low eDOS, and superconductivity only emerges at a higher pressure, when sufficient eDOS has been attained. A standard method to investigate the underlying mag-netic order that is not realized in normal DFT calcula-tions is to apply a Hubbard U correction (“DFT+ U ”) to enhance the propensity for magnetism [42, 43]. This correction is not necessarily physically justified, but it provides a gauge of how close MnB 4 is to a magnetic transition and what the hidden magnetic order is. The P 21/c MnB 4 primitive cell contains two Mn–Mn dimers whose centers coincide with the inversion I centers [Figs. 1(a)–1(d)]. The four distinct Mn sites allow for four different magnetic states with q = 0. These magnetic configurations within the primitive cell—two AFM, one FM, and one AM—are shown in Figs. 3(a)–3(d). Their DFT+ U -calculated total energies with respect to the NM state for various values of U at 0 and 158 GPa are shown in Figs. 4(a) and 4(b), respectively. The FM state is not stabilized at any pressure. At 0 GPa, values of U ≈ 1 eV and U ≈ 2.5 eV are required for the Mn atoms to stabi-lize the AM and two AFM configurations, respectively. zxyI
+
+> I
+
+(a) (b) (c) (d) 
+
+> IIIIII
+
+FIG. 3. Considered magnetic configurations of MnB 4:(a) antiferromagnetic 1 (AFM 1), (b) antiferromagnetic 2 (AFM 2), (c) ferromagnetic (FM), and (d) altermagnetic (AM). Primitive-cell edges: black solid lines; Cartesian axes: gray arrows; Mn–Mn dimer and inversion ( I) centers: blue crosses; Mn magnetic moments: white arrows. 0 GPa 
+
+> E - E NM  (eV / Mn) 0.15 0.10 0.05 0.00
+
+FM AFM 2 AM AFM 1 
+
+# (a) (b) 
+
+158 GPa 
+
+U (eV) 0.015 0.010 0.005 0.000 FM AFM 2 AM AFM 1 
+
+> E - E NM  (eV / Mn)
+
+FIG. 4. Relative energies of magnetic P 21/c MnB 4 con-figurations with respect to the nonmagnetic (NM) state as a function of the Hubbard U parameter at (a) 0 GPa and (b) 158 GPa. Abbreviations denote antiferromagnetic (AFM 1 and AFM 2), ferromagnetic (FM), and altermag-netic (AM) orders. Note the different energy scales used for 0 and 158 GPa. 3(a) (b)       
+
+> kzz
+> YCC2BHMEDZ
+> Γ
+> AH2H4Y2M4M2
+> xykykx
+> kzz
+> YCC2BHMEDZ
+> Γ
+> A
+> H2H4Y2M4M2
+> xykykx
+
+TB DFT  
+
+> FIG. 5. Comparison of the Fermi surfaces obtained from the (a) DFT-calculated electronic structure and (b) minimal tight-binding model.
+
+The AM state remains the lowest-energy phase for all higher values of U . At 158 GPa, the AM configuration stabilizes at U ≈ 3.5 eV with an energy ∼ 2.5 meV / Mn lower than the NM state. Since DFT+ U is a mean-field theory, these results do not account for the suppression of the magnetic order by spin fluctuations under pressure. However, they demonstrate that the dominant spin fluc-tuations in MnB 4 must be altermagnetic, as the AM state consistently dominates the magnetic energy landscape. 
+
+Minimal tight-binding model — The electronic struc-ture of MnB 4 at 158 GPa [Fig. 2 and Fig. S2(b) of the SM [16]] consists of entangled B and Mn bands crossing the Fermi level εF. The resulting DFT Fermi surface, shown in Fig. 5(a), is complex due to the presence of B pockets surrounding a central “maggot”-shaped sheet with dom-inant Mn character. Since spin fluctuations on Mn ions are expected to couple with the Mn rather than B states, one needs to exclude the B degrees of freedom and se-lect only the relevant Mn states near εF. Furthermore, a close inspection reveals that the Mn states near the Fermi surface arise from Mn–Mn dimers shown in Figs. 3(a)– 3(d). Therefore, we replace each dimer with an effective “bond” orbital located at its midpoint, which is an inver-sion center [blue crosses in Figs. 1(a)–1(d)]. Note that in the AM arrangement, both atoms of each dimer have the same spin polarization, and the inversion centers do not destroy the AM state. Thus, a minimal model consists of two bond orbitals per primitive cell at the inversion centers, in agreement with a class of minimal models commonly used for al-termagnets [12–14]. For the P 21/c space group, the symmetry-constrained Hamiltonian is given by 
+
+H(k) = ( ϵ0(k) − μ) τ0 + ϵx(k)τx + ϵz (k)τz , (1) where ϵ0(k) and μ = εF denote the dispersion for the two bond orbitals and chemical potential, respectively. The 
+
+τi are the 2 × 2 Pauli matrices acting in orbital space.                             
+
+> TABLE I. Numerical values of the parameters in the tight-binding model. Parameter Value Parameter Value Parameter Value (eV) (eV) (eV)
+> μ−0.829 t10.669 u1−0.169
+> tx0.028 t2−0.376 u20.234
+> ty0.151 t3−0.002 u3−0.197
+> tz0.060 t40.013 u4−0.112
+> u50.119
+> u60.103
+
+The k-dependent functions ϵ0(k), ϵx(k), and ϵz (k) are 
+
+ϵ0(k) = tx cos kx + ty cos ky + tz cos kz
+
++ u1 sin kx sin kz + u2 cos kx cos kz
+
++ u3 cos kx cos ky + u4 cos ky cos kz
+
++ u5 sin kx cos ky sin kz + u6 cos kx cos ky cos kz ,ϵx(k) = t1 cos ky
+
+2 cos kz
+
+2 + t2 sin kx cos ky
+
+2 sin kz
+
+2 ,ϵz (k) = t3 sin kx sin ky + t4 sin ky sin kz ,
+
+where ti and uj are hopping parameters. The wavevector 
+
+k is given in reciprocal crystal coordinates multiplied by 2π, with directions relative to the Brillouin zone shown in Fig. 5(b). Here, the Hamiltonian in Eq. (1) is fitted to two Wan-nierized Mn electronic bands near the Fermi level εF,only one of which crosses εF (see Sec. IV of the SM [16] for details regarding the Wannierization procedure). Although the ti parameters are the most important in the TB model, the terms with uj parameters are also allowed by symmetry and improve the agreement with the DFT results. All TB parameters extracted from the Wannierization are reported in Table I. The resulting TB Fermi surface is compared to the DFT Fermi surface in Figs. 5(a)–5(b). The central Mn feature in Fig. 5(b) is now isolated from B admixture and can be analyzed for its superconducting properties. 
+
+Leading pairing channel — The derivation of the superconducting gap equation for isotropic Heisenberg AM spin fluctuations is detailed in Sec. II of the SM [16]. Unlike Ising spin fluctuations, which involve only one spin orientation and allow for s-, p-, and d-wave pairing states in altermagnets [12], the isotropic model significantly suppresses the p-wave channel [16] due to the factor of three enhancement in the singlet pair-ing strength (see the SM [16] for more details). Con-sequently, only intra-unit cell spin-singlet extended s-wave [with ∆( k) ≈ cos( ky /2) cos( kz /2)] and d-wave [with ∆( k) ≈ sin( ky /2) sin( kz /2)] channels compete. As shown in Figs. S1(e) and S1(f) of the SM [16], the d-wave state is less favorable due to nodal lines in the order parame-ter that suppress the gap magnitude over a substantial portion of the Fermi surface. The resulting pairing eigen-4value, determining the instability temperature, for the s-wave channel ( λs) is much larger than that for the d-wave channel ( λd). 
+
+Conclusions — The possibility of conventional electron-phonon superconductivity in MnB 4 is conclu-sively ruled out. Instead, we argue that the observed superconductivity is driven by altermagnetic spin fluctu-ations, detected by means of DFT+ U calculations. Using a minimal two-orbital tight-binding model fitted to Wan-nierized DFT bands, and integrating out the irrelevant boron states, an extended s-wave pairing channel is iden-tified as the leading superconducting instability. These results suggest that MnB 4 represents the first realized example of superconductivity originating from altermag-netism, thereby opening a new avenue for magnetism-driven pairing states. 
+
+Acknowledgements — The authors thank Elena R. Margine and Aleksey N. Kolmogorov for helpful discussions. This work was supported by the Na-tional Science Foundation (Grants Nos. DMR-2320074 and DMREF-2323857). I.M. acknowledges support from Army Research Office under Cooperative Agree-ment Number W911NF-22-2-0173. D.F.A and M.R. acknowledge support from the Simons Foundation grant SFI-MPS-NFS-00006741-02. D.R. also acknowledges the Texas Advanced Computing Center (TACC) at The University of Texas at Austin [44] (Allocation Nos. TG-DMR180071 and DMR22004) and the San Diego Supercomputer Center (SDSC) at the University of Cal-ifornia San Diego [45] (Allocation No. TG-DMR180071) for providing the computational resources used in this work. 
+
+> End matter
+
+DFT — Electronic structure calculations were per-formed using the Vienna Ab initio Simulation Pack-age (VASP) version 6.5.1 [46–50]. Standard projector augmented-wave (PAW) [51] pseudopotentials with the generalized gradient approximation (GGA) of Perdew, Burke, and Ernzerhof (PBE) [52] were employed. The calculations used a plane-wave energy cutoff of 580 eV, a Methfessel-Paxton smearing [53] of 0.27 eV, and a 12 × 12 × 12 Γ-centered k-point grid. Additionally, the results were verified using the PWscf package of Quantum ESPRESSO (QE) version 7.4.1 [54–57] as a required step before the DFPT calcula-tions of the electron-phonon coupling. In QE, op-timized norm-conserving Vanderbilt pseudopotentials (ONCVPSP) [58, 59] with the PBE functional—obtained from the PseudoDojo library [60–62]—were used with a wavefunction energy cutoff of 90 Ry and an automati-cally generated 12 × 12 × 12 k-point grid. The electronic structures from VASP and QE were in excellent agree-ment. Crystal structures and Fermi surfaces were visualized with VESTA [63] and FermiSurfer [64], respectively. 
+
+DFPT — EPC calculations were performed in QE using the same pseudopotentials and energy cutoffs as the initial DFT calculations. Other technical details are reported in Sec. III of the SM [16]. 
+
+DFT +U — Total energy calculations for various values of the Hubbard U parameter were performed in VASP. FM, AFM, and AM configurations were symmetry-classified using the amcheck program [65, 66]. 
+
+Wannierization — The interface between VASP 6.5.1 and Wannier90 3.1.0 [67, 68] was used for the Wannier-ization process, with further technical details provided in Sec. IV of the SM [16].                                                                 
+
+> ∗Corresponding author: dradevyc@gmu.edu
+> †roigserv@uwm.edu
+> ‡agterber@uwm.edu
+> §imazin2@gmu.edu [1] L. ˇSmejkal, J. Sinova, and T. Jungwirth, Beyond conven-tional ferromagnetism and antiferromagnetism: A phase with nonrelativistic spin and crystal rotation symmetry ,Phys. Rev. X 12 , 031042 (2022), https://link.aps. org/doi/10.1103/PhysRevX.12.031042 .[2] L. ˇSmejkal, J. Sinova, and T. Jungwirth, Emerg-ing research landscape of altermagnetism ,Phys. Rev. X12 , 040501 (2022), https://link.aps.org/doi/10. 1103/PhysRevX.12.040501 .[3] I. I. Mazin, Notes on altermagnetism and superconductiv-ity , AAPPS Bulletin 35 , 18 (2025), https://doi.org/ 10.1007/s43673-025-00158-6 .I. I. Mazin, Notes on altermagnetism and superconduc-tivity (2022), https://doi.org/10.48550/arXiv.2203. 05000 .[4] A. A. Abrikosov and L. P. Gor’kov, Contribution to the theory of superconducting alloys with paramagnetic im-purities , Zhur. Eksptl’. i Teoret. Fiz. Vol: 39 (1960),
+> https://www.osti.gov/biblio/4097498 .[5] M. Sigrist and K. Ueda, Phenomenological theory of unconventional superconductivity ,Rev. Mod. Phys.
+> 63 ,239 (1991), https://link.aps.org/doi/10.1103/ RevModPhys.63.239 .[6] T. Moriya and K. Ueda, Antiferromagnetic spin fluc-tuation and superconductivity , Reports on Progress in Physics 66 ,1299 (2003), https://doi.org/10.1088/ 0034-4885/66/8/202 .[7] P. A. Lee, N. Nagaosa, and X.-G. Wen, Doping a Mott insulator: Physics of high-temperature superconductivity ,Rev. Mod. Phys. 78 , 17 (2006), https://link.aps.org/ doi/10.1103/RevModPhys.78.17 .[8] I. I. Mazin, Unconventional superconductivity ,in En-cyclopedia of Condensed Matter Physics (Second Edi-tion) ,edited by T. Chakraborty (Academic Press, Oxford, 2024), pp. 598–599, second edition ed., ISBN 978-0-323-91408-6, https://www.sciencedirect. com/science/article/pii/B9780323908009001608 .
+
+5
+
+[9] I. I. Mazin and D. J. Singh, Ferromagnetic spin fluctua-tion induced superconductivity in Sr 2RuO 4, Phys. Rev. Lett. 79 , 733 (1997), https://link.aps.org/doi/10. 1103/PhysRevLett.79.733 .[10] P. J. Hirschfeld, M. M. Korshunov, and I. I. Mazin, 
+
+Gap symmetry and structure of Fe-based superconduc-tors , Reports on Progress in Physics 74 , 124508 (2011), 
+
+https://doi.org/10.1088/0034-4885/74/12/124508 .[11] H. Hosono and K. Kuroki, Iron-based superconduc-tors: Current status of materials and pairing mech-anism , Physica C: Superconductivity and its Ap-plications 514 , 399 (2015), superconducting Ma-terials: Conventional, Unconventional and Unde-termined, https://www.sciencedirect.com/science/ article/pii/S0921453415000477 .[12] Y.-M. Wu, Y. Wang, and R. M. Fernandes, Intra-unit-cell singlet pairing mediated by altermagnetic fluctua-tions , Phys. Rev. Lett. 135 , 156001 (2025), https:// link.aps.org/doi/10.1103/dlpb-gfct .[13] M. Roig, A. Kreisel, Y. Yu, B. M. Andersen, and D. F. Agterberg, Minimal models for altermagnetism , Physi-cal Review B 110 (2024), http://dx.doi.org/10.1103/ PhysRevB.110.144412 .[14] D. S. Antonenko, R. M. Fernandes, and J. W. Vender-bos, Mirror chern bands and weyl nodal loops in al-termagnets , Physical Review Letters 134 (2025), http: //dx.doi.org/10.1103/PhysRevLett.134.096703 .[15] Z.-N. Xiang, Y.-J. Zhang, Q. Lu, Q. Li, Y. Li, T. Huang, Y. Zhu, Y. Ye, J. Sun, and H.-H. Wen, Superconductivity up to 14.2 K in MnB 4
+
+Under Pressure , Advanced Materials 37 , 2416882 (2025), https://advanced.onlinelibrary.wiley.com/ doi/abs/10.1002/adma.202416882 .[16] See Supplemental Material at for additional details regarding the crystallographic data, DFPT calcula-tions, superconducting gap equation, Wannierization, and MnB 4 historical background. [17] R. Fruchart and A. Michel, Un nouveau borure de man-gan` ese, MnB 4, Comptes Rendus Hebdomadaires des S´ eances de l’Acad´ emie des Sciences 251 , 2953 (1960). [18] S. Andersson, G. G. Jacobsen, H. M. Seip, C.-G. Lindblad, A. A. Lindberg, G. Jansen, B. Lamm, and B. Samuelsson, A note on the crystal structure of MnB 4,Acta Chem. Scand. 23 , 687 (1969). [19] S. Andersson, J.-O. Carlsson, E. E. Astrup, S. Liaaen-Jensen, A. Lamvik, E. Sunde, and N. A. Sørensen, The crystal structure of MnB 4, Acta Chem. Scand. 24 , 1791 (1970). [20] A. N. Kolmogorov, S. Shah, E. R. Margine, A. F. Bialon, T. Hammerschmidt, and R. Drautz, New su-perconducting and semiconducting fe-b compounds pre-dicted with an ab initio evolutionary search , Phys. Rev. Lett. 105 , 217003 (2010), https://link.aps.org/doi/ 10.1103/PhysRevLett.105.217003 .[21] B. Wang, X. Li, Y. X. Wang, and Y. F. Tu, Phase stability and physical properties of manganese borides: A first-principles study , The Journal of Physical Chem-istry C 115 , 21429 (2011), https://doi.org/10.1021/ jp2073683 .[22] A. F. Bialon, T. Hammerschmidt, R. Drautz, S. Shah, E. R. Margine, and A. N. Kolmogorov, Possible routes for synthesis of new boron-rich Fe–B and Fe 1−xCr xB4
+
+compounds , Applied Physics Letters 98 , 081901 (2011), 
+
+https://doi.org/10.1063/1.3556564 .[23] H. Gou, Z. Li, H. Niu, F. Gao, J. Zhang, R. C. Ewing, and J. Lian, Unusual rigidity and ideal strength of CrB 4
+
+and MnB 4, Applied Physics Letters 100 , 111907 (2012), 
+
+https://doi.org/10.1063/1.3692777 .[24] H. Niu, J. Wang, X.-Q. Chen, D. Li, Y. Li, P. Lazar, R. Podloucky, and A. N. Kolmogorov, Structure, bond-ing, and possible superhardness of CrB 4, Phys. Rev. B 85 , 144116 (2012), https://link.aps.org/doi/10. 1103/PhysRevB.85.144116 .[25] H. Gou, N. Dubrovinskaia, E. Bykova, A. A. Tsirlin, D. Kasinathan, W. Schnelle, A. Richter, M. Merlini, M. Hanfland, A. M. Abakumov, D. Batuk, G. Van Ten-deloo, Y. Nakajima, A. N. Kolmogorov, and L. Dubrovin-sky, Discovery of a superhard iron tetraboride supercon-ductor , Phys. Rev. Lett. 111 , 157002 (2013), https:// link.aps.org/doi/10.1103/PhysRevLett.111.157002 .[26] H. Gou, A. A. Tsirlin, E. Bykova, A. M. Abakumov, G. Van Tendeloo, A. Richter, S. V. Ovsyannikov, A. V. Kurnosov, D. M. Trots, Z. Konˆ opkov´ a, H.-P. Liermann, L. Dubrovinsky, and N. Dubrovinskaia, Peierls distor-tion, magnetism, and high hardness of manganese tetra-boride , Phys. Rev. B 89 , 064108 (2014), https://link. aps.org/doi/10.1103/PhysRevB.89.064108 .[27] A. Knappschneider, C. Litterscheid, N. C. George, J. Br-goch, N. Wagner, J. Beck, J. A. Kurzman, R. Seshadri, and B. Albert, Peierls-Distorted Monoclinic MnB 4 with a Mn-Mn Bond , Angewandte Chemie International Edi-tion 53 , 1684 (2014), https://onlinelibrary.wiley. com/doi/abs/10.1002/anie.201306548 .[28] A. Van Der Geest and A. Kolmogorov, Stability of 41 metal–boron systems at 0 GPa and 30 GPa from first principles , Calphad 46 , 184 (2014), 
+
+https://www.sciencedirect.com/science/article/ pii/S0364591614000364 .[29] Y. Liang, Z. Wu, and S. Wang, Magnetostructural, me-chanical and electronic properties of manganese tetra-boride , AIP Advances 5, 117208 (2015), https://doi. org/10.1063/1.4935485 .[30] E. Bykova, Dissertation, University of Bayreuth, Bayreuth, Germany (2015), available at https: //epub.uni-bayreuth.de/id/eprint/2124/1/Thesis_ Bykova_final_version.pdf .[31] N. Steinki, J. Winter, D. S. Grachtrup, D. Men-zel, S. S¨ ullow, A. Knappschneider, and B. Albert, 
+
+Electronic and magnetic ground state of MnB 4, Jour-nal of Alloys and Compounds 695 , 2149 (2017), 
+
+https://www.sciencedirect.com/science/article/ pii/S0925838816335277 .[32] S. Hajinazar, A. Thorn, E. D. Sandoval, S. Kharabadze, and A. N. Kolmogorov, MAISE: construction of neu-ral network interatomic models and evolutionary struc-ture optimization , Computer Physics Communications 
+
+259 , 107679 (2021), http://dx.doi.org/10.1016/j. cpc.2020.107679 .[33] P. L. Alireza, Y. T. C. Ko, J. Gillett, C. M. Petrone, J. M. Cole, G. G. Lonzarich, and S. E. Sebastian, Su-perconductivity up to 29 k in SrFe 2As 2 and BaFe 2As 2 at high pressures , Journal of Physics: Condensed Matter 21 ,012208 (2008), https://doi.org/10.1088/0953-8984/ 21/1/012208 .[34] J. A. Wilson, A perspective on the fe-based supercon-ductors , Journal of Physics: Condensed Matter 22 ,203201 (2010), https://doi.org/10.1088/0953-8984/ 22/20/203201 .6
+
+[35] Y. Luo, F. Ronning, N. Wakeham, X. Lu, T. Park, Z.-A. Xu, and J. D. Thompson, Pressure-tuned quan-tum criticality in the antiferromagnetic Kondo semimetal CeNi 2−δ As 2, Proceedings of the National Academy of Sciences 112 , 13520 (2015), https://www.pnas.org/ doi/abs/10.1073/pnas.1509581112 .[36] L. Pauling, The nature of the chemical bond. ii. the one-electron bond and the three-electron bond , Journal of the American Chemical Society 53 , 3225 (1931), https:// doi.org/10.1021/ja01360a004 .[37] C. Zener, Interaction between the d-shells in the transi-tion metals. ii. ferromagnetic compounds of manganese with perovskite structure , Phys. Rev. 82 , 403 (1951), 
+
+https://link.aps.org/doi/10.1103/PhysRev.82.403 .[38] J. B. Goodenough, Theory of the role of covalence in the perovskite-type manganites [La , m (II)]Mno 3, Phys. Rev. 
+
+100 , 564 (1955), https://link.aps.org/doi/10.1103/ PhysRev.100.564 .[39] J. K¨ ubler, A. R. William, and C. B. Sommers, Forma-tion and coupling of magnetic moments in heusler alloys ,Phys. Rev. B 28 , 1745 (1983), https://link.aps.org/ doi/10.1103/PhysRevB.28.1745 .[40] N. D. Mathur, F. M. Grosche, S. R. Julian, I. R. Walker, D. M. Freye, R. K. W. Haselwimmer, and G. G. Lon-zarich, Magnetically mediated superconductivity in heavy fermion compounds , Nature 394 , 39 (1998), https:// doi.org/10.1038/27838 .[41] T. Shibauchi, A. Carrington, and Y. Matsuda, Aquantum critical point lying beneath the super-conducting dome in iron pnictides , Annual Re-view of Condensed Matter Physics 5, 113 (2014), 
+
+https://www.annualreviews.org/content/journals/ 10.1146/annurev-conmatphys-031113-133921 .[42] A. G. Petukhov, I. I. Mazin, L. Chioncel, and A. I. Licht-enstein, Correlated metals and the LDA+ u method , Phys. Rev. B 67 , 153106 (2003), https://link.aps.org/doi/ 10.1103/PhysRevB.67.153106 .[43] S. Das, H. Paudyal, E. R. Margine, D. F. Agterberg, and I. I. Mazin, Electron-phonon coupling and spin fluc-tuations in the Ising superconductor NbSe 2, npj Compu-tational Materials 9, 66 (2023), https://doi.org/10. 1038/s41524-023-01017-4 .[44] Texas Advanced Computing Center, Frontera & Stam-pede3 , Service provided by the University of Texas at Austin (2025), http://www.tacc.utexas.edu .[45] San Diego Supercomputer Center, Expanse , Service pro-vided by the University of California San Diego (2025). [46] G. Kresse and J. Hafner, Ab initio molecular dynamics for liquid metals , Phys. Rev. B 47 , 558 (1993), https: //link.aps.org/doi/10.1103/PhysRevB.47.558 .[47] G. Kresse and J. Hafner, Ab initio molecular-dynamics simulation of the liquid-metal–amorphous-semiconductor transition in germanium , Phys. Rev. B 
+
+49 , 14251 (1994), https://link.aps.org/doi/10.1103/ PhysRevB.49.14251 .[48] G. Kresse and J. Furthm¨ uller, Efficient iterative schemes for ab initio total-energy calculations using a plane-wave basis set , Phys. Rev. B 54 , 11169 (1996), https://link. aps.org/doi/10.1103/PhysRevB.54.11169 .[49] G. Kresse and J. Furthm¨ uller, Efficiency of ab-initio to-tal energy calculations for metals and semiconductors using a plane-wave basis set , Computational Materials Science 6, 15 (1996), https://www.sciencedirect.com/ science/article/pii/0927025696000080 .[50] G. Kresse and D. Joubert, From ultrasoft pseudopo-tentials to the projector augmented-wave method , Phys. Rev. B 59 , 1758 (1999), https://link.aps.org/doi/ 10.1103/PhysRevB.59.1758 .[51] P. E. Bl¨ ochl, Projector augmented-wave method , Phys. Rev. B 50 , 17953 (1994), https://link.aps.org/doi/ 10.1103/PhysRevB.50.17953 .[52] J. P. Perdew, K. Burke, and M. Ernzerhof, Generalized gradient approximation made simple , Phys. Rev. Lett. 
+
+77 , 3865 (1996), https://link.aps.org/doi/10.1103/ PhysRevLett.77.3865 .[53] M. Methfessel and A. T. Paxton, High-precision sampling for brillouin-zone integration in metals , Phys. Rev. B 
+
+40 , 3616 (1989), https://link.aps.org/doi/10.1103/ PhysRevB.40.3616 .[54] P. Giannozzi, S. Baroni, N. Bonini, M. Calandra, R. Car, C. Cavazzoni, D. Ceresoli, G. L. Chiarotti, M. Cococ-cioni, I. Dabo, A. Dal Corso, S. de Gironcoli, S. Fab-ris, G. Fratesi, R. Gebauer, et al., Quantum espresso: a modular and open-source software project for quantum simulations of materials , Journal of Physics: Condensed Matter 21 , 395502 (2009), https://doi.org/10.1088/ 0953-8984/21/39/395502 .[55] P. Giannozzi, O. Andreussi, T. Brumme, O. Bunau, M. Buongiorno Nardelli, M. Calandra, R. Car, C. Cavaz-zoni, D. Ceresoli, M. Cococcioni, N. Colonna, I. Carn-imeo, A. Dal Corso, S. de Gironcoli, P. Delugas, et al., 
+
+Advanced capabilities for materials modelling with quan-tum espresso , Journal of Physics: Condensed Matter 29 ,465901 (2017), https://doi.org/10.1088/1361-648X/ aa8f79 .[56] P. Giannozzi, O. Baseggio, P. Bonf` a, D. Brunato, R. Car, I. Carnimeo, C. Cavazzoni, S. de Gironcoli, P. Delugas, F. Ferrari Ruffino, A. Ferretti, N. Marzari, I. Timrov, A. Urru, and S. Baroni, Quantum espresso toward the exascale , The Journal of Chemical Physics 152 , 154105 (2020), https://doi.org/10.1063/5.0005082 .[57] Quantum ESPRESSO , https://www. quantum-espresso.org/ .[58] D. R. Hamann, Optimized norm-conserving Vanderbilt pseudopotentials , Phys. Rev. B 88 , 085117 (2013). [59] D. R. Hamann, Erratum: Optimized norm-conserving Vanderbilt pseudopotentials [Phys. Rev. B 88, 085117 (2013)] , Phys. Rev. B 95 , 239906 (2017). [60] M. van Setten, M. Giantomassi, E. Bousquet, M. Ver-straete, D. Hamann, X. Gonze, and G.-M. Rignanese, 
+
+The PseudoDojo: Training and grading a 85 element op-timized norm-conserving pseudopotential table , Comput. Phys. Commun. 226 , 39 (2018). [61] K. F. Garrity, J. W. Bennett, K. M. Rabe, and D. Van-derbilt, Pseudopotentials for high-throughput DFT calcu-lations , Comput. Phys. Commun. 81 , 446 (2014). [62] K. Lejaeghere, G. Bihlmayer, T. Bj¨ orkman, P. Blaha, S. Bl¨ ugel, V. Blum, D. Caliste, I. E. Castelli, S. J. Clark, A. Dal Corso, S. de Gironcoli, T. Deutsch, J. Kay De-whurst, I. Di Marco, C. Draxl, et al., Reproducibility in density functional theory calculations of solids , Science 
+
+351 , 1415 (2016). [63] K. Momma and F. Izumi, VESTA3 for three-dimensional visualization of crystal, volumetric and morphology data ,Journal of Applied Crystallography 44 , 1272 (2011), 
+
+https://doi.org/10.1107/S0021889811038970 .[64] M. Kawamura, Fermisurfer: Fermi-surface viewer providing multiple representation schemes , Com-7
+
+puter Physics Communications 239 , 197 (2019), 
+
+https://www.sciencedirect.com/science/article/ pii/S0010465519300347 .[65] A. Smolyanyuk, L. ˇSmejkal, and I. I. Mazin, A tool to check whether a symmetry-compensated collinear mag-netic material is antiferro- or altermagnetic , SciPost Phys. Codebases p. 30 (2024), https://scipost.org/ 10.21468/SciPostPhysCodeb.30 .[66] A. Smolyanyuk, L. ˇSmejkal, and I. I. Mazin, Code-base release r1.0 for amcheck , SciPost Phys. Codebases pp. 30–r1.0 (2024), https://scipost.org/10.21468/ SciPostPhysCodeb.30-r1.0 .[67] G. Pizzi, V. Vitale, R. Arita, S. Bl¨ ugel, F. Freimuth, G. G´ eranton, M. Gibertini, D. Gresch, C. Johnson, T. Koretsune, J. Iba˜ nez-Azpiroz, H. Lee, J.-M. Lihm, D. Marchand, A. Marrazzo, et al., Wannier90 as acommunity code: new features and applications , Jour-nal of Physics: Condensed Matter 32 , 165902 (2020), 
+
+https://doi.org/10.1088/1361-648X/ab51ff .[68] N. Marzari, A. A. Mostofi, J. R. Yates, I. Souza, and D. Vanderbilt, Maximally localized Wannier func-tions: Theory and applications , Rev. Mod. Phys. 
+
+84 , 1419 (2012), https://link.aps.org/doi/10.1103/ RevModPhys.84.1419 .Supplemental Material Superconductivity induced by altermagnetic spin fluctuations in high-pressure MnB 4
+
+Danylo Radevych, 1, ∗ Merc` e Roig, 2, † Daniel F. Agterberg, 2, ‡ and Igor I. Mazin 1, 3, §
+
+> 1
+
+Department of Physics and Astronomy, George Mason University, Fairfax, VA 22030, USA 
+
+> 2
+
+Department of Physics, University of Wisconsin-Milwaukee, Milwaukee, WI 53201, USA 
+
+> 3
+
+Quantum Science and Engineering Center, George Mason University, Fairfax, VA 22030, USA 
+
+I. CRYSTALLOGRAPHIC DATA 
+
+Experimental lattice parameters for the P 21/c MnB 4 structure at 0 and 158 GPa were obtained from Ref. [1]. Parameters were converted from the convention where the only non-right angle, β, exceeds 120 ◦ to the standard convention ( β < 120 ◦) using FINDSYM 7.1.7 [2, 3]. The standard lattice, illustrated in Figs. 1(a)–1(d) of the main text, is derived by applying the transformation a′ = a + c, b′ = −b, and c′ = −c. Crystallographic data are summarized in Table SI. All density-functional theory (DFT) calculations used experimental lattice parameters with relaxed internal atomic positions. 
+
+TABLE SI. Crystallographic parameters of the considered P 21/c MnB 4 structures. Lattice parameters are obtained from Ref. [1]. Structure Pressure a, b, c α, β, γ Atom x, y, z Wyckoff Mn–Mn links (GPa) (˚ A) (◦) (fractional) position (˚ A) MnB 4 0 5.48, 5.37, 5.50 90, 115, 90 Mn 0.27, 0.50, 0.77 4e 2.70, 3.20 B1 0.13, 0.18, 0.87 4e B2 0.16, 0.63, 0.34 4e B3 0.33, 0.13, 0.68 4e B4 0.36, 0.69, 0.14 4e 158 4.97, 4.99, 4.93 90, 116, 90 Mn 0.27, 0.50, 0.77 4e 2.40, 2.85 B1 0.12, 0.19, 0.88 4e B2 0.17, 0.62, 0.34 4e B3 0.32, 0.12, 0.69 4e B4 0.37, 0.69, 0.14 4e 
+
+II. DERIVATION OF THE GAP EQUATION 
+
+In this section, we use the minimal tight-binding model described in the main text to derive the gap equation and examine which pairing channel corresponds to the leading superconducting instability. To this end, we solve the linearized gap equation by projecting onto the different gap symmetries. The general form of the tight-binding Hamiltonian by considering the two Mn–Mn dimers corresponds to 
+
+H0(k) = ( ϵ0(k) − μ)τ0 + ϵx(k)τx + ϵz (k)τz , (S1) with the form of the momentum-dependent hoppings given in the main text. To include the coupling to altermagnetic fluctuations, we use an approach inspired by Ref. [4]. In this work, the key result was that altermagnetic fluctuations stabilized predominantly intra-unit cell spin-singlet and spin-triplet states. Provided we are not too close to the altermagnetic quantum critical point, the stability of these pairing states can be understood as originating from nearest-neighbor antiferromagnetic interactions [4]. For physical transparency, we explicitly begin with such an effective interaction and justify this by noting that it reproduces the intra-unit pairing states found in Ref. [4]. This     
+
+> ∗Corresponding author: dradevyc@gmu.edu
+> †roigserv@uwm.edu
+> ‡agterber@uwm.edu
+> §imazin2@gmu.edu
+
+2also allows us to highlight the key difference between our approach and the approach used in Ref. [4]. Specifically, we consider a spin-rotational invariant, or Heisenberg, interaction while an Ising-like interaction was considered in Ref. [4]. These two interactions are: 
+
+VHeisenberg = J X
+
+> ⟨i,j ⟩
+
+⃗S1,i ·⃗ S2,j (S2) and 
+
+VIsing = J X
+
+> ⟨i,j ⟩
+
+Sz 
+
+> 1,i
+
+· Sz 
+
+> 2,j
+
+(S3) where ⟨i, j ⟩ denotes nearest neighbors and ⃗ Sα,j (Szα,j ) denotes the spin ( z-component of spin) on site α in unit cell j.Decomposing these interactions in the pairing channel yields the effective pairing interactions 
+
+HHeisenberg = X
+
+> k,k′,s,s ′
+
+Vk,k′ c†
+
+> k1s
+
+c†−k2s′ c−k′2s′ ck′1s, (S4) and 
+
+HIsing = X
+
+> k,k′,s,s ′
+
+Vk,k′ (δs,s ′ − δs, −s′ )c†
+
+> k1s
+
+c†−k2s′ c−k′2s′ ck′1s, (S5) where s, s ′ denote the sum over spin and Vk,k′ = −J cos 
+
+ ky −k′
+
+> y
+> 2
+
+
+
+cos 
+
+ kz −k′
+
+> z
+> 2
+
+
+
+is the nearest-neighbor interaction. In general, these interactions allow both spin-singlet and spin-triplet solutions. For VHeisenberg , the spin-singlet solution is attractive with an interaction −3J, while the spin-triplet solutions are repulsive with an interaction J.However, for VIsing the spin-singlet solution is attractive with an interaction −J, while the three spin-triplet solutions have different interactions. Denoting the spin structure of these solutions as ∆ i = σi(iσ y ), we find that ∆ z is attractive with an interaction −J, while ∆ x and ∆ y are repulsive with an interaction J. Hence, VIsing allows both spin-singlet and spin-triplet solutions as found in Ref. [4], while VHeisenberg only allows spin-singlet solutions. We now restrict our attention to VHeisenberg and consider only the stable spin-singlet solutions. Projecting the nearest-neighbor interaction into the different symmetry channels, we obtain the following two contributions to the singlet channel: 
+
+V sing  
+
+> k,k′
+
+= −J cos ky
+
+2 cos kz
+
+2 cos k′
+
+> y
+
+2 cos k′
+
+> z
+
+2 + sin ky
+
+2 sin kz
+
+2 sin k′
+
+> y
+
+2 sin k′
+
+> z
+
+2
+
+!
+
+(S6) Note that the interaction in Eq. (S4) is between different sublattices, and therefore this reveals two possible pairing states: a d-wave gap τx sin ky 
+
+> 2
+
+sin kz 
+
+> 2
+
+(iσ y ) and an extended s-wave gap τx cos ky 
+
+> 2
+
+cos kz 
+
+> 2
+
+(iσ y ). The gap equation can be written as [4] ∆i(k) = X
+
+> k′,j
+
+Vk,k′ Γi,j  
+
+> k′
+
+∆j (k′), (S7) where Γ i,j  
+
+> k
+
+= −T P 
+
+> iω n
+
+Tr 
+
+h ˆGhτi ˆGpτj
+
+i
+
+is the projector onto the pairing channels, with ˆGp(k) = [ iω n − H0(k)] −1 and ˆGh(k) = [ iω n + HT 
+
+> 0
+
+(k)] −1 corresponding to the bare particle and hole Green’s functions. To determine the form of the projector, we write the particle and hole Green’s function in the band basis, ˆGp = X
+
+> a=±
+
+Ga
+
+> 0,p
+
+(k, iω n)P a 
+
+> k
+
+, with G±
+
+> 0,p
+
+(k, iω n) = 1
+
+iω n − E±
+
+> k
+
+, (S8) ˆGh = X
+
+> a=±
+
+Ga
+
+> 0,h
+
+(k, iω n)P a 
+
+> k
+
+, with G±
+
+> 0,h
+
+(k, iω n) = 1
+
+iω n + E±
+
+> k
+
+, (S9) where the dispersion for the minimal tight-binding model is E± 
+
+> k
+
+= ϵ0(k) ± pϵ2
+
+> x
+
+(k) + ϵ2 
+
+> z
+
+(k). The projector for the particle and hole Green’s function is the same since HT 
+
+> 0
+
+(−k) = H0(k), and it can be written as 
+
+P a 
+
+> k
+
+= 12 1 + a ϵx(k)τx + ϵz (k)τz
+
+pϵ2
+
+> x
+
+(k) + ϵ2 
+
+> z
+
+(k)
+
+!
+
+, (S10) 3with a = ± denoting the two bands. Since the d-wave and s-wave gaps are in the τx channel, we focus on the projector for these pairing states, which corresponds to Γx,x  
+
+> k
+
+= −T X
+
+> iω n
+
+Tr 
+
+h ˆGhτx ˆGpτx
+
+i
+
+= −T 2
+
+ϵ2
+
+> x
+
+(k) + ϵ2 
+
+> z
+
+(k)
+
+h
+
+ϵ2 
+
+> z
+
+(k)( G+0,p G− 
+
+> 0,h
+
++ G−
+
+> 0,p
+
+G+0,h ) + ϵ2
+
+> x
+
+(k)( G+0,p G+0,h + G−
+
+> 0,p
+
+G−
+
+> 0,h
+
+)
+
+i
+
+. (S11) The DFT band structure in the main text reveals that only E+ 
+
+> k
+
+crosses the Fermi level, while E− 
+
+> k
+
+is far below the chemical potential. Hence, we keep only the projection to the intraband states and focus on the E+ 
+
+> k
+
+band. In this case, the previous expression can be written as Γx,x  
+
+> k
+
+= −T 2ϵ2
+
+> x
+
+(k)
+
+ϵ2
+
+> x
+
+(k) + ϵ2 
+
+> z
+
+(k)
+
+X
+
+> iω n
+
+1
+
+iω n + E+
+
+> k
+
+1
+
+iω n − E+
+
+> k
+
+= ϵ2
+
+> x
+
+(k)
+
+ϵ2
+
+> x
+
+(k) + ϵ2 
+
+> z
+
+(k)tanh 
+
+ E+
+
+> k
+> 2T
+
+
+
+E+
+
+> k
+
+. (S12) Therefore, the gap equation in Eq. (S7) is given by ∆x(k) = X
+
+> k′,α ={d,s }
+
+−J ϵ2
+
+> x
+
+(k′)
+
+ϵ2
+
+> x
+
+(k′) + ϵ2 
+
+> z
+
+(k′) gα(k)gα(k′)tanh 
+
+ E+
+
+> k′
+> 2T
+
+
+
+E+
+
+> k′
+
+∆x(k′), (S13) with gα(k) the basis functions for the s-wave and d-wave gap in Eq. (S6), corresponding to gs(k) = cos ky 
+
+> 2
+
+cos kz 
+
+> 2
+
+and 
+
+gd(k) = sin ky 
+
+> 2
+
+sin kz 
+
+> 2
+
+, respectively. To determine the leading pairing channel, we solve the linearized gap equation on the Fermi surface as an eigenvalue problem. In the presence of nearest-neighbor interactions only, we determine whether the leading superconducting instability corresponds to the d-wave or the extended s-wave state by projecting the linearized gap equation to the previous basis functions gα(k), 
+
+λα = − R dk′
+
+> vk′
+
+R dk 
+
+> vk
+
+gα(k′)V s(k, k′)gα(k)
+
+R dk 
+
+> vk
+
+g2
+
+> α
+
+(k′) , (S14) with V s(k, k′) = −J ϵ2 
+
+> x(k)
+> ϵ2
+> x(k)+ ϵ2
+> z(k)
+
+P 
+
+> α′
+
+gα′ (k)gα′ (k′) and vk the Fermi velocity magnitude. Hence, the eigenvalues for the d-wave and extended s-wave channels correspond to 
+
+λd = J
+
+Z
+
+dk 1
+
+vk
+
+ϵx(k)2
+
+ϵx(k)2 + ϵz (k)2
+
+> g2
+> d(k)
+
+z }| {
+
+sin ky
+
+2 sin kz
+
+2
+
+!2
+
+| {z }
+
+> ˜λd(k)
+
+, (S15) 
+
+λs = J
+
+Z
+
+dk 1
+
+vk
+
+ϵ2
+
+> x
+
+(k)
+
+ϵ2
+
+> x
+
+(k) + ϵ2 
+
+> z
+
+(k) 
+
+> g2
+> s(k)
+
+z }| {
+
+cos ky
+
+2 cos kz
+
+2
+
+!2
+
+| {z }
+
+> ˜λs(k)
+
+. (S16) The largest eigenvalue corresponds to the leading pairing instability. In Figs. S1(a)–S1(f) we show the projections on the Fermi surface of the terms entering Eqs. (S15)–(S16). As seen, the Fermi velocity is largest at the Brillouin zone edges, while the momentum dependence of the factor ϵ2
+
+> x
+
+(k)/(ϵ2
+
+> x
+
+(k) + 
+
+ϵ2 
+
+> z
+
+(k)) is almost negligible. The momentum dependence of the extended s-wave and d-wave pairing gaps is shown in Figs. S1(e) and S1(f), respectively. Importantly, the d-wave gap has more nodes than the extended s-wave gap. As a consequence, comparing the eigenvalues for the two pairing channels (see Figs. S1(e)–S1(f)), we find that λs is larger than λd by more than an order of magnitude. Therefore, this reveals that the s-wave state is the leading pairing instability. One may ask what the role of the Coulomb repulsion is, as it often favors a d-wave state. First of all, since our effective orbitals are actually dimer states, the bare on-site repulsion is greatly reduced. Second, even though we 4k zz    
+
+> YC
+> C2BHMEDZ
+> Γ
+> AH2H4Y2M4M2
+> xykykx
+> 01.03 J
+
+## (e) 
+
+λs = 0.52 J
+
+λs(k) J~     
+
+> kzz
+> YC
+> C2BHMEDZ
+> Γ
+> AH2H4Y2M4M2
+> xykykx
+> 00.11 J
+
+## (f) 
+
+λd = 0.03 J
+
+λd (k) J~      
+
+> kzz
+> YC
+> C2BHMEDZ
+> Γ
+> AH2H4Y2M4M2
+> xykykx
+> 0.40 -0.40
+> kzz
+> YC
+> C2BHMEDZ
+> Γ
+> AH2H4Y2M4M2
+> xykykx
+> 2.40 0.75
+
+## (a) v k
+
+⟨v k ⟩FS = 1.29 eV A ⟨g d ⟩FS = 0 
+
+## (d) g d (k)   
+
+> kzz
+> YC
+> C2BHMEDZ
+> Γ
+> AH2H4Y2M4M2
+> xykykx
+> 1.0 -1.0
+
+g s(k)(c) 
+
+⟨g s⟩ FS = 0.71     
+
+> kzz
+> YC
+> C2BHMEDZ
+> Γ
+> AH2H4Y2M4M2
+> xykykx
+> 0.9999 1.0000
+
+## (b) ϵx / ( ϵx + ϵ z)2 2 2
+
+⟨ϵx / ( ϵx + ϵ z)⟩FS ≈12 2 2
+
+FIG. S1. Projections on the Fermi surface of (a) velocity magnitude vk = |vk|, (b) weighting factor ϵ2
+
+> x
+
+(k)/  ϵ2
+
+> x
+
+(k) + ϵ2 
+
+> z
+
+(k),(c) pairing basis function gs(k), (d) pairing basis function gd(k), (e) pairing eigenvalue contribution ˜λs(k), and (f) pairing eigenvalue contribution ˜λd(k). The corresponding values averaged over the Fermi surface are specified at the bottom of each plot, with J taken as a constant. Note that the distribution in (b) is nearly equal to unity and can thus be ignored. 
+
+cannot evaluate the full frequency dependence of the pairing interaction, proximity to magnetism suggests that the relevant spin fluctuations are reasonably soft and the Tolmachev-Anderson-Morel logarithmic renormalization reduces the Coulomb pseudopotential to its typical values, i.e., considerably smaller than λ. With this in mind, we conclude that the Coulomb repulsion probably reduces the gigantic advantage of the s-state derived above, but falls quite short of stabilizing the d-state. In fact, we tested the (quite unphysical) limit of an infinitely strong on-site repulsion, and found that even then the s state is still more favorable than the d one. 
+
+III. ELECTRON-PHONON COUPLING WITH AND WITHOUT DOPING 
+
+Calculations of phonon modes and electron-phonon coupling (EPC) within the density-functional perturbation theory (DFPT) framework were performed using the Quantum ESPRESSO (QE) PHonon package with the same pseudopotentials, wavefunction energy cutoff, and Brillouin zone sampling used for the electronic structure calculations with QE. A 4 ×4×4 phonon q-point grid was employed, and the “crystal” acoustic sum rule was applied to the interatomic force constants. In DFPT, the EPC constant λEPC is calculated as [5] 
+
+λEPC = 2 
+
+Z α2F (ω)
+
+ω dω = 2
+
+N (εF)
+
+X
+
+> qν
+
+1
+
+ωqν
+
+X
+
+> mn
+
+X
+
+> k
+
+|gmnν (k, q)|2 δ (εm, k+q − εF) δ (εn, k − εF) , (S17) where ω is the phonon energy, α2F (ω) is the Eliashberg spectral function [6], N (εF) is the electronic density of states (eDOS) at the Fermi energy εF, ωqν is the phonon energy corresponding to mode ν at wavevector q, εm, k+q is the energy of electronic state m at the wavevector k + q, and gmnν (k, q) is the EPC matrix element. The Eliashberg spectral function is expressed in terms of the EPC matrix elements and three Dirac delta-functions: 
+
+α2F (ω) = 1
+
+N (εF)
+
+X
+
+> mn
+
+X
+
+> qν
+
+δ (ω − ωqν ) X
+
+> k
+
+|gmnν (k, q)|2 δ (εm, k+q − εF) δ (εn, k − εF) . (S18) 5In the presented calculations, the EPC matrix elements were interpolated to a 24 ×24 ×24 k-point grid [5], before 
+
+λEPC and α2F (ω) were evaluated using Eqs. (S17) and (S18). A Gaussian broadening of 0.121 THz was used to approximate the phonon delta-function δ (ω − ωqν ), and a Gaussian broadening of 0.02 Ry was used to approximate the electronic delta-functions δ (εm, k+q − εF) and δ (εn, k − εF). The critical temperature Tc, assuming a conventional superconducting mechanism, was estimated from the calculated λEPC , α2F (ω), and phonon energies using the modified McMillan formula [7, 8]: 
+
+Tc = ωln 
+
+1.2 exp 
+
+
+
+− 1.04(1 + λEPC )
+
+λEPC − μ∗(1 + 0 .62 λEPC )
+
+
+
+, (S19) where the logarithmic average phonon energy is defined as 
+
+ωln = e 2     
+
+> λEPC
+> Rdω ωα2F(ω) log ω
+
+. (S20) In Eq. (S19), a standard value of μ∗ = 0 .13 was used for the Coulomb pseudopotential. In this section, the EPC constant of MnB 4 is calculated at 0 and 158 GPa to show that the conventional mechanism cannot explain the experimental data. Although there is no a priori justification to assume that MnB 4 could be doped, the case with 1 /4 added electrons per Mn atom is also considered, as it demonstrates what happens when electronic density of states (eDOS) at the Fermi level is increased at 0 and 158 GPa [see Figs. S2(a)–S2(d)]. Calculated phonon modes, phonon density of states (phDOS), α2F (ω), ωln , λEPC , and Tc are shown with and without doping at 0 and 158 GPa in Figs. S3(a)–S3(d). 158 GPa, no doping eDOS (eV -1 )(b)     
+
+> total Mn B2.27 1.34 0.60
+> N(εF): 158 GPa, +0.25 e/ Mn eDOS (eV -1 )
+
+(d)     
+
+> total Mn B
+> N(εF): 7.51 4.07 2.26
+> 0 GPa, +0.25 e/ Mn eDOS (eV -1 )
+
+(c) ε - ε F (eV) total Mn B   
+
+> N(εF): 7.85 4.96 1.66
+> 0 GPa, no doping eDOS (eV -1 )
+
+(a)  
+
+> ε - ε F (eV) total Mn B
+> N(εF): 0.26 0.16 0.06
+
+FIG. S2. Projected electronic band structure and density of states (eDOS) of nonmagnetic P 21/c MnB 4 at (a) 0 GPa without doping, (b) 158 GPa without doping, (c) 0 GPa with +0 .25 e/ Mn doping, and (d) 158 GPa with +0 .25 e/ Mn doping. The eDOS is shown for both spin channels, with the corresponding values at the Fermi level N (εF) indicated near the horizontal dashed gray line. 
+
+In Figs. S3(a)-S3(b), the phonon modes without doping at 0 GPa are softer than those at 158 GPa. α2F (ω) has the highest values in the region dominated by Mn vibrations. The resulting ωln values at 0 and 158 GPa are 552 K 6λEPC :0.27 
+
+> λEPC :0.58
+> λEPC :0.60
+
+158 GPa, no doping 0 GPa, no doping 0 GPa, +0.25 e / Mn 
+
+λEPC :0.22          
+
+> ωln = 552 K
+> Tc< 0.1 K
+> ωln = 699 K
+> Tc< 0.1 K
+> ωln = 409 K
+> Tc= 6.7 K
+> ωln = 624 K
+> Tc= 9.0 K
+> Mn BMn B
+
+(a) (b) (c) (d) 158 GPa, +0.25 e / Mn 
+
+> Mn B
+> Mn B
+
+FIG. S3. Phonon modes, phonon density of states (phDOS), Eliashberg spectral function ( α2F (ω)), and EPC constant ( λEPC )of nonmagnetic P 21/c MnB 4 at (a) 0 GPa without doping, (b) 158 GPa without doping, (c) 0 GPa with +0 .25 e/ Mn doping, and (d) 158 GPa with +0 .25 e/ Mn doping. Mn phDOS: purple; B phDOS: green; integrated α2F (ω), R ω 
+
+> 0
+> dω ′
+> ω′
+
+2α2F (ω′): dashed black line. 0 GPa +0.25e / Mn 
+
+> E - E NM  (eV / Mn) 0.15 0.10 0.05 0.00
+
+FM AFM 2 AM AFM 1 
+
+158 GPa +0.25 e / Mn 
+
+U (eV) 0.015 0.010 0.005 0.000 
+
+## (a) (b) 
+
+U (eV) FM AFM 2 AM AFM 1 
+
+FIG. S4. Relative energy of magnetic P 21/c MnB 4 configurations with +0.25 e / Mn doping with respect to the nonmagnetic (NM) state as a function of the Hubbard U parameter at (a) 0 GPa and (b) 158 GPa. Abbreviations denote antiferromagnetic (AFM 1 and AFM 2), ferromagnetic (FM), and altermagnetic (AM) orders. Note the different energy scales used for 0 and 158 GPa. 
+
+and 699 K, respectively, while the corresponding λEPC values are 0.22 and 0.27. Tc estimated with Eq. (S19) is below 0.1 K at both pressures, in contradiction with the experimental Tc of 14.2 K at 158 GPa [1]. Notably, these estimates of the EPC constant and critical temperature are even lower than those reported previously [1], most likely due to a different choice of smearing values in the approximation of the Dirac delta-functions, a denser q-point grid, and the slightly higher Coulomb pseudopotential used in this work. Calculated results with the doping at both pressures are shown in Figs. S3(c)–S3(d). The increased eDOS in Figs. S2(c)–S2(d) compared to Figs. S2(a)–S2(b) leads to elevated Tc estimates. Although the calculated Tc of 9 K at 158 GPa with doping is closer to the experimental data than the undoped case, the doped structure also yields a non-zero Tc at zero pressure, which is ruled out by experimental evidence. These results eliminate the possibility of conventional superconductivity being driven by doping. 7As a side note, in the doped structure, the altermagnetic (AM) spin fluctuations would compete with ferromagnetic (FM) fluctuations, as demonstrated by the DFT+ U calculations in Figs. S4(a)–S4(b). At 158 GPa, both AM and FM phases would be almost equally likely. 
+
+IV. WANNIERIZATION & TIGHT-BINDING PARAMETERS 
+
+The interface between VASP 6.5.1 and Wannier90 3.1.0 [9, 10] was used for Wannierization. Two Wannier orbitals were utilized, constrained to the midpoint of the two inversion centers [blue crosses in Figs. 1(a)–1(d)]. Two bands near the Fermi level with dominant Mn character, as deduced from the VASP projected bands in Fig. S2(b), were fitted [see Fig. S5(a)]. These bands were entangled [11] with other bands, including the states with predominantly B content, precluding the use of a frozen window. An outer energy window spanning from −1.63 to +0.26 eV relative to the Fermi level was employed. The tight-binding parameters were extracted from the matrix elements of the 2 ×2 Hamiltonian in Wannier space 
+
+Hmn (Rp) that were Fourier-interpolated to reciprocal space, Hmn (k), using the atomic gauge notation: 
+
+Hmn (k) = 
+
+> Ncells
+
+X
+
+> p
+
+e−ik·(Rp+∆ rmn )Hmn (Rp). (S21) In Eq. (S21), Rp are grid vectors identifying the coordinates of each of the Ncells unit cells p in a supercell, and ∆rmn = rm − rn are relative vectors between orbitals n and m.The resulting Wannier bands are shown in Fig. S5(b) in green. The spatial distribution of one of the corresponding Wannier orbitals is shown in Fig. S5(c). Hopping parameters for the tight-binding Hamiltonian were extracted from the Wannier Hamiltonian restricted to 3 shells of cells. When all higher-order neighbor terms are excluded, the resulting tight-binding band structure is represented by purple solid lines in Fig. S5(b). Although the purple tight-binding bands exhibit some deviations from the black DFT and green Wannier bands, this reduction eliminates the boron degrees of freedom and provides important insight into the leading interactions within the structure. The tight-binding fit presented in Fig. S5(b) is the best achieved in this work. Nonetheless, deviations of the tight-binding parameters between various fits did not alter the conclusions regarding the leading pairing channels reported in this work. DFT select. DFT selection Wannier90 TB Mn B51 2 3 4 
+
+> eDOS (eV -1 )158 GPa
+
+(a) (b) (c) 
+
+# z x
+
+> ε - ε F (eV)
+
+FIG. S5. Extraction of tight-binding parameters from Mn bands: (a) Selection of two DFT bands near the Fermi level with dominant Mn character, (b) Wannierization and tight-binding fit, and (c) spatial distribution of one of the two Wannier orbitals in a top view. In (a), projected Mn and B contributions are indicated in purple and green, respectively, with selected DFT bands shown in black. In (b), selected DFT bands are black, the Wannier90 fit is green, and the tight-binding (TB) fit extracted from Wannierization is purple. In (c), the spatial distribution of the Wannier orbital is shown in blue and yellow, with gray arrows representing Cartesian axes. 
+
+V. HISTORY OF MNB 4 PHASE EXPLORATION 
+
+Manganese tetraboride (MnB 4), synthesized at high temperatures and brought to ambient conditions, was experi-mentally discovered in two monoclinic structures. Original powder X-ray diffraction (XRD) measurements in the late 1960s indicated the presence of the C2/m phase [space group (SG) No. 12] [12–15]. However, this structure has not 8received further experimental confirmation in subsequent studies. Instead, a P 21/c phase forming a hard (although brittle) material was repeatedly confirmed by XRD [16–18], 11 B magic-angle spinning nuclear magnetic resonance (MAS-NMR) [16], and scanning and transmission electron microscopy (SEM and TEM) measurements [17, 18]. This semimetallic non-magnetic (NM) phase was identified as the lowest energy among all possible candidates by density-functional theory (DFT) calculations [19–22]. It was suggested to originate from an orthorhombic metallic P nnm 
+
+phase [16, 17], which is dominant among the M B4 (with M = Cr, Mn, Fe, Tc, Ru) materials [20, 23–25], due to the Peierls distortion [26] of the straight Mn chains. This distortion is marked by the the introduction of two alternating Mn–Mn distances within each chain [27]. The longer links of these chains, forming Mn–Mn dimers, are shown in Figs. 1(a)–1(d). Further ab initio calculations [27] and high-temperature powder XRD measurements [28] concluded that the NM 
+
+P 21/c phase at ambient conditions can be reversibly transformed to the ferromagnetic (FM) or antiferromagnetic (AFM) P nnm phase at higher temperatures—approximately 650 K. Originally, magnetic susceptibility measure-ments at ambient conditions revealed weak ferromagnetic spin correlations but no long-range magnetic order in the synthesized MnB 4 samples, suggesting the material was paramagnetic [16]. Subsequently, the existence of intrinsic magnetism in P 21/c MnB 4 was challenged by other magnetic susceptibility measurements [29], which concluded that the weak ferromagnetic/paramagnetic signal could originate from Mn impurities in the samples rather than from the bulk MnB 4 structure. 
+
+[1] Z.-N. Xiang, Y.-J. Zhang, Q. Lu, Q. Li, Y. Li, T. Huang, Y. Zhu, Y. Ye, J. Sun, and H.-H. Wen, Superconductivity up to 14.2 K in MnB 4 Under Pressure, Advanced Materials 37 , 2416882 (2025), https://advanced.onlinelibrary.wiley.com/doi/pdf/10.1002/adma.202416882. [2] H. T. Stokes, D. M. Hatch, and B. J. Campbell, FINDSYM, ISOTROPY software suite, http://iso.byu.edu .[3] H. T. Stokes and D. M. Hatch, FINDSYM: program for identifying the space-group symmetry of a crystal, Journal of Applied Crystallography 38 , 237 (2005), https://onlinelibrary.wiley.com/doi/pdf/10.1107/S0021889804031528. [4] Y.-M. Wu, Y. Wang, and R. M. Fernandes, Intra-unit-cell singlet pairing mediated by altermagnetic fluctuations, Phys. Rev. Lett. 135 , 156001 (2025). [5] M. Wierzbowska, S. de Gironcoli, and P. Giannozzi, Origins of low- and high-pressure discontinuities of Tc in niobium (2006), arXiv:cond-mat/0504077 [cond-mat.supr-con]. [6] G. Eliashberg, Interaction of electrons with lattice vibrations in a superconductor, Zh. eksp. teor. Fiz 38 , 966 (1960). [7] W. L. McMillan, Transition Temperature of Strong-Coupled Superconductors, Phys. Rev. 167 , 331 (1968). [8] R. Dynes, Mcmillan’s equation and the tc of superconductors, Solid State Communications 10 , 615 (1972). [9] G. Pizzi, V. Vitale, R. Arita, S. Bl¨ ugel, F. Freimuth, G. G´ eranton, M. Gibertini, D. Gresch, C. Johnson, T. Koretsune, J. Iba˜ nez-Azpiroz, H. Lee, J.-M. Lihm, D. Marchand, A. Marrazzo, Y. Mokrousov, J. I. Mustafa, Y. Nohara, Y. Nomura, L. Paulatto, S. Ponc´ e, T. Ponweiser, J. Qiao, F. Th¨ ole, S. S. Tsirkin, M. Wierzbowska, N. Marzari, D. Vanderbilt, I. Souza, A. A. Mostofi, and J. R. Yates, Wannier90 as a community code: new features and applications, Journal of Physics: Condensed Matter 32 , 165902 (2020). [10] N. Marzari, A. A. Mostofi, J. R. Yates, I. Souza, and D. Vanderbilt, Maximally localized Wannier functions: Theory and applications, Rev. Mod. Phys. 84 , 1419 (2012). [11] I. Souza, N. Marzari, and D. Vanderbilt, Maximally localized wannier functions for entangled energy bands, Phys. Rev. B 
+
+65 , 035109 (2001). [12] R. Fruchart and A. Michel, Un nouveau borure de mangan` ese, MnB 4, Comptes Rendus Hebdomadaires des S´ eances de l’Acad´ emie des Sciences 251 , 2953 (1960). [13] S. Andersson, G. G. Jacobsen, H. M. Seip, C.-G. Lindblad, A. A. Lindberg, G. Jansen, B. Lamm, and B. Samuelsson, A note on the crystal structure of MnB 4, Acta Chem. Scand. 23 , 687 (1969). [14] S. Andersson, J.-O. Carlsson, E. E. Astrup, S. Liaaen-Jensen, A. Lamvik, E. Sunde, and N. A. Sørensen, The crystal structure of MnB 4, Acta Chem. Scand. 24 , 1791 (1970). [15] H. Gou, Z. Li, H. Niu, F. Gao, J. Zhang, R. C. Ewing, and J. Lian, Unusual rigidity and ideal strength of CrB 4 and MnB 4,Applied Physics Letters 100 , 111907 (2012). [16] A. Knappschneider, C. Litterscheid, N. C. George, J. Brgoch, N. Wagner, J. Beck, J. A. Kurzman, R. Seshadri, and B. Albert, Peierls-Distorted Monoclinic MnB 4 with a Mn-Mn Bond, Angewandte Chemie International Edition 53 , 1684 (2014), https://onlinelibrary.wiley.com/doi/pdf/10.1002/anie.201306548. [17] H. Gou, A. A. Tsirlin, E. Bykova, A. M. Abakumov, G. Van Tendeloo, A. Richter, S. V. Ovsyannikov, A. V. Kurnosov, D. M. Trots, Z. Konˆ opkov´ a, H.-P. Liermann, L. Dubrovinsky, and N. Dubrovinskaia, Peierls distortion, magnetism, and high hardness of manganese tetraboride, Phys. Rev. B 89 , 064108 (2014). [18] E. Bykova, Single-crystal X-ray diffraction at extreme conditions in mineral physics and material sciences , Dissertation, University of Bayreuth, Bayreuth, Germany (2015), available at https://epub.uni-bayreuth.de/id/eprint/2124/1/ Thesis_Bykova_final_version.pdf .[19] B. Wang, X. Li, Y. X. Wang, and Y. F. Tu, Phase stability and physical properties of manganese borides: A first-principles study, The Journal of Physical Chemistry C 115 , 21429 (2011), https://doi.org/10.1021/jp2073683. 9
+
+[20] H. Niu, J. Wang, X.-Q. Chen, D. Li, Y. Li, P. Lazar, R. Podloucky, and A. N. Kolmogorov, Structure, bonding, and possible superhardness of CrB 4, Phys. Rev. B 85 , 144116 (2012). [21] A. Van Der Geest and A. Kolmogorov, Stability of 41 metal–boron systems at 0 GPa and 30 GPa from first principles, Calphad 46 , 184 (2014). [22] S. Hajinazar, A. Thorn, E. D. Sandoval, S. Kharabadze, and A. N. Kolmogorov, MAISE: construction of neural network interatomic models and evolutionary structure optimization, Computer Physics Communications 259 , 107679 (2021). [23] A. N. Kolmogorov, S. Shah, E. R. Margine, A. F. Bialon, T. Hammerschmidt, and R. Drautz, New superconducting and semiconducting fe-b compounds predicted with an ab initio evolutionary search, Phys. Rev. Lett. 105 , 217003 (2010). [24] A. F. Bialon, T. Hammerschmidt, R. Drautz, S. Shah, E. R. Margine, and A. N. Kolmogorov, Possible routes for synthesis of new boron-rich Fe–B and Fe 1−xCr xB4 compounds, Applied Physics Letters 98 , 081901 (2011). [25] H. Gou, N. Dubrovinskaia, E. Bykova, A. A. Tsirlin, D. Kasinathan, W. Schnelle, A. Richter, M. Merlini, M. Hanfland, A. M. Abakumov, D. Batuk, G. Van Tendeloo, Y. Nakajima, A. N. Kolmogorov, and L. Dubrovinsky, Discovery of a superhard iron tetraboride superconductor, Phys. Rev. Lett. 111 , 157002 (2013). [26] Y. Kumagai, A. A. Belik, M. Lilienblum, N. Leo, M. Fiebig, and N. A. Spaldin, Observation of persistent centrosymmetricity in the hexagonal manganite family, Phys. Rev. B 85 , 174422 (2012). [27] Y. Liang, Z. Wu, and S. Wang, Magnetostructural, mechanical and electronic properties of manganese tetraboride, AIP Ad-vances 5, 117208 (2015), https://pubs.aip.org/aip/adv/article-pdf/doi/10.1063/1.4935485/12830772/117208 1 online.pdf. [28] A. Knappschneider, C. Litterscheid, J. Brgoch, N. C. George, S. Henke, A. K. Cheetham, J. G. Hu, R. Seshadri, and B. Albert, Manganese Tetraboride, MnB 4: High-Temperature Crystal Structure, p–n Transition, 55Mn NMR Spec-troscopy, Solid Solutions, and Mechanical Properties, Chemistry – A European Journal 21 , 8177 (2015), https://chemistry-europe.onlinelibrary.wiley.com/doi/pdf/10.1002/chem.201406631. [29] N. Steinki, J. Winter, D. S. Grachtrup, D. Menzel, S. S¨ ullow, A. Knappschneider, and B. Albert, Electronic and magnetic ground state of MnB 4, Journal of Alloys and Compounds 695 , 2149 (2017).

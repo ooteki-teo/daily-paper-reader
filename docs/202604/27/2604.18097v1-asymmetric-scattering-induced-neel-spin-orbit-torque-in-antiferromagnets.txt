@@ -1,0 +1,1636 @@
+Title: Asymmetric Scattering-Induced Neel Spin-Orbit Torque in Antiferromagnets
+
+URL Source: https://arxiv.org/pdf/2604.18097v1
+
+Published Time: Tue, 21 Apr 2026 02:20:24 GMT
+
+Number of Pages: 15
+
+Markdown Content:
+## Asymmetric Scattering-Induced Néel Spin-Orbit Torque in Antiferromagnets 
+
+Sayan Sarkar 1, ∗ and Amit Agarwal 1, †
+
+> 1
+
+Department of Physics, Indian Institute of Technology Kanpur, Kanpur 208016 
+
+Magnetic switching in antiferromagnets relies on Néel spin orbit torque (NSOT), which originates from a current-induced staggered spin polarization of itinerant electrons. In collinear antiferromag-nets, such a response requires the spin susceptibility to be odd under combined space–time inver-sion symmetry ( PT ), and is conventionally attributed to symmetric scattering processes. Here, we demonstrate that asymmetric impurity scattering generates an additional PT -odd spin polarization when coupled with the anomalous spin polarizability (ASP) of Bloch electrons. This extrinsic contri-bution arises from the interplay between antisymmetric higher-order scattering processes and band geometry, effectively converting an otherwise PT -even susceptibility into a staggered spin polariza-tion. Using a minimal model of tetragonal CuMnAs, we show that this anomalous skew-scattering contribution can be comparable to, and with sufficient impurity density even exceed, the conven-tional symmetric scattering (Drude) contribution. Our results identify a new band-geometry-driven mechanism for NSOT and establish an efficient route for electrical control of antiferromagnets. 
+
+I. INTRODUCTION 
+
+Magnetic memory devices are a central component of modern spintronic technologies due to their non-volatility, scalability, and energy-efficient operation [1– 9]. Conventional implementations rely on ferromagnets (FMs), in which information is encoded in the orienta-tion of a finite magnetization that can be switched by current-induced spin torques. However, the presence of stray magnetic fields in FMs leads to undesirable cross-talk between neighboring bits and limits device miniatur-ization [9–16]. In this context, antiferromagnets (AFMs), characterized by vanishing net magnetization due to an-tiparallel alignment of magnetic moments, have emerged as a promising alternative. The absence of stray fields al-lows for dense device integration, while their intrinsically faster spin dynamics (typically three orders of magnitude higher than in FMs) enable ultrafast operation, making AFMs highly attractive for next-generation memory ap-plications [17–20]. A fundamental challenge in AFM spintronics is the ef-ficient electrical manipulation of the Néel order param-eter. This challenge has been addressed through Néel spin-orbit torque (NSOT), in which an applied electric field generates a staggered spin polarization that acts op-positely on the two magnetic sublattices. This exerts a torque on the Néel vector [21–28]. In collinear AFMs pre-serving combined space–time inversion ( PT ) symmetry, the two sublattices are related by the PT operation. This enforces that only PT -odd spin responses can produce such staggered spin polarization [18, 25], as schematically demonstrated in Fig. 1. Microscopically, current-induced spin polarization arises from non-equilibrium carrier dy-namics in the presence of an electric field and disorder. Within existing theoretical frameworks, the dominant contribution relevant for NSOT originates from symmet-  
+
+> ∗sayans21@iitk.ac.in
+> †amitag@iitk.ac.in
+
+FIG. 1. Schematic of Néel spin polarization. (a) PT -related Fermi surfaces of a collinear antiferromagnet with op-posite magnetic sublattices ( A and B). Under an applied electric field E, itinerant electrons generate a staggered spin polarization with opposite signs on the two sublattices. (b) These sublattice-resolved spin polarizations act as effective fields ( HA and HB ), producing a Néel spin–orbit torque ( τ N)that enables electrical switching of the Néel vector. 
+
+ric scattering processes [29–32]. Their associated spin susceptibility is PT -odd, so the net spin polarization van-ishes, while compensating local spin polarization remains finite on each sublattice. In contrast, the interband-coherence contribution governed by the anomalous spin polarizability (ASP) is PT -even. Therefore, it cannot by itself generate the staggered spin polarization required for NSOT. Here, we identify a previously overlooked mechanism for generating Néel spin polarization in PT -symmetric AFMs, arising from asymmetric impurity scattering [33– 36]. We show that the antisymmetric component of higher-order scattering process, intrinsically linked to the Berry curvature of the electronic bands, combines with the anomalous spin polarizability to produce a new PT -odd spin susceptibility. This provides an additional ex-trinsic route to NSOT beyond the conventional Drude mechanism. We explicitly demonstrate this using a min-imal model of tetragonal CuMnAs. We calculate the staggered spin response and show that the anomalous skew-scattering channel can compete with, and in a mod-
+
+> arXiv:2604.18097v1 [cond-mat.mes-hall] 20 Apr 2026
+
+2erate disorder regime, even exceed the Drude contribu-tion. We further use the resulting torque scale for an illustrative switching analysis. Our work establishes a band-geometry-driven disorder mechanism for electrical control of antiferromagnets and clarifies the parameter regime in which it becomes experimentally relevant. 
+
+II. ASYMMETRIC SCATTERING CONTRIBUTION TO SPIN MAGNETIZATION 
+
+In the semiclassical Boltzmann framework, current-induced spin polarization arises from corrections to both the spin expectation value and the non-equilibrium dis-tribution function in the presence of an external elec-tric field E and weak disorder. These corrections can be systematically organized according to their order in the electric field and impurity potential. The total spin po-larization is obtained by combining all allowed contribu-tions from these corrections. In this section, we identify a previously overlooked contribution originating from the interplay between disorder-induced spin correction and asymmetric impurity scattering. The total spin polariza-tion is given by 
+
+δS ν = X
+
+> l
+
+sνl fl , (1) where ν denotes the spin polarization component. The summation runs over Bloch states |l⟩ = |nk⟩ with n
+
+and k being the band index and crystal momentum, re-spectively. Here, fl is the non-equilibrium distribution function, and sνl is the expectation value of the spin operator in the presence of perturbations and impurity. The spin expectation value, including corrections to the Bloch state induced by the external electric field ( E) [29– 32, 37–39] and impurity scattering [33–35, 40–42], can be naturally decomposed as 
+
+sνl = sν, 0 
+
+> l
+
++ sν, anm  
+
+> l
+
++ sν, sct  
+
+> l
+
+, (2) where sν, 0 
+
+> l
+
+= ⟨nk|ˆsν |nk⟩ = ⟨unk|ˆsν |unk⟩ is the spin ex-pectation in the unperturbed Bloch state, where |unk⟩
+
+denotes the cell-periodic part of |nk⟩. The anomalous term sν, anm  
+
+> l
+
+arises from electric-field-induced interband coherence and is given by 
+
+sν, anm  
+
+> l
+
+= − e
+
+ℏ γν,b nk Eb. (3) Here, γν,b nk is the anomalous spin polarizability (ASP) [33, 43, 44] and defined as 
+
+γν,b nk = −2ℏ2Im X 
+
+> n′̸=n
+
+sνnn ′ (k)vbn′n(k)(εnk − εn′k)2 . (4) In this equation, for a given operator ˆA we define 
+
+An′n(k) ≡ ⟨ un′k| ˆA|unk⟩ and εnk denotes the band dis-persion for the Bloch-state |nk⟩. This term captures 
+
+FIG. 2. Schematic illustration of contributions to current-induced spin polarization. An applied electric field ( E) and impurity potential ( Vimp ) induce corrections to both the spin expectation value ( sνl ) and the distribution function ( fl). The interplay of these corrections gives rise to five distinct contributions to the linear-order spin polariza-tion ( ∝ E), retained up to zeroth order in impurity density (n0 
+
+> i
+
+). In the weak-disorder limit, the relaxation time scales as τ ∝ n−1 
+
+> i
+
+, and higher-order impurity-induced contributions are neglected. 
+
+the band-geometric origin of the intrinsic current-induced spin polarization [25, 33, 45–48]. Disorder induced asymmetric scattering further modi-fies the spin expectation value through a correction sν, sct  
+
+> l
+
+,which represents the spin analogue of the side-jump ve-locity [34, 35]. For short-range delta function-like impu-rity potentials Vimp (r) = P 
+
+> i
+
+Viδ(r − Ri), it takes the form 
+
+sν, sct  
+
+> l
+
+= −2π X
+
+> n′k′
+
+Wkk ′ δ(εnk − εn′k′ )
+
+× Im 
+
+" X 
+
+> n′′ ̸=n′
+
+⟨unk|un′k′ ⟩⟨ un′′ k′ |unk⟩sνn′n′′ (k′)
+
+εn′k′ − εn′′ k′
+
+− X 
+
+> n′′ ̸=n
+
+⟨un′′ k|un′k′ ⟩⟨ un′k′ |unk⟩sνnn ′′ (k)
+
+εnk − εn′′ k
+
+#
+
+, (5) where Wkk ′ = ⟨| V 0 
+
+> kk ′
+
+|2⟩dis is the disorder-averaged Born amplitude for impurity scattering. Here, ⟨· · · ⟩ dis denotes configurational averaging over random impurity distribu-tions. Assuming that impurity scattering does not induce inter-band transitions in the DC response (i.e. n′ = n), the scattering rate is peaked near k′ → k (see Eq. (C8)). In this limit, Eq. (5) simplifies to [33], 
+
+sν, sct  
+
+> l
+
+≃ γν,b nk kb
+
+τ , (6) where τ is the momentum relaxation time. In the present manuscript, this compact form is obtained in the weak disorder limit. The detailed derivation is provided in Appendix A. The non-equilibrium distribution function can also be expanded in powers of the perturbation field and impu-rity potential as follows, 
+
+fl = f 0 
+
+> nk
+
++ f in  
+
+> nk
+
++ f sj  
+
+> nk
+
++ f sk3  
+
+> nk
+
+. (7) 3
+
+TABLE I. Symmetry classification of the linear-order spin-susceptibility contributions generated by the electric-field per-turbation and impurity scattering. The ✓ (✗) denotes an even (odd) response under the corresponding symmetry. The starred susceptibility component is the new PT -odd response discussed in this work; see Eq. (13). Spin Susceptibilities P T PT Refs. 
+
+χν;b 
+
+> Dr
+
+✗ ✓ ✗ [27, 30–32, 39] 
+
+χν;b
+
+> anm
+
+, χν;b 
+
+> sj
+
+, χν;b 
+
+> sk
+
+✗ ✗ ✓ [33–35, 49] 
+
+χν;b
+
+> AS
+
+∗ ✗ ✓ ✗ Current work 
+
+The leading order corrections in field ( E) and impurity density ( ni) are 
+
+f in  
+
+> nk
+
+= eτ 
+
+ℏ Eb∂kb f 0
+
+> nk
+
+, (8) 
+
+f sj  
+
+> nk
+
+= τ X
+
+> k′
+
+w(2) ,cs 
+
+> n;k′k
+
+ f 0 
+
+> nk
+
+− f 0
+
+> nk′
+
+, (9) 
+
+f sk3  
+
+> nk
+
+= − eτ 2
+
+ℏ
+
+X
+
+> k′
+
+w(3) ,a n;k′kEb
+
+
+
+∂kb f 0 
+
+> nk
+
++ ∂k′ 
+
+> b
+
+f 0
+
+> nk′
+
+
+
+.(10) Here, w(n) denotes the n-th order scattering rate. w(2) 
+
+is by construction symmetric under k ↔ k′ (w(2)  
+
+> n;k′k
+
+=
+
+w(2)  
+
+> n;kk ′
+
+). On the other hand, w(3) ,a is the antisymmetric part of w(3) (w(3) ,a n;k′k = −w(3) ,a n;kk ′ ) responsible for skew scat-tering. In the present disorder model it is linked to the band-resolved Berry curvature, which supplies the sym-metry structure needed below to convert the PT -even ASP into a PT -odd response channel [40, 41, 47]. It is given by, 
+
+w(3) ,a n;kk ′ = 2π2niV 31
+
+ℏ
+
+X
+
+> k′′
+
+(k′ × k′′ ) + ( k × k′)+( k′′ × k).Ωn(k)δ(εnk − εnk′ )δ(εnk − εnk′′ ), (11) where V1 is the first moment of the impurity poten-tial (see Eq. (C13)). Please refer to Appendices Band C for detailed derivations of the corrections to the non-equilibrium distribution function and the scattering rates. Combining all of these corrections to both spin ex-pectation and the non-equilibrium distribution yields the standard contributions to the linear spin Edelstein effect (LSEE), including the Drude ( δS ν
+
+> Dr
+
+), anomalous ( δS ν
+
+> anm
+
+), side-jump ( δS ν
+
+> sj
+
+), and skew-scattering ( δS ν
+
+> sk
+
+) terms. For clarity, we use ‘Dr’ for the conventional symmetric intra-band contribution, ‘anm’ for the intrinsic ASP-driven in-terband contribution, ‘sj’ for the side-jump-like disorder correction and ‘sk’ for the conventional skew-scattering term. Fig. 2 summarizes these channels and their lead-ing impurity-density scaling. These are the standard spin polarization components widely discussed in the litera-ture [33–35]. The corresponding spin susceptibility com-ponents χν;bi can then be obtained from the constitutive relation 
+
+δS νi = χν;bi Eb (i = Dr , anm , sj , sk) . (12) Among all the above contributions to the spin suscepti-bility, only χν;b 
+
+> Dr
+
+is a PT -odd quantity, while the remain-ing components ( χν;b
+
+> anm
+
+, χ ν;b 
+
+> sj
+
+and χν;b 
+
+> sk
+
+) are PT -even (see Table I). At linear order in the applied electric field, the standard channels can be organized as follows: sν, 0f in 
+
+gives the Drude term, sν, anm f 0 gives the intrinsic anoma-lous term, (sν, sct f in + sν, 0f sj ) forms the side-jump class, and sν, 0f sk3 gives the conventional skew-scattering re-sponse. The product sν, anm f sk3 is second order in the electric field and is therefore beyond the present linear-response theory, while sν, sct f sj is found in the higher-order impurity-density sector ( ∝ n1 
+
+> i
+
+) and therefore ne-glected. In addition to these known contributions, we iden-tify a previously overlooked term arising from the cross-combination of the disorder-induced spin correction sν, sct 
+
+> nk
+
+and the asymmetric distribution function f sk3  
+
+> nk
+
+. This con-tribution is given by 
+
+δS ν 
+
+> AS
+
+= X
+
+> nk
+
+sν, sct  
+
+> nk
+
+f sk3  
+
+> nk
+
+, (13) 
+
+= eτ 
+
+ℏ
+
+X
+
+> nkk ′
+
+w(3) ,a n;kk ′ γν,c nk kc
+
+
+
+∂kb f 0 
+
+> nk
+
++ ∂k′ 
+
+> b
+
+f 0
+
+> nk′
+
+
+
+Eb.
+
+The suffix ‘AS’ denotes anomalous skew-scattering, fol-lowing the terminology introduced in Ref. [36]. This term is distinct from conventional skew-scattering contribu-tions because it is a cross term. It couples the asymmetric scattering rate w(3) ,a with the anomalous spin polariz-ability γν,c nk , rather than with the uncorrected spin ex-pectation value alone. Since w(3) ,a is PT -odd [36] while 
+
+γν,c nk is PT -even [33, 37, 46], their product yields a PT -odd spin susceptibility ( χν;b
+
+> AS
+
+). In physical terms, asym-metric scattering biases carriers in momentum space in a Berry-curvature-dependent way, converting the other-wise PT -even ASP into a PT -odd observable. The PT 
+
+character of the response has a direct sublattice conse-quence. For the two magnetic sublattices ( A and B)related by PT , the calculated PT -odd susceptibilities satisfy χν;b 
+
+> o,A
+
+= −χν;b 
+
+> o,B
+
+, whereas PT -even channels sat-isfy χν;b 
+
+> e,A
+
+= χν;b 
+
+> e,B
+
+and therefore do not generate a Néel torque. This is why the ‘AS’ term is relevant for NSOT even though it is built from an ASP ingredient that is 
+
+PT -even by itself. The remainder of the manuscript is organized ac-cordingly. In Sec. III we evaluate the PT -odd spin-susceptibility channels in tetragonal CuMnAs and verify their staggered sublattice structure. In Sec. IV we isolate the disorder prefactor that controls when the anomalous skew scattering term can compete with the Drude chan-nel, and in Sec. V we use the resulting torque scale in an illustrative switching calculation. 4 
+
+> III. NÉEL SPIN POLARIZATION IN CuMnAs
+
+The magnetic point groups of collinear AFMs such as MnBi 2Te 4, CuMnAs, Mn 2Au possess combined PT sym-metry [21, 22]. In these systems, the two opposite mag-netic sublattices are related by the PT operation. For a bipartite collinear AFM with sublattices A and B, the symmetry transformation acts as PT : rA → rB and 
+
+PT : M(rA) → − M(rB ), where M(r) denotes the local magnetic moment. This relation ensures the compensa-tion of the net atomic magnetization in equilibrium. In the presence of PT symmetry, response tensors can be classified according to their transformation proper-ties. In particular, for a PT -odd spin susceptibility, the symmetry operation enforces PT : χν;bA → − χν;bB . As a consequence, the induced itinerant spin polarization on the two sublattices acquires opposite signs, resulting in a staggered spin response. Such a staggered spin polar-ization acts as the driving mechanism for the NSOT and enables electrical switching in PT -symmetric AFMs. In the sublattice-resolved numerical results below, this dis-tinction is realized explicitly. The Drude and anomalous skew-scattering susceptibilities are odd under sublattice exchange, while the PT -even channels remain equal on the two sublattices and therefore drop out of the Néel response. For a numerical demonstration of the above mech-anism, we consider a minimal tight-binding model of tetragonal CuMnAs on a crinkled quasi-two-dimensional square lattice with collinear antiferromagnetic order [50], 
+
+H = −2t cos kx
+
+2 cos ky
+
+2 τxσ0 − t′(cos kx + cos ky )τ0σ0
+
++λτ z (σy sin kx − σx sin ky ) + Jnτz σ · ˆn. (14) Here, τi and σi (i = x, y, z, 0) are Pauli matrices acting on the crystal sublattice and spin degrees of freedom, re-spectively. The first and second terms, proportional to t
+
+and t′, describe nearest and next-nearest-neighbor hop-ping. The third term represents next-nearest-neighbor spin–orbit coupling with strength λ. The last term cor-responds to the antiferromagnetic exchange interaction of strength Jn, where ˆn denotes the Néel vector direc-tion. Following Ref. [50], we use t = 1 eV, t′ = 0 .08 eV, 
+
+λ = 0 .8 eV, and Jn = 0 .6 eV, with ˆn = {cos ϕ, sin ϕ, 0},where ϕ is the angle measured from the [100] crystal axis. Diagonalization of Eq. (14) yields two doubly degenerate bands as a consequence of the underlying PT symmetry [see Fig. 3(a–b)]. For ϕ = 0 and ϕ = π/ 2, the system is semimetallic, exhibiting Dirac points ( D1 and D2) along the high-symmetry paths X–M and Y– M′, respectively. For generic orientations of the Néel vector (e.g., ˆn ∥ [110] ,i.e., ϕ = π/ 4), a full gap opens in the spectrum as shown in Fig. 3(b). Fig. 3(c) shows the k-space distribution of relevant band geometric quantities ( Ωz and γy;x) for the valence band projected on sublattice A. Fig. 3(d-e) dis-play the variation of the sublattice-resolved PT -odd spin susceptibilities χy;x and χx;y as a function of the chemi-cal potential μ for two orthogonal orientations of the Néel                             
+
+> FIG. 3. Néel spin polarization in PT -symmetric CuM-nAs. (a) Orientation of the Néel vector ( ˆn) in quasi-2D tetragonal CuMnAs. Red and blue arrows denote the mag-netization directions of Mn atoms on opposite magnetic sub-lattices. The corresponding two-dimensional Brillouin zone is shown below. (b) Electronic band structure of CuMnAs along the path Γ–X–M–Y–M ′–X ′for different in-plane orientations of the Néel order. (c) k-space distribution of sublattice-projected Berry curvature (BC) and anomalous spin polar-izability (ASP) in the two-dimensional Brillouin zone for
+> ˆn∥[100] .(d),(e) Variation of sublattice-projected spin sus-ceptibility components χy;xand χx;ywith chemical potential for two orthogonal orientations of the Néel vector ( ˆn∥[100]
+> and ˆn∥[010] ).
+
+vector ( ϕ = 0 and ϕ = π/ 2). Notably, the susceptibilities on the two magnetic sublattices exhibit opposite signs, consistent with the PT -odd character of the response, as indicated by the solid and dashed curves. In the above numerical calculations, we have used a momentum relaxation time τ = 0 .1 ps , impurity density 
+
+ni ∼ 10 10 cm −2, and first moment of the impurity poten-tial V1 ∼ 0.83 × 10 −13 eV · cm 2, consistent with param-eters employed in Refs. [36, 51, 52]. For this illustrative parameter set, the anomalous skew-scattering contribu-tion becomes the leading PT -odd contribution over part of the chemical-potential window shown in Fig. 3. For the two-dimensional disorder model, the first moment of the impurity potential V1 carries units of energy times area; this convention is used throughout the numerical estimates. Furthermore, the induced spin polarization on each sublattice is perpendicular to the correspond-ing local magnetic moment ( δSA/B ⊥ MA/B ), thereby generating staggered effective fields that are efficient for electrical switching of the antiferromagnetic order. 5 
+
+> IV. RELATIVE IMPURITY SCALING OF ANOMALOUS SKEW-SCATTERING CONTRIBUTION
+
+To understand the dependence of the anomalous skew-scattering contribution on impurity parameters, we an-alyze the scaling of the corresponding spin susceptibil-ity. For this purpose, it is useful to express the micro-scopic quantities entering the spin response in dimension-less form. We introduce the characteristic energy scale 
+
+Es (∼ 1 eV ) and length scale a (lattice constant) of the system, and define dimensionless variables via following relations, 
+
+ka = ˜ka/a, sνmn = ℏ˜sνmn , vbmn = ( Esa/ ℏ)˜ vbmn . (15) Using these scalings in Eq. (13), we find that the anomalous skew-scattering susceptibility can be written as 
+
+χν;b 
+
+> AS
+
+∼ eτ 
+
+ℏ
+
+niV 31 ℏ
+
+E3 
+
+> s
+
+a6 ˜χν;b
+
+> AS
+
+, (16) where ˜χν;b 
+
+> AS
+
+is a dimensionless function determined by the intrinsic electronic properties and symmetries of the sys-tem. In contrast, the Drude contribution scales as 
+
+χν;b 
+
+> Dr
+
+∼ eτ 
+
+ℏ
+
+aℏ
+
+a3 ˜χν;b 
+
+> Dr
+
+. (17) Therefore, the ratio of the two contributions can be ex-pressed as 
+
+χν;b
+
+> AS
+
+χν;b
+
+> Dr
+
+= Ndis 
+
+˜χν;b
+
+> AS
+
+˜χν;b
+
+> Dr
+
+, (18) where the dimensionless prefactor Ndis = niV 31 /E 3 
+
+> s
+
+a4 en-codes the dependence on impurity density and poten-tial strength. With the two-dimensional convention used here, ni carries units of cm −2, V1 carries units of eV cm 2,
+
+Es carries units of eV , and a carries units of cm . The combination Ndis = niV 31 /(E3 
+
+> s
+
+a4) is therefore dimension-less, as required for the ratio above. We compute the ratio ˜χν;b
+
+> AS
+
+/ ˜χν;b 
+
+> Dr
+
+numerically for tetrag-onal CuMnAs as a function of chemical potential. As shown in Fig. 4, this ratio varies within a range of or-der unity, typically between −3 and 3. For the illustra-tive CuMnAs estimate, we take Es = 1 eV , a ≈ 3.8 Å, 
+
+ni ∼ 10 10 cm −2, and V1 ∼ 0.83 × 10 −13 eV · cm 2. These values are consistent with the CuMnAs-scale disorder pa-rameters used in Refs. [36, 51, 52]. They give Ndis ≈ 2.4,so the ‘AS’ and ‘Dr’ channels are comparable whenever the dimensionless ratio in Fig. 4 is of order unity. In parameter regions where that intrinsic ratio is also of or-der unity, the ‘AS’ channel exceeds the Drude contribu-tion, whereas smaller Ndis or smaller intrinsic ratios lead to a ‘Dr’-dominated response. Since Ndis scales linearly with impurity density and cubically with the impurity potential, moderate disorder tuning moves the system continuously across the crossover between ‘Dr’ and ‘AS’-dominated regimes. −2 −1 0 1 2
+
+μ (eV) 
+
+−3
+
+−2
+
+−10123˜χy;xA;As / ˜χy;xA;Dr          
+
+> FIG. 4. Relative strength of dimensionless χν;bA;AS and
+> χν;bA;Dr . Variation of the dimensionless sublattice-resolved sus-ceptibility ratio ˜χν;bA;AS /˜χν;bA;Dr with chemical potential. The ra-tio remains of order unity and varies approximately between
+> −3and 3.
+> V. NÉEL SWITCHING DYNAMICS
+
+In this section, we demonstrate the impact of NSOT generated by anomalous skew-scattering on the electrical switching of the antiferromagnetic order. A typical anti-ferromagnetic memory device is illustrated in Fig. 5(a), where eight terminals are attached to the AFM. The four non-diagonal terminals are used to apply orthogonal bias currents for Néel vector switching, while the diag-onal terminals are employed to detect the Néel vector orientation via anisotropic magnetoresistance measure-ment. Detailed descriptions of such device architectures and measurement protocols can be found in Refs. [21– 23, 53–55]. These studies show experimentally that an electric field applied parallel to the Néel vector can induce a deterministic 90 ◦ switching between orthogonal states. Here our aim is to show that the additional anomalous skew-scattering contribution can substantially enhance the torque scale governing such dynamics. To quantify the role of the anomalous skew-scattering contribution, we analyze the dynamics of the Néel vec-tor in tetragonal CuMnAs. For a collinear AFM with A
+
+and B sublattices, the time evolution of the antiparal-lel sublattice magnetization unit vectors ˆmA,B is gov-erned by the coupled Landau–Lifshitz–Gilbert (LLG) equations [56–59], 
+
+d ˆmA
+
+dt = −γ( ˆ mA × Beff  
+
+> A
+
+) + α
+
+
+
+ˆmA × d ˆmA
+
+dt 
+
+
+
++ τ FL  
+
+> A
+
++ τ DL  
+
+> A
+
+,d ˆmB
+
+dt = −γ( ˆ mB × Beff  
+
+> B
+
+) + α
+
+
+
+ˆmB × d ˆmB
+
+dt 
+
+
+
++ τ FL  
+
+> B
+
++ τ DL  
+
+> B
+
+.
+
+(19) Here, γ and α denote the gyromagnetic ratio and Gilbert damping coefficient, respectively. We take γ = 1 .76 ×
+
+10 11 s−1T−1 and, for CuMnAs, α = 0 .01 [60–62]. The ef-fective field acting on each sublattice i = A, B is given by 
+
+Beff  
+
+> i
+
+= Bans + Bex  
+
+> i
+
++ Bext , which includes contributions 6         
+
+> FIG. 5. Néel vector switching in an antiferromagnet. (a) Schematic of an antiferromagnetic memory device with orthogonal writing terminals for current injection and diagonal probes for readout via anisotropic Hall magnetoresistance. The blue and red double arrows denote two orthogonal orientations of the Néel vector, corresponding to the binary memory states (0 and 1). (b) Time evolution of the normalized Néel vector components under Néel spin–orbit torque (NSOT) driven by asymmetric impurity scattering. The switching between the two states occurs on a timescale of ∼5 ps . (c) Three-dimensional switching trajectory of the Néel vector during the reversal process. ˆmAand ˆmBdenote unit vectors along the magnetization of the two opposite sublattices.
+
+from magnetic anisotropy, inter-sublattice exchange, and any external magnetic field. The exchange field is defined as Bex  
+
+> A/B
+
+= −Jex ˆmB/A /M s, where Jex is the exchange coupling strength and Ms is the magnitude of sublat-tice saturation magnetization. For monolayer tetragonal CuMnAs, the exchange field is large, Bex ∼ 700 T [63– 65], while the in-plane anisotropy field is comparatively weak, Bans ∼ 5 mT [63–65], highlighting the exchange-dominated dynamics of the system. The field-like (FL) and damping-like (DL) torques originate from the sublattice-resolved local spin polar-ization δS νA/B . For each sublattice i, the spin torques are defined as τ FL  
+
+> i
+
+= |τi| ξFL ( ˆ mi × ˆσνi ) and τ DL  
+
+> i
+
+=
+
+|τi| ξDL ˆmi × ( ˆ mi × ˆσνi ), with the torque magnitude es-timated as |τi| ∼ γJ ex |δS νi |/M 2 
+
+> s
+
+[59, 66–68]. Here, Ms
+
+is the sublattice saturation magnetization, ˆσνi denotes the spin polarization direction, and ξFL /DL are the cor-responding torque efficiencies. In our calculations, we assume identical efficiencies on both sublattices with 
+
+ξDL /ξ FL = 0 .25 .Using the spin susceptibility obtained from the anoma-lous skew-scattering mechanism (see Fig. 2(d–e)), we find a maximum value of χy;x 
+
+> AS
+
+∼ − 0.25 μB /(μV · μm) 
+
+at μ = −0.7 eV , which is nearly six times larger than the corresponding Drude contribution. For an applied electric field |E| = 1 V /μ m parallel to the Néel vector (ˆx), the total induced local spin polarization is δS y =
+
+−2 × 10 5 μB/μ m2. This results in a torque magnitude 
+
+|τi| = 1 .1 × 10 12 s−1, using Ms ∼ 27 μB /nm 2 [64]. The anomalous skew-scattering thus enhances the effective spin torque to approximately six times the conventional contribution. Substituting these parameters into Eq. (19) and nu-merically solving the coupled equations yields the full time evolution of the sublattice magnetizations and the Néel vector. As shown in Fig. 5(b), the system undergoes a coherent 90 ◦ switching of the Néel vector within ∼ 4 ps .Within the present analysis, the switching trajectory is smooth and deterministic as shown in Fig. 5(c). This in-dicates that, for the chosen parameter set, the enhanced NSOT scale is sufficient to drive fast reorientation of the order parameter. Our LLG calculation is intended as an illustrative dy-namics estimate based on the torque scale extracted from the susceptibility calculation. It should not be inter-preted as a complete switching phase diagram over damp-ing, pulse shape, and chemical-potential space. Within the chosen parameter set, the asymmetric scattering-induced NSOT produces a substantial enhancement of the spin torque and supports switching on the few-picosecond timescale. An experimentally useful discrimi-nator of this mechanism is the predicted sensitivity of the switching scale to disorder tuning or chemical-potential variation, both of which directly modify the balance be-tween the anomalous skew scattering and Drude chan-nels. This establishes anomalous skew-scattering as a promising and previously unexplored mechanism for ef-ficient electrical control in antiferromagnetic spintronic devices.  
+
+> VI. CONCLUSION
+
+In this work, we have investigated the role of asymmet-ric impurity scattering in generating staggered current-induced spin polarization in PT -symmetric antiferro-magnets. Within a semiclassical Boltzmann framework, we identify an additional contribution to the spin suscep-tibility arising from the interplay between antisymmetric higher-order impurity scattering and the anomalous spin polarizability. We show that this contribution is PT -odd and therefore produces a staggered spin polarization on the two magnetic sublattices, enabling a Néel spin–orbit torque. Our analysis establishes a direct connection between 7this extrinsic mechanism and band-geometric properties of the electronic structure, highlighting the role of band geometry in governing asymmetric scattering processes. Using a minimal model of CuMnAs, we demonstrate that the resulting spin response can be comparable to, and for sufficient magnetic disorder can exceed, the conventional Drude contribution. The corresponding torque is shown to efficiently drive ultrafast switching of the Néel vector within a realistic parameter regime. These results reveal that asymmetric scattering can convert an otherwise PT -even response into a staggered spin polarization, providing a new pathway for electri-cal control of antiferromagnetic order. More broadly, our findings demonstrate that disorder, when combined with band geometry, can play a constructive role in antifer-romagnetic spintronics. We expect that this mechanism may be relevant in a wider class of PT -symmetric mate-rials and could be explored through controlled disorder engineering in future experiments.  
+
+> VII. ACKNOWLEDGMENT
+
+We acknowledge many fruitful discussions with Sunit Das (IIT Kanpur, India), Harsh Varshney (IIT Kanpur, India) and Nirmalya Jana (IIT Kanpur, India). Sayan acknowledges IIT Kanpur for funding support. Amit acknowledges support from the ANRF Core Research Grant CRG/2023/007003, Department of Science and Technology, India.  
+
+> VIII. DATA AVAILABILITY
+
+The data that support the findings of this article are not publicly available. The data are available from the authors upon reasonable request. 
+
+> Appendix A: Spin-shift correction to spin expectation
+
+In this appendix, we derive the disorder-induced correction to the spin expectation value, sν, sct  
+
+> l
+
+, introduced in Eq. (2). This contribution originates from the modification of the Bloch states due to impurity scattering and represents the spin analogue of the side-jump correction. We begin by evaluating the correction to the Bloch state in the presence of an impurity potential ˆV . Using the Lippmann–Schwinger equation, the exact scattering state is given by 
+
+ldis = |l⟩ + 1
+
+εl − H0 + iη ˆT |l⟩ , (A1) where the T -matrix satisfies ˆT = ˆV + ˆV (εl − H0 + iη )−1 ˆT . The disorder-induced correction to the wave function is then δdis l = ldis − | l⟩. The corresponding correction to the spin expectation value is 
+
+sν, sct  
+
+> l
+
+= 2 Re ⟨l| ˆsν δdis l + δdis l ˆsν δdis l dis , (A2) where ⟨· · · ⟩ dis denotes disorder averaging. The leading nonvanishing contribution arises at second order in the impurity potential. Expanding δdis l to second order in ˆV , we obtain 
+
+2 Re ⟨l| ˆsν δdis l dis = 2 Re X
+
+> l′l′′
+
+⟨l| ˆsν |l′⟩ ⟨ Vl′l′′ Vl′′ l⟩dis 
+
+(εl − εl′ + iη )( εl − εl′′ + iη ) , (A3) 
+
+δdis l ˆsν δdis l dis = X
+
+> l′l′′
+
+⟨l′| ˆsν |l′′ ⟩ ⟨ Vll ′ Vl′′ l⟩dis 
+
+(εl − εl′ − iη )( εl − εl′′ + iη ) . (A4) Expressing the states in the Bloch basis |l⟩ = |nk⟩, we write the impurity matrix elements as Vll ′ = ⟨nk|V |n′k′⟩. To proceed, we consider a standard model of short-range disorder consisting of randomly distributed δ-function scatterers, 
+
+Vimp (r) = X
+
+> i
+
+Viδ(r − Ri). (A5) Within this model, the matrix element between Bloch states becomes ⟨nk| V |n′k′⟩ = V 0 
+
+> kk ′
+
+⟨unk|un′k′ ⟩, where V 0 
+
+> kk ′
+
+=
+
+P 
+
+> i
+
+Viei(k′−k)·Ri . Similarly, the spin operator matrix element reads 
+
+⟨nk| ˆsν |n′k′⟩ = ⟨unk|ˆsν |un′k⟩ δ(k′ − k). (A6) Substituting these expressions and performing straightforward algebra, we obtain the disorder-induced spin correc-8tion in the form 
+
+sν, sct 
+
+l = 2Re X
+
+k′k′′ 
+
+⟨V 0
+
+k′k′′ V 0
+
+k′′ k⟩dis 
+
+X
+
+n′n′′ 
+
+⟨unk|ˆsν |un′k⟩δ(k′ − k)⟨un′k′ |un′′ k′′ ⟩⟨ un′′ k′′ |unk⟩
+
+(εnk − εn′k′ + iη )( εnk − εn′′ k′′ + iη )+ X
+
+k′k′′ 
+
+⟨V 0
+
+kk ′ V 0
+
+k′′ k⟩dis 
+
+X
+
+n′n′′ 
+
+⟨un′k′ |ˆsν |un′′ k′ ⟩δ(k′′ − k′)⟨unk|un′k′ ⟩⟨ un′′ k′′ |unk⟩
+
+(εnk − εn′k′ − iη )( εnk − εn′′ k′′ + iη )= 2Re X
+
+k′′ 
+
+⟨V 0
+
+kk ′′ V 0
+
+k′′ k⟩dis 
+
+X
+
+n′n′′ 
+
+⟨unk|ˆsν |un′k⟩⟨ un′k|un′′ k′′ ⟩⟨ un′′ k′′ |unk⟩
+
+(εnk − εn′k + iη )( εnk − εn′′ k′′ + iη )+ X
+
+k′′ 
+
+⟨V 0
+
+kk ′′ V 0
+
+k′′ k⟩dis 
+
+X
+
+n′n′′ 
+
+⟨un′k′′ |ˆsν |un′′ k′′ ⟩⟨ unk|un′k′′ ⟩⟨ un′′ k′′ |unk⟩
+
+(εnk − εn′k′′ − iη )( εnk − εn′′ k′′ + iη )= 2Re X
+
+k′′ 
+
+⟨V 0
+
+kk ′′ V 0
+
+k′′ k⟩dis 
+
+X
+
+n′n′′ 
+
+sνnn ′ (k)⟨un′k|un′′ k′′ ⟩⟨ un′′ k′′ |unk⟩
+
+(εnk − εn′k)( εnk − εn′′ k′′ + iη )+ X
+
+k′′ 
+
+⟨V 0
+
+kk ′′ V 0
+
+k′′ k⟩dis 
+
+X
+
+n′n′′ 
+
+sνn′n′′ (k′′ )⟨unk|un′k′′ ⟩⟨ un′′ k′′ |unk⟩
+
+(εn′′ k′′ − εn′k′′ )
+
+ 1(εnk − εn′′ k′′ + iη ) − 1(εnk − εn′k′′ − iη )
+
+
+
+= 2Re 
+
+"X
+
+k′
+
+⟨V 0
+
+kk ′ V 0
+
+k′k⟩dis 
+
+X
+
+n′n′′ 
+
+ sνnn ′ (k)⟨un′k|un′′ k′ ⟩⟨ un′′ k′ |unk⟩
+
+(εnk − εn′k)( εnk − εn′′ k′ + iη ) + sνn′n′′ (k′)⟨unk|un′k′ ⟩⟨ un′′ k′ |unk⟩
+
+(εn′′ k′ − εn′k′ )( εnk − εn′k′ − iη )
+
+#
+
+= 2 πIm X
+
+n′n′′ 
+
+X
+
+k′
+
+⟨V 0
+
+kk ′ V 0
+
+k′k⟩dis 
+
+ sνnn ′′ (k)⟨un′′ k|un′k′ ⟩⟨ un′k′ |unk⟩
+
+(εnk − εn′′ k) − sνn′n′′ (k′)⟨unk|un′k′ ⟩⟨ un′′ k′ |unk⟩
+
+(εn′k′ − εn′′ k′ )
+
+
+
+δ(ϵnk − ϵn′k′ )= −2πIm X
+
+n′n′′ 
+
+X
+
+k′
+
+Wkk ′
+
+ sνn′n′′ (k′)⟨unk|un′k′ ⟩⟨ un′′ k′ |unk⟩
+
+(εn′k′ − εn′′ k′ ) − sνnn ′′ (k)⟨un′′ k|un′k′ ⟩⟨ un′k′ |unk⟩
+
+(εnk − εn′′ k)
+
+
+
+δ(ϵnk − ϵn′k′ ). (A7) where we have used Im( x + iη )−1 = −πδ (x) and defined the disorder-averaged scattering probability Wkk ′ =
+
+⟨| V 0
+
+kk ′ |2⟩dis . To simplify further, we consider the long-range scattering limit q = k′ − k → 0, which is enforced by the intra-band scattering condition ( n′ = n) in Eq. (A7). Expanding the Bloch overlaps to leading order in q, we obtain 
+
+⟨unk|unk′ ⟩ ≃ 1 − iq bRbnn , ⟨unk|un′′ k′ ⟩ ≃ − iq cRcnn ′′ , ⟨un′′ k|unk′ ⟩ ≃ − iq cRcn′′ n . (A8) Substituting these into the above expression and retaining leading-order terms, we obtain 
+
+sν, sct 
+
+l = −4πIm X
+
+k′
+
+Wkk ′ δ(εnk − εnk′ ) X
+
+n′′ ̸ =n
+
+sνnn ′′ (k) iq bRbn′′ n
+
+εnk − εn′′ k
+
+. (A9) Using the relation between Berry connection and velocity matrix elements, vbn′′ n(k) = i
+
+ℏ (εn′′ k − εnk)Rbn′′ n, and the definition of the anomalous spin polarizability γν,b n (k) as given in Eq. (4), we arrive at 
+
+sν, sct 
+
+l = γν,b n (k) X
+
+k′
+
+w(2) 
+
+n, kk ′ (kb − k′
+
+b), (A10) where w(2) 
+
+n, kk ′ = (2 π/ ℏ)Wkk ′ δ(εnk − εnk′ ) is the leading order Born scattering rate. Finally, expressing the momentum sum in terms of the relaxation time τ , we obtain the compact result [33], 
+
+sν, sct 
+
+l = kbγν,b n (k)
+
+τ . (A11) 
+
+Appendix B: Impurity correction to the distribution function 
+
+In this appendix, we solve the semiclassical Boltzmann transport equation to obtain the individual disorder-induced contributions to the non-equilibrium distribution function introduced in Eq. (7). The Boltzmann transport equation for the distribution function fl (l ≡ (n, k)) reads [33, 40, 41, 47] 
+
+˙k · ∂f l
+
+∂k + ∂f l
+
+∂t = Iel (fl), (B1) 9where Iel {fl} denotes the collision integral for elastic scattering from static impurities. The collision integral can be written as [69, 70] 
+
+Iel (fl) = − X
+
+> l′
+
+(wl′lfl − wll ′ fl′ ) , (B2) where wll ′ is the transition rate from state l to l′. Within Fermi’s golden rule, it is given by [71] 
+
+wll ′ = 2π
+
+ℏ
+
+D
+
+⟨l|Vimp |l′dis ⟩ 2E
+
+> dis
+
+δ(εl − εl′ ). (B3) Here Vimp is the impurity potential and |ldis ⟩ denotes the exact scattering state of the full Hamiltonian H = H0 +Vimp ,obtained from the Lippmann–Schwinger equation [72] 
+
+|ldis ⟩ = |l⟩ + Vimp 
+
+εl − H0 + iη |ldis ⟩, (B4) with iη → 0+ enforcing outgoing boundary conditions. In general, disorder averaging and higher-order scattering processes allow for an antisymmetric component of the transition rate, such that wll ′̸ = wl′l. It is therefore convenient to decompose 
+
+wsll ′ = wll ′ + wl′l
+
+2 , wall ′ = wll ′ − wl′l
+
+2 , (B5) where wsll ′ = wsl′l and wall ′ = −wal′l. The symmetric part governs conventional relaxation processes, while the antisym-metric part gives rise to skew-scattering effects. For weak disorder, the scattering rate can be expanded perturbatively in powers of the impurity potential. Retaining contributions up to third order [35], we write 
+
+wl′l ≃ w(2)  
+
+> l′l
+
++ w(3) ,a l′l . (B6) The second-order term is completely symmetric under l ↔ l′ and can be further decomposed into normal and coordinate-shift contributions (discussed in Appendix C). The antisymmetric part arises at third order and is respon-sible for skew scattering. Symmetric higher-order corrections merely renormalize w(2) and are neglected here. In the presence of a uniform electric field, ˙k = −eE/ℏ. Restricting to the steady state ( ∂tfl = 0 ), Eq. (B1) leads to a hierarchy of coupled equations for the different contributions to the distribution function, 
+
+− eE
+
+ℏ · ∂kf in  
+
+> l
+
+= Iin el (f in  
+
+> l
+
+), (B7a) 
+
+− eE
+
+ℏ · ∂kf sj  
+
+> l
+
+= Iin el (f sj  
+
+> l
+
+) + Isj el (f in  
+
+> l
+
+), (B7b) 
+
+− eE
+
+ℏ · ∂kf sk3  
+
+> l
+
+= Iin el (f sk3  
+
+> l
+
+) + Isk3 el (f in  
+
+> l
+
+). (B7c) Here depending on the different physical origins of the impurity scattering rates, the elastic collision integral has been decomposed into distinct contributions. In particular, we separate the collision term into intrinsic, side-jump, and skew-scattering components, Iel (fl) = Iin el (fl) + Isj el (fl) + Isk3 el (fl), and these distinct components have the form [40, 41, 47], 
+
+Iin el (fl) = − X
+
+> l′
+
+w2S  
+
+> ll ′
+
+(fl − fl′ ) , Isj el (fl) = − X
+
+> l′
+
+w(2) ,cs  
+
+> ll ′
+
+(fl − fl′ ) , Isk3 el (fl) = X
+
+> l′
+
+w(3) ,a ll ′ (fl + fl′ ) . (B8) The intrinsic collision integral is treated within the relaxation-time approximation, 
+
+Iin el (f in  
+
+> l
+
+) = − f in  
+
+> l
+
+− f 0
+
+> l
+
+τ , (B9) where τ is the elastic scattering time. We solve these equations perturbatively by expanding the distribution function in powers of the electric field, fl = f (0)  
+
+> l
+
++ f (1)  
+
+> l
+
++ f (2)  
+
+> l
+
++ · · · , with f (i) 
+
+> l
+
+∝ | E|i. The intrinsic linear-response solution is 
+
+f in ,(1)  
+
+> l
+
+= eτ 
+
+ℏ E · ∂kf 0 
+
+> l
+
+. (B10) 10 Solving Eq. (B7) to linear order in E, the side-jump contribution is obtained as 
+
+f sj ,(1)  
+
+> l
+
+= −τ X
+
+> l′
+
+w(2) ,cs 
+
+> l′l
+
+ f 0 
+
+> l
+
+− f 0
+
+> l′
+
+. (B11) Using the identity val ∂εl δ(εl − εl′ ) = ℏ−1∂ka δ(εl − εl′ ), and performing integration by parts, this can be recast as 
+
+f sj ,(1)  
+
+> l
+
+= −eτ E · vsj 
+
+> l
+
+∂f 0
+
+∂ε l
+
+, (B12) where the side-jump velocity is defined as vsj  
+
+> l
+
+= − P 
+
+> l′
+
+w(2 S) 
+
+> l′l
+
+δr ll ′ , with the coordinate shift defined as 
+
+δrl′l = ⟨ul′ |i∂ k′ |ul′ ⟩ − ⟨ ul|i∂ k|ul⟩ − (∂k + ∂k′ ) arg( Vl′l). (B13) Proceeding similarly, the antisymmetric third-order scattering process yield the skew-scattering corrections 
+
+f sk3 ,(1)  
+
+> l
+
+= − eτ 2
+
+ℏ
+
+X
+
+> l′
+
+w(3) ,a l′l
+
+ E · ∂kf 0 
+
+> l
+
++ E · ∂kf 0
+
+> l′
+
+ . (B14) These expressions provide the linear-order non-equilibrium distribution functions used in the evaluation of the extrinsic spin response discussed in the main text. 
+
+Appendix C: Asymmetric scattering rate 
+
+In this section, we derive simplified expressions for the impurity scattering rates entering the semiclassical Boltzmann equation. Our goal is to reduce the general scattering amplitudes to the forms suitable for numerical evaluation of the spin susceptibilities. The total scattering rate can be decomposed in orders of scattering potential 
+
+wll ′ ≃ w(2)  
+
+> ll ′
+
++ w(3)  
+
+> ll ′
+
++ · · · , (C1) where w(ν) 
+
+> ll ′
+
+∝ V ν represent the ν-th order scattering, for ν = 2 , 3... The explicit expressions of these scattering rates are given by 
+
+w(2)  
+
+> ll ′
+
+= 2π
+
+ℏ ⟨Vll ′ Vl′l⟩dis δ(εl − εl′ ) , (C2) 
+
+w(3)  
+
+> ll ′
+
+= 2π
+
+ℏ
+
+X
+
+> l′′
+
+ ⟨Vll ′′ Vl′′ l′ Vl′l⟩dis 
+
+εl′ − εl′′ + iη + ⟨Vll ′ Vl′l′′ Vl′′ l⟩dis 
+
+εl′ − εl′′ − iη 
+
+
+
+δ(εl − εl′ ) . (C3) The second-order scattering rate w(2)  
+
+> ll ′
+
+is strictly symmetric under exchange of initial and final states, l ↔ l′. On the other hand, w(3)  
+
+> ll ′
+
+and w(4)  
+
+> ll ′
+
+do not follow such relations. The symmetric and antisymmetric parts of these scattering rates can therefore be separated as follows: 
+
+w(ν),s ll ′ = w(ν) 
+
+> ll ′
+
++ w(ν)
+
+> l′l
+
+2 , w(ν),a ll ′ = w(ν) 
+
+> ll ′
+
+− w(ν)
+
+> l′l
+
+2 . (C4) The symmetric parts of these higher-order terms merely renormalize the leading second-order contribution and do not generate qualitatively new transport phenomena. Consequently, for the third- and fourth-order scattering processes, only their antisymmetric components are relevant for transport. With this separation, the elastic colli-sion integral naturally decomposes into symmetric and antisymmetric parts as Is
+
+> el
+
+{fl} = − P 
+
+> l′
+
+w(2)  
+
+> l′l
+
+(fl − fl′ ) and 
+
+Ia
+
+> el
+
+{fl} = − P 
+
+> l′
+
+w(3) ,a l′l (fl + fl′ ), respectively. When we account for the work done by the electric field as an electron is displaced within the unit cell during the collision, the second-order impurity contribution is modified as 
+
+w(2)  
+
+> ll ′
+
+= 2π
+
+ℏ ⟨Vll ′ Vl′l⟩dis δ(εl − εl′ + eE · δrll ′ ) = w(2 S) 
+
+> ll ′
+
++ w(2) ,cs  
+
+> ll ′
+
+, (C5) 11 where δrll ′ is the coordinate shift defined in Eq. (B13) in the main text. The symmetric field-independent part governs conventional momentum relaxation ( w(2 S) 
+
+> ll ′
+
+), the coordinate shift correction term gives the side jump contribution (w(2) ,cs  
+
+> ll ′
+
+). Our next step is to simplify these scattering rates and express them in forms suitable for numerical evaluation of the spin conductivity. We begin with the field independent part of the second-order scattering rate w(2 S) 
+
+> ll ′
+
+,
+
+w(2 S) 
+
+> ll ′
+
+= 2π
+
+ℏ ⟨Vll ′ Vl′l⟩dis δ(εl − εl′ ) = 2π
+
+ℏ ⟨Vkk ′ Vk′k⟩dis ⟨unk|un′k′ ⟩⟨ un′k′ |unk⟩δ(εnk − εn′k′ ) . (C6) Here we have used the notation Vll ′ = ⟨l|V |l′⟩ = ⟨nk|V |n′k′⟩. To simplify the expressions above, we adopt the simplest model for disorder, consisting of short-range, randomly distributed δ-function scatterers, V (r) = P 
+
+> i
+
+Viδ(r − Ri).Within this model, the impurity matrix element between Bloch states takes the form 
+
+⟨nk| V |n′k′⟩ = X
+
+> i
+
+Z
+
+drViδ(r − Ri)ei(k′−k)·r ⟨unk|un′k′ ⟩ = X
+
+> i
+
+Viei(k′−k)·Ri ⟨unk|un′k′ ⟩ = V 0 
+
+> kk ′
+
+⟨unk|un′k′ ⟩ .
+
+and the disorder average can be further simplified to 
+
+⟨Vkk ′ Vk′k⟩dis =
+
+*X
+
+> ij
+
+ViVj exp {(k′ − k)( Ri − Rj )}
+
++
+
+> dis
+
+= niV 20 . (C7) where ni is the impurity concentration and V0 is the zeroth moment of the impurity potential. Putting these ingredients together, w(2 S) 
+
+> ll ′
+
+finally simplifies to 
+
+w(2 S) 
+
+> ll ′
+
+= 2πn iV 20
+
+ℏ ⟨unk|un′k′ ⟩⟨ un′k′ |unk⟩δ(εnk − εn′k′ ) . (C8) The coordinate-shift component of the scattering rate is given by 
+
+w(2) ,cs  
+
+> l′l
+
+= 2π
+
+ℏ ⟨| Vl′l|2⟩dis 
+
+∂δ (εl − εl′ )
+
+∂ε l
+
+eE · δrl′l , (C9) which captures the coordinate-shift correction induced by the external electric field E. This term originates from the real-space displacement of the electron wave packet during an impurity scattering event. The coordinate shift δrl′l of the wave packet is given by [73] 
+
+δrl′l = ⟨ul′ |i∂ k′ |ul′ ⟩ − ⟨ ul|i∂ k|ul⟩ − (∂k + ∂k′ ) arg( Vl′l) . (C10) Here, the operator “ arg ” denotes the phase (argument) of a complex number. This coordinate shift plays a crucial role in the side-jump contribution to spin transport. We now turn to the antisymmetric third-order scattering rate, 
+
+w(3) ,a ll ′ = 12 (w(3)  
+
+> ll ′
+
+− w(3)  
+
+> l′l
+
+). (C11) Substituting Eq. (C3) into this definition, we obtain 
+
+w(3) ,a ll ′ = ( π/ ℏ) X
+
+> l′′
+
+ ⟨Vll ′′ Vl′′ l′ Vl′l⟩dis 
+
+εl − εl′′ + iη + ⟨Vll ′ Vl′l′′ Vl′′ l⟩dis 
+
+εl − εl′′ − iη − ⟨Vl′l′′ Vl′′ lVll ′ ⟩dis 
+
+εl − εl′′ + iη − ⟨Vl′lVll ′′ Vl′′ l′ ⟩dis 
+
+εl − εl′′ − iη 
+
+
+
+δ(εl − εl′ )= ( π/ ℏ) X
+
+> l′′
+
+
+
+⟨Vll ′′ Vl′′ l′ Vl′l⟩dis 
+
+ 1
+
+εl − εl′′ + iη − 1
+
+εl − εl′′ − iη 
+
+
+
+− cc. 
+
+
+
+δ(εl − εl′ )= (4 π2/ℏ)Im X
+
+> l′′
+
+⟨Vll ′′ Vl′′ l′ Vl′l⟩dis δ(εl − εl′ )δ(εl − εl′′ )= (4 π2/ℏ)Im X
+
+> n′′
+
+X
+
+> k′′
+
+⟨V 0 
+
+> kk ′′
+
+V 0 
+
+> k′′ k′
+
+V 0
+
+> k′k
+
+⟩dis ⟨unk|un′′ k′′ ⟩⟨ un′′ k′′ |un′k′ ⟩⟨ un′k′ |unk⟩δ(εnk − εn′k′ )δ(εnk − εn′′ k′′ ) .
+
+(C12) With the same approximations as before, we first evaluate the disorder-averaged third-order impurity correlator as 
+
+⟨V 0 
+
+> kk ′′
+
+V 0 
+
+> k′′ k′
+
+V 0
+
+> k′k
+
+⟩dis = X
+
+> i,j,k
+
+ViVj Vk exp (( k′′ − k)Ri + ( k′ − k′′ )Rj + ( k − k′)Rk) = niV 31 , (C13) 12 with ni being the impurity concentration and V1 being the first moment of the impurity potential. Finally the antisymmetric third-order scattering rate (non-Gaussian skew scattering) takes the compact form 
+
+w(3) ,a ll ′ = 4π2niV 31
+
+ℏ Im X
+
+> k′′
+
+⟨unk|un′′ k′′ ⟩⟨ un′′ k′′ |un′k′ ⟩⟨ un′k′ |unk⟩δ(εnk − εn′k′ )δ(εnk − εn′′ k′′ ) . (C14) Within the present set of approximations, this represents the maximal level of simplification. To proceed further, we need to explicitly evaluate the Bloch-state overlaps entering the disorder matrix elements. We note that the Bloch wave functions satisfy the orthogonality relation ⟨nk|n′k′⟩ = δkk ′ δnn ′ , but the periodic part of the Bloch wave function need not satisfy the same relation, i.e. ⟨unk|un′k′ ⟩̸ = δkk ′ δnn ′ . This means there can be finite overlap between |un′k′ ⟩
+
+and |unk⟩.Here we assume that no inter-band transition occurs during scattering. This imposes n = n′ for w(2 S) 
+
+> ll ′
+
+and n = n′ =
+
+n′′ for w(3) ,a ll ′ . This condition effectively simplifies the Bloch-state overlaps, making them finite only in the regime of small momentum transfer q = ( k′ − k) → 0. Within this limit, we expand the Bloch state |unk′ ⟩ around k as 
+
+|unk′ ⟩ = |unk⟩ + qb |∂bunk⟩ + 12 qbqc |∂b∂cunk⟩ + · · · . (C15) Here we adopt Einstein summation over the repeated coordinate index b. This leads to 
+
+⟨unk|unk′ ⟩ ≈ 1 − iq bRbnn (k) ≈ e−iq bRbnn (k) . (C16) Using this in Eq. (C8), we obtain 
+
+w(2 S) 
+
+> ll ′
+
+= w(2 S) 
+
+> n, kk ′
+
+= 2πn iV 20
+
+ℏ |⟨ unk|unk′ ⟩| 2δ(εnk − εnk′ ) ≈ 2πn iV 20
+
+ℏ δ(εnk − εnk′ ) . (C17) We now consider the case of w(3) ,a ll ′ within the same limit. It contains ⟨unk|unk′ ⟩, ⟨unk′′ |unk′ ⟩ and ⟨unk′ |unk⟩. We also assume q′ = ( k′′ − k) → 0, which leads to |unk′′ ⟩ = |unk⟩ + q′ 
+
+> b
+
+|∂bunk⟩ + 12 q′
+
+> b
+
+q′ 
+
+> c
+
+|∂b∂cunk⟩ + · · · . The above overlaps then evaluate to 
+
+⟨unk|unk′′ ⟩ = 1 − iq ′
+
+> b
+
+Rbnn + 12 q′
+
+> b
+
+q′
+
+> c
+
+⟨unk|∂b∂cunk⟩ ,
+
+⟨unk′′ |unk′ ⟩ = 1 + i(q′ 
+
+> b
+
+− qb)Rbnn + qbq′
+
+> c
+
+⟨∂cunk|∂bunk⟩ + 12 qbqc⟨unk|∂b∂cunk⟩ + 12 q′
+
+> b
+
+q′
+
+> c
+
+⟨∂b∂cunk|unk⟩ ,
+
+⟨unk′ |unk⟩ = 1 + iq bRbnn + 12 qbqc⟨∂b∂cunk|unk⟩ .
+
+Using the above in Eq. (C12), we can simplify w(3) ,a n, kk ′ as follows 
+
+w(3) ,a ll ′ = w(3) ,a n, kk ′ = 4π2niV 31
+
+ℏ Im X
+
+> k′′
+
+⟨unk|unk′′ ⟩⟨ unk′′ |unk′ ⟩⟨ unk′ |unk⟩δ(εnk − εnk′ )δ(εnk − εnk′′ )= 4π2niV 31
+
+ℏ
+
+X
+
+> k′′
+
+Im[1 + ( qbqc + q′
+
+> b
+
+q′ 
+
+> c
+
+− qbq′
+
+> c
+
+)Rbnn Rcnn + qbq′
+
+> c
+
+⟨∂cunk|∂bunk⟩
+
++ ( qbqc + q′
+
+> b
+
+q′
+
+> c
+
+)Re( ⟨unk|∂b∂cunk⟩)] δ(εnk − εnk′ )δ(εnk − εnk′′ )= 4π2niV 31
+
+ℏ
+
+X
+
+> k′′
+
+qbq′
+
+> c
+
+Im[ ⟨∂cunk|∂bunk⟩]δ(εnk − εnk′ )δ(εnk − εnk′′ )= − 2π2niV 31
+
+ℏ
+
+X
+
+> k′′
+
+(k′ 
+
+> b
+
+− kb)( k′′  
+
+> c
+
+− kc)Ω bc n (k)δ(εnk − εnk′ )δ(εnk − εnk′′ )= 2π2niV 31
+
+ℏ
+
+X
+
+> k′′
+
+[( k′ 
+
+> b
+
+− kb)( k′′  
+
+> c
+
+− kc)] ϵbcd Ωdn(k)δ(εnk − εnk′ )δ(εnk − εnk′′ )= 2π2niV 31
+
+ℏ
+
+X
+
+> k′′
+
+[( k′ − k) × (k′′ − k)] · Ωn(k)δ(εnk − εnk′ )δ(εnk − εnk′′ )= − 2π2niV 31
+
+ℏ
+
+X
+
+> k′′
+
+[( k′′ × k′) + ( k′ × k) + ( k × k′′ )] · Ωn(k)δ(εnk − εnk′ )δ(εnk − εnk′′ ) . (C18) 13 Here Ωbc n is the Berry curvature of the system and is defined as Ωbc n = −Ωcb n = 2Im[ ⟨∂cunk|∂bunk⟩] for the n-th band. 
+
+[1] E. Y. Tsymbal and I. Žutić, Spintronics Handbook: Spin Transport and Magnetism, Second Edition: Nanoscale Spintronics and Applications—Volume Three , edited by E. Y. Tsymbal and I. Žutić (CRC Press, 2019). [2] S. S. P. Parkin, M. Hayashi, and L. Thomas, Magnetic domain-wall racetrack memory, Science 320 , 190 (2008). [3] I. M. Miron, K. Garello, G. Gaudin, P.-J. Zermatten, M. V. Costache, S. Auffret, S. Bandiera, B. Rodmacq, A. Schuhl, and P. Gambardella, Perpendicular switching of a single ferromagnetic layer induced by in-plane cur-rent injection, Nature 476 , 189–193 (2011). [4] L. Liu, C.-F. Pai, Y. Li, H. W. Tseng, D. C. Ralph, and R. A. Buhrman, Spin-torque switching with the giant spin hall effect of tantalum, Science 336 , 555–558 (2012). [5] K. L. Wang, J. G. Alzate, and P. Khalili Amiri, Low-power non-volatile spintronic memory: Stt-ram and be-yond, Journal of Physics D: Applied Physics 46 , 074003 (2013). [6] A. D. Kent and D. C. Worledge, A new spin on magnetic memories, Nature Nanotechnology 10 , 187–191 (2015). [7] H.-S. P. Wong and S. Salahuddin, Memory leads the way to better computing, Nature Nanotechnology 10 ,191–194 (2015). [8] A. Difalco and A. Castellero, Thermoelectric materials for spintronics: From physical principles to innovative half metallic ferromagnets, devices, and future perspec-tives, Inorganics 13 , 10.3390/inorganics13100332 (2025). [9] K. Cai, T. Jin, and W. S. Lew, Spin-based magnetic random-access memory for high-performance computing, National Science Review 11 , nwad272 (2023). [10] Q. Shao, P. Li, L. Liu, H. Yang, S. Fukami, A. Razavi, H. Wu, K. Wang, F. Freimuth, Y. Mokrousov, M. D. Stiles, S. Emori, A. Hoffmann, J. Åkerman, K. Roy, J.-P. Wang, S.-H. Yang, K. Garello, and W. Zhang, Roadmap of spin–orbit torques, IEEE Transactions on Magnetics 
+
+57 , 1 (2021). [11] L. Wu, M. Taouil, S. Rao, E. J. Marinissen, and S. Ham-dioui, Survey on stt-mram testing: Failure mechanisms, fault models, and tests (2020), arXiv:2001.05463 [cs.ET]. [12] B. Diény, S. Aggarwal, V. B. Naik, S. Couet, T. Coughlin, S. Fukami, K. Garello, J. Guedj, J. A. C. Incorvia, L. Le-brun, K.-J. Lee, D. Leonelli, Y. Noh, S. Salimy, S. Soss, L. Thomas, W. Wang, and D. Worledge, Impact of exter-nal magnetic fields on STT-MRAM: An application note, IEEE Electron Devices Magazine 2, 52 (2024). [13] E. Baek, I. Purnama, and C.-Y. You, Limited stochastic current for energy-optimized switching of spin-transfer-torque magnetic random-access memory, Phys. Rev. Appl. 12 , 064004 (2019). [14] N. Sato, F. Xue, R. M. White, C. Bi, and S. X. Wang, Two-terminal spin-orbit torque magnetoresistive random access memory (2018), arXiv:1806.09713 [cond-mat.mes-hall]. [15] S. Bhatti, R. Sbiaa, A. Hirohata, H. Ohno, S. Fukami, and S. Piramanayagam, Spintronics based random access memory: a review, Materials Today 20 , 530 (2017). [16] S. Jenkins, A. Meo, L. E. Elliott, S. K. Piotrowski, M. Bapna, R. W. Chantrell, S. A. Majetich, and R. F. L. Evans, Magnetic stray fields in nanoscale magnetic tun-nel junctions, Journal of Physics D: Applied Physics 53 ,044001 (2019). [17] Z. Liu, Z. Feng, H. Yan, X. Wang, X. Zhou, P. Qin, H. Guo, R. Yu, and C. Jiang, Antiferromag-netic piezospintronics, Advanced Electronic Materials 5,1900176 (2019). [18] J. Železný, P. Wadley, K. O. A. Hoffmann, and H. Ohno, Spin-transport, spin-torque and memory in antiferromag-netic devices: Part of a collection of reviews on antifer-romagnetic spintronics (2017), arXiv:1705.10675 [cond-mat.mes-hall]. [19] Y. Takeuchi, Y. Sato, Y. Yamane, J.-Y. Yoon, Y. Kanno, T. Uchimura, K. V. D. Zoysa, J. Han, S. Kanai, J. Ieda, H. Ohno, and S. Fukami, Electrical coherent driving of chiral antiferromagnet, Science 389 , 830 (2025). [20] D. Xiong, Y. Jiang, K. Shi, A. Du, Y. Yao, Z. Guo, D. Zhu, K. Cao, S. Peng, W. Cai, D. Zhu, and W. Zhao, Antiferromagnetic spintronics: An overview and outlook, Fundamental Research 2, 522 (2022). [21] P. Wadley, B. Howells, J. Železný, C. Andrews, V. Hills, R. P. Campion, V. Novák, K. Olejník, F. Maccherozzi, S. S. Dhesi, S. Y. Martin, T. Wagner, J. Wunderlich, F. Freimuth, Y. Mokrousov, J. Kuneš, J. S. Chauhan, M. J. Grzybowski, A. W. Rushforth, K. W. Edmonds, B. L. Gallagher, and T. Jungwirth, Electrical switching of an antiferromagnet, Science 351 , 587 (2016). [22] S. Y. Bodnar, L. Šmejkal, I. Turek, T. Jungwirth, O. Gomonay, J. Sinova, A. A. Sapozhnik, H.-J. Elmers, M. Kläui, and M. Jourdan, Writing and reading antifer-romagnetic mn2au by néel spin-orbit torques and large anisotropic magnetoresistance, Nature Communications 
+
+9, 10.1038/s41467-017-02780-x (2018). [23] M. Meinert, D. Graulich, and T. Matalla-Wagner, Elec-trical switching of antiferromagnetic mn 2Au and the role of thermal activation, Phys. Rev. Appl. 9, 064040 (2018). [24] X. Chen, X. Zhou, R. Cheng, C. Song, J. Zhang, Y. Wu, Y. Ba, H. Li, Y. Sun, Y. You, Y. Zhao, and F. Pan, Electric field control of néel spin–orbit torque in an anti-ferromagnet, Nature Materials 18 , 931–935 (2019). [25] J. Železný, H. Gao, K. Výborný, J. Zemen, J. Mašek, A. Manchon, J. Wunderlich, J. Sinova, and T. Jungwirth, Relativistic néel-order fields induced by electrical current in antiferromagnets, Phys. Rev. Lett. 113 , 157201 (2014). [26] J. Železný, H. Gao, A. Manchon, F. Freimuth, Y. Mokrousov, J. Zemen, J. Mašek, J. Sinova, and T. Jungwirth, Spin-orbit torques in locally and globally noncentrosymmetric crystals: Antiferromagnets and fer-romagnets, Phys. Rev. B 95 , 014403 (2017). [27] J. Tang, H. Zhang, and R. Cheng, Néel spin-orbit torque in antiferromagnetic quantum spin and anomalous hall insulators, Nature Communications 16 , 10.1038/s41467-025-63171-1 (2025). [28] S. Sarkar, S. Das, and A. Agarwal, Deterministic switch-ing in altermagnets via asymmetric sublattice spin cur-rent, Phys. Rev. B 113 , 155430 (2026). [29] V. Edelstein, Spin polarization of conduction electrons induced by electric current in two-dimensional asymmet-14 
+
+ric electron systems, Solid State Communications 73 , 233 (1990). [30] F. Thöle, A. Keliri, and N. A. Spaldin, Concepts from the linear magnetoelectric effect that might be useful for antiferromagnetic spintronics, Journal of Applied Physics 
+
+127 , 213905 (2020). [31] A. Johansson, B. Göbel, J. Henk, M. Bibes, and I. Mertig, Spin and orbital edelstein effects in a two-dimensional electron gas: Theory and application to srtio 3 interfaces, Phys. Rev. Res. 3, 013275 (2021). [32] A. Johansson, Theory of spin and orbital edelstein effects, Journal of Physics: Condensed Matter 36 , 423002 (2024). [33] R. Guo, Y.-X. Huang, X. Yang, Y. Liu, C. Xiao, and Z. Yuan, Extrinsic contribution to nonlinear current induced spin polarization, Phys. Rev. B 109 , 235413 (2024). [34] C. Xiao and Q. Niu, Semiclassical theory of spin-orbit torques in disordered multiband electron systems, Phys. Rev. B 96 , 045428 (2017). [35] C. Xiao, Y. Liu, Z. Yuan, S. A. Yang, and Q. Niu, Tem-perature dependence of the side-jump spin hall conduc-tivity, Phys. Rev. B 100 , 085425 (2019). [36] D. Ma, A. Arora, G. Vignale, and J. C. W. Song, Anomalous skew-scattering nonlinear hall effect and chi-ral photocurrents in PT -symmetric antiferromagnets, Phys. Rev. Lett. 131 , 076601 (2023). [37] S. Sarkar, S. Das, D. Mandal, and A. Agarwal, Light-induced nonlinear resonant spin magnetization, New Journal of Physics 27 , 113503 (2025). [38] Z.-F. Zhang, Z.-G. Zhu, and G. Su, Intrinsic second-order spin current, Phys. Rev. B 110 , 174434 (2024). [39] X.-G. Ye, P.-F. Zhu, W.-Z. Xu, T.-Y. Zhao, and Z.-M. Liao, Nonlinear spin and orbital edelstein effect in WTe 2,Phys. Rev. B 110 , L201407 (2024). [40] Z. Z. Du, C. M. Wang, S. Li, H.-Z. Lu, and X. C. Xie, Disorder-induced nonlinear hall effect with time-reversal symmetry, Nature Communications 10 , 10.1038/s41467-019-10941-3 (2019). [41] H. Varshney and A. Agarwal, Asymmetric scattering drives large nonlinear nernst and seebeck effects (2026), arXiv:2601.17775 [cond-mat.mes-hall]. [42] H. Varshney and A. Agarwal, Longitudinal nonrecipro-cal charge transport with time reversal symmetry (2026), arXiv:2603.18823 [cond-mat.mes-hall]. [43] C. Xiao, W. Wu, H. Wang, Y.-X. Huang, X. Feng, H. Liu, G.-Y. Guo, Q. Niu, and S. A. Yang, Time-reversal-even nonlinear current induced spin polarization, Phys. Rev. Lett. 130 , 166302 (2023). [44] S. Sarkar, H. Varshney, S. Sarkar, and A. Agarwal, Spin band geometry drives thermal spin magnetization and current, Materials Today Quantum 10 , 100062 (2026). [45] K. Shen, G. Vignale, and R. Raimondi, Microscopic the-ory of the inverse edelstein effect, Phys. Rev. Lett. 112 ,096601 (2014). [46] C. Xiao, H. Liu, W. Wu, H. Wang, Q. Niu, and S. A. Yang, Intrinsic nonlinear electric spin generation in cen-trosymmetric magnets, Phys. Rev. Lett. 129 , 086602 (2022). [47] S. Sarkar, S. Sarkar, and A. Agarwal, Extrinsic spin split-ter currents in altermagnets (2026), arXiv:2602.23273 [cond-mat.mes-hall]. [48] B. M. Fregoso, Bulk photospin effect: Calculation of elec-tric spin susceptibility to second order in an electric field, Phys. Rev. B 106 , 195108 (2022). [49] Y.-J. Lai, M.-R. Huang, H.-J. Duan, M. Yang, R.-Q. Wang, and M.-X. Deng, Current-induced nonequilibrium hidden spin polarization in topological dirac semimetals, Phys. Rev. Lett. 135 , 106505 (2025). [50] L. Šmejkal, J. Železný, J. Sinova, and T. Jungwirth, Elec-tric control of dirac quasiparticles by spin-orbit torque in an antiferromagnet, Phys. Rev. Lett. 118 , 106402 (2017). [51] M. Papaj and L. Fu, Enhanced anomalous nernst effect in disordered dirac and weyl materials, Phys. Rev. B 103 ,075424 (2021). [52] H. Isobe, S.-Y. Xu, and L. Fu, High-frequency rectifi-cation via chiral bloch electrons, Science Advances 6,eaay2497 (2020). [53] S. Y. Bodnar, M. Filianina, S. P. Bommanaboyena, T. Forrest, F. Maccherozzi, A. A. Sapozhnik, Y. Skourski, M. Kläui, and M. Jourdan, Imaging of current induced néel vector switching in antiferromagnetic mn 2Au , Phys. Rev. B 99 , 140409 (2019). [54] X. F. Zhou, J. Zhang, F. Li, X. Z. Chen, G. Y. Shi, Y. Z. Tan, Y. D. Gu, M. S. Saleem, H. Q. Wu, F. Pan, and C. Song, Strong orientation-dependent spin-orbit torque in thin films of the antiferromagnet mn 2Au , Phys. Rev. Appl. 9, 054028 (2018). [55] J. Godinho, H. Reichlová, D. Kriegner, V. Novák, K. Ole-jník, Z. Kašpar, Z. Šobáň, P. Wadley, R. P. Campion, R. M. Otxoa, P. E. Roy, J. Železný, T. Jungwirth, and J. Wunderlich, Electrically induced and detected néel vector reversal in a collinear antiferromagnet, Nature Communications 9, 10.1038/s41467-018-07092-2 (2018). [56] J. Slonczewski, Current-driven excitation of magnetic multilayers, Journal of Magnetism and Magnetic Materi-als 159 , L1 (1996). [57] L. Liu, T. Moriyama, D. C. Ralph, and R. A. Buhrman, Spin-torque ferromagnetic resonance induced by the spin hall effect, Phys. Rev. Lett. 106 , 036601 (2011). [58] H. Y. Yuan, Z. Yuan, R. A. Duine, and X. R. Wang, Re-cent progress in antiferromagnetic dynamics, Europhysics Letters 132 , 57001 (2021). [59] Z. Xu, J. Ren, Z. Yuan, Y. Xin, X. Zhang, S. Shi, Y. Yang, and Z. Zhu, Field-free spin–orbit torque switch-ing of an antiferromagnet with perpendicular néel vector, Journal of Applied Physics 133 , 153904 (2023). [60] S. Selzer, L. Salemi, A. Deák, E. Simon, L. Szunyogh, P. M. Oppeneer, and U. Nowak, Current-induced switch-ing of antiferromagnetic order in mn 2Au from first prin-ciples, Phys. Rev. B 105 , 174416 (2022). [61] J. Hirst, U. Atxitia, S. Ruta, J. Jackson, L. Petit, and T. Ostler, Temperature-dependent micromagnetic model of the antiferromagnet mn 2Au : A multiscale approach, Phys. Rev. B 106 , 094402 (2022). [62] P. E. Roy, R. M. Otxoa, and J. Wunderlich, Robust pi-cosecond writing of a layered antiferromagnet by stag-gered spin-orbit fields, Phys. Rev. B 94 , 014439 (2016). [63] J. Volný, D. Wagenknecht, J. Železný, P. Harcuba, E. Duverger-Nedellec, R. H. Colman, J. Kudrnovský, I. Turek, K. Uhlířová, and K. Výborný, Electrical trans-port properties of bulk tetragonal cumnas, Phys. Rev. Mater. 4, 064403 (2020). [64] M. Wang, C. Andrews, S. Reimers, O. J. Amin, P. Wadley, R. P. Campion, S. F. Poole, J. Fel-ton, K. W. Edmonds, B. L. Gallagher, A. W. Rush-forth, O. Makarovsky, K. Gas, M. Sawicki, D. Krieg-ner, J. Zubáč, K. Olejník, V. Novák, T. Jungwirth, M. Shahrokhvand, U. Zeitler, S. S. Dhesi, and F. Mac-15 
+
+cherozzi, Spin flop and crystalline anisotropic magnetore-sistance in cumnas, Phys. Rev. B 101 , 094429 (2020). [65] I. A. Zhuravlev, A. Adhikari, and K. D. Belashchenko, Perpendicular magnetic anisotropy in bulk and thin-film cumnas for antiferromagnetic memory applications, Ap-plied Physics Letters 113 , 162404 (2018). [66] E. Cogulu, H. Zhang, N. N. Statuto, Y. Cheng, F. Yang, R. Cheng, and A. D. Kent, Quantifying spin-orbit torques in antiferromagnet–heavy-metal heterostructures, Phys. Rev. Lett. 128 , 247204 (2022). [67] K. Kondou, H. Chen, T. Tomita, M. Ikhlas, T. Higo, A. H. MacDonald, S. Nakatsuji, and Y. Otani, Giant field-like torque by the out-of-plane magnetic spin hall effect in a topological antiferromagnet, Nature Commu-nications 12 , 10.1038/s41467-021-26453-y (2021). [68] W. Zhang, M. B. Jungfleisch, F. Freimuth, W. Jiang, J. Sklenar, J. E. Pearson, J. B. Ketterson, Y. Mokrousov, and A. Hoffmann, All-electrical manipulation of mag-netization dynamics in a ferromagnet by antiferromag-nets with anisotropic spin hall effects, Phys. Rev. B 92 ,144405 (2015). [69] N. A. Sinitsyn, Semiclassical theories of the anomalous hall effect, Journal of Physics: Condensed Matter 20 ,023201 (2007). [70] N. Nagaosa, J. Sinova, S. Onoda, A. H. MacDonald, and N. P. Ong, Anomalous hall effect, Rev. Mod. Phys. 82 ,1539 (2010). [71] N. Ashcroft and N. Mermin, Solid State Physics , HRW international editions (Holt, Rinehart and Winston, 1976). [72] J. J. Sakurai and J. Napolitano, Modern Quantum Me-chanics , 2nd ed. (Cambridge University Press, 2017). [73] N. A. Sinitsyn, Q. Niu, and A. H. MacDonald, Co-ordinate shift in the semiclassical boltzmann equation and the anomalous hall effect, Phys. Rev. B 73 , 075318 (2006).

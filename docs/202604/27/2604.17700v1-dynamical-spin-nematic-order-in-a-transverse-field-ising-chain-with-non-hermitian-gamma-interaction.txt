@@ -1,0 +1,931 @@
+Title: Dynamical spin-nematic order in a transverse field Ising chain with non-Hermitian Gamma interaction
+
+URL Source: https://arxiv.org/pdf/2604.17700v1
+
+Published Time: Tue, 21 Apr 2026 01:44:55 GMT
+
+Number of Pages: 10
+
+Markdown Content:
+# Dynamical spin-nematic order in a transverse field Ising chain with non-Hermitian Gamma interaction 
+
+Yu-Hong Yan, 1 Ran Wang, 2 and Kun-Liang Zhang 1, 3, ∗
+
+> 1
+
+School of Physics and Optoelectronic Engineering, Foshan University, Foshan, 528225, China 
+
+> 2
+
+College of Physics and Materials Science, Tianjin Normal University,Tianjin 300387, China 
+
+> 3
+
+Guangdong-HongKong-Macao Joint Laboratory for Intelligent Micro-Nano Optoelectronic Technology, Foshan 528225, China 
+
+(Dated: April 21, 2026) We investigate the effect of non-Hermitian Gamma interaction on the phase transitions and mag-netic correlations for the transverse field Ising chain. We demonstrate that apart from the gapped ferromagnetic and paramagnetic phases, there is a gapless phase, where the system exhibits long-range spin-nematic order induced by parity-time symmetry breaking. Furthermore, we reveal that the parity-time symmetry breaking leads to the emergence of dynamical spin-nematic order, which also suggests a way of characterizing the spin-nematic phase diagram through non-equilibrium dy-namics. Our findings show rich quantum phases stem from the competition among the Ising inter-action, transverse field and non-Hermitian Gamma interaction, as well as providing a scheme for generating spin-nematic order in the spin chain. 
+
+I. INTRODUCTION 
+
+Quantum spin chains provide an ideal platform for investigating quantum phase transitions (QPTs) [1–3], symmetry-protected topological order [4–7], and fraction-alized excitations [8–10] due to their strong quantum fluctuations and exact solvability. Traditional spin-chain models, such as the Heisenberg chain, mainly focus on isotropic interactions. Nevertheless, in magnetic mate-rials containing heavy transition-metal elements, strong spin-orbit coupling breaks the spin rotational symmetry and gives rise to highly bond-dependent anisotropic in-teractions [11]. In this regard, beyond the well-known Kitaev interaction [12–16], the symmetric off-diagonal exchange, namely the Gamma interaction with the form 
+
+Γ P 
+
+> j
+
+(ˆ σxj ˆσyj+1 + ˆ σyj ˆσxj+1 ), plays a particularly important role [17–28]. Introducing the Gamma interaction into quantum spin chains leads to strong energetic compe-tition and pronounced quantum frustration, which may not only suppress conventional long-range magnetic or-der, but also induce exotic quantum many-body states, including quantum spin liquids [20], spin-nematic orders [21, 24, 26], and topological excitations [29]. Therefore, the extension from conventional spin chains to more com-plex spin-chain models incorporating the Gamma inter-action marks a deeper understanding of quantum mag-netic materials. Recent studies reveal that dissipation can be utilized to modulate chiral spiral phases in the non-Hermitian Ising-Gamma model [30], while also drive exotic corre-lation spreading and entanglement generation in non-Hermitian spin chains [31]. Traditionally, dissipation has long been regarded as a negative factor to be mini-mized or avoided. Non-Hermitian physics [32], however, turns this paradigm on its head by transforming dissi-pation into a fundamentally new degree of freedom for  
+
+> ∗Contact author: zhangkl@fosu.edu.cn
+
+system control. By precisely tailoring gain and loss, non-Hermiticity is demonstrating irreplaceable value in di-rectional wave control [33–36], the engineering of novel topological states [37–39], the development of novel light sources utilizing topological lasers [40–42], and the de-sign of quantum devices through dissipation engineering [43, 44]. In recent years, the research interest of non-Hermitian physics has expanded into the field of quantum spin systems, both theoretically [45–57] and experimen-tally [44, 58–63], demonstrating that non-Hermitian in-teractions can drive QPTs, give rise to exotic dynamical behaviors and significantly alter the phase diagram of the system. Consequently, the role of non-Hermitian interac-tions in unconventional magnetic orders warrants further research, particularly in terms of their non-equilibrium dynamics. The present work is devoted to investigating the ef-fect of non-Hermitian Gamma interaction on the QPT and magnetic correlations for the transverse field Ising chain. Using free fermion technique, we are able to obtain magnetic correlations, dynamical characteristics and phase diagram of the chain exactly. We show that apart from the gapped ferromagnetic and paramagnetic phases, there is a non-Hermitian gapless phase, where the system exhibits long-range spin-nematic order induced by parity-time (PT) symmetry breaking when increasing the strength of non-Hermitian Gamma interaction. This stands in stark contrast to the absence of true long-range order in the gapless phases of Hermitian spin chains. Furthermore, we reveal that the PT symmetry break-ing leads to the emergence of dynamical spin-nematic order, which also suggests a way of characterizing the spin-nematic phase diagram through non-equilibrium dy-namics. The rest of this paper is organized as follows: In Sec. II, we introduce the Hamiltonian of the transverse field Ising chain with non-Hermitian Gamma interaction, and diagonalize the Hamiltonian and obtain the phase dia-gram defined by the energy gap. In Sec. III, we discuss 
+
+> arXiv:2604.17700v1 [cond-mat.mes-hall] 20 Apr 2026
+
+2the behaviors the spin-xx and the spin-nematic corre-lation, and spin-nematic order parameter. In Sec. IV, we investigate the dynamics of spin-nematic correlation and order, and reveal the spin-nematic phase diagram through non-equilibrium dynamics. Finally, we discuss and conclude our findings in Sec. V.  
+
+> II. MODEL AND DIAGONALIZATION
+
+We initiate our study by introducing the model Hamil-tonian of the transverse field Ising chain with non-Hermitian Gamma interaction, which has the form ˆH =J
+
+> N
+
+X
+
+> j=1
+
+ˆσxj ˆσxj+1 + h
+
+> N
+
+X
+
+> j=1
+
+ˆσzj
+
+− iΓ
+
+> N
+
+X
+
+> j=1
+
+(ˆ σxj ˆσyj+1 + ˆ σyj ˆσxj+1 ),
+
+(1) where ˆ σx,y,z j are Pauli operators on site j. In the above Hamiltonian, the first term describes the antiferromag-netic Ising interaction with J > 0, the second term cor-responds to the transverse field with strength h, and the last term represents imaginary symmetric off-diagonal Gamma interaction with strength Γ . The length of the chain is N and we assume periodic boundary condition, that is ˆ σx,y L+1 = ˆ σx,y  
+
+> 1
+
+.In general, dissipation and decoherence are unavoid-able in practical quantum systems. While these effects are traditionally described using the quantum master equation, non-Hermitian Hamiltonians are primarily un-derstood as an effective framework for describing such open quantum systems [32]. The imaginary symmet-ric off-diagonal Gamma interaction occurs in the no-click limit of the stochastic quantum jump trajectories when correlated jump operators √Γ (ˆ σxj + ˆ σyj+1 ) and 
+
+√Γ (ˆ σyj + ˆ σxj+1 ) are measured, in which Γ ⩾ 0 is the dis-sipation rate [31, 64] (see APPENDIX A). Without loss of generality, we also assume h ⩾ 0 in the subsequent discussions. When Γ = 0, the model in Eq. (1) is the celebrated transverse field Ising chain [2], which respects parity sym-metry with the parity operator being ˆP = QNj=1 ˆσzj .This is a Z2 symmetry that intimately connected with the QPT from a parity-symmetric paramagnetic phase to a antiferromagnetic phase with spontaneously bro-ken parity symmetry. We note that the non-Hermitian Gamma interaction does not break the parity symme-try, we have ˆP ˆH ˆP−1 = ˆH when Γ̸ = 0, and ˆH also preserve time-reversal symmetry ˆT ˆH ˆT −1 = ˆH with ˆT
+
+being the complex conjugation operator: ˆT i ˆT −1 = −i, ˆT (ˆ σxj , ˆσyj , ˆσzj ) ˆT −1 = (ˆ σxj , −ˆσyj , ˆσzj ) . As a result, the non-Hermitian Hamiltonian ˆH respects PT symmetry, that is ˆP ˆT ˆH( ˆP ˆT )−1 = ˆH. Note that in spin lattices, the definition of the ˆP ˆT operator is not unique [65]. In non-Hermitian systems, PT symmetry does not require the system to be individually invariant under parity and time-reversal operations. Indeed, in most situations, PT-symmetric non-Hermitian systems are invariant under neither parity nor time reversal alone. Interestingly, in our case, the parity symmetry of ˆH implies the preserva-tion of Ising-type phase transition, and the PT symmetry may lead to a full real spectrum and non-Hermitian phase transition [66, 67]. Therefore, the phase transition and magnetic correlations are governed by the competition between PT symmetry breaking and spontaneous parity symmetry breaking. The Hamiltonian in Eq. (1) can be solved by Jordan-Wigner fermionization, followed by free-fermion diago-nalization (see APPENDIX B). Explicitly, through the Jordan-Wigner transformation [68] ˆσxj = Y
+
+> l<j
+
+(1 − 2ˆ c† 
+
+> l
+
+ˆcl)(ˆ c† 
+
+> j
+
++ ˆ cj ),
+
+ˆσyj = i Y
+
+> l<j
+
+(1 − 2ˆ c† 
+
+> l
+
+ˆcl)(ˆ c† 
+
+> j
+
+− ˆcj ),
+
+ˆσzj = 1 − 2ˆ c† 
+
+> j
+
+ˆcj ,
+
+(2) and the Fourier transformation ˆcj = e−iπ/ 4
+
+√L
+
+X
+
+> k
+
+eikj ˆck, (3) the Hamiltonian can be written as the Bogoliubov-de Gennes (BdG) form ˆH = X
+
+> k
+
+  ˆc† 
+
+> k
+
+ˆc−k
+
+ Hk
+
+ ˆck
+
+ˆc†−k
+
+
+
+, (4) where 
+
+Hk =
+
+ J cos k − h −J sin k − 2Γ sin k
+
+−J sin k + 2 Γ sin k −J cos k + h
+
+
+
+. (5) Then the Hamiltonian can be diagonalized as ˆH = X
+
+> k
+
+ϵk
+
+
+
+ˆηk ˆηk − 12
+
+
+
+,ϵk = ± 2
+
+q
+
+(J cos k − h)2 + ( J2 − 4Γ 2) sin 2 k, 
+
+(6) through the complex Bogoliubov transformation ˆηk =μk ˆck + νkeλ ˆc†−k,
+
+ˆηk =μk ˆc† 
+
+> k
+
++ νke−λ ˆc−k, (7) where 
+
+μk =
+
+s
+
+ϵk/2 + J cos k − hϵk
+
+,νk = −
+
+s
+
+(J2 − 4Γ 2) sin 2 kϵk(ϵk/2 + J cos k − h) ,eλ =
+
+r J + 2 Γ
+
+J − 2Γ ,
+
+(8) 30.0 0.5 1.0
+
+Γ
+
+012
+
+> h
+
+abc d ef
+
+−2024
+
+> k
+
+(a) (b) (c) 
+
+−π/ 2 0 π/ 2
+
+k
+
+−2024
+
+> k
+
+(d) 
+
+−π/ 2 0 π/ 2
+
+k
+
+(e)    
+
+> Re kIm k
+
+−π/ 2 0 π/ 2
+
+k
+
+(f) 
+
+012gap  ∆                      
+
+> FIG. 1. Left panel is the phase diagram characterized by the energy gap ∆, as a function of Γand h.The dashed lines represent the phase transition lines, where the red dashed line denotes that of Ising-type phase transition, and the gray dashed lines denote that of non-Hermitian phase transition separating the PT-symmetric and PT-broken phases. Right panels show the dispersion ϵkfor several representative points in parameter space of ( Γ, h ), which are marked in phase diagram of left panel and taken as (a) (0 .3,1.5) in gapped phase; (b) (0 .3,1.0) in phase boundary with a critical mode kc= 0; (c) (0 .3,0.4) in gapped phase; (d) (0 .5,0.4) in phase boundary with two critical modes; (e) (0 .8,0.4) in gapless phase; (f) (0 .8,1.6) in phase boundary with two critical modes. We note that in the gapless phase (with region of the phase diagram), the dispersion
+> ϵkbecome complex and appear in complex-conjugate pairs. In all situations, we take N= 2000 and J= 1.
+
+and ˆ ηk, ˆ ηk obey the following canonical anticommutation relation 
+
+ˆηk, ˆηk′ =δk,k ′ ,
+
+{ˆηk, ˆηk′ } = ˆηk, ˆηk′ = 0 . (9) Note that ˆ ηk̸ = ˆ η† 
+
+> k
+
+for the non-Hermitian case Γ̸ = 0. Here and in what follows, we focus on the properties of the system’s ground state |G⟩ , which fulfills ˆ ηk |G⟩ = 0 and is also called Bogoliubov vacuum. Then up to a normalization factor, the ground state has the form |G⟩ =Q 
+
+> k
+
+ˆηk |0⟩, where |0⟩ is the vacuum for the fermions, that is ˆ cm |0⟩ = 0. According to the diagonalization form in Eq. (6), it can be check that the ground-state energy is 
+
+E = − 12
+
+X
+
+> k
+
+ϵk. (10) For the dispersion ϵk in Eq. (6), one is free to choose either the “+” or the “ −” branch [45]. In the PT-symmetric region, we choose the “+” branch so that the ground-state energy E is minimal. While in the PT-broken region, ϵk is not always real, then for each k with complex ϵk, we fix the sign convention so that Im ϵk < 0for convenience. In general, the ground-state energy characterizes the thermodynamic non-analyticity of a QPT, while the ex-citation gap reveals critical low-energy excitations and typically closes at phase transition point or in the gap-less phase. For a Hermitian or non-Hermitian system with full real ϵk, the energy gap ∆ can be denoted as the minimal values of ϵk. However, for the PT-broken phase of the system, ϵk is not full real for all k. In non-Hermitian systems, energy gaps are categorized into two types, i.e., line gaps and point gaps, depending on whether the energy spectrum excludes a specific line or a single point in the complex energy plane [37]. Here we defined the energy gap ∆ as the minimal values of Re ϵk. Figure 1 shows the phase diagram characterized by the energy gap ∆ in the Γ -h plane (left panel) and the dispersion ϵk for several representative parameters (right panel). The phase diagram consists of two gapped phases and one gapless phase separated by three critical lines, along which the gap vanishes, i.e., ϵk = 0. The critical lines are given as follows: (i) h = J (Γ < J/ 2) with critical mode kc = 0; (ii) Γ = J/ 2 ( h < J ) with critical modes kc = ± arccos( h/J ); and (iii) h = 2 Γ (Γ > J/ 2) with critical modes kc = ± arccos( J/h ). For the typical transverse field Ising chain with Γ = 0, it is clear that the paramagnetic phase and antiferromagnetic phase are separated by a critical point h = J, which extends to a critical line shown as a red dashed line of the phase diagram in Fig. 1 for the non-Hermitian case. To fur-ther clarify the nature of the ground states in these three phases, we will analyze the spin-correlation functions and order parameters in the next section.  
+
+> III. ORDER PARAMETERS
+
+In this section, we evaluate the spin-correlation func-tions and order parameters of the ground state |G⟩ =Q 
+
+> k
+
+ˆηk |0⟩. Before proceeding, it is useful to rewrite ˆ ηk in a more convenient form. We point out that the complex Bogoliubov transformation in Eq. (7) essentially serves as a similarity transformation for the biorthogonal di-agonalization, in which the biorthogonal normalization breaks down at the exceptional points. Nevertheless, the solution of ˆ ηk derived without enforcing biorthonormal 4normalization remains valid over the entire parameter space. To facilitate the discussion that follows, we re-place ˆ ηk with a solution without biorthogonal normaliza-tion, that is ˆηk = uk ˆck + vk ˆc†−k, (11) where 
+
+uk =J cos( k) − h + ϵk/2,vk = − (J + 2 Γ ) sin( k). (12) Then ground state of the chain can be explicitly written as 
+
+|G⟩ = 1
+
+√N
+
+Y
+
+> k> 0
+
+
+
+uk − vk ˆc† 
+
+> k
+
+ˆc†−k
+
+
+
+|0⟩, (13) with N = Q
+
+> k> 0
+
+(|uk|2 + |vk|2) being the normalization constant. In order to clarified the nature of the ground states 
+
+|G⟩ in different phases, we introduce two type of spin-correlation functions. The first one is the spin-xx corre-lation function 
+
+Cxx r = ⟨G| ˆσxm ˆσxn |G⟩ ≡ ⟨ ˆσxm ˆσxn⟩ , (14) where r = n−m. Next, we use the Jordan-Wigner trans-formation in Eq. (2) and write Cxx r as 
+
+Cxx r =
+
+* ˆc† 
+
+> m
+
++ ˆ cm
+
+ n−1Y
+
+> l=m
+
+
+
+1 − 2ˆ c† 
+
+> l
+
+ˆcl
+
+  ˆc† 
+
+> n
+
++ ˆ cn
+
++
+
+=
+
+D ˆBm ˆAm+1 ˆBm+1 · · · ˆAn−1 ˆBn−1 ˆAn
+
+E
+
+.
+
+(15) Here we introduce the notation ˆAm = ˆ c† 
+
+> m
+
++ ˆ cm and ˆBm =ˆc† 
+
+> m
+
+− ˆcm. With the aid of Wick’s theorem [69], the above fermionic multi-point correlation function can be reduced to the sums of products of two-point correlation functions for operators ˆAm and ˆBm, which can be recast as the Pfaffian of a 2 r × 2r skew-symmetric matrix [70] 
+
+Cxx r = Pf 
+
+
+
+0 ⟨ ˆBm ˆAm+1 ⟩ ⟨ ˆBm ˆBm+1 ⟩ ⟨ ˆBm ˆAm+2 ⟩ ⟨ ˆBm ˆBm+2 ⟩ · · · ⟨ ˆBm ˆAn⟩
+
+0 ⟨ ˆAm+1 ˆBm+1 ⟩ ⟨ ˆAm+1 ˆAm+2 ⟩ ⟨ ˆAm+1 ˆBm+2 ⟩ · · · ⟨ ˆAm+1 ˆAn⟩
+
+0 ⟨ ˆBm+1 ˆAm+2 ⟩ ⟨ ˆBm+1 ˆBm+2 ⟩ · · · ⟨ ˆBm+1 ˆAn⟩
+
+0 ⟨ ˆAm+2 ˆBm+2 ⟩ · · · ⟨ ˆAm+2 ˆAn⟩
+
+. . . . . . ...0 ⟨ ˆBn−1 ˆAn⟩
+
+0
+
+
+
+. (16) The Pfaffian of a skew-symmetric matrix can be eval-uated efficiently numerically by the method of tridiago-nalization based on Householder transformations [71, 72]. The key is to calculate the correlation functions ⟨ ˆAm ˆAn⟩,
+
+⟨ ˆAm ˆBn⟩, ⟨ ˆBm ˆAn⟩ and ⟨ ˆBm ˆBn⟩. This can be done by us-ing the inverse transformation of ˆ ηk in Eq. (11) ˆck = u∗ 
+
+> k
+
+ˆηk − vk ˆη†−k
+
+|uk|2 + |vk|2 , (17) the anticommutation relation of ˆ ηk
+
+{ˆηk, ˆη† 
+
+> k′
+
+} = ( |uk|2 + |vk|2)δk,k ′ , (18) and the fact of ˆ ηk |G⟩ = 0. As a result, we obtain 
+
+⟨ ˆAm ˆAn⟩ = δm,n + 2i 
+
+π
+
+Z π
+
+> 0
+
+sin( kr ) Im ( ukv∗
+
+> k
+
+)
+
+|uk|2 + |vk|2 dk, (19) 
+
+⟨ ˆAm ˆBn⟩ = 2
+
+π
+
+Z π
+
+> 0
+
+sin( kr ) Re ( ukv∗
+
+> k
+
+)
+
+|uk|2 + |vk|2 dk
+
++ 1
+
+π
+
+Z π
+
+> 0
+
+cos( kr ) |uk|2 − | vk|2
+
+|uk|2 + |vk|2 dk, 
+
+(20) 
+
+⟨ ˆBm ˆAn⟩ = −⟨ ˆAn ˆBm⟩, (21) and 
+
+⟨ ˆBm ˆBn⟩ = ⟨ ˆAm ˆAn⟩ − 2δm,n . (22) Note that for the Hermitian chains, uk and vk can in general be chosen to be real, thus ⟨ ˆAm ˆAn⟩ and ⟨ ˆBm ˆBn⟩
+
+vanish for m̸ = n, and the Pfaffian in Eq. (16) can be reduced to a determinant [70]. However, this is not the case for the non-Hermitian chain considered here since 
+
+uk becomes complex in the PT-broken phase. The numerical results of the spin-xx correlation func-tion Cxx r are presented in Fig. 2(a) for typical parameters of ( Γ , h ). It is shown that in both the PT-symmetric and broken phases, the chain supports long-range anti-ferromagnetic order when h < 1, while the correlation 
+
+Cxx r decays rapidly as r increases when h > 1. We also note that the long-range behaviour of Cxx r here is smaller than that of the transverse field Ising chain, which is lim r→∞ Cxx r = (1 − h2/J 2)1/4 [1, 2]. The transition be-tween ordered and disordered phases in the gapless PT-broken region suggests that there is a hidden QPT, which cannot be characterized by the energy gap. 50 20 40 60 80 100 Distance r
+
+−1.0
+
+−0.50.00.51.0
+
+> Cxx r
+
+(a) 
+
+0 20 40 60 80 100 Distance r
+
+−0.50 
+
+−0.25 0.00 0.25 0.50 
+
+> Qxy r
+
+(b) 
+
+Γ = 0 .3, h = 0 .4,
+
+Γ = 0 .8, h = 1 .1
+
+Γ = 0 .8, h = 0 .6
+
+Γ = 0 .3, h = 1 .1
+
+FIG. 2. (a) The spin-xx correlation function Cxx r defined in Eq. (15) as a function of distance r for different Γ and h [see the legend in (b)]. The results suggest that in both the PT-symmetric and broken phases, the chain exhibits long-range antiferromagnetic order when h < 1, while the correlation Cxx r decays rapidly as r increases when h > 1. (b) The spin-nematic correlation Qxy r defined in Eq. (23) as a function of distance r for different Γ and h. This shows that the spin-nematic correlation vanishes in the PT-symmetric phase. However, in the PT-broken phase, the chain supports long (short)-range spin-nematic order when h < 1 ( h > 1). Other parameters are taken as N = 2000 and J = 1. 0.0 0.5 1.0
+
+Γ
+
+012
+
+> h
+
+−0.8
+
+−0.40.0
+
+> Qxy
+> 1
+
+FIG. 3. Phase diagram characterized by the spin-nematic order parameter Qxy  
+
+> 1
+
+in Eq. (26). In comparison with the phase diagram defined as the energy gap in Fig. 1, we see that the spin-nematic order parameter Qxy  
+
+> 1
+
+vanishes in the PT-symmetric phase and becomes finite in the PT-broken phase. Other parameters are taken as N = 2000 and J = 1. 
+
+The second correlation function considered is the spin-nematic correlation Qxy r , which characterizes anisotropic correlations of spin fluctuations between neighboring sites. The spin-nematic correlation is defined as 
+
+Qxy r = Cxy r + Cyx r , (23) where 
+
+Cxy r = ⟨ˆσxm ˆσyn⟩
+
+=i 
+
+D ˆBm ˆAm+1 ˆBm+1 · · · ˆAn−1 ˆBn−1 ˆBn
+
+E
+
+, (24) and 
+
+Cyx r = ⟨ˆσym ˆσxn⟩
+
+=i 
+
+D ˆAm ˆAm+1 ˆBm+1 · · · ˆAn−1 ˆBn−1 ˆAn
+
+E
+
+. (25) The fermionic multi-point correlation here can be calcu-lated in the same way as Cxx r in Eqs. (15) and (16) . In Fig. 2(b), we presented the results of spin-nematic correlation Qxy r for typical parameters of ( Γ , h). It shows that the spin-nematic correlation vanishes in the PT-symmetric phase, which is different from the spin-xx 
+
+correlation function. However, in the PT-broken phase, the chain exhibits long-range spin-nematic order when 
+
+h < 1 and decays rapidly as r increase when h > 1. This suggests that the spin-nematic order arises from the PT symmetry breaking, and its decay behavior is deter-mined by the spontaneous parity symmetry breaking. It is worth noting that a gapless phase of Hermitian spin chain lacks true long-range order, featuring correlation functions that follow a power-law decay to form a unique quasi-long-range order [9, 73]. Nevertheless, the non-Hermitian gapless phase here exhibits long-range spin-xx 
+
+and spin-nematic correlations when h < 1. For a more complete picture, we compute the spin-nematic order parameter Qxy  
+
+> 1
+
+in the Γ -h plane, which is the nearest-neighbor spin-nematic correlation with r = 1. The spin-nematic order parameter can be written explic-itly as 
+
+Qxy  
+
+> 1
+
+= − 4
+
+π
+
+Z π
+
+> 0
+
+sin k Im( ukv∗
+
+> k
+
+)
+
+|uk|2 + |vk|2 dk. (26) The above expression implies that the spin-nematic or-der parameter vanishes in the PT-symmetric phase since both uk and vk are real. Upon increasing the strength non-Hermitian Gamma interaction Γ across the critical line, uk becomes complex due to PT symmetry breaking. As a result, the spin-nematic order parameter becomes finite. In the large Γ limit, we have Qxy  
+
+> 1
+
+= −4/π . Figure 3 presents the results of Qxy  
+
+> 1
+
+in the Γ -h plane, which is consistent with our expectation. 60 10 20 30 40 
+
+−0.8
+
+−0.40.00.4
+
+> Qxy r (t)
+
+(a) 
+
+0 10 20 30 40 
+
+−0.8
+
+−0.40.00.4(b) 
+
+0 10 20 30 40 
+
+−0.8
+
+−0.40.00.4(c) 
+
+0 10 20 30 40 Distance r
+
+−0.8
+
+−0.40.00.4
+
+> Qxy r (t)
+
+(d) 
+
+0 10 20 30 40 Distance r
+
+−0.8
+
+−0.40.00.4(e) 
+
+0 10 20 30 40 Distance r
+
+−0.8
+
+−0.40.00.4(f) 
+
+t = 0 .0
+
+t = 0 .1
+
+t = 1 .0
+
+t = 3 .0
+
+t = 5 .0
+
+t = 7 .0
+
+t = 9 .0                              
+
+> FIG. 4. (a)-(f) Time evolutions of spin-nematic correlations as a function of distance rat different instants t, for the post-quench Hamiltonian H(p)
+> kwith representative parameters ( Γ,h) taken as the same as that in Fig. 1 (a)-(f). That is (a) (Γ, h ) = (0 .3,1.5) in gapped phase; (b) (0 .3,1.0) in phase boundary with a degenerate point; (c) (0 .3,0.4) in gapped phase; (d) (0 .5,0.4) in phase boundary with two exceptional points; (e) (0 .8,0.4) in gapless phase with four exceptional points; (f) (0 .8,1.6) in phase boundary with two exceptional points. The pre-quench Hamiltonians have the same transverse fields has that of the corresponding post-quench Hamiltonians, but Γ= 0. Other parameters are taken as N= 2000 and J= 1. In all cases except the PT-broken one in (e), the spin-nematic correlations change signs repeatedly for each rduring the time evolutions.
+> IV. DYNAMICAL NEMATICS ORDER
+
+In this section, we investigate the dynamical behav-ior of the spin-nematic correlation and order parameter under a quench. This may provide a way for generating spin-nematic order in the spin chain or characterizing the spin-nematic phase diagram through non-equilibrium dy-namics. We consider the post-quench Hamiltonian H(p) 
+
+> k
+
+with nonzero Γ and h, and the pre-quench Hamiltonian having the same transverse field h as that of the cor-responding post-quench Hamiltonian, but Γ = 0. The initial state is the ground state of the pre-quench Hamil-tonian, and the evolved state takes the form 
+
+|Ψ ( t)⟩ = Y
+
+> k> 0
+
+uk(t) − vk(t)ˆ c† 
+
+> k
+
+ˆc†−k
+
+q
+
+|uk(t)|2 + |vk(t)|2
+
+|0⟩, (27) where uk(t) and vk(t) are determined by the time-dependent BdG equation i ddt
+
+uk(t)
+
+vk(t)
+
+
+
+= H(p) 
+
+> k
+
+uk(t)
+
+vk(t)
+
+
+
+. (28) In this situation, the evolved state generally oscillates because of the dynamical phase factor. However, non-Hermitian systems may support nonequilibrium steady states, giving rise to dynamical behavior of quantum cor-relation and entanglement distinct from that of Hermi-tian systems [31, 45]. From the previous section, we know that the PT symmetry breaking of the chain leads to non-trivial spin-nematic correlation and order parame-ter. Actually, in the PT-broken region, the dispersion 
+
+ϵk becomes imaginary for some k and remains real for other k [see Fig. 1(e)], and so does uk in Eqs. (12) and (26). The imaginary components of the dispersion 
+
+ϵk may suppress the dynamical phase factor originating from the real components in the quench, which would result in non-trivial dynamical spin-nematic correlation and order. To verify this point, we compute the following spin-nematic correlation for the evolved state 
+
+Qxy r (t) = ⟨Ψ ( t)| (ˆ σxm ˆσyn + ˆ σym ˆσxn) |Ψ ( t)⟩ . (29) The calculation procedure is the same as that for the static case in the previous section, except that uk and vk
+
+are replaced by uk(t) and vk(t), which are determined by the time-dependent BdG equation in Eq. (28). The numerical results of Qxy r (t) at several different in-stants t are presented in Fig. 4. We can see that in all cases except the PT-broken one in Fig. 4(e), the spin-nematic correlations change signs repeatedly for each r
+
+during the time evolutions. The oscillations of Qxy r (t)due to the dynamical phase factor in the PT-symmetric phase and in the critical lines will lead to its time aver-age vanishing. The time average of spin-nematic order 70.0 0.5 1.0
+
+Γ
+
+012
+
+> h
+
+−0.8
+
+−0.40.0          
+
+> Qxy
+> 1 (t)
+> FIG. 5. Phase diagram obtained from the time average spin-nematic order defined in Eq. (30), for the post-quench Hamil-tonian H(p)
+> kwith different parameters ( Γ, h ). It is shown that
+> Qxy
+> 1(t) captures the non-trivial dynamics of spin-nematic or-der in the PT-broken phase. Here we take T= 10, N= 2000 and J= 1.
+
+Qxy r (t) in the time interval [0 , T ] is 
+
+Qxy  
+
+> 1
+
+(t) = 1
+
+T
+
+Z T
+
+> 0
+
+Qxy  
+
+> 1
+
+(t) d t. (30) In Fig. 5, we show the numerical results of the time aver-age spin-nematic order Qxy  
+
+> 1
+
+(t) in the Γ -h plane, which re-produces phase diagram characterized by the static spin-nematic order parameter Qxy  
+
+> 1
+
+in Fig. 3. These results suggest a way for characterizing the spin-nematic phase diagram through non-equilibrium dynamics as well as generating spin-nematic correlation and order in a spin chain.  
+
+> V. CONCLUSION
+
+In summary, we have demonstrated that in a transverse field Ising chain with non-Hermitian Gamma interaction, the traditional critical point of Ising-type phase transi-tion turn into a critical line, and there is a gapless phase where the system exhibits long-range spin-nematic cor-relation induced by PT symmetry breaking. This stands in stark contrast to the absence of true long-range or-der in the gapless phases of Hermitian spin chains. In this gapless phase, the behavior of the spin-xx correlation function suggests that there is a hidden QPT, which can-not be characterized by the energy gap. Furthermore, we shown that the PT symmetry breaking leads to the emer-gence of dynamical spin-nematic order, which provides a way of characterizing the spin-nematic phase diagram through non-equilibrium dynamics. These results show rich quantum phases stem from the competition among the Ising interaction, transverse field and non-Hermitian Gamma interaction, as well as providing a scheme for generating spin-nematic order in the spin chain. 
+
+> ACKNOWLEDGMENTS
+
+This work was supported by the National Natural Sci-ence Foundation of China (Grants No. 12505015, No. 12305026), the Guangdong Basic and Applied Basic Re-search Foundation (Grants No. 2024A1515110222), the Research Fund of Guangdong-HongKong-Macao Joint Laboratory for Intelligent Micro-Nano Optoelectronic Technology (No. 2020B1212030010), and the Science & Technology Development Fund of Tianjin Education Commission for Higher Education(No. 2024KJ060).  
+
+> APPENDIX A. NON-HERMITIAN EFFECTIVE HAMILTONIAN
+
+When the system is coupled to the environment, the dynamics of the state are no longer governed exclusively by the Schr¨ odinger equation, but instead by the Lindblad master equation ddt ˆρ = −i[ ˆH, ˆρ] + X
+
+> j,μ
+
+
+
+ˆLj,μ ˆρ ˆL† 
+
+> j,μ
+
+− 12 { ˆL† 
+
+> j,μ
+
+ˆLj,μ , ˆρ}
+
+
+
+.
+
+(A1) Here the system is the transverse field Ising chain ˆH = J
+
+> N
+
+X
+
+> j=1
+
+ˆσxj ˆσxj+1 + h
+
+> N
+
+X
+
+> j=1
+
+ˆσzj , (A2) and the considered jump operators for different dissipa-tive channels are ˆLj, 1 =√Γ (ˆ σxj + ˆ σyj+1 ),
+
+ˆLj, 2 =√Γ (ˆ σyj + ˆ σxj+1 ), (A3) which are correlated dissipations acting on two neighbor-ing lattice sites. For the quantum trajectory description, we separate the Lindblad master equation into the no-jump evolution and the jump processes ddt ˆρ = −i( ˆHˆρ − ˆρ ˆH†) + X
+
+> j,μ
+
+ˆLj,μ ˆρ ˆL†
+
+> j,μ
+
+, (A4) where the non-Hermitian effective Hamiltonian is ˆH = ˆH − i2
+
+X
+
+> j,μ
+
+ˆL† 
+
+> j,μ
+
+ˆLj,μ , (A5) Up to a constant term, the non-Hermitian effective Hamiltonian takes the form ˆH = ˆH − iΓ
+
+> N
+
+X
+
+> j=1
+
+(ˆ σxj ˆσyj+1 + ˆ σyj ˆσxj+1 ), (A6) which describe the system with no-click measurement outcomes or post-selection. We can see that the imag-inary symmetric off-diagonal Gamma interaction occurs in the no-click limit of the stochastic quantum jump tra-jectories when correlated jump operators in Eq. (A3) are measured, and Γ ⩾ 0 is the dissipation rate. 8
+
+APPENDIX B. FERMIONIC HAMILTONIAN 
+
+The non-Hermitian Hamiltonian in Eq. (1) can be solved by free fermion technique. Through the Jordan-Wigner transformation in Eq. (2), the Hamiltonian can be written in quadratic fermionic form ˆH =J 
+
+> N−1
+
+X
+
+> j=1
+
+(ˆ c† 
+
+> j
+
+ˆc† 
+
+> j+1
+
+− ˆcj ˆcj+1 + ˆ c† 
+
+> j
+
+ˆcj+1 − ˆcj ˆc†
+
+> j+1
+
+)+ h
+
+> N
+
+X
+
+> j=1
+
+(1 − 2ˆ c† 
+
+> j
+
+ˆcj ) + 2 Γ 
+
+> N−1
+
+X
+
+> j=1
+
+(ˆ c† 
+
+> j
+
+ˆc† 
+
+> j+1
+
++ ˆ cj ˆcj+1 )+ ( −1) ˆN +1 J(ˆ c† 
+
+> L
+
+ˆc† 
+
+> 1
+
+− ˆcL ˆc1 + ˆ c† 
+
+> L
+
+ˆc1 − ˆcL ˆc†
+
+> 1
+
+)+ ( −1) ˆN +1 2Γ (ˆ c† 
+
+> L
+
+ˆc† 
+
+> 1
+
++ ˆ cL ˆc1),
+
+(B1) where ˆN = PNj=1 ˆc† 
+
+> j
+
+ˆcj is the particle-number operator. Clearly, while fermion number is not conserved, its par-ity ( −1) ˆN +1 is conserved. For an even fermion number, anti-periodic boundary conditions are imposed, whereas for an odd fermion number, periodic boundary condi-tions are imposed. Taking the the Fourier transforma-tion ˆ cj = e−iπ/ 4(L)−1/2 P 
+
+> k
+
+eikj ˆck, with the overall fac-tor e−iπ/ 4 being introduced to simplify the notation, the above Hamiltonian can be written as ˆH =J X
+
+> k
+
+(i eik ˆc† 
+
+> k
+
+ˆc†−k + i e−ik ˆck ˆc−k + eik ˆc† 
+
+> k
+
+ˆck − e−ik ˆck ˆc†
+
+> k
+
+)+ h X
+
+> k
+
+(1 − 2ˆ c† 
+
+> k
+
+ˆck) + 2i Γ X
+
+> k
+
+(eik ˆc† 
+
+> k
+
+ˆc†−k + e−ik ˆck ˆc−k).
+
+(B2) The momenta are k = ±nπ/N with n = 1 , 3, 5, ..., N − 1for odd fermion number sector, and with n = 0 , 2, 4, ..., N 
+
+for even fermion number sector. We are interested in the ground-state energy and correlation functions of the sys-tem in the thermodynamic limit, and the effect of the boundary conditions appears only as an O(1 /N ) correc-tion. Therefore, it suffices to consider the correlation functions within one fermion-parity sector. In this work, we take n = 1 , 3, 5, ..., N − 1. The Hamiltonian in Eq. (B2) can be recast as the BdG form in Eq. (4) by re-grouping the terms corresponding to k and −k.
+
+[1] S. Sachdev, Quantum Phase Transitions (Cambridge University Press, Cambridge, 1999). [2] P. Pfeuty, The one-dimensional Ising model with a trans-verse field, Ann. Phys. 57 , 79 (1970). [3] R. Coldea, D. Tennant, E. Wheeler, E. Wawrzynska, D. Prabhakaran, M. Telling, K. Habicht, P. Smeibidl, and K. Kiefer, Quantum Criticality in an Ising Chain: Experimental Evidence for Emergent E8 Symmetry, Sci-ence 327 , 177 (2010). [4] F. D. M. Haldane, Nonlinear Field Theory of Large-Spin Heisenberg Antiferromagnets: Semiclassically Quantized Solitons of the One-Dimensional Easy-Axis N´ eel State, Phys. Rev. Lett. 50 , 1153 (1983). [5] I. Affleck, T. Kennedy, E. H. Lieb, and H. Tasaki, Rig-orous results on valence-bond ground states in antiferro-magnets, Phys. Rev. Lett. 59 , 799 (1987). [6] F. Pollmann, A. M. Turner, E. Berg, and M. Os-hikawa, Symmetry protection of topological phases in one-dimensional quantum spin systems, Phys. Rev. B 85 ,075125 (2012). [7] X. Chen, Z.-C. Gu, and X.-G. Wen, Classification of gapped symmetric phases in one-dimensional spin sys-tems, Phys. Rev. B 83 , 035107 (2011). [8] D. Tennant, R. Cowley, S. Nagler, and A. Tsvelik, Measurement of the spin-excitation continuum in one-dimensional kcuf 3 using neutron scattering, Phys. Rev. Lett. 70 , 4003 (1993). [9] T. Giamarchi, Quantum Physics in One Dimension (Ox-ford University Press, Oxford, UK, 2004). [10] M. Mourigal, M. Enderle, A. Kl¨ opperpieper, J.-S. Caux, A. Stunault, and H. M. Rønnow, Fractional spinon ex-citations in the quantum Heisenberg antiferromagnetic chain, Nat. Phys. 9, 435 (2013). [11] G. Jackeli and G. Khaliullin, Mott Insulators in the Strong Spin-Orbit Coupling Limit: From Heisenberg to a Quantum Compass and Kitaev Models, Phys. Rev. Lett. 
+
+102 , 017205 (2009). [12] J. G. Rau, E. K.-H. Lee, and H.-Y. Kee, Generic Spin Model for the Honeycomb Iridates beyond the Kitaev Limit, Phys. Rev. Lett. 112 , 077204 (2014). [13] S. M. Winter, A. A. Tsirlin, M. Daghofer, J. van den Brink, Y. Singh, P. Gegenwart, and R. Valent´ ı, Mod-els and materials for generalized Kitaev magnetism, J. Phys.:Condens. Matter 29 , 493002 (2017). [14] W. Yang, A. Nocera, E. S. Sørensen, H.-Y. Kee, and I. Affleck, Classical spin order near the antiferromagnetic Kitaev point in the spin-1/2 Kitaev-Gamma chain, Phys. Rev. B 103 , 054437 (2021). [15] M. O. Takahashi, M. G. Yamada, D. Takikawa, T. Mizushima, and S. Fujimoto, Topological nematic phase transition in Kitaev magnets under applied mag-netic fields, Phys. Rev. Res. 3, 023189 (2021). [16] Q. Luo, S. Hu, J. Li, J. Zhao, H.-Y. Kee, and X. Wang, Spontaneous dimerization, spin-nematic order, and de-confined quantum critical point in a spin-1 Kitaev chain with tunable single-ion anisotropy, Phys. Rev. B 107 ,245131 (2023). [17] A. Andreev and I. Grishchuk, Spin nematics, Sov. Phys. JETP 60 , 267 (1984). [18] K. Penc and A. M. L¨ auchli, Spin Nematic Phases in Quantum Spin Systems, in Introduction to frustrated magnetism: materials, experiments, theory (Springer, 2010) pp. 331–362. [19] X. Lu, J. Park, R. Zhang, H. Luo, A. H. Nevidomskyy, Q. Si, and P. Dai, Nematic spin correlations in the tetrag-onal state of uniaxial-strained BaF e 2−xN i xAs 2, Science 
+
+345 , 657 (2014). [20] M. Gohlke, G. Wachtel, Y. Yamaji, F. Pollmann, and Y. B. Kim, Quantum spin liquid signatures in Kitaev-like frustrated magnets, Phys. Rev. B 97 , 075126 (2018). 9
+
+[21] E. S. Sørensen, A. Catuneanu, J. S. Gordon, and H.-Y. Kee, Heart of Entanglement: Chiral, Nematic, and Incommensurate Phases in the Kitaev-Gamma Ladder in a Field, Phys. Rev. X 11 , 011013 (2021). [22] A. Zvyagin and V. Slavin, Spin nematic ordering in the spin-1 chain system, Phys. Rev. B 106 , 054429 (2022). [23] A. Zvyagin, V. Slavin, and G. Zvyagina, Manifestation of spin nematic ordering in the spin-1 chain system, Phys. Rev. B 107 , 134421 (2023). [24] Q. Luo, J. Zhao, J. Li, and X. Wang, Chiral spin state and nematic ferromagnet in the spin-1 Kitaev-Γ model, Phys. Rev. B 110 , 035121 (2024). [25] A. Zvyagin and V. Slavin, Intersite spin nematic ordering in the spin-1/2 chain system, Phys. Rev. B 109 , 104409 (2024). [26] M. Abbasi, S. Mahdavifar, and M. Motamedifar, Spin-1/2 XX chains with modulated gamma interaction, Sci-Post Phys. Core 8, 001 (2025). [27] A. Zvyagin, V. Slavin, G. Zvyagina, and V. Piryatin-skaya, Intersite spin nematic ordering in spin chain mate-rials: Behavior of observables, Phys. Rev. B 111 , 104415 (2025). [28] Y.-W. Dai, S.-H. Li, S. Y. Cho, and H.-Q. Zhou, Phase di-agram and spin nematic phase transitions in biquadratic spin-1 and spin-2 XY chains with single-ion anisotropies, Phys. A , 131330 (2026). [29] W. Yang, A. Nocera, T. Tummuru, H.-Y. Kee, and I. Af-fleck, Phase Diagram of the Spin-1/2 Kitaev-Gamma Chain and Emergent SU(2) Symmetry, Phys. Rev. Lett. 
+
+124 , 147205 (2020). [30] R.-D. Huang, W.-L. Li, and Z. Li, Tunable chiral spi-ral phases in a non-Hermitian Ising-Gamma spin chain, Phys. Rev. A 113 , 012203 (2026). [31] X. Turkeshi and M. Schir´ o, Entanglement and correlation spreading in non-Hermitian spin chains, Phys. Rev. B 
+
+107 , L020403 (2023). [32] Y. Ashida, Z. Gong, and M. Ueda, Non-Hermitian physics, Adv. Phys. 69 , 249 (2020). [33] Z. Lin, H. Ramezani, T. Eichelkraut, T. Kottos, H. Cao, and D. N. Christodoulides, Unidirectional Invisibility In-duced by PT -Symmetric Periodic Structures, Phys. Rev. Lett. 106 , 213901 (2011). [34] L. Jin and Z. Song, Incident Direction Independent Wave Propagation and Unidirectional Lasing, Phys. Rev. Lett. 
+
+121 , 073901 (2018). [35] S. Weidemann, M. Kremer, T. Thomas, H. Rost, T. Oja-nen, and A. Szameit, Topological funneling of light, Sci-ence 368 , 311 (2020). [36] L. Jin and Z. Song, Symmetry-Protected Scattering in Non-Hermitian Linear Systems, Chin. Phys. Lett. 38 ,024202 (2021). [37] K. Kawabata, K. Shiozaki, M. Ueda, and M. Sato, Sym-metry and Topology in Non-Hermitian Physics, Phys. Rev. X 9, 041015 (2019). [38] H. Wu and J.-H. An, Floquet topological phases of non-Hermitian systems, Phys. Rev. B 102 , 041119 (2020). [39] H. Wu and L. Jin, Topological zero modes from the inter-play of pt symmetry and anti-pt symmetry, Phys. Rev. B 112 , 125146 (2025). [40] L. Feng, Z. J. Wong, R.-M. Ma, Y. Wang, and X. Zhang, Single-mode laser by parity-time symmetry breaking, Sci-ence 346 , 972 (2014). [41] H. Hodaei, M.-A. Miri, M. Heinrich, D. N. Christodoulides, and M. Khajavikhan, Parity-time– symmetric microring lasers, Science 346 , 975 (2014). [42] M. A. Bandres, S. Wittek, G. Harari, M. Parto, J. Ren, M. Segev, D. N. Christodoulides, and M. Khajavikhan, Topological insulator laser: Experiments, Science 359 ,eaar4005 (2018). [43] F. Verstraete, M. M. Wolf, and J. I. Cirac, Quantum computation and quantum-state engineering driven by dissipation, Nat. Phys. 5, 633 (2009). [44] M. Naghiloo, M. Abbasi, Y. N. Joglekar, and K. W. Murch, Quantum state tomography across the excep-tional point in a single dissipative qubit, Nat. Phys. 15 ,1232 (2019). [45] T. E. Lee and C.-K. Chan, Heralded Magnetism in Non-Hermitian Atomic Systems, Phys. Rev. X 4, 041001 (2014). [46] C. Li, G. Zhang, and Z. Song, Chern number in Ising models with spatially modulated real and complex fields, Phys. Rev. A 94 , 052113 (2016). [47] X. Zhang, L. Jin, and Z. Song, Dynamic magnetization in non-Hermitian quantum spin systems, Phys. Rev. B 
+
+101 , 224301 (2020). [48] K. L. Zhang and Z. Song, Ising chain with topological degeneracy induced by dissipation, Phys. Rev. B 101 ,245152 (2020). [49] Y.-G. Liu, L. Xu, and Z. Li, Quantum phase transition in a non-Hermitian XY spin chain with global complex transverse field, J. Phys.:Condens. Matter 33 , 295401 (2021). [50] K. L. Zhang and Z. Song, Quantum Phase Transition in a Quantum Ising Chain at Nonzero Temperatures, Phys. Rev. Lett. 126 , 116401 (2021). [51] L. Lenke, M. M¨ uhlhauser, and K. P. Schmidt, High-order series expansion of non-Hermitian quantum spin models, Phys. Rev. B 104 , 195137 (2021). [52] N. Matsumoto, M. Nakagawa, and M. Ueda, Embedding the Yang-Lee quantum criticality in open quantum sys-tems, Phys. Rev. Res. 4, 033250 (2022). [53] Z.-X. Guo, X.-J. Yu, X.-D. Hu, and Z. Li, Emergent phase transitions in a cluster Ising model with dissipa-tion, Phys. Rev. A 105 , 053311 (2022). [54] G. Sun, J.-C. Tang, and S.-P. Kou, Biorthogonal quan-tum criticality in non-Hermitian many-body systems, Front. Phys. 17 , 1 (2022). [55] L. Lenke, A. Schellenberger, and K. P. Schmidt, Series expansions in closed and open quantum many-body sys-tems with multiple quasiparticle types, Phys. Rev. A 
+
+108 , 013323 (2023). [56] K. L. Zhang and Z. Song, Magnetic Bloch oscillations in a non-Hermitian quantum Ising chain, Phys. Rev. B 109 ,104312 (2024). [57] X. Zhang, Magnetization in a nonequilibrium quantum spin system, Phys. Rev. B 109 , 184314 (2024). [58] M. Partanen, J. Goetz, K. Y. Tan, K. Kohvakka, V. Sevriuk, R. E. Lake, R. Kokkoniemi, J. Ikonen, D. Hazra, A. M¨ akinen, E. Hyypp¨ a, L. Gr¨ onberg, V. Vesterinen, M. Silveri, and M. M¨ ott¨ onen, Exceptional points in tunable superconducting resonators, Phys. Rev. B 100 , 134505 (2019). [59] Y. Wu, W. Liu, J. Geng, X. Song, X. Ye, C.-K. Duan, X. Rong, and J. Du, Observation of parity-time symme-try breaking in a single-spin system, Science 364 , 878 (2019). [60] J. Li, A. K. Harter, J. Liu, L. de Melo, Y. N. Joglekar, and L. Luo, Observation of parity-time symmetry breaking 10 
+
+transitions in a dissipative Floquet system of ultracold atoms, Nat. Commun. 10 , 855 (2019). [61] W. Zhang, X. Ouyang, X. Huang, X. Wang, H. Zhang, Y. Yu, X. Chang, Y. Liu, D.-L. Deng, and L.-M. Duan, Observation of Non-Hermitian Topology with Nonuni-tary Dynamics of Solid-State Spins, Phys. Rev. Lett. 
+
+127 , 090501 (2021). [62] Z. Ren, D. Liu, E. Zhao, C. He, K. K. Pak, J. Li, and G.-B. Jo, Chiral control of quantum states in non-Hermitian spin–orbit-coupled fermions, Nat. Phys. 18 , 385 (2022). [63] H. Gao, K. Wang, L. Xiao, M. Nakagawa, N. Matsumoto, D. Qu, H. Lin, M. Ueda, and P. Xue, Experimental Ob-servation of the Yang-Lee Quantum Criticality in Open Quantum Systems, Phys. Rev. Lett. 132 , 176601 (2024). [64] A. J. Daley, Quantum trajectories and open many-body quantum systems, Adv. Phys. 63 , 77 (2014). [65] O. A. Castro-Alvaredo and A. Fring, A spin chain model with non-Hermitian interaction: the Ising quantum spin chain in an imaginary field, J. Phys. A: Math. Theor. 42 ,465211 (2009). [66] C. M. Bender and S. Boettcher, Real Spectra in Non-Hermitian Hamiltonians Having PT Symmetry, Phys. Rev. Lett. 80 , 5243 (1998). [67] A. Mostafazadeh, Pseudo-Hermiticity versus PT symme-try: The necessary condition for the reality of the spec-trum of a non-Hermitian Hamiltonian, J. Math. Phys. 
+
+43 , 205 (2002). [68] P. Jordan and E. Wigner, ¨Uber das Paulische ¨aquivalenzverbot, Zeitschrift f¨ ur Physik 47 , 631 (1928). [69] G.-C. Wick, The Evaluation of the Collision Matrix, Phys. Rev. 80 , 268 (1950). [70] E. Barouch and B. M. McCoy, Statistical Mechanics of the XY Model. II. Spin-Correlation Functions, Phys. Rev. A 3, 786 (1971). [71] C. Gonz´ alez-Ballestero, L. M. Robledo, and G. F. Bertsch, Numeric and symbolic evaluation of the pfaf-fian of general skew-symmetric matrices, Comput. Phys. Commun. 182 , 2213 (2011). [72] M. Wimmer, Algorithm 923: Efficient Numerical Com-putation of the Pfaffian for Dense and Banded Skew-Symmetric Matrices, ACM Trans. Math. Softw. 38 , 1 (2012). [73] F. D. M. Haldane, ‘Luttinger liquid theory’ of one-dimensional quantum fluids. I. Properties of the Lut-tinger model and their extension to the general 1D inter-acting spinless Fermi gas, J. Phys. C:Solid State Phys. 
+
+14 , 2585 (1981).

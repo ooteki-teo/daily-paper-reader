@@ -1,0 +1,30 @@
+{
+  "version": 2,
+  "extractor": "pdffigures2",
+  "figures": [
+    {
+      "url": "assets/figures/arxiv/2604.18902v1/fig-001.webp",
+      "caption": "FIG. 1. Schematic energy-landscape curve for a 6 × 6 kagome lattice obtained from successive weathervane-loop rotations between neighboring coplanar ground states. The configurations are shown in the three-state Potts representation, where red, green, and blue denote the three coplanar spin directions separated by 120◦. The dashed loops mark the weathervane loops being rotated. Short, elementary six-spin loops produce the smallest barriers, while longer loops correspond to more collective rearrangements and higher barriers.",
+      "page": 2,
+      "index": 1,
+      "width": 1062,
+      "height": 577
+    },
+    {
+      "url": "assets/figures/arxiv/2604.18902v1/fig-002.webp",
+      "caption": "FIG. 2. (a) Exact disconnectivity graph for a 6 × 3 kagome lattice. The height at which branches merge gives the minimax barrier energy, namely the largest barrier that must be crossed along the lowest-barrier path connecting two coplanar ground states. (b,c) Probability distributions of the internal barrier energies of the exact disconnectivity graphs for the 6× 3 and 9× 3 lattices. In each case, the green dominant peak marks the barrier associated with the elementary six-spin weathervane loop, while the remaining barrier energies are shown in blue.",
+      "page": 3,
+      "index": 2,
+      "width": 1062,
+      "height": 933
+    },
+    {
+      "url": "assets/figures/arxiv/2604.18902v1/fig-003.webp",
+      "caption": "FIG. 3. Statistical disconnectivity graph for a 60×60 kagome lattice obtained from a random walk in the coplanar ground-state manifold. Branch heights represent the effective barrier between configurations along the sampled path, with loop length used as a proxy for barrier energy. The tall, highly branched structure indicates that local rearrangements connect nearby states easily, whereas major mergers require much longer collective loops, exposing the rugged basin structure of the large-system coplanar landscape.",
+      "page": 5,
+      "index": 3,
+      "width": 956,
+      "height": 537
+    }
+  ]
+}

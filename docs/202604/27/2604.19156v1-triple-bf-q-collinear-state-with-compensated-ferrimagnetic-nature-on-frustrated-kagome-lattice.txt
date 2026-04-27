@@ -1,0 +1,1927 @@
+Title: Triple-${\bf Q}$ collinear state with compensated ferrimagnetic nature on frustrated kagome lattice
+
+URL Source: https://arxiv.org/pdf/2604.19156v1
+
+Published Time: Wed, 22 Apr 2026 00:43:33 GMT
+
+Number of Pages: 10
+
+Markdown Content:
+## Triple-Q collinear state with compensated ferrimagnetic nature on frustrated kagome lattice 
+
+Kazushi Aoyama 1 and Hikaru Kawamura 2
+
+> 1
+
+Department of Earth and Space Science, Graduate School of Science, The University of Osaka, Osaka 560-0043, Japan 
+
+> 2
+
+Molecular Photoscience Research Center, Kobe University, Kobe 657-8501, Japan 
+
+(Dated: April 22, 2026) Spin-selective band splitting without net magnetization and spin-orbit couplings serves for a next-generation spin-current generator, and its typical platforms are altermagnets and compensated ferri-magnets as well, where the existence of a crystal asymmetry or nonequivalent sites is essential. Here, we theoretically demonstrate that such a splitting can be realized in a triple-Q 12-sublattice state emerging in a J3-dominant kagome antiferromagnet, without the help of the crystal asymmetry. Re-flecting the multi-sublattice nature, a local magnetization reveals a fully compensated ferrimagnetic pattern in units of a triangle plaquette, leading to s-wave-type spin splittings in magnon and elec-tron bands. This enables an atiferromagnetic spin Seebeck effect at zero field in insulating systems and filling-controlled polarized states in metallic systems, highlighting the potential of frustrated magnets to realize novel spintronics functionalities. 
+
+I. INTRODUCTION 
+
+Recently, collinear antiferromagnets have attracted re-newed interest in the context of altermagnets as a plat-form for spintronics applications. In the altermagnets [1–5], although up and down spins are compensated as in antiferromagnets, the electronic band exhibits a spin-splitting similarly to the ferromagnetic one even in the absence of a spin-orbit coupling. Such an unusual sit-uation also emerges in compensated ferrimagnets [6–10] where the splitting does not alternate in the momentum space as the up and down spins are cancelled out not by the crystal symmetry [11]. The common feature of the two is breaking of the effective time-reversal symme-try consisting of the spin-flip and translational/inversion symmetries [1, 3–5, 8, 9, 12–14], where site asymmetries or anisotropic electronic states around the spin are essen-tial for the broken symmetry. In this work, we theoreti-cally demonstrate that a triple-Q collinear antiferromag-netic structure emerging on the frustrated kagome lattice breaks the effective time-reversal symmetry without the help of the crystal asymmetry, enabling an isotropic spin-current generation by thermal activation at zero field. An antiferromagnetic exchange interaction between neighboring localized spins is usually the source of the collinear antiferromagnetic order. Such a collinear struc-ture often becomes unstable on lattices with geomet-rical frustration such as triangular and kagome lat-tices, eventually leading to noncollinear or spin-liquid states. In some frustrated systems, however, thermal and quantum fluctuations favor collinear spin configura-tions among energetically-degenerate ground-state can-didates [15–17]. One example of such an antiferromag-netic collinear state stabilized by the fluctuation effect is a triple-Q 12-sublattice state realized in the J1-J3
+
+Heisenberg model on the kagome lattice [18–20] whose real-space spin configuration is shown in Fig. 1 (a). The 12 sublattice collinear state consists of ↑↑↓↓ chains running along the bond directions, and its magnetic unit cell contains four upward triangles each having local mag-netization m△ = SA + SB + SC with three corner spins 
+
+SA, SB , and SC . As shown in Fig. 2 (b), m△ on one triangle is −3 and the rest three are +1, so that the state can be viewed as a fully compensated ferrimagnet in units of the triangle plaquette. The plaquette ferri-magnetic pattern cannot be superimposed on the spin-flipped one by any spatial symmetry operations, so that the effective time-reversal symmetry is broken, pointing to the occurrence of spin-split bands. A unique aspect of this system is that the asymmetry appears not in the crystal structure or the interaction but in the magnetic structure. In this paper, we discuss magnon properties of the 12 sublattice antiferromagnetic state, bearing insulating systems in our mind. We demonstrate that the magnon band exhibits an s-wave-type spin splitting, and resul-tantly, thermally activated magnons can carry net spin current even at zero field. It is also shown that in a metallic system, a similar spin-splitting appears in the band of the conduction electrons coupled to the 12 sublat-tice spins, pointing to the possibility of filling-dependent spin-polarized states. 
+
+II. RESULTS A. Model 
+
+We start from the following spin Hamiltonian on the kagome lattice: 
+
+HS = J1
+
+∑
+
+> 〈i,j 〉
+
+Si · Sj + J3
+
+∑
+
+> 〈〈 i,j 〉〉
+
+Si · Sj , (1) where Si is a classical Heisenberg spin at site i, and J1 >
+
+0 and J3 > 0 are the nearest neighbor (NN) antiferromag-netic interaction and the third NN one along the bond di-rection, respectively [see Fig. 1 (a)]. For relatively strong 
+
+> arXiv:2604.19156v1 [cond-mat.str-el] 21 Apr 2026
+
+2         
+
+> (a) (b)
+> xy
+> S→-Sii
+> -3
+> ≠
+> -1 -1 -1 +3 +1 +1 +1
+> J1
+> J3
+> ①②③④⑤⑥⑦⑧⑨⑩⑪⑫
+
+FIG. 1: The 12 sublattice antiferromagnetic state on the kagome lattice. (a) The real-space spin structure, where the spins are assumed to be oriented in the out-of-plane direction (see the text). The small magenta and large black dotted parallelograms present the crystal and magnetic unit cells, respectively. The cross indicates a rotational center. (b) Zoomed view of the 6 up and 6 down spins within the mag-netic unit cell in (a), where these 12 sublattice spins are la-beled by 1○- 12 ○. One can see the ferrimagnetic pattern in units of the triangle plaquette, and nonequivalence between the original (upper) and spin-flipped (lower) spin configura-tions. 
+
+J3 as realized in the vesignieite BaCu 3V2O8(OH) 2 [21], a triple-Q state characterized by the three commensurate ordering vectors Q1 = π 
+
+> 2
+
+(−1, − 1√3 ), Q2 = π 
+
+> 2
+
+(1 , − 1√3 ), and Q3 = π 
+
+> 2
+
+(0 , 2√3 ) is favored. The Q1, Q2, and Q3 are associated with the left-, right-, and top-corner spins on the upward triangles SA , SB , and SC , respectively, each constituting an ↑↓↑↓ collinear configuration. The rela-tive angles, i.e, superposition angles, among SA, SB , and 
+
+SC cannot be determined from the ground-state energy. The ground-state degeneracy with respect to the rela-tive angles, however, is lifted by the thermal fluctuation which, in the present case, favors the collinear configu-ration shown in Fig. 1, the 12 sublattice state with the plaquette ferrimagnetic structure. Since the collinear state is already favored at the isotropic Heisenberg level, easy-plane and easy-axis anisotropies typically present in real materials merely orient the collinear axis in the easy-plane and easy-axis directions, respectively, as it has been confirmed in Monte Carlo simulations [20]. In the easy-plane case, the collinear state is selected by the thermal fluctuation similarly to the Heisenberg case, whereas in the easy-axis case, it is firmly stabilized by the anisotropy energy. Since the triple-Q collinear state of our interest is robust against these single-ion anisotropies, in this paper, we consider the isotropic Heisenberg model as the minimal model. Note that in the two-dimensional Heisenberg-spin model, a long-range magnetic order is not allowed at any finite temperature, and the transition into the collinear state can be characterized by the spatial distribution of 
+
+m△ or a bond variable [18, 19]. Of course, the long-range or quasi-long-range magnetic order is guaranteed in the presence even of an infinitesimally small magnetic anisotropy [20]. 
+
+B. Insulating system 
+
+The 12 sublattice collinear spins Sμ with sublattice in-dices μ = 1 , 2, 3, · · · , 12 defined in Fig. 1 (b) can be ex-pressed as Sμ = Sm μ ˆz with S being the size of the spin and m = ( −1, −1, −1, 1, 1, −1, 1, −1, 1, −1, 1, 1). Since in the present isotropic Heisenberg model, the collinear axis can be taken in any direction, in Fig. 1, it is assumed that the spins are oriented in the out-of-plane direction for ease of understanding. As discussed in the introduc-tion, this antiferromagnetic structure breaks the effective time-reversal symmetry with the Hamiltonian (1) itself being spatially symmetric. In this work, we first discuss the magnon properties bearing insulating systems in our mind. In the present classical spin system, the spin-wave or magnon dispersion can be derived by using the Holstein-Primakoff transformation which involves the creation (annihilation) operator of the magnon on sublattice μ ˆaμ† 
+
+> q
+
+(ˆ aμ
+
+> q
+
+). By introducing Φ† 
+
+> Bq
+
+=(ˆ a1 † 
+
+> q
+
+, ˆa2 † 
+
+> q
+
+, · · · , ˆaN † 
+
+> q
+
+, ˆa1
+
+> −q
+
+, ˆa2
+
+> −q
+
+, · · · , ˆaN
+
+> −q
+
+) with the total number of sublattices N = 12, we can rewrite the spin Hamiltonian (1) as 
+
+HS ≃ S
+
+2
+
+∑
+
+> q
+
+Φ†
+
+> Bq
+
+HBqΦBq, HBq =
+
+( Aq Bq
+
+Bq Aq
+
+)
+
+,Aq = 4 J3IN ×N +
+
+
+
+D0 0 0 00 D1 D∗ 
+
+> 2
+
+D∗
+
+> 3
+
+0 D∗ 
+
+> 2
+
+D2 D∗
+
+> 1
+
+0 D∗ 
+
+> 3
+
+D∗ 
+
+> 1
+
+D3
+
+ ,Bq =
+
+
+
+0 C1 + D∗ 
+
+> 1
+
+C3 + D∗ 
+
+> 3
+
+C2 + D∗
+
+> 2
+
+C1 + D∗ 
+
+> 1
+
+D2 + D3 C2 C3
+
+C3 + D∗ 
+
+> 2
+
+C2 D1 + D2 C1
+
+C2 + D∗ 
+
+> 2
+
+C3 C1 D1 + D3
+
+ ,Dl = J1
+
+
+
+0 Gl1,q G∗
+
+> l3,q
+
+G∗ 
+
+> l1,q
+
+0 Gl2,q
+
+Gl3,q G∗ 
+
+> l2,q
+
+0
+
+ ,Cl = J3
+
+ Tl1,q + Tl3,q 0 00 Tl1,q + Tl2,q 00 0 Tl2,q + Tl3,q
+
+ ,Glm, q = slm eiq·ˆem , Tlm, q = slm 2 cos(2 q · ˆem), (2) where slm = δlm + δl0 and ˆ e1 = (1 , 0), ˆ e2 = ( − 1 
+
+> 2
+
+, √3 
+
+> 2
+
+), and ˆ e3 = ( − 1 
+
+> 2
+
+, − √3 
+
+> 2
+
+) are the real-space unit vectors along the bond directions. The magnon Hamiltonian (2) can be diagonalized with the use of a para-unitary matrix Tq
+
+as [7] 
+
+T † 
+
+> q
+
+HBqTq =
+
+( Eq 00 E−q
+
+)
+
+, E q =
+
+
+
+ǫ1,q 0. . .0 ǫN, q
+
+ .3  
+
+> (a)
+> 0123
+> 4567
+> εn,q
+> Γ
+> -1
+> ΓKM
+> -0.5 010.5
+> hn, q
+> Q3
+> Q1Q2
+> ΓMKqy
+> qx
+> (b)
+
+# .Γ
+
+> (c)
+> /J1
+
+FIG. 2: The magnon dispersion ǫn, q in the 12 sublattice state for J3/J 1 = 1 .2. (a) ǫn, q along the path connecting high-symmetry points in the momentum space shown in (b), where the color represents the effective spin polarization hn, q. In (b), the inner black and outer magenta hexagons represent the Brillouin zones associated with the magnetic unit cell [the large black dotted parallelogram in Fig. 1 (a)] and the crystal unit cell [the small magenta parallelogram in Fig. 1 (a)], respectively. (c) The contour plot at εn, q/J 1 = 1 .3. 
+
+Since σ3HBqTq = Tq
+
+( Eq 00 −E−q
+
+)
+
+with σ3 = IN ×N ⊗
+
+(−I)N ×N is satisfied, ǫn, q and Tq can be obtained by solving the eigen value problem for σ3HBq.Figure 2 (a) shows the magnon dispersion; there are 12 branches some of which are partly degenerate. To characterize the magnon band ǫn, q, we introduce the quantity hn, q = ∑Nμ=1 (−mμ)( |Tq,μn |2 + |Tq,μn +N |2). Noting that the fluctuation of the net magnetization around zero is given by ∑
+
+> q
+
+∑Nμ=1 mμ(S − 〈 ˆaμ† 
+
+> q
+
+ˆaμ
+
+> q
+
+〉) = 
+
+∑
+
+> q
+
+∑Nn=1 fB (ǫn, q)hn, q + δM 0 with the Bose distribution function fB(x) = 1  
+
+> ex/T −1
+
+and zero-point fluctuation con-tribution δM 0 = ∑
+
+> q
+
+∑Nn,μ =1 (−mμ)|Tq,μn +N |2, we may interpret hn, q as the effective spin polarization of the nth magnon band. Since in the conventional 2-sublattice case on the square lattice where Tq corresponds to the Bogoli-ubov transformation matrix 
+
+( cosh θq I2×2 − sinh θq σx
+
+− sinh θq σx cosh θq I2×2
+
+)
+
+with the Pauli matrix σx, hn, q can be calculated as +1 and -1 for left-handed and right-handed polarized states, respectively, hn, q could also be understood as a general-ized form of the magnon chirality [23–26]. One can see from Fig. 2 (a) that the magnon band ex-hibit a spin splitting, and the lowest two spin-split bands, which should be relevant to the magnon transport, do not intersect over the whole momentum space, as it can clearly be seen from the outer red and blue closed loops in the contour plot of ǫn, q shown in Fig. 2 (c). Such a band structure is similar to electronic bands subject to the Zeeman splitting rather than the altermagnetic one whose spin polarization alternates in the momentum space [1, 3–5, 12–14]. The 6-fold symmetry of the non-alternating magnon band originates from the fact that the spin configuration possesses the rotational symmetry around the center of the hexagon with ↑ spins on its six corners [see the cross in Fig. 1 (a)]. From the viewpoint of symmetry, the kagome lattices without and with the nonequivalent up and down sites possess the same D6h
+
+point group symmetry. The difference between the two consists in the translational symmetry; the kagome lat-tice itself is invariant under the translation by a primitive vector [side vectors of the small magenta parallelogram in Fig. 1 (a)], whereas the kagome lattice with the up and down sties is not invariant as these sites are dis-tinguished. Such a noninvariance cannot be recovered by the additional spin flip operation, namely, the effec-tive time-reversal symmetry is broken. Thus, the spin splitting occurs. Reflecting the s-wave-type spin split-ting, the up-spin magnon always has the larger velocity (the steeper slope near the Γ point) than the down-spin magnon, so that the up-spin component of the magnon may govern the low-energy magnon transport, pointing to ferromagnetic features in the magnon transport. Although our focus is on the excitation from the an-tiferromagnetic ground state of the classical spins, we briefly comment on to the quantum correction to the ground state. First, the leading order correction to the energy, i.e., the linear contribution in the 1 /S expansion, assists the occurrence of the collinear state [18], suggest-ing that both thermal and quantum fluctuations favor the collinear state. Although in the spin split case, non-linear contributions may yield nontrivial effects [27, 28], the ground-state stability would be basically dominated by the leading order contribution as long as the 1 /S ex-pansion converges for large S. Second, the zero-point quantum-fluctuation contribution to the magnetization can numerically be evaluated as δM 0 ≃ 0.002 for the pa-rameter used here and thus, the compensation is imper-fect at the quantum mechanical level. Although the asso-ciation between the magnon band and δM 0 is not clear, it is certain that the s-wave-type spin splitting indicates the emergence of possible ferromagnetic properties. To see how the spin splitting affects the magnon trans-port, we examine the spin current driven by a ther-mal gradient. The spin current operator can be derived from the conservation law for the magnetization as Jzs =∑ 
+
+> i
+
+ri d 
+
+> dt
+
+Szi = i ∑ 
+
+> i
+
+ri [HS , S zi ] [1, 3, 4]. With the use of the velocity matrix vq,μ = ∂ 
+
+> ∂q μ
+
+HBq and the diagonal ma-trix ( Im)ij = ( σ3)ij (−m)j , it can be expressed as Jzs,μ =
+
+∑ 
+
+> q
+
+Φ†
+
+> Bq
+
+V s
+
+> q,μ
+
+ΦBq with V s 
+
+> q,μ
+
+= S 
+
+> 4
+
+(vq,μ Im + Imvq,μ ). Also, the thermal current is given by Jth,μ = ∑ 
+
+> q
+
+Φ†
+
+> Bq
+
+V th 
+
+> q,μ
+
+ΦBq
+
+with V th  
+
+> q,μ
+
+= S2 
+
+> 4
+
+(vq,μ σ3HBq + HBqσ3vq,μ ) [7]. In the linear response theory, the spin current gener-ated by the thermal gradient is characterized by the associated conductivity χSC  
+
+> μν
+
+= i  
+
+> TdQ μν (ω+i0)
+> dω
+
+|ω=0 with 
+
+Qμν (iω m) = − 1
+
+> V
+
+∫ 1/T  
+
+> 0
+
+〈Tτ Jzs,μ (τ )Jth,ν (0) 〉eiω mτ dτ . By using a relaxation-time approximation where the inverse magnon scattering time γ = 1 /τ m is assumed to be a con-stant for simplicity, we can evaluate χSC  
+
+> μν
+
+as (for details, 4           
+
+> (a) (b)
+> xx
+> χμν
+> SC
+> ∇T
+> ∇T
+> χxx
+> SC
+> χyy
+> SC
+> 00.1 0.2 0.3 0.4
+> T/J 1
+> κμν
+> yx xy yy
+> 00.5 11.5 22.5 00.1 0.2 0.3 0.4 0.5
+> T/J 1
+> ×10 -3
+> 0123456×10 -2
+
+FIG. 3: (a) The temperature dependence of the spin current conductivity under a temperature gradient χSC  
+
+> μν
+
+for the same parameter as that for Fig. 2, where magent, orange, green, and cyan curves denote the xx , yx , xy , and yy components of χSC  
+
+> μν
+
+, respectively. The inset shows the associated thermal conductivity κμν , where the color notations are the same as those in the main panel. χSC  
+
+> μν
+
+and κμν are normalized by 
+
+S3J1/γ and S4J21 /γ , respectively. (b) An image of the sys-tem, where the thermal gradient ∇T is applied in in-plane directions. 
+
+see Ref. [32]) 
+
+χSC  
+
+> μν
+
+= − 1
+
+V T 
+
+1
+
+γ
+
+∑
+
+> q
+> 2N
+
+∑
+
+> n=1
+
+f ′ 
+
+> B
+
+(ǫn, q)( T † 
+
+> q
+
+V s
+
+> q,μ
+
+Tq)nn (T † 
+
+> q
+
+V th  
+
+> q,ν
+
+Tq)nn ,
+
+(3) with f ′ 
+
+> B
+
+(x) = d 
+
+> dx
+
+fB(x). In the same manner, the thermal conductivity κμν can be calculated by simply replacing 
+
+V s 
+
+> k,μ
+
+with V th  
+
+> k,μ
+
+in Eq. (3). Figure 3 (a) shows the temperature dependence of χSC 
+
+> μν
+
+(main panel) and κμν for reference (inset). For both the spin and thermal currents, the longitudinal responses to the temperature gradient χSC  
+
+> μμ
+
+and κμμ are nonzero at fi-nite temperatures, whereas the transverse responses are absent. Also, the xx and yy components of the longitu-dinal responses [see magenta and cyan symbols in Fig. 3 (a)] are almost identical to each other. Since the temper-ature dependence of χSC  
+
+> μμ
+
+is qualitatively the same as that of κμμ , it is indicated that in the 12 sublattice antiferro-magnetic state, thermally activated magnons contribute the spin current similarly to ferromagnetic magnons. This is in sharp contrast to the conventional antiferro-magnets where the up and down spin currents are com-pletely canceled out at zero field and thus, χSC  
+
+> μμ
+
+= 0. This unique feature of the present system, i.e., the emergence of the lateral spin Seebeck effect without net magneti-zation as in the case of the compensated ferrimagnets [36], originates from the difference in the velocity be-tween the up-spin and down-spin magnons, which should be more remarkable as the associated spin splitting be-comes larger. 
+
+C. Metallic system 
+
+Now that the magnon properties are understood, we shall next discuss how the broken effective time-     
+
+> ΓΓKM
+> ΓKM
+> (b)
+> -4 -3 -2 -1 012
+> εn,q
+> (d) DOS(a.u.)
+> (a) (c)
+
+t 
+
+> J
+> μ/t =0.6
+
+}  
+
+> μ/t =2
+> -4 -3 -2 -1 01
+> qy
+> qx
+> /t
+> K
+
+FIG. 4: The band structure of the electrons coupled to the 12 sublattice antiferromagnetic collinear spins for JK /t = 0 .3. (a) The schematic picture of the Kondo lattice model. (b) The spin-↑ (red) and spin-↓ (blue) electron dispersions along the path connecting high-symmetry points shown in (c) where the contour plots at εn, q/t = 0 .6 (outer part) and −2 (inner part) are shown. (d) The associated density of states (DOS), where the inset shows a zoomed view of the region enclosed by a box. 
+
+reversal symmetry in the spin sector is reflected in electron bands. We consider a Kondo-lattice model, 
+
+He = −t ∑
+
+> 〈i,j 〉
+
+∑
+
+> s=↑↓
+
+(ˆc† 
+
+> is
+
+ˆcjs + ˆ cis ˆc†
+
+> js
+
+) + JK
+
+∑ 
+
+> i,α,β
+
+Si ·
+
+σαβ ˆc†
+
+> iα
+
+ˆciβ , in which electrons move on the kagome lat-tice with the NN hopping t, interacting with the classical localized spin Si via the Kondo coupling JK [see Fig. 4 (a))]. For simplicity, we fix Si to be the 12 sublattice configuration, assuming that it is determined by the ex-change interactions without being affected by the Kondo coupling. Then, the problem is reduced to diagonalizing the following electronic Hamiltonian He
+
+He = ∑
+
+> q
+
+Φ† 
+
+> Fq
+
+HF qΦF q, HF q =
+
+( Mq 00 Mq
+
+)
+
++ JK Im,Mq =
+
+
+
+D′ 
+
+> 0
+
+D′∗  
+
+> 1
+
+D′∗  
+
+> 3
+
+D′∗ 
+
+> 2
+
+D′∗  
+
+> 1
+
+D′ 
+
+> 0
+
+D′∗  
+
+> 2
+
+D′∗ 
+
+> 3
+
+D′∗  
+
+> 3
+
+D′∗  
+
+> 2
+
+D′ 
+
+> 0
+
+D′∗ 
+
+> 1
+
+D′∗  
+
+> 2
+
+D′∗  
+
+> 3
+
+D′∗  
+
+> 1
+
+D′
+
+> 0
+
+ , D′ 
+
+> l
+
+= ( −t/J 1)Dl (4) with Φ†  
+
+> Fq
+
+= (ˆ c1 †
+
+> q↑
+
+, ˆc2 †
+
+> q↑
+
+, · · · , ˆcN † 
+
+> q↑
+
+, ˆc1
+
+> q↓
+
+, ˆc2
+
+> q↓
+
+, · · · , ˆcN
+
+> q↓
+
+), where ˆcμ† 
+
+> qs
+
+(ˆ cμ
+
+> qs
+
+) is the creation (annihilation) operator of the spin-s electron on sublattice μ. In Eq. (4), the matrix (Im)ij = ( σ3)ij (−m)j possesses the information of the localized spins. Figure 4 (b) shows the spin-↑ (red solid curve) and spin-↓ (blue dotted curve) electronic bands for JK /t =0.3, and examples of associated Fermi surfaces are shown 5in Fig. 4 (c). The electron band exhibits a spin split-ting as expected from the symmetry consideration, and the spin polarization does not alternate in the momen-tum space [see the outer part of Fig. 4 (c)] similarly to the polarization of the magnon band. Reflecting the non-alternating nature, the Fermi surface in the present anti-ferromagnetic state looks like a Zeeman split one. Actu-ally, for the chemical potential value of μ/t = −2 [see the inner part of Fig. 4 (c)], only the spin-↑ Fermi surface appears, pointing to the emergence of a spin-polarized metallic state. The origin of such a spin-polarized state consists in nonequivalence in the density of states (DOS) of the ↑ and ↓ bands. As shown in Fig. 4 (d), the spin splitting is reflected as the difference in the DOS, which can clearly be seen, for example, in high-energy sharp peaks stemming from the flat-band nature of the kagome lattice. Thus, the electronic state can be posi-tively or negatively spin-polarized depending on the posi-tion of the chemical potential or the electron filling. The nonequivalent DOSs of this kind is characteristic of com-pensated ferrimagnets [8, 9]. In the present 12 sublattice antiferromagnetic state, the ferrimagnetic spatial pattern of the plaquette magnetization m△ plays a role similar to nonequivalent sites in the compensated ferrimagnets. Thus, although the size of the splitting depends on the value of JK , it is certain that the nonequivalent DOS should appear as long as JK is nonzero.  
+
+> III. DISCUSSION
+
+In this paper, we have theoretically investigated the 
+
+J1-J3 kagome antiferromagnets, putting an emphasis on band structures in the triple-Q state with the 12 sub-lattice collinear configuration. Although the complexity originating from the triple-Q nature often yields non-collinear spin textures such as skyrmion crystals, in the present collinear case, it works as an internal asymmetry, i.e., the underlying cause that breaks the effective time-reversal symmetry defined by the combination of the spin-flip operation and lattice translation. Specifically, reflecting the triple-Q multi-sublattice nature, the local magnetization defined on the triangle plaquette reveals a fully compensated ferrimagnetic pattern. As a conse-quence, magnon and electron bands exhibit s-wave-type spin splittings. In insulators, since the up- and down-spin magnons are nonequivalent over the whole momen-tum space due to the spin splitting, a thermal gradient can drive a net magnon spin current even at zero field. In a metallic system, the splitting leads to nonequivalent DOSs for the up- and down-spin electronic bands, sug-gesting that the electronic state can be polarized either positively or negatively by tuning the electron filling. Experimentally, the occurrence of the triple-Q 12-sublattice state has been reported in the J1-J3 kagome antiferromagnet BaCu 3V2O8(OH) 2[21], but its spin structure is not theoretically-expected collinear but rather coplanar. Nevertheless, it would be useful to learn how such an unusual J3 dominant situation can be realized. In this kagome antiferromagnet, each mag-netic Cu 2+ site possesses orbital degrees of freedom in the eg level, the degeneracy of which is usually lifted by the Jahn-Teller (JT) effect, i.e., a spontaneous distor-tion of the O octahedron surrounding Cu 2+ . In Refs. [21, 37, 38], it is proposed that in this class of mag-nets having noequivalent Cu 2+ sites, not only static but also dynamical JT effects are relevant and resultant tiny but complicated octahedron distortions lead to the emer-gence of two types of superexchange paths Cu-O-Cu. For one path, the Cu-O-Cu angle is reported to be <
+
+∼ 90 ◦
+
+and for the other path, it is ∼ 100 ◦, so that according to the Goodenough-Kanamori rules, the superexchange in-teractions for the former and the latter are ferromagnetic and antiferromagnetic, respectively, canceling each other. As a result, the net NN interaction J1 is suppressed and the further neighbor interaction J3 becomes dom-inant. Thus, in general, kagome antiferromagnets pos-sessing several nonequivalent NN superexchange paths for whatever reasons could be J3-dominant candidates. Furthermore, if additional easy-axis anisotropy exists, it enhances the stability of the collinear triple-Q state by counteracting the Dzyaloshinskii-Moriya interactions in-herent to kagome systems that tend to cant the spins [39]. Although direct candidate materials are not currently available, recent progresses in the artificial fabrication of two-dimensional kagome magnets [40] suggest that the compensated plaquette ferrimagnetic state could be re-alized in the future by combining the above material in-sights and fabrication techniques. In the realization, or-bital degrees of freedom, which can also be the origin of the spin splitting [41], may come into play, making the spin ordering mechanism rather complicated. Never-theless, considering that the compensated ferrimagnetic state cannot be superimposed on the spin flipped state by any spatial symmetry operation, the s-wave nature of the spin splitting would remain unchanged as long as ad-ditional orbital degrees of freedom, which may effectively reduce the spatial symmetry, work only as secondary ef-fects. Once multi-sublattice collinear antiferromagnetic states of this kind are realized in kagome and other frus-trated systems, thermal activation of the spin current, i.e., the field-free spin Seebeck effect, will become pos-sible, which also enriches the potential of the flatband engineering [42]. The mechanism presented here thus provides an additional guiding principle for the search for magnets with non-relativistic spin-splitting as a plat-form for novel spintronics functionalities. 
+
+> Acknowledgments
+
+The authors thank Y. Niimi, H. Adachi, J. Ieda, Y. Araki, T. Nomoto, and T. Misawa for useful discussions. This work is supported by JSPS KAKENHI Grant No. JP23H00257 and JP24K00572. 6
+
+[1] L. ˇSmejkal, J. Sinova, and T. Jungwirth, Emerging Re-search Landscape of Altermagnetism, Phys. Rev. X 12 ,040501 (2022). [2] Y. Noda, K. Ohno, and S. Nakamura, Momentum-dependent band spin splitting in semiconducting MnO 2: a density functional calculation, Phys. Chem. Chem. Phys. 
+
+18 , 13294 (2016). [3] M. Naka, S. Hayami, H. Kusunose, Y. Yanagi, Y. Motome, and H. Seo, Spin current generation in organic antiferro-magnets, Nat. Commun. 10 , 4305 (2019). [4] S. Hayami, Y. Yanagi, and H. Kusunose, Momentum-Dependent Spin Splitting by Collinear Antiferromagnetic Ordering, J. Phys. Soc. Jpn. 88 , 123702 (2019). [5] L.-D. Yuan, Z. Wang, J.-W. Luo, E. I. Rashba, and A. Zunger, Giant momentum-dependent spin splitting in cen-trosymmetric low-Z antiferromagnets, Phys. Rev. B 102 ,014422 (2020). [6] H. van Leuken and R. A. de Groot, Half-Metallic Antifer-romagnets, Phys. Rev. Lett. 74 , 1171 (1995). [7] W. E. Pickett, Spin-density-functional-based search for half-metallic antiferromagnets, Phys. Rev. B 57 , 10613 (1998). [8] T. Kawamura, K. Yoshimi, K. Hashimoto, A. Kobayashi, and T. Misawa, Compensated Ferrimagnets with Colossal Spin Splitting in Organic Compounds, Phys. Rev. Lett. 
+
+132 , 156502 (2024). [9] Y. Liu, S.-D. Guo, Y. Li, and C.-C. Liu, Two-Dimensional Fully Compensated Ferrimagnetism, Phys. Rev. Lett. 134 ,116703 (2025). [10] X. T. Lee, T. Misawa, M. Matsuo, and T. Kato, Spin transport phenomena in junctions composed of a compen-sated ferrimagnet and a normal metal, arXiv:2507.05618. [11] I. Mazin, Editorial: Altermagnetism - A New Punch Line of Fundamental Magnetism, Phys. Rev. X 12 , 040002 (2022). [12] R. G.-Hern´ andez, L. ˇSmejkal, K. V´ yborn´ y, Y. Yahagi, J. Sinova, T. Jungwirth, and J. ˇZelezn´ y, Efficient Electrical Spin Splitter Based on Nonrelativistic Collinear Antifer-romagnetism, Phys. Rev. Lett. 26 , 127701 (2021). [13] L. ˇSmejkal, J. Sinova, and T. Jungwirth, Beyond Conven-tional Ferromagnetism and Antiferromagnetism: A Phase with Nonrelativistic Spin and Crystal Rotation Symmetry, Phys. Rev. X 12 , 031042 (2022). [14] L.-D. Yuan, Z. Wang, J.-W. Luo, and A. Zunger, Pre-diction of low-Z collinear and noncollinear antiferromag-netic compounds having momentum-dependent spin split-ting even without spin-orbit coupling, Phys. Rev. Mater. 
+
+5, 014409 (2021). [15] C. L. Henly, Ordering by disorder: Ground-state selec-tion in fcc vector antiferromagnets, J. Appl. Phys. 61 ,3962 (1987). [16] H. Kawamura and S. Miyashita, Phase Transition of the Heisenberg Antiferromagnet on the Triangular Lattice in a Magnetic Field, J. Phys. Soc. Jpn. 85 , 4530 (1985). [17] A. V. Chubukov and D. I. Golosov, Quantum theory of an antiferromagnet on a triangular lattice in a magnetic field, J. Phys.: Condens. Matter 3, 69 (1991). [18] V. Grison, P. Viot, B. Bernu, and L. Messio, Emergent Potts order in the kagome J1-J3 Heisenberg model, Phys. Rev. B 102 , 214424 (2020). [19] K. Aoyama and H. Kawamura, Emergent skyrmion-based chiral order in zero-field Heisenberg antiferromagnets on the breathing kagome lattice, Phys. Rev. B 105 , L100407 (2022). [20] K. Aoyama and H. Kawamura, Zero-Field Miniature Skyrmion Crystal and Chiral Domain State in Breathing-Kagome Antiferromagnets, J. Phys. Soc. Jpn. 92 , 033701 (2023). [21] D. Boldrin, B. Fak, E. Can´ evet, J. Ollivier, H. C. Walker, P. Manuel, D. D. Khalyavin, and A. S. Wills, Vesig-nieite: An S = 1 
+
+> 2
+
+Kagome Antiferromagnet with Dom-inant Third-Neighbor Exchange, Phys. Rev. Lett. 121 ,107203 (2018). [22] R. Matsumoto, R. Shindou, and S. Murakami, Thermal Hall effect of magnons in magnets with dipolar interaction, Phys. Rev. B 89 , 054420 (2014). [23] L. ˇSmejkal, A. Marmodoro, K.-H. Ahn, R. G.-H´ ernandez, I. Turek, S. Mankovsky, H. Ebert, S. W. D´ Souza, O. ˇ Sipr, J. Sinova, and T. Jungwirth, Chiral Magnons in Alter-magnetic RuO 2, Phys. Rev. Lett. 131 , 256703 (2023). [24] Z. Liu, M. Ozeki, S. Asai, S. Itoh, and T. Masuda, Chiral Split Magnon in Altermagnetic MnTe, Phys. Rev. Lett. 
+
+133 , 156702 (2024). [25] Y. Nambu, J. Barker, Y. Okino, T. Kikkawa, Y. Sh-iomi, M. Enderle, T. Weber, B. Winn, M. Graves-Brook, J. M. Tranquada, T. Ziman, M. Fujita, G. E.W. Bauer, E. Saitoh, and K. Kakurai, Observation of Magnon Polar-ization, Phys. Rev. Lett. 125 , 027201 (2020). [26] Y. Kawamoto, T. Kikkawa, M. Kawamata, Y. Umemoto, A. G. Manning, K. C. Rule, K. Ikeuchi, K. Kamazawa, M. Fujita, E. Saitoh, K. Kakurai, and Y. Nambu, Under-standing spin currents from magnon dispersion and polar-ization: Spin-Seebeck effect and neutron scattering study on Tb 3Fe 5O12 , App. Phys. Lett. 124 , 132406 (2024). [27] R. Eto, M. Gohlke, J. Sinova, M. Mochizuki, A. L. Chernyshev, and A. Mook, Spontaneous magnon decays from nonrelativistic time-reversal symmetry breaking in altermagnets, Phys. Rev. B 112 , 094442 (2025). [28] N. Cichutek, P. Kopietz, and A. R¨ uckriegel, Quantum fluctuations in two-dimensional altermagnets, Phys. Rev. B 112 , 094442 (2025). [29] G. D. Mahan, Many-Particle Physics , third edition (Springer Science+Business Media, New York, 2000). [30] K. Aoyama and H. Kawamura, Effects of magnetic anisotropy on spin and thermal transports in classical an-tiferromagnets on the square lattice, Phys. Rev. B 100 ,144416 (2019). [31] K. Aoyama and H. Kawamura, Spin Current as a Probe of the Z2-Vortex Topological Transition in the Classical Heisenberg Antiferromagnet on the Triangular Lattice, Phys. Rev. Lett. 124 , 047202 (2020). [32] K. Aoyama and H. Kawamura, Supplemental Material which includes Refs. [1–7], where the derivation of the con-ductivities χSC  
+
+> μν
+
+and κμν is presented. [33] L. J. Cornelissen, K. J. H. Peters, G. E. W. Bauer, R. A. Duine, and B. J. van Wees, Magnon spin transport driven by the magnon chemical potential in a magnetic insulator, Phys. Rev. B 94 , 014412 (2016). [34] G. Tatara, Thermal vector potential theory of magnon-driven magnetization dynamics, Phys. Rev. B 92 , 064405 (2015). [35] K. Aoyama and H. Kawamura, Spontaneous chirality se-7
+
+lection and nonreciprocal spin wave in breathing-kagome antiferromagnets at zero field, Phys. Rev. B 111 , 144413 (2025). [36] Y. Ohnuma, H. Adachi, E. Saitoh, and S. Maekawa, Spin Seebeck effect in antiferromagnets and compensated ferri-magnets, Phys. Rev. B 87 , 014423 (2013). [21] [37] D. Boldrin and A. S. Wills, SrCu 3V2O8(OH) 2 – dynamic Jahn–Teller distortions and orbital frustration in a new 
+
+S = 1 /2 kagome antiferromagnet, J. Mater. Chem. C 3,4308 (2015). [38] D. Boldrin, K. Knight, and A. S. Wills, Orbital frus-tration in the S = 1/2 kagome magnet vesignieite, BaCu 3 V2O8(OH) 2, J. Mater. Chem. C 4, 10315 (2016). [39] A. Verrier, F. Bert, J. M. Parent, M. El-Amine, J. C. Orain, D. Boldrin, A. S. Wills, P. Mendels, and J. A. Quilliam, Canted antiferromagnetic order in the kagome material Sr-vesignieite, Phys. Rev. B 101 , 054425 (2020). [40] H. Zhou, M. S. Dias, Y. Zhang, W. Zhao, and S. Lounis, Kagomerization of transition metal monolayers induced by two-dimensional hexagonal boron nitride, Nat. Commun. 
+
+15 , 4854 (2024). [41] V. Leeb, A. Mook, L. ˇSmejkal, and J. Knolle, Sponta-neous Formation of Altermagnetism from Orbital Order-ing, Phys. Rev. Lett. 132 , 236701 (2024). [42] T. Mizoguchi and M. Udagawa, Flat-band engineering in tight-binding models: Beyond the nearest-neighbor hop-ping, Phys. Rev. B 99 , 235118 (2019). 8
+
+## Supplemental Material for ”Triple-Q collinear state with compensated ferrimagnetic nature on frustrated kagome lattice” 
+
+In this supplemental material, we derive the expressions of the conductivities χSC  
+
+> μν
+
+and κμν in the relaxation-time approximation. We start from the Bogoliubov Hamiltonian for the magnon which can be diagonalized as 
+
+HS = S
+
+2
+
+∑
+
+> q
+
+Φ†
+
+> Bq
+
+(T † 
+
+> q
+
+)−1T † 
+
+> q
+
+HBqTqT −1 
+
+> q
+
+ΦBq = S
+
+2
+
+∑
+
+> q
+
+ϕ†
+
+> q
+
+( Eq 00 E−q
+
+)
+
+ϕq.
+
+With the use of the new basis ϕ† 
+
+> q
+
+= Φ†
+
+> Bq
+
+(T † 
+
+> q
+
+)−1 = (ˆ α1 † 
+
+> q
+
+, ˆα2 † 
+
+> q
+
+, · · · , ˆαN † 
+
+> q
+
+, ˆα1
+
+> −q
+
+, ˆα2
+
+> −q
+
+, · · · , ˆαN
+
+> −q
+
+), the spin and thermal current can be expressed as 
+
+Jzs,μ = ∑
+
+> q
+
+ϕ†
+
+> Bq
+
+(T † 
+
+> q
+
+V s
+
+> q,μ
+
+Tq
+
+)ϕBq ≡ ∑
+
+> q
+
+ϕ† 
+
+> Bq
+
+˜V s
+
+> q,μ
+
+ϕBq,Jth,μ = ∑
+
+> q
+
+ϕ†
+
+> Bq
+
+(T †
+
+> q
+
+V th 
+
+> q,μ
+
+Tq
+
+)ϕBq ≡ ∑
+
+> q
+
+ϕ† 
+
+> Bq
+
+˜V th 
+
+> q,μ
+
+ϕBq,
+
+where as introduced in the main text, V s 
+
+> q,μ
+
+= S 
+
+> 4
+
+(vq,μ Im + Imvq,μ ) and V th  
+
+> q,μ
+
+= S2 
+
+> 4
+
+(vq,μ σ3HBq + HBqσ3vq,μ ). Then, we have 
+
+〈Tτ Jzs,μ (τ )Jth,ν (0) 〉 = ∑
+
+> k,k′
+> 2N
+
+∑
+
+> m,n,m ′,n ′=1
+
+〈Tτ ϕ†
+
+> k,m
+
+(τ )ϕk,n (τ )ϕ†  
+
+> k′,m ′
+
+(0) ϕk′ ,n ′ (0) 〉( ˜V s
+
+> k,μ
+
+)
+
+> mn
+
+( ˜V th  
+
+> k′,ν
+
+)
+
+> m′n′
+
+whose thermal-average part 〈... 〉 is reduced to 
+
+〈Tτ ϕ†
+
+> k,m
+
+(τ )ϕk,n (τ )ϕ†  
+
+> k′,m ′
+
+(0) ϕk′ ,n ′ (0) 〉 = 〈Tτ ϕ†
+
+> k,m
+
+(τ )ϕk′ ,n ′ (0) 〉〈 ϕk,n (τ )ϕ†  
+
+> k′,m ′
+
+(0) 〉+〈Tτ ϕ†
+
+> k,m
+
+(τ )ϕ†  
+
+> k′,m ′
+
+(0) 〉〈 Tτ ϕk,n (τ )ϕk′ ,n ′ (0) 〉.
+
+The final expression in Eq. (5) can further be rewritten with the use of the magnon Green’s function Gn 
+
+> k
+
+(τ ) = 
+
+−〈 Tτ ˆαn
+
+> k
+
+(τ )ˆ αn† 
+
+> k
+
+(0) 〉. For example, the first term in Eq. (5) is given by 
+
+δkk ′ δmn ′ δnm ′
+
+{ 〈Tτ ˆαm† 
+
+> k
+
+(τ )ˆ αm 
+
+> k
+
+(0) 〉 (1 ≤ m ≤ N )
+
+〈Tτ ˆαm
+
+> −k
+
+(τ )ˆ αm†−k(0) 〉 (N + 1 ≤ m ≤ 2N )
+
+} { 〈Tτ ˆαn
+
+> k
+
+(τ )ˆ αn† 
+
+> k
+
+(0) 〉 (1 ≤ n ≤ N )
+
+〈Tτ ˆαn†−k(τ )ˆ αn
+
+> −k
+
+(0) 〉 (N + 1 ≤ n ≤ 2N )
+
+}
+
+= δkk ′ δmn ′ δnm ′
+
+(δml Gl
+
+> k
+
+(−τ ) + δml +N Gl
+
+> −k
+
+(τ )〉)( δnl ′ Gl′ 
+
+> k
+
+(τ ) + δnl ′+N Gl′
+
+> −k
+
+(−τ ))
+
+with 1 ≤ l, l ′ ≤ N . Thus, the response function Qμν (iω m) = − 1
+
+> V
+
+∫ 1/T  
+
+> 0
+
+〈Tτ Jzs,μ (τ )Jth,ν (0) 〉eiω mτ dτ reads 
+
+Qμν (iω m) = − T
+
+V
+
+∑
+
+> εn
+
+∑
+
+> k
+> N
+
+∑ 
+
+> l,l ′=1
+
+[( ˜V s
+
+> k,μ
+
+)
+
+> ll ′
+
+{( ˜V th 
+
+> k,ν
+
+)  
+
+> l′l
+
++ ( ˜V th 
+
+> −k,ν
+
+) 
+
+> l+N l ′+N
+
+}
+
+Gl
+
+> k
+
+(iε n)Gl′ 
+
+> k
+
+(iε n + iω m)+( ˜V s
+
+> k,μ
+
+) 
+
+> ll ′+N
+
+{( ˜V th 
+
+> k,ν
+
+)  
+
+> l′+N l
+
++ ( ˜V th 
+
+> −k,ν
+
+)
+
+> l+N l ′
+
+}
+
+Gl
+
+> k
+
+(iε n)Gl′
+
+> −k
+
+(−iε n − iω m)+( ˜V s
+
+> k,μ
+
+)
+
+> l+N l ′
+
+{( ˜V th 
+
+> k,ν
+
+)  
+
+> l′l+N
+
++ ( ˜V th 
+
+> −k,ν
+
+) 
+
+> ll ′+N
+
+}
+
+Gl
+
+> −k
+
+(iε n)Gl′ 
+
+> k
+
+(−iε n + iω m)+( ˜V s
+
+> k,μ
+
+) 
+
+> l+N l ′+N
+
+{( ˜V th 
+
+> k,ν
+
+)  
+
+> l′+N l +N
+
++ ( ˜V th 
+
+> −k,ν
+
+)
+
+> ll ′
+
+}
+
+Gl
+
+> −k
+
+(iε n)Gl′
+
+> −k
+
+(iε n − iω m)
+
+]
+
+. (5) By using the formula T ∑ 
+
+> εn
+
+Gl
+
+> k
+
+(iε n)Gl′ 
+
+> k
+
+(iε n + iω m) = ∮ dz  
+
+> 2πi
+
+fB (z)Gl R,A  
+
+> k
+
+(z)Gl′ R,A  
+
+> k
+
+(z + iω m) with the retarded and advanced Green’s functions Gl R  
+
+> k
+
+(z) = [ z − ǫl, k + iγ ]−1 and Gl A  
+
+> k
+
+(z) = [ z − ǫl, k − iγ ]−1, one can rewrite the summation 9over the Matsubara frequency for ωm > 0 as 
+
+T ∑
+
+> εn
+
+Gl
+
+> k
+
+(iε n)Gl′ 
+
+> k
+
+(iε n + iω m) = 1
+
+π
+
+∫ ∞−∞ 
+
+dxf B (x)q1 (x, iω m),q1(x, iω m) = Gl′ R 
+
+> k
+
+(x + iω m)Im Gl R  
+
+> k
+
+(x) + Gl A  
+
+> k
+
+(x − iω m)Im Gl′ R 
+
+> k
+
+(x), (6) 
+
+T ∑
+
+> εn
+
+Gl
+
+> k
+
+(iε n)Gl′
+
+> −k
+
+(−iε n − iω m) = 1
+
+π
+
+∫ ∞−∞ 
+
+dxf B (x)q2 (x, iω m),q2(x, iω m) = Gl′ A 
+
+> −k
+
+(−x − iω m)Im Gl R  
+
+> k
+
+(x) − Gl A  
+
+> k
+
+(x − iω m)Im Gl′ R 
+
+> −k
+
+(−x),T ∑
+
+> εn
+
+Gl
+
+> −k
+
+(iε n)Gl′ 
+
+> k
+
+(−iε n + iω m) = 1
+
+π
+
+∫ ∞−∞ 
+
+dxf B (x)q3 (x, iω m),q3(x, iω m) = −Gl R 
+
+> −k
+
+(x + iω m)Im Gl′ R 
+
+> k
+
+(−x) + Gl′ R 
+
+> k
+
+(−x + iω m)Im Gl R 
+
+> −k
+
+(x),T ∑
+
+> εn
+
+Gl
+
+> −k
+
+(iε n)Gl′
+
+> −k
+
+(iε n − iω m) = 1
+
+π
+
+∫ ∞−∞ 
+
+dxf B (x)q4 (x, iω m),q4(x, iω m) = Gl R 
+
+> −k
+
+(x + iω m)Im Gl′ R 
+
+> −k
+
+(x) + Gl′ A 
+
+> −k
+
+(x − iω m)Im Gl R 
+
+> −k
+
+(x).
+
+In the calculation of the spin conductivity χSC  
+
+> μν
+
+= i  
+
+> TdQ μν (ω+iγ )
+> dω
+
+|ω=0 , the derivative with respect to ω acts only on qi
+
+in Eq. (6), and we have 
+
+∂q 1(x, ω )
+
+∂ω 
+
+∣∣∣ω=0 = γ
+
+(x − ǫl, k)2 + γ2
+
+(x − ǫl′ ,k − iγ )2
+
+[( x − ǫl′ ,k)2 + γ2]2 − γ
+
+(x − ǫl′,k)2 + γ2
+
+(x − ǫl, k + iγ )2
+
+[( x − ǫl, k)2 + γ2]2 , (7) 
+
+∂q 2(x, ω )
+
+∂ω 
+
+∣∣∣ω=0 = − γ
+
+(x − ǫl, k)2 + γ2
+
+(x + ǫl′,−k − iγ )2
+
+[( x + ǫl′,−k)2 + γ2]2 + γ
+
+(x + ǫl′ ,−k)2 + γ2
+
+(x − ǫl, k + iγ )2
+
+[( x − ǫl, k)2 + γ2]2 ,∂q 3(x, ω )
+
+∂ω 
+
+∣∣∣ω=0 = − γ
+
+(x + ǫl′ ,k)2 + γ2
+
+(x − ǫl, −k − iγ )2
+
+[( x − ǫl, −k)2 + γ2]2 + γ
+
+(x − ǫl, −k)2 + γ2
+
+(x + ǫl′,k + iγ )2
+
+[( x + ǫl′,k)2 + γ2]2 ,∂q 4(x, ω )
+
+∂ω 
+
+∣∣∣ω=0 
+
+= γ
+
+(x − ǫl′,−k)2 + γ2
+
+(x − ǫl, −k − iγ )2
+
+[( x − ǫl, −k)2 + γ2]2 − γ
+
+(x − ǫl, −k)2 + γ2
+
+(x − ǫl′ ,−k + iγ )2
+
+[( x − ǫl′ ,−k)2 + γ2]2 .
+
+The γ → 0 limit corresponds to the free magnon without a damping. As our interest here is in the longitudinal response to the thermal gradient, magnon scatterings should be nonnegligible as in the case of the electric conductivity. In this work, we introduce the magnon damping in the form of a nonzero but small constant γ, mimicking the derivation of the electric conductivity in the Kubo-formula approach [1]. This corresponds to a relaxation-time approximation where the magnon scattering time τm, which is related to the damping via γ = 1 /τ m, is assumed to be a constant. In reality, the magnon damping depends on the wave number, energy, and temperature due to, for example, magnon-magnon and magnon-phonon scatterings [2]. As our focus here is on the qualitative understanding of the role of the magnon band for the magnon transport, we use this simplified assumption of the constant γ, ignoring the complicated parameter dependence of the magnon damping. For an energy scale x satisfying γ ≪ | x − ǫl, k|, we use the approximations [3–5] 
+
+γ
+
+(x − ǫl, k)2 + γ2 ≃ πδ (x − ǫl, k), γ3
+
+[( x − ǫl, k)2 + γ2]2 ≃ π
+
+2 δ(x − ǫl, k) (8) as functions of the variable x. Then, for the contribution from q1, by performing the following integral by parts, we obtain 1
+
+π
+
+∫ ∞−∞ 
+
+dxf B (x) ∂q 1(x, ω )
+
+∂ω 
+
+∣∣∣ω=0 = −iγ 2 1
+
+π
+
+∫ ∞−∞ 
+
+dxf ′ 
+
+> B
+
+(x) 1
+
+[( x − ǫl, k)2 + γ2][( x − ǫl′ ,k)2 + γ2]+2 γ3 1
+
+π
+
+∫ ∞−∞ 
+
+dxf B (x)
+
+{ 1
+
+[( x − ǫl, k)2 + γ2]2[( x − ǫl′ ,k)2 + γ2] − 1
+
+[( x − ǫl, k)2 + γ2][( x − ǫl′ ,k)2 + γ2]2
+
+}
+
+≃
+
+
+
+−i 1
+
+2γ f ′ 
+
+> B
+
+(ǫl, k) (ǫl, k = ǫl′,k)
+
+−iγ f ′ 
+
+> B
+
+(ǫl, k) + f ′ 
+
+> B
+
+(ǫl′ ,k)
+
+(ǫl, k − ǫl′,k)2 + fB (ǫl, k) − fB(ǫl′ ,k)
+
+(ǫl, k − ǫl′,k)2 − 4γ2 fB(ǫl, k) − fB (ǫl′ ,k)
+
+(ǫl, k − ǫl′ ,k)4 (ǫl, k 6 = ǫl′ ,k)
+
+. (9) 10 It turns out that the 1 /γ term in Eq. (9) yields a contribution proportional to 1 /γ in the conductivity χSC  
+
+> μν
+
+=  
+
+> i
+> TdQ μν (ω+iγ )
+> dω
+
+|ω=0 , as is expected in the Boltzmann approximation. In the same manner as that for Eq. (9), one can evaluate the contribution from q2 as 1
+
+π
+
+∫ ∞−∞ 
+
+dxf B (x) ∂q 2(x, ω )
+
+∂ω 
+
+∣∣∣ω=0 ≃ iγ f ′ 
+
+> B
+
+(ǫl, k) + f ′ 
+
+> B
+
+(−ǫl′ ,−k)
+
+(ǫl, k + ǫl′ ,−k)2 + fB(ǫl, k) − fB (−ǫl′,−k)
+
+(ǫl, k + ǫl′,−k)2 + 4 γ2 fB (ǫl, k) − fB (−ǫl′,−k)
+
+(ǫl, k + ǫl′,−k)4
+
+In contrast to the q1 term, the q2 term does not contain a term proportional to 1 /γ . By picking up the terms proportional to 1 /γ in ∫ ∞−∞ dxf B (x) ∂q i (x,ω ) 
+
+> ∂ω
+
+|ω=0 (i = 1 − 4), we obtain 
+
+χSC  
+
+> μν
+
+= − 1
+
+V T 
+
+1
+
+2γ
+
+∑
+
+> k
+> N
+
+∑ 
+
+> l,l ′=1
+
+δǫl, kǫl′,k
+
+[
+
+f ′ 
+
+> B
+
+(ǫl, k)( ˜V s
+
+> k,μ
+
+)
+
+> ll ′
+
+{( ˜V th 
+
+> k,ν
+
+)  
+
+> l′l
+
++ ( ˜V th 
+
+> −k,ν
+
+) 
+
+> l+N l ′+N
+
+}
+
++f ′ 
+
+> B
+
+(ǫl, −k)( ˜V s
+
+> k,μ
+
+) 
+
+> l+N l ′+N
+
+{( ˜V th 
+
+> k,ν
+
+) 
+
+> l′+N l +N
+
++ ( ˜V th 
+
+> −k,ν
+
+)
+
+> ll ′
+
+}]
+
+. (10) Since ǫl, k = ǫl′ ,k is satisfied over the whole momentum space for l = l′ and only at degeneracy points for l 6 = l′, the dominant contribution comes from the former, so that we could write 
+
+χSC  
+
+> μν
+
+= − 1
+
+V T 
+
+1
+
+2γ
+
+∑
+
+> k
+> N
+
+∑
+
+> l=1
+
+f ′ 
+
+> B
+
+(ǫl, k)
+
+[( ˜V s
+
+> k,μ
+
+)
+
+> ll
+
+{( ˜V th 
+
+> k,ν
+
+) 
+
+> ll
+
++ ( ˜V th 
+
+> −k,ν
+
+)
+
+> l+N l +N
+
+}
+
++ ( ˜V s
+
+> k,μ
+
+)
+
+> l+N l +N
+
+{( ˜V th 
+
+> k,ν
+
+) 
+
+> l+N l +N
+
++ ( ˜V th 
+
+> −k,ν
+
+)
+
+> ll
+
+}]
+
+,
+
+(11) where we have used the relation ǫl, k = ǫl, −k satisfied in the present system [see Fig. 2 (c) in the main text]. We note in passing that for noncoplanar spin structures, the magnon dispersion can become asymmetric ǫl, k 6 = ǫl, −k due to spatially inhomogeneous geometric phases [6]. By further using the relation ( T−k)αβ = ( σ1T ∗ 
+
+> k
+
+σ1)αβ exp[ iθ k,β ] [7], one can rewrite ( ˜V th 
+
+> −k,μ
+
+)ll and ( ˜V th 
+
+> −k,μ
+
+)l+N l +N into ( ˜V th 
+
+> k,μ
+
+)l+N l +N and ( ˜V th 
+
+> k,μ
+
+)ll , respectively. Thus, we finally obtain 
+
+χSC  
+
+> μν
+
+= − 1
+
+V T 
+
+1
+
+γ
+
+∑
+
+> k
+> N
+
+∑
+
+> l=1
+
+f ′ 
+
+> B
+
+(ǫl, k)
+
+[( ˜V s
+
+> k,μ
+
+)
+
+> ll
+
+( ˜V th 
+
+> k,ν
+
+) 
+
+> ll
+
++ ( ˜V s
+
+> k,μ
+
+)
+
+> l+N l +N
+
+( ˜V th 
+
+> k,ν
+
+)
+
+> l+N l +N
+
+]
+
+. (12) Since both ˜V s 
+
+> k,μ
+
+and ˜V th  
+
+> k,μ
+
+are linear in the magnon velocity vk,μ = ∂H k 
+
+> ∂q μ
+
+, χSC  
+
+> μν
+
+in Eq. (12) takes the form of χSC  
+
+> μν
+
+∼
+
+> 1
+> γ
+
+∑ 
+
+> k
+
+f ′ 
+
+> B
+
+(ǫk) vk,μ vk,ν , which is definitely in the same form as that in the Boltzmann approximation. In Eq. (12), the summation over k can numerically be evaluated by using the replacement 1
+
+> V
+
+∑ 
+
+> k
+
+→ 1
+
+> (2 π)2
+
+∫ 
+
+> MBZ
+
+dk, where MBZ denotes the magnetic Brillouin zone. In the case of the thermal conductivity κμν = i  
+
+> TdQ th μν (ω+iγ )
+> dω
+
+|ω=0 with Qth μν (iω m) =
+
+− 1
+
+> V
+
+∫ 1/T  
+
+> 0
+
+〈Tτ Jth,μ (τ )Jth,ν (0) 〉eiω m τ dτ , we only replace ˜V s 
+
+> k,μ
+
+with ˜V th  
+
+> k,μ
+
+in Eq. (12). 
+
+[1] G. D. Mahan, Many-Particle Physics , third edition (Springer Science+Business Media, New York, 2000). [2] L. J. Cornelissen, K. J. H. Peters, G. E. W. Bauer, R. A. Duine, and B. J. van Wees, Magnon spin transport driven by the magnon chemical potential in a magnetic insulator, Phys. Rev. B 94 , 014412 (2016). [3] K. Aoyama and H. Kawamura, Effects of magnetic anisotropy on spin and thermal transports in classical antiferromagnets on the square lattice, Phys. Rev. B 100 , 144416 (2019). [4] K. Aoyama and H. Kawamura, Spin Current as a Probe of the Z2-Vortex Topological Transition in the Classical Heisenberg Antiferromagnet on the Triangular Lattice, Phys. Rev. Lett. 124 , 047202 (2020). [5] G. Tatara, Thermal vector potential theory of magnon-driven magnetization dynamics, Phys. Rev. B 92 , 064405 (2015). [6] K. Aoyama and H. Kawamura, Spontaneous chirality selection and nonreciprocal spin wave in breathing-kagome antiferro-magnets at zero field, Phys. Rev. B 111 , 144413 (2025). [7] R. Matsumoto, R. Shindou, and S. Murakami, Thermal Hall effect of magnons in magnets with dipolar interaction, Phys. Rev. B 89 , 054420 (2014).

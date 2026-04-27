@@ -1,0 +1,659 @@
+Title: Bose metal near pair-density-wave order in a spin-orbit-coupled Kondo lattice
+
+URL Source: https://arxiv.org/pdf/2604.18451v1
+
+Published Time: Tue, 21 Apr 2026 03:00:37 GMT
+
+Number of Pages: 8
+
+Markdown Content:
+## Bose metal near pair-density-wave order in a spin-orbit-coupled Kondo lattice 
+
+Piers Coleman, 1, 2 Aaditya Panigrahi, 3 and Alexei Tsvelik 4
+
+> 1
+
+Center for Materials Theory, Department of Physics and Astronomy, Rutgers University, 136 Frelinghuysen Rd., Piscataway, NJ 08854-8019, USA 
+
+> 2
+
+Department of Physics, Royal Holloway, University of London, Egham, Surrey TW20 0EX, UK. 
+
+> 3
+
+Department of Physics, Cornell University, Ithaca, NY 14853, USA 
+
+> 4
+
+Division of Condensed Matter Physics and Materials Science, Brookhaven National Laboratory, Upton, NY 11973-5000, USA 
+
+(Dated: April 21, 2026) We show that a three-dimensional superconductor with a non-Abelian SU(2) order parameter can support an extended resistive regime — a Bose metal, in which transport is carried by bosonic electron-Majorana bound states — separating a uniform superconductor from a pair-density-wave (PDW) phase. The setting is a solvable Kondo lattice model introduced previously by the present au-thors, in which Kondo screening of a Yao-Lee Z2 spin liquid generates an order parameter with SU(2), rather than conventional U(1), symmetry, containing both superconducting and spin-density-wave components. Two effects cooperate to make fluctuations anomalously strong in three dimensions: the vanishing of the quadratic superconducting stiffness near the Lifshitz point where the optimal pairing momentum shifts from zero to finite Q, and the enlarged SU(2) order-parameter manifold. Building on our prior result that doping away from half-filling drives amplitude-modulated PDW order via finite-momentum electron-Majorana condensation, we analyze the fluctuation-dominated regime above that phase using a nonlinear sigma model. We find that the order-parameter propaga-tor develops a ring of soft modes throughout the disordered phase, and that the resulting resistivity scales approximately as R ∼ T 3 in three dimensions. 
+
+I. INTRODUCTION 
+
+Pair-density-wave (PDW) order — spatially modu-lated superconductivity — has been observed in a grow-ing class of unconventional superconductors [1], yet the nature of the transition into the PDW state, particularly in three dimensions, remains poorly understood. A basic question is whether the system passes directly from uni-form superconductivity into PDW order, or whether fluc-tuations can sustain a resistive intermediate state. Here we show that when the order parameter has SU(2) rather than conventional U(1) symmetry, the latter is possi-ble: a broad Bose-metal regime, carrying charge through bosonic electron-Majorana bound states, emerges be-tween the two ordered phases. Two effects cooperate to make this happen. The first is the vanishing of the quadratic supercon-ducting stiffness, which softens the order-parameter fluc-tuations. Since the transition from uniform superconduc-tivity to a PDW is accompanied by a shift of the wave vector at which the pairing susceptibility is maximal, this softening naturally occurs near a Lifshitz transition. The second is the size of the symmetry manifold of the or-der parameter: the larger the manifold, the stronger the fluctuations. In the microscopic system studied here, the order parameter lives on SU(2) rather than the conven-tional U(1), making both effects unusually pronounced. This question is nontrivial because a PDW requires a pairing susceptibility peaked at finite momentum, some-thing that does not arise naturally in a BCS supercon-ductor [2]. In the BCS problem, the logarithmic diver-gence of the uniform susceptibility is cut off by the fi-nite momentum Q—more precisely by vF Q, where vF
+
+is the Fermi velocity. In conventional FFLO physics, a Zeeman field compensates for this by polarizing the Fermi surfaces and favoring pairing at nonzero momen-tum [3, 4]. By contrast, experiments suggest that PDW order can develop spontaneously in unconventional su-perconductors even without an applied magnetic field, and the origin of this tendency remains unsettled. The route we take is guided in part by ideas devel-oped in the context of quark-gluon plasma, where a re-lated fluctuation mechanism suppresses order-parameter condensation [5, 6]. An Abelian version of the Lifshitz problem was analyzed in Ref. [7]; here we extend the discussion to a genuinely non-Abelian order parameter. The concrete microscopic setting is a solvable three-dimensional model introduced previously by the present authors (CPT, for Coleman-Panigrahi-Tsvelik), in which Kondo screening of a Z2 spin liquid induces order in the surrounding conduction sea [8, 9]. The resulting order parameter has SU(2) symmetry and contains both su-perconducting and spin-density-wave components. The underlying spin liquid is the Yao-Lee state, a three-dimensional generalization of the spin-orbital Z2 Kitaev spin liquid [10]. The model remains tractable because the single-occupancy constraint is built into the Majorana representation rather than imposed through a separate mean-field procedure. At half-filling, the electron, hole, and Majorana Fermi surfaces are nested, producing a logarithmic instabil-ity to electron-Majorana pair condensation under arbi-trarily weak Kondo coupling and hence odd-frequency triplet superconductivity. In our previous work [11], we showed that doping away from half-filling shifts the elec-tron and hole Fermi surfaces while leaving the Majorana 
+
+> arXiv:2604.18451v1 [cond-mat.str-el] 20 Apr 2026
+
+2Fermi surface unchanged. That mismatch moves the pre-ferred pairing channel to finite momentum, favoring an FFLO-like electron-Majorana condensate and producing amplitude-modulated PDWs. The present paper focuses on the fluctuation regime near that transition. We first formulate a Ginzburg-Landau theory for the SU(2) order parameter and use it to identify the soft sector near the Lifshitz point. We then turn to a nonlinear sigma model, following the strat-egy of Refs. [5, 6], to analyze the fluctuation-dominated regime itself. Finally, we estimate the corresponding fluc-tuation conductivity and discuss what it implies for PDW formation in the CPT model. Details of the microscopic derivation are collected in the Appendix.  
+
+> II. GINZBURG-LANDAU THEORY FOR A NON-ABELIAN ORDER PARAMETER
+
+We now translate this physical picture into an effec-tive field theory. The microscopic derivation is deferred to the Appendix; here we isolate the ingredients needed for the fluctuation analysis. The natural starting point is a Ginzburg-Landau description of the SU(2)-symmetric order parameter, with free-energy density 
+
+F = X
+
+> q
+
+12 V(q)+1/J K − χ(q; T, μ )V(q)+
+
+Z
+
+d3x g
+
+2 (V+V)2,
+
+(1) where V is a two-component spinor transforming in the spin- 12 representation of SU(2), χ is the pairing suscep-tibility, and JK is the Kondo coupling. In the CPT model, V is a bound state of an electron (charge e, spin  
+
+> 12
+
+) and a Majorana fermion (charge zero, spin 1). Strictly speaking, V is not gauge invariant because it carries both 
+
+Z2 and U(1) charges, so the corresponding gauge fields should be included. This can in principle lead to confine-ment. Nevertheless, calculations for the XY version of the model [12] indicate a very large confinement length, and the gauge-invariant order parameter still inherits the non-Abelian character of its constituents. It can be rep-resented by three mutually perpendicular vectors, 
+
+d1 = V+⃗σV, (2) 
+
+d2 + id3 = iVσy⃗σV, d 2 − id3 = iV+σy⃗σV +,
+
+whose non-Abelian structure is central to the fluctuation physics discussed below. To connect this order parameter to the onset of PDW order, we expand the pairing susceptibility in momen-tum, 
+
+χ(q; T, μ ) = χ(0 , T, μ ) − ρ(T, μ )q2 + O(q4). (3) The cubic symmetry of the lattice constrains the quartic         
+
+> FIG. 1. Suggested phase diagram. The commensurate and in-commensurate PDW phases approach one another near a pos-sible quantum critical point. There is a disordered (resistive) region in which the order-parameter propagator has a maxi-mum on a ring of wave vectors. The blue dashed line marks the onset of the single-particle spectral gap, given by Eq. (B4); the orange dashed line marks where χ′′ (q) changes sign, which for t=Koccurs at T=μ/ 4. The boundary of the IC phase is determined by condition (12), where order-parameter fluc-tuations are suppressed by Fermi-surface anisotropy.
+
+term to the form 
+
+χ(q)/χ (0) − 1 = − A(q2 
+
+> x
+
++ q2 
+
+> y
+
++ q2 
+
+> z
+
+)+ B(q2 
+
+> x
+
++ q2 
+
+> y
+
++ q2 
+
+> z
+
+)2
+
++ C(q2
+
+> x
+
+q2 
+
+> y
+
++ q2 
+
+> y
+
+q2 
+
+> z
+
++ q2
+
+> x
+
+q2 
+
+> z
+
+).
+
+(4) Neglecting the cubic anisotropy ( C = 0) for the moment and retaining only the leading terms in this expansion, we arrive at the real-space Ginzburg-Landau functional 
+
+F =
+
+Z
+
+d3x
+
+h ρ
+
+2 (∇V +∇V ) + ρ2
+
+2 (∇2V+∇2V) + 
+
+τ
+
+2 (V+V) + g
+
+4 (V+V)2i
+
+, (5) where τ = 1 /J K − χ(0; T, μ ).  
+
+> III. NONLINEAR SIGMA MODEL AND FLUCTUATION-DOMINATED REGIME
+
+The Ginzburg-Landau functional already shows that the phase structure is controlled by two temperature scales. The first, Tc1, is defined by τ (Tc1, μ ) = 0, and the second, Tc2, by ρ(Tc2, μ ) = 0. If Tc2 > T c1, the tran-sition proceeds directly into the incommensurate (IC) phase. Otherwise, the system first enters the commensu-rate phase, and the pairing susceptibility must be recom-puted to determine whether a second transition occurs at lower temperature. The resulting schematic phase di-agram is shown in Fig. 1. This diagram also makes clear why mean-field theory fails near the point where the two scales approach one 3another. As Tc1 approaches Tc2, the stiffness ρ vanishes and the propagator of V takes the soft form 
+
+⟨⟨V (q)V+(q)⟩⟩ ∼ (ρq 2 + ρ2q4 + τ )−1. (6) When ρ ≤ 0, thermal fluctuations diverge in the isotropic problem even in three dimensions, pushing the transition temperature to zero. Lattice anisotropy restores a finite transition temperature, but for weak anisotropy the fluc-tuation corrections remain substantial. To analyze this regime more systematically, we as-sume that the transition temperature lies well below the quasiparticle gap and treat ρ and ρ2 phenomenologically. Completing the square in Eq. (5), 
+
+τ
+
+2 (V+V) + g
+
+4 (V+V)2 = g
+
+4
+
+h
+
+(V+V) + τ /g 
+
+i2
+
+− τ 2/4g, (7) and substituting 
+
+Vσ = |VM F |zσ , X
+
+> σ
+
+z+ 
+
+> σ
+
+zσ = 1 , (8) where VM F = ( −τ /g )1/2, integrate out the massive am-plitude mode and obtain the nonlinear sigma model 
+
+F =
+
+Z
+
+d3x
+
+n ˜ρ
+
+2 (∇z+∇z) + ˜ρ2
+
+2 (∇2z+)( ∇2z)
+
+o
+
+,
+
+X
+
+> σ
+
+z+ 
+
+> σ
+
+zσ = 1 , (9) where (˜ ρ, ˜ρ2) = |VM F |2(ρ, ρ 2). This form makes the role of fluctuations explicit. Ex-actly at ρ = 0 there is no long-range order. For nega-tive ρ, the would-be divergence is cut off either by the lattice anisotropy C̸ = 0 or by quantum effects, since the integral R dω d 3q converges. This in turn opens up the possibility of a quantum critical point separating the commensurate and incommensurate phases. To obtain an analytic description of the disordered regime, we replace the local constraint in (9) by a global one and obtain the propagator 
+
+⟨⟨V (q)V+(q)⟩⟩ = [ ρ2(q2 − Q2)2 + m2]−1, (10) where m is determined self-consistently. Neglecting anisotropy, the propagator (10) provides a simple descrip-tion throughout the disordered phase, which remains re-sistive and therefore has finite conductivity. Imposing the self-consistency condition VV + = |VM F |2 then gives 
+
+T
+
+(2 π)3
+
+Z d3qρ2(q2 − Q2)2 + m2 = |VM F |2,
+
+8πρ 2|VM F |2 = 2T
+
+q
+
+2pQ4 + m2/ρ 2 − 2Q2
+
+, (11) 
+
+m2 = 4 ρ2 ˜T 2(Q2 + ˜T 2), ˜T = T / (8 πρ 2|VM F |2),
+
+This yields a finite correlation length throughout the en-tire disordered phase separating the commensurate and incommensurate ordered phases. Long-range order is recovered only once lattice anisotropy regularizes the problem. When C̸ = 0, the integral of the fluctuation propagator over q becomes con-vergent. For |C| ≪ B, anisotropy becomes the dominant cutoff when |C|ρQ 4 ≳ m2, i.e., when ˜T < (|C|Q2)1/2. (12) The extent of the fluctuation regime is therefore con-trolled by two quantities: the Fermi-surface anisotropy and the magnitude of the PDW wave vector. When the anisotropy is not too large, these two scales allow a broad disordered region of strong superconducting fluc-tuations to separate the commensurate and incommen-surate phases.  
+
+> IV. FLUCTUATION CONDUCTIVITY
+
+Once the fluctuating regime has been identified, the next question is how it manifests in transport. We there-fore estimate the fluctuation conductivity from the Feyn-man diagram in Fig. 2. This is the Aslamazov-Larkin contribution; the Maki-Thompson term is absent in the present problem. The retarded fluctuation propagator is 
+
+D(ω, q ) = ⟨⟨V (q)V+(q)⟩⟩ (R) =[ρ2(q2 − Q2)2 + m2 + i tanh( ω/ 2T )] −1. (13) Treating the fermion vertices B(ω, k ) as nonsingular and evaluating them at ω = 0, 
+
+Bα(ω = 0 , k ) ∼ ρF kα, (14) we arrive at the following expression for the conductivity: 
+
+σαβ AL = (15) 14 × e2
+
+2π
+
+Z d3k
+
+(2 π)3 Bα(k)Bβ (k) ×
+
+Z dω T sinh 2(ω/ 2T ) [ℑmD (ω, k )] 2,
+
+ℑmD = tanh( ω/ 2T )
+
+n
+
+ϵ(k)2 + tanh 2(ω/ 2T )
+
+o ,ϵ(k) = ρ2(k2 − Q2)2 + m2.
+
+The remaining frequency integral can be carried out analytically, yielding 
+
+σαβ AL = (16) 14 × e2
+
+2π
+
+Z d3k
+
+(2 π)3 Bα(k)Bβ (k) ×
+
+2
+
+ϵ3(k)
+
+h
+
+tan −1  ϵ−1(k) + ϵ(k)1 + ϵ2(k)
+
+i
+
+.
+
+Numerical evaluation of Eq. (16) shows that the resis-tivity is well approximated by R ∼ T a with a ≈ 3 over 4 
+
+> FIG. 2. The Aslamazov-Larkin diagram for the fluctuational conductivity. Solid red lines are electron Green’s functions, blue lines are Majorana Green’s functions, black circles are current vertices, and dotted black lines are fluctuational prop-agators.
+
+a broad range of Q, including Q = 0. In this sense, the same fluctuation regime that suppresses long-range order also leaves a clear transport signature. Although the mi-croscopic model is formulated in d = 3, it is worth noting that repeating the calculation in d = 2 gives m ∼ T for all Q, together with R ∼ T 2 at Q = 0 and R ∼ T 3 away from the quantum critical point.  
+
+> V. CONCLUSIONS
+
+We have shown that PDW order with non-Abelian symmetry can support unusually strong thermal fluctua-tions even in three spatial dimensions, where one ordinar-ily expects mean-field theory to work well. The central reason is the cooperation of two effects: the softening of the order-parameter propagator as the quadratic stiffness 
+
+ρ changes sign near the transition between uniform su-perconductivity and the PDW, and the enlarged SU(2) order-parameter manifold. In the fluctuation-dominated regime above the PDW transition, the system enters a resistive state in which transport is carried by bosonic bound states of electrons and Majorana fermions. The resulting low-temperature resistivity exhibits an approximate power-law depen-dence, while the breadth of the fluctuation regime is con-trolled by the PDW wave vector and the Fermi-surface anisotropy. Although our analysis is grounded in the specific CPT Kondo lattice model with a Yao-Lee spin liquid, the un-derlying mechanism is more general. In particular, the same combination of soft modes and strong fluctuations has a close analogue in quark-gluon plasma [5, 6], where condensation is suppressed by related physics. These ideas may be relevant to heavy-fermion systems such as UTe 2, where PDW order and fluctuation-driven phenomena have been discussed in the experimental and theoretical literature [13, 14]. More broadly, the electron-Majorana spinor order parameter suggests how supercon-ductivity emerging from fractionalized degrees of freedom may broaden the landscape of possible broken-symmetry states, with possible extensions to topological phases dis-cussed in related work [15, 16]. 
+
+> ACKNOWLEDGMENTS
+
+We would like to thank Subir Sachdev for fruitful discussions. This work was supported by the Office of Basic Energy Sciences, Materials Sciences and Engineer-ing Division, U.S. Department of Energy (DOE) un-der Contracts No. DE-SC0012704 (AMT) and DE-FG02-99ER45790 (PC). AP was supported by the U.S. Depart-ment of Energy, Office of Science, Basic Energy Sciences, Materials Sciences and Engineering Division.   
+
+> Appendix A: Microscopic model and pairing susceptibility
+> FIG. 3. (a) The hyperoctagon lattice, which has a body-centered cubic (BCC) structure formed by interpenetrating square and octagonal spirals, with a four-atom unit cell [17]. The frustrated orbital interactions are denoted by color-coded red, blue, and green bonds. (b) In the CPT model each site is trivalent, hosting conduction electrons (linked by golden bonds), localized spins, and localized orbitals (linked by color-coded orbital interactions). The frustrated orbital interac-tions induce a Majorana fractionalization of the spins, which are then Kondo-coupled to the conduction electrons on the same lattice.
+
+We now summarize the microscopic ingredients un-derlying the effective theory used in the main text. The CPT model [8] is defined on the hyperoctagon lattice (Fig. 3) and Kondo-couples conduction electrons to the spins of a Yao-Lee spin liquid. Each site possesses three degrees of freedom — conduction electrons, local-ized spins, and localized orbitals — so the Hamiltonian naturally decomposes into three components, HCP T =
+
+Hc + HY L + HK , where Hc describes nearest-neighbor hopping of the conduction electrons, HY L captures the 5Yao-Lee spin-spin interaction, and HK couples the con-duction sea to the Yao-Lee spin liquid through the Kondo interaction: 
+
+Hc = − t X
+
+> ⟨i,j ⟩
+
+(c† 
+
+> iσ
+
+cjσ + H .c.) − μ X
+
+> i
+
+c† 
+
+> iσ
+
+ciσ ,HY L =K/ 2 X
+
+> ⟨i,j ⟩
+
+λαij  
+
+> i
+
+λαij  
+
+> j
+
+(⃗Si ·⃗ Sj ), (A1) 
+
+HK =J X
+
+> i
+
+(c†
+
+> i
+
+⃗σc i) ·⃗ Si.
+
+The Yao-Lee term is a nearest-neighbor Ising interaction in the orbital components λαij  
+
+> j
+
+(αij = x, y, z ), decorated by a Heisenberg exchange between the spins ⃗ Sj . The orbital frustration in HY L induces large quantum fluc-tuations, leading to a fractionalization of the spins and orbitals into Majorana fermions, ⃗λj = −i⃗b j ×⃗ bj ,⃗ Sj = − i
+
+2⃗χ j ×⃗χ j , (A2) where b and χ are Majorana fermions. At low energies, the orbital degrees of freedom decouple as static Z2 gauge fields that freeze into a flux-free configuration at low tem-peratures. The low-energy physics of the Yao-Lee spin liquid is then described by a single-band Hamiltonian 
+
+HY L = X
+
+> k∈
+
+
+
+ϵχ(k)⃗χ † 
+
+> k
+
+·⃗χ k, (A3) where the momentum sum runs over the cubic Majorana Brillouin zone  and the dispersion is ϵχ(k) = K˜ϵ(k), with ˜ϵ(k) = 12sxsy sz
+
+
+
+(c2 
+
+> x
+
++ c2 
+
+> y
+
++ c2 
+
+> z
+
+) − 34
+
+
+
+, (A4) and ci = cos( ki/2), si = sin( ki/2). The low-energy physics of the conduction band [8] is likewise described by a single band ϵc(k) = −t˜ϵ(k), with ˜ ϵ(k) as in Eq. (A4). Rewriting the conduction Hamiltonian in terms of the Balian-Werthamer spinor 
+
+ψk = ( ck, −iσ 2c†
+
+> −k
+
+)T , we obtain 
+
+Hc = X
+
+> k∈
+
+
+
+ψ†
+
+> k
+
+(ϵc(k)I − μτ 3)ψk. (A5) Once the low-energy degrees of freedom have been iden-tified, the Majorana fractionalization of the spins allows the Kondo interaction to be rewritten as 
+
+HK = − J
+
+2
+
+X
+
+> l
+
+c† 
+
+> j
+
+(⃗χ ·⃗σ) 2cj . (A6) This interaction is decoupled via a Hubbard-Stratonovich transformation. Introducing the self-consistent spinor field Vj , with components Vj = −J⟨⃗χ j ·⃗σ c j ⟩, gives the mean-field interaction: 
+
+Hint [j] = 12
+
+
+
+ψ† 
+
+> j
+
+(⃗σ ·⃗χ j )Vj + V† 
+
+> j
+
+(⃗σ ·⃗χ j )ψj
+
+
+
++ V† 
+
+> j
+
+Vj
+
+J ,
+
+(A7) 
+
+FIG. 4. Impact of electron doping on the conduction sea within the hyperoctagon lattice. (a) The conduction sea con-sists of electron (blue) and hole (red) Fermi surfaces, which ex-pand and contract, respectively, as electron doping shifts the system away from half-filling. The Majorana Fermi surface (black) is unaffected by doping. (b) Doping stabilizes finite-momentum configurations of the electron-Majorana spinor or-der by shifting the electron and hole Fermi surfaces by ±⃗q m
+
+to nest with the Majorana Fermi surface. 
+
+where ψ⃗k = ( c⃗k, −iσ 2c†−⃗ k)T and Vj = ( Vj , −iσ 2V ∗ 
+
+> j
+
+)T .In previous work [8], we showed that at half-filling the model exhibits a logarithmic singularity in the electron-Majorana pair susceptibility, leading to odd-frequency triplet superconductivity. 
+
+Pair-density-wave instability. With this structure in hand, the mechanism for PDW formation follows natu-rally [11]. The chemical potential plays a role analogous to a Zeeman field in a conventional FFLO problem: it splits the electron and hole Fermi surfaces while leaving the Majorana Fermi surface unchanged [Fig. 4(a)]. As a result, the fractionalized spinor order parameter V⃗q ac-quires a finite ordering wave vector [Fig. 4(b)]. The same physics is encoded in the static electron-Majorana pairing susceptibility, which is maximized at a finite momentum ⃗q (Fig. 5): 
+
+∂2F∂V 2 = χv (⃗q) = (A8) 
+
+− T
+
+4
+
+X
+
+> iω n,k ∈
+
+
+
+Tr 
+
+h
+
+Gψ (⃗k +⃗q, iω n)σaZG χa (⃗k, iω n)Z†σai
+
+,
+
+expressed in terms of the conduction and Majorana Green’s functions Gψ (⃗k +⃗q, iω n) and Gχ(⃗k, iω n), with 
+
+Z = 2V 
+
+> V
+
+denoting the orientation of the spinor order. Af-ter straightforward simplification, the susceptibility for the hyperoctagon lattice can be written in closed form: 
+
+χv (⃗q) = 3ρ(0) 
+
+K + t log 
+
+ (K + t)Dμ
+
+
+
+− 3ρ(0) 4( K + t)
+
+Z dΩ4π
+
+"
+
+log 1 −⃗v F (θ, ϕ ) ·⃗qμ
+
++ log Kt +⃗v F (θ, ϕ ) ·⃗qμ
+
+#
+
+.
+
+(A9) Here ρ(0) is the density of states at the Fermi surface 6and ⃗v F =⃗ ∇kϵc(k) is the Fermi velocity of the conduc-tion sea, which depends on the orientation ( θ, ϕ ) for the hyperoctagon lattice.                         
+
+> FIG. 5. Finite-momentum susceptibility χv(⃗q) for electron-Majorana spinor order along the qz= 0 plane. The max-imum occurs at ⃗qi=qm(±1,0,0) and qm(0 ,±1,0) with
+> qm= 0 .7738 πμ , showing four-fold degeneracy. Cubic sym-metry yields six equivalent maxima along ±ˆx,±ˆy,±ˆz.
+
+Equation (A9) makes the origin of the PDW instabil-ity explicit. The logarithmic divergence of the electron-Majorana susceptibility is cut off by the chemical poten-tial, which splits the nesting between the conduction sea and the Majorana Fermi surfaces. The result is a set of susceptibility maxima at finite momenta ⃗q, shown in Fig. 5. To locate these maxima more explicitly, we express the Fermi velocity of the conduction sea in angular coor-dinates, ⃗v F = 12sxsy sz
+
+c3
+
+> x
+
+sx
+
+, c3
+
+> y
+
+sy
+
+, c3
+
+> z
+
+sz
+
+!
+
+, (A10) and parameterize the ci on the Fermi surface in spherical coordinates, (cx, c y , c z ) = ( r cos ϕ sin θ, r sin ϕ sin θ, r cos θ), (A11) in terms of angular variables θ and ϕ and radius r =√3/2. Carrying out the angular integral in Eq. (A9) numerically, we find that the susceptibility is maximized (Fig. 5) at ⃗q i ∈ { qm(±1, 0, 0) , q m(0 , ±1, 0) , q m(0 , 0, ±1) }, (A12) along the principal axes, where the wavenumber at the susceptibility maximum is qm = 0 .77 πμ , proportional to the chemical potential. These results are consistent with the general symmetry considerations of Eq. (4): the cubic symmetry of the model yields six degenerate wave vec-tors along which the spinor order prefers to modulate. Such degeneracy is often lifted, as in FFLO states [4], where attractive interactions between V⃗q and V−⃗q favor amplitude modulation of the form V⃗q + V−⃗q , or other superpositions depending on the level of doping. 2 4 6 8      
+
+> Tvq 41234
+> -chi q
+> FIG. 6. Function A(μ/ 4T, vq/ 4T) for μ/ 4T= 0 (light blue), 0.5 (yellow), 1 (green), 1 .5 (rose), 3 (purple).
+> Appendix B: Microscopic stiffness and phase diagram
+
+Having established the finite-momentum instability microscopically, we now extract the stiffness parameters that control the effective theory. The subsequent calcu-lations are performed for the CPT model described in Appendix A. As noted in the Introduction, the chemi-cal potential plays a role analogous to the Zeeman field in the FFLO scenario. It has two effects: it lowers the transition temperature Tc, and it reduces the quadratic coefficient ρ(T, μ ) (stiffness) in the pairing susceptibility, eventually changing its sign. Taking Eq. (A8) and, to simplify the calculations, considering the case of equal dispersions ( t = K), the pairing susceptibility in the normal state is 
+
+χ(q) = 34
+
+Z d3k
+
+(2 π)3
+
+( tanh 
+
+h ϵ(k+q/ 2)+ μ
+
+> 2T
+
+i
+
++ tanh 
+
+h ϵ(k−q/ 2) 2T
+
+i
+
+ϵ(k + q/ 2) + ϵ(k − q/ 2) + μ
+
++ ( μ → − μ)
+
+)
+
+.
+
+(B1) Replacing ϵ(k + q/ 2) = T x − μ/ 2 + vq /2, we obtain 
+
+χ(q) = (B2) 3ρT 
+
+2
+
+Z dΩ4π
+
+Z D/ 2T
+
+> −D/ 2T
+
+dx x
+
+sinh 2 x
+
+cosh 2 x + sinh 2(μ + vq )/4T .
+
+The function A(μ/ 4T, qv/ 4T ) ≡ 1 − χ(q; T, μ )/χ (0 , T, μ )is plotted in Fig. 6 for representative values of μ/ 4T .Expanding Eq. (B2) at small q gives 
+
+A(μ, q ) ≈ (B3) 
+
+⟨(⃗v⃗ q) 2⟩
+
+T 2 f (μ/ 4T ) + ⟨(⃗v⃗ q) 4⟩
+
+(4 T )4 g(μ/ 4T ),f (y) = 116 
+
+Z ∞
+
+> 0
+
+dx x
+
+sinh(2 x)(cosh 2 x + sinh 2 y)2 ×
+
+h
+
+cosh(2 y) − sinh 2(2 y)cosh 2 x + sinh 2 y
+
+i
+
+.7Due to cubic symmetry, the leading correction depends on q2 = q2 
+
+> x
+
++ q2 
+
+> y
+
++ q2 
+
+> z
+
+. Neglecting cubic anisotropy ( |v| =const), the functions f (y) and g(y) are shown in Fig. 7. 0.5 1.0 1.5 2.0 mu T       
+
+> 4
+> -0.02 0.02 0.04 0.06 0.08 0.10
+> f1.0 1.5 2.0 2.5 3.0 3.5 4.0 mu T
+> 4
+> -0.8
+> -0.6
+> -0.4
+> -0.2 0.2
+> g
+
+FIG. 7. (a) Function f (μ/ 4T ) and (b) function g(μ/ 4T ), en-tering Eq. (B3). 
+
+These microscopic results feed directly into the phase diagram discussed in the main text. In particular, they identify two characteristic temperatures: one, Tc1,at which τ (Tc1, μ ) = 0, and another, Tc2, at which 
+
+f (Tc2, μ ) = 0. If Tc2 > T c1, the mean-field transition proceeds directly to the IC phase (right-hand side of Fig. 1). Otherwise, the system first enters the commensu-rate phase, and the pairing susceptibility must be recal-culated to determine whether a further transition occurs at lower temperature. 0.0 0.5 1.5 2.0 mu 4 T
+
+> 0.2 0.4 0.6 0.8 1.0 T_c
+
+FIG. 8. Mean-field Tc/T c0 vs. μ/ 4T , Eq. (B4), for K = t. The vertical line at μ/ 4T = 1 marks where the order-parameter stiffness vanishes. 
+
+For K = t, the calculations show that the quadratic stiffness coefficient vanishes ( f = 0) at μ ≈ 4T . At the same time, 2τ = (B4) ln( T /T c0) + 
+
+Z ∞
+
+> 0
+
+dx tanh xx
+
+sinh 2(μ/ 4T )cosh 2 x + sinh 2(μ/ 4T ) .
+
+At μ = 4 T we have τ ≈ ln( T /T c0) + 0 .617, mean-ing that the mean-field transition temperature drops by approximately a factor of 1 .85. However, as the system approaches the curve T = μ/ 4, increasing fluctuations drive the transition temperature further down, as illus-trated in Fig. 8. 
+
+[1] D. F. Agterberg, J. S. Davis, S. D. Edkins, E. Fradkin, D. J. Van Harlingen, S. A. Kivelson, P. A. Lee, L. Radz-ihovsky, J. M. Tranquada, and Y. Wang, Annual Review of Condensed Matter Physics 11 , 231 (2020). [2] J. Bardeen, L. N. Cooper, and J. R. Schrieffer, Phys. Rev. 
+
+106 , 162 (1957). [3] P. Fulde and R. A. Ferrell, Physical Review 135 , A550 (1964). [4] A. Larkin and Y. Ovchinnikov, Zh. Eksp. Teor. Fiz. 47 ,1136 (1964). [5] T. Kojo, R. D. Pisarski, and A. M. Tsvelik, Physical Review D 82 , 074015 (2010). [6] R. D. Pisarski, V. Skokov, and A. M. Tsvelik, Physical Review D 99 , 074025 (2019). [7] S. Sur, Y. Xu, S. Li, S. Gong, and A. H. Nevidomskyy, Physical Review Letters 132 , 074025 (2024). [8] P. Coleman, A. Panigrahi, and A. Tsvelik, Physical Re-view Letters 129 , 177601 (2022). [9] A. M. Tsvelik and P. Coleman, Physical Review B 106 ,125144 (2022). [10] H. Yao and D.-H. Lee, Phys. Rev. Lett. 107 , 087205 (2011). [11] A. Panigrahi, A. Tsvelik, and P. Coleman, Physical Re-view Letters 135 , 046504 (2025). [12] A. Kuklov, P. Coleman, and A. M. Tsvelik, Physical Re-view Letters 134 , 236001 (2025). [13] Q. Gu, J. P. Carroll, S. Wang, S. Ran, C. Broyles, H. Sid-diquee, N. P. Butch, S. R. Saha, J. Paglione, J. C. S. Davis, and X. Liu, Nature 618 , 921 (2023). [14] A. Aishwarya, J. May-Mann, A. Almoalem, S. Ran, S. R. Saha, J. Paglione, N. P. Butch, E. Fradkin, and V. Mad-havan, Nature Physics 20 , 964 (2024). 8
+
+[15] Z. Zhuang and P. Coleman, Topological superconduc-tivity in a spin-orbit coupled Kondo lattice (2024), arXiv:2410.02171 [cond-mat]. [16] A. Panigrahi, A. Tsvelik, and P. Coleman, Phys. Rev. B 
+
+110 , 104520 (2024). [17] M. Hermanns and S. Trebst, Phys. Rev. B 89 , 235102 (2014).
