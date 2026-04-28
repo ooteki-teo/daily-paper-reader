@@ -1,0 +1,1638 @@
+Title: Light-Induced Topological Phase Transitions and Anomalous Thermal Transport in d-Wave Altermagnets
+
+URL Source: https://arxiv.org/pdf/2604.20164v2
+
+Published Time: Mon, 27 Apr 2026 00:44:19 GMT
+
+Number of Pages: 16
+
+Markdown Content:
+## Light-Induced Topological Phase Transitions and Anomalous Thermal Transport in d-Wave Altermagnets 
+
+Ayesha Maryam, 1 Muzamil Shah, 1, 2, ∗ Kashif Sabeeh, 1, † and Reza Asgari 3, 4 
+
+> 1
+
+Department of Physics, Quaid i Azam University, Islamabad, Pakistan 
+
+> 2
+
+Research Center of Astrophysics and Cosmology, Khazar University, Baku AZ1096, 41 Mehseti Street, Azerbaijan 
+
+> 3
+
+Department of Physics, Zhejiang Normal University, Jinhua 321004, P. R. China 
+
+> 4
+
+School of Physics, Institute for Research in Fundamental Sciences (IPM), Tehran 19395-5531, Iran 
+
+(Dated: April 27, 2026) We study intrinsic thermal transport and Floquet-engineered topology in a two-dimensional d-wave altermagnetic topological insulator powered by linearly polarized light. We analyze the anoma-lous Hall, Nernst, and thermal Hall conductivities, as well as their spin-resolved equivalents, and develop closed-form formulas for the Berry curvature using an analytically calculated high-frequency effective Hamiltonian. We demonstrate that linearly polarized light, in contrast to conventional an-tiferromagnets, breaks the symmetry connecting spin sectors in altermagnets, allowing a series of spin-selective topological phase transitions from a quantum spin Hall state to a spin-polarized Chern insulator and finally to a trivial phase. The Nernst response shows substantial thermal activation and significant sensitivity to the gap size in the Chern domain, but both the electrical and thermal Hall responses become quantized and meet the anomalous Wiedemann–Franz law. Every anomalous transport coefficient exhibits a distinctive d-wave dependence on the polarization angle, reversing sign under orthogonal rotation and vanishing at symmetry-restoring directions. Our findings show a path to all-optical regulation of topological and caloritronic responses beyond traditional magnetic systems and establish thermal transport as a sensitive probe of altermagnetic order. 
+
+I. INTRODUCTION 
+
+Altermagnetism (AM) has recently emerged as a dis-tinct magnetic phase characterized by zero net magneti-zation coexisting with strongly anisotropic, momentum-dependent spin splitting [1–5], and has been identified in a growing number of materials [6–10]. Unlike con-ventional antiferromagnets (AFMs), which preserve com-bined parity–time (PT ) symmetry and exhibit spin-degenerate bands, altermagnets break both time-reversal (T ) and PT symmetries while preserving their combina-tion with specific crystal rotations [11]. This distinctive symmetry structure [12] enables a wide range of spin-tronic and topological phenomena, including giant mag-netoresistance [13], anomalous Hall effects [14], topologi-cal insulating phases [15–17], and unconventional super-conducting proximity effects [18]. Light is a particularly powerful external stimulus for controlling quantum materials, as it couples directly to electronic degrees of freedom and can dynamically mod-ify band structure and symmetry. Beyond enabling con-trol of intrinsic electronic and magnetic properties, time-periodic driving can induce nonequilibrium phases that have no static counterparts. Within the framework of Floquet theory [19–21], such periodic driving provides a versatile route to engineer effective Hamiltonians and realize dynamically generated topological states [22, 23]. In conventional nonmagnetic and antiferromagnetic systems, Floquet engineering has enabled a wide range   
+
+> ∗muzamil@qau.edu.pk
+> †kashifsabeeh@hotmail.com
+
+of phenomena, including light-induced Hall effects [24, 25], Floquet topological insulators [15, 19, 26], light-induced Weyl semimetals [27], and Floquet time crys-tals [2]. It has also opened a route to ultrafast control of spin and magnetic textures on picosecond and sub-picosecond timescales, forming the basis of ultrafast spin-tronics [3, 21]. In topological systems, light-driven Flo-quet states have enabled novel phenomena such as Majo-rana modes, light-controlled edge transport, and dynam-ical probes of topological phase transitions. Recently, the effects of light on unconventional mag-netic systems, particularly altermagnets, have begun to attract significant attention [11, 28, 29]. However, exist-ing studies have largely focused on charge transport and high-frequency regimes. While Berry-curvature-driven thermal transport is well established in topological ma-terials [30], its Floquet engineering in altermagnetic sys-tems remains essentially unexplored. This is especially important because symmetry considerations allow lin-early polarized light (LPL) to induce Hall responses in altermagnets, in contrast to conventional antiferromag-nets. In nonmagnetic and conventional antiferromagnetic systems, LPL generally cannot generate a Hall response because PT symmetry is preserved. Altermagnets cir-cumvent this restriction: their intrinsically broken PT 
+
+symmetry allows LPL, by breaking the spin-rotation symmetry C4z T that relates the two spin sublattices, to induce a finite anomalous Hall effect [11]. Recent works have demonstrated LPL-induced anomalous Hall responses and topological phase transitions in alter-magnetic topological insulators [11], as well as circu-larly polarized light–induced quantum anomalous Hall 
+
+> arXiv:2604.20164v2 [cond-mat.mes-hall] 24 Apr 2026
+
+2phases [31], light-induced odd-parity magnetism [28, 31], and higher-order spin–orbit coupling effects [29]. Despite this progress, a comprehensive understanding of thermal transport under LPL irradiation in altermag-netics remains lacking. Thermal transport coefficients; namely the anomalous Nernst conductivity (ANC) and anomalous thermal Hall conductivity (ATHC), probe the Berry curvature through distinct thermal weightings that differ fundamentally from the anomalous Hall conductiv-ity (AHC). As a result, they provide complementary and often more sensitive insights into the underlying topol-ogy and magnetic order. The ANC, being thermally ac-tivated, serves as a sensitive probe of band topology at fi-nite temperature, while the ATHC, together with its rela-tion to σxy via the Wiedemann–Franz (WF) law, offers a direct test of topological quantization. Furthermore, the spin-resolved counterparts; the spin Nernst and spin ther-mal Hall conductivities, enable access to spin caloritronic effects of direct relevance for device applications [32]. In this work, we present a comprehensive theoretical study of thermal transport in a d-wave altermagnetic un-der LPL irradiation. Starting from an analytically de-rived Floquet effective Hamiltonian in the high-frequency limit, we obtain explicit expressions for the Berry curva-ture in each spin sector and compute six intrinsic trans-port coefficients: the AHC σxy , ANC αxy , ATHC κ(0)  
+
+> xy
+
+,as well as their spin-resolved counterparts σsxy , αsxy , and 
+
+κ(0) ,s xy . We analyze their dependence on topological phase, polarization angle, and temperature, and establish their interrelations via the Mott and Wiedemann–Franz laws. Finally, we contrast the altermagnetic response with that of conventional antiferromagnets, identifying clear exper-imental signatures accessible through thermal Hall and Nernst measurements.  
+
+> II. MODEL AND FLOQUET EFFECTIVE HAMILTONIAN
+
+We employ the four-band two-dimensional out-of-plane 
+
+d-wave altermagnetic model on a square lattice [11, 16, 33] in which the orbitals are pz↑, 1√2 (dxz ↑ + id yz ↑), pz↓,and 1√2 (dxz ↓ − id yz ↓). The low-energy Hamiltonian has the block-diagonal form 
+
+H(k) = 
+
+H↑(k) 00 H↓(k)
+
+
+
+, (1) where each 2 × 2 spin block is written in terms of a d-vector as Hσ (k) = dσ (k) · τ , with τ = ( τx, τ y , τ z ) the Pauli matrices acting on the orbital subspace. The ex-plicit d-vector components are 
+
+d↑ 
+
+> x
+
+= −v sin kx, d↑ 
+
+> y
+
+= −vt a sin ky ,d↑ 
+
+> z
+
+= m + b(cos kx + t2 
+
+> a
+
+cos ky ), (2) and H↓(kx, k y ) = H↑(ky , k x), i.e., the spin-down block is obtained by the exchange kx ↔ ky . Here m is the on-site potential, v the hopping amplitude, b the inversion-breaking hopping, and ta the asymmetry parameter. The two spin channels are related by C4z T or mirror symme-try Mxy . The lattice constant is assumed to be unity. Setting ta = 1 restores PT symmetry, reducing the sys-tem to a conventional AFM; ta̸ = 1 breaks PT and yields the d-wave AM. The equilibrium system is a QSH in-sulator when |m| < |b|(1 + t2
+
+> a
+
+) and topologically trivial otherwise [15]. We drive the system with LPL whose vector potential is given as 
+
+A(t) = A0[cos θ cos( ωt ), sin θ cos( ωt )] , (3) where A0 is the amplitude (it is dimensionless in our units), θ the polarization angle relative to the x-axis, and ω the frequency. The time-dependent Hamiltonian is obtained via the Peierls substitution k → k + eA(t)/ℏ.In the high frequency limit and off-resonant regime, the leading order commutator correction vanishes because 
+
+A(t) = A(−t + τ ) for a fractional time translation τ , and the effective Hamiltonian reduces to the time averaged part [22] in Floquet high-frequency expansion regime. In the off-resonant limit, the heating rate is significantly reduced, allowing the system to reach a long-lived Flo-quet prethermal [34, 35] state where the effective Hamil-tonian description remains valid or the situation where a finite pulse duration in order of ps or ns is used. Finite temperature primarily broadens the Fermi distribution, however, does not destroy the topological band structure provided kB T ≪ ℏω. We assume that higher-order Flo-quet corrections do not qualitatively modify the topolog-ical phases in the studied system. Applying the Jacobi Anger expansion gives renormalized d-vectors: 
+
+d↑ 
+
+> x, eff
+
+= −vj 1 sin kx, d↑ 
+
+> y, eff
+
+= −vt aj2 sin ky ,d↑ 
+
+> z, eff
+
+= m + b[j1 cos kx + j2t2 
+
+> a
+
+cos ky ], (4) 
+
+d↓ 
+
+> x, eff
+
+= −vj 2 sin ky , d↓ 
+
+> y, eff
+
+= −vt aj1 sin kx,d↓ 
+
+> z, eff
+
+= m + b[j2 cos ky + j1t2 
+
+> a
+
+cos kx], (5) where 
+
+j1 = J0(A0 cos θ), j2 = J0(A0 sin θ), (6) and J0 is the zeroth-order Bessel function. The key physical content of Eqs. (4)–(6) is transparent: when 
+
+θ̸ = ±π/ 4, we have j1̸ = j2, which means the spin-up and spin-down effective Hamiltonians are no longer re-lated by any symmetry operation, breaking C4z T and 
+
+Mxy . In contrast, for the conventional AFM ( ta = 1), the PT symmetry is preserved for any θ, locking j1 = j2
+
+in its effect on the combined system and hinders any Hall response. The eigenvalues of Hσ 
+
+> eff
+
+are εσ
+
+> ±
+
+(k) = ±| dσ 
+
+> eff
+
+(k)|. Atopological phase transition occurs whenever a spin-resolved gap ∆ σ = min k[2 |dσ 
+
+> eff
+
+(k)|] closes. Since j1̸ = j2
+
+under LPL in the AM, the two gaps ∆ ↑ and ∆ ↓ evolve independently with A0, enabling sequential closings that are forbidden in the AFM. 3
+
+III. BERRY CURVATURE 
+
+The spin-up and spin- down components in the Eq. (1) are decoupled, their Berry connections and Chern num-bers can be evaluated independently. For the lower band εσ 
+
+> −
+
+= −| dσ | of each spin block, the normalized eigenstate in terms of the spherical coordinates ˆdσ =(sin Θ cos Φ , sin Θ sin Φ , cos Θ) of the effective d-vector is 
+
+|uσ
+
+> −
+
+(k)⟩ =
+
+− sin(Θ /2) e−iΦ
+
+cos(Θ /2) 
+
+
+
+. (7) Computing the Berry connection Aσμ = i⟨uσ
+
+> −
+
+|∂kμ |uσ
+
+> −
+
+⟩
+
+from Eq. (7) gives 
+
+Aσμ(k) = sin 2
+
+ Θ2
+
+
+
+∂kμ Φ. (8) Taking the antisymmetric curl of Eq. (8) and converting to the solid angle form, the z-component of the Berry curvature for the lower band of spin σ can be expressed as Ωz,σ  
+
+> −
+
+(k) = 12 ˆdσ ·
+
+
+
+∂kx
+
+ˆdσ × ∂ky
+
+ˆdσ 
+
+= dσ · (∂kx dσ × ∂ky dσ )2|dσ |3 .
+
+(9) Evaluating the triple product explicitly with the LPL renormalized d-vectors (4) and (5), we obtain the closed form expression for the spin-up Berry curvature as: Ωz, ↑− (k) = bv 2taj21 j2 sin 2 kx cos ky + bv 2t3
+
+> a
+
+j1j22 sin 2 ky cos kx
+
+2|d↑ 
+
+> eff
+
+|3 + d↑ 
+
+> z, eff
+
+v2taj1j2 cos kx cos ky
+
+2|d↑ 
+
+> eff
+
+|3 , (10) and for spin-down: Ωz, ↓− (k) = −bv 2taj1j22 sin 2 ky cos kx − bv 2t3
+
+> a
+
+j21 j2 sin 2 kx cos ky
+
+2|d↓ 
+
+> eff
+
+|3 − d↓ 
+
+> z, eff
+
+v2taj1j2 cos kx cos ky
+
+2|d↓ 
+
+> eff
+
+|3 . (11) Equations (10) and (11) encode several important sym-metry properties. First, when j1 = j2 (i.e., A0 = 0 or θ =
+
+±π/ 4), we can verify directly that Ω z, ↑− (k) = −Ωz, ↓− (k), so the total Berry curvature Ω z, ↑− + Ω z, ↓− = 0 at every 
+
+k, consistent with the preserved C4z T symmetry. Sec-ond, under PT symmetry (AFM, ta = 1, any j1, j 2): PT 
+
+maps Ω zn(k) → − Ωzn(k), forcing Ω zn(k) = 0 for all k,which prevents any Hall response. Third, the symme-try σxy (π/ 2 − θ) = −σxy (θ) is encoded in Eqs. (10)–(11) through the exchange j1 ↔ j2 under θ → π/ 2 − θ.
+
+IV. THERMAL TRANSPORT 
+
+Having calculated the Berry phase, we can calculate some thermal transport quantities like anomalous Hall conductivity, Nernst conductivity and thermal Hall con-ductivity. 
+
+A. Anomalous Hall conductivity 
+
+The low-energy and effective Hamiltonian is block di-agonal in spin space thus the spin Sz is a good quantum number, the valence bands split into spin-up and spin-down components. Therefore, we can define the spin current in the system. Within the semiclassical Boltz-mann framework, the anomalous (intrinsic) contribution to the transverse conductivity is [36] 
+
+σxy = e2
+
+ℏ
+
+X
+
+> σ
+
+Z d2k
+
+(2 π)2 Ωz,σ  
+
+> −
+
+(k) f (εσ
+
+> −
+
+(k) − μ), (12) where f (ε) = ( eε/k BT + 1) −1 is the Fermi–Dirac distri-bution and μ is the chemical potential. At T = 0 in a gapped insulating phase, this reduces to σxy = ( e2/h ) C
+
+where C = C↑ + C↓ is the total Chern number [37]. 
+
+B. Anomalous Nernst conductivity 
+
+The intrinsic ANC, relating the transverse electric current to a longitudinal temperature gradient via 
+
+Jy = αxy (−∂xT ), is obtained from the Berry curvature weighted by the entropy kernel. Using integration by parts and the identity R ∞ 
+
+> ε
+
+f (ε′ − μ)dε ′ = kBT ln[1 + 
+
+e(μ−ε)/k BT ], we arrive at the exact result [30, 38]: 
+
+αxy = ek B
+
+ℏ
+
+X
+
+> σ
+
+Z d2k
+
+(2 π)2 Ωz,σ  
+
+> −
+
+(k) ln 
+
+h
+
+1 + e(μ−εσ 
+
+> −(k)) /k BT
+
+i
+
+.
+
+(13) Equation (13) has the important property that αxy → 0as T → 0 in any gapped insulating phase, because the logarithm becomes either ( μ − εσ
+
+> −
+
+)/k BT → +∞ (filled bands, exponentially cut off by the gap) or approaches zero (empty bands). Consequently, αxy is entirely ther-mally activated. 4
+
+C. Anomalous thermal Hall conductivity 
+
+The ATHC, defined by JQy = −κ(0)  
+
+> xy
+
+∂xT , is given by the 
+
+c2 function formula derived via Luttinger’s gravitational potential approach [39, 40]: 
+
+κ(0)  
+
+> xy
+
+= − k2BT
+
+ℏ
+
+X
+
+> σ
+
+Z d2k
+
+(2 π)2 Ωz,σ  
+
+> −
+
+(k) c2
+
+ f (εσ
+
+> −
+
+(k) − μ) ,
+
+(14) where the function c2 is defined as 
+
+c2(f ) = 
+
+Z f
+
+> 0
+
+
+
+ln 1 − tt
+
+2
+
+dt, c2(0) = 0 , c2(1) = π2
+
+3 .
+
+(15) The value c2(1) = π2/3 can be established precisely us-ing the Dirichlet eta function: c2(1) = 2 R ∞ 
+
+> 0
+
+u2eu/(eu +1) 2 du = 4 η(2) = π2/3. In the low-temperature limit with the chemical potential in the gap, f → 1 for all occupied states and c2(f ) → π2/3, gives 
+
+κ(0) 
+
+> xy
+
+T T →0
+
+= − π2k2B
+
+3ℏ · C
+
+2π = − π2k2B
+
+3h C. (16) 
+
+D. Wiedemann–Franz law for anomalous transport 
+
+Comparing Eq. (16) with σxy = e2C/h at T = 0, we obtain the anomalous Wiedemann-Franz law: [41] 
+
+κ(0) 
+
+> xy
+
+σxy 
+
+= − π2k2B
+
+3e2 T ≡ − L0T, (17) where L0 = π2k2B/3e2 ≈ 2.44 × 10 −8 W Ω K −2 is the Lorenz number. This relation holds exactly in any topo-logical phase at T → 0 and serves as an unambiguous experimental test of the Berry phase origin of the ther-mal Hall response. 
+
+E. Mott formula for the Nernst conductivity 
+
+At low temperature kBT ≪ μ, the Sommerfeld expan-sion gives [41] 
+
+αxy ≈ − π2k2BT
+
+3e∂σ xy (ε)
+
+∂ε ε=μ
+
+, (18) the anomalous analogue of the Mott formula. Equa-tion (18) shows that αxy is proportional to the energy derivative of the AHC, making it sensitive to the sharp-ness of Berry curvature features near the Fermi level. 
+
+F. Spin-resolved transport coefficients 
+
+Since the AM effective Hamiltonian is block diagonal in spin, we define spin resolved versions of all three coef-ficients. The spin Hall conductivity 
+
+σsxy = e
+
+2
+
+Z d2k
+
+(2 π)2
+
+h
+
+Ωz, ↑− f ↑− − Ωz, ↓− f ↓−
+
+i
+
+, (19) the spin Nernst conductivity 
+
+αsxy = ℏkB
+
+2
+
+Z d2k
+
+(2 π)2
+
+h
+
+Ωz, ↑− ln 
+
+
+
+1 + e(μ−ε↑−)/k BT 
+
+−Ωz, ↓− ln 
+
+
+
+1 + e(μ−ε↓−)/k BT i 
+
+,
+
+(20) and the spin thermal Hall conductivity 
+
+κ(0) ,s xy = − ℏk2BT
+
+2e
+
+Z d2k
+
+(2 π)2
+
+h
+
+Ωz, ↑− c2(f ↑−) − Ωz, ↓− c2(f ↓−)
+
+i
+
+.
+
+(21) In the QSH phase where Ω z, ↑− = −Ωz, ↓− and ε↑− = ε↓−,the total σxy = αxy = κ(0)  
+
+> xy
+
+= 0 but both σsxy and κ(0) ,s xy 
+
+are nonzero, providing a route to pure spin caloritronic effects. 
+
+G. Symmetry of transport coefficients under θ
+
+The polarization angle dependence of all three anoma-lous coefficients follows from the symmetry j1(−θ) = 
+
+j1(θ) and j2(−θ) = j2(θ) (even in θ) combined with the exchange symmetry j1 ↔ j2 under θ → π/ 2 − θ. We can show that 
+
+X(π/ 2 − θ) = −X(θ), X ∈ { σxy , α xy , κ (0)  
+
+> xy
+
+}, (22) which requires X(π/ 4) = 0, i.e., all anomalous trans-port coefficients vanish at the diagonal polarization angle where Mxy symmetry is preserved. Additionally, |X| is maximized when θ = 0 or θ = π/ 2 (LPL along a crys-tal axis), and all three coefficients share the same d-wave nodal pattern in the ( A0, θ ) plane. 
+
+V. RESULTS AND DISCUSSION 
+
+We consider a pristine system and thus our results de-scribe intrinsic contributions; extrinsic effects may mod-ify magnitudes but not symmetry or signatures of stud-ied phases. In this study, we explain the Floquet-engineered altermagnetic system using a non-interacting band framework. There are various arguments to support this approximation. First, the anomalous Hall, Nernst, and thermal Hall responses taken into consideration here are intrinsic transport coefficients that are mostly gov-erned by the underlying band structure’s Berry curva-ture, which is well-represented in an effective single-particle picture. Second, as long as the driving frequency is higher than the characteristic interaction and band-width scales, electron-electron interactions in the high-frequency (off-resonant) Floquet regime primarily result in weak renormalizations of the band parameters and 59                  
+
+> 5
+> 0
+> 5
+> 9
+> E/v
+> A0= 0 .0
+> AM
+> E/v
+> A0= 0 .0
+> AFM
+> 9
+> 5
+> 0
+> 5
+> 9
+> E/v
+> A0= 0 .52
+> E/v
+> A0= 0 .52
+> 9
+> 5
+> 0
+> 5
+> 9
+> E/v
+> A0= 0 .92
+> E/v
+> A0= 0 .92
+> MXΓYMΓ
+> 9
+> 5
+> 0
+> 5
+> 9
+> E/v
+> A0= 1 .2
+> MXΓYMΓ
+> E/v
+> A0= 1 .2
+
+FIG. 1. Energy dispersions and topological phase diagram of the QSH AM under LPL. Spin-resolved band structure of the QSH AM ( m = 3 .8v, b = −v, ta = √3) at A0 =0.0, 0.3, 0.7, 1.0 ( θ = 0). Spin-up (solid teal) and spin-down (dashed orange) bands evolve differently; the spin-down gap closes at Ac10 producing the Chern phase, while the spin-up gap closes at Ac20 .
+
+do not qualitatively change the topology of the effec-tive Hamiltonian. Third, the main phenomena discussed here, the symmetry-controlled angular dependence, spin, selective gap closings, and Chern number changes, are resistant against weak interaction effects because they are determined by symmetry and band topology. Lastly, investigations and first-principles research show that a quasiparticle description is still viable for candidate alter-magnetic materials like RuO 2 and MnTe-based systems, supporting the use of an effective non-interacting model. 
+
+A. Band Structures 
+
+The spin-resolved band structures of the QSH alter-magnetic (AM) and QSH antiferromagnetic (AFM) in-sulators are examined for four values of the LPL am-plitude and results are shown in Fig. 1. In the QSH AM case, the spin-up and spin-down bands evolve dif-ferently with increasing A0: the spin-down gap closes at 
+
+Ac10 ≈ 0.521 while the spin-up gap remains open, lead-ing to the emergence of an intermediate Chern phase. Upon further increasing the amplitude to Ac20 ≈ 0.918 , the spin-up gap also closes, and the system transitions 0.0 0.3 0.6 0.9 1.2 1.5                                            
+
+> A0
+> 1
+> 0
+> 1
+> Chern number  C
+> (a) QSH Chern Trivial
+> Ac10Ac20
+> C↑(spin-↑lower band)
+> C↓(spin-↓lower band)
+> C=C↑+C↓
+> 0.0 0.3 0.6 0.9 1.2 1.5
+> A0
+> 0.0
+> 0.5
+> 1.0
+> 1.5
+> 2.0
+> 2.5
+> Band gap  ∆σ [v]
+> (b) QSH Chern Trivial
+> Ac10Ac20
+> ∆↑(spin-↑)
+> ∆↓(spin-↓)
+> ∆↓→0∆↑→0
+
+FIG. 2. Topological phase transition (a) Spin Chern numbers 
+
+C↑, C↓, total C as a function of the A0. The Chern number 
+
+C in each panel is calculated by integrating the total Berry curvature. (b) Band gap as a function of the A0. At two different values of amplitude the band gap vanishes separately for spin-up and spin-down that shows two topological phase transitions. For the trivial AM the Chern number remains 
+
+C = 0 throughout. For the QSH AM, C evolves from 0 (QSH phase, A0 = 0 .0, 0 .3 ) to +1 (Chern phase, A0 = 0 .6 ) to +2 (A0 = 0 .9), reflecting the sequential topological transitions driven by the differential spin-sector renormalization j1̸ = j2.
+
+into a trivial phase. In contrast, for the QSH AFM case, the spin-up and spin-down bands remain perfectly de-generate for all values of A0, and both gaps close simul-taneously at a single critical amplitude, resulting in the absence of any intermediate Chern phase. This contrast is made explicit in phase diagram which shows the topo-logical phase transitions from QSH topological insulator to Chern insulator and then to Trivial altermagnetic in-sulator. The spin-resolved Chern numbers evolve con-tinuously with the amplitude A0, revealing two critical values: Ac10 ≈ 0.521 marking the transition from the quantum spin Hall (QSH) phase to the Chern insulating phase, where the spin-down gap closes, and Ac20 ≈ 0.918 marking the transition from the Chern phase to the trivial phase, where the spin-up gap closes. The total Chern number C = C↑ + C↓ and the spin Chern num-ber Cs = ( C↑ − C↓)/2 thus identify three distinct phases as shown in Fig. 2(a). This sequential gap-closing mech-anism arises because the linearly polarized light (LPL) renormalizes the two spin blocks differently due to the condition j1̸ = j2, causing the spin-down gap to vanish first, Fig 2(b). Such a sequence is entirely absent in the antiferromagnetic (AFM) case, where the preserved PT 
+
+symmetry enforces ∆ ↑ = ∆ ↓ for all A0.
+
+B. Berry curvature maps and topological phase transitions 
+
+For the trivial AM, the Berry curvature distribution shifts and concentrates as A0 increases, but the Chern number remains C = 0 throughout since no gap closing occurs. The gradual transfer of Berry curvature weight between the Γ and X/Y regions reflects the LPL induced renormalization of the spin dependent hopping ampli-tudes, j1 = J0(A0) → 0 while j2 = J0(0) = 1 is un-6−π            
+
+> 0
+> π
+> ky
+> C= 0
+> A0 = 0 .0
+> C= 0
+> −π
+> 0
+> π
+> ky
+> C= 0
+> A0 = 0 .3
+> C= 0
+> −π
+> 0
+> π
+> ky
+> C= 0
+> A0 = 0 .6
+> C= +1
+> −π0π
+> kx
+> −π
+> 0
+> π
+> ky
+> C= 0
+> A0 = 0 .9
+> −π0π
+> kx
+> C= +2
+> -1.17
+> -0.59
+> 0.00
+> 0.59
+> 1.17
+> Ω ↑ + Ω  ↓
+> -1.10
+> -0.55
+> 0.00
+> 0.55
+> 1.10
+> Ω ↑ + Ω  ↓
+> -1.04
+> -0.52
+> 0.00
+> 0.52
+> 1.04
+> Ω ↑ + Ω  ↓
+> -1.06
+> -0.53
+> 0.00
+> 0.53
+> 1.06
+> Ω ↑ + Ω  ↓
+
+FIG. 3. Total occupied Berry curvature Ω ↑−(k)+Ω ↓−(k) across the Brillouin zone. (Left panels) Trivial AM ( m = 4 .2v, b =
+
+−v, ta = √3). (Right panels) QSH AM ( m = 3 .8v, b = −v,
+
+ta = √3). Rows from top to bottom: A0 = 0 .0, 0 .3, 0 .6, 0 .9at θ = 0. The Chern number C in each panel is calculated by integrating the total Berry curvature. For the trivial AM the Chern number remains C = 0 throughout. For the QSH AM, 
+
+C evolves from 0 (QSH phase, A0 = 0 .0, 0 .3 ) to +1 (Chern phase, A0 = 0 .6 ) to +2 ( A0 = 0 .9), reflecting the sequential topological transitions driven by the differential spin-sector renormalization j1̸ = j2.
+
+changed for θ = 0. For the QSH AM, the initial A0 = 0 configuration has C = 0 (QSH phase with C↑ = −1, C↓ = +1). At 
+
+A0 = 0 .6 the Berry curvature develops a noticeable asym-metry between spin sectors, the Chern number jumps to 
+
+C = +1, making the entry into the Chern insulating phase. Further increasing to A0 = 0 .9 gives C = +2, consistent with the sequential transitions we identify nu-merically. The occupied Berry curvature, shown in Fig. 3, underlies these behaviors and reflects the sequential topo-logical transitions driven by the differential renormaliza-tion of the spin sectors ( j1̸ = j2). 
+
+C. Anomalous Hall conductivity 
+
+At zero temperature, the anomalous Hall conductivity shows distinct behavior depending on the altermagnetic phase as shown in Fig. 4(a-c). In the trivial altermag-netic phase (panel 4(a)), no topological transition oc-curs, yet increasing the staggered potential strength A0
+
+leads to a nontrivial energy dependence as the broken 
+
+C4z T symmetry allows Berry curvature to accumulate. In contrast, the quantum spin Hall altermagnetic phase in panel 4(b) shows that as A0 increases through the first critical value Ac10 , a quantized plateau σxy = + e2/h 
+
+emerges within the gap region, signaling a Chern insu-lating phase. Notice that the Berry curvature sharpens near gap closing and thus the physical quantities show peak at this location. The conductivity satisfies the ex-act even symmetry σxy (EF ) = σxy (−EF ), as shwon in panel 4(c) confirmed by a residual root-mean-square er-ror of 7 .1 × 10 −17 e2/h , which reflects a particle–hole-like symmetry of the Berry curvature. Finally, tracking the spin-resolved Chern numbers and total σxy as functions of A0 unambiguously identifies three phases: quantum spin Hall ( C = 0), Chern ( C = −1), and trivial ( C = 0), with critical amplitudes Ac10 = 0 .521 and Ac20 = 0 .918 as shown in panel 4(d). 
+
+D. Anomalous Nernst conductivity: thermal activation and Mott scaling 
+
+Figure 5 shows the temperature evolution of the anomalous Nernst coefficient (ANC). For the trivial alter-magnet, panel 5(a), it shows that the ANC vanishes as temperature approaches zero, confirming the thermally activated character predicted by theory, as the effect can-cels in filled bands at zero temperature due to cancella-tion of Berry curvature contributions weighted by the en-tropy kernel. At low temperatures, plotting αxy /(kBT )in panel 5(b) versus Fermi energy reveals convergence to the Mott prediction − π2kB 
+
+> 3e∂σ xy
+> ∂ε ε=μ
+
+, with the root-mean-square deviation decreasing as temperature low-ers. Increasing the light amplitude A0 both enhances the magnitude of the ANC and shifts its peak position, because linearly polarized light modifies the Berry curva-ture distribution and hence the energy derivative of the anomalous Hall con as shwon in panel 5(c). The ANC satisfies the exact odd symmetry αxy (EF ) = −αxy (−EF )in panel 5(d). The temperature dependence of the ANC at fixed Fermi energies for both trivial and quantum spin Hall altermagnets shows a characteristic non-monotonic behavior: it rises from zero at T = 0, peaks at a char-acteristic temperature T ∗, and then decreases at high temperature as thermal broadening averages over Berry curvature features of opposite signs. The peak tempera-ture T ∗ is tunable by light intensity; for the trivial alter-magnet at a given Fermi energy, kBT ∗ increases with A0,while for the quantum spin Hall altermagnet T ∗ is even more strongly A0-dependent. This tunability provides 72 1 0 1 2
+
+EF / v 
+
+0.025 
+
+0.000 
+
+0.025 
+
+0.050 
+
+0.075 
+
+0.100 
+
+0.125 
+
+0.150           
+
+> σxy  (e2/h )
+> T= 0 , θ = 0 , b =−v, t a=√
+> 3
+> Valence
+> band
+> Gap
+> Conduction
+> band
+> A0= 0 .0
+> A0= 0 .3
+> A0= 0 .6
+> A0= 0 .9
+
+(a) 
+
+2 1 0 1 2
+
+EF / v 
+
+0.5 
+
+0.0 
+
+0.5 
+
+1.0             
+
+> σxy  (e2/h )
+> T= 0 , θ = 0 , b =−v, t a=√
+> 3
+> σxy = +1 e2/h
+> (exact integer,
+> Chern insulator)
+> A0= 0 .0
+> A0= 0 .3
+> A0= 0 .6
+> A0= 0 .9
+
+(b) 
+
+0.8 0.6 0.4 0.2 0.0 0.2 0.4 0.6 0.8 
+
+EF / v 
+
+0.00 
+
+0.02 
+
+0.04 
+
+0.06 
+
+0.08 
+
+0.10 
+
+0.12 
+
+0.14     
+
+> σxy  (e2/h )
+> gap
+> valence
+> edge
+> conduction
+> edge
+> A0= 0 .0
+> A0= 0 .3
+> A0= 0 .6
+> A0= 0 .9
+
+(c) 
+
+0.0 0.2 0.4 0.6 0.8 1.0 1.2 
+
+A0 (LPL amplitude) 
+
+0.25 
+
+0.00 
+
+0.25 
+
+0.50 
+
+0.75 
+
+1.00               
+
+> σxy , C  ↑ , C  ↓ (e2/h )
+> QSH
+> C= 0
+> Chern
+> C= +1
+> Trivial
+> C= 0
+> A(1) 0= 0 .521 A(2) 0= 0 .918
+> EF= 0 ,θ= 0
+> σxy (total)
+> C↑
+> C↓
+
+(d) 
+
+FIG. 4. (a-c) Anomalous Hall conductivity σxy at T = 0 as a function of Fermi energy. plot in (a) shows σxy for the trivial AM; even though no topological transition occurs, σxy develops a non-trivial energy dependence with increasing A0 as the broken C4z T symmetry allows Berry curvature to accumulate. Results in (b) shows the QSH AM; as A0 increases through 
+
+Ac10 , a quantized plateau σxy = + e2/h emerges in the gap region, characteristic of the Chern insulating phase. The approach to the plateau is confirmed by the transition value shown by the dashed line. panel (c) verifies the exact even symmetry 
+
+σxy (EF ) = σxy (−EF ) with residual RMS error 7 .1 × 10 −17 e2/h , confirming a symmetry ε → − ε (particle–hole-like) of the Berry curvature in this model. (d) Tracks the spin-resolved Chern numbers and the total σxy as a function of A0, unambiguously identifying the QSH ( C = 0), Chern ( C = −1), and trivial ( C = 0) phases with critical amplitudes Ac10 = 0 .521 and Ac20 = 0 .918. 
+
+a direct experimental knob for thermoelectric optimiza-tion. 
+
+E. Temperature and chemical potential dependence 
+
+Figure 6(a-c) show all three physical conductivities which share an identical nodal structure with zeros at 
+
+θ = ±π/ 4 (where Mxy symmetry is restored) and ex-trema near θ = 0 , ±π/ 2. The sign reversal under θ → − θ
+
+is visible, and the magnitude scales with A0. Fur-thermore, the sign of all three coefficients can be con-trolled by rotating the polarization direction, providing a purely optical route to reversing the thermal Hall re-sponse a significant advantage over approaches requiring magnetic field reversal. Importantly, this entire polariza-tion pattern is absent in the conventional AFM, where 
+
+σxy = αxy = κ(0)  
+
+> xy
+
+= 0 for all θ, making the angle-dependent thermal transport a definitive experimental fingerprint of altermagnetism. 
+
+F. Intrinsic Nernst and thermal Hall in the AM insulator 
+
+Figure 7 shows the intrinsic Nernst αin  
+
+> xy
+
+and thermal Hall κin  
+
+> xy
+
+coefficients as functions of chemical potential for the trivial AM insulator at three LPL amplitudes. The Nernst coefficient panels 7(a-c) exhibits a characteristic double-peak structure with opposite signs across the gap, 82 1 0 1 2
+
+EF / v 
+
+0.075 
+
+0.050 
+
+0.025 
+
+0.000 
+
+0.025 
+
+0.050 
+
+0.075            
+
+> αxy  (e k B/h )
+> θ= 0 , m = 4 .2v, b =−v, t a=√
+> 3
+> kBT= 0 .001 v
+> kBT= 0 .005 v
+> kBT= 0 .01 v
+> kBT= 0 .03 v
+> kBT= 0 .05 v
+
+(a) 
+
+2 1 0 1 2
+
+EF / v 
+
+4
+
+2
+
+0
+
+2
+
+4     
+
+> αxy /k BT [( e k B/h )/v ]
+> kBT= 0 .005 v
+> kBT= 0 .01 v
+> kBT= 0 .03 v
+> kBT= 0 .05 v
+> Mott: −π2
+> 3
+> dσ xy
+> dE F
+
+(b) 
+
+2 1 0 1 2
+
+EF / v 
+
+0.02 
+
+0.01 
+
+0.00 
+
+0.01 
+
+0.02           
+
+> αxy  (e k B/h )
+> θ= 0 , m = 4 .2v, b =−v, t a=√
+> 3
+> A0= 0 .0
+> A0= 0 .3
+> A0= 0 .6
+> A0= 0 .9
+
+(c) 
+
+2 1 0 1 2
+
+EF / v 
+
+0.015 
+
+0.010 
+
+0.005 
+
+0.000 
+
+0.005 
+
+0.010 
+
+0.015  
+
+> αxy  (e k B/h )
+> αxy (EF)
+> −αxy (−EF)[mirror]
+
+(d) 
+
+FIG. 5. Anomalous Nernst conductivity αxy as a function of Fermi energy. In all panels the trivial AM is considered by given 
+
+m = 4 .2v, b = −v, ta = √3, θ = 0. (a) at A0 = 0 .6 for six temperatures, demonstrating the thermally activated nature ( αxy → 0as T → 0). (b) Scaled quantity αxy /(kBT ) as a function of EF at A0 = 0 .6; the Mott prediction −(π2kB/3e) ∂σ xy /∂ε |μ (dashed) is approached as T → 0. (c) at kB T = 0 .005 v for four LPL amplitudes, showing the evolution of the Nernst response with light intensity. (d) Odd symmetry αxy (EF ) = −αxy (−EF ) verified for A0 = 0 .6; Notice that a RMS error is 5 .8 × 10 −17 ek B/h .
+
+whose magnitude grows with A0. The thermal Hall coef-ficient panels 7(d-f) shows a single negative peak inside the gap that deepens as A0 increases. At A0 = 0 .9 the peak value reaches approximately −0.14 e2kBT /h , about 2.3 times larger than at A0 = 0 .3. The insulating gap is highlighted in green; within it, αin  
+
+> xy
+
+→ 0 as T → 0 (con-sistent with our analytical prediction) while κin  
+
+> xy
+
+remains finite, tracking the WF prediction. 
+
+G. Transport Signatures Across All Topological Phases 
+
+We commence by examining the band structure in-duced by LPL as a foundation for understanding the transport signatures. Figure 8 shows the spin-resolved band structures and the corresponding constant energy contours of the LPL driven d-wave altermagnetic quan-tum spin Hall system. Solid curves represent the spin-up sector, while dashed curves correspond to the spin-down sector. The parameters used are altermagnetic param-eters and these are fixed in all phases, m = 3 .8v, b =
+
+−v, t a = √3 for these specified values of AM parameters the system is in equilibrium and satisfies |m| < |b|(1+ t2
+
+> a
+
+). Since |b|(1 + t2
+
+> a
+
+) = 4 v, the undriven or weakly driven system sits comfortably within the quantum spin Hall regime. Figure 8(a) presents the band structure in the quantum spin Hall phase. The bulk gap remains open throughout this regime, as the inset makes clear, yet the valence and conduction bands are inverted relative to the trivial case. The spin-up and spin-down sectors carry opposite Chern numbers, C↑ = −1 and C↓ = +1 so the total Chern number vanishe, while the spin Chern number remains finite, Cs ∼ C↑ − C↓̸ = 0. This confirms that the system is a QSH insulator rather than a trivial one. The open 9−π 
+
+> 2
+
+−π 
+
+> 4
+
+0 π
+
+> 4
+> π
+> 2
+
+θ
+
+0.010 
+
+0.005 
+
+0.000 
+
+0.005 
+
+0.010       
+
+> σxy  (e2/h )
+> EF=2 .0v, k BT=0 .05 v
+> node node
+> A0= 0 .0
+> A0= 0 .3
+> A0= 0 .6
+> A0= 0 .9
+
+(a) 
+
+−π 
+
+> 2
+
+−π 
+
+> 4
+
+0 π
+
+> 4
+> π
+> 2
+
+θ
+
+0.020 
+
+0.015 
+
+0.010 
+
+0.005 
+
+0.000 
+
+0.005 
+
+0.010 
+
+0.015 
+
+0.020  
+
+> αxy  (e k B/h )
+> EF=2 .0v, k BT=0 .05 v
+
+(b) 
+
+−π 
+
+> 2
+
+−π 
+
+> 4
+
+0 π
+
+> 4
+> π
+> 2
+
+θ
+
+0.04 
+
+0.03 
+
+0.02 
+
+0.01 
+
+0.00 
+
+0.01 
+
+0.02 
+
+0.03 
+
+0.04  
+
+> xy /T  (k 2B/h )
+> EF=2 .0v, k BT=0 .05 v
+
+(c) 
+
+FIG. 6. Physical conductivities as a function of the Polarization angle θ. All three conductivities (a-c) show a d-wave nature under LPL that is a remarkable result and a fingerprint for AM. 1.0 0.5 0.0 0.5 1.0 
+
+μ [v]
+
+> 0.82
+> 0.00
+> 0.82
+> αin
+> xy  / [e3L0T/h ]
+
+A0 = 0 .3(a) gap     
+
+> 1.0 0.5 0.0 0.5 1.0
+
+μ [v]
+
+> 0.82
+> 0.00
+> 0.82
+> αin
+> xy  / [e3L0T/h ]
+
+A0 = 0 .6(b) gap     
+
+> 1.0 0.5 0.0 0.5 1.0
+
+μ [v]
+
+> 0.82
+> 0.00
+> 0.82
+> αin
+> xy  / [e3L0T/h ]
+
+A0 = 0 .9(c) gap     
+
+> 1.0 0.5 0.0 0.5 1.0
+
+μ [v]
+
+> 0.06
+> 0.05
+> 0.04
+> 0.03
+> 0.02
+> 0.01
+> 0.00
+> in
+> xy  / [e2L0T/h ]
+
+A0 = 0 .3(d) gap     
+
+> 1.0 0.5 0.0 0.5 1.0
+
+μ [v]
+
+> 0.14
+> 0.12
+> 0.10
+> 0.08
+> 0.06
+> 0.04
+> 0.02
+> 0.00
+> in
+> xy  / [e2L0T/h ]
+
+A0 = 0 .6(e) gap     
+
+> 1.0 0.5 0.0 0.5 1.0
+
+μ [v]
+
+> 0.14
+> 0.12
+> 0.10
+> 0.08
+> 0.06
+> 0.04
+> 0.02
+> 0.00
+> in
+> xy  / [e2L0T/h ]
+
+A0 = 0 .9(f) gap 
+
+FIG. 7. Nernst and thermal conductivities in terms of chemical potential (a-c) Nernst conductivity as a function of chemical potential at different values of amplitude. (d-f) Thermal Hall conductivity as a function of chemical potential at different values of amplitude. 
+
+gap (visible in the inset) signals insulating behaviour, and the band inversion signals the underlying nontrivial topology. Figure 8(b) shows the first light-induced Chern insu-lating phase, which carries a total Chern number C =
+
+−1. With increase in light amplitude A0, the Bessel-renormalized hopping terms redirect the effective masses of the two spin sectors in different directions. Conse-quently, one spin gap closes and reopens before the other. Here the spin-down sector turns topologically trivial first, while the spin-up sector remains inverted, C↑ = −1 and 
+
+C↓ = 0 that results in total chern number is −1. The inset captures the local gap closing associated with this topological phase transition that is a necessary fea-10 M X Γ Y M Γ                                            
+
+> −10
+> 0
+> 10
+> E/v
+> (a)
+> QSH
+> solid
+> dashed
+> MXΓYMΓ
+> −10
+> 0
+> 10
+> E/v
+> (b)
+> C=-1
+> MXΓYMΓ
+> −10
+> 0
+> 10
+> E/v
+> (c)
+> C=+1
+> MXΓYMΓ
+> −10
+> 0
+> 10
+> E/v
+> (d)
+> Trivial
+> open closed closed open
+> FIG. 8. Band structures and topological phase diagram of the QSH AM under LPL. (a)–(d): Spin-resolved band structure of the QSH AM ( m= 3 .8v,b=−v,ta=√3) at A0= 0 .0,0.3,0.7,1.0 ( θ= 0). Spin-up (solid teal) and spin-down (dashed orange) bands evolve differently; the spin-down gap closes at Ac10producing the Chern phase, while the spin-up gap closes at
+> Ac20. Insets show ∆ ↑and ∆ ↓. Lower panels: spin Chern numbers C↑,C↓, total C, and spin Chern number Cs= ( C↑−C↓)/2vs. A0.
+
+ture, since a change in Chern number can only occur when the bulk gap closes and then reopens. The result is a spin-polarized Chern insulator whose nonzero Chern number originates predominantly from a single spin chan-nel. Figure 8(c) illustrates the complementary spin-polarized Chern phase with total Chern number C = +1. Now it is the other spin sector that remains topologically active, while the first has already become trivial, C↑ = 0 and C↓ = +1 so that the total Chern number is +1. The coexistence of both C = −1 and C = +1 phases makes it clear that the sign of the light-induced Chern number can be controlled through the polarization direc-tion combined with the anisotropic Floquet renormaliza-tion. This tunability is a distinguishing feature of the al-termagnetic system, where linearly polarized light breaks the symmetry that would otherwise relate the two spin sectors. Figure 8(d) shows the trivial insulating phase reached at larger light amplitude. Once the remaining inverted spin sector also undergoes its own gap closing and re-opening, both sectors become topologically trivial, C↑ =0, C ↓ = 0 Although the inset confirms that the bulk gap is still open, the phase has lost its topological character entirely because the band inversion is gone. This panel there-fore represents an ordinary trivial insulator, and the full sequence of phase transitions reads QSH → C = −1 or C = +1 → Trivial . (23) A particularly illuminating way to present our results is to compare the three anomalous transport coefficients; the AHC σxy , ANC αxy , and ATHC κ(0)  
+
+> xy
+
+/T across all four distinct topological phases that the altermagnetic system can have under LPL irradiation: the QSH phase ( C = 0), the two Chern insulating phases ( C = −1 and C = +1), and the trivial phase ( C = 0). This phase comparison, reveals how each transport coefficient encodes a distinct topological fingerprint and how the Berry curvature re-distribution in the Brillouin zone manifests differently in charge, thermoelectric, and thermal channels. Figure 9(a-d) presents σxy as a function of Fermi en-ergy EF for representative parameter choices in each of the four topological phases. The top panel overlays all four phases on a common axis, making the contrast im-mediately apparent. The QSH phase, panel 9(a), displays 
+
+σxy ≈ 0 throughout the gap region, as expected for a PT -broken but C4z T -symmetric state where C↑ = −C↓ and the Berry curvatures of the two spin sectors cancel. Out-side the gap, σxy acquires small but nonzero values as the Fermi level probes bands with unequal spin resolved Berry curvature densities. The two Chern insulating phases shows different be-haviour. For the C = −1 phase, panel 9(b) ( A0 = 0 .625, 
+
+θ = 0 .829 rad, ∆ = 0 .002 v), σxy develops a sharp nega-tive dip near EF = 0, approaching −e2/h as the Fermi level sits in the tiny gap. For the C = +1 phase, panel 9(c), ( A0 = 0 .625, θ = 0 .742 rad, ∆ = 0 .002 v), the sign is reversed and σxy rises sharply toward + e2/h within the gap. The near quantized values in panels 9(b) and 9(c) reflect the fact that σxy = Ce 2/h in the low tempera-ture insulating limit, with the sign controlled entirely by the polarization angle θ. The ability to switch between 
+
+C = −1 and C = +1 by rotating the polarization direc-tion, without any change in material or magnetic field is one of the most striking features of Floquet engineered altermagnetism. The trivial phase, panel 9(d), ( A0 = 1 .075, θ = 0, ∆ = 0 .137 v) shows a broad, positive σxy that peaks near the band edges and decays away from the gap. This finite but non quantized response arises from the residual Berry curvature of the trivially gapped bands, and has no topological protection. The contrast between the sharp, sign changing σxy in the Chern phases and the broad, featureless response in the trivial phase provides a clear experimental discriminator between topological and non-11 −0.5 0.0 0.5 
+
+EF = v 
+
+−1.0 
+
+−0.5 
+
+0.0 
+
+0.5 
+
+1.0    
+
+> ¾xy  (e2=h )
+> A0= 0 :125 ; μ = 0
+> ¢ = 0 :377 v
+
+(a) 
+
+−0.5 0.0 0.5 
+
+EF = v 
+
+−1.0 
+
+−0.5 
+
+0.0 
+
+0.5 
+
+1.0     
+
+> ¾xy  (e2=h )
+> A0= 0 :625 ; μ = 0 :829 rad
+> ¢ = 0 :002 v
+
+(b) 
+
+−0.5 0.0 0.5 
+
+EF = v 
+
+−1.0 
+
+−0.5 
+
+0.0 
+
+0.5 
+
+1.0     
+
+> ¾xy  (e2=h )
+> A0= 0 :625 ; μ = 0 :742 rad
+> ¢ = 0 :002 v
+
+(c) 
+
+−0.5 0.0 0.5 
+
+EF = v 
+
+−1.0 
+
+−0.5 
+
+0.0 
+
+0.5 
+
+1.0    
+
+> ¾xy  (e2=h )
+> A0= 1 :075 ; μ = 0
+> ¢ = 0 :137 v
+
+(d) 
+
+FIG. 9. Anomalous Hall conductivity σxy across all four topological phases. Top panel: overlay of all four phases as a function of Fermi energy EF /v . Dotted horizontal lines mark ±e2/h . Individual panels: (a) QSH phase ( C = 0, A0 = 0 .125, θ = 0, ∆ = 0 .377 v); (b) Chern phase ( C = −1, A0 = 0 .625, θ = 0 .829 rad, ∆ = 0 .002 v); (c) Chern phase ( C = +1, A0 = 0 .625, 
+
+θ = 0 .742 rad, ∆ = 0 .002 v); (d) trivial phase ( C = 0, A0 = 1 .075, θ = 0, ∆ = 0 .137 v). Blue shading marks the insulating gap in each panel. The Chern phases develop near-quantized values σxy → Ce 2/h in the gap, while the QSH and trivial phases show vanishing and non-quantized responses, respectively. 
+
+topological regimes. Figure 10(a-d) shows αxy at kB T = 0 .01 v for the same four phases. Since αxy (T = 0) ≡ 0 in any gapped phase, all curves are shown at a small but finite temperature to reveal the thermally activated structure. The QSH phase, panel 10(a), displays a very small αxy 
+
+with a peak value of only +0 .015 ek B /h , concentrated near the gap edges. This small magnitude reflects the nearly complete cancellation of Berry curvature contri-butions from the two spin sectors in the QSH state: the Nernst response is thermally activated by band edge ex-citations across a relatively large gap ∆ = 0 .377 v, and the partial cancellation suppresses the signal further. The Chern phases exhibit dramatically enhanced Nernst responses. For C = −1, panel 10(b), αxy de-velops a pronounced bipolar structure near EF = 0, with a positive peak of +1 .882 ek B /h and a negative trough of comparable magnitude, separated by the tiny gap ∆ = 0.002 v. The C = +1 phase, panel 10(c) shows the mirror image of this structure, with a peak of +1 .883 ek B /h of opposite internal asymmetry. These large values, more than 100 times the QSH response arise because the extremely small gaps in the Chern phases (∆ ≈ 0.002 v) allow thermal excitation across the gap even at kB T = 0 .01 v, and the Berry curvature is sharply concentrated near the gap closing k points. The Nernst response is therefore a far more sensitive probe of topo-logical gap size than the Hall conductivity: while σxy ap-proaches ±e2/h in both Chern phases, αxy distinguishes them by its magnitude and internal lineshape. The trivial phase, panel 10(d) gives a small, broad Nernst response with peak +0 .102 ek B /h , confined to the band edges and showing no sign change within the gap. This is qualitatively different from both Chern phases and provides a clear thermal fingerprint of the trivial in-sulating state. 12 −1 0 1
+
+EF = v 
+
+−0.015 
+
+−0.010 
+
+−0.005 
+
+0.000 
+
+0.005 
+
+0.010 
+
+0.015    
+
+> ®xy  (e k B=h )
+> A0= 0 :125 ; μ = 0
+> peak = +0.015
+> ¢ = 0 :377 v
+
+(a) 
+
+−1 0 1
+
+EF = v 
+
+−2 
+
+−1 
+
+0
+
+1
+
+2    
+
+> ®xy  (e k B=h )
+> A0= 0 :625 ; μ = 0 :829 rad
+> peak = +1.882
+> ¢ = 0 :002 v
+
+(b) 
+
+−1 0 1
+
+EF = v 
+
+−2 
+
+−1 
+
+0
+
+1
+
+2    
+
+> ®xy  (e k B=h )
+> A0= 0 :625 ; μ = 0 :742 rad
+> peak = +1.883
+> ¢ = 0 :002 v
+
+(c) 
+
+−1 0 1
+
+EF = v 
+
+−0.10 
+
+−0.05 
+
+0.00 
+
+0.05 
+
+0.10    
+
+> ®xy  (e k B=h )
+> A0= 1 :075 ; μ = 0
+> peak = +0.102
+> ¢ = 0 :137 v
+
+(d) 
+
+FIG. 10. Anomalous Nernst conductivity αxy across all four topological phases at kB T = 0 .01 v. Top panel: overlay of all four phases. Individual panels with the same parameter choices as Fig. 9. Noice that the dramatic enhancement in the Chern phases (b-c): peak values of ≈ 1.88 ek B /h compared to 0 .015 ek B /h in the QSH phase (a), arising from the exponential sensitivity of 
+
+αxy to the small gap ∆ ≈ 0.002 v. The Nernst response provides a far more sensitive probe of topological gap size than the Hall conductivity. 
+
+Figure 11(a-d) presents κ(0)  
+
+> xy
+
+/T at T = 0 for all four phases. The top overlay panel and the four in-dividual panels confirm the Wiedemann Franz relation 
+
+κ(0)  
+
+> xy
+
+/T |T =0 = ( π2/3) σxy throughout. In the QSH phase, panel 11(a), κ(0)  
+
+> xy
+
+/T is nearly zero in the gap and shows a small positive peak of +0 .080 k2 
+
+> B
+
+/h 
+
+near the band edge. The flatness in the gap is consistent with σxy ≈ 0 there and the WF law. In the C = −1, phase panel 11(b), κ(0)  
+
+> xy
+
+/T develops a negative peak of −0.025 k2 
+
+> B
+
+/h at EF = 0, tracking the negative σxy of this phase. By contrast, the C = +1 phase has a sharp positive peak of +1 .913 k2 
+
+> B
+
+/h , which is close to the quantized value π2k2 
+
+> B
+
+/3h ≈ π2/3 k2 
+
+> B
+
+/h ex-pected for a C = +1 Chern insulator, panel 11(c), at 
+
+T → 0. The near quantization here is particularly signif-icant: it demonstrates that the LPL induced Chern in-sulating phase carries a genuine topological thermal Hall response satisfying the anomalous WF law, placing it on the same place as magnetically ordered quantum anoma-lous Hall insulators. The trivial phase, panel 11(d), shows a broad posi-tive κ(0)  
+
+> xy
+
+/T with peak +1 .023 k2 
+
+> B
+
+/h , again showing its non quantized σxy through the WF law. Comparing all, the most striking result is the sign structure: κ(0)  
+
+> xy
+
+/T is positive for the QSH, C = +1, and trivial phases, but negative for the C = −1 phase. This sign change is a direct consequence of the sign of the Chern number and provides an unambiguous thermal Hall signature of the different topological phases. The results reveal a clear hierarchy of sensitivity among the three transport coefficients. The AHC σxy 
+
+is the most direct topological probe, approaching quan-tized values in the Chern phases and vanishing in the QSH gap. The ATHC κ(0)  
+
+> xy
+
+/T mirrors σxy through the WF law, offering a thermal channel to the same topolog-ical information. The ANC αxy , however, goes beyond this: it is exponentially sensitive to the gap size and pro-vides a quantitative measure of how close the system is to 13 −1 0 1
+
+EF = v 
+
+−2 
+
+0
+
+2     
+
+> ∙xy =T  (k 2
+> B=h )
+> A0= 0 :125 ; μ = 0 peak = +0.080 k2
+> B=h
+> ¢ = 0 :377 v
+
+(a) 
+
+−1 0 1
+
+EF = v 
+
+−2 
+
+0
+
+2      
+
+> ∙xy =T  (k 2
+> B=h )
+> A0= 0 :625 ; μ = 0 :829 rad peak = +0.025 k2
+> B=h
+> ¢ = 0 :002 v
+
+(b) 
+
+−1 0 1
+
+EF = v 
+
+−2 
+
+0
+
+2      
+
+> ∙xy =T  (k 2
+> B=h )
+> A0= 0 :625 ; μ = 0 :742 rad peak = +1.913 k2
+> B=h
+> ¢ = 0 :002 v
+
+(c) 
+
+−1 0 1
+
+EF = v 
+
+−2 
+
+0
+
+2     
+
+> ∙xy =T  (k 2
+> B=h )
+> A0= 1 :075 ; μ = 0 peak = +1.023 k2
+> B=h
+> ¢ = 0 :137 v
+
+(d) 
+
+FIG. 11. Anomalous thermal Hall conductivity κ(0)  
+
+> xy
+
+/T at T = 0 across all four topological phases. Top panel: overlay of all four phases; dotted lines at ±π2/3 k2 
+
+> B
+
+/h mark the WF-predicted quantized values. Individual panels (a)–(d) use the same parameters as Fig. 9. The C = +1 Chern phase (c) shows near-quantization κ(0)  
+
+> xy
+
+/T ≈ +1 .913 k2 
+
+> B
+
+/h ≈ π2/3 k2 
+
+> B
+
+/h , confirming the anomalous Wiedemann–Franz law κ(0)  
+
+> xy
+
+= −L0T σ xy . The sign of κ(0)  
+
+> xy
+
+/T tracks the sign of C, providing an unambiguous thermal Hall fingerprint of each topological phase. 
+
+a phase boundary. The enhancement of αxy in the near critical Chern phases compared to the QSH phase makes the Nernst effect a natural experimental tool for detect-ing topological phase transitions driven by LPL intensity or polarization angle. From an experimental perspective, the four transport signatures described here are all accessible in a single device geometry. The Hall conductivity σxy can be mea-sured by transverse voltage in a Hall bar geometry un-der LPL irradiation. The Nernst coefficient αxy requires an additional temperature gradient, achievable through laser heating of one contact. The thermal Hall conduc-tivity κ(0)  
+
+> xy
+
+is accessed by the transverse temperature dif-ference under longitudinal heat current. The fact that all three quantities share the same polarization angle de-pendence vanishing at θ = ±π/ 4 and reversing sign under 
+
+θ → π/ 2 − θ means that a single angle rotation measure-ment can confirm the altermagnetic origin of all observed responses simultaneously. Table I summarizes the contrasting behavior of the AM and AFM under LPL irradiation across all transport and topological observables. The central distinction is that LPL breaks C4z T in the AM but cannot break PT in the AFM. This propagates to every observable: the AFM has σxy = αxy = κ(0)  
+
+> xy
+
+= σsxy = αsxy = κ(0) ,s xy = 0 for all 
+
+A0, θ, and T . Only the QSH →Trivial transition (direct, no intermediate Chern phase) is possible in the AFM. 
+
+VI. MEASUREMENT OF THE ANOMALOUS TRANSPORT COEFFICIENTS IN EXPERIMENTS 
+
+Altermagnetic order, and configurable band topology, the essential components needed to implement our pro-posal, are currently present in a number of material 14                                                                       
+
+> TABLE I. Comparison of transport properties and topological phase transitions in the d-wave AM and conventional AFM under LPL irradiation ( θ= 0, QSH initial phase). Observable AM ( ta=√3) AFM ( ta= 1) Symmetry under LPL C4zTbroken PT preserved Spin degeneracy Lifted (except θ=±π/ 4) Preserved everywhere Phase sequence with A0QSH →Chern ( C=−1) →Trivial QSH →Trivial
+> Ac10(first transition) ≈0.521 ≈0.640
+> Ac20(second transition) ≈0.918 —
+> σxy Nonzero, light-controlled Zero
+> αxy Nonzero, thermally activated Zero
+> κ(0)
+> xy Nonzero; quantized in Chern phase Zero WF law κ(0)
+> xy =−L0T σ xy Satisfied at T→0Trivially (0 = 0) Mott formula Satisfied at low TTrivially Sign control by θAll three coefficients None Nodes at θ=±π/ 4All three coefficients All zero regardless QSH spin transport σsxy , α sxy , κ (0) ,s xy ̸= 0 σsxy , α sxy , κ (0) ,s xy ̸= 0
+
+substrates. Recently discovered altermagnets like RuO 2
+
+and MnTe-based compounds, as well as constructed heterostructures with customisable symmetry and band structure, are examples of candidate systems. The off-resonant (high-frequency) approximation is valid because mid-infrared to terahertz radiation can be used to enter the Floquet driving regime considered in this work, where the photon energy exceeds the elec-tronic bandwidth. Driving frequencies between 10 and 100 THz are adequate for typical hopping amplitudes on the order of 0.1 to 1 eV. The required field strengths cor-respond to dimensionless amplitudes A0 ∼ 0.5–1 , which are achievable with currently available pulsed laser sys-tems. Crucially, the anticipated topological transitions rely on the field amplitude to frequency ratio, which per-mits experimental tuning flexibility without the need for extreme circumstances. Floquet-engineered phases can endure across picosecond timeframes, which is adequate for transport measurements, according to recent pump-probe experiments. Standard measurement geometries allow for exper-imental access to the predicted transport signatures. Transverse voltage measurements under optical irradi-ation in a Hall bar design can be used to identify the anomalous Hall conductivity. By creating a longitudi-nal temperature gradient achievable by integrated micro-heaters or local laser heating and measuring the trans-verse voltage that results, one can quantify the anoma-lous Nernst effect. Using well-established thermometry methods, the thermal Hall conductivity can be derived from transverse temperature gradients. Notably, all three reactions exhibit a distinctive dependency on the input light’s polarization angle, reversing sign under orthogo-nal rotation and disappearing at symmetry-restoring di-rections. In contrast to traditional antiferromagnets, this angular dependence offers a strong and clear indication of altermagnetic order. Lastly, the sign reversal of the Hall responses by po-larization rotation and the tunability of the Nernst peak temperature provide useful paths for device applications. For ultrafast spin caloritronics, it is very appealing to be able to control heat and charge transport solely op-tically, without the use of magnetic fields. The qualita-tive behaviors described here are symmetry-driven and so anticipated to be widely applicable across a broad class of altermagnetic systems, while quantitative predictions will require material-specific modeling.  
+
+> VII. CONCLUSION
+
+We have presented a comprehensive theoretical study of intrinsic thermal transport in a d-wave altermagnetics under linearly polarized light (LPL). We find that the Berry curvature can be expressed in closed form in both spin sectors, and that all anomalous transport responses in the altermagnetic (AM) phase have a microscopic ori-gin due to the differential renormalization j1̸ = j2.A main result is the emergence of a se-quential topological phase transition, QSH →
+
+spin-polarized Chern insulator ( C = −1) at Ac10 ≈ 0.521, followed by Chern → trivial at Ac20 ≈ 0.918. This hierarchy is unique to altermagnets, in contrast to conventional antiferromagnets (AFMs), which exhibit a direct QSH → trivial transition. Within the Chern insulating regime, both charge and thermal responses become topologically quantized, with 
+
+σxy = −e2/h and κxy /T = π2k2 
+
+> B
+
+/(3 h), and satisfy the anomalous Wiedemann–Franz relation κxy = −L0T σ xy .In contrast, the anomalous Nernst conductivity αxy is 15 purely thermally driven, vanishing at T = 0 and peak-ing at a characteristic temperature T ∗ tunable by A0
+
+and θ, in agreement with the Mott relation αxy ≈−(π2k2 
+
+> B
+
+T / 3e) ∂μσxy .All anomalous transport coefficients exhibit a universal 
+
+d-wave dependence on the polarization angle, vanishing at θ = ±π/ 4, reaching extrema at θ = 0 , ±π/ 2, and re-versing sign under θ → π/ 2 − θ. This provides a purely optical route to control and reverse the thermal Hall re-sponse, with no counterpart in conventional AFMs. Crucially, thermal Hall and Nernst measurements are established as definitive experimental probes of alter-magnetic order, even in regimes where charge transport signals may be misleading, due to the total absence of anomalous transport in AFMs under LPL, in sharp con-trast to AMs. With obvious implications for spin caloritronics and the identification of altermagnetic phases in developing quantum materials, these findings establish Floquet en-gineering of altermagnetic topological insulators as a po-tential platform for regulating thermal and spin trans-port. 
+
+ACKNOWLEDGMENTS 
+
+The work is supported by the Department of Physics, Quaid i Azam University Islamabad, Pakistan. 
+
+[1] L. ˇSmejkal, J. Sinova, and T. Jungwirth, Emerging re-search landscape of altermagnetism, Phys. Rev. X 12 ,040501 (2022). [2] D. V. Else, B. Bauer, and C. Nayak, Floquet time crys-tals, Phys. Rev. Lett. 117 , 090402 (2016). [3] A. Schellekens, K. Kuiper, R. de Wit, and B. Koop-mans, Ultrafast spin-transfer torque driven by femtosec-ond pulsed-laser excitation, Nature communications 5,4333 (2014). [4] I. Mazin (The PRX Editors), Editorial: Altermagnetism—a new punch line of fundamental magnetism, Phys. Rev. X 12 , 040002 (2022). [5] C. Song, H. Bai, Z. Zhou, L. Han, H. Reichlova, J. H. Dil, J. Liu, X. Chen, and F. Pan, Altermagnets as a new class of functional materials, Nature Reviews Materials 
+
+10 , 473 (2025). [6] K.-H. Ahn, A. Hariki, K.-W. Lee, and J. Kuneˇ s, Antifer-romagnetism in ruo 2 as d-wave pomeranchuk instability, Phys. Rev. B 99 , 184432 (2019). [7] L.-D. Yuan, Z. Wang, J.-W. Luo, E. I. Rashba, and A. Zunger, Giant momentum-dependent spin splitting in centrosymmetric low-z antiferromagnets, Phys. Rev. B 
+
+102 , 014422 (2020). [8] S. Hayami, Y. Yanagi, and H. Kusunose, Momentum-dependent spin splitting by collinear antiferromagnetic ordering, Journal of the Physical Society of Japan 88 ,123702 (2019). [9] I. I. Mazin, K. Koepernik, M. D. Johannes, R. Gonz´ alez-Hern´ andez, and L. ˇSmejkal, Prediction of unconventional magnetism in doped fesb2, Proceedings of the National Academy of Sciences 118 , e2108924118 (2021). [10] Z.-X. Li, H. Zhou, X. Wan, and W. Chen, Diagnosing al-termagnetic phases through quantum oscillations, Phys. Rev. B 111 , 125119 (2025). [11] Y. Liu, T. Zhu, and H. Zhang, Linearly polarized light-induced anomalous hall effect and topological phase tran-sitions in an altermagnetic topological insulator, arXiv preprint arXiv:2603.06486 (2026). [12] T. Jungwirth, J. Sinova, R. M. Fernandes, Q. Liu, H. Watanabe, S. Murakami, S. Nakatsuji, and L. ˇSmejkal, Symmetry, microscopy and spectroscopy signatures of al-termagnetism, Nature 649 , 837 (2026). [13] L. ˇSmejkal, J. Sinova, and T. Jungwirth, Beyond conven-tional ferromagnetism and antiferromagnetism: A phase with nonrelativistic spin and crystal rotation symmetry, Phys. Rev. X 12 , 031042 (2022). [14] L. Attias, A. Levchenko, and M. Khodas, Intrinsic anomalous hall effect in altermagnets, Physical Review B 110 , 094425 (2024). [15] H.-Y. Ma and J.-F. Jia, Altermagnetic topological in-sulator and the selection rules, Physical Review B 110 ,064426 (2024). [16] R. Gonz´ alez-Hern´ andez, H. Serrano, and B. Uribe, Spin chern number in altermagnets, Phys. Rev. B 111 , 085127 (2025). [17] R. Gonz´ alez-Hern´ andez and B. Uribe, Model hamilto-nian for altermagnetic topological insulators, Phys. Rev. B 112 , 184101 (2025). [18] S.-B. Zhang, L.-H. Hu, and T. Neupert, Finite-momentum cooper pairing in proximitized altermagnets, Nature Communications 15 , 1801 (2024). [19] N. H. Lindner, G. Refael, and V. Galitski, Floquet topo-logical insulator in semiconductor quantum wells, Nature Physics 7, 490 (2011). [20] T. Oka and S. Kitamura, Floquet engineering of quantum materials, Annual Review of Condensed Matter Physics 
+
+10 , 387 (2019). [21] M. S. Rudner and N. H. Lindner, Band structure engi-neering and non-equilibrium dynamics in floquet topo-logical insulators, Nature Reviews Physics 2, 229 (2020). [22] A. Eckardt and E. Anisimovas, High-frequency approx-imation for periodically driven quantum systems from a floquet-space perspective, New Journal of Physics 17 ,093039 (2015). [23] T. Mikami, S. Kitamura, K. Yasuda, N. Tsuji, T. Oka, and H. Aoki, Brillouin-wigner theory for high-frequency expansion in periodically driven systems: Application to floquet topological insulators, Physical Review B 93 ,144307 (2016). [24] T. Oka and H. Aoki, Photovoltaic hall effect in graphene, Phys. Rev. B 79 , 081406 (2009). [25] J. W. McIver, B. Schulte, F.-U. Stein, T. Matsuyama, G. Jotzu, G. Meier, and A. Cavalleri, Light-induced anomalous hall effect in graphene, Nature physics 16 ,38 (2020). [26] D. V. Else, B. Bauer, and C. Nayak, Floquet time crys-tals, Phys. Rev. Lett. 117 , 090402 (2016). [27] D. Shin, A. Rubio, and P. Tang, Light-induced ideal weyl 16 
+
+semimetal in hgte via nonlinear phononics, Phys. Rev. Lett. 132 , 016603 (2024). [28] T. Zhu, D. Zhou, H. Wang, S.-H. Wei, and J. Ruan, Floquet odd-parity collinear magnets, Phys. Rev. Lett. 
+
+136 , 126704 (2026). [29] S. A. A. Ghorashi and Q. Li, Dynamical generation of higher-order spin-orbit coupling, topology, and persistent spin texture in light-irradiated altermagnets, Phys. Rev. Lett. 135 , 236702 (2025). [30] N. Nagaosa, J. Sinova, S. Onoda, A. H. MacDonald, and N. P. Ong, Anomalous hall effect, Reviews of Modern Physics 82 , 1539 (2010). [31] X. Zou, X. Feng, C. Niu, Y. Dai, and B. Huang, Floquet quantum anomalous hall effect with in-plane magneti-zation in two-dimensional altermagnets, ACS Nano 19 ,35575 (2025). [32] T. Kitagawa, T. Oka, A. Brataas, L. Fu, and E. A. Dem-ler, Transport properties of nonequilibrium systems un-der the application of light: Photoinduced quantum hall insulators without landau levels, Phys. Rev. B 84 , 235108 (2011). [33] H.-Y. Ma and J.-F. Jia, Altermagnetic topological insu-lator and the selection rules, Phys. Rev. B 110 , 064426 (2024). [34] F. Machado, G. D. Kahanamoku-Meyer, D. V. Else, C. Nayak, and N. Y. Yao, Exponentially slow heating in short and long-range interacting floquet systems, Physi-cal Review Research 1, 033202 (2019). [35] W. W. Ho, T. Mori, D. A. Abanin, and E. G. Dalla Torre, Quantum and classical floquet prethermalization, Annals of Physics 454 , 169297 (2023). [36] A. Cr´ epieux and P. Bruno, Theory of the anomalous hall effect from the kubo formula and the dirac equation, Phys. Rev. B 64 , 014416 (2001). [37] D. N. Sheng, Z. Y. Weng, L. Sheng, and F. D. M. Hal-dane, Quantum spin-hall effect and topologically invari-ant chern numbers, Phys. Rev. Lett. 97 , 036808 (2006). [38] D. Xiao, Y. Yao, Z. Fang, and Q. Niu, Berry-phase effect in anomalous thermoelectric transport, Phys. Rev. Lett. 
+
+97 , 026603 (2006). [39] J. M. Luttinger, Theory of thermal transport coefficients, Phys. Rev. 135 , A1505 (1964). [40] T. Qin, Q. Niu, and J. Shi, Energy magnetization and the thermal hall effect, Phys. Rev. Lett. 107 , 236601 (2011). [41] M. Jonson and G. D. Mahan, Mott’s formula for the ther-mopower and the wiedemann-franz law, Phys. Rev. B 21 ,4223 (1980).

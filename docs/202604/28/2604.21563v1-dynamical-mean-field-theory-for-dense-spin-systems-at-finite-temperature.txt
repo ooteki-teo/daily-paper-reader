@@ -1,0 +1,1502 @@
+Title: Dynamical mean-field theory for dense spin systems at finite temperature
+
+URL Source: https://arxiv.org/pdf/2604.21563v1
+
+Published Time: Fri, 24 Apr 2026 00:47:05 GMT
+
+Number of Pages: 25
+
+Markdown Content:
+SciPost Physics Submission 
+
+# Dynamical mean-field theory for dense spin systems at finite temperature 
+
+Przemysław Bieniek 1⋆, Timo Gräßer 2 and Götz S. Uhrig 1†
+
+1 Condensed Matter Theory, TU Dortmund University, Otto-Hahn-Str. 4, 44227 Dortmund, Germany 
+
+2 Institute of Molecular Physical Science, ETH Zürich, Vladimir-Prelog-Weg 1-5 /10, 8093 Zürich, Switzerland 
+
+⋆ przemyslaw.bieniek@tu-dortmund.de , † goetz.uhrig@tu-dortmund.de 
+
+# Abstract 
+
+In recent years, a method for computing spin dynamics at infinite temperature (spinDMFT) was developed. It utilizes the ideas of dynamical mean-field theory for fermions: single-site approximation and a self-consistency condition to approximate time-dependent spin correlations. In this work, we develop a crucial extension of the method to systems at finite temperature, able to compute imaginary-time correlations and thermodynamical quantities. We benchmark the method by comparison to results in finite-size systems, obtaining very good agreement with correlations in a random-coupling system, good agreement for a ferromagnetic system and large discrepancies in the case of an antifer-romagnet. We note the appearance of ferromagnetic order in the method. We discuss possible extensions and potential applications of the approach. 
+
+Copyright attribution to authors. This work is a submission to SciPost Physics. License information to appear upon publication. Publication information to appear upon publication. Received Date Accepted Date Published Date 
+
+# Contents 
+
+1 Introduction 22 Derivation of the method 3
+
+2.1 Model and definitions 32.2 Trotterization and effective time dependence 42.3 Mean-field approximation 5
+
+3 Implementation and benchmarks 7
+
+3.1 Numerical implementation 73.2 Spin correlations 73.3 Comparison to finite-size results 83.4 Ferromagnetic phase transition in spinDMFT 15 
+
+4 Conclusion 16 A Additional details of spinDMFT 18 
+
+A.1 The cavity method and Wick’s theorem 18 
+
+1
+
+> arXiv:2604.21563v1 [cond-mat.str-el] 23 Apr 2026
+
+SciPost Physics Submission 
+
+A.2 Implementation 19 
+
+B Finite-size numerical methods 20 
+
+B.1 Chebyshev expansion technique 20 B.2 Quantum typicality 21 
+
+C Comparison to spin glass physics 22 References 22 
+
+# 1 Introduction 
+
+The study of spin systems is of great interest for both practical applications and theoretical investigation. Materials with relevant spin degrees of freedom are promising candidates for quantum computing [1,2 ], new methods of memory storage and new electronic devices [3–5 ].Nuclear magnetic resonance (NMR) is another important application, using nuclear spins to reveal the structure of matter [6–8 ]. Recent theoretical developments revealed new exciting fields in the research of spin ensembles, in particular regarding new kinds of order – spin-split antiferromagnetism in systems of reduced symmetry (altermagnets) [9, 10 ] and topological order [11, 12 ].The description of dynamics resulting from spin models remains a formidable problem. A wide variety of techniques applicable to spin systems has been developed. The primary challenge is the exponential scaling of the size of the Hilbert space with the number of spins in the system. For this reason, calculations by exact diagonalization (ED) of the Hamiltonian are possible only for small system sizes. Larger systems can be considered when focusing on the low-energy states with the Lanczos algorithm. The Chebyshev expansion technique (CET) can improve upon the efficiency of ED at high temperatures [13–15 ], allowing to consider a larger number of spins. Yet, for system sizes above ≈ 30, these brute-force approaches become unfeasible. Quantum Monte Carlo provides access to significantly larger systems [16, 17 ].However, it generates significant statistical errors and becomes significantly less accurate for frustrated systems. For frustrated systems, functional renormalization group for spin systems provide an alternative approach [18, 19 ]. Density matrix renormalization group (DMRG) is another powerful technique, especially when augmented by matrix product states and tensor network methods, which however is most efficient for selected geometries – spin chains and star-like lattices [20–23 ]. Hence, alternative methods applicable to spin systems are of interest. Recently, a new approach for computing dynamics in dense spin systems at infinite temper-ature was developed [24,25 ]. It was termed dynamical mean-field theory for spins (spinDMFT) for its similarities to dynamical mean-field theory for fermions, a widely used numerical tech-nique [26,27 ]. Both use a single-site approximation and a self-consistency condition, and cru-cially utilize a time-dependent field. SpinDMFT has since been successfully applied to explain the results of NMR measurements, where the energy scales of the spins are small with respect to the thermal energy scale [28 ]. However for other applications, the infinite-temperature constraint is a significant limitation of the method. In this work, we develop a novel method based on the method of Ref. [24 ], which is appli-cable for spin ensembles at finite temperature. Similarly to the infinite-temperature approach, we use a time-dependent, Gaussian distributed mean field and a self-consistency connect-ing the correlations of the spins to the parameters of the mean-field probability distribution. 
+
+2SciPost Physics Submission 
+
+However, we consider mean fields dependent on imaginary time, which turns out to be cru-cial for correctly modeling the thermal density operator. Furthermore, we propose a mod-ified self-consistency condition including spin expectation values which can be non-zero in finite-temperature systems, for instance due to external fields or spontaneous symmetry break-ing. We find, that our method closely resembles a mean-field approach to the Sherrington-Kirkpatrick model [29–31 ], despite an entirely different derivation. A dynamical mean-field approach has also been established for ordered spin systems [32 ]; however, it requires a dif-ferent scaling of the Hamiltonian and computes correlations in momentum space in contrast to our method. In Sec. 2, we derive spinDMFT for systems at finite temperature. We discuss the consid-ered model and provide details of the single-site approximation and self-consistency. Then, in Sec. 3, we provide a description of the numerical implementation of the method and bench-mark it by comparison to results in finite-size systems. We also discuss the appearance of ferromagnetic order in spinDMFT. Finally, in Sec. 4, we conclude and give an overview of the next developments of finite-temperature spinDMFT. In the appendices, one can find the details of the derivation and implementation and a description of the numerical methods used for comparison. 
+
+# 2 Derivation of the method 
+
+2.1 Model and definitions 
+
+We consider an isotropic Heisenberg model for spins with S = 12 in a static, homogeneous magnetic field 
+
+H =
+
+X 
+
+> i<j
+
+Ji j ⃗ Si ·⃗ Sj +⃗ B ·
+
+X
+
+> i
+
+⃗
+
+Si . (1) In this work, we denote operators acting on the Hilbert space by bold symbols and three-dimensional vectors by symbols with arrows above. The lattice geometry is described by the symmetric coupling matrix Ji j . Note, that the geometry is completely general, in particular not restricted to periodic lattices. We introduce the moments of the coupling constants 
+
+Jn,i :=
+
+X 
+
+> j̸=i
+
+|Ji j |n
+
+!1/n
+
+(2) and two energy scales which will turn out to be relevant in the following considerations 
+
+JL :=
+
+X 
+
+> i̸=0
+
+J0i , JQ := J2,0 , (3) which we term the linear and quadratic coupling constants. Here, we assume them to be site-independent as is the case for translation invariant systems. Additionally, we define the effective coordination numbers for site i as 
+
+zi := J 21, i
+
+J 22, i
+
+, z′ 
+
+> i
+
+:= J 42, i
+
+J 44, i
+
+. (4) In the case of constant nearest-neighbor couplings, the effective coordination numbers coincide with the usual coordination number z describing the number of neighbors of spin i, zi = z′
+
+> i
+
+= z. Mean-field approaches become exact in the limit of an infinite coordination number. Accordingly, spinDMFT will be argued to be exact when zi , z′ 
+
+> i
+
+→ ∞ . This limit is realized in 
+
+3SciPost Physics Submission 
+
+two cases: either the lattice becoming infinite-dimensional, or the interaction between spins being infinitely long-ranged. For the infinite-dimensional limit to exist, the couplings Ji j need to scale as Ji j ∝ 1/pz. This is plausible in the paramagnetic phase [33, 34 ] and also used in the paradigmatic spin glass model, the Sherrington-Kirkpatrick model [29, 30 ]. The reason is that the relevant energy scale for a spin at site i is JQ, as will become clear in section 2.3. To keep it constant in the z → ∞ limit, the rescaling is required. Throughout this article we will assume that a finite JQ and JL do exist in the limit z → ∞ . This clearly requires that couplings with both signs, ferromagnetic and antiferromagnetic, must occur. By extension, the resulting approach will be also be used as an approximation in finite-dimensional systems which have couplings only with one sign, but have finite values of JQ and JL. The dominant sign of the couplings, i.e., the sign of JL, determines the behavior of the system as the temperature drops – negative (positive) couplings favor spins (anti-)aligning, favoring (anti-)ferromagnetic ordering. Our method determines imaginary-time spin dynamics for systems at finite temperature. We work in the thermal equilibrium so that the expectation values are computed as 
+
+〈X〉 = 1
+
+Z Tr  e−βHX , (5) with the inverse temperature β = 1/kB T and the partition function Z = Tr exp (−βH). Imaginary-time evolution is carried out by the evolution operator U(τ) = exp (−τH) acting on operators as 
+
+X(τ) = U−1(τ)XU (τ) (6) with τ ∈ R. The main quantities of interest are the time-ordered imaginary-time spin correla-tions defined as 
+
+gab i j (τ1, τ2) = 
+
+¬
+
+T Sai (τ1)Sbj (τ2)
+
+¶
+
+, (7) with τi ∈ [0, β]. The indices a, b represent the spin components x, y and z. The time-ordering operator T orders operators such that the time increases from right to left. As for infinite-temperature spinDMFT, it is useful to introduce the environment field of a spin i,⃗
+
+Vi :=
+
+X 
+
+> j̸=i
+
+Ji j ⃗ Sj . (8) Furthermore, we split the Hamiltonian into a local part H0 consisting of all the terms containing ⃗
+
+S0 and a rest term W according to 
+
+H = H0 + W, (9a) 
+
+H0 =  ⃗ V0 +⃗ B ·⃗ S0, (9b) 
+
+W =
+
+X   
+
+> i,j̸=0, i<j
+
+Ji j ⃗ Si ·⃗ Sj +⃗ B ·
+
+X 
+
+> i̸=0
+
+⃗
+
+Si . (9c) The operator W corresponds to the Hamiltonian for a system with ⃗ S0 removed and will hence-forth be referred to as the “cavity Hamiltonian”, cf. Ref. [26 ].
+
+2.2 Trotterization and effective time dependence 
+
+We are aiming to describe the dynamics of a single spin ⃗ S0. In particular, we want to determine the spin’s expectation values as well as its autocorrelations defined as 
+
+Sa 
+
+> 0
+
+= 1
+
+Z Tr U(β)Sa 
+
+> 0
+
+, (10a) 
+
+gab (τ) := gab  
+
+> 00
+
+(τ, 0 ) = 1
+
+Z Tr T U(β)U−1(τ)Sa
+
+> 0
+
+U(τ)Sb 
+
+> 0
+
+, (10b) 
+
+Z = Tr {U(β)} . (10c) 
+
+4SciPost Physics Submission 
+
+Using Trotter’s formula, the evolution operator can be written as 
+
+U(τ) = lim 
+
+> n→∞
+> n
+
+Y
+
+> k=1
+
+e−(τ/ n)H0 e−(τ/ n)W (11a) 
+
+=e−τW lim 
+
+> n→∞
+> n
+
+Y
+
+> k=1
+
+e(kτ/ n)We−(τ/ n)H0 e−(kτ/ n)W (11b) 
+
+=e−τW lim 
+
+> n→∞
+> n
+
+Y
+
+> k=1
+
+e− τ 
+
+> n
+
+(⃗V0(kτ/ n)+ ⃗ B)·⃗S0 (11c) 
+
+=e−τWT e− R τ 
+
+> 0
+
+(⃗V0(τ′)+ ⃗ B)·⃗S0 dτ′
+
+, (11d) where we introduced an effective time dependence of the environment fields with respect to the cavity Hamiltonian according to ⃗
+
+Vi (τ) := eτW⃗ Vi e−τW. (12) Note that the time ordering operator orders the terms ⃗ V(τ) ·⃗ S0 with respect to the argument of ⃗ V, with terms with larger τ appearing to the left. Inserting Eq. (11a) into Eq. (10) for all propagators we arrive at 
+
+Sa 
+
+> 0
+
+= 1
+
+Z Tr 
+
+n
+
+e−βWT e− R β 
+
+> 0
+
+(⃗V0(τ′)+ ⃗ B)·⃗S0 dτ′
+
+Sa
+
+> 0
+
+o
+
+, (13a) 
+
+gab (τ) = 1
+
+Z Tr 
+
+n
+
+e−βWT e− R βτ (⃗V0(τ′)+ ⃗ B)·⃗S0 dτ′
+
+Sa 
+
+> 0
+
+e− R τ 
+
+> 0
+
+(⃗V0(τ′)+ ⃗ B)·⃗S0 dτ′
+
+Sb
+
+> 0
+
+o
+
+, (13b) 
+
+Z = Tr 
+
+n
+
+e−βWT e− R β 
+
+> 0
+
+(⃗V0(τ′)+ ⃗ B)·⃗S0 dτ′ o
+
+, (13c) where we employed that e−τW commutes with Sa 
+
+> 0
+
+and combined the first two propagators in the expression for the autocorrelation. Here, the advantage of using imaginary time evolu-tion becomes clear. The thermal density operator and the evolution operator are related by 
+
+e−βH = U(β) allowing us to consider an evolution with respect to a real-valued parameter τ′
+
+only. In case of real-time correlations, combining time evolution and density operator would require us to introduce a time evolution with in complex time along a Keldysh contour implying a more involved algorithm. Note that up to this point no approximation has been made. Eqs. (13) still form a quantum many-body problem which is not exactly solvable. However, from this formulation the struc-ture of the effective single-site model defined by spinDMFT can already be guessed. The time evolution of spin ⃗ S0 is generated by its coupling to the magnetic field and the environment field. The latter obtains an effective time dependence due to the remaining lattice through the operator W and will be substituted by the mean field. 
+
+2.3 Mean-field approximation 
+
+We aim to replace the environment fields in Eq. (13) by a classical, time dependent mean-field. The argument is as follows: as z → ∞ , the couplings approach zero, making the influence of each neighbor smaller. In this limit, the environment field consists of a large number of small, independent contributions (for a more detailed line of argument, see appendix A.1). Therefore, we are justified in replacing the full many-body problem by an auxiliary model 
+
+Hmf (τ) =  ⃗ V (τ) + ⃗ B ·⃗ S0 (14) with a Gaussian distributed classical mean field ⃗ V (τ). In this framework, expectation values are computed by performing a quantum average in the single-site model and a classical average 
+
+5SciPost Physics Submission 
+
+over the probability space of the mean fields. This entails 
+
+Sa 
+
+> 0
+
+=
+
+Z
+
+D⃗ V p[⃗ V]Tr 
+
+n
+
+T e− R β 
+
+> 0Hmf (τ′)dτ′
+
+Sa
+
+> 0
+
+o
+
+, (15a) 
+
+gab (τ) = 1
+
+Z0
+
+Z
+
+D⃗ V p[⃗ V]Tr 
+
+n
+
+T e− R βτ Hmf (τ′)dτ′
+
+Sa 
+
+> 0
+
+e− R τ 
+
+> 0Hmf (τ′)dτ′
+
+Sb
+
+> 0
+
+o
+
+, (15b) 
+
+Z0 =
+
+Z
+
+D⃗ V p[⃗ V]Tr 
+
+n
+
+T e− R β  
+
+> 0Hmf (τ′)dτ′
+
+o
+
+. (15c) These expressions are equivalent to the ones of the original lattice problem if the classical moments of the mean field match the quantum expectation values of the original field V0.This is expressed in the following conditions 
+
+V a(τ1) = Va
+
+> 0
+
+(τ1) , (16a) Cov V a(τ1), V b(τ2) = Re T Va
+
+> 0
+
+(τ1)Vb 
+
+> 0
+
+(τ2) − Va
+
+> 0
+
+(τ1) Vb 
+
+> 0
+
+(τ2) . (16b) The real part in Eq. (16b) is taken to ensure the covariance matrix is symmetric and the mean-fields are real. Inserting the definition of the environment fields (8), we obtain 
+
+V a(τ1) = 
+
+X
+
+> i
+
+J0i Sai (τ1) = JL Sa
+
+> 0
+
+(τ1) , (17a) Cov V a(τ1), V b(τ2) =
+
+X  
+
+> i,j̸=0
+
+J0i J0 j
+
+
+
+Re 
+
+¬
+
+T Sai (τ1)Sbj (τ2)
+
+¶
+
+− Sai (τ1)
+
+¬
+
+Sbj (τ2)
+
+¶ 
+
+≈
+
+X 
+
+> i̸=0
+
+J20i
+
+ Re gab ii (τ1 − τ2) − Sai Sbi
+
+
+
+= J2Q
+
+ Re gab (τ1 − τ2) − Sa 
+
+> 0
+
+Sb
+
+> 0
+
+ . (17b) In the second step of Eq. (17a) and the third step of Eq. (17b), we assumed homogeneity of the spin ensemble and used the linear and quadratic coupling constants defined in Eq. (3). The assumption of homogeneity may not be justified if the translational symmetry is spontaneously broken, as in antiferromagnets on bipartite lattices. In the second step of Eq. (17b), we discarded contributions with i̸ = j. The validity of this single-site approximation has been proven in the case of infinite temperature [24 ] and in the case of the Sherrington-Kirkpatrick model [29 ] and we use it by extension in our present approach. The connection of our method to spin glass physics will be further explored in sec-tion 3.3 and appendix C. The linear sum of the couplings can take any real value, leading to a ferromagnetic (antiferromagnetic) system when the negative (positive) couplings dominate, meaning JL < 0 ( JL > 0). We will see that the approach provides a surprisingly good approx-imation even for the dynamics of a system with a finite number of same-sign couplings when discussing the results in section 3. Equation (17) represents a self-consistency condition because the spin autocorrelations and expectation values on the right-hand-side are unknown. In the single-site model, they can be calculated through Eq. (15) requiring the mean-field distribution functional and, thus, the moments on the left-hand-side of Eq. (17b). This self-consistency problem can be solved by numerical iteration: Given an initial guess for the spin autocorrelations and expectation values, the moments of the mean-field distribution are obtained. With the distribution given, new spin autocorrelations and expectation values are computed using Eq. (15). These are then reinserted to Eq. (17b) to obtain new mean-field moments and the procedure is iterated until convergence is achieved, i.e., until the difference between the correlations in two subsequent steps is smaller than a certain tolerance value. Details on the numerical implementation will be provided in the next section. 
+
+6SciPost Physics Submission 
+
+The derivation and the resulting single-site model is similar to infinite-temperature spinDMFT 
+
+[24 ], but we emphasize a few crucial differences: First, we work in imaginary time on a finite interval τ ∈ [0, β). Second, we explicitly take the real part of the environment field correla-tions in Eq. (16b) to ensure that the time ordering is symmetric and the mean fields are real. Third, we need to take finite spin expectation values into account, which can arise from spon-taneous symmetry breaking and /or from external magnetic fields. These expectation values affect the mean-field averages and thereby also the spin dynamics. 
+
+# 3 Implementation and benchmarks 
+
+3.1 Numerical implementation 
+
+In order to test the method, we use a numerical procedure to solve the self-consistency con-dition outlined in the section above, utilizing a similar approach to the implementation of infinite-temperature spinDMFT [24 ]. The main challenge is computing the path integral over mean-field configurations for spin correlations (15b). To this end, we discretize imaginary time 
+
+τ ∈ [0, β] into equidistant steps (τ0 = 0, τ1, . . . τL = β) with τl = l β 
+
+> L
+
+. Then, the mean-field configuration can be written as a 3 (L + 1)-dimensional vector ⃗ V = ( ⃗ V (τ0),⃗ V (τ1), . . . , ⃗ V (τL )) T
+
+and the path integral becomes a 3 (L + 1)-dimensional integral 
+
+Z
+
+D⃗ V =
+
+Z
+
+d3⃗ V (τ0)
+
+Z
+
+d3⃗ V (τ1) . . . 
+
+Z
+
+d3⃗ V (τL ). (18) The probability distribution of the mean fields takes the form 
+
+p[⃗ V] = 1
+
+pdet2 πM exp 
+
+
+
+− 12
+
+ ⃗ V −⃗ UT M−1  ⃗ V −⃗ U
+
+, (19) where the covariance matrix is defined as 
+
+Mab  
+
+> τ1τ2
+
+= Cov V a(τ1), V b(τ2) (20) and the average vector is 
+
+U a 
+
+> τ
+
+= V a(τ). (21) Note that the average vector is constant in time due to time translational invariance. The co-variance matrix is 3 (L + 1)-dimensional. To evaluate the high-dimensional integrals required to compute spin correlations and expectation values, we use the Monte Carlo approach. We draw mean-field configurations from the probability distribution p[⃗ V], calculate the resulting expectation values of the observables of interest, and take the arithmetic average of many single-sample results to obtain the final values. The number of samples is taken sufficiently large to keep the statistical error below the desired threshold. For details of the implementa-tion, i.e., how the sampling and time evolution is performed numerically, see appendix A.2. 
+
+3.2 Spin correlations 
+
+Before proceeding to the results of the algorithm, we analyze the mathematical structure of the computed quantities. The properties of spin operators imply that 
+
+gab (0) = 14 δab + i2 ϵabc Sc 
+
+> 0
+
+, (22) where ϵabc is the Levi-Civita symbol and the sum convention is implied. The diagonal corre-lations start at 14 , and the off-diagonal ones depend on the expectation value of the spin in 
+
+7SciPost Physics Submission 
+
+the direction perpendicular to a, b. By taking the complex conjugate of the correlations, one obtains the following formulas Re gab (τ) = 12
+
+ gab (τ) + g ba (τ) ; (23a) Im gab (τ) = 12i 
+
+ gab (τ) − g ba (τ) ; (23b) 
+
+gab (τ) = g ba (β − τ). (23c) Note, that for the diagonal correlations gaa (τ), the imaginary parts vanish, and equation (23c) implies that they are symmetric around τ = β/2: gaa (β − τ) = gaa (τ). The presence of symmetry further simplifies the correlations. When ⃗ B = 0, the system becomes invariant under spin rotations. Therefore, non-diagonal correlations vanish, gab = 0 for a̸ = b, and the diagonal correlations are equal g x x (τ) = g y y (τ) = gzz (τ). Additionally, any spin expectation value vanishes as well, i.e.,  ⃗ Sa 
+
+> 0
+
+= 0. Therefore, it is sufficient to compute a single correlation 
+
+g x x (τ), which is real. In the presence of an external magnetic field ⃗ B pointing along the z axis, the rotational symmetry is reduced to the symmetry under rotations around the z axis. Under the π 
+
+> 2
+
+-rotation around the z axis, the spin components transform as Sx → Sy and Sy → − Sx .Therefore, gaz (τ) = 0 for a = x, y, g x x (τ) = g y y (τ) and g x y (τ) = −g y x (τ). Then, there are three independent correlations: g x x (τ), g x y (τ) and gzz (τ). Due to relation (23c), the x y 
+
+correlation is β-antisymmetric g x y (β − τ) = −g x y (τ) and therefore purely imaginary. 
+
+3.3 Comparison to finite-size results 
+
+To benchmark spinDMFT at finite temperatures, we compare the resulting spin correlations to those computed in finite-size spin systems. The finite-size approaches cannot access the infinite-dimensional limit, as they exhibit finite-size effects and their coordination numbers are finite. But they represent the best benchmarks at hand and it will turn out that in certain cases spinDMFT yields remarkably good agreement. To compute the correlations in finite-size systems, we combine two numerical methods: the Chebyshev expansion technique (CET) and quantum typicality (QT). The Chebyshev ex-pansion technique allows us to approximate the evolution operator by expanding it in terms of Chebyshev polynomials of the Hamiltonian [13–15 ]. QT is a method for computing ex-pectation values of operators without taking the trace over the whole Hilbert space [35, 36 ].The correlations are approximated stochastically by replacing the traces by sums over random vectors. The advantage of the approach using CET and QT is its memory and time efficiency. Thanks to the Chebyshev expansion, only the action of the Hamiltonian on vectors of the Hilbert space is required to compute the correlations. Since the Hamiltonian does not need to be diagonalized, it is not necessary to save it in memory. Only the states, which are complex vectors of size 2 N (in contrast to matrices of size 2 N × 2N ), need to be stored. The largest system considered here is a 4 × 5 square lattice, but 5 × 5 and larger is feasible with more computational effort. For a detailed description of the employed methods, see appendix B. For comparison, we consider three different systems: a nearest-neighbor ferromagnet, a nearest-neighbor antiferromagnet and an infinite-range system with random couplings. For the latter, we draw couplings between each pair of spins in the cluster from a Gaussian distribution cen-tered on 0, and average over correlations from many coupling configurations. In each sample, we normalize the couplings so that JQ remains constant. We depict the three systems in Fig. 1. For each system, we consider the isotropic case without a magnetic field and the case with the magnetic field. For the ferromagnet and antiferromagnet, we consider a 4 × 5 system with periodic boundary conditions. The odd number of sites could influence the antiferromagnet by introducing frustration, but we verified that at the considered temperatures only minor differences appear between a 4 × 5 and 4 × 6 system. 
+
+8SciPost Physics Submission 
+
+Figure 1: Three types of systems used for benchmarking: nearest-neighbor ferro-magnet (a) and antiferromagnet (b) on a 2D square lattice with periodic boundary conditions and (c) infinite-range system with random couplings (number of sites not representative of the system used in numerics). Black dots represent lattice sites and the blue (red) lines negative (positive) couplings which are ferromagnetic (antifer-romagnetic) in character. In Figs. 2 and 3, we compare the correlations resulting from spinDMFT with the ones computed in finite-size systems at various temperatures. Since for ⃗ B = 0 spinDMFT depends on the system only through the parameter JQ, it cannot distinguish between different signs of couplings. Therefore, a single curve can be compared to all three finite-size systems. At very high temperatures, the agreement is very good in all cases, because then the signs of the couplings do not play a role and the single-site approximation is well-justified. As the tempera-ture drops, the curves from the antiferromagnetic system start deviating significantly from the ones obtained by spinDMFT. We attribute this behavior tentatively to incipient antiferromag-netic order and its spin flop transition which are not captured by an approach not allowing for breaking of the translational symmetry in its present implementation. Surprisingly, the corre-lations in the ferromagnetic couplings follow the ones from spinDMFT quite closely, although with some small deviations. We observe that the curves obtained in spinDMFT always lie between the correlations in the ferromagnetic and antiferromagnetic system. This agrees with our expectations, since spinDMFT computes the correlations for a mixed-sign system, therefore including more posi-tive /negative couplings should shift the correlations in opposite directions. For the random-coupling system, the correlations agree with spinDMFT very well. The deviations at the lowest considered temperature are likely due to an insufficient number of coupling configurations in-cluded in the averaging rather than from a shortcoming of spinDMFT. Therefore, we see that the method is able to exactly calculate correlations for a spin glass in the paramagnetic phase, thus reproducing the results of Ref. [30 ]. For a direct comparison, see appendix C. 
+
+9SciPost Physics Submission 0.0 0.2 0.4 0.6 0.8 1.0 
+
+/
+
+> 0.18
+> 0.20
+> 0.22
+> 0.24
+> gxx ( )
+> JQ=0.2
+> JQ=0.5
+> JQ=1
+> JQ=1.5
+> JQ=2
+> JQ=2.5
+
+Figure 2: Comparison of correlations obtained in spinDMFT (green) and in a ferro-magnet (blue) and antiferromagnet (red) at different temperatures, which are de-picted by different symbols. The considered finite-size systems are a 2D square 4 × 5lattice with nearest-neighbor negative /positive couplings, see Fig. 1. Note that there is an incidental overlap of the spinDMFT curve at β JQ = 2.5 and the AFM curve at 
+
+β JQ = 2. The error bars for spinDMFT and finite-size data are smaller than the width of the curves. 0.0 0.2 0.4 0.6 0.8 1.0 
+
+/
+
+> 0.18
+> 0.20
+> 0.22
+> 0.24
+> gxx ( )
+> JQ=0.2
+> JQ=0.5
+> JQ=1
+> JQ=1.5
+> JQ=2
+> JQ=2.5
+
+Figure 3: Comparison of correlations obtained in spinDMFT (green) and in an infinite-range system with random couplings (purple) at different temperatures (de-picted by different symbols). The considered finite-size system is 12 spins coupled in a random fashion, the curve is obtained by averaging over 1000 coupling configura-tions. The error bars resulting from the averaging and the spinDMFT error bars are smaller than the width of the curves. In Fig. 4 we present a comparison between spinDMFT and the ferromagnetic system in a magnetic field applied in the z direction. The linear coupling constant in spinDMFT was set to JL = −2JQ, corresponding to z = 4 neighbors with equal negative couplings. We see good agreement at high temperatures and increasing deviations as the temperature decreases. How-ever, we note that the qualitative behavior of the correlations in spinDMFT and in the finite-size system is similar – the x x correlations take much smaller values than the zz correlations, re-
+
+10 SciPost Physics Submission 
+
+flecting the tendency of spins to align with the magnetic field. Note, that the values of the zz 
+
+correlations first decrease with temperature, and then start increasing for both spinDMFT and the exact results. This is expected, since for a ferromagnetic system at zero temperature the zz 
+
+correlation would stay constant at 14 . The x y correlations take values close to the maximum value 14 , corresponding to a large magnetic moment developing even at low fields. In Fig. 5 we present a comparison between spinDMFT and the antiferromagnetic system in a magnetic field applied in the z direction. The linear coupling constant in spinDMFT was set to JL = 2JQ, corresponding to z = 4 neighbors with equal positive couplings. Once again, we see good agreement at high temperatures and increasing deviations as the temperature decreases. The qualitative behavior is as expected – in both spinDMFT and exact results, 
+
+x x and zz correlations have a similar magnitude, corresponding to the system resisting the influence of the magnetic field. The x y correlations take small values for the same reason. At low temperatures β JQ > 1.5 in the antiferromagnetic case, we found that spinDMFT does not converge, with the differences between consecutive results remaining large even after 20 iterations. We suspect it to be an indication of the insufficiency of the single-site approximation and the self-consistency condition (17a) to describe antiferromagnetic ordering. It is clear, that the approximation of the spin expectation values being equal on all sites is not valid for a system in which spins anti-align or cannot do so due to a spin flop transition. However, this problem only arises when we include the external magnetic field, as only then the sublattices become inequivalent. In Fig. 6 we present a comparison between spinDMFT and the random-coupling system in a magnetic field applied in the z direction. The linear coupling constant in spinDMFT was set to JL = 0, since in the random-coupling system positive and negative couplings are equally probable so that they average to zero. As in the case without an external field, the spinDMFT describes the random-coupling system very well. The only noticeable deviations appear in the 
+
+x y correlation at low temperatures. This might indicate an insufficiency of the considered self-consistency condition, for instance by taking the real part of the correlations. In the current form, the x y correlations do not enter into the self-consistency at all and may not be simulated correctly. This question deserves further studies beyond the scope of the present article. 
+
+11 SciPost Physics Submission /
+
+> 0.075
+> 0.100
+> 0.125
+> 0.150
+> 0.175
+> 0.200
+> 0.225
+> 0.250
+> gxx ( )
+
+(a) 
+
+/
+
+> 0.2
+> 0.1
+> 0.0
+> 0.1
+> 0.2
+> Im  gxy ( )
+
+(b)      
+
+> 0.0 0.2 0.4 0.6 0.8 1.0
+
+/
+
+> 0.235
+> 0.240
+> 0.245
+> 0.250
+> gzz ( )
+
+(c) 
+
+> JQ=0.2
+> JQ=0.5
+> JQ=1
+> JQ=1.5
+> JQ=2
+> JQ=2.5
+
+Figure 4: Comparison of correlations obtained in spinDMFT (green) and in a ferro-magnetic system (blue) at different temperatures (signified by the symbols) in the presence of an external magnetic field ( Bz /JQ = 0.5). We depict the x x correlation in (a), x y correlation in (b) and zz correlation in (c). Note the very different y-axis scales used for (a) and (c). The considered finite-size system is a 2D square 4 × 5lattice with nearest-neighbor negative couplings. In (c), note the incidental overlap of the spinDMFT curves at β JQ = 1.5, 2 and the FM curve at β JQ = 2.5. The error bars resulting from time discretization and averaging over the distribution of mean fields for spinDMFT are smaller than the line width of the curves. There are small errors from the typicality average for the finite-size correlations, especially in the zz 
+
+correlations. 
+
+12 SciPost Physics Submission /
+
+> 0.21
+> 0.22
+> 0.23
+> 0.24
+> 0.25
+> gxx ( )
+
+(a) 
+
+/
+
+> 0.04
+> 0.02
+> 0.00
+> 0.02
+> 0.04
+> Im  gxy ( )
+
+(b)      
+
+> 0.0 0.2 0.4 0.6 0.8 1.0
+
+/
+
+> 0.21
+> 0.22
+> 0.23
+> 0.24
+> 0.25
+> gzz ( )
+
+(c) 
+
+> JQ=0.2
+> JQ=0.5
+> JQ=1
+> JQ=1.5
+
+Figure 5: Comparison of correlations obtained in spinDMFT (green) and in an an-tiferromagnetic system (red) at different temperatures (signified by the symbols) in the presence of an external magnetic field ( Bz /JQ = 0.5). We depict the x x correla-tion in (a), x y correlation in (b) and zz correlation in (c). The considered finite-size system is a 2D square 4 × 5 lattice with nearest-neighbor positive couplings. The errorbars for spinDMFT and the finite-size data are smaller than the width of the curves. 
+
+13 SciPost Physics Submission /
+
+> 0.18
+> 0.20
+> 0.22
+> 0.24
+> gxx ( )
+
+(a) 
+
+/
+
+> 0.10
+> 0.05
+> 0.00
+> 0.05
+> 0.10
+> Im  gxy ( )
+
+(b)      
+
+> 0.0 0.2 0.4 0.6 0.8 1.0
+
+/
+
+> 0.18
+> 0.20
+> 0.22
+> 0.24
+> gzz ( )
+
+(c) 
+
+> JQ=0.2
+> JQ=0.5
+> JQ=1
+> JQ=1.5
+> JQ=2
+> JQ=2.5
+
+Figure 6: Comparison of correlations obtained in spinDMFT (green) and in an infinite-range system with random couplings (purple) at different temperatures (sig-nified by the symbols) in the presence of an external magnetic field ( Bz /JQ = 0.5). We depict the x x correlation in (a), x y correlation in (b) and zz correlation in (c). The considered finite-size system is 12 spins coupled in a random fashion, the curve was obtained by averaging over 250 coupling configurations. The spinDMFT error bars are smaller than the width of the curves. The finite-size data has noticeable errors due to the averaging over the Gaussian distributed couplings. 
+
+14 SciPost Physics Submission 
+
+3.4 Ferromagnetic phase transition in spinDMFT 0.4 0.3 0.2 0.1 0.0 0.1 0.2 0.3 0.4   
+
+> BzJ1
+> Q
+> 0.4
+> 0.2
+> 0.0
+> 0.2
+> 0.4
+> Sz
+> 0
+> JQ=0.5
+> JQ=1.5
+> JQ=2.5
+> JQ=3.5
+
+Figure 7: Dependence of the spin expectation value on the magnetic field in ferro-magnetic spinDMFT at a range of temperatures. We want to study the dependence of the spin expectation values on the external magnetic field and the possibility of order arising in spinDMFT. We take JL = −2JQ to model the ferromagnetic system on a square lattice. At each temperature, we run the simulation using the following procedure: first, we generate results for a large magnetic field Bz = 0.5 JQ. Then, we use the obtained data as an initial condition for smaller magnetic field. In Fig. 7, the obtained magnetization curves at three different temperatures are shown. One can see, that for the two higher temperatures, M → 0 as B → 0. However, as the temperature drops, 〈Sz
+
+> 0
+
+〉 remains nonzero as the magnetic field vanishes. We see a clear hallmark of a ferromagnetic phase transition. This provides evidence that we can capture the ferromagnetic ordering transition for JL < 0. It is contrary to the expectation that for the 1 /pz scaling of the Hamiltonian, the critical temperature diverges, as stated in [32 ]. It turns out that when the average of the couplings remains finite and negative in the z → ∞ limit, we are able to obtain spin order. It should be noted, that spinDMFT leads to the same phase transition for an antiferromagnet on a bipartite lattice. If we take JL > 0 and change the self-consistency condition (17a) to 
+
+V a(τ1) = −JL Sa
+
+> 0
+
+(τ1) (24) to model the neighboring spins anti-aligning with the spin ⃗ S0, we are left with a mathematically equivalent formulation. Therefore all of the results remain the same, but now the computed spin expectation values can be interpreted as sublattice magnetization. 
+
+15 SciPost Physics Submission 1.75 2.00 2.25 2.50 2.75 3.00 3.25 3.50 
+
+> JQ
+> 0.00
+> 0.05
+> 0.10
+> 0.15
+> 0.20
+> 0.25
+> 0.30
+> 0.35
+> 0.40
+> 0.45
+> Sz
+> 0
+> Data
+> Spline
+
+Figure 8: Dependence of the spin expectation value without an external magnetic field on temperature (blue points) and a numerically obtained spline function fitted to the points(red line). Now, we study the temperature dependence of the spin expectation value at zero external field to determine the critical temperature at which order arises. The obtained data points are depicted Fig. 8. Intriguingly, we do not see the magnetization disappearing but rather slowly decaying after a sudden drop. To extract the critical temperature, we compute a spline function numerically and find the inflection point by setting the second derivative to zero. The obtained estimate for the temperature is βc JQ ≈ 2.39. This is in contrast to the standard result from static mean-field theory [37 ], which is given by 
+
+βc JQ = 3JQ
+
+|JL |S(S + 1) = 2. (25) This indicates that the dynamical flucutations included in spinDMFT have a non-negligeable effect on the critical temperature so that its value differs from what is reached by a static local mean-field treatment. This represents a promising route of further investigations. 
+
+# 4 Conclusion 
+
+In this work, we developed and tested a mean-field theory approach for the treatment of dense spin systems at finite temperature. It utilizes a time-dependent mean field to compute dynamical correlations in imaginary time. We argue that it is justified in the limit of an infinite coordination number in analogy to dynamical mean-field theory used for fermions. Hence we term our approach dynamical mean-field theory for spin systems (spinDMFT). The key quantities for determining spin dynamics at finite temperatures are imaginary time-dependent autocorrelations and spin expectation values. We introduce an imaginary-time dependent mean field and argue that it is Gaussian distributed. The first and second moments of their probability distributions are connected to the autocorrelations and spin expectation values. This defines a self-consistency condition which we solve numerically by iteration of a stochastic approach. 
+
+16 SciPost Physics Submission 
+
+The results of the method are gauged against exact results in small systems: a nearest-neighbor ferromagnet and antiferromagnet as well as a system with randomly sampled infinite-range couplings. We see good agreement in all cases at large temperatures, while at lower temperatures the results follow the correlations in the random-coupling system, deviating from the results on the other lattices. We also study the influence of an external magnetic field, once again obtaining the best agreement with the random-coupling system. The algorithm does not converge for low temperatures in the case of an antiferromagnet in an external magnetic field, presumably signaling that the antiferromagnetic order requires an extension beyond the treatment of a single site. In the case of a ferromagnet, we see the the appearance of ferromagnetic order at low temperatures. Interestingly, the determined critical temperature is lower than the one from the standard static mean-field theory, indicating that the temporal fluctuations hamper ordering. The mathematical underpinnings of the method remain an open problem. We did not provide a definite proof of the locality of the many-body problem in the z → ∞ limit, nor of the exact form of the proposed self-consistency condition. The validity of this assumption certainly depends on the properties of the considered spin Hamiltonian, which we do not specify. A more thorough mathematical investigation could reveal the parameter regime in which the method is most effective. Yet, we believe that the advantageous comparisons with finite-size results are convincing enough to use spinDMFT also at finite temperature henceforth. Extensions of the method (discussed below) are expected to shine more light on these issues in the future. There are multiple possibilities for extensions of spinDMFT at finite temperature. Includ-ing spin anisotropies, for instance, considering an XXZ instead of the isotropic Heisenberg Hamiltonian or adding Dzyaloshinskii–Moriya interactions, is relatively straightforward and amounts to a modification of the self-consistency conditions. Going beyond the single-site ap-proximation by treating a larger spin cluster in a quantum manner has already been achieved at infinite temperature and is also straightforward to implement in our formalism. We expect it to improve agreement with finite-size results, in particular in the case of an antiferromagnetic system, where we could directly capture anti-aligned spins. A less computationally expensive alternative is considering multiple spins that are not di-rectly coupled but interact through influencing each other’s mean fields. One could also con-sider devising a modified self-consistency condition which takes into account the imaginary part of correlations. Another possible extension is directly computing the real-time evolution of spins. The constraints of our method would then force us to consider correlations of the mean-fields as a function of a complex parameter t + iτ ∈ [0, ∞] × [0, β] along a Keldysh contour, increasing the computational effort. However, the substantial benefit is the ability to simulate the evolution with time-dependent Hamiltonians and capture non-equilibrium ef-fects. The establishment of spinDMFT at finite temperature opens up possibilities for new ap-plications. SpinDMFT generally has enormous potential in the field of NMR. The approach is well suited to describe spin diffusion [38, 39 ], which is highly relevant in the research of dynamic nuclear polarization (DNP). Solid-state DNP is usually performed at cryogenic tem-peratures, where nuclear polarizations can become large enough that the infinite temperature assumption is no longer valid. Here, the presented finite-temperature version of spinDMFT can be very valuable. For extended solid state systems it is of great interest to capture phase transitions including dynamical correlations. Then, the dynamical structure factor becomes accessible and thereby the dispersion of magnetic excitations such as magnons, triplons and spinons as function of temperature. The renormalization and the broadening of their spectral lines would give access to the influence of temperature on their energy and on their life time. Hence, it is highly promising to pursue this line of research further. 
+
+17 SciPost Physics Submission 
+
+# Acknowledgements 
+
+We acknowledge useful discussions with Antonia J. Bock, Matthias Ernst, Piotr Kulik and Joachim Stolze. 
+
+Author contributions GSU formulated the scientific question and proposed the general ap-proach. TG and PB worked it out in detail. PB carried out the calculations, implemented the code, created the figures and wrote large parts of the manuscript. All authors interpreted the results and edited the manuscript. 
+
+Funding information PB thanks the Studienstiftung des deutschen Volkes for financial sup-port by an individual grant. 
+
+# A Additional details of spinDMFT 
+
+A.1 The cavity method and Wick’s theorem 
+
+In this section, we discuss the derivation of spinDMFT in more detail. The idea is to separate the degrees of freedom of spin ⃗ S0 from the ones of the remaining ensemble, which we refer to as cavity system. We present this derivation particularly for the spin autocorrelations, but the derivation for the spin expectation values and the partition function is analogous. The trace in Eq. (13) can be expanded according to 
+
+gαβ (t, 0 ) = 
+
+X
+
+> m,n
+
+(−1)m+n
+
+m!n!
+
+Z βτ
+
+dτ1 . . . d τm
+
+Z τ
+
+> 0
+
+dτ′ 
+
+> 1
+
+. . . d τ′ 
+
+> n
+
+f mn ({τ}, {τ′
+
+}) (A.1a) 
+
+f mn ({τ}, {τ′
+
+}) :=
+
+X
+
+> α1... αm
+
+X
+
+> α′
+> 1... α′
+> n
+
+smn ({τ, α}, {τ′
+
+, α′
+
+})wmn ({τ, α}, {τ′
+
+, α′
+
+}) (A.1b) 
+
+smn ({τ, α}, {τ′
+
+, α′
+
+}) :=
+
+X
+
+> m0
+
+ZC
+
+Z 〈m0| Pα1... αm
+
+> τ1... τm
+
+
+
+> m
+
+Y
+
+> p=1
+
+Sαp
+
+> 0
+
+ Sα 
+
+> 0
+
+Pα′
+
+> 1... α′
+> n
+> τ′
+> 1... τ′
+> n
+
+
+
+> n
+
+Y
+
+> q=1
+
+Sα′
+
+> q
+> 0
+
+ Sβ 
+
+> 0
+
+|m0〉 (A.1c) 
+
+wmn ({τ, α}, {τ′
+
+, α′
+
+}) :=
+
+X
+
+> W
+
+1
+
+ZC
+
+〈W | e−βWT
+
+> m
+
+Y
+
+> p=1
+
+˜Vαp 
+
+> 0
+
+(τp)
+
+> n
+
+Y
+
+> q=1
+
+˜Vα′ 
+
+> q
+> 0
+
+(τq) |W 〉 . (A.1d) where ZC is the partition function of the cavity system, |m0〉 is a basis state of spin ⃗ S0 and |W 〉
+
+is a basis state of the cavity system. The permutation operator P orders the subsequent spin operators with indices α in such a way that the attached times τ decrease from left to right. We used ˜ V := V − 〈 V〉 to denote the operators shifted so that they have zero mean. Identifying e−βW/ZC as the thermal density operator of the cavity system, the expression in Eq. (A.1d) can be interpreted as an expectation value computed in the cavity system. If the coordination number is large, removing a single spin ⃗ S0 from the ensemble produces an effect of order 1 /z
+
+in local quantities around the removed site [26 ]. Hence, in the limit z → ∞ , this expectation value is identical to an analogous expectation value in the full system, 
+
+wmn ({τ, α}, {τ′
+
+, α′
+
+}) = 
+
+*
+
+T
+
+> m
+
+Y
+
+> p=1
+
+˜Vαp 
+
+> 0
+
+(τp)
+
+> n
+
+Y
+
+> q=1
+
+˜Vαq 
+
+> 0
+
+(τq)
+
++
+
+> C
+> z→∞
+
+=
+
+*
+
+T
+
+> m
+
+Y
+
+> p=1
+
+˜Vαp 
+
+> 0
+
+(τp)
+
+> n
+
+Y
+
+> q=1
+
+˜Vαq 
+
+> 0
+
+(τq)
+
++
+
+.(A.2) 
+
+18 SciPost Physics Submission 
+
+In principle, the spin and cavity degrees of freedom are separated in Eq. (A.1), but the evalu-ation of wmn is not feasible and one needs to take infinitely many terms into account. Using the fact that the fields ˜ V consist of many separate contributions we argue that they behave like classical variables because the relative norm of their commutators vanish relative to the operators themselves [40 ]. In a second step, we argue again due to the many contributions to the fields that the central limit theorem holds for them so that Wick’s theorem for them. Then 
+
+wmn can be simplified significantly so that Eq. (A.1) can be evaluated by a single-site model with Gaussian mean fields. Hence, we use 
+
+〈T ˜Va
+
+> 0
+
+(τ1)˜Vb 
+
+> 0
+
+(τ2)〉 ≈ Re 〈T ˜Va
+
+> 0
+
+(τ1)˜Vb 
+
+> 0
+
+(τ2)〉 (A.3a) 
+
+〈T ˜Va
+
+> 0
+
+(τ1)˜Vb 
+
+> 0
+
+(τ2)˜Vc
+
+> 0
+
+(τ3)〉 ≈ 0 (A.3b) 
+
+〈T ˜Va
+
+> 0
+
+(τ1)˜Vb 
+
+> 0
+
+(τ2)˜Vc
+
+> 0
+
+(τ3)˜Vd 
+
+> 0
+
+(τ4)〉 ≈ Re 〈T ˜Va
+
+> 0
+
+(τ1)˜Vb 
+
+> 0
+
+(τ2)〉 Re 〈T ˜Vc
+
+> 0
+
+(τ3)˜Vd 
+
+> 0
+
+(τ4)〉
+
++ Re 〈T ˜Va
+
+> 0
+
+(τ1)˜Vc
+
+> 0
+
+(τ3)〉 Re 〈T ˜Vb 
+
+> 0
+
+(τ2)˜Vd 
+
+> 0
+
+(τ4)〉
+
++ Re 〈T ˜Va
+
+> 0
+
+(τ1)˜Vd 
+
+> 0
+
+(τ4)〉 Re 〈T ˜Vb 
+
+> 0
+
+(τ2)˜Vc
+
+> 0
+
+(τ3)〉 ,(A.3c) and analogous approximations for higher-order terms. A rigorous proof that this approxima-tion becomes exact for z → ∞ is lacking so that it remains an assumption. However, analogous to infinite-temperature spinDMFT, there is a strong argument for Wick’s theorem: If z is large, the environment fields V0 consist of a large number of spins, which due to the scaling of the couplings J ∝ 1/pz are only weakly correlated. Therefore, the conditions of the central limit theorem are fulfilled, which implies that the field is Gaussian distributed and its moments separate according to Wick’s theorem. Taking the real part in Eq. (A.3) corresponds to an ad-ditional assumption, which will later ensure that the mean fields are real-valued. At infinite temperature, this is irrelevant, since all correlations remain purely real. At finite temperature, correlations can become complex so that taking the real value does make a difference. An extension to complex mean fields, where the real part is not taken, is not studied in this work. 
+
+A.2 Implementation 
+
+The numerical implementation of spinDMFT consists of two main steps: sampling of the mean fields and computation of correlations with the drawn fields. First, we use initial correlations and spin expectation values to build the covariance matrix (20) and the average vector (21). To simplify the calculations, we can use the symmetry of the considered problem. For instance, when the external magnetic field vanishes, ⃗ B = 0, the Hamiltonian (1) becomes spin isotropic. As discussed in section 3.2, in this case the diagonal correlations are all equal and the off-diagonal correlations and the spin expectation values vanish. We can enforce this symmetry in the implementation, setting Mx x  
+
+> τ1τ2
+
+= My y  
+
+> τ1τ2
+
+= Mzz  
+
+> τ1τ2
+
+and Mab  
+
+> τ1τ2
+
+= 0 for a̸ = b. Then, only one spin correlation, e.g. g x x needs to be calculated to define the whole covariance matrix. The sampling is simplified because the covariance matrix is block-diagonal and the x, y and 
+
+z component can be drawn separately. In the case with a magnetic field ⃗ B = B⃗e z , one can similarly use the invariance under rotations around the z axis for a reduction of the number of relevant correlations. In order to draw the mean fields from the probability distribution (19), we need to diag-onalize the covariance matrix. After drawing the random mean fields in the diagonal basis, they are transformed back to the original basis. Since the matrix is time-translation-invariant 
+
+Mab  
+
+> τ1τ2
+
+= Mab 
+
+> τ1−τ2,0
+
+, diagonalization is most easily achieved through a Fourier transform to Matsubara frequencies 
+
+Mab (ωn) = 1
+
+pβ
+
+Z β
+
+> 0
+
+dτ e−iωnτMab 
+
+> τ,0
+
+. (A.4) 
+
+19 SciPost Physics Submission 
+
+Then, the covariance matrix becomes block-diagonal (the blocks are 3 ×3 and correspond to spin indices). The self-consistency condition takes the form 
+
+M ab (ωn) = J2
+
+> Q
+
+ Re gab (ωn) − Sa 
+
+> 0
+
+Sb
+
+> 0
+
+ , (A.5) with ωn = 2πn/β being the bosonic Matsubara frequencies. After drawing the mean fields ⃗
+
+V (ωn), the fields in the imaginary time domain are obtained by a Fourier back transform. Using the frequency representation is significantly more efficient than direct diagonalization of the covariance matrix. The frequency approach scales as L log L with the number of time points, compared to the L3 scaling of diagonalization. After drawing a given configuration of the mean fields ⃗ V = ( ⃗ V (0),⃗ V (∆τ), . . . , ⃗ V (β)) T , we use it to compute evolution operators U(τ, 0 ) for τ ∈ (0, ∆τ, . . . , β) as in Eq. (15c). To this end, we express them as 
+
+U(τ, 0 ) = U(τ, τ − ∆τ)U(τ − ∆τ, τ − 2∆τ) . . . U(∆τ, 0 ). (A.6) Then, the evolution over time steps ∆τ can be efficiently computed with commutator-free exponential time propagation (CFET) [41 ]. We truncate at fourth order in ∆τ, leading to the following approximate formula 
+
+UCFET4 (τl , τl−1) = exp 
+
+ 11 40 A1 + 20 87 A2 + 750 A3
+
+
+
+exp 
+
+ 920 A1 − 725 A3
+
+
+
+× exp 
+
+ 11 40 A1 − 20 87 A2 + 750 A3
+
+
+
+, (A.7) where 
+
+Aj = ( 2 j − 1) ∆τ
+
+2
+
+ Hmf (τl ) − (−1)j Hmf (τl−1) . (A.8) The matrix exponentials are efficiently computed using the Pauli matrix exponential formula exp (−⃗a ·⃗σ) = cosh (|⃗a|)1 − sinh (|⃗a|)
+
+|⃗a|⃗ a ·⃗σ, (A.9) since the mean-field Hamiltonian can always be expressed as a sum of Pauli matrices. 
+
+# B Finite-size numerical methods 
+
+B.1 Chebyshev expansion technique 
+
+The Chebyshev expansion technique [13–15 ] is a method for approximating the action of the evolution operator on the states by expanding it in Chebyshev polynomials of the Hamiltonian. The Chebyshev polynomials are defined recursively by 
+
+T0(x) = 1, T1(x) = x, Tn(x) = 2x T n−1(x) − Tn−2(x). (B.1) To expand the evolution operator, the Hamiltonian must be rescaled such that the spectrum is contained in the interval [−1, 1 ]. This can be done by defining H′ = ( H − b)/a, with a, b de-pending on the smallest and largest eigenvalue of the Hamiltonian Emin , Emax as a = ( Emax −Emin )/2and b = ( Emax + Emin )/2. The extrema of the spectrum can be obtained straightforwardly with the Lanczos algorithm. Then, the evolution operator can be expressed as 
+
+U(τ) = 
+
+> ∞
+
+X
+
+> n=0
+
+αn(τ)Tn(H′); (B.2) 
+
+αn(τ) =( 2 − δn,0 )ebτ In(aτ), (B.3) 
+
+20 SciPost Physics Submission 
+
+with In being the n-th modified Bessel function of the first kind. In practice, it is more efficient to consider the action of the operator on states. Given an initial state |ψ0〉, its time evolution can be computed as 
+
+|ψ(τ)〉 =
+
+> ∞
+
+X
+
+> n=0
+
+αn(τ)|ψn〉, (B.4) with the states |ψn〉 given by a recursion 
+
+|ψ1〉 = H′|ψ0〉, |ψn〉 = 2H′|ψn−1〉 − | ψn−2〉. (B.5) When implementing the method, the infinite sum in the expansion has to be truncated at some cut-off order Nc. The truncation error scales as 
+
+εCET ∼ O
+
+ paτ
+
+Nc
+
+Nc
+
+. (B.6) From this we see that the cut-off order required to minimize the error grows with the band-width of the Hamiltonian and with the time the evolution is carried out for. For that reason, it is profitable to conduct the time evolution over small timesteps, as it minimizes the required cut-off order. In the case of a spin- 12 Heisenberg Hamiltonian, the action of the Hamiltonian on states can be implemented using bitwise operations to reduce computation time. The main advantage of the algorithm is its memory efficiency. When computing evolution with this approach, only the action of the Hamiltonian is required, not its matrix form. Therefore, it is enough to save states in memory instead of matrices. 
+
+B.2 Quantum typicality 
+
+Quantum typicality (QT) is a method for computing expectation values of operators without taking the trace over the whole Hilbert space [35, 36 ]. The correlations are approximated stochastically by replacing the traces by sums over vectors with random entries 
+
+gab (τ) = 
+
+P 
+
+> i
+
+〈ψi (β)|eτHSa 
+
+> 0
+
+e−τHSb 
+
+> 0
+
+|ψi (β)〉
+
+P 
+
+> i
+
+〈ψi (β)|ψi (β)〉 (B.7) where the thermalized vectors are |ψi (β)〉 = e−βH/2|ψi 〉 and the components of the random vectors are generated by (|ψi 〉)n = an + i b n with an, bn drawn from a Gaussian distribution with variance σ = 1. The error from QT sampling scales as 
+
+σ(εQT ) ≈ O
+
+vut Re Sa
+
+> 0
+
+(τ)Sb 
+
+> 0
+
+Sa
+
+> 0
+
+(τ)Sb
+
+> 0
+
+N d eff nv
+
+ , (B.8) where N is the number of sites in the system, nv is the number of random vectors used for averaging and deff = Tr e−β(H−E0) is the effective Hilbert space dimension with E0 being the ground-state energy. The effective Hilbert space dimension describes the number of thermally occupied states. At infinite temperature, it is equal to the dimension of the Hilbert space of the whole system deff = 2N , which means that the error decreases exponentially with the size of the system. For large enough systems, this makes quantum typicality incredibly efficient, as the trace can be replaced with a sum over just a few vectors. As the temperature decreases, the number of vectors required to approximate the trace grows because of the effective dimension becoming smaller. This can be understood by noting, that at lower temperatures, fewer, but particular vectors meaningfully contribute to the trace, for instance the ground state vector. In order to capture the contribution by these particular vectors significantly more random vectors are necessary. 
+
+21 SciPost Physics Submission 
+
+# C Comparison to spin glass physics 0.0 0.2 0.4 0.6 0.8 1.0 
+
+> /
+> 0.100
+> 0.125
+> 0.150
+> 0.175
+> 0.200
+> 0.225
+> 0.250
+> gxx ( )
+> JQ=1
+> JQ=2
+> JQ=3
+> JQ=5
+> JQ=7
+> JQ=12
+
+Figure 9: Comparison of correlations obtained in spinDMFT (green line) and in a spin glass mean-field theory developed in Ref. [30 ] (gray crosses) at different tem-peratures (specified above the curves). In the spin glass data, there are errors due to the graphical extraction of the published data; they are roughly of the size of the crosses. The error bars of spinDMFT are smaller than the line widths. In Ref. [30 ], Grempel and Rozenberg implemented a mean-field theory approach for spin glass systems based on a self-consistency condition derived previously [29 ]. The mathematical struc-ture of the approach is very similar to our method, especially in the isotropic case, despite a completely different derivation (relying on the properties of the spin glass systems). In Fig. 9, we compare the results of spinDMFT without an external magnetic field with the data de-picted in a plot from Ref. [30 ]. We see that both methods yield almost the same correlations in this case. This further emphasizes the connection of spinDMFT to spin glass physics. We stress, however, that the advantage of our approach is a more general derivation, applicable for instance to systems without a special distribution of couplings, in a magnetic field, with spin anisotropies and to larger spin clusters. 
+
+# References 
+
+[1] D. Loss and D. P . DiVincenzo, Quantum computation with quantum dots , Phys. Rev. A 57 ,120 (1998), doi:10.1103 /PhysRevA.57.120. 
+
+[2] B. Trauzettel, D. V . Bulaev, D. Loss and G. Burkard, Spin qubits in graphene quantum dots ,Nature Physics 3(3), 192 (2007), doi:10.1038 /nphys544. 
+
+[3] T. Jungwirth, X. Marti, P . Wadley and J. Wunderlich, Antiferromagnetic spintronics , Nature Nanotechnology 11 (3), 231 (2016), doi:10.1038 /nnano.2016.18. 
+
+22 SciPost Physics Submission 
+
+[4] M. B. Jungfleisch, W. Zhang and A. Hoffmann, Perspectives of antiferromagnetic spintron-ics , Physics Letters A 382 (13), 865 (2018), doi:10.1016 /j.physleta.2018.01.008. 
+
+[5] V. Baltz, A. Manchon, M. Tsoi, T. Moriyama, T. Ono and Y. Tserkovnyak, Antiferromagnetic spintronics , Rev. Mod. Phys. 90 , 015005 (2018), doi:10.1103 /RevModPhys.90.015005. 
+
+[6] U. Haeberlen, High Resolution NMR in Solids: Selective Averaging , Academic, New York (1976). 
+
+[7] C. P . Slichter, Principles of Magnetic Resonance, Springer Series in Solid-State Sciences, Vol. 1, Springer, Berlin (1996). 
+
+[8] M. H. Levitt, Spin Dynamics, Basics of Nuclear Magnetic Resonance , Wiley, Chichester (2005). 
+
+[9] L. Šmejkal, J. Sinova and T. Jungwirth, Beyond conventional ferromagnetism and antifer-romagnetism: A phase with nonrelativistic spin and crystal rotation symmetry , Phys. Rev. X 12 , 031042 (2022), doi:10.1103 /PhysRevX.12.031042. 
+
+[10 ] L. Šmejkal, J. Sinova and T. Jungwirth, Emerging research landscape of altermagnetism ,Phys. Rev. X 12 , 040501 (2022), doi:10.1103 /PhysRevX.12.040501. 
+
+[11 ] C. Castelnovo, R. Moessner and S. L. Sondhi, Magnetic monopoles in spin ice , Nature 
+
+451N7174 , 42 (2008), doi:10.1038 /nature06433, 0710.5515. 
+
+[12 ] L. Balents, Spin liquids in frustrated magnets , Nature 464 (7286), 199 (2010), doi:10.1038 /nature08917. 
+
+[13 ] H. Tal-Ezer and R. Kosloff, An accurate and efficient scheme for propagating the time dependent Schrödinger equation , The Journal of Chemical Physics 81 (9), 3967 (1984), doi:10.1063 /1.448136. 
+
+[14 ] R. Kosloff, Propagation methods for quantum molecular dynamics , An-nual Review of Physical Chemistry 45 (Volume 45,), 145 (1994), doi:10.1146 /annurev.pc.45.100194.001045. 
+
+[15 ] A. Weiße, G. Wellein, A. Alvermann and H. Fehske, The kernel polynomial method , Rev. Mod. Phys. 78 , 275 (2006), doi:10.1103 /RevModPhys.78.275. 
+
+[16 ] A. W. Sandvik and J. Kurkijärvi, Quantum Monte Carlo simulation method for spin systems ,Phys. Rev. B 43 , 5950 (1991), doi:10.1103 /PhysRevB.43.5950. 
+
+[17 ] P. Asselin, R. F. L. Evans, J. Barker, R. W. Chantrell, R. Yanes, O. Chubykalo-Fesenko, D. Hinzke and U. Nowak, Constrained Monte Carlo method and calculation of the temperature dependence of magnetic anisotropy , Phys. Rev. B 82 , 054415 (2010), doi:10.1103 /PhysRevB.82.054415. 
+
+[18 ] J. Reuther and R. Thomale, Cluster functional renormalization group , Phys. Rev. B 89 ,024412 (2014), doi:10.1103 /PhysRevB.89.024412. 
+
+[19 ] T. Müller, D. Kiese, N. Niggemann, B. Sbierski, J. Reuther, S. Trebst, R. Thomale and Y. Iqbal, Pseudo-fermion functional renormalization group for spin models , Rep. Prog. Phys. 87 (3) (2024), doi:10.1088 /1361-6633 /ad208c. 
+
+[20 ] S. R. White, Density matrix formulation for quantum renormalization groups , Phys. Rev. Lett. 69 , 2863 (1992), doi:10.1103 /PhysRevLett.69.2863. 
+
+23 SciPost Physics Submission 
+
+[21 ] A. J. Daley, C. Kollath, U. Schollwöck and G. Vidal, Time-dependent density-matrix renormalization-group using adaptive effective Hilbert spaces , Journal of Statistical Mechanics: Theory and Experiment 2004 (04), P04005 (2004), doi:10.1088 /1742-5468 /2004 /04 /P04005. 
+
+[22 ] R. Orús, A practical introduction to tensor networks: Matrix product states and projected entangled pair states , Annals of Physics 349 , 117 (2014), doi:https: // doi.org /10.1016 /j.aop.2014.06.013. 
+
+[23 ] J. I. Cirac, D. Pérez-García, N. Schuch and F. Verstraete, Matrix product states and pro-jected entangled pair states: Concepts, symmetries, theorems , Rev. Mod. Phys. 93 , 045003 (2021), doi:10.1103 /RevModPhys.93.045003. 
+
+[24 ] T. Gräßer, P . Bleicker, D.-B. Hering, M. Yarmohammadi and G. S. Uhrig, Dynamic mean-field theory for dense spin systems at infinite temperature , Phys. Rev. Res. 3, 043168 (2021), doi:10.1103 /PhysRevResearch.3.043168. 
+
+[25 ] T. Gräßer, K. Rezai, A. O. Sushkov and G. S. Uhrig, Understanding the dynamics of randomly positioned dipolar spin ensembles , Phys. Rev. Res. 5, 043191 (2023), doi:10.1103 /PhysRevResearch.5.043191. 
+
+[26 ] A. Georges, G. Kotliar, W. Krauth and M. J. Rozenberg, Dynamical mean-field theory of strongly correlated fermion systems and the limit of infinite dimensions , Rev. Mod. Phys. 
+
+68 , 13 (1996), doi:10.1103 /RevModPhys.68.13. 
+
+[27 ] G. Kotliar and D. Vollhardt, Strongly correlated materials: Insights from dynamical mean-field theory , Physics Today 57 (3), 53 (2004), doi:10.1063 /1.1712502. 
+
+[28 ] T. Gräßer, T. Hahn and G. S. Uhrig, Microscopic understanding of NMR signals by dynamic mean-field theory for spins , Solid State Nuclear Magnetic Resonance 132 , 101936 (2024), doi:https: // doi.org /10.1016 /j.ssnmr.2024.101936. 
+
+[29 ] A. J. Bray and M. A. Moore, Replica theory of quantum spin glasses , Journal of Physics C: Solid State Physics 13 (24), L655 (1980), doi:10.1088 /0022-3719 /13 /24 /005. 
+
+[30 ] D. R. Grempel and M. J. Rozenberg, Fluctuations in a quantum random Heisenberg para-magnet , Phys. Rev. Lett. 80 , 389 (1998), doi:10.1103 /PhysRevLett.80.389. 
+
+[31 ] A. Georges, O. Parcollet and S. Sachdev, Mean field theory of a quantum Heisenberg spin glass , Phys. Rev. Lett. 85 , 840 (2000), doi:10.1103 /PhysRevLett.85.840. 
+
+[32 ] J. Otsuki and Y. Kuramoto, Dynamical mean-field theory for quantum spin systems: Test of solutions for magnetically ordered states , Phys. Rev. B 88 , 024427 (2013), doi:10.1103 /PhysRevB.88.024427. 
+
+[33 ] K. Haule, A. Rosch, J. Kroha and P . Wölfle, Pseudogaps in an incoherent metal , Phys. Rev. Lett. 89 , 236402 (2002), doi:10.1103 /PhysRevLett.89.236402. 
+
+[34 ] J. Otsuki and D. Vollhardt, Numerical solution of the t− j model with random exchange couplings in d=∞ dimensions , Phys. Rev. Lett. 110 , 196407 (2013), doi:10.1103 /PhysRevLett.110.196407. 
+
+[35 ] R. Steinigeweg, J. Gemmer and W. Brenig, Spin-current autocorrelations from single pure-state propagation , Phys. Rev. Lett. 112 , 120601 (2014), doi:10.1103 /PhysRevLett.112.120601. 
+
+24 SciPost Physics Submission 
+
+[36 ] T. Heitmann, J. Richter, D. Schubert and R. Steinigeweg, Selected applications of typicality to real-time dynamics of quantum many-body systems , Zeitschrift für Naturforschung A 
+
+75 (5), 421 (2020), doi:10.1515 /zna-2020-0010. 
+
+[37 ] C. Kittel, Introduction to Solid State Physics , John Wiley & Sons (1953). 
+
+[38 ] D. Suter and R. R. Ernst, Spin diffusion in resolved solid-state nmr spectra , Phys. Rev. B 
+
+32 , 5608 (1985), doi:10.1103 /PhysRevB.32.5608. 
+
+[39 ] T. Gräßer, G. S. Uhrig and M. Ernst, First-principles simulation of spin diffusion in static solids using dynamic mean-field theory , Science Advances 12 (17), eaee6228 (2026), doi:10.1126 /sciadv.aee6228, https: // www.science.org /doi /pdf /10.1126 /
+
+sciadv.aee6228. 
+
+[40 ] D. Stanek, C. Raas and G. S. Uhrig, Dynamics and decoherence in the central spin model in the low-field limit , Phys. Rev. B 88 , 155305 (2013), doi:10.1103 /PhysRevB.88.155305. 
+
+[41 ] A. Alvermann and H. Fehske, High-order commutator-free exponential time-propagation of driven quantum systems , Journal of Computational Physics 230 , 5930 (2011), doi:10.1016 /j.jcp.2011.04.006. 
+
+25

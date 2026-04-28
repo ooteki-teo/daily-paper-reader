@@ -1,0 +1,328 @@
+Title: Stealthy hyperuniform disorder: A new route to controlling electric states and magnetic phase transition in correlated systems
+
+URL Source: https://arxiv.org/pdf/2604.19041v1
+
+Published Time: Wed, 22 Apr 2026 00:33:46 GMT
+
+Number of Pages: 9
+
+Markdown Content:
+# Stealthy hyperuniform disorder: A new route to controlling electric states and magnetic phase transition in correlated systems 
+
+Akihisa Koga 1, 2 and Takanori Sugimoto 3, 4, 5, 6 
+
+> 1
+
+Department of Physics, Chuo University, Bunkyo, Tokyo 112-8551, Japan 
+
+> 2
+
+Department of Physics, Institute of Science Tokyo, Meguro, Tokyo 152-8551, Japan 
+
+> 3
+
+Department of Electrical, Electronic and Information Engineering, Kansai University, Suita, Osaka 564-8680, Japan 
+
+> 4
+
+Center for Quantum Information and Quantum Biology, Osaka University, Toyonaka, Osaka 560-0043, Japan 
+
+> 5
+
+Advanced Science Research Center, Japan Atomic Energy Agency, Tokai, Ibaraki 319-1195, Japan 
+
+> 6
+
+Computational Materials Science Research Team, Riken Center for Computational Science (R-CCS), Kobe, Hyogo 650-0047, Japan 
+
+(Dated: April 22, 2026) We investigate the e ff ects of stealthy hyperuniform bond distributions on the electronic and magnetic prop-erties of the Hubbard model on the honeycomb lattice. Hyperuniform structures, distinct from random and quasiperiodic ones, have recently attracted considerable interest due to their anomalous suppression of density fluctuations. By diagonalizing the noninteracting Hamiltonian, we show that a linear density of states (DOS) robustly emerges, while the stealth property of the bond distribution changes the wave functions in the higher-energy region extended and significantly modifies the DOS near the band edge. To clarify the impact on mag-netism, we apply the real-space Hartree approximation to the Hubbard model. We find that, the phase transition always occurs between semimetallic and antiferromagnetically ordered states and its critical interaction strength is sensitive to the stealth property. A comparison with the quasiperiodic honeycomb tiling further highlights the role of structural correlations. These results demonstrate that stealthy hyperuniform disorder provides a novel route to controlling electronic states and magnetic phase transitions in correlated systems. 
+
+I. INTRODUCTION 
+
+Recently, point distributions have attracted much attention since disordered hyperuniform structures [1, 2] have been ob-served in various fields such as soft matter [3, 4], solids [5, 6], active matter [7], biology [8], and astronomy [9]. A hyper-uniform structure is defined as a distribution in which density fluctuations are anomalously suppressed at large length scales, i.e., the structure factor S (k) tends to zero as k → 0, whereas typical random (non-hyperuniform) distributions exhibit finite values in this limit. Among hyperuniform systems, stealthy hyperuniform structures – characterized by a vanishing struc-ture factor within a finite range around the origin in reciprocal space – have attracted particular interest; for example, in pho-tonic crystals [10, 11], the stealthness of the point configura-tions has been suggested to enhance the photonic band gap. While stealthy hyperuniformity has been extensively stud-ied at the level of point distributions [12], its implications for lattice models relevant to condensed-matter systems re-main less explored. To investigate hyperuniformity in a lat-tice setting, it is important to employ a unified framework that treats aperiodic systems on equal footing. One of the models that can simultaneously incorporate periodicity, quasiperiod-icity, and disorder is the honeycomb lattice with two types of bonds [13]. By appropriately arranging the bond distribu-tions, this model allows for a systematic comparison of dif-ferent types of structural order. Previous studies based on the Hubbard model on the honeycomb lattice mainly exam-ined how randomness and quasiperiodicity in the bond dis-tribution influence the density of states and magnetic phase transitions [13]. However, the role of stealthiness of bond dis-tributions has not yet been clarified. In disordered magnetic systems, the existence of rare regions should give rise to the Gri ffi ths phase [14], which is characterized by anomalously slow dynamics originating from spatially isolated, locally or-dered sites. Motivated by the potential importance of such rare sites, we investigate how the stealth property of bond distribu-tions a ff ects low-energy electronic and magnetic properties of the system. The paper is organized as follows. In Sec. II, we introduce the model Hamiltonian and construct bond distributions with stealthy hyperuniform structures. In Sec. III, we examine their eff ects on the noninteracting density of states and clarify how the stealth property modifies the wave functions near the band edge. We then analyze magnetic properties within the real-space Hartree approximation and compare the results for the systems with random, stealthy hyperuniform, and quasiperi-odic bond distributions. Finally, a summary is presented in Sec. IV. 
+
+II. MODEL AND METHOD 
+
+First, we explain geometric properties of the honeycomb lattice. Its unit vectors are given by a1 = ( √3, 0) a, and 
+
+a2 = ( √3/2, 3/2) a, where a denotes the distance between nearest-neighbor sites, as shown in Fig. 1(a). We treat a finite-size system consisting of N = 2L1 L2 sites, with integers L1
+
+and L2, under periodic boundary conditions. In this case, the wave vector is given by k = (m1/L1)b1 + (m2/L2)b2,where b1 = 2π(1 / √3, −1/3) /a, b2 = 2π(0 , 2/3) /a, and m1
+
+and m2 are integers. The first Brillouin zone of the hon-eycomb lattice is shown in Fig. 1(b). Its corners located at (2 π/ (3 √3a), 2π/ (3 a)) and (4 π/ (3 √3a), 0) are known as the K and K’ points, respectively. In this study, we consider correlated electron systems to dis-cuss how the spatial distribution of two kinds of bonds a ff ects their ground state properties. To this end, we treat the Hub-bard model on the honeycomb lattice, whose Hamiltonian is 
+
+> arXiv:2604.19041v1 [cond-mat.str-el] 21 Apr 2026
+
+2a 1a 2(a) (b) kx ky K' OK         
+
+> FIG. 1. (a) Honeycomb lattice and its unit vectors a1and a2. Paral-lelogram represents the system specified by ( L1,L2)=(3 ,4). Shaded triangle and rhombus indicate the areas associated with one site and one bond, respectively. (b) First Brillouin zone of the honeycomb lattice.
+
+given as 
+
+H = −tα
+
+> NBα
+
+X
+
+> ⟨i j ⟩α
+
+c†
+
+> iσ
+
+c jσ − tβ
+
+> NBβ
+
+X
+
+> ⟨i j ⟩β
+
+c†
+
+> iσ
+
+c jσ + U
+
+X
+
+> i
+
+ni↑ni↓, (1) where ⟨i j ⟩γ stands for the nearest-neighbor pair on the γ(=
+
+α, β ) bonds, and NBγ is the number of γ-bonds. ciσ(c†
+
+> iσ
+
+) an-nihilates (creates) an electron at the ith site with spin σ. tγ
+
+is the hopping integral for the γ-bond and U is the onsite Coulomb interaction. Since the honeycomb lattice is bipartite, the chemical potential is always μ = U/2 when the electron density is fixed to be half filling. When tα = tβ, the system reduces to the Hubbard model on the regular honeycomb lat-tice. It is known that, in the noninteracting case ( U = 0), the Dirac-type dispersion appears around the K and K’ points. Owing to the lack of the density of states (DOS) at the Fermi level, the introduction of the Coulomb interaction does not im-mediately induce magnetic order. Consequently, the quantum phase transition to the antiferromagnetically ordered state oc-curs at a finite interaction strength, which has been discussed so far [15–22]. The Hubbard model with quasiperiodic and randomly dis-tributed bond structures has been examined in Ref. [13], where significant changes in the DOS and the critical inter-action strengths were reported. However, the role of the dis-ordered structure itself – particularly the case of stealthy hy-peruniform bond distributions – has not been examined. It is instructive to discuss how distinct bond distributions a ff ect the ground state within a unified framework. For this purpose, we characterize the bond distribution through its structure factor. Here, we define the coordinate of each bond as the center of the two sites it connects. Its structure factor S γ(k) is defined as, 
+
+S γ(k) = 1
+
+NB
+
+ργ(k) 2, (2) 
+
+ργ(k) =
+
+X
+
+> i
+
+eik·r(γ) 
+
+> i
+
+, (3) where r(γ) 
+
+> i
+
+is the coordinate of the ith γ-bond and NB(=Pγ NBγ) is the total number of bonds. In the following, we neglect the trivial sum at the Γ point. Furthermore, we omit the bond index of the structure factor since S α(k) = S β(k). In the study, we set the number ratio between two bonds as 
+
+NBα/NBβ = τ, for later convenience, where τ[= (1 + √5) /2] is the golden ratio. To obtain the bond distribution which sat-isfies the stealthy hyperuniform structure, we use the reverse Monte Carlo method. Here, we introduce the cost function 
+
+Φ {r(α)} =
+
+X
+
+> k
+
+V(k) h S (k) − S target (k) i2
+
+, (4) where V(k) is the window function, and S target (k) is the target structure factor. In this work, we set V(k) = 1 for 0 < |k| < kc
+
+and V(k) = 0 otherwise, where kc is some positive number. In the optimization procedure, two bonds are randomly se-lected and swapped, and the update is accepted only if the cost function is reduced. By repeating this procedure, the bond distribution is gradually optimized so that S (k) approaches 
+
+S target (k). When S target (k) = 0, one can obtain the stealthy hy-peruniform bond distribution. We iterate this scheme until the cost function satisfies Φ/Nc < 0.01, where Nc is the number of k points satisfying V(k) = 1. Applying the reverse Monte Carlo method to the system with randomly distributed bonds, we obtain stealthy hyper-uniform bond distribution. Figure 2 shows the parts of the honeycomb lattices and their structure factors for the system with L1 = L2 = 512. The degree of spatial inhomogeneity in the bond distributions varies with increasing kc, and clear di ff erences emerge in the corresponding structure factors. The stealth constraint primarily a ff ects long-range behav-ior in the bond distribution and local properties are also in-fluenced by the choice of kc. Two kinds of bonds are intro-duced in the honeycomb lattice, and four kinds of vertices C0, C 1, C 2, and C 3 appear, as shown in Fig. 3(a). A C i ver-tex is connected to the nearest-neighbor vertices by (3 − i)
+
+α-bonds and i β-bonds. Their fractions are shown in Fig. 3(b). The results are obtained from nine independent examples with 
+
+N = 524 , 288 and their statistical error is smaller than the size of symbols. When kca = 0.5, the fractions are almost the same as those for the random case ( kc = 0). This means that the im-posed constraint is insu ffi cient to produce a bond distribution which di ff ers significantly from the random case. By con-trast, in the case with kca = 1.5, the window function covers about half of the first Brillouin zone and such a strong con-straint significantly a ff ects the spatial distributions of bonds and vertices. In fact, this reduces the fractions for C 0 and C 3
+
+vertices, which correspond to locally homogeneous bond en-vironments. For comparison, we show the vertex fractions in the quasiperiodic deterministic honeycomb tiling [13]. This tiling is composed of five kinds of hexagonal tiles and contains two characteristic length scales ℓ and s(= ℓ/τ ). Since this tiling is topologically equivalent to the regular honeycomb lattice, we can regard it as the regular honeycomb lattice with two kinds of bonds ( α, β ) modulated quasiperiodically. The number ratio of bonds is given by NBα/NBβ = τ. We find in Fig. 3(b) the ver-tex fractions di ff er from those in the systems with stealthy hy-peruniform bonds. Therefore, we can discuss how the ground state properties are a ff ected by the bond distributions as well as the vertex fractions. In the following, we fix the hopping ratio tα = 2tβ, take t = tβ as the unit of energy. 3
+
+FIG. 2. Upper panels show the distributions of the bonds for the honeycomb systems with (a) kca = 0.0, (b) 0.5, (c) 1.0, and (d) 1 .5. α and β
+
+bonds are represented by light gray and blue rhombi, respectively (see also Fig. 1). Lower panels show the corresponding structure factors. 00.2 0.4 0.6 0 0.5 1 1.5 2GMT C 0C 1C 2C 3kca(a) (b) C0 C1C2 C3
+
+FIG. 3. (a) Four kinds of vertices in the honeycomb lattice with disordered bonds. C i vertex is connected to the nearest-neighbor ver-tices by (3 − i) α-bonds (bold red lines) and i β-bonds (thin blue lines), which are specified by the hoppings t1 and t2. (b) Fractions of four vertices as a function of kc. The dashed line represents the ratio πk2 
+
+> c
+
+/S BZ with the square of the first Brillouin zone S BZ . Solid and open symbols represent the vertex fractions for the golden-mean honeycomb tilings [13] and additionally constrainted stealthy hyper-uniform point pattern with kca = 1.5 (see text). 
+
+III. RESULTS A. Eff ect of the stealthy hyperuniform patterns on noninteracting system 
+
+Here, we consider the tight-binding model with disordered bonds. Diagonalizing the Hamiltonian with U = 0, we obtain the density of states (DOS), which is defined as 
+
+D(E) = 1
+
+N
+
+X
+
+> i
+
+δ(E − Ei), (5) where Ei is the ith eigenvalue of the Hamiltonian and N(=
+
+2L1 L2) is the number of sites. The DOS for the system with 
+
+L1 = L2 = 512 is shown in Fig. 4(a). In the case, we have replaced the delta function with the Gaussian δ(E) ∼
+
+exp( −(E/ϵ )2)/( √πϵ ) with the width ϵ = 0.01 t. We find that the linear DOS is always observed around E = 0 and its slope is little a ff ected by kc. Moreover, the curve of the DOS for 
+
+|E/t| < 4 is almost identical, indicating that the stealthy prop-erties have little e ff ect on this energy region and the DOS mainly depends on the ratio NBα/NBβ. By contrast, the DOS around the band edge |E/t| ∼ 5 shows a strong dependence on kc. For kc = 0, the system has randomly distributed bonds and the DOS smoothly decreases up to |E/t| ∼ 5.5. As kc
+
+increases, the band edge shifts downward and the DOS just below the band edge increases. In particular, in the case with 
+
+kca = 1.5, the band edge is located around E/t ∼ 5, which is approximately ten percent smaller than that for the random bond case with kc = 0. To clarify how the stealthness in the bond distributions af-fects localization properties of the one-particle wave func-tions, we examine the inverse participation ratio (IPR) of the eigenfunction, which is defined as IPR =
+
+X
+
+> ri
+
+ψ(ri) 4, (6) where ψ is the normalized eigenfunction of the tight-binding Hamiltonian. For a wave function localized on a few sites, 410 -5 10 -4 10 -3 10 -2 10 -1 0 1 2 3 4 5 6(b) IPR E/t random   
+
+> kca=1.5
+> 00.05 0.1 0.15 0.2
+
+(a) DOS random k c a=0.5 k c a=1.0 k c a=1.5                   
+
+> FIG. 4. (a) Density of states for the tightbinding model with kca=
+> 0,0.5,1.0, and 1 .5 when L1=L2=512. (b) Logarithmic plot of the IPR spectra for the model with kca=0 and 1 .5 when L1=L2=256.
+
+the IPR takes a relatively large value, whereas for an extended state it becomes small and scales inversely with the system size. In Fig. 4(b), we show the IPR for the disordered systems with L1 = L2 = 256. In the low energy region |E|/t < 4, the IPR values are distributed within IPR ≲ 0.003 and are almost identical between two cases kca = 0 and 1 .5. This is consistent with the fact that the DOS is not a ff ected by the stealthness of the bond distributions discussed above. On the other hand, a fairly large di ff erence appears in the high energy region. In the random case ( kc = 0), the IPR is widely scattered and gradually increases as the energy approaches the band edge, indicating that the wave function in high energy region tends to become localized. In the stealthy hyperuniform case with 
+
+kca = 1.5, similar properties appear in the vicinity of the band edge although the IPR values collapse almost onto a single curve and the rapid increase appears over a narrower energy window. The most important point is that, in the energy region (4 .2 ≲ |E|/t ≲ 4.8) where peak structures appear in DOS, the IPR takes its smallest values. This demonstrates that the in-troduction of stealthness strongly suppresses localization and makes the wave functions significantly more extended. These findings highlight that stealthness in the structure factor has a pronounced impact on the nature of the wave functions, lead-ing to substantial modifications in the high-energy spectrum of the system. The stealth property is imposed near the Γ point in recip-rocal space, well separated from the K and K’ points. There-fore, one may naively expect that this property primarily mod-ifies the high-energy sector of the noninteracting Hamiltonian, which is consistent with the above results. By contrast, if the stealth constraint were imposed in the vicinity of the K and K’ points, one would expect it to influence the low-energy prop-erties since these points govern the Dirac-like excitations. To examine this possibility, we consider the window func-tion V(k) defined as V(k) = 1 within a circular region with radius kc around the K and K’ points, and V(k) = 0 else-where. This construction allows us to isolate the e ff ect of stealthiness imposed near the Dirac points from that originat-ing at the Γ point. The bond distribution obtained by imposing this constraint is referred to as the K-pattern. Figure 5 shows the bond configurations for the K-pattern with kca = 1.5/ √2, its structure factor, the DOS for the tightbinding model, and its IPR. Compared with the randomly distributed system (see Fig. 2), the structure factor is distinct, even though this di ff er-ence is hardly visible in real-space bond distributions. We find that the low- and high-energy parts of the DOS closely resem-ble that of a random system. Only in the intermediate range 1 ≲ E/t ≲ 5, the slight changes are observed in both DOS and IPR. This observation demonstrates that the stealth con-straint originating from the Γ point, rather than that imposed near the Dirac points, plays a dominant role in modifying the electronic properties.                 
+
+> FIG. 5. (a) Bond distribution for the K-pattern with kca=1.5/√2and (b) its structure factor. (c) DOS for the tightbinding models on the K-pattern with L1=L2=512. (d) IPR spectrum for the model with L1=L2=256.
+> B. Hubbard model with disordered bonds
+
+Next, we examine magnetic properties of the Hubbard model. To clarify how the bond distributions a ff ect the com-petition between the semi-metallic and antiferromagnetically ordered states, it is crucial to treat su ffi ciently large systems. Here, we employ the real-space Hartree approximation. This 5method is too simple to provide an accurate estimate of the critical interaction strength, while it captures the essential fea-tures of the phase transition. In fact, for the regular honey-comb lattice, the method yields a finite critical interaction; however, the resulting value Uc/t ∼ 2.23 [15] is smaller than that obtained by the Monte Carlo method, which gives 
+
+Uc/t ∼ 3.835 [22]. Despite this quantitative discrepancy, we can still discuss the qualitative influence of bond distributions on Uc.In the real-space Hartree approximation, we introduce the site- and spin-dependent mean-fields ⟨niσ⟩. The e ff ective Hamiltonian is then obtained as 
+
+H = −tα
+
+X
+
+> ⟨i j ⟩α
+
+c†
+
+> iσ
+
+c jσ − tβ
+
+X
+
+> ⟨i j ⟩β
+
+c†
+
+> iσ
+
+c jσ + U
+
+X
+
+> iσ
+
+niσ⟨ni ¯σ⟩. (7) For given mean fields, we numerically diagonalize the mean-field Hamiltonian, update the mean fields, and iterate this self-consistent procedure until the result converges within numer-ical accuracy. We apply the real-space Hartree approxima-tion to the Hubbard model on the honeycomb lattice with 
+
+Lx = Ly = 120 under periodic boundary conditions. In the following, we focus on the random configuration with 
+
+kca = 0 and the stealthy hyperuniform configuration with 
+
+kca = 1.5. These distributions are slightly di ff erent from each other, as shown in Fig. 2, while we do not observe clear di ff erences in the spatial patterns of the local magnetizations 
+
+mi = (⟨ni↑⟩ − ⟨ ni↓⟩)/2. 0 0.1 0.2 0.3 0.4 0.5 
+
+# Hyperuniform Random |m| U/t=2.8 U/t=3.5 U/t=6.0     
+
+> FIG. 6. Distribution of the local magnetizations in Hubbard model on the honeycomb lattice with (upper panel) hyperuniformly and (lower panel) randomly distributed bonds for U/t=2.8, 3 .5, and 6.0.
+
+Figure 6 shows the distributions of the local magnetizations for U/t = 2.8, 3.5 and 6 .0. In the strong coupling case with 
+
+U/t = 6.0, the magnetizations are classified into four groups corresponding to di ff erent vertex types, ordered from smaller to larger values as C 0, C 1, · · · . In particular, large magnetiza-tions |m| ∼ 0.42 appear at the C 3 vertices since these vertices, which are connected by three weaker β-bonds, are more easily magnetized. This observation is consistent with the fact that the weight for the magnetization peak around |m| ∼ 0.42 in the stealthy hyperuniform case is relatively small, reflecting its smaller fraction of C 3 vertices [see Fig. 3(b)]. As the inter-action strength decreases, the distinction among vertex types is smeared out, and each distribution exhibits a single peak. We find that, at U/t = 2.8, the peak position for the stealthy hyperuniform case is slightly lower than that of the random case, indicating that the magnetically ordered state is less sta-ble in the system with stealthy hyperuniform bonds. 00.1 0.2 0.3 0.4 0 1 2 3 4 5 6 7 8|m| U/t random kca=1.5 00.05 0.1 2.5 3 3.5             
+
+> FIG. 7. Average of local magnetizations as a function of the Coulomb interaction U/tin the disordered system with N=2L1L2
+> with L1=L2=120. Dotted line indicates the results for the golden-mean tilings.
+
+To clarify this tendency, we calculate the spatially averaged staggered magnetization in both disordered systems, which is shown in Fig. 7. We find that no finite magnetization ap-pears at any site when U < Uc. Thus, in the weak-coupling regime, a nonmagnetic semi-metallic state is stabilized. As the interaction strength increases beyond Uc, the magnetiza-tion is induced and a magnetically ordered state emerges, as shown in Fig. 7. Therefore, even in the presence of bond dis-order, a quantum phase transition occurs between the normal semimetallic and antiferromagnetically ordered states. We find that, when 2 .5 ≲ U/t ≲ 4.0, the spatially averaged magnetization for the stealthy hyperuniform system is always smaller than that for the random case. This observation indi-cates that the critical interaction for the stealthy hyperuniform system is likely larger than that for the random case. In in-homogeneous systems, the magnitudes of the local magneti-zations near the critical interaction span a broad range, from values very close to zero to relatively larger ones. Further-more, the magnetization profile strongly depends on the bond configurations. These make it di ffi cult to determine the crit-ical interaction precisely within our mean-field theory. Such a broad distribution in the vicinity of the critical interaction may be characteristic of Gri ffi ths-like behavior. We now turn to an analysis of the fine spatial structure of the magnetization. To clarify how the local magnetization devel-ops in the lattice as the interaction strength increases beyond the critical interaction, we consider the IPR of the magnetiza-tion, which quantifies the degree of localization of a nonuni-form spatial pattern. The corresponding quantity for the nth moment is given by IPR n =
+
+X
+
+> i
+
+|mi|n
+
+P j |m j|n
+
+!2
+
+. (8) 6When the magnetization is spatially uniform throughout the system, the IPR takes the value 1 /N. By contrast, if only one site is magnetized, the IPR becomes unity. Therefore, this quantity is appropriate for discussing the spatial inhomogene-ity of the magnetization in the system. Note that, in general, the IPR 1 and IPR 2 are often used to characterize localization. Since the IPR n is related to the nth moment of the local mag-netization, the IPR 2 is more sensitive to the sharpness of the magnetization profile, i.e. , the prominence of the magnetiza-tion peak. By contrast, the IPR 1 captures the overall spatial extent of the magnetization distribution. 3456783 4 5 6IPR  1 x 10  5U/t random k c a=1.5 01232.7 2.8 2.9 3IPR  2 x 10  3U/t random k c a=1.5                
+
+> FIG. 8. Red (black) line represents IPR 1of the magnetizations as a function of U/tin the Hubbard models with random (stealthy hyperuniform) bond distribution. The system size is N=2L1L2with
+> L1=L2=256. Dotted line represents IPR 1for the magnetization of the Hubbard model on the quasiperidic bond distribution. Dashed line indicates the lower bound of the IPR of the system. Shaded areas are estimated by using the standard deviation of the results obtained from nine independent bond distributions. Inset shows IPR 2for the same set of systems.
+
+Figure 8 shows the IPR of the magnetizations in the systems with randomly disordered and stealthy hyperuniform bonds. When U/t ∼ 6, the corresponding curves are almost identical for both IPR 1 and IPR 2, which is consistent with the fact that the local magnetizations have comparable magnitudes and similar distributions (see Fig. 6). Furthermore, as the inter-action strength increases, these values approach 1 /N since the magnetization approaches a single uniform value (not shown). In contrast, at smaller interaction strengths ( U/t ∼ 2.8), the IPR 1 of the stealthy hyperuniform system is slightly smaller than that of the randomly disordered system, indicating a more spatially homogeneous magnetization in the stealthy hyper-uniform case. This tendency may be visible in the upper pan-els of Fig. 9. By contrast, the IPR 2 exhibits the opposite be-havior: its value for the stealthy hyperuniform system is larger than that for the random case. This implies that, in the stealthy hyperuniform case, the magnetization is spatially more homo-geneous, while only a limited number of sites host relatively large local magnetizations. The presence of such rare sites in the stealthy hyperuniform system has been confirmed by ex-amining multiple independent realizations of the stealthy hy-peruniform bond configurations although the variance is large, as shown in Fig. 8. In the randomly disordered system, many sites instead exhibit magnetizations of comparable amplitude, leading to a smaller IPR 2. This is clearly observed in the lower panels of Fig. 9, where the magnetization is normalized by its maximum. These results demonstrate that stealthy hyperuni-formity fundamentally changes the development of magnetic order, a ff ecting not only the spatial distribution of the magne-tization but also the statistics of its local amplitudes.              
+
+> FIG. 9. The spatial distributions of the moments in the Hubbard model with U/t=2.8 and L1=L2=120, where the hopping in-tegrals are (a) stealthy hyperuniformly and (b) randomly disordered. Upper and lower panels show the results for mi/¯mand mi/mmax .
+
+We also compare the results for the above disordered sys-tems with those for the quasiperiodic system, where the same local structures are quasiperiodically distributed. The IPR re-sults are shown as the dotted lines in Fig. 8. For IPR 1, the value is slightly larger than those for the other disordered systems when U/t ≳ 3. In contrast, IPR 2 takes a smaller value, which is consistent with the fact that large magneti-zations emerge at the C 3 vertices, where the fraction is larger than those for the disordered cases [see Fig. 3(b)], and possess nearly identical amplitudes due to the similar local structure. The stability of the magnetically ordered state depends not only on the presence of long-range correlations in the bond distribution but also crucially on their specific nature. In this study, we consider systems in which the number ratio of α and 
+
+β bonds is fixed to the golden mean, allowing for a direct com-parison between quasiperiodic, stealthy hyperuniform, and randomly disordered cases. In the quasiperiodic system, a large number of C 3 sites are distributed in a quasiperiodic and spatially correlated manner, enabling them to act coop-eratively. As a result, the magnetically ordered phase is sta-bilized at a smaller critical interaction Uc. By contrast, in the stealthy hyperuniform system, although bonds exhibit long-range correlations, C 3 sites are extremely sparse and largely 7isolated, including rare, strongly magnetized sites. As a re-sult, the value of IPR 2 becomes large, reflecting the domi-nance of a small number of sites with relatively large local magnetizations, while the formation of global magnetic order is suppressed. The randomly disordered system exhibits inter-mediate behavior. One may expect that, in the regime U ≲ Uc, a Gri ffi ths phase should be realized, where most sites remain nonmag-netic and only a subset of sites become magnetized. However, this phase is not directly accessible within the present mean-field calculations. It is therefore natural to speculate that, in this parameter regime, the spatial arrangement of rare mag-netic sites plays an important role in shaping the magnetic re-sponse of the system. In particular, the dominance of dilute, weakly interacting rare regions in the stealthy hyperuniform system may provide favorable conditions for Gri ffi ths-phase-like behavior over an extended range of parameters. Since the stealthiness imposed on the bonds does not di-rectly determine that of the vertex distributions, we briefly comment on the spatial correlations of the vertex types (C 0,C1, C 2, and C 3). The corresponding structure factors exhibit signatures of stealthy hyperuniform correlations characterized by the cuto ff wave vector kc, but they do not satisfy the strict stealthy condition that the structure factor vanishes for k < kc
+
+[see Fig. 10(a)]. When stealthy hyperuniform constraints are imposed on both bonds and vertices, the fraction of C 3 vertices is strongly suppressed, as shown in Fig. 3(b), and the result-ing point patterns, density of states, and magnetic properties change only slightly. The details are presented in Appendix A. This suggests that, although global properties remain robust, the presence of such rare and spatially isolated sites may play a key role in the magnetic response.  
+
+> IV. SUMMARY
+
+We have studied the role of stealthy hyperuniform bond dis-order in examining both electronic and magnetic properties of the Hubbard model on the honeycomb lattice. Although the low-energy linear density of states remains robust, hyper-uniform correlations significantly modify higher-energy elec-tronic states, where the corresponding wave function becomes extended. Our real-space Hartree analysis has demonstrated that the critical interaction strength for magnetic ordering is sensitive to the stealth property of the bond distribution, highlighting the importance of structural correlations beyond simple ran-domness. Together with the comparisons to quasiperiodic lat-tices, these results underscore hyperuniform disorder as an ef-fective mechanism for tuning electronic states and magnetic phase transitions in correlated systems. 
+
+> ACKNOWLEDGMENTS
+
+We would like to thank M. Imada for valuable dis-cussions. Parts of the numerical calculations were per-formed in the supercomputing systems in ISSP, the Uni-versity of Tokyo. This work was supported by Grant-in-Aid for Scientific Research from JSPS, KAKENHI Grants No. JP22K03525, JP25H01521, JP25H01398 (A.K.) and JP25H01397, JP25H01399 (T.S.). 
+
+> Appendix A: Constrainted stealthy hyperuniform
+
+In the main text, we have constructed stealthy hyperuniform bond configurations and clarified that the fractions of the four vertices change as kc increases [see Fig. 3(b)]. In particular, the fraction of C 3 vertices which play an important role for magnetic properties, is strongly suppressed. To gain insight into the spatial correlations for the vertices, we analyze the structure factors S i(k) for C i vertices. Figure 10(a) shows the structure factors corresponding to the spatial distributions of the C 0, C 1, C 2, and C 3 vertices. Signatures of stealthy hype-runiform correlation characterized by the cuto ff wave vector 
+
+kc are visible in all cases although they are less pronounced for the C 1 vertices. However, the strict stealthy condition 
+
+S i(k) = 0 for k < kc is not satisfied. To examine the e ff ect of enforcing this condition, we additionally impose stealthy hyperuniform constraints on the vertex distributions and con-struct bond configurations with an additional constraint. To this end, we introduce the cost function [23] 
+
+Ψ {r(α)} = Φ {r(α)} +
+
+X
+
+> ki
+
+V(k)hS i(k) − S target (k)i2
+
+. (A1) We optimize the bond configurations so that the cost function is minimized. The bond configuration and its structure factor for kca = 1.5 are shown in Fig. 10(b). The resulting struc-ture factors satisfy the stealthy condition for each vertex type. Although the bond configurations are visually similar to those for the simple stealthy hyperuniform system with kca = 1.5, the relative fractions of the di ff erent vertex types change sig-nificantly, as shown in Fig. 3(b). Consequently, C 3 vertices are strongly suppressed, consistent with the fact that S 3(k) ∼ 0over the entire k-space. To examine how the imposed stealthiness of the vertices aff ects the electronic properties, we diagonalize the tightbind-ing model on the disordered bonds. The DOS and IPR spectra are shown in Figs. 11(a) and (b). Only slight di ff erences are observed in these quantities. The average magnetization in the Hubbard model is shown in Fig. 11(c). We find that the magnetization for the constrained stealthy hyperuniform case is always lower than that for the SHU case. This reduction is consistent with the suppressed fraction of the C 3 sites, as discussed in the main text. 8
+
+FIG. 10. (a) Distribution of stealthy hyperuniform bonds with kca = 1.5 and the corresponding structure factors for the four vertex types. (b) Same as (a), but with additional stealthy hyperuniform constraints imposed on both bonds and vertices. �� -� �� -� �� -� �� -� �� -� � � � � � � �
+
+(b) IPR E/t SHU       
+
+> cSHU
+> ��.�� �.� �.�� �.� �������
+
+(a) DOS E/t random SHU cSHU    
+
+> ��.� �.� ����
+
+(c) Magnetization U/t random SHU cSHU 
+
+FIG. 11. (a) DOS for the tightbinding model with L1 = L2 = 512 and (b) IPR spectra for the model with L1 = L2 = 256. (c) Average of local magnetizations as a function of the Coulomb interaction in the disordered systems with L1 = L2 = 120. [1] S. Torquato and F. H. Stillinger, Local density fluctuations, hyperuniformity, and order metrics, Physical Review E 68 ,041113 (2003). [2] S. Torquato, Hyperuniformity and its generalizations, Physical Review E 94 , 022122 (2016). [3] L. Berthier, P. Chaudhuri, C. Coulais, O. Dauchot, and P. Sol-lich, Suppressed compressibility at large scale in jammed pack-ings of size-disperse spheres, Physical Review Letters 106 ,120601 (2011). [4] R. Kurita and E. R. Weeks, Incompressibility of polydisperse random-close-packed colloidal particles, Physical Review E 84 ,030401 (2011). [5] Y. Zheng, L. Liu, H. Nan, Z.-X. Shen, G. Zhang, D. Chen, L. He, W. Xu, M. Chen, Y. Jiao, and H. Zhuang, Disordered hyperuniformity in two-dimensional amorphous silica, Science Advances 6, eaba0826 (2020). [6] J. B. Llorens, I. Guillamón, I. G. Serrano, R. Córdoba, J. Sesé, J. M. De Teresa, M. R. Ibarra, S. Vieira, M. Ortuño, and H. Sud-erow, Disordered hyperuniformity in superconducting vortex lattices, Physical Review Research 2, 033133 (2020). [7] M. Huang, W. Hu, S. Yang, Q.-X. Liu, and H. P. Zhang, Circular swimming motility and disordered hyperuniform state in an al-gae system, Proceedings of the National Academy of Sciences 
+
+118 , e2100493118 (2021). [8] Y. Jiao, T. Lau, H. Hatzikirou, M. Meyer-Hermann, J. C. Corbo, and S. Torquato, Avian photoreceptor patterns represent a disor-dered hyperuniform solution to a multiscale packing problem, Physical Review E 89 , 022721 (2014). [9] O. H. Philcox and S. Torquato, Disordered heterogeneous uni-verse: Galaxy distribution and clustering across length scales, Physical Review X 13 , 011038 (2023). [10] W. Man, M. Florescu, E. P. Williamson, Y. He, S. R. Hashem-izad, B. Y. C. Leung, D. R. Liner, S. Torquato, P. M. Chaikin, and P. J. Steinhardt, Isotropic band gaps and freeform waveg-9
+
+uides observed in hyperuniform disordered photonic solids, Proceedings of the National Academy of Sciences 110 , 15886 (2013). [11] K. Asakura, K. Yamamoto, and A. Koga, Elliptical-rod geome-tries enhance photonic band gaps in disordered stealthy hyper-uniform photonic crystals, J. Phys. Soc. Jpn. 95 , 024711 (2026). [12] A. Koga and S. Sakai, Hyperuniformity in two-dimensional pe-riodic and quasiperiodic point patterns, Physical Review E 109 ,044103 (2024). [13] A. Koga and T. Matsubara, Quasiperiodically modulated hon-eycomb lattices and their magnetic properties, Physical Review B 111 , 214422 (2025). [14] R. B. Gri ffi ths, Nonanalytic behavior above the critical point in a random ising ferromagnet, Phys. Rev. Lett. 23 , 17 (1969). [15] S. Sorella and E. Tosatti, Semi-metal-insulator transition of the hubbard model in the honeycomb lattice, Eur. Lett. 19 , 699 (1992). [16] N. Furukawa, Antiferromagnetism of the hubbard model on a layered honeycomb lattice - is mgb2 a nearly-antiferromagnetic metal? -, J. Phys. Soc. Jpn. 70 , 1483 (2001). [17] H. Feldner, Z. Y. Meng, A. Honecker, D. Cabra, S. Wessel, and F. F. Assaad, Magnetism of finite graphene samples: Mean-field theory compared with exact diagonalization and quantum monte carlo simulations, Phys. Rev. B 81 , 115416 (2010). [18] S. Sorella, Y. Otsuka, and S. Yunoki, Absence of a spin liquid phase in the hubbard model on the honeycomb lattice, Sci. Rep. 
+
+2, 992 (2012). [19] F. F. Assaad and I. F. Herbut, Pinning the order: The nature of quantum criticality in the hubbard model on honeycomb lattice, Phys. Rev. X 3, 031010 (2013). [20] M. Raczkowski, R. Peters, T. T. Phúng, N. Takemori, F. F. As-saad, A. Honecker, and J. Vahedi, Hubbard model on the hon-eycomb lattice: From static and dynamical mean-field theories to lattice quantum monte carlo simulations, Phys. Rev. B 101 ,125103 (2020). [21] J. Ostmeyer, E. Berkowitz, S. Krieg, T. A. Lähde, T. Luu, and C. Urbach, Semimetal–mott insulator quantum phase transition of the hubbard model on the honeycomb lattice, Phys. Rev. B 
+
+102 , 245105 (2020). [22] J. Ostmeyer, E. Berkowitz, S. Krieg, T. A. Lähde, T. Luu, and C. Urbach, Antiferromagnetic character of the quantum phase transition in the hubbard model on the honeycomb lattice, Phys. Rev. B 104 , 155142 (2021). [23] K. Asakura, K. Yamamoto, and A. Koga, Impact of stealthy hyperuniform magnetic impurity configurations on bulk mag-netism in a two-dimensional heisenberg model, arXiv ,2602.22484 (2026).

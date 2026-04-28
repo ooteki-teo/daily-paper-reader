@@ -1,0 +1,30 @@
+{
+  "version": 2,
+  "extractor": "pdffigures2",
+  "figures": [
+    {
+      "url": "assets/figures/arxiv/2604.19498v1/fig-001.webp",
+      "caption": "FIG. 1. Effective parent-family interpolation between dimerized S = 1 2 and effective Haldane S = 1 chain architectures. (a) Schematic of the two endpoint descriptions and their connection through the interpolation parameter λ: a dimerized S = 1 2 chain with alternating couplings (J1, J2), and an effective Haldane S = 1 chain with intra-monomer Hund coupling (JFM) and inter-monomer antiferromagnetic exchange (JAFM). (b) Interpolating couplings J1(λ) and J2(λ). (c) Bulk-window dimerization D(λ), showing a robust sign change along the interpolation and good agreement between OBC and iDMRG. (d) Representative local bond-energy profiles ⟨hi⟩ for three values of λ. (e) Bulk-window even- and odd-bond energies, showing that the sign change of D(λ) arises from a genuine reordering of the two bond sectors.",
+      "page": 3,
+      "index": 1,
+      "width": 1062,
+      "height": 483
+    },
+    {
+      "url": "assets/figures/arxiv/2604.19498v1/fig-002.webp",
+      "caption": "FIG. 2. Termination-controlled fractionalization at a single interface. (a) Single-interface constructions for the 40|40 and parity-shifted 39|40 chains. In 40|40, the dimerized and Haldane sides both contribute spin- 1 2 SPT boundary moments at the junction, allowing local fusion and quenching. In 39|40, the dimerized-side contribution is removed, leaving an uncompensated interfacial spin- 1 2 -like mode on the Haldane side. (b,c) Site-resolved spin profiles for two selected low-energy states, ⟨Sz i ⟩(a) and ⟨Sz i ⟩(b), together with ∆⟨Sz i ⟩ = ⟨Sz i ⟩(b)−⟨Sz i ⟩(a), plotted versus distance from the interface for 40|40 and 39|40, respectively. (d,e) Integrated local spin in a window of radius r centered on the interface for the same two geometries. The 40|40 interface remains essentially spin-quiet, whereas the 39|40 interface builds up and saturates near 1/2, demonstrating termination-controlled interfacial fractionalization.",
+      "page": 4,
+      "index": 2,
+      "width": 1062,
+      "height": 591
+    },
+    {
+      "url": "assets/figures/arxiv/2604.19498v1/fig-003.webp",
+      "caption": "FIG. 3. Exponential hybridization of two internal interface modes. (a) Two-interface A|B|A construction used to isolate internal boundary modes. The outer dimerized ends are chosen to be non-SPT (J2-terminated), so that the low-energy physics is dominated by the two active internal interfaces between the dimerized A regions and the embedded effective Haldane B region. The middle-domain width R sets the interface separation. (b) Low-energy splitting ∆ST = |E(b) − E(a)| versus interface separation, showing an approximately exponential decay. (c) Entanglement-entropy profiles for representative small and large separations. (d) Representative real-space spin profiles for small and large R, showing strong overlap at short separation and two resolved localized packets at larger separation. The R = 8 and 32 spin- 1 2 sites window are marked by dashed grey and solid yellow lines. These data identify the splitting as the exponential hybridization of the two spin- 1 2 SPT boundary modes of the embedded Haldane domain.",
+      "page": 5,
+      "index": 3,
+      "width": 1062,
+      "height": 535
+    }
+  ]
+}
